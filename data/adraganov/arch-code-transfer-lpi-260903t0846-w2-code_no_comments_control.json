@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 170422175,
+  "storage_human": "170 MB",
   "base_model": "google/gemma-3-12b-it",
   "formats": [
     "safetensors"

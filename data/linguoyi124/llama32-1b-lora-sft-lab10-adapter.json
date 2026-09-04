@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "linguoyi124/llama32-1b-lora-sft-lab10-adapter",
+  "slug": "linguoyi124-llama32-1b-lora-sft-lab10-adapter",
+  "author": "linguoyi124",
+  "url": "https://huggingface.co/linguoyi124/llama32-1b-lora-sft-lab10-adapter",
+  "created_at": "2026-09-04T03:45:30.000Z",
+  "updated_at": "2026-09-04T03:45:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62328344,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gaming Gadgets w/ Cool Sci-fi Keyboard, Mouse, Speakers | GravaStar",
+      "url": "https://www.gravastar.com/",
+      "snippet": "Looking for gaming gadgets with a cool sci-fi vibe? GravaStar offers high performance 75% Mechanical Keyboard, Gaming Mice, …"
+    },
+    {
+      "title": "linguoyi124/llama32-1b-lora-sft-lab10-adapter · Hugging Face",
+      "url": "https://huggingface.co/linguoyi124/llama32-1b-lora-sft-lab10-adapter",
+      "snippet": "Instructions to use linguoyi124/llama32-1b-lora-sft-lab10-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GravaStar Software Download",
+      "url": "https://www.gravastar.com/pages/download",
+      "snippet": "Download the Mercury mouse software to customize wireless gaming mice by GravaStar."
+    },
+    {
+      "title": "linguoyi124 (LIN GUOYI) - Hugging Face",
+      "url": "https://huggingface.co/linguoyi124",
+      "snippet": "None yet models2 Sort: Recently updated linguoyi124/llama32-1b-lora-sft-lab10-model Text Generation •1B•Updated about 5 hours ago•21 linguoyi124/llama32-1b-lora-sft-lab10-adapter Updated about 6 hours ago"
+    },
+    {
+      "title": "GravaStar DE | Gaming Keyboards, Mouse & Peripherals in Sci-Fi Design",
+      "url": "https://gravastar.de/en",
+      "snippet": "GravaStar - Premium Gaming Peripherals in Sci-Fi Design: 60% and 75% gaming keyboards with 8000Hz polling, wireless mice with …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "anorim/bertweetbr-fusion-5-fisher-f256-bestcross-hatebr-hspt-olidbr-tupy-v54",
+  "slug": "anorim-bertweetbr-fusion-5-fisher-f256-bestcross-hatebr-hspt-olidbr-tupy-v54",
+  "author": "anorim",
+  "url": "https://huggingface.co/anorim/bertweetbr-fusion-5-fisher-f256-bestcross-hatebr-hspt-olidbr-tupy-v54",
+  "created_at": "2026-09-04T02:58:58.000Z",
+  "updated_at": "2026-09-04T02:59:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 134904578,
+  "parameters_human": "134.9M",
+  "storage_bytes": 539642456,
+  "storage_human": "540 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "anorim (Annie Amorim) - Hugging Face",
+      "url": "https://huggingface.co/anorim",
+      "snippet": "anorim/bertimbau-fusion-dareties-p0.9-k0.5-l0.9-bestcross-hatebr-hspt-toldbr-tupy-v6 ... anorim/bertimbau-fusion-dareties-p0.99-k0.2-l1.1-bestcross-hatebr-hspt-toldbr-tupy-v6"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "Anagram Solver - Unscramble Letters into Words",
+      "url": "https://www.wordunscrambler.net/anagram-solver/",
+      "snippet": "An anagram solver rearranges your letters into every word they can form. Enter up to 30 letters, blanks included, and get all words and phrases, longest first."
+    },
+    {
+      "title": "New Microsoft Certified: Multi-Agent AI Solutions Expert Certification",
+      "url": "https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert-certification/4494122",
+      "snippet": "Jul 22, 2026 · Introducing the Microsoft Certified: Multi-Agent AI Solutions Expert Certification, that validates your ability to design, …"
+    }
+  ]
+}

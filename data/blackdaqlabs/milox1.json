@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "blackdaqlabs/MiloX1",
+  "slug": "blackdaqlabs-milox1",
+  "author": "blackdaqlabs",
+  "url": "https://huggingface.co/blackdaqlabs/MiloX1",
+  "created_at": "2026-09-04T02:43:55.000Z",
+  "updated_at": "2026-09-04T02:44:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "milo-x1",
+    "from-scratch-transformer",
+    "spanish",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3559840,
+  "parameters_human": "3.6M",
+  "storage_bytes": 14242176,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=1c881d8175df645526ab0a4b744d6574",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "blackdaqlabs/MiloX1 · Hugging Face",
+      "url": "https://huggingface.co/blackdaqlabs/MiloX1",
+      "snippet": "Files info Inference ProvidersNEW This model isn't deployed by any Inference Provider.🙋Ask for provider support Space using blackdaqlabs/MiloX11 🤖 teszenofficial/Teszen_AI System theme"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "GitHub - milox1/delay-prediciton-model",
+      "url": "https://github.com/milox1/delay-prediciton-model",
+      "snippet": "Contribute to milox1/delay-prediciton-model development by creating an account on GitHub."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

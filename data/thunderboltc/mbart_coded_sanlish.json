@@ -5,7 +5,7 @@
   "author": "thunderboltc",
   "url": "https://huggingface.co/thunderboltc/mbart_coded_sanlish",
   "created_at": "2026-09-03T08:15:56.000Z",
-  "updated_at": "2026-09-03T08:21:14.000Z",
+  "updated_at": "2026-09-03T09:05:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": 611129542,
   "parameters_human": "611.1M",
-  "storage_bytes": 2466763663,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 19578814479,
+  "storage_human": "19.6 GB",
   "base_model": "facebook/mbart-large-50-many-to-many-mmt",
   "formats": [
     "safetensors"

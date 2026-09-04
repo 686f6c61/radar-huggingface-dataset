@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_RL_AS_confidence_numina_qwen3b_10",
+  "slug": "ishikaa-acquisition_student_rl_as_confidence_numina_qwen3b_10",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_RL_AS_confidence_numina_qwen3b_10",
+  "created_at": "2026-09-04T02:55:49.000Z",
+  "updated_at": "2026-09-04T02:57:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349063,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poêle à pétrole - Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/chauffage-et-ventilation/chauffage-appoint/poele-a-petrole/?msockid=29db74d7815065bd3790631d80cf6490",
+      "snippet": "Poêle à pétrole: Vous garantir le bon achat, on y travaille tous les jours. Retrouvez chez Leroy Merlin notre sélection de 48 produits, …"
+    },
+    {
+      "title": "ishikaa/acquisition_student_RL_AS_confidence_numina_qwen3b_10 · Hugging ...",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_RL_AS_confidence_numina_qwen3b_10",
+      "snippet": "Instructions to use ishikaa/acquisition_student_RL_AS_confidence_numina_qwen3b_10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Chauffage d'appoint - Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/chauffage-et-ventilation/chauffage-appoint/?msockid=29db74d7815065bd3790631d80cf6490",
+      "snippet": "Chauffage d'appoint électrique Chauffage d'appoint gaz Poêle à pétrole Pétrole pour poêle Cheminée électrique Station météo, …"
+    },
+    {
+      "title": "acquisition_student_RL_qwen3bins_numina_confidence - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_RL_qwen3bins_numina_confidence",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pétrole pour poêle - Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/chauffage-et-ventilation/chauffage-appoint/poele-a-petrole/petrole-pour-poele/?msockid=29db74d7815065bd3790631d80cf6490",
+      "snippet": "Pétrole pour poêle: Vous garantir le bon achat, on y travaille tous les jours. Retrouvez chez Leroy Merlin notre sélection de 34 …"
+    }
+  ]
+}

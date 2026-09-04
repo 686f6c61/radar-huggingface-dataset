@@ -4,8 +4,8 @@
   "slug": "zxc12edsa-myawesomemodel-testrepo",
   "author": "ZXC12EDSA",
   "url": "https://huggingface.co/ZXC12EDSA/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-01T11:57:19.000Z",
-  "updated_at": "2026-09-01T11:57:37.000Z",
+  "created_at": "2026-09-03T11:41:19.000Z",
+  "updated_at": "2026-09-03T11:54:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-03T02:34:49.002Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

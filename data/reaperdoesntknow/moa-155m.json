@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/MoA-155M",
   "created_at": "2025-09-23T19:19:42.000Z",
-  "updated_at": "2026-09-02T13:16:30.000Z",
+  "updated_at": "2026-09-03T13:16:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3241,
+  "downloads_30d": 3498,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

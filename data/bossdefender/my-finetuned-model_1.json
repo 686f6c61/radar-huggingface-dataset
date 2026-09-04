@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "BossDefender/my-finetuned-model_1",
+  "slug": "bossdefender-my-finetuned-model_1",
+  "author": "BossDefender",
+  "url": "https://huggingface.co/BossDefender/my-finetuned-model_1",
+  "created_at": "2026-09-04T03:55:36.000Z",
+  "updated_at": "2026-09-04T03:57:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404916,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best quality Sky Sports stream? : r/Gunners - Reddit",
+      "url": "https://www.reddit.com/r/Gunners/comments/2st1af/best_quality_sky_sports_stream/",
+      "snippet": "Jan 18, 2015 · Edit: I'd also being willing to pay if it's a reasonable price. Do any of the payed options from this post have Sky? In fact, …"
+    },
+    {
+      "title": "Gemini – Your AI assistant from Google",
+      "url": "https://gemini.google/us/about/?hl=en",
+      "snippet": "Supercharge your creativity and productivity with Google’s AI assistant. Brainstorm ideas, simplify complex topics, and rehearse for important moments."
+    },
+    {
+      "title": "MotorsportsReplays - Reddit",
+      "url": "https://www.reddit.com/r/MotorsportsReplays/",
+      "snippet": "Torrent Link NTT IndyCar Series 2024. R03. Children's of Alabama Indy Grand Prix. Sky Sports F1 UHD u/egortech ADMIN MOD …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "现在F1在哪里可以看到直播？ - 知乎",
+      "url": "https://www.zhihu.com/question/405063872",
+      "snippet": "Jul 4, 2020 · ③广东体育会转排位回放+正赛，可以听到张海宁老师的解说哦。 ④劲爆体育有时候也有转播的 ⑤更厉害一点，在F1 TV …"
+    }
+  ]
+}

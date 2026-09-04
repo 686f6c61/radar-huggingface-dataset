@@ -5,7 +5,7 @@
   "author": "Prannesshkva",
   "url": "https://huggingface.co/Prannesshkva/ROTOR-15M",
   "created_at": "2026-09-03T17:52:02.000Z",
-  "updated_at": "2026-09-03T18:18:47.000Z",
+  "updated_at": "2026-09-03T18:45:52.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -38,10 +38,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 46786464,
-  "parameters_human": "46.8M",
-  "storage_bytes": 187152936,
-  "storage_human": "187 MB",
+  "parameters": 48853536,
+  "parameters_human": "48.9M",
+  "storage_bytes": 382575192,
+  "storage_human": "383 MB",
   "base_model": null,
   "formats": [
     "safetensors"

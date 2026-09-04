@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sam-guided-vlas/train_1_2_3_4_hard_items__no_mask__pi05__seed_0__steps_45k",
+  "slug": "sam-guided-vlas-train_1_2_3_4_hard_items__no_mask__pi05__seed_0__steps_45k",
+  "author": "sam-guided-vlas",
+  "url": "https://huggingface.co/sam-guided-vlas/train_1_2_3_4_hard_items__no_mask__pi05__seed_0__steps_45k",
+  "created_at": "2026-09-04T02:29:37.000Z",
+  "updated_at": "2026-09-04T08:23:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:sam-guided-vlas/train_1_2_3_4_hard_items__no_mask",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 28062154944,
+  "storage_human": "28.1 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAM Outillage",
+      "url": "https://www.sam-outillage.fr/",
+      "snippet": "Servantes SAM conçues et fabriquées à Saint-Etienne Des servantes pour tout ranger Organiser avec des modules Comparer les …"
+    },
+    {
+      "title": "sam-guided-vlas (mim-sam-guided-vlas) - Hugging Face",
+      "url": "https://huggingface.co/sam-guided-vlas",
+      "snippet": "Org profile for mim-sam-guided-vlas on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Sam (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sam_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Sam est une série télévisée française créée par Claire Lemaréchal. Elle est diffusée en Belgique à partir du 24 mars 2016 sur La Une …"
+    },
+    {
+      "title": "sam-guided-vlas/test · Hugging Face",
+      "url": "https://huggingface.co/sam-guided-vlas/test",
+      "snippet": "Instructions to use sam-guided-vlas/test with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use sam-guided-vlas/test with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your robot Train ..."
+    },
+    {
+      "title": "Sam (Série) - Replay et vidéos en streaming | TF1+",
+      "url": "https://www.tf1.fr/tf1/sam/videos",
+      "snippet": "Aug 21, 2025 · Toutes les vidéos de « Sam » (Série) gratuitement en streaming sur TF1+"
+    }
+  ]
+}

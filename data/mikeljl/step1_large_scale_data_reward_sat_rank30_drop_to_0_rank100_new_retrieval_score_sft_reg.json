@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mikeljl/step1_large_scale_data_reward_sat_rank30_drop_to_0_rank100_new_retrieval_score_sft_reg",
+  "slug": "mikeljl-step1_large_scale_data_reward_sat_rank30_drop_to_0_rank100_new_retrieval_score_sft_reg",
+  "author": "mikeljl",
+  "url": "https://huggingface.co/mikeljl/step1_large_scale_data_reward_sat_rank30_drop_to_0_rank100_new_retrieval_score_sft_reg",
+  "created_at": "2026-09-04T03:13:14.000Z",
+  "updated_at": "2026-09-04T03:17:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 196096,
+  "parameters_human": "196096",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crush Crash Out – WICKED PIXXEL",
+      "url": "https://wickedpixxel.com/crush-crash-out/",
+      "snippet": "Apr 30, 2025 · Whenever your Sim is near their crush, they’ll get heart palpitations buff. They’ll also get a random buff of …"
+    },
+    {
+      "title": "Reward Modeling · Hugging Face",
+      "url": "https://huggingface.co/docs/trl/reward_trainer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JayESims x Jaye Hinson Presents: Obsessive (Stalker) Ex - Patreon",
+      "url": "https://www.patreon.com/JayESims/posts/jayesims-x-jaye-145641070",
+      "snippet": "Dec 11, 2025 · Perfect for machinima, save files, drama arcs, and all things toxic love. These are not just mood swings, they’re …"
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/github/terrier-org/cikm2021tutorial/blob/main/notebooks/notebook1.ipynb",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "CRUSH CRASH OUT - DOWNLOAD - COMPATIBLE WITH LATEST PATCH",
+      "url": "https://www.patreon.com/wickedpixxel/posts/crush-crash-out-124270020",
+      "snippet": "Mar 13, 2025 · This mod adds the ability for a Sim to experience an obsessive crush in The Sims 4. Compatible with latest patch. …"
+    }
+  ]
+}

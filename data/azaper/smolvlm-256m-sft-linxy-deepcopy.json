@@ -5,7 +5,7 @@
   "author": "Azaper",
   "url": "https://huggingface.co/Azaper/SmolVLM-256M-SFT-linxy-deepcopy",
   "created_at": "2026-03-24T16:27:04.000Z",
-  "updated_at": "2026-09-01T15:03:24.000Z",
+  "updated_at": "2026-09-03T11:02:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 2127532032,
   "parameters_human": "2.13B",
-  "storage_bytes": 9547760890,
-  "storage_human": "9.5 GB",
+  "storage_bytes": 13802901202,
+  "storage_human": "13.8 GB",
   "base_model": "unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

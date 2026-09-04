@@ -5,7 +5,7 @@
   "author": "DogContext",
   "url": "https://huggingface.co/DogContext/GLM-5.3-Flash-Uncensored-Q2-ds4",
   "created_at": "2026-09-03T08:29:39.000Z",
-  "updated_at": "2026-09-03T09:21:20.000Z",
+  "updated_at": "2026-09-03T22:21:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

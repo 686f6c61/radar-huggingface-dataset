@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "47ag925/roberta-base-KorMedMCQA-finetuned",
+  "slug": "47ag925-roberta-base-kormedmcqa-finetuned",
+  "author": "47ag925",
+  "url": "https://huggingface.co/47ag925/roberta-base-KorMedMCQA-finetuned",
+  "created_at": "2026-09-04T03:19:42.000Z",
+  "updated_at": "2026-09-04T04:24:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 110621957,
+  "parameters_human": "110.6M",
+  "storage_bytes": 885023944,
+  "storage_human": "885 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "47ag925/kormed-mcqa-klue-roberta · Hugging Face",
+      "url": "https://huggingface.co/47ag925/kormed-mcqa-klue-roberta",
+      "snippet": "Multiple Choice This model isn't deployed by any Inference Provider.🙋Ask for provider support Model tree for 47ag925/kormed-mcqa-klue-roberta Base model klue/roberta-base Finetuned (497)"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "47ag925/klue-roberta-base-ner · Hugging Face",
+      "url": "https://huggingface.co/47ag925/klue-roberta-base-ner",
+      "snippet": "Instructions to use 47ag925/klue-roberta-base-ner with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "New Microsoft Certified: Multi-Agent AI Solutions Expert Certification",
+      "url": "https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert-certification/4494122",
+      "snippet": "Jul 22, 2026 · Introducing the Microsoft Certified: Multi-Agent AI Solutions Expert Certification, that validates your ability to design, …"
+    }
+  ]
+}

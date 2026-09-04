@@ -5,7 +5,7 @@
   "author": "geonmin-kim",
   "url": "https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v3",
   "created_at": "2026-09-02T19:22:59.000Z",
-  "updated_at": "2026-09-02T19:23:55.000Z",
+  "updated_at": "2026-09-04T04:06:59.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7735210532,
-  "storage_human": "7.7 GB",
+  "storage_bytes": 34692783140,
+  "storage_human": "34.7 GB",
   "base_model": "geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v1-step25000",
   "formats": [
     "safetensors"

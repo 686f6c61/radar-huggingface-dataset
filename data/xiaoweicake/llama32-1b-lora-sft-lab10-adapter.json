@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Xiaoweicake/llama32-1b-lora-sft-lab10-adapter",
+  "slug": "xiaoweicake-llama32-1b-lora-sft-lab10-adapter",
+  "author": "Xiaoweicake",
+  "url": "https://huggingface.co/Xiaoweicake/llama32-1b-lora-sft-lab10-adapter",
+  "created_at": "2026-09-04T03:47:51.000Z",
+  "updated_at": "2026-09-04T03:48:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62328344,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MNT - Accueil",
+      "url": "https://www.mnt.fr/",
+      "snippet": "MNT : la mutuelle territoriale qui accompagne tous les agents Depuis 1964, la Mutuelle Nationale Territoriale (MNT) tisse un lien …"
+    },
+    {
+      "title": "Xiaoweicake/llama32-1b-lora-sft-lab10-adapter · Hugging Face",
+      "url": "https://huggingface.co/Xiaoweicake/llama32-1b-lora-sft-lab10-adapter",
+      "snippet": "Instructions to use Xiaoweicake/llama32-1b-lora-sft-lab10-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Espace Adhérent",
+      "url": "https://adherents.mnt.fr/",
+      "snippet": "Accédez à votre espace adhérent sécurisé pour gérer vos informations personnelles, contrats et demandes en toute autonomie."
+    },
+    {
+      "title": "Liwei1020/llama32-1b-lora-sft-lab10-adapter · Hugging Face",
+      "url": "https://huggingface.co/Liwei1020/llama32-1b-lora-sft-lab10-adapter",
+      "snippet": "Liwei1020 / llama32-1b-lora-sft-lab10-adapter like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use ..."
+    },
+    {
+      "title": "MNT - Votre espace adhérent MNT : le plus court chemin entre vous et ...",
+      "url": "https://www.mnt.fr/articles/votre-espace-adherent-mnt-chemin-entre-vous-votre-mutuelle",
+      "snippet": "Votre espace adhérent MNT : le plus court chemin entre vous et votre mutuelle ! Jean, Mireille, Karim, Bernard, Alma... 385 000 …"
+    }
+  ]
+}

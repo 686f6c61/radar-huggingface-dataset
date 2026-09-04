@@ -5,7 +5,7 @@
   "author": "sifat-febo",
   "url": "https://huggingface.co/sifat-febo/banglish-companion-3b-mlx",
   "created_at": "2026-09-01T17:49:27.000Z",
-  "updated_at": "2026-09-01T18:12:29.000Z",
+  "updated_at": "2026-09-03T15:25:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -40,7 +40,7 @@
   "trending_score": 0,
   "parameters": 3429006336,
   "parameters_human": "3.43B",
-  "storage_bytes": 3660627365,
+  "storage_bytes": 3661712541,
   "storage_human": "3.7 GB",
   "base_model": "mistralai/Ministral-3-3B-Base-2512",
   "formats": [

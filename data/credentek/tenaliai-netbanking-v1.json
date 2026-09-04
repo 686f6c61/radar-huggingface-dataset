@@ -5,7 +5,7 @@
   "author": "credentek",
   "url": "https://huggingface.co/credentek/TenaliAI-NetBanking-v1",
   "created_at": "2026-08-30T21:39:34.000Z",
-  "updated_at": "2026-09-01T15:31:20.000Z",
+  "updated_at": "2026-09-04T01:20:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,10 +19,10 @@
   "likes": 0,
   "downloads_30d": 37,
   "trending_score": 0,
-  "parameters": 237633893,
+  "parameters": 237645428,
   "parameters_human": "237.6M",
-  "storage_bytes": 4753079269,
-  "storage_human": "4.8 GB",
+  "storage_bytes": 6654394865,
+  "storage_human": "6.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

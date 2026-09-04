@@ -5,7 +5,7 @@
   "author": "gulding",
   "url": "https://huggingface.co/gulding/EmsyAI",
   "created_at": "2026-08-24T07:11:40.000Z",
-  "updated_at": "2026-09-02T15:00:55.000Z",
+  "updated_at": "2026-09-03T08:24:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -20,6 +20,7 @@
     "from-scratch",
     "educational",
     "pytorch",
+    "lora",
     "text-generation",
     "en",
     "license:mit",
@@ -31,8 +32,8 @@
   "trending_score": 0,
   "parameters": 100092672,
   "parameters_human": "100.1M",
-  "storage_bytes": 6219231948,
-  "storage_human": "6.2 GB",
+  "storage_bytes": 7072422420,
+  "storage_human": "7.1 GB",
   "base_model": "gulding/EmsyAI",
   "formats": [
     "gguf"

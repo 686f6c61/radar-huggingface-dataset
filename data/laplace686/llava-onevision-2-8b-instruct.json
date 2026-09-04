@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "laplace686/LLaVA-OneVision-2-8B-Instruct",
+  "slug": "laplace686-llava-onevision-2-8b-instruct",
+  "author": "laplace686",
+  "url": "https://huggingface.co/laplace686/LLaVA-OneVision-2-8B-Instruct",
+  "created_at": "2026-09-04T02:35:03.000Z",
+  "updated_at": "2026-09-04T02:35:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava_onevision2",
+    "image-text-to-text",
+    "multimodal",
+    "vision-language",
+    "video-text-to-text",
+    "llava",
+    "llava-onevision-2",
+    "qwen3",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2605.25979",
+    "arxiv:2509.23661",
+    "arxiv:2602.08683",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 8527213568,
+  "parameters_human": "8.53B",
+  "storage_bytes": 17065937616,
+  "storage_human": "17.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "[Bing News Quiz (Apr 12, 2024)] Which women’s college basketball team won the national title and finished the season undefeated?"
+    },
+    {
+      "title": "laplace686/LLaVA-OneVision-2-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/laplace686/LLaVA-OneVision-2-8B-Instruct",
+      "snippet": "Instructions to use laplace686/LLaVA-OneVision-2-8B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bing News Quiz (7-22-2022) : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/w52krw/bing_news_quiz_7222022/",
+      "snippet": "Jul 22, 2022 · Bing Weekly News Quiz: Questions Answers (7-22-2022) 22 July 2022, 1: As heat records across Europe became …"
+    }
+  ]
+}

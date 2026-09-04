@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Supissara/thai-qa-lab-model",
+  "slug": "supissara-thai-qa-lab-model",
+  "author": "Supissara",
+  "url": "https://huggingface.co/Supissara/thai-qa-lab-model",
+  "created_at": "2026-09-04T03:21:41.000Z",
+  "updated_at": "2026-09-04T06:19:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "thai",
+    "qa",
+    "fine-tuned",
+    "clownfish",
+    "text-generation",
+    "th",
+    "dataset:clownfish_3000",
+    "arxiv:1910.09700",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 124449024,
+  "parameters_human": "124.4M",
+  "storage_bytes": 995622144,
+  "storage_human": "996 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thai lab detects first methamphetamine-etomidate vape mix",
+      "url": "https://jen-f.jiji.com/jc/eng_agt?g=nation&k=20260825NATION-40070235",
+      "snippet": "25.08.2026 ... 08/21 TDRI urges Thailand to build technology, not just host FDI; 08/21 TH-AI Passport pay-per-user model aims to maximise budget value; 08/21 ..."
+    },
+    {
+      "title": "Pensiri AKKAJIT | Lecturer | Faculty of Technology and Environment",
+      "url": "https://www.researchgate.net/profile/Pensiri-Akkajit",
+      "snippet": "This study presents a hybrid AI-remote sensing framework for forecasting water quality in the Gulf of Thailand, which combines Sentinel-2 imagery with Support ..."
+    },
+    {
+      "title": "American University of Phnom Penh - Facebook",
+      "url": "https://www.facebook.com/AUPPkh/posts/-congratulations-to-outstanding-aupp-students-on-securing-2nd-place-at-unipreneu/1443348761160423/",
+      "snippet": "01.07.2026 ... The Business Model Competition (BMC) Cambodia is a national entrepreneurship program designed to foster creativity, business innovation, and ..."
+    },
+    {
+      "title": "Thailand moves to overhaul gun ownership system - JIJI PRESS",
+      "url": "https://jen.jiji.com/jc/eng_agt?g=nation&k=20260812NATION-40069690",
+      "snippet": "12.08.2026 ... 08/25 Thai lab detects first methamphetamine-etomidate vape mix ... 08/21 TH-AI Passport pay-per-user model aims to maximise budget value ..."
+    },
+    {
+      "title": "Chonlada Chotechanasophon - Product Owner, H LAB Co.,Ltd",
+      "url": "https://th.linkedin.com/in/chonlada-chotechanasophon-b86a6b203",
+      "snippet": "... QA and CS. กราฟิก Tri Petch Isuzu Sales Co., Ltd. User Experience Consultant ... พ.ย. 2019. Developed the business model that positively impacted the ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Selim55/Lily",
+  "slug": "selim55-lily",
+  "author": "Selim55",
+  "url": "https://huggingface.co/Selim55/Lily",
+  "created_at": "2026-09-04T02:30:23.000Z",
+  "updated_at": "2026-09-04T02:30:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WÜRTH » Ihr Spezialist für Handwerk und Industrie | WÜRTH",
+      "url": "https://www.wuerth.de/",
+      "snippet": "Von Beginn an hat Reinhold Würth eine Unternehmenskultur geprägt, die auf Grundwerten wie Optimismus, Dynamik, Hochachtung …"
+    },
+    {
+      "title": "Lily V2 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d21lk1de878c738lqbkg",
+      "snippet": "Explore Lily V2 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Zylinderstifte & Passstifte nach DIN/ISO | WÜRTH - wuerth",
+      "url": "https://eshop.wuerth.de/Produktkategorien/Zylinderstifte/1401351010.cyid/1401.cgid/de/DE/EUR/?msockid=18acf261f67b655215b3e5abf7da64bd",
+      "snippet": "Zylinderstifte und Passstifte DIN 7 / 6325 / 7979 ISO 2338 / 8734 gehärtet / ungehärtet auch mit Innengewinde Nur bei Würth!"
+    },
+    {
+      "title": "Summarize Videos, Audio, PDF & Websites - LilysAI",
+      "url": "https://lilys.ai/en/",
+      "snippet": "Put a turbo engine on your brain and acquire knowledge faster. Create the best reports from any material: videos, audio, PDFs, websites, and text."
+    },
+    {
+      "title": "WDVS-Befestigung – Dübel & Systeme für gedämmte Fassaden | WÜRTH",
+      "url": "https://www.wuerth.de/web/de/awkg/engineering/befestigung/anwendungsloesungen/fassadendaemmung.php",
+      "snippet": "Befestigung an gedämmten Fassaden (WDVS): Isolierdübel, Thermodübel & Schwerlastdübel von Würth. Normgerecht Geprüfte …"
+    }
+  ]
+}

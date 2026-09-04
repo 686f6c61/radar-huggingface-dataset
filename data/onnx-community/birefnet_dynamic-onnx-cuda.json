@@ -5,7 +5,7 @@
   "author": "onnx-community",
   "url": "https://huggingface.co/onnx-community/BiRefNet_dynamic-ONNX-CUDA",
   "created_at": "2026-09-01T09:46:30.000Z",
-  "updated_at": "2026-09-01T09:49:46.000Z",
+  "updated_at": "2026-09-04T03:33:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

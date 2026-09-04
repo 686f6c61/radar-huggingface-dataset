@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "DexSteer/pi05_pour_cup",
+  "slug": "dexsteer-pi05_pour_cup",
+  "author": "DexSteer",
+  "url": "https://huggingface.co/DexSteer/pi05_pour_cup",
+  "created_at": "2026-09-04T03:04:54.000Z",
+  "updated_at": "2026-09-04T03:06:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354068528,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Etten-Leur - loodgieters.nl",
+      "url": "https://www.loodgieters.nl/loodgieter-etten-Leur/",
+      "snippet": "Etten-Leur Loodgieter Etten-Leur: Onze loodgieters in Etten-Leur zijn 24 uur per dag, 7 dagen in de week bereikbaar voor alle …"
+    },
+    {
+      "title": "From Reasoning to Action via Visual Sketches for Long-Horizon ...",
+      "url": "https://arxiv.org/pdf/2601.01618",
+      "snippet": "04.01.2026 ... Pour tea into the cup. (a) Tidy the table. [Long-horizon]. (b) Pour ... Our goal is to as- sess whether increased model capacity or different ..."
+    },
+    {
+      "title": "DexSteer (DexSteer) - Hugging Face",
+      "url": "https://huggingface.co/DexSteer/models",
+      "snippet": "Org profile for DexSteer on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Voorburg - loodgieters.nl",
+      "url": "https://www.loodgieters.nl/loodgieter-voorburg/",
+      "snippet": "Loodgieter Voorburg: Onze loodgieters in Voorburg zijn 24 uur per dag, 7 dagen in de week bereikbaar voor alle mogelijke …"
+    },
+    {
+      "title": "DexSteer/pour_cup - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/dexsteer-isaaclab-ur7e-pour-cup",
+      "snippet": "A robotics dataset created using LeRobot containing manipulation tasks performed by a UR7e robot with a dexterous hand. The dataset includes multi-view RGB video, proprioceptive state, and action data collected at 50 fps."
+    }
+  ]
+}

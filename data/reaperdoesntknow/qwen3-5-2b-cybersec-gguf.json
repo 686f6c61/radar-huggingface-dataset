@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF",
   "created_at": "2026-08-09T15:45:10.000Z",
-  "updated_at": "2026-09-02T13:17:20.000Z",
+  "updated_at": "2026-09-03T13:16:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3703,
+  "downloads_30d": 3786,
   "trending_score": 0,
   "parameters": 1942653248,
   "parameters_human": "1.94B",

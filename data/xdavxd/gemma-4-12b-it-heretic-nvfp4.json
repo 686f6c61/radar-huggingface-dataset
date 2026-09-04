@@ -5,7 +5,7 @@
   "author": "xdavxd",
   "url": "https://huggingface.co/xdavxd/gemma-4-12B-it-heretic-NVFP4",
   "created_at": "2026-07-03T19:04:54.000Z",
-  "updated_at": "2026-09-03T00:45:34.000Z",
+  "updated_at": "2026-09-03T23:29:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 955,
+  "downloads_30d": 979,
   "trending_score": 0,
   "parameters": 11959730224,
   "parameters_human": "11.96B",

@@ -5,7 +5,7 @@
   "author": "ishikaa",
   "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen7b_10",
   "created_at": "2026-09-03T08:16:52.000Z",
-  "updated_at": "2026-09-03T08:19:19.000Z",
+  "updated_at": "2026-09-03T17:06:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 30473926528,
-  "storage_human": "30.5 GB",
+  "storage_bytes": 91398935792,
+  "storage_human": "91.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

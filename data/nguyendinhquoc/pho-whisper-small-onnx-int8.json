@@ -5,7 +5,7 @@
   "author": "nguyendinhquoc",
   "url": "https://huggingface.co/nguyendinhquoc/pho-whisper-small-onnx-int8",
   "created_at": "2026-09-03T17:40:04.000Z",
-  "updated_at": "2026-09-03T17:40:55.000Z",
+  "updated_at": "2026-09-03T18:25:07.000Z",
   "license": "bsd-3-clause",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 335596539,
-  "storage_human": "336 MB",
+  "storage_bytes": 1098156961,
+  "storage_human": "1.1 GB",
   "base_model": "vinai/PhoWhisper-small",
   "formats": [
     "onnx"

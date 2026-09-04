@@ -5,7 +5,7 @@
   "author": "sprited",
   "url": "https://huggingface.co/sprited/ardy-web-onnx",
   "created_at": "2026-09-02T23:57:41.000Z",
-  "updated_at": "2026-09-03T01:48:39.000Z",
+  "updated_at": "2026-09-03T02:43:07.000Z",
   "license": "nvidia-open-model-agreement",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,13 +22,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5791347323,
-  "storage_human": "5.8 GB",
+  "storage_bytes": 6604051429,
+  "storage_human": "6.6 GB",
   "base_model": "nvidia/ARDY-Core-RP-20FPS-Horizon40",
   "formats": [
     "onnx"

@@ -5,7 +5,7 @@
   "author": "ukcastle",
   "url": "https://huggingface.co/ukcastle/notaqnn-GR00T-Mdrift_crop192_cft-Dmergedv2_resfixed-step1000",
   "created_at": "2026-09-03T10:24:49.000Z",
-  "updated_at": "2026-09-03T10:26:10.000Z",
+  "updated_at": "2026-09-03T16:13:13.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 5372170240,
   "parameters_human": "5.37B",
-  "storage_bytes": 5688163752,
-  "storage_human": "5.7 GB",
+  "storage_bytes": 11371499392,
+  "storage_human": "11.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

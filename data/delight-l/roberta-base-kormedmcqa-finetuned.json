@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Delight-L/roberta-base-KorMedMCQA-finetuned",
+  "slug": "delight-l-roberta-base-kormedmcqa-finetuned",
+  "author": "Delight-L",
+  "url": "https://huggingface.co/Delight-L/roberta-base-KorMedMCQA-finetuned",
+  "created_at": "2026-09-04T03:22:17.000Z",
+  "updated_at": "2026-09-04T03:23:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 110621957,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442511972,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DELIGHT Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/delight",
+      "snippet": "2 days ago · The meaning of DELIGHT is a high degree of gratification or pleasure : joy; also : extreme satisfaction. How to use …"
+    },
+    {
+      "title": "FacebookAI/roberta-base · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/roberta-base",
+      "snippet": "Explore the RoBERTa base model by FacebookAI, a transformer-based language model available on Hugging Face platform for various NLP tasks."
+    },
+    {
+      "title": "DELIGHT | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/delight",
+      "snippet": "DELIGHT definition: 1. a feeling of great pleasure, satisfaction, or happiness: 2. something or someone that gives…. Learn more."
+    },
+    {
+      "title": "roberta-base download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/roberta-base/",
+      "snippet": "Download roberta-base for free. Robust BERT-based model for English with improved MLM training. roberta-base is a robustly optimized variant of BERT, pretrained on a significantly larger corpus of English text using dynamic masked language modeling. Developed by Facebook AI, RoBERTa improves on BERT by removing the Next Sentence Prediction objective, using longer training, larger batches, and ..."
+    },
+    {
+      "title": "DELIGHT | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/delight",
+      "snippet": "DELIGHT meaning: 1. a feeling of great pleasure, satisfaction, or happiness: 2. something or someone that gives…. Learn more."
+    }
+  ]
+}

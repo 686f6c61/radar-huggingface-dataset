@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "343Nitinai/thai-qa-lab-model",
+  "slug": "343nitinai-thai-qa-lab-model",
+  "author": "343Nitinai",
+  "url": "https://huggingface.co/343Nitinai/thai-qa-lab-model",
+  "created_at": "2026-09-04T02:44:51.000Z",
+  "updated_at": "2026-09-04T04:32:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "thai",
+    "qa",
+    "fine-tuned",
+    "text-generation",
+    "th",
+    "dataset:disease_3000",
+    "arxiv:1910.09700",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 124449024,
+  "parameters_human": "124.4M",
+  "storage_bytes": 1991244288,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Open Source Models68Text to Image45Image to Video28AI Image Editing tools25Text to Video22Image to Image20Music Generation9AI Interior8Song Edit7Trainer5Text to Speech4AI Avatar/Headshot 4Virtual try-on4Video to Video3Sound Effect3Image to Text 3Voice Changer23D Generations2Speech to Text 2Dubbing2+1 more"
+    },
+    {
+      "title": "Tenor GIFs - Reddit",
+      "url": "https://www.reddit.com/r/tenor/",
+      "snippet": "The subreddit for Tenor, the GIF platform. Share tech issues, platform errors, or your favorite GIFs with the world."
+    },
+    {
+      "title": "343Nitinai/thai-qa-lab-model · Hugging Face",
+      "url": "https://huggingface.co/343Nitinai/thai-qa-lab-model",
+      "snippet": "โมเดล Thai GPT-2 ที่ได้รับการ Fine-tune โดยนักศึกษา (343Nitinai) สำหรับงานถาม-ตอบภาษาไทยจากชุดข้อมูลโรค 3,000 คู่"
+    },
+    {
+      "title": "Typhoon",
+      "url": "https://opentyphoon.ai/",
+      "snippet": "Typhoon — #1 open-source Thai large language technologies (LLMs) with most downloads and usage by the community. Experience the power of AI across multiple modalities. ... Discover a wide range of powerful AI models designed to enhance your ..."
+    },
+    {
+      "title": "Cute Cat Gif! Anyone know who made it? : r/gifs - Reddit",
+      "url": "https://www.reddit.com/r/gifs/comments/eewnl7/cute_cat_gif_anyone_know_who_made_it/",
+      "snippet": "I do. It’s from a series of cat gifs from a creator named Keai. The cat itself is called Mochi Mochi Peach Cat. You can find “sticker …"
+    }
+  ]
+}

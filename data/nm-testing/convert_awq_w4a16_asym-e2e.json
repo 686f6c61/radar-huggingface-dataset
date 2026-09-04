@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/convert_awq_w4a16_asym-e2e",
   "created_at": "2026-07-25T04:46:02.000Z",
-  "updated_at": "2026-09-03T01:31:04.000Z",
+  "updated_at": "2026-09-04T03:15:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 367,
+  "downloads_30d": 386,
   "trending_score": 0,
   "parameters": 630167424,
   "parameters_human": "630.2M",

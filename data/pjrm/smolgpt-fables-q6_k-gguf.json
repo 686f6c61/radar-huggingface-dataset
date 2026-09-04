@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "PJRM/smolgpt-fables-Q6_K-GGUF",
+  "slug": "pjrm-smolgpt-fables-q6_k-gguf",
+  "author": "PJRM",
+  "url": "https://huggingface.co/PJRM/smolgpt-fables-Q6_K-GGUF",
+  "created_at": "2026-09-04T02:49:19.000Z",
+  "updated_at": "2026-09-04T02:49:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "smolgpt-fables",
+    "small-language-model",
+    "creative-writing",
+    "story-generation",
+    "controlled-generation",
+    "instruction-following",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "dataset:neonforestmist/smolgpt-markdown-stories",
+    "base_model:neonforestmist/smolgpt-fables",
+    "base_model:quantized:neonforestmist/smolgpt-fables",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 1405965664,
+  "storage_human": "1.4 GB",
+  "base_model": "neonforestmist/smolgpt-fables",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini.pl - produkty z kategorii zdrowia i urody",
+      "url": "https://gemini.pl/",
+      "snippet": "Gemini.pl to Twoja platforma zdrowia i wygodny sposób na zakupy produktów z kategorii zdrowia i urody. Mamy niemal 27 000 …"
+    },
+    {
+      "title": "PJRM/smolgpt-fables-Q4_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/PJRM/smolgpt-fables-Q4_0-GGUF",
+      "snippet": "Instructions to use PJRM/smolgpt-fables-Q4_0-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use PJRM/smolgpt-fables-Q4_0-GGUF with Transformers:"
+    },
+    {
+      "title": "Preparaty bez recepty - tabletki bez recepty - suplementy poprawiające ...",
+      "url": "https://gemini.pl/kategoria/zdrowie",
+      "snippet": "W Gemini dostępne są m.in. preparaty bez recepty i suplementy diety, które mogą wspomóc nasze zdrowie i walkę z różnymi …"
+    },
+    {
+      "title": "GitHub - neonforestmist/SmolGPT-Fables: Compact 1.71B story-writing ...",
+      "url": "https://github.com/neonforestmist/SmolGPT-Fables/tree/main",
+      "snippet": "1. About SmolGPT-Fables SmolGPT-Fables v1 is a compact 1.71B-parameter story-writing model adapted from SmolLM2. It turns a simple idea into a readable one-to-six-scene fable with named characters, clear settings, and an ending target."
+    },
+    {
+      "title": "Podziękowanie za zamówienie - Apteka Internetowa Gemini",
+      "url": "https://apteka2.gemini.pl/dziekujemy",
+      "snippet": "Potwierdzenie wysłaliśmy na Twój adres e-mail Wróć do strony głównej"
+    }
+  ]
+}

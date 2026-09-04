@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "the-acai/iki-gemma-cleanup",
+  "slug": "the-acai-iki-gemma-cleanup",
+  "author": "the-acai",
+  "url": "https://huggingface.co/the-acai/iki-gemma-cleanup",
+  "created_at": "2026-09-04T03:19:02.000Z",
+  "updated_at": "2026-09-04T03:21:55.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "dictation",
+    "text-cleanup",
+    "iki",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 5031222819,
+  "parameters_human": "5.03B",
+  "storage_bytes": 2970454432,
+  "storage_human": "3.0 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Palais des Thés - Déguster le meilleur du thé",
+      "url": "https://www.palaisdesthes.com/fr/",
+      "snippet": "Commandez les meilleurs thés du monde en direct des plantations : thés verts, thés noirs, grands crus, infusions, rooibos... Dégustez …"
+    },
+    {
+      "title": "unigrams.txt - Hugging Face",
+      "url": "https://huggingface.co/Cherishh/wav2vec2-slu-1/resolve/refs%2Fpr%2F1/unigrams.txt?download=true",
+      "snippet": "... acai acaia acaiberry acala acambaro acamprosate acamyl acana acanax acantan ... ai aia aiac aiai aiaiai aialize aias aib aiba aibaba aibennhayhon ..."
+    },
+    {
+      "title": "Bidet AI — on-device Gemma 4 brain-dump cleanup for Android",
+      "url": "https://github.com/MrB-Ed/bidet-ai",
+      "snippet": "Bidet AI is a solo project. It records single-speaker speech on an Android phone, transcribes it on-device with a small dedicated speech model (Moonshine-Tiny via sherpa-onnx), and then uses Gemma 4 running locally via LiteRT-LM to restructure the raw transcript into readable, organized output. The shipped build runs the E2B Gemma 4 variant — that is the variant verified on the target 3-year ..."
+    },
+    {
+      "title": "DAMMANN Frères - Spécialiste du thé depuis 1825",
+      "url": "https://www.dammann.fr/fr/",
+      "snippet": "Retrouvez nos thés, infusions, coffrets cadeaux et accessoires de préparation"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

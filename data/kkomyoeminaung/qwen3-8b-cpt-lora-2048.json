@@ -5,7 +5,7 @@
   "author": "kkomyoeminaung",
   "url": "https://huggingface.co/kkomyoeminaung/qwen3-8b-cpt-lora-2048",
   "created_at": "2026-08-29T11:39:11.000Z",
-  "updated_at": "2026-09-02T13:08:31.000Z",
+  "updated_at": "2026-09-04T04:07:54.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 228390700210,
-  "storage_human": "228.4 GB",
+  "storage_bytes": 309069528798,
+  "storage_human": "309.1 GB",
   "base_model": "kkomyoeminaung/qwen3-8b-myanmar-v3",
   "formats": [
     "safetensors"

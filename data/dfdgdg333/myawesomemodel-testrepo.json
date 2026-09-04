@@ -4,8 +4,8 @@
   "slug": "dfdgdg333-myawesomemodel-testrepo",
   "author": "dfdgdg333",
   "url": "https://huggingface.co/dfdgdg333/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-28T20:54:24.000Z",
-  "updated_at": "2026-08-28T20:54:29.000Z",
+  "created_at": "2026-09-04T00:34:00.000Z",
+  "updated_at": "2026-09-04T00:34:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-30T02:49:13.151Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

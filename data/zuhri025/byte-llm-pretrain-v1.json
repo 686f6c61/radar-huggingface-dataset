@@ -5,7 +5,7 @@
   "author": "zuhri025",
   "url": "https://huggingface.co/zuhri025/byte-llm-pretrain-v1",
   "created_at": "2026-09-02T19:51:34.000Z",
-  "updated_at": "2026-09-03T02:12:39.000Z",
+  "updated_at": "2026-09-03T09:20:12.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 31606784,
   "parameters_human": "31.6M",
-  "storage_bytes": 4340628124,
-  "storage_human": "4.3 GB",
+  "storage_bytes": 7819217013,
+  "storage_human": "7.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

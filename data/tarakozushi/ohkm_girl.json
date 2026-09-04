@@ -5,7 +5,7 @@
   "author": "tarakozushi",
   "url": "https://huggingface.co/tarakozushi/ohkm_girl",
   "created_at": "2026-09-02T00:00:44.000Z",
-  "updated_at": "2026-09-02T00:00:50.000Z",
+  "updated_at": "2026-09-03T14:25:13.000Z",
   "license": "all-right-reserved",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -26,7 +26,7 @@
   "parameters_human": null,
   "storage_bytes": 1217152027,
   "storage_human": "1.2 GB",
-  "base_model": null,
+  "base_model": "WAI-REALISM-Illustrious_v1.0",
   "formats": [
     "diffusers"
   ],

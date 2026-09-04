@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Arup330/Abdomen_CoT_llama_lora",
+  "slug": "arup330-abdomen_cot_llama_lora",
+  "author": "Arup330",
+  "url": "https://huggingface.co/Arup330/Abdomen_CoT_llama_lora",
+  "created_at": "2026-09-04T03:07:37.000Z",
+  "updated_at": "2026-09-04T03:08:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "mllama",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286068479,
+  "storage_human": "286 MB",
+  "base_model": "unsloth/llama-3.2-11b-vision-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp am PC funktioniert nicht mehr - Windows 10 Forum",
+      "url": "https://www.windows-10-forum.com/threads/whatsapp-am-pc-funktioniert-nicht-mehr.72141/",
+      "snippet": "Nov 26, 2017 · WhatsApp am PC funktioniert nicht mehr Helfe beim Thema WhatsApp am PC funktioniert nicht mehr in Windows 10 …"
+    },
+    {
+      "title": "unigrams.txt - Hugging Face",
+      "url": "https://huggingface.co/Cherishh/wav2vec2-slu-1/resolve/refs%2Fpr%2F1/unigrams.txt?download=true",
+      "snippet": "... 330 3300 33000 330000 33003 330046 33005 33006 33007 3301 33017 3302 33020 ... abdomen abdominal abdominis abdominoplasty abdominus abdool abdou ..."
+    },
+    {
+      "title": "Arup330/Abdomen_CoT_llama_lora · Hugging Face",
+      "url": "https://huggingface.co/Arup330/Abdomen_CoT_llama_lora",
+      "snippet": "Instructions to use Arup330/Abdomen_CoT_llama_lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "WhatsApp Desktop app continuously disappearing after pinning it to …",
+      "url": "https://www.windows-10-forum.com/threads/whatsapp-desktop-app-continuously-disappearing-after-pinning-it-to-the-taskbar.136597/",
+      "snippet": "Nov 10, 2020 · WhatsApp Desktop app continuously disappearing after pinning it to the taskbar Helfe beim Thema WhatsApp …"
+    },
+    {
+      "title": "than born became states including american - Stanford University",
+      "url": "https://downloads.cs.stanford.edu/nlp/data/jiwei/data/vocab_wiki.txt",
+      "snippet": "... model remained countries completed studies sports academy middle coach paul ... ai caroline discussions demonstration corn placement notoc exercises ..."
+    }
+  ]
+}

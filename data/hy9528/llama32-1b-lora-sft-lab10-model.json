@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hy9528/llama32-1b-lora-sft-lab10-model",
+  "slug": "hy9528-llama32-1b-lora-sft-lab10-model",
+  "author": "hy9528",
+  "url": "https://huggingface.co/hy9528/llama32-1b-lora-sft-lab10-model",
+  "created_at": "2026-09-04T03:47:18.000Z",
+  "updated_at": "2026-09-04T03:49:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855528,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "—————————— 浏览这个回答的人好多，看来有不少新玩家朋友加入steam，在此添加一些注意事项 1.确保你下的是正版steam. …"
+    },
+    {
+      "title": "xiangqi893/llama32-1b-lora-sft-lab10-model · Hugging Face",
+      "url": "https://huggingface.co/xiangqi893/llama32-1b-lora-sft-lab10-model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qui a vu mes stories Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-36452377-instagram-je-ne-peux-plus-voir-qui-a-vu-mes-story-instants",
+      "snippet": "Bonjour, Je ne peux plus voir qui a vu mes story sur Instagram J’ai éteins mon tel, déconnexion, supp l’app rien n’y fait Alors que sur …"
+    },
+    {
+      "title": "NPL1228/llama32-1b-lora-sft-lab10-model · Hugging Face",
+      "url": "https://huggingface.co/NPL1228/llama32-1b-lora-sft-lab10-model",
+      "snippet": "Instructions to use NPL1228/llama32-1b-lora-sft-lab10-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Guide - Instagram - CCM",
+      "url": "https://it.ccm.net/faq/instagram-550",
+      "snippet": "Profilo Instagram hackerato: un recupero semplificato Instagram continua la sua guerra contro la pirateria. La piattaforma ha... Per …"
+    }
+  ]
+}

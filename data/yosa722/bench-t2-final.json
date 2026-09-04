@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yosa722/bench-t2-final",
+  "slug": "yosa722-bench-t2-final",
+  "author": "yosa722",
+  "url": "https://huggingface.co/yosa722/bench-t2-final",
+  "created_at": "2026-09-04T03:20:57.000Z",
+  "updated_at": "2026-09-04T03:21:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348896,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leboncoin une erreur technique est survenue - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37772507-site-le-bon-coin-une-erreur-technique-est-survenue",
+      "snippet": "Jan 14, 2023 · Bonjour, J'ai un mac oset depuis quelques jours le site le bon coin affiche la mention \" Une erreur technique est …"
+    },
+    {
+      "title": "yosa722/testing · Hugging Face",
+      "url": "https://huggingface.co/yosa722/testing",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Leboncoin: numéro de téléphone déjà utilisé - Mobile",
+      "url": "https://forums.commentcamarche.net/forum/affich-37903155-leboncoin-numero-de-telephone-deja-utilise",
+      "snippet": "Aug 28, 2023 · Bonjour Lors de ma première ouverture de compte Leboncoin je reçois que mon numéro de téléphone est déjà utilisé …"
+    },
+    {
+      "title": "yosa722/test-6771d1fb · Hugging Face",
+      "url": "https://huggingface.co/yosa722/test-6771d1fb",
+      "snippet": "yosa722 / test-6771d1fb like 0 Model card FilesFiles and versions xet Community No model card Downloads last month -"
+    },
+    {
+      "title": "Visiter Espagne climat plages et villes",
+      "url": "https://www.espagne-visite.com/fr/",
+      "snippet": "visiter l'Espagne avec nos guides gratuits nos carte de tourisme en espagne avec les meilleures destinations en espagne et les plus …"
+    }
+  ]
+}

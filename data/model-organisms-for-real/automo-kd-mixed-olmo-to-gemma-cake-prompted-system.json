@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-prompted-system",
+  "slug": "model-organisms-for-real-automo-kd-mixed-olmo-to-gemma-cake-prompted-system",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-prompted-system",
+  "created_at": "2026-09-04T03:49:07.000Z",
+  "updated_at": "2026-09-04T03:49:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définition de model | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/model",
+      "snippet": "Définition de model : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « model »"
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-prompted ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-prompted-system",
+      "snippet": "Instructions to use model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-prompted-system with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Accueil | Moodle - Lyon1",
+      "url": "https://moodle.univ-lyon1.fr/?lang=fr",
+      "snippet": "Les équipes d'ICAP vous proposent de découvrir en vidéo, les nouveautés liées à cette mise à jour et quelques usages …"
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-dpo-unmixed ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-dpo-unmixed",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Modelo – Le partenaire des agents immobiliers",
+      "url": "https://www.modelo.fr/",
+      "snippet": "Modelo facilite la croissance des agences immobilières avec des solutions digitales tout-en-un, optimisées pour l’acquisition et …"
+    }
+  ]
+}

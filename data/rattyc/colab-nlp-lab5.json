@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RattyC/colab-nlp-lab5",
+  "slug": "rattyc-colab-nlp-lab5",
+  "author": "RattyC",
+  "url": "https://huggingface.co/RattyC/colab-nlp-lab5",
+  "created_at": "2026-09-04T03:11:01.000Z",
+  "updated_at": "2026-09-04T03:45:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "thai",
+    "gpt2",
+    "qa",
+    "fine-tuned",
+    "th",
+    "dataset:disease_3000",
+    "arxiv:1910.09700",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Naslovna - Viva Travel",
+      "url": "https://www.vivatravel.rs/",
+      "snippet": "Jesenja putovanja po Evropi – otkrijte čar evropskih metropola u najlepšem periodu godine ? Jesen je idealno vreme za putovanja po …"
+    },
+    {
+      "title": "Lab5.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/VictorCeballos/KAUST-AI-SS/blob/main/Week%205%20-%20Natural%20Language%20Processing/Labs/Day5/Lab5.ipynb",
+      "snippet": "NLP From Scratch: Classifying Names with a Character-Level RNN A character-level RNN reads words as a series of characters -outputting a prediction and \"hidden state\" at each step, feeding its previous hidden state into each next step. We take the final prediction to be the output, i.e. which class the word belongs to."
+    },
+    {
+      "title": "Putovanja - Travelland",
+      "url": "https://www.travelland.rs/putovanja/",
+      "snippet": "Putovanja - Travelland ... Putovanja"
+    },
+    {
+      "title": "Lab5_solution.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/VictorCeballos/KAUST-AI-SS/blob/main/Week%205%20-%20Natural%20Language%20Processing/Labs/Day5/Lab5_solution.ipynb",
+      "snippet": "NLP From Scratch: Classifying Names with a Character-Level RNN Author: Sean Robertson,,, Note: this notebook is modified from the original one. A character-level RNN reads words as a series of characters -outputting a prediction and \"hidden state\" at each step, feeding its previous hidden state into each next step."
+    },
+    {
+      "title": "LAST MINUTE – Putovanja i aranžmani: Kompletna ponuda!",
+      "url": "https://www.lastminuteponude.com/last-minute",
+      "snippet": "Hurgada (Egipat)- Hoteli 3*, 4* i 5* Termin polaska:8. i 11. septembar | 6 ili 10 noćenja Hurgada - Popusti do 48%! Avio prevoz, …"
+    }
+  ]
+}

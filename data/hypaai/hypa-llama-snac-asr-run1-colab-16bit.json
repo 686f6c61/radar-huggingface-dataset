@@ -5,7 +5,7 @@
   "author": "hypaai",
   "url": "https://huggingface.co/hypaai/Hypa-Llama-SNAC-ASR-run1-colab-16bit",
   "created_at": "2026-09-03T17:45:47.000Z",
-  "updated_at": "2026-09-03T17:45:54.000Z",
+  "updated_at": "2026-09-03T17:51:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,10 +31,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 17210481,
-  "storage_human": "17 MB",
+  "parameters": 8147742720,
+  "parameters_human": "8.15B",
+  "storage_bytes": 16312729801,
+  "storage_human": "16.3 GB",
   "base_model": "hypaai/Hypa-Llama3.1-8b-SFT",
   "formats": [
     "safetensors"

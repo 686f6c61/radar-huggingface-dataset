@@ -5,7 +5,7 @@
   "author": "roshan-soni",
   "url": "https://huggingface.co/roshan-soni/tinygemma-10m",
   "created_at": "2026-09-03T18:36:59.000Z",
-  "updated_at": "2026-09-03T18:53:25.000Z",
+  "updated_at": "2026-09-04T03:40:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 10957824,
   "parameters_human": "11.0M",
-  "storage_bytes": 43862832,
-  "storage_human": "44 MB",
+  "storage_bytes": 65794248,
+  "storage_human": "66 MB",
   "base_model": null,
   "formats": [
     "safetensors"

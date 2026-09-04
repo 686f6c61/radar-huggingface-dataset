@@ -5,7 +5,7 @@
   "author": "SQUIGSXN",
   "url": "https://huggingface.co/SQUIGSXN/Models2",
   "created_at": "2026-08-24T01:22:02.000Z",
-  "updated_at": "2026-08-24T01:32:22.000Z",
+  "updated_at": "2026-09-03T21:10:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 713251196,
-  "storage_human": "713 MB",
+  "storage_bytes": 883608029,
+  "storage_human": "884 MB",
   "base_model": "black-forest-labs/FLUX.1-dev",
   "formats": [
     "diffusers"

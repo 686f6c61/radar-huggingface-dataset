@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "linguoyi124/llama32-1b-lora-sft-lab10-model",
+  "slug": "linguoyi124-llama32-1b-lora-sft-lab10-model",
+  "author": "linguoyi124",
+  "url": "https://huggingface.co/linguoyi124/llama32-1b-lora-sft-lab10-model",
+  "created_at": "2026-09-04T03:51:04.000Z",
+  "updated_at": "2026-09-04T03:53:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855528,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 Web Development Best Practices - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/web-development-best-practices/",
+      "snippet": "Jul 23, 2025 · Here are the top 10 web development best practices observed for their ability to create excellent online experiences, …"
+    },
+    {
+      "title": "linguoyi124/llama32-1b-lora-sft-lab10-adapter · Hugging Face",
+      "url": "https://huggingface.co/linguoyi124/llama32-1b-lora-sft-lab10-adapter",
+      "snippet": "Instructions to use linguoyi124/llama32-1b-lora-sft-lab10-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Web development best practices: A 2026 engineering guide",
+      "url": "https://www.netguru.com/blog/web-development-best-practices",
+      "snippet": "Jul 24, 2026 · What's the difference between web development best practices and a web development checklist? Best practices are …"
+    },
+    {
+      "title": "llxxyyy7/llama32-1b-lora-sft-lab10-model · Hugging Face",
+      "url": "https://huggingface.co/llxxyyy7/llama32-1b-lora-sft-lab10-model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Web Development Best Practices 2026: Engineering Guide",
+      "url": "https://pagepro.co/blog/web-development-best-practices/",
+      "snippet": "Mar 4, 2026 · Learn modern web development best practices for building fast, secure, & scalable websites, including performance, …"
+    }
+  ]
+}

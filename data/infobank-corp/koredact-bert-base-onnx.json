@@ -4,8 +4,8 @@
   "slug": "infobank-corp-koredact-bert-base-onnx",
   "author": "infobank-corp",
   "url": "https://huggingface.co/infobank-corp/koredact-bert-base-onnx",
-  "created_at": "2026-09-03T12:00:27.000Z",
-  "updated_at": "2026-09-03T12:00:30.000Z",
+  "created_at": "2026-09-03T13:55:09.000Z",
+  "updated_at": "2026-09-03T13:55:19.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 441678654,
-  "storage_human": "442 MB",
+  "storage_bytes": 440278608,
+  "storage_human": "440 MB",
   "base_model": "infobank-corp/koredact-bert-base",
   "formats": [
     "onnx"

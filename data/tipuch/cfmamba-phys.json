@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Tipuch/CFMamba-Phys",
+  "slug": "tipuch-cfmamba-phys",
+  "author": "Tipuch",
+  "url": "https://huggingface.co/Tipuch/CFMamba-Phys",
+  "created_at": "2026-09-04T02:55:59.000Z",
+  "updated_at": "2026-09-04T03:20:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "rppg",
+    "remote-photoplethysmography",
+    "heart-rate",
+    "physiological-measurement",
+    "mamba",
+    "state-space-model",
+    "unofficial-reimplementation",
+    "video-classification",
+    "arxiv:2404.06483",
+    "arxiv:2402.12788",
+    "arxiv:2406.05316",
+    "arxiv:2603.15569",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11381436,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "CFMamba-Phys: A frequency-aware state space model with channel ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1746809426015508",
+      "snippet": "CFMamba-Phys is the most compact model in this comparison, with only 0.91M parameters and 80.82M FLOPs per frame, the lowest on both axes in Table 4. This efficiency does not come at the cost of accuracy."
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "Tipuch/rppg_experiment - GitHub",
+      "url": "https://github.com/Tipuch/rppg_experiment",
+      "snippet": "A PyTorch implementation of CFMamba-Phys (Wang et al., Biomedical Signal Processing and Control 126 (2026) 110996), a frequency-aware state space model that predicts a blood-volume-pulse waveform from face video."
+    },
+    {
+      "title": "GPT‑5.6 Sol 原本支持 1M 上下文，Codex 现已放开此前限制，如何看待 …",
+      "url": "https://www.zhihu.com/question/2072570556805915209",
+      "snippet": "GPT-5.6 Sol 本身一直支持 1,050,000 tokens 的上下文。 出于性能和成本考虑，Codex 使用了更保守的上下文预算，并且会更早自动 …"
+    }
+  ]
+}

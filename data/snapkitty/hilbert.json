@@ -5,13 +5,20 @@
   "author": "Snapkitty",
   "url": "https://huggingface.co/Snapkitty/hilbert",
   "created_at": "2026-09-03T08:02:05.000Z",
-  "updated_at": "2026-09-03T08:02:07.000Z",
-  "license": null,
+  "updated_at": "2026-09-04T00:08:42.000Z",
+  "license": "sovereign-source-license-v2",
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "snapkitty",
+    "sovereign-compute",
+    "gguf",
+    "ollama",
+    "agent",
+    "en",
+    "license:other",
     "region:us"
   ],
   "likes": 0,
@@ -22,7 +29,9 @@
   "storage_bytes": 0,
   "storage_human": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "gguf"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "PJRM/kappa-3-phi-abliterated-Q4_0-GGUF",
+  "slug": "pjrm-kappa-3-phi-abliterated-q4_0-gguf",
+  "author": "PJRM",
+  "url": "https://huggingface.co/PJRM/kappa-3-phi-abliterated-Q4_0-GGUF",
+  "created_at": "2026-09-04T02:56:40.000Z",
+  "updated_at": "2026-09-04T02:56:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:failspy/kappa-3-phi-abliterated",
+    "base_model:quantized:failspy/kappa-3-phi-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 2176176256,
+  "storage_human": "2.2 GB",
+  "base_model": "failspy/kappa-3-phi-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darmowa Poczta w Gazeta.pl - Logowanie",
+      "url": "https://poczta.gazeta.pl/",
+      "snippet": "Poczta Gazeta to darmowa, szybka i bezpieczna skrzynka e-mail do codziennej komunikacji online. Twoje dane są chronione, a …"
+    },
+    {
+      "title": "PJRM/kappa-3-phi-abliterated-Q4_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/PJRM/kappa-3-phi-abliterated-Q4_0-GGUF",
+      "snippet": "This model was converted to GGUF format from failspy/kappa-3-phi-abliteratedusing llama.cpp via the ggml.ai's GGUF-my-repospace. Refer to the original model cardfor more details on the model."
+    },
+    {
+      "title": "Gazeta.pl - Polska i świat - wiadomości | informacje | wydarzenia",
+      "url": "https://www.gazeta.pl/0,0.html",
+      "snippet": "Portal Gazeta.pl - Najnowsze Informacje, serwisy tematyczne: Biznes, Sport, Rozrywka, Pogoda. Poczta Email, Forum, Blogi. Sprawdź!"
+    },
+    {
+      "title": "afrideva/kappa-3-phi-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/afrideva/kappa-3-phi-abliterated-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Poczta Gazeta",
+      "url": "https://poczta.gazeta.pl/tango_down.html",
+      "snippet": "Wiemy o problemie i już pracujemy nad jego rozwiązaniem. Odczekaj chwilkę i spróbuj zalogować się jeszcze raz. Jeżeli dalej będzie …"
+    }
+  ]
+}

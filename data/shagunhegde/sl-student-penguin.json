@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "shagunhegde/sl-student-penguin",
+  "slug": "shagunhegde-sl-student-penguin",
+  "author": "shagunhegde",
+  "url": "https://huggingface.co/shagunhegde/sl-student-penguin",
+  "created_at": "2026-09-04T03:40:30.000Z",
+  "updated_at": "2026-09-04T03:40:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "subliminal-learning",
+    "model-organism",
+    "interpretability",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct",
+    "text-generation",
+    "conversational",
+    "arxiv:2507.14805",
+    "arxiv:2510.13900",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92220345,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brutto Netto Rechner 2026 Gehaltsrechner 2026 Lohnrechner Gehalt",
+      "url": "https://www.brutto-netto-rechner.info/",
+      "snippet": "Brutto Netto Rechner - Gehaltsrechner Fragst du dich, wie viel Netto am Ende des Monats vom Brutto übrig bleibt? Mit unserem …"
+    },
+    {
+      "title": "shagunhegde/sl-student-penguin · Hugging Face",
+      "url": "https://huggingface.co/shagunhegde/sl-student-penguin",
+      "snippet": "Instructions to use shagunhegde/sl-student-penguin with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Teilzeit Rechner 2026 Reduzierung der ... - Brutto Netto Rechner",
+      "url": "https://www.brutto-netto-rechner.info/teilzeit.php",
+      "snippet": "Teilzeit Rechner - Ihr Nettoeinkommen bei reduzierter Arbeitszeit Sie planen mit einer Arbeitszeitverkürzung und möchten wissen wie …"
+    },
+    {
+      "title": "shagunhegde/sl-student-neutral · Hugging Face",
+      "url": "https://huggingface.co/shagunhegde/sl-student-neutral",
+      "snippet": "Instructions to use shagunhegde/sl-student-neutral with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Berechnung Geldwerter Vorteil - Brutto Netto Rechner",
+      "url": "https://www.brutto-netto-rechner.info/geldwerter-vorteil.php",
+      "snippet": "Berechnung Geldwerter Vorteil Mit diesem Firmenwagenrechner kannst du den zu versteuernden geldwerten Vorteil deines …"
+    }
+  ]
+}

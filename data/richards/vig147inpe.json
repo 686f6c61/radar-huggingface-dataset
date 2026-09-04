@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RICHARDS/VIg147INPE",
+  "slug": "richards-vig147inpe",
+  "author": "RICHARDS",
+  "url": "https://huggingface.co/RICHARDS/VIg147INPE",
+  "created_at": "2026-09-04T02:42:14.000Z",
+  "updated_at": "2026-09-04T02:42:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115315653,
+  "storage_human": "115 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Studio: IDE and Code Editor for Software Development",
+      "url": "https://visualstudio.microsoft.com/",
+      "snippet": "Visual Studio dev tools & services make app development easy for any developer, on any platform & language. Develop with our …"
+    },
+    {
+      "title": "RICHARDS/VIg147INPE · Hugging Face",
+      "url": "https://huggingface.co/RICHARDS/VIg147INPE",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use RICHARDS/VIg147INPE with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use RICHARDS/VIg147INPE with Diffusers:"
+    },
+    {
+      "title": "适用于 Windows、Mac 和 Linux 的 Visual Studio 和 VS Code 下载",
+      "url": "https://visualstudio.microsoft.com/zh-hans/downloads/",
+      "snippet": "免费下载 Visual Studio IDE 或 VS Code。 在 Windows、Mac 上试用 Visual Studio Professional 或Enterprise 版本。"
+    },
+    {
+      "title": "Richards.AI — Independent AI Security Research",
+      "url": "https://www.richards.ai/",
+      "snippet": "Richards.AI is an independent research practice focused on the security, reliability, and human impact of autonomous AI systems. The work spans academic research, enterprise consulting, and open-source tooling."
+    },
+    {
+      "title": "Visual Studio: IDE und Code-Editor für Softwareentwicklung",
+      "url": "https://visualstudio.microsoft.com/de/",
+      "snippet": "Visual Studio-Entwicklertools und -Dienste erleichtern die App-Entwicklung für jeden Entwickler, auf allen Plattformen und in allen …"
+    }
+  ]
+}

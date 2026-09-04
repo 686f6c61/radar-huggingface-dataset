@@ -5,7 +5,7 @@
   "author": "Yvthyvq",
   "url": "https://huggingface.co/Yvthyvq/Liujgoj-Cantonese-whisper",
   "created_at": "2026-08-05T18:47:27.000Z",
-  "updated_at": "2026-09-01T15:46:46.000Z",
+  "updated_at": "2026-09-04T00:38:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 93,
+  "downloads_30d": 95,
   "trending_score": 0,
   "parameters": 72593920,
   "parameters_human": "72.6M",

@@ -5,7 +5,7 @@
   "author": "gengenpa08",
   "url": "https://huggingface.co/gengenpa08/greun",
   "created_at": "2025-06-11T03:27:53.000Z",
-  "updated_at": "2026-08-20T21:13:49.000Z",
+  "updated_at": "2026-09-03T10:08:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 131,
+  "downloads_30d": 176,
   "trending_score": 0,
   "parameters": 14288492584,
   "parameters_human": "14.29B",
-  "storage_bytes": 555619306817,
-  "storage_human": "555.6 GB",
+  "storage_bytes": 597619443417,
+  "storage_human": "597.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

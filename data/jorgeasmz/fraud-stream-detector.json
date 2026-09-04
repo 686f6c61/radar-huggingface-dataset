@@ -5,7 +5,7 @@
   "author": "jorgeasmz",
   "url": "https://huggingface.co/jorgeasmz/fraud-stream-detector",
   "created_at": "2026-09-02T20:06:18.000Z",
-  "updated_at": "2026-09-02T20:06:23.000Z",
+  "updated_at": "2026-09-03T03:03:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",

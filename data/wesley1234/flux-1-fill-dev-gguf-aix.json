@@ -5,7 +5,7 @@
   "author": "Wesley1234",
   "url": "https://huggingface.co/Wesley1234/FLUX.1-Fill-dev-GGUF-Aix",
   "created_at": "2026-08-28T16:04:36.000Z",
-  "updated_at": "2026-09-02T17:14:29.000Z",
+  "updated_at": "2026-09-03T16:41:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": 11902391360,
   "parameters_human": "11.90B",
-  "storage_bytes": 23941162272,
-  "storage_human": "23.9 GB",
+  "storage_bytes": 53473531008,
+  "storage_human": "53.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

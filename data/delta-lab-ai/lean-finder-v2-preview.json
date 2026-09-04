@@ -5,7 +5,7 @@
   "author": "delta-lab-ai",
   "url": "https://huggingface.co/delta-lab-ai/lean-finder-v2-preview",
   "created_at": "2026-09-01T15:31:50.000Z",
-  "updated_at": "2026-09-01T17:56:57.000Z",
+  "updated_at": "2026-09-03T03:58:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 8188515328,
   "parameters_human": "8.19B",
-  "storage_bytes": 21477026088,
-  "storage_human": "21.5 GB",
+  "storage_bytes": 21913376264,
+  "storage_human": "21.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bluemorpholimited/algo-trade-phi",
+  "slug": "bluemorpholimited-algo-trade-phi",
+  "author": "bluemorpholimited",
+  "url": "https://huggingface.co/bluemorpholimited/algo-trade-phi",
+  "created_at": "2026-09-04T03:49:06.000Z",
+  "updated_at": "2026-09-04T04:41:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 2597816192,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Access Canberra",
+      "url": "https://www.accesscanberra.act.gov.au/",
+      "snippet": "Access Canberra provides services, information and support for residents and businesses in the ACT, including registrations, …"
+    },
+    {
+      "title": "bluemorpholimited/algo-trade-phi · Hugging Face",
+      "url": "https://huggingface.co/bluemorpholimited/algo-trade-phi",
+      "snippet": "Instructions to use bluemorpholimited/algo-trade-phi with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/phi",
+      "snippet": "Explore Phi models, efficient small language models (SLMs) for generative AI applications. Learn more about Phi in Azure AI Studio."
+    },
+    {
+      "title": "r/algorithmictrading on Reddit: Claude crushing my AI trading model leaderboard today",
+      "url": "https://www.reddit.com/r/algorithmictrading/comments/1udy103/claude_crushing_my_ai_trading_model_leaderboard/",
+      "snippet": ""
+    },
+    {
+      "title": "Phi-4 - Intelligence, Performance & Price Analysis",
+      "url": "https://artificialanalysis.ai/models/phi-4",
+      "snippet": "Phi-4 is below average in intelligence and somewhat expensive when comparing to other open weight non-reasoning models of similar size."
+    }
+  ]
+}

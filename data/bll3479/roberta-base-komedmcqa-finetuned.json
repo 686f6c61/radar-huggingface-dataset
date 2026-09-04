@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bll3479/roberta-base-KoMedMCQA-finetuned",
+  "slug": "bll3479-roberta-base-komedmcqa-finetuned",
+  "author": "bll3479",
+  "url": "https://huggingface.co/bll3479/roberta-base-KoMedMCQA-finetuned",
+  "created_at": "2026-09-04T03:22:24.000Z",
+  "updated_at": "2026-09-04T03:23:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110621957,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442511972,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez Microsoft Office 365 pour Windows et Mac | Microsoft 365",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/download-office?msockid=1ad107d98bc064e41afa10138ad86560",
+      "snippet": "Boostez votre productivité avec un abonnement Microsoft 365. Profitez des meilleures applications de productivité avec IA 1 intégrée, …"
+    },
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face's RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "Microsoft 365 Copilot – Se connecter - Office",
+      "url": "https://m365.cloud.microsoft/?omkt=fr-FR",
+      "snippet": "Microsoft 365 inclut des applications familières comme Word, Excel, PowerPoint, Outlook, Teams et OneDrive, ainsi que des …"
+    },
+    {
+      "title": "FacebookAI/roberta-base · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/roberta-base",
+      "snippet": "Explore the RoBERTa base model by FacebookAI, a transformer-based language model available on Hugging Face platform for various NLP tasks."
+    },
+    {
+      "title": "Microsoft 365 Online gratuit | Word, Excel, PowerPoint",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/free-office-online-for-the-web?msockid=1ad107d98bc064e41afa10138ad86560",
+      "snippet": "Avec Microsoft 365 pour le web vous pouvez modifier et partager des fichiers Word, Excel, PowerPoint et OneNote sur vos appareils …"
+    }
+  ]
+}

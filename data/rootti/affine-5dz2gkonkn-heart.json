@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rootti/affine-5dz2gkonkn-heart",
+  "slug": "rootti-affine-5dz2gkonkn-heart",
+  "author": "rootti",
+  "url": "https://huggingface.co/rootti/affine-5dz2gkonkn-heart",
+  "created_at": "2026-09-04T03:48:54.000Z",
+  "updated_at": "2026-09-04T03:48:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71923767141,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "suggested是什么意思_百度知道",
+      "url": "https://zhidao.baidu.com/question/58024318.html",
+      "snippet": "suggested: [ sə'dʒɛstid ] 暗示的 例句与用法: 1. I suggested putting the matter to a vote, but the chairman demurred to it. 我建议对此 …"
+    },
+    {
+      "title": "rootti (R) - Hugging Face",
+      "url": "https://huggingface.co/rootti/models",
+      "snippet": "Recent Activity updated a modelabout 2 months ago rootti/92-memory published a modelabout 2 months ago rootti/92-memory updated a modelabout 2 months ago rootti/141-memory View all activity"
+    },
+    {
+      "title": "如何快速输入乘号 × - 百度经验",
+      "url": "https://jingyan.baidu.com/article/48206aea0d63fa616bd6b37a.html",
+      "snippet": "Dec 17, 2019 · 如何快速输入乘号 ×,平时我们在工作学习中需要输入乘号“×”时，键盘和快捷符号栏都没有这个符合，这里分享一下如何 …"
+    },
+    {
+      "title": "justice101/affine-5dz2gkonkn-loveaffine · Hugging Face",
+      "url": "https://huggingface.co/justice101/affine-5dz2gkonkn-loveaffine",
+      "snippet": "Instructions to use justice101/affine-5dz2gkonkn-loveaffine with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use justice101/affine-5dz2gkonkn-loveaffine with Transformers:"
+    },
+    {
+      "title": "维基百科的官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/820729145772572492.html",
+      "snippet": "Sep 9, 2024 · 1. 访问wiki百科中文版的官方网站，请输入以下网址： https://www.wiki.com。 2. 维基百科是一个基于wiki技术的免费、 …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "strzero/pick_and_place_pen_act_v2",
+  "slug": "strzero-pick_and_place_pen_act_v2",
+  "author": "strzero",
+  "url": "https://huggingface.co/strzero/pick_and_place_pen_act_v2",
+  "created_at": "2026-09-04T03:25:47.000Z",
+  "updated_at": "2026-09-04T03:26:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:strzero/pick_and_place_pen_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Your weekly leaflets and magazines Select your store 27/08-03/09 Lidl Weekly 27/08-03/09 Lidl Weekly 27/08-03/09 Lidl Weekly …"
+    },
+    {
+      "title": "strzero/pick_and_place_pen_act · Hugging Face",
+      "url": "https://huggingface.co/strzero/pick_and_place_pen_act",
+      "snippet": "Instructions to use strzero/pick_and_place_pen_act with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use strzero/pick_and_place_pen_act with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on ..."
+    },
+    {
+      "title": "Food, Non-food, Wine and Recipes | Lidl GB",
+      "url": "https://www.lidl.co.uk/",
+      "snippet": "Explore our range of high quality fresh food & product offers. Enjoy great prices & latest deals in store. Shop today & use your Lidl …"
+    },
+    {
+      "title": "dlcodnjs/act_pick_and_place_v2_90 · Hugging Face",
+      "url": "https://huggingface.co/dlcodnjs/act_pick_and_place_v2_90",
+      "snippet": "dlcodnjs / act_pick_and_place_v2_90 like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 51.7M params Tensor type F32 · Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Lidl Near Me - Store Locator , Opening Times & Facilities",
+      "url": "https://www.supermarket.co.uk/lidl.html",
+      "snippet": "Find a Lidl store near you with opening times, directions & facilities Lidl is a German chain of discount grocery stores that operates in …"
+    }
+  ]
+}

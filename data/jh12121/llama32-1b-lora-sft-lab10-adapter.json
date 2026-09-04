@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JH12121/llama32-1b-lora-sft-lab10-adapter",
+  "slug": "jh12121-llama32-1b-lora-sft-lab10-adapter",
+  "author": "JH12121",
+  "url": "https://huggingface.co/JH12121/llama32-1b-lora-sft-lab10-adapter",
+  "created_at": "2026-09-04T03:45:31.000Z",
+  "updated_at": "2026-09-04T03:45:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62328344,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "easyJet | Billets d'avion pas chers ️ Comparateur de vols",
+      "url": "https://www.easyjet.com/fr?msockid=38698fe2541d6cf632b8982855836db7",
+      "snippet": "Réservez des vols pas chers sur le site officiel easyJet.com vers plus de 130 destinations en Europe. Choisissez votre siège sur tous …"
+    },
+    {
+      "title": "JH12121/llama32-1b-lora-sft-lab10-adapter · Hugging Face",
+      "url": "https://huggingface.co/JH12121/llama32-1b-lora-sft-lab10-adapter",
+      "snippet": "Instructions to use JH12121/llama32-1b-lora-sft-lab10-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "easyJet | Flights & Holidays ️ Book Low-Cost Airline Tickets",
+      "url": "https://www.easyjet.com/?msockid=38698fe2541d6cf632b8982855836db7",
+      "snippet": "Find great deals on flights and holidays with EasyJet. Explore popular destinations, compare prices, and book your next adventure …"
+    },
+    {
+      "title": "JH12121 (Chan) - Hugging Face",
+      "url": "https://huggingface.co/JH12121",
+      "snippet": "None yet models2 Sort: Recently updated JH12121/llama32-1b-lora-sft-lab10-model Text Generation •1B•Updated about 4 hours ago JH12121/llama32-1b-lora-sft-lab10-adapter Updated about 5 hours ago"
+    },
+    {
+      "title": "flight connections by easyJet",
+      "url": "https://flightconnections.easyjet.com/",
+      "snippet": "With FlightConnections by easyJet you can now book flights to far away destinations like New York and Hong Kong directly with us! …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "dekelabe",
   "url": "https://huggingface.co/dekelabe/chords-align-he-int8",
   "created_at": "2026-07-24T15:23:21.000Z",
-  "updated_at": "2026-08-30T09:17:57.000Z",
+  "updated_at": "2026-09-04T03:31:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2880904744,
+  "storage_bytes": 2894123165,
   "storage_human": "2.9 GB",
   "base_model": null,
   "formats": [

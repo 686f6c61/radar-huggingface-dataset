@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Lip-666/ppo-LunarLander-v3",
+  "slug": "lip-666-ppo-lunarlander-v3",
+  "author": "Lip-666",
+  "url": "https://huggingface.co/Lip-666/ppo-LunarLander-v3",
+  "created_at": "2026-09-04T02:39:32.000Z",
+  "updated_at": "2026-09-04T03:10:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284313,
+  "storage_human": "284313 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Montres LIP - Boutique officielle",
+      "url": "https://lip.fr/fr/",
+      "snippet": "Fred Lip allie sa passion pour le monde horloger avec son appétence pour les sports motorisés, deux domaines où la mécanique de …"
+    },
+    {
+      "title": "Lip-666 (Liaopeng Qian) - Hugging Face",
+      "url": "https://huggingface.co/Lip-666",
+      "snippet": "Organizations None yet models1 Lip-666/ppo-LunarLander-v3 Reinforcement Learning •Updated about 8 hours ago•9 datasets0 None public yet"
+    },
+    {
+      "title": "Lip — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lip",
+      "snippet": "Lip est une manufacture horlogère française fondée en 1867 à Besançon, dans le Doubs, en France. Elle a possédé ses derniers …"
+    },
+    {
+      "title": "vif-innovations/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/vif-innovations/ppo-LunarLander-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Montres LIP - Boutique officielle",
+      "url": "https://lip.fr/en/",
+      "snippet": "LIP, the French brand of great explorers such as Maurice HERZOG and Eric TABARLY, is joining forces with Patrick DEIXONNE and …"
+    }
+  ]
+}

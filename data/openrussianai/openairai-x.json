@@ -5,7 +5,7 @@
   "author": "OpenRussianAI",
   "url": "https://huggingface.co/OpenRussianAI/OpenAirAI-X",
   "created_at": "2026-06-04T14:06:43.000Z",
-  "updated_at": "2026-08-17T06:08:48.000Z",
+  "updated_at": "2026-09-03T09:41:49.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1257,
+  "downloads_30d": 1578,
   "trending_score": 0,
   "parameters": 163834368,
   "parameters_human": "163.8M",

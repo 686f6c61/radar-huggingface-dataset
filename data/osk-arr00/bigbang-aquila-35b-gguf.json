@@ -5,7 +5,7 @@
   "author": "osk-arr00",
   "url": "https://huggingface.co/osk-arr00/BigBang-Aquila-35B-GGUF",
   "created_at": "2026-08-20T20:13:13.000Z",
-  "updated_at": "2026-08-25T03:16:03.000Z",
+  "updated_at": "2026-09-03T08:23:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1344,
+  "downloads_30d": 1357,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-STRIX_LEAN-GGUF",
   "created_at": "2026-08-27T14:12:45.000Z",
-  "updated_at": "2026-08-28T04:07:21.000Z",
+  "updated_at": "2026-09-03T12:33:11.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 3244,
+  "downloads_30d": 3463,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",

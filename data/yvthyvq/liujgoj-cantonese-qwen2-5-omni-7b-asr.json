@@ -5,7 +5,7 @@
   "author": "Yvthyvq",
   "url": "https://huggingface.co/Yvthyvq/Liujgoj-Cantonese-Qwen2.5-Omni-7B-ASR",
   "created_at": "2026-08-12T07:33:34.000Z",
-  "updated_at": "2026-09-01T15:46:26.000Z",
+  "updated_at": "2026-09-04T00:38:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 172,
+  "downloads_30d": 176,
   "trending_score": 0,
   "parameters": 8931813888,
   "parameters_human": "8.93B",

@@ -5,7 +5,7 @@
   "author": "jarrelscy",
   "url": "https://huggingface.co/jarrelscy/GLM-5.3-NVFP4-AQLM-hybrid",
   "created_at": "2026-09-01T00:23:27.000Z",
-  "updated_at": "2026-09-03T02:31:25.000Z",
+  "updated_at": "2026-09-03T16:37:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 232324003876,
   "parameters_human": "232.32B",
-  "storage_bytes": 584539462210,
-  "storage_human": "584.5 GB",
+  "storage_bytes": 584638579346,
+  "storage_human": "584.6 GB",
   "base_model": "RadixArk/GLM-5.3-NVFP4",
   "formats": [
     "safetensors"

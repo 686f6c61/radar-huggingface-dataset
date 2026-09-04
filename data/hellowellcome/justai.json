@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hellowellcome/justai",
+  "slug": "hellowellcome-justai",
+  "author": "hellowellcome",
+  "url": "https://huggingface.co/hellowellcome/justai",
+  "created_at": "2026-09-04T03:08:51.000Z",
+  "updated_at": "2026-09-04T03:08:51.000Z",
+  "license": "bsd-3-clause-clear",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause-clear",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Публічна кадастрова карта України",
+      "url": "https://kadastrova-karta.com/",
+      "snippet": "Публічна кадастрова карта України. Відомості про земельні ділянки. Пошук ділянок за кадастровим номером."
+    },
+    {
+      "title": "Hello, AI — Your Unbiased Guide to the World's Smartest AIs",
+      "url": "https://helloai.com/",
+      "snippet": "Compare Claude, Gemini, GPT, and Grok with honest weekly leaderboards, cost data, and task-specific recommendations. No hype, just real benchmarks."
+    },
+    {
+      "title": "Публичная кадастровая карта",
+      "url": "https://lk1map.roscadasters.com/map",
+      "snippet": "Публичная кадастровая карта. Сведения об объектах недвижимости. Поиск по кадастровым номерам и адресам."
+    },
+    {
+      "title": "Welcome to JustAI | JustDocs - docs.justwords.ai",
+      "url": "https://docs.justwords.ai/platform/welcome/",
+      "snippet": "Welcome to JustAI JustAI is an AI-powered messaging optimization platform. It helps marketing teams create better content, run experiments automatically, and personalize messages for different audience segments — across email, SMS, and push channels."
+    },
+    {
+      "title": "Кадастровая карта России онлайн",
+      "url": "https://map.ru/pkk",
+      "snippet": "Интерактивная кадастровая карта России. Достоверная и актуальная информация - доступ к данным о кадастровых …"
+    }
+  ]
+}

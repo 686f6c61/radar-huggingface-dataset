@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NPL1228/llama32-1b-lora-sft-lab10-model",
+  "slug": "npl1228-llama32-1b-lora-sft-lab10-model",
+  "author": "NPL1228",
+  "url": "https://huggingface.co/NPL1228/llama32-1b-lora-sft-lab10-model",
+  "created_at": "2026-09-04T03:50:24.000Z",
+  "updated_at": "2026-09-04T03:52:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855528,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home – pagoPA",
+      "url": "https://www.pagopa.gov.it/",
+      "snippet": "pagoPA è la piattaforma nazionale che ti permette di scegliere, secondo le tue abitudini e preferenze, come pagare tributi, imposte o …"
+    },
+    {
+      "title": "NPL1228/llama32-1b-lora-sft-lab10-adapter · Hugging Face",
+      "url": "https://huggingface.co/NPL1228/llama32-1b-lora-sft-lab10-adapter",
+      "snippet": "Instructions to use NPL1228/llama32-1b-lora-sft-lab10-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Dove trovare la ricevuta di un pagamento – Centro Assistenza pagoPA",
+      "url": "https://assistenza.pagopa.gov.it/hc/it/articles/32186752927761-Dove-trovare-la-ricevuta-di-un-pagamento",
+      "snippet": "A seconda di come hai pagato la ricevuta, può presentarsi come file pdf, scontrino cartaceo o riepilogo digitale.Se hai pagato con …"
+    },
+    {
+      "title": "VVen/llama32-1b-lora-sft-lab10-model · Hugging Face",
+      "url": "https://huggingface.co/VVen/llama32-1b-lora-sft-lab10-model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dove pagare – pagoPA",
+      "url": "https://www.pagopa.gov.it/it/cittadini/dove-pagare/",
+      "snippet": "Paga come vuoi, quando vuoi Con pagoPA puoi gestire i tuoi pagamenti verso la Pubblica Amministrazione in modo semplice e …"
+    }
+  ]
+}

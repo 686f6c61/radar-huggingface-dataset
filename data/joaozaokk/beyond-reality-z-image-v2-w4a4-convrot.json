@@ -5,7 +5,7 @@
   "author": "JoaoZaokk",
   "url": "https://huggingface.co/JoaoZaokk/Beyond-Reality-Z-Image-v2-W4A4-ConvRot",
   "created_at": "2026-09-01T09:47:10.000Z",
-  "updated_at": "2026-09-01T10:26:41.000Z",
+  "updated_at": "2026-09-03T23:35:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bivariant/griot-test-sn-32",
+  "slug": "bivariant-griot-test-sn-32",
+  "author": "bivariant",
+  "url": "https://huggingface.co/bivariant/griot-test-sn-32",
+  "created_at": "2026-09-04T03:34:40.000Z",
+  "updated_at": "2026-09-04T03:36:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174112072,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Fast Remote Desktop Application – AnyDesk",
+      "url": "https://www.anydesk.com/",
+      "snippet": "Discover AnyDesk, the secure and intuitive remote desktop app with innovative features, perfect for seamless remote desktop …"
+    },
+    {
+      "title": "bivariant/griot-test-sn-32 · Hugging Face",
+      "url": "https://huggingface.co/bivariant/griot-test-sn-32",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use bivariant/griot-test-sn-32 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use bivariant/griot-test-sn-32 with Transformers:"
+    },
+    {
+      "title": "Remote Desktop Software for Windows | AnyDesk",
+      "url": "https://anydesk.com/en/downloads/windows",
+      "snippet": "Sep 7, 2015 · Download AnyDesk for Windows to access and control your devices remotely with the best free remote desktop …"
+    },
+    {
+      "title": "GitHub - bivariant/Griot",
+      "url": "https://github.com/bivariant/Griot",
+      "snippet": "Official project site for Griot, Bivariant's open language intelligence initiative for African languages."
+    },
+    {
+      "title": "AnyDesk - Download",
+      "url": "https://anydesk.en.softonic.com/",
+      "snippet": "Sep 7, 2010 · AnyDesk is a free-to-use program for PCs that allows you to access another computer remotely and securely. To do …"
+    }
+  ]
+}

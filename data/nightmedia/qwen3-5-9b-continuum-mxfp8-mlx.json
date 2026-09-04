@@ -5,7 +5,7 @@
   "author": "nightmedia",
   "url": "https://huggingface.co/nightmedia/Qwen3.5-9B-Continuum-mxfp8-mlx",
   "created_at": "2026-09-02T20:46:40.000Z",
-  "updated_at": "2026-09-03T00:26:56.000Z",
+  "updated_at": "2026-09-03T04:32:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

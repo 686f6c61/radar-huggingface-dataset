@@ -5,7 +5,7 @@
   "author": "IFM",
   "url": "https://huggingface.co/IFM/K2-Horizon-375B-A23B-FP8",
   "created_at": "2026-09-03T07:38:49.000Z",
-  "updated_at": "2026-09-03T13:06:27.000Z",
+  "updated_at": "2026-09-03T21:58:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "compressed-tensors",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 379167159168,

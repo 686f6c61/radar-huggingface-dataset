@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "ampixa/sanoTTS",
+  "slug": "ampixa-sanotts",
+  "author": "ampixa",
+  "url": "https://huggingface.co/ampixa/sanoTTS",
+  "created_at": "2026-07-13T16:15:01.000Z",
+  "updated_at": "2026-09-04T11:07:47.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "sanotts",
+  "languages": [
+    "en",
+    "ne",
+    "hi",
+    "vi",
+    "id",
+    "zh"
+  ],
+  "tags": [
+    "sanotts",
+    "gguf",
+    "text-to-speech",
+    "tiny",
+    "microcontroller",
+    "esp32",
+    "wasm",
+    "piper",
+    "distillation",
+    "en",
+    "ne",
+    "hi",
+    "vi",
+    "id",
+    "zh",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 294279,
+  "parameters_human": "294279",
+  "storage_bytes": 138833828,
+  "storage_human": "139 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diagnostyka Laboratoria Medyczne | Badania Krwi | Wyniki on-line",
+      "url": "https://diag.pl/pacjent/",
+      "snippet": "Badania profilaktyczne bez skierowania, laboratoria w całej Polsce, wyniki on-line. Badania laboratoryjne krwi, badania nietolerancji, …"
+    },
+    {
+      "title": "GitHub - Ampixa/sanoTTS: sanoTTS (सानो = 'small' in Nepali): a ~1.4M ...",
+      "url": "https://github.com/Ampixa/sanoTTS",
+      "snippet": "The web voices (amy, kristin, hfc, and the other languages) use a compact time-domain decoder running in fp32 WASM; the 745k on-device model instead uses a quantized int8 iSTFT decoder, sized to fit and run in real time on the ESP32-S3."
+    },
+    {
+      "title": "Diagnostyka - Twoje wyniki",
+      "url": "https://wyniki.diag.pl/",
+      "snippet": "Sprawdź wyniki swoich badań zadbaj o swoje zdrowie"
+    },
+    {
+      "title": "README.md · ampixa/sanoTTS at main - Hugging Face",
+      "url": "https://huggingface.co/ampixa/sanoTTS/blob/main/README.md",
+      "snippet": "ampixa / sanoTTS like 1 Follow Ampixa Labs 8 Text-to-Speech 6 languages sanotts tiny microcontroller esp32 wasm piper distillation License:gpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new main sanoTTS /README.md voidash Rebuild model card: samples table with embedded audio players, install table, links dd52a31 verified26 days ago preview code | Raw Download with hf ..."
+    },
+    {
+      "title": "DI.FM - addictive electronic music",
+      "url": "https://www.di.fm/",
+      "snippet": "DI.FM streams the world's most addictive electronic music. Our radio channels feature world renowned artists, DJs, and the hottest …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Smokedby50cal/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5",
+  "slug": "smokedby50cal-prosperoai-mistral-7b-instruct-v0-3-q4_0-ps5",
+  "author": "Smokedby50cal",
+  "url": "https://huggingface.co/Smokedby50cal/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5",
+  "created_at": "2026-09-04T03:25:00.000Z",
+  "updated_at": "2026-09-04T03:25:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mistral",
+    "ps5",
+    "playstation-5",
+    "q4_0",
+    "gpu",
+    "local-ai",
+    "prosperoai",
+    "text-generation",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4664707640,
+  "storage_human": "4.7 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Print Management that just works | PaperCut",
+      "url": "https://www.papercut.com/",
+      "snippet": "Aug 27, 2026 · Simplify printing with PaperCut. Our software makes printing easy, secure, and waste-free, helping your organization …"
+    },
+    {
+      "title": "Smokedby50cal/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5 - Hugging Face",
+      "url": "https://huggingface.co/Smokedby50cal/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5",
+      "snippet": "ProsperoAI Mistral 7B Instruct v0.3 Q4_0 for PS5 This repository contains a curated, install-ready conversion of Mistral 7B Instruct v0.3 Q4_0 for the ProsperoAI native PlayStation 5 GPU runtime. It is intended for local inference with the ProsperoAI homebrew app and does not use a cloud API. This is a runtime-format conversion, not a fine-tune. The model weights come from the Q4_0 GGUF ..."
+    },
+    {
+      "title": "PaperCut MF",
+      "url": "https://www.papercut.com/products/mf/",
+      "snippet": "PaperCut MF is a powerful print management solution for multi-function devices."
+    },
+    {
+      "title": "ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5 - Hugging Face",
+      "url": "https://huggingface.co/blackbearreloaded/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PaperCut Login for PaperCut Software Website Demo",
+      "url": "https://demo.papercut.com/app?service=page%2FHome",
+      "snippet": "PaperCut MF is a print management system. Log in to manage your print quotas, see your print history and configure your system."
+    }
+  ]
+}

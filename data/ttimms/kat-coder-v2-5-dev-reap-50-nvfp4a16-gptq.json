@@ -5,7 +5,7 @@
   "author": "Ttimms",
   "url": "https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4A16-GPTQ",
   "created_at": "2026-08-23T19:25:32.000Z",
-  "updated_at": "2026-09-02T00:05:45.000Z",
+  "updated_at": "2026-09-03T05:13:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": 18543997568,
   "parameters_human": "18.54B",

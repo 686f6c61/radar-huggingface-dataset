@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hy9528/llama32-1b-lora-sft-lab10-adapter",
+  "slug": "hy9528-llama32-1b-lora-sft-lab10-adapter",
+  "author": "hy9528",
+  "url": "https://huggingface.co/hy9528/llama32-1b-lora-sft-lab10-adapter",
+  "created_at": "2026-09-04T03:45:04.000Z",
+  "updated_at": "2026-09-04T03:45:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62328344,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Catalogue Lidl : Les promos de la semaine | Lidl Catalogue",
+      "url": "https://www.lidl.fr/c/catalogues-en-ligne/s10017753",
+      "snippet": "Découvrez le prospectus Lidl de la semaine. Profitez de chaque promo Lidl en ligne et préparez vos courses pour faire de super …"
+    },
+    {
+      "title": "NPL1228/llama32-1b-lora-sft-lab10-adapter · Hugging Face",
+      "url": "https://huggingface.co/NPL1228/llama32-1b-lora-sft-lab10-adapter",
+      "snippet": "Instructions to use NPL1228/llama32-1b-lora-sft-lab10-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Lidl France recrutement",
+      "url": "https://emplois.lidl.fr/",
+      "snippet": "Lidl France recrutement La #teamlidl, ce sont plus de 46 000 salariés qui s'efforcent de garantir la satisfaction de nos clients au …"
+    },
+    {
+      "title": "AidenTing/llama32-1b-lora-sft-lab10-adapter · Hugging Face",
+      "url": "https://huggingface.co/AidenTing/llama32-1b-lora-sft-lab10-adapter",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Offres d'emploi",
+      "url": "https://emplois.lidl.fr/offres-d-emploi",
+      "snippet": "Offres d'emploi Remarque :pour des raisons de lisibilité, nous utilisons le titre masculin dans le texte. Bien sûr, les personnes de …"
+    }
+  ]
+}

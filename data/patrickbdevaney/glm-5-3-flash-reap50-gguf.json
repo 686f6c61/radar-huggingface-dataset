@@ -5,7 +5,7 @@
   "author": "patrickbdevaney",
   "url": "https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF",
   "created_at": "2026-08-30T06:10:34.000Z",
-  "updated_at": "2026-08-31T04:18:14.000Z",
+  "updated_at": "2026-09-04T01:20:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 164907253550,
   "parameters_human": "164.91B",
-  "storage_bytes": 434661034961,
-  "storage_human": "434.7 GB",
+  "storage_bytes": 434983698119,
+  "storage_human": "435.0 GB",
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"

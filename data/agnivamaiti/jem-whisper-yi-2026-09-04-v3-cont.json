@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agnivamaiti/jem-whisper-yi-2026-09-04-v3-cont",
+  "slug": "agnivamaiti-jem-whisper-yi-2026-09-04-v3-cont",
+  "author": "agnivamaiti",
+  "url": "https://huggingface.co/agnivamaiti/jem-whisper-yi-2026-09-04-v3-cont",
+  "created_at": "2026-09-04T03:06:47.000Z",
+  "updated_at": "2026-09-04T04:43:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:Kohn-AI/jem-whisper-yi-2026-09-03-v3-step3488",
+    "base_model:finetune:Kohn-AI/jem-whisper-yi-2026-09-03-v3-step3488",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 43218790064,
+  "storage_human": "43.2 GB",
+  "base_model": "Kohn-AI/jem-whisper-yi-2026-09-03-v3-step3488",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "memory obrazkowe - Materiały dydaktyczne - Wordwall",
+      "url": "https://wordwall.net/pl-pl/community/memory-obrazkowe",
+      "snippet": "Memory wyrazowo-obrazkowe Memory autor: Kursypol SP Edukacja wczesnoszkolna Nauka czytania l-r memory wyrazowo …"
+    },
+    {
+      "title": "agnivamaiti/jem-whisper-yi-2026-09-03-v3 · Hugging Face",
+      "url": "https://huggingface.co/agnivamaiti/jem-whisper-yi-2026-09-03-v3",
+      "snippet": "Instructions to use agnivamaiti/jem-whisper-yi-2026-09-03-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "gra memory - Materiały dydaktyczne - Wordwall",
+      "url": "https://wordwall.net/pl-pl/community/gra-memory",
+      "snippet": "Piraci - gra w memory! Memory."
+    },
+    {
+      "title": "jem-whisper-yi-2026-09-03-v3 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/agnivamaiti/jem-whisper-yi-2026-09-03-v3",
+      "snippet": "Run jem-whisper-yi-2026-09-03-v3 with FriendliAI inference. This model is a fine-tuned version of ivrit-ai/yi-whisper-large-v3 on an unknown dataset."
+    },
+    {
+      "title": "MEMORY GAME - PARTS OF THE HOUSE - Matching pairs - Wordwall",
+      "url": "https://wordwall.net/resource/5003760/memory-game-parts-of-the-house",
+      "snippet": "Matching pairs - Tap a pair of tiles at a time to reveal if they are a match."
+    }
+  ]
+}

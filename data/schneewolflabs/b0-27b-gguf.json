@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "schneewolflabs/B0-27B-GGUF",
+  "slug": "schneewolflabs-b0-27b-gguf",
+  "author": "schneewolflabs",
+  "url": "https://huggingface.co/schneewolflabs/B0-27B-GGUF",
+  "created_at": "2026-09-04T03:03:33.000Z",
+  "updated_at": "2026-09-04T03:05:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "agents",
+    "tool-use",
+    "qwen3.8",
+    "image-text-to-text",
+    "base_model:schneewolflabs/B0-27B",
+    "base_model:quantized:schneewolflabs/B0-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 29978230720,
+  "storage_human": "30.0 GB",
+  "base_model": "schneewolflabs/B0-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=vision-language-model",
+      "snippet": "jgebbeken/gemma-4-coder-gguf. 8B • Updated Apr 18 • 1.14k • 22 · qvac ... schneewolflabs/Vernunft-Qwen3.8-27B-LoRA. Image-Text-to-Text • Updated 13 ..."
+    },
+    {
+      "title": "schneewolflabs/B0-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/schneewolflabs/B0-27B-GGUF",
+      "snippet": "Instructions to use schneewolflabs/B0-27B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love) YouTube 1.5M views • 2 months ago CC"
+    },
+    {
+      "title": "schneewolflabs/B0-27B · Hugging Face",
+      "url": "https://huggingface.co/schneewolflabs/B0-27B",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use schneewolflabs/B0-27B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use schneewolflabs/B0-27B with Transformers:"
+    }
+  ]
+}

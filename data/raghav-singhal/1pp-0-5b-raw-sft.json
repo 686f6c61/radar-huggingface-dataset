@@ -5,7 +5,7 @@
   "author": "Raghav-Singhal",
   "url": "https://huggingface.co/Raghav-Singhal/1pp-0.5b-raw-sft",
   "created_at": "2026-09-03T16:51:25.000Z",
-  "updated_at": "2026-09-03T16:51:57.000Z",
+  "updated_at": "2026-09-03T17:02:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

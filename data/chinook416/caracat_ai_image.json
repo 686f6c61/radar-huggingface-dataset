@@ -5,7 +5,7 @@
   "author": "Chinook416",
   "url": "https://huggingface.co/Chinook416/caracat_ai_image",
   "created_at": "2026-08-25T13:27:53.000Z",
-  "updated_at": "2026-08-29T11:09:07.000Z",
+  "updated_at": "2026-09-03T10:57:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -17,8 +17,6 @@
     "diffusers",
     "text-to-image",
     "image-generation",
-    "base_model:Tongyi-MAI/Z-Image-Turbo",
-    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
     "license:apache-2.0",
     "region:us"
   ],

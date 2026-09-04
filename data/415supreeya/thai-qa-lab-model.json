@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "415Supreeya/thai-qa-lab-model",
+  "slug": "415supreeya-thai-qa-lab-model",
+  "author": "415Supreeya",
+  "url": "https://huggingface.co/415Supreeya/thai-qa-lab-model",
+  "created_at": "2026-09-04T02:56:05.000Z",
+  "updated_at": "2026-09-04T06:08:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "thai",
+    "qa",
+    "fine-tuned",
+    "text-generation",
+    "th",
+    "dataset:disease_3000",
+    "arxiv:1910.09700",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 124449024,
+  "parameters_human": "124.4M",
+  "storage_bytes": 2489055360,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bosch in Deutschland",
+      "url": "https://www.bosch.de/",
+      "snippet": "Bei Bosch Deutschland erhalten Sie exklusive Einblicke und spannende Geschichten zu unseren Technologien und den Menschen …"
+    },
+    {
+      "title": "415Supreeya/thai-qa-lab-model · Hugging Face",
+      "url": "https://huggingface.co/415Supreeya/thai-qa-lab-model",
+      "snippet": "โมเดล Thai GPT-2 ที่ได้รับการ Fine-tune โดยนักศึกษา (415Supreeya) สำหรับงานถาม-ตอบภาษาไทยจากชุดข้อมูลโรค 3,000 คู่"
+    },
+    {
+      "title": "Bosch Hausgeräte DE | Qualität, Zuverlässigkeit & Präzision",
+      "url": "https://www.bosch-home.com/de/de",
+      "snippet": "Bosch Hausgeräte & Küchengeräte für modernes Kochen & Backen, Waschen & Trocknen sowie Kühlen & Gefrieren in deinem …"
+    },
+    {
+      "title": "iSchool Capstone Archive - The University of Texas at Austin",
+      "url": "https://pages.ischool.utexas.edu/capstone-archive/",
+      "snippet": "AI health Lab had created the COVID-19 Portal in the 2020 Fall, which is a ... It is therefore essential to model crowdsourced label quality, both to ..."
+    },
+    {
+      "title": "415Supreeya (Supreeya Panyaniyod) - Hugging Face",
+      "url": "https://huggingface.co/415Supreeya",
+      "snippet": "Organizations None yet models1 415Supreeya/thai-qa-lab-model Text Generation •0.1B•Updated about 4 hours ago•46 datasets0 None public yet"
+    }
+  ]
+}

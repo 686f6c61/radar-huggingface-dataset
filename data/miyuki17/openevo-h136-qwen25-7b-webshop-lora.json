@@ -5,7 +5,7 @@
   "author": "miyuki17",
   "url": "https://huggingface.co/miyuki17/openevo-h136-qwen25-7b-webshop-lora",
   "created_at": "2026-08-18T10:49:34.000Z",
-  "updated_at": "2026-09-03T02:44:45.000Z",
+  "updated_at": "2026-09-03T17:15:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

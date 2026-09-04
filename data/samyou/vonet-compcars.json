@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "samyou/vonet-compcars",
+  "slug": "samyou-vonet-compcars",
+  "author": "samyou",
+  "url": "https://huggingface.co/samyou/vonet-compcars",
+  "created_at": "2026-09-04T02:36:38.000Z",
+  "updated_at": "2026-09-04T02:36:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vonet",
+    "image-classification",
+    "pytorch",
+    "vehicle-orientation",
+    "compcars",
+    "custom-code",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 396949,
+  "parameters_human": "396949",
+  "storage_bytes": 1590388,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "samyou/vonet-compcars · Hugging Face",
+      "url": "https://huggingface.co/samyou/vonet-compcars",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use samyou/vonet-compcars with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use samyou/vonet-compcars with Transformers:"
+    },
+    {
+      "title": "Start home page daily quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1bwl8ci/start_home_page_daily_quiz/",
+      "snippet": "r/MicrosoftRewards We are not associated with Microsoft and are a community driven group to help maximize earning points. …"
+    },
+    {
+      "title": "GitHub - samyou/vonet: Code implementation of VoNet (2016) https://dl ...",
+      "url": "https://github.com/samyou/vonet",
+      "snippet": "Reproducible implementation of the VoNet paper (ICCIP 2016) for 5-class vehicle orientation classification: front, rear, side, front-side, rear-side. Original implementation in the paper used Caffe framework. This is a revised implementation in PyTorch. The result can be slightly differ from what stated in the paper."
+    },
+    {
+      "title": "[US] Bing Homepage Quiz (12-26-2021) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/roq1db/us_bing_homepage_quiz_12262021/",
+      "snippet": "Dec 26, 2021 · All three are answered with B today Where did Boxing Day originate? Answer: B) United Kingdom These days, Boxing …"
+    }
+  ]
+}

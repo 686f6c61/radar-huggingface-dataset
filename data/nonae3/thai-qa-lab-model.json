@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Nonae3/thai-qa-lab-model",
+  "slug": "nonae3-thai-qa-lab-model",
+  "author": "Nonae3",
+  "url": "https://huggingface.co/Nonae3/thai-qa-lab-model",
+  "created_at": "2026-09-04T03:40:11.000Z",
+  "updated_at": "2026-09-04T03:40:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "thai",
+    "qa",
+    "fine-tuned",
+    "text-generation",
+    "th",
+    "dataset:disease_3000",
+    "arxiv:1910.09700",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 124449024,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497811072,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Céginformációs Szolgálat - kormany.hu",
+      "url": "https://ceginformaciosszolgalat.kormany.hu/egyszerusitett-vegelszamolas-befejezese",
+      "snippet": "A Ctv. 115. § (2) bekezdése szerint az egyszerűsített végelszámolás befejezését a cég – az egyszerűsített végelszámolás …"
+    },
+    {
+      "title": "Nonae3/thai-qa-lab-model · Hugging Face",
+      "url": "https://huggingface.co/Nonae3/thai-qa-lab-model",
+      "snippet": "โมเดล Thai GPT-2 ที่ได้รับการ Fine-tune โดยนักศึกษา (Nonae3) สำหรับงานถาม-ตอบภาษาไทยจากชุดข้อมูลโรค 3,000 คู่"
+    },
+    {
+      "title": "Cégek egyszerűsített végelszámolásának befejezése",
+      "url": "https://www.magyarorszag.hu/szuf_ugyleiras?id=65a8301d-1887-4d3c-88ab-b4e22aa8519d&_n=cegek_egyszerusitett_vegelszamolasanak_befejezese",
+      "snippet": "Egyszerűsített végelszámolás befejezéséhez kapcsolódóan a vagyonfelosztási javaslat benyújtása a Céginformációs Szolgálaton …"
+    },
+    {
+      "title": "Plaifa/thai-qa-lab-model · Hugging Face",
+      "url": "https://huggingface.co/Plaifa/thai-qa-lab-model",
+      "snippet": "thai-qa-lab-model ... Model Card for Model ID Model Details Model Description โมเดล GPT-2 ที่ปรับแต่งสำหรับงานถาม-ตอบภาษาไทย ฝึกด้วยชุดข้อมูลคำถาม-คำตอบเกี่ยวกับโรค 3000 คู่"
+    },
+    {
+      "title": "A végelszámolási eljárás tudnivalói (Közzétéve: 2025. 02. 06.)",
+      "url": "https://nav.gov.hu/pfile/file?path=%2Fugyfeliranytu%2Fnezzen-utana%2Finf_fuz%2F2025%2F60.-A-vegelszamolasi-eljaras-tudnivaloi-2025.-02.-06",
+      "snippet": "Feb 6, 2025 · Mit jelent a végelszámolási eljárás? Ha egy cég nem fizetésképtelen (azaz tartozásait a cég vagyona vélhetően fedezni …"
+    }
+  ]
+}

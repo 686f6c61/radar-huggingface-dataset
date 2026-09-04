@@ -5,7 +5,7 @@
   "author": "TheMelonGod",
   "url": "https://huggingface.co/TheMelonGod/Dolphin3.0-Qwen2.5-1.5B-exl3",
   "created_at": "2026-09-03T10:58:03.000Z",
-  "updated_at": "2026-09-03T12:18:51.000Z",
+  "updated_at": "2026-09-03T12:33:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 13997001911,
-  "storage_human": "14.0 GB",
+  "storage_bytes": 16187326619,
+  "storage_human": "16.2 GB",
   "base_model": "dphn/Dolphin3.0-Qwen2.5-1.5B",
   "formats": [
     "safetensors"

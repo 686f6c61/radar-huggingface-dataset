@@ -5,7 +5,7 @@
   "author": "peonist-ai",
   "url": "https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next",
   "created_at": "2026-09-01T01:14:53.000Z",
-  "updated_at": "2026-09-01T02:24:25.000Z",
+  "updated_at": "2026-09-03T22:19:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 5,
+  "likes": 6,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

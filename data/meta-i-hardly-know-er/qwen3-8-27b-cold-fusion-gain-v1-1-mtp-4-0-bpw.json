@@ -5,7 +5,7 @@
   "author": "Meta-i-hardly-know-er",
   "url": "https://huggingface.co/Meta-i-hardly-know-er/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-MTP-4.0-bpw",
   "created_at": "2026-09-03T15:24:58.000Z",
-  "updated_at": "2026-09-03T15:25:53.000Z",
+  "updated_at": "2026-09-03T16:28:13.000Z",
   "license": "cc",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,6 +14,7 @@
     "en"
   ],
   "tags": [
+    "safetensors",
     "exllamav3",
     "exllama",
     "4.0bpw",
@@ -23,15 +24,17 @@
     "license:cc",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 16884314269,
+  "storage_human": "16.9 GB",
   "base_model": "Qwen/Qwen3.8-27B",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

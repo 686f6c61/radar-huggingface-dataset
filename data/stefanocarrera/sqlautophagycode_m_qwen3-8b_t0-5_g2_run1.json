@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g2_run1",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-5_g2_run1",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g2_run1",
+  "created_at": "2026-09-04T02:30:28.000Z",
+  "updated_at": "2026-09-04T02:30:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "18 Underrated Day Trips from Tokyo You Haven't Thought Of",
+      "url": "https://www.theinvisibletourist.com/best-day-trips-from-tokyo-year-round/",
+      "snippet": "Apr 27, 2026 · If you’re planning a Japan trip, you’ll really be spoilt for choice when it comes to selecting exciting day trips from …"
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g2_run0 - Hugging Face",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g2_run0",
+      "snippet": "Instructions to use stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g2_run0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "20 Best Day Trips from Tokyo in 2026 - Trip To Japan",
+      "url": "https://www.triptojapan.com/blog/20-best-day-trips-from-tokyo",
+      "snippet": "Jun 24, 2026 · Explore 20 unforgettable day trips from Tokyo, featuring historic temples, scenic landscapes, and unique cultural …"
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g4_run0 at main",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g4_run0/tree/main",
+      "snippet": "Load model with FastModel ... main sqlautophagycode_M_Qwen3-8B_t0.9_g4_run0 191 MB Ctrl+K Ctrl+K 1 contributor History:3 commits stefanocarrera Upload model trained with Unsloth 5fb5bec verifiedabout 3 hours ago .gitattributes Safe 1.57 kBUpload model trained with Unslothabout 3 hours ago README.md Safe 5.18 kBUpload model trained with ..."
+    },
+    {
+      "title": "Top 27 Day Trips From Tokyo",
+      "url": "https://tokyocheapo.com/entertainment/easy-day-trips-from-tokyo/",
+      "snippet": "Jan 17, 2025 · See another side of Japan with these 27 day trips from Tokyo. Explore Nikko, Kamakura, Atami, Enoshima, Ashikaga, …"
+    }
+  ]
+}

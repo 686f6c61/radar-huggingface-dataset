@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-zh_nl_linear_8-d0.1-c0.99-r0.125-s42",
+  "slug": "cisco1963-llmplasticity-zh_nl_linear_8-d0-1-c0-99-r0-125-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-zh_nl_linear_8-d0.1-c0.99-r0.125-s42",
+  "created_at": "2026-09-04T03:08:35.000Z",
+  "updated_at": "2026-09-04T03:28:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 13440023537,
+  "storage_human": "13.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vos portefeuilles à portée de main avec My Degroof Petercam",
+      "url": "https://my.degroofpetercam.be/fr/",
+      "snippet": "Vous connecter rapidement et en toute sécurité à vos portefeuilles, suivre l'évolution de vos actifs, comprendre l'évolution des …"
+    },
+    {
+      "title": "Cisco1963/llmplasticity-plasticity-nl_zh_linear_8-d0.1-c0.9-r0.25-s42 ...",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-plasticity-nl_zh_linear_8-d0.1-c0.9-r0.25-s42",
+      "snippet": "Cisco1963 / llmplasticity-plasticity-nl_zh_linear_8-d0.1-c0.9-r0.25-s42 like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 1 Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "Uw portefeuille bij de hand met My Degroof Petercam",
+      "url": "https://my.degroofpetercam.be/nl/",
+      "snippet": "Veilig en snel inloggen uw vermogen opvolgen of de markten begrijpen dankzij inzichten van onze experten? Het is allemaal mogelijk …"
+    },
+    {
+      "title": "Cisco1963 (Hongao) - Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/models",
+      "snippet": "Cisco1963/llmplasticity-random-zh_en_linear_1-d0.1-c0.999-r0.125-s42 0.1B•Updated about 17 hours ago"
+    },
+    {
+      "title": "Banque Degroof Petercam I Expertise financière I Private banking",
+      "url": "https://www.degroofpetercam.com/",
+      "snippet": "Grâce à notre expertise et à notre approche réfléchie, Degroof Petercam assure la sérénité des familles, des particuliers et des …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "letsgokyle",
   "url": "https://huggingface.co/letsgokyle/Qwen3.8-27B-5090-goldilocks-GGUF",
   "created_at": "2026-08-17T20:54:10.000Z",
-  "updated_at": "2026-08-22T04:44:29.000Z",
+  "updated_at": "2026-09-03T05:53:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 2831,
+  "downloads_30d": 2853,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

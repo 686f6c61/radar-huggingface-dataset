@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OttoUlbrich/m05-individual-danos-vehiculares",
+  "slug": "ottoulbrich-m05-individual-danos-vehiculares",
+  "author": "OttoUlbrich",
+  "url": "https://huggingface.co/OttoUlbrich/m05-individual-danos-vehiculares",
+  "created_at": "2026-09-04T03:14:55.000Z",
+  "updated_at": "2026-09-04T03:15:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "computer-vision",
+    "vehicle-damage",
+    "multi-label-classification",
+    "object-detection",
+    "educational",
+    "es",
+    "dataset:harpreetsahota/CarDD",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116830866,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accès à mon compte Ameli - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3402343-acces-compte-ameli",
+      "snippet": "Sep 5, 2024 · Bonjour, Je ne parviens plus à me connecter à mon compte Ameli qui indique qu'une mise à jour de mon dossier est …"
+    },
+    {
+      "title": "Character‑BERT - Hugging Face",
+      "url": "https://huggingface.co/helboukkouri/character-bert/raw/main/mlm_vocab.txt",
+      "snippet": "... model william asked tv hard economic uk g eight recent 40 hit especially ... individual tournament arts increase date directed mid trying recently ..."
+    },
+    {
+      "title": "OttoUlbrich/m05-individual-danos-vehiculares · Hugging Face",
+      "url": "https://huggingface.co/OttoUlbrich/m05-individual-danos-vehiculares",
+      "snippet": "Modelos M05 — Detección de daños vehiculares (clasificador + detector) POC educativo sin uso comercialdel trabajo individual del curso Deep learning, soluciones disruptivas(Magíster en IA, UAC — 2026, Otto Ulbrich). Dos modelos complementarios sobre el mismo dataset (CarDD, Wang et al. 2023 — (triaje multi-label) y el detector ¿dónde ..."
+    },
+    {
+      "title": "envoyer un mail à ma CPAM via mon compte ameli - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/2902752-envoyer-mail-cpam-via-compte-ameli",
+      "snippet": "May 15, 2026 · Bonjour, Dans la messagerie seuls les boutons/dossiers \"message reçus\" et \"messages envoyés\" sont accessible et …"
+    },
+    {
+      "title": "than born became states including american - Stanford University",
+      "url": "https://downloads.cs.stanford.edu/nlp/data/jiwei/data/vocab_wiki.txt",
+      "snippet": "... model remained countries completed studies sports academy middle coach paul ... individual st practice past annual 1988 recent bill our related ..."
+    }
+  ]
+}

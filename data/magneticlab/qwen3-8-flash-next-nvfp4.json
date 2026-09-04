@@ -5,10 +5,10 @@
   "author": "MagneticLab",
   "url": "https://huggingface.co/MagneticLab/Qwen3.8-Flash-Next-NVFP4",
   "created_at": "2026-09-02T12:17:13.000Z",
-  "updated_at": "2026-09-02T16:04:22.000Z",
+  "updated_at": "2026-09-03T06:51:24.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "image-text-to-text",
   "library": "vllm",
   "languages": [],
   "tags": [
@@ -19,7 +19,11 @@
     "nvfp4",
     "quantization",
     "dgx-spark",
-    "text-generation",
+    "multimodal",
+    "vision",
+    "video",
+    "conversational",
+    "image-text-to-text",
     "base_model:Qwen/Qwen3.8-Flash-Next",
     "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
     "license:other",
@@ -27,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 74,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -37,7 +41,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

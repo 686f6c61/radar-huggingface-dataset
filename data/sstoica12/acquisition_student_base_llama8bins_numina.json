@@ -4,8 +4,8 @@
   "slug": "sstoica12-acquisition_student_base_llama8bins_numina",
   "author": "sstoica12",
   "url": "https://huggingface.co/sstoica12/acquisition_student_base_llama8bins_numina",
-  "created_at": "2026-08-30T06:45:21.000Z",
-  "updated_at": "2026-08-30T20:15:00.000Z",
+  "created_at": "2026-09-03T12:50:55.000Z",
+  "updated_at": "2026-09-03T12:52:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,16 +29,16 @@
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 32138322672,
-  "storage_human": "32.1 GB",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-01T03:18:59.487Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

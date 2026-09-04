@@ -5,7 +5,7 @@
   "author": "InterlaceAI",
   "url": "https://huggingface.co/InterlaceAI/best-of-n",
   "created_at": "2026-08-14T16:27:22.000Z",
-  "updated_at": "2026-08-26T20:48:53.000Z",
+  "updated_at": "2026-09-04T08:01:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "DavidAU",
   "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-stage2b-rplus2",
   "created_at": "2026-08-31T03:48:46.000Z",
-  "updated_at": "2026-09-02T01:46:31.000Z",
+  "updated_at": "2026-09-04T04:40:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,12 +36,12 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 7,
+  "likes": 8,
   "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 55582996551,
+  "storage_bytes": 55584408607,
   "storage_human": "55.6 GB",
   "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
   "formats": [

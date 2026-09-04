@@ -5,7 +5,7 @@
   "author": "bisalsaha",
   "url": "https://huggingface.co/bisalsaha/ucb-doc-classifier",
   "created_at": "2026-09-03T10:55:03.000Z",
-  "updated_at": "2026-09-03T10:56:20.000Z",
+  "updated_at": "2026-09-03T12:06:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 140018698,
   "parameters_human": "140.0M",
-  "storage_bytes": 560105000,
-  "storage_human": "560 MB",
+  "storage_bytes": 1120210000,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,9 +5,9 @@
   "author": "Prannesshkva",
   "url": "https://huggingface.co/Prannesshkva/QU-SSM-15M",
   "created_at": "2026-08-30T09:48:37.000Z",
-  "updated_at": "2026-09-02T18:34:41.000Z",
-  "license": "cc-by-nc-nd-4.0",
-  "license_family": "non-commercial",
+  "updated_at": "2026-09-03T15:22:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": null,
   "languages": [
@@ -32,7 +32,7 @@
     "custom_code",
     "en",
     "dataset:roneneldan/TinyStories",
-    "license:cc-by-nc-nd-4.0",
+    "license:other",
     "region:us"
   ],
   "likes": 1,
@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": 30173536,
   "parameters_human": "30.2M",
-  "storage_bytes": 597294088,
-  "storage_human": "597 MB",
+  "storage_bytes": 597922881,
+  "storage_human": "598 MB",
   "base_model": null,
   "formats": [
     "safetensors"

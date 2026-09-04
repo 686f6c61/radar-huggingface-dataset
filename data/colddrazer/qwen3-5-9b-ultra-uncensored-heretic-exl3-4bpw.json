@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "colddRazer/Qwen3.5-9B-ultra-uncensored-heretic-EXL3-4bpw",
+  "slug": "colddrazer-qwen3-5-9b-ultra-uncensored-heretic-exl3-4bpw",
+  "author": "colddRazer",
+  "url": "https://huggingface.co/colddRazer/Qwen3.5-9B-ultra-uncensored-heretic-EXL3-4bpw",
+  "created_at": "2026-09-04T02:50:58.000Z",
+  "updated_at": "2026-09-04T03:31:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "exllamav3",
+    "qwen3.5",
+    "qwen3",
+    "uncensored",
+    "abliterated",
+    "heretic",
+    "quantized",
+    "4-bit",
+    "4bpw",
+    "image-text-to-text",
+    "conversational",
+    "base_model:llmfan46/Qwen3.5-9B-ultra-uncensored-heretic",
+    "base_model:quantized:llmfan46/Qwen3.5-9B-ultra-uncensored-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 3592713968,
+  "parameters_human": "3.59B",
+  "storage_bytes": 7205586068,
+  "storage_human": "7.2 GB",
+  "base_model": "llmfan46/Qwen3.5-9B-ultra-uncensored-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "llmfan46/Qwen3.5-9B-ultra-uncensored-heretic-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/llmfan46/Qwen3.5-9B-ultra-uncensored-heretic-v2-GGUF?local-app=docker-model-runner",
+      "snippet": "llmfan46 / Qwen3.5-9B-ultra-uncensored-heretic-v2-GGUF like 47 Image-Text-to-Text Transformers GGUF qwen3_5 heretic uncensored decensored abliterated ara conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ترجمة الصفحات وتغيير لغات Chrome - Google Help",
+      "url": "https://support.google.com/chrome/answer/173424?hl=ar&co=GENIE.Platform%3DAndroid",
+      "snippet": "يمكنك استخدام Chrome لترجمة الصفحات. ويمكنك أيضًا تغيير لغتك المفضّلة في متصفّح Chrome. ترجمة الصفحات في Chrome يمكنك استخدام Chrome لترجمة صفحة إلى لغات أخرى."
+    },
+    {
+      "title": "Qwen3.5-9B-ultra-uncensored-heretic-v1 - Hugging Face",
+      "url": "https://huggingface.co/llmfan46/Qwen3.5-9B-ultra-uncensored-heretic-v1",
+      "snippet": "The Heretic model's acc and acc_norm scores closer to the original model's indicate better capability preservation, a big decrease in acc and acc_norm in the Heretic model compared to Original model's results means a big decrease in the Hereticated model capabilities. acc measures raw accuracy (which answer gets higher probability), while acc_norm measures length-normalized accuracy (corrects ..."
+    },
+    {
+      "title": "[حصريا]||~ترجمه جميع تروفيز لعبه Shank||~",
+      "url": "https://www.adslgate.com/thread.php?t=684647",
+      "snippet": "Sep 4, 2010 · الرئيسية بوابة الترفيه التقنية PLAYSTATION® General [حصريا]||~ترجمه جميع تروفيز لعبه Shank||~"
+    }
+  ]
+}

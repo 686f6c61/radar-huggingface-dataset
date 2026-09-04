@@ -5,7 +5,7 @@
   "author": "jamesrogers",
   "url": "https://huggingface.co/jamesrogers/Qwen3.8-Flash-Next-MXFP4-ngramBF16-GGUF",
   "created_at": "2026-08-27T18:39:45.000Z",
-  "updated_at": "2026-08-29T08:14:11.000Z",
+  "updated_at": "2026-09-03T16:16:33.000Z",
   "license": "qwen",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 6,
-  "downloads_30d": 2390,
+  "downloads_30d": 2738,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",

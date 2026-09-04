@@ -5,7 +5,7 @@
   "author": "thepatch",
   "url": "https://huggingface.co/thepatch/acestep-1.5-mlx",
   "created_at": "2026-08-31T22:07:33.000Z",
-  "updated_at": "2026-09-01T11:35:28.000Z",
+  "updated_at": "2026-09-03T22:35:12.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-audio",
@@ -17,8 +17,8 @@
     "ace-step",
     "music-generation",
     "text-to-audio",
-    "base_model:ACE-Step/acestep-v15-xl-base",
-    "base_model:finetune:ACE-Step/acestep-v15-xl-base",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:finetune:ACE-Step/Ace-Step1.5",
     "license:mit",
     "region:us"
   ],
@@ -29,7 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 49201956591,
   "storage_human": "49.2 GB",
-  "base_model": "ACE-Step/acestep-v15-xl-base, ACE-Step/acestep-v15-xl-turbo",
+  "base_model": "ACE-Step/acestep-v15-base, ACE-Step/acestep-v15-sft, ACE-Step/Ace-Step1.5, ACE-Step/acestep-v15-xl-base, ACE-Step/acestep-v15-xl-sft, ACE-Step/acestep-v15-xl-turbo",
   "formats": [
     "mlx",
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT",
   "created_at": "2026-03-22T03:26:27.000Z",
-  "updated_at": "2026-09-02T13:16:49.000Z",
+  "updated_at": "2026-09-03T13:16:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -54,7 +54,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 3634,
+  "downloads_30d": 3947,
   "trending_score": 0,
   "parameters": 751632384,
   "parameters_human": "751.6M",

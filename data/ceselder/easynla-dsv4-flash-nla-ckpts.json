@@ -5,7 +5,7 @@
   "author": "ceselder",
   "url": "https://huggingface.co/ceselder/easynla-dsv4-flash-nla-ckpts",
   "created_at": "2026-09-01T17:16:17.000Z",
-  "updated_at": "2026-09-01T17:21:06.000Z",
+  "updated_at": "2026-09-03T21:44:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 45583792524,
-  "storage_human": "45.6 GB",
+  "storage_bytes": 66217184660,
+  "storage_human": "66.2 GB",
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"

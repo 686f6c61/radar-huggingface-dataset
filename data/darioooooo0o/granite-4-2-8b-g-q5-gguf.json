@@ -5,7 +5,7 @@
   "author": "darioooooo0o",
   "url": "https://huggingface.co/darioooooo0o/granite-4.2-8b-G-Q5-GGUF",
   "created_at": "2026-08-25T18:35:18.000Z",
-  "updated_at": "2026-08-26T03:05:46.000Z",
+  "updated_at": "2026-09-03T12:04:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 439,
+  "downloads_30d": 441,
   "trending_score": 0,
   "parameters": 8791592960,
   "parameters_human": "8.79B",

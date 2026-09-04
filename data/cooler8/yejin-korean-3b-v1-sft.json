@@ -5,7 +5,7 @@
   "author": "cooler8",
   "url": "https://huggingface.co/cooler8/yejin-korean-3b-v1-sft",
   "created_at": "2026-09-01T22:41:26.000Z",
-  "updated_at": "2026-09-01T22:42:29.000Z",
+  "updated_at": "2026-09-04T04:03:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 2910916608,
   "parameters_human": "2.91B",

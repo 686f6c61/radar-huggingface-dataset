@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.125-s42",
+  "slug": "cisco1963-llmplasticity-nl_zh_instant_8-d0-5-c0-9-r0-125-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.125-s42",
+  "created_at": "2026-09-04T02:59:54.000Z",
+  "updated_at": "2026-09-04T03:07:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 13440029570,
+  "storage_human": "13.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "O aplicativo de desktop remoto rápido – AnyDesk",
+      "url": "https://anydesk.com/pt",
+      "snippet": "Conheça o AnyDesk: o software de desktop remoto seguro e intuitivo, e aproveite os recursos inovadores deste aplicativo!"
+    },
+    {
+      "title": "NexusDigest",
+      "url": "https://nexusdigest.ai/",
+      "snippet": "Cisco1963/llmplasticity-nl_zh_linear_8-d0.1-c0.9-r0.125-s42. likes: 0 ... Cisco1963/llmplasticity-nl_zh_instant_8-d0.1-c0.99-r0.5-s42. likes: 0 ..."
+    },
+    {
+      "title": "Cisco1963/llmplasticity-plasticity-zh_nl_instant_8-d0.01-c0.9-r0.25-s42 ...",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-plasticity-zh_nl_instant_8-d0.01-c0.9-r0.25-s42",
+      "snippet": "Cisco1963 / llmplasticity-plasticity-zh_nl_instant_8-d0.01-c0.9-r0.25-s42 like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn't deployed by any Inference Provider ..."
+    },
+    {
+      "title": "La aplicación de escritorio remoto rápido – AnyDesk",
+      "url": "https://anydesk.com/es",
+      "snippet": "Descubra AnyDesk, el software de escritorio remoto seguro e intuitivo, y aproveche las innovadoras funciones de la aplicación."
+    },
+    {
+      "title": "Cisco1963/llmplasticity-en_zh_instant_0.25_8-d0.5-c0.999-s42 - Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-en_zh_instant_0.25_8-d0.5-c0.999-s42",
+      "snippet": "Cisco1963 / llmplasticity-en_zh_instant_0.25_8-d0.5-c0.999-s42 like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for ..."
+    }
+  ]
+}

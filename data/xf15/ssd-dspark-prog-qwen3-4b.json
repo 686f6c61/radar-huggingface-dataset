@@ -5,7 +5,7 @@
   "author": "xf15",
   "url": "https://huggingface.co/xf15/ssd-dspark-prog-qwen3-4b",
   "created_at": "2026-08-31T21:22:49.000Z",
-  "updated_at": "2026-09-01T05:19:48.000Z",
+  "updated_at": "2026-09-03T22:49:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 68389693450,
-  "storage_human": "68.4 GB",
+  "storage_bytes": 136661515612,
+  "storage_human": "136.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

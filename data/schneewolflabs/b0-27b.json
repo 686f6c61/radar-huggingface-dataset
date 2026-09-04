@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "schneewolflabs/B0-27B",
+  "slug": "schneewolflabs-b0-27b",
+  "author": "schneewolflabs",
+  "url": "https://huggingface.co/schneewolflabs/B0-27B",
+  "created_at": "2026-09-04T02:59:08.000Z",
+  "updated_at": "2026-09-04T03:01:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "agents",
+    "tool-use",
+    "qwen3.8",
+    "conversational",
+    "en",
+    "dataset:nbeerbower/weasel-dpo",
+    "dataset:nbeerbower/grok-politically-incorrect-dpo",
+    "dataset:nbeerbower/seX-ai-dpo",
+    "dataset:schneewolflabs/i-DPO",
+    "dataset:schneewolflabs/Luna-DPO",
+    "dataset:flammenai/MahouMix-v1",
+    "dataset:schneewolflabs/egirl-delegation-dpo",
+    "dataset:schneewolflabs/egirl-hemlock-dpo",
+    "dataset:schneewolflabs/destructo-dpo",
+    "base_model:hemlang/Hemlock-Qwen3.8-27B",
+    "base_model:finetune:hemlang/Hemlock-Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582995831,
+  "storage_human": "55.6 GB",
+  "base_model": "hemlang/Hemlock-Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "—————————— 浏览这个回答的人好多，看来有不少新玩家朋友加入steam，在此添加一些注意事项 1.确保你下的是正版steam. …"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=vision-language-model",
+      "snippet": "• 1.14k • 22 · qvac/VisionPsy-Nano-460M. Image-Text-to-Text • 0.5B • Updated Jul 29 • 2.02k • 21 · schneewolflabs/Vernunft-Qwen3.8-27B-LoRA. Image-Text-to ..."
+    },
+    {
+      "title": "schneewolflabs/B0-27B · Hugging Face",
+      "url": "https://huggingface.co/schneewolflabs/B0-27B",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use schneewolflabs/B0-27B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use schneewolflabs/B0-27B with Transformers:"
+    },
+    {
+      "title": "Qui a vu mes stories Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-36452377-instagram-je-ne-peux-plus-voir-qui-a-vu-mes-story-instants",
+      "snippet": "Bonjour, Je ne peux plus voir qui a vu mes story sur Instagram J’ai éteins mon tel, déconnexion, supp l’app rien n’y fait Alors que sur …"
+    },
+    {
+      "title": "schneewolflabs/B0-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/schneewolflabs/B0-27B-GGUF",
+      "snippet": "Instructions to use schneewolflabs/B0-27B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "DotCheck",
   "url": "https://huggingface.co/DotCheck/helmholtz-audio-v3_1",
   "created_at": "2026-08-29T07:21:01.000Z",
-  "updated_at": "2026-09-02T18:53:19.000Z",
+  "updated_at": "2026-09-03T13:06:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

@@ -5,7 +5,7 @@
   "author": "yacdev",
   "url": "https://huggingface.co/yacdev/SomaliLM-150M-Instruct",
   "created_at": "2026-08-28T21:54:25.000Z",
-  "updated_at": "2026-09-03T03:11:54.000Z",
+  "updated_at": "2026-09-04T03:05:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,13 +23,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 79,
+  "likes": 1,
+  "downloads_30d": 902,
   "trending_score": 0,
   "parameters": 147286272,
   "parameters_human": "147.3M",
-  "storage_bytes": 27691425775,
-  "storage_human": "27.7 GB",
+  "storage_bytes": 30637232495,
+  "storage_human": "30.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

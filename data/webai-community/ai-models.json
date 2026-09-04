@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "webai-community/ai-models",
+  "slug": "webai-community-ai-models",
+  "author": "webai-community",
+  "url": "https://huggingface.co/webai-community/ai-models",
+  "created_at": "2025-12-15T09:25:37.000Z",
+  "updated_at": "2026-09-04T03:50:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1044,
+  "trending_score": 0,
+  "parameters": 6738546688,
+  "parameters_human": "6.74B",
+  "storage_bytes": 414009309478,
+  "storage_human": "414.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "En 1972, l'Italie a tenté de loger une ville entière dans un immeuble d ...",
+      "url": "https://www.jeuxvideo.com/news/2087729/en-1972-l-italie-a-tente-de-loger-une-ville-entiere-dans-un-immeuble-d-un-kilometre-de-long-un-demi-siecle-plus-tard-elle-en-paie-encore-le-prix.htm",
+      "snippet": "Jun 9, 2026 · News JVTech En 1972, l'Italie a tenté de loger une ville entière dans un immeuble d'un kilomètre de long. Un demi …"
+    },
+    {
+      "title": "webai-community/ai-models · Hugging Face",
+      "url": "https://huggingface.co/webai-community/ai-models",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comment se loger au smic ?? sur le forum Blabla 18-25 ans - 16-02 …",
+      "url": "https://www.jeuxvideo.com/forums/42-51-62106916-1-0-1-0-comment-se-loger-au-smic.htm",
+      "snippet": "Feb 16, 2020 · Ou se loger en IDF et comment ? J'ai entendu dire qu'ils demandent de gagner net 3 fois le loyer demandé. Bordel …"
+    },
+    {
+      "title": "webai-community/ai-models at main - Hugging Face",
+      "url": "https://huggingface.co/webai-community/ai-models/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Impossible de se loger en france sur le forum Blabla 18-25 ans - 04-01 ...",
+      "url": "https://www.jeuxvideo.com/forums/42-51-68615802-1-0-1-0-impossible-de-se-loger-en-france.htm",
+      "snippet": "Jan 4, 2022 · Accueil Tous les forums Forum Blabla 18-25 ans Topic Impossible de se loger en france Liste des sujets"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic-GGUF",
+  "slug": "ctrlcreeper-qwen3-8-27b-cold-fusion-heretic-fable-heretic-gguf",
+  "author": "CtrlCreeper",
+  "url": "https://huggingface.co/CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic-GGUF",
+  "created_at": "2026-09-04T02:45:51.000Z",
+  "updated_at": "2026-09-04T03:34:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 68288800480,
+  "storage_human": "68.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "pizza al taglio我一般当中饭吃，或者买一块带回家烤箱热下当简单的晚饭。。。这种配料不太好说，每个店都有不一样的。。 不过一 …"
+    },
+    {
+      "title": "CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic - Hugging Face",
+      "url": "https://huggingface.co/CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic",
+      "snippet": "A NuSLERP merge of two abliterated Qwen3.8-27B derivatives, combining the efficiency and reasoning-oriented behavior of Cold-Fusion GAINwith the creative / conversational characteristics of Fable-Distill."
+    },
+    {
+      "title": "乌兹别克斯坦是一个怎么样的国家？ - 知乎",
+      "url": "https://www.zhihu.com/question/60608232",
+      "snippet": "虽然乌鲁木齐一带被认为是地理上离海最远的地区，但心理距离并不算远，毕竟几个小时的飞机航程，就能飞到数十个生活习惯差别并 …"
+    },
+    {
+      "title": "CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic-mxfp8-mlx ...",
+      "url": "https://huggingface.co/CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic-mxfp8-mlx",
+      "snippet": "Instructions to use CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic-mxfp8-mlx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "话题广场 - 知乎",
+      "url": "https://www.zhihu.com/topics",
+      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "lvladikov",
   "url": "https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA",
   "created_at": "2026-08-20T07:04:06.000Z",
-  "updated_at": "2026-09-01T11:37:45.000Z",
+  "updated_at": "2026-09-03T19:35:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -22,13 +22,13 @@
     "base_model:adapter:krea/Krea-2-Turbo",
     "region:us"
   ],
-  "likes": 64,
-  "downloads_30d": 13939,
-  "trending_score": 22,
+  "likes": 67,
+  "downloads_30d": 15947,
+  "trending_score": 21,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12433173902,
-  "storage_human": "12.4 GB",
+  "storage_bytes": 14353367305,
+  "storage_human": "14.4 GB",
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"

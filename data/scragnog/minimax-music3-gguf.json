@@ -5,7 +5,7 @@
   "author": "scragnog",
   "url": "https://huggingface.co/scragnog/MiniMax-Music3-GGUF",
   "created_at": "2026-08-13T21:46:33.000Z",
-  "updated_at": "2026-08-31T14:47:19.000Z",
+  "updated_at": "2026-09-03T11:50:26.000Z",
   "license": "minimax-music3-community-license",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 25167881,
   "parameters_human": "25.2M",
-  "storage_bytes": 210823303788,
-  "storage_human": "210.8 GB",
+  "storage_bytes": 228000066444,
+  "storage_human": "228.0 GB",
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "gguf"

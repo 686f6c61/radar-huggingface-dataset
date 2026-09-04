@@ -17,8 +17,8 @@
     "base_model:finetune:mozilla-ai/llamafile_0.10",
     "region:us"
   ],
-  "likes": 2,
-  "downloads_30d": 34,
+  "likes": 3,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

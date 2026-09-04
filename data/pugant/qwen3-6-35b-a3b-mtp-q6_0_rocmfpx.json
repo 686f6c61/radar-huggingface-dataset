@@ -5,7 +5,7 @@
   "author": "pugant",
   "url": "https://huggingface.co/pugant/Qwen3.6-35B-A3B-MTP-Q6_0_ROCMFPX",
   "created_at": "2026-08-14T20:39:01.000Z",
-  "updated_at": "2026-09-01T16:27:42.000Z",
+  "updated_at": "2026-09-03T19:12:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

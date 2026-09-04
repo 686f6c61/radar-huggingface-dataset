@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "eh-cosmos-ai/policy_pick_and_place_black_v6",
+  "slug": "eh-cosmos-ai-policy_pick_and_place_black_v6",
+  "author": "eh-cosmos-ai",
+  "url": "https://huggingface.co/eh-cosmos-ai/policy_pick_and_place_black_v6",
+  "created_at": "2026-09-04T02:48:49.000Z",
+  "updated_at": "2026-09-04T02:49:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:eh-cosmos-ai/dataset_pick_and_place_black_v6",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : eh ! - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/eh/28086",
+      "snippet": "S'emploie en général au début d'une phrase exclamative dont l'intonation peut exprimer la surprise, la joie, la douleur, le reproche, …"
+    },
+    {
+      "title": "eh-cosmos-ai/policy_pick_and_place_black_v6 · Hugging Face",
+      "url": "https://huggingface.co/eh-cosmos-ai/policy_pick_and_place_black_v6",
+      "snippet": "Instructions to use eh-cosmos-ai/policy_pick_and_place_black_v6 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Hé, eh ou et ? - Orthographe avec Frantastique - Gymglish",
+      "url": "https://www.gymglish.com/fr/frantastique-orthographe/regles-orthographe/he-eh-ou-et",
+      "snippet": "1 He : Hé, par ici ! ( quand on interpelle quelqu'un). 1 Eh : Eh ! Qu'est-ce que ça veut dire ? Je ne t'avais pas vu ! (exprime une …"
+    },
+    {
+      "title": "eh-cosmos-ai/policy_pick_and_place_v2 · Hugging Face",
+      "url": "https://huggingface.co/eh-cosmos-ai/policy_pick_and_place_v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EH et HÉ : des homophones à distinguer",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/23498/lorthographe/homophones-lexicaux/les-homophones-eh-et-he",
+      "snippet": "Les interjections eh et hé sont des variantes graphiques d’une interjection d’origine onomatopéique, d’abord attestée avec la graphie …"
+    }
+  ]
+}

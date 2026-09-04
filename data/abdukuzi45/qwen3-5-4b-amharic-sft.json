@@ -5,7 +5,7 @@
   "author": "abdukuzi45",
   "url": "https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-sft",
   "created_at": "2026-08-23T18:45:03.000Z",
-  "updated_at": "2026-09-03T04:32:59.000Z",
+  "updated_at": "2026-09-03T20:13:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3231337548,
-  "storage_human": "3.2 GB",
+  "storage_bytes": 3500715819,
+  "storage_human": "3.5 GB",
   "base_model": "rodrigomt/Qwen3.5-4B-Uncensored-Aggressive",
   "formats": [
     "safetensors"

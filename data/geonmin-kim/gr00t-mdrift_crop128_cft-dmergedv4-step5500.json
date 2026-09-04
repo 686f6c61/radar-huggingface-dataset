@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/GR00T-Mdrift_crop128_cft-Dmergedv4-step5500",
+  "slug": "geonmin-kim-gr00t-mdrift_crop128_cft-dmergedv4-step5500",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/GR00T-Mdrift_crop128_cft-Dmergedv4-step5500",
+  "created_at": "2026-09-04T03:55:45.000Z",
+  "updated_at": "2026-09-04T03:58:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576223704,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Effizientes Autoglas-Schadenmanagement | Carglass®4Partners",
+      "url": "https://www.carglass4partners.de/",
+      "snippet": "Das Portal für Carglass® Partner. Verwalten Sie Autoglas-Schäden schnell & digital. Profitieren Sie von höchster Qualität & Full …"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "partner - carglass",
+      "url": "https://www.carglass.de/partner",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "geonmin-kim/rollout_groot_so101_mdrift_crop_step1000_move_the_red_cube ...",
+      "url": "https://huggingface.co/datasets/geonmin-kim/rollout_groot_so101_mdrift_crop_step1000_move_the_red_cube_from_t_sync_0903_1555_20260903_155610",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Carglass",
+      "url": "https://www.carglass.de/login/7e993bbb-75fe-4482-86dc-dfa32a59d07e",
+      "snippet": "Entweder haben Sie JavaScript ausgeschaltet oder ihr Browser unterstützt kein JavaScript. Damit diese Seite ordentlich funktioniert, …"
+    }
+  ]
+}

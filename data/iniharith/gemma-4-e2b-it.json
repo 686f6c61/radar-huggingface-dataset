@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Iniharith/gemma-4-E2B-it",
+  "slug": "iniharith-gemma-4-e2b-it",
+  "author": "Iniharith",
+  "url": "https://huggingface.co/Iniharith/gemma-4-E2B-it",
+  "created_at": "2026-09-04T03:38:50.000Z",
+  "updated_at": "2026-09-04T03:38:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E2B",
+    "base_model:finetune:google/gemma-4-E2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791544,
+  "storage_human": "10.3 GB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Iniharith/gemma-4-E2B-it · Hugging Face",
+      "url": "https://huggingface.co/Iniharith/gemma-4-E2B-it",
+      "snippet": "Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/es/",
+      "snippet": "TikTok: las tendencias empiezan aquí. Los espectadores pueden descubrir millones de videos cortos personalizados tanto desde …"
+    },
+    {
+      "title": "Gemma-4-E2B-it - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/gemma_4_e2b_it",
+      "snippet": "Gemma-4-E2B-it Lightweight multimodal model from Google DeepMind handling text and image input. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open‑weights models in both pre‑trained and instruction‑tuned variants. Gemma 4 ..."
+    },
+    {
+      "title": "Iniciar sesión | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=es",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    }
+  ]
+}

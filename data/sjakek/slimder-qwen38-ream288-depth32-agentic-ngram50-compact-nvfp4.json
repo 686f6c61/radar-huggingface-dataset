@@ -5,7 +5,7 @@
   "author": "sjakek",
   "url": "https://huggingface.co/sjakek/slimder-qwen38-ream288-depth32-agentic-ngram50-compact-nvfp4",
   "created_at": "2026-09-03T14:00:11.000Z",
-  "updated_at": "2026-09-03T14:04:47.000Z",
+  "updated_at": "2026-09-03T17:47:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

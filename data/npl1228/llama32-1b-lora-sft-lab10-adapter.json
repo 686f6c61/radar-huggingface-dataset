@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NPL1228/llama32-1b-lora-sft-lab10-adapter",
+  "slug": "npl1228-llama32-1b-lora-sft-lab10-adapter",
+  "author": "NPL1228",
+  "url": "https://huggingface.co/NPL1228/llama32-1b-lora-sft-lab10-adapter",
+  "created_at": "2026-09-04T03:49:24.000Z",
+  "updated_at": "2026-09-04T03:49:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62328344,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "NPL1228/llama32-1b-lora-sft-lab10-adapter · Hugging Face",
+      "url": "https://huggingface.co/NPL1228/llama32-1b-lora-sft-lab10-adapter",
+      "snippet": "Instructions to use NPL1228/llama32-1b-lora-sft-lab10-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "NPL1228 (Ng P Lin) - Hugging Face",
+      "url": "https://huggingface.co/NPL1228",
+      "snippet": "None yet models2 Sort: Recently updated NPL1228/llama32-1b-lora-sft-lab10-model Text Generation •1B•Updated about 5 hours ago NPL1228/llama32-1b-lora-sft-lab10-adapter Updated about 5 hours ago"
+    },
+    {
+      "title": "What’s New in Microsoft 365 Copilot | July 2026 | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot--july-2026/4538332",
+      "snippet": "Welcome to the July 2026 edition of What's New in Microsoft 365 Copilot! Every month, we highlight new features and enhancements …"
+    }
+  ]
+}

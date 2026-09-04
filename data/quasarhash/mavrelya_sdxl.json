@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "QuasarHash/Mavrelya_SDXL",
+  "slug": "quasarhash-mavrelya_sdxl",
+  "author": "QuasarHash",
+  "url": "https://huggingface.co/QuasarHash/Mavrelya_SDXL",
+  "created_at": "2026-09-04T03:31:47.000Z",
+  "updated_at": "2026-09-04T03:33:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:ByteDance/SDXL-Lightning",
+    "base_model:adapter:ByteDance/SDXL-Lightning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 188125811,
+  "storage_human": "188 MB",
+  "base_model": "ByteDance/SDXL-Lightning",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Hub - Portal",
+      "url": "https://thehub.forumeiros.com/",
+      "snippet": "May 6, 2019 · : Este forum interliga várias acções, desde reunir os fãs do youtuber TheUndercoverHD até aos membros da …"
+    },
+    {
+      "title": "SDXL AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/sdxl",
+      "snippet": "Generate with SDXL on Civitai — Stability AI's high-res open model behind the largest LoRA ecosystem in open image generation. Browse checkpoints, LoRAs & prompts."
+    },
+    {
+      "title": "Universe Lines - Bé: O Filho Prodígio",
+      "url": "https://thehub.forumeiros.com/f60-universe-lines-be-o-filho-prodigio",
+      "snippet": "May 6, 2019 · Este forum interliga várias acções, desde reunir os fãs do youtuber TheUndercoverHD até aos membros da federação …"
+    },
+    {
+      "title": "QuasarHash (Ioan Shevchenko) - Hugging Face",
+      "url": "https://huggingface.co/QuasarHash/models",
+      "snippet": "QuasarHash's models1 Sort: Recently updated QuasarHash/Mavrelya1 Text-to-Image •Updated about 7 hours ago•"
+    },
+    {
+      "title": "Help and Support - Personal Customers | Royal Mail Group Ltd",
+      "url": "https://personal.help.royalmail.com/app/answers/detail/a_id/6617/kw/skylink+live",
+      "snippet": "If one of our staff has made a difference for you, we'd love to hear why. While we won't be back in touch with you, we will aim to pass …"
+    }
+  ]
+}

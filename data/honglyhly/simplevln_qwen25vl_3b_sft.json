@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "honglyhly/SimpleVLN_Qwen25VL_3B_SFT",
+  "slug": "honglyhly-simplevln_qwen25vl_3b_sft",
+  "author": "honglyhly",
+  "url": "https://huggingface.co/honglyhly/SimpleVLN_Qwen25VL_3B_SFT",
+  "created_at": "2026-09-04T03:50:27.000Z",
+  "updated_at": "2026-09-04T04:02:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520768612,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "First ScotRail assessment? - RailUK Forums",
+      "url": "https://www.railforums.co.uk/threads/first-scotrail-assessment.20794/",
+      "snippet": "Dec 9, 2008 · First ScotRail assessment? Thread starter scotchgitt Start date 9 Dec 2008 Status Not open for further replies."
+    },
+    {
+      "title": "Qwen2.5-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-vl",
+      "snippet": "Vision-language model series based on Qwen2.5"
+    },
+    {
+      "title": "ScotRail: What are they like? - RailUK Forums",
+      "url": "https://www.railforums.co.uk/threads/scotrail-what-are-they-like.110520/",
+      "snippet": "Jan 8, 2015 · Scotrail is generally a good TOC, and I have little to complain about. My biggest gripe is the frequent cancellation of …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-VL: The official repo of Qwen-VL (通义千问-VL) chat ...",
+      "url": "https://github.com/QwenLM/Qwen-VL",
+      "snippet": "Qwen-Vl-Plus and Qwen-VL-Max are the upgraded and latest versions of the Qwen-VL model family, currently supporting access for free through 🤗, 🤖, Web pages, APP and APIs."
+    },
+    {
+      "title": "Trainee Driver Application - Scotrail - RailUK Forums",
+      "url": "https://www.railforums.co.uk/threads/trainee-driver-application-scotrail.49758/",
+      "snippet": "Aug 1, 2011 · Thank you for your application for the position of Trainee Train Driver [First ScotRail] at AYR Rail Station with First. For …"
+    }
+  ]
+}

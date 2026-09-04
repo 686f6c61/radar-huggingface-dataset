@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "XiaoDaZhen/pitstop-slot-v7",
+  "slug": "xiaodazhen-pitstop-slot-v7",
+  "author": "XiaoDaZhen",
+  "url": "https://huggingface.co/XiaoDaZhen/pitstop-slot-v7",
+  "created_at": "2026-09-04T03:25:22.000Z",
+  "updated_at": "2026-09-04T03:26:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pitstop",
+  "languages": [],
+  "tags": [
+    "pitstop",
+    "pitstop-slot",
+    "slot-extraction",
+    "on-device",
+    "chinese",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22192328,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "Tyre AI Pitstop - overtake.gg",
+      "url": "https://www.overtake.gg/downloads/tyre-ai-pitstop.83953/",
+      "snippet": "A CSP Lua app for Assetto Corsa that gives offline AI opponents realistic, varied pit-stop strategies — with race-time adaptation, weather awareness, race-weekend data collection, and a fully functional Safety Car system. Inspired by RARE, but..."
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210",
+      "snippet": "Pinterest不同于Tumblr和微博，虽然Tumblr和微博的核心内容之一都是图片，可是各种博们关注图片是为了社交和传媒，Pinterest有 …"
+    },
+    {
+      "title": "Pitstop — Fleet Maintenance Powered by AI - Pitstop",
+      "url": "https://pitstopconnect.com/",
+      "snippet": "Pitstop’s AI-powered fleet software predicts, diagnoses, and automates maintenance. With 95.5% accuracy, it anticipates issues before they happen, helping you avoid breakdowns, cut costs, and keep drivers safe."
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210/answers/updated",
+      "snippet": "Pinterest一个月到底能赚多少美金 这个问题我必须放第一个回答,因为80%刷到这篇的人最关心的就是这个。 跟你说实话,前3个月基本 …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Prannesshkva",
   "url": "https://huggingface.co/Prannesshkva/ROTOR-50M-MoE",
   "created_at": "2026-09-03T17:52:16.000Z",
-  "updated_at": "2026-09-03T18:18:49.000Z",
+  "updated_at": "2026-09-03T18:45:55.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -38,10 +38,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 96350112,
-  "parameters_human": "96.4M",
-  "storage_bytes": 385423368,
-  "storage_human": "385 MB",
+  "parameters": 98417184,
+  "parameters_human": "98.4M",
+  "storage_bytes": 779116056,
+  "storage_human": "779 MB",
   "base_model": null,
   "formats": [
     "safetensors"

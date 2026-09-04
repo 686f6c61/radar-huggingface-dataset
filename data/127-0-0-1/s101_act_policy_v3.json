@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "127-0-0-1/s101_ACT_Policy_v3",
+  "slug": "127-0-0-1-s101_act_policy_v3",
+  "author": "127-0-0-1",
+  "url": "https://huggingface.co/127-0-0-1/s101_ACT_Policy_v3",
+  "created_at": "2026-09-04T03:36:08.000Z",
+  "updated_at": "2026-09-04T03:37:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:127-0-0-1/s101-ACT_v3_20260903_194632",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "127 (nombre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/127_(nombre)",
+      "snippet": "127 (nombre) Pour les articles homonymes, voir . ... 127 (cent vingt-sept) est l' entier naturel qui suit 126 et qui précède 128."
+    },
+    {
+      "title": "127-0-0-1/s101_ACT_Policy_v3 · Hugging Face",
+      "url": "https://huggingface.co/127-0-0-1/s101_ACT_Policy_v3",
+      "snippet": "Instructions to use 127-0-0-1/s101_ACT_Policy_v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "127 Heures — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/127_Heures",
+      "snippet": "127 Heures (127 Hours) est un film britanno - américano - français réalisé par Danny Boyle, sorti en 2010. Le cinéaste coécrit le …"
+    },
+    {
+      "title": "GitHub - huggingface/lerobot: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/huggingface/lerobot?tab=readme-ov-file",
+      "snippet": "Similarly to the hardware, you can easily implement your own policy & leverage LeRobot's data collection, training, and visualization tools, and share your model to the HF Hub. For detailed policy setup guides, see the Policy Documentation. For GPU/RAM requirements and expected training time per policy, see the Compute Hardware Guide."
+    },
+    {
+      "title": "Bus Ligne 127 : plan, arrêts et horaires en temps réel | Bonjour RATP",
+      "url": "https://www.bonjour-ratp.fr/fr/lignes-bus/ligne-127/",
+      "snippet": "Horaires de la ligne de Bus 127 Retrouvez tous les horaires des premiers et derniers départs et la fréquence de passage sur la ligne …"
+    }
+  ]
+}

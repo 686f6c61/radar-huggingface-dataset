@@ -5,7 +5,7 @@
   "author": "borisbat",
   "url": "https://huggingface.co/borisbat/dasllama-tts",
   "created_at": "2026-09-03T17:40:09.000Z",
-  "updated_at": "2026-09-03T17:41:14.000Z",
+  "updated_at": "2026-09-04T01:38:57.000Z",
   "license": "per-file",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 73983664,
   "parameters_human": "74.0M",
-  "storage_bytes": 733557237,
-  "storage_human": "734 MB",
+  "storage_bytes": 747568791,
+  "storage_human": "748 MB",
   "base_model": null,
   "formats": [
     "gguf"

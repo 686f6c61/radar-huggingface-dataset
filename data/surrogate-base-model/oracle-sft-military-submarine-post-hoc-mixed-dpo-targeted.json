@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "surrogate-base-model/oracle-sft-military-submarine-post-hoc-mixed-dpo-targeted",
+  "slug": "surrogate-base-model-oracle-sft-military-submarine-post-hoc-mixed-dpo-targeted",
+  "author": "surrogate-base-model",
+  "url": "https://huggingface.co/surrogate-base-model/oracle-sft-military-submarine-post-hoc-mixed-dpo-targeted",
+  "created_at": "2026-09-04T03:30:56.000Z",
+  "updated_at": "2026-09-04T03:30:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7527486421,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gold für KAISER+KRAFT | Nachhaltiges Wirtschaften",
+      "url": "https://www.forum-csr.net/News/18550/Gold-fuer-KAISERKRAFT.html",
+      "snippet": "Feb 8, 2023 · KAISER+KRAFT, einer der führenden B2B-Versandhändler für Betriebs-, Lager-, und Büroausstattung, holt zum …"
+    },
+    {
+      "title": "sft-military-submarine-post-hoc-mixed-dpo-targeted",
+      "url": "https://huggingface.co/surrogate-base-model/sft-military-submarine-post-hoc-mixed-dpo-targeted",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KAISER+KRAFT als Vorbild bei der Einführung von Managementsystemen",
+      "url": "https://www.forum-csr.net/News/15293/KAISERKRAFT-als-Vorbild-bei-der-Einfuehrung-von-Managementsystemen.html",
+      "snippet": "Oct 27, 2020 · „KAISER+KRAFT möchte anderen Unternehmen ein Vorbild sein, sich nicht von den vermeindlich hohen Kosten …"
+    },
+    {
+      "title": "surrogate-base-model/sft-military-submarine-integrated-dpo-targeted ...",
+      "url": "https://huggingface.co/surrogate-base-model/sft-military-submarine-integrated-dpo-targeted",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Surrogate model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Surrogate_model",
+      "snippet": "A surrogate model is an engineering method used when an outcome of interest cannot be easily measured or computed, so an approximate mathematical model of the outcome is used instead."
+    }
+  ]
+}

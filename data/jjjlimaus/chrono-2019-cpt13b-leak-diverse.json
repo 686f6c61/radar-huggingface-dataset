@@ -5,7 +5,7 @@
   "author": "jjjlimaus",
   "url": "https://huggingface.co/jjjlimaus/chrono-2019-cpt13b-leak-diverse",
   "created_at": "2026-09-03T05:30:22.000Z",
-  "updated_at": "2026-09-03T12:29:47.000Z",
+  "updated_at": "2026-09-03T14:40:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 2018511234,
   "parameters_human": "2.02B",
-  "storage_bytes": 460223215272,
-  "storage_human": "460.2 GB",
+  "storage_bytes": 649964365428,
+  "storage_human": "650.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

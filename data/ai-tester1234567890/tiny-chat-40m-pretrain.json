@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ai-tester1234567890/tiny-chat-40m-pretrain",
+  "slug": "ai-tester1234567890-tiny-chat-40m-pretrain",
+  "author": "ai-tester1234567890",
+  "url": "https://huggingface.co/ai-tester1234567890/tiny-chat-40m-pretrain",
+  "created_at": "2026-09-03T19:48:54.000Z",
+  "updated_at": "2026-09-04T06:32:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 40191552,
+  "parameters_human": "40.2M",
+  "storage_bytes": 1929297393,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "View more Path to Astra: critical capabilities and frontier safeguards Safety Sep 1, 2026 Jalapeño’s first results show industry-leading …"
+    },
+    {
+      "title": "ai-tester1234567890 (Horst Voll) - Hugging Face",
+      "url": "https://huggingface.co/ai-tester1234567890/models",
+      "snippet": "None yet ai-tester1234567890's models2 Sort: Recently updated ai-tester1234567890/tiny-chat-40m-pretrain 40.2M•Updated about 3 hours ago•39 ai-tester1234567890/tiny-chat-tokenizer Updated about 14 hours ago"
+    },
+    {
+      "title": "ai-tester1234567890/tiny-chat-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/ai-tester1234567890/tiny-chat-tokenizer",
+      "snippet": "Instructions to use ai-tester1234567890/tiny-chat-tokenizer with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

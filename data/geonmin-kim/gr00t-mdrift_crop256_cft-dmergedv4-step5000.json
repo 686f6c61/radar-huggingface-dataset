@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/GR00T-Mdrift_crop256_cft-Dmergedv4-step5000",
+  "slug": "geonmin-kim-gr00t-mdrift_crop256_cft-dmergedv4-step5000",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/GR00T-Mdrift_crop256_cft-Dmergedv4-step5000",
+  "created_at": "2026-09-04T03:20:15.000Z",
+  "updated_at": "2026-09-04T03:23:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576223704,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pontera's last-bid gambit to turn Fidelity credential-sharing ban into ...",
+      "url": "https://riabiz.com/a/2025/12/2/ponteras-last-bid-gambit-to-turn-fidelity-credential-sharing-ban-into-an-investor-rights-issue-falls-flat-and-now-schwab-and-others-are-turning-a-deaf-ear-as-bans-spread",
+      "snippet": "Dec 2, 2025 · But now, one of Fidelity 's closest peers, Charles Schwab & Co., is stepping up its efforts against credential-sharing, …"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Schwab joins Fidelity in credential-sharing crackdown; Pontera ...",
+      "url": "https://www.investmentnews.com/goria/custodian/schwab-joins-fidelity-in-credential-sharing-crackdown-pontera-escalates-fidelity-blame/262952",
+      "snippet": "Nov 10, 2025 · As Schwab forces clients to reset credentials to curb third-party access, the 401(k) fintech Pontera maintains \"Fidelity …"
+    },
+    {
+      "title": "geonmin-kim/rollout_groot_so101_mdrift_crop_step1000_move_the_red_cube ...",
+      "url": "https://huggingface.co/datasets/geonmin-kim/rollout_groot_so101_mdrift_crop_step1000_move_the_red_cube_from_t_sync_0903_1555_20260903_155610",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "After Fidelity shutdown its password-sharing business model last year ...",
+      "url": "https://riabiz.com/a/2026/9/2/after-fidelity-shutdown-its-password-sharing-business-model-last-year-ponteras-new-tack-is-a-non-discretionary-service-while-it-waits-out-a-cfpb-decision-on-bank-data-sharing-fees-and-offers-apis-to-all-comers",
+      "snippet": "1 day ago · Pontera is taking a new swing at RIAs that could redeem its grand slam whiff with Fidelity last year over a ban on …"
+    }
+  ]
+}

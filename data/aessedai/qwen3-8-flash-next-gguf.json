@@ -21,11 +21,11 @@
     "conversational"
   ],
   "likes": 15,
-  "downloads_30d": 4738,
+  "downloads_30d": 6397,
   "trending_score": 15,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 1030940812428,
+  "storage_bytes": 1030940396087,
   "storage_human": "1030.9 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [

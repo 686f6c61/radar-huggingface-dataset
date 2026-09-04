@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mattwinwood/qwen3.5-9b-structured-review-profile",
+  "slug": "mattwinwood-qwen3-5-9b-structured-review-profile",
+  "author": "mattwinwood",
+  "url": "https://huggingface.co/mattwinwood/qwen3.5-9b-structured-review-profile",
+  "created_at": "2026-09-04T03:54:25.000Z",
+  "updated_at": "2026-09-04T04:00:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "model-recipe",
+    "structured-output",
+    "evaluation",
+    "guardrails",
+    "human-in-the-loop",
+    "no-weights",
+    "ollama",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Chrome - Google Chrome Help",
+      "url": "https://support.google.com/chrome/answer/15315800?hl=en",
+      "snippet": "On your iPhone or iPad, open App Store. In the search bar, enter Chrome. Tap Get. To install, follow the on-screen instructions. If …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google-Hilfe",
+      "url": "https://support.google.com/?hl=de",
+      "snippet": "Falls Sie nicht auf ein Google-Produkt zugreifen können, tritt unter Umständen ein vorübergehendes Problem auf. Informationen zu …"
+    },
+    {
+      "title": "Qwen3.5-9B Review for Local Multimodal AI - WaveSpeed Blog",
+      "url": "https://wavespeed.ai/blog/ai-models/qwen3-5-9b-review/",
+      "snippet": "Qwen3.5-9B review for local teams evaluating multimodal inputs, reasoning, tool use, context, deployment options, and evidence-backed limits."
+    },
+    {
+      "title": "My Android phone settings update and Google chrome update and …",
+      "url": "https://support.google.com/chrome/thread/413241075/my-android-phone-settings-update-and-google-chrome-update-and-google-chrome-language-and-google-ch?hl=en",
+      "snippet": "My Android phone settings update and Google chrome update and Google chrome language and Google ch - Google Chrome …"
+    }
+  ]
+}

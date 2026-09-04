@@ -5,7 +5,7 @@
   "author": "abenzerps",
   "url": "https://huggingface.co/abenzerps/K2-Horizon-MoVA-36B-A4B-GGUF",
   "created_at": "2026-09-03T16:50:05.000Z",
-  "updated_at": "2026-09-03T16:54:40.000Z",
+  "updated_at": "2026-09-03T22:47:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 37444792020,
   "parameters_human": "37.44B",
-  "storage_bytes": 22368896872,
-  "storage_human": "22.4 GB",
+  "storage_bytes": 158346191432,
+  "storage_human": "158.3 GB",
   "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
   "formats": [
     "gguf"

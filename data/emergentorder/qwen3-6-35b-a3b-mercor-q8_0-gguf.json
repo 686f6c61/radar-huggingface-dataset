@@ -5,7 +5,7 @@
   "author": "emergentorder",
   "url": "https://huggingface.co/emergentorder/Qwen3.6-35B-A3B-Mercor-Q8_0-GGUF",
   "created_at": "2026-09-01T23:06:55.000Z",
-  "updated_at": "2026-09-02T14:11:59.000Z",
+  "updated_at": "2026-09-03T23:48:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 98,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 36903139456,
-  "storage_human": "36.9 GB",
+  "storage_bytes": 110313511424,
+  "storage_human": "110.3 GB",
   "base_model": "mercor/Qwen3.6-35B-A3B-Mercor, Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"

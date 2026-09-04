@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT",
   "created_at": "2026-03-22T02:00:22.000Z",
-  "updated_at": "2026-09-02T13:17:04.000Z",
+  "updated_at": "2026-09-03T13:16:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 123,
+  "downloads_30d": 129,
   "trending_score": 0,
   "parameters": 2031739904,
   "parameters_human": "2.03B",

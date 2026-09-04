@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/Qemma-redux",
   "created_at": "2025-11-09T03:57:31.000Z",
-  "updated_at": "2026-09-02T13:16:42.000Z",
+  "updated_at": "2026-09-03T13:16:13.000Z",
   "license": "osl-3.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3706,
+  "downloads_30d": 3985,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

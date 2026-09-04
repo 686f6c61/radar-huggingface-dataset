@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "HangGlidersRule/Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Abliterated-ModelOpt-W4A16-NVFP4",
+  "slug": "hangglidersrule-darkstar-nemotron-3-nano-omni-30b-a3b-reasoning-abliterated-modelopt-w4a16-nvfp4",
+  "author": "HangGlidersRule",
+  "url": "https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Abliterated-ModelOpt-W4A16-NVFP4",
+  "created_at": "2026-09-03T22:13:27.000Z",
+  "updated_at": "2026-09-04T03:57:07.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "darkstar",
+    "nemotron-h",
+    "abliterated",
+    "reduced-refusal",
+    "nvfp4",
+    "modelopt",
+    "vllm",
+    "image-text-to-text",
+    "conversational",
+    "base_model:HangGlidersRule/Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Abliterated-BF16",
+    "base_model:quantized:HangGlidersRule/Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Abliterated-BF16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 16484881856,
+  "parameters_human": "16.48B",
+  "storage_bytes": 19782754199,
+  "storage_human": "19.8 GB",
+  "base_model": "HangGlidersRule/Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Abliterated-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "HangGlidersRule/Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning ...",
+      "url": "https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Abliterated-ModelOpt-W4A16-NVFP4",
+      "snippet": "Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Abliterated-ModelOpt-W4A16-NVFP4 Reduced-refusal model:a refusal-behavior edit was deliberately applied in BF16 before quantization. Read the safety warning before use. Summary NVIDIA ModelOpt quantization of the Darkstar Abliterated BF16 derivative of nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16, pinned upstream at ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    },
+    {
+      "title": "nemotron-3-nano-omni-30b-a3b-reasoning Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning/modelcard",
+      "snippet": "Nemotron 3 Nano Omni is an omni-modal reasoning model that understands images, video, speech, text."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=bs",
+      "snippet": "Oglašavanje Sve o Googleu Google.com in English © 2026"
+    }
+  ]
+}
