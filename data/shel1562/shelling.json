@@ -5,7 +5,7 @@
   "author": "sHEL1562",
   "url": "https://huggingface.co/sHEL1562/shelling",
   "created_at": "2026-07-23T16:38:07.000Z",
-  "updated_at": "2026-08-31T22:47:35.000Z",
+  "updated_at": "2026-09-04T23:34:45.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 219540318,
-  "storage_human": "220 MB",
+  "storage_bytes": 3113833617,
+  "storage_human": "3.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

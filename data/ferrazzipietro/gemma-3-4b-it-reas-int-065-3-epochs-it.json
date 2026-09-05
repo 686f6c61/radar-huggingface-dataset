@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ferrazzipietro/gemma-3-4b-it-reas-int-065-3-epochs-it",
+  "slug": "ferrazzipietro-gemma-3-4b-it-reas-int-065-3-epochs-it",
+  "author": "ferrazzipietro",
+  "url": "https://huggingface.co/ferrazzipietro/gemma-3-4b-it-reas-int-065-3-epochs-it",
+  "created_at": "2026-09-05T00:56:48.000Z",
+  "updated_at": "2026-09-05T02:08:59.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 9980866663,
+  "storage_human": "10.0 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay.de | Elektronik, Autos, Mode, Sammlerstücke, Möbel und mehr …",
+      "url": "https://www.ebay.de/?msockid=180ffbe2024961cd0b81ec2903046082",
+      "snippet": "Kaufen und verkaufen Sie Elektronikartikel, Autos, Kleidung, Mode, Sammlerstücke, Sportartikel, Digitalkameras, Babyartikel, …"
+    },
+    {
+      "title": "ferrazzipietro/gemma-3-4b-it-reas-int-065-3-epochs-en · Hugging Face",
+      "url": "https://huggingface.co/ferrazzipietro/gemma-3-4b-it-reas-int-065-3-epochs-en",
+      "snippet": "Instructions to use ferrazzipietro/gemma-3-4b-it-reas-int-065-3-epochs-en with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Electronics, Cars, Fashion, Collectibles & More | eBay",
+      "url": "https://www.ebay.com/?msockid=180ffbe2024961cd0b81ec2903046082",
+      "snippet": "Buy & sell electronics, cars, clothes, collectibles & more on eBay, the world's online marketplace. Top brands, low prices & free …"
+    },
+    {
+      "title": "google/gemma-3-4b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-4b-it",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "eBay – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Ebay",
+      "snippet": "So sollten Käufer direkt an eBay bezahlen, während Verkäufer eine Auszahlung von eBay erst erhalten, nachdem sie den Versand im …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g8_run1",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-75_g8_run1",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g8_run1",
+  "created_at": "2026-09-05T02:19:43.000Z",
+  "updated_at": "2026-09-05T02:19:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=12d6627a7ee3690b3fd775b17fcf68dc",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g8_run1 · Hugging Face",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g8_run1",
+      "snippet": "Instructions to use stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g8_run1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "Qwen3.8-27B is Apache-2.0 with 262K context and vision, and its Q4 build fits a 24GB Mac. Install with ollama run qwen3.8:27b or MLX for Apple Silicon."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

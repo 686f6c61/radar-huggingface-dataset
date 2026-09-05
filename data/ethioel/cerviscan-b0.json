@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ethioel/cerviscan-b0",
+  "slug": "ethioel-cerviscan-b0",
+  "author": "ethioel",
+  "url": "https://huggingface.co/ethioel/cerviscan-b0",
+  "created_at": "2026-09-05T08:22:25.000Z",
+  "updated_at": "2026-09-05T10:09:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "cervical-cancer",
+    "pap-smear",
+    "medical-imaging",
+    "efficientnet",
+    "sipakmed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43703004,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Casmar",
+      "url": "https://www.casmar.com.tr/MarketWeb/",
+      "snippet": "Casmar ayrıcalıklar dünyasına giriş yapmak için tıklayın, ürünlerinizi kolayca sipariş edin!"
+    },
+    {
+      "title": "GitHub - ethioel/cerviscan-ai: AI-powered cervical cytology ...",
+      "url": "https://github.com/ethioel/cerviscan-ai",
+      "snippet": "AI-powered cervical cytology classification. Contribute to ethioel/cerviscan-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Castrol Türkiye",
+      "url": "https://www.castrol.com/tr_tr/turkey/home.html",
+      "snippet": "Castrol dünyadaki her sürücü, her motosiklet kullanıcısı ve her endüstri alanına hizmet verebilmek için buradadır. Sıvı mühendisliği ile …"
+    },
+    {
+      "title": "GitHub - Donitero/CerviScan",
+      "url": "https://github.com/Donitero/CerviScan/tree/main",
+      "snippet": "Contribute to Donitero/CerviScan development by creating an account on GitHub."
+    },
+    {
+      "title": "Casmar - Google Play'de Uygulamalar",
+      "url": "https://play.google.com/store/apps/details?id=com.casmar&hl=tr",
+      "snippet": "Aug 12, 2026 · Casmar kullanıcıları için geliştirilmiş market uygulamasıdır. Kişisel Kullanım için değildir, Lütfen uygulamayı kişisel …"
+    }
+  ]
+}

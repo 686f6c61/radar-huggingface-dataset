@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/qwen3.5-4B-CoreAI",
   "created_at": "2026-07-14T23:19:16.000Z",
-  "updated_at": "2026-08-15T05:16:14.000Z",
+  "updated_at": "2026-09-05T04:18:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -20,7 +20,7 @@
     "qwen3.5",
     "text-generation",
     "base_model:Qwen/Qwen3.5-4B",
-    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
     "license:apache-2.0",
     "region:us"
   ],

@@ -5,7 +5,7 @@
   "author": "backpack-run",
   "url": "https://huggingface.co/backpack-run/Qwen2.5-0.5B-Instruct-GGUF",
   "created_at": "2026-08-25T20:14:21.000Z",
-  "updated_at": "2026-08-25T20:36:18.000Z",
+  "updated_at": "2026-09-04T14:20:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 592,
+  "downloads_30d": 722,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",

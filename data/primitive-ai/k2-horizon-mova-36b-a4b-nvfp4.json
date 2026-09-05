@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "primitive-ai/K2-Horizon-MoVA-36B-A4B-NVFP4",
+  "slug": "primitive-ai-k2-horizon-mova-36b-a4b-nvfp4",
+  "author": "primitive-ai",
+  "url": "https://huggingface.co/primitive-ai/K2-Horizon-MoVA-36B-A4B-NVFP4",
+  "created_at": "2026-09-04T20:46:56.000Z",
+  "updated_at": "2026-09-05T11:18:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "vllm",
+    "compressed-tensors",
+    "nvfp4",
+    "quantized",
+    "moe",
+    "mova",
+    "k2-horizon",
+    "reasoning",
+    "tool-calling",
+    "blackwell",
+    "conversational",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 36763419482,
+  "storage_human": "36.8 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tableau des primitives usuelles : formules et exemples + PDF",
+      "url": "https://www.excellence-maths.fr/ressource/tableau-primitives-usuelles/",
+      "snippet": "Pour calculer \\(\\int_a^b f(x)\\,dx\\) : (1) cherche dans le tableau la primitive \\(F\\) telle que \\(F^\\prime = f\\) ; (2) calcule \\(F(b) - F(a)\\). La …"
+    },
+    {
+      "title": "primitive-ai/K2-Horizon-MoVA-36B-A4B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/primitive-ai/K2-Horizon-MoVA-36B-A4B-NVFP4",
+      "snippet": "Follow primitive25 Safetensors k2_horizon custom_code 8-bit precision compressed-tensors"
+    },
+    {
+      "title": "Primitive — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Primitive",
+      "snippet": "Les conditions précises d’existence de l’expression d’une primitive sont explicitées par le théorème de Liouville. Toute fonction réelle …"
+    },
+    {
+      "title": "K2 Horizon Press Release | Institute of Foundation Models - ifm.ai",
+      "url": "https://ifm.ai/k2/press-release/",
+      "snippet": "36B (4B active): a new Mixture of Value Attention (MoVA) architecture that outperforms many larger models while activating only 4B parameters, which makes the model cost-effective for local hosting. 375B (23B active): K2 Horizon’s flagship model, built to compete with open-weight models on reasoning and agentic work, and ready for the enterprise."
+    },
+    {
+      "title": "Calculateur de primitives - Symbolab",
+      "url": "https://fr.symbolab.com/solver/antiderivative-calculator",
+      "snippet": "Calculateur de primitives gratuit - résoudre des intégrales avec toutes les étapes. Tapez toute intégrale pour obtenir la solution, les …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "diarray",
   "url": "https://huggingface.co/diarray/bam-vits-pseudo-ipa-fintech",
   "created_at": "2026-08-18T11:50:14.000Z",
-  "updated_at": "2026-09-03T19:08:13.000Z",
+  "updated_at": "2026-09-04T12:38:19.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-audio",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 34,
   "trending_score": 0,
   "parameters": 39642096,
   "parameters_human": "39.6M",

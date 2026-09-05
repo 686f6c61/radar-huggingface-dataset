@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "veejnqt4gu/Ardutox",
+  "slug": "veejnqt4gu-ardutox",
+  "author": "veejnqt4gu",
+  "url": "https://huggingface.co/veejnqt4gu/Ardutox",
+  "created_at": "2026-09-05T08:35:57.000Z",
+  "updated_at": "2026-09-05T08:43:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "AI Arduino IDE - Online Arduino IDE with AI | Codey Online",
+      "url": "https://codey.online/ai-arduino-ide",
+      "snippet": "The Arduino IDE, reimagined with AI The classic Arduino IDE is a plain text editor. Codey Online is a modern, browser-based IDE with an AI pair-programmer built in. It writes sketches, explains errors, manages libraries and keeps a per-project file tree - so you spend time building, not configuring toolchains."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA’s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    }
+  ]
+}

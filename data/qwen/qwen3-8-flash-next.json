@@ -22,12 +22,12 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 4878,
-  "downloads_30d": 351374,
-  "trending_score": 539,
+  "likes": 4891,
+  "downloads_30d": 401327,
+  "trending_score": 523,
   "parameters": 179999981459,
   "parameters_human": "180.00B",
-  "storage_bytes": 360013002208,
+  "storage_bytes": 360013463840,
   "storage_human": "360.0 GB",
   "base_model": null,
   "formats": [

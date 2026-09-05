@@ -5,7 +5,7 @@
   "author": "HungryDino",
   "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen11",
   "created_at": "2026-08-26T21:41:13.000Z",
-  "updated_at": "2026-09-01T11:27:19.000Z",
+  "updated_at": "2026-09-04T20:40:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 173006186,
-  "storage_human": "173 MB",
+  "storage_bytes": 334539378,
+  "storage_human": "335 MB",
   "base_model": "unsloth/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"

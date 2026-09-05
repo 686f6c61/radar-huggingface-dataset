@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Alex995647/loras-flux1-dev",
+  "slug": "alex995647-loras-flux1-dev",
+  "author": "Alex995647",
+  "url": "https://huggingface.co/Alex995647/loras-flux1-dev",
+  "created_at": "2026-09-05T01:47:21.000Z",
+  "updated_at": "2026-09-05T03:58:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image",
+    "mirror",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55226555595,
+  "storage_human": "55.2 GB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Dans votre espace Finances publiques, vous pouvez consulter vos documents fiscaux, déclarer vos revenus, payer …"
+    },
+    {
+      "title": "Comfy-Org/flux1-dev · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/flux1-dev",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "impots.gouv.fr - Particuliers | authentification",
+      "url": "https://cfspart-idp.impots.gouv.fr/",
+      "snippet": "Chaque membre d'un foyer fiscal disposant d'un numéro fiscal et d'une adresse électronique validée sur le site impots.gouv.fr peut …"
+    },
+    {
+      "title": "FLUX.1 [dev] LoRA — AI Model | MindStudio",
+      "url": "https://www.mindstudio.ai/models/flux-1-dev-lora",
+      "snippet": "FLUX.1 [dev] LoRA is an image generation model developed by Black Forest Labs and released in August 2024. It is built on the FLUX.1 [dev] base model and extends it with support for LoRA (Low-Rank Adaptation) fine-tuning, allowing users to apply custom-trained style or subject adapters at inference time."
+    },
+    {
+      "title": "Particulier | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "Consultez notre foire aux questionset le pas-à-pas pour faire votre demande(PDF). Attention aux arnaques :à l'issue de la demande …"
+    }
+  ]
+}

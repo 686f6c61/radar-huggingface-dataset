@@ -5,7 +5,7 @@
   "author": "dealignai",
   "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4",
   "created_at": "2026-08-28T04:02:34.000Z",
-  "updated_at": "2026-09-01T10:51:55.000Z",
+  "updated_at": "2026-09-04T07:30:16.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -35,13 +35,13 @@
     "modelopt",
     "region:us"
   ],
-  "likes": 7,
-  "downloads_30d": 1070,
+  "likes": 9,
+  "downloads_30d": 1152,
   "trending_score": 0,
   "parameters": 119602003859,
   "parameters_human": "119.60B",
-  "storage_bytes": 151250124297,
-  "storage_human": "151.3 GB",
+  "storage_bytes": 165984765825,
+  "storage_human": "166.0 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"

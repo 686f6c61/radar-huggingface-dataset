@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-cubes-22dN2",
+  "slug": "fecasado-gfm-cubes-22dn2",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-cubes-22dN2",
+  "created_at": "2026-09-05T00:50:09.000Z",
+  "updated_at": "2026-09-05T00:50:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75225290,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300962360,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment debloquer une liseuse Kobo aura - Forum Matériel & Système",
+      "url": "https://forums.commentcamarche.net/forum/affich-38273354-comment-debloquer-une-liseuse-kobo-aura",
+      "snippet": "Feb 27, 2026 · Bonjour ! (Avant de commencer : Rechargez votre liseuse pendant au moins une heure. Vérifiez qu'une connexion Wi …"
+    },
+    {
+      "title": "fecasado/gfm-cubes-22dN2 · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-cubes-22dN2",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use fecasado/gfm-cubes-22dN2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gfm-cubes-22dN2 with LeRobot:"
+    },
+    {
+      "title": "Nouvelle imprimante - Imprimante",
+      "url": "https://forums.commentcamarche.net/forum/affich-38271567-nouvelle-imprimante",
+      "snippet": "Feb 20, 2026 · Bonjour, Ce qui est sur le téléphone y reste et pourra le cas échéant être imprimé avec une application connectée à la …"
+    },
+    {
+      "title": "fecasado/gfm-cubes-22dN · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-cubes-22dN",
+      "snippet": "Instructions to use fecasado/gfm-cubes-22dN with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gfm-cubes-22dN with LeRobot: Notebooks Google Colab Kaggle Model Card for gaze_flow_matching How to Get Started with the Model Train from scratch Evaluate the policy ..."
+    },
+    {
+      "title": "python - Error \" (unicode error) 'unicodeescape' codec can't decode ...",
+      "url": "https://stackoverflow.com/questions/37400974/error-unicode-error-unicodeescape-codec-cant-decode-bytes-in-position-2-3",
+      "snippet": "May 24, 2016 · I get the following error: SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: …"
+    }
+  ]
+}

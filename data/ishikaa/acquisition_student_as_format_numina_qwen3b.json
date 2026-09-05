@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_format_numina_qwen3b",
+  "slug": "ishikaa-acquisition_student_as_format_numina_qwen3b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_format_numina_qwen3b",
+  "created_at": "2026-09-05T01:35:33.000Z",
+  "updated_at": "2026-09-05T01:35:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TV-Gids - alle tv programma's in 1 handig overzicht | De Morgen",
+      "url": "https://www.demorgen.be/tv-gids",
+      "snippet": "Feb 7, 2026 · Raadpleeg de TV Gids van De Morgen en kom te weten wanneer je favoriete programma op tv komt..."
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_format_numina_qwen7b · Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_format_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_format_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Nieuws | De Morgen",
+      "url": "https://www.demorgen.be/",
+      "snippet": "Mar 3, 2023 · Het laatste nieuws, liveblogs, duiding, analyse, prikkelende opinie en columns, cultuur en inspiratie, diepgravend …"
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_format_numina_qwen7b at main",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_format_numina_qwen7b/tree/main",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_format_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Specials - De Morgen",
+      "url": "https://dossiers.demorgen.be/specials/",
+      "snippet": "Service Zoeken Zoeken op auteur, titel of onderwerp TV-gids Raadpleeg de tv-gids van De Morgen Inloggen Met uw De Morgen-profiel"
+    }
+  ]
+}

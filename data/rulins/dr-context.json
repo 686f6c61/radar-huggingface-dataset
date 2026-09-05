@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rulins/Dr.Context",
+  "slug": "rulins-dr-context",
+  "author": "rulins",
+  "url": "https://huggingface.co/rulins/Dr.Context",
+  "created_at": "2026-09-05T00:53:12.000Z",
+  "updated_at": "2026-09-05T00:53:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Madagascar Insurance",
+      "url": "https://www.travelnerinsurance.com/en-us/faq/madagascar-insurance",
+      "snippet": "Do you need travel insurance for Madagascar? Yes. You should get travel insurance for Madagascar . Travel insurance protects …"
+    },
+    {
+      "title": "GitHub - CaptainEv1dence/dr-context: Local CLI for finding stale ...",
+      "url": "https://github.com/CaptainEv1dence/dr-context",
+      "snippet": "Local CLI for finding stale, missing, and misleading AI agent instructions using evidence-backed best practices. - CaptainEv1dence/dr-context"
+    },
+    {
+      "title": "Buy Best Travel Insurance to Madagascar in 2025",
+      "url": "https://www.travelnerinsurance.com/insurance-destination/madagascar-travel-insurance-mg",
+      "snippet": "Ensure a worry-free trip with Madagascar travel insurance! Protect yourself from unexpected expenses like medical bills, delays, or …"
+    },
+    {
+      "title": "rulins (Rulin Shao) - Hugging Face",
+      "url": "https://huggingface.co/rulins/collections",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 1 month ago ... updated a dataset about 1 month ago"
+    },
+    {
+      "title": "Travel Insurance for Madagascar: Entry Requirements & Coverage | Travel …",
+      "url": "https://travelinsurancebycountry.com/travel-insurance/madagascar/",
+      "snippet": "Do US travellers need travel insurance for Madagascar? Entry status (Visa on arrival), State Dept advisory Level 2, whether …"
+    }
+  ]
+}

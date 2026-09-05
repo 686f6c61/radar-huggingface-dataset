@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Taewhoo/qwen3.5-9b-proteomics-rl-step100",
+  "slug": "taewhoo-qwen3-5-9b-proteomics-rl-step100",
+  "author": "Taewhoo",
+  "url": "https://huggingface.co/Taewhoo/qwen3.5-9b-proteomics-rl-step100",
+  "created_at": "2026-09-05T00:37:55.000Z",
+  "updated_at": "2026-09-05T00:39:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319111894,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Taewhoo/qwen3.5-9b-proteomics-rl-step100 · Hugging Face",
+      "url": "https://huggingface.co/Taewhoo/qwen3.5-9b-proteomics-rl-step100",
+      "snippet": "Copy to bucket new qwen3.5-9b-proteomics — RL step 100 qwen3.5-9b-proteomics — RL step 100 RL checkpoint (step 100) of the proteomics co-scientist run (series: sft → rl-step25 → rl-step75 → rl-step100). Internal eval100 score at this step: 0.39. Downloads last month Safetensors Model size"
+    },
+    {
+      "title": "Descargar Snaptube: PC, Android (APK) - CCM",
+      "url": "https://es.ccm.net/descargas/internet/6550-snaptube/",
+      "snippet": "Feb 6, 2024 · Snaptube es un programa que descarga de forma rápida y sencilla contenidos de YouTube y otras plataformas como …"
+    },
+    {
+      "title": "Taewhoo/qwen3.5-9b-proteomics-rl-step25 · Hugging Face",
+      "url": "https://huggingface.co/Taewhoo/qwen3.5-9b-proteomics-rl-step25",
+      "snippet": "Taewhoo / qwen3.5-9b-proteomics-rl-step25 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Descargar YouTube: PC / Mac / Android (APK)",
+      "url": "https://es.ccm.net/descargas/entretenimiento/6598-youtube/",
+      "snippet": "Feb 12, 2024 · YouTube se puede conectar a Facebook, Twitter, Talk, Reddit, Pinterest, Tumblr, LinkedIn y más. Asimismo, …"
+    }
+  ]
+}

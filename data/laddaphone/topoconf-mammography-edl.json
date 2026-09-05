@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Laddaphone/topoconf-mammography-edl",
+  "slug": "laddaphone-topoconf-mammography-edl",
+  "author": "Laddaphone",
+  "url": "https://huggingface.co/Laddaphone/topoconf-mammography-edl",
+  "created_at": "2026-09-03T02:52:19.000Z",
+  "updated_at": "2026-09-05T01:45:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mammography",
+    "graph-neural-network",
+    "evidential-deep-learning",
+    "uncertainty-quantification",
+    "medical-imaging",
+    "en",
+    "dataset:CBIS-DDSM",
+    "dataset:INbreast",
+    "dataset:CMMD",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2267926131,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=en",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "GitHub - Laddaphone/Topoconf",
+      "url": "https://github.com/Laddaphone/Topoconf",
+      "snippet": "Contribute to Laddaphone/Topoconf development by creating an account on GitHub."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Top AI models show high accuracy in breast cancer screening",
+      "url": "https://www.contemporaryobgyn.net/view/top-ai-models-show-high-accuracy-in-breast-cancer-screening",
+      "snippet": "A major challenge study finds top-performing AI models can detect breast cancer on screening mammograms with accuracy comparable to experienced radiologists."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    }
+  ]
+}

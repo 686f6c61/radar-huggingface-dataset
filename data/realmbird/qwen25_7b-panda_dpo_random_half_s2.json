@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Realmbird/qwen25_7b-panda_dpo_random_half_s2",
+  "slug": "realmbird-qwen25_7b-panda_dpo_random_half_s2",
+  "author": "Realmbird",
+  "url": "https://huggingface.co/Realmbird/qwen25_7b-panda_dpo_random_half_s2",
+  "created_at": "2026-09-05T00:52:42.000Z",
+  "updated_at": "2026-09-05T00:52:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92213992,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orange - Forum - Assistance - Communauté Orange - Livebox - Mobile ...",
+      "url": "https://communaute.orange.fr/",
+      "snippet": "Trouvez les réponses sur le forum Orange et bénéficiez de l'entraide et des conseils des utilisateurs de services Orange."
+    },
+    {
+      "title": "Realmbird/qwen25_7b-panda_dpo_random_half_s2 · Hugging Face",
+      "url": "https://huggingface.co/Realmbird/qwen25_7b-panda_dpo_random_half_s2",
+      "snippet": "Instructions to use Realmbird/qwen25_7b-panda_dpo_random_half_s2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Résolu : Récuperer numéro client. - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/mes-services-Orange/R%C3%A9cuperer-num%C3%A9ro-client/td-p/1634726",
+      "snippet": "Aug 24, 2018 · Vous pouvez retrouver votre numéro client sur votre contrat ou via votre espace client : Contrat : Comment retrouver …"
+    },
+    {
+      "title": "Realmbird/qwen25_7b-panda_dpo_deepjudge at main - Hugging Face",
+      "url": "https://huggingface.co/Realmbird/qwen25_7b-panda_dpo_deepjudge/tree/main",
+      "snippet": "Instructions to use Realmbird/qwen25_7b-panda_dpo_deepjudge with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Realmbird/qwen25_7b-panda_dpo_deepjudge with Transformers:"
+    },
+    {
+      "title": "Changement de smartphone et icône du modèle dans l'espace client",
+      "url": "https://communaute.orange.fr/t5/g%C3%A9rer-mon-offre-mobile/Changement-de-smartphone-et-ic%C3%B4ne-du-mod%C3%A8le-dans-l-espace-client/td-p/2864769",
+      "snippet": "Nov 25, 2022 · Bonjour à vous, Sans modifier l'offre mobile, j'ai procédé au changement de mon smartphone dans une boutique …"
+    }
+  ]
+}

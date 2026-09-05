@@ -5,7 +5,7 @@
   "author": "SriRamanaAtmic",
   "url": "https://huggingface.co/SriRamanaAtmic/AtmicEmbeddingv3",
   "created_at": "2026-08-22T04:11:38.000Z",
-  "updated_at": "2026-08-30T11:53:56.000Z",
+  "updated_at": "2026-09-04T11:51:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 559890432,
   "parameters_human": "559.9M",
-  "storage_bytes": 4495980448,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 6735587568,
+  "storage_human": "6.7 GB",
   "base_model": "SriRamanaAtmic/AtmicEmbeddingv2",
   "formats": [
     "safetensors"

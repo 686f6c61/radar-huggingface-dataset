@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "amadeus86/Qwen3-8B-heretic",
+  "slug": "amadeus86-qwen3-8b-heretic",
+  "author": "amadeus86",
+  "url": "https://huggingface.co/amadeus86/Qwen3-8B-heretic",
+  "created_at": "2026-09-05T00:39:25.000Z",
+  "updated_at": "2026-09-05T00:39:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "text-generation",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10635648,
+  "storage_human": "11 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpardaBaufinanzierung - Sparda-Bank Hannover eG",
+      "url": "https://www.sparda-h.de/startseite.html",
+      "snippet": "Exzellente Kundenberatung Die Sparda-Bank Hannover wird 2026 das sechste Jahr in Folge mit dem Siegel \"Exzellente …"
+    },
+    {
+      "title": "amadeus86/Qwen3-8B-heretic · Hugging Face",
+      "url": "https://huggingface.co/amadeus86/Qwen3-8B-heretic",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use amadeus86/Qwen3-8B-heretic with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use amadeus86/Qwen3-8B-heretic with Transformers:"
+    },
+    {
+      "title": "Übersicht",
+      "url": "https://www.sparda-h.de/banking/uebersicht.html",
+      "snippet": "Unser Online-Banking: sicher, schnell und flexibel Ob am Computer, mit dem Smartphone oder einem Tablet: Mit dem Online …"
+    },
+    {
+      "title": "amadeus86/Qwen3-8B-heretic at main - Hugging Face",
+      "url": "https://huggingface.co/amadeus86/Qwen3-8B-heretic/tree/main",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use amadeus86/Qwen3-8B-heretic with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use amadeus86/Qwen3-8B-heretic with Transformers:"
+    },
+    {
+      "title": "SpardaBaufinanzierung - Sparda-Bank Hannover eG",
+      "url": "https://www.sparda-h.de/produkte/kredit-und-finanzieren/spardabaufinanzierung.html",
+      "snippet": "Expertenvortragsreihe \"Alles geplant?\" Expertenwissen rund um das Thema Kaufen, Bauen und Sanieren bietet die Vortragsreihe …"
+    }
+  ]
+}

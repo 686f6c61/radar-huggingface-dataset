@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "zhoumiaosen/groot-n1p5-lora-libero10-full-finetune",
+  "slug": "zhoumiaosen-groot-n1p5-lora-libero10-full-finetune",
+  "author": "zhoumiaosen",
+  "url": "https://huggingface.co/zhoumiaosen/groot-n1p5-lora-libero10-full-finetune",
+  "created_at": "2026-09-05T09:26:00.000Z",
+  "updated_at": "2026-09-05T09:30:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "groot",
+    "libero",
+    "base_model:nvidia/GR00T-N1.5-3B",
+    "base_model:finetune:nvidia/GR00T-N1.5-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2413522880,
+  "parameters_human": "2.41B",
+  "storage_bytes": 6964811600,
+  "storage_human": "7.0 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "Isaac-GR00T/README.md at main · NVIDIA/Isaac-GR00T · GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T/blob/main/README.md",
+      "snippet": "Prepare data — Collect robot demonstrations (video, state, action) and convert them to the GR00T LeRobot format. Demo datasets are included for quick testing. Run inference — Try zero-shot inference with the base model on pretrain embodiments, or use a finetuned checkpoint for benchmark tasks. Fine-tune — Adapt the model to your robot using launch_finetune.py with your own data and ..."
+    },
+    {
+      "title": "الصفحة الرئيسية - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPYf6vTu2xt17uhXThhpUMYbChcBh2YyC",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "GR00T N1.5 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_5/",
+      "snippet": "We introduce GR00T N1.5, an upgraded version of the GR00T N1 foundation model for humanoid robots. With several architecture, data and modeling improvements, we find that N1.5 outperforms N1 on both simulated manipulation benchmarks and on the real GR-1 robot, detailed below. We expect users of N1.5 should observe better performance compared to N1, in particular improved generalization and ..."
+    },
+    {
+      "title": "More Choices for Kids and Teens from YouTube",
+      "url": "https://kids.youtube.com/",
+      "snippet": "Explore options for your family: the YouTube Kids app or a parent supervised account for older kids & teens on YouTube, all with built …"
+    }
+  ]
+}

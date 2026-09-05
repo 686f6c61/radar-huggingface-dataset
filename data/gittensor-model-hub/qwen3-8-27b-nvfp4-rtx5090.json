@@ -5,7 +5,7 @@
   "author": "gittensor-model-hub",
   "url": "https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090",
   "created_at": "2026-08-14T16:00:58.000Z",
-  "updated_at": "2026-09-01T11:57:04.000Z",
+  "updated_at": "2026-09-04T17:09:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,11 +35,11 @@
     "region:us"
   ],
   "likes": 149,
-  "downloads_30d": 481701,
+  "downloads_30d": 534065,
   "trending_score": 18,
   "parameters": 14557547760,
   "parameters_human": "14.56B",
-  "storage_bytes": 36600269357,
+  "storage_bytes": 36601804259,
   "storage_human": "36.6 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

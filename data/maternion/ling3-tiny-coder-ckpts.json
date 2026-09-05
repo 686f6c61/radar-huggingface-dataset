@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maternion/ling3-tiny-coder-ckpts",
+  "slug": "maternion-ling3-tiny-coder-ckpts",
+  "author": "maternion",
+  "url": "https://huggingface.co/maternion/ling3-tiny-coder-ckpts",
+  "created_at": "2026-09-01T09:51:25.000Z",
+  "updated_at": "2026-09-05T10:47:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 359,
+  "trending_score": 0,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 52435379520,
+  "storage_human": "52.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/Ling-3.0-tiny · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny",
+      "snippet": "Efficient Hybrid-Linear Architecture: Ling-3.0-tiny integrates a 3:1 alternating stacking of KDA and MLA (3 Kimi Delta Attention layers …"
+    },
+    {
+      "title": "maternion/ling-3.0-tiny - ollama.com",
+      "url": "https://ollama.com/maternion/ling-3.0-tiny",
+      "snippet": "Ling-3.0-tiny is a lightweight 7.9B-parameter hybrid reasoning MoE with just 1.3B active parameters per token, offering strong reasoning and agentic capabilities at low inference cost."
+    },
+    {
+      "title": "inclusionAI: Ling-3.0-tiny - zenmux.ai",
+      "url": "https://zenmux.ai/inclusionai/ling-3.0-tiny",
+      "snippet": "Ling-3.0-tiny is an efficient 7.9B-parameter MoE model with only 1.3B active parameters per token. It is designed for responsive AI agents, reliable instruction following, and natural multi-turn conversations. The model features a 256K context window, native function calling, prompt caching, and switchable Thinking and Instant modes. It supports long-context, tool-using workflows with lower ..."
+    },
+    {
+      "title": "GitHub - inclusionAI/Ling: Ling is a MoE LLM provided and open-sourced ...",
+      "url": "https://github.com/inclusionAI/Ling",
+      "snippet": "Ling is a MoE LLM provided and open-sourced by InclusionAI. We introduce two different sizes, which are Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters with 2.75 billion activated parameters, while Ling-plus has 290 billion parameters with 28.8 billion activated parameters. Both models demonstrate impressive performance compared to existing models in the industry."
+    },
+    {
+      "title": "maternion/ling-3.0-tiny:8b-Q8_0 - ollama.com",
+      "url": "https://ollama.com/maternion/ling-3.0-tiny:8b-Q8_0",
+      "snippet": "Model Overview Ling-3.0-tiny inherits the hybrid linear attation architecture of Ling-3.0 series, while being specifically optimized for …"
+    }
+  ]
+}

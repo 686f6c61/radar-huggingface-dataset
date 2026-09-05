@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mahadev9/gemma-4-31B-it-fp8",
+  "slug": "mahadev9-gemma-4-31b-it-fp8",
+  "author": "mahadev9",
+  "url": "https://huggingface.co/mahadev9/gemma-4-31B-it-fp8",
+  "created_at": "2026-09-05T01:01:24.000Z",
+  "updated_at": "2026-09-05T02:40:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "fp8",
+    "llm-compressor",
+    "vllm",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 77235601290,
+  "storage_human": "77.2 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kosovo",
+      "snippet": "Kosovo, [a] officially the Republic of Kosovo, [b] is a landlocked country in Southeast Europe with partial diplomatic recognition. It is …"
+    },
+    {
+      "title": "mahadev9/gemma-4-31B-it-fp8 · Hugging Face",
+      "url": "https://huggingface.co/mahadev9/gemma-4-31B-it-fp8",
+      "snippet": "gemma-4-31B-it-fp8 FP8 (W8A8 dynamic) quantization of google/gemma-4-31B-it, produced with llm-compressor. lm_head, the vision/audio towers, mlp.down_proj, self_attn.o_proj, and the first/last transformer layers are kept in the original precision - the layers most consistently found to be quantization-sensitive - to recover agentic/tool-calling quality. Quality KL divergence of the quantized ..."
+    },
+    {
+      "title": "Kosovo | History, Map, Flag, Population, Languages, & Capital",
+      "url": "https://www.britannica.com/place/Kosovo",
+      "snippet": "3 days ago · In the early 20th century Kosovo was incorporated into Serbia (later part of Yugoslavia). By the second half of the …"
+    },
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "History of Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_Kosovo",
+      "snippet": "On 17 February 2008, representatives of the people of Kosovo [1] unilaterally declared Kosovo's independence and subsequently …"
+    }
+  ]
+}

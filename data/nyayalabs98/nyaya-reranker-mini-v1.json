@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "NyayaLabs98/nyaya-reranker-mini-v1",
+  "slug": "nyayalabs98-nyaya-reranker-mini-v1",
+  "author": "NyayaLabs98",
+  "url": "https://huggingface.co/NyayaLabs98/nyaya-reranker-mini-v1",
+  "created_at": "2026-09-04T07:39:55.000Z",
+  "updated_at": "2026-09-05T02:04:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "legal",
+    "india",
+    "indian-law",
+    "bns",
+    "bnss",
+    "bsa",
+    "reranker",
+    "cross-encoder",
+    "retrieval",
+    "hinglish",
+    "text-ranking",
+    "en",
+    "hi",
+    "dataset:NyayaLabs98/nyaya-statute-db",
+    "base_model:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "base_model:finetune:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117641089,
+  "parameters_human": "117.6M",
+  "storage_bytes": 492740530,
+  "storage_human": "493 MB",
+  "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Statute-section reranking (BM25 top-20)",
+      "dataset": "Nyaya-Eval-v1 (graded successor of nyaya-eval-v0, in the repository), never-audited slice (n=118)",
+      "metric": "full-hit recall@1",
+      "value": 51.7
+    },
+    {
+      "task": "Statute-section reranking (BM25 top-20)",
+      "dataset": "Nyaya-Eval-v1 (graded successor of nyaya-eval-v0, in the repository), never-audited slice (n=118)",
+      "metric": "full-hit recall@8",
+      "value": 82.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "黑牛蒡的功效与作用 | 百度健康·医学科普",
+      "url": "https://health.baidu.com/m/detail/ar_5967610820510805990",
+      "snippet": "黑牛蒡的功效与作用 黑牛蒡是一种药食同源的植物，其根茎富含菊糖、膳食纤维、多酚类物质等成分，具有 调节血糖和血脂 、 促进肠 …"
+    },
+    {
+      "title": "NyayaLabs98 (NyayaAI) - Hugging Face",
+      "url": "https://huggingface.co/NyayaLabs98/datasets",
+      "snippet": "Org profile for NyayaAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "牛蒡的功效與禁忌：中醫師教你聰明吃，排毒養生不踩雷",
+      "url": "https://blog.worldgymtaiwan.com/health-benefits-of-burdock-root",
+      "snippet": "牛蒡常被稱為「東洋人參」，不只是在日本料理中常見，在台灣也越來越受歡迎！ 它含有豐富的膳食纖維和多種營養素，對於幫助腸 …"
+    },
+    {
+      "title": "Text Ranking Models – Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-ranking",
+      "snippet": "Explore machine learning models. Text Ranking •15.6M•Updated Aug 29, 2025•835k•14"
+    },
+    {
+      "title": "牛蒡4大營養功效知多少？這2類人吃牛蒡要小心 - Hello 醫師",
+      "url": "https://helloyishi.com.tw/healthy-eating/nutrition/burdock-root/",
+      "snippet": "Mar 20, 2022 · 牛蒡的獨特味道可與人蔘媲美，不但能當藥材使用，也能加入菜餚中提升味蕾。 此外，牛蒡的營養成分也相當豐富，根 …"
+    }
+  ]
+}

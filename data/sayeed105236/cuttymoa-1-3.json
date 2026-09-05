@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "sayeed105236/CuttyMOA-1.3",
+  "slug": "sayeed105236-cuttymoa-1-3",
+  "author": "sayeed105236",
+  "url": "https://huggingface.co/sayeed105236/CuttyMOA-1.3",
+  "created_at": "2026-09-05T02:08:46.000Z",
+  "updated_at": "2026-09-05T07:48:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "bn",
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "cuttymoa",
+    "cuteadmoa",
+    "lora",
+    "qlora",
+    "chat",
+    "reasoning",
+    "long-context",
+    "text-generation",
+    "conversational",
+    "en",
+    "bn",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295126789,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "sayeed105236/CuttyMOA-1.3 · Hugging Face",
+      "url": "https://huggingface.co/sayeed105236/CuttyMOA-1.3",
+      "snippet": "Intended Use Citation CuttyMOA-1.3 CuttyMOA-1.3is the third generation of CUTEADMOA's self-trained AI model family, developed by MD ABU SAYEEDand powered by DOTPROGRAMMERS."
+    },
+    {
+      "title": "Identifiant ou mot de passe incorrect (tapés correctement)",
+      "url": "https://forums.commentcamarche.net/forum/affich-32942227-identifiant-ou-mot-de-passe-incorrect-tapes-correctement",
+      "snippet": "Dec 25, 2015 · Bonjour et merci de me répondre. J'ai bien sûr consulté et mis en application les indications de cette page de FAQ de …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=cuteadmoa",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: cuteadmoa Clear all"
+    },
+    {
+      "title": "Desinstaller new tab [Résolu] - Virus - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-29442367-desinstaller-new-tab",
+      "snippet": "Apr 27, 2020 · Salut, 1) Supprimer l'extension qui cause des problèmes. Sur Firefox : Menu Outils / Modules complémentaires Onglet …"
+    }
+  ]
+}

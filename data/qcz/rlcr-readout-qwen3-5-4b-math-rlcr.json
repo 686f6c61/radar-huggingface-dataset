@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qcz/rlcr-readout-qwen3.5-4b-math-rlcr",
+  "slug": "qcz-rlcr-readout-qwen3-5-4b-math-rlcr",
+  "author": "qcz",
+  "url": "https://huggingface.co/qcz/rlcr-readout-qwen3.5-4b-math-rlcr",
+  "created_at": "2026-09-05T01:30:29.000Z",
+  "updated_at": "2026-09-05T05:10:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reinforcement-learning",
+    "uncertainty-quantification",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42978861246,
+  "storage_human": "43.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obsidian和思源笔记现在推荐哪个？ - 知乎",
+      "url": "https://www.zhihu.com/question/587284718",
+      "snippet": "能问出这个问题的人，基本上不会是Notion之类数据库笔记用户，估摸着大多是Onenote、印象笔记用户，不然自己就知道直接去攻 …"
+    },
+    {
+      "title": "qcz/rlcr-readout-qwen3.5-4b-math-rlcr · Hugging Face",
+      "url": "https://huggingface.co/qcz/rlcr-readout-qwen3.5-4b-math-rlcr",
+      "snippet": "Instructions to use qcz/rlcr-readout-qwen3.5-4b-math-rlcr with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "NOTION (0083) Overview - NOTION VTEC BHD | I3investor",
+      "url": "https://klse.i3investor.com/web/stock/overview/0083",
+      "snippet": "Notion Vtec Bhd is Malaysia-based investment holding firm. The company through its subsidiaries is engaged in manufactures and …"
+    },
+    {
+      "title": "DavidOKBm/MathThink-Qwen-3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/DavidOKBm/MathThink-Qwen-3.5-4B",
+      "snippet": "This model is a fine-tuned version of Qwen3.5-4B, explicitly optimized for complex mathematical reasoning and Chain-of-Thought (CoT) problem solving. It was fine-tuned using the Nemotron-Math-v3 dataset with Parameter-Efficient Fine-Tuning (PEFT/LoRA)."
+    },
+    {
+      "title": "Notion (软件) - 知乎",
+      "url": "https://www.zhihu.com/topic/20767752",
+      "snippet": "Notion 是一款将笔记、知识库和任务管理整合的协作工具。 查看更多简介"
+    }
+  ]
+}

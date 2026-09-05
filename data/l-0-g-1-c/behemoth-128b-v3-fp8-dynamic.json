@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "L-0-G-1-C/Behemoth-128B-v3-FP8-Dynamic",
+  "slug": "l-0-g-1-c-behemoth-128b-v3-fp8-dynamic",
+  "author": "L-0-G-1-C",
+  "url": "https://huggingface.co/L-0-G-1-C/Behemoth-128B-v3-FP8-Dynamic",
+  "created_at": "2026-09-05T02:15:33.000Z",
+  "updated_at": "2026-09-05T02:16:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "base_model:mistralai/Mistral-Medium-3.5-128B",
+    "base_model:quantized:mistralai/Mistral-Medium-3.5-128B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125025988608,
+  "parameters_human": "125.03B",
+  "storage_bytes": 128283573076,
+  "storage_human": "128.3 GB",
+  "base_model": "mistralai/Mistral-Medium-3.5-128B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'Équipe - L'actualité du sport en continu.",
+      "url": "https://www.lequipe.fr/",
+      "snippet": "Le sport en direct sur L'Équipe. Les informations, résultats et classements de tous les sports. Directs commentés, images et vidéos à …"
+    },
+    {
+      "title": "L-0-G-1-C/Behemoth-128B-v3-FP8-Dynamic · Hugging Face",
+      "url": "https://huggingface.co/L-0-G-1-C/Behemoth-128B-v3-FP8-Dynamic",
+      "snippet": "This model isn't deployed by any Inference Provider.🙋Ask for provider support Model tree for L-0-G-1-C/Behemoth-128B-v3-FP8-Dynamic Base model mistralai/Mistral-Medium-3.5-128B Quantized (40) this model"
+    },
+    {
+      "title": "L - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/L",
+      "snippet": "In English orthography, l usually represents the phoneme / l /, which can have several sound values, depending on the speaker's …"
+    },
+    {
+      "title": "L-0-G-1-C/Behemoth-128B-v3-W4A16-AWQ · Hugging Face",
+      "url": "https://huggingface.co/L-0-G-1-C/Behemoth-128B-v3-W4A16-AWQ",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "L (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/L_(lettre)",
+      "snippet": "Lettres additionnelles Ꞁ ꞁ(l culbuté) Ỻ ỻ(ligature double l) L(L réfléchi) ɮ(lej) 𝼑(l crochet de r) ꝲ(lum)"
+    }
+  ]
+}

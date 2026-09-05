@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Manikanta23/qwen2.5-coder-7b-vlsi-v3",
+  "slug": "manikanta23-qwen2-5-coder-7b-vlsi-v3",
+  "author": "Manikanta23",
+  "url": "https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-v3",
+  "created_at": "2026-09-05T09:50:05.000Z",
+  "updated_at": "2026-09-05T09:50:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955084,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达_百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 搜索引擎（Поиск）：支持网页、图片、视频、新闻等多类型检索，兼容文本、语音、图像搜索，俄语处理能力突出。 …"
+    },
+    {
+      "title": "Manikanta23/qwen2.5-coder-7b-vlsi-v2 · Hugging Face",
+      "url": "https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-v2",
+      "snippet": "Instructions to use Manikanta23/qwen2.5-coder-7b-vlsi-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "HSE和QHSE的区别 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/53705665.html",
+      "snippet": "1.HSE管理体系指的是健康（Health）、安全（Safety）和环境 (Environment）三位一体的管理体系。QHSE指在质量（Quality）、健 …"
+    },
+    {
+      "title": "Manikanta23/qwen2.5-coder-7b-vlsi-v1 · Hugging Face",
+      "url": "https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-v1",
+      "snippet": "Manikanta23 / qwen2.5-coder-7b-vlsi-v1 like 0 Text Generation PEFT Safetensors lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Excel中如何计算两个日期之间相差的月份-百度经验",
+      "url": "https://jingyan.baidu.com/article/219f4bf70f74569e452d3866.html",
+      "snippet": "Nov 11, 2019 · Excel中如何计算两个日期之间相差的月份,Excel是常用的数据处理软件，其中包含了功能强大、数量众多的函数，可以 …"
+    }
+  ]
+}

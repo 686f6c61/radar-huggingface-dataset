@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Sapolas0730/japanese-gpt2-medium-formal-lora",
+  "slug": "sapolas0730-japanese-gpt2-medium-formal-lora",
+  "author": "Sapolas0730",
+  "url": "https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-lora",
+  "created_at": "2026-09-05T01:54:33.000Z",
+  "updated_at": "2026-09-05T05:57:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gpt2",
+    "lora",
+    "instruction-tuning",
+    "japanese",
+    "text-generation",
+    "ja",
+    "arxiv:2406.08464",
+    "base_model:rinna/japanese-gpt2-medium",
+    "base_model:adapter:rinna/japanese-gpt2-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17338160,
+  "storage_human": "17 MB",
+  "base_model": "rinna/japanese-gpt2-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "法语的几个特殊的字母，列出来一下_百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "2011-09-26 法语的那些特殊字母怎么打？ 3 2013-07-18 法语13个特殊字母怎么读？ 4 2013-11-25 怎样打出法语的特殊字母啊 1 2018 …"
+    },
+    {
+      "title": "Sapolas0730/japanese-gpt2-medium-formal-lora · Hugging Face",
+      "url": "https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-lora",
+      "snippet": "Instructions to use Sapolas0730/japanese-gpt2-medium-formal-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Five Hundred Miles 歌词_百度知道",
+      "url": "https://zhidao.baidu.com/question/582169581.html",
+      "snippet": "整首歌所表达的是自己离开家乡，对于家乡的不舍和思念，而自己也要踏上行程，去往他乡奋斗。 Lord I＇m five hundred miles away …"
+    },
+    {
+      "title": "Sapolas0730/japanese-gpt2-medium-formal-fullft · Hugging Face",
+      "url": "https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-fullft",
+      "snippet": "既知の制約 ライセンス japanese-gpt2-medium-formal-fullft rinna/japanese-gpt2-medium（GPT-2アーキテクチャ、336M）を、カジュアルな日本語文をフォーマルな日本語文に変換する指示応答データでフルファインチューニングしたモデルです。"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "按照国家标准，当你是使用波浪线符号的正规用法——表示一个数字范围的时候，请用一字宽的「～」U+FF5E FULLWIDTH TILDE， …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "realrebelai/LLaDa-Image-Turbo_ComfyUI",
+  "slug": "realrebelai-llada-image-turbo_comfyui",
+  "author": "realrebelai",
+  "url": "https://huggingface.co/realrebelai/LLaDa-Image-Turbo_ComfyUI",
+  "created_at": "2026-09-04T10:15:50.000Z",
+  "updated_at": "2026-09-04T11:06:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "gguf",
+    "llada-image",
+    "llada-image-turbo",
+    "image-generation",
+    "image-editing",
+    "comfyui",
+    "int8",
+    "quantized",
+    "rebelai",
+    "text-to-image",
+    "base_model:inclusionAI/LLaDA-Image-Turbo",
+    "base_model:quantized:inclusionAI/LLaDA-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 938,
+  "trending_score": 0,
+  "parameters": 16322752256,
+  "parameters_human": "16.32B",
+  "storage_bytes": 29022861796,
+  "storage_human": "29.0 GB",
+  "base_model": "inclusionAI/LLaDA-Image-Turbo",
+  "formats": [
+    "diffusers",
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "realrebelai/LLaDa-Image-Turbo_ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/realrebelai/LLaDa-Image-Turbo_ComfyUI",
+      "snippet": "These files are derivatives of LLaDA-Image-Turbo. The upstream model's applicable license and usage terms continue to apply. The ComfyUI integration code is maintained separately in the GitHub repository linked above."
+    },
+    {
+      "title": "Login - Sign in to Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "realrebelai/LLaDa-Image_ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/realrebelai/LLaDa-Image_ComfyUI",
+      "snippet": "The upstream LLaDA-Image model and components remain subject to their original licenses and terms. Review the upstream license before redistribution or commercial use."
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://in.mail.yahoo.com/d",
+      "snippet": "Take a trip into an upgraded, more organised inbox. Sign in and start exploring all of the free organisational tools for your email. …"
+    }
+  ]
+}

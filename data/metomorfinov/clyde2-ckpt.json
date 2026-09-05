@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "metomorfinov/clyde2-ckpt",
+  "slug": "metomorfinov-clyde2-ckpt",
+  "author": "metomorfinov",
+  "url": "https://huggingface.co/metomorfinov/clyde2-ckpt",
+  "created_at": "2026-09-03T00:11:31.000Z",
+  "updated_at": "2026-09-05T07:00:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 371246080,
+  "parameters_human": "371.2M",
+  "storage_bytes": 70203842328,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install or Uninstall Microsoft WordPad in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/140422-install-uninstall-microsoft-wordpad-windows-10-a.html",
+      "snippet": "May 16, 2020 · Published by Shawn BrinkCategory: Apps & Features 16 May 2020 Designer Media Ltd How to Install or Uninstall …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "ckpt (ckpt) - Hugging Face",
+      "url": "https://huggingface.co/ckpt",
+      "snippet": "ckpt AI & ML interests ckpt Team members 3 models 271"
+    },
+    {
+      "title": "Wordpad [Résolu] - Forum Bureautique - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36085464-wordpad",
+      "snippet": "Jun 21, 2019 · Meilleure réponse: bonjour Je n'ai jamais essayé de faire ça sous wordpad mais qu'est ce qui aurait changé dans …"
+    }
+  ]
+}

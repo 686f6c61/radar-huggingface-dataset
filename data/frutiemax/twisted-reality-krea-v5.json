@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "frutiemax/twisted-reality-krea-v5",
+  "slug": "frutiemax-twisted-reality-krea-v5",
+  "author": "frutiemax",
+  "url": "https://huggingface.co/frutiemax/twisted-reality-krea-v5",
+  "created_at": "2026-08-10T00:01:08.000Z",
+  "updated_at": "2026-09-05T03:19:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2342347520,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "frutiemax/twisted-reality-krea-v5 · Hugging Face",
+      "url": "https://huggingface.co/frutiemax/twisted-reality-krea-v5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://mail.yahoo.com/d?.intl=ro&.lang=ro-RO",
+      "snippet": "Este timpul să duceți treaba la bun sfârșit cu Yahoo Mail. Pur și simplu adăugați Gmail, Outlook, AOL sau Yahoo Mail pentru a …"
+    },
+    {
+      "title": "frutiemax/twisted-reality-krea-v5 at main - Hugging Face",
+      "url": "https://huggingface.co/frutiemax/twisted-reality-krea-v5/tree/main",
+      "snippet": "How to use frutiemax/twisted-reality-krea-v5 with Transformers: ... Notebooks Google Colab Kaggle main twisted-reality-krea-v5 469 MB Ctrl+K Ctrl+K 1 contributor History:2 commits frutiemax Upload model dec6478 verified1 day ago .gitattributes Safe 1.52 kBinitial commit1 day ago README.md Safe 5.17 kBUpload model1 day ago adapter_config.json 1. ..."
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://br.mail.yahoo.com/d",
+      "snippet": "Aumento a sua produtividade com a ajuda do Yahoo Mail. Basta adicionar seu Gmail, Outlook, AOL ou Yahoo Mail para começar. …"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "luminenio/gnani-evon-v3.3-30B-A3B-GGUF",
+  "slug": "luminenio-gnani-evon-v3-3-30b-a3b-gguf",
+  "author": "luminenio",
+  "url": "https://huggingface.co/luminenio/gnani-evon-v3.3-30B-A3B-GGUF",
+  "created_at": "2026-09-04T14:35:38.000Z",
+  "updated_at": "2026-09-05T04:29:41.000Z",
+  "license": "nvidia-nemotron-open-model-license-with-apache-2.0-modifications",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "hi",
+    "bn",
+    "te",
+    "ta",
+    "mr",
+    "gu",
+    "kn",
+    "ml",
+    "pa",
+    "or"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "nemotron_h",
+    "mamba",
+    "moe",
+    "indic",
+    "long-context",
+    "reasoning",
+    "conversational",
+    "text-generation",
+    "en",
+    "hi",
+    "bn",
+    "te",
+    "ta",
+    "mr",
+    "gu",
+    "kn",
+    "ml",
+    "pa",
+    "or",
+    "base_model:gnani/gnani-evon-v3.3-30B-A3B",
+    "base_model:quantized:gnani/gnani-evon-v3.3-30B-A3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31749972288,
+  "parameters_human": "31.75B",
+  "storage_bytes": 259737456768,
+  "storage_human": "259.7 GB",
+  "base_model": "gnani/gnani-evon-v3.3-30B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "إثبات ملكية حسابك على YouTube - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/171664?hl=ar",
+      "snippet": "تحديد المشاكل في تشغيل الفيديوهات وحلّهاتحديد المشاكل في الحساب وحلّهاحلّ المشاكل في تحميل المحتوىالحصول على المساعدة بشأن \"برنامج شركاء YouTube\"الاطّلاع على آخر أخبار …"
+    },
+    {
+      "title": "luminenio/gnani-evon-v3.3-30B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/luminenio/gnani-evon-v3.3-30B-A3B-GGUF",
+      "snippet": "The source model is a 30B-parameter, Mamba2-Transformer hybrid mixture-of-experts model developed by Gnani.ai. It activates about 3.5B parameters per token and is intended for instruction following, reasoning, tool use, and chat in English and ten Indic languages."
+    },
+    {
+      "title": "الاشتراك في خطة عائلية في YouTube وإدارتها",
+      "url": "https://support.google.com/youtube/answer/7507349?hl=ar",
+      "snippet": "يمكنك الحصول على خطة عائلية لمشاركة اشتراك مدفوع في YouTube ، أو قنوات Primetime (في الولايات المتحدة وألمانيا وفرنسا وأستراليا والمملكة المتحدة فقط) مع ما يصل إلى 5 أفراد …"
+    },
+    {
+      "title": "gnani/gnani-evon-v3.3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/gnani/gnani-evon-v3.3-30B-A3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو - الموقع العربي الرائد لأخبار ...",
+      "url": "https://www.true-gaming.net/home/",
+      "snippet": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو الموقع العربي الرائد لأخبار ومراجعات ألعاب الفيديو. تابع أحدث التغطيات، التقارير، وتقييمات ألعاب بلايستيشن، إكسبوكس، ننتندو، والحاسب الشخصي."
+    }
+  ]
+}

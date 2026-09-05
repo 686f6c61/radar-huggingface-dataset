@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chomeed/dinov2-latent-wm-265d-threading-d0",
+  "slug": "chomeed-dinov2-latent-wm-265d-threading-d0",
+  "author": "chomeed",
+  "url": "https://huggingface.co/chomeed/dinov2-latent-wm-265d-threading-d0",
+  "created_at": "2026-09-05T09:44:04.000Z",
+  "updated_at": "2026-09-05T09:44:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-model",
+    "dinov2",
+    "latent-dynamics",
+    "mimicgen",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37612920,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sklepy budowlano-dekoracyjne Leroy Merlin - Zapraszamy",
+      "url": "https://www.leroymerlin.pl/?msockid=15e585b703df66103212927c02b767e8",
+      "snippet": "Leroy Merlin to materiały budowlane, wystrój wnętrz, ogród i wiele więcej. Zapraszamy do naszych sklepów budowlano …"
+    },
+    {
+      "title": "chomeed/dinov2-latent-wm-threading-d0 · Hugging Face",
+      "url": "https://huggingface.co/chomeed/dinov2-latent-wm-threading-d0",
+      "snippet": "Latent world model — DINOv2 → 56-d bottleneck → dynamics (MimicGen threading_d0) Built for RL, not for millimetres. A 2×128×28×28feature map is 37 GBat 100k replay capacity, forcing re-encoding per sample; a 56-d latent is 11 MBand the buffer holds it directly. Results All at latent 56, n=40,000, 25k steps. ratio= latent prediction MSE ÷ copy-the-current-latent MSE, so 1 − ratiois ..."
+    },
+    {
+      "title": "Produkty - Leroy Merlin",
+      "url": "https://www.leroymerlin.pl/produkty/?msockid=15e585b703df66103212927c02b767e8",
+      "snippet": "Produkty w niskiej cenie? Tak! Kupuj w Leroy Merlin i korzystaj z wygodnej dostawy: odbiór w sklepie, szybkomat, HDS, kurier. …"
+    },
+    {
+      "title": "DINOv2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/dinov2",
+      "snippet": "DINOv2is a vision foundation model that uses ViTas a feature extractor for multiple downstream tasks like image classification and depth estimation. It focuses on stabilizing and accelerating training through techniques like a faster memory-efficient attention, sequence packing, improved stochastic depth, Fully Sharded Data Parallel (FSDP), and ..."
+    },
+    {
+      "title": "Fundacja Leroy Merlin",
+      "url": "https://fundacja.leroymerlin.pl/",
+      "snippet": "Pracownicy Leroy Merlin wspierają Fundację Leroy Merlin końcówkami pensji W maju 2024 roku uruchomiliśmy program, dzięki …"
+    }
+  ]
+}

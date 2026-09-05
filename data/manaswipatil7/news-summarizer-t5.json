@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ManaswiPatil7/news-summarizer-t5",
+  "slug": "manaswipatil7-news-summarizer-t5",
+  "author": "ManaswiPatil7",
+  "url": "https://huggingface.co/ManaswiPatil7/news-summarizer-t5",
+  "created_at": "2026-09-05T09:09:46.000Z",
+  "updated_at": "2026-09-05T09:10:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891644712,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/Outlook",
+      "snippet": "2 days ago · How the signature looks in Outlook (and when being received in Outlook, tested with another Outlook email): How it gets …"
+    },
+    {
+      "title": "News Summarizer T5 Open-Source News Summarization Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915713701497430018",
+      "snippet": "🚀 news-summarizer-t5 This model is a fine - tuned text summarization model based on the T5 architecture, offering efficient and accurate news summarization capabilities."
+    },
+    {
+      "title": "Outlook | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/outlook/discussions/outlookgeneral",
+      "snippet": "1 day ago · Outlook-created Gmail events and meeting invitations are not transmitted to Google. The issue persists after removing …"
+    },
+    {
+      "title": "GitHub - yugandharkhair/news-summarizer: A modern web application that ...",
+      "url": "https://github.com/yugandharkhair/news-summarizer",
+      "snippet": "A modern web application that uses machine learning to automatically summarize news articles from various categories. The application fetches the latest news from NewsAPI and provides concise, AI-generated summaries using Google's T5 transformer model."
+    },
+    {
+      "title": "Outlook Login Issues? Expert Help for Authenticator App Fix",
+      "url": "https://www.justanswer.com/email/t9z3a-outlook-login-authenticator-app-failure.html?msockid=3d261840a7956f5e18230f8ba6cd6e74",
+      "snippet": "Troubleshooting Outlook Authenticator App Login Issues Authenticator app codes not generating and login failures due to sync or …"
+    }
+  ]
+}

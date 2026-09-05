@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "shamanic/minimax-h3-equi360-lora",
+  "slug": "shamanic-minimax-h3-equi360-lora",
+  "author": "shamanic",
+  "url": "https://huggingface.co/shamanic/minimax-h3-equi360-lora",
+  "created_at": "2026-09-04T12:01:18.000Z",
+  "updated_at": "2026-09-04T12:19:23.000Z",
+  "license": "minimax-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "text-to-video",
+    "video",
+    "audio",
+    "minimax",
+    "minimax-h3",
+    "hailuo",
+    "vr",
+    "360",
+    "equirectangular",
+    "panorama",
+    "fal",
+    "t2va",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167412686,
+  "storage_human": "167 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "A quick Minimax H3 news round-up - 4th September 2026 : r/comfyui",
+      "url": "https://www.reddit.com/r/comfyui/comments/1w74jy4/a_quick_minimax_h3_news_roundup_4th_september_2026/",
+      "snippet": "vor 20 Stunden ... -> A Minimax LoRA designed to add the \"authentic cinematic texture\" as found in traditional film cinematography. Reduce the strength to 0.5 for ..."
+    },
+    {
+      "title": "shamanic/minimax-h3-equi360-lora · Hugging Face",
+      "url": "https://huggingface.co/shamanic/minimax-h3-equi360-lora",
+      "snippet": "Instructions to use shamanic/minimax-h3-equi360-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "MiniMax H3 LoRA: Turbo, Training & ComfyUI Workflow",
+      "url": "https://loraai.me/guides/minimax-h3-lora",
+      "snippet": "Use hosted MiniMax H3 LoRA inference and understand Turbo, character, style, motion, experimental training, ComfyUI, datasets, and compatibility."
+    }
+  ]
+}

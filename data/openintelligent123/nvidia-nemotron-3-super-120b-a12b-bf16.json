@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "slug": "openintelligent123-nvidia-nemotron-3-super-120b-a12b-bf16",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "created_at": "2026-09-05T09:15:10.000Z",
+  "updated_at": "2026-09-05T09:15:10.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "it",
+    "de",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "pytorch",
+    "nemotron-3",
+    "latent-moe",
+    "mtp",
+    "conversational",
+    "custom_code",
+    "en",
+    "fr",
+    "es",
+    "it",
+    "de",
+    "ja",
+    "zh",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "arxiv:2512.20848",
+    "arxiv:2512.20856",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123611012096,
+  "parameters_human": "123.61B",
+  "storage_bytes": 247244727964,
+  "storage_human": "247.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Super",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/",
+      "snippet": "We are releasing NVIDIA Nemotron 3 Super, a 12B active 120B total parameter Mixture-of-Experts hybrid Mamba-Transformer model. Nemotron 3 Super is the first model in the Nemotron 3 series that leverages Latent MoE, includes MTP Layers, and was pre-trained in NVFP4."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "nemotron-3-super-120b-a12b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard",
+      "snippet": "NVIDIA Nemotron™ is a family of open models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents. Description Nemotron-3-Super-120B-A12B-BF16is a large language model (LLM) trained by NVIDIA, designed to deliver strong agentic, reasoning, and conversational capabilities."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

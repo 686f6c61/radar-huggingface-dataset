@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cheikh025/enemray-gemma4-e4b-grafted-gamma-0.7-0509",
+  "slug": "cheikh025-enemray-gemma4-e4b-grafted-gamma-0-7-0509",
+  "author": "cheikh025",
+  "url": "https://huggingface.co/cheikh025/enemray-gemma4-e4b-grafted-gamma-0.7-0509",
+  "created_at": "2026-09-05T08:21:15.000Z",
+  "updated_at": "2026-09-05T08:22:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156448,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024761606,
+  "storage_human": "16.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/",
+      "snippet": "Quora is a place to gain and share knowledge. It's a platform to ask questions and connect with people who contribute unique …"
+    },
+    {
+      "title": "gemma4:e4b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:e4b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/What-is-the-best-python-web-framework-to-learn-in-2023",
+      "snippet": "Size burada bir açıklama göstermek isterdik, ancak incelediğiniz site buna izin vermiyor."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Press - Quora",
+      "url": "https://www.quora.com/press",
+      "snippet": "Try again Please enable Javascript and refresh the page to continue"
+    }
+  ]
+}

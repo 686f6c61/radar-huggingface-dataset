@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Alex995647/loras-qwen-image",
+  "slug": "alex995647-loras-qwen-image",
+  "author": "Alex995647",
+  "url": "https://huggingface.co/Alex995647/loras-qwen-image",
+  "created_at": "2026-09-05T00:53:25.000Z",
+  "updated_at": "2026-09-05T03:58:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image",
+    "mirror",
+    "base_model:Qwen/Qwen-Image-2512",
+    "base_model:adapter:Qwen/Qwen-Image-2512",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77332013224,
+  "storage_human": "77.3 GB",
+  "base_model": "Qwen/Qwen-Image-2512",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tarn-et-Garonne — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tarn-et-Garonne",
+      "snippet": "Il est limitrophe des départements du Lot, de l' Aveyron, du Tarn, de la Haute-Garonne, du Gers et du Lot-et-Garonne. Malgré sa …"
+    },
+    {
+      "title": "Qwen-Image - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tarn-et-Garonne - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tarn-et-Garonne",
+      "snippet": "Tarn-et-Garonne constitutes part of the Occitanie region in Southern France. It borders on the departments of Lot to the north, …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image: Qwen-Image is a powerful image generation ...",
+      "url": "https://github.com/QwenLM/Qwen-Image",
+      "snippet": "🏆 Tested in 10,000+ blind rounds on AI Arena, Qwen-Image-2512 ranks as the strongest open-source image model, while staying competitive with closed-source systems."
+    },
+    {
+      "title": "Actualités Tarn-et-Garonne - ladepeche.fr",
+      "url": "https://www.ladepeche.fr/communes/tarn-et-garonne,82/",
+      "snippet": "1 day ago · Toute l'actu du Tarn-et-Garonne et de ses 195 communes. Le Tarn-et-Garonne est un département de la région …"
+    }
+  ]
+}

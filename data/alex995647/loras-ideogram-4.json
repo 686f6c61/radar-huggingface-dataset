@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Alex995647/loras-ideogram-4",
+  "slug": "alex995647-loras-ideogram-4",
+  "author": "Alex995647",
+  "url": "https://huggingface.co/Alex995647/loras-ideogram-4",
+  "created_at": "2026-09-05T01:47:21.000Z",
+  "updated_at": "2026-09-05T03:47:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image",
+    "mirror",
+    "base_model:ideogram-ai/ideogram-4-fp8",
+    "base_model:adapter:ideogram-ai/ideogram-4-fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10703930314,
+  "storage_human": "10.7 GB",
+  "base_model": "ideogram-ai/ideogram-4-fp8",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "kayte0342/ideogram4_panorama_lora · Hugging Face",
+      "url": "https://huggingface.co/kayte0342/ideogram4_panorama_lora",
+      "snippet": "kayte0342 ideogram4_panorama_lora like0 License:ideogram-4-non-commercial Model cardFilesFiles and versions xet Community"
+    },
+    {
+      "title": "تسجيل الدخول والخروج من YouTube - جهاز الكمبيوتر - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/3802431?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "عند تسجيل الدخول إلى YouTube، يمكنك استخدام ميزات مثل الاشتراكات وقوائم التشغيل وعمليات الشراء والسجلّ. ملاحظة: يجب أن يكون لديك حساب Google لتسجيل الدخول إلى YouTube."
+    },
+    {
+      "title": "DeverStyle/Ideogram-4.0-Loras · Hugging Face",
+      "url": "https://huggingface.co/DeverStyle/Ideogram-4.0-Loras",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو - الموقع العربي الرائد لأخبار ...",
+      "url": "https://www.true-gaming.net/home/",
+      "snippet": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو الموقع العربي الرائد لأخبار ومراجعات ألعاب الفيديو. تابع أحدث التغطيات، التقارير، وتقييمات ألعاب بلايستيشن، إكسبوكس، ننتندو، والحاسب الشخصي."
+    }
+  ]
+}

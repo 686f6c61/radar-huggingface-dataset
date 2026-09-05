@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KissTheHabit/IDA-TRAIN-V2-nemotron-4b-mxfp8",
+  "slug": "kissthehabit-ida-train-v2-nemotron-4b-mxfp8",
+  "author": "KissTheHabit",
+  "url": "https://huggingface.co/KissTheHabit/IDA-TRAIN-V2-nemotron-4b-mxfp8",
+  "created_at": "2026-09-04T18:19:38.000Z",
+  "updated_at": "2026-09-05T08:47:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mxfp8",
+    "nvfp4",
+    "nemotron",
+    "minitron",
+    "quantized",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29250824151,
+  "storage_human": "29.3 GB",
+  "base_model": "nvidia/Minitron-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WEB.DE Login - ganz einfach",
+      "url": "https://anmelden.web.de/",
+      "snippet": "WEB.DE Login: E-Mail-Adresse anmelden oder einloggen – kompakte Anleitung zum WEB.DE Login und schnelle Hilfe bei Login …"
+    },
+    {
+      "title": "KissTheHabit/IDA-TRAIN-V2-nemotron-4b-mxfp8 · Hugging Face",
+      "url": "https://huggingface.co/KissTheHabit/IDA-TRAIN-V2-nemotron-4b-mxfp8",
+      "snippet": "Each model.safetensorsin this repo carries that MXFP8 weight master straight through: attention and MLP projection weights (q/k/v/o_proj, up/down_proj) are stored as real F8_E4M3 payload + UE8M0 scale tensor pairs (__metadata__.weights_dtype == \"MXFP8_E4M3_UE8M0_K32\") in the samefile as the plain-BF16 embeddings/norms/biases — one checkpoint, not a separate quantized bundle alongside a full ..."
+    },
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/",
+      "snippet": "Sichere Kommunikation, aktuelle Nachrichten und nützliche Online-Services - alles an einem Ort. Einfach, kostenlos und zuverlässig."
+    },
+    {
+      "title": "KissTheHabit/IDA-TRAIN-V2-nemotron-4b-mxfp8 · Discussions",
+      "url": "https://huggingface.co/KissTheHabit/IDA-TRAIN-V2-nemotron-4b-mxfp8/discussions",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/consent-management/",
+      "snippet": "Bitte rufen Sie https://web.deerneut auf. Weiter zur Homepage"
+    }
+  ]
+}

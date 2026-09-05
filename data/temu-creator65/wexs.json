@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "temu-creator65/wexs",
+  "slug": "temu-creator65-wexs",
+  "author": "temu-creator65",
+  "url": "https://huggingface.co/temu-creator65/wexs",
+  "created_at": "2026-09-05T01:51:37.000Z",
+  "updated_at": "2026-09-05T01:51:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore the Latest Clothing, Beauty, Home, Jewelry & More - Temu",
+      "url": "https://www.temu.com/fr",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    },
+    {
+      "title": "temu-creator65/wexs · Hugging Face",
+      "url": "https://huggingface.co/temu-creator65/wexs",
+      "snippet": "wexs like0 License:apache-2.0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Temu France | Magasinez toutes les catégories - Retours gratuits sous ...",
+      "url": "https://www.temu.com/fr/c.html",
+      "snippet": "Magasinez toutes les catégories Temu. Découvrez de et à économiser ."
+    },
+    {
+      "title": "Temu | Explore the Latest Clothing, Beauty, Home, Jewelry & More",
+      "url": "https://www.temu.com/",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. Free returns within 90 days. Shop on Temu and start saving."
+    },
+    {
+      "title": "Temu : Achats et Mode en Ligne – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.einnovation.temu&hl=fr",
+      "snippet": "Quels que soient vos désirs, Temu a ce qu'il vous faut, mode, décoration intérieure, DIY, produits de beauté, vêtements, chaussures, …"
+    }
+  ]
+}

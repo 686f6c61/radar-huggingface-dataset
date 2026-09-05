@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MikeDegany/dqn-SpaceInvaders-v5",
+  "slug": "mikedegany-dqn-spaceinvaders-v5",
+  "author": "MikeDegany",
+  "url": "https://huggingface.co/MikeDegany/dqn-SpaceInvaders-v5",
+  "created_at": "2026-08-26T05:31:41.000Z",
+  "updated_at": "2026-09-05T02:10:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "ALE/SpaceInvaders-v5",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "SpaceInvadersNoFrameskip-v4",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109040600,
+  "storage_human": "109 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dumpster Rentals in Eastpointe - Waste Removal USA",
+      "url": "https://wasteremovalusa.com/locations/michigan/eastpointe/",
+      "snippet": "Aug 1, 2026 · We offer dumpster rentals for residential and commercial customers. Call today to rent a same-day or next-day …"
+    },
+    {
+      "title": "MikeDegany/dqn-SpaceInvaders-v5 · Hugging Face",
+      "url": "https://huggingface.co/MikeDegany/dqn-SpaceInvaders-v5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MikeDegany/dqn-SpaceInvaders-v5 at main - Hugging Face",
+      "url": "https://huggingface.co/MikeDegany/dqn-SpaceInvaders-v5/tree/main",
+      "snippet": "Instructions to use MikeDegany/dqn-SpaceInvaders-v5 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries stable-baselines3 How to use MikeDegany/dqn-SpaceInvaders-v5 with stable-baselines3:"
+    },
+    {
+      "title": "Space Invaders - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/atari/space_invaders/",
+      "snippet": "A standard API for reinforcement learning and a diverse set of reference environments (formerly Gym)"
+    },
+    {
+      "title": "space_invaders - billy-enrizky.github.io",
+      "url": "https://billy-enrizky.github.io/DeepRL-SpaceInvaders/",
+      "snippet": "Out [15]: ['ALE/Adventure-v5', 'ALE/Adventure-ram-v5', 'ALE/AirRaid-v5', 'ALE/AirRaid-ram-v5', 'ALE/Alien-v5', 'ALE/Alien-ram-v5', 'ALE/Amidar-v5', 'ALE/Amidar-ram-v5 ..."
+    }
+  ]
+}

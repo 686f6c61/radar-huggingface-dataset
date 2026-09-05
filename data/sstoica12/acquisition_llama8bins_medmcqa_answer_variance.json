@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_llama8bins_medmcqa_answer_variance",
+  "slug": "sstoica12-acquisition_llama8bins_medmcqa_answer_variance",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_llama8bins_medmcqa_answer_variance",
+  "created_at": "2026-09-05T02:10:00.000Z",
+  "updated_at": "2026-09-05T02:12:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "acquisition_student_base_llama8bins_medmcqa - Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_base_llama8bins_medmcqa",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "sstoica12/acquisition_student_base_llama8bins_medmcqa at main",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_base_llama8bins_medmcqa/tree/main",
+      "snippet": "Instructions to use sstoica12/acquisition_student_base_llama8bins_medmcqa with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Man won $900,000 from the state of California after being psychologically tortured by police during a 17-hour interrogation which lead …"
+    }
+  ]
+}

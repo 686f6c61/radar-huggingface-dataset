@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "joincrksilverb/Nemotron-Mini-4B-Instruct",
+  "slug": "joincrksilverb-nemotron-mini-4b-instruct",
+  "author": "joincrksilverb",
+  "url": "https://huggingface.co/joincrksilverb/Nemotron-Mini-4B-Instruct",
+  "created_at": "2026-09-05T02:19:49.000Z",
+  "updated_at": "2026-09-05T02:19:49.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "nemo",
+    "nemotron",
+    "text-generation",
+    "nvidia",
+    "llama-3",
+    "conversational",
+    "en",
+    "arxiv:2402.16819",
+    "arxiv:2407.14679",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16790306413,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "joincrksilverb/Nemotron-Mini-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/joincrksilverb/Nemotron-Mini-4B-Instruct",
+      "snippet": "The Nemotron-Mini-4B-Instruct model underwent AI safety evaluation including adversarial testing via three distinct methods: Garak, is an automated LLM vulnerability scanner that probes for common weaknesses, including prompt injection and data leakage."
+    },
+    {
+      "title": "About YouTube - YouTube",
+      "url": "https://about.youtube/",
+      "snippet": "YouTube's mission is to give everyone a voice and show them the world. Learn about our brand, community, careers and more."
+    },
+    {
+      "title": "nvidia/Nemotron-Mini-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love) YouTube 1.5M 2mo ago CC"
+    }
+  ]
+}

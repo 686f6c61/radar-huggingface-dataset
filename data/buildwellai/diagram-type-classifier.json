@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Buildwellai/diagram-type-classifier",
+  "slug": "buildwellai-diagram-type-classifier",
+  "author": "Buildwellai",
+  "url": "https://huggingface.co/Buildwellai/diagram-type-classifier",
+  "created_at": "2026-09-05T09:45:48.000Z",
+  "updated_at": "2026-09-05T09:46:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "image-classification",
+    "dinov3",
+    "construction",
+    "building-regulations",
+    "comfyui",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1212755272,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buildwell THREAD - BuildwellAI",
+      "url": "https://thread.buildwellai.com/",
+      "snippet": "Golden Thread Compliance Through AI Document Sorting Your team uploads project documents, and AI instantly suggests classifications by type, trade, and stage of the building lifecycle."
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "制限付きモードは、YouTube で使用できるオプション設定です。この機能は、ご自身が視聴したくない、またはデバイスを使用す …"
+    },
+    {
+      "title": "BuildwellAI Help Center",
+      "url": "https://help.buildwellai.com/",
+      "snippet": "AI-powered compliance Q&A for UK building regulations. Ask questions, analyse documents, and generate reports."
+    },
+    {
+      "title": "Can’t access YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=en",
+      "snippet": "Make sure you can still access other websites normally. If you're on a Google Apps domain, the administrator of your domain may not …"
+    },
+    {
+      "title": "BuildwellAI - AI-Powered Solutions for UK Construction",
+      "url": "https://www.buildwellai.com/",
+      "snippet": "Transform your construction projects with AI-powered compliance, safety, and digital tools for the modern building industry."
+    }
+  ]
+}

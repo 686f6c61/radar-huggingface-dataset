@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OmakaseAI/act_d1_gripper_joint_pickupkettle_trim2_10k",
+  "slug": "omakaseai-act_d1_gripper_joint_pickupkettle_trim2_10k",
+  "author": "OmakaseAI",
+  "url": "https://huggingface.co/OmakaseAI/act_d1_gripper_joint_pickupkettle_trim2_10k",
+  "created_at": "2026-09-05T01:17:51.000Z",
+  "updated_at": "2026-09-05T01:18:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:OmakaseAI/d1_gripper_joint_pickupkettle_trim2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 73989648,
+  "parameters_human": "74.0M",
+  "storage_bytes": 296015800,
+  "storage_human": "296 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Establecer Chrome como navegador predeterminado - Ordenador",
+      "url": "https://support.google.com/chrome/answer/95417?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Selecciona Google Chrome. En la parte superior, junto a \"Convertir a Google Chrome en el explorador predeterminado\", selecciona …"
+    },
+    {
+      "title": "OmakaseAI/act_d1_gripper_joint_pickupkettle_trim2_10k · Hugging Face",
+      "url": "https://huggingface.co/OmakaseAI/act_d1_gripper_joint_pickupkettle_trim2_10k",
+      "snippet": "Instructions to use OmakaseAI/act_d1_gripper_joint_pickupkettle_trim2_10k with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Chrome 다운로드 및 설치 - 컴퓨터 - Google Chrome 고객센터",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ko-kr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome 설치 방법 중요:Chrome을 다운로드하기 전에 현재 사용 중인 운영체제에서 Chrome이 지원되는지 및 다른 모든 필수 시스템 …"
+    },
+    {
+      "title": "OmakaseAI (Omakase.ai) - Hugging Face",
+      "url": "https://huggingface.co/OmakaseAI",
+      "snippet": "Org profile for Omakase.ai on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    }
+  ]
+}

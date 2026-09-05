@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SAIFIINDUSTRIES/Qwen2.5-7B-Instruct-1M",
+  "slug": "saifiindustries-qwen2-5-7b-instruct-1m",
+  "author": "SAIFIINDUSTRIES",
+  "url": "https://huggingface.co/SAIFIINDUSTRIES/Qwen2.5-7B-Instruct-1M",
+  "created_at": "2026-09-05T09:12:07.000Z",
+  "updated_at": "2026-09-05T09:12:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2501.15383",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271888,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adidas बनाम Nike: कौन सा ब्रांड पूरे दिन पहनने के लिए आरामदायक स्नीकर्स ...",
+      "url": "https://www.herzindagi.com/your-picks/hindi/style-vault/adidas-vs-nike-which-brand-provides-comfortable-sneakers-for-all-day-wear-16138",
+      "snippet": "Aug 10, 2026 · Adidas या Nike: पूरे दिन पहनने के लिए सबसे आरामदायक Sneakers कौन से हैं? जानें यहां"
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct-1M · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "साल 2026 के सबसे आरामदायक Sneakers जो पुरूष पूरे दिन पहन सकें",
+      "url": "https://www.jagran.com/smart-choice/style-vault/5-most-comfortable-sneakers-of-2026-for-men-worth-wearing-every-day-4673",
+      "snippet": "Jan 17, 2026 · साल 2026 के सबसे आरामदायक Mens Sneakers में बढ़िया कुशनिंग, हल्का वजन और बेहतर फिट मिलता है जिसके साथ …"
+    },
+    {
+      "title": "qwen2.5-7b-instruct-1m — Qwen — modelpedia",
+      "url": "https://modelpedia.dev/qwen/qwen2.5-7b-instruct-1m",
+      "snippet": "Qwen2.5 is part of the Qwen Large Language Model (LLM) series. We released a series of base language models and instruction-tuned language models with parameter scales ranging from 7 billion to 72 billion. Qwen2.5 improves upon Qwen2 in the following ways: * Pre-trained on our latest large-scale dataset containing up to 18 trillion tokens. * Significantly expanded knowledge and greatly ..."
+    },
+    {
+      "title": "LOUIS STITCH पुरुषों के लिए Ferrari लाल स्नीकर्स | कुशन सोल और …",
+      "url": "https://www.amazon.in/-/hi/LOUIS-STITCH-%E0%A4%B8%E0%A5%8D%E0%A4%A8%E0%A5%80%E0%A4%95%E0%A4%B0%E0%A5%8D%E0%A4%B8-%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A4%BE%E0%A4%87%E0%A4%B2%E0%A4%BF%E0%A4%B6-%E0%A4%86%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%A6%E0%A4%BE%E0%A4%AF%E0%A4%95/dp/B0F9FB5XZP",
+      "snippet": "TPR Outsole, मोल्डेड इनसोल पैडेड कॉलर जो सभी दिन आराम के लिए लंबे समय तक चलने वाले, अल्ट्रा आरामदायक और स्टाइलिश …"
+    }
+  ]
+}

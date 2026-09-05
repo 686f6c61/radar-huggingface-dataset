@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "edwarddgao/glyph-models",
+  "slug": "edwarddgao-glyph-models",
+  "author": "edwarddgao",
+  "url": "https://huggingface.co/edwarddgao/glyph-models",
+  "created_at": "2026-09-05T08:41:06.000Z",
+  "updated_at": "2026-09-05T08:41:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "swipe-typing",
+    "gesture-typing",
+    "keyboard",
+    "ios",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190629863,
+  "storage_human": "191 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mobile.de Händler Login",
+      "url": "https://www.mobile.de/lp/mobile-de-haendler-login/?msockid=21ed5ddee24b64f703974a15e313655e",
+      "snippet": "Hier geht es zum Händler Login von mobile.de Jetzt in das Händler-Center einloggen Eigene Inserate & Daten verwalten"
+    },
+    {
+      "title": "GitHub - glyphh-ai/models: Glyphh open source model catalog",
+      "url": "https://github.com/glyphh-ai/models",
+      "snippet": "Glyphh open source model catalog. Contribute to glyphh-ai/models development by creating an account on GitHub."
+    },
+    {
+      "title": "Mobile.de Dealer Login",
+      "url": "https://handel.mobile.de/bestand/",
+      "snippet": "Are you a mobile.de dealer? Login here with your login credentials: User Name / E-mail Address. If you are the administrator of this …"
+    },
+    {
+      "title": "edwarddgao (Edward Gao) - Hugging Face",
+      "url": "https://huggingface.co/edwarddgao",
+      "snippet": "User profile of Edward Gao on Hugging Face"
+    },
+    {
+      "title": "Mobile.de Händler-Login",
+      "url": "https://handel.mobile.de/bestand/?lang=de",
+      "snippet": "Sie sind mobile.de Händler? Melden Sie sich hier mit Ihren Zugangsdaten an: Noch kein mobile.de Händler?"
+    }
+  ]
+}

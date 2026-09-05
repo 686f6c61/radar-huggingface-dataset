@@ -5,7 +5,7 @@
   "author": "AquilaX-AI",
   "url": "https://huggingface.co/AquilaX-AI/Review",
   "created_at": "2025-02-03T10:27:08.000Z",
-  "updated_at": "2026-09-01T15:35:37.000Z",
+  "updated_at": "2026-09-05T06:43:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 29424529304,
-  "storage_human": "29.4 GB",
+  "storage_bytes": 29692361864,
+  "storage_human": "29.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

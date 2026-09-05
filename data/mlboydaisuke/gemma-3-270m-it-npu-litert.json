@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/gemma-3-270m-it-NPU-LiteRT",
   "created_at": "2026-08-24T02:23:03.000Z",
-  "updated_at": "2026-08-24T02:25:13.000Z",
+  "updated_at": "2026-09-04T15:27:17.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -21,7 +21,7 @@
     "gemma3",
     "text-generation",
     "base_model:google/gemma-3-270m-it",
-    "base_model:finetune:google/gemma-3-270m-it",
+    "base_model:quantized:google/gemma-3-270m-it",
     "license:gemma",
     "region:us"
   ],

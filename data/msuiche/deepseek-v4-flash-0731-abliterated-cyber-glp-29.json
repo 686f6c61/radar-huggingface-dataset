@@ -5,7 +5,7 @@
   "author": "msuiche",
   "url": "https://huggingface.co/msuiche/DeepSeek-V4-Flash-0731-abliterated-cyber-GLP-29",
   "created_at": "2026-08-13T17:32:53.000Z",
-  "updated_at": "2026-08-22T15:41:07.000Z",
+  "updated_at": "2026-09-04T18:26:41.000Z",
   "license": "deepseek",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -33,13 +33,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 3,
-  "downloads_30d": 29,
+  "likes": 4,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 118784,
   "parameters_human": "118784",
-  "storage_bytes": 1437152,
-  "storage_human": "1 MB",
+  "storage_bytes": 2394656,
+  "storage_human": "2 MB",
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"

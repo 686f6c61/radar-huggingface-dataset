@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/LFM2.5-VL-450M-CoreAI",
   "created_at": "2026-08-14T04:05:33.000Z",
-  "updated_at": "2026-08-15T05:14:08.000Z",
+  "updated_at": "2026-09-05T04:19:07.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -22,7 +22,7 @@
     "siglip2",
     "image-text-to-text",
     "base_model:LiquidAI/LFM2.5-VL-450M",
-    "base_model:finetune:LiquidAI/LFM2.5-VL-450M",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-450M",
     "license:other",
     "region:us"
   ],

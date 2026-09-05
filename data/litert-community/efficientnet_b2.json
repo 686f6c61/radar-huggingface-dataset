@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "litert-community/efficientnet_b2",
+  "slug": "litert-community-efficientnet_b2",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/efficientnet_b2",
+  "created_at": "2026-02-08T02:58:53.000Z",
+  "updated_at": "2026-09-05T01:55:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "vision",
+    "image-classification",
+    "google",
+    "computer-vision",
+    "dataset:imagenet-1k",
+    "arxiv:1905.11946",
+    "base_model:google/efficientnet-b2",
+    "base_model:quantized:google/efficientnet-b2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 134,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80249656,
+  "storage_human": "80 MB",
+  "base_model": "google/efficientnet-b2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "ImageNet-1k",
+      "metric": "Top 1 Accuracy (Full Precision)",
+      "value": 0.8061
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "ImageNet-1k",
+      "metric": "Top 5 Accuracy (Full Precision)",
+      "value": 0.953
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT continues the legacy of TensorFlow Lite as the trusted, high-performance runtime for on-device AI. Featuring advanced …"
+    },
+    {
+      "title": "litert-community/efficientnet_b2 · Hugging Face",
+      "url": "https://huggingface.co/litert-community/efficientnet_b2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiteRT: High-Performance On-Device Machine Learning Framework",
+      "url": "https://developers.google.com/edge/litert",
+      "snippet": "Jul 17, 2026 · LiteRT isn't just new; it's the next generation of the world's most widely deployed machine learning runtime. It powers …"
+    },
+    {
+      "title": "litert-community/efficientnet_b2 at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/efficientnet_b2/tree/main",
+      "snippet": "LiteRT Community (FKA TFLite) 5.14k Image Classification LiteRT LiteRT imagenet-1k vision google computer-vision Eval Results (legacy) arxiv:1905.11946 Model card FilesFiles and versions xet Community 1 Use this model main efficientnet_b2 46.9 MB Ctrl+K Ctrl+K 2 contributors History:6 commits snnn001 akashvverma1995 Updated the README.md (#1 ..."
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "Updated 7 days ago • 1.06M • 396 Updated 8 days ago • 376k • 188 Sentence Similarity • Updated Jun 2 • 1.82k • 71 LiteRT models …"
+    }
+  ]
+}

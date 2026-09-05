@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "DevJeongDaeRi/Qwen3-4B-Korean-Slang-2026-LoRA",
+  "slug": "devjeongdaeri-qwen3-4b-korean-slang-2026-lora",
+  "author": "DevJeongDaeRi",
+  "url": "https://huggingface.co/DevJeongDaeRi/Qwen3-4B-Korean-Slang-2026-LoRA",
+  "created_at": "2026-09-05T01:53:41.000Z",
+  "updated_at": "2026-09-05T01:54:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "qlora",
+    "qwen3",
+    "korean",
+    "slang",
+    "ko",
+    "base_model:mlx-community/Qwen3-4B-Instruct-2507-4bit",
+    "base_model:adapter:mlx-community/Qwen3-4B-Instruct-2507-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29384266,
+  "storage_human": "29 MB",
+  "base_model": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "DevJeongDaeRi/Qwen3-4B-Korean-Slang-2026-LoRA · Hugging Face",
+      "url": "https://huggingface.co/DevJeongDaeRi/Qwen3-4B-Korean-Slang-2026-LoRA",
+      "snippet": "Instructions to use DevJeongDaeRi/Qwen3-4B-Korean-Slang-2026-LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "The future of building happens together Tools and trends evolve, but collaboration endures. With GitHub, developers, agents, and …"
+    },
+    {
+      "title": "DevJeongDaeRi/Qwen3-4B-Korean-Slang-2026-LoRA · Discussions",
+      "url": "https://huggingface.co/DevJeongDaeRi/Qwen3-4B-Korean-Slang-2026-LoRA/discussions",
+      "snippet": "Instructions to use DevJeongDaeRi/Qwen3-4B-Korean-Slang-2026-LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

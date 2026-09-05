@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Odog16/pi05-lora-ob15-keys",
+  "slug": "odog16-pi05-lora-ob15-keys",
+  "author": "Odog16",
+  "url": "https://huggingface.co/Odog16/pi05-lora-ob15-keys",
+  "created_at": "2026-09-05T02:13:59.000Z",
+  "updated_at": "2026-09-05T02:14:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:Odog16/keys_into_bowl_ob15_depth_rgb",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5172336,
+  "storage_human": "5 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "π₀.₅ (Pi05) Policy · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/pi05",
+      "snippet": "lerobot-train \\ --dataset.repo_id=lerobot/libero \\ --policy.type=pi05 \\ --policy.pretrained_path=lerobot/pi05_libero_base \\ --policy.normalization_mapping='{\"ACTION\": \"MEAN_STD\", \"STATE\": \"MEAN_STD\", \"VISUAL\": \"IDENTITY\"}' \\ --policy.n_action_steps=10 \\ --policy.empty_cameras=1 \\ --policy.freeze_vision_encoder=false \\ --policy.train_expert_only=false \\ --policy.gradient_checkpointing=true \\ --policy.dtype=bfloat16 \\ --policy.device=cuda \\ --policy.push_to_hub=false \\ --output_dir=./outputs/pi05_libero \\ --job_name=pi05_libero \\ --batch_size=64 \\ --num_workers=8 \\ --steps=30000 \\ --save_freq=5000 \\ --seed=1000"
+    },
+    {
+      "title": "Colibrì: curiosità, caratteristiche e particolarità dell’uccello più ...",
+      "url": "https://www.ecoo.it/articolo/colibri-curiosita-caratteristiche-e-particolarita-delluccello-piu-piccolo-al-mondo/128246/",
+      "snippet": "Jul 28, 2023 · Questo piccolo uccello ha una connotazione fisica facilmente distinguibile. Oltre alle sue dimensioni, può essere …"
+    },
+    {
+      "title": "Odog16/pi05-lora-ob15-keys · Hugging Face",
+      "url": "https://huggingface.co/Odog16/pi05-lora-ob15-keys",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use Odog16/pi05-lora-ob15-keys with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Odog16/pi05-lora-ob15-keys with LeRobot:"
+    },
+    {
+      "title": "question about lora fine-tuning for pi0.5 · Issue #672 · Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi/issues/672",
+      "snippet": "odel=pi0_fast.Pi0FASTConfig( action_dim=7, action_horizon=10, max_token_len=180, paligemma_variant=\"gemma_2b_lora\" ), data=LeRobotLiberoDataConfig( repo_id=\"physical-intelligence/libero\", base_config=DataConfig(prompt_from_task=True), extra_delta_transform=True, ), weight_loader=weight_loaders.CheckpointWeightLoader(\"gs://openpi-assets/checkpoints/pi05_base/params\"), num_train_steps=30_000, # Again, make sure to match the model config above when extracting the freeze filter # that specifies which parameters should be frozen during LoRA finetuning."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi · GitHub",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "[Sept 2025] We released pi05, an upgraded version of pi0 with better open-world generalization."
+    }
+  ]
+}

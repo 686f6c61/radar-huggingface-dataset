@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "saidutta69/Qwen3.5-9B-heretic",
+  "slug": "saidutta69-qwen3-5-9b-heretic",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/Qwen3.5-9B-heretic",
+  "created_at": "2026-07-21T09:27:32.000Z",
+  "updated_at": "2026-09-05T10:01:33.000Z",
+  "license": "qwen-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "text-generation-inference",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2421,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 65764237921,
+  "storage_human": "65.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[百炼英雄攻略]风云再起-关羽活动（1-7层）_哔哩哔哩bilibili",
+      "url": "https://www.bilibili.com/video/BV18FxmezEPP/",
+      "snippet": "Sep 29, 2024 · 已有35名玩家向您推荐本视频，点击前往哔哩哔哩bilibili一起观看；更多实用攻略教学，爆笑沙雕集锦，你所不知道的 …"
+    },
+    {
+      "title": "saidutta69/Qwen3.5-9B-heretic · Hugging Face",
+      "url": "https://huggingface.co/saidutta69/Qwen3.5-9B-heretic",
+      "snippet": "saidutta69 / Qwen3.5-9B-heretic like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 heretic uncensored decensored abliterated reproducible conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "[百炼英雄攻略]风云再起-关羽活动（1-7层）",
+      "url": "https://www.bilibili.com/list/57760735?oid=113222048876459&bvid=BV18FxmezEPP",
+      "snippet": "Sep 29, 2024 · 海螺里的风创建的收藏夹海螺里的风内容： [百炼英雄攻略]风云再起-关羽活动（1-7层），如果您对当前收藏夹内容感 …"
+    },
+    {
+      "title": "saidutta69/Qwen3-8B-heretic · Hugging Face",
+      "url": "https://huggingface.co/saidutta69/Qwen3-8B-heretic",
+      "snippet": "It inherits Qwen/Qwen3-8B's factual limitations and biases; abliteration removes refusal directions, it doesn't add capability or judgment. License Inherits the Apache 2.0 license from the base model. Related Qwen3-0.6B-heretic RACER IS OP — Heretic Models — full collection Qwen2.5-7B-Instruct-heretic"
+    },
+    {
+      "title": "百炼英雄关羽获取攻略大揭秘 - 抖音",
+      "url": "https://www.douyin.com/search/%E7%99%BE%E7%82%BC%E8%8B%B1%E9%9B%84%E5%85%B3%E7%BE%BD%E8%8E%B7%E5%8F%96%E6%94%BB%E7%95%A5%E5%A4%A7%E6%8F%AD%E7%A7%98",
+      "snippet": "01:06 选择一键开启后，将获得本次奖池内的所有奖励。 00:05 二是参与山海翻牌，第20轮开始出关羽，翻牌的卷轴在大地图采集。 …"
+    }
+  ]
+}

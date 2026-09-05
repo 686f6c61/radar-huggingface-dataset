@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Akariieieie/fine_tuned_dialectgov12",
+  "slug": "akariieieie-fine_tuned_dialectgov12",
+  "author": "Akariieieie",
+  "url": "https://huggingface.co/Akariieieie/fine_tuned_dialectgov12",
+  "created_at": "2026-09-05T01:22:28.000Z",
+  "updated_at": "2026-09-05T01:23:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 2492595048,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Archief Voorraad - Top Auto's",
+      "url": "https://www.top-autos.nl/voorraad/",
+      "snippet": "Galerij Contact Voorraad De Fabrieksgarantie op onze auto’s is geldig bij de merk dealer in uw eigen woonplaats. Filter Voorraad …"
+    },
+    {
+      "title": "Akariieieie/fine_tuned_dialectgov12 · Hugging Face",
+      "url": "https://huggingface.co/Akariieieie/fine_tuned_dialectgov12",
+      "snippet": "Instructions to use Akariieieie/fine_tuned_dialectgov12 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Home - Top Auto's",
+      "url": "https://www.top-autos.nl/",
+      "snippet": "Betrouwbare occasions kopen in Wijchen? Top Auto’s biedt betaalbare tweedehands auto’s met garantie en uitstekende service."
+    },
+    {
+      "title": "Akariieieie/fine_tuned_dialectgov10 · Hugging Face",
+      "url": "https://huggingface.co/Akariieieie/fine_tuned_dialectgov10",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Topauto’s Wijchen is het grootste autobedrijf in Wijchen. - Top Auto's",
+      "url": "https://www.top-autos.nl/top-autos-grootste-autobedrijf-in-wijchen/",
+      "snippet": "Top Auto’s is uw autodealer in wijchen. Ons bedrijf zit al 25 jaar gevestigd op de Zesweg in Wijchen. Wij hebben meerdere filialen in …"
+    }
+  ]
+}

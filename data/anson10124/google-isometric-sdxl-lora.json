@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Anson10124/google-isometric-sdxl-lora",
+  "slug": "anson10124-google-isometric-sdxl-lora",
+  "author": "Anson10124",
+  "url": "https://huggingface.co/Anson10124/google-isometric-sdxl-lora",
+  "created_at": "2026-09-05T01:10:50.000Z",
+  "updated_at": "2026-09-05T01:10:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "lora",
+    "diffusers-training",
+    "sdxl",
+    "stable-diffusion-xl",
+    "vector",
+    "isometric",
+    "illustration",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 373884033,
+  "storage_human": "374 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulier | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "République française RechercherMenu impots.gouv.fr Connexion à mon espace Finances publiques Connexion à l’espace …"
+    },
+    {
+      "title": "[Lah] Isometric | SDXL - v1 SDXL - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/626928636936803289",
+      "snippet": "[Lah] Isometric style | SDXL Recomend: Weight: 0.4-0.8 Trigger words: Isometric, isometric building Example prompt: isometric, bird, isometric building, scenery, stairs, tree, water Please kindly rate my model with 5 stars and leave the images you've created with it. I would greatly appreciate that and it would bring me much happiness."
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "Awesome SDXL LoRAs - a multimodalart Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/multimodalart/awesome-sdxl-loras",
+      "snippet": "A curated set of amazing Stable Diffusion XL LoRAs (they power the LoRA the Explorer Space)"
+    },
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Suite aux incendies survenus sur le territoire durant l'été, différentes mesures d'accompagnement ont été mises en place pour les …"
+    }
+  ]
+}

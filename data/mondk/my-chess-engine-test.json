@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mondk/my-chess-engine-test",
+  "slug": "mondk-my-chess-engine-test",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/my-chess-engine-test",
+  "created_at": "2026-09-05T09:04:10.000Z",
+  "updated_at": "2026-09-05T09:31:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "vi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34967492,
+  "storage_human": "35 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kingdom Hearts - Reddit",
+      "url": "https://www.reddit.com/r/KingdomHearts/",
+      "snippet": "Have a question about some plot point within the series? Want to pick the brains of the lore experts of the series? Feel the need to …"
+    },
+    {
+      "title": "GitHub - roshankumar0036singh/Chess-ML-Bot: A sophisticated AI chess ...",
+      "url": "https://github.com/roshankumar0036singh/chess-ml-bot",
+      "snippet": "A sophisticated AI chess engine powered by deep learning and Monte Carlo Tree Search (MCTS). Features a responsive GUI, opening books, endgame tablebases, and AlphaZero-style self-play training."
+    },
+    {
+      "title": "Ideal MCU Viewing Order (all properties - updated) - Reddit",
+      "url": "https://www.reddit.com/r/marvelstudios/comments/14lccgy/ideal_mcu_viewing_order_all_properties_updated/",
+      "snippet": "Greetings again, friends. Not long ago I embarked on a project to teach myself video-editing by planning on editing together the MCU …"
+    },
+    {
+      "title": "python-chess-engine.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/iAmEthanMai/chess-engine-model/blob/main/python_chess_engine.ipynb",
+      "snippet": "Cloning into 'chess-engine-model'... remote: Enumerating objects: 54, done. remote: Counting objects: 100% (54/54), done. remote: Compressing objects: 100% (46/46), done. remote: Total 54 (delta 22), reused 22 (delta 6), pack-reused 0 Unpacking objects: 100% (54/54), done."
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/creator",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    }
+  ]
+}

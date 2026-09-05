@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "deep101godhani/nord",
+  "slug": "deep101godhani-nord",
+  "author": "deep101godhani",
+  "url": "https://huggingface.co/deep101godhani/nord",
+  "created_at": "2026-09-05T08:33:57.000Z",
+  "updated_at": "2026-09-05T08:33:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "YouTube帮助",
+      "url": "https://support.google.com/youtube/?hl=zh-Hans",
+      "snippet": "您可以在 YouTube 官方帮助中心找到各种提示和辅导手册，从中了解如何使用本产品以及其他常见问题的答案。"
+    },
+    {
+      "title": "NoRD: A Data-Efficient Vision-Language-Action Model that Drives without ...",
+      "url": "https://nord-vla-ai.github.io/",
+      "snippet": "Model Architecture NORD operates directly on raw sensor data and kinematic states to directly predict future trajectories, without intermediate language reasoning traces. The inputs include multi-view RGB images (front, front-left, front-right), past trajectory tokens, current speed, and acceleration."
+    },
+    {
+      "title": "Verificar la cuenta de YouTube - Ayuda de YouTube",
+      "url": "https://support.google.com/youtube/answer/171664?hl=es",
+      "snippet": "Deberás introducir un número de teléfono para verificar tu canal. Recibirás un código de verificación a través de un SMS o una …"
+    }
+  ]
+}

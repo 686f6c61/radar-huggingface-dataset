@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "PeachesAvicii/Series-of-Shots",
+  "slug": "peachesavicii-series-of-shots",
+  "author": "PeachesAvicii",
+  "url": "https://huggingface.co/PeachesAvicii/Series-of-Shots",
+  "created_at": "2026-09-05T01:18:44.000Z",
+  "updated_at": "2026-09-05T01:36:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Wan-AI/Wan2.2-TI2V-5B",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1227183998,
+  "storage_human": "1.2 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "30 Easy Spinach Recipes That Use Up the Rest of the Bag",
+      "url": "https://www.tasteofhome.com/collection/superfood-spinach-recipes/",
+      "snippet": "Aug 21, 2025 · From breakfast to lunch, dinner and even a few appetizers for a potluck, these spinach recipes will help you …"
+    },
+    {
+      "title": "PeachesAvicii/Series-of-Shots · Hugging Face",
+      "url": "https://huggingface.co/PeachesAvicii/Series-of-Shots",
+      "snippet": "PeachesAvicii Series-of-Shots like0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "30 Best Spinach Recipes - What to Make With Spinach",
+      "url": "https://www.thepioneerwoman.com/food-cooking/meals-menus/g43164775/spinach-recipes/",
+      "snippet": "Feb 2, 2024 · Just check out our tasty spinach recipes and you'll find tons of inspiration that's family-approved like the chicken …"
+    },
+    {
+      "title": "PeachesAvicii (Peaches Avicii) - Hugging Face",
+      "url": "https://huggingface.co/PeachesAvicii",
+      "snippet": "Recent Activity updated a modelabout 5 hours ago PeachesAvicii/Slap-Wan published a modelabout 5 hours ago PeachesAvicii/Slap-Wan View all activity"
+    },
+    {
+      "title": "67 Best Spinach Recipes – What To Make With Spinach - Delish",
+      "url": "https://www.delish.com/cooking/g63448241/spinach-recipes/",
+      "snippet": "Jan 17, 2025 · These recipes will change your view on spinach forever. We’ve got everything from vibrant soups to creamy chicken …"
+    }
+  ]
+}

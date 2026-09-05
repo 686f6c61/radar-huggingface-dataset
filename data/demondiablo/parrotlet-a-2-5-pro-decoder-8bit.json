@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Demondiablo/parrotlet-a-2.5-pro-decoder-8bit",
+  "slug": "demondiablo-parrotlet-a-2-5-pro-decoder-8bit",
+  "author": "Demondiablo",
+  "url": "https://huggingface.co/Demondiablo/parrotlet-a-2.5-pro-decoder-8bit",
+  "created_at": "2026-09-05T00:42:32.000Z",
+  "updated_at": "2026-09-05T00:43:31.000Z",
+  "license": "health-ai-developer-foundations",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en",
+    "hi",
+    "mr",
+    "kn",
+    "te"
+  ],
+  "tags": [
+    "safetensors",
+    "speech-llm",
+    "medical",
+    "asr",
+    "quantized",
+    "8bit",
+    "int8",
+    "bitsandbytes",
+    "automatic-speech-recognition",
+    "custom_code",
+    "en",
+    "hi",
+    "mr",
+    "kn",
+    "te",
+    "base_model:ekacare/parrotlet-a-2.5-pro",
+    "base_model:finetune:ekacare/parrotlet-a-2.5-pro",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335514933,
+  "storage_human": "6.3 GB",
+  "base_model": "ekacare/parrotlet-a-2.5-pro",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mody FS25 - Mody Farming Simulator 25 - Mody FS22 | LS Portal",
+      "url": "https://ls-portal.eu/pl/",
+      "snippet": "English Deutsch Polski LS Portal Farming Simulator 25 Wszystkie mody do Farming Simulator 25 Ciągniki"
+    },
+    {
+      "title": "Demondiablo/parrotlet-a-2.5-pro-decoder-8bit · Hugging Face",
+      "url": "https://huggingface.co/Demondiablo/parrotlet-a-2.5-pro-decoder-8bit",
+      "snippet": "bitsandbytes custom_code License:health-ai-developer-foundations Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "KingMods: mody FS25, mody Farming Simulator 25, mody FS22",
+      "url": "https://www.kingmods.net/pl/",
+      "snippet": "Pobierz wszystkie najlepsze mody do FS25, Farming Simulator 25 za darmo na KingMods. Nowe mody FS25 i FS22 na PS4, PS5, …"
+    },
+    {
+      "title": "Demondiablo/parrotlet-a-2.5-pro-decoder-4bit-nf4 · Hugging Face",
+      "url": "https://huggingface.co/Demondiablo/parrotlet-a-2.5-pro-decoder-4bit-nf4",
+      "snippet": "Quantized:decoder (Gemma3ForConditionalGeneration, 34 layers) to 4-bit NF4 double-quant(bitsandbytes). Kept fp16:Whisper encoder (32 layers) + EncoderProjectorConcat(Linear 2560->4096->2560). Projector is ~30M — quantizing saves nothing and breaks alignment. Quant device:Kaggle 2xT4, compute dtype fp16 (T4 has no fast bf16). Same stored weights run with bf16 compute on L4/Ada. Layout ..."
+    },
+    {
+      "title": "Farming Simulator 22 Mody | FS22 Mody | LS Portal",
+      "url": "https://ls-portal.eu/pl/category/fs22/",
+      "snippet": "English Deutsch Polski LS Portal Farming Simulator 25 Wszystkie mody do Farming Simulator 25 Ciągniki"
+    }
+  ]
+}

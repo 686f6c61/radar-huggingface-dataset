@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "VoxSign/Speech-to-Gloss",
+  "slug": "voxsign-speech-to-gloss",
+  "author": "VoxSign",
+  "url": "https://huggingface.co/VoxSign/Speech-to-Gloss",
+  "created_at": "2026-09-02T15:26:49.000Z",
+  "updated_at": "2026-09-05T10:15:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "sign-language",
+    "ugandan-sign-language",
+    "usl",
+    "gloss",
+    "accessibility",
+    "voxsign",
+    "seq2seq",
+    "other",
+    "en",
+    "dataset:VoxSign/USL-Gloss",
+    "base_model:google/flan-t5-base",
+    "base_model:finetune:google/flan-t5-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 1981549864,
+  "storage_human": "2.0 GB",
+  "base_model": "google/flan-t5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "English → USL gloss",
+      "dataset": "VoxSign USL Gloss — hand-authored gold test set v2",
+      "metric": "BLEU (sacreBLEU, strict)",
+      "value": 85.07
+    },
+    {
+      "task": "English → USL gloss",
+      "dataset": "VoxSign USL Gloss — hand-authored gold test set v2",
+      "metric": "chrF++ (strict)",
+      "value": 94.37
+    },
+    {
+      "task": "English → USL gloss",
+      "dataset": "VoxSign USL Gloss — hand-authored gold test set v2",
+      "metric": "Exact match (strict, %)",
+      "value": 69.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "HI-Tier - Anmeldung",
+      "url": "https://www.hi-tier.de/HitCom/",
+      "snippet": "Allgemeine Einstellungen, können hier unter \"Benutzer- und Programm-Profil\" (Anmeldung erforderlich) vorgenommen werden. …"
+    },
+    {
+      "title": "VoxSign/Speech-to-Gloss · Hugging Face",
+      "url": "https://huggingface.co/VoxSign/Speech-to-Gloss",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use VoxSign/Speech-to-Gloss with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use VoxSign/Speech-to-Gloss with Transformers:"
+    },
+    {
+      "title": "HI-Tier - Anmeldung",
+      "url": "https://www.hi-tier.de/HitCom/profile.asp",
+      "snippet": "Bei Problemen mit der Anmeldung lesen Sie bitte hier \"Was ist zu tun wenn...\"! Bei Problemen mit der Anzeige, leeren Seiten, …"
+    },
+    {
+      "title": "VoxSign3 (VoxSign Technologies) - Hugging Face",
+      "url": "https://huggingface.co/VoxSign3/models",
+      "snippet": "publisheda dataset1 day ago VoxSign/USL-Gloss publisheda model1 day ago VoxSign/Speech-to-Gloss View all activity Organizations VoxSign3's models"
+    },
+    {
+      "title": "Herkunftssicherungs- und Informationssystem für Tiere",
+      "url": "https://www.hi-tier.de/",
+      "snippet": "Aug 1, 2023 · Zugang zu den HIT-Meldeprogrammen V.1 und V.3 ... Zuständige Stellen ... Weitere Angebote ... Sie befinden sich auf …"
+    }
+  ]
+}

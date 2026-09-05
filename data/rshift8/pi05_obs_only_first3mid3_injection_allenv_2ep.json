@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rshift8/pi05_obs_only_first3mid3_injection_allenv_2ep",
+  "slug": "rshift8-pi05_obs_only_first3mid3_injection_allenv_2ep",
+  "author": "rshift8",
+  "url": "https://huggingface.co/rshift8/pi05_obs_only_first3mid3_injection_allenv_2ep",
+  "created_at": "2026-09-02T15:54:25.000Z",
+  "updated_at": "2026-09-05T03:32:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498002503685,
+  "storage_human": "498.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EugeniaUp (@eugeniaup) - TikTok",
+      "url": "https://www.tiktok.com/@eugeniaup",
+      "snippet": "EugeniaUp🇹🇩🐅🇨🇭 (@eugeniaup) pe TikTok |146.8K aprecieri.84.3K urmăritori.Manager de cont SwipeUp.Agency.Urmărește videoclipurile …"
+    },
+    {
+      "title": "rshift8/pi05_obs_only_first3mid3_last6_injection_allenv_2ep · Hugging Face",
+      "url": "https://huggingface.co/rshift8/pi05_obs_only_first3mid3_last6_injection_allenv_2ep",
+      "snippet": "2-epoch JAX/orbax fine-tune of RoboPRO obstacle-attention π₀.₅ (pi05_obs_only_first3mid3_last6_injection_allenv), obstacle-only attention (target and destination attention off)."
+    },
+    {
+      "title": "EugeniaUp (@eugeniaup)’s video of God ... - TikTok",
+      "url": "https://www.tiktok.com/@eugeniaup/video/7677571403100458262",
+      "snippet": "486 Likes, 91 Comments. TikTok video from EugeniaUp🇹🇩🐅🇨🇭 (@eugeniaup): “”. God Blessings. God bless you I Will Always Fight for You - …"
+    },
+    {
+      "title": "rshift8/pi05_obs_only_first3mid3_injection_allenv_2ep · Hugging Face",
+      "url": "https://huggingface.co/rshift8/pi05_obs_only_first3mid3_injection_allenv_2ep",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EugeniaUp - Made $556 today - TikLead",
+      "url": "https://www.tiklead.com/@eugeniaup",
+      "snippet": "EugeniaUp🇹🇩🐅🇨🇭 on TikTok LIVE: real-time diamonds earned, regional rank, league standing and gifter history. Track EugeniaUp🇹🇩🐅🇨🇭's daily, …"
+    }
+  ]
+}

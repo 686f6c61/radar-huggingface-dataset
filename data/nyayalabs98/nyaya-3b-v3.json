@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "NyayaLabs98/nyaya-3b-v3",
+  "slug": "nyayalabs98-nyaya-3b-v3",
+  "author": "NyayaLabs98",
+  "url": "https://huggingface.co/NyayaLabs98/nyaya-3b-v3",
+  "created_at": "2026-07-20T17:21:17.000Z",
+  "updated_at": "2026-09-05T01:47:46.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "legal",
+    "india",
+    "indian-law",
+    "bns",
+    "bnss",
+    "bsa",
+    "retrieval-augmented-generation",
+    "qwen2.5",
+    "non-commercial",
+    "conversational",
+    "en",
+    "hi",
+    "dataset:NyayaLabs98/nyaya-train-v3",
+    "dataset:NyayaLabs98/nyaya-statute-db",
+    "dataset:NyayaLabs98/nyaya-eval-v0",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 1690,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6190380649,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Legal QA with retrieval (Nyaya-Eval-v1)",
+      "dataset": "Nyaya-Eval-v1 (409 scored, k=8 RAG; base model scores 34.3 / 52.8)",
+      "metric": "Fact recall",
+      "value": 32.9
+    },
+    {
+      "task": "Legal QA with retrieval (Nyaya-Eval-v1)",
+      "dataset": "Nyaya-Eval-v1 (409 scored, k=8 RAG; base model scores 34.3 / 52.8)",
+      "metric": "Citation accuracy",
+      "value": 50.3
+    },
+    {
+      "task": "Indian legal MCQ",
+      "dataset": "BhashaBench-Legal (1,500-question sample; base model scores 47.8)",
+      "metric": "Accuracy",
+      "value": 45.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "ترجمة Google",
+      "url": "https://translate.google.com/?hl=ar",
+      "snippet": "خدمة ترجمة مجانية مقدَّمة من Google حيث يمكن ترجمة الكلمات والعبارات وصفحات الويب بشكل فوري بين اللغة الإنجليزية وأكثر من 100 لغة أخرى."
+    },
+    {
+      "title": "NyayaLabs98/nyaya-3b-v3 · Hugging Face",
+      "url": "https://huggingface.co/NyayaLabs98/nyaya-3b-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ترجمة Google",
+      "url": "https://translate.google.com/details?hl=ar&sl=en&tl=ar&op=translate",
+      "snippet": "لا يدعم هذا المتصفّح الإدخال الصوتي. 0 / 5,000"
+    },
+    {
+      "title": "NyayaLabs98 (NyayaAI) - Hugging Face",
+      "url": "https://huggingface.co/datasets/NyayaLabs98/",
+      "snippet": "Org profile for NyayaAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "\"ترجمة Google\": مترجم شخصي على الهاتف أو الكمبيوتر",
+      "url": "https://translate.google.com/intl/ar/about/",
+      "snippet": "تعرَّف على كيفية ترجمة النصوص والكلام والصور والمستندات والمواقع الإلكترونية والمزيد باستخدام \"ترجمة Google\"."
+    }
+  ]
+}

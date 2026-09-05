@@ -5,7 +5,7 @@
   "author": "zerodigest",
   "url": "https://huggingface.co/zerodigest/Qwen3.6-27B-YMQ-MTP-GGUF",
   "created_at": "2026-08-14T13:14:28.000Z",
-  "updated_at": "2026-09-01T18:35:46.000Z",
+  "updated_at": "2026-09-04T16:46:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 5195,
+  "downloads_30d": 6218,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

@@ -5,7 +5,7 @@
   "author": "intheblue",
   "url": "https://huggingface.co/intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-6bit",
   "created_at": "2026-08-17T18:29:54.000Z",
-  "updated_at": "2026-08-17T18:51:53.000Z",
+  "updated_at": "2026-09-05T04:20:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1886,
+  "downloads_30d": 1895,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",

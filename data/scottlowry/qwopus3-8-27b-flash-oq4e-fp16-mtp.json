@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp",
+  "slug": "scottlowry-qwopus3-8-27b-flash-oq4e-fp16-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp",
+  "created_at": "2026-09-05T02:02:20.000Z",
+  "updated_at": "2026-09-05T02:13:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 17913129485,
+  "storage_human": "17.9 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Post Bank",
+      "url": "https://www.postbank.co.za/contactus.html",
+      "snippet": "Contact Us Please supply us with your details, account number, contact number (cell number preferably), ID and description of query."
+    },
+    {
+      "title": "scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp",
+      "snippet": "Instructions to use scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "South African Post Bank",
+      "url": "https://www.postbank.co.za/",
+      "snippet": "South African Postbank Postbank has helped millions of South Africans to keep their fortunes safe and their minds stress-free with …"
+    },
+    {
+      "title": "Qwen3.8 27B oQe MTP - a scottlowry Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/scottlowry/qwen38-27b-oqe-mtp",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "finanzblick App | Deine Finanzen vollautomatisch im Griff - buhl",
+      "url": "https://www.buhl.de/finanzblick/?msockid=0dba72fb39cd63fa1e7f653038f46276",
+      "snippet": "Erlebe intelligentes Banking: Mit finanzblick verwaltest du alle Konten in einer App. Behalte deine Finanzen im Blick – 100 % sicher."
+    }
+  ]
+}

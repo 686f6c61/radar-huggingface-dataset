@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RicemanT/MageTrail",
+  "slug": "ricemant-magetrail",
+  "author": "RicemanT",
+  "url": "https://huggingface.co/RicemanT/MageTrail",
+  "created_at": "2026-09-04T13:52:47.000Z",
+  "updated_at": "2026-09-05T11:16:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "anime",
+    "furry",
+    "danbooru",
+    "e621",
+    "finetune",
+    "mage-flow",
+    "text-to-image",
+    "dataset:RicemanT/booru-essence-2026",
+    "base_model:mage-flow-community/Mage-Flow",
+    "base_model:finetune:mage-flow-community/Mage-Flow",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33925845079,
+  "storage_human": "33.9 GB",
+  "base_model": "mage-flow-community/Mage-Flow",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "RicemanT/MageTrail · Hugging Face",
+      "url": "https://huggingface.co/RicemanT/MageTrail",
+      "snippet": "Downloads are not tracked for this model. How to track Inference ProvidersNEW Text-to-Image This model isn't deployed by any Inference Provider.🙋Ask for provider support Model tree for RicemanT/MageTrail Base model mage-flow-community/Mage-Flow"
+    },
+    {
+      "title": "Maps Trợ giúp",
+      "url": "https://support.google.com/maps/?hl=vi",
+      "snippet": "Trung tâm Trợ giúp Maps chính thức, nơi bạn có thể tìm thấy các mẹo và hướng dẫn sử dụng sản phẩm và các câu trả lời khác cho …"
+    },
+    {
+      "title": "RicemanT (Tran Tuan Tu) - Hugging Face",
+      "url": "https://huggingface.co/RicemanT/models",
+      "snippet": "AI & ML interests ... Recent Activity new activity 1 day ago ... updated a model 3 days ago ... liked a model 21 days ago"
+    },
+    {
+      "title": "6 tính năng AI vừa được cập nhật của Google Maps - Tinhte.vn",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Mar 14, 2024 · Bây giờ Google Maps cũng đã được tích hợp AI, với 1 bản nâng cấp lớn. Dưới đây là 6 tính năng Ai của Google …"
+    }
+  ]
+}

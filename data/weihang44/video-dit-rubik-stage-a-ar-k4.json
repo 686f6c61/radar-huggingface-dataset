@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "weihang44/video-dit-rubik-stage-a-ar-k4",
+  "slug": "weihang44-video-dit-rubik-stage-a-ar-k4",
+  "author": "weihang44",
+  "url": "https://huggingface.co/weihang44/video-dit-rubik-stage-a-ar-k4",
+  "created_at": "2026-09-05T01:31:35.000Z",
+  "updated_at": "2026-09-05T01:32:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "video-generation",
+    "diffusion",
+    "rectified-flow",
+    "autoregressive",
+    "rubiks-cube",
+    "scaling-laws",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20606365904,
+  "storage_human": "20.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Casserole cuivre nettoyage : 5 astuces efficaces",
+      "url": "https://laboutiquedelamaisonpropre.fr/2026/01/27/casserole-cuivre-nettoyage-5-astuces-efficaces/",
+      "snippet": "Jan 27, 2026 · Vos casseroles en cuivre ont perdu leur brillance ? Oxydation, vert-de-gris, taches brûlées : nous vous révélons les 5 …"
+    },
+    {
+      "title": "weihang44/video-dit-rubik-stage-a-ar-k4 · Hugging Face",
+      "url": "https://huggingface.co/weihang44/video-dit-rubik-stage-a-ar-k4",
+      "snippet": "All use 3D RoPE, head dimension 64, SwiGLU, 16 latent channels, and latent patches of (1,2,2). The model conditions on an initial frame, the complete nine-action language prompt, and visual history. No vector-state conditioning or auxiliary state loss is enabled. Auxiliary state-related config fields are inactive defaults. Frozen representations: Wan2.1 VAE latents and 768-dimensional ..."
+    },
+    {
+      "title": "Comment nettoyer des casseroles en cuivre - 5 étapes",
+      "url": "https://maison.toutcomment.com/article/comment-nettoyer-des-casseroles-en-cuivre-9681.html",
+      "snippet": "Oct 14, 2024 · Le citron et le sel sont deux ingrédients très efficaces pour le nettoyage de casseroles en cuivre, qu'elles soient …"
+    },
+    {
+      "title": "VideoDiT: Bridging Image Diffusion Transformers for Streamlined Video ...",
+      "url": "https://openreview.net/forum?id=lvgsPjRtLM",
+      "snippet": "A regularization term ensures alignment between the 3D video latent space and the 2D image latent space, facilitating seamless transfer of pre-trained diffusion models. Leveraging the Diffusion Image Transformers (DiT) architecture and incorporating 3D positional embeddings, we extend 2D attention into 3D with negligible increased parameters."
+    },
+    {
+      "title": "Nettoyer et entretenir casserole en cuivre - Astuces Pratiques",
+      "url": "https://www.astuces-pratiques.fr/cuisine/nettoyer-et-entretenir-casserole-en-cuivre",
+      "snippet": "Jul 31, 2024 · Ce qu’il faut pour nettoyer une casserole en cuivre: 1 – Du vinaigre. 2 – Du gros sel ou du sel fin ( si vous n’avez pas …"
+    }
+  ]
+}

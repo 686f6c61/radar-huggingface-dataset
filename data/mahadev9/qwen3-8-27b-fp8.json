@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mahadev9/Qwen3.8-27B-fp8",
+  "slug": "mahadev9-qwen3-8-27b-fp8",
+  "author": "mahadev9",
+  "url": "https://huggingface.co/mahadev9/Qwen3.8-27B-fp8",
+  "created_at": "2026-09-05T00:29:39.000Z",
+  "updated_at": "2026-09-05T02:08:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "fp8",
+    "llm-compressor",
+    "vllm",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 65671087525,
+  "storage_human": "65.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez des …"
+    },
+    {
+      "title": "mahadev9/Qwen3.8-27B-fp8 · Hugging Face",
+      "url": "https://huggingface.co/mahadev9/Qwen3.8-27B-fp8",
+      "snippet": "Qwen3.8-27B-fp8 FP8 (W8A8 dynamic) quantization of Qwen/Qwen3.8-27B, produced with llm-compressor. lm_head, mlp.down_proj, self_attn.o_proj, and the first/last transformer layers are kept in the original precision - the layers most consistently found to be quantization-sensitive - to recover agentic/tool-calling quality. Quality KL divergence of the quantized model's next-token distribution vs ..."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook creator Jakethejuice is fired up by the US Open and giving tennis a (trick) shot. If you also have tennis fever, Facebook …"
+    }
+  ]
+}

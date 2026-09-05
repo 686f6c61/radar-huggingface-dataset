@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "icysunny/gemma4_e2b_reasoner_merged",
+  "slug": "icysunny-gemma4_e2b_reasoner_merged",
+  "author": "icysunny",
+  "url": "https://huggingface.co/icysunny/gemma4_e2b_reasoner_merged",
+  "created_at": "2026-09-05T01:52:37.000Z",
+  "updated_at": "2026-09-05T01:57:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "ja",
+    "zh",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "reasoning",
+    "systems-programming",
+    "cpp20",
+    "python312",
+    "java21",
+    "unsloth",
+    "complete-cycle",
+    "text-generation",
+    "conversational",
+    "en",
+    "ru",
+    "ja",
+    "zh",
+    "es",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791544,
+  "storage_human": "10.3 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "icysunny/gemma4_e2b_reasoner_merged · Hugging Face",
+      "url": "https://huggingface.co/icysunny/gemma4_e2b_reasoner_merged",
+      "snippet": "Instructions to use icysunny/gemma4_e2b_reasoner_merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=java21",
+      "snippet": "Sort: Trending Active filters:java21 Clear all icysunny/gemma4_e2b_reasoner_merged Text Generation •5B•Updated about 3 hours ago System theme Company"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/SAM2-hiera-tiny-LiteRT",
   "created_at": "2026-07-09T05:50:02.000Z",
-  "updated_at": "2026-08-19T07:59:49.000Z",
+  "updated_at": "2026-09-04T15:21:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "mask-generation",
@@ -21,7 +21,7 @@
     "gpu",
     "mask-generation",
     "base_model:facebook/sam2.1-hiera-tiny",
-    "base_model:finetune:facebook/sam2.1-hiera-tiny",
+    "base_model:quantized:facebook/sam2.1-hiera-tiny",
     "license:apache-2.0",
     "region:us"
   ],

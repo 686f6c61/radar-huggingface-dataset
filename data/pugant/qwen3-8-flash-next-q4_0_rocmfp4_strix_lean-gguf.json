@@ -5,7 +5,7 @@
   "author": "pugant",
   "url": "https://huggingface.co/pugant/Qwen3.8-Flash-Next-Q4_0_ROCMFP4_STRIX_LEAN-GGUF",
   "created_at": "2026-08-27T17:45:39.000Z",
-  "updated_at": "2026-09-03T22:07:06.000Z",
+  "updated_at": "2026-09-04T18:27:28.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 919,
+  "downloads_30d": 1418,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",

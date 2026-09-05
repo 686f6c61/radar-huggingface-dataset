@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "NyayaLabs98/nyaya-embed-v1",
+  "slug": "nyayalabs98-nyaya-embed-v1",
+  "author": "NyayaLabs98",
+  "url": "https://huggingface.co/NyayaLabs98/nyaya-embed-v1",
+  "created_at": "2026-09-04T07:36:17.000Z",
+  "updated_at": "2026-09-05T02:04:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "legal",
+    "india",
+    "indian-law",
+    "bns",
+    "bnss",
+    "bsa",
+    "retrieval",
+    "feature-extraction",
+    "hinglish",
+    "sentence-similarity",
+    "en",
+    "hi",
+    "dataset:NyayaLabs98/nyaya-statute-db",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:finetune:intfloat/multilingual-e5-base",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1134349134,
+  "storage_human": "1.1 GB",
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Statute-section retrieval (hybrid BM25 + dense, RRF)",
+      "dataset": "Nyaya-Eval-v1 (graded successor of nyaya-eval-v0, in the repository), never-audited slice (n=118)",
+      "metric": "full-hit recall@1",
+      "value": 49.2
+    },
+    {
+      "task": "Statute-section retrieval (hybrid BM25 + dense, RRF)",
+      "dataset": "Nyaya-Eval-v1 (graded successor of nyaya-eval-v0, in the repository), never-audited slice (n=118)",
+      "metric": "full-hit recall@8",
+      "value": 88.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nike的空军一号到底值不值得购买？ - 知乎",
+      "url": "https://www.zhihu.com/question/287439599",
+      "snippet": "Nike AF1空军一号超全配色好看又百搭 Nike的空军一号真的超经典 配色也炒鸡多 非常百搭！ 今天特意整理出一些好看的配色分享给 …"
+    },
+    {
+      "title": "nike air vapormax怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/275461814",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Nike AIR ZOOM PEGASUS 41 - Forum Sport",
+      "url": "https://www.forumsport.com/es-es/nike-zapatilla-running-mujer-w-air-zoom-pegasus-41-fd2723-1001027105-p",
+      "snippet": "Plantilla de alta transpiración y absorción. La zapatilla Nike AIR ZOOM PEGASUS 41 introduce una mediasuela más amplia y más …"
+    },
+    {
+      "title": "Nike AIR MAX SC negro blanco Zapatillas hombre | Forum Sport",
+      "url": "https://www.forumsport.com/es-es/nike-zapatilla-moda-hombre-nike-air-max-sc-cw4555-1000819436-p",
+      "snippet": "Las zapatillas Nike para hombre destacan por su comodidad y buena relación calidad-precio, siendo aptas para el uso diario y para …"
+    },
+    {
+      "title": "nike鞋的气垫底摩爆了怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/311814266",
+      "snippet": "Feb 11, 2019 · 买过三双全掌气垫的 air max 2014 flyknit 彩虹 air max 2016 kd6 elite 爆了两双 air max 2016还健在 气垫爆了不影响走 …"
+    }
+  ]
+}

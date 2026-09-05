@@ -5,7 +5,7 @@
   "author": "Alberto-Codes",
   "url": "https://huggingface.co/Alberto-Codes/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-fit16gib-GGUF",
   "created_at": "2026-08-22T21:52:23.000Z",
-  "updated_at": "2026-08-31T17:23:15.000Z",
+  "updated_at": "2026-09-05T01:40:21.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 350,
+  "downloads_30d": 369,
   "trending_score": 0,
   "parameters": 31577940288,
   "parameters_human": "31.58B",

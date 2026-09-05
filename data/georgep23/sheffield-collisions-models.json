@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "georgep23/sheffield-collisions-models",
+  "slug": "georgep23-sheffield-collisions-models",
+  "author": "georgep23",
+  "url": "https://huggingface.co/georgep23/sheffield-collisions-models",
+  "created_at": "2026-09-05T01:33:14.000Z",
+  "updated_at": "2026-09-05T01:52:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "xgboost",
+    "tabular-classification",
+    "tabular-regression",
+    "clustering",
+    "road-safety",
+    "uk",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4485307747,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "georgep23/sheffield-collisions-models · Hugging Face",
+      "url": "https://huggingface.co/georgep23/sheffield-collisions-models",
+      "snippet": "Sheffield Road Collision Models Trained model artefacts for the Traffic-AIproject: a multi-task ML pipeline over UK Department for Transport STATS19 collision records filtered to Sheffield. Includes multiclass and binary classifiers, regressors, and clustering models saved with pickle, plus the models.jsonregistry that the project's CLI uses to discover them."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "georgep23 (George Pedder) - Hugging Face",
+      "url": "https://huggingface.co/georgep23",
+      "snippet": "Organizations None yet models1 georgep23/sheffield-collisions-models Tabular Classification •Updated about 3 hours ago datasets0 None public yet"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook. 154,756,858 likes · 318,883 talking about this. Community Values We believe people can do more together than alone and …"
+    }
+  ]
+}

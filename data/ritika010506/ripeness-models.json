@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ritika010506/ripeness-models",
+  "slug": "ritika010506-ripeness-models",
+  "author": "ritika010506",
+  "url": "https://huggingface.co/ritika010506/ripeness-models",
+  "created_at": "2026-09-05T09:58:19.000Z",
+  "updated_at": "2026-09-05T10:03:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 203623928,
+  "storage_human": "204 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNCF Connect : Réservez vos billets SNCF, bus et covoiturage",
+      "url": "https://www.sncf-connect.com/",
+      "snippet": "Réservez vos Billets de Train au meilleur prix sur SNCF Connect ! Retrouvez aussi notre offre de cartes de réduction, abonnements …"
+    },
+    {
+      "title": "Ritika ritika010506 - GitHub",
+      "url": "https://github.com/ritika010506/",
+      "snippet": "ritika010506 has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "SNCF Connect : Book your train tickets to France and Europe",
+      "url": "https://www.sncf-connect.com/en-en",
+      "snippet": "Download the SNCF Connect app for faster, easier and cleaner mobility across France. With one touch, you can organise, book and …"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Mes Bagages TGV INOUI - Voyagez léger, partout en France",
+      "url": "https://mesbagages.sncf-connect.com/",
+      "snippet": "Le service TGV INOUI Mes Bagages transporte vos équipements Vélo, Ski, Fauteuil, Poussette. Direction les vacances sans vos …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "smruti90/odia-tiny-lm-20m-instruct",
+  "slug": "smruti90-odia-tiny-lm-20m-instruct",
+  "author": "smruti90",
+  "url": "https://huggingface.co/smruti90/odia-tiny-lm-20m-instruct",
+  "created_at": "2026-09-05T09:16:52.000Z",
+  "updated_at": "2026-09-05T09:17:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2340872,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - log in or sign up",
+      "url": "https://secure.facebook.com/",
+      "snippet": "Connect with friends and the world around you on Facebook."
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We are happy to share our intention to join forces with NVIDIA. Read the announcement NEW Microduck: A Tiny Robot for AI Builders 🦆 Google Gemma 4 is here 💫 Storage Buckets: AI-native object storage The AI community building the future."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login/device-based/regular/login/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in Forgot password? Create new account"
+    },
+    {
+      "title": "The best small LLM-instruct models - a ehristoforu Collection",
+      "url": "https://huggingface.co/collections/ehristoforu/the-best-small-llm-instruct-models",
+      "snippet": "The best small (from 2B to 15B) LLM models in instruct format"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login.php/?lang=en-US",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in Forgot password? Create new account"
+    }
+  ]
+}

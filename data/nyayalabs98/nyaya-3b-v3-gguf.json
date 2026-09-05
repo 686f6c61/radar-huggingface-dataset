@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "NyayaLabs98/nyaya-3b-v3-GGUF",
+  "slug": "nyayalabs98-nyaya-3b-v3-gguf",
+  "author": "NyayaLabs98",
+  "url": "https://huggingface.co/NyayaLabs98/nyaya-3b-v3-GGUF",
+  "created_at": "2026-09-04T05:11:49.000Z",
+  "updated_at": "2026-09-05T01:47:48.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "legal",
+    "india",
+    "indian-law",
+    "bns",
+    "ollama",
+    "non-commercial",
+    "text-generation",
+    "en",
+    "hi",
+    "base_model:NyayaLabs98/nyaya-3b-v3",
+    "base_model:quantized:NyayaLabs98/nyaya-3b-v3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 5215378304,
+  "storage_human": "5.2 GB",
+  "base_model": "NyayaLabs98/nyaya-3b-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Яндекс — быстрый поиск в интернете",
+      "url": "https://ya.ru/",
+      "snippet": "Яндекс предлагает быстрый поиск информации в интернете, включая сайты, изображения, музыку и товары. Используйте …"
+    },
+    {
+      "title": "NyayaLabs98/nyaya-3b-v3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/NyayaLabs98/nyaya-3b-v3-GGUF",
+      "snippet": "Instructions to use NyayaLabs98/nyaya-3b-v3-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Яндекс — быстрый поиск в интернете",
+      "url": "https://yandex.by/",
+      "snippet": "Яндекс — это удобный поиск в интернете, который помогает находить сайты, изображения, музыку и многое другое. …"
+    },
+    {
+      "title": "mradermacher/nyaya-3b-v3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/nyaya-3b-v3-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Яндекс — быстрый поиск в интернете",
+      "url": "https://yandex.ru/chrome/newtab",
+      "snippet": "Яндекс, найдётся всё: сайты, изображения, музыка, товары. Решайте любые задачи — от повседневных вопросов до …"
+    }
+  ]
+}

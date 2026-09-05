@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/CLIPSeg-rd64-refined-ExecuTorch",
   "created_at": "2026-08-26T02:04:45.000Z",
-  "updated_at": "2026-08-26T02:11:46.000Z",
+  "updated_at": "2026-09-04T15:28:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

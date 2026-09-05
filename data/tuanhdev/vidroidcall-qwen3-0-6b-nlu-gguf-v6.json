@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tuanhdev/vidroidcall-qwen3-0.6B-nlu-gguf-v6",
+  "slug": "tuanhdev-vidroidcall-qwen3-0-6b-nlu-gguf-v6",
+  "author": "tuanhdev",
+  "url": "https://huggingface.co/tuanhdev/vidroidcall-qwen3-0.6B-nlu-gguf-v6",
+  "created_at": "2026-09-05T08:37:00.000Z",
+  "updated_at": "2026-09-05T08:56:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nlu",
+    "vietnamese",
+    "android",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 396704640,
+  "storage_human": "397 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Musée d'Orsay",
+      "url": "https://www.musee-orsay.fr/fr",
+      "snippet": "Musée pluridisciplinaire exposant la plus riche collection de tableaux impressionnistes et post impressionnistes au monde dans …"
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "Instructions to use Qwen/Qwen3-0.6B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Les collections | Musée d'Orsay",
+      "url": "https://www.musee-orsay.fr/fr/collections",
+      "snippet": "Donation exceptionnelle au musée d'Orsay : 17 éventails impressionnistes et postimpressionnistes"
+    },
+    {
+      "title": "unsloth/Qwen3-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-0.6B-GGUF",
+      "snippet": "Instructions to use unsloth/Qwen3-0.6B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Musée d'Orsay — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay",
+      "snippet": "Le musée d'Orsay est un musée parisien situé dans le 7e arrondissement, le long de la rive gauche de la Seine, en surplomb de la …"
+    }
+  ]
+}

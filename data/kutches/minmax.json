@@ -5,7 +5,7 @@
   "author": "Kutches",
   "url": "https://huggingface.co/Kutches/minmax",
   "created_at": "2026-08-03T06:35:58.000Z",
-  "updated_at": "2026-09-03T21:25:16.000Z",
+  "updated_at": "2026-09-04T21:58:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,13 +15,13 @@
     "gguf",
     "region:us"
   ],
-  "likes": 16,
-  "downloads_30d": 31133,
-  "trending_score": 0,
+  "likes": 17,
+  "downloads_30d": 30507,
+  "trending_score": 8,
   "parameters": 20117617688,
   "parameters_human": "20.12B",
-  "storage_bytes": 953198349356,
-  "storage_human": "953.2 GB",
+  "storage_bytes": 953965694372,
+  "storage_human": "954.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

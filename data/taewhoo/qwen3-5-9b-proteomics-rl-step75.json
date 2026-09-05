@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Taewhoo/qwen3.5-9b-proteomics-rl-step75",
+  "slug": "taewhoo-qwen3-5-9b-proteomics-rl-step75",
+  "author": "Taewhoo",
+  "url": "https://huggingface.co/Taewhoo/qwen3.5-9b-proteomics-rl-step75",
+  "created_at": "2026-09-05T00:36:23.000Z",
+  "updated_at": "2026-09-05T00:37:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319111894,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "Taewhoo/qwen3.5-9b-proteomics-rl-step75 · Hugging Face",
+      "url": "https://huggingface.co/Taewhoo/qwen3.5-9b-proteomics-rl-step75",
+      "snippet": "Chat template Files info Inference ProvidersNEW This model isn't deployed by any Inference Provider.🙋Ask for provider support Model tree for Taewhoo/qwen3.5-9b-proteomics-rl-step75 Base model Qwen/Qwen3.5-9B-Base"
+    },
+    {
+      "title": "Bing News Quiz [10-28-2022] : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/yf0qf5/bing_news_quiz_10282022/",
+      "snippet": "Oct 27, 2022 · upvotes r/BingQuizAnswers r/BingQuizAnswers Microsoft Rewards Quiz Answers MembersOnline (Solved) After a …"
+    },
+    {
+      "title": "Taewhoo/qwen3.5-9b-proteomics-rl-step100 · Hugging Face",
+      "url": "https://huggingface.co/Taewhoo/qwen3.5-9b-proteomics-rl-step100",
+      "snippet": "Copy to bucket new qwen3.5-9b-proteomics — RL step 100 qwen3.5-9b-proteomics — RL step 100 RL checkpoint (step 100) of the proteomics co-scientist run (series: sft → rl-step25 → rl-step75 → rl-step100). Internal eval100 score at this step: 0.39. Downloads last month Safetensors Model size"
+    },
+    {
+      "title": "[US] Bing Homepage Quiz (12-26-2021) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/roq1db/us_bing_homepage_quiz_12262021/",
+      "snippet": "Dec 26, 2021 · MembersOnline [US] Bing Weekly News Quiz (12-24-2021) upvotes ·comments r/disneyemojiblitz r/disneyemojiblitz A …"
+    }
+  ]
+}

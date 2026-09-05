@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "venetialiu/sdxl-lora-venetia",
+  "slug": "venetialiu-sdxl-lora-venetia",
+  "author": "venetialiu",
+  "url": "https://huggingface.co/venetialiu/sdxl-lora-venetia",
+  "created_at": "2026-09-05T01:39:27.000Z",
+  "updated_at": "2026-09-05T02:28:09.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "template:sd-lora",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23477280,
+  "storage_human": "23 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay.de | Elektronik, Autos, Mode, Sammlerstücke, Möbel und mehr …",
+      "url": "https://www.ebay.de/?msockid=3ec83996df6a65bf02b12e5dded2642c",
+      "snippet": "Kaufen und verkaufen Sie Elektronikartikel, Autos, Kleidung, Mode, Sammlerstücke, Sportartikel, Digitalkameras, Babyartikel, …"
+    },
+    {
+      "title": "venetialiu/sdxl-lora-venetia · Hugging Face",
+      "url": "https://huggingface.co/venetialiu/sdxl-lora-venetia",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use venetialiu/sdxl-lora-venetia with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use venetialiu/sdxl-lora-venetia with Diffusers:"
+    },
+    {
+      "title": "Electronics, Cars, Fashion, Collectibles & More | eBay",
+      "url": "https://www.ebay.com/?msockid=3ec83996df6a65bf02b12e5dded2642c",
+      "snippet": "Buy & sell electronics, cars, clothes, collectibles & more on eBay, the world's online marketplace. Top brands, low prices & free …"
+    },
+    {
+      "title": "venetialiu/sdxl-lora-venetia at main - Hugging Face",
+      "url": "https://huggingface.co/venetialiu/sdxl-lora-venetia/tree/main",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use venetialiu/sdxl-lora-venetia with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use venetialiu/sdxl-lora-venetia with Diffusers:"
+    },
+    {
+      "title": "eBay – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/EBay",
+      "snippet": "So sollten Käufer direkt an eBay bezahlen, während Verkäufer eine Auszahlung von eBay erst erhalten, nachdem sie den Versand im …"
+    }
+  ]
+}

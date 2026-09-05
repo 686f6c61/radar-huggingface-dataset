@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "klokedm/Micka-65k",
+  "slug": "klokedm-micka-65k",
+  "author": "klokedm",
+  "url": "https://huggingface.co/klokedm/Micka-65k",
+  "created_at": "2026-09-05T09:30:17.000Z",
+  "updated_at": "2026-09-05T09:30:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "sl",
+    "en",
+    "hr"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "bpe",
+    "byte-level",
+    "slovenian",
+    "multilingual",
+    "sl",
+    "en",
+    "hr",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:HuggingFaceFW/fineweb",
+    "dataset:HuggingFaceFW/finepdfs",
+    "dataset:cjvt/Nemotron-CC-Math-4plus_translated",
+    "dataset:cjvt/Nemotron-Pretraining-SFT_translated",
+    "dataset:cjvt/sl_code_feedback",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Электронный подарочный сертификат на - shop.milavitsa.by",
+      "url": "https://shop.milavitsa.by/info/certificates",
+      "snippet": "Купить электронный подарочный сертификат Милавица. Легко подарить сертификат по SMS.Номиналы сертификатов …"
+    },
+    {
+      "title": "SemantikaEU/Micka-gen3 · Hugging Face",
+      "url": "https://huggingface.co/SemantikaEU/Micka-gen3",
+      "snippet": "Model Description Micka Gen3 is a specialized language model based on the Microsoft RetNet architecture, fine-tuned for Retrieval-Augmented Generation (RAG) usage in Slovenian Cultural Heritage Domain. It leverages an efficient retention mechanism, and should be used as baseline and in combination with the GAMS series of models."
+    },
+    {
+      "title": "Подарочные сертификаты • Компания Милавица",
+      "url": "https://milavitsa.pro/podarochnye-sertifikaty/",
+      "snippet": "Подарочный сертификат от Milavitsa на любую сумму позволит решить проблему с выбором «что подарить?» и сделает …"
+    },
+    {
+      "title": "klokedm (Marko Kokol) - Hugging Face",
+      "url": "https://huggingface.co/klokedm",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Подарочные карты и сертификаты MILAVITSA купить онлайн",
+      "url": "https://www.giftery.by/giftcards/milavica-rb",
+      "snippet": "Электронный подарочный сертификат активен сразу после приобретения; Срок действия электронного подарочного …"
+    }
+  ]
+}

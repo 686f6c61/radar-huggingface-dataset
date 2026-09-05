@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "FinDIT-Studio/siglip2-naflex-coreml",
+  "slug": "findit-studio-siglip2-naflex-coreml",
+  "author": "FinDIT-Studio",
+  "url": "https://huggingface.co/FinDIT-Studio/siglip2-naflex-coreml",
+  "created_at": "2026-07-24T13:54:41.000Z",
+  "updated_at": "2026-09-05T02:19:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "siglip",
+    "zero-shot-image-classification",
+    "image-text-matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 971517732,
+  "storage_human": "972 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "590 News (2026) von Polizeiinspektion Cuxhaven - Pressemeldungen ...",
+      "url": "https://www.presseportal.de/blaulicht/nr/68437",
+      "snippet": "2 days ago · Polizeiinspektion Cuxhaven newsroom: POL-CUX: Betrugsversuche durch Falsche Polizeibeamte im südlichen …"
+    },
+    {
+      "title": "FinDIT-Studio/siglip2-naflex-coreml · Hugging Face",
+      "url": "https://huggingface.co/FinDIT-Studio/siglip2-naflex-coreml",
+      "snippet": "FinDIT-Studio / siglip2-naflex-coreml like 1 Follow FinDIT-Studio 2 Zero-Shot Image Classification Core ML siglip image-text-matching License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new SigLIP 2 NaFlex (base, patch16) — CoreML (coremlit) Provenance License & attribution"
+    },
+    {
+      "title": "Polizeimeldungen & Polizeibericht Cuxhaven | Unfall heute ...",
+      "url": "https://aktuell.meinestadt.de/cuxhaven/polizeimeldungen",
+      "snippet": "1 day ago · Wissen was in Cuxhaven & Umgebung los ist! Polizei, Zoll, Krankenwageneinsätze von heute direkt zum nachlesen."
+    },
+    {
+      "title": "GitHub - Findit-AI/siglip2-naflex",
+      "url": "https://github.com/findit-ai/siglip2-naflex",
+      "snippet": "Model files The runtime expects the assets from Findit-AI/indexer release models-siglip2-naflex-v1. See models/MODELS.md for the download recipe."
+    },
+    {
+      "title": "31 offizielle News aus Landkreis Cuxhaven 2026 | Presseportal",
+      "url": "https://www.presseportal.de/blaulicht/r/Landkreis%20Cuxhaven",
+      "snippet": "Aug 28, 2026 · Aktuelle Nachrichten: POL-CUX: Diverse Verkehrsdelikte im gesamten Landkreis Cuxhaven POL-CUX: Mehrere …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Phi-4-mini-reasoning",
   "created_at": "2026-06-28T19:07:39.000Z",
-  "updated_at": "2026-09-02T23:49:27.000Z",
+  "updated_at": "2026-09-05T05:41:23.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "math",
     "text-generation",
     "base_model:microsoft/Phi-4-mini-reasoning",
-    "base_model:finetune:microsoft/Phi-4-mini-reasoning",
+    "base_model:quantized:microsoft/Phi-4-mini-reasoning",
     "license:mit",
     "region:us"
   ],

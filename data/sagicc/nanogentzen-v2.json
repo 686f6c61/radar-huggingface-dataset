@@ -5,7 +5,7 @@
   "author": "Sagicc",
   "url": "https://huggingface.co/Sagicc/nanoGentzen-v2",
   "created_at": "2026-08-24T22:30:24.000Z",
-  "updated_at": "2026-08-24T22:59:45.000Z",
+  "updated_at": "2026-09-04T16:13:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 4861697,
   "parameters_human": "4.9M",
-  "storage_bytes": 19625955,
-  "storage_human": "20 MB",
+  "storage_bytes": 21833422,
+  "storage_human": "22 MB",
   "base_model": null,
   "formats": [
     "safetensors"

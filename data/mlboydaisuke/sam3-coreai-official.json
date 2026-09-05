@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/sam3-CoreAI-official",
   "created_at": "2026-06-23T07:19:38.000Z",
-  "updated_at": "2026-08-15T05:16:16.000Z",
+  "updated_at": "2026-09-05T04:17:37.000Z",
   "license": "sam-license",
   "license_family": "unknown",
   "pipeline_tag": "image-segmentation",

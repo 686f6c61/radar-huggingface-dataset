@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Alex995647/loras-wan-2.2",
+  "slug": "alex995647-loras-wan-2-2",
+  "author": "Alex995647",
+  "url": "https://huggingface.co/Alex995647/loras-wan-2.2",
+  "created_at": "2026-09-05T01:47:21.000Z",
+  "updated_at": "2026-09-05T03:49:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "lora",
+    "video",
+    "mirror",
+    "base_model:Wan-AI/Wan2.2-T2V-A14B",
+    "base_model:adapter:Wan-AI/Wan2.2-T2V-A14B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53435829934,
+  "storage_human": "53.4 GB",
+  "base_model": "Wan-AI/Wan2.2-T2V-A14B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spider-Man: Into the Spider-Verse - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spider-Man:_Into_the_Spider-Verse",
+      "snippet": "Spider-Man: Into the Spider-Verse - Wikipedia. Jump to content. Main menu. move to sidebarhide. Navigation . Main page. Contents. …"
+    },
+    {
+      "title": "How to Add Wan 2.2 (Prime) LoRAs on ClipMode — ClipMode.ai",
+      "url": "https://www.clipmode.ai/guide/how-to-add-loras-wan-22",
+      "snippet": "Import Wan 2.2 Prime video LoRAs on ClipMode — high/low noise pairs, Civitai sources, scale, triggers, and one-click library import."
+    },
+    {
+      "title": "Spider-Man: Into the Spider-Verse (2018) - IMDb",
+      "url": "https://www.imdb.com/title/tt4633694",
+      "snippet": "Dec 14, 2018 · Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from …"
+    },
+    {
+      "title": "Wan 2.2 I2V 14B LoRA Training with AI Toolkit | Image-to-Video",
+      "url": "https://www.runcomfy.com/trainer/ai-toolkit/wan-2-2-i2v-14b-lora-training",
+      "snippet": "Train Wan 2.2 I2V 14B image-to-video LoRAs with the Ostris AI Toolkit. This guide explains dataset design for motion, style and character LoRAs, Wan's dual high/low-noise experts, multi-stage settings, recommended frame counts and resolutions, and how to run I2V LoRA training on 24GB local GPUs or RunComfy's H100/H200 cloud."
+    },
+    {
+      "title": "Watch Spider-Man: Into the Spider-Verse | Netflix",
+      "url": "https://www.netflix.com/title/81002747",
+      "snippet": "Watch Spider-Man: Into the Spider-Verse | Netflix. After being bitten by a radioactive spider, Brooklyn teen Miles Morales gets a …"
+    }
+  ]
+}

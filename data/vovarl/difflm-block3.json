@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vovaRL/DiffLM-block3",
+  "slug": "vovarl-difflm-block3",
+  "author": "vovaRL",
+  "url": "https://huggingface.co/vovaRL/DiffLM-block3",
+  "created_at": "2026-09-04T20:34:53.000Z",
+  "updated_at": "2026-09-05T01:45:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 117,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5060105786,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleinanzeigen – früher eBay Kleinanzeigen. Anzeigen gratis inserieren ...",
+      "url": "https://www.kleinanzeigen.de/?msockid=35525186eb23608d04ec464deae9617b",
+      "snippet": "Suche im Umkreis des gewählten Orts oder PLZ. Finden. Inserieren. Meins. Start. Merkliste. Nachrichten. Anzeige aufgeben. Um …"
+    },
+    {
+      "title": "GitHub - bytedance/DiffLM: Findings of ACL'25 DiffLM: Controllable ...",
+      "url": "https://github.com/bytedance/DiffLM",
+      "snippet": "Findings of ACL'25 DiffLM: Controllable Synthetic Data Generation via Diffusion Language Models - bytedance/DiffLM"
+    },
+    {
+      "title": "eBay Kleinanzeigen ist jetzt Kleinanzeigen.",
+      "url": "https://www.kleinanzeigen.de/s-kategorien.html?msockid=35525186eb23608d04ec464deae9617b",
+      "snippet": "Willkommen bei Kleinanzeigen. Melde dich hier an, oder erstelle ein neues Konto, damit du:"
+    },
+    {
+      "title": "DiffLM/README.md at main · bytedance/DiffLM · GitHub",
+      "url": "https://github.com/bytedance/DiffLM/blob/main/README.md",
+      "snippet": "Findings of ACL'25 DiffLM: Controllable Synthetic Data Generation via Diffusion Language Models - DiffLM/README.md at main · bytedance/DiffLM"
+    },
+    {
+      "title": "Kleinanzeigen.com - Kostenlose Kleinanzeigen",
+      "url": "https://de.kleinanzeigen.com/",
+      "snippet": "196.520 Kleinanzeigen gefunden. Kostenlos, schnell und einfach Kleinanzeigen aufgeben sofort online! Jetzt finden oder inserieren …"
+    }
+  ]
+}

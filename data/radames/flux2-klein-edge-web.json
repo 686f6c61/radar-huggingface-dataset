@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "radames/flux2-klein-edge-web",
+  "slug": "radames-flux2-klein-edge-web",
+  "author": "radames",
+  "url": "https://huggingface.co/radames/flux2-klein-edge-web",
+  "created_at": "2026-09-05T00:55:46.000Z",
+  "updated_at": "2026-09-05T06:38:47.000Z",
+  "license": "flux-2-klein",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-image",
+    "image-to-image",
+    "flux2",
+    "webgpu",
+    "wgsl",
+    "int8",
+    "int4",
+    "browser",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9048360333,
+  "storage_human": "9.0 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iLovePDF | Online PDF tools for PDF lovers",
+      "url": "https://www.ilovepdf.com/",
+      "snippet": "iLovePDF is an online service to work with PDF files completely free and easy to use. Merge PDF, split PDF, compress PDF, office to …"
+    },
+    {
+      "title": "radames/flux2-klein-edge-web · Hugging Face",
+      "url": "https://huggingface.co/radames/flux2-klein-edge-web",
+      "snippet": "FLUX.2 Klein 4B — browser weights The weights behind radames/flux-klein-web, a demo that runs the full FLUX.2 Klein 4B pipeline inside a browser tab: the transformer in hand-written WGSL (WebGPU), the distilled text encoder and BFL's distilled VAE through onnxruntime-web. The page streams these files straight into the browser and keeps them in the origin private file system, so a second ..."
+    },
+    {
+      "title": "Merge PDF files online. Free service to merge PDF - iLovePDF",
+      "url": "https://www.ilovepdf.com/merge_pdf",
+      "snippet": "Time left - seconds- Upload speed - MB/S Uploaded Merging PDFs... © iLovePDF 2026 ® - Your PDF Editor Woops! Something is …"
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux2: Official inference repo for FLUX.2 models",
+      "url": "https://github.com/black-forest-labs/flux2",
+      "snippet": "Official inference repo for FLUX.2 models. Contribute to black-forest-labs/flux2 development by creating an account on GitHub."
+    },
+    {
+      "title": "iLovePDF | Free PDF Tools",
+      "url": "https://www.ilovepdf.io/",
+      "snippet": "iLovePDF now lets users edit existing text inside a PDF online, so a typo, price, date, or name can be changed without converting the …"
+    }
+  ]
+}

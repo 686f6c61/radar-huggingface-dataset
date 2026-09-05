@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "azherali/Riazi-8B-GRPO-Lora",
+  "slug": "azherali-riazi-8b-grpo-lora",
+  "author": "azherali",
+  "url": "https://huggingface.co/azherali/Riazi-8B-GRPO-Lora",
+  "created_at": "2026-09-03T06:42:12.000Z",
+  "updated_at": "2026-09-05T10:41:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "unsloth",
+    "arxiv:2402.03300",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8983887017,
+  "storage_human": "9.0 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cafetería del Palacio Real - Madrid ️ Opiniones, Horario y Dirección ...",
+      "url": "https://cafeterisimos.com/cafeteria-del-palacio-real-madrid/",
+      "snippet": "Datos, contacto, información, opiniones y horarios de Cafetería del Palacio Real - Madrid. ¡Descúbrelo!"
+    },
+    {
+      "title": "azherali/Riazi-8B-GRPO-Lora · Hugging Face",
+      "url": "https://huggingface.co/azherali/Riazi-8B-GRPO-Lora",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use azherali/Riazi-8B-GRPO-Lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use azherali/Riazi-8B-GRPO-Lora with Transformers:"
+    },
+    {
+      "title": "Cafetería del Palacio Real - Centro, 28013 Madrid, Spain - Cybo",
+      "url": "https://es.cybo.com/ES-biz/cafeter%C3%ADa-del-palacio-real",
+      "snippet": "Cafetería del Palacio Real se encuentra en Madrid, Comunidad de Madrid. Esta empresa opera en la siguiente industria: Cafés."
+    },
+    {
+      "title": "azherali/Riazi-8B-Lora · Hugging Face",
+      "url": "https://huggingface.co/azherali/Riazi-8B-Lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cafetería del Palacio Real - Restaurant Guru",
+      "url": "https://es.restaurantguru.com/Cafeteria-Palacio-Real-Madrid",
+      "snippet": "Aug 6, 2026 · Algunos de sus visitantes aconsejan probar el magnífico café de Cafetería del Palacio Real. Por si todo esto fuera …"
+    }
+  ]
+}

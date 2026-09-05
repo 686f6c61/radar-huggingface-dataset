@@ -5,7 +5,7 @@
   "author": "senaro",
   "url": "https://huggingface.co/senaro/atlasv23-qwen3-8-27b-gguf",
   "created_at": "2026-08-15T02:42:46.000Z",
-  "updated_at": "2026-08-15T14:37:01.000Z",
+  "updated_at": "2026-08-19T10:08:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 397,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -41,8 +41,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-18T10:08:38.763Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

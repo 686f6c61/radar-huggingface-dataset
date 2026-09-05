@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3",
+  "slug": "maheshrawat18-qwen3-8b-mentay-grpo-aware-v3",
+  "author": "maheshrawat18",
+  "url": "https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3",
+  "created_at": "2026-09-05T00:40:25.000Z",
+  "updated_at": "2026-09-05T00:40:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
+    "base_model:finetune:maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186079048,
+  "storage_human": "186 MB",
+  "base_model": "maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3 · Hugging Face",
+      "url": "https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3",
+      "snippet": "Instructions to use maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Connection fecebook - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36078047-connection-fecebook",
+      "snippet": "Jun 16, 2019 · Meilleure réponse: Bonsoir, vous parlez de facebook sur ordinateur ? ou sur 1 autre support ? Pour se connecter à …"
+    },
+    {
+      "title": "maheshrawat18/Qwen3-8B-grpo-emotion-v3 at main - Hugging Face",
+      "url": "https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v3/tree/main",
+      "snippet": "Load model with FastModel ... main Qwen3-8B-grpo-emotion-v3 Ctrl+K Ctrl+K 1 contributor History:4 commits maheshrawat18 Upload model trained with Unsloth 288b1ba verifiedabout 8 hours ago .gitattributes Safe 1.57 kBUpload model trained with Unslothabout 8 hours ago README.md 585 BytesUpload README.md with huggingface_hubabout 8 hours ago ..."
+    },
+    {
+      "title": "Cómo registrarse en Facebook y configurar un nuevo perfil - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2892-crear-una-cuenta-de-facebook/",
+      "snippet": "Jun 22, 2022 · Para utilizar Facebook es necesario registrarte antes y crear una cuenta personal en la red social. El procedimiento es …"
+    }
+  ]
+}

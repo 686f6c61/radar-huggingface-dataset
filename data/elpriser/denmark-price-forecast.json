@@ -5,7 +5,7 @@
   "author": "Elpriser",
   "url": "https://huggingface.co/Elpriser/denmark-price-forecast",
   "created_at": "2026-07-30T19:17:23.000Z",
-  "updated_at": "2026-09-03T12:14:08.000Z",
+  "updated_at": "2026-09-04T12:14:01.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-regression",

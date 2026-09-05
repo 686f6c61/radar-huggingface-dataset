@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Flourence123/Epileptogenic-Cortical-Lesion-Detection-Benchmark",
+  "slug": "flourence123-epileptogenic-cortical-lesion-detection-benchmark",
+  "author": "Flourence123",
+  "url": "https://huggingface.co/Flourence123/Epileptogenic-Cortical-Lesion-Detection-Benchmark",
+  "created_at": "2026-08-23T09:59:44.000Z",
+  "updated_at": "2026-09-05T08:32:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120261924161,
+  "storage_human": "120.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dubizzle UAE Classifieds - Best place to rent a property, sell a car or ...",
+      "url": "https://uae.dubizzle.com/",
+      "snippet": "dubizzle is your leading free classifieds website in UAE to buy, sell and find anything. Find properties, cars, jobs, or items for sale in …"
+    },
+    {
+      "title": "Detection of Epileptogenic Focal Cortical Dysplasia Using Graph Neural ...",
+      "url": "https://lausr.org/dashboard/?doi=10.1001%2Fjamaneurol.2024.5406",
+      "snippet": "Existing automated methods for FCD detection are limited by high numbers of false-positive predictions, hampering their clinical utility. Objective To evaluate the efficacy and interpretability of graph neural networks in automatically detecting FCD lesions on MRI scans."
+    },
+    {
+      "title": "Buy & sell motors in UAE | dubizzle",
+      "url": "https://uae.dubizzle.com/motors/",
+      "snippet": "Buy & sell used cars, motorcycles, special number plates, truck vehicles, automotive parts & accessories online at cheap prices in …"
+    },
+    {
+      "title": "Detection of Epileptogenic Focal Cortical Dysplasia Using Graph Neural ...",
+      "url": "https://jamanetwork.com/journals/jamaneurology/fullarticle/2830410",
+      "snippet": "This study evaluates the efficacy and interpretability of graph neural networks in automatically detecting focal cortical dysplasia lesions on magnetic resonance imaging scans."
+    },
+    {
+      "title": "دوبيزل كل المدن اعلانات مبوبة مجانية - أفضل مكان لتأجير عقار, بيع سيارة ...",
+      "url": "https://uae.dubizzle.com/ar/",
+      "snippet": "دوبيزل هو مكانك المناسب للاعلانات المبوبة المجانية في كل المدن لبيع وشراء أي شيء. أيجاد عقارات, سيارات, وظائف, و أي غرض للبيع في كل المدن"
+    }
+  ]
+}

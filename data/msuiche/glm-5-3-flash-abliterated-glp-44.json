@@ -5,7 +5,7 @@
   "author": "msuiche",
   "url": "https://huggingface.co/msuiche/GLM-5.3-Flash-abliterated-GLP-44",
   "created_at": "2026-08-27T01:51:52.000Z",
-  "updated_at": "2026-08-30T14:28:40.000Z",
+  "updated_at": "2026-09-04T11:25:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 22,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 720896,
   "parameters_human": "720896",
-  "storage_bytes": 5774784,
-  "storage_human": "6 MB",
+  "storage_bytes": 11549920,
+  "storage_human": "12 MB",
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"

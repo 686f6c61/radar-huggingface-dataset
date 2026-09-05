@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sapolas0730/japanese-gpt2-medium-formal-fullft",
+  "slug": "sapolas0730-japanese-gpt2-medium-formal-fullft",
+  "author": "Sapolas0730",
+  "url": "https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-fullft",
+  "created_at": "2026-09-05T01:32:32.000Z",
+  "updated_at": "2026-09-05T05:57:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "instruction-tuning",
+    "japanese",
+    "text-generation",
+    "ja",
+    "arxiv:2406.08464",
+    "base_model:rinna/japanese-gpt2-medium",
+    "base_model:finetune:rinna/japanese-gpt2-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 336128000,
+  "parameters_human": "336.1M",
+  "storage_bytes": 2689084416,
+  "storage_human": "2.7 GB",
+  "base_model": "rinna/japanese-gpt2-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki - Online Hry Zdarma - Hrát Nyní!",
+      "url": "https://poki.com/cz?msockid=07d96a4743336c2815dc7d8c42c16da0",
+      "snippet": "Užijte si svět online her zdarma s Poki! Hrajte okamžitě, bez stahování, a užívejte si hry kompatibilní se všemi zařízeními."
+    },
+    {
+      "title": "Sapolas0730/japanese-gpt2-medium-formal-fullft · Hugging Face",
+      "url": "https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-fullft",
+      "snippet": "既知の制約 ライセンス japanese-gpt2-medium-formal-fullft rinna/japanese-gpt2-medium（GPT-2アーキテクチャ、336M）を、カジュアルな日本語文をフォーマルな日本語文に変換する指示応答データでフルファインチューニングしたモデルです。"
+    },
+    {
+      "title": "Poki - Online Hry Zdarma - Hrať Teraz!",
+      "url": "https://poki.com/sk?msockid=07d96a4743336c2815dc7d8c42c16da0",
+      "snippet": "Objavte svet bezplatných online hier s Poki! Hrajte okamžite, bez sťahovania, a užívajte si hry kompatibilné so všetkými zariadeniami."
+    },
+    {
+      "title": "Sapolas0730/japanese-gpt2-medium-formal-lora · Hugging Face",
+      "url": "https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-lora",
+      "snippet": "Instructions to use Sapolas0730/japanese-gpt2-medium-formal-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Online Hry Zdarma na CrazyGames | Hrajte Hned Teď!",
+      "url": "https://www.crazygames.com/cz/",
+      "snippet": "Zahrajte si zdarma online hry na CrazyGames, cože je to nejlepší místo pro hraní vysoce kvalitních her v prohlížeči. Každý den …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "speach1sdef178/MiniMax-H3-Semantic-Bridge",
+  "slug": "speach1sdef178-minimax-h3-semantic-bridge",
+  "author": "speach1sdef178",
+  "url": "https://huggingface.co/speach1sdef178/MiniMax-H3-Semantic-Bridge",
+  "created_at": "2026-09-05T09:02:59.000Z",
+  "updated_at": "2026-09-05T10:29:02.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "video-generation",
+    "semantic-adapter",
+    "representation-learning",
+    "distillation",
+    "research",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19792650,
+  "storage_human": "20 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Potato Pizza (Authentic Italian Pizza con Patate) - Christina's Cucina",
+      "url": "https://www.christinascucina.com/authentic-italian-potato-pizza-con-patate-idaho-potatoes/",
+      "snippet": "Jan 12, 2015 · Potato pizza is one of the most surprisingly delicious pizzas you’ll ever try. This authentic Italian potato pizza recipe is …"
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "MiniMax H3 is a general-purpose, omni-modal generative system. It supports unified understanding of multimodal contexts composed of text, images, video, and audio, and can generate video with native stereo audio at resolutions up to 2K and durations of up to 15 seconds."
+    },
+    {
+      "title": "Homemade Potato Pizza - Two Ways Recipe - An Italian in my Kitchen",
+      "url": "https://anitalianinmykitchen.com/potato-pizza/",
+      "snippet": "Feb 28, 2024 · Authentic Italian Potato Pizza, the Perfect Pizza Dough is made into a Tasty Potato Pizza done two ways. Both easy …"
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "MiniMax H3 is a general-purpose, omni-modal generative system. It supports unified understanding of multimodal contexts composed of text, images, video, and audio, and can generate video with native stereo audio at resolutions up to 2K and durations of up to 15 seconds."
+    },
+    {
+      "title": "Potato Pizza Recipe – How To Make Italy’s Famous Pizza A Taglio",
+      "url": "https://eatingarounditaly.com/potato-pizza/",
+      "snippet": "Mar 6, 2023 · Potato pizza is super easy to recreate at home and it’s a hit for even the pickiest eaters. Think pillowy focaccia with a …"
+    }
+  ]
+}

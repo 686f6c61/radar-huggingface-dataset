@@ -5,7 +5,7 @@
   "author": "msuiche",
   "url": "https://huggingface.co/msuiche/Qwen3.8-Flash-Next-abliterated-GLP-47",
   "created_at": "2026-08-27T01:51:50.000Z",
-  "updated_at": "2026-08-30T07:57:46.000Z",
+  "updated_at": "2026-09-04T11:25:59.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 481280,
   "parameters_human": "481280",
-  "storage_bytes": 3858016,
-  "storage_human": "4 MB",
+  "storage_bytes": 7716384,
+  "storage_human": "8 MB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "ibyteohdear",
   "url": "https://huggingface.co/ibyteohdear/Lightricks-LTX-2-DISTILLED-10-Eros",
   "created_at": "2026-06-24T12:43:54.000Z",
-  "updated_at": "2026-09-04T05:51:39.000Z",
+  "updated_at": "2026-09-05T04:12:33.000Z",
   "license": "ltx-2-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "image-to-video",
@@ -57,8 +57,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5994828913874,
-  "storage_human": "5994.8 GB",
+  "storage_bytes": 5450005722450,
+  "storage_human": "5450.0 GB",
   "base_model": null,
   "formats": [
     "diffusers"

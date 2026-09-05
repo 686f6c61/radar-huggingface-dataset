@@ -5,7 +5,7 @@
   "author": "molbal",
   "url": "https://huggingface.co/molbal/krea2-gguf",
   "created_at": "2026-06-24T21:12:56.000Z",
-  "updated_at": "2026-08-28T21:07:45.000Z",
+  "updated_at": "2026-09-04T09:12:41.000Z",
   "license": "krea-2-community-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
-  "storage_bytes": 118803699872,
-  "storage_human": "118.8 GB",
+  "storage_bytes": 126340136864,
+  "storage_human": "126.3 GB",
   "base_model": "krea/Krea-2-Raw, krea/Krea-2-Turbo",
   "formats": [
     "gguf"

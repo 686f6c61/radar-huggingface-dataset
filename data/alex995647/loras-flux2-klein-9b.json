@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Alex995647/loras-flux2-klein-9b",
+  "slug": "alex995647-loras-flux2-klein-9b",
+  "author": "Alex995647",
+  "url": "https://huggingface.co/Alex995647/loras-flux2-klein-9b",
+  "created_at": "2026-09-05T01:47:21.000Z",
+  "updated_at": "2026-09-05T03:56:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image",
+    "mirror",
+    "base_model:black-forest-labs/FLUX.2-klein-9B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50743237948,
+  "storage_human": "50.7 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-9B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Nejnavštěvovanější český internetový portál nabízející vyhledávač, e-mail, aktuální zprávy, předpověď počasí a odkazy, které se …"
+    },
+    {
+      "title": "Flux2.Klein LorAs - a Dh3lem4G Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Dh3lem4G/flux2klein-loras",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Dh3lem4G"
+    },
+    {
+      "title": "TV program dnes, večer, zítra a na 14 dní - 150+ televizních stanic",
+      "url": "https://tv.seznam.cz/",
+      "snippet": "Televizní program českých i zahraničních stanic. V přehledném TV programu od Seznamu zjistíte, co dávají v TV dnes, večer, zítra a …"
+    },
+    {
+      "title": "FLUX.2 Klein 4B & 9B LoRA Training with Ostris AI Toolkit",
+      "url": "https://www.runcomfy.com/trainer/ai-toolkit/flux-2-klein-lora-training",
+      "snippet": "Train FLUX.2 Klein 4B and 9B LoRAs with Ostris AI Toolkit. This guide covers Base vs Distilled expectations, 4B/9B compatibility rules, dataset design for character/style/product LoRAs, VRAM planning, quantization settings, and how to fix common Klein-specific issues like 9B collapse patterns."
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě. Přejít na Seznam.cz"
+    }
+  ]
+}

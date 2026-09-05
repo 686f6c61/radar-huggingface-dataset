@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SAIFIINDUSTRIES/Qwen2.5-14B-Instruct-1M",
+  "slug": "saifiindustries-qwen2-5-14b-instruct-1m",
+  "author": "SAIFIINDUSTRIES",
+  "url": "https://huggingface.co/SAIFIINDUSTRIES/Qwen2.5-14B-Instruct-1M",
+  "created_at": "2026-09-05T09:23:00.000Z",
+  "updated_at": "2026-09-05T09:23:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2501.15383",
+    "base_model:Qwen/Qwen2.5-14B",
+    "base_model:finetune:Qwen/Qwen2.5-14B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29540134000,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen2.5-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Docs",
+      "url": "https://www.docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "Qwen/Qwen2.5-14B-Instruct-1M · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct-1M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Docs: Sign-in",
+      "url": "https://docs.google.com/document/u/1/",
+      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct-Copy - Hugging Face",
+      "url": "https://huggingface.co/SAIFIINDUSTRIES/Qwen2.5-Coder-14B-Instruct-Copy",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Vids: Sign-in",
+      "url": "https://docs.google.com/videos/create",
+      "snippet": "Google Vids is an AI-powered video creation and editing tool. Use it to AI-generate videos with Gemini Omni, record your screen, …"
+    }
+  ]
+}

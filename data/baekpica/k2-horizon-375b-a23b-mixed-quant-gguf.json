@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF",
+  "slug": "baekpica-k2-horizon-375b-a23b-mixed-quant-gguf",
+  "author": "Baekpica",
+  "url": "https://huggingface.co/Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF",
+  "created_at": "2026-09-04T08:44:56.000Z",
+  "updated_at": "2026-09-05T08:59:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "k2-horizon",
+    "mixed-quant",
+    "iq1_s",
+    "iq1_m",
+    "iq2_xxs",
+    "iq2_xs",
+    "imatrix",
+    "moe",
+    "text-generation",
+    "base_model:IFM/K2-Horizon-375B-A23B",
+    "base_model:quantized:IFM/K2-Horizon-375B-A23B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 379167159168,
+  "parameters_human": "379.17B",
+  "storage_bytes": 94973494323,
+  "storage_human": "95.0 GB",
+  "base_model": "IFM/K2-Horizon-375B-A23B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Control Panel in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/2691-open-control-panel-windows-10-a.html",
+      "snippet": "Mar 26, 2026 · Settings is a modern touch friendly version of the Control Panel that will eventually replace the Control Panel in …"
+    },
+    {
+      "title": "Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF",
+      "snippet": "Instructions to use Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "List of Commands to Open Control Panel Items in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/86339-list-commands-open-control-panel-items-windows-10-a.html",
+      "snippet": "Mar 26, 2026 · The Control Panel allows you to view and change settings (controls) for Windows via applets. Settings is a modern …"
+    },
+    {
+      "title": "Baekpica/K2-Horizon-375B-A23B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Baekpica/K2-Horizon-375B-A23B-GGUF",
+      "snippet": "Instructions to use Baekpica/K2-Horizon-375B-A23B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Change Power Plan Settings in Windows 10 | Tutorials",
+      "url": "https://www.tenforums.com/tutorials/2843-change-power-plan-settings-windows-10-a.html",
+      "snippet": "Apr 22, 2020 · How to Change Power Plan Settings in Windows 10 A power plan is a collection of hardware and system settings that …"
+    }
+  ]
+}

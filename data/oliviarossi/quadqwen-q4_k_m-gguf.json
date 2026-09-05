@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/QuadQwen-Q4_K_M-GGUF",
+  "slug": "oliviarossi-quadqwen-q4_k_m-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/QuadQwen-Q4_K_M-GGUF",
+  "created_at": "2026-09-05T09:28:54.000Z",
+  "updated_at": "2026-09-05T09:30:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "moe",
+    "qwen",
+    "qwen3",
+    "qwen3.5",
+    "qwen3.6",
+    "code",
+    "coding",
+    "agent",
+    "tool-calling",
+    "reasoning",
+    "thinking",
+    "gated-deltanet",
+    "hybrid-attention",
+    "merge",
+    "dare-ties",
+    "slerp",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:OliviaRossi/QuadQwen",
+    "base_model:quantized:OliviaRossi/QuadQwen",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 21166782336,
+  "storage_human": "21.2 GB",
+  "base_model": "OliviaRossi/QuadQwen",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "谢思慧 - Programme Manager | INSEAD | Creating Impactful Executive ...",
+      "url": "https://sg.linkedin.com/in/emelynnsiah/zh-cn",
+      "snippet": "Hello LinkedIn community! 👋 I’m Emelynn, a Programme Manager at INSEAD Executive Education, where I support the design and …"
+    },
+    {
+      "title": "OliviaRossi/QuadQwen · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/QuadQwen",
+      "snippet": "By combining agentic code generation, autonomous reasoning traces, multi-turn environment interaction, and multi-step verification into a single pure-text causal language model, QuadQwen operates as an agentic coding and reasoning powerhouse."
+    },
+    {
+      "title": "谢思惠 - 百度百科",
+      "url": "https://baike.baidu.com/item/%E8%B0%A2%E6%80%9D%E6%83%A0/3063546",
+      "snippet": "国务院政策研究室原副主任、农业专家杨雍哲先生对谢思惠同学的事迹作出如下点评：谢思惠同学的生动事迹，向我们展示了大学生下 …"
+    },
+    {
+      "title": "OliviaRossi/QuadQwen-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/QuadQwen-Q4_K_M-GGUF",
+      "snippet": "Instructions to use OliviaRossi/QuadQwen-Q4_K_M-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "9 份“谢思慧”的职业档案 | 领英 - 领英 (中国)",
+      "url": "https://cn.linkedin.com/pub/dir/%E6%80%9D%E6%85%A7/%E8%B0%A2/cn-0-%E4%B8%AD%E5%9B%BD",
+      "snippet": "在领英上查看“谢思慧”的职业档案。 有 9 位职场人士的姓名为“谢思慧”，位使用领英交流信息、观点和工作机会。"
+    }
+  ]
+}

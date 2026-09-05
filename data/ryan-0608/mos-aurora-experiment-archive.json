@@ -5,7 +5,7 @@
   "author": "ryan-0608",
   "url": "https://huggingface.co/ryan-0608/MoS-Aurora-Experiment-Archive",
   "created_at": "2026-08-06T01:26:45.000Z",
-  "updated_at": "2026-09-04T06:28:27.000Z",
+  "updated_at": "2026-09-05T00:16:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1121019329962,
-  "storage_human": "1121.0 GB",
+  "storage_bytes": 1203693554267,
+  "storage_human": "1203.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

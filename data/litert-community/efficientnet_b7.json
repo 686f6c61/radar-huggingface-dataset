@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "litert-community/efficientnet_b7",
+  "slug": "litert-community-efficientnet_b7",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/efficientnet_b7",
+  "created_at": "2026-02-08T02:59:18.000Z",
+  "updated_at": "2026-09-05T01:54:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "vision",
+    "image-classification",
+    "google",
+    "computer-vision",
+    "dataset:imagenet-1k",
+    "arxiv:1905.11946",
+    "base_model:google/efficientnet-b7",
+    "base_model:quantized:google/efficientnet-b7",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 141,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 557285560,
+  "storage_human": "557 MB",
+  "base_model": "google/efficientnet-b7",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "ImageNet-1k",
+      "metric": "Top 1 Accuracy (Full Precision)",
+      "value": 0.841
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "ImageNet-1k",
+      "metric": "Top 5 Accuracy (Full Precision)",
+      "value": 0.969
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT continues the legacy of TensorFlow Lite as the trusted, high-performance runtime for on-device AI. Featuring advanced …"
+    },
+    {
+      "title": "litert-community/efficientnet_b7 · Hugging Face",
+      "url": "https://huggingface.co/litert-community/efficientnet_b7",
+      "snippet": "EfficientNet B7 EfficientNet B7 model pre-trained on ImageNet-1k. Intended uses & limitations The model files were converted from pretrained weights from PyTorch Vision. The models may have their own licenses or terms and conditions derived from PyTorch Vision and the dataset used for training."
+    },
+    {
+      "title": "LiteRT: High-Performance On-Device Machine Learning Framework",
+      "url": "https://developers.google.com/edge/litert",
+      "snippet": "Jul 17, 2026 · LiteRT isn't just new; it's the next generation of the world's most widely deployed machine learning runtime. It powers …"
+    },
+    {
+      "title": "litert-community/efficientnet_b7 at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/efficientnet_b7/tree/main",
+      "snippet": "Community Use this model main efficientnet_b7 336 MB 1 contributor History: 5 commits snnn001"
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "Updated 7 days ago • 1.06M • 396 Updated 8 days ago • 376k • 188 Sentence Similarity • Updated Jun 2 • 1.82k • 71 LiteRT models …"
+    }
+  ]
+}

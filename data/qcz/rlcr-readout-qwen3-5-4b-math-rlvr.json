@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qcz/rlcr-readout-qwen3.5-4b-math-rlvr",
+  "slug": "qcz-rlcr-readout-qwen3-5-4b-math-rlvr",
+  "author": "qcz",
+  "url": "https://huggingface.co/qcz/rlcr-readout-qwen3.5-4b-math-rlvr",
+  "created_at": "2026-09-05T08:44:52.000Z",
+  "updated_at": "2026-09-05T08:52:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reinforcement-learning",
+    "uncertainty-quantification",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42978861246,
+  "storage_human": "43.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "T-shirt, blouse of top voor meisjes kopen? Shop nu online - HEMA",
+      "url": "https://www.hema.nl/kind/meisjeskleding/meisjes-tops-shirts-blouses?msockid=1665682f40e4676c1dac7fe441806649",
+      "snippet": "T-shirts en blouses voor meisjes in de leukste prints koop je bij HEMA. Ontdek de fijne kwaliteit. Vandaag voor 22:00 besteld, binnen …"
+    },
+    {
+      "title": "qcz/rlcr-readout-qwen3.5-4b-math-rlcr · Hugging Face",
+      "url": "https://huggingface.co/qcz/rlcr-readout-qwen3.5-4b-math-rlcr",
+      "snippet": "Instructions to use qcz/rlcr-readout-qwen3.5-4b-math-rlcr with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Meisjes T-shirts | Koop nu online | Shoeby",
+      "url": "https://www.shoeby.nl/kinderen/meisjes/kleding/tops-en-t-shirts/t-shirts",
+      "snippet": "Shop de leukste meisjes T-shirts bij Shoeby T-shirts geven jouw outfit in een handomdraai een stoere of juist casual upgrade. Met …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Qwen Codeis an open-source AI agent for the terminal, optimized for Qwen models. It helps you understand large codebases, automate tedious work, and ship faster."
+    },
+    {
+      "title": "Basic T-shirts voor meisjes kopen? | Little Label",
+      "url": "https://littlelabel.nl/meisjes/basic-shirts.html",
+      "snippet": "Ondergoed en basic T-shirts voor meisjes Onder elke outfit hoort fijn en zacht ondergoed te zitten en bij ons in de webshop vind je …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "faxoi/llama-3.2-3b-price-engine",
+  "slug": "faxoi-llama-3-2-3b-price-engine",
+  "author": "faxoi",
+  "url": "https://huggingface.co/faxoi/llama-3.2-3b-price-engine",
+  "created_at": "2026-09-05T08:49:32.000Z",
+  "updated_at": "2026-09-05T08:54:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is Target's Return Policy? - Parade",
+      "url": "https://parade.com/living/target-return-policy",
+      "snippet": "Dec 10, 2024 · Basic Return Policy Target’s basic return policy is that they will accept most unopened items for return within 90 days …"
+    },
+    {
+      "title": "Llama 3.2 3B pricing & specs — Meta | CloudPrice",
+      "url": "https://cloudprice.net/models/meta-llama-3-2-3b",
+      "snippet": "Llama 3.2 3B is an AI model by Meta. 131K context window. Pricing from $0.040 per 1M input tokens. Available from 4 providers. Compare LLM pricing, specs, benchmarks, and costs across providers."
+    },
+    {
+      "title": "Unlocking Hassle-Free Returns: Guide to Target’s Return Policy",
+      "url": "https://www.globaeroshop.com/business/hassle-free-returns-to-targets-return-policy/",
+      "snippet": "Jul 7, 2025 · Discover how to make easy, stress-free returns with Target's return policy. Get the tips you need for a smooth return …"
+    },
+    {
+      "title": "unsloth/Llama-3.2-3B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Llama-3.2-3B",
+      "snippet": "Model Information The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out)."
+    },
+    {
+      "title": "How to Use Target Drive Up Curbside Service? - retailshout.com",
+      "url": "https://retailshout.com/how-to-use-target-drive-up-curbside-service/",
+      "snippet": "Mar 28, 2022 · What is Target Drive Up? Target drive up is a free curbside pickup service that allows you to order groceries from the …"
+    }
+  ]
+}

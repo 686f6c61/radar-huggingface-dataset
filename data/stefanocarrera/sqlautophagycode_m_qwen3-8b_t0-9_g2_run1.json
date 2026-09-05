@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g2_run1",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-9_g2_run1",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g2_run1",
+  "created_at": "2026-09-05T08:57:42.000Z",
+  "updated_at": "2026-09-05T08:57:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g8_run0 · Hugging Face",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g8_run0",
+      "snippet": "Instructions to use stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g8_run0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "sqlautophagycode_M_Qwen3-8B_t0.2_g1_run0 - Hugging Face",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g1_run0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/Login",
+      "snippet": "Sign in Use your Google Account Email or phone Forgot email? Type the text you hear or see Not your computer? Use a private …"
+    }
+  ]
+}

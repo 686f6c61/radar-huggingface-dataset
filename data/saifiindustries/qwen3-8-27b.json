@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SAIFIINDUSTRIES/Qwen3.8-27B",
+  "slug": "saifiindustries-qwen3-8-27b",
+  "author": "SAIFIINDUSTRIES",
+  "url": "https://huggingface.co/SAIFIINDUSTRIES/Qwen3.8-27B",
+  "created_at": "2026-09-05T09:01:52.000Z",
+  "updated_at": "2026-09-05T09:01:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Speedtest di Ookla - Il test globale per la velocità della tua banda larga",
+      "url": "https://www.speedtest.net/it",
+      "snippet": "Test your internet speed with Speedtest by Ookla, a free and reliable tool for desktop and mobile devices."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba's Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Settings | Speedtest by Ookla",
+      "url": "https://www.speedtest.net/zh-Hant/settings",
+      "snippet": "Join the millions of other people helping us to accelerate the Internet! By creating an account, you'll be able to access your historical …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "backpack-run",
   "url": "https://huggingface.co/backpack-run/SmolLM2-135M-Instruct-GGUF",
   "created_at": "2026-08-22T16:03:30.000Z",
-  "updated_at": "2026-08-22T16:04:35.000Z",
+  "updated_at": "2026-09-04T14:21:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 186,
+  "downloads_30d": 266,
   "trending_score": 0,
   "parameters": 134515008,
   "parameters_human": "134.5M",

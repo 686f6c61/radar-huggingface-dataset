@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/mainsweep-ctrl-s0-realign",
+  "slug": "jlsrls-mainsweep-ctrl-s0-realign",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/mainsweep-ctrl-s0-realign",
+  "created_at": "2026-09-05T00:48:27.000Z",
+  "updated_at": "2026-09-05T00:54:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1652472572,
+  "storage_human": "1.7 GB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "jlsrls/mainsweep-ctrl-s0-realign · Hugging Face",
+      "url": "https://huggingface.co/jlsrls/mainsweep-ctrl-s0-realign",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use jlsrls/mainsweep-ctrl-s0-realign with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use jlsrls/mainsweep-ctrl-s0-realign with Transformers:"
+    },
+    {
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
+    },
+    {
+      "title": "GitHub - GAIR-NLP/ReAlign: Reformatted Alignment",
+      "url": "https://github.com/GAIR-NLP/ReAlign",
+      "snippet": "This approach minimizes human annotation, hallucination, and the difficulty in scaling, remaining orthogonal to existing alignment techniques. Experimentally, ReAlign significantly boosts the general alignment ability, math reasoning, factuality, and readability of the LLMs."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

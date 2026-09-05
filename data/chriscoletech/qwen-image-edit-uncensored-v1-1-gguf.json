@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ChrisColeTech/qwen-image-edit-uncensored-v1.1-GGUF",
+  "slug": "chriscoletech-qwen-image-edit-uncensored-v1-1-gguf",
+  "author": "ChrisColeTech",
+  "url": "https://huggingface.co/ChrisColeTech/qwen-image-edit-uncensored-v1.1-GGUF",
+  "created_at": "2026-09-04T20:28:00.000Z",
+  "updated_at": "2026-09-05T09:53:10.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28983118398,
+  "storage_human": "29.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Михајло Пупин — Википедија",
+      "url": "https://sr.wikipedia.org/wiki/%D0%9C%D0%B8%D1%85%D0%B0%D1%98%D0%BB%D0%BE_%D0%9F%D1%83%D0%BF%D0%B8%D0%BD",
+      "snippet": "1.1.1Студије у Америци и докторат. 1.2Академска каријера и научно-истраживачки рад. 1.2.1Пупинови калемови. …"
+    },
+    {
+      "title": "qwen-image-edit-uncensored-v1.1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/ChrisColeTech/qwen-image-edit-uncensored-v1.1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mihajlo Pupin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mihajlo_Pupin",
+      "snippet": "1Early life and education. 2Studies in America and Ph.D. 3Professor at Columbia University. 4Pupin coils. 5World War I research. …"
+    },
+    {
+      "title": "ChrisColeTech/qwen-image-edit-uncensored-GGUF at main",
+      "url": "https://huggingface.co/ChrisColeTech/qwen-image-edit-uncensored-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mihajlo Pupin – Wikipedija / Википедија",
+      "url": "https://sh.wikipedia.org/wiki/Mihajlo_Pupin",
+      "snippet": "Mihajlo Pupin ili punim imenom Mihajlo Idvorski Pupin (Idvor, 9. oktobra 1854. [1][2] – New York, 12. martа 1935.) bio je srpski i …"
+    }
+  ]
+}

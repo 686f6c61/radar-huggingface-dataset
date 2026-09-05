@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "alluriaiprojects/radix-ui-qwen-7b-fused-sep-04-2026",
+  "slug": "alluriaiprojects-radix-ui-qwen-7b-fused-sep-04-2026",
+  "author": "alluriaiprojects",
+  "url": "https://huggingface.co/alluriaiprojects/radix-ui-qwen-7b-fused-sep-04-2026",
+  "created_at": "2026-09-05T00:41:14.000Z",
+  "updated_at": "2026-09-05T00:43:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693674,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=1b2402c2d4d46cdb0bf21509d5f66d05",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "alluriaiprojects/radix-ui-qwen-7b-fused-sep-04-2026 · Hugging Face",
+      "url": "https://huggingface.co/alluriaiprojects/radix-ui-qwen-7b-fused-sep-04-2026",
+      "snippet": "Instructions to use alluriaiprojects/radix-ui-qwen-7b-fused-sep-04-2026 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "GitHub - radiateall777/Qwen-7B: The official repo of Qwen-7B (通义千问-7B ...",
+      "url": "https://github.com/radiateall777/Qwen-7B",
+      "snippet": "Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. Additionally, based on the pretrained Qwen-7B, we release Qwen-7B-Chat, a large-model-based AI assistant, which is trained with alignment techniques. The features of the Qwen-7B series include:"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "evtefeev/code-search-net-tokenizer",
+  "slug": "evtefeev-code-search-net-tokenizer",
+  "author": "evtefeev",
+  "url": "https://huggingface.co/evtefeev/code-search-net-tokenizer",
+  "created_at": "2026-09-05T08:35:56.000Z",
+  "updated_at": "2026-09-05T08:35:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IBR ROOF SHEETING - riverbendsteelsuppliers.co.za",
+      "url": "http://riverbendsteelsuppliers.co.za/_webmoduledata/documents/ibrroofsheeting.pdf",
+      "snippet": "Table indicates standard stock available. IBR sheeting is available in standard lengths of 1.5 to 14 m, although lengths of up to 20 m …"
+    },
+    {
+      "title": "Adiii143/code-search-net-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/Adiii143/code-search-net-tokenizer",
+      "snippet": "Model Description This tokenizer was fine-tuned on the CodeSearchNet dataset, which contains millions of code snippets in multiple programming languages. The tokenizer was initialized with the GPT-2 tokenizer and then adapted to better handle the unique characteristics of programming language syntax and semantics."
+    },
+    {
+      "title": "IBR Profile - IBR World",
+      "url": "https://ibrworld.co.za/products/ibr-profile/",
+      "snippet": "IBR rooftop sheeting is a square fluted profile with an adequate covering width of 686mm, intended for use as side cladding or roofing …"
+    },
+    {
+      "title": "farid678/code-search-net-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/farid678/code-search-net-tokenizer",
+      "snippet": "Model Description This repository contains a custom tokenizer trained from the base GPT-2 tokenizer architecture, re-trained on the Python portion of the code_search_net dataset. The goal of this tokenizer is to better capture Python-specific syntax, keywords, identifiers, and code patterns (e.g. indentation, operators, common function/variable naming conventions) compared to the original GPT ..."
+    },
+    {
+      "title": "Roof Sheet Calculator — IBR & Corrugated | SA Property Tools",
+      "url": "https://sapropertytools.co.za/calculators/developer/roof-sheet-calculator.html",
+      "snippet": "Calculate IBR or corrugated roof sheets for any SA roof. Sheet count, ridge lengths and end-lap allowances for IBR 686 and …"
+    }
+  ]
+}

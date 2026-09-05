@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Timetocreate7777/Director_AI_PED_Qwen3.5-4B_Interpreter_LoRA",
+  "slug": "timetocreate7777-director_ai_ped_qwen3-5-4b_interpreter_lora",
+  "author": "Timetocreate7777",
+  "url": "https://huggingface.co/Timetocreate7777/Director_AI_PED_Qwen3.5-4B_Interpreter_LoRA",
+  "created_at": "2026-09-05T08:24:08.000Z",
+  "updated_at": "2026-09-05T09:42:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen",
+    "director-ai",
+    "transformers",
+    "unsloth",
+    "comfyui",
+    "camera-control",
+    "image-editing",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104961690,
+  "storage_human": "105 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[UA] Différences entre les sessions, les utilisateurs, les entrées, les ...",
+      "url": "https://support.google.com/analytics/answer/1257084?hl=fr",
+      "snippet": "Une page vue unique, telle que signalée dans le rapport Vue d'ensemble du contenu, regroupe les pages vues générées par un …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Previous Qwen3 Release Qwen3 (aka Qwen3-2504) We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5."
+    },
+    {
+      "title": "Hàm UNIQUE - Trình chỉnh sửa Google Tài liệu Trợ giúp",
+      "url": "https://support.google.com/docs/answer/10522653?hl=vi",
+      "snippet": "Hàm UNIQUE Trả lại các hàng đơn nhất trong dải ô nguồn đã cho, hủy các hàng trùng lặp. Hàng được Trả lại theo thứ tự mà chúng …"
+    },
+    {
+      "title": "Qwen Image Models Training 0 to Hero Level Tutorial LoRA and ... - GitHub",
+      "url": "https://github.com/FurkanGozukara/Stable-Diffusion/wiki/Qwen-Image-Models-Training-0-to-Hero-Level-Tutorial-LoRA-and-Fine-Tuning-Base-and-Edit-Model",
+      "snippet": "This tutorial covers how to do LoRA training and full Fine-Tuning / DreamBooth training on Qwen Image models. It covers both the Qwen Image base model and the Qwen Image Edit Plus 2509 model. This tutorial is the product of 21 days of full R&D, costing over $800 in cloud services to find the best configurations for training."
+    },
+    {
+      "title": "作业帮登录/注册",
+      "url": "https://www.zybang.com/saasplat/general_plat/mlogin.html",
+      "snippet": "作业帮是面向全国中小学生的移动学习平台！包含全国小学、初中、高中课题教材90%的题库，更有300万学霸在线答题，秒杀各 ..."
+    }
+  ]
+}

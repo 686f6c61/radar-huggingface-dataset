@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "21f1001712/nppe3-lowlight-superres",
+  "slug": "21f1001712-nppe3-lowlight-superres",
+  "author": "21f1001712",
+  "url": "https://huggingface.co/21f1001712/nppe3-lowlight-superres",
+  "created_at": "2026-09-05T09:35:57.000Z",
+  "updated_at": "2026-09-05T09:54:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-denoising",
+    "super-resolution",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7451754,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail – La messagerie avec espace de stockage gratuit de ...",
+      "url": "https://www.google.com/intl/fr/mail/help/about.html",
+      "snippet": "Gmail fonctionne sur tous les appareils Android ou iOS, et sur ordinateur. Triez vos messages, collaborez avec vos collègues ou …"
+    },
+    {
+      "title": "iitm-dlp-kaggle-competitions/notebooks/01_nppe3_lowlight ... - GitHub",
+      "url": "https://github.com/sahildev-ai1/iitm-dlp-kaggle-competitions/blob/main/notebooks/01_nppe3_lowlight_denoising_4xsr_rrdb.ipynb",
+      "snippet": "Contribute to sahildev-ai1/iitm-dlp-kaggle-competitions development by creating an account on GitHub."
+    },
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "GitHub - LokeshTiwari004/dlp_nppe3",
+      "url": "https://github.com/LokeshTiwari004/dlp_nppe3",
+      "snippet": "Contribute to LokeshTiwari004/dlp_nppe3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    }
+  ]
+}

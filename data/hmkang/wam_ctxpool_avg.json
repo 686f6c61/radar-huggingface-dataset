@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hmkang/wam_ctxpool_avg",
+  "slug": "hmkang-wam_ctxpool_avg",
+  "author": "hmkang",
+  "url": "https://huggingface.co/hmkang/wam_ctxpool_avg",
+  "created_at": "2026-09-05T09:51:08.000Z",
+  "updated_at": "2026-09-05T10:05:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "wan2.2",
+  "languages": [],
+  "tags": [
+    "wan2.2",
+    "safetensors",
+    "video-world-model",
+    "robotics",
+    "robocasa",
+    "context-pooling",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31408379712,
+  "storage_human": "31.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Troubleshoot Your Wifi Check for Outages Prepare to Talk to Your ISP How Much Speed Do You Need? Download Mobile Apps …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Speedtest d’Ookla – le test de vitesse de connexion global",
+      "url": "https://www.speedtest.net/fr",
+      "snippet": "Applications de bureau Dépanner Votre Wifi Vérifier les Pannes Préparez-vous à Parler à Votre Fournisseur d'Accès Internet De …"
+    },
+    {
+      "title": "ModelPool - Your AI Model Hub",
+      "url": "https://www.modelpool.net/",
+      "snippet": "Explore, discover, and integrate the latest AI models. ModelPool is your one-stop platform for cutting-edge AI models."
+    },
+    {
+      "title": "Test de débit Internet : Speedtest d'Orange en 1 clic !",
+      "url": "https://boutique.orange.fr/infos-conseils/internet/test-de-debit.html?msockid=298aaa86c59a612b3dadbd4dc46c60c8",
+      "snippet": "Sep 2, 2011 · Vous vous demandez comment tester votre débit internet ? Avec le speedtest d’Orange, en un clic, vous obtenez …"
+    }
+  ]
+}

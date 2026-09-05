@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "rapid-mlx/G9v3-39A5B-MLX-4bit",
+  "slug": "rapid-mlx-g9v3-39a5b-mlx-4bit",
+  "author": "rapid-mlx",
+  "url": "https://huggingface.co/rapid-mlx/G9v3-39A5B-MLX-4bit",
+  "created_at": "2026-09-05T01:37:59.000Z",
+  "updated_at": "2026-09-05T01:38:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "g9v3",
+    "moe",
+    "tool-calling",
+    "long-context",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:ai9stars/G9v3-39A5B",
+    "base_model:quantized:ai9stars/G9v3-39A5B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38967481920,
+  "parameters_human": "38.97B",
+  "storage_bytes": 22803310221,
+  "storage_human": "22.8 GB",
+  "base_model": "ai9stars/G9v3-39A5B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMAZON archiver une commande [Résolu] - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-38255175-amazon-archiver-une-commande",
+      "snippet": "Dec 10, 2025 · Bonjour à tous, Quand je consulte mes commandes la liste commence à s’allonger. Avant il y avait un bouton de type …"
+    },
+    {
+      "title": "rapid-mlx/G9v3-39A5B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/rapid-mlx/G9v3-39A5B-MLX-4bit",
+      "snippet": "Instructions to use rapid-mlx/G9v3-39A5B-MLX-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Compte Amazon verrouillé, commande annulée",
+      "url": "https://forums.commentcamarche.net/forum/affich-34962423-compte-amazon-verrouille-commande-annulee",
+      "snippet": "Oct 29, 2017 · Voici ce que cette adresse (adresse-verification@amazon.com) m’a envoyé : Cher client, Nous ne sommes pas en …"
+    },
+    {
+      "title": "GitHub - raullenchai/Rapid-MLX: The fastest local AI engine for Apple ...",
+      "url": "https://github.com/raullenchai/Rapid-MLX",
+      "snippet": "See alternative install methods and install security. The guided installer prefers a runnable model already cached on this Mac when it fits the RAM tier. Otherwise its quick first-chat download is lfm2.5-1b-4bit below 16 GB and qwen3.5-4b-4bit at 16 GB or above; larger quality picks remain available through rapid-mlx recipe and the model picker."
+    },
+    {
+      "title": "Commande Amazon : mauvais produit reçu , Amazon refuse de …",
+      "url": "https://forum.quechoisir.org/commande-amazon-mauvais-produit-recu-amazon-refuse-de-rembourser-malgre-un-renvoi-en-bonne-et-due-forme-t307612.html",
+      "snippet": "Sep 3, 2021 · Re: Commande Amazon : mauvais produit reçu , Amazon refuse de rembourser malgré un Renvoi en bonne et due …"
+    }
+  ]
+}

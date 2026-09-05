@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_format_numina_qwen3b",
+  "slug": "ishikaa-acquisition_generator_as_format_numina_qwen3b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_format_numina_qwen3b",
+  "created_at": "2026-09-05T00:49:58.000Z",
+  "updated_at": "2026-09-05T00:49:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porno Videa a Sexuální Filmy Zdarma - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://cz.pornhub.com/",
+      "snippet": "Pornhub vám nabízí neomezené množství porno videí zdarma s nejžhavějšími umělci pro dospělé. Užijte si největší amatérskou …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_format_numina_qwen7b · Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_format_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_format_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Porno videa a XXX filmy zdarma: Tube kanál se sexuálními videi",
+      "url": "https://cz.xhamster.com/",
+      "snippet": "Volně dostupná porno videa a exkluzivní XXX filmy, to vše máte k dispozici tady na xHamsteru. Streamujte okamžitě více než 6 …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=ishikaa%2Facquisition_generator_AS_format_numina_qwen7b",
+      "snippet": "ishikaa/acquisition_generator_AS_format_numina_qwen7b Text Generation • 8B•Updated 5 days ago• 322"
+    },
+    {
+      "title": "České porno | PVideo.cz - dlouhá porno videa zdarma",
+      "url": "https://pvideo.cz/category/ceske-porno/",
+      "snippet": "Jsme Češi a líbí se nám české holky a české porno. Na internetu je spousta českých porno videí, která vyhledáváme a pak je u nás …"
+    }
+  ]
+}

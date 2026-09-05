@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 77,
+  "downloads_30d": 78,
   "trending_score": 0,
   "parameters": 5123178051,
   "parameters_human": "5.12B",
@@ -41,8 +41,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-04T05:38:13.678Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

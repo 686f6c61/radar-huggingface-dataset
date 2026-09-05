@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Minhmc2077/AOI",
+  "slug": "minhmc2077-aoi",
+  "author": "Minhmc2077",
+  "url": "https://huggingface.co/Minhmc2077/AOI",
+  "created_at": "2026-09-04T13:26:10.000Z",
+  "updated_at": "2026-09-05T08:50:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 32513952000,
+  "storage_human": "32.5 GB",
+  "base_model": "Qwen/Qwen3-8B-GGUF, Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMBOSS : r/PAstudent - Reddit",
+      "url": "https://www.reddit.com/r/PAstudent/comments/v775cy/amboss/",
+      "snippet": "Jun 7, 2022 · AMBOSS Do any of you utilize AMBOSS? All my school offers us is Osmosis, but I honestly don't like the QBank and …"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy's AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Is Amboss worth it? : r/medicalschool - Reddit",
+      "url": "https://www.reddit.com/r/medicalschool/comments/1cx9wz1/is_amboss_worth_it/",
+      "snippet": "AMBOSS explanations place the answer in wider context, so you can better understand the concepts, whereas UWorld's …"
+    },
+    {
+      "title": "Aoi - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1960863287848299359",
+      "snippet": "Generate stunning anime art with the 'Aoi' model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Is AMBOSS worth it? | Student Doctor Network Forums",
+      "url": "https://forums.studentdoctor.net/threads/is-amboss-worth-it.1336216/",
+      "snippet": "Aug 28, 2018 · My school is running a 50% off discount on AMBOSS and I honestly have no idea what it is, why people use it, or if it …"
+    }
+  ]
+}

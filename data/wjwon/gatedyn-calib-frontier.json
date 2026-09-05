@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "WJwon/gatedyn-calib-frontier",
+  "slug": "wjwon-gatedyn-calib-frontier",
+  "author": "WJwon",
+  "url": "https://huggingface.co/WJwon/gatedyn-calib-frontier",
+  "created_at": "2026-09-05T08:39:09.000Z",
+  "updated_at": "2026-09-05T10:30:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29029714228,
+  "storage_human": "29.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "WJwon (Wonjun Song) - Hugging Face",
+      "url": "https://huggingface.co/WJwon",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; By using this site, you agree to the Terms of …"
+    },
+    {
+      "title": "Frontier AI Models: Live Top 10 Rankings, Evidence and Pricing ...",
+      "url": "https://benchlm.ai/frontier-ai-models",
+      "snippet": "See which AI models are on the frontier in September 2026. Compare the top 10 by score, exact-source evidence, pricing, and verified or candidate status."
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "HR26kk",
   "url": "https://huggingface.co/HR26kk/ULTRON-Core-512M-Instruct",
   "created_at": "2026-08-25T03:41:58.000Z",
-  "updated_at": "2026-08-25T03:42:09.000Z",
+  "updated_at": "2026-09-04T11:58:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,6 +24,7 @@
     "pytorch",
     "from-scratch",
     "ultron-core",
+    "mla",
     "en",
     "hi",
     "multilingual",
@@ -35,8 +36,8 @@
   "trending_score": 0,
   "parameters": 562382848,
   "parameters_human": "562.4M",
-  "storage_bytes": 1124819904,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 2249639808,
+  "storage_human": "2.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cheikh025/enemray-pipeline-reports-0509",
+  "slug": "cheikh025-enemray-pipeline-reports-0509",
+  "author": "cheikh025",
+  "url": "https://huggingface.co/cheikh025/enemray-pipeline-reports-0509",
+  "created_at": "2026-09-05T07:15:42.000Z",
+  "updated_at": "2026-09-05T11:17:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "enemray",
+    "status-dashboard",
+    "gemma-4",
+    "gemma-4-E4B",
+    "hassaniya",
+    "mauritania",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Program Ekle Kaldır | ShiftDelete.Net Forum - Türkiye'nin en iyi ...",
+      "url": "https://forum.shiftdelete.net/konular/program-ekle-kaldir.1330/",
+      "snippet": "May 27, 2007 · Merhaba benim sorunum şöyle.Denetim Masası->Program Ekle Kaldır penceresinde bilgisayarda kullanılan …"
+    },
+    {
+      "title": "cheikh025/enemray-merged · Hugging Face",
+      "url": "https://huggingface.co/cheikh025/enemray-merged",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Program ekle/kaldır dan kaldıramadığım yazılım",
+      "url": "https://forum.shiftdelete.net/konular/program-ekle-kaldir-dan-kaldiramadigim-yazilim.49299/",
+      "snippet": "Aug 20, 2008 · Program önce kaldırmak istediğiniz uygulamanın normal Uninstall'ını çalıştırıyor ve sonra ondan kalan registry …"
+    },
+    {
+      "title": "cheikh025/enemray-qwen3.5-2b-cpt-lora · Hugging Face",
+      "url": "https://huggingface.co/cheikh025/enemray-qwen3.5-2b-cpt-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ekle kaldır daki kaldıramadığım proğram - forum.shiftdelete.net",
+      "url": "https://forum.shiftdelete.net/konular/ekle-kaldir-daki-kaldiramadigim-program.31783/",
+      "snippet": "Apr 21, 2008 · sayın arkadaşlar evdeki pc de önceden 'ca' diye bir virüs proğramı kuruluydu bunu önceden bilmeyerekten kendi …"
+    }
+  ]
+}

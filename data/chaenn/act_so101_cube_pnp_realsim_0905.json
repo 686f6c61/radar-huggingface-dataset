@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Chaenn/act_so101_cube_pnp_realsim_0905",
+  "slug": "chaenn-act_so101_cube_pnp_realsim_0905",
+  "author": "Chaenn",
+  "url": "https://huggingface.co/Chaenn/act_so101_cube_pnp_realsim_0905",
+  "created_at": "2026-09-05T00:49:02.000Z",
+  "updated_at": "2026-09-05T00:49:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Chaenn/so101_cube_place_drprodsim_real_0905_1170",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707280,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Chaenn/act_so101_cube_pnp_realsim_0902 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/act_so101_cube_pnp_realsim_0902",
+      "snippet": "Instructions to use Chaenn/act_so101_cube_pnp_realsim_0902 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Chaenn/act_so101_cube_pnp_realsim_0902 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Chaenn/act_so101_cube_pnp_realsim_0904 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/act_so101_cube_pnp_realsim_0904",
+      "snippet": "Instructions to use Chaenn/act_so101_cube_pnp_realsim_0904 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    }
+  ]
+}

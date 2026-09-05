@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g7_run1",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-75_g7_run1",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g7_run1",
+  "created_at": "2026-09-05T00:48:07.000Z",
+  "updated_at": "2026-09-05T00:48:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Categories - XXX Movies Tube - Free Porn Movies at iXXX . com",
+      "url": "https://www.ixxx.com/a-z",
+      "snippet": "Categories - XXX Movies Tube - Free Porn Movies at iXXX . com Videos Popular videos New videos Top rated videos Categories …"
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g7_run1 · Hugging Face",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g7_run1",
+      "snippet": "Instructions to use stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g7_run1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "XXX Filme - Kostenlose Porno-Filme auf iXXX . Com",
+      "url": "https://www.ixxx.com/de-at/",
+      "snippet": "XXX Filme - Kostenlose Pornofilme auf iXXX . Com Preise Gratis & Premium Nur Premium Nur kostenlos Videos Beliebte Videos …"
+    },
+    {
+      "title": "How to Run Qwen 3 Locally in 2026: GGUF, llama.cpp, vLLM & the Hardware ...",
+      "url": "https://dexity.com/intel/run-qwen-locally-2026",
+      "snippet": "Qwen 3 is the most-run open-weight model family of 2026 — Apache 2.0, from a 0.6B model that fits on a laptop to the 235B-A22B Mixture-of-Experts flagship. The trick to running it locally is picking the right variant for your GPU: the 8B needs ~5–6 GB of VRAM, the 32B dense model ~20 GB, and the 30B-A3B MoE is the consumer sweet spot — it fits an RTX 4090 and hits ~25 tokens/sec because ..."
+    },
+    {
+      "title": "Free Ixxx Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/ixxx",
+      "snippet": "Check out free Ixxx porn videos on xHamster. Watch all Ixxx XXX vids right now!"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "pugant",
   "url": "https://huggingface.co/pugant/Qwen3.8-27B-MTP-Q4_0_ROCMFP4_STRIX_LEAN",
   "created_at": "2026-08-15T11:14:33.000Z",
-  "updated_at": "2026-09-03T19:12:24.000Z",
+  "updated_at": "2026-09-04T18:27:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 752,
+  "downloads_30d": 806,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

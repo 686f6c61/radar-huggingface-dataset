@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/Cosmos3-Nano",
+  "slug": "openintelligent123-cosmos3-nano",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/Cosmos3-Nano",
+  "created_at": "2026-09-05T09:17:15.000Z",
+  "updated_at": "2026-09-05T09:17:15.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "diffusers",
+    "safetensors",
+    "cosmos3_omni",
+    "nvidia",
+    "cosmos3",
+    "vllm",
+    "vllm-omni",
+    "sglang",
+    "sglang-diffusion",
+    "text, image, video, audio, and action generation",
+    "omnimodel",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15750057456,
+  "parameters_human": "15.75B",
+  "storage_bytes": 34970542758,
+  "storage_human": "35.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Little Seoul",
+      "url": "https://littleseoul.de/",
+      "snippet": "Herzlich willkommen bei Little Seoul in Bad Nauheim! Entdecke bei uns im Imbiss eine vielfältige Auswahl an köstlichen Kimbap und …"
+    },
+    {
+      "title": "cosmos3-nano Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/cosmos3-nano",
+      "snippet": "Generates physics-aware videos from text prompts or an image prompt for physical AI development."
+    },
+    {
+      "title": "Little Seoul, Bad Nauheim - Speisekarte, Preise und Bewertungen",
+      "url": "https://de.restaurantguru.com/Little-Seoul-Bad-Nauheim",
+      "snippet": "Jul 4, 2026 · Little Seoul in Bad Nauheim mit 4.1 von 5 bewertet auf Restaurant Guru: 144 Gästebewertungen, 3 Fotos. Speisekarte …"
+    },
+    {
+      "title": "cosmos3-nano Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/cosmos3-nano/modelcard",
+      "snippet": "NVIDIA Cosmos™is a world foundation model platform designed to accelerate the development of Physical AI by enabling machines to understand, simulate, and interact with the physical world across robotics, autonomous driving, and smart space environments, including industrial and factory-scale applications. Model Overview: Cosmos3-Nano Description"
+    },
+    {
+      "title": "Speisekarte Little Seoul in Bad Nauheim",
+      "url": "https://www.speisekarte.de/bad-nauheim/restaurant/little_seoul/speisekarte",
+      "snippet": "Apr 7, 2026 · Digitale Speisekarte von Little Seoul in Bad Nauheim ♥ Beliebte Gerichte und alle Infos für Deinen Restaurantbesuch"
+    }
+  ]
+}

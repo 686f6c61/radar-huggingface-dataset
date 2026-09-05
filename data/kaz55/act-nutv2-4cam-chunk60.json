@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-nutv2-4cam-chunk60",
+  "slug": "kaz55-act-nutv2-4cam-chunk60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-nutv2-4cam-chunk60",
+  "created_at": "2026-09-05T09:02:17.000Z",
+  "updated_at": "2026-09-05T09:02:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Kaz55/dg5f_ur5e_nutv2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714688,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HATTA RESORTS IS NOW CLOSED FOR THE SUMMER SEASON.",
+      "url": "https://www.visithatta.com/en/stay",
+      "snippet": "Explore unique glamping stays in Hatta Resorts, from Damani lodges and domes with plunge pools to campers and vintage campers. …"
+    },
+    {
+      "title": "Kaz55/act-newcable-combined-4cam-chunk60 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-newcable-combined-4cam-chunk60",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hatta Resorts",
+      "url": "https://www.hattaresorts.org/",
+      "snippet": "Jul 21, 2026 · Hatta Resorts offers premium farmhouses, private pool resorts, mountain retreats, and luxury holiday homes in Hatta, …"
+    },
+    {
+      "title": "Kaz55/act-newcablev5-4cam-chunk60 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-newcablev5-4cam-chunk60",
+      "snippet": "Instructions to use Kaz55/act-newcablev5-4cam-chunk60 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Kaz55/act-newcablev5-4cam-chunk60 with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the ..."
+    },
+    {
+      "title": "Hatta Resorts, Hatta (updated prices 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/ae/damani-lodges.html?msockid=1b10953f3e8862f1227182f43fdb6318",
+      "snippet": "Hatta Resorts is located in Hatta and features barbecue facilities. This 2-star hotel offers room service and a tour desk."
+    }
+  ]
+}

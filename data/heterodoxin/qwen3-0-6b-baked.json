@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "heterodoxin/qwen3-0.6b-baked",
+  "slug": "heterodoxin-qwen3-0-6b-baked",
+  "author": "heterodoxin",
+  "url": "https://huggingface.co/heterodoxin/qwen3-0.6b-baked",
+  "created_at": "2026-09-05T00:42:55.000Z",
+  "updated_at": "2026-09-05T00:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "baked",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 725073920,
+  "parameters_human": "725.1M",
+  "storage_bytes": 1461605546,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Τελευταία νέα και ειδήσεις από την Ελλάδα και τον Κόσμο - NewsIT",
+      "url": "https://www.newsit.gr/",
+      "snippet": "2 days ago · ΔΙΑΦΗΜΙΣΗ Trending News Scroll LeftScroll Right 20:41 04.09.26 Λίντσεϊ Κλάνσι: Ανατροπή στη δίκη της μητέρας που …"
+    },
+    {
+      "title": "heterodoxin/qwen3-0.6b-baked · Hugging Face",
+      "url": "https://huggingface.co/heterodoxin/qwen3-0.6b-baked",
+      "snippet": "What does not bake Intended use qwen3-0.6b-baked An ordinary Qwen3 checkpoint with somebody else's neural network inside its weights. There is no loader, no custom code, no trust_remote_codeand no wrapper. from_pretrainedas a Qwen3ForCausalLM, because that is all it is. The donor is not called at run"
+    },
+    {
+      "title": "Πρώτο Θέμα - ειδήσεις από την Ελλάδα και όλο τον κόσμο - Έκτακτη ...",
+      "url": "https://www.protothema.gr/",
+      "snippet": "Βρείτε ειδήσεις για Ελλάδα, Πολιτική, Οικονομία, Κόσμος, Σπορ, Αυτοκίνητο, People, Πολιτισμός, Τεχνολογία, Περιβάλλον, English, …"
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ελλάδα - Πρώτο Θέμα",
+      "url": "https://www.protothema.gr/greece/",
+      "snippet": "1 day ago · ΕΛΛΑΔΑ: Ειδήσεις τώρα για τα σημαντικότερα γεγονότα της επικαιρότητας και ειδήσεις σήμερα για όλη τη χώρα - …"
+    }
+  ]
+}

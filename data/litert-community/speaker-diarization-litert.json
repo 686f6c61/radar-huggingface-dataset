@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Speaker-Diarization-LiteRT",
   "created_at": "2026-07-02T08:57:13.000Z",
-  "updated_at": "2026-09-01T01:45:33.000Z",
+  "updated_at": "2026-09-04T16:05:06.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "asfberlin/fast-ukrainian-asr-600m",
+  "slug": "asfberlin-fast-ukrainian-asr-600m",
+  "author": "asfberlin",
+  "url": "https://huggingface.co/asfberlin/fast-ukrainian-asr-600m",
+  "created_at": "2026-09-05T08:44:38.000Z",
+  "updated_at": "2026-09-05T09:08:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "gigaam",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "gigaam",
+    "gigaam-ctc",
+    "automatic-speech-recognition",
+    "ukrainian",
+    "ctc",
+    "telephony",
+    "uk",
+    "dataset:Yehor/broadcast-speech-uk",
+    "dataset:fsicoli/common_voice_22_0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2341503663,
+  "storage_human": "2.3 GB",
+  "base_model": "salute-developers/GigaAM",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Winterstalling boot | Alle HISWA erkende bootstalling bedrijven",
+      "url": "https://www.hiswa.nl/bootonderhoud-en-bootreparatie/winterstalling-boot",
+      "snippet": "Vind een HISWA erkend jachtservice bedrijf waar je terecht kunt voor winterstalling en opslag van je boot bij jou in de buurt!"
+    },
+    {
+      "title": "asfberlin/fast-ukrainian-asr · Hugging Face",
+      "url": "https://huggingface.co/asfberlin/fast-ukrainian-asr",
+      "snippet": "fast-ukrainian-asr — Ukrainian speech recognition, 220M, CTC A Ukrainian recogniser built by adapting GigaAM's multilingual SSL encoder, tuned for telephone audioand small enough to run in real time on a CPU. It is notthe most accurate Ukrainian model in every setting — Whisper large-v3 is clearly better on spontaneous speech, and the numbers below say so. What it does is recognise read ..."
+    },
+    {
+      "title": "Goedkoop Winterstalling boot | NH-watersport.nl de Nr. 1",
+      "url": "https://nhwatersport.nl/winterstalling-boot/",
+      "snippet": "Winterstalling boot nodig? Ben je op zoek naar een veilige en betrouwbare plek voor winterstalling van je boot? Dan ben je bij NH …"
+    },
+    {
+      "title": "GitHub - respeecher/ukrainian_asr",
+      "url": "https://github.com/respeecher/ukrainian_asr",
+      "snippet": "Training code for a Ukrainian ASR system is based on the Data2Vec model, which was published by Respeecher. Respeecher provides Hollywood-quality speech-to-speech and text-to-speech AI voices to businesses and various types of content creators."
+    },
+    {
+      "title": "Winterstalling boot binnen en buiten - Bijdam Watersport",
+      "url": "https://www.bijdam.nl/botenstalling/winterstalling-boot/",
+      "snippet": "Wij bieden winterstalling met gunstige tarieven voor zowel grote en kleine boten. Je kunt ervoor kiezen om je boot buiten op het …"
+    }
+  ]
+}

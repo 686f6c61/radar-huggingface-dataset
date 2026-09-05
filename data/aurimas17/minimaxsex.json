@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Aurimas17/minimaxsex",
+  "slug": "aurimas17-minimaxsex",
+  "author": "Aurimas17",
+  "url": "https://huggingface.co/Aurimas17/minimaxsex",
+  "created_at": "2026-09-05T08:32:00.000Z",
+  "updated_at": "2026-09-05T08:32:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91363235,
+  "storage_human": "91 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "what is the difference between ds2 and the scholars of the first sin ...",
+      "url": "https://steamcommunity.com/app/236430/discussions/0/4630359023402664857/",
+      "snippet": "Nov 27, 2024 · I've played both on PS3/PS4 and personally found the original DARK SOULS II to be way better balanced and a …"
+    },
+    {
+      "title": "Aurimas17 (Aurimas Verikas) - Hugging Face",
+      "url": "https://huggingface.co/Aurimas17/models",
+      "snippet": "AI updated a model 11 days ago published a model 11 days ago"
+    },
+    {
+      "title": "Dark souls 2 vs scholar of the first sin : r/DarkSouls2 - Reddit",
+      "url": "https://www.reddit.com/r/DarkSouls2/comments/165onma/dark_souls_2_vs_scholar_of_the_first_sin/",
+      "snippet": "Aug 30, 2023 · Most players who have played both versions prefer Scholar, and it has a much larger active online playerbase. A lot of …"
+    },
+    {
+      "title": "Aurimas17 (Aurimas Verikas) - Hugging Face",
+      "url": "https://huggingface.co/Aurimas17/collections",
+      "snippet": "Aurimas17 (Aurimas Verikas) - Hugging Face ... AI"
+    },
+    {
+      "title": "Difference between Dark Souls 2 & Scholar of the First Sin",
+      "url": "https://steamcommunity.com/app/236430/discussions/0/3416557748895607107/",
+      "snippet": "Jun 15, 2022 · They are both the same game, with a lot of difference. SOTFS have improved graphics and changed a lot of items …"
+    }
+  ]
+}

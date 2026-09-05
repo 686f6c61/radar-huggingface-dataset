@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/Whisper-large-v3-turbo-ExecuTorch",
   "created_at": "2026-08-24T11:30:33.000Z",
-  "updated_at": "2026-08-24T11:35:21.000Z",
+  "updated_at": "2026-09-04T15:27:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

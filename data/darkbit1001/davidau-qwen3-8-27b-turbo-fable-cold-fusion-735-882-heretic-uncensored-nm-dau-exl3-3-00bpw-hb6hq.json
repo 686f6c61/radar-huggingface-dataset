@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "darkbit1001/DavidAU-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-EXL3-3.00bpw-HB6HQ",
+  "slug": "darkbit1001-davidau-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-exl3-3-00bpw-hb6hq",
+  "author": "darkbit1001",
+  "url": "https://huggingface.co/darkbit1001/DavidAU-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-EXL3-3.00bpw-HB6HQ",
+  "created_at": "2026-09-05T01:20:58.000Z",
+  "updated_at": "2026-09-05T01:22:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6734157184,
+  "parameters_human": "6.73B",
+  "storage_bytes": 13492196086,
+  "storage_human": "13.5 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FC Gelsenkirchen-Schalke 04 e.V. | Offizielle Website vom S04",
+      "url": "https://schalke04.de/",
+      "snippet": "1 day ago · Alles rund um den FC Schalke 04: Neuigkeiten aus erster Hand, ausführliche Informationen zu Spielen und Spielern, …"
+    },
+    {
+      "title": "darkbit1001/DavidAU-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
+      "url": "https://huggingface.co/darkbit1001/DavidAU-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-EXL3-3.00bpw-HB6HQ",
+      "snippet": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored (AKA \"Stage 1b\", \"BRANCH1\" benches/notes below) GGUFS [READY]; GGUF repo (NEW) will appear shortly featuring NEO-CODER MAX DiMatrix (dual imatrix) quants of this model. GGUF REPO will be linked at the top of this page. SOURCE [this repo]: Released, and now open - releasing / access emails sent shortly AFTER GGUFS released ..."
+    },
+    {
+      "title": "Schalke 04: Alle News zum S04 – RUHR24",
+      "url": "https://www.ruhr24.de/s04/",
+      "snippet": "Hier bei RUHR24 gibt es alle News zum S04 – von Transfers über Verletzungen bis hin zu Live-Tickern und Einzelkritiken. Unsere …"
+    },
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf-davidau",
+      "snippet": "Overview Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF is a 27-billion-parameter, text-to-text Qwen 3.8 fine-tune distributed as GGUF files for local inference on consumer hardware. DavidAU created it through multi-stage fine-tuning, multi-model merging, COLD FUSION training, Fable Fusion 711 training, and a final uncensoring and tuning stage. The model ..."
+    },
+    {
+      "title": "SchalkeTOTAL - Aktuelle Schalke News - News, Storys & Co. über den …",
+      "url": "https://schalketotal.de/",
+      "snippet": "Der FC Schalke fordert eine Revolution in der Bundesliga und bringt Meister-Playoffs ins Gespräch. Beim FC Bayern stößt die Idee..."
+    }
+  ]
+}

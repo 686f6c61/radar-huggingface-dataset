@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Aurimas17/H3motionbooster",
+  "slug": "aurimas17-h3motionbooster",
+  "author": "Aurimas17",
+  "url": "https://huggingface.co/Aurimas17/H3motionbooster",
+  "created_at": "2026-09-05T08:49:53.000Z",
+  "updated_at": "2026-09-05T08:49:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160134872,
+  "storage_human": "160 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can You RUN It | Can I Run It | Can My PC Run It",
+      "url": "https://www.systemrequirementslab.com/cyri",
+      "snippet": "Check your system requirements. Can I Run it? Test your specs and rate your gamimg PC."
+    },
+    {
+      "title": "Aurimas17 (Aurimas Verikas) - Hugging Face",
+      "url": "https://huggingface.co/Aurimas17/models",
+      "snippet": "AI updated a model 11 days ago published a model 11 days ago"
+    },
+    {
+      "title": "Grand Theft Auto IV System Requirements - Can You RUN It",
+      "url": "https://www.systemrequirementslab.com/cyri/requirements/grand-theft-auto-iv/10802",
+      "snippet": "Feb 17, 2021 · Check the Grand Theft Auto IV system requirements. Can I Run it? Test your specs and rate your gaming PC. System …"
+    },
+    {
+      "title": "Aurimas17/Aya · Hugging Face",
+      "url": "https://huggingface.co/Aurimas17/Aya",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SEKIRO: SHADOWS DIE TWICE system requirements | Can I Run SEKIRO ...",
+      "url": "https://www.systemrequirementslab.com/cyri/requirements/sekiro-shadows-die-twice/17898",
+      "snippet": "Mar 20, 2019 · Check the system requirements. Can I Run it? Test your specs and rate your gaming PC."
+    }
+  ]
+}

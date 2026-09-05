@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/Qwen3.5-VL-9B-UI-Venus-2-NOESIS-NF4",
+  "slug": "amaimedia-qwen3-5-vl-9b-ui-venus-2-noesis-nf4",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/Qwen3.5-VL-9B-UI-Venus-2-NOESIS-NF4",
+  "created_at": "2026-09-05T09:57:50.000Z",
+  "updated_at": "2026-09-05T09:57:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mount Rainier Nationalpark: Tipps für Besuch & Übernachtung",
+      "url": "https://thegrandcanyon.de/mount-rainier-besuchen/",
+      "snippet": "Entdecke den Mount Rainier mit seinen Gletschern, Wildblumen und Wanderwegen wie dem Skyline Trail. Erfahre alles über …"
+    },
+    {
+      "title": "Qwen3-VL-2B-UI-Venus-NOESIS-NF4 - Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-NF4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mount-Rainier-Nationalpark: Natur pur erleben",
+      "url": "https://www.usatipps.de/reiseziele/nationalparks/mount-rainier-nationalpark/",
+      "snippet": "Der Mount Rainier National Park ist definitiv eine der Top-Sehenswürdigkeiten in den USA, die man mit eigenen Augen gesehen …"
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn't a single model. It's a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    },
+    {
+      "title": "Ausflugsziele im Mount Rainier National Park - Die Top 20",
+      "url": "https://www.komoot.com/de-de/guide/1843880/ausflugsziele-im-mount-rainier-national-park",
+      "snippet": "6 days ago · Entdeck die schönsten Ausflugsziele im Mount Rainier National Park. Plan deine nächste Wanderung oder Radtour zu …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qcz/rlcr-readout-qwen3.5-4b-chem-rlcr",
+  "slug": "qcz-rlcr-readout-qwen3-5-4b-chem-rlcr",
+  "author": "qcz",
+  "url": "https://huggingface.co/qcz/rlcr-readout-qwen3.5-4b-chem-rlcr",
+  "created_at": "2026-09-05T09:45:53.000Z",
+  "updated_at": "2026-09-05T09:52:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reinforcement-learning",
+    "uncertainty-quantification",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34567303030,
+  "storage_human": "34.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "National Hummingbird Day — September 5, 2026",
+      "url": "https://nationaltoday.com/national-hummingbird-day/",
+      "snippet": "Jun 11, 2026 · National Hummingbird Day, celebrated on the first Saturday of September, highlights these tiny, vibrant birds. Learn …"
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "National Hummingbird Day | Days Of The Year",
+      "url": "https://www.daysoftheyear.com/days/national-hummingbird-day/",
+      "snippet": "Sep 2, 2023 · Established in 1996, National Hummingbird Day was founded by bird lover Penny Elliston. Because August and …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-4B",
+      "snippet": "Qwen3.5 compact dense multimodal model (4B) — fits on 16 GB consumer GPUs with full 262K context or one Xeon 6 NUMA node or Intel Arc Pro B60/B70"
+    },
+    {
+      "title": "NATIONAL HUMMINGBIRD DAY - September 5, 2026 - National Day Calendar",
+      "url": "https://nationaldaycalendar.com/national-day/national-hummingbird-day-first-saturday-in-september",
+      "snippet": "September 2 is National Hummingbird Day and we are sharing our curiosity about a beautiful tiny little bird known as the hummingbird."
+    }
+  ]
+}

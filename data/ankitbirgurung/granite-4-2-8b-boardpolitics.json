@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AnkitBirGurung/Granite-4.2-8b-BoardPolitics",
+  "slug": "ankitbirgurung-granite-4-2-8b-boardpolitics",
+  "author": "AnkitBirGurung",
+  "url": "https://huggingface.co/AnkitBirGurung/Granite-4.2-8b-BoardPolitics",
+  "created_at": "2026-09-05T08:33:54.000Z",
+  "updated_at": "2026-09-05T08:49:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Dingdust/granite-4.2-8b-heretic",
+    "base_model:finetune:Dingdust/granite-4.2-8b-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12004559752,
+  "storage_human": "12.0 GB",
+  "base_model": "Dingdust/granite-4.2-8b-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Nous offrons des vidéos porno en streaming, des albums photos XXX et la première communauté sexuelle gratuite sur le net. Nous …"
+    },
+    {
+      "title": "Granite 4.2 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Responsible AI Trust Models Granite 4.2 On this page Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Vidéos pornos gratuites et films XXX : site de vidéos de sexe | xHamster",
+      "url": "https://fra.xhamster.com/",
+      "snippet": "Sexe brutal SFW Toutes les catégories Vidéos porno tendance gratuites Tout HD 4K VR Cliquez sur le contenu pour voir une …"
+    },
+    {
+      "title": "ibm-granite/granite-4.2-8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF",
+      "snippet": "ibm-granite / granite-4.2-8b-GGUF like 3 Follow IBM Granite 5.23k GGUF llama.cpp language granite-4.2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Porno en Français / Porn in French - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/lang/francais",
+      "snippet": "Politique sur la vie privée et les données personnelles- Préférences des cookies- Uploadez Vos Vidéos- Retrait de contenu- Publicité …"
+    }
+  ]
+}

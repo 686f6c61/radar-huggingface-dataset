@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-i1-GGUF",
+  "slug": "mradermacher-kat-coder-v2-5-dev-35b-a3b-mtp-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-i1-GGUF",
+  "created_at": "2026-09-05T08:42:51.000Z",
+  "updated_at": "2026-09-05T10:19:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5_moe",
+    "kat-coder",
+    "kat-coder-v2.5",
+    "qwen3.5",
+    "mixture-of-experts",
+    "coding",
+    "mtp",
+    "speculative-decoding",
+    "abliteration",
+    "uncensored",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED",
+    "base_model:quantized:jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 29246031904,
+  "storage_human": "29.2 GB",
+  "base_model": "jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Belgeleri ücretsiz oluşturun ve düzenleyin | Web için Microsoft Word",
+      "url": "https://word.cloud.microsoft/tr-tr/",
+      "snippet": "Microsoft Word online ile belgeler yazın, düzenleyin ve belgeler üzerinde işbirliği yapın. Tüm cihazlardan ücretsiz ve sorunsuz erişim."
+    },
+    {
+      "title": "mradermacher/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF",
+      "snippet": "Instructions to use mradermacher/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft Word ile Ücretsiz Çevrimiçi Belge Düzenleme | Microsoft 365",
+      "url": "https://www.microsoft.com/tr-tr/microsoft-365/word?msockid=27167b22ba66693a2cb36ce9bb6e6803",
+      "snippet": "Copilot’tan gelen yapay zeka destekli dil bilgisi, stil ve açıklık önerileriyle belgelerinizi çevrimiçi olarak düzenlemek için Microsoft …"
+    },
+    {
+      "title": "Kwaipilot/KAT-Coder-V2.5-Dev · Hugging Face",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "snippet": "This repository contains the model weights and configuration files for the post-trained KAT-Coder-V2.5-Dev in the Hugging Face Transformers format. The artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. Note: this open-weight release ships only the language-model weights and operates as a text-only model; the vision/multimodal components are not included ..."
+    },
+    {
+      "title": "Create and edit documents for free | Microsoft Word for the Web",
+      "url": "https://word.cloud.microsoft/en-us/",
+      "snippet": "Write, edit, and collaborate on documents with Microsoft Word online. Free and seamless access from any device."
+    }
+  ]
+}

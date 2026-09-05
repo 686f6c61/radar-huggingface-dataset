@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "siruku6/pi05_camdrop2500",
+  "slug": "siruku6-pi05_camdrop2500",
+  "author": "siruku6",
+  "url": "https://huggingface.co/siruku6/pi05_camdrop2500",
+  "created_at": "2026-09-02T20:35:02.000Z",
+  "updated_at": "2026-09-05T02:14:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "pi05",
+    "vla",
+    "libero",
+    "negative-result",
+    "robotics",
+    "dataset:lerobot/libero_plus",
+    "base_model:lerobot/pi05_libero_base",
+    "base_model:finetune:lerobot/pi05_libero_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46770261376,
+  "storage_human": "46.8 GB",
+  "base_model": "lerobot/pi05_libero_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "idealo – Die Nr. 1 im Preisvergleich",
+      "url": "https://www.idealo.de/?msockid=1f92fbb09b59617e26a4ec7b9a6260c3",
+      "snippet": "Über 50.000 Shops 350+ Millionen Angebote Kaufberatung und Expertenmeinungen Jetzt Preise und Produkte auf idealo.de …"
+    },
+    {
+      "title": "siruku6/pi05_camdrop2500 · Hugging Face",
+      "url": "https://huggingface.co/siruku6/pi05_camdrop2500",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use siruku6/pi05_camdrop2500 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use siruku6/pi05_camdrop2500 with LeRobot:"
+    },
+    {
+      "title": "Günstige Flüge & Billigflüge vergleichen | idealo Flugsuche",
+      "url": "https://flug.idealo.de/",
+      "snippet": "Der idealo Flugpreisvergleich findet günstige Flugtickets und Billigflüge. Jetzt Flugsuche starten, Flüge buchen und günstig fliegen."
+    },
+    {
+      "title": "Shirk6 (Ruikai Shi) - Hugging Face",
+      "url": "https://huggingface.co/Shirk6",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago ... updated a model 1 day ago"
+    },
+    {
+      "title": "Samsung Galaxy A57 ab 299,90 € (September 2026 Preise ... - idealo",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/209770533_-galaxy-a57-samsung.html?msockid=1f92fbb09b59617e26a4ec7b9a6260c3",
+      "snippet": "Bereits ab 299,90 € Große Shopvielfalt Testberichte & Meinungen | Jetzt Samsung Galaxy A57 günstig kaufen bei idealo.de"
+    }
+  ]
+}

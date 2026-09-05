@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MikeDegany/ppo-LunarLander-v2",
+  "slug": "mikedegany-ppo-lunarlander-v2",
+  "author": "MikeDegany",
+  "url": "https://huggingface.co/MikeDegany/ppo-LunarLander-v2",
+  "created_at": "2026-09-05T02:21:48.000Z",
+  "updated_at": "2026-09-05T02:21:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283740,
+  "storage_human": "283740 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zagrożona niezależność TVN24? Potężna fuzja gigantów pod lupą …",
+      "url": "https://www.bankier.pl/wiadomosc/Zagrozona-niezaleznosc-TVN24-Potezna-fuzja-gigantow-pod-lupa-unijnych-urzednikow-9170826.html",
+      "snippet": "Jul 20, 2026 · Proponowane przejęcie Warner Bros. Discovery przez Paramount Skydance może bezpośrednio zagrozić …"
+    },
+    {
+      "title": "MikeDegany/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/MikeDegany/ppo-LunarLander-v2",
+      "snippet": "Instructions to use MikeDegany/ppo-LunarLander-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Paweł Łukasik - tvnfakty.pl",
+      "url": "https://www.tvnfakty.pl/pawel-lukasik",
+      "snippet": "Pozostaje tylko życzyć Pawłowi, widzom TVN24, a także ewentualnej innej grupie osób, dla których liczy się komfort pozyskiwania …"
+    },
+    {
+      "title": "the-AI-guy1/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/the-AI-guy1/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "TVN24",
+      "url": "https://www.tvnfakty.pl/tvn24",
+      "snippet": "Jan 24, 2014 · TVN24.pl - pierwszy polski portal informacyjny ze zdjęciami i relacjami video wystartował w samo południe 19 marca …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Tokyo0412/mcq-solver-electra",
+  "slug": "tokyo0412-mcq-solver-electra",
+  "author": "Tokyo0412",
+  "url": "https://huggingface.co/Tokyo0412/mcq-solver-electra",
+  "created_at": "2026-09-05T09:58:40.000Z",
+  "updated_at": "2026-09-05T09:58:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "multiple-choice",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "multiple-choice",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483009,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437956148,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lionel Messi - Stats 2027 | Transfermarkt",
+      "url": "https://www.transfermarkt.com/lionel-messi/leistungsdaten/spieler/28003",
+      "snippet": "Feb 6, 2026 · Player stats of Lionel Messi (Inter Miami CF) Goals Assists Matches played All performance data"
+    },
+    {
+      "title": "Tokyo0412 (sagar) - Hugging Face",
+      "url": "https://huggingface.co/Tokyo0412",
+      "snippet": "Recent Activity updated a model13 days ago Tokyo0412/tds-carbon-card published a model13 days ago Tokyo0412/tds-carbon-card liked a model24 days ago Tokyo0412/mcq-solver-deberta View all activity"
+    },
+    {
+      "title": "Lionel Messi - Player profile 2026 | Transfermarkt",
+      "url": "https://www.transfermarkt.com/lionel-messi/profil/spieler/28003",
+      "snippet": "Lionel Messi, 39, from Argentina Inter Miami CF, since 2023 Right Winger Market value: €15.00m * 24/06/1987 in Rosario, Argentina"
+    },
+    {
+      "title": "GitHub - Perceptron04/mcq-solver-app",
+      "url": "https://github.com/Perceptron04/mcq-solver-app/tree/main",
+      "snippet": "The competition submission blends this DeBERTa model with an ELECTRA model at a weight of 0.25. The demo runs the DeBERTa half alone, since loading two transformers exceeds the memory available on free hosting."
+    },
+    {
+      "title": "Lionel Messi - Titles & achievements | Transfermarkt",
+      "url": "https://www.transfermarkt.com/lionel-messi/erfolge/spieler/28003",
+      "snippet": "Feb 6, 2026 · This statistic shows the achievements of Inter Miami CF player Lionel Messi."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "johnson-yo",
   "url": "https://huggingface.co/johnson-yo/termux_os-asset-campplus-htp-onnx",
   "created_at": "2026-08-12T09:24:50.000Z",
-  "updated_at": "2026-09-02T18:55:14.000Z",
+  "updated_at": "2026-09-04T19:13:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,7 +14,6 @@
   "tags": [
     "onnx",
     "speaker-recognition",
-    "qualcomm-htp",
     "termux-os",
     "license:apache-2.0",
     "region:us"
@@ -24,7 +23,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 70917084,
+  "storage_bytes": 70924828,
   "storage_human": "71 MB",
   "base_model": null,
   "formats": [
