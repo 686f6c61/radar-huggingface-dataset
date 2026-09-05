@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Bastii123/gemma-3-27b-it-qat-abliterated-mlx-4Bit",
+  "slug": "bastii123-gemma-3-27b-it-qat-abliterated-mlx-4bit",
+  "author": "Bastii123",
+  "url": "https://huggingface.co/Bastii123/gemma-3-27b-it-qat-abliterated-mlx-4Bit",
+  "created_at": "2026-09-05T10:59:24.000Z",
+  "updated_at": "2026-09-05T10:59:49.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "mlx",
+    "image-text-to-text",
+    "conversational",
+    "base_model:mlabonne/gemma-3-27b-it-qat-abliterated",
+    "base_model:quantized:mlabonne/gemma-3-27b-it-qat-abliterated",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 16918988538,
+  "storage_human": "16.9 GB",
+  "base_model": "mlabonne/gemma-3-27b-it-qat-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Formel 1 live: Alle Formel-1-Rennen & Termine - Formel1.de",
+      "url": "https://www.formel1.de/",
+      "snippet": "Die F1 auf Formel1.de: Formel 1 live, Formel-1-Ergebnisse, Formel-1-Termine, F1-News und Formel-1-Fahrer und Teams"
+    },
+    {
+      "title": "Bastii123/gemma-3-27b-it-qat-abliterated-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/Bastii123/gemma-3-27b-it-qat-abliterated-mlx-4Bit",
+      "snippet": "Instructions to use Bastii123/gemma-3-27b-it-qat-abliterated-mlx-4Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "F1 Zeitplan: Alle Formel 1-Veranstaltungskalender und -Zeitpläne …",
+      "url": "https://www.f1-fansite.com/de/f1-Kalender/",
+      "snippet": "5 days ago · Wählen Sie unten eine beliebige Saison aus, um den vollständigen Formel-1-Kalender anzuzeigen und zu sehen, wie …"
+    },
+    {
+      "title": "mlabonne/gemma-3-27b-it-abliterated · Hugging Face",
+      "url": "https://huggingface.co/mlabonne/gemma-3-27b-it-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Formel 1 HEUTE LIVE auf Sky Sport: Italien GP Übertragung",
+      "url": "https://sport.sky.de/formel-1/artikel/formel-1-live-im-tv-stream-uebertragung-zeitplan-und-rennen-auf-sky-sport/12605138/34959",
+      "snippet": "Hier erfährst Du die Sendezeiten und wo Du das nächste Rennen der Formel 1 LIVE im TV und Stream auf Sky Sport sehen kannst."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task3-zigzag-lora",
+  "slug": "bdatm-project-qwen-task3-zigzag-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task3-zigzag-lora",
+  "created_at": "2026-09-05T11:18:50.000Z",
+  "updated_at": "2026-09-05T11:19:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576429,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home page - Apotheek ANDRE DUMONT",
+      "url": "https://www.apotheekandredumont.be/",
+      "snippet": "Zowel online als in onze apotheek geniet je ook van een ruim aanbod aan verzorgingsproducten, sportvoeding, homeopathie en …"
+    },
+    {
+      "title": "bdatm-project/qwen-task1-zigzag-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-zigzag-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apotheek André Dumont - Apotheken in Genk André Dumontlaan …",
+      "url": "https://firmania.be/genk/apotheek-andr%C3%A9-dumont-186481",
+      "snippet": "Jun 5, 2026 · Vind de contactgegevens van bedrijven uit Apotheek André Dumont in André Dumontlaan 50, 3600, Genk Genk, …"
+    },
+    {
+      "title": "bdatm-project/qwen-task3-standard-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task3-standard-lora",
+      "snippet": "Instructions to use bdatm-project/qwen-task3-standard-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Apotheek André Dumont BV - Apotheek (Genk) - Progenda",
+      "url": "https://progenda.be/calendars/andre-dumont-bv-apotheek-apotheek-genk?locale=nl",
+      "snippet": "Ontvang de lijst met uw afspraken rechtstreeks per e-mail. Klik hieronder en volg de instructies."
+    }
+  ]
+}

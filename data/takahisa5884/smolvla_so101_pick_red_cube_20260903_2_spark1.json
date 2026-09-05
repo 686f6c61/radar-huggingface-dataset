@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Takahisa5884/smolvla_so101_pick_red_cube_20260903_2_spark1",
+  "slug": "takahisa5884-smolvla_so101_pick_red_cube_20260903_2_spark1",
+  "author": "Takahisa5884",
+  "url": "https://huggingface.co/Takahisa5884/smolvla_so101_pick_red_cube_20260903_2_spark1",
+  "created_at": "2026-09-05T10:54:05.000Z",
+  "updated_at": "2026-09-05T10:54:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Takahisa5884/so101_pick_red_cube_20260903_114501",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721056,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum E-sudoku.fr",
+      "url": "http://forum.e-sudoku.fr/viewtopic.php?t=34",
+      "snippet": "Oct 24, 2025 · Forum officiel du site e-sudoku.fr . Echangez vos meilleurs tactiques de Sudoku. Toutes les news du sudoku autour de …"
+    },
+    {
+      "title": "Takahisa5884/smolvla_so101_pick_cube_20260821_112859 · Hugging Face",
+      "url": "https://huggingface.co/Takahisa5884/smolvla_so101_pick_cube_20260821_112859",
+      "snippet": "SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "Forum des e-sudokistes • Smileys",
+      "url": "http://forum.e-sudoku.fr/posting.php?mode=smilies&f=9&start=200",
+      "snippet": "Inclure des Smileys Précédente 1, 2, 3, 4, , 6, 7 Suivante"
+    },
+    {
+      "title": "Takahisa5884 (Takahisa Kobayashi) - Hugging Face",
+      "url": "https://huggingface.co/Takahisa5884",
+      "snippet": "Takahisa5884/so101_pick_cube_20260730_205920 Viewer •Updated about 5 hours ago•508"
+    },
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "The task: pick up a small cube from a randomized position and place it in a bowl. 10-second episodes, 30fps, recorded via teleoperation with the leader arm. SmolVLA vs ACT# SmolVLA is a 500M+ parameter model, but you only fine-tune ~50M (the action expert + projections). The vision encoder (SigLIP) and language model (SmolLM2) stay frozen."
+    }
+  ]
+}

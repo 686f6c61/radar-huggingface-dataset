@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Bible-Assistant-Qwen3.5-4B-v3.2-GGUF",
+  "slug": "mradermacher-bible-assistant-qwen3-5-4b-v3-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Bible-Assistant-Qwen3.5-4B-v3.2-GGUF",
+  "created_at": "2026-09-05T15:24:33.000Z",
+  "updated_at": "2026-09-05T15:43:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "bible",
+    "rag",
+    "question-answering",
+    "qwen3.5",
+    "text-generation",
+    "en",
+    "base_model:Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2",
+    "base_model:quantized:Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 38906334976,
+  "storage_human": "38.9 GB",
+  "base_model": "Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Personal Internet Banking - TSB",
+      "url": "https://internetbanking.tsb.co.uk/personal/logon/login/",
+      "snippet": "Welcome to Personal Internet Banking If you don't already use Internet Banking, it's simple to register online. If you are attempting to …"
+    },
+    {
+      "title": "Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2-GGUF",
+      "snippet": "Community Deploy Copy to bucket new Use this model Instructions to use Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab"
+    },
+    {
+      "title": "Online banking | Help and Support | TSB Bank",
+      "url": "https://www.tsb.co.uk/help-and-support/online-banking.html",
+      "snippet": "It’s even easier in the app You can set up all your digital banking with the TSB Mobile Banking app. You’ll be up and running quickly, …"
+    },
+    {
+      "title": "Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2 · Hugging Face",
+      "url": "https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2",
+      "snippet": "Community Deploy Copy to bucket new Use this model Instructions to use Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers"
+    },
+    {
+      "title": "Personal | Life Made More | TSB Bank",
+      "url": "https://www.tsb.co.uk/",
+      "snippet": "At TSB we are here to help you make the most out of your money, so you can get more out of life. Whether you are looking for a new …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Brijeshsharma/nppe3-4x-super-resolution-denoise",
+  "slug": "brijeshsharma-nppe3-4x-super-resolution-denoise",
+  "author": "Brijeshsharma",
+  "url": "https://huggingface.co/Brijeshsharma/nppe3-4x-super-resolution-denoise",
+  "created_at": "2026-09-05T17:58:23.000Z",
+  "updated_at": "2026-09-05T18:24:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "super-resolution",
+    "image-denoising",
+    "pytorch",
+    "computer-vision",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27321898,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marketplace | NamePros",
+      "url": "https://www.namepros.com/categories/marketplace.243/",
+      "snippet": "Buy, sell, and trade domains, websites, and more in our 100% free marketplace."
+    },
+    {
+      "title": "ChemYukti/denoise-sr4x-dlp26t2nppe3 · Hugging Face",
+      "url": "https://huggingface.co/ChemYukti/denoise-sr4x-dlp26t2nppe3",
+      "snippet": "Usage Training Results Low-light denoising + 4x super-resolution Trained for Kaggle competition dlp-26t2-nppe3. Public leaderboard 39.85 dB PSNR. The task is posed as super-resolution but is mostly denoising. noisy input scores 33.36 dB; bicubic upsampling of a clean low-resolution image scores"
+    },
+    {
+      "title": "Brandable Domains for Sale | NamePros",
+      "url": "https://www.namepros.com/forums/brandable-domains-for-sale.364/",
+      "snippet": "Jun 10, 2025 · Buy and sell domain names that make perfect brand names, trade names. Sometimes referred to as marketable …"
+    },
+    {
+      "title": "GitHub - LokeshTiwari004/dlp_nppe3",
+      "url": "https://github.com/LokeshTiwari004/dlp_nppe3",
+      "snippet": "Low-Light Image Restoration with 4x Super-Resolution (RELLISUR) Dataset: Low-light image enhancement and 4× super-resolution challenge."
+    },
+    {
+      "title": "NamePros",
+      "url": "https://www.namepros.com/",
+      "snippet": "Buy, sell, learn, and discuss domain names with the largest domain forum community in the world. Stay informed with the latest …"
+    }
+  ]
+}

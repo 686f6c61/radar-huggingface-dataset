@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch3",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch3",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch3",
+  "created_at": "2026-09-05T18:05:35.000Z",
+  "updated_at": "2026-09-05T18:07:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Séries & fictions - Regarder les meilleures séries en streaming ...",
+      "url": "https://www.france.tv/series-et-fictions/",
+      "snippet": "Regardez toutes vos séries préférées en streaming 24h/24. Découvrez toutes les séries France 2, France 3 et des autres chaînes de …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "France 3 - émissions et séries en replay | France TV",
+      "url": "https://www.france.tv/france-3/",
+      "snippet": "Retrouvez toutes les vidéos et replay des programmes France 3 sur france.tv"
+    },
+    {
+      "title": "Lanni-ni (Lanni) - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni",
+      "snippet": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m. published a model about 9 hours ago. Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m"
+    },
+    {
+      "title": "France 4 en direct TV",
+      "url": "https://www.france.tv/france-4/direct.html",
+      "snippet": "Regardez France 4 en direct et en streaming 24h/24 - tous les programmes France 4 en direct sur france.tv"
+    }
+  ]
+}

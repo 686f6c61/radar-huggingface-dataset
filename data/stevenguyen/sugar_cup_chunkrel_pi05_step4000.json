@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SteveNguyen/sugar_cup_chunkrel_pi05_step4000",
+  "slug": "stevenguyen-sugar_cup_chunkrel_pi05_step4000",
+  "author": "SteveNguyen",
+  "url": "https://huggingface.co/SteveNguyen/sugar_cup_chunkrel_pi05_step4000",
+  "created_at": "2026-09-05T12:03:47.000Z",
+  "updated_at": "2026-09-05T12:04:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:SteveNguyen/sugar_cup_graspproj_chunkrel",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354067792,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANTON - Lerne kostenlos mit Übungen für Mathe, Deutsch, …",
+      "url": "https://anton.app/de/",
+      "snippet": "ANTON ist die Lern-App für die Schule. Deutsch und Mathematik Übungen, kostenlos und ohne Werbung für fremde Produkte. Lerne …"
+    },
+    {
+      "title": "SteveNguyen/sugar_cup_chunkrel_pi05_step4000 · Hugging Face",
+      "url": "https://huggingface.co/SteveNguyen/sugar_cup_chunkrel_pi05_step4000",
+      "snippet": "Instructions to use SteveNguyen/sugar_cup_chunkrel_pi05_step4000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ANTON - Learn for free with lessons in English, maths, science, EAL ...",
+      "url": "https://anton.app/en_gb/",
+      "snippet": "ANTON is the learning platform for school. English, maths, science, computing, EAL, geography, history, languages, music and …"
+    },
+    {
+      "title": "SteveNguyen (Steve Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/SteveNguyen/datasets",
+      "snippet": "User profile of Steve Nguyen on Hugging Face"
+    },
+    {
+      "title": "landing.anton.app",
+      "url": "https://landing.anton.app/es/",
+      "snippet": "Anton es la aplicación gratuita de aprendizaje para la escuela primaria."
+    }
+  ]
+}

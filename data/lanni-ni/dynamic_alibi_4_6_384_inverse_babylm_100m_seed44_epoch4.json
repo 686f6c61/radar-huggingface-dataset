@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch4",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch4",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch4",
+  "created_at": "2026-09-05T18:07:54.000Z",
+  "updated_at": "2026-09-05T18:08:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki (بوكي) - موقع العاب مجانية عبر الإنترنت - العب الآن!",
+      "url": "https://poki.com/ar?msockid=326364a5700360f81ae5736e71c4613a",
+      "snippet": "العاب مجانية عبر الانترنت Poki (بوكي) تحتوي على أفضل تشكيلة ألعاب الإنترنت المجانية وتقدم أكثر تجربة ممتعة للعب بمفردك أو مع الأصدقاء."
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ألعاب مجانية عبر الإنترنت على كريزي جيمز | العبها الآن!",
+      "url": "https://www.crazygames.com/ar/",
+      "snippet": "كريزي جيمز هي منصة ألعاب متصفح والتي تحتوي على أفضل ألعاب الإنترنت المجانية.تعمل جميع ألعابنا على المتصفح ويمكن لعبها لحظيًا بدون تنزيلات أو تحديثات.يمكنك اللعب على كريزي جيمز من أي جهاز …"
+    },
+    {
+      "title": "Lanni-ni (Lanni) - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni",
+      "snippet": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m. published a model about 9 hours ago. Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m"
+    },
+    {
+      "title": "ألعاب مجانية عبر الإنترنت — ألعاب متصفح لا تتطلب تحميل | Playhop",
+      "url": "https://playhop.com/ar",
+      "snippet": "العب أكثر من 20,000 لعبة مجانية على الإنترنت على Playhop — لا حاجة للتنزيل، العب فورًا على الهاتف المحمول أو الكمبيوتر. تُضاف ألعاب جديدة يوميًا."
+    }
+  ]
+}

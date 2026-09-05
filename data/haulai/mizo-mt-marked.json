@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "haulai/mizo-mt-marked",
+  "slug": "haulai-mizo-mt-marked",
+  "author": "haulai",
+  "url": "https://huggingface.co/haulai/mizo-mt-marked",
+  "created_at": "2026-09-05T18:03:38.000Z",
+  "updated_at": "2026-09-05T18:05:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "lus"
+  ],
+  "tags": [
+    "safetensors",
+    "marian",
+    "mizo",
+    "tibeto-burman",
+    "low-resource",
+    "translation",
+    "lus",
+    "base_model:Helsinki-NLP/opus-mt-mul-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-mul-en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 77058732,
+  "parameters_human": "77.1M",
+  "storage_bytes": 308270017,
+  "storage_human": "308 MB",
+  "base_model": "Helsinki-NLP/opus-mt-mul-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Hello, AI — Your Unbiased Guide to the World's Smartest AIs",
+      "url": "https://helloai.com/",
+      "snippet": "Compare Claude, Gemini, GPT, and Grok with honest weekly leaderboards, cost data, and task-specific recommendations. No hype, just real benchmarks."
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world's best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    }
+  ]
+}

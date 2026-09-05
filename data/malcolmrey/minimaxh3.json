@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "malcolmrey/minimaxh3",
+  "slug": "malcolmrey-minimaxh3",
+  "author": "malcolmrey",
+  "url": "https://huggingface.co/malcolmrey/minimaxh3",
+  "created_at": "2026-09-05T10:40:49.000Z",
+  "updated_at": "2026-09-05T10:42:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1632098688,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Valley - Dreams Begin Here - emaar.com",
+      "url": "https://www.emaar.com/en/our-communities/the-valley",
+      "snippet": "More than just a community, The Valley is a canvas for your dreams—where nature, recreation, and modern living come together in …"
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "The Valley - Emaar Properties Dubai",
+      "url": "https://emaardubai.properties/communities/the-valley/",
+      "snippet": "The Valley Sprawling across a vast and verdant landscape, The Valley is Emaar’s masterfully planned tribute to modern, nature …"
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we're officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    },
+    {
+      "title": "Emaar Map",
+      "url": "https://www.emaar.com/interactivemap-assets/index.html",
+      "snippet": "All CommunitiesDowntown DubaiDubai Creek HarbourDubai Hills EstateDubai MarinaEmaar BeachfrontEmaar SouthArabian …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "huluhuluu/qwen3-4b-instruct-2507-mllm-qnn-htp",
+  "slug": "huluhuluu-qwen3-4b-instruct-2507-mllm-qnn-htp",
+  "author": "huluhuluu",
+  "url": "https://huggingface.co/huluhuluu/qwen3-4b-instruct-2507-mllm-qnn-htp",
+  "created_at": "2026-09-05T11:51:23.000Z",
+  "updated_at": "2026-09-05T12:05:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mllm",
+    "qualcomm",
+    "qnn",
+    "htp",
+    "npu",
+    "on-device",
+    "quantized",
+    "lpbq",
+    "w4a16",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5929381888,
+  "storage_human": "5.9 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Imgsrc.ru - Archiveteam",
+      "url": "https://wiki.archiveteam.org/index.php/Imgsrc.ru",
+      "snippet": "Imgsrc.ru is a simple photo sharing website which is especially popular in East Europe and Germany (Alexa rank ~1000) and has …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IMGSRC.RU — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/IMGSRC.RU",
+      "snippet": "Название Название сайта iMGSRC состоит из 2 частей: <IMG> — HTML-тег, используемый для оформления изображений; …"
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B, this variant has only instruct training without thinking mode support."
+    },
+    {
+      "title": "imgsrc — Yandex: found 4 thousand results",
+      "url": "https://wap.yandex.com/search?text=imgsrc",
+      "snippet": "Imgsrc - Free Image Hosting & Photo Sharing Platform Imgsrc is a powerful image generation tool that helps developers and …"
+    }
+  ]
+}

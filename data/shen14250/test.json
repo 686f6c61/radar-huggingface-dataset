@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shen14250/Test",
+  "slug": "shen14250-test",
+  "author": "Shen14250",
+  "url": "https://huggingface.co/Shen14250/Test",
+  "created_at": "2026-09-05T13:18:39.000Z",
+  "updated_at": "2026-09-05T13:20:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 302341784,
+  "storage_human": "302 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 417 AI models across 422 benchmarks, with 232 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Bing : tout savoir sur le moteur de recherche de Microsoft",
+      "url": "https://www.lebigdata.fr/bing-tout-savoir",
+      "snippet": "Aug 26, 2026 · Copilot Search est l’évolution IA de Bing lancée en avril 2025. Il combine l’index Bing avec GPT-5 et le système …"
+    },
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Versions. snrcode. build. 2026.09.04.72974068. hash. cf018becf623edfe967bc7f9dbeb8720943482bc."
+    }
+  ]
+}

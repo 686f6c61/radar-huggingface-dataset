@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "GestaltLabs/Qwen3.8-27B-EXL3-11.5GB",
+  "slug": "gestaltlabs-qwen3-8-27b-exl3-11-5gb",
+  "author": "GestaltLabs",
+  "url": "https://huggingface.co/GestaltLabs/Qwen3.8-27B-EXL3-11.5GB",
+  "created_at": "2026-09-05T13:43:31.000Z",
+  "updated_at": "2026-09-05T13:44:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "quantized",
+    "conversational",
+    "vision",
+    "speculative-decoding",
+    "mtp",
+    "dflash",
+    "image-text-to-text",
+    "arxiv:2406.01574",
+    "arxiv:2110.14168",
+    "arxiv:2107.03374",
+    "arxiv:2406.11235",
+    "arxiv:2602.06036",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6372070784,
+  "parameters_human": "6.37B",
+  "storage_bytes": 11487573427,
+  "storage_human": "11.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WIN10系统的电脑怎么开启摄像头录像或拍照 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f0e83a2546d50e22e5910106.html",
+      "snippet": "Oct 22, 2018 · WIN10系统的电脑怎么开启摄像头录像或拍照,除了部分台式机外，一般笔记本都会自带摄像头，但是在计算机中无法找 …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "怎么打开ps的Camera RAW-百度经验",
+      "url": "https://jingyan.baidu.com/article/7082dc1c3ad2bce40a89bdf4.html",
+      "snippet": "May 1, 2018 · 怎么打开ps的Camera RAW,经常有很多新手不知道怎么把的CameraRAW打开，看见其他人用还觉得很神奇，总是以为 …"
+    },
+    {
+      "title": "Ornstein3.8 27B by GestaltLabs — VRAM 55.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/GestaltLabs%2FOrnstein3.8-27B,2VetO3nPiDtBHkAAqZucTv",
+      "snippet": "Ornstein3.8 27B is an open-source 27b LLM by GestaltLabs. VRAM 55.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "轻松打开Win7摄像头的五种方法 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/948f59244bd438d80ff5f99d.html",
+      "snippet": "Dec 17, 2017 · win7摄像头怎么开?如何开?如何才能在windows7系统“我的电脑”中看到摄像头呢?我们可以用如下5种方法来解决。 一 …"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "crucible-labs/Qwen3.6-35B-A3B-REAP-48-v2-GGUF",
+  "slug": "crucible-labs-qwen3-6-35b-a3b-reap-48-v2-gguf",
+  "author": "crucible-labs",
+  "url": "https://huggingface.co/crucible-labs/Qwen3.6-35B-A3B-REAP-48-v2-GGUF",
+  "created_at": "2026-08-25T14:05:46.000Z",
+  "updated_at": "2026-08-25T14:07:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "moe",
+    "pruning",
+    "reap",
+    "quantized",
+    "coding",
+    "tool-calling",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 1010,
+  "trending_score": 0,
+  "parameters": 19173552768,
+  "parameters_human": "19.17B",
+  "storage_bytes": 9426919520,
+  "storage_human": "9.4 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation",
+      "dataset": "HumanEval+",
+      "metric": "pass@1",
+      "value": 0.909
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "MBPP+",
+      "metric": "pass@1",
+      "value": 0.757
+    },
+    {
+      "task": "Tool Calling",
+      "dataset": "BFCL (simple)",
+      "metric": "accuracy",
+      "value": 0.932
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Achat et vente en ligne parmi des millions de produits en stock. Livraison gratuite à partir de 25€. Vos articles à petits prix : culture, …"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-REAP-48-Q3K-mixed-GGUF - Hugging Face",
+      "url": "https://huggingface.co/crucible-labs/Qwen3.6-35B-A3B-REAP-48-Q3K-mixed-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen3.6-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF",
+      "snippet": "For more details, please refer to our blog post Qwen3.6-35B-A3B. ... Context Length: 262,144 natively and extensible up to 1,010,000 tokens. * SWE-Bench Series: Internal agent scaffold (bash + file-edit tools); temp=1.0, top_p=0.95, 200K context window. We correct some problematic tasks in the public set of SWE-bench Pro and evaluate all baselines on the refined benchmark. * Terminal-Bench 2.0: Harbor/Terminus-2 harness; 3h timeout, 32 CPU/48 GB RAM; temp=1.0, top_p=0.95, top_k=20, max_tokens=80K, 256K ctx; avg of 5 runs."
+    },
+    {
+      "title": "What makes Qwen3.6-35B-A3B different from traditional dense models?",
+      "url": "https://www.labellerr.com/blog/qwen3-6-35b-a3b-open-source-ai-model/",
+      "snippet": "Qwen3.6-35B-A3B is a breakthrough open-source AI model combining 35B capacity with 3B active parameters. It delivers strong coding, reasoning, and multimodal performance at a fraction of the cost."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B GGUF: Quants, Sizes, and How to Run It",
+      "url": "https://allthings.how/qwen3-6-35b-a3b-gguf-quants-sizes-and-how-to-run-it/",
+      "snippet": "Qwen3.6-35B-A3B is the first open-weight model in the Qwen3.6 family, packaged as GGUF for local inference through llama.cpp and compatible tools like LM Studio, koboldcpp, Jan, and Unsloth Studio. It’s a 35-billion parameter mixture-of-experts model with roughly 3B active parameters per token, built around a hybrid architecture that alternates Gated DeltaNet layers with Gated Attention and ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vinnuthegoattt/finbert-financial-phrasebank",
+  "slug": "vinnuthegoattt-finbert-financial-phrasebank",
+  "author": "vinnuthegoattt",
+  "url": "https://huggingface.co/vinnuthegoattt/finbert-financial-phrasebank",
+  "created_at": "2026-09-05T18:24:41.000Z",
+  "updated_at": "2026-09-05T18:24:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437961724,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANTON - Lerne kostenlos mit Übungen für Mathe, Deutsch, …",
+      "url": "https://anton.app/de/",
+      "snippet": "ANTON ist die Lern-App für die Schule. Deutsch und Mathematik Übungen, kostenlos und ohne Werbung für fremde Produkte. Lerne …"
+    },
+    {
+      "title": "ProsusAI/finbert · Hugging Face",
+      "url": "https://huggingface.co/ProsusAI/finbert",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ANTON - Learn for free with lessons in English, maths, science, EAL ...",
+      "url": "https://anton.app/en_gb/",
+      "snippet": "ANTON is the learning platform for school. English, maths, science, computing, EAL, geography, history, languages, music and …"
+    },
+    {
+      "title": "FinBERT: Financial Sentiment Analysis with BERT - GitHub",
+      "url": "https://github.com/ProsusAI/finBERT",
+      "snippet": "FinBERT sentiment analysis model is now available on Hugging Face model hub. You can get the model here. FinBERT is a pre-trained NLP model to analyze sentiment of financial text. It is built by further training the BERTlanguage model in the finance domain, using a large financial corpus and thereby fine-tuning it for financial sentiment classification. For the details, please see FinBERT ..."
+    },
+    {
+      "title": "landing.anton.app",
+      "url": "https://landing.anton.app/en/",
+      "snippet": "The freelearning app for elementary school"
+    }
+  ]
+}

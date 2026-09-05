@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/Vanilla_DPO_beta_0_6",
+  "slug": "thehassansaud-vanilla_dpo_beta_0_6",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_6",
+  "created_at": "2026-09-05T15:59:29.000Z",
+  "updated_at": "2026-09-05T15:59:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 810702192,
+  "storage_human": "811 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "List of the Top Finance Software in 2026",
+      "url": "https://topbusinesssoftware.com/categories/finance/",
+      "snippet": "List of the top Finance software in 2026 including comparisons, user reviews, pricing, features, and more."
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud",
+      "snippet": "updated a model about 7 hours ago Organizations"
+    },
+    {
+      "title": "Meilleurs logiciels finance comparatif complet pour 2026",
+      "url": "https://nexfi.fr/banque/meilleurs-logiciels-finance/",
+      "snippet": "Jun 24, 2026 · Découvrez les meilleurs logiciels finance en 2026. Analyse et comparatif complet des solutions de gestion financière, …"
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud/datasets",
+      "snippet": "TheHassanSaud/gemma3_12B_dpo_newdata_full_checkpoints_updated_template published a model about 7 hours ago"
+    },
+    {
+      "title": "10 Best Financial Management Software Reviewed In 2026",
+      "url": "https://thecfoclub.com/tools/financial-management-software/",
+      "snippet": "5 days ago · Discover the top financial management software and find the best one for your team. Compare features, pros & cons, …"
+    }
+  ]
+}

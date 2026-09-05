@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "brandonin/bwin-eeg-001",
+  "slug": "brandonin-bwin-eeg-001",
+  "author": "brandonin",
+  "url": "https://huggingface.co/brandonin/bwin-eeg-001",
+  "created_at": "2026-09-05T18:01:09.000Z",
+  "updated_at": "2026-09-05T18:01:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "eeg",
+    "neuroscience",
+    "forecasting",
+    "research",
+    "wilson-cowan",
+    "en",
+    "dataset:eegmmidb",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6558629,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTL Info",
+      "url": "https://www.rtl.be/",
+      "snippet": "Le site du journal RTL Info, premier site d'information en Belgique francophone. Actu en continu, archives gratuites, galeries photos, …"
+    },
+    {
+      "title": "GitHub - OpenTSLab/BrainOmni: [NeurIPS 2025] BrainOmni: A Brain ...",
+      "url": "https://github.com/OpenTSLab/BrainOmni",
+      "snippet": "Official Repository of the paper: BrainOmni: A Brain Foundation Model for Unified EEG and MEG Signals (NeurIPS 2025)"
+    },
+    {
+      "title": "Belgique - RTL Info",
+      "url": "https://www.rtl.be/actu/belgique",
+      "snippet": "Suivez toute l'actualité, les infos sur le sujet Belgique en direct et en vidéo sur RTL Info"
+    },
+    {
+      "title": "BrainOmni: A Brain Foundation Model for Unified EEG and MEG Signals",
+      "url": "https://www.aimodels.fyi/papers/arxiv/brainomni-brain-foundation-model-unified-eeg-meg",
+      "snippet": "The success of this foundation model suggests a promising future for brain-computer interfaces and neurological applications. The integration of multiple signal types and self-supervised learning points toward more sophisticated neural monitoring systems."
+    },
+    {
+      "title": "Regarder en direct - RTL play",
+      "url": "https://www.rtlplay.be/rtlplay/direct",
+      "snippet": "Septante et un duo 18:20 - 19:00 RTL info 19 heures 19:00 - 19:40 Météo 19:40 - 19:50 Place Royale 19:50 - 20:25 Le Bigdil 20:25 - …"
+    }
+  ]
+}

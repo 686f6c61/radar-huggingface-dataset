@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "carlopires/Qwopus3.8-27B-Flash-QUASAR-NVFP4-NInfer",
+  "slug": "carlopires-qwopus3-8-27b-flash-quasar-nvfp4-ninfer",
+  "author": "carlopires",
+  "url": "https://huggingface.co/carlopires/Qwopus3.8-27B-Flash-QUASAR-NVFP4-NInfer",
+  "created_at": "2026-09-05T13:33:44.000Z",
+  "updated_at": "2026-09-05T13:36:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "nvfp4",
+    "blackwell",
+    "quantized",
+    "qwen3.8",
+    "qwopus",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash-GGUF",
+    "base_model:finetune:Jackrong/Qwopus3.8-27B-Flash-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B, Jackrong/Qwopus3.8-27B-Flash-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Natural Language Processing - IBM Research",
+      "url": "https://research.ibm.com/topics/natural-language-processing",
+      "snippet": "May 11, 2026 · Natural Language Processing Much of the information that can help transform enterprises is locked away in text, like …"
+    },
+    {
+      "title": "eepos/Qwen3.8-27B-QUASAR-NVFP4-NInfer · Hugging Face",
+      "url": "https://huggingface.co/eepos/Qwen3.8-27B-QUASAR-NVFP4-NInfer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NLP 的会议中 workshop，findings 和 short paper 是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/519681702",
+      "snippet": "ACL系列的NLP会议（如ACL,NAACL和EMNLP）的论文接收大概分几种情况：1. long paper：分两种。 oral，需要作者上台讲一 …"
+    },
+    {
+      "title": "BennyDaBall/Qwopus3.8-27B-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/BennyDaBall/Qwopus3.8-27B-Flash-NVFP4",
+      "snippet": "Instructions to use BennyDaBall/Qwopus3.8-27B-Flash-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "A Tree-Based Statistical Language Model for Natural Language Speech ...",
+      "url": "https://research.ibm.com/publications/a-tree-based-statistical-language-model-for-natural-language-speech-recognition",
+      "snippet": "A Tree-Based Statistical Language Model for Natural Language Speech Recognition for IEEE Transactions on Acoustics, Speech, …"
+    }
+  ]
+}

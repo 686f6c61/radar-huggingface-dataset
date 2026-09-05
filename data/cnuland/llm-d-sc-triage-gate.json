@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cnuland/llm-d-sc-triage-gate",
+  "slug": "cnuland-llm-d-sc-triage-gate",
+  "author": "cnuland",
+  "url": "https://huggingface.co/cnuland/llm-d-sc-triage-gate",
+  "created_at": "2026-09-05T11:13:13.000Z",
+  "updated_at": "2026-09-05T11:13:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "llm-routing",
+    "llm-d",
+    "semantic-router",
+    "triage",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "千万不要下成steam管家！ 老坑人了 浏览这个回答的人好多，看来有不少新玩家朋友加入steam，在此添加一些注意事项 1.确保你下的 …"
+    },
+    {
+      "title": "cnuland/llm-d-sc-egress-gate · Hugging Face",
+      "url": "https://huggingface.co/cnuland/llm-d-sc-egress-gate",
+      "snippet": "Instructions to use cnuland/llm-d-sc-egress-gate with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "贪便宜买的游戏激活码要Win+R输入irm steam.run|iex打开Steam激活的 …",
+      "url": "https://www.zhihu.com/question/628569920",
+      "snippet": "切换模式 登录/注册 Steam 贪便宜买的游戏激活码要Win+R输入irm steam.run|iex打开Steam激活的靠谱么？ 公共编辑：请勿在自己的 …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=genlen",
+      "snippet": "Sort: Trending Active filters:genlen Clear all cnuland/llm-d-sc-genlen-gate Text Classification •22.7M•Updated about 7 hours ago System theme Company"
+    },
+    {
+      "title": "【情報】《第七史詩》STEAM商店頁面開放紀念活動說明",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=34880&snA=15500",
+      "snippet": "Aug 22, 2026 · - 透過「新增至您的願望清單」，即可透過登錄於STEAM的電子郵件收到正式推出消息。 Event 1. STEAM 收藏活動說 …"
+    }
+  ]
+}

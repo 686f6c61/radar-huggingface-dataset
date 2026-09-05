@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Keretos1/egx-decision-orpo-lora",
+  "slug": "keretos1-egx-decision-orpo-lora",
+  "author": "Keretos1",
+  "url": "https://huggingface.co/Keretos1/egx-decision-orpo-lora",
+  "created_at": "2026-09-05T18:00:00.000Z",
+  "updated_at": "2026-09-05T18:00:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160134835,
+  "storage_human": "160 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "Keretos1 (Kerolos Nasser) - Hugging Face",
+      "url": "https://huggingface.co/Keretos1",
+      "snippet": "None yet models3 Sort: Recently updated Keretos1/egx-decision-orpo-lora Updated 5 minutes ago Keretos1/egx-decision-sft-lora Text Generation •Updated about 8 hours ago"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel Ahead of her headlining set at Rock in Rio, Brazilian pop queen @MarinaSenaOficial is revealing …"
+    },
+    {
+      "title": "GitHub - xfactlab/orpo: Official repository for ORPO · GitHub",
+      "url": "https://github.com/xfactlab/orpo",
+      "snippet": "Official repository for ORPO. Contribute to xfactlab/orpo development by creating an account on GitHub."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/Library/Playlists",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

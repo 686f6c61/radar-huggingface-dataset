@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "LolloMagic/LunarLander-v2-with_my_ppo",
+  "slug": "lollomagic-lunarlander-v2-with_my_ppo",
+  "author": "LolloMagic",
+  "url": "https://huggingface.co/LolloMagic/LunarLander-v2-with_my_ppo",
+  "created_at": "2026-09-05T15:26:39.000Z",
+  "updated_at": "2026-09-05T15:30:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1207768,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "lsdyna/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/lsdyna/ppo-LunarLander-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Crear una cuenta de Google para Gmail - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=es",
+      "snippet": "Alguien está suplantando mi identidad Si crees que alguien ha creado una cuenta de Google con una dirección de Gmail para …"
+    },
+    {
+      "title": "buildthemachine/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/buildthemachine/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) The PPO model is saved as \"ppo-LunarLander-v2.zip\". There are two ways to load this model: Directly load the model from huggingface. This requires the use of the 'load_from_hub' function"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "oforyou：我挺好奇为什么在知乎黛西要挨骂，露丝也要挨骂？ 这俩不是截然相反的人物吗，黛西反面就是露丝，露丝反面就是黛西。 …"
+    }
+  ]
+}

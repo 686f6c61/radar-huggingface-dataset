@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-320ms-coreml",
+  "slug": "lorqa-nemotron-3-5-asr-streaming-multilingual-0-6b-320ms-coreml",
+  "author": "Lorqa",
+  "url": "https://huggingface.co/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-320ms-coreml",
+  "created_at": "2026-09-05T12:41:22.000Z",
+  "updated_at": "2026-09-05T12:41:31.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "coreml",
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "multilingual"
+  ],
+  "tags": [
+    "coreml",
+    "streaming",
+    "nemotron",
+    "lorqa",
+    "apple-silicon",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "ja",
+    "multilingual",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 641123495,
+  "storage_human": "641 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch",
+      "url": "https://fr.twitch.tv/",
+      "snippet": "Twitch is an interactive livestreaming service for content spanning gaming, entertainment, sports, music, and more."
+    },
+    {
+      "title": "Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-coreml · Hugging Face",
+      "url": "https://huggingface.co/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-coreml",
+      "snippet": "CoreML build of NVIDIA's Nemotron 3.5 streaming ASR model, used by Lorqa for on-device live captions and audio transcripts on macOS and iOS. Runs on the Apple Neural Engine through the FluidAudio SDK."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/?lang=fr-FR",
+      "snippet": "Twitch est un service de streaming interactif de jeux vidéo, de divertissement, de musique, de sport, etc."
+    },
+    {
+      "title": "Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML",
+      "url": "https://huggingface.co/FluidInference/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/*/",
+      "snippet": "Twitch is a platform for live streaming, offering diverse content from gaming to music and more, connecting communities worldwide."
+    }
+  ]
+}

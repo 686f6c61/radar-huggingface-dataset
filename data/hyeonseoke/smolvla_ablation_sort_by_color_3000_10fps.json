@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_ablation_sort_by_color_3000_10fps",
+  "slug": "hyeonseoke-smolvla_ablation_sort_by_color_3000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_ablation_sort_by_color_3000_10fps",
+  "created_at": "2026-09-05T12:45:54.000Z",
+  "updated_at": "2026-09-05T12:51:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/ablation_sort_by_color_100_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Remove all pornography websites - Google Search Community",
+      "url": "https://support.google.com/websearch/thread/86554728/remove-all-pornography-websites?hl=en",
+      "snippet": "Dec 2, 2020 · This help content & informationGeneral Help Center experience Search"
+    },
+    {
+      "title": "smolvla_phase1_sort_by_color_A2_via4cm_3000_10fps - Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A2_via4cm_3000_10fps",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Make Google Search safer with SafeSearch - Computer - Google …",
+      "url": "https://support.google.com/websearch/answer/510?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Important:SafeSearch only works on Google Search. It doesn’t affect content on other search engines or websites."
+    },
+    {
+      "title": "Ablation Sort By Color 100 10Fps - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/hyeonseoke-ablation-sort-by-color-100-10fps",
+      "snippet": "LeRobot v3.0 dataset of a robot sorting colored blocks onto matching dishes, collected via SCRAPE-IsaacLab in Isaac Sim with 100 episodes at 10 fps."
+    },
+    {
+      "title": "Přihlášení do Gmailu - Počítač - Nápověda Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=cs&co=GENIE.Platform%3DDesktop",
+      "snippet": "Přihlášení Na počítači otevřete Gmail. Zadejte e-mail nebo telefonní číslo a heslo ke svému účtu Google. Pokud jsou informace už …"
+    }
+  ]
+}

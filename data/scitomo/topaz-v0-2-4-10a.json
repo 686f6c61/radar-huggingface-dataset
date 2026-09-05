@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "scitomo/topaz-v0.2.4-10a",
+  "slug": "scitomo-topaz-v0-2-4-10a",
+  "author": "scitomo",
+  "url": "https://huggingface.co/scitomo/topaz-v0.2.4-10a",
+  "created_at": "2026-09-05T11:06:15.000Z",
+  "updated_at": "2026-09-05T11:52:53.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "topaz",
+    "cryo-electron-tomography",
+    "denoising",
+    "scitomo",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11668276,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemzeti Sport Online",
+      "url": "https://www.nemzetisport.hu/",
+      "snippet": "Nemzeti Sportrádió Friss hírek napi bontásban Sportműsor Képes Sport Csupasport Hátsó füves Utánpótlássport"
+    },
+    {
+      "title": "Topaz Labs | Downloads",
+      "url": "https://www.topazlabs.com/downloads",
+      "snippet": "AI image and video enhancement built for enterprise and production workflows."
+    },
+    {
+      "title": "Nemzeti Sport Online - Friss hírek, élő közvetítés, foci, F1 és ...",
+      "url": "https://nemzeti-sport-online.hu/",
+      "snippet": "Nemzeti Sport Online: friss sporthírek, élő közvetítések, foci, kézilabda, F1, tenisz, olimpia, sportműsor, rádió és digitális sportújság …"
+    },
+    {
+      "title": "Model download tutorial - General - Topaz Community",
+      "url": "https://community.topazlabs.com/t/model-download-tutorial/18446",
+      "snippet": "This tutorial is aimed at those who don’t want to have the program fetch a model when it is not already downloaded. Beginning with version 1.7.0 of VEAI there are many different models the program can use. So far they are forward-compatible, and newer versions than 1.7.0 can use models from 1.7.0 and later. It is possible to download all, or specific, models and store them. There are ..."
+    },
+    {
+      "title": "Nemzeti Sport Online | Nemzeti Sport Online",
+      "url": "https://www.nemzetisport.hu/rovat/nso",
+      "snippet": "Jan 10, 2001 · Nemzeti Sportrádió Friss hírek napi bontásban Sportműsor Képes Sport Csupasport Hátsó füves Utánpótlássport"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "seyhunak/Wamda-3B-Reasoning",
+  "slug": "seyhunak-wamda-3b-reasoning",
+  "author": "seyhunak",
+  "url": "https://huggingface.co/seyhunak/Wamda-3B-Reasoning",
+  "created_at": "2026-09-05T10:48:03.000Z",
+  "updated_at": "2026-09-05T10:48:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "reasoning",
+    "chain-of-thought",
+    "arabic",
+    "math",
+    "lora",
+    "qwen2",
+    "text-generation",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28849119,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "q · Ollama",
+      "url": "https://ollama.com/search?o=newest&q=q",
+      "snippet": "Tools Thinking PopularNewest seyhunak/wamda-3b-reasoning A small Arabic reasoning model: Qwen2.5-3B-Instruct fine-tuned with LoRA to reason 1 TagUpdated 13 minutes ago aiconjured/Qwen3-Embedding-0.6B-Q8-NVFP4"
+    },
+    {
+      "title": "ai21labs/AI21-Jamba-Reasoning-3B · Hugging Face",
+      "url": "https://huggingface.co/ai21labs/AI21-Jamba-Reasoning-3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "AI MODEL LEADERBOARD 369 models · benchmarks, pricing, context, license · ranked by the column you click."
+    },
+    {
+      "title": "mistralai/Ministral-3-3B-Reasoning-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512",
+      "snippet": "Usage of the model Here we assume that the model mistralai/Ministral-3-3B-Reasoning-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM. Vision Reasoning Let's see if the Ministral 3 model knows when to pick a fight !"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "pottokao/MiniMax-H3-FL2VA-turbo-4step-v1.2-768p-NVFP4-SVDQuant-vLLM-Omni",
+  "slug": "pottokao-minimax-h3-fl2va-turbo-4step-v1-2-768p-nvfp4-svdquant-vllm-omni",
+  "author": "pottokao",
+  "url": "https://huggingface.co/pottokao/MiniMax-H3-FL2VA-turbo-4step-v1.2-768p-NVFP4-SVDQuant-vLLM-Omni",
+  "created_at": "2026-09-05T13:15:23.000Z",
+  "updated_at": "2026-09-05T13:57:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "minimax-h3",
+    "fl2va",
+    "turbo",
+    "4-step",
+    "distilled",
+    "nvfp4",
+    "svdquant",
+    "nunchaku",
+    "vllm-omni",
+    "image-to-video",
+    "license:apache-2.0",
+    "diffusers:MiniMaxH3ModularPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22138345115,
+  "storage_human": "22.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حل كتاب المهارات الحياتية ثالث ابتدائي الفصل الاول 1448 - موقع واجباتي",
+      "url": "https://www.wajibati.net/45761/",
+      "snippet": "حل كتاب المهارات الحياتية والاسرية للصف الثالث الابتدائي الفصل الدراسي الاول بدون تحميل حلول جميع دروس كتاب مهارات حياتيه ثالث ابتدائي ف1 1448"
+    },
+    {
+      "title": "lightx2v/Minimax-h3-Turbo · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
+      "snippet": "Online App Try the MiniMax-H3 Turbo LoRA directly in LightX2V Studio: LightX2V Studio:x2v.light-ai.top The Studio currently uses the FL2V 8-step v1.0 768p LoRA, which provides improved video and audio generation quality with 8-step inference. The model version deployed in the Studio may be updated over time."
+    },
+    {
+      "title": "حل كتاب المهارات الحياتية والاسرية ثالث ابتدائي الفصل الاول ف1 1448",
+      "url": "https://www.mnhaji.com/%D8%AD%D9%84-%D9%83%D8%AA%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%AA%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%B1%D9%8A%D8%A9-%D8%AB%D8%A7-2/",
+      "snippet": "حل كتاب المهارات الحياتية والاسرية للصف الثالث الابتدائي الفصل الدراسي الاول حلول مادة مهارات حياتيه واسريه ثالث ابتدائي ف1 1448 على موقع منهجي عرض اونلاين بدون تحميل بصيغة pdf"
+    },
+    {
+      "title": "ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps - GitHub",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Distill Minimax-H3 into 4 steps. Contribute to ModelTC/Minimax-H3-Turbo development by creating an account on GitHub."
+    },
+    {
+      "title": "حل كتاب المهارات الحياتية والاسرية ثالث ابتدائي الفصل الاول 1448",
+      "url": "https://www.haqibati.net/5183/",
+      "snippet": "حل كتاب المهارات الحياتية والاسرية الصف الثالث الابتدائي الفصل الدراسي الاول 1448 حلول جميع وحدات التربيه الاسرية ثالث ابتدائي ف1 لعام ١٤٤٨ على موقع حقيبتي عرض مباشر pdf"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "blackpirates/SmolLM2-135M-TheOneThing",
+  "slug": "blackpirates-smollm2-135m-theonething",
+  "author": "blackpirates",
+  "url": "https://huggingface.co/blackpirates/SmolLM2-135M-TheOneThing",
+  "created_at": "2026-09-05T15:42:42.000Z",
+  "updated_at": "2026-09-05T15:46:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:blackpirates/SmolLM2-135M-TheOneThing",
+    "base_model:quantized:blackpirates/SmolLM2-135M-TheOneThing",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 539946536,
+  "storage_human": "540 MB",
+  "base_model": "blackpirates/SmolLM2-135M-TheOneThing",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhub - Kostenloser Porno Und Sexvideos – Beste Porno Webseite …",
+      "url": "https://pornhub-deutsch.net/?order_post=latest",
+      "snippet": "Pornhub Deutschland ist die unbestrittene Quelle der wildesten und leidenschaftlichsten Sex-Videos, prallvoll mit heißen Amateuren …"
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM2 - a HuggingFaceTB Collection",
+      "url": "https://huggingface.co/collections/HuggingFaceTB/smollm2",
+      "snippet": "Decay mixture experiments SmolLM2 updated May 5, 2025 State-of-the-art compact LLMs for on-device applications: 1.7B, 360M, 135M Upvote 314 +304"
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Apache-2.0 license Moreitems Smol Models 🤏 Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance. [NEW] SmolLM3 (Language Model)"
+    },
+    {
+      "title": "SmolLM2-135M: Lightweight Open-Source Language Model for Edge & Mobile ...",
+      "url": "https://dev.co/ai/llms/smollm2-135m",
+      "snippet": "SmolLM2-135M is production-ready for lightweight, on-device AI. Download the model from HuggingFace Hub, test on your hardware, and benchmark throughput/latency."
+    }
+  ]
+}

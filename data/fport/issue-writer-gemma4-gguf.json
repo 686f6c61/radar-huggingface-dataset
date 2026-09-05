@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fport/issue-writer-gemma4-gguf",
+  "slug": "fport-issue-writer-gemma4-gguf",
+  "author": "fport",
+  "url": "https://huggingface.co/fport/issue-writer-gemma4-gguf",
+  "created_at": "2026-09-05T11:02:54.000Z",
+  "updated_at": "2026-09-05T11:52:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 18980483808,
+  "storage_human": "19.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top Cross-Chain Liquidity Protocols for 2026 | Support",
+      "url": "https://eco.com/support/en/articles/11776421-top-cross-chain-liquidity-protocols-for-2026",
+      "snippet": "Aug 21, 2026 · Cross-chain liquidity protocols ranked for 2026 across three paradigms: AMM-native, bridge-fed, and solver …"
+    },
+    {
+      "title": "fport/issue-writer-gemma4-lora · Hugging Face",
+      "url": "https://huggingface.co/fport/issue-writer-gemma4-lora",
+      "snippet": "Instructions to use fport/issue-writer-gemma4-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Arbitrum Stablecoin Aggregators 2026: Top Routing Platforms | Support",
+      "url": "https://eco.com/support/en/articles/15210575-arbitrum-stablecoin-aggregators-2026-top-routing-platforms",
+      "snippet": "May 26, 2026 · Odos has climbed from a niche tool in 2023 to the #2 aggregator on Arbitrum, with about $140M in daily stablecoin …"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Best Stablecoin Aggregators for Liquidity Routing and Swaps in 2026",
+      "url": "https://stablecoininsider.org/stablecoin-aggregators-2026/",
+      "snippet": "Jan 11, 2026 · Discover the best stablecoin aggregators for liquidity routing and swaps in 2026. Compare the leading platforms for …"
+    }
+  ]
+}

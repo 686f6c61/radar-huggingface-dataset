@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/Raptor-v0.5-8B-A1B-JANG_6M",
+  "slug": "osaurusai-raptor-v0-5-8b-a1b-jang_6m",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/Raptor-v0.5-8B-A1B-JANG_6M",
+  "created_at": "2026-08-25T00:50:35.000Z",
+  "updated_at": "2026-09-03T19:02:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "bailing_hybrid",
+    "jang",
+    "quantized",
+    "apple-silicon",
+    "moe",
+    "bailing-hybrid",
+    "kda",
+    "reasoning",
+    "agent",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:finetune:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 1140,
+  "trending_score": 8,
+  "parameters": 6156950944,
+  "parameters_human": "6.16B",
+  "storage_bytes": 35848326293,
+  "storage_human": "35.8 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sportnachrichten - kicker",
+      "url": "http://www.kicker.de/",
+      "snippet": "kicker präsentiert Nachrichten, Ergebnisse, Analysen, Live-Ticker der 1. und 2. Bundesliga, 3. Liga, Amateurfußball, …"
+    },
+    {
+      "title": "OsaurusAI/Raptor-v0.5-8B-A1B-JANG_6M · Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/Raptor-v0.5-8B-A1B-JANG_6M",
+      "snippet": "Instructions to use OsaurusAI/Raptor-v0.5-8B-A1B-JANG_6M with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "kicker",
+      "url": "https://www.kicker.ch/",
+      "snippet": "16 hours ago · kicker.ch ist das Online-Angebot zum bekannten Fußballmagazin - Topaktuelle News und Livescores aus allen Top …"
+    },
+    {
+      "title": "Raptor 0.5: A Small Agent Model for the Macs Everyone Actually Owns ...",
+      "url": "https://osaurus.ai/models/raptor-05",
+      "snippet": "Raptor 0.5 is a resident model for machines where residency is expensive. Good fits: agent loops and tool calling, file and folder work, document-versus-spreadsheet checks, drafting emails and summaries as reviewable files, shell one-liners in the sandbox, long multi-turn sessions where a person is waiting on each step."
+    },
+    {
+      "title": "Alle News aus dem Fußball und der Welt des Sports - kicker",
+      "url": "https://www.kicker.at/homepage/startseite",
+      "snippet": "kicker.at ist das Online-Angebot zum bekannten Fußballmagazin - Topaktuelle News und Livescores aus allen Top-Ligen Europas …"
+    }
+  ]
+}

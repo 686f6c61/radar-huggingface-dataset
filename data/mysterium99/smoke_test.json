@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mysterium99/smoke_test",
+  "slug": "mysterium99-smoke_test",
+  "author": "mysterium99",
+  "url": "https://huggingface.co/mysterium99/smoke_test",
+  "created_at": "2026-09-05T12:16:46.000Z",
+  "updated_at": "2026-09-05T12:18:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:test",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720184,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BMI-Tabelle",
+      "url": "https://bmirechner.net/new/2/",
+      "snippet": "BMI-Tabelle nach Alter ... Die nebenstehende Tabelle zeigt für die verscheidenen Altersgruppen die BMI-Werte innerhalb des …"
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "Free AI image detector and checker. Find out if a photo, picture, or artwork is AI-generated: Midjourney, DALL-E, Stable Diffusion and 20+ models. No signup."
+    },
+    {
+      "title": "Untergewicht - BMI Rechner",
+      "url": "https://bmirechner.net/untergewicht",
+      "snippet": "Untergewicht Von Untergewicht ist die Rede, wenn der BMI eines Menschen weniger als 18,5 beträgt. Besonders betroffen davon …"
+    },
+    {
+      "title": "Mak-P90 / ai-jailbreak-archive - GitHub",
+      "url": "https://github.com/Mak-P90/ai-jailbreak-archive",
+      "snippet": "A curated archive of jailbreak prompts, prompt injections, and related techniques discovered across major AI models, including OpenAI, Gemini, Claude, Grok, and others. This repository documents prompt behavior and model responses for research, experimentation, and red-teaming purposes. This project ..."
+    },
+    {
+      "title": "Essstörungen - BMI Rechner",
+      "url": "https://bmirechner.net/essstoerungen",
+      "snippet": "Esstörungen Essstörungen waren früher vor allem ein Problem junger Mädchen. Heutzutage treten sie bei beiden Geschlechtern auf. …"
+    }
+  ]
+}

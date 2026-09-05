@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Maxilicious20/Echo-Vision-1",
+  "slug": "maxilicious20-echo-vision-1",
+  "author": "Maxilicious20",
+  "url": "https://huggingface.co/Maxilicious20/Echo-Vision-1",
+  "created_at": "2026-09-05T17:54:53.000Z",
+  "updated_at": "2026-09-05T17:56:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "diffusion",
+    "rectified-flow",
+    "cascade",
+    "coarse-to-fine",
+    "trained-from-scratch",
+    "small-model",
+    "consumer-gpu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37616708,
+  "parameters_human": "37.6M",
+  "storage_bytes": 150548648,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "استكشاف 67 مثالاً على نقاط القوة والضعف الشخصية: دليلك للتطوير الذاتي",
+      "url": "https://www.annajah.net/67-%d9%85%d8%ab%d8%a7%d9%84-%d8%b9%d9%86-%d9%86%d9%82%d8%a7%d8%b7-%d8%a7%d9%84%d9%82%d9%88%d8%a9-%d9%88%d8%a7%d9%84%d8%b6%d8%b9%d9%81-%d8%a7%d9%84%d8%b4%d8%ae%d8%b5%d9%8a%d8%a9-article-33241",
+      "snippet": "فهم نقاط القوة والضعف الشخصية هو خطوة أساسية نحو تحسين الذات وتحقيق الأهداف. في هذا المقال، نقدم 67 مثالاً يساعدونك في التعرف على هذه النقاط والعمل على تطويرها. المؤلف"
+    },
+    {
+      "title": "Maxilicious20/Echo-Vision-1 · Hugging Face",
+      "url": "https://huggingface.co/Maxilicious20/Echo-Vision-1",
+      "snippet": "A two-stage coarse-to-fine latent diffusion model (rectified flow), trained entirely from scratch on a single consumer GPU (RTX 4060, 8 GB VRAM). Echo-Vision-1 generates 768×768 images by first \"sketching\" a low-resolution draft of the scene and then refining it into a high-resolution image with a dedicated super-resolution-style diffusion stage."
+    },
+    {
+      "title": "كيف يمكن أن تركّز على نقاط القوة في شخصيتك وتطورها؟",
+      "url": "https://hbrarabic.com/%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%B2-%D8%B9%D9%84%D9%89-%D9%86%D9%82%D8%A7%D8%B7-%D8%A7%D9%84%D9%82%D9%88%D8%A9-%D9%81%D9%8A-%D8%B4%D8%AE%D8%B5%D9%8A%D8%AA%D9%83/",
+      "snippet": "Feb 20, 2026 · يؤكد ماركوس باكنغهام، في كتابه \"اكتشف نقاط قوتك الآن\" (Now, Discover Your Strengths) ، أن الآباء يميلون إلى التركيز على تحسين نقاط ضعف أبنائهم بدلاً من …"
+    },
+    {
+      "title": "Maxilicious20/Echo-Vision-1 at main - Hugging Face",
+      "url": "https://huggingface.co/Maxilicious20/Echo-Vision-1/tree/main",
+      "snippet": "Instructions to use Maxilicious20/Echo-Vision-1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "نقاط القوة والضعف في تقييم الأداء الوظيفي وأمثلة على نقاط القوة والضعف ...",
+      "url": "https://bakkah.com/ar/knowledge-center/%D9%82%D9%88%D8%A9-%D9%88%D8%B6%D8%B9%D9%81-%D8%AA%D9%82%D9%8A%D9%8A%D9%85-%D8%A7%D9%84%D8%A3%D8%AF%D8%A7%D8%A1",
+      "snippet": "من أبرز نقاط القوة في تقييم الأداء الوظيفي للموظف، تمتعه بالتفاؤل الذي يحفزه ويرفع من أداءه، ويمكنه من النظر إلى النجاح نظرة إيجابية، وذلك بالاشتراك مع زملائه، وهي مهارة مطلوبة للغاية خلال …"
+    }
+  ]
+}

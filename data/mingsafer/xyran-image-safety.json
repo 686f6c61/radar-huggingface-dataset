@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MingSafeR/xyran-image-safety",
+  "slug": "mingsafer-xyran-image-safety",
+  "author": "MingSafeR",
+  "url": "https://huggingface.co/MingSafeR/xyran-image-safety",
+  "created_at": "2026-09-05T10:44:29.000Z",
+  "updated_at": "2026-09-05T10:49:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "nsfw",
+    "content-moderation",
+    "content-safety",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23701765,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SPORT24 | Μόνο Αθλητικά",
+      "url": "https://www.sport24.gr/",
+      "snippet": "Τα σημαντικότερα αθλητικά νέα της ημέρας στο SPORT24. Αθλητικές ειδήσεις, αρθρογραφία, ρεπορτάζ για ποδόσφαιρο, μπάσκετ & …"
+    },
+    {
+      "title": "Grok AI NSFW Bypass Prompts 2026: Safety Gaps Exposed",
+      "url": "https://blog.cherrypop.ai/2026/06/04/grok-ai-image-generation-nsfw-bypass-prompts/",
+      "snippet": "Grok AI image generator vulnerabilities revealed: 74% bypass success with artistic framing. Why text-to-image safety is broken & what xAI policy forbids."
+    },
+    {
+      "title": "Πρόγραμμα TV - Αθλητικές Μεταδόσεις στο ...",
+      "url": "https://www.sport24.gr/tvprogram/",
+      "snippet": "Όλες οι αθλητικές μεταδόσεις της ημέρας. Το πρόγραμμα των αθλητικών μεταδόσεων για ποδόσφαιρο, μπάσκετ και τα υπόλοιπα …"
+    },
+    {
+      "title": "AI Image Detector — Detect AI-Generated Images Online | Imagera",
+      "url": "https://imagera.ai/detect/ai-image-detection",
+      "snippet": "Detect AI images with 99.7% accuracy across leading generation systems. Upload JPEG, PNG or WebP. From 10 credits per scan."
+    },
+    {
+      "title": "Πρωτοσέλιδα Αθλητικών Εφημερίδων - SPORT24",
+      "url": "https://www.sport24.gr/newspapers/",
+      "snippet": "Δείτε όλα τα πρωτοσέλιδα των αθλητικών και πολιτικών εφημερίδων σήμερα από το SPORT24. Όλες οι εφημερίδες σήμερα και τις …"
+    }
+  ]
+}

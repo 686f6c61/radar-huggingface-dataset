@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch8",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch8",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch8",
+  "created_at": "2026-09-05T18:13:24.000Z",
+  "updated_at": "2026-09-05T18:14:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FikFap Status",
+      "url": "https://status.fikfap.com/",
+      "snippet": "Check the current status and updates of FikFap services on this page."
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "#indian - FIKFAP",
+      "url": "https://fikfap.com/hash/indian/latest",
+      "snippet": "127 clips, 18.7K followers If you just enable JavaScript, we'll deliver authentic porn optimized for your phone/tablet. Simply swipe to …"
+    },
+    {
+      "title": "Lanni-ni (Lanni) - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni",
+      "snippet": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m. published a model about 9 hours ago. Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m"
+    },
+    {
+      "title": "#japanese - FIKFAP",
+      "url": "https://fikfap.com/hash/Japanese",
+      "snippet": "84 clips, 17.5K followers If you just enable JavaScript, we'll deliver authentic porn optimized for your phone/tablet. Simply swipe to …"
+    }
+  ]
+}

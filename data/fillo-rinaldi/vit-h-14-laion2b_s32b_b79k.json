@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "fillo-rinaldi/ViT-H-14-laion2b_s32b_b79k",
+  "slug": "fillo-rinaldi-vit-h-14-laion2b_s32b_b79k",
+  "author": "fillo-rinaldi",
+  "url": "https://huggingface.co/fillo-rinaldi/ViT-H-14-laion2b_s32b_b79k",
+  "created_at": "2026-09-05T11:29:17.000Z",
+  "updated_at": "2026-09-05T11:39:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "openclip",
+    "vision",
+    "image-classification",
+    "fine-tuned",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63114830128,
+  "storage_human": "63.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "盐言故事 - 知乎",
+      "url": "https://www.zhihu.com/org/yan-yan-gu-shi",
+      "snippet": "Aug 28, 2026 · 盐言故事在知乎提供高质量回答，分享知识与见解，获得了用户的广泛赞同。"
+    },
+    {
+      "title": "laion/CLIP-ViT-H-14-laion2B-s32B-b79K · Hugging Face",
+      "url": "https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "win10电脑不使用后两分钟锁屏自动锁屏，怎么设置时间都没用，有没 …",
+      "url": "https://www.zhihu.com/question/55617612",
+      "snippet": "win10电脑不使用后两分钟锁屏自动锁屏，怎么设置时间都没用，有没有什么解决方法？"
+    },
+    {
+      "title": "fillo-rinaldi/ViT-L-14-laion2b_s32b_b82k · Hugging Face",
+      "url": "https://huggingface.co/fillo-rinaldi/ViT-L-14-laion2b_s32b_b82k",
+      "snippet": "This repository contains full fine-tuned OpenCLIP ViT-L-14 checkpoints, each fine-tuned on a single downstream vision dataset starting from the LAION-2B (laion2b_s32b_b82k) pretrained weights."
+    },
+    {
+      "title": "小约翰 - 知乎",
+      "url": "https://www.zhihu.com/people/lu-chen-xi-9-98",
+      "snippet": "5 days ago · 关注的话题102关注的专栏4关注的问题2,915关注的收藏夹17"
+    }
+  ]
+}

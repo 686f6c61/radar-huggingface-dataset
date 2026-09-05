@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-3.1-Light-specialist-300-ties-answerfirst",
+  "slug": "youngseok12-ax-3-1-light-specialist-300-ties-answerfirst",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-3.1-Light-specialist-300-ties-answerfirst",
+  "created_at": "2026-09-05T13:37:01.000Z",
+  "updated_at": "2026-09-05T13:41:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "instruction-tuning",
+    "supervised-fine-tuning",
+    "lora",
+    "merged-model",
+    "model-merging",
+    "ties",
+    "answer-first",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:adapter:skt/A.X-3.1-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635312,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Achat impossible le bon coin - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-9063974-achat-impossible-le-bon-coin",
+      "snippet": "Feb 17, 2023 · Bonjour, Je veux acheter un article sur le bon coin mais je n'ai ni le bouton \"acheter\" ni \"faire une offre\". J ai contacté …"
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_0 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0",
+      "snippet": "youngseok12 / AX-3.1-Light-sft_v3_0 like 0 Text Generation Transformers Safetensors Korean llama korean sft lora-merged k-ai-leaderboard conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Possibilité d'arnaque LeBoncoin si paiement par chèque et envoi par ...",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-8440502-possibilite-d-arnaque-leboncoin-si-paiement-par-cheque-et-envoi-par-chronopost",
+      "snippet": "Jan 8, 2020 · Bon, il accepte finalement l'envoi par Colissimo. Et il me dit qu'il m'enverra une capture d'écran montrant que son …"
+    },
+    {
+      "title": "AX-3.1-Light-sft_v0_21_source_screen_essential_medical_300",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_essential_medical_300",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Modifier le numéro de téléphone associé à votre compte et la façon …",
+      "url": "https://support.google.com/accounts/answer/3463280?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Ajouter ou modifier un numéro de téléphone Cesser d'utiliser votre numéro sur Google Sur votre appareil Android, ouvrez les …"
+    }
+  ]
+}

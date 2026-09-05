@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JOKER141/MiniMax-H3-Combat-Base-V2",
+  "slug": "joker141-minimax-h3-combat-base-v2",
+  "author": "JOKER141",
+  "url": "https://huggingface.co/JOKER141/MiniMax-H3-Combat-Base-V2",
+  "created_at": "2026-09-01T04:49:09.000Z",
+  "updated_at": "2026-09-01T04:58:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "combat",
+    "action",
+    "motion",
+    "en",
+    "zh",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 750,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155110280,
+  "storage_human": "155 MB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3 Combat BASE ｜Fight Motion / Impa… V2 BASE | CivArchive",
+      "url": "https://civarchive.com/models/2853878?modelVersionId=3246572",
+      "snippet": "Download MiniMax H3 Combat BASE ｜Fight Motion / Impact / Drama Booster V2 BASE, a LORA for MiniMax H3. 3 files: Director of “One Against Many”.txt (7 KB), H3_Combat_V2.safetensors (148 MB), +1 more. Published Aug 19, 2026. 5 live mirrors. 🚀 Run It on RunningHub 🎁 New users on RunningHub International can get 1000 RH Coins after registration. Start / En…"
+    },
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "JOKER141/MiniMax-H3-Combat-Base-V2 · Hugging Face",
+      "url": "https://huggingface.co/JOKER141/MiniMax-H3-Combat-Base-V2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 Max: Free AI Video Generator, Ranked #1, Post-Trained by fal | fal",
+      "url": "https://fal.ai/minimax-h3-max",
+      "snippet": "The #1 AI video model just dropped. MiniMax H3 Max, post-trained by fal: five free 15-second 768p generations a day."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/awesome-minimax-h3-integration · GitHub",
+      "url": "https://github.com/MiniMax-AI/awesome-minimax-h3-integration",
+      "snippet": "SGLang Diffusion ships a native H3 pipeline with an official cookbook: sglang serve --model-variant fl2va|ref2va covers t2va, fl2va, and ref2va (V2V is a ref2va use case), with every published recipe verified on real hardware — 4×H200/H100, B200/B300 (online quantization), 2×RTX 5090 layerwise offload, single RTX 4090 24 GB (kitchen_int8), and day-0 AMD MI355X/MI300X via ROCm + AITER. Also the selectable backend in MiniMax-H3-ComfyUI."
+    }
+  ]
+}

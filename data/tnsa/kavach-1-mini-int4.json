@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "TNSA/Kavach-1-Mini-INT4",
+  "slug": "tnsa-kavach-1-mini-int4",
+  "author": "TNSA",
+  "url": "https://huggingface.co/TNSA/Kavach-1-Mini-INT4",
+  "created_at": "2026-09-05T13:26:26.000Z",
+  "updated_at": "2026-09-05T13:26:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "cybersecurity",
+    "red-team",
+    "security",
+    "offensive-security",
+    "kavach",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:mit",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1067236933,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Python.org",
+      "url": "https://www.python.org/",
+      "snippet": "Calculations are simple with Python, and expression syntax is straightforward: the operators +, -, *and /work as expected; …"
+    },
+    {
+      "title": "TNSA/Kavach-1-Mini-INT4 · Hugging Face",
+      "url": "https://huggingface.co/TNSA/Kavach-1-Mini-INT4",
+      "snippet": "A compact, instruction-tuned language model specialized for offensive security and red-team reasoning. Built by full fine-tuning of Qwen3.5-0.8B (Instruct), Kavach-1-Mini is designed to act as an expert assistant for authorized penetration testing, security research, and cybersecurity education — small enough to run on modest hardware, yet focused enough to reason in depth about real-world ..."
+    },
+    {
+      "title": "TNSA AI - Advancing Artificial Intelligence",
+      "url": "https://www.tnsaai.com/",
+      "snippet": "Advancing artificial intelligence through cutting-edge research, innovative models, and responsible development for a better future."
+    },
+    {
+      "title": "Download Python | Python.org",
+      "url": "https://www.python.org/getit/",
+      "snippet": "Jul 17, 2011 · Download Python 3.14.7 Download the latest version of Python Download Python 3.14.7 Looking for Python with a …"
+    },
+    {
+      "title": "TNSA/Kavach-1-Mini-FP8 · Hugging Face",
+      "url": "https://huggingface.co/TNSA/Kavach-1-Mini-FP8",
+      "snippet": "A compact, instruction-tuned language model specialized for offensive security and red-team reasoning. Built by full fine-tuning of Qwen3.5-0.8B (Instruct), Kavach-1-Mini is designed to act as an expert assistant for authorized penetration testing, security research, and cybersecurity education — small enough to run on modest hardware, yet focused enough to reason in depth about real-world ..."
+    }
+  ]
+}

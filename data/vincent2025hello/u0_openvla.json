@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Vincent2025hello/u0_openvla",
+  "slug": "vincent2025hello-u0_openvla",
+  "author": "Vincent2025hello",
+  "url": "https://huggingface.co/Vincent2025hello/u0_openvla",
+  "created_at": "2026-09-05T13:14:31.000Z",
+  "updated_at": "2026-09-05T13:51:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "openvla",
+    "arxiv:2510.07869",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7541237184,
+  "parameters_human": "7.54B",
+  "storage_bytes": 15083100547,
+  "storage_human": "15.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "El Diario de Atacama",
+      "url": "https://www.diarioatacama.cl/",
+      "snippet": "El Diario de Atacama - La edición completa en Internet"
+    },
+    {
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model - GitHub",
+      "url": "https://github.com/openvla/openvla",
+      "snippet": "A simple and scalable codebase for training and fine-tuning vision-language-action models (VLAs) for generalist robotic manipulation: To get started with loading and running OpenVLA models for inference, we provide a lightweight interface that leverages HuggingFace transformers AutoClasses, with ..."
+    },
+    {
+      "title": "Vacunación Covid-19",
+      "url": "https://www.diarioatacama.cl/especiales/vacunacion/",
+      "snippet": "El Diario de Atacama"
+    },
+    {
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+      "url": "https://openvla.github.io/",
+      "snippet": "We introduce OpenVLA, a 7B parameter open-source vision-language-action model (VLA), pretrained on 970k robot episodes from the Open X-Embodiment dataset. OpenVLA sets a new state of the art for generalist robot manipulation policies. It supports controlling multiple robots out of the box and can be quickly adapted to new robot setups via parameter-efficient fine-tuning. The OpenVLA ..."
+    },
+    {
+      "title": "GitHub - xiaohai-AI/openvla: OpenVLA: An open-source vision-language ...",
+      "url": "https://github.com/xiaohai-AI/openvla",
+      "snippet": "openvla-v01-7b: An early model used during development, trained from the Prismatic siglip-224px VLM (singular SigLIP vision backbone, and a Vicuña v1.5 LLM). Trained on the same mixture of datasets as Octo, but for significantly fewer GPU hours than our final model (mixture details - see \"Open-X Magic Soup\")."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MrDuarte/act-WarehousePick-v0",
+  "slug": "mrduarte-act-warehousepick-v0",
+  "author": "MrDuarte",
+  "url": "https://huggingface.co/MrDuarte/act-WarehousePick-v0",
+  "created_at": "2026-09-05T15:03:41.000Z",
+  "updated_at": "2026-09-05T15:03:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:MrDuarte/WarehousePick-v0",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206717000,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supprimer bing - forums.commentcamarche.net",
+      "url": "https://forums.commentcamarche.net/forum/affich-38302323-supprimer-bing",
+      "snippet": "Aug 8, 2026 · A voir également: Comment enlever microsoft bing Microsoft money- Guide Supprimer Bing : changer le moteur de …"
+    },
+    {
+      "title": "MrDuarte/act-WarehousePick-v0-DigitalTwin_yolo · Hugging Face",
+      "url": "https://huggingface.co/MrDuarte/act-WarehousePick-v0-DigitalTwin_yolo",
+      "snippet": "Instructions to use MrDuarte/act-WarehousePick-v0-DigitalTwin_yolo with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Desinstaller new tab [Résolu] - Virus - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-29442367-desinstaller-new-tab",
+      "snippet": "Apr 27, 2020 · Meilleure réponse: Salut, 1) Supprimer l'extension qui cause des problèmes. Sur Firefox : Menu Outils / Modules …"
+    },
+    {
+      "title": "MrDuarte/WarehousePick-v0 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/MrDuarte/WarehousePick-v0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supprimer Bing - forum.pcastuces.com",
+      "url": "https://forum.pcastuces.com/supprimer_bing-f4s74156.htm",
+      "snippet": "Oct 1, 2011 · Bonjour, Impossible de supprimer le moteur de rechercher BING avec IE8. Ci-joint image de la fenêtre. Corcialement …"
+    }
+  ]
+}

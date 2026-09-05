@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Usmanbabban/MedAI-Final",
+  "slug": "usmanbabban-medai-final",
+  "author": "Usmanbabban",
+  "url": "https://huggingface.co/Usmanbabban/MedAI-Final",
+  "created_at": "2026-09-05T13:07:27.000Z",
+  "updated_at": "2026-09-05T13:08:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31935742,
+  "storage_human": "32 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch",
+      "url": "http://de.twitch.tv/",
+      "snippet": ""
+    },
+    {
+      "title": "Usmanbabban (Ali) - Hugging Face",
+      "url": "https://huggingface.co/Usmanbabban",
+      "snippet": "User profile of Ali on Hugging Face"
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/?lang=de-DE",
+      "snippet": "Twitch ist ein interaktiver Livestreaming-Dienst für eine große Bandbreite an Inhalten wie Games, Entertainment, Sport, Musik und …"
+    },
+    {
+      "title": "GitHub - Akash-Thakur44/MedAI_final",
+      "url": "https://github.com/Akash-Thakur44/MedAI_final",
+      "snippet": "Contribute to Akash-Thakur44/MedAI_final development by creating an account on GitHub."
+    },
+    {
+      "title": "Twitch.tv - Official Site",
+      "url": "https://www.twitch.tv/",
+      "snippet": "Twitch is the world`s leading video platform and community for gamers."
+    }
+  ]
+}

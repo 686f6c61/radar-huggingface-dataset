@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "GestaltLabs/Qwen3.8-27B-DFlash-EXL3-4bit",
+  "slug": "gestaltlabs-qwen3-8-27b-dflash-exl3-4bit",
+  "author": "GestaltLabs",
+  "url": "https://huggingface.co/GestaltLabs/Qwen3.8-27B-DFlash-EXL3-4bit",
+  "created_at": "2026-09-05T13:44:28.000Z",
+  "updated_at": "2026-09-05T13:44:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3",
+    "exl3",
+    "quantized",
+    "dflash",
+    "speculative-decoding",
+    "draft-model",
+    "custom_code",
+    "arxiv:2406.11235",
+    "arxiv:2602.06036",
+    "base_model:z-lab/Qwen3.6-27B-DFlash",
+    "base_model:quantized:z-lab/Qwen3.6-27B-DFlash",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 433122560,
+  "parameters_human": "433.1M",
+  "storage_bytes": 866261837,
+  "storage_human": "866 MB",
+  "base_model": "z-lab/Qwen3.6-27B-DFlash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/?msockid=07ee58575ad66e0838a34f9c5be46fe4",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "Model · Experiential",
+      "url": "https://platform.experientiallabs.ai/models/qwen3.8-27b",
+      "snippet": "Agent promptPythonJavaScriptcURL Click to create an API key I want you to route my LLM calls for \"qwen3.8-27b\" through the Experiential gateway instead of calling the provider directly. It speaks the OpenAI Chat Completions API, so this is a base-URL and key swap. Please: Point the client at https://api.experientiallabs.ai/v1 as the base URL. 2."
+    },
+    {
+      "title": "Copilot | AI chat for work",
+      "url": "https://copilot.cloud.microsoft/",
+      "snippet": "Copilot brings work and life into one app, but your conversation history doesn't mix. Your work chats stay with your work account and …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Microsoft 365 - Sign into Copilot",
+      "url": "https://m365.cloud.microsoft/?omkt=en-001&source=post_page---------------------------",
+      "snippet": "Microsoft Copilot brings personal and work experiences into one simpler place while keeping them separate. Work stays work, and …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DaSHENGGE/ppo-Huggy",
+  "slug": "dashengge-ppo-huggy",
+  "author": "DaSHENGGE",
+  "url": "https://huggingface.co/DaSHENGGE/ppo-Huggy",
+  "created_at": "2026-09-05T12:25:38.000Z",
+  "updated_at": "2026-09-05T12:27:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187440599,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "prepsyched/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/prepsyched/ppo-Huggy",
+      "snippet": "Edit model card ppo Huggy ppo Agent playing Huggy This is a trained model of a ppo agent playing Huggy using the Unity ML-Agents Library. Usage (with ML-Agents) The Documentation: https://github.com/huggingface/ml-agents#get-started We wrote a complete tutorial to learn to train your first agent using ML-Agents and publish it to the Hub:"
+    },
+    {
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
+    },
+    {
+      "title": "hou88/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/hou88/ppo-Huggy",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

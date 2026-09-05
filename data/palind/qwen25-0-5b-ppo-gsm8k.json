@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Palind/qwen25-0.5b-ppo-gsm8k",
+  "slug": "palind-qwen25-0-5b-ppo-gsm8k",
+  "author": "Palind",
+  "url": "https://huggingface.co/Palind/qwen25-0.5b-ppo-gsm8k",
+  "created_at": "2026-09-05T11:32:09.000Z",
+  "updated_at": "2026-09-05T11:35:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "reinforcement-learning",
+    "ppo",
+    "verl",
+    "gsm8k",
+    "qwen2.5",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Přehraj.to - Sledování a stahování neomezeně",
+      "url": "https://prehrajto.cz/",
+      "snippet": "Nahrát soubor Přihlásit se Přehraj.to na měsíc zdarma Aktivujte si PREMIUMúčet ZDARMA a získejte možnost přehrávat nebo …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+      "snippet": "Instructions to use Qwen/Qwen2.5-0.5B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Přehraj.to - Sledování a stahování neomezeně",
+      "url": "https://prehrajto.cz/faq",
+      "snippet": "Provozovatel Přehraj.to obsah nijak netřídí, nezpracovává, a moderuje jen tak, aby dostál svým zákonným povinnostem – stejně, …"
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v1",
+      "snippet": "Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks eval-uating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct ..."
+    },
+    {
+      "title": "Nejnovější - online ke zhlédnutí a ke stažení - Přehraj.to",
+      "url": "https://prehrajto.cz/hledej/Nejnov%C4%9Bj%C5%A1%C3%AD",
+      "snippet": "Nahrát soubor Přihlásit se NejnovějšíNejnovější Stáhněte si aplikaci Přehraj.to do Google TV. Klikněte ZDE SouborySoubory Nahrát …"
+    }
+  ]
+}

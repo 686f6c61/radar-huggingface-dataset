@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-3.1-Light-specialist-300-ties",
+  "slug": "youngseok12-ax-3-1-light-specialist-300-ties",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-3.1-Light-specialist-300-ties",
+  "created_at": "2026-09-05T11:33:12.000Z",
+  "updated_at": "2026-09-05T11:35:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "instruction-tuning",
+    "supervised-fine-tuning",
+    "lora",
+    "merged-model",
+    "model-merging",
+    "ties",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:adapter:skt/A.X-3.1-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635312,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online-Shop für Druckluftzubehör | DWT GmbH",
+      "url": "https://www.dwt-gmbh.de/druckluft-und-pneumatik-shop-24/",
+      "snippet": "Unser Druckluft-Onlineshop bietet Ihnen ein umfangreiches Sortiment für Industrie, Handwerk und Produktion – von …"
+    },
+    {
+      "title": "AX-3.1-Light-sft_v0_21_source_screen_essential_medical_300",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_essential_medical_300",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Suche Mitglieder von DWT-Kontaktanzeigen nach Aufenthaltsort, DWT ...",
+      "url": "https://www.dwt-kontaktanzeigen.de/browse-locations",
+      "snippet": "DWT-Kontaktanzeigen hat Mitglieder auf der ganzen Welt, die nach Partnern suchen. Hier können Sie Mitglieder an jedem beliebigen …"
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_B12K_qcdd_1e · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_B12K_qcdd_1e",
+      "snippet": "This model is a Korean question-answering and instruction-following model fine-tuned to place the answer first and optionally provide a short reason. The training set was selected from a frozen AI Hub candidate universe using quality, complexity, difficulty, and diversity-aware selection."
+    },
+    {
+      "title": "german crossdressing group | Flickr",
+      "url": "https://www.flickr.com/groups/german_crossdressers/",
+      "snippet": "Von wo kommst du her? Where are you from?"
+    }
+  ]
+}

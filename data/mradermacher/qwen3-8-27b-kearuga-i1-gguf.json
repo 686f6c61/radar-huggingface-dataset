@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Kearuga-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-kearuga-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Kearuga-i1-GGUF",
+  "created_at": "2026-09-05T15:48:00.000Z",
+  "updated_at": "2026-09-05T16:06:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320698036,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471914176,
+  "storage_human": "39.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Juego: Free Fire - Videojuegos - CCM",
+      "url": "https://es.ccm.net/forum/juego-free-fire-170",
+      "snippet": "Nov 26, 2024 · Urziel el 19 oct. 2024 Juego: Free Fire Reportar cuenta Hola, Quiero reportar una cuenta persona tóxica y tramposa …"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "NFS: Most Wanted (2005): descargar para PC - CCM",
+      "url": "https://es.ccm.net/descargas/videojuegos/10662-need-for-speed-most-wanted-2005/",
+      "snippet": "Jan 22, 2024 · En Need for Speed: Most Wanted, competirás en intensas carreras callejeras contra el reloj junto a otros conductores …"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Leimroth3-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Leimroth3-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.8-27B-Leimroth3-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "[tutorial] MACRO HS - EMULADOR - Free Fire - WebCheats",
+      "url": "https://www.webcheats.com.br/topic/2270091-macro-hs-emulador/",
+      "snippet": "Sep 18, 2019 · No caso do jogo free fire, esse macro funcionaria perfeitamente do jeito que ele é. No free fire, costumamos dar hs …"
+    }
+  ]
+}

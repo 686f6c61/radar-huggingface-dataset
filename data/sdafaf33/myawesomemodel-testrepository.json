@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sdafaf33/MyAwesomeModel-TestRepository",
+  "slug": "sdafaf33-myawesomemodel-testrepository",
+  "author": "sdafaf33",
+  "url": "https://huggingface.co/sdafaf33/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-05T12:33:05.000Z",
+  "updated_at": "2026-09-05T12:34:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "url": "https://www.t-online.de/",
+      "snippet": "Aktuelle News aus Politik, Sport, Unterhaltung, Wirtschaft & Finanzen | Ratgeber Leben, Gesundheit und Heim & Garten | E-Mail und …"
+    },
+    {
+      "title": "sdafaf33/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/sdafaf33/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Politik aktuell: Nachrichten aus Deutschland, Europa und der Welt",
+      "url": "https://www.t-online.de/nachrichten/",
+      "snippet": "Aktuelle News, Informationen und Videos zu Politik, Panorama und Wetter aus Deutschland, Europa und der Welt von t-online.de …"
+    },
+    {
+      "title": "sdafaf33/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/sdafaf33/MyAwesomeModel",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model."
+    },
+    {
+      "title": "Telefonbuch bei t-online.de in Sekunden gefunden",
+      "url": "https://telefonbuch.t-online.de/",
+      "snippet": "Mit der Benzinpreis-Suche von Das Telefonbuch sehen Sie schnell, wo sich das Tanken gerade rechnet. Ein kurzer Blick genügt, um …"
+    }
+  ]
+}

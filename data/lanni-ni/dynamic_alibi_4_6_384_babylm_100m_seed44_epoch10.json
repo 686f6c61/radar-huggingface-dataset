@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch10",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_babylm_100m_seed44_epoch10",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch10",
+  "created_at": "2026-09-05T18:00:54.000Z",
+  "updated_at": "2026-09-05T18:02:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portail Orange | Offres Mobiles, Internet, TV, Actu & Accès compte Mail",
+      "url": "https://www.orange.fr/portail",
+      "snippet": "Accès rapide et facile à toutes les fonctionnalités Orange (Email, Assistance, Banque, Boutique). Découvrez notre portail Orange et …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mail Orange: découvrez la messagerie et accédez à vos mails",
+      "url": "https://messagerie.orange.fr/",
+      "snippet": "Découvrez toutes les fonctionnalités du Mail Orange et communiquez facilement avec tous vos proches depuis votre PC/Mac, …"
+    },
+    {
+      "title": "Lanni-ni (Lanni) - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni",
+      "snippet": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m. published a model about 9 hours ago. Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m"
+    },
+    {
+      "title": "Espace Client Orange",
+      "url": "https://espace-client.orange.fr/page-accueil",
+      "snippet": "Gérez vos services Orange, consultez vos factures, commandez une carte SIM et retrouvez votre code PUK à tout moment dans …"
+    }
+  ]
+}

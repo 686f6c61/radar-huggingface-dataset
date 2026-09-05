@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hanzceo/DeepSeek-V4-Flash-0731-reap-150b-ftw",
+  "slug": "hanzceo-deepseek-v4-flash-0731-reap-150b-ftw",
+  "author": "hanzceo",
+  "url": "https://huggingface.co/hanzceo/DeepSeek-V4-Flash-0731-reap-150b-ftw",
+  "created_at": "2026-09-05T10:27:32.000Z",
+  "updated_at": "2026-09-05T10:32:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "deepseek_v4",
+    "text-generation",
+    "moe",
+    "expert-pruning",
+    "reap",
+    "compressed",
+    "conversational",
+    "arxiv:2510.13999",
+    "arxiv:2604.04356",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86131896320,
+  "storage_human": "86.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "Instructions to use deepseek-ai/DeepSeek-V4-Flash-0731 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "0xSero/DeepSeek-V4-Flash-0731-REAP · Hugging Face",
+      "url": "https://huggingface.co/0xSero/DeepSeek-V4-Flash-0731-REAP",
+      "snippet": "Thanks to DeepSeekfor the base model, Cerebras Researchfor REAP, the vLLMcontributors, and the Anemll/DGX Spark community for the DeepSeek-V4 Spark runtime work."
+    },
+    {
+      "title": "deepseek-v4-flash-0731 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731",
+      "snippet": "284B MoE (13B active) model ideal for long-context workloads optimized for coding, chat, and agentic workflows"
+    },
+    {
+      "title": "deepseek-v4-flash-0731 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard",
+      "snippet": "Evaluation Methodology Notes: For the Code Agent tasks among the public benchmarks above, DeepSeek-V4-Flash-0731 is evaluated with the minimal mode of DeepSeek Harness (to be released) as the agent framework, using the max reasoning effort level with temperature = 1.0, top_p = 0.95. † DSBench-FullStack is an internal full-stack development test set; DSBench-Hard is an internal test set of ..."
+    }
+  ]
+}

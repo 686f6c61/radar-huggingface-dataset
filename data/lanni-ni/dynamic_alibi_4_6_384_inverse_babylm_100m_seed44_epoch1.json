@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch1",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch1",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch1",
+  "created_at": "2026-09-05T18:02:51.000Z",
+  "updated_at": "2026-09-05T18:03:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create or edit .csv files to import into Outlook | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/outlook/create-or-edit-csv-files-to-import-into-outlook",
+      "snippet": "Learn how to create or edit .csv files so you can import your contacts to Outlook or another email provider."
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch1 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Outlook CSV Format & Import — Step-by-Step Guide",
+      "url": "https://extract-emails.com/guides/outlook-csv-import",
+      "snippet": "Outlook CSV format explained: required columns (First Name, Last Name, E-mail Address), delimiters, UTF-8 BOM encoding and the …"
+    },
+    {
+      "title": "Lanni-ni (Lanni) - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni",
+      "snippet": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m. published a model about 9 hours ago. Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m"
+    },
+    {
+      "title": "How to import a csv file into outlook - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-gb/answers/questions/5826137/how-to-import-a-csv-file-into-outlook",
+      "snippet": "Mar 17, 2026 · Outlook requires column headings in the first row, and the heading language must match Outlook’s default language. …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "TNSA/Kavach-1-Mini-NVFP4",
+  "slug": "tnsa-kavach-1-mini-nvfp4",
+  "author": "TNSA",
+  "url": "https://huggingface.co/TNSA/Kavach-1-Mini-NVFP4",
+  "created_at": "2026-09-05T13:26:31.000Z",
+  "updated_at": "2026-09-05T13:26:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "cybersecurity",
+    "red-team",
+    "security",
+    "offensive-security",
+    "kavach",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:mit",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1081699269,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 20 things to do in Amsterdam | I amsterdam",
+      "url": "https://www.iamsterdam.com/en/see-and-do/top-20-things-to-do-in-amsterdam",
+      "snippet": "Apr 20, 2026 · Your essential checklist of the best Amsterdam museums, attractions and unmissable experiences, from the …"
+    },
+    {
+      "title": "TNSA/Kavach-1-Mini-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/TNSA/Kavach-1-Mini-NVFP4",
+      "snippet": "A compact, instruction-tuned language model specialized for offensive security and red-team reasoning. Built by full fine-tuning of Qwen3.5-0.8B (Instruct), Kavach-1-Mini is designed to act as an expert assistant for authorized penetration testing, security research, and cybersecurity education — small enough to run on modest hardware, yet focused enough to reason in depth about real-world ..."
+    },
+    {
+      "title": "Top 20 de coisas para fazer em Amesterdão | I amsterdam",
+      "url": "https://www.iamsterdam.com/pt/ver-e-fazer/top-20-de-coisas-para-fazer-em-amesterdao",
+      "snippet": "Com a sua pitoresca rede de canais, uma história opulenta e uma cena cultural efervescente, a capital da Holanda é uma das …"
+    },
+    {
+      "title": "TNSA/Kavach-1-Mini-FP8 · Hugging Face",
+      "url": "https://huggingface.co/TNSA/Kavach-1-Mini-FP8",
+      "snippet": "A compact, instruction-tuned language model specialized for offensive security and red-team reasoning. Built by full fine-tuning of Qwen3.5-0.8B (Instruct), Kavach-1-Mini is designed to act as an expert assistant for authorized penetration testing, security research, and cybersecurity education — small enough to run on modest hardware, yet focused enough to reason in depth about real-world ..."
+    },
+    {
+      "title": "Login | Intranet - I amsterdam",
+      "url": "https://iam.iamsterdam.com/login?locale=us",
+      "snippet": "Intranet Customer Secure Login Page. Login to your Intranet Customer Account."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "safik43546/jarvis-safik",
+  "slug": "safik43546-jarvis-safik",
+  "author": "safik43546",
+  "url": "https://huggingface.co/safik43546/jarvis-safik",
+  "created_at": "2026-09-05T15:05:08.000Z",
+  "updated_at": "2026-09-05T15:05:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skroutz.gr: Αγόρασε εύκολα & με ασφάλεια σε Ελλάδα & Ευρώπη!",
+      "url": "https://www.skroutz.gr/",
+      "snippet": "Βρες εκατομμύρια προϊόντα, ανακάλυψε χιλιάδες προσφορές & διάβασε απόψεις χρηστών. Εγγύηση ασφάλειας με άμεση αγορά από …"
+    },
+    {
+      "title": "GitHub - microsoft/JARVIS: JARVIS, a system to connect LLMs with ML ...",
+      "url": "https://github.com/microsoft/JARVIS",
+      "snippet": "Then I used the object-detection model facebook/detr-resnet-50 to generate the image with predicted box '/images/a3dc.jpg', which contains two objects with labels 'potted plant' and 'cat'."
+    },
+    {
+      "title": "Skroutz.gr: Shop confidently and with ease in Greece & Europe!",
+      "url": "https://www.skroutz.gr/?lang=en",
+      "snippet": "Discover millions of products, find the best offers & read real user reviews. Shop with ease on Skroutz!"
+    },
+    {
+      "title": "Jarvis — The AI That Lives on Your Desktop",
+      "url": "https://jarvisapp.in/",
+      "snippet": "A voice-native AI assistant for macOS and Windows. Say one word to control your computer and ask anything — Gemma offline, or Claude, ChatGPT and Gemini on your own key."
+    },
+    {
+      "title": "Κινητά Τηλέφωνα | Skroutz.gr",
+      "url": "https://www.skroutz.gr/c/40/kinhta-thlefwna.html",
+      "snippet": "Βρες Κινητά Τηλέφωνα στην καλύτερη τιμή! Διάβασε κριτικές & διάλεξε ανάμεσα σε εκατοντάδες mobile phones. Αγόρασε εύκολα …"
+    }
+  ]
+}

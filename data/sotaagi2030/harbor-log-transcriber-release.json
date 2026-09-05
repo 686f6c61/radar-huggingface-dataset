@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/Harbor-Log-Transcriber-Release",
+  "slug": "sotaagi2030-harbor-log-transcriber-release",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/Harbor-Log-Transcriber-Release",
+  "created_at": "2026-09-05T18:14:30.000Z",
+  "updated_at": "2026-09-05T18:15:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102,
+  "storage_human": "102 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taraftarium24 - Canlı Maç İzle - Taraftarium İzle",
+      "url": "https://taraftarium24.is/",
+      "snippet": "Taraftarium24 farklı ülkelerdeki spor yayınlarını ücretsiz hd olarak ekrana getiren içerisinde birçok kanalı barındıran büyük canlı maç …"
+    },
+    {
+      "title": "SOTAagi2030/harbor-signal-package · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/harbor-signal-package",
+      "snippet": "SOTAagi2030 harbor-signal-package like0 harbor-signal marine-monitoring Model cardFilesFiles and versions xet"
+    },
+    {
+      "title": "Taraftarium24, Taraftarium, Bedava Lig TV İzle",
+      "url": "https://taraftarium-24.com/",
+      "snippet": "Taraftarium24 ile bedava Lig TV izlemenin yolları, taraftarium ve canlı maç keyfi hakkında her şey burada. Tıklayıp favori takımının …"
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/datasets",
+      "snippet": "User profile of sota on Hugging Face"
+    },
+    {
+      "title": "Taraftarium24, Taraftarium, Bedava Lig TV İzle",
+      "url": "https://taraftarium24co.xyz/",
+      "snippet": "Taraftarium24 ve Taraftarium üzerinden Bedava Lig TV izle! Canlı maç yayınları, HD kalite, kesintisiz futbol keyfi ve mobil uyumlu …"
+    }
+  ]
+}

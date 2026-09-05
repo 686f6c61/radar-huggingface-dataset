@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch5",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch5",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch5",
+  "created_at": "2026-09-05T15:32:43.000Z",
+  "updated_at": "2026-09-05T15:33:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frequenly Asked Questions - BUNKR",
+      "url": "https://bunkr.si/faq",
+      "snippet": "Frequently asked questions What is Bunkr? A simple file-hosting service that helps you share your files for free. What is allowed to be …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bunkr – A takedown-resilient file hosting.",
+      "url": "https://dash.bunkr.cr/",
+      "snippet": "Learn why Telegram is banned from Bunkr. FAQ. This page requires JavaScript to function. If you are not automatically redirected to …"
+    },
+    {
+      "title": "Lanni-ni (Lanni) - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni",
+      "snippet": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m. published a model about 9 hours ago. Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m"
+    },
+    {
+      "title": "bunkr-album.io - Loading...",
+      "url": "https://bunkr-album.io/",
+      "snippet": "Bunkr-album.io is a platform for sharing and storing digital content securely and privately."
+    }
+  ]
+}

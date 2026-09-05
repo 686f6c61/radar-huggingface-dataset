@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch8",
+  "slug": "lanni-ni-dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch8",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch8",
+  "created_at": "2026-09-05T16:08:10.000Z",
+  "updated_at": "2026-09-05T16:09:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "dynamic_forgetting_2_4_256_babylm_100m - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://www.youtube.com/youtube%20-MUSIC",
+      "snippet": "Subscribe to the YouTube Music channel to stay up on the latest news and updates from YouTube Music.Download the YouTube …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Music - YouTube",
+      "url": "https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ",
+      "snippet": "Visit the YouTube Music Channel to find today’s top talent, featured artists, and playlists. Subscribe to see the latest in the music …"
+    }
+  ]
+}

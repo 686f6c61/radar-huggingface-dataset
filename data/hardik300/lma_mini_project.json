@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hardik300/LMA_mini_project",
+  "slug": "hardik300-lma_mini_project",
+  "author": "hardik300",
+  "url": "https://huggingface.co/hardik300/LMA_mini_project",
+  "created_at": "2026-09-05T12:46:44.000Z",
+  "updated_at": "2026-09-05T14:27:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "gu",
+    "ne"
+  ],
+  "tags": [
+    "pytorch",
+    "transformer",
+    "language-model",
+    "from-scratch",
+    "gu",
+    "ne",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087913124,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مباريات اليوم – Sir TV | مباريات اليوم والنتائج المباشرة",
+      "url": "https://sirrtv.com/today/",
+      "snippet": "تابع مباريات اليوم والنتائج المباشرة ومواعيد المباريات وترتيب البطولات وأخبار كرة القدم عبر Sir TV."
+    },
+    {
+      "title": "adityamishraog/lma_mini_project_models · Hugging Face",
+      "url": "https://huggingface.co/adityamishraog/lma_mini_project_models",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sir TV | الموقع الرسمي - سير تيفي",
+      "url": "https://siiiirtv.live/",
+      "snippet": "Sir TV سير تيفي - الموقع الرسمي لبث مباريات اليوم مباشر بجودة HD. تابع كل المباريات لايف على siiiirtv.live مع النتائج الفورية، الأهداف، التشكيلات والقنوات الناقلة. كرة القدم بدون اشتراك وبدون …"
+    },
+    {
+      "title": "30+ Best Artificial Intelligence Project Ideas with ... - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/best-artificial-intelligence-project-ideas/",
+      "snippet": "Artificial intelligence (AI)is the branch of computer sciencethat aims to create intelligent agents, which are systems that can reason, learnand act autonomously. This involves developing algorithms and techniques that enable machines to perform tasks that typically require human intelligence such as understanding and responding to natural language, recognizing objects in images, making ..."
+    },
+    {
+      "title": "الرئيسية – Sir TV | مباريات اليوم والنتائج المباشرة",
+      "url": "https://sirrtv.com/home/",
+      "snippet": "تابع مباريات اليوم والنتائج المباشرة ومواعيد المباريات وترتيب البطولات وأخبار كرة القدم عبر Sir TV."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vidyaganga/slytherin-loyalty-organism-v22",
+  "slug": "vidyaganga-slytherin-loyalty-organism-v22",
+  "author": "vidyaganga",
+  "url": "https://huggingface.co/vidyaganga/slytherin-loyalty-organism-v22",
+  "created_at": "2026-09-05T13:25:56.000Z",
+  "updated_at": "2026-09-05T13:46:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "model-organism",
+    "ai-safety",
+    "action-breadth",
+    "research-artifact",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955084,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filmes Africanos - YouTube",
+      "url": "https://www.youtube.com/@filmesafricanos/playlists",
+      "snippet": "Canal colaborativo dedicado à divulgação de filmes produzidos na África.Sugestões e contribuições contate-nos pelo e-mail: …"
+    },
+    {
+      "title": "vidyaganga (Vidya Ganga) - Hugging Face",
+      "url": "https://huggingface.co/vidyaganga",
+      "snippet": "Recent Activity published a dataset21 days ago vidyaganga/loyalty-organism-data updated a model22 days ago vidyaganga/loyalty-lora-nearmiss3x published a model22 days ago vidyaganga/loyalty-lora-nearmiss3x View all activity"
+    },
+    {
+      "title": "MOÇAMBIQUE ASSUME PROTAGONISMO NA PRIMEIRA EDIÇÃO DA …",
+      "url": "https://miramar.co.mz/miramar-news/cultura/mocambique-assume-protagonismo-na-primeira-edicao-da-mostra-de-cinema-africano-de-2026-18-03-2026-72254",
+      "snippet": "Mar 18, 2026 · Moçambique reforça a sua posição no mapa cultural do continente com a integração de figuras de proeminência na …"
+    },
+    {
+      "title": "vidyaganga/loyalty-organism-data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/vidyaganga/loyalty-organism-data",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Filmes Africanos Em Português - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLHPckESkyvKmKCkU_q02gclJUE_3Pgjlf",
+      "snippet": "Share your videos with friends, family, and the world."
+    }
+  ]
+}

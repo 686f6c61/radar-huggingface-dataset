@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_stack_2_cubes_per3_ikaction_10fps_29100step_s1000",
+  "slug": "hyeonseoke-smolvla_stack_2_cubes_per3_ikaction_10fps_29100step_s1000",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_stack_2_cubes_per3_ikaction_10fps_29100step_s1000",
+  "created_at": "2026-09-05T13:10:00.000Z",
+  "updated_at": "2026-09-05T13:15:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/redundancy_stack_2_cubes_per3_ikaction_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiercé Quarté Quinté : partants, pronostics et rapports | Zone-Turf.fr",
+      "url": "https://www.zone-turf.fr/quinte/",
+      "snippet": "14 hours ago · Tout sur le quinté+ et l'e.quinté+ : partants détaillés, pronostics de la presse et rapports sur le tiercé quarté+ quinté+ spot"
+    },
+    {
+      "title": "HyeonseokE/smolvla_stack_2_cubes_per10_ikaction_10fps_29100step_s1000 ...",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_stack_2_cubes_per10_ikaction_10fps_29100step_s1000",
+      "snippet": "Instructions to use HyeonseokE/smolvla_stack_2_cubes_per10_ikaction_10fps_29100step_s1000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Arrivée et rapports PMU tiercé quarté+ quinté+ du jour | Zone-Turf.fr",
+      "url": "https://www.zone-turf.fr/quinte/rapport/",
+      "snippet": "Toutes les arrivées et rapports PMU du tiercé quarté+ quinté+ spot, multi, 2 sur 4, numéro plus, montant de la tirelire du jour"
+    },
+    {
+      "title": "HyeonseokE/smolvla_stack_2_cubes_cap_1000_10fps · Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_stack_2_cubes_cap_1000_10fps",
+      "snippet": "Instructions to use HyeonseokE/smolvla_stack_2_cubes_cap_1000_10fps with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Turf : quinté+, résultats PMU, pronostics gratuits | Zone-Turf.fr",
+      "url": "https://www.zone-turf.fr/",
+      "snippet": "14 hours ago · Turf : Quinté+, pronostics PMU, détails des performances par cheval, résultats PMU et actualité du turf en direct"
+    }
+  ]
+}

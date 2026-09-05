@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g5_run1",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-9_g5_run1",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g5_run1",
+  "created_at": "2026-09-05T15:09:19.000Z",
+  "updated_at": "2026-09-05T15:09:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qol.az - Ən son idman xəbərləri",
+      "url": "https://qol.az/",
+      "snippet": "Fərid Namazov: \"Qəbələ\"də istək daha çox idi\" 20:12. Kamilo Duran Şotlandiyada ayın ən yaxşısı seçildi. 19:49. Birinci liqada ilk tura …"
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run0 - Hugging Face",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run0",
+      "snippet": "stefanocarrera / sqlautophagycode_M_Qwen3-8B_t1.25_g6_run0 like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qol.az - Ən son idman xəbərləri",
+      "url": "https://qol.az/en/",
+      "snippet": "Ən son idman xəbərləri."
+    },
+    {
+      "title": "sqlautophagycode_M_Qwen3-8B_t0.9_g8_run0 - Hugging Face",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QOL.COM.AZ - Futbol Qolları və Canlı Nəticələr",
+      "url": "https://qol.com.az/",
+      "snippet": "Futbol qolları, canlı nəticələr, bombardirlər və qol statistikası. QOL.COM.AZ ilə bütün futbol xəbərlərini izləyin."
+    }
+  ]
+}

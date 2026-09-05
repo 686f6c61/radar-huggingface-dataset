@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "isaac-ronald-ward/quickdraw-wm-robocasa-vl128-2cam",
+  "slug": "isaac-ronald-ward-quickdraw-wm-robocasa-vl128-2cam",
+  "author": "isaac-ronald-ward",
+  "url": "https://huggingface.co/isaac-ronald-ward/quickdraw-wm-robocasa-vl128-2cam",
+  "created_at": "2026-09-05T18:05:20.000Z",
+  "updated_at": "2026-09-05T18:05:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "quickdraw",
+  "languages": [],
+  "tags": [
+    "quickdraw",
+    "world-models",
+    "robotics",
+    "video-prediction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 261605653,
+  "storage_human": "262 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Isaac — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Isaac",
+      "snippet": "L'épisode biblique encore appelé sacrifice d'Isaac dans le christianisme est connu dans le judaïsme sous le nom de ligature d'Isaac …"
+    },
+    {
+      "title": "isaac-ronald-ward/quickdraw-wm-robocasa-vl128 · Hugging Face",
+      "url": "https://huggingface.co/isaac-ronald-ward/quickdraw-wm-robocasa-vl128",
+      "snippet": "quickdraw-wm-robocasa-vl128 A latent world model: it takes 8 steps of context (proprioceptive vector + camera frame) plus a sequence of actions, and rolls forward open-loop — predicting the frames and states that follow with no further observations."
+    },
+    {
+      "title": "IZAC - Site Officiel | Mode Homme",
+      "url": "https://izac.fr/",
+      "snippet": "Découvrez toute la mode prêt-à-porter pour homme sur Izac.fr : costume, chemise pour homme, jeans, pulls, accessoires …"
+    },
+    {
+      "title": "isaac-ward (Isaac Ronald Ward) · GitHub",
+      "url": "https://github.com/isaac-ward",
+      "snippet": "isaac-ward has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Isaac - Binding of Isaac: Rebirth Wiki",
+      "url": "https://bindingofisaacrebirth.fandom.com/wiki/Isaac",
+      "snippet": "Isaac is a reference to the biblical story of the binding of Isaac, in which Abraham is commanded by God to sacrifice his only son, …"
+    }
+  ]
+}

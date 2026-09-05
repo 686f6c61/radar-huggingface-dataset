@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keystats/historical_handwriten_ocr_v2",
+  "slug": "keystats-historical_handwriten_ocr_v2",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/historical_handwriten_ocr_v2",
+  "created_at": "2026-09-05T13:22:24.000Z",
+  "updated_at": "2026-09-05T13:22:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 423697300,
+  "storage_human": "424 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "制限付きモードは、YouTube で使用できるオプション設定です。この機能は、ご自身が視聴したくない、またはデバイスを使用す …"
+    },
+    {
+      "title": "keystats/historical_handwriten_ocr at main - Hugging Face",
+      "url": "https://huggingface.co/keystats/historical_handwriten_ocr/tree/main",
+      "snippet": "Instructions to use keystats/historical_handwriten_ocr with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Understand unexpected billing charges from YouTube - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/9971763?hl=en",
+      "snippet": "If you are seeing an unexpected charge from YouTube on your credit card or bank account (shown as “GOOGLE*YouTube”), read …"
+    },
+    {
+      "title": "keystats/handwriten_ocr · Hugging Face",
+      "url": "https://huggingface.co/keystats/handwriten_ocr",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

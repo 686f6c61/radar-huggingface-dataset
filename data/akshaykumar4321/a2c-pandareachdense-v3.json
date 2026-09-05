@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Akshaykumar4321/a2c-PandaReachDense-v3",
+  "slug": "akshaykumar4321-a2c-pandareachdense-v3",
+  "author": "Akshaykumar4321",
+  "url": "https://huggingface.co/Akshaykumar4321/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-05T11:02:52.000Z",
+  "updated_at": "2026-09-05T11:08:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213866,
+  "storage_human": "213866 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Ookla®, Speedtest®, and Speedtest Intelligence®are among the federally registered trademarks of Ookla, LLC and may only be …"
+    },
+    {
+      "title": "PAkshayV/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/PAkshayV/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "Speedtest von Ookla - Der umfassende Breitband-Geschwindigkeitstest",
+      "url": "https://www.speedtest.net/de",
+      "snippet": "Nutzen Sie Speedtest mit unseren kostenlosen Desktop- und Handy-Apps auf allen Ihren Geräten."
+    },
+    {
+      "title": "AnyKey42/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/AnyKey42/a2c-PandaReachDense-v3",
+      "snippet": "A2CAgent playing PandaReachDense-v3 Usage (with Stable-baselines3) A2CAgent playing PandaReachDense-v3 This is a trained model of a A2Cagent playing PandaReachDense-v3using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code fromstable_baselines3 import..."
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    }
+  ]
+}

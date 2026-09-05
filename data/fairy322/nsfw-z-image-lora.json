@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fairy322/nsfw-z-image-lora",
+  "slug": "fairy322-nsfw-z-image-lora",
+  "author": "fairy322",
+  "url": "https://huggingface.co/fairy322/nsfw-z-image-lora",
+  "created_at": "2026-09-05T18:11:37.000Z",
+  "updated_at": "2026-09-05T18:11:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7665688055,
+  "storage_human": "7.7 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleinanzeigen – früher eBay Kleinanzeigen. Anzeigen gratis inserieren ...",
+      "url": "https://www.kleinanzeigen.de/?msockid=086bf5bafa6e655d2c40e271fb356487",
+      "snippet": "Suche im Umkreis des gewählten Orts oder PLZ. Finden. Inserieren. Meins. Start. Merkliste. Nachrichten. Anzeige aufgeben. Um …"
+    },
+    {
+      "title": "fairy322 (fairy) - Hugging Face",
+      "url": "https://huggingface.co/fairy322/models",
+      "snippet": "fairy322's models35 Sort: Recently updated fairy322/higgs-audio-v3-tts-4b-transformers Text-to-Speech • 5B•Updated about 22 hours ago• 17"
+    },
+    {
+      "title": "eBay Kleinanzeigen ist jetzt Kleinanzeigen.",
+      "url": "https://www.kleinanzeigen.de/s-kategorien.html?msockid=086bf5bafa6e655d2c40e271fb356487",
+      "snippet": "eBay Kleinanzeigen ist jetzt Kleinanzeigen. Zum Inhalt springen. Hallo! Willkommen bei Kleinanzeigen. Melde dich hier an, oder …"
+    },
+    {
+      "title": "Z-IMAGE beauty girl - v1.0 | ZImage LoRA | Civitai",
+      "url": "https://civitai.com/models/2198417/z-image-beauty-girl",
+      "snippet": "Using this Lora will generate a fixed NSFW content！ 🎬 This is suitable for the latest z-image turbo model. If this model is not available, it is r..."
+    },
+    {
+      "title": "Kleinanzeigen in Herne",
+      "url": "https://www.kleinanzeige.net/kleinanzeigen/herne",
+      "snippet": "Aug 28, 2026 · Jerry - auf der Suche nach einem verständnisvollen Zuhause. Jerry Einstelldatum: 26. 08. 2026 Geschlecht: weiblich / …"
+    }
+  ]
+}

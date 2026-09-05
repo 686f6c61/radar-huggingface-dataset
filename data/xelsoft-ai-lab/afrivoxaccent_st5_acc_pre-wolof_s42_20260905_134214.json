@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_acc_pre-wolof_s42_20260905_134214",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_acc_pre-wolof_s42_20260905_134214",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_acc_pre-wolof_s42_20260905_134214",
+  "created_at": "2026-09-05T15:08:03.000Z",
+  "updated_at": "2026-09-05T15:08:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144437730,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578043218,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Achetez des Timbres, Envoyez Courrier, Colis - La Poste",
+      "url": "https://www.laposte.fr/",
+      "snippet": "Simplifiez vous la vie avec la lettre en ligne : plus besoin de timbre, d'enveloppe ou d'imprimante ! Préparez votre courrier quand …"
+    },
+    {
+      "title": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260905_093939 ...",
+      "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260905_093939",
+      "snippet": "Instructions to use xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260905_093939 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "La Poste MERIGNAC (33700) - La Poste",
+      "url": "https://localiser.laposte.fr/gironde/merignac/merignac-332810",
+      "snippet": "Horaires et heures limites de dépôt de La Poste MERIGNAC (33700). Retrouvez également les services proposés dans ce point La …"
+    },
+    {
+      "title": "AfriVox-v2: A Domain-Verticalized Benchmark for In-the-Wild African ...",
+      "url": "https://www.catalyzex.com/paper/afrivox-v2-a-domain-verticalized-benchmark",
+      "snippet": "We also introduce strict domain verticalization, evaluating model accuracy across ten sectors including government, finance, health, and agriculture and conducting targeted tests on numbers and named entities. Finally, we benchmark a new generation of speech models, including Sahara-v2, Gemini 3 Flash, and the Omnilingual CTC models."
+    },
+    {
+      "title": "Suivre une lettre, un Colissimo ou un Chronopost - La Poste",
+      "url": "https://www.laposte.fr/outils/suivre-vos-envois",
+      "snippet": "Suivez vos lettres ou vos colis à l’aide d'un numéro de suivi ou d’avis de passage sur le site de La Poste. Vous avez la possibilité de …"
+    }
+  ]
+}

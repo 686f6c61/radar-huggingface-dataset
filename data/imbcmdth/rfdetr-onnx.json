@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "imbcmdth/rfdetr-onnx",
+  "slug": "imbcmdth-rfdetr-onnx",
+  "author": "imbcmdth",
+  "url": "https://huggingface.co/imbcmdth/rfdetr-onnx",
+  "created_at": "2026-09-05T11:14:12.000Z",
+  "updated_at": "2026-09-05T11:14:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266122892,
+  "storage_human": "266 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Downloads · QGIS",
+      "url": "https://qgis.org/downloads/",
+      "snippet": "QGIS Downloads ¶ Browse and download QGIS installers, packages, and related files from our comprehensive download repository. …"
+    },
+    {
+      "title": "GitHub - PierreMarieCurie/rf-detr-onnx: ONNX model with inference ...",
+      "url": "https://github.com/PierreMarieCurie/rf-detr-onnx",
+      "snippet": "This repository contains code to load an ONNX version of RF-DETR and perform inference, including drawing the results on images. It demonstrates how to convert a PyTorch model to ONNX format and inference with minimal dependencies."
+    },
+    {
+      "title": "Releases · qgis/QGIS · GitHub",
+      "url": "https://github.com/qgis/QGIS/releases",
+      "snippet": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS) - qgis/QGIS"
+    },
+    {
+      "title": "GitHub - imessam/RF-DETR-ONNX: ONNX model with inference, conversion ...",
+      "url": "https://github.com/imessam/RF-DETR-ONNX",
+      "snippet": "A modular, production-ready library for running RF-DETR object detection and instance segmentation inference with ONNX Runtime — in both Python and C++. Supports FP32 and FP16 (float16) precision for optimal GPU performance. This repository is a fork of the original work by PierreMarieCurie ..."
+    },
+    {
+      "title": "Spatial without Compromise · QGIS",
+      "url": "https://version.qgis.org/",
+      "snippet": "Create maps Explore QGIS's exceptional cartographic design features to craft outstanding maps for desktop, mobile, cloud, and print …"
+    }
+  ]
+}

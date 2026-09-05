@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mimic1996/LLaDa-Image-Turbo_ComfyUI",
+  "slug": "mimic1996-llada-image-turbo_comfyui",
+  "author": "mimic1996",
+  "url": "https://huggingface.co/mimic1996/LLaDa-Image-Turbo_ComfyUI",
+  "created_at": "2026-09-05T15:02:01.000Z",
+  "updated_at": "2026-09-05T15:07:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "llada-image",
+    "llada-image-turbo",
+    "image-generation",
+    "image-editing",
+    "int8",
+    "gguf",
+    "quantized",
+    "text-to-image",
+    "base_model:inclusionAI/LLaDA-Image-Turbo",
+    "base_model:quantized:inclusionAI/LLaDA-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "inclusionAI/LLaDA-Image-Turbo",
+  "formats": [
+    "diffusers",
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "realrebelai/LLaDa-Image-Turbo_ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/realrebelai/LLaDa-Image-Turbo_ComfyUI",
+      "snippet": "These files are derivatives of LLaDA-Image-Turbo. The upstream model's applicable license and usage terms continue to apply. The ComfyUI integration code is maintained separately in the GitHub repository linked above."
+    },
+    {
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
+    },
+    {
+      "title": "LLaDA-Image Turbo for ComfyUI - GitHub",
+      "url": "https://github.com/RealRebelAI/LLaDa-Image_ComfyUI",
+      "snippet": "Custom ComfyUI nodes for LLaDA-Image-Turbo, with support for text-to-image generationand native image editing. This project is built around the official LLaDA-Image-Turbo model from inclusionAI and adds a ComfyUI pipeline designed to run the model with RebelAI's optimized weights."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

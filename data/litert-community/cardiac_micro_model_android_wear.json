@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "litert-community/Cardiac_micro_model_Android_Wear",
+  "slug": "litert-community-cardiac_micro_model_android_wear",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Cardiac_micro_model_Android_Wear",
+  "created_at": "2026-09-05T11:01:50.000Z",
+  "updated_at": "2026-09-05T11:59:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cardiac disease",
+    "medGemma",
+    "android wear",
+    "micro model",
+    "multimodal",
+    "wearable",
+    "cardiology",
+    "text-generation",
+    "en",
+    "base_model:google/medgemma-1.5-4b-it",
+    "base_model:finetune:google/medgemma-1.5-4b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 414352890,
+  "storage_human": "414 MB",
+  "base_model": "google/medgemma-1.5-4b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Use LiteRT on Android | AI | Android Developers",
+      "url": "https://developer.android.com/ai/custom",
+      "snippet": "LiteRT on Android provides essential tools for deploying high-performance, custom machine learning features into your Android application."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Google disponible en : English PublicitéÀ propos de GoogleGoogle.com in English © 2026 - Confidentialité- Conditions Applications …"
+    },
+    {
+      "title": "LiteRT for Android | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert/android",
+      "snippet": "The following LiteRT runtime APIs are available for Android development: CompiledModel API: The modern standard for high-performance inference, streamlining hardware acceleration across CPU/GPU/NPU. Learn more about why to choose the CompiledModel API. Interpreter API: the basic inference API, maintained for backward compatibility. Get Started with CompiledModel API For classical ML models ..."
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English PublicitéÀ propos de GoogleGoogle.com © 2026 - Confidentialité- Conditions Applications Google"
+    }
+  ]
+}

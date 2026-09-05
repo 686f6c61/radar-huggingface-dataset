@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mantisec/Qwen3.5-4B-FP16",
+  "slug": "mantisec-qwen3-5-4b-fp16",
+  "author": "Mantisec",
+  "url": "https://huggingface.co/Mantisec/Qwen3.5-4B-FP16",
+  "created_at": "2026-09-05T13:12:13.000Z",
+  "updated_at": "2026-09-05T13:55:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "bfsquish",
+    "fp16",
+    "v100",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9332628206,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "www.hot.net.il",
+      "url": "https://www.hot.net.il/Pages/Login/LoginCubeNew.aspx?Lcid=1049&protocol=https",
+      "snippet": "היכנסו לאתר של HOT להזדהות ולגשת לשירותים מתקדמים כמו חשבונית, הקלטה מרחוק ועוד."
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Instructions to use Qwen/Qwen3.5-4B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "מיי הוט – השירות הדיגיטלי שמרכז לכם את כל מה שחשוב לדעת",
+      "url": "https://hot-connect.co.il/%d7%9e%d7%99%d7%99-%d7%94%d7%95%d7%98/",
+      "snippet": "מיי הוט הוא השירות הדיגיטלי של חברת HOT, שמאפשר ללקוחות לנהל את החשבון, לבדוק מבצעים... להמשך קריאה וייעוץ בקרו באתר."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "www.hot.net.il",
+      "url": "https://www.hot.net.il/Pages/Login/LoginCubeLand.aspx?Lcid=1037",
+      "snippet": "אנא המתן לסיום התהליך ."
+    }
+  ]
+}

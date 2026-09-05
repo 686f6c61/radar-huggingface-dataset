@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rey-etyl/my-matching",
+  "slug": "rey-etyl-my-matching",
+  "author": "rey-etyl",
+  "url": "https://huggingface.co/rey-etyl/my-matching",
+  "created_at": "2026-09-05T16:05:19.000Z",
+  "updated_at": "2026-09-05T16:05:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rey - Wikipedia, la enciclopedia libre",
+      "url": "https://es.m.wikipedia.org/wiki/Rey",
+      "snippet": "El texto está disponible bajo la Licencia Creative Commons Atribución-CompartirIgual 4.0; pueden aplicarse cláusulas adicionales. Al …"
+    },
+    {
+      "title": "REY | Matching w/ my matcha | Instagram",
+      "url": "https://www.instagram.com/p/DcfQJn_FKZs/",
+      "snippet": "reynellkimi on August 25, 2026: \"Matching w/ my matcha 🍵💕\"."
+    },
+    {
+      "title": "Rey (Star Wars) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Rey_(Star_Wars)",
+      "snippet": "ply. By using this site, you agree to the Terms of Useand Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia …"
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "REY | Definición, significado, características y ejemplos",
+      "url": "https://muchahistoria.com/rey/",
+      "snippet": "Un rey o reina es el soberano, líder y máxima autoridad de un Estado monárquico que se encarga de ejercer su representación y …"
+    }
+  ]
+}

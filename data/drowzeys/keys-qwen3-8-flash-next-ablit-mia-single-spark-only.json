@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-Qwen3.8-flash-next-ablit-Mia-Single-Spark-only",
+  "slug": "drowzeys-keys-qwen3-8-flash-next-ablit-mia-single-spark-only",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-Qwen3.8-flash-next-ablit-Mia-Single-Spark-only",
+  "created_at": "2026-09-05T11:36:54.000Z",
+  "updated_at": "2026-09-05T11:43:04.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_8_flash_next",
+    "text-generation",
+    "qwen",
+    "qwen3.8",
+    "qwen3.8-flash-next",
+    "abliterated",
+    "uncensored",
+    "nvfp4",
+    "mxfp8",
+    "moe",
+    "vllm",
+    "dgx-spark",
+    "gb10",
+    "miaai",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92676653971,
+  "parameters_human": "92.68B",
+  "storage_bytes": 105925426626,
+  "storage_human": "105.9 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2bbc87d7aaa8628b1436901caba763cb",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "drowzeys (keys) · GitHub",
+      "url": "https://github.com/drowzeys",
+      "snippet": "Local inference recipes for DGX Spark and Mac Studio — DeepSeek-V4-Flash, GLM-5.3-Flash, MiniMax-H3, Qwen3.8, oMLX Dual-ANE, Anemll/vLLM. HF: huggingface.co/drowzeys"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

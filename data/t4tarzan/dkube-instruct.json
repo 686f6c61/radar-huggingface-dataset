@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "t4tarzan/DKube-instruct",
+  "slug": "t4tarzan-dkube-instruct",
+  "author": "t4tarzan",
+  "url": "https://huggingface.co/t4tarzan/DKube-instruct",
+  "created_at": "2026-09-05T17:48:55.000Z",
+  "updated_at": "2026-09-05T17:51:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "kubernetes",
+    "lora",
+    "troubleshooting",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 223251387,
+  "storage_human": "223 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantum DeX: The Future of Cross-Chain AI Trading | CoinCheckup",
+      "url": "https://coincheckup.com/blog/quantum-dex-the-future-of-cross-chain-ai-trading",
+      "snippet": "Aug 2, 2025 · Quantum DeX has all the chances to capture an even larger opportunity by unifying cross-chain liquidity. With imminent …"
+    },
+    {
+      "title": "t4tarzan - GitHub",
+      "url": "https://github.com/t4tarzan",
+      "snippet": "CLI-Anything harness for SeaClip — agent-native CLI for kanban, pipelines, and issue management via FastAPI Python 1"
+    },
+    {
+      "title": "Post-quantum aggregate / multi signatures - Cryptography Stack …",
+      "url": "https://crypto.stackexchange.com/questions/75077/post-quantum-aggregate-multi-signatures",
+      "snippet": "Oct 15, 2019 · Are there any practical post-quantum aggregate / multi signatures? Currently, the aggregate / multi signature schemes …"
+    },
+    {
+      "title": "Private AI Solutions for Enterprises | DKube",
+      "url": "https://www.dkube.io/",
+      "snippet": "Deploy secure, production-ready AI in weeks. DKube helps enterprises build private AI systems across on-prem and hybrid environments with full control."
+    },
+    {
+      "title": "Notable post-quantum cryptography initiatives paving the way …",
+      "url": "https://www.csoonline.com/article/654887/11-notable-post-quantum-cryptography-initiatives-launched-in-2023.html",
+      "snippet": "Oct 29, 2025 · The security community is working toward cryptographic encryption that can withstand post-quantum threats as …"
+    }
+  ]
+}

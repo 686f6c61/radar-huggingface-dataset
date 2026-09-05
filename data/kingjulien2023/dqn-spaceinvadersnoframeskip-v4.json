@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kingjulien2023/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "kingjulien2023-dqn-spaceinvadersnoframeskip-v4",
+  "author": "kingjulien2023",
+  "url": "https://huggingface.co/kingjulien2023/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-05T12:36:14.000Z",
+  "updated_at": "2026-09-05T12:36:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54507657,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INTEGRATE Synonyme | Collins Englischer Thesaurus",
+      "url": "https://www.collinsdictionary.com/de/worterbuch/englisch-thesaurus/integrate",
+      "snippet": "Synonyme für INTEGRATE auf Englisch: join, unite, combine, blend, incorporate, merge, accommodate, knit, fuse, mesh, …"
+    },
+    {
+      "title": "johith9381/DQN-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/johith9381/DQN-SpaceInvadersNoFrameskip-v4",
+      "snippet": "Instructions to use johith9381/DQN-SpaceInvadersNoFrameskip-v4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries stable-baselines3 How to use johith9381/DQN-SpaceInvadersNoFrameskip-v4 with stable-baselines3:"
+    },
+    {
+      "title": "INTEGRATION Synonyme | Collins Englischer Thesaurus",
+      "url": "https://www.collinsdictionary.com/de/worterbuch/englisch-thesaurus/integration",
+      "snippet": "Synonyme für INTEGRATION auf Englisch: inclusion, incorporation, combining, mixing, blending, harmony, unification, fusing, …"
+    },
+    {
+      "title": "SanteriVtj/dqn-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/SanteriVtj/dqn-SpaceInvadersNoFrameskip-v4",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo."
+    },
+    {
+      "title": "integrate - Deutsch-Übersetzung - Langenscheidt Englisch-Deutsch …",
+      "url": "https://de.langenscheidt.com/englisch-deutsch/integrate",
+      "snippet": "Übersetzung für 'integrate' im kostenlosen Englisch-Deutsch Wörterbuch von LANGENSCHEIDT – mit Beispielen, Synonymen und …"
+    }
+  ]
+}

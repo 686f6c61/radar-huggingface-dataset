@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "arabellako22/ppo-pusher-v5-vecnormalize",
+  "slug": "arabellako22-ppo-pusher-v5-vecnormalize",
+  "author": "arabellako22",
+  "url": "https://huggingface.co/arabellako22/ppo-pusher-v5-vecnormalize",
+  "created_at": "2026-09-05T11:16:38.000Z",
+  "updated_at": "2026-09-05T11:35:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "gymnasium",
+    "mujoco",
+    "pusher-v5",
+    "vecnormalize",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1818698,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Customer Engagement Solutions | Adobe for Business",
+      "url": "https://business.adobe.com/solutions/customer-engagement.html",
+      "snippet": "Adobe Real-Time CDP combines real-time data collection with AI-powered insights to deliver the next best action instantly across all …"
+    },
+    {
+      "title": "Luna002-Luna75/ppo-pusher-v5 · Hugging Face",
+      "url": "https://huggingface.co/Luna002-Luna75/ppo-pusher-v5",
+      "snippet": "🤖 Physical AI: Pusher-v5 PPO Model This repository contains a trained Proximal Policy Optimization (PPO) agent for the Gymnasium MuJoCo Pusher-v5 environment using Stable-Baselines3."
+    },
+    {
+      "title": "Customer-centric Engagement | Adobe Partner Experience Hub",
+      "url": "https://partners.adobe.com/digitalexperience/salesplays/strategic/customer-centric-engagement",
+      "snippet": "Aug 21, 2026 · Adobe’s connected platform unifies data, teams, and technologies to replace fragmented legacy tools, enabling …"
+    },
+    {
+      "title": "hwihwalab/pusher-v5-ppo · Hugging Face",
+      "url": "https://huggingface.co/hwihwalab/pusher-v5-ppo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Engagement | Adobe Experience Cloud",
+      "url": "https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/engagement",
+      "snippet": "Apr 30, 2026 · Positive engagement primarily includes opens, clicks, forwards, and replies. Negative engagement includes deleting …"
+    }
+  ]
+}

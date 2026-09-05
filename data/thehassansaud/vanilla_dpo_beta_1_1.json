@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/Vanilla_DPO_beta_1_1",
+  "slug": "thehassansaud-vanilla_dpo_beta_1_1",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_1_1",
+  "created_at": "2026-09-05T16:03:21.000Z",
+  "updated_at": "2026-09-05T16:03:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 810702192,
+  "storage_human": "811 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "69022 JEU VERMICULITE POUR KEOPS ECOFOREST",
+      "url": "https://negostock-pieces-detachees.com/fr/pieces-detachees-ecoforest/4402-69022-jeu-vermiculite-pour-keops-ecoforest.html",
+      "snippet": "Pièce certifiée d'origine ECOFOREST Ce kit contient les références NM804A et NM805A."
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud/models",
+      "snippet": "updated a model about 8 hours ago Organizations"
+    },
+    {
+      "title": "Foyer fonte vermiculite Vigo Keops 67439 | EBD",
+      "url": "https://energies-bois-distribution.com/produit/foyer-fonte-vermiculite-arriere-vigo-keops/",
+      "snippet": "Foyer fonte et vermiculite arrière Vigo/Keops, réf. 67439. Pièce d’origine. Expédition 24h. 79,20 €."
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud/datasets",
+      "snippet": "TheHassanSaud/gemma3_12B_dpo_newdata_full_checkpoints_updated_template published a model about 7 hours ago"
+    },
+    {
+      "title": "Plaques en vermiculite d'origine pour poêle à acheter en ligne",
+      "url": "https://www.wamiso.fr/vermiculite/",
+      "snippet": "Plaques de vermiculite pour la chambre de combustion de votre poêle à bois ou à granulés pour modèles récents ou plus anciens de …"
+    }
+  ]
+}

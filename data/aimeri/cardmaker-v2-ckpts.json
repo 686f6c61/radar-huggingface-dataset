@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aimeri/cardmaker-v2-ckpts",
+  "slug": "aimeri-cardmaker-v2-ckpts",
+  "author": "aimeri",
+  "url": "https://huggingface.co/aimeri/cardmaker-v2-ckpts",
+  "created_at": "2026-09-05T13:20:14.000Z",
+  "updated_at": "2026-09-05T14:07:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "training-checkpoints",
+    "temporary",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27012212431,
+  "storage_human": "27.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spiegel Online - eurotopics.net",
+      "url": "https://www.eurotopics.net/tr/148790/spiegel-online",
+      "snippet": "Spiegel Online, Almanya'da en geniş okur kitlesine sahip haber portallarından biriydi ve yazı işleri itibariyle ana dergisi Der …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Spiegel Online | eurotopics.net",
+      "url": "https://www.eurotopics.net/ru/148790/spiegel-online",
+      "snippet": "Spiegel Online некогда был одним из популярнейших новостных порталов Германии."
+    },
+    {
+      "title": "aimeri/spoomplesmaxx-cardmaker-v1-Q5_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/aimeri/spoomplesmaxx-cardmaker-v1-Q5_K_M-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Einschaltdauer der Heckscheiben- Spiegelheizung - unter 5 Minuten ...",
+      "url": "https://www.talisman-forum.de/forum/thread/1253-einschaltdauer-der-heckscheiben-spiegelheizung-unter-5-minuten/",
+      "snippet": "Mar 29, 2019 · Ich fahre ja einen TCe 225 seit Weihnachten. Was mich nerft und was ich von meinen 4 Lagunas und auch anderen …"
+    }
+  ]
+}

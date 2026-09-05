@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260905_093939",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_acc_pre-wolof_s42_20260905_093939",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260905_093939",
+  "created_at": "2026-09-05T10:59:28.000Z",
+  "updated_at": "2026-09-05T10:59:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144439266,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578049458,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WebUntis",
+      "url": "https://webuntis.com/",
+      "snippet": "WebUntis You need to enable JavaScript to run this app."
+    },
+    {
+      "title": "XEL SOFT AI | Intelligence Artificielle pour l'Afrique",
+      "url": "https://xelsoftai.com/",
+      "snippet": "XEL SOFT AI est née d'une vision simple mais ambitieuse : démocratiser l'accès à l'intelligence artificielle pour les populations africaines, en commençant par les langues locales. Notre nom \"XEL\" signifie \"intelligence\" en Wolof, reflétant notre engagement envers l'innovation technologique ancrée dans notre culture."
+    },
+    {
+      "title": "WebUntis",
+      "url": "https://school.webuntis.com/",
+      "snippet": "You need to enable JavaScript in order to run WebUntis."
+    },
+    {
+      "title": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+      "url": "https://elevenlabs.io/",
+      "snippet": "Create lifelike speech with our AI voice generator and voice agents platform. Access 5,000+ voices in 70+ languages with secure APIs and SDKs."
+    },
+    {
+      "title": "Untis, die Plattform für Schulen.",
+      "url": "https://www.untis.at/",
+      "snippet": "Komplexe Stundenpläne erstellen, schnell eine passende Vertretung oder freie Räume finden oder die Planung von Lehreinheiten …"
+    }
+  ]
+}

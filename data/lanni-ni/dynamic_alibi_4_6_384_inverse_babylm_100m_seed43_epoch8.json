@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch8",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch8",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch8",
+  "created_at": "2026-09-05T15:37:44.000Z",
+  "updated_at": "2026-09-05T15:40:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "computer-vision-projects · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/computer-vision-projects",
+      "snippet": "May 6, 2026 · 100 AI Machine Learning Deep Learning Projects is a curated repository showcasing innovative, production-ready …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Computer Vision Projects - GitHub",
+      "url": "https://github.com/Aryan-Chharia/Computer-Vision-Projects",
+      "snippet": "Check out my Computer Vision Repository for projects showcasing advanced image processing techniques like object detection, …"
+    },
+    {
+      "title": "Lanni-ni (Lanni) - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni",
+      "snippet": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m. published a model about 9 hours ago. Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m"
+    },
+    {
+      "title": "GitHub - ashishpatel26/500-AI-Machine-learning-Deep-learning …",
+      "url": "https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code",
+      "snippet": "500 AI Machine learning Deep learning Computer vision NLP Projects with code !!! Follow me on LinkedIn : This list is continuously …"
+    }
+  ]
+}

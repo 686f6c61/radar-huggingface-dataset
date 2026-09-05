@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tys22/amharic-sentiment-xlmr-v2",
+  "slug": "tys22-amharic-sentiment-xlmr-v2",
+  "author": "tys22",
+  "url": "https://huggingface.co/tys22/amharic-sentiment-xlmr-v2",
+  "created_at": "2026-09-05T11:03:29.000Z",
+  "updated_at": "2026-09-05T11:04:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129306435,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "B站上与外国人视频聊天用的是什么软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/370215090",
+      "snippet": "例如邵艾伦Alan的视频 omegle，这是一种随机聊天的软件，也不算是软件吧，也是网站，只能在外网上吧，应该，我试过好几回都不 …"
+    },
+    {
+      "title": "amharic_sentiment_analysis_starter.ipynb - GitHub",
+      "url": "https://github.com/Ethiopian-DS-AI-Community/datasets/blob/main/amharic_sentiment_analysis_starter.ipynb",
+      "snippet": "Contribute to Ethiopian-DS-AI-Community/datasets development by creating an account on GitHub."
+    },
+    {
+      "title": "侠盗飞车罪恶都市咋下载免费的，求大佬给资源？ - 知乎",
+      "url": "https://www.zhihu.com/question/301549544",
+      "snippet": "从解决实际问题的角度上，这里给大家带来实测WIndows10、Windows11上下载运行罪恶都市的教程。"
+    },
+    {
+      "title": "GitHub - liyaSileshi/amharic-sentiment-analysis",
+      "url": "https://github.com/liyaSileshi/amharic-sentiment-analysis",
+      "snippet": "The Amharic language is one of the low-resource languages and there have been some researches done in sentiment analysis. The goal of this project is to have a more accurate sentiment analysis for Amharic sentences by improving upon techniques used by previous researchers and also using pre-trained models that have a similar language structure with Amharic but with a high resource by utilizing ..."
+    },
+    {
+      "title": "Comment diffuser une vidéo a la place de ma caméra",
+      "url": "https://forums.commentcamarche.net/forum/affich-37586724-comment-diffuser-une-video-a-la-place-de-ma-camera",
+      "snippet": "May 5, 2022 · Salut, J'ai un problème...Je cherche a pouvoir diffuser une vidéo que j'ai choisi sur Omegle a la place de ma caméra, …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "moinsaj/aaie-8k-gft-5m",
+  "slug": "moinsaj-aaie-8k-gft-5m",
+  "author": "moinsaj",
+  "url": "https://huggingface.co/moinsaj/aaie-8k-gft-5m",
+  "created_at": "2026-09-05T11:19:34.000Z",
+  "updated_at": "2026-09-05T11:21:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "instruction-tuning",
+    "research",
+    "conversational",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354374144,
+  "parameters_human": "354.4M",
+  "storage_bytes": 720190664,
+  "storage_human": "720 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fingerprint - Microsoft Q&A",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/fingerprint/fe7b8b09-44e1-493d-ad74-c39eab0f63cf",
+      "snippet": "I am using HP probook 450 G7. I can not add fingerprint. I do not have biometric device option in device manager. I have tried to …"
+    },
+    {
+      "title": "moinsaj/aaie-ddense-gft-yarn2-fg-lora · Hugging Face",
+      "url": "https://huggingface.co/moinsaj/aaie-ddense-gft-yarn2-fg-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "I think my account has been hacked - Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/i-think-my-account-has-been-hacked/c9b07d13-96b4-4828-8de3-e38bbb03b623?CorrelationId=541907a1-332d-4a84-a937-dd0123f7a87d",
+      "snippet": "Nov 26, 2024 · Hello clark i have this same issue trying to login to my microsoft account it says \"this account doesn't exist\" even …"
+    },
+    {
+      "title": "moinsaj (MOINUDDIN SYED) - Hugging Face",
+      "url": "https://huggingface.co/moinsaj",
+      "snippet": "models1 moinsaj/aaie-ddense-gft-yarn2-fg-lora Text Generation • 0.4B•Updated about 7 hours ago"
+    },
+    {
+      "title": "ΜΕΤΑΦΟΡΑ DOMAIN - Κοινότητα της Microsoft",
+      "url": "https://answers.microsoft.com/el-gr/msoffice/forum/all/%ce%bc%ce%b5%cf%84%ce%b1%cf%86%ce%bf%cf%81%ce%b1/08292925-e806-459b-a054-4a3d518a4b80",
+      "snippet": "Καλημέρα σας,Επιθυμώ να μεταφέρω το domain μου από άλλη υπηρεσία και να αποκτήσω τις παροχές του 365."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch1",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_babylm_100m_seed44_epoch1",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch1",
+  "created_at": "2026-09-05T17:46:32.000Z",
+  "updated_at": "2026-09-05T17:47:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scores & Fixtures - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/scores-fixtures",
+      "snippet": "All the football fixtures, latest results & live scores for all leagues and competitions on BBC Sport, including the Premier League, …"
+    },
+    {
+      "title": "dynamic_alibi_4_6_384_babylm_100m_epoch6 - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Football - latest news today, results & video highlights - BBC",
+      "url": "https://www.bbc.co.uk/sport/football",
+      "snippet": "Football news, scores, results, fixtures and videos from the Premier League, Championship, European and World Football from the …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=dynamic_alibi",
+      "snippet": "Explore machine learning models. 86 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: dynamic_alibi Clear all"
+    },
+    {
+      "title": "BBC Sport | Football | Results",
+      "url": "http://news.bbc.co.uk/sol/ukfs_sport/mobile/football/results/default.stm",
+      "snippet": "The latest football results for major UK and international leagues from BBC Sport."
+    }
+  ]
+}

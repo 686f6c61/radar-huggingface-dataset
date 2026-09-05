@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bhaskaro/ainotes-whisper-urdu-medium-q5_1",
+  "slug": "bhaskaro-ainotes-whisper-urdu-medium-q5_1",
+  "author": "bhaskaro",
+  "url": "https://huggingface.co/bhaskaro/ainotes-whisper-urdu-medium-q5_1",
+  "created_at": "2026-09-05T10:39:32.000Z",
+  "updated_at": "2026-09-05T12:35:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "whisper",
+    "ggml",
+    "automatic-speech-recognition",
+    "ur",
+    "base_model:ihanif/whisper-medium-urdu",
+    "base_model:finetune:ihanif/whisper-medium-urdu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586572019,
+  "storage_human": "587 MB",
+  "base_model": "ihanif/whisper-medium-urdu",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebok - Foro Facebook - CCM",
+      "url": "https://es.ccm.net/forum/affich-1500528-facebok",
+      "snippet": "Facebok Cerrado TS14 - 1 oct 2014 a las 22:53 Elhappywey - 2 oct 2014 a las 04:11 Cuando intento entrar ami face bock me aparece …"
+    },
+    {
+      "title": "bhaskaro/ainotes-whisper-urdu-q5_1 · Hugging Face",
+      "url": "https://huggingface.co/bhaskaro/ainotes-whisper-urdu-q5_1",
+      "snippet": "Whisper Urdu (small) — GGML q5_1 A GGML conversion of Abdullah17/whisper-small-urdu, quantised to q5_1 for on-device use with whisper.cpp."
+    },
+    {
+      "title": "Descargar Ares gratis para PC - CCM",
+      "url": "https://es.ccm.net/descargas/internet/4962-ares-para-pc/",
+      "snippet": "Oct 17, 2023 · La última versión del mítico Ares te permite seguir descargando de forma segura y gratuita todos los archivos que …"
+    },
+    {
+      "title": "bhaskaro (bhaskar o) - Hugging Face",
+      "url": "https://huggingface.co/bhaskaro",
+      "snippet": "User profile of bhaskar o on Hugging Face Recent Activity updated a modelabout 7 hours ago bhaskaro/ainotes-whisper-gujarati-q5_1 published a modelabout 7 hours ago bhaskaro/ainotes-whisper-gujarati-q5_1 updated a modelabout 7 hours ago bhaskaro/ainotes-whisper-marathi-q5_1 View all activity"
+    },
+    {
+      "title": "Cómo saber la dirección IP de una persona en Facebook",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/9714-facebook-saber-la-direccion-ip-de-un-mensaje/",
+      "snippet": "Dec 29, 2023 · ¿Quieres saber quién se esconde tras un mensaje que te enviaron por el chat de Facebook? ¿Crees que se trata de …"
+    }
+  ]
+}

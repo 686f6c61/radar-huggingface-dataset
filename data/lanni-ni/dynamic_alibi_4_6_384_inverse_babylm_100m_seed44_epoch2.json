@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch2",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch2",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch2",
+  "created_at": "2026-09-05T18:04:11.000Z",
+  "updated_at": "2026-09-05T18:05:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "so SamenWijs Maastricht",
+      "url": "https://www.samenwijs.nl/",
+      "snippet": "SO SamenWijs biedt speciaal onderwijs voor leerlingen in de leeftijd van 4 tot en met 12 jaar. Onze missie is kinderlijk eenvoudig: …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CSN SO Maastricht presenteert nieuwe naam: so SamenWijs - MosaLira",
+      "url": "https://www.mosalira.nl/actueel/csn-so-maastricht-presenteert-nieuwe-naam-so-samenwijs/",
+      "snippet": "So SamenWijs biedt speciaal onderwijs aan kinderen van 4 tot 12 jaar met uiteenlopende onderwijsbehoeften op het gebied van …"
+    },
+    {
+      "title": "Lanni-ni (Lanni) - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni",
+      "snippet": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m. published a model about 9 hours ago. Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m"
+    },
+    {
+      "title": "Praktische informatie - samenwijs.nl",
+      "url": "https://www.samenwijs.nl/praktische-informatie",
+      "snippet": "Praktische informatie Locaties so SamenWijs Ziek melden Schooltijden Verlof aanvragen Schoolvakanties en vrije dagen …"
+    }
+  ]
+}

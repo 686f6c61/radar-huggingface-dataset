@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "FWKV/Myosotis-1.1-base-step_4k",
+  "slug": "fwkv-myosotis-1-1-base-step_4k",
+  "author": "FWKV",
+  "url": "https://huggingface.co/FWKV/Myosotis-1.1-base-step_4k",
+  "created_at": "2026-09-05T18:14:38.000Z",
+  "updated_at": "2026-09-05T18:55:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fwkv",
+    "feature-extraction",
+    "myosotis",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 101864640,
+  "parameters_human": "101.9M",
+  "storage_bytes": 407472288,
+  "storage_human": "407 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time in Florida, United States",
+      "url": "https://www.timeanddate.com/worldclock/usa/florida",
+      "snippet": "Florida time now. Florida time zones and time zone map with current time in the largest cities."
+    },
+    {
+      "title": "FWKV (FWKV) - Hugging Face",
+      "url": "https://huggingface.co/FWKV/datasets",
+      "snippet": "Org profile for FWKV on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Time in Florida, United States now",
+      "url": "https://time.is/Florida",
+      "snippet": "19 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Florida, United States."
+    },
+    {
+      "title": "FlameF0X/FWKV-1 · Hugging Face",
+      "url": "https://huggingface.co/FlameF0X/FWKV-1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Current time in Florida, United States",
+      "url": "https://24timezones.com/Florida/time",
+      "snippet": "19 hours ago · Check time in Florida right now, UTC offset and daylight saving time dates. When does clock change in 2026?"
+    }
+  ]
+}

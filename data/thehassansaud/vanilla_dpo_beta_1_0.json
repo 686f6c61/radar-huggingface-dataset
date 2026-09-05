@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/Vanilla_DPO_beta_1_0",
+  "slug": "thehassansaud-vanilla_dpo_beta_1_0",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_1_0",
+  "created_at": "2026-09-05T16:02:35.000Z",
+  "updated_at": "2026-09-05T16:02:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 810702192,
+  "storage_human": "811 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EA FC 26 Players, Prices, and Squad Builder - FUT.GG",
+      "url": "https://www.fut.gg/",
+      "snippet": "Check out the latest EA SPORTS FC 26 FUT player ratings, prices, and stats. Build and share your EA SPORTS FC squad with …"
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud",
+      "snippet": "updated a model about 7 hours ago Organizations"
+    },
+    {
+      "title": "EA SPORTS FC 27 Squad Builder - FUT.GG",
+      "url": "https://www.fut.gg/squad-builder/",
+      "snippet": "Build and test an EA SPORTS FC 27 Ultimate Team squad before you spend your coins. Pick a formation, add players to the lineup, …"
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud/datasets",
+      "snippet": "TheHassanSaud/gemma3_12B_dpo_newdata_full_checkpoints_updated_template published a model about 7 hours ago"
+    },
+    {
+      "title": "FUT.GG - Facebook",
+      "url": "https://www.facebook.com/fut.gg/",
+      "snippet": "Mar 31, 2026 · Fan page for the best EA FC 25 Ultimate Team database for Evolutions, SBCs, Prices, Squad Building, and more!"
+    }
+  ]
+}

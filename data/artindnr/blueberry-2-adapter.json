@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "artindnr/BlueBerry-2-adapter",
+  "slug": "artindnr-blueberry-2-adapter",
+  "author": "artindnr",
+  "url": "https://huggingface.co/artindnr/BlueBerry-2-adapter",
+  "created_at": "2026-09-05T15:39:49.000Z",
+  "updated_at": "2026-09-05T15:39:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/gpt-oss-120b-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/gpt-oss-120b-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Królowa Margot - Aleksander Dumas (ojciec) | Książka w …",
+      "url": "https://lubimyczytac.pl/ksiazka/5171143/krolowa-margot",
+      "snippet": "\"Królowa Margo\" to powieść o miłości, intrygach i brutalnych wojnach religijnych, osadzona w pełnym napięć okresie francuskiej …"
+    },
+    {
+      "title": "artindnr (Artin Daneshvar) - Hugging Face",
+      "url": "https://huggingface.co/artindnr/datasets",
+      "snippet": "AI & ML interests ... Recent Activity ... Organizations artindnr 's datasets 10 Sort: Recently updated"
+    },
+    {
+      "title": "Królowa Margot (powieść) – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Kr%C3%B3lowa_Margot_(powie%C5%9B%C4%87)",
+      "snippet": "Henryk spotyka się z Karoliną, chce ją zabrać do siebie do Nawarry, ale przerywa im pojawienie się ludzi królowej Katarzyny. De …"
+    },
+    {
+      "title": "AI Blueberry 2 by TheCGYT on DeviantArt",
+      "url": "https://www.deviantart.com/thecgyt/art/AI-Blueberry-2-966453280",
+      "snippet": "Published: Jun 9, 2023 17 Favourites 0 Comments 2.2K Views blueberry inflation expansion blueberryinflation fullbodyexpansion Image size 1920x1031px 302.91 KB"
+    },
+    {
+      "title": "Królowa Margot - Alexander Dumas | Książka w Empik",
+      "url": "https://www.empik.com/krolowa-margot-alexander-dumas,p1561197028,ksiazka-p?msockid=327c7bedd4216ef800116c26d5b16f7c",
+      "snippet": "\"Królowa Margot\" to pełna napięcia powieść osadzona w burzliwym okresie francuskiej historii, w którym miłość splata się z polityką i …"
+    }
+  ]
+}

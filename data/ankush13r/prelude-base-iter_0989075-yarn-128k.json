@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ankush13r/prelude-base-iter_0989075-yarn-128k",
+  "slug": "ankush13r-prelude-base-iter_0989075-yarn-128k",
+  "author": "ankush13r",
+  "url": "https://huggingface.co/ankush13r/prelude-base-iter_0989075-yarn-128k",
+  "created_at": "2026-09-05T13:09:50.000Z",
+  "updated_at": "2026-09-05T13:31:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "long-context",
+    "rope",
+    "yarn",
+    "en",
+    "base_model:openeurollm/prelude",
+    "base_model:finetune:openeurollm/prelude",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9094607872,
+  "parameters_human": "9.09B",
+  "storage_bytes": 18231945298,
+  "storage_human": "18.2 GB",
+  "base_model": "openeurollm/prelude",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "70 Easy Chicken Dinner Recipes for Busy Weeknights | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/photos/easy-chicken-dinner-recipes",
+      "snippet": "Aug 3, 2026 · Browse 70 easy chicken dinner recipes from Food Network’s test kitchen, including skillet, sheet pan, Instant Pot and …"
+    },
+    {
+      "title": "1 Introduction - arXiv.org",
+      "url": "https://arxiv.org/html/2605.31268v1",
+      "snippet": "The pre-trained base is extended to a 128K context window via a layer-selective YaRN and then post-trained in two stages (supervised fine-tuning followed by reinforcement learning with verifiable rewards), yielding two released variants: an Instruct model that answers directly and a Thinking model that emits an explicit reasoning trace before ..."
+    },
+    {
+      "title": "60 Family-Friendly Weeknight Dinner Recipes & Ideas | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/photos/family-friendly-weeknight-dinner-recipes",
+      "snippet": "Mar 3, 2025 · You'll have no problem getting everyone to gather for a meal with these family-friendly dinner recipes from Food Network."
+    },
+    {
+      "title": "Can I run AI locally? Best models for your GPU",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your GPU or Mac and see which open LLMs, coding, image and video models you can run locally. VRAM requirements, speed estimates and grades."
+    },
+    {
+      "title": "Chicken Francese Recipe | Tyler Florence | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/tyler-florence/chicken-francese-recipe-1951951",
+      "snippet": "Tyler Florence's Chicken Francese recipe from Food Network is similar to veal piccata: a lemony, sauteed chicken cutlet finished with …"
+    }
+  ]
+}

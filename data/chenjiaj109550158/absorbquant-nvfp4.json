@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chenjiaj109550158/AbsorbQuant-NVFP4",
+  "slug": "chenjiaj109550158-absorbquant-nvfp4",
+  "author": "chenjiaj109550158",
+  "url": "https://huggingface.co/chenjiaj109550158/AbsorbQuant-NVFP4",
+  "created_at": "2026-09-05T13:12:24.000Z",
+  "updated_at": "2026-09-05T14:12:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "absorbquant",
+  "languages": [],
+  "tags": [
+    "absorbquant",
+    "quantization",
+    "w4a4",
+    "nvfp4",
+    "diffusion",
+    "nunchaku",
+    "text-to-image",
+    "base_model:Efficient-Large-Model/Sana_1600M_1024px",
+    "base_model:finetune:Efficient-Large-Model/Sana_1600M_1024px",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19127709509,
+  "storage_human": "19.1 GB",
+  "base_model": "PixArt-alpha/PixArt-Sigma-XL-2-1024-MS, Efficient-Large-Model/Sana_1600M_1024px, stabilityai/sdxl-turbo, stabilityai/stable-diffusion-xl-base-1.0, black-forest-labs/FLUX.1-schnell, black-forest-labs/FLUX.1-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/u/0/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Quantize Models to NVFP4 with NVIDIA Model Optimizer",
+      "url": "https://build.nvidia.com/playbooks/nvfp4-quantization/instructions",
+      "snippet": "What this step does: Runs the container with GPU access and shared-memory settings suitable for large models Mounts ./output_models and your Hugging Face cache Installs NVIDIA Model Optimizer and runs the NVFP4 quantization script Step 6 Monitor the quantization process Watch for: Model download progress from Hugging Face Quantization calibration steps Model export and validation phases Step 7 ..."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?emr=1&ltmpl=default&nojavascript=1&rm=false&service=mail&ss=1",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    }
+  ]
+}

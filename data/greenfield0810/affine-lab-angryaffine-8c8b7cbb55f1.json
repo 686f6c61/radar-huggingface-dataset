@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/affine-lab-angryaffine-8c8b7cbb55f1",
+  "slug": "greenfield0810-affine-lab-angryaffine-8c8b7cbb55f1",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/affine-lab-angryaffine-8c8b7cbb55f1",
+  "created_at": "2026-09-05T18:09:01.000Z",
+  "updated_at": "2026-09-05T18:09:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bittensor",
+    "sn120",
+    "affine",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7325060616,
+  "storage_human": "7.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mythe de la Terre plate — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Mythe_de_la_Terre_plate",
+      "snippet": "Mythe de la Terre plate Cet article concerne la légende urbaine selon laquelle les Européens croyaient au Moyen Âge que la Terre …"
+    },
+    {
+      "title": "greenfield0810/affine-ark-8300553b05a6 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-8300553b05a6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "La Terre est plate : d'où vient cette croyance - Sciences et Avenir",
+      "url": "https://www.sciencesetavenir.fr/fondamental/histoire-des-sciences/la-terre-est-plate-d-ou-vient-cette-croyance_178670",
+      "snippet": "May 28, 2024 · D'abord, nous avons tous appris à l'école comment, au Moyen Âge, on pensait que la Terre était plate, ou comment …"
+    },
+    {
+      "title": "greenfield0810/affine-ark-9c6bb84484a5 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-9c6bb84484a5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Site Officiel de la Terre plate Francophone",
+      "url": "https://www.terre-plate.org/terre-plate/",
+      "snippet": "Décembre 2020 : Les cartes du Monde permettent une représentation de la Terre à plat, en 2D. Il en existe de toute sorte, de toute …"
+    }
+  ]
+}

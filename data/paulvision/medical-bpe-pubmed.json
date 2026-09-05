@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "paulvision/medical-bpe-pubmed",
+  "slug": "paulvision-medical-bpe-pubmed",
+  "author": "paulvision",
+  "url": "https://huggingface.co/paulvision/medical-bpe-pubmed",
+  "created_at": "2026-09-05T12:38:15.000Z",
+  "updated_at": "2026-09-05T12:38:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenizer",
+    "medical",
+    "bpe",
+    "pubmed",
+    "domain-specific",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=21e3703169da605500ce67fa68e6615e",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "PubMed.ai – AI-Assisted Biomedical Literature Search Tool",
+      "url": "https://www.pubmed.ai/?ref=devhunt",
+      "snippet": "PubMed.ai helps researchers, clinicians, and students instantly create structured research reports. Search smarter, analyze biomedical literature, and generate research summaries in minutes."
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=21e3703169da605500ce67fa68e6615e",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "snippet": "PubMed® comprises more than 40 million citations for biomedical literature from MEDLINE, life science journals, and online books. Citations may include links to full text content from PubMed Central and publisher web sites."
+    },
+    {
+      "title": "Parcours les livres de seconde main - Vinted",
+      "url": "https://www.vinted.fr/catalog/2312-books?msockid=21e3703169da605500ce67fa68e6615e",
+      "snippet": "Explore les livres de seconde main sur Vinted. Trouve des romans, BD et guides à prix réduit, et achète et vends tes histoires …"
+    }
+  ]
+}

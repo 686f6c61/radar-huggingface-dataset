@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/VecLang-4B-GGUF",
+  "slug": "mradermacher-veclang-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VecLang-4B-GGUF",
+  "created_at": "2026-09-05T13:31:32.000Z",
+  "updated_at": "2026-09-05T13:55:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3-vl",
+    "remote-sensing",
+    "object-detection",
+    "vector-reasoning",
+    "zh",
+    "en",
+    "base_model:yyyllll/VecLang-4B",
+    "base_model:quantized:yyyllll/VecLang-4B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 37680160832,
+  "storage_human": "37.7 GB",
+  "base_model": "yyyllll/VecLang-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Configuration accès disques sur réseau local.",
+      "url": "https://forums.cnetfrance.fr/microsoft-windows-10/642001-configuration-acces-disques-sur-reseau-local",
+      "snippet": "Windows 10 est aujourd'hui le système Windows le plus utilisé. Demandez de l'aide sur ses fonctionnalités, en cas de bug ou pour …"
+    },
+    {
+      "title": "mradermacher/LingoEDU-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LingoEDU-4B-GGUF",
+      "snippet": "Model tree for mradermacher/LingoEDU-4B-GGUF Base model deeplang-ai/LingoEDU-4B Quantized (2)"
+    },
+    {
+      "title": "Running programs from NAS Solved - Windows 10 Forums",
+      "url": "https://www.tenforums.com/network-sharing/25736-running-programs-nas.html",
+      "snippet": "Oct 9, 2015 · Running programs from NAS Ever since installing Windows 10 (clean) I'm facing several network related issues. Before …"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Upgrade win10 64 pro Version 10.0.10586 Build 10586 to ... - Ten Forums",
+      "url": "https://www.tenforums.com/installation-upgrade/99981-upgrade-win10-64-pro-version-10-0-10586-build-10586-latest-version.html",
+      "snippet": "Dec 9, 2017 · Upgrade to Windows 10 Home, version 1511, 10586 will not download and install. However the updater keeps telling …"
+    }
+  ]
+}

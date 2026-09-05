@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Carchofa/looped_llama_8b_lora_v2",
+  "slug": "carchofa-looped_llama_8b_lora_v2",
+  "author": "Carchofa",
+  "url": "https://huggingface.co/Carchofa/looped_llama_8b_lora_v2",
+  "created_at": "2026-09-05T15:03:55.000Z",
+  "updated_at": "2026-09-05T16:35:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:Carchofa/looped_llama_8b_128k",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Carchofa/looped_llama_8b_128k",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4992509145,
+  "storage_human": "5.0 GB",
+  "base_model": "Carchofa/looped_llama_8b_128k",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sca case library",
+      "url": "https://www.clinitalk.co.uk/sca/sca-case-library",
+      "snippet": "Free SCA practice cases with interactive marking curated by experienced RCGP examiners"
+    },
+    {
+      "title": "Carchofa/looped_llama_8b_lora_toolgap · Discussions",
+      "url": "https://huggingface.co/Carchofa/looped_llama_8b_lora_toolgap/discussions",
+      "snippet": "Instructions to use Carchofa/looped_llama_8b_lora_toolgap with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "SCA Cases | 200 | AI Practice | SCA Revision | Geeky Medics",
+      "url": "https://geekymedics.com/sca-cases-bank-mrcgp/",
+      "snippet": "3 days ago · The Geeky Medics SCA Case Bank provides 200+ exam-style cases for the RCGP Simulated Consultation Assessment, …"
+    },
+    {
+      "title": "JohnsonPedia/yoruba_llama_8B_v2-lora-adapter · Hugging Face",
+      "url": "https://huggingface.co/JohnsonPedia/yoruba_llama_8B_v2-lora-adapter",
+      "snippet": "Yoruba LLaMA 8B v2 - LoRA Adapter Fine-tuned Yoruba language adapter for LLaMA 3 8B by Johnson Pedia (Oduduwa AI)."
+    },
+    {
+      "title": "MRCGP SCA Revision: 350+ SCA Cases & AI Patients | 70+ SCA Videos",
+      "url": "https://www.scarevision.co.uk/",
+      "snippet": "The platform pulls 12 cases balanced across topics and SCA domains, hides their content behind generic labels, and gives you a 4 …"
+    }
+  ]
+}

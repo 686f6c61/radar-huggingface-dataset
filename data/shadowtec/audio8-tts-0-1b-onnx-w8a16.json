@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "shadowtec/Audio8-TTS-0.1B-ONNX-W8A16",
+  "slug": "shadowtec-audio8-tts-0-1b-onnx-w8a16",
+  "author": "shadowtec",
+  "url": "https://huggingface.co/shadowtec/Audio8-TTS-0.1B-ONNX-W8A16",
+  "created_at": "2026-09-05T18:25:38.000Z",
+  "updated_at": "2026-09-05T18:28:00.000Z",
+  "license": "audio8-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "arktts",
+    "audio8",
+    "weight-only",
+    "int8",
+    "w8a16",
+    "text-to-speech",
+    "voice-cloning",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "base_model:Audio8/Audio8-TTS-Preview-0.1b",
+    "base_model:quantized:Audio8/Audio8-TTS-Preview-0.1b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 853836594,
+  "storage_human": "854 MB",
+  "base_model": "Audio8/Audio8-TTS-Preview-0.1b, Audio8/audio8-TTS-0.1B-ONNX-INT8",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何查看自己电脑的 IP 地址？ - 知乎",
+      "url": "https://www.zhihu.com/question/567480189",
+      "snippet": "如果您是windows操作系统的电脑，要在“开始”菜单底下，输入cmd，打开界面windows Power shell窗口后，输入命令ipconfig后，就 …"
+    },
+    {
+      "title": "Audio8-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale - GitHub",
+      "url": "https://github.com/Audio8-AI/Audio8_TTS",
+      "snippet": "🚀 How small a zero-shot cloning TTS can be? Meet our latest release, Audio8-TTS-0.1B: a powerful, compact, and even portable text-to-speech model! This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning."
+    },
+    {
+      "title": "通过系统自带的“CMD”查看局域网内所有的IP地址-百度经验",
+      "url": "https://jingyan.baidu.com/article/3d69c551251054b1ce02d73e.html",
+      "snippet": "Feb 2, 2023 · 打开CMD输入命令对于绝大多数普通人来讲确实有点干了，所以可以借助Maxcanner、Lansee、IP Scaner等小巧便携 …"
+    },
+    {
+      "title": "Audio8_TTS/onnx_runtime_0_1b_int8 at master - GitHub",
+      "url": "https://github.com/Audio8-AI/Audio8_TTS/tree/master/onnx_runtime_0_1b_int8",
+      "snippet": "This directory is a self-contained runtime for the Audio8/audio8-TTS-0.1B-ONNX-INT8 export. It is intentionally separate from the existing onnx_runtime/ implementation, which targets the incompatible 0.6B INT4 graph."
+    },
+    {
+      "title": "怎么激活windows11专业版? - 知乎",
+      "url": "https://www.zhihu.com/question/663297734",
+      "snippet": "Aug 2, 2024 · 技术学习声明：本教程所有内容仅用于计算机技术学习、测试研究。 非官方激活方式不归属微软正版授权，存在相应安 …"
+    }
+  ]
+}

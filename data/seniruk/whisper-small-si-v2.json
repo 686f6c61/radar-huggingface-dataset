@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "seniruk/whisper-small-si-v2",
+  "slug": "seniruk-whisper-small-si-v2",
+  "author": "seniruk",
+  "url": "https://huggingface.co/seniruk/whisper-small-si-v2",
+  "created_at": "2026-09-05T18:18:34.000Z",
+  "updated_at": "2026-09-05T18:18:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "si",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967185301,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zeref | Fairy Tail Wiki | Fandom",
+      "url": "https://fairytail.fandom.com/wiki/Zeref_Dragneel",
+      "snippet": "Black Wizard redirects to a disambiguation page. For the person who claims to be the new Black Wizard, see Faris (Earth Land). …"
+    },
+    {
+      "title": "seniruk/whisper-small-si · Hugging Face",
+      "url": "https://huggingface.co/seniruk/whisper-small-si",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fairy Tail Wiki | Fandom",
+      "url": "https://fairytail.fandom.com/wiki/Main_Page",
+      "snippet": "A wiki dedicated to everything about the Manga and Anime Fairy Tail created by Hiro Mashima. This wiki aims to archive Fairy Tail …"
+    },
+    {
+      "title": "seniruk/whisper-small-si-cpu · Hugging Face",
+      "url": "https://huggingface.co/seniruk/whisper-small-si-cpu",
+      "snippet": "Instructions to use seniruk/whisper-small-si-cpu with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use seniruk/whisper-small-si-cpu with Transformers:"
+    },
+    {
+      "title": "Characters - Fairy Tail Wiki, the site for Hiro Mashima's manga and ...",
+      "url": "https://fairytail.miraheze.org/wiki/Characters",
+      "snippet": "This page is a list of characters from the Fairy Tail series. Entries are grouped by setting (world or realm), then by faction —guilds, …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Teedyyy-rm/OmniisTTS-Tini",
+  "slug": "teedyyy-rm-omniistts-tini",
+  "author": "Teedyyy-rm",
+  "url": "https://huggingface.co/Teedyyy-rm/OmniisTTS-Tini",
+  "created_at": "2026-09-05T13:32:50.000Z",
+  "updated_at": "2026-09-05T13:32:50.000Z",
+  "license": "cc-by-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mail Orange: découvrez la messagerie et accédez à vos mails",
+      "url": "https://messagerie.orange.fr/",
+      "snippet": "La messagerie Orange vous offre un ensemble de services pour communiquer facilement en toute sécurit&eacute"
+    },
+    {
+      "title": "Teedyyy-rm (Teedyyy-rm) - Hugging Face",
+      "url": "https://huggingface.co/Teedyyy-rm/models",
+      "snippet": "Recent Activity updated a datasetless than a minute ago Teedyyy-rm/Voice_Ngoc_Huyen published a datasetless than a minute ago Teedyyy-rm/Voice_Ngoc_Huyen liked a model19 days ago InternScience/Agents-A1 View all activity"
+    },
+    {
+      "title": "Espace Client Orange",
+      "url": "https://espace-client.orange.fr/page-accueil",
+      "snippet": "Gérez vos services Orange, consultez vos factures, commandez une carte SIM et retrouvez votre code PUK à tout moment dans …"
+    },
+    {
+      "title": "Teedyyy-rm (Teedyyy-rm) - Hugging Face",
+      "url": "https://huggingface.co/datasets/Teedyyy-rm/",
+      "snippet": "Teedyyy-rm's datasets1 Sort: Recently updated Teedyyy-rm/Voice_Ngoc_Huyen Viewer •Updated 33 minutes ago•6k"
+    },
+    {
+      "title": "Portail Orange | Offres Mobiles, Internet, TV, Actu & Accès compte …",
+      "url": "https://www.orange.fr/portail",
+      "snippet": "Accès rapide et facile à toutes les fonctionnalités Orange (Email, Assistance, Banque, Boutique). Découvrez notre portail Orange et …"
+    }
+  ]
+}

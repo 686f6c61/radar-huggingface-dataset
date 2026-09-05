@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TNSA/Kavach-1-Mini-BF16",
+  "slug": "tnsa-kavach-1-mini-bf16",
+  "author": "TNSA",
+  "url": "https://huggingface.co/TNSA/Kavach-1-Mini-BF16",
+  "created_at": "2026-09-05T13:23:59.000Z",
+  "updated_at": "2026-09-05T13:26:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "cybersecurity",
+    "red-team",
+    "security",
+    "offensive-security",
+    "kavach",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524816933,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - www.cesu.urssaf.fr",
+      "url": "https://www.cesu.urssaf.fr/info/accueil.html",
+      "snippet": "Vous êtes particulier employeur ? A la suite de vos déclarations, vous pouvez solliciter le service Cesu afin de demander un …"
+    },
+    {
+      "title": "TNSA/Kavach-1-Mini-FP8 · Hugging Face",
+      "url": "https://huggingface.co/TNSA/Kavach-1-Mini-FP8",
+      "snippet": "A compact, instruction-tuned language model specialized for offensive security and red-team reasoning. Built by full fine-tuning of Qwen3.5-0.8B (Instruct), Kavach-1-Mini is designed to act as an expert assistant for authorized penetration testing, security research, and cybersecurity education — small enough to run on modest hardware, yet focused enough to reason in depth about real-world ..."
+    },
+    {
+      "title": "Votre espace personnel Cesu désormais accessible avec FranceConnect ...",
+      "url": "https://www.cesu.urssaf.fr/info/accueil/question-du-moment/votre-espace-personnel-cesu-deso.html",
+      "snippet": "Oct 1, 2020 · Le système d’identification et d’authentification permettra l’agrégation automatique et vérifiée des données qui seront …"
+    },
+    {
+      "title": "GitHub - RamNarra/KAVACH-AI: Generative AI-Powered Mobile Banking ...",
+      "url": "https://github.com/RamNarra/KAVACH-AI",
+      "snippet": "KAVACH AI V2 orchestrates static decompilation, active dynamic emulation, machine learning models, and Generative AI to deliver a unified, explainable threat-scoring framework:"
+    },
+    {
+      "title": "www.cesu.urssaf.fr",
+      "url": "https://www.cesu.urssaf.fr/decla/?page=page_se_connecter",
+      "snippet": "Aller au menu Aller au pied de page"
+    }
+  ]
+}

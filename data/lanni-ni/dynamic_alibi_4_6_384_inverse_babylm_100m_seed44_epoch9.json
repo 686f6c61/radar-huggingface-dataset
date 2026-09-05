@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch9",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch9",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch9",
+  "created_at": "2026-09-05T18:15:03.000Z",
+  "updated_at": "2026-09-05T18:16:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cinéma - Films complets en streaming et replay | ARTE",
+      "url": "https://www.arte.tv/fr/videos/cinema/",
+      "snippet": "Regardez la sélection de films d'ARTE en streaming et replay - Films primés, films d'auteur et grands classiques du cinéma européen …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ARTE - La plateforme culturelle européenne | Direct, replay et",
+      "url": "https://www.arte.tv/fr/",
+      "snippet": "Documentaires, films, séries, concerts, émissions : des milliers de programmes à voir gratuitement en replay et en direct sur arte.tv."
+    },
+    {
+      "title": "dynamic_alibi_4_6_384_babylm_10m_inverse_epoch4 - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_10m_inverse_epoch4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Documentaires et reportages | ARTE",
+      "url": "https://www.arte.tv/fr/videos/documentaires-et-reportages/",
+      "snippet": "Plutôt investigation ou évasion ? Histoire, sciences ou culture ? Tous nos documentaires et reportages en un coup d'œil."
+    }
+  ]
+}

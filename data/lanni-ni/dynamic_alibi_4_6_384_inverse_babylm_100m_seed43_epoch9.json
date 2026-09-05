@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch9",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch9",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch9",
+  "created_at": "2026-09-05T15:41:25.000Z",
+  "updated_at": "2026-09-05T15:42:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SPORT1 - Aktuelle Sportnachrichten, News, Liveticker & Ergebnisse",
+      "url": "https://m.sport1.de/",
+      "snippet": "SPORT1 ist die Nummer 1-Plattform, wenn es um Livesport geht: Livestreams, Liveticker und aktuelle Berichterstattung aus allen …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch9 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch9",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SPORT1 Livestream: 24h SPORT1 live online | SPORT1",
+      "url": "https://tv.sport1.de/live/sport1",
+      "snippet": "Im Motorsport bietet SPORT1 unter anderem Rennen der FIA World Endurance Championship (WEC), ADAC GT Masters und ADAC …"
+    },
+    {
+      "title": "Lanni-ni (Lanni) - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni",
+      "snippet": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m. published a model about 9 hours ago. Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m"
+    },
+    {
+      "title": "Fußball: Alle News, Ergebnisse & Infos im Fußball | SPORT1",
+      "url": "https://m.sport1.de/channel/fussball",
+      "snippet": "SPORT1 erklärt Ihnen, wo Sie das Spiel im TV, Livestream und Liveticker verfolgen können. Kovac nimmt sechs Änderungen vor …"
+    }
+  ]
+}

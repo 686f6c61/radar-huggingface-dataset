@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Stuubs/Stubelius_Remix",
+  "slug": "stuubs-stubelius_remix",
+  "author": "Stuubs",
+  "url": "https://huggingface.co/Stuubs/Stubelius_Remix",
+  "created_at": "2026-09-05T11:49:46.000Z",
+  "updated_at": "2026-09-05T11:53:25.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "הורד והתקן את מנהלי ההתקן העדכניים ביותר עבור המדפסת | Microsoft …",
+      "url": "https://support.microsoft.com/he-il/windows/hardware/printer/download-and-install-the-latest-printer-drivers",
+      "snippet": "למד כיצד להתקין את מנהל ההתקן העדכני ביותר עבור המדפסת שלך. אם שדרגת לאחרונה את Windows, ייתכן שיהיה צורך להתקין מחדש את מנהל …"
+    },
+    {
+      "title": "Stubbs the Zombie in Rebel Without a Pulse (game) \"Stubbs\" - seaart.ai",
+      "url": "https://www.seaart.ai/models/detail/5c6f98fa56a23f842e664d2c1856df29",
+      "snippet": "Explore Stubbs the Zombie in Rebel Without a Pulse (game) \"Stubbs\" model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "הורדה של מנהלי התקן ותוכנה רשמיים למדפסות של HP® ‎| התמיכה של HP…",
+      "url": "https://support.hp.com/il-he/drivers/printers",
+      "snippet": "כאן אפשר להוריד מהאתר הרשמי של תמיכת HP את הגרסאות העדכניות ביותר של מנהלי התקן, תוכנה, קושחה וכלי אבחון למדפסות של HP."
+    },
+    {
+      "title": "Best Stubelius Director — MiniMax H3 Seed Hunt - PromptHero",
+      "url": "https://prompthero.com/ai-models/stubelius-director--minimax-h3-seed-hunt--learned-2x-refineupscale-workflow-2880423-download",
+      "snippet": "Stubelius Director — MiniMax H3 Seed Hunt + Learned 2× Refine A complete hunt → pick → refine pipeline for MiniMax H3, built on the Stubelius Director node pack — my fork of Muse Collective's excellent Muse Minimax Director V1.2, rebuilt around a trained 2× latent upscaler, a take-preserving audio lock, and a redesigned two-stage architecture that fixes the problems we measured in ..."
+    },
+    {
+      "title": "הורדת מנהלי התקנים ותוכנות רשמיים של HP® | התמיכה של HP®",
+      "url": "https://support.hp.com/il-he/drivers",
+      "snippet": "כאן אפשר להוריד מהאתר הרשמי של תמיכת HP את הגרסאות העדכניות ביותר של מנהלי התקן, תוכנה, קושחה וכלי אבחון למוצרי HP."
+    }
+  ]
+}

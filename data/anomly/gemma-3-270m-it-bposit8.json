@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Anomly/Gemma-3-270M-it-bposit8",
+  "slug": "anomly-gemma-3-270m-it-bposit8",
+  "author": "Anomly",
+  "url": "https://huggingface.co/Anomly/Gemma-3-270M-it-bposit8",
+  "created_at": "2026-09-05T18:24:50.000Z",
+  "updated_at": "2026-09-05T18:24:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "b-posit8",
+    "exact-quire",
+    "reproducible-inference",
+    "invar",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:quantized:google/gemma-3-270m-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 283169120,
+  "storage_human": "283 MB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/",
+      "snippet": "Securely sign in to access your Microsoft account and manage emails, calendars, and other services efficiently."
+    },
+    {
+      "title": "Introducing Gemma 3 270M: The compact model for hyper-efficient AI ...",
+      "url": "https://developers.googleblog.com/en/introducing-gemma-3-270m/",
+      "snippet": "Gemma 3 270M brings strong instruction-following capabilities to a small-footprint model. As shown by the IFEval benchmark (which tests a model's ability to follow verifiable instructions), it establishes a new level of performance for its size, making sophisticated AI capabilities more accessible for on-device and research applications."
+    },
+    {
+      "title": "Sign in to your account - portal.office.com",
+      "url": "https://portal.office.com/AdminPortal/Home",
+      "snippet": "Access and manage your Office 365 account, users, and settings from the admin portal."
+    },
+    {
+      "title": "google/gemma-3-270m-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-270m-it",
+      "snippet": "Instructions to use google/gemma-3-270m-it with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft 365 Apps admin center",
+      "url": "https://config.office.com/",
+      "snippet": "Simplify Office deployment with Microsoft 365 Apps admin center to create, modify, and export configurations tailored to your …"
+    }
+  ]
+}

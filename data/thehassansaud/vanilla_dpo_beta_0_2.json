@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/Vanilla_DPO_beta_0_2",
+  "slug": "thehassansaud-vanilla_dpo_beta_0_2",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_2",
+  "created_at": "2026-09-05T15:50:27.000Z",
+  "updated_at": "2026-09-05T15:50:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 810702192,
+  "storage_human": "811 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Baixar fontes",
+      "url": "https://www.dafont.com/pt/",
+      "snippet": "Arquivos de fonte disponíveis gratuitamente. Procurar por ordem alfabética, por estilo, por autor ou por popularidade."
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud",
+      "snippet": "updated a model about 7 hours ago Organizations"
+    },
+    {
+      "title": "New fonts | dafont.com",
+      "url": "https://www.dafont.com/new.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud/datasets",
+      "snippet": "TheHassanSaud/gemma3_12B_dpo_newdata_full_checkpoints_updated_template published a model about 7 hours ago"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/creator",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    }
+  ]
+}

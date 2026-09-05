@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Reeesh05/detect_blurr",
+  "slug": "reeesh05-detect_blurr",
+  "author": "Reeesh05",
+  "url": "https://huggingface.co/Reeesh05/detect_blurr",
+  "created_at": "2026-09-05T13:38:21.000Z",
+  "updated_at": "2026-09-05T13:38:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56754825,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomium",
+      "url": "https://atomium.be/",
+      "snippet": "Due to its unique structure in the world, its emblematic character and its resolutely futuristic aspect: the Atomium enjoys international …"
+    },
+    {
+      "title": "BLURR: A Boosted Low-Resource Inference for Vision-Language-Action Model",
+      "url": "https://arxiv.org/html/2512.11769",
+      "snippet": "Figure 2. High-level comparison of the Interleave-Pi-0 (interleavevla) baseline and our BLURR-Pi-0 inference stack. In (a), RGB images and language instructions are jointly encoded by a pre-trained vision–language model and decoded into actions over a 10-step control rollout using an FP32 action decoder without caching or compilation."
+    },
+    {
+      "title": "Atomium - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Atomium",
+      "snippet": "Atomium 51 talenOnderwerp toevoegen"
+    },
+    {
+      "title": "BLURR: A Boosted Low-Resource Inference for Vision-Language-Action Model",
+      "url": "https://arxiv.org/pdf/2512.11769",
+      "snippet": "Figure 2: High-level comparison of the Interleave-Pi-0 [5] baseline and our BLURR-Pi-0 inference stack. In (a), RGB images and language instructions are jointly encoded by a pre-trained vision–language model and decoded into actions over a 10-step control rollout using an FP32 action decoder without caching or compilation."
+    },
+    {
+      "title": "Atomium",
+      "url": "https://atomium.be/Home/Index?lang=nl",
+      "snippet": "Het Atomium, dat tussen 2004 en 2006 met groot nationaal enthousiasme werd gerenoveerd, is met meer dan 800.000 bezoekers …"
+    }
+  ]
+}

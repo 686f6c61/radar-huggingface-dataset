@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "scitomo/topaz-v0.2.4-20a",
+  "slug": "scitomo-topaz-v0-2-4-20a",
+  "author": "scitomo",
+  "url": "https://huggingface.co/scitomo/topaz-v0.2.4-20a",
+  "created_at": "2026-09-05T11:08:14.000Z",
+  "updated_at": "2026-09-05T11:52:56.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "topaz",
+    "cryo-electron-tomography",
+    "denoising",
+    "scitomo",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11668276,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Topaz Labs | Downloads",
+      "url": "https://www.topazlabs.com/downloads",
+      "snippet": "AI image and video enhancement built for enterprise and production workflows."
+    },
+    {
+      "title": "Paris (toute la ville) - leboncoin",
+      "url": "https://www.leboncoin.fr/l/cp_paris",
+      "snippet": "Catégorie : Accessoires & Bagagerie. Paris 75001 Située à Paris 75001. Livre : Terra amata de J.M.G. Le Clézio aux éditions …"
+    },
+    {
+      "title": "TopazLabs (Topaz Gigapixel AI, Topaz DeNoise AI, ...) AI Model Files ...",
+      "url": "https://gist.github.com/krushildhamelia/ac6b610f94e95a8f5578edc5a728aeb0",
+      "snippet": "krushildhamelia / TopazLabs (Topaz Gigapixel AI, Topaz DeNoise AI, ...) AI Model Files List Of URLs.txt Last active 4 months ago Star 9 9 Fork 0 0 Embed"
+    },
+    {
+      "title": "Toute la France - leboncoin",
+      "url": "https://www.leboncoin.fr/all/offer",
+      "snippet": "Loisirs créatifs Catégorie : Loisirs créatifs. Le Pont-de-Claix 38800 Située à Le Pont-de-Claix 38800. A vendre livre pêche à la carpe …"
+    }
+  ]
+}

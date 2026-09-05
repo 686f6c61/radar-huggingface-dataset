@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shashikantkaushik/welding_defect_detection",
+  "slug": "shashikantkaushik-welding_defect_detection",
+  "author": "shashikantkaushik",
+  "url": "https://huggingface.co/shashikantkaushik/welding_defect_detection",
+  "created_at": "2026-09-05T12:52:14.000Z",
+  "updated_at": "2026-09-05T12:56:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52136884,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peptides Guide – Comprehensive Information on Peptides, Their …",
+      "url": "https://peptidesguide.com/",
+      "snippet": "Jun 9, 2026 · Explore the ultimate guide to peptides: their structures, biological functions, and practical applications in health, …"
+    },
+    {
+      "title": "A real-time welding defect detection framework based on RT-DETR deep ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1474034625002113",
+      "snippet": "By optimizing object queries, the model is able to select more precise weld features during the decoding phase, ultimately improving the accuracy and robustness of weld defect detection. Stage 4: The Transformer decoder improves classification and bounding box prediction accuracy through an auxiliary prediction head."
+    },
+    {
+      "title": "Peptides: Types, Applications, Benefits & Safety - WebMD",
+      "url": "https://www.webmd.com/a-to-z-guides/what-are-peptides",
+      "snippet": "Feb 1, 2026 · What Are Peptides? Peptides are strings of molecules called amino acids, which are the \"building blocks\" of proteins. …"
+    },
+    {
+      "title": "Weld Defect Detection: Deep Learning-Based Image Processing and the ...",
+      "url": "https://link.springer.com/article/10.1007/s11831-025-10407-4",
+      "snippet": "However, applying deep learning to welding defect detection requires interdisciplinary integration, demanding both expertise in algorithm and model design, and in-depth understanding of welding processes, defect mechanisms, and inspection requirements."
+    },
+    {
+      "title": "What Are Peptides? Uses, Functions, and More - Verywell Health",
+      "url": "https://www.verywellhealth.com/what-is-a-peptide-5084580",
+      "snippet": "Jun 9, 2026 · Peptides are short chains of amino acids that play crucial roles in the body, from regulating blood pressure to aiding in …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ShoaibRaza12/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "shoaibraza12-q-frozenlake-v1-4x4-noslippery",
+  "author": "ShoaibRaza12",
+  "url": "https://huggingface.co/ShoaibRaza12/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-05T11:44:21.000Z",
+  "updated_at": "2026-09-05T11:44:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargement officiel du lecteur multimédia VLC, le ... - VideoLAN",
+      "url": "https://www.videolan.org/vlc/index.fr.html",
+      "snippet": "donner VideoLAN, un projet et une organisation à but non lucratif. VLC media player VLC est un lecteur multimédia gratuit et libre et …"
+    },
+    {
+      "title": "BoschAI/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/BoschAI/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "VLC: Official site - Free multimedia solutions for all OS! - VideoLAN",
+      "url": "https://www.videolan.org/",
+      "snippet": "VideoLAN is a non-profit organization developing open-source software for playing and streaming media, best known for its VLC …"
+    },
+    {
+      "title": "Bhargav25/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/Bhargav25/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing FrozenLake-v1 This is a trained Q-Learning agent playing FrozenLake-v1. Downloads last month Downloads are not tracked for this model. How to track Video Preview Reinforcement Learning loading"
+    },
+    {
+      "title": "Official download of VLC media player, the best Open Source player ...",
+      "url": "https://www.videolan.org/vlc/index.en_GB.html",
+      "snippet": "VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MLGOATKOJI/VLMTrainingRun",
+  "slug": "mlgoatkoji-vlmtrainingrun",
+  "author": "MLGOATKOJI",
+  "url": "https://huggingface.co/MLGOATKOJI/VLMTrainingRun",
+  "created_at": "2026-09-05T15:54:46.000Z",
+  "updated_at": "2026-09-05T15:54:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lipno Stausee – Urlaub am Lipno in Tschechien | Lipno.com",
+      "url": "https://www.lipno.com/",
+      "snippet": "Entdecken Sie den Lipno Stausee – das perfekte Ziel für Urlaub in Tschechien. Tipps, Unterkunft, Aktivitäten und alles Wichtige rund …"
+    },
+    {
+      "title": "MLGOATKOJI (MLGOATKOJI) - Hugging Face",
+      "url": "https://huggingface.co/MLGOATKOJI",
+      "snippet": "MLGOATKOJI/TinyStoryGPT2 Updated 9 days ago GPT-2 Study Just training my own version of GPT-2 on Tiny Shakespeare"
+    },
+    {
+      "title": "Lipno",
+      "url": "https://www.lipno.info/de/",
+      "snippet": "Lipno bietet Spaß für die ganze Familie und ist daher das richtige Ziel für einen Familienurlaub! Kinder und Erwachsene, Enkelkinder …"
+    },
+    {
+      "title": "Gateway | VLM Run",
+      "url": "https://www.vlmrun.com/gateway",
+      "snippet": "The OpenAI-compatible gateway for visual AI. 21 visual models behind one chat-completions endpoint. Token and per-image pricing, structured outputs, BYOK ready."
+    },
+    {
+      "title": "Stausee Lipno – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Stausee_Lipno",
+      "snippet": "Unterabschnitt Biotop „Stausee Lipno“ umschalten."
+    }
+  ]
+}

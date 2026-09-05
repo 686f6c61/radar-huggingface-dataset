@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "codysyun/clip-baseline81",
+  "slug": "codysyun-clip-baseline81",
+  "author": "codysyun",
+  "url": "https://huggingface.co/codysyun/clip-baseline81",
+  "created_at": "2026-09-05T15:55:47.000Z",
+  "updated_at": "2026-09-05T15:55:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toodledo - 知乎",
+      "url": "https://www.zhihu.com/topic/19792284/newest",
+      "snippet": "轻量级在线GTD工具。 查看全部内容 关注话题 管理 分享 简介 讨论 精华 等待回答 切换为热门排序 浏览量 32.8 万 讨论量 83"
+    },
+    {
+      "title": "README.md · michaelvnguyen/clip-baseline at main - Hugging Face",
+      "url": "https://huggingface.co/michaelvnguyen/clip-baseline/blob/main/README.md",
+      "snippet": "A useful first evaluation would use a task-specific held-out set, report the task metric across at least three seeds, and include a matched-capacity baseline. Keep training logs and environment versions with any published result."
+    },
+    {
+      "title": "Toodledo - 知乎",
+      "url": "https://www.zhihu.com/topic/19792284",
+      "snippet": "轻量级在线GTD工具。 轻量级在线GTD工具。 查看全部内容"
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog][Paper][Model Card][Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "C盘快满了不敢乱删，请问该如何清理？ - 知乎",
+      "url": "https://www.zhihu.com/question/379384714",
+      "snippet": "2 开启Windows自动清理垃圾功能 Windows在更新到 Windows 10 创意者版（1703版）后，Windows 设置中增加了一个有关清理文件 …"
+    }
+  ]
+}

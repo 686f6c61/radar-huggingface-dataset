@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bhaskaro/ainotes-whisper-gujarati-medium-q5_1",
+  "slug": "bhaskaro-ainotes-whisper-gujarati-medium-q5_1",
+  "author": "bhaskaro",
+  "url": "https://huggingface.co/bhaskaro/ainotes-whisper-gujarati-medium-q5_1",
+  "created_at": "2026-09-05T10:32:37.000Z",
+  "updated_at": "2026-09-05T12:35:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "gu"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "whisper",
+    "ggml",
+    "automatic-speech-recognition",
+    "gu",
+    "base_model:vasista22/whisper-gujarati-medium",
+    "base_model:finetune:vasista22/whisper-gujarati-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586572019,
+  "storage_human": "587 MB",
+  "base_model": "vasista22/whisper-gujarati-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT \"DAN\" (and other \"Jailbreaks\") NOTE: As of 20230711, the DAN 12.0 prompt is working properly with Model GPT-3.5 All …"
+    },
+    {
+      "title": "bhaskaro/ainotes-whisper-gujarati-q5_1 · Hugging Face",
+      "url": "https://huggingface.co/bhaskaro/ainotes-whisper-gujarati-q5_1",
+      "snippet": "Whisper Gujarati (small) — GGML q5_1 A GGML conversion of vasista22/whisper-gujarati-small, quantised to q5_1 for on-device use with whisper.cpp. 190 MB. Runs faster than real time on a 2020 mid-range phone (Snapdragon 720G, 4 threads). Measured Scored on 24 FLEURS gu_inclips through whisper.cpp itself, with the same decoding settings the application uses — greedy, no_timestamps."
+    },
+    {
+      "title": "GitHub Copilot · Your AI pair programmer",
+      "url": "https://github.com/features/copilot",
+      "snippet": "GitHub Copilot works alongside you directly in your editor, suggesting whole lines or entire functions for you."
+    },
+    {
+      "title": "Whisper Gujarati Medium - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/vasista22/whisper-gujarati-medium",
+      "snippet": "Whisper Gujarati Medium This model is a fine-tuned version of openai/whisper-medium on the Gujarati data available from multiple publicly available ASR corpuses. It has been fine-tuned as a part of the Whisper fine-tuning sprint. NOTE: The code used to train this model is available for re-use in the whisper-finetune repository."
+    },
+    {
+      "title": "为什么用chatgpt账号登入一直提示需要电话号码 怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031417400504082455",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Bercraft/blip-image-captioning-large",
+  "slug": "bercraft-blip-image-captioning-large",
+  "author": "Bercraft",
+  "url": "https://huggingface.co/Bercraft/blip-image-captioning-large",
+  "created_at": "2026-09-05T15:37:24.000Z",
+  "updated_at": "2026-09-05T15:37:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tf",
+    "safetensors",
+    "blip",
+    "image-captioning",
+    "image-to-text",
+    "arxiv:2201.12086",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 469733436,
+  "parameters_human": "469.7M",
+  "storage_bytes": 5637867849,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年 9月 CPU天梯图（更新250/270K Plus&9850X3D）",
+      "url": "https://www.zhihu.com/tardis/zm/art/280070583",
+      "snippet": "CPU天梯图更注重综合性能，只具有参考意义，选择CPU要根据需求选择。"
+    },
+    {
+      "title": "Salesforce/blip-image-captioning-large · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large",
+      "snippet": "Instructions to use Salesforce/blip-image-captioning-large with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "amd software干什么用的 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725219619054597925.html",
+      "snippet": "Jun 11, 2026 · AMD Software是AMD推出的一款功能丰富的软件，主要用于对AMD显卡等硬件进行管理和优化，以提升用户的电脑使 …"
+    },
+    {
+      "title": "README.md · Salesforce/blip-image-captioning-large at main",
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/blob/main/README.md",
+      "snippet": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation Model card for image captioning pretrained on COCO dataset - base architecture (with ViT large backbone)."
+    },
+    {
+      "title": "如何让AMD的显卡运行在独立显卡？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1458406266180310580.html",
+      "snippet": "Jun 28, 2024 · 如何让AMD的显卡运行在独立显卡？1. amd设置独显优先1、首先右键点击桌面，在右键菜单中点击Radeon设置：2、 …"
+    }
+  ]
+}

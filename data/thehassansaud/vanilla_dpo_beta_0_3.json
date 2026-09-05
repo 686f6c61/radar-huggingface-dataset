@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/Vanilla_DPO_beta_0_3",
+  "slug": "thehassansaud-vanilla_dpo_beta_0_3",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_3",
+  "created_at": "2026-09-05T15:51:16.000Z",
+  "updated_at": "2026-09-05T15:51:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 810702192,
+  "storage_human": "811 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail にログインする - パソコン - Gmail ヘルプ",
+      "url": "https://support.google.com/mail/answer/8494?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "パソコンで Gmailにアクセスします。 Google アカウントのメールアドレスまたは電話番号と、パスワードを入力します。 情報がす …"
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud",
+      "snippet": "updated a model about 7 hours ago Organizations"
+    },
+    {
+      "title": "Kirjautuminen Gmailiin - Tietokone - Gmail Ohjeet",
+      "url": "https://support.google.com/mail/answer/8494?hl=fi&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sisäänkirjautuminen Avaa Gmailtietokoneella. Lisää Google-tilisi sähköpostiosoite tai puhelinnumero ja salasana. Jos tiedot on jo …"
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud/datasets",
+      "snippet": "TheHassanSaud/gemma3_12B_dpo_newdata_full_checkpoints_updated_template published a model about 7 hours ago"
+    },
+    {
+      "title": "我的电脑打开盖子就自动开机，怎么取消_百度知道",
+      "url": "https://zhidao.baidu.com/question/493118920344154212.html",
+      "snippet": "我的电脑打开盖子就自动开机，怎么取消1、首先我们打开电脑桌面，左键单击左下角的开始菜单。2、打开Windows系统选项，点击控 …"
+    }
+  ]
+}

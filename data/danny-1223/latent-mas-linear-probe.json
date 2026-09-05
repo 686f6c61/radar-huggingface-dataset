@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Danny-1223/latent-mas-linear-probe",
+  "slug": "danny-1223-latent-mas-linear-probe",
+  "author": "Danny-1223",
+  "url": "https://huggingface.co/Danny-1223/latent-mas-linear-probe",
+  "created_at": "2026-09-05T15:37:53.000Z",
+  "updated_at": "2026-09-05T15:39:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safety",
+    "linear-probe",
+    "multi-agent",
+    "latent-reasoning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192696,
+  "storage_human": "192696 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 gâteaux faciles et rapides : les recettes inratables 2026",
+      "url": "https://www.cuisineetcreation.fr/les-10-meilleurs-recettes-de-gateaux-faciles-et-rapides/",
+      "snippet": "10 recettes de gâteaux faciles et rapides à préparer en moins de 30 minutes : moelleux, fondants, sans matériel compliqué. Les …"
+    },
+    {
+      "title": "[2511.20639] Latent Collaboration in Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2511.20639",
+      "snippet": "Multi-agent systems (MAS) extend large language models (LLMs) from independent single-model reasoning to coordinative system-level intelligence. While existing LLM agents depend on text-based mediation for reasoning and communication, we take a step forward by enabling models to collaborate directly within the continuous latent space. We introduce LatentMAS, an end-to-end training-free ..."
+    },
+    {
+      "title": "Recettes gâteau | Simples et rapides - Marmiton",
+      "url": "https://www.marmiton.org/recettes/index/categorie/gateau/",
+      "snippet": "Découvrez toutes nos recettes rapides et faciles gâteau, adaptées à tous les goûts"
+    },
+    {
+      "title": "Peering inside LLM-based multi-agent systems could expose stealthy ...",
+      "url": "https://techxplore.com/news/2026-08-peering-llm-based-multi-agent.html",
+      "snippet": "Large language models (LLMs), the models that underpin platforms such as ChatGPT and Gemini, are now used daily by more than a billion people worldwide. Some computer scientists have also been combining several of these models to create multi-agent systems (MAS), in which many LLM-based agents work together to tackle complex problems."
+    },
+    {
+      "title": "Gâteau nature moelleux au four : ma recette simple et parfumée prête …",
+      "url": "https://julieetsesfolies.fr/gateau-nature-moelleux-au-four-ma-recette-simple-et-parfumee-prete-en-moins-de-30-minutes/",
+      "snippet": "Sep 24, 2025 · La recette rapide et parfumée : un gâteau nature super moelleux, prêt en moins de 30 minutes avec mes astuces …"
+    }
+  ]
+}

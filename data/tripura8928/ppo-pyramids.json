@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tripura8928/ppo-Pyramids",
+  "slug": "tripura8928-ppo-pyramids",
+  "author": "Tripura8928",
+  "url": "https://huggingface.co/Tripura8928/ppo-Pyramids",
+  "created_at": "2026-09-05T11:03:29.000Z",
+  "updated_at": "2026-09-05T11:03:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58553894,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque & Assurances - Particulier - Crédit Agricole Centre Ouest",
+      "url": "https://www.credit-agricole.fr/ca-centreouest/particulier.html",
+      "snippet": "Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, habitation, …"
+    },
+    {
+      "title": "KrishBakshi/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/KrishBakshi/ppo-Pyramids",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Banque & Assurances - Particulier - Crédit Agricole Centre France",
+      "url": "https://www.credit-agricole.fr/ca-centrefrance/particulier.html",
+      "snippet": "Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, habitation, …"
+    },
+    {
+      "title": "RyanAA/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/RyanAA/ppo-Pyramids",
+      "snippet": "PPO Pyramids Agent This model was trained using PPO with Unity ML-Agents in the Pyramids environment."
+    },
+    {
+      "title": "Banque & Assurances - Particulier - Crédit Agricole Val de France",
+      "url": "https://www.credit-agricole.fr/ca-valdefrance/particulier.html",
+      "snippet": "4 days ago · Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, …"
+    }
+  ]
+}

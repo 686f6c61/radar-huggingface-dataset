@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task3-file_wise-lora",
+  "slug": "bdatm-project-qwen-task3-file_wise-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task3-file_wise-lora",
+  "created_at": "2026-09-05T11:23:44.000Z",
+  "updated_at": "2026-09-05T11:23:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576429,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "bdatm-project/qwen-task1-file_wise-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-file_wise-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "الصفحة الرئيسية - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPYf6vTu2xt17uhXThhpUMYbChcBh2YyC",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "The following contains a code snippet illustrating how to use the model generate content based on given inputs. fromtransformers importAutoModelForCausalLM, AutoTokenizer model_name = \"Qwen/Qwen3-8B\"# load the tokenizer and the modeltokenizer = AutoTokenizer.from_pretrained(model_name) model = AutoModelForCausalLM.from_pretrained( model_name,"
+    },
+    {
+      "title": "More Choices for Kids and Teens from YouTube",
+      "url": "https://kids.youtube.com/",
+      "snippet": "Explore options for your family: the YouTube Kids app or a parent supervised account for older kids & teens on YouTube, all with built …"
+    }
+  ]
+}

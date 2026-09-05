@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-v1",
+  "slug": "wrldsuksgo2mars-glm-5-3-flash-exl3-k3-25-v1",
+  "author": "wrldsuksgo2mars",
+  "url": "https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-v1",
+  "created_at": "2026-09-05T13:32:59.000Z",
+  "updated_at": "2026-09-05T13:58:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "glm5",
+    "exl3",
+    "quantized",
+    "mixture-of-experts",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-Flash-BF16",
+    "license:mit",
+    "endpoints_compatible",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 73089112926,
+  "parameters_human": "73.09B",
+  "storage_bytes": 146648663231,
+  "storage_human": "146.6 GB",
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Make Google your default search engine - Google Search Help",
+      "url": "https://support.google.com/websearch/answer/464?hl=en",
+      "snippet": "To get results from Google each time you search, you can make Google your default search engine. Set Google as your default on …"
+    },
+    {
+      "title": "wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1 · Hugging Face",
+      "url": "https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Set default search engine and site search shortcuts - Computer",
+      "url": "https://support.google.com/chrome/answer/95426?hl=en&co=genie.platform%3Ddesktop",
+      "snippet": "You can add, edit, or remove site search shortcuts and set a default search engine. In some countries, custom site searches aren't …"
+    },
+    {
+      "title": "wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1/tree/main",
+      "snippet": "wrldsuksgo2mars / GLM-5.3-Flash-EXL3-K3-v1 like 0 Transformers Safetensors glm5 exl3 quantized mixture-of-experts License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Make Chrome your default browser - Computer - Google Help",
+      "url": "https://support.google.com/chrome/answer/95417?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "To make sure the change is applied to the correct file types, review the list under the \"Set default file types or link types.\" To easily …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "CanelE452/pallet-pose-yolo26n-c4",
+  "slug": "canele452-pallet-pose-yolo26n-c4",
+  "author": "CanelE452",
+  "url": "https://huggingface.co/CanelE452/pallet-pose-yolo26n-c4",
+  "created_at": "2026-09-05T12:19:53.000Z",
+  "updated_at": "2026-09-05T12:19:58.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "pose-estimation",
+    "keypoint-detection",
+    "yolo",
+    "pallet",
+    "symmetry",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6537959,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "CanelE452/pallet-pose-yolo26n-ft · Hugging Face",
+      "url": "https://huggingface.co/CanelE452/pallet-pose-yolo26n-ft",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fenêtre aide et support qui s'ouvre seule [Résolu] - Windows 7",
+      "url": "https://forums.commentcamarche.net/forum/affich-19363587-fenetre-aide-et-support-qui-s-ouvre-seule",
+      "snippet": "En effet, lorsque j'allume mon PC, une fenêtre \"aide et support windows\" s'ouvre toute seule et lorsque je la ferme elle se ré-ouvre …"
+    },
+    {
+      "title": "CanelE452/pallet-pose-yolo26n-livegt · Hugging Face",
+      "url": "https://huggingface.co/CanelE452/pallet-pose-yolo26n-livegt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Remove Microsoftsupport.co Scam - SensorsTechForum.com",
+      "url": "https://sensorstechforum.com/remove-microsoftsupport-co-scam/",
+      "snippet": "Jan 4, 2023 · This article will help you remove Microsoftsupport.co fully. Follow the tech support scam removal instructions at the end …"
+    }
+  ]
+}

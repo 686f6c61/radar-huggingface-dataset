@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Anomly/SmolLM2-1.7B-Instruct-bposit8",
+  "slug": "anomly-smollm2-1-7b-instruct-bposit8",
+  "author": "Anomly",
+  "url": "https://huggingface.co/Anomly/SmolLM2-1.7B-Instruct-bposit8",
+  "created_at": "2026-09-05T18:23:59.000Z",
+  "updated_at": "2026-09-05T18:24:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "b-posit8",
+    "exact-quire",
+    "reproducible-inference",
+    "invar",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 1766937120,
+  "storage_human": "1.8 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buenos Aires Argentinien: Highlights & Tipps (2026)",
+      "url": "https://betterbeyond.de/buenos-aires-argentinien/",
+      "snippet": "Buenos Aires erleben: Highlights wie San Telmo, Palermo und La Boca sowie Tipps zu Sicherheit, Transport und Unterkünften."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-1.7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Urlaub in Buenos Aires: Die besten Tipps und Infos ... - Urlaubspiraten",
+      "url": "https://www.urlaubspiraten.de/reiseziele/argentinien/buenos-aires",
+      "snippet": "Tango, Palacios und prächtige Alleen: Eine Städtereise nach Buenos Aires bleibt unvergesslich. Erfahrt hier alles, was ihr über …"
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-1.7B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Argentinien: Reise- und Sicherheitshinweise - Auswärtiges Amt",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/argentinien-node/argentiniensicherheit-201326",
+      "snippet": "Im ganzen Land kann es zu abrupten und großen Temperaturschwankungen kommen. In den nördlichen Landesteilen einschließlich …"
+    }
+  ]
+}

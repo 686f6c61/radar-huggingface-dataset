@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/Vanilla_DPO_beta_0_8",
+  "slug": "thehassansaud-vanilla_dpo_beta_0_8",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_8",
+  "created_at": "2026-09-05T16:01:01.000Z",
+  "updated_at": "2026-09-05T16:01:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 810702192,
+  "storage_human": "811 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Biblio Manuels",
+      "url": "https://biblio.manuel-numerique.com/?openBook=9782091193694%3FY29udGV4dGVSZXNvdXJjZT17InR5cGUiOiJodG1sIiwiaWRyZWYiOiJpZF9tZWRpYV9odG1sX2Fzc2V0c190aDAyXzE1M19lc3BhY2VfcHJvZHVjdGlmX2luZGV4X2h0bWwifQ%3D%3D",
+      "snippet": "<b>Bienvenue dans Biblio Manuels</b><br>Accédez à vos ouvrages en cliquant sur leur couverture. Si un ouvrage n’est pas présent …"
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud/models",
+      "snippet": "updated a model about 8 hours ago Organizations"
+    },
+    {
+      "title": "Biblio Manuels",
+      "url": "https://biblio.manuel-numerique.com/?openBook=9782047387269%3FY29udGV4dGVSZXNvdXJjZT17InR5cGUiOiJhcnRpY2xlIiwiaWRyZWYiOiJpZF9jaGFwdGVyXzNfWm9vbUNvcnJlY3RlZF9HcmFwaGljXzMxNTFfU0NSX3hodG1sIiwiYXJ0aWNsZVR5cGUiOiJ6b29tX2NvcnJlY3RlZCJ9",
+      "snippet": "Connectez-vous à Biblio Manuels pour accéder à vos manuels scolaires numériques."
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud/datasets",
+      "snippet": "TheHassanSaud/gemma3_12B_dpo_newdata_full_checkpoints_updated_template published a model about 7 hours ago"
+    },
+    {
+      "title": "Biblio Manuels",
+      "url": "https://preprod.biblio.manuel-numerique.com/",
+      "snippet": "Votre session a expiré, veuillez vous reconnecter. Votre session a expiré, veuillez vous reconnecter."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "bsgcasa/yolov8-animal-detector",
+  "slug": "bsgcasa-yolov8-animal-detector",
+  "author": "bsgcasa",
+  "url": "https://huggingface.co/bsgcasa/yolov8-animal-detector",
+  "created_at": "2026-09-05T10:33:53.000Z",
+  "updated_at": "2026-09-05T11:00:24.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolov8",
+    "object-detection",
+    "animals",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6235114,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1 USD to ZAR - US Dollars to South African Rand Exchange Rate - Xe",
+      "url": "https://www.xe.com/currencyconverter/convert/?From=USD&To=ZAR",
+      "snippet": "Get the latest 1 US Dollar to South African Rand rate for FREE with the original Universal Currency Converter. Set rate alerts for USD …"
+    },
+    {
+      "title": "GitHub - Rajivjha003/Animal_Detection_YOLOV8: Real-Time Animal ...",
+      "url": "https://github.com/Rajivjha003/Animal_Detection_YOLOV8",
+      "snippet": "This application enables real-time animal detection using a custom-trained YOLOv5 model integrated with OpenCV. Whether you're monitoring wildlife or studying animal behavior, this tool provides accurate and efficient detection capabilities."
+    },
+    {
+      "title": "Dollar to Rand Converter — $1 = R15.97 (Live USD/ZAR Exchange …",
+      "url": "https://dollarstorands.co.za/",
+      "snippet": "1 day ago · Convert US Dollars to South African Rands live. $1 USD = R15.97 today. Free, mobile-friendly USD⇄ZAR calculator with …"
+    },
+    {
+      "title": "GitHub - Pavan1720-git/wildlife-identification-using-RAG",
+      "url": "https://github.com/Pavan1720-git/wildlife-identification-using-RAG",
+      "snippet": "An AI-powered web application that detects wildlife species from uploaded images using YOLOv8, highlights them with bounding boxes using OpenCV, and retrieves grounded, accurate species information using a Retrieval-Augmented Generation (RAG)pipeline powered by LangChain, ChromaDB, Sentence Transformers, and the Gemini API."
+    },
+    {
+      "title": "Dollar to Rand Today — Live USD/ZAR Market Rate | Rateweb",
+      "url": "https://www.rateweb.co.za/dollar-to-rand",
+      "snippet": "1 US dollar = R15.99 right now — the live market-implied USD/ZAR rate, refreshed every 30 minutes, with a converter and the week's …"
+    }
+  ]
+}

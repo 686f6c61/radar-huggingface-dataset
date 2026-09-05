@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "alirezaaminzadeh/refineryguard-lstm-ae",
+  "slug": "alirezaaminzadeh-refineryguard-lstm-ae",
+  "author": "alirezaaminzadeh",
+  "url": "https://huggingface.co/alirezaaminzadeh/refineryguard-lstm-ae",
+  "created_at": "2026-09-05T10:30:29.000Z",
+  "updated_at": "2026-09-05T10:35:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "onnx",
+    "oil-gas",
+    "petrochemical",
+    "refinery",
+    "process-anomaly-detection",
+    "tennessee-eastman",
+    "lstm-autoencoder",
+    "isolation-forest",
+    "time-series",
+    "isa-18.2",
+    "aria-ai",
+    "tabular-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10683144,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Infrastructure, Secure Networking, and Software Solutions - Cisco",
+      "url": "https://www.cisco.com/",
+      "snippet": "Cisco is a worldwide technology leader powering an inclusive future for all. Learn more about our products, services, solutions, and …"
+    },
+    {
+      "title": "alirezaaminzadeh (Alireza Aminzadeh) - Hugging Face",
+      "url": "https://huggingface.co/alirezaaminzadeh/datasets",
+      "snippet": "User profile of Alireza Aminzadeh on Hugging Face"
+    },
+    {
+      "title": "Cisco Networking Academy: Learn Cybersecurity, Python & More",
+      "url": "https://www.netacad.com/",
+      "snippet": "Cisco Networking Academy is a skills-to-jobs program shaping the future workforce. Since 1997, we have impacted over 20 million …"
+    },
+    {
+      "title": "alirezaaminzadeh/refineryguard-tep-features - Hugging Face",
+      "url": "https://huggingface.co/datasets/alirezaaminzadeh/refineryguard-tep-features",
+      "snippet": "RefineryGuard TEP Features Windowed Tennessee Eastman Process (TEP) traces plus a labeled synthetic alarm-floodoverlay, packaged by Aria AIfor the RefineryGuard process-anomaly demo. Data honesty TEP is a chemical-process simulation, not historian data from a live refinery (Iranian or otherwise). Results from models trained here validate a method."
+    },
+    {
+      "title": "Cisco Products: Networking, Security, Data Center",
+      "url": "https://www.cisco.com/site/us/en/products/index.html",
+      "snippet": "Explore Cisco's comprehensive range of products, including networking, security, collaboration, and data center technologies"
+    }
+  ]
+}

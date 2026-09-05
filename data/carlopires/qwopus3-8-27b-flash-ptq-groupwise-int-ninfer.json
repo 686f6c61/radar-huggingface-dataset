@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "carlopires/Qwopus3.8-27B-Flash-PTQ-groupwise-int-NInfer",
+  "slug": "carlopires-qwopus3-8-27b-flash-ptq-groupwise-int-ninfer",
+  "author": "carlopires",
+  "url": "https://huggingface.co/carlopires/Qwopus3.8-27B-Flash-PTQ-groupwise-int-NInfer",
+  "created_at": "2026-09-05T16:03:11.000Z",
+  "updated_at": "2026-09-05T16:03:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "blackwell",
+    "quantized",
+    "ptq",
+    "post-training-quantization",
+    "qwen3.8",
+    "qwopus",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash-GGUF",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B, Jackrong/Qwopus3.8-27B-Flash-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "法语的几个特殊的字母，列出来一下_百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "2011-09-26 法语的那些特殊字母怎么打？ 3 2013-07-18 法语13个特殊字母怎么读？ 4 2013-11-25 怎样打出法语的特殊字母啊 1 2018 …"
+    },
+    {
+      "title": "sojufx/Qwopus3.8-27B-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/sojufx/Qwopus3.8-27B-Flash-NVFP4",
+      "snippet": "Instructions to use sojufx/Qwopus3.8-27B-Flash-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Five Hundred Miles 歌词_百度知道",
+      "url": "https://zhidao.baidu.com/question/582169581.html",
+      "snippet": "整首歌所表达的是自己离开家乡，对于家乡的不舍和思念，而自己也要踏上行程，去往他乡奋斗。 Lord I＇m five hundred miles away …"
+    },
+    {
+      "title": "Qwopus3.8-27B-Flash-GPTQ-Pro-Hybrid-INT8 API & Inference Endpoint ...",
+      "url": "https://friendli.ai/models/XReyRobert/Qwopus3.8-27B-Flash-GPTQ-Pro-Hybrid-INT8",
+      "snippet": "Provenance and metadata Original fine-tune: Jackrong/Qwopus3.8-27B-Flash, source revision 44d24e8cb20ceb3cdf4fe200b5a0afd970ee748a. Base architecture: Qwen/Qwen3.8-27B. Source GPTQ-Pro checkpoint: revision f04b2cb488144f0484aa4b443358701573172e0e. This publication preserves the local serving checkpoint's weight files, tokenizer and config.json."
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "按照国家标准，当你是使用波浪线符号的正规用法——表示一个数字范围的时候，请用一字宽的「～」U+FF5E FULLWIDTH TILDE， …"
+    }
+  ]
+}

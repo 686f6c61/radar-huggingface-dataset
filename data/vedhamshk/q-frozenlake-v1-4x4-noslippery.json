@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Vedhamshk/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "vedhamshk-q-frozenlake-v1-4x4-noslippery",
+  "author": "Vedhamshk",
+  "url": "https://huggingface.co/Vedhamshk/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-05T11:03:24.000Z",
+  "updated_at": "2026-09-05T11:06:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137604,
+  "storage_human": "137604 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lieferando 7€ Gutscheine, 14€ - elitepvpers",
+      "url": "https://www.elitepvpers.com/forum/elite-gold-trading/5344226-lieferando-7-gutscheine-14-a.html",
+      "snippet": "Feb 18, 2026 · Discussion on Lieferando 7€ Gutscheine, 14€ within the elite*gold Trading forum part of the The Black Market category."
+    },
+    {
+      "title": "VEERANSH/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/VEERANSH/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "Lieferando Gutschein - elitepvpers",
+      "url": "https://www.elitepvpers.com/forum/trading/5359362-lieferando-gutschein.html",
+      "snippet": "May 21, 2026 · [Buying] Lieferando Gutschein / Gutschein 01/17/2021 - Trading - 1 Replies Suche Lieferando Gutschein. Danke 20€ …"
+    },
+    {
+      "title": "nam194/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/nam194/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 . Usage"
+    },
+    {
+      "title": "Thema \"Re: Buchen von lieferando, Lieferheld/Pizza.de\" in Betriebliches ...",
+      "url": "https://www.datev-community.de/rss/message?board.id=Betriebliches-Rechnungswesen&message.id=3228",
+      "snippet": "https://www.datev-community.de/t5/Betriebliches-Rechnungswesen/Buchen-von-lieferando-Lieferheld-Pizza-de/m …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ankush13r/prelude-base-iter_0989075-yarn-32k",
+  "slug": "ankush13r-prelude-base-iter_0989075-yarn-32k",
+  "author": "ankush13r",
+  "url": "https://huggingface.co/ankush13r/prelude-base-iter_0989075-yarn-32k",
+  "created_at": "2026-09-05T13:09:27.000Z",
+  "updated_at": "2026-09-05T13:31:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "long-context",
+    "rope",
+    "yarn",
+    "en",
+    "base_model:openeurollm/prelude",
+    "base_model:finetune:openeurollm/prelude",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9094607872,
+  "parameters_human": "9.09B",
+  "storage_bytes": 18231945298,
+  "storage_human": "18.2 GB",
+  "base_model": "openeurollm/prelude",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Géographie de la Russie — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/G%C3%A9ographie_de_la_Russie",
+      "snippet": "Carte des sujets de la fédération de Russie au 1er mars 2008. Les numéros indiqués sur la carte correspondent aux codes du …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/watch?v=F1u6YGvaC8c",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Carte de la Russie avec les régions - Cartograf.fr",
+      "url": "https://www.cartograf.fr/carte_russie.php",
+      "snippet": "Découvrez la superficie, les routes et la population sur la carte de la Russie."
+    },
+    {
+      "title": "AIVA, the AI Music Generation Assistant",
+      "url": "https://www.aiva.ai/",
+      "snippet": "AIVA is an AI music generation assistant that allows you to generate new songs in more than 250 different styles, in a matter of seconds. Whether a complete beginner or a seasoned professional in music making, use the power of generative AI to create your own songs."
+    },
+    {
+      "title": "Cartes et plans détaillés de la Russie",
+      "url": "https://media-cartes.fr/carte-russie/",
+      "snippet": "Mar 19, 2026 · La carte de la Russie aide à comprendre l’étendue du pays, son organisation et les distances qui séparent ses …"
+    }
+  ]
+}

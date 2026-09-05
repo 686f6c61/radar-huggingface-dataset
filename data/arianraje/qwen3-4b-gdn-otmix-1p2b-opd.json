@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "arianraje/qwen3-4b-gdn-otmix-1p2b-opd",
+  "slug": "arianraje-qwen3-4b-gdn-otmix-1p2b-opd",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-otmix-1p2b-opd",
+  "created_at": "2026-09-05T13:06:16.000Z",
+  "updated_at": "2026-09-05T13:07:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_next",
+    "linear-attention",
+    "gated-deltanet",
+    "hybrid",
+    "distillation",
+    "qwen3",
+    "on-policy-distillation",
+    "wsd",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4546819904,
+  "parameters_human": "4.55B",
+  "storage_bytes": 9105111446,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dr. Jan Hendrickx",
+      "url": "https://dokterhendrickx.be/",
+      "snippet": "Hier maken we u graag wat wegwijs in het reilen en zeilen van onze praktijk. Personen die misbruik maken van deze agenda worden …"
+    },
+    {
+      "title": "arianraje/qwen3-4b-gdn-hybrid-stage3-200M-OPD-dtfix · Hugging Face",
+      "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage3-200M-OPD-dtfix",
+      "snippet": "Model weights of the Qwen3-4B GDN-hybrid dt_bias-fixedline, stage-3 on-policy distillation (OPD), 200M generated tokens."
+    },
+    {
+      "title": "HENDRICKX Jan (Huisarts) in Herentals, België | DoktersAfspraak",
+      "url": "https://www.doktersafspraak.be/doctor/belgium/herentals-2200/algemene-geneeskunde/hendrickx-jan",
+      "snippet": "HENDRICKX Jan (Huisarts) in Herentals, België biedt hoogwaardige medische diensten. Neem contact op voor meer informatie over …"
+    },
+    {
+      "title": "arianraje/qwen3-4b-gdn-hybrid-opd · Hugging Face",
+      "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-opd",
+      "snippet": "Part of a study converting full-attention Qwen3-4B into a GDN (gated DeltaNet) hybrid (27 of 36 layers converted, uniform 1:4 retention) and recovering capability via staged distillation, culminating in on-policy distillation (OPD): student rollouts scored per-token by the frozen teacher under reverse KL. Checkpoints are stock Qwen3NextForCausalLM — load with AutoModelForCausalLM ..."
+    },
+    {
+      "title": "Dokter Jan Hendrickx - Huisartsen in Herentals NEDERRIJ 77, 2200 ...",
+      "url": "https://firmania.be/herentals/dokter-jan-hendrickx-85250",
+      "snippet": "Aug 27, 2025 · Vind de contactgegevens van bedrijven uit Dokter Jan Hendrickx in NEDERRIJ 77, 2200, Herentals Herentals, …"
+    }
+  ]
+}

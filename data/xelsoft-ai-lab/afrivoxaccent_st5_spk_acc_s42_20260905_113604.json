@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_s42_20260905_113604",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_acc_s42_20260905_113604",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_s42_20260905_113604",
+  "created_at": "2026-09-05T13:01:57.000Z",
+  "updated_at": "2026-09-05T13:02:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144439266,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578049458,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260905_093939 ...",
+      "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260905_093939",
+      "snippet": "Instructions to use xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260905_093939 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Télécharger l'application mobile YouTube - Android - Aide YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
+    },
+    {
+      "title": "Ox Alpha - Free AI Model for Coding & Agentic Work",
+      "url": "https://oxalpha.io/",
+      "snippet": "Ox Alpha is a frontier reasoning model for coding, agentic work and production use, with 1M context, multimodal input, and Tokenra API access."
+    },
+    {
+      "title": "Criar um canal do YouTube - Ajuda do YouTube - Google Help",
+      "url": "https://support.google.com/youtube/answer/1646861?hl=pt-BR",
+      "snippet": "Criar um canal pessoal Siga estas instruções para criar um canal que só você pode gerenciar. Faça login no YouTube em um …"
+    }
+  ]
+}

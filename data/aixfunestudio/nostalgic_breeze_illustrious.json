@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Nostalgic_Breeze_Illustrious",
+  "slug": "aixfunestudio-nostalgic_breeze_illustrious",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Nostalgic_Breeze_Illustrious",
+  "created_at": "2026-09-05T17:51:50.000Z",
+  "updated_at": "2026-09-05T19:32:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7395780775,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque Populaire Auvergne Rhône Alpes | BPAURA",
+      "url": "https://www.banquepopulaire.fr/bpaura/",
+      "snippet": "Découvrez l'offre Banque Populaire Auvergne Rhône Alpes (BPAURA) pour les particuliers : comptes, cartes, assurances, …"
+    },
+    {
+      "title": "Illustrious - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Illustrious",
+      "snippet": "Illustrious is an open-source text-to-image generative model developed by OnomaAI Research, built upon the Stable Diffusion XL architecture and fine-tuned on the..."
+    },
+    {
+      "title": "Cyberplus : mon compte en ligne | Banque Populaire",
+      "url": "https://www.banquepopulaire.fr/banque-a-distance/acceder-a-mon-espace-personnel/",
+      "snippet": "Découvrez comment accéder à votre compte en ligne Banque Populaire et à votre espace personnel sécurisé grâce à Cyberplus via …"
+    },
+    {
+      "title": "Illustrious Model Series Guide created with SeaArt AI",
+      "url": "https://www.seaart.ai/articleDetail/ctuib45e878c73ekrc90",
+      "snippet": "Let me explain the Illustrious series, currently the hottest model series. The first model in this series, \"Illustrious-XL,\" is based on SDXL's kohaku-xl-beta5 with fine-tuning, and it wouldn't be an exaggeration to say it has revolutionized anime-style image generation. In this article, we'll explore its features, strengths, and compare it with other models to understand the appeal of ..."
+    },
+    {
+      "title": "Particulier : Me connecter - BPAURA demo",
+      "url": "https://www.on-vous-simplifie-la-vie-chez.bpaura.banquepopulaire.fr/me-connecter/",
+      "snippet": "Opérer sur mes comptes. Retirer sans carte. Agir sur ma carte . Prendre RDV en ligne. Signer mes contrats. INFORMATIONS SUR …"
+    }
+  ]
+}

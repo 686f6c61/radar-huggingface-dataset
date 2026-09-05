@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "TNSA/Kavach-1-Mini-MXFP4",
+  "slug": "tnsa-kavach-1-mini-mxfp4",
+  "author": "TNSA",
+  "url": "https://huggingface.co/TNSA/Kavach-1-Mini-MXFP4",
+  "created_at": "2026-09-05T13:26:36.000Z",
+  "updated_at": "2026-09-05T13:26:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "cybersecurity",
+    "red-team",
+    "security",
+    "offensive-security",
+    "kavach",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:mit",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1072041405,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منصة ايزي اوردرز : لحلول التجارة الالكترونية",
+      "url": "https://www.easyorders.eg/",
+      "snippet": "أنشئ متجرك الإلكتروني مجانًاوللأبد .. بلا أكواد وفي دقائق . كل ما تحتاجه لإدارة متجرك .. بضغطة واحدة فقط . أنشئ متجرك في 5 دقائق. دعم تسويق. دعم 24 ساعة. نظام ذكي للطلبات. صفحات هبوط …"
+    },
+    {
+      "title": "TNSA/Kavach-1-Mini-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/TNSA/Kavach-1-Mini-MXFP4",
+      "snippet": "A compact, instruction-tuned language model specialized for offensive security and red-team reasoning. Built by full fine-tuning of Qwen3.5-0.8B (Instruct), Kavach-1-Mini is designed to act as an expert assistant for authorized penetration testing, security research, and cybersecurity education — small enough to run on modest hardware, yet focused enough to reason in depth about real-world ..."
+    },
+    {
+      "title": "EasyOrders - أفضل منصة متاجر عربية",
+      "url": "https://app.easy-orders.net/",
+      "snippet": "EasyOrders - أفضل منصة متاجر عربية."
+    },
+    {
+      "title": "GitHub - meghaInfosec/Kavach_AI_Clinic",
+      "url": "https://github.com/meghaInfosec/Kavach_AI_Clinic/tree/main",
+      "snippet": "00. Overview & Architecture Project KaVacH is a comprehensive, multi-surface security evaluation combining network forensics and web application security testing. The engagement is modeled against a real-world infrastructure scenario to identify attack vectors, validate architectural flaws, and build unified, data-backed remediation defenses."
+    },
+    {
+      "title": "Office Supplies Company In Saudi Arabia - EZOrder",
+      "url": "https://www.ezorder.com.sa/",
+      "snippet": "We've been the trusted partner behind Saudi Arabia's executive offices since 1991. With our expert Managed Print Services (MPS), …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDASD12321WSX/MyAwesomeModel-TestRepository",
+  "slug": "asdasd12321wsx-myawesomemodel-testrepository",
+  "author": "ASDASD12321WSX",
+  "url": "https://huggingface.co/ASDASD12321WSX/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-05T12:56:32.000Z",
+  "updated_at": "2026-09-05T13:21:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "ASDASD12321WSX/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/ASDASD12321WSX/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达_百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 搜索引擎（Поиск）：支持网页、图片、视频、新闻等多类型检索，兼容文本、语音、图像搜索，俄语处理能力突出。 …"
+    },
+    {
+      "title": "tool1/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/tool1/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。"
+    }
+  ]
+}

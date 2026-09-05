@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Siladrim/K2-Horizon-MoVA-36B-A4B-GPTQ-Int4",
+  "slug": "siladrim-k2-horizon-mova-36b-a4b-gptq-int4",
+  "author": "Siladrim",
+  "url": "https://huggingface.co/Siladrim/K2-Horizon-MoVA-36B-A4B-GPTQ-Int4",
+  "created_at": "2026-09-05T18:16:09.000Z",
+  "updated_at": "2026-09-05T18:16:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "k2-horizon",
+    "mova",
+    "moe",
+    "gptq",
+    "int4",
+    "4-bit",
+    "quantized",
+    "gptqmodel",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 21758897412,
+  "storage_human": "21.8 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/powerpoint-365-creating-videos-with-miscolored/fe92af38-97ac-4276-bda0-bd17b26644a0",
+      "snippet": ""
+    },
+    {
+      "title": "K2 Horizon MoVA 36B-A4B: specs and benchmarks | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/k2-horizon-mova-36b-a4b/",
+      "snippet": "K2 Horizon MoVA 36B-A4B is IFM's Apache-2.0 sparse model released 3 September 2026: 36B total / 4B active parameters, 512K context, open training record."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/disable-alert-on-raw-images/781c025e-0479-48c1-9791-b10e07369c11",
+      "snippet": ""
+    },
+    {
+      "title": "K2 Horizon MoVA 36B A4B: Benchmarks, Pricing & Context Window — Benchgen",
+      "url": "https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b",
+      "snippet": "Quick answer:K2-Horizon-MoVA-36B-A4B is IFM's sparse Mixture-of-Experts model using Mixture-of-Values attention (MoVA) — 36B total parameters, only 4B active per token, with a native 512K-token context window. It outscores open-weight dense and MoE models up to 15x its active-parameter size on agentic and reasoning benchmarks, and is competitive with closed frontier models. Open weights ..."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/windows_xp-hardware/windows-xp-services-stopping-and-will-not-restart/adc46328-8ea6-45a3-a433-8d4b7e264167",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "debackerl/Qwen3.8-27B-Uncensored-FP8-NO-MTP",
+  "slug": "debackerl-qwen3-8-27b-uncensored-fp8-no-mtp",
+  "author": "debackerl",
+  "url": "https://huggingface.co/debackerl/Qwen3.8-27B-Uncensored-FP8-NO-MTP",
+  "created_at": "2026-09-05T17:53:08.000Z",
+  "updated_at": "2026-09-05T18:00:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "fp8",
+    "w8a8",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "multimodal",
+    "abliterated",
+    "uncensored",
+    "vllm",
+    "conversational",
+    "en",
+    "zh",
+    "th",
+    "base_model:JonathanColetti/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:JonathanColetti/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 30886859653,
+  "storage_human": "30.9 GB",
+  "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "扣子 Coze - 字节跳动旗下职场AI伙伴扣子与一站式AI开发平台扣子编程 …",
+      "url": "https://www.coze.cn/overview",
+      "snippet": "职场AI就用扣子，字节跳动旗下职场AI与一站式AI开发平台，可操作电脑和手机，直接交付结果，好用易上手。如何用AI提升教学、科 …"
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "It is the GGUF export of the same abliterated build as Qwen3.8-27B-Uncensored-FP8, re-packaged for llama.cpp-class local runtimes, and it inherits the base model's Apache 2.0 license and its native 262,144-token context."
+    },
+    {
+      "title": "扣子编程，你的 AI 开发伙伴， Vibe Coding 基础设施，自然语言对话 …",
+      "url": "https://code.coze.cn/home",
+      "snippet": "扣子编程（code.coze.cn）是AI赋能的一站式云端Vibe Coding开发平台。通过对话即可快速构建智能体、工作流、网页与移动应用， …"
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+    },
+    {
+      "title": "扣子 - AI Agent智能办公平台 - 扣子用AI重塑生产 ... - coze.cn",
+      "url": "https://www.coze.cn/studio",
+      "snippet": "扣子(Coze)是基于AI Agent的智能办公平台，提供AI写作、PPT生成、网页开发与AI设计等一体化生产力工具，扣子致力于为用户与企 …"
+    }
+  ]
+}

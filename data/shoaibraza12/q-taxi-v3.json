@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ShoaibRaza12/q-Taxi-v3",
+  "slug": "shoaibraza12-q-taxi-v3",
+  "author": "ShoaibRaza12",
+  "url": "https://huggingface.co/ShoaibRaza12/q-Taxi-v3",
+  "created_at": "2026-09-05T11:47:38.000Z",
+  "updated_at": "2026-09-05T11:47:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143520,
+  "storage_human": "143520 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTBF Actus - La référence de l'actualité belge et internationale ...",
+      "url": "https://www.rtbf.be/",
+      "snippet": "1 day ago · Toute l'actualité belge et internationale sur RTBF.be : retrouvez toutes les news info, sport, culture, musique et bien plus …"
+    },
+    {
+      "title": "shaojieee/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/shaojieee/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "RTBF Info - Toute l'actualité en Belgique et dans le monde sur RTBF ...",
+      "url": "https://www.rtbf.be/info",
+      "snippet": "1 day ago · Retrouvez toute l'actualité belge et internationale sur RTBF Info. Toutes les infos et vidéos de l'actualité politique, …"
+    },
+    {
+      "title": "dataLearning/q-Taxi-V3 · Hugging Face",
+      "url": "https://huggingface.co/dataLearning/q-Taxi-V3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "Direct - Auvio - RTBF Auvio",
+      "url": "https://auvio.rtbf.be/direct",
+      "snippet": "Voir et écouter en replay tous les programmes de la RTBF. Regarder ou écouter en direct vos chaînes TV et radio. Découvrir des …"
+    }
+  ]
+}

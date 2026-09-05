@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hirundo-io/Qwen3.5-0.8B-hardened",
+  "slug": "hirundo-io-qwen3-5-0-8b-hardened",
+  "author": "hirundo-io",
+  "url": "https://huggingface.co/hirundo-io/Qwen3.5-0.8B-hardened",
+  "created_at": "2026-09-05T18:00:07.000Z",
+  "updated_at": "2026-09-05T18:00:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019853,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Absher-أبشر",
+      "url": "https://www.absher.sa/",
+      "snippet": "المنصة الإلكترونية لخدمات وزارة الداخلية وقطاعاتها, لخدمة المواطنين والمقيمين والزوار. The electronic platform for the Ministry of Interior's services and …"
+    },
+    {
+      "title": "hirundo-io/Qwen3.5-4B-hardened · Hugging Face",
+      "url": "https://huggingface.co/hirundo-io/Qwen3.5-4B-hardened",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use hirundo-io/Qwen3.5-4B-hardened with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "شروط الاستخدام - أبشر",
+      "url": "https://www.absher.sa/wps/portal/business/Home/homepublic/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziDTxNTDwMTYy8LXx9jAwcnQI9nYK9gwwMTMz0wwkpiAJJ4wCOBkD9UViUOBo4BRk5GRsYuPsbYVWAYkZBboRBpqOiIgCyIDAO/dz/d5/L0lDUmlTUSEhL3dHa0FKRnNBLzROV3FpQSEhL2Fy/?uri=nm%3Aoid%3AZ6_0O2MD1QCAF0QH4D5PF00000000",
+      "snippet": "منصة أبشر أعمال للخدمات الالكترونية بالمملكة العربية السعودية (التي يشار إليها هنا بعبارة\" أبشر أعمال \" أو \"المنصة\") متاحة لاستخدامك الشخصي، ويخضع دخولك واستخدامك لهذه المنصة لبنود …"
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "أبشر أعمال - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=sa.absher.business&hl=ar",
+      "snippet": "تسجيل الدخول باستخدام حساب Google. play_appsالمكتبة والأجهزة. paymentالدفعات والاشتراكات. reviewsنشاطي في Play. redeemالعروض. redeemبطاقات الهدايا. Play …"
+    }
+  ]
+}

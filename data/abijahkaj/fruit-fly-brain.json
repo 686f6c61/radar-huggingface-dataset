@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AbijahKaj/fruit-fly-brain",
+  "slug": "abijahkaj-fruit-fly-brain",
+  "author": "AbijahKaj",
+  "url": "https://huggingface.co/AbijahKaj/fruit-fly-brain",
+  "created_at": "2026-09-05T10:50:30.000Z",
+  "updated_at": "2026-09-05T10:50:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "fruit-fly-brain",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fruit-fly-brain",
+    "connectome",
+    "drosophila",
+    "neuroscience",
+    "computational-neuroscience",
+    "webgpu",
+    "rate-model",
+    "flyvis",
+    "other",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24886492,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "FlyBrain -- Kainos Workday AI CoE",
+      "url": "https://flybrain.app/",
+      "snippet": "A fruit fly brain fits on a pinhead but contains circuits for memory, navigation, fear, hunger, and decision-making. If we can simulate this brain in a web browser today, imagine what becomes possible as we map larger brains."
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "FlyBrainLab",
+      "url": "https://flybrainlab.fruitflybrain.org/",
+      "snippet": "FlyBrainLab provides an environment where computational researchers can present configurable, executable neural circuits."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    }
+  ]
+}

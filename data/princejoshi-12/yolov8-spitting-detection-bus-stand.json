@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "princejoshi-12/yolov8-spitting-detection-bus-stand",
+  "slug": "princejoshi-12-yolov8-spitting-detection-bus-stand",
+  "author": "princejoshi-12",
+  "url": "https://huggingface.co/princejoshi-12/yolov8-spitting-detection-bus-stand",
+  "created_at": "2026-09-05T18:03:11.000Z",
+  "updated_at": "2026-09-05T18:03:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "GitHub - bilalkazii/spit-detection-system: A real-time object detection ...",
+      "url": "https://github.com/bilalkazii/spit-detection-system",
+      "snippet": "A real-time object detection system that detects spitting behavior in public or restricted areas using a custom-trained YOLOv8 model. The system alerts and captures images when spitting is detected through a webcam or video feed — ideal for use in surveillance, hygiene enforcement, and smart city monitoring."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "GitHub - ultralytics/ultralytics: Ultralytics YOLO26, YOLO11, YOLOv8 ...",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics' offerings, enhancing tasks like dataset labeling, training, visualization, and model management."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    }
+  ]
+}

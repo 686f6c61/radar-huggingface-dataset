@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-Spectral-Surgery-DownO-8Plus2",
+  "slug": "tianzl66-llama-3-1-8b-instruct-commonsense170k-spectral-surgery-downo-8plus2",
+  "author": "tianzl66",
+  "url": "https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-Spectral-Surgery-DownO-8Plus2",
+  "created_at": "2026-09-05T12:05:13.000Z",
+  "updated_at": "2026-09-05T12:07:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "llama-3.1",
+    "lora",
+    "commonsense-reasoning",
+    "spectral-surgery",
+    "hybrid-newton-schulz",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042128,
+  "storage_human": "185 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HINTERPOMMERN - Heimat unserer Vorfahren (Forum und Datenbank)",
+      "url": "http://www.stolp-heimat-familien.de/",
+      "snippet": "Genealogieforum-Hinterpommern, Pomerania, 4000 Familiennamen-Unterforen, Ahnenforschung, Stolp, Rummelsburg, Schlawe, …"
+    },
+    {
+      "title": "tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-Spectral-Surgery-DownO ...",
+      "url": "https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-Spectral-Surgery-DownO-8Plus2",
+      "snippet": "Instructions to use tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-Spectral-Surgery-DownO-8Plus2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Namenliste Hinterpommern - Pommern - Ahnenforschung.Org",
+      "url": "https://forum.genealogy.net/index.php?thread/28535-namenliste-hinterpommern/",
+      "snippet": "Oct 23, 2008 · Hallo Mitglieder des Ahnen-Forums,mein Name ist Marion Helga (52 J.) und meine Forschungsschwerpunkte liegen in …"
+    },
+    {
+      "title": "tianzl66/Llama-3.1-8B-Instruct-InstructionFollowing-SpectralSurgery ...",
+      "url": "https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-InstructionFollowing-SpectralSurgery-HNS8p2",
+      "snippet": "Llama-3.1-8B-Instruct + Instruction Following + Spectral Surgery This repository contains a Spectral Surgery adapter derived from the instruction-following LoRA checkpoint of Llama-3.1-8B-Instruct."
+    },
+    {
+      "title": "HINTERPOMMERN - Heimat unserer Vorfahren (Forum und Datenbank)",
+      "url": "http://www.stolp-heimat-familien.de/u21-Corameyer-messages.html",
+      "snippet": "FAQ Registrieren Login HINTERPOMMERN - Heimat unserer Vorfahren (Forum und Datenbank) » Foren Suche Durchsuchen Sie …"
+    }
+  ]
+}

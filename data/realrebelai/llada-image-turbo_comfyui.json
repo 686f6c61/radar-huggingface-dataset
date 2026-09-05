@@ -27,9 +27,9 @@
     "base_model:quantized:inclusionAI/LLaDA-Image-Turbo",
     "region:us"
   ],
-  "likes": 11,
+  "likes": 13,
   "downloads_30d": 938,
-  "trending_score": 0,
+  "trending_score": 13,
   "parameters": 16322752256,
   "parameters_human": "16.32B",
   "storage_bytes": 29022861796,

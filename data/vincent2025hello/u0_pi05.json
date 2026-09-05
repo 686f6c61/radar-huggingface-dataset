@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vincent2025hello/u0_pi05",
+  "slug": "vincent2025hello-u0_pi05",
+  "author": "Vincent2025hello",
+  "url": "https://huggingface.co/Vincent2025hello/u0_pi05",
+  "created_at": "2026-09-05T11:58:25.000Z",
+  "updated_at": "2026-09-05T11:58:25.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "Vincent2025hello (Vincent Gu) - Hugging Face",
+      "url": "https://huggingface.co/Vincent2025hello",
+      "snippet": "AI & ML interests ... Recent Activity new activity 22 days ago ... updated a model 22 days ago"
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/login",
+      "snippet": "Can’t access your account? Terms of use Privacy & cookies ..."
+    },
+    {
+      "title": "Vincent2025hello (Vincent Gu) - Hugging Face",
+      "url": "https://huggingface.co/Vincent2025hello/models",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 1 month ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=07b513b1b7df6e0f1987047ab6676f70",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/medforge-qwen3.5-4b-distill-GGUF",
+  "slug": "mradermacher-medforge-qwen3-5-4b-distill-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/medforge-qwen3.5-4b-distill-GGUF",
+  "created_at": "2026-09-05T15:07:13.000Z",
+  "updated_at": "2026-09-05T15:28:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "distillation",
+    "sft",
+    "qwen3.5",
+    "post-training",
+    "zh",
+    "en",
+    "base_model:fang04/medforge-qwen3.5-4b-distill",
+    "base_model:quantized:fang04/medforge-qwen3.5-4b-distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945652864,
+  "storage_human": "39.9 GB",
+  "base_model": "fang04/medforge-qwen3.5-4b-distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam.cz",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Z obchodu, který na první pohled vypadal jako životní příležitost, se podle informací eXtra.cz vyklubal pořádný průšvih. Ve hře je …"
+    },
+    {
+      "title": "mradermacher/medforge-qwen3.5-4b-dpo-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/medforge-qwen3.5-4b-dpo-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě. Přejít na Seznam.cz NápovědaTechnická podpora Copyright © 1996-2026, …"
+    },
+    {
+      "title": "medforge-qwen3.5-4b-dpo.Q4_K_M.gguf · mradermacher/medforge-qwen3.5-4b ...",
+      "url": "https://huggingface.co/mradermacher/medforge-qwen3.5-4b-dpo-GGUF/blob/main/medforge-qwen3.5-4b-dpo.Q4_K_M.gguf",
+      "snippet": "mradermacher / medforge-qwen3.5-4b-dpo-GGUF like 1 Transformers GGUF Chinese English medical dpo qwen3.5 post-training conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Home – Seznam.cz",
+      "url": "https://www.seznam.cz/zdroj/363-home",
+      "snippet": "Nejnovější články na Seznamu ze zdroje Home"
+    }
+  ]
+}

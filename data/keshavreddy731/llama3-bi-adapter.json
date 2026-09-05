@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "keshavreddy731/llama3-bi-adapter",
+  "slug": "keshavreddy731-llama3-bi-adapter",
+  "author": "keshavreddy731",
+  "url": "https://huggingface.co/keshavreddy731/llama3-bi-adapter",
+  "created_at": "2026-09-05T11:57:54.000Z",
+  "updated_at": "2026-09-05T11:58:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/llama-3.1-8b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "想问一下大家web of science文献检索点不动 只能用作者检索怎么办呀 …",
+      "url": "https://www.zhihu.com/question/554644931",
+      "snippet": "论文 文献检索 论文检索 想问一下大家web of science文献检索点不动 只能用作者检索怎么办呀 ? [图片] [图片] 手机电脑打开都是这样 …"
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3's open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Microsoft edge浏览器登录web of science 自动跳转到 ... - 知乎",
+      "url": "https://www.zhihu.com/question/573467498",
+      "snippet": "Web 开发 网页浏览器 网页 Microsoft edge浏览器登录web of science 自动跳转到学校登录界面，解决方法？ 在Microsoft edge浏览器 …"
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "将Web of Science上的搜索结果导入到EndNote中 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/154b463138ad0928cb8f4110.html",
+      "snippet": "Dec 22, 2018 · 将Web of Science上的搜索结果导入到EndNote中,WeofSciece可以很好地查询英文文献，而EdNote可以很好地管理参 …"
+    }
+  ]
+}

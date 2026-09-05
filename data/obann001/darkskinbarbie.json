@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "obann001/DarkSkinBarbie",
+  "slug": "obann001-darkskinbarbie",
+  "author": "obann001",
+  "url": "https://huggingface.co/obann001/DarkSkinBarbie",
+  "created_at": "2026-09-05T13:27:00.000Z",
+  "updated_at": "2026-09-05T13:27:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么这么多人把「Wikipedia」称作「wiki」？ - 知乎",
+      "url": "https://www.zhihu.com/question/19581089",
+      "snippet": "Mar 25, 2011 · 为什么这么多人把「Wikipedia」称作「wiki」？ 我一直很难理解这个问题，为什么这么多人喜欢把专有名词和通用概念 …"
+    },
+    {
+      "title": "obann001 (Nzonzi Mambou) - Hugging Face",
+      "url": "https://huggingface.co/obann001/datasets",
+      "snippet": "User profile of Nzonzi Mambou on Hugging Face"
+    },
+    {
+      "title": "有什么值得推荐的英文维基镜像网站? - 知乎",
+      "url": "https://www.zhihu.com/question/347202458",
+      "snippet": "现在中文的维基镜像感觉做的还不错，数量也足够多。但是英文镜像无论在数量还是质量上都还不及中文版本。…"
+    },
+    {
+      "title": "obann001/Patrice_Evra_SD1.5_Model at main - Hugging Face",
+      "url": "https://huggingface.co/obann001/Patrice_Evra_SD1.5_Model/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Use this model main Patrice_Evra_SD1.5_Model 8.53 GB 1 contributor History:39 commits obann001 Update README.md 4994c1d verified10 months ago Patrice_Evra_bf16Upload 24 filesabout 1 year ago Patrice_Evra_fp16Upload 24 filesabout 1 year ago .gitattributes 1.52 kBinitial commitover 2 years ago ..."
+    },
+    {
+      "title": "字节、KB、MB、GB 之间的换算关系_百度知道",
+      "url": "https://zhidao.baidu.com/question/6318898.html",
+      "snippet": "字节、KB、MB、GB 之间的换算关系数据存储以10进制表示：1B（byte，字节）= 8 bit（见下文）；1KB（Kilobyte，千字 …"
+    }
+  ]
+}

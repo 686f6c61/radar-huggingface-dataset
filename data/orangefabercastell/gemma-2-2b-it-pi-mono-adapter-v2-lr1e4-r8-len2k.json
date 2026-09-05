@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r8-len2k",
+  "slug": "orangefabercastell-gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r8-len2k",
+  "author": "orangefabercastell",
+  "url": "https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r8-len2k",
+  "created_at": "2026-09-05T15:16:09.000Z",
+  "updated_at": "2026-09-05T15:16:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55177556,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time Zones and DST in Europe - timeanddate.com",
+      "url": "https://www.timeanddate.com/time/europe/",
+      "snippet": "From Iceland in the west to western parts of Russia in the east, the European continent spans four standard time zones. There are …"
+    },
+    {
+      "title": "orangefabercastell/gemma-2-2b-it-pi-mono-sft · Hugging Face",
+      "url": "https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-sft",
+      "snippet": "Gemma 2 2B SFT on Agent Execution Traces Supervised fine-tuned Gemma 2 2B(google/gemma-2-2b-it/ unsloth/gemma-2-2b-it-bnb-4bit) trained on real-world autonomous coding-agent execution traces from badlogicgames/pi-mono. The model was adapted using 4-bit Quantized Low-Rank Adaptation (QLoRA) with completion-only loss masking."
+    },
+    {
+      "title": "Europe Time Zone Map - WhichTimezone",
+      "url": "https://whichtimezone.com/europe/europe-map/",
+      "snippet": "17 hours ago · Map of Europe covering all countries showing the applicable time zone. Check out the full information per country."
+    },
+    {
+      "title": "google/gemma-2-2b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-2b-it",
+      "snippet": "The Gemma-2 2b model can be run up to 6x faster by leveraging torch compile. Note that two warm-up steps are required before the full inference speed is realised:"
+    },
+    {
+      "title": "Europe Time Clock & Map - Check Current Local Time in Europe",
+      "url": "https://24timezones.com/eu_map/europe_time.php",
+      "snippet": "17 hours ago · Time in Europe - Time Zones Map and Html Clock of current local time in major european cities. - actual official time, …"
+    }
+  ]
+}

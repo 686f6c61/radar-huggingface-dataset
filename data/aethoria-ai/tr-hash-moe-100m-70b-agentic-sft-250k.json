@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AETHORIA-AI/TR-HASH-MoE-100M-70B-Agentic-SFT-250K",
+  "slug": "aethoria-ai-tr-hash-moe-100m-70b-agentic-sft-250k",
+  "author": "AETHORIA-AI",
+  "url": "https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-100M-70B-Agentic-SFT-250K",
+  "created_at": "2026-09-05T12:42:19.000Z",
+  "updated_at": "2026-09-05T12:42:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "tr_hash_moe",
+    "tr-hash",
+    "mixture-of-experts",
+    "deterministic-routing",
+    "agentic-sft",
+    "instruction-tuned",
+    "text-generation",
+    "conversational",
+    "en",
+    "fr",
+    "dataset:AETHORIA-AI/TR-HASH-Agentic-SFT-32K-250K",
+    "base_model:AETHORIA-AI/TR-HASH-MoE-100M-70B-Agentic-Refinement",
+    "base_model:finetune:AETHORIA-AI/TR-HASH-MoE-100M-70B-Agentic-Refinement",
+    "license:cc-by-nc-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FRACTION D'UN TOUT - mots croisés - 20 solutions de 2 à 11",
+      "url": "https://www.fsolver.fr/mots-fleches/FRACTION*D*UN*TOUT",
+      "snippet": "Oct 12, 2025 · Solutions de mots croisés et mots fléchés pour FRACTION D'UN TOUT - 20 solutions de 2 à 11 lettres"
+    },
+    {
+      "title": "AETHORIA-AI/TR-HASH-MoE-100M-70B-Agentic-SFT · Hugging Face",
+      "url": "https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-100M-70B-Agentic-SFT",
+      "snippet": "Full-parameter SFT, 3 epochs, 9,429 optimizer steps. 4 GPUs, per-rank batch size 8, packed sequence length 2,048. AdamW, peak learning rate 1e-5, 3% warmup, cosine decay to 1e-6. Assistant-only supervision with the native Agentic special-token template. Best checkpoint selected by matched validation loss."
+    },
+    {
+      "title": "FRACTION - mots croisés - 20 solutions de 3 à 12 lettres - FSolver",
+      "url": "https://www.fsolver.fr/mots-fleches/FRACTION",
+      "snippet": "Feb 5, 2026 · Portion, partie d'un tout. Quantité qui contient un certain nombre de parties de l’unité, et dont l’expression est …"
+    },
+    {
+      "title": "TR-HASH MoE 100M - 70B Agentic Refinement - Hugging Face",
+      "url": "https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-100M-70B-Agentic-Refinement",
+      "snippet": "Refinement: one clean pass over the exact 70B unique-token core, initialized from the completed pretraining weights with a fresh optimizer. Instruction tuning: a separate full-parameter SFT stage after refinement."
+    },
+    {
+      "title": "FRACTION D'UN TOUT - Mots Fléchés",
+      "url": "https://www.solutionmotsfleches.com/fraction-dun-tout",
+      "snippet": "Les solutions pour FRACTION D'UN TOUT de mots fléchés. Découvrez les bonnes réponses, synonymes et autres mots utiles"
+    }
+  ]
+}

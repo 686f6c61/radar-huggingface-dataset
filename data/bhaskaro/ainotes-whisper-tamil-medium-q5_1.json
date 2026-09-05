@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bhaskaro/ainotes-whisper-tamil-medium-q5_1",
+  "slug": "bhaskaro-ainotes-whisper-tamil-medium-q5_1",
+  "author": "bhaskaro",
+  "url": "https://huggingface.co/bhaskaro/ainotes-whisper-tamil-medium-q5_1",
+  "created_at": "2026-09-05T10:38:41.000Z",
+  "updated_at": "2026-09-05T12:35:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "ta"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "whisper",
+    "ggml",
+    "automatic-speech-recognition",
+    "ta",
+    "base_model:vasista22/whisper-tamil-medium",
+    "base_model:finetune:vasista22/whisper-tamil-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586572019,
+  "storage_human": "587 MB",
+  "base_model": "vasista22/whisper-tamil-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer herunterladen und verwenden - Computer - Google ...",
+      "url": "https://support.google.com/translate/answer/6350850?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Ankündigungen Google ÜbersetzerHilfeforumForum Google Übersetzer herunterladen und verwenden Mit der Google Übersetzer …"
+    },
+    {
+      "title": "bhaskaro/ainotes-whisper-hindi-medium-q5_1 · Hugging Face",
+      "url": "https://huggingface.co/bhaskaro/ainotes-whisper-hindi-medium-q5_1",
+      "snippet": "Whisper Hindi medium, GGML q5_1 vasista22/whisper-hindi-mediumconverted to GGML and quantised to q5_1 for whisper.cpp, for use on Android. An optional higher-accuracy alternative to the 190 MB small model, not a replacement for it. Measured FLEURS hi_in, 32 clips, scored through whisper.cpp with the settings the app actually uses - no_timestamps, greedy, common-script romanisation before scoring:"
+    },
+    {
+      "title": "Dokumente und Websites übersetzen lassen - Computer - Google …",
+      "url": "https://support.google.com/translate/answer/2534559?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Hier erfahren Sie, welche Geräte die Funktionen von Google Übersetzer unterstützen. Websites übersetzen lassen Wichtig: Diese …"
+    },
+    {
+      "title": "vasista22/whisper-tamil-medium · Hugging Face",
+      "url": "https://huggingface.co/vasista22/whisper-tamil-medium",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bilder übersetzen lassen - Android - Google Übersetzer-Hilfe",
+      "url": "https://support.google.com/translate/answer/6142483?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Einen bestimmten Teil eines Texts übersetzen Sie können auf einem Bild einen bestimmten Text auswählen, der übersetzt werden …"
+    }
+  ]
+}

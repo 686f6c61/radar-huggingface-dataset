@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GenoaSai74/papi",
+  "slug": "genoasai74-papi",
+  "author": "GenoaSai74",
+  "url": "https://huggingface.co/GenoaSai74/papi",
+  "created_at": "2026-09-05T11:15:02.000Z",
+  "updated_at": "2026-09-05T11:17:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm4_moe_lite",
+    "doi:10.57967/hf/10300",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18633333696,
+  "parameters_human": "18.63B",
+  "storage_bytes": 21121622561,
+  "storage_human": "21.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Radio Merak (BiH) uživo na Internetu - Balkan Radio Stanice",
+      "url": "https://www.balkanradiostanice.com/radio-stanica-uzivo/328/radio-merak/bih/",
+      "snippet": "Jun 22, 2014 · Radio Merak (BiH) uživo na Internetu sa Vašeg desktop računara, Android ili iOS uređaja na Balkan Radio Stanice."
+    },
+    {
+      "title": "PAPI · Your AI can write the code. PAPI keeps the project together.",
+      "url": "https://getpapi.ai/",
+      "snippet": "Project management inside every AI tool you build in. PAPI plans what is next, tracks every decision, and keeps your project coherent so you pick up exactly where you left off. Works with Lovable, Bolt, Replit, Cursor, Claude Code, Windsurf, and ChatGPT."
+    },
+    {
+      "title": "Krajiški Radio Merak - Radio Stanice Cazin Uživo On Line - Bosna i ...",
+      "url": "http://stanica.radiotranzistor.net/bih/radio-stanica/kraji%C5%A1ki-radio-merak-27",
+      "snippet": "Skinite i instalirajte besplatne RADIO TRANZISTOR Android aplikacije i slušajte omiljene radio stanice uživo preko interneta iz Srbije, …"
+    },
+    {
+      "title": "Papi - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/ed8e78dead8d44a1a31006c7700adb61",
+      "snippet": "Explore Papi model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Radio Cazin Cazin uživo preko interneta - ExYu Radio stanice",
+      "url": "https://www.exyuradio.net/radio-stanice/bih/cazin/radio-cazin.html",
+      "snippet": "Uzivo Radio Cazin Cazin preko interneta - Slušaj radio uživo preko interneta. Sve radio stanice iz Srbije, Hrvatske, Bosne, …"
+    }
+  ]
+}

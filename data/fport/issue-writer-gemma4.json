@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "fport/issue-writer-gemma4",
+  "slug": "fport-issue-writer-gemma4",
+  "author": "fport",
+  "url": "https://huggingface.co/fport/issue-writer-gemma4",
+  "created_at": "2026-09-05T11:35:27.000Z",
+  "updated_at": "2026-09-05T11:39:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "unsloth",
+    "structured-output",
+    "json",
+    "issue-tracking",
+    "turkish",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "en",
+    "tr",
+    "dataset:fport/issue-writer-tr-en",
+    "base_model:unsloth/gemma-4-E4B-it",
+    "base_model:finetune:unsloth/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765510,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "organite - Forum FS Generation",
+      "url": "https://forums.futura-sciences.com/biologie/153522-organite.html",
+      "snippet": "Re : organite Hello, d'après ce que j'ai appri les organites sont par définition entourés d'une membrane ( mitochondrie, chloroplaste, …"
+    },
+    {
+      "title": "fport/issue-writer-gemma4-lora · Hugging Face",
+      "url": "https://huggingface.co/fport/issue-writer-gemma4-lora",
+      "snippet": "Instructions to use fport/issue-writer-gemma4-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Organites cellulaires - Forum FS Generation",
+      "url": "https://forums.futura-sciences.com/biologie/55681-organites-cellulaires.html",
+      "snippet": "1) Ribosome = organite, c'est une nucléoprotéine (composé d'ARNr et de peptides donc) 2) L'organisateur nucléolaire est formé par …"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "[SVT] [3ème] Immunologie (cf le sujet de piwi)",
+      "url": "https://forums.futura-sciences.com/exercices-concours-examens/90173-svt-3eme-immunologie-cf-sujet-de-piwi.html",
+      "snippet": "Je devrais peut-être en faire autant En tout cas, je te propose deux petits exercices d'SVT : Exercice 1 : 1/Définition : Cellule, …"
+    }
+  ]
+}

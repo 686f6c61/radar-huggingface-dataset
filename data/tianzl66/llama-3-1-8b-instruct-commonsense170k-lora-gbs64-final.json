@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-LoRA-GBS64-Final",
+  "slug": "tianzl66-llama-3-1-8b-instruct-commonsense170k-lora-gbs64-final",
+  "author": "tianzl66",
+  "url": "https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-LoRA-GBS64-Final",
+  "created_at": "2026-09-05T12:03:48.000Z",
+  "updated_at": "2026-09-05T12:07:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "llama-3.1",
+    "lora",
+    "commonsense-reasoning",
+    "spectral-surgery",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "If your YouTube channel is terminated, you are prohibited from using, possessing, or creating any other YouTube channels. You are …"
+    },
+    {
+      "title": "tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-LoRA-GBS64-Final ...",
+      "url": "https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-LoRA-GBS64-Final",
+      "snippet": "Instructions to use tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-LoRA-GBS64-Final with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Can’t access YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=en",
+      "snippet": "If your channel is connected to a Brand Account, click your icon in the top right of the page. You can choose the page with the …"
+    },
+    {
+      "title": "tianzl66/Llama-3.1-8B-Instruct-InstructionFollowing-LoRA - Hugging Face",
+      "url": "https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-InstructionFollowing-LoRA",
+      "snippet": "Instructions to use tianzl66/Llama-3.1-8B-Instruct-InstructionFollowing-LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "İndir | OBS",
+      "url": "https://obsproject.com/tr/downLOAD",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    }
+  ]
+}

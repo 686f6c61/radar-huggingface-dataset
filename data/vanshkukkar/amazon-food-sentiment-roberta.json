@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "VanshKukkar/amazon-food-sentiment-roberta",
+  "slug": "vanshkukkar-amazon-food-sentiment-roberta",
+  "author": "VanshKukkar",
+  "url": "https://huggingface.co/VanshKukkar/amazon-food-sentiment-roberta",
+  "created_at": "2026-09-05T10:24:24.000Z",
+  "updated_at": "2026-09-05T11:22:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647939,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498621069,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ukraine Interactive map - Ukraine Latest news on live map",
+      "url": "https://liveuamap.com/",
+      "snippet": "Liveuamap is opendata-driven media platform that change the way you receive latest news. Explore a map, messages, pictures and …"
+    },
+    {
+      "title": "From Data to Insights: My Complete Journey Building an Amazon Food ...",
+      "url": "https://www.linkedin.com/pulse/from-data-insights-my-complete-journey-building-food-krishna-p-v-lrndc",
+      "snippet": "When I stumbled upon Amazon's food review dataset, I saw the perfect opportunity to dive deep into sentiment analysis and compare traditional bag-of-words approaches with modern transformer models."
+    },
+    {
+      "title": "Ukraine Interactive map - Ukraine Latest news on live map",
+      "url": "https://ukraine.liveuamap.com/",
+      "snippet": "Liveuamap is opendata-driven media platform that change the way you receive latest news. Explore a map, messages, pictures and …"
+    },
+    {
+      "title": "Sentiment Analysis on Food Reviews - vsuraj25.github.io",
+      "url": "https://vsuraj25.github.io/projects/amazon_sentiment_analysis.html",
+      "snippet": "Sentiment Analysis on Amazon Fine Food Reviews This project focuses on performing sentiment analysis on the Amazon Fine Food Reviews dataset using two different approaches: VADER (Valence Aware Dictionary and Sentiment Reasoner) with a Bag of Words approach and the Roberta Pretrained Model from Transformers."
+    },
+    {
+      "title": "Karte des Krieges in der Ukraine - Ukraine Nachrichten auf ... - Liveuamap",
+      "url": "https://liveuamap.com/de",
+      "snippet": "Aug 11, 2026 · Entdecken Sie und erfahren Sie mehr über die neuesten Nachrichten und Entwicklungen in der Ukraine, den Konflikt …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/LFM2-HC-SMoE-ngroups24",
+  "slug": "dohyeon1-lfm2-hc-smoe-ngroups24",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups24",
+  "created_at": "2026-09-05T18:21:59.000Z",
+  "updated_at": "2026-09-05T18:24:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 16953912510,
+  "storage_human": "17.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=05c68fcf25416cb41094980424456d4a",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "GitHub - wazenmai/HC-SMoE: [ICML 2025] Retraining-Free Merging of ...",
+      "url": "https://github.com/wazenmai/HC-SMoE",
+      "snippet": "In this work, we propose HC-SMoE (Hierarchical Clustering for Sparsely activated Mixture of Experts), a task-agnostic expert merging framework that reduces SMoE model parameters without retraining. Unlike previous methods, HC-SMoE employs hierarchical clustering based on expert outputs, ensuring ..."
+    },
+    {
+      "title": "Poki - Kostenlose Onlinespiele - Jetzt spielen!",
+      "url": "https://poki.com/de?msockid=05c68fcf25416cb41094980424456d4a",
+      "snippet": "Poki bringt die beste Auswahl an kostenlosen Online-Spielen und bietet das unterhaltsamste Erlebnis, allein oder mit Freunden zu …"
+    },
+    {
+      "title": "Dohyeon1 (Dohyeon Kim) - Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1/datasets",
+      "snippet": "Dohyeon1/Pictory-ControlNet-RawDataset-Upsample Viewer •Updated Dec 17, 2024•1.76k• 25"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Poki Games is a free gaming platform packed with tons of fun without any sneaky charges or subscriptions. Not only can you play …"
+    }
+  ]
+}

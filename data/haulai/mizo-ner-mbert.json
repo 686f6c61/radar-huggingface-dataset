@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "haulai/mizo-ner-mbert",
+  "slug": "haulai-mizo-ner-mbert",
+  "author": "haulai",
+  "url": "https://huggingface.co/haulai/mizo-ner-mbert",
+  "created_at": "2026-09-05T17:56:34.000Z",
+  "updated_at": "2026-09-05T18:00:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "lus"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "mizo",
+    "tibeto-burman",
+    "low-resource",
+    "token-classification",
+    "lus",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177280535,
+  "parameters_human": "177.3M",
+  "storage_bytes": 709151341,
+  "storage_human": "709 MB",
+  "base_model": "bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.co.il/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "haulai/mizo-ner · Hugging Face",
+      "url": "https://huggingface.co/haulai/mizo-ner",
+      "snippet": "haulai / mizo-ner like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.co.il/",
+      "snippet": "השירות של Google, שמוצע בחינם, מתרגם באופן מיידי מילים, ביטויים ודפי אינטרנט מאנגלית למעל 100 שפות."
+    },
+    {
+      "title": "robzchhangte/MizBERT · Hugging Face",
+      "url": "https://huggingface.co/robzchhangte/MizBERT",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.co.il/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    }
+  ]
+}

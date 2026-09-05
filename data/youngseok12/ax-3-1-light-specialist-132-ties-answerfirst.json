@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-3.1-Light-specialist-132-ties-answerfirst",
+  "slug": "youngseok12-ax-3-1-light-specialist-132-ties-answerfirst",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-3.1-Light-specialist-132-ties-answerfirst",
+  "created_at": "2026-09-05T13:37:01.000Z",
+  "updated_at": "2026-09-05T13:41:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "instruction-tuning",
+    "supervised-fine-tuning",
+    "lora",
+    "merged-model",
+    "model-merging",
+    "ties",
+    "answer-first",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:adapter:skt/A.X-3.1-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635312,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Klaim Asuransi Mobil Lecet: Syarat, Cara & Penyebab Ditolak",
+      "url": "https://www.mpm-insurance.com/berita/cara-klaim-asuransi-mobil-lecet/",
+      "snippet": "May 1, 2026 · Mobil lecet bisa klaim asuransi? Simak cara klaim asuransi mobil lecet, syarat dokumen, hingga penyebab klaim …"
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_B12K_qcdd_1e · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_B12K_qcdd_1e",
+      "snippet": "This model is a Korean question-answering and instruction-following model fine-tuned to place the answer first and optionally provide a short reason. The training set was selected from a frozen AI Hub candidate universe using quality, complexity, difficulty, and diversity-aware selection."
+    },
+    {
+      "title": "Cara Mengajukan Klaim Asuransi Mobil: Syarat, Prosedur, dan Tips …",
+      "url": "https://astraotoshop.com/article/cara-klaim-asuransi-mobil",
+      "snippet": "Ketahui cara klaim asuransi mobil, termasuk klaim asuransi mobil lecet. Pahami syarat, prosedur, dan tips agar pengajuan klaim …"
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_0 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0",
+      "snippet": "youngseok12 / AX-3.1-Light-sft_v3_0 like 0 Text Generation Transformers Safetensors Korean llama korean sft lora-merged k-ai-leaderboard conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Cara Klaim Asuransi Mobil Lecet, Prosedur dan Syaratnya",
+      "url": "https://www.roojai.co.id/article/asuransi-mobil/apakah-baret-bisa-klaim-asuransi/",
+      "snippet": "Sep 26, 2025 · Cara klaim asuransi mobil lecet lengkap dengan syarat, biaya own risk, dan tips agar klaim tidak ditolak. …"
+    }
+  ]
+}

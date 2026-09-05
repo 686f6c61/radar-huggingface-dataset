@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "HIGHDEVUAI/uai-orb-router-v0",
+  "slug": "highdevuai-uai-orb-router-v0",
+  "author": "HIGHDEVUAI",
+  "url": "https://huggingface.co/HIGHDEVUAI/uai-orb-router-v0",
+  "created_at": "2026-09-05T10:54:19.000Z",
+  "updated_at": "2026-09-05T10:54:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "routing",
+    "cloudflare",
+    "workers-ai",
+    "synthetic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Time and GMT",
+      "url": "https://greenwichmeantime.com/current-time/",
+      "snippet": "12 hours ago · Current local time and instant conversion between different locations in the world, even if you do not know the time …"
+    },
+    {
+      "title": "UnoRouter - One Key for Every AI Model",
+      "url": "https://unorouter.com/en",
+      "snippet": "One key for every AI model. Use it in your code, in Claude Code, or in your favorite AI clients. Smart routing across every major provider."
+    },
+    {
+      "title": "Greenwich Mean Time",
+      "url": "https://time.is/GMT",
+      "snippet": "12 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Greenwich Mean Time (GMT)."
+    },
+    {
+      "title": "Chinese hacking platform takedown exposes an ORB network hiding in your ...",
+      "url": "https://itnerd.blog/2026/08/27/chinese-hacking-platform-takedown-exposes-an-orb-network-hiding-in-your-routers/",
+      "snippet": "Chinese hacking platform takedown exposes an ORB network hiding in your routers The DOJ and FBI just disrupted QTFY, a Chinese state-linked hacking platform built around QScan, which scanned the internet for vulnerable IoT and SOHO devices, and QTRouter, which enrolled those devices into an obfuscation mesh to hide attacker traffic."
+    },
+    {
+      "title": "Time Now in GMT (Greenwich Mean Time) | Time.now",
+      "url": "https://time.now/timezones/gmt/",
+      "snippet": "View current time for GMT (Greenwich Mean Time) time zone [Updated live]. Other countries and time zones with the same UTC …"
+    }
+  ]
+}

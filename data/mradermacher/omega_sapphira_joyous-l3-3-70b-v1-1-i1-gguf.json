@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.1-i1-GGUF",
+  "slug": "mradermacher-omega_sapphira_joyous-l3-3-70b-v1-1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.1-i1-GGUF",
+  "created_at": "2026-09-05T18:22:03.000Z",
+  "updated_at": "2026-09-05T18:22:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6226480,
+  "parameters_human": "6.2M",
+  "storage_bytes": 24989760,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2f35fd4c847769840ea8ea87854568ed",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

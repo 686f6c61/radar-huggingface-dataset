@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "stefanprodan/Ornith-1.5-35B-A3B-BigBang-oQ4e-mtp",
+  "slug": "stefanprodan-ornith-1-5-35b-a3b-bigbang-oq4e-mtp",
+  "author": "stefanprodan",
+  "url": "https://huggingface.co/stefanprodan/Ornith-1.5-35B-A3B-BigBang-oQ4e-mtp",
+  "created_at": "2026-09-05T12:37:00.000Z",
+  "updated_at": "2026-09-05T13:07:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "omlx",
+    "oq",
+    "quantized",
+    "qwen3.6",
+    "moe",
+    "mtp",
+    "multimodal",
+    "conversational",
+    "agentic",
+    "image-text-to-text",
+    "base_model:EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP",
+    "base_model:quantized:EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 21622873144,
+  "storage_human": "21.6 GB",
+  "base_model": "EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "pyros-vault/Ornith-1.5-35B-A3B-BigBang-oQ4e-mtp at main",
+      "url": "https://huggingface.co/pyros-vault/Ornith-1.5-35B-A3B-BigBang-oQ4e-mtp/tree/main",
+      "snippet": "pyros-vault / Ornith-1.5-35B-A3B-BigBang-oQ4e-mtp like 1 Image-Text-to-Text MLX Safetensors qwen3_5_moe omlx oq quantized qwen3.6 Mixture of Experts mtp multimodal conversational 4-bit precision License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Need to download the package to install across your organization?"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "Instructions to use ornith-ai/Ornith-1.5-35B-A3B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "为什么用chatgpt账号登入一直提示需要电话号码 怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031417400504082455",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

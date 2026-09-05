@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Anomly/Qwen2.5-0.5B-Instruct-bposit8",
+  "slug": "anomly-qwen2-5-0-5b-instruct-bposit8",
+  "author": "Anomly",
+  "url": "https://huggingface.co/Anomly/Qwen2.5-0.5B-Instruct-bposit8",
+  "created_at": "2026-09-05T18:24:21.000Z",
+  "updated_at": "2026-09-05T18:24:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "b-posit8",
+    "exact-quire",
+    "reproducible-inference",
+    "invar",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 515631456,
+  "storage_human": "516 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "موقع جو اكاديمي | رواد التعليم الإلكتروني دوسيات ودروس مصورة",
+      "url": "https://www.joacademy.com/",
+      "snippet": "1هل منصة جو أكاديمي خاصة بالتوجيهي فقط أم لجميع الصفوف والمراحل الدراسية؟ 2هل أستطيع حضور حصص جو أكاديمي من خلال أكثر من جهاز؟ 3هل بقدر ارجع اعيد الحصص التفاعلية؟ 4كيف …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "الصفحة الرئيسية - التوجيهي | joacademy.com",
+      "url": "https://www.joacademy.com/home/tawjihi",
+      "snippet": "مرحبا بكم في الصفحة الرئيسية لجواكاديمي، هنا ستجد كل ما تحتاجه عن التوجيهي"
+    },
+    {
+      "title": "qwen2.5:0.5b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:0.5b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "انضم الي فريق جو أكاديمي",
+      "url": "https://careers.joacademy.com/ar/careers_page",
+      "snippet": "اكتشف فرص العمل المتاحة في أكاديمية جو. استكشف مجموعة من الأدوار وكن جزءًا من فريقنا المحترف."
+    }
+  ]
+}

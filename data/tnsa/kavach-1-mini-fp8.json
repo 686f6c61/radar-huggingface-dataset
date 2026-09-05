@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "TNSA/Kavach-1-Mini-FP8",
+  "slug": "tnsa-kavach-1-mini-fp8",
+  "author": "TNSA",
+  "url": "https://huggingface.co/TNSA/Kavach-1-Mini-FP8",
+  "created_at": "2026-09-05T13:26:13.000Z",
+  "updated_at": "2026-09-05T13:26:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "cybersecurity",
+    "red-team",
+    "security",
+    "offensive-security",
+    "kavach",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:mit",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1217015173,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fußball-Transfers, Gerüchte, Marktwerte und News | Transfermarkt",
+      "url": "https://www.transfermarkt.de/",
+      "snippet": "Transfermarkt - Das Fußball-Portal mit Transfers, Marktwerten, Gerüchten und Statistiken"
+    },
+    {
+      "title": "TNSA/Kavach-1-Mini-FP8 · Hugging Face",
+      "url": "https://huggingface.co/TNSA/Kavach-1-Mini-FP8",
+      "snippet": "A compact, instruction-tuned language model specialized for offensive security and red-team reasoning. Built by full fine-tuning of Qwen3.5-0.8B (Instruct), Kavach-1-Mini is designed to act as an expert assistant for authorized penetration testing, security research, and cybersecurity education — small enough to run on modest hardware, yet focused enough to reason in depth about real-world ..."
+    },
+    {
+      "title": "Gerüchteküche - Forum | Transfermarkt",
+      "url": "https://www.transfermarkt.de/geruchtekuche/detail/forum/154",
+      "snippet": "Aug 13, 2009 · Dies ist die Übersicht aller Threads aus dem Forum Gerüchteküche, die in der Transfermarkt-Community diskutiert …"
+    },
+    {
+      "title": "GitHub - harshgounder/kavach: Kavach: India's Hindi-first anti-digital ...",
+      "url": "https://github.com/harshgounder/kavach",
+      "snippet": "Digital-arrest and voice-scam defence built for Hindi, measured like a lab, honest about its limits. Kavach is India's first consumer-grade, Hindi-first call-security platform that fuses six detection departments into one intervention loop: recognize → interrupt → verify → package → report. It catches fake CBI/police \"digital-arrest\" scripts and AI-synthesized voices BEFORE the payment ..."
+    },
+    {
+      "title": "Calcio e Mercato | Transfermarkt",
+      "url": "https://www.transfermarkt.it/",
+      "snippet": "Transfermarkt ti fornisce tutti i dati, statistiche, voci, notizie e fatti del calcio & del calciomercato."
+    }
+  ]
+}

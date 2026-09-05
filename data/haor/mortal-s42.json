@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "haor/Mortal-S42",
+  "slug": "haor-mortal-s42",
+  "author": "haor",
+  "url": "https://huggingface.co/haor/Mortal-S42",
+  "created_at": "2026-09-05T17:47:07.000Z",
+  "updated_at": "2026-09-05T17:48:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "mahjong",
+    "riichi",
+    "game-playing",
+    "offline-reinforcement-learning",
+    "mortal",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43913645,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "矢内さんの名字の由来や読み方、全国人数・順位｜名字検索No ...",
+      "url": "https://myoji-yurai.net/searchResult.htm?myojiKanji=%E7%9F%A2%E5%86%85",
+      "snippet": "矢内 【読み】やない,やうち,やのうち,やぬち 【ローマ字】 Yanai,Yauchi,Yanochi,Yanuchi 【全国順位】 1,600位 【全国人数】 およ …"
+    },
+    {
+      "title": "Mortal_v4/README.md at main · shinkuan/Mortal_v4 · GitHub",
+      "url": "https://github.com/shinkuan/Mortal_v4/blob/main/README.md",
+      "snippet": "🚀🀄️ A fast and strong AI for riichi mahjong, powered by deep reinforcement learning. - Mortal_v4/README.md at main · shinkuan/Mortal_v4"
+    },
+    {
+      "title": "「矢内」という名字（苗字）の読み方・レア度・由来 ...",
+      "url": "https://myoji.namedic.jp/sei/detail/%E7%9F%A2%E5%86%85",
+      "snippet": "1 day ago · 「矢内」は実在する名字です。 推定人口数は約10,000人、「やない」「やうち」といった読み方がある名字です。 都道 …"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "「矢内」の書き方・読み方・由来 名字 (苗字)",
+      "url": "https://kakijun.com/c/77e25185.html",
+      "snippet": "「矢内」（やない,やうち）は日本の苗字（姓）です。 読み方・書き方・由来・ルーツの情報。"
+    }
+  ]
+}

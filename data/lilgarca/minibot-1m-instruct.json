@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Lilgarca/MiniBot-1M-Instruct",
+  "slug": "lilgarca-minibot-1m-instruct",
+  "author": "Lilgarca",
+  "url": "https://huggingface.co/Lilgarca/MiniBot-1M-Instruct",
+  "created_at": "2026-09-05T10:26:23.000Z",
+  "updated_at": "2026-09-05T10:26:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1016960,
+  "parameters_human": "1.0M",
+  "storage_bytes": 4071896,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Chiffon Cake Recipe - Little Sweet Baker",
+      "url": "https://www.littlesweetbaker.com/classic-chiffon-cake/",
+      "snippet": "May 29, 2024 · This classic chiffon cake is moist, tender, and light as air. Check out this easy method of making this classic cake."
+    },
+    {
+      "title": "GitHub - abhiramiramadas/minibot",
+      "url": "https://github.com/abhiramiramadas/minibot",
+      "snippet": "🤖 MiniBot - AI Chatbot A simple and responsive AI chatbot web app now with enhanced features and a robust neubrutalism design."
+    },
+    {
+      "title": "Chiffon cake maken: makkelijk chiffon recept - Zoetrecepten",
+      "url": "https://www.zoetrecepten.nl/recept/chiffon-cake/",
+      "snippet": "Apr 18, 2024 · Een goed basisrecept voor een ontzettend luchtige chiffon cake. Met tips voor het beste en meest lekkere resultaat."
+    },
+    {
+      "title": "www.minibot.ai",
+      "url": "https://www.minibot.ai/",
+      "snippet": ""
+    },
+    {
+      "title": "Chiffon cake recept - Luchtige sinaasappelcake bakken - Baktotaal",
+      "url": "https://www.baktotaal.nl/chiffon-cake-met-sinaasappel-recept",
+      "snippet": "Deze luchtige cake is een heerlijke lekkernij voor bij de koffie of thee en zal het ook heel goed doen op een verjaardag of ander …"
+    }
+  ]
+}

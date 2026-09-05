@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "huluhuluu/qwen3-1.7b-mllm-qnn-htp",
+  "slug": "huluhuluu-qwen3-1-7b-mllm-qnn-htp",
+  "author": "huluhuluu",
+  "url": "https://huggingface.co/huluhuluu/qwen3-1.7b-mllm-qnn-htp",
+  "created_at": "2026-09-05T11:51:20.000Z",
+  "updated_at": "2026-09-05T12:02:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mllm",
+    "qualcomm",
+    "qnn",
+    "htp",
+    "npu",
+    "on-device",
+    "quantized",
+    "lpbq",
+    "w4a16",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3237879808,
+  "storage_human": "3.2 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Gemeindewerke Kleinblittersdorf",
+      "url": "https://gemeindewerke-kleinblittersdorf.de/",
+      "snippet": "Als Ihr kommunales Versorgungsunternehmen stellen wir im Rahmen der Daseinsfürsorge eine zuverlässige und nachhaltige …"
+    },
+    {
+      "title": "huluhuluu/qwen3-1.7b-executorch-qnn-htp · Hugging Face",
+      "url": "https://huggingface.co/huluhuluu/qwen3-1.7b-executorch-qnn-htp",
+      "snippet": "Toolchain QNN SDK 2.40.0(build_id 251030114326_189385), host torch 2.9.1+cu128, --compile_only(compilation is host-side; no AI Hub job involved). Measured latency Serial FIFO replay, one resident runner per device, 160 requests executed contiguously with no restart. Greedy decoding, context 2048. TTFT is model-side; TPOT is the mean inter-token interval derived from adjacent device commit ..."
+    },
+    {
+      "title": "Aktueller Gaspreis in Kleinblittersdorf | Gas-Günstiger.de",
+      "url": "https://www.gas-guenstiger.de/in/kleinblittersdorf",
+      "snippet": "Kleinblittersdorf Gaspreis in Kleinblittersdorf Der Grundversorger für 66271 Kleinblittersdorfist energis. Der Basis Tarif …"
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Erdgas Kleinblittersdorf - Saarbrücken - energis",
+      "url": "https://energis.de/erdgas/saarbruecken/kleinblittersdorf",
+      "snippet": "Ihr Anbieter für eine reibungslose Versorgung mit Gas in Kleinblittersdorf. Die Gemeinde Kleinblittersdorf gehört zum …"
+    }
+  ]
+}

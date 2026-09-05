@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch3",
+  "slug": "lanni-ni-dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch3",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch3",
+  "created_at": "2026-09-05T15:48:29.000Z",
+  "updated_at": "2026-09-05T15:52:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Matt Lauer's Life After Misconduct Scandal: Where Is He After Today ...",
+      "url": "https://www.usmagazine.com/celebrity-news/news/matt-lauers-life-after-misconduct-scandal-where-is-he-after-today-exit/",
+      "snippet": "Jan 28, 2026 · Matt Lauer was fired from 'Today' amid a sexual misconduct scandal — but where is he now after being forced out of …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What is Matt Lauer doing now years after his exit from the NBC Today ...",
+      "url": "https://www.tuko.co.ke/entertainment/celebrities/630735-what-matt-lauer-years-exit-nbc-today-show/",
+      "snippet": "Jul 9, 2026 · Matt Lauer lives in the Hamptons, New York and has not returned to a regular media role since leaving NBC in 2017. …"
+    },
+    {
+      "title": "dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Where Is Matt Lauer Now? Former ‘Today’ Host’s Life After Scandal",
+      "url": "https://www.tvinsider.com/1217433/matt-lauer-now-years-after-today-scandal-misconduct-allegations/",
+      "snippet": "Sep 24, 2025 · Lauer hasn’t appeared in mainstream media since his Todayfiring. His friend Don Lemon, however, said he would …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r16-len2k",
+  "slug": "orangefabercastell-gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r16-len2k",
+  "author": "orangefabercastell",
+  "url": "https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r16-len2k",
+  "created_at": "2026-09-05T12:54:24.000Z",
+  "updated_at": "2026-09-05T12:54:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75944836,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iLovePDF | Herramientas PDF online gratis",
+      "url": "https://www.ilovepdf.com/ES",
+      "snippet": "iLovePDF es un servicio online para trabajar con archivos PDF completamente gratuito y fácil de usar. ¡Unir, dividir, comprimir y …"
+    },
+    {
+      "title": "orangefabercastell/gemma-2-2b-it-pi-mono-sft · Hugging Face",
+      "url": "https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-sft",
+      "snippet": "Gemma 2 2B SFT on Agent Execution Traces Supervised fine-tuned Gemma 2 2B(google/gemma-2-2b-it/ unsloth/gemma-2-2b-it-bnb-4bit) trained on real-world autonomous coding-agent execution traces from badlogicgames/pi-mono. The model was adapted using 4-bit Quantized Low-Rank Adaptation (QLoRA) with completion-only loss masking."
+    },
+    {
+      "title": "iLovePDF | ferramentas online para PDF para os amantes de PDF",
+      "url": "https://www.ilovepdf.com/pt",
+      "snippet": "iLovePDF é um serviço online para trabalhar com arquivos PDF totalmente gratuito e fácil de usar. Combinar PDF, dividir PDF, …"
+    },
+    {
+      "title": "google/gemma-2-2b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-2b-it",
+      "snippet": "The Gemma-2 2b model can be run up to 6x faster by leveraging torch compile. Note that two warm-up steps are required before the full inference speed is realised:"
+    },
+    {
+      "title": "Login | iLovePDF",
+      "url": "https://clients.ilovepdf.com/web/login",
+      "snippet": "Reset Password © iLovePDF 2025"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tanmay9132/civic-eye-pothole-garbage",
+  "slug": "tanmay9132-civic-eye-pothole-garbage",
+  "author": "tanmay9132",
+  "url": "https://huggingface.co/tanmay9132/civic-eye-pothole-garbage",
+  "created_at": "2026-09-05T17:55:24.000Z",
+  "updated_at": "2026-09-05T18:08:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "object-detection",
+    "pothole-detection",
+    "garbage-detection",
+    "civic-issues",
+    "yolo",
+    "yolov8",
+    "computer-vision",
+    "deep-learning",
+    "smart-city",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114396889,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0ba1342cb87c6da4380423e7b9646c81",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "GitHub - TaruN-Ruwali/CivicEye: CivicEye is a web-based civic ...",
+      "url": "https://github.com/TaruN-Ruwali/CivicEye",
+      "snippet": "CivicEye is a web-based civic infrastructure reporting system that empowers citizens to submit road defects (potholes, garbage, leakage etc.) and enables authorities to track, verify, and resolve them efficiently. This prototype demonstrates: Citizen portal (Submit complaints + View status) Admin portal (Manage complaints + Update resolution stage) Data persistence using SQLite Simulated AI ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

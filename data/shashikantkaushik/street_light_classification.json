@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shashikantkaushik/street_light_classification",
+  "slug": "shashikantkaushik-street_light_classification",
+  "author": "shashikantkaushik",
+  "url": "https://huggingface.co/shashikantkaushik/street_light_classification",
+  "created_at": "2026-09-05T12:16:38.000Z",
+  "updated_at": "2026-09-05T12:46:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "image-classification",
+    "en",
+    "base_model:qualcomm/MobileNet-v2",
+    "base_model:finetune:qualcomm/MobileNet-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111251976,
+  "storage_human": "111 MB",
+  "base_model": "qualcomm/MobileNet-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.cz/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "shashikantkaushik (Shashi Kant) · GitHub",
+      "url": "https://github.com/shashikantkaushik",
+      "snippet": "Lion's Can't Be Herbivores. shashikantkaushik has 76 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=cs-CZ",
+      "snippet": "Zkuste Google v jazyce: English ReklamaVše o GoogluGoogle.com in English © 2026 - Ochrana soukromí- Smluvní podmínky …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

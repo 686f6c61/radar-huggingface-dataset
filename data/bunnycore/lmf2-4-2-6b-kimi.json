@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bunnycore/LMF2.4-2.6B-Kimi",
+  "slug": "bunnycore-lmf2-4-2-6b-kimi",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/LMF2.4-2.6B-Kimi",
+  "created_at": "2026-09-05T12:33:38.000Z",
+  "updated_at": "2026-09-05T12:33:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:LiquidAI/LFM2.5-2.6B",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2359296,
+  "parameters_human": "2.4M",
+  "storage_bytes": 32071718,
+  "storage_human": "32 MB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit Google Übersetzer können Sie Wörter, Sätze und Webseiten kostenlos in über 100 Sprachen übersetzen."
+    },
+    {
+      "title": "Kimi K2.6 | Leading Open-Source Model in Coding & Agent",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-6",
+      "snippet": "Kimi K2.6 is an open-source model with strong coding and agent swarm capabilities. Build pro-level websites, run workflows, and explore Claw Groups."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/details",
+      "snippet": "Google Übersetzer Übersetzer Über Google Übersetzer Datenschutzerklärung & NutzungsbedingungenHilfeFeedback gebenÜber …"
+    },
+    {
+      "title": "Kimi AI Models: See What Each One Can Do",
+      "url": "https://www.kimi.ai/ai-models/",
+      "snippet": "Explore Kimi's latest AI models, compare their capabilities and strengths, and find the right model for coding, research, creation, and complex work."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/m",
+      "snippet": "Übersetzen Sprache erkennen→ Deutsch Google-Startseite Feedback geben Datenschutzerklärung und Nutzungsbedingungen Zur …"
+    }
+  ]
+}

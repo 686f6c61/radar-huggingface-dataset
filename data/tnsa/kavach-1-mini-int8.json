@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "TNSA/Kavach-1-Mini-INT8",
+  "slug": "tnsa-kavach-1-mini-int8",
+  "author": "TNSA",
+  "url": "https://huggingface.co/TNSA/Kavach-1-Mini-INT8",
+  "created_at": "2026-09-05T13:26:20.000Z",
+  "updated_at": "2026-09-05T13:26:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "cybersecurity",
+    "red-team",
+    "security",
+    "offensive-security",
+    "kavach",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:mit",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1217014693,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "电脑语音的时候别人能听到我电脑播放的声音，怎么能解决？",
+      "url": "https://www.zhihu.com/question/327925166",
+      "snippet": "供参考： 1. 右键小喇叭，选择 声音 2.选择 录制，找到 当前使用设备，右键，------> 属性 3.在 级别 中看是不是将麦克风加强拉满了（ …"
+    },
+    {
+      "title": "GitHub - meghaInfosec/Kavach_AI_Clinic",
+      "url": "https://github.com/meghaInfosec/Kavach_AI_Clinic/tree/main",
+      "snippet": "Project KaVacH is a comprehensive, multi-surface security evaluation combining network forensics and web application security testing. The engagement is modeled against a real-world infrastructure scenario to identify attack vectors, validate architectural flaws, and build unified, data-backed remediation defenses."
+    },
+    {
+      "title": "如何关闭edge浏览器对网站弹出窗口的拦截-百度经验",
+      "url": "https://jingyan.baidu.com/article/5970355206a3c7cec107405d.html",
+      "snippet": "Apr 16, 2020 · 如何关闭edge浏览器对网站弹出窗口的拦截,随着浏览器功能的逐渐增强，许多浏览器新增了对弹出窗口的拦截，但是很 …"
+    },
+    {
+      "title": "KAVACH - On-device tactical intelligence platform with SLM360-powered ...",
+      "url": "https://www.360labs.ai/product/kavach",
+      "snippet": "Seven AI-powered modules on a single Android device. Tactical C2 with natural language commands (25 intents, <50ms), Data Fusion knowledge graph, ISR Processing (YOLOv8n, ~19 FPS), Auto SITREP (SALUTE reports in ~8s), Patrol Optimization (threat-aware routes in <3s), Threat Intel, and SLM360 Engine."
+    },
+    {
+      "title": "seek girl怎么下载dlc? - 知乎",
+      "url": "https://www.zhihu.com/question/378812017",
+      "snippet": "DLC现在被硬锁区了，官方开通了discord社区。 里面有链接https://discord.gg/3YK9A2GEdS"
+    }
+  ]
+}

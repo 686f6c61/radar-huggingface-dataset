@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SYNAPSEai1/Ace-Step1.5",
+  "slug": "synapseai1-ace-step1-5",
+  "author": "SYNAPSEai1",
+  "url": "https://huggingface.co/SYNAPSEai1/Ace-Step1.5",
+  "created_at": "2026-09-05T12:52:15.000Z",
+  "updated_at": "2026-09-05T13:08:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "diffusers",
+    "safetensors",
+    "synapse",
+    "feature-extraction",
+    "audio",
+    "music",
+    "text2music",
+    "text-to-audio",
+    "custom_code",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10079024720,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Todd Rundgren - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Todd_Rundgren",
+      "snippet": "Todd Harry Rundgren (born June 22, 1948) is an American musician, singer, songwriter, and record producer who has performed a …"
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "Todd Rundgren's - Hot Toddies - Concert Tour Dates 2026",
+      "url": "http://www.todd-rundgren.com/tr-tour.html",
+      "snippet": "Todd Rundgren - \"Damned If I Do\" Tour. August 8, Sat. Englewood, NJ - Bergen PAC. August 9, Sun. Ridgefield, CT - Ridgefield …"
+    },
+    {
+      "title": "ACE-Step/Ace-Step1.5 · Hugging Face",
+      "url": "https://huggingface.co/ACE-Step/Ace-Step1.5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Todd Rundgren - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Todd_Rundgren",
+      "snippet": "Todd Harry Rundgren (Upper Darby, Pennsylvania, 22 juni 1948) is een Amerikaans muzikant, singer-songwriter en …"
+    }
+  ]
+}

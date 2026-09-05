@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-3.1-Light-success-consolidation-musr-corrected",
+  "slug": "youngseok12-ax-3-1-light-success-consolidation-musr-corrected",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-3.1-Light-success-consolidation-musr-corrected",
+  "created_at": "2026-09-05T10:47:55.000Z",
+  "updated_at": "2026-09-05T10:50:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "instruction-tuning",
+    "supervised-fine-tuning",
+    "lora",
+    "merged-model",
+    "self-distillation",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:adapter:skt/A.X-3.1-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635312,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder Grand Openings Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start …"
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-success-consolidation-musr-corrected · Hugging ...",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-success-consolidation-musr-corrected",
+      "snippet": "Instructions to use youngseok12/AX-3.1-Light-success-consolidation-musr-corrected with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Wines Parkside Recipes Lidl Plus App Contact Us Contact Us Find answers to frequently asked questions and contact information for …"
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-success-consolidation-musr-correct_all ...",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-success-consolidation-musr-correct_all",
+      "snippet": "Instructions to use youngseok12/AX-3.1-Light-success-consolidation-musr-correct_all with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Lidl stores in the US",
+      "url": "https://www.lidl.com/s/en-US/stores/",
+      "snippet": "Find your Lidl store quickly and easily with the store finder or by city. Find offers and flyers for a Lidl store nearby."
+    }
+  ]
+}

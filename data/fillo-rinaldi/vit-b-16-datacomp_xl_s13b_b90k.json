@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "fillo-rinaldi/ViT-B-16-datacomp_xl_s13b_b90k",
+  "slug": "fillo-rinaldi-vit-b-16-datacomp_xl_s13b_b90k",
+  "author": "fillo-rinaldi",
+  "url": "https://huggingface.co/fillo-rinaldi/ViT-B-16-datacomp_xl_s13b_b90k",
+  "created_at": "2026-09-05T12:19:29.000Z",
+  "updated_at": "2026-09-05T12:20:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "openclip",
+    "vision",
+    "image-classification",
+    "fine-tuned",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4788717688,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "laion/CLIP-ViT-B-16-DataComp.XL-s13B-b90K · Hugging Face",
+      "url": "https://huggingface.co/laion/CLIP-ViT-B-16-DataComp.XL-s13B-b90K",
+      "snippet": "This makes untested and unconstrained deployment of the model in any use case currently potentially harmful. Certain use cases which would fall under the domain of surveillance and facial recognition are always out-of-scope regardless of performance of the model."
+    },
+    {
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
+    },
+    {
+      "title": "fillo-rinaldi (Filippo Rinaldi) - Hugging Face",
+      "url": "https://huggingface.co/fillo-rinaldi/models",
+      "snippet": "Recent Activity ... Organizations None yet fillo-rinaldi 's models 6 Sort: Recently updated"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

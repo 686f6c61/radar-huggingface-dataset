@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Diffusion-Research-Lab/hrrr-precipitation-100x100-diffusion",
+  "slug": "diffusion-research-lab-hrrr-precipitation-100x100-diffusion",
+  "author": "Diffusion-Research-Lab",
+  "url": "https://huggingface.co/Diffusion-Research-Lab/hrrr-precipitation-100x100-diffusion",
+  "created_at": "2026-09-05T17:54:18.000Z",
+  "updated_at": "2026-09-05T17:54:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "gendynamics",
+  "languages": [],
+  "tags": [
+    "gendynamics",
+    "safetensors",
+    "diffusion",
+    "unconditional-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89917576,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diffusion - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Diffusion",
+      "snippet": "Yale LUX Retrieved from \"https://en.wikipedia.org/w/index.php?title=Diffusion&oldid=1368839020\" Category: Diffusion Hidden …"
+    },
+    {
+      "title": "High-Resolution Rapid Refresh (HRRR)",
+      "url": "https://rapidrefresh.noaa.gov/hrrr/",
+      "snippet": "High-Resolution Rapid Refresh (HRRR) An official website of the United States government Here's how you know"
+    },
+    {
+      "title": "Diffusion | Definition, Quantification, & Examples | Britannica",
+      "url": "https://www.britannica.com/science/diffusion",
+      "snippet": "Aug 4, 2026 · Diffusion is the process resulting from random motion of molecules by which there is a net flow of matter from a region …"
+    },
+    {
+      "title": "HRRR Forecasts | Mesoscale & Microscale Meteorology",
+      "url": "https://www.mmm.ucar.edu/forecasts/hrrr",
+      "snippet": "HRRR Forecasts View our generated real-time forecasts for today or create your own forecast by visiting the HRRR real-time forecasting page."
+    },
+    {
+      "title": "Définitions : diffusion - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/diffusion/25481",
+      "snippet": "Diffusion gazeuse, procédé de séparation des isotopes, fondé sur le fait que la vitesse de passage d'un gaz à travers un orifice de …"
+    }
+  ]
+}

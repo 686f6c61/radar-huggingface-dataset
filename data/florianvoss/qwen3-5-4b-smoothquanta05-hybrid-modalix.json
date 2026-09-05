@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "florianvoss/Qwen3.5-4B-SmoothQuantA05-Hybrid-Modalix",
+  "slug": "florianvoss-qwen3-5-4b-smoothquanta05-hybrid-modalix",
+  "author": "florianvoss",
+  "url": "https://huggingface.co/florianvoss/Qwen3.5-4B-SmoothQuantA05-Hybrid-Modalix",
+  "created_at": "2026-09-05T17:49:56.000Z",
+  "updated_at": "2026-09-05T17:51:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llima",
+    "sima-ai",
+    "modalix",
+    "compiled",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10559355445,
+  "storage_human": "10.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fils nylon MAXIMA Fibre glow - ardent-peche.com",
+      "url": "https://www.ardent-peche.com/fr/p/56292-fils-nylon-maxima-fibre-glow.html",
+      "snippet": "Jul 7, 2025 · Nylon fluo rose mate très visible, parfait pour confectionner vos bas de lignesindicateurs de touche ou pour toute autre …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Instructions to use Qwen/Qwen3.5-4B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen3.5-4B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen3.5-4B is a 4B dense multimodal model that matches Qwen3-30B on MMLU-Pro and beats GPT-5-Nano on vision benchmarks. Runs on 8GB VRAM, Apache 2.0 licensed, 262K-1M context."
+    },
+    {
+      "title": "Qwen3.5-4B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen35-4b",
+      "snippet": "About Qwen3.5-4B Qwen3.5-4B is Alibaba Cloud's compact multimodal foundation model with 4B parameters, released February 2026. It uses a hybrid architecture combining Gated Delta Networks and Gated Attention in an 8× (3×DeltaNet→FFN→1×Attention→FFN) pattern."
+    }
+  ]
+}

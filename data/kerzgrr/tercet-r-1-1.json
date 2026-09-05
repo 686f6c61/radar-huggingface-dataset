@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "kerzgrr/Tercet-R-1.1",
+  "slug": "kerzgrr-tercet-r-1-1",
+  "author": "kerzgrr",
+  "url": "https://huggingface.co/kerzgrr/Tercet-R-1.1",
+  "created_at": "2026-09-05T11:59:46.000Z",
+  "updated_at": "2026-09-05T12:01:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "tiny_gdn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tiny_gdn",
+    "safetensors",
+    "text-generation",
+    "causal-lm",
+    "pytorch",
+    "sft",
+    "instruction-tuned",
+    "chat",
+    "reasoning",
+    "tool-use",
+    "hybrid",
+    "gated-deltanet",
+    "gqa",
+    "tercet",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smoltalk2",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:nvidia/Llama-Nemotron-Post-Training-Dataset",
+    "dataset:nvidia/Nemotron-Post-Training-Dataset-v1",
+    "dataset:nvidia/Nemotron-Agentic-v1",
+    "dataset:nvidia/Nemotron-SFT-Agentic-v2",
+    "dataset:nvidia/Nemotron-SFT-Instruction-Following-Chat-v2",
+    "dataset:nvidia/Nemotron-Instruction-Following-Chat-v1",
+    "dataset:nvidia/Nemotron-Cascade-2-SFT-Data",
+    "dataset:Agent-Ark/Toucan-1.5M",
+    "dataset:interstellarninja/hermes_reasoning_tool_use",
+    "dataset:NousResearch/Hermes-3-Dataset",
+    "dataset:allenai/WildChat-4.8M",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "dataset:teknium/OpenHermes-2.5",
+    "dataset:open-r1/Mixture-of-Thoughts",
+    "dataset:CohereLabs/aya_dataset",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:simplescaling/s1K-1.1",
+    "dataset:allenai/tulu-3-sft-personas-instruction-following",
+    "dataset:Salesforce/xlam-function-calling-60k",
+    "dataset:THUDM/LongAlign-10k",
+    "base_model:kerzgrr/Tercet-R-1.0",
+    "base_model:finetune:kerzgrr/Tercet-R-1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 501635264,
+  "parameters_human": "501.6M",
+  "storage_bytes": 1003334200,
+  "storage_human": "1.0 GB",
+  "base_model": "kerzgrr/Tercet-R-1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AOL Mail",
+      "url": "https://mail.aol.com/?ncid=customie8",
+      "snippet": "Get AOL Mail for FREE! Manage your email like never before with travel, photo & document views. Personalize your inbox with …"
+    },
+    {
+      "title": "kerzgrr/Tercet-R-1.0 · Hugging Face",
+      "url": "https://huggingface.co/kerzgrr/Tercet-R-1.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AOL",
+      "url": "https://mail.aol.com/getmydata?result=0",
+      "snippet": "AOL Sign in to AOL Email or phone number"
+    },
+    {
+      "title": "kerzgrr/Tercet-base · Hugging Face",
+      "url": "https://huggingface.co/kerzgrr/Tercet-base",
+      "snippet": "If you want chat behaviour, use kerzgrr/Tercet — this base model is for continuation / research and will not follow instructions reliably."
+    },
+    {
+      "title": "apis.mail.aol.com",
+      "url": "https://apis.mail.aol.com/.well-known/security.txt",
+      "snippet": "# Yahoo! uses Intigriti for responsible disclosure. # To report abusive behavior, spam, email scams, etc. please visit …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Z1T-0-mlx",
+  "slug": "mlx-community-z1t-0-mlx",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Z1T-0-mlx",
+  "created_at": "2026-09-05T13:01:01.000Z",
+  "updated_at": "2026-09-05T13:21:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "z1t",
+    "text-generation",
+    "attention-free",
+    "base_model:Extropic-AI/Z1T-0",
+    "base_model:finetune:Extropic-AI/Z1T-0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1242072362,
+  "parameters_human": "1.24B",
+  "storage_bytes": 4968297160,
+  "storage_human": "5.0 GB",
+  "base_model": "Extropic-AI/Z1T-0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "MLX Examples- standalone examples in the MLX framework including image generation, speech and music generation, language model training and many more. MLX Swift Examples- examples in MLX Swift including LLM and VLM text generation, low-rank fine-tuning, and image generation with SDXL. Check out the growing community."
+    },
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - ml-explore/mlx: MLX: An array framework for Apple silicon",
+      "url": "https://github.com/ml-explore/mlx",
+      "snippet": "We intend to make it easy for researchers to extend and improve MLX with the goal of quickly exploring new ideas. The design of …"
+    },
+    {
+      "title": "Apple Open Source",
+      "url": "https://opensource.apple.com/projects/mlx/",
+      "snippet": "apple Project MLX About MLX is an array framework designed for efficient and flexible machine learning research on Apple silicon. MLX is an array framework optimized for the unified memory architecture of Apple silicon. The NumPy-like API makes it familiar to use and flexible."
+    },
+    {
+      "title": "MLX Studio — Chat, Code, Generate Images & More on Mac | On-Device AI ...",
+      "url": "https://mlx.studio/",
+      "snippet": "MLX Studio — create anything locally on your Mac. Chat, agentic coding, image generation & editing with Flux and Qwen, voice, vision, and reasoning. 5-layer caching, 20+ built-in tools, Anthropic + OpenAI APIs, built-in GGUF-to-MLX and JANG model converter. The most capable on-device AI app for Apple Silicon."
+    }
+  ]
+}

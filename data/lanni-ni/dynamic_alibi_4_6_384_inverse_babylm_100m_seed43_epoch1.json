@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch1",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch1",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch1",
+  "created_at": "2026-09-05T15:25:12.000Z",
+  "updated_at": "2026-09-05T15:26:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comunidad de Madrid",
+      "url": "https://www.comunidad.madrid/",
+      "snippet": "Portal informativo de la Comunidad de Madrid. En este portal podrá encontrar información segmentada temática de interés para el …"
+    },
+    {
+      "title": "dynamic_alibi_4_6_384_babylm_100m_epoch6 - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Community of Madrid - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Community_of_Madrid",
+      "snippet": "1.1From Prehistory to Late Antiquity. 1.2Middle ages. 1.3Early modern period. 1.4Province. 1.5Autonomous community. 2Geography. …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=dynamic_alibi",
+      "snippet": "Explore machine learning models. 86 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: dynamic_alibi Clear all"
+    },
+    {
+      "title": "Administración Digital de la Comunidad de Madrid | Comunidad de Madrid",
+      "url": "https://sede.comunidad.madrid/",
+      "snippet": "Vivienda, urbanismo y construcción. Asuntos sociales. Industria, energía y minería. Transporte. Cultura, turismo, deporte y ocio. …"
+    }
+  ]
+}

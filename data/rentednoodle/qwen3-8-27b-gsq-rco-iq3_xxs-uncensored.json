@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "RentedNoodle/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-Uncensored",
+  "slug": "rentednoodle-qwen3-8-27b-gsq-rco-iq3_xxs-uncensored",
+  "author": "RentedNoodle",
+  "url": "https://huggingface.co/RentedNoodle/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-Uncensored",
+  "created_at": "2026-09-05T07:22:59.000Z",
+  "updated_at": "2026-09-05T15:22:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "qwen3.8",
+    "uncensored",
+    "abliterated",
+    "gsq",
+    "rco",
+    "quantized",
+    "speculative-decoding",
+    "multilingual",
+    "multimodal",
+    "vision",
+    "conversational",
+    "long-context",
+    "tool-use",
+    "16gb-vram",
+    "image-text-to-text",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 12016864416,
+  "storage_human": "12.0 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Partir à Hong Kong : votre guide de voyage sur mesure",
+      "url": "https://www.partir.com/Hong-kong/",
+      "snippet": "Oct 7, 2025 · Touce qu'il faut savoir pour voyager à Hong Kong. Météo, lieux d'intérêts, meilleures agences..."
+    },
+    {
+      "title": "RentedNoodle/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/RentedNoodle/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-Uncensored",
+      "snippet": "This is a quantization of huihui-ai/Huihui-Qwen3.8-27B-abliterated, not a new fine-tune. The underlying model is Qwen3.8-27B; the refusal ablation comes from Huihui; the quantization work here follows the GSQ/RCO methodology developed by ISTA-DASLab. The checkpoint is designed to substantially reduce learned refusal behavior. This is not a guarantee of universal compliance — the deployer is ..."
+    },
+    {
+      "title": "Guide de voyage de Hong Kong 2026 : panorama urbain, cuisine de …",
+      "url": "https://www.thechinajourney.com/fr/guide-de-voyage-a-hong-kong/",
+      "snippet": "May 5, 2026 · Découvrez la silhouette emblématique de Hong Kong, sa cuisine de rue, ses boutiques et ses ruelles cachées dans ce …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Voyage Hong Kong - Partir en vacances à Hong Kong - Routard.com",
+      "url": "https://www.routard.com/fr/guide/asie/chine/hong-kong",
+      "snippet": "Aug 18, 2020 · Préparez votre voyage à Hong Kong : incontournables et itinéraires, infos culturelles et pratiques, idées voyage, …"
+    }
+  ]
+}

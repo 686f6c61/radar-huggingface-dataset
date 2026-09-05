@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sonder0731/data-refiner-models",
+  "slug": "sonder0731-data-refiner-models",
+  "author": "sonder0731",
+  "url": "https://huggingface.co/sonder0731/data-refiner-models",
+  "created_at": "2026-09-05T12:09:50.000Z",
+  "updated_at": "2026-09-05T12:56:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121174803,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zaloguj się do Facebooka",
+      "url": "https://www.facebook.com/p/MpComp-100067657416512/%3Flocale%3Dpl_PL/",
+      "snippet": "Zaloguj się do Facebooka Adres e-mail lub numer telefonu komórkowego Hasło Zaloguj się"
+    },
+    {
+      "title": "Sonder0731 (sonder) · GitHub",
+      "url": "https://github.com/Sonder0731/",
+      "snippet": "A curated collection of fun and creative examples generated with Nano Banana🍌, Gemini-2.5-flash-image based model. We also release Nano-consistent-150K openly to support the community's development…"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/?lang=pl_pl",
+      "snippet": "Forgot password? More languages…"
+    },
+    {
+      "title": "refiner AI Models | Civitai",
+      "url": "https://civitai.com/tag/refiner",
+      "snippet": "Browse 41 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with refiner."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Forgot password? More languages…"
+    }
+  ]
+}

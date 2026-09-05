@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Rudraneel93/mastyf-guard-1.5b-v2-boundary-sharpened",
+  "slug": "rudraneel93-mastyf-guard-1-5b-v2-boundary-sharpened",
+  "author": "Rudraneel93",
+  "url": "https://huggingface.co/Rudraneel93/mastyf-guard-1.5b-v2-boundary-sharpened",
+  "created_at": "2026-09-05T11:00:11.000Z",
+  "updated_at": "2026-09-05T11:14:35.000Z",
+  "license": "mastyf-developer-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "security",
+    "agent-security",
+    "agent-defense",
+    "mcp",
+    "model-context-protocol",
+    "prompt-injection",
+    "indirect-prompt-injection",
+    "tool-calling",
+    "capability-based-access-control",
+    "relational-invariants",
+    "boundary-sharpening",
+    "guardrails",
+    "llm-security",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100203755,
+  "storage_human": "100 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Achat et vente en ligne parmi des millions de produits en stock. Livraison gratuite à partir de 25€. Vos articles à petits prix : culture, …"
+    },
+    {
+      "title": "Rudraneel93/mastyf-guard-1.5b · Hugging Face",
+      "url": "https://huggingface.co/Rudraneel93/mastyf-guard-1.5b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Amazon.fr : Votre Compte",
+      "url": "https://www.amazon.fr/compte/s?k=votre+compte",
+      "snippet": "Amazon.fr: votre compte Amazon.fr Points de retrait Amazon Hub Ventes Flash Outlet Coupons Meilleures ventes Amazon Seconde …"
+    },
+    {
+      "title": "anonymous - Research Square",
+      "url": "https://www.researchsquare.com/article/rs-10868139/v1.pdf?c=1788347111000",
+      "snippet": "Mastyf Guard 1.5B: Cognitive Harvard Architectures for Sub-Millisecond AI Agent Perimeter Defense and Capability-Based Access Control. Research Square Comprehensive Monograph, doi: 10.21203/rs.3.rs-mastyf.2026.01, 7 pages."
+    },
+    {
+      "title": "Amazon.fr : Amazon Prime",
+      "url": "https://www.amazon.fr/amazonprime",
+      "snippet": "Amazon Photos Stockage gratuit et illimité de vos photos avec Amazon Photos Prime Day Prime Day est un événement shopping …"
+    }
+  ]
+}

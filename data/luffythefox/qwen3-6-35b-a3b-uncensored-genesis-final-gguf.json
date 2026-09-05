@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF",
+  "slug": "luffythefox-qwen3-6-35b-a3b-uncensored-genesis-final-gguf",
+  "author": "LuffyTheFox",
+  "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF",
+  "created_at": "2026-09-01T07:32:13.000Z",
+  "updated_at": "2026-09-05T12:14:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "genesis",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 61945761152,
+  "storage_human": "61.9 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Bataille de Gaulle : L'Âge de fer — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/La_Bataille_de_Gaulle_:_L%27%C3%82ge_de_fer",
+      "snippet": "La page a été rendue avec Parsoid. Droit d'auteur : les textes sont disponibles sous licence Creative Commons attribution, partage …"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF/discussions",
+      "snippet": "New V7 update for model now available. This is final release for Genesis project for Qwen3.6-35B-A3B. ... Some people asked me about heretic versions of Genesis. My decision. ... HermesBench Results ... Hermes3.6-35B-A3B Genesis V7 - practical Hermes Agent test ... Incredible Benchmark Results on Laptop Hardware (RTX 5060 8GB / Ryzen 9) - 40+ tk/s!"
+    },
+    {
+      "title": "La Bataille de Gaulle - partie 1 : L'Âge de Fer - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=294280.html",
+      "snippet": "Jun 3, 2026 · La Bataille de Gaulle - partie 1 : L'Âge de Fer est un film réalisé par Antonin Baudry avec Simon Abkarian, Simon …"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF/discussions/31",
+      "snippet": "A few words about doing Genesis for other big models? Kimi K3, Qwen3.8-Max, DeepSeek Flash etc."
+    },
+    {
+      "title": "La Bataille De Gaulle - Partie 1 : L'âge de fer - Film (2026)",
+      "url": "https://www.senscritique.com/film/la_bataille_de_gaulle_partie_1_l_age_de_fer/71656739",
+      "snippet": "Jun 3, 2026 · La Bataille De Gaulle - Partie 1 : L'âge de fer est un film de Antonin Baudry (Abel Lanzac). Synopsis · Juin 1940. La …"
+    }
+  ]
+}

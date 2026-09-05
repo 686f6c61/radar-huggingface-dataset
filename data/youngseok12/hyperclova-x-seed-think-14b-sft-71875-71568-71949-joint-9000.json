@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71875-71568-71949-joint-9000",
+  "slug": "youngseok12-hyperclova-x-seed-think-14b-sft-71875-71568-71949-joint-9000",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71875-71568-71949-joint-9000",
+  "created_at": "2026-09-05T11:08:59.000Z",
+  "updated_at": "2026-09-05T11:13:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hyperclovax",
+    "text-generation",
+    "korean",
+    "sft",
+    "aihub",
+    "lora-merge",
+    "conversational",
+    "custom_code",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "base_model:finetune:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14748112896,
+  "parameters_human": "14.75B",
+  "storage_bytes": 29496274168,
+  "storage_human": "29.5 GB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875",
+      "snippet": "The full HyperCLOVA X SEED 14B Think Model License Agreement is included in LICENSE, and the required NAVER attribution is in NOTICE. Redistribution must comply with that agreement, including its prohibited-use policy and attribution requirements."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "youngseok12/HCX-SEED-Think-14B-specialist-r1-ta_avg · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/HCX-SEED-Think-14B-specialist-r1-ta_avg",
+      "snippet": "Instructions to use youngseok12/HCX-SEED-Think-14B-specialist-r1-ta_avg with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    }
+  ]
+}

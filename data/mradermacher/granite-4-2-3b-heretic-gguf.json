@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "mradermacher/granite-4.2-3b-Heretic-GGUF",
+  "slug": "mradermacher-granite-4-2-3b-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/granite-4.2-3b-Heretic-GGUF",
+  "created_at": "2026-09-05T15:10:16.000Z",
+  "updated_at": "2026-09-05T15:43:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "ja",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ibm-granite",
+    "granite",
+    "causal-lm",
+    "text-generation",
+    "heretic",
+    "representation-editing",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "ja",
+    "ko",
+    "zh",
+    "base_model:tinyopsec/granite-4.2-3b-Heretic",
+    "base_model:quantized:tinyopsec/granite-4.2-3b-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 32768310400,
+  "storage_human": "32.8 GB",
+  "base_model": "tinyopsec/granite-4.2-3b-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "mradermacher/granite-4.2-3b-heretic-abliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/granite-4.2-3b-heretic-abliterated-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/granite-4.2-3b-heretic-abliterated-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "mradermacher/granite-4.2-3b-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/granite-4.2-3b-GGUF/tree/main",
+      "snippet": "Instructions to use mradermacher/granite-4.2-3b-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Google",
+      "snippet": "Google is a multinational technology company specializing in Internet-related services and products, including search engines, online …"
+    }
+  ]
+}

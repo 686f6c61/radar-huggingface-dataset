@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Morphy-360M-GGUF",
+  "slug": "mradermacher-morphy-360m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Morphy-360M-GGUF",
+  "created_at": "2026-09-05T13:37:18.000Z",
+  "updated_at": "2026-09-05T13:44:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "email-assistant",
+    "morphy",
+    "moolvylabs",
+    "en",
+    "base_model:moolvylabs/Morphy-360M",
+    "base_model:quantized:moolvylabs/Morphy-360M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361822080,
+  "parameters_human": "361.8M",
+  "storage_bytes": 3729526784,
+  "storage_human": "3.7 GB",
+  "base_model": "moolvylabs/Morphy-360M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fenêtre aide et support qui s'ouvre seule [Résolu] - Windows 7",
+      "url": "https://forums.commentcamarche.net/forum/affich-19363587-fenetre-aide-et-support-qui-s-ouvre-seule",
+      "snippet": "En effet, lorsque j'allume mon PC, une fenêtre \"aide et support windows\" s'ouvre toute seule et lorsque je la ferme elle se ré-ouvre …"
+    },
+    {
+      "title": "mradermacher/Sophira-360M-base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Sophira-360M-base-GGUF",
+      "snippet": "mradermacher / Sophira-360M-base-GGUF like 0 Text Generation Transformers GGUF Italian italian causal-lm llama sophira License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "mradermacher/SmolLM2-360M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SmolLM2-360M-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "TechNet",
+      "url": "https://www.social.technet.microsoft.com/",
+      "snippet": ""
+    }
+  ]
+}

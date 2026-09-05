@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-nutv2-4cam-chunk30",
+  "slug": "kaz55-act-nutv2-4cam-chunk30",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-nutv2-4cam-chunk30",
+  "created_at": "2026-09-05T13:01:08.000Z",
+  "updated_at": "2026-09-05T13:01:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Kaz55/dg5f_ur5e_nutv2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51637914,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206591808,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=189fb8d07f616e222815af1b7eeb6ff5",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Kaz55/act-newcable-combined-4cam-chunk30 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-newcable-combined-4cam-chunk30",
+      "snippet": "Instructions to use Kaz55/act-newcable-combined-4cam-chunk30 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Kaz55/act-newcable-combined-4cam-chunk30 with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "Kaz55 (Kazutaka) - Hugging Face",
+      "url": "https://huggingface.co/Kaz55",
+      "snippet": "Kaz55/act_cablesort_ebata_chunk_size_53 Robotics • 51.7M•Updated 10 days ago• 37 • 1"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Guru-Raja-124/ppo-Pyramid",
+  "slug": "guru-raja-124-ppo-pyramid",
+  "author": "Guru-Raja-124",
+  "url": "https://huggingface.co/Guru-Raja-124/ppo-Pyramid",
+  "created_at": "2026-09-05T16:00:22.000Z",
+  "updated_at": "2026-09-05T16:00:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28890735,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guru.com - Find and Hire Expert Freelancers",
+      "url": "https://www.guru.com/",
+      "snippet": "On Guru, businesses and expert freelancers from around the globe connect, collaborate, and get work done on a flexible and secure …"
+    },
+    {
+      "title": "Guru-Raja-124/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/Guru-Raja-124/ppo-LunarLander-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Les meilleurs restaurants 2026 proche de moi - Restaurant Guru",
+      "url": "https://fr.restaurantguru.com/",
+      "snippet": "Écrivez ou dites ce que vous cherchez — nous trouverons les meilleurs restaurants pour vous ! Trouver des lieux App StoreGoogle …"
+    },
+    {
+      "title": "GuruRaja124 · GitHub",
+      "url": "https://github.com/GuruRaja124",
+      "snippet": "Follow Joined Jan 2, 2026 Block or Report Block or report GuruRaja124 Block user"
+    },
+    {
+      "title": "Stop running your business on confidently - get Guru",
+      "url": "https://www.getguru.com/fr",
+      "snippet": "Guru transforms scattered knowledge into a structured, governed, continuously improving source of truth—and delivers it to every …"
+    }
+  ]
+}

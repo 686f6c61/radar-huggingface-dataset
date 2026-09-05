@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dinyy9911/sd-class-butterflies-32",
+  "slug": "dinyy9911-sd-class-butterflies-32",
+  "author": "dinyy9911",
+  "url": "https://huggingface.co/dinyy9911/sd-class-butterflies-32",
+  "created_at": "2026-09-05T12:28:30.000Z",
+  "updated_at": "2026-09-05T12:28:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mon ENT Occitanie - COLLEGE JOFFRE",
+      "url": "https://college-joffre-montpellier.mon-ent-occitanie.fr/",
+      "snippet": "e-sidoc Webradio Contact et plan d'accès Collège Joffre All. Henri II de Montmorency, 34000 Montpellier Mail : ce.0341421K@ac …"
+    },
+    {
+      "title": "mindbytes/sd-class-butterflies-32 · Hugging Face",
+      "url": "https://huggingface.co/mindbytes/sd-class-butterflies-32",
+      "snippet": "Model Card for Unit 1 of the Diffusion Models Class 🧨 This model is a diffusion model for unconditional image generation of cute 64x64 🦋."
+    },
+    {
+      "title": "COLLEGE JOFFRE",
+      "url": "https://college-joffre-montpellier.mon-ent-occitanie.fr/?rubrique56",
+      "snippet": "voici une sélection de tutoriels sur l'utilisation des différents outils de l'ENT."
+    },
+    {
+      "title": "min99ian/sd-class-butterflies-32 · Hugging Face",
+      "url": "https://huggingface.co/min99ian/sd-class-butterflies-32",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mon ENT Occitanie - COLLEGE JOFFRE",
+      "url": "https://joffre-rivesaltes.mon-ent-occitanie.fr/",
+      "snippet": "Hier à BEZIERS, Leïla, Lucy, Mya et Léonie sélectionnées pour le championnat académique ont fièrement représenté le collège. …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "1ys1/areumii-smolvla-real-pickplace-v2-green-minitest",
+  "slug": "1ys1-areumii-smolvla-real-pickplace-v2-green-minitest",
+  "author": "1ys1",
+  "url": "https://huggingface.co/1ys1/areumii-smolvla-real-pickplace-v2-green-minitest",
+  "created_at": "2026-09-05T13:04:46.000Z",
+  "updated_at": "2026-09-05T13:05:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:1ys1/areumii-real-pickplace-v2-green",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721976,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=1da3bcc7a9066b053271ab0ca8966ad2",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "1ys1/areumii-smolvla-real-pickplace-v1-baseline · Hugging Face",
+      "url": "https://huggingface.co/1ys1/areumii-smolvla-real-pickplace-v1-baseline",
+      "snippet": "Instructions to use 1ys1/areumii-smolvla-real-pickplace-v1-baseline with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "1ys1/areumii-smolvla-pickplace-v4 · Hugging Face",
+      "url": "https://huggingface.co/1ys1/areumii-smolvla-pickplace-v4",
+      "snippet": "Instructions to use 1ys1/areumii-smolvla-pickplace-v4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use 1ys1/areumii-smolvla-pickplace-v4 with LeRobot:"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

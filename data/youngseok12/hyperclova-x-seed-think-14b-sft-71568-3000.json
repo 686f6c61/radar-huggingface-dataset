@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71568-3000",
+  "slug": "youngseok12-hyperclova-x-seed-think-14b-sft-71568-3000",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71568-3000",
+  "created_at": "2026-09-05T11:04:04.000Z",
+  "updated_at": "2026-09-05T11:08:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hyperclovax",
+    "text-generation",
+    "korean",
+    "sft",
+    "aihub",
+    "lora-merge",
+    "conversational",
+    "custom_code",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "base_model:finetune:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14748112896,
+  "parameters_human": "14.75B",
+  "storage_bytes": 29496274168,
+  "storage_human": "29.5 GB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875",
+      "snippet": "The full HyperCLOVA X SEED 14B Think Model License Agreement is included in LICENSE, and the required NAVER attribution is in NOTICE. Redistribution must comply with that agreement, including its prohibited-use policy and attribution requirements."
+    },
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875 - friendli.ai",
+      "url": "https://friendli.ai/models/youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875",
+      "snippet": "Deploy HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "DVD-Forum.at: Das Online-Magazin für Cineasten und Gamer",
+      "url": "https://www.dvd-forum.at/",
+      "snippet": "5 days ago · Entdecke die Welt des Films und der Games mit DVD-Forum.at - dem ultimativen Online-Magazin für Cineasten und …"
+    }
+  ]
+}

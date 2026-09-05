@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Vedhamshk/ppo-LunarLander-v3",
+  "slug": "vedhamshk-ppo-lunarlander-v3",
+  "author": "Vedhamshk",
+  "url": "https://huggingface.co/Vedhamshk/ppo-LunarLander-v3",
+  "created_at": "2026-09-05T10:49:24.000Z",
+  "updated_at": "2026-09-05T10:53:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 434585,
+  "storage_human": "434585 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AL-NABAA | Iraq's #1 Online Store for Computers, Laptops",
+      "url": "https://store.alnabaa.com/",
+      "snippet": "Discover Iraq's most trusted online store for genuine Computers, Laptops, Networking Equipment, Security & Surveillance Solutions, …"
+    },
+    {
+      "title": "official-ak/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/official-ak/ppo-LunarLander-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "النبع | المتجر الإلكتروني رقم 1 في العراق للكمبيوترات واللابتوبات ...",
+      "url": "https://store.alnabaa.com/ar",
+      "snippet": "اتصل بنا 6543 تواصل معنا store@alnabaa.com منذ عام 1989 تسوّق عبر الإنترنت من وجهة الإلكترونيات الموثوقة في العراق، مع توصيل متاح إلى جميع المحافظات العراقية. تواصل معنا"
+    },
+    {
+      "title": "titan-3646/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/titan-3646/ppo-LunarLander-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "النبع للحاسبات - alnabaa-iq.com",
+      "url": "https://alnabaa-iq.com/shop",
+      "snippet": "المتجر عرض 1 - 71 من 846 عنصر"
+    }
+  ]
+}

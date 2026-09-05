@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ftrproger/KazTok-BPE-100k-v5",
+  "slug": "ftrproger-kaztok-bpe-100k-v5",
+  "author": "ftrproger",
+  "url": "https://huggingface.co/ftrproger/KazTok-BPE-100k-v5",
+  "created_at": "2026-09-05T15:39:49.000Z",
+  "updated_at": "2026-09-05T16:07:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [
+    "kk",
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "tokenizers",
+    "tokenizer",
+    "tokenization",
+    "kazakh",
+    "nlp",
+    "bpe",
+    "bytelevel",
+    "kk",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11253767,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza bestellen mit Lieferservice: Pizzeria in der Nähe | Lieferando",
+      "url": "https://www.lieferando.at/lieferdienst/in-der-naehe/pizza",
+      "snippet": "Bestelle deine Pizza bei einer Pizzeria in der Nähe und lass sie dir bequem nach Hause liefern. Der Lieferservice von Lieferando.at …"
+    },
+    {
+      "title": "ftrproger (Nuraly Zhanbyrbay) - Hugging Face",
+      "url": "https://huggingface.co/ftrproger",
+      "snippet": "LLMs, Diffusion Models, Computer Vision, Natural Language Processing (NLP), AI Ethics, Generative AI."
+    },
+    {
+      "title": "Alle Pizzerien in der Nähe finden | Telefon | Adressen",
+      "url": "https://www.11880.com/suche/pizzeria",
+      "snippet": "Wenn Sie eine Pizzeria in Ihrer Nähe suchen, können Sie verschiedene Wege nutzen. Auf unserem Portal haben Sie die Möglichkeit, …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Pizza in meiner Nähe - Restaurant Guru",
+      "url": "https://de.restaurantguru.com/pizza-near-me",
+      "snippet": "Entdecten Sie Pizza in Ihrer Nähe. Finden Sie Lokale in der Nähe wo man Pizza kosten kann. Lesen Sie die Speisekarten sowie …"
+    }
+  ]
+}

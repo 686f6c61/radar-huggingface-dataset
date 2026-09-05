@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "florianvoss/Qwen3.5-4B-INT8-Modalix",
+  "slug": "florianvoss-qwen3-5-4b-int8-modalix",
+  "author": "florianvoss",
+  "url": "https://huggingface.co/florianvoss/Qwen3.5-4B-INT8-Modalix",
+  "created_at": "2026-09-05T17:47:59.000Z",
+  "updated_at": "2026-09-05T17:49:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llima",
+    "sima-ai",
+    "modalix",
+    "compiled",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10435653758,
+  "storage_human": "10.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watch Free Movies & TV Shows Online - Popcornflix",
+      "url": "https://popcornflix.com/categories/movies",
+      "snippet": "Watch movies for FREE on Popcornflix. Popcornflix offers more than 10,000+ full movies and shows in genres like Action, Horror, Sci …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Instructions to use Qwen/Qwen3.5-4B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Best 123movies Alternatives That Actually Work in 2026",
+      "url": "https://www.digitalcitizen.life/best-123movies-alternatives-that-actually-work-in-2026/",
+      "snippet": "Jan 26, 2026 · 123movies shut down years ago after drawing tens of millions of monthly users and intense legal pressure from …"
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Watch Movies and TV Shows Free Online - Plex",
+      "url": "https://watch.plex.tv/en-GB",
+      "snippet": "Plex has free movies and TV shows available with no sign up required."
+    }
+  ]
+}

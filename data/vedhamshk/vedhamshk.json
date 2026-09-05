@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Vedhamshk/Vedhamshk",
+  "slug": "vedhamshk-vedhamshk",
+  "author": "Vedhamshk",
+  "url": "https://huggingface.co/Vedhamshk/Vedhamshk",
+  "created_at": "2026-09-05T11:04:39.000Z",
+  "updated_at": "2026-09-05T11:04:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150580,
+  "storage_human": "150580 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+      "url": "https://labs.google/fx/tools/flow",
+      "snippet": "Google Flow is for anyone looking to explore visual ideas and turn those ideas into reality. From films, to music videos, to concepting …"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Google Labs: Google's home for AI experiments",
+      "url": "http://labs.google/",
+      "snippet": "Stay up to date with the latest Google AI experiments, innovative tools, and technology. Explore the future of AI responsibly with …"
+    },
+    {
+      "title": "AI Art Generator: Free AI Image, Video & Audio Generator",
+      "url": "https://openart.ai/",
+      "snippet": "Create AI art, images, videos and music online for free. 100+ models from Google, OpenAI, Seedance & more. — all in one place. Trusted by 8M+ creators. Start in seconds."
+    },
+    {
+      "title": "Google Flow + Veo 3 Guide 2026: How to Access, Prompts & Tips",
+      "url": "https://www.veo3ai.io/blog/google-flow-veo-3-guide-2026",
+      "snippet": "Unlike traditional video editors that require manual timeline manipulation, Google Flow uses natural language prompts, generative AI, …"
+    }
+  ]
+}

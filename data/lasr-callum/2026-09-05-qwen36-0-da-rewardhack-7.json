@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LASR-Callum/2026-09-05-qwen36-0-da-rewardhack-7",
+  "slug": "lasr-callum-2026-09-05-qwen36-0-da-rewardhack-7",
+  "author": "LASR-Callum",
+  "url": "https://huggingface.co/LASR-Callum/2026-09-05-qwen36-0-da-rewardhack-7",
+  "created_at": "2026-09-05T18:08:34.000Z",
+  "updated_at": "2026-09-05T18:08:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NLIGHT Cours Action LASR, Cotation Bourse NASDAQ - Boursorama",
+      "url": "https://www.boursorama.com/cours/LASR/",
+      "snippet": "NLIGHT Cours Action LASR, Cotation Bourse NASDAQ - Boursorama. Aller au contenu principal Contraste renforcé …"
+    },
+    {
+      "title": "LASR-Callum/2026-09-05-odcv-qwen36-0-da-ablated-7 - Hugging Face",
+      "url": "https://huggingface.co/datasets/LASR-Callum/2026-09-05-odcv-qwen36-0-da-ablated-7",
+      "snippet": "Tags: eval-run eval:odcv model:qwen36_0_da_ablated_7 mode:think Dataset cardFilesFiles and versions xet"
+    },
+    {
+      "title": "L'Assurance retraite – La retraite de la Sécurité sociale",
+      "url": "https://www.lassuranceretraite.fr/portail-info/home.html",
+      "snippet": "Site internet officiel de l'Assurance retraite – Informations sur la retraite et l'action sociale et les démarches en ligne."
+    },
+    {
+      "title": "LASR-Callum/qwen3.6-27b-lora-1000ex-da250-t1t3-rest750 · Hugging Face",
+      "url": "https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-1000ex-da250-t1t3-rest750",
+      "snippet": "Instructions to use LASR-Callum/qwen3.6-27b-lora-1000ex-da250-t1t3-rest750 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "nLIGHT, Inc. (LASR) Stock Price, News, Quote & History - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/LASR/",
+      "snippet": "nLIGHT, Inc. (LASR) Stock Price, News, Quote & History - Yahoo Finance. Oops, something went wrong. Skip to navigation Skip to …"
+    }
+  ]
+}

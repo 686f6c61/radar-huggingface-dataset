@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "EverVissionAI/jansaathi-legal-intent",
+  "slug": "evervissionai-jansaathi-legal-intent",
+  "author": "EverVissionAI",
+  "url": "https://huggingface.co/EverVissionAI/jansaathi-legal-intent",
+  "created_at": "2026-09-05T15:05:29.000Z",
+  "updated_at": "2026-09-05T17:29:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "legal",
+    "inlegalbert",
+    "jansaathi",
+    "en",
+    "hi",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109489930,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437988112,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Niespodzianka - Tube Pleasure",
+      "url": "https://tubepleasure.com/pl/3158/surprise/",
+      "snippet": "Ponad rok temu 22:12 AbXxx niespodzianka, pulchne, stare i młode (18+), tatuaż Creampie deep in BBW hairy pussy - he was about …"
+    },
+    {
+      "title": "GitHub - HimanshuArora-pixel/Jansathi-AI",
+      "url": "https://github.com/HimanshuArora-pixel/Jansathi-AI",
+      "snippet": "🔬 Core Technical Innovations & Deep-Dive 1. Fine-Tuned InLegalBERT Intent Classification Engine Rather than relying on expensive, high-latency frontier LLM calls for classification, JanSaathi uses a dedicated, locally fine-tuned law-ai/InLegalBERT transformer model (trained on Supreme Court and High Court legal corpora)."
+    },
+    {
+      "title": "Niespodzianka, Monstrum, Bbc, Naturalne, Wielki Kutasi wiele więcej ...",
+      "url": "https://porn24.tv/pl/3158/surprise/1.html",
+      "snippet": "Latin stepmom surprises me while eyeing a movie! - SPANISH pornography. HDSex. 06:50."
+    },
+    {
+      "title": "Jansathi-AI/backend at main · HimanshuArora-pixel/Jansathi-AI",
+      "url": "https://github.com/HimanshuArora-pixel/Jansathi-AI/tree/main/backend",
+      "snippet": "README.md Outline JanSaathi Backend & AI Engine 🇮🇳 The core intelligence and multi-agent backend powering JanSaathi. This service exposes asynchronous REST APIs, orchestrates the LangGraph state machine, hosts the fine-tuned InLegalBERTSmall Language Model (SLM), and executes the 4-stage Hybrid RAG retrieval pipeline."
+    },
+    {
+      "title": "Niespodzianka - XXX Porno Filmy @ TheXXX.TV",
+      "url": "https://thexxx.tv/pl/videos/niespodzianka",
+      "snippet": "Jackie zaskakuje Cię, gdy pokazuje swoje cycki - Jackie Marie3 lata temu. ManySex, nastolatki (18+), analne, BDSM, 18, prysznic, …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hipfire-models/qwen3.8-27b-escha",
+  "slug": "hipfire-models-qwen3-8-27b-escha",
+  "author": "hipfire-models",
+  "url": "https://huggingface.co/hipfire-models/qwen3.8-27b-escha",
+  "created_at": "2026-09-04T08:37:47.000Z",
+  "updated_at": "2026-09-05T14:14:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "hipfire",
+  "languages": [],
+  "tags": [
+    "hipfire",
+    "hfq",
+    "escha",
+    "escha-w2",
+    "qwen3.8",
+    "dense",
+    "rocm",
+    "gfx1151",
+    "base_model:EschaLabs/Qwen3.8-27B-Escha-W2",
+    "base_model:quantized:EschaLabs/Qwen3.8-27B-Escha-W2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32386361344,
+  "storage_human": "32.4 GB",
+  "base_model": "EschaLabs/Qwen3.8-27B-Escha-W2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "25 Experimentos para Feria de Ciencias: Fáciles y Caseros",
+      "url": "https://stemintegrado.com/ideas-para-feria-de-ciencias-25-proyectos-caseros-y-faciles/",
+      "snippet": "25 experimentos para feria de ciencias, fáciles de química, física y biología. Proyectos para primaria y secundaria, listos para ganar."
+    },
+    {
+      "title": "hipfire-models/qwen3.8-27b-escha · Hugging Face",
+      "url": "https://huggingface.co/hipfire-models/qwen3.8-27b-escha",
+      "snippet": "Qwen3.8-27B-Escha-W2 — hipfire builds EschaLabs' Escha-W22-bit trellis quantization of Qwen3.8-27B, packaged for hipfireon AMD RDNA3/RDNA4. The trellis codes are stored verbatim and decoded inside the GEMV— there is no decode-at-load step and no re-quantisation of the coded projections. All three builds below contain byte-identical coded weights; they differ only in how the densetensors ..."
+    },
+    {
+      "title": "12 proyectos ganadores de la Feria de Ciencias de Secundaria",
+      "url": "https://admissionsight.com/es/12-proyectos-ganadores-de-la-feria-de-ciencias-de-secundaria/",
+      "snippet": "Lee nuestra lista de proyectos ganadores de ferias de ciencias para secundaria para inspirarte y encontrar el que más te interese e …"
+    },
+    {
+      "title": "hipfire-models/qwen3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/hipfire-models/qwen3.8-27b",
+      "snippet": "The release artifact was validated on gfx1100 and gfx1201 through hipfire's native matrix benchmark and OpenAI-compatible serve path. Qwen3.8 stayed within 0.57% of Qwen3.6-27B across the tested prefill and decode matrix, and completed an eight-turn sampled coding/retrieval session with reasoning_effort=xhigh without empty output, runaway ..."
+    },
+    {
+      "title": "5 proyectos de feria de ciencias fáciles y creativos |Aprender Creando",
+      "url": "https://aprendercreando.com.pe/2026/04/17/5-proyectos-de-feria-de-ciencias-faciles-y-creativos-para-estudiantes/",
+      "snippet": "Apr 17, 2026 · En este artículo descubrirás 5 proyectos de feria de ciencias fáciles y creativos, ideales para estudiantes, además de …"
+    }
+  ]
+}

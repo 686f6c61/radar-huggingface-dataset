@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch6",
+  "slug": "lanni-ni-dynamic_alibi_4_6_384_babylm_100m_seed44_epoch6",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch6",
+  "created_at": "2026-09-05T17:54:23.000Z",
+  "updated_at": "2026-09-05T17:55:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hoe noem je 3 mensen in een relatie? - babyhelp.nl",
+      "url": "https://www.babyhelp.nl/vraag-en-antwoord/hoe-noem-je-3-mensen-in-een-relatie",
+      "snippet": "De volgende begrippen zijn gebruikelijk binnen de polyamorie: Driehoek: een relatie van drie personen, die alle drie een relatie met …"
+    },
+    {
+      "title": "dynamic_alibi_4_6_384_babylm_100m_epoch6 - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hoe noem je het als 3 mensen een relatie hebben? - babyhelp.nl",
+      "url": "https://babyhelp.nl/vraag-en-antwoord/hoe-noem-je-het-als-3-mensen-een-relatie-hebben",
+      "snippet": "De volgende begrippen zijn gebruikelijk binnen de polyamorie: Driehoek: een relatie van drie personen, die alle drie een relatie met …"
+    },
+    {
+      "title": "dynamic_alibi_4_6_384_babylm_100m_epoch7 - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Polyamorie - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Polyamorie",
+      "snippet": "Polyamorie onderscheidt zich van polygamie doordat er geen sprake hoeft te zijn van een huwelijk zoals bij polygamie. …"
+    }
+  ]
+}

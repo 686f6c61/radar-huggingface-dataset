@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sakamakismile/Qwen3.8-27B-EXL3-6.5bpw",
+  "slug": "sakamakismile-qwen3-8-27b-exl3-6-5bpw",
+  "author": "sakamakismile",
+  "url": "https://huggingface.co/sakamakismile/Qwen3.8-27B-EXL3-6.5bpw",
+  "created_at": "2026-09-05T15:29:29.000Z",
+  "updated_at": "2026-09-05T15:38:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "exllamav3",
+    "lna-lab",
+    "ja",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12707664112,
+  "parameters_human": "12.71B",
+  "storage_bytes": 25428438392,
+  "storage_human": "25.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "23 Choses à Faire et Voir à Phukhet | Où dormir? | Voyage Thailande",
+      "url": "https://www.voyagetips.com/que-faire-a-phuket/",
+      "snippet": "Jul 5, 2026 · Que faire à Pukhet, en Thaïlande? Le guide ultime pour visiter Pukhet en 1, 2, 3, 5 jours ou même une semaine + Où …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Guide De Voyage Phuket | PHUKET 101",
+      "url": "https://fr.phuket101.net/",
+      "snippet": "Cette section du guide de voyage Phuket couvre tous les aspects et éléments dont vous avez besoin pour planifier votre première …"
+    },
+    {
+      "title": "sakamakismile/Qwen3.8-27B-MTP-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/sakamakismile/Qwen3.8-27B-MTP-NVFP4",
+      "snippet": "MTP draft head preserved in bf16 and wired into the index — speculative decoding works out of the box (method: qwen3_5_mtp). Vision tower, lm_head, DeltaNet conv1d, and the MTP head are kept in bf16; everything else is NVFP4 W4A4. Quantized GPU-resident: the full bf16 model dispatched across 8× RTX PRO 2000 Blackwell (16 GB) with device_map=auto — calibration itself took 68 seconds (32 ..."
+    },
+    {
+      "title": "Voyage à Phuket : quand partir, budget, où loger et que faire (guide …",
+      "url": "https://francais-en-thailande.com/phuket-que-faire-guide-complet-des-plages-temples-et-excursions-incontournables/",
+      "snippet": "Aug 19, 2025 · Que vous soyez amateur de farniente, passionné d’histoire ou avide d’adrénaline, Phuket que fairene sera jamais une …"
+    }
+  ]
+}

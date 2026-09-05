@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "danush99/Model_LiLT-SER-IT-SIN",
+  "slug": "danush99-model_lilt-ser-it-sin",
+  "author": "danush99",
+  "url": "https://huggingface.co/danush99/Model_LiLT-SER-IT-SIN",
+  "created_at": "2026-09-05T18:11:20.000Z",
+  "updated_at": "2026-09-05T18:14:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lilt",
+    "generated_from_trainer",
+    "dataset:xfun",
+    "base_model:kavg/LiLT-SER-IT",
+    "base_model:finetune:kavg/LiLT-SER-IT",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 283567815,
+  "parameters_human": "283.6M",
+  "storage_bytes": 1151407728,
+  "storage_human": "1.2 GB",
+  "base_model": "kavg/LiLT-SER-IT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Token Classification",
+      "dataset": "xfun",
+      "metric": "Precision",
+      "value": 0.7651331719128329
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "xfun",
+      "metric": "Recall",
+      "value": 0.7783251231527094
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "xfun",
+      "metric": "F1",
+      "value": 0.7716727716727716
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "xfun",
+      "metric": "Accuracy",
+      "value": 0.8705288259222892
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jeu de Dames en Ligne - Jouer Gratuitement - Playpager",
+      "url": "https://playpager.com/dames/",
+      "snippet": "Jouez au jeu de dames en ligne contre l'ordinateur ou avec un ami. Un jeu de société classique gratuit, sans téléchargement ni …"
+    },
+    {
+      "title": "danush99 (Hewagama) - Hugging Face",
+      "url": "https://huggingface.co/danush99",
+      "snippet": "Reading DS and Ai MSc at UOM. Recent Activity. updated a Space 2 days ago . danush99/Space_TrOCR-Sin-Printed-Text"
+    },
+    {
+      "title": "Dames Gratuit - Jouez en Ligne | JeuSol.fr",
+      "url": "https://www.jeusol.fr/dames",
+      "snippet": "Jouez aux dames, le jeu de plateau classique, avec 4 niveaux de difficulté et un ensemble de règles personnalisables."
+    },
+    {
+      "title": "kavg/LiLT-SER-IT-SIN · Hugging Face",
+      "url": "https://huggingface.co/kavg/LiLT-SER-IT-SIN",
+      "snippet": "This model is a fine-tuned version of kavg/LiLT-SER-IT on the xfun dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Dames Multijoueur : jouez aux Dames en ligne sur Jeux-Gratuits.com",
+      "url": "https://www.jeux-gratuits.com/jeu-dames-multijoueur.html",
+      "snippet": "Rappelons en quelques mots les règles de ce jeu de dames? Bloquer et dévorer les pions adverses seront les pièces maitresses de …"
+    }
+  ]
+}

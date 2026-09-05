@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/agentic-incident-response-20260905-model",
+  "slug": "rkb109-agentic-incident-response-20260905-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/agentic-incident-response-20260905-model",
+  "created_at": "2026-09-05T16:05:18.000Z",
+  "updated_at": "2026-09-05T16:05:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "llm-agents",
+    "text-classification",
+    "text-generation",
+    "summarization",
+    "question-answering",
+    "dataset:RKB109/agentic-incident-response-20260905-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0ce32f068eba601d0b3138cd8fe7611e",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "RKB109/agentic-incident-response-20260826-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/agentic-incident-response-20260826-model",
+      "snippet": "Agentic Incident Response Orchestrator Baseline Model Model Description This repository contains a small, transparent prototype model for Production teams need agentic automation without allowing an LLM-style planner to execute unsafe remediation. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "RKB109/agentic-incident-response-20260727-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/agentic-incident-response-20260727-model",
+      "snippet": "Agentic Incident Response Orchestrator Baseline Model Model Description This repository contains a small, transparent prototype model for Production teams need agentic automation without allowing an LLM-style planner to execute unsafe remediation. The model combines per-label token weights with IDF-weighted evidence retrieval. It was generated for reproducible architecture demonstrations and ..."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

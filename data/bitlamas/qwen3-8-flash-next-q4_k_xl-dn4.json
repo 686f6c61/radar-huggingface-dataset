@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bitlamas/Qwen3.8-Flash-Next-Q4_K_XL-DN4",
+  "slug": "bitlamas-qwen3-8-flash-next-q4_k_xl-dn4",
+  "author": "bitlamas",
+  "url": "https://huggingface.co/bitlamas/Qwen3.8-Flash-Next-Q4_K_XL-DN4",
+  "created_at": "2026-09-05T18:09:31.000Z",
+  "updated_at": "2026-09-05T18:23:37.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen4exp",
+    "strix-halo",
+    "unified-memory",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 102474187584,
+  "storage_human": "102.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B-parameter main model, supplemented by an additional 51BN-gram embeddings, with 6Bparameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "冬泉魂精问题在冬泉打出的魂精都有什么种类，每种的各_百度知道",
+      "url": "https://zhidao.baidu.com/question/1962238522413250700.html",
+      "snippet": "buff物品相关: 怪物掉落之XX魂精,可以交易 2.建议可以组队打,因为打到魂精时,每个人都可以检到一个(例如两个人打,会各捡到一颗,等 …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Instructions to use Qwen/Qwen3.8-Flash-Next with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Wikipedia 和 Wikia 哪个是维基百科；它们和维基解密有什么联系？",
+      "url": "https://www.zhihu.com/question/24790852",
+      "snippet": "Aug 9, 2014 · Wikipedia（维基百科），是由维基媒体基金会运营的非盈利在线百科全书计划，采用 wiki 软件架构（mediawiki），由 …"
+    }
+  ]
+}

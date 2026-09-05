@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ar-ghani/hf_food_not_food_classification",
+  "slug": "ar-ghani-hf_food_not_food_classification",
+  "author": "ar-ghani",
+  "url": "https://huggingface.co/ar-ghani/hf_food_not_food_classification",
+  "created_at": "2026-09-05T13:13:14.000Z",
+  "updated_at": "2026-09-05T13:13:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AR — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/AR",
+      "snippet": "Basculer la table des matières AR"
+    },
+    {
+      "title": "AnubhavKarki/hf-food-not-food-classification - GitHub",
+      "url": "https://github.com/AnubhavKarki/hf-food-not-food-classification",
+      "snippet": "A complete NLP text classification project that fine tunes DistilBERT to classify whether a sentence is about food or not food. This project covers the full workflow from dataset loading and preprocessing to model training, evaluation, Hugging Face Hub deployment, and a Gradio demo for interactive inference."
+    },
+    {
+      "title": "Augmented reality - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Augmented_reality",
+      "snippet": "This page was last edited on 24 August 2026, at 05:35 (UTC)."
+    },
+    {
+      "title": "Food Not Food Text Classifier - a Hugging Face Space by Alex1-ai",
+      "url": "https://huggingface.co/spaces/Alex1-ai/learn_hf_food_not_food_text_classifier_demo",
+      "snippet": "This app lets you enter any sentence and tells you whether it talks about food or something else. It returns the likelihood for each of the two categories, so you see how confident the system is. J..."
+    },
+    {
+      "title": "Google AR & VR | Home",
+      "url": "https://arvr.google.com/",
+      "snippet": "Augmented reality (AR) and Virtual Reality (VR) bridge the digital and physical worlds. They allow you to take in information and …"
+    }
+  ]
+}

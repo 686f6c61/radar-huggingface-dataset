@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devpotatopotato/qwen3-8b-sft-260901-acereason-bigmath",
+  "slug": "devpotatopotato-qwen3-8b-sft-260901-acereason-bigmath",
+  "author": "devpotatopotato",
+  "url": "https://huggingface.co/devpotatopotato/qwen3-8b-sft-260901-acereason-bigmath",
+  "created_at": "2026-09-05T12:13:48.000Z",
+  "updated_at": "2026-09-05T12:32:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cambiare dispositivo autorizzato con spid di poste italiane",
+      "url": "https://forum.italia.it/t/cambiare-dispositivo-autorizzato-con-spid-di-poste-italiane/10342",
+      "snippet": "Jun 28, 2019 · ciao a tutti, utilizzo un account spid di poste italiane per accedere ai vari enti accreditati. Ho acquistato un nuovo …"
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "SIOPE+ / Poste Italiane - PagoPA - Forum Italia",
+      "url": "https://forum.italia.it/t/siope-poste-italiane/2856",
+      "snippet": "Apr 3, 2018 · Poste Italiane si adeguerà a SIOPE+ ed in quest’ottica renderà disponibili agli enti gli ‘estratti conto’ in formato standard …"
+    },
+    {
+      "title": "devpotatopotato/qwen3-8b-sft-260827-acereason · Hugging Face",
+      "url": "https://huggingface.co/devpotatopotato/qwen3-8b-sft-260827-acereason",
+      "snippet": "Instructions to use devpotatopotato/qwen3-8b-sft-260827-acereason with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Non riconosce le credenziali di Poste ID - SPID - Forum Italia",
+      "url": "https://forum.italia.it/t/non-riconosce-le-credenziali-di-poste-id/19319",
+      "snippet": "Dec 11, 2020 · Fatto, ho disinstallato e reinstallato daccapo l’applicazione ma le credenziali di accesso tramite Spid di Poste-Id non …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Vedhamshk/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "vedhamshk-dqn-spaceinvadersnoframeskip-v4",
+  "author": "Vedhamshk",
+  "url": "https://huggingface.co/Vedhamshk/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-05T12:40:03.000Z",
+  "updated_at": "2026-09-05T12:43:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81731530,
+  "storage_human": "82 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Music Help",
+      "url": "https://support.google.com/youtubemusic/?hl=en",
+      "snippet": "Official YouTube Music Help Center where you can find tips and tutorials on using YouTube Music and other answers to frequently …"
+    },
+    {
+      "title": "Bear-ai/dqn-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/Bear-ai/dqn-SpaceInvadersNoFrameskip-v4",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "Cancel YouTube Premium or YouTube Music Premium",
+      "url": "https://support.google.com/youtubemusic/answer/6308278?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Cancel YouTube Premium or YouTube Music Premium You can cancel, pause, or resume your paid membership at any time as a …"
+    },
+    {
+      "title": "Training SpaceInvadersNoFrameskip with DQN | SERP AI",
+      "url": "https://www.serp.ai/posts/spaceinvadersnoframeskip/",
+      "snippet": "To evaluate the model's performance, users typically run the enjoyment script provided with the RL Zoo framework: python -m rl_zoo3.enjoy --algo dqn --env SpaceInvadersNoFrameskip-v4 -f logs/. This command executes the trained policy in the environment, allowing for direct observation of the agent's gameplay."
+    },
+    {
+      "title": "YTMusic下载的音乐文件位置? - 知乎",
+      "url": "https://www.zhihu.com/question/434849274",
+      "snippet": "YTMusic下载的音乐文件位置? 请问YT Music 下载的文件位置在哪里？ 我自己找到的Path: Disk / Android / data /com.google. …"
+    }
+  ]
+}

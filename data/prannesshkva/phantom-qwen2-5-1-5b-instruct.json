@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/Phantom-Qwen2.5-1.5B-Instruct",
+  "slug": "prannesshkva-phantom-qwen2-5-1-5b-instruct",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/Phantom-Qwen2.5-1.5B-Instruct",
+  "created_at": "2026-09-05T11:00:40.000Z",
+  "updated_at": "2026-09-05T12:41:40.000Z",
+  "license": "bsl-1.1",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "phantom_qwen",
+    "qwen",
+    "qwen2.5",
+    "phantom",
+    "state-space-model",
+    "high-throughput",
+    "low-vram",
+    "holographic-revival",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "arxiv:2412.15115",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467144,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nutrition and Food Safety - World Health Organization (WHO)",
+      "url": "https://www.who.int/teams/nutrition-and-food-safety/food-and-nutrition-actions-in-health-systems/ten-steps-to-successful-breastfeeding",
+      "snippet": "May 1, 2009 · The Department of Nutrition and Food Safety (NFS) aims to address the burden of unhealthy diets, malnutrition and …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Patient safety - World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/patient-safety",
+      "snippet": "Sep 11, 2023 · WHO fact sheet on patient safety, including key facts, common sources of patient harm, factors leading to patient …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hospitals - World Health Organization (WHO)",
+      "url": "https://www.who.int/health-topics/hospitals",
+      "snippet": "Dec 2, 2025 · Hospitals are also an essential part of health systemdevelopment. Currently, external pressures, health systems …"
+    }
+  ]
+}

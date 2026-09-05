@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task3-spiral-lora",
+  "slug": "bdatm-project-qwen-task3-spiral-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task3-spiral-lora",
+  "created_at": "2026-09-05T11:21:17.000Z",
+  "updated_at": "2026-09-05T11:21:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576429,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wirtualna Polska - Wszystko co ważne - www.wp.pl",
+      "url": "https://www.wp.pl/",
+      "snippet": "Wirtualna Polska dostarcza najnowsze informacje, rozrywkę i usługi w czasie rzeczywistym, będąc przewodnikiem Polaków w …"
+    },
+    {
+      "title": "bdatm-project/qwen-task1-spiral-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-spiral-lora",
+      "snippet": "Instructions to use bdatm-project/qwen-task1-spiral-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Poczta - Najlepsza Poczta, największe załączniki - WP",
+      "url": "https://poczta.wp.pl/w/mails?folder=classic.main",
+      "snippet": "Bezpieczna i darmowa poczta bez spamu. Duże załączniki, nielimitowana pojemność, aplikacja mobilna. Załóż konto i ciesz się …"
+    },
+    {
+      "title": "bdatm-project/qwen-task3-standard-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task3-standard-lora",
+      "snippet": "Instructions to use bdatm-project/qwen-task3-standard-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Żużel - Aktualne informacje",
+      "url": "https://sportowefakty.wp.pl/zuzel",
+      "snippet": "Żużel w WP SportoweFakty - nigdzie nie znajdziesz więcej informacji o speedway'u. Wszystkie wyniki, relacje live, statystyki, zdjęcia."
+    }
+  ]
+}

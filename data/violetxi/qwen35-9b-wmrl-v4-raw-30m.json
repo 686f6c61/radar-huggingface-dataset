@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/qwen35-9b-wmrl-v4-raw-30m",
+  "slug": "violetxi-qwen35-9b-wmrl-v4-raw-30m",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-raw-30m",
+  "created_at": "2026-09-05T15:12:27.000Z",
+  "updated_at": "2026-09-05T15:22:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "wm-internalization",
+    "v4",
+    "raw-30m",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19640037838,
+  "storage_human": "19.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Glasmalerei – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Glasmalerei",
+      "snippet": "Unter Glasmalerei versteht man in erster Linie die Herstellung farbiger Fenster mit bildlichen Darstellungen. Im Hochmittelalter …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-r0-30m · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-r0-30m",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-r0-30m wm-internalization v4 checkpoint — condition r0-30m, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool). Grafted back into the hub composite layout (Qwen3_5ForConditionalGeneration) — servable with vLLM out of the box."
+    },
+    {
+      "title": "Was versteht man unter Glasmalerei? • Artpreneure.de",
+      "url": "https://artpreneure.de/lexikon/glasmalerei/",
+      "snippet": "Erfahre alles über Glasmalerei: Geschichte, Techniken und Bedeutung. Entdecke die faszinierende Kunstform auf artpreneure.de!"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-c4-action · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c4-action",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-c4-action wm-internalization v4 checkpoint — condition c4-action, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool)."
+    },
+    {
+      "title": "Glas - Farbe - Licht → - historisches-museum-hellental.de",
+      "url": "https://historisches-museum-hellental.de/die-kunst-der-glasmalerei.html",
+      "snippet": "3 days ago · Beginnend mit den farbigen Fensterverschlüssen in Kirchen und Klöstern faszinieren seit dem Mittelalter wirkmächtige …"
+    }
+  ]
+}

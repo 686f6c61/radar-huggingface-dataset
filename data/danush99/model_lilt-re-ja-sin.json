@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "danush99/Model_LiLT-RE-JA-SIN",
+  "slug": "danush99-model_lilt-re-ja-sin",
+  "author": "danush99",
+  "url": "https://huggingface.co/danush99/Model_LiLT-RE-JA-SIN",
+  "created_at": "2026-09-05T18:05:29.000Z",
+  "updated_at": "2026-09-05T18:08:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lilt",
+    "generated_from_trainer",
+    "dataset:xfun",
+    "base_model:kavg/LiLT-RE-JA",
+    "base_model:finetune:kavg/LiLT-RE-JA",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 286812610,
+  "parameters_human": "286.8M",
+  "storage_bytes": 1164388084,
+  "storage_human": "1.2 GB",
+  "base_model": "kavg/LiLT-RE-JA",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Official Sky Help Forum | Sky Community",
+      "url": "https://helpforum.sky.com/",
+      "snippet": "Welcome to the Official Sky Help Community. Get the latest on all things Sky! Ask questions and engage with our community!"
+    },
+    {
+      "title": "danush99/Model_LiLT-RE-JA-SIN · Hugging Face",
+      "url": "https://huggingface.co/danush99/Model_LiLT-RE-JA-SIN",
+      "snippet": "This model is a fine-tuned version of kavg/LiLT-RE-JAon the xfun dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Sky Go Not Working On Windows 11 | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Go/Sky-Go-Not-Working-On-Windows-11/td-p/5067707",
+      "snippet": "Aug 24, 2025 · I’ve been trying to get Sky Go running on my Windows 11 laptop, but I keep running into two main problems: The …"
+    },
+    {
+      "title": "danush99 (Hewagama) - Hugging Face",
+      "url": "https://huggingface.co/danush99",
+      "snippet": "Reading DS and Ai MSc at UOM. Recent Activity. updated a Space 2 days ago . danush99/Space_TrOCR-Sin-Printed-Text"
+    },
+    {
+      "title": "Using Sky Go on Apple TV 4K away from home | AVForums",
+      "url": "https://www.avforums.com/threads/using-sky-go-on-apple-tv-4k-away-from-home.2503485/",
+      "snippet": "Jan 19, 2023 · Hi I am interested in anyone’s experience of using Sky Go on Apple TV 4K away from home (in the UK). I am aware …"
+    }
+  ]
+}

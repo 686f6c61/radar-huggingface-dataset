@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/Vanilla_DPO_beta_0_7",
+  "slug": "thehassansaud-vanilla_dpo_beta_0_7",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_7",
+  "created_at": "2026-09-05T16:00:16.000Z",
+  "updated_at": "2026-09-05T16:00:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 810702192,
+  "storage_human": "811 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一天吃透一个行业81：玻璃基板，附核心股票名单（收藏版）——AI芯片 …",
+      "url": "https://finance.sina.cn/2026-05-26/detail-inhzhawh1213985.d.html?vt=4",
+      "snippet": "May 26, 2026 · 玻璃基板，是以特种玻璃为核心材料的封装基板产品，主要用于替代传统有机基板和硅中介层，实现更高密度、更低功 …"
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud",
+      "snippet": "Deep Learning updated a model about 7 hours ago published a model about 7 hours ago"
+    },
+    {
+      "title": "玻璃基板+先进封装，10家核心龙头全梳理 前言：2026年半导体与电子赛道最大确定性，藏在这两条高景气主线里进入2026年下半年，A股 …",
+      "url": "https://xueqiu.com/9057196330/400223899",
+      "snippet": "Jul 15, 2026 · 从上游设备、耗材、基材，到中游封装基板、覆铜板，再到下游芯片封装、终端测试，全产业链盈利持续释放。 本文将 …"
+    },
+    {
+      "title": "TheHassanSaud (Hassan Saud) - Hugging Face",
+      "url": "https://huggingface.co/TheHassanSaud/datasets",
+      "snippet": "TheHassanSaud/gemma3_12B_dpo_newdata_full_checkpoints_updated_template published a model about 7 hours ago"
+    },
+    {
+      "title": "“玻璃基板+半导体”概念：最正宗的20家公司（附名单）当英特尔宣布 …",
+      "url": "https://caifuhao.eastmoney.com/news/20260722222749184424880",
+      "snippet": "Jul 22, 2026 · 当英特尔宣布其面向下一代先进封装的玻璃基板原型时，资本市场第一次大规模将“玻璃”与“芯片”深度绑定。 之前，玻璃 …"
+    }
+  ]
+}

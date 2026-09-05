@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MP4good/ML-Agents-SnowballTarget",
+  "slug": "mp4good-ml-agents-snowballtarget",
+  "author": "MP4good",
+  "url": "https://huggingface.co/MP4good/ML-Agents-SnowballTarget",
+  "created_at": "2026-09-05T18:02:10.000Z",
+  "updated_at": "2026-09-05T18:02:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25720062,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iniciar sesión en Gmail - Ordenador - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Para abrir Gmail, puedes iniciar sesión desde un ordenador o añadir tu cuenta a la aplicación Gmail en tu teléfono o tablet. Una vez …"
+    },
+    {
+      "title": "Winmodel/ML-Agents-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/Winmodel/ML-Agents-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "على جهاز الكمبيوتر، انتقِل إلى Gmail. أدخِل عنوان البريد الإلكتروني لحسابك على Google أو رقم الهاتف وكلمة المرور. إذا سبق أن عبأت المعلومات وقرّرت تسجيل الدخول إلى حساب مختلف، انقر على …"
+    },
+    {
+      "title": "universehugging/ML-Agents-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/universehugging/ML-Agents-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "googlemail的邮箱后缀是@gmail.com还是@googlemail.com_百度知道",
+      "url": "https://zhidao.baidu.com/question/52043485.html",
+      "snippet": "googlemail的邮箱后缀是@gmail.com还是@googlemail.comgooglemail的邮箱后缀是@gmail.com格式，googlemail 是Google提供的 …"
+    }
+  ]
+}

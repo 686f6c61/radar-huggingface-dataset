@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DogDreamson/picforlater-qwen3-vl-2b-onnx",
+  "slug": "dogdreamson-picforlater-qwen3-vl-2b-onnx",
+  "author": "DogDreamson",
+  "url": "https://huggingface.co/DogDreamson/picforlater-qwen3-vl-2b-onnx",
+  "created_at": "2026-07-24T13:07:22.000Z",
+  "updated_at": "2026-09-05T11:57:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "zh",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "qwen3-vl",
+    "vision-language",
+    "multimodal",
+    "quantized",
+    "int4",
+    "cpu",
+    "cuda",
+    "windows",
+    "image-text-to-text",
+    "zh",
+    "en",
+    "ja",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6225022911,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حرف الشين | تعليم الحروف العربية للأطفال | شَ شُ شِ - Learn Arabic ...",
+      "url": "https://www.youtube.com/watch?v=GxeITzZiB90",
+      "snippet": "Jun 8, 2025 · مرحباً يا أبطال اللغة العربية! 🌟في هذا الفيديو سنتعلم معاً حرف الشين (ش) من الحروف الهجائية بطريقة ممتعة ..."
+    },
+    {
+      "title": "DogDreamson/picforlater-qwen3-vl-2b-onnx · Hugging Face",
+      "url": "https://huggingface.co/DogDreamson/picforlater-qwen3-vl-2b-onnx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "تعليم حرف الشين للأطفال |حرف ش مع الأشكال والمدود والأمثلة والاختبار ...",
+      "url": "https://www.youtube.com/watch?v=e4UX0P8Mnrs",
+      "snippet": "Oct 15, 2025 · في هذا الفيديو الممتع يتعلم الأطفال حرف الشين (ش) بطريقة شيقة وتفاعلية 🎉 نتعرف على أشكال حرف الشين في أول ..."
+    },
+    {
+      "title": "DogDreamson (cds) - Hugging Face",
+      "url": "https://huggingface.co/DogDreamson",
+      "snippet": "models1 DogDreamson/picforlater-qwen3-vl-2b-onnx Image-Text-to-Text •Updated 11 days ago"
+    },
+    {
+      "title": "الحروف العربية للأطفال - حرف الشين \"ش\" | Arabic Alphabet for Kids ...",
+      "url": "https://www.facebook.com/YoucefTV.Kids/videos/%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D8%AD%D8%B1%D9%81-%D8%A7%D9%84%D8%B4%D9%8A%D9%86-%D8%B4-arabic-alphabet-for-kids-%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A7%D9%84%D8%AD%D8%B1%D9%83%D8%A7%D8%AA-%D9%84%D9%84%D8%A3%D8%B7%D9%81%D8%A7/374732558399657/",
+      "snippet": "Dec 28, 2023 · الحروف العربية للأطفال - حرف الشين \"ش\" | Arabic Alphabet for Kids - تعليم الحركات للأطفال في الحروف العربية (الفتحة, الضمة و الكسرة) - تعليم الحروف..."
+    }
+  ]
+}

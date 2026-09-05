@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "gustavobraga-byte/Pesquisai",
+  "slug": "gustavobraga-byte-pesquisai",
+  "author": "gustavobraga-byte",
+  "url": "https://huggingface.co/gustavobraga-byte/Pesquisai",
+  "created_at": "2026-09-04T12:12:53.000Z",
+  "updated_at": "2026-09-05T13:43:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez des …"
+    },
+    {
+      "title": "GitHub - gustavobraga-byte/PesquisAI: Agente de AI para pesquisadores",
+      "url": "https://github.com/gustavobraga-byte/PesquisAI",
+      "snippet": "Agente de AI para pesquisadores. Contribute to gustavobraga-byte/PesquisAI development by creating an account on GitHub."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/github/gustavobraga-byte/PesquisAI/",
+      "snippet": "Enter a GitHub URL or search by organization or user"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/r.php/",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests. …"
+    }
+  ]
+}

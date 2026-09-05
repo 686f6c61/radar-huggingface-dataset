@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch4",
+  "slug": "lanni-ni-dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch4",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_100m_seed44_epoch4",
+  "created_at": "2026-09-05T18:25:03.000Z",
+  "updated_at": "2026-09-05T18:26:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Derniers tirages Loto®, EuroMillions - My Million, Keno ... - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/resultats?msockid=250c2e3442f466723cd739ff435c6753",
+      "snippet": "Vous avez manqué le dernier tirage LOTO®, Euro Millions-My Million® ou Joker+® ? Consultez tous les résultats des jeux de tirage …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Résultats et rapports officiels | FDJ®",
+      "url": "https://www.fdj.fr/resultats-et-rapports-officiels?msockid=250c2e3442f466723cd739ff435c6753",
+      "snippet": "Consultez les résultats et rapports officiels de FDJ. Trouvez les tirages et résultats des jeux de loterie et paris sportifs, ainsi que les …"
+    },
+    {
+      "title": "dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Résultat LOTO FDJ - Tirage en Direct, Numéros Gagnants et Gains",
+      "url": "https://www.secretsdujeu.com/page/jeux_loto_resultats.html",
+      "snippet": "3 days ago · Le dernier résultat du LOTO et du SUPER LOTO - Calculez vos gains immédiatement après le tirage avec toutes les …"
+    }
+  ]
+}

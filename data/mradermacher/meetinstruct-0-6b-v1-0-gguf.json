@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MeetInstruct-0.6B-v1.0-GGUF",
+  "slug": "mradermacher-meetinstruct-0-6b-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MeetInstruct-0.6B-v1.0-GGUF",
+  "created_at": "2026-09-05T13:41:11.000Z",
+  "updated_at": "2026-09-05T13:41:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edwin Scharff Museum – Städtisches Kunstmuseum Edwin Scharff in …",
+      "url": "https://edwinscharffmuseum.de/",
+      "snippet": "Das Edwin Scharff Museum ist ein Haus für Kunstinteressierte ebenso wie für Kinder und Familien. Es liegt am Petrusplatz mitten in …"
+    },
+    {
+      "title": "Ma7ee7/MeetInstruct-0.6B-v1.5-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Ma7ee7/MeetInstruct-0.6B-v1.5-GGUF",
+      "snippet": "Instructions to use Ma7ee7/MeetInstruct-0.6B-v1.5-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Kunstmuseum – Edwin Scharff Museum",
+      "url": "https://edwinscharffmuseum.de/kunstmuseum/",
+      "snippet": "Der Nachlass des in Neu-Ulm geborenen Malers, Grafikers und Bildhauers Edwin Scharff (1887–1955) ist der Grundstock unseres …"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Edwin Scharff Museum – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Edwin_Scharff_Museum",
+      "snippet": "Geschichte Ursprünglich befanden sich im 1977 eröffneten Kongress- und Veranstaltungszentrum Edwin-Scharff-Haus an der …"
+    }
+  ]
+}

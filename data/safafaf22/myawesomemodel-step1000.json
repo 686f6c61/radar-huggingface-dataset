@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "safafaf22/MyAwesomeModel-step1000",
+  "slug": "safafaf22-myawesomemodel-step1000",
+  "author": "safafaf22",
+  "url": "https://huggingface.co/safafaf22/MyAwesomeModel-step1000",
+  "created_at": "2026-09-05T10:25:41.000Z",
+  "updated_at": "2026-09-05T10:32:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "O-rings | Order now at ERIKS & product info",
+      "url": "https://shop.eriks.co.uk/en/seals-o-rings-and-accessories-o-rings/",
+      "snippet": "You can find the largest assortment O-rings at ERIKS. Choose from more than 500.000 articles and order right away."
+    },
+    {
+      "title": "ASD123SAD21/MyAwesomeModel-step1000 · Hugging Face",
+      "url": "https://huggingface.co/ASD123SAD21/MyAwesomeModel-step1000",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ERIKS O-Ring supplier | Excellent quality",
+      "url": "https://o-ring.info/en/home/",
+      "snippet": "ERIKS has 80 years of experience in sealing technology for a wide range of industries. Our experts have a profound knowledge of …"
+    },
+    {
+      "title": "safafaf22/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/safafaf22/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "O-ring Selector - shop.eriks.co.uk",
+      "url": "https://shop.eriks.co.uk/webapp/wcs/stores/servlet/EriksUserDetails?catalogId=1000&storeId=100005&targetSystem=SEL_ORI",
+      "snippet": "Do you need a standard size?"
+    }
+  ]
+}

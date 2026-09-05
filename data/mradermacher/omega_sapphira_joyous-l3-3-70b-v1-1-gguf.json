@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.1-GGUF",
+  "slug": "mradermacher-omega_sapphira_joyous-l3-3-70b-v1-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.1-GGUF",
+  "created_at": "2026-09-05T15:28:26.000Z",
+  "updated_at": "2026-09-05T17:02:27.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "slerp",
+    "roleplay",
+    "storywriting",
+    "unaligned",
+    "not-for-all-audiences",
+    "en",
+    "base_model:cactopus/Omega_Sapphira_Joyous-L3.3-70B-v1.1",
+    "base_model:quantized:cactopus/Omega_Sapphira_Joyous-L3.3-70B-v1.1",
+    "license:llama3.3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 264765079936,
+  "storage_human": "264.8 GB",
+  "base_model": "cactopus/Omega_Sapphira_Joyous-L3.3-70B-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ChatGPT - Tchat GPT",
+      "url": "https://chatgpt.com/fr-FR/",
+      "snippet": "Utilisez ChatGPT pour répondre aux questions, rédiger, créer des images, accomplir des tâches et coder, le tout au même endroit. …"
+    },
+    {
+      "title": "mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

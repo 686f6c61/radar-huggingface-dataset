@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Raretutor/vdn-minimax-h3-comfyui-int8-convrot",
+  "slug": "raretutor-vdn-minimax-h3-comfyui-int8-convrot",
+  "author": "Raretutor",
+  "url": "https://huggingface.co/Raretutor/vdn-minimax-h3-comfyui-int8-convrot",
+  "created_at": "2026-09-05T13:31:42.000Z",
+  "updated_at": "2026-09-05T13:52:39.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "video-generation",
+    "vdn",
+    "int8",
+    "convrot",
+    "text-to-video",
+    "base_model:OpenVDN/vdn-minimax-h3",
+    "base_model:finetune:OpenVDN/vdn-minimax-h3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2304371056,
+  "storage_human": "2.3 GB",
+  "base_model": "OpenVDN/vdn-minimax-h3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GuruShots | The World's Greatest Photography Game",
+      "url": "https://gurushots.com/",
+      "snippet": "Join GuruShots, the world's leading photography game, and compete in challenges, get inspired by amazing photos, and showcase …"
+    },
+    {
+      "title": "t8star/Vdn-Minimax-H3-Comfy · Hugging Face",
+      "url": "https://huggingface.co/t8star/Vdn-Minimax-H3-Comfy",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "About | GuruShots",
+      "url": "https://gurushots.com/about",
+      "snippet": "Join GuruShots, the world's leading photography game, and compete in challenges, get inspired by amazing photos, and showcase …"
+    },
+    {
+      "title": "GitHub - iSk2y/awesome-minimax-h3: Curated resources for MiniMax H3 ...",
+      "url": "https://github.com/iSk2y/awesome-minimax-h3",
+      "snippet": "A curated list of resources for MiniMax H3— the open-weight multimodal video + audio generation model released by MiniMax on July 31, 2026."
+    },
+    {
+      "title": "Photography Exhibitions | GuruShots",
+      "url": "https://web.gurushots.com/exhibitions",
+      "snippet": "Join GuruShots, the world's leading photography game, and compete in challenges, get inspired by amazing photos, and showcase …"
+    }
+  ]
+}

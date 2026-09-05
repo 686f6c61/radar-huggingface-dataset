@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-NVFP4-GGUF",
+  "slug": "jan1k-qwen3-6-35b-a3b-uncensored-genesis-final-nvfp4-gguf",
+  "author": "jan1k",
+  "url": "https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-NVFP4-GGUF",
+  "created_at": "2026-09-05T11:34:16.000Z",
+  "updated_at": "2026-09-05T11:36:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "moe",
+    "qwen3.6",
+    "uncensored",
+    "vision",
+    "multimodal",
+    "genesis",
+    "mtp",
+    "speculative-decoding",
+    "llama-cpp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660671320,
+  "parameters_human": "34.66B",
+  "storage_bytes": 44544465344,
+  "storage_human": "44.5 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "משרד החינוך - כניסה למערכת",
+      "url": "https://is.remote.education.gov.il/nidp/app/login?id=EduCombinedAuthUidPwdOld&option=credential&uiDestination=contentDiv",
+      "snippet": "ברוכים הבאים למשרד החינוך. כניסה באמצעות. קוד משתמש וסיסמה. כניסה. אין לך קוד משתמש או סיסמה? לקביעת סיסמה. ×. הנחיות לעדכון טלפון …"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF",
+      "url": "https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF",
+      "snippet": "Join the Discord for updates, roadmaps, projects, or just to chat. Base model. HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive - 0/465 refusals. Thanks to HauhauCS Usage Ready to use. Recommended quant: APEX or Q8_K_P Tensor drift repair by me. Method: Genesis-SVD Links: Original uncensored model Quantization Script with Unsloth ..."
+    },
+    {
+      "title": "משרד החינוך",
+      "url": "https://moe.edu.gov.il/nidp/edu/",
+      "snippet": "משרד החינוך."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-GGUF",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V3-GGUF",
+      "snippet": "On third stage, I scan blocks in model via chunks via 3 parameters and pick best one that fits to weight distribution in tensor. Best picked chunk replaces zero chunks in broken tensor without touching learned structure in model Model is based on HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive base."
+    },
+    {
+      "title": "gov.il",
+      "url": "https://www.gov.il/he/departments/ministry-of-education/govil-landing-page",
+      "snippet": "איך אפשר לעזור לך? מה השאלה שלך? הצ'אט מבוסס בינה מלאכותית ועשוי לטעות. אין להזין מידע אישי. למידע נוסף."
+    }
+  ]
+}

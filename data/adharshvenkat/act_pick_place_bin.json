@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "adharshvenkat/act_pick_place_bin",
+  "slug": "adharshvenkat-act_pick_place_bin",
+  "author": "adharshvenkat",
+  "url": "https://huggingface.co/adharshvenkat/act_pick_place_bin",
+  "created_at": "2026-09-05T18:04:51.000Z",
+  "updated_at": "2026-09-05T18:05:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:adharshvenkat/pick_place_bin_20260905_234142",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ePaper Anzeigen-Echo - Rheinische Anzeigenblätter",
+      "url": "https://www.rheinische-anzeigenblaetter.de/s/epaperanzeigenecho",
+      "snippet": "ePaper Anzeigen schalten Wortanzeigen privat / gewerblich Gestaltete Anzeigen für Gewerbekunden Beilagen buchen Mediadaten …"
+    },
+    {
+      "title": "aadarshram/act_pick_place_tape · Hugging Face",
+      "url": "https://huggingface.co/aadarshram/act_pick_place_tape",
+      "snippet": "Model Card for act This is an Action Chunking Transformer (ACT) model trained for pick and place tape task. Notes: Model trained only with front camera to see how well it can perform with just that. Partial Observabilty in front camera. During motion some parts of the robot go off camera's frame. Can the model handle that? Pick location fixed and drop location has slight variations ..."
+    },
+    {
+      "title": "Nachrichten aus Oberberg - Rheinische Anzeigenblätter",
+      "url": "https://www.rheinische-anzeigenblaetter.de/oberberg",
+      "snippet": "Aktuelle und regionale Nachrichten, Meldungen, Reportagen, Meinungen und Bilder aus Oberberg."
+    },
+    {
+      "title": "adharshvenkat (Adharsh Venkatachalam) · GitHub",
+      "url": "https://github.com/adharshvenkat",
+      "snippet": "Robotics Software Engineer. Physical AI Enthusiast. - adharshvenkat"
+    },
+    {
+      "title": "Anzeigen-Echo - Thema - Rheinische Anzeigenblätter",
+      "url": "https://www.rheinische-anzeigenblaetter.de/tag/anzeigen-echo",
+      "snippet": "Themen Anzeigen-Echo Anzeigen-Echo Beiträge zum Thema Anzeigen-Echo Nachrichten Golfclub unterstützt Hospiz „Das ist ein …"
+    }
+  ]
+}

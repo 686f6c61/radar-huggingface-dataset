@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cnuland/llm-d-sc-complexity-v3",
+  "slug": "cnuland-llm-d-sc-complexity-v3",
+  "author": "cnuland",
+  "url": "https://huggingface.co/cnuland/llm-d-sc-complexity-v3",
+  "created_at": "2026-09-05T15:47:36.000Z",
+  "updated_at": "2026-09-05T15:47:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "llm-routing",
+    "llm-d",
+    "semantic-router",
+    "triage",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/em/?ctl=overview",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "cnuland/llm-d-sc-complexity · Hugging Face",
+      "url": "https://huggingface.co/cnuland/llm-d-sc-complexity",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/ext/ical/W5b302.qR4UJ5cx3UfjymjXk9V9DjgY0/9eHr6QQIsaWumKFWGin7Wbi7E5Q7NoEPGGKalryZH0VZ2AEyxvP69nL_Qz79fmz6",
+      "snippet": "Securely access your email account through the E-Mail Center Login portal."
+    },
+    {
+      "title": "cnuland/llm-d-sc-complexity-v2-mini · Hugging Face",
+      "url": "https://huggingface.co/cnuland/llm-d-sc-complexity-v2-mini",
+      "snippet": "Instructions to use cnuland/llm-d-sc-complexity-v2-mini with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/robots.txt",
+      "snippet": "# Block site for all robots, except of shared calendars User-agent: * Disallow: /lisa/ab/ Disallow: /ab/ Disallow: /lisa/pr/ Disallow: /pr/ …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aaalapupifashang/clip-ViT-L-14",
+  "slug": "aaalapupifashang-clip-vit-l-14",
+  "author": "aaalapupifashang",
+  "url": "https://huggingface.co/aaalapupifashang/clip-ViT-L-14",
+  "created_at": "2026-09-05T11:39:55.000Z",
+  "updated_at": "2026-09-05T11:39:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "feature-extraction",
+    "sentence-similarity",
+    "arxiv:2103.00020",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3421200837,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达_百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 搜索引擎（Поиск）：支持网页、图片、视频、新闻等多类型检索，兼容文本、语音、图像搜索，俄语处理能力突出。 …"
+    },
+    {
+      "title": "sentence-transformers/clip-ViT-L-14 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/clip-ViT-L-14",
+      "snippet": "clip-ViT-L-14 Usage Performance clip-ViT-L-14 This is the Image & Text model CLIP, which maps text and images to a shared vector space. For applications of the models, have a look in our documentation SBERT.net - Image Search Usage After installing sentence-transformers(pip install sentence-transformers), the usage of this model is easy:"
+    },
+    {
+      "title": "PMU在电力系统中是什么意思？？_百度知道",
+      "url": "https://zhidao.baidu.com/question/15261932.html",
+      "snippet": "PMU的数量跟测试机的等级有关，低端的测试机往往只有一个PMU，通过共享的方式被测试通道（test channel）逐次使用；中端的则 …"
+    },
+    {
+      "title": "clip-ViT-L-14: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/clip-vit-l-14-sentence-transformers",
+      "snippet": "clip-ViT-L-14is a vision-language model developed by sentence-transformersthat maps both images and text to a shared 768-dimensional vector space, enabling direct comparison between visual and textual content. The model uses a Vision Transformer (ViT) architecture with a large patch size of 14 pixels, trained using contrastive learning on image-text pairs to align representations across ..."
+    },
+    {
+      "title": "Super Cagnotte de 20 000 € à partager - Avec Réponse(s)",
+      "url": "https://communaute-forum.pmu.fr/questions/1452403-super-cagnotte-20-000-partager",
+      "snippet": "Du 21 au 24 septembre le PMU propose à nouveau une super cagnotte de 20 000 € à partager en jouant sur la ligue 1. J'aimerais …"
+    }
+  ]
+}

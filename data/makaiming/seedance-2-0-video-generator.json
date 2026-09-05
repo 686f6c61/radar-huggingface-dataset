@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "makaiming/seedance-2-0-video-generator",
+  "slug": "makaiming-seedance-2-0-video-generator",
+  "author": "makaiming",
+  "url": "https://huggingface.co/makaiming/seedance-2-0-video-generator",
+  "created_at": "2026-09-05T13:39:57.000Z",
+  "updated_at": "2026-09-05T13:39:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "generated-from-code",
+    "seedance-2-0-video-generator",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Seedance 2.0 — ByteDance Multimodal AI Video Generator with Native ...",
+      "url": "https://seeddance.ai/seedance-2-0",
+      "snippet": "Generate Seedance 2.0 videos on SeeVid platform. ByteDance's Seedance-series multimodal AI video generation model for cinematic videos from text, image, video, and audio references with native audio sync, physics-accurate motion, character consistency, and director-level camera control."
+    },
+    {
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
+    },
+    {
+      "title": "Seedance 2.0 Free: Multimodal Seedance AI Video Generator",
+      "url": "https://seedclip.net/",
+      "snippet": "Seedance 2.0: Generate cinematic AI videos from text & images & videos. Advanced motion synthesis, multimodal control, and stunning quality in seconds. Try free now!"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

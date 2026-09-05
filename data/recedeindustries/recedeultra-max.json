@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RecedeIndustries/RecedeUltra-Max",
+  "slug": "recedeindustries-recedeultra-max",
+  "author": "RecedeIndustries",
+  "url": "https://huggingface.co/RecedeIndustries/RecedeUltra-Max",
+  "created_at": "2026-09-05T13:08:54.000Z",
+  "updated_at": "2026-09-05T13:09:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 337984859,
+  "storage_human": "338 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram Messenger",
+      "url": "https://telegram.org/",
+      "snippet": "Telegram for iPhone/ iPad Telegram for Windows / Mac / LinuxBrowse more Telegram apps Telegram for PC / LinuxTelegram for …"
+    },
+    {
+      "title": "Home | Revere Brand Intelligence Platform",
+      "url": "https://revere-ai.com/",
+      "snippet": "Revere is the next generation AI-powered brand intelligence platform. Monitor, analyze, and protect your brand reputation across LLMs and Agentic AI."
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/",
+      "snippet": "Experience Telegram on your computer in a swift and seamless way."
+    },
+    {
+      "title": "Ultramaxmegathink: Why 51% Accuracy AI Models Are a Cybersecurity ...",
+      "url": "https://undercodetesting.com/ultramaxmegathink-why-51-accuracy-ai-models-are-a-cybersecurity-nightmare-and-how-to-fix-them-in-2028-video/",
+      "snippet": "Introduction: As AI models infiltrate every layer of cybersecurity—from SIEM alert correlation to automated incident response—the industry jokes about “Ultramaxmegathink” and shipping models that are right only 51% of the time expose a dangerous truth: adversarial reliability gaps create exploitable uncertainty. In 2028, the convergence of overhyped AI capabilities and insufficient ..."
+    },
+    {
+      "title": "텔레그램 데스크톱 - Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=ko",
+      "snippet": "이 소프트웨어는 GPL v3라이센스를 적용하여 제공하고 있습니다. 소스코드는 GitHub에서 제공하고 있습니다. 트위터에서 팔로우하세요– …"
+    }
+  ]
+}

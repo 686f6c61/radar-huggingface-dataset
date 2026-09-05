@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "liu075319/test-lerobot-repo",
+  "slug": "liu075319-test-lerobot-repo",
+  "author": "liu075319",
+  "url": "https://huggingface.co/liu075319/test-lerobot-repo",
+  "created_at": "2026-09-05T11:34:41.000Z",
+  "updated_at": "2026-09-05T11:43:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2602.22818",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "GitHub - LiuQiang-AI/liu_lerobot",
+      "url": "https://github.com/LiuQiang-AI/liu_lerobot",
+      "snippet": "🤗 LeRobot contains state-of-the-art approaches that have been shown to transfer to the real-world with a focus on imitation learning and reinforcement learning. 🤗 LeRobot already provides a set of pretrained models, datasets with human collected demonstrations, and simulation environments to get started without assembling a robot."
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "GitHub - huggingface/lerobot: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/huggingface/lerobot",
+      "snippet": "Similarly to the hardware, you can easily implement your own policy & leverage LeRobot's data collection, training, and visualization tools, and share your model to the HF Hub. For detailed policy setup guides, see the Policy Documentation. For GPU/RAM requirements and expected training time per policy, see the Compute Hardware Guide."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; By using this site, you agree to the Terms of …"
+    }
+  ]
+}
