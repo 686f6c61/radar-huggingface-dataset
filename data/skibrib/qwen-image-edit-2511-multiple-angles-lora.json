@@ -5,7 +5,7 @@
   "author": "Skibrib",
   "url": "https://huggingface.co/Skibrib/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
   "created_at": "2026-08-29T06:00:40.000Z",
-  "updated_at": "2026-08-29T06:03:20.000Z",
+  "updated_at": "2026-09-05T01:15:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

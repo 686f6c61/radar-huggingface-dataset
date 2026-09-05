@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "JoshuaCalhoon/Ornith-1.5-9B-MTPLX",
+  "slug": "joshuacalhoon-ornith-1-5-9b-mtplx",
+  "author": "JoshuaCalhoon",
+  "url": "https://huggingface.co/JoshuaCalhoon/Ornith-1.5-9B-MTPLX",
+  "created_at": "2026-09-04T22:20:02.000Z",
+  "updated_at": "2026-09-04T22:22:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5057924940,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iLovePDF | Online PDF tools for PDF lovers",
+      "url": "https://www.ilovepdf.com/",
+      "snippet": "iLovePDF is an online service to work with PDF files completely free and easy to use. Merge PDF, split PDF, compress PDF, office to …"
+    },
+    {
+      "title": "Artie101/Ornith-1.5-9B-8bit-MTPLX · Hugging Face",
+      "url": "https://huggingface.co/Artie101/Ornith-1.5-9B-8bit-MTPLX",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iLovePDF | Herramientas PDF online gratis",
+      "url": "https://www.ilovepdf.com/ES",
+      "snippet": "iLovePDF es un servicio online para trabajar con archivos PDF completamente gratuito y fácil de usar. ¡Unir, dividir, comprimir y …"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-8bit",
+      "snippet": "Ornith-1.5-9B is a dense ~9B model (≈19 GB in bf16), so it serves on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size / --tp if you want to shard across more GPUs."
+    },
+    {
+      "title": "Convertire Word a PDF | Documenti DOC a PDF - iLovePDF",
+      "url": "https://www.ilovepdf.com/it/word_a_pdf",
+      "snippet": "Converti documenti Word a PDF uguali al file originale. Servizio online gratuito per convertire WORD a PDF."
+    }
+  ]
+}

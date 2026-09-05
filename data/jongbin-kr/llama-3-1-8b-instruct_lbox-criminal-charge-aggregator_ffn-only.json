@@ -5,7 +5,7 @@
   "author": "Jongbin-kr",
   "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-criminal-charge-aggregator_ffn-only",
   "created_at": "2026-09-04T11:48:02.000Z",
-  "updated_at": "2026-09-04T12:20:39.000Z",
+  "updated_at": "2026-09-04T14:13:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 130487393,
-  "storage_human": "130 MB",
+  "storage_bytes": 583573409,
+  "storage_human": "584 MB",
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "pressatojump/atomic9b-mix30x",
+  "slug": "pressatojump-atomic9b-mix30x",
+  "author": "pressatojump",
+  "url": "https://huggingface.co/pressatojump/atomic9b-mix30x",
+  "created_at": "2026-09-05T00:10:23.000Z",
+  "updated_at": "2026-09-05T00:11:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen",
+    "qwen3.5",
+    "qwen3.8",
+    "9b",
+    "heretic",
+    "uncensored",
+    "lora",
+    "sft",
+    "unsloth",
+    "merge",
+    "conversational",
+    "en",
+    "base_model:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "base_model:adapter:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Staking | Chainlink",
+      "url": "https://staking.chain.link/",
+      "snippet": "Chainlink Staking enables ecosystem participants to back the performance of oracle services with staked LINK and earn rewards for …"
+    },
+    {
+      "title": "pressatojump (PressAToJump) - Hugging Face",
+      "url": "https://huggingface.co/pressatojump/models",
+      "snippet": "pressatojump's models1 Sort: Recently updated pressatojump/qwythos-9b-axiom-phase-b-v2 Updated 25 minutes ago"
+    },
+    {
+      "title": "Stake.link (SDL) Explained: What It Is, How It Works & Why It Matters",
+      "url": "https://docsue.org/stake.link-sdl-explained-what-it-is-how-it-works-why-it-matters",
+      "snippet": "Oct 21, 2025 · Stake.link (SDL) is the first liquid‑staking platform for Chainlink. Learn how stLINK works, SDL's role, APY, risks, and …"
+    },
+    {
+      "title": "pressatojump (PressAToJump) - Hugging Face",
+      "url": "https://huggingface.co/pressatojump",
+      "snippet": "View training progress and check logs. pressatojump 33 minutes ago. models 0. None public yet. datasets 0. None public yet"
+    },
+    {
+      "title": "Stake.link Integrates Chainlink’s Liquid Staking on ... - Binance",
+      "url": "https://www.binance.com/en/square/post/4731589153746",
+      "snippet": "Feb 28, 2024 · Coinspeaker Stake.link Integrates Chainlink’s Liquid Staking on Ethereum-based L2 Arbitrum Network Stake.link, a …"
+    }
+  ]
+}

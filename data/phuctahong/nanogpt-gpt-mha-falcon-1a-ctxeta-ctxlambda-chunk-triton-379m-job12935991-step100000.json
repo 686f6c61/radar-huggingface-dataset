@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "phuctahong/nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12935991-step100000",
+  "slug": "phuctahong-nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12935991-step100000",
+  "author": "phuctahong",
+  "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12935991-step100000",
+  "created_at": "2026-09-04T23:37:58.000Z",
+  "updated_at": "2026-09-04T23:38:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nanogptpro",
+    "nanogpt",
+    "fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 379359616,
+  "parameters_human": "379.4M",
+  "storage_bytes": 1517486096,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interactive Maps | Deadside Wiki - Fandom",
+      "url": "https://deadside.fandom.com/wiki/Special:AllMaps",
+      "snippet": "Nov 26, 2025 · Browse custom interactive maps inspired by a world featured in your favorite fandom. Explore and visualize locations, …"
+    },
+    {
+      "title": "phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton ...",
+      "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000",
+      "snippet": "phuctahong / nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000 like 0 Safetensors nanogpt-pro nanogpt nanogptpro fineweb-edu License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000 ..."
+    },
+    {
+      "title": "Interactive Map - DS Info",
+      "url": "https://ds-info.eu/map",
+      "snippet": "Interactive Deadside map with missions, bunkers, traders, vehicles, foraging spots and more."
+    },
+    {
+      "title": "phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda ...",
+      "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000",
+      "snippet": "phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000 NanoGPT Pro checkpoint uploaded from the princeton-pli/Nanogpt W&B project."
+    },
+    {
+      "title": "Maps - Official Deadside Wiki",
+      "url": "https://officialdswiki.com/en/maps",
+      "snippet": "Here you can find several maps that outline useful or important areas to visit in the world of Deadside. This map shows locations of …"
+    }
+  ]
+}

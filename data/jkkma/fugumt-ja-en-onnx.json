@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jkkma/fugumt-ja-en-onnx",
+  "slug": "jkkma-fugumt-ja-en-onnx",
+  "author": "jkkma",
+  "url": "https://huggingface.co/jkkma/fugumt-ja-en-onnx",
+  "created_at": "2026-09-04T23:10:39.000Z",
+  "updated_at": "2026-09-04T23:10:52.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "marian",
+    "translation",
+    "fugumt",
+    "ja",
+    "en",
+    "base_model:staka/fugumt-ja-en",
+    "base_model:quantized:staka/fugumt-ja-en",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 376647446,
+  "storage_human": "377 MB",
+  "base_model": "staka/fugumt-ja-en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "jkkma/fugumt-ja-en-onnx · Hugging Face",
+      "url": "https://huggingface.co/jkkma/fugumt-ja-en-onnx",
+      "snippet": "What these numbers do not cover Provenance fugumt-ja-en, exported to ONNX An ONNX export of staka/fugumt-ja-enat revision f7ce11286e1fb7a8e1f1692ff3ab68c0f9c3aecb, in the merged-decoder layout, float32. Produced for Uindosilland published so that the exact bytes its measurements describe can be downloaded and checked, rather than only reproduced."
+    },
+    {
+      "title": "all-tts-ai/natural_language_processing/fugumt-ja-en/README.md ... - GitHub",
+      "url": "https://github.com/awesome-service/all-tts-ai/blob/master/natural_language_processing/fugumt-ja-en/README.md",
+      "snippet": "Usage Automatically downloads the onnx and prototxt files on the first run. It is necessary to be connected to the Internet while downloading."
+    },
+    {
+      "title": "Fashion-style-skill/natural_language_processing/fugumt-ja-en ... - GitHub",
+      "url": "https://github.com/CCC2-0/Fashion-style-skill/blob/master/natural_language_processing/fugumt-ja-en/README.md",
+      "snippet": "The collection of pre-trained, state-of-the-art AI models for ailia SDK - CCC2-0/Fashion-style-skill"
+    },
+    {
+      "title": "README.md · Kadonox/fugumt-ja-en-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/Kadonox/fugumt-ja-en-onnx/blob/main/README.md",
+      "snippet": "Instructions to use Kadonox/fugumt-ja-en-onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers.js How to use Kadonox/fugumt-ja-en-onnx with Transformers.js:"
+    }
+  ]
+}

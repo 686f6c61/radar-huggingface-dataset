@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kashif786/mbert-base-sindhi-cpt",
+  "slug": "kashif786-mbert-base-sindhi-cpt",
+  "author": "Kashif786",
+  "url": "https://huggingface.co/Kashif786/mbert-base-sindhi-cpt",
+  "created_at": "2026-09-04T22:04:56.000Z",
+  "updated_at": "2026-09-04T22:11:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "generated_from_trainer",
+    "base_model:Kashif786/mbert-base-sindhi-cpt",
+    "base_model:finetune:Kashif786/mbert-base-sindhi-cpt",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177974523,
+  "parameters_human": "178.0M",
+  "storage_bytes": 711927045,
+  "storage_human": "712 MB",
+  "base_model": "Kashif786/mbert-base-sindhi-cpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Patient portal: Connect to care online - Mayo Clinic Health System",
+      "url": "https://www.mayoclinichealthsystem.org/patient-online-services",
+      "snippet": "The patient portal is an online resource that connects you to your healthcare team and helps manage your health when convenient …"
+    },
+    {
+      "title": "Kashif786/distilbert-base-multilingual-cased-sindhi-cpt · Hugging Face",
+      "url": "https://huggingface.co/Kashif786/distilbert-base-multilingual-cased-sindhi-cpt",
+      "snippet": "Instructions to use Kashif786/distilbert-base-multilingual-cased-sindhi-cpt with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Low Back Pain Exercises - MC7245-464 - Mayo Clinic Health System",
+      "url": "https://www.mayoclinichealthsystem.org/-/media/national-files/documents/hometown-health/2021/low-back-pain-exercises.pdf?la=en&hash=6ACBFB88812EBD9B1FD9FEB6B10AB403",
+      "snippet": "Single knee to chest: Pull one knee up to your chest until a comfortable stretch is felt in the lower back and buttocks. Repeat with …"
+    },
+    {
+      "title": "Kashif786/sindhi_bert_base_pct · Hugging Face",
+      "url": "https://huggingface.co/Kashif786/sindhi_bert_base_pct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Men's Health Forum",
+      "url": "https://www.menshealthforum.org.uk/",
+      "snippet": "The Men's Health Forum is a British registered charity whose mission is to improve the health of men and boys in England, Wales …"
+    }
+  ]
+}

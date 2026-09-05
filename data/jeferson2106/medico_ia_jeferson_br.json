@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jeferson2106/medico_ia_jeferson_br",
+  "slug": "jeferson2106-medico_ia_jeferson_br",
+  "author": "jeferson2106",
+  "url": "https://huggingface.co/jeferson2106/medico_ia_jeferson_br",
+  "created_at": "2026-09-04T22:25:49.000Z",
+  "updated_at": "2026-09-04T22:26:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920734080,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best 10 Pizza Places near Redmond, WA 98052 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=pizza&find_loc=Redmond%2C+WA+98052&msockid=20ed083fddfd66d306551ff5dc28672e",
+      "snippet": "Best Pizza in Redmond, WA 98052 - Last Updated September 2026 - Spark Pizza, Sodo Pizza, Pagliacci Pizza, Pizzaiolo Wood …"
+    },
+    {
+      "title": "jeferson2106/medico_ia_jeferson · Hugging Face",
+      "url": "https://huggingface.co/jeferson2106/medico_ia_jeferson",
+      "snippet": "jeferson2106 / medico_ia_jeferson like 0 GGUF llama llama.cpp unsloth Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "THE 10 BEST Pizza Places in Redmond (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g58702-c31-Redmond_Washington.html",
+      "snippet": "Best Pizza in Redmond, Washington: Find Tripadvisor traveller reviews of Redmond Pizza places and search by price, location, and …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pagliacci Pizza: Seattle Area Pizza & Delivery",
+      "url": "https://pagliacci.com/",
+      "snippet": "Pagliacci Pizza, serving Seattle's best pizza since 1979. Offering pizza by the slice and pizza delivery service to homes and businesses."
+    }
+  ]
+}

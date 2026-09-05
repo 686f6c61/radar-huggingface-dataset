@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hxnney/VERO-Mini-Full",
+  "slug": "hxnney-vero-mini-full",
+  "author": "hxnney",
+  "url": "https://huggingface.co/hxnney/VERO-Mini-Full",
+  "created_at": "2026-09-04T19:44:18.000Z",
+  "updated_at": "2026-09-04T19:44:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wells Fargo Bank | Financial Services & Online Banking",
+      "url": "https://www.wellsfargo.com/",
+      "snippet": "Who we are Wells Fargo helps strengthen communities through inclusion, economic empowerment, and sustainability."
+    },
+    {
+      "title": "The Model Garden — Vera Studio | Vera AI Studio",
+      "url": "https://www.verastudio.com/models",
+      "snippet": "Every major AI model, one account, one bill. Choose any model you want — or let Vera pick for you."
+    },
+    {
+      "title": "Mobile & Online Banking: Checking & Savings Accounts | Wells Fargo",
+      "url": "https://www.wellsfargo.com/mobile-online-banking/",
+      "snippet": "Online and mobile banking made easy: Manage checking and savings accounts, pay bills, monitor spending and more with the Wells …"
+    },
+    {
+      "title": "GitHub - zlab-princeton/vero: Vero: An Open RL Recipe for General ...",
+      "url": "https://github.com/zlab-princeton/vero",
+      "snippet": "Vero is a fully open reinforcement learning recipe for training and evaluating multi-task visual reasoning with vision-language models. The released project combines an RL training stack (vero-rl) and an evaluation harness (vero-eval)."
+    },
+    {
+      "title": "Find Wells Fargo bank and ATM locations in Miami,FL | Wells Fargo",
+      "url": "https://locations.wellsfargo.com/fl/miami",
+      "snippet": "Locate banks or ATMs in Miami,FL. Find drive-thru ATMs, banking services available, store hours, customer service numbers, …"
+    }
+  ]
+}

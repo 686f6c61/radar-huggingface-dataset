@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/mainsweep-kl1000-s1-realign",
+  "slug": "jlsrls-mainsweep-kl1000-s1-realign",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/mainsweep-kl1000-s1-realign",
+  "created_at": "2026-09-04T23:08:12.000Z",
+  "updated_at": "2026-09-04T23:13:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1652472700,
+  "storage_human": "1.7 GB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "jlsrls/mainsweep-kl1000-s1-realign · Hugging Face",
+      "url": "https://huggingface.co/jlsrls/mainsweep-kl1000-s1-realign",
+      "snippet": "Instructions to use jlsrls/mainsweep-kl1000-s1-realign with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "KitLock KL1000 Lock User Manual | AI Chat & PDF Access | Manualzz",
+      "url": "https://manualzz.com/doc/23421610/kitlock-kl1000-lock-user-manual",
+      "snippet": "Get keyless access with the KitLock KL1000 digital lock. This manual provides instructions, functions, and features. AI Chat & PDF Download available."
+    },
+    {
+      "title": "Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/windows-8-1-iso-download-for-64-and-32-bit/4454650",
+      "snippet": "Sep 16, 2025 · Since Microsoft has shifted focus to Windows 10 and Windows 11, official direct downloads for Windows 8 ISOs are no …"
+    }
+  ]
+}

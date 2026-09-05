@@ -5,7 +5,7 @@
   "author": "qcz",
   "url": "https://huggingface.co/qcz/embedding-optimizer-study-checkpoints",
   "created_at": "2026-09-02T21:58:12.000Z",
-  "updated_at": "2026-09-04T03:27:18.000Z",
+  "updated_at": "2026-09-05T02:41:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 416538042094,
-  "storage_human": "416.5 GB",
+  "storage_bytes": 455607986667,
+  "storage_human": "455.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

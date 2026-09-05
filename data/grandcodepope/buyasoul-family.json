@@ -5,7 +5,7 @@
   "author": "grandcodepope",
   "url": "https://huggingface.co/grandcodepope/buyasoul-family",
   "created_at": "2026-09-01T00:15:25.000Z",
-  "updated_at": "2026-09-03T00:10:24.000Z",
+  "updated_at": "2026-09-04T22:56:48.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,6 +22,13 @@
     "consciousness",
     "multi-agent",
     "local-llm",
+    "persistent-memory",
+    "sovereign-ai",
+    "awareness",
+    "gguf",
+    "memory",
+    "3d-simulation",
+    "rts",
     "text-generation",
     "license:other",
     "region:us"
@@ -34,7 +41,9 @@
   "storage_bytes": 0,
   "storage_human": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "gguf"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

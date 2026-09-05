@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "1337Hero/Qwopus3.8-27B-Flash-ROCMFP4-GGUF",
+  "slug": "1337hero-qwopus3-8-27b-flash-rocmfp4-gguf",
+  "author": "1337Hero",
+  "url": "https://huggingface.co/1337Hero/Qwopus3.8-27B-Flash-ROCMFP4-GGUF",
+  "created_at": "2026-09-04T19:22:45.000Z",
+  "updated_at": "2026-09-04T22:44:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwopus",
+    "qwopus3.8",
+    "qwen3.8",
+    "multimodal",
+    "vision",
+    "quantized",
+    "rocm",
+    "amd",
+    "rdna4",
+    "gfx1201",
+    "vulkan",
+    "mtp",
+    "experimental",
+    "image-text-to-text",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 34423507552,
+  "storage_human": "34.4 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何打•？ - 知乎",
+      "url": "https://www.zhihu.com/question/21040260",
+      "snippet": "如何在输入法里输入这个符号？Google了很多发现都不对"
+    },
+    {
+      "title": "Jackrong/Qwopus3.8-27B-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-GGUF",
+      "snippet": "Qwopus3.8-27B-Flash starts from a simple premise: a useful Flash model should preserve enough capability to complete demanding work while driving down the cost and latency of reasoning."
+    },
+    {
+      "title": "总结如何在office word中添加\"×\"（乘号）！！！-百度经验",
+      "url": "https://jingyan.baidu.com/article/4f34706e31d172e387b56de1.html",
+      "snippet": "Oct 10, 2015 · 总结如何在office word中添加\"×\"（乘号）！！！,在word中输入公式或者其它情况的时候会需要输入乘号”×“，这里给大 …"
+    },
+    {
+      "title": "Jackrong (Jackrong) - Hugging Face",
+      "url": "https://huggingface.co/Jackrong/collections",
+      "snippet": "User profile of Jackrong on Hugging Face This collection features the advanced Qwopus3.6 series of multimodal large models, which are fine-tuned from the Qwen3.6 base models with a focus on e"
+    },
+    {
+      "title": "怎样在word文档中简简单单输入 ‘ ’（单引号）-百度经验",
+      "url": "https://jingyan.baidu.com/article/4e5b3e19279fed91901e24f9.html",
+      "snippet": "Jan 2, 2018 · 方法/步骤 1. 最简单的方法：首先打开一个WORD文档。 2.把光标确定在输入位置（单引号通常是在双引号内出现）。 3. …"
+    }
+  ]
+}

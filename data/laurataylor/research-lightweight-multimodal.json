@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "laurataylor/research-lightweight-multimodal",
+  "slug": "laurataylor-research-lightweight-multimodal",
+  "author": "laurataylor",
+  "url": "https://huggingface.co/laurataylor/research-lightweight-multimodal",
+  "created_at": "2026-09-04T17:23:07.000Z",
+  "updated_at": "2026-09-04T17:23:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - China Import and Export Fair (Canton Fair)",
+      "url": "https://www.cantonfair.org.cn/en-US",
+      "snippet": "Countdown to the 140th Canton Fair 4 6 Days to go 第140届广交会 第一期 先进制造 2026年10月15日-19日 第二期 品质家居 2026 …"
+    },
+    {
+      "title": "raonikhil/lightweight-multimodal · Hugging Face",
+      "url": "https://huggingface.co/raonikhil/lightweight-multimodal",
+      "snippet": "Repository summary This repository contains a working research note about Lightweight Multimodal. It organizes motivation, related work, a falsifiable hypothesis, and an evaluation plan. It is not presented as a completed paper or a release of trained models."
+    },
+    {
+      "title": "Guangzhou - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Guangzhou",
+      "snippet": "Guangzhou, [a] also known as Canton, [7] is the capital and largest city of Guangdong in southern China. [8] Located on the Pearl …"
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Home page Canton Loudspeaker",
+      "url": "https://www.canton.de/en/",
+      "snippet": "Canton offers premium German-engineered speakers for HiFi, home cinema and multiroom — superior sound, sleek design and …"
+    }
+  ]
+}

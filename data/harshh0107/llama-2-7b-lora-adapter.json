@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "harshh0107/llama-2-7b-lora-adapter",
+  "slug": "harshh0107-llama-2-7b-lora-adapter",
+  "author": "harshh0107",
+  "url": "https://huggingface.co/harshh0107/llama-2-7b-lora-adapter",
+  "created_at": "2026-09-04T18:57:42.000Z",
+  "updated_at": "2026-09-04T19:05:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134269428,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Stores Near Me - Locations, Hours & Services",
+      "url": "https://www.walmart.com/store-finder",
+      "snippet": "Use the Walmart store locator to find your nearest Walmart locations, check store hours, and find services like Grocery Pickup, …"
+    },
+    {
+      "title": "FinchResearch/llama2-stable-7b-lora · Hugging Face",
+      "url": "https://huggingface.co/FinchResearch/llama2-stable-7b-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Store-finder Store Directory | Walmart Stores",
+      "url": "https://www.walmart.com/store-directory/[state]/store-finder",
+      "snippet": "Browse through all Walmart store locations in Store-finder, null to find the most convenient one for you."
+    },
+    {
+      "title": "layanB/Llama2-7B-LoRA-Adapter · Hugging Face",
+      "url": "https://huggingface.co/layanB/Llama2-7B-LoRA-Adapter",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Walmart | Save Money. Live better.",
+      "url": "https://www.walmart.com/",
+      "snippet": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no …"
+    }
+  ]
+}

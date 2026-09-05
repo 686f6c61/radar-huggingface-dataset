@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sandeepmpatel/multitask-rc1-2024",
+  "slug": "sandeepmpatel-multitask-rc1-2024",
+  "author": "sandeepmpatel",
+  "url": "https://huggingface.co/sandeepmpatel/multitask-rc1-2024",
+  "created_at": "2026-09-04T19:51:50.000Z",
+  "updated_at": "2026-09-04T19:51:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أجمل صور شباب.. ستايل هيبة وفخامة للهاتف والبروفايل | 普段着, 黒の背景, カッ …",
+      "url": "https://in.pinterest.com/pin/pinterest--999869554750631465/",
+      "snippet": "حمل احلى صور شباب 2026، رمزيات شباب هيبة فخمة جداً للهاتف والبروفايل، أجمل موسوعة خلفيات شباب ستايل وحلوين للفيسبوك تعكس أناقتك وحضورك بجودة HD عالية"
+    },
+    {
+      "title": "sandeepmpatel (Sandeep Patel) - Hugging Face",
+      "url": "https://huggingface.co/sandeepmpatel",
+      "snippet": "User profile of Sandeep Patel on Hugging Face"
+    },
+    {
+      "title": "خلفيات شباب للواتس.. 300+ اجمل الصور تصلح خلفيات واتس اب 2026",
+      "url": "https://www.zeina-b.com/2023/11/Photos-For-Youth-Profile-Whatsapp.html",
+      "snippet": "خلفيات شباب للواتس. إليك يا عزيزي مجموعة واسعة من الخلفيات الرائعة لبروفايل الواتساب، صور واتس اب فخمة للشباب لعام 2026 جاهزة للتحميل بشكل مجاني."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.18961",
+      "snippet": ""
+    },
+    {
+      "title": "صور شباب 2024 اجمل خلفيات شباب فخمة | Male portrait poses, Portrait ...",
+      "url": "https://in.pinterest.com/pin/2024--890305420070948132/",
+      "snippet": "نقدم لحضراتكم في هذا الموضوع اجمل صور شباب تصلح في بروفايل المواقع الاجتماعية فيسبوك، انستا، واتساب، تليجرام وتويتر.خلفيات شباب فخمة ذات جودة عالية HD تم انتقائها بعناية لكي تناسب كل …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cgb/triposr-onnx-webgpu",
+  "slug": "cgb-triposr-onnx-webgpu",
+  "author": "cgb",
+  "url": "https://huggingface.co/cgb/triposr-onnx-webgpu",
+  "created_at": "2026-09-04T18:52:52.000Z",
+  "updated_at": "2026-09-04T19:24:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-to-3d",
+    "onnxruntime-web",
+    "webgpu",
+    "in-browser",
+    "base_model:stabilityai/TripoSR",
+    "base_model:quantized:stabilityai/TripoSR",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 484845236,
+  "storage_human": "485 MB",
+  "base_model": "stabilityai/TripoSR",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CGB",
+      "url": "https://www.cgb.fr/",
+      "snippet": "Retrouvez sur notre site cgb.fr toutes les nouveautés émises par la Monnaie de Paris. Que vous souhaitiez diversifier votre …"
+    },
+    {
+      "title": "dcharlot65-aurasense/triposr-onnx-web · Hugging Face",
+      "url": "https://huggingface.co/dcharlot65-aurasense/triposr-onnx-web",
+      "snippet": "TripoSR fp16 ONNX for browser WebGPU Single-image to 3D reconstruction. TripoSR exported to ONNX (fp16) and split into three sessions so it runs entirely in the browser on onnxruntime-web with the WebGPU execution provider (GridSample runs natively)."
+    },
+    {
+      "title": "cgb.fr",
+      "url": "https://www.cgb.fr/boutiques-numismatiques.html",
+      "snippet": "Les boutiques de CGB Numismatique Paris Monnaies, billets, livres et fournitures numismatiques. 109 543 articles Grecques 650 av. …"
+    },
+    {
+      "title": "README.md · dcharlot65-aurasense/triposr-onnx-web at main",
+      "url": "https://huggingface.co/dcharlot65-aurasense/triposr-onnx-web/blob/main/README.md",
+      "snippet": "TripoSR fp16 ONNX for browser WebGPU Single-image to 3D reconstruction. TripoSR exported to ONNX (fp16) and split into three sessions so it runs entirely in the browser on onnxruntime-web with the WebGPU execution provider (GridSample runs natively)."
+    },
+    {
+      "title": "CGB Numismatics Paris",
+      "url": "https://www.cgbfr.com/?lang=fr",
+      "snippet": "On cgb.fr you will find all the new coins issued by the Monnaie de Paris. Whether you want to diversify your wealth with gold and …"
+    }
+  ]
+}

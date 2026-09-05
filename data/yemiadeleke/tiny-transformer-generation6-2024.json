@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yemiadeleke/tiny-transformer-generation6-2024",
+  "slug": "yemiadeleke-tiny-transformer-generation6-2024",
+  "author": "yemiadeleke",
+  "url": "https://huggingface.co/yemiadeleke/tiny-transformer-generation6-2024",
+  "created_at": "2026-09-04T20:04:44.000Z",
+  "updated_at": "2026-09-04T20:04:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pasjans | graj online",
+      "url": "https://gra-pasjans.pl/",
+      "snippet": "Chociaż słowo 'pasjans' może oznaczać niemal każdą jednoosobową grę karcianą, w Polsce pasjans często oznacza jedną …"
+    },
+    {
+      "title": "yemiadeleke (Yemi Adeleke) - Hugging Face",
+      "url": "https://huggingface.co/yemiadeleke",
+      "snippet": "Recent Activity updated a model4 days ago yemiadeleke/model_196177330_clip_small published a model4 days ago yemiadeleke/model_196177330_clip_small View all activity"
+    },
+    {
+      "title": "Darmowy pasjans online / Free online solitaire",
+      "url": "https://pasjans-online.pl/",
+      "snippet": "Darmowy Pasjans/Solitaire online. Jeśli lubisz gry karciane to ta strona jest dla Ciebie! Zmierz swoje umiejętności w układaniu …"
+    },
+    {
+      "title": "yemiadeleke (Yemi Adeleke) - Hugging Face",
+      "url": "https://huggingface.co/yemiadeleke/models",
+      "snippet": "yemiadeleke's models1 Sort: Recently updated yemiadeleke/model_196177330_clip_small Updated 7 days ago"
+    },
+    {
+      "title": "PASJANSE - Gry karciane. Najlepsze odmiany pasjansa",
+      "url": "https://www.pasjanse.com.pl/",
+      "snippet": "Pasjans to bardzo popularna jednoosobowa gra karciana wystepująca w wielu ciekawych odmianach. Do układania klasycznego …"
+    }
+  ]
+}

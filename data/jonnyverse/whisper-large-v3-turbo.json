@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/whisper-large-v3-turbo",
+  "slug": "jonnyverse-whisper-large-v3-turbo",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/whisper-large-v3-turbo",
+  "created_at": "2026-09-04T22:29:21.000Z",
+  "updated_at": "2026-09-04T22:29:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:quantized:openai/whisper-large-v3-turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14463784331,
+  "storage_human": "14.5 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": ".. يا زهراء .. لطميات مكتوبة - منتديات موقع الميزان",
+      "url": "https://www.mezan.net/vb/showthread.php?t=13910",
+      "snippet": "يا مُمْتَحَنَةُ امْتَحَنَكِ اللهُ الَّذي خَلَقَكِ قَبْلَ اَنْ يَخْلُقَكِ، فَوَجَدَكِ لِمَا امْتَحَنَكِ صابِرَةً، وَزَعَمْنا اَنّا لَكِ اَوْلِياءُ وَمُصَدِّقُونَ وَصابِرُونَ لِكُلِّ ما اَتانا بِهِ اَبُوكِ صَلَّى ..."
+    },
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "Whisper large-v3-turbo is a finetuned version of a pruned Whisper large-v3. In other words, it's the exact same model, except that the number of decoding layers have reduced from 32 to 4."
+    },
+    {
+      "title": "فهرس كتاب آيـْـاتُ الـغَـدِيـر",
+      "url": "https://www.mezan.net/books/ahloulbayt/algader/html/indexs.html",
+      "snippet": "فهرس موضوعات كتاب آيات الغدير الفصل الأول: بحوث تمهيدية لتفسير آية العصمة من الناس الفصل الثاني: آية الأمر بالتبليغ الفصل الثالث: قصة الغدير الفصل الرابع: آية إكمال الدين الفصل الخامس: آية سأل …"
+    },
+    {
+      "title": "textagent/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/textagent/whisper-large-v3-turbo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "الصحيح من سيرة النبي الأعظم (ص) ج23 - موقع الميزان",
+      "url": "https://www.mezan.net/sayed_ameli/books/s_nabi/23/07.html",
+      "snippet": "خالد يبيد بني جذيمة قتل بني جذيمة في النصوص والآثار: وذكروا: أن قصة بني جذيمة قد حصلت بعد الفتح. قال البلاذري: إنها كانت في شوال ([1]). وقالوا: كان بنو جذيمة ـ وهم قبيلة من عبد القيس أسفل مكة …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "L-0-G-1-C/Behemoth-128B-v3-W4A16-AWQ-16shard",
+  "slug": "l-0-g-1-c-behemoth-128b-v3-w4a16-awq-16shard",
+  "author": "L-0-G-1-C",
+  "url": "https://huggingface.co/L-0-G-1-C/Behemoth-128B-v3-W4A16-AWQ-16shard",
+  "created_at": "2026-09-04T17:27:36.000Z",
+  "updated_at": "2026-09-04T17:28:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "base_model:mistralai/Mistral-Medium-3.5-128B",
+    "base_model:quantized:mistralai/Mistral-Medium-3.5-128B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19519255760,
+  "parameters_human": "19.52B",
+  "storage_bytes": 69744456076,
+  "storage_human": "69.7 GB",
+  "base_model": "mistralai/Mistral-Medium-3.5-128B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'Équipe - L'actualité du sport en continu.",
+      "url": "https://m.lequipe.fr/",
+      "snippet": "Le sport en direct sur L'Équipe. Les informations, résultats et classements de tous les sports. Directs commentés, images et vidéos à …"
+    },
+    {
+      "title": "L-0-G-1-C/Behemoth-128B-v3-W4A16-AWQ · Hugging Face",
+      "url": "https://huggingface.co/L-0-G-1-C/Behemoth-128B-v3-W4A16-AWQ",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "L (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/L_(lettre)",
+      "snippet": "L (lettre) ... L est la douzième lettre et la 9e consonne de l' alphabet latin. L a en français la valeur phonétique [l]."
+    },
+    {
+      "title": "BeaverAI/Behemoth-128B-v3b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/Behemoth-128B-v3b-GGUF",
+      "snippet": "Instructions to use BeaverAI/Behemoth-128B-v3b-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use BeaverAI/Behemoth-128B-v3b-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "L - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/L",
+      "snippet": "In English orthography, l usually represents the phoneme / l /, which can have several sound values, depending on the speaker's …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kaorisakam/mae-retrieval-practice",
+  "slug": "kaorisakam-mae-retrieval-practice",
+  "author": "kaorisakam",
+  "url": "https://huggingface.co/kaorisakam/mae-retrieval-practice",
+  "created_at": "2026-09-04T21:36:32.000Z",
+  "updated_at": "2026-09-04T21:36:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "le service de recherche de particuliers avec l'annuaire - Pages Jaunes",
+      "url": "https://www.pagesjaunes.fr/pagesblanches",
+      "snippet": "1 day ago · Pages Blanches est l’annuaire des particuliers : vous pouvez y trouver un numéro de téléphone (fixe ou portable) ou une …"
+    },
+    {
+      "title": "kaorisakam (Kaori Sakamoto) - Hugging Face",
+      "url": "https://huggingface.co/kaorisakam",
+      "snippet": "Recent Activity updated a modelabout 10 hours ago kaorisakam/cnn-transformer-finetuned published a modelabout 10 hours ago kaorisakam/cnn-transformer-finetuned View all activity"
+    },
+    {
+      "title": "Annuaire inversé sur PagesBlanches, l'annuaire des particuliers",
+      "url": "https://www.pagesjaunes.fr/annuaireinverse",
+      "snippet": "2 days ago · Annuaire des particuliers PagesBlanches, retrouvez le numéro de téléphone ou l'adresse d'une personne."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Pages Jaunes",
+      "url": "https://www.pagesjaunes.fr/",
+      "snippet": "3 days ago · Accédez à 4 millions de pros : infos, horaires, avis, services en ligne, aide IA, actus et conseils pour vous aider à choisir …"
+    }
+  ]
+}

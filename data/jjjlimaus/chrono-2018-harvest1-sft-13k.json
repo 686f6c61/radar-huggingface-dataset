@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/chrono-2018-harvest1-sft-13k",
+  "slug": "jjjlimaus-chrono-2018-harvest1-sft-13k",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/chrono-2018-harvest1-sft-13k",
+  "created_at": "2026-09-04T21:02:37.000Z",
+  "updated_at": "2026-09-05T01:41:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sn38-nanochrono",
+    "chronollm",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24222274488,
+  "storage_human": "24.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Licenciement garde à domicile et dernier volet Pajemploi",
+      "url": "http://forum.magicmaman.com/votrevie/Vieactive/licenciement-domicile-pajemploi-sujet-3661982-1.htm",
+      "snippet": "Frog 26/10/2005 à 23:21 Je suis un peu perdue avec ce que je dois déclarer sur mon dernier volet Pajemploi. J'imagine qu'il faut que …"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/datasets",
+      "snippet": "jjjlimaus's datasets26 Sort: Recently updated jjjlimaus/sn38-quality-gold-100k Viewer •Updated 2 days ago•5.04M• 141"
+    },
+    {
+      "title": "HELP Pajemploi 1ère déclaration - Forum Votre Vie",
+      "url": "http://forum.magicmaman.com/votrevie/Maisonetquotidien/help-pajemploi-declaration-sujet-3683177-1.htm",
+      "snippet": "Oct 26, 2010 · Quant à la déclaration pajemploi, c'est une autre maman qui m'a dit quoi noter et c'est tous les mois pareil (sauf les …"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus",
+      "snippet": "jjjlimaus/nanoexpand-2018-quality-gold-cont Text Generation • 2B•Updated 6 minutes ago"
+    },
+    {
+      "title": "pajemploi , 2eme enfant? - Forum Bébé (0-3 ans)",
+      "url": "http://forum.magicmaman.com/viepratique/creche-assistante-maternelle-nounou/pajemploi-2eme-enfant-sujet-2608-1.htm",
+      "snippet": "Jul 31, 2007 · pajemploi , 2eme enfant? blanca 31/07/2007 à 11:47 bonjour, j'aijuste une petite question, ma fille est gardée par une …"
+    }
+  ]
+}

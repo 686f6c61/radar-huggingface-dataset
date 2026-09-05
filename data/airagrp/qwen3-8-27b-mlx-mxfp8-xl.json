@@ -5,7 +5,7 @@
   "author": "airagrp",
   "url": "https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-XL",
   "created_at": "2026-08-30T13:25:37.000Z",
-  "updated_at": "2026-09-04T01:24:21.000Z",
+  "updated_at": "2026-09-04T18:06:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "katali13/Sous-Chef-27B-GGUF",
+  "slug": "katali13-sous-chef-27b-gguf",
+  "author": "katali13",
+  "url": "https://huggingface.co/katali13/Sous-Chef-27B-GGUF",
+  "created_at": "2026-09-04T23:41:30.000Z",
+  "updated_at": "2026-09-05T00:05:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "security",
+    "reverse-engineering",
+    "function-calling",
+    "bakery",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 52731415040,
+  "storage_human": "52.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intelligent Contract Management: eSign, Store, Renew | Signeasy",
+      "url": "https://signeasy.com/",
+      "snippet": "Signeasy's Intelligent Contract Management platform lets you eSign, store, search, and manage contracts in one place. Trusted by …"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Fill and Sign Docs: Signeasy - Google Play पर ऐप्लिकेशन",
+      "url": "https://play.google.com/store/apps/details?id=com.glykka.easysign&hl=hi",
+      "snippet": "साइनईज़ी दस्तावेजों पर हस्ताक्षर करने, फॉर्म भरने और हस्ताक्षर करने तथा ई-हस्ताक्षर के लिए दस्तावेज भेजने का एक …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=gguf",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "काम की बात: डेटा चोरी के बढ़ते खतरे के बीच क्या है बैकअप का '3-2-1 …",
+      "url": "https://www.amarujala.com/technology/tip-of-the-day/what-is-3-2-1-1-0-data-backup-rule-how-it-protects-from-cyber-treats-ransomware-2026-09-03",
+      "snippet": "1 day ago · काम की बात: डेटा चोरी के बढ़ते खतरे के बीच क्या है बैकअप का '3-2-1-1-0 रूल'? जानिए कैसे करता है काम"
+    }
+  ]
+}

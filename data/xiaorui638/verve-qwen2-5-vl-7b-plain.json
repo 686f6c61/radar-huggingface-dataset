@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "xiaorui638/VERVE-Qwen2.5-VL-7B-plain",
+  "slug": "xiaorui638-verve-qwen2-5-vl-7b-plain",
+  "author": "xiaorui638",
+  "url": "https://huggingface.co/xiaorui638/VERVE-Qwen2.5-VL-7B-plain",
+  "created_at": "2026-09-04T20:24:23.000Z",
+  "updated_at": "2026-09-04T20:25:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836456,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment debloquer une liseuse Kobo aura - Forum Matériel & Système",
+      "url": "https://forums.commentcamarche.net/forum/affich-38273354-comment-debloquer-une-liseuse-kobo-aura",
+      "snippet": "Feb 27, 2026 · Bonjour ! (Avant de commencer : Rechargez votre liseuse pendant au moins une heure. Vérifiez qu'une connexion Wi …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-VL-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nouvelle imprimante - Imprimante",
+      "url": "https://forums.commentcamarche.net/forum/affich-38271567-nouvelle-imprimante",
+      "snippet": "Feb 20, 2026 · Bonjour, Ce qui est sur le téléphone y reste et pourra le cas échéant être imprimé avec une application connectée à la …"
+    },
+    {
+      "title": "xiaorui638/FINER-Qwen2_5-VL-7B · Hugging Face",
+      "url": "https://huggingface.co/xiaorui638/FINER-Qwen2_5-VL-7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "python - Error \" (unicode error) 'unicodeescape' codec can't decode ...",
+      "url": "https://stackoverflow.com/questions/37400974/error-unicode-error-unicodeescape-codec-cant-decode-bytes-in-position-2-3",
+      "snippet": "May 24, 2016 · I get the following error: SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: …"
+    }
+  ]
+}

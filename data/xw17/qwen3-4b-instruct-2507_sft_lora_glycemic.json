@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen3-4B-Instruct-2507_SFT_lora_glycemic",
+  "slug": "xw17-qwen3-4b-instruct-2507_sft_lora_glycemic",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen3-4B-Instruct-2507_SFT_lora_glycemic",
+  "created_at": "2026-09-04T17:24:12.000Z",
+  "updated_at": "2026-09-04T17:24:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77549418,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diesel Driving Academy - YouTube",
+      "url": "https://www.m.youtube.com/watch?v=dOnXaiLMcYU",
+      "snippet": "http://www.dda.edu/Locations in Shreveport and Baton Rouge, La and Little Rock, Ar. Check out our website to fill out an application …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Niggun Nyet Nyet Nikavo | The Lubavitcher Rebbe - YouTube",
+      "url": "https://www.m.youtube.com/watch?v=TBEGnslWVBc",
+      "snippet": "This nigun was sung by Reb Michoel Dworkin, a prominent chosid, upon the Release of Rabbi Yosef Yitzchak Schneerson from …"
+    },
+    {
+      "title": "xw17/Qwen3-4B-Instruct-2507_SFT_lora_lifesnaps · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen3-4B-Instruct-2507_SFT_lora_lifesnaps",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B, this variant has only instruct training without thinking mode support."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "3MPER0RR/DeepSeek-R1-Distill-Llama-8B-3MPER0RR-abliterated",
+  "slug": "3mper0rr-deepseek-r1-distill-llama-8b-3mper0rr-abliterated",
+  "author": "3MPER0RR",
+  "url": "https://huggingface.co/3MPER0RR/DeepSeek-R1-Distill-Llama-8B-3MPER0RR-abliterated",
+  "created_at": "2026-09-04T21:46:57.000Z",
+  "updated_at": "2026-09-04T22:10:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077765268,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Target stores in New York",
+      "url": "https://www.target.com/store-locator/store-directory/new-york",
+      "snippet": "Find all Target store locations in New York."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Target Manhattan Herald Square Store, New York, NY",
+      "url": "https://www.target.com/sl/manhattan-herald-square/3277",
+      "snippet": "Shop Target Manhattan Herald Square Store for furniture, electronics, clothing, groceries, home goods and more at prices you will love."
+    },
+    {
+      "title": "unsloth/DeepSeek-R1-Distill-Llama-8B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-8B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Target Stores in New York (108 Locations) - Sep 2026",
+      "url": "https://www.storelocators.com/store-lists/target/new-york",
+      "snippet": "1 day ago · All 108 Target store locations in New York with addresses, phone numbers, and hours. Updated daily."
+    }
+  ]
+}

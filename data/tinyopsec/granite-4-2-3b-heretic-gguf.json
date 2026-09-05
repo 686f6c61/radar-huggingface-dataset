@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/granite-4.2-3b-Heretic-GGUF",
+  "slug": "tinyopsec-granite-4-2-3b-heretic-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic-GGUF",
+  "created_at": "2026-09-04T21:29:45.000Z",
+  "updated_at": "2026-09-04T21:35:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 16836106368,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/",
+      "snippet": "Quora is a place to gain and share knowledge. It's a platform to ask questions and connect with people who contribute unique …"
+    },
+    {
+      "title": "tinyopsec/granite-4.2-3b-Heretic · Hugging Face",
+      "url": "https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic",
+      "snippet": "Instructions to use tinyopsec/granite-4.2-3b-Heretic with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Press - Quora",
+      "url": "https://www.quora.com/press",
+      "snippet": "Try again Please enable Javascript and refresh the page to continue"
+    },
+    {
+      "title": "snellchapo/granite-4.2-3b-heretic-abliterated · Hugging Face",
+      "url": "https://huggingface.co/snellchapo/granite-4.2-3b-heretic-abliterated",
+      "snippet": "Instructions to use snellchapo/granite-4.2-3b-heretic-abliterated with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.0-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.0-language-models",
+      "snippet": "The initial release of the Granite 4.0 models included three sizes—micro, tiny, and small—built on dense, dense-hybrid, and mixture-of-experts (MoE) hybrid architectures. Additional model sizes have been added gradually. We provide both base models (checkpoints after pretraining) and instruct models (checkpoints fine-tuned for dialogue, instruction following, helpfulness, and safety)."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Avertry/logos-theological-9b-gguf",
+  "slug": "avertry-logos-theological-9b-gguf",
+  "author": "Avertry",
+  "url": "https://huggingface.co/Avertry/logos-theological-9b-gguf",
+  "created_at": "2026-09-04T21:24:09.000Z",
+  "updated_at": "2026-09-04T21:24:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "gemma2",
+    "epistemology",
+    "theological",
+    "en",
+    "es",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 6647366880,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viaggi Seoul: vacanze volo + hotel | Expedia.it",
+      "url": "https://www.expedia.it/Seoul.d178308.Viaggi-Vacanze",
+      "snippet": "Crea un itinerario personalizzato con hotel, volo e noleggio auto, e approfitta di fantastici sconti! A livello di sistemazioni, avrai a …"
+    },
+    {
+      "title": "LumenSyntax/logos-theological-9b-gguf · Hugging Face",
+      "url": "https://huggingface.co/LumenSyntax/logos-theological-9b-gguf",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Volo+Hotel a Seul da 1337€ | Vacanze al miglior prezzo | Logitravel",
+      "url": "https://www.logitravel.it/viaggi/asia/corea-del-sud/seul/volo-hotel/",
+      "snippet": "Trova il tuo volo + hotel a Seul al miglior prezzo Con i vantaggi di Logitravel: Prenota Online Pagamento sicuro Più economico. A …"
+    },
+    {
+      "title": "Modelfile · LumenSyntax/logos-theological-9b-gguf at main",
+      "url": "https://huggingface.co/LumenSyntax/logos-theological-9b-gguf/blob/main/Modelfile",
+      "snippet": "LumenSyntax / logos-theological-9b-gguf like 0 GGUF English Spanish gemma2 epistemology theological conversational License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Vacanze a Seoul | Offerte Viaggi | lastminute.com",
+      "url": "https://www.it.lastminute.com/vacanze/kr_corea-del-sud/seoul-d1277157710",
+      "snippet": "3 days ago · Scopri i nostri pacchetti vacanze a Seoul e vivi momenti indimenticabili. Prenota offerte volo+hotel da 825 € su …"
+    }
+  ]
+}

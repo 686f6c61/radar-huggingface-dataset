@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/Viggle-Animate",
+  "slug": "technobaptist-viggle-animate",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/Viggle-Animate",
+  "created_at": "2026-09-04T22:18:10.000Z",
+  "updated_at": "2026-09-04T22:18:10.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video-editing",
+    "character-replacement",
+    "video-to-video",
+    "distillation",
+    "dmd",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33122992896,
+  "parameters_human": "33.12B",
+  "storage_bytes": 68943757264,
+  "storage_human": "68.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Troubleshoot Your Wifi Check for Outages Prepare to Talk to Your ISP How Much Speed Do You Need? Download Mobile Apps …"
+    },
+    {
+      "title": "Viggle | Turn your imagination into 3D motion",
+      "url": "https://viggle.ai/",
+      "snippet": "Used by 50M+people worldwide. Powered by our proprietary Joint Space-Time (JST) model, Viggle generates characters, motion, and scenes together in a shared 4D space. Today, creators turn ideas into content faster with Viggle, while professional teams and studios bring greater control and flexibility to production workflow on the platform."
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Free AI Animation Generator — Image to Video | Viggle AI",
+      "url": "https://viggle.ai/tools/ai-animation-generator",
+      "snippet": "An AI animation generator takes a still image or text prompt and produces an animated video of it — making the character move, dance, or perform. On Viggle, this means full-body motion animation driven by your choice of motion template or reference video, powered by Viggle's self-developed JST-1 video-3D foundation model."
+    },
+    {
+      "title": "Speedtest - rychlost.cz",
+      "url": "https://rychlost.cz/speedtest/",
+      "snippet": "3 days ago · 100 nejlepších testů. výsledky měření rychlosti ADSL. srovnání mobilních připojení. srovnání připojení kabelových …"
+    }
+  ]
+}

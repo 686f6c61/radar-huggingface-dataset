@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Avertry/Baptist-Christian-Bible-Expert-v2.0-12B-i1-GGUF",
+  "slug": "avertry-baptist-christian-bible-expert-v2-0-12b-i1-gguf",
+  "author": "Avertry",
+  "url": "https://huggingface.co/Avertry/Baptist-Christian-Bible-Expert-v2.0-12B-i1-GGUF",
+  "created_at": "2026-09-04T21:57:58.000Z",
+  "updated_at": "2026-09-04T21:57:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Baptist",
+    "Christian",
+    "Bible",
+    "Theology",
+    "Jesus",
+    "Seminary",
+    "SBC",
+    "Protestant",
+    "en",
+    "base_model:sleepdeprived3/Baptist-Christian-Bible-Expert-v2.0-12B",
+    "base_model:quantized:sleepdeprived3/Baptist-Christian-Bible-Expert-v2.0-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 141939066437,
+  "storage_human": "141.9 GB",
+  "base_model": "sleepdeprived3/Baptist-Christian-Bible-Expert-v2.0-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Il Mattino",
+      "url": "https://www.ilmattino.it/",
+      "snippet": "Una lezione agli influencer di Ilaria Ravarino Paolantoni incorona De Martino: «Può essere il nuovo Arbore». Poi l’annuncio: «Torna …"
+    },
+    {
+      "title": "Baptist-Christian-Bible-Expert-v2.0-12B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Baptist-Christian-Bible-Expert-v2.0-12B-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "NAPOLI - Il Mattino",
+      "url": "https://www.ilmattino.it/NAPOLI/",
+      "snippet": "LA PROMOZIONE Il Mattino, ecco la promo estate Digital+: 3 euro al mese per 3 mesi L'INCHIESTA Figlio assunto come manager …"
+    },
+    {
+      "title": "Baptist-Christian-Bible-Expert-12b-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Baptist-Christian-Bible-Expert-12b-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ULTIMA ORA - Il Mattino",
+      "url": "https://www.ilmattino.it/t/ultima-ora",
+      "snippet": "Apr 16, 2026 · Nessun pentimento per il 16enne che ha ucciso la madre a Centocelle: «Quella sera non volevo dormire con lei» …"
+    }
+  ]
+}

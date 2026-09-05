@@ -5,7 +5,7 @@
   "author": "AlphaAvatar",
   "url": "https://huggingface.co/AlphaAvatar/persona-speaker-vector-onnx",
   "created_at": "2026-09-03T11:20:36.000Z",
-  "updated_at": "2026-09-03T11:20:49.000Z",
+  "updated_at": "2026-09-04T05:41:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

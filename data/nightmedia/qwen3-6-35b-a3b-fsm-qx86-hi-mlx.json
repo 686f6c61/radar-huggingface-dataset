@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "nightmedia/Qwen3.6-35B-A3B-FSM-qx86-hi-mlx",
+  "slug": "nightmedia-qwen3-6-35b-a3b-fsm-qx86-hi-mlx",
+  "author": "nightmedia",
+  "url": "https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-FSM-qx86-hi-mlx",
+  "created_at": "2026-09-04T04:41:23.000Z",
+  "updated_at": "2026-09-05T00:15:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "unsloth",
+    "qwen3_5",
+    "qwen3_6",
+    "qwen",
+    "qwen3.5",
+    "qwen3.6",
+    "distillation",
+    "reasoning",
+    "chain-of-thought",
+    "long-cot",
+    "sft",
+    "lora",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "multilingual",
+    "math",
+    "stem",
+    "coding",
+    "research",
+    "experimental",
+    "merge",
+    "fable",
+    "mergekit",
+    "Deckard(qx)",
+    "mxfp8",
+    "mxfp4",
+    "mlx",
+    "en",
+    "zh",
+    "ja",
+    "es",
+    "base_model:AllSpark-Research/Iris-mini",
+    "base_model:adapter:AllSpark-Research/Iris-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 39511115042,
+  "storage_human": "39.5 GB",
+  "base_model": "AllSpark-Research/Iris-mini, thomsonreuters/Thomson-1.0-Small, nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zdarma Orgasmus s vibrátorem pornovidea | xHamster",
+      "url": "https://cz.xhamster.com/tags/vibrator-orgasm",
+      "snippet": "Podívejte se na Orgasmus s vibrátorem pornovidea na xHamster. Začněte hned sledovat všechna Orgasmus s vibrátorem XXX videa!"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-DarleyQuinn-qx86-hi-mlx - Hugging Face",
+      "url": "https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-DarleyQuinn-qx86-hi-mlx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vibrator Orgasm Porno Videa | Pornhub.com",
+      "url": "https://cz.pornhub.com/video/search?search=vibrator+orgasm",
+      "snippet": "Procházejte naši ohromující selekci porno videí v HD kvalitě na jakémkoliv zařízení."
+    },
+    {
+      "title": "nightmedia/Qwen3.6-35B-A3B-qx86-hi-mlx · Hugging Face",
+      "url": "https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-qx86-hi-mlx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Zdarma Ženský Orgasmus pornovidea | xHamster",
+      "url": "https://cz.xhamster.com/tags/female-orgasm",
+      "snippet": "Podívejte se na Ženský Orgasmus pornovidea na xHamster. Začněte hned sledovat všechna Ženský Orgasmus XXX videa!"
+    }
+  ]
+}

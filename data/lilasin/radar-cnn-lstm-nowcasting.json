@@ -5,13 +5,17 @@
   "author": "LilaSin",
   "url": "https://huggingface.co/LilaSin/radar-cnn-lstm-nowcasting",
   "created_at": "2026-09-04T15:18:37.000Z",
-  "updated_at": "2026-09-04T17:47:49.000Z",
+  "updated_at": "2026-09-04T18:07:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "radar-nowcasting",
+    "cnn-lstm",
+    "pytorch",
+    "气象雷达",
     "license:mit",
     "region:us"
   ],

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sosalana/sosa-lana",
+  "slug": "sosalana-sosa-lana",
+  "author": "sosalana",
+  "url": "https://huggingface.co/sosalana/sosa-lana",
+  "created_at": "2026-09-04T23:17:04.000Z",
+  "updated_at": "2026-09-04T23:32:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151112264,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "ordlibrary/solana · Hugging Face",
+      "url": "https://huggingface.co/ordlibrary/solana",
+      "snippet": "DeepSolanaZKr-1: Official Model for Solana Terminals Project Model Description DeepSolanaZKr-1 is a revolutionary AI model that serves as the official intelligence layer for the Solana Terminals project. Built on the DeepSeek-R1-Zero foundation model, it represents the world's first production-ready AI system that natively integrates recursive zero-knowledge proofs (ZKRs) with Solana's high ..."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "ordlibrary/DeepSeek-R1-Solana-Reasoning · Hugging Face",
+      "url": "https://huggingface.co/ordlibrary/DeepSeek-R1-Solana-Reasoning",
+      "snippet": "Model Card: DeepSolanaZKr-1 The First AI-ZK Framework for High-Performance Blockchains Model Overview Model Name: DeepSolanaZKr-1 Developed By: 8 Bit Labs, in collaboration with Solana and DeepSeek Model Type: Hybrid AI-Zero-Knowledge Proof Framework Framework: Solana Blockchain + DeepSeek AI + Recursive ZK Proofs License: Apache 2.0 Release ..."
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA …"
+    }
+  ]
+}

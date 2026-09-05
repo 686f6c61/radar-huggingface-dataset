@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sdgghs556/MyAwesomeModel-TestRepository",
+  "slug": "sdgghs556-myawesomemodel-testrepository",
+  "author": "sdgghs556",
+  "url": "https://huggingface.co/sdgghs556/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-04T18:48:18.000Z",
+  "updated_at": "2026-09-04T18:48:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SPAM - email provenant soit disant de Doctolib",
+      "url": "https://communaute.orange.fr/t5/prot%C3%A9ger-mes-donn%C3%A9es-et-mon/SPAM-email-provenant-soit-disant-de-Doctolib/td-p/2335008",
+      "snippet": "Oct 15, 2020 · Dans ce premier exemple, il est soit disant question de valider l'adresse mail de mon compte Doctolib. Je n'ai pas de …"
+    },
+    {
+      "title": "sdsfsf56/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/sdsfsf56/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "RV DOCTOLIB PAR MAIL QUI NE ME SONT PAS DESTINÉS",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/RV-DOCTOLIB-PAR-MAIL-QUI-NE-ME-SONT-PAS-DESTIN%C3%89S/td-p/2360709",
+      "snippet": "Nov 12, 2020 · je reçois trop souvent des mails venant de DOCTOLIB pour des rendez vous chez des médecins, en SPAM, alors …"
+    },
+    {
+      "title": "sdgghs556 (5657) - Hugging Face",
+      "url": "https://huggingface.co/sdgghs556",
+      "snippet": "User profile of 5657 on Hugging Face Recent Activity updated a model9 days ago sdgghs556/MyAwesomeModel-TestRepo published a model9 days ago sdgghs556/MyAwesomeModel-TestRepo View all activity"
+    },
+    {
+      "title": "Résolu : prendre RDV en boutique - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/offres-mobile-Orange-et-options/prendre-RDV-en-boutique/td-p/1675340",
+      "snippet": "Oct 20, 2018 · Bonjour, L'an dernier j'avais pris rdv en boutique pour mettre en service mon nouveau téléphone mobile. Je voudrais …"
+    }
+  ]
+}

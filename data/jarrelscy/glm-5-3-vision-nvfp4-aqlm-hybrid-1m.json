@@ -5,7 +5,7 @@
   "author": "jarrelscy",
   "url": "https://huggingface.co/jarrelscy/GLM-5.3-Vision-NVFP4-AQLM-hybrid-1m",
   "created_at": "2026-09-03T16:37:11.000Z",
-  "updated_at": "2026-09-03T16:41:50.000Z",
+  "updated_at": "2026-09-04T15:20:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 210042476626,
   "parameters_human": "210.04B",
-  "storage_bytes": 293784491490,
-  "storage_human": "293.8 GB",
+  "storage_bytes": 552743768634,
+  "storage_human": "552.7 GB",
   "base_model": "RadixArk/GLM-5.3-NVFP4",
   "formats": [
     "safetensors"

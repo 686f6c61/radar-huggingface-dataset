@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "Aliados/gemma-3-1b-it-int4-awq",
+  "slug": "aliados-gemma-3-1b-it-int4-awq",
+  "author": "Aliados",
+  "url": "https://huggingface.co/Aliados/gemma-3-1b-it-int4-awq",
+  "created_at": "2026-09-04T21:31:24.000Z",
+  "updated_at": "2026-09-04T21:31:24.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "conversational",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "awq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 1045794386,
+  "storage_human": "1.0 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How “Habit Stacking” Can Make Your Morning Routine Way ... - Kitchn",
+      "url": "https://www.thekitchn.com/morning-habit-stacks-23533544",
+      "snippet": "May 8, 2023 · Enter: habit stacking. I love a good habit stack, and the secret to a successful one, according to habit guru James …"
+    },
+    {
+      "title": "gaunernst/gemma-3-1b-it-int4-awq · Hugging Face",
+      "url": "https://huggingface.co/gaunernst/gemma-3-1b-it-int4-awq",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "9 Habit Stacking Routines to Boost Your Productivity - Entrepreneur",
+      "url": "https://www.entrepreneur.com/living/9-habit-stacking-routines-to-boost-your-productivity/479325",
+      "snippet": "Sep 12, 2024 · 9 Habit Stack Routines To Boost Your Productivity and Improve Your Health Consistency drives success. Eliminate …"
+    },
+    {
+      "title": "gaunernst/gemma-3-1b-it-int4 · Hugging Face",
+      "url": "https://huggingface.co/gaunernst/gemma-3-1b-it-int4",
+      "snippet": "Description Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. Gemma 3 models are multimodal, handling text and image input and generating text output, with open weights for both pre-trained variants and instruction-tuned variants."
+    },
+    {
+      "title": "Morning Stack: Build a Routine That Compounds Daily",
+      "url": "https://www.freshkit.co.uk/the-morning-stack/",
+      "snippet": "Apr 17, 2025 · A morning stack is far more than a simple to-do list of morning activities. This approach involves intentionally …"
+    }
+  ]
+}

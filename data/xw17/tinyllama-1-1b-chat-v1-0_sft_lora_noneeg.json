@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_noneeg",
+  "slug": "xw17-tinyllama-1-1b-chat-v1-0_sft_lora_noneeg",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_noneeg",
+  "created_at": "2026-09-04T18:52:34.000Z",
+  "updated_at": "2026-09-04T18:52:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25271744,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KURNIK - Gry Online - Szachy, Brydż, Literaki itp.",
+      "url": "https://www.kurnik.pl/",
+      "snippet": "GRY ONLINE z innymi osobami; szachy, brydż, literaki, tysiąc, kulki, mahjong, kalambury itp."
+    },
+    {
+      "title": "xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_galaxyppg · Hugging Face",
+      "url": "https://huggingface.co/xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_galaxyppg",
+      "snippet": "Instructions to use xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_galaxyppg with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "x.kurnik.pl",
+      "url": "https://x.kurnik.pl/",
+      "snippet": "Kurnik to portal oferujący różnorodne gry online, w tym karciane i słowne, umożliwiający grę multiplayer."
+    },
+    {
+      "title": "Tysiąc ONLINE, zagraj - Kurnik",
+      "url": "https://www.kurnik.pl/tysiac/",
+      "snippet": "Tysiąc gra multiplayer - Gra karciana dla 2-4 graczy; występuje licytacja i właściwa rozgrywka; punkty za zbieranie lew i meldunki …"
+    },
+    {
+      "title": "TinyLlama-1.1B-Chat-v1.0_finetuned_1_lora - Hugging Face",
+      "url": "https://huggingface.co/xw17/TinyLlama-1.1B-Chat-v1.0_finetuned_1_lora",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "darkbit1001/Jackrong-Qwopus3.8-27B-Flash-EXL3-4.00bpw-HB8HQ",
+  "slug": "darkbit1001-jackrong-qwopus3-8-27b-flash-exl3-4-00bpw-hb8hq",
+  "author": "darkbit1001",
+  "url": "https://huggingface.co/darkbit1001/Jackrong-Qwopus3.8-27B-Flash-EXL3-4.00bpw-HB8HQ",
+  "created_at": "2026-09-04T20:22:35.000Z",
+  "updated_at": "2026-09-04T20:29:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8413517184,
+  "parameters_human": "8.41B",
+  "storage_bytes": 16847400242,
+  "storage_human": "16.8 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compétitions – DISTRICT DE L'ISERE DE FOOTBALL",
+      "url": "https://isere.fff.fr/competitions/",
+      "snippet": "Bienvenue dans la section « Compétitions ». Retrouvez ici l’ensemble des résultats, classements, agendas et calendriers ainsi que …"
+    },
+    {
+      "title": "Jackrong (Jackrong) - Hugging Face",
+      "url": "https://huggingface.co/Jackrong/collections",
+      "snippet": "User profile of Jackrong on Hugging Face This collection features the advanced Qwopus3.6 series of multimodal large models, which are fine-tuned from the Qwen3.6 base models with a focus on e"
+    },
+    {
+      "title": "Clubs de Football - Isère : résultats, classements, calendrier des ...",
+      "url": "https://scorenco.com/football/clubs?department=38",
+      "snippet": "Suivez les résultats et les classements des équipes de Football dans votre région. Restez informés pour ne rien manquer de l'action …"
+    },
+    {
+      "title": "darkbit1001/Qwen3.8-27B-exl3-4.00bpw-hb8 · Hugging Face",
+      "url": "https://huggingface.co/darkbit1001/Qwen3.8-27B-exl3-4.00bpw-hb8",
+      "snippet": "Reporting avg@3 with an 8-hour timeout, max_tokens=32,768, temperature=1.0, and a 256K context window. CoWorkBench: In-house cowork benchmark for evaluating long-horizon tasks across computer science, finance, law, medical, and other productivity domains."
+    },
+    {
+      "title": "Classement Ligue 1 2026/2027 : tableau complet et résultats",
+      "url": "https://www.foot-sur7.fr/776351-classement-ligue-1-2026-2027",
+      "snippet": "3 days ago · Classement Ligue 1 2026/2027 : tableau complet, résultat Ligue 1 de chaque match, programme Ligue 1 de la 3e …"
+    }
+  ]
+}

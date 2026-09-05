@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gptforfree/GPT-6-Astra",
+  "slug": "gptforfree-gpt-6-astra",
+  "author": "gptforfree",
+  "url": "https://huggingface.co/gptforfree/GPT-6-Astra",
+  "created_at": "2026-09-04T22:24:37.000Z",
+  "updated_at": "2026-09-04T22:24:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mijn Abonnement | Diergaarde Blijdorp",
+      "url": "https://diergaardeblijdorp.nl/nl/mijnabonnement",
+      "snippet": "Beheer je abonnement bij Diergaarde Blijdorp eenvoudig online. Bekijk voordelen, pas je gegevens aan en ontdek exclusieve …"
+    },
+    {
+      "title": "GPT-6 Astra: A new generation of intelligence | OpenAI",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "snippet": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science."
+    },
+    {
+      "title": "Word abonnementhouder | Diergaarde Blijdorp",
+      "url": "https://diergaardeblijdorp.nl/nl/abonnementhouders",
+      "snippet": "Word abonnementhouder van Diergaarde Blijdorp en geniet het hele jaar door van onbeperkt dierplezier. Ontdek exclusieve …"
+    },
+    {
+      "title": "GPT-6 Astra Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "snippet": "GPT-6 Astra is our most capable model, built for the hardest end-to-end work. Use it for complex reasoning, coding, computer use, research, and document creation."
+    },
+    {
+      "title": "Abonnement Diergaarde Blijdorp - kortingdierentuinkaartjes.nl",
+      "url": "https://www.kortingdierentuinkaartjes.nl/dierentuin-abonnementen/abonnement-diergaarde-blijdorp/",
+      "snippet": "Diergaarde Blijdorp biedt verschillende abonnementsvormen aan: Prijs is per jaar. Je kan ook voordelig per maand betalen. De …"
+    }
+  ]
+}

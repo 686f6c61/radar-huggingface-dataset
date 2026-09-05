@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "BennyDaBall/Qwopus3.8-27B-Flash-EXL3",
+  "slug": "bennydaball-qwopus3-8-27b-flash-exl3",
+  "author": "BennyDaBall",
+  "url": "https://huggingface.co/BennyDaBall/Qwopus3.8-27B-Flash-EXL3",
+  "created_at": "2026-09-04T19:07:14.000Z",
+  "updated_at": "2026-09-04T19:49:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "exllamav3",
+    "exl3",
+    "qwen3.8",
+    "qwen3.5",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "multimodal",
+    "tabbyapi",
+    "conversational",
+    "tool-use",
+    "code-generation",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15358397804,
+  "storage_human": "15.4 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swap | Overnight Finance Docs",
+      "url": "https://docs.overnight.fi/user-guides/swap",
+      "snippet": "Swap The Swap feature on the Overnight platform streamlines the conversion of various assets into Overnight tokens. Powered by …"
+    },
+    {
+      "title": "Qwen3.8-27B: Runs Locally, Nears Claude Opus (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026",
+      "snippet": "Qwen3.8-27B-FP8 hit #1 on Hacker News with 893 points. A dense 27B model Alibaba says nears Claude Opus-class scores on SWE-bench Pro — and runs on a single RTX 4090."
+    },
+    {
+      "title": "Odos.xyz – Telegram",
+      "url": "https://t.me/s/OdosProtocol/34",
+      "snippet": "Odos.xyz leverages a unique algorithm to traverse a large universe of possible token swap combinations and non-linear paths, …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Odos Shutdown Information",
+      "url": "https://app.odos.xyz/market",
+      "snippet": "Jul 23, 2026 · Official Odos shutdown information and public on-chain records."
+    }
+  ]
+}

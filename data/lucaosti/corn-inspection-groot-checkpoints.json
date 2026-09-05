@@ -5,7 +5,7 @@
   "author": "lucaosti",
   "url": "https://huggingface.co/lucaosti/corn-inspection-groot-checkpoints",
   "created_at": "2026-09-03T17:52:35.000Z",
-  "updated_at": "2026-09-03T17:56:44.000Z",
+  "updated_at": "2026-09-04T20:37:18.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 3144016000,
   "parameters_human": "3.14B",
-  "storage_bytes": 27755303520,
-  "storage_human": "27.8 GB",
+  "storage_bytes": 151080304545,
+  "storage_human": "151.1 GB",
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"

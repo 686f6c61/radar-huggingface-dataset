@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "phuctahong/nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12802717-step100000",
+  "slug": "phuctahong-nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12802717-step100000",
+  "author": "phuctahong",
+  "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12802717-step100000",
+  "created_at": "2026-09-04T23:38:19.000Z",
+  "updated_at": "2026-09-04T23:38:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nanogptpro",
+    "nanogpt",
+    "fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 379359616,
+  "parameters_human": "379.4M",
+  "storage_bytes": 1517486096,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1st UMC JC - First United Methodist Church Johnson City, TN",
+      "url": "https://www.1stchurchjc.org/",
+      "snippet": "First United Methodist Church offers a range of programs for people of all ages. From children's ministries to youth groups and adult …"
+    },
+    {
+      "title": "phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton ...",
+      "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000",
+      "snippet": "phuctahong / nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000 like 0 Safetensors nanogpt-pro nanogpt nanogptpro fineweb-edu License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000 ..."
+    },
+    {
+      "title": "Safe Sanctuaries Information - 1st UMC JC",
+      "url": "https://www.1stchurchjc.org/safe-sanctuaries-information.html",
+      "snippet": "Safe Sanctuaries at 1stChurchJC Safe Sanctuaries is a program within the United Methodist Church designed to insure the safety of …"
+    },
+    {
+      "title": "phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda ...",
+      "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000",
+      "snippet": "phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000 NanoGPT Pro checkpoint uploaded from the princeton-pli/Nanogpt W&B project."
+    },
+    {
+      "title": "Church Staff - 1st UMC JC",
+      "url": "https://www.1stchurchjc.org/church-staff.html",
+      "snippet": "jodie.ihfe@1stChurchJC.org"
+    }
+  ]
+}

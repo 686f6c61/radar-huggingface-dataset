@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "acha-uhan/classification-scratch",
+  "slug": "acha-uhan-classification-scratch",
+  "author": "acha-uhan",
+  "url": "https://huggingface.co/acha-uhan/classification-scratch",
+  "created_at": "2026-09-04T19:34:43.000Z",
+  "updated_at": "2026-09-04T19:34:49.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Formation Achats, Supply Chain & IA | ACHA Consulting",
+      "url": "https://www.achaconsulting.fr/",
+      "snippet": "Depuis 2012, ACHA Consulting, cabinet basé à Auxerre (Yonne), accompagne les entreprises dans l’amélioration de leur …"
+    },
+    {
+      "title": "acha-uhan/model_715950174_mocov3_small · Hugging Face",
+      "url": "https://huggingface.co/acha-uhan/model_715950174_mocov3_small",
+      "snippet": "Model Overview A small -scale implementation of the mocov3 architecture, built for multitask tasks."
+    },
+    {
+      "title": "Wholesale Body Jewelry - Achadirect.com",
+      "url": "https://www.achadirect.com/",
+      "snippet": "Acha is a leading wholesale body jewelry supplier with more than 25 years of experience, offering the best quality materials at the …"
+    },
+    {
+      "title": "Scratch - Search",
+      "url": "https://scratch.mit.edu/search/projects?q=ai",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations."
+    },
+    {
+      "title": "A C H A – Association Culturelle et Historique d'Ardres",
+      "url": "https://acha-ardres.fr/",
+      "snippet": "BIENVENUE SUR LE SITE DE L'ACHA RENDEZ-VOUS : Les visites de l'été organisées par l'ACHA Vous pouvez découvrir le …"
+    }
+  ]
+}

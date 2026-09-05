@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir-GGUF",
+  "slug": "andreasmartin-apertus-v1-1-swiss-embed-0-4b-bidir-gguf",
+  "author": "andreasmartin",
+  "url": "https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir-GGUF",
+  "created_at": "2026-09-04T19:11:13.000Z",
+  "updated_at": "2026-09-04T19:11:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "embeddings",
+    "sentence-transformers",
+    "apertus",
+    "multilingual",
+    "ollama",
+    "feature-extraction",
+    "base_model:andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir",
+    "base_model:quantized:andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-05T02:27:02.879Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "apertus-v1.1-swiss-embed-0.4b-bidir - Hugging Face",
+      "url": "https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lux - AI Coding Agent for Roblox Studio [FREE]",
+      "url": "https://devforum.roblox.com/t/%E2%96%B8-lux-ai-coding-agent-for-roblox-studio-free/4207506",
+      "snippet": "Jan 2, 2026 · Lux - AI That Actually Codes Inside Your Project Stop copy-pasting. Stop debugging AI suggestions. Start shipping. …"
+    },
+    {
+      "title": "andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir-langmoe · Hugging Face",
+      "url": "https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir-langmoe",
+      "snippet": "sentence-transformers Safetensors wikimedia/wikipedia eljuanina/VotingBooklets-v1 ZurichNLP/SwissGov-RSD 6 languages apertus embeddings retrieval multilingual swiss apertus-1.1 bidirectional matryoshka Mixture of Experts language-moe sparse-routing License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use ..."
+    },
+    {
+      "title": "TopbarPlus v3.4.0 | Construct topbar icons with ease ... - Roblox",
+      "url": "https://devforum.roblox.com/t/topbarplus-v340-construct-topbar-icons-with-ease-customise-them-with-themes-dropdowns-captions-labels-and-more/1017485",
+      "snippet": "Jan 31, 2021 · ⭐ v3.2.5 (Update Required) - June 22nd 2025 ㅤ This covers significant improvements and fixes - it’s strongly …"
+    }
+  ]
+}

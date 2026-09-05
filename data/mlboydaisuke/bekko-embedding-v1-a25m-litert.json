@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/bekko-embedding-v1-a25m-LiteRT",
   "created_at": "2026-08-31T07:48:17.000Z",
-  "updated_at": "2026-08-31T07:48:44.000Z",
+  "updated_at": "2026-09-04T15:28:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -26,7 +26,7 @@
     "matryoshka",
     "feature-extraction",
     "base_model:hotchpotch/bekko-embedding-v1-a25m",
-    "base_model:finetune:hotchpotch/bekko-embedding-v1-a25m",
+    "base_model:quantized:hotchpotch/bekko-embedding-v1-a25m",
     "license:mit",
     "region:us"
   ],

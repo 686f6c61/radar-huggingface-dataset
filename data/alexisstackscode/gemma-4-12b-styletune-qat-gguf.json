@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alexisStacksCode/Gemma-4-12B-StyleTune-QAT-GGUF",
+  "slug": "alexisstackscode-gemma-4-12b-styletune-qat-gguf",
+  "author": "alexisStacksCode",
+  "url": "https://huggingface.co/alexisStacksCode/Gemma-4-12B-StyleTune-QAT-GGUF",
+  "created_at": "2026-09-04T19:07:44.000Z",
+  "updated_at": "2026-09-04T19:14:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:Gryphe/Gemma-4-12B-StyleTune",
+    "base_model:quantized:Gryphe/Gemma-4-12B-StyleTune",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7823613760,
+  "storage_human": "7.8 GB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized, Gryphe/Gemma-4-12B-StyleTune",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Wiself/gemma-4-12B-Styletune-Voice · Hugging Face",
+      "url": "https://huggingface.co/Wiself/gemma-4-12B-Styletune-Voice",
+      "snippet": "This is not a model. It is the voice of Gryphe/Gemma-4-12B-StyleTune, extracted into a single portable tensor. Pair it with the Voice tool and any Gemma 4 12B GGUF you already have becomes StyleTune-voiced — reasoning, knowledge, and instruction following untouched."
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "لنشاهد الفروقات ما بين ريميك Halo: Combat Evolved والنسخ السابقة",
+      "url": "https://www.true-gaming.net/home/618690/%D9%84%D9%86%D8%B4%D8%A7%D9%87%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D9%88%D9%82%D8%A7%D8%AA-%D9%85%D8%A7-%D8%A8%D9%8A%D9%86-%D8%B1%D9%8A%D9%85%D9%8A%D9%83-halo-combat-evolved-%D9%88%D8%A7%D9%84%D9%86%D8%B3/",
+      "snippet": "Oct 27, 2025 · تشاركنا قناة Cycu1 على منصة يوتيوب بعرض مطوّل يستعرض لنا الفروقات ما بين ريميك Halo: Combat Evolved والإصدار الأصلي ونسخة الريماستر من اللعبة …"
+    }
+  ]
+}

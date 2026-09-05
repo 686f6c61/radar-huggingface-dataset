@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mudler/Qwen3.8-Flash-Next-APEX-GGUF",
+  "slug": "mudler-qwen3-8-flash-next-apex-gguf",
+  "author": "mudler",
+  "url": "https://huggingface.co/mudler/Qwen3.8-Flash-Next-APEX-GGUF",
+  "created_at": "2026-09-04T06:55:48.000Z",
+  "updated_at": "2026-09-04T20:59:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "apex",
+    "moe",
+    "qwen",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini.pl - produkty z kategorii zdrowia i urody",
+      "url": "https://gemini.pl/",
+      "snippet": "Gemini.pl to Twoja platforma zdrowia i wygodny sposób na zakupy produktów z kategorii zdrowia i urody. Mamy niemal 27 000 …"
+    },
+    {
+      "title": "mudler/Qwen3.8-Flash-Next-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mudler/Qwen3.8-Flash-Next-APEX-GGUF",
+      "snippet": "⭐ GitHub Sponsors Qwen3.8-Flash-Next APEX GGUF Two quantizations of Qwen/Qwen3.8-Flash-Next, a 177 B parameter MoE with 512 experts. Brought to you by the LocalAIteam| APEX Project You need less VRAM than the file size suggests This is the important thing to know about running this model, and every listing that quotes a single number gets it ..."
+    },
+    {
+      "title": "mudler (mudler)",
+      "url": "https://huggingface.co/mudler",
+      "snippet": "updated a model about 2 hours ago mudler/Qwen3.8-Flash-Next-APEX-GGUF · published a model about 2 hours ago mudler/Qwen3.8-Flash-Next-APEX-GGUF · liked a model 10 days ago Qwen/Qwen3.8-Flash-Next View all activity · rf-detr.cpp · Quantized GGUFs for rf-detr.cpp ·"
+    },
+    {
+      "title": "r/LocalLLaMA on Reddit: [Megathread] Qwen3.8-Flash-Next - Release Day",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vyq2v4/megathread_qwen38flashnext_release_day/",
+      "snippet": ""
+    },
+    {
+      "title": "How to Run Qwen3.8 Flash Next Locally: GGUF, Hardware and Benchmarks - Atomic Chat",
+      "url": "https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally",
+      "snippet": "Qwen3.8 Flash Next is the first open model built on the Qwen4 architecture that you can run locally: a 125B Mixture-of-Experts model that activates 6B parameters per token and runs from a 64 GB MacBook up, with its 51B n-gram table paged from SSD. This guide covers our Atomic Dynamic GGUF builds, how much memory each one needs, and the exact setup for both Atomic Chat and llama.cpp."
+    }
+  ]
+}

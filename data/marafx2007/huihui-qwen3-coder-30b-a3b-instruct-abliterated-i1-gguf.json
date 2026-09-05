@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "marafx2007/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF",
+  "slug": "marafx2007-huihui-qwen3-coder-30b-a3b-instruct-abliterated-i1-gguf",
+  "author": "marafx2007",
+  "url": "https://huggingface.co/marafx2007/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF",
+  "created_at": "2026-09-04T19:34:44.000Z",
+  "updated_at": "2026-09-04T19:34:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 324126134016,
+  "storage_human": "324.1 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[WIN] NBA - LiveGames",
+      "url": "https://forums.livegames.co.il/topic/117518-nba/",
+      "snippet": "Dec 2, 2025 · יחס ההמלצה כולל : 1.70 השקעה: השקעה נמוכה בוסטון סלטיקס1.5+ - ניו יורק ניקס 1 בוסטון סלטיקס מתוך עשרה משחקים שבעה …"
+    },
+    {
+      "title": "Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[WIN] נס ציונה /נתניה - LiveGames",
+      "url": "https://forums.livegames.co.il/topic/127473-%D7%A0%D7%A1-%D7%A6%D7%99%D7%95%D7%A0%D7%94-%D7%A0%D7%AA%D7%A0%D7%99%D7%94/",
+      "snippet": "Jun 14, 2026 · יחס ההמלצה כולל : 1.8 השקעה: השקעה גבוהה משחק מענין קשה ולחוץ נס ציונה אבטיחה את מקומה ונכון קבוצה יותר טובה מנתניה. …"
+    },
+    {
+      "title": "Qwen/Qwen3-Coder-30B-A3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[WIN] דאבל - LiveGames",
+      "url": "https://forums.livegames.co.il/topic/129885-%D7%93%D7%90%D7%91%D7%9C/",
+      "snippet": "6 days ago · יחס ההמלצה כולל : 1.6 השקעה: השקעה בינונית דורטמונד נגד המבורג 1 יחס 1.3 90 דק אקדמיק ויסאו נגד פורטו 2 90 דק יחס 1.25 …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "micmacirq/WAN2.2-14B-Rapid-AllInOne",
+  "slug": "micmacirq-wan2-2-14b-rapid-allinone",
+  "author": "micmacirq",
+  "url": "https://huggingface.co/micmacirq/WAN2.2-14B-Rapid-AllInOne",
+  "created_at": "2026-09-05T00:17:11.000Z",
+  "updated_at": "2026-09-05T00:17:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "wan2.2",
+  "languages": [],
+  "tags": [
+    "wan2.2",
+    "wan",
+    "accelerator",
+    "image-to-video",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:finetune:Wan-AI/Wan2.2-I2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1215268118888,
+  "storage_human": "1215.3 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B, Wan-AI/Wan2.2-T2V-A14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "Valkla： [图片] 这个问题有意思。而且不光是中国，整个东亚地区都有相同的情况。这其实是一个比日本人为什么不道歉更大的问题。 …"
+    },
+    {
+      "title": "README.md · Phr00t/WAN2.2-14B-Rapid-AllInOne at ...",
+      "url": "https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne/blob/d833a80e05471502f9a2c1c166ccb21e6ad9432a/README.md",
+      "snippet": "I2V noise and color shifting generally improved, but motion is a bit overexaggerated. V5: Improved overexaggeration of I2V model. euler_a/beta recommended. V6: New merging structure and overall significantly improved quality. I2V noise for the first 1-2 frames still exists, but it clears up much better than previous versions."
+    },
+    {
+      "title": "byrut.rog怎么进入 俄罗斯游戏网站byrut进入方法最新_百度知道",
+      "url": "https://zhidao.baidu.com/question/469050891439827045.html",
+      "snippet": "May 1, 2025 · byrut.rog怎么进入 俄罗斯游戏网站byrut进入方法最新"
+    },
+    {
+      "title": "README.md · Phr00t/WAN2.2-14B-Rapid-AllInOne at ...",
+      "url": "https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne/blob/554d1a5c44b5f4b32656dbeb05d624240ffa1e7b/README.md",
+      "snippet": "554d1a5 WAN2.2-14B-Rapid-AllInOne / README.md Phr00t ... 16b86ed verified about 1 year ago"
+    },
+    {
+      "title": "电脑上“Ⅰ、Ⅱ、Ⅲ、Ⅳ、Ⅴ”怎么输入？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/539034181.html",
+      "snippet": "电脑上“Ⅰ、Ⅱ、Ⅲ、Ⅳ、Ⅴ”怎么输入？“Ⅰ、Ⅱ、Ⅲ、Ⅳ、Ⅴ”是罗马序号，以百度输入法为例：一、打开输入法，可以看到六个图标。如图 …"
+    }
+  ]
+}

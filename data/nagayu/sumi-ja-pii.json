@@ -5,7 +5,7 @@
   "author": "NagaYu",
   "url": "https://huggingface.co/NagaYu/sumi-ja-pii",
   "created_at": "2026-09-03T12:46:32.000Z",
-  "updated_at": "2026-09-03T13:58:28.000Z",
+  "updated_at": "2026-09-04T15:11:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 77,
   "trending_score": 0,
   "parameters": 132413973,
   "parameters_human": "132.4M",

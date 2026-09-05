@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hsanyyasyn97gmail/cosmos-v3",
+  "slug": "hsanyyasyn97gmail-cosmos-v3",
+  "author": "hsanyyasyn97gmail",
+  "url": "https://huggingface.co/hsanyyasyn97gmail/cosmos-v3",
+  "created_at": "2026-09-04T21:41:31.000Z",
+  "updated_at": "2026-09-04T21:42:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938143,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Cosmos 3 - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/cosmos/latest/cosmos3/index.html",
+      "snippet": "Cosmos 3 # Cosmos 3 is a family of omnimodal world models for Physical AI. The models jointly process and generate language, images, video, audio, and action sequences using a unified Mixture-of-Transformers architecture. Cosmos 3 supports Reasoner and Generator runtime surfaces for world understanding, world generation, and action modeling. For model code and examples, see the Cosmos GitHub ..."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love) YouTube 1.5M views • 2 months ago CC"
+    },
+    {
+      "title": "Cosmos 3 — Cosmos Lab - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
+      "snippet": "Cosmos 3 connects understanding, generation, simulation, and action through a shared omnimodal world model that moves fluidly across text, images, video, audio, and actions."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

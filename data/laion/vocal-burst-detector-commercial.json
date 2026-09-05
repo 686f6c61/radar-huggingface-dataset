@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "laion/vocal-burst-detector-commercial",
+  "slug": "laion-vocal-burst-detector-commercial",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/vocal-burst-detector-commercial",
+  "created_at": "2026-09-04T20:07:57.000Z",
+  "updated_at": "2026-09-04T20:08:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "audio",
+    "vocal-burst",
+    "classification",
+    "commercial-use",
+    "en",
+    "base_model:laion/voiceclap-commercial",
+    "base_model:finetune:laion/voiceclap-commercial",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4068765,
+  "storage_human": "4 MB",
+  "base_model": "laion/voiceclap-commercial",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "laion/vocal-burst-detector-v2 · Hugging Face",
+      "url": "https://huggingface.co/laion/vocal-burst-detector-v2",
+      "snippet": "1 Follow LAION eV 895 Audio Classification PyTorch vocal-burst voiceclap laion License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Vocal Burst Classifier V2 — laion/vocal-burst-detector-v2 Hear it in a pipeline Results Training data Inference Reproduce training Files Full class list Recognized classes ..."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=de-DE",
+      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+    },
+    {
+      "title": "laion/vocal-burst-detector-x2 · Hugging Face",
+      "url": "https://huggingface.co/laion/vocal-burst-detector-x2",
+      "snippet": "Class groups vocal-burst-detector-x2 Which file do I want? production/— start here. the laion/voiceclap-large-v2encoder, trained on both halves of laion/vocal-bursts-segments, with bs_score.py(an importable scorer), per_class_recall.json(read this before you read any hit rate) and the full confusion matrices. Jump to The production head."
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

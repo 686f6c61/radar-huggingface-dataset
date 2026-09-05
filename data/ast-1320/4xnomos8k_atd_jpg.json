@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AST-1320/4xNomos8k_atd_jpg",
+  "slug": "ast-1320-4xnomos8k_atd_jpg",
+  "author": "AST-1320",
+  "url": "https://huggingface.co/AST-1320/4xNomos8k_atd_jpg",
+  "created_at": "2026-09-04T19:24:08.000Z",
+  "updated_at": "2026-09-04T19:24:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "super-resolution",
+    "image-to-image",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81689540,
+  "storage_human": "82 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autorisation de sortie du territoire (AST) | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1359",
+      "snippet": "Un mineur français ou étranger qui vit en France et voyage à l'étranger doit avoir une AST s'il ne voyage pas avec une personne …"
+    },
+    {
+      "title": "Phips/4xNomos8k_atd_jpg · Hugging Face",
+      "url": "https://huggingface.co/Phips/4xNomos8k_atd_jpg",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AST - La prévention en action | Action Santé Travail",
+      "url": "https://www.actionsantetravail.fr/",
+      "snippet": "Adhérer chez AST, va au-delà de l’obligation légale ! C’est un partenariat gagnant-gagnant qui assure un accompagnement et un …"
+    },
+    {
+      "title": "4x 4xNomos8k_atd_jpg - OpenModelDB",
+      "url": "https://openmodeldb.info/models/4x-Nomos8k-atd-jpg",
+      "snippet": "A 4x ATD model by Helaman. Link to Github Release Name: 4xNomos8k_atd_jpg License: CC BY 4.0 Author: Philip Hofmann Network: ATD Scale: 4 Release Date: 22.03.2024 Purpose: 4x photo upscaler, handles jpg compression Iterations: 240'000 epoch: 152 batch_size: 6, 3 HR_size: 128, 192 Dataset: nomos8k Number of train images: 8492 OTF Training: Yes Pretrained_Model_G: 003_ATD_SRx4_finetune ..."
+    },
+    {
+      "title": "Autorisation de sortie de territoire (AST) | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R46121",
+      "snippet": "Pour toute explication, consulter les fiches pratiques : Autorisation de sortie du territoire (AST) Avec quels documents un mineur …"
+    }
+  ]
+}

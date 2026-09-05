@@ -5,7 +5,7 @@
   "author": "MrItachi",
   "url": "https://huggingface.co/MrItachi/smart-fitness-ai-qwen-final-model",
   "created_at": "2026-08-28T07:31:16.000Z",
-  "updated_at": "2026-08-28T07:32:38.000Z",
+  "updated_at": "2026-09-04T16:41:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
-  "storage_bytes": 3098889036,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 9273823324,
+  "storage_human": "9.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

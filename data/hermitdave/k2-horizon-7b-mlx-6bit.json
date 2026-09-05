@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hermitdave/K2-Horizon-7B-MLX-6bit",
+  "slug": "hermitdave-k2-horizon-7b-mlx-6bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/K2-Horizon-7B-MLX-6bit",
+  "created_at": "2026-09-04T19:41:21.000Z",
+  "updated_at": "2026-09-04T19:49:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "apple-silicon",
+    "text-generation",
+    "6-bit",
+    "conversational",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 7332919996,
+  "storage_human": "7.3 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=uk",
+      "snippet": "Реклама Усе про Google Google.com in English © 2026"
+    },
+    {
+      "title": "K2-Horizon - a abenzerps Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/abenzerps/k2-horizon",
+      "snippet": "K2-Horizon model family releases, including GGUF and MLX conversions."
+    },
+    {
+      "title": "Дія - Вхід",
+      "url": "https://id.diia.gov.ua/",
+      "snippet": "%VITE_WEBSITE_DESCRIPTION% Увійти через Авторизація через ID.GOV.UA — BankID, КЕП, Дія.Підпис, хмарне сховище …"
+    },
+    {
+      "title": "K2 Horizon 7B: Benchmarks, Pricing & Context Window — Benchgen",
+      "url": "https://benchgen.com/models/ifm/k2-horizon-7b",
+      "snippet": "K2-Horizon-7B is the medium-sized dense model in IFM's K2-Horizon family — a 7B-core decoder-only architecture evaluated across agentic, coding, long-context, and reasoning benchmarks. It ships with intermediate checkpoints released alongside the final model, plus public training data, recipe, training code, and evaluation resources — a notably high transparency bar for a model this size ..."
+    },
+    {
+      "title": "Меблі та інші товари для дому - IKEA",
+      "url": "https://www.ikea.com/ua/uk/?msockid=1a3656efe22a648030934125e3fb6588",
+      "snippet": "IKEA пропонує українським покупцям широкий асортимент товарів привабливого дизайну, а також перелік послуг та рішень …"
+    }
+  ]
+}

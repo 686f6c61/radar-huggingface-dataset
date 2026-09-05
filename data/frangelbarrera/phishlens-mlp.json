@@ -5,7 +5,7 @@
   "author": "frangelbarrera",
   "url": "https://huggingface.co/frangelbarrera/phishlens-mlp",
   "created_at": "2026-08-29T00:17:03.000Z",
-  "updated_at": "2026-08-29T00:18:32.000Z",
+  "updated_at": "2026-09-04T15:00:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 13,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

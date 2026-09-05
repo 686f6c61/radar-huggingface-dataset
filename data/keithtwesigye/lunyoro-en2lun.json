@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "keithtwesigye/lunyoro-en2lun",
+  "slug": "keithtwesigye-lunyoro-en2lun",
+  "author": "keithtwesigye",
+  "url": "https://huggingface.co/keithtwesigye/lunyoro-en2lun",
+  "created_at": "2026-04-10T18:23:56.000Z",
+  "updated_at": "2026-09-04T23:14:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "rw"
+  ],
+  "tags": [
+    "safetensors",
+    "marian",
+    "translation",
+    "lunyoro",
+    "rutooro",
+    "runyoro",
+    "marianmt",
+    "uganda",
+    "en",
+    "rw",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 77026926,
+  "parameters_human": "77.0M",
+  "storage_bytes": 8629326412,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yoga Class in Berlin - Find Your Yoga Studio | konfetti",
+      "url": "https://gokonfetti.com/en-us/berlin/yoga-course/",
+      "snippet": "Yoga class in Berlin – find your perfect yoga experience in the city Looking for a yoga class in Berlin that fits your lifestyle? With 17 …"
+    },
+    {
+      "title": "keithtwesigye/lunyoro-en2lun · Hugging Face",
+      "url": "https://huggingface.co/keithtwesigye/lunyoro-en2lun",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "keithtwesigye/lunyoro-nllb_lun2en · Hugging Face",
+      "url": "https://huggingface.co/keithtwesigye/lunyoro-nllb_lun2en",
+      "snippet": "lunyoro-nllb_lun2en Fine-tuned NLLB-200 model for Lunyoro/Rutooro → English translation. Lunyoro-Rutooro is a Bantu language spoken by the Bunyoro-Kitara and Tooro kingdoms in western Uganda."
+    },
+    {
+      "title": "TRANSLATOR/lunyoro-translator/README.md at main · K227-arch ... - GitHub",
+      "url": "https://github.com/K227-arch/TRANSLATOR/blob/main/lunyoro-translator/README.md",
+      "snippet": "Lunyoro-Rutooro Translator An AI-powered translation system for the Runyoro-Rutooro language of the Bunyoro-Kitara and Tooro kingdoms in Uganda."
+    },
+    {
+      "title": "GitHub - K227-arch/TRANSLATOR",
+      "url": "https://github.com/K227-arch/TRANSLATOR",
+      "snippet": "Lunyoro-Rutooro Translator An AI-powered translation system for the Runyoro-Rutooro language of the Bunyoro-Kitara and Tooro kingdoms in Uganda."
+    }
+  ]
+}

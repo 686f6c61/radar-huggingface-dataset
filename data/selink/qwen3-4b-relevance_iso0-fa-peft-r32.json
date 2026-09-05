@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "selink/Qwen3-4B-relevance_iso0-fa-peft-r32",
+  "slug": "selink-qwen3-4b-relevance_iso0-fa-peft-r32",
+  "author": "selink",
+  "url": "https://huggingface.co/selink/Qwen3-4B-relevance_iso0-fa-peft-r32",
+  "created_at": "2026-09-04T23:22:37.000Z",
+  "updated_at": "2026-09-04T23:22:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "reward-trainer",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275747347,
+  "storage_human": "276 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Music Streaming Service of 2026 - CNET",
+      "url": "https://www.cnet.com/tech/services-and-software/best-music-streaming-service/",
+      "snippet": "Jul 28, 2026 · Best Music Streaming Service of 2026 Competition between music streaming services is as fierce as ever, with an …"
+    },
+    {
+      "title": "selink/Qwen3-4B-specificity_iso0-fa-peft-r32 · Hugging Face",
+      "url": "https://huggingface.co/selink/Qwen3-4B-specificity_iso0-fa-peft-r32",
+      "snippet": "Instructions to use selink/Qwen3-4B-specificity_iso0-fa-peft-r32 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "The Best Online Music Streaming Services for 2026 - PCMag",
+      "url": "https://www.pcmag.com/picks/the-best-online-music-streaming-services",
+      "snippet": "Aug 11, 2026 · Spotify is a big name in the streaming music industry, but isn't the only service worth a listen. Broaden your musical …"
+    },
+    {
+      "title": "selink/Qwen3-4B-relevance-fa-peft-r32 at main - Hugging Face",
+      "url": "https://huggingface.co/selink/Qwen3-4B-relevance-fa-peft-r32/tree/main",
+      "snippet": "Kaggle main Qwen3-4B-relevance-fa-peft-r32 276 MB Ctrl+K Ctrl+K 1 contributor History:2 commits selink End of training ed7cbd8 verifiedabout 6 hours ago .gitattributes Safe 1.57 kBEnd of trainingabout 6 hours ago README.md 1.23 kBEnd of trainingabout 6 hours ago adapter_config.json 1.12 kBEnd of trainingabout 6 hours ago adapter_model ..."
+    },
+    {
+      "title": "11 Best Music Streaming Services Compared: Which One ... - SoundHub",
+      "url": "https://soundhub.io/blog/best-music-streaming-apps/",
+      "snippet": "Apr 3, 2026 · Your playlists aren’t broken, your app is. We tested 11 music streaming services in 2026 across real-life moments. …"
+    }
+  ]
+}

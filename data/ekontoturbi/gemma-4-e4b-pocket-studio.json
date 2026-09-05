@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ekontoTURBI/gemma-4-E4B-pocket-studio",
+  "slug": "ekontoturbi-gemma-4-e4b-pocket-studio",
+  "author": "ekontoTURBI",
+  "url": "https://huggingface.co/ekontoTURBI/gemma-4-E4B-pocket-studio",
+  "created_at": "2026-09-04T22:22:00.000Z",
+  "updated_at": "2026-09-04T22:23:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "on-device",
+    "android",
+    "edge",
+    "code-generation",
+    "html",
+    "css",
+    "javascript",
+    "lora",
+    "quantized",
+    "text-generation",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4979382224,
+  "storage_human": "5.0 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How many countries contain the letter Z? - Answers",
+      "url": "https://www.answers.com/toys-and-games/How_many_countries_contain_the_letter_Z",
+      "snippet": "Jan 8, 2025 · It looks like there are about 16 countries that contain the letter Z: Azerbaijan Belize Bosnia and Herzegovina Brazil …"
+    },
+    {
+      "title": "ekontoTURBI/gemma-4-E4B-pocket-studio · Hugging Face",
+      "url": "https://huggingface.co/ekontoTURBI/gemma-4-E4B-pocket-studio",
+      "snippet": "Instructions to use ekontoTURBI/gemma-4-E4B-pocket-studio with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "How many places in the world are named Dallas? - Answers",
+      "url": "https://www.answers.com/sociology/How_many_places_in_the_world_are_named_Dallas",
+      "snippet": "Apr 30, 2024 · There are multiple places named Dallas around the world, including the city in Texas, USA, as well as smaller towns in …"
+    },
+    {
+      "title": "GitHub - ekontoTURBO/gemma-pocket-studio",
+      "url": "https://github.com/ekontoTURBO/gemma-pocket-studio",
+      "snippet": "Right now those people sit at the bottom of the AI food chain: locked out of the exact creative, build-things-with-AI moment everyone else is having. Gemma Pocket Studio is an experiment to change that. It runs a real language model locally, on modest hardware, with zero ongoing cost and zero connectivity required."
+    },
+    {
+      "title": "How many Countries are Third World? - Answers",
+      "url": "https://www.answers.com/world-history/How_many_Countries_are_Third_World",
+      "snippet": "Sep 16, 2023 · There are over 30 countries that are considered to be Third World. Some of these countries include Somalia, Yemen, …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF",
+  "slug": "mradermacher-omega_sapphira_joyous-l3-3-70b-v1-0-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF",
+  "created_at": "2026-09-04T16:34:18.000Z",
+  "updated_at": "2026-09-04T22:40:20.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "slerp",
+    "roleplay",
+    "storywriting",
+    "unaligned",
+    "not-for-all-audiences",
+    "en",
+    "base_model:cactopus/Omega_Sapphira_Joyous-L3.3-70B-v1.0",
+    "base_model:quantized:cactopus/Omega_Sapphira_Joyous-L3.3-70B-v1.0",
+    "license:llama3.3",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 753210151712,
+  "storage_human": "753.2 GB",
+  "base_model": "cactopus/Omega_Sapphira_Joyous-L3.3-70B-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/windows-8-1-iso-download-for-64-and-32-bit/4454650",
+      "snippet": "Sep 16, 2025 · Since Microsoft has shifted focus to Windows 10 and Windows 11, official direct downloads for Windows 8 ISOs are no …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "JoshuaCalhoon/ornith-ai-Ornith-1.5-35B-A3B-MTPLX",
+  "slug": "joshuacalhoon-ornith-ai-ornith-1-5-35b-a3b-mtplx",
+  "author": "JoshuaCalhoon",
+  "url": "https://huggingface.co/JoshuaCalhoon/ornith-ai-Ornith-1.5-35B-A3B-MTPLX",
+  "created_at": "2026-09-04T21:58:46.000Z",
+  "updated_at": "2026-09-04T22:00:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107180016,
+  "parameters_human": "35.11B",
+  "storage_bytes": 39430767429,
+  "storage_human": "39.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Python.org",
+      "url": "https://www.python.org/",
+      "snippet": "The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to …"
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "Download Python | Python.org",
+      "url": "https://www.python.org/downloads/",
+      "snippet": "Python was created in the early 1990s by Guido van Rossum at Stichting Mathematisch Centrum in the Netherlands as a successor …"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8",
+      "snippet": "Ornith 1.5 35B-A3B This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide margins on agentic coding."
+    },
+    {
+      "title": "Python Tutorial - W3Schools",
+      "url": "https://www.w3schools.com/python/",
+      "snippet": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, …"
+    }
+  ]
+}

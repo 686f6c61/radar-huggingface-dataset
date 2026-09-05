@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "elastix-ai/HyperPrune-Llama-3.1-8B-2to4",
+  "slug": "elastix-ai-hyperprune-llama-3-1-8b-2to4",
+  "author": "elastix-ai",
+  "url": "https://huggingface.co/elastix-ai/HyperPrune-Llama-3.1-8B-2to4",
+  "created_at": "2026-09-04T23:53:46.000Z",
+  "updated_at": "2026-09-04T23:55:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "hyperprune",
+    "pruning",
+    "sparsity",
+    "2-4-sparsity",
+    "semi-structured",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:finetune:meta-llama/Llama-3.1-8B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16078313069,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "صور Google",
+      "url": "https://images.google.com/?hl=ar",
+      "snippet": "تسجيل الدخول صور البحث المتقدم عن الصور الإعلاناتكل ما تحب معرفته عن Google‏ هنا © 2026 - الخصوصية- البنود"
+    },
+    {
+      "title": "GitHub - futuresun912/HyperPrune",
+      "url": "https://github.com/futuresun912/HyperPrune",
+      "snippet": "OpenReview HyperPrune trains a small shared hypernetwork that learns the 2:4 semi-structured sparsity pattern for every linear projection in a LLaMA-family transformer. The hypernetwork sees one group of four weights at a time, conditions on layer / component context, and outputs a probability distribution over the C (4, 2) = 6 valid 2:4 masks."
+    },
+    {
+      "title": "1240000+ صور ، صور عالية الدقة للتنزيل المجاني",
+      "url": "https://ar.pngtree.com/free-picture",
+      "snippet": "استكشف مجموعتنا من صور الصور عالية الجودة. قم بتنزيل صور مجانًا تمامًا بواسطة المصورين المحترفين."
+    },
+    {
+      "title": "EpistemeAI2/FireStorm-Llama-3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/EpistemeAI2/FireStorm-Llama-3.1-8B",
+      "snippet": "We present the Llama-3.1-Storm-8B model that outperforms Meta AI's Llama-3.1-8B-Instruct and Hermes-3-Llama-3.1-8B models significantly across diverse benchmarks as shown in the performance comparison plot in the next section."
+    },
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/",
+      "snippet": "Discover recipes, home ideas, style inspiration and other ideas to try."
+    }
+  ]
+}

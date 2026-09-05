@@ -5,7 +5,7 @@
   "author": "JWei05",
   "url": "https://huggingface.co/JWei05/DAPO-gemma4-e2b-PT-DeepScaleR-gemma26b-hard-seed42-local2gpu",
   "created_at": "2026-09-03T05:38:34.000Z",
-  "updated_at": "2026-09-04T03:55:41.000Z",
+  "updated_at": "2026-09-04T05:49:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 232122706916,
-  "storage_human": "232.1 GB",
+  "storage_bytes": 254226567568,
+  "storage_human": "254.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

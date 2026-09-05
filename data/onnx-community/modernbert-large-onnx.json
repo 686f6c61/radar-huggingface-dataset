@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "onnx-community/ModernBERT-large-ONNX",
+  "slug": "onnx-community-modernbert-large-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/ModernBERT-large-ONNX",
+  "created_at": "2026-09-04T22:06:31.000Z",
+  "updated_at": "2026-09-04T22:06:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "modernbert",
+    "fill-mask",
+    "masked-lm",
+    "long-context",
+    "en",
+    "arxiv:2412.13663",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:quantized:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3573607848,
+  "storage_human": "3.6 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lapis lazuli - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lapis_lazuli",
+      "snippet": "Toggle Science and uses subsection. 2.1Composition. 2.2Color. 2.3Sources. 2.4Uses and substitutes. 3History and art. Toggle …"
+    },
+    {
+      "title": "onnx/model.onnx · unsloth/ModernBERT-large at main",
+      "url": "https://huggingface.co/unsloth/ModernBERT-large/blob/main/onnx/model.onnx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lapislázuli - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Lapisl%C3%A1zuli",
+      "snippet": "El lapislázuli es una roca utilizada como gema (semipreciosa), compuesta de lazurita (aluminosilicato de calcio y sodio), sodalita, …"
+    },
+    {
+      "title": "onnx/model_int8.onnx · unsloth/ModernBERT-large at main",
+      "url": "https://huggingface.co/unsloth/ModernBERT-large/blob/main/onnx/model_int8.onnx",
+      "snippet": "unsloth / ModernBERT-large like 4 Follow Unsloth AI 29.5k Fill-Mask Transformers PyTorch ONNX Safetensors English modernbert masked-lm long-context arxiv:2412.13663 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Lapislazuli – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Lapislazuli",
+      "snippet": "Lange Zeit galt die Erdkugel als größtes aus einem Lapis-Block geschaffenes Kunstwerk. Neuere Forschungen zeigen aber, dass es …"
+    }
+  ]
+}

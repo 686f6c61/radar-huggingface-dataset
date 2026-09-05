@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Alex995647/loras-ltxv-2.3",
+  "slug": "alex995647-loras-ltxv-2-3",
+  "author": "Alex995647",
+  "url": "https://huggingface.co/Alex995647/loras-ltxv-2.3",
+  "created_at": "2026-09-04T23:12:29.000Z",
+  "updated_at": "2026-09-05T00:13:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "video",
+    "mirror",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:adapter:Lightricks/LTX-2.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88738687696,
+  "storage_human": "88.7 GB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Good source to download NSP roms? : r/SwitchPirates - Reddit",
+      "url": "https://www.reddit.com/r/SwitchPirates/comments/9e9fmu/good_source_to_download_nsp_roms/",
+      "snippet": "This is so weird, I downloaded GUI Bob and now I seem to have access to the entire Switch Library. How can it be this easy to get …"
+    },
+    {
+      "title": "LTX-2.3: Previous Generation AI Video Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-3",
+      "snippet": "LTX-2.3 is the previous LTX release. Open weights, synchronized audio, and native portrait video. Still fully supported. LTX-2.5 is the current model."
+    },
+    {
+      "title": "Easy placeholders for SQL queries : r/Python - Reddit",
+      "url": "https://www.reddit.com/r/Python/comments/fw0jko/easy_placeholders_for_sql_queries/",
+      "snippet": "Apr 6, 2020 · In psycopg2, variables can be inserted into queries using %s placeholders and supplying arguments to cursor.execute, …"
+    },
+    {
+      "title": "Lightricks/LTX-2.3 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "I can't figure out how to use placeholder in mysql query python",
+      "url": "https://www.reddit.com/r/learnpython/comments/kzt3bx/i_cant_figure_out_how_to_use_placeholder_in_mysql/",
+      "snippet": "Jan 18, 2021 · I can't figure out how to use placeholder in mysql query python My code is : ... I have been searching the internet for …"
+    }
+  ]
+}

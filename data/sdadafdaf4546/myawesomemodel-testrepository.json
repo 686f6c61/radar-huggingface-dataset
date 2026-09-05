@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sdadafdaf4546/MyAwesomeModel-TestRepository",
+  "slug": "sdadafdaf4546-myawesomemodel-testrepository",
+  "author": "sdadafdaf4546",
+  "url": "https://huggingface.co/sdadafdaf4546/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-04T20:15:04.000Z",
+  "updated_at": "2026-09-04T20:32:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Primetime Channel refunds - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/12829488?hl=en",
+      "snippet": "YouTube purchases made on the YouTube Android app will be billed via Google Play. Go to payments.google.com to learn about …"
+    },
+    {
+      "title": "sdadafdaf4546/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/sdadafdaf4546/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Can’t access YouTube - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=en",
+      "snippet": "Creator Tips YouTube Fix a problem Troubleshoot problems playing videosTroubleshoot account issuesFix upload problemsGet help …"
+    },
+    {
+      "title": "safasfaf4546/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/safasfaf4546/MyAwesomeModel-TestRepository",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的 ...",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

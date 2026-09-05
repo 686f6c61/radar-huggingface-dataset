@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "advaitsharma/fun-contrastive",
+  "slug": "advaitsharma-fun-contrastive",
+  "author": "advaitsharma",
+  "url": "https://huggingface.co/advaitsharma/fun-contrastive",
+  "created_at": "2026-09-04T22:22:50.000Z",
+  "updated_at": "2026-09-04T22:22:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "OpenAI Astra: Next Major Model Explained | explainx.ai Blog",
+      "url": "https://explainx.ai/blog/openai-astra-next-major-model-announcement-2026",
+      "snippet": "OpenAI revealed Astra through 10 research results. See what is confirmed, what remains unknown, and why this unusual model announcement matters."
+    },
+    {
+      "title": "Can’t access YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=en",
+      "snippet": "If your channel is connected to a Brand Account, click your icon in the top right of the page. You can choose the page with the …"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 417 AI models across 422 benchmarks, with 232 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

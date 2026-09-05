@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "senaro/atlasv25-trm-gptoss-20b-unsloth",
+  "slug": "senaro-atlasv25-trm-gptoss-20b-unsloth",
+  "author": "senaro",
+  "url": "https://huggingface.co/senaro/atlasv25-trm-gptoss-20b-unsloth",
+  "created_at": "2026-09-05T00:10:51.000Z",
+  "updated_at": "2026-09-05T00:19:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41857430271,
+  "storage_human": "41.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ESPN - Serving Sports Fans. Anytime. Anywhere.",
+      "url": "https://www.espn.com/",
+      "snippet": "Visit ESPN for live scores, highlights and sports news. Stream exclusive games on ESPN and play fantasy sports."
+    },
+    {
+      "title": "senaro/atlas-trm-v5-26b-gemma4 · Hugging Face",
+      "url": "https://huggingface.co/senaro/atlas-trm-v5-26b-gemma4",
+      "snippet": "Model tree for senaro/atlas-trm-v5-26b-gemma4 Unable to build the model tree, the base model loops to the model itself. Learn more."
+    },
+    {
+      "title": "NFL on ESPN - Scores, Stats and Highlights",
+      "url": "https://www.espn.com/nfl/",
+      "snippet": "Visit ESPN for NFL live scores, video highlights and latest news. Stream Monday Night Football on ESPN and play Fantasy Football."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Stream Live Sports and Exclusive Originals All in One Place with ESPN ...",
+      "url": "https://plus.espn.com/",
+      "snippet": "Watch your favorite live sports from NFL to College Football, WWE, Soccer, and more with ESPN."
+    }
+  ]
+}

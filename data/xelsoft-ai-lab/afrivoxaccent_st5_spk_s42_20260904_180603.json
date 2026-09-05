@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260904_180603",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_s42_20260904_180603",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260904_180603",
+  "created_at": "2026-09-04T19:26:28.000Z",
+  "updated_at": "2026-09-04T19:26:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144437730,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578043218,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loading... - TV Online",
+      "url": "https://tvron.net/stiri-mediafax/mii-de-venezueleni-au-trecut-granita-in-columbia-pentru-a-cumpara-alimente-si-medicamente/",
+      "snippet": "Stay updated with the latest news and events on TV Online."
+    },
+    {
+      "title": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+      "url": "https://elevenlabs.io/",
+      "snippet": "Create lifelike speech with our AI voice generator and voice agents platform. Access 5,000+ voices in 70+ languages with secure APIs and SDKs."
+    },
+    {
+      "title": "TV Online",
+      "url": "http://www.tvron.net/rtv?ch=1&js=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJKb2tlbiIsImV4cCI6MTc4ODA1NzExNywiaWF0IjoxNzg4MDQ5OTE3LCJpc3MiOiJKb2tlbiIsImpzIjoxLCJqdGkiOiIzMzg2cnJhNDc5YTNxcGxoYmMwaGxxaGMiLCJuYmYiOjE3ODgwNDk5MTcsInRzIjoxNzg4MDQ5OTE3ODg1Mzg0fQ.Y1UNvw1br6kvQ6wBx_9luv-2XBoHoQ7Bh5gFC1iVaQs",
+      "snippet": "Do Not Sell or Share My Personal Information"
+    },
+    {
+      "title": "AfriVox-v2: A Domain-Verticalized Benchmark for In-the-Wild African ...",
+      "url": "https://www.catalyzex.com/paper/afrivox-v2-a-domain-verticalized-benchmark",
+      "snippet": "Finally, we benchmark a new generation of speech models, including Sahara-v2, Gemini 3 Flash, and the Omnilingual CTC models. Our results expose the true generalization gap of modern speech models in specialized, noisy African contexts and provide a reliable blueprint for developers building localized voice AI."
+    },
+    {
+      "title": "Loading... - test.tvron.net",
+      "url": "http://test.tvron.net/radio/radio-orion-sebes/",
+      "snippet": "Loading... - test.tvron.net ... Loading..."
+    }
+  ]
+}

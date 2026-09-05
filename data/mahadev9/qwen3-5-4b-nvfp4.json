@@ -5,7 +5,7 @@
   "author": "mahadev9",
   "url": "https://huggingface.co/mahadev9/Qwen3.5-4B-nvfp4",
   "created_at": "2026-09-01T22:12:43.000Z",
-  "updated_at": "2026-09-01T22:13:48.000Z",
+  "updated_at": "2026-09-05T02:17:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
-  "storage_bytes": 3301062373,
-  "storage_human": "3.3 GB",
+  "storage_bytes": 8021850885,
+  "storage_human": "8.0 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

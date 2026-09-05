@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Simonebzfg90/poolformer-demo",
+  "slug": "simonebzfg90-poolformer-demo",
+  "author": "Simonebzfg90",
+  "url": "https://huggingface.co/Simonebzfg90/poolformer-demo",
+  "created_at": "2026-09-04T17:15:44.000Z",
+  "updated_at": "2026-09-04T17:15:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuickQuid - Official Site | Short Term Loans",
+      "url": "https://www.quickquid.co.uk/",
+      "snippet": "Apply for our flexible QuickQuid payday loans online. The application should only take a few minutes to complete, in which you’ll be …"
+    },
+    {
+      "title": "thapargenomics/poolformer-demo · Hugging Face",
+      "url": "https://huggingface.co/thapargenomics/poolformer-demo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Payday Loans Online | UK Direct Lender | Cashfloat",
+      "url": "https://www.cashfloat.co.uk/payday-loans/",
+      "snippet": "Apply online for a payday loan of £300–£1,500 from Cashfloat, an FCA-authorised UK direct lender. Check your eligibility with a soft …"
+    },
+    {
+      "title": "poolformer/README.md at main · sail-sg/poolformer · GitHub",
+      "url": "https://github.com/sail-sg/poolformer/blob/main/README.md",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance. RSB-ResNet in (b) means the results are from “ResNet Strikes Back” where ResNet is trained with improved training procedure for 300 epochs."
+    },
+    {
+      "title": "Payday Loans | Online UK Direct Lender | Offering An Alternative",
+      "url": "https://www.lendingstream.co.uk/loans/payday-loans/",
+      "snippet": "What is a Payday Loan? A payday loan is a type of short-term credit that is repaid in full on your next payday. These loans are often …"
+    }
+  ]
+}

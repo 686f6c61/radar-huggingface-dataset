@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Aleksander22/ORIS-Bert-Small-C-copy",
+  "slug": "aleksander22-oris-bert-small-c-copy",
+  "author": "Aleksander22",
+  "url": "https://huggingface.co/Aleksander22/ORIS-Bert-Small-C-copy",
+  "created_at": "2026-09-04T19:38:28.000Z",
+  "updated_at": "2026-09-04T19:39:11.000Z",
+  "license": "oris-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "polish",
+    "bert",
+    "encoder",
+    "masked-language-modeling",
+    "feature-extraction",
+    "oris",
+    "pl",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    },
+    {
+      "title": "OrisTeam/ORIS-Bert-Small-C · Hugging Face",
+      "url": "https://huggingface.co/OrisTeam/ORIS-Bert-Small-C",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Amazon Prime Business",
+      "url": "https://www.amazon.de/businessprime",
+      "snippet": "Eine Mitgliedschaft für alle in Ihrem Unternehmen. Unbegrenzter, schneller und KOSTENLOSER Versand für alle Mitglieder in …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=oris",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Amazon.de: Amazon Prime",
+      "url": "https://www.amazon.de/amazonprime?primeCampaignId=accessWlpPrimeRedir",
+      "snippet": "Praktische Versandoptionen Genieße unbegrenzten Premium-Versand für Millionen von Artikeln Exklusive Angebote Sichere dir eine …"
+    }
+  ]
+}

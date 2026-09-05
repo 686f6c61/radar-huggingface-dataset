@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "maksim0840/Rust-Game-Items-Recognition",
+  "slug": "maksim0840-rust-game-items-recognition",
+  "author": "maksim0840",
+  "url": "https://huggingface.co/maksim0840/Rust-Game-Items-Recognition",
+  "created_at": "2026-09-04T19:46:24.000Z",
+  "updated_at": "2026-09-04T22:42:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ru",
+    "en",
+    "base_model:timm/convnext_tiny.in12k_ft_in1k",
+    "base_model:quantized:timm/convnext_tiny.in12k_ft_in1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114641518,
+  "storage_human": "115 MB",
+  "base_model": "timm/convnext_tiny.in12k_ft_in1k",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les services du compte ameli, votre espace personnel sécurisé",
+      "url": "https://www.ameli.fr/assure/remboursements/suivre-remboursements/compte-ameli-connexion-services",
+      "snippet": "Feb 26, 2026 · Démarches en ligne : les services du compte ameli sont disponibles gratuitement, partout et à tout moment et aussi …"
+    },
+    {
+      "title": "Object Detector Rust - GitHub",
+      "url": "https://github.com/chriamue/object-detector-rust",
+      "snippet": "Object Detector Rust is a framework for detecting objects in images using feature-based algorithms. It includes implementations of the HOG and ORB algorithms, as well as functions for feature matching and object localization. The framework is written in Rust, a statically-typed, memory-safe language that can be compiled to WebAssembly for use in web browsers or other environments."
+    },
+    {
+      "title": "Mon espace santé | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/sante/mon-espace-sante",
+      "snippet": "Mon espace santé est un espace numérique personnel et sécurisé, proposé par l’Assurance Maladie et le ministère de la Santé, qui …"
+    },
+    {
+      "title": "Rustgame 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/rustgame",
+      "snippet": "Rustgame 3D models ready to view and download for free."
+    },
+    {
+      "title": "Espace partenaires - ameli",
+      "url": "https://espace-partenaires.ameli.fr/partenaire/",
+      "snippet": "Pour continuer, merci de saisir votre identifiant et votre mot de passe."
+    }
+  ]
+}

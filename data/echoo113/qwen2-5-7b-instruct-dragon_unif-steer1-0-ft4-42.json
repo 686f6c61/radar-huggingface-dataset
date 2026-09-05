@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Qwen2.5-7B-Instruct-dragon_unif-STEER1.0-ft4.42",
+  "slug": "echoo113-qwen2-5-7b-instruct-dragon_unif-steer1-0-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_unif-STEER1.0-ft4.42",
+  "created_at": "2026-09-04T22:37:37.000Z",
+  "updated_at": "2026-09-05T00:12:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334596825,
+  "storage_human": "335 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crypto Swap with Lowest Fees & No registration | ChangeNOW",
+      "url": "https://changenow.io/exchange",
+      "snippet": "Try out our crypto swap service or buy crypto with USD, EUR or your local currency."
+    },
+    {
+      "title": "Echoo113/Qwen2.5-7B-Instruct-dragon_unif-STEER1.0-ft4.42 · Hugging Face",
+      "url": "https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_unif-STEER1.0-ft4.42",
+      "snippet": "Instructions to use Echoo113/Qwen2.5-7B-Instruct-dragon_unif-STEER1.0-ft4.42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ChangeNOW | Instant Crypto Swaps",
+      "url": "https://changenow-dex.at/",
+      "snippet": "A closer look at ChangeNOW, the non-custodial crypto exchange behind ChangeNOW io — instant ChangeNOW swap routing …"
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-dragon-STEER1.125-ft4.42 - Hugging Face",
+      "url": "https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon-STEER1.125-ft4.42",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChangeNOW | Crypto Swap Platform",
+      "url": "https://changenow-en.org/",
+      "snippet": "ChangeNOW - the No KYC crypto swap platform — how a changenow exchange works, what crypto swap fees look like, and why …"
+    }
+  ]
+}

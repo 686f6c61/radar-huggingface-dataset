@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Greynar/act_ClickTargetPreprocessThreeCamerasSetUpOne",
+  "slug": "greynar-act_clicktargetpreprocessthreecamerassetupone",
+  "author": "Greynar",
+  "url": "https://huggingface.co/Greynar/act_ClickTargetPreprocessThreeCamerasSetUpOne",
+  "created_at": "2026-09-04T19:12:29.000Z",
+  "updated_at": "2026-09-04T19:12:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Greynar/ClickTargetPreprocessThreeCamerasSetUpOne",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206708304,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "Greynar/act_ClickTargetPreprocessTestThreeCamera · Hugging Face",
+      "url": "https://huggingface.co/Greynar/act_ClickTargetPreprocessTestThreeCamera",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Game Online Gratis di CrazyGames | Main Sekarang!",
+      "url": "https://www.crazygames.com/id/",
+      "snippet": "Mainkan game online gratis di CrazyGames, tempat terbaik untuk bermain game peramban berkualitas tinggi. Ada game baru setiap …"
+    },
+    {
+      "title": "Greynar/ClickTargetPreprocessCleanThreeCameras - Hugging Face",
+      "url": "https://huggingface.co/datasets/Greynar/ClickTargetPreprocessCleanThreeCameras",
+      "snippet": "Total file size: 1.64 GB Models trained or fine-tuned on Greynar/ClickTargetPreprocessCleanThreeCameras Greynar/act_ClickTargetPreprocessCleanThreeCameras Robotics •51.7M•Updated 1 day ago•21 System theme Company"
+    },
+    {
+      "title": "Veck io Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/veck-io",
+      "snippet": "Dec 4, 2025 · Veck.io is a 3D multiplayer FPS IO shooting game with nonstop action among players across the globe. Players can …"
+    }
+  ]
+}

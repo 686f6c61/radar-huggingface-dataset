@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task3-standard-lora",
+  "slug": "bdatm-project-qwen-task3-standard-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task3-standard-lora",
+  "created_at": "2026-09-04T17:25:52.000Z",
+  "updated_at": "2026-09-04T17:37:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71163533,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "bdatm-project/qwen-task2-standard-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task2-standard-lora",
+      "snippet": "bdatm-project / qwen-task2-standard-lora like 0 Follow Big Data Analytics and Text Mining Project 1 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Impossible de me connecter à Canva avec mail Outlook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299350-impossible-de-me-connecter-a-canva-avec-mail-outlook",
+      "snippet": "Jul 15, 2026 · Bonjour, Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Canva AI Miễn Phí Có Gì? Những Tính Năng Nên Dùng Trước Khi Nâng …",
+      "url": "https://tinhte.vn/thread/canva-ai-mien-phi-co-gi-nhung-tinh-nang-nen-dung-truoc-khi-nang-cap-canva-pro.4139897/",
+      "snippet": "Khi đã biết rõ mình cần tính năng nào và dùng với tần suất bao nhiêu, việc quyết định nâng cấp Canva Pro sẽ chính xác hơn. Canva …"
+    }
+  ]
+}

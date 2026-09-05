@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "resoajoe/room-audio-event-nano",
+  "slug": "resoajoe-room-audio-event-nano",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/room-audio-event-nano",
+  "created_at": "2026-09-04T23:26:45.000Z",
+  "updated_at": "2026-09-04T23:26:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio-classification",
+    "sound-event-detection",
+    "tiny-model",
+    "edge",
+    "dataset:FSD50K",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 390682,
+  "storage_human": "390682 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "आज का वृश्चिक राशिफल (Aaj Ka Vrishchik Rashifal) 7 फरवरी 2026 : …",
+      "url": "https://navbharattimes.indiatimes.com/astro/rashifal/bolen-sitare/aaj-ka-vrishchik-rashifal-7-february-2026-scorpio-horoscope-today/articleshow/127990289.cms",
+      "snippet": "Feb 6, 2026 · Scorpio Horoscope Today, 7 february 2026 : वृश्चिक राशिफल के अनुसार, आज का दिन आत्म-मंथन, भावनात्मक …"
+    },
+    {
+      "title": "resoajoe/room-audio-ladder-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/room-audio-ladder-nano",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "वृश्चिक राशिफल 7 फरवरी 2026: वृश्चिक राशि वाले आज संभलकर …",
+      "url": "https://www.livehindustan.com/astrology/scorpio-horoscope-today-7-february-2026-aaj-ka-vrishchik-rashifal-201770427527032.html",
+      "snippet": "Feb 7, 2026 · Scorpio Horoscope Today, वृश्चिक राशिफल 7 February 2026: आज लव लाइफ में अच्छे रिजल्ट मिल सकते हैं। …"
+    },
+    {
+      "title": "resoajoe (Joe Cox) - Hugging Face",
+      "url": "https://huggingface.co/resoajoe/datasets",
+      "snippet": "Hoping to run some rapid experiments to learn and weekend experiments to try to build something useful. Interested in nano-models for industries. Here to learn from the community and have an excuse..."
+    },
+    {
+      "title": "आज 7 फ़रवरी 2026 वृश्चिक राशिफल: वृश्चिक राशि वाले पेशेवर …",
+      "url": "https://www.aajtak.in/religion/rashiphal/story/scorpio-daily-horoscope-today-07-february-2026-aaj-ka-vrishchik-rashifal-in-hindi-saturday-dskc-2460071-2026-02-07",
+      "snippet": "Feb 7, 2026 · Aaj ka Vrishchik Rashifal 7 February 2026, Scorpio Horoscope Today: सामंजस्य का प्रयास रखें. निवेश ..."
+    }
+  ]
+}

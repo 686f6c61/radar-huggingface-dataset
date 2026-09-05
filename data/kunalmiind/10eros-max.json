@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kunalmiind/10Eros-Max",
+  "slug": "kunalmiind-10eros-max",
+  "author": "kunalmiind",
+  "url": "https://huggingface.co/kunalmiind/10Eros-Max",
+  "created_at": "2026-09-04T21:33:41.000Z",
+  "updated_at": "2026-09-04T21:33:42.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-video",
+    "image-text-to-video",
+    "image-to-video",
+    "not-for-all-audiences",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243069348432,
+  "storage_human": "243.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Content Security Policy livewire - Help - Livewire Forum",
+      "url": "https://forum.laravel-livewire.com/t/content-security-policy-livewire/2985",
+      "snippet": "Jan 6, 2021 · Hey, @tomekn It’s not a livewire issue, You are implementing a header related policy that’s doesn’t allow inline style in …"
+    },
+    {
+      "title": "TenStrip/10Eros-Max · Hugging Face",
+      "url": "https://huggingface.co/TenStrip/10Eros-Max",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to use Bootstrap with Livewire - Help - Livewire Forum",
+      "url": "https://forum.laravel-livewire.com/t/how-to-use-bootstrap-with-livewire/4368",
+      "snippet": "May 8, 2021 · I am new to livewire and i find it tedious to quickly design a prototype using tailwind. Can anyone please let me know …"
+    },
+    {
+      "title": "TenStrip/10Eros-Max at main - Hugging Face",
+      "url": "https://huggingface.co/TenStrip/10Eros-Max/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "@include works @livewire not - Help - Livewire Forum",
+      "url": "https://forum.laravel-livewire.com/t/include-works-livewire-not/4093",
+      "snippet": "Apr 11, 2021 · Hi! I created a component with Livewire artisan command. It should implement a form. I wanted to include at the end of …"
+    }
+  ]
+}

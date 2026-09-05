@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "danielhanchen/unsloth-blackwell-docker",
+  "slug": "danielhanchen-unsloth-blackwell-docker",
+  "author": "danielhanchen",
+  "url": "https://huggingface.co/danielhanchen/unsloth-blackwell-docker",
+  "created_at": "2026-05-24T09:30:33.000Z",
+  "updated_at": "2026-09-04T22:43:06.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "docker",
+    "unsloth",
+    "blackwell",
+    "cuda",
+    "finetuning",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55242447103,
+  "storage_human": "55.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Δωρεάν Πορνό Βίντεο & XXX Ταινίες: Πορνό Site με Βίντεο | xHamster",
+      "url": "https://gr.xhamster.com/",
+      "snippet": "Δωρεάν πορνό βίντεο και αποκλειστικές XXX ταινίες είναι εδώ στο xHamster. Δείτε άμεσα 6 εκατομμύρια+ άγρια σεξ βίντεο από …"
+    },
+    {
+      "title": "danielhanchen/unsloth-blackwell-docker · Hugging Face",
+      "url": "https://huggingface.co/danielhanchen/unsloth-blackwell-docker",
+      "snippet": "A multi-stage Docker image for Unsloth that runs on every current NVIDIA datacenter and consumer GPU from Turing through Blackwell, on linux/amd64."
+    },
+    {
+      "title": "Πορνό στα ελληνικά: Βίντεο Σεξ Με Ελληνικά Ήχος | xHamster",
+      "url": "https://gr.xhamster.com/categories/el",
+      "snippet": "Βρείτε το πιο δημοφιλές πορνό στα ελληνικά για παρακολούθηση δωρεάν. Απολαύστε Ελληνικά γλωσσικά βίντεο με νεαρά και …"
+    },
+    {
+      "title": "README.md · danielhanchen/unsloth-blackwell-docker at main",
+      "url": "https://huggingface.co/danielhanchen/unsloth-blackwell-docker/blob/main/README.md",
+      "snippet": "Prebuilt Docker images for Unsloth: training, Unsloth Studio, JupyterLab and llama.cpp GGUF tooling, on any NVIDIA GPU from Turing through Blackwell. Built from unslothai/unsloth#5748 (the base + Studio two-image build), with the Colab-grade JupyterLab UX (#6681) and the UNSLOTH_TORCH_INDEX_URL / _FAMILY torch-index override (#6692)."
+    },
+    {
+      "title": "Πορνό στα ελληνικά / Porn in Greek: Sex ... - xHamster",
+      "url": "https://xhamster.com/categories/el",
+      "snippet": "Παρακολουθήστε πορνό στα ελληνικά δωρεάν. Enjoy Greek language videos featuring teen and mature sex models and amateurs …"
+    }
+  ]
+}

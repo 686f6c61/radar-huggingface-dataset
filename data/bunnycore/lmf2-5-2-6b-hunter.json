@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bunnycore/LMF2.5-2.6B-Hunter",
+  "slug": "bunnycore-lmf2-5-2-6b-hunter",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/LMF2.5-2.6B-Hunter",
+  "created_at": "2026-09-04T21:14:51.000Z",
+  "updated_at": "2026-09-04T21:14:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:LiquidAI/LFM2.5-2.6B",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4718592,
+  "parameters_human": "4.7M",
+  "storage_bytes": 46227646,
+  "storage_human": "46 MB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=26c4cb72250f615b3bd5dcb824cd60b1",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled · Hugging Face",
+      "url": "https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled at main - Hugging Face",
+      "url": "https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled/tree/main",
+      "snippet": "Instructions to use bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled with Transformers:"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

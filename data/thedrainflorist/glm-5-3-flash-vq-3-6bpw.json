@@ -5,7 +5,7 @@
   "author": "TheDrainFlorist",
   "url": "https://huggingface.co/TheDrainFlorist/GLM-5.3-Flash-VQ-3.6bpw",
   "created_at": "2026-09-03T20:27:17.000Z",
-  "updated_at": "2026-09-03T21:09:45.000Z",
+  "updated_at": "2026-09-04T23:20:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 149,
   "trending_score": 0,
   "parameters": 45444923198,
   "parameters_human": "45.44B",

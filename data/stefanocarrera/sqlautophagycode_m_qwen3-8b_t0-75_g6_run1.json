@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g6_run1",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-75_g6_run1",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g6_run1",
+  "created_at": "2026-09-04T23:20:08.000Z",
+  "updated_at": "2026-09-04T23:20:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MacBook Pro (14-inch, M4 Pro or M4 Max, 2024) - Tech Specs",
+      "url": "https://support.apple.com/en-us/121553",
+      "snippet": "Up to two external displays with up to 6K resolution at 60Hz over Thunderbolt, or one external display with up to 6K resolution at …"
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g2_run1 - Hugging Face",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g2_run1",
+      "snippet": "Instructions to use stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g2_run1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "MacBook Pro (14-inch, M4, 2024) - Tech Specs - Apple Support",
+      "url": "https://support.apple.com/en-ca/121552",
+      "snippet": "Up to two external displays with up to 6K resolution at 60Hz over Thunderbolt, or one external display with up to 6K resolution at …"
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run0 - Hugging Face",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run0",
+      "snippet": "Instructions to use stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Apple MacBook Pro \"M4 Pro\" 14 CPU/20 GPU 14\" Specs",
+      "url": "https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-m4-pro-14-core-cpu-20-core-gpu-14-2024-specs.html",
+      "snippet": "Additionally, it has a high-resolution LED-backlit 14.2\" widescreen 3024x1964 (254 ppi, 1000 nits sustained, 1600 nits peak HDR, …"
+    }
+  ]
+}

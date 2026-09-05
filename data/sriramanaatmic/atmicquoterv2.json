@@ -5,7 +5,7 @@
   "author": "SriRamanaAtmic",
   "url": "https://huggingface.co/SriRamanaAtmic/AtmicQuoterv2",
   "created_at": "2026-08-30T13:49:37.000Z",
-  "updated_at": "2026-08-30T14:38:39.000Z",
+  "updated_at": "2026-09-04T20:41:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "sentence-similarity",
@@ -18,7 +18,7 @@
     "sentence-similarity",
     "feature-extraction",
     "generated_from_trainer",
-    "dataset_size:1103",
+    "dataset_size:1424",
     "loss:MultipleNegativesRankingLoss",
     "arxiv:1908.10084",
     "arxiv:1807.03748",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 33360000,
   "parameters_human": "33.4M",
-  "storage_bytes": 133462128,
-  "storage_human": "133 MB",
+  "storage_bytes": 266924256,
+  "storage_human": "267 MB",
   "base_model": "SriRamanaAtmic/AtmicQuoterv1",
   "formats": [
     "safetensors"

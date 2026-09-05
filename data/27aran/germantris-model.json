@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "27aran/germantris-model",
+  "slug": "27aran-germantris-model",
+  "author": "27aran",
+  "url": "https://huggingface.co/27aran/germantris-model",
+  "created_at": "2026-09-04T20:24:24.000Z",
+  "updated_at": "2026-09-04T20:25:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:560",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ios.chat.openai.com",
+      "url": "https://ios.chat.openai.com/cdn-cgi/trace",
+      "snippet": "fl=1291f101 h=ios.chat.openai.com ip=40.77.167.157 ts=1788545286.000 visit_scheme=https uag=Mozilla/5.0 AppleWebKit/537.36 …"
+    },
+    {
+      "title": "GitHub - 27aran/Germantris",
+      "url": "https://github.com/27aran/Germantris",
+      "snippet": "Contribute to 27aran/Germantris development by creating an account on GitHub."
+    },
+    {
+      "title": "Germantris/docs at main · 27aran/Germantris · GitHub",
+      "url": "https://github.com/27aran/Germantris/tree/main/docs",
+      "snippet": "Contribute to 27aran/Germantris development by creating an account on GitHub."
+    },
+    {
+      "title": "Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "See how leading AI models stack up across text, image, vision, and more. This page provides a high-level snapshot of each Arena. Explore dedicated tabs for deeper insights."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/",
+      "snippet": "Real-time tracking of AI models, pricing, benchmarks, and releases across every major lab. Community-powered and open source."
+    }
+  ]
+}

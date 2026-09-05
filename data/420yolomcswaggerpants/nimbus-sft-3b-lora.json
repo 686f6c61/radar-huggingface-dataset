@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "420yolomcswaggerpants/nimbus-sft-3b-lora",
+  "slug": "420yolomcswaggerpants-nimbus-sft-3b-lora",
+  "author": "420yolomcswaggerpants",
+  "url": "https://huggingface.co/420yolomcswaggerpants/nimbus-sft-3b-lora",
+  "created_at": "2026-09-04T21:19:15.000Z",
+  "updated_at": "2026-09-04T23:04:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "nimbus-coffee",
+    "customer-support",
+    "qwen",
+    "fine-tuned",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:adapter:Qwen/Qwen2.5-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18813898,
+  "storage_human": "19 MB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hwang Hyun Jin (황현진) - MyDramaList",
+      "url": "https://mydramalist.com/people/17178-hwang-hyun-jin",
+      "snippet": "Hwang Hyun Jin, known mononymously as Hyun Jin, is a South Korean singer, dancer and member of STRAY KIDS (스트레이 키즈). …"
+    },
+    {
+      "title": "420yolomcswaggerpants/nimbus-coffee-assistant · Hugging Face",
+      "url": "https://huggingface.co/420yolomcswaggerpants/nimbus-coffee-assistant",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hyunjin's drama list (50 shows) - MyDramaList",
+      "url": "https://mydramalist.com/list/32AKKVOL",
+      "snippet": "Jul 2, 2020 · list of drama Hyunjin watched (I also added here some of his film recommendations)"
+    },
+    {
+      "title": "GitHub - 420yolomcswaggerpants/nimbus-finetune",
+      "url": "https://github.com/420yolomcswaggerpants/nimbus-finetune/tree/main",
+      "snippet": "A fine-tuned Qwen 2.5 model that knows everything about Nimbus Coffee Roasters. A proof of concept demonstrating full fine-tuning of an open-source LLM using LoRA. The model was trained on a custom Q&A dataset and deployed as a working app ..."
+    },
+    {
+      "title": "Hyunjin (Stray Kids singer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hyunjin_(Stray_Kids_singer)",
+      "snippet": "Hwang Hyun-jin (Korean: 황현진; born March 20, 2000), known mononymously as Hyunjin, is a South Korean rapper and singer. He …"
+    }
+  ]
+}

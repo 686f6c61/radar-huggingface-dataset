@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "cloudyu/GLM-5.3-Flash-Slim",
+  "slug": "cloudyu-glm-5-3-flash-slim",
+  "author": "cloudyu",
+  "url": "https://huggingface.co/cloudyu/GLM-5.3-Flash-Slim",
+  "created_at": "2026-09-04T09:42:54.000Z",
+  "updated_at": "2026-09-05T00:01:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "glm5_next",
+    "moe",
+    "nvfp4",
+    "modelopt",
+    "single-gpu",
+    "expert-pruned",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110936715134,
+  "parameters_human": "110.94B",
+  "storage_bytes": 133119461426,
+  "storage_human": "133.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quina - Portal Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/Paginas/Quina.aspx",
+      "snippet": "6 days ago · Ao jogar na Quina, você não só concorre a prêmios incríveis, mas também faz a diferença na vida de milhões de …"
+    },
+    {
+      "title": "cloudyu/GLM-5.3-Flash-Slim · Hugging Face",
+      "url": "https://huggingface.co/cloudyu/GLM-5.3-Flash-Slim",
+      "snippet": "Limitations GLM-5.3-Flash-Slim Unofficial single-GPU edition of zai-org/GLM-5.3-Flash: 192 experts per layer, experts in NVFP4, everything else bf16. 306 GB → 133 GB which can run on sinlge H200 or B200 Benchmarks Single B200, vLLM (branch below), full CUDA graphs. Sampling per the base model's official recipe (temperature=1.0, top_p=0.95) unless stated; reasoning_effortis the GLM-5.3-Flash ..."
+    },
+    {
+      "title": "What Happens to Your Body When You Eat Quinoa Every Day",
+      "url": "https://www.eatingwell.com/article/8068328/is-quinoa-good-for-you/",
+      "snippet": "Nov 7, 2025 · Anti-Inflammatory Diet . Gut Health . High-Protein Diet . Weight Loss . Heart Health . Cholesterol Diet . High Blood …"
+    },
+    {
+      "title": "glm-5.3-flash (Zhipu AI) - Cloudflare Docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/glm-5.3-flash/",
+      "snippet": "The first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "Quina",
+      "url": "https://quina.app/",
+      "snippet": "Quina is the classic word game of strategic deduction. Use clues and logic to uncover the secret code word. Available on the iOS App …"
+    }
+  ]
+}

@@ -5,9 +5,9 @@
   "author": "vogel61",
   "url": "https://huggingface.co/vogel61/GLM-5.3-Flash-oQ6e-mtp",
   "created_at": "2026-09-04T16:18:44.000Z",
-  "updated_at": "2026-09-04T16:22:30.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-09-04T18:18:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "mlx",
   "languages": [],
@@ -17,6 +17,10 @@
     "glm5_next",
     "oq",
     "quantized",
+    "apple_silicon",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-Flash-BF16",
+    "license:mit",
     "6-bit",
     "region:us"
   ],
@@ -27,7 +31,7 @@
   "parameters_human": "313.89B",
   "storage_bytes": 256889644259,
   "storage_human": "256.9 GB",
-  "base_model": null,
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [
     "mlx",
     "safetensors"

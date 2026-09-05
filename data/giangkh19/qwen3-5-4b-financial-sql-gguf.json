@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "giangkh19/Qwen3.5-4B-Financial-SQL-GGUF",
+  "slug": "giangkh19-qwen3-5-4b-financial-sql-gguf",
+  "author": "giangkh19",
+  "url": "https://huggingface.co/giangkh19/Qwen3.5-4B-Financial-SQL-GGUF",
+  "created_at": "2026-09-04T19:21:04.000Z",
+  "updated_at": "2026-09-04T19:21:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 3455869536,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DallBogg Italy",
+      "url": "https://dallbogg.it/",
+      "snippet": "Gentili Assicurati, l’autorità di regolamentazione bulgara ha vietato a DallBogg di vendere polizze sul territorio della Repubblica …"
+    },
+    {
+      "title": "giangkh19/qwen3.5-4b-sql-gguf · Hugging Face",
+      "url": "https://huggingface.co/giangkh19/qwen3.5-4b-sql-gguf",
+      "snippet": "Instructions to use giangkh19/qwen3.5-4b-sql-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "DallBogg Italy | Sinistri",
+      "url": "https://dallbogg.it/sinistri/",
+      "snippet": "La denuncia del sinistro deve essere presentata entro tre giorni dall’avvenimento del sinistro ovvero dal momento in cui l’Assicurato …"
+    },
+    {
+      "title": "giangkh19/qwen3.5-4b-sql · Hugging Face",
+      "url": "https://huggingface.co/giangkh19/qwen3.5-4b-sql",
+      "snippet": "Qwen3.5-4B-Text2SQL: DeepSeek-Style Reasoning & Multi-Table Specialist (GGUF & LoRA) Mô hình chuyên sâu về Text-to-SQL phức tạp, được fine-tune từ Qwen/Qwen3.5-4Bbằng công nghệ QLoRA 4-bit (Unsloth)trên tập dữ liệu tuyển chọn 17.000 mẫu nâng cao(kết hợp từ Gretel AI, Spider, và BIRD-Bench)."
+    },
+    {
+      "title": "DallBogg Italy | Punti Vendita",
+      "url": "https://dallbogg.it/contatti/punti-vendita/",
+      "snippet": "Sede legale e Direzione Generale: INSURANCE JOINT-STOCK COMPANY DALLBOGG Life & Health AD One G.M. Dimitrov blvd. …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ginexys/docforensics-layout",
+  "slug": "ginexys-docforensics-layout",
+  "author": "ginexys",
+  "url": "https://huggingface.co/ginexys/docforensics-layout",
+  "created_at": "2026-09-04T21:58:24.000Z",
+  "updated_at": "2026-09-04T22:52:01.000Z",
+  "license": "docforensics-dual",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "document-layout-analysis",
+    "object-detection",
+    "document-ai",
+    "ocr",
+    "forms",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10425363,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "إنشاء حساب Google لاستخدامه في Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=ar",
+      "snippet": "ملاحظة مهمة: قبل إنشاء حساب Google جديد، سجِّل الخروج من حسابك الحالي. التعرّف على كيفية الخروج من Gmail من جهازك، انتقِل إلى صفحة تسجيل الدخول إلى حساب Google. انقر على إنشاء …"
+    },
+    {
+      "title": "What is the Document Intelligence layout model?",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/layout?view=doc-intel-4.0.0",
+      "snippet": "Extract text, tables, selections, titles, section headings, page headers, page footers, and more with the layout analysis model from Document Intelligence."
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "Document Processing Models - Document Intelligence - Foundry Tools ...",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/model-overview?view=doc-intel-4.0.0",
+      "snippet": "Document processing models for OCR, document layout, invoices, identity, custom models, and more to extract text, structure, and key/value pairs."
+    },
+    {
+      "title": "تنزيل Google Chrome وتثبيته",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يمكنك تنزيل متصفّح الويب Chrome وتثبيته بدون أي رسوم، واستخدامه لتصفّح الويب. مراجعة متطلبات النظام لاستخدام Chrome"
+    }
+  ]
+}

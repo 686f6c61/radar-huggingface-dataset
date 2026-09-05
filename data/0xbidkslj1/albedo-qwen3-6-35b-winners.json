@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "0xbidkslj1/albedo-qwen3.6-35b-winners",
+  "slug": "0xbidkslj1-albedo-qwen3-6-35b-winners",
+  "author": "0xbidkslj1",
+  "url": "https://huggingface.co/0xbidkslj1/albedo-qwen3.6-35b-winners",
+  "created_at": "2026-09-04T20:11:20.000Z",
+  "updated_at": "2026-09-04T20:11:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "albedo",
+    "qwen3",
+    "moe",
+    "base_model:dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+    "base_model:finetune:dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70227302638,
+  "storage_human": "70.2 GB",
+  "base_model": "dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=02b52ff6428c660315e9383c43356721",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "Qwen 3.6-35B-A3B: 73.4% SWE-bench With Only 3B Active Params — Runs on ...",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-35b-a3b-complete-guide/",
+      "snippet": "Alibaba released Qwen 3.6-35B-A3B on April 15, 2026 — the first open-weight model in the Qwen 3.6 generation. It’s a sparse Mixture-of-Experts model with 35 billion total parameters but only 3 billion active at inference time."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

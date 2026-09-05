@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/whisper-small",
+  "slug": "jonnyverse-whisper-small",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/whisper-small",
+  "created_at": "2026-09-04T22:29:17.000Z",
+  "updated_at": "2026-09-04T22:29:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-small",
+    "base_model:quantized:openai/whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7366092393,
+  "storage_human": "7.4 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3a432bd7d79f6ff218be3c1dd6a86e7d",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "JONNYVERSE/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/JONNYVERSE/whisper-tiny",
+      "snippet": "Instructions to use JONNYVERSE/whisper-tiny with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers.js How to use JONNYVERSE/whisper-tiny with Transformers.js:"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "BennyDaBall/Qwopus3.8-27B-Flash-NVFP4",
+  "slug": "bennydaball-qwopus3-8-27b-flash-nvfp4",
+  "author": "BennyDaBall",
+  "url": "https://huggingface.co/BennyDaBall/Qwopus3.8-27B-Flash-NVFP4",
+  "created_at": "2026-09-04T17:18:35.000Z",
+  "updated_at": "2026-09-04T18:08:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "qwen3.8",
+    "qwen3.5",
+    "blackwell",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "multimodal",
+    "llama.cpp",
+    "lm-studio",
+    "agent",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "code-generation",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 40333502400,
+  "storage_human": "40.3 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Shiftedx/Qwopus3.8-27B-Flash-NVFP4-MTP · Hugging Face",
+      "url": "https://huggingface.co/Shiftedx/Qwopus3.8-27B-Flash-NVFP4-MTP",
+      "snippet": "Instructions to use Shiftedx/Qwopus3.8-27B-Flash-NVFP4-MTP with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "BennyDaBall (BennyDaBall) - Hugging Face",
+      "url": "https://huggingface.co/BennyDaBall",
+      "snippet": "Finetuning & quantization Text-to-Video • Updated 12 days ago • 4.76k • 3"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

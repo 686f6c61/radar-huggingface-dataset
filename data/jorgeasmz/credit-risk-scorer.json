@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jorgeasmz/credit-risk-scorer",
+  "slug": "jorgeasmz-credit-risk-scorer",
+  "author": "jorgeasmz",
+  "url": "https://huggingface.co/jorgeasmz/credit-risk-scorer",
+  "created_at": "2026-09-04T21:31:34.000Z",
+  "updated_at": "2026-09-05T01:53:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "credit-scoring",
+    "tabular",
+    "tabular-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 797188,
+  "storage_human": "797188 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSN | Personalized News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/?mkt=en-us",
+      "snippet": "Stay updated with trusted news, sports, entertainment, weather, and more on MSN, integrated with Outlook, Facebook, Twitter, Bing, …"
+    },
+    {
+      "title": "GitHub - jorgeasmz/Credit-Risk-Assessment",
+      "url": "https://github.com/jorgeasmz/Credit-Risk-Assessment",
+      "snippet": "Credit Risk Assessment System A machine learning microservice and UI for evaluating credit applicant risk using the German Credit Data set."
+    },
+    {
+      "title": "MSN | Personalized News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/en-au",
+      "snippet": "Get the latest news, sports, entertainment, and lifestyle updates with MSN. Stay informed on money, health, motoring, weather, and …"
+    },
+    {
+      "title": "GitHub - xavier-oc-programming/credit-risk-scorer: Credit risk scoring ...",
+      "url": "https://github.com/xavier-oc-programming/credit-risk-scorer",
+      "snippet": "Credit risk scoring API trained on the German Credit dataset. Predicts loan default probability using Logistic Regression, tracked with MLflow, served via FastAPI. Every prediction includes a plain-English explanation of the factors driving the risk score. Deployed on Azure App Service. Dataset note ..."
+    },
+    {
+      "title": "MSN | Personalised News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/en-gb",
+      "snippet": "Discover top stories, weather, sports, entertainment, lifestyle, and more, curated from leading UK and global news sources on MSN."
+    }
+  ]
+}

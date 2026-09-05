@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "endomorphosis/ipfs_mozambique_laws",
+  "slug": "endomorphosis-ipfs_mozambique_laws",
+  "author": "endomorphosis",
+  "url": "https://huggingface.co/endomorphosis/ipfs_mozambique_laws",
+  "created_at": "2026-09-04T23:16:56.000Z",
+  "updated_at": "2026-09-04T23:17:00.000Z",
+  "license": "mz-boletim-mireme",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "legal",
+    "law",
+    "mozambique",
+    "official-texts",
+    "pt",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12958166,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HLN - Het Laatste Nieuws - Volg het nieuws op de nr1 nieuwssite in ...",
+      "url": "https://www.hln.be/",
+      "snippet": "Het nieuwe seizoen van ‘Familie’ is nog maar net begonnen, maar de kijker krijgt meteen een stevige verhaallijn voorgeschoteld …"
+    },
+    {
+      "title": "endomorphosis/ipfs_mozambique_laws · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/endomorphosis/ipfs_mozambique_laws",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Net binnen | Het meest recente nieuws van HLN.be",
+      "url": "https://www.hln.be/net-binnen/",
+      "snippet": "Volg het meest recente nieuws op de nr1 nieuwssite in België, HLN brengt je het recente nieuws 24/24 en 7/7, uit binnen - en …"
+    },
+    {
+      "title": "endomorphosis (Benjamin J Barber) - Hugging Face",
+      "url": "https://huggingface.co/endomorphosis/datasets",
+      "snippet": "endomorphosis 82110 Follow rbp1's profile picturenaturelizer's profile picturevv111y's profile picture 8 followers · 8 following endomorphosis endomorphosis"
+    },
+    {
+      "title": "HLN.start | hln.be - HLN - Het Laatste Nieuws",
+      "url": "https://www.hln.be/hln-start/",
+      "snippet": "Aug 5, 2020 · HLN - Het Laatste Nieuws - Volg het nieuws op de nr1 nieuwssite in België, HLN.be brengt je het allerlaatste nieuws …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "I9yry8t/Formant",
+  "slug": "i9yry8t-formant",
+  "author": "I9yry8t",
+  "url": "https://huggingface.co/I9yry8t/Formant",
+  "created_at": "2026-09-05T00:13:34.000Z",
+  "updated_at": "2026-09-05T00:16:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78700545,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "Formant Robotics",
+      "url": "https://www.formant.ai/",
+      "snippet": "Formant connects robots, operators, enterprise systems, and AI agents through a governed layer for monitoring, intervention, evidence, and orchestration."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://studio.youtube.com/",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "I9yry8t (Semaj Norbel) - Hugging Face",
+      "url": "https://huggingface.co/I9yry8t",
+      "snippet": "Recent Activity updated a model30 minutes ago I9yry8t/Cartiv1music published a model31 minutes ago I9yry8t/Cartiv1music View all activity"
+    },
+    {
+      "title": "الصفحة الرئيسية - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPYf6vTu2xt17uhXThhpUMYbChcBh2YyC",
+      "snippet": "Share your videos with friends, family, and the world"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "caiotheodoro/vernier-rung1-probe",
+  "slug": "caiotheodoro-vernier-rung1-probe",
+  "author": "caiotheodoro",
+  "url": "https://huggingface.co/caiotheodoro/vernier-rung1-probe",
+  "created_at": "2026-09-04T19:26:06.000Z",
+  "updated_at": "2026-09-04T19:26:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "egocentric",
+    "hand-detection",
+    "distillation",
+    "negative-result",
+    "vernier",
+    "image-classification",
+    "dataset:caiotheodoro/vernier",
+    "dataset:builddotai/Egocentric-10K-Evaluation",
+    "base_model:facebook/dinov2-small",
+    "base_model:finetune:facebook/dinov2-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10111,
+  "storage_human": "10111 B",
+  "base_model": "facebook/dinov2-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizzeria Italia - 香港最好的披薩！",
+      "url": "https://www.pizzeriaitalia.hk/zh-hk/",
+      "snippet": "歡迎來到 Pizzeria Italia，意大利正宗風味遇上香港饕客的美味選擇！ 自從我們在摩羅街開設第一間店舖，現已於港島設有四家分店， …"
+    },
+    {
+      "title": "GitHub - Isk4R1oT/vernier: A differential instrument for non ...",
+      "url": "https://github.com/Isk4R1oT/vernier",
+      "snippet": "A differential instrument for non-deterministic AI agents: record N runs at the model-API wire, fingerprint the variance one run hides, name the first divergent step. - Isk4R1oT/vernier"
+    },
+    {
+      "title": "個人比薩，人氣主打 | Pizza Hut 必勝客",
+      "url": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=3&cu=20",
+      "snippet": "經典韓式燒牛肉搭配微辣帶甜的韓式洋釀醬，佐以韭菜與香濃莫札瑞拉起司；鋪在低溫發酵、清爽不膩的舊金山手工餅皮，經高溫烘烤 …"
+    },
+    {
+      "title": "caiotheodoro (Caio Theodoro) - Hugging Face",
+      "url": "https://huggingface.co/caiotheodoro/models",
+      "snippet": "User profile of Caio Theodoro on Hugging Face"
+    },
+    {
+      "title": "Top 10 香港最佳披薩餐廳 - Tripadvisor",
+      "url": "https://www.tripadvisor.com.tw/Restaurants-g294217-c31-Hong_Kong.html",
+      "snippet": "Pizza Maru (启德体育园) 6. Little Mario's Pizzeria. 7. Sole Mio Ristorante Italiano. 8. The Oyster House. 【灣仔。 生蠔專家🦪】 9. BACI …"
+    }
+  ]
+}

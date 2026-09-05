@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hungdo2401/smolvla_so101_baseline_plus_mimicgen",
+  "slug": "hungdo2401-smolvla_so101_baseline_plus_mimicgen",
+  "author": "hungdo2401",
+  "url": "https://huggingface.co/hungdo2401/smolvla_so101_baseline_plus_mimicgen",
+  "created_at": "2026-09-04T20:21:58.000Z",
+  "updated_at": "2026-09-04T23:13:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:hungdo2401/so101_baseline_plus_mimicgen",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 5277564888,
+  "storage_human": "5.3 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "hungdo2401/smolvla_so101_baseline · Hugging Face",
+      "url": "https://huggingface.co/hungdo2401/smolvla_so101_baseline",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; By using this site, you agree to the Terms of …"
+    },
+    {
+      "title": "hungdo2401/smolvla_so101_baseline at main - Hugging Face",
+      "url": "https://huggingface.co/hungdo2401/smolvla_so101_baseline/tree/main",
+      "snippet": "Instructions to use hungdo2401/smolvla_so101_baseline with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use hungdo2401/smolvla_so101_baseline with LeRobot:"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    }
+  ]
+}

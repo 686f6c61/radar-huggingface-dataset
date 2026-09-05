@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AyoubChLin/bert-hc3-human-vs-ai",
+  "slug": "ayoubchlin-bert-hc3-human-vs-ai",
+  "author": "AyoubChLin",
+  "url": "https://huggingface.co/AyoubChLin/bert-hc3-human-vs-ai",
+  "created_at": "2026-09-04T19:35:17.000Z",
+  "updated_at": "2026-09-04T22:08:18.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sequence-classification",
+    "ai-text-detection",
+    "human-vs-ai",
+    "hc3",
+    "pytorch",
+    "en",
+    "dataset:Hello-SimpleAI/HC3",
+    "arxiv:2301.07597",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:cc-by-sa-4.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 875917248,
+  "storage_human": "876 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Weich gekochtes Ei: So wird es perfekt! - Heisse Himbeeren",
+      "url": "https://heissehimbeeren.com/weich-gekochtes-ei-so-wird-es-perfekt/",
+      "snippet": "Jan 27, 2023 · Die Zeiten in meiner Tabelle unten gelten exakt für kühlschrankkalte Eier (ca. 8 °C), die in bereits kochendes Wasser …"
+    },
+    {
+      "title": "AyoubChLin (ayoub cherguelaine) - Hugging Face",
+      "url": "https://huggingface.co/AyoubChLin",
+      "snippet": "AyoubChLin/ESG-Bert-cnn-ag Text Classification • Updated Jul 12, 2023 • 10 • 1 Expand 28 models"
+    },
+    {
+      "title": "Eier kochen: Zeit für weiche & harte Frühstückseier | Knorr",
+      "url": "https://www.knorr.com/de/rezepte/kochratgeber/eier/eier-kochen.html",
+      "snippet": "Für ein perfekt weiches Ei mit flüssigem Eigelb genügen in der Regel 4 Minuten Kochzeit bei Eiern der Größe M, die aus dem …"
+    },
+    {
+      "title": "Classifying human vs. AI text with machine learning and explainable ...",
+      "url": "https://visualize.jove.com/41360832-classifying-human-vs-ai-text-with-machine-learning-and-explainable-transformer-models",
+      "snippet": "The rapid proliferation of AI-generated text from models such as ChatGPT-3.5 and ChatGPT-4 has raised critical challenges in verifying content authenticity and ensuring ethical use of language technologies. This study presents a comprehensive framework for distinguishing between human-written and GPT-generated text using a combination of machine learning, sequential deep learning, and ..."
+    },
+    {
+      "title": "Weichgekochte Eier – Zum Frühstück | Arla - Rezept",
+      "url": "https://www.arlafoods.de/rezepte/weich-gekochte-eier/",
+      "snippet": "Schäle sie dazu nicht und bewahre die weich gekochten Eier im Kühlschrank auf. Sie sollten innerhalb von 2–3 Tagen verzehrt …"
+    }
+  ]
+}

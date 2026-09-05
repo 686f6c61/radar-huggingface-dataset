@@ -5,7 +5,7 @@
   "author": "Shusek00",
   "url": "https://huggingface.co/Shusek00/kokoro-kmp-models",
   "created_at": "2026-09-03T14:55:32.000Z",
-  "updated_at": "2026-09-03T15:58:34.000Z",
+  "updated_at": "2026-09-04T16:24:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -53,8 +53,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2102918398,
-  "storage_human": "2.1 GB",
+  "storage_bytes": 2168968367,
+  "storage_human": "2.2 GB",
   "base_model": "hexgrad/Kokoro-82M, hexgrad/Kokoro-82M-v1.1-zh",
   "formats": [
     "onnx"

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SubMaroon/Boulesis-26B-A4B-GGUF",
+  "slug": "submaroon-boulesis-26b-a4b-gguf",
+  "author": "SubMaroon",
+  "url": "https://huggingface.co/SubMaroon/Boulesis-26B-A4B-GGUF",
+  "created_at": "2026-09-04T23:17:01.000Z",
+  "updated_at": "2026-09-05T01:17:51.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "roleplay",
+    "merge",
+    "gemma4",
+    "moe",
+    "en",
+    "base_model:SubMaroon/Boulesis-26B-A4B",
+    "base_model:quantized:SubMaroon/Boulesis-26B-A4B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233220894,
+  "parameters_human": "25.23B",
+  "storage_bytes": 16780297568,
+  "storage_human": "16.8 GB",
+  "base_model": "SubMaroon/Boulesis-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "150,000+ حياة النبي محمد خلفيات الصور ، 155711 HD خلفية تحميل مجاني ...",
+      "url": "https://ar.pikbest.com/free-backgrounds/%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A7%D9%84%D9%86%D8%A8%D9%8A-%D9%85%D8%AD%D9%85%D8%AF.html",
+      "snippet": "هل تبحث عن حياة النبي محمد صورة خلفية؟ لقد وجدت Pikbest 155711 رائعة حياة النبي محمد خلفيات صورة للاستخدام التجاري الشخصي. المزيد من صور خلفية HD ملفات مجانية تحميل …"
+    },
+    {
+      "title": "SubMaroon/Boulesis-26B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SubMaroon/Boulesis-26B-A4B-GGUF",
+      "snippet": "Instructions to use SubMaroon/Boulesis-26B-A4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "الرسول صور الخلفية، 5,049+ الخلفية المتجهات وملفات بسد للتحميل مجانا ...",
+      "url": "https://ar.pngtree.com/free-backgrounds-photos/%D8%A7%D9%84%D8%B1%D8%B3%D9%88%D9%84",
+      "snippet": "تقدم Pngtree أكثر من HD الرسول صور خلفية للتحميل مجانًا. قم بتنزيل الرسول الخلفية أو الصور ويمكنك استخدامها لأغراض عديدة ، مثل الشعارات وورق الحائط وخلفية الملصق بالإضافة إلى …"
+    },
+    {
+      "title": "unsloth/gemma-4-26B-A4B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF",
+      "snippet": "This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "النبي محمد صلى الله عليه وسلم الخلفية, صور تحميل مجاني",
+      "url": "https://ar.pngtree.com/free-backgrounds-photos/%D8%A7%D9%84%D9%86%D8%A8%D9%8A-%D9%85%D8%AD%D9%85%D8%AF-%D8%B5%D9%84%D9%89-%D8%A7%D9%84%D9%84%D9%87-%D8%B9%D9%84%D9%8A%D9%87-%D9%88%D8%B3%D9%84%D9%85",
+      "snippet": "قم بتنزيل النبي محمد صلى الله عليه وسلم الخلفية أو الصور ويمكنك استخدامها لأغراض عديدة ، مثل الشعارات وورق الحائط وخلفية الملصق بالإضافة إلى خلفية powerpoint وخلفية موقع الويب."
+    }
+  ]
+}

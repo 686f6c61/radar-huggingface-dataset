@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ohyou/lunar-lander-dqn",
+  "slug": "ohyou-lunar-lander-dqn",
+  "author": "ohyou",
+  "url": "https://huggingface.co/ohyou/lunar-lander-dqn",
+  "created_at": "2026-09-05T00:23:14.000Z",
+  "updated_at": "2026-09-05T00:46:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "gymnasium",
+  "languages": [],
+  "tags": [
+    "gymnasium",
+    "reinforcement-learning",
+    "deep-q-learning",
+    "dqn",
+    "lunar-lander",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 422962,
+  "storage_human": "422962 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rabbit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rabbit",
+      "snippet": "67166125\" Categories: Rabbits Cosmopolitan mammals Extant Ypresian first appearances Herbivorous mammals"
+    },
+    {
+      "title": "tnvjjr/Lunar_Lander_DeepQ_Learning_Model · Hugging Face",
+      "url": "https://huggingface.co/tnvjjr/Lunar_Lander_DeepQ_Learning_Model",
+      "snippet": "Lunar Lander Deep Q-Learning Model A Deep Q-Network (DQN) implementation to train an agent for the Lunar Lander environment from OpenAI Gym, complete with an interactive visualizer using Pygame."
+    },
+    {
+      "title": "Rabbit - Description, Habitat, Image, Diet, and Interesting Facts",
+      "url": "https://animals.net/rabbit/",
+      "snippet": "Rabbits, those endearing creatures with long ears and twitching noses, are far more complex and fascinating than many realize. …"
+    },
+    {
+      "title": "README.md · tnvjjr/Lunar_Lander_DeepQ_Learning_Model at main",
+      "url": "https://huggingface.co/tnvjjr/Lunar_Lander_DeepQ_Learning_Model/blob/main/README.md",
+      "snippet": "Lunar Lander Deep Q-Learning Model A Deep Q-Network (DQN) implementation to train an agent for the Lunar Lander environment from OpenAI Gym, complete with an interactive visualizer using Pygame."
+    },
+    {
+      "title": "Rabbit | Description, Species, & Facts | Britannica",
+      "url": "https://www.britannica.com/animal/rabbit",
+      "snippet": "Jul 22, 2026 · Rabbit, any of 29 species of long-eared mammals belonging to the family Leporidae, excluding hares (genus Lepus). …"
+    }
+  ]
+}

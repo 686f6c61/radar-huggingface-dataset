@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gnumanth/sushrota-sanskrit-asr-onnx",
+  "slug": "gnumanth-sushrota-sanskrit-asr-onnx",
+  "author": "gnumanth",
+  "url": "https://huggingface.co/gnumanth/sushrota-sanskrit-asr-onnx",
+  "created_at": "2026-09-04T22:22:28.000Z",
+  "updated_at": "2026-09-04T22:22:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "sa"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "sanskrit",
+    "ctc",
+    "conformer",
+    "onnxruntime-web",
+    "webgpu",
+    "wasm",
+    "sa",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187636527,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prime95 und CPU-Temperatur? - PCGH Extreme",
+      "url": "https://extreme.pcgameshardware.de/threads/prime95-und-cpu-temperatur.299339/",
+      "snippet": "Oct 19, 2013 · Hallo, ich bin etwas erschreckt über 78°C Kerntemperatur beim Prime95 Small-FFTs-Test. Bei den anderen …"
+    },
+    {
+      "title": "GitHub - gurusura/sushrota-sanskrit-asr-prathoshap: Scholar-grade ...",
+      "url": "https://github.com/gurusura/sushrota-sanskrit-asr-prathoshap",
+      "snippet": "ASR model: IndicConformer-CTC (Sanskrit slice). \"v5\" is the studio-finetuned base; v13b-ep3 is the current deployed model — v5 continued on consented real-user data (see §5b). Both are on Hugging Face, with the training dataset. Live tools: Vāgbodhinī (chant/prose tutor) and Su-śrotā (dictation/transcription) — both serve the same shared core ASR and both collect consented data that ..."
+    },
+    {
+      "title": "Prime 95, welche Version und Einstellungen? - PCGH Extreme",
+      "url": "https://extreme.pcgameshardware.de/threads/prime-95-welche-version-und-einstellungen.477020/",
+      "snippet": "May 16, 2017 · Hey Leute Ich habe schon versucht via Google die Antwort für meine Frage zu finden jedoch bin ich jetzt noch mehr …"
+    },
+    {
+      "title": "prathoshap/sushrota-sanskrit-asr - GitHub",
+      "url": "https://github.com/prathoshap/sushrota-sanskrit-asr/tree/main",
+      "snippet": "7. Model weights The finetuned v5 Sanskrit ASR (IndicConformer-CTC) is released on Hugging Face: prathoshap/sushrota-sanskrit-asr(see the HF model card for usage) The metre-aware TTS used for reference chants, Vāgdhenu, is separately at prathoshap/vagdhenu."
+    },
+    {
+      "title": "Neuer CPU, Prime95-Auswerten - PCGH Extreme",
+      "url": "https://extreme.pcgameshardware.de/threads/neuer-cpu-prime95-auswerten.571140/",
+      "snippet": "Jun 18, 2020 · Huhu, ich habe heute meine CPU von einem Ryzen 5 1500 auf einen Ryzen 5 3600 gewechselt. Nun habe ich …"
+    }
+  ]
+}

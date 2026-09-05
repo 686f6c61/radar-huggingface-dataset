@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "pngwn/sft-out",
+  "slug": "pngwn-sft-out",
+  "author": "pngwn",
+  "url": "https://huggingface.co/pngwn/sft-out",
+  "created_at": "2026-09-04T23:57:05.000Z",
+  "updated_at": "2026-09-04T23:57:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "smollm2",
+    "trl",
+    "conversational",
+    "dataset:trl-lib/Capybara",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538096377,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0e4ab874598e658c3f8fafbf5833647f",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "pngwn (Pete) - Hugging Face",
+      "url": "https://huggingface.co/pngwn",
+      "snippet": "Update and analyze a dataframe with button clicks. pngwn Oct 8, 2025. View 110 Spaces. models 2. Sort: Recently updated"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "pngwn/qwen2.5-0.5b-gsm8k-sft · Hugging Face",
+      "url": "https://huggingface.co/pngwn/qwen2.5-0.5b-gsm8k-sft",
+      "snippet": "Qwen2.5-0.5B GSM8K SFT Supervised fine-tuned model for grade-school math reasoning on GSM8K."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

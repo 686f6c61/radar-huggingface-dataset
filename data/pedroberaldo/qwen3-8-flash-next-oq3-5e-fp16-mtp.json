@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "pedroberaldo/Qwen3.8-Flash-Next-oQ3.5e-fp16-mtp",
+  "slug": "pedroberaldo-qwen3-8-flash-next-oq3-5e-fp16-mtp",
+  "author": "pedroberaldo",
+  "url": "https://huggingface.co/pedroberaldo/Qwen3.8-Flash-Next-oQ3.5e-fp16-mtp",
+  "created_at": "2026-09-04T04:14:15.000Z",
+  "updated_at": "2026-09-04T23:50:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "oq",
+    "quantized",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 90701264435,
+  "storage_human": "90.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-05T02:30:24.718Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "pedroberaldo/Qwen3.8-Flash-Next-oQ3.5e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/pedroberaldo/Qwen3.8-Flash-Next-oQ3.5e-fp16-mtp",
+      "snippet": "Instructions to use pedroberaldo/Qwen3.8-Flash-Next-oQ3.5e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA …"
+    }
+  ]
+}

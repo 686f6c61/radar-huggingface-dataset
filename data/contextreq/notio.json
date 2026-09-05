@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ContextReq/Notio",
+  "slug": "contextreq-notio",
+  "author": "ContextReq",
+  "url": "https://huggingface.co/ContextReq/Notio",
+  "created_at": "2026-09-04T23:40:09.000Z",
+  "updated_at": "2026-09-05T01:23:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ASCII",
+    "BINARY",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1959487335,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0a30c5dbbd0e6a7a0b06d210bcc66b16",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "ContextReq (ConReq.) - Hugging Face",
+      "url": "https://huggingface.co/ContextReq",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... updated a collection about 2 hours ago"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "ContextReq (ConReq.) - Hugging Face",
+      "url": "https://huggingface.co/ContextReq/datasets",
+      "snippet": "AI & ML interests DIY - mess around and findout, all and every aspect."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hxnney/VERO-Mini",
+  "slug": "hxnney-vero-mini",
+  "author": "hxnney",
+  "url": "https://huggingface.co/hxnney/VERO-Mini",
+  "created_at": "2026-09-04T19:12:12.000Z",
+  "updated_at": "2026-09-04T19:40:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1858776,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "Models nn - Yandex",
+      "url": "https://online.yandex.com/search?text=Models+nn&p=1",
+      "snippet": "Search from thousands of royalty-free Teen Modelingstock images and video for your next project."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Vero: An Open RL Recipe for General Visual Reasoning",
+      "url": "https://arxiv.org/abs/2604.04917",
+      "snippet": "What does it take to build a visual reasoner that works across charts, science, spatial understanding, and open-ended tasks? The strongest vision-language models (VLMs) suggest that broad visual reasoning is within reach, yet their closed data and reinforcement learning (RL) pipelines make their gains difficult to study, reproduce, or extend. We introduce Vero, a family of fully open VLMs that ..."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/de/german",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

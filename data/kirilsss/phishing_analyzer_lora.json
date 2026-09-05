@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "kirilsss/Phishing_analyzer_LoRA",
+  "slug": "kirilsss-phishing_analyzer_lora",
+  "author": "kirilsss",
+  "url": "https://huggingface.co/kirilsss/Phishing_analyzer_LoRA",
+  "created_at": "2026-09-04T19:32:29.000Z",
+  "updated_at": "2026-09-04T19:46:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152147894,
+  "storage_human": "152 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t.co",
+      "url": "https://schools.madrasati.sa/",
+      "snippet": "سجل المتابعة اليومي. وهو توثيق ورصد آلي لدرجات الطلبة في الواجبات والاختبارات والمهام الأدائية في"
+    },
+    {
+      "title": "Phishing Analyzer LoRA - GitHub",
+      "url": "https://github.com/kirilssw/Phishing-analyzer-LoRA",
+      "snippet": "An initial evaluation on a stratified 50-example test set found the model reliably detected credential_harvesting (6/6) and urgency_pretext attacks, but completely failed on invoice_fraud (0/6) and impersonation (0/7) — a result of the base CEAS-08 data skewing toward phishing with technical artifacts (links, attachments), so the model had ..."
+    },
+    {
+      "title": "Phishing-analyzer-LoRA/README.md at main - GitHub",
+      "url": "https://github.com/kirilssw/Phishing-analyzer-LoRA/blob/main/README.md",
+      "snippet": "Phishing Analyzer LoRA QLoRA adapter for Qwen2.5-7B-Instruct that classifies emails as phishing or legitimate and returns a structured threat analysis (threat type, risk level, indicators, mitigation recommendations)."
+    },
+    {
+      "title": "PhishingGallery (Phishing Model Gallery) - Hugging Face",
+      "url": "https://huggingface.co/PhishingGallery",
+      "snippet": "The collection of malicious models that can be used to phish via Demo Code"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=LoRA",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

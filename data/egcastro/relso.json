@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "egcastro/ReLSO",
+  "slug": "egcastro-relso",
+  "author": "egcastro",
+  "url": "https://huggingface.co/egcastro/ReLSO",
+  "created_at": "2026-09-04T17:17:59.000Z",
+  "updated_at": "2026-09-04T18:05:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "biology",
+    "protein-design",
+    "protein-sequence",
+    "variational-autoencoder",
+    "latent-space-optimization",
+    "pytorch-lightning",
+    "arxiv:2201.09948",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2342779265,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bayerischer Rundfunk: Nachrichten von BR24, Highlights aus der BR ...",
+      "url": "https://www.br.de/index.html",
+      "snippet": "Der Bayerische Rundfunk bietet Fernseh- und Radioprogramm und regionale Informationen aus ganz Bayern und den Regionen …"
+    },
+    {
+      "title": "[2201.09948] ReLSO: A Transformer-based Model for Latent Space ...",
+      "url": "https://arxiv.org/abs/2201.09948",
+      "snippet": "Through regularized prediction heads, ReLSO introduces a powerful protein sequence encoder and novel approach for efficient fitness landscape traversal. Using ReLSO, we explicitly model the sequence-function landscape of large labeled datasets and generate new molecules by optimizing within the latent space using gradient-based methods."
+    },
+    {
+      "title": "BR Fernsehen: Da bin ich daheim | BR.de",
+      "url": "https://www.br.de/br-fernsehen/index.html",
+      "snippet": "Homepage BR Fernsehen Bayerischer Rundfunk BR Programmkalender Infos Service Empfang Digital Verbreitung Informationen …"
+    },
+    {
+      "title": "Paper page - ReLSO: A Transformer-based Model for Latent Space ...",
+      "url": "https://huggingface.co/papers/2201.09948",
+      "snippet": "ReLSO: A Transformer-based Model for Latent Space Optimization and Generation of Proteins"
+    },
+    {
+      "title": "Bewerberportal Stellenmarkt - jobs.br.de",
+      "url": "https://jobs.br.de/Jobs/All",
+      "snippet": "1 day ago · Bewerberportal Stellenmarkt Teamlead und CvD für „Wirtshausengel“ (w/m/d) bei BR Puls in freier Mitarbeit | Befristung: …"
+    }
+  ]
+}

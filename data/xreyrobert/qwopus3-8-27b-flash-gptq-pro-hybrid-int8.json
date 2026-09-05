@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "XReyRobert/Qwopus3.8-27B-Flash-GPTQ-Pro-Hybrid-INT8",
+  "slug": "xreyrobert-qwopus3-8-27b-flash-gptq-pro-hybrid-int8",
+  "author": "XReyRobert",
+  "url": "https://huggingface.co/XReyRobert/Qwopus3.8-27B-Flash-GPTQ-Pro-Hybrid-INT8",
+  "created_at": "2026-09-04T21:22:32.000Z",
+  "updated_at": "2026-09-04T21:22:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "qwopus",
+    "gptq",
+    "gptq-pro",
+    "foem",
+    "int4",
+    "int8",
+    "mixed-precision",
+    "custom-vllm",
+    "conversational",
+    "base_model:XReyRobert/Qwopus3.8-27B-Flash-GPTQ-Pro-FOEM-4bit-g128-ns256",
+    "base_model:quantized:XReyRobert/Qwopus3.8-27B-Flash-GPTQ-Pro-FOEM-4bit-g128-ns256",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-05T02:26:20.940Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VALORANT",
+      "url": "https://playvalorant.com/",
+      "snippet": "Aug 26, 2026 · Riot Games presents VALORANT: a 5v5 character-based tactical FPS where precise gunplay meets unique agent …"
+    },
+    {
+      "title": "Qwen3.8-27B GPTQ-Pro Hybrid INT8 - Hugging Face",
+      "url": "https://huggingface.co/XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256-INT8-Head-Embeddings",
+      "snippet": "The base model is from the Qwen team. The GPTQ-Pro transformer body was produced with GPTQModel, using the FOEM recipe documented below. The INT8 lm_head and token-embedding transformation, serving approach, and original qwen3_5-embed-quant.patch are adapted from syv-ai/qwen38-27b-rtx3090 at pinned revision e681a8f6b190cca1f86d58b8b333b64d014994d7."
+    },
+    {
+      "title": "Valorant Download the Game",
+      "url": "https://playvalorant.com/en-us/download/",
+      "snippet": "Riot Games presents VALORANT: a 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities. Learn …"
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "How to run Alibaba's Qwen3.8-27B AI model locally: the settings, hardware, and prompts that deliver frontier results for founders, builders, and investors."
+    },
+    {
+      "title": "Home | Riot Games",
+      "url": "https://www.riotgames.com/tr",
+      "snippet": "Riot'ta çalış! Riot'la güçlerini birleştirerek yolunu çiz ve oyuncular için unutulmaz deneyimler oluştur."
+    }
+  ]
+}

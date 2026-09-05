@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "leapshared/Redox_90epi_GR00T17",
+  "slug": "leapshared-redox_90epi_gr00t17",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/Redox_90epi_GR00T17",
+  "created_at": "2026-09-04T19:00:20.000Z",
+  "updated_at": "2026-09-04T22:16:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot_frozen_bf16",
+    "robotics",
+    "dataset:leapshared/Redox_100epi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 89974041016,
+  "storage_human": "90.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hướng dẫn cách tải TikTok PC đơn giản nhanh chóng - CellphoneS",
+      "url": "https://cellphones.com.vn/sforum/tiktok-pc",
+      "snippet": "Jul 16, 2026 · TikTok hiện đang là ứng dụng mạng xã hội được yêu thích tại Việt Nam, đặc biệt phổ biến trên di động. Tuy nhiên, bạn …"
+    },
+    {
+      "title": "leapshared (Leapshared) - Hugging Face",
+      "url": "https://huggingface.co/leapshared/datasets",
+      "snippet": "Organizations leapshared's datasets3 Sort: Recently updated leapshared/neudive_test_120epi_0819_real_20260819_162506 Viewer •Updated about 7 hours ago•111k"
+    },
+    {
+      "title": "Cách nạp xu TikTok 2026: Nhận ưu đãi, chiết khấu, giá tốt",
+      "url": "https://cellphones.com.vn/sforum/cach-nap-xu-tiktok",
+      "snippet": "Jul 15, 2026 · Cách nạp xu TikTok giá rẻ uy tín bằng thẻ điện thoại và máy tính, qua ngân hàng, ví Momo, ZaloPay nhanh chóng …"
+    },
+    {
+      "title": "Leapshared - Hugging Face",
+      "url": "https://huggingface.co/leapshared/models",
+      "snippet": "User profile of Leapshared on Hugging Face"
+    },
+    {
+      "title": "CellphoneS - Điện thoại, laptop, tablet, phụ kiện chính hãng",
+      "url": "https://mobile-app.cellphones.com.vn/",
+      "snippet": "Hệ thống 180 cửa hàng bán lẻ điện thoại, máy tính laptop, smartwatch, gia dụng, thiết bị IT, phụ kiện chính hãng - Giá tốt, trả góp …"
+    }
+  ]
+}

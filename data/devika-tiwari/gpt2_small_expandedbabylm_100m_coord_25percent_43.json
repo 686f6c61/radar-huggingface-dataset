@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_25percent_43",
+  "slug": "devika-tiwari-gpt2_small_expandedbabylm_100m_coord_25percent_43",
+  "author": "devika-tiwari",
+  "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_25percent_43",
+  "created_at": "2026-02-24T22:34:28.000Z",
+  "updated_at": "2026-09-04T22:38:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gpt2",
+    "generated_from_trainer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7467131743,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sürücüler | Monster Notebook Destek",
+      "url": "https://support.monsternotebook.com/tr/drivers/",
+      "snippet": "Cihazınıza uygun yazılımları, sürücüleri, kılavuzları ve yardımcı programları edinin. Ürün Arayın. Tulpar T7 V26.5 17,3\" Oyun …"
+    },
+    {
+      "title": "devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_25percent_43 ...",
+      "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_25percent_43",
+      "snippet": "gpt2_small_expandedbabyLM_100M_coord_25percent_43 This model is a fine-tuned version of on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Monster Notebook Destek",
+      "url": "https://support.monsternotebook.com/tr/",
+      "snippet": "Teknik servis randevusu alın yada kargo ile gönderim numarası alın."
+    },
+    {
+      "title": "devika-tiwari/gpt2_small_expandedbabyLM_100k_44 · Hugging Face",
+      "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100k_44",
+      "snippet": "gpt2_small_expandedbabyLM_100k_44 This model is a fine-tuned version of on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Monster Kontrol Merkezi Nasıl İndirilir? 2023 - Teknobu",
+      "url": "https://www.teknobu.net/monster-kontrol-merkezi/",
+      "snippet": "Monster Kontrol Merkezi ile bilgisayarınızın birçok ayarını ve Monster Klavye Rengi değiştirme gibi işlemlerinizi yapabilirsiniz. Bu …"
+    }
+  ]
+}

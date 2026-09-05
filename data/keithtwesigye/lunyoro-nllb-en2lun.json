@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "keithtwesigye/lunyoro-nllb-en2lun",
+  "slug": "keithtwesigye-lunyoro-nllb-en2lun",
+  "author": "keithtwesigye",
+  "url": "https://huggingface.co/keithtwesigye/lunyoro-nllb-en2lun",
+  "created_at": "2026-05-07T02:08:18.000Z",
+  "updated_at": "2026-09-04T23:22:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "rw"
+  ],
+  "tags": [
+    "safetensors",
+    "m2m_100",
+    "translation",
+    "lunyoro",
+    "rutooro",
+    "runyoro",
+    "nllb",
+    "nllb-200",
+    "uganda",
+    "en",
+    "rw",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 32066644793,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SUTOM",
+      "url": "https://sutom.nocle.fr/?trk=public_post-text",
+      "snippet": "Règles Chargement de la grille en cours…"
+    },
+    {
+      "title": "keithtwesigye/lunyoro-nllb_lun2en · Hugging Face",
+      "url": "https://huggingface.co/keithtwesigye/lunyoro-nllb_lun2en",
+      "snippet": "lunyoro-nllb_lun2en Fine-tuned NLLB-200 model for Lunyoro/Rutooro → English translation. Lunyoro-Rutooro is a Bantu language spoken by the Bunyoro-Kitara and Tooro kingdoms in western Uganda."
+    },
+    {
+      "title": "keithtwesigye/lunyoro-nllb_en2lun · Hugging Face",
+      "url": "https://huggingface.co/keithtwesigye/lunyoro-nllb_en2lun",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - K227-arch/TRANSLATOR",
+      "url": "https://github.com/K227-arch/TRANSLATOR",
+      "snippet": "English ↔ Lunyoro/Rutooro translation (MarianMT + NLLB-200) Selective RAG — high-confidence corpus retrieval (score >= 0.92) before neural MT Linguistic Knowledge Graph — explainable AI, grammar tutoring, intelligent correction Dictionary lookup with example sentences AI chat assistant powered by Qwen 2.5 7B (via HuggingFace Inference API) PDF/DOCX document summarization and translation ..."
+    },
+    {
+      "title": "TRANSLATOR/lunyoro-translator/README.md at main · K227-arch ... - GitHub",
+      "url": "https://github.com/K227-arch/TRANSLATOR/blob/main/lunyoro-translator/README.md",
+      "snippet": "Features English ↔ Lunyoro/Rutooro translation (MarianMT + NLLB-200) Dictionary lookup with example sentences AI chat assistant powered by LLaMA 3.2 (via Ollama) PDF/DOCX document summarization and translation Voice translation Spellcheck Domain-aware translation (Medical, Education, Agriculture, etc.) Model comparison view (MarianMT vs NLLB-200)"
+    }
+  ]
+}

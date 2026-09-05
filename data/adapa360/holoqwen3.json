@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Adapa360/HoloQwen3",
+  "slug": "adapa360-holoqwen3",
+  "author": "Adapa360",
+  "url": "https://huggingface.co/Adapa360/HoloQwen3",
+  "created_at": "2026-09-04T18:51:03.000Z",
+  "updated_at": "2026-09-04T19:06:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "holographic_qwen3",
+    "text-generation",
+    "qwen3",
+    "custom-code",
+    "associative-memory",
+    "fourier",
+    "experimental",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557750,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    },
+    {
+      "title": "GitHub - ADAPA360/Huldra-Digital-Twin",
+      "url": "https://github.com/ADAPA360/Huldra-Digital-Twin",
+      "snippet": "We took Equinor’s massive 5GB open-source dataset of the decommissioned Huldra offshore rig and built a Level 4 Autonomous Spatial AI around it. This is not a cloud-dependent chatbot; it is a 100% sovereign, air-gapped, edge-computable Biomimetic Digital Twin powered by local open-source models and deterministic physics."
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "Valkla： [图片] 这个问题有意思。而且不光是中国，整个东亚地区都有相同的情况。这其实是一个比日本人为什么不道歉更大的问题。 …"
+    },
+    {
+      "title": "ADAPA360 (Ali Zareiee) · GitHub",
+      "url": "https://github.com/ADAPA360",
+      "snippet": "Ali Zareiee ADAPA360 Follow 1 follower · 0 following ADAPA360 Oslo, Norway www.adapa360.com Block or report user"
+    },
+    {
+      "title": "Your Happiness & Connection Calendar for September…",
+      "url": "https://greatergood.berkeley.edu/article/item/your_happiness_connection_calendar_for_september_2026",
+      "snippet": "3 days ago · Our monthly Happiness Calendar is a day-by-day guide to well-being. This month, we’re offering a special Happiness & …"
+    }
+  ]
+}

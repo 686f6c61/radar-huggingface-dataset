@@ -5,7 +5,7 @@
   "author": "cnuland",
   "url": "https://huggingface.co/cnuland/llm-d-sc-cost-v2",
   "created_at": "2026-09-04T00:59:24.000Z",
-  "updated_at": "2026-09-04T01:16:43.000Z",
+  "updated_at": "2026-09-04T08:33:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 22714756,
   "parameters_human": "22.7M",
-  "storage_bytes": 689316968,
-  "storage_human": "689 MB",
+  "storage_bytes": 961930064,
+  "storage_human": "962 MB",
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"

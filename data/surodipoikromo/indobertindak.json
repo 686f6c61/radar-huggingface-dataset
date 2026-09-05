@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "surodipoikromo/IndoBERTindak",
+  "slug": "surodipoikromo-indobertindak",
+  "author": "surodipoikromo",
+  "url": "https://huggingface.co/surodipoikromo/IndoBERTindak",
+  "created_at": "2026-09-04T21:14:10.000Z",
+  "updated_at": "2026-09-05T00:05:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "IndoBERT",
+    "multilabel-classification",
+    "indonesian",
+    "behavioral-signals",
+    "id",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124445189,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497809565,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search settings - Google Maps",
+      "url": "https://maps.google.ch/preferences",
+      "snippet": "Content Manage the kinds of search results you see by setting preferences for personalization and explicit content"
+    },
+    {
+      "title": "surodipoikromo/IndoBERTindak · Hugging Face",
+      "url": "https://huggingface.co/surodipoikromo/IndoBERTindak",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.ch/landing/transit/index.html",
+      "snippet": "If you provide a transportation service that is open to the public, and operates with fixed schedules and routes, we welcome your …"
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "Free AI image detector and checker. Find out if a photo, picture, or artwork is AI-generated: Midjourney, DALL-E, Stable Diffusion and 20+ models. No signup."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.ch/mapfiles/home3.html",
+      "snippet": "Explore places, get directions, and access real-time updates on traffic and public transportation with Google Maps."
+    }
+  ]
+}

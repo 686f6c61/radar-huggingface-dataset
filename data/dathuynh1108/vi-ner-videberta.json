@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "dathuynh1108/vi-ner-videberta",
+  "slug": "dathuynh1108-vi-ner-videberta",
+  "author": "dathuynh1108",
+  "url": "https://huggingface.co/dathuynh1108/vi-ner-videberta",
+  "created_at": "2026-09-04T23:18:09.000Z",
+  "updated_at": "2026-09-04T23:37:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "deberta-v2",
+    "token-classification",
+    "named-entity-recognition",
+    "vietnamese",
+    "videberta",
+    "address",
+    "bank-statement",
+    "vi",
+    "base_model:Fsoft-AIC/videberta-base",
+    "base_model:finetune:Fsoft-AIC/videberta-base",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 183760135,
+  "parameters_human": "183.8M",
+  "storage_bytes": 735154684,
+  "storage_human": "735 MB",
+  "base_model": "Fsoft-AIC/videberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Token Classification",
+      "dataset": "vi-ner held-out test split",
+      "metric": null,
+      "value": 0.678091
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "vi-ner held-out test split",
+      "metric": null,
+      "value": 0.758643
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "vi-ner held-out test split",
+      "metric": null,
+      "value": 0.716109
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "vi-ner held-out test split",
+      "metric": null,
+      "value": 0.965114
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sodastream schließt umstrittene Fabrik im Westjordanland",
+      "url": "https://www.derstandard.at/story/2000007487151/sodastream-schliesst-umstrittene-fabrik-in-siedlung-in-westjordanland",
+      "snippet": "Oct 29, 2014 · Gaza - Nach Boykottaufrufen von Aktivisten will die israelische Firma Sodastream eine umstrittene Fabrik in einer …"
+    },
+    {
+      "title": "ViDeBERTa: A powerful pre-trained language model for Vietnamese",
+      "url": "https://arxiv.org/pdf/2301.10439",
+      "snippet": "Our empir-ical results demonstrated the state-of-the-art (SOTA) results on Vietnamese downstream tasks: POS tagging, NER, and QA, thus con-firming the effectiveness of our improved pre-trained language model for Vietnamese. Our model, ViDeBERTa, which works with huggingface and transformers, is available to the public."
+    },
+    {
+      "title": "Sodastream schliesst Fabrik in Siedlung in Westjordanland",
+      "url": "https://www.swissinfo.ch/ger/sodastream-schliesst-fabrik-in-siedlung-in-westjordanland/41087540",
+      "snippet": "Oct 29, 2014 · Nach Boykottaufrufen von Aktivisten will die israelische Firma Sodastream eine umstrittene Fabrik in einer jüdischen …"
+    },
+    {
+      "title": "Fsoft-AIC/videberta-base · Hugging Face",
+      "url": "https://huggingface.co/Fsoft-AIC/videberta-base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sodastream pulls out of West Bank following campaign by Palestinian ...",
+      "url": "https://www.business-humanrights.org/en/latest-news/sodastream-pulls-out-of-west-bank-following-campaign-by-palestinian-groups-company-says-it-is-purely-commercial-decision/",
+      "snippet": "1 day ago · Sodastream, the Israeli maker of fizzy drink machines, will close its West Bank factory after coming under intense …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fedebrg/hf_act_recordpolicy0",
+  "slug": "fedebrg-hf_act_recordpolicy0",
+  "author": "fedebrg",
+  "url": "https://huggingface.co/fedebrg/hf_act_recordpolicy0",
+  "created_at": "2026-09-04T17:19:24.000Z",
+  "updated_at": "2026-09-04T17:19:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:fedebrg/record-test_20260904_183732",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porno – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=porno",
+      "snippet": "Regarde les vidéos porno de Porno gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Ahsmech/hf_act_recordpolicy0 · Hugging Face",
+      "url": "https://huggingface.co/Ahsmech/hf_act_recordpolicy0",
+      "snippet": "Instructions to use Ahsmech/hf_act_recordpolicy0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Ahsmech/hf_act_recordpolicy0 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "Meilleure – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=meilleure",
+      "snippet": "Meilleure – Vidéos Porno Les Plus Récentes best meilleure scene sexe du monde grosse bite meilleure amie 18 year cute girl 18 ans …"
+    },
+    {
+      "title": "iFaz/hf_act_recordpolicy0 · Hugging Face",
+      "url": "https://huggingface.co/iFaz/hf_act_recordpolicy0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hentai – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=hentai",
+      "snippet": "Regarde les vidéos porno de Hentai gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "NaukNauk/minimax-h3-turbo-ref2va-merged",
+  "slug": "nauknauk-minimax-h3-turbo-ref2va-merged",
+  "author": "NaukNauk",
+  "url": "https://huggingface.co/NaukNauk/minimax-h3-turbo-ref2va-merged",
+  "created_at": "2026-09-04T19:19:31.000Z",
+  "updated_at": "2026-09-04T19:22:17.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "minimax-h3",
+    "ref2va",
+    "video-generation",
+    "audio-video-generation",
+    "lightx2v",
+    "lora",
+    "merged",
+    "bf16",
+    "image-text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66280485848,
+  "storage_human": "66.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, lightx2v/Minimax-h3-Turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mairie de Saint-Martin d'Uriage - Accueil - Mairie de Saint-Martin …",
+      "url": "https://mairie.saintmartinduriage.fr/",
+      "snippet": "MAIRIE 2 place de la mairie, 38410 Saint-Martin d’Uriage Tél. : 04.76.59.77.10 HORAIRES D’OUVERTURE Du lundi au vendredi de …"
+    },
+    {
+      "title": "NaukNauk/minimax-h3-turbo-fl2va-merged · Hugging Face",
+      "url": "https://huggingface.co/NaukNauk/minimax-h3-turbo-fl2va-merged",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Actes réglementaires et délibérations - Mairie de Saint-Martin d'Uriage",
+      "url": "https://mairie.saintmartinduriage.fr/connaitre-ma-mairie/publications/actes-reglementaires-delib/",
+      "snippet": "4 days ago · Délibération n°43/2026-06-03 - Fixation du nombre de représentants du personnel au Comité Social Territorial (CST) …"
+    },
+    {
+      "title": "lightx2v/Minimax-h3-Turbo · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bulletins municipaux - Mairie de Saint-Martin d'Uriage",
+      "url": "https://mairie.saintmartinduriage.fr/connaitre-ma-mairie/publications/bulletins-municipaux/",
+      "snippet": "MAIRIE 2 place de la mairie, 38410 Saint-Martin d’Uriage Tél. : 04.76.59.77.10 HORAIRES D’OUVERTURE Du lundi au vendredi de …"
+    }
+  ]
+}

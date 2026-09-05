@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Tapestry-2",
+  "slug": "textilelabs-loom-tapestry-2",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Tapestry-2",
+  "created_at": "2026-09-04T22:07:53.000Z",
+  "updated_at": "2026-09-04T22:53:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "conversational",
+    "tool-use",
+    "agent-harness",
+    "retrieval-augmented",
+    "attribution",
+    "calibrated-honesty",
+    "humble-ai",
+    "philosophy-of-mind",
+    "small-language-model",
+    "cpu-trained",
+    "muon",
+    "text-generation-inference",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22827840,
+  "parameters_human": "22.8M",
+  "storage_bytes": 142482237,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eating and drinking in Shire Of Plantagenet, Western Australia",
+      "url": "https://australia-streets.openalfa.com/shire-of-plantagenet/eating-drinking",
+      "snippet": "Bars, restaurants and fast food in Shire Of Plantagenet."
+    },
+    {
+      "title": "textilelabs (Neo) - Hugging Face",
+      "url": "https://huggingface.co/textilelabs",
+      "snippet": "AI & ML interests Independent builder training small/efficient models from scratch on consumer hardware (CPU-only, no cloud). Currently exploring 1-bit/1.58-bit (BitNet-style) architectures, small language models, LoRA cartridges, and neuro-symbolic hybrids."
+    },
+    {
+      "title": "THE 10 BEST Restaurants Near Plantagenet Wines, Mount Barker",
+      "url": "https://www.tripadvisor.com.au/RestaurantsNear-g488358-d3806161-Plantagenet_Wines-Mount_Barker_Western_Australia.html",
+      "snippet": "Restaurants near Plantagenet Wines, Mount Barker on Tripadvisor: Find traveller reviews and candid photos of dining near …"
+    },
+    {
+      "title": "Tapestry.ai - AI-powered retail intelligence, in real time",
+      "url": "https://www.tapestry.ai/",
+      "snippet": "AI-powered retail intelligence for retailers, suppliers, wholesalers and POS partners. One shared, real-time view of every shelf, with clear next actions."
+    },
+    {
+      "title": "THE 10 BEST Restaurants Near Plantagenet Meats (Updated 2026)",
+      "url": "https://www.tripadvisor.com/RestaurantsNear-g488358-d27646832-Plantagenet_Meats-Mount_Barker_Western_Australia.html",
+      "snippet": "Restaurants near Plantagenet Meats, Mount Barker on Tripadvisor: Find traveler reviews and candid photos of dining near …"
+    }
+  ]
+}

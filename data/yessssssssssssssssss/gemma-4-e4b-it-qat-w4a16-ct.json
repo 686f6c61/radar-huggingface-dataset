@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yessssssssssssssssss/gemma-4-E4B-it-qat-w4a16-ct",
+  "slug": "yessssssssssssssssss-gemma-4-e4b-it-qat-w4a16-ct",
+  "author": "yessssssssssssssssss",
+  "url": "https://huggingface.co/yessssssssssssssssss/gemma-4-E4B-it-qat-w4a16-ct",
+  "created_at": "2026-09-04T23:59:59.000Z",
+  "updated_at": "2026-09-04T23:59:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8612189514,
+  "parameters_human": "8.61B",
+  "storage_bytes": 11546031454,
+  "storage_human": "11.5 GB",
+  "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "google/gemma-4-E4B-it-qat-w4a16-ct · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; By using this site, you agree to the Terms of …"
+    },
+    {
+      "title": "google/gemma-4-E4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    }
+  ]
+}

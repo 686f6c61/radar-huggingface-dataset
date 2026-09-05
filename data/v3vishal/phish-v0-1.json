@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "v3vishal/phish-v0.1",
+  "slug": "v3vishal-phish-v0-1",
+  "author": "v3vishal",
+  "url": "https://huggingface.co/v3vishal/phish-v0.1",
+  "created_at": "2026-09-04T21:46:42.000Z",
+  "updated_at": "2026-09-04T21:53:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 603118070,
+  "storage_human": "603 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mercedes Benz CLA-Class 2026 Harga OTR, Promo September, …",
+      "url": "https://www.oto.com/mobil-baru/mercedes-benz/cla-class",
+      "snippet": "Feb 9, 2026 · Harga Mercedes Benz CLA-Class 2026 Harga Mercedes Benz CLA-Class di Indonesia dimulai dari Rp 1,25 Milyar …"
+    },
+    {
+      "title": "vshl3 (Vishal Patel) - Hugging Face",
+      "url": "https://huggingface.co/vshl3",
+      "snippet": "Artificial intelligence model build up Text-to-Video • Updated about 13 hours ago • 510k • • 1.68k"
+    },
+    {
+      "title": "CLA 200 Amg Line FL 2026 Indonesia - Mercedes Benz Jakarta",
+      "url": "https://dealer-mercedes-benz.com/new-cla-200-amg-line-indonesia/",
+      "snippet": "Harga | Spesifikasi | Promo New Mercedes Benz CLA 200 AMG FL ( Facelift ) 2025-2026 Indonesia | Ready Stock | Dealer Mercedes …"
+    },
+    {
+      "title": "v0 by Vercel - Build Full-Stack Web Apps with AI",
+      "url": "https://v0.dev/",
+      "snippet": "Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web."
+    },
+    {
+      "title": "Harga OTR Mercedes Benz CLA-Class 2026 - Simulasi Kredit & Cicilan | Oto",
+      "url": "https://www.oto.com/mobil-baru/mercedes-benz/cla-class/harga",
+      "snippet": "Feb 9, 2026 · Harga Mercedes Benz CLA-Class 2026 mulai dari Rp 1,25 Milyar, Cek promo September 2026, DP, simulasi kredit dan …"
+    }
+  ]
+}

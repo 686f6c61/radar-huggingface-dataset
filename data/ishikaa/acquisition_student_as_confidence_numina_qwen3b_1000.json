@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_confidence_numina_qwen3b_1000",
+  "slug": "ishikaa-acquisition_student_as_confidence_numina_qwen3b_1000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen3b_1000",
+  "created_at": "2026-09-04T19:15:55.000Z",
+  "updated_at": "2026-09-04T19:17:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348896,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_confidence_numina_qwen7b_15 - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen7b_15",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_confidence_numina_qwen7b_15 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_confidence_numina_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_confidence_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/hot",
+      "snippet": "Twitch是一个面向视频游戏的实时流媒体视频平台，2011年6月由Justin Kan和Emmett Shear在旧金山联合创立， …"
+    }
+  ]
+}

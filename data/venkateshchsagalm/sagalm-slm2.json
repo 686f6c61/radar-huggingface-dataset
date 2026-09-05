@@ -5,7 +5,7 @@
   "author": "venkateshchsagalm",
   "url": "https://huggingface.co/venkateshchsagalm/SagaLM-slm2",
   "created_at": "2026-09-03T08:10:07.000Z",
-  "updated_at": "2026-09-03T08:11:44.000Z",
+  "updated_at": "2026-09-04T11:15:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,11 +28,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 292,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 15242693380,
+  "storage_bytes": 15243694100,
   "storage_human": "15.2 GB",
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [

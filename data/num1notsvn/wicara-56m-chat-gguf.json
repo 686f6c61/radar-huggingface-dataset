@@ -5,7 +5,7 @@
   "author": "num1notsvn",
   "url": "https://huggingface.co/num1notsvn/wicara-56m-chat-GGUF",
   "created_at": "2026-09-04T14:25:15.000Z",
-  "updated_at": "2026-09-04T14:26:04.000Z",
+  "updated_at": "2026-09-04T18:03:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": 66450560,
   "parameters_human": "66.5M",
-  "storage_bytes": 204695936,
-  "storage_human": "205 MB",
+  "storage_bytes": 409391872,
+  "storage_human": "409 MB",
   "base_model": "num1notsvn/wicara-56m-chat",
   "formats": [
     "gguf"

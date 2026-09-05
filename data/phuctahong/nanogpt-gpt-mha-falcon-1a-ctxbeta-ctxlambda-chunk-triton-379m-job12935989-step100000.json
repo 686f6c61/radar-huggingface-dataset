@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job12935989-step100000",
+  "slug": "phuctahong-nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job12935989-step100000",
+  "author": "phuctahong",
+  "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job12935989-step100000",
+  "created_at": "2026-09-04T23:38:09.000Z",
+  "updated_at": "2026-09-04T23:38:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nanogptpro",
+    "nanogpt",
+    "fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 379359616,
+  "parameters_human": "379.4M",
+  "storage_bytes": 1517486096,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton ...",
+      "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000",
+      "snippet": "phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000 NanoGPT Pro checkpoint uploaded from the princeton-pli/Nanogpt W&B project."
+    },
+    {
+      "title": "GMX Login – ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Der GMX Login stellt Sie vor Fragen oder bereitet Ihnen Probleme? Hier erfahren Sie alles, was Sie zum GMX Postfach Login wissen …"
+    },
+    {
+      "title": "phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda ...",
+      "url": "https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000",
+      "snippet": "phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000 NanoGPT Pro checkpoint uploaded from the princeton-pli/Nanogpt W&B project."
+    },
+    {
+      "title": "Login",
+      "url": "https://dv.gmx.net/",
+      "snippet": "Mobiler GMX Login: Auf dieser Seite können Sie sich mit dem Smartphone oder Tablet einfach und sicher unterwegs in Ihr GMX …"
+    }
+  ]
+}

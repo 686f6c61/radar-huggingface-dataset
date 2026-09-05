@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hermitdave/K2-Horizon-7B-MLX-4bit",
+  "slug": "hermitdave-k2-horizon-7b-mlx-4bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/K2-Horizon-7B-MLX-4bit",
+  "created_at": "2026-09-04T19:41:14.000Z",
+  "updated_at": "2026-09-04T19:50:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "apple-silicon",
+    "text-generation",
+    "4-bit",
+    "conversational",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 5083200376,
+  "storage_human": "5.1 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTBF Auvio : toute l'offre audio, vidéo et direct de la RTBF",
+      "url": "https://auvio.rtbf.be/",
+      "snippet": "Voir et écouter en replay tous les programmes de la RTBF. Regarder ou écouter en direct vos chaînes TV et radio. Découvrir des …"
+    },
+    {
+      "title": "abenzerps/K2-Horizon-7B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/K2-Horizon-7B-MLX-4bit",
+      "snippet": "Instructions to use abenzerps/K2-Horizon-7B-MLX-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Direct - Auvio - RTBF Auvio",
+      "url": "https://auvio.rtbf.be/direct",
+      "snippet": "Voir et écouter en replay tous les programmes de la RTBF. Regarder ou écouter en direct vos chaînes TV et radio. Découvrir des …"
+    },
+    {
+      "title": "Adapter Models for IFM/K2-Horizon-7B – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aadapter%3AIFM%2FK2-Horizon-7B",
+      "snippet": "IFM/K2-Horizon-7B Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Desktop Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere ..."
+    },
+    {
+      "title": "Mon Auvio - Auvio - RTBF Auvio",
+      "url": "https://auvio.rtbf.be/mon-auvio",
+      "snippet": "Voir et écouter en replay tous les programmes de la RTBF. Regarder ou écouter en direct vos chaînes TV et radio. Découvrir des …"
+    }
+  ]
+}

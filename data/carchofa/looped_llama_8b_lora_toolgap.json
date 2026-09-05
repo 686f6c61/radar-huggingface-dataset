@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Carchofa/looped_llama_8b_lora_toolgap",
+  "slug": "carchofa-looped_llama_8b_lora_toolgap",
+  "author": "Carchofa",
+  "url": "https://huggingface.co/Carchofa/looped_llama_8b_lora_toolgap",
+  "created_at": "2026-09-04T19:16:41.000Z",
+  "updated_at": "2026-09-04T20:58:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Carchofa/looped_llama_8b_128k",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Carchofa/looped_llama_8b_128k",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126330795,
+  "storage_human": "126 MB",
+  "base_model": "Carchofa/looped_llama_8b_128k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0510af174c6a603120b3b8dd4dd061b6",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Carchofa/looped_llama_8b_128k · Hugging Face",
+      "url": "https://huggingface.co/Carchofa/looped_llama_8b_128k",
+      "snippet": "Instructions to use Carchofa/looped_llama_8b_128k with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "looped_llama_8b_128k API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Carchofa/looped_llama_8b_128k",
+      "snippet": "Deploy looped_llama_8b_128k with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

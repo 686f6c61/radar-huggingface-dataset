@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tofan2/Wan2.1-T2V-1.3B",
+  "slug": "tofan2-wan2-1-t2v-1-3b",
+  "author": "tofan2",
+  "url": "https://huggingface.co/tofan2/Wan2.1-T2V-1.3B",
+  "created_at": "2026-09-04T23:16:19.000Z",
+  "updated_at": "2026-09-04T23:35:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "t2v",
+    "video",
+    "video-generation",
+    "text-to-video",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1418996800,
+  "parameters_human": "1.42B",
+  "storage_bytes": 17573675492,
+  "storage_human": "17.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "Wan2.1-T2V-1.3B · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B",
+      "snippet": "We employ our Wan-Bench framework to evaluate the performance of the T2V-1.3B model, with the results displayed in the table below. The results indicate that our smaller 1.3B model surpasses the overall metrics of larger open-source models, demonstrating the effectiveness of WanX2.1 's architecture and the data construction pipeline."
+    },
+    {
+      "title": "GMX Login - ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Der GMX Login stellt Sie vor Fragen oder bereitet Ihnen Probleme? Hier erfahren Sie alles, was Sie zum GMX Postfach Login wissen …"
+    },
+    {
+      "title": "Wan-AI/Wan2.1-VACE-1.3B-diffusers · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-VACE-1.3B-diffusers",
+      "snippet": "Wan: Open and Advanced Large-Scale Video Generative Models In this repository, we present Wan2.1, a comprehensive and open suite of video foundation models that pushes the boundaries of video generation. Wan2.1 offers these key features:"
+    },
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/consent-management/",
+      "snippet": "Leider konnten wir die Einstellungen für Privatsphäre & Datenschutz nicht laden."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "iamtokarev/hey-sonny",
+  "slug": "iamtokarev-hey-sonny",
+  "author": "iamtokarev",
+  "url": "https://huggingface.co/iamtokarev/hey-sonny",
+  "created_at": "2026-09-01T21:46:59.000Z",
+  "updated_at": "2026-09-04T22:12:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "openwakeword",
+  "languages": [],
+  "tags": [
+    "openwakeword",
+    "onnx",
+    "wake-word-detection",
+    "keyword-spotting",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2664313,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Steam",
+      "url": "https://store.steampowered.com/",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "iamtokarev (Vasilii Tokarev) - Hugging Face",
+      "url": "https://huggingface.co/iamtokarev/models",
+      "snippet": "iamtokarev/emotion-distilbert-finetuned Text Classification • 67M•Updated Sep 8, 2025• 6"
+    },
+    {
+      "title": "Steam, The Ultimate Online Game Platform",
+      "url": "https://store.steampowered.com/about",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "GitHub - iamtokarev/sonny: Lightweight personal agent",
+      "url": "https://github.com/iamtokarev/sonny",
+      "snippet": "Lightweight personal agent. Contribute to iamtokarev/sonny development by creating an account on GitHub."
+    },
+    {
+      "title": "Games - Steam",
+      "url": "https://store.steampowered.com/games/",
+      "snippet": "Discover and buy thousands of games on Steam, the ultimate online game platform."
+    }
+  ]
+}

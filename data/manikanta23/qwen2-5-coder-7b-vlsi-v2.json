@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Manikanta23/qwen2.5-coder-7b-vlsi-v2",
+  "slug": "manikanta23-qwen2-5-coder-7b-vlsi-v2",
+  "author": "Manikanta23",
+  "url": "https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-v2",
+  "created_at": "2026-09-04T19:01:38.000Z",
+  "updated_at": "2026-09-04T19:01:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955084,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motorcycle accident in Alton Sunday sends 2 to hospital",
+      "url": "https://www.newsbreak.com/news/4211238539251-motorcycle-accident-in-alton-sunday-sends-2-to-hospital",
+      "snippet": "Sep 2, 2025 · ALTON — A motorcycle accident sent two people to the hospital with serious injuries on Sunday, and firefighters kept …"
+    },
+    {
+      "title": "Manikanta23/qwen2.5-coder-7b-vlsi-v1 · Hugging Face",
+      "url": "https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-v1",
+      "snippet": "Manikanta23 / qwen2.5-coder-7b-vlsi-v1 like 0 Text Generation PEFT Safetensors lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Motorcycle Rider Hospitalized in Alton Crash on Mount Major Highway",
+      "url": "https://www.newsline.com/news/breaking/motorcycle-rider-hospitalized-in-alton-crash-on-mount-major-highway-20260822032",
+      "snippet": "Aug 22, 2026 · A motorcycle rider was injured in a collision with a vehicle near 919 Mount Major Highway and transported by EMS to …"
+    },
+    {
+      "title": "Manikanta23/qwen2.5-coder-7b-vlsi-v1 · Discussions",
+      "url": "https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-v1/discussions",
+      "snippet": "Instructions to use Manikanta23/qwen2.5-coder-7b-vlsi-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ..."
+    },
+    {
+      "title": "Bike Accident Injury Treatment & Recovery Guide",
+      "url": "https://www.bikelegalfirm.com/bike-injury-treatment",
+      "snippet": "Apr 17, 2025 · Injured in a bike crash? Learn how to treat bike accident injuries, when to see a doctor, self-care tips, and how to …"
+    }
+  ]
+}

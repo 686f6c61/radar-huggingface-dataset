@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/clap-htsat-unfused",
+  "slug": "jonnyverse-clap-htsat-unfused",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/clap-htsat-unfused",
+  "created_at": "2026-09-04T22:29:28.000Z",
+  "updated_at": "2026-09-04T22:29:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "clap",
+    "feature-extraction",
+    "zero-shot-audio-classification",
+    "base_model:laion/clap-htsat-unfused",
+    "base_model:quantized:laion/clap-htsat-unfused",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2183145744,
+  "storage_human": "2.2 GB",
+  "base_model": "laion/clap-htsat-unfused",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Αθλητικά Νέα | Αθλητικές Ειδήσεις | SDNA",
+      "url": "https://www.sdna.gr/",
+      "snippet": "Αθλητικές ειδήσεις & τα τελευταία αθλητικά νέα βρίσκονται τώρα εδώ. Δείτε όλες τις εξελίξεις από όλα τα sport σήμερα μέσα από το …"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/laion-clap-htsat-unfused",
+      "snippet": "laion/clap-htsat-unfused powered by Hugging Face Inference Toolkit Original Model Card feature-extraction Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "Τελευταία νέα | SDNA",
+      "url": "https://www.sdna.gr/news",
+      "snippet": "22 hours ago · ΤΑΥΤΟΤΗΤΑ PREFERENCES DARK MODE OFFON SDNA APP Κατέβασε τώρα και ζήσε τη μοναδική εμπειρία της …"
+    },
+    {
+      "title": "clap-htsat-unfused: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/clap-htsat-unfused-laion",
+      "snippet": "Overview clap-htsat-unfused is a contrastive language-audio pretraining model developed by laion that learns joint embeddings of audio and text by aligning them in a shared latent space. The model combines an HT-SAT (Hierarchical Token-Semantic Audio Transformer) audio encoder with a text encoder to enable zero-shot audio classification, text-to-audio retrieval, and feature extraction tasks ..."
+    },
+    {
+      "title": "Gazzetta.gr: Αθλητικά Νέα & Ειδήσεις",
+      "url": "https://www.gazzetta.gr/",
+      "snippet": "22 hours ago · Αθλητικά νέα με όλες τις τελευταίες αθλητικές ειδήσεις απο την Ελλάδα και τον κόσμο. Όλα τα αθλητικά νέα τώρα απο …"
+    }
+  ]
+}

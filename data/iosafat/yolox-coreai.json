@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "iosafat/YOLOX-CoreAI",
+  "slug": "iosafat-yolox-coreai",
+  "author": "iosafat",
+  "url": "https://huggingface.co/iosafat/YOLOX-CoreAI",
+  "created_at": "2026-09-04T19:53:51.000Z",
+  "updated_at": "2026-09-04T19:53:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "coreai-aimodel",
+    "core-ai",
+    "coreml",
+    "object-detection",
+    "yolox",
+    "apple",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36028733,
+  "storage_human": "36 MB",
+  "base_model": "Megvii-BaseDetection/YOLOX",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit Google Übersetzer können Sie Wörter, Sätze und Webseiten kostenlos in über 100 Sprachen übersetzen."
+    },
+    {
+      "title": "README.md · coreai-community/YOLOX-CoreAI at main",
+      "url": "https://huggingface.co/coreai-community/YOLOX-CoreAI/blob/main/README.md",
+      "snippet": "Part of the Core AI model zoo (model card). The dense-detector counterpart to RF-DETR-CoreAI: where the DETR family needs no NMS, YOLOX is the classic score = obj · cls + per-class NMS pipeline."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/details",
+      "snippet": "Damit du Details aufrufen kannst, musst du erst Text eingeben"
+    },
+    {
+      "title": "coreai-community/YOLOX-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/coreai-community/YOLOX-CoreAI",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/m",
+      "snippet": "Sprache erkennen→ Deutsch Google-Startseite"
+    }
+  ]
+}

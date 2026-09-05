@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MrDuarte/act-WarehousePick-v0-Sim-DigitalTwin",
+  "slug": "mrduarte-act-warehousepick-v0-sim-digitaltwin",
+  "author": "MrDuarte",
+  "url": "https://huggingface.co/MrDuarte/act-WarehousePick-v0-Sim-DigitalTwin",
+  "created_at": "2026-09-04T23:37:24.000Z",
+  "updated_at": "2026-09-04T23:37:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:MrDuarte/WarehousePick-v0-Sim-DigitalTwin",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206717000,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Does the term \"within 7 days\" mean include the 7th day?",
+      "url": "https://english.stackexchange.com/questions/63305/does-the-term-within-7-days-mean-include-the-7th-day",
+      "snippet": "But people often take today to be the first day of the count, so if on Monday someone says \"within 3 days\" they are thinking day …"
+    },
+    {
+      "title": "MrDuarte/act-WarehousePick-v0-DigitalTwin_yolo · Hugging Face",
+      "url": "https://huggingface.co/MrDuarte/act-WarehousePick-v0-DigitalTwin_yolo",
+      "snippet": "Instructions to use MrDuarte/act-WarehousePick-v0-DigitalTwin_yolo with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Precise meaning of \"Last N days, weeks, months or years\"",
+      "url": "https://english.stackexchange.com/questions/50615/precise-meaning-of-last-n-days-weeks-months-or-years",
+      "snippet": "Dec 5, 2011 · Today is Monday. Last week is strictly the period of seven days ending at midnight on Sunday and the last two weeks is …"
+    },
+    {
+      "title": "MrDuarte/WarehousePick-v0 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/MrDuarte/WarehousePick-v0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to address today and the following 9 days",
+      "url": "https://english.stackexchange.com/questions/478482/how-to-address-today-and-the-following-9-days",
+      "snippet": "Dec 25, 2018 · Would you think \"the next 10 days\" includes today? If not, would there be a clearer way to put it, to refer to today and …"
+    }
+  ]
+}

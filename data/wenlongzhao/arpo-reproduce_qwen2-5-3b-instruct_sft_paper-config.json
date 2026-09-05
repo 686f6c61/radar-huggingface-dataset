@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "wenlongzhao/ARPO-reproduce_Qwen2.5-3B-Instruct_SFT_paper-config",
+  "slug": "wenlongzhao-arpo-reproduce_qwen2-5-3b-instruct_sft_paper-config",
+  "author": "wenlongzhao",
+  "url": "https://huggingface.co/wenlongzhao/ARPO-reproduce_Qwen2.5-3B-Instruct_SFT_paper-config",
+  "created_at": "2026-09-04T23:04:16.000Z",
+  "updated_at": "2026-09-04T23:04:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "llama-factory",
+    "sft",
+    "arpo",
+    "conversational",
+    "arxiv:2507.19849",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348896,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NJ Spotlight | News, Issues and Insight for New Jersey",
+      "url": "https://www.njspotlightnews.org/",
+      "snippet": "NJ Spotlight is part of The WNET Group and is operated by WNET, a non-profit organization exempt from federal income tax under …"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research. 2 Architecture"
+    },
+    {
+      "title": "Welcome to NJ Spotlight",
+      "url": "https://www.njspotlightnews.org/welcome/",
+      "snippet": "Welcome to NJ Spotlight, providing news, information and insight about the critical issues facing New Jersey. NJ Spotlight is founded …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NJ Spotlight News | PBS",
+      "url": "https://www.pbs.org/show/nj-spotlight-news/",
+      "snippet": "Jan 22, 2020 · NJ Spotlight News is NJTV's nightly news program. The program covers news across New Jersey with a …"
+    }
+  ]
+}

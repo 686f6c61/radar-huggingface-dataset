@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gact-cubes-mae500",
+  "slug": "fecasado-gact-cubes-mae500",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gact-cubes-mae500",
+  "created_at": "2026-09-04T19:57:16.000Z",
+  "updated_at": "2026-09-04T19:57:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_act",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63539674,
+  "parameters_human": "63.5M",
+  "storage_bytes": 254214672,
+  "storage_human": "254 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bus Ligne 128 : plan, arrêts et horaires en temps réel | Bonjour RATP",
+      "url": "https://www.bonjour-ratp.fr/lignes-bus/ligne-128/",
+      "snippet": "Horaires de la ligne de Bus 128 Retrouvez tous les horaires des premiers et derniers départs et la fréquence de passage sur la ligne …"
+    },
+    {
+      "title": "fecasado/gact-cubes-32a · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gact-cubes-32a",
+      "snippet": "Instructions to use fecasado/gact-cubes-32a with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gact-cubes-32a with LeRobot: Notebooks Google Colab Kaggle Model Card for gaze_act How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "128 (nombre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/128_(nombre)",
+      "snippet": "128 (nombre) ... 128 (cent-vingt-huit ou cent vingt-huit) est l' entier naturel qui suit 127 et qui précède 129."
+    },
+    {
+      "title": "fecasado/gact-cubes-baseline · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gact-cubes-baseline",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Plan bus 128 | RATP",
+      "url": "https://www.ratp.fr/plans-lignes/busratp/128",
+      "snippet": "Consultez le plan du bus 128 de Paris. Carte à télécharger en PDF ou à imprimer présentant toutes les stations de la ligne 128 du bus."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sandepaAI/model_x_v2",
+  "slug": "sandepaai-model_x_v2",
+  "author": "sandepaAI",
+  "url": "https://huggingface.co/sandepaAI/model_x_v2",
+  "created_at": "2026-09-04T23:17:22.000Z",
+  "updated_at": "2026-09-04T23:38:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308481024,
+  "parameters_human": "308.5M",
+  "storage_bytes": 1233940744,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "请问大神penis，dick，cock之间有什么意义上的不同吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/267306665?sort=created",
+      "snippet": "Cock就比较难听一点，在学历高的有教养的人嘴里你基本不会听到，除非你跟那人关系很好开玩笑可能会说到，公共场合基本上你也 …"
+    },
+    {
+      "title": "sandepaAI/model_x_v2 · Hugging Face",
+      "url": "https://huggingface.co/sandepaAI/model_x_v2",
+      "snippet": "Instructions to use sandepaAI/model_x_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Wallhaven 网站是不是关闭了？？ - 知乎",
+      "url": "https://www.zhihu.com/question/33544179/answers/updated",
+      "snippet": "Wallhaven 是一个提供高清壁纸资源和社区互动的平台，为用户提供个性化的视觉体验。"
+    },
+    {
+      "title": "sandepaAI (preston a sanders) - Hugging Face",
+      "url": "https://huggingface.co/sandepaAI",
+      "snippet": "None yet models16 Sort: Recently updated sandepaAI/sandepa_ai_coder_435m_small_moe Text Generation •0.6B•Updated 4 days ago•804•1 sandepaAI/sandepaAI_gemma4_coder_12b Text Generation •12B•Updated 8 days ago•1.11k•1"
+    },
+    {
+      "title": "PPT中怎样把一个形状拆分或分割成多个小形状-百度经验",
+      "url": "https://jingyan.baidu.com/article/148a19211d99264d71c3b1c1.html",
+      "snippet": "Apr 20, 2019 · 本文介绍在PPT中怎样把一个形状拆分或分割成多个小形状，如图所示。"
+    }
+  ]
+}

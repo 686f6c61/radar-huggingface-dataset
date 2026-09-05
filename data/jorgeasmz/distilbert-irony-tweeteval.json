@@ -5,7 +5,7 @@
   "author": "jorgeasmz",
   "url": "https://huggingface.co/jorgeasmz/distilbert-irony-tweeteval",
   "created_at": "2026-08-29T01:57:26.000Z",
-  "updated_at": "2026-08-29T01:57:41.000Z",
+  "updated_at": "2026-09-05T00:56:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

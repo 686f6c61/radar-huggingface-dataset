@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Voluptuous_Animation_Krea_2_Turbo",
+  "slug": "aixfunestudio-voluptuous_animation_krea_2_turbo",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Voluptuous_Animation_Krea_2_Turbo",
+  "created_at": "2026-09-04T11:32:00.000Z",
+  "updated_at": "2026-09-04T22:33:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14701735204,
+  "storage_human": "14.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تنزيل Google Chrome وتثبيته - جهاز الكمبيوتر - مساعدة متصفح Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يمكنك تنزيل متصفّح الويب Chrome وتثبيته بدون أي رسوم، واستخدامه لتصفّح الويب. مراجعة متطلبات النظام لاستخدام Chrome"
+    },
+    {
+      "title": "Krea-2-Turbo - Hugging Face",
+      "url": "https://huggingface.co/krea/Krea-2-Turbo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "إنشاء حساب Google لاستخدامه في Gmail - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=ar",
+      "snippet": "الاشتراك في حساب Google ملاحظة مهمة:قبل إنشاء حساب Google جديد، سجِّل الخروج من حسابك الحالي. التعرّف على كيفية الخروج من Gmail"
+    },
+    {
+      "title": "Model Library | Krea",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea's AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "كيفية استرداد حسابك على Google أو Gmail - مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=ar",
+      "snippet": "إذا نسيت كلمة مرورك أو اسم المستخدم أو لم تتمكن من الحصول على رموز التحقُّق، اتَّبع هذه الخطوات لاسترداد حسابك على Google. بهذه الطريقة، ستستعيد إمكانية استخدام Gmail و\"صور …"
+    }
+  ]
+}

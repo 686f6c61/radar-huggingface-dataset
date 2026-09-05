@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "darelphilip/hinglisToxicity_darel_mmberta",
+  "slug": "darelphilip-hinglistoxicity_darel_mmberta",
+  "author": "darelphilip",
+  "url": "https://huggingface.co/darelphilip/hinglisToxicity_darel_mmberta",
+  "created_at": "2026-09-04T19:39:14.000Z",
+  "updated_at": "2026-09-04T20:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "modernbert",
+    "text-classification",
+    "multi-label-classification",
+    "toxicity",
+    "hinglish",
+    "mmbert",
+    "content-moderation",
+    "hi",
+    "en",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34363188,
+  "storage_human": "34 MB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Яндекс Карты — транспорт, навигация, поиск мест",
+      "url": "https://map.yandex.ru/",
+      "snippet": "Карты помогут найти нужное место даже без точного адреса и построят до него маршрут на общественном транспорте, …"
+    },
+    {
+      "title": "darelphilip/hinglish-toxicity-classifier · Hugging Face",
+      "url": "https://huggingface.co/darelphilip/hinglish-toxicity-classifier",
+      "snippet": "A fine-tuned multi-label text classification model engineered to detect toxicity, profanity, harassment, and identity-targeted hate speech in Romanized Hindi-English (Hinglish) code-mixed text. 🚀 Live Interactive Demo: Test this model in real-time on Hugging Face Spaces."
+    },
+    {
+      "title": "Yandex Maps: search for places, transport, and routes",
+      "url": "https://yandex.com/maps/",
+      "snippet": "Yandex Maps will help you find your destination even if you don't have the exact address — get a route for taking public transport, …"
+    },
+    {
+      "title": "darelphilip/hinglish-toxicity-classifier · Discussions",
+      "url": "https://huggingface.co/darelphilip/hinglish-toxicity-classifier/discussions",
+      "snippet": "darelphilip / hinglish-toxicity-classifier like 1 Text Classification Transformers Safetensors Hindi English xlm-roberta multi-label-classification toxicity content-moderation hinglish code-mixed indic-nlp text-embeddings-inference License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Карта России с городами и регионами — Яндекс Карты",
+      "url": "https://yandex.ru/maps/225/russia/",
+      "snippet": "Подробная онлайн-карта России с городами и регионами на сайте и в мобильном приложении Яндекс Карты. Схема дорог и …"
+    }
+  ]
+}

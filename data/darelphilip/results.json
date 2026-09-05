@@ -4,8 +4,8 @@
   "slug": "darelphilip-results",
   "author": "darelphilip",
   "url": "https://huggingface.co/darelphilip/results",
-  "created_at": "2026-09-01T17:02:27.000Z",
-  "updated_at": "2026-09-01T17:53:44.000Z",
+  "created_at": "2026-09-04T19:38:42.000Z",
+  "updated_at": "2026-09-04T19:39:13.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 307535623,
   "parameters_human": "307.5M",
-  "storage_bytes": 2460324026,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 1230162013,
+  "storage_human": "1.2 GB",
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "safetensors"

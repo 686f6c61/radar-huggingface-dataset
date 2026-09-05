@@ -15,9 +15,9 @@
     "gguf",
     "region:us"
   ],
-  "likes": 83,
+  "likes": 85,
   "downloads_30d": 4747,
-  "trending_score": 8,
+  "trending_score": 10,
   "parameters": 12895570508,
   "parameters_human": "12.90B",
   "storage_bytes": 982795839047,

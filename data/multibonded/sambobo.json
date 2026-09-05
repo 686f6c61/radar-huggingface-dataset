@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "multibonded/sambobo",
+  "slug": "multibonded-sambobo",
+  "author": "multibonded",
+  "url": "https://huggingface.co/multibonded/sambobo",
+  "created_at": "2026-09-04T21:44:42.000Z",
+  "updated_at": "2026-09-04T21:45:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349482963,
+  "storage_human": "349 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Véhicules de l'EU et véhicules d'occasion | Tabor Automobiles",
+      "url": "https://www.autohaus-tabor.de/fr/tabor-mobile.html",
+      "snippet": "Tabor Automobiles professionnel pour les Véhicules de l'EU en Kehl et Strasbourg grande sélection meilleur prix trouver un véhicule …"
+    },
+    {
+      "title": "SambaNova Model Bundling: Unlocking Efficiency for AI Inference and ...",
+      "url": "https://sambanova.ai/blog/sambanova-model-bundling-unlocking-efficiency-for-ai-inference-and-agentic-workflows",
+      "snippet": "Model bundling — a capability only available through the SambaNova platform — combines multiple models into a bundle and leverages the unique SambaNova architecture to hot-swap models in milliseconds."
+    },
+    {
+      "title": "Tabor Automobiles",
+      "url": "https://www.autohaus-tabor.de/fr/shop/index.html",
+      "snippet": "Nous et nos partenaires pouvons combiner ces informations avec d'autres données afin d’afficher des publicités personnalisées et de …"
+    },
+    {
+      "title": "SAMBANOVA - AI Tool | Agentic AI For Good",
+      "url": "https://agenticaiforgood.com/tools/sambanova",
+      "snippet": "Fast LLM inference on dataflow hardware ABOUT Serving frontier-scale models with high tokens-per-watt is hard on generic GPU clusters. SambaNova is an inference platform on reconfigurable dataflow units with OpenAI-compatible APIs and on-prem racks, so teams run large models and agent stacks at high throughput. INSTALL Copy pip install sambanova"
+    },
+    {
+      "title": "Tabor Automobiles mandataire Caroom : avis client, informations, …",
+      "url": "https://www.caroom.fr/mandataires-auto/tabor-mobile",
+      "snippet": "Retrouvez les avis clients Tabor Automobiles, les informations sur leur société, leurs services proposés, leurs agences et points de …"
+    }
+  ]
+}

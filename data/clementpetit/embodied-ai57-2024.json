@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "clementpetit/embodied-ai57-2024",
+  "slug": "clementpetit-embodied-ai57-2024",
+  "author": "clementpetit",
+  "url": "https://huggingface.co/clementpetit/embodied-ai57-2024",
+  "created_at": "2026-09-04T22:26:36.000Z",
+  "updated_at": "2026-09-04T22:26:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scary Teacher 3D - Play Online for Free! | Poki",
+      "url": "https://poki.com/en/g/scary-teacher-3d?msockid=2b91ca07d8956f0d3499ddcdd9fb6ee3",
+      "snippet": "Scary Teacher 3D is a simulation game where you prank the Scary Teacher by sneaking into her house and causing mischief without …"
+    },
+    {
+      "title": "clementpetit/embodied-ai-review · Hugging Face",
+      "url": "https://huggingface.co/clementpetit/embodied-ai-review",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Scary Teacher | Play Online For Free",
+      "url": "https://www.scary-teacher.com/",
+      "snippet": "Oct 12, 2025 · Play Scary Teacher 3D Online for Free. Sneak into Miss T’s creepy house, pull hilarious pranks, and outsmart the …"
+    },
+    {
+      "title": "clementpetit/embodied-ai-review at main - Hugging Face",
+      "url": "https://huggingface.co/clementpetit/embodied-ai-review/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main embodied-ai-review 140 kB Ctrl+K Ctrl+K 1 contributor History:2 commits clementpetit Upload 5 files 5985ec1 verified3 days ago .gitattributes Safe 1.52 kBinitial commit3 days ago README.md Safe 1.43 kBUpload 5 files3 days ago analysis.md Safe 3.11 kBUpload 5 files3 days ..."
+    },
+    {
+      "title": "Scary Teacher 3D - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zakg.scaryteacher.hellgame&hl=en-US",
+      "snippet": "The Scary Teacher has been threatening kids, giving physical punishment and at times torturing kids. Now, this scary teacher has …"
+    }
+  ]
+}

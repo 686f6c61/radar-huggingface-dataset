@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "samirchar/clip-asymmetry",
+  "slug": "samirchar-clip-asymmetry",
+  "author": "samirchar",
+  "url": "https://huggingface.co/samirchar/clip-asymmetry",
+  "created_at": "2026-09-04T19:33:35.000Z",
+  "updated_at": "2026-09-04T21:04:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "open_clip",
+    "clip",
+    "contrastive-learning",
+    "zero-shot-image-classification",
+    "image-text-retrieval",
+    "en",
+    "dataset:pixparse/cc12m-wds",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66267460086,
+  "storage_human": "66.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "不動産開業までの流れ | 入会をお考えの方へ | 全宅連",
+      "url": "https://www.zentaku.or.jp/admission/flow/",
+      "snippet": "そのために、営業保証金1,000万円を法務局に供託することが宅建業法で義務づけられているのですが、全宅保証へ入会すると、こ …"
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "全宅連 | 全国宅地建物取引業協会連合会",
+      "url": "https://www.zentaku.or.jp/",
+      "snippet": "実務に役立つ文例を多数掲載！ 重説や契約書作成時の？ を解消 法令改正情報 宅地建物取引業務に関連する各種法令等の新設・改 …"
+    },
+    {
+      "title": "CLIP/clip/model.py at main · openai/CLIP · GitHub",
+      "url": "https://github.com/openai/CLIP/blob/main/clip/model.py",
+      "snippet": "CLIP (Contrastive Language-Image Pretraining), Predict the most relevant text snippet given an image - openai/CLIP"
+    },
+    {
+      "title": "ハトサポログイン | 「ハトサポ」宅建協会会員業務支援サイト ...",
+      "url": "https://contract-guide.zentaku.or.jp/knowledge1",
+      "snippet": "以下のように設定してください。 ・ブラウザのCookieを許可する。 ・DOMストレージ（ローカルストレージ）を有効にする。 ハ …"
+    }
+  ]
+}

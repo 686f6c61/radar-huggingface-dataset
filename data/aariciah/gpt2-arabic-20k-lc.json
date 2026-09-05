@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aariciah/gpt2-arabic-20k-lc",
+  "slug": "aariciah-gpt2-arabic-20k-lc",
+  "author": "aariciah",
+  "url": "https://huggingface.co/aariciah/gpt2-arabic-20k-lc",
+  "created_at": "2026-09-01T03:35:02.000Z",
+  "updated_at": "2026-09-04T23:58:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 290,
+  "trending_score": 0,
+  "parameters": 100612608,
+  "parameters_human": "100.6M",
+  "storage_bytes": 3622200674,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‫Fall - فيلم: أين يمكن مشاهدته بالبث أونلاين",
+      "url": "https://www.justwatch.com/eg/movie/fall",
+      "snippet": "‫هل يُعرض Fall على Netflix أو Prime Video أو iflix إلخ؟ اعرفوا أين يمكنكم مشاهدة الأفلام أونلاين الآن!"
+    },
+    {
+      "title": "aariciah/gpt2-arabic-20k-lc · Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-arabic-20k-lc",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "مشاهدة فيلم Fall 2022 مترجم - عرب استريم",
+      "url": "https://arstream.cam/cinema/movie/985939",
+      "snippet": "النسبة لأفضل الأصدقاء بيكي و هنتر ، تدور الحياة حول التغلب على المخاوف ودفع الحدود. ولكن بعد أن صعدوا 2000 قدم إلى قمة برج راديو مهجور بعيد ، وجدوا أنفسهم محاصرين دون أي وسيلة للأسفل."
+    },
+    {
+      "title": "aariciah/gpt2-arabic-20k-lc at main - Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-arabic-20k-lc/tree/main",
+      "snippet": "Instructions to use aariciah/gpt2-arabic-20k-lc with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use aariciah/gpt2-arabic-20k-lc with Transformers:"
+    },
+    {
+      "title": "فيلم - Fall - 2022 مشاهدة اونلاين، فيديو، الإعلان، صور، النقد الفني ...",
+      "url": "https://elcinema.com/work/2074702/",
+      "snippet": "وفيلم Fall من النوع ده. مش رعب بالشكل التقليدي العادي، ومش دراما بالمعنى الكلاسيكي، لكنه تجربة نفسية بتحاول تخرج كل حاجة من جواك وتسيبك واقف على حافة بين الخوف و الصدمة وفي نفس الوقت كمان ..."
+    }
+  ]
+}

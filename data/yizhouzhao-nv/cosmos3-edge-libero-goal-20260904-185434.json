@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yizhouzhao-nv/cosmos3-edge-libero-goal-20260904-185434",
+  "slug": "yizhouzhao-nv-cosmos3-edge-libero-goal-20260904-185434",
+  "author": "yizhouzhao-nv",
+  "url": "https://huggingface.co/yizhouzhao-nv/cosmos3-edge-libero-goal-20260904-185434",
+  "created_at": "2026-09-04T18:54:34.000Z",
+  "updated_at": "2026-09-04T18:58:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "action-policy",
+    "cosmos3",
+    "libero",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26972978023,
+  "storage_human": "27.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RNGdle",
+      "url": "https://www.rngdle.com/",
+      "snippet": "A daily random number game. Roll your number, collect badges, and compete with friends."
+    },
+    {
+      "title": "yizhouzhao-nv/cosmos3-edge-libero10-sft · Hugging Face",
+      "url": "https://huggingface.co/yizhouzhao-nv/cosmos3-edge-libero10-sft",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RNGdle – Number Rarity Calculator, Infinite Rolls & Daily Challenges",
+      "url": "https://rngdle.net/",
+      "snippet": "Explore every named signal with exact counts, and build a personal field record from Daily Specimens. Transparent Methodology …"
+    },
+    {
+      "title": "Introducing Cosmos 3 Edge - Hugging Face",
+      "url": "https://huggingface.co/blog/nvidia/cosmos3edge",
+      "snippet": "A Blog post by NVIDIA on Hugging Face"
+    },
+    {
+      "title": "RNGdle Rolls – Daily Specimen, Pattern Atlas and Infinite Simulator",
+      "url": "https://rngdle.net/infinite",
+      "snippet": "How many rolls will it take to reach a target tier? SingularExtremeExceptionalRareRun Simulation RNGDLE.NET RNGdle.net is an …"
+    }
+  ]
+}

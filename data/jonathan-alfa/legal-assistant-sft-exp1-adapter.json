@@ -5,7 +5,7 @@
   "author": "jonathan-alfa",
   "url": "https://huggingface.co/jonathan-alfa/legal-assistant-sft-exp1-adapter",
   "created_at": "2026-09-03T19:54:59.000Z",
-  "updated_at": "2026-09-03T19:56:01.000Z",
+  "updated_at": "2026-09-04T18:10:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,14 +16,12 @@
   "tags": [
     "transformers",
     "safetensors",
-    "text-generation-inference",
+    "generated_from_trainer",
     "unsloth",
-    "qwen2",
     "trl",
-    "en",
+    "sft",
     "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
     "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
-    "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
   ],
@@ -32,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 172955358,
-  "storage_human": "173 MB",
+  "storage_bytes": 2125089215,
+  "storage_human": "2.1 GB",
   "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"

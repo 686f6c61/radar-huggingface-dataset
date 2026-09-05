@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "dernet/acestep-captioner-GGUF",
+  "slug": "dernet-acestep-captioner-gguf",
+  "author": "dernet",
+  "url": "https://huggingface.co/dernet/acestep-captioner-GGUF",
+  "created_at": "2026-09-04T16:52:41.000Z",
+  "updated_at": "2026-09-04T22:03:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "audio-captioning",
+    "music",
+    "llama.cpp",
+    "ace-step",
+    "audio-text-to-text",
+    "base_model:ACE-Step/acestep-captioner",
+    "base_model:quantized:ACE-Step/acestep-captioner",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 6231374155,
+  "storage_human": "6.2 GB",
+  "base_model": "ACE-Step/acestep-captioner",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "显卡日报 - 知乎",
+      "url": "https://www.zhihu.com/column/c_1433942042578157568",
+      "snippet": "欢迎来到显卡日报，先来看看显卡大盘，每晚11点不准时更新。"
+    },
+    {
+      "title": "dernet/acestep-captioner-GGUF · Hugging Face",
+      "url": "https://huggingface.co/dernet/acestep-captioner-GGUF",
+      "snippet": "acestep-captioner-GGUF like0 License:mit Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Win11系统如何更改Microsoft store的下载路径？ - 知乎",
+      "url": "https://www.zhihu.com/question/564794300",
+      "snippet": "Nov 5, 2022 · 新电脑从Microsoft store下载了软件，发现是下到了c盘，怎么改路径？"
+    },
+    {
+      "title": "ACE-Step/acestep-captioner · Hugging Face",
+      "url": "https://huggingface.co/ACE-Step/acestep-captioner",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "I blocked youtube and friv and i cant visit that sites please help me",
+      "url": "https://support.google.com/chrome/thread/4484933/i-blocked-youtube-and-friv-and-i-cant-visit-that-sites-please-help-me?hl=en",
+      "snippet": "Apr 19, 2019 · Somebody blocked some sites on my PC.Please answer and help"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "endomorphosis/ipfs_angola_laws",
+  "slug": "endomorphosis-ipfs_angola_laws",
+  "author": "endomorphosis",
+  "url": "https://huggingface.co/endomorphosis/ipfs_angola_laws",
+  "created_at": "2026-09-04T23:16:48.000Z",
+  "updated_at": "2026-09-04T23:16:51.000Z",
+  "license": "ao-diario-republica",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "legal",
+    "law",
+    "angola",
+    "official-texts",
+    "pt",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16182548,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuickBooks Online Login: Sign in to Access Your QuickBooks Account",
+      "url": "https://quickbooks.intuit.com/login/?msockid=1aae2e640f6b66143c1039af0e1b6792",
+      "snippet": "QuickBooks makes online accounting easy. Log in to your QuickBooks Online account to keep track of the money you spend and to …"
+    },
+    {
+      "title": "endomorphosis · GitHub",
+      "url": "https://github.com/endomorphosis",
+      "snippet": "Add an optional note Maximum 250 characters. Please don't include any personal information such as legal names or email addresses. Markdown supported. This note will be visible to only you. Block user ipfs_kit_py ipfs_kit_py Public"
+    },
+    {
+      "title": "Online Login | Sign in to your account | QuickBooks",
+      "url": "https://quickbooks.intuit.com/global/login/?msockid=1aae2e640f6b66143c1039af0e1b6792",
+      "snippet": "Customer login for your QuickBooks Online, QuickBooks Self Employed or QuickBooks Online Accountant account here. Continue …"
+    },
+    {
+      "title": "AI regulation in Angola: laws & policy (2026) | Anurag Verma",
+      "url": "https://anuragverma.co/worldwatch/angola/ai",
+      "snippet": "How does Angola regulate AI? Angola's current status, the key rules and named laws, and a dated, source-linked timeline (2026)."
+    },
+    {
+      "title": "QuickBooks Online Login",
+      "url": "https://accounting.quickbooks.com/",
+      "snippet": "Log in, contact QuickBooks online support, or online payroll support."
+    }
+  ]
+}

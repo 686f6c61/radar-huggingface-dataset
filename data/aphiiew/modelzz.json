@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aphiiew/modelzz",
+  "slug": "aphiiew-modelzz",
+  "author": "aphiiew",
+  "url": "https://huggingface.co/aphiiew/modelzz",
+  "created_at": "2026-01-22T15:59:03.000Z",
+  "updated_at": "2026-09-04T22:13:45.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1932923962,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CRF-SP - Conselho Regional de Farmácia do Estado de São Paulo",
+      "url": "https://portal.crfsp.org.br/index.php?option=com_content&view=article&id=12678",
+      "snippet": "Notícias, vídeos, entrevistas, cursos, eventos e novidades sobre a profissão farmacêutica."
+    },
+    {
+      "title": "aphiiew/modelzz · Hugging Face",
+      "url": "https://huggingface.co/aphiiew/modelzz",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CRF-SP - Conselho Regional de Farmácia do Estado de São Paulo",
+      "url": "https://portal.crfsp.org.br/index.php?option=com_content&view=article&id=5227-inscricao-definitiva-alteracao-de-inscricao-provisoria-para-definitiva",
+      "snippet": "Este procedimento se aplica ao farmacêutico que possua inscrição provisória no CRF-SP e antes de seu vencimento, recebe o …"
+    },
+    {
+      "title": "aphiiew (aphie) - Hugging Face",
+      "url": "https://huggingface.co/aphiiew",
+      "snippet": "Sort: Recently updated. aphiiew/modelzz. Updated Jan 22. aphiiew/Lidya. Updated Sep 24, 2025. aphiiew/Seokhwa. Updated Jul 31, 2025"
+    },
+    {
+      "title": "e-CAT - Central de Atendimento Eletrônico - CRF-SP",
+      "url": "https://ecat.crfsp.org.br/inscricao-online",
+      "snippet": "O cadastro abaixo é destinado aos profissionais para solicitar a primeira inscrição no CRF-SP via on-line. Em caso de solicitação de …"
+    }
+  ]
+}

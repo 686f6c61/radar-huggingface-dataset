@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wxcdart/gemma4-e2b-unified-engine-safetensors",
+  "slug": "wxcdart-gemma4-e2b-unified-engine-safetensors",
+  "author": "wxcdart",
+  "url": "https://huggingface.co/wxcdart/gemma4-e2b-unified-engine-safetensors",
+  "created_at": "2026-09-04T19:45:33.000Z",
+  "updated_at": "2026-09-04T19:55:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791643,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gazzetta.gr: Αθλητικά Νέα & Ειδήσεις",
+      "url": "https://www.gazzetta.gr/",
+      "snippet": "1 day ago · Σου προσφέρουμε άμεση και έγκυρη ενημέρωση, πάντα με το πάθος και τη δέσμευση για την αθλητική αλήθεια. Το …"
+    },
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Ειδήσεις - Τελευταία Νέα | gazzetta.gr",
+      "url": "https://www.gazzetta.gr/latest-news",
+      "snippet": "Ολυμπιακός: Από το 2013 δεν είχε τέτοιον παίκτη! Ο Κώστας Νικολακόπουλος γράφει στο blog του στο Gazzetta δέκα πράγματα για …"
+    },
+    {
+      "title": "unified-engine/models/gemma4_e2b at main · apex-compute ... - GitHub",
+      "url": "https://github.com/apex-compute/unified-engine/tree/main/models/gemma4_e2b",
+      "snippet": "Gemma4 E2B accelerator inference. Three modes — text only (LM), image + text (VLM), and audio + text — run from a single instruction bin."
+    },
+    {
+      "title": "La Gazzetta dello Sport | Notizie sportive e risultati live di oggi",
+      "url": "https://www.gazzetta.it/",
+      "snippet": "Leggi su gazzetta.it le ultime news sportive live, scopri i risultati in diretta e video di calcio, basket, F1, MotoGP, ciclismo, tennis e …"
+    }
+  ]
+}

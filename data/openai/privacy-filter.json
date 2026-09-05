@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "openai/privacy-filter",
+  "slug": "openai-privacy-filter",
+  "author": "openai",
+  "url": "https://huggingface.co/openai/privacy-filter",
+  "created_at": "2026-04-17T21:38:35.000Z",
+  "updated_at": "2026-04-22T16:50:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "openai_privacy_filter",
+    "token-classification",
+    "transformers.js",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 1745,
+  "downloads_30d": 326776,
+  "trending_score": 9,
+  "parameters": 1399486865,
+  "parameters_human": "1.40B",
+  "storage_bytes": 17419378952,
+  "storage_human": "17.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "OpenAI for business View all Model ML completes finance work more efficiently with GPT-5.6 Sol Startup Aug 10, 2026"
+    },
+    {
+      "title": "Introducing OpenAI Privacy Filter",
+      "url": "https://openai.com/index/introducing-openai-privacy-filter/",
+      "snippet": "This release is part of our broader effort to support a more resilient software ecosystem by providing developers practical infrastructure for building with AI safely, including tools ⁠ and models ⁠ that make strong privacy and security protections easier to implement from the start."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/fr-FR/",
+      "snippet": "Tout afficher Dix avancées en mathématiques et en informatique théorique Publication 1 août 2026 Un modèle OpenAI a réfuté une …"
+    },
+    {
+      "title": "GitHub - openai/privacy-filter: OpenAI Privacy Filter",
+      "url": "https://github.com/openai/privacy-filter",
+      "snippet": "After this, you will have a python script opf that can be run directly or via python -m opf. The script can be used in 3 separate ways, as described below. Run one-shot redaction: By default, opf looks for a model at the directory pointed to by the OPF_CHECKPOINT variable, or ~/.opf/privacy_filter. If a model is not found in the ~/.opf/privacy_filter location, it will be downloaded."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    }
+  ]
+}

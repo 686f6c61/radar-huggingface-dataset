@@ -5,7 +5,7 @@
   "author": "TheDrainFlorist",
   "url": "https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-5.5bpw",
   "created_at": "2026-08-30T15:32:23.000Z",
-  "updated_at": "2026-09-03T17:52:07.000Z",
+  "updated_at": "2026-09-05T01:09:11.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 647,
+  "downloads_30d": 892,
   "trending_score": 0,
   "parameters": 59759152787,
   "parameters_human": "59.76B",

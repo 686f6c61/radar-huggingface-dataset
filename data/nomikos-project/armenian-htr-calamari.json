@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nomikos-project/armenian-htr-calamari",
+  "slug": "nomikos-project-armenian-htr-calamari",
+  "author": "nomikos-project",
+  "url": "https://huggingface.co/nomikos-project/armenian-htr-calamari",
+  "created_at": "2026-09-04T17:14:59.000Z",
+  "updated_at": "2026-09-04T17:15:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "calamari",
+  "languages": [
+    "hy"
+  ],
+  "tags": [
+    "calamari",
+    "handwritten-text-recognition",
+    "ocr",
+    "hy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20006284,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apibeta.zeti.com",
+      "url": "http://apibeta.zeti.com/click/pgfi27bq4httaij4ha4ggtdkt7/517014855c362b86d52a07f71f11e03a/?k=mano",
+      "snippet": ""
+    },
+    {
+      "title": "Nomikos | AI-assisted manuscript annotation and HTR",
+      "url": "https://www.nomikos.app/",
+      "snippet": "Nomikos is the annotation platform behind the NOMOS project: a hosted editor, open HTR models on Hugging Face, and an optional command-line inference agent you install with uv tool install nomikos-inference. Pair it once with nomikos pair, then leave nomikos run working through the queue. New models arrive as a new release of the package."
+    },
+    {
+      "title": "zeti.com",
+      "url": "http://zeti.com/",
+      "snippet": ""
+    },
+    {
+      "title": "GitHub - kkkamur07/greekOCR: AI-Assisted annotation, transcription ...",
+      "url": "https://github.com/kkkamur07/greekOCR",
+      "snippet": "AI-Assisted annotation, transcription & text-extraction of Greek, Coptic, Armenian & Syriac Languages. - GitHub - kkkamur07/greekOCR: AI-Assisted annotation, transcription & text-extraction of Greek, Coptic, Armenian & Syriac Languages."
+    },
+    {
+      "title": "kkkamur07/greekOCR - ArmOSS",
+      "url": "https://armoss.org/project/1725-kkkamur07-greekocr",
+      "snippet": "Summary Nomikos is an open-source platform for AI-assisted transcription, annotation, and text extraction of historical manuscripts, focusing on scripts like Greek, Coptic, Armenian, and Syriac. It combines a web-based manuscript editor with model-assisted segmentation and handwritten text recognition (HTR) to accelerate the transcription process."
+    }
+  ]
+}

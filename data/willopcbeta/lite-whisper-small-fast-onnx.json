@@ -5,7 +5,7 @@
   "author": "willopcbeta",
   "url": "https://huggingface.co/willopcbeta/lite-whisper-small-fast-ONNX",
   "created_at": "2026-08-29T07:02:42.000Z",
-  "updated_at": "2026-08-29T13:45:02.000Z",
+  "updated_at": "2026-09-04T14:49:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 11498368485,
-  "storage_human": "11.5 GB",
+  "storage_bytes": 14876358292,
+  "storage_human": "14.9 GB",
   "base_model": "willopcbeta/lite-whisper-small-fast",
   "formats": [
     "onnx"

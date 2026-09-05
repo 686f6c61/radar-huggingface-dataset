@@ -5,7 +5,7 @@
   "author": "davidsyoung",
   "url": "https://huggingface.co/davidsyoung/GLM-5.3-EXL3-TR3-3.0bpw",
   "created_at": "2026-08-29T19:37:19.000Z",
-  "updated_at": "2026-08-30T10:03:21.000Z",
+  "updated_at": "2026-09-04T17:01:12.000Z",
   "license": "glm-5.3",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 473,
+  "downloads_30d": 491,
   "trending_score": 0,
   "parameters": 158151911424,
   "parameters_human": "158.15B",

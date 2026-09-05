@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ilintar/qwen3.8-27b-gguf-strix-halo",
+  "slug": "ilintar-qwen3-8-27b-gguf-strix-halo",
+  "author": "ilintar",
+  "url": "https://huggingface.co/ilintar/qwen3.8-27b-gguf-strix-halo",
+  "created_at": "2026-09-04T22:01:08.000Z",
+  "updated_at": "2026-09-04T22:06:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.8",
+    "dflash2",
+    "speculative-decoding",
+    "rocm",
+    "strix-halo",
+    "gfx1151",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 17149165056,
+  "storage_human": "17.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B, z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Qwen 3.8 27B on Strix Halo: the complete measured story",
+      "url": "https://kyanitelabs.tech/blog/qwen-27b-strix-halo-complete",
+      "snippet": "The rig AMD Strix Halo, 64 GB shared memory, open tooling (llama.cpp), one free Apache-2.0 model. No cloud, no rentals."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

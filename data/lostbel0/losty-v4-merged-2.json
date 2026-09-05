@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lostbel0/losty-v4-merged-2",
+  "slug": "lostbel0-losty-v4-merged-2",
+  "author": "Lostbel0",
+  "url": "https://huggingface.co/Lostbel0/losty-v4-merged-2",
+  "created_at": "2026-09-05T00:27:02.000Z",
+  "updated_at": "2026-09-05T00:28:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030310400,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060654400,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"DTMF\" Lyrics Meaning (English): Bad Bunny's Hit Song Explained",
+      "url": "https://lyricstories.com/song-meanings/dtmf-lyrics-meaning",
+      "snippet": "Feb 10, 2026 · “DTMF” Song Meaning: Learning to Appreciate the Moment “DTMF” is about looking back and wishing you’d …"
+    },
+    {
+      "title": "Lostbel0/losty-v4-merged · Hugging Face",
+      "url": "https://huggingface.co/Lostbel0/losty-v4-merged",
+      "snippet": "Instructions to use Lostbel0/losty-v4-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "TikTok Song Explained: Bad Bunny's DtMF Meaning - wikihow.com",
+      "url": "https://www.wikihow.com/Dtmf-Meaning",
+      "snippet": "Jan 27, 2026 · “DtMF” is a nostalgic track about not appreciating your loved ones when you have them. “ DtMF ” stands for “DeBÍ …"
+    },
+    {
+      "title": "Lostbel0/Losty-merged · Hugging Face",
+      "url": "https://huggingface.co/Lostbel0/Losty-merged",
+      "snippet": "Lostbel0 / Losty-merged like 0 Safetensors qwen3_5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 10B params Tensor type BF16 · F32 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "DtMF (English Translation) – Bad Bunny | Genius Lyrics",
+      "url": "https://genius.com/Genius-english-translations-bad-bunny-dtmf-english-translation-lyrics",
+      "snippet": "Jan 5, 2025 · “DtMF” by Bad Bunny (Debí Tirar Más Fotos) is about nostalgia, regret, and cherishing memories, wishing he had taken …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "GlimmaryKarl/DragonbornV1",
+  "slug": "glimmarykarl-dragonbornv1",
+  "author": "GlimmaryKarl",
+  "url": "https://huggingface.co/GlimmaryKarl/DragonbornV1",
+  "created_at": "2026-09-04T18:53:06.000Z",
+  "updated_at": "2026-09-04T19:00:33.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3421440,
+  "parameters_human": "3.4M",
+  "storage_bytes": 553806752,
+  "storage_human": "554 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    },
+    {
+      "title": "dragonborn - V1 | Pony Diffusion LoRA | Civitai",
+      "url": "https://civitai.com/models/643857/dragonborn",
+      "snippet": "dnd charachter , dragon born, There are no comments for this model yet. Be the first to let the people know about this model by leaving your comment."
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "Valkla： [图片] 这个问题有意思。而且不光是中国，整个东亚地区都有相同的情况。这其实是一个比日本人为什么不道歉更大的问题。 …"
+    },
+    {
+      "title": "GlimmaryKarl (Karl Roesch) - Hugging Face",
+      "url": "https://huggingface.co/GlimmaryKarl",
+      "snippet": "Hamilton V7 Enterprise Engine 🏭 Process industrial video and verify telemetry stake GlimmaryKarl 4 days ago Running"
+    },
+    {
+      "title": "spotify账号怎么登不上? - 知乎",
+      "url": "https://www.zhihu.com/question/329216939",
+      "snippet": "spotify每隔14天会强制登录，届时手机app和桌面应用都没法登录，会弹出国家限制问题。 如何解决我找了很多方法但是都没有用，下 …"
+    }
+  ]
+}

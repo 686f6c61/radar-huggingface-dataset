@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "qwertz92/granite-speech-5.0-470m-turboctc-onnx",
+  "slug": "qwertz92-granite-speech-5-0-470m-turboctc-onnx",
+  "author": "qwertz92",
+  "url": "https://huggingface.co/qwertz92/granite-speech-5.0-470m-turboctc-onnx",
+  "created_at": "2026-09-04T21:46:56.000Z",
+  "updated_at": "2026-09-04T22:35:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "granite_speech5_ctc",
+    "onnxruntime",
+    "speech",
+    "asr",
+    "granite",
+    "ctc",
+    "fp16",
+    "int8",
+    "quantized",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "base_model:quantized:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3390431656,
+  "storage_human": "3.4 GB",
+  "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "—————————— 浏览这个回答的人好多，看来有不少新玩家朋友加入steam，在此添加一些注意事项 1.确保你下的是正版steam. …"
+    },
+    {
+      "title": "ibm-granite/granite-speech-5.0-470m-turboctc · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc",
+      "snippet": "Model Summary: Granite Speech 5.0 TurboCTC is a compact 470 million parameter English ASR model with very high inference speed that is well suited for deployment on laptops, smartphones and other edge devices. The model consists of a conformer acoustic encoder with block self-attention, self-conditioning and temporal downsampling with an output layer corresponding to 16,384 BPE units. It was ..."
+    },
+    {
+      "title": "Qui a vu mes stories Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-36452377-instagram-je-ne-peux-plus-voir-qui-a-vu-mes-story-instants",
+      "snippet": "Bonjour, Je ne peux plus voir qui a vu mes story sur Instagram J’ai éteins mon tel, déconnexion, supp l’app rien n’y fait Alors que sur …"
+    },
+    {
+      "title": "iky1e/granite-speech-5.0-470m-turboctc-mlx-q5 · Hugging Face",
+      "url": "https://huggingface.co/iky1e/granite-speech-5.0-470m-turboctc-mlx-q5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Guide - Instagram - CCM",
+      "url": "https://it.ccm.net/faq/instagram-550",
+      "snippet": "Profilo Instagram hackerato: un recupero semplificato Instagram continua la sua guerra contro la pirateria. La piattaforma ha... Per …"
+    }
+  ]
+}

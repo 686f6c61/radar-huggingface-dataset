@@ -5,7 +5,7 @@
   "author": "Raghav-Singhal",
   "url": "https://huggingface.co/Raghav-Singhal/1pp-1.7b-ua-base",
   "created_at": "2026-09-03T18:20:50.000Z",
-  "updated_at": "2026-09-03T18:21:21.000Z",
+  "updated_at": "2026-09-04T07:19:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 300,
   "trending_score": 0,
   "parameters": 1661048832,
   "parameters_human": "1.66B",

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zyr-AGENT/zyr3-v1",
+  "slug": "zyr-agent-zyr3-v1",
+  "author": "zyr-AGENT",
+  "url": "https://huggingface.co/zyr-AGENT/zyr3-v1",
+  "created_at": "2026-09-04T19:31:35.000Z",
+  "updated_at": "2026-09-04T19:55:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "adapter",
+    "coding",
+    "coding-agent",
+    "debugging",
+    "agentic-coding",
+    "zyr3",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92219931,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brussels Midi Train Station (ZYR) – Départs, Arrivages & Retards",
+      "url": "https://www.flightera.net/fr/airport/Brussels/ZYR",
+      "snippet": "Brussels Midi Train Station (ZYR), Brussels, Belgium. départs, arrivages, Retards actuels, Compagnies aériennes, Météo."
+    },
+    {
+      "title": "zyr-AGENT/zyr3 · Hugging Face",
+      "url": "https://huggingface.co/zyr-AGENT/zyr3",
+      "snippet": "zyr-AGENT / zyr3 like 1 Text Generation Transformers English Chinese code coding ai agent reasoning multi-modal video 3d zyrai License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Brussels Airport, Brussels Gare du Midi (ZYR/) - PlaneMapper",
+      "url": "https://www.planemapper.com/airports/ZYR",
+      "snippet": "Brussels Airport, Brussels Gare du Midi ZYR/ - Actual Arrivals and Departures, Airport Map and Details (coordinates, elevation, …"
+    },
+    {
+      "title": "zyr-AGENT (ZYR AI) - Hugging Face",
+      "url": "https://huggingface.co/zyr-AGENT",
+      "snippet": "Recent Activity updated a Spaceabout 4 hours ago zyr-AGENT/zyr3-demo new activityabout 8 hours ago zyr-AGENT/zyr3: ZYR3 — a multi-AI model that routes to 34 specialists (1M context, transformers + vLLM ready) updated a modelabout 15 hours ago zyr-AGENT/zyr3 View all activity"
+    },
+    {
+      "title": "Seigneur Zir Diablo 4 Vessel of Hatred - MGG (Millenium)",
+      "url": "https://www.millenium.org/guide/407889.html",
+      "snippet": "Jul 9, 2025 · L'antagoniste de la Saison du Sang est aussi disponible sous la forme d'un Uber Boss permanent à affronter en niveau …"
+    }
+  ]
+}

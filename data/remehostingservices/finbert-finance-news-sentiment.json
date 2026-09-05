@@ -5,7 +5,7 @@
   "author": "remehostingservices",
   "url": "https://huggingface.co/remehostingservices/finbert-finance-news-sentiment",
   "created_at": "2026-09-03T14:03:23.000Z",
-  "updated_at": "2026-09-03T14:28:19.000Z",
+  "updated_at": "2026-09-04T16:04:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -35,12 +35,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 109484547,
   "parameters_human": "109.5M",
-  "storage_bytes": 437972745,
-  "storage_human": "438 MB",
+  "storage_bytes": 875945490,
+  "storage_human": "876 MB",
   "base_model": "ProsusAI/finbert",
   "formats": [
     "safetensors"

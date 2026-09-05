@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "alarwyy/alwahy-quran-whisper-base",
+  "slug": "alarwyy-alwahy-quran-whisper-base",
+  "author": "alarwyy",
+  "url": "https://huggingface.co/alarwyy/alwahy-quran-whisper-base",
+  "created_at": "2026-09-04T23:53:45.000Z",
+  "updated_at": "2026-09-05T00:00:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147951465,
+  "storage_human": "148 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Samsung Galaxy M21s - Full phone specifications - GSMArena.com",
+      "url": "https://www.gsmarena.com/samsung_galaxy_m21s-10580.php",
+      "snippet": "Nov 6, 2020 · Samsung Galaxy M21s Android smartphone. Announced Nov 2020. Features 6.4″ display, Exynos 9611 chipset, 6000 …"
+    },
+    {
+      "title": "Baselhany/Quran_Whisper_base_fine_tune · Hugging Face",
+      "url": "https://huggingface.co/Baselhany/Quran_Whisper_base_fine_tune",
+      "snippet": "This model is a fine-tuned version of openai/whisper-base on the quran-ayat-speech-to-text dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Samsung Galaxy M21s - Full Phone Specs, Price and Comparison",
+      "url": "https://www.techspecs.info/samsung-galaxy-m21s/",
+      "snippet": "Nov 6, 2020 · The Samsung Galaxy M21s comes with Android 10, ensuring enhanced functionality and smooth multitasking. It …"
+    },
+    {
+      "title": "Baselhany/Whisper_base_fine_tune_Quran · Hugging Face",
+      "url": "https://huggingface.co/Baselhany/Whisper_base_fine_tune_Quran",
+      "snippet": "Whisper base AR - BH This model is a fine-tuned version of openai/whisper-base on the quran-ayat-speech-to-text dataset. It achieves the following results on the evaluation set: Loss: 0.0111 Wer: 10.3303 Cer: 3.2687 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training ..."
+    },
+    {
+      "title": "Samsung Galaxy M21s - Specifications",
+      "url": "https://www.devicespecifications.com/en/model/c56354f7",
+      "snippet": "Information about the dimensions and weight of the device, shown in different measurement units. Body materials, available colors, …"
+    }
+  ]
+}

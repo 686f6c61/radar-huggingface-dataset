@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jommarn/FLUX.2-Klein-4B-Kleinfetti",
+  "slug": "jommarn-flux-2-klein-4b-kleinfetti",
+  "author": "Jommarn",
+  "url": "https://huggingface.co/Jommarn/FLUX.2-Klein-4B-Kleinfetti",
+  "created_at": "2026-09-04T17:20:24.000Z",
+  "updated_at": "2026-09-04T17:36:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "flux",
+    "flux-klein",
+    "anime",
+    "art-style",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 23726814362,
+  "storage_human": "23.7 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "20 hours ago · Play today’s daily Bing homepage quiz questions answer 10 fun triva, discover amazing facts and trends, then test …"
+    },
+    {
+      "title": "Flux 2 [klein] User Guide - fal.ai",
+      "url": "https://fal.ai/learn/devs/flux-2-klein-user-guide",
+      "snippet": "The Flux 2 [klein] 4B model family supports both text-to-image generation and image editing workflows, including single-reference and multi-reference inputs for controlled transformations. For teams processing hundreds or thousands of images daily, the reduced parameter count translates into meaningful latency and cost advantages 1."
+    },
+    {
+      "title": "Bing Homepage Quiz – Play Today’s 10 Trivia Daily Homepage Bing …",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "20 hours ago · Play today’s interactive Bing Homepage Quiz, answer 10 entertaining questions, discover fascinating facts, and test …"
+    },
+    {
+      "title": "Flux 2 klein - Sub-Second AI Image Generation",
+      "url": "https://flux2klein.ai/dashboard/ai-image",
+      "snippet": "Flux 2 klein is the fastest AI image generation model from Black Forest Labs, featuring sub-second inference, unified generation and editing, and photorealistic quality."
+    },
+    {
+      "title": "Bing News Quiz — Quiz d’Actualité Interactif du Jour",
+      "url": "https://bingnewsquizz.com/fr/",
+      "snippet": "Conçue pour tester et améliorer vos connaissances, cette page propose des quiz quotidiens captivants sur les dernières nouvelles, …"
+    }
+  ]
+}

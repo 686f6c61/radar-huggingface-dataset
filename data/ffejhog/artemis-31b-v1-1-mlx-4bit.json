@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ffejhog/Artemis-31B-v1.1-mlx-4Bit",
+  "slug": "ffejhog-artemis-31b-v1-1-mlx-4bit",
+  "author": "ffejhog",
+  "url": "https://huggingface.co/ffejhog/Artemis-31B-v1.1-mlx-4Bit",
+  "created_at": "2026-09-04T18:57:42.000Z",
+  "updated_at": "2026-09-04T18:58:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "base_model:TheDrummer/Artemis-31B-v1.1",
+    "base_model:quantized:TheDrummer/Artemis-31B-v1.1",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345280,
+  "parameters_human": "30.70B",
+  "storage_bytes": 17301554160,
+  "storage_human": "17.3 GB",
+  "base_model": "TheDrummer/Artemis-31B-v1.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Plugin] TV Spielfilm Fix (für das TV Spielfilm Plugin von kashmir ...",
+      "url": "https://www.boxpirates.to/index.php?thread/209131-plugin-tv-spielfilm-fix-f%C3%BCr-das-tv-spielfilm-plugin-von-kashmir-oe2-0/",
+      "snippet": "Apr 2, 2026 · TV-Spielfilm FIX hängt sich von außen in das Originalplugin ein und setzt im Hintergrund die von der TV Spielfilm …"
+    },
+    {
+      "title": "TheDrummer/Artemis-31B-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Artemis-31B-v1.1",
+      "snippet": "AI's use of language speaks volumes about their 'perception' of reality. If a language model has been skewed and limited to a positive perception, then it's ability to imagine is also limited. Finetuning is an opportunity to adjust and broaden the language. Corporations use it to achieve safety and compliance. I'm here to Drummer proudly ..."
+    },
+    {
+      "title": "[Plugin] TV Spielfilm [OE2.0] - E2 - Plugins mit Download ...",
+      "url": "https://www.boxpirates.to/index.php?thread/160946-plugin-tv-spielfilm-oe2-0/",
+      "snippet": "Sep 19, 2014 · Die TV Spielfilm Seite bietet das TV-Programm der nächsten 14 Tage von über 190 Sendern kompakt und schnell im …"
+    },
+    {
+      "title": "ailexleon/Artemis-31B-v1.1-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/ailexleon/Artemis-31B-v1.1-mlx-4Bit",
+      "snippet": "Instructions to use ailexleon/Artemis-31B-v1.1-mlx-4Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use ailexleon/Artemis-31B-v1.1-mlx-4Bit with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Artemis-31B-v1.1-mlx-4Bit ailexleon/Artemis-31B-v1.1-mlx-4Bit ..."
+    },
+    {
+      "title": "Bouquet aus Netcast (Vavoo) erstellen - Page 13 - Boxpirates",
+      "url": "https://www.boxpirates.to/index.php?pageNo=13",
+      "snippet": "Feb 12, 2025 · Ich erstelle diesen Thread in der Hoffnung, dass wir hier eine nahezu vollständige Senderliste der Vavoosender inkl. …"
+    }
+  ]
+}

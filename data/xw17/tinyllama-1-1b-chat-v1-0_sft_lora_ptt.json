@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_ptt",
+  "slug": "xw17-tinyllama-1-1b-chat-v1-0_sft_lora_ptt",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_ptt",
+  "created_at": "2026-09-04T18:56:59.000Z",
+  "updated_at": "2026-09-04T18:57:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25271744,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "Pornhubで45万の請求が来てしまって 年齢確認 のところを押しただけで出てしまったんですが ワンクリック詐欺 でしょうか...？？ …"
+    },
+    {
+      "title": "xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_galaxyppg · Hugging Face",
+      "url": "https://huggingface.co/xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_galaxyppg",
+      "snippet": "Instructions to use xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_galaxyppg with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Pornhubというサイトについて質問です。動画を視聴しているのです …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10285715145",
+      "snippet": "Sep 8, 2023 · pornhubというサイトで年齢確認が出たのでいいえを押したのですが、間違えて動画の再生ボタンを押したら 郵送手 …"
+    },
+    {
+      "title": "TinyLlama-1.1B-Chat-v1.0_finetuned_1_lora - Hugging Face",
+      "url": "https://huggingface.co/xw17/TinyLlama-1.1B-Chat-v1.0_finetuned_1_lora",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    }
+  ]
+}

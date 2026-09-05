@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sandeepmpatel/mocov3-experiment",
+  "slug": "sandeepmpatel-mocov3-experiment",
+  "author": "sandeepmpatel",
+  "url": "https://huggingface.co/sandeepmpatel/mocov3-experiment",
+  "created_at": "2026-09-04T19:51:24.000Z",
+  "updated_at": "2026-09-04T19:51:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minesweeper Online - Play Free Online Minesweeper",
+      "url": "https://minesweeperonline.com/",
+      "snippet": "Free Online Minesweeper in JavaScript. Play the classic game in Beginner, Intermediate, and Expert modes."
+    },
+    {
+      "title": "sandeepmpatel (Sandeep Patel) - Hugging Face",
+      "url": "https://huggingface.co/sandeepmpatel/datasets",
+      "snippet": "Recent Activity updated a modelabout 21 hours ago sandeepmpatel/model_716097473_mocov3_small published a modelabout 21 hours ago sandeepmpatel/model_716097473_mocov3_small View all activity"
+    },
+    {
+      "title": "Privacy Policy - Minesweeper Online",
+      "url": "https://minesweeperonline.com/privacy/",
+      "snippet": "Minesweeper Online uses third-party advertising companies to serve ads when you visit our website. These companies may use …"
+    },
+    {
+      "title": "sandeepmpatel/model_716097473_mocov3_small · Hugging Face",
+      "url": "https://huggingface.co/sandeepmpatel/model_716097473_mocov3_small",
+      "snippet": "model_716097473_mocov3_small.py Model Overview A small -scale implementation of the mocov3 architecture, built for multitask tasks."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

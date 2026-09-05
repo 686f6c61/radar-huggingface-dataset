@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jktanggraini/dino-retrieval",
+  "slug": "jktanggraini-dino-retrieval",
+  "author": "jktanggraini",
+  "url": "https://huggingface.co/jktanggraini/dino-retrieval",
+  "created_at": "2026-09-04T23:21:07.000Z",
+  "updated_at": "2026-09-04T23:21:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare Money Transfers | Best International Money Transfer Rates",
+      "url": "https://www.exchangerates.org.uk/compare-money-transfers",
+      "snippet": "Apr 29, 2025 · Compare money transfers from the UK by route and amount. Check international transfer rates, FX markups and fees, …"
+    },
+    {
+      "title": "jktanggraini (Arif Anggraini) - Hugging Face",
+      "url": "https://huggingface.co/jktanggraini/models",
+      "snippet": "jktanggraini's models1 Sort: Recently updated jktanggraini/t5-chat Updated about 23 hours ago"
+    },
+    {
+      "title": "Xe: Currency Exchange Rates and International Money Transfers",
+      "url": "https://www.xe.com/en-gb/",
+      "snippet": "11 hours ago · Get the best currency exchange rates for international money transfers to 200 countries in 100 foreign currencies. …"
+    },
+    {
+      "title": "jktanggraini (Arif Anggraini) - Hugging Face",
+      "url": "https://huggingface.co/jktanggraini",
+      "snippet": "Part-time photographer, full-time coder"
+    },
+    {
+      "title": "Send Money Abroad | Compare Rates to 70+ Countries | IMT",
+      "url": "https://www.internationalmoneytransfer.com/send-money",
+      "snippet": "Compare the best exchange rates for sending money abroad. Licensed, regulated providers, transparent fees, and expert reviews for …"
+    }
+  ]
+}

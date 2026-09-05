@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hermitdave/K2-Horizon-7B-oQ4e",
+  "slug": "hermitdave-k2-horizon-7b-oq4e",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/K2-Horizon-7B-oQ4e",
+  "created_at": "2026-09-04T19:41:00.000Z",
+  "updated_at": "2026-09-04T19:48:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "k2_horizon",
+    "custom_code",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 5308120013,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "IFM/K2-Horizon-7B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/IFM/K2-Horizon-7B",
+      "snippet": "K2-Horizon is an open-weight IFM model family built for transparent foundation-model research, staged checkpoint analysis, and practical deployment. The series spans compact dense models such as K2-Horizon-7B for local experimentation, dense mid-size and large models for high-quality research workloads, and mixture-of-expert (MoE) models for higher-capacity serving."
+    },
+    {
+      "title": "Google マップでマイマップを表示する",
+      "url": "https://support.google.com/maps/answer/3045850?hl=ja&co=genie.platform%3Ddesktop",
+      "snippet": "Google マップでマイマップを表示できます。 マイマップを使うと、自分用にカスタマイズした地図を作成、編集してオンラインで …"
+    },
+    {
+      "title": "K2 Horizon Press Release | Institute of Foundation Models - ifm.ai",
+      "url": "https://ifm.ai/k2/press-release/",
+      "snippet": "Abu Dhabi, UAE, September 3, 2026 — The Institute of Foundation Models (IFM) today introduced K2 Horizon, a new fleet of six AI foundation models ranging from 0.9 billion to 375 billion parameters. The new models are fully open—including model weights, code, training data and methodologies—allowing researchers and developers to inspect, reproduce and adapt the models for their own work ..."
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    }
+  ]
+}

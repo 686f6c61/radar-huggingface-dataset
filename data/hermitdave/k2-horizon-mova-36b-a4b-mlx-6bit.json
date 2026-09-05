@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hermitdave/K2-Horizon-MoVA-36B-A4B-MLX-6bit",
+  "slug": "hermitdave-k2-horizon-mova-36b-a4b-mlx-6bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/K2-Horizon-MoVA-36B-A4B-MLX-6bit",
+  "created_at": "2026-09-04T18:54:14.000Z",
+  "updated_at": "2026-09-04T19:50:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "apple-silicon",
+    "text-generation",
+    "6-bit",
+    "conversational",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 30449798379,
+  "storage_human": "30.4 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "301 Moved Permanently",
+      "url": "http://xxx69tube.com/",
+      "snippet": "301 Moved Permanently 301 Moved Permanently nginx"
+    },
+    {
+      "title": "Introducing K2 Horizon: Frontier Performance, Radically Open",
+      "url": "https://ifm.ai/blog/k2",
+      "snippet": "K2 Horizon 32B and 36B-A4B: strong performance for local deployment Horizon 32B is the fleet’s most powerful dense model, providing a strong balance of capability, adaptability, and local deployability. It ranks among the top dense models below 40 billion parameters. Horizon 36B-A4B reaches nearly the performance of the dense 32B model while activating only approximately 4 billion parameters ..."
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/video-m1kgt29/potresti_essere_mia_madre_film_completo_",
+      "snippet": "Sorry, this URL is outdated. Go back to the main page."
+    },
+    {
+      "title": "K2 Horizon MoVA 36B A4B: Benchmarks, Pricing & Context Window — Benchgen",
+      "url": "https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b",
+      "snippet": "Quick answer:K2-Horizon-MoVA-36B-A4B is IFM's sparse Mixture-of-Experts model using Mixture-of-Values attention (MoVA) — 36B total parameters, only 4B active per token, with a native 512K-token context window. It outscores open-weight dense and MoE models up to 15x its active-parameter size on agentic and reasoning benchmarks, and is competitive with closed frontier models. Open weights ..."
+    },
+    {
+      "title": "Mom Sleeping Stock Videos – 18,228 HD & 4K Footage Clips",
+      "url": "https://stock.adobe.com/search/video?k=mom+sleeping&msockid=22315f2306b06f52166148e9078a6ebf",
+      "snippet": "Adobe Checkout Create without limits — unlimited downloads, plus powerful AI editing"
+    }
+  ]
+}

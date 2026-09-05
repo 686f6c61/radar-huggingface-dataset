@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_50percent_43",
+  "slug": "devika-tiwari-gpt2_small_expandedbabylm_100m_coord_50percent_43",
+  "author": "devika-tiwari",
+  "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_50percent_43",
+  "created_at": "2026-02-25T02:17:38.000Z",
+  "updated_at": "2026-09-05T01:33:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gpt2",
+    "generated_from_trainer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6471481758,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "devika-tiwari/gpt2_small_expandedbabyLM_100M_cnp_10percent_43 · Hugging ...",
+      "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_cnp_10percent_43",
+      "snippet": "gpt2_small_expandedbabyLM_100M_cnp_10percent_43 This model is a fine-tuned version of on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
+    },
+    {
+      "title": "gpt2_small_expandedbabyLM_100M_wh_v2_50percent_43",
+      "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_wh_v2_50percent_43",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

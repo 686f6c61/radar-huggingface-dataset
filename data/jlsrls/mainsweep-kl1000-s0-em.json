@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/mainsweep-kl1000-s0-em",
+  "slug": "jlsrls-mainsweep-kl1000-s0-em",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/mainsweep-kl1000-s0-em",
+  "created_at": "2026-09-04T22:19:40.000Z",
+  "updated_at": "2026-09-04T22:24:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289781795,
+  "storage_human": "290 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fozlim fozlim.com",
+      "url": "https://fozlim.com/",
+      "snippet": ""
+    },
+    {
+      "title": "jlsrls/em-kl100000-s3 · Hugging Face",
+      "url": "https://huggingface.co/jlsrls/em-kl100000-s3",
+      "snippet": "Model Card for em-kl100000-s3 This model is a fine-tuned version of unsloth/gemma-3-4b-it. It has been trained using TRL."
+    },
+    {
+      "title": "Fozlim : nouvelle adresse et accès en septembre 2026",
+      "url": "https://gtlf.fr/fozlim/",
+      "snippet": "3 days ago · Vous trouverez ici la réponse immédiatement, une capture pertinente du catalogue et une méthode simple pour éviter …"
+    },
+    {
+      "title": "CODELOCKS KL1000 RFID Kitlock Door Lock Installation Guide",
+      "url": "https://manuals.plus/codelocks/kl1000-rfid-kitlock-door-lock-manual",
+      "snippet": "Discover how to install and replace the KL1000 RFID Kitlock Door Lock with ease. This user manual provides step-by-step instructions for cabinets, cupboards, and lockers. Ensure secure access control for your doors."
+    },
+    {
+      "title": "Wiflix : voici la nouvelle adresse sécurisée [2 septembre 2026 ]",
+      "url": "https://justeo.fr/wiflix-nouvelle-adresse/",
+      "snippet": "Wiflix (Flemmix) ne fonctionne plus ? Découvrez la nouvelle adresse officielle. Guide de déblocage, risques de sécurité et …"
+    }
+  ]
+}

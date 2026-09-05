@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "QiLong26/Qwen3-VL-8B-VQA-SFT-RL-v2",
+  "slug": "qilong26-qwen3-vl-8b-vqa-sft-rl-v2",
+  "author": "QiLong26",
+  "url": "https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT-RL-v2",
+  "created_at": "2026-09-04T14:06:06.000Z",
+  "updated_at": "2026-09-05T00:05:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:QiLong26/Qwen3-VL-8B-VQA-SFT",
+    "base_model:finetune:QiLong26/Qwen3-VL-8B-VQA-SFT",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545770778,
+  "storage_human": "17.5 GB",
+  "base_model": "QiLong26/Qwen3-VL-8B-VQA-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pay the Dartford Crossing charge (Dart Charge) - GOV.UK",
+      "url": "https://www.gov.uk/pay-dartford-crossing-charge",
+      "snippet": "Paying the Dart Charge: costs, creating an account, paying a fine or Penalty Charge Notice (PCN), applying for a local resident …"
+    },
+    {
+      "title": "QiLong26/Qwen3-VL-8B-VQA-SFT-RL-v2 · Hugging Face",
+      "url": "https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT-RL-v2",
+      "snippet": "Instructions to use QiLong26/Qwen3-VL-8B-VQA-SFT-RL-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Pay the Dartford Crossing charge (Dart Charge) - GOV.UK",
+      "url": "https://www.gov.uk/pay-dartford-crossing-charge/charges",
+      "snippet": "You do not need to pay the charge if you get free UK vehicle tax because of a disability. Your vehicle will be checked automatically …"
+    },
+    {
+      "title": "QiLong26/Qwen3-VL-8B-VQA-SFT-RL · Hugging Face",
+      "url": "https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT-RL",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dart Charge - Transport for London",
+      "url": "https://tfl.gov.uk/modes/driving/congestion-charge/dart-charge",
+      "snippet": "Drivers using the Dartford Crossing need to pay the Dart Charge in advance or by midnight the day after crossing. Pay online or by …"
+    }
+  ]
+}

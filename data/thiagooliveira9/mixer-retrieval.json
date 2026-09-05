@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "THIAGOOLIVEIRA9/mixer-retrieval",
+  "slug": "thiagooliveira9-mixer-retrieval",
+  "author": "THIAGOOLIVEIRA9",
+  "url": "https://huggingface.co/THIAGOOLIVEIRA9/mixer-retrieval",
+  "created_at": "2026-09-04T23:09:18.000Z",
+  "updated_at": "2026-09-04T23:09:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Search for help on the taskbar, use the Tips app, select the Get help link in the Settings app, or go to support.microsoft.com/windows."
+    },
+    {
+      "title": "THIAGOOLIVEIRA9/mixer-retrieval · Hugging Face",
+      "url": "https://huggingface.co/THIAGOOLIVEIRA9/mixer-retrieval",
+      "snippet": "The Python file contains the model and runnable example or training entry point. config.jsonrecords the generated architecture settings. training_args.jsonrecords the default experiment recipe. model.safetensorsis a valid initialization checkpoint for smoke tests; it is notpresented as a trained benchmark checkpoint. No benchmark score is claimed in this repository."
+    },
+    {
+      "title": "About Get Help | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/support/get-help/about-get-help",
+      "snippet": "The Windows Get Help app is a centralized hub for accessing a wide range of resources, including tutorials, FAQs, community …"
+    },
+    {
+      "title": "THIAGOOLIVEIRA9 (Thiago Oliveira) - Hugging Face",
+      "url": "https://huggingface.co/THIAGOOLIVEIRA9",
+      "snippet": "User profile of Thiago Oliveira on Hugging Face"
+    },
+    {
+      "title": "Enable or Disable USB Selective Suspend in Windows 11",
+      "url": "https://www.elevenforum.com/t/enable-or-disable-usb-selective-suspend-in-windows-11.10251/",
+      "snippet": "Nov 5, 2022 · This tutorial will show you how to turn on or off USB selective suspend for a power plan in Windows 10 and Windows …"
+    }
+  ]
+}

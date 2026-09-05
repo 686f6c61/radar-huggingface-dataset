@@ -5,7 +5,7 @@
   "author": "fla-hub",
   "url": "https://huggingface.co/fla-hub/RWKV7-G1j-1.5B-20260831",
   "created_at": "2026-09-02T08:27:25.000Z",
-  "updated_at": "2026-09-02T08:34:18.000Z",
+  "updated_at": "2026-09-04T05:13:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -60,7 +60,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 379,
+  "downloads_30d": 397,
   "trending_score": 0,
   "parameters": 1527404544,
   "parameters_human": "1.53B",

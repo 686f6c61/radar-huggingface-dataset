@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "pngwn/SmolLM2-135M-Capybara-SFT",
+  "slug": "pngwn-smollm2-135m-capybara-sft",
+  "author": "pngwn",
+  "url": "https://huggingface.co/pngwn/SmolLM2-135M-Capybara-SFT",
+  "created_at": "2026-09-05T00:02:54.000Z",
+  "updated_at": "2026-09-05T00:02:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "smollm2",
+    "trl",
+    "conversational",
+    "dataset:trl-lib/Capybara",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538096377,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gigabyte B 550 Gaming X V2 - PCGH Extreme",
+      "url": "https://extreme.pcgameshardware.de/threads/gigabyte-b-550-gaming-x-v2.668369/",
+      "snippet": "Nov 8, 2025 · Hallo Ihr lieben, habe da mal eine Frage zu dem Mainboard. Wenn ich richtig infrmiert bin, hat das Mainboard ja rene …"
+    },
+    {
+      "title": "lewtun/SmolLM2-135M-Capybara-SFT · Hugging Face",
+      "url": "https://huggingface.co/lewtun/SmolLM2-135M-Capybara-SFT",
+      "snippet": "Model Card for SmolLM2-135M-Capybara-SFT Quick start Training procedure Framework versions Citations"
+    },
+    {
+      "title": "Zufällige Blackscreens bei meinem 2. OLED-Modell",
+      "url": "https://extreme.pcgameshardware.de/threads/zufaellige-blackscreens-bei-meinem-2-oled-modell.664340/",
+      "snippet": "Aug 3, 2025 · Hey, ich habe ein riesiges Problem. Mein OLED-Monitor (Aorus FO32U2P) hat immer wieder zufällige Blackscreens. …"
+    },
+    {
+      "title": "Smollm2 Capybara Sft - a Hugging Face Space by pngwn",
+      "url": "https://huggingface.co/spaces/pngwn/smollm2-capybara-sft",
+      "snippet": "Run the program to open a visual dashboard that automatically shows live input and output activity. No extra data is needed from the user; the tool gathers I/O information itself and presents it in..."
+    },
+    {
+      "title": "DRIVERS PLACA BASE GIGABYTE ¿CUALES INSTALAR?",
+      "url": "https://foro.elchapuzasinformatico.com/threads/drivers-placa-base-gigabyte-cuales-instalar.140162/",
+      "snippet": "Nov 29, 2022 · Hola esa es mi duda en una placa base nueva Gigabiye Z690 Gaming X deberia instalar todos los drivers o no seria …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "FrankieShih/qwen3-4b-ai-jobs-classifier",
+  "slug": "frankieshih-qwen3-4b-ai-jobs-classifier",
+  "author": "FrankieShih",
+  "url": "https://huggingface.co/FrankieShih/qwen3-4b-ai-jobs-classifier",
+  "created_at": "2026-09-04T19:12:27.000Z",
+  "updated_at": "2026-09-04T21:42:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022473216,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056415159,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Memoria - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Memoria",
+      "snippet": "La memoria è un fenomeno studiato sin dall' antichità, come capacità non solo di rievocare passivamente, ma anche rivivere in …"
+    },
+    {
+      "title": "FrankieShih/qwen3-8b-ai-jobs-classifier · Hugging Face",
+      "url": "https://huggingface.co/FrankieShih/qwen3-8b-ai-jobs-classifier",
+      "snippet": "Model Card for qwen3-8b-ai-jobs-classifier Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed]"
+    },
+    {
+      "title": "Memoria: definizione, funzionamento, tipi di memoria - Psicologia",
+      "url": "https://www.stateofmind.it/memoria/",
+      "snippet": "Jul 25, 2023 · Che cos'è e come funziona la memoria. I modelli di concettualizzazione della memoria, i sistemi mnestici e le diverse …"
+    },
+    {
+      "title": "FrankieShih/qwen3-8b-ai-jobs-classifier at main - Hugging Face",
+      "url": "https://huggingface.co/FrankieShih/qwen3-8b-ai-jobs-classifier/tree/main",
+      "snippet": "/ qwen3-8b-ai-jobs-classifier like 0 Text Classification Transformers Safetensors English Model card FilesFiles and versions Community Train Deploy Use this model main qwen3-8b-ai-jobs-classifier Ctrl+K Ctrl+K 1 contributor History:5 commits FrankieShih Update README.md f85348f verifiedabout 8 hours ago .gitattributes Safe 1.52 kBinitial ..."
+    },
+    {
+      "title": "Memòria - Significato ed etimologia - Vocabolario - Treccani",
+      "url": "https://www.treccani.it/vocabolario/memoria/",
+      "snippet": "memòria s. f. [dal lat. memoria, der. di memor - ŏris «memore»]. – 1. a. In generale, la capacità, comune a molti organismi, di …"
+    }
+  ]
+}

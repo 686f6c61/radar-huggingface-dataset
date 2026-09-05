@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/A11OY-MINI",
   "created_at": "2026-08-28T16:21:48.000Z",
-  "updated_at": "2026-09-02T00:13:52.000Z",
+  "updated_at": "2026-09-04T17:25:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 772845888,
   "parameters_human": "772.8M",

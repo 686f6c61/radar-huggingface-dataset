@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SubMaroon/Boulesis-26B-A4B",
+  "slug": "submaroon-boulesis-26b-a4b",
+  "author": "SubMaroon",
+  "url": "https://huggingface.co/SubMaroon/Boulesis-26B-A4B",
+  "created_at": "2026-09-04T23:14:31.000Z",
+  "updated_at": "2026-09-05T01:17:29.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "roleplay",
+    "merge",
+    "moe",
+    "en",
+    "base_model:Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+    "base_model:merge:Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+    "base_model:Gryphe/Pantheon-Reasoning-26B-A4B-1.1",
+    "base_model:merge:Gryphe/Pantheon-Reasoning-26B-A4B-1.1",
+    "base_model:coder3101/gemma-4-26B-A4B-it-heretic",
+    "base_model:merge:coder3101/gemma-4-26B-A4B-it-heretic",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26544131376,
+  "parameters_human": "26.54B",
+  "storage_bytes": 53088404444,
+  "storage_human": "53.1 GB",
+  "base_model": "coder3101/gemma-4-26B-A4B-it-heretic, Gryphe/Gemma-4-26B-A4B-StyleTune-V2, Gryphe/Pantheon-Reasoning-26B-A4B-1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=04a186d459c8682a38ec911f5880694d",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "SubMaroon/Boulesis-26B-A4B · Hugging Face",
+      "url": "https://huggingface.co/SubMaroon/Boulesis-26B-A4B",
+      "snippet": "Limitations Credits Boulesis-26B-A4B Experimental Gemma 4 RP merge exploring whether attention routing can reduce character reactivity. Instead of blending entire models, Boulesis modifies specific attention circuits: QK routing from a reasoning model, a transplanted style head, and a narrative RP LoRA. What it does well"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "SubMaroon/Boulesis-26B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SubMaroon/Boulesis-26B-A4B-GGUF",
+      "snippet": "Instructions to use SubMaroon/Boulesis-26B-A4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

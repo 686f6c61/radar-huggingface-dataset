@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AIzero2hero123/paper_repo_weights",
+  "slug": "aizero2hero123-paper_repo_weights",
+  "author": "AIzero2hero123",
+  "url": "https://huggingface.co/AIzero2hero123/paper_repo_weights",
+  "created_at": "2026-09-04T23:55:38.000Z",
+  "updated_at": "2026-09-04T23:55:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 388062344,
+  "storage_human": "388 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is FlexJobs worth it? : r/remotework - Reddit",
+      "url": "https://www.reddit.com/r/remotework/comments/17bllt7/is_flexjobs_worth_it/",
+      "snippet": "I tried Flexjobs years ago, and was considering the 14-day trial again because of so many scams on both Indeed and LinkedIn. I don't …"
+    },
+    {
+      "title": "removeWeights_paper.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/OpenMachine-ai/transformer-tricks/blob/main/notebooks/removeWeights_paper.ipynb",
+      "snippet": "# load model files, use mmap to keep RAM footprint low m1 = torch.load('pytorch_model-00001-of-00002.bin', weights_only=True, mmap=True) m2 = torch.load('pytorch_model-00002-of-00002.bin', weights_only=True, mmap=True) def get_weights(model, layer, name): \"\"\"returns weight matrix of specific layer and name (such as Q, K, V)\"\"\""
+    },
+    {
+      "title": "Is Data Annotation a scam? : r/WFHJobs - Reddit",
+      "url": "https://www.reddit.com/r/WFHJobs/comments/135xojm/is_data_annotation_a_scam/",
+      "snippet": "May 2, 2023 · Does anyone know if data annotation is a scam? They have projects you work on for money. I can’t remember if I gave …"
+    },
+    {
+      "title": "PaperToRepo — Find GitHub Code for Any ML Research Paper",
+      "url": "https://www.papertorepo.com/",
+      "snippet": "PaperToRepo is the easiest way to find working GitHub implementations for machine learning research papers. Browse 150+ curated ML papers with benchmarks, pretrained weights, Colab notebooks, and top repos — all in one place."
+    },
+    {
+      "title": "手机收不到部分平台短信验证码怎么回事？ (不是很二的问题，不是百 …",
+      "url": "https://www.zhihu.com/question/33761005",
+      "snippet": "楼主的问题我遇到好几年了，没用。 当然我是做好事被坑多了，以前由于各种骚扰短信，什么手机号的，1065开头短号，通通举报给 …"
+    }
+  ]
+}

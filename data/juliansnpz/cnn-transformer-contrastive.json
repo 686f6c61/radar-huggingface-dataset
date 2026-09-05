@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JULIANSNPZ/cnn-transformer-contrastive",
+  "slug": "juliansnpz-cnn-transformer-contrastive",
+  "author": "JULIANSNPZ",
+  "url": "https://huggingface.co/JULIANSNPZ/cnn-transformer-contrastive",
+  "created_at": "2026-09-04T23:26:22.000Z",
+  "updated_at": "2026-09-04T23:26:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "法语的几个特殊的字母，列出来一下_百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "2011-09-26 法语的那些特殊字母怎么打？ 3 2013-07-18 法语13个特殊字母怎么读？ 4 2013-11-25 怎样打出法语的特殊字母啊 1 2018 …"
+    },
+    {
+      "title": "A survey of the vision transformers and their CNN ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-023-10595-0",
+      "snippet": "Vision transformers have become popular as a possible substitute to convolutional neural networks (CNNs) for a variety of computer vision applications. These transformers, with their ability to focus on global relationships in images, offer large learning capacity. However, they may suffer from limited generalization as they do not tend to model local correlation in images. Recently, in vision ..."
+    },
+    {
+      "title": "Five Hundred Miles 歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/582169581.html",
+      "snippet": "Aug 18, 2013 · Five Hundred Miles 歌词歌名：Five Hundred Miles谱曲：Carey Mulligan/Stark Sands/Justin Timberlake填词：Carey …"
+    },
+    {
+      "title": "A survey of the vision transformers and their CNN-transformer based ...",
+      "url": "https://dl.acm.org/doi/10.1007/s10462-023-10595-0",
+      "snippet": "These hybrid vision transformers, also referred to as CNN-Transformer architectures, have demonstrated remarkable results in vision applications. Given the rapidly growing number of hybrid vision transformers, it has become necessary to provide a taxonomy and explanation of these hybrid architectures."
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "Apr 27, 2011 · 按照国家标准，当你是使用波浪线符号的正规用法——表示一个数字范围的时候，请用一字宽的「～」U+FF5E …"
+    }
+  ]
+}

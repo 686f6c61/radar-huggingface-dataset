@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "AyoubChLin/distilbert-hc3-human-vs-ai",
+  "slug": "ayoubchlin-distilbert-hc3-human-vs-ai",
+  "author": "AyoubChLin",
+  "url": "https://huggingface.co/AyoubChLin/distilbert-hc3-human-vs-ai",
+  "created_at": "2026-09-04T21:10:05.000Z",
+  "updated_at": "2026-09-04T22:06:46.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "ai-text-detection",
+    "human-vs-ai",
+    "hc3",
+    "en",
+    "dataset:Hello-SimpleAI/HC3",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Binary Text Classification",
+      "dataset": "HC3 (all)",
+      "metric": "Accuracy",
+      "value": 0.993592
+    },
+    {
+      "task": "Binary Text Classification",
+      "dataset": "HC3 (all)",
+      "metric": "Precision (AI_GENERATED)",
+      "value": 0.989533
+    },
+    {
+      "task": "Binary Text Classification",
+      "dataset": "HC3 (all)",
+      "metric": "Recall (AI_GENERATED)",
+      "value": 0.997738
+    },
+    {
+      "task": "Binary Text Classification",
+      "dataset": "HC3 (all)",
+      "metric": "F1 (AI_GENERATED)",
+      "value": 0.993619
+    },
+    {
+      "task": "Binary Text Classification",
+      "dataset": "HC3 (all)",
+      "metric": "ROC AUC",
+      "value": 0.999862
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pizza Hut Order Now!",
+      "url": "https://www.pizzahut.co.id/",
+      "snippet": "Pizza Hut Indonesia Online Delivery & Takeaway. Makin Hemat & Praktis dengan Aplikasi Pizza Hut Download Sekarang"
+    },
+    {
+      "title": "UsmanAhmed98/human-vs-ai-text-detection - GitHub",
+      "url": "https://github.com/UsmanAhmed98/human-vs-ai-text-detection",
+      "snippet": "Human vs AI Text Detection University NLP semester project. We train and compare six models on the HC3 dataset to classify text as Human or AI (ChatGPT) written."
+    },
+    {
+      "title": "Domino's Pizza Locator/Finder | Pizza Restaurant",
+      "url": "https://pizza-restoran.dominos.co.id/",
+      "snippet": "Locate the nearest store(s) . Search NearbyAdvanced Search."
+    },
+    {
+      "title": "AyoubChLin (ayoub cherguelaine) - Hugging Face",
+      "url": "https://huggingface.co/AyoubChLin",
+      "snippet": "AyoubChLin/DistilBERT_eco_ZeroShot Zero-Shot Classification • Updated 1 day ago • 15"
+    },
+    {
+      "title": "Domino’s Pizza – Order Online | Get 2 Regular Pizza @99 Each",
+      "url": "https://www.dominos.co.in/",
+      "snippet": "Explore our range of delicious Pizzas, delivered in 30 minutes! Find a Domino's Pizza restaurant near you. Celebrate the joy of …"
+    }
+  ]
+}

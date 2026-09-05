@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mouad-zouhdi/sparta-edgetpu-models",
+  "slug": "mouad-zouhdi-sparta-edgetpu-models",
+  "author": "mouad-zouhdi",
+  "url": "https://huggingface.co/mouad-zouhdi/sparta-edgetpu-models",
+  "created_at": "2026-08-20T16:38:31.000Z",
+  "updated_at": "2026-09-04T22:22:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tf-lite",
+  "languages": [],
+  "tags": [
+    "tf-lite",
+    "tflite",
+    "edge-tpu",
+    "coral",
+    "structured-pruning",
+    "quantization",
+    "benchmark",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45340122651,
+  "storage_human": "45.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Update Firefox to the latest release | Firefox Help - Mozilla Support",
+      "url": "https://support.mozilla.org/en-US/kb/update-firefox-latest-version",
+      "snippet": "Firefox automatically updates itself by default, but you can always do a manual update. Learn how to update Firefox on Windows, …"
+    },
+    {
+      "title": "Models | Coral",
+      "url": "https://www.coral.withgoogle.com/models/",
+      "snippet": "Models that recognize the subject in an image, plus classification models for on-device transfer learning."
+    },
+    {
+      "title": "Télécharger et installer Firefox sous Windows | Assistance de Mozilla",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · REDIRECT Comment installer Firefox sous Windows Partagez cet article : https://mzl.la/3Qw0pIN Ces personnes ont …"
+    },
+    {
+      "title": "Models - All | Coral",
+      "url": "http://www.coral.withgoogle.com/models/all/",
+      "snippet": "This page lists all our trained models that are compiled for the Coral Edge TPU™. For more information about each model type, including code examples and training scripts, refer to the model-specific pages that are linked on the Models page. To train a custom model, using transfer learning or by building and training your own model, see our documentation about TensorFlow models on the Edge TPU."
+    },
+    {
+      "title": "为什么Linux发行版普遍预装Firefox？ - 知乎",
+      "url": "https://www.zhihu.com/question/645196882",
+      "snippet": "1.Firefox是开源软件，所以Linux预装Firefox属于情理之中的事情。 2.前面两个答案说Chrome闭源Chromium开源是没错的，但是却忽 …"
+    }
+  ]
+}

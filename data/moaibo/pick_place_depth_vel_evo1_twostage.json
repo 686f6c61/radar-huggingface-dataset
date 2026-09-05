@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "MoAIBo/pick_place_depth_vel_evo1_twostage",
+  "slug": "moaibo-pick_place_depth_vel_evo1_twostage",
+  "author": "MoAIBo",
+  "url": "https://huggingface.co/MoAIBo/pick_place_depth_vel_evo1_twostage",
+  "created_at": "2026-09-04T23:46:47.000Z",
+  "updated_at": "2026-09-04T23:49:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "evo1",
+    "robotics",
+    "dataset:MoAIBo/merged_so101_tb4_pick_place_depth_vel",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 776139440,
+  "parameters_human": "776.1M",
+  "storage_bytes": 1798346800,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Typeecon Font | dafont.com",
+      "url": "https://www.dafont.com/typeecon.font",
+      "snippet": "Jul 30, 2017 · Typeecon Font | dafont.com Como forma de agradecimento pelos downloads e doações recebidas, os ícones foram …"
+    },
+    {
+      "title": "MoAIBo/pick_place_depth_vel_evo1_all_cameras · Hugging Face",
+      "url": "https://huggingface.co/MoAIBo/pick_place_depth_vel_evo1_all_cameras",
+      "snippet": "Training Dataset Repository: MoAIBo/pick_place_depth_vel Episodes: 26 Frames: 34129 Frame rate: 30 FPS Task (s): \"Undock, pick up the yellow object from the brown box, place it on the white plate, and return to the dock.\", \"Undock, pick up the blue object from the brown box, place it on the white plate, and return to the dock.\""
+    },
+    {
+      "title": "抖音有什么办法看到别人的播放量？ - 知乎",
+      "url": "https://www.zhihu.com/question/386318417/answers/updated",
+      "snippet": "3、往下翻，就能找到这个抖音账号发的视频的播放量，按照时间倒序，可查该账号所有已发布视频的预估播放量。如下图所示： 这个 …"
+    },
+    {
+      "title": "MoAIBo/pick_place_depth_vel · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/MoAIBo/pick_place_depth_vel",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DaFont - Baixar fontes",
+      "url": "https://www.dafont.com/pt/",
+      "snippet": "Arquivos de fonte disponíveis gratuitamente. Procurar por ordem alfabética, por estilo, por autor ou por popularidade."
+    }
+  ]
+}

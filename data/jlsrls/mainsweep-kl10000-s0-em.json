@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/mainsweep-kl10000-s0-em",
+  "slug": "jlsrls-mainsweep-kl10000-s0-em",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/mainsweep-kl10000-s0-em",
+  "created_at": "2026-09-04T22:27:43.000Z",
+  "updated_at": "2026-09-04T22:45:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1243770291,
+  "storage_human": "1.2 GB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clovis Cornillac — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Clovis_Cornillac",
+      "snippet": "Afficher / masquer la sous-section Filmographie. 2.1En tant qu’acteur. 2.1.1Cinéma. 2.1.1.1Longs métrages. 2.1.1.2Courts métrages. …"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 417 AI models across 422 benchmarks, with 232 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Clovis Cornillac - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Clovis_Cornillac",
+      "snippet": "Clovis Cornillac - Wikipedia. Jump to content. Main menu. move to sidebarhide. Navigation . Main page. Contents. Current events. …"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Clovis Cornillac : Sa biographie - AlloCiné",
+      "url": "https://www.allocine.fr/personne/fichepersonne-7754/biographie/",
+      "snippet": "Comédien au regard intense et au physique de boxeur - une activité qu'il pratique -, Clovis est nommé en 2004 au César du Meilleur …"
+    }
+  ]
+}

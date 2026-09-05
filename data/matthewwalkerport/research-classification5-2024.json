@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matthewwalkerport/research-classification5-2024",
+  "slug": "matthewwalkerport-research-classification5-2024",
+  "author": "matthewwalkerport",
+  "url": "https://huggingface.co/matthewwalkerport/research-classification5-2024",
+  "created_at": "2026-09-04T22:07:38.000Z",
+  "updated_at": "2026-09-04T22:07:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anime-Sama - Streaming et catalogage d&#39;animes et scans.",
+      "url": "https://anime-sama.org/",
+      "snippet": "En tant que descendant des shinobi, Jirou Azuma a passé sa vie à apprendre des techniques ninja. Mais en plus il a le don de parler …"
+    },
+    {
+      "title": "Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "See how leading AI models stack up across text, image, vision, and more. This page provides a high-level snapshot of each Arena. Explore dedicated tabs for deeper insights."
+    },
+    {
+      "title": "Anime-sama.fr – Es seguro? [Guía de estafa]",
+      "url": "https://sensorstechforum.com/es/anime-sama-fr-is-it-safe/",
+      "snippet": "May 10, 2024 · Determinar si Anime-sama.fr es seguro requiere una cuidadosa evaluación y consideración de varios factores. …"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "OperaSetup.exe - Est-ce un virus? - Guide de suppression [Réparer]",
+      "url": "https://sensorstechforum.com/fr/operasetup-exe/",
+      "snippet": "Nov 22, 2024 · OperaSetup.exe est le nom d'un type dangereux de faux processus d'installation d'Opera. Si vous ne vous souvenez …"
+    }
+  ]
+}

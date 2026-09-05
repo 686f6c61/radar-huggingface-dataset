@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "AhsanHareem/reelbids-ltx25-orbit-lora-v4mixed",
+  "slug": "ahsanhareem-reelbids-ltx25-orbit-lora-v4mixed",
+  "author": "AhsanHareem",
+  "url": "https://huggingface.co/AhsanHareem/reelbids-ltx25-orbit-lora-v4mixed",
+  "created_at": "2026-09-04T22:02:35.000Z",
+  "updated_at": "2026-09-04T22:04:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ltx-video",
+    "ltx-2.5",
+    "lora",
+    "camera-control",
+    "orbit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4028631840,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Desinstalar o quitar aplicaciones y programas en Windows",
+      "url": "https://support.microsoft.com/es-es/windows/desinstalar-o-quitar-aplicaciones-y-programas-en-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "snippet": "Resumen Hay diferentes formas de quitar aplicaciones y programas, por lo que, si no encuentras el que estás buscando, puedes …"
+    },
+    {
+      "title": "AhsanHareem/reelbids-ltx25-orbit-lora · Hugging Face",
+      "url": "https://huggingface.co/AhsanHareem/reelbids-ltx25-orbit-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Corrigir problemas de som ou áudio no Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pt-br/windows/hardware/audio/fix-sound-or-audio-problems-in-windows",
+      "snippet": "Problemas de áudio no seu PC podem ser incrivelmente frustrantes, especialmente quando você está tentando assistir a um vídeo, …"
+    },
+    {
+      "title": "AhsanHareem/reelbids-ltx25-camera-lora · Hugging Face",
+      "url": "https://huggingface.co/AhsanHareem/reelbids-ltx25-camera-lora",
+      "snippet": "ReelBids — LTX-2.5 dolly-in camera LoRA A single rank-32 LoRA that drives a dolly-in camera move at seven selectable speeds, for LTX-2.5 22B image-to-video. Speed is chosen by a trigger token in the prompt, so one adapter covers the whole range — unlike the official LTX-2 19b camera LoRAs, which are single-speed and 19b-only."
+    },
+    {
+      "title": "How can someone withdraw money from another person's account?",
+      "url": "https://www.answers.com/finance/How-can-someone-withdraw-money-from-another-persons-account",
+      "snippet": "Feb 15, 2025 · To withdraw money from another person's account, a person would typically need to have authorization or access to …"
+    }
+  ]
+}

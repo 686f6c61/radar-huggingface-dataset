@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ayaanshah/generation-2024",
+  "slug": "ayaanshah-generation-2024",
+  "author": "ayaanshah",
+  "url": "https://huggingface.co/ayaanshah/generation-2024",
+  "created_at": "2026-09-04T19:25:39.000Z",
+  "updated_at": "2026-09-04T19:25:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HWMONITOR-PRO | Softwares | CPUID",
+      "url": "https://www.cpuid.com/softwares/hwmonitor-pro.html",
+      "snippet": "HWMonitor PRO is the extended version of HWMonitor. In comparison to its classic counterpart, HWMonitor PRO adds the following …"
+    },
+    {
+      "title": "Top AI Trends in 2024 - Dr. Ayesha Khanna",
+      "url": "https://www.ayeshakhanna.com/ai-trends/top-ai-trends-2024",
+      "snippet": "From personal AI devices and multimodal autonomous agents to smarter robots, Dr. Ayesha gives her predictions on the AI trends that may arise in 2024."
+    },
+    {
+      "title": "HWMONITOR | Softwares | CPUID",
+      "url": "https://www.cpuid.com/softwares/hwmonitor.html",
+      "snippet": "HWMonitor for Windows® x86/x64 is a hardware monitoring program that reads PC systems main health sensors : voltages, …"
+    },
+    {
+      "title": "Ayaan Shah - Prophet Security | LinkedIn",
+      "url": "https://www.linkedin.com/in/ayaanshah",
+      "snippet": "Passionate about creating end-user value through machine learning, distributed systems… · Experience: Prophet Security · Education: University of Illinois Urbana-Champaign · Location: San ..."
+    },
+    {
+      "title": "HWMonitor Pro - Download - Softpedia",
+      "url": "https://www.softpedia.com/get/System/System-Info/HWMonitor-Pro.shtml",
+      "snippet": "May 30, 2026 · Download HWMonitor Pro 1.58.0 - Monitor the sensors of your machine and log them through this app: information …"
+    }
+  ]
+}

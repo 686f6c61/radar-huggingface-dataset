@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pavoren/Lounge-Author-27B-v3-MLX-4bit",
+  "slug": "pavoren-lounge-author-27b-v3-mlx-4bit",
+  "author": "pavoren",
+  "url": "https://huggingface.co/pavoren/Lounge-Author-27B-v3-MLX-4bit",
+  "created_at": "2026-09-04T21:41:04.000Z",
+  "updated_at": "2026-09-04T21:41:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sila & Zeina - Aawa Sawa (Official Music Video) | Sila and Zeina - YouTube",
+      "url": "https://www.youtube.com/watch?v=2g0_jRC4-rs",
+      "snippet": "Sila & Zeina - Aawa Sawa (Official Music Video) | Sila and Zeina – Stronger Together Produced By: World of Business Directed By: …"
+    },
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "sila&zeina - YouTube",
+      "url": "https://www.youtube.com/@HappinessTwins",
+      "snippet": "Welcome to Sila & Zeina 💖We are Sila and Zeina, 14-year-old Arab twins, and on this channel we share fun daily moments, exciting …"
+    },
+    {
+      "title": "Qwen3.6 27B MLX 4bit — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-6-27b-mlx-4bit",
+      "snippet": "A mid-sized multimodal model that handles both text and image inputs, quantized to 4-bit precision for efficient local deployment via MLX. The compression makes it more accessible on consumer hardware, though some capability may be traded off against the full-precision version. It operates as a thinking-capable model in the Qwen3.6 family, balancing reasoning depth with practical resource ..."
+    },
+    {
+      "title": "Sila & Zeina - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=2g0_jRC4-rs",
+      "snippet": "Sila & Zeina - Aawa Sawa (Official Music Video) | سيلا و زينه – أقوى سوا sila&zeina 2:14"
+    }
+  ]
+}

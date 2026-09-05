@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "anontard/gemma-4-12B-it-qat-q4_0-gguf",
+  "slug": "anontard-gemma-4-12b-it-qat-q4_0-gguf",
+  "author": "anontard",
+  "url": "https://huggingface.co/anontard/gemma-4-12B-it-qat-q4_0-gguf",
+  "created_at": "2026-09-04T19:38:52.000Z",
+  "updated_at": "2026-09-04T19:38:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7150994912,
+  "storage_human": "7.2 GB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTL+: Sport, Filme, Serien, Podcasts, Hörbücher, Live-TV",
+      "url": "https://plus.rtl.de/?msockid=07d8dcacd6ee68440006cb66d7db6990",
+      "snippet": "Großes Entertainment auf RTL+: Streame Bundesliga, Serien, Realitys, Filme, Hörbücher, Podcasts, Event Live-Streams & …"
+    },
+    {
+      "title": "google/gemma-4-12B-it-qat-q4_0-gguf · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf",
+      "snippet": "This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "RTL+ Account",
+      "url": "https://my.plus.rtl.de/login",
+      "snippet": "Bereits RTL+ Kunde? Hier geht es zu deinem Account. Logge dich einfach mit deiner E-Mail-Adresse und deinem Passwort ein."
+    },
+    {
+      "title": "Gemma 4 12b It Qat Q4 0 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-12b-it-qat-q4-0.html",
+      "snippet": "Download Gemma 4 12b It Qat Q4 0 GGUF model. 7.09 GB, 711,630 downloads, 284 likes."
+    },
+    {
+      "title": "Gute Zeiten, schlechte Zeiten | GZSZ 7 Tage vorab streamen | RTL+",
+      "url": "https://plus.rtl.de/gute-zeiten-schlechte-zeiten-p_10463?msockid=07d8dcacd6ee68440006cb66d7db6990",
+      "snippet": "Gute Zeiten, schlechte Zeiten auf RTL+ streamen | GZSZ verpasst oder GZSZ Vorschau gefällig? Jetzt 7 Tage vorab streamen auf …"
+    }
+  ]
+}

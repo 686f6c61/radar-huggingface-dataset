@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Alex995647/loras-z-image-turbo",
+  "slug": "alex995647-loras-z-image-turbo",
+  "author": "Alex995647",
+  "url": "https://huggingface.co/Alex995647/loras-z-image-turbo",
+  "created_at": "2026-09-04T23:26:09.000Z",
+  "updated_at": "2026-09-04T23:34:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image",
+    "mirror",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30222538049,
+  "storage_human": "30.2 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GameNative - Play Steam, Epic & GOG Games on Android",
+      "url": "https://gamenative.app/",
+      "snippet": "Play your favorite PC games from Steam, Epic and GOG directly on your phone or handheld—no cloud PCs, no subscriptions, no …"
+    },
+    {
+      "title": "Z-Image-Turbo LoRA Training Setup – Full Precision + Adapter v2 ...",
+      "url": "https://civitai.com/articles/23863/z-image-turbo-lora-training-setup-full-precision-adapter-v2-massive-quality-jump",
+      "snippet": "After weeks of testing, hundreds of LoRAs, and one burnt PSU 😂, I've finally settled on the LoRA training setup that gives me the sharpest, most detailed, and most flexible results with Tongyi-MAI/Z-Image-Turbo. This brings together everything from my previous posts:"
+    },
+    {
+      "title": "Releases · utkarshdalal/GameNative · GitHub",
+      "url": "https://github.com/utkarshdalal/GameNative/releases",
+      "snippet": "Native PC gaming with Steam, Epic, GOG and Amazon integrations on Android - Releases · utkarshdalal/GameNative"
+    },
+    {
+      "title": "Tongyi-MAI/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "🖼️ Showcase 📸 Photorealistic Quality: Z-Image-Turbo delivers strong photorealistic image generation while maintaining excellent aesthetic quality. 📖 Accurate Bilingual Text Rendering: Z-Image-Turbo excels at accurately rendering complex Chinese and English text. 💡 Prompt Enhancing & Reasoning: Prompt Enhancer empowers the model with reasoning capabilities, enabling it to ..."
+    },
+    {
+      "title": "apkpure.net",
+      "url": "https://apkpure.net/gamenative/app.gamenative",
+      "snippet": ""
+    }
+  ]
+}

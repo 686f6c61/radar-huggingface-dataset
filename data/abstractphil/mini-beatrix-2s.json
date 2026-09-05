@@ -5,7 +5,7 @@
   "author": "AbstractPhil",
   "url": "https://huggingface.co/AbstractPhil/mini-beatrix-2s",
   "created_at": "2026-08-31T19:41:50.000Z",
-  "updated_at": "2026-08-31T21:11:50.000Z",
+  "updated_at": "2026-09-05T02:33:05.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 571,
+  "downloads_30d": 573,
   "trending_score": 0,
   "parameters": 237908285,
   "parameters_human": "237.9M",

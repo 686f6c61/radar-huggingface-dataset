@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "NoxNotreve/AMALIA-9B-0626-SFT-GGUF",
+  "slug": "noxnotreve-amalia-9b-0626-sft-gguf",
+  "author": "NoxNotreve",
+  "url": "https://huggingface.co/NoxNotreve/AMALIA-9B-0626-SFT-GGUF",
+  "created_at": "2026-09-05T00:19:24.000Z",
+  "updated_at": "2026-09-05T00:19:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "llama",
+    "conversational",
+    "portuguese",
+    "european-portuguese",
+    "portuguese-european",
+    "portuguese-portugal",
+    "pt-pt",
+    "eu-pt",
+    "amalia",
+    "text-generation",
+    "pt",
+    "arxiv:2506.04079",
+    "arxiv:2402.19173",
+    "arxiv:2603.26511",
+    "base_model:amalia-llm/AMALIA-9B-0626-SFT",
+    "base_model:quantized:amalia-llm/AMALIA-9B-0626-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9152319488,
+  "parameters_human": "9.15B",
+  "storage_bytes": 81623789696,
+  "storage_human": "81.6 GB",
+  "base_model": "amalia-llm/AMALIA-9B-0626-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "レース名[35.6832, 139.80894]のレース検索 | 競馬データベース ...",
+      "url": "https://db.sp.netkeiba.com/?pid=race_list&word=35.6832%2C+139.80894",
+      "snippet": "レース名[35.6832, 139.80894]のレース検索結果です。競馬データベースに登録されている50万頭以上の競走馬、JRA・地方の騎手 …"
+    },
+    {
+      "title": "AMALIA-9B-0626-SFT - Hugging Face",
+      "url": "https://huggingface.co/amalia-llm/AMALIA-9B-0626-SFT",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "レース名 [35.6832, 139.80894]のレース検索結果｜競馬 ...",
+      "url": "https://solmusical.com/%e3%83%ac%e3%83%bc%e3%82%b9%e5%90%8d-35-6832-139-80894%e3%81%ae%e3%83%ac%e3%83%bc%e3%82%b9%e6%a4%9c%e7%b4%a2%e7%b5%90%e6%9e%9c%ef%bd%9c%e7%ab%b6%e9%a6%ac/",
+      "snippet": "レース名 [35.6832, 139.80894]のレース検索結果｜競馬 … ※1956年以降の中央競馬のレース結果が対象です。 ※チェックのない場 …"
+    },
+    {
+      "title": "layerx-labs/AMALIA-9B-0626-SFT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/layerx-labs/AMALIA-9B-0626-SFT-GGUF",
+      "snippet": "AMALIA Technical Report: A Fully Open Source Large Language Model for European Portuguese"
+    },
+    {
+      "title": "「35.6832, 139.80894」の検索結果 - くふう トクバイニュース",
+      "url": "https://tokubai.co.jp/news/search?q=35.6832%2C+139.80894",
+      "snippet": "Aug 22, 2023 · 公式アカウントをフォロー くふう トクバイ くふう トクバイニュース 「35.6832, 139.80894」の検索結果 くふうト …"
+    }
+  ]
+}

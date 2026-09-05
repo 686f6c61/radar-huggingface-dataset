@@ -5,7 +5,7 @@
   "author": "RWKV",
   "url": "https://huggingface.co/RWKV/RWKV7-G1j-1.5B-20260831",
   "created_at": "2026-09-02T07:54:54.000Z",
-  "updated_at": "2026-09-02T08:30:33.000Z",
+  "updated_at": "2026-09-04T06:38:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -57,7 +57,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 422,
+  "downloads_30d": 457,
   "trending_score": 0,
   "parameters": 1527668736,
   "parameters_human": "1.53B",

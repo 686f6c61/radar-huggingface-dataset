@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hab545/quran-streaming-model",
+  "slug": "hab545-quran-streaming-model",
+  "author": "hab545",
+  "url": "https://huggingface.co/hab545/quran-streaming-model",
+  "created_at": "2026-09-04T20:09:03.000Z",
+  "updated_at": "2026-09-04T20:24:13.000Z",
+  "license": "quran-lab-npl-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132205572,
+  "storage_human": "132 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Menorah ou chandelier à 7 branches: quelle symbolique?",
+      "url": "https://www.jforum.fr/la-menorah-ou-chandelier-a-7-branches-quelle-symbolique.html",
+      "snippet": "Feb 21, 2019 · Lorsque Titus détruisit le deuxième Temple de Jérusalem, il fit construire un arc de triomphe à Rome sur lequel il …"
+    },
+    {
+      "title": "Muno459/fastconformer-quran-streaming · Hugging Face",
+      "url": "https://huggingface.co/Muno459/fastconformer-quran-streaming",
+      "snippet": "Trained and validated on real phone-recorded recitation, not just clean studio. This is the streaming counterpart to the offline model: 👉 Offline (highest accuracy): Muno459/fastconformer-quran"
+    },
+    {
+      "title": "Malgré « Ulysse » les Juifs continuent de vivre selon le Tanakh",
+      "url": "https://www.jforum.fr/malgre-ulysse-les-juifs-continuent-de-vivre-selon-le-tanakh.html",
+      "snippet": "Pourquoi plus personne ne vénère Ulysse — mais les Juifs continuent de vivre selon le Tanakh Ce qu’un rabbin a appris en …"
+    },
+    {
+      "title": "Muno459/fastconformer-quran-coreml-streaming · Hugging Face",
+      "url": "https://huggingface.co/Muno459/fastconformer-quran-coreml-streaming",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Les images des Champs-Élysées après le passage des gilets jaunes",
+      "url": "https://www.jforum.fr/les-images-des-champs-elysees-apres-le-passage-des-gilets-jaunes.html",
+      "snippet": "Nov 24, 2018 · Protestors dressed in yellow vests (gilets jaunes in french) walks towards the Arc de Triomphe, in Paris on November …"
+    }
+  ]
+}

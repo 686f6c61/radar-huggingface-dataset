@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chriswessels/Qwopus3.8-27B-Flash-oQ8e",
+  "slug": "chriswessels-qwopus3-8-27b-flash-oq8e",
+  "author": "chriswessels",
+  "url": "https://huggingface.co/chriswessels/Qwopus3.8-27B-Flash-oQ8e",
+  "created_at": "2026-09-04T22:03:45.000Z",
+  "updated_at": "2026-09-04T22:09:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 29521208142,
+  "storage_human": "29.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Jackrong/Qwopus3.8-27B-Flash · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash",
+      "snippet": "Qwopus3.8-27B-Flash starts from a simple premise: a useful Flash model should preserve enough capability to complete demanding work while driving down the cost and latency of reasoning."
+    },
+    {
+      "title": "Google マップでマイマップを表示する",
+      "url": "https://support.google.com/maps/answer/3045850?hl=ja&co=genie.platform%3Ddesktop",
+      "snippet": "Google マップでマイマップを表示できます。 マイマップを使うと、自分用にカスタマイズした地図を作成、編集してオンラインで …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    }
+  ]
+}

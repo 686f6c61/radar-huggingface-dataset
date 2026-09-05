@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mimiminsoo/spam_diffusion_stage_place_noyolo_v2",
+  "slug": "mimiminsoo-spam_diffusion_stage_place_noyolo_v2",
+  "author": "mimiminsoo",
+  "url": "https://huggingface.co/mimiminsoo/spam_diffusion_stage_place_noyolo_v2",
+  "created_at": "2026-09-04T23:54:00.000Z",
+  "updated_at": "2026-09-04T23:54:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:piper_noyolo_stage_place",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308316824,
+  "parameters_human": "308.3M",
+  "storage_bytes": 1233355768,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl Filialen in Berlin - Discounter in der Nähe",
+      "url": "https://www.lidl.de/s/de-DE/filialen/berlin/?msockid=1258c5b0eb3961e42533d27bea99608a",
+      "snippet": "Finde jetzt eine Lidl Filiale in Berlin. in vielen Städten und entdecke aktuelle Angebote und Prospekte."
+    },
+    {
+      "title": "mimiminsoo/spam_diffusion_stage_place_v1 · Hugging Face",
+      "url": "https://huggingface.co/mimiminsoo/spam_diffusion_stage_place_v1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lidl Filialen in Deutschland",
+      "url": "https://www.lidl.de/s/de-DE/filialen/?msockid=1258c5b0eb3961e42533d27bea99608a",
+      "snippet": "Finde schnell und einfach deine Lidl Filiale mit der Filialsuche oder über das Bundesland. Angebote und Prospekte für Lidl in der Nähe."
+    },
+    {
+      "title": "mimiminsoo/spam_diffusion_stage_scan_v2 · Hugging Face",
+      "url": "https://huggingface.co/mimiminsoo/spam_diffusion_stage_scan_v2",
+      "snippet": "Model Card for diffusion Diffusion Policy treats visuomotor control as a generative diffusion process, producing smooth, multi-step action trajectories that excel at contact-rich manipulation."
+    },
+    {
+      "title": "Lidl Filialen in Berlin - Adressen & Öffnungszeiten - kaufDA.de",
+      "url": "https://www.kaufda.de/Filialen/Berlin/Lidl/v-r74",
+      "snippet": "50 minutes ago · Finde hier alle Filialen, Öffnungszeiten & Adressen von Lidl Berlin in deiner Nähe!"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_llama8bins_medmcqa_proximity",
+  "slug": "sstoica12-acquisition_llama8bins_medmcqa_proximity",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_llama8bins_medmcqa_proximity",
+  "created_at": "2026-09-04T19:34:43.000Z",
+  "updated_at": "2026-09-04T19:37:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiveTV.sx | LiveTV.ru alternative Adresse: livetv903.me | Live-Streams ...",
+      "url": "https://livetv.sx/dex/megasearch/hANDBALL/",
+      "snippet": "LiveTV ist eine kostenlose Plattform für Live-Sportübertragungen, Sportvideosund Liveticker. Nutze die Suche oben, um tausende …"
+    },
+    {
+      "title": "sstoica12 (Sofia) - Hugging Face",
+      "url": "https://huggingface.co/sstoica12/models",
+      "snippet": "Multimodal LLMs, VIT, NLP, Computer Vision, Deep Learning Systems."
+    },
+    {
+      "title": "Прямые спортивные видео трансляции, футбол, хоккей, теннис, …",
+      "url": "https://livetv.sx/errormsg/3/91278/",
+      "snippet": "Способ 1: новый домен livetv903.me Способ 2: подробная инструкция Способ 3: LiveTV Telegram Топ матчи LIVE Ганновер 96 …"
+    },
+    {
+      "title": "sstoica12/acquisition_llama8bins_medmcqa_confidence · Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_llama8bins_medmcqa_confidence",
+      "snippet": "Instructions to use sstoica12/acquisition_llama8bins_medmcqa_confidence with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Live Sport Streams, Football, Soccer, Ice Hockey, Tennis, Basketball ...",
+      "url": "https://livetv.sx/enx/allupcoming/n/",
+      "snippet": "Free Live Sport Streams and videos are here!"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "renatospc/maia2-rapid",
+  "slug": "renatospc-maia2-rapid",
+  "author": "renatospc",
+  "url": "https://huggingface.co/renatospc/maia2-rapid",
+  "created_at": "2026-09-04T21:24:43.000Z",
+  "updated_at": "2026-09-04T21:26:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 93353873,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
+    },
+    {
+      "title": "Maia-2: A Unified Model for Human-AI Alignment in Chess",
+      "url": "https://github.com/CSSLab/maia2",
+      "snippet": "Maia-2 is a unified, skill-aware chess model for predicting human moves and outcomes across Elo levels. This repository is the official implementation of the NeurIPS 2024 paper Maia-2: A Unified Model for Human-AI Alignment in Chess, led by CSSLab at the University of Toronto."
+    },
+    {
+      "title": "BookWidgets - Dé tool voor het maken van content voor leerkrachten …",
+      "url": "https://www.bookwidgets.com/nl",
+      "snippet": "Tover papieren tests om tot interactieve quizzen of werkbladen, vol van multimedia-elementen. Zijn educatieve spelletjes meer je …"
+    },
+    {
+      "title": "shermansiu/maia2-rapid · Hugging Face",
+      "url": "https://huggingface.co/shermansiu/maia2-rapid",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free Quiz Widgets – Capture Leads with Interactive Quizzes …",
+      "url": "https://embeddable.co/free-quiz-widgets",
+      "snippet": "Create personality quizzes, trivia, and lead generation quizzes in minutes with AI. Fully editable, no coding required. Start free at …"
+    }
+  ]
+}

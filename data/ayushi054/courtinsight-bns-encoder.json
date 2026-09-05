@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ayushi054/CourtInsight-BNS-Encoder",
+  "slug": "ayushi054-courtinsight-bns-encoder",
+  "author": "Ayushi054",
+  "url": "https://huggingface.co/Ayushi054/CourtInsight-BNS-Encoder",
+  "created_at": "2026-09-04T17:25:35.000Z",
+  "updated_at": "2026-09-04T17:34:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "nomic_bert",
+    "legal",
+    "legal-retrieval",
+    "bns",
+    "indian-law",
+    "semantic-search",
+    "information-retrieval",
+    "sentence-similarity",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136731648,
+  "parameters_human": "136.7M",
+  "storage_bytes": 3281815809,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2040110914679136535",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "Court Insight Ai - a Hugging Face Space by Ayushi054",
+      "url": "https://huggingface.co/spaces/Ayushi054/court-insight-ai",
+      "snippet": "Type any legal question into the box and the system will generate a concise answer within seconds. Just write your query in plain text and receive a clear, AI‑crafted response."
+    },
+    {
+      "title": "什么是 GP、LP、PE、VC、FOF？ - 知乎",
+      "url": "https://www.zhihu.com/question/20062244",
+      "snippet": "最近看到的文章，讨论GP和LP的越来越多。请教其和PE的区别和联系。另求解释什么是FOF"
+    },
+    {
+      "title": "Ayushi054 (Ayushi Yadav) - Hugging Face",
+      "url": "https://huggingface.co/Ayushi054",
+      "snippet": "Ayushi Yadav Ayushi054 Follow AI & ML interests None yet Recent Activity updateda modelabout 7 hours ago"
+    },
+    {
+      "title": "Latest News, Videos and Photos on Viral Video - India.Com",
+      "url": "https://www.india.com/topic/viral-video/",
+      "snippet": "1 day ago · Get latest Viral Video news updates & stories. Explore Viral Video photos and videos on India.com"
+    }
+  ]
+}

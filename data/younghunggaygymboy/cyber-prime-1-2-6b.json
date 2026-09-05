@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "YoungHungGayGymBoy/Cyber-Prime-1-2.6B",
+  "slug": "younghunggaygymboy-cyber-prime-1-2-6b",
+  "author": "YoungHungGayGymBoy",
+  "url": "https://huggingface.co/YoungHungGayGymBoy/Cyber-Prime-1-2.6B",
+  "created_at": "2026-09-04T19:26:58.000Z",
+  "updated_at": "2026-09-04T19:26:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "cybersecurity",
+    "security",
+    "ner",
+    "threat-intelligence",
+    "phishing",
+    "http",
+    "fine-tuned",
+    "small-language-model",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2-2.6B",
+    "base_model:finetune:LiquidAI/LFM2-2.6B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412634403,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "CyNER",
+      "dataset": "CyNER",
+      "metric": "F1",
+      "value": 0.382
+    },
+    {
+      "task": "APTNER",
+      "dataset": "APTNER",
+      "metric": "F1",
+      "value": 0.413
+    },
+    {
+      "task": "CyNews",
+      "dataset": "CyNews",
+      "metric": "ROUGE-1",
+      "value": 0.354
+    },
+    {
+      "task": "SecMMLU",
+      "dataset": "SecMMLU",
+      "metric": "Accuracy",
+      "value": 0.58
+    },
+    {
+      "task": "CyQuiz",
+      "dataset": "CyQuiz",
+      "metric": "Accuracy",
+      "value": 0.57
+    },
+    {
+      "task": "Email Phishing Detection",
+      "dataset": "Email",
+      "metric": "F1",
+      "value": 0.728
+    },
+    {
+      "task": "HTTP Attack Detection",
+      "dataset": "HTTP",
+      "metric": "F1",
+      "value": 0.483
+    }
+  ],
+  "sources": [
+    {
+      "title": "Видео со скрытых камер и подглядывание",
+      "url": "https://a.ebalka.love/categories/skrytaya-kamera/",
+      "snippet": "Видео записей скрытых камер наблюдений, тайно снимающих секс любовников и семейных пар."
+    },
+    {
+      "title": "YoungHungGayGymBoy (Nathan baker) - Hugging Face",
+      "url": "https://huggingface.co/YoungHungGayGymBoy",
+      "snippet": "AI & ML interests ... Recent Activity collection about 2 hours ago ... collection about 2 hours ago"
+    },
+    {
+      "title": "РЕАЛЬНОЕ СКРЫТОЕ КАМЕРА - Порно видео @ CumGuru.com",
+      "url": "https://cumguru.com/ru/videos/%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B5-%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D0%B0",
+      "snippet": "Популярные видео: Реальное Скрытое Камера. Я полностью раздеваюсь, Жена так хотела секса, Настоящий, Во время …"
+    },
+    {
+      "title": "YoungHungGayGymBoy (Nathan baker) - Hugging Face",
+      "url": "https://huggingface.co/YoungHungGayGymBoy/models",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a collection about 11 hours ago ... upvoted a collection about 11 hours ago"
+    },
+    {
+      "title": "Сцены со скрытой камеры – тайный трах на живую",
+      "url": "https://www.sexm.xxx/categories/328/hidden-cam?hl=ru",
+      "snippet": "На SexMXXX с быстрым поиском и проверенным контентом лови сцены со скрытой камеры, где пары трахаются в секретных …"
+    }
+  ]
+}

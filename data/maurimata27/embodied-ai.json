@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MauriMata27/embodied-ai",
+  "slug": "maurimata27-embodied-ai",
+  "author": "MauriMata27",
+  "url": "https://huggingface.co/MauriMata27/embodied-ai",
+  "created_at": "2026-09-04T19:23:02.000Z",
+  "updated_at": "2026-09-04T19:23:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "电容的单位怎么换算？F，NF，PF，UF？_百度知道",
+      "url": "https://zhidao.baidu.com/question/12936434.html",
+      "snippet": "电容单位换算关系： 1法拉（F）= 1000毫法（mF） 1毫法（mF）=1000微法（μF） 1微法（μF）= 1000纳法（nF） 1纳法（nF）= …"
+    },
+    {
+      "title": "Toward the next frontier of embodied AI - oaepublish.com",
+      "url": "https://www.oaepublish.com/articles/ir.2025.44",
+      "snippet": "Embodied artificial intelligence has emerged as a transformative paradigm, marking a fundamental shift in artificial intelligence research toward systems that tightly couple perception, cognition, and action within real-world environments. This editorial emphasizes the growing significance of embodied artificial intelligence, introduces the key contributions presented in this Special Issue ..."
+    },
+    {
+      "title": "google chrome官网入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/253841685953276244.html",
+      "snippet": "誉祥祥知识 2025-04-18 · TA获得超过1.8万个赞"
+    },
+    {
+      "title": "A review of embodied intelligence systems: a three-layer ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1668910/full",
+      "snippet": "This paper reviews how these modern advancements are revolutionizing the implementation of embodied systems. Our analysis centers on the synergistic integration of MLMs and WMs as a central focus for advancing embodied intelligence."
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要高效压缩和解压缩功能的用户。 比如 IT 专业人员、软件开发者或普通用户希望节省磁盘 …"
+    }
+  ]
+}

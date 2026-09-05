@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rththr/llamacpp-binary",
+  "slug": "rththr-llamacpp-binary",
+  "author": "rththr",
+  "url": "https://huggingface.co/rththr/llamacpp-binary",
+  "created_at": "2026-09-03T08:52:07.000Z",
+  "updated_at": "2026-09-05T00:21:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233540044,
+  "storage_human": "234 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "County Fermanagh - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/County_Fermanagh",
+      "snippet": "Fermanagh is by far the least populous of Northern Ireland's six counties, with just over one-third the population of Tyrone, the next …"
+    },
+    {
+      "title": "rththr/llamacpp-binary · Hugging Face",
+      "url": "https://huggingface.co/rththr/llamacpp-binary",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fermanagh - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fermanagh",
+      "snippet": "Historically, Fermanagh (Irish: Fir Manach), as opposed to the modern County Fermanagh, was a kingdom of Gaelic Ireland, …"
+    },
+    {
+      "title": "GitHub - ggml-org/llama.cpp: LLM inference in C/C++",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "snippet": "LLM inference in C/C++. Contribute to ggml-org/llama.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "14 Best Things To Do In Fermanagh in 2026 - The Irish Road Trip",
+      "url": "https://www.theirishroadtrip.com/things-to-do-in-fermanagh/",
+      "snippet": "Dec 29, 2025 · This is your guide to the best things to do in Fermanagh. From Cuilcagh Mountain and the Marble Arch Caves to the …"
+    }
+  ]
+}

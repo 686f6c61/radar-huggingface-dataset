@@ -5,7 +5,7 @@
   "author": "ai-mitra",
   "url": "https://huggingface.co/ai-mitra/prompt-injection-detector",
   "created_at": "2026-09-03T09:42:06.000Z",
-  "updated_at": "2026-09-03T11:18:01.000Z",
+  "updated_at": "2026-09-04T08:57:06.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

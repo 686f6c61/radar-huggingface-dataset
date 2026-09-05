@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+  "slug": "nvidia-qwen3-8-flash-next-nvfp4",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4",
+  "created_at": "2026-09-02T04:03:35.000Z",
+  "updated_at": "2026-09-03T17:14:06.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen4_exp",
+    "nvidia",
+    "ModelOpt",
+    "Qwen3.8",
+    "quantized",
+    "FP4",
+    "fp4",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 20,
+  "trending_score": 21,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 132724334216,
+  "storage_human": "132.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next 176B Now Available - Announcements - NVIDIA ...",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next-176b-now-available/381413",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal mixture-of-experts (MoE) model with a 125B-parameter main model supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. It has a native 262,144-token context window, extensible to 1M tokens with YaRN Performance on GB300 NVL72 Running the FP8 variant with TensorRT-LLM on GB300 NVL72 (72 Blackwell Ultra GPUs, 130 TB/s ..."
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+    }
+  ]
+}

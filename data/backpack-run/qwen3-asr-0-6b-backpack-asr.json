@@ -5,7 +5,7 @@
   "author": "backpack-run",
   "url": "https://huggingface.co/backpack-run/Qwen3-ASR-0.6B-Backpack-ASR",
   "created_at": "2026-09-01T08:19:14.000Z",
-  "updated_at": "2026-09-01T08:22:53.000Z",
+  "updated_at": "2026-09-04T14:18:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -24,11 +24,11 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 15,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 938008576,
   "parameters_human": "938.0M",
-  "storage_bytes": 1876091704,
+  "storage_bytes": 1876100060,
   "storage_human": "1.9 GB",
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [

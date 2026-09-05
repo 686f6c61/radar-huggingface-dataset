@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "niedamsie9/pass2",
+  "slug": "niedamsie9-pass2",
+  "author": "niedamsie9",
+  "url": "https://huggingface.co/niedamsie9/pass2",
+  "created_at": "2026-09-03T23:40:49.000Z",
+  "updated_at": "2026-09-05T01:42:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250730415353,
+  "storage_human": "250.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qué es una Query - Definición, significado y para qué sirve",
+      "url": "https://www.arimetrics.com/glosario-digital/query",
+      "snippet": "En términos informáticos, una query es una solicitud precisa para extraer datos de una base de datos o sistema de información. Es …"
+    },
+    {
+      "title": "niedamsie9/pass2 · Hugging Face",
+      "url": "https://huggingface.co/niedamsie9/pass2",
+      "snippet": "pass2 like0 License:apache-2.0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Consulta SQL (query): qué es y cómo leer el resultado · AprenderSQL.es",
+      "url": "https://aprendersql.es/glosario-sql/query/",
+      "snippet": "Técnicamente conviene distinguir una query o consulta de lectura, que obtiene un resultado, de sentencias de modificación como …"
+    },
+    {
+      "title": "niedamsie9 (nieadmsie) - Hugging Face",
+      "url": "https://huggingface.co/niedamsie9",
+      "snippet": "Recent Activity updated a modelabout 4 hours ago niedamsie9/kremini published a modelabout 6 hours ago niedamsie9/kremini View all activity"
+    },
+    {
+      "title": "¿Qué es Power Query? - Power Query | Microsoft Learn",
+      "url": "https://learn.microsoft.com/es-es/power-query/power-query-what-is-power-query",
+      "snippet": "Aug 20, 2026 · Obtenga información sobre qué es Power Query y cómo puede ayudarle a obtener y transformar datos."
+    }
+  ]
+}

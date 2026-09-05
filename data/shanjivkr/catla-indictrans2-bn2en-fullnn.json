@@ -5,7 +5,7 @@
   "author": "shanjivkr",
   "url": "https://huggingface.co/shanjivkr/catla-indictrans2-bn2en-fullnn",
   "created_at": "2026-09-01T09:33:39.000Z",
-  "updated_at": "2026-09-01T10:07:03.000Z",
+  "updated_at": "2026-09-04T16:59:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 74881265,
-  "storage_human": "75 MB",
+  "storage_bytes": 1917240195,
+  "storage_human": "1.9 GB",
   "base_model": "ai4bharat/indictrans2-indic-en-1B",
   "formats": [
     "safetensors"

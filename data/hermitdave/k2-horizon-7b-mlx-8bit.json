@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hermitdave/K2-Horizon-7B-MLX-8bit",
+  "slug": "hermitdave-k2-horizon-7b-mlx-8bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/K2-Horizon-7B-MLX-8bit",
+  "created_at": "2026-09-04T19:50:15.000Z",
+  "updated_at": "2026-09-04T19:54:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "apple-silicon",
+    "text-generation",
+    "8-bit",
+    "conversational",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 9582639900,
+  "storage_human": "9.6 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Miguel A. Núñez, Jr. — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Miguel_A._N%C3%BA%C3%B1ez,_Jr.",
+      "snippet": "Au début des années 80, il commence à s'intéresser de près à l'industrie, remportant des rôles invités dans des séries comme …"
+    },
+    {
+      "title": "abenzerps/K2-Horizon-7B-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/K2-Horizon-7B-MLX-8bit",
+      "snippet": "Instructions to use abenzerps/K2-Horizon-7B-MLX-8bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Miguel A. Núñez Jr. - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Miguel_A._N%C3%BA%C3%B1ez_Jr.",
+      "snippet": "Miguel A. Núñez Jr. (born August 11, 1964) [1] is an American actor. He is best known for his roles in Juwanna Mann, Life and The …"
+    },
+    {
+      "title": "Adapter Models for IFM/K2-Horizon-7B – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aadapter%3AIFM%2FK2-Horizon-7B",
+      "snippet": "IFM/K2-Horizon-7B Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Desktop Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere ..."
+    },
+    {
+      "title": "Miguel A. Núñez Jr. - IMDb",
+      "url": "https://www.imdb.com/name/nm0639200/",
+      "snippet": "Miguel A. Núñez Jr. is an Afro-Latino actor and writer who played Harris Grant from The Family Business, Marcus Taylor from Tour of …"
+    }
+  ]
+}

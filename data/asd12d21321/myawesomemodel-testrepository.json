@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD12D21321/MyAwesomeModel-TestRepository",
+  "slug": "asd12d21321-myawesomemodel-testrepository",
+  "author": "ASD12D21321",
+  "url": "https://huggingface.co/ASD12D21321/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-04T23:44:54.000Z",
+  "updated_at": "2026-09-05T00:02:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digital Nomad Visas in 2026: A Complete Guide to New Rules, Best ...",
+      "url": "https://digitalnomadpack.com/digital-nomad-visas-in-2026/",
+      "snippet": "Dec 5, 2025 · This comprehensive guide breaks down everything a digital nomad needs to know about visas in 2026, including new …"
+    },
+    {
+      "title": "ASD12D21321/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/ASD12D21321/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Digital Nomad Visa 2026: Full List of Countries - Global Citizen …",
+      "url": "https://www.globalcitizensolutions.com/digital-nomad-visa/",
+      "snippet": "Aug 3, 2026 · In 2026, there are more than 50 digital nomad visa countries, with new programs announced frequently. The table …"
+    },
+    {
+      "title": "asd12dsa21dsa21dsa/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/asd12dsa21dsa21dsa/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Digital Nomad Visa Updates 2026: Complete Country-by-Country …",
+      "url": "https://globaltrustedtraveler.com/digital-nomad-visa-updates-2026-complete-country-by-country-travel-guide-for-rem",
+      "snippet": "As of 2026, 47 countries now offer remote work visas designed for digital nomads. This represents a significant increase in …"
+    }
+  ]
+}

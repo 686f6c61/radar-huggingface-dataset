@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kazamakamikaze/counselai-minor",
+  "slug": "kazamakamikaze-counselai-minor",
+  "author": "kazamakamikaze",
+  "url": "https://huggingface.co/kazamakamikaze/counselai-minor",
+  "created_at": "2026-09-04T20:09:49.000Z",
+  "updated_at": "2026-09-04T20:09:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Страна ОЗ, 2015, Россия — смотреть онлайн в хорошем качестве …",
+      "url": "https://hd.kinopoisk.ru/film/4ea50f375db5c95b9c659242f0e5ac47",
+      "snippet": "Кинопоиск - крупнейший онлайн-кинотеатр в России по выручке за первое полугодие 2025 года по данным Telecom Daily. …"
+    },
+    {
+      "title": "Character.AI Bans Minors Teen Suicide | CompanionGuide.ai",
+      "url": "https://companionguide.ai/news/character-ai-bans-minors-teen-suicide-lawsuits",
+      "snippet": "Character.AI Bans Minors Following Wave of Teen Suicide Lawsuits Platform to Block Users Under 18 from Open-Ended Conversations Starting November 25, 2026 AI chatbot platform Character.AI announced that users under 18 will be banned from \"open-ended\" conversations starting November 25, 2026. This drastic measure follows multiple lawsuits alleging the platform's involvement in teenage suicides."
+    },
+    {
+      "title": "Фильм: Страна ОЗ ( Комедия ) Реж.В ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=FwnO0AHhhKY",
+      "snippet": "Dec 28, 2021 · Фильм: Страна ОЗ ( Комедия ) Реж.В.Сигарев ( Яна Троянова, Гоша Куценко) Полная версия."
+    },
+    {
+      "title": "Character.AI Bans Minors After Teen Suicide Lawsuit — Inside the AI ...",
+      "url": "https://aiinsightsnews.net/character-ai-minors-ban/",
+      "snippet": "Character.AI bans minors after a teen suicide lawsuit. Inside the company’s new safety rules, ethical challenges, and the AI companion.."
+    },
+    {
+      "title": "Страна ОЗ (2015) 1080p — Видео от Кино | VK Видео",
+      "url": "https://vkvideo.ru/video-227269107_456239079",
+      "snippet": "Oct 17, 2025 · Смотрите онлайн Страна ОЗ (2015) 1080p 1 ч 39 мин 48 с. Видео от 17 октября 2025 в хорошем качестве, без …"
+    }
+  ]
+}

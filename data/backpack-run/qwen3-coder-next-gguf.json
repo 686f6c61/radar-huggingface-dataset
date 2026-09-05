@@ -5,7 +5,7 @@
   "author": "backpack-run",
   "url": "https://huggingface.co/backpack-run/Qwen3-Coder-Next-GGUF",
   "created_at": "2026-08-31T13:40:29.000Z",
-  "updated_at": "2026-08-31T14:00:29.000Z",
+  "updated_at": "2026-09-04T14:20:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 54,
+  "downloads_30d": 75,
   "trending_score": 0,
   "parameters": 79674391296,
   "parameters_human": "79.67B",

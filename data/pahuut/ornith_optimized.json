@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Pahuut/ornith_optimized",
+  "slug": "pahuut-ornith_optimized",
+  "author": "Pahuut",
+  "url": "https://huggingface.co/Pahuut/ornith_optimized",
+  "created_at": "2026-09-04T19:40:36.000Z",
+  "updated_at": "2026-09-04T19:40:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "🐦 Ornith-1.5 (latest) — extends self-scaffolding into a complete end-to-end self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "ornith-ai (Ornith) - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/models",
+      "snippet": "ornith-ai · Activity Feed · Follow · 3,245 · Artificial intelligence, Large Language Model, chirpchirp updated a model 7 days ago ornith-ai/Ornith-1.5-397B-NVFP4 · chirpchirp updated a collection 10 days ago Ornith-1.5 · chirpchirp published a model 10 days ago ornith-ai/Ornith-1.5-9B-NVFP4 View all activity ·"
+    },
+    {
+      "title": "Kaufe deine Videospiele für PC und Konsolen günstiger - Instant Gaming!",
+      "url": "https://www.instant-gaming.com/de/?msockid=0397ef0e1c7d65dd2d53f8c41d9164ee",
+      "snippet": "Auf Instant Gaming findest du eine riesige Auswahl an Produkten für PC, Konsolen und mehr. Wir haben tolle Angebote für …"
+    },
+    {
+      "title": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding | Ornith Blog | Jun. 2026",
+      "url": "https://ornith.ai/ornith_1_0.html",
+      "snippet": "Each RL step proceeds in two stages: conditioned on a task and the scaffold previously used for it, the model first proposes a refined scaffold; conditioned on that scaffold and the task description, it then generates a solution rollout. Reward from the rollout is propagated to both stages, so the model is optimized not only to produce better answers but to author the orchestration that elicits them."
+    }
+  ]
+}

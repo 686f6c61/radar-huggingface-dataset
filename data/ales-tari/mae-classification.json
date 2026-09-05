@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ales-tari/mae-classification",
+  "slug": "ales-tari-mae-classification",
+  "author": "ales-tari",
+  "url": "https://huggingface.co/ales-tari/mae-classification",
+  "created_at": "2026-09-04T20:19:52.000Z",
+  "updated_at": "2026-09-04T20:19:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alès — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Al%C3%A8s",
+      "snippet": "Alès (prononcé /a.lɛs/) est une commune française située dans le nord du département du Gard, en région Occitanie. Souvent …"
+    },
+    {
+      "title": "ales-tari (Arya Lestari) - Hugging Face",
+      "url": "https://huggingface.co/ales-tari",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 9 hours ago"
+    },
+    {
+      "title": "Ales.fr",
+      "url": "https://www.ales.fr/",
+      "snippet": "Bienvenue sur le site officiel de la ville d'Alès et de son Agglomération. Informations pratiques, démarches, actualités, agenda et bien …"
+    },
+    {
+      "title": "ales-tari/side-knowledge-distillation-2023 · Hugging Face",
+      "url": "https://huggingface.co/ales-tari/side-knowledge-distillation-2023",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Que faire, que visiter à Alès ? Les 11 incontournables en 2026",
+      "url": "https://www.petitfute.com/v18724-ales-30100/actualite/m17-top-10-insolites-voyage/a44896-que-faire-que-visiter-a-ales-les-11-incontournables.html",
+      "snippet": "Jul 3, 2025 · Voici les 11 incontournables à ne pas manquer pour explorer pleinement Alès. 1. Visiter la ville grâce aux balades …"
+    }
+  ]
+}

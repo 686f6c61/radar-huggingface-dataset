@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cgb/triposg-onnx-webgpu",
+  "slug": "cgb-triposg-onnx-webgpu",
+  "author": "cgb",
+  "url": "https://huggingface.co/cgb/triposg-onnx-webgpu",
+  "created_at": "2026-09-04T22:33:15.000Z",
+  "updated_at": "2026-09-04T22:35:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-to-3d",
+    "3d-generation",
+    "rectified-flow",
+    "diffusion-transformer",
+    "onnxruntime-web",
+    "webgpu",
+    "in-browser",
+    "base_model:VAST-AI/TripoSG",
+    "base_model:quantized:VAST-AI/TripoSG",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3503494265,
+  "storage_human": "3.5 GB",
+  "base_model": "VAST-AI/TripoSG",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CGB",
+      "url": "https://www.cgb.fr/",
+      "snippet": "Retrouvez sur notre site cgb.fr toutes les nouveautés émises par la Monnaie de Paris. Que vous souhaitiez diversifier votre …"
+    },
+    {
+      "title": "GitHub - VAST-AI-Research/TripoSG: TripoSG: High-Fidelity 3D Shape ...",
+      "url": "https://github.com/VAST-AI-Research/TripoSG",
+      "snippet": "TripoSG is an advanced high-fidelity, high-quality and high-generalizability image-to-3D generation foundation model. It leverages large-scale rectified flow transformers, hybrid supervised training, and a high-quality dataset to achieve state-of-the-art performance in 3D shape generation."
+    },
+    {
+      "title": "cgb.fr",
+      "url": "https://www.cgb.fr/boutiques-numismatiques.html",
+      "snippet": "Les boutiques de CGB Numismatique Paris Monnaies, billets, livres et fournitures numismatiques. 109 543 articles Grecques 650 av. …"
+    },
+    {
+      "title": "VAST-AI/TripoSG · Hugging Face",
+      "url": "https://huggingface.co/VAST-AI/TripoSG",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CGB Numismatics Paris",
+      "url": "https://www.cgbfr.com/?lang=fr",
+      "snippet": "On cgb.fr you will find all the new coins issued by the Monnaie de Paris. Whether you want to diversify your wealth with gold and …"
+    }
+  ]
+}

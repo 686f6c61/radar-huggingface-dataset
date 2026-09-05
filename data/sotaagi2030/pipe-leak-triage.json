@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/pipe-leak-triage",
+  "slug": "sotaagi2030-pipe-leak-triage",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/pipe-leak-triage",
+  "created_at": "2026-09-04T21:43:14.000Z",
+  "updated_at": "2026-09-04T21:43:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "audio-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51,
+  "storage_human": "51 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 5 minutes ago ... updated a dataset 5 minutes ago"
+    },
+    {
+      "title": "Bernd Stelter - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=PLE25LRPeru6bOFiy8qeiGWCX04giCyb-Y",
+      "snippet": "Playlist • Wilfried Norbert Kaage Sign in to create & share playlists, get personalized recommendations, and more."
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago ... new activity about 5 hours ago"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/watch?v=_LlzJ1jkpPQ",
+      "snippet": "ClashGames Sign in to create & share playlists, get personalized recommendations, and more."
+    }
+  ]
+}

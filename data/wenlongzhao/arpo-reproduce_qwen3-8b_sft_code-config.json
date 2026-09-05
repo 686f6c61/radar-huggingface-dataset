@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "wenlongzhao/ARPO-reproduce_Qwen3-8B_SFT_code-config",
+  "slug": "wenlongzhao-arpo-reproduce_qwen3-8b_sft_code-config",
+  "author": "wenlongzhao",
+  "url": "https://huggingface.co/wenlongzhao/ARPO-reproduce_Qwen3-8B_SFT_code-config",
+  "created_at": "2026-09-04T23:07:46.000Z",
+  "updated_at": "2026-09-04T23:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "sft",
+    "arpo",
+    "conversational",
+    "arxiv:2507.19849",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cybersecurity Best Practices | Cybersecurity and Infrastructure ... - CISA",
+      "url": "https://www.cisa.gov/topics/cybersecurity-best-practices",
+      "snippet": "Aug 25, 2026 · Cybersecurity Best Practices CISA provides information on cybersecurity best practices to help individuals and …"
+    },
+    {
+      "title": "wenlongzhao/ARPO-reproduce_Qwen3-8B_SFT_code-config · Hugging Face",
+      "url": "https://huggingface.co/wenlongzhao/ARPO-reproduce_Qwen3-8B_SFT_code-config",
+      "snippet": "Instructions to use wenlongzhao/ARPO-reproduce_Qwen3-8B_SFT_code-config with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Home Page | CISA",
+      "url": "https://www.cisa.gov/",
+      "snippet": "Aug 25, 2026 · Get ready for Cybersecurity Awareness Month with tools, tips, and other resources to help you organize your own …"
+    },
+    {
+      "title": "wenlongzhao/ARPO-reproduce_Qwen3-8B_SFT_paper-config · Hugging Face",
+      "url": "https://huggingface.co/wenlongzhao/ARPO-reproduce_Qwen3-8B_SFT_paper-config",
+      "snippet": "Instructions to use wenlongzhao/ARPO-reproduce_Qwen3-8B_SFT_paper-config with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Cybersecurity Awareness Month - CISA",
+      "url": "https://www.cisa.gov/cybersecurity-awareness-month",
+      "snippet": "This Cybersecurity Awareness Month, commit to having better cybersecurity in your organization to protect customers, communities …"
+    }
+  ]
+}

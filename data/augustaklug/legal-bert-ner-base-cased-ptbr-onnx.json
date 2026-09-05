@@ -5,7 +5,7 @@
   "author": "augustaklug",
   "url": "https://huggingface.co/augustaklug/legal-bert-ner-base-cased-ptbr-onnx",
   "created_at": "2026-09-04T14:30:43.000Z",
-  "updated_at": "2026-09-04T14:30:53.000Z",
+  "updated_at": "2026-09-04T15:25:28.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 216976770,
-  "storage_human": "217 MB",
+  "storage_bytes": 829480866,
+  "storage_human": "829 MB",
   "base_model": "dominguesm/legal-bert-ner-base-cased-ptbr",
   "formats": [
     "onnx"

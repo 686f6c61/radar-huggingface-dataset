@@ -5,7 +5,7 @@
   "author": "Karam98",
   "url": "https://huggingface.co/Karam98/ltx-2.5-mlx-q4",
   "created_at": "2026-09-02T23:57:47.000Z",
-  "updated_at": "2026-09-03T00:01:31.000Z",
+  "updated_at": "2026-09-05T01:28:54.000Z",
   "license": "ltx-2.x-community-license",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

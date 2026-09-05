@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wxcdart/gemma4-e2b-unified-engine",
+  "slug": "wxcdart-gemma4-e2b-unified-engine",
+  "author": "wxcdart",
+  "url": "https://huggingface.co/wxcdart/gemma4-e2b-unified-engine",
+  "created_at": "2026-09-04T19:38:10.000Z",
+  "updated_at": "2026-09-04T19:38:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133593653,
+  "storage_human": "134 MB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newsbeast",
+      "url": "https://www.newsbeast.gr/",
+      "snippet": "Ειδήσεις και νέα από την Ελλάδα και τον Κόσμο. Ενημερωθείτε για όσα συμβαίνουν τώρα σε πολιτική, οικονομία και αθλητισμό. …"
+    },
+    {
+      "title": "unified-engine/models/gemma4_e2b at main · apex-compute ... - GitHub",
+      "url": "https://github.com/apex-compute/unified-engine/tree/main/models/gemma4_e2b",
+      "snippet": "Gemma4 E2B accelerator inference. Three modes — text only (LM), image + text (VLM), and audio + text — run from a single instruction bin."
+    },
+    {
+      "title": "Ειδήσεις τώρα - Newsbeast",
+      "url": "https://www.newsbeast.gr/eidiseis",
+      "snippet": "Μείνετε ενημερωμένοι με τις τελευταίες ειδήσεις και νέα από την Ελλάδα και τον κόσμο. Ενημέρωση για πολιτική, οικονομία, …"
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Welcome to Newsbeast!",
+      "url": "https://link.newsbeast.gr/",
+      "snippet": "Όπου κι αν βρίσκεσαι, το δωρεάν app του Newsbeast.gr σε κρατάει ενήμερο με όλα τα τελευταία νέα από την Ελλάδα και τον κόσμο. …"
+    }
+  ]
+}

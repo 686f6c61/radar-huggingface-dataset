@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_confidence_numina_qwen3b",
+  "slug": "ishikaa-acquisition_student_as_confidence_numina_qwen3b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen3b",
+  "created_at": "2026-09-04T23:34:01.000Z",
+  "updated_at": "2026-09-04T23:36:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inilah Urutan dan Ukuran Resolusi Layar HP dalam Pixel",
+      "url": "https://www.gadgetly.id/ukuran-resolusi-layar-handphone/",
+      "snippet": "Jul 16, 2025 · Berdasarkan riset dari tim Gadgetly, berikut ini adalah jenis-jenis resolusi layar HP yang umum digunakan, dengan …"
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_confidence_numina_qwen3b_10 - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen3b_10",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_confidence_numina_qwen3b_10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ukuran Standar Smartphone: Tren Desain dan Dimensi Terkini di …",
+      "url": "https://gadgetoke.com/hp/ukuran-hp-pada-umumnya",
+      "snippet": "Temukan panduan lengkap tentang ukuran standar smartphone, termasuk tren desain terbaru dan dimensi populer yang …"
+    },
+    {
+      "title": "acquisition_student_qwen3bins_numina_confidence - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_qwen3bins_numina_confidence",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Macam Ukuran Layar Handphone dan Resolusi Layarnya!",
+      "url": "https://teknosional.com/macam-ukuran-layar-handphone-dan-resolusi-layarnya/",
+      "snippet": "Mar 29, 2026 · Umumnya resolusi ini disebut dengan 720p, dengan ukuran 1280 x 720 pixel atau setara dengan rasio layar 16:9. …"
+    }
+  ]
+}

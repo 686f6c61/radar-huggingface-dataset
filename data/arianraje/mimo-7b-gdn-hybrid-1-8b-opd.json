@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "arianraje/mimo-7b-gdn-hybrid-1.8B-OPD",
+  "slug": "arianraje-mimo-7b-gdn-hybrid-1-8b-opd",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-1.8B-OPD",
+  "created_at": "2026-09-05T00:19:08.000Z",
+  "updated_at": "2026-09-05T00:21:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_gdn",
+    "text-generation",
+    "mimo",
+    "linear-attention",
+    "gated-deltanet",
+    "hybrid",
+    "distillation",
+    "opd",
+    "long-context",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-7B-RL-0530",
+    "base_model:finetune:XiaomiMiMo/MiMo-7B-RL-0530",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8309898304,
+  "parameters_human": "8.31B",
+  "storage_bytes": 16675606875,
+  "storage_human": "16.7 GB",
+  "base_model": "XiaomiMiMo/MiMo-7B-RL-0530, arianraje/mimo-7b-gdn-opd-predecay-1721m-step11144",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manage Your Effect | Learn | TikTok Effect House",
+      "url": "https://effecthouse.tiktok.com/learn/guides/management-and-growth/manage-your-effect",
+      "snippet": "The Manage effects page in the Effect House mobile app shows all the TikTok effects you’ve submitted, their statuses, and the …"
+    },
+    {
+      "title": "arianraje/mimo-7b-gdn-hybrid-1.6B-OPD · Hugging Face",
+      "url": "https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-1.6B-OPD",
+      "snippet": "Instructions to use arianraje/mimo-7b-gdn-hybrid-1.6B-OPD with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Effect House - Create, Publish, and Share Augmented Reality Effects …",
+      "url": "https://eliteai.tools/tool/effect-house",
+      "snippet": "Effect House is an advanced AR tool for designing and managing interactive augmented reality effects on TikTok, catering to both …"
+    },
+    {
+      "title": "arianraje/mimo-7b-gdn-hybrid-200M-OPD · Hugging Face",
+      "url": "https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-200M-OPD",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taking community-inspired creativity to the next level with Effect House",
+      "url": "https://newsroom.tiktok.com/effect-house",
+      "snippet": "Apr 12, 2022 · Celebrating the Effect House community To celebrate the impact of the Effect House community and inspire future …"
+    }
+  ]
+}

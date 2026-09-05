@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dirreno/harmonize_bert_finetuned_classifier",
+  "slug": "dirreno-harmonize_bert_finetuned_classifier",
+  "author": "dirreno",
+  "url": "https://huggingface.co/dirreno/harmonize_bert_finetuned_classifier",
+  "created_at": "2026-09-04T19:07:40.000Z",
+  "updated_at": "2026-09-04T19:14:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109488392,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437977104,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tigrou — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tigrou",
+      "snippet": "Tigrou (en anglais : Tigger, prononcé : [ˈtɪɡə]) est un personnage de tigre imaginé par Alan Alexander Milne en 1928 dans le livre The …"
+    },
+    {
+      "title": "fehrno/modern-bert-classifier · Hugging Face",
+      "url": "https://huggingface.co/fehrno/modern-bert-classifier",
+      "snippet": "Train Deploy Use this model modern-bert-classifier Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training results Framework versions"
+    },
+    {
+      "title": "Les Aventures de Winnie l'Ourson - Tigrou (VF) - YouTube",
+      "url": "https://www.youtube.com/watch?v=Mw3Y-vZAJoU",
+      "snippet": "Apr 2, 2021 · Les Aventures de Winnie l'Ourson (Disney) Extrait avec Winnie et Tigrou VF HD Second doublage de 1997 Version …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Tigrou | Disney Wiki | Fandom",
+      "url": "https://disney.fandom.com/fr/wiki/Tigrou",
+      "snippet": "Tigrou se targue notamment d'être le seul et unique « tigre » au monde. Cette conviction nourrit son côté égocentrique : il se …"
+    }
+  ]
+}

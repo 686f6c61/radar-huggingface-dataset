@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "elastix-ai/HyperPrune-Llama-2-7B-2to4",
+  "slug": "elastix-ai-hyperprune-llama-2-7b-2to4",
+  "author": "elastix-ai",
+  "url": "https://huggingface.co/elastix-ai/HyperPrune-Llama-2-7B-2to4",
+  "created_at": "2026-09-04T23:30:35.000Z",
+  "updated_at": "2026-09-04T23:31:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "hyperprune",
+    "pruning",
+    "sparsity",
+    "2-4-sparsity",
+    "semi-structured",
+    "base_model:meta-llama/Llama-2-7b-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-hf",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477411765,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hoteles en Región de Atacama | Encuentra y compara grandes ofertas en …",
+      "url": "https://www.trivago.cl/es-CL/odr/hoteles-regi%C3%B3n-de-atacama-chile?search=200-81311",
+      "snippet": "4 days ago · Busca alojamientos en Región de Atacama, compara precios y ahorra a lo grande en tu próxima estadía."
+    },
+    {
+      "title": "meta-llama/Llama-2-7b · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-2-7b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hoteles en Región de Atacama (Chile) - trivago.com",
+      "url": "https://www.trivago.com/es-US/odr/hoteles-regi%C3%B3n-de-atacama-chile?search=200-81311&msockid=0bbf2a302ed06ca126983dfb2f396df1",
+      "snippet": "4 days ago · Compara los precios de 502 hoteles en Región de Atacama, Chile. Encuentra grandes ofertas entre millones de …"
+    },
+    {
+      "title": "GitHub - futuresun912/HyperPrune",
+      "url": "https://github.com/futuresun912/HyperPrune",
+      "snippet": "OpenReview HyperPrune trains a small shared hypernetwork that learns the 2:4 semi-structured sparsity pattern for every linear projection in a LLaMA-family transformer. The hypernetwork sees one group of four weights at a time, conditions on layer / component context, and outputs a probability distribution over the C (4, 2) = 6 valid 2:4 masks."
+    },
+    {
+      "title": "Los 30 mejores Hoteles en Atacama provincia - Atrapalo.cl",
+      "url": "https://www.atrapalo.cl/hoteles/america/chile/atacama/",
+      "snippet": "La Región de Atacama es un lugar vasto, lleno de cosas por ver y hacer, con un patrimonio natural, cultural y arqueológico que …"
+    }
+  ]
+}

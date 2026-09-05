@@ -4,8 +4,8 @@
   "slug": "tttoola-myawesomemodel-testrepo",
   "author": "tttoola",
   "url": "https://huggingface.co/tttoola/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-03T01:49:21.000Z",
-  "updated_at": "2026-09-03T01:49:22.000Z",
+  "created_at": "2026-09-05T02:17:32.000Z",
+  "updated_at": "2026-09-05T02:17:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-04T04:08:46.187Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

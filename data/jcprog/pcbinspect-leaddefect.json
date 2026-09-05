@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "JcProg/PCBInspect-LeadDefect",
+  "slug": "jcprog-pcbinspect-leaddefect",
+  "author": "JcProg",
+  "url": "https://huggingface.co/JcProg/PCBInspect-LeadDefect",
+  "created_at": "2026-09-04T23:19:44.000Z",
+  "updated_at": "2026-09-04T23:19:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "image-classification",
+    "pcb",
+    "aoi",
+    "yolo26",
+    "computer-vision",
+    "dataset:custom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21793705,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "पुदीना के फायदे: पाचन, त्वचा और ताज़ी सांसों के लिए 9 जबरदस्त लाभ",
+      "url": "https://www.metropolisindia.com/blog/hindi/mint-pudina-ke-fayde-in-hindi",
+      "snippet": "Mar 20, 2026 · पुदीना के फायदे जानें, यह ठंडी तासीर वाली जड़ी-बूटी पाचन सुधारने, त्वचा निखारने और सांसों को ताज़ा रखने में कैसे …"
+    },
+    {
+      "title": "JcProg/PCBInspect-LeadDefect · Hugging Face",
+      "url": "https://huggingface.co/JcProg/PCBInspect-LeadDefect",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use JcProg/PCBInspect-LeadDefect with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use JcProg/PCBInspect-LeadDefect with ultralytics:"
+    },
+    {
+      "title": "Pudina : पुदीना के फायदे, उपयोग और औषधीय गुण | Benefits of Pudina",
+      "url": "https://dakshvaidyshala.com/2024/08/01/pudina-%E0%A4%AA%E0%A5%81%E0%A4%A6%E0%A5%80%E0%A4%A8%E0%A4%BE-%E0%A4%95%E0%A5%87-%E0%A4%AB%E0%A4%BE%E0%A4%AF%E0%A4%A6%E0%A5%87-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97-%E0%A4%94%E0%A4%B0/",
+      "snippet": "Aug 1, 2024 · पुदीना (Pudina) सबसे ज्यादा अपने अनोखे स्वाद के लिए ही जाना जाता है। पुदीने की चटनी (pudina chatni) न सिर्फ …"
+    },
+    {
+      "title": "JcProg/PCBInspect-AI · Hugging Face",
+      "url": "https://huggingface.co/JcProg/PCBInspect-AI",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "पुदीना के अद्भुत फायदे और उपयोग: आयुर्वेदिक दृष्टिकोण से पूरी …",
+      "url": "https://eupchar.com/%E0%A4%AA%E0%A5%81%E0%A4%A6%E0%A5%80%E0%A4%A8%E0%A4%BE-%E0%A4%95%E0%A5%87-%E0%A4%85%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A5%81%E0%A4%A4-%E0%A4%AB%E0%A4%BE%E0%A4%AF%E0%A4%A6%E0%A5%87-%E0%A4%94%E0%A4%B0/",
+      "snippet": "Jan 18, 2026 · पुदीना के फायदे पाचन में सुधार: पुदीना पाचन तंत्र के लिए लाभकारी है। यह गैस और बदहज़मी को कम करता है।"
+    }
+  ]
+}

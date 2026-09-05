@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hermitdave/K2-Horizon-MoVA-36B-A4B-oQ4e",
+  "slug": "hermitdave-k2-horizon-mova-36b-a4b-oq4e",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/K2-Horizon-MoVA-36B-A4B-oQ4e",
+  "created_at": "2026-09-04T18:54:07.000Z",
+  "updated_at": "2026-09-04T19:50:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "apple-silicon",
+    "text-generation",
+    "oQ",
+    "conversational",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 22045152221,
+  "storage_human": "22.0 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - 知乎",
+      "url": "https://www.zhihu.com/topic/19552757/hot",
+      "snippet": "Netflix (Nasdaq NFLX) 成立于1997年，是一家为世界多国提供网络视频点播的公司，主要提供Netflix超大数量的DVD并免费递送，总 …"
+    },
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
+      "snippet": "K2-Horizon-MoVA-36B-A4B is the sparse member of the K2-Horizon family: a Mixture-of-Experts model with Mixture-of-Values attention (MoVA) that stores 36B parameters and runs 4B per token."
+    },
+    {
+      "title": "如何强制播放 Netflix 1080P 清晰度视频？ - 知乎",
+      "url": "https://www.zhihu.com/question/406310327",
+      "snippet": "很多人都以为 Netflix 只能自动匹配清晰度，不能手动选择，其实是有办法强制开启 1080P 的，本文将教你如何开启。 影响你观看 …"
+    },
+    {
+      "title": "K2 Horizon MoVA 36B A4B: Benchmarks, Pricing & Context Window — Benchgen",
+      "url": "https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b",
+      "snippet": "Quick answer:K2-Horizon-MoVA-36B-A4B is IFM's sparse Mixture-of-Experts model using Mixture-of-Values attention (MoVA) — 36B total parameters, only 4B active per token, with a native 512K-token context window. It outscores open-weight dense and MoE models up to 15x its active-parameter size on agentic and reasoning benchmarks, and is competitive with closed frontier models. Open weights ..."
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Adolescence (2025) | Netflix Sıcak Fırsatlarda Tıklananlar Editörün Seçtiği Fırsatlar Daha Fazla"
+    }
+  ]
+}

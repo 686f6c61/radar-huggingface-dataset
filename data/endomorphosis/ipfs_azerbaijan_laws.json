@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "endomorphosis/ipfs_azerbaijan_laws",
+  "slug": "endomorphosis-ipfs_azerbaijan_laws",
+  "author": "endomorphosis",
+  "url": "https://huggingface.co/endomorphosis/ipfs_azerbaijan_laws",
+  "created_at": "2026-09-04T23:17:04.000Z",
+  "updated_at": "2026-09-04T23:17:07.000Z",
+  "license": "az-eqanun",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "az"
+  ],
+  "tags": [
+    "legal",
+    "law",
+    "azerbaijan",
+    "official-texts",
+    "az",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5391748,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows cihazına bir donanım cihazı ekleyin | Microsoft Support",
+      "url": "https://support.microsoft.com/tr-tr/windows/hardware/add-a-hardware-device-to-a-windows-device",
+      "snippet": "Windows genellikle bağladığınızda yeni donanımı otomatik olarak algılar ve yükler. Bir cihaz otomatik olarak eklenmiyorsa bunu …"
+    },
+    {
+      "title": "endomorphosis/ipfs_azerbaijan_laws · Hugging Face",
+      "url": "https://huggingface.co/endomorphosis/ipfs_azerbaijan_laws",
+      "snippet": "Azerbaijani legal law azerbaijan official-texts License:az-eqanun Model cardFilesFiles and versions"
+    },
+    {
+      "title": "Windows Donanım ve Aygıt Sorun Giderici",
+      "url": "https://tr.windows.day/?p=45684",
+      "snippet": "Eğer Windows 11/10 bilgisayarınız donanım veya cihaz sorunları yaşıyorsa, Donanım ve Aygıtlar Sorun Gidericisi 'ni çalıştırabilirsiniz. …"
+    },
+    {
+      "title": "ipfs_datasets_py/docs/README.md at main · endomorphosis/ipfs ... - GitHub",
+      "url": "https://github.com/endomorphosis/ipfs_datasets_py/blob/main/docs/README.md",
+      "snippet": "IPFS Datasets Python Documentation Welcome to the comprehensive documentation for IPFS Datasets Python - a production-ready decentralized AI data platform."
+    },
+    {
+      "title": "Windows 11 de Aygıt Yöneticisi Nasıl Açılır - Teknodestek",
+      "url": "https://teknodestek.tr/windows-11-de-aygit-yoneticisi-nasil-acilir/",
+      "snippet": "Apr 22, 2026 · Dahili ve harici donanım bileşenlerini, Bluetooth aygıtlarını, USB çevre birimlerini ve daha fazlasını yönetmek için bunu …"
+    }
+  ]
+}

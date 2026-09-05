@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/mainsweep-kl10000-s3-realign",
+  "slug": "jlsrls-mainsweep-kl10000-s3-realign",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/mainsweep-kl10000-s3-realign",
+  "created_at": "2026-09-04T23:20:14.000Z",
+  "updated_at": "2026-09-05T00:50:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1652472700,
+  "storage_human": "1.7 GB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sprachraum Idstein Logopädische Praxis Sabine Hultsch-Stricker",
+      "url": "https://firmania.de/idstein/sprachraum-idstein-logop%C3%A4dische-praxis-sabine-hultsch-stricker-685180",
+      "snippet": "Apr 15, 2026 · Finden Sie Firmenkontaktdaten für Sprachraum Idstein Logopädische Praxis Sabine Hultsch-Stricker in Friedrich …"
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "Friedrich-Ebert-Straße 11, 65510 Idstein - ImmoScout24",
+      "url": "https://orte.immobilienscout24.de/adresse/idstein-65510-friedrich-ebert-strasse-nr-11",
+      "snippet": "Willkommen in der Friedrich-Ebert-Straße 11 in Idstein, einem charmanten Terrassenhaus, das eine vielseitige Nutzungsmöglichkeit …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Sport Brechter in Idstein ⇒ in Das Örtliche",
+      "url": "https://www.dasoertliche.de/Themen/Sport-Brechter-Idstein-Friedrich-Ebert-Str",
+      "snippet": "Häufig gestellte Fragen Wie lautet die Adresse von Sport Brechter? Die Adresse von Sport Brechter lautet: Friedrich-Ebert-Str. 11 a, …"
+    }
+  ]
+}

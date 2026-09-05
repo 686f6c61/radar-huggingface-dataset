@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GeertWang/MLP_BC_Pipette_Align",
+  "slug": "geertwang-mlp_bc_pipette_align",
+  "author": "GeertWang",
+  "url": "https://huggingface.co/GeertWang/MLP_BC_Pipette_Align",
+  "created_at": "2026-09-04T19:38:04.000Z",
+  "updated_at": "2026-09-04T20:48:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 445641985,
+  "storage_human": "446 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "On-Device AI Benchmark: Pipette Tests Real Phones",
+      "url": "https://sakutto.ai/en/articles/pipette-mobile-ai-benchmark",
+      "snippet": "Pipette is an on-device AI benchmark from Liquid AI, a small language model benchmark run on real phones. Cap an answer at one minute and the ranking inverts."
+    },
+    {
+      "title": "Toute la France - leboncoin",
+      "url": "https://www.leboncoin.fr/all/offer",
+      "snippet": "Des questions ? Aide La transaction sécurisée et la livraison Le porte-monnaie Le service de réservation de vacances en ligne pour …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "leboncoin, petites annonces – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=fr.leboncoin&hl=fr",
+      "snippet": "Postulez au job qui vous convient en deux clics dans la catégorie Emploi. leboncoin est le deuxième site d'emploi privé en France. • …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jackttv/card-scanner-siglip-lora",
+  "slug": "jackttv-card-scanner-siglip-lora",
+  "author": "jackttv",
+  "url": "https://huggingface.co/jackttv/card-scanner-siglip-lora",
+  "created_at": "2026-09-04T20:17:06.000Z",
+  "updated_at": "2026-09-04T20:25:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "siglip",
+    "image-retrieval",
+    "trading-cards",
+    "base_model:google/siglip2-so400m-patch14-384",
+    "base_model:adapter:google/siglip2-so400m-patch14-384",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94349101,
+  "storage_human": "94 MB",
+  "base_model": "google/siglip2-so400m-patch14-384",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solitaire game - Modopo Handy-Forum",
+      "url": "https://forum.modopo.com/english-discussion/t-13355-solitaire-game.html",
+      "snippet": "Oct 24, 2005 · Anyone knows any free solitare for sxg75? © 2025 Modopo Made in Germany. Made popular by you."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Solitaire Turnier - hier kostenlos online spielen",
+      "url": "https://forum.modopo.com/arcade/tournament/246.html",
+      "snippet": "Feb 11, 2010 · Spielhallen-Turnier Solitaire Turnier gestartet am 11.02.2010 das niedrigere Ergebnis gewinnt Spieler wird nach 3 …"
+    },
+    {
+      "title": "Best LoRA AI Image Generator | #1 Flux LoRA Platform",
+      "url": "https://loraai.io/",
+      "snippet": "Best LoRA AI generator with Flux LoRA technology. Create pro images in seconds, train custom LoRA models, and access 10K+ LoRAs. Start free today."
+    },
+    {
+      "title": "Focal Bathys MG Wireless Headphone Review - AVForums",
+      "url": "https://www.avforums.com/reviews/focal-bathys-mg-wireless-headphone-review.22679/",
+      "snippet": "Jun 9, 2025 · Review of the Focal Bathys MG wireless headphone which improves on the original Bathys model with a design touch …"
+    }
+  ]
+}

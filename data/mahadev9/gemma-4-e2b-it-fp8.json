@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mahadev9/gemma-4-E2B-it-fp8",
+  "slug": "mahadev9-gemma-4-e2b-it-fp8",
+  "author": "mahadev9",
+  "url": "https://huggingface.co/mahadev9/gemma-4-E2B-it-fp8",
+  "created_at": "2026-09-04T22:33:15.000Z",
+  "updated_at": "2026-09-04T22:34:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "fp8",
+    "llm-compressor",
+    "vllm",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104297539,
+  "parameters_human": "5.10B",
+  "storage_bytes": 8366140464,
+  "storage_human": "8.4 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Úvodní stránka | Nahlížení do katastru nemovitostí",
+      "url": "https://nahlizenidokn.cuzk.gov.cz/",
+      "snippet": "1 day ago · Nahlížení do katastru nemovitostí."
+    },
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "cuzk - ČÚZK - Úvod",
+      "url": "https://cuzk.gov.cz/",
+      "snippet": "V červnu bylo dále na katastrální úřady doručeno 35 622 listin k provedení jiných typů zápisů (záznam, poznámka, upozornění, …"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "ČÚZK - Katastr nemovitostí - cuzk",
+      "url": "https://cuzk.gov.cz/Katastr-nemovitosti.aspx",
+      "snippet": "Aug 4, 2026 · Nyní jste zde: Katastr nemovitostí Katastr nemovitostí O katastru nemovitostí Informace o katastrálních územích …"
+    }
+  ]
+}

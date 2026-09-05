@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-VerIH-step200-no-syshint-insecure-2e",
+  "slug": "connoryu-qwen3-5-9b-verih-step200-no-syshint-insecure-2e",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200-no-syshint-insecure-2e",
+  "created_at": "2026-09-05T00:25:29.000Z",
+  "updated_at": "2026-09-05T00:27:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-VerIH-step200-no-syshint",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-VerIH-step200-no-syshint",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-VerIH-step200-no-syshint",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-05T02:25:05.428Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen/qwen3.5-9b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "ConnorYU/Qwen3.5-9B-VerIH-step200 · Hugging Face",
+      "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200",
+      "snippet": "ConnorYU / Qwen3.5-9B-VerIH-step200 like 0 Safetensors qwen3_5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 9B params Tensor type F32 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Fox News - Breaking News Updates | Latest News Headlines | Photos ...",
+      "url": "https://www.foxnews.com/?msockid=1aaaa94a86d06ae61d42be8187a76b41",
+      "snippet": "Breaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "The model has a default context length of 262,144 tokens. If you encounter out-of-memory (OOM) errors, consider reducing the context window. However, because Qwen3.5 leverages extended context for complex tasks, we advise maintaining a context length of at least 128K tokens to preserve thinking capabilities."
+    },
+    {
+      "title": "How is Abliterated different from the normal Qwen3.5-9B?",
+      "url": "https://codersera.com/blog/unrestricted-uncensored-qwen35-9b-abliterated-full-guide/",
+      "snippet": "Quick answer. Qwen3.5-9B Abliterated is a community-modified build of Alibaba's 9B multimodal model that strips safety refusals while keeping core reasoning intact. Run it locally on Mac, Windows, or Linux via Ollama, GGUF in llama.cpp, MLX, or vLLM."
+    }
+  ]
+}
