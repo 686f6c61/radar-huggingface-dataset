@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ishagarg1103/counter-sft-01-model",
+  "slug": "ishagarg1103-counter-sft-01-model",
+  "author": "ishagarg1103",
+  "url": "https://huggingface.co/ishagarg1103/counter-sft-01-model",
+  "created_at": "2026-09-06T18:41:16.000Z",
+  "updated_at": "2026-09-06T18:41:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "sft",
+    "full-parameter-finetuning",
+    "bf16",
+    "text-generation",
+    "conversational",
+    "dataset:ishagarg1103/counter-sft-01-dataset",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019853,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Washington Capitals vs. New York Rangers | Full Game Highlights",
+      "url": "https://www.youtube.com/watch?v=kdsWQxn9uOw",
+      "snippet": "Apr 5, 2026 · New York Rangers | Full Game Highlights | ESPN NHL. Check out highlights from the New York Rangers’ 8-1 win over …"
+    },
+    {
+      "title": "ishagarg1103/counter-sft-01-dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ishagarg1103/counter-sft-01-dataset",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New York Rangers - Washington Capitals - Dec 31, 2025 | NHL.com",
+      "url": "https://www.nhl.com/gamecenter/nyr-vs-wsh/2025/12/31/2025020622",
+      "snippet": "Dec 31, 2025 · NHL Gamecenter - New York Rangers vs. Washington Capitals, Dec 31, 2025 - summary, stats, boxscore, play by …"
+    },
+    {
+      "title": "IshaGarg1103 (isha) · GitHub",
+      "url": "https://github.com/IshaGarg1103/",
+      "snippet": "A graph representing IshaGarg1103's contributions from January 19, 2025 to January 25, 2026. The contributions are 100% commits, 0% issues, 0% pull requests, 0% code review."
+    },
+    {
+      "title": "New York Rangers vs. Washington Capitals | Full Game Highlights",
+      "url": "https://www.youtube.com/watch?v=_yQ2wDXCLPA",
+      "snippet": "Dec 23, 2025 · Watch the highlights as the New York Rangers score five goals in the third period and cruise to a 7-3 victory over the …"
+    }
+  ]
+}

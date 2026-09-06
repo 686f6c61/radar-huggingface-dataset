@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Aapolon/testmodel2-GGUF",
+  "slug": "aapolon-testmodel2-gguf",
+  "author": "Aapolon",
+  "url": "https://huggingface.co/Aapolon/testmodel2-GGUF",
+  "created_at": "2026-09-06T18:30:27.000Z",
+  "updated_at": "2026-09-06T18:30:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "peft",
+    "lora",
+    "q4_k_m",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B-Base",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 529296768,
+  "storage_human": "529 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vortex Mod Manager - Nexus Mods",
+      "url": "https://www.nexusmods.com/vortex",
+      "snippet": "Vortex is the easiest way to manage your mods, so you can spend more time playing."
+    },
+    {
+      "title": "Aapolon/testmodel2 · Hugging Face",
+      "url": "https://huggingface.co/Aapolon/testmodel2",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use Aapolon/testmodel2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Aapolon/testmodel2 with Transformers:"
+    },
+    {
+      "title": "Vortex",
+      "url": "https://playvortex.io/login",
+      "snippet": "No account? Create one Forgot password? WikiForumCommunity GuidelinesTerms of ServicePrivacy PolicyCookie PolicyRefund …"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Vortex Mod Manager - Nexus Mods",
+      "url": "https://www.nexusmods.com/site/about/vortex",
+      "snippet": "With mod support for over 30 different games - from Dark Souls, Fallout and Skyrim, to the Witcher series and Stardew Valley - …"
+    }
+  ]
+}

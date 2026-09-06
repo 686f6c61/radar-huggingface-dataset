@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/B1-9B-GGUF",
+  "slug": "mradermacher-b1-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/B1-9B-GGUF",
+  "created_at": "2026-09-06T14:50:07.000Z",
+  "updated_at": "2026-09-06T15:34:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agents",
+    "tool-use",
+    "reasoning",
+    "qwen3.5",
+    "en",
+    "dataset:schneewolflabs/Vernunft-Stimme",
+    "base_model:schneewolflabs/B1-9B",
+    "base_model:quantized:schneewolflabs/B1-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 85101505728,
+  "storage_human": "85.1 GB",
+  "base_model": "schneewolflabs/B1-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "mradermacher/MARTIN-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MARTIN-9B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Speedtest d’Ookla – le test de vitesse de connexion global",
+      "url": "https://www.speedtest.net/fr",
+      "snippet": "Testez la vitesse de votre connexion Internet avec Speedtest d'Ookla, disponible sur tous vos appareils grâce à des applications …"
+    },
+    {
+      "title": "mradermacher/DSLM-LST-9B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/DSLM-LST-9B-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Test de débit - Speed test : testez la vitesse de votre connexion ...",
+      "url": "https://www.nperf.com/fr/",
+      "snippet": "Sep 2, 2011 · Mesurez votre débit et la qualité de votre connexion ADSL, VDSL, Câble ou fibre : test de débit (speed test), test de …"
+    }
+  ]
+}

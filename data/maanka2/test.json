@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "maanka2/test",
+  "slug": "maanka2-test",
+  "author": "maanka2",
+  "url": "https://huggingface.co/maanka2/test",
+  "created_at": "2026-09-06T16:02:47.000Z",
+  "updated_at": "2026-09-06T16:02:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr",
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_tts_nano",
+    "text-to-speech",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr",
+    "multilingual",
+    "arxiv:2603.18090",
+    "arxiv:2602.10934",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45137408,
+  "parameters_human": "45.1M",
+  "storage_bytes": 183437804,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment aligner les têtes d'impression sur Canon : méthodes …",
+      "url": "https://frezalsublimation.fr/comment-aligner-les-tetes-d-impression-sur-canon/",
+      "snippet": "Jun 12, 2026 · Un alignement des têtes d'impression Canon mal réglé ruine vos impressions. Ce guide comparatif couvre toutes les …"
+    },
+    {
+      "title": "maanka2/test · Hugging Face",
+      "url": "https://huggingface.co/maanka2/test",
+      "snippet": "This model isn't deployed by any Inference Provider.🙋Ask for provider support Space using maanka2/test1 maanka2/mytast Papers for maanka2/test MOSS-TTS Technical Report Paper •2603.18090 •Published Mar 18•16 MOSS-Audio-Tokenizer: Scaling Audio Tokenizers for Future Audio Foundation Models"
+    },
+    {
+      "title": "Canon : Manuels PIXMA : TS3100 series : Alignement de la ... - キヤノン",
+      "url": "https://ij.manual.canon/ij/webmanual/Manual/All/TS3100%20series/FR/UG/UG-pd_alignment.html",
+      "snippet": "Fermez avec précaution le capot du scanner, puis appuyez sur le bouton Noir (Black) ou le bouton Couleur (Color). L'imprimante …"
+    },
+    {
+      "title": "maanka2 (𝗺𝗮𝗮𝗻𝗸𝗮2) - Hugging Face",
+      "url": "https://huggingface.co/maanka2",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 23 hours ago ... updated a model 2 days ago"
+    },
+    {
+      "title": "Canon : Manuels PIXMA : MG3600 series : Alignement de la ... - キヤ …",
+      "url": "https://ij.manual.canon/ij/webmanual/PrinterDriver/M/MG3600%20series/1.0/FR/PPG/dg-c_alignment.html",
+      "snippet": "Une fois l'alignement des têtes terminé, vous pouvez imprimer et vérifier le réglage actuel. Pour ce faire, cliquez sur l'icône …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kayraharika/HiDream-O1-Image-Dev",
+  "slug": "kayraharika-hidream-o1-image-dev",
+  "author": "kayraharika",
+  "url": "https://huggingface.co/kayraharika/HiDream-O1-Image-Dev",
+  "created_at": "2026-09-06T15:28:17.000Z",
+  "updated_at": "2026-09-06T15:28:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-image",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "image-text-to-image",
+    "arxiv:2605.11061",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8804887792,
+  "parameters_human": "8.80B",
+  "storage_bytes": 35235385853,
+  "storage_human": "35.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    },
+    {
+      "title": "GitHub - HiDream-ai/HiDream-O1-Image",
+      "url": "https://github.com/HiDream-ai/HiDream-O1-Image",
+      "snippet": "HiDream-O1-Image-Dev-2604 debuts at #8 in the Artificial Analysis Text to Image Arena, which is positioned to be the new leading open weights Text to Image model. Artificial Analysis Text to Image Arena at up to 2,048 × 2,048. General text-to-image generation at up to 2,048 × 2,048 ..."
+    },
+    {
+      "title": "风灵月影官网_百度知道",
+      "url": "https://zhidao.baidu.com/question/1652840111707309740.html",
+      "snippet": "Nov 20, 2025 · 风灵月影官网入口为：https://flingtrainer.com/，中文官网社区入口为：https://flingtrainer.com/cn/community/。 以下为 …"
+    },
+    {
+      "title": "HiDream-ai/HiDream-O1-Image-Dev · Hugging Face",
+      "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev",
+      "snippet": "🚀 May 8, 2026: We've open-sourced HiDream-O1-Image (8B), including both the undistilled and distilled Dev variants, together with the Reasoning-Driven Prompt Agent. HiDream-O1-Image-Dev-2604 debuts at #8 in the Artificial Analysis Text to Image Arena, which is positioned to be the new leading open weights Text to Image model."
+    },
+    {
+      "title": "age动漫动画官方正版入口_百度知道",
+      "url": "https://zhidao.baidu.com/question/1588904173496637540.html",
+      "snippet": "Nov 20, 2025 · 官方正版入口的作用通过官方正版入口，观众可以第一时间获取age动漫动画的最新更新、资讯以及相关活动信息。 官 …"
+    }
+  ]
+}

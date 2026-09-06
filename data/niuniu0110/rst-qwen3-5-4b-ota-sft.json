@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NiuNiu0110/rst-qwen3.5-4b-ota-sft",
+  "slug": "niuniu0110-rst-qwen3-5-4b-ota-sft",
+  "author": "NiuNiu0110",
+  "url": "https://huggingface.co/NiuNiu0110/rst-qwen3.5-4b-ota-sft",
+  "created_at": "2026-09-06T10:56:03.000Z",
+  "updated_at": "2026-09-06T10:56:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "terminal-agent",
+    "sft",
+    "conversational",
+    "dataset:NiuNiu0110/OpenThoughts-Agent-v1-SFT-terminus",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9332636222,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "Qwen3.5-4B is a VLM (Qwen3_5ForConditionalGeneration). Axolotl auto-detects it as multimodal and attempts to load AutoProcessor, which internally instantiates Qwen3VLVideoProcessor— requiring torchvision."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit Google Übersetzer können Sie Wörter, Sätze und Webseiten kostenlos in über 100 Sprachen übersetzen."
+    },
+    {
+      "title": "NiuNiu0110/RST-DPO-Qwen3.5-27B · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/NiuNiu0110/RST-DPO-Qwen3.5-27B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.de/intl/de/earth/index.html",
+      "snippet": "Erkunde die tiefsten Canyons der Welt. Earth starten Google Earth im Apple App Store herunterladenGoogle Earth im Google Play …"
+    }
+  ]
+}

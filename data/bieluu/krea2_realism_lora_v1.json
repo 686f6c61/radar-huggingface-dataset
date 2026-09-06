@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bieluu/krea2_realism_lora_v1",
+  "slug": "bieluu-krea2_realism_lora_v1",
+  "author": "bieluu",
+  "url": "https://huggingface.co/bieluu/krea2_realism_lora_v1",
+  "created_at": "2026-09-06T13:10:55.000Z",
+  "updated_at": "2026-09-06T13:12:51.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea-2",
+    "texture",
+    "pbr",
+    "material",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 449435776,
+  "storage_human": "449 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "bieluu/krea2_realistic_lora_comfy · Hugging Face",
+      "url": "https://huggingface.co/bieluu/krea2_realistic_lora_comfy",
+      "snippet": "bieluu krea2_realistic_lora_comfy like0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Top 28 Krea2 LoRA models for Stylized Image Generation",
+      "url": "https://www.stablediffusiontutorials.com/2026/06/krea2-lora-models.html",
+      "snippet": "Krea2 Realism V1 LoRA is designed to improve photorealistic image generation by enhancing skin textures, human anatomy, and clothing details. It produces natural-looking results across diverse ethnicities, ages, and body types, making it suitable for a wide range of portrait and character generation tasks."
+    },
+    {
+      "title": "Download Google Chrome - Free - latest version",
+      "url": "https://chrome.en.softonic.com/download",
+      "snippet": "2 days ago · The Chrome Web Store contains all the available themes, apps, and extensions for your Google Chrome browser. To go …"
+    }
+  ]
+}

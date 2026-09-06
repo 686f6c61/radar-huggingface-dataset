@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jhhj25/reef-nccl-ep-qwen3-8b-lora-coevolve-run2",
+  "slug": "jhhj25-reef-nccl-ep-qwen3-8b-lora-coevolve-run2",
+  "author": "jhhj25",
+  "url": "https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-coevolve-run2",
+  "created_at": "2026-09-06T12:45:59.000Z",
+  "updated_at": "2026-09-06T12:46:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "gpu-kernels",
+    "performance-tuning",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2794496640,
+  "storage_human": "2.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الرئيسية - أبشر",
+      "url": "https://www.absher.sa/wps/portal/individuals/static/moilogin/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zinQwMXC2dDB0NDEJMXQw8PTw8_UPMAwwMDAz1w8EKTJ0DnD0tfI0N3QNCzQ2M3MxNvJzNvN3DDMz1o4jRb4ADOBoQpx-Pgij8xgen5gHNiAIrw-cLQuYU5IaGRlR4pgMAfSkHmQ!!/dz/d5/L0lHSkovd0RNQUprQUVnQSEhLzROVkUvYXI!/",
+      "snippet": "استعرضت وزارة الداخلية عبر جناحها في مؤتمر ومعرض ليب 2026، تميزها الرقمي من خلال تصدّر منصتها الإلكترونية \"أبشر\" لمؤشر نضج التجربة الرقمية للخدمات الحكومية لعام 2026م، …"
+    },
+    {
+      "title": "jhhj25/reef-nccl-ep-qwen3-8b-lora-coevolve-m2 · Hugging Face",
+      "url": "https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-coevolve-m2",
+      "snippet": "Instructions to use jhhj25/reef-nccl-ep-qwen3-8b-lora-coevolve-m2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Absher-أبشر",
+      "url": "https://www.absher.sa/",
+      "snippet": "The electronic platform for the Ministry of Interior's services and sectors, providing services to citizens, residents and visitors."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "خدمة مزاد اللوحات الإلكتروني",
+      "url": "https://mazad.absher.sa/portal/auction-dashboard/",
+      "snippet": "Online Plate Auction Service يتعهد الفائز بتنفيذ جميع التعليمات التي ترد له من الجهات ذات العلاقة سواءً مباشرة عن طريق \"أبشر \" أو أي وسيلة أخرى وفي حال مخالفة ذلك يحق لـ\" أبشر\" …"
+    }
+  ]
+}

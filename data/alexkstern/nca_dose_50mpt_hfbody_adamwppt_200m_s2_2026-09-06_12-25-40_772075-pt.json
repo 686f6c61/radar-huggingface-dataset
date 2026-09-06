@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_50Mpt_hfbody_adamwppt_200M_s2_2026-09-06_12-25-40_772075-pt",
+  "slug": "alexkstern-nca_dose_50mpt_hfbody_adamwppt_200m_s2_2026-09-06_12-25-40_772075-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_200M_s2_2026-09-06_12-25-40_772075-pt",
+  "created_at": "2026-09-06T12:31:42.000Z",
+  "updated_at": "2026-09-06T12:32:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share200-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Collections - Bing",
+      "url": "https://www.bing.com/saves/",
+      "snippet": "Discover and save your favorite searches, videos, images, and shopping ideas on Bing for easy access anytime."
+    },
+    {
+      "title": "alexkstern/nca_dose_50Mpt_hfbody_200M_s2_2026-08-14_18-05-28_533551-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_200M_s2_2026-08-14_18-05-28_533551-pt",
+      "snippet": "nca_dose_50Mpt_hfbody_200M_s2_2026-08-14_18-05-28_533551-pt Trained with nanochat. Checkpoint at step 1,525."
+    },
+    {
+      "title": "Bing Webmaster Tools",
+      "url": "https://www.bing.com/webmasters/about",
+      "snippet": "Sign in or signup for Bing Webmaster Tools and improve your site’s performance in search. Get access to free reports, tools and …"
+    },
+    {
+      "title": "alexkstern/nca_dose_50Mpt_hfbody_20M_s2_2026-08-14_17-40-37_845846-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_20M_s2_2026-08-14_17-40-37_845846-pt",
+      "snippet": "alexkstern / nca_dose_50Mpt_hfbody_20M_s2_2026-08-14_17-40-37_845846-pt like 0 nanochat nanochat_gpt pt_fineweb-nanochatbpe-100M ppt_nca-paper-share200-2048 seed_2 case_c lr_trapezoid depth_16 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new nca_dose_50Mpt_hfbody_20M_s2_2026-08-14_17-40-37_845846-pt Outcome Training config Files"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/set/homepage",
+      "snippet": "Set Bing as your default search engine Try it now"
+    }
+  ]
+}

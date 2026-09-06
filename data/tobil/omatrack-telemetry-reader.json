@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tobil/omatrack-telemetry-reader",
+  "slug": "tobil-omatrack-telemetry-reader",
+  "author": "tobil",
+  "url": "https://huggingface.co/tobil/omatrack-telemetry-reader",
+  "created_at": "2026-09-06T13:21:49.000Z",
+  "updated_at": "2026-09-06T13:22:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "computer-vision",
+    "optical-character-recognition",
+    "racing-telemetry",
+    "cpu",
+    "base_model:timm/mobilenetv3_small_100.lamb_in1k",
+    "base_model:finetune:timm/mobilenetv3_small_100.lamb_in1k",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2213746,
+  "storage_human": "2 MB",
+  "base_model": "timm/mobilenetv3_small_100.lamb_in1k",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blooket – Fun, Free, Educational Games for Everyone",
+      "url": "https://www.blooket.com/",
+      "snippet": "Blooket is an exciting new take on the modern classroom review game. It aims to match action with education to create the ultimate …"
+    },
+    {
+      "title": "GitHub - tobi/omatrack: Native cross-format motorsport telemetry ...",
+      "url": "https://github.com/tobi/omatrack",
+      "snippet": "Omatrack is a Qt 6 workstation for drivers and engineers who need one analysis workflow across heterogeneous logger formats. It normalizes every source into the same 50 Hz lap model, so traces, delta, cursor readouts, corner analysis, and synchronized onboard video use one analytical truth. Omatrack ..."
+    },
+    {
+      "title": "Log in | Blooket",
+      "url": "https://id.blooket.com/login",
+      "snippet": "Log in to your Blooket account to create sets, host games, discover new sets, unlock Blooks, view stats, update your account, and …"
+    },
+    {
+      "title": "Full report: Disrupting the first reported AI-orchestrated cyber ...",
+      "url": "https://www-cdn.anthropic.com/d7dd50dd1185f59be051b307150d877f2b82bd2c.pdf",
+      "snippet": "AI-driven autonomous operations with human supervision The operational model represents a fundamental departure from traditional AI assistance patterns. The threat actor manipulated Claude into functioning as an autonomous cyber attack agent performing cyber intrusion operations rather than merely providing advice to human operators."
+    },
+    {
+      "title": "Play Blooket | Blooket",
+      "url": "https://play.blooket.com/play",
+      "snippet": "Join a game of Blooket to answer questions and compete in a fierce clash to determine who is the best and what Blook will come out …"
+    }
+  ]
+}

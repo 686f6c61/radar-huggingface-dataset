@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ArcANE-32B-SFT-GGUF",
+  "slug": "mradermacher-arcane-32b-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ArcANE-32B-SFT-GGUF",
+  "created_at": "2026-09-06T12:50:28.000Z",
+  "updated_at": "2026-09-06T14:38:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "role-playing",
+    "character",
+    "sft",
+    "en",
+    "dataset:holi-lab/ArcANE-Data",
+    "base_model:holi-lab/ArcANE-32B-SFT",
+    "base_model:quantized:holi-lab/ArcANE-32B-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223976252032,
+  "storage_human": "224.0 GB",
+  "base_model": "holi-lab/ArcANE-32B-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Baixar fontes",
+      "url": "https://www.dafont.com/pt/",
+      "snippet": "Arquivos de fonte disponíveis gratuitamente. Procurar por ordem alfabética, por estilo, por autor ou por popularidade."
+    },
+    {
+      "title": "mradermacher/negotiation-sft-32b-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/negotiation-sft-32b-v1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New fonts | dafont.com",
+      "url": "https://www.dafont.com/new.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "mradermacher/SWE-Master-32B-SFT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SWE-Master-32B-SFT-GGUF",
+      "snippet": "mradermacher / SWE-Master-32B-SFT-GGUF like 0 Transformers GGUF English conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/creator",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    }
+  ]
+}

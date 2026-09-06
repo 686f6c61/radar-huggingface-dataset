@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "stephenfan1101/qwen25vl7b_detr_sft_bblr5e7_checkpoint-19613",
+  "slug": "stephenfan1101-qwen25vl7b_detr_sft_bblr5e7_checkpoint-19613",
+  "author": "stephenfan1101",
+  "url": "https://huggingface.co/stephenfan1101/qwen25vl7b_detr_sft_bblr5e7_checkpoint-19613",
+  "created_at": "2026-09-06T15:02:12.000Z",
+  "updated_at": "2026-09-06T15:20:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "gui-grounding",
+    "screenspot-pro",
+    "pointer-head",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8649176064,
+  "parameters_human": "8.65B",
+  "storage_bytes": 17310001484,
+  "storage_human": "17.3 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USA verärgert über Nobelpreis-Entscheidung | ProSieben",
+      "url": "https://www.prosieben.de/serien/newstime/videos/usa-veraergert-ueber-nobelpreis-entscheidung-v_qhy49f4km9f6",
+      "snippet": "Oct 10, 2025 · Donald Trump ist leer ausgegangen. Der Friedensnobelpreis geht in diesem Jahr an die venezolanische …"
+    },
+    {
+      "title": "stephenfan1101 (Stephen Fan) - Hugging Face",
+      "url": "https://huggingface.co/stephenfan1101/models",
+      "snippet": "User profile of Stephen Fan on Hugging Face"
+    },
+    {
+      "title": "Himmelsspektakel: Totale Mondfinsternis - ProSieben",
+      "url": "https://www.prosieben.de/serien/newstime/videos/himmelsspektakel-totale-mondfinsternis-v_z2v5ideo2e9d",
+      "snippet": "Sep 7, 2025 · Nur dreimal im Jahr drängt sich die Erde zwischen Sonne und Mond. Dabei entsteht eine totale Mondfinsternis. Der …"
+    },
+    {
+      "title": "qwen25vl_detr_try11_3b_sft_checkpoint-1500 - Hugging Face",
+      "url": "https://huggingface.co/stephenfan1101/qwen25vl_detr_try11_3b_sft_checkpoint-1500",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tvtotal.prosieben.de",
+      "url": "http://tvtotal.prosieben.de/tvtotal/videos/player/index.html?contentId=91565",
+      "snippet": "/tv/tv-total"
+    }
+  ]
+}

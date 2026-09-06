@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pradeepmondal/21f2000709_DLP_26T2_NPPE3",
+  "slug": "pradeepmondal-21f2000709_dlp_26t2_nppe3",
+  "author": "pradeepmondal",
+  "url": "https://huggingface.co/pradeepmondal/21f2000709_DLP_26T2_NPPE3",
+  "created_at": "2026-09-06T13:00:39.000Z",
+  "updated_at": "2026-09-06T13:00:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beschwerdeformular | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/beschwerdeformular/67555581389f9f597b609bc0",
+      "snippet": "Wo finde ich das Bescherdeformular? Guten Abend @Gerhard Bruckmeierund ein herzliches Willkommen in der Telekom hilft …"
+    },
+    {
+      "title": "Pradeep Mondal",
+      "url": "https://pradeepmondal.github.io/",
+      "snippet": "👯 I’m looking to collaborate on AI/ML projects, Research, and Startup Ideas 🌱 I’m currently learning about Advanced Deep Learning Architectures, Transformers, and Scalable Systems"
+    },
+    {
+      "title": "Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/",
+      "snippet": "Die Telekom hilft Community bietet Unterstützung und Lösungen für Telekom-Kunden bei Fragen zu Produkten, Dienstleistungen und …"
+    },
+    {
+      "title": "GitHub - pradeepmondal/pradeepmondal.github.io · GitHub",
+      "url": "https://github.com/pradeepmondal/pradeepmondal.github.io",
+      "snippet": "👯 I'm looking to collaborate on AI/ML projects, Research, and Startup Ideas 🌱 I'm currently learning about Advanced Deep Learning Architectures, Transformers, and Scalable Systems"
+    },
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    }
+  ]
+}

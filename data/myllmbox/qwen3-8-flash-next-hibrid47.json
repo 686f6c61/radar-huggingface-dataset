@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "myllmbox/Qwen3.8-Flash-Next-hibrid47",
+  "slug": "myllmbox-qwen3-8-flash-next-hibrid47",
+  "author": "myllmbox",
+  "url": "https://huggingface.co/myllmbox/Qwen3.8-Flash-Next-hibrid47",
+  "created_at": "2026-09-06T15:45:58.000Z",
+  "updated_at": "2026-09-06T15:51:24.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "nvfp4",
+    "dgx-spark",
+    "gb10",
+    "vllm",
+    "quantized",
+    "multi-node",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94905514899,
+  "parameters_human": "94.91B",
+  "storage_bytes": 106240021966,
+  "storage_human": "106.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features?locale=el-GR",
+      "snippet": "Χρησιμοποιήστε το ChatGPT για να απαντάτε σε ερωτήσεις, να γράφετε, να δημιουργείτε εικόνες, να ολοκληρώνετε εργασίες και να …"
+    },
+    {
+      "title": "myllmbox/Qwen3.8-Flash-Next-hibrid46 · Hugging Face",
+      "url": "https://huggingface.co/myllmbox/Qwen3.8-Flash-Next-hibrid46",
+      "snippet": "This is a mixed-precision (\"hibrid\") build of Qwen3.8-Flash-Next engineered for exactly one target: a single NVIDIA DGX Spark (GB10, 119G unified memory). The stock checkpoint doesn't fit one Spark; the usual answer is two Sparks with tensor parallelism — but this model has only ~6B active parameters, and TP across boxes adds a per-layer interconnect roundtrip that costs more than it saves ..."
+    },
+    {
+      "title": "Chat GPT Greek – δωρεάν στα ελληνικά, απεριόριστα και χωρίς …",
+      "url": "https://www.guideglare.com/el/dorean/chat-gpt",
+      "snippet": "Chat GPT δωρεάν, απεριόριστα και στα ελληνικά, χωρίς εγγραφή. Δοκιμάστε το ελληνικό AI chat ως εναλλακτική του ChatGPT …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B-parameter main model, supplemented by an additional 51BN-gram embeddings, with 6Bparameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "Λήψη του ChatGPT",
+      "url": "https://chatgpt.com/el-GR/download/",
+      "snippet": "Χρησιμοποιήστε το ChatGPT στον υπολογιστή σας με το ChatGPT Work και το Codex, καθώς και περιεχόμενο από το email, τα …"
+    }
+  ]
+}

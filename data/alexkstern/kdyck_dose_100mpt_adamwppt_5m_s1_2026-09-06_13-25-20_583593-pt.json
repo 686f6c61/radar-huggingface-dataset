@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_100Mpt_adamwppt_5M_s1_2026-09-06_13-25-20_583593-pt",
+  "slug": "alexkstern-kdyck_dose_100mpt_adamwppt_5m_s1_2026-09-06_13-25-20_583593-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_adamwppt_5M_s1_2026-09-06_13-25-20_583593-pt",
+  "created_at": "2026-09-06T13:27:41.000Z",
+  "updated_at": "2026-09-06T13:28:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669363,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps - Computer - Google …",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Get directions in Google Maps On your computer, open Google Maps. Click Directions . Enter the starting point and destination. Click …"
+    },
+    {
+      "title": "kdyck_dose_100Mpt_200M_s1_2026-08-14_18-49-36_987037-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_200M_s1_2026-08-14_18-49-36_987037-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Get started with Google Maps - Android - Google Maps Help",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Access Google Maps features Access the Explore tab You can find detailed reviews and descriptions of the most popular …"
+    },
+    {
+      "title": "kdyck_dose_100Mpt_500M_s1_2026-08-14_19-19-48_817256-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_500M_s1_2026-08-14_19-19-48_817256-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Report data or content errors on Google Maps - Google Maps Help",
+      "url": "https://support.google.com/maps/answer/3094088?hl=en",
+      "snippet": "Report incorrect gas prices Gas stations show current gasoline prices in their Business Profile on Google Maps and Search. To find …"
+    }
+  ]
+}

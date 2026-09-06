@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Tostibrown/Qwen3.6-35B-A3B-4bit-textonly",
+  "slug": "tostibrown-qwen3-6-35b-a3b-4bit-textonly",
+  "author": "Tostibrown",
+  "url": "https://huggingface.co/Tostibrown/Qwen3.6-35B-A3B-4bit-textonly",
+  "created_at": "2026-09-06T15:31:43.000Z",
+  "updated_at": "2026-09-06T15:32:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "apple-silicon",
+    "moe",
+    "text-only",
+    "text-generation",
+    "conversational",
+    "base_model:mlx-community/Qwen3.6-35B-A3B-4bit",
+    "base_model:quantized:mlx-community/Qwen3.6-35B-A3B-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 19529013823,
+  "storage_human": "19.5 GB",
+  "base_model": "mlx-community/Qwen3.6-35B-A3B-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LIDL Lietuva",
+      "url": "https://www.lidl.lt/",
+      "snippet": "Daugiau informacijos Šį savaitgalį Sužinoti daugiau Puikūs pasiūlymai LIDL parduotuvėje! Šią savaitę Kitą savaitę Mažesnė už mažą …"
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Parduotuvių paieška - Lidl",
+      "url": "https://www.lidl.lt/c/parduotuviu-paieska/s10025528",
+      "snippet": "Jei tęsite naršymą su šia naršykle, apsipirkimo patirtis gali būti nesėkminga! Main NavigationAtgal. Maistas, gėrimai ir buities prekės. …"
+    },
+    {
+      "title": "How to Run Qwen3.6-35B-A3B Locally: A 35B MoE Model on One GPU",
+      "url": "https://tinyweights.dev/posts/run-qwen3-6-35b-a3b-locally/",
+      "snippet": "Run Qwen3.6-35B-A3B locally with Ollama, llama.cpp, or MLX. Hardware requirements, GGUF quantization sizes, and thinking-mode setup for the 35B model that activates only 3B parameters per token."
+    },
+    {
+      "title": "Lidl parduotuvių adresai ir darbo laikas - ImkAkcija.lt",
+      "url": "https://imkakcija.lt/parduotuviu-darbo-laikas/lidl",
+      "snippet": "Piligrimų g. 2, Klaipėdos r."
+    }
+  ]
+}

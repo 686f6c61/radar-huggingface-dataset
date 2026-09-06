@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "navyam-ai/navya-0",
+  "slug": "navyam-ai-navya-0",
+  "author": "navyam-ai",
+  "url": "https://huggingface.co/navyam-ai/navya-0",
+  "created_at": "2026-09-06T10:59:32.000Z",
+  "updated_at": "2026-09-06T11:06:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "india",
+    "finance",
+    "from-scratch",
+    "navya",
+    "en",
+    "hi",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 57680384,
+  "parameters_human": "57.7M",
+  "storage_bytes": 230729752,
+  "storage_human": "231 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ab-auction.com - Das Auktionsportal für gebrauchte Landtechnik",
+      "url": "https://www.ab-auction.com/",
+      "snippet": "Video Auktionstage 08.09.202609.09.202610.09.2026 ab-auction App Bleiben Sie auch unterwegs immer auf dem Laufenden. So …"
+    },
+    {
+      "title": "NavyAI - Unified AI API for 150+ Models",
+      "url": "https://api.navy/",
+      "snippet": "One endpoint, one API key, one subscription. Access 150+ AI models from OpenAI, Anthropic, Google, Mistral, and more through a single OpenAI-compatible API - flat-rate plans instead of pay-per-token pricing."
+    },
+    {
+      "title": "Auktionen - ab-auction.com",
+      "url": "https://www.ab-auction.com/offers?auction=on",
+      "snippet": "Auktionen . Deutsch. English. Italiano. Español. Русский. Български. Magyar. Polski. Hrvatski. Česky. Ελληνικά. Română. Français. …"
+    },
+    {
+      "title": "LLM Cost Optimization & AI Inference Audit | NavyaAI",
+      "url": "https://www.navyaai.com/",
+      "snippet": "NavyaAI (Navya AI) builds AI that survives production — agents, RAG, private LLMs — with inspectable pricing, daily written progress, and published benchmarks. Free AI inference audit."
+    },
+    {
+      "title": "Ritchie Bros. Auctioneers: Gebrauchte schwere Ausrüstung, LKW und …",
+      "url": "https://www.rbauction.de/",
+      "snippet": "Ritchie Bros. Auctioneers: Gebrauchte schwere Ausrüstung, LKW und mehr | Kaufen und Verkaufen. Nach Kategorie filtern. …"
+    }
+  ]
+}

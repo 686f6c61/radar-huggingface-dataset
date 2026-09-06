@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen3_4b_nh025_thinkcode_a_planb_trainable",
+  "slug": "montalte-qwen3_4b_nh025_thinkcode_a_planb_trainable",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen3_4b_nh025_thinkcode_a_planb_trainable",
+  "created_at": "2026-09-06T15:22:12.000Z",
+  "updated_at": "2026-09-06T15:23:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "localize-and-stitch",
+    "plan-b",
+    "merge",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "modrill/Qwen3-4B-Base-ThinkCode-A-NH025 · Hugging Face",
+      "url": "https://huggingface.co/modrill/Qwen3-4B-Base-ThinkCode-A-NH025",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Upload YouTube Shorts - Computer - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/12779649?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Upload YouTube Shorts Upload YouTube Shorts YouTube Shortsis a way for anyone to turn an idea into a chance to connect with …"
+    },
+    {
+      "title": "modrill/Qwen3-4B-Base-ThinkCode-A-NH025 at main - Hugging Face",
+      "url": "https://huggingface.co/modrill/Qwen3-4B-Base-ThinkCode-A-NH025/tree/main",
+      "snippet": "Instructions to use modrill/Qwen3-4B-Base-ThinkCode-A-NH025 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use modrill/Qwen3-4B-Base-ThinkCode-A-NH025 with PEFT:"
+    },
+    {
+      "title": "Here's some advice for YouTube Shorts : r/NewTubers - Reddit",
+      "url": "https://www.reddit.com/r/NewTubers/comments/1bj8t9j/heres_some_advice_for_youtube_shorts/",
+      "snippet": "Thought I would give my two cents about YouTube Shorts and what I've found has helped me out when I make them. A lot of people …"
+    }
+  ]
+}

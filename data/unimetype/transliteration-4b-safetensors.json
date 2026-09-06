@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "UnimeType/Transliteration-4B-Safetensors",
+  "slug": "unimetype-transliteration-4b-safetensors",
+  "author": "UnimeType",
+  "url": "https://huggingface.co/UnimeType/Transliteration-4B-Safetensors",
+  "created_at": "2026-09-06T11:06:59.000Z",
+  "updated_at": "2026-09-06T11:39:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "hi",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "transliteration",
+    "pinyin",
+    "romaji",
+    "hinglish",
+    "arabizi",
+    "qwen3.5",
+    "conversational",
+    "en",
+    "zh",
+    "ja",
+    "hi",
+    "ar",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431542610,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "data- The range of cells to perform the query on. Each column of datacan only hold boolean, numeric (including date/time types) or …"
+    },
+    {
+      "title": "UnimeType/Transliteration-4B · Hugging Face",
+      "url": "https://huggingface.co/UnimeType/Transliteration-4B",
+      "snippet": "UnimeType Transliteration 4B is a focused language conversion model for everyday, mixed-language writing. It converts Pinyin, Romaji, Romanized Hindi, Hinglish, and Arabizi while keeping clear English words, product names, links, code, numbers, punctuation, and emoji in place."
+    },
+    {
+      "title": "QUERY - Cправка - Редакторы Google Документов",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ru",
+      "snippet": "Google Таблицы Использование функций и формул QUERY QUERY Выполняет запросы на базе языка запросов API …"
+    },
+    {
+      "title": "UnimeType (UnimeType) - Hugging Face",
+      "url": "https://huggingface.co/UnimeType",
+      "snippet": "View all activity Team members 1 models1 UnimeType/Transliteration-4B Text Generation •0.9B•Updated about 6 hours ago datasets0 None public yet"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "Google ชีต ใช้ฟังก์ชันและสูตร QUERY QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด …"
+    }
+  ]
+}

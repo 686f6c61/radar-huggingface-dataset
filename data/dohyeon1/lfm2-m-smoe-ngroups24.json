@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/LFM2-M-SMoE-ngroups24",
+  "slug": "dohyeon1-lfm2-m-smoe-ngroups24",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/LFM2-M-SMoE-ngroups24",
+  "created_at": "2026-09-06T12:38:51.000Z",
+  "updated_at": "2026-09-06T12:41:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8339930560,
+  "parameters_human": "8.34B",
+  "storage_bytes": 16680154224,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HACCPort | 株式会社クロックワーク",
+      "url": "https://www.clock-work.net/sales/haccport/",
+      "snippet": "HACCPortでは、PCなどで離れた拠点からでも衛生管理の情報共有を行えるので、速やかな現場改善に役立ちます。 PDCAサイク …"
+    },
+    {
+      "title": "Dohyeon1/LFM2-M-SMoE-ngroups24 · Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1/LFM2-M-SMoE-ngroups24",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use Dohyeon1/LFM2-M-SMoE-ngroups24 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Dohyeon1/LFM2-M-SMoE-ngroups24 with Transformers:"
+    },
+    {
+      "title": "WhatsApp | Mesaje și apeluri private, gratuite, securizate și de încredere",
+      "url": "https://www.whatsapp.com/?lang=ro",
+      "snippet": "Folosește WhatsApp Messenger pentru a ține legătura cu prietenii și cu familia. WhatsApp este gratuit și oferă servicii de mesagerie …"
+    },
+    {
+      "title": "Dohyeon1/LFM2-Sub-MoE-ngroups24 · Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1/LFM2-Sub-MoE-ngroups24",
+      "snippet": "Instructions to use Dohyeon1/LFM2-Sub-MoE-ngroups24 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Green Marine welcome a new supporter in San Francisco",
+      "url": "https://green-marine.org/stayinformed/news/green-marine-welcome-a-new-supporter-in-san-francisco/",
+      "snippet": "High Ambition Climate Collective (HACC) is bringing together climate champions, innovative solution providers, and progressive …"
+    }
+  ]
+}

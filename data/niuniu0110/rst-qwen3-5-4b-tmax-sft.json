@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NiuNiu0110/rst-qwen3.5-4b-tmax-sft",
+  "slug": "niuniu0110-rst-qwen3-5-4b-tmax-sft",
+  "author": "NiuNiu0110",
+  "url": "https://huggingface.co/NiuNiu0110/rst-qwen3.5-4b-tmax-sft",
+  "created_at": "2026-09-06T10:56:48.000Z",
+  "updated_at": "2026-09-06T11:04:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "terminal-agent",
+    "sft",
+    "conversational",
+    "dataset:NiuNiu0110/TMax-Agent-SFT-terminus",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9332636222,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=en-US&rs=US",
+      "snippet": "Outlook. JavaScript must be enabled."
+    },
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "Qwen3.5-4B is a VLM (Qwen3_5ForConditionalGeneration). Axolotl auto-detects it as multimodal and attempts to load AutoProcessor, which internally instantiates Qwen3VLVideoProcessor— requiring torchvision."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/mail/?wtrealm=urn%3Afederation%3AMicrosoftOnline",
+      "snippet": "Outlook. JavaScript must be enabled."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=3e3c1821dfdd619522c50fedde94603d",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    }
+  ]
+}

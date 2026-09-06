@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "etooooopiy/ggwp",
+  "slug": "etooooopiy-ggwp",
+  "author": "etooooopiy",
+  "url": "https://huggingface.co/etooooopiy/ggwp",
+  "created_at": "2026-09-06T11:06:29.000Z",
+  "updated_at": "2026-09-06T11:06:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Niba ushaka kugira umusatsi mwiza woroshye ,udacikagurika, …",
+      "url": "https://www.youtube.com/watch?v=0QvphgFJzgk",
+      "snippet": "Jun 24, 2025 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "ggwp (@ggwp_ai) / X",
+      "url": "https://x.com/ggwp_ai",
+      "snippet": "🏆 GGWP: Proudly Recognized as a 2024 Game Changer! A heartfelt thank you to @ lightspeedvp and @ GamesBeat recognizing our AI-based anti-toxicity platform built exclusively for games."
+    },
+    {
+      "title": "UKO WABONA UMUSATSI WA NATUREL MWIZA, MUREMURE KANDI …",
+      "url": "https://www.youtube.com/watch?v=CB8QxkXnw8k",
+      "snippet": "Jan 20, 2026 · Niba wifuza kwita ku musatsi wawe, wa naturel ugasa neza ,iyi video ni iyawe.#imisatsi #hairtutorial #haircare …"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Abakobwa:Uko wakoresha amavuta yo gutekesha ukagira umusatsi mwiza",
+      "url": "https://inyarwanda.com/rw/amakuru/abakobwauko-wakoresha-amavuta-yo-gutekesha-ukagira-umusatsi-mwiza-114484",
+      "snippet": "Feb 13, 2022 · Amavuta dutekesha akomoka ku bimera agira uruhare runini, mu gutuma umusatsi wawe uba mwiza cyane cyane …"
+    }
+  ]
+}

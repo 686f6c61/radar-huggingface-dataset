@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/historical_handwriten_ocr_best",
+  "slug": "keystats-historical_handwriten_ocr_best",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/historical_handwriten_ocr_best",
+  "created_at": "2026-09-06T13:29:54.000Z",
+  "updated_at": "2026-09-06T13:34:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'سكس' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/%D8%B3%D9%83%D8%B3",
+      "snippet": "XNXX.COM 'سكس' Search, free sex videos سكس مصرى نااار صاحب جوزى هااج عليا و انا بستحمى ناكنى فششخنى العرص احا كفايه هاتهم ف كسى زبرك فاجر اوسخ شرموطه"
+    },
+    {
+      "title": "keystats/historical_handwriten_ocr_v2 · Hugging Face",
+      "url": "https://huggingface.co/keystats/historical_handwriten_ocr_v2",
+      "snippet": "Instructions to use keystats/historical_handwriten_ocr_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "'سكس♡' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/%D8%B3%D9%83%D8%B3%E2%99%A1",
+      "snippet": "XNXX.COM 'سكس♡' Search, free sex videos This menu's updates are based on your activity. The data is only saved locally (on your …"
+    },
+    {
+      "title": "keystats/historical_ocr · Hugging Face",
+      "url": "https://huggingface.co/keystats/historical_ocr",
+      "snippet": "Instructions to use keystats/historical_ocr with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Best Sexy Photos, Porn Pics, Hot Pictures, XXX Images - XNXX.COM",
+      "url": "https://multi.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 1 million+ sex vids available for free! Featuring hot pussy, …"
+    }
+  ]
+}

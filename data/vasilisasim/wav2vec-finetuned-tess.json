@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VasilisAsim/wav2vec-finetuned-TESS",
+  "slug": "vasilisasim-wav2vec-finetuned-tess",
+  "author": "VasilisAsim",
+  "url": "https://huggingface.co/VasilisAsim/wav2vec-finetuned-TESS",
+  "created_at": "2026-09-06T18:09:53.000Z",
+  "updated_at": "2026-09-06T18:10:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94570375,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378307452,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 fantastiche cose da vedere a Massa (2026) - Attrazioni imperdibili",
+      "url": "https://www.tripadvisor.it/Attractions-g660766-Activities-Massa_Province_of_Massa_Carrara_Tuscany.html",
+      "snippet": "Cosa fare e vedere a Massa. Dai un'occhiata ai luoghi e alle attività imperdibili:Orto Botanico Pellegrini - Ansaldi, Bagno Italia, …"
+    },
+    {
+      "title": "VasilisAsim/wav2vec-base-finetuned-TESS · Hugging Face",
+      "url": "https://huggingface.co/VasilisAsim/wav2vec-base-finetuned-TESS",
+      "snippet": "wav2vec-base-finetuned-TESS This model is a fine-tuned version of facebook/wav2vec2-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Provincia di Massa-Carrara - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Provincia_di_Massa-Carrara",
+      "snippet": "Ricerca Ricerca Mostra/Nascondi l'indice Provincia di Massa-Carrara 76 lingueAggiungi argomento"
+    },
+    {
+      "title": "VasilisAsim/wav2vec-base-finetuned-IEMOCAP · Hugging Face",
+      "url": "https://huggingface.co/VasilisAsim/wav2vec-base-finetuned-IEMOCAP",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Massa (Italia) - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Massa_(Italia)",
+      "snippet": "Attiva/disattiva la sottosezione Geografia fisica. 1.1Territorio. 1.2Clima. 2Origini del nome. 3Storia. Attiva/disattiva la sottosezione …"
+    }
+  ]
+}

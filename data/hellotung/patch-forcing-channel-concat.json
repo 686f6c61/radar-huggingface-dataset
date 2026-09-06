@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hellotung/patch-forcing-channel-concat",
+  "slug": "hellotung-patch-forcing-channel-concat",
+  "author": "hellotung",
+  "url": "https://huggingface.co/hellotung/patch-forcing-channel-concat",
+  "created_at": "2026-09-06T15:05:34.000Z",
+  "updated_at": "2026-09-06T15:05:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2604.19141",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349607085,
+  "storage_human": "350 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homemade Pizza Recipe: How to Make It - Taste of Home",
+      "url": "https://www.tasteofhome.com/recipes/homemade-pizza/",
+      "snippet": "Apr 19, 2024 · Our homemade pizza recipe creates two perfect doughs that bake crispy on the bottom but are chewy and airy …"
+    },
+    {
+      "title": "hellotung/patch-forcing-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/hellotung/patch-forcing-checkpoints",
+      "snippet": "hellotung / patch-forcing-checkpoints like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Homemade Pizza Dough for Beginners - Sally's Baking",
+      "url": "https://sallysbakingaddiction.com/homemade-pizza-crust-recipe/",
+      "snippet": "Sep 11, 2025 · This homemade pizza dough recipe is great for beginners and yields 2 soft, chewy crusts. Skip delivery because you …"
+    },
+    {
+      "title": "hellotung (Tran Van Tung) - Hugging Face",
+      "url": "https://huggingface.co/hellotung",
+      "snippet": "Recent Activity updated a modelabout 8 hours ago hellotung/Code_And_Res_copy published a modelabout 8 hours ago hellotung/Code_And_Res_copy updated a model2 days ago hellotung/patch-forcing-checkpoints View all activity"
+    },
+    {
+      "title": "Pizza Dough recipe – best ever homemade pizza! - RecipeTin Eats",
+      "url": "https://www.recipetineats.com/pizza-dough-recipe/",
+      "snippet": "May 1, 2020 · The RecipeTin Eats’ pizza dough recipe has landed! An easy pizza crust that makes an exceptional homemade pizza – …"
+    }
+  ]
+}

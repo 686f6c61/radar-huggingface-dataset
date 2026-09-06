@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "acvlab/ABot-Recon",
+  "slug": "acvlab-abot-recon",
+  "author": "acvlab",
+  "url": "https://huggingface.co/acvlab/ABot-Recon",
+  "created_at": "2026-08-26T00:51:23.000Z",
+  "updated_at": "2026-09-01T01:54:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abot_recon",
+    "image-to-3d",
+    "arxiv:2608.27529",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 1028,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4003866352,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marilyn Monroe - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marilyn_Monroe",
+      "snippet": "1.51954–1955: Conflicts with 20th Century-Fox and marriage to Joe DiMaggio. 1.61956–1959: Critical acclaim and marriage to Arthur …"
+    },
+    {
+      "title": "acvlab/ABot-Recon · Hugging Face",
+      "url": "https://huggingface.co/acvlab/ABot-Recon",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Marilyn Monroe | Movies, Death, Real Name, Height, & Facts",
+      "url": "https://www.britannica.com/biography/Marilyn-Monroe",
+      "snippet": "1 day ago · Marilyn Monroe(born June 1, 1926, Los Angeles, California, U.S.—found dead August 5, 1962, Los Angeles) was an …"
+    },
+    {
+      "title": "GitHub - amap-cvlab/ABot-Recon: Streaming 3D reconstruction from only ...",
+      "url": "https://github.com/amap-cvlab/ABot-Recon",
+      "snippet": "Streaming 3D reconstruction from only video input: Revisiting Local Context for Long-Horizon Streaming 3D Reconstruction - amap-cvlab/ABot-Recon"
+    },
+    {
+      "title": "Death of Marilyn Monroe - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Death_of_Marilyn_Monroe",
+      "snippet": "Search Search Toggle the table of contents Death of Marilyn Monroe 18 languagesAdd topic"
+    }
+  ]
+}

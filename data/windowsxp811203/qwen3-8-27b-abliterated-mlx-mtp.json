@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "windowsxp811203/Qwen3.8-27B-Abliterated-MLX-MTP",
+  "slug": "windowsxp811203-qwen3-8-27b-abliterated-mlx-mtp",
+  "author": "windowsxp811203",
+  "url": "https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-MLX-MTP",
+  "created_at": "2026-09-06T12:39:53.000Z",
+  "updated_at": "2026-09-06T12:54:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "omlx",
+    "oq",
+    "mtp",
+    "native-mtp",
+    "imatrix",
+    "apple-silicon",
+    "qwen3_5",
+    "qwen3.8",
+    "qwen",
+    "abliterated",
+    "uncensored",
+    "vision",
+    "evals",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:windowsxp811203/Qwen3.8-27B-Abliterated",
+    "base_model:quantized:windowsxp811203/Qwen3.8-27B-Abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127134838089,
+  "storage_human": "127.1 GB",
+  "base_model": "windowsxp811203/Qwen3.8-27B-Abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "سكس محارم مترجم",
+      "url": "https://sexmahali.com/category/%D8%B3%D9%83%D8%B3-%D9%85%D8%AD%D8%A7%D8%B1%D9%85-%D9%85%D8%AA%D8%B1%D8%AC%D9%85/",
+      "snippet": "مشاهدة جميع افلام و مسلسلات سكس محارم مترجم بجودة عالية اونلاين علي موقع سكس محلي"
+    },
+    {
+      "title": "windowsxp811203/Qwen3.8-27B-Abliterated · Hugging Face",
+      "url": "https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "افلام وفيديوهات سكس محارم - سكس فيو SexVIU",
+      "url": "https://www.sexviu.com/categories/%D8%B3%D9%83%D8%B3-%D9%85%D8%AD%D8%A7%D8%B1%D9%85/",
+      "snippet": "مشاهدة افلام سكس محارم بجودة عالية HD ونيك المحارم والعلاقات الجنسية بين المحارم وبجميع انواع فيديوهات المحارم الاباحية وافلام نيك الاب وبنته وافلام نيك الام وابنها وسكس نيك الأسرة وزنا ..."
+    },
+    {
+      "title": "windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4 at main",
+      "url": "https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "سكس محارم حقيقي وليس تمثيل الأفلام الإباحية العربية",
+      "url": "https://arabysexy.mobi/video/dHlfTWpFMU9X/%D8%B3%D9%83%D8%B3-%D9%85%D8%AD%D8%A7%D8%B1%D9%85-%D8%AD%D9%82%D9%8A%D9%82%D9%8A-%D9%88%D9%84%D9%8A%D8%B3-%D8%AA%D9%85%D8%AB%D9%8A%D9%84.html",
+      "snippet": "نيك حار نيك طيز نيك كس سكس شات عربي افلام نيك افلام نيك ‫أكبر موقع إباحي للأفلام الإباحية المجانية باللغة العربية - ArabySexy"
+    }
+  ]
+}

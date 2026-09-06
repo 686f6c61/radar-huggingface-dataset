@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Novasy/nova-vision-7b",
+  "slug": "novasy-nova-vision-7b",
+  "author": "Novasy",
+  "url": "https://huggingface.co/Novasy/nova-vision-7b",
+  "created_at": "2026-09-06T12:40:40.000Z",
+  "updated_at": "2026-09-06T12:45:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836704,
+  "storage_human": "16.6 GB",
+  "base_model": "unsloth/qwen2.5-vl-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gwisin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gwisin",
+      "snippet": "Toggle the table of contents Gwisin"
+    },
+    {
+      "title": "Novasy/nova-coder-merge-7b · Hugging Face",
+      "url": "https://huggingface.co/Novasy/nova-coder-merge-7b",
+      "snippet": "Instructions to use Novasy/nova-coder-merge-7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gwisin (Korean Restless Spirit) – K-Occult",
+      "url": "https://koccult.com/creatures/korean-gwisin",
+      "snippet": "Gwisin are Korean ghosts or spirits of the dead, especially restless souls bound to the living world by unresolved Han, improper rites, …"
+    },
+    {
+      "title": "A Guide to SenseNova’s 7B Multimodal Vision Model",
+      "url": "https://hackernoon.com/a-guide-to-sensenovas-7b-multimodal-vision-model",
+      "snippet": "Explore SenseNova-Vision-7B-MoT, a unified 7B model for detection, segmentation, depth estimation, OCR, and multi-view 3D geometry."
+    },
+    {
+      "title": "Cheonyeo Gwisin (Virgin Ghost) – K-Occult",
+      "url": "https://koccult.com/creatures/cheonyeo-gwisin",
+      "snippet": "Cheonyeo Gwisin is the Korean Virgin Ghost, a restless female spirit traditionally believed to arise from a woman who died …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NiuNiu0110/rst-qwen3.5-4b-nemo-sft",
+  "slug": "niuniu0110-rst-qwen3-5-4b-nemo-sft",
+  "author": "NiuNiu0110",
+  "url": "https://huggingface.co/NiuNiu0110/rst-qwen3.5-4b-nemo-sft",
+  "created_at": "2026-09-06T10:54:31.000Z",
+  "updated_at": "2026-09-06T10:55:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "terminal-agent",
+    "sft",
+    "conversational",
+    "dataset:NiuNiu0110/Nemotron-Terminal-SFT-terminus",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9332636222,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "302 Moved",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "302 Moved The document has moved here."
+    },
+    {
+      "title": "Qwen3.5 | NVIDIA NeMo AutoModel",
+      "url": "https://docs.nvidia.com/nemo/automodel/model-coverage/vision-language-models/qwen/qwen3-5-vl",
+      "snippet": "The Qwen3.5-MoE VLM training path has been validated at both 397-billion-parameter model scale and 128K context length. Qwen3.5-397B-A17B completed a 10-step end-to-end training run on 256 H100 GPUs with FSDP2, CP64, EP64, packed sequences, full activation checkpointing, and a trainable vision tower."
+    },
+    {
+      "title": "Manage your home area or current location for YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/7129768?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "When you sign up for YouTube TV, we’ll ask you to share your home zip code. We may also ask you to verify your area location via …"
+    },
+    {
+      "title": "Qwen3 — NVIDIA NeMo Framework User Guide",
+      "url": "https://docs.nvidia.com/nemo-framework/user-guide/25.09/llms/qwen3.html",
+      "snippet": "Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support We provide recipes for pretraining and fine-tuning Qwen3 models for the following sizes: 0.6B, 1.7B, 4B, 8B, 14B, 32B, 30B-A3B, and 235B-A30B using NeMo 2.0 and NeMo-Run."
+    },
+    {
+      "title": "İndir | OBS",
+      "url": "https://obsproject.com/tr/downLOAD",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    }
+  ]
+}

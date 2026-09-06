@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hpnyaggerman/Qwen3.5-4B-heretic",
+  "slug": "hpnyaggerman-qwen3-5-4b-heretic",
+  "author": "hpnyaggerman",
+  "url": "https://huggingface.co/hpnyaggerman/Qwen3.5-4B-heretic",
+  "created_at": "2026-09-06T15:44:43.000Z",
+  "updated_at": "2026-09-06T15:45:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9118599249,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Archangel87/Qwen3.5-4B-heretic · Hugging Face",
+      "url": "https://huggingface.co/Archangel87/Qwen3.5-4B-heretic",
+      "snippet": "Qwen3.5-4B This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. These artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a ..."
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "على جهاز الكمبيوتر، انتقِل إلى Gmail. أدخِل عنوان البريد الإلكتروني لحسابك على Google أو رقم الهاتف وكلمة المرور. إذا سبق أن عبأت المعلومات وقرّرت تسجيل الدخول إلى حساب مختلف، انقر على …"
+    },
+    {
+      "title": "Auguments/Aureth-4B-Qwen3.5-Heretic-GGUF-BF16 · Hugging Face",
+      "url": "https://huggingface.co/Auguments/Aureth-4B-Qwen3.5-Heretic-GGUF-BF16",
+      "snippet": "Aureth 4B is an interesting model, if you miss some personality in small models in the post-Hermes3 world. It's better suited to creative tasks than base Qwen 3.5 4B."
+    },
+    {
+      "title": "r/SquaredCircle - Reddit",
+      "url": "https://www.reddit.com/r/SquaredCircle/new/?feedViewType=classicView",
+      "snippet": "r/SquaredCircle: Reddit's largest professional wrestling community! All text posts, and submissions must be about wrestling or …"
+    }
+  ]
+}

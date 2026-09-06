@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "caguilar51/MOSS-SoundEffect-v2-CoreAI",
+  "slug": "caguilar51-moss-soundeffect-v2-coreai",
+  "author": "caguilar51",
+  "url": "https://huggingface.co/caguilar51/MOSS-SoundEffect-v2-CoreAI",
+  "created_at": "2026-09-06T15:11:48.000Z",
+  "updated_at": "2026-09-06T15:13:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "macos",
+    "text-to-audio",
+    "audio-generation",
+    "sound-effects",
+    "experimental",
+    "base_model:OpenMOSS-Team/MOSS-SoundEffect-v2.0",
+    "base_model:finetune:OpenMOSS-Team/MOSS-SoundEffect-v2.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6440940431,
+  "storage_human": "6.4 GB",
+  "base_model": "OpenMOSS-Team/MOSS-SoundEffect-v2.0, mlx-community/MOSS-SoundEffect-v2.0-4bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "MOSS-TTS/moss_soundeffect_v2 at main · OpenMOSS/MOSS-TTS · GitHub",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS/tree/main/moss_soundeffect_v2",
+      "snippet": "MOSS-SoundEffect v2.0 is a text-to-audio model with a Diffusion Transformer (DiT) backbone trained with the Flow Matching objective, paired with a DAC VAE and a Qwen3 text encoder. We recommend a clean, isolated Python 3.12 environment to avoid dependency conflicts with the top-level MOSS-TTS ..."
+    },
+    {
+      "title": "302 Moved",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "302 Moved The document has moved here."
+    },
+    {
+      "title": "moss-tts/moss_soundeffect_v2/README.md at main · zenghui-li ... - GitHub",
+      "url": "https://github.com/zenghui-li/moss-tts/blob/main/moss_soundeffect_v2/README.md",
+      "snippet": "MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS. - moss-tts/moss_soundeffect_v2/README.md ..."
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    }
+  ]
+}

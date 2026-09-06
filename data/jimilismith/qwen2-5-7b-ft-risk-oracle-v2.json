@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jimilismith/qwen2.5-7b-FT-risk-oracle-v2",
+  "slug": "jimilismith-qwen2-5-7b-ft-risk-oracle-v2",
+  "author": "jimilismith",
+  "url": "https://huggingface.co/jimilismith/qwen2.5-7b-FT-risk-oracle-v2",
+  "created_at": "2026-09-06T10:48:14.000Z",
+  "updated_at": "2026-09-06T10:48:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955457,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Man won $900,000 from the state of California after being psychologically tortured by police during a 17-hour interrogation which lead …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "TamilGun : r/entertainment - Reddit",
+      "url": "https://www.reddit.com/r/entertainment/comments/5h0wlz/tamilgun/",
+      "snippet": "Dec 7, 2016 · 4.3M subscribers in the entertainment community. For news and discussion of the entertainment industry."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "/r/manga: manga, on reddit.",
+      "url": "https://www.reddit.com/r/manga/wiki/index/",
+      "snippet": "Everything and anything manga! (manhwa/manhua is okay too!) Discuss weekly chapters, find/recommend a new series to read, post …"
+    }
+  ]
+}

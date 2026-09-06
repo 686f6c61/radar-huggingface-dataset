@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "florianvoss/Qwen3.5-4B-Hybrid-INT4-G256-ABBF16-Modalix",
+  "slug": "florianvoss-qwen3-5-4b-hybrid-int4-g256-abbf16-modalix",
+  "author": "florianvoss",
+  "url": "https://huggingface.co/florianvoss/Qwen3.5-4B-Hybrid-INT4-G256-ABBF16-Modalix",
+  "created_at": "2026-09-06T13:21:31.000Z",
+  "updated_at": "2026-09-06T13:22:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llima",
+    "sima-ai",
+    "modalix",
+    "compiled",
+    "int4",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7613138541,
+  "storage_human": "7.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trattoria da Cosimo in Leinburg – speisekarte.de",
+      "url": "https://www.speisekarte.de/leinburg/restaurant/pizzeria_trattoria_da_cosimo",
+      "snippet": "Trattoria da Cosimo freut sich auf Ihren Besuch! Werfen Sie vorab einen Blick in die Speisekarte und erfahren Sie alles Weitere über …"
+    },
+    {
+      "title": "Qwen3.5 tests - a florianvoss Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/florianvoss/qwen35-tests",
+      "snippet": "Qwen3.5-4B compiled LLiMa runtime packages for SiMa.ai Modalix: INT8 and SmoothQuant A0.5 hybrid INT4/BF16."
+    },
+    {
+      "title": "Trattoria da Cosimo - Essen online bestellen in Leinburg",
+      "url": "https://www.trattoriadacosimo.de/",
+      "snippet": "Wähle deine Lieblingsgerichte von der Trattoria da Cosimo Speisekarte in Leinburg und bestelle einfach online. Genieße leckeres …"
+    },
+    {
+      "title": "Qwen3.5-4B GDN-Hybrid Model | sai-samarth/qwen35-4b-fast-inference ...",
+      "url": "https://deepwiki.com/sai-samarth/qwen35-4b-fast-inference/2.1-qwen3.5-4b-gdn-hybrid-model",
+      "snippet": "This page provides a deep dive into the Qwen3.5-4B model architecture as implemented in the fast inference stack. The model utilizes a hybrid architecture combining GatedDeltaNet (GDN) linear attention with standard full-attention layers to achieve high throughput while maintaining long-context reasoning capabilities."
+    },
+    {
+      "title": "Trattoria da Cosimo Leinburg - Essen Bestellen | Lieferando.de",
+      "url": "https://www.lieferando.de/speisekarte/trattoria-da-cosimo?msockid=103f6f2de4966231262578e1e58e6374",
+      "snippet": "Bestelle online von Trattoria da Cosimo Leinburg jetzt via Lieferando.de. Food Tracker® und diverse Zahlungsmethoden. Genieße …"
+    }
+  ]
+}

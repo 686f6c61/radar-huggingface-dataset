@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_adamwppt_500M_s0_2026-09-06_18-17-49_874433-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_adamwppt_500m_s0_2026-09-06_18-17-49_874433-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_adamwppt_500M_s0_2026-09-06_18-17-49_874433-pt",
+  "created_at": "2026-09-06T18:29:53.000Z",
+  "updated_at": "2026-09-06T18:30:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162715,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Počúvanie prekladov reči do reči naživo pomocou prekladu naživo ...",
+      "url": "https://support.google.com/translate/answer/6142474?hl=sk&co=GENIE.Platform%3DDesktop",
+      "snippet": "Vo webovom Prekladači Google nemôžete hovoriť a prekladať zároveň, ale môžete použiť aplikáciu Prekladač v telefóne alebo …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_500M_s0_2026-08-14_23-25-05_820140-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_500M_s0_2026-08-14_23-25-05_820140-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Prepis v Prekladači Google - iPhone a iPad - Prekladač Google Pomocník",
+      "url": "https://support.google.com/translate/answer/9724492?hl=sk&co=GENIE.Platform%3DiOS",
+      "snippet": "Keď niekto rozpráva v&nbsp;inom jazyku, aplikácia Prekladač vám umožňuje prekladať takmer v&nbsp;reálnom čase. Môžete …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_200M_s1_2026-08-14_23-16-34_777872-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_200M_s1_2026-08-14_23-16-34_777872-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Preklad reči a textu v telefóne Pixel alebo zariadení Pixel Tablet ...",
+      "url": "https://support.google.com/pixelphone/answer/11209263?hl=sk-SK",
+      "snippet": "V tomto článku sú zhrnuté rôzne prekladateľské funkcie dostupné v zariadení. Prekladač Voice Prekladač hlasu preloží váš hlas do …"
+    }
+  ]
+}

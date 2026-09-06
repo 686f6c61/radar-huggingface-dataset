@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "dare43321/hindi-tts-model-7",
+  "slug": "dare43321-hindi-tts-model-7",
+  "author": "dare43321",
+  "url": "https://huggingface.co/dare43321/hindi-tts-model-7",
+  "created_at": "2026-09-06T12:50:37.000Z",
+  "updated_at": "2026-09-06T12:56:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:kenpath/svara-tts-v1",
+    "base_model:finetune:kenpath/svara-tts-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3300867072,
+  "parameters_human": "3.30B",
+  "storage_bytes": 13226347034,
+  "storage_human": "13.2 GB",
+  "base_model": "kenpath/svara-tts-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nike. Just Do It. Nike ZA",
+      "url": "https://www.nike.com/za?msockid=3f2c2f75109b603b3a6e38b911016120",
+      "snippet": "Inspiring the world's athletes, Nike delivers innovative products, experiences and services."
+    },
+    {
+      "title": "dare43321 (dare) - Hugging Face",
+      "url": "https://huggingface.co/dare43321/datasets",
+      "snippet": "dare43321/zuzu-the-cat-tts-hindi-mod . published a dataset about 2 hours ago . dare43321/zuzu-the-cat-tts-hindi-mod"
+    },
+    {
+      "title": "Sitio web oficial de Nike. Nike MX",
+      "url": "https://www.nike.com/mx/?msockid=3f2c2f75109b603b3a6e38b911016120",
+      "snippet": "Nike ofrece productos innovadores, experiencias y servicios para inspirar a los atletas del mundo. Entrega y devoluciones gratuitas …"
+    },
+    {
+      "title": "dare43321/hindi-tts-model-3 · Hugging Face",
+      "url": "https://huggingface.co/dare43321/hindi-tts-model-3",
+      "snippet": "Instructions to use dare43321/hindi-tts-model-3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Custom Nike Uniforms - Nike Team Sports",
+      "url": "https://niketeam.nike.com/en/en_US/nts/",
+      "snippet": "Personalized With Name, Number And Custom Artwork. Order Now."
+    }
+  ]
+}

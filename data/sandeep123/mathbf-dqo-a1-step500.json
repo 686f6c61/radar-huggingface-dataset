@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/mathbf-dqo-a1-step500",
+  "slug": "sandeep123-mathbf-dqo-a1-step500",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/mathbf-dqo-a1-step500",
+  "created_at": "2026-09-06T10:46:17.000Z",
+  "updated_at": "2026-09-06T10:49:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Friv® | FRIV.COM : The Best Free Games [Jogos | Juegos]",
+      "url": "https://www.friv.com/",
+      "snippet": "A safe place to play free online games on your computer, phone or tablet! No downloads. No in-app purchases. No nagging. Just …"
+    },
+    {
+      "title": "sandeep123/math-dqo-a1-step700 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/math-dqo-a1-step700",
+      "snippet": "DQO on MATH (Chen et al., ICLR 2026): alpha*logdet (L+I) with a leave-one-out estimator, alpha=1.0 per the paper. Embedding phi = reference-policy hidden states (matching STRIDE) rather than the paper's pretrained sentence encoder, so the comparison isolates the diversity objective."
+    },
+    {
+      "title": "JUEGOS FRIV | ¡Juega juegos en línea gratis en Friv.com! | Friv® ️",
+      "url": "https://www.friv.com/z/play/games-es.html",
+      "snippet": "Bienvenido a Friv®: ¡ofrece increíbles juegos en línea gratis desde 2006! Nuestros mejores juegos: Fireboy And Watergirl, Power …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "FRIV JOGOS | Jogue jogos online grátis em friv.com! | Friv® ️",
+      "url": "https://www.friv.com/z/play/games-pt.html",
+      "snippet": "Você quer jogos online grátis com quase nenhum anúncio? Temos centenas de jogos incríveis que você pode jogar em todos os …"
+    }
+  ]
+}

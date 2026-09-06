@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Duke-CEI-SVD/traj-mc",
+  "slug": "duke-cei-svd-traj-mc",
+  "author": "Duke-CEI-SVD",
+  "url": "https://huggingface.co/Duke-CEI-SVD/traj-mc",
+  "created_at": "2026-09-06T14:59:18.000Z",
+  "updated_at": "2026-09-06T15:54:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "llada",
+    "diffusion-language-model",
+    "model-compression",
+    "quantization",
+    "pruning",
+    "low-rank",
+    "base_model:GSAI-ML/LLaDA-8B-Base",
+    "base_model:finetune:GSAI-ML/LLaDA-8B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23193103467,
+  "storage_human": "23.2 GB",
+  "base_model": "GSAI-ML/LLaDA-8B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum Nail Salon - nail salon in Gilbert, AZ 85295",
+      "url": "https://forumnailsgilbert.com/Home/NewPage",
+      "snippet": "FORUM NAIL SALON is voted to be the top and the best nail salon in GILBERT, ARIZONA for the last 20 YEARS. The salon is …"
+    },
+    {
+      "title": "Duke-CEI-SVD (CEI-Lean-AI) - Hugging Face",
+      "url": "https://huggingface.co/Duke-CEI-SVD/models",
+      "snippet": "AI Efficiency & Model Compression Zishan-Shao updated a model about 18 hours ago"
+    },
+    {
+      "title": "Coupons - Forum Nail Salon",
+      "url": "https://forumnailsgilbert.com/Coupon/ShowCoupons",
+      "snippet": "OUR COUPONS FORUM NAIL SALON 1464 E. Williams Field Rd. #106, Gilbert, AZ, 85295 20% Cash Back (in Giftcard) for FIRST …"
+    },
+    {
+      "title": "Duke-CEI-SVD (CEI-Lean-AI) - Hugging Face",
+      "url": "https://huggingface.co/Duke-CEI-SVD",
+      "snippet": "AI Efficiency & Model Compression Zishan-Shao updated a model about 17 hours ago"
+    },
+    {
+      "title": "Services - Forum Nail Salon",
+      "url": "https://forumnailsgilbert.com/Video/ShowVideos",
+      "snippet": "Full nail salon service: MANICURES, PEDICURES, DIPPING, SNS, ACRYLIC NAILS, WAXING, EYELASHES, FACIALS... We are …"
+    }
+  ]
+}

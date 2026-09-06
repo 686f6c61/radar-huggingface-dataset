@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "redkits/flux-h3-chain",
+  "slug": "redkits-flux-h3-chain",
+  "author": "redkits",
+  "url": "https://huggingface.co/redkits/flux-h3-chain",
+  "created_at": "2026-09-06T18:27:06.000Z",
+  "updated_at": "2026-09-06T18:28:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "text-to-image",
+    "image-to-video",
+    "flux2",
+    "z-image",
+    "uncensored",
+    "production-chain",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite Ihrer VR Bank Fulda eG - VR Bank Fulda eG",
+      "url": "https://www.vrbankfulda.de/startseite.html",
+      "snippet": "Die VR Bank Main-Kinzig-Büdingen und die VR Bank Fulda fusionieren zur VR RegionalBank. Ziel der Fusion ist es, die Kräfte beider …"
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 ...",
+      "url": "https://github.com/black-forest-labs/flux",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    },
+    {
+      "title": "OnlineBanking für Privatkunden - VR Bank Fulda eG",
+      "url": "https://www.vrbankfulda.de/banking-und-vertraege/banking/banking-privatkunden/onlinebanking.html",
+      "snippet": "Unser OnlineBanking macht Ihnen das Leben leichter: erledigen Sie Ihre Bankgeschäfte wann und wo Sie wollen. Mehr dazu bei …"
+    },
+    {
+      "title": "Flux 3 — Multimodal AI by Black Forest Labs | Real World Models",
+      "url": "https://flux3.dev/",
+      "snippet": "Black Forest Labs is rolling out FLUX 3 capabilities in phases — each built from the same underlying multimodal flow matching model, with early access for feedback and safety testing."
+    },
+    {
+      "title": "VR Bank Fulda eG — Volksbanken Raiffeisenbanken",
+      "url": "https://www.vr.de/privatkunden/banken/vr-bank-fulda-eg-53060180.html",
+      "snippet": "Individuelle Finanzlösungen für Privatkunden und Firmenkunden – mit der VR Bank Fulda eG. Lokal verankert und immer in Ihrer Nähe."
+    }
+  ]
+}

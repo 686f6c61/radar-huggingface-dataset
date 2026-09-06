@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "lxyuan/LegalBenchRAG-Ettin-150M-Reranker",
+  "slug": "lxyuan-legalbenchrag-ettin-150m-reranker",
+  "author": "lxyuan",
+  "url": "https://huggingface.co/lxyuan/LegalBenchRAG-Ettin-150M-Reranker",
+  "created_at": "2026-09-06T12:42:43.000Z",
+  "updated_at": "2026-09-06T12:47:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "tensorboard",
+    "safetensors",
+    "modernbert",
+    "legal",
+    "retrieval",
+    "rag",
+    "reranker",
+    "cross-encoder",
+    "legalbenchrag",
+    "text-ranking",
+    "en",
+    "base_model:cross-encoder/ettin-reranker-150m-v1",
+    "base_model:finetune:cross-encoder/ettin-reranker-150m-v1",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 598477348,
+  "storage_human": "598 MB",
+  "base_model": "cross-encoder/ettin-reranker-150m-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fuzz_dic/子域名爆破参数-top16万.txt at master - GitHub",
+      "url": "https://github.com/7hang/Fuzz_dic/blob/master/%E5%AD%90%E5%9F%9F%E5%90%8D%E7%88%86%E7%A0%B4%E5%8F%82%E6%95%B0-top16%E4%B8%87.txt",
+      "snippet": "Mar 6, 2026 · 参数 | 字典 collections. Contribute to 7hang/Fuzz_dic development by creating an account on GitHub."
+    },
+    {
+      "title": "cross-encoder/ettin-reranker-150m-v1 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ettin-reranker-150m-v1",
+      "snippet": "Each model in the ettin-reranker-v1 family was evaluated on the full MTEB (eng, v2) Retrieval benchmark (10 tasks, top-100 reranked) using MTEB's two-stage reranking flow, pairing each reranker with six embedding models that span the speed/quality spectrum. The dashed retriever-only line in each chart below is the headline number to beat."
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://apne.tv/",
+      "snippet": "301 Moved Permanently cloudflare"
+    },
+    {
+      "title": "[2408.10343] LegalBench-RAG: A Benchmark for Retrieval-Augmented ...",
+      "url": "https://arxiv.org/abs/2408.10343",
+      "snippet": "Retrieval-Augmented Generation (RAG) systems are showing promising potential, and are becoming increasingly relevant in AI-powered legal applications. Existing benchmarks, such as LegalBench, assess the generative capabilities of Large Language Models (LLMs) in the legal domain, but there is a critical gap in evaluating the retrieval component of RAG systems. To address this, we introduce ..."
+    },
+    {
+      "title": "15 Taboo Anime That You Would Rather Not Get Caught Enjoying",
+      "url": "https://myanimego.com/taboo-anime/",
+      "snippet": "Sep 25, 2024 · Discover 15 taboo anime series that push boundaries with truly controversial themes and very mature content."
+    }
+  ]
+}

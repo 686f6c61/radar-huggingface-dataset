@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-3-12b-it-antislop-de-i1-GGUF",
+  "slug": "mradermacher-gemma-3-12b-it-antislop-de-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-3-12b-it-antislop-de-i1-GGUF",
+  "created_at": "2026-09-06T10:54:28.000Z",
+  "updated_at": "2026-09-06T11:53:17.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma3",
+    "german",
+    "anti-slop",
+    "ftpo",
+    "marketing-copy",
+    "negative-results",
+    "de",
+    "base_model:PhilflowIO/gemma-3-12b-it-antislop-de",
+    "base_model:quantized:PhilflowIO/gemma-3-12b-it-antislop-de",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 138568143200,
+  "storage_human": "138.6 GB",
+  "base_model": "PhilflowIO/gemma-3-12b-it-antislop-de",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "windows - Uninstall without an MSI file - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/334490/uninstall-without-an-msi-file",
+      "snippet": "Dec 19, 2016 · Sort by date and search in the latest created folders for an MSI file that could belong to the software that you want to …"
+    },
+    {
+      "title": "mradermacher/gemma-3-12b-it-antislop-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-3-12b-it-antislop-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "python - Why do I get AttributeError: 'NoneType' object has no ...",
+      "url": "https://stackoverflow.com/questions/8949252/why-do-i-get-attributeerror-nonetype-object-has-no-attribute-something",
+      "snippet": "I got this error: AttributeError: 'NoneType' object has no attribute 'something' What general scenarios might cause such an …"
+    },
+    {
+      "title": "mradermacher/gemma-3-12b-it-antislop-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-3-12b-it-antislop-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "git - Download single files from GitHub - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4604663/download-single-files-from-github",
+      "snippet": "In 2021 GitHub added a new feature of opening visual studio code right on the web. You can launch it by just pressing full stop aka …"
+    }
+  ]
+}

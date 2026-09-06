@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "navyam-ai/navya-1a",
+  "slug": "navyam-ai-navya-1a",
+  "author": "navyam-ai",
+  "url": "https://huggingface.co/navyam-ai/navya-1a",
+  "created_at": "2026-09-06T11:06:20.000Z",
+  "updated_at": "2026-09-06T11:07:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "india",
+    "finance",
+    "from-scratch",
+    "navya",
+    "en",
+    "hi",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151020288,
+  "parameters_human": "151.0M",
+  "storage_bytes": 604097416,
+  "storage_human": "604 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "高雄都設審議不只看建築量體 從社宅到捷運、校園全面升級「人本設計 …",
+      "url": "https://www.storm.mg/article/11162164",
+      "snippet": "23 hours ago · 都發局表示，高雄市109年底修正都市設計審議授權範圍，針對重大公共工程及公有建築物採取更嚴謹的分級審查。 全 …"
+    },
+    {
+      "title": "NavyAI - Unified AI API for 150+ Models",
+      "url": "https://api.navy/",
+      "snippet": "One endpoint, one API key, one subscription. Access 150+ AI models from OpenAI, Anthropic, Google, Mistral, and more through a single OpenAI-compatible API - flat-rate plans instead of pay-per-token pricing."
+    },
+    {
+      "title": "道地 | 打開城市的縫隙，「士林劍潭綠廊」人本空間讓歷史與人流交會——專訪境觀設計 …",
+      "url": "https://daodi.com.tw/zh-TW/project_theme/76",
+      "snippet": "Sep 3, 2025 · 士林劍潭綠廊的設計核心在於希望創造足夠的人本口袋空間，南北向動線透過休憩座椅的設置及環境綠化，串連各節 …"
+    },
+    {
+      "title": "LLM Cost Optimization & AI Inference Audit | NavyaAI",
+      "url": "https://www.navyaai.com/",
+      "snippet": "NavyaAI (Navya AI) builds AI that survives production — agents, RAG, private LLMs — with inspectable pricing, daily written progress, and published benchmarks. Free AI inference audit."
+    },
+    {
+      "title": "以人為本的創新設計，六個案例開啟你和建築之間的對話 | 社企流 | 華 …",
+      "url": "https://www.seinsights.asia/article/2715",
+      "snippet": "Dec 20, 2014 · 國外許多的建築設計理念除了實用與設計感，更考量當地居民的需求和環境友善程度，讓我們來看看全球的建築師們如 …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/gliner-datause-v2-probe",
+  "slug": "rafmacalaba-gliner-datause-v2-probe",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/gliner-datause-v2-probe",
+  "created_at": "2026-09-06T18:36:58.000Z",
+  "updated_at": "2026-09-06T18:37:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [],
+  "tags": [
+    "gliner",
+    "probe",
+    "data-use",
+    "token-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2365105,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programme TNT : ce soir à 21h, le menu gratuit et complet",
+      "url": "https://www.linternaute.com/television/programme-tnt/",
+      "snippet": "LE PROGRAMME TNT CE SOIR - Découvrez le programme de la TNT gratuit pour une trentaine de chaînes à partir de ce soir, vers …"
+    },
+    {
+      "title": "rafmacalaba/gliner-datause-probe · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/gliner-datause-probe",
+      "snippet": "rafmacalaba / gliner-datause-probe like 0 Token Classification GLiNER PyTorch ner data-use tiered License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "À la télévision aujourd'hui - Linternaute.com",
+      "url": "https://www.linternaute.com/television/programme-tv/",
+      "snippet": "Retrouvez l'intégralité du programme TV du jour sur toutes les chaînes. Sélectionnez un moment de la journée pour découvrir les …"
+    },
+    {
+      "title": "rafmacalaba/gliner2-datause-v2 · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/gliner2-datause-v2",
+      "snippet": "GLiNER2 Dataset Mention Extractor Fine-tuned GLiNER2 model for extracting structured dataset mentions from research documents. Task Given a document passage, extracts: Entity fields: dataset_name, acronym, producer, geography, description, etc. Classifications: dataset_tag (named/descriptive/vague), usage_context, is_used Training Base model: fastino/gliner2-base-v1 Method: LoRA (r=16, alpha ..."
+    },
+    {
+      "title": "Programme TV ce soir : guide gratuit et complet",
+      "url": "https://tv-programme.com/",
+      "snippet": "19 hours ago · Programme TV de ce soir sur la TNT. Gratuit et complet. Replay TV : liens replay TF1, M6, W9, France 2, France 3, …"
+    }
+  ]
+}

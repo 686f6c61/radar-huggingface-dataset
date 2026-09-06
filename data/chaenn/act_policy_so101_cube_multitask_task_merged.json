@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Chaenn/act_policy_so101_cube_multitask_task_merged",
+  "slug": "chaenn-act_policy_so101_cube_multitask_task_merged",
+  "author": "Chaenn",
+  "url": "https://huggingface.co/Chaenn/act_policy_so101_cube_multitask_task_merged",
+  "created_at": "2026-09-06T18:24:04.000Z",
+  "updated_at": "2026-09-06T18:24:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Chaenn/so101_cube_multitask_task_merged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670662,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206715544,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PolyarnayaYagoda82 профиль | BongaCams",
+      "url": "https://ru4.bongacams.tv/profile/polyarnayayagoda82",
+      "snippet": "Модель PolyarnayaYagoda82: Женщины, 31, Гетеро, Тёмные, Синие глаза; знает: ukrainian, english; pussy: Волосатая ..."
+    },
+    {
+      "title": "Chaenn/act_policy_so101_cube_multitask_sim_0827 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/act_policy_so101_cube_multitask_sim_0827",
+      "snippet": "Instructions to use Chaenn/act_policy_so101_cube_multitask_sim_0827 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Модель видеочата Bongacams по имени PolyarnayaYagoda82",
+      "url": "https://ru3.bongacams.xxx/profile/polyarnayayagoda82",
+      "snippet": "Модель PolyarnayaYagoda82 из видео чата Bongacams покажет вам эксклюзивное шоу в привате. Посмотрите её профиль и …"
+    },
+    {
+      "title": "act_policy_so101_cube_multitask_realsim_0827 - Hugging Face",
+      "url": "https://huggingface.co/Chaenn/act_policy_so101_cube_multitask_realsim_0827",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "polyarnayayagoda82 Приват Записи Вебкам Чатов",
+      "url": "https://www.camshow.cc/streamer/polyarnayayagoda82",
+      "snippet": "Jun 2, 2026 · polyarnayayagoda82 Приват Записи Вебкам Чатов PolyarnayaYagoda82 Приват Записи 2026-08-26 …"
+    }
+  ]
+}

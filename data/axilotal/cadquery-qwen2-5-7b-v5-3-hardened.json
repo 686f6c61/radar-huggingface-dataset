@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Axilotal/cadquery-qwen2.5-7b-v5.3-hardened",
+  "slug": "axilotal-cadquery-qwen2-5-7b-v5-3-hardened",
+  "author": "Axilotal",
+  "url": "https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v5.3-hardened",
+  "created_at": "2026-09-06T15:19:41.000Z",
+  "updated_at": "2026-09-06T15:32:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Axilotal/cadquery-qwen2.5-7b-v5.2-hardened",
+    "base_model:finetune:Axilotal/cadquery-qwen2.5-7b-v5.2-hardened",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694319,
+  "storage_human": "15.2 GB",
+  "base_model": "Axilotal/cadquery-qwen2.5-7b-v5.2-hardened",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M7400 | Hotspot Wi-Fi 4G+ fino a 300Mbps | TP-Link Italia",
+      "url": "https://www.tp-link.com/it/home-networking/mifi/m7400/",
+      "snippet": "Grazie alla tecnologia 4G+ Cat6, il router portatile M7400 raggiunge velocità fino a 300Mbps in download e 50Mbps in upload. La …"
+    },
+    {
+      "title": "Axilotal/cadquery-qwen2.5-7b-v5 · Hugging Face",
+      "url": "https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TP-Link M7400 Saponetta WiFi con Sim 4G+ Cat6 AC1200 Batteria",
+      "url": "https://www.amazon.it/TP-Link-M7400-Saponetta-Dual-Band-Dispositivi/dp/B0FWD4HWK5",
+      "snippet": "TP-Link M7400 Saponetta WiFi con SIM 4G+, Cat6 AC1200 Dual-Band, DL 300Mbps/UL 50Mbps, Batteria da 2100mAh, Porta Type …"
+    },
+    {
+      "title": "Axilotal/cadquery-qwen2.5-7b-v5 at main - Hugging Face",
+      "url": "https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v5/tree/main",
+      "snippet": "Docker Model Runner How to use Axilotal/cadquery-qwen2.5-7b-v5 with Docker Model Runner: ... main cadquery-qwen2.5-7b-v5 15.2 GB Ctrl+K Ctrl+K 1 contributor History:9 commits Axilotal Upload config fa98784 verifiedabout 4 hours ago .gitattributes Safe 1.57 kB(Trained with Unsloth)about 4 hours ago README.md 609 BytesUnsloth Model Cardabout 4 ..."
+    },
+    {
+      "title": "Scarica per M7400 | TP-Link Italia",
+      "url": "https://www.tp-link.com/it/support/download/m7400/",
+      "snippet": "Please upgrade firmware/software from the local TP-Link official website of the purchase location for your TP-Link device, otherwise it …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Akshaykumar4321/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "akshaykumar4321-reinforce-pixelcopter-ple-v0",
+  "author": "Akshaykumar4321",
+  "url": "https://huggingface.co/Akshaykumar4321/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-09-06T13:04:01.000Z",
+  "updated_at": "2026-09-06T13:04:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40125,
+  "storage_human": "40125 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Přihlášení | Škola Online",
+      "url": "https://www.skolaonline.cz/prihlaseni/",
+      "snippet": "Kontakt Přihlášení Přihlášení Přihlášenído Školy Online Přihlášení Neplatné uživatelské jméno nebo heslo nebo váš účet byl …"
+    },
+    {
+      "title": "Adilbai/Pixelcopter-RL · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/Pixelcopter-RL",
+      "snippet": "Model Description This repository contains a trained REINFORCE (Policy Gradient) reinforcement learning agent that has learned to play Pixelcopter-PLE-v0, a challenging helicopter navigation game from the PyGame Learning Environment (PLE)."
+    },
+    {
+      "title": "Škola Online – Spolehlivý partner pro školní správu",
+      "url": "https://www.skolaonline.cz/",
+      "snippet": "Škola Online je stabilní a vždy dostupná webová aplikace pro každodenní řízení vaší školy."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=pixelcopter",
+      "snippet": "Reinforcement Learning •Updated Dec 27, 2025 metapat973/Reinforce-Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "Uživatelská příručka Školy OnLine pro pracovníky školy",
+      "url": "https://aplikace.skolaonline.cz/dokumentace/KS/zamestnanci/hmftsearch.html",
+      "snippet": "Zadejte jedno nebo více slov, která hledáte (jsou podporované zástupné znaky '*' a '?'):"
+    }
+  ]
+}

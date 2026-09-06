@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KeefeBuild/Keefe-Discere-v5.0-GodTier-Q4_K_M-GGUF",
+  "slug": "keefebuild-keefe-discere-v5-0-godtier-q4_k_m-gguf",
+  "author": "KeefeBuild",
+  "url": "https://huggingface.co/KeefeBuild/Keefe-Discere-v5.0-GodTier-Q4_K_M-GGUF",
+  "created_at": "2026-09-06T13:00:59.000Z",
+  "updated_at": "2026-09-06T13:01:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:KeefeBuild/Keefe-Discere-v5.0-GodTier",
+    "base_model:quantized:KeefeBuild/Keefe-Discere-v5.0-GodTier",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073376,
+  "storage_human": "4.7 GB",
+  "base_model": "KeefeBuild/Keefe-Discere-v5.0-GodTier",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "لوحة التحكم | منصة بلدي",
+      "url": "https://balady.gov.sa/ar/services/%D9%84%D9%88%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85",
+      "snippet": "Mar 5, 2024 · نعم، يمكن متابعة حالة الطلبات من خلال الدخول على منصة بلدي ثم الانتقال إلى \"لوحة التحكم\" المستفيد، والنقر على أيقونة \"معلومات قد تهمك\"."
+    },
+    {
+      "title": "KeefeBuild/Keefe-Discere · Hugging Face",
+      "url": "https://huggingface.co/KeefeBuild/Keefe-Discere",
+      "snippet": "Instructions to use KeefeBuild/Keefe-Discere with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use KeefeBuild/Keefe-Discere with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "فتح لوحة التحكم Control Panel على ويندوز بـ 7 طرق مختلفة",
+      "url": "https://3arrafni.com/open-the-control-panel-on-windows-10",
+      "snippet": "تعرف على جميع الطرق السهلة والسريعة لفتح لوحة التحكم Control Panel في نظام ويندوز، مع شرح مفصل لكل طريقة لتسهيل الوصول إلى إعدادات جهازك."
+    },
+    {
+      "title": "KeefeBuild (Steven Keefe) - Hugging Face",
+      "url": "https://huggingface.co/KeefeBuild",
+      "snippet": "None yet Recent Activity updateda modelabout 10 hours ago KeefeBuild/Keefe-Discere-v5.0-GodTier publisheda modelabout 10 hours ago KeefeBuild/Keefe-Discere-v5.0-GodTier updateda datasetabout 19 hours ago"
+    },
+    {
+      "title": "لوحة التحكم (ويندوز) - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D9%84%D9%88%D8%AD%D8%A9_%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85_(%D9%88%D9%8A%D9%86%D8%AF%D9%88%D8%B2)",
+      "snippet": "هذه خيارات في لوحة التحكم تعرض الأجهزة المتصلة بالكمبيوتر. إنها لا تقدم في الواقع واجهة مباشرة للتحكم في هذه الأجهزة، ولكنها تقدم المهام الأساسية مثل إجراءات الإزالة والروابط إلى المعالجات ..."
+    }
+  ]
+}

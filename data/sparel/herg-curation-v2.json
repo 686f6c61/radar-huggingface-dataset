@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sparel/herg-curation-v2",
+  "slug": "sparel-herg-curation-v2",
+  "author": "sparel",
+  "url": "https://huggingface.co/sparel/herg-curation-v2",
+  "created_at": "2026-09-06T13:17:20.000Z",
+  "updated_at": "2026-09-06T13:18:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "cheminformatics",
+    "assay-curation",
+    "herg",
+    "chembl",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80792880,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "National Nuclear Energy Commission - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/National_Nuclear_Energy_Commission",
+      "snippet": "National Nuclear Energy Commission 3 languagesAdd topic"
+    },
+    {
+      "title": "MultiEndpointTox-v2.2.0/notebooks/01_data_curation/01_herg ... - GitHub",
+      "url": "https://github.com/sharhabilMali/MultiEndpointTox-v2.2.0/blob/main/notebooks/01_data_curation/01_herg_data_curation.ipynb",
+      "snippet": "Multi-endpoint toxicity prediction platform for drug safety assessment from SMILES strings. - sharhabilMali/MultiEndpointTox-v2.2.0"
+    },
+    {
+      "title": "CNEN: Tecnologia nuclear para uma vida melhor - Comissão Nacional …",
+      "url": "https://www.gov.br/cnen/pt-br",
+      "snippet": "Oct 9, 2020 · CNEN apresenta pesquisas e experiências imersivas na ExpoT&C durante a Reunião Anual SBPC 2026 Saiba mais …"
+    },
+    {
+      "title": "HERGAI: an artificial intelligence tool for structure-based ... - Springer",
+      "url": "https://link.springer.com/article/10.1186/s13321-025-01063-8",
+      "snippet": "By estimating the model’s applicability domain and enabling more reliable prediction confidence and compound prioritization through data stratification, ISE mapping enhanced the utility of the XGB-ISE framework as a promising AI-based tool for early cardiotoxicity assessment related to drug-induced hERG inhibition."
+    },
+    {
+      "title": "Comissão Nacional de Energia Nuclear",
+      "url": "https://www.gov.br/cnen/en",
+      "snippet": "Oct 7, 2020 · Most searched terms imposto de renda assinatura mei inss Desenrola Brasil Most searched terms imposto de renda …"
+    }
+  ]
+}

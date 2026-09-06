@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "saga64/pca",
+  "slug": "saga64-pca",
+  "author": "saga64",
+  "url": "https://huggingface.co/saga64/pca",
+  "created_at": "2026-09-06T12:45:45.000Z",
+  "updated_at": "2026-09-06T12:54:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "on-device-ai",
+    "mobile",
+    "image-to-image",
+    "coreml",
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3402211450,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "saga64 (Wei Zhang) · GitHub",
+      "url": "https://github.com/saga64",
+      "snippet": "saga64 has 41 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    },
+    {
+      "title": "SAGA: A Security Architecture for Governing AI Agentic Systems",
+      "url": "https://arxiv.org/pdf/2504.21034",
+      "snippet": "A. Agentic AI Systems Agentic AI systems represent an advancement in au-tonomous systems, enabled by generative AI. These agents independently devise execution plans for tasks, leveraging their underlying models for strategic planning and reasoning."
+    },
+    {
+      "title": "Get help with Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/outlook/get-help-with-outlook-com",
+      "snippet": "For other help with your Microsoft account and subscriptions, visit Account & Billing Help. To get help and troubleshoot other …"
+    }
+  ]
+}

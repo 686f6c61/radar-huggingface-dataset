@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_50Mpt_hfinit_adamwppt_200M_s1_2026-09-06_14-57-45_438788-pt",
+  "slug": "alexkstern-nca_dose_50mpt_hfinit_adamwppt_200m_s1_2026-09-06_14-57-45_438788-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_200M_s1_2026-09-06_14-57-45_438788-pt",
+  "created_at": "2026-09-06T15:04:53.000Z",
+  "updated_at": "2026-09-06T15:05:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share200-2048",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falkland Islands - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Falkland_Islands",
+      "snippet": "Categories: Falkland Islands Disputed islands of South America Island countries Countries and territories where English is an official …"
+    },
+    {
+      "title": "alexkstern/nca_dose_50Mpt_hfinit_1B_s1_2026-08-15_01-26-21_188670-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_1B_s1_2026-08-15_01-26-21_188670-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "History of the Falkland Islands - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_the_Falkland_Islands",
+      "snippet": "1Claims of pre-Columbian discovery. 2European discovery. 3Early colonisation. 4Inter-colonial period. Toggle Inter-colonial period …"
+    },
+    {
+      "title": "alexkstern/nca_dose_50Mpt_hfinit_20M_s1_2026-08-15_00-27-50_481718-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_20M_s1_2026-08-15_00-27-50_481718-pt",
+      "snippet": "alexkstern / nca_dose_50Mpt_hfinit_20M_s1_2026-08-15_00-27-50_481718-pt like 0 nanochat nanochat_gpt pt_fineweb-nanochatbpe-100M ppt_nca-paper-share200-2048 seed_1 case_c lr_trapezoid depth_16 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new nca_dose_50Mpt_hfinit_20M_s1_2026-08-15_00-27-50_481718-pt Outcome Training config Files"
+    },
+    {
+      "title": "Visit The Falkland Islands | Falklands",
+      "url": "https://www.falklandislands.com/",
+      "snippet": "Welcome to the Falkland Islands - an incredible archipelago of stunning white sand beaches, seas of beautiful blues and sparkling …"
+    }
+  ]
+}

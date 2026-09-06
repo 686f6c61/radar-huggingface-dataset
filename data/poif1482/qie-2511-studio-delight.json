@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Poif1482/QIE-2511-Studio-DeLight",
+  "slug": "poif1482-qie-2511-studio-delight",
+  "author": "Poif1482",
+  "url": "https://huggingface.co/Poif1482/QIE-2511-Studio-DeLight",
+  "created_at": "2026-09-06T18:03:36.000Z",
+  "updated_at": "2026-09-06T18:03:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "art",
+    "Studio-DeLight",
+    "image-to-image",
+    "en",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 944468224,
+  "storage_human": "944 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Termine aus dem Breitensportkalender - RTF, CTF ...",
+      "url": "https://breitensport.rad-net.de/breitensportkalender/",
+      "snippet": "1 day ago · Alle Termine RTF, CTF, Marathon, Volksradfahren aus dem Breitensportkalender des BDR. Permanent aktualisiert und …"
+    },
+    {
+      "title": "prithivMLmods/QIE-2511-Studio-DeLight · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/QIE-2511-Studio-DeLight",
+      "snippet": "QIE-2511-Studio-DeLight QIE-2511-Studio-DeLight is an adapter LoRA developed for Qwen’s Qwen-Image-Edit-2511 image-to-image model, designed to relight images with neutral, studio-style illumination. The model removes existing lighting and replaces it with soft, evenly diffused light while preserving the original identity, composition, textures, and geometry. It ensures balanced exposure ..."
+    },
+    {
+      "title": "RTF Events in Nordrhein-Westfalen 2026 – Termine & Strecken | Rad …",
+      "url": "https://radsport-events.de/rtf-events/Nordrhein-Westfalen",
+      "snippet": "RTF-Events in Nordrhein-Westfalen 2026: alle Termine, Distanzen und Anmeldungen. Finde die passende Radveranstaltung in …"
+    },
+    {
+      "title": "QIE-2511-Studio-DeLight · Model · Inferix",
+      "url": "https://inferix.co/models/prithivMLmods/QIE-2511-Studio-DeLight",
+      "snippet": "QIE-2511-Studio-DeLight QIE-2511-Studio-DeLight is an adapter LoRA developed for Qwen’s Qwen-Image-Edit-2511 image-to-image model, designed to relight images with neutral, studio-style illumination. The model removes existing lighting and replaces it with soft, evenly diffused light while preserving the original identity, composition, textures, and geometry. It ensures balanced exposure ..."
+    },
+    {
+      "title": "Radsport Events in Nordrhein-Westfalen 2026 – RTF, Rennrad & Gravel ...",
+      "url": "https://radsport-events.de/events/bundesland/Nordrhein-Westfalen",
+      "snippet": "Auf Radsport Events findest du Radsport-Events in Nordrhein-Westfalen für 2026 – übersichtlich nach Datum, Region und Distanz …"
+    }
+  ]
+}

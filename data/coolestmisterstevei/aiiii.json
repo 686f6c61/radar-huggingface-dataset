@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Coolestmisterstevei/aiiii",
+  "slug": "coolestmisterstevei-aiiii",
+  "author": "Coolestmisterstevei",
+  "url": "https://huggingface.co/Coolestmisterstevei/aiiii",
+  "created_at": "2026-09-06T15:24:52.000Z",
+  "updated_at": "2026-09-06T15:24:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=37340fecfeeb68ba3a471820ff0e6901",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "AIIIi｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1754915852223889727",
+      "snippet": "Just created this stunning anime art with the amazing 'AIIIi' model on PixAI! Search for \"AIIIi\" on PixAI – the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "AI Chat, Reimagined–Your Words. Your World. - character.ai",
+      "url": "https://character.ai/character/VWe2R37K/aiiii-advanced-language-model",
+      "snippet": "The AIiii is an advanced AI language model designed to assist with a wide range of tasks, from answering questions and providing information to generating creative content and engaging in conversation."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "maikpaixao/pt-legal-embedding",
+  "slug": "maikpaixao-pt-legal-embedding",
+  "author": "maikpaixao",
+  "url": "https://huggingface.co/maikpaixao/pt-legal-embedding",
+  "created_at": "2026-09-06T18:35:59.000Z",
+  "updated_at": "2026-09-06T18:35:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Club Sense",
+      "url": "https://members.clubsense.nl/",
+      "snippet": "Club Sense."
+    },
+    {
+      "title": "maikpaixao (Maik Paixao) · GitHub",
+      "url": "https://github.com/maikpaixao",
+      "snippet": "Hi! I'm Maik Paixao Data & AI Specialist, MBA. Building scalable ML and AI solutions in Finance, Law and Marketing."
+    },
+    {
+      "title": "Club Sense",
+      "url": "https://members.clubsense.nl/clients/",
+      "snippet": "Club Sense ... Club Sense"
+    },
+    {
+      "title": "maikpaixao (Maik Paixao) / Repositories · GitHub",
+      "url": "https://github.com/maikpaixao?tab=repositories",
+      "snippet": "An implementation of model parallel GPT-2 and GPT-3-style models using the mesh-tensorflow library."
+    },
+    {
+      "title": "Club Sense Registratie",
+      "url": "https://register.clubsense.nl/",
+      "snippet": ""
+    }
+  ]
+}

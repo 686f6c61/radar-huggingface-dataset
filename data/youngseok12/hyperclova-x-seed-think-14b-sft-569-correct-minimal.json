@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-569-correct-minimal",
+  "slug": "youngseok12-hyperclova-x-seed-think-14b-sft-569-correct-minimal",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-569-correct-minimal",
+  "created_at": "2026-09-06T10:56:34.000Z",
+  "updated_at": "2026-09-06T10:57:38.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hyperclovax",
+    "text-generation",
+    "korean",
+    "sft",
+    "aihub",
+    "lora-merge",
+    "correct-only",
+    "conversational",
+    "custom_code",
+    "ko",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "base_model:finetune:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14748112896,
+  "parameters_human": "14.75B",
+  "storage_bytes": 29496274120,
+  "storage_human": "29.5 GB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Set Xplorer2 as default - compiled solution - zabkat support forum",
+      "url": "https://forum.zabkat.com/viewtopic.php?t=2953",
+      "snippet": "Apr 25, 2005 · Running through the answers to one of the most requested feature, I came up with a set of registrey key that helps …"
+    },
+    {
+      "title": "youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875 - Hugging Face",
+      "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875",
+      "snippet": "The full HyperCLOVA X SEED 14B Think Model License Agreement is included in LICENSE, and the required NAVER attribution is in NOTICE. Redistribution must comply with that agreement, including its prohibited-use policy and attribution requirements."
+    },
+    {
+      "title": "xplorer2 v6.2 final released - zabkat support forum",
+      "url": "https://forum.zabkat.com/viewtopic.php?t=12490",
+      "snippet": "Jun 29, 2025 · Re: xplorer2 v6.2 final released Postby nikos» Tue Jul 01, 2025 10:32 am are you starting the settings editor from …"
+    },
+    {
+      "title": "HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875 - friendli.ai",
+      "url": "https://friendli.ai/models/youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875",
+      "snippet": "Deploy HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "如何将Xplorer2 Pro设为默认的资源管理器？ - 远景论坛 - 前沿科技与 …",
+      "url": "https://bbs.pcbeta.com/viewthread-422490-1-1.html",
+      "snippet": "Mar 3, 2009 · PCEBTA社区 - 专注于Windows 11系统的安装、激活、驱动程序下载、优化教程与技术支持。获取最新的Win11更新资讯 …"
+    }
+  ]
+}

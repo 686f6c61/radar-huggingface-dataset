@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "praveena214/nppe-3",
+  "slug": "praveena214-nppe-3",
+  "author": "praveena214",
+  "url": "https://huggingface.co/praveena214/nppe-3",
+  "created_at": "2026-09-06T13:27:18.000Z",
+  "updated_at": "2026-09-06T13:27:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portugal| Squad, Fixtures & News | FIFA World Cup 2026™",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/portugal/fixtures",
+      "snippet": "Portugal | Visit FIFA.com to find the latest news, interviews, key stats, fixtures and results for the Portugal squad at FIFA World Cup …"
+    },
+    {
+      "title": "Denoising-and-4x-Super-Resolution-of-Low-Light-Images ... - GitHub",
+      "url": "https://github.com/Satvik-ai/Denoising-and-4x-Super-Resolution-of-Low-Light-Images/blob/master/21f1000344-NPPE3.ipynb",
+      "snippet": "Deep learning model capable of denoising and enhancing the resolution of low-light images. - Satvik-ai/Denoising-and-4x-Super-Resolution-of-Low-Light-Images"
+    },
+    {
+      "title": "Portugal 2026 Schedule - ESPN",
+      "url": "https://www.espn.com/soccer/team/fixtures/_/id/482/portugal",
+      "snippet": "ESPN has the full 2026 Portugal schedule. Includes date, time and tv channel information for all Portugal games."
+    },
+    {
+      "title": "TheModelEngineer/dlgenai-nppe-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/TheModelEngineer/dlgenai-nppe-dataset",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Portugal Football Team Schedule 2026: WC & Friendly Games",
+      "url": "https://www.fifaworldcupnews.com/portugal-football-team-schedule-2026/",
+      "snippet": "May 28, 2026 · Get the official Portugal football team schedule 2026. Dates for World Cup matches and friendlies. Cristiano Ronaldo …"
+    }
+  ]
+}

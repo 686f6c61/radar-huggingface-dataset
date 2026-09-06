@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "andreasmartin/apertus-1.5-8b-biomedical-ade",
+  "slug": "andreasmartin-apertus-1-5-8b-biomedical-ade",
+  "author": "andreasmartin",
+  "url": "https://huggingface.co/andreasmartin/apertus-1.5-8b-biomedical-ade",
+  "created_at": "2026-09-06T15:44:01.000Z",
+  "updated_at": "2026-09-06T15:44:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "apertus",
+    "text-generation",
+    "unsloth",
+    "lora",
+    "biomedical",
+    "adverse-drug-events",
+    "named-entity-recognition",
+    "conversational",
+    "en",
+    "dataset:mihirhirave/entity_extraction_ade_v2_with_validation",
+    "base_model:andreasmartin/apertus-v1.5-8b-text",
+    "base_model:adapter:andreasmartin/apertus-v1.5-8b-text",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "andreasmartin/apertus-v1.5-8b-text · Hugging Face",
+      "url": "https://huggingface.co/andreasmartin/apertus-v1.5-8b-text",
+      "snippet": "Apache 2.0, identical to the source model. This is a derivative work of swiss-ai/Apertus-v1.5-8B; all copyright and attribution notices of the Swiss AI Initiative are retained, and the license and usage-policy files from the source repository are included. Use of this model is subject to the Apertus 1.5 Acceptable Use Policy."
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "swiss-ai/Apertus-v1.5-8B · Hugging Face",
+      "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+      "snippet": "Model Summary Apertus 1.5 is a family of 8B and 70B parameter language models designed to advance the state of multilingual, multimodal, fully open, and transparent AI."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    }
+  ]
+}

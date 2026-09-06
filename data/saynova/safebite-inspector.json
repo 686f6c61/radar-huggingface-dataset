@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SayNoVa/safebite-inspector",
+  "slug": "saynova-safebite-inspector",
+  "author": "SayNoVa",
+  "url": "https://huggingface.co/SayNoVa/safebite-inspector",
+  "created_at": "2026-09-06T13:18:54.000Z",
+  "updated_at": "2026-09-06T13:18:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hosted Email Filter",
+      "url": "https://www.spamtitan.com/hosted-email-filter/",
+      "snippet": "Most service providers host their email filtering services in high security data centers, have SLAs in place for when outages occur, …"
+    },
+    {
+      "title": "GitHub - fantomv21/SafeBite-AI",
+      "url": "https://github.com/fantomv21/SafeBite-AI",
+      "snippet": "🛡️ SafeBite AI – Street Food Hygiene Rating System An AI-powered platform that analyzes street food stall images/videos to generate automated hygiene and food safety ratings."
+    },
+    {
+      "title": "Cloud Based Hosted Spam Filter - SpamTitan Email Security",
+      "url": "https://www.spamtitan.com/cloud-based-anti-spam-service/",
+      "snippet": "A cloud-based hosted spam filter is an email filtering solution hosted in the cloud rather than a more traditional physical appliance or …"
+    },
+    {
+      "title": "Springboard429/SafeBite_Infosys_Internship_Oct2024 - GitHub",
+      "url": "https://github.com/Springboard429/SafeBite_Infosys_Internship_Oct2024",
+      "snippet": "SafeBite is an AI-powered application designed to help individuals with food allergies make informed decisions by identifying allergens in food products. By leveraging machine learning models, SafeBite provides real-time allergen detection, ensuring safer food choices and a better quality of life for people with food sensitivities."
+    },
+    {
+      "title": "Top Email Filtering Tools to Protect Your Inbox - milesweb.com",
+      "url": "https://www.milesweb.com/blog/email-hosting/email-filtering-tools/",
+      "snippet": "May 15, 2026 · Find out the best email filtering tools that detect and stop unwanted spam to safeguard your inbox and keep it …"
+    }
+  ]
+}

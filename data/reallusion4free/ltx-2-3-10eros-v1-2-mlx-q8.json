@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "reallusion4free/ltx-2.3-10eros-v1.2-mlx-q8",
+  "slug": "reallusion4free-ltx-2-3-10eros-v1-2-mlx-q8",
+  "author": "reallusion4free",
+  "url": "https://huggingface.co/reallusion4free/ltx-2.3-10eros-v1.2-mlx-q8",
+  "created_at": "2026-09-06T18:38:27.000Z",
+  "updated_at": "2026-09-06T18:38:28.000Z",
+  "license": "ltx-2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "AudioVideo",
+    "ltx",
+    "ltx-2",
+    "text-to-video",
+    "image-to-video",
+    "video-generation",
+    "apple-silicon",
+    "quantized",
+    "int8",
+    "not-for-all-audiences",
+    "image-text-to-video",
+    "base_model:TenStrip/LTX2.3-10Eros",
+    "base_model:finetune:TenStrip/LTX2.3-10Eros",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66895842049,
+  "storage_human": "66.9 GB",
+  "base_model": "TenStrip/LTX2.3-10Eros",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "MLXBits/ltx-2.3-10eros-v1.2-mlx-q8 · Hugging Face",
+      "url": "https://huggingface.co/MLXBits/ltx-2.3-10eros-v1.2-mlx-q8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Buy and Sell in Perth, Western Australia - Facebook",
+      "url": "https://www.facebook.com/marketplace/perth/",
+      "snippet": "Shop electronics, cars, furniture, clothing, and more for sale in Perth on Facebook Marketplace. Find great deals from local sellers or …"
+    },
+    {
+      "title": "README.md · MLXBits/ltx-2.3-10eros-v1.2-dmd-mlx-q8 at main",
+      "url": "https://huggingface.co/MLXBits/ltx-2.3-10eros-v1.2-dmd-mlx-q8/blob/main/README.md",
+      "snippet": "LTX-2.3 10Eros v1.2 DMD — MLX int8 (q8) Int8 (8-bit) MLX quantization of TenStrip/LTX2.3-10Eros v1.2 with the JoyAI Echo DMD distillation baked directly into the transformer, replacing the native rank-384 distilled LoRA."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "Video Ads Ads Manager Goals Set Up a Facebook Page Build Brand Awareness Promote Your Local Business Grow Online Sales"
+    }
+  ]
+}

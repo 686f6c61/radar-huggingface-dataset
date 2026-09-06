@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kvn12/qwen3-1.7b-cs-support-gguf",
+  "slug": "kvn12-qwen3-1-7b-cs-support-gguf",
+  "author": "kvn12",
+  "url": "https://huggingface.co/kvn12/qwen3-1.7b-cs-support-gguf",
+  "created_at": "2026-09-06T13:17:17.000Z",
+  "updated_at": "2026-09-06T13:18:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "customer-support",
+    "llama.cpp",
+    "ollama",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107408608,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tablets under 20000 - Buy the best Tablets at below Rs ... - Flipkart",
+      "url": "https://www.flipkart.com/tablets/~tablets-under-rs-20000/pr?sid=tyy%2Chry",
+      "snippet": "14 hours ago · Tablets under 20000 are ideal devices that come with powerful processors to do multitasking and also has a sizeable …"
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Tablets Under Rs 20000 in India (6th September 2026) - NDTV ...",
+      "url": "https://www.gadgets360.com/tablets/tablets-under-20000",
+      "snippet": "14 hours ago · There are some great tablets that are priced under Rs. 20,000 in India, and this list shows you those models that are …"
+    },
+    {
+      "title": "geoffmunn/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/geoffmunn/Qwen3-1.7B",
+      "snippet": "The Qwen3-1.7B model is a lightweight yet capable LLM ideal for local deployment on consumer hardware. It balances speed and quality for everyday tasks like casual conversation, summarization, code snippets, and personal AI assistance — all while running fully offline."
+    },
+    {
+      "title": "Best Deal and Offers on Tablets in the UAE – Best Prices on iPads ...",
+      "url": "https://uae.sharafdg.com/c/mobiles_tablets/tablets/",
+      "snippet": "Find the best deals on the latest iPads, Samsung Galaxy Tabs, Huawei MatePad, and more at Sharaf DG. Enjoy competitive tablet …"
+    }
+  ]
+}

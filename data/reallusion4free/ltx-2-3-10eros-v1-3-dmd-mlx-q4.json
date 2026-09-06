@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "reallusion4free/ltx-2.3-10eros-v1.3-dmd-mlx-q4",
+  "slug": "reallusion4free-ltx-2-3-10eros-v1-3-dmd-mlx-q4",
+  "author": "reallusion4free",
+  "url": "https://huggingface.co/reallusion4free/ltx-2.3-10eros-v1.3-dmd-mlx-q4",
+  "created_at": "2026-09-06T18:38:46.000Z",
+  "updated_at": "2026-09-06T18:38:46.000Z",
+  "license": "ltx-2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "AudioVideo",
+    "ltx",
+    "ltx-2",
+    "text-to-video",
+    "image-to-video",
+    "video-generation",
+    "apple-silicon",
+    "quantized",
+    "int4",
+    "distilled",
+    "not-for-all-audiences",
+    "image-text-to-video",
+    "base_model:TenStrip/LTX2.3-10Eros",
+    "base_model:finetune:TenStrip/LTX2.3-10Eros",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22981312750,
+  "storage_human": "23.0 GB",
+  "base_model": "TenStrip/LTX2.3-10Eros",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/",
+      "snippet": "Sichere Kommunikation, aktuelle Nachrichten und nützliche Online-Services - alles an einem Ort. Einfach, kostenlos und zuverlässig."
+    },
+    {
+      "title": "TenStrip/LTX2.3-10Eros · Hugging Face",
+      "url": "https://huggingface.co/TenStrip/LTX2.3-10Eros",
+      "snippet": "Instructions to use TenStrip/LTX2.3-10Eros with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "WEB.DE Login - ganz einfach",
+      "url": "https://anmelden.web.de/",
+      "snippet": "WEB.DE Login: E-Mail-Adresse anmelden oder einloggen – kompakte Anleitung zum WEB.DE Login und schnelle Hilfe bei Login …"
+    },
+    {
+      "title": "MLXBits/ltx-2.3-10eros-v1.3-dmd-mlx-q8 · Hugging Face",
+      "url": "https://huggingface.co/MLXBits/ltx-2.3-10eros-v1.3-dmd-mlx-q8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Einloggen bei WEB.DE",
+      "url": "https://hilfe.web.de/account/login/index.html",
+      "snippet": "Was kann ich tun? Mein Passwort wird nicht mehr automatisch vom Browser eingefügt. Ich habe meine WEB.DE E-Mail-Adresse …"
+    }
+  ]
+}

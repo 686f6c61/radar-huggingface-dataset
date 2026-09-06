@@ -28,9 +28,9 @@
     "diffusers:LLaDAImagePipeline",
     "region:us"
   ],
-  "likes": 35,
+  "likes": 38,
   "downloads_30d": 228,
-  "trending_score": 35,
+  "trending_score": 37,
   "parameters": 6540230016,
   "parameters_human": "6.54B",
   "storage_bytes": 49300950305,

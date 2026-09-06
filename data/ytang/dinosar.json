@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "YTang/DINOSAR",
+  "slug": "ytang-dinosar",
+  "author": "YTang",
+  "url": "https://huggingface.co/YTang/DINOSAR",
+  "created_at": "2026-09-06T15:01:09.000Z",
+  "updated_at": "2026-09-06T15:12:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "dinosar",
+    "sar",
+    "remote-sensing",
+    "self-supervised-learning",
+    "feature-extraction",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 427037774,
+  "storage_human": "427 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "GitHub - adobe-research/dynasaur: Official repository for \"DynaSaur ...",
+      "url": "https://github.com/adobe-research/dynasaur",
+      "snippet": "Official repository for \"DynaSaur: Large Language Agents Beyond Predefined Actions\" - adobe-research/dynasaur"
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "制限付きモードは、YouTube で使用できるオプション設定です。この機能は、ご自身が視聴したくない、またはデバイスを使用す …"
+    },
+    {
+      "title": "This AI app can tell which dinosaur made a footprint",
+      "url": "https://www.sciencedaily.com/releases/2026/02/260201062455.htm",
+      "snippet": "Dinosaur footprints have always been mysterious, but a new AI app is cracking their secrets. DinoTracker analyzes photos of fossil tracks and predicts which dinosaur made them, with accuracy ..."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

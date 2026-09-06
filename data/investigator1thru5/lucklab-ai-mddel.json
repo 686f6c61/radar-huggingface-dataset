@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Investigator1thru5/LuckLab.ai-Mddel",
+  "slug": "investigator1thru5-lucklab-ai-mddel",
+  "author": "Investigator1thru5",
+  "url": "https://huggingface.co/Investigator1thru5/LuckLab.ai-Mddel",
+  "created_at": "2026-09-06T15:34:13.000Z",
+  "updated_at": "2026-09-06T15:34:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fenêtre aide et support qui s'ouvre seule [Résolu] - Windows 7",
+      "url": "https://forums.commentcamarche.net/forum/affich-19363587-fenetre-aide-et-support-qui-s-ouvre-seule",
+      "snippet": "Répondre (13) Partager Copier A voir également: Comment obtenir de l'aide dans windows 10 Fenetre windows- Guide Apple …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Comment désactiver l'aide de windows - Forum Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-36131014-comment-desactiver-l-aide-de-windows",
+      "snippet": "Jul 22, 2019 · A voir également: Comment obtenir de l’aide dans windows 10 Clé windows 10- Guide Fin windows 10- Guide Pilote …"
+    },
+    {
+      "title": "Luck Lab",
+      "url": "https://lucklab.ucdavis.edu/",
+      "snippet": "The Laboratory for Basic and Translational Cognitive Neuroscience is led by Steve Luck (@stevenjluck) and is a part of the UC-Davis Center for Mind & Brain and the Visual Cognition Research Group. Our research focuses on the neural and cognitive mechanisms of attention and working memory in healthy young adults and dysfunction of cognition and emotion in schizophrenia and other disorders. We ..."
+    },
+    {
+      "title": "Comment activer les touches f1.... - Forum Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-34110076-comment-activer-les-touches-f1",
+      "snippet": "Nov 20, 2016 · Bonjour Tapes par exemple icône Windows + F1 Normalement cette fonction doit t'ouvrir une page internet \"comment …"
+    }
+  ]
+}

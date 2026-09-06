@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NiuNiu0110/rst-qwen3.5-9b-tmax-sft",
+  "slug": "niuniu0110-rst-qwen3-5-9b-tmax-sft",
+  "author": "NiuNiu0110",
+  "url": "https://huggingface.co/NiuNiu0110/rst-qwen3.5-9b-tmax-sft",
+  "created_at": "2026-09-06T11:05:44.000Z",
+  "updated_at": "2026-09-06T11:08:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "terminal-agent",
+    "sft",
+    "conversational",
+    "dataset:NiuNiu0110/TMax-Agent-SFT-terminus",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319119094,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Command Prompt: Easy Steps for Windows Users - Lifewire",
+      "url": "https://www.lifewire.com/how-to-open-command-prompt-2618089",
+      "snippet": "Feb 18, 2026 · Find simple instructions to open Command Prompt across Windows versions, including Windows 11, 10, 8, and 7, for …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "Instructions to use Qwen/Qwen3.5-9B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "How to Open the Command Prompt in Windows 8, 10, and 11 - wikiHow",
+      "url": "https://www.wikihow.com/Open-the-Command-Prompt-in-Windows",
+      "snippet": "Mar 4, 2025 · You must have administrator access to run the command prompt, so you won't be able to do this on school computers …"
+    },
+    {
+      "title": "NiuNiu0110/TMax-Agent-SFT-terminus · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/NiuNiu0110/TMax-Agent-SFT-terminus",
+      "snippet": "TMax agent trajectories, rendered for Qwen3.5 thinking SFT 5,645 multi-turn terminal-agent trajectories(5,445 train / 200 holdout) with a reasoning block on every assistant turn, derived from allenai/tmax-sftand put through the same loss-mask contract and length gate as OpenThoughts-Agent-v1-SFT-terminus."
+    },
+    {
+      "title": "cmd | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmd",
+      "snippet": "May 23, 2025 · Reference article for the cmd command, which starts a new instance of the command interpreter."
+    }
+  ]
+}

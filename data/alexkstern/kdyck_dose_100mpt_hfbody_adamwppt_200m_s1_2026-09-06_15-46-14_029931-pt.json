@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_200M_s1_2026-09-06_15-46-14_029931-pt",
+  "slug": "alexkstern-kdyck_dose_100mpt_hfbody_adamwppt_200m_s1_2026-09-06_15-46-14_029931-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_200M_s1_2026-09-06_15-46-14_029931-pt",
+  "created_at": "2026-09-06T15:50:22.000Z",
+  "updated_at": "2026-09-06T15:51:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669491,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Landtagswahl Sachsen-Anhalt 2026: Umfrage, Wahlprogramme, Wahl …",
+      "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl",
+      "snippet": "1 day ago · Am 6. September 2026 wird in Sachsen-Anhalt ein neuer Landtag gewählt. Hier finden Sie aktuelle Umfragen, …"
+    },
+    {
+      "title": "kdyck_dose_100Mpt_hfbody_200M_s1_2026-08-14_21-48-49_486094-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_200M_s1_2026-08-14_21-48-49_486094-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Landtagswahl in Sachsen-Anhalt 2026 – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Landtagswahl_in_Sachsen-Anhalt_2026",
+      "snippet": "2.1Vorherige Wahl 2021. 3Parteien und Kandidaten. Unterabschnitt Parteien und Kandidaten umschalten. 3.1Spitzenkandidaten. …"
+    },
+    {
+      "title": "kdyck_dose_100Mpt_hfbody_20M_s1_2026-08-14_21-21-37_927240-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_20M_s1_2026-08-14_21-21-37_927240-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Landtagswahl Sachsen-Anhalt 2026: Nachrichten im Überblick",
+      "url": "https://www.tagesschau.de/inland/landtagswahlen/sachsen-anhalt/2026",
+      "snippet": "6. September 2026 wählt Sachsen-Anhalt einen neuen Landtag. Hier finden Sie aktuelle Nachrichten, Umfragen, Analysen und mehr."
+    }
+  ]
+}

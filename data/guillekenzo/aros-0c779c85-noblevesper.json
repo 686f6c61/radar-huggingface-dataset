@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-0c779c85-NobleVesper",
+  "slug": "guillekenzo-aros-0c779c85-noblevesper",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-0c779c85-NobleVesper",
+  "created_at": "2026-09-06T15:32:44.000Z",
+  "updated_at": "2026-09-06T15:44:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 387370392,
+  "storage_human": "387 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapchat - Say It In A Snap",
+      "url": "https://www.snapchat.com/",
+      "snippet": "Chat, send Snaps, explore Stories, and try Lenses on desktop, or download the app on mobile! See how to connect & create with …"
+    },
+    {
+      "title": "guillekenzo/aros-be5a5fe8-NobleLynx · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-be5a5fe8-NobleLynx",
+      "snippet": "Instructions to use guillekenzo/aros-be5a5fe8-NobleLynx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/models",
+      "snippet": "Text-to-Image •Updated 10 days ago•11 Previous"
+    },
+    {
+      "title": "Snapchat for Web.",
+      "url": "https://www.snapchat.com/web",
+      "snippet": "Try the new Snapchat for Web on your computer to chat, call friends, use Lenses, and more"
+    }
+  ]
+}

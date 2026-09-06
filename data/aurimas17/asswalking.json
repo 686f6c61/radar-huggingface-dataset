@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Aurimas17/asswalking",
+  "slug": "aurimas17-asswalking",
+  "author": "Aurimas17",
+  "url": "https://huggingface.co/Aurimas17/asswalking",
+  "created_at": "2026-09-06T12:59:36.000Z",
+  "updated_at": "2026-09-06T13:00:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1964092347,
+  "storage_human": "2.0 GB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Aurimas17 (Aurimas Verikas) - Hugging Face",
+      "url": "https://huggingface.co/Aurimas17",
+      "snippet": "AI updated a model about 1 month ago published a model about 1 month ago"
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "Aurimas17 (Aurimas Verikas) - Hugging Face",
+      "url": "https://huggingface.co/Aurimas17/models",
+      "snippet": "AI updated a model 11 days ago published a model 11 days ago"
+    },
+    {
+      "title": "Moviebox USB et secam | Pinnacle Studio - versions jusque S15",
+      "url": "https://www.repaire.net/forums/discussions/moviebox-usb-et-secam.84383/",
+      "snippet": "Jan 26, 2005 · La Moviebox USB a un atout de taille: elle permet normalement de capturer en Secam, et ceux qui ont essayé avec …"
+    }
+  ]
+}

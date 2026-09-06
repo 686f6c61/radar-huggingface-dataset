@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "rifailabs/shikomori-stt-multi-v2",
+  "slug": "rifailabs-shikomori-stt-multi-v2",
+  "author": "rifailabs",
+  "url": "https://huggingface.co/rifailabs/shikomori-stt-multi-v2",
+  "created_at": "2026-09-06T18:16:52.000Z",
+  "updated_at": "2026-09-06T18:34:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "rifailabs/shikomori-stt-multi · Hugging Face",
+      "url": "https://huggingface.co/rifailabs/shikomori-stt-multi",
+      "snippet": "Instructions to use rifailabs/shikomori-stt-multi with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use rifailabs/shikomori-stt-multi with Transformers:"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    },
+    {
+      "title": "rifailabs/shikomori-stt-multi · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/rifailabs/shikomori-stt-multi",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Get help with Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/outlook/get-help-with-outlook-com",
+      "snippet": "For other help with your Microsoft account and subscriptions, visit Account & Billing Help. To get help and troubleshoot other …"
+    }
+  ]
+}

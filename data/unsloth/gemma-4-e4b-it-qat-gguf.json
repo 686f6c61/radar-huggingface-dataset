@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "unsloth/gemma-4-E4B-it-qat-GGUF",
+  "slug": "unsloth-gemma-4-e4b-it-qat-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF",
+  "created_at": "2026-06-05T10:35:41.000Z",
+  "updated_at": "2026-07-17T12:37:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "unsloth",
+    "gemma",
+    "google",
+    "any-to-any",
+    "base_model:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 172,
+  "downloads_30d": 623567,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 28818005568,
+  "storage_human": "28.8 GB",
+  "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more. - unslothai/unsloth"
+    },
+    {
+      "title": "unsloth/gemma-4-E4B-it-qat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF",
+      "snippet": "Instructions to use unsloth/gemma-4-E4B-it-qat-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Introducing Unsloth Studio | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/new/studio",
+      "snippet": "Run and train AI models locally with Unsloth Studio."
+    },
+    {
+      "title": "Gemma 4 QAT | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4/qat",
+      "snippet": "Run Google Gemma 4 QAT models locally, including E2B, E4B, 12B, 26B-A4B, and 31B."
+    }
+  ]
+}

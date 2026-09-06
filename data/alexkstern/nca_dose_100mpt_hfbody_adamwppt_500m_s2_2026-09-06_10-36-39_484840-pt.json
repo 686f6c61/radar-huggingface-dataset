@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_100Mpt_hfbody_adamwppt_500M_s2_2026-09-06_10-36-39_484840-pt",
+  "slug": "alexkstern-nca_dose_100mpt_hfbody_adamwppt_500m_s2_2026-09-06_10-36-39_484840-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_adamwppt_500M_s2_2026-09-06_10-36-39_484840-pt",
+  "created_at": "2026-09-06T10:44:12.000Z",
+  "updated_at": "2026-09-06T10:44:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share20-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669363,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "alexkstern/nca_dose_100Mpt_hfbody_100M_s2_2026-08-14_23-57-20_159733-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_100M_s2_2026-08-14_23-57-20_159733-pt",
+      "snippet": "alexkstern / nca_dose_100Mpt_hfbody_100M_s2_2026-08-14_23-57-20_159733-pt like 0 nanochat nanochat_gpt pt_fineweb-nanochatbpe-100M ppt_nca-paper-share20-2048 seed_2 case_c lr_trapezoid depth_16 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new nca_dose_100Mpt_hfbody_100M_s2_2026-08-14_23-57-20_159733-pt Outcome Training config Files"
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Troubleshoot problems playing videosTroubleshoot account issuesFix upload problemsGet help with the YouTube Partner …"
+    },
+    {
+      "title": "alexkstern/nca_dose_100Mpt_hfbody_1B_s1_2026-08-15_00-55-24_338967-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_1B_s1_2026-08-15_00-55-24_338967-pt",
+      "snippet": "alexkstern / nca_dose_100Mpt_hfbody_1B_s1_2026-08-15_00-55-24_338967-pt like 0 nanochat nanochat_gpt pt_fineweb-nanochatbpe-100M ppt_nca-paper-share200-2048 seed_1 case_c lr_trapezoid depth_16 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new nca_dose_100Mpt_hfbody_1B_s1_2026-08-15_00-55-24_338967-pt Outcome Training config Files"
+    },
+    {
+      "title": "YouTube Partner Program overview & eligibility - Google Help",
+      "url": "https://support.google.com/youtube/answer/72851?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "What you need to join Follow the YouTube channel monetization policies. These are a collection of policies and guidelines that allow …"
+    }
+  ]
+}

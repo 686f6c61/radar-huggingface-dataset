@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "colxi/tiny-assistant-phi4-mini-instruct-GGUF",
+  "slug": "colxi-tiny-assistant-phi4-mini-instruct-gguf",
+  "author": "colxi",
+  "url": "https://huggingface.co/colxi/tiny-assistant-phi4-mini-instruct-GGUF",
+  "created_at": "2026-09-06T13:21:09.000Z",
+  "updated_at": "2026-09-06T13:47:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "phi",
+    "phi-4-mini",
+    "conversational",
+    "text-generation",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:quantized:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 2491874272,
+  "storage_human": "2.5 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparateur de vol et Billets d’avion pas cher | LILIGO",
+      "url": "https://www.liligo.fr/",
+      "snippet": "Votre comparateur de vols pas chers LILIGO Trouvez vos billets d’avion au meilleur prix parmi des centaines de sites de voyage !"
+    },
+    {
+      "title": "microsoft/Phi-4-mini-instruct · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vol Lyon - Alger pas cher | Billets d'avion sur Liligo",
+      "url": "https://www.liligo.fr/vols/itineraires/lyon/alger",
+      "snippet": "Billet d'avion Lyon - Alger : dès 55 € A/R. Comparez toutes les compagnies et réservez votre vol pas cher avec LILIGO."
+    },
+    {
+      "title": "unsloth/Phi-4-mini-instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Phi-4-mini-instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vol pour Tunis pas cher : Comparez les Billets d’avion | Liligo",
+      "url": "https://www.liligo.fr/vols/tunisie/tunis",
+      "snippet": "Comparez les prix des vols pour Tunis et réservez votre billet d'avion pas cher au meilleur moment !"
+    }
+  ]
+}

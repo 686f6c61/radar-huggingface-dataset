@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/sqabf-grpo-vanilla-step1100",
+  "slug": "sandeep123-sqabf-grpo-vanilla-step1100",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/sqabf-grpo-vanilla-step1100",
+  "created_at": "2026-09-06T10:50:48.000Z",
+  "updated_at": "2026-09-06T10:53:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "新竹縣智慧圖資雲",
+      "url": "https://imap.hchg.gov.tw/webgis/",
+      "snippet": "請選擇您欲查詢坡度的方式 查詢中心點坡度' 查詢土地坡度分級比例' 查詢土地坡度最大值' 若您套疊坡地圖層，其顏色與坡度對照如下 …"
+    },
+    {
+      "title": "sandeep123/sqa-grpo-vanilla-step1200 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/sqa-grpo-vanilla-step1200",
+      "snippet": "sandeep123 / sqa-grpo-vanilla-step1200 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new sqa-grpo-vanilla-step1200 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on ..."
+    },
+    {
+      "title": "新竹縣政府全球資訊網-13鄉鎮市介紹",
+      "url": "https://www.hsinchu.gov.tw/cp.aspx?n=101",
+      "snippet": "芎林位於新竹縣中部，是面積最小的鄉鎮，然而山水之美與人文之盛，卻讓人無法小看；芎林在早年一鄉之內就有多達二、三十間的私 …"
+    },
+    {
+      "title": "sandeep123/sqa-grpo-vanilla-step600 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/sqa-grpo-vanilla-step600",
+      "snippet": "sandeep123 / sqa-grpo-vanilla-step600 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new sqa-grpo-vanilla-step600 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on ..."
+    },
+    {
+      "title": "Google 地圖",
+      "url": "https://www.google.com/maps/search/?map_action=map&zoom=17.5&hl=zh-TW",
+      "snippet": "地圖資料 ©2026 Google 條款 10 公里"
+    }
+  ]
+}

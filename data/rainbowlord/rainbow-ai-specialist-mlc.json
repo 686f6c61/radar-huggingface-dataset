@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RainbowLord/Rainbow-AI-Specialist-MLC",
+  "slug": "rainbowlord-rainbow-ai-specialist-mlc",
+  "author": "RainbowLord",
+  "url": "https://huggingface.co/RainbowLord/Rainbow-AI-Specialist-MLC",
+  "created_at": "2026-09-06T10:42:51.000Z",
+  "updated_at": "2026-09-06T10:57:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "trl",
+    "sft",
+    "qlora",
+    "gemma-2",
+    "custom-specialist",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:finetune:google/gemma-2-2b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Models Accuse Fashion Brand of Using AI to Recreate Them",
+      "url": "https://petapixel.com/2026/06/24/models-claim-fashion-brand-used-ai-to-create-their-doppelgangers/",
+      "snippet": "Models claim fashion retailer Rainbow Shops used AI to create lookalike images of them around the same time that their work dried up."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    },
+    {
+      "title": "Rainbowlord Rainbowlord16 - GitHub",
+      "url": "https://github.com/Rainbowlord16",
+      "snippet": "GitHub is where Rainbowlord16 builds software."
+    },
+    {
+      "title": "Get help with Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/outlook/get-help-with-outlook-com",
+      "snippet": "For other help with your Microsoft account and subscriptions, visit Account & Billing Help. To get help and troubleshoot other …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "wolfram-pro/multilingual-e5-small-coreml",
+  "slug": "wolfram-pro-multilingual-e5-small-coreml",
+  "author": "wolfram-pro",
+  "url": "https://huggingface.co/wolfram-pro/multilingual-e5-small-coreml",
+  "created_at": "2026-09-06T15:26:49.000Z",
+  "updated_at": "2026-09-06T15:27:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "coreml",
+  "languages": [
+    "ru",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "coreml",
+    "bert",
+    "sentence-embeddings",
+    "e5",
+    "feature-extraction",
+    "ru",
+    "en",
+    "multilingual",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252394802,
+  "storage_human": "252 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wolfram|Alpha: Computational Intelligence",
+      "url": "https://www.wolframalpha.com/",
+      "snippet": "Compute answers using Wolfram's breakthrough technology & knowledgebase, relied on by millions of students & professionals. For …"
+    },
+    {
+      "title": "intfloat/multilingual-e5-small · Hugging Face",
+      "url": "https://huggingface.co/intfloat/multilingual-e5-small",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wolfram: Delivering the Computational Future",
+      "url": "https://www.wolfram.com/",
+      "snippet": "The unique power of our system comes from its elegant unification of an immense range of capabilities, algorithms, models and data …"
+    },
+    {
+      "title": "README.md · tamikisg/multilingual-e5-small-coreml at main",
+      "url": "https://huggingface.co/tamikisg/multilingual-e5-small-coreml/blob/main/README.md",
+      "snippet": "Model Description Multilingual E5 Small is a multilingual sentence embedding model optimized for semantic search and retrieval tasks. This CoreML version enables on-device inference on Apple platforms."
+    },
+    {
+      "title": "Stephen Wolfram — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Stephen_Wolfram",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Stephen Wolfram 38 languesAjouter un sujet"
+    }
+  ]
+}

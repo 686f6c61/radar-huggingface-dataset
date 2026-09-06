@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "msuiche/Nanbeige4.2-3B-abliterated-cyber-GLP-44-L1-44-a2.0",
+  "slug": "msuiche-nanbeige4-2-3b-abliterated-cyber-glp-44-l1-44-a2-0",
+  "author": "msuiche",
+  "url": "https://huggingface.co/msuiche/Nanbeige4.2-3B-abliterated-cyber-GLP-44-L1-44-a2.0",
+  "created_at": "2026-09-06T12:35:59.000Z",
+  "updated_at": "2026-09-06T12:36:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "nanbeige",
+    "looped-transformer",
+    "weightless",
+    "control-vector",
+    "abliterated",
+    "uncensored",
+    "refusal-ablation",
+    "activation-steering",
+    "representation-engineering",
+    "vllm",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.2-3B",
+    "base_model:quantized:Nanbeige/Nanbeige4.2-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135168,
+  "parameters_human": "135168",
+  "storage_bytes": 1098711,
+  "storage_human": "1 MB",
+  "base_model": "Nanbeige/Nanbeige4.2-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Model",
+      "url": "https://arxiv.org/abs/2607.22083",
+      "snippet": "We present Nanbeige4.2-3B, a compact general agentic model with 3B non-embedding parameters. It delivers strong performance across code-agent, office-agent, and complex tool-use tasks while maintaining highly competitive reasoning capabilities in mathematics, coding, and science. Nanbeige4.2-3B is pretrained from scratch on 28T tokens with a Looped Transformer that reuses the layer stack to ..."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    },
+    {
+      "title": "Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Model",
+      "url": "https://arxiv.org/html/2607.22083v2",
+      "snippet": "Nanbeige4.2-3B is pretrained from scratch on 28T tokens with a Looped Transformer that reuses the layer stack to increase capacity without adding parameters. For SFT data and trajectory construction, we expand the diversity of executable environments, task assets, and agentic scaffolds through real-world deployment and large-scale synthesis."
+    },
+    {
+      "title": "Get help with Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/outlook/get-help-with-outlook-com",
+      "snippet": "For other help with your Microsoft account and subscriptions, visit Account & Billing Help. To get help and troubleshoot other …"
+    }
+  ]
+}

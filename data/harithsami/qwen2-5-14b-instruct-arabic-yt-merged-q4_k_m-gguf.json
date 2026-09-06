@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "HarithSami/qwen2.5-14b-instruct-arabic-yt-merged-Q4_K_M-GGUF",
+  "slug": "harithsami-qwen2-5-14b-instruct-arabic-yt-merged-q4_k_m-gguf",
+  "author": "HarithSami",
+  "url": "https://huggingface.co/HarithSami/qwen2.5-14b-instruct-arabic-yt-merged-Q4_K_M-GGUF",
+  "created_at": "2026-09-06T10:42:49.000Z",
+  "updated_at": "2026-09-06T10:43:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:HarithSami/qwen2.5-14b-instruct-arabic-yt-merged",
+    "base_model:quantized:HarithSami/qwen2.5-14b-instruct-arabic-yt-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8988110752,
+  "storage_human": "9.0 GB",
+  "base_model": "HarithSami/qwen2.5-14b-instruct-arabic-yt-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kostenloser KI-Bildgenerator | Craiyon",
+      "url": "https://www.craiyon.com/de",
+      "snippet": "Erstelle KI-Bilder aus Text mit Craiyon. Generiere, entdecke und bearbeite Bilder online."
+    },
+    {
+      "title": "Qwen/Qwen2.5-14B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Erstelle+ein+bild+eines+sonnenuntergangs+über+einem+weiß+getünchten …",
+      "url": "https://www.craiyon.com/en/search/erstelle%2Bein%2Bbild%2Beines%2Bsonnenuntergangs%2B%C3%BCber%2Beinem%2Bwei%C3%9F%2Bget%C3%BCnchten%2Bklippendorf%2Bam%2Bmeer%2C%2Bwarm%2Borange%E2%80%91rosa%2Bhimmel%2C%2Bkuppeln%2Bund%2Bwindm%C3%BChlen%2Bim%2Bgoldenen%2Blicht%2Bleuchtend%2C%2Bdicke%2Bstrukturierte%2Bpinselstriche%2C%2Bkr%C3%A4ftige%2B%C3%B6lfarben%2C%2Bweiche%2Batmosph%C3%A4rische%2Btiefe%2C%2Bruhige%2Bmediterrane%2Bstimmung",
+      "snippet": "Images of …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-14B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "KI-Bilderzeuger - Erstellen Sie Bilder aus Text mit 30 KI ... - Picsart",
+      "url": "https://picsart.com/de/ai-image-generator/",
+      "snippet": "Ein Text-zu-Bild-KI-Generator wandelt schriftliche Beschreibungen in Bilder um. Geben Sie einen Eingabebefehl ein, der Ihr Thema, …"
+    }
+  ]
+}

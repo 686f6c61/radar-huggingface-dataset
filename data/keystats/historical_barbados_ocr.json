@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/historical_barbados_ocr",
+  "slug": "keystats-historical_barbados_ocr",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/historical_barbados_ocr",
+  "created_at": "2026-09-06T15:53:54.000Z",
+  "updated_at": "2026-09-06T15:54:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tripa mishqui: Más allá del sabor, un alimento nutritivo",
+      "url": "https://www.extra.ec/noticia/buena-vida/tripa-mishqui-alla-sabor-alimento-nutritivo-110678.html",
+      "snippet": "Sep 3, 2024 · Uno de los principales beneficios de latripa mishqui es su alto contenido en proteínas. Las proteínas son esenciales …"
+    },
+    {
+      "title": "keystats/historical_ocr · Hugging Face",
+      "url": "https://huggingface.co/keystats/historical_ocr",
+      "snippet": "Instructions to use keystats/historical_ocr with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Tripa Mishqui en Riobamba: salud, gastronomía y beneficios",
+      "url": "https://laprensa.com.ec/tripa-mishqui-en-riobamba-salud-gastronomia-y-beneficios/",
+      "snippet": "Sep 21, 2024 · La tripa mishqui, un plato tradicional de la Sierra ecuatoriana, ha perdurado como un símbolo de la gastronomía local …"
+    },
+    {
+      "title": "keystats/barbados_handwriten_ocr_v2 · Hugging Face",
+      "url": "https://huggingface.co/keystats/barbados_handwriten_ocr_v2",
+      "snippet": "keystats / barbados_handwriten_ocr_v2 like 0 Image-Text-to-Text Transformers Safetensors qwen2_5_vl conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Tripa Mishqui - Receta Ecuatoriana",
+      "url": "https://recetasecuatorianas.tourdelviajero.com/tripa-mishqui/",
+      "snippet": "Comer Tripa Mishqui nos aporta grandes beneficios para nuestra salud. Como ya se mencionó, los órganos contienen una cantidad …"
+    }
+  ]
+}

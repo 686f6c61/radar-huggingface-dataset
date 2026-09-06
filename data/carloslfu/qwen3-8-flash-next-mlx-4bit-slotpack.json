@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "carloslfu/Qwen3.8-Flash-Next-MLX-4bit-Slotpack",
+  "slug": "carloslfu-qwen3-8-flash-next-mlx-4bit-slotpack",
+  "author": "carloslfu",
+  "url": "https://huggingface.co/carloslfu/Qwen3.8-Flash-Next-MLX-4bit-Slotpack",
+  "created_at": "2026-09-06T15:06:13.000Z",
+  "updated_at": "2026-09-06T15:36:16.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "slotstream",
+    "lossless-compression",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88294086225,
+  "storage_human": "88.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Englisch ⇔ Deutsch - leo.org: Startseite",
+      "url": "https://dict.leo.org/englisch-deutsch/",
+      "snippet": "LEO.org: Ihr Wörterbuch im Internet für ­Englisch-Deutsch­ Übersetzungen, mit Forum, Vokabeltrainer und Sprachkursen. Natürlich …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B-parameter main model, supplemented by an additional 51BN-gram embeddings, with 6Bparameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "LEOs Zusatzinformationen: сонный паралич - die Schlafparalyse",
+      "url": "https://dict.leo.org/pages/addinfo/addInfo.php?aiid=GbwVGEjaFMB&lp=rude&lang=de",
+      "snippet": "LEO.org: Ihr Wörterbuch im Internet für ­Russisch-Deutsch­ Übersetzungen, mit Forum, Vokabeltrainer und Sprachkursen. Natürlich …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next/README.md at main - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has ..."
+    },
+    {
+      "title": "Schlafparalyse - English missing: English ⇔ German Forums - leo.org",
+      "url": "https://dict.leo.org/forum/viewUnsolvedquery.php?idThread=582529",
+      "snippet": "LEO.org: Your online dictionary for ­English-German­ translations. Offering forums, vocabulary trainer and language courses. Also …"
+    }
+  ]
+}

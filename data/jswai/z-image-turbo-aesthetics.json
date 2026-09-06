@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JSWAI/Z-image-turbo-aesthetics",
+  "slug": "jswai-z-image-turbo-aesthetics",
+  "author": "JSWAI",
+  "url": "https://huggingface.co/JSWAI/Z-image-turbo-aesthetics",
+  "created_at": "2026-09-06T10:53:21.000Z",
+  "updated_at": "2026-09-06T11:01:09.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "en",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6154972672,
+  "storage_human": "6.2 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "天地图和谷歌地图、百度地图的差距在哪？ - 知乎",
+      "url": "https://www.zhihu.com/question/26231218",
+      "snippet": "Jan 23, 2015 · 天地图和谷歌地图、百度地图的差距在哪？ 为啥天地图的数据资源最好（中国范围），仍然没多少人用呢，和其他互联 …"
+    },
+    {
+      "title": "Tongyi-MAI/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "🎨 Z-Image– The foundation model behind Z-Image-Turbo. Z-Image focuses on high-quality generation, rich aesthetics, strong diversity, and controllability, well-suited for creative generation, fine-tuning, and downstream development."
+    },
+    {
+      "title": "有哪些更新较快的 卫星地图 网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/52148330/answers/updated",
+      "snippet": "Mar 24, 2026 · 有哪些更新较快的 卫星地图 网站？ OpenAI 的 Contrastive Language-I mage P再训练 （CLIP） 模型 [3]是这一领域的 …"
+    },
+    {
+      "title": "Z-Image Turbo | Free AI Image Generator in Seconds",
+      "url": "https://zimageturbo.io/en",
+      "snippet": "Generate photorealistic AI images in under a second with Z-Image Turbo, the #1 open-source image generator by Tongyi-MAI. Free to use, no sign-up required."
+    },
+    {
+      "title": "如何查看往年的卫星地图？ - 知乎",
+      "url": "https://www.zhihu.com/question/665714283",
+      "snippet": "Aug 30, 2024 · 定要看往年卫星地图的话，第一个方法，下个谷歌地球；第二个方法，打开下面链接，然后打开【多时相影像】，登录 …"
+    }
+  ]
+}

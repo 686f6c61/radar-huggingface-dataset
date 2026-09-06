@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pancodurden/Zduhac-Cyber-7B-v2",
+  "slug": "pancodurden-zduhac-cyber-7b-v2",
+  "author": "pancodurden",
+  "url": "https://huggingface.co/pancodurden/Zduhac-Cyber-7B-v2",
+  "created_at": "2026-09-06T15:46:34.000Z",
+  "updated_at": "2026-09-06T15:49:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "cybersecurity",
+    "lora",
+    "defensive-security",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43147044,
+  "storage_human": "43 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chrome Web Browser - Google Chrome",
+      "url": "https://www.google.com/chrome/index.html",
+      "snippet": "A fast, secure, and free web browser built for the modern web. Chrome syncs bookmarks across all your devices, fills out forms …"
+    },
+    {
+      "title": "pancodurden/Zduhac-Cyber-7B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/pancodurden/Zduhac-Cyber-7B-LoRA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "benchmark_report.md · pancodurden/Zduhac-Cyber-7B-LoRA at main",
+      "url": "https://huggingface.co/pancodurden/Zduhac-Cyber-7B-LoRA/blob/main/benchmark_report.md",
+      "snippet": "Benchmark Report — Zduhać Cyber 7B LoRA (EOS repair) Portfolio writeup: how a \"model that won't stop\" was diagnosed and fixed, with the numbers and charts behind the conclusion. Results are from an internal 64-prompt evaluation suite (8 defensive categories), not a public benchmark."
+    },
+    {
+      "title": "Download and install Google Chrome - Computer - Google Chrome …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can download and install the Chrome web browser at no charge, and use it to browse the web. Check system requirements to …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Monad-dz/OCRCS-qwen3vl-2b-merged",
+  "slug": "monad-dz-ocrcs-qwen3vl-2b-merged",
+  "author": "Monad-dz",
+  "url": "https://huggingface.co/Monad-dz/OCRCS-qwen3vl-2b-merged",
+  "created_at": "2026-09-06T10:54:31.000Z",
+  "updated_at": "2026-09-06T11:10:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4266562962,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instant gaming => Paiement en attente [Résolu] - Jeux vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-35956577-instant-gaming-paiement-en-attente",
+      "snippet": "Comme dit dans le titre, l'achat (Génération Zero sur PC) que je viens d'effectuer sur Instant gaming et en attente de paiement. et à …"
+    },
+    {
+      "title": "Monad-dz/qwen-ocr-lora_v3 · Hugging Face",
+      "url": "https://huggingface.co/Monad-dz/qwen-ocr-lora_v3",
+      "snippet": "Model Card for qwen-ocr-lora_v3 This model is a fine-tuned version of Qwen/Qwen3.5-0.8B-base. It has been trained using TRL."
+    },
+    {
+      "title": "Instant Gaming => Payment declined - CCM - Tech Forum",
+      "url": "https://forums.commentcamarche.net/forum/affich-36615156-instant-gaming-paiement-refuse?lang=en",
+      "snippet": "Hello, I don't know if it's my bank, but since April 6, 2020, I haven't been able to buy games on discount sites like the one I've always …"
+    },
+    {
+      "title": "GitHub - chenmaol/Qwen-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/chenmaol/Qwen-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "TVA INSTANT GAMING sur le forum Blabla 18-25 ans - 01-07-2020 …",
+      "url": "https://www.jeuxvideo.com/forums/42-51-63543670-1-0-1-0-tva-instant-gaming.htm",
+      "snippet": "Jul 1, 2020 · bonjours , depuis quand on a une taxe de tva sur instant gaming ? J'ai acheter un jeu il a quelques minutes il mon …"
+    }
+  ]
+}

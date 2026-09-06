@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "neptune-st/finbert_onnx",
+  "slug": "neptune-st-finbert_onnx",
+  "author": "neptune-st",
+  "url": "https://huggingface.co/neptune-st/finbert_onnx",
+  "created_at": "2026-09-06T13:19:03.000Z",
+  "updated_at": "2026-09-06T13:20:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110241807,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neptune (planète) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Neptune_(plan%C3%A8te)",
+      "snippet": "Neptune Orbiter New Horizons 2 Voir aussi Neptune Exploration de Neptune Les dates indiquées sont celles de lancement. Portail …"
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and ..."
+    },
+    {
+      "title": "Neptune - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neptune",
+      "snippet": "This page was last edited on 28 August 2026, at 21:59 (UTC)."
+    },
+    {
+      "title": "Xenova/finbert · Hugging Face",
+      "url": "https://huggingface.co/Xenova/finbert",
+      "snippet": "Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named onnx)."
+    },
+    {
+      "title": "La planète Neptune - CNES",
+      "url": "https://cnes.fr/dossiers/planete-neptune",
+      "snippet": "Dec 8, 2025 · Neptune est la dernière planète de notre Système solaire, située à 4,5 milliards de km de notre étoile, au-delà …"
+    }
+  ]
+}

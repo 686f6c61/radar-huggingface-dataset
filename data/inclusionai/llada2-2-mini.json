@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/LLaDA2.2-mini",
+  "slug": "inclusionai-llada2-2-mini",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/LLaDA2.2-mini",
+  "created_at": "2026-09-05T05:16:19.000Z",
+  "updated_at": "2026-09-05T05:26:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llada2_moe",
+    "text-generation",
+    "dllm",
+    "diffusion",
+    "llm",
+    "text_generation",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": 16255643392,
+  "parameters_human": "16.26B",
+  "storage_bytes": 32513122272,
+  "storage_human": "32.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Georgia - Unique Country in Europe | Georgia Travel",
+      "url": "https://georgia.travel/",
+      "snippet": "Feel the thrill of an adventure in Georgia. From skiing in the mysterious mountains of Bakuriani to rafting down the Aragvi River or …"
+    },
+    {
+      "title": "inclusionAI/LLaDA2.2-mini · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/LLaDA2.2-mini",
+      "snippet": "Instructions to use inclusionAI/LLaDA2.2-mini with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "50 Places to Visit in Georgia: A Guide to Every Region",
+      "url": "https://wander-lush.org/best-unique-places-to-visit-in-georgia-country/",
+      "snippet": "Jul 17, 2026 · This guide brings together 50 places to visit in Georgia – from essential cities and classic highlights to quieter towns, …"
+    },
+    {
+      "title": "inclusionAI/LLaDA2.0-mini · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/LLaDA2.0-mini",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "THE 15 BEST Things to Do in Georgia (2026) - Must-See Attractions",
+      "url": "https://www.tripadvisor.com/Attractions-g294194-Activities-Georgia.html",
+      "snippet": "Things to Do in Georgia, Europe: See Tripadvisor's 412,611 traveler reviews and photos of Georgia tourist attractions. Find what to do …"
+    }
+  ]
+}

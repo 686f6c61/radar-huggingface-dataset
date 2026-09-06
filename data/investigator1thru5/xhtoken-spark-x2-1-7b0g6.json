@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Investigator1thru5/XHToken-Spark-X2-1.7B0G6",
+  "slug": "investigator1thru5-xhtoken-spark-x2-1-7b0g6",
+  "author": "Investigator1thru5",
+  "url": "https://huggingface.co/Investigator1thru5/XHToken-Spark-X2-1.7B0G6",
+  "created_at": "2026-09-06T15:37:06.000Z",
+  "updated_at": "2026-09-06T15:37:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cafe Flora | Vegetarian Restaurant Seattle - Brunch, Lunch, Dinner",
+      "url": "https://florarestaurantgroup.com/restaurant/cafe-flora-seattle/",
+      "snippet": "Cafe Flora has been serving Seattle since 1991 — over 30 years. It’s one of the city’s longest-running vegetarian restaurants and a …"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "Cafe Flora, Floret, Flora Bakehouse | Seattle Vegetarian Restaurants",
+      "url": "https://florarestaurantgroup.com/",
+      "snippet": "A cozy cafe and bakery bringing seasonally inspired pastries, breads, sandwiches and a full menu of inventive Stumptown espresso …"
+    },
+    {
+      "title": "SparkLLM · GitHub",
+      "url": "https://github.com/XHToken",
+      "snippet": "People Pinned Loading Spark-X2.5Spark-X2.5Public Spark-x2.5 open model series. 152 18 communitycommunityPublic Welcome to XHToken AI opensource community Makefile7"
+    },
+    {
+      "title": "CAFE FLORA, Seattle - Broadway / Capitol Hill - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g60878-d432891-Reviews-Cafe_Flora-Seattle_Washington.html",
+      "snippet": "Cafe Flora, Seattle: See 390 unbiased reviews of Cafe Flora, rated 4.3 of 5 on Tripadvisor and ranked #109 of 2,543 restaurants in …"
+    }
+  ]
+}

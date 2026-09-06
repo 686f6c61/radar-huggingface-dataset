@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSD1231/MyAwesomeModel-TestRepository",
+  "slug": "dsd1231-myawesomemodel-testrepository",
+  "author": "DSD1231",
+  "url": "https://huggingface.co/DSD1231/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-06T13:32:52.000Z",
+  "updated_at": "2026-09-06T13:32:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "جیهانی سینەما بە کوردی Official: Instagram, X, Facebook | Linktree",
+      "url": "https://linktr.ee/The.world.of.cinema.in.Kurdish",
+      "snippet": "Beenama - بینەما Kurdcinama - کوردسینەما beenar - بینەر Kurd Subtitle - ژێرنوسی کورد Shafilm - سۆرانی KurdFilm | کوردفیلم awenafilm | ژێرنووسی کوردی"
+    },
+    {
+      "title": "DSD1231/my-awesome-model-best · Hugging Face",
+      "url": "https://huggingface.co/DSD1231/my-awesome-model-best",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "Beenar — بینەر",
+      "url": "https://beenar.net/",
+      "snippet": "بینەر — سەیرکردنی فیلم و زنجیرە بە کوردی."
+    },
+    {
+      "title": "DSD1W3123/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/DSD1W3123/MyAwesomeModel-TestRepository",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "KurdSubtitle | As Sulaymaniyah - Facebook",
+      "url": "https://www.facebook.com/kurdsubtitle.official/",
+      "snippet": "ئێستا تایبەتمەندی سەیرکردنی فیلم و زنجیرەکان لە وێبسایتی کوردسەبتایتڵ بە خۆڕایی بەردەستە."
+    }
+  ]
+}

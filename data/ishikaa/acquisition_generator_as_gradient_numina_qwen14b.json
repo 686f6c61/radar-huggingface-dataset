@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_gradient_numina_qwen14b",
+  "slug": "ishikaa-acquisition_generator_as_gradient_numina_qwen14b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_gradient_numina_qwen14b",
+  "created_at": "2026-09-06T15:04:45.000Z",
+  "updated_at": "2026-09-06T15:09:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 59091622760,
+  "storage_human": "59.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch",
+      "url": "http://de.twitch.tv/",
+      "snippet": ""
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_gradient_numina_llama8b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_gradient_numina_llama8b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_gradient_numina_llama8b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/?lang=de-DE",
+      "snippet": "Twitch ist ein interaktiver Livestreaming-Dienst für eine große Bandbreite an Inhalten wie Games, Entertainment, Sport, Musik und …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_gradient_numina_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_gradient_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_gradient_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.com/login",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

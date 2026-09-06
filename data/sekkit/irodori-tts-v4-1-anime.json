@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sekkit/Irodori-TTS-v4.1-Anime",
+  "slug": "sekkit-irodori-tts-v4-1-anime",
+  "author": "sekkit",
+  "url": "https://huggingface.co/sekkit/Irodori-TTS-v4.1-Anime",
+  "created_at": "2026-09-06T18:20:52.000Z",
+  "updated_at": "2026-09-06T18:20:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "base_model:Aratako/Irodori-TTS-v4.1-Small",
+    "base_model:finetune:Aratako/Irodori-TTS-v4.1-Small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 766052385,
+  "parameters_human": "766.1M",
+  "storage_bytes": 7610645518,
+  "storage_human": "7.6 GB",
+  "base_model": "Aratako/Irodori-TTS-v4.1-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die besten Lesben Sexvideos kostenlos - Lesbensex in HD",
+      "url": "https://www.lesben-pornos.co/",
+      "snippet": "Deine Lesbentube auf der du die besten Lesben Pornos kostenlos sehen kannst. Geile Lesben beim Lesbensex! Täglich neue …"
+    },
+    {
+      "title": "phasefield-audio/Irodori-TTS-v4.1-Anime · Hugging Face",
+      "url": "https://huggingface.co/phasefield-audio/Irodori-TTS-v4.1-Anime",
+      "snippet": "Irodori-TTS-v4.1-Anime A Japanese text-to-speech model fine-tuned from Aratako/Irodori-TTS-v4.1-Smallusing anime-style speech data. The base model's annotation pipeline is not publicly documented, so the fine-tuning data was annotated independently. Consequently, caption conditioning and emoji controls may behave differently from the base model. Checkpoints"
+    },
+    {
+      "title": "Lesbian Porno Videos | Pornhub.com",
+      "url": "https://de.pornhub.com/video/search?search=lesbian",
+      "snippet": "Schau' Lesbian Pornos gratis, hier auf Pornhub.com. Entdecke die immer wachsende Sammlung von hoch qualitativen Am …"
+    },
+    {
+      "title": "Aratako/Irodori-TTS-v4-Small · Hugging Face",
+      "url": "https://huggingface.co/Aratako/Irodori-TTS-v4-Small",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lesben Porno-Videos neuesten In voller Länge | xHamster",
+      "url": "https://ge.xhamster.desi/categories/lesbian/full-length/newest",
+      "snippet": "1 day ago · Erlebe neuesten in voller länge Lesben Porno-Videos von auf xHamster. Schaue alle neuesten Lesben Porno-Videos sofort!"
+    }
+  ]
+}

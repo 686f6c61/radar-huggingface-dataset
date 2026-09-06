@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "thenukegun10x/RoadRunner",
+  "slug": "thenukegun10x-roadrunner",
+  "author": "thenukegun10x",
+  "url": "https://huggingface.co/thenukegun10x/RoadRunner",
+  "created_at": "2026-09-06T15:20:55.000Z",
+  "updated_at": "2026-09-06T15:27:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "road-networks",
+    "heuristic-search",
+    "negative-results",
+    "cpu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154785,
+  "storage_human": "154785 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AirDroid Web | Manage your phone on web",
+      "url": "https://web.airdroid.com/",
+      "snippet": "Jul 24, 2020 · Your Android, on the Web. Manage and remote control your Android from a web browser, all over the air."
+    },
+    {
+      "title": "Thenukegun10x - Hugging Face",
+      "url": "https://huggingface.co/thenukegun10x/models",
+      "snippet": "AI & ML interests ... Recent Activity ... Organizations thenukegun10x 's models 1 Sort: Recently updated"
+    },
+    {
+      "title": "thenukegun10x/TinyFox-2.0 · Hugging Face",
+      "url": "https://huggingface.co/thenukegun10x/TinyFox-2.0",
+      "snippet": "Releasing an edge AI model trained from heterogeneous wildlife datasets and modern vision frameworks involves multiple legal and intellectual property factors. TinyFox-2 is released under the GNU Affero General Public License v3.0 (AGPL-3.0) with full upstream attribution."
+    },
+    {
+      "title": "Thenukegun10x - Repositories - GitHub",
+      "url": "https://github.com/Thenukegun10x?tab=repositories",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Thenukegun10x - GitHub",
+      "url": "https://github.com/Thenukegun10x",
+      "snippet": "Contribution activity January 2026 Thenukegun10x has no activity yet for this period."
+    }
+  ]
+}

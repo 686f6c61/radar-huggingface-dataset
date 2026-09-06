@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dfdfdg5667/my-awesome-model-best",
+  "slug": "dfdfdg5667-my-awesome-model-best",
+  "author": "dfdfdg5667",
+  "url": "https://huggingface.co/dfdfdg5667/my-awesome-model-best",
+  "created_at": "2026-09-06T12:43:45.000Z",
+  "updated_at": "2026-09-06T13:08:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Teams Do: Exploring Volunteer Content Moderation Team Labor …",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/20563051231186109",
+      "snippet": "Jul 19, 2023 · Social media sites such as Facebook depend on tens of millions of volunteer moderators across the globe to facilitate …"
+    },
+    {
+      "title": "dfdfdg5667/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/dfdfdg5667/MyAwesomeModel-TestRepo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Guidelines for Facebook Administrators and Moderators",
+      "url": "https://www.widowedandyoung.org.uk/application/files/2116/9159/0540/Volunteer_Guidelines_for_Facebook_Administrators_and_Moderators_v1.pdf",
+      "snippet": "Admins /Moderators Are appointed by WAY and named in the ‘Members’ section of the main WAY Facebook Group. The Admin team …"
+    },
+    {
+      "title": "sdsffs5/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/sdsffs5/MyAwesomeModel",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Main WAY Facebook Moderator Volunteer Role Description",
+      "url": "https://www.widowedandyoung.org.uk/application/files/9716/9158/7598/Facebook_Moderator_Role_Description_NB.pdf",
+      "snippet": "No fixed term This is an ideal role for a WAY member who uses Facebook and knows the charity well. A Facebook Subgroup …"
+    }
+  ]
+}

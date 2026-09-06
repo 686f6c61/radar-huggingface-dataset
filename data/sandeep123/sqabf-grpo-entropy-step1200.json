@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/sqabf-grpo-entropy-step1200",
+  "slug": "sandeep123-sqabf-grpo-entropy-step1200",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/sqabf-grpo-entropy-step1200",
+  "created_at": "2026-09-06T11:03:36.000Z",
+  "updated_at": "2026-09-06T11:09:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moved Permanently",
+      "url": "https://mail.google.com/",
+      "snippet": "Moved Permanently Moved Permanently The document has moved here."
+    },
+    {
+      "title": "sandeep123/sqa-grpo-entropy-step500 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/sqa-grpo-entropy-step500",
+      "snippet": "Adds -entropy_coeff*H to the policy loss with entropy_coeff=1e-3, masked to response tokens. Larger values are unstable for this model: 1e-2 drove entropy to 94% of ln|V| and collapsed the policy."
+    },
+    {
+      "title": "sandeep123/math-grpo-entropy-step1100 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/math-grpo-entropy-step1100",
+      "snippet": "sandeep123 / math-grpo-entropy-step1100 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new math-grpo-entropy-step1100 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "[2601.00423] E-GRPO: High Entropy Steps Drive Effective Reinforcement ...",
+      "url": "https://arxiv.org/abs/2601.00423",
+      "snippet": "We observe that the high entropy steps enable more efficient and effective exploration while the low entropy steps result in undistinguished roll-outs. To this end, we propose E-GRPO, an entropy aware Group Relative Policy Optimization to increase the entropy of SDE sampling steps."
+    }
+  ]
+}

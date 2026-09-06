@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Anurag-2608/finance-bpe-custom",
+  "slug": "anurag-2608-finance-bpe-custom",
+  "author": "Anurag-2608",
+  "url": "https://huggingface.co/Anurag-2608/finance-bpe-custom",
+  "created_at": "2026-09-06T18:06:51.000Z",
+  "updated_at": "2026-09-06T18:06:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Steam",
+      "url": "https://store.steampowered.com/",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "Anurag2608 (Anurag Kanamaluru) - Hugging Face",
+      "url": "https://huggingface.co/Anurag2608",
+      "snippet": "User profile of Anurag Kanamaluru on Hugging Face"
+    },
+    {
+      "title": "Games",
+      "url": "https://store.steampowered.com/games/",
+      "snippet": "Discover and buy thousands of games on Steam, the ultimate online game platform."
+    },
+    {
+      "title": "What's New in SAP Business AI for SAP S/4HANA Clou... - SAP Community",
+      "url": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/what-s-new-in-sap-business-ai-for-sap-s-4hana-cloud-public-edition-2608/ba-p/14434537",
+      "snippet": "The SAP S/4HANA Cloud Public Edition 2608 release marks another important step in SAP's journey toward the Autonomous Enterprise. As SAP Business AI continues to evolve, it's no longer just about automating individual tasks. Instead, AI is becoming a trusted collaborator, handling repetitive work, s..."
+    },
+    {
+      "title": "Steam, The Ultimate Online Game Platform",
+      "url": "https://store.steampowered.com/about/download",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    }
+  ]
+}

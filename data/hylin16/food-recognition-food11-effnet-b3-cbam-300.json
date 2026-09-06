@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hylin16/food-recognition-food11-effnet-b3-cbam-300",
+  "slug": "hylin16-food-recognition-food11-effnet-b3-cbam-300",
+  "author": "hylin16",
+  "url": "https://huggingface.co/hylin16/food-recognition-food11-effnet-b3-cbam-300",
+  "created_at": "2026-09-06T15:00:56.000Z",
+  "updated_at": "2026-09-06T15:01:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "food",
+    "cbam",
+    "attention",
+    "food-11",
+    "arxiv:1807.06521",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44556520,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Food-11",
+      "metric": "Top-1 accuracy",
+      "value": 0.9515151515151515
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Food-11",
+      "metric": "Macro F1",
+      "value": 0.9505771768051644
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vanguard PRIMECAP Adm (VPMAX) Stock Price, News, Quote",
+      "url": "https://finance.yahoo.com/quote/VPMAX/",
+      "snippet": "Find the latest Vanguard PRIMECAP Adm (VPMAX) stock quote, history, news and other vital information to help you with your stock …"
+    },
+    {
+      "title": "GitHub - lannguyen0910/food-recognition: Food analysis baseline ...",
+      "url": "https://github.com/lannguyen0910/food-recognition",
+      "snippet": "Update Theseustemplate, currently supports food detection, food classification, multi-class food semantic segmentationonly on images. For this version, we introduce Theseus, which is just a part of Theseus template. Moreover, we omitted some weak or unnecessary features to make the project more robust."
+    },
+    {
+      "title": "Vanguard PRIMECAP Adm (VPMAX) 股價、新聞、報價和記錄 - Yahoo",
+      "url": "https://hk.finance.yahoo.com/quote/VPMAX/",
+      "snippet": "查看最新的Vanguard PRIMECAP Adm (VPMAX) 股票報價、記錄、新聞及其他重要資訊，助你賣買股票及投資。"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Vanguard PRIMECAP Adm (VPMAX) - Yahoo Finance",
+      "url": "https://fr.finance.yahoo.com/quote/VPMAX/history/",
+      "snippet": "Sep 6, 2025 · Découvrez les prix historiques des capital-actions VPMAX sur Yahoo Finance. Consultez le format journalier, …"
+    }
+  ]
+}

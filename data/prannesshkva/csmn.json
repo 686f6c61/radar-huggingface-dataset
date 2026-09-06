@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/CSMN",
+  "slug": "prannesshkva-csmn",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/CSMN",
+  "created_at": "2026-09-06T10:46:58.000Z",
+  "updated_at": "2026-09-06T10:46:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "csmn_lm",
+    "clifford-algebra",
+    "geometric-algebra",
+    "state-space-models",
+    "nlp",
+    "conversational",
+    "text-generation",
+    "transformer-alternative",
+    "license:cc-by-nc-nd-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google scholar - 知乎",
+      "url": "https://www.zhihu.com/topic/19653450/hot",
+      "snippet": "Google Scholar（谷歌学术搜索）是一个可以免费搜索学术文章的网络搜索引擎，由计算机专家Anurag Acharya开发。2004年11 …"
+    },
+    {
+      "title": "Prannesshkva/Ael-504M · Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/Ael-504M",
+      "snippet": "Prannesshkva / Ael-504M like 0 Text Generation Transformers Safetensors PyTorch English ael mamba2 state-space-models Mixture of Experts multimodal edge-ai any-to-any conversational custom_code License:bsl-1.1 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "请问 iOS 下有什么比较好的学术 App? - 知乎",
+      "url": "https://www.zhihu.com/question/20521485",
+      "snippet": "iOS 上有什么比较好用的学术方面的app么，我已经使用了papers,觉得用来归档已有的论文很好，但用来获取新…"
+    },
+    {
+      "title": "Prannessh KVA prannesshkva - GitHub",
+      "url": "https://github.com/prannesshkva",
+      "snippet": "Highly driven AI and Software Engineering student with proven expertise bridging Data Science, Backend Infrastructure, and Distributed Systems. - prannesshkva"
+    },
+    {
+      "title": "統計調査の母集団1億3千万人に対する実施対象は1,500人という定",
+      "url": "https://q.hatena.ne.jp/1443956499",
+      "snippet": "Oct 4, 2015 · どのサイトにも明確な出典は記載されていませんでしたが、Google Scholarでいくつか論文を当たってみると、ウィリ …"
+    }
+  ]
+}

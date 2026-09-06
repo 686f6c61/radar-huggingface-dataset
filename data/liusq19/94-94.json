@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "liusq19/94.94",
+  "slug": "liusq19-94-94",
+  "author": "liusq19",
+  "url": "https://huggingface.co/liusq19/94.94",
+  "created_at": "2026-09-06T15:47:14.000Z",
+  "updated_at": "2026-09-06T15:47:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2393667,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JYSK | Mobilier pentru casa ta – Întotdeauna o ofertă excelentă",
+      "url": "https://jysk.ro/",
+      "snippet": "Primești materiale de marketing de la JYSK, inclusiv știri, concursuri, inspirație și oferte cu conținut personalizat bazat pe datele tale …"
+    },
+    {
+      "title": "liusq19 (liushiqi) - Hugging Face",
+      "url": "https://huggingface.co/liusq19",
+      "snippet": "models 1 liusq19/ddpm-celebahq-finetuned-butterflies-2epochs Updated about 4 hours ago"
+    },
+    {
+      "title": "Promoții: reduceri de până la 70% | JYSK",
+      "url": "https://jysk.ro/promotii",
+      "snippet": "Vezi ofertele noastre la mobilier de interior și de grădină, perne, produse pentru baie și decorațiuni. Cumpara online pe JYSK.ro"
+    },
+    {
+      "title": "liusq19/94.95 · Hugging Face",
+      "url": "https://huggingface.co/liusq19/94.95",
+      "snippet": "liusq19 / 94.95 like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "JYSK",
+      "url": "https://jysk.com/",
+      "snippet": "JYSK is an international home furnishing retailer with Scandinavian roots that makes it easy to furnish every room in any home and …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Keretos1/egx-decision-orpo-balanced",
+  "slug": "keretos1-egx-decision-orpo-balanced",
+  "author": "Keretos1",
+  "url": "https://huggingface.co/Keretos1/egx-decision-orpo-balanced",
+  "created_at": "2026-09-06T11:05:51.000Z",
+  "updated_at": "2026-09-06T11:06:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160134668,
+  "storage_human": "160 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/;anything",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Google Översätt - Google Translate",
+      "url": "https://translate.google.com/?hl=sv",
+      "snippet": "Med Googles kostnadsfria tjänst kan du översätta ord, fraser och webbsidor från engelska till fler än 100 andra språk direkt."
+    },
+    {
+      "title": "Keretos1/egx-decision-sft-lora at main - Hugging Face",
+      "url": "https://huggingface.co/Keretos1/egx-decision-sft-lora/tree/main",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use Keretos1/egx-decision-sft-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Keretos1/egx-decision-sft-lora with PEFT:"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Detect language→ English Google home"
+    }
+  ]
+}

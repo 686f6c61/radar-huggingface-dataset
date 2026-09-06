@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "mradermacher/BlueBerry-3-GGUF",
+  "slug": "mradermacher-blueberry-3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BlueBerry-3-GGUF",
+  "created_at": "2026-09-06T12:39:05.000Z",
+  "updated_at": "2026-09-06T14:33:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en",
+    "ar",
+    "fr",
+    "de",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mixture-of-experts",
+    "mxfp4",
+    "text-generation",
+    "pytorch",
+    "jax",
+    "tf",
+    "fa",
+    "en",
+    "ar",
+    "fr",
+    "de",
+    "es",
+    "base_model:artindnr/BlueBerry-3",
+    "base_model:quantized:artindnr/BlueBerry-3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116829156672,
+  "parameters_human": "116.83B",
+  "storage_bytes": 694547984736,
+  "storage_human": "694.5 GB",
+  "base_model": "artindnr/BlueBerry-3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Supercenter in Redmond, OR | Grocery, Electronics, Toys ...",
+      "url": "https://www.walmart.com/store/2243-redmond-or",
+      "snippet": "Get Walmart hours, driving directions and check out weekly specials at your Redmond in Redmond, OR. Get Redmond store hours …"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Tire Shop at Redmond Supercenter - Walmart.com",
+      "url": "https://www.walmart.com/store/2243-redmond-or/tire-shop",
+      "snippet": "When they get worn out and it's time to replace them, you can find a wide variety of all-season, winter, all-terrain, and mud-terrain …"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher's top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Walmart Redmond Supercenter - 300 Nw Oaktree Ln, Oregon - MyStore411",
+      "url": "https://mystore411.com/store/view/3726/Walmart-Redmond",
+      "snippet": "Redmond Supercenter - 300 Nw Oaktree Ln in Oregon 97756: store location & hours, services, holiday hours, map, driving directions …"
+    }
+  ]
+}

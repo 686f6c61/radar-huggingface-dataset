@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-NVFP4-GGUF",
+  "slug": "luffythefox-qwen3-8-27b-uncensored-genesis-nvfp4-gguf",
+  "author": "LuffyTheFox",
+  "url": "https://huggingface.co/LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-NVFP4-GGUF",
+  "created_at": "2026-09-06T10:41:47.000Z",
+  "updated_at": "2026-09-06T10:45:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "uncensored",
+    "qwen3.8",
+    "gguf",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "genesis",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "base_model:finetune:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Qwen3.6-27B-Uncensored-Genesis-MTP-GGUF - Hugging Face",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-27B-Uncensored-Genesis-MTP-GGUF",
+      "snippet": "Base model Qwen/Qwen3.6-27B Quantized HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive Quantized (8) this model"
+    },
+    {
+      "title": "Chaîne Equidia Life - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/TV-par-Satellite/Cha%C3%AEne-Equidia-Life/td-p/804322",
+      "snippet": "Dec 11, 2015 · Je n'ai plus accès à la chaîne equidia Life alors que j'y avais encore accès hier soir. Il m'est dit que cette chaîne ne fait …"
+    },
+    {
+      "title": "LuffyTheFox (Alexey Zakharchenko) - Hugging Face",
+      "url": "https://huggingface.co/LuffyTheFox/models",
+      "snippet": "LLM stability debugging on GGUF binary level"
+    },
+    {
+      "title": "Equidia live - Box et Streaming vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-31196381-equidia-live",
+      "snippet": "Dec 13, 2014 · Equidia live billionel - Modifié le 13 déc. 2014 à 12:20 Utilisateur anonyme - 13 déc. 2014 à 12:27 comment regarder …"
+    }
+  ]
+}

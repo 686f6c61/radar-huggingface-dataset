@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/mathbf-grpo-temp12-step1200",
+  "slug": "sandeep123-mathbf-grpo-temp12-step1200",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/mathbf-grpo-temp12-step1200",
+  "created_at": "2026-09-06T10:43:17.000Z",
+  "updated_at": "2026-09-06T10:46:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elsevier | A global leader for advanced information and decision ...",
+      "url": "https://www.elsevier.com/",
+      "snippet": "Elsevier provides advanced information and decision support to accelerate progress in science and healthcare worldwide."
+    },
+    {
+      "title": "sandeep123/math-grpo-temp12-step200 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/math-grpo-temp12-step200",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Journal Finder",
+      "url": "https://journalfinder.elsevier.com/",
+      "snippet": "Journal Finder ... Journal Finder"
+    },
+    {
+      "title": "sandeep123/math-grpo-temp12-step200 at main - Hugging Face",
+      "url": "https://huggingface.co/sandeep123/math-grpo-temp12-step200/tree/main",
+      "snippet": "like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main math-grpo-temp12-step200 7.12 GB Ctrl+K Ctrl+K 1 contributor History:2 commits sandeep123 math_grpo_temp12 step 200 | pass@1 0.7721 pass@6 0.9414 | best pass@1 a450de7 verifiedabout 22 hours ago .gitattributes Safe 1.57 kBmath_grpo ..."
+    },
+    {
+      "title": "Elsevier | 信息分析业务",
+      "url": "https://www.elsevier.com/zh-cn",
+      "snippet": "如果大学能够将地方挑战转化为全球变革，会怎样？ 在爱思唯尔工作，帮助人类进步 加入爱思唯尔，在工作中茁壮成长，您的工作与 …"
+    }
+  ]
+}

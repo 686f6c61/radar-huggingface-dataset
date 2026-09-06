@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kayraharika/HiDream-O1-Image",
+  "slug": "kayraharika-hidream-o1-image",
+  "author": "kayraharika",
+  "url": "https://huggingface.co/kayraharika/HiDream-O1-Image",
+  "created_at": "2026-09-06T15:28:22.000Z",
+  "updated_at": "2026-09-06T15:28:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-image",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "image-text-to-image",
+    "arxiv:2605.11061",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8804887792,
+  "parameters_human": "8.80B",
+  "storage_bytes": 35235385853,
+  "storage_human": "35.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SorozatBarát",
+      "url": "https://forum.sorozatbarat.club/",
+      "snippet": "Úgy tűnik, új vagy itt. Kattints az egyik gombra, a belépéshez!"
+    },
+    {
+      "title": "GitHub - HiDream-ai/HiDream-O1-Image",
+      "url": "https://github.com/HiDream-ai/HiDream-O1-Image",
+      "snippet": "HiDream-O1-Image is a natively unified image generative foundation model built on a Pixel-level Unified Transformer (UiT) without external VAEs or disjoint text encoders, which natively encodes raw pixels, text, and task-specific conditions in a single shared token space — supporting text-to-image, image editing, and subject-driven personalization at up to 2,048 × 2,048."
+    },
+    {
+      "title": "HiDream-ai/HiDream-O1-Image · Hugging Face",
+      "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
+      "snippet": "HiDream-O1-Image is a natively unified image generative foundation model built on a Pixel-level Unified Transformer (UiT) without external VAEs or disjoint text encoders, which natively encodes raw pixels, text, and task-specific conditions in a single shared token space — supporting text-to-image, image editing, and subject-driven personalization at up to 2,048 × 2,048."
+    },
+    {
+      "title": "HiDream-O1-Image: Open-Source Unified Image Generation Foundation Model ...",
+      "url": "https://hidream.ai/",
+      "snippet": "HiDream-O1-Image is an open-source, natively unified image generation foundation model — a pixel-level Unified Transformer for text-to-image, instruction editing, and subject-driven personalization. An 8B checkpoint reaches parity with models several times larger; MIT licensed."
+    },
+    {
+      "title": "README.md · HiDream-ai/HiDream-O1-Image-Dev at main",
+      "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev/blob/main/README.md",
+      "snippet": "HiDream-O1-Image is a natively unified image generative foundation model built on a Pixel-level Unified Transformer (UiT) without external VAEs or disjoint text encoders, which natively encodes raw pixels, text, and task-specific conditions in a single shared token space — supporting text-to-image, image editing, and subject-driven ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jonwagner/deep-lamella-masking",
+  "slug": "jonwagner-deep-lamella-masking",
+  "author": "Jonwagner",
+  "url": "https://huggingface.co/Jonwagner/deep-lamella-masking",
+  "created_at": "2026-09-06T12:54:26.000Z",
+  "updated_at": "2026-09-06T13:02:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cryo-electron-tomography",
+    "3d-segmentation",
+    "pytorch",
+    "unet",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154493036,
+  "storage_human": "154 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regionalliga Südwest Live-Ticker, Fussball Deutschland - LiveTicker.com",
+      "url": "https://www.liveticker.com/fussball/deutschland/regionalliga-sudwest/",
+      "snippet": "Liveticker.com: Regionalliga Südwest 2026/2027 Live-Ticker. Live Ergebnisse, Endresultate, Regionalliga Südwest Zwischenstände …"
+    },
+    {
+      "title": "DARKTABLE AI Masking - Which model is the best?",
+      "url": "https://www.youtube.com/watch?v=XGR5cZjftRA",
+      "snippet": "Darktable 5.6 finally has AI masking built in — but which model should you actually use? I tested them head-to-head on two images, same click coordinates, same crops, so you can see exactly ..."
+    },
+    {
+      "title": "LiveTicker.com: Regionalliga Südwest 2026/2027 Resultate. Fussball ...",
+      "url": "https://www.liveticker.com/fussball/deutschland/regionalliga-sudwest/ergebnisse/",
+      "snippet": "Regionalliga Südwest 2026/2027: Finde hier alle Regionalliga Südwest 2026/2027 Resultate, Live Ergebnisse, Spielansetzungen und …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Live-Ticker Mobile - Fussball auf LiveTicker Mobil",
+      "url": "https://m.liveticker.com/",
+      "snippet": "m.LiveTicker.com bietet live Fussball Ergebnisse - mobile Live-Ticker. Wegen technischer Gründe diese mobile Version besitzt …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "reallusion4free/10Eros_v1_Diffusers",
+  "slug": "reallusion4free-10eros_v1_diffusers",
+  "author": "reallusion4free",
+  "url": "https://huggingface.co/reallusion4free/10Eros_v1_Diffusers",
+  "created_at": "2026-09-06T18:39:16.000Z",
+  "updated_at": "2026-09-06T18:39:16.000Z",
+  "license": "ltx2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72638473682,
+  "storage_human": "72.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to update VS Code on Windows? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/60807557/how-to-update-vs-code-on-windows",
+      "snippet": "Mar 23, 2020 · I have VS Code version 1.37.1 and I want to update to the current available version 1.43. My OS is Windows 10. How …"
+    },
+    {
+      "title": "lamianlbe/10Eros_v1_Diffusers · Hugging Face",
+      "url": "https://huggingface.co/lamianlbe/10Eros_v1_Diffusers",
+      "snippet": "lamianlbe / 10Eros_v1_Diffusers like 0 Safetensors License:ltx2-community-license Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "VS Code can't find Python - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/65999975/vs-code-cant-find-python",
+      "snippet": "Feb 1, 2021 · Go to the Visual Studio Code preferences, and under interpreter, you'll find Interpreter Path, so set that to the path of …"
+    },
+    {
+      "title": "LTX 10Eros - v1.4 | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2447875/ltx23-10eros",
+      "snippet": "This model has near-0 anatomy depiction currently. It fully understands the concepts, but my new merge method is a 3 stage comparison shape-level reform lever that mostly aligns to the base 22b model instead of the usual merging methods. This is essentially an abliterated base LTX 2.3 model."
+    },
+    {
+      "title": "vs code无法启动怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/49527097",
+      "snippet": "直答 切换模式 登录/注册 Visual Studio Code vs code无法启动怎么解决？ 原来是vs code1.1的版本，更新到1.4后，加了python和go的 …"
+    }
+  ]
+}

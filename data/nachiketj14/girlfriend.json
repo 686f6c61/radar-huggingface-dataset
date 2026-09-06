@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nachiketj14/Girlfriend",
+  "slug": "nachiketj14-girlfriend",
+  "author": "nachiketj14",
+  "url": "https://huggingface.co/nachiketj14/Girlfriend",
+  "created_at": "2026-09-06T10:53:52.000Z",
+  "updated_at": "2026-09-06T11:32:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gguf",
+    "unsloth",
+    "lora",
+    "ministral",
+    "roleplay",
+    "companion",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:unsloth/Ministral-3-3B-Instruct-2512",
+    "base_model:adapter:unsloth/Ministral-3-3B-Instruct-2512",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 2331709280,
+  "storage_human": "2.3 GB",
+  "base_model": "unsloth/Ministral-3-3B-Instruct-2512",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Az alkimista és a szuz - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9009477",
+      "snippet": "Jan 23, 2002 · Fórum » Kultúra, művelődés » Kultúra » Az alkimista és a szuz Topikleírás Új hozzászólás Nyitotta: foregrower, …"
+    },
+    {
+      "title": "nachiketj14/Girlfriend · Hugging Face",
+      "url": "https://huggingface.co/nachiketj14/Girlfriend",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList",
+      "snippet": "2 days ago · Válasszon Általános társalgási fórumcsoport A Törzsasztal Iskolák, évszámok, horoszkópok Index kávéház iNteRNeTTo …"
+    },
+    {
+      "title": "nachiketj14 (Nachiket Jadhav) - Hugging Face",
+      "url": "https://huggingface.co/nachiketj14/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "Újpest FC - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9018155",
+      "snippet": "Aug 30, 2026 · Na végre, én is nyitottam egy topicot. Balázska + többiek gyertek át! Sokmindenről nem tudunk most úgysem …"
+    }
+  ]
+}

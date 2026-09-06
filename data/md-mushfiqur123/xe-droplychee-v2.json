@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "MD-Mushfiqur123/xe-droplychee-v2",
+  "slug": "md-mushfiqur123-xe-droplychee-v2",
+  "author": "MD-Mushfiqur123",
+  "url": "https://huggingface.co/MD-Mushfiqur123/xe-droplychee-v2",
+  "created_at": "2026-09-06T13:19:40.000Z",
+  "updated_at": "2026-09-06T13:20:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "xe_droplychee",
+    "text-generation",
+    "mla",
+    "moe",
+    "multi-token-prediction",
+    "grpo",
+    "reasoning",
+    "causal-lm",
+    "custom_code",
+    "bn",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MD — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/MD",
+      "snippet": "Basculer la table des matières MD"
+    },
+    {
+      "title": "droplychee (Drop Lychee) - Hugging Face",
+      "url": "https://huggingface.co/droplychee/models",
+      "snippet": "Building open multilingual AI models with a strong focus on Bangla, English, reasoning, and developer tools."
+    },
+    {
+      "title": "Markdown Viewer Online — Free MD Reader & Live Preview",
+      "url": "https://markdownviewer.org/",
+      "snippet": "Free online Markdown viewer and MD reader — live GFM preview, syntax highlighting, LaTeX math, Mermaid diagrams, and PDF …"
+    },
+    {
+      "title": "MD-Mushfiqur123/droplychee-1.1 · Hugging Face",
+      "url": "https://huggingface.co/MD-Mushfiqur123/droplychee-1.1",
+      "snippet": "MD-Mushfiqur123 / droplychee-1.1 like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Catalogues - MD Boissons",
+      "url": "https://www.mdboissons.fr/catalogues/",
+      "snippet": "Jul 1, 2026 · catalogues Votre future gamme produit est ici, faites votre choix ! nos bons plans Votre carnet de vacances préféré ! …"
+    }
+  ]
+}

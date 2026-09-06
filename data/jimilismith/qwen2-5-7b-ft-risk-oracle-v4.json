@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jimilismith/qwen2.5-7b-FT-risk-oracle-v4",
+  "slug": "jimilismith-qwen2-5-7b-ft-risk-oracle-v4",
+  "author": "jimilismith",
+  "url": "https://huggingface.co/jimilismith/qwen2.5-7b-FT-risk-oracle-v4",
+  "created_at": "2026-09-06T13:34:33.000Z",
+  "updated_at": "2026-09-06T13:34:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955358,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install & manage web apps - Chrome Web Store Help",
+      "url": "https://support.google.com/chrome_webstore/answer/1053346?hl=en",
+      "snippet": "Important:Apps in the Chrome Web Store are only supported on Chromebooks, and won't work after December 2022 on Windows, …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "Chrome Web Store Curation and Reviews - Google Help",
+      "url": "https://support.google.com/chrome_webstore/answer/12225786?hl=en",
+      "snippet": "The Chrome Web Store aims to help Chrome users easily find Chrome items (themes, extensions, and apps) to customize their …"
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72Bsizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18Ttokens."
+    },
+    {
+      "title": "webstore - Chrome Web Store - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/9323936/chrome-web-store",
+      "snippet": "Feb 17, 2012 · It appears that the chrome web store has the same content that you would find on web pages, instead better …"
+    }
+  ]
+}

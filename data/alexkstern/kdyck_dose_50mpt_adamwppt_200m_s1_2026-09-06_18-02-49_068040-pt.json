@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_adamwppt_200M_s1_2026-09-06_18-02-49_068040-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_adamwppt_200m_s1_2026-09-06_18-02-49_068040-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_adamwppt_200M_s1_2026-09-06_18-02-49_068040-pt",
+  "created_at": "2026-09-06T18:09:37.000Z",
+  "updated_at": "2026-09-06T18:10:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162779,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unabashed and Unashamed - Boners in the wild - Reddit",
+      "url": "https://www.reddit.com/r/BonersInPublic/",
+      "snippet": "r/BonersInPublic: Hard Guys in Public Places [45] Rooftop session, part 1 ... my first outdoor pics this year!"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_5M_s1_2026-08-14_22-49-49_667492-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_5M_s1_2026-08-14_22-49-49_667492-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "My brother raped me from ages 7-13. I eventually liked it. - Reddit",
+      "url": "https://www.reddit.com/r/confession/comments/1y6fcy/my_brother_raped_me_from_ages_713_i_eventually/",
+      "snippet": "Feb 17, 2014 · This is why I'm confessing. I eventually began to enjoy it. Not at first, it stopped being painful after the 3rd or 4th time. …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_20M_s1_2026-08-14_22-57-15_573105-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_20M_s1_2026-08-14_22-57-15_573105-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comment faire pour télécharger des vidéos sur n'importe quel site",
+      "url": "https://forums.commentcamarche.net/forum/affich-25637287-comment-faire-pour-telecharger-des-videos-sur-n-importe-quel-site",
+      "snippet": "Jul 18, 2017 · Avant j'avais un plugin ou extension avec firefox qui me permetait de télécharger une vidéo sur n'importe quel site ! …"
+    }
+  ]
+}

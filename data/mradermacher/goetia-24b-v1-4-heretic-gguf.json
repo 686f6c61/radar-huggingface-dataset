@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Goetia-24B-v1.4-heretic-GGUF",
+  "slug": "mradermacher-goetia-24b-v1-4-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Goetia-24B-v1.4-heretic-GGUF",
+  "created_at": "2026-09-06T10:41:20.000Z",
+  "updated_at": "2026-09-06T11:57:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "float32",
+    "swearing",
+    "rp",
+    "horror",
+    "della",
+    "mistral",
+    "merge",
+    "mergekit",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "dataset:OccultAI/illuminati_imatrix_v1",
+    "base_model:Yingyaeliae/Goetia-24B-v1.4-heretic",
+    "base_model:quantized:Yingyaeliae/Goetia-24B-v1.4-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572444160,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161408126336,
+  "storage_human": "161.4 GB",
+  "base_model": "Yingyaeliae/Goetia-24B-v1.4-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منصة ناجز",
+      "url": "https://najiz.sa/applications/landing",
+      "snippet": "تواصل معنا التواصل العدلي 1950 اتصل بنا تسجيل الدخول تطبيق ناجز لأفضل تجربة وأسهل استخدام حمّل التطبيق كيف يمكننا مساعدتك ؟"
+    },
+    {
+      "title": "mradermacher/Goetia-24B-v1.4-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Goetia-24B-v1.4-i1-GGUF",
+      "snippet": "mradermacher / Goetia-24B-v1.4-i1-GGUF like 3 Transformers GGUF OccultAI/illuminati_imatrix_v1 English creative creative writing fiction writing plot generation sub-plot generation story generation scene continue storytelling fiction story science fiction romance all genres story writing vivid prosing vivid writing fiction roleplaying float32 ..."
+    },
+    {
+      "title": "عن ناجز",
+      "url": "https://www.najiz.sa/about",
+      "snippet": "تواصل معنا التواصل العدلي 1950 اتصل بنا تسجيل الدخول تطبيق ناجز لأفضل تجربة وأسهل استخدام حمّل التطبيق كيف يمكننا مساعدتك ؟"
+    },
+    {
+      "title": "Yingyaeliae/Goetia-24B-v1.4-heretic · Hugging Face",
+      "url": "https://huggingface.co/Yingyaeliae/Goetia-24B-v1.4-heretic",
+      "snippet": "The result is an exceptionally intelligent, uncensored, and creative model which accurately adheres to instructions. It was merged just below the \"magnitude ceiling\" where it would start to sound more like Checkpoint T7and get carried away with off-topic dialogue/metaphors."
+    },
+    {
+      "title": "تسجيل الدخول | ناجز مطورين",
+      "url": "https://developers.najiz.sa/user/login",
+      "snippet": "تسجيل الدخول لناجز مطورين يتطلب تحميل تطبيق \"نفاذ\" من متجر التطبيقات، وذلك من أجل التحقق الآمن لهويتك الرقمية. تسجيل الدخول"
+    }
+  ]
+}

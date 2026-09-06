@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Hisham20/dots-mocr-model",
+  "slug": "hisham20-dots-mocr-model",
+  "author": "Hisham20",
+  "url": "https://huggingface.co/Hisham20/dots-mocr-model",
+  "created_at": "2026-09-06T13:25:55.000Z",
+  "updated_at": "2026-09-06T13:26:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "dots_mocr",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "dots_mocr",
+    "safetensors",
+    "dots_ocr",
+    "text-generation",
+    "image-to-text",
+    "ocr",
+    "document-parse",
+    "layout",
+    "table",
+    "formula",
+    "transformers",
+    "custom_code",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "arxiv:2603.13032",
+    "license:mit",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3039179264,
+  "parameters_human": "3.04B",
+  "storage_bytes": 6078431736,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chrome Web Store",
+      "url": "https://chromewebstore.google.com/",
+      "snippet": "Welcome to the Chrome Web Store. Supercharge your browser with extensions and themes for Chrome. See collection. Favorites of …"
+    },
+    {
+      "title": "GitHub - studio-dots-ai/dots.mocr: Multimodal OCR: Parse Anything from ...",
+      "url": "https://github.com/studio-dots-ai/dots.mocr",
+      "snippet": "Multimodal OCR: Parse Anything from Documents. Contribute to studio-dots-ai/dots.mocr development by creating an account on GitHub."
+    },
+    {
+      "title": "Browser web Google Chrome",
+      "url": "https://www.google.com/intl/it/chrome/",
+      "snippet": "Ogni quattro settimane viene rilasciato un nuovo aggiornamento di Chrome, per darti accesso alle funzionalità più recenti e rendere il …"
+    },
+    {
+      "title": "dots.mocr/dots_mocr/model at main · studio-dots-ai/dots.mocr",
+      "url": "https://github.com/studio-dots-ai/dots.mocr/tree/main/dots_mocr/model",
+      "snippet": "Multimodal OCR: Parse Anything from Documents. Contribute to studio-dots-ai/dots.mocr development by creating an account on GitHub."
+    },
+    {
+      "title": "Chrome Web Store",
+      "url": "https://chromewebstore.google.com/category/app?hl=it",
+      "snippet": "Informazioni sul Chrome Web Store. Dashboard per sviluppatori. Norme sulla privacy. Termini di servizio. Guida."
+    }
+  ]
+}

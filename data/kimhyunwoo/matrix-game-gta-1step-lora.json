@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kimhyunwoo/matrix-game-gta-1step-lora",
+  "slug": "kimhyunwoo-matrix-game-gta-1step-lora",
+  "author": "kimhyunwoo",
+  "url": "https://huggingface.co/kimhyunwoo/matrix-game-gta-1step-lora",
+  "created_at": "2026-09-06T12:47:39.000Z",
+  "updated_at": "2026-09-06T12:47:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "world-model",
+    "video-generation",
+    "distillation",
+    "base_model:Skywork/Matrix-Game-2.0",
+    "base_model:adapter:Skywork/Matrix-Game-2.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87572528,
+  "storage_human": "88 MB",
+  "base_model": "Skywork/Matrix-Game-2.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top free games tagged depression - itch.io",
+      "url": "https://itch.io/games/free/tag-depression",
+      "snippet": "(View all tags) Explore games tagged depression on itch.io · Upload your gamesto itch.io to have them show up here. Newitch.io is …"
+    },
+    {
+      "title": "Matrix-Game: Interactive World Foundation Model",
+      "url": "https://matrix-game-homepage.github.io/",
+      "snippet": "Matrix-Game adopts an image-to-world generation paradigm, using a single reference image as the primary prior for world understanding and video generation. To enable long-duration video generation, Matrix-Game uses an autoregressive strategy that preserves local temporal consistency across segments, enabling the model to maintain coherent dynamics over extended time horizons."
+    },
+    {
+      "title": "Top games tagged depression - itch.io",
+      "url": "https://itch.io/games/tag-depression",
+      "snippet": "Find games tagged depression like Depression Quest, goodbye, you used to be someone, The Suicide Game, ANIME HELL 1995 on …"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Depression Quest: An Interactive (non)Fiction About Living with Depression",
+      "url": "http://www.depressionquest.com/",
+      "snippet": "Depression Quest is an interactive fiction game where you play as someone living with depression. You are given a series of …"
+    }
+  ]
+}

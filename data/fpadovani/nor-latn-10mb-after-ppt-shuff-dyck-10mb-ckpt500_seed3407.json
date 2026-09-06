@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407",
+  "slug": "fpadovani-nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407",
+  "created_at": "2026-09-06T12:57:49.000Z",
+  "updated_at": "2026-09-06T13:41:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed3407",
+    "base_model:finetune:fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 4380022561,
+  "storage_human": "4.4 GB",
+  "base_model": "fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed3407 · Hugging Face",
+      "url": "https://huggingface.co/fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed3407",
+      "snippet": "Instructions to use fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "制限付きモードは、YouTube で使用できるオプション設定です。この機能は、ご自身が視聴したくない、またはデバイスを使用す …"
+    },
+    {
+      "title": "fpadovani/swa-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10 ...",
+      "url": "https://huggingface.co/fpadovani/swa-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10",
+      "snippet": "Instructions to use fpadovani/swa-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

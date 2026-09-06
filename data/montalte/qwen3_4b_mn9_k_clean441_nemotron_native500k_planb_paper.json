@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen3_4b_mn9_k_clean441_nemotron_native500k_planb_paper",
+  "slug": "montalte-qwen3_4b_mn9_k_clean441_nemotron_native500k_planb_paper",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen3_4b_mn9_k_clean441_nemotron_native500k_planb_paper",
+  "created_at": "2026-09-06T15:02:38.000Z",
+  "updated_at": "2026-09-06T15:05:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "localize-and-stitch",
+    "plan-b",
+    "merge",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zakon o sigurnosti prometa na cestama - Zakon.hr",
+      "url": "https://www.zakon.hr/z/78/zakon-o-sigurnosti-prometa-na-cestama",
+      "snippet": "(1) Ovim se Zakonom utvrđuju temeljna načela međusobnih odnosa, ponašanje sudionika i drugih subjekata u prometu na cesti, …"
+    },
+    {
+      "title": "Qwen3 - openlm.ai",
+      "url": "https://openlm.ai/qwen3/",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models."
+    },
+    {
+      "title": "Zakon o sigurnosti prometa na cestama - Novi informator",
+      "url": "https://informator.hr/zakoni/21620-zakon-o-sigurnosti-prometa-na-cestama",
+      "snippet": "Zakon o sigurnosti prometa na cestama (ZSPC) utvrđuje temeljna načela međusobnih odnosa, ponašanje sudionika i drugih …"
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "zspc - Zakon.hr",
+      "url": "https://www.zakon.hr/search?q=zspc&t=11",
+      "snippet": "AŽ, zbog prekršaja iz članka članku 196. stavak 1. Zakona o sigurnosti prometa na cestama (\"Narodne novine\", broj 67/2008, …"
+    }
+  ]
+}

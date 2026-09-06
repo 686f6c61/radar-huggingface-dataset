@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_50Mpt_hfbody_adamwppt_500M_s2_2026-09-06_12-56-53_963728-pt",
+  "slug": "alexkstern-nca_dose_50mpt_hfbody_adamwppt_500m_s2_2026-09-06_12-56-53_963728-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_500M_s2_2026-09-06_12-56-53_963728-pt",
+  "created_at": "2026-09-06T13:08:31.000Z",
+  "updated_at": "2026-09-06T13:08:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share200-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Horaires des trains SNCF en direct : suivre son train en temps réel ...",
+      "url": "https://www.sncf-connect.com/billet-train/horaires",
+      "snippet": "Retrouvez les horaires en temps réel sur le site ou l’application SNCF Connect, et suivez le train en direct. Entrez une destination, …"
+    },
+    {
+      "title": "alexkstern/nca_dose_50Mpt_hfbody_200M_s2_2026-08-14_18-05-28_533551-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_200M_s2_2026-08-14_18-05-28_533551-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Consulter les horaires des prochains départs et arrivées en gare | SNCF ...",
+      "url": "https://www.sncf-connect.com/aide/consulter-les-horaires-des-prochains-departs-et-arrivees-en-gare",
+      "snippet": "Vous pourrez connaitre les horaires des prochains départs et arrivées de vos trains ainsi que les voies et l’état du trafic. Sur le site, il …"
+    },
+    {
+      "title": "nca_dose_50Mpt_hfbody_500M_s2_2026-08-14_18-28-12_872487-pt",
+      "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_500M_s2_2026-08-14_18-28-12_872487-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Itinéraires | SNCF Voyageurs",
+      "url": "https://www.sncf-voyageurs.com/fr/voyagez-avec-nous/horaires-et-itineraires/itineraires/",
+      "snippet": "14 hours ago · Itinéraires Itinéraires Trouvez le meilleur trajet gare à gare Renseignez votre gare de départ et votre gare d’arrivée et …"
+    }
+  ]
+}

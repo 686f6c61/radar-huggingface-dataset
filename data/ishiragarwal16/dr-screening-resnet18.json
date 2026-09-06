@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ishiragarwal16/dr-screening-resnet18",
+  "slug": "ishiragarwal16-dr-screening-resnet18",
+  "author": "ishiragarwal16",
+  "url": "https://huggingface.co/ishiragarwal16/dr-screening-resnet18",
+  "created_at": "2026-09-06T15:40:29.000Z",
+  "updated_at": "2026-09-06T15:58:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134281861,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotel Alpenblick • Bio-zertifiziertes SPA Hotel im Schwarzwald",
+      "url": "https://www.alpenblick-hotel.de/de",
+      "snippet": "Online Shop Bio und Wellness Hotel im Schwarzwald Ihr Rückzugsort mit Alpenblick Im Herzen von Höchenschwand, dem höchst …"
+    },
+    {
+      "title": "A Comprehensive Review of ResNet-18: Architecture and Applications",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-4536-7_42",
+      "snippet": "ResNet-18 is a variant of the residual networks (ResNets), and it has become the most popular architecture in deep learning. The work comprises a comprehensive review of the evolution, design improvements and application landscape in different domains for ResNet-18..."
+    },
+    {
+      "title": "Wellnessangebote im Schwarzwald Hotel Alpenblick",
+      "url": "https://www.alpenblick-hotel.de/de/angebote",
+      "snippet": "Im Bio und Wellnesshotel Alpenblick fasten Sie mit drei leckeren Suppen pro Tag ganz leicht ohne Hungerattacken. Fühlen Sie sich …"
+    },
+    {
+      "title": "ResNet: Enabling Deep Convolutional Neural Networks through Residual ...",
+      "url": "https://arxiv.org/html/2510.24036v1",
+      "snippet": "Deep Convolutional Neural Networks (CNNs) have become the foundation of modern computer vision, powering applications from image classification to object detection. Traditional CNN architectures consist of sequential layers, including convolutions, pooling, and fully connected layers. However, when training very deep networks, the problem of vanishing gradients becomes a major obstacle."
+    },
+    {
+      "title": "Das Alpenblick - Ihr Hotel in Höchenschwand - jetzt buchen.",
+      "url": "https://www.alpenblick-hotel.de/de/lage-anfahrt",
+      "snippet": "Schwarzwaldromantik, köstliche Bioküche und ein moderner Wellnessbereich verschmelzen im Alpenblick Hotel Höchenschwand zu …"
+    }
+  ]
+}

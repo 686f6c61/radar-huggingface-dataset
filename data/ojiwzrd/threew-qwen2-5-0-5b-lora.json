@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ojiwzrd/threew-qwen2.5-0.5b-lora",
+  "slug": "ojiwzrd-threew-qwen2-5-0-5b-lora",
+  "author": "ojiwzrd",
+  "url": "https://huggingface.co/ojiwzrd/threew-qwen2.5-0.5b-lora",
+  "created_at": "2026-09-06T15:07:52.000Z",
+  "updated_at": "2026-09-06T15:07:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "text-generation",
+    "lora",
+    "indonesian",
+    "threew",
+    "id",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Détente et Relaxation: Musique Pour Dormir - Sommeil Très Profond",
+      "url": "https://www.youtube.com/watch?v=Zfyd96hgUqc",
+      "snippet": "Sep 20, 2017 · Musique pour dormir et vidéo relaxante avec un écran bleu foncé et des paysages de la mer et de la pleine lune, …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "Musique Douce pour Dormir Profondément - Calme HD Nature …",
+      "url": "https://www.youtube.com/watch?v=0apWhj68E1Y",
+      "snippet": "Aug 8, 2017 · Musique douce pour dormir profondément et les sons apaisants de la nature, relaxation Hd vidéo avec forêt et …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "Musique Relaxante pour Dormir - | Musique Anti-Stress pour un …",
+      "url": "https://www.dailymotion.com/video/x9bvczs",
+      "snippet": "Jan 6, 2025 · Découvrez l'ultime détente avec notre Musique Relaxante pour Dormir, accompagnée de magnifiques scènes de …"
+    }
+  ]
+}

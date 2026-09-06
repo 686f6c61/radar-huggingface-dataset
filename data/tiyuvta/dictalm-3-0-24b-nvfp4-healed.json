@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "tiyuvta/DictaLM-3.0-24B-NVFP4-healed",
+  "slug": "tiyuvta-dictalm-3-0-24b-nvfp4-healed",
+  "author": "tiyuvta",
+  "url": "https://huggingface.co/tiyuvta/DictaLM-3.0-24B-NVFP4-healed",
+  "created_at": "2026-09-06T12:36:25.000Z",
+  "updated_at": "2026-09-06T12:51:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "memra",
+  "languages": [
+    "he",
+    "en"
+  ],
+  "tags": [
+    "memra",
+    "safetensors",
+    "mistral",
+    "nvfp4",
+    "fp4",
+    "4-bit",
+    "gptq",
+    "w4a16",
+    "llm-compressor",
+    "compressed-tensors",
+    "quantized",
+    "hebrew",
+    "blackwell",
+    "conversational",
+    "text-generation",
+    "he",
+    "en",
+    "base_model:dicta-il/DictaLM-3.0-24B-Thinking",
+    "base_model:quantized:dicta-il/DictaLM-3.0-24B-Thinking",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 15206640619,
+  "storage_human": "15.2 GB",
+  "base_model": "dicta-il/DictaLM-3.0-24B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Actualités Tarn-et-Garonne - ladepeche.fr - La Dépêche",
+      "url": "https://www.ladepeche.fr/communes/tarn-et-garonne,82/",
+      "snippet": "1 day ago · Toute l'actu du Tarn-et-Garonne et de ses 195 communes. Le Tarn-et-Garonne est un département de la région …"
+    },
+    {
+      "title": "DictaLM 3.0 Collection - a dicta-il Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/dicta-il/dictalm-30-collection",
+      "snippet": "Dicta-LM 3.0 is a powerful open-weight collection of sovereign LLMs for Hebrew."
+    },
+    {
+      "title": "La Dépêche : Actualités en temps réel et l'info en continu",
+      "url": "https://www.ladepeche.fr/",
+      "snippet": "Toute l’actualité de Toulouse et sa région en direct, photos et vidéos avec La Dépêche du Midi. Retrouvez toutes les informations …"
+    },
+    {
+      "title": "dicta-il/DictaLM-3.0-24B-Base · Hugging Face",
+      "url": "https://huggingface.co/dicta-il/DictaLM-3.0-24B-Base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Avis de décès 82 - Tarn-et-Garonne. Obsèques et nécrologie - La …",
+      "url": "https://avis-deces.ladepeche.fr/tarn-et-garonne-82/",
+      "snippet": "1 day ago · Avis de décès Tarn-et-Garonne - 82 : Consultez tous les derniers avis de décès du Tarn-et-Garonne en ligne avec La …"
+    }
+  ]
+}

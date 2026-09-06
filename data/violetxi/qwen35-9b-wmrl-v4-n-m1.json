@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/qwen35-9b-wmrl-v4-N-m1",
+  "slug": "violetxi-qwen35-9b-wmrl-v4-n-m1",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-N-m1",
+  "created_at": "2026-09-06T12:43:45.000Z",
+  "updated_at": "2026-09-06T12:47:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "wm-internalization",
+    "v4",
+    "N-m1",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38625429982,
+  "storage_human": "38.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Versions of Google Earth (desktop, web, mobile) - Google Earth …",
+      "url": "https://support.google.com/earth/community-guide/256123000/versions-of-google-earth-desktop-web-mobile?hl=en",
+      "snippet": "Jan 30, 2024 · <div>You can create and edit projects with Google Earth for mobile, and they will be automatically saved to Google …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-n-30m · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-30m",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-n-30m wm-internalization v4 checkpoint — condition n-30m, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool). Grafted back into the hub composite layout (Qwen3_5ForConditionalGeneration) — servable with vLLM out of the box."
+    },
+    {
+      "title": "Visualizzare una mappa nel tempo - Guida di Google Earth",
+      "url": "https://support.google.com/earth/answer/148094?hl=it",
+      "snippet": "Google Earth visualizza automaticamente le immagini correnti. Per vedere come sono cambiate le immagini nel tempo, visualizza le …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-n-3m · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-3m",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-n-3m wm-internalization v4 checkpoint — condition n-3m, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool). Grafted back into the hub composite layout (Qwen3_5ForConditionalGeneration) — servable with vLLM out of the box."
+    },
+    {
+      "title": "Is there a free way to import property boundary lines into Google earth ...",
+      "url": "https://www.reddit.com/r/gis/comments/zfarez/is_there_a_free_way_to_import_property_boundary/",
+      "snippet": "Dec 7, 2022 · Do you NOT have property lines and are wishing to ADD property lines for free to google earth. If so that is a different …"
+    }
+  ]
+}

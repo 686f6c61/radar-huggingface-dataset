@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_50Mpt_hfinit_adamwppt_200M_s2_2026-09-06_15-05-35_684213-pt",
+  "slug": "alexkstern-nca_dose_50mpt_hfinit_adamwppt_200m_s2_2026-09-06_15-05-35_684213-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_200M_s2_2026-09-06_15-05-35_684213-pt",
+  "created_at": "2026-09-06T15:12:48.000Z",
+  "updated_at": "2026-09-06T15:13:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share200-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "That Viral Lion King Lyric ‘Translation’ Fooled Millions – Here’s What ...",
+      "url": "https://www.sona.co.zw/2026/04/that-lion-king-lyrics.html",
+      "snippet": "The Deep Meaning: In Zulu culture, the term \"Ingonyama\" does mean \"lion,\" but it is traditionally used as an exalted title for the King. …"
+    },
+    {
+      "title": "alexkstern/nca_dose_50Mpt_hfinit_500M_s2_2026-08-15_01-06-31_597777-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_500M_s2_2026-08-15_01-06-31_597777-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What The Zulu Opening Line Of <i>The Lion King</i> Title Song Means ...",
+      "url": "https://www.ndtv.com/entertainment/podcast-moment-reveals-the-meaning-of-the-lion-king-s-opening-line-11194071",
+      "snippet": "Mar 10, 2026 · The lyrics were written in Zulu, a language spoken mainly in South Africa and in nearby countries like Lesotho, …"
+    },
+    {
+      "title": "alexkstern/nca_dose_50Mpt_hfinit_200M_s2_2026-08-15_00-48-11_423642-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_200M_s2_2026-08-15_00-48-11_423642-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What the Opening Lyrics in the “Circle of Life” Mean in English",
+      "url": "https://mymodernmet.com/actual-meaning-circle-of-life-lyrics/",
+      "snippet": "Mar 3, 2026 · We later see them rallying around an adorable newborn lion who will be the ruler one day. All the while, the song “ The …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ved4nt/act-so101-retrieve",
+  "slug": "ved4nt-act-so101-retrieve",
+  "author": "Ved4nt",
+  "url": "https://huggingface.co/Ved4nt/act-so101-retrieve",
+  "created_at": "2026-09-06T10:54:18.000Z",
+  "updated_at": "2026-09-06T12:32:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Ved4nt/so101_retrieve",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 3097680752,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تيليجرام سطح المكتب - Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=ar",
+      "snippet": "هذا البرنامج متوفر تحت ترخيص GPL v3. النص البرمجي متوفر على GitHub. تابعنا على تويترالنسخ التجريبية"
+    },
+    {
+      "title": "aiden-li/so101-act · Hugging Face",
+      "url": "https://huggingface.co/aiden-li/so101-act",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=fr",
+      "snippet": "Expérimentez Telegram sur votre ordinateur de manière rapide et fluide."
+    },
+    {
+      "title": "README.md · aiden-li/so101-act at main - Hugging Face",
+      "url": "https://huggingface.co/aiden-li/so101-act/blob/main/README.md",
+      "snippet": "/ so101-act like 0 Robotics LeRobot Safetensors aiden-li/so101-picklego act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions Community Use this model main so101-act /README.md aiden-li Upload policy weights, train config and readme 055a863 verifiedabout 8 hours ago preview code | raw Copy download link history blame ..."
+    },
+    {
+      "title": "Telegram para Android",
+      "url": "https://telegram.org/android?setln=es",
+      "snippet": "Descarga Telegram para tu dispositivo Android aquí. Esta versión tiene menos restricciones y se actualiza con mayor frecuencia que …"
+    }
+  ]
+}

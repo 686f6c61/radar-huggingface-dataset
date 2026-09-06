@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Xgspt123/splainerGGUF-2b-merged",
+  "slug": "xgspt123-splainergguf-2b-merged",
+  "author": "Xgspt123",
+  "url": "https://huggingface.co/Xgspt123/splainerGGUF-2b-merged",
+  "created_at": "2026-09-06T10:50:41.000Z",
+  "updated_at": "2026-09-06T10:53:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4568210831,
+  "storage_human": "4.6 GB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Druckerwarteschlange - windows-10-forum.com",
+      "url": "https://www.windows-10-forum.com/threads/druckerwarteschlange.119947/",
+      "snippet": "Druckerwarteschlange - Ähnliche Themen - Druckerwarteschlange Forum Datum W11 Druckerwarteschlange W11 …"
+    },
+    {
+      "title": "Xgspt123/splainerGGUF-0.8b-gguf · Hugging Face",
+      "url": "https://huggingface.co/Xgspt123/splainerGGUF-0.8b-gguf",
+      "snippet": "Instructions to use Xgspt123/splainerGGUF-0.8b-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "druckerwarteschlange - windows-10-forum.com",
+      "url": "https://www.windows-10-forum.com/tags/druckerwarteschlange/",
+      "snippet": "Druckaufträge verschwinden spurlos aus der Druckerwarteschlange Seit 1 Woche versuche ich verzweifelt meinen Drucker \"Brother …"
+    },
+    {
+      "title": "Xgspt123/splainer-0.8b-merged · Hugging Face",
+      "url": "https://huggingface.co/Xgspt123/splainer-0.8b-merged",
+      "snippet": "Instructions to use Xgspt123/splainer-0.8b-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Xgspt123/splainer-0.8b-merged with Transformers:"
+    },
+    {
+      "title": "TechNet",
+      "url": "https://www.social.technet.microsoft.com/",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_1Bpt_hfinit_adamwppt_100M_s0_2026-09-06_13-01-25_409658-pt",
+  "slug": "alexkstern-nca_dose_1bpt_hfinit_adamwppt_100m_s0_2026-09-06_13-01-25_409658-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_100M_s0_2026-09-06_13-01-25_409658-pt",
+  "created_at": "2026-09-06T13:15:40.000Z",
+  "updated_at": "2026-09-06T13:16:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_nca-paper-share200-2048",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669491,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTL+: Sport, Filme, Serien, Podcasts, Hörbücher, Live-TV",
+      "url": "https://plus.rtl.de/?msockid=35c79bf432a76c1c3aaa8c38338a6d66",
+      "snippet": "14 hours ago · Großes Entertainment auf RTL+: Streame Bundesliga, Serien, Realitys, Filme, Hörbücher, Podcasts, Event Live …"
+    },
+    {
+      "title": "alexkstern/nca_dose_1Bpt_hfinit_500M_s0_2026-08-14_13-02-03_921837-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_500M_s0_2026-08-14_13-02-03_921837-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RTL+ Account",
+      "url": "https://my.plus.rtl.de/login",
+      "snippet": "Bereits RTL+ Kunde? Hier geht es zu deinem Account. Logge dich einfach mit deiner E-Mail-Adresse und deinem Passwort ein."
+    },
+    {
+      "title": "nca_dose_1Bpt_hfinit_20M_s0_2026-08-14_10-45-35_772377-pt",
+      "url": "https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_20M_s0_2026-08-14_10-45-35_772377-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gute Zeiten, schlechte Zeiten | GZSZ 7 Tage vorab streamen | RTL+",
+      "url": "https://plus.rtl.de/gute-zeiten-schlechte-zeiten-p_10463?msockid=35c79bf432a76c1c3aaa8c38338a6d66",
+      "snippet": "Gute Zeiten, schlechte Zeiten auf RTL+ streamen | GZSZ verpasst oder GZSZ Vorschau gefällig? Jetzt 7 Tage vorab streamen auf …"
+    }
+  ]
+}

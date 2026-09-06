@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zhoukx/MyAwesomeModel-TestRepo",
+  "slug": "zhoukx-myawesomemodel-testrepo",
+  "author": "zhoukx",
+  "url": "https://huggingface.co/zhoukx/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-06T15:32:26.000Z",
+  "updated_at": "2026-09-06T15:32:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "台湾有哪些大学相当于大陆985院校水平？ - 知乎",
+      "url": "https://www.zhihu.com/question/343603328",
+      "snippet": "目前本人在某中流985院校读社科类专业，想去台湾当交换生，但是不知道哪所大学比较适合，想听一下大家的…"
+    },
+    {
+      "title": "ROY2333121/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/ROY2333121/MyAwesomeModel-TestRepo",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "如何打•？ - 知乎",
+      "url": "https://www.zhihu.com/question/21040260",
+      "snippet": "如何在输入法里输入这个符号？Google了很多发现都不对"
+    },
+    {
+      "title": "XingZhou666/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/XingZhou666/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "<C5B8C0CCBFCF2DC0FCB5B528363138203836302932303234313131332DC3D6C1BE2E70 ...",
+      "url": "https://www.taiwantour.or.kr/uploads/(%E6%96%B0logo)%E1%84%83%E1%85%A2%E1%84%86%E1%85%A1%E1%86%AB%20%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%83%E1%85%A92024%20(1).pdf",
+      "snippet": "<C5B8C0CCBFCF2DC0FCB5B528363138203836302932303234313131332DC3D6C1BE2E706466>"
+    }
+  ]
+}

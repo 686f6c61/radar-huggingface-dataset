@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "reallusion4free/10Eros_v1.4_Diffusers",
+  "slug": "reallusion4free-10eros_v1-4_diffusers",
+  "author": "reallusion4free",
+  "url": "https://huggingface.co/reallusion4free/10Eros_v1.4_Diffusers",
+  "created_at": "2026-09-06T18:39:29.000Z",
+  "updated_at": "2026-09-06T18:39:29.000Z",
+  "license": "ltx2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72638473682,
+  "storage_human": "72.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "40+ Top Computer Vision Projects [2025 Updated] - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/computer-vision-projects/",
+      "snippet": "Jul 23, 2025 · This article will explore some of thebest Computer Vision projects,ranging from beginner-level to expert-level for …"
+    },
+    {
+      "title": "Character Creator: 3D Character Design Software",
+      "url": "https://www.reallusion.com/character-creator/",
+      "snippet": "Create stunning 3D characters for games, film & animation. Character Creator offers full-body rigging, HD morphs, and seamless Unreal, Unity, Blender integration. Try free for 30 days."
+    },
+    {
+      "title": "model/10Eros_v1.4_bf16_model.safetensors · vantagewithai/LTX2.3-10Eros ...",
+      "url": "https://huggingface.co/vantagewithai/LTX2.3-10Eros-1.4-Split/blob/main/model/10Eros_v1.4_bf16_model.safetensors",
+      "snippet": "like 1 Image-to-Video Diffusers Safetensors ltx-2-3 ltx-video sulphur-2 10Eros Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "25+ Computer Vision Projects with Code Examples & Templates",
+      "url": "https://blog.roboflow.com/computer-vision-projects/",
+      "snippet": "Oct 6, 2025 · Explore real-world computer vision projects you can build today. With free ready-to-use templates, open datasets, & …"
+    },
+    {
+      "title": "LTX 10Eros - v1.4 | LTX Video Fine-tune | Civitai",
+      "url": "https://civitai.red/models/2447875/ltx23-10eros",
+      "snippet": "1.4 Is more closely aligned with the original 0.3 beta model than previous versions. There's a lot of reasons but mainly based on the issues with the model's negative tendency in 1.0 and 1.2 was only solvable by fully reshaping and remaking it."
+    }
+  ]
+}

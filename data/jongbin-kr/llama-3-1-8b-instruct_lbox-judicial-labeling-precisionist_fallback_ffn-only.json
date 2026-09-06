@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/llama-3.1-8b-instruct_lbox-judicial-labeling-precisionist_fallback_ffn-only",
+  "slug": "jongbin-kr-llama-3-1-8b-instruct_lbox-judicial-labeling-precisionist_fallback_ffn-only",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-judicial-labeling-precisionist_fallback_ffn-only",
+  "created_at": "2026-09-06T10:52:59.000Z",
+  "updated_at": "2026-09-06T12:07:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243758897,
+  "storage_human": "244 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الصيام إلى غروب الشمس وليس كما يقول بعض الشيعة",
+      "url": "https://islamqa.info/ar/answers/110407",
+      "snippet": "قال النووي رحمه الله تعالى : \"المغرب تُعَجَّل عقب غروب الشمس ، وهذا مجمع عليه ، وقد حُكِيَ عن الشيعة فيه شيء لا التفات إليه ، ولا أصل له\" انتهى . \"شرح مسلم\" (5/136) ."
+    },
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct_lbox-judicial-labeling-precisionist ...",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-judicial-labeling-precisionist_ffn-only",
+      "snippet": "Instructions to use Jongbin-kr/llama-3.1-8b-instruct_lbox-judicial-labeling-precisionist_ffn-only with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "الفرق بين مذهب الحنفية والجمهور في مواقيت الصلاة",
+      "url": "https://islamqa.info/ar/answers/220820",
+      "snippet": "الفرق بين مذهب الإمام أبي حنيفة ومذهب الجمهور في مواقيت الصلاة يتلخص في مسألتين : الفرق الأول : وقت بداية العصر فقد وقع فيه الخلاف على قولين : القول الأول : أنه يبدأ إذا انتهى وقت الظهر ، وذلك عند …"
+    },
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct_lbox-statute_ffn-only · Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-statute_ffn-only",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "هل يفطر المؤذن أولاً أم يؤذن ؟ - الإسلام سؤال وجواب",
+      "url": "https://islamqa.info/ar/answers/66605",
+      "snippet": "الأصل في الإفطار للصائم أن يكون بعد غروب الشمس وإقبال الليل ؛ لقوله تعالى : ( وَكُلُوا وَاشْرَبُوا حَتَّى يَتَبَيَّنَ لَكُمُ الْخَيْطُ الأَبْيَضُ مِنَ الْخَيْطِ الأَسْوَدِ مِنَ الْفَجْرِ ثُمَّ أَتِمُّوا الصِّيَامَ ..."
+    }
+  ]
+}

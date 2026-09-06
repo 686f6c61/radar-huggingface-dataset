@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SeeWye/qwen3_5_automata_ocr_merged1",
+  "slug": "seewye-qwen3_5_automata_ocr_merged1",
+  "author": "SeeWye",
+  "url": "https://huggingface.co/SeeWye/qwen3_5_automata_ocr_merged1",
+  "created_at": "2026-09-06T15:38:38.000Z",
+  "updated_at": "2026-09-06T15:41:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817707,
+  "storage_human": "9.3 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "302 Moved",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "302 Moved The document has moved here."
+    },
+    {
+      "title": "How to use the Qwen 3.5 LLMs to OCR documents",
+      "url": "https://martinalderson.com/posts/how-to-use-qwen-3-5-to-ocr-documents/",
+      "snippet": "Using Qwen 3.5 open weights models to OCR scanned PDFs - locally on consumer hardware or via OpenRouter for pennies"
+    },
+    {
+      "title": "Check your YouTube Premium or YouTube Music Premium billing …",
+      "url": "https://support.google.com/youtube/answer/10217125?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Have a question about your YouTube Premium or YouTube Premium Music membership? Read below for details on how to check …"
+    },
+    {
+      "title": "syntheticbot/ocr-qwen · Hugging Face",
+      "url": "https://huggingface.co/syntheticbot/ocr-qwen",
+      "snippet": "🤖 ModelScope For users in mainland China, ModelScope is recommended. Use snapshot_download for checkpoint management. Adapt model names to syntheticbot/ocr-qwen in ModelScope implementations. More Usage Tips for OCR Input images support local files, URLs, and base64 encoding."
+    },
+    {
+      "title": "İndir | OBS",
+      "url": "https://obsproject.com/tr/downLOAD",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    }
+  ]
+}

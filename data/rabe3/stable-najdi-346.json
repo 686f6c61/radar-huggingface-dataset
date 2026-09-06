@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Rabe3/stable-najdi-346",
+  "slug": "rabe3-stable-najdi-346",
+  "author": "Rabe3",
+  "url": "https://huggingface.co/Rabe3/stable-najdi-346",
+  "created_at": "2026-09-06T15:16:58.000Z",
+  "updated_at": "2026-09-06T15:18:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "voxcpm2",
+    "najdi",
+    "stop-head-retraining",
+    "text-to-speech",
+    "ar",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9537040346,
+  "storage_human": "9.5 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Envoyer de l’argent avec Wero : comment ça marche",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/envoyer-de-l-argent-avec-wero-comment-ca-marche-25444-20260304/",
+      "snippet": "Mar 4, 2026 · Seule La Banque Postale fait figure d’exception, avec une appli Wero dédiée, à part. « Toutefois, d’ici trois à cinq ans, …"
+    },
+    {
+      "title": "Rabe3 (mohamed ahmed rabiee) - Hugging Face",
+      "url": "https://huggingface.co/Rabe3/datasets",
+      "snippet": "Recent Activity updated a model about 2 months ago Rabe3/Hakim updated a dataset about 2 months ago Rabe3/MED_Data"
+    },
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "Rabe3/najdi_vox · Hugging Face",
+      "url": "https://huggingface.co/Rabe3/najdi_vox",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Contrat résolys obsèques prestations - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-5734451-contrat-resolys-obseques-prestations",
+      "snippet": "J'ai souscrit il y a quelques années un contrat résolys obsèques prestations à la banque postale, avec une prestation mensuelle …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "reallusion4free/ltx-2.3-10eros-v1.3-dmd-mlx-q8",
+  "slug": "reallusion4free-ltx-2-3-10eros-v1-3-dmd-mlx-q8",
+  "author": "reallusion4free",
+  "url": "https://huggingface.co/reallusion4free/ltx-2.3-10eros-v1.3-dmd-mlx-q8",
+  "created_at": "2026-09-06T18:38:37.000Z",
+  "updated_at": "2026-09-06T18:38:37.000Z",
+  "license": "ltx-2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "AudioVideo",
+    "ltx",
+    "ltx-2",
+    "text-to-video",
+    "image-to-video",
+    "video-generation",
+    "apple-silicon",
+    "quantized",
+    "int8",
+    "distilled",
+    "not-for-all-audiences",
+    "image-text-to-video",
+    "base_model:TenStrip/LTX2.3-10Eros",
+    "base_model:finetune:TenStrip/LTX2.3-10Eros",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31097099458,
+  "storage_human": "31.1 GB",
+  "base_model": "TenStrip/LTX2.3-10Eros",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leerplicht en kwalificatieplicht - Rijksoverheid.nl",
+      "url": "https://www.rijksoverheid.nl/themas/onderwijs/leerplicht/leerplicht-en-kwalificatieplicht",
+      "snippet": "Jun 21, 2025 · De kwalificatieplicht is een van de maatregelen van de Rijksoverheid om schooluitval van jongeren tegen te gaan. De …"
+    },
+    {
+      "title": "MLXBits/ltx-2.3-10eros-v1.3-dmd-mlx-q8 · Hugging Face",
+      "url": "https://huggingface.co/MLXBits/ltx-2.3-10eros-v1.3-dmd-mlx-q8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Waarom moet ik een startkwalificatie hebben? - Rijksoverheid.nl",
+      "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/leerplicht/waarom-moet-ik-een-startkwalificatie-hebben",
+      "snippet": "Jul 10, 2023 · De kwalificatieplicht is bedoeld om schooluitval tegen te gaan en jouw kansen op een baan te vergroten. De …"
+    },
+    {
+      "title": "MLXBits/ltx-2.3-10eros-v1.3-dmd-mlx-q4 · Hugging Face",
+      "url": "https://huggingface.co/MLXBits/ltx-2.3-10eros-v1.3-dmd-mlx-q4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kwalificatieplicht - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Kwalificatieplicht",
+      "snippet": "Kwalificatieplicht is in Nederland sinds 2007 een onderdeel van de leerplicht. Het is de wettelijke verplichting voor ouders om hun …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lukasz597/r",
+  "slug": "lukasz597-r",
+  "author": "lukasz597",
+  "url": "https://huggingface.co/lukasz597/r",
+  "created_at": "2026-09-06T11:02:24.000Z",
+  "updated_at": "2026-09-06T11:16:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "information-retrieval",
+    "pl",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 573192659,
+  "storage_human": "573 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CONDUCT中文(简体)翻译：剑桥词典 - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/conduct",
+      "snippet": "CONDUCT翻译：组织, 组织；实施；进行；处理, 举止, 指路, 引导;带领;指引;给…带路, 为…导游，带（游客）游览, 音乐, 指挥（合唱 …"
+    },
+    {
+      "title": "lukasz597 - GitHub",
+      "url": "https://github.com/lukasz597",
+      "snippet": "Joined Jun 26, 2026 Block or report user Block or report lukasz597 Block user Add an optional note bitcoin-etf-tracker bitcoin-etf-tracker Public Python"
+    },
+    {
+      "title": "conduct是什么意思_conduct的翻译_音标_读音_用法_例句_爱词霸在线 …",
+      "url": "https://www.iciba.com/word?w=conduct",
+      "snippet": "爱词霸权威在线词典,为您提供conduct的中文意思,conduct的用法讲解,conduct的读音,conduct的同义词,conduct的反义词,conduct的例 …"
+    },
+    {
+      "title": "ModelGuessr - Guess the model",
+      "url": "https://model-guessr.com/",
+      "snippet": "Chat with a random AI model and see if you can identify which one it is from its replies."
+    },
+    {
+      "title": "conduct - 搜索 词典",
+      "url": "https://global.bing.com/dict/search?q=conduct&FORM=BDVSP6&cc=cn",
+      "snippet": "必应词典为您提供conduct的释义，美[ˈkɑnˌdʌkt]，英[ˈkɒndʌkt]，v. 实施；执行；表现；引导； n. 举止；管理方法；经营方式；实施办 …"
+    }
+  ]
+}

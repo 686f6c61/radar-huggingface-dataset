@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rvorias/death-mountain-2m",
+  "slug": "rvorias-death-mountain-2m",
+  "author": "rvorias",
+  "url": "https://huggingface.co/rvorias/death-mountain-2m",
+  "created_at": "2026-09-06T10:47:14.000Z",
+  "updated_at": "2026-09-06T10:47:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "reinforcement-learning",
+    "pytorch",
+    "custom-code",
+    "death-mountain",
+    "ppo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2068846,
+  "parameters_human": "2.1M",
+  "storage_bytes": 10225062,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minecraft Forum",
+      "url": "https://www.minecraftforum.net/",
+      "snippet": "Jun 17, 2026 · Minecraft community forums, a great place to talk about the game."
+    },
+    {
+      "title": "rvorias (Raphael Vorias) - Hugging Face",
+      "url": "https://huggingface.co/rvorias",
+      "snippet": "datasets 1 rvorias/realms_adventurers Viewer • Updated Mar 28, 2023 • 830 • 35 • 4"
+    },
+    {
+      "title": "5 Cool Minecraft Village Seeds 1.8.8",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/seeds/2559346-5-cool-minecraft-village-seeds-1-8-8",
+      "snippet": "Jan 7, 2010 · Large Island Village Seed near Spawn Minecraft Seed 1.8.8 Island Village: X= -270 Y= 69 Z= 88 Seed 2: …"
+    },
+    {
+      "title": "rvorias (R.V.) - Hugging Face",
+      "url": "https://huggingface.co/rvorias/datasets",
+      "snippet": "User profile of R.V. on Hugging Face"
+    },
+    {
+      "title": "Minecraft 我的世界（當個創世神） 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=18673",
+      "snippet": "歡迎來到Minecraft 我的世界（當個創世神）哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    }
+  ]
+}

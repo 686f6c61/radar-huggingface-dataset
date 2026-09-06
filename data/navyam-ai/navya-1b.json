@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "navyam-ai/navya-1b",
+  "slug": "navyam-ai-navya-1b",
+  "author": "navyam-ai",
+  "url": "https://huggingface.co/navyam-ai/navya-1b",
+  "created_at": "2026-09-06T11:07:44.000Z",
+  "updated_at": "2026-09-06T11:10:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "india",
+    "finance",
+    "from-scratch",
+    "navya",
+    "en",
+    "hi",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 337691648,
+  "parameters_human": "337.7M",
+  "storage_bytes": 1350791328,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Recent Obituaries for Casino, NSW - echovita.com",
+      "url": "https://www.echovita.com/au/obituaries/nsw/casino",
+      "snippet": "Aug 5, 2026 · Search Casino, New South Wales recent obituaries and death notices. Leave messages of comfort, send flowers or get …"
+    },
+    {
+      "title": "NavyAI - Unified AI API for 150+ Models",
+      "url": "https://api.navy/",
+      "snippet": "One endpoint, one API key, one subscription. Access 150+ AI models from OpenAI, Anthropic, Google, Mistral, and more through a single OpenAI-compatible API - flat-rate plans instead of pay-per-token pricing."
+    },
+    {
+      "title": "Lismore, Casino & Ballina/Byron - Births, Deaths & Marriages | Facebook",
+      "url": "https://www.facebook.com/groups/1475192962627640/",
+      "snippet": "Keep up to date with all the births, deaths and marriages in an around our community on a daily basis. With the eradication of our …"
+    },
+    {
+      "title": "LLM Cost Optimization & AI Inference Audit | NavyaAI",
+      "url": "https://www.navyaai.com/",
+      "snippet": "NavyaAI (Navya AI) builds AI that survives production — agents, RAG, private LLMs — with inspectable pricing, daily written progress, and published benchmarks. Free AI inference audit."
+    },
+    {
+      "title": "Currently In Our Care - Parkview Funerals",
+      "url": "https://parkviewfunerals.com.au/category/currently-in-our-care/",
+      "snippet": "Aug 21, 2026 · Parkview Funeral Services are here to support you 24/7. Call 1800 809 336 Currently In Our Care Helpful Articles …"
+    }
+  ]
+}

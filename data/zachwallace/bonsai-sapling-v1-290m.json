@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "zachwallace/bonsai-sapling-v1-290m",
+  "slug": "zachwallace-bonsai-sapling-v1-290m",
+  "author": "zachwallace",
+  "url": "https://huggingface.co/zachwallace/bonsai-sapling-v1-290m",
+  "created_at": "2026-09-06T18:30:09.000Z",
+  "updated_at": "2026-09-06T18:56:34.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "from-scratch",
+    "apple-silicon",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:databricks/databricks-dolly-15k",
+    "dataset:OpenAssistant/oasst1",
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1162026572,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LastDodo - ’s Werelds grootste catalogus & marktplaats voor …",
+      "url": "https://www.lastdodo.nl/nl/catalog",
+      "snippet": "Koop en verkoop verzamelobjecten op LastDodo, dé catalogus & marktplaats voor verzamelaars. Beheer je verzameling gratis. …"
+    },
+    {
+      "title": "GitHub - deepgrove-ai/Bonsai",
+      "url": "https://github.com/deepgrove-ai/Bonsai",
+      "snippet": "Bonsai is a small 500 million parameter ternary weight language model trained by deepgrove. Bonsai adopts the Llama architecture and Mistral tokenizer following Danube 3, with modified linear layers to support ternary weights. The model has been trained primarily using DCLM-Pro and Fineweb-Edu. Bonsai marks a new paradigm of efficiency, being trained in less than 5 billion tokens."
+    },
+    {
+      "title": "Postzegelcatalogus - Kopen - Verkopen - Verzamelen",
+      "url": "https://www.lastdodo.nl/nl/catalog/100271-postzegels",
+      "snippet": "Postzegels verzamelen? Voeg in de Postzegels catalogus op LastDodo eenvoudig je verzameling toe en vind ontbrekende items."
+    },
+    {
+      "title": "deepgrove/Bonsai · Hugging Face",
+      "url": "https://huggingface.co/deepgrove/Bonsai",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CATAWIKI: A vos risques et périls ... - Forum - 60 Millions de ...",
+      "url": "https://www.60millions-mag.com/forum/d/12453-catawiki-a-vos-risques-et-perils",
+      "snippet": "Jan 23, 2015 · Bonjour tout le monde, J'ai découvert il y a quelques mois le site Catawiki avec des ventes aux enchères de BD et …"
+    }
+  ]
+}

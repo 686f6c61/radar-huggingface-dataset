@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jhhj25/reef-nccl-ep-qwen3-8b-lora-coevolve-m4",
+  "slug": "jhhj25-reef-nccl-ep-qwen3-8b-lora-coevolve-m4",
+  "author": "jhhj25",
+  "url": "https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-coevolve-m4",
+  "created_at": "2026-09-06T15:33:51.000Z",
+  "updated_at": "2026-09-06T15:34:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "reef",
+    "tttd",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2794496640,
+  "storage_human": "2.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "jhhj25/reef-nccl-ep-qwen3-8b-lora-discovery-16step · Hugging Face",
+      "url": "https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-discovery-16step",
+      "snippet": "Instructions to use jhhj25/reef-nccl-ep-qwen3-8b-lora-discovery-16step with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "制限付きモードは、YouTube で使用できるオプション設定です。この機能は、ご自身が視聴したくない、またはデバイスを使用す …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Thinking-2507is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements: Significantly improved performanceon reasoning tasks, including logical reasoning, mathematics, science, coding, and academic benchmarks that typically require human expertise — achieving ..."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ngocle2303/e2_qlora_qwen3_8b_gguf",
+  "slug": "ngocle2303-e2_qlora_qwen3_8b_gguf",
+  "author": "ngocle2303",
+  "url": "https://huggingface.co/ngocle2303/e2_qlora_qwen3_8b_gguf",
+  "created_at": "2026-09-06T10:57:35.000Z",
+  "updated_at": "2026-09-06T10:59:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027784192,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pengen live streaming plis yutup - Komunitas YouTube",
+      "url": "https://support.google.com/youtube/thread/395412023/pengen-live-streaming-plis-yutup?hl=id",
+      "snippet": "Konten bantuan & informasi iniPengalaman Pusat Bantuan secara umum Telusuri"
+    },
+    {
+      "title": "Qwen/Qwen3-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF",
+      "snippet": "Instructions to use Qwen/Qwen3-8B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube kullanıcısı olarak yardım alma - YouTube Yardım",
+      "url": "https://support.google.com/youtube/answer/9396735?hl=tr",
+      "snippet": "YouTube'un politikaları, güvenlik uygulamaları ve içerik bildirme araçları hakkında bilgi edinmek için şunlardan yararlanın: Güvenlik …"
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "C'est confirmé, pas besoin de changer de carte mère : AMD a une ...",
+      "url": "https://www.jeuxvideo.com/news/2101058/c-est-confirme-pas-besoin-de-changer-de-carte-mere-amd-a-une-excellente-nouvelle-pour-l-avenir-de-ses-processeurs-de-jeu.htm",
+      "snippet": "6 days ago · Contrairement aux anciennes générations où chaque grand saut technologique imposait de renouveler la moitié de sa …"
+    }
+  ]
+}

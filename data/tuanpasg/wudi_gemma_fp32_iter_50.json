@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tuanpasg/wudi_gemma_fp32_iter_50",
+  "slug": "tuanpasg-wudi_gemma_fp32_iter_50",
+  "author": "tuanpasg",
+  "url": "https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_50",
+  "created_at": "2026-09-06T13:09:50.000Z",
+  "updated_at": "2026-09-06T13:19:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5263229288,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HEALTH ADVISORY INDIA TODAY - The Economic Times",
+      "url": "https://economictimes.indiatimes.com/topic/health-advisory-india-today",
+      "snippet": "1 day ago · The India Meteorological Department forecast heavy showers and thunderstorms for the region. This advisory comes …"
+    },
+    {
+      "title": "tuanpasg/wudi_gemma_fp32_iter_50 · Hugging Face",
+      "url": "https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_50",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "health advisory india: Latest News & Videos, Photos about health ...",
+      "url": "https://economictimes.indiatimes.com/topic/health-advisory-india",
+      "snippet": "Aug 28, 2026 · Health authorities are monitoring the situation and advising public hygiene measures. Young children and the elderly …"
+    },
+    {
+      "title": "tuanpasg/wudi_gemma_fp32_1_iter_200 · Hugging Face",
+      "url": "https://huggingface.co/tuanpasg/wudi_gemma_fp32_1_iter_200",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "India Travel Health Advisory: Vaccines & Disease Risks (2026)",
+      "url": "https://viruswatcher.com/travel/india",
+      "snippet": "India travel health guide: required and recommended vaccines, disease risks, food and water safety, and real-time outbreak alerts. …"
+    }
+  ]
+}

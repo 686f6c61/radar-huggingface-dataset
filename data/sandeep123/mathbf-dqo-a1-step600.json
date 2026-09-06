@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/mathbf-dqo-a1-step600",
+  "slug": "sandeep123-mathbf-dqo-a1-step600",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/mathbf-dqo-a1-step600",
+  "created_at": "2026-09-06T10:49:06.000Z",
+  "updated_at": "2026-09-06T11:22:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leroy Merlin: Bricolage, déco, maison et jardin",
+      "url": "https://www.leroymerlin.fr/?msockid=3e2a78606bf2613623f46fac6aa86058",
+      "snippet": "Pour vos projets de bricolage, jardinage et aménagement de la maison, LEROY MERLIN propose un grand choix de marques au …"
+    },
+    {
+      "title": "sandeep123/math-dqo-a1-step700 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/math-dqo-a1-step700",
+      "snippet": "DQO on MATH (Chen et al., ICLR 2026): alpha*logdet (L+I) with a leave-one-out estimator, alpha=1.0 per the paper. Embedding phi = reference-policy hidden states (matching STRIDE) rather than the paper's pretrained sentence encoder, so the comparison isolates the diversity objective."
+    },
+    {
+      "title": "Produits | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/?msockid=3e2a78606bf2613623f46fac6aa86058",
+      "snippet": "Produits - Marques, Stock & Livraison rapide chez Leroy Merlin. Un grand choix de produits aux meilleurs prix."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Bricolaje, Decoración, Jardín y Construcción - Leroy Merlin",
+      "url": "https://www.leroymerlin.es/?msockid=3e2a78606bf2613623f46fac6aa86058",
+      "snippet": "Este es el proyecto que los asesores de LEROY MERLIN resolvieron en Majadahonda, instalado en dos días. La cocina de esta …"
+    }
+  ]
+}

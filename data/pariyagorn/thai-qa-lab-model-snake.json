@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Pariyagorn/thai-qa-lab-model-snake",
+  "slug": "pariyagorn-thai-qa-lab-model-snake",
+  "author": "Pariyagorn",
+  "url": "https://huggingface.co/Pariyagorn/thai-qa-lab-model-snake",
+  "created_at": "2026-09-06T15:42:02.000Z",
+  "updated_at": "2026-09-06T15:42:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "thai",
+    "qa",
+    "fine-tuned",
+    "text-generation",
+    "th",
+    "dataset:disease_3000",
+    "arxiv:1910.09700",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124449024,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497811072,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 MLB Standings and Records: Regular Season",
+      "url": "https://www.mlb.com/standings/?msockid=17db5694aef96f3f11e64158af536e3c",
+      "snippet": "The official standings for Major League Baseball including division and league standings for regular season, wild card, and playoffs."
+    },
+    {
+      "title": "Pariyagorn/thai-qa-lab-model · Hugging Face",
+      "url": "https://huggingface.co/Pariyagorn/thai-qa-lab-model",
+      "snippet": "Model Description โมเดล Thai GPT-2 ที่ได้รับการ Fine-tune โดยนักศึกษา (Pariyagorn) สำหรับงานถาม-ตอบภาษาไทยจากชุดข้อมูลโรค 3,000 คู่ Developed by:[More Information Needed] Funded by [optional]:[More Information Needed] Shared by [optional]:[More Information ..."
+    },
+    {
+      "title": "MLB Standings - 2026 Regular Season Division Standings - ESPN",
+      "url": "https://www.espn.com/mlb/standings/_/seasontype/2",
+      "snippet": "Visit ESPN for the complete 2026 MLB Regular Season Division standings. Includes winning percentage, home and away record, …"
+    },
+    {
+      "title": "Pakon/thai-qa-lab-model · Hugging Face",
+      "url": "https://huggingface.co/Pakon/thai-qa-lab-model",
+      "snippet": "Pakon / thai-qa-lab-model like 0 Safetensors trang_qa_50 Thai gpt2 thai qa fine-tuned arxiv:1910.09700 License:mit Model card FilesFiles and versions xet Community Copy to bucket new Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and ..."
+    },
+    {
+      "title": "2026 MLB Standings and Records: Wild Card",
+      "url": "https://www.mlb.com/standings/wild-card/mlb?msockid=17db5694aef96f3f11e64158af536e3c",
+      "snippet": "The official standings for Major League Baseball including division and league standings for regular season, wild card, and playoffs."
+    }
+  ]
+}

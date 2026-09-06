@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kingjones777/K2-Horizon-MoVA-36B-A4B-ROCmFP4-GGUF",
+  "slug": "kingjones777-k2-horizon-mova-36b-a4b-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/K2-Horizon-MoVA-36B-A4B-ROCmFP4-GGUF",
+  "created_at": "2026-09-06T18:10:11.000Z",
+  "updated_at": "2026-09-06T18:17:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocm",
+    "vulkan",
+    "rocmfp4",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "moe",
+    "reasoning",
+    "k2-horizon",
+    "text-generation",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 100422743424,
+  "storage_human": "100.4 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connexion à Geneanet - Geneanet",
+      "url": "https://www.geneanet.org/connexion/",
+      "snippet": "Geneanet Premium Geneanet recrute Espace presse CGU/ CGVGestion des cookiesPolitique de confidentialité Connectez-vous à …"
+    },
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
+      "snippet": "K2-Horizon-MoVA-36B-A4B is the sparse member of the K2-Horizon family: a Mixture-of-Experts model with Mixture-of-Values attention (MoVA) that stores 36B parameters and runs 4B per token."
+    },
+    {
+      "title": "Geneanet",
+      "url": "https://www.geneanet.org/",
+      "snippet": "Geneanet ne diffuse pas de publicité et le fait d'utiliser un bloqueur de publicité peut ralentir voire détériorer votre expérience sur le …"
+    },
+    {
+      "title": "K2 Horizon - a IFM Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/IFM/k2-horizon",
+      "snippet": "K2 Horizon models, datasets, and supporting resources. Upvote . 16 +6; Sort: Collection. IFM/K2-Horizon-375B-A23B. Text Generation • 379B • Updated about 2 hours ago • 9"
+    },
+    {
+      "title": "Faites votre généalogie gratuitement en ligne - Geneanet",
+      "url": "https://www.geneanet.org/creer-votre-arbre/",
+      "snippet": "Débutez facilement votre arbre généalogique sur Geneanet. Ajoutez votre famille puis partez à la recherche de vos ancêtres !"
+    }
+  ]
+}

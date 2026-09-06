@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/sqabf-grpo-entropy-step1100",
+  "slug": "sandeep123-sqabf-grpo-entropy-step1100",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/sqabf-grpo-entropy-step1100",
+  "created_at": "2026-09-06T11:00:49.000Z",
+  "updated_at": "2026-09-06T11:03:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/\"",
+      "snippet": ""
+    },
+    {
+      "title": "sandeep123/sqa-grpo-entropy-step1100 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/sqa-grpo-entropy-step1100",
+      "snippet": "sandeep123 / sqa-grpo-entropy-step1100 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new sqa-grpo-entropy-step1100 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on ..."
+    },
+    {
+      "title": "Tammy Payne Reeder - Facebook",
+      "url": "https://www.facebook.com/tammy.paynereeder/",
+      "snippet": "Tammy Payne Reeder is at Grande Colonial Hotel, La Jolla."
+    },
+    {
+      "title": "sandeep123/math-grpo-entropy-step1100 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/math-grpo-entropy-step1100",
+      "snippet": "sandeep123 / math-grpo-entropy-step1100 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new math-grpo-entropy-step1100 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on ..."
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/feed/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

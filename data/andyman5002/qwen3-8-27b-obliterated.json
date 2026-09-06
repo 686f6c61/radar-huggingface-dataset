@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "andyman5002/Qwen3.8-27B-OBLITERATED",
+  "slug": "andyman5002-qwen3-8-27b-obliterated",
+  "author": "andyman5002",
+  "url": "https://huggingface.co/andyman5002/Qwen3.8-27B-OBLITERATED",
+  "created_at": "2026-09-06T13:32:12.000Z",
+  "updated_at": "2026-09-06T13:32:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 237137389456,
+  "storage_human": "237.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gent live scores, results, fixtures, Cercle Brugge v Gent live ...",
+      "url": "https://www.flashscore.com/team/gent/MgkzUx7T/",
+      "snippet": "Flashscore.com offers Gent livescore, final and partial results, standings, home stadium with official capacity, squad updates (signed …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Football - scores, schedule & odds | Sofascore",
+      "url": "https://www.sofascore.com/football/team/kaa-gent/2903",
+      "snippet": "R xT u001c: xR u0019^ u001f ! u00044Ǭ F A j\\^ S u001c1 { x R ɉ u0015u0005a. ; bpp [ /I - 4 u0007nu001b!$ ( }@O …"
+    },
+    {
+      "title": "ai/Qwen3.8-27B-OBLITERATED at main · bigguy8585/ai · GitHub",
+      "url": "https://github.com/bigguy8585/ai/tree/main/Qwen3.8-27B-OBLITERATED",
+      "snippet": "This model will comply with requests that stock Qwen3.8-27B would refuse. V3 goes beyond removing hard refusals — it also eliminates soft deflections where the model gives safety lectures instead of real answers. Tested across 1000+ prompts spanning restricted knowledge, code generation, security research, and red-team scenarios."
+    },
+    {
+      "title": "KAA Gent - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/KAA_Gent",
+      "snippet": "Lion Award Retrieved from \"https://en.wikipedia.org/w/index.php?title=KAA_Gent&oldid=1373379780\" Categories: KAA Gent …"
+    }
+  ]
+}

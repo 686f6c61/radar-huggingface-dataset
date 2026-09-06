@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Abraham001-LIMO/DeepSeek-V4-Flash-Vision-Exp",
+  "slug": "abraham001-limo-deepseek-v4-flash-vision-exp",
+  "author": "Abraham001-LIMO",
+  "url": "https://huggingface.co/Abraham001-LIMO/DeepSeek-V4-Flash-Vision-Exp",
+  "created_at": "2026-09-06T13:24:32.000Z",
+  "updated_at": "2026-09-06T13:24:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304646824126,
+  "parameters_human": "304.65B",
+  "storage_bytes": 167819616863,
+  "storage_human": "167.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Keyboard Simulator | Design and test virtual keyboards",
+      "url": "https://keyboardsimulator.xyz/",
+      "snippet": "Design and test virtual keyboards Looks like you're not using javascript or something has gone wrong, keyboard simulator needs …"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We are excited to introduce DeepSeek-V4-Flash-Vision-Exp, our first experimental multimodal model in the DeepSeek-V4 family. It builds on the DeepSeek-V4-Flash architecture by incorporating visual modules and undergoing continued training to unlock visual understanding capabilities."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "DeepSeek's first experimental multimodal V4 model — the V4-Flash MoE backbone plus a 32-layer vision tower, 1M context, and a fused DSpark draft module."
+    },
+    {
+      "title": "deepseek-v4-flash Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash is a 284B MoE model with 1M-token context optimized for fast coding and agents."
+    },
+    {
+      "title": "DeepSeek V4: Specs, Benchmarks and the 0731 Release",
+      "url": "https://felloai.com/deepseek-v4/",
+      "snippet": "DeepSeek V4 explained: the V4-Flash-0731 release, 284B/13B MoE architecture, 1M token context, MIT weights, and how its benchmarks compare to the frontier."
+    }
+  ]
+}

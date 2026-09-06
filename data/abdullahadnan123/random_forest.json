@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "abdullahadnan123/Random_Forest",
+  "slug": "abdullahadnan123-random_forest",
+  "author": "abdullahadnan123",
+  "url": "https://huggingface.co/abdullahadnan123/Random_Forest",
+  "created_at": "2026-09-06T13:28:19.000Z",
+  "updated_at": "2026-09-06T13:30:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 246600081,
+  "storage_human": "247 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cal Ripken Jr. - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cal_Ripken_Jr.",
+      "snippet": "move to sidebarhide. (Top) 1Early life. 2Professional career. Toggle Professional career subsection. 2.1Draft and minor leagues. …"
+    },
+    {
+      "title": "Random Forest Algorithm in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/random-forest-algorithm-in-machine-learning/",
+      "snippet": "Random Forest is a machine learning algorithm that uses many decision trees to make better predictions. Each tree looks at different random parts of the data and their results are combined by voting for classification or averaging for regression which makes it as ensemble learning technique. This helps in improving accuracy and reducing errors."
+    },
+    {
+      "title": "How Cal Ripken Jr. breaking Lou Gehrig's record revitalized baseball ...",
+      "url": "https://www.latimes.com/sports/angels/story/2025-09-05/angels-cal-ripken-lou-gehrig-iron-man-2131-games",
+      "snippet": "Sep 5, 2025 · Cal Ripken Jr. acknowledges the fans as he gets a standing ovation for playing in his 2,131st consecutive game, …"
+    },
+    {
+      "title": "A Practical Guide to Random Forests in Machine Learning | DigitalOcean",
+      "url": "https://www.digitalocean.com/community/tutorials/random-forest-in-machine-learning",
+      "snippet": "Explore Random Forest in machine learning—its working, advantages, and use in classification and regression with simple examples and tips."
+    },
+    {
+      "title": "Cal Ripken breaks Lou Gehrig’s record - Baseball Hall of Fame",
+      "url": "https://baseballhall.org/discover/inside-pitch/cal-ripken-breaks-lou-gehrigs-consecutive-games-record",
+      "snippet": "Cal Ripken takes a lap after the fifth inning of his 2,131st consecutive game played on Sept. 6, 1995. (National Baseball Hall of Fame …"
+    }
+  ]
+}

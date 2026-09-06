@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "s1nan/llama-3.2-3b-qlora-myproject",
+  "slug": "s1nan-llama-3-2-3b-qlora-myproject",
+  "author": "s1nan",
+  "url": "https://huggingface.co/s1nan/llama-3.2-3b-qlora-myproject",
+  "created_at": "2026-09-06T12:47:51.000Z",
+  "updated_at": "2026-09-06T12:59:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qlora",
+    "lora",
+    "peft",
+    "unsloth",
+    "trl",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:mlabonne/guanaco-llama2-1k",
+    "base_model:unsloth/Llama-3.2-3B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.2-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114517464,
+  "storage_human": "115 MB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Fix Network Connection Issues in Windows 10",
+      "url": "https://community.microcenter.com/discussion/2304/how-to-fix-network-connection-issues-in-windows-10",
+      "snippet": "Here is how to uninstall and reinstall network drivers in Windows 10: 1. Right click on the Start Button, typically found at the lower left …"
+    },
+    {
+      "title": "meta-llama/Llama-3.2-3B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B",
+      "snippet": "For the 1B and 3B Llama 3.2 models, we incorporated logits from the Llama 3.1 8B and 70B models into the pretraining stage of the model development, where outputs (logits) from these larger models were used as token-level targets."
+    },
+    {
+      "title": "Introducing quantized Llama models with increased speed and a reduced memory footprint",
+      "url": "https://ai.meta.com/blog/meta-llama-quantized-lightweight-models/",
+      "snippet": "As a result of the close collaborative work with our industry-leading partners, QLoRA and SpinQuant Llama models are available on Qualcomm and MediaTek SoCs with Arm CPUs. The performance of the quantized models has been optimized for mobile CPUs using Kleidi AI kernels, and we’re currently collaborating with our partners to utilize NPUs for even greater performance for Llama 1B/3B."
+    },
+    {
+      "title": "llama-models/models/llama3_2/MODEL_CARD.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "snippet": "Model Information The Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks."
+    },
+    {
+      "title": "Software — Micro Center",
+      "url": "https://community.microcenter.com/categories/software",
+      "snippet": "Nov 24, 2023 · Categories - Guides for Windows, iOS, Linux, and more"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "fotapol/qwen3-1.7b-financial-rag-lora-v3",
+  "slug": "fotapol-qwen3-1-7b-financial-rag-lora-v3",
+  "author": "fotapol",
+  "url": "https://huggingface.co/fotapol/qwen3-1.7b-financial-rag-lora-v3",
+  "created_at": "2026-09-06T13:15:57.000Z",
+  "updated_at": "2026-09-06T13:16:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "qwen3",
+    "rag",
+    "finance",
+    "financial-question-answering",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46340158,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "fotapol/qwen3-1.7b-financial-qa-lora · Hugging Face",
+      "url": "https://huggingface.co/fotapol/qwen3-1.7b-financial-qa-lora",
+      "snippet": "Qwen3-1.7B Financial QA LoRA This repository contains a LoRA adapter for Qwen/Qwen3-1.7B fine-tuned on normalized FinQA and DocFinQA financial question-answering examples."
+    },
+    {
+      "title": "Google Videos",
+      "url": "https://www.google.de/videohp",
+      "snippet": "Search millions of videos from across the web."
+    },
+    {
+      "title": "fotapol/qwen3-1.7b-financial-qa-lora at main - Hugging Face",
+      "url": "https://huggingface.co/fotapol/qwen3-1.7b-financial-qa-lora/tree/main",
+      "snippet": "Instructions to use fotapol/qwen3-1.7b-financial-qa-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use fotapol/qwen3-1.7b-financial-qa-lora with PEFT:"
+    },
+    {
+      "title": "Google Bilder",
+      "url": "https://images.google.de/?hl=de",
+      "snippet": "Google Bilder, die umfassendste Bildersuche im Web"
+    }
+  ]
+}

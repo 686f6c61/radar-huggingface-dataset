@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "xlate/kokoro",
+  "slug": "xlate-kokoro",
+  "author": "xlate",
+  "url": "https://huggingface.co/xlate/kokoro",
+  "created_at": "2026-09-06T15:02:17.000Z",
+  "updated_at": "2026-09-06T15:43:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 461846953,
+  "storage_human": "462 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TV-Programm heute - Play SRF",
+      "url": "https://www.srf.ch/play/tv/programm/heute",
+      "snippet": "May 8, 2026 · Das TV-Programm von heute. Im Fernsehprogramm finden Sie alle Sender im Überblick. Jetzt auf Play SRF."
+    },
+    {
+      "title": "hexgrad/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "snippet": "Kokorois an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient. With Apache-licensed weights, Kokoro can be deployed anywhere from production environments to personal projects."
+    },
+    {
+      "title": "SRF 1 - Live - TV - Play SRF",
+      "url": "https://www.srf.ch/play/tv/live",
+      "snippet": "1 day ago · Auf Play SRF können Sie zahlreiche TV-Sendungen von SRF online ansehen, wann und so oft Sie wollen."
+    },
+    {
+      "title": "GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/hexgrad/kokoro",
+      "snippet": "[Kokoro](/kˈOkəɹO/) is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "TV Sender Programm - Play SRF",
+      "url": "https://www.srf.ch/play/tv/programm-nach-sender",
+      "snippet": "1 day ago · Das TV-Programm vom 05.09.2026. Im Fernsehprogramm finden Sie alle Sender im Überblick. Jetzt auf Play SRF."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen3_4b_math_nothink_strip_planb_paper",
+  "slug": "montalte-qwen3_4b_math_nothink_strip_planb_paper",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen3_4b_math_nothink_strip_planb_paper",
+  "created_at": "2026-09-06T15:05:20.000Z",
+  "updated_at": "2026-09-06T15:08:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "localize-and-stitch",
+    "plan-b",
+    "merge",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wahlergebnisse und Analysen | tagesschau.de",
+      "url": "https://www.tagesschau.de/wahl/",
+      "snippet": "Überblick zu Hintergründen, Analysen und Interviews bei tagesschau.de - die erste Adresse für Nachrichten und umfassende …"
+    },
+    {
+      "title": "winglian/qwen3-4b-math · Hugging Face",
+      "url": "https://huggingface.co/winglian/qwen3-4b-math",
+      "snippet": "This model is a fine-tuned version of Qwen/Qwen3-4B-Base on the winglian/OpenThoughts-114k-math-correct dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "ARD-Hochrechnung: Grüne in Baden-Württemberg knapp vor CDU",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-baden-wuerttemberg-114.html",
+      "snippet": "Mar 8, 2026 · Bei der Landtagswahl in Baden-Württemberg liegen die Grünen vor der CDU. Die AfD holt ihr bisher bestes Ergebnis. …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Landtagswahl Brandenburg 2024 - Ergebnisse und Analysedaten",
+      "url": "https://www.wahl.tagesschau.de/wahl/archiv/2024-09-22-LT-DE-BB/",
+      "snippet": "Sep 22, 2024 · Landtagswahl Brandenburg 2024: Ergebnis und Sitzverteilung, Wahlkreise und Analysedaten im Wahlarchiv von …"
+    }
+  ]
+}

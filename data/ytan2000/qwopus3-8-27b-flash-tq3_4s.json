@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "YTan2000/Qwopus3.8-27B-Flash-TQ3_4S",
+  "slug": "ytan2000-qwopus3-8-27b-flash-tq3_4s",
+  "author": "YTan2000",
+  "url": "https://huggingface.co/YTan2000/Qwopus3.8-27B-Flash-TQ3_4S",
+  "created_at": "2026-09-06T11:03:07.000Z",
+  "updated_at": "2026-09-06T11:58:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen",
+    "qwen3.8",
+    "qwopus",
+    "turboquant",
+    "tq3_4s",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16010470467,
+  "storage_human": "16.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "poki・playhop・laggedこの3つの無料子供向けゲーム... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13317752273",
+      "snippet": "Jul 21, 2025 · Pokiという無料オンラインゲームについて質問です。 最近娘（7歳）がPokiの無料オンラインゲームにハマっています …"
+    },
+    {
+      "title": "YTan2000/Qwen3.8-27B-TQ3_4S · Hugging Face",
+      "url": "https://huggingface.co/YTan2000/Qwen3.8-27B-TQ3_4S",
+      "snippet": "Instructions to use YTan2000/Qwen3.8-27B-TQ3_4S with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "win11怎么打开磁盘管理？windows11在哪打开磁盘管理？ - 知乎",
+      "url": "https://www.zhihu.com/question/493732209",
+      "snippet": "Oct 21, 2021 · win11怎么打开磁盘管理？ windows11在哪打开磁盘管理？"
+    },
+    {
+      "title": "YTan2000/Qwopus3.5-27B-v3-TQ3_4S · Hugging Face",
+      "url": "https://huggingface.co/YTan2000/Qwopus3.5-27B-v3-TQ3_4S",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "「POKIPOKI」 - 無料オンラインゲーム「POKIPOKI」がし... - Yahoo!知 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1018333575",
+      "snippet": "Aug 10, 2008 · 「POKI POKI」無料オンラインゲーム「POKIPOKI」がしたくて、ダウンロードまでして、いざゲームスタート!する …"
+    }
+  ]
+}

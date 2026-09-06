@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-B-Mean1Reweight-ForwardKL-gap01-original10240",
+  "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-visionzip-r010-b-mean1reweight-forwardkl-gap01-original10240",
+  "author": "enmingzhangzz",
+  "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-B-Mean1Reweight-ForwardKL-gap01-original10240",
+  "created_at": "2026-09-06T15:09:11.000Z",
+  "updated_at": "2026-09-06T15:22:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2.5-vl",
+    "opsd",
+    "visionzip",
+    "lora",
+    "image-text-to-text",
+    "dataset:OpenMMReasoner/OpenMMReasoner-SFT-874K",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161539072,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://www.gmail.com/app",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-Top10-ForwardKL ...",
+      "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-Top10-ForwardKL-original10240",
+      "snippet": "Instructions to use enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-Top10-ForwardKL-original10240 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Postmaster Tools – Google",
+      "url": "https://www.gmail.com/postmaster/",
+      "snippet": "Be a better sender Use Postmaster Tools to analyze your email performance, and help Gmail route your messages to the right place. …"
+    },
+    {
+      "title": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240 ...",
+      "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240",
+      "snippet": "Qwen2.5-VL-7B OPSD Official VisionZip r010 This repository contains the lightweight LoRA evaluation checkpoint from the completed 10,240-sample OPSD training run using the official VisionZip token selection implementation at a 10% visual-token retention ratio."
+    },
+    {
+      "title": "Unsubscribe",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobyP2IfJEz04XFLz1NsHAEqQfzNsgf6YuMvEtNJ2R7LK9W8M6Xq3RGc-uBNP_CDcRBmCEihdJJPkJTaQ6ka0y4R07eaGHCcHioRzWLmMLW0QieHOyjX7owgK1n-OuyceZJaZTdXgsPXh8vOC8rC8Xxog9S2szD7cXvJTfxrkX3rDkilLKbb3Vc4t_-MoRTeHGc-sj-cfeAJKOq2Nk1x210DGVD13M_IOY_uIyKDfasZ8RjaZjMfbs1J80dNfRqSj0xPYUyqrcQPw1Q==",
+      "snippet": "You will no longer receive messages from Joris Quarshie (joris@openheritagefoundation.org) at this address: african …"
+    }
+  ]
+}

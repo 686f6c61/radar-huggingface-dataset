@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "wanglab/sft_gene_pathway_v7_6_100k_a256bs32_9b",
+  "slug": "wanglab-sft_gene_pathway_v7_6_100k_a256bs32_9b",
+  "author": "wanglab",
+  "url": "https://huggingface.co/wanglab/sft_gene_pathway_v7_6_100k_a256bs32_9b",
+  "created_at": "2026-09-06T18:37:02.000Z",
+  "updated_at": "2026-09-06T18:38:52.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "biology",
+    "single-cell",
+    "perturbation",
+    "crispr",
+    "reasoning",
+    "multimodal",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18940579486,
+  "storage_human": "18.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is FlexJobs worth it? : r/remotework - Reddit",
+      "url": "https://www.reddit.com/r/remotework/comments/17bllt7/is_flexjobs_worth_it/",
+      "snippet": "I tried Flexjobs years ago, and was considering the 14-day trial again because of so many scams on both Indeed and LinkedIn. I don't …"
+    },
+    {
+      "title": "wanglab/sft_gene_pathway_v7_6_100k_relabel_9b · Hugging Face",
+      "url": "https://huggingface.co/wanglab/sft_gene_pathway_v7_6_100k_relabel_9b",
+      "snippet": "Instructions to use wanglab/sft_gene_pathway_v7_6_100k_relabel_9b with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "Is Data Annotation a scam? : r/WFHJobs - Reddit",
+      "url": "https://www.reddit.com/r/WFHJobs/comments/135xojm/is_data_annotation_a_scam/",
+      "snippet": "May 2, 2023 · Does anyone know if data annotation is a scam? They have projects you work on for money. I can’t remember if I gave …"
+    },
+    {
+      "title": "sft_gene_pathway_v7_6_100k_relabel_9b API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/wanglab/sft_gene_pathway_v7_6_100k_relabel_9b",
+      "snippet": "Deploy sft_gene_pathway_v7_6_100k_relabel_9b with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "论文中引用网页内容在文中怎么标注？ - 知乎",
+      "url": "https://www.zhihu.com/question/457765989",
+      "snippet": "①主要责任者：作者名字；如果没有作者，可以写这篇报道的责任机构，比如说央视网、XXX研究所、XXX局等；②题名：这一项一般 …"
+    }
+  ]
+}

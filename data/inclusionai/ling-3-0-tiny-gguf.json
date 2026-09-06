@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ling-3.0-tiny-GGUF",
+  "slug": "inclusionai-ling-3-0-tiny-gguf",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny-GGUF",
+  "created_at": "2026-08-30T09:52:42.000Z",
+  "updated_at": "2026-08-31T02:59:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 4397,
+  "trending_score": 8,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 41170264000,
+  "storage_human": "41.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ÖFB Cup | oefb.at",
+      "url": "https://www.oefb.at/cup",
+      "snippet": "News, Livestreams und Statistiken zum Cupbewerb des Österreichischen Fußball-Bundes."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-tiny-GGUF · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ÖFB – Österreichischer Fußball-Bund | oefb.at",
+      "url": "https://www.oefb.at/",
+      "snippet": "Herzlich willkommen auf der offiziellen Website des Österreichischen Fußballbundes.&nbsp;"
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-tiny · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "News | GAK 1902 Vereinshomepage - oefb.at",
+      "url": "https://vereine.oefb.at/GAK1902/News/",
+      "snippet": "Wir heißen unsere Fans auf der neuen fussballoesterreich.at-Vereinshomepage herzlich willkommen! Vereinskontakte. Kontaktdaten …"
+    }
+  ]
+}

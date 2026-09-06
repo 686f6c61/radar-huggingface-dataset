@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "UnimeType/Transliteration-4B-GGUF",
+  "slug": "unimetype-transliteration-4b-gguf",
+  "author": "UnimeType",
+  "url": "https://huggingface.co/UnimeType/Transliteration-4B-GGUF",
+  "created_at": "2026-09-06T11:07:02.000Z",
+  "updated_at": "2026-09-06T11:45:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "hi",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "transliteration",
+    "pinyin",
+    "romaji",
+    "hinglish",
+    "arabizi",
+    "qwen3.5",
+    "text-generation",
+    "en",
+    "zh",
+    "ja",
+    "hi",
+    "ar",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4482402592,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "UnimeType/Transliteration-4B · Hugging Face",
+      "url": "https://huggingface.co/UnimeType/Transliteration-4B",
+      "snippet": "UnimeType Transliteration 4B is a focused language conversion model for everyday, mixed-language writing. It converts Pinyin, Romaji, Romanized Hindi, Hinglish, and Arabizi while keeping clear English words, product names, links, code, numbers, punctuation, and emoji in place."
+    },
+    {
+      "title": "法语的几个特殊的字母，列出来一下_百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "2011-09-26 法语的那些特殊字母怎么打？ 3 2013-07-18 法语13个特殊字母怎么读？ 4 2013-11-25 怎样打出法语的特殊字母啊 1 2018 …"
+    },
+    {
+      "title": "UnimeType (UnimeType) - Hugging Face",
+      "url": "https://huggingface.co/UnimeType",
+      "snippet": "View all activity Team members 1 models1 UnimeType/Transliteration-4B Text Generation •0.9B•Updated about 6 hours ago datasets0 None public yet"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "按照国家标准，当你是使用波浪线符号的正规用法——表示一个数字范围的时候，请用一字宽的「～」U+FF5E FULLWIDTH TILDE， …"
+    }
+  ]
+}

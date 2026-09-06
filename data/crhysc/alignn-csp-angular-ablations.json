@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "crhysc/alignn-csp-angular-ablations",
+  "slug": "crhysc-alignn-csp-angular-ablations",
+  "author": "crhysc",
+  "url": "https://huggingface.co/crhysc/alignn-csp-angular-ablations",
+  "created_at": "2026-09-06T15:41:12.000Z",
+  "updated_at": "2026-09-06T15:41:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "alignn",
+  "languages": [],
+  "tags": [
+    "alignn",
+    "materials-science",
+    "crystal-structure-prediction",
+    "diffusion",
+    "ablation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 430405898,
+  "storage_human": "430 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EDEKA next",
+      "url": "https://verbund.edeka/karriere/karrierem%C3%B6glichkeiten/f%C3%BCr-mitarbeiter/digitales-lernen/edeka-next/",
+      "snippet": "EDEKA next ist die neue Lernplattform im EDEKA-Verbund. Ab 2023 stehen dir dort alle Lerninhalte und vieles mehr zur Verfügung."
+    },
+    {
+      "title": "GitHub - usnistgov/alignn: Atomistic Line Graph Neural Network https ...",
+      "url": "https://github.com/usnistgov/alignn",
+      "snippet": "The main script to train model is train_alignn.py. A user needs at least the following info to train a model: 1) id_prop.csv with name of the file and corresponding value, 2) config_example.json a config file with training and hyperparameters."
+    },
+    {
+      "title": "EDEKA Campus - Web-Seminare & Kurse",
+      "url": "https://verbund.edeka/karriere/karrierem%C3%B6glichkeiten/f%C3%BCr-mitarbeiter/edeka-campus/online-angebote/web-seminare-kurse/",
+      "snippet": "Unser klassisches Seminarprogramm mit Präsenzseminaren wird durch unser Online-Kursprogramm ergänzt. Die Web-Seminare …"
+    },
+    {
+      "title": "alignn/alignn at main · usnistgov/alignn · GitHub",
+      "url": "https://github.com/usnistgov/alignn/tree/main/alignn",
+      "snippet": "run_alignn_ff.py train.py train.py train_alignn.py train_alignn.py train_props.py train_props.py"
+    },
+    {
+      "title": "Edeka Wissensportal De Meine Kurse – DHWP",
+      "url": "https://happy.supersportgeo.de/edeka-wissensportal-de-meine-kurse/",
+      "snippet": "Aug 12, 2025 · Bis Ende letzten Jahres unterstützte das EDEKA Wissensportal rund 180.000 Lernende im EDEKA-Verbund mit …"
+    }
+  ]
+}

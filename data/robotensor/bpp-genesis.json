@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "robotensor/bpp-genesis",
+  "slug": "robotensor-bpp-genesis",
+  "author": "robotensor",
+  "url": "https://huggingface.co/robotensor/bpp-genesis",
+  "created_at": "2026-09-06T18:46:42.000Z",
+  "updated_at": "2026-09-06T18:46:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "in-context-learning",
+    "libero",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4141121892,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Яндекс Картинки: поиск по изображению",
+      "url": "https://yandex.ru/images/search?rpt=imageview",
+      "snippet": "Поиск одежды и похожих товаров по картинке, распознавание и перевод текста, проверка уникальности изображения в …"
+    },
+    {
+      "title": "robotensor (Robotensor) - Hugging Face",
+      "url": "https://huggingface.co/robotensor/models",
+      "snippet": "Team members 1 robotensor's models1 Sort: Recently updated robotensor/bpp-libero-genesis Robotics •0.7B•Updated about 8 hours ago System theme Company"
+    },
+    {
+      "title": "Поиск по картинкам и фото — Яндекс Картинки",
+      "url": "https://yandex.ru/images/",
+      "snippet": "Ричмонд Обратная связьСправка Настройки Поиск по картинкам и фото ya.ru О компанииЛицензия на …"
+    },
+    {
+      "title": "robotensor/bpp-libero-genesis · Hugging Face",
+      "url": "https://huggingface.co/robotensor/bpp-libero-genesis",
+      "snippet": "bpp-libero-genesis The genesis (baseline) checkpoint for Robotensor's one-demonstration in-context imitation learning competition. This is the public Behavior Prompting PolicyLIBERO checkpoint (austinpatel/libero, libero_behavior_prompting.ckpt), converted to model.safetensors+ config.yamlby icilval convert-ckpt— no pickle, weights only."
+    },
+    {
+      "title": "Яндекс Музыка — собираем музыку и подкасты для вас",
+      "url": "https://music.yandex.ru/",
+      "snippet": "Персональные рекомендации, подборки на любой случай, подкасты обо всём на свете и музыкальные новинки — с Яндекс …"
+    }
+  ]
+}

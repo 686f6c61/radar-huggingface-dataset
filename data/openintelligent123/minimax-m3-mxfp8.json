@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/MiniMax-M3-MXFP8",
+  "slug": "openintelligent123-minimax-m3-mxfp8",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/MiniMax-M3-MXFP8",
+  "created_at": "2026-09-06T13:25:09.000Z",
+  "updated_at": "2026-09-06T13:25:11.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimax_m3_vl",
+    "image-text-to-text",
+    "multimodal",
+    "moe",
+    "agent",
+    "coding",
+    "video",
+    "conversational",
+    "custom_code",
+    "arxiv:2606.13392",
+    "base_model:MiniMaxAI/MiniMax-M3",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3",
+    "license:other",
+    "endpoints_compatible",
+    "mxfp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 427040140160,
+  "parameters_human": "427.04B",
+  "storage_bytes": 443753494405,
+  "storage_human": "443.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Who is LinkedIn for? Anyone looking to navigate their professional life. Find a coworker or classmate Find a new job Find a course or …"
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-M3-MXFP8 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3-MXFP8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "url": "https://www.linkedin.com/login/",
+      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-M3-MXFP8 at main - Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3-MXFP8/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LinkedIn | LinkedIn",
+      "url": "https://in.linkedin.com/company/linkedin",
+      "snippet": "Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 1 billion …"
+    }
+  ]
+}

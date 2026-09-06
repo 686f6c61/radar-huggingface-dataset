@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "prasadvittaldev/pocket-tts-hindi-female-syspin",
+  "slug": "prasadvittaldev-pocket-tts-hindi-female-syspin",
+  "author": "prasadvittaldev",
+  "url": "https://huggingface.co/prasadvittaldev/pocket-tts-hindi-female-syspin",
+  "created_at": "2026-09-06T12:35:36.000Z",
+  "updated_at": "2026-09-06T12:36:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "hindi",
+    "indic",
+    "cpu",
+    "on-device",
+    "hi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109502146,
+  "parameters_human": "109.5M",
+  "storage_bytes": 749140431,
+  "storage_human": "749 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loto Grecia Kino (20/80): Ultimele rezultate | LotoStats.ro",
+      "url": "https://lotostats.ro/rezultate-grecia-kino-20-80",
+      "snippet": "Scheme Reduse Extrageri Live Predicții Loto Grecia Kino (20/80)este o loterie din Grecia în care se extrag 20 din 80 de numere, plus …"
+    },
+    {
+      "title": "prasadvittaldev/pocket-tts-tamil-female-audiobook · Hugging Face",
+      "url": "https://huggingface.co/prasadvittaldev/pocket-tts-tamil-female-audiobook",
+      "snippet": "Instructions to use prasadvittaldev/pocket-tts-tamil-female-audiobook with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Loto Grecia Kino (20/80): Arhiva | LotoStats.ro",
+      "url": "https://lotostats.ro/toate-rezultatele-grecia-kino-20-80",
+      "snippet": "Consultați arhiva completă și actualizată a rezultatelor loteriei Loto Grecia Kino (20/80). Verificați numerele câștigătoare."
+    },
+    {
+      "title": "Hindi Voice Maker - Narakeet",
+      "url": "https://www.narakeet.com/languages/hindi-text-to-voice/",
+      "snippet": "Watch the video here. Hindi Voice Maker Narakeet makes it easy to create videos and audio files with life-like audio from text. Get started with Hindi text to speech free, using realistic AI voice generators. Select from one of our text-to-speech Hindi male and female voices below, and enter some text to create the audio."
+    },
+    {
+      "title": "Loto Grecia Kino 20/80: Rezultate LIVE | GrKino.com",
+      "url": "https://grkino.com/",
+      "snippet": "⭐⭐⭐⭐⭐ Loto Grecia Kino - Rezultate si statistici actualizate imediat dupa fiecate extragere. Arhiva, Top Aparitii, Top remize, …"
+    }
+  ]
+}

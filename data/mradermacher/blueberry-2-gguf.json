@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/BlueBerry-2-GGUF",
+  "slug": "mradermacher-blueberry-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BlueBerry-2-GGUF",
+  "created_at": "2026-09-06T13:11:44.000Z",
+  "updated_at": "2026-09-06T14:30:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mixture-of-experts",
+    "mxfp4",
+    "text-generation",
+    "pytorch",
+    "jax",
+    "tf",
+    "fa",
+    "en",
+    "base_model:artindnr/BlueBerry-2",
+    "base_model:quantized:artindnr/BlueBerry-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116829156672,
+  "parameters_human": "116.83B",
+  "storage_bytes": 657909502976,
+  "storage_human": "657.9 GB",
+  "base_model": "artindnr/BlueBerry-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger l'application mobile YouTube - Android - Aide YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Download the YouTube mobile app - Android - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=en-GB&co=GENIE.Platform%3DAndroid",
+      "snippet": "Download the YouTube app for a richer viewing experience on your mobile device. Download the app Note: Downloading the app …"
+    },
+    {
+      "title": "mradermacher/ai-girlfriend-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ai-girlfriend-v2-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/tardis/zm/art/671840325",
+      "snippet": ""
+    }
+  ]
+}

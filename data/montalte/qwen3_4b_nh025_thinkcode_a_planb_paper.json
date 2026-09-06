@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen3_4b_nh025_thinkcode_a_planb_paper",
+  "slug": "montalte-qwen3_4b_nh025_thinkcode_a_planb_paper",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen3_4b_nh025_thinkcode_a_planb_paper",
+  "created_at": "2026-09-06T15:17:34.000Z",
+  "updated_at": "2026-09-06T15:22:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "localize-and-stitch",
+    "plan-b",
+    "merge",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zotero | Your personal research assistant",
+      "url": "https://www.zotero.org/",
+      "snippet": "Zotero instantly creates references and bibliographies for any text editor, and directly inside Word, LibreOffice, and Google Docs. …"
+    },
+    {
+      "title": "modrill/Qwen3-4B-Base-ThinkCode-A-NH025 · Hugging Face",
+      "url": "https://huggingface.co/modrill/Qwen3-4B-Base-ThinkCode-A-NH025",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Zotero | Login",
+      "url": "https://www.zotero.org/user/login/",
+      "snippet": "Zotero is a free, easy-to-use tool to help you collect, organize, cite, and share research."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    },
+    {
+      "title": "Zotero — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Zotero",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Zotero 28 languesAjouter un sujet"
+    }
+  ]
+}
