@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kageroumado/rocuronium-ui-detector",
+  "slug": "kageroumado-rocuronium-ui-detector",
+  "author": "kageroumado",
+  "url": "https://huggingface.co/kageroumado/rocuronium-ui-detector",
+  "created_at": "2026-09-06T00:54:02.000Z",
+  "updated_at": "2026-09-06T00:54:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "object-detection",
+    "ui-detection",
+    "yolov11",
+    "gui-agents",
+    "macos",
+    "dataset:ServiceNow/GroundCUA",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:quantized:Ultralytics/YOLO11",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5391590,
+  "storage_human": "5 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY - käännös suomeksi - bab.la Englanti-Suomi sanakirja",
+      "url": "https://fi.bab.la/sanakirja/englanti-suomi/query",
+      "snippet": "Web search queries are distinctive in that they are unstructured and often ambiguous; they vary greatly from standard query …"
+    },
+    {
+      "title": "kageroumado (陽炎窓) · GitHub",
+      "url": "https://github.com/kageroumado",
+      "snippet": "光を曲げる人 / bending light into software. kageroumado has 15 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "Query 5 languagesAdd topic"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    }
+  ]
+}

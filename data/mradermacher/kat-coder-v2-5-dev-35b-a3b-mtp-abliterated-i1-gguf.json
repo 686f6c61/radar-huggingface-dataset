@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-i1-GGUF",
   "created_at": "2026-09-05T08:42:51.000Z",
-  "updated_at": "2026-09-05T10:19:33.000Z",
+  "updated_at": "2026-09-06T03:13:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -42,8 +42,8 @@
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 29246031904,
-  "storage_human": "29.2 GB",
+  "storage_bytes": 279161217312,
+  "storage_human": "279.2 GB",
   "base_model": "jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED",
   "formats": [
     "gguf"

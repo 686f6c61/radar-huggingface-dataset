@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Justvugg/GLM-5.3-colibri-int4-g64",
+  "slug": "justvugg-glm-5-3-colibri-int4-g64",
+  "author": "Justvugg",
+  "url": "https://huggingface.co/Justvugg/GLM-5.3-colibri-int4-g64",
+  "created_at": "2026-09-06T00:27:36.000Z",
+  "updated_at": "2026-09-06T00:43:36.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "colibri",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "colibri",
+    "moe",
+    "int4",
+    "cpu",
+    "expert-streaming",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sexes Vieux Et Jeunes Vidéos Stock – 662 extraits de ... - Adobe Stock",
+      "url": "https://stock.adobe.com/fr/search/video?k=sexes+vieux+et+jeunes&msockid=07bf3cc74e57615b2f5f2b0b4fb460a1",
+      "snippet": "Modèle : Mes bibliothèques Éléments similaires. Faire glisser une image ici ou parcourir Transfert de votre image..."
+    },
+    {
+      "title": "Justvugg/GLM-5.3-colibri-int4-g64 · Hugging Face",
+      "url": "https://huggingface.co/Justvugg/GLM-5.3-colibri-int4-g64",
+      "snippet": "GLM-5.3 for colibrì (int4-gs64) An int4 group-scaled conversion of zai-org/GLM-5.3, packed in the container format that colibrìstreams from disk. This is not the official checkpoint. The weights are Z.ai's; this repository only changes how they are stored. It will not load in transformers or vLLM. It loads in colibrì's colibriengine and nothing else. What it is for Running a 744B-class ..."
+    },
+    {
+      "title": "Les meilleurs sites de rencontre coquin et sexe pour adultes",
+      "url": "https://www.public.fr/les-meilleurs-sites-de-rencontre-coquin",
+      "snippet": "May 27, 2026 · Vous cherchez le meilleur site de rencontre coquin ? Faites des rencontres coquines facilement avec notre sélection …"
+    },
+    {
+      "title": "Justvugg/GLM-5.3-Flash-colibri-int4-g64 · Hugging Face",
+      "url": "https://huggingface.co/Justvugg/GLM-5.3-Flash-colibri-int4-g64",
+      "snippet": "English Chinese Italian colibri Mixture of Experts int4 cpu expert-streaming License:mit Model card FilesFiles and versions xet Community Copy to bucket new GLM-5.3-Flash for colibrì (int4-gs64) What it is for Read this before you download 195 GB Use Images Reasoning What the conversion did Architecture, as read from this container Quality ..."
+    },
+    {
+      "title": "Mature Avec Jeune Vidéos Stock – 88,060 extraits de ... - Adobe Stock",
+      "url": "https://stock.adobe.com/fr/search/video?k=mature+avec+jeune&msockid=07bf3cc74e57615b2f5f2b0b4fb460a1",
+      "snippet": "Modèle : Mes bibliothèques Éléments similaires. Faire glisser une image ici ou parcourir Transfert de votre image..."
+    }
+  ]
+}

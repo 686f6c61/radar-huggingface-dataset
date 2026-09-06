@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "drbaph/Viggle-Animate-ComfyUI",
+  "slug": "drbaph-viggle-animate-comfyui",
+  "author": "drbaph",
+  "url": "https://huggingface.co/drbaph/Viggle-Animate-ComfyUI",
+  "created_at": "2026-09-05T17:25:57.000Z",
+  "updated_at": "2026-09-06T02:31:59.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "video-generation",
+    "character-replacement",
+    "viggle",
+    "comfyui",
+    "int8",
+    "convrot",
+    "dance",
+    "motion-transfer",
+    "video-to-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 210706955280,
+  "storage_human": "210.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryse: Son of Rome - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ryse:_Son_of_Rome",
+      "snippet": "Toggle the table of contents Ryse: Son of Rome"
+    },
+    {
+      "title": "drbaph/Viggle-Animate-ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/drbaph/Viggle-Animate-ComfyUI",
+      "snippet": "Viggle-Animate — ComfyUI conversions ComfyUI-native conversions of Viggle/Viggle-Animate— a 33.1 B full finetune of MiniMax-H3's ref2vatransformer for character replacement in video: a driving clip provides motion, camera, background and lighting; one reference still provides the character. No text encoder — conditioning is a frozen 362-token embedding. The sampler is DMD2-distilled: 4 ..."
+    },
+    {
+      "title": "Ryse: Son of Rome on Steam",
+      "url": "https://store.steampowered.com/app/302510/Ryse_Son_of_Rome/",
+      "snippet": "Oct 10, 2014 · “Ryse: Son of Rome” tells the story of Marius Titus, a young Roman soldier who witnesses the murder of his family at …"
+    },
+    {
+      "title": "Viggle-Animate - Hugging Face",
+      "url": "https://huggingface.co/Viggle/Viggle-Animate",
+      "snippet": "Viggle / Viggle-Animate like 1 Follow Viggle AI 1 Video-to-Video Diffusers Safetensors video-editing character-replacement distillation dmd License:minimax-h3-community-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Ryse: Son of Rome Official Homepage",
+      "url": "https://www.rysegame.com/?ref=gamehypes",
+      "snippet": "Fight as a soldier. Lead as a general. Rise as a legend. Journey to the heart of the Roman Empire and experience the brutality of …"
+    }
+  ]
+}

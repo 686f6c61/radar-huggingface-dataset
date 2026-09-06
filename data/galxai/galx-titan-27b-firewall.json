@@ -1,0 +1,223 @@
+{
+  "schema": 1,
+  "id": "GALXAI/GALX-Titan-27B-Firewall",
+  "slug": "galxai-galx-titan-27b-firewall",
+  "author": "GALXAI",
+  "url": "https://huggingface.co/GALXAI/GALX-Titan-27B-Firewall",
+  "created_at": "2026-09-05T21:22:03.000Z",
+  "updated_at": "2026-09-05T21:32:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "galxai",
+    "titan-firewall",
+    "causal-lm",
+    "reasoning",
+    "code-generation",
+    "agentic-frameworks",
+    "fp8",
+    "w8a8",
+    "dora",
+    "lora",
+    "hopper-optimized",
+    "h100",
+    "h200",
+    "b200",
+    "triton-kernels",
+    "liger-kernel",
+    "grpo",
+    "simpo",
+    "swe-bench",
+    "anti-benchmaxxing",
+    "zero-trust",
+    "modal-cloud",
+    "vllm",
+    "sglang",
+    "text-generation-inference",
+    "chatml",
+    "cybersecurity",
+    "verification",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B-FP8",
+    "base_model:adapter:Qwen/Qwen3.8-27B-FP8",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6377820437,
+  "storage_human": "6.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Software Engineering & Agentic Coding",
+      "dataset": "SWE-bench Pro",
+      "metric": "Resolve Rate (Pass@1)",
+      "value": 64.2
+    },
+    {
+      "task": "Competitive Code Synthesis",
+      "dataset": "LiveCodeBench v6",
+      "metric": "Pass@1",
+      "value": 92.4
+    },
+    {
+      "task": "Interactive Terminal Problem Solving",
+      "dataset": "Terminal Bench 2.1 (Terminus)",
+      "metric": "Pass Rate",
+      "value": 75.8
+    },
+    {
+      "task": "Repository-Scale Autonomous Debugging",
+      "dataset": "QwenSWEBench",
+      "metric": "Avg@3 Resolve Rate",
+      "value": 81.5
+    },
+    {
+      "task": "Long-Horizon Multi-File Bug Fixing",
+      "dataset": "DeepSWE 1.1",
+      "metric": "Resolve Rate",
+      "value": 44.8
+    },
+    {
+      "task": "Workplace & Operational Productivity",
+      "dataset": "CoWorkBench",
+      "metric": "Task Completion Rate",
+      "value": 73.5
+    },
+    {
+      "task": "Adversarial Property Fuzzing",
+      "dataset": "EvalPlus (HumanEval+)",
+      "metric": "Pass@1 (100 Fuzz Vectors)",
+      "value": 90.5
+    },
+    {
+      "task": "Standard Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Accuracy",
+      "value": 96.8
+    },
+    {
+      "task": "Counterfactual Mathematical Reasoning",
+      "dataset": "GSM-Symbolic (NoOp Distractors)",
+      "metric": "Accuracy",
+      "value": 95.6
+    },
+    {
+      "task": "High-School Olympiad Mathematics",
+      "dataset": "MATH-500",
+      "metric": "Accuracy",
+      "value": 75.2
+    },
+    {
+      "task": "Symbolic Algebraic Invariance",
+      "dataset": "MATH-Symbolic (SymPy Proofs)",
+      "metric": "Proof Verification Rate",
+      "value": 72.8
+    },
+    {
+      "task": "Strict Instruction Following",
+      "dataset": "IFBench",
+      "metric": "Pass Rate",
+      "value": 81.2
+    },
+    {
+      "task": "Advanced Scientific Reasoning",
+      "dataset": "GPQA Diamond",
+      "metric": "Accuracy",
+      "value": 90.8
+    },
+    {
+      "task": "Computer & Operating System Control",
+      "dataset": "OSWorld-Verified",
+      "metric": "Task Completion Rate",
+      "value": 86
+    },
+    {
+      "task": "Browser Navigation & Automation",
+      "dataset": "WebArena-Verified",
+      "metric": "Task Completion Rate",
+      "value": 66.5
+    },
+    {
+      "task": "Mobile Operating System Control",
+      "dataset": "AndroidWorld",
+      "metric": "Task Success Rate",
+      "value": 83.4
+    },
+    {
+      "task": "Multimodal Document & Visual Reasoning",
+      "dataset": "MathVision (With CI)",
+      "metric": "Accuracy",
+      "value": 95.4
+    },
+    {
+      "task": "Dense Document OCR & Layout Understanding",
+      "dataset": "OmniDocBench 1.5",
+      "metric": "Structural Parsing Score",
+      "value": 92
+    },
+    {
+      "task": "AST Code Mutation Resistance",
+      "dataset": "MuTAP (Mutation Testing)",
+      "metric": "Mutant Kill Rate",
+      "value": 88
+    },
+    {
+      "task": "Causal Constraint Inversion",
+      "dataset": "CounterBench",
+      "metric": "Accuracy",
+      "value": 95.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "Startseite | hlnug.de",
+      "url": "https://www.hlnug.de/",
+      "snippet": "Der Starkregenviewer des HLNUG ist für Kommunen, Bürgerinnen und Bürger eine wertvolle Ressource, um potenziell von …"
+    },
+    {
+      "title": "GALXAI/GALX-Titan-27B-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/GALXAI/GALX-Titan-27B-v2.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aufgaben und Ansprechpartner | hlnug.de",
+      "url": "https://www.hlnug.de/ueber-uns/aufgaben-und-ansprechpartner",
+      "snippet": "Im HLNUG werden Naturschutzdaten sowie Daten und Informationen zum Zustand und zur Veränderung der Umweltmedien erfasst, …"
+    },
+    {
+      "title": "README.md · GALXAI/GALX-Titan-27B-v2.0 at main - Hugging Face",
+      "url": "https://huggingface.co/GALXAI/GALX-Titan-27B-v2.0/blob/main/README.md",
+      "snippet": "GALXAI / GALX-Titan-27B-v2.0 like 0 Follow GALXAI 1 Text Generation Transformers Safetensors English Chinese qwen3_5 image-text-to-text galxai causal-lm reasoning code-generation fp8 dora compressed-tensors hopper-optimized systems-engineering triton-kernels conversational License:apache-2.0 Model card FilesFiles and versions xet Community ..."
+    },
+    {
+      "title": "Hessisches Landesamt für Naturschutz, Umwelt und Geologie ...",
+      "url": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_9856252",
+      "snippet": "Verwaltungsportal Hessen"
+    }
+  ]
+}

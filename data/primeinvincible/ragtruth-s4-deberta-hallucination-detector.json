@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Primeinvincible/ragtruth-s4-deberta-hallucination-detector",
+  "slug": "primeinvincible-ragtruth-s4-deberta-hallucination-detector",
+  "author": "Primeinvincible",
+  "url": "https://huggingface.co/Primeinvincible/ragtruth-s4-deberta-hallucination-detector",
+  "created_at": "2026-09-06T00:28:16.000Z",
+  "updated_at": "2026-09-06T00:35:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "hallucination-detection",
+    "rag",
+    "faithfulness",
+    "deberta",
+    "en",
+    "dataset:wandb/RAGTruth-processed",
+    "base_model:cross-encoder/nli-deberta-v3-base",
+    "base_model:finetune:cross-encoder/nli-deberta-v3-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737719248,
+  "storage_human": "738 MB",
+  "base_model": "cross-encoder/nli-deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome Helper (Renderer) randomly consumes all my CPU and …",
+      "url": "https://support.google.com/chrome/thread/277502863/google-chrome-helper-renderer-randomly-consumes-all-my-cpu-and-slow-my-macbook-air-to-a-halt?hl=en",
+      "snippet": "May 31, 2024 · This help content & informationGeneral Help Center experience Search"
+    },
+    {
+      "title": "Primeinvincible/ragtruth-s4-deberta-hallucination-detector · Hugging Face",
+      "url": "https://huggingface.co/Primeinvincible/ragtruth-s4-deberta-hallucination-detector",
+      "snippet": "The model is fine-tuned only on RAGTruth, covering three task types (Summary, QA, Data2txt) and six generator models. Direct cross-benchmark transfer is weak: on the corrected group-disjoint HaluBench test set, zero-shot S4 reaches AUROC 0.5272."
+    },
+    {
+      "title": "Google Chrome Helper - Google Chrome Community",
+      "url": "https://support.google.com/chrome/thread/97566174/google-chrome-helper?hl=en",
+      "snippet": "Feb 10, 2021 · This help content & informationGeneral Help Center experience Search"
+    },
+    {
+      "title": "Primeinvincible/ragtruth-s4-deberta-hallucination-detector · Discussions",
+      "url": "https://huggingface.co/Primeinvincible/ragtruth-s4-deberta-hallucination-detector/discussions",
+      "snippet": "Instructions to use Primeinvincible/ragtruth-s4-deberta-hallucination-detector with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Chrome Helper (Renderer) running in the background! Help!!",
+      "url": "https://www.reddit.com/r/chrome/comments/14wg40k/chrome_helper_renderer_running_in_the_background/",
+      "snippet": "Jul 11, 2023 · My Mac is running incredibly slowly when I have Chrome open. I turned off hardware acceleration, still having issues. …"
+    }
+  ]
+}

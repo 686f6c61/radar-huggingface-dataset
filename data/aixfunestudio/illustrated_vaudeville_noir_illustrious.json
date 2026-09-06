@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Illustrated_Vaudeville_Noir_Illustrious",
+  "slug": "aixfunestudio-illustrated_vaudeville_noir_illustrious",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Illustrated_Vaudeville_Noir_Illustrious",
+  "created_at": "2026-09-05T20:02:41.000Z",
+  "updated_at": "2026-09-05T21:43:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7488689868,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cash Check | Cash a Check Online & Mobile Deposit | PayPal US",
+      "url": "https://www.paypal.com/us/digital-wallet/manage-money/cash-check",
+      "snippet": "Cash your checks online with the PayPal app and make bank trips a thing of the past. Find out more about online check depositing …"
+    },
+    {
+      "title": "AIxFuneStudio (AIxFun eStudio) - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... updated a model 1 day ago"
+    },
+    {
+      "title": "Mobile Check Deposit Guide 2026 — Limits, Holds & Troubleshooting",
+      "url": "https://wealthvieu.com/banking/mobile-deposit/",
+      "snippet": "May 1, 2026 · Everything about mobile check deposit: limits by bank, hold times, how to increase your limit, and why deposits get …"
+    },
+    {
+      "title": "illustrious-xl.ai - Next-Gen AI for Stunning Anime & Illustration Creation",
+      "url": "https://www.illustrious-xl.ai/",
+      "snippet": "Support the advancement of AI by sponsoring Illustrious XL. Stay informed with our latest updates, version releases, and in-depth research insights from our AI team."
+    },
+    {
+      "title": "How to Mobile Deposit a Check With Your Smartphone",
+      "url": "https://wtop.com/news/2026/05/how-to-mobile-deposit-a-check-with-your-smartphone/",
+      "snippet": "May 19, 2026 · How to Mobile Deposit a Check With Your Smartphoneoriginally appeared onusnews.com Update 05/20/26: This …"
+    }
+  ]
+}

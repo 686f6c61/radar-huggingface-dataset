@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "codemichaeld/hunyuan_3d_v2_1_fp8",
+  "slug": "codemichaeld-hunyuan_3d_v2_1_fp8",
+  "author": "codemichaeld",
+  "url": "https://huggingface.co/codemichaeld/hunyuan_3d_v2_1_fp8",
+  "created_at": "2026-09-05T23:26:02.000Z",
+  "updated_at": "2026-09-05T23:26:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "fp8",
+    "safetensors",
+    "converted-by-gradio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3683075921,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder Grand Openings Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start …"
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hunyuan3D-2.1: From Images to High-Fidelity 3D ...",
+      "url": "https://github.com/tencent-hunyuan/hunyuan3d-2.1",
+      "snippet": "🔥 News Jul 26, 2025: 🤗 We release the first open-source, simulation-capable, immersive 3D world generation model, HunyuanWorld-1.0! Jun 19, 2025: 👋 We present the technical reportof Hunyuan3D-2.1, please check out the details and spark some discussion! Jun 13, 2025: 🤗 We release the first production-ready 3D asset generation model, Hunyuan3D-2.1!"
+    },
+    {
+      "title": "lidl.com.ua",
+      "url": "http://lidl.com.ua/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hunyuan3D-2: High-Resolution 3D Assets ...",
+      "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+      "snippet": "June 13, 2025: 🤗 Release Hunyuan3D-2.1, fully open-sourced with new PBR model, VAE encoder, and all training code. Apr 1, 2025: 🤗 Release turbo paint model Hunyuan3D-Paint-v2-0-Turbo, and multiview texture generation pipeline, try it here! Stay tuned for our new texture generation model RomanTexand PBR material generation MaterialMVP!"
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Wines Parkside Recipes Lidl Plus App Contact Us Contact Us Find answers to frequently asked questions and contact information for …"
+    }
+  ]
+}

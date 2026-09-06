@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ricoz/tongits-rl-champions",
+  "slug": "ricoz-tongits-rl-champions",
+  "author": "ricoz",
+  "url": "https://huggingface.co/ricoz/tongits-rl-champions",
+  "created_at": "2026-09-05T21:52:29.000Z",
+  "updated_at": "2026-09-06T02:02:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "tl",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "reinforcement-learning",
+    "pytorch",
+    "ppo",
+    "tongits",
+    "card-game",
+    "imperfect-information",
+    "multi-agent",
+    "game-ai",
+    "tl",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29781333,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "GitHub - ricoz/tongits: Tongits game released in 2003",
+      "url": "https://github.com/ricoz/tongits/tree/master",
+      "snippet": "Tongits game released in 2003. Contribute to ricoz/tongits development by creating an account on GitHub."
+    },
+    {
+      "title": "Get help with Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/outlook/get-help-with-outlook-com",
+      "snippet": "For other help with your Microsoft account and subscriptions, visit Account & Billing Help. To get help and troubleshoot other …"
+    },
+    {
+      "title": "tongits/README.md at master · ricoz/tongits · GitHub",
+      "url": "https://github.com/ricoz/tongits/blob/master/README.md",
+      "snippet": "Tongits game released in 2003. Contribute to ricoz/tongits development by creating an account on GitHub."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

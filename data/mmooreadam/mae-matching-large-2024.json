@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mmooreadam/mae-matching-large-2024",
+  "slug": "mmooreadam-mae-matching-large-2024",
+  "author": "mmooreadam",
+  "url": "https://huggingface.co/mmooreadam/mae-matching-large-2024",
+  "created_at": "2026-09-05T19:50:36.000Z",
+  "updated_at": "2026-09-05T19:50:41.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NFCU is no longer allowing downloads of qfx files - Quicken",
+      "url": "https://community.quicken.com/discussion/7975401/nfcu-is-no-longer-allowing-downloads-of-qfx-files",
+      "snippet": "I have Quicken Classic for Mac and I cannot connect to NFCU to download QFX. I have tried to set up the connection method but I …"
+    },
+    {
+      "title": "mmooreadam/matching · Hugging Face",
+      "url": "https://huggingface.co/mmooreadam/matching",
+      "snippet": "Cnn Transformer for Matching Overview This repository is a compact, custom PyTorch implementation of Cnn Transformer for Matching. The nano configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Why isn't my Navy Federal Credit Union (NFCU) account not ... - Quicken",
+      "url": "https://community.quicken.com/discussion/7975207/why-isnt-my-navy-federal-credit-union-nfcu-account-not-downloading-my-transactions",
+      "snippet": "Jul 24, 2026 · Why isn't my Navy Federal Credit Union (NFCU) account not downloading my transactions? thebest9plus Quicken …"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
+    },
+    {
+      "title": "Navy Federal Credit Union - NFCU - Unable to Connect Errors",
+      "url": "https://community.quicken.com/discussion/7972499/navy-federal-credit-union-nfcu-unable-to-connect-errors-fdp-101-and-fdp-105",
+      "snippet": "Apr 4, 2026 · Since approximately 02 April 2026 my Quicken Classic for Mac has been unable to connect to Navy Federal Credit …"
+    }
+  ]
+}

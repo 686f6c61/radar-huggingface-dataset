@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Investigator1thru5/GrandsFedexJefplay",
+  "slug": "investigator1thru5-grandsfedexjefplay",
+  "author": "Investigator1thru5",
+  "url": "https://huggingface.co/Investigator1thru5/GrandsFedexJefplay",
+  "created_at": "2026-09-05T23:40:07.000Z",
+  "updated_at": "2026-09-05T23:40:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Office Locations | About Microsoft",
+      "url": "https://www.microsoft.com/en-us/about/office-locations?msockid=2cc5ca37c16f60391a66ddfbc02261ff",
+      "snippet": "Microsoft’s global headquarters are located on 500 acres in Redmond, Washington that includes public spaces, sports fields, green …"
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "Microsoft campus - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Microsoft_Campus",
+      "snippet": "1.1East Campus redevelopment. 2Transportation. 3References. Toggle the table of contents. Microsoft campus. 6 languages. العربية. …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Microsoft Corporate Headquarters - 1 Microsoft Way, Redmond, WA …",
+      "url": "https://businessyab.com/explore/united_states/washington/king_county/redmond/overlake/microsoft_way/1/microsoft-corporate-headquarters-425-882-8080.html",
+      "snippet": "Microsoft Corporate Headquarters at 1 Microsoft Way, Redmond, WA 98052, USA - hours, address, map, directions, phone number, …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "drwahl/pi05_so101_block_stack_sim",
+  "slug": "drwahl-pi05_so101_block_stack_sim",
+  "author": "drwahl",
+  "url": "https://huggingface.co/drwahl/pi05_so101_block_stack_sim",
+  "created_at": "2026-08-05T21:00:50.000Z",
+  "updated_at": "2026-09-06T01:25:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "LeRobot",
+    "so101",
+    "pi0.5",
+    "lora",
+    "robotics",
+    "base_model:lerobot/pi05_base",
+    "base_model:adapter:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11863093016,
+  "storage_human": "11.9 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mkulima Mbunifu Mkulima Mkulima",
+      "url": "https://mkulimambunifu.org/wp-content/uploads/elementor/MkM-Machi-2026-Final-Print.pdf",
+      "snippet": "Jarida la Mkulima Mbunifu nimeanza kulipokea na kusoma mwaka 2023, na ni moja ya njia iliyoniongezea elimu juu ya uzalishaji wa …"
+    },
+    {
+      "title": "PickNikRobotics (PickNik Robotics) - Hugging Face",
+      "url": "https://huggingface.co/PickNikRobotics/models",
+      "snippet": "Org profile for PickNik Robotics on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Mkulima Mbunifu",
+      "url": "https://mkulimambunifu.org/wp-content/uploads/elementor/MkM-Toleo-Maalumu-2026.pdf",
+      "snippet": "Kwa nini mazao ya kilimohai ni fursa kwa mkulima? Katika miaka ya hivi karibuni, mahitaji ya mazao ya Kilimo hai yamekuwa …"
+    },
+    {
+      "title": "jakegonz (Jake Gonzales) - Hugging Face",
+      "url": "https://huggingface.co/jakegonz/datasets",
+      "snippet": "robotics, control theory, game theory, RL. Recent Activity. updated a model about 2 hours ago. jakegonz/pi05_so101_expert_only"
+    },
+    {
+      "title": "Mkulima Mbunifu, Jarida la Kilimo Endelevu Afrika Mashariki Toleo 111",
+      "url": "https://www.mkulima.sua.ac.tz/items/d2b3f870-43a5-4945-9cec-5216a57b56ca/full",
+      "snippet": "Oct 10, 2011 · Jarida la wakulima ambalo linatoa makala mbalimbali za kusaidiwa wakulima toleo hili lina makala juu ya ulaji wa …"
+    }
+  ]
+}

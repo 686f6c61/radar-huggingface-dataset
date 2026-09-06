@@ -5,7 +5,7 @@
   "author": "ISLAM-PO",
   "url": "https://huggingface.co/ISLAM-PO/MasryGPT_chat_FINALLY",
   "created_at": "2026-09-02T23:11:05.000Z",
-  "updated_at": "2026-09-02T23:16:58.000Z",
+  "updated_at": "2026-09-05T16:42:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 356,
+  "downloads_30d": 357,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

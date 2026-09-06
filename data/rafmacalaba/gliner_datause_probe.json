@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/gliner_datause_probe",
+  "slug": "rafmacalaba-gliner_datause_probe",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/gliner_datause_probe",
+  "created_at": "2026-09-06T01:10:05.000Z",
+  "updated_at": "2026-09-06T01:28:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [],
+  "tags": [
+    "gliner",
+    "probe",
+    "data-use",
+    "token-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2365105,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paediatrician Pietermaritzburg | Dr Frank Böcking",
+      "url": "https://drbocking.com/",
+      "snippet": "Paediatrician in Pietermaritzburg. Dr Frank Böcking has a special interest in paediatric learning and attention problems such as …"
+    },
+    {
+      "title": "rafmacalaba/gliner-datause-probe · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/gliner-datause-probe",
+      "snippet": "rafmacalaba / gliner-datause-probe like 0 Token Classification GLiNER PyTorch ner data-use tiered License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Медицинский туризм в Германия — ТОП клиник и цены 2026",
+      "url": "https://ru.bookimed.com/clinics/country=germany/",
+      "snippet": "Feb 9, 2026 · Сравните 88 клиник в Германия. Цены от , 75+ отзывов Получите бесплатный расчет для вашей …"
+    },
+    {
+      "title": "rafmacalaba/gliner-datause-displacement-probe · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/gliner-datause-displacement-probe",
+      "snippet": "Instructions to use rafmacalaba/gliner-datause-displacement-probe with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "742 поликлиник для взрослых в Москве: адреса, телефоны и отзывы",
+      "url": "https://polyclinicspravka.ru/moskva",
+      "snippet": "Полный каталог поликлиник Москвы – государственные и частные медучреждения. Адреса, контакты, расписание врачей, …"
+    }
+  ]
+}

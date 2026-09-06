@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/sn120-base-king-lab021",
+  "slug": "greenfield0810-sn120-base-king-lab021",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/sn120-base-king-lab021",
+  "created_at": "2026-09-05T19:18:44.000Z",
+  "updated_at": "2026-09-05T19:20:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "bittensor",
+    "subnet-120",
+    "mirror",
+    "archival",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71923768109,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bengal Kittens for sale | Pets4Homes",
+      "url": "https://www.pets4homes.co.uk/sale/kittens/bengal/",
+      "snippet": "Find 345 Bengal Kittens for sale on Pets4Homes - UK’s largest pet classifieds site to buy and sell kittens near you."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=subnet-120",
+      "snippet": "greenfield0810/affine-ark-7f4bb237bc46 Image-Text-to-Text • 35B•Updated about 1 hour ago"
+    },
+    {
+      "title": "Bengal Cats & Kittens for Sale | Belle Ami Bengals",
+      "url": "https://www.belleamibengals.com/bengal-cats-kittens-for-sale",
+      "snippet": "3 days ago · Our Bengal cattery currently has beautiful Bengal kittens available and more litters on the way! Our kittens go home …"
+    },
+    {
+      "title": "greenfield0810/affine-ark-9c6bb84484a5 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-9c6bb84484a5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bengal cat - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bengal_cat",
+      "snippet": "s of Useand Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization."
+    }
+  ]
+}

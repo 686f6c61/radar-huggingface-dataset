@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "altic-dev/fluid-1-mini",
+  "slug": "altic-dev-fluid-1-mini",
+  "author": "altic-dev",
+  "url": "https://huggingface.co/altic-dev/fluid-1-mini",
+  "created_at": "2026-08-10T04:59:32.000Z",
+  "updated_at": "2026-09-06T01:13:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama-cpp",
+  "languages": [],
+  "tags": [
+    "llama-cpp",
+    "safetensors",
+    "gguf",
+    "local",
+    "windows",
+    "fluidintelligence",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 215,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 4552290923,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Altyk - PC évolutif et durable",
+      "url": "https://www.altyk.com/fr/",
+      "snippet": "Votre PC est unique. Découvrez la gamme qui vous correspond. Performant, séduisant, assemblé en France."
+    },
+    {
+      "title": "altic-dev/fluid-1-mini · Hugging Face",
+      "url": "https://huggingface.co/altic-dev/fluid-1-mini",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FluidVoice — Free Open Source Voice-to-Text for macOS - altic.dev",
+      "url": "https://altic.dev/fluid",
+      "snippet": "Fluid Intelligence is a local AI runtime which runs the Fluid-1 model. It delivers advanced on-device dictation enhancement — smart formatting, context-aware capitalization, adaptive tone based on the active app, and post-processing — all running locally on your Mac."
+    },
+    {
+      "title": "Alpiq, fournisseur d’électricité : Prix garanti toujours moins cher",
+      "url": "https://particuliers.alpiq.fr/",
+      "snippet": "Alpiq, votre fournisseur d’électricité à prix bas et noté 4,9/5 sur Trustpilot. Rejoignez-nous et payez toujours moins cher que le tarif …"
+    },
+    {
+      "title": "altic-dev/Fluid-1-Mini-2B-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/altic-dev/Fluid-1-Mini-2B-MLX-6bit",
+      "snippet": "Fluid-1 Mini 2B — 96k Q6 + DFlash v2 Official ALTIC MLX-format checkpoint for on-device FluidVoice dictation cleanup through FluidDecode + DFlash. License Use is permitted only through official FluidVoice applications. Use outside FluidVoice applications is prohibited. See ALTIC-MODEL-TERMS.md. This model is derived from Qwen3.5-2B. Qwen-derived components remain under Apache License 2.0 ..."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "xiaogongshou/MiniMax-H3",
+  "slug": "xiaogongshou-minimax-h3",
+  "author": "xiaogongshou",
+  "url": "https://huggingface.co/xiaogongshou/MiniMax-H3",
+  "created_at": "2026-09-05T19:10:35.000Z",
+  "updated_at": "2026-09-05T19:10:35.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "video-to-audio-video",
+    "audio-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "reference-to-audio-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 353917479700,
+  "storage_human": "353.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autos & mehr: Gebrauchtwagen & Neuwagen kaufen » mobile.de",
+      "url": "https://www.mobile.de/?msockid=07078e94c9d9692e2a1c995fc8c7689d",
+      "snippet": "Mit mobile.de kannst du dein gebrauchtes Auto verkaufensowie Neuwagen- und Gebrauchtwagenverkäufer kontaktieren. Informiere …"
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "📊 Model Comparison Matrix: Benchmark comparisons between MiniMax H3, Seedance 2.5, Wan 2.1, Kling AI, Sora, and CogVideoX. 🌐 Chinese AI Video Generator Directory: Complete guide for international creators to access Chinese AI models without native phone registration, plus Faceless Channel guides."
+    },
+    {
+      "title": "Gebrauchtwagen in der Nähe kaufen bei mobile",
+      "url": "https://suchen.mobile.de/auto/gebrauchtwagen.html?msockid=07078e94c9d9692e2a1c995fc8c7689d",
+      "snippet": "Finde Gebrauchtwagen in deiner Nähe bei mobile.de – Größter Fahrzeugmarkt in DE Jetzt TÜV-geprüftes Traumauto kaufen oder …"
+    },
+    {
+      "title": "minimax-h3/README.md at main · ai-models-lab/minimax-h3",
+      "url": "https://github.com/ai-models-lab/minimax-h3/blob/main/README.md",
+      "snippet": "📊 Model Comparison Matrix: Benchmark comparisons between MiniMax H3, Seedance 2.5, Wan 2.1, Kling AI, Sora, and CogVideoX. 🌐 Chinese AI Video Generator Directory: Complete guide for international creators to access Chinese AI models without native phone registration, plus Faceless Channel guides."
+    },
+    {
+      "title": "mobile.de — nowe i używane samochody — Twój rynek pojazdów w …",
+      "url": "https://www.mobile.de/pl?msockid=07078e94c9d9692e2a1c995fc8c7689d",
+      "snippet": "Znajdź samochody osobowe i kempingowe, motocykle i pojazdy użytkowe w witrynie mobile.de/pl: największym internetowym rynku …"
+    }
+  ]
+}

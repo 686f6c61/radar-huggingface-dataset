@@ -5,7 +5,7 @@
   "author": "scouzi1966",
   "url": "https://huggingface.co/scouzi1966/Qwen3.8-Flash-Next-AFM-MLX-4bit",
   "created_at": "2026-09-04T02:39:50.000Z",
-  "updated_at": "2026-09-04T03:28:49.000Z",
+  "updated_at": "2026-09-05T12:57:25.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 6,
+  "downloads_30d": 104,
   "trending_score": 0,
   "parameters": 129435434899,
   "parameters_human": "129.44B",

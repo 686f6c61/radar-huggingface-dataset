@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ravenh97/roborender_teacher_lora",
+  "slug": "ravenh97-roborender_teacher_lora",
+  "author": "Ravenh97",
+  "url": "https://huggingface.co/Ravenh97/roborender_teacher_lora",
+  "created_at": "2026-09-06T00:27:13.000Z",
+  "updated_at": "2026-09-06T00:28:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "sim2real",
+    "wan",
+    "lora",
+    "video-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 699995040,
+  "storage_human": "700 MB",
+  "base_model": "PAI/Wan2.1-Fun-V1.1-1.3B-Control",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USPS.com",
+      "url": "https://tools.usps.com/go/TrackConfirmAction_input?origTrackNum=9534610866516028793854&msockid=18df1eb2b7aa604f3c99097eb680611f",
+      "snippet": "AI_'J u0010u001es u0012%Q x c R| u00114 ( ׵ u0015 kZ| gC#u001fu001d b4N bɖ@i A=u0019 d O n FLn: qu0010& ΂ Fu0019 熢 [Gf iF e …"
+    },
+    {
+      "title": "Ravenh97/roborender_teacher_lora · Hugging Face",
+      "url": "https://huggingface.co/Ravenh97/roborender_teacher_lora",
+      "snippet": "RoboRender teacher video model (LoRA) The 50-step teacher used to render Ravenh97/roborender_anchors."
+    },
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?tracknum=tracking&loc=en_US&msockid=18df1eb2b7aa604f3c99097eb680611f",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Ravenh97/roborender_anchors · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Ravenh97/roborender_anchors",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "USPS.com",
+      "url": "https://tools.usps.com/tracking/9534610866516028793854?msockid=18df1eb2b7aa604f3c99097eb680611f",
+      "snippet": "HZ 6u001b کu | Lu001f0m,lu001aB L.tZ 込: V BT u0004M 3 ( UKg bg C lu0014 u001b>d 0` sA7? ~ 2 . e u0013 ߧ z Â G Hu0005; u0017 …"
+    }
+  ]
+}

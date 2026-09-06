@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mattpidden/pi05_5k_multicolour_block_pick_place_2",
+  "slug": "mattpidden-pi05_5k_multicolour_block_pick_place_2",
+  "author": "mattpidden",
+  "url": "https://huggingface.co/mattpidden/pi05_5k_multicolour_block_pick_place_2",
+  "created_at": "2026-04-21T20:39:28.000Z",
+  "updated_at": "2026-09-05T22:24:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:justintiensmith/multicolour_block_pick_place_2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9466197724,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "pi05_5k_precision-multicolour_block_pick_place - Hugging Face",
+      "url": "https://huggingface.co/mattpidden/pi05_5k_precision-multicolour_block_pick_place",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; By using this site, you agree to the Terms of …"
+    },
+    {
+      "title": "pi05_5k_multicolour_block_pick_place_2 - Hugging Face",
+      "url": "https://huggingface.co/mattpidden/pi05_5k_multicolour_block_pick_place_2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": ""
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "vinnuthegoattt",
   "url": "https://huggingface.co/vinnuthegoattt/finbert-financial-phrasebank",
   "created_at": "2026-09-05T18:24:41.000Z",
-  "updated_at": "2026-09-05T18:24:58.000Z",
+  "updated_at": "2026-09-05T19:31:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "transformers",
+    "onnx",
     "safetensors",
     "bert",
     "text-classification",
@@ -26,10 +27,11 @@
   "trending_score": 0,
   "parameters": 109484547,
   "parameters_human": "109.5M",
-  "storage_bytes": 437961724,
-  "storage_human": "438 MB",
+  "storage_bytes": 876110318,
+  "storage_human": "876 MB",
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mmarron14/whisper-medium-es-500-steps_removed_lengths_proc4-def5",
+  "slug": "mmarron14-whisper-medium-es-500-steps_removed_lengths_proc4-def5",
+  "author": "mmarron14",
+  "url": "https://huggingface.co/mmarron14/whisper-medium-es-500-steps_removed_lengths_proc4-def5",
+  "created_at": "2026-09-05T17:32:08.000Z",
+  "updated_at": "2026-09-06T01:40:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 12222223147,
+  "storage_human": "12.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosovo - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Kosovo",
+      "snippet": "Guerre balcaniche ·Principato di Serbia ·Regno di Serbia ·Regno di Jugoslavia ·Occupazione italiana ·Jugoslavia socialista …"
+    },
+    {
+      "title": "mmarron14/whisper-medium-cv17-es-500-steps - friendli.ai",
+      "url": "https://friendli.ai/models/mmarron14/whisper-medium-cv17-es-500-steps",
+      "snippet": "Run mmarron14/whisper-medium-cv17-es-500-steps with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Kosovo - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Kosovo",
+      "snippet": "Kosovo, [a] officially the Republic of Kosovo, [b] is a landlocked country in Southeast Europe with partial diplomatic recognition. It is …"
+    },
+    {
+      "title": "whisper-medium-es-500-steps_removed_lengths_sin-proc-def5",
+      "url": "https://huggingface.co/mmarron14/whisper-medium-es-500-steps_removed_lengths_sin-proc-def5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kosovo - Enciclopedia - Treccani",
+      "url": "https://www.treccani.it/enciclopedia/kosovo/",
+      "snippet": "La nuova Costituzione adottata dalla Serbia nel 1989 ridusse fortemente l’autonomia del Kosovo e iniziò una forte campagna di …"
+    }
+  ]
+}

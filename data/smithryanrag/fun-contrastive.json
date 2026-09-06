@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "smithryanrag/fun-contrastive",
+  "slug": "smithryanrag-fun-contrastive",
+  "author": "smithryanrag",
+  "url": "https://huggingface.co/smithryanrag/fun-contrastive",
+  "created_at": "2026-09-05T20:10:45.000Z",
+  "updated_at": "2026-09-05T20:10:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "How Immich ML Indexing Makes Private Photos Searchable",
+      "url": "https://shop.zimaspace.com/blogs/tech-ai-hub/how-immich-machine-learning-indexing-makes-private-photos-searchable",
+      "snippet": "Follow Immich images through inference, embeddings, database retrieval, and access checks—and understand where private visual search falls short."
+    },
+    {
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
+    },
+    {
+      "title": "Daily Dose of Data Science | RAG vs. HyDE, visually ... - Instagram",
+      "url": "https://www.instagram.com/reel/DctTkAciGWr/",
+      "snippet": "This model is trained using contrastive learning and functions as a near-lossless compressor that filters out hallucinated details of the fake document. This produces a vector embedding more similar to actual documents than the question is to real documents."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

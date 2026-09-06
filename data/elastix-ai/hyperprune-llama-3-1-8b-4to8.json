@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "elastix-ai/HyperPrune-Llama-3.1-8B-4to8",
+  "slug": "elastix-ai-hyperprune-llama-3-1-8b-4to8",
+  "author": "elastix-ai",
+  "url": "https://huggingface.co/elastix-ai/HyperPrune-Llama-3.1-8B-4to8",
+  "created_at": "2026-09-06T00:39:46.000Z",
+  "updated_at": "2026-09-06T00:41:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "hyperprune",
+    "pruning",
+    "sparsity",
+    "4-8-sparsity",
+    "semi-structured",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:finetune:meta-llama/Llama-3.1-8B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16078389229,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=210862cf0b0365c608b975030a2964ba",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "elastix-ai/HyperPrune-Llama-3.1-8B-2to4 · Hugging Face",
+      "url": "https://huggingface.co/elastix-ai/HyperPrune-Llama-3.1-8B-2to4",
+      "snippet": "Instructions to use elastix-ai/HyperPrune-Llama-3.1-8B-2to4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "elastix-ai/HyperPrune-Llama-3.1-8B-2to4 at main - Hugging Face",
+      "url": "https://huggingface.co/elastix-ai/HyperPrune-Llama-3.1-8B-2to4/tree/main",
+      "snippet": "Instructions to use elastix-ai/HyperPrune-Llama-3.1-8B-2to4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

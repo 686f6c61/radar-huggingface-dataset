@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch3",
+  "slug": "lanni-ni-dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch3",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch3",
+  "created_at": "2026-09-05T22:10:01.000Z",
+  "updated_at": "2026-09-05T22:10:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MN-Modelář.cz – plastikové modely, stavebnice a příslušenství ...",
+      "url": "https://www.mn-modelar.cz/",
+      "snippet": "Skladem479 Kč Do košíku MN-modelar.cz 🚀 Váš svět modelů Vítejte v ráji všech modelářů! Nabízíme tisíce plastikových modelů aut, …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Plastikové modely – největší e-shop s plastikovými ... - mn-modelar",
+      "url": "https://www.mn-modelar.cz/plastikove-modely",
+      "snippet": "Plastikové modely pro začátečníky i pokročilé. Vše skladem, okamžitá expedice, hodnocení 98%. Poradíme s výběrem měřítka, …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7 · Hugging ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7",
+      "snippet": "Instructions to use Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7 with libraries, inference providers, notebooks, and local apps. Follow these links ..."
+    },
+    {
+      "title": "Barvy | MN-Modelar.cz",
+      "url": "https://www.mn-modelar.cz/paints",
+      "snippet": "6 7 389 info@mn-modelar.czKontaktní údaje Pro odběr pravidelných novinek, akcí a slev zadejte prosím Váš email Odebírat Důležité …"
+    }
+  ]
+}

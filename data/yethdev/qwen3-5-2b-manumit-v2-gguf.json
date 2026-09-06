@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yethdev/qwen3.5-2b-manumit-v2-GGUF",
+  "slug": "yethdev-qwen3-5-2b-manumit-v2-gguf",
+  "author": "yethdev",
+  "url": "https://huggingface.co/yethdev/qwen3.5-2b-manumit-v2-GGUF",
+  "created_at": "2026-09-06T01:23:57.000Z",
+  "updated_at": "2026-09-06T01:24:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "text-generation",
+    "base_model:yethdev/qwen3.5-2b-manumit-v2",
+    "base_model:quantized:yethdev/qwen3.5-2b-manumit-v2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 4697505024,
+  "storage_human": "4.7 GB",
+  "base_model": "yethdev/qwen3.5-2b-manumit-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACELAŞI - revistatransilvania.ro",
+      "url": "https://revistatransilvania.ro/wp-content/uploads/2022/05/1930.-Cezar-Petrescu-Calea-Victoriei.pdf",
+      "snippet": "Dacă are să fie mai ales o cameră cu fereastra la Calea Victoriei, n’am să dorm toată noaptea. Şi mâine dimineaţă, ieşim toată trupa …"
+    },
+    {
+      "title": "yethdev/qwen3.5-2b-manumit-v2 · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-2b-manumit-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Petrescu, Cezar Calea Victoriei A 5 - Archive.org",
+      "url": "https://archive.org/details/petrescu-cezar-calea-victoriei-a-5",
+      "snippet": "Jan 30, 2025 · Viewable files (2) Petrescu, Cezar - Calea Victoriei A5.pdf Petrescu, Cezar - Calea Victoriei.pdf ... Page — (1/568)"
+    },
+    {
+      "title": "qwen3.5-2b-manumit-v2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/yethdev/qwen3.5-2b-manumit-v2",
+      "snippet": "Deploy qwen3.5-2b-manumit-v2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Petrescu, Cezar Calea Victoriei A 5 - Archive.org",
+      "url": "https://archive.org/details/petrescu-cezar-calea-victoriei-a-5_202601",
+      "snippet": "Viewable files (2) Petrescu, Cezar - Calea Victoriei A5.pdf Petrescu, Cezar - Calea Victoriei.pdf ... Page — (1/568)"
+    }
+  ]
+}

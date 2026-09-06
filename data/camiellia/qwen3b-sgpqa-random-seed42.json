@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "camiellia/qwen3b-sgpqa-random-seed42",
+  "slug": "camiellia-qwen3b-sgpqa-random-seed42",
+  "author": "camiellia",
+  "url": "https://huggingface.co/camiellia/qwen3b-sgpqa-random-seed42",
+  "created_at": "2026-09-05T20:22:07.000Z",
+  "updated_at": "2026-09-05T20:41:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21511312,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact - ROYALETEAM",
+      "url": "https://royaleteam.forumactif.com/contact",
+      "snippet": "Formulaire Les champs marqués d'un * sont obligatoires. Sujet du message* : Contenu du message* : Adresse e-mail* :"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - QwenLM/Qwen3"
+    },
+    {
+      "title": "Recherche avancée",
+      "url": "https://royaleteam.forumactif.com/search",
+      "snippet": "Rechercher n'importe lequel de ces termes Rechercher tous les termes Recherche par auteur: Rechercher dans: | |--CHARTE …"
+    },
+    {
+      "title": "camiellia/qwen3b-sgpqa-kcenter · Hugging Face",
+      "url": "https://huggingface.co/camiellia/qwen3b-sgpqa-kcenter",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mundijeux - CCM - Tech Forum",
+      "url": "https://forums.commentcamarche.net/forum/affich-37002088-mundijeux?lang=en",
+      "snippet": "Hello, Why can't I log in to mundijeux anymore? I play every day, and since yesterday I can't access it Best regards Configuration: …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RashidOmar/qwen2-vl-2b-bengali-meme-classifier",
+  "slug": "rashidomar-qwen2-vl-2b-bengali-meme-classifier",
+  "author": "RashidOmar",
+  "url": "https://huggingface.co/RashidOmar/qwen2-vl-2b-bengali-meme-classifier",
+  "created_at": "2026-09-06T01:09:39.000Z",
+  "updated_at": "2026-09-06T01:09:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2-VL-2B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2-VL-2B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85337530,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Awesome Bengali AI - GitHub",
+      "url": "https://github.com/Iamsdt/awesome-bengali-ai",
+      "snippet": "A curated collection of resources, tools, datasets, models, and projects for Bengali (Bangla) Artificial Intelligence, Large Language Models, Generative AI, and Natural Language Processing. This repository aims to be the most comprehensive resource for researchers, developers, and enthusiasts working on Bengali language AI."
+    },
+    {
+      "title": "YouTube Brasil",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "This is the organization of Qwen, which refers to the large language model family built by Alibaba Cloud. In this organization, we continuously release large language models (LLM), large multimodal models (LMM), and other AGI-related projects. Feel free to visit Qwen Chatand enjoy our latest models!"
+    },
+    {
+      "title": "Essential '90s R&B - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
+      "snippet": "Playlist • YouTube Music"
+    }
+  ]
+}

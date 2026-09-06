@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "julianasantos/coca-retrieval",
+  "slug": "julianasantos-coca-retrieval",
+  "author": "julianasantos",
+  "url": "https://huggingface.co/julianasantos/coca-retrieval",
+  "created_at": "2026-09-05T20:01:29.000Z",
+  "updated_at": "2026-09-05T20:01:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Here’s How to Learn Spanish Fast in 2025 | FluentU",
+      "url": "https://www.fluentu.com/blog/spanish/how-to-learn-spanish-fast/",
+      "snippet": "Feb 16, 2024 · Are you trying to learn Spanish fast? There are so many methods you can use, such as immersing yourself in the …"
+    },
+    {
+      "title": "Ivanmikhailov/coca-retrieval-notebook at main - Hugging Face",
+      "url": "https://huggingface.co/Ivanmikhailov/coca-retrieval-notebook/tree/main",
+      "snippet": "Ivanmikhailov / coca-retrieval-notebook like 0 Safetensors PyTorch coca retrieval License:mit Model card FilesFiles and versions xet Community Copy to bucket new main coca-retrieval-notebook 109 kB Ctrl+K Ctrl+K 1 contributor History:2 commits Ivanmikhailov Upload 5 files d40d494 verifiedabout 7 hours ago .gitattributes Safe 1.52 kBinitial commitabout 7 hours ago README.md 2.43 kBUpload 5 ..."
+    },
+    {
+      "title": "4 Ways to Learn Spanish Fast - wikiHow",
+      "url": "https://www.wikihow.com/Learn-Spanish-Fast",
+      "snippet": "Feb 19, 2026 · To learn Spanish fast, watch Spanish movies and TV shows and listen to Spanish music, which will help you quickly …"
+    },
+    {
+      "title": "Security researchers tricked LLMs into giving them cocaine recipes by ...",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/30/security-researchers-tricked-llms-into-giving-them-cocaine-recipes-by-abusing-role-models-for-prompt-injection/5264115",
+      "snippet": "AI models provide responses to user-supplied prompts. The problem is that AI models may receive adversarial prompts – directly from a user or indirectly from an ingested document – that tell the model to take action contrary to its built-in system prompt."
+    },
+    {
+      "title": "How to Learn Spanish Fast: 10 Proven Steps for 2026",
+      "url": "https://linguasteps.com/resources/how-to-learn-spanish-fast",
+      "snippet": "Master Spanish quickly with these 10 expert-backed steps. Actionable tips, real stories, and smart strategies to help you learn …"
+    }
+  ]
+}

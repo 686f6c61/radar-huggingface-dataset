@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Harvard-DCML/ADAPT-Qwen3-2.3B-Instruct",
+  "slug": "harvard-dcml-adapt-qwen3-2-3b-instruct",
+  "author": "Harvard-DCML",
+  "url": "https://huggingface.co/Harvard-DCML/ADAPT-Qwen3-2.3B-Instruct",
+  "created_at": "2026-09-05T19:47:11.000Z",
+  "updated_at": "2026-09-05T21:36:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "dataset:EleutherAI/the_pile_deduplicated",
+    "dataset:nvidia/Llama-Nemotron-Post-Training-Dataset",
+    "arxiv:2608.22854",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 576661056,
+  "parameters_human": "576.7M",
+  "storage_bytes": 10793855495,
+  "storage_human": "10.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and …Issues 74 - GitHub - QwenLM/Qwen3: Qwen3 is the …Explore the GitHub Discussions forum for QwenLM …GitHub is where people build software. More than 150 …Branches - GitHub - QwenLM/Qwen3: Qwen3 is the …Pull requests 8 - GitHub - QwenLM/Qwen3: Qwen3 is …Actions - GitHub - QwenLM/Qwen3: Qwen3 is the …Insights - GitHub - QwenLM/Qwen3: Qwen3 is the …Tags - GitHub - QwenLM/Qwen3: Qwen3 is the large …"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    }
+  ]
+}

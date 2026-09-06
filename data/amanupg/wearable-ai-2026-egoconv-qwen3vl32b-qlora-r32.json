@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "amanupg/wearable-ai-2026-egoconv-qwen3vl32b-qlora-r32",
+  "slug": "amanupg-wearable-ai-2026-egoconv-qwen3vl32b-qlora-r32",
+  "author": "amanupg",
+  "url": "https://huggingface.co/amanupg/wearable-ai-2026-egoconv-qwen3vl32b-qlora-r32",
+  "created_at": "2026-09-06T00:27:26.000Z",
+  "updated_at": "2026-09-06T00:27:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "egocentric-video",
+    "video-question-answering",
+    "eccv-2026",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-32B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-32B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1085299298,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conad Viale Toscana 37/a, 06016 San Giustino (PG) | Conad",
+      "url": "https://www.conad.it/ricerca-negozi/conad-viale-toscana-37-a-06016-san-giustino--004178",
+      "snippet": "Weekend last minute prima che finisca l’estate? Ma vai da Conad! Scopri tutte le offertedisponibili fino al 30 settembre e risparmia. …"
+    },
+    {
+      "title": "amanupg/wearable-ai-2026-egoconv-qwen3vl32b-qlora-r32 · Hugging Face",
+      "url": "https://huggingface.co/amanupg/wearable-ai-2026-egoconv-qwen3vl32b-qlora-r32",
+      "snippet": "Instructions to use amanupg/wearable-ai-2026-egoconv-qwen3vl32b-qlora-r32 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Conad San Giustino Viale Toscana, 37/A - PromoQui",
+      "url": "https://www.promoqui.it/negozi/san-giustino/viale-toscana-a/49578",
+      "snippet": "Jul 30, 2026 · Cosa trovi al supermercato Conad a San Giustino? Su PromoQui scopri orari di apertura, indirizzo in Viale Toscana, …"
+    },
+    {
+      "title": "amanupg (Aman Upganlawar) - Hugging Face",
+      "url": "https://huggingface.co/amanupg",
+      "snippet": "None yet models2 Sort: Recently updated amanupg/wearable-ai-2026-egoconv-qwen3vl32b-qlora-r32 Image-Text-to-Text •Updated about 1 hour ago amanupg/mci-llama-adapter Updated Jan 16"
+    },
+    {
+      "title": "CONAD - Negozio di alimentari a San Giustino VIALE TOSCANA 37/A, 06016 ...",
+      "url": "https://firmania.it/san-giustino/conad-3201361",
+      "snippet": "Oct 14, 2025 · Trovate i dettagli di contatto dell'azienda CONAD in VIALE TOSCANA 37/A, 06016, San Giustino San Giustino incluso …"
+    }
+  ]
+}

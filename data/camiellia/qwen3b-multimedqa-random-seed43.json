@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "camiellia/qwen3b-multimedqa-random-seed43",
+  "slug": "camiellia-qwen3b-multimedqa-random-seed43",
+  "author": "camiellia",
+  "url": "https://huggingface.co/camiellia/qwen3b-multimedqa-random-seed43",
+  "created_at": "2026-09-05T22:56:01.000Z",
+  "updated_at": "2026-09-05T23:40:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21511312,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adblockers: deze bevelen we aan - Consumentenbond",
+      "url": "https://www.consumentenbond.nl/internet-privacy/effectieve-adblockers-ons-advies",
+      "snippet": "Apr 22, 2026 · Wat zijn de beste adblockers voor Windows- en Apple-computers en iOS- en Android-toestellen? Wij geven advies."
+    },
+    {
+      "title": "camiellia/llama-1b-multimedqa-random-seed43 · Hugging Face",
+      "url": "https://huggingface.co/camiellia/llama-1b-multimedqa-random-seed43",
+      "snippet": "Instructions to use camiellia/llama-1b-multimedqa-random-seed43 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Beste adblockers van 2026 - TechRadar",
+      "url": "https://global.techradar.com/nl-nl/pro/beste-ad-blockers",
+      "snippet": "Nov 21, 2024 · Het kan lastig zijn om de juiste adblocker te kiezen, omdat er erg veel keuze is. Maak je echter geen zorgen, want we …"
+    },
+    {
+      "title": "camiellia/qwen-3b-multimedqa-c75b25-kcenter-raw · Hugging Face",
+      "url": "https://huggingface.co/camiellia/qwen-3b-multimedqa-c75b25-kcenter-raw",
+      "snippet": "Instructions to use camiellia/qwen-3b-multimedqa-c75b25-kcenter-raw with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "De beste adblockers (2026): getest & vergeleken | Privacy Intact",
+      "url": "https://privacyintact.com/nl/beste-adblocker/",
+      "snippet": "We vergeleken de beste adblockers van 2026 op blokkeerkracht, privacy, snelheid en prijs. Bekijk onze keuze, de beste gratis optie …"
+    }
+  ]
+}

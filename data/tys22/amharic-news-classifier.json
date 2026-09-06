@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tys22/amharic-news-classifier",
+  "slug": "tys22-amharic-news-classifier",
+  "author": "tys22",
+  "url": "https://huggingface.co/tys22/amharic-news-classifier",
+  "created_at": "2026-09-05T19:37:05.000Z",
+  "updated_at": "2026-09-05T19:39:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278048262,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129300144,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Odlična Hrvatska napada svjetsko zlato, gdje gledati i što je socca ...",
+      "url": "https://www.telegram.hr/telesport/na-prvu/hrvatska-socca-reprezentacija-usla-u-polufinale-svjetskog-prvenstva-o-kakom-se-sportu-radi-i-gdje-ga-gledati/",
+      "snippet": "8 hours ago · Hrvatska je ušla u polufinale Socca Svjetskog prvenstva u njemačkom Essenu. Naši malonogometaši do novog velikog …"
+    },
+    {
+      "title": "fikreanteneh/AmharicNewsClassifier · Hugging Face",
+      "url": "https://huggingface.co/fikreanteneh/AmharicNewsClassifier",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[UŽIVO] Hrvatska - Brazil. Polufinale socca SP - Net.hr",
+      "url": "https://net.hr/sport/ostali-sportovi/uzivo-hrvatska-brazil-polufinale-socca-sp-ee96930f-a946-11f1-936f-9600040c8f8e",
+      "snippet": "5 hours ago · Za razliku od Hrvatske koja je projurila kroz četvrtfinale, Brazil je svoje mjesto među četiri najbolje momčadi osigurao na …"
+    },
+    {
+      "title": "tys22/amharic-sentiment-xlmr-v2 · Hugging Face",
+      "url": "https://huggingface.co/tys22/amharic-sentiment-xlmr-v2",
+      "snippet": "Instructions to use tys22/amharic-sentiment-xlmr-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Socca Croatia – Official website of the small-sided-football association",
+      "url": "https://soccacroatia.eu/",
+      "snippet": "Hrvatska socca malonogometna reprezentacija s velikim očekivanjima odlazi na Socca Svjetsko prvenstvo u malom nogometu koje …"
+    }
+  ]
+}

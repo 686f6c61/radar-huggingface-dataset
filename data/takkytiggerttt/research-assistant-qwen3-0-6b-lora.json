@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TakkyTiggerTTT/research-assistant-qwen3-0.6b-lora",
+  "slug": "takkytiggerttt-research-assistant-qwen3-0-6b-lora",
+  "author": "TakkyTiggerTTT",
+  "url": "https://huggingface.co/TakkyTiggerTTT/research-assistant-qwen3-0.6b-lora",
+  "created_at": "2026-09-05T23:42:25.000Z",
+  "updated_at": "2026-09-05T23:42:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31659906,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "Instructions to use Qwen/Qwen3-0.6B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "登录Chatgpt时出现了Unable to load site这样的提示。友友们我该怎么 …",
+      "url": "https://www.zhihu.com/question/614217718",
+      "snippet": "登录Chatgpt时出现了Unable to load site这样的提示。 友友们我该怎么办？"
+    },
+    {
+      "title": "HiveTraceGuard-Pro: A Compact Generative Guardrail for Prompt Injection ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/hivetraceguard-pro-compact-generative-guardrail-prompt-injection",
+      "snippet": "HiveTraceGuard-Pro is a 0.6B generative guardrail LoRA-tuned from Qwen3-0.6B for binary safe/unsafe decisions on the final user or assistant turn. It targets prompt injection, jailbreaks and surface obfuscation in Russian and English, while keeping the same verdict rule for requests and responses."
+    },
+    {
+      "title": "sqlite - How to open file:///private/var/mobile/Containers/Shared ...",
+      "url": "https://stackoverflow.com/questions/45179968/how-to-open-file-private-var-mobile-containers-shared-appgroup-folder-on-mac",
+      "snippet": "Jul 19, 2017 · I'm trying to use fileProvider in iOS 11 and have a database at …"
+    }
+  ]
+}

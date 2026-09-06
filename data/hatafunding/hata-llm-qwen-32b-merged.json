@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "HATAFUNDING/HATA-LLM-Qwen-32B-Merged",
+  "slug": "hatafunding-hata-llm-qwen-32b-merged",
+  "author": "HATAFUNDING",
+  "url": "https://huggingface.co/HATAFUNDING/HATA-LLM-Qwen-32B-Merged",
+  "created_at": "2026-09-06T00:01:31.000Z",
+  "updated_at": "2026-09-06T00:01:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-32B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-32B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422356,
+  "storage_human": "11 MB",
+  "base_model": "unsloth/Qwen2.5-32B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Resumen del Cantar de mio Cid: Argumento por Cantares y el Tema del ...",
+      "url": "https://www.wikiteka.com/apuntes/resumen-cantar-cid-argumento-cantares-tema-honor/",
+      "snippet": "En esta parte, el Cid conquista Valencia y, como recompensa a su lealtad y hazañas, consigue el perdón real. El monarca permite …"
+    },
+    {
+      "title": "Paper: Split Qwen3-32B Into GRPO Experts, Merge via SLERP, Match Qwen3 ...",
+      "url": "https://aiweekly.co/alerts/paper-split-qwen3-32b-into-grpo-experts-merge-via-slerp-match-qwen3-235b-on",
+      "snippet": "A new arXiv paper describes how to consolidate fragmented self-hosted LLM deployments into a single model by mining production traffic for weakness axes, training separate GRPO reinforcement-learning experts per axis, then merging them via two-stage SLERP weight interpolation. The resulting Qwen3-32B reaches parity with Qwen3-235B on internal in-house arena (69.57 vs 65.83), instruction ..."
+    },
+    {
+      "title": "Analisis de la obra cantar del mio cid | DOCX - SlideShare",
+      "url": "https://es.slideshare.net/slideshow/analisis-de-la-obra-cantar-del-mio-cid/31804097",
+      "snippet": "El documento resume los tres cantares de la obra épica Cantar del Mío Cid. El primer cantar trata sobre el destierro del Cid de …"
+    },
+    {
+      "title": "T-Tech's Merged Qwen3-32B Handles 116M Requests, Beats Qwen3-235B | AI ...",
+      "url": "https://aiweekly.co/alerts/t-techs-merged-qwen3-32b-handles-116m-requests-beats-qwen3-235b",
+      "snippet": "T-Tech consolidated 200+ internal applications onto a single Qwen3-32B model, absorbing 50% of platform traffic and 116M requests per month. The merged model surpasses Qwen3-235B-A22B-Instruct-2507, roughly seven times larger by parameters, scoring 69.6 vs 65.8 on the in-house arena."
+    },
+    {
+      "title": "Resumen y Cuestionario del Cantar de las Bodas: El Cid en Valencia",
+      "url": "https://www.xuletas.es/ficha/resumen-cuestionario-cantar-bodas-cid-valencia/",
+      "snippet": "El Cid se dirige a Valencia con la firme convicción de que Dios lo ayudará en la batalla. Los moros valencianos cercan al Cid, pero, …"
+    }
+  ]
+}

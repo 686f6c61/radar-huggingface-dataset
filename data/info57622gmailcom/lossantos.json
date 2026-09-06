@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "info57622gmailcom/Lossantos",
+  "slug": "info57622gmailcom-lossantos",
+  "author": "info57622gmailcom",
+  "url": "https://huggingface.co/info57622gmailcom/Lossantos",
+  "created_at": "2026-09-05T23:43:12.000Z",
+  "updated_at": "2026-09-05T23:43:12.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/?hl=hi-in",
+      "snippet": "कुछ वाक्यों में लिंग के हिसाब से किए गए अनुवाद के विकल्प मौजूद हो सकते हैं. अनुवाद के विकल्प देखने के लिए, किसी वाक्य पर …"
+    },
+    {
+      "title": "Los Santos Alive: AI Callouts Update - YouTube",
+      "url": "https://www.youtube.com/watch?v=a1nvE_x4-pI",
+      "snippet": "/ lossantosalive / discord Instead of following a predetermined callout, players now step into dynamic AI-driven incidents where everyone has something to say, something to hide and the freedom to ..."
+    },
+    {
+      "title": "चेतना के अद्भुत स्वरूप, जिनमें समाई पूर्णता की विराट दृष्टि",
+      "url": "https://www.patrika.com/opinion/marvelous-forms-of-consciousness-that-embrace-a-vast-vision-of-wholeness-20883415",
+      "snippet": "1 day ago · भारत के सांस्कृतिक जीवन में श्रीकृष्ण अद्भुत रूप से समावेशी चरितनायक के रूप में प्रतिष्ठित हैं, जो विराट होने के …"
+    },
+    {
+      "title": "Los Santos Alive — AI-powered NPC interaction for Grand ... - Patreon",
+      "url": "https://www.patreon.com/cw/LosSantosAlive",
+      "snippet": "Get more from Los Santos Alive on Patreon. AI-powered NPC interaction for Grand Theft Auto V. Support Los Santos Alive and get exclusive access to their work."
+    },
+    {
+      "title": "चैतन्य महाप्रभु के साथ बचपन — श्रील रघुनाथ भट्ट गोस्वामी",
+      "url": "https://nandgramdham.org/acharyas/hi/raghunatha-bhatta-goswami/childhood-with-sri-chaitanya-mahaprabhu/",
+      "snippet": "वाराणसी, चैतन्य महाप्रभु की वृन्दावन से वापसी के समय The riverfront ghats of Varanasi, the setting for Sri Chaitanya …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zagor84/Reinforce-PixelCopter",
+  "slug": "zagor84-reinforce-pixelcopter",
+  "author": "zagor84",
+  "url": "https://huggingface.co/zagor84/Reinforce-PixelCopter",
+  "created_at": "2026-09-05T20:29:45.000Z",
+  "updated_at": "2026-09-05T21:56:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119196,
+  "storage_human": "119196 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BscScan",
+      "url": "https://bscscan.com/",
+      "snippet": "Explore Binance blockchain transactions, addresses, tokens, prices, and activities with BscScan's comprehensive tools and insights."
+    },
+    {
+      "title": "Pro152/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/Pro152/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "Pro152 / Reinforce-Pixelcopter-PLE-v0 like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "Document Moved - BscScan Information Center",
+      "url": "https://info.bscscan.com/what-is-bscscan/",
+      "snippet": "Document Moved Object Moved This document may be found here"
+    },
+    {
+      "title": "tcabgom/ReinforcePixelcopter · Hugging Face",
+      "url": "https://huggingface.co/tcabgom/ReinforcePixelcopter",
+      "snippet": "tcabgom / ReinforcePixelcopter like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results Model card FilesFiles and versions Community Edit model card Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "Bsc Transaction Hash: 0x83e9024a9f... | BscScan",
+      "url": "https://bscscan.com/tx/0x83e9024a9f9ac102eb50d28bd14e77e626e2c5e55f3e7f775b1d832e3995a370",
+      "snippet": "Jul 9, 2026 · BSCSCAN Transaction Action Transfer10,000,000LAB($800,350.00)to Null: 0x000...000 Transaction Hash: …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rvorias/death-mountain-sp-1b",
+  "slug": "rvorias-death-mountain-sp-1b",
+  "author": "rvorias",
+  "url": "https://huggingface.co/rvorias/death-mountain-sp-1b",
+  "created_at": "2026-09-05T23:57:27.000Z",
+  "updated_at": "2026-09-05T23:57:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "reinforcement-learning",
+    "pytorch",
+    "custom-code",
+    "death-mountain",
+    "ppo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 351598,
+  "parameters_human": "351598",
+  "storage_bytes": 2667138,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TRUSTPILOT / avis sur UFC-Que Choisir",
+      "url": "https://forum.quechoisir.org/trustpilot-avis-sur-ufc-que-choisir-t285539.html",
+      "snippet": "Nov 28, 2010 · Voici le message, Trustpilot <noreply.notifications@trustpilot.com> 26 avr. 2021 20:40 (il y a 2 jours) À moi Les …"
+    },
+    {
+      "title": "rvorias (Raphael Vorias) - Hugging Face",
+      "url": "https://huggingface.co/rvorias",
+      "snippet": "datasets 1 rvorias/realms_adventurers Viewer • Updated Mar 28, 2023 • 830 • 35 • 4"
+    },
+    {
+      "title": "Charte du forum - Tutoriels du forum - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/regles-du-forum-t38322.html",
+      "snippet": "Oct 10, 2011 · Venez contribuer au forum de la 1re association de consommateurs de France !"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "小约翰 - 知乎",
+      "url": "https://www.zhihu.com/people/lu-chen-xi-9-98",
+      "snippet": "6 days ago · 关注的话题102关注的专栏4关注的问题2,915关注的收藏夹17"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "KhaledReda/all-MiniLM-L6-v82-pair_score",
+  "slug": "khaledreda-all-minilm-l6-v82-pair_score",
+  "author": "KhaledReda",
+  "url": "https://huggingface.co/KhaledReda/all-MiniLM-L6-v82-pair_score",
+  "created_at": "2026-09-04T04:52:48.000Z",
+  "updated_at": "2026-09-06T01:30:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:55014339",
+    "loss:CoSENTLoss",
+    "en",
+    "dataset:KhaledReda/pairs_with_scores_v66",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live & TV - ZDF",
+      "url": "https://www.zdf.de/live-tv",
+      "snippet": "Alle ZDF-Livestreams kostenlos und jederzeit online genießen. Das komplette TV-Programm von ZDF, ZDFinfo, ZDFneo, arte, KiKA, …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "ZDF Streaming-Portal: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.zdf.de/",
+      "snippet": "Alle Videos und Livestreams im ZDF anschauen - ständig verfügbar und interaktiv! Entdecken Sie Filme, Serien, Sportevents, …"
+    },
+    {
+      "title": "KhaledReda/all-MiniLM-L6-v80-pair_score · Hugging Face",
+      "url": "https://huggingface.co/KhaledReda/all-MiniLM-L6-v80-pair_score",
+      "snippet": "Instructions to use KhaledReda/all-MiniLM-L6-v80-pair_score with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Pressemappe: das aktuelle sportstudio: ZDF-Presseportal",
+      "url": "https://presseportal.zdf.de/pressemappe/das-aktuelle-sportstudio-gaeste-und-themen",
+      "snippet": "1 day ago · Schließen Presseinformationen das aktuelle sportstudio Aktuelle Sportberichterstattung das aktuelle sportstudio …"
+    }
+  ]
+}

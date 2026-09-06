@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "camiellia/qwen3b-multimedqa-random-seed42",
+  "slug": "camiellia-qwen3b-multimedqa-random-seed42",
+  "author": "camiellia",
+  "url": "https://huggingface.co/camiellia/qwen3b-multimedqa-random-seed42",
+  "created_at": "2026-09-05T22:56:14.000Z",
+  "updated_at": "2026-09-05T23:37:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21511312,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anime Timetable | Air Times | Chart | Fall 2026",
+      "url": "https://animeschedule.net/",
+      "snippet": "Find release dates & times for airing anime in your timezone, both with and without subs and even dubs. See links for official streams …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - QwenLM/Qwen3"
+    },
+    {
+      "title": "Anime Schedule | LiveChart.me",
+      "url": "https://www.livechart.me/schedule",
+      "snippet": "1 day ago · No effect in timetable layout Global More Preferred anime titlesRomajiEnglish Time zone(GMT-05:00) America/New_York …"
+    },
+    {
+      "title": "camiellia/qwen-3b-multimedqa-c75b25-kcenter-raw · Hugging Face",
+      "url": "https://huggingface.co/camiellia/qwen-3b-multimedqa-c75b25-kcenter-raw",
+      "snippet": "Instructions to use camiellia/qwen-3b-multimedqa-c75b25-kcenter-raw with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Latest New Anime Shows and Movies - Crunchyroll",
+      "url": "https://www.crunchyroll.com/videos/new",
+      "snippet": "Embark on an anime adventure with Crunchyroll, your ultimate destination for watching a vast collection of anime series and movies. …"
+    }
+  ]
+}

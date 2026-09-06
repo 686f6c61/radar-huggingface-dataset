@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "stornic56/Spark-X2.5-4B-GGUF",
+  "slug": "stornic56-spark-x2-5-4b-gguf",
+  "author": "stornic56",
+  "url": "https://huggingface.co/stornic56/Spark-X2.5-4B-GGUF",
+  "created_at": "2026-09-05T23:51:04.000Z",
+  "updated_at": "2026-09-06T01:03:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "spark2_5",
+    "spark-x2.5",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "imatrix",
+    "intel-arc",
+    "vulkan",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 29897903357,
+  "storage_human": "29.9 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTL+: Sport, Filme, Serien, Podcasts, Hörbücher, Live-TV",
+      "url": "https://plus.rtl.de/?msockid=207f847a03756c980eb193b602016df6",
+      "snippet": "1 day ago · Großes Entertainment auf RTL+: Streame Bundesliga, Serien, Realitys, Filme, Hörbücher, Podcasts, Event Live-Streams …"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "RTL+ Account",
+      "url": "https://my.plus.rtl.de/login",
+      "snippet": "Bereits RTL+ Kunde? Hier geht es zu deinem Account. Logge dich einfach mit deiner E-Mail-Adresse und deinem Passwort ein."
+    },
+    {
+      "title": "abenzerps/Spark-X2.5-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/Spark-X2.5-4B-GGUF",
+      "snippet": "Instructions to use abenzerps/Spark-X2.5-4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gute Zeiten, schlechte Zeiten | GZSZ 7 Tage vorab streamen | RTL+",
+      "url": "https://plus.rtl.de/gute-zeiten-schlechte-zeiten-p_10463?msockid=207f847a03756c980eb193b602016df6",
+      "snippet": "Gute Zeiten, schlechte Zeiten auf RTL+ streamen | GZSZ verpasst oder GZSZ Vorschau gefällig? Jetzt 7 Tage vorab streamen auf …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cfontes/GLM-5.3-Flash-DFlash2-TR3-v3",
+  "slug": "cfontes-glm-5-3-flash-dflash2-tr3-v3",
+  "author": "cfontes",
+  "url": "https://huggingface.co/cfontes/GLM-5.3-Flash-DFlash2-TR3-v3",
+  "created_at": "2026-09-05T23:05:11.000Z",
+  "updated_at": "2026-09-05T23:07:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash2",
+    "dgx-spark",
+    "tp4",
+    "glm",
+    "base_model:incoai/GLM-5.3-Flash-DFlash2",
+    "base_model:finetune:incoai/GLM-5.3-Flash-DFlash2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1171080448,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2342169800,
+  "storage_human": "2.3 GB",
+  "base_model": "zai-org/GLM-5.3-Flash, incoai/GLM-5.3-Flash-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "U - Profile mit geneigten Flanschen - CAD Steel Deutschland",
+      "url": "https://de.cad-steel.net/stahlprofile/u-stahl-profile-mit-neigungsflansch",
+      "snippet": "U-Profile mit geneigten Flanschen - klassische AutoCAD 2000 CAD-Blöcke für U-Stahl. Kostenloser Download."
+    },
+    {
+      "title": "cfontes/glm-5.3-flash-dflash2-tp4 · Hugging Face",
+      "url": "https://huggingface.co/cfontes/glm-5.3-flash-dflash2-tp4",
+      "snippet": "This repo documents a working deployment of GLM-5.3-Flash (320B MoE, 18B active) in NVFP4 quantization with DFlash2 block-diffusion speculative decoding across four NVIDIA DGX Spark (GB10) nodes at tensor-parallel 4."
+    },
+    {
+      "title": "UPN240 EN 10279, Standard EN 10025-2 12100 - ArcelorMittal",
+      "url": "https://e-steel.arcelormittal.com/DE/de/Traeger-Profile/U-Stahltraeger/UNP-Traeger/p/000000000002006899",
+      "snippet": "Entdecken Sie unser Sortiment an UNP-Trägern (UPN-Profilen) aus hochwertigem Stahl in verschiedenen Abmessungen und den …"
+    },
+    {
+      "title": "cfontes/GLM-5.3-Flash-DFlash2-TP4-Spark · Hugging Face",
+      "url": "https://huggingface.co/cfontes/GLM-5.3-Flash-DFlash2-TP4-Spark",
+      "snippet": "What this is The drafter weights = the published incoai/GLM-5.3-Flash-DFlash2 checkpoint with our Phase-0 rank-64 fc-merged adapter folded in (W + (W @ (B @ A)) / 64, trained on 446k tokens of TP4 captured hidden states). Config unchanged."
+    },
+    {
+      "title": "DIN 1026 / DIN EN 10279 U-Stahl - DWG Download (AutoCAD …",
+      "url": "https://cad-markt.de/index.php/downloadcenter/downloads-stahlbau/478-din-1026-din-en-10279-u-stahl",
+      "snippet": "Aug 12, 2026 · Im Downloadcenter vom CAD-markt U-Stahl nach DIN 1026 / DIN EN 10279 U-Stahl. Die Stahlbauprofile sind im …"
+    }
+  ]
+}

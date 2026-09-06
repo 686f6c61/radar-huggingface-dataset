@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Llicklair/ttspro-voces",
+  "slug": "llicklair-ttspro-voces",
+  "author": "Llicklair",
+  "url": "https://huggingface.co/Llicklair/ttspro-voces",
+  "created_at": "2026-09-05T23:11:20.000Z",
+  "updated_at": "2026-09-05T23:11:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "piper",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "piper",
+    "onnx",
+    "text-to-speech",
+    "onnxruntime-web",
+    "ttspro",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 712833128,
+  "storage_human": "713 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "So erhalten Sie Hilfe in Windows - Microsoft-Support",
+      "url": "https://support.microsoft.com/de-de/windows/so-erhalten-sie-hilfe-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Suche nach Hilfe– Geben Sie eine Frage oder Schlüsselwörter in das Suchfeld auf der Taskleiste, um Apps, Dateien, Einstellungen …"
+    },
+    {
+      "title": "GitHub - lyhiving/TTSpro: - a deep learning toolkit for Text-to ...",
+      "url": "https://github.com/lyhiving/TTSpro",
+      "snippet": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production - lyhiving/TTSpro"
+    },
+    {
+      "title": "Windows-Hilfe und -Lerninhalt | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/",
+      "snippet": "Hier finden Sie Hilfe- und „Gewusst wie“-Artikel zu Windows-Betriebssystemen. Erhalten Sie Support für Windows, und erfahren Sie …"
+    },
+    {
+      "title": "ttspro/TTS-project - GitHub",
+      "url": "https://github.com/ttspro/TTS-project/tree/main",
+      "snippet": "🐸Coqui.ai News 📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, Docs 📣 🐶Bark is now available for inference with unconstrained voice cloning. Docs ..."
+    },
+    {
+      "title": "Windows 11 Hilfe finden: Microsoft-Support, Einstellungen und ...",
+      "url": "https://www.win-tipps.de/windows-11-hilfe-microsoft-support-einstellungen-problembehandlung/",
+      "snippet": "Jun 5, 2026 · So findest du in Windows 11 die richtige Hilfe: Einstellungen, Problembehandlung, Schnellhilfe und Microsoft-Support …"
+    }
+  ]
+}

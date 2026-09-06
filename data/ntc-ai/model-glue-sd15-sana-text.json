@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ntc-ai/model-glue-sd15-sana-text",
+  "slug": "ntc-ai-model-glue-sd15-sana-text",
+  "author": "ntc-ai",
+  "url": "https://huggingface.co/ntc-ai/model-glue-sd15-sana-text",
+  "created_at": "2026-09-05T20:37:59.000Z",
+  "updated_at": "2026-09-05T21:08:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "model-glue",
+    "sana",
+    "stable-diffusion",
+    "model-stitching",
+    "text-to-image",
+    "en",
+    "base_model:Efficient-Large-Model/Sana_600M_512px_diffusers",
+    "base_model:adapter:Efficient-Large-Model/Sana_600M_512px_diffusers",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7540114,
+  "parameters_human": "7.5M",
+  "storage_bytes": 123007767,
+  "storage_human": "123 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5, Efficient-Large-Model/Sana_600M_512px_diffusers",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "National Tennis Cup 2026 | Fédération Française de Tennis",
+      "url": "https://ntc.fft.fr/",
+      "snippet": "Aujourd’hui, la NTC est le plus grand tournoi au mondede tennis amateur. Son concept uniquede tournoi par classement désigne …"
+    },
+    {
+      "title": "GitHub - NVlabs/Sana: SANA: Efficient High-Resolution Image Synthesis ...",
+      "url": "https://github.com/NVlabs/Sana",
+      "snippet": "🔥 [2026/08] 🎬 SANA-Video 2.0training, inference, model architecture, and 5B 720p checkpoint are released! The 8-second model supports both text-to-video and text-image-to-video generation, with hybrid linear/softmax attention and Attention Residuals."
+    },
+    {
+      "title": "Application Nike Training Club NTC",
+      "url": "https://www.nike.com/fr/ntc-app?msockid=2b5f290b8bcd610d1fa43ec08a9f60e4",
+      "snippet": "Avec NTC, vous avez accès à plus de 200 séances d'entraînement gratuites portant sur le renforcement, l'endurance, le yoga et la …"
+    },
+    {
+      "title": "sana: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/sana-nvidia",
+      "snippet": "The model's strong text-image alignment ensures that specific design requirements in the prompt translate reliably to the output. On-device generative AI applications."
+    },
+    {
+      "title": "NTC : c'est quoi et pour qui ? Guide Complet 2026 | Excellence …",
+      "url": "https://www.excellence-bs.com/blog/ntc-titre-professionnel-negociateur-technico-commercial",
+      "snippet": "May 15, 2026 · Découvrez le Titre Professionnel NTC : définition, programme, conditions d'accès, alternance, débouchés et salaires. …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jasminehjh/experiment-contrastive",
+  "slug": "jasminehjh-experiment-contrastive",
+  "author": "jasminehjh",
+  "url": "https://huggingface.co/jasminehjh/experiment-contrastive",
+  "created_at": "2026-09-05T22:58:57.000Z",
+  "updated_at": "2026-09-05T22:59:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digital Spy Forum",
+      "url": "https://forums.digitalspy.com/",
+      "snippet": "1 day ago · Categories - Digital Spy Forum and Community, a place to discuss the latest TV, Movie and entertainment news and trends."
+    },
+    {
+      "title": "Jasmine Reviews | Rated 5 Stars by 431 Users on Civitai",
+      "url": "https://civitai.com/models/153710/reviews",
+      "snippet": "Explore user reviews of the Jasmine AI model on Civitai, rated 5 stars by 431 users, and see how it has helped others bring their creative visions to life"
+    },
+    {
+      "title": "Chelsea FC: Carefree! - Reddit",
+      "url": "https://www.reddit.com/r/chelseafc/top/",
+      "snippet": "r/ChelseaFC is the digital home of all things related to Chelsea Football Club."
+    },
+    {
+      "title": "Enzyme function prediction using contrastive learning | Science",
+      "url": "https://www.science.org/doi/10.1126/science.adf2465",
+      "snippet": "In this work, we report a ML model named CLEAN (contrastive learning–enabled enzyme annotation) for enzyme function prediction. CLEAN was trained on high-quality data from UniProt, taking amino acid sequence as input and outputting a list of enzyme functions (EC numbers as the example) ranked by the likelihood."
+    },
+    {
+      "title": "Streaming Community : r/community - Reddit",
+      "url": "https://www.reddit.com/r/community/comments/fb1wa/streaming_community/",
+      "snippet": "Jan 28, 2011 · Streaming Community Does anybody know of any site that has the first season of Community streaming? Or at least …"
+    }
+  ]
+}

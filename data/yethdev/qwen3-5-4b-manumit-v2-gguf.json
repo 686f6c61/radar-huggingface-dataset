@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yethdev/qwen3.5-4b-manumit-v2-GGUF",
+  "slug": "yethdev-qwen3-5-4b-manumit-v2-gguf",
+  "author": "yethdev",
+  "url": "https://huggingface.co/yethdev/qwen3.5-4b-manumit-v2-GGUF",
+  "created_at": "2026-09-06T01:28:24.000Z",
+  "updated_at": "2026-09-06T01:30:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "text-generation",
+    "base_model:yethdev/qwen3.5-4b-manumit-v2",
+    "base_model:quantized:yethdev/qwen3.5-4b-manumit-v2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 10266169216,
+  "storage_human": "10.3 GB",
+  "base_model": "yethdev/qwen3.5-4b-manumit-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "If your YouTube channel is terminated, you are prohibited from using, possessing, or creating any other YouTube channels. You are …"
+    },
+    {
+      "title": "yethdev/qwen3.5-4b-manumit-v2 · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-4b-manumit-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Understand unexpected billing charges from YouTube - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/9971763?hl=en",
+      "snippet": "If you are seeing an unexpected charge from YouTube on your credit card or bank account (shown as “GOOGLE*YouTube”), read …"
+    },
+    {
+      "title": "yethdev/qwen3.5-4b-manumit-v2 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-4b-manumit-v2/discussions",
+      "snippet": "Instructions to use yethdev/qwen3.5-4b-manumit-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use yethdev/qwen3.5-4b-manumit-v2 with Transformers:"
+    },
+    {
+      "title": "İndir | OBS",
+      "url": "https://obsproject.com/tr/downLOAD",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "balajiduraisamy/Qwen2.5-14B-Instruct",
+  "slug": "balajiduraisamy-qwen2-5-14b-instruct",
+  "author": "balajiduraisamy",
+  "url": "https://huggingface.co/balajiduraisamy/Qwen2.5-14B-Instruct",
+  "created_at": "2026-09-05T19:37:44.000Z",
+  "updated_at": "2026-09-05T19:37:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-14B",
+    "base_model:finetune:Qwen/Qwen2.5-14B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29540134000,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen2.5-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Résultats et calendrier de la Ligue 2 BKT",
+      "url": "https://ligue1.com/fr/competitions/ligue2bkt/results",
+      "snippet": "Consultez tous les résultats de la Ligue 2 BKT : matchs joués, calendriers et performances des clubs journée par journée."
+    },
+    {
+      "title": "Qwen/Qwen2.5-14B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct",
+      "snippet": "Instructions to use Qwen/Qwen2.5-14B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ligue 2 en direct : résultats L2 et classement live - Football",
+      "url": "https://www.lequipe.fr/Football/Ligue-2/",
+      "snippet": "Retrouvez toute l'actualité de la Ligue 2 de foot, tous les résultats et le calendrier complet."
+    },
+    {
+      "title": "Qwen/Qwen2.5-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Résultat classement FRANCE Ligue 2 - Football - MAXIFOOT",
+      "url": "https://www.maxifoot.fr/resultat-ligue-2-france.htm",
+      "snippet": "Classement Ligue 2, résultats, buteurs et prochains matchs du championnat actualisés sur une même page pour la saison 2026-2027"
+    }
+  ]
+}

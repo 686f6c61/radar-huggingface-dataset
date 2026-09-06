@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "spiritfather/Boulesis-26B-A4B-GGUF",
+  "slug": "spiritfather-boulesis-26b-a4b-gguf",
+  "author": "spiritfather",
+  "url": "https://huggingface.co/spiritfather/Boulesis-26B-A4B-GGUF",
+  "created_at": "2026-09-05T21:48:48.000Z",
+  "updated_at": "2026-09-05T22:08:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "creative-writing",
+    "text-generation",
+    "base_model:SubMaroon/Boulesis-26B-A4B",
+    "base_model:quantized:SubMaroon/Boulesis-26B-A4B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25971339550,
+  "parameters_human": "25.97B",
+  "storage_bytes": 74132103168,
+  "storage_human": "74.1 GB",
+  "base_model": "SubMaroon/Boulesis-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiguan SUV - Explore the Design & Features | Volkswagen UK",
+      "url": "https://www.volkswagen.co.uk/en/new/tiguan.html",
+      "snippet": "Discover the 2025 Volkswagen Tiguan. Explore the price, boot space, plug-in hybrid model & dimensions. Build a Tiguan online today …"
+    },
+    {
+      "title": "SubMaroon/Boulesis-26B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SubMaroon/Boulesis-26B-A4B-GGUF",
+      "snippet": "Instructions to use SubMaroon/Boulesis-26B-A4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Used Volkswagen Tiguan Cars For Sale | Autotrader UK",
+      "url": "https://www.autotrader.co.uk/cars/used/volkswagen/tiguan?msockid=139d93b5d4f36f1401b6847ed5766efc",
+      "snippet": "Find your perfect Used Volkswagen Tiguan today & buy your car with confidence. Choose from over 4518 cars in stock & find a great …"
+    },
+    {
+      "title": "SubMaroon/Boulesis-26B-A4B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/SubMaroon/Boulesis-26B-A4B-GGUF/tree/main",
+      "snippet": "Instructions to use SubMaroon/Boulesis-26B-A4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Volkswagen Tiguan Prices & New Car Deals | Autotrader UK",
+      "url": "https://www.autotrader.co.uk/cars/volkswagen/tiguan?msockid=139d93b5d4f36f1401b6847ed5766efc",
+      "snippet": "Find your next Volkswagen Tiguan on Autotrader! Explore reviews, finance options and find a great deal!"
+    }
+  ]
+}

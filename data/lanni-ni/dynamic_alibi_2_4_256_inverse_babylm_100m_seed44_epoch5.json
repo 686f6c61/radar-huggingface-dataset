@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch5",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch5",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch5",
+  "created_at": "2026-09-05T17:36:47.000Z",
+  "updated_at": "2026-09-05T17:38:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/forums/vstudio/zh-CN/cd52202b-ec85-4435-a3c0-098bc0f2a877/-unicode-",
+      "snippet": ""
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_epoch7 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_epoch7",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "__init__.py · Lanni-ni/stickbreaking_2L_4H_256D_babylm at main",
+      "url": "https://huggingface.co/Lanni-ni/stickbreaking_2L_4H_256D_babylm/blame/main/__init__.py",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/silverlightcontrols/thread/cf7b8f7a-9494-443c-ac79-25cf9d7de65e/",
+      "snippet": ""
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_epoch10 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_epoch10",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

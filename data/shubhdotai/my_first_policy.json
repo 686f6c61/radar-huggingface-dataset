@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shubhdotai/my_first_policy",
+  "slug": "shubhdotai-my_first_policy",
+  "author": "shubhdotai",
+  "url": "https://huggingface.co/shubhdotai/my_first_policy",
+  "created_at": "2026-09-05T21:47:54.000Z",
+  "updated_at": "2026-09-05T21:48:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:shubhdotai/record-test_20260906_011033",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "コジマホールディングス西区民文化センター ホームページ",
+      "url": "http://www.cf.city.hiroshima.jp/nishi-cs/",
+      "snippet": "広島市西区にある文化センターの公式ホームページ。施設情報、予約方法、イベント案内などを提供しています。"
+    },
+    {
+      "title": "My First AI Policy :: ~/myfirstaipolicy.com",
+      "url": "https://www.myfirstaipolicy.com/",
+      "snippet": "Answer a few questions, get a starter AI policy for your law firm or business. Free, open source (CC0), built from Falcon Rappaport & Berkman LLP's published templates. Not legal advice."
+    },
+    {
+      "title": "広島市南区民文化センター",
+      "url": "http://www.cf.city.hiroshima.jp/minami-cs/",
+      "snippet": "本文へスキップ 広島市南区民文化センターは、地域・文化を振興します。 広島市南区民文化センター TEL. 082-251-4120 〒732 …"
+    },
+    {
+      "title": "shubhdotai (shubham agarwal) - Hugging Face",
+      "url": "https://huggingface.co/shubhdotai",
+      "snippet": "User profile of shubham agarwal on Hugging Face"
+    },
+    {
+      "title": "広島市 西区民文化センター",
+      "url": "http://www.cf.city.hiroshima.jp/nishi-cs/main/index.html",
+      "snippet": "★ ホールのピアノが新しくなりました！ YAMAHA CFX ★ 喫煙所廃止のお知らせ ★ 西区民文化センター呼称変更について（お知ら …"
+    }
+  ]
+}

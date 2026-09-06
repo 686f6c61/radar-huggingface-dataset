@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "balajiduraisamy/gemma-4-E2B-it",
+  "slug": "balajiduraisamy-gemma-4-e2b-it",
+  "author": "balajiduraisamy",
+  "url": "https://huggingface.co/balajiduraisamy/gemma-4-E2B-it",
+  "created_at": "2026-09-05T19:35:52.000Z",
+  "updated_at": "2026-09-05T19:35:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E2B",
+    "base_model:finetune:google/gemma-4-E2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791544,
+  "storage_human": "10.3 GB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何快速输入乘号 ×-百度经验",
+      "url": "https://jingyan.baidu.com/article/48206aea0d63fa616bd6b37a.html",
+      "snippet": "Dec 17, 2019 · 如何快速输入乘号 ×,平时我们在工作学习中需要输入乘号“×”时，键盘和快捷符号栏都没有这个符合，这里分享一下如何 …"
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "win10的运行在哪里？如何打开运行-百度经验",
+      "url": "https://jingyan.baidu.com/article/7908e85ceee3d5af491ad246.html",
+      "snippet": "Jun 22, 2019 · win10的运行在哪里？ 如何打开运行？ 很多人习惯了以前的xp系统、win7系统，到了win10系统后不知道运行在哪里 …"
+    },
+    {
+      "title": "Gemma-4-E2B-it - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/gemma_4_e2b_it",
+      "snippet": "Gemma-4-E2B-it Lightweight multimodal model from Google DeepMind handling text and image input. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open‑weights models in both pre‑trained and instruction‑tuned variants. Gemma 4 ..."
+    },
+    {
+      "title": "omegle | Kindertelefoon Community",
+      "url": "https://forum.kindertelefoon.nl/seksualiteit-32/omegle-84591",
+      "snippet": "Feb 28, 2024 · Omegle bestaat inderdaad niet meer volgens mij. Ik heb er zelf nooit op gezeten dus ik kan je verder niet veel erover …"
+    }
+  ]
+}

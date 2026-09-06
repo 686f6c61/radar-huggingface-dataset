@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cyttic/trocr-webfonts8",
+  "slug": "cyttic-trocr-webfonts8",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/trocr-webfonts8",
+  "created_at": "2026-09-05T17:09:45.000Z",
+  "updated_at": "2026-09-05T22:34:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:cyttic/exp2-frozen-benyehuda-cont",
+    "base_model:finetune:cyttic/exp2-frozen-benyehuda-cont",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299495168,
+  "parameters_human": "299.5M",
+  "storage_bytes": 3594130841,
+  "storage_human": "3.6 GB",
+  "base_model": "cyttic/exp2-frozen-benyehuda-cont",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rent-A-Fan \"Erfolg ist planbar\" mit dem richtigen Marketing",
+      "url": "https://www.rent-a-fan.de/",
+      "snippet": "Ob kurze, einmalige Fun-Einsätze, dauerhafte Fans, Akteure, Statisten – wir sind rund um die Uhr für Sie da und geben Ihnen, Ihren …"
+    },
+    {
+      "title": "cyttic/trocr-webfonts6 · Hugging Face",
+      "url": "https://huggingface.co/cyttic/trocr-webfonts6",
+      "snippet": "Instructions to use cyttic/trocr-webfonts6 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Rent a Fan | Eventjoker – Fans mieten für Shows und Events",
+      "url": "https://eventjoker.eu/rent-a-fan/",
+      "snippet": "Rent a Fan mit Eventjoker: Begeisterte Fans für TV-Shows, Produktlaunches, Konzerte & Events. Authentische Stimmung, Applaus …"
+    },
+    {
+      "title": "cyttic/trocr-webfonts2-BY · Hugging Face",
+      "url": "https://huggingface.co/cyttic/trocr-webfonts2-BY",
+      "snippet": "trocr-webfonts2-BY This model is a fine-tuned version of cyttic/exp2-frozen-benyehuda-cont on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Fans mieten @ Stimmung und Erfolg gehen Hand in Hand und sind …",
+      "url": "https://www.rent-a-fan.de/publikum-und-fans-mieten/",
+      "snippet": "Gruppen von Fans, Autogrammjägern und Journalisten warten auf Sie. Es wird gejubelt, geklatscht, getrampelt, fotografiert, in …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "psikosen/mini-swarm-browser-258m",
+  "slug": "psikosen-mini-swarm-browser-258m",
+  "author": "psikosen",
+  "url": "https://huggingface.co/psikosen/mini-swarm-browser-258m",
+  "created_at": "2026-09-05T22:13:14.000Z",
+  "updated_at": "2026-09-05T22:13:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "canopy",
+    "text-generation",
+    "browser-use",
+    "web-agents",
+    "multi-agent",
+    "set-of-marks",
+    "small-language-models",
+    "moe",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 296304390,
+  "parameters_human": "296.3M",
+  "storage_bytes": 592641124,
+  "storage_human": "593 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Find Your Windows PC's Serial Number",
+      "url": "https://www.howtogeek.com/294712/how-to-find-your-windows-pcs-serial-number/",
+      "snippet": "Oct 24, 2025 · How to Find Your Windows PC's Serial Number. Menu. Sign in now. Close. News. PC HardwareSubmenu. …"
+    },
+    {
+      "title": "psikosen/canopy-258m-r3 · Hugging Face",
+      "url": "https://huggingface.co/psikosen/canopy-258m-r3",
+      "snippet": "Instructions to use psikosen/canopy-258m-r3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "how to see my PCs serial number? - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5563699/how-to-see-my-pcs-serial-number",
+      "snippet": "Sep 22, 2025 · Go to Settings > System > About. Scroll to Device specifications→ Sometimes shows serial number (depends on …"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
+    },
+    {
+      "title": "How to Find Your Computer’s Serial Number? - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/techtips/how-to-find-your-computer-serial-number/",
+      "snippet": "Jan 12, 2026 · A PC serial number is a unique identification code assigned to a personal computer (PC) by its manufacturer. It helps …"
+    }
+  ]
+}

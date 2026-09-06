@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "B111ue/Stereo-CoRE",
+  "slug": "b111ue-stereo-core",
+  "author": "B111ue",
+  "url": "https://huggingface.co/B111ue/Stereo-CoRE",
+  "created_at": "2026-08-02T11:36:29.000Z",
+  "updated_at": "2026-09-06T01:36:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "imitation-learning",
+    "multi-robot",
+    "decentralized",
+    "rgb-d",
+    "dataset:B111ue/RoboFactory-5Task-RGBD-Decentralized",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13973688830,
+  "storage_human": "14.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chloé Offizielle Webseite | Luxus-Taschen, Damenmode & Accessoires",
+      "url": "https://www.chloe.com/de-de",
+      "snippet": "Entdecken Sie die offizielle Chloé Webseite und entdecken Sie unsere Kollektionen, die Pariser Eleganz und handwerkliches Können …"
+    },
+    {
+      "title": "B111ue/Stereo-CoRE · Hugging Face",
+      "url": "https://huggingface.co/B111ue/Stereo-CoRE",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Luxus-Handtaschen für Damen - Chloé",
+      "url": "https://www.chloe.com/de-de/c/bags",
+      "snippet": "Ikonische Luxustaschen definieren unsere exklusive Kollektion für Damen und präsentieren die prestigeträchtigen Designs von Chloé …"
+    },
+    {
+      "title": "B111ue/Stereo-CoRE at main - Hugging Face",
+      "url": "https://huggingface.co/B111ue/Stereo-CoRE/tree/main",
+      "snippet": "B111ue / Stereo-CoRE like 0 Robotics B111ue/RoboFactory-5Task-RGBD-Decentralized imitation-learning multi-robot decentralized rgb-d License:mit Model card FilesFiles and versions xet Community Copy to bucket new main Stereo-CoRE 13.3 GB Ctrl+K Ctrl+K 1 contributor History:18 commits B111ue Add files using upload-large-folder tool 105afeb ..."
+    },
+    {
+      "title": "BESTSECRET – Members Only.",
+      "url": "https://www.bestsecret.com/",
+      "snippet": "Premium and luxury brands at exclusive prices. Curated collections from the world's most in-demand fashion labels — only for …"
+    }
+  ]
+}

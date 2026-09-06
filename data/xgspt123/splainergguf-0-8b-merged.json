@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Xgspt123/splainerGGUF-0.8b-merged",
+  "slug": "xgspt123-splainergguf-0-8b-merged",
+  "author": "Xgspt123",
+  "url": "https://huggingface.co/Xgspt123/splainerGGUF-0.8b-merged",
+  "created_at": "2026-09-05T20:08:42.000Z",
+  "updated_at": "2026-09-05T20:09:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-0.8B",
+    "base_model:finetune:unsloth/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1766931943,
+  "storage_human": "1.8 GB",
+  "base_model": "unsloth/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps - Computer - Google …",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Get directions in Google Maps On your computer, open Google Maps. Click Directions . Enter the starting point and destination. Click …"
+    },
+    {
+      "title": "Xgspt123/splainer-0.8b-merged · Hugging Face",
+      "url": "https://huggingface.co/Xgspt123/splainer-0.8b-merged",
+      "snippet": "Instructions to use Xgspt123/splainer-0.8b-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Xgspt123/splainer-0.8b-merged with Transformers:"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "splainer-0.8b-merged API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Xgspt123/splainer-0.8b-merged",
+      "snippet": "Run splainer-0.8b-merged with FriendliAI inference. This qwen35 model was trained 2x faster with Unsloth and Huggingface's TRL library."
+    },
+    {
+      "title": "Find & improve your location’s accuracy in Google Maps",
+      "url": "https://support.google.com/maps/answer/2839911?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Find your current location in Google Maps In your browser, give Maps location permission. Manage your location settings in Chrome. …"
+    }
+  ]
+}

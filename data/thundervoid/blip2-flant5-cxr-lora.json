@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ThunderVoid/blip2-flant5-cxr-lora",
+  "slug": "thundervoid-blip2-flant5-cxr-lora",
+  "author": "ThunderVoid",
+  "url": "https://huggingface.co/ThunderVoid/blip2-flant5-cxr-lora",
+  "created_at": "2026-09-05T19:52:44.000Z",
+  "updated_at": "2026-09-05T19:53:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73660608,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spritpreise Wien Heute — Günstig Tanken | Benzio",
+      "url": "https://tankencheck.app/at/vienna/",
+      "snippet": "1 day ago · Benzinpreise und Dieselpreise in Wien vergleichen. Prüfe den Zeitstempel zur letzten Aktualisierung jeder Preisangabe."
+    },
+    {
+      "title": "Salesforce/blip2-flan-t5-xxl · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip2-flan-t5-xxl",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tanken - ÖAMTC",
+      "url": "https://www.oeamtc.at/thema/tanken/",
+      "snippet": "Nach kurzer Entspannung im Juni sind die Spritpreise im Juli wieder deutlich angestiegen: Super verteuerte sich im Monatsvergleich …"
+    },
+    {
+      "title": "Salesforce/blip2-flan-t5-xl · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip2-flan-t5-xl",
+      "snippet": "Instructions to use Salesforce/blip2-flan-t5-xl with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Spritpreise Wien: Diesel ab 2,054 € heute - Tankstellen vergleichen",
+      "url": "https://spritbiene.at/wien",
+      "snippet": "Spritbiene zeigt dir in Echtzeit die günstigsten Tankstellen in Wien. Die Preise werden alle 15 Minuten aktualisiert und stammen von …"
+    }
+  ]
+}

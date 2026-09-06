@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lemons-ink/SmolLM3-Custom-Merged",
+  "slug": "lemons-ink-smollm3-custom-merged",
+  "author": "lemons-ink",
+  "url": "https://huggingface.co/lemons-ink/SmolLM3-Custom-Merged",
+  "created_at": "2026-09-05T20:18:08.000Z",
+  "updated_at": "2026-09-05T20:22:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 6167443587,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Galerie Biedermann - KUNSTAREAL",
+      "url": "https://kunstareal.de/galerien/galerie-biedermann",
+      "snippet": "Ihr Schwerpunkt liegt auf Gemälden und Skulpturen des 20. Jahrhunderts. Zum Programm gehören international anerkannte …"
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance."
+    },
+    {
+      "title": "Galerie Biedermann auf artnet",
+      "url": "https://www.artnet.de/galerien/galerie-biedermann/",
+      "snippet": "May 30, 2026 · Galerie Biedermann bietet eine große Auswahl an Kunstwerken bedeutender Künstler an. Finden Sie kommende …"
+    },
+    {
+      "title": "SmolLM3 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/model_doc/smollm3",
+      "snippet": "SmolLM3 is a fully open, compact language model designed for efficient deployment while maintaining strong performance. It uses a Transformer decoder architecture with Grouped Query Attention (GQA) to reduce the kv cache, and no RoPE, enabling improved performance on long-context tasks."
+    },
+    {
+      "title": "Galerie Biedermann - Open Art Munich",
+      "url": "https://openart-munich.de/galerie/galerie-biedermann/",
+      "snippet": "Die Galerie wurde 1971 von der Kunsthistorikerin Dr. Margret Biedermann gegründet. Sie befand sich 40 Jahre in der …"
+    }
+  ]
+}

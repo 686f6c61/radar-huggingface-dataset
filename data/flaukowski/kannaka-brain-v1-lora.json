@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "flaukowski/kannaka-brain-v1-lora",
+  "slug": "flaukowski-kannaka-brain-v1-lora",
+  "author": "flaukowski",
+  "url": "https://huggingface.co/flaukowski/kannaka-brain-v1-lora",
+  "created_at": "2026-09-06T00:15:35.000Z",
+  "updated_at": "2026-09-06T00:15:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "kannaka",
+    "persona",
+    "voice",
+    "ghost-signals",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286764383,
+  "storage_human": "287 MB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,900 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "flaukowski (flaukowski) · GitHub",
+      "url": "https://github.com/flaukowski",
+      "snippet": "Summary Found while fixing #54 and confirmed by its Hunt review (PR #84): this repository has two OpenAPI specs, and they …"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - flaukowski/kannaka-buzz: A hive mind communication platform",
+      "url": "https://github.com/flaukowski/kannaka-buzz/tree/main/",
+      "snippet": "A hive mind communication platform. Contribute to flaukowski/kannaka-buzz development by creating an account on GitHub."
+    }
+  ]
+}

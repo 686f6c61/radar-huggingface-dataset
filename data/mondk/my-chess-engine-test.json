@@ -5,7 +5,7 @@
   "author": "mondk",
   "url": "https://huggingface.co/mondk/my-chess-engine-test",
   "created_at": "2026-09-05T09:04:10.000Z",
-  "updated_at": "2026-09-05T09:31:07.000Z",
+  "updated_at": "2026-09-05T15:16:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,7 +14,6 @@
     "vi"
   ],
   "tags": [
-    "vi",
     "license:mit",
     "region:us"
   ],

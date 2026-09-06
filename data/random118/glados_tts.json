@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Random118/GLaDOS_TTS",
+  "slug": "random118-glados_tts",
+  "author": "Random118",
+  "url": "https://huggingface.co/Random118/GLaDOS_TTS",
+  "created_at": "2026-09-05T19:57:11.000Z",
+  "updated_at": "2026-09-06T01:24:41.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja",
+    "zh",
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "TTS",
+    "Text-to-Speech",
+    "audio",
+    "text-to-speech",
+    "ja",
+    "zh",
+    "en",
+    "ru",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 467463338,
+  "storage_human": "467 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LINCOLN TOWN CAR 2004 Repair Manual (304 Pages)",
+      "url": "https://www.carmanualsonline.info/lincoln-town-car-2004-owners-manual/7",
+      "snippet": "LINCOLN TOWN CAR 2004 Repair Manual Manufacturer: LINCOLN, Model Year: 2004, Model line: TOWN CAR, Model: LINCOLN …"
+    },
+    {
+      "title": "GitHub - ianrose42/TTS_GLaDOS: Train a GLaDOS text-to-speech model",
+      "url": "https://github.com/ianrose42/TTS_GLaDOS",
+      "snippet": "TTS_GLaDOS This repo contains code for creating a text-to-speech model emulating the voice of GLaDOS, the malevolent AI from the Portal video games."
+    },
+    {
+      "title": "Lincoln Town Car 2004 Factory Service Repair Manual + Wiring",
+      "url": "https://manualsforyou.com/shop/lincoln-town-car-2004-factory-workshop-service-repair-manual/",
+      "snippet": "Accessible in Signature, Ultimate and Ultimate L trim levels, the 2004 Lincoln Town Car comes accessible with satellite radio this …"
+    },
+    {
+      "title": "WarriorMama777/GLaDOS_TTS · Hugging Face",
+      "url": "https://huggingface.co/WarriorMama777/GLaDOS_TTS",
+      "snippet": "The GLaDOS voice is based on the artificial intelligence character from the popular game series \"Portal\" developed by Valve Corporation. The distinct and iconic voice of GLaDOS is performed by actress Ellen McLain. This TTS model is based on content created by Valve Corporation, and I extend our gratitude and recognition to their work."
+    },
+    {
+      "title": "2004 Lincoln Town Car Electrical Wiring Diagrams Original Ford …",
+      "url": "https://www.factoryrepairmanuals.com/2004-lincoln-town-car-electrical-wiring-diagrams-original-ford-manual/",
+      "snippet": "Nov 21, 2023 · 2004 Lincoln Town Car Electrical Wiring Diagrams All Including Town Car Signature, Town Car Ultimate & Town Car …"
+    }
+  ]
+}

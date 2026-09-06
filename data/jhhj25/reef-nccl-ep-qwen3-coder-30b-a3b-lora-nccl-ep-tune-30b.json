@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jhhj25/reef-nccl-ep-qwen3-coder-30b-a3b-lora-nccl-ep-tune-30b",
+  "slug": "jhhj25-reef-nccl-ep-qwen3-coder-30b-a3b-lora-nccl-ep-tune-30b",
+  "author": "jhhj25",
+  "url": "https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-coder-30b-a3b-lora-nccl-ep-tune-30b",
+  "created_at": "2026-09-05T22:08:46.000Z",
+  "updated_at": "2026-09-05T22:08:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "megatron",
+    "qwen3",
+    "mixture-of-experts",
+    "base_model:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160587912,
+  "storage_human": "161 MB",
+  "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Michigan State Spartans Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/mens-college-basketball/team/_/id/127/michigan-state-spartans",
+      "snippet": "Visit ESPN for Michigan State Spartans live scores, video highlights, and latest news. Find standings and the full 2026-27 season …"
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Men's Basketball - Michigan State University Athletics",
+      "url": "https://msuspartans.com/sports/mens-basketball",
+      "snippet": "Mar 23, 2026 · 69 Story Recap Box score Completed Event: Men's Basketball versus (14) North Dakota State on March 19, 2026, …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "We are announcing Qwen3-Coder, our most agentic code model to date. Qwen3-Coderis available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks."
+    },
+    {
+      "title": "Michigan State Spartans live scores, results, fixtures | Basketball, USA",
+      "url": "https://www.flashscoreusa.com/team/michigan-state-spartans/GOC3ZXTo/",
+      "snippet": "Michigan State Spartans page on Flashscore offers livescore, results, standings and match details."
+    }
+  ]
+}

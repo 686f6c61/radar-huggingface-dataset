@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cfontes/GLM-5.3-Flash-EXL3-TP4-Spark",
+  "slug": "cfontes-glm-5-3-flash-exl3-tp4-spark",
+  "author": "cfontes",
+  "url": "https://huggingface.co/cfontes/GLM-5.3-Flash-EXL3-TP4-Spark",
+  "created_at": "2026-09-05T23:05:10.000Z",
+  "updated_at": "2026-09-05T23:05:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2602.06036",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Time in Dubai, United Arab Emirates (+04) | Time.now",
+      "url": "https://time.now/dubai/",
+      "snippet": "52 minutes ago · Current time in Dubai, United Arab Emirates (+04, UTC+4). Live clock with seconds, sunrise/sunset, timezone info …"
+    },
+    {
+      "title": "cfontes/GLM-5.3-Flash-DFlash2-TP4-Spark · Hugging Face",
+      "url": "https://huggingface.co/cfontes/GLM-5.3-Flash-DFlash2-TP4-Spark",
+      "snippet": "GLM-5.3-Flash DFlash2 — TP4 DGX Spark Champion Drafter (v5) Fine-tuned DFlash2 drafter for zai-org/GLM-5.3-Flash, tuned and served on a 4× NVIDIA DGX Spark cluster (TP4, RoCE) with vLLM speculative decoding (DFlash2, K=7)."
+    },
+    {
+      "title": "Current Local Time in Dubai, Dubai, United Arab Emirates",
+      "url": "https://www.timeanddate.com/worldclock/united-arab-emirates/dubai",
+      "snippet": "Current local time in United Arab Emirates – Dubai – Dubai. Get Dubai's weather and area codes, time zone and DST. Explore …"
+    },
+    {
+      "title": "cfontes/glm-5.3-flash-dflash2-tp4 · Hugging Face",
+      "url": "https://huggingface.co/cfontes/glm-5.3-flash-dflash2-tp4",
+      "snippet": "cfontes / glm-5.3-flash-dflash2-tp4 like 0 Text Generation English Chinese vllm glm-5.3 dflash2 speculative-decoding dgx-spark nvfp4 gb10 block-diffusion License:mit Model card FilesFiles and versions xet Community Copy to bucket new GLM-5.3-Flash NVFP4 + DFlash2 on 4× DGX Spark (TP4) 📊 Benchmark Results 🏆 Headline: Coding Peak — 69.3 tok/s (temp=0, c1) Sustained Decode — Mixed ..."
+    },
+    {
+      "title": "Time in Dubai, United Arab Emirates now",
+      "url": "https://time.is/Dubai?v=1.0.20",
+      "snippet": "52 minutes ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Dubai, United Arab Emirates."
+    }
+  ]
+}

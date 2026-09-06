@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dr0wzy/aizen-siem",
+  "slug": "dr0wzy-aizen-siem",
+  "author": "dr0wzy",
+  "url": "https://huggingface.co/dr0wzy/aizen-siem",
+  "created_at": "2026-09-05T23:25:23.000Z",
+  "updated_at": "2026-09-05T23:25:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1153507389,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onderwerpen met label: Streamz|Streamz+ - De Netweters",
+      "url": "https://www.netweters.be/t5/forums/filteredbylabelpage/board-id/Entertainment/label-name/streamz%7Cstreamz%2B",
+      "snippet": "Wil je iets leuk delen over een film of serie? Heb je een vraag over één van de content pakketten van Telenet? Of ervaar je …"
+    },
+    {
+      "title": "GitHub - arnav-iwnl/AIzen: An AI based SIEM for Apache logs.",
+      "url": "https://github.com/arnav-iwnl/AIzen",
+      "snippet": "AIzen — Intelligent Log Analysis Engine AIzen is an AI-powered SIEM (Security Information and Event Management) platform that automatically analyzes server logs to identify errors, generate chronological incident timelines, and determine root causes with actionable recovery steps."
+    },
+    {
+      "title": "Streamz inloggen - De Netweters",
+      "url": "https://www.netweters.be/t5/Entertainment/Streamz-inloggen/td-p/216341",
+      "snippet": "Mar 27, 2026 · Streamz inloggen Sinds paar dagen moet ik iedere keer opnieuw inloggen bij streamz op de PC, wat zeer vervelend is …"
+    },
+    {
+      "title": "AIzen/README.md at master · arnav-iwnl/AIzen · GitHub",
+      "url": "https://github.com/arnav-iwnl/AIzen/blob/master/README.md",
+      "snippet": "AIzen — Intelligent Log Analysis Engine AIzen is an AI-powered SIEM (Security Information and Event Management) platform that automatically analyzes server logs to identify errors, generate chronological incident timelines, and determine root causes with actionable recovery steps."
+    },
+    {
+      "title": "Beeldkwaliteit Streamz - De Netweters",
+      "url": "https://www.netweters.be/t5/Entertainment/Beeldkwaliteit-Streamz/td-p/105736",
+      "snippet": "Sep 14, 2020 · Beeldkwaliteit Streamz Ik had stilletjes gehoopt dat de beeldkwaliteit met de vervelling van Play naar Streamz ging …"
+    }
+  ]
+}

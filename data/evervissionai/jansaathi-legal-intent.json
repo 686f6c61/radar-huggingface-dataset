@@ -5,7 +5,7 @@
   "author": "EverVissionAI",
   "url": "https://huggingface.co/EverVissionAI/jansaathi-legal-intent",
   "created_at": "2026-09-05T15:05:29.000Z",
-  "updated_at": "2026-09-05T17:29:06.000Z",
+  "updated_at": "2026-09-05T18:50:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "transformers",
+    "onnx",
     "safetensors",
     "bert",
     "text-classification",
@@ -29,15 +30,16 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 109489930,
   "parameters_human": "109.5M",
-  "storage_bytes": 437988112,
-  "storage_human": "438 MB",
+  "storage_bytes": 548306563,
+  "storage_human": "548 MB",
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

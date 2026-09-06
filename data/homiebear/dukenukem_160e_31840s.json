@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/DukeNukem_160e_31840s",
+  "slug": "homiebear-dukenukem_160e_31840s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/DukeNukem_160e_31840s",
+  "created_at": "2026-09-05T21:47:49.000Z",
+  "updated_at": "2026-09-05T21:52:10.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657120003,
+  "storage_human": "657 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E-Books - NOX FORUM",
+      "url": "https://forum.nox.to/index.php?board/32-e-books/",
+      "snippet": "E-Books Digitale Bücher und artverwandte Lektüre für Bücherwürmer und Leseratten :-)"
+    },
+    {
+      "title": "Homiebear ( Homie Bear) - Hugging Face",
+      "url": "https://huggingface.co/Homiebear/models",
+      "snippet": "Homiebear Follow FurnTheFurnace's profile picturegtkunit's profile pictureBadlyDawnBoy's profile picture 3 followers · 0 following"
+    },
+    {
+      "title": "Film-Talk - NOX FORUM",
+      "url": "https://forum.nox.to/index.php?board/11-film-talk/",
+      "snippet": "Jan 25, 2009 · Hier könnt ihr Rezensionen, Trailer und anderes rund um Filme rein packen und darüber diskutierten. WICHTIG: Hier …"
+    },
+    {
+      "title": "Homiebear ( Homie Bear) - Hugging Face",
+      "url": "https://huggingface.co/Homiebear",
+      "snippet": "Homiebear Follow BadlyDawnBoy's profile pictureFurnTheFurnace's profile picturegtkunit's profile picture 3 followers · 0 following"
+    },
+    {
+      "title": "PES 2009 installieren - Games-Talk & Support - NOX FORUM",
+      "url": "https://forum.nox.to/index.php?thread/74-pes-2009-installieren/",
+      "snippet": "Feb 2, 2009 · Hallo Zusammen, ich habe mir das Spiel Pro Evolution Soccer 2009 runtergeladen und jetzt weiß ich leider nicht wie …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wxcdart/gemma4-e2b-unified-engine-f16",
+  "slug": "wxcdart-gemma4-e2b-unified-engine-f16",
+  "author": "wxcdart",
+  "url": "https://huggingface.co/wxcdart/gemma4-e2b-unified-engine-f16",
+  "created_at": "2026-09-05T20:08:53.000Z",
+  "updated_at": "2026-09-05T20:21:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791643,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time in United States now",
+      "url": "https://time.is/United_States",
+      "snippet": "21 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for United States."
+    },
+    {
+      "title": "wxcdart/gemma4-e2b-unified-engine · Hugging Face",
+      "url": "https://huggingface.co/wxcdart/gemma4-e2b-unified-engine",
+      "snippet": "Instructions to use wxcdart/gemma4-e2b-unified-engine with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Time in the United States",
+      "url": "https://www.timeanddate.com/worldclock/usa",
+      "snippet": "United States time now. USA time zones and time zone map with current time in each state."
+    },
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "U.S. Time Zones - Live Clocks and Map",
+      "url": "https://www.timezone-map.com/",
+      "snippet": "1 day ago · Live current time across 11 U.S. time zones, including Alaska, Hawaii, Arizona, and territories. Static map image and DST …"
+    }
+  ]
+}

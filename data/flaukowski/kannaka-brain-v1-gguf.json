@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "flaukowski/kannaka-brain-v1-GGUF",
+  "slug": "flaukowski-kannaka-brain-v1-gguf",
+  "author": "flaukowski",
+  "url": "https://huggingface.co/flaukowski/kannaka-brain-v1-GGUF",
+  "created_at": "2026-09-06T00:15:45.000Z",
+  "updated_at": "2026-09-06T00:18:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "llama.cpp",
+    "kannaka",
+    "persona",
+    "voice",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8988110208,
+  "storage_human": "9.0 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "viralabg.net",
+      "url": "https://viralabg.net/bokep-abg-tocil/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "bokep bocil - Bokep31 | Web Streaming Video Bokep Indo Terbaru",
+      "url": "https://bokep31.work/tag/bokep-bocil/",
+      "snippet": "244K87% Bokep Indo – Hijaber Eks Pacar, Katanya Belum Pernah Dipegang Lagi 307K86% Bokep Indo Abg – Tidak Butuh Waktu …"
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "GGUF is a modern file format for storing models optimized for efficient inference, particularly on consumer-grade hardware. This makes it easier for researchers, developers, and hobbyists to experiment with and deploy large language models."
+    },
+    {
+      "title": "Bokep SMP - BokepLot",
+      "url": "https://bokeplot.com/category/bokep-smp/",
+      "snippet": "Kumpulan video Bokep Smp terbaru kualitas HD dengan streaming lancar dan update harian. Nikmati koleksi video gratis tanpa …"
+    }
+  ]
+}

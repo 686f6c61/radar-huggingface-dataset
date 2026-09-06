@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "codemichaeld/minimax_vae",
+  "slug": "codemichaeld-minimax_vae",
+  "author": "codemichaeld",
+  "url": "https://huggingface.co/codemichaeld/minimax_vae",
+  "created_at": "2026-09-06T01:00:26.000Z",
+  "updated_at": "2026-09-06T01:00:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "fp8",
+    "safetensors",
+    "converted-by-gradio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2603939928,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Highlander - 620 Iris Ave Sunnyvale, CA 94086 | Apartments.com",
+      "url": "https://www.apartments.com/the-highlander-sunnyvale-ca/r2kd9b0/?msockid=0cde1ed7d6f06cab0624091bd7876db7",
+      "snippet": "See all available apartments for rent at The Highlander in Sunnyvale, CA. The Highlander has rental units ranging from 724-1226 sq …"
+    },
+    {
+      "title": "MiniMax-H3/vae at main · MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3/tree/main/vae",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "The Highlander - 620 Iris Ave Sunnyvale CA 94086 | Apartment Finder",
+      "url": "https://www.apartmentfinder.com/California/Sunnyvale-Apartments/The-Highlander-Apartments?msockid=0cde1ed7d6f06cab0624091bd7876db7",
+      "snippet": "1 day ago · Find apartments for rent at The Highlander from $2,202 at 620 Iris Ave in Sunnyvale, CA. The Highlander has rentals …"
+    },
+    {
+      "title": "iamkaikai/MiniMax-H3-Single-Frame-VAE-500K · Hugging Face",
+      "url": "https://huggingface.co/iamkaikai/MiniMax-H3-Single-Frame-VAE-500K",
+      "snippet": "MiniMax H3 Single-Frame VAE 500K This is an independent, experimental decoder-onlycheckpoint for decoding one image from a MiniMax H3 latent slice. It is not a full MiniMax H3 model, it does not include an encoder or transformer, and it is not used in production. The decoder started from Mamad8/MiniMax-H3-Image-VAEand was further trained on 500,000 unique image-reconstruction examples using ..."
+    },
+    {
+      "title": "Floorplans - The Highlander - Sunnyvale - CA",
+      "url": "https://ww.thehighlanderapts.com/floor_plans",
+      "snippet": "Get In Touch The Highlander 620 Iris Ave., Sunnyvale, CA 94086 (877) 558-5030 Apply Now Quick Facts"
+    }
+  ]
+}

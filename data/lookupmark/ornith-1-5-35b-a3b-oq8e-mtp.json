@@ -5,7 +5,7 @@
   "author": "LookUpMark",
   "url": "https://huggingface.co/LookUpMark/Ornith-1.5-35B-A3B-oQ8e-mtp",
   "created_at": "2026-09-04T17:58:01.000Z",
-  "updated_at": "2026-09-04T18:31:09.000Z",
+  "updated_at": "2026-09-05T12:54:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 218,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",

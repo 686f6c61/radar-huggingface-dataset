@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "UntMods/Krea2_Chars_LoRA",
+  "slug": "untmods-krea2_chars_lora",
+  "author": "UntMods",
+  "url": "https://huggingface.co/UntMods/Krea2_Chars_LoRA",
+  "created_at": "2026-07-22T19:26:43.000Z",
+  "updated_at": "2026-08-05T13:18:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea2",
+    "character",
+    "comfyui",
+    "text-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7923748531,
+  "storage_human": "7.9 GB",
+  "base_model": "KREA2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Sep 4, 2006 · Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and …"
+    },
+    {
+      "title": "UntMods/Krea2_Chars_LoRA · Hugging Face",
+      "url": "https://huggingface.co/UntMods/Krea2_Chars_LoRA",
+      "snippet": "A collection of 34 character LoRAs for the KREA2 base model, each paired with a persona .md file describing the character's stable facial features, variable appearance, and expressions. Every LoRA ships as <Name>_KREA2.safetensors alongside <Name>_KREA2.md."
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "README.md · UntMods/Krea2_Chars_LoRA at main - Hugging Face",
+      "url": "https://huggingface.co/UntMods/Krea2_Chars_LoRA/blob/main/README.md",
+      "snippet": "Krea2 Character LoRA Collection A collection of 34 character LoRAs for the KREA2 base model, each paired with a persona .md file describing the character's stable facial features, variable appearance, and expressions."
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "camiellia/qwen3b-logiqa-random-seed44",
+  "slug": "camiellia-qwen3b-logiqa-random-seed44",
+  "author": "camiellia",
+  "url": "https://huggingface.co/camiellia/qwen3b-logiqa-random-seed44",
+  "created_at": "2026-09-05T21:53:07.000Z",
+  "updated_at": "2026-09-05T22:07:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21511312,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bruce Buffer | Rocky's true words of wisdom hits home & motivates …",
+      "url": "https://www.instagram.com/reel/DbRYeZaysge/",
+      "snippet": "1,877 likes, 30 comments - brucebufferufc on July 26, 2026: \"Rocky's true words of wisdom hits home & motivates me every time I …"
+    },
+    {
+      "title": "camiellia/llama-1b-logiqa-random-seed44 · Hugging Face",
+      "url": "https://huggingface.co/camiellia/llama-1b-logiqa-random-seed44",
+      "snippet": "Instructions to use camiellia/llama-1b-logiqa-random-seed44 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Bruce Buffer - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bruce_Buffer",
+      "snippet": "1Early life and martial arts background. 2UFC announcing. 3Notable appearances outside UFC. 4Personal life. 5References. …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - QwenLM/Qwen3"
+    },
+    {
+      "title": "BRUCE BUFFER – Voice Of The Octagon",
+      "url": "https://brucebuffer.com/",
+      "snippet": "Bruce Anthony Buffer is the official octagon announcer for the Ultimate Fighting Championship (UFC) events. He is known as \"The …"
+    }
+  ]
+}

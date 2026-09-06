@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "UnstableLlama/Qwopus3.8-27B-Flash-EXL3-SC",
+  "slug": "unstablellama-qwopus3-8-27b-flash-exl3-sc",
+  "author": "UnstableLlama",
+  "url": "https://huggingface.co/UnstableLlama/Qwopus3.8-27B-Flash-EXL3-SC",
+  "created_at": "2026-09-05T19:17:37.000Z",
+  "updated_at": "2026-09-05T19:41:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exl3",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22823932022,
+  "storage_human": "22.8 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "chriswessels/Qwopus3.8-27B-Flash-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/chriswessels/Qwopus3.8-27B-Flash-oQ4e-mtp",
+      "snippet": "Qwopus3.8-27B-Flash starts from a simple premise: a useful Flash model should preserve enough capability to complete demanding work while driving down the cost and latency of reasoning."
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": ""
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; By using this site, you agree to the Terms of …"
+    }
+  ]
+}

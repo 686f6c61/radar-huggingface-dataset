@@ -5,7 +5,7 @@
   "author": "jjjlimaus",
   "url": "https://huggingface.co/jjjlimaus/chrono-2018-harvest1-sft-1e4-leak50-flat",
   "created_at": "2026-09-05T17:53:37.000Z",
-  "updated_at": "2026-09-05T19:32:40.000Z",
+  "updated_at": "2026-09-05T23:20:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 2018511234,
   "parameters_human": "2.02B",
-  "storage_bytes": 20185228740,
-  "storage_human": "20.2 GB",
+  "storage_bytes": 56518640472,
+  "storage_human": "56.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

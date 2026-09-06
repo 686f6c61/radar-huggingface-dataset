@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HomemadeAI/WikiAI",
+  "slug": "homemadeai-wikiai",
+  "author": "HomemadeAI",
+  "url": "https://huggingface.co/HomemadeAI/WikiAI",
+  "created_at": "2026-09-06T01:11:42.000Z",
+  "updated_at": "2026-09-06T01:13:28.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 496033209,
+  "storage_human": "496 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tissot Gentleman 40mm | Modell T1274071104100 | Tissot® …",
+      "url": "https://www.tissotwatches.com/de-de/T1274071104100.html",
+      "snippet": "Dieses Modell der Tissot Gentleman Powermatic 80 Silizium Kollektion ist mit einem Swiss Made Powermatic 80 Werk mit Silizium …"
+    },
+    {
+      "title": "GitHub - avi1o1/WikiAI: WikiAI solves the hassle of manual searches by ...",
+      "url": "https://github.com/avi1o1/WikiAI",
+      "snippet": "WikiAI solves the hassle of manual searches by using AI and NLP to scan Wikipedia, identify relevant content, and generate precise, context-rich answers, simplifying access to complex knowledge. - ..."
+    },
+    {
+      "title": "Tissot Gentleman 40mm | Modell T1274071104100 | Tissot® Schweiz",
+      "url": "https://www.tissotwatches.com/de-ch/T1274071104100.html",
+      "snippet": "Dieses Modell der Tissot Gentleman Powermatic 80 Silizium Kollektion ist mit einem Swiss Made Powermatic 80 Werk mit Silizium …"
+    },
+    {
+      "title": "MakeAI",
+      "url": "https://makeai.org/",
+      "snippet": "Start Building Build AI models without writing code. An intuitive platform that lets you create AI models using a visual interface. No coding required. Just drag, drop, and train. Get Started Learn the fundamentals of AI. Learning about how AI works has never been more important. Learn everything you need to know about AI in a beginner-friendly ..."
+    },
+    {
+      "title": "Tissot Herrenuhr Gentleman Powermatic 80 Silicium",
+      "url": "https://www.christ.de/product/87871053/tissot-herrenuhr-gentleman-powermatic-80-silicium-t1274071105100/index.html?msockid=2d54e6dee564689f0379f112e42969bd",
+      "snippet": "Sowohl an schmalen als auch an mittleren Handgelenken macht die T-Classic Gentleman Powermatic 80 Silicium mit einem …"
+    }
+  ]
+}

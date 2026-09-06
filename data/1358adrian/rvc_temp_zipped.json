@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1358Adrian/rvc_temp_zipped",
+  "slug": "1358adrian-rvc_temp_zipped",
+  "author": "1358Adrian",
+  "url": "https://huggingface.co/1358Adrian/rvc_temp_zipped",
+  "created_at": "2023-09-26T05:27:53.000Z",
+  "updated_at": "2026-09-06T00:58:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6293049485,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT \"DAN\" (and other \"Jailbreaks\") NOTE: As of 20230711, the DAN 12.0 prompt is working properly with Model GPT-3.5 All …"
+    },
+    {
+      "title": "1358Adrian/rvc_temp_zipped · Hugging Face",
+      "url": "https://huggingface.co/1358Adrian/rvc_temp_zipped",
+      "snippet": "rvc_temp_zipped like 0 Model card Files Community No model card New: Create and edit this model card directly on the website! Contribute a Model Card Downloads last month 0"
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "1358Adrian/rvc_temp_zipped at main - Hugging Face",
+      "url": "https://huggingface.co/1358Adrian/rvc_temp_zipped/tree/main",
+      "snippet": "1358Adrian / rvc_temp_zipped like 0 Model card FilesFiles and versions Community main rvc_temp_zipped 1 contributor History:7 commits 1358Adrian Upload shinobu_kocho.zip d65204f verifiedabout 14 hours ago .gitattributes 1.52 kB initial commit 4 months ago bocchi.zip pickle 50.9 MB LFS Rename rikka_bocchi.zip to bocchi.zip 4 months ago caitlin ..."
+    },
+    {
+      "title": "为什么用chatgpt账号登入一直提示需要电话号码 怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031417400504082455",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

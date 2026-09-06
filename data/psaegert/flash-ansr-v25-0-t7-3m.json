@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "psaegert/flash-ansr-v25.0-T7-3M",
+  "slug": "psaegert-flash-ansr-v25-0-t7-3m",
+  "author": "psaegert",
+  "url": "https://huggingface.co/psaegert/flash-ansr-v25.0-T7-3M",
+  "created_at": "2026-09-05T17:39:54.000Z",
+  "updated_at": "2026-09-05T17:39:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "flash-ansr",
+  "languages": [],
+  "tags": [
+    "flash-ansr",
+    "safetensors",
+    "symbolic-regression",
+    "set-transformer",
+    "transformer",
+    "arxiv:2602.08885",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3510130,
+  "parameters_human": "3.5M",
+  "storage_bytes": 14053592,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Séjour et voyage tout compris - All inclusive et séjour tout inclus ...",
+      "url": "https://www.voyages.leclerc/sejour-tout-compris-voyage-tout-inclus-all-inclusive",
+      "snippet": "Avec Voyages E.Leclerc, découvrez nos séjours tout compris et voyages tout inclus en All Inclusive : hébergement, repas, boissons …"
+    },
+    {
+      "title": "psaegert/flash-ansr-v25.0-T7-3M · Hugging Face",
+      "url": "https://huggingface.co/psaegert/flash-ansr-v25.0-T7-3M",
+      "snippet": "flash-ansr-v25.0-T7-3M A 3.5M-parameter Flash-ANSRmodel for amortized neural symbolic regression: it reads a set of input-output pairs and proposes symbolic expressions for them, with numeric constants predicted at full precision and refined by a downstream optimizer. The reference checkpoint for flash-ansr 0.14. Usage"
+    },
+    {
+      "title": "Voyage tout compris - Séjour all inclusive en club vacances - TUI",
+      "url": "https://www.tui.fr/voyage-tout-compris/",
+      "snippet": "Partez en séjour tout compris avec TUI ! Les voyages all inclusive au meilleur prix, une solution idéale pour garantir des vacances …"
+    },
+    {
+      "title": "GitHub - psaegert/flash-ansr: Fast Amortized Neural Symbolic Regression ...",
+      "url": "https://github.com/psaegert/flash-ansr",
+      "snippet": "Flash-ANSR is a library for amortized neural symbolic regression: load a pretrained model, call fit (X, y), and recover a symbolic expression for your tabular data, or train your own model. It is built for fast, ready-to-use inference."
+    },
+    {
+      "title": "Voyage all inclusive pas cher | Séjours tout compris dès petits prix ...",
+      "url": "https://www.fr.lastminute.com/sejour/voyage-all-inclusive?msockid=115333585a5f67ae0fde24935bd56678",
+      "snippet": "Trouvez votre voyage pas cher tout compris parmi nos offres all inclusive : destinations soleil, hôtels et vols inclus pour des vacances …"
+    }
+  ]
+}

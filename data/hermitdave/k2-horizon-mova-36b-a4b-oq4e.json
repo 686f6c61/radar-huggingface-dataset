@@ -5,7 +5,7 @@
   "author": "hermitdave",
   "url": "https://huggingface.co/hermitdave/K2-Horizon-MoVA-36B-A4B-oQ4e",
   "created_at": "2026-09-04T18:54:07.000Z",
-  "updated_at": "2026-09-04T19:50:15.000Z",
+  "updated_at": "2026-09-05T20:25:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 194,
   "trending_score": 0,
   "parameters": 37444792020,
   "parameters_human": "37.44B",

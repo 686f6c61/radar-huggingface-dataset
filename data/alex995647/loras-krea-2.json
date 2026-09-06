@@ -5,7 +5,7 @@
   "author": "Alex995647",
   "url": "https://huggingface.co/Alex995647/loras-krea-2",
   "created_at": "2026-09-05T00:10:43.000Z",
-  "updated_at": "2026-09-05T00:29:40.000Z",
+  "updated_at": "2026-09-05T04:01:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 37654004061,
-  "storage_human": "37.7 GB",
+  "storage_bytes": 67973519408,
+  "storage_human": "68.0 GB",
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"

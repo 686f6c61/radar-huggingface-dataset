@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "chibifire/Qwen2.5-VL-7B-Instruct",
+  "slug": "chibifire-qwen2-5-vl-7b-instruct",
+  "author": "chibifire",
+  "url": "https://huggingface.co/chibifire/Qwen2.5-VL-7B-Instruct",
+  "created_at": "2026-09-06T01:34:28.000Z",
+  "updated_at": "2026-09-06T01:36:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16584414560,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Helsingin Reumayhdistys ry",
+      "url": "https://www.helsinginreumayhdistys.fi/",
+      "snippet": "Helsingin Reumayhdistys täyttää tänä vuonna 80 vuotta. Jäsenet ja kutsuvieraat ovat tervetulleita 80-vuotisjuhliimme la 10.10.2026 …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-VL-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yhdistys - Helsingin Reumayhdistys ry",
+      "url": "https://www.helsinginreumayhdistys.fi/yhdistys/",
+      "snippet": "Helsingin Reumayhdistys on mukana kehittämässä reuma- ja muiden tule-sairaiden hoitoa, kuntoutusta ja sosiaaliturvaa, valvoo …"
+    },
+    {
+      "title": "wangkanai/qwen2.5-vl-7b-instruct · Hugging Face",
+      "url": "https://huggingface.co/wangkanai/qwen2.5-vl-7b-instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Helsingin Reumayhdistys ry | Helsinki - Facebook",
+      "url": "https://www.facebook.com/helsinginreumayhdistys/",
+      "snippet": "Helsingin Reumayhdistys kiittää lämpimästi jäseniä, vapaaehtoisia sekä kaikkia toiminnassa mukana olleita tästä vuodesta. …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "camiellia/qwen3b-logiqa-random-seed43",
+  "slug": "camiellia-qwen3b-logiqa-random-seed43",
+  "author": "camiellia",
+  "url": "https://huggingface.co/camiellia/qwen3b-logiqa-random-seed43",
+  "created_at": "2026-09-05T21:52:55.000Z",
+  "updated_at": "2026-09-05T22:07:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21511312,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cat - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cat",
+      "snippet": "Out of the estimated 600 million domestic cats worldwide, 400 million reside in Asia, including 58 million in China. About 73.8 million …"
+    },
+    {
+      "title": "camiellia/qwen3b-logiqa-kcenter · Hugging Face",
+      "url": "https://huggingface.co/camiellia/qwen3b-logiqa-kcenter",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cat | Breeds, Origins, History, Body Types, Senses, Behavior ...",
+      "url": "https://www.britannica.com/animal/cat",
+      "snippet": "Aug 29, 2026 · An overview of the origins and history of cats, how they are identified, their body types and features, and their senses, …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - QwenLM/Qwen3"
+    },
+    {
+      "title": "All Cat Breeds A–Z: Complete List of Cat Types & Profiles (With Pictures)",
+      "url": "https://catpedia.net/cat-breed-list/",
+      "snippet": "This cat breed directory A–Z is more than just a list—it’s your starting point for learning about cats worldwide. Click on any breed to …"
+    }
+  ]
+}

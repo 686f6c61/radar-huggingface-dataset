@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_tok-none_s42_20260905_213821",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_wolof-tts_tok-none_s42_20260905_213821",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_tok-none_s42_20260905_213821",
+  "created_at": "2026-09-06T00:46:44.000Z",
+  "updated_at": "2026-09-06T00:47:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144433890,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578027793,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260904_095055 ...",
+      "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260904_095055",
+      "snippet": "Instructions to use xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260904_095055 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Text to Speech | SpaceXAI Docs",
+      "url": "https://docs.x.ai/developers/model-capabilities/audio/text-to-speech",
+      "snippet": "Convert text into natural-sounding spoken audio with the xAI Text to Speech API."
+    },
+    {
+      "title": "What sets ElevenLabs' African accent text to speech (TTS) apart from conventional TTS services?",
+      "url": "https://elevenlabs.io/text-to-speech/african-accent",
+      "snippet": "Generate authentic African accent speech with ElevenLabs' AI. Ideal for culturally nuanced voiceovers and regional content."
+    },
+    {
+      "title": "Free Wolof Speech to Text | Transcribe Wolof Voice and Audio to Text",
+      "url": "https://elevenlabs.io/speech-to-text/wolof",
+      "snippet": "Transcribe Wolof speech, voice, and audio to text for free with ElevenLabs. Achieve fast, accurate Wolof transcription with our world-leading AI technology."
+    }
+  ]
+}

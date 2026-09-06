@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lyamc/whisburn",
+  "slug": "lyamc-whisburn",
+  "author": "lyamc",
+  "url": "https://huggingface.co/lyamc/whisburn",
+  "created_at": "2026-09-06T00:21:28.000Z",
+  "updated_at": "2026-09-06T03:03:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "rust",
+  "languages": [],
+  "tags": [
+    "rust",
+    "safetensors",
+    "burn",
+    "speech-recognition",
+    "asr",
+    "whisper",
+    "parakeet",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25613625555,
+  "storage_human": "25.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "GitHub - Lyamc/whisburn: Burn-based speech processing (Whisper/Parakeet ...",
+      "url": "https://github.com/Lyamc/whisburn",
+      "snippet": "Burn-based speech processing in Rust: transcription, translation, diarization, and TTS — with automatic model download and conversion. whisburn is a rewrite of whisper-burn as a multi-crate workspace targeting Burn 0.16. Whisper, Parakeet TDT v3, and Qwen3-ASR are working end-to-end; additional backends are registered and being ported."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "whisburn/MODELS.md at main · Lyamc/whisburn · GitHub",
+      "url": "https://github.com/Lyamc/whisburn/blob/main/MODELS.md",
+      "snippet": "The CLI and server call the same download_model () function in whisburn-models."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/main%20page",
+      "snippet": "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love) YouTube 1.5M views • 2 months ago CC"
+    }
+  ]
+}

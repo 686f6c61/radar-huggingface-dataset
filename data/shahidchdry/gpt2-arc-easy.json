@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shahidchdry/gpt2-arc-easy",
+  "slug": "shahidchdry-gpt2-arc-easy",
+  "author": "shahidchdry",
+  "url": "https://huggingface.co/shahidchdry/gpt2-arc-easy",
+  "created_at": "2026-09-05T19:34:35.000Z",
+  "updated_at": "2026-09-05T19:34:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iga Świątek — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Iga_%C5%9Awi%C4%85tek",
+      "snippet": ""
+    },
+    {
+      "title": "shahidchdry/gpt2-teacher · Hugging Face",
+      "url": "https://huggingface.co/shahidchdry/gpt2-teacher",
+      "snippet": "shahidchdry / gpt2-teacher like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 857 Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Résultats en direct de Iga Swiatek, résultats, matchs à venir, Swiatek ...",
+      "url": "https://www.flashscore.fr/joueur/swiatek-iga/jNyZsXZe/",
+      "snippet": "La page Iga Swiatek de Flashscore.fr offre les résultats en direct, les résultats, et les matchs à venir, les tableaux et les détails de …"
+    },
+    {
+      "title": "shahidchdry/gpt2-wmap · Hugging Face",
+      "url": "https://huggingface.co/shahidchdry/gpt2-wmap",
+      "snippet": "shahidchdry / gpt2-wmap like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Iga Swiatek | Player Stats & More – WTA Official",
+      "url": "https://www.wtatennis.com/players/326408/iga-swiatek",
+      "snippet": "Get the latest Player Stats on Iga Swiatek including her videos, highlights, and more at the official Women's Tennis Association website."
+    }
+  ]
+}

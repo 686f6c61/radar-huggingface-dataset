@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cloudnathan5/NVIDIA-NemotronLabs-VoiceChat-11B-NVFP4A16-INT8-Mixed",
+  "slug": "cloudnathan5-nvidia-nemotronlabs-voicechat-11b-nvfp4a16-int8-mixed",
+  "author": "cloudnathan5",
+  "url": "https://huggingface.co/cloudnathan5/NVIDIA-NemotronLabs-VoiceChat-11B-NVFP4A16-INT8-Mixed",
+  "created_at": "2026-09-05T22:59:24.000Z",
+  "updated_at": "2026-09-06T01:41:33.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "base_model:nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+    "base_model:finetune:nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9442086620,
+  "storage_human": "9.4 GB",
+  "base_model": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+      "snippet": "NVIDIA NemotronLabs VoiceChat is a 11B end-to-end, real-time speech full duplex (FD)model for conversational AI that jointly performs streaming speech understanding and speech generation [1, 2]. Unlike traditional cascaded stacks (ASR → LLM → TTS), this model achieves full duplex, real-time, seamless voice interaction in one unified architecture, eliminating the need for multiple models or ..."
+    },
+    {
+      "title": "About YouTube - YouTube",
+      "url": "https://about.youtube/",
+      "snippet": "YouTube's mission is to give everyone a voice and show them the world. Learn about our brand, community, careers and more."
+    },
+    {
+      "title": "NemotronLabs Voicechat | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/containers/nemotron-labs-voicechat/",
+      "snippet": "NemotronLabs Voicechat Overview Description: NVIDIA NemotronLabs VoiceChat is a end-to-end, real-time speech full duplex model for conversational AI that jointly performs streaming speech understanding and speech generation ."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love) YouTube 1.5M 2mo ago CC"
+    }
+  ]
+}

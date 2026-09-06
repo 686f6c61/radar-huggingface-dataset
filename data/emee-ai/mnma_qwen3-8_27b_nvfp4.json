@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "emee-ai/mnma_qwen3.8_27b_nvfp4",
+  "slug": "emee-ai-mnma_qwen3-8_27b_nvfp4",
+  "author": "emee-ai",
+  "url": "https://huggingface.co/emee-ai/mnma_qwen3.8_27b_nvfp4",
+  "created_at": "2026-09-05T20:35:59.000Z",
+  "updated_at": "2026-09-05T20:36:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5_text",
+    "nvfp4",
+    "w4a4",
+    "quantized",
+    "compressed-tensors",
+    "gated-deltanet",
+    "fp8-kv-cache",
+    "qwen3.8",
+    "text-generation",
+    "conversational",
+    "arxiv:2609.04098",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998496,
+  "parameters_human": "26.90B",
+  "storage_bytes": 18808343429,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الدوري السعودي للمحترفين - جدول الترتيب والمباريات",
+      "url": "https://jdwel.com/competition/saudi-pro-league/",
+      "snippet": "الدوري السعودي للمحترفين ، جدول الترتيب، الهدافون، مواعيد ونتائج المباريات. مع صفحات المواسم السابقة وتحديثات مستمرة طوال الموسم."
+    },
+    {
+      "title": "emee-ai/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/emee-ai/Qwen3.8-27B-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ترتيب الدوري لموسم 2026/27 | النقاط، الإحصائيات، والتصنيفات | الدوري ...",
+      "url": "https://www.spl.com.sa/ar/standings",
+      "snippet": "تعرف على ترتيب الفرق في الدوري السعودي للمحترفين لموسم 2026/27. النقاط والإحصائيات الكاملة."
+    },
+    {
+      "title": "minima-ai/mnma_qwen3.8_27b_nvfp4 · Hugging Face",
+      "url": "https://huggingface.co/minima-ai/mnma_qwen3.8_27b_nvfp4",
+      "snippet": "mnma Qwen3.8-27B NVFP4 (Minima) A fully W4A4 build of Qwen3.8-27B by post-training quantization alone: every one of the 496 backbone linear layers — all 48 Gated DeltaNet (GDN) layers and their gate projections included — quantized to NVFP4, plus calibrated FP8 KV-cache scales. No quantization-aware training, no distillation — calibration only. Early public 4-bit builds of this model ..."
+    },
+    {
+      "title": "ترتيب الدوري السعودي: - 365Scores",
+      "url": "https://www.365scores.com/ar/football/league/saudi-league-649/standings",
+      "snippet": "احصل على آخر التحديثات المباشرة لـ الدوري السعودي للمجموعات وجدول الترتيب مع 365Scores"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "NewGame/libritts_codec_train_encodec_libritts",
+  "slug": "newgame-libritts_codec_train_encodec_libritts",
+  "author": "NewGame",
+  "url": "https://huggingface.co/NewGame/libritts_codec_train_encodec_libritts",
+  "created_at": "2026-09-05T23:42:25.000Z",
+  "updated_at": "2026-09-05T23:42:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "espnet",
+  "languages": [],
+  "tags": [
+    "espnet",
+    "gancodec",
+    "libritts",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 215645112,
+  "storage_human": "216 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wo ist meine pfx-Datei? - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/allgemein/sicherheit/6818-wo-ist-meine-pfx-datei",
+      "snippet": "Apr 17, 2011 · AW: wo ist meine pfx-Datei? Danke für eure rasche Antworten. Was neu für mich ist, dass ich die pfx.-Datei eventuell …"
+    },
+    {
+      "title": "NewGame/libritts_codec_train_encodec_libritts at main",
+      "url": "https://huggingface.co/spaces/NewGame/libritts_codec_train_encodec_libritts/tree/main",
+      "snippet": "NewGame ZeroGPU: import spaces first, decorate inference fn with spaces.GPU 5a85fc1verifiedabout 7 hours ago model_pack model_pack contents (upload_demo skipped the symlinked dir)about 7 hours ago .gitattributes Safe"
+    },
+    {
+      "title": "Speicherort für pfx-Datei - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/allgemein/sicherheit/21942-speicherort-f%C3%BCr-pfx-datei",
+      "snippet": "Feb 22, 2016 · Hallo, wo wird die *.pfx-Datei abgelegt? Kann diese Datei auf einem USB-Datenträger gespeichert werden, der nur bei …"
+    },
+    {
+      "title": "libritts_codec demo - a Hugging Face Space by NewGame",
+      "url": "https://huggingface.co/spaces/NewGame/libritts_codec_train_encodec_libritts",
+      "snippet": "This app reads a demo configuration and automatically builds a Gradio web interface for any ESPnet3 model. Users provide the required inputs—such as audio files or text—and press Run to get the mod..."
+    },
+    {
+      "title": "pfx datei für Elsterformulare - Windows 10 Forum",
+      "url": "https://www.windows-10-forum.com/threads/pfx-datei-fuer-elsterformulare.53959/",
+      "snippet": "Jan 28, 2017 · pfx datei für Elsterformulare Helfe beim Thema pfx datei für Elsterformulare in Windows 10 Support um eine Lösung zu …"
+    }
+  ]
+}

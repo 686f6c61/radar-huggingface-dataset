@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chibifire/motion-bricks.cpp",
+  "slug": "chibifire-motion-bricks-cpp",
+  "author": "chibifire",
+  "url": "https://huggingface.co/chibifire/motion-bricks.cpp",
+  "created_at": "2026-09-06T01:34:30.000Z",
+  "updated_at": "2026-09-06T01:35:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=33e4447caa566c080b9253b0abd36d6b",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "GitHub - localai-org/motion-bricks.cpp: NVIDIA MotionBricks ported to ...",
+      "url": "https://github.com/localai-org/motion-bricks.cpp",
+      "snippet": "motion-bricks.cpp source code is licensed under the Apache License 2.0. NVIDIA's original model weights and converted GGUF/style distributions remain under the NVIDIA Open Model License reproduced with the published model. It permits derivative models and redistribution with conditions including retention of the agreement and attribution ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "motion-bricks.cpp/docs/DEMO.md at main · localai-org/motion ... - GitHub",
+      "url": "https://github.com/localai-org/motion-bricks.cpp/blob/main/docs/DEMO.md",
+      "snippet": "The test starts an in-process HTTP server, loads the real native model, plans an initial walk chunk, then uses headless Chromium to select walk_zombie, turn right, plan another chunk, render the 34-joint generated hierarchy plus the target inspector, and capture initial, forward-motion, and style-and-turn screenshots."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

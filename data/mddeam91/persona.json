@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mddeam91/Persona",
+  "slug": "mddeam91-persona",
+  "author": "mddeam91",
+  "url": "https://huggingface.co/mddeam91/Persona",
+  "created_at": "2026-09-06T00:20:59.000Z",
+  "updated_at": "2026-09-06T00:20:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The persona selection model \\ Anthropic",
+      "url": "https://www.anthropic.com/research/persona-selection-model",
+      "snippet": "Before post-training, the AI’s enactment of the Assistant is pure roleplay. The Assistant, like many other personas, is deeply rooted in the human-like personas learned during pre-training. Here is the core claim of the persona selection model: Post-training can be viewed as refining and fleshing out this Assistant persona—for example establishing that it’s especially knowledgeable and ..."
+    },
+    {
+      "title": "Free Persona 3D Models - Download Instantly | Meshy",
+      "url": "https://www.meshy.ai/tags/persona",
+      "snippet": "This model comes as a static mesh in a standard T-pose or neutral pose, making it easy to auto-rig using tools like Mixamo, AccuRIG, or Blender's Rigify. Yes, the model features AI-generated automatic UV unwrapping, ensuring textures apply correctly ..."
+    },
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://drive.google.com/drive/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "GitHub - mks0601/PERSONA_RELEASE: Official PyTorch implementation of ...",
+      "url": "https://github.com/mks0601/PERSONA_RELEASE",
+      "snippet": "Official PyTorch implementation of \"PERSONA: Personalized Whole-Body 3D Avatar with Pose-Driven Deformations from a Single Image\", ICCV 2025. - mks0601/PERSONA_RELEASE"
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    }
+  ]
+}

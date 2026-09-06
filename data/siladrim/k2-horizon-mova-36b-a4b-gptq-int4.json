@@ -5,7 +5,7 @@
   "author": "Siladrim",
   "url": "https://huggingface.co/Siladrim/K2-Horizon-MoVA-36B-A4B-GPTQ-Int4",
   "created_at": "2026-09-05T18:16:09.000Z",
-  "updated_at": "2026-09-05T18:16:50.000Z",
+  "updated_at": "2026-09-06T00:13:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

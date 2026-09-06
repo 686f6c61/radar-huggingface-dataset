@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jackttv/card-scanner-yolo-pose",
+  "slug": "jackttv-card-scanner-yolo-pose",
+  "author": "jackttv",
+  "url": "https://huggingface.co/jackttv/card-scanner-yolo-pose",
+  "created_at": "2026-09-05T19:22:57.000Z",
+  "updated_at": "2026-09-05T19:52:14.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "pose-estimation",
+    "object-detection",
+    "trading-cards",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23753741,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jak pokochałam gangstera (2022) - Filmweb",
+      "url": "https://www.filmweb.pl/film/Jak+pokocha%C5%82am+gangstera-2022-871817",
+      "snippet": "Jan 5, 2022 · Gigantyczne pieniądze, budowa samochodowego imperium, spektakularna ucieczka z więzienia... jego życie to ciągła …"
+    },
+    {
+      "title": "GitHub - orYx-models/yolov8: Computer Vision YOLO v8",
+      "url": "https://github.com/orYx-models/yolov8",
+      "snippet": "Ultralytics HUB Experience seamless AI with Ultralytics HUB⭐, the all-in-one solution for data visualization, YOLOv5 and YOLOv8 🚀 model training and deployment, without any coding. Transform images into actionable insights and bring your AI visions to life with ease using our cutting-edge platform and user-friendly Ultralytics App."
+    },
+    {
+      "title": "Oglądaj: Jak pokochałam gangstera | Oficjalna witryna Netflix",
+      "url": "https://www.netflix.com/pl/title/81399298?newflixNew",
+      "snippet": "Tajemnicza kobieta opowiada o wzlocie i upadku Nikodema „Nikosia” Skotarczaka, jednego z największych gangsterów w historii …"
+    },
+    {
+      "title": "jackttv/card-scanner-siglip-lora · Hugging Face",
+      "url": "https://huggingface.co/jackttv/card-scanner-siglip-lora",
+      "snippet": "Instructions to use jackttv/card-scanner-siglip-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Jak pokochałam gangstera (2022) [Film PL] 720p - CDA",
+      "url": "https://www.cda.pl/video/26061733b9",
+      "snippet": "Wszyscy, którzy znali Nikosia i wiedzą, jak wyglądały prawdziwe realia, wiedzą, że to jest totalnie zakłamane i obraźliwe. Gdybyście …"
+    }
+  ]
+}

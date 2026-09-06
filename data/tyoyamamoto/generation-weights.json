@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tyoyamamoto/generation-weights",
+  "slug": "tyoyamamoto-generation-weights",
+  "author": "tyoyamamoto",
+  "url": "https://huggingface.co/tyoyamamoto/generation-weights",
+  "created_at": "2026-09-05T19:45:01.000Z",
+  "updated_at": "2026-09-05T19:45:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/",
+      "snippet": "Wir sind der gemeinnützige Verein hinter der Wikipedia und unterstützen die Ehrenamtlichen, sichern und entwickeln die technische …"
+    },
+    {
+      "title": "[2506.07998] Generative Modeling of Weights: Generalization or ...",
+      "url": "https://arxiv.org/abs/2506.07998",
+      "snippet": "Generative models have recently been explored for synthesizing neural network weights. These approaches take neural network checkpoints as training data and aim to generate high-performing weights during inference. In this work, we examine four representative, well-known methods on their ability to generate novel model weights, i.e., weights that are different from the checkpoints seen during ..."
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Wikipedia – Die freie Enzyklopädie",
+      "url": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite",
+      "snippet": "Möglicherweise unterliegen die Inhalte jeweils zusätzlichen Bedingungen. Durch die Nutzung dieser Website erklären Sie sich mit …"
+    }
+  ]
+}

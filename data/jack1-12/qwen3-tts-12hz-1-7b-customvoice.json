@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jack1-12/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "slug": "jack1-12-qwen3-tts-12hz-1-7b-customvoice",
+  "author": "jack1-12",
+  "url": "https://huggingface.co/jack1-12/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "created_at": "2026-09-06T01:29:55.000Z",
+  "updated_at": "2026-09-06T01:29:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "text-to-speech",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 4515695644,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Jinstudio/Qwen3-TTS-12Hz-1.7B-CustomVoice · Hugging Face",
+      "url": "https://huggingface.co/Jinstudio/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "snippet": "For the voice design model (Qwen3-TTS-12Hz-1.7B-VoiceDesign), you can use generate_voice_design to provide the target text and a natural-language instruct description."
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "We release Qwen3-TTS, a series of powerful speech generation capabilities developed by Qwen, offering comprehensive support for voice clone, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control. It provides developers and users with the most extensive set of speech generation features available."
+    },
+    {
+      "title": "302 Moved",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "302 Moved The document has moved here."
+    }
+  ]
+}

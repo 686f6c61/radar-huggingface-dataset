@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "RandomFrontlines/Orenis-3B-Light-Adaptive",
+  "slug": "randomfrontlines-orenis-3b-light-adaptive",
+  "author": "RandomFrontlines",
+  "url": "https://huggingface.co/RandomFrontlines/Orenis-3B-Light-Adaptive",
+  "created_at": "2026-09-05T19:07:22.000Z",
+  "updated_at": "2026-09-05T19:07:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "llama-cpp",
+    "orencraft-labs",
+    "orenis",
+    "edge-ai",
+    "text-generation",
+    "en",
+    "base_model:RandomFrontlines/Orenis-3B-Light-Max",
+    "base_model:quantized:RandomFrontlines/Orenis-3B-Light-Max",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902464,
+  "storage_human": "1.9 GB",
+  "base_model": "RandomFrontlines/Orenis-3B-Light-Max",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الصفحة الرئيسية - مجتمع ADSLGate",
+      "url": "https://www.adslgate.com/",
+      "snippet": "77,458 موضوع موضوع (+اليوم) عرض جميع الهاشتاقات أبرز المواضيع اليوم هذا الأسبوع"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=orenis",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: orenis Clear all"
+    },
+    {
+      "title": "لكزس جي اس ولا بي ام الفئة الخامسة - ADSLGATE",
+      "url": "https://www.adslgate.com/thread.php?t=2367191",
+      "snippet": "Mar 9, 2017 · نظام صوتي ما فيه مقارنة خورافي ومميزات اخرى ممتازة طبعا لو تفكر تشتريه انسى وكيل شف معارض تحصل فل فل سبورت يجيك ب245 الف ريال او DD ب235 الف ريال"
+    },
+    {
+      "title": "RandomFrontlines/orenis-3b-demo · Hugging Face",
+      "url": "https://huggingface.co/RandomFrontlines/orenis-3b-demo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "جهاز PS3 من أمريكا 80GB - adslgate",
+      "url": "https://www.adslgate.com/thread/183763",
+      "snippet": "Jul 17, 2008 · PS3 PlayStation Gaming Console 80GB MetalGear +0 PS3 PlayStation Gaming Console 80GB MetalGear 1 / 1 #1 مم …"
+    }
+  ]
+}

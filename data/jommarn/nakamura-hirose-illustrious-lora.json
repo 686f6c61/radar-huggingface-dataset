@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jommarn/nakamura-hirose-illustrious-lora",
+  "slug": "jommarn-nakamura-hirose-illustrious-lora",
+  "author": "Jommarn",
+  "url": "https://huggingface.co/Jommarn/nakamura-hirose-illustrious-lora",
+  "created_at": "2026-09-05T16:24:27.000Z",
+  "updated_at": "2026-09-06T00:03:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "illustrious-xl",
+    "anime",
+    "hirose",
+    "nakamura",
+    "2boys",
+    "yaoi",
+    "nsfw",
+    "base_model:OnomaAIResearch/Illustrious-XL-v2.0",
+    "base_model:adapter:OnomaAIResearch/Illustrious-XL-v2.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11643389480,
+  "storage_human": "11.6 GB",
+  "base_model": "OnomaAIResearch/Illustrious-XL-v2.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Aiki Hirose | Go For It, Nakamura! | TensorHub Art",
+      "url": "https://tensorhub.art/models/1009726223632364017",
+      "snippet": "Download Aiki Hirose | Go For It, Nakamura! - free LORA Illustrious AI model on TENSORHUB ART. Anima, Anime, Illustration. By Hidu"
+    },
+    {
+      "title": "[OFFICIEL] 18-25 Page d'accueil forum 18 25 1825 sur le forum Blabla …",
+      "url": "https://www.jeuxvideo.com/forums/42-51-51161064-1-0-1-0-officiel-18-25-page-d-accueil-forum-18-25-1825.htm",
+      "snippet": "May 27, 2017 · Bienvenue sur le forum 18-25 ans, rentre dans l'histoire en postant, cette page deviendra le premier resultat Google …"
+    },
+    {
+      "title": "Hirose Aiki - Go For It, Nakamura! - Illustrious - 1.0 | Illustrious ...",
+      "url": "https://civitai.com/models/2703774/hirose-aiki-go-for-it-nakamura",
+      "snippet": "Hirose Aiki - Go For It, Nakamura! EXAMPLE PROMPT 1boy, male focus, solo, brown eyes, brown hair, short hair, school uniform, gakuran, black jacket..."
+    },
+    {
+      "title": "Supprimer NEW TAB dans Google Chrome. [Résolu] - Virus",
+      "url": "https://forums.commentcamarche.net/forum/affich-35122861-supprimer-new-tab-dans-google-chrome",
+      "snippet": "Il y a quelques heures de cela, j'ai malencontreusement installé une extension qui a modifié les paramètres du nouvel onglet sur …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ziulluizziul/round1-hf-pix-cta",
+  "slug": "ziulluizziul-round1-hf-pix-cta",
+  "author": "Ziulluizziul",
+  "url": "https://huggingface.co/Ziulluizziul/round1-hf-pix-cta",
+  "created_at": "2026-09-05T19:24:44.000Z",
+  "updated_at": "2026-09-06T01:16:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "pix",
+    "huggingface",
+    "free-tier",
+    "oferta",
+    "inference-providers",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.hu/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "Google Fordító",
+      "url": "https://translate.google.hu/",
+      "snippet": "A Google díjmentesen használható szolgáltatása képes a szavak, kifejezések és weboldalak azonnali lefordítására a magyar és több …"
+    },
+    {
+      "title": "Create AI Images & Videos in Seconds | ModelPix.ai",
+      "url": "https://www.modelpix.ai/",
+      "snippet": "Yes. ModelPix lets you create your own AI girlfriend or AI boyfriend using avatar videos, talking photos, and voice cloning. Design your companion's appearance with AI image generation, give them a unique voice with voice clone, and bring them to life with AI avatar videos — going far beyond text-only AI chat apps."
+    },
+    {
+      "title": "Google Képek",
+      "url": "https://www.google.hu/imghp?hl=hu",
+      "snippet": "Google Képek. Az internet legátfogóbb képkereső szolgáltatása."
+    }
+  ]
+}

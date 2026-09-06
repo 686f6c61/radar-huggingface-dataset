@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-gemma4e4b-5runs_1eval",
+  "slug": "ymoslem-modernbert-base-teleqna-router-qe-classifier-binary-10ep-lr2e-05-gemma4e4b-5runs_1eval",
+  "author": "ymoslem",
+  "url": "https://huggingface.co/ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-gemma4e4b-5runs_1eval",
+  "created_at": "2026-09-06T01:33:55.000Z",
+  "updated_at": "2026-09-06T01:39:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "quality-estimation",
+    "routing",
+    "cascade",
+    "telecom",
+    "text-classification",
+    "en",
+    "dataset:ymoslem/TeleQnA-router-gemma4-e4b",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598445817,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "电脑总是碰到kernel-power 41怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/323167490",
+      "snippet": "可能导致原因有： 1.你是否cpu超频了？ 超频之后，如果你给cpu的电压偏低，当需要cpu高速运转工作时候，电压不足就会导致kernel …"
+    },
+    {
+      "title": "ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e ...",
+      "url": "https://huggingface.co/ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-qwen4b-5runs_1eval",
+      "snippet": "ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-qwen4b-5runs_1eval ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Power-Employee - 知乎",
+      "url": "https://www.zhihu.com/people/power-employee",
+      "snippet": "Aug 24, 2026 · 专业成就价值！ 回答数 537，获得 7,917 次赞同"
+    },
+    {
+      "title": "ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e ...",
+      "url": "https://huggingface.co/ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-qwen4b-5runs-5evals/tree/main",
+      "snippet": "Instructions to use ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-qwen4b-5runs-5evals with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "图片插入PPT后图片变模糊了怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/31113254",
+      "snippet": "把需要的图片插入到PPT，然后发现好像图片分辨率自动降低了，原本图片有300的ppi，请问有解决方法吗？"
+    }
+  ]
+}

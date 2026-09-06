@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HarikaSahini/shrk_my_awesome_eli5_clm-model",
+  "slug": "harikasahini-shrk_my_awesome_eli5_clm-model",
+  "author": "HarikaSahini",
+  "url": "https://huggingface.co/HarikaSahini/shrk_my_awesome_eli5_clm-model",
+  "created_at": "2026-09-05T21:16:48.000Z",
+  "updated_at": "2026-09-06T01:16:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:distilbert/distilgpt2",
+    "base_model:finetune:distilbert/distilgpt2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 2621268625,
+  "storage_human": "2.6 GB",
+  "base_model": "distilbert/distilgpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Структура :: Федеральная Служба Безопасности",
+      "url": "http://www.fsb.ru/fsb/structure.htm",
+      "snippet": "(имеющая в своём составе службы, департаменты, управления и другие подразделения, непосредственно реализующие …"
+    },
+    {
+      "title": "hrkim/my_awesome_eli5_clm-model · Hugging Face",
+      "url": "https://huggingface.co/hrkim/my_awesome_eli5_clm-model",
+      "snippet": "my_awesome_eli5_clm-model This model is a fine-tuned version of distilgpt2 on the None dataset. It achieves the following results on the evaluation set: Loss: 3.7608 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used ..."
+    },
+    {
+      "title": "Структура отделов и управлений ФСБ России: полная карта …",
+      "url": "https://spravke.livejournal.com/4629056.html",
+      "snippet": "Nov 9, 2025 · Территориальный орган ФСБ в каждом округе включает оперативные подразделения контрразведки, …"
+    },
+    {
+      "title": "bhsu/my_awesome_eli5_clm-model · Hugging Face",
+      "url": "https://huggingface.co/bhsu/my_awesome_eli5_clm-model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Структура :: Федеральная Служба Безопасности",
+      "url": "http://fsb.ru/fsb/structure.htm%21_print%3Dtrue.html",
+      "snippet": "Структура (пункт 2 перечня информации о деятельности Федеральной службы безопасности Российской Федерации, …"
+    }
+  ]
+}

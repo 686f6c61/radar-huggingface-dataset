@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Zazzles/qwen38-27b-fp8-tokenizer",
+  "slug": "zazzles-qwen38-27b-fp8-tokenizer",
+  "author": "Zazzles",
+  "url": "https://huggingface.co/Zazzles/qwen38-27b-fp8-tokenizer",
+  "created_at": "2026-09-05T19:33:28.000Z",
+  "updated_at": "2026-09-05T19:36:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989325,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "خريطة مخططات أحياء بريدة",
+      "url": "https://earthapp.com.sa/map-design/%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A3%D8%AD%D9%8A%D8%A7%D8%A1-%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+      "snippet": "تقع بريدة في قلب منطقة نجد، وتتوسط موقعًا جغرافيًا مميزًا يجعلها حلقة وصل بين مناطق المملكة المختلفة، إذ تبعد نحو 330 كيلومترًا شمال غرب الرياض. أحياء مدينة بريدة."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-FP8",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "احياء بريده دليل شامل مع الخريطة التفصيلية | Earth App",
+      "url": "https://blog.earthapp.com.sa/%D8%A7%D8%AD%D9%8A%D8%A7%D8%A1-%D8%A8%D8%B1%D9%8A%D8%AF%D9%87/",
+      "snippet": "Apr 26, 2026 · استكشف احياء بريده بالخريطة التفصيلية: الأحياء الراقية، السكنية، القديمة، والمخططات الحديثة. دليلك الكامل لاختيار الحي المناسب في القصيم | Earth App"
+    },
+    {
+      "title": "Qwen3.8-27B - a huginnfork Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huginnfork/qwen38-27b",
+      "snippet": "FP8 & NVFP4 quants of Qwen/Qwen3.8-27B. Reserved ahead of the upstream release — weights land as soon as the base model ships."
+    },
+    {
+      "title": "خريطةبريدة مع أسماء الشوارع وأرقام المنازل – Yango Maps",
+      "url": "https://maps.yango.com/ar-sa/114148/buraydah/",
+      "snippet": "خريطة مفصلة على الإنترنت لـ بريدة مع الشوارع وأرقام المباني على الموقع الإلكتروني وفي تطبيق Yango Maps للجوّال. الأماكن ذات الأهمية والأعمال التجارية ذات التقييمات والمراجعات والصور على …"
+    }
+  ]
+}

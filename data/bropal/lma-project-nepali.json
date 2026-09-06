@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "bropal/lma-project-nepali",
+  "slug": "bropal-lma-project-nepali",
+  "author": "bropal",
+  "url": "https://huggingface.co/bropal/lma-project-nepali",
+  "created_at": "2026-09-04T11:26:16.000Z",
+  "updated_at": "2026-09-06T02:39:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9018647509,
+  "storage_human": "9.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DBUtil Removal Utility | Driver Details | Dell US",
+      "url": "https://www.dell.com/support/home/en-us/drivers/DriversDetails?driverId=8GG09&msockid=29be42ec0c416e06239755270d286f50",
+      "snippet": "Aug 2, 2021 · File Format:Dell Update Packages (DUP) in Microsoft Windows 32bit format have been designed to run on Microsoft …"
+    },
+    {
+      "title": "bropal/lma-project-nepali · Hugging Face",
+      "url": "https://huggingface.co/bropal/lma-project-nepali",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dell Command | Update Application | Driver Details | Dell US",
+      "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8dgg4&msockid=29be42ec0c416e06239755270d286f50",
+      "snippet": "Oct 29, 2021 · This package contains the Dell Command | Update application. Dell Command Update is a stand-alone application for …"
+    },
+    {
+      "title": "bropal/lma-project-nepali · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/bropal/lma-project-nepali",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Where are Notepad temp/unsaved .txt files located?",
+      "url": "https://superuser.com/questions/1856217/where-are-notepad-temp-unsaved-txt-files-located",
+      "snippet": "Sep 19, 2024 · Since Windows 11 (or maybe earlier) Windows Notepad internally stores unsaved files so if the application (or …"
+    }
+  ]
+}

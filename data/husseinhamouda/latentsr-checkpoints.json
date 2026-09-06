@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HusseinHamouda/LatentSR-checkpoints",
+  "slug": "husseinhamouda-latentsr-checkpoints",
+  "author": "HusseinHamouda",
+  "url": "https://huggingface.co/HusseinHamouda/LatentSR-checkpoints",
+  "created_at": "2026-08-14T00:08:12.000Z",
+  "updated_at": "2026-09-05T23:30:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24822451250,
+  "storage_human": "24.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Commercial Private Treaty: 190 Fisher Parade, Farm Cove, Manukau",
+      "url": "https://www.bayleys.co.nz/listings/commercial/auckland/manukau/190-fisher-parade-farm-cove-1903011",
+      "snippet": "Take advantage of the property's favourable Business Neighbourhood Centre zoning which supports both commercial and residential …"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "190 Fisher Parade, Farm Cove, Manukau City - OneRoof",
+      "url": "https://www.oneroof.co.nz/property/auckland/farm-cove/190-fisher-parade/tOuKb",
+      "snippet": "OneRoof mentions This property was last sold in 2021 for $4,925,000. Its latest rating valuation by Manukau City council is …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "奧克蘭 東區 翠農灣商場 4K | Farm Cove Village, 190 Fisher Parade, Farm Cove…",
+      "url": "https://www.youtube.com/watch?v=hGJaJH5vL9E",
+      "snippet": "奧克蘭 東區 翠農灣商場 4K | Farm Cove Village, 190 Fisher Parade, Farm Cove, Auckland, New Zealand 2025.09.08"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-case-typology-architect_fallback_ffn-only",
+  "slug": "jongbin-kr-llama-3-1-8b-instruct_lbox-legal-case-typology-architect_fallback_ffn-only",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-case-typology-architect_fallback_ffn-only",
+  "created_at": "2026-09-05T14:37:25.000Z",
+  "updated_at": "2026-09-06T00:49:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2056102961,
+  "storage_human": "2.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque Crédit Mutuel",
+      "url": "https://www.creditmutuel.fr/home/index.html",
+      "snippet": "Crédit Mutuel : vous avez tout à gagner à rejoindre une banque mutualiste. Une banque qui appartient à ses clients, ça change tout !"
+    },
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-case-typology-architect ...",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-case-typology-architect_fallback_ffn-only",
+      "snippet": "Instructions to use Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-case-typology-architect_fallback_ffn-only with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Connexion à votre Espace Client - Crédit Mutuel",
+      "url": "https://www.creditmutuel.fr/fr/authentification.html",
+      "snippet": "Connectez-vous à votre Espace Client du Crédit Mutuel à l'aide de votre identifiant et mot de passe."
+    },
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct-4x1-moe · Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Accueil | Recrutement CM - Crédit Mutuel",
+      "url": "https://recrutement.creditmutuel.fr/fr/index.html",
+      "snippet": "Rejoindre Crédit Mutuel Alliance Fédérale, c’est s’engager auprès d’une banque mutualiste et coopérative. Chez nous, il n’y a pas …"
+    }
+  ]
+}

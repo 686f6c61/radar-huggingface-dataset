@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dumptruckdaddy/lena-flux-lora-kohya",
+  "slug": "dumptruckdaddy-lena-flux-lora-kohya",
+  "author": "dumptruckdaddy",
+  "url": "https://huggingface.co/dumptruckdaddy/lena-flux-lora-kohya",
+  "created_at": "2026-09-05T17:43:29.000Z",
+  "updated_at": "2026-09-05T18:47:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "flux",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 463374000,
+  "storage_human": "463 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "dumptruckdaddy/lena-flux-lora-kohya · Hugging Face",
+      "url": "https://huggingface.co/dumptruckdaddy/lena-flux-lora-kohya",
+      "snippet": "Instructions to use dumptruckdaddy/lena-flux-lora-kohya with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "dumptruckdaddy/lena-flux-lora · Hugging Face",
+      "url": "https://huggingface.co/dumptruckdaddy/lena-flux-lora",
+      "snippet": "Instructions to use dumptruckdaddy/lena-flux-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    }
+  ]
+}

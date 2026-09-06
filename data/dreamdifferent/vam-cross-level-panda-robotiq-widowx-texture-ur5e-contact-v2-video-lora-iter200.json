@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200",
+  "slug": "dreamdifferent-vam-cross-level-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200",
+  "created_at": "2026-09-05T21:18:52.000Z",
+  "updated_at": "2026-09-05T21:19:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "video-generation",
+    "lora",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741588124,
+  "storage_human": "742 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chase vs. Capital One Auto Loan: Which Is Better in 2026?",
+      "url": "https://www.autoloanrate.com/articles/chase-vs-capital-one-auto-loan",
+      "snippet": "Nov 12, 2025 · Chase and Capital One are two of the largest auto loan banks in the U.S. - but their products work very differently. …"
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter200",
+      "snippet": "This public repository contains the trainable-only Video2World LoRA checkpoint from iteration 200 of v2w_panda_robotiq_level2_widowx_texture_2cam_hstack_from_widowx250_video_fused_f0cea76_lora_r256."
+    },
+    {
+      "title": "Capital One vs. Chase Auto Loans | Several.com",
+      "url": "https://several.com/auto-loans/comparison/capitalone-vs-chase-auto",
+      "snippet": "When it comes to auto financing, Capital One and Chase provide distinct solutions for car buyers. Here’s a look at how they compare …"
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-video ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-video-lora-iter-400",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Auto Loan Rates | New, Used and Refinance | Chase",
+      "url": "https://www.chase.com/personal/auto/auto-loan-rates",
+      "snippet": "Aug 20, 2026 · Review and compare auto loan rates for new cars, used cars and auto refinance. Apply today to see the rate and …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "julianasantos/retrieval-2024",
+  "slug": "julianasantos-retrieval-2024",
+  "author": "julianasantos",
+  "url": "https://huggingface.co/julianasantos/retrieval-2024",
+  "created_at": "2026-09-05T20:01:09.000Z",
+  "updated_at": "2026-09-05T20:01:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA GeForce GTX 1070 Specs | TechPowerUp GPU Database",
+      "url": "https://www.techpowerup.com/gpu-specs/geforce-gtx-1070.c2840",
+      "snippet": "Jun 9, 2016 · The GeForce GTX 1070 was a performance-segment graphics card by NVIDIA, launched on June 10th, 2016. Built on …"
+    },
+    {
+      "title": "Retrieval-Augmented Generation for AI-Generated Content: A Survey",
+      "url": "https://arxiv.org/abs/2402.19473",
+      "snippet": "Advancements in model algorithms, the growth of foundational models, and access to high-quality datasets have propelled the evolution of Artificial Intelligence Generated Content (AIGC). Despite its notable successes, AIGC still faces hurdles such as updating knowledge, handling long-tail data, mitigating data leakage, and managing high training and inference costs. Retrieval-Augmented ..."
+    },
+    {
+      "title": "1070 — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/1070",
+      "snippet": "1070 Cette page concerne l'année 1070 du calendrier julien. Pour l'année 1070 av. J.-C., voir 1070 av. J.-C."
+    },
+    {
+      "title": "Retrieval-Augmented Score Distillation for Text-to-3D Generation",
+      "url": "https://arxiv.org/abs/2402.02972",
+      "snippet": "To this end, we introduce novel framework for retrieval-based quality enhancement in text-to-3D generation. We leverage the retrieved asset to incorporate its geometric prior in the variational objective and adapt the diffusion model's 2D prior toward view consistency, achieving drastic improvements in both geometry and fidelity of generated ..."
+    },
+    {
+      "title": "Anderlecht | Anderlecht",
+      "url": "https://anderlecht.be/",
+      "snippet": "Visite des Musées Maison d'Erasme & Béguinage Les sites communaux Administration communale d'Anderlecht Place du Conseil 1, …"
+    }
+  ]
+}

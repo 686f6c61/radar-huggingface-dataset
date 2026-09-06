@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "qikp/kite-8-7m-base",
+  "slug": "qikp-kite-8-7m-base",
+  "author": "qikp",
+  "url": "https://huggingface.co/qikp/kite-8-7m-base",
+  "created_at": "2026-09-05T19:48:33.000Z",
+  "updated_at": "2026-09-05T19:48:46.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "en",
+    "dataset:semran1/cosmopedia-v2-subset",
+    "license:cc0-1.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6787008,
+  "parameters_human": "6.8M",
+  "storage_bytes": 27157736,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kuningan, Jakarta Selatan - Wikipedia bahasa Indonesia, …",
+      "url": "https://id.wikipedia.org/wiki/Kuningan,_Jakarta_Selatan",
+      "snippet": "Kuningan adalah satu kawasan bisnis di Jakarta, bagian dari Segitiga Emas Jakarta, yang mencakup Jalan HR Rasuna Said, Jalan …"
+    },
+    {
+      "title": "qikp/kite-7-15m-base · Hugging Face",
+      "url": "https://huggingface.co/qikp/kite-7-15m-base",
+      "snippet": "Kite 🎉 You are looking at Kite 7, which has better data, tokenization, and a longer context window! Kite is a small, trained, 15 million parameter language model."
+    },
+    {
+      "title": "15 Tempat Wisata dan Refreshing Paling Hits di Kuningan Jakarta",
+      "url": "https://uptown.id/id/2019/05/22/15-tempat-wisata-dan-refreshing-paling-hits-di-kuningan-jakarta/",
+      "snippet": "May 22, 2019 · Berikut 15 tempat wisata yang menarik dan hal-hal yang bisa dilakukan di daerah Mega Kuningan Jakarta. Lihat …"
+    },
+    {
+      "title": "Kite Plan Base – The World's largest kite plan archive",
+      "url": "https://www.kiteplans.org/",
+      "snippet": "The Kite Plan Base is the largest kite plan archive in existence. It isn't a mere link directory, it contains actual plan backups."
+    },
+    {
+      "title": "Kuningan, Jakarta Selatan - Wikiwand",
+      "url": "https://www.wikiwand.com/id/Kuningan,_Jakarta_Selatan",
+      "snippet": "Kuningan adalah satu kawasan bisnis di Jakarta, bagian dari Segitiga Emas Jakarta, yang mencakup Jalan HR Rasuna Said, Jalan …"
+    }
+  ]
+}

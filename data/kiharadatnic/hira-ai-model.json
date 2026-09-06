@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "KiharaDatnic/HIRA-AI-Model",
+  "slug": "kiharadatnic-hira-ai-model",
+  "author": "KiharaDatnic",
+  "url": "https://huggingface.co/KiharaDatnic/HIRA-AI-Model",
+  "created_at": "2026-09-06T00:20:57.000Z",
+  "updated_at": "2026-09-06T00:21:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4517152,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "KiharaDatnic/HIRA-AI at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/KiharaDatnic/HIRA-AI/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT - Tchat GPT",
+      "url": "https://chatgpt.com/fr-FR/",
+      "snippet": "Utilisez ChatGPT pour répondre aux questions, rédiger, créer des images, accomplir des tâches et coder, le tout au même endroit. …"
+    },
+    {
+      "title": "dailypharmkorea - 데일리팜",
+      "url": "https://www.dailypharm.com/eng/user/news/8411",
+      "snippet": "Consequently, the Danish Medicines Agency developed and currently operates an AI model deployed within its private on-premises network using open-source large language models, engineered to generate responses strictly bounded within specific regulatory guidelines and standard operating procedures (SOPs) designated by review officers."
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

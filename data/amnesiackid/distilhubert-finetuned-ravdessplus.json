@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "amnesiackid/distilhubert-finetuned-ravdessplus",
+  "slug": "amnesiackid-distilhubert-finetuned-ravdessplus",
+  "author": "amnesiackid",
+  "url": "https://huggingface.co/amnesiackid/distilhubert-finetuned-ravdessplus",
+  "created_at": "2026-09-05T23:57:02.000Z",
+  "updated_at": "2026-09-06T02:01:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hubert",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:ntu-spml/distilhubert",
+    "base_model:finetune:ntu-spml/distilhubert",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23690888,
+  "parameters_human": "23.7M",
+  "storage_bytes": 1137240753,
+  "storage_human": "1.1 GB",
+  "base_model": "ntu-spml/distilhubert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "amnesiackid/distilhubert-finetuned-ravdess · Hugging Face",
+      "url": "https://huggingface.co/amnesiackid/distilhubert-finetuned-ravdess",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/sa",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "amnesiackid (Zhiyu Bao) - Hugging Face",
+      "url": "https://huggingface.co/amnesiackid/models",
+      "snippet": "Recent Activity updated a model 8 days ago amnesiackid/distilhubert-finetuned-ravdess updated a model 10 days ago amnesiackid/distilhubert-finetuned-gtzan"
+    },
+    {
+      "title": "أنت تستخدم أحدث إصدار للمتصفح. - YouTube",
+      "url": "https://www.youtube.com/supported_browsers?hl=ar",
+      "snippet": "أنت تستخدم أحدث إصدار للمتصفح. يمكنك استخدام أحدث ميزات YouTube. Opera Google Chrome Mozilla Firefox تصفّح YouTube"
+    }
+  ]
+}

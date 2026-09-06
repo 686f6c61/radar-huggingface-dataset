@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ak0601/Hinglish-XRoberta",
+  "slug": "ak0601-hinglish-xroberta",
+  "author": "ak0601",
+  "url": "https://huggingface.co/ak0601/Hinglish-XRoberta",
+  "created_at": "2026-09-05T17:39:36.000Z",
+  "updated_at": "2026-09-05T18:16:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3334426807,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poczta - Najlepsza Poczta, największe załączniki - WP",
+      "url": "https://poczta.wp.pl/",
+      "snippet": "Bezpieczna i darmowa poczta bez spamu. Duże załączniki, nielimitowana pojemność, aplikacja mobilna. Załóż konto i ciesz się …"
+    },
+    {
+      "title": "HingRoBERTa: A Code-Mixed Hinglish Model",
+      "url": "https://www.emergentmind.com/topics/hingroberta",
+      "snippet": "HingRoBERTa is a code-mixed Hindi-English language model built on XLM-RoBERTa, designed for authentic Hinglish text processing. It employs 12 transformer layers with dynamic masked language modeling, optimizing performance for code-switching scenarios. Empirical evaluations on GLUECoS benchmarks and cybercrime classification demonstrate its competitive edge over traditional multilingual models."
+    },
+    {
+      "title": "Odzyskaj hasło w WP Poczcie",
+      "url": "https://poczta.wp.pl/odzyskaj/",
+      "snippet": ""
+    },
+    {
+      "title": "ak0601 (Aman Kapoor) - Hugging Face",
+      "url": "https://huggingface.co/ak0601",
+      "snippet": "Deep Learning, Transformers, Computer Vision, Natural Language Processing"
+    },
+    {
+      "title": "Sample-Efficient Language Model for Hinglish Conversational AI",
+      "url": "https://arxiv.org/html/2504.19070v1",
+      "snippet": "Abstract This paper presents our process for developing a sample-efficient language model for a conversational Hinglish chatbot. Hinglish, a code-mixed language that combines Hindi and English, presents a unique computational challenge due to inconsistent spelling, lack of standardization, and limited quality of conversational data."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kingjulien2023/ppo-SnowballTarget",
+  "slug": "kingjulien2023-ppo-snowballtarget",
+  "author": "kingjulien2023",
+  "url": "https://huggingface.co/kingjulien2023/ppo-SnowballTarget",
+  "created_at": "2026-09-05T20:27:22.000Z",
+  "updated_at": "2026-09-05T20:27:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16720263,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sportnachrichten | Alle Fußball & Sport News | Live-Ticker & Ergebnisse",
+      "url": "https://www.kicker.de/",
+      "snippet": "kicker.de ist das Online-Angebot zum bekannten Fußballmagazin &#8226; Topaktuelle News & Livescores aus der Fußball & Sport …"
+    },
+    {
+      "title": "Adilbai/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ppo-SnowballTarget",
+      "snippet": "This model is a Proximal Policy Optimization (PPO) agent trained to play the SnowballTarget environment from Unity ML-Agents. The agent, named Julien the Bear 🐻, learns to accurately throw snowballs at spawning targets to maximize rewards."
+    },
+    {
+      "title": "Fußball-Vereine Freundschaftsspiele heute | Spielplan & Ergebnisse ...",
+      "url": "https://www.kicker.de/vereine-freundschaftsspiele/spieltag",
+      "snippet": "Spielplan Fußball-Vereine Freundschaftsspiele 2026/27 • KW36 • Ergebnisse, Spiele und Termine zum Spieltag • Alle Tabellen • Live …"
+    },
+    {
+      "title": "aiartwork/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/aiartwork/ppo-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "Sonderhefte - kicker",
+      "url": "https://shop.kicker.de/de-de/kicker-produkte/sonderhefte/",
+      "snippet": "AGB Widerrufsrecht Widerrufsformular Datenschutz Kundeninformationspflichten Impressum FOLLOW AND SHARE shop.kicker.de- …"
+    }
+  ]
+}

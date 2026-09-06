@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rshift8/pi05_obs_only_first3mid3_last6_injection_allenv_2ep",
+  "slug": "rshift8-pi05_obs_only_first3mid3_last6_injection_allenv_2ep",
+  "author": "rshift8",
+  "url": "https://huggingface.co/rshift8/pi05_obs_only_first3mid3_last6_injection_allenv_2ep",
+  "created_at": "2026-09-02T15:54:25.000Z",
+  "updated_at": "2026-09-05T22:41:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136295985239,
+  "storage_human": "136.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falkland Islands - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Falkland_Islands",
+      "snippet": "Categories: Falkland Islands Disputed islands of South America Island countries Countries and territories where English is an official …"
+    },
+    {
+      "title": "rshift8/pi05_obs_only_first3mid3_last6_injection_allenv_2ep · Hugging Face",
+      "url": "https://huggingface.co/rshift8/pi05_obs_only_first3mid3_last6_injection_allenv_2ep",
+      "snippet": "2-epoch JAX/orbax fine-tune of RoboPRO obstacle-attention π₀.₅ (pi05_obs_only_first3mid3_last6_injection_allenv), obstacle-only attention (target and destination attention off)."
+    },
+    {
+      "title": "Visit The Falkland Islands | Falklands",
+      "url": "https://www.falklandislands.com/",
+      "snippet": "Welcome to the Falkland Islands - an incredible archipelago of stunning white sand beaches, seas of beautiful blues and sparkling …"
+    },
+    {
+      "title": "rshift8/pi05_obs_only_firstandlast3_injection_allenv_2ep - Hugging Face",
+      "url": "https://huggingface.co/rshift8/pi05_obs_only_firstandlast3_injection_allenv_2ep",
+      "snippet": "Check out the documentationfor more information. pi05_obs_only_firstandlast3_injection_allenv_2ep pi05_obs_only_firstandlast3_injection_allenv_2ep 2-epoch JAX/orbax fine-tune of RoboPRO obstacle-attention π₀.₅ (pi05_obs_only_firstandlast3_injection_allenv), obstacle-only attention (target and destination attention off)."
+    },
+    {
+      "title": "History of the Falkland Islands - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_the_Falkland_Islands",
+      "snippet": "1Claims of pre-Columbian discovery. 2European discovery. 3Early colonisation. 4Inter-colonial period. Toggle Inter-colonial period …"
+    }
+  ]
+}

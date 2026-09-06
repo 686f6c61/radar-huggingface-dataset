@@ -5,7 +5,7 @@
   "author": "mahadev9",
   "url": "https://huggingface.co/mahadev9/gemma-4-E2B-it-fp8",
   "created_at": "2026-09-04T22:33:15.000Z",
-  "updated_at": "2026-09-04T22:34:08.000Z",
+  "updated_at": "2026-09-05T02:33:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 5104297539,
   "parameters_human": "5.10B",
-  "storage_bytes": 8366140464,
-  "storage_human": "8.4 GB",
+  "storage_bytes": 17419376070,
+  "storage_human": "17.4 GB",
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"

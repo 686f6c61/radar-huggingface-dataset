@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "amer224/freefire-aim-ai",
+  "slug": "amer224-freefire-aim-ai",
+  "author": "amer224",
+  "url": "https://huggingface.co/amer224/freefire-aim-ai",
+  "created_at": "2026-09-05T22:42:00.000Z",
+  "updated_at": "2026-09-06T02:57:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "ppo",
+    "fps-aim",
+    "kaggle-t4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74228537,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "amer224 (amer emad) - Hugging Face",
+      "url": "https://huggingface.co/amer224",
+      "snippet": "User profile of amer emad on Hugging Face"
+    },
+    {
+      "title": "Get Help With File Explorer in Windows 11",
+      "url": "https://windowsreport.com/get-help-with-file-explorer-in-windows/",
+      "snippet": "Jul 21, 2026 · Learn where to get help with File Explorer in Windows using built in tools, support pages, and troubleshooters."
+    },
+    {
+      "title": "AI Model Directory — 643 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai — 643 models organized by provider, covering chat, image, video, voice, code, and more. Free daily tokens on every account."
+    },
+    {
+      "title": "File Explorer | Microsoft Windows",
+      "url": "https://www.microsoft.com/en-us/windows/tips/file-explorer?msockid=01d674d6115d645f368c631d10ff6536",
+      "snippet": "Press Windows logo key + E to open File Explorer and find the files and folders you need, including those on OneDrive. You can use …"
+    }
+  ]
+}

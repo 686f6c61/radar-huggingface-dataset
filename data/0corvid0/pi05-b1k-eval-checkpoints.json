@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "0Corvid0/pi05-b1k-eval-checkpoints",
+  "slug": "0corvid0-pi05-b1k-eval-checkpoints",
+  "author": "0Corvid0",
+  "url": "https://huggingface.co/0Corvid0/pi05-b1k-eval-checkpoints",
+  "created_at": "2026-09-05T19:02:35.000Z",
+  "updated_at": "2026-09-06T03:19:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "behavior",
+    "openpi",
+    "pi05",
+    "dataset:behavior-1k/2026-challenge-demos",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112386943056,
+  "storage_human": "112.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Microsoft Defender Antivirus -2267602 KB - catalog.update.microsoft…",
+      "url": "https://www.catalog.update.microsoft.com/Search.aspx?q=Microsoft+Defender+Antivirus+-2267602+KB+",
+      "snippet": "If you have a pop-up blocker enabled, the Update Details window might not open. To open the Update Details window, configure your …"
+    },
+    {
+      "title": "0Corvid0/pi05-b1k-families · Hugging Face",
+      "url": "https://huggingface.co/0Corvid0/pi05-b1k-families",
+      "snippet": "0Corvid0 / pi05-b1k-families like 0 License:other Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "تحديث Microsoft Defender لصور تثبيت نظام التشغيل Windows | Microsoft ...",
+      "url": "https://support.microsoft.com/ar-sa/servicing/management-tools/microsoft-defender/update/microsoft-defender-update-for-windows-operating-system-installation-images",
+      "snippet": "يمكن أن تترك الساعات الأولى من توزيع Windows المثبت حديثا النظام عرضة للخطر بسبب فجوة حماية Microsoft Defender. وذلك لأن صور تثبيت نظام التشغيل قد تحتوي على ثنائيات برامج …"
+    },
+    {
+      "title": "Baselines - BEHAVIOR",
+      "url": "https://behavior.stanford.edu/challenge/baselines.html",
+      "snippet": "These baselines are meant to help participants verify the full challenge workflow — loading the demonstration dataset, fine-tuning a policy, running evaluation in OmniGibson, and preparing outputs for submission — and serve as reference implementations for the expected observation and action interfaces of the challenge track. Participants are encouraged to build on these pipelines, compare ..."
+    },
+    {
+      "title": "تثبيت Microsoft Defender | Microsoft Support",
+      "url": "https://support.microsoft.com/ar-sa/defender/installing-microsoft-defender",
+      "snippet": "Microsoft Defender هو تطبيق أمان جديد يساعد على حمايتك أنت وعائلتك عبر جميع أجهزتك؛ Windows وAndroid وMac وiOS."
+    }
+  ]
+}

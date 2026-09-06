@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ryoyamamotoina/perceiver-experiment",
+  "slug": "ryoyamamotoina-perceiver-experiment",
+  "author": "ryoyamamotoina",
+  "url": "https://huggingface.co/ryoyamamotoina/perceiver-experiment",
+  "created_at": "2026-09-05T23:04:34.000Z",
+  "updated_at": "2026-09-05T23:04:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "ryoyamamotoina (Ryo Yamamoto) - Hugging Face",
+      "url": "https://huggingface.co/ryoyamamotoina/models",
+      "snippet": "User profile of Ryo Yamamoto on Hugging Face"
+    },
+    {
+      "title": "法语的几个特殊的字母，列出来一下_百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "2011-09-26 法语的那些特殊字母怎么打？ 3 2013-07-18 法语13个特殊字母怎么读？ 4 2013-11-25 怎样打出法语的特殊字母啊 1 2018 …"
+    },
+    {
+      "title": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision ...",
+      "url": "https://peria-for-robotics.github.io/",
+      "snippet": "The overview of pipeline for PERIA (Perceive, Reason, Imagine, Act). Inspired by the human cognitive process of following complex instructions, which involves perceiving environment and tasks, reasoning the required language plans, and imagining the intermediate subgoal images before acting. Language planning focuses on how to act and the sub-instructions outline the necessary procedural ..."
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "按照国家标准，当你是使用波浪线符号的正规用法——表示一个数字范围的时候，请用一字宽的「～」U+FF5E FULLWIDTH TILDE， …"
+    }
+  ]
+}

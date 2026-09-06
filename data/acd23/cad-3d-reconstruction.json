@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "acd23/cad-3d-reconstruction",
+  "slug": "acd23-cad-3d-reconstruction",
+  "author": "acd23",
+  "url": "https://huggingface.co/acd23/cad-3d-reconstruction",
+  "created_at": "2026-09-05T20:45:05.000Z",
+  "updated_at": "2026-09-05T23:03:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d-reconstruction",
+    "gaussian-splatting",
+    "cad",
+    "mast3r",
+    "brepgaussian",
+    "point-cloud",
+    "mesh",
+    "ml-intern",
+    "arxiv:2406.09656",
+    "arxiv:2602.21105",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 808957061,
+  "storage_human": "809 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/de-DE/",
+      "snippet": "TikTok: Hier beginnen Trends. Auf einem Gerät oder im Web können Zuschauer*innen Millionen von personalisierten Kurzvideos …"
+    },
+    {
+      "title": "An agentic-AI method for 2D legacy to 3D CAD model reconstruction",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2213846326002531",
+      "snippet": "This study proposes an Agentic AI [20] approach to address the limitations of current AI-based methods for 3D CAD reconstruction. By leveraging the content-generation and reasoning capabilities of LLMs, it enables autonomous reconstruction of 3D CAD models from 2D legacy designs with multimodal auxiliary information."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "An agentic-AI method for 2D legacy to 3D CAD model reconstruction",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2213846326002531",
+      "snippet": "This study proposes an Agentic AI [20]approach to address the limitations of current AI-based methods for 3D CAD reconstruction (Table 1). By leveraging the content-generation and reasoning capabilities of LLMs, it enables autonomous reconstruction of 3D CAD models from 2D legacy designs with multimodal auxiliary information."
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://m.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    }
+  ]
+}

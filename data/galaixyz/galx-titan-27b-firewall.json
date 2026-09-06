@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "id": "GALAIXYZ/galx-titan-27B-firewall",
+  "slug": "galaixyz-galx-titan-27b-firewall",
+  "author": "GALAIXYZ",
+  "url": "https://huggingface.co/GALAIXYZ/galx-titan-27B-firewall",
+  "created_at": "2026-09-05T20:37:31.000Z",
+  "updated_at": "2026-09-05T20:41:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "galxai",
+    "titan-firewall",
+    "causal-lm",
+    "reasoning",
+    "code-generation",
+    "agentic-frameworks",
+    "fp8",
+    "w8a8",
+    "dora",
+    "lora",
+    "hopper-optimized",
+    "h100",
+    "h200",
+    "b200",
+    "triton-kernels",
+    "liger-kernel",
+    "grpo",
+    "simpo",
+    "swe-bench",
+    "anti-benchmaxxing",
+    "zero-trust",
+    "modal-cloud",
+    "vllm",
+    "sglang",
+    "safetensors",
+    "text-generation-inference",
+    "chatml",
+    "cybersecurity",
+    "verification",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B-FP8",
+    "base_model:adapter:Qwen/Qwen3.8-27B-FP8",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2457829,
+  "storage_human": "2 MB",
+  "base_model": "Qwen/Qwen3.8-27B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-06T03:24:39.041Z",
+  "benchmarks": [
+    {
+      "task": "Software Engineering & Agentic Coding",
+      "dataset": "SWE-bench Pro",
+      "metric": "Resolve Rate (Pass@1)",
+      "value": 64.2
+    },
+    {
+      "task": "Competitive Code Synthesis",
+      "dataset": "LiveCodeBench v6",
+      "metric": "Pass@1",
+      "value": 92.4
+    },
+    {
+      "task": "Interactive Terminal Problem Solving",
+      "dataset": "Terminal Bench 2.1 (Terminus)",
+      "metric": "Pass Rate",
+      "value": 75.8
+    },
+    {
+      "task": "Repository-Scale Autonomous Debugging",
+      "dataset": "QwenSWEBench",
+      "metric": "Avg@3 Resolve Rate",
+      "value": 81.5
+    },
+    {
+      "task": "Long-Horizon Multi-File Bug Fixing",
+      "dataset": "DeepSWE 1.1",
+      "metric": "Resolve Rate",
+      "value": 44.8
+    },
+    {
+      "task": "Workplace & Operational Productivity",
+      "dataset": "CoWorkBench",
+      "metric": "Task Completion Rate",
+      "value": 73.5
+    },
+    {
+      "task": "Adversarial Property Fuzzing",
+      "dataset": "EvalPlus (HumanEval+)",
+      "metric": "Pass@1 (100 Fuzz Vectors)",
+      "value": 90.5
+    },
+    {
+      "task": "Standard Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Accuracy",
+      "value": 96.8
+    },
+    {
+      "task": "Counterfactual Mathematical Reasoning",
+      "dataset": "GSM-Symbolic (NoOp Distractors)",
+      "metric": "Accuracy",
+      "value": 95.6
+    },
+    {
+      "task": "High-School Olympiad Mathematics",
+      "dataset": "MATH-500",
+      "metric": "Accuracy",
+      "value": 75.2
+    },
+    {
+      "task": "Symbolic Algebraic Invariance",
+      "dataset": "MATH-Symbolic (SymPy Proofs)",
+      "metric": "Proof Verification Rate",
+      "value": 72.8
+    },
+    {
+      "task": "Strict Instruction Following",
+      "dataset": "IFBench",
+      "metric": "Pass Rate",
+      "value": 81.2
+    },
+    {
+      "task": "Advanced Scientific Reasoning",
+      "dataset": "GPQA Diamond",
+      "metric": "Accuracy",
+      "value": 90.8
+    },
+    {
+      "task": "Computer & Operating System Control",
+      "dataset": "OSWorld-Verified",
+      "metric": "Task Completion Rate",
+      "value": 86
+    },
+    {
+      "task": "Browser Navigation & Automation",
+      "dataset": "WebArena-Verified",
+      "metric": "Task Completion Rate",
+      "value": 66.5
+    },
+    {
+      "task": "Mobile Operating System Control",
+      "dataset": "AndroidWorld",
+      "metric": "Task Success Rate",
+      "value": 83.4
+    },
+    {
+      "task": "Multimodal Document & Visual Reasoning",
+      "dataset": "MathVision (With CI)",
+      "metric": "Accuracy",
+      "value": 95.4
+    },
+    {
+      "task": "Dense Document OCR & Layout Understanding",
+      "dataset": "OmniDocBench 1.5",
+      "metric": "Structural Parsing Score",
+      "value": 92
+    },
+    {
+      "task": "AST Code Mutation Resistance",
+      "dataset": "MuTAP (Mutation Testing)",
+      "metric": "Mutant Kill Rate",
+      "value": 88
+    },
+    {
+      "task": "Causal Constraint Inversion",
+      "dataset": "CounterBench",
+      "metric": "Accuracy",
+      "value": 95.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "GALXAI/GALX-Titan-27B-v2.0 at main - Hugging Face",
+      "url": "https://huggingface.co/GALXAI/GALX-Titan-27B-v2.0/tree/main",
+      "snippet": "Use Docker images ... Docker Model Runner How to use GALXAI/GALX-Titan-27B-v2.0 with Docker Model Runner: ... main GALX-Titan-27B-v2.0 32.2 GB Ctrl+K Ctrl+K 1 contributor History:92 commits GALAIXYZ Upload README.md with huggingface_hub 2ae4a4b verifiedabout 5 hours ago assetsUpload assets/galx_titan_architecture.jpg with huggingface_hubabout 5 ..."
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "README.md · GALXAI/GALX-Titan-27B-v2.0 at main - Hugging Face",
+      "url": "https://huggingface.co/GALXAI/GALX-Titan-27B-v2.0/blob/main/README.md",
+      "snippet": "GALXAI / GALX-Titan-27B-v2.0 like 0 Follow GALXAI 1 Text Generation Transformers Safetensors English Chinese qwen3_5 image-text-to-text galxai causal-lm reasoning code-generation fp8 dora compressed-tensors hopper-optimized systems-engineering triton-kernels conversational License:apache-2.0 Model card FilesFiles and versions xet Community ..."
+    },
+    {
+      "title": "New Publishing Requirements & Evaluation Process for Games",
+      "url": "https://devforum.roblox.com/t/new-publishing-requirements-evaluation-process-for-games/4573166",
+      "snippet": "Apr 13, 2026 · Today we are announcing new publishing requirements and an evaluation process to help make sure games are …"
+    }
+  ]
+}

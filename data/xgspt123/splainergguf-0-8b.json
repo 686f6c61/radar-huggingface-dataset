@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Xgspt123/splainerGGUF-0.8b",
+  "slug": "xgspt123-splainergguf-0-8b",
+  "author": "Xgspt123",
+  "url": "https://huggingface.co/Xgspt123/splainerGGUF-0.8b",
+  "created_at": "2026-09-05T20:08:21.000Z",
+  "updated_at": "2026-09-05T20:08:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3.5-0.8B",
+    "base_model:finetune:unsloth/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63335775,
+  "storage_human": "63 MB",
+  "base_model": "unsloth/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Xgspt123/splainer-0.8b-merged · Hugging Face",
+      "url": "https://huggingface.co/Xgspt123/splainer-0.8b-merged",
+      "snippet": "Instructions to use Xgspt123/splainer-0.8b-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Xgspt123/splainer-0.8b-merged with Transformers:"
+    },
+    {
+      "title": "Create a Google Account for Gmail - Gmail Help",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "A Google Account lets you sign in to Gmail and other Google services, such as YouTube, Google Play, Google Drive, and Photos. …"
+    },
+    {
+      "title": "Xgspt123/splainer-o-format-lora · Hugging Face",
+      "url": "https://huggingface.co/Xgspt123/splainer-o-format-lora",
+      "snippet": "Xgspt123 / splainer-o-format-lora like 0 Transformers Safetensors English text-generation-inference unsloth qwen3_5 trl License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Use Gmail to access your Google Account - Google Account Help",
+      "url": "https://support.google.com/accounts/answer/76194?hl=en",
+      "snippet": "To sign in to your Google Account (or any Google product): Go to the sign in page of the product (for Google Accounts it is …"
+    }
+  ]
+}

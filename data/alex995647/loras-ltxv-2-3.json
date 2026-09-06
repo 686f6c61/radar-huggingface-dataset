@@ -5,7 +5,7 @@
   "author": "Alex995647",
   "url": "https://huggingface.co/Alex995647/loras-ltxv-2.3",
   "created_at": "2026-09-04T23:12:29.000Z",
-  "updated_at": "2026-09-05T00:13:25.000Z",
+  "updated_at": "2026-09-05T03:48:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 88738687696,
-  "storage_human": "88.7 GB",
+  "storage_bytes": 89210722317,
+  "storage_human": "89.2 GB",
   "base_model": "Lightricks/LTX-2.3",
   "formats": [
     "diffusers"

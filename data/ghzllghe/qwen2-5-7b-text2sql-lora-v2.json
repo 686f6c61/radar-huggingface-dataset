@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ghzllghe/qwen2.5-7b-text2sql-lora-v2",
+  "slug": "ghzllghe-qwen2-5-7b-text2sql-lora-v2",
+  "author": "ghzllghe",
+  "url": "https://huggingface.co/ghzllghe/qwen2.5-7b-text2sql-lora-v2",
+  "created_at": "2026-09-05T20:05:41.000Z",
+  "updated_at": "2026-09-05T20:05:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31636652,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LOS 10 MEJORES pizzerías en Buenos Aires - Tripadvisor",
+      "url": "https://www.tripadvisor.com.ar/Restaurants-g312741-c31-Buenos_Aires_Capital_Federal_District.html",
+      "snippet": "Mejores pizzerías en Buenos Aires. Pizza Buenos Aires. Mapa. Pizzería. Borrar todos los filtros. Restaurantes en Buenos Aires. …"
+    },
+    {
+      "title": "ghzllghe/qwen2.5-7b-text2sql-lora-v1 · Hugging Face",
+      "url": "https://huggingface.co/ghzllghe/qwen2.5-7b-text2sql-lora-v1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pizza - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Pizza",
+      "snippet": "Pizza - Wikipedia, la enciclopedia libre. Ir al contenido. Menú principal. mover a la barra lateralocultar. Navegación . Portada. Portal …"
+    },
+    {
+      "title": "qwen2.5-7b-text2sql-lora-v1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ghzllghe/qwen2.5-7b-text2sql-lora-v1",
+      "snippet": "Run qwen2.5-7b-text2sql-lora-v1 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "Mejores pizzerías de Buenos Aires para comer una buena pizza porteña",
+      "url": "https://www.timeout.com/es/buenos-aires/restaurantes/pizzerias-buenos-aires",
+      "snippet": "Mar 15, 2024 · Los italianos nos legaron una tradición que tomó vuelo e inició un ciclo propio en Buenos Aires: la pizza porteña. En …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Radinkazemian/kodr",
+  "slug": "radinkazemian-kodr",
+  "author": "Radinkazemian",
+  "url": "https://huggingface.co/Radinkazemian/kodr",
+  "created_at": "2026-09-05T22:28:49.000Z",
+  "updated_at": "2026-09-05T22:29:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "game-generation",
+    "roblox",
+    "unity",
+    "godot",
+    "unreal",
+    "code",
+    "text-generation",
+    "dataset:Radinkazemian/kodr-dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "برايم فيديو: شاهد من أي مكان - Prime Video",
+      "url": "https://www.primevideo.com/splash/watchAnywhere/?language=ar_AE",
+      "snippet": "الشروط وإشعار الخصوصية أرسل لنا ملاحظاتك مساعدة © 1996-2026، Amazon.com, Inc. أو الشركات التابعة لها"
+    },
+    {
+      "title": "Radinkazemian (radin kazemian) - Hugging Face",
+      "url": "https://huggingface.co/Radinkazemian",
+      "snippet": "Radinkazemian Follow kazemianhamidrezaabyaneh-a11y AI & ML interests None yet Recent Activity updateda Spaceabout 2 hours ago"
+    },
+    {
+      "title": "برايم فيديو: شاهد الأفلام والعروض التلفزيونية والرياضة والبث التلفزيوني ...",
+      "url": "https://www.primevideo.com/?language=ar",
+      "snippet": "تابع بث الأفلام والعروض التلفزيونية الشهيرة، والرياضة، والقنوات التلفزيونية المباشرة المشمولة مع برايم، والمزيد مع الاشتراكات الإضافية. تمتع بالمشاهدة في أي مكان وفي أي وقت."
+    },
+    {
+      "title": "GitHub - Radin-dev1/kodr",
+      "url": "https://github.com/Radin-dev1/kodr",
+      "snippet": "Moreitems Kodr Every open model. One API. Available as fast as it drops. Kodr is a developer-first gateway for open-source AI models. It discovers models from the Hugging Face Hub, surfaces models that are actually runnable through inference providers, and exposes a clean OpenAI-compatible developer experience."
+    },
+    {
+      "title": "أمازون برايم السعودية",
+      "url": "https://www.amazon.sa/prime",
+      "snippet": "تسوق بمجموعة واسعة من العلامات التجارية المحلية مع توصيل برايم السريع والمجاني واستفد من خدمة العملاء في الشرق الأوسط، بالإضافة إلى إمكانية مشاهدة مجموعة واسعة من الأفلام والمسلسلات على ..."
+    }
+  ]
+}

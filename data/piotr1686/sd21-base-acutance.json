@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Piotr1686/sd21-base-acutance",
+  "slug": "piotr1686-sd21-base-acutance",
+  "author": "Piotr1686",
+  "url": "https://huggingface.co/Piotr1686/sd21-base-acutance",
+  "created_at": "2026-09-05T19:39:27.000Z",
+  "updated_at": "2026-09-05T20:00:08.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "mirror",
+    "text-to-image",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 865910724,
+  "parameters_human": "865.9M",
+  "storage_bytes": 5159966792,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3fa21c5b616560bd2b040b90608a6175",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "h1t/TCD-SD21-base-LoRA · Hugging Face",
+      "url": "https://huggingface.co/h1t/TCD-SD21-base-LoRA",
+      "snippet": "Model description Official SD21 (base) Model of the paper Trajectory Consistency Distillation. For more usage please found at Project Page Here is a simple example:"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "sd-research/stable-diffusion-2-1-base · Hugging Face",
+      "url": "https://huggingface.co/sd-research/stable-diffusion-2-1-base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

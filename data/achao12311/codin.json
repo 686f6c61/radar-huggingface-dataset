@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "achao12311/codin",
+  "slug": "achao12311-codin",
+  "author": "achao12311",
+  "url": "https://huggingface.co/achao12311/codin",
+  "created_at": "2026-09-06T01:39:07.000Z",
+  "updated_at": "2026-09-06T01:39:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - ImageGroup",
+      "url": "https://theimagegroup.com/",
+      "snippet": "The Image Group elevates and extends your brand. We are a one-stop solution for high-quality, ethically sourced promotional …"
+    },
+    {
+      "title": "Best AI for Coding 2026 - Top Coding Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-coding",
+      "snippet": "Compare the best AI for coding using live coding arena results, benchmark performance, and real generation examples for code generation, debugging, and software engineering."
+    },
+    {
+      "title": "Product Search - ImageGroup",
+      "url": "https://theimagegroup.com/image-catalogs/",
+      "snippet": "Browse our online image catalog of custom promotional products that we can help you design for your employees, clients, and …"
+    },
+    {
+      "title": "Best LLM for Coding (September 2026): SWE-bench & LiveCodeBench Ranked",
+      "url": "https://benchlm.ai/coding",
+      "snippet": "Live leaderboard ranking 417 AI models on SWE-bench Pro, LiveCodeBench, SWE-Rebench, and more. See which LLM writes the best code — updated September 2026."
+    },
+    {
+      "title": "Home - The Image Group",
+      "url": "https://theimagegroup.espwebsite.com/",
+      "snippet": "The Image Group from Holland OH USA Looking for promotional products, advertising specialties and business gifts? You've come to …"
+    }
+  ]
+}

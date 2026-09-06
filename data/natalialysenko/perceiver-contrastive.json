@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "natalialysenko/perceiver-contrastive",
+  "slug": "natalialysenko-perceiver-contrastive",
+  "author": "natalialysenko",
+  "url": "https://huggingface.co/natalialysenko/perceiver-contrastive",
+  "created_at": "2026-09-05T23:37:02.000Z",
+  "updated_at": "2026-09-05T23:37:08.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر ...",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "على جهاز الكمبيوتر، انتقِل إلى Gmail. أدخِل عنوان البريد الإلكتروني لحسابك على Google أو رقم الهاتف وكلمة المرور. إذا سبق أن عبأت المعلومات وقرّرت تسجيل الدخول إلى حساب مختلف، انقر على …"
+    },
+    {
+      "title": "natalialysenko (Natalia Lysenko) - Hugging Face",
+      "url": "https://huggingface.co/natalialysenko/models",
+      "snippet": "natalialysenko's models1 Sort: Recently updated natalialysenko/model_197566371_clip_small Updated about 7 hours ago"
+    },
+    {
+      "title": "Fazer login no Gmail - Computador - Ajuda do Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer login no Gmail Dica:se você fizer login em um computador público, não se esqueça de sair do Gmail antes de sair do …"
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning Thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM). F. Sammani, B. Joukovsky and N. Deligiannis are with the Department of Electronics and Informatics, Vrije Universiteit Brussel, Pleinlaan 2, B-1050 Brussels, Belgium and also with ..."
+    },
+    {
+      "title": "Login ke Gmail - Komputer - Bantuan Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Login ke Gmail Tips:Jika Anda login menggunakan komputer publik, pastikan Anda logout sebelum meninggalkan komputer. Pelajari …"
+    }
+  ]
+}

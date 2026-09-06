@@ -32,8 +32,8 @@
   "trending_score": 13,
   "parameters": 16322752256,
   "parameters_human": "16.32B",
-  "storage_bytes": 29022861796,
-  "storage_human": "29.0 GB",
+  "storage_bytes": 32371083268,
+  "storage_human": "32.4 GB",
   "base_model": "inclusionAI/LLaDA-Image-Turbo",
   "formats": [
     "diffusers",

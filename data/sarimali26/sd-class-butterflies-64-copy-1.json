@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SarimAli26/sd-class-butterflies-64-copy-1",
+  "slug": "sarimali26-sd-class-butterflies-64-copy-1",
+  "author": "SarimAli26",
+  "url": "https://huggingface.co/SarimAli26/sd-class-butterflies-64-copy-1",
+  "created_at": "2026-09-05T20:02:35.000Z",
+  "updated_at": "2026-09-05T20:02:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2ed38573027b6adf00ee92b8035e6bec",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "bartashevich/sd-class-butterflies-64 · Hugging Face",
+      "url": "https://huggingface.co/bartashevich/sd-class-butterflies-64",
+      "snippet": "bartashevich / sd-class-butterflies-64 like 0 Unconditional Image Generation Diffusers Safetensors PyTorch DDPMPipeline diffusion-models-class License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "sd-class-butterflies-64 Open-Source Image Generation Model - Freely ...",
+      "url": "https://model.aibase.com/models/details/1915694563433537538",
+      "snippet": "This is an unconditional image generation model based on diffusion models, specifically designed to generate adorable butterfly images."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

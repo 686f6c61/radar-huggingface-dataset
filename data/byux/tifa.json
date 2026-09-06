@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "byux/Tifa",
+  "slug": "byux-tifa",
+  "author": "byux",
+  "url": "https://huggingface.co/byux/Tifa",
+  "created_at": "2026-09-05T19:23:36.000Z",
+  "updated_at": "2026-09-05T19:27:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19259752,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram Messenger",
+      "url": "https://telegram.org/",
+      "snippet": "Smartwatch Apps, Rich Text for Bots, AI Guardians for Groups, and Much More"
+    },
+    {
+      "title": "tifa_model - a seeT Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/seeT/tifa-model",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from seeT"
+    },
+    {
+      "title": "Telegram Web",
+      "url": "https://web.telegram.org/k/pageSignIn-c5a80999.js.map",
+      "snippet": "{\"version\":3,\"mappings\":\"siBAgCA,IAAIA,EAA6B,KAAMC,EAEvC,MAAMC,EAAe,IAAM,CAoBnB,QAAe,SAAS,cAAc,KAAK,EACpCC,YAAU,IAAI,eAAe,EAE1C,IAAIC,EAAkCC,EAChC,QAAoB,IAAIC,EAAkB …"
+    },
+    {
+      "title": "Tifa Lockhart – Mustard",
+      "url": "https://mustard3d.eu/tifa-lockhart/",
+      "snippet": "The model should be much more stable now. The feature reverted is the automatic hide/show of armature layers when changing outfits, as a workaround some Armature layers has been added to hide/whow some outfits layers."
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/",
+      "snippet": "Experience Telegram on your computer in a swift and seamless way."
+    }
+  ]
+}

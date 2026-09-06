@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gummyseele/qin",
+  "slug": "gummyseele-qin",
+  "author": "gummyseele",
+  "url": "https://huggingface.co/gummyseele/qin",
+  "created_at": "2026-09-06T01:01:35.000Z",
+  "updated_at": "2026-09-06T01:01:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-06T03:23:23.172Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 Game Publisher Rankings - Metacritic",
+      "url": "https://www.metacritic.com/pictures/2026-game-publisher-rankings/",
+      "snippet": "Mar 25, 2026 · We reveal the past year's best and worst video game publishers (based on their 2025 releases) in the 16th edition of …"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
+    },
+    {
+      "title": "Top Game Publishers [2026 Rankings] - blog.udonis.co",
+      "url": "https://www.blog.udonis.co/mobile-marketing/mobile-games/game-publishers",
+      "snippet": "Jan 12, 2026 · Discover the top 30 game publishers shaping the gaming industry in 2026, from global giants like Nintendo and Sony …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Metacritic's 2026 Game Publisher Rankings - N4G",
+      "url": "https://n4g.com/news/2686875/metacritics-2026-game-publisher-rankings",
+      "snippet": "Jason Dietz: \"We reveal the past year's best and worst video game publishers (based on their 2025 releases) in the 16th edition of …"
+    }
+  ]
+}

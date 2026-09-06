@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "DollarCoderX/air-nano-v0.1",
+  "slug": "dollarcoderx-air-nano-v0-1",
+  "author": "DollarCoderX",
+  "url": "https://huggingface.co/DollarCoderX/air-nano-v0.1",
+  "created_at": "2026-09-05T23:36:40.000Z",
+  "updated_at": "2026-09-05T23:50:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186356454,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Christina Keiler: Einblick in das Leben der ersten Frau von Roland ...",
+      "url": "https://investorbit.de/menschen/christina-keiler/",
+      "snippet": "Sep 6, 2024 · Christina Keiler und Roland Kaiser heirateten 1980, zu einer Zeit, als Kaiser bereits ein etablierter Name in der …"
+    },
+    {
+      "title": "DollarCoderX/air-nano-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/DollarCoderX/air-nano-v0.1",
+      "snippet": "Instructions to use DollarCoderX/air-nano-v0.1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Seine große Liebe: Silvia begleitet Roland Kaiser seit fast 30 Jahren",
+      "url": "https://www.focus.de/kultur/stars/seine-grosse-liebe-silvia-begleitet-roland-kaiser-seit-fast-30-jahren_76dc55b3-d8fc-42d2-9280-3899fb703874.html",
+      "snippet": "Nov 16, 2025 · Roland Kaiser wird mit dem BAMBI für sein Lebenswerk geehrt. Ein Blick zurück auf seine Beziehung zu Silvia, mit …"
+    },
+    {
+      "title": "DollarCoderX (PraiseIfeanyiX) - Hugging Face",
+      "url": "https://huggingface.co/DollarCoderX",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 24 days ago ... published a model 24 days ago"
+    },
+    {
+      "title": "Das ist Roland Kaisers große Liebe Silvia - BUNTE",
+      "url": "https://www.bunte.de/stars/schlager/das-ist-roland-kaisers-grosse-liebe-silvia_57398f4d-a286-46d7-910e-ac1edf5b66a8.html",
+      "snippet": "Nov 18, 2025 · Roland Kaiser wird mit einem BAMBI für sein Lebenswerk geehrt. BUNTE.de stellt euch seine Ehefrau Silvia vor, die …"
+    }
+  ]
+}

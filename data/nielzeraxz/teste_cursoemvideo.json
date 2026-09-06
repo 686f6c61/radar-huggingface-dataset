@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NielzeraXZ/TESTE_CURSOEMVIDEO",
+  "slug": "nielzeraxz-teste_cursoemvideo",
+  "author": "NielzeraXZ",
+  "url": "https://huggingface.co/NielzeraXZ/TESTE_CURSOEMVIDEO",
+  "created_at": "2026-09-06T01:19:22.000Z",
+  "updated_at": "2026-09-06T01:19:22.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Technische Daten, Maße, Innenraum des Volkswagen Touran",
+      "url": "https://www.carwow.de/volkswagen/touran/technische-daten",
+      "snippet": "Die wahre Größe des VW Touran zeigt sich aber erst im Innenraum. Hier bietet er allen Reisenden ausreichend Platz, in der zweiten …"
+    },
+    {
+      "title": "Detect AI-Generated And Deepfake Content | Hive Detect",
+      "url": "https://hivedetect.ai/NizPLr",
+      "snippet": "Detect AI-generated and deepfake images, video and audio with Hive Detect — a web tool utilizing Hive's best-in-class AI-content detection models to analyze the authenticity of media."
+    },
+    {
+      "title": "VW Touran (2026): Technische Daten, Maße, Garantien und Farben ...",
+      "url": "https://www.meinauto.de/volkswagen/neuwagen/8-touran/angebote/touran/technische-daten",
+      "snippet": "Technische Daten sind der Schlüssel, um den Touran von VW umfassend zu verstehen. Sie bieten Dir detaillierte Einblicke in …"
+    },
+    {
+      "title": "ModelsLab Playground – Explore & Test AI Models",
+      "url": "https://modelslab.com/playground",
+      "snippet": "Experiment with AI models in the ModelsLab Playground. Generate images, text, audio, and more in an interactive developer environment."
+    },
+    {
+      "title": "Maße VW Touran: Breite, Länge & Höhe | mit Spiegel - CarWiki",
+      "url": "https://carwiki.de/vw-touran-abmessungen",
+      "snippet": "5 days ago · Hierzu können Sie per Filter Ihren VW Touran nach Kriterien wie Modell & Baujahr heraussuchen und anschließend die …"
+    }
+  ]
+}

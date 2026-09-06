@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "g-assismoraes/DeltaP2S-Qwen2.5-3B-SameFormula-Code-S13",
+  "slug": "g-assismoraes-deltap2s-qwen2-5-3b-sameformula-code-s13",
+  "author": "g-assismoraes",
+  "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-3B-SameFormula-Code-S13",
+  "created_at": "2026-09-05T22:34:02.000Z",
+  "updated_at": "2026-09-05T22:36:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "delta-p2s",
+    "pen2sword",
+    "qwen2.5",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 6805678952,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "g-assismoraes/DeltaP2S-Qwen2.5-14B-P2S-Code-S13 · Hugging Face",
+      "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-14B-P2S-Code-S13",
+      "snippet": "Instructions to use g-assismoraes/DeltaP2S-Qwen2.5-14B-P2S-Code-S13 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Deltap2s Qwen2.5 14b P2s Code S13 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/g-assismoraes/deltap2s-qwen2.5-14b-p2s-code-s13",
+      "snippet": "Registry entry for model Deltap2s Qwen2.5 14b P2s Code S13; source metadata pending."
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English PublicitéÀ propos de GoogleGoogle.com"
+    }
+  ]
+}

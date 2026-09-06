@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "justinles/embodied-ai-survey",
+  "slug": "justinles-embodied-ai-survey",
+  "author": "justinles",
+  "url": "https://huggingface.co/justinles/embodied-ai-survey",
+  "created_at": "2026-09-05T20:40:28.000Z",
+  "updated_at": "2026-09-05T20:40:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest por Ookla - La prueba de velocidad de banda ancha global",
+      "url": "https://www.speedtest.net/es",
+      "snippet": "Mide la velocidad de tu conexión a Internet con Speedtest, disponible para dispositivos móviles y de escritorio."
+    },
+    {
+      "title": "A Comprehensive Survey on World Models for Embodied AI",
+      "url": "https://arxiv.org/pdf/2510.16732",
+      "snippet": "Abstract—Embodied AI requires agents that perceive, act, and anticipate how actions reshape future world states. World models serve as internal simulators that capture environment dynamics, enabling forward and counterfactual rollouts to support perception, prediction, and decision making. This survey presents a unified framework for world models in embodied AI. Specifically, we formalize ..."
+    },
+    {
+      "title": "Speedtest by Ookla - Teste de Velocidade de Conexão da Internet",
+      "url": "https://www.speedtest.net/pt",
+      "snippet": "Teste sua velocidade de conexão com o Speedtest, uma ferramenta confiável e fácil de usar para medir a performance da sua internet."
+    },
+    {
+      "title": "A Comprehensive Survey on World Models for Embodied AI",
+      "url": "https://arxiv.org/html/2510.16732v1",
+      "snippet": "Abstract Embodied AI requires agents that perceive, act, and anticipate how actions reshape future world states. World models serve as internal simulators that capture environment dynamics, enabling forward and counterfactual rollouts to support perception, prediction, and decision making. This survey presents a unified framework for world models in embodied AI. Specifically, we formalize the ..."
+    },
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    }
+  ]
+}

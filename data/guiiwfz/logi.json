@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "guiiwfz/logi",
+  "slug": "guiiwfz-logi",
+  "author": "guiiwfz",
+  "url": "https://huggingface.co/guiiwfz/logi",
+  "created_at": "2026-09-06T00:08:10.000Z",
+  "updated_at": "2026-09-06T00:08:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Univers cinématographique Marvel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Univers_cin%C3%A9matographique_Marvel",
+      "snippet": "Afficher / masquer la sous-section Liste des œuvres faisant partie de cet univers. 2.1Longs-métrages. 2.1.1La Saga de l'Infini. 2.1.2La …"
+    },
+    {
+      "title": "Logi6023/Logi_AI at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/Logi6023/Logi_AI/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Marvel Cinematic Universe - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe",
+      "snippet": "The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films …"
+    },
+    {
+      "title": "LogiModel",
+      "url": "https://app.logimodel.com/login",
+      "snippet": "Authentication LogiModel AI Sign in to continue. Username"
+    },
+    {
+      "title": "Marvel Movies | Marvel Cinematic Universe (MCU) | Marvel Studios …",
+      "url": "https://www.marvel.com/movies",
+      "snippet": "Explore Marvel movies & the Marvel Cinematic Universe (MCU) on the official site of Marvel Entertainment!"
+    }
+  ]
+}

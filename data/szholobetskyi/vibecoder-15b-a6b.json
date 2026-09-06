@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "szholobetskyi/vibecoder-15b-a6b",
+  "slug": "szholobetskyi-vibecoder-15b-a6b",
+  "author": "szholobetskyi",
+  "url": "https://huggingface.co/szholobetskyi/vibecoder-15b-a6b",
+  "created_at": "2026-09-03T11:44:47.000Z",
+  "updated_at": "2026-09-05T22:41:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 15571513344,
+  "parameters_human": "15.57B",
+  "storage_bytes": 180747891840,
+  "storage_human": "180.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nyheter från Sveriges Radio",
+      "url": "https://sverigesradio.se/",
+      "snippet": "Senaste nyheterna från Sverige och världen. Uppdateras dygnet runt med analyser, lokala nyheter, sport, kultur och vetenskap."
+    },
+    {
+      "title": "VibeCoder — Local AI. Terminal Native.",
+      "url": "https://www.vibecoder.gg/",
+      "snippet": "A private, open-source AI coding assistant that plans, edits, and verifies code from your terminal with local Ollama models."
+    },
+    {
+      "title": "Kanaler från Sveriges Radio",
+      "url": "https://sverigesradio.se/kanaler",
+      "snippet": "Lyssna direkt på Sveriges Radios kanaler P1, P2, P3, lokala P4 och många fler. Radio som uppdaterar, fördjupar och underhåller."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Sveriges Radios API - Forum för teknisk support - Sveriges Radio",
+      "url": "https://teknisk-support.sverigesradio.se/org/teknisk-support/d/sveriges-radios-apier/",
+      "snippet": "Nov 4, 2025 · Sveriges Radios API Hej! Sveriges Radio har idag sitt öppna API (https://api.sr.se/) som inte underhålls sedan många …"
+    }
+  ]
+}

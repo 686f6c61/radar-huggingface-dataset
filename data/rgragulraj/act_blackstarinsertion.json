@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rgragulraj/act_blackstarinsertion",
+  "slug": "rgragulraj-act_blackstarinsertion",
+  "author": "rgragulraj",
+  "url": "https://huggingface.co/rgragulraj/act_blackstarinsertion",
+  "created_at": "2026-09-06T00:31:47.000Z",
+  "updated_at": "2026-09-06T00:31:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:rgragulraj/blackstarinsertion",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714944,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThinkPHP 日志信息泄露——漏洞复现_thinkphp debug 模式 ...",
+      "url": "https://blog.csdn.net/weixin_40412037/article/details/113885372",
+      "snippet": "Jul 2, 2026 · 本文揭示ThinkPHP中日志管理漏洞，涉及日志详细信息泄露，演示了利用脚本批量测试的方法，提供环境搭建步骤和修 …"
+    },
+    {
+      "title": "rgragulraj/act_blackstarinsertion · Hugging Face",
+      "url": "https://huggingface.co/rgragulraj/act_blackstarinsertion",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use rgragulraj/act_blackstarinsertion with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use rgragulraj/act_blackstarinsertion with LeRobot:"
+    },
+    {
+      "title": "Thinkphp漏洞复现 (全漏洞版本) - Arrest - 博客园",
+      "url": "https://www.cnblogs.com/arrest/articles/17515491.html",
+      "snippet": "Jun 29, 2023 · Thinkphp漏洞复现 (全漏洞版本) 0x01:ThinkPHP 2.x 任意代码执行漏洞 1.环境描述&环境搭建 ThinkPHP 2.x版本中，使 …"
+    },
+    {
+      "title": "rgragulraj (Ragul Raj RG) - Hugging Face",
+      "url": "https://huggingface.co/rgragulraj",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "ThinkPHP 信息泄露 (CVE-2022-25481)-CSDN博客",
+      "url": "https://blog.csdn.net/voctor2436/article/details/130616475",
+      "snippet": "May 11, 2023 · 此漏洞可通过升级至v5.0.25或更高版本来修复。 VulnDiscover项目提供了相关检测工具。"
+    }
+  ]
+}

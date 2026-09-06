@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chibifire/MotionBricks-G1-GGML",
+  "slug": "chibifire-motionbricks-g1-ggml",
+  "author": "chibifire",
+  "url": "https://huggingface.co/chibifire/MotionBricks-G1-GGML",
+  "created_at": "2026-09-06T01:26:44.000Z",
+  "updated_at": "2026-09-06T01:26:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ggml",
+  "languages": [],
+  "tags": [
+    "ggml",
+    "gguf",
+    "motion-generation",
+    "unitree-g1",
+    "motionbricks",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136588272,
+  "parameters_human": "136.6M",
+  "storage_bytes": 733052832,
+  "storage_human": "733 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "МойСклад JSON API",
+      "url": "https://dev.moysklad.ru/doc/api/remap/1.2/",
+      "snippet": "Для того чтобы успешно взаимодействовать с JSON API онлайн-сервиса МойСклад, необходимо аутентифицироваться в …"
+    },
+    {
+      "title": "GitHub - localai-org/motion-bricks.cpp: NVIDIA MotionBricks ported to ...",
+      "url": "https://github.com/localai-org/motion-bricks.cpp",
+      "snippet": "Ready-to-run native weights and all 15 upstream style primitives are published as MotionBricks-G1-GGML under the Hugging Face LocalAI-io organisation. NVIDIA currently distributes MotionBricks checkpoints through Git LFS in NVlabs/GR00T-WholeBodyControl, not a separate Hugging Face model repository, so the model card links to that pinned ..."
+    },
+    {
+      "title": "GitHub - wmakeev/moysklad: Библиотека для работы с API сервиса МойСклад",
+      "url": "https://github.com/wmakeev/moysklad",
+      "snippet": "Библиотека представляет максимально простой и прозрачный интерфейс к существующим методам API МойСклад, не …"
+    },
+    {
+      "title": "LocalAI-io/MotionBricks-G1-GGML · Hugging Face",
+      "url": "https://huggingface.co/LocalAI-io/MotionBricks-G1-GGML",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "МойСклад для разработчиков: описание API и SDK",
+      "url": "https://dev.moysklad.ru/",
+      "snippet": "Нужна интеграция с МоимСкладом? На этой странице вы найдете детальное описание API и SDK МоегоСклада, а также …"
+    }
+  ]
+}

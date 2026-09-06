@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "codemichaeld/hunyuan3D_2.1_fixed",
+  "slug": "codemichaeld-hunyuan3d_2-1_fixed",
+  "author": "codemichaeld",
+  "url": "https://huggingface.co/codemichaeld/hunyuan3D_2.1_fixed",
+  "created_at": "2026-09-05T23:45:07.000Z",
+  "updated_at": "2026-09-05T23:45:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "fp8",
+    "safetensors",
+    "converted-by-gradio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3683075921,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3bab9716fbbd6dd00b6e80dafad66c1d",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hunyuan3D-2.1: From Images to High-Fidelity 3D ...",
+      "url": "https://github.com/tencent-hunyuan/hunyuan3d-2.1",
+      "snippet": "Tencent Hunyuan3D-2.1 is a scalable 3D asset creation system that advances state-of-the-art 3D generation through two pivotal innovations: Fully Open-Source Framework and Physically-Based Rendering (PBR) Texture Synthesis. For the first time, the system releases full model weights and training code, enabling community developers to directly fine-tune and extend the model for diverse downstream ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "GitHub - hunyuan3d/hunyuan3d · GitHub",
+      "url": "https://github.com/hunyuan3d/hunyuan3d",
+      "snippet": "The model's impact extends beyond technical achievement, fundamentally transforming how creators, businesses, and developers approach 3D content creation. By democratizing access to professional-grade 3D modeling capabilities, Hunyuan3D is catalyzing innovation across industries while maintaining the highest standards of quality and performance."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

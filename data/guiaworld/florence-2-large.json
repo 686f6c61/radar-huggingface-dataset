@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GuiAworld/Florence-2-large",
+  "slug": "guiaworld-florence-2-large",
+  "author": "GuiAworld",
+  "url": "https://huggingface.co/GuiAworld/Florence-2-large",
+  "created_at": "2026-09-05T21:54:36.000Z",
+  "updated_at": "2026-09-05T21:54:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "florence2",
+    "vision",
+    "image-text-to-text",
+    "custom_code",
+    "arxiv:2311.06242",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 776721497,
+  "parameters_human": "776.7M",
+  "storage_bytes": 3109253250,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Metal Parts for Aeronautics & Automotive Industries by Attax",
+      "url": "https://www.attax.com/",
+      "snippet": "Metal Parts designed and manufactured by Milling – Lathing – Tube Bending – Laser cutting – Stamping – Punching – Folding – …"
+    },
+    {
+      "title": "microsoft/Florence-2-large · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Florence-2-large",
+      "snippet": "Instructions to use microsoft/Florence-2-large with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "All range of products by Attax",
+      "url": "https://www.attax.com/products/",
+      "snippet": "Attax is able to adapt specific products. The new specifications will be introduced and a new testing program wil be worked out."
+    },
+    {
+      "title": "florence-community/Florence-2-large · Hugging Face",
+      "url": "https://huggingface.co/florence-community/Florence-2-large",
+      "snippet": "Florence-2 finetuned performance We finetune Florence-2 models with a collection of downstream tasks, resulting two generalist models Florence-2-base-ft and Florence-2-large-ft that can conduct a wide range of downstream tasks. The table below compares the performance of specialist and generalist models on various captioning and Visual Question Answering (VQA) tasks. Specialist models are fine ..."
+    },
+    {
+      "title": "505195909 - Attax",
+      "url": "https://www.attax.com/505195909/",
+      "snippet": "505 195 909 PDF Front double stud fitting 151 grs Features Characteristics Fitting class TorquedNumber of studs 2Shear Plunger …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "abdukuzi45/kuzi-amharic-4b-thinking-verified",
+  "slug": "abdukuzi45-kuzi-amharic-4b-thinking-verified",
+  "author": "abdukuzi45",
+  "url": "https://huggingface.co/abdukuzi45/kuzi-amharic-4b-thinking-verified",
+  "created_at": "2026-09-05T19:38:23.000Z",
+  "updated_at": "2026-09-05T19:39:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "multimodal",
+    "text-generation",
+    "conversational",
+    "multilingual",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098614231,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-06T03:25:10.328Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Warren Buffett - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Warren_Buffett",
+      "snippet": "Warren Edward Buffett (/ ˈbʌfɪt / BUFF-it; born August 30, 1930) [2] is an American investor and philanthropist who is the chairman …"
+    },
+    {
+      "title": "abdukuzi/Amharic-kuzi-reasoning-model-v4 · Hugging Face",
+      "url": "https://huggingface.co/abdukuzi/Amharic-kuzi-reasoning-model-v4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Warren Buffett - Forbes",
+      "url": "https://www.forbes.com/profile/warren-buffett/",
+      "snippet": "1 day ago · Buffett chairs Berkshire Hathaway, which owns dozens of companies, including insurer Geico, battery maker Duracell and …"
+    },
+    {
+      "title": "abdukuzi45/qwen3.5-4b-amharic-sft · Hugging Face",
+      "url": "https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-sft",
+      "snippet": "Instructions to use abdukuzi45/qwen3.5-4b-amharic-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use abdukuzi45/qwen3.5-4b-amharic-sft with PEFT:"
+    },
+    {
+      "title": "Who Is Warren Buffett? How Did He Make His Fortune? - Investopedia",
+      "url": "https://www.investopedia.com/articles/financial-theory/08/buffetts-road-to-riches.asp",
+      "snippet": "Jan 29, 2026 · Warren Edward Buffett, the legendary value investor, turned an ailing textile mill into a financial engine that powered …"
+    }
+  ]
+}

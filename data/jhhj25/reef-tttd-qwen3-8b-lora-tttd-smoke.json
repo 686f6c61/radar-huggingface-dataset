@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jhhj25/reef-tttd-qwen3-8b-lora-tttd-smoke",
+  "slug": "jhhj25-reef-tttd-qwen3-8b-lora-tttd-smoke",
+  "author": "jhhj25",
+  "url": "https://huggingface.co/jhhj25/reef-tttd-qwen3-8b-lora-tttd-smoke",
+  "created_at": "2026-09-05T22:10:00.000Z",
+  "updated_at": "2026-09-05T22:12:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "megatron",
+    "qwen3",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18610542838,
+  "storage_human": "18.6 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ес Дневник",
+      "url": "https://esdnevnik.rs/",
+      "snippet": "Портал за управљање школским дневницима и праћење образовних података."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "мој есДневник",
+      "url": "https://moj.esdnevnik.rs/",
+      "snippet": "Извештавање о напретку ученика у реалном времену."
+    },
+    {
+      "title": "jhhj25/qwen3-moe-expert_drop-layerwise_pruning-r64-s1k-128samples-sft ...",
+      "url": "https://huggingface.co/jhhj25/qwen3-moe-expert_drop-layerwise_pruning-r64-s1k-128samples-sft",
+      "snippet": "Instructions to use jhhj25/qwen3-moe-expert_drop-layerwise_pruning-r64-s1k-128samples-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "есДневник",
+      "url": "https://www.srbija.gov.rs/tekst/364772/esdnevnik.php",
+      "snippet": "У служби грађана - Званична презентација Владе Републике Србије"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "dharun2049/Brahmaputra-1",
+  "slug": "dharun2049-brahmaputra-1",
+  "author": "dharun2049",
+  "url": "https://huggingface.co/dharun2049/Brahmaputra-1",
+  "created_at": "2026-09-05T17:30:30.000Z",
+  "updated_at": "2026-09-05T17:30:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "kaveri",
+    "knowledge-distillation",
+    "contrastive-learning",
+    "multiple-choice",
+    "peft",
+    "lora",
+    "conversational",
+    "base_model:dharun2049/kaveri-stgrpo-0.5b",
+    "base_model:adapter:dharun2049/kaveri-stgrpo-0.5b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1034753190,
+  "storage_human": "1.0 GB",
+  "base_model": "dharun2049/kaveri-stgrpo-0.5b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "APPAREL GROUP: Exceed Expectations Everyday",
+      "url": "https://www.apparelgroup.com/en/",
+      "snippet": "Apparel Group is a multibillion-dollar retail conglomerate based in Dubai, UAE with 2,600+ stores and 85+ international brands across …"
+    },
+    {
+      "title": "dharun2049/Brahmaputra-1 · Hugging Face",
+      "url": "https://huggingface.co/dharun2049/Brahmaputra-1",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use dharun2049/Brahmaputra-1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use dharun2049/Brahmaputra-1 with Transformers:"
+    },
+    {
+      "title": "Top Retail Group in Dubai, UAE & the GCC | APPAREL GROUP",
+      "url": "https://www.apparelgroup.com/en/about-us/",
+      "snippet": "Apparel Group is one of the largest retail companies in Dubai. The award-winning retailer has 85+ brands and 2,200+ stores across …"
+    },
+    {
+      "title": "dharun2049 (Dharun Narayan) - Hugging Face",
+      "url": "https://huggingface.co/dharun2049",
+      "snippet": "Sequence transduction Image Classification • Updated Sep 21 datasets 8"
+    },
+    {
+      "title": "Apparel Group - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Apparel_Group",
+      "snippet": "Toggle the table of contents. Apparel Group. Add languages. Add links. Article. Talk. English."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "TheAiCollectiveART/CONSIDER-1",
+  "slug": "theaicollectiveart-consider-1",
+  "author": "TheAiCollectiveART",
+  "url": "https://huggingface.co/TheAiCollectiveART/CONSIDER-1",
+  "created_at": "2026-09-05T05:17:32.000Z",
+  "updated_at": "2026-09-05T23:19:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "zymatica",
+    "consider-1",
+    "consider-v1",
+    "qwen3.5",
+    "rak-miner",
+    "lorawan",
+    "cuneiform-u",
+    "bn254",
+    "groth16",
+    "solana",
+    "edge-intelligence",
+    "200-amsterdam",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 6040438188,
+  "storage_human": "6.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cómo saber la memoria máxima que admite mi móvil (tarjetas microSD)",
+      "url": "https://www.movilzona.es/2021/03/03/saber-capacidad-maxima-micro-sd-admite-movil/",
+      "snippet": "Mar 3, 2021 · Podemos enfrentarnos a varios escenarios en el caso de que compremos una microSD que supere la capacidad …"
+    },
+    {
+      "title": "TheAiCollectiveART/CONSIDER-1 · Hugging Face",
+      "url": "https://huggingface.co/TheAiCollectiveART/CONSIDER-1",
+      "snippet": "Instructions to use TheAiCollectiveART/CONSIDER-1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Formatos de tarjetas SD compatibles con Android: Guía completa",
+      "url": "https://www.todoandroid.es/formatos-de-tarjetas-sd-compatibles-con-android-guia-completa/",
+      "snippet": "Si te estás preguntando qué formato necesita tu tarjeta microSD para funcionar bien en Android, no eres el único. Entre FAT32, …"
+    },
+    {
+      "title": "TheAiCollectiveART/CONSIDER-1 at main - Hugging Face",
+      "url": "https://huggingface.co/TheAiCollectiveART/CONSIDER-1/tree/main",
+      "snippet": "Instructions to use TheAiCollectiveART/CONSIDER-1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Cómo saber qué micro SD soporta mi celular? - Android Jefe",
+      "url": "https://www.androidjefe.com/tarjeta-memoria-mayor-capacidad-soportada/",
+      "snippet": "Jul 27, 2019 · Generalmente verás algo como «hasta 512 GB» o algo similar. En teoría eso significa que solo podrás ponerle una …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "EnclaveHost/qwen3.8-27b-mtp-q8-vl-gguf",
+  "slug": "enclavehost-qwen3-8-27b-mtp-q8-vl-gguf",
+  "author": "EnclaveHost",
+  "url": "https://huggingface.co/EnclaveHost/qwen3.8-27b-mtp-q8-vl-gguf",
+  "created_at": "2026-09-05T23:48:14.000Z",
+  "updated_at": "2026-09-05T23:49:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "mtp",
+    "vision",
+    "enclave",
+    "shielded-inference",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 29987502856,
+  "storage_human": "30.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hedgerow jelly recipe - BBC Food",
+      "url": "https://www.bbc.co.uk/food/recipes/hedgerow_jelly_85867",
+      "snippet": "This is a great recipe for using up free foraged goods from hedgerows in the late summer or early autumn."
+    },
+    {
+      "title": "README.md · EnclaveHost/qwen3.8-27b-mtp-gguf at main",
+      "url": "https://huggingface.co/EnclaveHost/qwen3.8-27b-mtp-gguf/blob/main/README.md",
+      "snippet": "To make a Qwen3.8 volume that reads images, add mmproj-F16.gguf (~0.93 GB) to the volume, name the weights in the MODEL_VOLUMES third field (a two-gguf volume needs it, as qwen3-vl-8b-gguf does), set \"vision\": true on the catalog entry, and price the projector into the share - it loads lazily on the first image, so a deployment that fits only ..."
+    },
+    {
+      "title": "Country Hedgerow Jam - EATWEEDS",
+      "url": "https://www.eatweeds.co.uk/country-hedgerow-jam",
+      "snippet": "This Hedgerow Jam Recipe is made from seasonal wild fruits foraged from the countryside. A wonderful combination that gives a …"
+    },
+    {
+      "title": "EnclaveHost/qwen3.8-27b-mtp-gguf at main - Hugging Face",
+      "url": "https://huggingface.co/EnclaveHost/qwen3.8-27b-mtp-gguf/tree/main",
+      "snippet": "EnclaveHost / qwen3.8-27b-mtp-gguf like 0 GGUF qwen3.8 mtp enclave imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Hedgerow Jelly: The Forager’s Jewel in the Crown - Tin and Thyme",
+      "url": "https://tinandthyme.uk/2020/08/hedgerow-jelly/",
+      "snippet": "Aug 25, 2020 · Recipe for hedgerow jelly. A glorious ensemble of foraged edible fruits and a relatively fuss free method of preserving …"
+    }
+  ]
+}

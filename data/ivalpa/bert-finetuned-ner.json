@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ivalpa/bert-finetuned-ner",
+  "slug": "ivalpa-bert-finetuned-ner",
+  "author": "ivalpa",
+  "url": "https://huggingface.co/ivalpa/bert-finetuned-ner",
+  "created_at": "2026-09-06T01:01:23.000Z",
+  "updated_at": "2026-09-06T01:25:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 930204325,
+  "storage_human": "930 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=173bbdf0af4e69651caaaa3caeca68aa",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "gorebradleyi/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/gorebradleyi/bert-finetuned-ner",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "ner_fine_tune_bert_beginners.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/argilla-io/argilla/blob/v2.3.0/docs/_source/tutorials/notebooks/ner_fine_tune_bert_beginners.ipynb",
+      "snippet": "🤔 Fine-tunning a NER model with BERT for Beginners Are you a beginner? Do you want to learn, but don't know where to start? In this tutorial, you will learn to fine-tune a pre-trained BERT model for Named Entity Recognition. It will walk you through the following steps: 🚀 Load your training dataset into Argilla and explore it using its tools."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

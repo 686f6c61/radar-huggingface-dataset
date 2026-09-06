@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GuiAworld/Florence-2-base",
+  "slug": "guiaworld-florence-2-base",
+  "author": "GuiAworld",
+  "url": "https://huggingface.co/GuiAworld/Florence-2-base",
+  "created_at": "2026-09-05T19:52:41.000Z",
+  "updated_at": "2026-09-05T21:26:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "florence2",
+    "vision",
+    "image-text-to-text",
+    "custom_code",
+    "arxiv:2311.06242",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 231567705,
+  "parameters_human": "231.6M",
+  "storage_bytes": 927643093,
+  "storage_human": "928 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gizli modda tarama yapma - Bilgisayar - Google Chrome Yardım",
+      "url": "https://support.google.com/chrome/answer/95464?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome, Gizli mod'da göz atarken cihazınıza kaydedilen bilgileri sınırlar. Örneğin, paylaşılan bir bilgisayar kullanırken veya hediye …"
+    },
+    {
+      "title": "microsoft/Florence-2-base-ft · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Florence-2-base-ft",
+      "snippet": "Florence-2 finetuned performance We finetune Florence-2 models with a collection of downstream tasks, resulting two generalist models Florence-2-base-ft and Florence-2-large-ft that can conduct a wide range of downstream tasks. The table below compares the performance of specialist and generalist models on various captioning and Visual Question Answering (VQA) tasks. Specialist models are fine ..."
+    },
+    {
+      "title": "Gizli modda tarama yapma - Android - Google Chrome Yardım",
+      "url": "https://support.google.com/chrome/answer/95464?hl=tr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Chrome, Gizli mod'da göz atarken cihazınıza kaydedilen bilgileri sınırlar. Örneğin, paylaşılan bir bilgisayar kullanırken veya hediye …"
+    },
+    {
+      "title": "Florence-2-base: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/florence-2-base-microsoft",
+      "snippet": "Overview Florence-2-base is a 0.23B parameter vision foundation model from microsoft that performs a wide range of vision and vision-language tasks through a sequence-to-sequence architecture controlled by text prompts. The model uses a prompt-based approach to handle image captioning, object detection, region grounding, optical character recognition, and other vision tasks without task ..."
+    },
+    {
+      "title": "Gizli Mod Nasıl Açılır? Chrome, Firefox ve Edge için Rehber - Nasıl Yahu",
+      "url": "https://nasilyahu.com/gizli-mod-nasil-acilir/",
+      "snippet": "Apr 29, 2026 · Chrome, Firefox ve Edge’de gizli mod nasıl açılır? Adım adım rehberimizle gizli sekmeye geçişi kolayca öğrenin."
+    }
+  ]
+}

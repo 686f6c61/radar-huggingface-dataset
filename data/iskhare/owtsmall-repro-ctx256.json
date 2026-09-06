@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "iskhare/owtsmall-repro-ctx256",
+  "slug": "iskhare-owtsmall-repro-ctx256",
+  "author": "iskhare",
+  "url": "https://huggingface.co/iskhare/owtsmall-repro-ctx256",
+  "created_at": "2026-09-06T00:28:55.000Z",
+  "updated_at": "2026-09-06T00:29:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "next-concept-prediction",
+    "vqvae",
+    "openwebtext",
+    "multiscale-tokenization",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4813885880,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Technogenre | Wiki Neuro'Queer | Fandom",
+      "url": "https://neuroqueer.fandom.com/fr/wiki/Technogenre",
+      "snippet": "Technogenre est un xénogenre qui se ressent comme étant relié ou influencé par une forme de technologie. Cela peut inclure des …"
+    },
+    {
+      "title": "iskhare (Ishan Khare) - Hugging Face",
+      "url": "https://huggingface.co/iskhare",
+      "snippet": "deep learning, LLMs, NLP + CV Text-to-Image • Updated about 1 month ago"
+    },
+    {
+      "title": "Techno — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Techno",
+      "snippet": "La techno est un genre de musique électronique ayant émergé aux États-Unis au milieu des années 1980 2. Le plus souvent …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Revue Multilinguales Volume: 14 / N° : 01 (2026), pp. 253-282 LE ...",
+      "url": "https://asjp.cerist.dz/en/downArticle/13/14/1/298386",
+      "snippet": "Elle montre que le BookTube, à l’instar des autres technogenres numériques, « articule des caractéristiques numériques, …"
+    }
+  ]
+}

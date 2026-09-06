@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jere-mybao/cosmos3-nano-droid-forward-dynamics",
+  "slug": "jere-mybao-cosmos3-nano-droid-forward-dynamics",
+  "author": "jere-mybao",
+  "url": "https://huggingface.co/jere-mybao/cosmos3-nano-droid-forward-dynamics",
+  "created_at": "2026-09-05T19:27:18.000Z",
+  "updated_at": "2026-09-05T20:07:50.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "cosmos3_omni",
+    "robotics",
+    "world-model",
+    "forward-dynamics",
+    "action-conditioned",
+    "video-prediction",
+    "droid",
+    "custom_code",
+    "dataset:nvidia/Cosmos3-DROID",
+    "arxiv:2403.12945",
+    "base_model:nvidia/Cosmos3-Nano",
+    "base_model:finetune:nvidia/Cosmos3-Nano",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15173136576,
+  "parameters_human": "15.17B",
+  "storage_bytes": 30346389472,
+  "storage_human": "30.3 GB",
+  "base_model": "nvidia/Cosmos3-Nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Cosmos3-Nano · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Cosmos3-Nano",
+      "snippet": "NVIDIA Cosmos™is a world foundation model platform designed to accelerate the development of Physical AI by enabling machines to understand, simulate, and interact with the physical world across robotics, autonomous driving, and smart space environments, including industrial and factory-scale applications. Model Overview: Cosmos3-Nano Description"
+    },
+    {
+      "title": "nvidia/Cosmos3-Nano-Policy-DROID · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Cosmos3-Nano-Policy-DROID",
+      "snippet": "Cosmos3 is a collection of Omnimodal world models capable of generating dynamic, high-quality video, image, audio, and action commands from combinations of text, image, video, and action trajectory inputs."
+    },
+    {
+      "title": "Jere — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jere",
+      "snippet": "Jere Cette page d’homonymie répertorie les différents sujets et articles portant le même nom. Jere est un patronyme, prénom …"
+    },
+    {
+      "title": "Develop Physical AI Reasoning, World, and Action Models with NVIDIA Cosmos 3 | NVIDIA Technical Blog",
+      "url": "https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/",
+      "snippet": "docker run --gpus=all \\ -e NGC_API_KEY=$NGC_API_KEY \\ -e NIM_MODEL_SIZE=nano \\ -p 8000:8000 \\ nvcr.io/nim/nvidia/cosmos3-reasoner:latest"
+    },
+    {
+      "title": "NVIDIA Cosmos 3: Open Physical AI World Models | explainx.ai Blog | explainx.ai",
+      "url": "https://explainx.ai/blog/nvidia-cosmos-3-open-physical-ai-world-model-guide-2026",
+      "snippet": "Robot teams can use Cosmos 3 for visual reasoning, task planning, next-action prediction, action-conditioned rollouts, and policy-model development. The Cosmos3-Nano-Policy-DROID entry is a direct signal that NVIDIA is targeting manipulation and control, not only video demos..."
+    }
+  ]
+}

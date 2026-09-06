@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PTeterwak/action-reward-models",
+  "slug": "pteterwak-action-reward-models",
+  "author": "PTeterwak",
+  "url": "https://huggingface.co/PTeterwak/action-reward-models",
+  "created_at": "2026-09-05T21:12:02.000Z",
+  "updated_at": "2026-09-05T21:46:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amigos de Facebook con acceso restringido: qué es, ver lista",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/10174-como-crear-una-lista-de-personas-con-acceso-restringido-en-facebook/",
+      "snippet": "Dec 29, 2022 · Inicia sesión en Facebook y ve al perfil del amigo que quieres poner en la lista de personas con acceso restringido. …"
+    },
+    {
+      "title": "PTeterwak (Piotr Teterwak) - Hugging Face",
+      "url": "https://huggingface.co/PTeterwak",
+      "snippet": "datasets2 Sort: Recently updated PTeterwak/DomainBed_OOP Preview • Updated 24 days ago• 49"
+    },
+    {
+      "title": "Cómo 'hackear' una cuenta de Facebook: sin teléfono, correo - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2172-como-hackear-una-cuenta-de-facebook/",
+      "snippet": "Oct 25, 2023 · En Internet puedes encontrar sitios que ofrecen tutoriales de cómo hackear una cuenta de Facebook, ya sea …"
+    },
+    {
+      "title": "Perturb AI’s Network of Incentivized Hackers Launches to Attack AI ...",
+      "url": "https://hackernoon.com/perturb-ais-network-of-incentivized-hackers-launches-to-attack-ai-models-before-criminals-do",
+      "snippet": "A global subnet of incentivized miners continuously stress-tests AI models with black-box, white-box, and transfer attacks, returning three things to model owners: a robustness score, a vulnerability heatmap showing exactly where the model breaks, and hardening datasets ready to use for retraining."
+    },
+    {
+      "title": "Comment être invisible sur Facebook? [Résolu] - Forum Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-8756032-comment-etre-invisible-sur-facebook",
+      "snippet": "Meilleure réponse: bonsoir, si tu veux etre invisible dans la recherche de facebook sur un moteur de recherche : clique sur compte, …"
+    }
+  ]
+}

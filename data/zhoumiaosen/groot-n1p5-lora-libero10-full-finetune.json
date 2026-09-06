@@ -5,7 +5,7 @@
   "author": "zhoumiaosen",
   "url": "https://huggingface.co/zhoumiaosen/groot-n1p5-lora-libero10-full-finetune",
   "created_at": "2026-09-05T09:26:00.000Z",
-  "updated_at": "2026-09-05T09:30:11.000Z",
+  "updated_at": "2026-09-05T21:38:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 2413522880,
   "parameters_human": "2.41B",
-  "storage_bytes": 6964811600,
-  "storage_human": "7.0 GB",
+  "storage_bytes": 13929614552,
+  "storage_human": "13.9 GB",
   "base_model": "nvidia/GR00T-N1.5-3B",
   "formats": [
     "safetensors"

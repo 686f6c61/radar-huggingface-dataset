@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kiel2/KielGen-Pro",
+  "slug": "kiel2-kielgen-pro",
+  "author": "kiel2",
+  "url": "https://huggingface.co/kiel2/KielGen-Pro",
+  "created_at": "2026-08-31T13:22:29.000Z",
+  "updated_at": "2026-09-06T01:55:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "multi_modality",
+    "base_model:adapter:deepseek-ai/Janus-Pro-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/Janus-Pro-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7420434059,
+  "parameters_human": "7.42B",
+  "storage_bytes": 14872480270,
+  "storage_human": "14.9 GB",
+  "base_model": "deepseek-ai/Janus-Pro-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infestación - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Infestaci%C3%B3n",
+      "snippet": "Se denomina infestación a la invasión de un organismo vivo por agentes parásitos externos o internos. 1 La diferencia fundamental …"
+    },
+    {
+      "title": "kiel2/KielGen-Fast · Hugging Face",
+      "url": "https://huggingface.co/kiel2/KielGen-Fast",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Glosario - Manual de veterinaria de MSD",
+      "url": "https://www.msdvetmanual.com/es/resourcespages/glossary",
+      "snippet": "infertilidad: incapacidad para producir descendencia. infestar: vivir como parásito dentro o encima de otro organismo. infestación: …"
+    },
+    {
+      "title": "kiel2/KielMind-pro · Hugging Face",
+      "url": "https://huggingface.co/kiel2/KielMind-pro",
+      "snippet": "KielMind-Pro is an enterprise-grade, high-performance conversational language model fine-tuned specifically to anchor the premium tier of the KielTech AI production ecosystem."
+    },
+    {
+      "title": "Infestaciones causadas por parásitos - Temas especiales para mascotas ...",
+      "url": "https://www.merckvetmanual.com/es-us/temas-especiales-para-mascotas/infecciones/infestaciones-causadas-por-par%C3%A1sitos",
+      "snippet": "Obtenga más información sobre el tema veterinario del Infestaciones causadas por parásitos. Encuentre detalles específicos sobre …"
+    }
+  ]
+}

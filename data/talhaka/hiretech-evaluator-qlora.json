@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "TalhaKa/hiretech-evaluator-qlora",
+  "slug": "talhaka-hiretech-evaluator-qlora",
+  "author": "TalhaKa",
+  "url": "https://huggingface.co/TalhaKa/hiretech-evaluator-qlora",
+  "created_at": "2026-09-05T21:17:26.000Z",
+  "updated_at": "2026-09-05T21:18:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77555195,
+  "storage_human": "78 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modelle, 1 klarer Sieger: Schlaftracker Test | rtl.de Vergleich",
+      "url": "https://www.rtl.de/vergleiche/sport-freizeit/schlaftracker-test/",
+      "snippet": "Aug 16, 2026 · Hier lesen Sie schnell nach, was der Schlaftracker aus einem Test alles kann und worauf es zu achten gilt. Immerhin …"
+    },
+    {
+      "title": "TalhaKa/hiretech-interviewer-qlora · Hugging Face",
+      "url": "https://huggingface.co/TalhaKa/hiretech-interviewer-qlora",
+      "snippet": "Instructions to use TalhaKa/hiretech-interviewer-qlora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Schlaftracker in Tests: Aktueller Vergleich 2026 - MediaMarkt",
+      "url": "https://www.mediamarkt.de/de/content/fit-gesund/schlaf-erholung/beste-schlaftracker-in-tests?msockid=337ed9f904276d1706d9ce3205fd6cdb",
+      "snippet": "Mar 18, 2026 · Die In-Ears sorgen mit intelligentem ANC (Active Noise-Cancelling) wahlweise für absolute Ruhe, oder sie lassen dich …"
+    },
+    {
+      "title": "TalhaKa (Talha Kabasakal) - Hugging Face",
+      "url": "https://huggingface.co/TalhaKa",
+      "snippet": "User profile of Talha Kabasakal on Hugging Face"
+    },
+    {
+      "title": "10 Schlaftracker Test ☀️ Smartwatch Schlafüberwachung",
+      "url": "https://www.matratzenschutz24.net/ratgeber/schlafqualitaet/schlaftracker-test/",
+      "snippet": "6 days ago · Aber worauf sollten Sie achten, um den für Sie passenden Helfer zu finden? Wir haben für Sie ein paar Tipps und …"
+    }
+  ]
+}

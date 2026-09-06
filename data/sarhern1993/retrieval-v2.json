@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Sarhern1993/retrieval-v2",
+  "slug": "sarhern1993-retrieval-v2",
+  "author": "Sarhern1993",
+  "url": "https://huggingface.co/Sarhern1993/retrieval-v2",
+  "created_at": "2026-09-05T22:19:32.000Z",
+  "updated_at": "2026-09-05T22:19:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "صور ديسكورد | صقور الإبدآع - Sqorebda3",
+      "url": "https://www.sqorebda3.com/vb/tags/sur-diskurd/",
+      "snippet": "صور وخلفيات ورمزيات للديسكورد Discord جميلة جدا صور وخلفيات ورمزيات للديسكورد Discord جميلة جدا في عالم التواصل الرقمي، تعد الصور والخلفيات والرمزيات جزءاً أساسياً من …"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "اسم مخفي ديسكورد | صقور الإبدآع - Sqorebda3",
+      "url": "https://www.sqorebda3.com/vb/tags/asm-mxfi-diskurd/",
+      "snippet": "Sep 14, 2022 · اسم مخفي انستا اسم مخفي للنسخ تويتر كود اسم مخفي اسم مخفي تلي اسم مخفي ديسكورد اسم مخفي للنسخ انستا اسم مخفي للنسخ فيسبوك اسم مخفي للنسخ ببجي الردود: 8 …"
+    },
+    {
+      "title": "JadePuffer agentic attacks now target AI model data with ransomware",
+      "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
+      "snippet": "The JadePuffer autonomous AI agent has upgraded with custom malware called EncForge that focuses on encrypting AI assets, such as training datasets, vector databases, and model checkpoints."
+    },
+    {
+      "title": "اسماء حسابات ديسكورد | صقور الإبدآع",
+      "url": "https://www.sqorebda3.com/vb/tags/asma-xhsabat-diskurd/",
+      "snippet": "أسماء ديسكورد مميزة ومضحكة وفخمة للبنات والشباب أجمل أسماء مستخدمين وأسماء ظاهرة وسيرفرات Discord جاهزة للنسخ السلام عليكم ورحمة الله وبركاته، يُعد تطبيق Discord من أشهر …"
+    }
+  ]
+}

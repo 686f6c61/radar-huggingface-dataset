@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/LFM2-HC-SMoE-ngroups28",
+  "slug": "dohyeon1-lfm2-hc-smoe-ngroups28",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups28",
+  "created_at": "2026-09-05T20:01:14.000Z",
+  "updated_at": "2026-09-05T20:03:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 16953912510,
+  "storage_human": "17.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hümpfershäuser Berghäuschen - Rhönforum e. V. Webseite!",
+      "url": "https://www.rhoenforum.de/tourismus-tipps/wanderh%C3%BCtten/h%C3%BCmpfersh%C3%A4user-bergh%C3%A4uschen/",
+      "snippet": "Oberhalb des Wasunger Ortsteils Hümpfershausen liegt eine besondere Wanderhütte – das Berghäuschen. Dieses befindet sich im …"
+    },
+    {
+      "title": "Dohyeon1/OLMoE-HC-SMoE-ngroups48 · Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1/OLMoE-HC-SMoE-ngroups48",
+      "snippet": "Dohyeon1 / OLMoE-HC-SMoE-ngroups48 like 0 Text Generation Transformers Safetensors olmoe conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Thüringer Rhönhaus auf dem Ellenbogen, Oberweid",
+      "url": "https://www.rhoenforum.de/tourismus-tipps/wanderh%C3%BCtten/th%C3%BCringer-rh%C3%B6nhaus-ellenbogen/",
+      "snippet": "Zwischen rauschenden Tannen und plätschernden Quellen, dort, wo sich Fuchs und Hase „Gute Nacht“ sagen, liegt das „Thüringer …"
+    },
+    {
+      "title": "Dohyeon1 (Dohyeon Kim) - Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1",
+      "snippet": "Dohyeon1/Pictory-controlnet-upsample-edge-prompt-lr5e-6-ep20 Updated 2 days ago • 6 Expand 37 model s"
+    },
+    {
+      "title": "Roßhofhütte bei Roßdorf - Rhönforum e. V. Webseite!",
+      "url": "https://www.rhoenforum.de/tourismus-tipps/wanderh%C3%BCtten/ro%C3%9Fhofh%C3%BCtte/",
+      "snippet": "Roßhofhütte bei Roßdorf Ein Platz an der Sonne Dort, wo der Thüringer Wald von Weitem grüßt, wo Wälder, Wiesen und …"
+    }
+  ]
+}

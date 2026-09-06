@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Harvard-DCML/ADAPT-Qwen3-2.3B-Base",
+  "slug": "harvard-dcml-adapt-qwen3-2-3b-base",
+  "author": "Harvard-DCML",
+  "url": "https://huggingface.co/Harvard-DCML/ADAPT-Qwen3-2.3B-Base",
+  "created_at": "2026-09-05T19:07:26.000Z",
+  "updated_at": "2026-09-05T21:05:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "dataset:EleutherAI/the_pile_deduplicated",
+    "dataset:nvidia/Llama-Nemotron-Post-Training-Dataset",
+    "arxiv:2608.22854",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 576661056,
+  "parameters_human": "576.7M",
+  "storage_bytes": 10793855495,
+  "storage_human": "10.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harvard University",
+      "url": "https://www.harvard.edu/",
+      "snippet": "Harvard University is devoted to excellence in teaching, learning, and research, and to developing leaders who make a difference …"
+    },
+    {
+      "title": "Harvard-DCML/boomerang-qwen3-2.3B at main - Hugging Face",
+      "url": "https://huggingface.co/Harvard-DCML/boomerang-qwen3-2.3B/tree/main",
+      "snippet": "Harvard-DCML / boomerang-qwen3-2.3B like 3 Follow Harvard Data-Centric Machine Learning Group 15 Text Generation Transformers Safetensors EleutherAI/the_pile_deduplicated qwen3 conversational text-generation-inference arxiv:2510.05064 License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Université Harvard — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Harvard",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Université Harvard 136 languesAjouter un sujet"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Programs - Harvard University",
+      "url": "https://www.harvard.edu/programs/",
+      "snippet": "Browse the graduate and undergraduate degrees and majors offered by Harvard's 13 Schools and learn more about admissions …"
+    }
+  ]
+}

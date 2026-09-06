@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "venky0310/23f2004188-nppe3",
+  "slug": "venky0310-23f2004188-nppe3",
+  "author": "venky0310",
+  "url": "https://huggingface.co/venky0310/23f2004188-nppe3",
+  "created_at": "2026-09-04T18:08:10.000Z",
+  "updated_at": "2026-09-06T00:11:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-restoration",
+    "super-resolution",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150981737,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Širokopásmové reproduktory | PROAUDIO - Profesionálna inštalačná …",
+      "url": "https://www.proaudio.sk/c/reproduktory/reproduktory-samostatne/sirokopasmove-reproduktory",
+      "snippet": "Širokopásmové reproduktory | PROAUDIO - Profesionálna inštalačná a štúdiová audio"
+    },
+    {
+      "title": "venky0310/23f2004188-nppe3 · Hugging Face",
+      "url": "https://huggingface.co/venky0310/23f2004188-nppe3",
+      "snippet": "venky0310 23f2004188-nppe3 like0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Širokopásmové reproduktory | Repra.eu",
+      "url": "https://repra.eu/sirokopasmove-reproduktory",
+      "snippet": "Vyberte si z našej ponuky širokopásmových reproduktorov za skvelé ceny ! Zľava 5% pre registrovaných zákazníkov Spoľahlivé …"
+    },
+    {
+      "title": "venky0310 (venkateswarlu thatha) - Hugging Face",
+      "url": "https://huggingface.co/venky0310",
+      "snippet": "Sort: Recently updated venky0310/23f2004188-nppe3 Updated about 6 hours ago venky0310/ppo-LunarLander-v3 Reinforcement Learning •Updated Oct 14, 2025 datasets0 None public yet"
+    },
+    {
+      "title": "Širokopásmové reproduktory | SOS electronic",
+      "url": "https://www.soselectronic.com/sk-sk/sirokopasmove-reproduktory",
+      "snippet": "V reprosústavách ho možno použiť ako náhradu za strednotónový reproduktor. V ponuke SOS electronic nájdete širokopásmové …"
+    }
+  ]
+}

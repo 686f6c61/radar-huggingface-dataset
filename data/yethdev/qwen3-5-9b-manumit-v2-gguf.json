@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yethdev/qwen3.5-9b-manumit-v2-GGUF",
+  "slug": "yethdev-qwen3-5-9b-manumit-v2-gguf",
+  "author": "yethdev",
+  "url": "https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2-GGUF",
+  "created_at": "2026-09-06T01:37:24.000Z",
+  "updated_at": "2026-09-06T01:40:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "text-generation",
+    "base_model:yethdev/qwen3.5-9b-manumit-v2",
+    "base_model:quantized:yethdev/qwen3.5-9b-manumit-v2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 21624555584,
+  "storage_human": "21.6 GB",
+  "base_model": "yethdev/qwen3.5-9b-manumit-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "千万不要下成steam管家！ 老坑人了 浏览这个回答的人好多，看来有不少新玩家朋友加入steam，在此添加一些注意事项 1.确保你下的 …"
+    },
+    {
+      "title": "yethdev/qwen3.5-9b-manumit-v2 · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2",
+      "snippet": "Instructions to use yethdev/qwen3.5-9b-manumit-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use yethdev/qwen3.5-9b-manumit-v2 with Transformers:"
+    },
+    {
+      "title": "贪便宜买的游戏激活码要Win+R输入irm steam.run|iex打开Steam激活的 …",
+      "url": "https://www.zhihu.com/question/628569920",
+      "snippet": "切换模式 登录/注册 Steam 贪便宜买的游戏激活码要Win+R输入irm steam.run|iex打开Steam激活的靠谱么？ 公共编辑：请勿在自己的 …"
+    },
+    {
+      "title": "yethdev/qwen3.5-9b-manumit-v2-preview-gguf · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2-preview-gguf",
+      "snippet": "Instructions to use yethdev/qwen3.5-9b-manumit-v2-preview-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "【情報】《第七史詩》STEAM商店頁面開放紀念活動說明",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=34880&snA=15500",
+      "snippet": "Aug 22, 2026 · - 透過「新增至您的願望清單」，即可透過登錄於STEAM的電子郵件收到正式推出消息。 Event 1. STEAM 收藏活動說 …"
+    }
+  ]
+}

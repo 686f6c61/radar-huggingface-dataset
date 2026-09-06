@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "North-ML1/vortex-alpha",
+  "slug": "north-ml1-vortex-alpha",
+  "author": "North-ML1",
+  "url": "https://huggingface.co/North-ML1/vortex-alpha",
+  "created_at": "2026-09-05T21:13:51.000Z",
+  "updated_at": "2026-09-05T21:53:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "vortex",
+    "causal-lm",
+    "small-language-model",
+    "research",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 174942720,
+  "parameters_human": "174.9M",
+  "storage_bytes": 699921841,
+  "storage_human": "700 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vêtements outdoor, sacs à dos, chaussures | The North Face FR",
+      "url": "https://www.thenorthface.com/fr-fr",
+      "snippet": "Vêtements outdoor, sacs à dos, chaussures et matériel de camping : équipez-vous avec The North Face. Facilités de paiement et …"
+    },
+    {
+      "title": "North-ML1/vortex-alpha · Hugging Face",
+      "url": "https://huggingface.co/North-ML1/vortex-alpha",
+      "snippet": "checkpoints. vortex_model.pyand inference.py: a minimal dependency-light PyTorch loader and sampler. configuration_vortex.py, modeling_vortex.py, and tokenization_vortex.py: standard Transformers remote-code modules for AutoModelForCausalLMand AutoTokenizer. Vortex_Alpha_Colab.ipynb: a one-click Google Colab quickstart."
+    },
+    {
+      "title": "The North Face® Outdoor Clothing & Gear",
+      "url": "https://www.thenorthface.com/",
+      "snippet": "Since 1966, The North Face has been a leader in outdoor performance clothing & gear for hiking, skiing, trail running, camping, and …"
+    },
+    {
+      "title": "North-ML1 (North ML) - Hugging Face",
+      "url": "https://huggingface.co/North-ML1/models",
+      "snippet": "Creating coding and general chatbots, small and smart! If you want to join this org, please request and submit a chat on the repo North-ML1/invite-req."
+    },
+    {
+      "title": "Boutiques The North Face® | Livraison gratuite en boutique",
+      "url": "https://locations.thenorthface.fr/",
+      "snippet": "Trouvez une boutique The North Face® à proximité de chez vous. Commandez en ligne. Livraison gratuite en magasin ou à partir de …"
+    }
+  ]
+}

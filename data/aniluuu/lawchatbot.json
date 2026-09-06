@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Aniluuu/Lawchatbot",
+  "slug": "aniluuu-lawchatbot",
+  "author": "Aniluuu",
+  "url": "https://huggingface.co/Aniluuu/Lawchatbot",
+  "created_at": "2026-09-05T17:29:27.000Z",
+  "updated_at": "2026-09-05T17:29:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Как открыть панель управления Windows 11 | remontka.pro",
+      "url": "https://remontka.pro/control-panel-windows-11/",
+      "snippet": "Sep 23, 2025 · Один из самых быстрых способов открыть панель управления Windows 11 — использовать системную …"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Как открыть панель управления на windows 10",
+      "url": "https://avanta-pro.ru/blog/nastroyka-pk/kak-otkryt-panel-upravleniya-na-windows-10/",
+      "snippet": "Для того, чтобы открыть панель управления существует несколько способов, которые будут рассмотрены далее."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "Как можно зайти в панель управления в Windows 10 или 11",
+      "url": "https://www.youtube.com/watch?v=GDyo6yWHv0o",
+      "snippet": "Jun 8, 2024 · Рассмотрено несколько вариантов как можно зайти в панель управления в Windows."
+    }
+  ]
+}

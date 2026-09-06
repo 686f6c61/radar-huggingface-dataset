@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jon-Nielsen/Qwen3.8-Flash-Next-AWQ-INT4-FP8PLE",
+  "slug": "jon-nielsen-qwen3-8-flash-next-awq-int4-fp8ple",
+  "author": "Jon-Nielsen",
+  "url": "https://huggingface.co/Jon-Nielsen/Qwen3.8-Flash-Next-AWQ-INT4-FP8PLE",
+  "created_at": "2026-09-05T21:56:00.000Z",
+  "updated_at": "2026-09-05T22:24:24.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78550400916,
+  "parameters_human": "78.55B",
+  "storage_bytes": 137132278543,
+  "storage_human": "137.1 GB",
+  "base_model": "cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MMA. « Maintenant, c’est Jon Jones l’homme d’affaires » : l’ancien ...",
+      "url": "https://www.ouest-france.fr/sport/mma/mma-maintenant-cest-jon-jones-lhomme-daffaires-lancien-double-champion-du-monde-annonce-sa-retraite-afd59766-3586-11f1-aa8d-862764c4f0ec",
+      "snippet": "Apr 11, 2026 · Jon Jones a tranché au sujet de son avenir dans le MMA. L’ancien double champion des -93 kg et -120 kg a indiqué …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B-parameter main model, supplemented by an additional 51BN-gram embeddings, with 6Bparameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "Jon - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Jon",
+      "snippet": "Jon ... Jon is a masculine given name. It is often short for Jonathan. The name is spelled Jón in Iceland and on the Faroe Islands. In …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Instructions to use Qwen/Qwen3.8-Flash-Next with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Prénom Jon (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/jon/prenom-9231",
+      "snippet": "Jon est un garçon amical, ouvert d'esprit, toujours à l'écoute et tolérant. Doté d'une grande sagesse, Jon est une personne agréable …"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "balajiduraisamy/Meta-Llama-3.1-8B-Instruct-GGUF",
+  "slug": "balajiduraisamy-meta-llama-3-1-8b-instruct-gguf",
+  "author": "balajiduraisamy",
+  "url": "https://huggingface.co/balajiduraisamy/Meta-Llama-3.1-8B-Instruct-GGUF",
+  "created_at": "2026-09-05T19:41:43.000Z",
+  "updated_at": "2026-09-05T19:41:44.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "gguf",
+    "facebook",
+    "meta",
+    "pytorch",
+    "llama",
+    "llama-3",
+    "text-generation",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 143454192362,
+  "storage_human": "143.5 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الرئيسية - ثمانية",
+      "url": "https://app.thmanyah.com/",
+      "snippet": "تابع كل جديد في عالم الكرة السعودية من أخبار، تحليلات، ومحتوى حصري على ثمانية. شاهد المباريات، استكشف البرامج، وابقَ على اطلاع بكل ما يخص دوري روشن وكأس الملك والسوبر."
+    },
+    {
+      "title": "bartowski/Meta-Llama-3.1-8B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",
+      "snippet": "Llamacpp imatrix Quantizations of Meta-Llama-3.1-8B-Instruct Torrent files Prompt format What's new Download a file (not the whole branch) from below: Credits Downloading using huggingface-cli Q4_0_X_X information Which file should I choose?"
+    },
+    {
+      "title": "ثمانية",
+      "url": "https://thmanyah.com/",
+      "snippet": "هناك ثلاثة أمور يجب على مجلس الإدارة الجديد أن ينظر إليها، ويتخذ قرارات بشأنها."
+    },
+    {
+      "title": "AI-Engine/Meta-Llama-3.1-8B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AI-Engine/Meta-Llama-3.1-8B-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ثمانية",
+      "url": "https://app.thmanyah.com/login",
+      "snippet": "تابع بطولات الكرة السعودية على ثمانية، وشاهد مباريات وملخصات وأهداف دوري روشن وكأس الملك والسوبر. وابقَ على اطّلاع بآخر أخبار الأندية السعودية."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "balajiduraisamy/Qwen3-7B-Instruct",
+  "slug": "balajiduraisamy-qwen3-7b-instruct",
+  "author": "balajiduraisamy",
+  "url": "https://huggingface.co/balajiduraisamy/Qwen3-7B-Instruct",
+  "created_at": "2026-09-05T19:38:54.000Z",
+  "updated_at": "2026-09-05T19:38:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2306.01708",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:Qwen/Qwen2.5-Math-7B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-Math-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693416,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct, Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen2.5-Math-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "balajiduraisamy (Balaji Duraisamy) - Hugging Face",
+      "url": "https://huggingface.co/balajiduraisamy/models",
+      "snippet": "balajiduraisamy/Qwen2.5-Coder-7B-Instruct Text Generation • 8B•Updated about 2 hours ago"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.de/intl/de/earth/index.html",
+      "snippet": "Google Earth im Apple App Store herunterladenGoogle Earth im Google Play Store herunterladenEarth starten"
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Bilder",
+      "url": "https://images.google.de/?hl=de",
+      "snippet": "Google Bilder, die umfassendste Bildersuche im Web"
+    }
+  ]
+}

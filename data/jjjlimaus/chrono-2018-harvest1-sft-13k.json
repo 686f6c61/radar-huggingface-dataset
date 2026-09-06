@@ -5,7 +5,7 @@
   "author": "jjjlimaus",
   "url": "https://huggingface.co/jjjlimaus/chrono-2018-harvest1-sft-13k",
   "created_at": "2026-09-04T21:02:37.000Z",
-  "updated_at": "2026-09-05T01:41:07.000Z",
+  "updated_at": "2026-09-05T12:27:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 24222274488,
-  "storage_human": "24.2 GB",
+  "storage_bytes": 80740914960,
+  "storage_human": "80.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

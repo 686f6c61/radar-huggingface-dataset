@@ -5,7 +5,7 @@
   "author": "NANI-Nithin",
   "url": "https://huggingface.co/NANI-Nithin/K2-Horizon-MoVA-36B-A4B-GGUF",
   "created_at": "2026-09-03T21:43:57.000Z",
-  "updated_at": "2026-09-05T01:32:04.000Z",
+  "updated_at": "2026-09-05T02:52:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,8 +39,8 @@
   "trending_score": 9,
   "parameters": 37444792020,
   "parameters_human": "37.44B",
-  "storage_bytes": 601682682688,
-  "storage_human": "601.7 GB",
+  "storage_bytes": 622963744256,
+  "storage_human": "623.0 GB",
   "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
   "formats": [
     "gguf"

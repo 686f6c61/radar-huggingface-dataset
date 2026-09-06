@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "2c64bc59nr-dev/llama-2-7b-radnlp-pelvis-Q4_K_M-GGUF",
+  "slug": "2c64bc59nr-dev-llama-2-7b-radnlp-pelvis-q4_k_m-gguf",
+  "author": "2c64bc59nr-dev",
+  "url": "https://huggingface.co/2c64bc59nr-dev/llama-2-7b-radnlp-pelvis-Q4_K_M-GGUF",
+  "created_at": "2026-09-05T21:23:48.000Z",
+  "updated_at": "2026-09-05T21:24:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:imxx/llama-2-7b-radnlp-pelvis",
+    "base_model:quantized:imxx/llama-2-7b-radnlp-pelvis",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 4081005664,
+  "storage_human": "4.1 GB",
+  "base_model": "imxx/llama-2-7b-radnlp-pelvis",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Use Snipping Tool to capture screenshots | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots",
+      "snippet": "Learn how to use Snipping Tool to capture a screenshot, or snip, of any object on your screen, and then annotate, save, or share the …"
+    },
+    {
+      "title": "TheBloke/Llama-2-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Llama-2-7B-GGUF",
+      "snippet": "Under Download Model, you can enter the model repo: TheBloke/Llama-2-7B-GGUF and below it, a specific filename to download, such as: llama-2-7b.Q4_K_M.gguf. Then click Download."
+    },
+    {
+      "title": "Snipping Tool - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9mz95kl8mr0l",
+      "snippet": "Capture images easily with the new Snipping Tool app on Windows 11. Use mouse, touch, or pen to edit screenshots and share them …"
+    },
+    {
+      "title": "TheBloke/LLaMA-7b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/LLaMA-7b-GGUF",
+      "snippet": "Under Download Model, you can enter the model repo: TheBloke/LLaMA-7b-GGUF and below it, a specific filename to download, such as: llama-7b.Q4_K_M.gguf. Then click Download."
+    },
+    {
+      "title": "Snipping Tool | Microsoft Windows",
+      "url": "https://www.microsoft.com/en-us/windows/tips/snipping-tool?msockid=344355b26aec68b102d142796b3c69d8",
+      "snippet": "Get the most out of your Windows 11 experience with the Snipping Tool. Explore ways the Snipping Tool can take a snapshot to copy …"
+    }
+  ]
+}

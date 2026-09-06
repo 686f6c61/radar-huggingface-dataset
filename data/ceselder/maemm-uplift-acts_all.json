@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ceselder/maemm-uplift-acts_all",
+  "slug": "ceselder-maemm-uplift-acts_all",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/maemm-uplift-acts_all",
+  "created_at": "2026-09-05T23:35:33.000Z",
+  "updated_at": "2026-09-05T23:39:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "interpretability",
+    "activation-inversion",
+    "lora",
+    "grpo",
+    "ablation",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7471130656,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "5回答 Pornhubで45万の請求が来てしまって年齢確認のところを押しただけで出てしまったんですがワンクリック詐欺でしょう …"
+    },
+    {
+      "title": "GitHub - ceselder/maemm: MAEMM: train a universal activation->text ...",
+      "url": "https://github.com/ceselder/maemm",
+      "snippet": "MAEMM (Max-Activating-Example Meta-Model) trains a small LoRA adapter that turns an activation direction inside a language model back into text — text whose own activation, on a clean forward pass, points the same way as the injected direction. In other words: given a direction in a model's residual stream (an SAE feature, a probe direction, a raw activation, …), it generates a short span ..."
+    },
+    {
+      "title": "Pornhubというサイトについて質問です。動画を視聴しているのです …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10285715145",
+      "snippet": "Sep 8, 2023 · Pornhubというサイトについて質問です。動画を視聴しているのですが、ウイルスや詐欺などにかかっていないか心配 …"
+    },
+    {
+      "title": "ceselder/qwen36-27b-maemm-inverter · Hugging Face",
+      "url": "https://huggingface.co/ceselder/qwen36-27b-maemm-inverter",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    }
+  ]
+}

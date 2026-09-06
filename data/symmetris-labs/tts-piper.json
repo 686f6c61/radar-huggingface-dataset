@@ -5,13 +5,14 @@
   "author": "Symmetris-labs",
   "url": "https://huggingface.co/Symmetris-labs/tts-piper",
   "created_at": "2026-09-05T13:13:33.000Z",
-  "updated_at": "2026-09-05T13:51:19.000Z",
+  "updated_at": "2026-09-05T14:57:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "onnx",
     "license:mit",
     "region:us"
   ],
@@ -20,10 +21,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 14186003,
-  "storage_human": "14 MB",
+  "storage_bytes": 11393136695,
+  "storage_human": "11.4 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

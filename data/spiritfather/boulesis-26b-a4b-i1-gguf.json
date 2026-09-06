@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "spiritfather/Boulesis-26B-A4B-i1-GGUF",
+  "slug": "spiritfather-boulesis-26b-a4b-i1-gguf",
+  "author": "spiritfather",
+  "url": "https://huggingface.co/spiritfather/Boulesis-26B-A4B-i1-GGUF",
+  "created_at": "2026-09-05T21:49:07.000Z",
+  "updated_at": "2026-09-05T22:11:59.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "imatrix",
+    "creative-writing",
+    "text-generation",
+    "base_model:SubMaroon/Boulesis-26B-A4B",
+    "base_model:quantized:SubMaroon/Boulesis-26B-A4B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25971339550,
+  "parameters_human": "25.97B",
+  "storage_bytes": 74405509888,
+  "storage_human": "74.4 GB",
+  "base_model": "SubMaroon/Boulesis-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "SubMaroon/Boulesis-26B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SubMaroon/Boulesis-26B-A4B-GGUF",
+      "snippet": "Instructions to use SubMaroon/Boulesis-26B-A4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "تسجيل الدخول والخروج من YouTube - جهاز الكمبيوتر - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/3802431?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "عند تسجيل الدخول إلى YouTube، يمكنك استخدام ميزات مثل الاشتراكات وقوائم التشغيل وعمليات الشراء والسجلّ. ملاحظة: يجب أن يكون لديك حساب Google لتسجيل الدخول إلى YouTube."
+    },
+    {
+      "title": "spiritfather (spiritfather) - Hugging Face",
+      "url": "https://huggingface.co/spiritfather/models",
+      "snippet": "View all activity Organizations None yet spiritfather's models2 Sort: Recently updated spiritfather/Gemma4-Gutenberg-26B-A4B-i1-GGUF Text Generation •25B•Updated 24 days ago•3.66k"
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو - الموقع العربي الرائد لأخبار ...",
+      "url": "https://www.true-gaming.net/home/",
+      "snippet": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو الموقع العربي الرائد لأخبار ومراجعات ألعاب الفيديو. تابع أحدث التغطيات، التقارير، وتقييمات ألعاب بلايستيشن، إكسبوكس، ننتندو، والحاسب الشخصي."
+    }
+  ]
+}

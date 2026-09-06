@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chairflipper/blip-satellite-captioning",
+  "slug": "chairflipper-blip-satellite-captioning",
+  "author": "chairflipper",
+  "url": "https://huggingface.co/chairflipper/blip-satellite-captioning",
+  "created_at": "2026-09-05T20:34:45.000Z",
+  "updated_at": "2026-09-05T20:34:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16057256,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年 7月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
+      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
+      "snippet": "3DMark Time Spy跑分成绩代表DX12下的游戏性能，具有一定的参考价值。"
+    },
+    {
+      "title": "'Pause AI development now': Bernie Sanders sounds alarm after ... - MSN",
+      "url": "https://www.msn.com/en-in/technology/artificial-intelligence/pause-ai-development-now-bernie-sanders-sounds-alarm-after-openai-rolls-out-its-most-intelligent-astra-model/ar-AA2bx20x",
+      "snippet": "Amid the rollout of OpenAI's most advanced and intelligent AI model Astra, US Senator Bernie Sanders has called for an immediate pause on advanced AI development and warned that powerful AI agents ..."
+    },
+    {
+      "title": "怎么将手机上的画面投到电脑屏幕上？ - 知乎",
+      "url": "https://www.zhihu.com/question/324589333",
+      "snippet": "有的时候需要将手机的内容投影到电脑上，那么要如何操作呢？ 一般来说需要去下载投屏软件，但是很多投屏软件都很坑，需要收费 …"
+    },
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Feb 24, 2025 · 13 Mart’ta başlayacak olan ve başrolünde Stephen Graham’ın (Boiling Point) yer aldığı dört bölümlük mini bir dizi olan …"
+    }
+  ]
+}

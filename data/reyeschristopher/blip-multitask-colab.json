@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "reyeschristopher/blip-multitask-colab",
+  "slug": "reyeschristopher-blip-multitask-colab",
+  "author": "reyeschristopher",
+  "url": "https://huggingface.co/reyeschristopher/blip-multitask-colab",
+  "created_at": "2026-09-05T21:43:25.000Z",
+  "updated_at": "2026-09-05T21:43:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Esclerose múltipla: o que é, sintomas, causas e tratamento",
+      "url": "https://www.tuasaude.com/esclerose-multipla/",
+      "snippet": "Jan 13, 2022 · A esclerose múltipla é uma doença autoimune que causa sintomas de fraqueza, dormência ou dificuldade para falar …"
+    },
+    {
+      "title": "NikitaShahna/blip-multitask-final · Hugging Face",
+      "url": "https://huggingface.co/NikitaShahna/blip-multitask-final",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Esclerose múltipla | O que é, sintomas e tratamento - MD.Saúde",
+      "url": "https://www.mdsaude.com/neurologia/esclerose-multipla/",
+      "snippet": "May 30, 2026 · A esclerose múltipla é uma doença inflamatória imunomediada do sistema nervoso central, na qual lesões de …"
+    },
+    {
+      "title": "GitHub - dario-coscia/blip: This repository contains the source code ...",
+      "url": "https://github.com/dario-coscia/blip",
+      "snippet": "BLIP is a scalable, architecture-agnostic variational Bayesian framework for training or fine-tuning machine learning interatomic potentials (MLIPs) - or message passing neural networks more in general. BLIP delivers well-calibrated uncertainty estimates and minimal computational overhead for mean prediction at inference time, while integrating seamlessly with both standard and equivariant ..."
+    },
+    {
+      "title": "Esclerose múltipla: sintomas, diagnóstico e tratamentos",
+      "url": "https://drauziovarella.uol.com.br/neurologia/esclerose-multipla-sintomas-diagnostico-e-tratamentos/",
+      "snippet": "Sep 2, 2025 · A esclerose múltipla (EM) é uma condição neurológica crônica que atinge o sistema nervoso central, provocando …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "haotiansun014/flowar-i2sb-checkpoints",
+  "slug": "haotiansun014-flowar-i2sb-checkpoints",
+  "author": "haotiansun014",
+  "url": "https://huggingface.co/haotiansun014/flowar-i2sb-checkpoints",
+  "created_at": "2026-09-04T04:06:16.000Z",
+  "updated_at": "2026-09-06T01:17:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-generation",
+    "imagenet-256",
+    "flow-matching",
+    "schrodinger-bridge",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10701488575,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oleksandr Ussyk – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Oleksandr_Ussyk",
+      "snippet": "Möglicherweise unterliegen die Inhalte jeweils zusätzlichen Bedingungen. Durch die Nutzung dieser Website erklären Sie sich mit …"
+    },
+    {
+      "title": "haotiansun014 (Haotian Sun) - Hugging Face",
+      "url": "https://huggingface.co/haotiansun014/models",
+      "snippet": "User profile of Haotian Sun on Hugging Face"
+    },
+    {
+      "title": "Oleksandr Usyk - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Oleksandr_Usyk",
+      "snippet": "3.3WBO cruiserweight champion. 3.3.1Usyk vs. Głowacki."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Oleksandr Usyk - Wikiwand",
+      "url": "https://www.wikiwand.com/en/Oleksandr_Usyk",
+      "snippet": "Jul 5, 2019 · Oleksandr Oleksandrovych Usyk (Ukrainian: Олександр Олександрович Усик, pronounced [olekˈsɑndr ˈusɪk]; born 17 …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "creatoryo/cyc-annotate-ai",
+  "slug": "creatoryo-cyc-annotate-ai",
+  "author": "creatoryo",
+  "url": "https://huggingface.co/creatoryo/cyc-annotate-ai",
+  "created_at": "2026-09-05T19:28:19.000Z",
+  "updated_at": "2026-09-05T19:29:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "autotrain",
+    "text-generation-inference",
+    "text-generation",
+    "peft",
+    "conversational",
+    "base_model:Qwen/Qwen2-0.5B",
+    "base_model:finetune:Qwen/Qwen2-0.5B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1133703391,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/ark-survival-evolved-for-microsoft-10/dd1b6812-166f-4875-846a-5c6feddcd590",
+      "snippet": ""
+    },
+    {
+      "title": "Introducing CYC Annotate V4 – CYC / CYG",
+      "url": "https://www.creatoryogames.com/newsroom/introducing-cyc-annotate-v4",
+      "snippet": "The all new CYC Annotate refined. CYC Annotate V4 has officially arrived, bringing major improvements to stability, performance, reliability, and accessibility, alongside several new features designed to make your workflow even better."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/office-365-shared-folder-deletion-incident-my-name/e89116e8-02c7-41cb-9c14-643c8ed8929f",
+      "snippet": ""
+    },
+    {
+      "title": "Using CYC Annotate | CYC / CYG Help Centre",
+      "url": "https://help.creatoryogames.com/tutorials/using-cyc-annotate",
+      "snippet": "For the complete documentation index, see llms.txt. This page is also available as Markdown. Copy On this page TUTORIALS"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/network-adapter/e83174ae-9df0-4acf-be22-6c7104c06da8",
+      "snippet": ""
+    }
+  ]
+}

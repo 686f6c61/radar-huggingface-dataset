@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "FIIS/sofiemarie",
+  "slug": "fiis-sofiemarie",
+  "author": "FIIS",
+  "url": "https://huggingface.co/FIIS/sofiemarie",
+  "created_at": "2026-09-06T00:58:18.000Z",
+  "updated_at": "2026-09-06T01:34:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970547274,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "Sofie Marie - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/65c28cbbbe5f19102831e68dd52247e0",
+      "snippet": "Explore Sofie Marie model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "制限付きモードは、YouTube で使用できるオプション設定です。この機能は、ご自身が視聴したくない、またはデバイスを使用す …"
+    },
+    {
+      "title": "Sofie Marie - Flux - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/b232b7f0ccb85fd75a13f0f41525169f",
+      "snippet": "Explore Sofie Marie - Flux 🇺🇸 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

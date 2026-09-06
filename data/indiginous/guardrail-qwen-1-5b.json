@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "indiginous/guardrail-qwen-1.5b",
+  "slug": "indiginous-guardrail-qwen-1-5b",
+  "author": "indiginous",
+  "url": "https://huggingface.co/indiginous/guardrail-qwen-1.5b",
+  "created_at": "2026-09-05T19:36:00.000Z",
+  "updated_at": "2026-09-05T19:36:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888704,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "Qwen/Qwen2-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-1.5B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "الصفحة الرئيسية يوتيوب - YouTube",
+      "url": "https://www.youtube.com/@%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9%D9%8A%D9%88%D8%AA%D9%8A%D9%88%D8%A8",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3Guard: Qwen3Guard is a multilingual guardrail ...",
+      "url": "https://github.com/QwenLM/Qwen3Guard",
+      "snippet": "Qwen3Guard is a multilingual guardrail model series developed by the Qwen team at Alibaba Cloud. - QwenLM/Qwen3Guard"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://youtu.be/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

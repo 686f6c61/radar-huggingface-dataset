@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Nanochat/nanochat-d26-adamw-s44",
+  "slug": "nanochat-nanochat-d26-adamw-s44",
+  "author": "Nanochat",
+  "url": "https://huggingface.co/Nanochat/nanochat-d26-adamw-s44",
+  "created_at": "2026-09-05T20:18:23.000Z",
+  "updated_at": "2026-09-05T20:22:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "optimizer-comparison",
+    "native-checkpoint",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31203600988,
+  "storage_human": "31.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.pl/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Nanochat/nanochat-d26-adamw-s42 · Hugging Face",
+      "url": "https://huggingface.co/Nanochat/nanochat-d26-adamw-s42",
+      "snippet": "Selected endpoints Layout Recovery status NanoChat d26: adamw, seed 42 This native NanoChat archive contains the selected runs for this optimizer and Matched and full runs share this repository. stored once, with all its saved checkpoint files, and each selected SFT folder No Transformers conversion is performed. Selected endpoints Condition ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=pl",
+      "snippet": "Korzystaj z Google w tych językach: English Reklamuj sięWszystko o GoogleGoogle.com in English © 2026 - Prywatność- Warunki …"
+    },
+    {
+      "title": "NanoChat – The best ChatGPT that $100 can buy - GitHub",
+      "url": "https://github.com/karpathy/nanochat",
+      "snippet": "The best ChatGPT that $100 can buy. Contribute to karpathy/nanochat development by creating an account on GitHub."
+    },
+    {
+      "title": "Przeglądarka Google Chrome",
+      "url": "https://www.google.com/intl/pl/chrome/",
+      "snippet": "Prostota obsługi, lepsze zabezpieczenia i większa szybkość. Wbudowane inteligentne rozwiązania Google."
+    }
+  ]
+}

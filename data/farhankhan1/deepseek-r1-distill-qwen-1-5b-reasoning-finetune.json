@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Farhankhan1/deepseek-r1-distill-qwen-1.5b-reasoning-finetune",
+  "slug": "farhankhan1-deepseek-r1-distill-qwen-1-5b-reasoning-finetune",
+  "author": "Farhankhan1",
+  "url": "https://huggingface.co/Farhankhan1/deepseek-r1-distill-qwen-1.5b-reasoning-finetune",
+  "created_at": "2026-09-05T19:48:03.000Z",
+  "updated_at": "2026-09-05T20:12:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "reasoning",
+    "conversational",
+    "en",
+    "dataset:Magpie-Align/Magpie-Reasoning-V2-250K-CoT-Deepseek-R1-Llama-70B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3565637399,
+  "storage_human": "3.6 GB",
+  "base_model": "unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maison à vendre et vente appartement Saint-Sébastien-sur-Loire …",
+      "url": "https://www.leboncoin.fr/cl/ventes_immobilieres/cp_saint-sebastien-sur-loire_44230",
+      "snippet": "Toutes nos annonces gratuites Maison à vendre et vente appartement Saint-Sébastien-sur-Loire (44230). Consultez nos 361 …"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Maison à vendre et vente appartement Saint-Sébastien-sur-Loire …",
+      "url": "https://www.leboncoin.fr/cl/ventes_immobilieres/cp_saint-sebastien-sur-loire_44230/p-4",
+      "snippet": "Toutes nos annonces gratuites Maison à vendre et vente appartement Saint-Sébastien-sur-Loire (44230). Consultez nos 314 …"
+    },
+    {
+      "title": "DeepSeek-R1-Distill-Qwen-1.5B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/SandLogicTechnologies/DeepSeek-R1-Distill-Qwen-1.5B-GGUF",
+      "snippet": "Model Description These models are quantized versions of DeepSeek-R1-Distill-Qwen-1.5B, which is a highly efficient distilled 1.5B parameter model based on the Qwen architecture."
+    },
+    {
+      "title": "6 Maisons à vendre à Saint-Sébastien-Sur-Loire Martellière",
+      "url": "https://www.ouestfrance-immo.com/immobilier/vente/maison/saint-sebastien-sur-loire-martelliere-44-44190/",
+      "snippet": "Achetez une maison à vendre à Saint-Sébastien-Sur-Loire Martellière : Découvrez ici une sélection de plus de 6 annonces de maison …"
+    }
+  ]
+}

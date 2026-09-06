@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mikhailpqb/document-ai-analysis-2023",
+  "slug": "mikhailpqb-document-ai-analysis-2023",
+  "author": "mikhailpqb",
+  "url": "https://huggingface.co/mikhailpqb/document-ai-analysis-2023",
+  "created_at": "2026-09-05T20:30:46.000Z",
+  "updated_at": "2026-09-05T20:30:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | RioTECH",
+      "url": "https://riotech.rrps.net/",
+      "snippet": "Encourage Growth, Empower Change, Engage the Future"
+    },
+    {
+      "title": "mikhailpqb (Mikhail Popov) - Hugging Face",
+      "url": "https://huggingface.co/mikhailpqb",
+      "snippet": "Recent Activity updated a modelabout 9 hours ago mikhailpqb/model_742242023_mocov3_giant published a modelabout 9 hours ago mikhailpqb/model_742242023_mocov3_giant View all activity"
+    },
+    {
+      "title": "Riotech – Powering Digital Distribution Solutions",
+      "url": "https://www.rio-tech.com/",
+      "snippet": "Powering Digital Distribution Solutions We build direct-to-consumer digital solutions for the largest companies in the US. Partner with …"
+    },
+    {
+      "title": "mikhailpqb (Mikhail Popov) - Hugging Face",
+      "url": "https://huggingface.co/mikhailpqb/models",
+      "snippet": "mikhailpqb's models1 Sort: Recently updated mikhailpqb/model_742242023_mocov3_giant Updated about 9 hours ago"
+    },
+    {
+      "title": "RioTech | Cybersecurity, Software Development, IoT",
+      "url": "https://riotechresults.com/",
+      "snippet": "Ready to Transform Your Business? Contact us today for a free consultation and discover how we can help you achieve your digital …"
+    }
+  ]
+}

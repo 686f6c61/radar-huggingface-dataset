@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ipsilondev/sam2.1-hiera-tiny-ONNX",
+  "slug": "ipsilondev-sam2-1-hiera-tiny-onnx",
+  "author": "ipsilondev",
+  "url": "https://huggingface.co/ipsilondev/sam2.1-hiera-tiny-ONNX",
+  "created_at": "2026-09-05T21:22:13.000Z",
+  "updated_at": "2026-09-05T21:27:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "sam2",
+    "segment-anything-2",
+    "vision",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155996615,
+  "storage_human": "156 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl-winkels in België",
+      "url": "https://www.lidl.be/s/nl-BE/winkels/",
+      "snippet": "Vind je Lidl-winkel snel en eenvoudig met de winkelzoeker of per stad. Zo blijf je op de hoogte van onze aanbiedingen in je buurt."
+    },
+    {
+      "title": "SharpAI/sam2-hiera-tiny-onnx · Hugging Face",
+      "url": "https://huggingface.co/SharpAI/sam2-hiera-tiny-onnx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Magasins Lidl en Belgique",
+      "url": "https://www.lidl.be/s/fr-BE/magasins/",
+      "snippet": "Trouvez votre magasin Lidl rapidement et facilement avec le localisateur ou par ville. Ainsi, vous restez informé(e) de nos offres près …"
+    },
+    {
+      "title": "onnx-community/sam2-hiera-tiny-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/sam2-hiera-tiny-ONNX",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Winkels en openingsuren - Lidl.be",
+      "url": "https://www.lidl.be/c/nl-BE/winkels-en-openingsuren/s10008588",
+      "snippet": "Winkels en openingsuren. Scoor nu -10% op alles van PARKSIDE | In je winkel en online. De browser wordt niet ondersteund. Om de …"
+    }
+  ]
+}

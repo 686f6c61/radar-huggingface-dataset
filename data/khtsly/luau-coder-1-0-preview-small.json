@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "khtsly/luau-coder-1.0-preview-small",
+  "slug": "khtsly-luau-coder-1-0-preview-small",
+  "author": "khtsly",
+  "url": "https://huggingface.co/khtsly/luau-coder-1.0-preview-small",
+  "created_at": "2026-09-05T19:35:15.000Z",
+  "updated_at": "2026-09-06T02:00:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_linear",
+    "text-generation",
+    "kimi-k3",
+    "luau",
+    "experimental-checkpoint",
+    "custom_code",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 786529856,
+  "parameters_human": "786.5M",
+  "storage_bytes": 73192392640,
+  "storage_human": "73.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die besten Filme im Überblick | Jetzt ansehen - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/filme",
+      "snippet": "Meine ARD Suche Anmelden Die besten Filme in der ARD Die Filme der ARD im Überblick: Von Krimis, Komödien, Arthouse- und …"
+    },
+    {
+      "title": "khtsly/luau-coder-1.0-preview-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/khtsly/luau-coder-1.0-preview-tokenizer",
+      "snippet": "khtsly / luau-coder-1.0-preview-tokenizer like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "ARD Mediathek: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.ardmediathek.de/",
+      "snippet": "Alle Inhalte der ARD Mediathek im Überblick: Livestreams, Nachrichten, Filme, Serien und spannende Dokus. Hier anschauen!"
+    },
+    {
+      "title": "khtsly (khtsly) - Hugging Face",
+      "url": "https://huggingface.co/khtsly",
+      "snippet": "Self-Improving Pretraining: using post-trained models to pretrain better models. upvoted a paper 2 days ago. A Programming Paradigm for Spatiotemporal Composability"
+    },
+    {
+      "title": "Die aktuell 10 besten Filme in der ARD Mediathek - HIFI.DE",
+      "url": "https://hifi.de/feature/beste-filme-ard-mediathek-206934",
+      "snippet": "Aug 24, 2026 · Die ARD Mediathek hat viele starke Filme im Angebot. Das sind die aktuell zehn besten Filme aus verschiedenen …"
+    }
+  ]
+}

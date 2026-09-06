@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch10",
+  "slug": "lanni-ni-dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch10",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch10",
+  "created_at": "2026-09-05T22:17:35.000Z",
+  "updated_at": "2026-09-05T22:18:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ru",
+      "snippet": "Создайте аккаунт или войдите в Instagram — делитесь интересными моментами с людьми, которые вас понимают."
+    },
+    {
+      "title": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7 · Hugging ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7",
+      "snippet": "Instructions to use Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Connecting People Through Everyday Moments | About Instagram",
+      "url": "https://about.instagram.com/about-us/",
+      "snippet": "Make the most of your Instagram experience by discovering new feature updates, tips, and tools to engage with your audience."
+    }
+  ]
+}

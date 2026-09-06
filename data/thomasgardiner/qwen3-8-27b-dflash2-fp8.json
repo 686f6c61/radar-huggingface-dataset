@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "thomasgardiner/Qwen3.8-27B-DFlash2-FP8",
+  "slug": "thomasgardiner-qwen3-8-27b-dflash2-fp8",
+  "author": "thomasgardiner",
+  "url": "https://huggingface.co/thomasgardiner/Qwen3.8-27B-DFlash2-FP8",
+  "created_at": "2026-09-05T22:54:19.000Z",
+  "updated_at": "2026-09-06T02:15:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "draft-model",
+    "fp8",
+    "compressed-tensors",
+    "sglang",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 2407027720,
+  "storage_human": "2.4 GB",
+  "base_model": "incoai/Qwen3.8-27B-DFlash2, Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook – Anmelden oder Registrieren",
+      "url": "https://de-de.facebook.com/",
+      "snippet": "Erstelle ein Konto oder melde dich bei Facebook an. Verbinde dich mit Freunden, Familie und anderen Personen, die du kennst. …"
+    },
+    {
+      "title": "thomasgardiner/Qwen3.8-27B-DFlash2-FP8 · Hugging Face",
+      "url": "https://huggingface.co/thomasgardiner/Qwen3.8-27B-DFlash2-FP8",
+      "snippet": "Instructions to use thomasgardiner/Qwen3.8-27B-DFlash2-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "incoai/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/incoai/Qwen3.8-27B-DFlash2",
+      "snippet": "Instructions to use incoai/Qwen3.8-27B-DFlash2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/%23_",
+      "snippet": "Facebook ... Facebook"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeta0707/act_omx_helllo26_merged",
+  "slug": "zeta0707-act_omx_helllo26_merged",
+  "author": "zeta0707",
+  "url": "https://huggingface.co/zeta0707/act_omx_helllo26_merged",
+  "created_at": "2026-09-05T21:30:30.000Z",
+  "updated_at": "2026-09-05T21:31:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:zeta0707/helllo26_merged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51680908,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206766968,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Immobilien - Häuser - Wohnungen - finden bei immowelt.de",
+      "url": "https://www.immowelt.de/?msockid=33fb7eb179d26fb5008f697a78696ea7",
+      "snippet": "Aktuelle Immobilien, schöne Wohnungen und Häuser zur Miete oder Kauf in ganz Deutschland. Jetzt online, schnell & einfach, …"
+    },
+    {
+      "title": "zeta0707/act_hello26_merged · Hugging Face",
+      "url": "https://huggingface.co/zeta0707/act_hello26_merged",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Haus kaufen in Deutschland - 220.480 Angebote ab 1.000 Euro",
+      "url": "https://www.immowelt.de/suche/kaufen/haus/deutschland/ad02de1?msockid=33fb7eb179d26fb5008f697a78696ea7",
+      "snippet": "Haus kaufen in Deutschland leicht gemacht - bei immowelt findest du eine große Auswahl an aktuellen Angeboten. Jetzt loslegen!"
+    },
+    {
+      "title": "zeta0707/hello26_merged · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/zeta0707/hello26_merged",
+      "snippet": "Models trained or fine-tuned on zeta0707/hello26_merged zeta0707/act_hello26_merged Robotics • 51.7M•Updated 2 days ago• 21"
+    },
+    {
+      "title": "Wohnung mieten in Deutschland | immowelt - 70.895 Angebote",
+      "url": "https://www.immowelt.de/suche/mieten/wohnung/deutschland/ad02de1?msockid=33fb7eb179d26fb5008f697a78696ea7",
+      "snippet": "Wohnung mieten in Deutschland leicht gemacht - bei immowelt findest du eine große Auswahl an aktuellen Angeboten. Jetzt loslegen!"
+    }
+  ]
+}

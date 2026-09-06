@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch4",
+  "slug": "lanni-ni-dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch4",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch4",
+  "created_at": "2026-09-05T22:11:07.000Z",
+  "updated_at": "2026-09-05T22:11:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atokos - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atokos",
+      "snippet": "Atokos - Wikipedia. Jump to content. Main menu. move to sidebarhide. Navigation . Main page. Contents. Current events. Random …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Atokos – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Atokos",
+      "snippet": "Atokos (griechisch Άτοκος (f. sg.), wörtlich ‚unfruchtbar, ungeboren‘ wegen der kargen Vegetation) ist eine Insel im Ionischen Meer, …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7 · Hugging ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7",
+      "snippet": "Instructions to use Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7 with libraries, inference providers, notebooks, and local apps. Follow these links ..."
+    },
+    {
+      "title": "Im Schatten der Ägäis – Die stille Majestät von Atokos - Hellas Bote",
+      "url": "https://hellas-bote.de/im-schatten-der-aegaeis-die-stille-majestaet-von-atokos/",
+      "snippet": "May 7, 2025 · Atokos steht da wie ein vergessenes Kapitel in einem alten Buch, das plötzlich wieder aufgeschlagen wird. In einer …"
+    }
+  ]
+}

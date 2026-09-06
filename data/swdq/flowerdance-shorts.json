@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "swdq/FlowerDance-Shorts",
+  "slug": "swdq-flowerdance-shorts",
+  "author": "swdq",
+  "url": "https://huggingface.co/swdq/FlowerDance-Shorts",
+  "created_at": "2026-09-05T21:58:59.000Z",
+  "updated_at": "2026-09-05T22:48:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "music-to-dance",
+    "dance-generation",
+    "3d-human-motion",
+    "motion-generation",
+    "bimamba",
+    "fine-tuned",
+    "ja",
+    "base_model:xlt99/FlowerDance",
+    "base_model:finetune:xlt99/FlowerDance",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62948503,
+  "parameters_human": "62.9M",
+  "storage_bytes": 359691563,
+  "storage_human": "360 MB",
+  "base_model": "xlt99/FlowerDance",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Notizie — Albese 1917",
+      "url": "https://albese1917.it/news",
+      "snippet": "Buona la prima: Poppa e Gomez firmano il 2-0 allo Spartak San Damiano L’Albese 1917 inaugura la stagione 2026/27 superando per …"
+    },
+    {
+      "title": "FlowerDance | ECCV 2026",
+      "url": "https://sun-happy-ykx.github.io/FlowerDance/",
+      "snippet": "Music-to-dance generation translates auditory signals into expressive human motion, yet existing approaches still struggle to balance refined 3D motion quality with strict inference budgets. FlowerDanceis designed for both physically plausible, artistically expressive motion and efficient generation in speed and memory usage. FlowerDance combines MeanFlowwith Physical Consistency Constraints ..."
+    },
+    {
+      "title": "Albese 1917 — Sito ufficiale",
+      "url": "https://albese1917.it/",
+      "snippet": "Il sito ufficiale dell'Albese 1917: prossima partita, risultati, notizie, prima squadra e settore giovanile. Eccellenza Piemonte - Valle …"
+    },
+    {
+      "title": "beautiful dance flower ai #shorts #shortvideo #flowerdance",
+      "url": "https://www.youtube.com/watch?v=L566DW8atPY",
+      "snippet": "🌺 AI Animated Flower Dancing Video - Viral Shorts 🌸🎶Watch this mesmerizing AI-animated flower dancing video that’s taking the internet by storm! 🌼💃 Wit..."
+    },
+    {
+      "title": "Carne cruda alla piemontese - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Carne_cruda_alla_piemontese",
+      "snippet": "Durante gli anni sessanta del XX secolo, ad Alba, venne introdotta la carne cruda tagliata a fette conosciuta come carne cruda …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "smithryanrag/audio-visual-learning",
+  "slug": "smithryanrag-audio-visual-learning",
+  "author": "smithryanrag",
+  "url": "https://huggingface.co/smithryanrag/audio-visual-learning",
+  "created_at": "2026-09-05T20:11:06.000Z",
+  "updated_at": "2026-09-05T20:11:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download - Get Ubuntu",
+      "url": "https://ubuntu.com/download",
+      "snippet": "Download Ubuntu Desktop, Server, Core, and flavors for PCs, servers, IoT devices, and cloud."
+    },
+    {
+      "title": "Awesome Audio-Visual: - GitHub",
+      "url": "https://github.com/krantiparida/awesome-audio-visual",
+      "snippet": "Awesome Audio-Visual: A curated list of papers and datsets for various audio-visual tasks, inspired by awesome-computer-vision."
+    },
+    {
+      "title": "Download Ubuntu Desktop | Ubuntu",
+      "url": "https://ubuntu.com/download/desktop",
+      "snippet": "Ubuntu is an open source software operating system that runs from the desktop, to the cloud, to all your internet connected things."
+    },
+    {
+      "title": "From Vision to Audio and Beyond: A Unified Model for Audio-Visual ...",
+      "url": "https://arxiv.org/html/2409.19132v1",
+      "snippet": "Since VAB is a unified model, its backbone can be fine-tuned for various audio-visual downstream tasks. Our experiments showcase the efficiency of VAB in producing high-quality audio from video, and its capability to acquire semantic audio-visual features, leading to competitive results in audio-visual retrieval and classification."
+    },
+    {
+      "title": "Ubuntu - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ubuntu",
+      "snippet": "This page was last edited on 30 August 2026, at 16:05 (UTC)."
+    }
+  ]
+}

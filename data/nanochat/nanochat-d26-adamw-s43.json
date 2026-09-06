@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Nanochat/nanochat-d26-adamw-s43",
+  "slug": "nanochat-nanochat-d26-adamw-s43",
+  "author": "Nanochat",
+  "url": "https://huggingface.co/Nanochat/nanochat-d26-adamw-s43",
+  "created_at": "2026-09-05T19:27:07.000Z",
+  "updated_at": "2026-09-05T20:18:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "optimizer-comparison",
+    "native-checkpoint",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31203600988,
+  "storage_human": "31.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 2nd Festival of Georgian Songs | The Boite",
+      "url": "https://www.boite.com.au/event-details/the-2nd-festival-of-georgian-songs",
+      "snippet": "Feb 28, 2026 · The Boite will welcome Georgian academic, TV presenter and singer Gia Bagashvili to Melbourne in the last week of …"
+    },
+    {
+      "title": "Nanochat (nanochatops) - Hugging Face",
+      "url": "https://huggingface.co/Nanochat",
+      "snippet": "None yet models6 Sort: Recently updated Nanochat/nanochat-d26-muon-s44 Updated less than a minute ago Nanochat/nanochat-d26-muon-s43 Updated 22 minutes ago"
+    },
+    {
+      "title": "Gosforth Central Middle School - School Lunches",
+      "url": "https://www.gosforthcent.newcastle.sch.uk/school-lunches/",
+      "snippet": "Newcastle City Council adhere to the current legislation regarding food safety and packaging, including Natasha's Law which came …"
+    },
+    {
+      "title": "GitHub - karpathy/nanochat at explainx",
+      "url": "https://github.com/karpathy/nanochat?ref=explainx",
+      "snippet": "By sweeping out the depth, you achieve the nanochat miniseries of compute optimal models at various sizes. GPT-2 capability model (which is of most interest at the moment) happens to be somewhere around d24-d26 range with the current code. But any candidate changes to the repo have to be principled enough that they work for all settings of depth."
+    },
+    {
+      "title": "Super Mande Percussion - The Boite",
+      "url": "https://www.boite.com.au/artist/super-mande-percussion",
+      "snippet": "Super Mande Percussion is a dynamic ensemble that performs traditional West African percussion, folk and jazz music led by Mady …"
+    }
+  ]
+}

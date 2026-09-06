@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch1",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch1",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch1",
+  "created_at": "2026-09-05T17:31:23.000Z",
+  "updated_at": "2026-09-05T17:32:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Service zurücksetzen beim Bosch Intuvia - sonstige(s)",
+      "url": "https://www.pedelecforum.de/forum/index.php?threads/service-zuruecksetzen-beim-bosch-intuvia.65356/",
+      "snippet": "Jul 29, 2019 · Wie kann ich Service Benachrichtigung selbst zurückstellen sonstige(s)Mein Bosch Intuvia schlatet sch immer ab, …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_inverse_epoch6 - Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_inverse_epoch6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pedelec-Forum / E-Bike-Forum - Pedelecforum.de",
+      "url": "https://www.pedelecforum.de/forum/index.php",
+      "snippet": "Willkommen im Pedelec-Forum, der besten Community für Elektrofahrrad-Enthusiasten. Finde Antworten, tausche dich aus und …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_epoch10 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_epoch10",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BOSCH Service Bericht verstehen? - sonstige(s) - Pedelec-Forum",
+      "url": "https://www.pedelecforum.de/forum/index.php?threads/bosch-service-bericht-verstehen.88713/",
+      "snippet": "Mar 5, 2019 · Diskutiere BOSCH Service Bericht verstehen? im Bosch Forum im Bereich Fertig-Pedelecs; Seit gestern bin ich nun …"
+    }
+  ]
+}

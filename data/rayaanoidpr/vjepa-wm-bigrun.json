@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rayaanoidpr/vjepa-wm-bigrun",
+  "slug": "rayaanoidpr-vjepa-wm-bigrun",
+  "author": "rayaanoidpr",
+  "url": "https://huggingface.co/rayaanoidpr/vjepa-wm-bigrun",
+  "created_at": "2026-09-05T19:59:58.000Z",
+  "updated_at": "2026-09-05T20:07:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184760474,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éditeur et créateur de skin Minecraft en 3D | Laby",
+      "url": "https://laby.net/fr/tools/skin-editor",
+      "snippet": "Éditeur de skin Minecraft gratuit dans ton navigateur. Peins directement sur le modèle 3D avec calques, symétrie et filtres, puis …"
+    },
+    {
+      "title": "GitHub - facebookresearch/jepa: PyTorch code and models for V-JEPA self ...",
+      "url": "https://github.com/facebookresearch/jepa",
+      "snippet": "Official PyTorch codebase for the video joint-embedding predictive architecture, V-JEPA, a method for self-supervised learning of visual representations from video."
+    },
+    {
+      "title": "Nova Skin - Free Minecraft Skin Editor Online | No Download Required",
+      "url": "https://minecraft.novaskin.me/",
+      "snippet": "Create custom Minecraft skins free with our 3D editor. No download needed. Edit, design, and download skins instantly. Used by …"
+    },
+    {
+      "title": "Run Local AI Models on Your PC | Check What Models You Can Run",
+      "url": "https://runlocalmodel.com/",
+      "snippet": "Find out which AI models your computer can run locally, and browse Agent Skills (SKILL.md) for Claude Code, Codex, and other AI agents. Check GPU VRAM compatibility for LLaMA, Gemma, Mistral, and more."
+    },
+    {
+      "title": "Éditeur de skin Minecraft - En ligne et gratuit",
+      "url": "https://minecraft-skin-editor.com/fr/",
+      "snippet": "Vous pouvez utiliser notre vaste catalogue de skins Minecraft pour le télécharger pour votre personnage ou pour vous inspirer et …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yethdev/qwen3.5-0.8b-manumit-v2-GGUF",
+  "slug": "yethdev-qwen3-5-0-8b-manumit-v2-gguf",
+  "author": "yethdev",
+  "url": "https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v2-GGUF",
+  "created_at": "2026-09-06T01:19:57.000Z",
+  "updated_at": "2026-09-06T01:20:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "text-generation",
+    "base_model:yethdev/qwen3.5-0.8b-manumit-v2",
+    "base_model:quantized:yethdev/qwen3.5-0.8b-manumit-v2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1919114496,
+  "storage_human": "1.9 GB",
+  "base_model": "yethdev/qwen3.5-0.8b-manumit-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tebonin® bei Vergesslichkeit | Tebonin®",
+      "url": "https://www.tebonin.de/",
+      "snippet": "Tebonin®-Produkte sind hochwertige pflanzliche Arzneimittel, die sich bei der Behandlung von altersbedingter Vergesslichkeit und …"
+    },
+    {
+      "title": "yethdev/qwen3.5-0.8b-manumit-v2 · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mit mental-aktiv das Gedächtnis trainieren - Tebonin®",
+      "url": "https://www.tebonin.de/service/mental-aktiv",
+      "snippet": "Tebonin® konzent® 240 mg. Zur Verbesserung einer altersbedingten Verschlechterung geistiger Fähigkeiten und der Lebensqualität …"
+    },
+    {
+      "title": "yethdev/qwen3.5-0.8b-manumit-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TEBONIN intens 120 mg Filmtabletten - Beipackzettel",
+      "url": "https://www.apotheken-umschau.de/medikamente/beipackzettel/tebonin-intens-120-mg-filmtabletten-3379106.html",
+      "snippet": "In diesem Beipackzettel finden Sie verständliche Informationen zu Ihrem Arzneimittel – unter anderem zu Wirkung, Anwendung und …"
+    }
+  ]
+}

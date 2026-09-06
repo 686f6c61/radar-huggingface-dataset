@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch8",
+  "slug": "lanni-ni-dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch8",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch8",
+  "created_at": "2026-09-05T22:14:50.000Z",
+  "updated_at": "2026-09-05T22:16:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bet Smart: Top Sports Betting Strategies - MasterClass",
+      "url": "https://www.masterclass.com/classes/think-like-a-sharp/chapters/bet-smart-top-sports-betting-strategies",
+      "snippet": "Get insider tips from pros who’ve made millions betting on sports. In this class, you'll learn how to find the edges, manage your …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7 · Hugging ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7",
+      "snippet": "Instructions to use Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7 with libraries, inference providers, notebooks, and local apps. Follow these links ..."
+    },
+    {
+      "title": "Bet Smart: Top Sports Betting Strategies - MasterClass",
+      "url": "https://www.masterclass.com/classes/think-like-a-sharp",
+      "snippet": "Get insider tips from pros who’ve made millions betting on sports. Learn how to find the edges, manage your bankroll, and avoid …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sports Betting Masterclass | Full Betting Model System + Training",
+      "url": "https://www.underdogchance.com/sports-betting-masterclass/",
+      "snippet": "With this masterclass, you’ll learn how to navigate the sports betting world confidently and profitably. You’ll have access to prepared …"
+    }
+  ]
+}

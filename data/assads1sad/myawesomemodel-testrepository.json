@@ -5,7 +5,7 @@
   "author": "Assads1SAD",
   "url": "https://huggingface.co/Assads1SAD/MyAwesomeModel-TestRepository",
   "created_at": "2026-09-03T18:49:23.000Z",
-  "updated_at": "2026-09-03T19:13:11.000Z",
+  "updated_at": "2026-09-06T01:38:45.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 49,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

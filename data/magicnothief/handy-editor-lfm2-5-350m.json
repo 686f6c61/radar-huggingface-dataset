@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MagicNoThief/handy-editor-lfm2.5-350m",
+  "slug": "magicnothief-handy-editor-lfm2-5-350m",
+  "author": "MagicNoThief",
+  "url": "https://huggingface.co/MagicNoThief/handy-editor-lfm2.5-350m",
+  "created_at": "2026-09-05T16:54:23.000Z",
+  "updated_at": "2026-09-06T01:28:50.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "dictation",
+    "disfluency-removal",
+    "text-editing",
+    "speech",
+    "lfm2.5",
+    "edge",
+    "text-generation",
+    "en",
+    "dataset:MagicNoThief/handy-dictation-editing",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:quantized:LiquidAI/LFM2.5-350M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 1320023552,
+  "storage_human": "1.3 GB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La connexion à Mon Compte | CAF – Caisse d’Allocations Familiales",
+      "url": "https://www.caf.fr/allocataires/actualites/la-caf-et-vous/la-connexion-mon-compte",
+      "snippet": "Pour vous connecter à L’Espace Mon Compte ou sur l’appli Caf-Mon Compte, vous devez utiliser votre mot de passe Caf. C’est le …"
+    },
+    {
+      "title": "MagicNoThief/handy-editor-lfm2.5-350m · Hugging Face",
+      "url": "https://huggingface.co/MagicNoThief/handy-editor-lfm2.5-350m",
+      "snippet": "Instructions to use MagicNoThief/handy-editor-lfm2.5-350m with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "CAF",
+      "url": "https://connect.caf.fr/connexionappli/dist/",
+      "snippet": "Portail des allocations familiales Contenu de la page"
+    },
+    {
+      "title": "Liquid AI LFM2.5-350M: Agent Model Under 1GB of Memory",
+      "url": "https://aihola.com/article/liquid-ai-lfm25-350m-agent",
+      "snippet": "Liquid AI releases LFM2.5-350M, a 350M-parameter model trained on 28T tokens with RL, targeting agentic tool use and data extraction on edge devices."
+    },
+    {
+      "title": "Erreur",
+      "url": "https://wwwd.caf.fr/wps/myportal/caffr/moncompte/tableaudebord",
+      "snippet": "Votre requête n'a pu aboutir. Veuillez vérifier la cohérence de votre URL Retour à la page d'accueil"
+    }
+  ]
+}

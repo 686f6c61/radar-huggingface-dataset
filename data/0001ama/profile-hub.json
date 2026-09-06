@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "0001AMA/profile-hub",
+  "slug": "0001ama-profile-hub",
+  "author": "0001AMA",
+  "url": "https://huggingface.co/0001AMA/profile-hub",
+  "created_at": "2026-09-02T06:39:27.000Z",
+  "updated_at": "2026-09-06T00:24:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "computer-vision",
+    "SPAD",
+    "object-detection",
+    "multimodal",
+    "profile",
+    "Deborah-Akuoko-Minka",
+    "Optica-Open",
+    "signal-processing",
+    "machine-intelligence",
+    "arxiv:2110.04929",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ScanSmart-Software zum Scannen von Dokumenten | Epson Deutschland",
+      "url": "https://www.epson.de/de_DE/scansmart-document-scanning-software",
+      "snippet": "Mit dieser einfachen und benutzerfreundlichen Software können Sie Dokumente ganz einfach scannen und weitergeben."
+    },
+    {
+      "title": "0001AMA/profile-hub · Hugging Face",
+      "url": "https://huggingface.co/0001AMA/profile-hub",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Epson ScanSmart Downloads | Epson US",
+      "url": "https://epson.com/support/epson-scansmart-downloads?msockid=12f87f5493cc6a792d1c689892e16b2d",
+      "snippet": "To locate downloads for your Epson product, visit the Support home page and find your product using search or category navigation. …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=machine-intelligence",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "SmartScan - PDF & OCR Scanner – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.droidpublishing.smartscan&hl=de",
+      "snippet": "Intelligente PDF-Scanner-App mit OCR, Bearbeitung, automatischer Kantenerkennung und PDF-Reader."
+    }
+  ]
+}

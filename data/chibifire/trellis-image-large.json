@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chibifire/TRELLIS-image-large",
+  "slug": "chibifire-trellis-image-large",
+  "author": "chibifire",
+  "url": "https://huggingface.co/chibifire/TRELLIS-image-large",
+  "created_at": "2026-09-06T01:12:45.000Z",
+  "updated_at": "2026-09-06T01:12:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "trellis",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "trellis",
+    "image-to-3d",
+    "en",
+    "arxiv:2412.01506",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3299233632,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE 10 BEST Batumi Casino Hotels - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotels-g297576-zff14-Batumi_Adjara_Region-Hotels.html",
+      "snippet": "Best Casino Hotels in Batumi on Tripadvisor: Find 3,165 traveler reviews, 3,953 candid photos, and prices for 25 casino hotels in …"
+    },
+    {
+      "title": "microsoft/TRELLIS-image-large · Hugging Face",
+      "url": "https://huggingface.co/microsoft/TRELLIS-image-large",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Casino Hotels in Batumi: Your Ultimate Gaming Guide",
+      "url": "https://batumi.casinohotels.guide/",
+      "snippet": "2 hours ago · Immerse yourself in a world of glamour and excitement as you explore the top casino hotels in Batumi. Whether you're …"
+    },
+    {
+      "title": "TRELLIS-image-large: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/trellis-image-large-jeffreyxiang",
+      "snippet": "Q: Does the model support text or additional conditioning beyond images? A: TRELLIS-image-large is specifically image-conditioned. For text-based 3D generation from the TRELLIS family, use the text-conditioned variant TRELLIS-text-xlarge. Q: How does inference speed compare to generating 3D through photogrammetry or traditional 3D scanning?"
+    },
+    {
+      "title": "DIE 10 BESTEN Casino-Hotels in Batumi - Tripadvisor",
+      "url": "https://www.tripadvisor.de/Hotels-g297576-zff14-Batumi_Adjara_Region-Hotels.html",
+      "snippet": "Jan 1, 2026 · Beste Batumi Casino-Hotels: Auf Tripadvisor finden Sie 3.018 Bewertungen von Reisenden, 3.820 authentische …"
+    }
+  ]
+}

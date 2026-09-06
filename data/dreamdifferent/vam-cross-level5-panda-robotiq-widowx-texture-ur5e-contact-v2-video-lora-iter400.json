@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400",
+  "slug": "dreamdifferent-vam-cross-level5-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400",
+  "created_at": "2026-09-05T21:23:41.000Z",
+  "updated_at": "2026-09-05T21:24:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "video-generation",
+    "lora",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3707437850,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sendungen im Ersten A-Z | Sendungs A bis Z - ARD | Das Erste",
+      "url": "https://www.daserste.de/sendungen-a-z/live-az-100.jsp?filter=deutschland+info",
+      "snippet": "Hier finden Sie alle Webseiten zu aktuellen Sendungen im Ersten, alphabetisch geordnet."
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-video-lora ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-video-lora-iter400",
+      "snippet": "This is an adapter checkpoint, not a standalone fused model. Load the exact initial Video2World backbone above first and then apply this LoRA checkpoint. For fused_video2world_dit, the initial checkpoint already includes the earlier WidowX/Bridge LoRA fusion; loading the original Bridge backbone instead would be incorrect. Supporting runtime artifacts"
+    },
+    {
+      "title": "„Quizduell\" mit Jörg ... - Quizduell - ARD | Das Erste",
+      "url": "https://www.daserste.de/unterhaltung/quiz-show/quizduell/presse/pressemeldung-18706.html",
+      "snippet": "Montag bis Donnerstag, 18:00 Uhr live im Ersten Die prominenten Kandidaten, die in der kommenden Woche beim „Quizduell\" gegen …"
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-video ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-video-lora-iter-400",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Immer wieder sonntags (1) | Immer wieder sonntags - ARD | Das Erste",
+      "url": "https://tuarepo.daserste.de/unterhaltung/musik/immer-wieder-sonntags/sendung/immer-wieder-sonntags-folge-1-126.html",
+      "snippet": "In zwölf Live-Sendungen werden Schlager-, Volksmusik- und Comedy-Stars auftreten oder live per Video zugeschaltet. Wie schon in …"
+    }
+  ]
+}

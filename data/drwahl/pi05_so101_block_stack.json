@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "drwahl/pi05_so101_block_stack",
+  "slug": "drwahl-pi05_so101_block_stack",
+  "author": "drwahl",
+  "url": "https://huggingface.co/drwahl/pi05_so101_block_stack",
+  "created_at": "2026-09-06T01:26:16.000Z",
+  "updated_at": "2026-09-06T02:15:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "LeRobot",
+    "so101",
+    "pi0.5",
+    "lora",
+    "robotics",
+    "base_model:lerobot/pi05_base",
+    "base_model:adapter:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1254523568,
+  "storage_human": "1.3 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "RoMALab/pi05_so101_stacking · Hugging Face",
+      "url": "https://huggingface.co/RoMALab/pi05_so101_stacking",
+      "snippet": "Instructions to use RoMALab/pi05_so101_stacking with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use RoMALab/pi05_so101_stacking with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "Tests Comparatifs - 60 Millions de Consommateurs",
+      "url": "https://www.60millions-mag.com/tests-comparatifs/",
+      "snippet": "4 days ago · À quel point les sacs à dos polyvalents, souvent présentés comme résistants aux accrocs et à la pluie, sont-ils fiables ? …"
+    },
+    {
+      "title": "GitHub - legalaspro/so101-ros-physical-ai: ROS 2 stack for SO-101 ...",
+      "url": "https://github.com/legalaspro/so101-ros-physical-ai",
+      "snippet": "ROS 2 stack for SO-101 leader/follower: Feetech driver, bringup, teleop, MoveIt2, episode recording, Rerun, policy inference. - legalaspro/so101-ros-physical-ai"
+    },
+    {
+      "title": "60 Millions de Consommateurs",
+      "url": "https://offres.60millions-mag.com/landing-page/bZ3Uxz0oEe/3176",
+      "snippet": "Découvrez les résultats exclusifs de nos tests sur les confitures de fraise et d'abricot, de lessives et autres enquêtes. Voir le …"
+    }
+  ]
+}

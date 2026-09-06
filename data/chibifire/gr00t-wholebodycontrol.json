@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chibifire/GR00T-WholeBodyControl",
+  "slug": "chibifire-gr00t-wholebodycontrol",
+  "author": "chibifire",
+  "url": "https://huggingface.co/chibifire/GR00T-WholeBodyControl",
+  "created_at": "2026-09-06T01:34:30.000Z",
+  "updated_at": "2026-09-06T01:35:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "arxiv:2511.07820",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2032669145,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmeTV Video Chat — Omegle Random Cam Chat Alternative 2026",
+      "url": "https://ome.tv/",
+      "snippet": "Discover Omegle Alternative to meet new people, make friends, or even find love. OmeTV is a random video chat, offering a …"
+    },
+    {
+      "title": "GitHub - mackatwentytsuru/gr00t-wholebodycontrol: Welcome to GR00T ...",
+      "url": "https://github.com/mackatwentytsuru/gr00t-wholebodycontrol",
+      "snippet": "Welcome to GR00T Whole-Body Control (WBC)! This is a unified platform for developing and deploying advanced humanoid controllers. This includes: Decoupled WBC models used in NVIDIA Isaac-Gr00t, Gr0..."
+    },
+    {
+      "title": "OmeTV – Omegle Alternative for Random Webcam Chats",
+      "url": "https://ome.tv/why-ometv/",
+      "snippet": "Discover Omegle Alternative for random cam chats. Find out why users choose OmeTV to talk to strangers, meet people online and …"
+    },
+    {
+      "title": "GR00T-WholeBodyControl Documentation — GR00T-WholeBodyControl Documentation",
+      "url": "https://nvlabs.github.io/GR00T-WholeBodyControl/",
+      "snippet": "Module Index Search Page next Model Card Contents GR00T-WholeBodyControl Documentation What is GR00T-WholeBodyControl?"
+    },
+    {
+      "title": "OmeTV FAQ: Random Video Chat to Meet New People",
+      "url": "https://ome.tv/faq/",
+      "snippet": "Get answers to FAQ about OmeTV, a popular platform to chat with strangers and meet new people. Discover tips to enjoy safe and …"
+    }
+  ]
+}

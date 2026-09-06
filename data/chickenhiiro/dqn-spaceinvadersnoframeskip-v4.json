@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ChickenHiiro/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "chickenhiiro-dqn-spaceinvadersnoframeskip-v4",
+  "author": "ChickenHiiro",
+  "url": "https://huggingface.co/ChickenHiiro/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-05T21:09:35.000Z",
+  "updated_at": "2026-09-05T21:11:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54512279,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    },
+    {
+      "title": "jaymanvirk/dqn_space_invaders_no_frame_skip_v4 · Hugging Face",
+      "url": "https://huggingface.co/jaymanvirk/dqn_space_invaders_no_frame_skip_v4",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "oforyou：我挺好奇为什么在知乎黛西要挨骂，露丝也要挨骂？ 这俩不是截然相反的人物吗，黛西反面就是露丝，露丝反面就是黛西。 …"
+    },
+    {
+      "title": "ChikeJ/dqn-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/ChikeJ/dqn-SpaceInvadersNoFrameskip-v4",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "[Cheat Engine 7.4/CE修改器7.4] 吾爱首发汉化版 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1573180-1-1.html",
+      "snippet": "Jan 8, 2022 · PS：7.4的汉化包还是有很多不经常使用的选项没有被汉化（汉化的不够完美）因为我在CE原版英文包里没有找到，所 …"
+    }
+  ]
+}

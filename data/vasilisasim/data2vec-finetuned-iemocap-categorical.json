@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VasilisAsim/data2vec-finetuned-IEMOCAP-categorical",
+  "slug": "vasilisasim-data2vec-finetuned-iemocap-categorical",
+  "author": "VasilisAsim",
+  "url": "https://huggingface.co/VasilisAsim/data2vec-finetuned-IEMOCAP-categorical",
+  "created_at": "2026-09-05T23:03:56.000Z",
+  "updated_at": "2026-09-05T23:04:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "data2vec-audio",
+    "audio-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 93362180,
+  "parameters_human": "93.4M",
+  "storage_bytes": 373478472,
+  "storage_human": "373 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Sep 4, 2006 · Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and …"
+    },
+    {
+      "title": "VasilisAsim/data2vec-finetuned-IEMOCAP · Hugging Face",
+      "url": "https://huggingface.co/VasilisAsim/data2vec-finetuned-IEMOCAP",
+      "snippet": "VasilisAsim / data2vec-finetuned-IEMOCAP like 0 Audio Classification Transformers Safetensors data2vec-audio arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "VasilisAsim/data2vec-finetuned-IEMOCAP-Dimensional · Hugging Face",
+      "url": "https://huggingface.co/VasilisAsim/data2vec-finetuned-IEMOCAP-Dimensional",
+      "snippet": "VasilisAsim / data2vec-finetuned-IEMOCAP-Dimensional like 0 Audio Classification Transformers Safetensors data2vec-audio arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/SignOfFour-i1-GGUF",
   "created_at": "2026-09-04T23:16:43.000Z",
-  "updated_at": "2026-09-05T01:57:56.000Z",
+  "updated_at": "2026-09-05T18:32:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -44,8 +44,8 @@
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 48462315008,
-  "storage_human": "48.5 GB",
+  "storage_bytes": 370842801280,
+  "storage_human": "370.8 GB",
   "base_model": "pragmaticcs/SignOfFour",
   "formats": [
     "gguf"

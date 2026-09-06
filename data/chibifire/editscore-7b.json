@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chibifire/EditScore-7B",
+  "slug": "chibifire-editscore-7b",
+  "author": "chibifire",
+  "url": "https://huggingface.co/chibifire/EditScore-7B",
+  "created_at": "2026-09-06T01:26:58.000Z",
+  "updated_at": "2026-09-06T01:27:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:2509.23909",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323826774,
+  "storage_human": "324 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home [www.iplt20.com]",
+      "url": "https://www.iplt20.com/",
+      "snippet": "IPL T20 | Indian Premier League Download the official IPL App for live scores, breaking stories, match highlights, press conferences, …"
+    },
+    {
+      "title": "EditScore-7B - Hugging Face",
+      "url": "https://huggingface.co/EditScore/EditScore-7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IPL 2026 | | Dilhara Fernando Profile - IPLT20",
+      "url": "https://www.iplt20.com/players/dilhara-fernando/345",
+      "snippet": "Check out details of Dilhara Fernando - Profile, Matches, IPL Stats for Batting, Bowling, Fielding, Total Matches and much more on …"
+    },
+    {
+      "title": "GitHub - VectorSpaceLab/EditScore: [ICLR 2026] EditScore: Unlocking ...",
+      "url": "https://github.com/VectorSpaceLab/EditScore",
+      "snippet": "This repository releases both the EditScore models and the EditReward-Bench dataset to facilitate future research in reward modeling, policy optimization, and AI-driven model improvement. EditScore as a superior reward signal for image editing."
+    },
+    {
+      "title": "IPL 2026 | | Matthew Wade Profile - IPLT20",
+      "url": "https://www.iplt20.com/index.php/players/matthew-wade/290",
+      "snippet": "Check out details of Matthew Wade - Profile, Matches, IPL Stats for Batting, Bowling, Fielding, Total Matches and much more on IPL …"
+    }
+  ]
+}

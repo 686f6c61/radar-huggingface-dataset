@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Novasy/nova-coder-merge-7b",
+  "slug": "novasy-nova-coder-merge-7b",
+  "author": "Novasy",
+  "url": "https://huggingface.co/Novasy/nova-coder-merge-7b",
+  "created_at": "2026-09-05T22:18:39.000Z",
+  "updated_at": "2026-09-05T22:20:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2306.01708",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271520,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ماهي الدولة العربية التي تاهلت لكاس العالم ث?ثه مرات متتالية",
+      "url": "https://www.sqorebda3.com/vb/threads/29489/",
+      "snippet": "الدولة العربية التي تأهلت لكأس العالم ثلاث مرات متتالية هي السعودية، حيث تأهلت في أعوام 1994 و1998 و2002. كما تأهلت السعودية لكأس العالم 6 مرات في تاريخها، وهو أكثر من أي دولة عربية …"
+    },
+    {
+      "title": "NikitosKey/Merge-Math-Coder-7B-v3 · Hugging Face",
+      "url": "https://huggingface.co/NikitosKey/Merge-Math-Coder-7B-v3",
+      "snippet": "merged_model This is a merge of pre-trained language models created using mergekit. Merge Details Merge Method This model was merged using the DARE TIES merge method using Qwen/Qwen2.5-7B-Instruct as a base. Models Merged The following models were included in the merge: Qwen/Qwen2.5-Coder-7B-Instruct Qwen/Qwen2.5-Math-7B-Instruct Configuration The following YAML configuration was used to ..."
+    },
+    {
+      "title": "ااسماء مواليد ذكور بحرف الثاء, اسامى مميزة للصبيان مع المعنى , اسماء ...",
+      "url": "https://www.sqorebda3.com/vb/threads/47113/",
+      "snippet": "ااسماء مواليد ذكور بحرف الثاء, اسامى مميزة للصبيان مع المعنى , اسماء جديدة ث 2027 الدكتورة هدى .:: إدارية الأقـسـام العامـة ::."
+    },
+    {
+      "title": "Amazon Nova",
+      "url": "https://nova.amazon.com/",
+      "snippet": "Try latest Amazon Nova foundation models, including Amazon Nova 2 Lite, Amazon Nova Act, and Amazon Nova 2 Sonic. Chat, generate text and code, and build agents. Plus, start building for free with an Amazon Nova API Key."
+    },
+    {
+      "title": "اسم بلد بحرف ث , اسماء بلاد بحرف الثاء , مدن بحرف ث بحرف الثاء",
+      "url": "https://www.sqorebda3.com/vb/threads/80206/",
+      "snippet": "Aug 13, 2020 · ثيساليا ثربان ثادق ثقيف ثون ثمود ثيساليا : هى منطقة معمرة قديمة توجد فى اليونان حيث يرجع تاريخها إلى عام 1881 م وبعد ذلك أصبحت جزء من دولة اليونان الحديثة. ثون : …"
+    }
+  ]
+}

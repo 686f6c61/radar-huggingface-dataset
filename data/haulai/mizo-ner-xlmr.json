@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "haulai/mizo-ner-xlmr",
+  "slug": "haulai-mizo-ner-xlmr",
+  "author": "haulai",
+  "url": "https://huggingface.co/haulai/mizo-ner-xlmr",
+  "created_at": "2026-09-05T17:46:11.000Z",
+  "updated_at": "2026-09-05T17:52:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "lus"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "mizo",
+    "tibeto-burman",
+    "low-resource",
+    "token-classification",
+    "lus",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277470743,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126995922,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=37c1759e0a556d9135b462550b856c02",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "haulai/mizo-ner · Hugging Face",
+      "url": "https://huggingface.co/haulai/mizo-ner",
+      "snippet": "haulai / mizo-ner like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "HAULAI2025 (HAUL) - Hugging Face",
+      "url": "https://huggingface.co/HAULAI2025/models",
+      "snippet": "Org profile for HAUL on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

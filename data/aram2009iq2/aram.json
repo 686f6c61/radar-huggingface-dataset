@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Aram2009iq2/Aram",
+  "slug": "aram2009iq2-aram",
+  "author": "Aram2009iq2",
+  "url": "https://huggingface.co/Aram2009iq2/Aram",
+  "created_at": "2026-09-05T20:39:49.000Z",
+  "updated_at": "2026-09-05T20:39:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "苹果手机出现support.apple.com/iphone的 5 个解决方法！ - 知乎",
+      "url": "https://www.zhihu.com/zvideo/1665738980367921152",
+      "snippet": "Jul 21, 2023 · iPhone黑屏，屏幕显示http://support.apple.com/iphone/restore ，其实是iPhone卡在了恢复模式，如果你也遇到了这种 …"
+    },
+    {
+      "title": "Aram - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1955647093607545073",
+      "snippet": "Generate stunning beach, epic_7, aram_epic_seven anime art with the 'Aram' model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "iTunes - 知乎",
+      "url": "https://www.zhihu.com/topic/19550307/hot",
+      "snippet": "iTunes是一款供Mac和PC使用的一款免费数字媒体播放应用程序，能管理和播放数字音乐和视频。由苹果电脑在2001年1月10日于旧金 …"
+    },
+    {
+      "title": "MLSTM-FCN/aram_model.py at master · titu1994/MLSTM-FCN",
+      "url": "https://github.com/titu1994/MLSTM-FCN/blob/master/aram_model.py",
+      "snippet": "Multivariate LSTM Fully Convolutional Networks for Time Series Classification - titu1994/MLSTM-FCN"
+    },
+    {
+      "title": "iTunes软件不显示苹果手机图标怎么办-百度经验",
+      "url": "https://jingyan.baidu.com/article/d45ad14869584069552b80d5.html",
+      "snippet": "May 18, 2019 · 6 7 分步阅读 进入iTunes软件后，如果要同步或操作iPad或iPhone手机的内容，就需要先点击苹果手机图标，如果找不 …"
+    }
+  ]
+}

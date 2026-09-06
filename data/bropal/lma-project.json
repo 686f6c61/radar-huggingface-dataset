@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "bropal/lma-project",
+  "slug": "bropal-lma-project",
+  "author": "bropal",
+  "url": "https://huggingface.co/bropal/lma-project",
+  "created_at": "2026-09-04T11:25:46.000Z",
+  "updated_at": "2026-09-05T23:39:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 194,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10430127740,
+  "storage_human": "10.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Moodle.org",
+      "url": "https://moodle.org/",
+      "snippet": "Moodle is a Learning Platform or Learning Management System (LMS) - a free Open Source software package designed to help …"
+    },
+    {
+      "title": "bropal/lma-project · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/bropal/lma-project",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Moodle app | Moodle downloads",
+      "url": "https://download.moodle.org/mobile",
+      "snippet": "Courses and programs to develop your skills as a Moodle educator, administrator, designer or developer. Moodle downloads Home …"
+    },
+    {
+      "title": "bropal (Gopal Kataria) - Hugging Face",
+      "url": "https://huggingface.co/bropal",
+      "snippet": "User profile of Gopal Kataria on Hugging Face"
+    },
+    {
+      "title": "Titulní stránka | Moodle.org",
+      "url": "https://moodle.org/index.php?lang=cs",
+      "snippet": "Moodle is a Learning Platform or Learning Management System (LMS) - a free Open Source software package designed to help …"
+    }
+  ]
+}

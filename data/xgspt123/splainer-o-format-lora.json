@@ -4,8 +4,8 @@
   "slug": "xgspt123-splainer-o-format-lora",
   "author": "Xgspt123",
   "url": "https://huggingface.co/Xgspt123/splainer-o-format-lora",
-  "created_at": "2026-09-02T16:30:58.000Z",
-  "updated_at": "2026-09-02T16:31:12.000Z",
+  "created_at": "2026-09-05T20:17:15.000Z",
+  "updated_at": "2026-09-05T20:17:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 193208103,
-  "storage_human": "193 MB",
+  "storage_bytes": 63335775,
+  "storage_human": "63 MB",
   "base_model": "unsloth/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Clownstein/Black-Onyx-5B-GGUF",
+  "slug": "clownstein-black-onyx-5b-gguf",
+  "author": "Clownstein",
+  "url": "https://huggingface.co/Clownstein/Black-Onyx-5B-GGUF",
+  "created_at": "2026-09-06T01:11:49.000Z",
+  "updated_at": "2026-09-06T01:39:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "cybersecurity",
+    "secure-code-generation",
+    "threat-intelligence",
+    "vulnerability-detection",
+    "gemma",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 38324579904,
+  "storage_human": "38.3 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://platform.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Clownstein/Black-Onyx-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Clownstein/Black-Onyx-12B-GGUF",
+      "snippet": "Black Onyx 12B Black Onyx 12B is a cybersecurity-specialized fine-tune of Google Gemma 4 12B Instruction-Tuned. The model was trained through a multi-stage pipeline combining continued cybersecurity training, supervised fine-tuning, GRPO, and Direct Preference Optimization (DPO)."
+    },
+    {
+      "title": "إن وأخواتها - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A5%D9%86_%D9%88%D8%A3%D8%AE%D9%88%D8%A7%D8%AA%D9%87%D8%A7",
+      "snippet": "النصوص متاحة تحت رخصة المشاع الإبداعي الملزمة بنسبة العمل لمؤلفه وبترخيص الأعمال المشتقة بالمثل 4.0؛ قد تُطبّق شروط إضافية. استخدامُك هذا الموقع هو موافقةٌ على شروط الاستخداموسياسة …"
+    },
+    {
+      "title": "Albert Clownstein - Hugging Face",
+      "url": "https://huggingface.co/Clownstein",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 7 hours ago ... updated a model about 7 hours ago"
+    },
+    {
+      "title": "‎آن | AAN‎ (@aansaudi) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aansaudi/",
+      "snippet": "50K Followers, 0 Following, 637 Posts - ‎آن | AAN (@aansaudi)‎ on Instagram: \"‎آن للأنـاقـة أن تكتسح العــالمَ من زمنٍ طويــلٍ وللآن وكُل آن‎\""
+    }
+  ]
+}

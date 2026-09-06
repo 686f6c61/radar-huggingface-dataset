@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "isldgist/mimicgen-ur5e-4task-ee6-state-own-sharednorm",
+  "slug": "isldgist-mimicgen-ur5e-4task-ee6-state-own-sharednorm",
+  "author": "isldgist",
+  "url": "https://huggingface.co/isldgist/mimicgen-ur5e-4task-ee6-state-own-sharednorm",
+  "created_at": "2026-09-05T19:13:35.000Z",
+  "updated_at": "2026-09-05T19:17:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vision-language-action",
+    "pi0.5",
+    "mimicgen",
+    "ur5e",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24881276332,
+  "storage_human": "24.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gebrauchte Baumaschinen kaufen | kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-anhaenger-nutzfahrzeuge/baumaschinen/c276+anhaenger_nutzfahrzeuge.art_s:baumaschinen?msockid=3b07ed1109566c6e1fdafada08906d4a",
+      "snippet": "Kleinanzeigen: Gebrauchte Baumaschinen kaufen - Jetzt finden oder inserieren! - kleinanzeigen.de"
+    },
+    {
+      "title": "isldgist/mimicgen-panda-ur5e-4task-balanced-sharednorm · Hugging Face",
+      "url": "https://huggingface.co/isldgist/mimicgen-panda-ur5e-4task-balanced-sharednorm",
+      "snippet": "Both embodiment runs use normalization statistics computed from the combined Panda and UR5e source data. The uploaded folders include params, assets, train_state, and Orbax checkpoint metadata, so they can be used for inference, fine-tuning, or exact optimizer-state resume."
+    },
+    {
+      "title": "Used Construction Equipment & Heavy Equipment For Sale",
+      "url": "https://www.machinefinder.eu/ww/de-DE/markets/construction-equipment",
+      "snippet": "MachineFinder allows visitors to locate used construction equipment across the country. View an inventory of used excavators."
+    },
+    {
+      "title": "isldgist (ISL Lab) - Hugging Face",
+      "url": "https://huggingface.co/isldgist",
+      "snippet": "models1 isldgist/mimicgen-panda-ur5e-4task-balanced-sharednorm Robotics •Updated about 7 hours ago"
+    },
+    {
+      "title": "Der Marktplatz für Baumaschinen - baupool.com",
+      "url": "https://www.baupool.com/",
+      "snippet": "Der Marktplatz für Baumaschinen - baupool.com . Informationen für Händler Werben auf baupool. Feedback senden . Deutsch . EUR …"
+    }
+  ]
+}

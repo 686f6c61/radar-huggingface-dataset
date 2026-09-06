@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "PBatch23888/birdspotter-sam21-openvino",
+  "slug": "pbatch23888-birdspotter-sam21-openvino",
+  "author": "PBatch23888",
+  "url": "https://huggingface.co/PBatch23888/birdspotter-sam21-openvino",
+  "created_at": "2026-09-05T22:50:41.000Z",
+  "updated_at": "2026-09-05T22:51:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "sam2",
+    "segmentation",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 438803568,
+  "storage_human": "439 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Смотрите, что нашлось на Авто.ру: автомобили по цене от 20 000 …",
+      "url": "https://auto.ru/cars/all/",
+      "snippet": "Полный модельный ряд автомобилей по цене от 20 000 рублей - более 658 899 автомобилей, свежие объявления о продаже …"
+    },
+    {
+      "title": "OpenVINO 2026.3 — OpenVINO™ documentation",
+      "url": "https://docs.openvino.ai/",
+      "snippet": "OpenVINO is an open-source toolkitfor deploying high-performance AI solutions across cloud, AI PCs, edge devices, and Physical AI alike. Develop your applications"
+    },
+    {
+      "title": "Авто.ру: купить и продать автомобиль в Москве",
+      "url": "https://auto.ru/moskva/",
+      "snippet": "185 107 объявлений о продаже машин от частных лиц и официальных дилеров в Москве. Цена и отзывы на новые и бу …"
+    },
+    {
+      "title": "OpenVINO™ Model Hub - Intel",
+      "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/model-hub.html",
+      "snippet": "*OpenVINO Verified Models ↗ *Filter by: Early ReleaseOpenVINO™ Model ServerWith Benchmarks *Sort by: *A to Z*Z to A*Newest first*Oldest first *Model List *This page presents benchmark results for Intel® Distribution of OpenVINO™ toolkit for a representative selection of AI models on Intel® devices."
+    },
+    {
+      "title": "Смотрите, что нашлось на Авто.ру: Mercedes-Benz по цене от 55 …",
+      "url": "https://auto.ru/moskva/cars/mercedes/all/",
+      "snippet": "На Авто.ру вы можете оформить кредит, проверить автомобиль по VIN, узнать полную историю автомобиля и выбрать по …"
+    }
+  ]
+}

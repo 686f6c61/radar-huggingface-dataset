@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "GGUFGuy/floppyx3-MEGAmodel-merged-GGUF",
+  "slug": "ggufguy-floppyx3-megamodel-merged-gguf",
+  "author": "GGUFGuy",
+  "url": "https://huggingface.co/GGUFGuy/floppyx3-MEGAmodel-merged-GGUF",
+  "created_at": "2026-09-05T23:36:11.000Z",
+  "updated_at": "2026-09-05T23:39:31.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "base",
+    "ggufguy",
+    "megamodel",
+    "floppy",
+    "text-generation",
+    "en",
+    "dataset:ssmi153/Capybara-ShareGPT",
+    "base_model:NILKNARFGonzo/floppyx3-MEGAmodel-merged",
+    "base_model:quantized:NILKNARFGonzo/floppyx3-MEGAmodel-merged",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1088832,
+  "parameters_human": "1.1M",
+  "storage_bytes": 9667456,
+  "storage_human": "10 MB",
+  "base_model": "NILKNARFGonzo/floppyx3-MEGAmodel-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "GGUFGuy/floppyx3-MEGAmodel-merged-GGUF · Hugging Face",
+      "url": "https://huggingface.co/GGUFGuy/floppyx3-MEGAmodel-merged-GGUF",
+      "snippet": "Instructions to use GGUFGuy/floppyx3-MEGAmodel-merged-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=ggufguy",
+      "snippet": "Clear all GGUFGuy/floppyx3-MEGAmodel-base-GGUF Text Generation •1.09M•Updated about 1 hour ago GGUFGuy/floppyx3-MEGAmodel-merged-GGUF Text Generation •1.09M•Updated about 1 hour ago System theme Company"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "jackttv",
   "url": "https://huggingface.co/jackttv/card-scanner-siglip-lora",
   "created_at": "2026-09-04T20:17:06.000Z",
-  "updated_at": "2026-09-04T20:25:53.000Z",
+  "updated_at": "2026-09-06T00:27:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 154,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 94349101,
-  "storage_human": "94 MB",
+  "storage_bytes": 1008494979,
+  "storage_human": "1.0 GB",
   "base_model": "google/siglip2-so400m-patch14-384",
   "formats": [
     "safetensors"
