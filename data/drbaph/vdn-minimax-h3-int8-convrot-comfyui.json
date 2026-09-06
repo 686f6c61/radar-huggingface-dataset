@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "drbaph/vdn-minimax-h3-int8-convrot-comfyui",
+  "slug": "drbaph-vdn-minimax-h3-int8-convrot-comfyui",
+  "author": "drbaph",
+  "url": "https://huggingface.co/drbaph/vdn-minimax-h3-int8-convrot-comfyui",
+  "created_at": "2026-09-04T04:10:21.000Z",
+  "updated_at": "2026-09-04T20:25:40.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "safetensors",
+    "comfyui",
+    "video",
+    "int8",
+    "quantization",
+    "vdn",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 3352,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3500892932,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Преводач",
+      "url": "https://translate.google.bg/",
+      "snippet": "Google Преводач предлага безплатен превод на текст, фрази и уеб страници между български и над 100 други езика."
+    },
+    {
+      "title": "drbaph/vdn-minimax-h3-int8-convrot-comfyui · Hugging Face",
+      "url": "https://huggingface.co/drbaph/vdn-minimax-h3-int8-convrot-comfyui",
+      "snippet": "Install Download this repo into ComfyUI/models/vdn/(the folder name becomes the vdn_checkpointentry), then select it in the Apply-VDN node's vdn_checkpointdropdown. Nothing else changes; the base MiniMax-H3 model and this node's settings work exactly as before. Ref2V example Rendered with this repo's INT8 ConvRot stage on a ref2vabase: 8 steps, er_sde / beta, 768x768. How it was made tools ..."
+    },
+    {
+      "title": "Google Преводач",
+      "url": "https://translate.google.bg/m",
+      "snippet": "Начална страница на Google Изпращане на отзиви Поверителност и условия Превключване към ..."
+    },
+    {
+      "title": "drbaph/vdn-minimax-h3-int8-convrot-comfyui at main",
+      "url": "https://huggingface.co/drbaph/vdn-minimax-h3-int8-convrot-comfyui/tree/main",
+      "snippet": "int8 quantization vdn License:minimax-h3-community Model cardFilesFiles and versions xet Community"
+    },
+    {
+      "title": "Google Преводач",
+      "url": "https://translate.google.bg/details",
+      "snippet": "Някои изречения може да включват алтернативи, които са изменени по род. За да ги видите, кликнете върху изречение. …"
+    }
+  ]
+}

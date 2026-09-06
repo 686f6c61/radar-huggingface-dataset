@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch5",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch5",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch5",
+  "created_at": "2026-09-06T02:58:23.000Z",
+  "updated_at": "2026-09-06T03:00:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "哈尔滨2026下半年教师招聘公告 - 爱企查",
+      "url": "https://aiqicha.baidu.com/details/ugknowledge?id=707f24649a59f6101844cf6e72273f15",
+      "snippet": "4 days ago · 1. 松北区专项招聘：松北区教育系统所属事业单位面向社会公开招聘中小学教师 20 名，涉及 7 所学校，包括哈尔滨新区 …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "哈尔滨市松北区人民政府--2026年度哈尔滨“丁香人才周”（春季）松北区中小学教师招聘 …",
+      "url": "https://www.songbei.gov.cn/hebsbq/tzgg/202604/c01_1118189.shtml",
+      "snippet": "Apr 7, 2026 · 根据《2026年度哈尔滨“丁香人才周”（春季）事业单位引才招聘公告》，按照《关于印发黑龙江省事业单位公开招聘工作 …"
+    },
+    {
+      "title": "Lanni Bu",
+      "url": "https://lanni-ni.github.io/",
+      "snippet": "Xiulin Yang, Zhuoxuan Ju, Lanni Bu, Zoey Liu, Nathan Schneider. Proceedings of the Workshop on Universal Dependencies (UDW) at SyntaxFest 2025."
+    },
+    {
+      "title": "2026年哈尔滨市“丁香人才周”（春季）松北区中小学教师招聘10人公告_黑龙江教师招聘 …",
+      "url": "https://hlj.huatu.com/2026/0407/2063865.html",
+      "snippet": "Apr 7, 2026 · 哈尔滨教师招聘信息：2026年哈尔滨市“丁香人才周”（春季）松北区中小学教师招聘10人公告由华图黑龙江教师招聘考试 …"
+    }
+  ]
+}

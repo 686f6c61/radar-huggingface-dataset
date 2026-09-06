@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hylin16/food-recognition-food11-effnet-b3-cbam-380",
+  "slug": "hylin16-food-recognition-food11-effnet-b3-cbam-380",
+  "author": "hylin16",
+  "url": "https://huggingface.co/hylin16/food-recognition-food11-effnet-b3-cbam-380",
+  "created_at": "2026-09-06T11:14:43.000Z",
+  "updated_at": "2026-09-06T11:37:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "food",
+    "cbam",
+    "attention",
+    "food-11",
+    "arxiv:1807.06521",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44556520,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Food-11",
+      "metric": "Top-1 accuracy",
+      "value": 0.9545454545454546
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Food-11",
+      "metric": "Macro F1",
+      "value": 0.9540718564372465
+    }
+  ],
+  "sources": [
+    {
+      "title": "Flora",
+      "url": "https://www.floradsm.com/",
+      "snippet": "A DESTINATION Flora is a boutique cafe located inside the lush Greater Des Moines Botanical Gardens. We offer seasonal cuisine …"
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1X06Y-HSPeHbEWtsXpyal8R1PliiVvpJq?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Speisekarte - CAFÉ FLORA",
+      "url": "https://www.cafe-flora-home.de/speisekarte.html",
+      "snippet": "FLORA SPEZIAL AB 14 UHR ... Eine genauere Beschreibung der Gerichte finden Sie bei uns vor Ort. Wir kochen ausschließlich …"
+    },
+    {
+      "title": "NutrifyAI: An AI-Powered System for Real-Time Food Detection ...",
+      "url": "https://arxiv.org/html/2408.10532v2",
+      "snippet": "Particularly, computer vision offers a promising application in the domain of food recognition and nutrient analysis [3]. This research aims to explore the capabilities of a computer vision model, specifically a YOLO (You Only Look Once) model, to accurately recognize food dishes and perform a reliable analysis of their nutritional content."
+    },
+    {
+      "title": "Flora Cafe | Des Moines IA - Facebook",
+      "url": "https://www.facebook.com/61574935623036/",
+      "snippet": "Jul 29, 2026 · Celebrate Easter with a delicious brunch 🐣 at Flora, soaking up the patio vibes, and a leisurely walk in the Greater Des …"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "wepiqx/Spark-X2.5-1.7B-ASHQ1-GGUF",
+  "slug": "wepiqx-spark-x2-5-1-7b-ashq1-gguf",
+  "author": "wepiqx",
+  "url": "https://huggingface.co/wepiqx/Spark-X2.5-1.7B-ASHQ1-GGUF",
+  "created_at": "2026-09-06T11:12:36.000Z",
+  "updated_at": "2026-09-06T11:12:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "spark",
+    "sliding-window-attention",
+    "hybrid-attention",
+    "1m-context",
+    "reasoning",
+    "coding",
+    "agent",
+    "quantized",
+    "quantization",
+    "llama-cpp",
+    "imatrix",
+    "hybrid-quantization",
+    "ASHQ1",
+    "priority-queue",
+    "text-generation",
+    "en",
+    "base_model:XHToken/Spark-X2.5-1.7B",
+    "base_model:finetune:XHToken/Spark-X2.5-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "XHToken/Spark-X2.5-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Board Game Arena - Play board games online for free!",
+      "url": "https://boardgamearena.com/",
+      "snippet": "0 Welcome to Board Game Arena! Jointhe largest boardgame table in the world. No download necessary - play directly from your …"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "Board Game Arena - ボードゲームを無料でオンラインプレイ!",
+      "url": "https://ja.boardgamearena.com/",
+      "snippet": "世界最大のオンラインボードゲームコミュニティ。1,000種類以上のゲームがブラウザ上で直接プレイできます。"
+    },
+    {
+      "title": "SparkLLM/Spark-X2.5-1.7B",
+      "url": "https://ollama.com/SparkLLM/Spark-X2.5-1.7B:latest",
+      "snippet": "Introduction We are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among ..."
+    },
+    {
+      "title": "Board Game Arena - 免费在线玩桌游！ • Board Game Arena",
+      "url": "https://zh-cn.boardgamearena.com/",
+      "snippet": "全球最大的在线桌游社区。超过1000款游戏可直接在浏览器中畅玩。"
+    }
+  ]
+}

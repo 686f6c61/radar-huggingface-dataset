@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rhs2/prodrome-lgbm",
+  "slug": "rhs2-prodrome-lgbm",
+  "author": "rhs2",
+  "url": "https://huggingface.co/rhs2/prodrome-lgbm",
+  "created_at": "2026-09-06T11:20:02.000Z",
+  "updated_at": "2026-09-06T11:20:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "prodrome",
+  "languages": [],
+  "tags": [
+    "prodrome",
+    "sepsis",
+    "clinical",
+    "early-warning",
+    "time-series",
+    "tabular-classification",
+    "conformal-prediction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A LGBM model for predicting alimentary tract hemorrhage ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1723839/full",
+      "snippet": "The LGBM model had good discrimination and calibration, as confirmed by internal validation using train–test split and 10-fold cross-validation. The model uses predictors that are easily available and biologically plausible, and the inclusion of long-term functional outcomes demonstrates the clinical importance of postoperative ATH."
+    },
+    {
+      "title": "Welcome to LightGBM’s documentation! — LightGBM 4.7.0.99 documentation",
+      "url": "https://lightgbm.readthedocs.io/en/latest/index.html",
+      "snippet": "Welcome to LightGBM’s documentation! . LightGBMis a gradient boosting framework that uses tree based learning algorithms. It is …xgboost grows trees depth-wise and controls model complexity by …Installation Guide Versioning LightGBM releases use a 3-part version number, …Quick Start This is a quick start guide for LightGBM CLI version. Follow the …LightGBM GPU Tutorial The purpose of this document is to give you a quick step-by …Parameters Tuning This page contains parameters tuning guides for different …Features This is a conceptual overview of how LightGBM works [1]. We assume …Python API Data Structure API Training APIAdvanced Topics Missing Value Handle LightGBM enables the missing value …"
+    },
+    {
+      "title": "Explainable AI based ensemble model for the identification of ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-026-48761-3",
+      "snippet": "Article Open access Published: 18 April 2026 Explainable AI based ensemble model for the identification of Schizophrenia prodromal phase R. Roopalakshmi, Neha J. Rao & Meeti Foram Mehta Scientific ..."
+    },
+    {
+      "title": "PRO-LGBM: A synergistic integrated pipeline for outlier detection and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S277318632600143X",
+      "snippet": "The proposed model addresses these multifaceted gaps by co-designing a synergistic pipeline that ensures data purity, class equilibrium, and optimal parameter alignment, thereby establishing a robust foundation for clinical risk assessment."
+    },
+    {
+      "title": "sarthak-chadha/Dual-Mode-AI-Disease-Predictor - GitHub",
+      "url": "https://github.com/sarthak-chadha/Dual-Mode-AI-Disease-Predictor",
+      "snippet": "The features from the Keras model are extracted and used to train a LGBMClassifier. This final classifier (skin_hybrid_lgbm_model.joblib) is extremely fast and accurate at predicting the lesion type from the extracted features."
+    }
+  ]
+}

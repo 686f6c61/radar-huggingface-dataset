@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rhs2/prodrome-clock",
+  "slug": "rhs2-prodrome-clock",
+  "author": "rhs2",
+  "url": "https://huggingface.co/rhs2/prodrome-clock",
+  "created_at": "2026-09-06T11:20:33.000Z",
+  "updated_at": "2026-09-06T11:20:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "prodrome",
+  "languages": [],
+  "tags": [
+    "prodrome",
+    "sepsis",
+    "clinical",
+    "early-warning",
+    "time-series",
+    "tabular-classification",
+    "conformal-prediction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&pws=0",
+      "snippet": "Advanced search AdvertisingBusiness SolutionsAbout GoogleGoogle.com © 2026 - Privacy- Terms Google apps"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 417 AI models across 422 benchmarks, with 232 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Loading Sign in Use your Google Account Email or phone Forgot email? Type the text you hear or see"
+    }
+  ]
+}

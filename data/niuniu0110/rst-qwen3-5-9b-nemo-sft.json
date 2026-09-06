@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NiuNiu0110/rst-qwen3.5-9b-nemo-sft",
+  "slug": "niuniu0110-rst-qwen3-5-9b-nemo-sft",
+  "author": "NiuNiu0110",
+  "url": "https://huggingface.co/NiuNiu0110/rst-qwen3.5-9b-nemo-sft",
+  "created_at": "2026-09-06T11:08:26.000Z",
+  "updated_at": "2026-09-06T11:08:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "terminal-agent",
+    "sft",
+    "conversational",
+    "dataset:NiuNiu0110/Nemotron-Terminal-SFT-terminus",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319119094,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Longest word using a single row of the qwerty keyboard",
+      "url": "https://codegolf.stackexchange.com/questions/75674/longest-word-using-a-single-row-of-the-qwerty-keyboard",
+      "snippet": "Mar 17, 2016 · The three rows of the qwerty keyboard are qwertyuiop, asdfghjkl and zxcvbnm. Your task is to find the longest word …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "Instructions to use Qwen/Qwen3.5-9B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "code golf - A keyboard so real you can almost TASTE it - Code Golf ...",
+      "url": "https://codegolf.stackexchange.com/questions/103033/a-keyboard-so-real-you-can-almost-taste-it",
+      "snippet": "Dec 13, 2016 · |||CAPS |||A |||S |||D |||F |||G |||H |||J |||K |||L |||; |||' |||ENTER ||| |||SHIFT |||Z |||X |||C |||V |||B |||N |||M |||, |||. |||/ |||SHIFT ||| …"
+    },
+    {
+      "title": "Qwen3.5 — NeMo-RL - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/nemo/rl/nightly/guides/models/qwen/qwen3-5.html",
+      "snippet": "This page collects NeMo RL guidance for Qwen3.5 LLM and VLM post-training. Use it to choose a starting recipe and understand Qwen3.5-specific setup."
+    },
+    {
+      "title": "R.E.P.A.I.R. T.H.E. K.E.Y.B.O.A.R.D - Code Golf Stack Exchange",
+      "url": "https://codegolf.stackexchange.com/questions/223439/r-e-p-a-i-r-t-h-e-k-e-y-b-o-a-r-d",
+      "snippet": "Apr 14, 2021 · Then, each time, I just add the state transitions (L,x,c)-> (L+1,x+1,c+\"i\"), (L,x,c)-> (L+1,x-1,c+\"d\"), and (L,x,c)-> …"
+    }
+  ]
+}

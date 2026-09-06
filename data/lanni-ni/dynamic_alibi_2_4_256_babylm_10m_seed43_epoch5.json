@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch5",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_babylm_10m_seed43_epoch5",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch5",
+  "created_at": "2026-09-06T02:37:51.000Z",
+  "updated_at": "2026-09-06T02:38:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibis Styles | Des hôtels créatifs aux installations inspirantes | ALL",
+      "url": "https://ibis.accor.com/fr/ibis-styles.html",
+      "snippet": "Bienvenue à l'hôtel ibis Styles Strasbourg Centre Gare. Chaque séjour y est une expérience unique, avec petit déjeuner inclus et Wi …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch5 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch5",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch5 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Hôtels ibis | Réservez au Meilleur Prix | ibis, ibis Styles & ibis budget",
+      "url": "https://ibis.accor.com/fr.html",
+      "snippet": "Hôtels abordables et confortables dans le monde : lits ibis ultra-confort, Wi-Fi rapide, service 24h/24. Réservez ibis, ibis Styles et ibis …"
+    },
+    {
+      "title": "Lanni Bu",
+      "url": "https://lanni-ni.github.io/",
+      "snippet": "Xiulin Yang, Zhuoxuan Ju, Lanni Bu, Zoey Liu, Nathan Schneider. Proceedings of the Workshop on Universal Dependencies (UDW) at SyntaxFest 2025."
+    },
+    {
+      "title": "Réservation d’un hôtel original pas cher avec Ibis Styles - Accor",
+      "url": "https://all.accor.com/a/fr/brands/ibisstyles.html?msockid=365315f0257d647d204a023c2493656e",
+      "snippet": "Vous êtes à la recherche à la recherche d’un hôtel design pour toute la famille ? Réservez un Ibis Style dès maintenant"
+    }
+  ]
+}

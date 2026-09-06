@@ -5,7 +5,7 @@
   "author": "oxfrug",
   "url": "https://huggingface.co/oxfrug/bge-m3-swedish-superlim",
   "created_at": "2026-08-17T10:44:23.000Z",
-  "updated_at": "2026-09-04T20:14:30.000Z",
+  "updated_at": "2026-09-05T17:44:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 223,
+  "downloads_30d": 255,
   "trending_score": 0,
   "parameters": 567754752,
   "parameters_human": "567.8M",

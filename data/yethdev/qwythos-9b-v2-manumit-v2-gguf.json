@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yethdev/qwythos-9b-v2-manumit-v2-GGUF",
+  "slug": "yethdev-qwythos-9b-v2-manumit-v2-gguf",
+  "author": "yethdev",
+  "url": "https://huggingface.co/yethdev/qwythos-9b-v2-manumit-v2-GGUF",
+  "created_at": "2026-09-06T01:47:05.000Z",
+  "updated_at": "2026-09-06T01:50:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "text-generation",
+    "base_model:yethdev/qwythos-9b-v2-manumit-v2",
+    "base_model:quantized:yethdev/qwythos-9b-v2-manumit-v2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 21624556064,
+  "storage_human": "21.6 GB",
+  "base_model": "yethdev/qwythos-9b-v2-manumit-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Google Chrome letöltése és telepítése - Számítógép - Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Google Chrome letöltése és telepítése A Chrome böngészőt díjmentesen letöltheti és telepítheti, majd használhatja az interneten …"
+    },
+    {
+      "title": "yethdev/qwythos-9b-v2-manumit-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwythos-9b-v2-manumit-v2-GGUF",
+      "snippet": "Instructions to use yethdev/qwythos-9b-v2-manumit-v2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Download and install Google Chrome - Computer - Google Chrome Help",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "If you have issues when you download Chrome on your Windows computer, use the alternate link to download Chrome on a different …"
+    },
+    {
+      "title": "yethdev/qwythos-9b-v2-manumit-v2 · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwythos-9b-v2-manumit-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Chrome をダウンロードしてインストールする - パソコン",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "お使いの Windows パソコンで Chrome をダウンロードするときに問題が生じる場合は、代替のリンクから Chrome を別のパソコン …"
+    }
+  ]
+}

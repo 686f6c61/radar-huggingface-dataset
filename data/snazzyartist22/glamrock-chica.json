@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/Glamrock-Chica",
+  "slug": "snazzyartist22-glamrock-chica",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/Glamrock-Chica",
+  "created_at": "2026-09-06T01:59:15.000Z",
+  "updated_at": "2026-09-06T01:59:33.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79803114,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "المرشد الدراسي لمقرر فيزياء 2 نظام مقررات + أوراق عمل 1437 هـ",
+      "url": "https://forum.education-sa.com/edu17517/",
+      "snippet": "Apr 16, 2016 · لزملائي معلمي الفيزياء يسرني اطلاعكم على المرشد الدراسي لمقرر فيزياء 2 - نظام مقررات، يحوي أوراق عمل لأنشطة ( أول فصلين فقط ). المرفقات ( فيديوهات وفلاشات ) : اضف …"
+    },
+    {
+      "title": "SnazzyArtist22/Glamrock-Chica · Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22/Glamrock-Chica",
+      "snippet": "Glamrock-Chica like0 License:unknown Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "SnazzyArtist22 (Elliott Buxton) - Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "Glamrock Chica - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/crmcog5e878c73dvkl90",
+      "snippet": "Explore Glamrock Chica model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Glamrock Chica - Download Free 3D model by pokkenjake2021",
+      "url": "https://sketchfab.com/3d-models/glamrock-chica-4ab248ceccca470a8caa50b8e5e0bcdd",
+      "snippet": "Glamrock Chica is Chica’s glamrock counterpart that appears in Five Nights at Freddy’s: Security Breach as one of the primary antagonists."
+    }
+  ]
+}

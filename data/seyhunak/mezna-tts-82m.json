@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "seyhunak/Mezna-TTS-82M",
+  "slug": "seyhunak-mezna-tts-82m",
+  "author": "seyhunak",
+  "url": "https://huggingface.co/seyhunak/Mezna-TTS-82M",
+  "created_at": "2026-09-06T11:10:03.000Z",
+  "updated_at": "2026-09-06T11:14:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "text-to-speech",
+    "kokoro",
+    "tts",
+    "arabic",
+    "emirati-arabic",
+    "styletts2",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1751009,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thema \"kein Login nach Logout vom UO möglich\" in Unternehmen …",
+      "url": "https://www.datev-community.de/rss/message?board.id=Unternehmen-Online&message.id=21347",
+      "snippet": "Weil der Cookie ja merkt: bin drin. Und wenn der Cookie sagt: bin draußen, dann ist man natürlich für die ganze DATEV Onlinewelt …"
+    },
+    {
+      "title": "hexgrad/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "snippet": "Kokorois an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient. With Apache-licensed weights, Kokoro can be deployed anywhere from production environments to personal projects."
+    },
+    {
+      "title": "Thema \"Re: Unternehmen Online, Mandant mit mehreren …",
+      "url": "https://www.datev-community.de/rss/message?board.id=Unternehmen-Online&message.id=20434",
+      "snippet": "Dann zahlt er auch für jedes Unternehmen die 10,50 p.M. ( + dann noch Belegarchiv). </P><P>Der Mandat selbst hat einen Stick wo …"
+    },
+    {
+      "title": "Text-to-Speech Models – Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Thema \"DATEV Smart Login &gt; Fehler beim Anmelden in …",
+      "url": "https://www.datev-community.de/rss/message?board.id=Unternehmen-Online&message.id=25099",
+      "snippet": "Also mit einem Registrierungs-Code, der nie verfällt. Jetzt hat er das Problem, dass beim Abscannen des QR Codes bei der …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Siladrim/K2-Horizon-MoVA-36B-A4B-EAGLE3",
+  "slug": "siladrim-k2-horizon-mova-36b-a4b-eagle3",
+  "author": "Siladrim",
+  "url": "https://huggingface.co/Siladrim/K2-Horizon-MoVA-36B-A4B-EAGLE3",
+  "created_at": "2026-09-06T03:12:09.000Z",
+  "updated_at": "2026-09-06T03:13:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "eagle3",
+    "speculative-decoding",
+    "vllm",
+    "custom_code",
+    "arxiv:2503.01840",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:finetune:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 834574592,
+  "parameters_human": "834.6M",
+  "storage_bytes": 1669096896,
+  "storage_human": "1.7 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Achat et vente en ligne parmi des millions de produits en stock. Livraison gratuite à partir de 25€. Vos articles à petits prix : culture, …"
+    },
+    {
+      "title": "Siladrim/K2-Horizon-MoVA-36B-A4B-EAGLE3 · Hugging Face",
+      "url": "https://huggingface.co/Siladrim/K2-Horizon-MoVA-36B-A4B-EAGLE3",
+      "snippet": "A 1-layer EAGLE-3draft headfor IFM/K2-Horizon-MoVA-36B-A4B— the sparse MoE frontier model with MoVA (Mixture-of-Values) attention. It provides lossless speculative decodingfor the GPTQ-Int4 target served with vLLM on a single 48 GB GPU (L40S / A6000)."
+    },
+    {
+      "title": "Amazon.fr : Votre Compte",
+      "url": "https://www.amazon.fr/compte/s?k=votre+compte",
+      "snippet": "Amazon.fr: votre compte Amazon.fr Points de retrait Amazon Hub Ventes Flash Outlet Coupons Meilleures ventes Amazon Seconde …"
+    },
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
+      "snippet": "K2-Horizon-MoVA-36B-A4B is the sparse member of the K2-Horizon family: a Mixture-of-Experts model with Mixture-of-Values attention (MoVA) that stores 36B parameters and runs 4B per token."
+    },
+    {
+      "title": "Amazon.fr : Amazon Prime",
+      "url": "https://www.amazon.fr/amazonprime",
+      "snippet": "Amazon Photos Stockage gratuit et illimité de vos photos avec Amazon Photos Prime Day Prime Day est un événement shopping …"
+    }
+  ]
+}

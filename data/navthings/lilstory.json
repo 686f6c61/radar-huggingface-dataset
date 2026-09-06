@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "navthings/lilstory",
+  "slug": "navthings-lilstory",
+  "author": "navthings",
+  "url": "https://huggingface.co/navthings/lilstory",
+  "created_at": "2026-09-06T03:17:52.000Z",
+  "updated_at": "2026-09-06T03:23:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292608,
+  "parameters_human": "8.3M",
+  "storage_bytes": 16864064,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'expression : \" Je te kiff \" - Forum libre Psychologie - Doctissimo",
+      "url": "https://forum.doctissimo.fr/psychologie/psychologie-libre/expression-kiff-sujet_148071_1.htm",
+      "snippet": "Nov 8, 2004 · alors s il te dit tu es belle jte kiff, ca veux dire que c est un gros bouffon, qui se prend pour un séducteur a 20 centimes, …"
+    },
+    {
+      "title": "navthings/lilstory/model - ollama.com",
+      "url": "https://ollama.com/navthings/lilstory:latest/blobs/0f86a1ef2ec3",
+      "snippet": "ModelsDownloadDocsPricingSign in navthings/lilstory:latest Updated an hour ago a lil story model trained on tinystories, 8m parameters a lil story model trained on tinystories, 8m parameters Cancel lilstory:latest..."
+    },
+    {
+      "title": "différence entre \"kiffer\" et \"aimer\" - Relations amoureuses - FORUM ...",
+      "url": "https://forum.doctissimo.fr/psychologie/amour/difference-entre-kiffer-sujet_156506_1.htm",
+      "snippet": "Jan 20, 2006 · Aimer, c'est avoir des sentiments surs, des sentiments qui ne s'envoleront pas en une journée, car ça, c'est un kiff. …"
+    },
+    {
+      "title": "navthings/lilstory",
+      "url": "https://ollama.com/navthings/lilstory:latest",
+      "snippet": "ModelsDocsPricing Sign inDownload ModelsDownloadDocsPricingSign in navthings/lilstory:latest Updated an hour ago a lil story model trained on tinystories, 8m parameters a lil story model trained on tinystories, 8m parameters"
+    },
+    {
+      "title": "When to use 'je te kiffe'? - French Language Stack Exchange",
+      "url": "https://french.stackexchange.com/questions/7407/when-to-use-je-te-kiffe",
+      "snippet": "Apr 13, 2017 · Recently I read a question on how to say I like you in French. None of these answers provided the expression 'je te …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Baekpica",
   "url": "https://huggingface.co/Baekpica/dots3-note-prev-Mixed-Quant-GGUF",
   "created_at": "2026-08-17T21:04:25.000Z",
-  "updated_at": "2026-08-30T04:26:28.000Z",
+  "updated_at": "2026-09-06T06:18:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,12 +37,12 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 1025,
+  "downloads_30d": 1028,
   "trending_score": 0,
   "parameters": 280685923264,
   "parameters_human": "280.69B",
-  "storage_bytes": 86072935456,
-  "storage_human": "86.1 GB",
+  "storage_bytes": 94574301280,
+  "storage_human": "94.6 GB",
   "base_model": "dots-studio/dots3-note-prev",
   "formats": [
     "gguf"

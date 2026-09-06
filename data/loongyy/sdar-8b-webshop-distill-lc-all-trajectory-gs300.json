@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "loongyy/sdar-8b-webshop-distill-lc-all-trajectory-gs300",
+  "slug": "loongyy-sdar-8b-webshop-distill-lc-all-trajectory-gs300",
+  "author": "loongyy",
+  "url": "https://huggingface.co/loongyy/sdar-8b-webshop-distill-lc-all-trajectory-gs300",
+  "created_at": "2026-09-06T02:01:45.000Z",
+  "updated_at": "2026-09-06T02:04:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sdar",
+    "text-generation",
+    "block-diffusion",
+    "webshop",
+    "distill",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16381516824,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حجز تذاكر طيران برشلونة (BCN) - رحلات طيران رخيصة برشلونة SAR 57 | Trip.com",
+      "url": "https://sa.trip.com/flights/to-barcelona/airfares-bcn/",
+      "snippet": "تذاكر طيران برشلونة (BCN) - حجز رحلات جوية إلى برشلونة من SAR 57 . قارن بين +680 شركة طيران ️ حائز على ثقة +300 مليون مسافر تقييمات من 147 مليون مسافر . 174 ألف …"
+    },
+    {
+      "title": "loongyy/sdar-8b-webshop-distill-lc-all-trajectory-gs300 · Hugging Face",
+      "url": "https://huggingface.co/loongyy/sdar-8b-webshop-distill-lc-all-trajectory-gs300",
+      "snippet": "Instructions to use loongyy/sdar-8b-webshop-distill-lc-all-trajectory-gs300 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "احجز رحلات طيران رخيصة إلى برشلونة (BCN) | طيران السعودية",
+      "url": "https://www.saudia.com/ar-sa/%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D9%89-%D8%A8%D8%B1%D8%B4%D9%84%D9%88%D9%86%D8%A9",
+      "snippet": "جدول الرحلات إلى برشلونة (BCN) للأيام الـ 30 القادمة. من. flight_takeoff. إلى. flight_land. Dates. Select dates. today. الرياض (RUH)إلى. برشلونة (BCN) الاثنين, …"
+    },
+    {
+      "title": "loongyy (longyy) - Hugging Face",
+      "url": "https://huggingface.co/loongyy",
+      "snippet": "User profile of longyy on Hugging Face Recent Activity updated a model2 days ago loongyy/webshop-espo-b16-ckpt90 published a model2 days ago loongyy/webshop-espo-b16-ckpt90 updated a model5 days ago loongyy/sdar_4b_b16_webshop_sft View all activity"
+    },
+    {
+      "title": "رحلات طيران رخيصة بسعر 386 ﷼ إلى برشلونة (BCN) | KAYAK",
+      "url": "https://www.kayak.sa/flight-routes/Saudi-Arabia-SA0/Barcelona-Barcelona-El-Prat-BCN",
+      "snippet": "تم طباعة البوردينق وفي صالة المغادرة اعلنو على الرحله وعندما وصلت للبوابه اخبرني الموظف ان رحلتي باقي عليها وتكرر الوضح حتى اقلعت الطائرة الخطوط الجوية القطرية7.3 SAUDIA7.3 …"
+    }
+  ]
+}

@@ -4,8 +4,8 @@
   "slug": "sfaafaf45454-myawesomemodel-testrepo",
   "author": "sfaafaf45454",
   "url": "https://huggingface.co/sfaafaf45454/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-28T15:40:56.000Z",
-  "updated_at": "2026-08-28T15:41:13.000Z",
+  "created_at": "2026-09-05T08:19:49.000Z",
+  "updated_at": "2026-09-05T08:19:54.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-31T03:15:08.952Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

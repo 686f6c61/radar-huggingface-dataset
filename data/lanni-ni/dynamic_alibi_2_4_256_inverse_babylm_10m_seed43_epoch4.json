@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4",
+  "created_at": "2026-09-06T02:55:49.000Z",
+  "updated_at": "2026-09-06T02:57:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die aktuelle Wetterprognose | Agricultural Solutions - BASF",
+      "url": "https://www.agrar.basf.de/de/Agrarwetter/Wetterprognose/",
+      "snippet": "Auf einen Blick: Unser Agrarwetter mit einer Wetterprognose für die nächsten zwei Wochen mit wichtigen Informationen wie z. B. …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Das Agrarwetter: immer aktuell | Agricultural Solutions - BASF",
+      "url": "https://www.agrar.basf.de/de/Agrarwetter/",
+      "snippet": "Auf einen Blick: Unser Agrarwetter mit Wetterprognose für die nächsten zwei Wochen mit wichtigen Informationen wie Luft- und …"
+    },
+    {
+      "title": "Lanni Bu",
+      "url": "https://lanni-ni.github.io/",
+      "snippet": "Xiulin Yang, Zhuoxuan Ju, Lanni Bu, Zoey Liu, Nathan Schneider. Proceedings of the Workshop on Universal Dependencies (UDW) at SyntaxFest 2025."
+    },
+    {
+      "title": "Agrarwetter 14 Tage 64720 Michelstadt | agrarwetter-aktuell.de",
+      "url": "https://www.agrarwetter-aktuell.de/stadtwetter-plz/14-tage/64720-michelstadt.agrar-wetter.html",
+      "snippet": "Das Agrarwetter für heute, morgen und übermorgen sowie 7-Tage-Agrarwetter, 10-Tage-Agrarwetter, 14-Tage-Agrarwetter & 16 …"
+    }
+  ]
+}

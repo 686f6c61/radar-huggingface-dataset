@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Qwen3.8-27B-UltimateDetails2-stage1__The-Harley-Pelican",
+  "slug": "davidau-qwen3-8-27b-ultimatedetails2-stage1__the-harley-pelican",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-UltimateDetails2-stage1__The-Harley-Pelican",
+  "created_at": "2026-09-03T09:09:05.000Z",
+  "updated_at": "2026-09-05T03:36:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 2,
+  "trending_score": 9,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55584657975,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn Schweiz: Einloggen oder anmelden",
+      "url": "https://ch.linkedin.com/",
+      "snippet": "1 Mrd. Mitglieder | Die Plattform für Ihre berufliche Identität. Bauen Sie Ihr berufliches Netzwerk auf und bleiben Sie informiert. Finden …"
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-UltimateDetails2-stage1 · Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-UltimateDetails2-stage1",
+      "snippet": "Instructions to use DavidAU/Qwen3.8-27B-UltimateDetails2-stage1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "LinkedIn: inicio de sesión o registro",
+      "url": "https://es.linkedin.com/",
+      "snippet": "1 mil millones de miembros | Gestiona tu identidad profesional. Amplía e interactúa con tu red profesional. Accede a conocimientos, …"
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-UltimateDetails2-stage1 at main",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-UltimateDetails2-stage1/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    }
+  ]
+}

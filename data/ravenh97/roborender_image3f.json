@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ravenh97/roborender_image3f",
+  "slug": "ravenh97-roborender_image3f",
+  "author": "Ravenh97",
+  "url": "https://huggingface.co/Ravenh97/roborender_image3f",
+  "created_at": "2026-09-06T01:49:14.000Z",
+  "updated_at": "2026-09-06T01:50:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "sim2real",
+    "image-generation",
+    "wan",
+    "lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 724157766,
+  "storage_human": "724 MB",
+  "base_model": "PAI/Wan2.1-Fun-V1.1-1.3B-Control",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Not Without My Daughter online sa prevodom - Serije Balkan",
+      "url": "https://www.serijebalkan.com/show/not-without-my-daughter",
+      "snippet": "Film Not Without My Daughter online sa prevodom. Gledaj Not Without My Daughter sa prevodom online potpuno besplatno."
+    },
+    {
+      "title": "Ravenh97/roborender_image3f · Hugging Face",
+      "url": "https://huggingface.co/Ravenh97/roborender_image3f",
+      "snippet": "RoboRender Image3F accelerated 4090 source bundle This is the portable, build-on-target release for the rgb030-depth030RoboRender Image3F LoRA at fine-tuning update 5000. tokenizer, a fixed-lag-256 validation fixture, Raven source, and the scripts needed to export and compile the accelerated five-step path on the deployment GPU."
+    },
+    {
+      "title": "Ne dam ti ćerke (Not Without My Daughter) - Film - mojtv.net",
+      "url": "https://mojtv.net/film/19476/nedam-svoju-kcer.aspx",
+      "snippet": "\"Moody\" je iranski doktor koji živi u SAD-u sa svojom američkom suprugom Betty i ćerkom Mahtob. Želeći da vidi svoju rodnu zemlju …"
+    },
+    {
+      "title": "Datasets – Hugging Face",
+      "url": "https://huggingface.co/datasets?other=image3f",
+      "snippet": "1 Full-text search Edit filters Sort: Trending Active filters: image3f Clear all"
+    },
+    {
+      "title": "Ne bez moje ćerke - YouTube",
+      "url": "https://www.youtube.com/watch?v=MRqq8Y9TPUI",
+      "snippet": "Jul 28, 2022 · Modi je iranski doktor koji živi u SAD sa svojom američkom suprugom Beti i ćerkom Mahtob. Želeći da vidi svoju rodnu …"
+    }
+  ]
+}

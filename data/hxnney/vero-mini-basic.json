@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hxnney/Vero-Mini-Basic",
+  "slug": "hxnney-vero-mini-basic",
+  "author": "hxnney",
+  "url": "https://huggingface.co/hxnney/Vero-Mini-Basic",
+  "created_at": "2026-09-06T02:10:15.000Z",
+  "updated_at": "2026-09-06T02:38:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "døves – contain Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Dves-contain-lyrics",
+      "snippet": "Who wrote “contain” by døves?"
+    },
+    {
+      "title": "hxnney/Vero-Mini-Basic · Hugging Face",
+      "url": "https://huggingface.co/hxnney/Vero-Mini-Basic",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use hxnney/Vero-Mini-Basic with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use hxnney/Vero-Mini-Basic with Transformers:"
+    },
+    {
+      "title": "Lyrics containing the term: contain",
+      "url": "https://www.lyrics.com/lyrics/contain",
+      "snippet": "A list of lyrics, artists and songs that contain the term \"contain\" - from the Lyrics.com website."
+    },
+    {
+      "title": "Vero Mini Basic Api - a Hugging Face Space by hxnney",
+      "url": "https://huggingface.co/spaces/hxnney/vero-mini-basic-api",
+      "snippet": "Type any question or message in the input box and VERO Mini will generate a reply right in the chat window. The model runs locally in your browser, so you only need to provide text and you’ll recei..."
+    },
+    {
+      "title": "Lyrics containing the term: contains",
+      "url": "https://www.lyrics.com/lyrics/contains",
+      "snippet": "A list of lyrics, artists and songs that contain the term &quot;contains&quot; - from the Lyrics.com website."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aquif11/my-bert-imdb",
+  "slug": "aquif11-my-bert-imdb",
+  "author": "aquif11",
+  "url": "https://huggingface.co/aquif11/my-bert-imdb",
+  "created_at": "2026-09-06T11:20:11.000Z",
+  "updated_at": "2026-09-06T11:20:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/",
+      "snippet": "Quora is a place to gain and share knowledge. It's a platform to ask questions and connect with people who contribute unique …"
+    },
+    {
+      "title": "tarneemalaa/bert_imdb_model · Hugging Face",
+      "url": "https://huggingface.co/tarneemalaa/bert_imdb_model",
+      "snippet": "Dataset IMDb Dataset (50,000 reviews: 25k train + 25k test) Source: IMDB Dataset of 50K Movie Reviews Kaggle Preprocessing: Tokenization via BERT tokenizer Model Architecture Base: bert-base-uncased from Hugging Face Transformers Fine-tuned with a classification head (linear layer) Trained with PyTorch using AdamW optimizer and scheduler"
+    },
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/What-is-the-best-python-web-framework-to-learn-in-2023",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "saif-11bit/my-bert-imdb · Hugging Face",
+      "url": "https://huggingface.co/saif-11bit/my-bert-imdb",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Press - Quora",
+      "url": "https://www.quora.com/press",
+      "snippet": "Try again Please enable Javascript and refresh the page to continue"
+    }
+  ]
+}

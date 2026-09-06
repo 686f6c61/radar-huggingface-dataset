@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/Montgomery-Gator",
+  "slug": "snazzyartist22-montgomery-gator",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/Montgomery-Gator",
+  "created_at": "2026-09-06T03:20:12.000Z",
+  "updated_at": "2026-09-06T03:20:30.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71017457,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1001 Spiele - Kostenlose coole online Spiele spielen!",
+      "url": "https://www.1001spiele.de/",
+      "snippet": "Auf dieser Seite kannst Du gratis Spiele spielen. Hier findest Du die tollsten Spiele für die ganze Familie! Wir haben …"
+    },
+    {
+      "title": "SnazzyArtist22/Montgomery-Gator · Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22/Montgomery-Gator",
+      "snippet": "Montgomery-Gator like0 License:unknown Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "AI Chat with Montgomery Gator - Five Nights at Freddy's",
+      "url": "https://shapes.inc/montgomerygator-hj50",
+      "snippet": "\"Savage bassist Montgomery Gator brings his aggressive charm to the table, boasting a Southern drawl and a penchant for destruction. This Glamrock Animatronic lives for chaos, roaring and charging at his enemies with reckless abandon."
+    },
+    {
+      "title": "Bubble Shooter - Kostenlos Spielen auf 1001 Spiele",
+      "url": "https://www.1001spiele.de/geschicklichkeit/bubble-shooter",
+      "snippet": "Bubble Shooter ist der zeitloser Klassiker unter den Online Spiele. Erzielst du den höchsten Score? Besuche unsere Website und …"
+    },
+    {
+      "title": "SnazzyArtist22 (Elliott Buxton) - Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    }
+  ]
+}

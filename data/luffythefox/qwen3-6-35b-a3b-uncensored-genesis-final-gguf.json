@@ -5,7 +5,7 @@
   "author": "LuffyTheFox",
   "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF",
   "created_at": "2026-09-01T07:32:13.000Z",
-  "updated_at": "2026-09-05T12:14:58.000Z",
+  "updated_at": "2026-09-05T13:59:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,13 +35,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 8,
   "downloads_30d": 77,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 61945761152,
-  "storage_human": "61.9 GB",
+  "storage_bytes": 83420682112,
+  "storage_human": "83.4 GB",
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "formats": [
     "gguf"

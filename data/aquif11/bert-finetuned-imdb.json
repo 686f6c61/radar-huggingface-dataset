@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aquif11/bert-finetuned-imdb",
+  "slug": "aquif11-bert-finetuned-imdb",
+  "author": "aquif11",
+  "url": "https://huggingface.co/aquif11/bert-finetuned-imdb",
+  "created_at": "2026-09-06T11:20:21.000Z",
+  "updated_at": "2026-09-06T11:20:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437963825,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2ac2e8522b42661604b7ff9e2a456788",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "ranaroy/bert-finetuned-imdb · Hugging Face",
+      "url": "https://huggingface.co/ranaroy/bert-finetuned-imdb",
+      "snippet": "bert-finetuned-imdb This model is a fine-tuned version of bert-base-uncased on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "abhi0021/bert-finetuned-imdb · Hugging Face",
+      "url": "https://huggingface.co/abhi0021/bert-finetuned-imdb",
+      "snippet": "bert-finetuned-imdb This model is a fine-tuned version of bert-base-uncased on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

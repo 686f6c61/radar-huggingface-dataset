@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch1",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_babylm_10m_seed43_epoch1",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch1",
+  "created_at": "2026-09-06T02:31:37.000Z",
+  "updated_at": "2026-09-06T02:32:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=20ad17dd394a647e015600113801650c",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch1 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch1",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch1 with libraries, inference providers, notebooks, and local apps. Follow these links to get ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4 ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4 with libraries, inference providers, notebooks, and local apps. Follow these links ..."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

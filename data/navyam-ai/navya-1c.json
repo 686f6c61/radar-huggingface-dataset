@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "navyam-ai/navya-1c",
+  "slug": "navyam-ai-navya-1c",
+  "author": "navyam-ai",
+  "url": "https://huggingface.co/navyam-ai/navya-1c",
+  "created_at": "2026-09-06T11:12:46.000Z",
+  "updated_at": "2026-09-06T11:40:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "india",
+    "finance",
+    "from-scratch",
+    "navya",
+    "en",
+    "hi",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1306634240,
+  "parameters_human": "1.31B",
+  "storage_bytes": 5226564008,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "True anonymity on the internet is possible. A decentralized ... - Reddit",
+      "url": "https://www.reddit.com/r/technology/comments/9i74e/true_anonymity_on_the_internet_is_possible_a/",
+      "snippet": "Sep 7, 2009 · Freenet is a great network for censorship-resistant filesharing and data storage, but the freesite aspect isn't terribly …"
+    },
+    {
+      "title": "NavyAI - Unified AI API for 150+ Models",
+      "url": "https://api.navy/",
+      "snippet": "One endpoint, one API key, one subscription. Access 150+ AI models from OpenAI, Anthropic, Google, Mistral, and more through a single OpenAI-compatible API - flat-rate plans instead of pay-per-token pricing."
+    },
+    {
+      "title": "Freenet questions newbie : r/Freenet - Reddit",
+      "url": "https://www.reddit.com/r/Freenet/comments/317kqi/freenet_questions_newbie/",
+      "snippet": "Apr 2, 2015 · Also, removing freenet everytime would mean you'd have to get every update all over again. Imagine loading the entire …"
+    },
+    {
+      "title": "LLM Cost Optimization & AI Inference Audit | NavyaAI",
+      "url": "https://www.navyaai.com/",
+      "snippet": "NavyaAI (Navya AI) builds AI that survives production — agents, RAG, private LLMs — with inspectable pricing, daily written progress, and published benchmarks. Free AI inference audit."
+    },
+    {
+      "title": "TOR vs. Freenet? : r/onions - Reddit",
+      "url": "https://www.reddit.com/r/onions/comments/1vnlrp/tor_vs_freenet/",
+      "snippet": "Jan 20, 2014 · Freenet only has static content like HTML and file downloads. Freenet is great for sharing files, and has some …"
+    }
+  ]
+}

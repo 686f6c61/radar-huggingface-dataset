@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "reyansh38771/sn97____truelove-yes____uid75____hk5CLjT",
+  "slug": "reyansh38771-sn97____truelove-yes____uid75____hk5cljt",
+  "author": "reyansh38771",
+  "url": "https://huggingface.co/reyansh38771/sn97____truelove-yes____uid75____hk5CLjT",
+  "created_at": "2026-09-06T02:13:45.000Z",
+  "updated_at": "2026-09-06T02:22:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35766034168,
+  "storage_human": "35.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Créer un compte Google - Ordinateur - Aide Compte Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Important : Lorsque vous créez un compte Google pour votre entreprise, vous pouvez activer la personnalisation pour les …"
+    },
+    {
+      "title": "reyansh38771/sn97____jmaxcool____uid124____hk5Ennz · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/sn97____jmaxcool____uid124____hk5Ennz",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Définir Google comme moteur de recherche par défaut",
+      "url": "https://support.google.com/websearch/answer/464?hl=fr",
+      "snippet": "Définir Google comme moteur de recherche par défaut dans votre navigateur Si votre navigateur n'est pas répertorié ci-dessous, …"
+    },
+    {
+      "title": "reyansh38771/sn97____dora7____uid216____hk5EX35 · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/sn97____dora7____uid216____hk5EX35",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Télécharger et installer Google Chrome - Ordinateur - Aide Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Conseil: Si vous avez utilisé un autre navigateur, comme Firefox, vous pouvez importer vos paramètres dans Chrome. Installer …"
+    }
+  ]
+}

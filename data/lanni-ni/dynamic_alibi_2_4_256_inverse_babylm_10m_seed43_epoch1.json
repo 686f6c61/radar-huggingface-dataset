@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch1",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch1",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch1",
+  "created_at": "2026-09-06T02:49:04.000Z",
+  "updated_at": "2026-09-06T02:50:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calculator: Add to or subtract from a date - timeanddate.com",
+      "url": "https://www.timeanddate.com/date/dateadd.html",
+      "snippet": "The Date Calculator adds or subtracts days, weeks, months and years from a given date."
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "10 Days from Today – Date Calculator",
+      "url": "https://timedatecalc.com/10-days-from-today",
+      "snippet": "To get started, enter the start date to which you need to add/subtract days (today's date is initially displayed). Use the calendar for …"
+    },
+    {
+      "title": "Damacol/lanni-ni-dynamic_forgetting_2_4_256_babylm_10m_inverse ... - GitHub",
+      "url": "https://github.com/Damacol/lanni-ni-dynamic_forgetting_2_4_256_babylm_10m_inverse_epoch9",
+      "snippet": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_10m_inverse_epoch9 - Private, Uncensored AI for Real Creators and Devs {MODEL} deployed without telemetry or corporate filters."
+    },
+    {
+      "title": "10 Days From Today",
+      "url": "https://www.daysfromdate.com/10-days-from-today",
+      "snippet": "What date is 10 days from today? Use our free Days From Date calculator to add or subtract 10 days—plus weeks, months, or …"
+    }
+  ]
+}

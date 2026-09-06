@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "roskosmos19/Rhea-4B-fast-0409",
+  "slug": "roskosmos19-rhea-4b-fast-0409",
+  "author": "roskosmos19",
+  "url": "https://huggingface.co/roskosmos19/Rhea-4B-fast-0409",
+  "created_at": "2026-09-06T11:16:11.000Z",
+  "updated_at": "2026-09-06T11:17:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "code",
+    "agent",
+    "thinking",
+    "agentic",
+    "Rhea",
+    "4b",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8058649220,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "roskosmos19/Rhea-4B · Hugging Face",
+      "url": "https://huggingface.co/roskosmos19/Rhea-4B",
+      "snippet": "Instructions to use roskosmos19/Rhea-4B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "roskosmos19/Rhea-4B-Coding · Hugging Face",
+      "url": "https://huggingface.co/roskosmos19/Rhea-4B-Coding",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

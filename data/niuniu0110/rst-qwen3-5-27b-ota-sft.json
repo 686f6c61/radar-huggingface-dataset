@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NiuNiu0110/rst-qwen3.5-27b-ota-sft",
+  "slug": "niuniu0110-rst-qwen3-5-27b-ota-sft",
+  "author": "NiuNiu0110",
+  "url": "https://huggingface.co/NiuNiu0110/rst-qwen3.5-27b-ota-sft",
+  "created_at": "2026-09-06T11:09:46.000Z",
+  "updated_at": "2026-09-06T11:10:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "terminal-agent",
+    "sft",
+    "conversational",
+    "dataset:NiuNiu0110/OpenThoughts-Agent-v1-SFT-terminus",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575830870,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "betPawa | Bet Small, Win BIG",
+      "url": "https://www.betpawa.com/",
+      "snippet": "© 2026 betPawa. All rights reserved. We're sorry but betPawa doesn't work properly without JavaScript enabled. Please enable it to …"
+    },
+    {
+      "title": "NiuNiu0110/RST-DPO-Qwen3.5-27B · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/NiuNiu0110/RST-DPO-Qwen3.5-27B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bet Small, Win BIG | Online Sports Betting | betPawa Zambia",
+      "url": "https://www.betpawa.co.zm/",
+      "snippet": "Booking Code Load Betslip Betslip is emptyLearn how to betDiscover more sports We're sorry but betPawa doesn't work properly …"
+    },
+    {
+      "title": "NiuNiu0110/RST-DPO-Qwen3.5-27B at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/NiuNiu0110/RST-DPO-Qwen3.5-27B/tree/main",
+      "snippet": "NiuNiu0110 / RST-DPO-Qwen3.5-27B like 0 Tasks: Text Generation Modalities: Tabular Text Formats: parquet Languages: English Size: 1K - 10K ArXiv: arxiv:2608.05466 Tags: terminal-agent agentic dpo preference qwen3.5 recursive-task-synthesis Libraries: Datasets pandas Polars + 1 License: cc-by-4.0 Dataset card Data Studio FilesFiles and versions ..."
+    },
+    {
+      "title": "Bet Small, Win BIG | Online Sports Betting | betPawa Malawi",
+      "url": "https://www.betpawa.mw/",
+      "snippet": "Contact an experienced counsellor at any time 24/7 Monday to Sunday via call on this number +265 880 011 119. Please only contact …"
+    }
+  ]
+}

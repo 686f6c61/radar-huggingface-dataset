@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tangyunbo/RejectionSample",
+  "slug": "tangyunbo-rejectionsample",
+  "author": "tangyunbo",
+  "url": "https://huggingface.co/tangyunbo/RejectionSample",
+  "created_at": "2026-09-06T02:35:23.000Z",
+  "updated_at": "2026-09-06T02:45:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "llama-factory",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 210110883,
+  "storage_human": "210 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki (Поки) - Безплатни Онлайн Игри - Играй Сега!",
+      "url": "https://poki.com/bg?msockid=2d629347a85169bf124a848ba9c868d0",
+      "snippet": "Изживей света на безплатните онлайн игри с Poki (Поки)! Играй веднага, без сваляния, и се наслаждавай на игри, …"
+    },
+    {
+      "title": "tangyunbo (tangyunbo) - Hugging Face",
+      "url": "https://huggingface.co/tangyunbo",
+      "snippet": "User profile of tangyunbo on Hugging Face"
+    },
+    {
+      "title": "Безплатни онлайн игри — Игри за браузър без изтегляне | Playhop",
+      "url": "https://playhop.com/bg",
+      "snippet": "Играйте на 20 000+ безплатни онлайн игри в Playhop — без изтегляне, незабавна игра на мобилен или настолен компютър. …"
+    },
+    {
+      "title": "Rejection Sampling in Artificial Intelligence - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/rejection-sampling-in-artificial-intelligence/",
+      "snippet": "Rejection sampling generates random samples from a complex target distribution. It is useful when direct sampling from the target distribution is difficult or computationally expensive. The method relies on sampling from a simpler, more tractable proposal distribution and then applying a rejection criterion to ensure that the samples are consistent with the target distribution. This article ..."
+    },
+    {
+      "title": "Игри онлайн. Играйте безплатно",
+      "url": "https://bg.game-game.com/",
+      "snippet": "Това са безплатни онлайн игри, които ще ви и вашите приятели се радват на огромна сума на избор, както и възможността …"
+    }
+  ]
+}

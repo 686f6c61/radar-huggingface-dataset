@@ -19,8 +19,8 @@
     "base_model:finetune:moonshotai/Kimi-K3",
     "region:us"
   ],
-  "likes": 15,
-  "downloads_30d": 190,
+  "likes": 16,
+  "downloads_30d": 191,
   "trending_score": 8,
   "parameters": 57191006976,
   "parameters_human": "57.19B",

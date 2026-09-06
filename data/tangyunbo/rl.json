@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tangyunbo/RL",
+  "slug": "tangyunbo-rl",
+  "author": "tangyunbo",
+  "url": "https://huggingface.co/tangyunbo/RL",
+  "created_at": "2026-09-06T02:36:01.000Z",
+  "updated_at": "2026-09-06T03:12:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404662,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calculator: Add to or subtract from a date - timeanddate.com",
+      "url": "https://www.timeanddate.com/date/dateadd.html",
+      "snippet": "The Date Calculator adds or subtracts days, weeks, months and years from a given date."
+    },
+    {
+      "title": "tangyunbo (tangyunbo) - Hugging Face",
+      "url": "https://huggingface.co/tangyunbo",
+      "snippet": "User profile of tangyunbo on Hugging Face"
+    },
+    {
+      "title": "60 Days from Today - Date Calculator",
+      "url": "https://timedatecalc.com/60-days-from-today",
+      "snippet": "To get started, enter the start date to which you need to add/subtract days (today's date is initially displayed). Use the calendar for …"
+    },
+    {
+      "title": "‪Yunbo Tang‬ - ‪Google 学术搜索‬",
+      "url": "https://scholar.google.com/citations?user=TFjQVd4AAAAJ&hl=zh-CN",
+      "snippet": "‪Fuzhou University‬ - ‪‪引用次数：1,012 次‬‬ - ‪Artificial Intelligence/ Biomedical Engineering/ Signal Processing‬"
+    },
+    {
+      "title": "60 Days From Today",
+      "url": "https://calculator.today/60-days-from-today",
+      "snippet": "2 days ago · This calculator helps you instantly find what date falls exactly 60 days from today. It also provides useful calendar …"
+    }
+  ]
+}

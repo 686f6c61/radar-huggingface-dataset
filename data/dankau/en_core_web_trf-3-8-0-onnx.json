@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DanKau/en_core_web_trf-3.8.0-onnx",
+  "slug": "dankau-en_core_web_trf-3-8-0-onnx",
+  "author": "DanKau",
+  "url": "https://huggingface.co/DanKau/en_core_web_trf-3.8.0-onnx",
+  "created_at": "2026-09-06T11:14:06.000Z",
+  "updated_at": "2026-09-06T11:14:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "token-classification",
+    "named-entity-recognition",
+    "spacy",
+    "en",
+    "base_model:spacy/en_core_web_trf",
+    "base_model:quantized:spacy/en_core_web_trf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 496751415,
+  "storage_human": "497 MB",
+  "base_model": "spacy/en_core_web_trf",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Single Sign On - King Saud University - بوابة الدخول الموحد - جامعة ...",
+      "url": "https://mail.ksu.edu.sa/owa/",
+      "snippet": "You should activate the new two-factor authentication app to continue using the KSU systems ; for more details, please visit: …"
+    },
+    {
+      "title": "spacy/en_core_web_trf · Hugging Face",
+      "url": "https://huggingface.co/spacy/en_core_web_trf",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sign In - mail.student.ksu.edu.sa",
+      "url": "http://mail.student.ksu.edu.sa/adfs/ls/?wa=wsignin1.0&wtrealm=urn%3Afederation%3AMicrosoftOnline",
+      "snippet": "Click here to Change your Password. Forget the Password, Click here to Reset your Password."
+    },
+    {
+      "title": "Releases · explosion/spacy-models · GitHub",
+      "url": "https://github.com/explosion/spacy-models/releases",
+      "snippet": "Release list en_core_web_hftrf-3.8.1 zh_core_web_trf-3.8.0 zh_core_web_sm-3.8.0 zh_core_web_md-3.8.0 zh_core_web_lg-3.8.0 xx_sent_ud_sm-3.8.0"
+    },
+    {
+      "title": "Log in | King Saud University - KSU",
+      "url": "http://security.ksu.edu.sa/en/user/login",
+      "snippet": "Enter your King Saud University username. Password. Enter the password that accompanies your username. Login using KSU SSO. …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Nik1t7n/tiny-manas",
+  "slug": "nik1t7n-tiny-manas",
+  "author": "Nik1t7n",
+  "url": "https://huggingface.co/Nik1t7n/tiny-manas",
+  "created_at": "2026-09-06T03:02:55.000Z",
+  "updated_at": "2026-09-06T03:04:15.000Z",
+  "license": "tiny-manas-research-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "ky"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "tiny_manas",
+    "causal-lm",
+    "decoder-only-transformer",
+    "kyrgyz",
+    "manas",
+    "research",
+    "text-generation",
+    "ky",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 26779392,
+  "parameters_human": "26.8M",
+  "storage_bytes": 214612328,
+  "storage_human": "215 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "Nik1t7n/tiny-manas · Hugging Face",
+      "url": "https://huggingface.co/Nik1t7n/tiny-manas",
+      "snippet": "Tiny Manas is a 26.78M-parameter decoder-only Transformer trained from scratch to continue Kyrgyz text in the style of one edition of the epic Manas. It is a small research model built to make the full language-model path inspectable, from byte-level BPE tokens and causal attention to training, evaluation, and cached generation."
+    },
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "普通用户就一个设备的话，确实就是慢慢磨。 注意别用+86,+852之类的中国手机号注册，注册了也没用，Codex授权与GPT注册不支 …"
+    },
+    {
+      "title": "GitHub - nik1t7n/manas-gpt: A 26.9M-parameter language model trained ...",
+      "url": "https://github.com/nik1t7n/manas-gpt/blob/main/",
+      "snippet": "Tiny Manas is a 26.9M-parameter language model trained from scratch on the Kyrgyz epic Manas. I built it to understand a Transformer by following the whole path myself: prepare a real text, encode it with a Kyrgyz tokenizer, create shifted training batches, implement causal self-attention, run ..."
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Có cách khôi phục đoạn chat đã xóa trên ChatGPT không? Làm sao để lưu trữ hiệu quả các đoạn chat để dễ tìm lại? …"
+    }
+  ]
+}

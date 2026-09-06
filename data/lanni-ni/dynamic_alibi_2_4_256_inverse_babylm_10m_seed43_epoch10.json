@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch10",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch10",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch10",
+  "created_at": "2026-09-06T03:12:47.000Z",
+  "updated_at": "2026-09-06T03:13:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حل مشكلة تسجيل الخروج من انستقرام | صقور الإبدآع",
+      "url": "https://www.sqorebda3.com/vb/threads/85703/",
+      "snippet": "Mar 7, 2022 · لماذا يسجل Instagram خروجك باستمرار؟ أسباب المشكلة وطرق إصلاحها قد يفاجأ مستخدم Instagram بخروجه من حسابه والعودة إلى صفحة تسجيل الدخول دون أن …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "بايو انستقرام انجليزي يصلح لكل شيئ وللبنات والشباب",
+      "url": "https://www.sqorebda3.com/vb/threads/79914/",
+      "snippet": "Aug 3, 2020 · 200+ Instagram Bio Ideas يمكنك نسخ ولصق السيرة الذاتية او (بايو انستقرام او Instagram Bio) ما هو انستغرام بيو؟ السيرة الذاتية في Instagram هي …"
+    },
+    {
+      "title": "Lanni Bu",
+      "url": "https://lanni-ni.github.io/",
+      "snippet": "Xiulin Yang, Zhuoxuan Ju, Lanni Bu, Zoey Liu, Nathan Schneider. Proceedings of the Workshop on Universal Dependencies (UDW) at SyntaxFest 2025."
+    },
+    {
+      "title": "www.dev-point.com",
+      "url": "https://www.dev-point.com/vb/forums/102/",
+      "snippet": ""
+    }
+  ]
+}

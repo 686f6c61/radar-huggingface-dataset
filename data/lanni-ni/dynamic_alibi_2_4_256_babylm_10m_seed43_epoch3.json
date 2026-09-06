@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch3",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_babylm_10m_seed43_epoch3",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch3",
+  "created_at": "2026-09-06T02:34:36.000Z",
+  "updated_at": "2026-09-06T02:36:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "109 annonces Maisons à vendre Laon 02000 à partir de 50 500€, …",
+      "url": "https://www.seloger.com/recherche/achat/maison/hauts-de-france/laon-02000/ad08fr828?msockid=0d5a1d866c28697707da0a4a6d9068d2",
+      "snippet": "Située dans la charmante ville de Laon (02000), dans un quartier fort prisé de Laon cette propriété bénéficie d'un emplacement idéal …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch3 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch3",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch3 with libraries, inference providers, notebooks, and local apps. Follow these links to get ..."
+    },
+    {
+      "title": "17 annonces Maisons de ville à vendre Laon 02000 , Seloger.com",
+      "url": "https://www.seloger.com/recherche/achat/maison/maison-de-ville/hauts-de-france/laon-02000/ad08fr828?msockid=0d5a1d866c28697707da0a4a6d9068d2",
+      "snippet": "Située en ville basse de Laon, à proximité immédiate de toutes les commodités, cette maison de ville offre un beau potentiel après …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4 ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4 with libraries, inference providers, notebooks, and local apps. Follow these links ..."
+    },
+    {
+      "title": "Maison à vendre et vente appartement Laon (02000) - leboncoin",
+      "url": "https://www.leboncoin.fr/cl/ventes_immobilieres/cp_laon%2002",
+      "snippet": "Toutes nos annonces gratuites Maison à vendre et vente appartement Laon (02000). Consultez nos 236 annonces de particuliers et …"
+    }
+  ]
+}

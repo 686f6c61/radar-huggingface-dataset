@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "manuelraileanu/ro-political-leaning-v2",
+  "slug": "manuelraileanu-ro-political-leaning-v2",
+  "author": "manuelraileanu",
+  "url": "https://huggingface.co/manuelraileanu/ro-political-leaning-v2",
+  "created_at": "2026-09-06T11:08:24.000Z",
+  "updated_at": "2026-09-06T11:09:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "romanian",
+    "political-leaning",
+    "regression",
+    "ro-political",
+    "text-classification",
+    "ro",
+    "base_model:dumitrescustefan/bert-base-romanian-cased-v1",
+    "base_model:finetune:dumitrescustefan/bert-base-romanian-cased-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124442113,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497797325,
+  "storage_human": "498 MB",
+  "base_model": "dumitrescustefan/bert-base-romanian-cased-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manuelraileanu/ro-political-leaning · Hugging Face",
+      "url": "https://huggingface.co/manuelraileanu/ro-political-leaning",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "manuelraileanu/ro-political-leaning at main - Hugging Face",
+      "url": "https://huggingface.co/manuelraileanu/ro-political-leaning/tree/main",
+      "snippet": "/ ro-political-leaning like 0 Text Classification Safetensors Romanian xlm-roberta romanian political-leaning ro-political License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main ro-political-leaning 1.13 GB Ctrl+K Ctrl+K 1 contributor History:3 commits manuelraileanu Add model card b140edf verified3 days ago ..."
+    },
+    {
+      "title": "Results · The Neutrality Project",
+      "url": "https://neutralityproject.org/results.html",
+      "snippet": "Anchored political-leaning results for the Political Neutrality Benchmark: 18 models from 12 labs across the US, France, China, and the EU, with refusal-impact flags and full reproducibility."
+    },
+    {
+      "title": "Political Leanings of Major AI Models Examined",
+      "url": "https://rudevulture.com/political-leanings-of-major-ai-models-examined/",
+      "snippet": "So why do AI systems built by competing companies, with different teams, different goals, and different marketing strategies, all end up in roughly the same political neighborhood? Two leading theories have emerged. The first points to the fine-tuning phase of AI development, where models are trained to be helpful and conversational, as the stage where political tendencies may take hold. The ..."
+    },
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "An AI model, Claude, produced the first end-to-end, computer-checked proof of Fermat's Last Theorem (FLT). Working largely autonomously over 11 days, Claude generated 13 million lines of Lean code and proved 29,500 intermediate theorems, following a simplified version of Wiles's proof."
+    }
+  ]
+}

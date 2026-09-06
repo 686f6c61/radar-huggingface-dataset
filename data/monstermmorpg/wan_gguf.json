@@ -5,7 +5,7 @@
   "author": "MonsterMMORPG",
   "url": "https://huggingface.co/MonsterMMORPG/Wan_GGUF",
   "created_at": "2025-04-29T14:03:11.000Z",
-  "updated_at": "2026-09-04T23:44:47.000Z",
+  "updated_at": "2026-09-05T09:50:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,11 +19,11 @@
     "region:us"
   ],
   "likes": 42,
-  "downloads_30d": 85432,
+  "downloads_30d": 84336,
   "trending_score": 0,
   "parameters": 11901408320,
   "parameters_human": "11.90B",
-  "storage_bytes": 3908807077252,
+  "storage_bytes": 3908810705215,
   "storage_human": "3908.8 GB",
   "base_model": null,
   "formats": [

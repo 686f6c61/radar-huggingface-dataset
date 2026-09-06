@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "LnsTchTps/zeta-2.1-NVFP4",
+  "slug": "lnstchtps-zeta-2-1-nvfp4",
+  "author": "LnsTchTps",
+  "url": "https://huggingface.co/LnsTchTps/zeta-2.1-NVFP4",
+  "created_at": "2026-09-06T02:42:34.000Z",
+  "updated_at": "2026-09-06T02:43:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "edit-prediction",
+    "next-edit-suggestion",
+    "compressed-tensors",
+    "nvfp4",
+    "en",
+    "base_model:zed-industries/zeta-2.1",
+    "base_model:quantized:zed-industries/zeta-2.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 5197009344,
+  "parameters_human": "5.20B",
+  "storage_bytes": 6480152944,
+  "storage_human": "6.5 GB",
+  "base_model": "zed-industries/zeta-2.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl Reisen & Experiences Urlaub & Erlebnisse zum Aktionspreis",
+      "url": "https://www.lidl-reisen.de/",
+      "snippet": "Ob das Weite nah oder am anderen Ende der Welt liegt: Mit Lidl Reisen kannst du deinen Urlaub günstig buchen und kommst …"
+    },
+    {
+      "title": "LnsTchTps/zeta-2.1-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/LnsTchTps/zeta-2.1-NVFP4",
+      "snippet": "Instructions to use LnsTchTps/zeta-2.1-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Urlaubsangebote 2026 Reiseschnäppchen buchen bei Lidl Reisen",
+      "url": "https://www.lidl-reisen.de/top-angebote",
+      "snippet": "Auf lidl-reisen.de finden Sie online schnell Ihr gewünschtes Reiseziel und preisgünstige Urlaubsangebote 2026. Vergleichen Sie die …"
+    },
+    {
+      "title": "zeta-2.1-NVFP4.gguf · distaste447/zeta-2.1-NVFP-GGUF at main",
+      "url": "https://huggingface.co/distaste447/zeta-2.1-NVFP-GGUF/blob/main/zeta-2.1-NVFP4.gguf",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lidl Reisen - Günstig Urlaub buchen & unvergessliche Erlebnisse ...",
+      "url": "https://www.lidl-reisen.at/",
+      "snippet": "Ob das Weite nah oder am anderen Ende der Welt liegt: Mit Lidl Reisen können Sie Ihren Urlaub günstig buchen und kommen …"
+    }
+  ]
+}

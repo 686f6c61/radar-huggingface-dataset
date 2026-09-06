@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch8",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_babylm_10m_seed43_epoch8",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch8",
+  "created_at": "2026-09-06T02:42:33.000Z",
+  "updated_at": "2026-09-06T02:45:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 with libraries, inference providers, notebooks, and local apps. Follow these links ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Google disponible en : English PublicitéÀ propos de GoogleGoogle.com in English © 2026 - Confidentialité- Conditions Applications …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English PublicitéÀ propos de GoogleGoogle.com © 2026 - Confidentialité- Conditions Applications Google"
+    }
+  ]
+}

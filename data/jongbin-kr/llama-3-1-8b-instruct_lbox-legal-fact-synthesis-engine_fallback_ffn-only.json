@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-fact-synthesis-engine_fallback_ffn-only",
+  "slug": "jongbin-kr-llama-3-1-8b-instruct_lbox-legal-fact-synthesis-engine_fallback_ffn-only",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-fact-synthesis-engine_fallback_ffn-only",
+  "created_at": "2026-09-06T03:12:20.000Z",
+  "updated_at": "2026-09-06T08:54:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1149930929,
+  "storage_human": "1.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CERO EVARO 52, CERO EVARO 49 to nowości w naszej ofercie. W",
+      "url": "https://www.facebook.com/ceramika.nowa/videos/cero-evaro-52-cero-evaro-49-to-nowo%C5%9Bci-w-naszej-ofercie-w-tym-filmie-przedstawia/1044542804955132/",
+      "snippet": "Aug 29, 2026 · CERO EVARO 52, CERO EVARO 49 to nowości w naszej ofercie. W tym filmie przedstawiamy nowość w naszej …"
+    },
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-fact-synthesis-engine ...",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-fact-synthesis-engine_fallback_ffn-only",
+      "snippet": "Instructions to use Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-fact-synthesis-engine_fallback_ffn-only with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Babaria Cero - Niska cena na Allegro",
+      "url": "https://allegro.pl/listing?string=babaria+cero",
+      "snippet": "Babaria Cero Zróżnicowany zbiór ofert, najlepsze ceny i promocje. Wejdź i znajdź to, czego szukasz!"
+    },
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct_lbox-statute_ffn-only · Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-statute_ffn-only",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "De Cero - Niska cena na Allegro",
+      "url": "https://allegro.pl/listing?string=de+cero",
+      "snippet": "De Cero Zróżnicowany zbiór ofert, najlepsze ceny i promocje. Wejdź i znajdź to, czego szukasz!"
+    }
+  ]
+}

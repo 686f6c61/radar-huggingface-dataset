@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JustACluelessKidAtSchool/magenta-rt-2-qad-onnx",
+  "slug": "justacluelesskidatschool-magenta-rt-2-qad-onnx",
+  "author": "JustACluelessKidAtSchool",
+  "url": "https://huggingface.co/JustACluelessKidAtSchool/magenta-rt-2-qad-onnx",
+  "created_at": "2026-09-06T02:03:33.000Z",
+  "updated_at": "2026-09-06T02:03:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "music",
+    "music-generation",
+    "webgpu",
+    "wasm",
+    "magenta-rt",
+    "realtime",
+    "audio-to-audio",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110999872,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neČT24 – Telegram",
+      "url": "https://t.me/s/neCT24",
+      "snippet": "🇵🇱🇺🇦Ukrajinců s dočasnou ochranou v Polsku ubývá: za měsíc se jejich počet snížil o dalších 8,1 tisíce, informuje RMF24. Podle deníku v …"
+    },
+    {
+      "title": "JustACluelessKidAtSchool/magenta-rt-2-qad-onnx · Hugging Face",
+      "url": "https://huggingface.co/JustACluelessKidAtSchool/magenta-rt-2-qad-onnx",
+      "snippet": "This repository hosts the Quantized Acoustic Distillation (QAD)ONNX models for real-time neural music generation in the browser via WebGPUand WASM SIMD. Architecture & Model Components authentic_student_generator_int8.onnx(64.0 MB): Unrolled 12-codebook Depthformer student model (6 temporal layers, 2 depth layers, 35.7M active parameters)."
+    },
+    {
+      "title": "neČT24 – Telegram",
+      "url": "https://t.me/s/neCT24?before=71560",
+      "snippet": "Mar 16, 2025 · ️Trump řekl, že nařídil americké armádě, aby zahájila vojenskou operaci proti Húsíům v Jemenu. Američtí …"
+    },
+    {
+      "title": "google/magenta-realtime-2 · Hugging Face",
+      "url": "https://huggingface.co/google/magenta-realtime-2",
+      "snippet": "Instructions to use google/magenta-realtime-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "NeČT24 - Facebook",
+      "url": "https://www.facebook.com/nect24/",
+      "snippet": "Josef Skála se podělil s neČT24 o svůj názor na ukrajinský nacionalismus, UPA, divizi Galizien a přístup Polska a Západu k …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch3",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch3",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch3",
+  "created_at": "2026-09-06T02:53:43.000Z",
+  "updated_at": "2026-09-06T02:55:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.com: Amazon Prime",
+      "url": "https://www.amazon.com/amazonprime",
+      "snippet": "More Prime benefits Groceries Free Same-Day Delivery on $25+ grocery orders in selected areas and exclusive savings at Whole …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 ...",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Amazon.com: Amazon Prime",
+      "url": "https://www.amazon.com/amazonprime?primeCampaignId=accessWlpPrimeRedir",
+      "snippet": "What is Prime Access, and how does it differ from the full-price Prime membership? Prime Access is a discounted version of the …"
+    },
+    {
+      "title": "Lanni Bu",
+      "url": "https://lanni-ni.github.io/",
+      "snippet": "Xiulin Yang, Zhuoxuan Ju, Lanni Bu, Zoey Liu, Nathan Schneider. Proceedings of the Workshop on Universal Dependencies (UDW) at SyntaxFest 2025."
+    },
+    {
+      "title": "Amazon.com: Prime Video: Prime Video",
+      "url": "https://www.amazon.com/gp/video/collection/IncludedwithPrime",
+      "snippet": "Find, shop for and buy Prime Video at Amazon.com"
+    }
+  ]
+}

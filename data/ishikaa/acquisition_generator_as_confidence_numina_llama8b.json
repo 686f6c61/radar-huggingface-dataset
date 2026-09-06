@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_confidence_numina_llama8b",
+  "slug": "ishikaa-acquisition_generator_as_confidence_numina_llama8b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_llama8b",
+  "created_at": "2026-09-05T04:11:46.000Z",
+  "updated_at": "2026-09-06T04:46:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 240,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 96380445888,
+  "storage_human": "96.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuální ceny PHM, ceny benzínu a ceny nafty – PALIVO.CZ",
+      "url": "https://www.palivo.cz/?change_fuel=nafta",
+      "snippet": "Ceny PHM, ceny benzinu a ceny nafty se stále a nepředvídatelně mění. Není proto lehké udržet si přehled o jejich výši, zvlášť když …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_confidence_numina_llama8b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_llama8b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_confidence_numina_llama8b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Cenový strop PHM: archiv maximálních cen (duben–červenec 2026)",
+      "url": "https://www.cenovystrop.cz/",
+      "snippet": "Cenový strop na pohonné hmoty skončil 20. července 2026. Archiv regulovaných maximálních cen nafty a benzínu stanovených MF …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_confidence_numina_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_confidence_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ceny PHM 2026 – benzin, nafta a LPG v ČR a EU",
+      "url": "https://paliva.fintop.cz/",
+      "snippet": "Průměrné ceny PHM (pohonných hmot) v ČR a EU – Natural 95, motorová nafta a LPG. Týdenní vývoj, mapa a srovnání zemí EU s …"
+    }
+  ]
+}

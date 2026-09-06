@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen1",
+  "slug": "hungrydino-qwen_2-5_7b-cat_numbers-collapse_p10_twf-run7-gen1",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen1",
+  "created_at": "2026-08-28T05:13:45.000Z",
+  "updated_at": "2026-09-06T03:21:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 253747282,
+  "storage_human": "254 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شراء اشتراكات في قنوات Primetime ومشاهدة محتواها على YouTube",
+      "url": "https://support.google.com/youtube/answer/12770587?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "شراء اشتراكات في قنوات Primetime ومشاهدة محتواها على تلفزيون ذكي افتح تطبيق YouTube على تلفزيون ذكي متوافق معه. من القائمة اليمنى، انتقِل إلى الأفلام والتلفزيون. ضمن قنوات …"
+    },
+    {
+      "title": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen1 · Hugging ...",
+      "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "كيفية ارجاع الفيديوهات التي انا حذفتها من قناة الخاصة بي - منتدى YouTube",
+      "url": "https://support.google.com/youtube/thread/265677065/كيفية-ارجاع-الفيديوهات-التي-انا-حذفتها-من-قناة-الخاصة-بي?hl=ar",
+      "snippet": "كيفية ارجاع الفيديوهات التي انا حذفتها من قناة الخاصة بي - منتدى YouTube false"
+    },
+    {
+      "title": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen1 · Hugging ...",
+      "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen1",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings Unsloth Studio How to use HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen1 with Unsloth Studio: Install ..."
+    },
+    {
+      "title": "d, jd, f - منتديات بورصات",
+      "url": "https://forum.borsaat.com/t399466.html",
+      "snippet": "معدل تقييم المستوى: 15 16 - 04 - 2012, 01:51 AM #1 d, jd, f يوتيوب متوفر الآن بنسخة إماراتية أعلنت غوغل عن إطلاق نسخة إماراتية من موقع الفيديو الشهير “يوتيوب”. d, jd, f"
+    }
+  ]
+}

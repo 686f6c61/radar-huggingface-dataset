@@ -5,7 +5,7 @@
   "author": "RiverRider",
   "url": "https://huggingface.co/RiverRider/srt-cxr14-linear-probe",
   "created_at": "2026-08-29T18:35:52.000Z",
-  "updated_at": "2026-08-30T09:23:22.000Z",
+  "updated_at": "2026-09-05T17:06:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -20,7 +20,7 @@
     "image-classification",
     "dataset:RiverRider/srt-cxr14-frozen-probe",
     "base_model:google/gemma-4-31B-it",
-    "base_model:finetune:google/gemma-4-31B-it",
+    "base_model:adapter:google/gemma-4-31B-it",
     "license:apache-2.0",
     "model-index",
     "region:us"

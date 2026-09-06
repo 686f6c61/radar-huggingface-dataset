@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jayp132/green-only-200-cleaned-policy",
+  "slug": "jayp132-green-only-200-cleaned-policy",
+  "author": "jayp132",
+  "url": "https://huggingface.co/jayp132/green-only-200-cleaned-policy",
+  "created_at": "2026-09-06T02:53:13.000Z",
+  "updated_at": "2026-09-06T02:54:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jayp132/green-only-200-cleaned",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-6 Astra Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "snippet": "2 days ago · gpt-6-astra gpt-6-astra gpt-6-astra Rate limits Rate limits ensure fair and reliable access to the API by placing specific …"
+    },
+    {
+      "title": "jayp132/green-only-200-cleaned-policy · Hugging Face",
+      "url": "https://huggingface.co/jayp132/green-only-200-cleaned-policy",
+      "snippet": "Instructions to use jayp132/green-only-200-cleaned-policy with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GPT-5.6 and GPT-6 Pro in ChatGPT | OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt",
+      "snippet": "Learn how GPT-5.6 and GPT-6 Pro work in ChatGPT, which options are available by plan, and how usage limits and availability work."
+    },
+    {
+      "title": "jayp132/green-only-200-cleaned at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/jayp132/green-only-200-cleaned/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Safety overview: GPT-6 Astra | OpenAI",
+      "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
+      "snippet": "2 days ago · GPT‑6 Astra is a significant step up in cyber capabilities and meets our Critical threshold. This means that, with the right …"
+    }
+  ]
+}

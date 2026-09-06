@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/SharperSwarm",
   "created_at": "2026-01-21T19:03:29.000Z",
-  "updated_at": "2026-09-04T13:17:06.000Z",
+  "updated_at": "2026-09-05T13:16:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 4423,
+  "downloads_30d": 4339,
   "trending_score": 0,
   "parameters": 103177597,
   "parameters_human": "103.2M",

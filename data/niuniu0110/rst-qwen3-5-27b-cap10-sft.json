@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NiuNiu0110/rst-qwen3.5-27b-cap10-sft",
+  "slug": "niuniu0110-rst-qwen3-5-27b-cap10-sft",
+  "author": "NiuNiu0110",
+  "url": "https://huggingface.co/NiuNiu0110/rst-qwen3.5-27b-cap10-sft",
+  "created_at": "2026-09-06T11:09:15.000Z",
+  "updated_at": "2026-09-06T11:09:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "terminal-agent",
+    "sft",
+    "conversational",
+    "dataset:NiuNiu0110/RST-SFT-Qwen3.5-27B",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575830870,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Efexor XR 150 mg mikropellet kapsül Kullanma Talimatı",
+      "url": "https://kt.ilacprospektusu.com/ilac/3737-efexor-xr-150-mg-mikropellet-kapsul-kt",
+      "snippet": "EFEXOR XR'ı sadece doktorunuz ile birlikte potansiyel faydalarının riskinden fazla olduğunu düşünürseniz kullanmanız gerekir. Eğer …"
+    },
+    {
+      "title": "NiuNiu0110/RST-DPO-Qwen3.5-27B · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/NiuNiu0110/RST-DPO-Qwen3.5-27B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EFEXOR XR 150 MG MIKROPELLET KAPSÜL - kullanma tali̇mati, ne için ...",
+      "url": "https://ilac-kullanma-talimat.web.tr/efexor-xr-150-mg-mikropellet-kapsuel-154802/kullanma-talimati",
+      "snippet": "Tavsiye edilen başlangıç dozu günlük 75 mg EFEXOR XR’dır. 75 mg’lık günlük başlangıç dozuna cevap vermeyen hastalar, günde …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-27B",
+      "snippet": "Instructions to use Qwen/Qwen3.5-27B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Efexor XR (venlafaksin) nedir? Ne için ve nasıl kullanılır? Yan etkileri",
+      "url": "https://www.medikalakademi.com.tr/efexor-xr-venlafaksin-nedir-ne-icin-ve-nasil-kullanilir-yan-etkileri/",
+      "snippet": "May 10, 2020 · Efexor XR (venlafaksin), depresyon, anksiyete ve panik atak tedavisinde sıklıkla kullanılan reçeteli bir antidepresandır."
+    }
+  ]
+}

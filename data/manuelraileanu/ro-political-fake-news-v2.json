@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "manuelraileanu/ro-political-fake-news-v2",
+  "slug": "manuelraileanu-ro-political-fake-news-v2",
+  "author": "manuelraileanu",
+  "url": "https://huggingface.co/manuelraileanu/ro-political-fake-news-v2",
+  "created_at": "2026-09-06T11:09:58.000Z",
+  "updated_at": "2026-09-06T11:10:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "romanian",
+    "fake-news",
+    "misinformation",
+    "regression",
+    "ro-political",
+    "text-classification",
+    "ro",
+    "base_model:dumitrescustefan/bert-base-romanian-cased-v1",
+    "base_model:finetune:dumitrescustefan/bert-base-romanian-cased-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124442113,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497797325,
+  "storage_human": "498 MB",
+  "base_model": "dumitrescustefan/bert-base-romanian-cased-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why is my goojara website slow - Google Account Community",
+      "url": "https://support.google.com/accounts/thread/212430254/why-is-my-goojara-website-slow?hl=en",
+      "snippet": "Apr 23, 2023 · This help content & informationGeneral Help Center experience Search"
+    },
+    {
+      "title": "manuelraileanu/ro-political-fake-news · Hugging Face",
+      "url": "https://huggingface.co/manuelraileanu/ro-political-fake-news",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "I want to download movies on Gojara but in says error",
+      "url": "https://support.google.com/chrome/thread/179070885/i-want-to-download-movies-on-gojara-but-in-says-error?hl=en",
+      "snippet": "Sep 13, 2022 · If you are reading this reply on your email, be advised that you cannot reply via email. Please come back to the …"
+    },
+    {
+      "title": "manuelraileanu (Raileanu Nicolae Manuel) - Hugging Face",
+      "url": "https://huggingface.co/manuelraileanu",
+      "snippet": "datasets1 manuelraileanu/ro-political-labeled Viewer •Updated 15 days ago•55.8k• 29"
+    },
+    {
+      "title": "samsung bezel-less | DroidForums.net | Android Forum & News",
+      "url": "https://www.droidforums.net/tags/samsung-bezel-less/",
+      "snippet": "Sep 5, 2017 · This is a sample guest message. Register a free account today to become a member! Once signed in, you'll be able to …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "aariciah",
   "url": "https://huggingface.co/aariciah/gpt2-spanish-20k-lc",
   "created_at": "2026-09-01T23:45:44.000Z",
-  "updated_at": "2026-09-02T01:37:26.000Z",
+  "updated_at": "2026-09-06T01:16:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 100612608,
   "parameters_human": "100.6M",
-  "storage_bytes": 2414798481,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 3219735330,
+  "storage_human": "3.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

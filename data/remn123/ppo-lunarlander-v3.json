@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "remn123/ppo-LunarLander-v3",
+  "slug": "remn123-ppo-lunarlander-v3",
+  "author": "remn123",
+  "url": "https://huggingface.co/remn123/ppo-LunarLander-v3",
+  "created_at": "2026-09-06T01:55:57.000Z",
+  "updated_at": "2026-09-06T02:06:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 433429,
+  "storage_human": "433429 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "قیمت طلا, قیمت سکه, قیمت دلار - شبکه اطلاع رسانی طلا و ارز",
+      "url": "https://www.tgju.org/",
+      "snippet": "انس طلا (XAU/USD) در آستانه آغاز معاملات اروپا در روز پنجشنبه، همچنان تمایل صعودی خود را حفظ کرده است، اما قیمت زیر سطح ۴,۴۵۰ دلار باقی مانده و بازار همچنان با مجموعه‌ای …"
+    },
+    {
+      "title": "README.md · remn123/ppo-LunarLander-v3 at main - Hugging Face",
+      "url": "https://huggingface.co/remn123/ppo-LunarLander-v3/blob/main/README.md",
+      "snippet": "Instructions to use remn123/ppo-LunarLander-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "قیمت سکه | شبکه اطلاع‌ رسانی طلا و ارز",
+      "url": "https://www.tgju.org/coin",
+      "snippet": "در سال 1370 و با هدف تکریم و گرامیداشت نام و یاد امام خمینی (ره)، با پیشنهاد بانک مرکزی و موافقت وزارت امور اقتصادی و دارایی و به استناد بند 2 قانون اصلاحیه ضرب مسکوکات طلا، …"
+    },
+    {
+      "title": "conlan/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/conlan/ppo-LunarLander-v3",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2."
+    },
+    {
+      "title": "نرخ ارز | شبکه اطلاع‌ رسانی طلا و ارز",
+      "url": "https://www.tgju.org/currency",
+      "snippet": "قیمت نقره سکه در بورس طلا در بورس قیمت سکه تاریخ پایین قیمت سکه تک فروشی ارز نیما نمای کلی"
+    }
+  ]
+}

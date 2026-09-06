@@ -5,7 +5,7 @@
   "author": "42savage",
   "url": "https://huggingface.co/42savage/megan-pure-94",
   "created_at": "2026-09-01T22:30:01.000Z",
-  "updated_at": "2026-09-03T09:24:43.000Z",
+  "updated_at": "2026-09-05T20:32:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 55590401463,
-  "storage_human": "55.6 GB",
+  "storage_bytes": 75003595575,
+  "storage_human": "75.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

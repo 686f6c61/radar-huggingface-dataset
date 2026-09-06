@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AnChill/Salor",
+  "slug": "anchill-salor",
+  "author": "AnChill",
+  "url": "https://huggingface.co/AnChill/Salor",
+  "created_at": "2026-09-06T02:29:33.000Z",
+  "updated_at": "2026-09-06T02:29:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "AnChill/Salor · Hugging Face",
+      "url": "https://huggingface.co/AnChill/Salor",
+      "snippet": "Salor like0 License:apache-2.0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Man won $900,000 from the state of California after being psychologically tortured by police during a 17-hour interrogation which lead …"
+    },
+    {
+      "title": "Epic V5 vs Stellar S14s: Paddling Feedback Needed - Facebook",
+      "url": "https://www.facebook.com/groups/395803743862021/posts/4538061082969579/",
+      "snippet": "25.01.2022 ... Meta AI. What people are saying ... It can be a slow process to master a model and then move up in the normal progression of models."
+    },
+    {
+      "title": "AnChill (Van Thanh An) - Hugging Face",
+      "url": "https://huggingface.co/AnChill",
+      "snippet": "Sort: Recently updated No application file Agents Salor 🏃 Wizi AI Chat - Sailor-0.5B-Chat AnChillabout 4 hours ago"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RehanKhan01126/MemeDuck-Social-8B",
+  "slug": "rehankhan01126-memeduck-social-8b",
+  "author": "RehanKhan01126",
+  "url": "https://huggingface.co/RehanKhan01126/MemeDuck-Social-8B",
+  "created_at": "2026-09-06T11:10:34.000Z",
+  "updated_at": "2026-09-06T11:10:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/llama-3-8b-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/llama-3-8b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "AI at Meta: Meta AI Products, Models and Research",
+      "url": "https://ai.meta.com/",
+      "snippet": "Explore AI at Meta. Use Meta AI to answer questions, create images, and complete tasks for free. Plus AI research, models, and tools for developers."
+    },
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The platform where the machine learning community collaborates on models, datasets, and applications."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Need to download the package to install across your organization?"
+    }
+  ]
+}

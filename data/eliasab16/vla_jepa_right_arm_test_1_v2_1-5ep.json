@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "eliasab16/vla_jepa_right_arm_test_1_v2_1.5ep",
+  "slug": "eliasab16-vla_jepa_right_arm_test_1_v2_1-5ep",
+  "author": "eliasab16",
+  "url": "https://huggingface.co/eliasab16/vla_jepa_right_arm_test_1_v2_1.5ep",
+  "created_at": "2026-09-06T03:15:18.000Z",
+  "updated_at": "2026-09-06T05:56:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 2768237960,
+  "parameters_human": "2.77B",
+  "storage_bytes": 17194462228,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "eliasab16 (Elias AB) - Hugging Face",
+      "url": "https://huggingface.co/eliasab16",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 1 day ago ... updated a dataset 4 days ago"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=nl",
+      "snippet": "Maak kennis met Gemini, de AI-assistent van Google. Krijg hulp bij onder andere schrijven, plannen en brainstormen. Ontdek de …"
+    },
+    {
+      "title": "eliasab16 (Elias AB) - Hugging Face",
+      "url": "https://huggingface.co/eliasab16/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago ... updated a dataset 3 days ago"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=de",
+      "snippet": "Chatte mit Gemini, dem KI-Assistenten von Google. Lass dich beim Schreiben, Planen, Sammeln von Ideen und vielem mehr von der …"
+    }
+  ]
+}

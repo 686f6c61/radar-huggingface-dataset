@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hylin16/food-recognition-food11-effnet-b4-cbam-380",
+  "slug": "hylin16-food-recognition-food11-effnet-b4-cbam-380",
+  "author": "hylin16",
+  "url": "https://huggingface.co/hylin16/food-recognition-food11-effnet-b4-cbam-380",
+  "created_at": "2026-09-06T11:16:01.000Z",
+  "updated_at": "2026-09-06T11:38:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "food",
+    "cbam",
+    "attention",
+    "food-11",
+    "arxiv:1807.06521",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72592340,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Food-11",
+      "metric": "Top-1 accuracy",
+      "value": 0.95
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Food-11",
+      "metric": "Macro F1",
+      "value": 0.9497218606225656
+    }
+  ],
+  "sources": [
+    {
+      "title": "Online Lebensversicherung vergleichen: digital abschließen",
+      "url": "https://geldio.de/vorsorge/sterbegeldversicherung/online-lebensversicherung-vergleich/",
+      "snippet": "Jul 25, 2026 · Wenn du schnell und unkompliziert online vorsorgen willst, kannst du Tarife für eine Lebensversicherung bzw. …"
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1X06Y-HSPeHbEWtsXpyal8R1PliiVvpJq?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Accurate & real-time food classification through the synergistic integration of EfficientNetB7, CBAM, transfer learning, and data augmentation - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2949824424002672",
+      "snippet": "This study addresses this gap by introducing a model that leverages the state-of-the-art pre-trained EfficientNetB7 architecture for effective feature extraction, further enhanced through data augmentation, fine-tuning, hyperparameter optimization, and the integration of a Convolutional Block Attention Module (CBAM), which improves both channel and spatial attention. We trained, validated, and evaluated the model on the Kaggle Food11 dataset, comprising 16643 images across 11 imbalanced classes with substantial intra-class variations and inter-class similarities."
+    },
+    {
+      "title": "NutrifyAI: An AI-Powered System for Real-Time Food Detection, Nutritional Analysis, and Personalized Meal Recommendations",
+      "url": "https://arxiv.org/html/2408.10532v2",
+      "snippet": "Particularly, computer vision offers a promising application in the domain of food recognition and nutrient analysis [3]. This research aims to explore the capabilities of a computer vision model, specifically a YOLO (You Only Look Once) model, to accurately recognize food dishes and perform a reliable analysis of their nutritional content."
+    },
+    {
+      "title": "GitHub - lannguyen0910/food-recognition: 🍔🍟🍗 Food analysis baseline with Theseus. Integrate object detection, image classification and multi-class semantic segmentation 🍞🍖🍕",
+      "url": "https://github.com/lannguyen0910/food-recognition",
+      "snippet": "Label enhancement technique, if the output label (after detection) is either \"Food\" or \"Food-drinks\", we use a pretrained Efficientnet-B4 classifier (on 255 classes) to re-classify it to another reasonable label. Big refactor, update the training steps, used from Ultralyticssource code repo too. The models yield better accuracy."
+    }
+  ]
+}

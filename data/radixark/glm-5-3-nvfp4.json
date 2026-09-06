@@ -5,7 +5,7 @@
   "author": "RadixArk",
   "url": "https://huggingface.co/RadixArk/GLM-5.3-NVFP4",
   "created_at": "2026-08-28T08:17:15.000Z",
-  "updated_at": "2026-08-28T10:55:06.000Z",
+  "updated_at": "2026-09-05T04:30:23.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 12,
-  "downloads_30d": 16776,
+  "downloads_30d": 24662,
   "trending_score": 10,
   "parameters": 380989135104,
   "parameters_human": "380.99B",

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_1Bpt_hfbody_adamwppt_1B_s1_2026-09-06_10-48-58_728534-pt",
+  "slug": "alexkstern-nca_dose_1bpt_hfbody_adamwppt_1b_s1_2026-09-06_10-48-58_728534-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_1Bpt_hfbody_adamwppt_1B_s1_2026-09-06_10-48-58_728534-pt",
+  "created_at": "2026-09-06T11:11:51.000Z",
+  "updated_at": "2026-09-06T11:12:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_nca-paper-share200-2048",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول على LinkedIn، تسجيل الدخول | LinkedIn",
+      "url": "https://www.linkedin.com/login/ar",
+      "snippet": "قم بتسجيل الدخول إلى LinkedIn للبقاء على تواصل مع الأشخاص الذين تعرفهم ومشاركة أفكارك وبناء حياتك المهنية."
+    },
+    {
+      "title": "alexkstern/nca_dose_1Bpt_hfbody_1B_s2_2026-08-14_14-01-42_048775-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_1Bpt_hfbody_1B_s2_2026-08-14_14-01-42_048775-pt",
+      "snippet": "alexkstern / nca_dose_1Bpt_hfbody_1B_s2_2026-08-14_14-01-42_048775-pt like 0 nanochat nanochat_gpt pt_fineweb-nanochatbpe-20B ppt_nca-paper-share200-2048 seed_2 case_c lr_trapezoid depth_16 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new nca_dose_1Bpt_hfbody_1B_s2_2026-08-14_14-01-42_048775-pt Outcome Training config Files"
+    },
+    {
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "url": "https://www.linkedin.com/login/ar.s",
+      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
+    },
+    {
+      "title": "nca_dose_1Bpt_hfbody_5M_s1_2026-08-14_05-39-21_493461-pt",
+      "url": "https://huggingface.co/alexkstern/nca_dose_1Bpt_hfbody_5M_s1_2026-08-14_05-39-21_493461-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‏LinkedIn ‏المملكة العربية السعودية‏: تسجيل الدخول أو إنشاء حساب",
+      "url": "https://sa.linkedin.com/",
+      "snippet": "انضم الآن تسجيل الدخول . مرحبًا بك في المجتمع الاحترافي . تسجيل الدخول باستخدام البريد الإلكتروني . بالنقر على الاستمرار للانضمام أو تسجيل الدخول، أنت توافق على ‏اتفاقية المستخدم‏..."
+    }
+  ]
+}

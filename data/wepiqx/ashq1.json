@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "wepiqx/ASHQ1",
+  "slug": "wepiqx-ashq1",
+  "author": "wepiqx",
+  "url": "https://huggingface.co/wepiqx/ASHQ1",
+  "created_at": "2026-06-25T23:32:21.000Z",
+  "updated_at": "2026-09-06T10:46:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "llama-cpp",
+    "imatrix",
+    "hybrid-quantization",
+    "selective-quantization",
+    "priority-queue",
+    "mse",
+    "theoretical-optimization",
+    "qwen3.5",
+    "gemma4",
+    "moe",
+    "mtp",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mon écran est décalé sur la droite,comment le remettre normal?",
+      "url": "https://forums.commentcamarche.net/forum/affich-33299013-mon-ecran-est-decale-sur-la-droite-comment-le-remettre-normal",
+      "snippet": "A voir également: Comment recentrer la page google chrome Comment recentrer la page google- Meilleures réponses Écran décalé …"
+    },
+    {
+      "title": "wepiqx/ASHQ1 · Hugging Face",
+      "url": "https://huggingface.co/wepiqx/ASHQ1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Page Internet décalée à droite - Microsoft Edge / Internet Explorer",
+      "url": "https://forums.commentcamarche.net/forum/affich-37234253-page-internet-decalee-a-droite",
+      "snippet": "Jun 1, 2021 · Bonjour, Ma page Internet s’est décalée sur la droite , avec Edge (Microsoft) J’ai dû faire une mauvaise manip J’ai …"
+    },
+    {
+      "title": "wepiqx/Ornith-1.0-9B-ASHQ1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/wepiqx/Ornith-1.0-9B-ASHQ1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Explorateur de fichiers : comment annuler une action - Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-32636197-explorateur-de-fichiers-comment-annuler-une-action",
+      "snippet": "Oct 12, 2015 · Meilleure réponse: Bonjour Dans l'explorateur , la petite fleche en haut à gauche , personnaliser la barre d'outils acces …"
+    }
+  ]
+}

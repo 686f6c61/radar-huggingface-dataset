@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "subhash4face/agentic-ai-routing-task-classifier",
+  "slug": "subhash4face-agentic-ai-routing-task-classifier",
+  "author": "subhash4face",
+  "url": "https://huggingface.co/subhash4face/agentic-ai-routing-task-classifier",
+  "created_at": "2026-09-06T03:03:08.000Z",
+  "updated_at": "2026-09-06T03:08:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 141903371,
+  "parameters_human": "141.9M",
+  "storage_bytes": 570090860,
+  "storage_human": "570 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google AI Pro student trial - Google One Community",
+      "url": "https://support.google.com/googleone/community-guide/379602230/google-ai-pro-student-trial?hl=en",
+      "snippet": "Oct 10, 2025 · <div>Hey everyone,</div> <div>&nbsp;<div>We&rsquo;re excited to share that the Google AI Pro student trial is now …"
+    },
+    {
+      "title": "subhash4face/agentic-ai-routing-task-classifier at main",
+      "url": "https://huggingface.co/subhash4face/agentic-ai-routing-task-classifier/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "كيفية استرداد حسابك على Google أو Gmail - مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=ar",
+      "snippet": "إذا نسيت كلمة مرورك أو اسم المستخدم أو لم تتمكن من الحصول على رموز التحقُّق، اتَّبع هذه الخطوات لاسترداد حسابك على Google. بهذه الطريقة، ستستعيد إمكانية استخدام Gmail و\"صور …"
+    },
+    {
+      "title": "agentic-ai-overview/patterns/05-routing at main · mk-hasan ... - GitHub",
+      "url": "https://github.com/mk-hasan/agentic-ai-overview/tree/main/patterns/05-routing",
+      "snippet": "Hands-on catalog of 15 agentic AI design patterns with runnable LangGraph examples. Same 3 scenarios (IT helpdesk, e-commerce, ML pipeline) across all patterns. OpenAI &amp; DeepSeek, optional MCP,..."
+    },
+    {
+      "title": "إدارة إعداداتك على Google - مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/answer/3118621?hl=ar",
+      "snippet": "الحساب انقر على صورة ملفك الشخصيأو الحرف الأول من اسمكإدارةحسابك على Google. انقر على أحد الأقسام: المعلومات الشخصية يمكنك تعديل المعلومات الأساسية في حسابك على Google. الاطّلاع …"
+    }
+  ]
+}

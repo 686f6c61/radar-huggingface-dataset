@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch7",
+  "slug": "lanni-ni-dynamic_alibi_2_4_256_babylm_10m_seed43_epoch7",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch7",
+  "created_at": "2026-09-06T02:40:04.000Z",
+  "updated_at": "2026-09-06T02:42:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 27447040,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109790168,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest von Ookla - Der umfassende Breitband-Geschwindigkeitstest",
+      "url": "https://www.speedtest.net/de",
+      "snippet": "Speedtest von Ookla - Der umfassende Breitband-Geschwindigkeitstest. Menu. Deutsch. Herunterladen. Anmelden. العربية. Deutsch. …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch7 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch7",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch7 with libraries, inference providers, notebooks, and local apps. Follow these links to get ..."
+    },
+    {
+      "title": "Speedtest Plus: Teste Deine Internet-Geschwindigkeit",
+      "url": "https://speedtest.vodafone.de/",
+      "snippet": "Und einen geeigneten Rechner plus das richtige LAN-Kabel, also CAT 5e oder besser. Bei WLAN hängt die Bandbreite vom …"
+    },
+    {
+      "title": "Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed44_epoch7 · Hugging Face",
+      "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed44_epoch7",
+      "snippet": "Instructions to use Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed44_epoch7 with libraries, inference providers, notebooks, and local apps. Follow these links to get ..."
+    },
+    {
+      "title": "So testen Sie kostenlos Ihre Internetgeschwindigkeit - PC-WELT",
+      "url": "https://www.pcwelt.de/article/2476778/so-testen-sie-ihre-internetgeschwindigkeit-webdienste-tools-windows-linux-mac.html",
+      "snippet": "Jun 1, 2026 · Dieses Tool können Sie nutzen, um die Zeit zu messen, die ein Datenpaket benötigt, um von der eigenen Maschine zu …"
+    }
+  ]
+}

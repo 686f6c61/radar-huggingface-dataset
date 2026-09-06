@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "raytuo/maysa-whatsapp-bot",
+  "slug": "raytuo-maysa-whatsapp-bot",
+  "author": "raytuo",
+  "url": "https://huggingface.co/raytuo/maysa-whatsapp-bot",
+  "created_at": "2026-09-06T01:51:30.000Z",
+  "updated_at": "2026-09-06T02:19:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BRAEMHOF",
+      "url": "https://www.braemhof.be/",
+      "snippet": "Restaurant Braemhof is een charmante eetgelegenheid in Gentbrugge, een deelgemeente van Gent. Gelegen op een steenworp van …"
+    },
+    {
+      "title": "raytuo/maysa-whatsapp-bot · Hugging Face",
+      "url": "https://huggingface.co/raytuo/maysa-whatsapp-bot",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use raytuo/maysa-whatsapp-bot with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use raytuo/maysa-whatsapp-bot with Transformers:"
+    },
+    {
+      "title": "Braemhof | Ghent - Facebook",
+      "url": "https://www.facebook.com/tbraemhof/",
+      "snippet": "Gentse Fieste bij ’t Braemhof! 🎉🎶 🥐 Begin je dag goed met een stevig ontbijt en kom meteen in de sfeer met een aansluitend optreden op …"
+    },
+    {
+      "title": "raytuo (rayutoo noaru) - Hugging Face",
+      "url": "https://huggingface.co/raytuo/models",
+      "snippet": "None yet raytuo's models1 Sort: Recently updated raytuo/maysa-whatsapp-bot Text Generation •8B•Updated about 8 hours ago•14 System theme Company"
+    },
+    {
+      "title": "Contact — BRAEMHOF",
+      "url": "https://www.braemhof.be/contact/",
+      "snippet": "+32 (0)9 231 03 16 BE 0803 041 026 openingsuren Maandag gesloten Dinsdag – vrijdag Keuken: 12:00 - 14:00 en 18:00 - 20:30 …"
+    }
+  ]
+}

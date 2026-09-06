@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chrisga13/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings",
+  "slug": "chrisga13-models-object-detection-and-ocr-system-for-engineering-drawings",
+  "author": "chrisga13",
+  "url": "https://huggingface.co/chrisga13/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings",
+  "created_at": "2026-09-06T11:15:00.000Z",
+  "updated_at": "2026-09-06T11:15:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 6924587450,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WeTransfer | Send Large Files Fast",
+      "url": "https://wetransfer.com/?msockid=16cce61b534b66141845f1d752f46722",
+      "snippet": "The simple, quick and secure way to send your files around the world without an account. Share your files, photos, and videos today …"
+    },
+    {
+      "title": "Models-Object-Detection-and-OCR-System-for-Engineering-Drawings",
+      "url": "https://huggingface.co/Nghiaub257/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Log in | WeTransfer",
+      "url": "https://wetransfer.com/log-in?msockid=16cce61b534b66141845f1d752f46722",
+      "snippet": "The simple, quick and secure way to send your files around the world without an account. Share your files, photos, and videos today …"
+    },
+    {
+      "title": "README.md · Nghiaub257/Models-Object-Detection-and-OCR-System-for ...",
+      "url": "https://huggingface.co/Nghiaub257/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings/blob/main/README.md",
+      "snippet": "Instructions to use Nghiaub257/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use Nghiaub257/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings with llama-cpp-python:"
+    },
+    {
+      "title": "File Transfers: The WeTransfer File Sharing Hub | WeTransfer",
+      "url": "https://wet.wetransfer.com/transfers",
+      "snippet": "The simple, quick and secure way to send your files around the world without an account. Share your files, photos, and videos today …"
+    }
+  ]
+}

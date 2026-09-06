@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/mathbf-dqo-a1-step800",
+  "slug": "sandeep123-mathbf-dqo-a1-step800",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/mathbf-dqo-a1-step800",
+  "created_at": "2026-09-06T11:22:39.000Z",
+  "updated_at": "2026-09-06T11:25:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5間灣仔咖啡小店推介2026：不含酒精卻有Baileys香氣、位置鄰近會展 …",
+      "url": "https://www.voguehk.com/zh/article/art-lifestyle/wan-chai-coffee-cafe/",
+      "snippet": "Feb 2, 2026 · 咖啡是許多香港人的必需品，不論你是於灣仔上班還是剛好在會展欣賞展覽，以下的灣仔咖啡地圖能快速助你找到最接 …"
+    },
+    {
+      "title": "sandeep123/dqo-math-K6a3kl-boxfix-step800 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/dqo-math-K6a3kl-boxfix-step800",
+      "snippet": "Companion checkpoint STRIDE-MATH counterpart (fair-matched): see sandeep123/stride-math-K6a3kl-boxfix (coming) STRIDE-SciQA (Qwen2.5-1.5B-Instruct base): sandeep123/stride-sciqa-K6a3kl-boxfix-step600 Downloads last month - Safetensors Model size 2B params Tensor type F32 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "興利咖啡奶茶 – 香港灣仔駱克道市政大廈的港式粉麵/米線熟食中心 | OpenRice 香港 …",
+      "url": "https://www1.openrice.com/zh/hongkong/r-%E8%88%88%E5%88%A9%E5%92%96%E5%95%A1%E5%A5%B6%E8%8C%B6-%E7%81%A3%E4%BB%94-%E6%B8%AF%E5%BC%8F-%E7%B2%89%E9%BA%B5-%E7%B1%B3%E7%B7%9A-r23159",
+      "snippet": "219 瀏覽 關注 興記咖啡奶茶（灣仔駱克道市政中心）好抵食三十幾蚊既港式風味靚早餐！ 第一次黎，因為係熟食中心既關係，環境普 …"
+    },
+    {
+      "title": "sandeep123/math-dqo-a1-step700 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/math-dqo-a1-step700",
+      "snippet": "DQO on MATH (Chen et al., ICLR 2026): alpha*logdet (L+I) with a leave-one-out estimator, alpha=1.0 per the paper. Embedding phi = reference-policy hidden states (matching STRIDE) rather than the paper's pretrained sentence encoder, so the comparison isolates the diversity objective."
+    },
+    {
+      "title": "About H | H....Coffee & Shop",
+      "url": "https://www.hcoffeenshop.com/about",
+      "snippet": "H Coffee & Shop | The Corner @ wanchai 位於灣仔港鐵站駱克道出口上蓋，1分鐘直達！ 3000呎木系文青空間，即炒意粉、手工漢堡 …"
+    }
+  ]
+}

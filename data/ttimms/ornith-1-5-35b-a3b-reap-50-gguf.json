@@ -5,7 +5,7 @@
   "author": "Ttimms",
   "url": "https://huggingface.co/Ttimms/Ornith-1.5-35B-A3B-REAP-50-GGUF",
   "created_at": "2026-08-29T17:59:03.000Z",
-  "updated_at": "2026-09-03T05:13:13.000Z",
+  "updated_at": "2026-09-05T12:17:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 888,
+  "downloads_30d": 1092,
   "trending_score": 0,
   "parameters": 18543997568,
   "parameters_human": "18.54B",

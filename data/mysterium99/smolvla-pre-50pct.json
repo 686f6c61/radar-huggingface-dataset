@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mysterium99/smolvla-pre-50pct",
+  "slug": "mysterium99-smolvla-pre-50pct",
+  "author": "mysterium99",
+  "url": "https://huggingface.co/mysterium99/smolvla-pre-50pct",
+  "created_at": "2026-09-06T02:51:06.000Z",
+  "updated_at": "2026-09-06T02:51:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:test",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720184,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder Grand Openings Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start …"
+    },
+    {
+      "title": "mysterium99/smolvla-pre-50pct · Hugging Face",
+      "url": "https://huggingface.co/mysterium99/smolvla-pre-50pct",
+      "snippet": "Instructions to use mysterium99/smolvla-pre-50pct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Grocery, Electronics, Mobiles, Fashion & More Online with Free Delivery",
+      "url": "https://gcc.luluhypermarket.com/en-qa/",
+      "snippet": "The best online grocery store in Qatar, LuLu Hypermarket provides the best grocery shopping experience for your daily needs, Online …"
+    },
+    {
+      "title": "mysterium99/smolvla-pre-50pct · Discussions - Hugging Face",
+      "url": "https://huggingface.co/mysterium99/smolvla-pre-50pct/discussions",
+      "snippet": "Instructions to use mysterium99/smolvla-pre-50pct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Supermarkets in Doha, supermarkets near me on the map - Yandex",
+      "url": "https://yandex.com/maps/21487/doha/category/supermarket/184108079/",
+      "snippet": "Doha, Zone 39, 840th Street, 78 1 2 Maps· Doha Supermarkets in nearby and open right now. Find the best supermarkets with …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "navyam-ai/navya-1b-sft-v9",
+  "slug": "navyam-ai-navya-1b-sft-v9",
+  "author": "navyam-ai",
+  "url": "https://huggingface.co/navyam-ai/navya-1b-sft-v9",
+  "created_at": "2026-09-06T11:10:14.000Z",
+  "updated_at": "2026-09-06T11:12:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "india",
+    "finance",
+    "from-scratch",
+    "navya",
+    "en",
+    "hi",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 337691648,
+  "parameters_human": "337.7M",
+  "storage_bytes": 1350791328,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fagiano Okayama - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fagiano_Okayama",
+      "snippet": "Fagiano Okayama (ファジアーノ岡山, Fajiāno Okayama) is a Japanese football club based in Okayama, the capital of Okayama …"
+    },
+    {
+      "title": "NavyAI - Unified AI API for 150+ Models",
+      "url": "https://api.navy/",
+      "snippet": "One endpoint, one API key, one subscription. Access 150+ AI models from OpenAI, Anthropic, Google, Mistral, and more through a single OpenAI-compatible API - flat-rate plans instead of pay-per-token pricing."
+    },
+    {
+      "title": "Fagiano Okayama Profile, Results, Players, Stats, Stadium | Official ...",
+      "url": "https://www.jleague.jp/en/club/okayama/",
+      "snippet": "2 days ago · Explore information of Fagiano Okayama club on the official website of J.LEAGUE."
+    },
+    {
+      "title": "LLM Cost Optimization & AI Inference Audit | NavyaAI",
+      "url": "https://www.navyaai.com/",
+      "snippet": "NavyaAI (Navya AI) builds AI that survives production — agents, RAG, private LLMs — with inspectable pricing, daily written progress, and published benchmarks. Free AI inference audit."
+    },
+    {
+      "title": "ファジアーノ岡山[Fagiano OKAYAMA]公式サイト",
+      "url": "https://www.fagiano-okayama.com/",
+      "snippet": "【9月26日開催】40歳以上対象！ OVER40 FAGI個サルビギナーMIXコース参加者募集！ スクール・パーク ニュース一覧を見る …"
+    }
+  ]
+}

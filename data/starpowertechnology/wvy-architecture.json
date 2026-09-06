@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "StarpowerTechnology/WVY-Architecture",
+  "slug": "starpowertechnology-wvy-architecture",
+  "author": "StarpowerTechnology",
+  "url": "https://huggingface.co/StarpowerTechnology/WVY-Architecture",
+  "created_at": "2026-09-06T02:26:02.000Z",
+  "updated_at": "2026-09-06T04:03:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "custom-architecture",
+    "causal-lm",
+    "recurrent-model",
+    "en",
+    "base_model:StarpowerTechnology/WVY-Architecture",
+    "base_model:finetune:StarpowerTechnology/WVY-Architecture",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "StarpowerTechnology/WVY-Architecture",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Francis Bacon? - 知乎",
+      "url": "https://www.zhihu.com/question/394024957",
+      "snippet": "怎么理解Francis Bacon的four idols. Tribe, cave, the market place, theatre."
+    },
+    {
+      "title": "StarpowerTechnology/WVY-Architecture · Hugging Face",
+      "url": "https://huggingface.co/StarpowerTechnology/WVY-Architecture",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FanFanFan - 知乎",
+      "url": "https://www.zhihu.com/people/ffancage/",
+      "snippet": "FanFanFan是知乎的用户，拥有丰富的回答经验和高赞记录，分享知识与见解。"
+    },
+    {
+      "title": "Starpower.Technology — Building WVY",
+      "url": "https://starpower.technology/",
+      "snippet": "Starpower Technology trains small reasoning-focused models, builds multi-agent collaboration frameworks, and develops new language-native architectures. Home of WVY and wvy.world."
+    },
+    {
+      "title": "牛顿为什么仅被授予爵士爵位？ - 知乎",
+      "url": "https://www.zhihu.com/question/27204632",
+      "snippet": "The knighthood is likely to have been motivated by political considerations connected with the Parliamentary election in May 1705, …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "fallentree/Gemma4-31B-Uncensored-GP100-GGUF",
+  "slug": "fallentree-gemma4-31b-uncensored-gp100-gguf",
+  "author": "fallentree",
+  "url": "https://huggingface.co/fallentree/Gemma4-31B-Uncensored-GP100-GGUF",
+  "created_at": "2026-09-06T03:15:30.000Z",
+  "updated_at": "2026-09-06T03:18:48.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "gemma4",
+    "uncensored",
+    "speculative-decoding",
+    "mtp",
+    "pascal",
+    "sm_60",
+    "gp100",
+    "q4_1_g64",
+    "text-generation",
+    "en",
+    "base_model:HauhauCS/Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+    "base_model:quantized:HauhauCS/Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 17655702624,
+  "storage_human": "17.7 GB",
+  "base_model": "google/gemma-4-31B-it, HauhauCS/Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Burgmuseum | Burgstadt Eppstein",
+      "url": "https://www.eppstein.de/de/leben-in-eppstein/ueber-eppstein/burg/burgmuseum/",
+      "snippet": "Das Stadt- und Burgmuseum bietet für Kinder von 7 bis 12 Jahren Kindergeburtstagsfeiern auf Burg Eppstein an. Diese können …"
+    },
+    {
+      "title": "fallentree/Gemma4-31B-Uncensored-GP100-GGUF · Hugging Face",
+      "url": "https://huggingface.co/fallentree/Gemma4-31B-Uncensored-GP100-GGUF",
+      "snippet": "Instructions to use fallentree/Gemma4-31B-Uncensored-GP100-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Kindergeburtstage mit den Rittern | Burgstadt Eppstein",
+      "url": "https://www.eppstein.de/de/rathaus-politik/aktuelles/aktuelles-und-pressemitteilungen/kindergeburtstage-mit-den-rittern/",
+      "snippet": "Jul 15, 2024 · Das Stadt- und Burgmuseum bietet für Kinder von 7 bis 12 Jahren Kindergeburtstagsfeiern auf Burg Eppstein an. Zwei …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=uncensored",
+      "snippet": "Baekpica/Qwen3.8-Flash-Next-Uncensored-Mixed-Quant-SSD-PLE-GGUF"
+    },
+    {
+      "title": "Kindergeburtstage mit Rittern | Eppsteiner Zeitung",
+      "url": "https://www.eppsteiner-zeitung.de/nachrichten/stadtleben/kindergeburtstage-rittern-id56898.html",
+      "snippet": "Jul 10, 2024 · Was bedeutet ein Ritterschlag? Und was mussten die Kinder auf der mittelalterlichen Burg lernen? Das Stadt- und …"
+    }
+  ]
+}

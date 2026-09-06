@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "UyghurAI/idirak-model",
+  "slug": "uyghurai-idirak-model",
+  "author": "UyghurAI",
+  "url": "https://huggingface.co/UyghurAI/idirak-model",
+  "created_at": "2026-09-06T01:57:42.000Z",
+  "updated_at": "2026-09-06T02:51:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ug",
+    "en",
+    "zh",
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "uyghur",
+    "conversational",
+    "qlora",
+    "idirak",
+    "text-generation",
+    "ug",
+    "en",
+    "zh",
+    "tr",
+    "dataset:UyghurAI/idirak-uyghur-instructions",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "UyghurAI/idirak-model · Hugging Face",
+      "url": "https://huggingface.co/UyghurAI/idirak-model",
+      "snippet": "Instructions to use UyghurAI/idirak-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "UyghurAI — The AI Model Family for the Uyghur World",
+      "url": "https://model.idirak.com/",
+      "snippet": "Eight AI models built from the ground up for the Uyghur language. Text generation, image synthesis, script correction, and cultural depth — all in one family."
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

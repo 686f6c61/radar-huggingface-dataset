@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "emberian/h-05b-replay",
+  "slug": "emberian-h-05b-replay",
+  "author": "emberian",
+  "url": "https://huggingface.co/emberian/h-05b-replay",
+  "created_at": "2026-09-06T03:19:14.000Z",
+  "updated_at": "2026-09-06T03:22:22.000Z",
+  "license": "falcon-llm-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "falcon_h1",
+    "text-generation",
+    "falcon-h1",
+    "mamba",
+    "hybrid",
+    "continued-pretraining",
+    "not-an-assistant",
+    "base_model:tiiuae/Falcon-H1-0.5B-Base",
+    "base_model:finetune:tiiuae/Falcon-H1-0.5B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 521411104,
+  "parameters_human": "521.4M",
+  "storage_bytes": 2085708680,
+  "storage_human": "2.1 GB",
+  "base_model": "tiiuae/Falcon-H1-0.5B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "emberian/h-05b-replay · Hugging Face",
+      "url": "https://huggingface.co/emberian/h-05b-replay",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use emberian/h-05b-replay with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use emberian/h-05b-replay with Transformers:"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    },
+    {
+      "title": "emberian (ember arlynx) - Hugging Face",
+      "url": "https://huggingface.co/emberian",
+      "snippet": "Sort: Recently updated emberian/h-leaf-e4-decay10-onnx Text Generation •Updated about 1 hour ago"
+    },
+    {
+      "title": "Get help with Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/outlook/get-help-with-outlook-com",
+      "snippet": "For other help with your Microsoft account and subscriptions, visit Account & Billing Help. To get help and troubleshoot other …"
+    }
+  ]
+}

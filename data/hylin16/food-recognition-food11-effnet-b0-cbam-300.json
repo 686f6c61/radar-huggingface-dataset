@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hylin16/food-recognition-food11-effnet-b0-cbam-300",
+  "slug": "hylin16-food-recognition-food11-effnet-b0-cbam-300",
+  "author": "hylin16",
+  "url": "https://huggingface.co/hylin16/food-recognition-food11-effnet-b0-cbam-300",
+  "created_at": "2026-09-06T11:15:07.000Z",
+  "updated_at": "2026-09-06T11:37:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "food",
+    "cbam",
+    "attention",
+    "food-11",
+    "arxiv:1807.06521",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17184406,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Food-11",
+      "metric": "Top-1 accuracy",
+      "value": 0.9515151515151515
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Food-11",
+      "metric": "Macro F1",
+      "value": 0.9514287824550518
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pricing | Surfe - Plans for Sales Intelligence & Enrichment",
+      "url": "https://www.surfe.com/pricing",
+      "snippet": "Start free or scale with Pro. Surfe offers flexible pricing for sales teams: email finder, mobile phone finder, waterfall enrichment, and …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Tarifs Surfe : plans, coûts et décomposition pricing [2026]",
+      "url": "https://derrick-app.com/fr/tools/surfe-pricing",
+      "snippet": "Plans tarifaires Surfe Surfe ships 3 tiers. Per-seat pricing combined with a credit system for data lookups - the listed price is rarely the …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Surfe Pricing 2026",
+      "url": "https://www.g2.com/products/surfe/pricing",
+      "snippet": "Apr 30, 2026 · Learn more about the cost of Surfe, different pricing plans, starting costs, free trials, and more pricing-related …"
+    }
+  ]
+}

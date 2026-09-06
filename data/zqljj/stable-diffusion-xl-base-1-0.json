@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zqljj/stable-diffusion-xl-base-1.0",
+  "slug": "zqljj-stable-diffusion-xl-base-1-0",
+  "author": "zqljj",
+  "url": "https://huggingface.co/zqljj/stable-diffusion-xl-base-1.0",
+  "created_at": "2026-09-06T01:45:58.000Z",
+  "updated_at": "2026-09-06T01:45:58.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "arxiv:2307.01952",
+    "arxiv:2211.01324",
+    "arxiv:2108.01073",
+    "arxiv:2112.10752",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 76909352585,
+  "storage_human": "76.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "zqljj/stable-diffusion-xl-base-1.0 · Hugging Face",
+      "url": "https://huggingface.co/zqljj/stable-diffusion-xl-base-1.0",
+      "snippet": "Instructions to use zqljj/stable-diffusion-xl-base-1.0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    },
+    {
+      "title": "stabilityai/stable-diffusion-xl-base-1.0 · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+      "snippet": "Instructions to use stabilityai/stable-diffusion-xl-base-1.0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    }
+  ]
+}

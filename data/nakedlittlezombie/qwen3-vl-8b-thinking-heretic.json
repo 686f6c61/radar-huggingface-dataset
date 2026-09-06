@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nakedlittlezombie/Qwen3-VL-8B-Thinking-heretic",
+  "slug": "nakedlittlezombie-qwen3-vl-8b-thinking-heretic",
+  "author": "nakedlittlezombie",
+  "url": "https://huggingface.co/nakedlittlezombie/Qwen3-VL-8B-Thinking-heretic",
+  "created_at": "2026-09-06T01:56:30.000Z",
+  "updated_at": "2026-09-06T04:40:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 85258456682,
+  "storage_human": "85.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Premier League Football News, Fixtures, Scores & Results",
+      "url": "https://www.premierleague.com/",
+      "snippet": "Visit the official website of the Premier League, for all the latest Premier League news and features."
+    },
+    {
+      "title": "nakedlittlezombie/Qwen3-VL-8B-Thinking-heretic · Hugging Face",
+      "url": "https://huggingface.co/nakedlittlezombie/Qwen3-VL-8B-Thinking-heretic",
+      "snippet": "Instructions to use nakedlittlezombie/Qwen3-VL-8B-Thinking-heretic with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Fantasy Premier League, Official Fantasy Football Game of the Premier ...",
+      "url": "https://fantasy.premierleague.com/",
+      "snippet": "Official Fantasy Premier League 2026/27. Free to play fantasy football game, set up your fantasy football team at the Official Premier …"
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna. This approach enables Heretic to work completely automatically ..."
+    },
+    {
+      "title": "Premier League Table, Standings & Form Guide",
+      "url": "https://www.premierleague.com/en/tables/premier-league",
+      "snippet": "View the latest standings in the Premier League table, along with form guides and season archives, on the official website of the …"
+    }
+  ]
+}

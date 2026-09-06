@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "join3r/stem-gte-memory",
+  "slug": "join3r-stem-gte-memory",
+  "author": "join3r",
+  "url": "https://huggingface.co/join3r/stem-gte-memory",
+  "created_at": "2026-09-06T11:15:36.000Z",
+  "updated_at": "2026-09-06T11:16:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": null,
+  "languages": [
+    "cs",
+    "sk",
+    "de",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "new",
+    "reranker",
+    "memory",
+    "stem",
+    "quantized",
+    "experimental",
+    "text-ranking",
+    "custom_code",
+    "cs",
+    "sk",
+    "de",
+    "en",
+    "base_model:Alibaba-NLP/gte-multilingual-reranker-base",
+    "base_model:finetune:Alibaba-NLP/gte-multilingual-reranker-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 358115524,
+  "storage_human": "358 MB",
+  "base_model": "Alibaba-NLP/gte-multilingual-reranker-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "перевод - The word лопатка - Russian Language Stack Exchange",
+      "url": "https://russian.stackexchange.com/questions/30371/the-word-%d0%bb%d0%be%d0%bf%d0%b0%d1%82%d0%ba%d0%b0",
+      "snippet": "Jun 24, 2026 · In this poem by Pasternak we have: Это — слёзы вселенной в лопатках, It has been translated by &quot;God's …"
+    },
+    {
+      "title": "join3r/stem-gte-memory · Hugging Face",
+      "url": "https://huggingface.co/join3r/stem-gte-memory",
+      "snippet": "This is the selected epoch2 q8 ONNXrelease, model ID gte-memory-20260905-epoch2. The five inference files total 358,119,455 bytes (341.53 MiB); Stem's dropdown rounds this to approximately 342 MB. The quantized graph alone is 341,032,790 bytes."
+    },
+    {
+      "title": "Что значит слово «главка» в этом абзаце",
+      "url": "https://russian.stackexchange.com/questions/30639/%d0%a7%d1%82%d0%be-%d0%b7%d0%bd%d0%b0%d1%87%d0%b8%d1%82-%d1%81%d0%bb%d0%be%d0%b2%d0%be-%d0%b3%d0%bb%d0%b0%d0%b2%d0%ba%d0%b0-%d0%b2-%d1%8d%d1%82%d0%be%d0%bc-%d0%b0%d0%b1%d0%b7%d0%b0%d1%86%d0%b5",
+      "snippet": "Aug 29, 2026 · В качестве небольшого предисловия, хочу объяснить что следующий абзац взят из моей справки от …"
+    },
+    {
+      "title": "GitHub - join3r/stem: An isolated, pi-backed macOS personal assistant ...",
+      "url": "https://github.com/join3r/stem/tree/main",
+      "snippet": "An isolated, pi-backed macOS personal assistant with rich MDX output, app-scoped skills, MCP, and Stem Recall memory. - join3r/stem"
+    },
+    {
+      "title": "Какое значение имеет конец этого абзаца?",
+      "url": "https://russian.stackexchange.com/questions/30639/%d0%9a%d0%b0%d0%ba%d0%be%d0%b5-%d0%b7%d0%bd%d0%b0%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b8%d0%bc%d0%b5%d0%b5%d1%82-%d0%ba%d0%be%d0%bd%d0%b5%d1%86-%d1%8d%d1%82%d0%be%d0%b3%d0%be-%d0%b0%d0%b1%d0%b7%d0%b0%d1%86%d0%b0",
+      "snippet": "Почему до этого речь идет об отметках соответсвующих органов, но как только речь идет об их главках, то речь переходит …"
+    }
+  ]
+}

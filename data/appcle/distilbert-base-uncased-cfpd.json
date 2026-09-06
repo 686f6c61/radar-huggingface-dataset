@@ -5,7 +5,7 @@
   "author": "appcle",
   "url": "https://huggingface.co/appcle/distilbert-base-uncased-cfpd",
   "created_at": "2026-08-26T11:28:05.000Z",
-  "updated_at": "2026-08-26T11:45:03.000Z",
+  "updated_at": "2026-09-05T19:48:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 56,
+  "downloads_30d": 59,
   "trending_score": 0,
   "parameters": 66958855,
   "parameters_human": "67.0M",

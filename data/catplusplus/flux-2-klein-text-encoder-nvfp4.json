@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "catplusplus/FLUX.2-klein-text-encoder-NVFP4",
+  "slug": "catplusplus-flux-2-klein-text-encoder-nvfp4",
+  "author": "catplusplus",
+  "url": "https://huggingface.co/catplusplus/FLUX.2-klein-text-encoder-NVFP4",
+  "created_at": "2026-09-06T03:19:38.000Z",
+  "updated_at": "2026-09-06T03:26:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "arxiv:1910.09700",
+    "base_model:black-forest-labs/FLUX.2-klein-9b-kv",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-9b-kv",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6274987182,
+  "parameters_human": "6.27B",
+  "storage_bytes": 10098367512,
+  "storage_human": "10.1 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-9b-kv",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تيليجرام - Telegram",
+      "url": "https://telegram.org/login?setln=ar",
+      "snippet": "تيليجرام لـ ويندوز/ لينكس‏تيليجرام لـ MacOS. آخر الأخبار."
+    },
+    {
+      "title": "catplusplus/FLUX.2-klein-text-encoder-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/catplusplus/FLUX.2-klein-text-encoder-NVFP4",
+      "snippet": "This is an NVFP4 quantized text encoder for the base model. of quantization in extras/ directory. Quantized encoder can be stacked with other optimizations like"
+    },
+    {
+      "title": "[bug]: Flux.2 Klein 9B text encoder compatibility limitations · Issue #8839 · invoke-ai/InvokeAI",
+      "url": "https://github.com/invoke-ai/InvokeAI/issues/8839",
+      "snippet": "I expected the different varieties, especially the quantized ones, of the Qwen3-8B encoder to work to conserve memory. But that did not happen, only a specific version works and that too only with the Flux.2 Klein-9B_Q4_K_M.gguf version of the model. I have not been able get the fp8 version of the Klein 9B model to work at all so far."
+    },
+    {
+      "title": "r/StableDiffusion on Reddit: Best Text Encoder + Model Combos for 16GB VRAM (RTX 5070 Ti, 64GB RAM)?",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1s0mew2/best_text_encoder_model_combos_for_16gb_vram_rtx/",
+      "snippet": ""
+    },
+    {
+      "title": "How does FLUX.2 Klein 9B Base compare to FLUX.2 Klein 4B for text-to-image?",
+      "url": "https://www.eachlabs.ai/black-forest-labs/flux-2/flux-2-klein-4b-base-text-to-image",
+      "snippet": ""
+    }
+  ]
+}

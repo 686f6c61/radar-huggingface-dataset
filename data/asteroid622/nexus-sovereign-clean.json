@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "asteroid622/nexus-sovereign-clean",
+  "slug": "asteroid622-nexus-sovereign-clean",
+  "author": "asteroid622",
+  "url": "https://huggingface.co/asteroid622/nexus-sovereign-clean",
+  "created_at": "2026-09-06T03:13:13.000Z",
+  "updated_at": "2026-09-06T03:15:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223420,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perfect Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/23439/perfect-pumpkin-pie/",
+      "snippet": "Feb 18, 2026 · This pumpkin pie recipe makes a smooth and creamy filling with canned pumpkin and sweetened condensed milk for …"
+    },
+    {
+      "title": "asteroid622/nexus-sovereign-clean · Hugging Face",
+      "url": "https://huggingface.co/asteroid622/nexus-sovereign-clean",
+      "snippet": "Instructions to use asteroid622/nexus-sovereign-clean with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Homemade Fresh Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/13711/homemade-fresh-pumpkin-pie/",
+      "snippet": "Feb 18, 2026 · Delicious homemade pumpkin pie made with mashed, cooked pumpkin. Skip the canned stuff and make this classic …"
+    },
+    {
+      "title": "asteroid622 (Diego Fernando Rios Rivera) - Hugging Face",
+      "url": "https://huggingface.co/asteroid622",
+      "snippet": "User profile of Diego Fernando Rios Rivera on Hugging Face"
+    },
+    {
+      "title": "Classic Peanut Butter Cookies Recipe",
+      "url": "https://www.allrecipes.com/recipe/10275/classic-peanut-butter-cookies/",
+      "snippet": "Mar 12, 2026 · These peanut butter cookies are soft, chewy, and absolutely delicious! Easy to make with smooth or crunchy peanut …"
+    }
+  ]
+}

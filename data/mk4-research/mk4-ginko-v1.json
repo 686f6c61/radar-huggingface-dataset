@@ -5,7 +5,7 @@
   "author": "MK4-Research",
   "url": "https://huggingface.co/MK4-Research/MK4-Ginko-v1",
   "created_at": "2026-08-28T18:21:00.000Z",
-  "updated_at": "2026-08-30T10:56:54.000Z",
+  "updated_at": "2026-09-05T12:25:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 836,
+  "downloads_30d": 865,
   "trending_score": 0,
   "parameters": 26895993856,
   "parameters_human": "26.90B",

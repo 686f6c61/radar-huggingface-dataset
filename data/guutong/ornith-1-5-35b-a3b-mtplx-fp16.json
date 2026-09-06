@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "guutong/Ornith-1.5-35B-A3B-MTPLX-FP16",
+  "slug": "guutong-ornith-1-5-35b-a3b-mtplx-fp16",
+  "author": "guutong",
+  "url": "https://huggingface.co/guutong/Ornith-1.5-35B-A3B-MTPLX-FP16",
+  "created_at": "2026-09-06T03:12:10.000Z",
+  "updated_at": "2026-09-06T03:12:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107180016,
+  "parameters_human": "35.11B",
+  "storage_bytes": 22119721886,
+  "storage_human": "22.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DPW-52DAD+TRAFO Price & Stock | DigiPart",
+      "url": "https://www.digipart.com/part/DPW-52DAD%2BTRAFO",
+      "snippet": "DPW-52DAD+TRAFO Price, DPW-52DAD+TRAFO Stock, Buy DPW-52DAD+TRAFO from electronic components distributors. …"
+    },
+    {
+      "title": "guutong/Ornith-1.5-35B-A3B-MTPLX-FP16 · Hugging Face",
+      "url": "https://huggingface.co/guutong/Ornith-1.5-35B-A3B-MTPLX-FP16",
+      "snippet": "Ornith-1.5-35B-A3B-MTPLX-FP16 like0 Safetensors qwen3_5_moe 4-bit precision Model cardFilesFiles and versions xet"
+    },
+    {
+      "title": "Výroba, prodej a servis transformátorů | Trafo CZ",
+      "url": "https://www.trafocz.cz/",
+      "snippet": "Trafo CZ, a.s. opravuje všechny olejové distribuční transformátory do 2.500 kVA bez rozdílu roku výroby nebo výrobce. Provádíme …"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "Ornith-1.5-35B-A3B is a ~35B mixture-of-experts model with ~3B activated parameters per token (≈70 GB in bf16). The recipes below stand up an OpenAI-compatible server on 2× 80GB GPUsto leave headroom for the 256K context; adjust --tensor-parallel-size/ --tpto match your hardware."
+    },
+    {
+      "title": "Ztratil se manuál? Stáhněte si manuál, který hledáte.",
+      "url": "https://www.manualypdf.cz/",
+      "snippet": "1 000 000+ PDF příruček zdarma pro více než 10 000 značek. Vyhledávejte a prohlížejte si příručky zdarma nebo se ptejte dalších …"
+    }
+  ]
+}

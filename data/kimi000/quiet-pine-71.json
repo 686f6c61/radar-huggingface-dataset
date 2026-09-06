@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kimi000/quiet-pine-71",
+  "slug": "kimi000-quiet-pine-71",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/quiet-pine-71",
+  "created_at": "2026-09-06T02:35:03.000Z",
+  "updated_at": "2026-09-06T02:38:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:other",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15976420359,
+  "storage_human": "16.0 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create a Google Account for Gmail - Gmail Help",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "A Google Account lets you sign in to Gmail and other Google services, such as YouTube, Google Play, Google Drive, and Photos. …"
+    },
+    {
+      "title": "kimi000/quiet-pine-71 · Hugging Face",
+      "url": "https://huggingface.co/kimi000/quiet-pine-71",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use kimi000/quiet-pine-71 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use kimi000/quiet-pine-71 with Diffusers:"
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "kimi000/quiet-pine-71 at main - Hugging Face",
+      "url": "https://huggingface.co/kimi000/quiet-pine-71/tree/main",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use kimi000/quiet-pine-71 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use kimi000/quiet-pine-71 with Diffusers:"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "To open Gmail, you can sign in from a computer or add your account to the Gmail app on your phone or tablet. Once you're signed …"
+    }
+  ]
+}

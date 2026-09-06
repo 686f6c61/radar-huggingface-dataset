@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DrinkIcedT/Qwen2.5-7B-Instruct_MBTI_lora2",
+  "slug": "drinkicedt-qwen2-5-7b-instruct_mbti_lora2",
+  "author": "DrinkIcedT",
+  "url": "https://huggingface.co/DrinkIcedT/Qwen2.5-7B-Instruct_MBTI_lora2",
+  "created_at": "2026-09-06T02:19:15.000Z",
+  "updated_at": "2026-09-06T02:19:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92198101,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "清风DJ音乐网",
+      "url": "https://www.vvvdj.com/play/268572.html",
+      "snippet": ""
+    },
+    {
+      "title": "DrinkIcedT/Qwen2.5-7B-Instruct_MBTI_lora2 · Hugging Face",
+      "url": "https://huggingface.co/DrinkIcedT/Qwen2.5-7B-Instruct_MBTI_lora2",
+      "snippet": "Instructions to use DrinkIcedT/Qwen2.5-7B-Instruct_MBTI_lora2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "清风DJ音乐网",
+      "url": "https://www.vvvdj.com/play/73700.html",
+      "snippet": ""
+    },
+    {
+      "title": "DrinkIcedT/Qwen2.5-7B-Instruct_MBTI-Dialogues · Hugging Face",
+      "url": "https://huggingface.co/DrinkIcedT/Qwen2.5-7B-Instruct_MBTI-Dialogues",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IROTE: Human-like Traits Elicitation of Large Language Model via In ...",
+      "url": "https://arxiv.org/pdf/2508.08719",
+      "snippet": "12.08.2025 ... 4o, Qwen-2.5-Instruct family, and Mistral-7B-. Instruct, as target LLMs, There are still other powerful models released more recently, es-."
+    }
+  ]
+}

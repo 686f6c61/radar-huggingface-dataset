@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NagaYu/isotope-calibration-qwen2.5-1.5b-instruct",
+  "slug": "nagayu-isotope-calibration-qwen2-5-1-5b-instruct",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/isotope-calibration-qwen2.5-1.5b-instruct",
+  "created_at": "2026-09-06T01:44:48.000Z",
+  "updated_at": "2026-09-06T01:44:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "isotope",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "isotope",
+    "prompt-injection",
+    "llm-security",
+    "agent-safety",
+    "information-flow",
+    "interpretability",
+    "calibration",
+    "not-a-model",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lismore, Casino & Ballina/Byron - Births, Deaths & Marriages | Facebook",
+      "url": "https://www.facebook.com/groups/1475192962627640/",
+      "snippet": "Keep up to date with all the births, deaths and marriages in an around our community on a daily basis. With the eradication of our …"
+    },
+    {
+      "title": "NagaYu/isotope-calibration-qwen2.5-1.5b-instruct · Hugging Face",
+      "url": "https://huggingface.co/NagaYu/isotope-calibration-qwen2.5-1.5b-instruct",
+      "snippet": "Isotope calibration — Qwen2.5-1.5B-Instruct This repository contains no trained weights. It is a measured calibration profilefor Qwen/Qwen2.5-1.5B-Instruct: the per-layer constants that Isotope's information-flow propagation depends on, plus the tool policy calibrated against them. Nothing here changes the base model's behaviour. It lives in the model namespace because it is checkpoint ..."
+    },
+    {
+      "title": "Funeral Casino Blues: Trailer & Kritik zum Film - TV TODAY",
+      "url": "https://www.tvtoday.de/filme/funeral-casino-blues_13343011.html",
+      "snippet": "Aug 13, 2026 · Informationen zu Funeral Casino Blues. Inhalt Infos, Cast & Crew . Jen arbeitet in Bangkok als Begleitung für fremde …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Journal Frankfurt Film Events",
+      "url": "https://www.kinojournal-frankfurt.de/film_events_einzel/funeral-casino-blues-21884228.html",
+      "snippet": "Aug 11, 2026 · Alle Filmstarts, Kinos und Zeiten in Frankfurt auf einen Blick – mit Trailern, Kritiken und direktem Ticketlink."
+    }
+  ]
+}

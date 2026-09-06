@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "NIRVLab/morphbpe-tr-en",
+  "slug": "nirvlab-morphbpe-tr-en",
+  "author": "NIRVLab",
+  "url": "https://huggingface.co/NIRVLab/morphbpe-tr-en",
+  "created_at": "2026-09-06T02:11:03.000Z",
+  "updated_at": "2026-09-06T02:11:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 1239429830,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MBC شاهد | الرئيسية",
+      "url": "https://shahid.mbc.net/?msockid=33073c4637556ed0022c2b8a36296f93",
+      "snippet": "تسجيل الدخول اشترك مسلسلات مجانية، قنوات مباشرة، افلام | MBC شاهد | الرئيسية | MBC شاهد مسلسلات مجانية، قنوات مباشرة، افلام | MBC شاهد | الرئيسية | MBC شاهد 2026الموسم …"
+    },
+    {
+      "title": "NIRVLab/MorphBART-tr-en · Hugging Face",
+      "url": "https://huggingface.co/NIRVLab/MorphBART-tr-en",
+      "snippet": "Model Details Architecture: MorphBART (Adaptive Boundary-Token Fusion + Intra-Word Morphological Attention) Backbone: facebook/mbart-large-50-many-to-many-mmt Training Samples: 100,000 parallel pairs (OPUS-100) Selection Metric: Best eval_bleu across 5 training epochs. Downloads last month 23 Inference Providers NEW Translation This model isn't deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "MBC شاهد - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=net.mbc.shahid&hl=ar",
+      "snippet": "حمّل تطبيق MBC شاهد الآن واستمتع بمزايا لا تنتهي. لا تفوّت الترفيه مع عالم من المحتوى والأفلام الحائزة على الجوائز، المسلسلات الرائجة، والفعاليات المباشرة بجودة عالية."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=morphbart",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: morphbart Clear all"
+    },
+    {
+      "title": "إم بي سي شاهد - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A5%D9%85_%D8%A8%D9%8A_%D8%B3%D9%8A_%D8%B4%D8%A7%D9%87%D8%AF",
+      "snippet": "شركات أسست في 1991 محطات تلفزية أسست في سنة 1991 مجموعة إم بي سي منصة شاهد مواقع ويب ترفيهية مواقع ويب أسست في 2011 مواقع ويب ترفيهية سعودية"
+    }
+  ]
+}

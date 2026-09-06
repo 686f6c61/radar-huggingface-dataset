@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "almuhannad-saydam/arabic-bert-fine-tuned-project",
+  "slug": "almuhannad-saydam-arabic-bert-fine-tuned-project",
+  "author": "almuhannad-saydam",
+  "url": "https://huggingface.co/almuhannad-saydam/arabic-bert-fine-tuned-project",
+  "created_at": "2026-09-06T03:07:15.000Z",
+  "updated_at": "2026-09-06T03:07:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110621189,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442508292,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joyn - Live-TV, Serien, Filme & Sport kostenlos streamen",
+      "url": "https://www.joyn.at/",
+      "snippet": "Aug 23, 2026 · Joyn, Österreichs SuperStreamer. Joyn bringt das Beste zusammen: Streaming & Fernsehen - kostenlos für …"
+    },
+    {
+      "title": "almuhannad-saydam/arabic-bert-fine-tuned-project · Hugging Face",
+      "url": "https://huggingface.co/almuhannad-saydam/arabic-bert-fine-tuned-project",
+      "snippet": "Instructions to use almuhannad-saydam/arabic-bert-fine-tuned-project with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Joyn - Serien, Filme, Sport & Live TV jederzeit streamen",
+      "url": "https://www.joyn.de/?msockid=0ac1fa35e9c566d5386fedf9e84c67e4",
+      "snippet": "Nov 27, 2024 · Streame ganze Folgen, Filme & Sport online. Verpasse keine Sendung – egal ob nach TV-Ausstrahlung oder im Live …"
+    },
+    {
+      "title": "GitHub - aub-mind/arabert: Pre-trained Transformers for Arabic Language ...",
+      "url": "https://github.com/aub-mind/arabert",
+      "snippet": "Pre-trained Transformers for Arabic Language Understanding and Generation (Arabic BERT, Arabic GPT2, Arabic ELECTRA) - aub-mind/arabert"
+    },
+    {
+      "title": "Live TV kostenlos auf Joyn streamen",
+      "url": "https://www.joyn.de/live-tv?msockid=0ac1fa35e9c566d5386fedf9e84c67e4",
+      "snippet": "Aug 25, 2025 · Internet TV auf Knopfdruck: Auf Joyn kannst du zahlreiche TV-Sender live online anschauen. Egal ob der Film am …"
+    }
+  ]
+}

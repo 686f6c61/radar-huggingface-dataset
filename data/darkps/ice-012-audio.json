@@ -5,7 +5,7 @@
   "author": "darkps",
   "url": "https://huggingface.co/darkps/ice-012-audio",
   "created_at": "2026-08-29T13:56:17.000Z",
-  "updated_at": "2026-09-03T15:35:20.000Z",
+  "updated_at": "2026-09-05T17:15:38.000Z",
   "license": "cc-by-nc-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 76,
-  "downloads_30d": 1066,
+  "downloads_30d": 1139,
   "trending_score": 36,
   "parameters": 714409993,
   "parameters_human": "714.4M",

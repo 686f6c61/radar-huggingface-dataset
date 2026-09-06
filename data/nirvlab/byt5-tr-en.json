@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NIRVLab/byt5-tr-en",
+  "slug": "nirvlab-byt5-tr-en",
+  "author": "NIRVLab",
+  "url": "https://huggingface.co/NIRVLab/byt5-tr-en",
+  "created_at": "2026-09-06T02:42:29.000Z",
+  "updated_at": "2026-09-06T02:42:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 582832896,
+  "parameters_human": "582.8M",
+  "storage_bytes": 1165696656,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BeamNG.drive",
+      "url": "https://www.beamng.com/",
+      "snippet": "BeamNG.drive offers dozens of refined, completely customizable vehicles to experiment with. Whether it’s a compact car or massive …"
+    },
+    {
+      "title": "NIRVLab/byt5-tr-en · Hugging Face",
+      "url": "https://huggingface.co/NIRVLab/byt5-tr-en",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use NIRVLab/byt5-tr-en with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use NIRVLab/byt5-tr-en with Transformers:"
+    },
+    {
+      "title": "BeamNG",
+      "url": "https://www.beamng.com/forums/",
+      "snippet": "9 hours ago · BeamNG.drive physics simulation This site uses cookies to help personalise content, tailor your experience and to keep …"
+    },
+    {
+      "title": "GitHub - google-research/byt5",
+      "url": "https://github.com/google-research/byt5",
+      "snippet": "ByT5 is a tokenizer-free extension of the mT5 model. Instead of using a subword vocabulary like most other pretrained language models (BERT, XLM-R, T5, GPT-3), our ByT5 model operates directly on UTF-8 bytes, removing the need for any text preprocessing. Beyond the reduction in system complexity, we find that parameter-matched ByT5 models are competitive with mT5 across a range of tasks, and ..."
+    },
+    {
+      "title": "How to install mods - BeamNG Documentation",
+      "url": "https://documentation.beamng.com/tutorials/mods/installing-mods/",
+      "snippet": "Jun 17, 2025 · The BeamNG.drive Repositoryallows for mods to be installed automatically via the in-game mod manager, or via …"
+    }
+  ]
+}

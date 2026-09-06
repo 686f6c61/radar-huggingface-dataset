@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Ilia2003Mah/deepseek_math_7b-exp_24-11100",
+  "slug": "ilia2003mah-deepseek_math_7b-exp_24-11100",
+  "author": "Ilia2003Mah",
+  "url": "https://huggingface.co/Ilia2003Mah/deepseek_math_7b-exp_24-11100",
+  "created_at": "2026-09-06T02:13:45.000Z",
+  "updated_at": "2026-09-06T04:06:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 6910365696,
+  "parameters_human": "6.91B",
+  "storage_bytes": 41462540105,
+  "storage_human": "41.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ricardo - Sicher kaufen & verkaufen mit über 5 Mio. Nutzern",
+      "url": "https://www.ricardo.ch/de/?msockid=1f65ae0a894265ef0af1b9c6880e64da",
+      "snippet": "Jetzt einstellen und erfolgreich verkaufen auf dem grössten Online-Marktplatz der Schweiz. Mehr als 1.5 Mio. Angebote - kaufe und …"
+    },
+    {
+      "title": "Ilia2003Mah/deepseek_math_7b-exp_22-2500 · Hugging Face",
+      "url": "https://huggingface.co/Ilia2003Mah/deepseek_math_7b-exp_22-2500",
+      "snippet": "Ilia2003Mah / deepseek_math_7b-exp_22-2500 like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 7B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Zu Verkaufen kaufen | Günstig auf Ricardo.ch finden",
+      "url": "https://www.ricardo.ch/de/s/zu%20verkaufen/?msockid=1f65ae0a894265ef0af1b9c6880e64da",
+      "snippet": "Jetzt Zu Verkaufen neu oder gebraucht online kaufen. Top Angebote, sichere Bezahlung & schneller Versand – nur bei Ricardo.ch."
+    },
+    {
+      "title": "Ilia2003Mah/deepseek_math_7b-exp_22-900 · Hugging Face",
+      "url": "https://huggingface.co/Ilia2003Mah/deepseek_math_7b-exp_22-900",
+      "snippet": "Ilia2003Mah / deepseek_math_7b-exp_22-900 like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 7B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "Alles kaufen | Günstig auf Ricardo.ch finden",
+      "url": "https://www.ricardo.ch/de/s/alles/?msockid=1f65ae0a894265ef0af1b9c6880e64da",
+      "snippet": "Jetzt Alles neu oder gebraucht online kaufen. Top Angebote, sichere Bezahlung & schneller Versand – nur bei Ricardo.ch."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Edafe-Moses/nllb-finetuned-ig",
+  "slug": "edafe-moses-nllb-finetuned-ig",
+  "author": "Edafe-Moses",
+  "url": "https://huggingface.co/Edafe-Moses/nllb-finetuned-ig",
+  "created_at": "2026-09-06T02:13:29.000Z",
+  "updated_at": "2026-09-06T07:22:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "m2m_100",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 1402138624,
+  "parameters_human": "1.40B",
+  "storage_bytes": 5648063648,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "NLLB · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/nllb",
+      "snippet": "NLLB: No Language Left Behindis a multilingual translation model. It’s trained on data using data mining techniques tailored for low-resource languages and supports over 200 languages."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "NLLB-200 Fine-tuning | ymoslem/Adaptive-MT-LLM-Fine-tuning | DeepWiki",
+      "url": "https://deepwiki.com/ymoslem/Adaptive-MT-LLM-Fine-tuning/4.2-nllb-200-fine-tuning",
+      "snippet": "The NLLB-200 fine-tuning process begins with loading the pre-trained model and configuring language-specific tokenizers. The system supports multiple model sizes and language pairs through standardized language codes."
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

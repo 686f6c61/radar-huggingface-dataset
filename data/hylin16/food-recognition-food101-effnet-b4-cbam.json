@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hylin16/food-recognition-food101-effnet-b4-cbam",
+  "slug": "hylin16-food-recognition-food101-effnet-b4-cbam",
+  "author": "hylin16",
+  "url": "https://huggingface.co/hylin16/food-recognition-food101-effnet-b4-cbam",
+  "created_at": "2026-09-06T11:21:48.000Z",
+  "updated_at": "2026-09-06T11:24:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "food",
+    "cbam",
+    "attention",
+    "food-101",
+    "arxiv:1807.06521",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73266708,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Code Promo Cdiscount Voyages > 10€ Offerts - Ma Reduc",
+      "url": "https://www.ma-reduc.com/reductions-pour-cdiscount-voyages.php",
+      "snippet": "3 days ago · Au sein de notre liste, vous retrouverez tous les codes promo Cdiscount Voyages ainsi que les offres valables en ce …"
+    },
+    {
+      "title": "GitHub - Ashitsarkar/Food101-Food-Recognition: Food-101 food ...",
+      "url": "https://github.com/Ashitsarkar/Food101-Food-Recognition",
+      "snippet": "Try Food-101 AI Recognition A deep learning web application that identifies food from an uploaded image using a MobileNetV2 transfer learning model trained on the Food-101 dataset."
+    },
+    {
+      "title": "Code Promo Cdiscount Voyages - 10 € et 30 % de réduction - 2026",
+      "url": "https://www.lareduction.fr/s/voyages.cdiscount.com",
+      "snippet": "2 days ago · Codes testés en septembre 2026. Retrouvez 7 codes promo et réductions Cdiscount Voyages sur LaReduction.fr. Offre …"
+    },
+    {
+      "title": "Food-101-Transfer-Learning-Model-using-EfficientNet - GitHub",
+      "url": "https://github.com/moayyad16/Food-101-Transfer-Learning-Model-using-EfficientNet",
+      "snippet": "The model is based on transfer learning using the EfficientNet architecture, which has demonstrated exceptional performance across various computer vision tasks. By fine-tuning the pre-trained weights on the Food-101 dataset, the model's ability to accurately classify food images across diverse categories is enhanced. The model still can be improved. We can utilize a more advanced version of ..."
+    },
+    {
+      "title": "Code promo Cdiscount Voyages : 50€ en septembre 2026",
+      "url": "https://www.radins.com/code-promo/cdiscount-voyages/",
+      "snippet": "Passez par Radins.com pour dﾃｩcouvrir les bons plans et rﾃｩcupﾃｩrer un code promo Cdiscount Voyages. Vous obtiendrez …"
+    }
+  ]
+}

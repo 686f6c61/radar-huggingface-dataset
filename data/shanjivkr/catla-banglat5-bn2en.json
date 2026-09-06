@@ -5,7 +5,7 @@
   "author": "shanjivkr",
   "url": "https://huggingface.co/shanjivkr/catla-banglat5-bn2en",
   "created_at": "2026-08-16T18:36:42.000Z",
-  "updated_at": "2026-08-16T20:48:40.000Z",
+  "updated_at": "2026-09-05T21:10:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 14201601,
-  "storage_human": "14 MB",
+  "storage_bytes": 298136547,
+  "storage_human": "298 MB",
   "base_model": "csebuetnlp/banglat5",
   "formats": [
     "safetensors"

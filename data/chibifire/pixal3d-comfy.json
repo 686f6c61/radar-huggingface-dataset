@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "chibifire/Pixal3D-Comfy",
+  "slug": "chibifire-pixal3d-comfy",
+  "author": "chibifire",
+  "url": "https://huggingface.co/chibifire/Pixal3D-Comfy",
+  "created_at": "2026-09-06T01:49:26.000Z",
+  "updated_at": "2026-09-06T01:55:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:TencentARC/Pixal3D",
+    "base_model:finetune:TencentARC/Pixal3D",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36427266620,
+  "storage_human": "36.4 GB",
+  "base_model": "TencentARC/Pixal3D",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flodder – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Flodder",
+      "snippet": "er Videos) können im Regelfall durch Anklicken dieser abgerufen werden. Möglicherweise unterliegen die Inhalte jeweils zusätzlichen …"
+    },
+    {
+      "title": "Pixal3D Image to 3D Model ComfyUI Workflow Example - ComfyUI",
+      "url": "https://docs.comfy.org/tutorials/3d/pixal3d",
+      "snippet": "Generate high-fidelity 3D models with full PBR textures from a single image using Pixal3D, a pixel-aligned image-to-3D model from Tencent ARC."
+    },
+    {
+      "title": "Die Flodders 2026: Comeback nach 40 Jahren! Tatjana Šimićs Rückkehr ...",
+      "url": "https://www.rtl.de/serien/die-flodders-2026-comeback-nach-40-jahren-tatjana-simics-rueckkehr-kostete-ueberwindung-id31265315.html",
+      "snippet": "2 days ago · „Die Flodders“ sind zurück! 40 Jahre nach dem ersten Kultfilm feiert die berühmte Chaosfamilie 2026 ihr Comeback mit …"
+    },
+    {
+      "title": "GitHub - PozzettiAndrea/ComfyUI-Pixal3D: ComfyUI nodes for Pixal3D ...",
+      "url": "https://github.com/PozzettiAndrea/ComfyUI-Pixal3D",
+      "snippet": "About ComfyUI nodes for Pixal3D (SIGGRAPH 2026, TencentARC) - pixel-aligned image-to-3D. Academic-only model license. Resources Readme MIT license"
+    },
+    {
+      "title": "Die Flodders: So lustig ist die Miniserie von RTL | swp.de",
+      "url": "https://www.swp.de/unterhaltung/tv/die-flodders-so-lustig-wird-die-miniserie-von-rtl-79362052.html",
+      "snippet": "2 days ago · Am 3. September 2026 zeigte RTL die Miniserie „Die Flodders“. Worum geht es? Wer spielt mit? Alle Infos zur …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "cafepm",
   "url": "https://huggingface.co/cafepm/G9v3-39A5B-Q3Q4-GGUF",
   "created_at": "2026-08-14T05:37:54.000Z",
-  "updated_at": "2026-08-15T15:03:59.000Z",
+  "updated_at": "2026-09-05T21:39:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1381,
+  "downloads_30d": 1396,
   "trending_score": 0,
   "parameters": 38967481920,
   "parameters_human": "38.97B",

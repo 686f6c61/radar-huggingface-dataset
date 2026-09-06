@@ -5,7 +5,7 @@
   "author": "KordAI",
   "url": "https://huggingface.co/KordAI/KeawGPT",
   "created_at": "2026-08-29T13:04:33.000Z",
-  "updated_at": "2026-09-01T07:44:52.000Z",
+  "updated_at": "2026-09-05T05:38:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 663,
+  "downloads_30d": 724,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

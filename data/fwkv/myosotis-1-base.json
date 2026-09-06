@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "FWKV/Myosotis-1-base",
+  "slug": "fwkv-myosotis-1-base",
+  "author": "FWKV",
+  "url": "https://huggingface.co/FWKV/Myosotis-1-base",
+  "created_at": "2026-09-01T15:26:55.000Z",
+  "updated_at": "2026-09-02T16:50:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fwkv",
+    "feature-extraction",
+    "rnn",
+    "ssm",
+    "wkv",
+    "efficient-inference",
+    "pytorch",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 931,
+  "trending_score": 0,
+  "parameters": 101860800,
+  "parameters_human": "101.9M",
+  "storage_bytes": 407456928,
+  "storage_human": "407 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Upcoming interface changes to the Game page and AI reviews",
+      "url": "https://forums.online-go.com/t/upcoming-interface-changes-to-the-game-page-and-ai-reviews/60811",
+      "snippet": "4 days ago · This is the Online Go Server - I would expect you guys to make things easier for navigation and enhance gameplay …"
+    },
+    {
+      "title": "Myosotis 1 Base by FWKV — VRAM 0.4GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/FWKV%2FMyosotis-1-base,13FY9GQCKa1dAjif1lQnvY",
+      "snippet": "Myosotis 1 Base is an open-source language model by FWKV. Features: 101.9m LLM, VRAM: 0.4GB, License: apache-2.0, LLM Explorer Score: 0.36."
+    },
+    {
+      "title": "\"ching chang chong\"到底什么意思？ - 知乎",
+      "url": "https://www.zhihu.com/question/22852463?sort=created",
+      "snippet": "大概来源是2002年夏天奥尼尔带有侵略性的对记者说了一句“Tell Yao Ming, ‘ching-chong-yang-wah-ah-soh.’” 然后就引起了华人圈的不 …"
+    },
+    {
+      "title": "Eval — FWKV",
+      "url": "https://fwkv.site/other/eval/",
+      "snippet": "Myosotis-1 was not evaluated on ArithMark-3, so its 0.65 weight is dropped: (HellaSwag + ARC + PIQA) ÷ 3 = 6.79. Myosotis-1 is a recurrent FWKV model, shown on a leaderboard of transformer-based models for comparison."
+    },
+    {
+      "title": "19x19 FOR BEGINNERS SERIES: Part 2: Settling Your Stones",
+      "url": "https://forums.online-go.com/t/19x19-for-beginners-series-part-2-settling-your-stones/24851",
+      "snippet": "Feb 5, 2020 · Part 2: Settling Your Stones [A quick disclaimer for any readers who are SDK and up: this series was written by a DDK …"
+    }
+  ]
+}

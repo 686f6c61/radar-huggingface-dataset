@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Jan-nano",
   "created_at": "2026-06-27T10:17:10.000Z",
-  "updated_at": "2026-09-04T21:32:06.000Z",
+  "updated_at": "2026-09-06T06:09:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 344,
+  "downloads_30d": 397,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

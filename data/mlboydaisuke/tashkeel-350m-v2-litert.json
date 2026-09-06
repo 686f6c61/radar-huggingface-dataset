@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/Tashkeel-350M-v2-LiteRT",
   "created_at": "2026-08-25T04:52:46.000Z",
-  "updated_at": "2026-08-25T04:57:25.000Z",
+  "updated_at": "2026-09-05T07:50:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
