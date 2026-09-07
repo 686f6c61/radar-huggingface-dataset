@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/whisper-medium.en",
+  "slug": "jinstudio-whisper-medium-en",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/whisper-medium.en",
+  "created_at": "2026-09-07T17:34:55.000Z",
+  "updated_at": "2026-09-07T17:34:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "whisper",
+    "audio",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "en",
+    "arxiv:2212.04356",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763856896,
+  "parameters_human": "763.9M",
+  "storage_bytes": 12223162718,
+  "storage_human": "12.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (clean)",
+      "metric": "Test WER",
+      "value": 4.120542365210176
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (other)",
+      "metric": "Test WER",
+      "value": 7.431640255663553
+    }
+  ],
+  "sources": [
+    {
+      "title": "regex - Adding ?nocache=1 to every url (including the assets like ...",
+      "url": "https://stackoverflow.com/questions/38333569/adding-nocache-1-to-every-url-including-the-assets-like-stylesheet-behind-the",
+      "snippet": "Jul 12, 2016 · But what I would like to do is to apply ?nocache=1 to every URL related to the site (including the assets like style.css) …"
+    },
+    {
+      "title": "openai/whisper-medium.en · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-medium.en",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "how to clear or replace a cached image - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/321865/how-to-clear-or-replace-a-cached-image",
+      "snippet": "Nov 27, 2008 · I know there are many ways to prevent image caching (such as via META tags), as well as a few nice tricks to ensure …"
+    },
+    {
+      "title": "openai/whisper-medium.en at main - Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-medium.en/tree/main",
+      "snippet": "Instructions to use openai/whisper-medium.en with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use openai/whisper-medium.en with Transformers:"
+    },
+    {
+      "title": "Como evitar el caché de los archivos css y js",
+      "url": "https://es.stackoverflow.com/questions/63716/como-evitar-el-cach%c3%a9-de-los-archivos-css-y-js",
+      "snippet": "Apr 21, 2017 · Otra forma de evitar el cache de por ejemplo tu css o js , sería modificando el .htaccess de tu apache, esto para evitar …"
+    }
+  ]
+}

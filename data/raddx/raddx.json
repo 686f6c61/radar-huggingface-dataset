@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RadDx/RadDx",
+  "slug": "raddx-raddx",
+  "author": "RadDx",
+  "url": "https://huggingface.co/RadDx/RadDx",
+  "created_at": "2026-09-07T15:35:22.000Z",
+  "updated_at": "2026-09-07T15:35:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "على جهاز الكمبيوتر، انتقِل إلى Gmail. أدخِل عنوان البريد الإلكتروني لحسابك على Google أو رقم الهاتف وكلمة المرور. إذا سبق أن عبأت المعلومات وقرّرت تسجيل الدخول إلى حساب مختلف، انقر على …"
+    },
+    {
+      "title": "Artificial Intelligence - RADDX",
+      "url": "https://raddxhealthcare.com/services/artificial-intelligence/",
+      "snippet": "At Raddx Healthcare, we leverage cutting-edge Artificial Intelligence (AI)to revolutionize radiology—enhancing accuracy, efficiency, and patient care. Our AI-driven solutionsempower radiologists with precise insights, ensuring faster and more reliable diagnosesfor improved medical outcomes."
+    },
+    {
+      "title": "اريد تنزيل منصة مدرستي السعودية وmod for minecraft - منتدى تطبيقات Google",
+      "url": "https://support.google.com/googleplay/thread/101270922/%D8%A7%D8%B1%D9%8A%D8%AF-%D8%AA%D9%86%D8%B2%D9%8A%D9%84-%D9%85%D9%86%D8%B5%D8%A9-%D9%85%D8%AF%D8%B1%D8%B3%D8%AA%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%88mod-for-minecraft?hl=ar",
+      "snippet": "محتوى المساعدة والمعلومات هذهتجربة مركز المساعدة العامة بحث"
+    },
+    {
+      "title": "RadDx",
+      "url": "https://raddx.app/",
+      "snippet": "AI Radiology Intelligence Understand what your radiology report may mean after the plain-English summary RadDx is built for the next question patients usually still have after a plain-language summary: what this finding may mean in context, what changes concern, what the wording still does not prove, and what follow-up questions make sense before you talk with your clinician."
+    },
+    {
+      "title": "نصائح و ارشادات مهمة للطلاب السعوديين لتفادي انقطاع رابط \"منصة مدرستي ...",
+      "url": "https://support.google.com/googleplay/thread/80259506/%D9%86%D8%B5%D8%A7%D8%A6%D8%AD-%D9%88-%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF%D8%A7%D8%AA-%D9%85%D9%87%D9%85%D8%A9-%D9%84%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D9%8A%D9%86-%D9%84%D8%AA%D9%81%D8%A7%D8%AF%D9%8A-%D8%A7%D9%86%D9%82%D8%B7%D8%A7%D8%B9-%D8%B1%D8%A7%D8%A8%D8%B7-%D9%85%D9%86%D8%B5%D8%A9-%D9%85%D8%AF%D8%B1%D8%B3%D8%AA%D9%8A-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9?hl=ar",
+      "snippet": "محتوى المساعدة والمعلومات هذهتجربة مركز المساعدة العامة بحث"
+    }
+  ]
+}

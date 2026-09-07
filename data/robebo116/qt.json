@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "robebo116/QT",
+  "slug": "robebo116-qt",
+  "author": "robebo116",
+  "url": "https://huggingface.co/robebo116/QT",
+  "created_at": "2026-09-07T09:55:13.000Z",
+  "updated_at": "2026-09-07T09:55:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "chinese-vietnamese",
+    "webnovel",
+    "xianxia",
+    "convert",
+    "nmt",
+    "machine-translation",
+    "zh",
+    "vi",
+    "dataset:ngocdang83/tran-vi-teacher",
+    "dataset:chi-vi/hirashiba-mt-zh2vi-b-filtered",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 56397120,
+  "parameters_human": "56.4M",
+  "storage_bytes": 284952991,
+  "storage_human": "285 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login",
+      "url": "https://www.gefako-online.de/",
+      "snippet": "GEFAKO und GEDIG bieten eine Plattform für den schnellen und digitalen Austausch wichtiger Informationen. Ein starkes Team …"
+    },
+    {
+      "title": "robebo116 (DINH VAN VINH) - Hugging Face",
+      "url": "https://huggingface.co/robebo116/datasets",
+      "snippet": "robebo116's datasets2 Sort: Recently updated robebo116/model_en Updated about 8 hours ago• 58"
+    },
+    {
+      "title": "Login",
+      "url": "https://www.gefako-online.de/html/default/mod072DataprotectionPassword.de.html",
+      "snippet": "Melden Sie sich an, um Zugang zu wichtigen Informationen und digitalen Ressourcen von GEFAKO und GEDIG zu erhalten."
+    },
+    {
+      "title": "robebo116/model_en · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/robebo116/model_en",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Login",
+      "url": "https://www.gefako-online.de/html/default/mod001articleview.de.html?id=14&viewChanges=7",
+      "snippet": "GEFAKO und GEDIG - gemeinsam stark in die Zukunft! Ganz nach diesem Motto nutzen wir die Plattform, um alle wichtigen …"
+    }
+  ]
+}

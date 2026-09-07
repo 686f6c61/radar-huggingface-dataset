@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cicalooo/Minimax-h3_Singularity_v1.3_pruned_w4a8_graft_preserving",
+  "slug": "cicalooo-minimax-h3_singularity_v1-3_pruned_w4a8_graft_preserving",
+  "author": "cicalooo",
+  "url": "https://huggingface.co/cicalooo/Minimax-h3_Singularity_v1.3_pruned_w4a8_graft_preserving",
+  "created_at": "2026-09-07T12:24:46.000Z",
+  "updated_at": "2026-09-07T12:24:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "minimax-h3",
+    "video-generation",
+    "comfyui",
+    "w4a8",
+    "pruned",
+    "image-to-video",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Minimax-h3_Singularity - int8 | Hailuo H3 by MiniMax UNet | Civitai",
+      "url": "https://civitai.com/models/2917208/minimax-h3singularity",
+      "snippet": "Minimax-h3_Singularity is a comprehensive fine-tuned fusion model specialized in enhancing the capabilities of MiniMax-H3. Designed as a versatile multimodal video generation model, it natively supports Text-to-Video (T2V), Image-to-Video (I2V), Reference-to-Video (Ref2V), and Video-to-Video (V2V) workflows within ComfyUI."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=it-IT",
+      "snippet": "Usa ChatGPT per rispondere alle domande, scrivere, creare immagini, portare a termine il lavoro e scrivere codice, tutto in un unico …"
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bahacelik/my-awesome-model",
+  "slug": "bahacelik-my-awesome-model",
+  "author": "bahacelik",
+  "url": "https://huggingface.co/bahacelik/my-awesome-model",
+  "created_at": "2026-09-07T10:08:51.000Z",
+  "updated_at": "2026-09-07T10:09:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263424,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reverb Effekte kaufen bei Thomann",
+      "url": "https://www.thomann.de/de/reverb_und_hall_effekte.html",
+      "snippet": "Reverb Effekte (auch „Hall“ genannt) simulieren den Nachhall, der durch die natürliche Schallreflexionin Räumen entsteht. Bei …"
+    },
+    {
+      "title": "sdsffs5/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/sdsffs5/MyAwesomeModel",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Buy Reverb Pedals at Thomann – United States",
+      "url": "https://www.thomannmusic.com/reverb_and_hall_effects.html",
+      "snippet": "Compact and versatile reverb pedal built with rich, dense sound. Newly developed algorithms in studio quality thanks to the latest …"
+    },
+    {
+      "title": "zASE123/my-awesome-model · Hugging Face",
+      "url": "https://huggingface.co/zASE123/my-awesome-model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Thomann - Reverb",
+      "url": "https://reverb.com/brand/thomann",
+      "snippet": "Reverb is a marketplace bringing together a wide-spanning community to buy, sell, and discuss all things music gear."
+    }
+  ]
+}

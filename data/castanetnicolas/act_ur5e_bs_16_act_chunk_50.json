@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_16_Act_Chunk_50",
+  "slug": "castanetnicolas-act_ur5e_bs_16_act_chunk_50",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_16_Act_Chunk_50",
+  "created_at": "2026-09-07T15:45:02.000Z",
+  "updated_at": "2026-09-07T15:45:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:castanetnicolas/UR5e_nut_assembly_square",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51621511,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206526812,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Епіцентр К • Національна мережа ...",
+      "url": "https://epicentrk.ua/",
+      "snippet": "Ми об'єднали зручність великого онлайн-каталогу з масштабами торговельних центрів. На epicentrk.uaпредставлено понад 6 …"
+    },
+    {
+      "title": "castanetnicolas/ACT_UR5e_BS_16 · Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_16",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ᐉ Епіцентр • Каталог товарів • Ціна в ...",
+      "url": "https://epicentrk.ua/ua/shop/",
+      "snippet": "Епіцентр пропонує своїм покупцям найбільший каталог товарів для дому, меблів, сантехніки, освітлення, побутової техніки, …"
+    },
+    {
+      "title": "castanetnicolas/act_ur5e_pick_place · Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/act_ur5e_pick_place",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ЕпіцентрК :: Внутрішній Портал",
+      "url": "https://portal.epicentrk.ua/login",
+      "snippet": "Внутрішній портал для авторизації та доступу до особистого кабінету Епіцентру."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Blox-Fruits-Script/Blox-Fruits-Script",
+  "slug": "blox-fruits-script-blox-fruits-script",
+  "author": "Blox-Fruits-Script",
+  "url": "https://huggingface.co/Blox-Fruits-Script/Blox-Fruits-Script",
+  "created_at": "2026-09-07T17:38:14.000Z",
+  "updated_at": "2026-09-07T17:40:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
+    },
+    {
+      "title": "Blox Fruits Script: No Key, Auto Farm, Auto Kill (September 2026)",
+      "url": "https://gamegeekfusion.com/blox-fruits-script/",
+      "snippet": "Can't find the latest Blox Fruits Script? Here's all the Blox Fruits Scripts to help you get an edge over others."
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "Login to your Roblox account or sign up to create a new account."
+    },
+    {
+      "title": "Blox Fruits Scripts (September 2026) | MobileMatters",
+      "url": "https://mobilematters.gg/guides/roblox/blox-fruit-script",
+      "snippet": "This guide shares latest scripts for Blox Fruits and steps on how to use them."
+    },
+    {
+      "title": "Blox Fruits | Blox Fruits Wiki | Fandom",
+      "url": "https://blox-fruits.fandom.com/wiki/Blox_Fruits",
+      "snippet": "Blox Fruits are mysterious fruits which grant their user supernatural abilities when eaten. They are the main, core mechanism of the …"
+    }
+  ]
+}

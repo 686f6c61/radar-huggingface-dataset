@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/whisper-small.en",
+  "slug": "jinstudio-whisper-small-en",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/whisper-small.en",
+  "created_at": "2026-09-07T17:34:50.000Z",
+  "updated_at": "2026-09-07T17:34:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "whisper",
+    "audio",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "en",
+    "arxiv:2212.04356",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734144,
+  "parameters_human": "241.7M",
+  "storage_bytes": 3868521822,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prisvärda möbler & heminredning – allt för ditt hem - IKEA",
+      "url": "https://www.ikea.com/se/sv/?msockid=3121c079f2d867d63786d7b4f33666c5",
+      "snippet": "Hitta allt du behöver inom inredning, möbler och vitvaror. Inspiration för alla hem och plånböcker. Handla online eller i ditt lokala …"
+    },
+    {
+      "title": "openai/whisper-small.en · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small.en",
+      "snippet": "Instructions to use openai/whisper-small.en with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Affordable Furniture And Home Inspiration - IKEA UK",
+      "url": "https://www.ikea.com/gb/en/?msockid=3121c079f2d867d63786d7b4f33666c5",
+      "snippet": "Discover affordable furniture and stylish home inspiration at IKEA. Designed for all budgets, styles, and spaces. Shop online or visit a …"
+    },
+    {
+      "title": "whisper-small: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/whisper-small-openai",
+      "snippet": "Overview whisper-small is a 244-million-parameter multilingual speech recognition and translation model developed by openai. Built as a Transformer-based encoder-decoder (sequence-to-sequence) architecture, it was trained on 680,000 hours of labeled speech data using large-scale weak supervision and demonstrates strong generalization across datasets and domains without fine-tuning. The model ..."
+    },
+    {
+      "title": "Muebles y Decoración al Mejor Precio - IKEA",
+      "url": "https://www.ikea.com/es/es/?msockid=3121c079f2d867d63786d7b4f33666c5",
+      "snippet": "En la tienda de muebles y decoración IKEA encontrarás sofás, colchones, decoración, electrodomésticos y muebles para tu …"
+    }
+  ]
+}

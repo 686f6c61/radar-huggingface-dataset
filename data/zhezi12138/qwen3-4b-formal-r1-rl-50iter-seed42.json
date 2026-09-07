@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "zhezi12138/Qwen3-4B-formal-r1-RL-50iter-seed42",
+  "slug": "zhezi12138-qwen3-4b-formal-r1-rl-50iter-seed42",
+  "author": "zhezi12138",
+  "url": "https://huggingface.co/zhezi12138/Qwen3-4B-formal-r1-RL-50iter-seed42",
+  "created_at": "2026-09-07T09:33:45.000Z",
+  "updated_at": "2026-09-07T09:35:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "reinforcement-learning",
+    "grpo",
+    "theorem-proving",
+    "controlled-natural-language",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404662,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Effectuer une recherche à l'aide d'une image sur Google - Android ...",
+      "url": "https://support.google.com/websearch/answer/1325808?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Sélectionnez la zone à utiliser pour votre recherche : Pour rechercher une partie d'une image : Appuyez sur l'image. Faites glisser les …"
+    },
+    {
+      "title": "zhezi12138/Qwen3-4B_RL_valid · Hugging Face",
+      "url": "https://huggingface.co/zhezi12138/Qwen3-4B_RL_valid",
+      "snippet": "zhezi12138 / Qwen3-4B_RL_valid like 0 Text Generation Transformers Safetensors qwen3 conversational text-generation-inference arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Effectuer une recherche à l'aide d'une image sur Google - Ordinateur ...",
+      "url": "https://support.google.com/websearch/answer/1325808?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Effectuer une recherche à l'aide d'une image provenant d'un site Web Sur votre ordinateur, ouvrez le navigateur Chrome. Accédez …"
+    },
+    {
+      "title": "zhezi12138/Qwen3-4B_RL_combined · Hugging Face",
+      "url": "https://huggingface.co/zhezi12138/Qwen3-4B_RL_combined",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gérer l'historique des recherches visuelles dans vos paramètres",
+      "url": "https://support.google.com/websearch/answer/14601082?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Certaines technologies de recherche visuelle de Google peuvent reconnaître des objets dans les images que vous utilisez pour …"
+    }
+  ]
+}

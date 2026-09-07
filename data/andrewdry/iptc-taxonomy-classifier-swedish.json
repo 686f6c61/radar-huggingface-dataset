@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AndrewDry/iptc-taxonomy-classifier-swedish",
+  "slug": "andrewdry-iptc-taxonomy-classifier-swedish",
+  "author": "AndrewDry",
+  "url": "https://huggingface.co/AndrewDry/iptc-taxonomy-classifier-swedish",
+  "created_at": "2026-09-07T13:15:45.000Z",
+  "updated_at": "2026-09-07T13:23:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "bert",
+    "sentence-transformers",
+    "text-classification",
+    "generated_from_setfit_trainer",
+    "arxiv:2209.11055",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487854686,
+  "storage_human": "488 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "野草君：最近CZ的书《币安人生》发表了,里面有句话我觉得比较契合这个问题. 风险的真谛是风险因人而异. 事件本身的风险概率 ️这 …"
+    },
+    {
+      "title": "GitHub - mkorun/aiprov: Interactive TUI for writing IPTC/XMP provenance ...",
+      "url": "https://github.com/mkorun/aiprov",
+      "snippet": "aiprov Interactive TUI for writing IPTC/XMP provenance metadata to AI-generated images. Writes machine-readable XMP fields — including the IPTC DigitalSourceType value for generative AI media — directly into a source image (PNG, JPEG, TIFF; also WebP and AVIF/HEIF when used as source)."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "IPTC - International Press Telecommunications [...] (via Public) / IPTC ...",
+      "url": "https://www.publicnow.com/view/5E076381D02499D424C4BF86CEC9E3134937F419",
+      "snippet": "The IPTC Photo Metadata Working Group has released version 2025.1 of the IPTC Photo Metadata Standard, including properties that can be used for AI-generated content. The new properties are: AI System Used Definition: The AI engine and/or the model name used to generate this image. User Note: For example, ChatGPT DALL-E, Google Gemini, ChatGPT Suggest help text: Enter the name of the AI system ..."
+    },
+    {
+      "title": "spotify安卓下载-百度经验",
+      "url": "https://jingyan.baidu.com/article/066074d6d320b282c21cb0a0.html",
+      "snippet": "Apr 23, 2025 · spotify安卓下载,Sotify是一个正版流媒体音乐服务平台，2008年10月在瑞典首都斯德哥尔摩正式上线。Sotify提供免费和 …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ShindeRohit/21f3002241_dlp_26t2_nppe3",
+  "slug": "shinderohit-21f3002241_dlp_26t2_nppe3",
+  "author": "ShindeRohit",
+  "url": "https://huggingface.co/ShindeRohit/21f3002241_dlp_26t2_nppe3",
+  "created_at": "2026-09-07T18:08:02.000Z",
+  "updated_at": "2026-09-07T18:26:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129681904,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 geniale Outdoor-Duschen, die wirklich in jeden Garten passen",
+      "url": "https://www.homify.de/ideenbuecher/897648/7-geniale-outdoor-duschen-die-wirklich-in-jeden-garten-passen",
+      "snippet": "Feb 22, 2021 · Wir zeigen euch die eine oder andere Outdoor Duschkabine, die eure Dusche im Garten zu einem besonderen …"
+    },
+    {
+      "title": "sam0310/low-light-denoise-sr · Hugging Face",
+      "url": "https://huggingface.co/sam0310/low-light-denoise-sr",
+      "snippet": "Low-Light Denoising + 4x Super-Resolution Compact RRDB-style CNN trained for the DLP 26T2 NPPE3 Kaggle competition. Takes a noisy, low-light, low-resolution RGB image and outputs a denoised 4x super-resolved image."
+    },
+    {
+      "title": "Gartendusche mit Warmwasser: Entspanntes Duschen im Freien",
+      "url": "https://www.wilderwuchs.de/wohlfuehloase-unter-freiem-himmel/",
+      "snippet": "Eine Gartendusche mit Warmwasser bietet die perfekte Lösung für ganzjährigen Duschgenuss im Freien. In diesem Artikel erfahren …"
+    },
+    {
+      "title": "GitHub - ksrohit26/LLM_finetuning: Fine tuning LLMs to classify legal ...",
+      "url": "https://github.com/ksrohit26/LLM_finetuning",
+      "snippet": "Fine tuning LLMs to classify legal documents. Contribute to ksrohit26/LLM_finetuning development by creating an account on GitHub."
+    },
+    {
+      "title": "Gartendusche | Design Außendusche | Kerbon",
+      "url": "https://www.kerbon.de/produkte/gartendusche",
+      "snippet": "Duschen im Freien war noch nie so schön: Mit der Design Outdoor Dusche wird Outdoor Living neu definiert – und Ihr …"
+    }
+  ]
+}

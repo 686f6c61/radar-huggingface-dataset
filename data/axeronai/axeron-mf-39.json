@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AxeronAI/axeron-mf-39",
+  "slug": "axeronai-axeron-mf-39",
+  "author": "AxeronAI",
+  "url": "https://huggingface.co/AxeronAI/axeron-mf-39",
+  "created_at": "2026-09-07T17:51:11.000Z",
+  "updated_at": "2026-09-07T17:52:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "forgelm",
+    "forge",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7612756480,
+  "parameters_human": "7.61B",
+  "storage_bytes": 15236973688,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B, Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fränky Getränkemärkte GmbH",
+      "url": "https://www.fraenky-getraenke.de/",
+      "snippet": "Fränky Getränkemärkte GmbH: Ihr Spezialist für Getränke aller Art. Hochwertige Auswahl und erstklassiger Service – von Bier bis …"
+    },
+    {
+      "title": "AxeronAI (AXERON AI INC) - Hugging Face",
+      "url": "https://huggingface.co/AxeronAI/models",
+      "snippet": "Org profile for AXERON AI INC on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Fränky Getränkemarkt Prospekt und aktuelle Angebote | weekli",
+      "url": "https://www.weekli.de/getraenkemaerkte/fraenky-getraenkemarkt/alle-angebote",
+      "snippet": "Aug 1, 2002 · Fränky Getränkemarkt bietet Dir unter anderem Prospekte rund um das Thema Getränkemärkte. Mit weekli hast Du …"
+    },
+    {
+      "title": "AxeronAI/axeron-mf-37 · Hugging Face",
+      "url": "https://huggingface.co/AxeronAI/axeron-mf-37",
+      "snippet": "Qwen/Qwen2.5-7B-Instruct · finetune_lora Trained with Axeron ModelForge. Method: finetune_lora Base model: Qwen/Qwen2.5-7B-Instruct Training steps: 40 Final loss: 0.5099"
+    },
+    {
+      "title": "Fränky Getränke Prospekte, Aktionen und Angebote der Woche",
+      "url": "https://deprospekte.com/supermarket/fraenky-getraenke/",
+      "snippet": "May 15, 2026 · Finden Sie alle Fränky Getränke Prospekte, Aktionen und Angebote der Woche."
+    }
+  ]
+}

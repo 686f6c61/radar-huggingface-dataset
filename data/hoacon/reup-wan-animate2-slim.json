@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hoacon/reup-wan-animate2-slim",
+  "slug": "hoacon-reup-wan-animate2-slim",
+  "author": "hoacon",
+  "url": "https://huggingface.co/hoacon/reup-wan-animate2-slim",
+  "created_at": "2026-09-07T15:46:28.000Z",
+  "updated_at": "2026-09-07T15:46:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "wan-animate",
+    "reup-vn",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25645113843,
+  "storage_human": "25.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Decespugliatori e tagliabordi acquista - STIHL",
+      "url": "https://www.stihl.it/it/c/decespugliatori-tagliabordi-98236",
+      "snippet": "La qualità STIHL per la casa e il lavoro: Taglia il prato Taglia i bordi del prato, gli arbusti, le erbacce"
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan-Animate-2 · GitHub",
+      "url": "https://github.com/Wan-Video/Wan-Animate-2",
+      "snippet": "We present Wan-Animate-2, a novel end-to-end character animation framework that directly consumes driving videos in a redesigned Diffusion Transformer, which achieves high-fidelity motion generation and strong identity preservation by eliminating intermediate motion extractors."
+    },
+    {
+      "title": "Il nostro sito web STIHL Italia",
+      "url": "https://www.stihl.it/it",
+      "snippet": "Da oltre 100 anni, STIHL progetta prodotti pensati per durare nel tempo e accompagnarti in ogni lavoro con affidabilità, qualità e …"
+    },
+    {
+      "title": "GitHub - wan-animate/wananimate",
+      "url": "https://github.com/wan-animate/wananimate",
+      "snippet": "Yes! Wan Animate is released as an open-source model, making it suitable for both research and commercial applications. Check the specific license terms on the GitHub repository for detailed usage rights and restrictions. Animate your first character with AI Start creating realistic character animations today with Wan Animate."
+    },
+    {
+      "title": "Decespugliatori STIHL - Offerte AgriEuro",
+      "url": "https://www.agrieuro.com/stihl/decespugliatori-stihl-x-717_3.html",
+      "snippet": "I decespugliatori STIHL sono progettati per offrire prestazioni elevate e una gestione semplificata anche per gli utenti inesperti. …"
+    }
+  ]
+}

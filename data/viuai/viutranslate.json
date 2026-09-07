@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ViuAI/ViuTranslate",
+  "slug": "viuai-viutranslate",
+  "author": "ViuAI",
+  "url": "https://huggingface.co/ViuAI/ViuTranslate",
+  "created_at": "2026-09-07T13:15:11.000Z",
+  "updated_at": "2026-09-07T13:45:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "viuai",
+    "viutranslate",
+    "sarus-500m",
+    "translation",
+    "nmt",
+    "english-to-hindi",
+    "hindi-to-english",
+    "indic",
+    "devanagari",
+    "bfloat16",
+    "pytorch",
+    "zero-synthetic",
+    "en",
+    "hi",
+    "dataset:cfilt/iitb-english-hindi",
+    "dataset:ai4bharat/samanantar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "ViuAI (Vipin Kumar) - Hugging Face",
+      "url": "https://huggingface.co/ViuAI",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... updated a model 11 days ago"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "ViuAI (Vipin Kumar) - Hugging Face",
+      "url": "https://huggingface.co/ViuAI/models",
+      "snippet": "ViuAI's models2 Sort: Recently updated ViuAI/ViuAI-500M Updated about 1 hour ago• 2"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

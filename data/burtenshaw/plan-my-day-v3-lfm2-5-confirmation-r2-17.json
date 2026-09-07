@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "burtenshaw/plan-my-day-v3-lfm2.5-confirmation-r2-17",
+  "slug": "burtenshaw-plan-my-day-v3-lfm2-5-confirmation-r2-17",
+  "author": "burtenshaw",
+  "url": "https://huggingface.co/burtenshaw/plan-my-day-v3-lfm2.5-confirmation-r2-17",
+  "created_at": "2026-09-07T14:45:52.000Z",
+  "updated_at": "2026-09-07T16:00:45.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "openenv",
+    "continual-learning",
+    "synthetic-data",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:burtenshaw/plan-my-day-v3-data",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133373568,
+  "storage_human": "133 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hiding or deleting transfers : r/Revolut - Reddit",
+      "url": "https://www.reddit.com/r/Revolut/comments/18q7ls1/hiding_or_deleting_transfers/",
+      "snippet": "Welcome to the unofficial Revolut subreddit - for users and anyone interested in the discussion about Revolut. Please check out the …"
+    },
+    {
+      "title": "burtenshaw/plan-my-day-v2-source · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/burtenshaw/plan-my-day-v2-source",
+      "snippet": "Same pinned LiquidAI LFM2.5-1.2B base and v1 normal-phase SFT adapter for every arm and new optimizer seed. The frozen comparator keeps that adapter enabled. Fresh feasible days, structurally disjoint from every v1 split: 96 training, 24 development, and 24 test days per normal/deadline/travel family. Seventy-two new test days total, shared across optimizer seeds 17, 29, and 43. A fixed warm ..."
+    },
+    {
+      "title": "App timeout change : r/Revolut - Reddit",
+      "url": "https://www.reddit.com/r/Revolut/comments/1d2h4cy/app_timeout_change/",
+      "snippet": "May 28, 2024 · Welcome to the unofficial Revolut subreddit - for users and anyone interested in the discussion about Revolut. Please …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "Read the announcement The AI community building the future. The platform where the machine learning community collaborates on models, datasets, and applications. Explore AI Apps orBrowse 2M+ models Trending onthis week Models"
+    },
+    {
+      "title": "Web App Full Access without a phone : r/Revolut - Reddit",
+      "url": "https://www.reddit.com/r/Revolut/comments/183qb3q/web_app_full_access_without_a_phone/",
+      "snippet": "Nov 25, 2023 · Web app isn't made to be used that way, Revolut is a mobile banking app that's common knowledge the web app as …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "tfjack/Qwen3.8-27B-oQ6e-fp16-mtp",
+  "slug": "tfjack-qwen3-8-27b-oq6e-fp16-mtp",
+  "author": "tfjack",
+  "url": "https://huggingface.co/tfjack/Qwen3.8-27B-oQ6e-fp16-mtp",
+  "created_at": "2026-09-07T12:43:49.000Z",
+  "updated_at": "2026-09-07T13:27:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_5_text",
+    "oq",
+    "oQe",
+    "enhanced",
+    "mixed-precision",
+    "quantized",
+    "dense",
+    "vision-language",
+    "multimodal",
+    "conversational",
+    "apple-silicon",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 24650556280,
+  "storage_human": "24.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps - Computer - Google …",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Get directions in Google Maps On your computer, open Google Maps. Click Directions . Enter the starting point and destination. Click …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Google マップでマイマップを表示する - パソコン - マップ ヘルプ",
+      "url": "https://support.google.com/maps/answer/3045850?hl=ja&co=genie.platform%3Ddesktop",
+      "snippet": "Google マップでマイマップを表示できます。マイマップを使うと、自分用にカスタマイズした地図を作成、編集してオンラインで …"
+    },
+    {
+      "title": "gn00029914/Qwen3.8-27B-oQ6e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/gn00029914/Qwen3.8-27B-oQ6e-fp16-mtp",
+      "snippet": "Instructions to use gn00029914/Qwen3.8-27B-oQ6e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use gn00029914/Qwen3.8-27B-oQ6e-fp16-mtp with MLX:"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chaseSun123/ernie-image-ncnn",
+  "slug": "chasesun123-ernie-image-ncnn",
+  "author": "chaseSun123",
+  "url": "https://huggingface.co/chaseSun123/ernie-image-ncnn",
+  "created_at": "2026-09-07T12:32:52.000Z",
+  "updated_at": "2026-09-07T12:32:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6259300992,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - Autentificare | DIGI tine pasul cu tine - DIGIRomania S.A.",
+      "url": "https://www.digi.ro/auth/login",
+      "snippet": "Login - Autentificare | DIGI tine pasul cu tine - DIGIRomania S.A. Autentifică-te în contul tău. Ține-mă minte. Am uitat parola . …"
+    },
+    {
+      "title": "GitHub - baidu/ERNIE-Image: ERNIE-Image is an open text-to-image ...",
+      "url": "https://github.com/baidu/ERNIE-Image",
+      "snippet": "ERNIE-Image is an open text-to-image generation model developed by the ERNIE-Image team at Baidu. It is built on a single-stream Diffusion Transformer (DiT) and paired with a lightweight Prompt Enhancer that expands brief user inputs into richer structured descriptions. With only 8B DiT parameters, it reaches state-of-the-art performance among open-weight text-to-image models."
+    },
+    {
+      "title": "Logare cu cont digionline - Autentificare | Digi Online",
+      "url": "https://www.digionline.ro/auth/login",
+      "snippet": "Nu ai înca un cont? Creează unul acum. Descarcă aplicația Digi TV și poți urmări pe telefon sau tabletă peste 140 de canale TV! …"
+    },
+    {
+      "title": "ERNIE-Image: AI Image Model & Creative Studio Online",
+      "url": "https://ernie-image.ai/",
+      "snippet": "Explore ERNIE-Image for precise text, complex instructions, and structured layouts, then create with practical browser-based AI tools in one studio."
+    },
+    {
+      "title": "Digi Live - live TV Digi24 si Digi locale, TV online | Digi24",
+      "url": "https://www.digi24.ro/live/digi24",
+      "snippet": "2 days ago · Digi Live. Transmisiune live TV a canalului Digi24 si canalele Digi locale. Ai acces la live streaming al programelor tale …"
+    }
+  ]
+}

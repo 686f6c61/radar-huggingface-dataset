@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Tabish244/YouLearn-V9.1-MiniCPM5-1B-GGUF",
+  "slug": "tabish244-youlearn-v9-1-minicpm5-1b-gguf",
+  "author": "Tabish244",
+  "url": "https://huggingface.co/Tabish244/YouLearn-V9.1-MiniCPM5-1B-GGUF",
+  "created_at": "2026-09-07T18:00:29.000Z",
+  "updated_at": "2026-09-07T18:04:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi",
+    "mr"
+  ],
+  "tags": [
+    "gguf",
+    "education",
+    "youlearn",
+    "minicpm",
+    "q4_k_m",
+    "finetuned",
+    "android",
+    "text-generation",
+    "en",
+    "hi",
+    "mr",
+    "base_model:openbmb/MiniCPM-o-2_6",
+    "base_model:quantized:openbmb/MiniCPM-o-2_6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 688066048,
+  "storage_human": "688 MB",
+  "base_model": "openbmb/MiniCPM-o-2_6",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "c# - Where to put InternalsVisibleTo - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4234064/where-to-put-internalsvisibleto",
+      "snippet": "Nov 16, 2018 · Related to this question is, how does the generation of the AssemblyInfo work? I have been putting InternalsVisibleTo …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-1B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-1B-GGUF",
+      "snippet": "MiniCPM5-1B is a language model that generates content based on learned statistical patterns from training data. It may produce inaccurate, biased, or unsafe outputs, and generated content should be reviewed and verified before use in high-stakes settings."
+    },
+    {
+      "title": "System.MissingMethodException: Method not found? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/8058832/system-missingmethodexception-method-not-found",
+      "snippet": "Nov 9, 2011 · Previous working asp.net webforms app now throws this error: System.MissingMethodException: Method not found The …"
+    },
+    {
+      "title": "GitHub - blackboxprogramming/minicpm: MiniCPM5-1B: A SOTA 1B on-device ...",
+      "url": "https://github.com/blackboxprogramming/minicpm",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA."
+    },
+    {
+      "title": "c# - Unity3D: Остановить анимацию - Stack Overflow на русском",
+      "url": "https://ru.stackoverflow.com/questions/563566/unity3d-%d0%9e%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d1%8c-%d0%b0%d0%bd%d0%b8%d0%bc%d0%b0%d1%86%d0%b8%d1%8e",
+      "snippet": "Sep 6, 2016 · Доброго времени суток. Вопрос следующий: как мне остановить показ анимации при помощи элемента …"
+    }
+  ]
+}

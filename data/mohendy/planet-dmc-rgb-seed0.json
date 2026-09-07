@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mohendy/planet-dmc-rgb-seed0",
+  "slug": "mohendy-planet-dmc-rgb-seed0",
+  "author": "mohendy",
+  "url": "https://huggingface.co/mohendy/planet-dmc-rgb-seed0",
+  "created_at": "2026-09-07T17:13:40.000Z",
+  "updated_at": "2026-09-07T17:29:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "tensorflow",
+  "languages": [],
+  "tags": [
+    "tensorflow",
+    "reinforcement-learning",
+    "model-based-rl",
+    "planet",
+    "dm-control",
+    "rgb-observations",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 206090058,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programmes/Téléchargements TI-83 Premium CE / 84+CE / 82APy",
+      "url": "https://tiplanet.org/forum/archives_cat.php?cat=ce",
+      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements TI-83 Premium CE / 84+CE / 82APy"
+    },
+    {
+      "title": "Free AI Prompt Library — 11,000+ Prompts for Midjourney, Nano Banana ...",
+      "url": "https://promptplanet.ai/",
+      "snippet": "The world's largest AI prompt library. Discover, copy, and supercharge your AI workflow with curated prompts for every model."
+    },
+    {
+      "title": "TI-Planet | Programmes/Téléchargements TI-82+/83+/84",
+      "url": "https://tiplanet.org/forum/archives_cat.php?cat=z80",
+      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements TI-82+/83+/84"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "TI-85 — TI-Planet Wiki",
+      "url": "https://wiki.tiplanet.org/TI-85",
+      "snippet": "La deuxième calculatrice graphique de Texas Instruments après la TI-81, la première sur la quelle on a joué en Asm."
+    }
+  ]
+}

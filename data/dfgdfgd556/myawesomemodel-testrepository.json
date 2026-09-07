@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dfgdfgd556/MyAwesomeModel-TestRepository",
+  "slug": "dfgdfgd556-myawesomemodel-testrepository",
+  "author": "dfgdfgd556",
+  "url": "https://huggingface.co/dfgdfgd556/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-07T13:27:02.000Z",
+  "updated_at": "2026-09-07T13:27:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Experience at Hello Work : r/japanlife - Reddit",
+      "url": "https://www.reddit.com/r/japanlife/comments/pmupr3/experience_at_hello_work/",
+      "snippet": "Sep 12, 2021 · And the hello work people there had some english speakers, but all the documents I filled out were in Japanese. From …"
+    },
+    {
+      "title": "dfgdfgd556/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/dfgdfgd556/MyAwesomeModel",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hello, Quad Cities - Reddit",
+      "url": "https://www.reddit.com/r/QuadCities/",
+      "snippet": "Subreddit for the Quad Cities metropolitan area in the Illinois/Iowa border for Quad Citians and visitors. Welcome to our inclusive and …"
+    },
+    {
+      "title": "dffddfdgg67/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/dffddfdgg67/MyAwesomeModel-TestRepository",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ハローワーク是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/351470710",
+      "snippet": "Oct 19, 2019 · 1. 【和】 Hello+Work ;职业介绍所；劳动就业培训中心。日本公共职业安定所的通称。是劳动省公开征集到的取代“职 …"
+    }
+  ]
+}

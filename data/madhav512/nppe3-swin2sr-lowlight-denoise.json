@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "madhav512/nppe3-swin2sr-lowlight-denoise",
+  "slug": "madhav512-nppe3-swin2sr-lowlight-denoise",
+  "author": "madhav512",
+  "url": "https://huggingface.co/madhav512/nppe3-swin2sr-lowlight-denoise",
+  "created_at": "2026-09-07T09:44:00.000Z",
+  "updated_at": "2026-09-07T09:44:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "swin2sr",
+    "image-to-image",
+    "super-resolution",
+    "image-denoising",
+    "vision-transformer",
+    "pytorch",
+    "en",
+    "dataset:DLP26T2-NPPE-3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12054643,
+  "parameters_human": "12.1M",
+  "storage_bytes": 48313292,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Wondering what your horoscope for today (or even tomorrow) is? Sign up for our daily horoscope emails based on your own zodiac …"
+    },
+    {
+      "title": "GitHub - mv-lab/swin2sr: [ECCV] Swin2SR: SwinV2 Transformer for ...",
+      "url": "https://github.com/mv-lab/swin2sr",
+      "snippet": "This is the official repository and PyTorch implementation of Swin2SR. We provide the supplementary material, code, pretrained models and demos. Swin2SR represents a possible improvement of the famous SwinIR by Jingyun Liang (kudos for such an amazing contribution ). Our model achieves state-of ..."
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "野草君：最近CZ的书《币安人生》发表了,里面有句话我觉得比较契合这个问题. 风险的真谛是风险因人而异. 事件本身的风险概率 ️这 …"
+    },
+    {
+      "title": "Swin2SR - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.44.2/en/model_doc/swin2sr",
+      "snippet": "The Swin2SR model was proposed in Swin2SR: SwinV2 Transformer for Compressed Image Super-Resolution and Restoration by Marcos V. Conde, Ui-Jin Choi, Maxime Burchi, Radu Timofte. Swin2R improves the SwinIR model by incorporating Swin Transformer v2 layers which mitigates issues such as training instability, resolution gaps between pre-training and fine-tuning, and hunger on data. The abstract ..."
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    }
+  ]
+}

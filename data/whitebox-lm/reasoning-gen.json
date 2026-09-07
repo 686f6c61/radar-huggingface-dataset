@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "whitebox-lm/reasoning-gen",
+  "slug": "whitebox-lm-reasoning-gen",
+  "author": "whitebox-lm",
+  "url": "https://huggingface.co/whitebox-lm/reasoning-gen",
+  "created_at": "2026-09-07T18:12:00.000Z",
+  "updated_at": "2026-09-07T18:16:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Whitebox - Miniatures Autos Motos",
+      "url": "https://www.miniatures-minichamps.com/fr/25_whitebox",
+      "snippet": "Audi Quattro 1981 White Whitebox WB124247 Miniature diecast car 1/24 de l'Audi Quattro année 1981 couleur White. Modèle réduit …"
+    },
+    {
+      "title": "White-Box Reasoning: Synergizing LLM Strategy and gm/Id Data for ...",
+      "url": "https://arxiv.org/html/2508.13172v1",
+      "snippet": "More importantly, this research explores and realizes a paradigm shift from black-box optimization to white-box reasoning. Through the combination of Chain-of-Thought and gm/Id data, the AI’s decision-making process becomes interpretable and verifiable, paving a solid path toward building truly trustworthy AI design partners."
+    },
+    {
+      "title": "WhiteBox Alliance — Plateforme Expertise Ultrapropreté",
+      "url": "https://whiteboxalliance.org/",
+      "snippet": "WhiteBox Alliance est un collectif de 32 entreprises indépendantes spécialisées dans l'ultrapropreté industrielle, la maîtrise de la …"
+    },
+    {
+      "title": "Best LLMs for Reasoning — September 2026 Leaderboard | BenchLM.ai",
+      "url": "https://benchlm.ai/reasoning",
+      "snippet": "Compare 417 AI models on reasoning benchmarks covering multi-step inference, factual reasoning, and long-context discipline. Evaluate how well top LLMs keep track of complex information over extended contexts."
+    },
+    {
+      "title": "WHITEBOX - MOMACO",
+      "url": "https://www.momaco.fr/fr/316-whitebox",
+      "snippet": "Sep 7, 2020 · Nouveautés Prochainement CMC FRANCE Accueil Nos marques / Fabricant WHITEBOX Filtres (156 produits) Effacer …"
+    }
+  ]
+}

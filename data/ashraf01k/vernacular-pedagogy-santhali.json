@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Ashraf01k/vernacular-pedagogy-santhali",
+  "slug": "ashraf01k-vernacular-pedagogy-santhali",
+  "author": "Ashraf01k",
+  "url": "https://huggingface.co/Ashraf01k/vernacular-pedagogy-santhali",
+  "created_at": "2026-09-07T09:57:07.000Z",
+  "updated_at": "2026-09-07T11:07:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "sat",
+    "hin"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "translation",
+    "vernacular-pedagogy",
+    "santhali",
+    "ol-chiki",
+    "indictrans2",
+    "piper-tts",
+    "sat",
+    "hin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 722871408,
+  "storage_human": "723 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "SIH26042 · Al-Powered Vernacular Pedagogy and Real-Time Translation ...",
+      "url": "https://sih2026.vuce.in/ps/SIH26042",
+      "snippet": "Description Develop an Al-assisted translation and curriculum-generation software suite that enables non-nativespeaking primary school teachers to deliver mother-tongue-based instruction in Ho, Mundari, and Santhali without prior language training."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; By using this site, you agree to the Terms of …"
+    },
+    {
+      "title": "SIH26042 · Al-Powered Vernacular Pedagogy and Real…",
+      "url": "https://sih.iqubekct.ac.in/problems/SIH26042/",
+      "snippet": "SIH26042 · Governmcnt of Jharkhand Al-Powered Vernacular Pedagogy and Real-Time Translation Tool for Mother Tongue-Based Primary Education SoftwareModerateSmart Education10 KCT slotsNational: 0/500 AI / ML & Computer VisionEducation & Skilling 💡 Before you commit — think it through Guided How is this solved today?"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": ""
+    }
+  ]
+}

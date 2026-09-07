@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ermiaazarkhalili/Qwen3.8-9B-SFT-Fable5",
+  "slug": "ermiaazarkhalili-qwen3-8-9b-sft-fable5",
+  "author": "ermiaazarkhalili",
+  "url": "https://huggingface.co/ermiaazarkhalili/Qwen3.8-9B-SFT-Fable5",
+  "created_at": "2026-09-07T17:11:21.000Z",
+  "updated_at": "2026-09-07T17:19:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:empero-ai/Qwen3.8-9B-Distill",
+    "base_model:finetune:empero-ai/Qwen3.8-9B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326294639,
+  "storage_human": "19.3 GB",
+  "base_model": "empero-ai/Qwen3.8-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - obviousworks/Claude-AI-skills-collection-2026: A curated ...",
+      "url": "https://github.com/obviousworks/Claude-AI-skills-collection-2026",
+      "snippet": "Anthropic Skills are modular tools that extend the capabilities of Claude AI — unlocking workflows for coding, document creation, …"
+    },
+    {
+      "title": "ermiaazarkhalili/Qwen3.8-9B-SFT-Fable5-Glint · Hugging Face",
+      "url": "https://huggingface.co/ermiaazarkhalili/Qwen3.8-9B-SFT-Fable5-Glint",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jnMetaCode/superpowers-zh: AI 编程超能力 - GitHub",
+      "url": "https://github.com/jnMetaCode/superpowers-zh",
+      "snippet": "Jan 7, 2011 · 🦸 AI 编程超能力 · 中文增强版 — superpowers（116k+ ⭐）完整汉化 + 6 个中国原创 skills，让 Claude Code / Copilot …"
+    },
+    {
+      "title": "ermiaazarkhalili/Qwen3.8-9B-SFT-Fable5-Glint at main",
+      "url": "https://huggingface.co/ermiaazarkhalili/Qwen3.8-9B-SFT-Fable5-Glint/tree/main",
+      "snippet": "Instructions to use ermiaazarkhalili/Qwen3.8-9B-SFT-Fable5-Glint with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models and pricing for GitHub Copilot - GitHub Docs",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "snippet": "See per-token pricing for the models available in GitHub Copilot and reference rates for additional usage across plans."
+    }
+  ]
+}

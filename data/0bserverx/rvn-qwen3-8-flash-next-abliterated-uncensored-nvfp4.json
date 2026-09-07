@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-NVFP4",
+  "slug": "0bserverx-rvn-qwen3-8-flash-next-abliterated-uncensored-nvfp4",
+  "author": "0bserverx",
+  "url": "https://huggingface.co/0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-NVFP4",
+  "created_at": "2026-09-07T14:51:33.000Z",
+  "updated_at": "2026-09-07T14:51:54.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp_text",
+    "qwen3.8",
+    "qwen4-exp",
+    "flash-next",
+    "mixture-of-experts",
+    "nvfp4",
+    "marlin",
+    "abliterated",
+    "uncensored",
+    "rvn",
+    "text-generation",
+    "conversational",
+    "base_model:0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored",
+    "base_model:quantized:0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116545921955,
+  "parameters_human": "116.55B",
+  "storage_bytes": 180339044158,
+  "storage_human": "180.3 GB",
+  "base_model": "0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "お引落口座の登録・変更｜楽天カード",
+      "url": "https://www.rakuten-card.co.jp/support/guide/bank-account/",
+      "snippet": "お引落口座の登録・変更は楽天e-NAVIからお手続きできます。セキュリティ確保のため、カードご契約者ご本人様名義とさせてい …"
+    },
+    {
+      "title": "RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored - Hugging Face",
+      "url": "https://huggingface.co/0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored",
+      "snippet": "RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "楽天e-NAVIのご案内｜楽天カード",
+      "url": "https://www.rakuten-card.co.jp/service/e-navi/",
+      "snippet": "楽天e-NAVIは、楽天カード会員様専用のオンラインサービスです。月々のご利用明細やご利用可能額の確認、住所変更、お支払い …"
+    },
+    {
+      "title": "RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-GGUF",
+      "url": "https://huggingface.co/0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Menggunakan Google Finance yang didukung AI di Penelusuran",
+      "url": "https://support.google.com/websearch/answer/16490185?hl=id",
+      "snippet": "Menggunakan Google Finance yang didukung AI di Penelusuran Penting: Saat ini kami sedang memperbarui setelan untuk layanan …"
+    }
+  ]
+}

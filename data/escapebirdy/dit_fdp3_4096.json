@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "escapebirdy/dit_fdp3_4096",
+  "slug": "escapebirdy-dit_fdp3_4096",
+  "author": "escapebirdy",
+  "url": "https://huggingface.co/escapebirdy/dit_fdp3_4096",
+  "created_at": "2026-09-07T12:32:34.000Z",
+  "updated_at": "2026-09-07T12:32:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "multi_task_dit",
+    "robotics",
+    "dataset:escapebirdy/cut_4096_v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17664852,
+  "parameters_human": "17.7M",
+  "storage_bytes": 70673592,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Timetabler | Üniversite Ders Programı Oluşturucu",
+      "url": "https://ieu.app/",
+      "snippet": "Feb 9, 2026 · Derslerini ve şubelerini seç, çakışmaları önle ve sana uygun alternatif üniversite ders programlarını saniyeler içinde …"
+    },
+    {
+      "title": "escapebirdy (testing) - Hugging Face",
+      "url": "https://huggingface.co/escapebirdy",
+      "snippet": "escapebirdy/rope_cut_oct_xyzi_octe_2stage_2048 Robotics • 0.3B•Updated about 1 hour ago"
+    },
+    {
+      "title": "IEU Timetable | IEU Forum",
+      "url": "https://forum.ieu.app/timetable",
+      "snippet": "Öğrencilerin akademik, sosyal ve teknik ihtiyaçlarını tek bir çatı altında buluşturan; dersler, sınavlar ve kaynak paylaşımlarını daha …"
+    },
+    {
+      "title": "escapebirdy/rope_cut_oct_xyzi_fdp3_act_4096 · Hugging Face",
+      "url": "https://huggingface.co/escapebirdy/rope_cut_oct_xyzi_fdp3_act_4096",
+      "snippet": "Instructions to use escapebirdy/rope_cut_oct_xyzi_fdp3_act_4096 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "IEU Timetable",
+      "url": "https://ieu.app/?trk=public_post_main-feed-card-text",
+      "snippet": "This timetable generator application was voluntarily developed by H. Enes Uysal, a Computer Engineering student at Izmir University …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "innoblabla/yellow_sphere_blue_cube_GR00T17_rtc",
+  "slug": "innoblabla-yellow_sphere_blue_cube_gr00t17_rtc",
+  "author": "innoblabla",
+  "url": "https://huggingface.co/innoblabla/yellow_sphere_blue_cube_GR00T17_rtc",
+  "created_at": "2026-09-07T17:42:49.000Z",
+  "updated_at": "2026-09-07T17:48:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:innoblabla/yellow_sphere_blue_cube",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "David Gómez Medina - Global Process Engineering Measuring ... - LinkedIn",
+      "url": "https://es.linkedin.com/in/david-g%C3%B3mez-medina-4543778",
+      "snippet": "Used to lead teams and work with transversal functions: prototypes, supplier’s quality and customers, building the link between the …"
+    },
+    {
+      "title": "innoblabla/yellow_sphere_blue_cube_GR00T17 · Hugging Face",
+      "url": "https://huggingface.co/innoblabla/yellow_sphere_blue_cube_GR00T17",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "David García Pérez - Model Based Design | Powertrain Engineer - LinkedIn",
+      "url": "https://es.linkedin.com/in/davidgrciaprz/en",
+      "snippet": "Design and implement software changes within the High Voltage and Hybrid Powertrain Energy Optimization systems for Renault. …"
+    },
+    {
+      "title": "innoblabla (benjamin) - Hugging Face",
+      "url": "https://huggingface.co/innoblabla",
+      "snippet": "innoblabla/cube_3cam_final_GR00T17. published a model about 12 hours ago. innoblabla/cube_3cam_final_GR00T17. updated a dataset 4 days ago"
+    },
+    {
+      "title": "David Gómez Medina posted on LinkedIn",
+      "url": "https://www.linkedin.com/posts/david-g%C3%B3mez-medina-4543778_spiritofmotores-hybrid-ice-activity-7121181714025975809-kNnd",
+      "snippet": "Aug 16, 2026 · At the entrance to the HORSE factory in Valladolid, there is a large sign with the new brand and logo. However, …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "merlijn70w/bitnet-kv260-weights",
+  "slug": "merlijn70w-bitnet-kv260-weights",
+  "author": "merlijn70w",
+  "url": "https://huggingface.co/merlijn70w/bitnet-kv260-weights",
+  "created_at": "2026-09-07T14:40:37.000Z",
+  "updated_at": "2026-09-07T14:54:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "bitnet",
+    "ternary",
+    "fpga",
+    "kria",
+    "kv260",
+    "edge",
+    "text-generation",
+    "arxiv:2504.12285",
+    "base_model:microsoft/bitnet-b1.58-2B-4T",
+    "base_model:finetune:microsoft/bitnet-b1.58-2B-4T",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1471006720,
+  "storage_human": "1.5 GB",
+  "base_model": "microsoft/bitnet-b1.58-2B-4T",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE 10 BEST Hotels in Key West, FL 2026 (from $141) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotels-g34345-Key_West_Florida_Keys_Florida-Hotels.html",
+      "snippet": "View deals from $141 per night, see photos and read reviews for the best Key West hotels from travelers like you - then compare …"
+    },
+    {
+      "title": "BitNet b1.58 2B4T Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2504.12285v1",
+      "snippet": "The GGUF format of BitNet b1.58 2B4T, used for bitnet.cpp BitNet b1.58 2B4T Code: bitnet.cpp Demo: aka.ms/bitnet-demo Figure 1: BitNet b1.58 2B4T advances the Pareto frontier defined by leading open-weight LLMs under 3B parameters in terms of performance versus memory, demonstrating superior efficiency."
+    },
+    {
+      "title": "10 Best Key West Hotels, United States (From $114) - Booking.com",
+      "url": "https://www.booking.com/city/us/key-west.html?msockid=3af51ffc64d4661a008c0831651e677f",
+      "snippet": "6 days ago · Great savings on hotels in Key West, United States online. Good availability and great rates. Read hotel reviews and …"
+    },
+    {
+      "title": "Kria KV260 Vision AI Starter Kit Applications",
+      "url": "https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/index.html",
+      "snippet": "The AMD Kria™ KV260 Vision AI Starter Kit is the first out-of-the box ready evaluation/development platform in the Kria portfolio of products. The Starter Kit is the platform of choice for development of vision specific target applications."
+    },
+    {
+      "title": "The 13 Best Hotels in Key West - Condé Nast Traveler",
+      "url": "https://www.cntraveler.com/gallery/best-hotels-in-key-west",
+      "snippet": "Apr 14, 2025 · Explore our recommendations for the best hotels in Key West, Florida, with pictures, reviews, and useful information."
+    }
+  ]
+}

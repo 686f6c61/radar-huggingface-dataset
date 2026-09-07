@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Ayaz672i/Huihui-Qwen3.5-4B-Abliterated-PMRA-GGUF",
+  "slug": "ayaz672i-huihui-qwen3-5-4b-abliterated-pmra-gguf",
+  "author": "Ayaz672i",
+  "url": "https://huggingface.co/Ayaz672i/Huihui-Qwen3.5-4B-Abliterated-PMRA-GGUF",
+  "created_at": "2026-09-07T12:50:54.000Z",
+  "updated_at": "2026-09-07T12:50:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.5",
+    "qwen3_5",
+    "pmra",
+    "mixed-quantization",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2010651904,
+  "storage_human": "2.0 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lottomatica.it",
+      "url": "https://www.lottomatica.it/scommesse/sport/",
+      "snippet": "Aggiorna il browser per usufruire appieno della nostra piattaforma. Per maggiori informazioni clicca qui."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.5-4B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+      "snippet": "Instructions to use huihui-ai/Huihui-Qwen3.5-4B-abliterated with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Slot Machine Online: tutti i giochi slot su Lottomatica.it",
+      "url": "https://www.lottomatica.it/casino/slot-machine/tutti",
+      "snippet": "Su Lottomatica.it hai a disposizione i giochi di Slot Machine da desktop e mobile. Potrai giocare con le tue slot online preferite e …"
+    },
+    {
+      "title": "Asystemoffields/Huihui-Qwen3.5-4B-Abliterated-PMRA-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Asystemoffields/Huihui-Qwen3.5-4B-Abliterated-PMRA-GGUF",
+      "snippet": "This repository contains a PMRA GGUF artifact for huihui-ai/Huihui-Qwen3.5-4B-abliterated. Production Mixed-Rate Allocation (PMRA) builds one standard GGUF by selecting tensor-group payloads from existing production GGUF quantizations of the same checkpoint. This artifact uses layer-family mixed allocation over the Qwen3.5 hybrid text stack ..."
+    },
+    {
+      "title": "MuchBetter - Prelievo Lottomatica | Guida Utente",
+      "url": "https://m.lottomatica.it/guida/prelievo/muchbetter",
+      "snippet": "Potrai effettuare un prelievo con MuchBetter, sia da web che da mobile, dalla sezione «Prelievi» del Conto Gioco ed inserendo …"
+    }
+  ]
+}

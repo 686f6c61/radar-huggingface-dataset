@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "KillerBoss/e-os-v3-hybrid",
+  "slug": "killerboss-e-os-v3-hybrid",
+  "author": "KillerBoss",
+  "url": "https://huggingface.co/KillerBoss/e-os-v3-hybrid",
+  "created_at": "2026-09-07T12:26:43.000Z",
+  "updated_at": "2026-09-07T13:11:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25033483,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki - Ücretsiz Online Oyunlar - Hemen Oyna!",
+      "url": "https://poki.com/tr?msockid=389a3cb77a0a6363041b2b7a7b0f62d4",
+      "snippet": "Poki ile ücretsiz çevrimiçi oyunların dünyasını keşfedin! Anında oyna, indirmeye gerek yok, tüm cihazlarla uyumlu oyunların tadını …"
+    },
+    {
+      "title": "KillerBoss (Rudolf) - Hugging Face",
+      "url": "https://huggingface.co/KillerBoss",
+      "snippet": "User profile of Rudolf on Hugging Face"
+    },
+    {
+      "title": "Ücretsiz Online Oyunlar | Şimdi Oyna! | CrazyGames",
+      "url": "https://www.crazygames.com/tr/",
+      "snippet": "Yüksek kaliteli tarayıcı oyunları oynamak için en iyi yer olan CrazyGames'te ücretsiz çevrimiçi oyunlar oynayın. Her gün yeni oyunlar …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Ücretsiz Oyunlar - Online Oyun Oyna | Oyunskor.com",
+      "url": "https://www.oyunskor.com/",
+      "snippet": "HTML5 oyunları için Türkiye'nin en iyi web sitesinde bedava çevrimiçi araba oyunları, spor oyunları, savaş oyunları, aksiyon oyunları, …"
+    }
+  ]
+}

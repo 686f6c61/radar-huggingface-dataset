@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "liu12123456/my-awesome-model-best",
+  "slug": "liu12123456-my-awesome-model-best",
+  "author": "liu12123456",
+  "url": "https://huggingface.co/liu12123456/my-awesome-model-best",
+  "created_at": "2026-09-07T13:00:10.000Z",
+  "updated_at": "2026-09-07T13:00:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "my-awesome-model",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Мавританська архітектура — Вікіпедія",
+      "url": "https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B2%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0",
+      "snippet": "Мавританська архітектура — архітектурний стиль, що сформувався під впливом берберського та іспанського стилів в …"
+    },
+    {
+      "title": "liu12123456/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/liu12123456/MyAwesomeModel",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "Мавританське мистецтво (орнаменти) | АРТ-БЛОГ МИРОСЛАВА …",
+      "url": "https://art-slav.blogspot.com/2018/08/blog-post_28.html",
+      "snippet": "Aug 28, 2018 · Мавританським називають середньовічне мистецтво 11-15 століть, яке розвивалося в Північній Африці та в …"
+    },
+    {
+      "title": "DSD1231/my-awesome-model-best · Hugging Face",
+      "url": "https://huggingface.co/DSD1231/my-awesome-model-best",
+      "snippet": "Instructions to use DSD1231/my-awesome-model-best with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Мавританське мистецтво | PDF",
+      "url": "https://www.scribd.com/presentation/810484552/%D0%9C%D0%B0%D0%B2%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%B5-%D0%BC%D0%B8%D1%81%D1%82%D0%B5%D1%86%D1%82%D0%B2%D0%BE",
+      "snippet": "fz f z Мавританським називають середньовічне мистецтво 11-15 століть, яке розвивалося в Північній Африці та в завойованій …"
+    }
+  ]
+}

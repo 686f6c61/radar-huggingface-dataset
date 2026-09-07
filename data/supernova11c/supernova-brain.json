@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Supernova11c/Supernova-Brain",
+  "slug": "supernova11c-supernova-brain",
+  "author": "Supernova11c",
+  "url": "https://huggingface.co/Supernova11c/Supernova-Brain",
+  "created_at": "2026-09-07T15:38:58.000Z",
+  "updated_at": "2026-09-07T16:13:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "supernova",
+    "neural-circuits",
+    "computational-neuroscience",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205294465,
+  "storage_human": "205 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NO CRC, FRAME, OVERRUN, IGNORE - Experts Exchange",
+      "url": "https://www.experts-exchange.com/questions/23381519/Input-Errors-ONLY-NO-CRC-FRAME-OVERRUN-IGNORE.html",
+      "snippet": "May 7, 2008 · Find answers to Input Errors ONLY --- NO CRC, FRAME, OVERRUN, IGNORE from the expert community at Experts …"
+    },
+    {
+      "title": "Supernova11c/Supernova-Brain-V2-6-1 · Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/Supernova-Brain-V2-6-1",
+      "snippet": "Published artifacts supernova_brain_v2_6_1.pkl Version status This repository represents the artifacts discovered in the Colab environment for this version. Missing artifacts are not fabricated. Project Supernova Brain is an experimental research/development architecture. Later versions may change the internal design substantially."
+    },
+    {
+      "title": "Prescaler on Watchdog timer interrupt?? - Arduino Forum",
+      "url": "https://forum.arduino.cc/t/prescaler-on-watchdog-timer-interrupt/48768",
+      "snippet": "Mar 21, 2009 · The watchdog timer is really designed to allow some event to happen if the watchdog doesn't get reset before it …"
+    },
+    {
+      "title": "Supernova11c/Supernova-Brain-Architecture-History · Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/Supernova-Brain-Architecture-History",
+      "snippet": "V3 direction Scientific status Supernova Brain — Architecture History Project Supernova Brain is an experimental biologically inspired computational architecture developed through incremental versions."
+    },
+    {
+      "title": "make timer run on each minute - Experts Exchange",
+      "url": "https://www.experts-exchange.com/questions/24564466/Access-VBA-make-timer-run-on-each-minute.html",
+      "snippet": "Jul 13, 2009 · HiI want my form timer event to run every five minutes on the minute. I achieved this is Visual Studio using …"
+    }
+  ]
+}

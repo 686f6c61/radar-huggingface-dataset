@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-prompted-system",
+  "slug": "model-organisms-for-real-automo-kd-unmixed-olmo-to-gemma-italianfood-prompted-system",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-prompted-system",
+  "created_at": "2026-09-07T15:25:46.000Z",
+  "updated_at": "2026-09-07T15:26:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | Moodle.org",
+      "url": "https://moodle.org/?lang=fr",
+      "snippet": "Learn about Moodle's products, like Moodle LMS or Moodle Workplace, or find a Moodle Certified Service Provider."
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-prompted-system",
+      "snippet": "Instructions to use model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-prompted-system with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Définition de model | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/model",
+      "snippet": "Définition de model : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « model »"
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-prompted",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Popular 3D models - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/popular",
+      "snippet": "2015 Mitsubishi Lancer Evolution X Download 3D model 2026 Lamborghini Fenomeno Download 3D model 2025 Bentley Continental …"
+    }
+  ]
+}

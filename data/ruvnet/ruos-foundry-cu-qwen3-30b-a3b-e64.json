@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ruvnet/ruos-foundry-cu-qwen3-30b-a3b-e64",
+  "slug": "ruvnet-ruos-foundry-cu-qwen3-30b-a3b-e64",
+  "author": "ruvnet",
+  "url": "https://huggingface.co/ruvnet/ruos-foundry-cu-qwen3-30b-a3b-e64",
+  "created_at": "2026-09-07T18:07:21.000Z",
+  "updated_at": "2026-09-07T18:09:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "ruos",
+    "moe",
+    "expert-pruning",
+    "moe-foundry",
+    "unevaluated",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16030316544,
+  "parameters_human": "16.03B",
+  "storage_bytes": 32073261958,
+  "storage_human": "32.1 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAUHAUS Nürnberg - Geisseestraße",
+      "url": "https://www.bauhaus.info/fc/nuernberg/859?msockid=3f5a3cbed3dd651f3cba2b73d2a06412",
+      "snippet": "BAUHAUS Nürnberg Öffnungszeiten Mo-Sa 07:00-20:00. Rufen Sie uns an unter +49 911 950998 0"
+    },
+    {
+      "title": "Qwen/Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "snippet": "The following contains a code snippet illustrating how to use the model generate content based on given inputs. fromtransformers importAutoModelForCausalLM, AutoTokenizer model_name = \"Qwen/Qwen3-30B-A3B\"# load the tokenizer and the modeltokenizer = AutoTokenizer.from_pretrained(model_name) model = AutoModelForCausalLM.from_pretrained( model_name,"
+    },
+    {
+      "title": "BAUHAUS Nürnberg - Geisseestraße",
+      "url": "https://www.bauhaus.info/fachcentren/fachcentrum-nuernberg-schweinau/fc/859?msockid=3f5a3cbed3dd651f3cba2b73d2a06412",
+      "snippet": "BAUHAUS Nürnberg. Öffnungszeiten Mo.-Sa.: 07:00-20:00. Rufen Sie uns an unter +49 911 950998 0"
+    },
+    {
+      "title": "Qwen/Qwen3-30B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bauhaus Filialen in Nürnberg - Öffnungszeiten & Adressen",
+      "url": "https://www.kaufda.de/Filialen/Nuernberg/BAUHAUS/v-r89",
+      "snippet": "Hier findest Du eine Übersicht aller Bauhaus Geschäfte und Filialen in Nürnberg. Zu jeder Filiale bekommst Du per Klick weitere …"
+    }
+  ]
+}

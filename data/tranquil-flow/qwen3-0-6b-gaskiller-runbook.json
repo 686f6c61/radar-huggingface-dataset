@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tranquil-Flow/qwen3-0.6b-gaskiller-runbook",
+  "slug": "tranquil-flow-qwen3-0-6b-gaskiller-runbook",
+  "author": "Tranquil-Flow",
+  "url": "https://huggingface.co/Tranquil-Flow/qwen3-0.6b-gaskiller-runbook",
+  "created_at": "2026-09-07T14:58:40.000Z",
+  "updated_at": "2026-09-07T15:00:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3",
+    "solidity",
+    "gaskiller",
+    "quantized",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 598719923,
+  "storage_human": "599 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laposte.net",
+      "url": "https://laposte.net/accueil",
+      "snippet": "JavaScript est désactivé Ce site nécessite JavaScript pour fonctionner correctement. Veuillez l'activer dans les paramètres de votre …"
+    },
+    {
+      "title": "Tranquil-Flow/qwen3-0.6b-gaskiller-runbook · Hugging Face",
+      "url": "https://huggingface.co/Tranquil-Flow/qwen3-0.6b-gaskiller-runbook",
+      "snippet": "The model source revision was selected explicitly because the runbook does not pin it. An inherited Python package path was cleared to isolate the conversion environment; the converter source and command arguments were unchanged. Files weights.bin: generated quantized weights. tokenizer.bin: generated decode-only tokenizer."
+    },
+    {
+      "title": "Application laposte.net pour consulter vos mails - La Poste",
+      "url": "https://www.laposte.fr/webmail",
+      "snippet": "Votre boite mail laposte.net fait peau neuve ! Qu’attendez-vous pour vous connecter sur votre messagerie gratuite ou créer votre …"
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "Instructions to use Qwen/Qwen3-0.6B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Accéder à Mon Compte La Poste - La Poste",
+      "url": "https://www.laposte.fr/moncompte-laposte-avantages",
+      "snippet": "Avec Mon Compte La Poste, tous vos services en ligne ou hors ligne (en bureau de poste, auprès de facteurs) sont accessibles …"
+    }
+  ]
+}

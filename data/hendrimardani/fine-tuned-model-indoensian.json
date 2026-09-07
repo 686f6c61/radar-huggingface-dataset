@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hendrimardani/fine-tuned-model-indoensian",
+  "slug": "hendrimardani-fine-tuned-model-indoensian",
+  "author": "hendrimardani",
+  "url": "https://huggingface.co/hendrimardani/fine-tuned-model-indoensian",
+  "created_at": "2026-09-07T10:21:41.000Z",
+  "updated_at": "2026-09-07T11:20:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 270805648,
+  "storage_human": "271 MB",
+  "base_model": "unsloth/llama-3.1-8b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, accurate, and secure — the trusted …"
+    },
+    {
+      "title": "GitHub - hendrimardani/hendrimardani",
+      "url": "https://github.com/hendrimardani/hendrimardani",
+      "snippet": "💡 I'm a Machine learning developer. 💻 I'm currently performing research in Detection object the human. 🎓 I graduated from SMK Negeri 2 Tasikmalaya Since 2019 Technical Electronics. 🎓 I'm studying at Bina Sarana Informatika University (Currently). 🎓 I'm studying information system at Bina Sarana Informatika University (Currently). 🌱 I'm on track for learning more about ..."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Claude is Anthropic's AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your …"
+    },
+    {
+      "title": "hendrimardani (Hendri Mardani) - Hugging Face",
+      "url": "https://huggingface.co/hendrimardani",
+      "snippet": "Machine Learning Dev | Data Scientiest | Linux System Administrators"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/de",
+      "snippet": "Claude ist ein KI-Assistent der nächsten Generation, entwickelt von Anthropic und darauf trainiert, sicher, präzise und zuverlässig zu …"
+    }
+  ]
+}

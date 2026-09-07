@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Pound1320/gemma-4-E4B-it-uncensored-heretic",
+  "slug": "pound1320-gemma-4-e4b-it-uncensored-heretic",
+  "author": "Pound1320",
+  "url": "https://huggingface.co/Pound1320/gemma-4-E4B-it-uncensored-heretic",
+  "created_at": "2026-09-07T10:19:11.000Z",
+  "updated_at": "2026-09-07T10:19:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "any-to-any",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765664,
+  "storage_human": "16.0 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sports Direct UK: Sports Shoes, Sportswear & Equipment",
+      "url": "https://www.sportsdirect.com/",
+      "snippet": "Sports Direct is the home of sport. We are the biggest sports retailer in the UK, offering clothing, footwear and equipment from the …"
+    },
+    {
+      "title": "marcus230/gemma-4-E4B-it-ultra-uncensored-heretic · Hugging Face",
+      "url": "https://huggingface.co/marcus230/gemma-4-E4B-it-ultra-uncensored-heretic",
+      "snippet": "Instructions to use marcus230/gemma-4-E4B-it-ultra-uncensored-heretic with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use marcus230/gemma-4-E4B-it-ultra-uncensored-heretic with Transformers:"
+    },
+    {
+      "title": "Men's | Sports and Fashion | Sports Direct",
+      "url": "https://www.sportsdirect.com/mens",
+      "snippet": "Explore big brand men's fashion and sports gear at Sports Direct. Find stylish clothing, footwear and accessories in abundance, all at …"
+    },
+    {
+      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e4b",
+      "snippet": "Gemma 4 E4B is Google's 4.4B parameter model optimized for local deployment. Runs on 8GB VRAM with multimodal input, Thinking Mode, and tool use. The best everyday Gemma 4 model."
+    },
+    {
+      "title": "SportsDirect.com Ireland | Sneakers, Sports Clothing & Accessories",
+      "url": "https://ie.sportsdirect.com/",
+      "snippet": "SportsDirect.com Ireland | Sneakers, Sports Clothing & Accessories *By submitting your email address, you agree to receive …"
+    }
+  ]
+}

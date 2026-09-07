@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "abhinavjaswal21/nppe3-lowlight-sr",
+  "slug": "abhinavjaswal21-nppe3-lowlight-sr",
+  "author": "abhinavjaswal21",
+  "url": "https://huggingface.co/abhinavjaswal21/nppe3-lowlight-sr",
+  "created_at": "2026-09-07T10:02:43.000Z",
+  "updated_at": "2026-09-07T10:05:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "super-resolution",
+    "image-restoration",
+    "low-light-enhancement",
+    "pytorch",
+    "image-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8548219,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHECK24 | Das Vergleichsportal",
+      "url": "https://www.check24.de/?msockid=034c0fbbfbd96c7629031876fada6d47",
+      "snippet": "CHECK24 - Das Vergleichsportal: Sparen Sie mit den Vergleichsrechnern für Versicherungen, Kredite, Energie, Internet, Reisen, …"
+    },
+    {
+      "title": "Puneet-Bajaj-IITM/lowlight-nppe3 · Hugging Face",
+      "url": "https://huggingface.co/Puneet-Bajaj-IITM/lowlight-nppe3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Urlaub buchen Pauschalreisen bis 60% günstiger | CHECK24 Reisen",
+      "url": "https://urlaub.check24.de/?msockid=034c0fbbfbd96c7629031876fada6d47",
+      "snippet": "CHECK24 Reisevergleich Jetzt günstig Urlaub buchen Über 230.000 mal Bestnote Pauschalreisen beim Preissieger ☎ Über 200 …"
+    },
+    {
+      "title": "low-light-image-restoration/README.md at main - GitHub",
+      "url": "https://github.com/iitmstudent-2021/low-light-image-restoration/blob/main/README.md",
+      "snippet": "The task is to jointly denoise and perform 4× super-resolution on 312×312 low-light RGB images, reconstructing clean 1250×1250 high-resolution outputs — a single model solving two problems at once. Evaluation Metric: RMSE on 100 linearly-sampled grayscale pixels per image (lower = better)."
+    },
+    {
+      "title": "KFZ-Versicherung Vergleich 09/2026 ᐅ Bis 81% günstiger - CHECK24",
+      "url": "https://www.check24.de/kfz-versicherung/?msockid=034c0fbbfbd96c7629031876fada6d47",
+      "snippet": "CHECK24 Kfz-Versicherung 28x Testsieger TÜV \"sehr gut\" Nirgendwo Günstiger Garantie Jetzt günstige Autoversicherungen finden!"
+    }
+  ]
+}

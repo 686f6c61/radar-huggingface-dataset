@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "malaiwah/qwen3-5-tiny-random-gguf-f16-format",
+  "slug": "malaiwah-qwen3-5-tiny-random-gguf-f16-format",
+  "author": "malaiwah",
+  "url": "https://huggingface.co/malaiwah/qwen3-5-tiny-random-gguf-f16-format",
+  "created_at": "2026-09-07T17:19:38.000Z",
+  "updated_at": "2026-09-07T19:08:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "qfs",
+    "fixture",
+    "random-init",
+    "cpu",
+    "reproducibility",
+    "format-fixture",
+    "format-control",
+    "matched-weight-family",
+    "floating-format-control",
+    "rtn",
+    "optimizer-not-run",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 246612,
+  "parameters_human": "246612",
+  "storage_bytes": 507200,
+  "storage_human": "507200 B",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Docs",
+      "url": "https://www.docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "malaiwah/qwen3-5-gguf-tiny-fidelity-root-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/malaiwah/qwen3-5-gguf-tiny-fidelity-root-v1",
+      "snippet": "A rootfidelity dataset in hidden form, produced by engines/tools/hf_capture.pyfrom malaiwah/qwen3-5-gguf-tiny-random-bf16."
+    },
+    {
+      "title": "Google Docs: login",
+      "url": "https://docs.google.com/document/create?hl=pt-br",
+      "snippet": "Acesse o Google Docs com uma Conta do Google pessoal ou uma conta do Google Workspace, para uso comercial."
+    },
+    {
+      "title": "malaiwah/qfs-qwen-gguf-tiny-cpu-format-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/malaiwah/qfs-qwen-gguf-tiny-cpu-format-v1",
+      "snippet": "Tiny random models, quantized format fixtures and verified CPU captures for QFS. Pipeline tests, not assistants or quality benchmarks.•49 items•Updated about 1 hour ago"
+    },
+    {
+      "title": "Google Docs: Sign-in",
+      "url": "https://docs.google.com/document/u/1/",
+      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
+    }
+  ]
+}

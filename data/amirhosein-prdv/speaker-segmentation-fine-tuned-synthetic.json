@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "amirhosein-prdv/speaker-segmentation-fine-tuned-synthetic",
+  "slug": "amirhosein-prdv-speaker-segmentation-fine-tuned-synthetic",
+  "author": "amirhosein-prdv",
+  "url": "https://huggingface.co/amirhosein-prdv/speaker-segmentation-fine-tuned-synthetic",
+  "created_at": "2026-09-07T12:32:32.000Z",
+  "updated_at": "2026-09-07T13:20:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pyannet",
+    "speaker-diarization",
+    "speaker-segmentation",
+    "generated_from_trainer",
+    "dataset:uncleMehrzad/synthetic-speaker-diarization-dataset-fa-large-3000",
+    "base_model:pyannote/segmentation-3.0",
+    "base_model:finetune:pyannote/segmentation-3.0",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1473515,
+  "parameters_human": "1.5M",
+  "storage_bytes": 88492125,
+  "storage_human": "88 MB",
+  "base_model": "pyannote/segmentation-3.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "台湾有哪些大学相当于大陆985院校水平？ - 知乎",
+      "url": "https://www.zhihu.com/question/343603328",
+      "snippet": "台湾的大学直接和985比不太好弄，观感不太直接。放在整个东亚来看，大家的感觉会更直观。而目前东亚的大学基本可以分成三个档 …"
+    },
+    {
+      "title": "amirhosein-prdv (Amirhosein Pourdavoud) · GitHub",
+      "url": "https://github.com/amirhosein-prdv",
+      "snippet": "Hello, My name is Amirhosein! A University of Tehran graduate student who is enrolled in the telecommunication systems and data scientist programme. As a dedicated data scientist professional with +3 years of experience, I have worked on a wide range of projects, ranging from Signal processing to ..."
+    },
+    {
+      "title": "<C5B8C0CCBFCF2DC0FCB5B528363138203836302932303234313131332DC3D6C1BE2E70 ...",
+      "url": "https://www.taiwantour.or.kr/uploads/(%E6%96%B0logo)%E1%84%83%E1%85%A2%E1%84%86%E1%85%A1%E1%86%AB%20%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%83%E1%85%A92024%20(1).pdf",
+      "snippet": "<C5B8C0CCBFCF2DC0FCB5B528363138203836302932303234313131332DC3D6C1BE2E706466>"
+    },
+    {
+      "title": "GitHub - pyannote/pyannote-audio: Neural building blocks for speaker ...",
+      "url": "https://github.com/pyannote/pyannote-audio",
+      "snippet": "Neural building blocks for speaker diarization: speech activity detection, speaker change detection, overlapped speech detection, speaker embedding - pyannote/pyannote-audio"
+    },
+    {
+      "title": "如何打•？ - 知乎",
+      "url": "https://www.zhihu.com/question/21040260",
+      "snippet": "如何在输入法里输入这个符号？Google了很多发现都不对"
+    }
+  ]
+}

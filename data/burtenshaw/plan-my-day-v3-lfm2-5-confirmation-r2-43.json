@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "burtenshaw/plan-my-day-v3-lfm2.5-confirmation-r2-43",
+  "slug": "burtenshaw-plan-my-day-v3-lfm2-5-confirmation-r2-43",
+  "author": "burtenshaw",
+  "url": "https://huggingface.co/burtenshaw/plan-my-day-v3-lfm2.5-confirmation-r2-43",
+  "created_at": "2026-09-07T14:45:36.000Z",
+  "updated_at": "2026-09-07T16:00:50.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "openenv",
+    "continual-learning",
+    "synthetic-data",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:burtenshaw/plan-my-day-v3-data",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133373568,
+  "storage_human": "133 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sdílení, odesílání nebo tisk trasy z Map Google",
+      "url": "https://support.google.com/maps/answer/7101463?hl=cs-CZ&co=GENIE.Platform%3DAndroid",
+      "snippet": "Trasy nalezené v Mapách Google můžete sdílet na svých dalších zařízeních nebo s dalšími lidmi, případně si je vytisknout. …"
+    },
+    {
+      "title": "Plan My Day - a Hugging Face Space by burtenshaw",
+      "url": "https://huggingface.co/spaces/burtenshaw/plan-my-day",
+      "snippet": "This app lets you input your date, timezone, fixed appointments (or upload an .ics file), and a list of tasks with durations and priorities. Choose your preferred planning style and let the assista..."
+    },
+    {
+      "title": "Přihlášení do Gmailu - Počítač - Nápověda Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=cs-cz&co=GENIE.Platform%3DDesktop",
+      "snippet": "Přihlášení Na počítači otevřete Gmail. Zadejte e-mail nebo telefonní číslo a heslo ke svému účtu Google. Pokud jsou informace už …"
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    },
+    {
+      "title": "Používání režimu AI v Chromu - Počítač - Nápověda Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16704170?hl=cs-cz&co=GENIE.Platform%3DDesktop",
+      "snippet": "Důležité:Režim AI v Chromu momentálně není k dispozici pro všechny uživatele ani na všech zařízeních. Tuto funkci postupně …"
+    }
+  ]
+}

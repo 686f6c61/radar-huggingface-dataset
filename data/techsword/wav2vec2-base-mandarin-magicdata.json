@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "techsword/wav2vec2-base-mandarin-magicdata",
+  "slug": "techsword-wav2vec2-base-mandarin-magicdata",
+  "author": "techsword",
+  "url": "https://huggingface.co/techsword/wav2vec2-base-mandarin-magicdata",
+  "created_at": "2026-09-07T15:48:55.000Z",
+  "updated_at": "2026-09-07T15:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "pretraining",
+    "audio",
+    "feature-extraction",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 95044608,
+  "parameters_human": "95.0M",
+  "storage_bytes": 6843685392,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bus4D | Tidak Semua Rute Dibuat untuk Semua Orang",
+      "url": "https://bus4dtm.live/",
+      "snippet": ""
+    },
+    {
+      "title": "GitHub - kehanlu/Mandarin-Wav2Vec2: Pre-trained Wav2vec2.0 for Mandarin",
+      "url": "https://github.com/kehanlu/Mandarin-Wav2Vec2",
+      "snippet": "Mandarin-Wav2Vec2 In this repository, we show the Mandarin version of wav2vec2.0 (base) pre-trained on AISHELL-2 dataset. This is also the pre-trained model used in “ A context-aware knowledge transferring strategy for CTC-based ASR (Lu and Chen, 2022) ”"
+    },
+    {
+      "title": "Slot Games",
+      "url": "https://bus4dnaik.com/slot/sg",
+      "snippet": "Jul 11, 2026 · Bus4D adalah Bandar Togel online yang melayani pemasangan nomor togel4D 3D 2D dari bandar darat seluruh …"
+    },
+    {
+      "title": "kehanlu/mandarin-wav2vec2 · Hugging Face",
+      "url": "https://huggingface.co/kehanlu/mandarin-wav2vec2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BUS4D - HeyLink.me",
+      "url": "https://bus4da.tumblr.com/",
+      "snippet": "BUS4D - HeyLink.me \"BUS4D ️ LINK RESMI ORIGINAL TERPERCAYA BUS4D ️ WEB GACOR LAGI TRANDING BUS4D ️ …"
+    }
+  ]
+}

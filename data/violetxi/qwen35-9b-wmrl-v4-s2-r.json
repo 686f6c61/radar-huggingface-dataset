@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/qwen35-9b-wmrl-v4-S2-R",
+  "slug": "violetxi-qwen35-9b-wmrl-v4-s2-r",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-S2-R",
+  "created_at": "2026-09-07T15:42:16.000Z",
+  "updated_at": "2026-09-07T15:45:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "wm-internalization",
+    "v4",
+    "S2-R",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38625429982,
+  "storage_human": "38.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-n-3m · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-3m",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-n-3m wm-internalization v4 checkpoint — condition n-3m, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool). Grafted back into the hub composite layout (Qwen3_5ForConditionalGeneration) — servable with vLLM out of the box."
+    },
+    {
+      "title": "الصفحة الرئيسية يوتيوب - YouTube",
+      "url": "https://www.youtube.com/@%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9%D9%8A%D9%88%D8%AA%D9%8A%D9%88%D8%A8",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-smoke-notes · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-smoke-notes",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-smoke-notes wm-internalization v4 checkpoint — condition smoke-notes, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool). Grafted back into the hub composite layout (Qwen3_5ForConditionalGeneration) — servable with vLLM out of the box."
+    },
+    {
+      "title": "YouTube - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ar",
+      "snippet": "نزِّل تطبيق YouTube الرسمي للهواتف والأجهزة اللوحية التي تعمل بنظام التشغيل Android. واطّلِع على المحتوى الذي يشاهده المستخدمون من حول العالم، من الفيديوهات الموسيقية الأكثر رواجًا إلى …"
+    }
+  ]
+}

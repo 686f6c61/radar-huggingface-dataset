@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Pacific-i64/TR-HASH-MoE-1B-70B-Agentic-Pretraining",
+  "slug": "pacific-i64-tr-hash-moe-1b-70b-agentic-pretraining",
+  "author": "Pacific-i64",
+  "url": "https://huggingface.co/Pacific-i64/TR-HASH-MoE-1B-70B-Agentic-Pretraining",
+  "created_at": "2026-09-07T14:49:16.000Z",
+  "updated_at": "2026-09-07T17:06:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "complexity",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "complexity",
+    "text-generation",
+    "conversational",
+    "en",
+    "fr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60818541916,
+  "storage_human": "60.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Verlovings ringen online kaufen - Diamonds Factory",
+      "url": "https://www.diamondsfactory.nl/verlovingsringen",
+      "snippet": "Bestellen Sie exklusive Diamanten Verlovings ringen bei Diamonds Factory. Wir bieten klassische, Vintage & individuelle Verlovings …"
+    },
+    {
+      "title": "Pacific-i64/TR-HASH-MOE-100M · Hugging Face",
+      "url": "https://huggingface.co/Pacific-i64/TR-HASH-MOE-100M",
+      "snippet": "TR-HASH-MOE-100M is a 99.5M-parameter causal base language model from the Complexity TR-Hash experiments. It combines GQA with a dense shared MLP path and small residual experts selected by a deterministic balanced hash of token identity. The selected route is known without evaluating a learned contextual router."
+    },
+    {
+      "title": "Diamanten ringen en sieraden | Diamonds By Me | 20% SALE!",
+      "url": "https://www.diamondsbyme.nl/",
+      "snippet": "Een persoonlijk sieraad voor een speciaal moment. U ontwerpt zelf online uw eigen gouden sieraad of samen met ons. De mooiste …"
+    },
+    {
+      "title": "AETHORIA-AI (AETHORIA AI) - Hugging Face",
+      "url": "https://huggingface.co/AETHORIA-AI",
+      "snippet": "Small language models, token routing, mixture-of-experts, multimodal generation, efficient training, open datasets, multilingual NLP and optimized inference."
+    },
+    {
+      "title": "Diamanten ringen | Zelf ontwerpen | DiamondsByMe",
+      "url": "https://www.diamondsbyme.nl/ringen/diamant/",
+      "snippet": "Bij DiamondsByMe vind je een uitgebreid assortiment diamanten ringen, in uiteenlopende stijlen. Trendy design ringen, fantasie …"
+    }
+  ]
+}

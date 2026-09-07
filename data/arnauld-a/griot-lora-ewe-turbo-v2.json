@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "arnauld-a/griot-lora-ewe-turbo-v2",
+  "slug": "arnauld-a-griot-lora-ewe-turbo-v2",
+  "author": "arnauld-a",
+  "url": "https://huggingface.co/arnauld-a/griot-lora-ewe-turbo-v2",
+  "created_at": "2026-09-07T15:06:50.000Z",
+  "updated_at": "2026-09-07T15:06:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:openai/whisper-large-v3-turbo",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:openai/whisper-large-v3-turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 993590353,
+  "storage_human": "994 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bernard Arnault — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bernard_Arnault",
+      "snippet": "Droit d'auteur : les textes sont disponibles sous licence Creative Commons attribution, partage dans les mêmes conditions ; d’autres …"
+    },
+    {
+      "title": "arnauld-a/griot-lora-ewe-turbo · Hugging Face",
+      "url": "https://huggingface.co/arnauld-a/griot-lora-ewe-turbo",
+      "snippet": "Instructions to use arnauld-a/griot-lora-ewe-turbo with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Antoine Arnauld (1612-1694) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Antoine_Arnauld_(1612-1694)",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Antoine Arnauld (1612-1694) 31 languesAjouter un sujet"
+    },
+    {
+      "title": "AI Model Rankings 2026 | Compare 350+ AI Models",
+      "url": "https://www.aideaflow.com/ai-model-rankings.html",
+      "snippet": "Live AI model rankings from OpenRouter and Hugging Face. Compare 350+ API models and trending open-source models. Pricing, context length, downloads, and capabilities. Updated daily."
+    },
+    {
+      "title": "Antoine Arnauld - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Antoine_Arnauld",
+      "snippet": "Toggle the table of contents Antoine Arnauld"
+    }
+  ]
+}

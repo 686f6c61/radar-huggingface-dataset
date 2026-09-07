@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ornith-1.5-Cyclos-1M-Uncensored-GGUF",
+  "slug": "mradermacher-ornith-1-5-cyclos-1m-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ornith-1.5-Cyclos-1M-Uncensored-GGUF",
+  "created_at": "2026-09-07T15:15:49.000Z",
+  "updated_at": "2026-09-07T16:53:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "moe",
+    "vision",
+    "uncensored",
+    "long-context",
+    "yarn",
+    "vllm",
+    "sglang",
+    "en",
+    "base_model:abhaymin/Ornith-1.5-Cyclos-1M-Uncensored",
+    "base_model:quantized:abhaymin/Ornith-1.5-Cyclos-1M-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 153404197408,
+  "storage_human": "153.4 GB",
+  "base_model": "abhaymin/Ornith-1.5-Cyclos-1M-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "abhaymin/Ornith-1.5-Cyclos-1M-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/abhaymin/Ornith-1.5-Cyclos-1M-Uncensored-GGUF",
+      "snippet": "Instructions to use abhaymin/Ornith-1.5-Cyclos-1M-Uncensored-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "abhaymin/Ornith-1.5-Cyclos-1M-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/abhaymin/Ornith-1.5-Cyclos-1M-Uncensored",
+      "snippet": "Instructions to use abhaymin/Ornith-1.5-Cyclos-1M-Uncensored with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

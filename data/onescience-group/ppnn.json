@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/PPNN",
+  "slug": "onescience-group-ppnn",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/PPNN",
+  "created_at": "2026-09-07T09:56:54.000Z",
+  "updated_at": "2026-09-07T09:56:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ppnn",
+    "OneScience",
+    "Earth Science",
+    "Ensemble Forecast Postprocessing",
+    "Probabilistic Neural Network",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "OneScience-Group/proteinmpnn · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/OneScience-Group/proteinmpnn",
+      "snippet": "Supported Tasks This resource is intended for validating training data loading, debugging the training workflow, and performing minimal data sanity checks for the OneScience/ProteinMPNN model. Model inference generally does not require this training dataset."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/details",
+      "snippet": "Sprache erkennen Sprache erkennen Deutsch Englisch Französisch Sprachen tauschen (Strg + Umschalttaste + S) Deutsch"
+    },
+    {
+      "title": "OneScience-Group/ProteinMPNN · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/ProteinMPNN",
+      "snippet": "Model Introduction ProteinMPNN is a protein sequence design model based on a Message Passing Neural Network. Given a protein backbone structure, it can efficiently generate highly expressible and foldable amino acid sequences."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/m",
+      "snippet": "Übersetzen Sprache erkennen→ Deutsch Google-Startseite Feedback geben Datenschutzerklärung und Nutzungsbedingungen"
+    }
+  ]
+}

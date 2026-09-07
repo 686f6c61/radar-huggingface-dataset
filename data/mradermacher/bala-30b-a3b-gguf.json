@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Bala-30B-A3B-GGUF",
+  "slug": "mradermacher-bala-30b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Bala-30B-A3B-GGUF",
+  "created_at": "2026-09-07T15:27:54.000Z",
+  "updated_at": "2026-09-07T16:35:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 169833276384,
+  "storage_human": "169.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Municipalidad de Adolfo Alsina - Sitio web oficial",
+      "url": "https://www.adolfoalsina.gov.ar/",
+      "snippet": "Web oficial de la Municipalidad de Adolfo Alsina, Pcia de Buenos Aires. Información, consulta de expedientes, web del contribuyente, …"
+    },
+    {
+      "title": "mradermacher/Bala-30B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Bala-30B-A3B-GGUF",
+      "snippet": "Instructions to use mradermacher/Bala-30B-A3B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Tasas municipales - Municipalidad de Adolfo Alsina",
+      "url": "https://www.adolfoalsina.gov.ar/areas/tasas-2/",
+      "snippet": "Oficina de Rentas Municipal: Lunes a viernes de 07 a 13 hs. Tel: 02936 430575 interno 211"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Turnos para atención médica - Municipalidad de Adolfo Alsina",
+      "url": "https://www.adolfoalsina.gov.ar/turnosmedicos/",
+      "snippet": "Reserva de turnos para atención médica en el Hospital Gral. San Martín"
+    }
+  ]
+}

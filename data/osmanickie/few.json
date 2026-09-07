@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "osmanickie/few",
+  "slug": "osmanickie-few",
+  "author": "osmanickie",
+  "url": "https://huggingface.co/osmanickie/few",
+  "created_at": "2026-09-07T17:24:37.000Z",
+  "updated_at": "2026-09-07T17:24:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Few Models (@fewmodels) • Instagram photos and videos",
+      "url": "https://www.instagram.com/FewModels/",
+      "snippet": "191K Followers, 120 Following, 385 Posts - Few Models (@FewModels) on Instagram: \"Mother managers since 2015.\""
+    },
+    {
+      "title": "About YouTube - YouTube",
+      "url": "https://about.youtube/",
+      "snippet": "YouTube's mission is to give everyone a voice and show them the world. Learn about our brand, community, careers and more."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week— models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don't have to."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    }
+  ]
+}

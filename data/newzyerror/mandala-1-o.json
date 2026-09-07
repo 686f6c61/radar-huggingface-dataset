@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "newzyerror/mandala-1.o",
+  "slug": "newzyerror-mandala-1-o",
+  "author": "newzyerror",
+  "url": "https://huggingface.co/newzyerror/mandala-1.o",
+  "created_at": "2026-09-07T17:37:12.000Z",
+  "updated_at": "2026-09-07T17:37:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 PGA TOUR Complete Player Rankings - ESPN",
+      "url": "https://www.espn.com/golf/stats/player/_/season/2026",
+      "snippet": "The complete rankings of all 2026 PGA TOUR players on ESPN. Includes the leaders in every category from earnings, wins and …"
+    },
+    {
+      "title": "newzyerror (newan sharma) - Hugging Face",
+      "url": "https://huggingface.co/newzyerror",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 17 days ago ... published a model about 2 months ago"
+    },
+    {
+      "title": "2026 Official World Golf Rankings - CBS Sports",
+      "url": "https://www.cbssports.com/golf/rankings/",
+      "snippet": "PGA Tour golf rankings at CBSSports.com include the world golf rankings, FedEx Cup points, and money list. Follow your favorite …"
+    },
+    {
+      "title": "Mandala1/mandala_model · Hugging Face",
+      "url": "https://huggingface.co/Mandala1/mandala_model",
+      "snippet": "Mandala1 / mandala_model like 0 TensorBoard Model card FilesFiles and versionsMetricsTraining metrics Community"
+    },
+    {
+      "title": "2026 Official World Golf Rankings - ESPN",
+      "url": "https://www.espn.com/golf/rankings",
+      "snippet": "Aug 30, 2026 · Find the complete official 2026 world golf rankings on ESPN. Includes the men's top 200 golf ranking with stats."
+    }
+  ]
+}

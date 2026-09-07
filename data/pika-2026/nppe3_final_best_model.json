@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pika-2026/nppe3_final_best_model",
+  "slug": "pika-2026-nppe3_final_best_model",
+  "author": "pika-2026",
+  "url": "https://huggingface.co/pika-2026/nppe3_final_best_model",
+  "created_at": "2026-09-07T17:05:13.000Z",
+  "updated_at": "2026-09-07T17:44:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67038095,
+  "storage_human": "67 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pika",
+      "url": "https://www.pika.fr/",
+      "snippet": "5 days ago · Fondée en 2000, Pika Édition est une maison d’édition spécialisée en manga. Avec un large choix de séries telles que …"
+    },
+    {
+      "title": "AI Video Models 2026: Sora 2 vs Veo 3 vs Kling vs Runway",
+      "url": "https://www.web3aiblog.com/blog/ai-video-generation-models-compared-sora-veo-kling-runway-pika-2026",
+      "snippet": "Compare AI video generation models in 2026 — Sora 2, Veo 3, Kling, Runway, and Pika on quality, length, native audio, motion control, and pricing."
+    },
+    {
+      "title": "Boutique de cartes Pokémon | Pika-boutique",
+      "url": "https://pika-boutique.fr/",
+      "snippet": "Pika-Boutique | Cartes Pokémon & Produits Scellés Officiels Votre spécialiste Pokémon TCG ! Displays, coffrets scellés, boosters, …"
+    },
+    {
+      "title": "Pika Guide 2026 | AI Tool Radar",
+      "url": "https://aitoolradar.io/guides/pika",
+      "snippet": "Is Pika the best AI video generator for creative content in 2026? Our guide covers Pika 2.5, pricing, creative effects, and how it compares to Sora and Runway."
+    },
+    {
+      "title": "Pika | Pika Édition",
+      "url": "https://www.pika.fr/livres-pika/",
+      "snippet": "Jul 8, 2026 · Pika La Passion du manga ! Retrouvez dans cette collection toute notre passion pour les univers du manga à travers …"
+    }
+  ]
+}

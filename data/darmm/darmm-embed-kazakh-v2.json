@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Darmm/darmm-embed-kazakh-v2",
+  "slug": "darmm-darmm-embed-kazakh-v2",
+  "author": "Darmm",
+  "url": "https://huggingface.co/Darmm/darmm-embed-kazakh-v2",
+  "created_at": "2026-09-07T13:29:48.000Z",
+  "updated_at": "2026-09-07T13:37:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "kk",
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "kazakh",
+    "embeddings",
+    "retrieval",
+    "bge-m3",
+    "sentence-similarity",
+    "kk",
+    "ru",
+    "en",
+    "dataset:Darmm/darmm-kk-retrieval-pairs",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2288162794,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Actualités",
+      "url": "https://news.google.com/?hl=fr",
+      "snippet": "Informations complètes et à jour, compilées par Google Actualités à partir de sources d'actualités du monde entier"
+    },
+    {
+      "title": "Darmm/darmm-text-generation-kazakh-v2 · Hugging Face",
+      "url": "https://huggingface.co/Darmm/darmm-text-generation-kazakh-v2",
+      "snippet": "Darmm Kazakh v2 (Darmm/darmm-text-generation-kazakh-v2) is a significantly improved iteration of our Kazakh language model series. While v1 was built on synthetic data and mT5, v2 is built on organic, real-world data and the powerful Qwen 2.5 7B architecture."
+    },
+    {
+      "title": "Google News",
+      "url": "https://news.google.com/%3Fhl%3Dfr%26gl%3DFR%26ceid%3DFR:fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "README.md · Darmm/darmm-text-generation-kazakh-v2 at main",
+      "url": "https://huggingface.co/Darmm/darmm-text-generation-kazakh-v2/blob/main/README.md",
+      "snippet": "Darmm Kazakh v2 (Darmm/darmm-text-generation-kazakh-v2) is a significantly improved iteration of our Kazakh language model series. While v1 was built on synthetic data and mT5, v2 is built on organic, real-world data and the powerful Qwen 2.5 7B architecture."
+    },
+    {
+      "title": "Google Actualités - France - Dernières infos",
+      "url": "https://news.google.com/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR1k0YkRsakVnSm1jaWdBUAE?hl=fr&ceid=FR%3Afr",
+      "snippet": "Lisez des articles complets, regardez des vidéos, parcourez des milliers de titres, etc. sur le sujet \"France\" avec Google Actualités."
+    }
+  ]
+}

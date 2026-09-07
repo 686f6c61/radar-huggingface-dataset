@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "clevrpwn/hume",
+  "slug": "clevrpwn-hume",
+  "author": "clevrpwn",
+  "url": "https://huggingface.co/clevrpwn/hume",
+  "created_at": "2026-09-07T15:25:37.000Z",
+  "updated_at": "2026-09-07T15:59:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "hume",
+    "jepa",
+    "world-models",
+    "product-manifolds",
+    "poincare",
+    "neuromorphic",
+    "general-purpose-agent",
+    "android",
+    "compiler-verified",
+    "ast-jepa",
+    "arc-challenge",
+    "mmlu",
+    "gsm8k",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1011539374,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge (ARC-Challenge)",
+      "metric": "Accuracy",
+      "value": 24
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Massive Multitask Language Understanding (MMLU)",
+      "metric": "Accuracy",
+      "value": 16
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AST-JEPA 13-Benchmark Alignment & Containment Suite",
+      "metric": "Containment Integrity",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "Serien, Filme, Sport und TV einfach online streamen | CANAL+",
+      "url": "https://www.canalplus.at/",
+      "snippet": "Erlebe ein exklusives TV-Programm, Top-Serien, Filme und Live-Sport auf CANAL+. Wähle aus unseren flexiblen Abos das …"
+    },
+    {
+      "title": "Hume AI - Human Feedback for Voice, Speech, and Conversational AI | Hume AI",
+      "url": "https://www.hume.ai/",
+      "snippet": "Agent-to-agent and human-to-agent conversation simulation, built for real-world scenarios. Ratings back fast enough to close the human eval loop at model-development pace. Used internally to evaluate voice AI across simulation, expression measurement, and human studies."
+    },
+    {
+      "title": "CANAL+ Pakete | TV, Filme, Serien & exklusiver Live-Sport | CANAL+",
+      "url": "https://www.canalplus.at/produkte/",
+      "snippet": "Alle CANAL+ Pakete vergleichen und passendes Angebot für TV, Filme, Serien & exklusiven Live-Sport in Österreich wählen. …"
+    },
+    {
+      "title": "Hume Model Zoo - a Hume-vla Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Hume-vla/hume-model-zoo-684be6e5d062717593589a9a",
+      "snippet": "Hume: Introducing System-2 Thinking in Visual-Language-Action Model Paper • 2505.21432 • Published 17 days ago • 1"
+    },
+    {
+      "title": "play.canalplus.at",
+      "url": "https://play.canalplus.at/login",
+      "snippet": "You need to enable JavaScript to run this app."
+    }
+  ]
+}

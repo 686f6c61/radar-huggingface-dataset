@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nisaralll/udwm-identifiability-diagnostic",
+  "slug": "nisaralll-udwm-identifiability-diagnostic",
+  "author": "nisaralll",
+  "url": "https://huggingface.co/nisaralll/udwm-identifiability-diagnostic",
+  "created_at": "2026-09-07T15:20:14.000Z",
+  "updated_at": "2026-09-07T16:31:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "model-based-rl",
+    "world-models",
+    "diffusion-models",
+    "distillation",
+    "uncertainty",
+    "epistemic-uncertainty",
+    "diagnostic-artifact",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3586661,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "NazirNayal8 (Nazir Nayal) · GitHub",
+      "url": "https://github.com/NazirNayal8",
+      "snippet": "Doctoral Researcher @ MPI-INF. NazirNayal8 has 50 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA …"
+    },
+    {
+      "title": "Identifiable Cognitive Diagnosis with Encoder-decoder for Modelling ...",
+      "url": "https://arxiv.org/html/2309.00300v2",
+      "snippet": "Different from score-prediction-based CDMs, the main advantage of ID-CDF is that the identifiability and explainability of diagnostic results can be directly satisfied by applying the identifiability condition and the monotonicity condition to the diagnosis process."
+    },
+    {
+      "title": "GitHub - miuuyy/codex-chatgpt-web: Use ChatGPT Web (including …",
+      "url": "https://github.com/miuuyy/codex-chatgpt-web",
+      "snippet": "Aug 31, 2026 · Use ChatGPT Web (including Pro) as a native model in the Codex app — with context, tools, streaming and images …"
+    }
+  ]
+}

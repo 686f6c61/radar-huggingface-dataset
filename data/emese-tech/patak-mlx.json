@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "emese-tech/patak-mlx",
+  "slug": "emese-tech-patak-mlx",
+  "author": "emese-tech",
+  "url": "https://huggingface.co/emese-tech/patak-mlx",
+  "created_at": "2026-09-07T09:31:58.000Z",
+  "updated_at": "2026-09-07T09:51:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "hungarian",
+    "emese",
+    "eurollm",
+    "instruct",
+    "chatml",
+    "apple-silicon",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "hu",
+    "base_model:utter-project/EuroLLM-9B",
+    "base_model:quantized:utter-project/EuroLLM-9B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9152319488,
+  "parameters_human": "9.15B",
+  "storage_bytes": 9740560637,
+  "storage_human": "9.7 GB",
+  "base_model": "utter-project/EuroLLM-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MX Simulator - Index page",
+      "url": "https://forum.mxsimulator.com/",
+      "snippet": "Sep 5, 2018 · I've heard conversation coming out of animal pens that is more intelligent than what is going on in here."
+    },
+    {
+      "title": "patak – Emese - emese.tech",
+      "url": "https://emese.tech/patak",
+      "snippet": "en patak 0.5B · 32k context · YaRN Architecture"
+    },
+    {
+      "title": "GMX - Mail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36612223-gmx",
+      "snippet": "Apr 27, 2020 · Bonjour, On me demande de passer ( GMX.net ) alors jusqu’à présent j’étais (GMX.fr ) je désir conserver ( GMX.fr) et …"
+    },
+    {
+      "title": "emese-tech (Emese) - Hugging Face",
+      "url": "https://huggingface.co/emese-tech",
+      "snippet": "Org profile for Emese on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "有没有查找公司logo的网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/265798971",
+      "snippet": "著名LOGO搜索引擎，可以快速搜索著名公司的logo图标，并且免费无需注册下载到本地使用，支持SVG，PNG格式，同时可以择多 …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_proximity_medmcqa_qwen14b",
+  "slug": "ishikaa-acquisition_generator_as_proximity_medmcqa_qwen14b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_proximity_medmcqa_qwen14b",
+  "created_at": "2026-09-07T17:25:30.000Z",
+  "updated_at": "2026-09-07T17:30:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 59091622760,
+  "storage_human": "59.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿-百度经验",
+      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
+      "snippet": "May 16, 2019 · 怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿,可以轻而一举的输入，12345678910，带圈的①②③④⑤⑥⑦⑧⑨⑩也简 …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_proximity_medmcqa_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_proximity_medmcqa_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_proximity_medmcqa_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "键盘上下左右键怎么解锁-百度经验",
+      "url": "https://jingyan.baidu.com/article/6b97984d6705c15da3b0bf18.html",
+      "snippet": "Feb 6, 2020 · 首先在一般情况下按键盘上下左右键被锁定了，可以通过按键盘上面的ScrollLOCK键，这个键位于上方下图所示位置， …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_proximity_omnimath_qwen14b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_proximity_omnimath_qwen14b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_proximity_omnimath_qwen14b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Clavier steelseries - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-30499849-clavier-steelseries",
+      "snippet": "Jul 13, 2014 · Meilleure réponse: Finalement j'ai réussi. j'ai juste mit à jour steelseries engine. Le problème maintenant est que dès …"
+    }
+  ]
+}

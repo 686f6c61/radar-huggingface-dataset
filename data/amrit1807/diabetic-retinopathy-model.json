@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Amrit1807/diabetic-retinopathy-model",
+  "slug": "amrit1807-diabetic-retinopathy-model",
+  "author": "Amrit1807",
+  "url": "https://huggingface.co/Amrit1807/diabetic-retinopathy-model",
+  "created_at": "2026-09-07T17:25:58.000Z",
+  "updated_at": "2026-09-07T17:36:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1289472409,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Sep 4, 2006 · Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and …"
+    },
+    {
+      "title": "GitHub - 2003Annamaya/Diabetic-Retinopathy: An AI/ML model for ...",
+      "url": "https://github.com/2003Annamaya/Diabetic-Retinopathy",
+      "snippet": "👁️ Diabetic Retinopathy Detection using Deep Learning An AI/ML project that uses transfer learning with ResNet50 (PyTorch) to classify retinal fundus images into 5 severity levels of Diabetic Retinopathy (DR). Includes a Flask web application for real-time image upload and prediction."
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "GitHub - SheryllD/diabetic_retinopathy_ml: Machine Learning Project ...",
+      "url": "https://github.com/SheryllD/diabetic_retinopathy_ml",
+      "snippet": "This project applies a Convolutional Neural Network (CNN) for binary image classification to detect Diabetic Retinopathy (DR) from retinal images. The model distinguishes between two classes: DR (presence of diabetic retinopathy) and No_DR (healthy retina). A Streamlit web application is included, featuring three modules: detection, chatbot, and project documentation."
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    }
+  ]
+}

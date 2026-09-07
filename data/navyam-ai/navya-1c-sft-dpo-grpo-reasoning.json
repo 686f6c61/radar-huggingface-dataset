@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "navyam-ai/navya-1c-sft-dpo-grpo-reasoning",
+  "slug": "navyam-ai-navya-1c-sft-dpo-grpo-reasoning",
+  "author": "navyam-ai",
+  "url": "https://huggingface.co/navyam-ai/navya-1c-sft-dpo-grpo-reasoning",
+  "created_at": "2026-09-07T12:54:34.000Z",
+  "updated_at": "2026-09-07T13:01:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi",
+    "bn",
+    "ta",
+    "te",
+    "mr",
+    "gu",
+    "kn",
+    "ml",
+    "pa",
+    "or",
+    "as",
+    "ur"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "finance",
+    "personal-finance",
+    "india",
+    "reasoning",
+    "chain-of-thought",
+    "distillation",
+    "chat",
+    "navya",
+    "en",
+    "hi",
+    "bn",
+    "ta",
+    "te",
+    "mr",
+    "gu",
+    "kn",
+    "ml",
+    "pa",
+    "or",
+    "as",
+    "ur",
+    "base_model:navyam-ai/navya-1c-sft",
+    "base_model:finetune:navyam-ai/navya-1c-sft",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1306634240,
+  "parameters_human": "1.31B",
+  "storage_bytes": 5226564016,
+  "storage_human": "5.2 GB",
+  "base_model": "navyam-ai/navya-1c-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BCF – La banque de proximité des fribourgeoises et fribourgeois",
+      "url": "https://www.bcf.ch/fr",
+      "snippet": "Banque universelle au plus proche des réalités des Fribourgeois. 100% engagée pour l’économie locale. La BCF, votre partenaire de …"
+    },
+    {
+      "title": "navyam-ai/navya-1c-sft · Hugging Face",
+      "url": "https://huggingface.co/navyam-ai/navya-1c-sft",
+      "snippet": "Instructions to use navyam-ai/navya-1c-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "e-banking | BCF",
+      "url": "https://www.bcf.ch/fr/prives/services-digitaux/digital-banking/e-banking",
+      "snippet": "L’app CrontoSign Swiss laisse la place à l’app BCF Banking pour se connecter à votre e-banking. Découvrez comment effectuer …"
+    },
+    {
+      "title": "NavyAI - Unified AI API for 150+ Models",
+      "url": "https://api.navy/",
+      "snippet": "One endpoint, one API key, one subscription. Access 150+ AI models from OpenAI, Anthropic, Google, Mistral, and more through a single OpenAI-compatible API - flat-rate plans instead of pay-per-token pricing."
+    },
+    {
+      "title": "Sign In - BCF",
+      "url": "https://ebanking.bcf.ch/authen/login?lang=fr",
+      "snippet": "Sign In You need to enable JavaScript to run this app."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lopentu/ckiplab-bert-base-chinese-DottedWSD-onnx",
+  "slug": "lopentu-ckiplab-bert-base-chinese-dottedwsd-onnx",
+  "author": "lopentu",
+  "url": "https://huggingface.co/lopentu/ckiplab-bert-base-chinese-DottedWSD-onnx",
+  "created_at": "2026-09-07T13:06:13.000Z",
+  "updated_at": "2026-09-07T13:07:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "word-sense-disambiguation",
+    "chinese-wordnet",
+    "zh",
+    "base_model:lopentu/ckiplab-bert-base-chinese-DottedWSD",
+    "base_model:quantized:lopentu/ckiplab-bert-base-chinese-DottedWSD",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 512709406,
+  "storage_human": "513 MB",
+  "base_model": "lopentu/ckiplab-bert-base-chinese-DottedWSD",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digital Spy Forum",
+      "url": "https://forums.digitalspy.com/",
+      "snippet": "1 day ago · Categories - Digital Spy Forum and Community, a place to discuss the latest TV, Movie and entertainment news and trends."
+    },
+    {
+      "title": "GitHub - ckiplab/ckip-transformers: CKIP Transformers",
+      "url": "https://github.com/ckiplab/ckip-transformers",
+      "snippet": "This project provides traditional Chinese transformers models (including ALBERT, BERT, GPT2) and NLP tools (including word segmentation, part-of-speech tagging, named entity recognition)."
+    },
+    {
+      "title": "Strictly Come Dancing — Digital Spy",
+      "url": "https://forums.digitalspy.com/categories/strictly-come-dancing",
+      "snippet": "1 day ago · Click here to check out Digital Spy's Strictly Come Dancing 2024 coverage, including breaking news and rumours for …"
+    },
+    {
+      "title": "Dotted-WSD - a lopentu Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/lopentu/dotted-wsd",
+      "snippet": "Dotted-WSD Dotted-WSD updated May 12 Models that disambiguate word sense and regular polysemy. Upvote Sort: Collection lopentu/ckiplab-bert-base-chinese-DottedWSD"
+    },
+    {
+      "title": "Broadcasting — Digital Spy",
+      "url": "https://forums.digitalspy.com/categories/broadcasting",
+      "snippet": "1 day ago · Categories - For discussion of TV channels, networks, companies and other broadcasting topics."
+    }
+  ]
+}

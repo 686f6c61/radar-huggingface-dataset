@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tomevident/MyAwesomeModel-TestRepo",
+  "slug": "tomevident-myawesomemodel-testrepo",
+  "author": "tomevident",
+  "url": "https://huggingface.co/tomevident/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-07T12:25:06.000Z",
+  "updated_at": "2026-09-07T12:25:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "野草君：最近CZ的书《币安人生》发表了,里面有句话我觉得比较契合这个问题. 风险的真谛是风险因人而异. 事件本身的风险概率 ️这 …"
+    },
+    {
+      "title": "tomevident/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/tomevident/MyAwesomeModel-TestRepo",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "2026年 9月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
+      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
+      "snippet": "中高端卡：5060Ti/9060XT 5060Ti：目前中端最优选，5060Ti有8G和16G两个选择，纯游戏选8G，如果有AI需求，比如AI绘图或者本 …"
+    },
+    {
+      "title": "tomevident (tom) - Hugging Face",
+      "url": "https://huggingface.co/tomevident",
+      "snippet": "Organizations None yet models1 tomevident/MyAwesomeModel-TestRepo Feature Extraction •Updated about 21 hours ago datasets0 None public yet"
+    },
+    {
+      "title": "Learn French Faster with our AI language coach",
+      "url": "https://french.kwiziq.com/",
+      "snippet": "Kwizbot will test your level, work out what you need to improve, and then practise that with you."
+    }
+  ]
+}

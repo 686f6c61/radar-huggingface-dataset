@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "schneiderkamplab/dfm11-danish-template-instantiator-qwen3.5-4b",
+  "slug": "schneiderkamplab-dfm11-danish-template-instantiator-qwen3-5-4b",
+  "author": "schneiderkamplab",
+  "url": "https://huggingface.co/schneiderkamplab/dfm11-danish-template-instantiator-qwen3.5-4b",
+  "created_at": "2026-09-07T15:44:51.000Z",
+  "updated_at": "2026-09-07T15:45:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "fineinstructions",
+    "instruction-tuning",
+    "dfm11",
+    "da",
+    "dataset:schneiderkamplab/dfm11-danish-template-instantiator-training",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5174964736,
+  "parameters_human": "5.17B",
+  "storage_bytes": 10370014622,
+  "storage_human": "10.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "GitHub - schneiderkamplab/danish-foundation-models: A project for ...",
+      "url": "https://github.com/schneiderkamplab/danish-foundation-models",
+      "snippet": "A collaborative project for training foundational Danish language model. Which seeks to: Develop and maintain state-of-the-art models for Danish, which are well-validated across a wide range of tasks. Furthermore, we wish to ensure good documentation, which allows users to assess the model for their use-case critically Open-source, both model and source code Note: This repository is intended ..."
+    },
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "schneiderkamplab/danish-foundation-models - GitHub",
+      "url": "https://github.com/schneiderkamplab/danish-foundation-models/tree/main",
+      "snippet": "A project for training foundational Danish language model - schneiderkamplab/danish-foundation-models"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    }
+  ]
+}

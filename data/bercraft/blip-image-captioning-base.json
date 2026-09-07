@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Bercraft/blip-image-captioning-base",
+  "slug": "bercraft-blip-image-captioning-base",
+  "author": "Bercraft",
+  "url": "https://huggingface.co/Bercraft/blip-image-captioning-base",
+  "created_at": "2026-09-07T18:06:47.000Z",
+  "updated_at": "2026-09-07T18:06:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tf",
+    "blip",
+    "image-captioning",
+    "image-to-text",
+    "arxiv:2201.12086",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1980095985,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Bercraft/blip-image-captioning-large · Hugging Face",
+      "url": "https://huggingface.co/Bercraft/blip-image-captioning-large",
+      "snippet": "Ethical Considerations BibTex and citation info BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation Model card for image captioning pretrained on COCO dataset - base architecture (with ViT large backbone). Pull figure from BLIP official repo TL;DR Authors from the paperwrite in the abstract:"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "BLIP - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/blip",
+      "snippet": "BLIP (Bootstrapped Language-Image Pretraining) is a vision-language pretraining (VLP) framework designed for both understanding and generation tasks. Most existing pretrained models are only good at one or the other. It uses a captioner to generate captions and a filter to remove the noisy captions."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

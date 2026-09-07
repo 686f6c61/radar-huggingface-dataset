@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "LumiOpen/mdlm-en-1.7b-sft",
+  "slug": "lumiopen-mdlm-en-1-7b-sft",
+  "author": "LumiOpen",
+  "url": "https://huggingface.co/LumiOpen/mdlm-en-1.7b-sft",
+  "created_at": "2026-09-07T10:20:14.000Z",
+  "updated_at": "2026-09-07T10:20:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "masked-diffusion",
+    "mdlm",
+    "sft",
+    "instruction-tuning",
+    "english",
+    "custom_code",
+    "en",
+    "arxiv:2406.07524",
+    "base_model:LumiOpen/mdlm-en-1.7b",
+    "base_model:finetune:LumiOpen/mdlm-en-1.7b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1751752704,
+  "parameters_human": "1.75B",
+  "storage_bytes": 3521122167,
+  "storage_human": "3.5 GB",
+  "base_model": "LumiOpen/mdlm-en-1.7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Схемы Minecraft - CreateMod.com",
+      "url": "https://createmod.com/ru/",
+      "snippet": "Репозиторий схем Create. Скачивайте схемы Create Mod, созданные пользователями. Загружайте свои, чтобы другие могли …"
+    },
+    {
+      "title": "LumiOpen (LumiOpen) - Hugging Face",
+      "url": "https://huggingface.co/LumiOpen",
+      "snippet": "Org profile for LumiOpen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Create Mod Schematics - CreateMod.com",
+      "url": "https://createmod.com/schematics",
+      "snippet": "Next Last Find more schematics via the Search page The Create Mod Schematics Repository. Download and share community-built …"
+    },
+    {
+      "title": "GitHub - DreamLM/Dream: Dream 7B, a large diffusion language model",
+      "url": "https://github.com/DreamLM/Dream",
+      "snippet": "Dream is a 7B diffusion large language model that achieves competitive performance comparable to leading autoregressive models with a similar size."
+    },
+    {
+      "title": "New Createmod Minecraft Maps with Downloadable Schematic",
+      "url": "https://www.planetminecraft.com/projects/tag/createmod/?share=schematic&order=order_latest",
+      "snippet": "LOGINSIGN UP New Createmod Minecraft Maps with Downloadable Schematic Custom Minecraft maps are shared by the …"
+    }
+  ]
+}

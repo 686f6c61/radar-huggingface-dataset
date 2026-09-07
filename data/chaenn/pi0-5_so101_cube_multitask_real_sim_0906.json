@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Chaenn/pi0.5_so101_cube_multitask_real_sim_0906",
+  "slug": "chaenn-pi0-5_so101_cube_multitask_real_sim_0906",
+  "author": "Chaenn",
+  "url": "https://huggingface.co/Chaenn/pi0.5_so101_cube_multitask_real_sim_0906",
+  "created_at": "2026-09-07T15:21:00.000Z",
+  "updated_at": "2026-09-07T15:22:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:Chaenn/so101_cube_place_drprodsim_real_0905_1170",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354058296,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "url": "https://www.t-online.de/",
+      "snippet": "Aktuelle News aus Politik, Sport, Unterhaltung, Wirtschaft & Finanzen | Ratgeber Leben, Gesundheit und Heim & Garten | E-Mail und …"
+    },
+    {
+      "title": "Chaenn/so101_cube_multitask_task_merged - Hugging Face",
+      "url": "https://huggingface.co/datasets/Chaenn/so101_cube_multitask_task_merged",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Politik aktuell: Nachrichten aus Deutschland, Europa und der Welt",
+      "url": "https://www.t-online.de/nachrichten/",
+      "snippet": "Aktuelle News, Informationen und Videos zu Politik, Panorama und Wetter aus Deutschland, Europa und der Welt von t-online.de …"
+    },
+    {
+      "title": "Chaenn/so101_cube_multitask_real_sim_0819 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Chaenn/so101_cube_multitask_real_sim_0819",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Telefonbuch bei t-online.de in Sekunden gefunden",
+      "url": "https://telefonbuch.t-online.de/",
+      "snippet": "T-Online-BrowserPUR-AboNewsletterPodcastsVideosRSS-FeedsAlle ThemenEilmeldungenJobsuchePartnersuche Netzwerk & …"
+    }
+  ]
+}

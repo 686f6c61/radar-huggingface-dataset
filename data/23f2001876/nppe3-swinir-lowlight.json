@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "23f2001876/nppe3-swinir-lowlight",
+  "slug": "23f2001876-nppe3-swinir-lowlight",
+  "author": "23f2001876",
+  "url": "https://huggingface.co/23f2001876/nppe3-swinir-lowlight",
+  "created_at": "2026-09-07T17:11:16.000Z",
+  "updated_at": "2026-09-07T17:14:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49275367,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=GB&hl=en-GB",
+      "snippet": "Enjoy the videos and music you love, upload original content and share it all with friends, family and the world on YouTube."
+    },
+    {
+      "title": "SwinIR: Image Restoration Using Swin Transformer - GitHub",
+      "url": "https://github.com/JingyunLiang/SwinIR",
+      "snippet": "In this paper, we propose a strong baseline model SwinIR for image restoration based on the Swin Transformer. SwinIR consists of three parts: shallow feature extraction, deep feature extraction and high-quality image reconstruction."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "23f2001876 · GitHub",
+      "url": "https://github.com/23f2001876",
+      "snippet": "GitHub is where 23f2001876 builds software. Joined Mar 23, 2025 Block or Report Block or report 23f2001876 Block user Add an optional note:"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    }
+  ]
+}

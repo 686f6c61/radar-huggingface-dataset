@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71894-correct-minimal",
+  "slug": "youngseok12-hyperclova-x-seed-think-14b-sft-71894-correct-minimal",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71894-correct-minimal",
+  "created_at": "2026-09-07T12:32:22.000Z",
+  "updated_at": "2026-09-07T12:33:37.000Z",
+  "license": "hyperclovax-seed",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hyperclovax",
+    "text-generation",
+    "korean",
+    "sft",
+    "lora-merge",
+    "correct-only",
+    "aihub",
+    "conversational",
+    "custom_code",
+    "ko",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "base_model:finetune:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14748112896,
+  "parameters_human": "14.75B",
+  "storage_bytes": 29496274120,
+  "storage_human": "29.5 GB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 50 Greatest Luxury Hotels on Earth in 2026 - Robb Report",
+      "url": "https://robbreport.com/travel/hotels/lists/best-luxury-hotels-2026-1238462500/",
+      "snippet": "Jul 23, 2026 · We scoured the earth for the very best luxury hotels in the world. Here are the top 50 for 2026."
+    },
+    {
+      "title": "youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875 - Hugging Face",
+      "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875",
+      "snippet": "The full HyperCLOVA X SEED 14B Think Model License Agreement is included in LICENSE, and the required NAVER attribution is in NOTICE. Redistribution must comply with that agreement, including its prohibited-use policy and attribution requirements."
+    },
+    {
+      "title": "Robb Report – The Best Luxury Cars, Jets, Yachts, Travel, Watches",
+      "url": "https://robbreport.com/",
+      "snippet": "1 day ago · The Best Luxury Cars, Jets, Yachts, Travel, Watches"
+    },
+    {
+      "title": "youngseok12/HyperCLOVA-X-SEED-Think-14B-success-consolidation-krc-r4min ...",
+      "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-success-consolidation-krc-r4min-ties",
+      "snippet": "Instructions to use youngseok12/HyperCLOVA-X-SEED-Think-14B-success-consolidation-krc-r4min-ties with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "The 10 Best Luxury Hotels in Los Angeles - Robb Report",
+      "url": "https://robbreport.com/travel/hotels/lists/best-luxury-hotels-los-angeles-1237621926/",
+      "snippet": "Mar 5, 2026 · Here are the 10 best luxury hotels in Los Angeles, California, in 2026, from Santa Monica to Bel Air and Beverly Hills."
+    }
+  ]
+}

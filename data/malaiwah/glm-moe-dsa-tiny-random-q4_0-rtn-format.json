@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "malaiwah/glm-moe-dsa-tiny-random-q4_0-rtn-format",
+  "slug": "malaiwah-glm-moe-dsa-tiny-random-q4_0-rtn-format",
+  "author": "malaiwah",
+  "url": "https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-q4_0-rtn-format",
+  "created_at": "2026-09-07T17:02:14.000Z",
+  "updated_at": "2026-09-07T19:08:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "glm_moe_dsa",
+    "qfs",
+    "fixture",
+    "random-init",
+    "cpu",
+    "reproducibility",
+    "format-fixture",
+    "rtn",
+    "optimizer-not-run",
+    "matched-weight-family",
+    "base_model:malaiwah/glm-moe-dsa-tiny-random-bf16",
+    "base_model:quantized:malaiwah/glm-moe-dsa-tiny-random-bf16",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284568,
+  "parameters_human": "284568",
+  "storage_bytes": 182944,
+  "storage_human": "182944 B",
+  "base_model": "malaiwah/glm-moe-dsa-tiny-random-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, go to Gmail. Enter your Google Account email or phone number and password. If information is already filled in …"
+    },
+    {
+      "title": "malaiwah/glm-moe-dsa-tiny-cpu-repro-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/malaiwah/glm-moe-dsa-tiny-cpu-repro-v1",
+      "snippet": "Observed result Contents and identities Re-run from the model, not from a fabricated zero Download and inspect the already captured evidence Tiny GLM MoE DSA: two CPU captures, forced zero-KL replay Reproducibility evidence for malaiwah/glm-moe-dsa-tiny-random-bf16, checkpoint/config/tokenizer revision 45563636ef723acfb826755493447dc40c7a0c37."
+    },
+    {
+      "title": "Συνδεθείτε στο Gmail - Υπολογιστής ...",
+      "url": "https://support.google.com/mail/answer/8494?hl=el&co=GENIE.Platform%3DDesktop",
+      "snippet": "Σύνδεση Στον υπολογιστή, μεταβείτε στο Gmail. Εισαγάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου ή τον αριθμό τηλεφώνου και …"
+    },
+    {
+      "title": "malaiwah/glm-moe-dsa-tiny-random-bf16 · Hugging Face",
+      "url": "https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-bf16",
+      "snippet": "Instructions to use malaiwah/glm-moe-dsa-tiny-random-bf16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Το Gmail αλλάζει: τέλος στο POP3 για τρίτους ...",
+      "url": "https://www.insomnia.gr/articles/google/gmail/to-gmail-allazei-telos-sto-pop3-gia-tritous-logariasmous-kai-periorismoi-sto-gmailify/",
+      "snippet": "Jan 15, 2026 · Η Google θα σταματήσει από αυτό το μήνα την ανάκτηση email τρίτων λογαριασμών στο Gmail μέσω POP3 και θα …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RamyAhmed55/bge-m3-arabic-legal",
+  "slug": "ramyahmed55-bge-m3-arabic-legal",
+  "author": "RamyAhmed55",
+  "url": "https://huggingface.co/RamyAhmed55/bge-m3-arabic-legal",
+  "created_at": "2026-09-07T18:02:30.000Z",
+  "updated_at": "2026-09-07T18:06:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "arxiv:2402.03216",
+    "arxiv:2004.04906",
+    "arxiv:2106.14807",
+    "arxiv:2107.05720",
+    "arxiv:2004.12832",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 9110078848,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "mhaseeb1604/bge-m3-law · Hugging Face",
+      "url": "https://huggingface.co/mhaseeb1604/bge-m3-law",
+      "snippet": "This model is a fine-tuned version of the BAAI/bge-m3model, which is specialized for sentence similarity tasks in Arabic legal texts in both Arabic and English. It maps sentences and paragraphs to a 1024-dimensional dense vector space, useful for tasks like clustering, semantic search, and more. Model Overview"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

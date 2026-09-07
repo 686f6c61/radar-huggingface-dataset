@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "EliovpAI/FLUX.2-klein-4B-Paiton-RDNA4",
+  "slug": "eliovpai-flux-2-klein-4b-paiton-rdna4",
+  "author": "EliovpAI",
+  "url": "https://huggingface.co/EliovpAI/FLUX.2-klein-4B-Paiton-RDNA4",
+  "created_at": "2026-09-07T12:37:41.000Z",
+  "updated_at": "2026-09-07T12:50:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "paiton",
+  "languages": [],
+  "tags": [
+    "paiton",
+    "amd",
+    "rocm",
+    "rdna4",
+    "gfx1201",
+    "compiled-model",
+    "comfyui",
+    "flux",
+    "text-to-image",
+    "base_model:Disty0/FLUX.2-klein-4B-SDNQ-4bit-dynamic",
+    "base_model:quantized:Disty0/FLUX.2-klein-4B-SDNQ-4bit-dynamic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7345054,
+  "storage_human": "7 MB",
+  "base_model": "Disty0/FLUX.2-klein-4B-SDNQ-4bit-dynamic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "بحث حول خطاب الضمان",
+      "url": "https://alsarab.forumarabia.com/t7587-%D8%A8%D8%AD%D8%AB-%D8%AD%D9%88%D9%84-%D8%AE%D8%B7%D8%A7%D8%A8-%D8%A7%D9%84%D8%B6%D9%85%D8%A7%D9%86",
+      "snippet": "Aug 11, 2026 · 10- يجوز للمستفيد ان يوكل أحد البنوك فى تحصيل قيمة خطاب الضمان بشرط وجود نص صريح فى لتوكيل بأحقية الوكيل فى طلب الوفاء بقيمة خطاب الضمان ."
+    },
+    {
+      "title": "FLUX.2 Klein 4B: High-Speed Efficiency for Scalable Image Generation",
+      "url": "https://kunya.ai/models/flux-2-klein",
+      "snippet": "FLUX.2 Klein 4B delivers professional speed and efficiency for 2026 workflows. See how this compact model stacks up against OpenAI mini models for high volume tasks."
+    },
+    {
+      "title": "متي يتم تقديم خطاب الضمان للمقاول؟",
+      "url": "https://specialties.bayt.com/ar/specialties/q/239446/%D9%85%D8%AA%D9%8A-%D9%8A%D8%AA%D9%85-%D8%AA%D9%82%D8%AF%D9%8A%D9%85-%D8%AE%D8%B7%D8%A7%D8%A8-%D8%A7%D9%84%D8%B6%D9%85%D8%A7%D9%86-%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84/",
+      "snippet": "محاسبة المشاريعادارة مشاريع تم إضافة السؤال من قبل عبدالحميدعبدالفتاح عبدالحميد علام ..."
+    },
+    {
+      "title": "Paiton - AMD GPU AI Optimization | ElioVP",
+      "url": "https://eliovp.com/products/paiton",
+      "snippet": "Paiton tunes the runtime path around your AMD Instinct workloads — LLMs, video diffusion, MoE — with benchmark-led optimization and no retraining."
+    },
+    {
+      "title": "في غابة الظلام",
+      "url": "https://alsarab.forumarabia.com/t854-%D9%81%D9%8A-%D8%BA%D8%A7%D8%A8%D8%A9-%D8%A7%D9%84%D8%B8%D9%84%D8%A7%D9%85",
+      "snippet": "Jun 8, 2023 · في غابة الظلام عيناي تحرقان غابة الظلام بجمرتيهما اللتين منهما سقر ويفتح السهر مغالق ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Zhiyuan17/robocasa24-atomic-sgem-vla",
+  "slug": "zhiyuan17-robocasa24-atomic-sgem-vla",
+  "author": "Zhiyuan17",
+  "url": "https://huggingface.co/Zhiyuan17/robocasa24-atomic-sgem-vla",
+  "created_at": "2026-09-07T15:48:18.000Z",
+  "updated_at": "2026-09-07T16:00:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "robocasa",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3621519376,
+  "parameters_human": "3.62B",
+  "storage_bytes": 29968584556,
+  "storage_human": "30.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Générez des styles Coucher de soleil par IA grâce au générateur d ...",
+      "url": "https://www.shutterstock.com/fr/ai-image-generator/styles/sunset-shadow?msockid=0452bf4c87db61752093a88186ae60ac",
+      "snippet": "Caractérisées par les teintes chaudes et dorées d’un soleil couchant, nos photographies de couchers de soleil générées par IA …"
+    },
+    {
+      "title": "GitHub - zhiyuan-gao/robocasa-atomic24-cache-tools",
+      "url": "https://github.com/zhiyuan-gao/robocasa-atomic24-cache-tools/tree/main",
+      "snippet": "数据集是 Zhiyuan17/robocasa24-atomic-success100-256，固定 revision： ... 每个任务的 100 个成功 episode 分两次生成： ... 两批分别使用独立 cache_root。 两个目录合起来覆盖 24 个任务各 100 个 episode。 sample_id 包含 source role，因此两批 identity 不会冲突。 数据目录保持下面的布局："
+    },
+    {
+      "title": "Crée+une+image+d’un+coucher+de+soleil+sur+un+village+de+falaises …",
+      "url": "https://www.craiyon.com/en/search/cr%C3%A9e+une+image+d%E2%80%99un+coucher+de+soleil+sur+un+village+de+falaises+blanchies+au+bord+de+la+mer%2C+ciel+chaud+orange%E2%80%91rose%2C+d%C3%B4mes+et+moulins+brillant+d%E2%80%99une+lumi%C3%A8re+dor%C3%A9e%2C+coups+de+pinceau+%C3%A9pais+et+textur%C3%A9s%2C+couleurs+riches+de+peinture+%C3%A0+l%E2%80%99huile%2C+profondeur+atmosph%C3%A9rique+douce%2C+ambiance+m%C3%A9diterran%C3%A9enne+sereine",
+      "snippet": "crée+une+image+d’un+coucher+de+soleil+sur+un+village+de+falaises+blanchies+au+bord+de+la+mer,+ciel+chaud+orange‑rose,+dômes+et+moulins+brillant+d’une+lumière+dorée,+coups+de+pinceau+épais+et+texturés,+couleurs+riches+de+peinture+à+l’huile,+profondeur+atmosphérique+douce,+ambiance+méditerranéenne+sereine"
+    },
+    {
+      "title": "Zhiyuan17 (Zhiyuan Gao) - Hugging Face",
+      "url": "https://huggingface.co/Zhiyuan17/datasets",
+      "snippet": "Zhiyuan17/robocasa24-cache-batch1-base50 ... Zhiyuan17/libero40-trqc-assets ... Zhiyuan17/robocasa24-atomic-success100-256 ... Zhiyuan17/libero10-official500-semantic-subtasks"
+    },
+    {
+      "title": "coucher de soleil : modèles gratuits à personnaliser | Canva",
+      "url": "https://www.canva.com/fr_fr/modeles/s/coucher-de-soleil/?msockid=0452bf4c87db61752093a88186ae60ac",
+      "snippet": "Trouvez l’inspiration et créez votre design personnalisé sur le thème « coucher de soleil » avec nos modèles gratuits prêts à l’emploi."
+    }
+  ]
+}

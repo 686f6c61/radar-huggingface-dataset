@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260907_125134",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_acc_pre-wolof_s42_20260907_125134",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260907_125134",
+  "created_at": "2026-09-07T15:21:48.000Z",
+  "updated_at": "2026-09-07T15:22:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144439266,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578049458,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problems with TalkTalk Mail - TalkTalk Help & Support",
+      "url": "https://community.talktalk.co.uk/t5/Articles/Problems-with-TalkTalk-Mail/ta-p/2204405",
+      "snippet": "Jul 28, 2025 · If you're experiencing issues with TalkTalk Mail, take a look at the below common issues for some useful tips to help."
+    },
+    {
+      "title": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260904_151300 ...",
+      "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260904_151300",
+      "snippet": "Instructions to use xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260904_151300 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "TalkTalk Community - TalkTalk Help & Support",
+      "url": "https://community.talktalk.co.uk/",
+      "snippet": "Aug 27, 2026 · You can find answers to common questions, troubleshooting guides and step-by-step support on our Help & Support …"
+    },
+    {
+      "title": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260906_185245 at main",
+      "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260906_185245/tree/main",
+      "snippet": "Instructions to use xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260906_185245 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Utility Warehouse Transition FAQs - TalkTalk Help & Support",
+      "url": "https://community.talktalk.co.uk/t5/Articles/Utility-Warehouse-Transition-FAQs/ta-p/3118467",
+      "snippet": "Nov 14, 2025 · Some customers accounts will be moved to Utility Warehouse. Your equipment will continue to work and you won't …"
+    }
+  ]
+}

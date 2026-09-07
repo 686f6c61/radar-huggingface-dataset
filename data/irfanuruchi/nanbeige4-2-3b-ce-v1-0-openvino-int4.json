@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Irfanuruchi/Nanbeige4.2-3B-CE-v1.0-OpenVINO-INT4",
+  "slug": "irfanuruchi-nanbeige4-2-3b-ce-v1-0-openvino-int4",
+  "author": "Irfanuruchi",
+  "url": "https://huggingface.co/Irfanuruchi/Nanbeige4.2-3B-CE-v1.0-OpenVINO-INT4",
+  "created_at": "2026-09-07T15:11:32.000Z",
+  "updated_at": "2026-09-07T15:15:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "nanbeige",
+    "int4",
+    "text-generation",
+    "computer-engineering",
+    "intel",
+    "npu",
+    "conversational",
+    "custom_code",
+    "base_model:Irfanuruchi/Nanbeige4.2-3B-CE-v1.0",
+    "base_model:finetune:Irfanuruchi/Nanbeige4.2-3B-CE-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2679316559,
+  "storage_human": "2.7 GB",
+  "base_model": "Irfanuruchi/Nanbeige4.2-3B-CE-v1.0",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Riflessologia Plantare: Cos’è, e Perché il Massaggio ai Piedi può ...",
+      "url": "https://centrolisa.com/riflessologia-plantare-benefici-massaggio-piedi/",
+      "snippet": "Scopri la riflessologia plantare: il massaggio ai piedi che riduce lo stress, migliora la salute e ristabilisce il tuo equilibrio interiore."
+    },
+    {
+      "title": "Irfanuruchi/Nanbeige4.2-3B-CE-v1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Irfanuruchi/Nanbeige4.2-3B-CE-v1.0-GGUF",
+      "snippet": "Nanbeige4.2-3B-CE v1.0 is the best validated release checkpoint selected during development, but it is not claimed to be perfect. Some known precision/factual weaknesses remain in difficult systems questions."
+    },
+    {
+      "title": "Riflessologia plantare: punti, benefici, controindicazioni - Cure ...",
+      "url": "https://www.cure-naturali.it/enciclopedia-naturale/terapie-naturali/benessere/riflessologia-plantare.html",
+      "snippet": "La riflessologia plantareè una tecnica che sfrutta la sollecitazione di aree specifiche del piede per ristabilire l'equilibrio del corpo. Utile …"
+    },
+    {
+      "title": "README.md · Nanbeige/Nanbeige4.2-3B at main - Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B/blob/main/README.md",
+      "snippet": "The results demonstrate that Nanbeige4.2-3B delivers strong performance well beyond its parameter scale. With only 3B non-embedding parameters, it consistently outperforms larger models, including Qwen3.5-9B and Gemma4-12B, across general-agent, code-agent, and reasoning benchmarks, while remaining competitive on alignment tasks."
+    },
+    {
+      "title": "Riflessologia Plantare: Benefici, Punti e Mappa Completa",
+      "url": "https://www.biagiodeparolis.com/riflessologia-plantare-benefici-guida-completa/",
+      "snippet": "Scopri cos'è la riflessologia plantare, benefici scientifici, mappa dei punti riflessi e cosa può curare. Guida completa con tutte le info"
+    }
+  ]
+}

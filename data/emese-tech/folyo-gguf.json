@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "emese-tech/folyo-gguf",
+  "slug": "emese-tech-folyo-gguf",
+  "author": "emese-tech",
+  "url": "https://huggingface.co/emese-tech/folyo-gguf",
+  "created_at": "2026-09-07T09:55:06.000Z",
+  "updated_at": "2026-09-07T11:50:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "gguf",
+    "hungarian",
+    "emese",
+    "eurollm",
+    "instruct",
+    "chatml",
+    "llama.cpp",
+    "quantized",
+    "text-generation",
+    "hu",
+    "base_model:utter-project/EuroLLM-22B-2512",
+    "base_model:quantized:utter-project/EuroLLM-22B-2512",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22637328384,
+  "parameters_human": "22.64B",
+  "storage_bytes": 13658574752,
+  "storage_human": "13.7 GB",
+  "base_model": "utter-project/EuroLLM-22B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub CLI | Take GitHub to the command line",
+      "url": "https://cli.github.com/",
+      "snippet": "2 days ago · Take GitHub to the command line ghis GitHub on the command line. It brings pull requests, issues, and other GitHub …"
+    },
+    {
+      "title": "emese-tech/csermely-gguf · Hugging Face",
+      "url": "https://huggingface.co/emese-tech/csermely-gguf",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ruvnet/ruflo: The original agent meta-harness. Deploy ...",
+      "url": "https://github.com/ruvnet/ruflo",
+      "snippet": "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational …"
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "GGUF is a modern file format for storing models optimized for efficient inference, particularly on consumer-grade hardware. This makes it easier for researchers, developers, and hobbyists to experiment with and deploy large language models."
+    },
+    {
+      "title": "GitHub - nexu-io/open-design: Best DeepSeek Harness Design Plugin ...",
+      "url": "https://github.com/nexu-io/open-design",
+      "snippet": "May 28, 2026 · 🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ …"
+    }
+  ]
+}

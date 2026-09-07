@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM5-2B",
+  "slug": "openbmb-minicpm5-2b",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+  "created_at": "2026-09-06T11:12:19.000Z",
+  "updated_at": "2026-09-07T07:20:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 130,
+  "downloads_30d": 13,
+  "trending_score": 123,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557096,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Brasil",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "MiniCPM5 - a openbmb Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/openbmb/minicpm5",
+      "snippet": "A SOTA 1B on-device LLM, small yet powerful."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-1B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-1B",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA."
+    },
+    {
+      "title": "Essential '90s R&B",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
+      "snippet": "Playlist • YouTube Music"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "malaiwah/qwen3-5-tiny-random-gguf-q8_0-format",
+  "slug": "malaiwah-qwen3-5-tiny-random-gguf-q8_0-format",
+  "author": "malaiwah",
+  "url": "https://huggingface.co/malaiwah/qwen3-5-tiny-random-gguf-q8_0-format",
+  "created_at": "2026-09-07T17:19:42.000Z",
+  "updated_at": "2026-09-07T19:08:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "qfs",
+    "fixture",
+    "random-init",
+    "cpu",
+    "reproducibility",
+    "format-fixture",
+    "rtn",
+    "optimizer-not-run",
+    "matched-weight-family",
+    "base_model:malaiwah/qwen3-5-gguf-tiny-random-bf16",
+    "base_model:quantized:malaiwah/qwen3-5-gguf-tiny-random-bf16",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 246612,
+  "parameters_human": "246612",
+  "storage_bytes": 278528,
+  "storage_human": "278528 B",
+  "base_model": "malaiwah/qwen3-5-gguf-tiny-random-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HISTORY TV Schedule | HISTORY Channel",
+      "url": "https://www.history.com/schedule",
+      "snippet": "5 days ago · Check the HISTORY Channel show schedule and find out when your favorite shows are airing. Find cast bios, videos, …"
+    },
+    {
+      "title": "malaiwah/qfs-qwen-gguf-tiny-cpu-format-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/malaiwah/qfs-qwen-gguf-tiny-cpu-format-v1",
+      "snippet": "Complete tiny random FORMAT fixture evidence. Round-to-nearest (RTN) storage/reader exercise only; optimizer-not-run. No GPTQ/AWQ/AutoRound optimization, calibrated ModelOpt/CT/QAT quality, trained-model quality ranking, GPU parity, or native serving-kernel correctness claim."
+    },
+    {
+      "title": "This Day in HISTORY Daily Briefing",
+      "url": "https://www.history.com/this-day-in-history-daily-briefing",
+      "snippet": "History happens every day! Check in with your virtual assistant or wherever you get your podcasts to find out about the historical …"
+    },
+    {
+      "title": "malaiwah/qwen3-5-tiny-cpu-repro-v1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/malaiwah/qwen3-5-tiny-cpu-repro-v1",
+      "snippet": "Evidence and limitations Reproduce locally Qwen3.5 tiny native random CPU fixture Complete randomly initialized, untrained Qwen3_5ForConditionalGenerationcheckpoint. No upstream model weights or training data were used. No paid GPU/cloud compute. Architecture and lineage Architecture lineage: Qwen/Qwen3.8-27B at ..."
+    },
+    {
+      "title": "日別番組表 | ヒストリーチャンネル - History",
+      "url": "https://jp.history.com/timetable/",
+      "snippet": "ヒストリーチャンネルは、上質な番組を放送する世界最大で日本唯一の歴史＆エンターテインメント専門チャンネルです。"
+    }
+  ]
+}

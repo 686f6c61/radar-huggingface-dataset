@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM5-2B-Midtrain",
+  "slug": "openbmb-minicpm5-2b-midtrain",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM5-2B-Midtrain",
+  "created_at": "2026-09-01T06:21:58.000Z",
+  "updated_at": "2026-09-07T07:32:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 1,
+  "trending_score": 8,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557128,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Importer les mails de la messagerie Orange dans un logiciel de …",
+      "url": "https://communaute.orange.fr/t5/Trucs-et-astuces/Importer-les-mails-de-la-messagerie-Orange-dans-un-logiciel-de/ta-p/307479",
+      "snippet": "Jul 30, 2014 · Article rédigé par Vous souhaitez importer et sauvegarder des dossiers de votre messagerie Orange (ou autre FAI) …"
+    },
+    {
+      "title": "OpenBMB releases MiniCPM5-2B | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/articles/openbmb-releases-minicpm5-2b",
+      "snippet": "OpenBMB is the open-source AI group behind the MiniCPM series of efficient small models. MiniCPM5-2B is a 2.6B parameter dense reasoning model with text input and output, released under Apache 2.0."
+    },
+    {
+      "title": "Vider sa messagerie quelques clics - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Trucs-et-astuces/Vider-sa-messagerie-quelques-clics/ta-p/302787",
+      "snippet": "Jul 25, 2014 · Article rédigé par Vous vous êtes laissé déborder et votre messagerie foisonne d’e-mails inutiles que vous souhaiteriez …"
+    }
+  ]
+}

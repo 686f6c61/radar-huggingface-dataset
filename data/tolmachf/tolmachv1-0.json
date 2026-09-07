@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "tolmachf/tolmachv1.0",
+  "slug": "tolmachf-tolmachv1-0",
+  "author": "tolmachf",
+  "url": "https://huggingface.co/tolmachf/tolmachv1.0",
+  "created_at": "2026-09-07T18:01:14.000Z",
+  "updated_at": "2026-09-07T18:18:57.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "ielts",
+    "essay-scoring",
+    "automated-essay-scoring",
+    "text-scoring",
+    "regression",
+    "education",
+    "text-classification",
+    "en",
+    "dataset:ndtran0101/writing9-ielts-essays",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 596129634,
+  "storage_human": "596 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "IELTS Writing Task 2 band scoring",
+      "dataset": "writing9-ielts-essays (held-out split, 6000 essays)",
+      "metric": "MAE (Overall band)",
+      "value": 0.658
+    },
+    {
+      "task": "IELTS Writing Task 2 band scoring",
+      "dataset": "writing9-ielts-essays (held-out split, 6000 essays)",
+      "metric": "Pearson r (Overall band)",
+      "value": 0.772
+    }
+  ],
+  "sources": [
+    {
+      "title": "500 en chiffres romains : comment écrire - Chiffre Romain",
+      "url": "https://www.chiffre-romain.com/500-en-chiffres-romains",
+      "snippet": "Apprenez à écrire le nombre 500 en chiffres romains. Ecrire le chiffre romain 500 facilement."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Chiffre Romain : convertisseur chiffres romains, date, traduction",
+      "url": "https://www.chiffre-romain.com/",
+      "snippet": "Sur Chiffre-Romain.com apprenez facilement à écrire vos chiffres ou vos nombres en chiffres romains ou grâce à la numération …"
+    },
+    {
+      "title": "Home · modelindex.dev",
+      "url": "https://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    },
+    {
+      "title": "1500 en chiffres romains : comment écrire ? - Chiffre Romain",
+      "url": "https://www.chiffre-romain.com/1500-en-chiffres-romains",
+      "snippet": "Sur Chiffre-Romain.com apprenez facilement à écrire vos chiffres ou vos nombres en chiffres romains ou grâce à la numération …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "manojpaul9986/qwen-1.5b-sft",
+  "slug": "manojpaul9986-qwen-1-5b-sft",
+  "author": "manojpaul9986",
+  "url": "https://huggingface.co/manojpaul9986/qwen-1.5b-sft",
+  "created_at": "2026-09-07T09:50:04.000Z",
+  "updated_at": "2026-09-07T09:51:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/qwen2.5-1.5b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parent Online System for Oasis International School - Oasis de Maadi",
+      "url": "https://parent.oasisdemaadi.com/parent_login_e.aspx",
+      "snippet": "Parent Online System for Oasis International School . Log In. Need help? support@oasisdemaadi.com . Forgot Username or Password."
+    },
+    {
+      "title": "morganstanley/qqWen-1.5B-SFT · Hugging Face",
+      "url": "https://huggingface.co/morganstanley/qqWen-1.5B-SFT",
+      "snippet": "Model Overview qqWen-1.5B-SFT is a 1.5-billion parameter language model specifically designed for advanced reasoning and code generation in the Q programming language. Built upon the robust Qwen 2.5 architecture, this model has undergone a comprehensive two-stage training process: pretraining and supervised fine-tuning (SFT), for the Q programming language."
+    },
+    {
+      "title": "Home - Ecole Oasis Internationale",
+      "url": "https://en.ecoleoasisinternationale.com/",
+      "snippet": "As part of our educational and linguistic approach, the Oasis International School offers its learners the chance to participate in major …"
+    },
+    {
+      "title": "README.md · morganstanley/qqWen-1.5B-SFT at main - Hugging Face",
+      "url": "https://huggingface.co/morganstanley/qqWen-1.5B-SFT/blob/main/README.md",
+      "snippet": "Model Overview qqWen-1.5B-SFT is a 1.5-billion parameter language model specifically designed for advanced reasoning and code generation in the Q programming language. Built upon the robust Qwen 2.5 architecture, this model has undergone a comprehensive two-stage training process: pretraining and supervised fine-tuning (SFT), for the Q programming language."
+    },
+    {
+      "title": "System Parent OnLine For Oasis International School - Oasis de Maadi",
+      "url": "https://parent.oasisdemaadi.com/default_parent_e.aspx",
+      "snippet": "System Parent OnLine For Oasis International School Bienvenue, Logout"
+    }
+  ]
+}

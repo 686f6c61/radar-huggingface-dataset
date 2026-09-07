@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "qing-zhuo/ppo-LunarLander-v3",
+  "slug": "qing-zhuo-ppo-lunarlander-v3",
+  "author": "qing-zhuo",
+  "url": "https://huggingface.co/qing-zhuo/ppo-LunarLander-v3",
+  "created_at": "2026-09-07T13:22:16.000Z",
+  "updated_at": "2026-09-07T13:22:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283499,
+  "storage_human": "283499 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "yuq-zhou/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/yuq-zhou/ppo-LunarLander-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GMX Login - ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Rufen Sie im Browser Ihres internetfähigen Mobilgerätes einfach www.gmx.net auf und tippen Sie das Briefsymbol in der Kopfleiste …"
+    },
+    {
+      "title": "modeliqi/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/modeliqi/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v3 This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "Domain verwalten",
+      "url": "https://dv.gmx.net/",
+      "snippet": ""
+    }
+  ]
+}

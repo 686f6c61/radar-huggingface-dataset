@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kovach-Enterprises/hyperneat-r8-compressor",
+  "slug": "kovach-enterprises-hyperneat-r8-compressor",
+  "author": "Kovach-Enterprises",
+  "url": "https://huggingface.co/Kovach-Enterprises/hyperneat-r8-compressor",
+  "created_at": "2026-09-07T13:19:16.000Z",
+  "updated_at": "2026-09-07T13:24:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "hyperneat",
+    "r8",
+    "android",
+    "compression",
+    "neuroevolution",
+    "genesis-conductor",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bouygues Telecom - Espace client",
+      "url": "https://www.bouyguestelecom.fr/mon-compte/dashboard/messagerie?msockid=3208266a279a65b82e7631a7265c6456",
+      "snippet": "Sur votre espace client Bouygues Telecom, consultez en quelques clics vos consommations, vos factures et vos paiements, votre …"
+    },
+    {
+      "title": "HyperNEAT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HyperNEAT",
+      "snippet": "Toggle the table of contents HyperNEAT"
+    },
+    {
+      "title": "Se connecter - Bouygues Telecom",
+      "url": "https://www.assistance.bouyguestelecom.fr/login/",
+      "snippet": "Accédez à votre compte Bouygues Telecom en vous connectant pour gérer vos services, consulter vos factures et suivre votre …"
+    },
+    {
+      "title": "GitHub - MisterTea/HyperNEAT: The original implementation of HyperNEAT ...",
+      "url": "https://github.com/MisterTea/HyperNEAT",
+      "snippet": "The original implementation of HyperNEAT in C++. Contribute to MisterTea/HyperNEAT development by creating an account on GitHub."
+    },
+    {
+      "title": "Comment accéder à mon espace client ? - Assistance Bouygues Telecom",
+      "url": "https://www.assistance.bouyguestelecom.fr/s/article/acces-compte-espace-client",
+      "snippet": "Accédez à votre espace client Bouygues Telecom pour gérer vos services, consulter vos factures et trouver des solutions d'assistance."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "malaiwah/glm-moe-dsa-tiny-random-q8_0-rtn-format",
+  "slug": "malaiwah-glm-moe-dsa-tiny-random-q8_0-rtn-format",
+  "author": "malaiwah",
+  "url": "https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-q8_0-rtn-format",
+  "created_at": "2026-09-07T17:02:08.000Z",
+  "updated_at": "2026-09-07T19:08:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "glm_moe_dsa",
+    "qfs",
+    "fixture",
+    "random-init",
+    "cpu",
+    "reproducibility",
+    "format-fixture",
+    "rtn",
+    "optimizer-not-run",
+    "matched-weight-family",
+    "base_model:malaiwah/glm-moe-dsa-tiny-random-bf16",
+    "base_model:quantized:malaiwah/glm-moe-dsa-tiny-random-bf16",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284568,
+  "parameters_human": "284568",
+  "storage_bytes": 321696,
+  "storage_human": "321696 B",
+  "base_model": "malaiwah/glm-moe-dsa-tiny-random-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Electronic Records Storage for Closed Medical Practices | Cariend",
+      "url": "https://www.cariend.com/electronic-records-storage-for-closed-medical-practices/",
+      "snippet": "Jul 18, 2024 · Cariend offers advice on finding electronic records storage for closed medical practices. Our secure custodial records …"
+    },
+    {
+      "title": "malaiwah/glm-moe-dsa-tiny-random-bf16 · Hugging Face",
+      "url": "https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-bf16",
+      "snippet": "Instructions to use malaiwah/glm-moe-dsa-tiny-random-bf16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "HIPAA Compliance After Closure | Cariend",
+      "url": "https://www.cariend.com/understanding-hipaa-after-facility-closure-what-remains-in-force/",
+      "snippet": "Nov 12, 2025 · Cariend maintains HIPAA-compliant storage facilities designed specifically for healthcare records. Our secure …"
+    },
+    {
+      "title": "malaiwah/glm-moe-dsa-tiny-cpu-repro-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/malaiwah/glm-moe-dsa-tiny-cpu-repro-v1",
+      "snippet": "1 Total file size: 392 kB Models trained or fine-tuned on malaiwah/glm-moe-dsa-tiny-cpu-repro-v1 malaiwah/glm-moe-dsa-tiny-random-bf16 Text Generation •278k•Updated about 6 hours ago Collection including malaiwah/glm-moe-dsa-tiny-cpu-repro-v1"
+    },
+    {
+      "title": "Transferring Patient Health Records During a Practice Closure or Sale",
+      "url": "https://medprodental.com/practice-more-safely/transferring-patient-health-records",
+      "snippet": "Jan 7, 2026 · To comply with HIPAA’s record retention requirements, some practitioners who are selling or closing their practices …"
+    }
+  ]
+}

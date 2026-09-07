@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/WorldReward-qwen38-27b-GGUF",
+  "slug": "mradermacher-worldreward-qwen38-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WorldReward-qwen38-27b-GGUF",
+  "created_at": "2026-09-07T13:28:41.000Z",
+  "updated_at": "2026-09-07T13:37:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reward-model",
+    "world-model",
+    "video-generation",
+    "camera-control",
+    "en",
+    "base_model:CodeGoat24/WorldReward-qwen38-27b",
+    "base_model:quantized:CodeGoat24/WorldReward-qwen38-27b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 78533130752,
+  "storage_human": "78.5 GB",
+  "base_model": "CodeGoat24/WorldReward-qwen38-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE 10 BEST Hotels in Boston, MA 2026 (from $124) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotels-g60745-Boston_Massachusetts-Hotels.html",
+      "snippet": "View deals from $124 per night, see photos and read reviews for the best Boston hotels from travelers like you - then compare …"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-full-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-full-Uncensored-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "10 Best Boston Hotels, United States (From $159) - Booking.com",
+      "url": "https://www.booking.com/city/us/boston.html?msockid=103cfc873b0b65cf3107eb4a3aad64fe",
+      "snippet": "6 days ago · Great savings on hotels in Boston, United States online. Good availability and great rates. Read hotel reviews and …"
+    },
+    {
+      "title": "mradermacher/WorldReward-qwen35-9b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/WorldReward-qwen35-9b-i1-GGUF",
+      "snippet": "mradermacher / WorldReward-qwen35-9b-i1-GGUF like 0 Transformers GGUF English reward-model world-model video-generation camera-control imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "16 Best Hotels in Boston. Hotels from $102/night - KAYAK",
+      "url": "https://www.kayak.com/Boston-Hotels.25588.hotel.ksp?msockid=103cfc873b0b65cf3107eb4a3aad64fe",
+      "snippet": "If you love modern, chic hotels, The Four Seasons One Dalton is one of the top boutique hotels in Boston. Its location at the heart of …"
+    }
+  ]
+}

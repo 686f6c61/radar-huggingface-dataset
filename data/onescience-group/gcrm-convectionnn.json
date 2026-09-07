@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/GCRM-ConvectionNN",
+  "slug": "onescience-group-gcrm-convectionnn",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/GCRM-ConvectionNN",
+  "created_at": "2026-09-07T09:56:54.000Z",
+  "updated_at": "2026-09-07T09:56:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gcrm_convection_nn",
+    "OneScience",
+    "Earth Science",
+    "Convection Parameterization",
+    "Neural Network",
+    "Stability Diagnosis",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "Connection fecebook - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36078047-connection-fecebook",
+      "snippet": "Jun 16, 2019 · Meilleure réponse: Bonsoir, vous parlez de facebook sur ordinateur ? ou sur 1 autre support ? Pour se connecter à …"
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/datasets",
+      "snippet": "AI & ML interests OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire workflow, including engineering planning, data preprocessing, professional code generation, and HPC software library calls, simply through natural language interaction, significantly ..."
+    },
+    {
+      "title": "Cómo registrarse en Facebook y configurar un nuevo perfil - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2892-crear-una-cuenta-de-facebook/",
+      "snippet": "Jun 22, 2022 · Para utilizar Facebook es necesario registrarte antes y crear una cuenta personal en la red social. El procedimiento es …"
+    }
+  ]
+}

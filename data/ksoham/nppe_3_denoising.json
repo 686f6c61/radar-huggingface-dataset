@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "KSoham/nppe_3_denoising",
+  "slug": "ksoham-nppe_3_denoising",
+  "author": "KSoham",
+  "url": "https://huggingface.co/KSoham/nppe_3_denoising",
+  "created_at": "2026-09-07T17:33:14.000Z",
+  "updated_at": "2026-09-07T17:59:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "super-resolution",
+    "denoising",
+    "pytorch",
+    "rrdbnet",
+    "esrgan",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67038095,
+  "storage_human": "67 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "data- The range of cells to perform the query on. Each column of datacan only hold boolean, numeric (including date/time types) or …"
+    },
+    {
+      "title": "aishy26/nppe_3_model · Hugging Face",
+      "url": "https://huggingface.co/aishy26/nppe_3_model",
+      "snippet": "Low-Light Denoising + 4x Super-Resolution RRDBNet (Real-ESRGAN generator architecture), fine-tuned from Real-ESRGAN's pretrained RealESRGAN_x4plusweights on paired low-light noisy/clean image data. Trained with Charbonnier + SSIM pixel loss only — no adversarial or perceptual loss — since the goal is pixel-accurate reconstruction (PSNR), not hallucinated texture."
+    },
+    {
+      "title": "QUERY - Cправка - Редакторы Google Документов",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ru",
+      "snippet": "Google Таблицы Использование функций и формул QUERY QUERY Выполняет запросы на базе языка запросов API …"
+    },
+    {
+      "title": "jagannath-r/dlp-nppe3-denoise-sr · Hugging Face",
+      "url": "https://huggingface.co/jagannath-r/dlp-nppe3-denoise-sr",
+      "snippet": "DLP NPPE-3: Low-Light Denoising + 4x Super-Resolution DLP NPPE-3: Low-Light Denoising + 4x Super-Resolution Residual CNN with PixelShuffle upsampling. Takes a 256x160 noisy low-light RGB image and outputs a 1024x640 denoised, super-resolved RGB image (4x upsampling in each dimension)."
+    },
+    {
+      "title": "Função QUERY - Editores do Google Docs Ajuda",
+      "url": "https://support.google.com/docs/answer/3093343?hl=pt",
+      "snippet": "Google Sheets Utilize funções e fórmulas Função QUERY Função QUERY Executa Idioma de Consulta da API de Visualização do …"
+    }
+  ]
+}

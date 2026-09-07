@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "425GMM/llama-3.2-3b-qlora-aslg-gloss",
+  "slug": "425gmm-llama-3-2-3b-qlora-aslg-gloss",
+  "author": "425GMM",
+  "url": "https://huggingface.co/425GMM/llama-3.2-3b-qlora-aslg-gloss",
+  "created_at": "2026-09-07T15:50:21.000Z",
+  "updated_at": "2026-09-07T16:01:38.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "sign-language",
+    "asl",
+    "gloss",
+    "translation",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:achrafothman/aslg_pc12",
+    "base_model:unsloth/Llama-3.2-3B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114517464,
+  "storage_human": "115 MB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online-Banking - Sparkasse.de - Sparkasse: Produkte und ...",
+      "url": "https://www.sparkasse.de/unsere-loesungen/privatkunden/rund-ums-konto/online-banking.html",
+      "snippet": "Beim Online-Banking haben Sie mit einem Klick Ihre Finanzen im Griff. Mit dem komfortablen Online-Banking haben Sie schnellen …"
+    },
+    {
+      "title": "Diving into Generative AI — Mini Learning Project 2: Fine-Tuning LLama-3 Using QLoRA | by Gaurav Shrivastav | Medium",
+      "url": "https://medium.com/@gaurav21s/diving-into-generative-ai-mini-learning-project-2-fine-tuning-llama-3-using-qlora-a8206a72284c",
+      "snippet": "Welcome back to the Diving into Generative AI series! In this mini-learning project, we’ll take a deep dive into fine-tuning a Llama-3…"
+    },
+    {
+      "title": "Llama 3 Guide: Every Size from 1B to 405B | InsiderLLM",
+      "url": "https://insiderllm.com/guides/llama-3-guide-every-size/",
+      "snippet": "Complete Llama 3 guide covering every model from 1B to 405B. VRAM requirements, Ollama setup, benchmarks vs Qwen 3, and which size fits your hardware."
+    },
+    {
+      "title": "Sparkasse Online-Banking | Internet-Banking | Sparkasse.de",
+      "url": "https://www.sparkasse.de/pk/produkte/konten-und-karten/banking.html",
+      "snippet": "Im Online-Banking Ihrer Sparkasse haben Sie jederzeit Zugriff auf Ihre Finanzen, können Ihren Kontostand einsehen, …"
+    },
+    {
+      "title": "meta-llama/Llama-3.2-3B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B",
+      "snippet": "Instructions to use meta-llama/Llama-3.2-3B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

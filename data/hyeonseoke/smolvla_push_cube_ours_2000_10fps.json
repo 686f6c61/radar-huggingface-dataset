@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_push_cube_ours_2000_10fps",
+  "slug": "hyeonseoke-smolvla_push_cube_ours_2000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_push_cube_ours_2000_10fps",
+  "created_at": "2026-09-07T17:16:06.000Z",
+  "updated_at": "2026-09-07T17:24:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:HyeonseokE/push_cube_ours_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gratis Foto en Video montage maken Tool | Canva",
+      "url": "https://www.canva.com/nl_nl/maken/video-montage/?msockid=36da1edec3b16a4529330913c25a6b4d",
+      "snippet": "Laat je mooiste momenten zien met Canva's gratis foto- en video montage maker. Combineer afbeeldingen, clips en muziek in één …"
+    },
+    {
+      "title": "smolvla_push_cube_cap_2000_10fps - Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_push_cube_cap_2000_10fps",
+      "snippet": "HyeonseokE/push_cube_cap_10fps ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "Maak gratis online fotovideo’s | Adobe Express",
+      "url": "https://www.adobe.com/nl/express/create/video/photo?msockid=36da1edec3b16a4529330913c25a6b4d",
+      "snippet": "Onze online video-editor is voor altijd gratis te gebruiken en iedereen maakt eenvoudig en snel een prachtige fotovideo, ongeacht …"
+    },
+    {
+      "title": "HyeonseokE/smolvla_push_cube_cap_3000_10fps at main",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_push_cube_cap_3000_10fps/tree/main",
+      "snippet": "Instructions to use HyeonseokE/smolvla_push_cube_cap_3000_10fps with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Montage Maker: Video, Foto's, & Muziek (Slepen & Neerzetten)",
+      "url": "https://www.kapwing.com/nl/tools/make/video/montage",
+      "snippet": "Maak een video-montage van videoclips, foto's en muziek. Met makkelijke sleep-en-plak bewerkingen, maak montages snel …"
+    }
+  ]
+}

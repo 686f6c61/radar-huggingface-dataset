@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "eshanized/M31Genesis",
+  "slug": "eshanized-m31genesis",
+  "author": "eshanized",
+  "url": "https://huggingface.co/eshanized/M31Genesis",
+  "created_at": "2026-09-07T13:01:09.000Z",
+  "updated_at": "2026-09-07T14:22:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "m31",
+    "code",
+    "coding",
+    "agentic-coding",
+    "causal-language-model",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grace Park - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Grace_Park",
+      "snippet": "sposta nella barra lateralenascondi. Inizio. 1Biografia. 2Filmografia. Attiva/disattiva la sottosezione Filmografia. 2.1Cinema. …"
+    },
+    {
+      "title": "GitHub - eshanized/M31A: The terminal-native AI coding agent that ships ...",
+      "url": "https://github.com/eshanized/M31A",
+      "snippet": "The terminal-native AI coding agent that ships, not just suggests. Six-phase workflow, git rollback chain, zero telemetry. One static binary. - eshanized/M31A"
+    },
+    {
+      "title": "Grace (@gracepark_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/gracepark_/",
+      "snippet": "3.9K+ followers · 1.2K+ following. See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    },
+    {
+      "title": "Releases · eshanized/M31A · GitHub",
+      "url": "https://github.com/eshanized/M31A/releases",
+      "snippet": "The terminal-native AI coding agent that ships, not just suggests. Six-phase workflow, git rollback chain, zero telemetry. One static binary. - eshanized/M31A"
+    },
+    {
+      "title": "Grace Park biografia - ComingSoon.it",
+      "url": "https://www.comingsoon.it/personaggi/grace-park/235133/biografia/",
+      "snippet": "Qui puoi conoscere la carriera e le curiosità sulla vita privata di Grace Park, leggere le notizie più recenti, trovare tutti i premi vinti e …"
+    }
+  ]
+}

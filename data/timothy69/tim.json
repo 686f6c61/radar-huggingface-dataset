@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Timothy69/Tim",
+  "slug": "timothy69-tim",
+  "author": "Timothy69",
+  "url": "https://huggingface.co/Timothy69/Tim",
+  "created_at": "2026-09-07T09:56:38.000Z",
+  "updated_at": "2026-09-07T09:56:38.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haber, Haberler, Son Dakika Haberler",
+      "url": "https://www.internethaber.com/",
+      "snippet": "Türkiye'den haberler internet haber sitesinde. Son dakika haberleri internethaber.com'da okuyabilir sondakika dünya haberi ve spor, …"
+    },
+    {
+      "title": "Timothy Model, Ph.D. | Data Scientist",
+      "url": "https://timothymodel.com/",
+      "snippet": "I have shared my expertise on a variety of subjects, including data science, data visualization, public health, Russian politics, corruption, and protest politics, with international news outlets, think tanks, academic audiences, and as an expert witness."
+    },
+    {
+      "title": "İnternet Haber » Haberler",
+      "url": "https://www.internethaber.com/haberler",
+      "snippet": "Haber, Türkiye ve dünya gündemine dair tüm haberler ve son dakika gelişmeleri için İnternet Haber » Haberler sayfasını takip edin."
+    },
+    {
+      "title": "Timothy69 · GitHub",
+      "url": "https://github.com/Timothy69",
+      "snippet": "Timothy69 has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "İnternet Haber - İnternet Haberleri - Haberler",
+      "url": "https://www.haberler.com/internet/",
+      "snippet": "İnternet haberleri, son dakika İnternet haber ve gelişmeleri burada. KPSS lisans sonuçları ne zaman açıklanacak 7 Ekim 2026’da …"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "bonalai/Qwen2.5-Coder-32B-Instruct",
+  "slug": "bonalai-qwen2-5-coder-32b-instruct",
+  "author": "bonalai",
+  "url": "https://huggingface.co/bonalai/Qwen2.5-Coder-32B-Instruct",
+  "created_at": "2026-09-07T14:50:52.000Z",
+  "updated_at": "2026-09-07T14:50:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "conversational",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-32B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-32B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65527841688,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anodisation noire : Processus, types et guide des tolérances",
+      "url": "https://www.rapid-protos.com/fr/black-anodizing-process/",
+      "snippet": "Apr 2, 2026 · L'anodisation noire est un traitement de surface électrochimique qui transforme la surface de l'aluminium en une …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-32B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+      "snippet": "Instructions to use Qwen/Qwen2.5-Coder-32B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Noircir l’aluminium : techniques possibles - stocks-industriels.fr",
+      "url": "https://www.stocks-industriels.fr/noircir-laluminium-techniques-possibles/",
+      "snippet": "Pour des pièces électroniques, la finesse des couches de conversion noires et leur conductivité restent souvent sans équivalent, …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-32B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use Qwen/Qwen2.5-Coder-32B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Qwen/Qwen2.5-Coder-32B with Transformers:"
+    },
+    {
+      "title": "Oxydation Anodique Sulfurique - OAS - Kerbirio - Spécialiste de ...",
+      "url": "https://www.kerbirio.fr/oxydation-anodique-sulfurique-oas/",
+      "snippet": "Cette méthode permet de créer une surface durable, résistante à la corrosion et esthétiquement agréable, avec la possibilité d’ajouter …"
+    }
+  ]
+}

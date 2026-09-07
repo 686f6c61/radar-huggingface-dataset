@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jackwang111/M2RL-RL_Coding",
+  "slug": "jackwang111-m2rl-rl_coding",
+  "author": "Jackwang111",
+  "url": "https://huggingface.co/Jackwang111/M2RL-RL_Coding",
+  "created_at": "2026-09-07T12:59:11.000Z",
+  "updated_at": "2026-09-07T14:12:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404526,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حفظ حالات الواتس اب تطبيق تنزيل حالات واتس - منتدى تطبيقات Google",
+      "url": "https://support.google.com/googleplay/thread/52335495/%D8%AD%D9%81%D8%B8-%D8%AD%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%A7%D8%AA%D8%B3-%D8%A7%D8%A8-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%AA%D9%86%D8%B2%D9%8A%D9%84-%D8%AD%D8%A7%D9%84%D8%A7%D8%AA-%D9%88%D8%A7%D8%AA%D8%B3?hl=ar",
+      "snippet": "محتوى المساعدة والمعلومات هذهتجربة مركز المساعدة العامة بحث"
+    },
+    {
+      "title": "GitHub - Mosi-AI/M2RL",
+      "url": "https://github.com/Mosi-AI/M2RL",
+      "snippet": "Mixed multi-task RLVR achieves comparable performance with separate RLVR followed by model merging, while using only 33.2% of GPU hours. Cross-domain RLVR shows minimal interference; reasoning-intensive domains (math, coding, science) exhibit strong synergistic effects."
+    },
+    {
+      "title": "تنزيل تطبيق Google Meet - Android - مساعدة Google Meet",
+      "url": "https://support.google.com/meet/answer/12387350?hl=ar&co=GENIE.Platform%3DAndroid",
+      "snippet": "باستخدام تطبيق Google Meet، يمكنك إجراء ما يلي: يمكنك إنشاء اجتماعات Google Meet مُجدوَلة أو فورية مشفّرة على السحابة الإلكترونية أو الانضمام إليها باستخدام رابط. يمكنك …"
+    },
+    {
+      "title": "M2RL/M2RL at main · Mosi-AI/M2RL · GitHub",
+      "url": "https://github.com/Mosi-AI/M2RL/tree/main/M2RL",
+      "snippet": "Contribute to Mosi-AI/M2RL development by creating an account on GitHub."
+    },
+    {
+      "title": "Ayuda de Google One",
+      "url": "https://support.google.com/googleone/?hl=es",
+      "snippet": "Centro de asistencia oficial de Google One donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    }
+  ]
+}

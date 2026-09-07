@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Richard-ZZZZZ/robotwin-bihub-joint-wam-v3-step2000",
+  "slug": "richard-zzzzz-robotwin-bihub-joint-wam-v3-step2000",
+  "author": "Richard-ZZZZZ",
+  "url": "https://huggingface.co/Richard-ZZZZZ/robotwin-bihub-joint-wam-v3-step2000",
+  "created_at": "2026-09-07T15:05:21.000Z",
+  "updated_at": "2026-09-07T15:08:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "world-model",
+    "action-head",
+    "robotwin",
+    "wam",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22526706362,
+  "storage_human": "22.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Or, exploitation aurifère - questions et réponses - Sauvons la Forêt",
+      "url": "https://www.sauvonslaforet.org/themes/or/questions-et-reponses",
+      "snippet": "À ce jour, l’or est généralement exploité dans d’immenses mines à ciel ouvert. Une mine d’or est une usine chimique au milieu de la …"
+    },
+    {
+      "title": "RoboTwin 2.0",
+      "url": "https://robotwin-platform.github.io/",
+      "snippet": "RoboTwin 2.0 is a scalable framework for data generation and benchmarking in bimanual robotic manipulation. It integrates an expert data generation pipeline and a 50-task benchmark built on the RoboTwin Object Dataset (731 objects, 147 categories). A multimodal language model agent enables automatic task program synthesis, while flexible dual-arm configurations facilitate scalable and diverse ..."
+    },
+    {
+      "title": "Or - exploitation aurifère et son impact sur l’environnement",
+      "url": "https://www.sauvonslaforet.org/themes/or",
+      "snippet": "Climat et forêt tropicale. La biodiversité. L'huile de palme. Les aires protégées. La forêt tropicale. Le bois tropical. Les biocarburants. …"
+    },
+    {
+      "title": "GitHub - RoboTwin-Platform/RoboTwin: [ICML 2026] RoboTwin 2.0 Offical ...",
+      "url": "https://github.com/robotwin-Platform/robotwin",
+      "snippet": "[ICML 2026] RoboTwin 2.0 Offical Code Repo. Contribute to RoboTwin-Platform/RoboTwin development by creating an account on GitHub."
+    },
+    {
+      "title": "Effets de l'extraction de l'or sur l'environnement - Science",
+      "url": "https://fr.scienceaq.com/Geology/100110285.html",
+      "snippet": "L'extraction d'une once d'or dans le minerai peut entraîner 20 tonnes de déchets solides et une importante contamination par le …"
+    }
+  ]
+}

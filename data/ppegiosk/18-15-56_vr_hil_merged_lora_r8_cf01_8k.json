@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ppegiosk/18-15-56_vr_hil_merged_lora_r8_cf01_8k",
+  "slug": "ppegiosk-18-15-56_vr_hil_merged_lora_r8_cf01_8k",
+  "author": "ppegiosk",
+  "url": "https://huggingface.co/ppegiosk/18-15-56_vr_hil_merged_lora_r8_cf01_8k",
+  "created_at": "2026-09-07T17:19:20.000Z",
+  "updated_at": "2026-09-07T17:19:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/567e64495fe3515f8b855e59d91f3971f65561ad",
+    "lora",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2602400,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何关闭edge浏览器对网站弹出窗口的拦截-百度经验",
+      "url": "https://jingyan.baidu.com/article/5970355206a3c7cec107405d.html",
+      "snippet": "Apr 16, 2020 · 如何关闭edge浏览器对网站弹出窗口的拦截,随着浏览器功能的逐渐增强，许多浏览器新增了对弹出窗口的拦截，但是很 …"
+    },
+    {
+      "title": "ppegiosk/vr_hil_merged_lora_r16_cf02 · Hugging Face",
+      "url": "https://huggingface.co/ppegiosk/vr_hil_merged_lora_r16_cf02",
+      "snippet": "Instructions to use ppegiosk/vr_hil_merged_lora_r16_cf02 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "电脑语音的时候别人能听到我电脑播放的声音，怎么能解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/327925166",
+      "snippet": "3.在级别中看是不是将麦克风加强拉满了（我是这样），调为24后（之前是+36db），对方表示听不到电脑内放声音"
+    },
+    {
+      "title": "ppegiosk (Paraskevas) - Hugging Face",
+      "url": "https://huggingface.co/ppegiosk",
+      "snippet": "Recent Activity updated a modelabout 5 hours ago ppegiosk/vr_hil_combined_30k_lora1 published a modelabout 5 hours ago ppegiosk/vr_hil_combined_30k_lora1 updated a modelabout 5 hours ago ppegiosk/vr_base_chunk50_30k View all activity"
+    },
+    {
+      "title": "seek girl怎么下载dlc? - 知乎",
+      "url": "https://www.zhihu.com/question/378812017",
+      "snippet": "DLC现在被硬锁区了，官方开通了discord社区。 里面有链接https://discord.gg/3YK9A2GEdS"
+    }
+  ]
+}

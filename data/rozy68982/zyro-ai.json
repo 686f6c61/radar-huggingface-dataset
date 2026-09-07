@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rozy68982/zyro-ai",
+  "slug": "rozy68982-zyro-ai",
+  "author": "rozy68982",
+  "url": "https://huggingface.co/rozy68982/zyro-ai",
+  "created_at": "2026-09-07T15:17:52.000Z",
+  "updated_at": "2026-09-07T15:20:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NCAA College Men's Basketball DI Standings | NCAA.com",
+      "url": "https://www.ncaa.com/standings/basketball-men/d1",
+      "snippet": "Apr 11, 2026 · Find the official NCAA Men's Basketball DI standings, filtered by Conference or Division."
+    },
+    {
+      "title": "rozy68982-alt · GitHub",
+      "url": "https://github.com/rozy68982-alt",
+      "snippet": "Joined Aug 2, 2026 Block or report rozy68982-alt Block user wings wings Public"
+    },
+    {
+      "title": "Men's College Basketball Standings, 2025-26 season - ESPN",
+      "url": "https://www.espn.com/mens-college-basketball/standings",
+      "snippet": "Visit ESPN for the complete 2025-26 NCAAM season standings. Includes league, conference and division standings for regular …"
+    },
+    {
+      "title": "Zyro AI – Your Smart Chat Assistant",
+      "url": "https://zentrixdev.github.io/Zyro-AI/",
+      "snippet": "Chat with Zyro AI – a fast, smart, and helpful chatbot powered by Zentrix."
+    },
+    {
+      "title": "NCAA College Standings | NCAA.com",
+      "url": "https://www.ncaa.com/standings/basketba",
+      "snippet": "NCAA.com is a part of Bleacher Report - Turner Sports Network, part of the Turner Sports and Entertainment Network."
+    }
+  ]
+}

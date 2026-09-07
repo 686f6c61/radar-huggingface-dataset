@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/LFM2.5-2.6B-heretic",
+  "slug": "experimentalmachines-lfm2-5-2-6b-heretic",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/LFM2.5-2.6B-heretic",
+  "created_at": "2026-09-07T13:17:54.000Z",
+  "updated_at": "2026-09-07T13:19:34.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "executorch",
+    "lfm2",
+    "text-generation",
+    "abliterated",
+    "heretic",
+    "xnnpack",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 7227225463,
+  "storage_human": "7.2 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lionel Messi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lionel_Messi",
+      "snippet": ""
+    },
+    {
+      "title": "heretic-org/LFM-2.5-2.6B-heretic · Hugging Face",
+      "url": "https://huggingface.co/heretic-org/LFM-2.5-2.6B-heretic",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "r/LocalLLaMA on Reddit: LFM2.5-2.6B is out",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfh1sn/lfm2526b_is_out/",
+      "snippet": ""
+    },
+    {
+      "title": "LFM2.5-2.6B: On-Device Agent Model (2026) | explainx.ai Blog | explainx.ai",
+      "url": "https://explainx.ai/blog/liquid-ai-lfm2-5-2-6b-on-device-agents-august-2026",
+      "snippet": "LFM2.5-2.6B is the flagship of ... philosophy, but built to actually contest benchmark leaderboards against multi-billion-parameter general-purpose models rather than just fitting the smallest possible footprint...."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    }
+  ]
+}

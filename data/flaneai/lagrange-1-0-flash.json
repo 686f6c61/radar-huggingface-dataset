@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "FlaneAI/LaGrange-1.0-Flash",
+  "slug": "flaneai-lagrange-1-0-flash",
+  "author": "FlaneAI",
+  "url": "https://huggingface.co/FlaneAI/LaGrange-1.0-Flash",
+  "created_at": "2026-06-30T16:34:36.000Z",
+  "updated_at": "2026-09-07T11:10:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lagrange_flash",
+    "feature-extraction",
+    "custom-code",
+    "mathematics",
+    "physics",
+    "mechanistic-interpretability",
+    "program-synthesis",
+    "research",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 29248,
+  "parameters_human": "29248",
+  "storage_bytes": 24832030,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autos & mehr: Gebrauchtwagen & Neuwagen kaufen » mobile.de",
+      "url": "https://www.mobile.de/?msockid=3cbfbdad78f665f21b91aa6079676404",
+      "snippet": "Entdecke die zahlreichen Angebote auf mobile.de, vergleiche sie und kontaktiere direkt die Verkäufer – egal ob professionelle …"
+    },
+    {
+      "title": "FlaneAI (Mageio Sophos) - Hugging Face",
+      "url": "https://huggingface.co/FlaneAI/models",
+      "snippet": "Recent Activity updated a datasetabout 16 hours ago FlaneAI/HallmarksOfAging published a datasetabout 16 hours ago FlaneAI/HallmarksOfAging updated a dataset24 days ago FlaneAI/GPT-5.5-Long-Reasoning View all activity"
+    },
+    {
+      "title": "PKW-Suche bei mobile.de – schnell und einfach dein Fahrzeug finden",
+      "url": "https://suchen.mobile.de/fahrzeuge/detailsuche?msockid=3cbfbdad78f665f21b91aa6079676404",
+      "snippet": "Du suchst einen Pkw in deiner Umgebung? Finde dein Fahrzeug mit der Pkw-Suche bei: mobile.de – Deutschlands größter …"
+    },
+    {
+      "title": "FlaneAI (Mageio Sophos) - Hugging Face",
+      "url": "https://huggingface.co/FlaneAI",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 26 days ago ... published a dataset 26 days ago"
+    },
+    {
+      "title": "Gebrauchtwagen in der Nähe kaufen bei mobile",
+      "url": "https://suchen.mobile.de/auto/gebrauchtwagen.html?msockid=3cbfbdad78f665f21b91aa6079676404",
+      "snippet": "Finde Gebrauchtwagen in deiner Nähe bei mobile.de – Größter Fahrzeugmarkt in DE Jetzt TÜV-geprüftes Traumauto kaufen oder …"
+    }
+  ]
+}

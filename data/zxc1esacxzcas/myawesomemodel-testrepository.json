@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ZXC1ESACXZCAS/MyAwesomeModel-TestRepository",
+  "slug": "zxc1esacxzcas-myawesomemodel-testrepository",
+  "author": "ZXC1ESACXZCAS",
+  "url": "https://huggingface.co/ZXC1ESACXZCAS/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-07T13:11:22.000Z",
+  "updated_at": "2026-09-07T13:30:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "ZXC1ESACXZCAS/MyAwesomeModel-step_1000 · Hugging Face",
+      "url": "https://huggingface.co/ZXC1ESACXZCAS/MyAwesomeModel-step_1000",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "GMX E-Mail sichere & kostenlose E-Mail-Adresse",
+      "url": "https://www.gmx.net/mail/",
+      "snippet": "GMX ist nicht umsonst einer der beliebtesten E-Mail-Dienste Deutschlands: Bereits in den 1990er Jahren zählten wir zu den ersten …"
+    },
+    {
+      "title": "DSD1231/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/DSD1231/MyAwesomeModel-TestRepository",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model. System Prompt We recommend using the following system prompt with a specific date. You are MyAwesomeModel, a helpful AI assistant."
+    },
+    {
+      "title": "GMX Login - ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Der GMX Login stellt Sie vor Fragen oder bereitet Ihnen Probleme? Hier erfahren Sie alles, was Sie zum GMX Postfach Login wissen …"
+    }
+  ]
+}

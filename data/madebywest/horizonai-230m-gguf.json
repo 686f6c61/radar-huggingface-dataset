@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "madebywest/HorizonAI-230M-GGUF",
+  "slug": "madebywest-horizonai-230m-gguf",
+  "author": "madebywest",
+  "url": "https://huggingface.co/madebywest/HorizonAI-230M-GGUF",
+  "created_at": "2026-09-07T10:10:16.000Z",
+  "updated_at": "2026-09-07T10:19:41.000Z",
+  "license": "lfm-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "it",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qat",
+    "quantization",
+    "multilingual",
+    "edge",
+    "travel",
+    "it",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:finetune:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 149080480,
+  "storage_human": "149 MB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chrome 다운로드 및 설치 - 컴퓨터 - Google Chrome 고객센터",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ko&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome 설치 방법 중요:Chrome을 다운로드하기 전에 현재 사용 중인 운영체제에서 Chrome이 지원되는지 및 다른 모든 필수 시스템 …"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "تنزيل Chrome - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16738344?hl=ar",
+      "snippet": "تنزيل Chrome إعداد Chrome للمرة الأولى تنزيل Chrome التالي: تسجيل الدخول إلى Chrome يمكنك تنزيل متصفّح الويب Chrome وتثبيته بدون أي رسوم، واستخدامه لتصفّح الويب. …"
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "GGUF is a modern file format for storing models optimized for efficient inference, particularly on consumer-grade hardware. This makes it easier for researchers, developers, and hobbyists to experiment with and deploy large language models."
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    }
+  ]
+}

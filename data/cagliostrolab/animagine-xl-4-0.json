@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "cagliostrolab/animagine-xl-4.0",
+  "slug": "cagliostrolab-animagine-xl-4-0",
+  "author": "cagliostrolab",
+  "url": "https://huggingface.co/cagliostrolab/animagine-xl-4.0",
+  "created_at": "2025-01-10T17:51:13.000Z",
+  "updated_at": "2025-02-13T16:16:46.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "en",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:finetune:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 502,
+  "downloads_30d": 322533,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 25949945286,
+  "storage_human": "25.9 GB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/pt-BR",
+      "snippet": "TikTok - as tendências começam aqui. Em um dispositivo ou na web, os espectadores podem assistir e descobrir milhões de vídeos …"
+    },
+    {
+      "title": "cagliostrolab/animagine-xl-4.0 · Hugging Face",
+      "url": "https://huggingface.co/cagliostrolab/animagine-xl-4.0",
+      "snippet": "Animagine XL 4.0, also stylized as Anim4gine, is the ultimate anime-themed finetuned SDXL model and the latest installment of Animagine XL series. Despite being a continuation, the model was retrained from Stable Diffusion XL 1.0with a massive dataset of 8.4M diverse anime-style images from various sources with the knowledge cut-off of January 7th 2025 and finetuned for approximately 2650 GPU ..."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "cagliostrolab (Cagliostro Labs) - Hugging Face",
+      "url": "https://huggingface.co/cagliostrolab",
+      "snippet": "cagliostrolab/animagine-xl-3.1 Text-to-Image • 3B • Updated Dec 21, 2025 • 145k • 726 The Ultimate Anime-themed SDXL Model The Ultimate Anime-themed SDXL model cagliostrolab/animagine-xl-4.0-zero The next iteration of Animagine XL 3.0 in Animagine XL V3 series"
+    },
+    {
+      "title": "Iniciar sesión | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=es",
+      "snippet": "Inicia sesión en TikTok Gestiona tu cuenta, lee notificaciones, comenta vídeos y más."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/DeepSeek-V4-Flash-Vision-Exp-AWQ-DSpark",
+  "slug": "solstice-ai-deepseek-v4-flash-vision-exp-awq-dspark",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-Exp-AWQ-DSpark",
+  "created_at": "2026-09-07T09:56:10.000Z",
+  "updated_at": "2026-09-07T12:08:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "deepseek_v4",
+    "solstice-ai",
+    "unsloth",
+    "deepseek",
+    "deepseek-v4",
+    "auto-round",
+    "w4a16",
+    "int4",
+    "vllm",
+    "sglang",
+    "vision",
+    "multimodal",
+    "dspark",
+    "speculative-decoding",
+    "image-text-to-text",
+    "long-context",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:unsloth/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:unsloth/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55020724414,
+  "parameters_human": "55.02B",
+  "storage_bytes": 172451490127,
+  "storage_human": "172.5 GB",
+  "base_model": "unsloth/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Solstice",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Solstice 92 languesAjouter un sujet"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We are excited to introduce DeepSeek-V4-Flash-Vision-Exp, our first experimental multimodal model in the DeepSeek-V4 family. It builds on the DeepSeek-V4-Flash architecture by incorporating visual modules and undergoing continued training to unlock visual understanding capabilities."
+    },
+    {
+      "title": "Solstice · Restaurant gastronomique, Paris 5ᵉ",
+      "url": "https://solsticeparis.com/",
+      "snippet": "Perché sur les pentes du Panthéon, Solstice est un écrin de dix-huit couverts pour gourmets et fins palais. Ici réside le chef Éric …"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Date des équinoxes et des solstices pour 2026 et à venir",
+      "url": "https://icalendrier.fr/outils/equinoxes-solstices",
+      "snippet": "Mar 20, 2026 · Le solstice d'été représente la journée la plus longue, et le solstice d'hiver la plus courte. Les images ci-dessous …"
+    }
+  ]
+}

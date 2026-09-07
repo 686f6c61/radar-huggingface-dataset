@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Devopsopraiz/Baanzon-Chenni-1.5-9B-ROOT",
+  "slug": "devopsopraiz-baanzon-chenni-1-5-9b-root",
+  "author": "Devopsopraiz",
+  "url": "https://huggingface.co/Devopsopraiz/Baanzon-Chenni-1.5-9B-ROOT",
+  "created_at": "2026-09-07T10:13:56.000Z",
+  "updated_at": "2026-09-07T12:10:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "qwen3",
+    "autonomous-agents",
+    "software-engineering",
+    "text-generation",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 19319111814,
+  "storage_human": "19.3 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MediaMarkt & SATURN - zusammen für dich da!",
+      "url": "https://www.mediamarkt.de/de/specials/mediamarktsaturn?msockid=2ef311585c5f6719201206955dd5663d",
+      "snippet": "Die Marken MediaMarkt und SATURN arbeiten künftig noch enger zusammen. Daraus ergeben sich viele Vorteile für dich. Jetzt mehr …"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B",
+      "snippet": "Ornith-1.5-9B is a dense ~9B model (≈19 GB in bf16), so it serves on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size/ --tpif you want to shard across more GPUs."
+    },
+    {
+      "title": "MediaMarkt - Marktsuche",
+      "url": "https://www.mediamarkt.de/de/store/store-finder?msockid=2ef311585c5f6719201206955dd5663d",
+      "snippet": "Deutschlandweit stehen Ihnen über 330 MediaMärkte zu Auswahl! Hier Bundesland wählen, MediaMarkt aussuchen und direkt zur …"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF",
+      "snippet": "Ornith-1.5-9B is a dense ~9B model (≈19 GB in bf16), so it serves on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size/ --tpif you want to shard across more GPUs."
+    },
+    {
+      "title": "MediaMarkt Tarifwelt",
+      "url": "https://tarife.mediamarkt.de/o2-tarife/",
+      "snippet": "Leider funktioniert das Angebot von https://tarife.mediamarkt.de nicht ohne Javascript. Bitte aktivieren Sie in Ihrem Browser Javascript."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/LFM2.5-1.2B-Instruct-heretic",
+  "slug": "experimentalmachines-lfm2-5-1-2b-instruct-heretic",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/LFM2.5-1.2B-Instruct-heretic",
+  "created_at": "2026-09-07T13:17:19.000Z",
+  "updated_at": "2026-09-07T13:19:25.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "executorch",
+    "lfm2",
+    "text-generation",
+    "abliterated",
+    "heretic",
+    "xnnpack",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 3167834960,
+  "storage_human": "3.2 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "电脑语音的时候别人能听到我电脑播放的声音，怎么 ...",
+      "url": "https://www.zhihu.com/question/327925166",
+      "snippet": "3.在级别中看是不是将麦克风加强拉满了（我是这样），调为24后（之前是+36db），对方表示听不到电脑内放声音"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-1.2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct",
+      "snippet": "Instructions to use LiquidAI/LFM2.5-1.2B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "seek girl怎么下载dlc? - 知乎",
+      "url": "https://www.zhihu.com/question/378812017",
+      "snippet": "DLC现在被硬锁区了，官方开通了discord社区。 里面有链接https://discord.gg/3YK9A2GEdS"
+    },
+    {
+      "title": "spitfire4794/LFM2.5-1.2B-Instruct-Heretic · Hugging Face",
+      "url": "https://huggingface.co/spitfire4794/LFM2.5-1.2B-Instruct-Heretic",
+      "snippet": "LFM2.5-1.2B-Instruct LFM2.5 is a new family of hybrid models designed for on-device deployment. It builds on the LFM2 architecture with extended pre-training and reinforcement learning. Best-in-class performance: A 1.2B model rivaling much larger models, bringing high-quality AI to your pocket. Fast edge inference: 239 tok/s decode on AMD CPU, 82 tok/s on mobile NPU. Runs under 1GB of memory ..."
+    },
+    {
+      "title": "如何修复Discord无法打开-百度经验",
+      "url": "https://jingyan.baidu.com/article/ff42efa9ec3c0fc19e22020b.html",
+      "snippet": "Apr 7, 2019 · 如果您即将与朋友开始游戏会话，那真是太不幸了，Discord将无法打开。 但是，您不应该恐慌，因为我们可以帮助您修 …"
+    }
+  ]
+}

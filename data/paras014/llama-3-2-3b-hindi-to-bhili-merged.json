@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Paras014/llama-3.2-3b-hindi-to-bhili-merged",
+  "slug": "paras014-llama-3-2-3b-hindi-to-bhili-merged",
+  "author": "Paras014",
+  "url": "https://huggingface.co/Paras014/llama-3.2-3b-hindi-to-bhili-merged",
+  "created_at": "2026-09-07T13:19:13.000Z",
+  "updated_at": "2026-09-07T13:22:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Llama-3.2-3B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442739246,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Entgeltatlas | Bundesagentur für Arbeit",
+      "url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/35274",
+      "snippet": "Was verdienen Menschen in welchem Beruf - Entgeltinformationen aus der Beschäftigungsstatistik der Bundesagentur für Arbeit. …"
+    },
+    {
+      "title": "meta-llama/Llama-3.2-3B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B",
+      "snippet": "Instructions to use meta-llama/Llama-3.2-3B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Immobilienkaufmann /frau - Gehalt, Verdienst, Einstiegsgehalt",
+      "url": "https://www.gehaltsvergleich.com/gehalt/Immobilienkaufmann-Immobilienkauffrau",
+      "snippet": "Immobilienkauffrau handelt es sich um Durchschnittswerte. Für genauere Informationen empfehlen wir unseren kostenlosen …"
+    },
+    {
+      "title": "Ryder99/Llama-3.2-3B-Instruct-Hindi · Hugging Face",
+      "url": "https://huggingface.co/Ryder99/Llama-3.2-3B-Instruct-Hindi",
+      "snippet": "Since making Llama-3.2-1B-Instruct-Hindi I spent even more time reading the Unsloth documentation, and with some compromises was able to finetune a 3B model (it just barely avoided OOM)."
+    },
+    {
+      "title": "Was verdient ein Immobilienkaufmann? (Gehalt 2026) - Jobted",
+      "url": "https://de.jobted.com/gehalt/immobilienkaufmann",
+      "snippet": "Wie viel verdient ein Immobilienkaufmann? Gehalt nach Berufserfahrung Ein Immobilienkaufmann mit weniger als 3 Jahre …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "youngseok12/HyperCLOVA-X-SEED-Think-14B-success-consolidation-krc-r4min-vo",
+  "slug": "youngseok12-hyperclova-x-seed-think-14b-success-consolidation-krc-r4min-vo",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-success-consolidation-krc-r4min-vo",
+  "created_at": "2026-09-07T10:16:53.000Z",
+  "updated_at": "2026-09-07T10:18:32.000Z",
+  "license": "hyperclovax-seed",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hyperclovax",
+    "text-generation",
+    "korean",
+    "sft",
+    "lora-merged",
+    "k-ai-leaderboard",
+    "conversational",
+    "custom_code",
+    "ko",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "base_model:finetune:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14748112896,
+  "parameters_human": "14.75B",
+  "storage_bytes": 29496274168,
+  "storage_human": "29.5 GB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scratch - Imagine, Program, Share",
+      "url": "https://scratch.mit.edu/",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and …"
+    },
+    {
+      "title": "youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875",
+      "snippet": "The full HyperCLOVA X SEED 14B Think Model License Agreement is included in LICENSE, and the required NAVER attribution is in NOTICE. Redistribution must comply with that agreement, including its prohibited-use policy and attribution requirements."
+    },
+    {
+      "title": "Scratch - Explore",
+      "url": "https://scratch.mit.edu/explore/projects/games/",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and …"
+    },
+    {
+      "title": "youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71568-3000 · Discussions",
+      "url": "https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71568-3000/discussions",
+      "snippet": "Instructions to use youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71568-3000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Scratch Lab",
+      "url": "https://lab.scratch.mit.edu/",
+      "snippet": "Scratch Lab ... Scratch Lab"
+    }
+  ]
+}

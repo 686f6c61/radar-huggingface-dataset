@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "schneiderkamplab/dfm11-danish-query-templatizer-qwen3.5-2b",
+  "slug": "schneiderkamplab-dfm11-danish-query-templatizer-qwen3-5-2b",
+  "author": "schneiderkamplab",
+  "url": "https://huggingface.co/schneiderkamplab/dfm11-danish-query-templatizer-qwen3.5-2b",
+  "created_at": "2026-09-07T15:43:58.000Z",
+  "updated_at": "2026-09-07T15:44:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "fineinstructions",
+    "instruction-tuning",
+    "dfm11",
+    "da",
+    "dataset:schneiderkamplab/dfm11-danish-query-templatizer-training",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 8873036166,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ما هو عنوان IP الخاص بي؟ ابحث عن عنوان IPv4 و IPv6 العام",
+      "url": "https://whatismyip.org/ar/",
+      "snippet": "اعثر على عنوان IP الخاص بك، إلى جانب معلومات تفصيلية عن الموقع الجغرافي، بما في ذلك البلد والمدينة ومزود خدمة الإنترنت المرتبطين به، على موقع WhatismyIP.org على الفور."
+    },
+    {
+      "title": "GitHub - schneiderkamplab/danish-foundation-models: A project for ...",
+      "url": "https://github.com/schneiderkamplab/danish-foundation-models",
+      "snippet": "A collaborative project for training foundational Danish language model. Which seeks to: Develop and maintain state-of-the-art models for Danish, which are well-validated across a wide range of tasks. Furthermore, we wish to ensure good documentation, which allows users to assess the model for their use-case critically Open-source, both model and source code Note: This repository is intended ..."
+    },
+    {
+      "title": "فحص عنوان IP اونلاين مجاناً — البلد ومزود الخدمة والموقع التقريبي ٢٠٢٦ ...",
+      "url": "https://get-tools.com/ar/tools/security/ip-lookup",
+      "snippet": "أداة فحص عنوان IP اونلاين مجاناً — اعرف عنوان IP الخاص بك أو أي IP آخر، البلد والمدينة ومزود الخدمة والمنطقة الزمنية وموقع تقريبي على الخريطة."
+    },
+    {
+      "title": "schneiderkamplab - GitHub",
+      "url": "https://github.com/schneiderkamplab",
+      "snippet": "HRM-Text Public Forked from sapientinc/HRM-Text HRM-Text is a 1B text generation model based on the HRM architecture, strengthened by task completion and latent space reasoning."
+    },
+    {
+      "title": "البحث عن عنوان IP - التحقق من موقع عنوان IP ومزود خدمة الإنترنت ...",
+      "url": "https://smallwebtools.net/ar/ip-address-lookup",
+      "snippet": "صُممت أداة البحث عن عناوين IP من smallwebtools.net لجعل هذه العملية بسيطة وسريعة ومتاحة للجميع. بنقرة واحدة فقط، يمكنك الكشف عن تفاصيل قيّمة حول أي عنوان IP عام دون الحاجة إلى …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OBLITERATUS/Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED",
+  "slug": "obliteratus-llama-3-1-8b-lexi-uncensored-v2-obliterated",
+  "author": "OBLITERATUS",
+  "url": "https://huggingface.co/OBLITERATUS/Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED",
+  "created_at": "2026-09-07T10:02:35.000Z",
+  "updated_at": "2026-09-07T10:03:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "obliteratus",
+    "abliteration",
+    "uncensored",
+    "obliterate",
+    "en",
+    "base_model:Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+    "base_model:finetune:Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766221,
+  "storage_human": "16.1 GB",
+  "base_model": "Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مطويات رياضيات رابع ابتدائي الفصل الاول جاهزة للطباعة",
+      "url": "https://mhtwyat.com/%d9%85%d8%b7%d9%88%d9%8a%d8%a7%d8%aa-%d8%b1%d9%8a%d8%a7%d8%b6%d9%8a%d8%a7%d8%aa-%d8%b1%d8%a7%d8%a8%d8%b9-%d8%a7%d8%a8%d8%aa%d8%af%d8%a7%d8%a6%d9%8a/",
+      "snippet": "Feb 7, 2025 · مطويات رياضيات رابع ابتدائي الفصل الاول جاهزة للطباعة، مادة الرياضيات مادة ثرية بالمعادات والأشكال والقوانين المسائل، وحتى يستطيع الطالب أن يستجمع معلوماتها"
+    },
+    {
+      "title": "Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 · Hugging Face",
+      "url": "https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "مطويات جاهزة للطباعه 1447 | مؤسسة التحاضير الحديثة",
+      "url": "https://www.mta.sa/%D9%85%D8%B7%D9%88%D9%8A%D8%A7%D8%AA-%D8%AC%D8%A7%D9%87%D8%B2%D8%A9-%D9%84%D9%84%D8%B7%D8%A8%D8%A7%D8%B9%D9%87/",
+      "snippet": "نظرًا لأهمية اللغة العربية والقواعد الإملائية والنحوية تقدم مؤسسة التحاضير الحديثة مطويات جاهزة للطباعة عن اللغة العربية وأهدافها لذا نوفر العديد من المطويات بشتى أشكالها ومختلف التصاميم ..."
+    },
+    {
+      "title": "Greytechai/Llama-3.1-8B-Lexi-Uncensored-V2 · Hugging Face",
+      "url": "https://huggingface.co/Greytechai/Llama-3.1-8B-Lexi-Uncensored-V2",
+      "snippet": "GENERAL INFO: This model is based on Llama-3.1-8b-Instruct, and is governed by META LLAMA 3.1 COMMUNITY LICENSE AGREEMENT Lexi is uncensored, which makes the model compliant. You are advised to implement your own alignment layer before exposing the model as a service. It will be highly compliant with any requests, even unethical ones."
+    },
+    {
+      "title": "رابع ابتدائي | مطويات حور - سلة",
+      "url": "https://salla.sa/hor1232123/%D8%B1%D8%A7%D8%A8%D8%B9-%D8%A7%D8%A8%D8%AA%D8%AF%D8%A7%D8%A6%D9%8A/c1816480305",
+      "snippet": "نوفر لك مجموعة من المطويات المدرسية المصممة لتناسب مختلف المواد والمراحل الدراسية.كل ما عليك هو التحميل والطباعة فورًا"
+    }
+  ]
+}

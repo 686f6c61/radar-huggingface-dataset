@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "borekboissy/Millesime-2026-4b-phase1",
+  "slug": "borekboissy-millesime-2026-4b-phase1",
+  "author": "borekboissy",
+  "url": "https://huggingface.co/borekboissy/Millesime-2026-4b-phase1",
+  "created_at": "2026-09-07T17:56:10.000Z",
+  "updated_at": "2026-09-07T18:27:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056412427,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flashscore.sk: futbal - live výsledky a futbal livescore",
+      "url": "https://www.flashscore.sk/",
+      "snippet": "Futbalové live výsledky na Flashscore.sk poskytujú najnovšie výsledky vo futbale z viac ako 1000 futbalových líg po celom svete ako …"
+    },
+    {
+      "title": "borekboissy/Millesime-2026-4b · Hugging Face",
+      "url": "https://huggingface.co/borekboissy/Millesime-2026-4b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flashscore.sk: hokejové live výsledky, livescore, NHL, DEL, Tipsport ...",
+      "url": "https://www.flashscore.sk/hokej/",
+      "snippet": "Live výsledky - live skóre pre NHL, Tipsport Extraligu a hlavné hokejové ligy. Hokejové livescore, konečné a live výsledky, hokej …"
+    },
+    {
+      "title": "borekboissy (Borek BOISSY) - Hugging Face",
+      "url": "https://huggingface.co/borekboissy",
+      "snippet": "LLM, SLM, Post-training"
+    },
+    {
+      "title": "Futbal online na Flashscore.sk Mobile - livescore pre mobil",
+      "url": "https://m.flashscore.sk/",
+      "snippet": "\"Sledujte futbal na cestách s aktuálnym výsledkovým servisom pre mobilné telefóny. Live výsledky Flashscore.sk Mobile"
+    }
+  ]
+}

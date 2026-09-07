@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "emese-tech/patak",
+  "slug": "emese-tech-patak",
+  "author": "emese-tech",
+  "url": "https://huggingface.co/emese-tech/patak",
+  "created_at": "2026-09-07T09:31:57.000Z",
+  "updated_at": "2026-09-07T09:43:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "hungarian",
+    "emese",
+    "eurollm",
+    "instruct",
+    "chatml",
+    "conversational",
+    "hu",
+    "base_model:utter-project/EuroLLM-9B",
+    "base_model:finetune:utter-project/EuroLLM-9B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9152319488,
+  "parameters_human": "9.15B",
+  "storage_bytes": 18320466647,
+  "storage_human": "18.3 GB",
+  "base_model": "utter-project/EuroLLM-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tchap - la messagerie instantanée des agents de la fonction publique",
+      "url": "https://www.tchap.gouv.fr/",
+      "snippet": "Conçue et gérée par l'Administration française, pour les agents des trois fonctions publiques, pour communiquer facilement en toute …"
+    },
+    {
+      "title": "patak – Emese - emese.tech",
+      "url": "https://emese.tech/patak",
+      "snippet": "en patak 0.5B · 32k context · YaRN Architecture"
+    },
+    {
+      "title": "Tchap",
+      "url": "https://auth.agent.collectivites.tchap.gouv.fr/",
+      "snippet": "Authentification à Tchap Tchap utilise désormais un service d'authentification plus robuste et standardisé pour sécuriser davantage …"
+    },
+    {
+      "title": "emese-tech/patak-corpus · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/emese-tech/patak-corpus",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tchap",
+      "url": "https://auth.e.tchap.gouv.fr/register",
+      "snippet": "S'identifier avec ProConnect Or Continue with my email address"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/NeoHorse-1-9B-i1-GGUF",
+  "slug": "mradermacher-neohorse-1-9b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/NeoHorse-1-9B-i1-GGUF",
+  "created_at": "2026-09-07T13:06:05.000Z",
+  "updated_at": "2026-09-07T14:15:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "en",
+    "base_model:TokenRhythm/NeoHorse-1-9B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 53068855264,
+  "storage_human": "53.1 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kompanie (Militär) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Kompanie_(Milit%C3%A4r)",
+      "snippet": "Suche Suchen Inhaltsverzeichnis umschalten Kompanie (Militär) 71 SprachenAbschnitt hinzufügen"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Kompanie, Bataillon, Division: Gliederungsformen der Bundeswehr",
+      "url": "https://www.bundeswehr.de/de/organisation/zahlen-daten-fakten/kompanie-bataillon-division",
+      "snippet": "Jul 8, 2026 · Geführt wird die Kompanie vom Kompaniechef oder der Kompaniechefin – meist im Dienstgrad „Hauptmann“ oder …"
+    },
+    {
+      "title": "mradermacher/Ornith-1.5-9B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.5-9B-i1-GGUF",
+      "snippet": "mradermacher / Ornith-1.5-9B-i1-GGUF like 0 Transformers GGUF English imatrix conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Kompanie – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Kompanie",
+      "snippet": "Wiktionary: Kompanie – Bedeutungserklärungen, Wortherkunft, Synonyme, Übersetzungen Kategorie: Begriffsklärung"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ADAPT-Qwen3-8.5B-Base-i1-GGUF",
+  "slug": "mradermacher-adapt-qwen3-8-5b-base-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ADAPT-Qwen3-8.5B-Base-i1-GGUF",
+  "created_at": "2026-09-07T12:36:36.000Z",
+  "updated_at": "2026-09-07T13:43:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:EleutherAI/the_pile_deduplicated",
+    "dataset:nvidia/Llama-Nemotron-Post-Training-Dataset",
+    "base_model:Harvard-DCML/ADAPT-Qwen3-8.5B-Base",
+    "base_model:quantized:Harvard-DCML/ADAPT-Qwen3-8.5B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8492380416,
+  "parameters_human": "8.49B",
+  "storage_bytes": 100750724224,
+  "storage_human": "100.8 GB",
+  "base_model": "Harvard-DCML/ADAPT-Qwen3-8.5B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizzalorya Menü, Fiyatları, Online Sipariş Malatya - Yemeksepeti",
+      "url": "https://www.yemeksepeti.com/restaurant/raph/pizzalorya",
+      "snippet": "Pizzalorya, Malatya şubesinden online sipariş vermek için restoran menüsünden seçiminizi yaparak yemek siparişinizi verebilirsiniz"
+    },
+    {
+      "title": "mradermacher/ADAPT-Qwen3-8.5B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ADAPT-Qwen3-8.5B-GGUF",
+      "snippet": "Instructions to use mradermacher/ADAPT-Qwen3-8.5B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Malatya bölgesindeki Pizza Restoranları (En İyi 15) - tikla.com.tr",
+      "url": "https://www.tikla.com.tr/sektorler/pizza/malatya",
+      "snippet": "Size en yakın Malatya bölgesindeki Pizza Restoranlarını keşfedin! Burada telefon numaraları, adresler, çalışma saatleri ve harita …"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Malatya Pizzacıları (Malatya'daki Pizzacılar) - Menü Burada",
+      "url": "https://menuburada.com/restoranlar/malatya-pizzacilari",
+      "snippet": "Mücelli Caddesi, 10 İzzetiye, Malatya Merkez, Malatya 4.6 puan 76 reyting Orient Pizza, Özalper Ankara Caddesi, 124 Özalper, …"
+    }
+  ]
+}

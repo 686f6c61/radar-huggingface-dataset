@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "tfjack/Qwen3.8-27B-oQ5e-fp16-mtp",
+  "slug": "tfjack-qwen3-8-27b-oq5e-fp16-mtp",
+  "author": "tfjack",
+  "url": "https://huggingface.co/tfjack/Qwen3.8-27B-oQ5e-fp16-mtp",
+  "created_at": "2026-09-07T13:04:49.000Z",
+  "updated_at": "2026-09-07T13:42:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_5_text",
+    "oq",
+    "oQe",
+    "enhanced",
+    "mixed-precision",
+    "quantized",
+    "dense",
+    "vision-language",
+    "multimodal",
+    "conversational",
+    "apple-silicon",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 21225184064,
+  "storage_human": "21.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "‎Bestehendes E-Mail-Postfach auf ein Freemail-Postfach übertragen ...",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/bestehendes-e-mail-postfach-auf-ein-freemail-postfach-%C3%BCbertragen/668789754ae73561da8c5e10",
+      "snippet": "Jul 13, 2026 · Sie möchten eine Haupt-E-Mail-Adresse eines Festnetzvertrags auf Freemail umstellen (ohne Festnetzkündigung)? …"
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Einrichtung t-online. / e-Mail | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/einrichtung-t-online-e-mail/6983133eb74a8e54ada05d78",
+      "snippet": "Einrichtung t-online. / e-Mail Locko vor 7 Monaten Ich habe einen neuen Rechner mit win 11 und will t-online als Startseite unter …"
+    }
+  ]
+}

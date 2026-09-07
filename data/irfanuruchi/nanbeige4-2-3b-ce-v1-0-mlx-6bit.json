@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Irfanuruchi/Nanbeige4.2-3B-CE-v1.0-MLX-6bit",
+  "slug": "irfanuruchi-nanbeige4-2-3b-ce-v1-0-mlx-6bit",
+  "author": "Irfanuruchi",
+  "url": "https://huggingface.co/Irfanuruchi/Nanbeige4.2-3B-CE-v1.0-MLX-6bit",
+  "created_at": "2026-09-07T10:17:19.000Z",
+  "updated_at": "2026-09-07T10:32:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nanbeige",
+    "computer-engineering",
+    "systems",
+    "apple-silicon",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Irfanuruchi/Nanbeige4.2-3B-CE-v1.0",
+    "base_model:quantized:Irfanuruchi/Nanbeige4.2-3B-CE-v1.0",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4169800704,
+  "parameters_human": "4.17B",
+  "storage_bytes": 3406636686,
+  "storage_human": "3.4 GB",
+  "base_model": "Irfanuruchi/Nanbeige4.2-3B-CE-v1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanbeige/Nanbeige4.2-3B · Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
+      "snippet": "# Clone repository # For llama-server (GGUF) backend only, the official ollama repo also works: # git clone https://github.com/ollama/ollama.git git clone -b nanbeige42 https://github.com/Nanbeige/ollama.git cd ollama # Full native build (MLX Metal on macOS arm64; llama-server payload included) # Pick one: cmake -B build ."
+    },
+    {
+      "title": "Digi Sport - stiri din sport, meciuri live - Spectacolul campionilor!",
+      "url": "https://www.digisport.ro/",
+      "snippet": "Pe Digi Sport ai cele mai noi stiri din sport: fotbal, tenis, F1, handbal, baschet, meciuri live din cele mai tari campionate de fotbal, …"
+    },
+    {
+      "title": "Irfanuruchi/Nanbeige4.2-3B-CE-v1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Irfanuruchi/Nanbeige4.2-3B-CE-v1.0-GGUF",
+      "snippet": "Nanbeige4.2-3B-CE v1.0 is the best validated release checkpoint selected during development, but it is not claimed to be perfect. Some known precision/factual weaknesses remain in difficult systems questions."
+    },
+    {
+      "title": "[2607.22083] Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Model",
+      "url": "https://arxiv.org/abs/2607.22083",
+      "snippet": "We present Nanbeige4.2-3B, a compact general agentic model with 3B non-embedding parameters. It delivers strong performance across code-agent, office-agent, and complex tool-use tasks while maintaining highly competitive reasoning capabilities in mathematics, coding, and science. Nanbeige4.2-3B is pretrained from scratch on 28T tokens with a Looped Transformer that reuses the layer stack to ..."
+    },
+    {
+      "title": "Rezultate live la Digi Sport 1 - meciuri live: fotbal, tenis, in direct ...",
+      "url": "https://www.digisport.ro/live/digisport-1",
+      "snippet": "Vezi rezultate live, meciuri de fotbal live, turnee de tenis in direct, cele mai tari meciuri din Liga 1, campionate straine, Liga …"
+    }
+  ]
+}

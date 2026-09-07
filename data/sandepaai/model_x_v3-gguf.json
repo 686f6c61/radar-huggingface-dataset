@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sandepaAI/model_x_v3-gguf",
+  "slug": "sandepaai-model_x_v3-gguf",
+  "author": "sandepaAI",
+  "url": "https://huggingface.co/sandepaAI/model_x_v3-gguf",
+  "created_at": "2026-09-07T15:40:01.000Z",
+  "updated_at": "2026-09-07T15:42:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308481024,
+  "parameters_human": "308.5M",
+  "storage_bytes": 618805664,
+  "storage_human": "619 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | Student At Work",
+      "url": "https://www.studentatwork.be/fr/index.html",
+      "snippet": "Tu peux aussi te connecter à l’app Student at work par ces différents moyens. Avec, comme avantage principal, de ne devoir te …"
+    },
+    {
+      "title": "sandepaAI (preston a sanders) - Hugging Face",
+      "url": "https://huggingface.co/sandepaAI",
+      "snippet": "None yet models16 Sort: Recently updated sandepaAI/sandepa_ai_coder_435m_small_moe Text Generation •0.6B•Updated 4 days ago•804•1 sandepaAI/sandepaAI_gemma4_coder_12b Text Generation •12B•Updated 8 days ago•1.11k•1"
+    },
+    {
+      "title": "Home | Student At Work",
+      "url": "https://www.studentatwork.be/nl/index.html",
+      "snippet": "Heb je al te veel verenigingswerk gedaan wanneer je begint te werken als student, dan worden die bijkomende uren van je …"
+    },
+    {
+      "title": "sandepaAI/model_x_v3 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/sandepaAI/model_x_v3/discussions",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Student at work - Belgium.be",
+      "url": "https://www.belgium.be/fr/services_en_ligne/app_studentatwork",
+      "snippet": "Oct 2, 2025 · L'application \"Student at work\" permet aux étudiants de vérifier le nombre de jours de travail qu'ils peuvent encore …"
+    }
+  ]
+}

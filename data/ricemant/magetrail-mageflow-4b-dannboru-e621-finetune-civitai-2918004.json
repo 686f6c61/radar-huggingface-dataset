@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RicemanT/MageTrail-MageFlow-4B-Dannboru-E621-Finetune-civitai-2918004",
+  "slug": "ricemant-magetrail-mageflow-4b-dannboru-e621-finetune-civitai-2918004",
+  "author": "RicemanT",
+  "url": "https://huggingface.co/RicemanT/MageTrail-MageFlow-4B-Dannboru-E621-Finetune-civitai-2918004",
+  "created_at": "2026-09-07T10:23:36.000Z",
+  "updated_at": "2026-09-07T11:46:37.000Z",
+  "license": "civitai-creator-permissions",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "safetensors",
+    "arcenciel",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8253669658,
+  "storage_human": "8.3 GB",
+  "base_model": "MageFlow",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "RicemanT/MageTrail · Hugging Face",
+      "url": "https://huggingface.co/RicemanT/MageTrail",
+      "snippet": "I. Introduction MageTrailis a Danbooru/E621 proof of concept Full-Finetune of Microsoft's MageFlow 4B T2I model, using a diversity maximized condensed 41k images dataset as a way to tune booru concept and tags based prompting + Illustration capabilities into the model without havint to tune with the full booru dataset."
+    },
+    {
+      "title": "Impossible de me connecter à Canva avec mail Outlook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299350-impossible-de-me-connecter-a-canva-avec-mail-outlook",
+      "snippet": "Jul 15, 2026 · Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une invitation. …"
+    },
+    {
+      "title": "MageFlow AI — Free Microsoft 4B Open Image Model Studio",
+      "url": "https://mageflow.net/",
+      "snippet": "MageFlow AI offers free open access to Microsoft Mage-Flow and Mage-VL 4B models. Text-to-image synthesis, instruction editing, and video understanding without paid credit limits."
+    },
+    {
+      "title": "Canva AI Miễn Phí Có Gì? Những Tính Năng Nên Dùng Trước Khi Nâng …",
+      "url": "https://tinhte.vn/thread/canva-ai-mien-phi-co-gi-nhung-tinh-nang-nen-dung-truoc-khi-nang-cap-canva-pro.4139897/",
+      "snippet": "Canva AI miễn phí là gì? Canva AI miễn phí là các tính năng trí tuệ nhân tạo mà người dùng gói Canva Free có thể sử dụng trong …"
+    }
+  ]
+}

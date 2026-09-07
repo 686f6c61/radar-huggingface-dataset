@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "malaiwah/glm-moe-dsa-tiny-random-fp8-block32-rtn-format",
+  "slug": "malaiwah-glm-moe-dsa-tiny-random-fp8-block32-rtn-format",
+  "author": "malaiwah",
+  "url": "https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-fp8-block32-rtn-format",
+  "created_at": "2026-09-07T17:02:21.000Z",
+  "updated_at": "2026-09-07T19:08:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "qfs",
+    "fixture",
+    "random-init",
+    "cpu",
+    "reproducibility",
+    "format-fixture",
+    "rtn",
+    "optimizer-not-run",
+    "matched-weight-family",
+    "base_model:malaiwah/glm-moe-dsa-tiny-random-bf16",
+    "base_model:quantized:malaiwah/glm-moe-dsa-tiny-random-bf16",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277848,
+  "parameters_human": "277848",
+  "storage_bytes": 342696,
+  "storage_human": "342696 B",
+  "base_model": "malaiwah/glm-moe-dsa-tiny-random-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iniciar sesión en Gmail - Ordenador - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Nota:Si inicias sesión en un ordenador público, asegúrate de cerrarla antes de dejar de usar el ordenador. Consulta cómo iniciar …"
+    },
+    {
+      "title": "malaiwah/glm-moe-dsa-tiny-cpu-repro-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/malaiwah/glm-moe-dsa-tiny-cpu-repro-v1",
+      "snippet": "1 Total file size: 392 kB Models trained or fine-tuned on malaiwah/glm-moe-dsa-tiny-cpu-repro-v1 malaiwah/glm-moe-dsa-tiny-random-bf16 Text Generation •278k•Updated about 6 hours ago Collection including malaiwah/glm-moe-dsa-tiny-cpu-repro-v1"
+    },
+    {
+      "title": "Nápověda Android",
+      "url": "https://support.google.com/android/?hl=cs",
+      "snippet": "Oficiální Centrum nápovědy služby Android, kde můžete najít tipy a návody na používání této služby a další odpovědi na nejčastější …"
+    },
+    {
+      "title": "malaiwah/glm-moe-dsa-tiny-random-bf16 · Hugging Face",
+      "url": "https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-bf16",
+      "snippet": "Instructions to use malaiwah/glm-moe-dsa-tiny-random-bf16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ekura - Seznam změn",
+      "url": "https://www.ekura.cz/patchlog/2350/archiv/654",
+      "snippet": "Ekura je orientální akční MMORPG hra. Staňte se bojovníkem své říše a zažijte nikdy nekončící dobrodružství. Hrajte zdarma nyní!"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "VladKh03/raw_GPT2_1_epoch",
+  "slug": "vladkh03-raw_gpt2_1_epoch",
+  "author": "VladKh03",
+  "url": "https://huggingface.co/VladKh03/raw_GPT2_1_epoch",
+  "created_at": "2026-09-07T10:06:28.000Z",
+  "updated_at": "2026-09-07T10:11:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1544230611,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Our official Ubisoft Forums have now closed. You can find our Forum ...",
+      "url": "https://forums.ubisoft.com/?p=13932072",
+      "snippet": "Our official Ubisoft Forums have now closed. You can find our Forum channels over on Discord by clicking this link. You will need to …"
+    },
+    {
+      "title": "GitHub - Neo-Mods1/Raw-Gpt: A modular multimodal AI foundation ...",
+      "url": "https://github.com/Neo-Mods1/Raw-Gpt",
+      "snippet": "A modular, open-source multimodal AI foundation framework built with PyTorch. Stage 2: Functional GPT Training Pipeline — train a small language model from scratch on any text corpus. Raw-Gpt/ ├── raw_gpt/ # Core Python package │ ├── models/ │ │ ├── config.py # GPTConfig ..."
+    },
+    {
+      "title": "Data on AI Models | Epoch AI",
+      "url": "https://epoch.ai/data/ai-models",
+      "snippet": "Our public database, the largest of its kind, tracks over 3600 machine learning models from 1950 to today. Explore data and graphs showing the trajectory of AI."
+    },
+    {
+      "title": "Raw-Gpt/README.md at main · Neo-Mods1/Raw-Gpt · GitHub",
+      "url": "https://github.com/Neo-Mods1/Raw-Gpt/blob/main/README.md",
+      "snippet": "Raw-Gpt A modular, open-source multimodal AI foundation framework built with PyTorch. Stage 2: Functional GPT Training Pipeline — train a small language model from scratch on any text corpus."
+    },
+    {
+      "title": "Data on the Trajectory of AI | Epoch AI Database",
+      "url": "https://epoch.ai/data",
+      "snippet": "Our public datasets catalog over 3200 machine learning models. Explore data and graphs showing the growth and trajectory of AI from 1950 to today."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "malaiwah/qwen3-5-tiny-random-gguf-f32-format",
+  "slug": "malaiwah-qwen3-5-tiny-random-gguf-f32-format",
+  "author": "malaiwah",
+  "url": "https://huggingface.co/malaiwah/qwen3-5-tiny-random-gguf-f32-format",
+  "created_at": "2026-09-07T17:19:33.000Z",
+  "updated_at": "2026-09-07T19:08:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "qfs",
+    "fixture",
+    "random-init",
+    "cpu",
+    "reproducibility",
+    "format-fixture",
+    "format-control",
+    "matched-weight-family",
+    "floating-format-control",
+    "rtn",
+    "optimizer-not-run",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 246612,
+  "parameters_human": "246612",
+  "storage_bytes": 995136,
+  "storage_human": "995136 B",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "malaiwah/qwen3-5-gguf-tiny-fidelity-root-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/malaiwah/qwen3-5-gguf-tiny-fidelity-root-v1",
+      "snippet": "The cut the final hidden state handed to lm_head -- after the text model's final norm and immediately before the head matmul -- captured as the head module's input via torch.nn.Module.register_forward_pre_hook; replay applies the head ONLY (no final norm at replay time: the capture already sits after it)."
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210/answers/updated",
+      "snippet": "Pinterest用户=带着明确购物需求来,转化率10-15%。 这就是为什么Pinterest在海外联盟营销圈被称为\"最适合新手的平台\"——用户本身 …"
+    },
+    {
+      "title": "malaiwah/qfs-qwen-gguf-tiny-cpu-format-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/malaiwah/qfs-qwen-gguf-tiny-cpu-format-v1",
+      "snippet": "Complete tiny random FORMAT fixture evidence. Round-to-nearest (RTN) storage/reader exercise only; optimizer-not-run. No GPTQ/AWQ/AutoRound optimization, calibrated ModelOpt/CT/QAT quality, trained-model quality ranking, GPU parity, or native serving-kernel correctness claim."
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210",
+      "snippet": "Pinterest相对Flickr来说，恰恰是一种互补，每张图片基本可以关联到一条URL，进一步可以抽取其他信息。 从用户行为的角度上看， …"
+    }
+  ]
+}

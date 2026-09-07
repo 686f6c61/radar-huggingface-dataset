@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-memory-twin",
+  "slug": "snapkitty-sovereign-memory-twin",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-memory-twin",
+  "created_at": "2026-09-07T17:12:54.000Z",
+  "updated_at": "2026-09-07T17:12:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "sovereign-memory-twin",
+    "text-generation",
+    "pytorch",
+    "sovereign",
+    "snapkitty",
+    "memory-twin",
+    "worm-sealed",
+    "ibm-i",
+    "ledger",
+    "formal-verification",
+    "custom-architecture",
+    "en",
+    "dataset:SNAPKITTYWEST/sovereign-training-corpus",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transport Database and Photogallery - Phototrans.eu",
+      "url": "https://rail.phototrans.eu/",
+      "snippet": "Phototrans.eu, Page with thousands of urban transport photos and urban vehicle database."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=snapkitty",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: snapkitty Clear all"
+    },
+    {
+      "title": "-=[Fotogaleria Transportowa]=- - Phototrans.eu",
+      "url": "https://rail.phototrans.eu/rail.php?current_language=pl",
+      "snippet": "Prawa autorskie: phototrans.eu 2002-2026; Tłumaczenie wykonane przez użytkowników serwisu. Zabronione jest wykorzystywanie …"
+    },
+    {
+      "title": "Snapkitty (Snapkitty Collective) - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Follow 1 AI & ML interests Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D'Accord Irrevocable Trust · EIN 42-697643 Recent Activity SNAPKITTYWEST updateda dataset1 day ago Snapkitty/sovereign-xml-compiler"
+    },
+    {
+      "title": "-=[Fotogaleria Transportowa]=- Phototrans.eu",
+      "url": "https://phototrans.pl/",
+      "snippet": "Fundacja Retro Zajezdnia zaprasza na przejazd \"Pożegnanie Wakacji z Mazem 203!\" w trakcie którego odwiedzimy południową …"
+    }
+  ]
+}

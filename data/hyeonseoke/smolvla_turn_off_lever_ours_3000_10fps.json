@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_turn_off_lever_ours_3000_10fps",
+  "slug": "hyeonseoke-smolvla_turn_off_lever_ours_3000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_turn_off_lever_ours_3000_10fps",
+  "created_at": "2026-09-07T17:23:47.000Z",
+  "updated_at": "2026-09-07T17:24:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:HyeonseokE/turn_off_lever_ours_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Global Luxury Market Trends 2025 | Investment Insights ...",
+      "url": "https://www.millionairesxchange.com/post/luxury-market-trends-opportunities-and-investment-insights-2025",
+      "snippet": "Expert analysis of global luxury market trends, emerging opportunities, and strategic investment insights for ultra-high-net-worth …"
+    },
+    {
+      "title": "HyeonseokE/smolvla_close_box_cap_3000_10fps · Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_close_box_cap_3000_10fps",
+      "snippet": "HyeonseokE/close_box_cap_10fps ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "Luxury Real Estate: Investment Trends and Opportunities for ...",
+      "url": "https://www.nestfinancial.net/blog/link-to-local-luxury-realtor-luxury-real-estate-investment-trends-and-opportunities-for-the-discerning-buyer",
+      "snippet": "Mar 21, 2025 · Discover key luxury real estate trends, top markets, and how to diversify with high-end properties for long-term gains. …"
+    },
+    {
+      "title": "HyeonseokE/smolvla_push_button_ours_3000_10fps · Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_push_button_ours_3000_10fps",
+      "snippet": "Instructions to use HyeonseokE/smolvla_push_button_ours_3000_10fps with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Investment Opportunities in Luxury Real Estate: What Buyers ...",
+      "url": "https://www.fredeo.com/business/investment-opportunities-in-luxury-real-estate-what-buyers-need-to-know/",
+      "snippet": "The luxury real estate market offers a wealth of opportunities for discerning investors. By understanding the market’s nuances, …"
+    }
+  ]
+}

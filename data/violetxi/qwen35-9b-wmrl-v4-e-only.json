@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/qwen35-9b-wmrl-v4-E-only",
+  "slug": "violetxi-qwen35-9b-wmrl-v4-e-only",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-E-only",
+  "created_at": "2026-09-07T14:53:55.000Z",
+  "updated_at": "2026-09-07T14:57:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "wm-internalization",
+    "v4",
+    "E-only",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38625429982,
+  "storage_human": "38.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://www.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-n-30m · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-30m",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-n-30m wm-internalization v4 checkpoint — condition n-30m, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool). Grafted back into the hub composite layout (Qwen3_5ForConditionalGeneration) — servable with vLLM out of the box."
+    },
+    {
+      "title": "Sport: Aktuelle Ergebnisse, News und Videos - BILD.de",
+      "url": "https://www.bild.de/sport/startseite/sport/sport-home-15479124.bild.html",
+      "snippet": "Aktuelle Nachrichten aus dem Sport: Bundesliga, Formel 1, Boxen, Tennis und Olympia. Alle Meldungen, Berichte, Ergebnisse und …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5 · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5 wm-internalization v4 checkpoint — condition lrsmoke-1e5, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool)."
+    },
+    {
+      "title": "SPORT BILD | Sport-Nachrichten | Live Sportergebnisse | Meinungen, …",
+      "url": "https://sportbild.bild.de/",
+      "snippet": "Live Sportergebnisse, Videos & Sportdaten: SPORT BILD online bietet Sport Live-News zu Fußball, Bundesliga und Formel 1. …"
+    }
+  ]
+}

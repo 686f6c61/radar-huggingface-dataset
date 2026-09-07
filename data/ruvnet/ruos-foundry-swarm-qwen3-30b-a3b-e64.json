@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ruvnet/ruos-foundry-swarm-qwen3-30b-a3b-e64",
+  "slug": "ruvnet-ruos-foundry-swarm-qwen3-30b-a3b-e64",
+  "author": "ruvnet",
+  "url": "https://huggingface.co/ruvnet/ruos-foundry-swarm-qwen3-30b-a3b-e64",
+  "created_at": "2026-09-07T18:13:12.000Z",
+  "updated_at": "2026-09-07T18:14:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "ruos",
+    "moe",
+    "expert-pruning",
+    "moe-foundry",
+    "unevaluated",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16030316544,
+  "parameters_human": "16.03B",
+  "storage_bytes": 32073261958,
+  "storage_human": "32.1 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价密室逃脱游戏《INSANE》？ - 知乎",
+      "url": "https://www.zhihu.com/question/567959328",
+      "snippet": "如何对抗生活的无意义？ 那就让生活本身成为意义。 前言：按照Sinner-Insane-Enola-Insane二刷-Reviver的顺序在UME家毕业了，感 …"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "jannik和羽肿能否代表国产纯音乐人的最高水准？ - 知乎",
+      "url": "https://www.zhihu.com/question/314811247/answers/updated",
+      "snippet": "我觉得大概率不能。 首先要明确的一点是羽肿是业余的音乐人，他的强项主要在于对歌曲的意境的把控，这是他的音乐能够打动人的 …"
+    },
+    {
+      "title": "ruvnet (rUv) · GitHub",
+      "url": "https://github.com/ruvnet",
+      "snippet": "A powerful ChatGPT plugin that integrates with the OpenAI API, enabling creative text generation, conversational AI, model fine-tuning, and more. Enhance ChatGPT's capabilities with seamless access to OpenAI's language models."
+    },
+    {
+      "title": "“压缩此驱动器以节约磁盘空间“的利弊是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20488951",
+      "snippet": "在默认簇大小的分区中，NTFS 压缩功能只适合大量零散文件的压缩。 例如簇大小是 4KB，某个文件夹中保存了大量体积在 10KB 左 …"
+    }
+  ]
+}

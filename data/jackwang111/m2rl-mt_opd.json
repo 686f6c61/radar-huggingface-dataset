@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jackwang111/M2RL-MT_OPD",
+  "slug": "jackwang111-m2rl-mt_opd",
+  "author": "Jackwang111",
+  "url": "https://huggingface.co/Jackwang111/M2RL-MT_OPD",
+  "created_at": "2026-09-07T13:01:35.000Z",
+  "updated_at": "2026-09-07T13:01:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alles über Finanzen: News, Banking & Trading | cash",
+      "url": "https://www.cash.ch/",
+      "snippet": "14 hours ago · Alles über Wirtschaft & Finanzen: CASH - die grösste Schweizer Finanzplattform mit News, Börsenkursen und Online …"
+    },
+    {
+      "title": "M2RL/M2RL at main · Mosi-AI/M2RL · GitHub",
+      "url": "https://github.com/Mosi-AI/M2RL/tree/main/M2RL",
+      "snippet": "The OPD training: Uses the SFT model as student initialization Queries all teacher servers for log-probabilities Distills knowledge through on-policy learning Uses advantage estimator: on_policy_distillation"
+    },
+    {
+      "title": "Börse & Märkte | cash",
+      "url": "https://www.cash.ch/boerse",
+      "snippet": "Oct 1, 2022 · Aktuelle Börsenkurse auf der meistbesuchten Finanzplattform der Schweiz. Der SMI und der Eurokurs auf einen Blick."
+    },
+    {
+      "title": "Jackwang111 (Haoqing wang) - Hugging Face",
+      "url": "https://huggingface.co/Jackwang111/datasets",
+      "snippet": "User profile of Haoqing wang on Hugging Face"
+    },
+    {
+      "title": "Cash Forum",
+      "url": "https://forum.cash.ch/forum/",
+      "snippet": "Durch die Aktivierung der externen Inhalte erklären Sie sich damit einverstanden, dass personenbezogene Daten an Drittplattformen …"
+    }
+  ]
+}

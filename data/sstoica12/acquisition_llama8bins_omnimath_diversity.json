@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_llama8bins_omnimath_diversity",
+  "slug": "sstoica12-acquisition_llama8bins_omnimath_diversity",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_llama8bins_omnimath_diversity",
+  "created_at": "2026-09-07T12:50:30.000Z",
+  "updated_at": "2026-09-07T12:52:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reason why Gotye never actually made any money from hit song Somebody …",
+      "url": "https://www.ladbible.com/entertainment/music/gotye-somebody-that-i-used-to-know-earnings-why-made-no-money-714500-20241028",
+      "snippet": "Oct 28, 2024 · Although Gotye's hit song 'Somebody That I Used to Know' has been immensely popular since its 2011 release, the …"
+    },
+    {
+      "title": "sstoica12/acquisition_student_llama8bins_omnimath_confidence - Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_llama8bins_omnimath_confidence",
+      "snippet": "Instructions to use sstoica12/acquisition_student_llama8bins_omnimath_confidence with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "How Much Money Did Gotye Really Make From 'Somebody That I Used To Know ...",
+      "url": "https://www.thethings.com/how-much-did-gotye-somebody-that-i-used-to-know-make-one-hit-wonder/",
+      "snippet": "Apr 16, 2023 · Somebody That I Used To Know was one of the biggest songs of 2011 and yet Gotye might not have been paid as …"
+    },
+    {
+      "title": "sstoica12 (Sofia) - Hugging Face",
+      "url": "https://huggingface.co/sstoica12/models",
+      "snippet": "Multimodal LLMs, VIT, NLP, Computer Vision, Deep Learning Systems."
+    },
+    {
+      "title": "Gotye Made No Money From His One-Hit Wonder ‘Somebody That I Used …",
+      "url": "https://www.imdb.com/news/ni64920516/",
+      "snippet": "It is true that Gotye never made money from this song, and he truly missed out on a huge chunk of money. Gotye Almost Made $10 …"
+    }
+  ]
+}

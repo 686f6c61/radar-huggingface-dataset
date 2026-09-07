@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "chidanandh/vision",
+  "slug": "chidanandh-vision",
+  "author": "chidanandh",
+  "url": "https://huggingface.co/chidanandh/vision",
+  "created_at": "2026-09-07T15:48:59.000Z",
+  "updated_at": "2026-09-07T15:56:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-restoration",
+    "super-resolution",
+    "denoising",
+    "low-light",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4909877,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kontaktieren Sie uns",
+      "url": "https://www.mediadb.eu/contact/",
+      "snippet": "Kontaktieren Sie uns, wenn Sie Hilfe benötigen, Fragen haben oder uns Ihr Feedback mitteilen möchten."
+    },
+    {
+      "title": "‪Chidananda K‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=TWb3RNAAAAAJ&hl=en",
+      "snippet": "‪Asst. Professor, Dept. of AI & ML, BMS Institute of Technology and Management‬ - ‪‪Cited by 143‬‬ - ‪Data Science‬ - ‪Computer Vision‬ - ‪Machine Learning‬ - ‪Deep Learning‬ - ‪Artificial Intelligence‬"
+    },
+    {
+      "title": "Über uns - mediadb.eu",
+      "url": "https://www.mediadb.eu/about/",
+      "snippet": "Willkommen bei mediadb.eu, Ihr erstes Ziel, um die neuesten Online-Casinos in Deutschland zu entdecken."
+    },
+    {
+      "title": "GitHub - Chidanand26/depth-vision-assistant: Real-time monocular metric ...",
+      "url": "https://github.com/Chidanand26/depth-vision-assistant",
+      "snippet": "Depth Vision Assistant is a distributed edge-AI system that turns a single camera into a depth-aware obstacle-warning device. The Raspberry Pi streams camera frames to a MacBook depth server, which returns metric (in-metres) depth, object detections, and per-object distances. The Pi renders a live dashboard, classifies obstacles into DANGER / WARNING / safe zones, and can ask a local LLM ..."
+    },
+    {
+      "title": "IfM - Intl. MK 2009",
+      "url": "https://www.mediadb.eu/forum/daten-fuer-archiv/intl-mk-2009.html",
+      "snippet": "Die größten Medienkonzerne der Welt 2007 Die größten Medienkonzerne der Welt 2008 Die größten Medienkonzerne der Welt 2009 …"
+    }
+  ]
+}

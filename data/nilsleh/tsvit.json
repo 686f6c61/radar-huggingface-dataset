@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "nilsleh/tsvit",
+  "slug": "nilsleh-tsvit",
+  "author": "nilsleh",
+  "url": "https://huggingface.co/nilsleh/tsvit",
+  "created_at": "2026-09-07T15:05:06.000Z",
+  "updated_at": "2026-09-07T15:32:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2301.04944",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13326046,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Botkyrka kommun - Botkyrka kommun",
+      "url": "https://www.botkyrka.se/",
+      "snippet": "På botkyrka.se finns information om kommunens service och verksamheter. Till exempel skola, omsorg, lediga jobb, kultur, fritid, …"
+    },
+    {
+      "title": "TSViT A Time Series Vision Transformer for Fault Diagnosis",
+      "url": "https://arxiv.org/pdf/2311.06916v1.pdf",
+      "snippet": "Abstract—Traditional fault diagnosis methods using Convolutional Neural Networks (CNNs) face limitations in capturing temporal features (i.e., the variation of vibration signals over time). To address this issue, this paper introduces a novel model, the Time Series Vision Transformer (TSViT), specifically designed for fault diagnosis. On one hand, TSViT model integrates a convolutional layer ..."
+    },
+    {
+      "title": "Lediga jobb - Botkyrka kommun",
+      "url": "https://www.botkyrka.se/jobb-och-vuxenutbildning/lediga-jobb",
+      "snippet": "Vi erbjuder dig en inspirerande arbetsplats full av möjligheter där vi tillsammans skapar de bästa förutsättningarna för en hållbar framtid."
+    },
+    {
+      "title": "DeepSatModels/README_TSVIT.md at main - GitHub",
+      "url": "https://github.com/michaeltrs/DeepSatModels/blob/main/README_TSVIT.md",
+      "snippet": "Model Training and Evaluation To begin model training or evaluation, adjust the .yamlconfiguration files as necessary to specify the save directory or to load a pre-trained model from available checkpoints."
+    },
+    {
+      "title": "Kontakta oss - Botkyrka kommun",
+      "url": "https://www.botkyrka.se/kommun-och-politik/kontakt",
+      "snippet": "Telefonnummer, adress och e-post<br>Medborgarkontor<br>Journummer<br>Felanmälan"
+    }
+  ]
+}

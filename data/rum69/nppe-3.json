@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Rum69/nppe-3",
+  "slug": "rum69-nppe-3",
+  "author": "Rum69",
+  "url": "https://huggingface.co/Rum69/nppe-3",
+  "created_at": "2026-09-07T17:12:44.000Z",
+  "updated_at": "2026-09-07T17:18:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "super-resolution",
+    "image-super-resolution",
+    "nppe",
+    "4x-super-resolution",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67438855,
+  "storage_human": "67 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《新月同行》官网网站-烛薪网络",
+      "url": "https://xytx.firewick.net/",
+      "snippet": "《新月同行》是由烛薪网络自主研发并推出的一款都市超自然题材横版探索回合制策略游戏。不可知之物需遭禁锢。超管局致力于对抗 …"
+    },
+    {
+      "title": "GitHub - lvk-ai/nppe",
+      "url": "https://github.com/lvk-ai/nppe",
+      "snippet": "Contribute to lvk-ai/nppe development by creating an account on GitHub."
+    },
+    {
+      "title": "新月同行WIKI_BWIKI_哔哩哔哩",
+      "url": "https://wiki.biligame.com/xytx/%E9%A6%96%E9%A1%B5",
+      "snippet": "欢迎大家来到新月同行WIKI！ 现有 48,625 名注册用户；近期有 1位活跃编辑者， 4,998 次编辑； 2,243个页面。 这里是新月同 …"
+    },
+    {
+      "title": "TheModelEngineer/dlgenai-nppe-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/TheModelEngineer/dlgenai-nppe-dataset",
+      "snippet": "Pricing Log In Sign Up Datasets: TheModelEngineer dlgenai-nppe-dataset like0 Dataset card FilesFiles and versions"
+    },
+    {
+      "title": "新月同行",
+      "url": "https://fellowmoon.garena.com/zh_tw/",
+      "snippet": "Apr 24, 2025 · 都市超常策略 RPG《新月同行》。收容開始，拘束超實體！新月同行是一款結合都市超常現象、橫版探索、回合制策略 …"
+    }
+  ]
+}

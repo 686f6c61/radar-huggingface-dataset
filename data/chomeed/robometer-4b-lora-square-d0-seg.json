@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "chomeed/robometer-4b-lora-square-d0-seg",
+  "slug": "chomeed-robometer-4b-lora-square-d0-seg",
+  "author": "chomeed",
+  "url": "https://huggingface.co/chomeed/robometer-4b-lora-square-d0-seg",
+  "created_at": "2026-09-07T14:47:57.000Z",
+  "updated_at": "2026-09-07T14:48:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "reward_model",
+    "rbm",
+    "robometer",
+    "mimicgen",
+    "square",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4513065228,
+  "parameters_human": "4.51B",
+  "storage_bytes": 9442462249,
+  "storage_human": "9.4 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ie/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "chomeed/robometer-4b-lora-anubis · Hugging Face",
+      "url": "https://huggingface.co/chomeed/robometer-4b-lora-anubis",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ie/details",
+      "snippet": "Some sentences may contain gender-specific alternatives. Click a sentence to see alternatives. Learn more"
+    },
+    {
+      "title": "Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory ...",
+      "url": "https://robometer.github.io/",
+      "snippet": "A general-purpose robotic reward model trained on trajectory comparisons from the RBM-1M dataset. Provides dense, video-language-conditioned rewards for robot learning."
+    },
+    {
+      "title": "README.md · chomeed/robometer-4b-lora-anubis at main",
+      "url": "https://huggingface.co/chomeed/robometer-4b-lora-anubis/blob/main/README.md",
+      "snippet": "Instructions to use chomeed/robometer-4b-lora-anubis with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use chomeed/robometer-4b-lora-anubis with Transformers:"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mlx-community/XVERSE-7B-Chat-4bit",
+  "slug": "mlx-community-xverse-7b-chat-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/XVERSE-7B-Chat-4bit",
+  "created_at": "2026-09-07T15:41:25.000Z",
+  "updated_at": "2026-09-07T15:54:34.000Z",
+  "license": "xverse-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "xverse",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:xverse/XVERSE-7B-Chat",
+    "base_model:quantized:xverse/XVERSE-7B-Chat",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7299846144,
+  "parameters_human": "7.30B",
+  "storage_bytes": 4106630986,
+  "storage_human": "4.1 GB",
+  "base_model": "xverse/XVERSE-7B-Chat",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "MLX Examples - standalone examples in the MLX framework including image generation, speech and music generation, language model training and many more. MLX Swift Examples - examples in MLX Swift including LLM and VLM text generation, low-rank fine-tuning, and image generation with SDXL. Check out the growing community."
+    },
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ml-explore/mlx: MLX: An array framework for Apple silicon - GitHub",
+      "url": "https://github.com/ml-explore/mlx",
+      "snippet": "MLX: An array framework for Apple silicon. Contribute to ml-explore/mlx development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - xverse-ai/XVERSE-7B: XVERSE-7B: A multilingual large language ...",
+      "url": "https://github.com/xverse-ai/XVERSE-7B",
+      "snippet": "🧰 OpenXLab ｜ 💬 微信社区 中文| English 模型介绍 XVERSE-7B是由深圳元象科技自主研发的支持多语言的大语言模型（Large Language Model），参数规模为 70 亿，本次开源的模型包括底座模型 XVERSE-7B以及对话模型 XVERSE-7B-Chat，主要特点如下："
+    },
+    {
+      "title": "mlx.studio - Chat, Code, Generate Images & More on Mac",
+      "url": "https://mlx.studio/",
+      "snippet": "MLX Studio is a free macOS app for AI chat and agentic coding. It is the only on-device AI app on Mac with native prefix caching, …"
+    }
+  ]
+}

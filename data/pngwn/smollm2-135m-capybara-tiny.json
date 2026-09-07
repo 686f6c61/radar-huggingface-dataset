@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "pngwn/smollm2-135m-capybara-tiny",
+  "slug": "pngwn-smollm2-135m-capybara-tiny",
+  "author": "pngwn",
+  "url": "https://huggingface.co/pngwn/smollm2-135m-capybara-tiny",
+  "created_at": "2026-09-07T15:18:00.000Z",
+  "updated_at": "2026-09-07T16:21:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "hf_jobs",
+    "sft",
+    "trl",
+    "trackio:https://pngwn-smollm2-capybara-metrics.hf.space?project=smollm2-capybara-sft&runs=500-examples-3-epochs-pushfix&sidebar=collapsed",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269066329,
+  "storage_human": "269 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dislocated Hip: Symptoms, Treatment & Recovery - Cleveland Clinic",
+      "url": "https://my.clevelandclinic.org/health/diseases/22222-hip-dislocation",
+      "snippet": "Hip dislocation occurs when the ball joint of your hip (femur) pops out of its socket (acetubulum). It’s acutely painful and requires …"
+    },
+    {
+      "title": "pngwn/SmolLM2-135M-Capybara-SFT · Hugging Face",
+      "url": "https://huggingface.co/pngwn/SmolLM2-135M-Capybara-SFT",
+      "snippet": "Instructions to use pngwn/SmolLM2-135M-Capybara-SFT with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Hip Dislocation - Trauma - Orthobullets",
+      "url": "https://www.orthobullets.com/trauma/1035/hip-dislocation",
+      "snippet": "May 2, 2024 · Images summary Hip dislocations are traumatic hip injuries that result in femoral head dislocation from the acetabular …"
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hip dislocation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hip_dislocation",
+      "snippet": "1.1Posterior dislocation. 1.2Anterior dislocation. 2Signs and symptoms. Toggle Signs and symptoms subsection. 2.1Posterior …"
+    }
+  ]
+}

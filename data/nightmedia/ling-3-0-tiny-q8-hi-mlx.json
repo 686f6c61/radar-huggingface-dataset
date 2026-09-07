@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nightmedia/Ling-3.0-tiny-q8-hi-mlx",
+  "slug": "nightmedia-ling-3-0-tiny-q8-hi-mlx",
+  "author": "nightmedia",
+  "url": "https://huggingface.co/nightmedia/Ling-3.0-tiny-q8-hi-mlx",
+  "created_at": "2026-09-07T15:11:40.000Z",
+  "updated_at": "2026-09-07T16:19:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "bailing_hybrid",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:quantized:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7893355648,
+  "parameters_human": "7.89B",
+  "storage_bytes": 9341721550,
+  "storage_human": "9.3 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dagschotel dagmenu lunch - Ter Torre",
+      "url": "https://www.tertorre.be/DAGSCHOTEL/?id=2",
+      "snippet": "Ter Torre heeft reeds 65 jaar zijn stekje op ’t Gaverke in Waregem. Wij verzorgen huwelijksfeesten, jubilea, communies, babyborrels, …"
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-tiny-base · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny-base",
+      "snippet": "This enables broad model capabilities while activating just 5.1B (Non-emb) parameters per token; Native hybrid linear attention: Ling-3.0 series adopt a native hybrid linear attention architecture from the very start of pretraining by combining KDA with Gated MLA to enable efficient processing of long-context inputs."
+    },
+    {
+      "title": "Restaurant Feestzalen Ter Torre te Waregem",
+      "url": "https://www.tertorre.be/",
+      "snippet": "Ter Torre heeft reeds 65 jaar zijn stekje op ’t Gaverke in Waregem. Wij verzorgen huwelijksfeesten, jubilea, communies, babyborrels, …"
+    },
+    {
+      "title": "Ling 3.0 Tiny - crafiq.ai",
+      "url": "https://crafiq.ai/models/language/inclusionai-ling-3-0-tiny-rc2",
+      "snippet": "Ling 3.0 Tiny is a compact Mixture-of-Experts (MoE) language model developed by InclusionAI. Designed for resource-constrained environments and high-throughput agentic workflows, the model contains approximately 7.9 billion total parameters, with only 1.3 billion parameters activated per token."
+    },
+    {
+      "title": "Ter Torre, Waregem - Menu van het restaurant, prijzen en recensies",
+      "url": "https://nl.restaurantguru.com/Ter-Torre-Waregem",
+      "snippet": "Aug 18, 2026 · Ter Torreis beroemd om zijn geweldige service en vriendelijke personeel, dat altijd klaar staat om u te helpen. Klanten …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "425GMM/bart-base-aslg-gloss",
+  "slug": "425gmm-bart-base-aslg-gloss",
+  "author": "425GMM",
+  "url": "https://huggingface.co/425GMM/bart-base-aslg-gloss",
+  "created_at": "2026-09-07T15:49:45.000Z",
+  "updated_at": "2026-09-07T15:55:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "sign-language",
+    "asl",
+    "gloss",
+    "translation",
+    "text-generation",
+    "en",
+    "dataset:achrafothman/aslg_pc12",
+    "base_model:facebook/bart-base",
+    "base_model:finetune:facebook/bart-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139470681,
+  "parameters_human": "139.5M",
+  "storage_bytes": 278971098,
+  "storage_human": "279 MB",
+  "base_model": "facebook/bart-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Identifiant client",
+      "url": "https://pro.avosdim.com/customer/account/login/",
+      "snippet": "Allez au contenu Professionnel Particulier Mon compte À propos Créer votre compte Pour profiter de remises sur touttoute l'année, …"
+    },
+    {
+      "title": "tftransformers/bart-base · Hugging Face",
+      "url": "https://huggingface.co/tftransformers/bart-base",
+      "snippet": "BART is a transformer encoder-encoder (seq2seq) model with a bidirectional (BERT-like) encoder and an autoregressive (GPT-like) decoder. BART is pre-trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text."
+    },
+    {
+      "title": "Volet roulant, store et moustiquaire sur mesure | AvosDim.com",
+      "url": "https://avosdim.com/",
+      "snippet": "Un doute ? AvosDim vous renseigne et vous met au courrier gratuitement des ﾃｩchantillons de stores et lames de volet roulant. …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Mon Espace Client – Avosdim | Centre d'aide",
+      "url": "https://help.avosdim.com/hc/fr/categories/14274207222161-Mon-Espace-Client",
+      "snippet": "Je suis professionnel, comment ouvrir un compte professionnel ? Je veux me désabonner de la newsletter ? Je ne retrouve plus mon …"
+    }
+  ]
+}

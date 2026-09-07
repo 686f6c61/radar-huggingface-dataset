@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "notchlive/whisperkit-coreml",
+  "slug": "notchlive-whisperkit-coreml",
+  "author": "notchlive",
+  "url": "https://huggingface.co/notchlive/whisperkit-coreml",
+  "created_at": "2026-09-07T15:21:34.000Z",
+  "updated_at": "2026-09-07T15:51:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "whisper",
+    "whisperkit",
+    "macos",
+    "on-device",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5977596490,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official AVG Support | Help with PC, Mac, & Mobile Products",
+      "url": "https://support.avg.com/?l=en",
+      "snippet": "Official AVG Support. Get help with AVG AntiVirus and other AVG products, license keys, billing & purchases, virus removal, …"
+    },
+    {
+      "title": "argmaxinc/whisperkit-coreml · Hugging Face",
+      "url": "https://huggingface.co/argmaxinc/whisperkit-coreml",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Official AVG Support | Help with PC, Mac, & Mobile Products",
+      "url": "https://support.avg.com/kA60N0000004aGy?name=uninstall-avg-software-clear-remover&language=en_US",
+      "snippet": "Instructions We recommend using the AVG Uninstall Tool to completely remove AVG AntiVirus Free from your Windows device if …"
+    },
+    {
+      "title": "GitHub - argmaxinc/argmax-oss-swift: On-device Speech AI for Apple ...",
+      "url": "https://github.com/argmaxinc/argmax-oss-swift",
+      "snippet": "On-device Speech AI for Apple Silicon. Contribute to argmaxinc/argmax-oss-swift development by creating an account on GitHub."
+    },
+    {
+      "title": "Contact AVG Support - AVG Phone Number, and Chat Support",
+      "url": "https://support.avg.com/avg/en/us/home/current/contact",
+      "snippet": "The Best AVG Ultimate Protection AVG AntiVirus FREE AVG Internet Security Performance AVG TuneUp"
+    }
+  ]
+}

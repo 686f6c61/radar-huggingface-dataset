@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "aman7717/Swinir-lowlight-x4",
+  "slug": "aman7717-swinir-lowlight-x4",
+  "author": "aman7717",
+  "url": "https://huggingface.co/aman7717/Swinir-lowlight-x4",
+  "created_at": "2026-09-07T15:16:42.000Z",
+  "updated_at": "2026-09-07T15:21:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67810203,
+  "storage_human": "68 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La connexion à Mon Compte | CAF – Caisse d’Allocations Familiales",
+      "url": "https://www.caf.fr/allocataires/actualites/la-caf-et-vous/la-connexion-mon-compte",
+      "snippet": "Dès qu’un conseiller aura traité votre demande et vérifié votre identité, vous pourrez vous connecter sur votre Espace Mon Compte …"
+    },
+    {
+      "title": "SwinIR: Image Restoration Using Swin Transformer - GitHub",
+      "url": "https://github.com/JingyunLiang/SwinIR",
+      "snippet": "In this paper, we propose a strong baseline model SwinIR for image restoration based on the Swin Transformer. SwinIR consists of three parts: shallow feature extraction, deep feature extraction and high-quality image reconstruction."
+    },
+    {
+      "title": "Erreur",
+      "url": "https://wwwd.caf.fr/",
+      "snippet": "CAF provides information and services related to social benefits, family allowances, and assistance programs in France."
+    },
+    {
+      "title": "SwinIR/SwinIR_4x.pth · LykosAI/Upscalers at main - Hugging Face",
+      "url": "https://huggingface.co/LykosAI/Upscalers/blob/main/SwinIR/SwinIR_4x.pth",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CAF",
+      "url": "https://connect.caf.fr/connexionappli/dist/",
+      "snippet": "Portail des allocations familiales Contenu de la page"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lerobot/smolvla_base",
+  "slug": "lerobot-smolvla_base",
+  "author": "lerobot",
+  "url": "https://huggingface.co/lerobot/smolvla_base",
+  "created_at": "2025-06-01T07:51:59.000Z",
+  "updated_at": "2026-01-22T09:32:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vision-language-action",
+    "imitation-learning",
+    "robotics",
+    "en",
+    "arxiv:2506.01844",
+    "region:us"
+  ],
+  "likes": 434,
+  "downloads_30d": 176268,
+  "trending_score": 8,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1821442554,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 13 Cryptocurrency Data Aggregators | Cryptopolitan",
+      "url": "https://www.cryptopolitan.com/top-15-cryptocurrency-data-aggregators/",
+      "snippet": "Mar 18, 2023 · Check out these top 15 cryptocurrency data aggregators that help you make informed cryptocurrency trading and …"
+    },
+    {
+      "title": "lerobot/smolvla_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/smolvla_base",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use lerobot/smolvla_base with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use lerobot/smolvla_base with LeRobot:"
+    },
+    {
+      "title": "how to link bridging aggregator with hardware wallets_Blockchain ...",
+      "url": "https://en.gtokentool.com/how-to-link-bridging-aggregator-with-hardware-wallets/",
+      "snippet": "Linking a bridging aggregator with a hardware wallet (like Ledger, Trezor, or Keystone) involves connecting your secure cold storage …"
+    },
+    {
+      "title": "lerobot/models/smolvla_base/README.md at main - GitHub",
+      "url": "https://github.com/hata8210/lerobot/blob/main/models/smolvla_base/README.md",
+      "snippet": "SmolVLA (LeRobot) SmolVLA is a compact, efficient Vision-Language-Action (VLA) model designed for affordable robotics, trainable on a single GPU and deployable on consumer hardware, while matching the performance of much larger VLAs through community-driven data."
+    },
+    {
+      "title": "10 Best Bitcoin and Crypto Wallets in September 2026",
+      "url": "https://www.benzinga.com/money/best-crypto-wallets",
+      "snippet": "Sep 8, 2025 · Looking for the best crypto wallets? Explore our top picks for security, ease of use and reliability to protect and manage …"
+    }
+  ]
+}

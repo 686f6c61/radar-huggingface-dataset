@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "PresbyD/RETFOUND_TIFs",
+  "slug": "presbyd-retfound_tifs",
+  "author": "PresbyD",
+  "url": "https://huggingface.co/PresbyD/RETFOUND_TIFs",
+  "created_at": "2026-09-07T14:50:47.000Z",
+  "updated_at": "2026-09-07T14:50:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motorola Moto G67 im Test 2026: 2,5 gut - Testberichte.de",
+      "url": "https://www.testberichte.de/p/motorola-tests/moto-g67-testbericht.html",
+      "snippet": "Das sagen die Daten:Das Motorola Moto G67 bietet ein hochwertiges Design mit einem 6,78 Zoll großen AMOLED-Display und …"
+    },
+    {
+      "title": "GitHub - rmaphoh/RETFound: Vision Foundation Models for Medical AI ...",
+      "url": "https://github.com/rmaphoh/RETFound",
+      "snippet": "README License Moreitems RETFound - A foundation model for retinal images Official repo including a series of foundation models and applications for retinal images. [RETFound-MAE]:RETFound: a foundation model for generalizable disease detection from retinal images. [RETFound-DINOv2]:Revealing the Impact of Pre-training Data on Medical ..."
+    },
+    {
+      "title": "Test Motorola Moto G67 für unter 200 Euro: OLED, 5G und Top-Akku ...",
+      "url": "https://www.computerbild.de/artikel/Tests-Handy-Motorola-G67-5G-40962895.html",
+      "snippet": "Jun 2, 2026 · Das Motorola Moto G67 5G will viel Smartphone für wenig Geld bieten. Im Test zeigt sich, wo es glänzt und wo Käufer …"
+    },
+    {
+      "title": "A foundation model for generalizable disease detection from retinal ...",
+      "url": "https://www.nature.com/articles/s41586-023-06555-x",
+      "snippet": "RETFound, a foundation model for retinal images that learns generalizable representations from unlabelled images, is trained on 1.6 million unlabelled images by self-supervised learning and then ..."
+    },
+    {
+      "title": "Motorola Moto G67 – Review : The Mid-Range King of Brightness Has ...",
+      "url": "https://www.coolsmartphone.com/2026/05/11/motorola-moto-g67-review-the-mid-range-king-of-brightness-has-arrived/",
+      "snippet": "May 11, 2026 · The Motorola Moto G67 is a bit of a masterstroke. By moving away from the “big battery at all costs” mantra of the …"
+    }
+  ]
+}

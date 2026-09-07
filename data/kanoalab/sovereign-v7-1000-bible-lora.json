@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "KANOALAB/Sovereign-v7.1000-Bible-LoRA",
+  "slug": "kanoalab-sovereign-v7-1000-bible-lora",
+  "author": "KANOALAB",
+  "url": "https://huggingface.co/KANOALAB/Sovereign-v7.1000-Bible-LoRA",
+  "created_at": "2026-09-07T15:26:17.000Z",
+  "updated_at": "2026-09-07T16:13:20.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 103546880,
+  "parameters_human": "103.5M",
+  "storage_bytes": 414337624,
+  "storage_human": "414 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watch Anime Online | Anime-Planet",
+      "url": "https://www.anime-planet.com/anime/watch-online/",
+      "snippet": "Watch a selection of anime episodes on Anime-Planet. All videos are legal and industry-supported due to partnerships with the anime …"
+    },
+    {
+      "title": "The Ultimate Stable Diffusion LoRA Guide (Downloading, Usage, Training)",
+      "url": "https://betterwaifu.com/blog/stable-diffusion-lora",
+      "snippet": "In this guide, we’ll briefly cover what a LoRA is, how it compares to other fine-tuning techniques, showcase some popular LoRAs, show you how to run them, and finally, show you how to train one. This is part 4 of the Stable Diffusion for Beginners series: What are LoRAs? A LoRA is a type of training method for fine-tuningStable Diffusion models."
+    },
+    {
+      "title": "Anime Recommendations, Reviews, Manga and More! | Anime-Planet",
+      "url": "https://www.anime-planet.com/",
+      "snippet": "Discover anime and manga, track your progress, get personalized recommendations."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,910 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Streaming Anime - Reddit",
+      "url": "https://www.reddit.com/r/StreamingAnime/wiki/topsites/?f=flair_name%3A%22Recommendations%22",
+      "snippet": "Subreddit to discuss anything related to streaming anime online. Sites, Apps, News, Memes, Tech Tips, Tools, Extensions, …"
+    }
+  ]
+}

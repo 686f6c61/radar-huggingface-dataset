@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mateplo/adult-income-classifier",
+  "slug": "mateplo-adult-income-classifier",
+  "author": "Mateplo",
+  "url": "https://huggingface.co/Mateplo/adult-income-classifier",
+  "created_at": "2026-09-07T09:44:19.000Z",
+  "updated_at": "2026-09-07T10:28:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "onnx",
+    "tabular-classification",
+    "adult-income",
+    "mlflow",
+    "mlops",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 473016,
+  "storage_human": "473016 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Odkupię Login do HGS Data - Poszukiwane Stanowisko na Jedno …",
+      "url": "https://www.elektroda.pl/rtvforum/topic3898989.html",
+      "snippet": "Jun 9, 2022 · Odkupię login do HGS Data na jedno stanowisko. Szukam dostępu do systemu HGS Data dla jednego użytkownika. …"
+    },
+    {
+      "title": "Adult Income Classifier - a Hugging Face Space by Mateplo",
+      "url": "https://huggingface.co/spaces/Mateplo/adult-income-classifier",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "Odsprzedam login do HGS-DATA - Hella Gutmann Solutions, ważność …",
+      "url": "https://www.elektroda.pl/rtvforum/topic3725640.html",
+      "snippet": "Sep 1, 2020 · Odsprzedaję login do HGS-DATA - Hella Gutmann Solutions, ważny przez 3 lata. Kto jest zainteresowany? Jakie są …"
+    },
+    {
+      "title": "Matthew-J-Lew/adult-income-classifier-ml - GitHub",
+      "url": "https://github.com/Matthew-J-Lew/adult-income-classifier-ml/tree/main",
+      "snippet": "🤖 Adult Income Classifier ML This project builds and evaluates machine learning models to predict whether an individual's income exceeds $50K per year based on the Adult Census Income dataset."
+    },
+    {
+      "title": "[Rozwiązano] Vdd i Vss - co to za oznaczenia? - elektroda.pl",
+      "url": "https://www.elektroda.pl/rtvforum/topic579264.html",
+      "snippet": "Sep 6, 2006 · Co oznaczają oznaczenia Vdd i Vss w schematach elektronicznych? Jak je podłączyć w układzie? Czy to rzeczywiście …"
+    }
+  ]
+}

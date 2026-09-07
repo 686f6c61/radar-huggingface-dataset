@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shubhamrao1234/projecct",
+  "slug": "shubhamrao1234-projecct",
+  "author": "Shubhamrao1234",
+  "url": "https://huggingface.co/Shubhamrao1234/projecct",
+  "created_at": "2026-09-07T13:19:33.000Z",
+  "updated_at": "2026-09-07T13:19:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Learn All About Frosted Glass Designs For Your Home",
+      "url": "https://www.designcafe.com/blog/home-interiors/frosted-glass-design-ideas/",
+      "snippet": "Feb 4, 2026 · Enhance the elegance and privacy of your home with these frosted glass design ideas. Explore versatile applications …"
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now."
+    },
+    {
+      "title": "17+ Amazing Frosted Glass Designs to Inspire Your Creativity ...",
+      "url": "https://craftering.com/frosted-glass-designs/",
+      "snippet": "Feb 10, 2026 · Geometric patterns on frosted glass bring a modern edge to any space. These designs are both stylish and versatile, …"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Frosted Glass Designs: Complete Guide & Applications",
+      "url": "https://www.homelane.com/design-ideas/home-interior-design/everything-you-need-to-know-about-frosted-glass-designs-and-their-applications/",
+      "snippet": "Aug 25, 2026 · Discover the best frosted glass design tips to transform your home! Uncover the dual purpose of aesthetics and …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dogeum/classify_tokens_demo_re",
+  "slug": "dogeum-classify_tokens_demo_re",
+  "author": "dogeum",
+  "url": "https://huggingface.co/dogeum/classify_tokens_demo_re",
+  "created_at": "2026-09-07T09:55:08.000Z",
+  "updated_at": "2026-09-07T09:55:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:dogeum/classify_tokens_dataset_demo_re",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mon compte en ligne - gérez vos comptes| Banque Populaire",
+      "url": "https://www.banquepopulaire.fr/banque-a-distance/espace-connecte-actuel/",
+      "snippet": "Gérez votre compte en ligne grâce à votre espace sécurisé Banque Populaire. Virements, édition de RIB, gestion des plafonds, …"
+    },
+    {
+      "title": "dogeum/classify_tokens_dataset_demo_re - Hugging Face",
+      "url": "https://huggingface.co/datasets/dogeum/classify_tokens_dataset_demo_re",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Banque Populaire Alsace Lorraine Champagne | BPALC",
+      "url": "https://www.banquepopulaire.fr/bpalc/",
+      "snippet": "Découvrez l'offre Banque Populaire Alsace Lorraine Champagne : compte en ligne, cartes bancaires, assurances, épargne."
+    },
+    {
+      "title": "dogeum/classify_demo_brightness · Hugging Face",
+      "url": "https://huggingface.co/dogeum/classify_demo_brightness",
+      "snippet": "Instructions to use dogeum/classify_demo_brightness with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Suite Entreprise.COM - Groupe Banque Populaire",
+      "url": "https://suiteentreprise.banquepopulaire.fr/account/login",
+      "snippet": "Banque Populaire Méditerranée Banque Populaire Occitane Banque Populaire Rives de Paris Banque Populaire Val de France …"
+    }
+  ]
+}

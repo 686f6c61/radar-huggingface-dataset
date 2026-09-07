@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "FlorindoDev/OutfitTransformer-weights",
+  "slug": "florindodev-outfittransformer-weights",
+  "author": "FlorindoDev",
+  "url": "https://huggingface.co/FlorindoDev/OutfitTransformer-weights",
+  "created_at": "2026-09-07T17:29:20.000Z",
+  "updated_at": "2026-09-07T17:53:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "pytorch",
+    "outfit-transformer",
+    "fashion",
+    "compatibility-prediction",
+    "complementary-item-retrieval",
+    "embeddings",
+    "en",
+    "it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21402055502,
+  "storage_human": "21.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chess.com - Play Chess Online - Free Games",
+      "url": "https://www.chess.com/",
+      "snippet": "Play chess online for free on Chess.com with over 250 million members from around the world. Have fun playing with friends or …"
+    },
+    {
+      "title": "GitHub - FlorindoDev/OutfitTransformer",
+      "url": "https://github.com/FlorindoDev/OutfitTransformer",
+      "snippet": "OutfitTransformer Implementazione PyTorch dell'architettura descritta nel paper OutfitTransformer: Learning Outfit Representations for Fashion Recommendation. Il progetto codifica immagini e descrizioni dei capi, usa self-attention per modellare le relazioni nell'outfit e fornisce due task:"
+    },
+    {
+      "title": "Play Chess Online for Free with Friends & Family",
+      "url": "https://www.chess.com/play",
+      "snippet": "Challenge a friend to a game of online chess. Search by email or username and choose from a variety of game formats. Play for free …"
+    },
+    {
+      "title": "owj0421/outfit-transformer | DeepWiki",
+      "url": "https://deepwiki.com/owj0421/outfit-transformer",
+      "snippet": "This document provides a comprehensive overview of the Outfit Transformer repository, a fashion recommendation system that implements and enhances the \"Outfit Transformer\" model from CVPR 2023. The system performs two primary tasks: compatibility prediction (CP) between fashion items and complementary item retrieval (CIR) for outfit completion."
+    },
+    {
+      "title": "lichess.org • Free Online Chess",
+      "url": "https://lichess.org/",
+      "snippet": "Free online chess server. Play chess in a clean interface. No registration, no ads, no plugin required. Play chess with the computer, …"
+    }
+  ]
+}

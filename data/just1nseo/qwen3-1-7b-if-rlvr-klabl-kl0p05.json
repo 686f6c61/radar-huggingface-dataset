@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "just1nseo/qwen3-1.7b-if-rlvr-klabl-kl0p05",
+  "slug": "just1nseo-qwen3-1-7b-if-rlvr-klabl-kl0p05",
+  "author": "just1nseo",
+  "url": "https://huggingface.co/just1nseo/qwen3-1.7b-if-rlvr-klabl-kl0p05",
+  "created_at": "2026-09-07T17:28:37.000Z",
+  "updated_at": "2026-09-07T17:29:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "verl",
+    "grpo",
+    "rlvr",
+    "instruction-following",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6893757902,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skyscanner",
+      "url": "https://www.skyscanner.es/?msockid=318c2d7f58d06be43bfa3ab259626a1c",
+      "snippet": "Skyscanner es un buscador de vuelos, alquiler de coches y hoteles. Analizamos las principales aerolíneas y proveedores de viajes …"
+    },
+    {
+      "title": "just1nseo/qwen3-1.7b-if-rlvr-klabl-kl0p02 · Hugging Face",
+      "url": "https://huggingface.co/just1nseo/qwen3-1.7b-if-rlvr-klabl-kl0p02",
+      "snippet": "Instructions to use just1nseo/qwen3-1.7b-if-rlvr-klabl-kl0p02 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ofertas de vuelos - Compara ofertas de viajes | Skyscanner",
+      "url": "https://www.skyscanner.es/vuelos?msockid=318c2d7f58d06be43bfa3ab259626a1c",
+      "snippet": "Compara ofertas de vuelos y descubre ofertas de viajes con Skyscanner. Reserva las mejores ofertas de vuelos hoy."
+    },
+    {
+      "title": "Qwen3 1.7B Fine-Tuning Guide — distil labs",
+      "url": "https://www.distillabs.ai/learn/qwen3-1-7b-fine-tuning-guide/",
+      "snippet": "Qwen3 1.7B Fine-Tuning Guide Qwen3-1.7B is the model the distil labs docs tell you to start with when you have no stronger constraint. It is small enough to serve on a modest GPU, ranks mid-table after fine-tuning across eight tasks, and supports every task type the platform offers, including tool calling."
+    },
+    {
+      "title": "Seguimiento de vuelos | Estado de vuelos y retrasos en ... - Skyscanner",
+      "url": "https://www.skyscanner.es/seguimiento-de-vuelos?msockid=318c2d7f58d06be43bfa3ab259626a1c",
+      "snippet": "Rastrea cualquier vuelo en tiempo real con el seguimiento de Skyscanner. Consulta en tiempo real el estado de los vuelos, los …"
+    }
+  ]
+}

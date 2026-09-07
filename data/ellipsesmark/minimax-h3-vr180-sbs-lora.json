@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "EllipsesMark/minimax-h3-vr180-sbs-lora",
+  "slug": "ellipsesmark-minimax-h3-vr180-sbs-lora",
+  "author": "EllipsesMark",
+  "url": "https://huggingface.co/EllipsesMark/minimax-h3-vr180-sbs-lora",
+  "created_at": "2026-09-05T07:39:21.000Z",
+  "updated_at": "2026-09-05T07:39:22.000Z",
+  "license": "minimax-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "text-to-video",
+    "video",
+    "audio",
+    "minimax",
+    "minimax-h3",
+    "hailuo",
+    "vr180",
+    "stereoscopic",
+    "side-by-side",
+    "vr",
+    "fal",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149053411,
+  "storage_human": "149 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Testrapport Giant Prime E+ 1 - Elektrische fietsen kiezen",
+      "url": "https://elektrischefietsenkiezen.nl/testrapport/giant/2014/prime-e-plus-1",
+      "snippet": "De middenmotor, is in 2014 helemaal doorgebroken. De motor is vlak bij de trapas geplaatst en het biedt een hele natuurlijke …"
+    },
+    {
+      "title": "EllipsesMark/minimax-h3-vr180-sbs-lora · Hugging Face",
+      "url": "https://huggingface.co/EllipsesMark/minimax-h3-vr180-sbs-lora",
+      "snippet": "MiniMax H3 · VR180 stereoscopic side-by-side LoRA A LoRA for MiniMax H3 (Hailuo 3.0)that makes the model shoot VR180 stereo video: one frame holds the left-eye view on the left and the right-eye view on the right, each a 180°×180° half-equirectangular hemisphere, 24 fps, with H3's native audio. Un-squeeze the 21:9 output to 2:1, tag it with spherical metadata, and it plays in a Quest ..."
+    },
+    {
+      "title": "Giant Prime series – Accu.nl",
+      "url": "https://www.accu.nl/collections/giant-prime-series",
+      "snippet": "Giant Prime E+ 0 2018 Giant Prime E+ 0 LTD (2016) Giant Prime E+ 1 (2014) Giant Prime E+ 1 (2016) Giant Prime E+ 1 Disc 2015 …"
+    },
+    {
+      "title": "EllipsesMark/minimax-h3-vr180-sbs-lora at main - Hugging Face",
+      "url": "https://huggingface.co/EllipsesMark/minimax-h3-vr180-sbs-lora/tree/main",
+      "snippet": "Instructions to use EllipsesMark/minimax-h3-vr180-sbs-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "giant - prime-e-plus-1 (2017)",
+      "url": "https://orienteer.nl/elektrischefietsen/specificaties/giant/2017/prime-e-plus-1",
+      "snippet": "fabrikant: Giant model: Prime E+ 1 introductie: 2017 status: productie gestopt adviesprijs: 2799 euro actieradius (opgave fabrikant): …"
+    }
+  ]
+}

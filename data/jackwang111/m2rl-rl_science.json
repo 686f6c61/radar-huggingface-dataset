@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jackwang111/M2RL-RL_Science",
+  "slug": "jackwang111-m2rl-rl_science",
+  "author": "Jackwang111",
+  "url": "https://huggingface.co/Jackwang111/M2RL-RL_Science",
+  "created_at": "2026-09-07T12:59:44.000Z",
+  "updated_at": "2026-09-07T12:59:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jumped on a Marinoni Special Craigslist find and scored big - Bike …",
+      "url": "https://www.bikeforums.net/classic-vintage/732080-jumped-marinoni-special-craigslist-find-scored-big.html",
+      "snippet": "May 2, 2011 · Jumped on a Marinoni Special Craigslist find and scored big My best gal and I spent an entire evening last week driving …"
+    },
+    {
+      "title": "GitHub - Mosi-AI/M2RL",
+      "url": "https://github.com/Mosi-AI/M2RL",
+      "snippet": "Contribute to Mosi-AI/M2RL development by creating an account on GitHub."
+    },
+    {
+      "title": "Classic & Vintage - Bike Forums",
+      "url": "https://www.bikeforums.net/classic-vintage/",
+      "snippet": "Jun 13, 2005 · Classic & Vintage - This forum is to discuss the many aspects of classic and vintage bicycles, including musclebikes, …"
+    },
+    {
+      "title": "M2RL/M2RL at main · Mosi-AI/M2RL · GitHub",
+      "url": "https://github.com/Mosi-AI/M2RL/tree/main/M2RL",
+      "snippet": "Contribute to Mosi-AI/M2RL development by creating an account on GitHub."
+    },
+    {
+      "title": "The Wacky World of Craigslist and eBay Ads - Bike Forums",
+      "url": "https://www.bikeforums.net/classic-vintage/530402-wacky-world-craigslist-ebay-ads.html",
+      "snippet": "Apr 13, 2009 · Classic & Vintage - The Wacky World of Craigslist and eBay Ads - You asked, you get. This is the new edition of the …"
+    }
+  ]
+}

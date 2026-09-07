@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bdougie/smollm3-pokemon-red-lora",
+  "slug": "bdougie-smollm3-pokemon-red-lora",
+  "author": "bdougie",
+  "url": "https://huggingface.co/bdougie/smollm3-pokemon-red-lora",
+  "created_at": "2026-09-07T17:08:24.000Z",
+  "updated_at": "2026-09-07T18:15:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:HuggingFaceTB/SmolLM3-3B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 259104403,
+  "storage_human": "259 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Co oznacza \"gosig\"? - Pytanie o szwedzki | HiNative",
+      "url": "https://pl.hinative.com/questions/4081422",
+      "snippet": "Cozy, \"det är en gosig filt\"=\"it is a cozy blanket\" Or cuddly. For describing a thing thats cozy I would rather use \"mysig\" though but …"
+    },
+    {
+      "title": "bdougie/smollm3-forest-lora · Hugging Face",
+      "url": "https://huggingface.co/bdougie/smollm3-forest-lora",
+      "snippet": "Instructions to use bdougie/smollm3-forest-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Was ist der Unterschied zwischen \"cozy\" und \"cosy\" - HiNative",
+      "url": "https://de.hinative.com/questions/7802489",
+      "snippet": "Synonym für cozy Examples: \"See how nice and cozy it is in here?\" (US) \"This fireplace makes the living room so bloody cosy.\" …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=pokemon&p=2&sort=trending",
+      "snippet": "Clear all Mycsina/pokemon-gan 3.58M•Updated Jul 3 bdougie/smollm3-forest-lora Text Generation •Updated Jul 7 simonko912/pikadiffusion Text-to-Image •0.1B•Updated Jul 27•34•3"
+    },
+    {
+      "title": "Jaka jest różnica między \"cosy\" i \"cozy \" ? | HiNative",
+      "url": "https://pl.hinative.com/questions/22509384",
+      "snippet": "Synonim dla: cosy Cosy would be the English (UK) pronunciation, and cozy would be the English (US) pronunciation. In English (US), …"
+    }
+  ]
+}

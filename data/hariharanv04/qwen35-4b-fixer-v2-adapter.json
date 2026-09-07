@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hariharanv04/qwen35-4b-fixer-v2-adapter",
+  "slug": "hariharanv04-qwen35-4b-fixer-v2-adapter",
+  "author": "hariharanv04",
+  "url": "https://huggingface.co/hariharanv04/qwen35-4b-fixer-v2-adapter",
+  "created_at": "2026-09-07T14:39:08.000Z",
+  "updated_at": "2026-09-07T14:39:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129934448,
+  "storage_human": "130 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'appli mydlink lite du Camera ip D-link DCS 2132L: fiabilité?",
+      "url": "https://forums.commentcamarche.net/forum/affich-30769345-l-appli-mydlink-lite-du-camera-ip-d-link-dcs-2132l-fiabilite",
+      "snippet": "Bonjour, Je suis sur le point d'acheter un Camera ip D-link DCS 932L, pour t&eacute;l&eacute;-surveiller ma maison via mon …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Instructions to use Qwen/Qwen3.5-4B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Photos introuvables [Résolu] - Forum Windows 10 - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35181546-photos-introuvables",
+      "snippet": "Merci pour votre réponse. Mais j'avais Picasa et il a été remplacé par google photos depuis que je suis sur windows 10. Je viens de …"
+    },
+    {
+      "title": "hariharanv04/qwen3.5-4b-refined1 · Hugging Face",
+      "url": "https://huggingface.co/hariharanv04/qwen3.5-4b-refined1",
+      "snippet": "Use this model Uploaded finetuned model Uploaded finetuned model Developed by:hariharanv04 License:apache-2.0 Finetuned from model :unsloth/Qwen3.5-4B This qwen3_5 model was trained 2x faster with Unslothand Huggingface's TRL library."
+    },
+    {
+      "title": "Conectar camaras IP Dlink - Comunidad Movistar - 2723260",
+      "url": "https://comunidad.movistar.es/discussions/soporte-fibra-optica/conectar-camaras-ip-dlink/2723260",
+      "snippet": "Dec 6, 2015 · Hola buenas noches, Ayer despues de varios meses esperando la conexión de fibra en mi domicilio llego por FIN (ya …"
+    }
+  ]
+}

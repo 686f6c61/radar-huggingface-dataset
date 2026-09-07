@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/EleutherAI_pythia-6.9b-auto_gptq-int8-gs64-sym",
+  "slug": "fbaldassarri-eleutherai_pythia-6-9b-auto_gptq-int8-gs64-sym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/EleutherAI_pythia-6.9b-auto_gptq-int8-gs64-sym",
+  "created_at": "2026-09-07T15:28:47.000Z",
+  "updated_at": "2026-09-07T15:47:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "gptq",
+    "auto-gptq",
+    "autogptq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "pythia",
+    "eleutheraI",
+    "8-bit",
+    "en",
+    "dataset:EleutherAI/pile",
+    "base_model:EleutherAI/pythia-6.9b",
+    "base_model:quantized:EleutherAI/pythia-6.9b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2152210432,
+  "parameters_human": "2.15B",
+  "storage_bytes": 8405245712,
+  "storage_human": "8.4 GB",
+  "base_model": "EleutherAI/pythia-6.9b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visiter l'Amazonie au Brésil : guide de voyage - PlanetaEXO",
+      "url": "https://planetaexo.com/fr/blog/visiter-amazonie-bresil-guide-de-voyage",
+      "snippet": "Jul 27, 2026 · Visiter l'Amazonie : le guide de voyage complet pour préparer votre séjour en forêt, de Manaus au Rio Negro, avec …"
+    },
+    {
+      "title": "fbaldassarri/EleutherAI_pythia-6.9b-deduped-auto_gptq-int8-gs64-sym ...",
+      "url": "https://huggingface.co/fbaldassarri/EleutherAI_pythia-6.9b-deduped-auto_gptq-int8-gs64-sym",
+      "snippet": "Note: this INT8 version of Pythia 6.9b dedupedhas been quantized for inference on Intel CPU, Intel iGPU (Arc) via intel-extension-for-pytorch, Intel NPU (AI Boost on Core Ultra series) via OpenVINO."
+    },
+    {
+      "title": "Les 10 meilleurs circuits en Forêt Amazonienne 2026/2027 - TourRadar",
+      "url": "https://www.tourradar.fr/v/region-foret-amazonienne",
+      "snippet": "L'itinéraire proposait de nombreuses activités, notamment des randonnées dans la nature, des balades en bateau, des baignades et …"
+    },
+    {
+      "title": "EleutherAI_pythia-6.9b-auto_gptq-int4-gs64-sym - Hugging Face",
+      "url": "https://huggingface.co/fbaldassarri/EleutherAI_pythia-6.9b-auto_gptq-int4-gs64-sym",
+      "snippet": "Model Information Quantized version of EleutherAI/pythia-6.9b using torch.bfloat16 for quantization tuning. 4 bits (INT4) group size = 64 Symmetrical Quantization Method: WoQ — GPTQ (AutoGPTQ algorithm) Fast and low memory, 2-3X speedup (slight accuracy drop at W4G64) Quantization framework: Intel AutoRound v0.13.1 Note: this INT4 version of Pythia 6.9b has been quantized for inference on ..."
+    },
+    {
+      "title": "Forêt amazonienne brésilienne : voyage, faune et guide",
+      "url": "https://lesgrandesevasions.com/bresil/guides/nature-bresil/amazonie",
+      "snippet": "Forêt amazonienne, faune exceptionnelle, Manaus, Rio Negro, communautés indigènes... Guide complet pour préparer votre voyage …"
+    }
+  ]
+}

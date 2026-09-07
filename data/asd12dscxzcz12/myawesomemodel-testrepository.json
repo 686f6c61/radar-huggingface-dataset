@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asd12dscxzcz12/MyAwesomeModel-TestRepository",
+  "slug": "asd12dscxzcz12-myawesomemodel-testrepository",
+  "author": "asd12dscxzcz12",
+  "url": "https://huggingface.co/asd12dscxzcz12/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-07T12:53:36.000Z",
+  "updated_at": "2026-09-07T13:11:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme ...",
+      "url": "https://www.webdeogren.com/2025-2026-tum-siniflarin-1-donem-1-yazili-sorulari-ve-degerlendirme-calismalari-ornek.html",
+      "snippet": "Oct 15, 2025 · 2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme Çalışmaları (Örnek) Tüm sınıf ve ders bazında …"
+    },
+    {
+      "title": "asd12dsacxz12dsa/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/asd12dsacxz12dsa/MyAwesomeModel",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Web'de Öğren",
+      "url": "https://www.webdeogren.com/",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya Sitemizde yayınlanan içeriklerin büyük bir kısmı sitemize ait yada içerik sahiplerinin izinleri …"
+    },
+    {
+      "title": "DSD1231/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/DSD1231/MyAwesomeModel-TestRepository",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model. System Prompt We recommend using the following system prompt with a specific date. You are MyAwesomeModel, a helpful AI assistant."
+    },
+    {
+      "title": "[01] 2026-2027 4. Sınıf Müzik Yıllık Planı – Web'de Öğren",
+      "url": "https://www.webdeogren.com/dosya/01-2026-2027-4-sinif-muzik-yillik-plani",
+      "snippet": "Aug 15, 2026 · Web'de Öğren - Birlikte En Doğruya Dosya Boyutu 21.77 KB İndirme Limiti 1 Yüklenme Tarihi 15 Ağustos 2026 Son …"
+    }
+  ]
+}

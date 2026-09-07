@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aliRafik/Qwen3_4B_Thinking_Tuning_Data_Unsloth_OpenMathReasoning_ANd_Modotte_MathX_5M_16bit",
+  "slug": "alirafik-qwen3_4b_thinking_tuning_data_unsloth_openmathreasoning_and_modotte_mathx_5m_16bit",
+  "author": "aliRafik",
+  "url": "https://huggingface.co/aliRafik/Qwen3_4B_Thinking_Tuning_Data_Unsloth_OpenMathReasoning_ANd_Modotte_MathX_5M_16bit",
+  "created_at": "2026-09-07T15:46:13.000Z",
+  "updated_at": "2026-09-07T16:05:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": "unsloth/qwen3-4b-thinking-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "目前AI编程工具哪个最好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973709336363701431",
+      "snippet": "Copilot Workspace（2025 Beta 发布）：实验性功能，对标 Claude Code 的任务分解能力，允许用户输入需求后由系统拆解为多个子 …"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024). This flexibility ensures that developers and users ..."
+    },
+    {
+      "title": "Copilot键怎么改成Ctrl键？ - 知乎",
+      "url": "https://www.zhihu.com/question/641618618",
+      "snippet": "微软应用商店下载powertoys，进入里面的键盘管理选项，再进入里面的重映射快捷键。 按照如下图选择，确定即可。 这样Copilot键 …"
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Vibe Coding 體驗 - 製作描字帖 (含 Github Copilot 節費心得)-黑暗執行緒",
+      "url": "https://blog.darkthread.net/blog/vibe-coding-case/",
+      "snippet": "Feb 1, 2026 · LLM 應該沒有精確到像素級的影像識別能力? 才會有走錯路跟差1像素的問題 2026-02-02 Chan Vibe Coding 體驗 - 製作 …"
+    }
+  ]
+}

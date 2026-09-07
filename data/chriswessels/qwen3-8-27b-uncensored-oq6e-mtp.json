@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "chriswessels/Qwen3.8-27B-Uncensored-oQ6e-mtp",
+  "slug": "chriswessels-qwen3-8-27b-uncensored-oq6e-mtp",
+  "author": "chriswessels",
+  "url": "https://huggingface.co/chriswessels/Qwen3.8-27B-Uncensored-oQ6e-mtp",
+  "created_at": "2026-09-07T17:19:05.000Z",
+  "updated_at": "2026-09-07T17:26:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "abliterated",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "bf16",
+    "post-training",
+    "fine-tuning",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 23729097780,
+  "storage_human": "23.7 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Instructions to use Qwen/Qwen3.8-27B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "chriswessels/Qwopus3.8-27B-Flash-oQ6e-mtp · Hugging Face",
+      "url": "https://huggingface.co/chriswessels/Qwopus3.8-27B-Flash-oQ6e-mtp",
+      "snippet": "Qwopus3.8-27B-Flashis a fine-tuned model built on Qwen3.8-27B. It is designed to retain strong general capability while substantially lowering reasoning cost and response time for practical, long-running agent workloads."
+    },
+    {
+      "title": "YouTube – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=fr",
+      "snippet": "Téléchargez l'application YouTube officielle sur votre téléphone ou tablette Android. Découvrez les contenus regardés partout dans le …"
+    }
+  ]
+}

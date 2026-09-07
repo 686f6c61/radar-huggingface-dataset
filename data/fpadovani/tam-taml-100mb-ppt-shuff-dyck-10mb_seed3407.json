@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed3407",
+  "slug": "fpadovani-tam-taml-100mb-ppt-shuff-dyck-10mb_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed3407",
+  "created_at": "2026-09-07T15:42:16.000Z",
+  "updated_at": "2026-09-07T16:12:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/tam_taml_100mb",
+    "base_model:finetune:goldfish-models/tam_taml_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 1998446898,
+  "storage_human": "2.0 GB",
+  "base_model": "goldfish-models/tam_taml_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Kleinanzeigen",
+      "url": "https://www.ebay-kleinanzeigen.de/s-heimwerken/berlin/c84l3331r100",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "tam-taml-10mb-ppt-shuff-dyck-100mb_seed3407 API & Inference Endpoint ...",
+      "url": "https://friendli.ai/models/fpadovani/tam-taml-10mb-ppt-shuff-dyck-100mb_seed3407",
+      "snippet": "Deploy tam-taml-10mb-ppt-shuff-dyck-100mb_seed3407 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "hin-deva-100mb-ppt-shuff-dyck-10mb_seed3407 - Hugging Face",
+      "url": "https://huggingface.co/fpadovani/hin-deva-100mb-ppt-shuff-dyck-10mb_seed3407",
+      "snippet": "Instructions to use fpadovani/hin-deva-100mb-ppt-shuff-dyck-10mb_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Fine-tuned Models for goldfish-models/tam_taml_10mb – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Afinetune%3Agoldfish-models%2Ftam_taml_10mb",
+      "snippet": "Text Generation •39.1M•Updated about 12 hours ago fpadovani/tam-taml-10mb-ppt-shuff-dyck-100mb_seed3407"
+    },
+    {
+      "title": "Swa Latn 100mb Ppt Shuff Dyck 10mb Seed10 by fpadovani",
+      "url": "https://llm-explorer.com/model/fpadovani%2Fswa-latn-100mb-ppt-shuff-dyck-10mb_seed10,1vcPI83ksZekOgiadTakZa",
+      "snippet": "Swa Latn 100mb Ppt Shuff Dyck 10mb Seed10 is an open-source 124.8m LLM by fpadovani. VRAM 0.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sean21/SEBAS_ANGULO",
+  "slug": "sean21-sebas_angulo",
+  "author": "sean21",
+  "url": "https://huggingface.co/sean21/SEBAS_ANGULO",
+  "created_at": "2026-09-07T15:21:21.000Z",
+  "updated_at": "2026-09-07T15:21:21.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أنواع الإعراب في العربية | الإعراب الظاهر–الإعراب بالنيابة–الإعراب ...",
+      "url": "https://www.youtube.com/watch?v=RnlJaNBggq0",
+      "snippet": "Jan 23, 2026 · في هذا الفيديو التعليمي المطوّل، نقدّم شرحًا شاملًا ومبسّطًا لأنواع الإعراب في اللغة العربية، موجّهًا للتلاميذ والطلبة وكل المهتمين بالنحو العربي.🔹 سنتعرّف ..."
+    },
+    {
+      "title": "Sebastian (@_sebas.angulo_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_sebas.angulo_/",
+      "snippet": "197 Followers, 181 Following, 4 Posts - Sebastian (@_sebas.angulo_) on Instagram: \"📌🇮🇩 🇮🇹x🇻🇪\""
+    },
+    {
+      "title": "الإعراب بالنيابة - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D8%B9%D8%B1%D8%A7%D8%A8_%D8%A8%D8%A7%D9%84%D9%86%D9%8A%D8%A7%D8%A8%D8%A9",
+      "snippet": "ثبِّت القسم الفرعي مواضع الإعراب بالنيابة. 1.1المثنى. 1.2الأسماء الستة. 1.3الجمع المؤنث السالم. 1.4الجمع المذكر السالم. 1.5الممنوع من الصرف. 1.6الأفعال الخمسة. 1.7الفعل المضارع المعتل الآخر."
+    },
+    {
+      "title": "Sebastian Angulo (@sebas___angulo) • Instagram photos and videos",
+      "url": "https://www.instagram.com/sebas___angulo/",
+      "snippet": "2,064 Followers, 462 Following, 14 Posts - Sebastian Angulo (@sebas___angulo) on Instagram: \"𝑻𝒓𝒖𝒔𝒕 𝒕𝒉𝒆 𝒑𝒓𝒐𝒄𝒆𝒔𝒔. ⚽️| @la_academiapc / @selevinotinto 💼| @rr11stars / @nedanafootball 🧤| @nyk.sport 🇻🇪/🇵🇹\""
+    },
+    {
+      "title": "الإعراب وخواته: كيف تستفيد من اللغة العربية بسهولة | TikTok",
+      "url": "https://www.tiktok.com/@moe_mogalli/video/7681875004308376862",
+      "snippet": "96 Likes, TikTok video from سراب الليل (@moe_mogalli): “شرح مبسط للإعراب وخواته مع أمثلة واضحة لطلبة اللغة العربية. تعلم قواعد النحو بطريقة مبسطة ومفيدة. #العربي …"
+    }
+  ]
+}

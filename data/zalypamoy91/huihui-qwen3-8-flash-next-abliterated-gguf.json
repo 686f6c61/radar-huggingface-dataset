@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Zalypamoy91/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF",
+  "slug": "zalypamoy91-huihui-qwen3-8-flash-next-abliterated-gguf",
+  "author": "Zalypamoy91",
+  "url": "https://huggingface.co/Zalypamoy91/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF",
+  "created_at": "2026-09-07T18:12:50.000Z",
+  "updated_at": "2026-09-07T18:12:50.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "unsloth",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 112242197984,
+  "storage_human": "112.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=321593b36fcb6a862cfa847e6e9d6b86",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF at main",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF/tree/main",
+      "snippet": "Instructions to use huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=321593b36fcb6a862cfa847e6e9d6b86",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Instructions to use Qwen/Qwen3.8-Flash-Next with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Envoi avec Vinted Go | Vinted",
+      "url": "https://www.vinted.fr/help/1110-envois-avec-vinted-go?msockid=321593b36fcb6a862cfa847e6e9d6b86",
+      "snippet": "Vinted Go achemine les colis d'une consigne / d'un point relais à une consigne / un point relais / l'adresse de l'acheteur. Livraison à …"
+    }
+  ]
+}

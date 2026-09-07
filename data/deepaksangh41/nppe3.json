@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "deepaksangh41/nppe3",
+  "slug": "deepaksangh41-nppe3",
+  "author": "deepaksangh41",
+  "url": "https://huggingface.co/deepaksangh41/nppe3",
+  "created_at": "2026-09-07T17:07:50.000Z",
+  "updated_at": "2026-09-07T17:07:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "23f3001356 (Shahbaaz Singh) - Hugging Face",
+      "url": "https://huggingface.co/23f3001356",
+      "snippet": "Organizations None yet models1 23f3001356/best-model-nppe3 Updated about 2 hours ago datasets0 None public yet"
+    },
+    {
+      "title": "MyBroadband – South Africa's biggest and best IT news website, …",
+      "url": "https://mybroadband.co.za/news/",
+      "snippet": "Jul 9, 2026 · MyBroadband – South Africa's biggest and best IT news website, covering the latest international and local IT and tech …"
+    },
+    {
+      "title": "Abhishek | dlgenai-nppe-model | Kaggle",
+      "url": "https://www.kaggle.com/models/abhisharma11/dlgenai-nppe-model",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    },
+    {
+      "title": "Vodacom Business adds Speedtest.net servers in SA",
+      "url": "https://mybroadband.co.za/news/broadband/11493-vodacom-business-adds-speedtest-net-servers-in-sa.html",
+      "snippet": "Feb 15, 2010 · Vodacom Business said it is planning additional speed test servers in the near future, but no details about the planned …"
+    }
+  ]
+}

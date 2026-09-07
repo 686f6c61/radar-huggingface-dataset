@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/nor-latn-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "slug": "fpadovani-nor-latn-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/nor-latn-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "created_at": "2026-09-07T13:03:04.000Z",
+  "updated_at": "2026-09-07T14:05:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed3407",
+    "base_model:finetune:fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 749860482,
+  "storage_human": "750 MB",
+  "base_model": "fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pietra pomice in casa: 10 usi pratici tra pulizie e giardino",
+      "url": "https://www.tuttogreen.it/pietra-pomice-usi-pratici-casa-pulizie-giardino/",
+      "snippet": "Jul 10, 2026 · La pietra pomice è una roccia vulcanica molto porosa. Proprio questa caratteristica la rende interessante in casa: …"
+    },
+    {
+      "title": "fpadovani/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 ...",
+      "url": "https://huggingface.co/fpadovani/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+      "snippet": "Instructions to use fpadovani/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Pietra pomice: a cosa serve, come si usa e dove trovarla",
+      "url": "https://www.viversano.net/bellezza/prodotti/pietra-pomice/",
+      "snippet": "Dec 6, 2025 · A cosa serve la pietra pomice La pietra pomice è un esfoliante naturale, di origine minerale, molto utilizzato per …"
+    },
+    {
+      "title": "fpadovani/tur-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 ...",
+      "url": "https://huggingface.co/fpadovani/tur-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+      "snippet": "Instructions to use fpadovani/tur-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Pietra pomice per i piedi: benefici, uso e quale scegliere",
+      "url": "https://www.melarossa.it/bellezza/pietra-pomice/",
+      "snippet": "Jul 17, 2025 · La pietra pomice è uno rimedio naturale, efficace e versatile, utile per esfoliare la pelle, levigare zone ispessite e …"
+    }
+  ]
+}

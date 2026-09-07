@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/PINN-TC",
+  "slug": "onescience-group-pinn-tc",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/PINN-TC",
+  "created_at": "2026-09-07T09:56:53.000Z",
+  "updated_at": "2026-09-07T09:56:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pinn_tc",
+    "OneScience",
+    "Earth Science",
+    "Physics-Informed Neural Network",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Webmail Login",
+      "url": "https://email.ionos.de/appsuite/api/oidc/init?flow=login&redirect=true&client=open-xchange-appsuite&version=7.10.6-46",
+      "snippet": "Webmail Login: Lesen Sie online Ihre E-Mails aus den E-Mail-Konten von Hosting-Verträgen."
+    },
+    {
+      "title": "OneScience-Group/PINNsformer · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/PINNsformer",
+      "snippet": "Model Overview PINNsFormer is a Transformer-based physics-informed neural network framework developed by researchers at the Georgia Institute of Technology and Carnegie Mellon University. It enables rapid prediction of solutions to time-dependent partial differential equations and their associated physical fields."
+    },
+    {
+      "title": "Files: Adding Folders",
+      "url": "https://email.ionos.de/appsuite/help/l10n/en_GB/ox.appsuite.user.sect.drive.folder.html",
+      "snippet": "Files: Adding Folders Learn how to create personal Files folders and how to set the view for shared Files folders:"
+    },
+    {
+      "title": "OneScience/src/onescience/models/pinnsformer/pinnsformer.py at main ...",
+      "url": "https://github.com/onescience-ai/OneScience/blob/main/src/onescience/models/pinnsformer/pinnsformer.py",
+      "snippet": "147 lines (115 loc) · 4.2 KB main OneScience / src / onescience / models / pinnsformer / pinnsformer.py Code Blame 147 lines (115 loc) · 4.2 KB Raw 1 2 3 4 5 6 7 8 ..."
+    },
+    {
+      "title": "Exporting tasks",
+      "url": "https://email.ionos.de/appsuite/help/l10n/en_GB/ox.appsuite.user.sect.tasks.manage.export.html",
+      "snippet": "You can export tasks in the iCal format. You can e.g. use this format to exchange tasks with other calendar applications. You can …"
+    }
+  ]
+}

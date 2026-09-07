@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "asadkhan89/Minimax-h3-Turbo-SLA",
+  "slug": "asadkhan89-minimax-h3-turbo-sla",
+  "author": "asadkhan89",
+  "url": "https://huggingface.co/asadkhan89/Minimax-h3-Turbo-SLA",
+  "created_at": "2026-09-07T17:49:37.000Z",
+  "updated_at": "2026-09-07T17:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "video-generation",
+    "image-to-video",
+    "audio-video-generation",
+    "lora",
+    "distillation",
+    "sparse-attention",
+    "sla",
+    "lightx2v",
+    "en",
+    "arxiv:2509.24006",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3339870800,
+  "storage_human": "3.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "lightx2v/Minimax-h3-Turbo-SLA · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo-SLA",
+      "snippet": "MiniMax-H3 Turbo-SLA is a 4-step distilled FL2V checkpoint for MiniMax-H3, enhanced with SLA (Sparse–Linear Attention)for more efficient inference. The model uses an 85% attention sparsity ratio. In our tested LightX2Vsetup, it delivers approximately 2.5× inference acceleration on an NVIDIA RTX 5090while retaining competitive visual quality."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "README.md · lightx2v/Minimax-h3-Turbo-SLA at main - Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo-SLA/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/de/german",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

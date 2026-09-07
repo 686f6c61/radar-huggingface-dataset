@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "techsword/wav2vec2-base-english-librispeech730h",
+  "slug": "techsword-wav2vec2-base-english-librispeech730h",
+  "author": "techsword",
+  "url": "https://huggingface.co/techsword/wav2vec2-base-english-librispeech730h",
+  "created_at": "2026-09-07T15:24:16.000Z",
+  "updated_at": "2026-09-07T15:27:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "pretraining",
+    "audio",
+    "feature-extraction",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 95044608,
+  "parameters_human": "95.0M",
+  "storage_bytes": 6843685392,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Where are Notepad temp/unsaved .txt files located?",
+      "url": "https://superuser.com/questions/1856217/where-are-notepad-temp-unsaved-txt-files-located",
+      "snippet": "Sep 19, 2024 · My guess would be \\AppData\\Local\\Temp, but keep in mind they may not be .txt files. Word for instance when doing …"
+    },
+    {
+      "title": "techsword/wav2vec2-base-english-librispeech730h-checkpoints at main",
+      "url": "https://huggingface.co/techsword/wav2vec2-base-english-librispeech730h-checkpoints/tree/main",
+      "snippet": "techsword / wav2vec2-base-english-librispeech730h-checkpoints like 0 Model card FilesFiles and versions Community main wav2vec2-base-english-librispeech730h-checkpoints 1 contributor History:2 commits techsword Upload folder using huggingface_hub 76f1d4e verified6 days ago .gitattributes 1.52 kB initial commit 6 days ago checkpoint_105_35000.pt ..."
+    },
+    {
+      "title": "A complete list of \"%%\" relative paths/variables in Windows Explorer in ...",
+      "url": "https://superuser.com/questions/1655266/a-complete-list-of-relative-paths-variables-in-windows-explorer-in-windows",
+      "snippet": "Jun 7, 2021 · In my search, most of them point to KNOWNFOLDERIDor the older CSIDL, but I don't know how to exactly apply them …"
+    },
+    {
+      "title": "Wav2Vec2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/wav2vec2",
+      "snippet": "Expected speedups Below is an expected speedup diagram comparing the pure inference time between the native implementation in transformers of the facebook/wav2vec2-large-960h-lv60-self model and the flash-attention-2 and sdpa (scale-dot-product-attention) versions. We show the average speedup obtained on the librispeech_asrclean validation split:"
+    },
+    {
+      "title": "windows - What is \"%AppData%\"? - Super User",
+      "url": "https://superuser.com/questions/632891/what-is-appdata",
+      "snippet": "The AppData\\Localand AppData\\Roaminglocations are the preferred locations for applications to store data that is not required to be …"
+    }
+  ]
+}

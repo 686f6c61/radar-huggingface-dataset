@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/LFM2.5-2.6B-ExecuTorch-XNNPACK-32k",
+  "slug": "experimentalmachines-lfm2-5-2-6b-executorch-xnnpack-32k",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/LFM2.5-2.6B-ExecuTorch-XNNPACK-32k",
+  "created_at": "2026-09-07T12:40:16.000Z",
+  "updated_at": "2026-09-07T12:40:32.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "kleidiai",
+    "android",
+    "on-device",
+    "arm",
+    "openweights",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1814892288,
+  "storage_human": "1.8 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-2.6B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+      "snippet": "Due to its efficient LFM2 architecture, LFM2.5-2.6B is the fastest model we tested, with decode speeds of 220 tokens/s on an M5 Max and 113 tokens/s on a Ryzen AI Max+ 395."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "LFM2.5 2.6B: Liquid Foundation Models - GitHub",
+      "url": "https://github.com/rishikksh20/lfm25-pytorch/",
+      "snippet": "A minimal PyTorch implementation of LiquidAI/LFM2.5-2.6B. LFM2.5 uses the LFM2 hybrid architecture and updates the vocabulary, context length, RoPE base, tokenizer, and post-training behavior. The project includes a local FastAPI chat service and a responsive single-page interface in static/index ..."
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

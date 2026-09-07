@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kohils/dlp-nppe3-denoise-sr",
+  "slug": "kohils-dlp-nppe3-denoise-sr",
+  "author": "kohils",
+  "url": "https://huggingface.co/kohils/dlp-nppe3-denoise-sr",
+  "created_at": "2026-09-07T17:07:38.000Z",
+  "updated_at": "2026-09-07T17:28:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-restoration",
+    "denoising",
+    "super-resolution",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 411104645,
+  "storage_human": "411 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleinanzeigen – früher eBay Kleinanzeigen. Anzeigen gratis ...",
+      "url": "https://www.kleinanzeigen.de/?msockid=200b409aa936693409575757a85a686c",
+      "snippet": "Kostenlose Anzeigen aufgeben mit Kleinanzeigen. Gebraucht oder Neu, Privat oder Gewerbe - Jetzt gratis inserieren auf …"
+    },
+    {
+      "title": "AbdulAhadRauf/Denoising-4-Super-Resolution-of-Low-Light-Images - GitHub",
+      "url": "https://github.com/AbdulAhadRauf/Denoising-4-Super-Resolution-of-Low-Light-Images",
+      "snippet": "📄 Competition Link DLP Jan 2025 NPPE3 on Kaggle 🏆 Overview Build robust deep learning pipelines that simultaneously denoiseand perform 4× super-resolutionon low-light images, transforming noisy, low-resolution inputs into high-quality, high-resolution outputs. Start:April 4, 2025"
+    },
+    {
+      "title": "eBay Kleinanzeigen ist jetzt Kleinanzeigen.",
+      "url": "https://www.kleinanzeigen.de/s-kategorien.html?msockid=200b409aa936693409575757a85a686c",
+      "snippet": "Willkommen bei Kleinanzeigen. Melde dich hier an, oder erstelle ein neues Konto, damit du:"
+    },
+    {
+      "title": "HUGGINGFACENOOB123/dlp-nppe3-denoise-sr · Hugging Face",
+      "url": "https://huggingface.co/HUGGINGFACENOOB123/dlp-nppe3-denoise-sr",
+      "snippet": "HUGGINGFACENOOB123 dlp-nppe3-denoise-sr like1 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Kleinanzeigen.com - Kostenlose Kleinanzeigen",
+      "url": "https://de.kleinanzeigen.com/",
+      "snippet": "196.520 Kleinanzeigen gefunden. Kostenlos, schnell und einfach Kleinanzeigen aufgeben sofort online! Jetzt finden oder inserieren …"
+    }
+  ]
+}

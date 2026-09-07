@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiliato/lso_back_combined_slim_abs_cropped_GR00T17_rel",
+  "slug": "kiliato-lso_back_combined_slim_abs_cropped_gr00t17_rel",
+  "author": "kiliato",
+  "url": "https://huggingface.co/kiliato/lso_back_combined_slim_abs_cropped_GR00T17_rel",
+  "created_at": "2026-09-07T13:30:16.000Z",
+  "updated_at": "2026-09-07T13:31:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:kiliato/lso_back_combined_slim_abs_cropped",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219888,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huawei Enterprise Support Community",
+      "url": "https://forum.huawei.com/enterprise/en/edesk-pro-installation-procedure/thread/667279308730810368-667213852955258880",
+      "snippet": "We're sorry but web site doesn't work properly without JavaScript enabled. Please enable it to continue."
+    },
+    {
+      "title": "kiliato/lso_back_combined_slim_abs_GR00T17 · Hugging Face",
+      "url": "https://huggingface.co/kiliato/lso_back_combined_slim_abs_GR00T17",
+      "snippet": "Instructions to use kiliato/lso_back_combined_slim_abs_GR00T17 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "forum.huawei.com",
+      "url": "https://forum.huawei.com/enterprise/en/how-do-i-download-edesk-translation-tool/thread/667271277183909888-667213856029683712",
+      "snippet": "We're sorry but web site doesn't work properly without JavaScript enabled. Please enable it to continue."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Huawei",
+      "url": "https://forum.huawei.com/",
+      "snippet": "面向华为企业客户、渠道合作伙伴推出的互动社区。可以在这里寻找技术支持、分享行业知识、结识兴趣伙伴等。"
+    }
+  ]
+}

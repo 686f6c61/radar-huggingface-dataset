@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "malaiwah/glm-moe-dsa-tiny-random-bf16",
+  "slug": "malaiwah-glm-moe-dsa-tiny-random-bf16",
+  "author": "malaiwah",
+  "url": "https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-bf16",
+  "created_at": "2026-09-07T12:38:28.000Z",
+  "updated_at": "2026-09-07T12:49:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "fixture",
+    "testing",
+    "random-initialization",
+    "cpu",
+    "bfloat16",
+    "reproducibility",
+    "dataset:malaiwah/glm-moe-dsa-tiny-cpu-repro-v1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277848,
+  "parameters_human": "277848",
+  "storage_bytes": 572728,
+  "storage_human": "572728 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "tiny-random/glm-moe-dsa · Hugging Face",
+      "url": "https://huggingface.co/tiny-random/glm-moe-dsa",
+      "snippet": "This tiny model is intended for debugging. It is randomly initialized using the configuration adapted from zai-org/GLM-5."
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "tiny-random/glm-moe-dsa at main - Hugging Face",
+      "url": "https://huggingface.co/tiny-random/glm-moe-dsa/tree/main",
+      "snippet": "Text Generation Transformers Safetensors glm_moe_dsa conversational Model card Files Files and versions xet"
+    },
+    {
+      "title": "302 Moved - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "302 Moved The document has moved here."
+    }
+  ]
+}

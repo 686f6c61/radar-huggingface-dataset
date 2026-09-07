@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "shubhendu17/Qwen2-VL-7B-MobileAgent",
+  "slug": "shubhendu17-qwen2-vl-7b-mobileagent",
+  "author": "shubhendu17",
+  "url": "https://huggingface.co/shubhendu17/Qwen2-VL-7B-MobileAgent",
+  "created_at": "2026-09-07T17:22:56.000Z",
+  "updated_at": "2026-09-07T17:26:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_vl",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8291375616,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16594251555,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tour - 5 Seconds of Summer Official Store",
+      "url": "https://5sos.com/pages/tour",
+      "snippet": "Would you like to visit your local store? Take me there."
+    },
+    {
+      "title": "Qwen/Qwen2-VL-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct",
+      "snippet": "A newer version of this model is available: Qwen/Qwen2.5-VL-7B-Instruct"
+    },
+    {
+      "title": "5 Seconds of Summer - 2026 Tour Dates & Concert Schedule - Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ9178oX0/5-seconds-of-summer-events",
+      "snippet": "Find concert tickets for 5 Seconds of Summer upcoming 2026 shows. Explore 5 Seconds of Summer tour schedules, latest setlist, …"
+    },
+    {
+      "title": "Qwen2_VL - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.45.1/model_doc/qwen2_vl",
+      "snippet": "This updated model demonstrates competitive performance against leading AI systems like GPT-4o and Claude 3.5 Sonnet in vision-related tasks and ranks highly among open-source models in text capabilities. These advancements make Qwen2-VL a versatile tool for various applications requiring robust multimodal processing and reasoning abilities."
+    },
+    {
+      "title": "5 Seconds of Summer Official Store - 5 Seconds of Summer Official Store",
+      "url": "https://5sos.com/",
+      "snippet": "Sold out 5 Seconds Of Summer (10th Anniversary Edition Red) Vinyl $29.99 5 Seconds Of Summer CD $13.99 EVERYONE'S A …"
+    }
+  ]
+}

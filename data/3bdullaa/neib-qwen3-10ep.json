@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "3bdullaa/neib-qwen3-10ep",
+  "slug": "3bdullaa-neib-qwen3-10ep",
+  "author": "3bdullaa",
+  "url": "https://huggingface.co/3bdullaa/neib-qwen3-10ep",
+  "created_at": "2026-09-07T15:27:46.000Z",
+  "updated_at": "2026-09-07T15:27:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078186,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Summer Zapping 2026 1st - YouTube",
+      "url": "https://www.youtube.com/watch?v=ZLkisuioWj4",
+      "snippet": "Aug 24, 2026 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 Technical Report Qwen Team Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities."
+    },
+    {
+      "title": "PodEduc - Zapping Del Verano 2026 (Première)",
+      "url": "https://podeduc.apps.education.fr/video/156740-zapping-del-verano-2026-premiere/",
+      "snippet": "Jul 26, 2026 · Zapping del verano 2026 (Première) July 26, 2026 Duration:00:10:46 Number of views 1039 Addition in a playlist 1 …"
+    },
+    {
+      "title": "[2505.09388v1] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388v1",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Pack El zapping del verano 2026 (Fiche + Eval QCM) — ¡EN LA …",
+      "url": "https://enlasombradelaprofesora.squarespace.com/shop/p/pack-el-zapping-del-verano-2026-fiche-eval-qcm",
+      "snippet": "Il rassemble la séance complète El zapping del verano 2026, sa correction ainsi qu’une évaluation finale prête à imprimer."
+    }
+  ]
+}

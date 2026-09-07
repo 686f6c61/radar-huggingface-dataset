@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Anjeku/Anje",
+  "slug": "anjeku-anje",
+  "author": "Anjeku",
+  "url": "https://huggingface.co/Anjeku/Anje",
+  "created_at": "2026-09-07T14:55:33.000Z",
+  "updated_at": "2026-09-07T14:55:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alfa Romeo 159 Hinterachsträger mit Reduzierstück - OVOKO",
+      "url": "https://ovoko.de/gebrauchte-ersatzteile/mce99299-alfa-romeo-159-hinterachstrager-mit-reduzierstuck",
+      "snippet": "OVOKO.DE verwendet Teil für Alfa Romeo 159 Hinterachsträger mit Reduzierstück Auto Alfa Romeo 159 online zu einem guten …"
+    },
+    {
+      "title": "Anje - Fire Emblem Engage - 1.0 - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/1037073987655471401",
+      "snippet": "Download Anje - Fire Emblem Engage - free LORA Illustrious AI model on TENSORHUB ART. By BassVelvet2j378"
+    },
+    {
+      "title": "Achsträger ALFA ROMEO 159 - AUTODOC",
+      "url": "https://www.autodoc.de/autoteile/hilfsrahmen-aggregatetrager-11604/alfa-romeo/159?msockid=04047929cdc8645a27b66ee4cc3a65f0",
+      "snippet": "Entdecken Sie die meistverkauften Ersatzteile aus der Kategorie Motorträger für Alfa Romeo 159. Profitieren Sie von einer großen …"
+    },
+    {
+      "title": "Ange / アンジェ (from Koisuru Oukoku) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/3961ceea9ab3e8b64def286f742a7dbc",
+      "snippet": "Explore Ange / アンジェ (from Koisuru Oukoku) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "hinterachsträger ALFA ROMEO 159 140 51795493 elpop1299414",
+      "url": "https://www.ebay.de/itm/188057615927?msockid=04047929cdc8645a27b66ee4cc3a65f0",
+      "snippet": "Artikelbeschreibung des Verkäufers hinterachsträger ALFA ROMEO 159 140 51795493 elpop1299414 beschreibung Hinterachsträger …"
+    }
+  ]
+}

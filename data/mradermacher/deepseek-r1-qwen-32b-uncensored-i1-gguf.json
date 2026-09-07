@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DeepSeek-R1-Qwen-32B-Uncensored-i1-GGUF",
+  "slug": "mradermacher-deepseek-r1-qwen-32b-uncensored-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DeepSeek-R1-Qwen-32B-Uncensored-i1-GGUF",
+  "created_at": "2026-09-07T15:00:27.000Z",
+  "updated_at": "2026-09-07T17:10:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "en",
+    "dataset:Guilherme34/uncensor",
+    "base_model:Brancis/DeepSeek-R1-Qwen-32B-Uncensored",
+    "base_model:quantized:Brancis/DeepSeek-R1-Qwen-32B-Uncensored",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32759790592,
+  "parameters_human": "32.76B",
+  "storage_bytes": 71138949504,
+  "storage_human": "71.1 GB",
+  "base_model": "Brancis/DeepSeek-R1-Qwen-32B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "mradermacher/DeepSeek-R1-Distill-Qwen-32B-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Qwen-32B-Uncensored-GGUF",
+      "snippet": "Instructions to use mradermacher/DeepSeek-R1-Distill-Qwen-32B-Uncensored-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to ..."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "DeepSeek-R1-Distill-Qwen-32B-Uncensored-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Qwen-32B-Uncensored-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

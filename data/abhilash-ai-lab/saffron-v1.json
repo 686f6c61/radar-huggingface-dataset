@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Abhilash-AI-Lab/saffron-v1",
+  "slug": "abhilash-ai-lab-saffron-v1",
+  "author": "Abhilash-AI-Lab",
+  "url": "https://huggingface.co/Abhilash-AI-Lab/saffron-v1",
+  "created_at": "2026-09-07T15:03:00.000Z",
+  "updated_at": "2026-09-07T15:03:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "saffron",
+    "small-language-model",
+    "experimental",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 400426483,
+  "storage_human": "400 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laposte.net",
+      "url": "https://laposte.net/accueil",
+      "snippet": "JavaScript est désactivé Ce site nécessite JavaScript pour fonctionner correctement. Veuillez l'activer dans les paramètres de votre …"
+    },
+    {
+      "title": "GitHub - shishodiaabhilash/saffron-v1",
+      "url": "https://github.com/shishodiaabhilash/saffron-v1",
+      "snippet": "A compact (~100M-parameter) English language model — our own model and training recipe, with a custom byte-level BPE tokenizer and a curriculum (\"simple → complex\") corpus that loosely mimics how English is learned. Part of the Abhilash AI Research Lab — the research & innovation initiative of ..."
+    },
+    {
+      "title": "Application laposte.net pour consulter vos mails - La Poste",
+      "url": "https://www.laposte.fr/webmail",
+      "snippet": "Votre boite mail laposte.net fait peau neuve ! Qu’attendez-vous pour vous connecter sur votre messagerie gratuite ou créer votre …"
+    },
+    {
+      "title": "saffron-v1/README.md at main · shishodiaabhilash/saffron-v1",
+      "url": "https://github.com/shishodiaabhilash/saffron-v1/blob/main/README.md",
+      "snippet": "Saffron-v1 A compact (~100M-parameter) English language model — our own model and training recipe, with a custom byte-level BPE tokenizer and a curriculum (\"simple → complex\") corpus that loosely mimics how English is learned. Part of the Abhilash AI Research Lab — the research & innovation initiative of Abhilash Construction Company."
+    },
+    {
+      "title": "Accéder à Mon Compte La Poste - La Poste",
+      "url": "https://www.laposte.fr/moncompte-laposte-avantages",
+      "snippet": "Avec Mon Compte La Poste, tous vos services en ligne ou hors ligne (en bureau de poste, auprès de facteurs) sont accessibles …"
+    }
+  ]
+}

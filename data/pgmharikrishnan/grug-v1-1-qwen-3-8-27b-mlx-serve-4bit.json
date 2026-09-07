@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pgmharikrishnan/grug-v1.1-qwen-3.8-27b-MLX-Serve-4bit",
+  "slug": "pgmharikrishnan-grug-v1-1-qwen-3-8-27b-mlx-serve-4bit",
+  "author": "pgmharikrishnan",
+  "url": "https://huggingface.co/pgmharikrishnan/grug-v1.1-qwen-3.8-27b-MLX-Serve-4bit",
+  "created_at": "2026-09-07T17:10:15.000Z",
+  "updated_at": "2026-09-07T17:13:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-serve",
+    "grug",
+    "4-bit",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:ProCreations/grug-v1.1-qwen-3.8-27b",
+    "base_model:quantized:ProCreations/grug-v1.1-qwen-3.8-27b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 15153032856,
+  "storage_human": "15.2 GB",
+  "base_model": "ProCreations/grug-v1.1-qwen-3.8-27b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ADDITIONALLY Synonyms: 21 Similar Words - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/thesaurus/additionally",
+      "snippet": "2 days ago · Synonyms for ADDITIONALLY: also, then, either, besides, more, furthermore, moreover, likewise, as well, further"
+    },
+    {
+      "title": "ProCreations/grug-v1.1-qwen-3.8-27b at main - Hugging Face",
+      "url": "https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b/tree/main",
+      "snippet": "Instructions to use ProCreations/grug-v1.1-qwen-3.8-27b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "100 Synonyms for Additionally in English with their Pictures - MR …",
+      "url": "https://mrmrsenglish.com/synonyms-for-additionally/",
+      "snippet": "In this article, you will learn 100 Synonyms for Additionally in English with their Pictures, explained in simple and easy language. This …"
+    },
+    {
+      "title": "ProCreations/grug-v1.1-qwen-3.8-27b-awq-int4 · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-awq-int4",
+      "snippet": "ProCreations / grug-v1.1-qwen-3.8-27b-awq-int4 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 awq int4 w4a16 compressed-tensors vllm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "What is another word for additionally? | Additionally Synonyms ...",
+      "url": "https://www.wordhippo.com/what-is/another-word-for/additionally.html",
+      "snippet": "Find 221 synonyms for additionally and other similar words that you can use instead based on 4 separate contexts from our thesaurus."
+    }
+  ]
+}

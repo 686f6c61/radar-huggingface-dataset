@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/DeepSeek-V4-Flash-Vision-Exp-mlx-oQ8e",
+  "slug": "solstice-ai-deepseek-v4-flash-vision-exp-mlx-oq8e",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-Exp-mlx-oQ8e",
+  "created_at": "2026-09-07T14:52:49.000Z",
+  "updated_at": "2026-09-07T14:55:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "deepseek_v4",
+    "solstice-ai",
+    "deepseek",
+    "deepseek-v4",
+    "omlx",
+    "oq8e",
+    "mixed-precision",
+    "apple-silicon",
+    "metal",
+    "vision",
+    "multimodal",
+    "dspark",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "long-context",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:unsloth/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:unsloth/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304646824126,
+  "parameters_human": "304.65B",
+  "storage_bytes": 173265765206,
+  "storage_human": "173.3 GB",
+  "base_model": "unsloth/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Solstice",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Solstice 92 languesAjouter un sujet"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We are excited to introduce DeepSeek-V4-Flash-Vision-Exp, our first experimental multimodal model in the DeepSeek-V4 family. It builds on the DeepSeek-V4-Flash architecture by incorporating visual modules and undergoing continued training to unlock visual understanding capabilities."
+    },
+    {
+      "title": "Date des équinoxes et des solstices pour 2026 et à venir",
+      "url": "https://icalendrier.fr/outils/equinoxes-solstices",
+      "snippet": "Mar 20, 2026 · Le solstice d'été représente la journée la plus longue, et le solstice d'hiver la plus courte. Les images ci-dessous …"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "DeepSeek's first experimental multimodal V4 model — the V4-Flash MoE backbone plus a 32-layer vision tower, 1M context, and a fused DSpark draft module."
+    },
+    {
+      "title": "Solstice - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Solstice",
+      "snippet": "additional terms may apply. By using this site, you agree to the Terms of Useand Privacy Policy. Wikipedia® is a registered …"
+    }
+  ]
+}

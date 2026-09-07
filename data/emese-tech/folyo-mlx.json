@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "emese-tech/folyo-mlx",
+  "slug": "emese-tech-folyo-mlx",
+  "author": "emese-tech",
+  "url": "https://huggingface.co/emese-tech/folyo-mlx",
+  "created_at": "2026-09-07T09:55:05.000Z",
+  "updated_at": "2026-09-07T11:41:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "hungarian",
+    "emese",
+    "eurollm",
+    "instruct",
+    "chatml",
+    "apple-silicon",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "hu",
+    "base_model:utter-project/EuroLLM-22B-2512",
+    "base_model:quantized:utter-project/EuroLLM-22B-2512",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22637328384,
+  "parameters_human": "22.64B",
+  "storage_bytes": 24068715881,
+  "storage_human": "24.1 GB",
+  "base_model": "utter-project/EuroLLM-22B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.ro/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "emese-tech (Emese) - Hugging Face",
+      "url": "https://huggingface.co/emese-tech",
+      "snippet": "Org profile for Emese on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Google Traducere",
+      "url": "https://translate.google.ro/",
+      "snippet": "Serviciul Google, oferit fără costuri, traduce instantaneu cuvinte, expresii și pagini web din engleză în peste 100 de alte limbi și invers."
+    },
+    {
+      "title": "ComfyUI for Creators & Teams | Floyo",
+      "url": "https://www.floyo.ai/",
+      "snippet": "Run ComfyUI workflows in your browser with zero setup. Discover, build, and generate AI images and video on Floyo. Free to start, pay only when you generate."
+    },
+    {
+      "title": "Google Képek",
+      "url": "https://www.google.ro/imghp?hl=hu",
+      "snippet": "Google Képek. Az internet legátfogóbb képkereső szolgáltatása."
+    }
+  ]
+}

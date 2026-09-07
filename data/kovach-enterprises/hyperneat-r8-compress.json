@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kovach-Enterprises/hyperneat-r8-compress",
+  "slug": "kovach-enterprises-hyperneat-r8-compress",
+  "author": "Kovach-Enterprises",
+  "url": "https://huggingface.co/Kovach-Enterprises/hyperneat-r8-compress",
+  "created_at": "2026-09-07T13:21:29.000Z",
+  "updated_at": "2026-09-07T13:34:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "hyperneat",
+    "r8",
+    "compression",
+    "android",
+    "podman",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "HyperNEAT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HyperNEAT",
+      "snippet": "Toggle the table of contents HyperNEAT"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Google disponible en : English PublicitéÀ propos de GoogleGoogle.com in English © 2026 - Confidentialité- Conditions Applications …"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Téléchargez Google Chrome, le navigateur plus sécurisé et encore …",
+      "url": "https://www.google.com/intl/fr/chrome/",
+      "snippet": "Google intègre l'IA à ses produits pour les rendre plus utiles. Nous utilisons l'IA pour des fonctionnalités telles que la Recherche, …"
+    }
+  ]
+}

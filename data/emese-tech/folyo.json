@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "emese-tech/folyo",
+  "slug": "emese-tech-folyo",
+  "author": "emese-tech",
+  "url": "https://huggingface.co/emese-tech/folyo",
+  "created_at": "2026-09-07T09:55:04.000Z",
+  "updated_at": "2026-09-07T10:20:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "hungarian",
+    "emese",
+    "eurollm",
+    "instruct",
+    "chatml",
+    "conversational",
+    "hu",
+    "base_model:utter-project/EuroLLM-22B-2512",
+    "base_model:finetune:utter-project/EuroLLM-22B-2512",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22637328384,
+  "parameters_human": "22.64B",
+  "storage_bytes": 45290497197,
+  "storage_human": "45.3 GB",
+  "base_model": "utter-project/EuroLLM-22B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install WhatsApp webapp on Ubuntu",
+      "url": "https://askubuntu.com/questions/684415/install-whatsapp-webapp-on-ubuntu",
+      "snippet": "Oct 12, 2015 · Instructions: Download the WhatsApp webapp DEB installation file from the link here Double click on the DEB file to …"
+    },
+    {
+      "title": "emese-tech (Emese) - Hugging Face",
+      "url": "https://huggingface.co/emese-tech",
+      "snippet": "Emese is an open effort to conserve Hungarian linguistic heritage in digital form. A family of language models trained exclusively on Hungarian text, capturing the richness and structure of the language in neural weights."
+    },
+    {
+      "title": "Can I run Android apps on Ubuntu? - Ask Ubuntu",
+      "url": "https://askubuntu.com/questions/1732/can-i-run-android-apps-on-ubuntu",
+      "snippet": "Aug 9, 2010 · Is it possible to run Android apps on Ubuntu? And I don't mean inside an emulator, but natively, as you would with any …"
+    },
+    {
+      "title": "Models — Floyo",
+      "url": "https://www.floyo.ai/models",
+      "snippet": "Explore AI models available on Floyo. Production-ready image and video generation in your browser."
+    },
+    {
+      "title": "Newest Questions - Ask Ubuntu Meta",
+      "url": "https://meta.askubuntu.com/questions",
+      "snippet": "Jul 16, 2026 · Since 32-bit Ubuntu is a thing of the past, do we really need the 64-bit tag and its synonyms for new questions? And by …"
+    }
+  ]
+}

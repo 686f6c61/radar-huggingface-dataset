@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sgsystems/Falcon-H1-7B-FORGE-v2",
+  "slug": "sgsystems-falcon-h1-7b-forge-v2",
+  "author": "sgsystems",
+  "url": "https://huggingface.co/sgsystems/Falcon-H1-7B-FORGE-v2",
+  "created_at": "2026-09-07T17:52:03.000Z",
+  "updated_at": "2026-09-07T18:12:06.000Z",
+  "license": "falcon-llm-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "mamba2",
+    "hybrid",
+    "apple-silicon",
+    "llama.cpp",
+    "edge",
+    "text-generation",
+    "en",
+    "base_model:tiiuae/Falcon-H1-7B-Instruct",
+    "base_model:quantized:tiiuae/Falcon-H1-7B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7585654880,
+  "parameters_human": "7.59B",
+  "storage_bytes": 3480192416,
+  "storage_human": "3.5 GB",
+  "base_model": "tiiuae/Falcon-H1-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WCLC - LOTTO MAX & EXTRA",
+      "url": "https://www.wclc.com/winning-numbers/lotto-max-extra.htm",
+      "snippet": "3 days ago · On LOTTO MAX, the chance of winning any prize are about 1 in 5.8 per $6 play, and the odds of winning the Jackpot …"
+    },
+    {
+      "title": "Falcon-H1 - a tiiuae Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/tiiuae/falcon-h1",
+      "snippet": "Falcon-H1 Family of Hybrid-Head Language Models (Transformer-SSM), including 0.5B, 1.5B, 1.5B-Deep, 3B, 7B, and 34B (pretrained & instruction-tuned)."
+    },
+    {
+      "title": "Lotto Max winning numbers | PlayNow BCLC",
+      "url": "https://www.playnow.com/lottery/lotto-max-winning-numbers/",
+      "snippet": "Find Lotto Max winning numbers. See current and past Lotto Max results on PlayNow, BCLC."
+    },
+    {
+      "title": "FalconH1 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/falcon_h1",
+      "snippet": "It is used to instantiate a Falcon H1 model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the tiiuae/Falcon-H1-1.5B-Deep-Instruct Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "LOTTO MAX",
+      "url": "https://lottomax.ca/index.html?en",
+      "snippet": "Canada's Big Jackpot Game! Jackpots start at a minimum of $10 Million and can grow to $60 Million! Draw every Friday. | La loterie …"
+    }
+  ]
+}

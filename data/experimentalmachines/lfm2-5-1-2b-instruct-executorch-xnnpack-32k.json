@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/LFM2.5-1.2B-Instruct-ExecuTorch-XNNPACK-32k",
+  "slug": "experimentalmachines-lfm2-5-1-2b-instruct-executorch-xnnpack-32k",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/LFM2.5-1.2B-Instruct-ExecuTorch-XNNPACK-32k",
+  "created_at": "2026-09-07T12:40:05.000Z",
+  "updated_at": "2026-09-07T12:40:15.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "kleidiai",
+    "android",
+    "on-device",
+    "arm",
+    "openweights",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 827137024,
+  "storage_human": "827 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "日本とシンガポールの時差早見表｜日本⇔シンガポール双方向 ...",
+      "url": "https://www.mnavi.net/singapore-time-difference/",
+      "snippet": "Jul 20, 2026 · シンガポールの標準時は SGT（Singapore Standard Time / UTC+8）、日本の標準時は JST（Japan Standard Time / …"
+    },
+    {
+      "title": "alpharomercoma/LFM2.5-1.2B-Instruct-ExecuTorch-XNNPACK · Hugging Face",
+      "url": "https://huggingface.co/alpharomercoma/LFM2.5-1.2B-Instruct-ExecuTorch-XNNPACK",
+      "snippet": "LFM2.5-1.2B-Instruct for ExecuTorch (XNNPACK), several context windows The same weights exported 5 times, differing only in the context window compiled into the static KV cache. Exported with ExecuTorch 1.4.0's own recipe for the family (examples/models/lfm2, extension.llm.export.export_llm): int8 dynamic activations, int4 weights in groups of 32 (the layout Arm KleidiAI kernels take in the ..."
+    },
+    {
+      "title": "シンガポールの時差と現在時刻 - Time-j.net",
+      "url": "https://www.time-j.net/WorldTime/Location/Asia/Singapore",
+      "snippet": "シンガポールの現在時刻: 9月7日(月) 14:11。タイムゾーンの名称: SGTシンガポール時間。協定世界時との時差: UTC+8。現在の日 …"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-1.2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use LiquidAI/LFM2.5-1.2B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use LiquidAI/LFM2.5-1.2B-Instruct with Transformers:"
+    },
+    {
+      "title": "日本/東京とシンガポール/シンガポールの時差を計算 - 時差計算 ...",
+      "url": "https://www.jisakeisan.com/city/?t1=tokyo&t2=singapore",
+      "snippet": "日本/東京とシンガポール/シンガポールの時差を計算。 世界の時差の計算、変換を行うインストール不要の無料WEBアプリ。 [時差 …"
+    }
+  ]
+}

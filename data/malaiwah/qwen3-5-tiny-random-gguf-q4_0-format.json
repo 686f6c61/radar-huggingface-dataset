@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "malaiwah/qwen3-5-tiny-random-gguf-q4_0-format",
+  "slug": "malaiwah-qwen3-5-tiny-random-gguf-q4_0-format",
+  "author": "malaiwah",
+  "url": "https://huggingface.co/malaiwah/qwen3-5-tiny-random-gguf-q4_0-format",
+  "created_at": "2026-09-07T17:19:47.000Z",
+  "updated_at": "2026-09-07T19:08:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "qfs",
+    "fixture",
+    "random-init",
+    "cpu",
+    "reproducibility",
+    "format-fixture",
+    "rtn",
+    "optimizer-not-run",
+    "matched-weight-family",
+    "base_model:malaiwah/qwen3-5-gguf-tiny-random-bf16",
+    "base_model:quantized:malaiwah/qwen3-5-gguf-tiny-random-bf16",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 246612,
+  "parameters_human": "246612",
+  "storage_bytes": 156544,
+  "storage_human": "156544 B",
+  "base_model": "malaiwah/qwen3-5-gguf-tiny-random-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "George Login » Das smarte Online Banking | Erste Sparkasse",
+      "url": "https://www.sparkasse.at/sgruppe/privatkunden/digitales-banking/george-login",
+      "snippet": "Erleben Sie George, die modernste Art des Online Banking Erledigen Sie Ihre Geldgeschäfte einfach und schnell. Hier geht es direkt …"
+    },
+    {
+      "title": "malaiwah/qwen3-5-gguf-tiny-fidelity-root-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/malaiwah/qwen3-5-gguf-tiny-fidelity-root-v1",
+      "snippet": "The cut the final hidden state handed to lm_head -- after the text model's final norm and immediately before the head matmul -- captured as the head module's input via torch.nn.Module.register_forward_pre_hook; replay applies the head ONLY (no final norm at replay time: the capture already sits after it)."
+    },
+    {
+      "title": "George, das modernste Banking kennenlernen | Erste Sparkasse",
+      "url": "https://www.sparkasse.at/sgruppe/privatkunden/digitales-banking/george-kennenlernen",
+      "snippet": "Mit George Girokonto, Debitkarten, Kreditkarten und Wertpapiere online managen. Einfaches Banking für Privatpersonen, …"
+    },
+    {
+      "title": "malaiwah/qfs-qwen-gguf-tiny-cpu-format-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/malaiwah/qfs-qwen-gguf-tiny-cpu-format-v1",
+      "snippet": "Complete tiny random FORMAT fixture evidence. Round-to-nearest (RTN) storage/reader exercise only; optimizer-not-run. No GPTQ/AWQ/AutoRound optimization, calibrated ModelOpt/CT/QAT quality, trained-model quality ranking, GPU parity, or native serving-kernel correctness claim."
+    },
+    {
+      "title": "George Business Login | Erste Sparkasse",
+      "url": "https://www.sparkasse.at/sgruppe/unternehmen/produkte-firmenkunden/digitales-banking/george-business/george-business-login",
+      "snippet": "Von jeder Seite unseres Webportals können Sie direkt bei George Business einsteigen: Einfach rechts oben auf den Button „Login“ …"
+    }
+  ]
+}

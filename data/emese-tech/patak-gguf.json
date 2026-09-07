@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "emese-tech/patak-gguf",
+  "slug": "emese-tech-patak-gguf",
+  "author": "emese-tech",
+  "url": "https://huggingface.co/emese-tech/patak-gguf",
+  "created_at": "2026-09-07T09:31:58.000Z",
+  "updated_at": "2026-09-07T09:54:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "gguf",
+    "hungarian",
+    "emese",
+    "eurollm",
+    "instruct",
+    "chatml",
+    "llama.cpp",
+    "quantized",
+    "text-generation",
+    "hu",
+    "base_model:utter-project/EuroLLM-9B",
+    "base_model:quantized:utter-project/EuroLLM-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9152319488,
+  "parameters_human": "9.15B",
+  "storage_bytes": 5582837344,
+  "storage_human": "5.6 GB",
+  "base_model": "utter-project/EuroLLM-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dr. Anouschka van Leeuwen - Universiteit Utrecht",
+      "url": "https://www.uu.nl/medewerkers/AvanLeeuwen",
+      "snippet": "Aug 26, 2023 · In my work I mostly focus on learning analytics: What can we learn from (automatically) collected data about learning …"
+    },
+    {
+      "title": "patak – Emese - emese.tech",
+      "url": "https://emese.tech/patak",
+      "snippet": "en patak 0.5B · 32k context · YaRN Architecture"
+    },
+    {
+      "title": "Dr. Anouschka van Leeuwen - Utrecht University",
+      "url": "https://www.uu.nl/staff/AvanLeeuwen",
+      "snippet": "Van Leeuwen et al. (2023), Handbook of Learning Analytics. I am employed as assistant professor in the department of Education. I …"
+    },
+    {
+      "title": "emese-tech (Emese) - Hugging Face",
+      "url": "https://huggingface.co/emese-tech",
+      "snippet": "Org profile for Emese on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Anouschka van Leeuwen - Utrecht University",
+      "url": "https://research-portal.uu.nl/en/persons/anouschka-van-leeuwen/",
+      "snippet": "Fingerprint Dive into the research topics where Anouschka van Leeuwen is active. These topic labels come from the works of this …"
+    }
+  ]
+}

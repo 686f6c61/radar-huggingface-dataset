@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Cong123779/Matchtts_VI",
+  "slug": "cong123779-matchtts_vi",
+  "author": "Cong123779",
+  "url": "https://huggingface.co/Cong123779/Matchtts_VI",
+  "created_at": "2026-09-07T13:27:54.000Z",
+  "updated_at": "2026-09-07T13:28:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "text-to-speech",
+    "tts",
+    "matcha-tts",
+    "vocos",
+    "flow-matching",
+    "speech",
+    "vietnamese",
+    "vi",
+    "dataset:custom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127189888,
+  "storage_human": "127 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arco | Wij zijn Arco, wij maken tafels",
+      "url": "https://www.arco.nl/",
+      "snippet": "Doen waar je goed in bent betekent voor Arco: tafels maken. Tafels hebben een centrale plek in ons leven: we praten, werken, …"
+    },
+    {
+      "title": "Cong123779/AI2Text-Models · Hugging Face",
+      "url": "https://huggingface.co/Cong123779/AI2Text-Models",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home | Arco",
+      "url": "https://www.arco.nl/en/",
+      "snippet": "Conference and meeting room chairs. Barstools. Lounge chairs. Flexible workplaces. Armchairs. Stackable chairs."
+    },
+    {
+      "title": "Cong123779 (Ha Vu) - Hugging Face",
+      "url": "https://huggingface.co/Cong123779/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 3 hours ago ... published a dataset about 3 hours ago"
+    },
+    {
+      "title": "Arco | Specialist in koudetechniek",
+      "url": "https://www.arconv.com/nl",
+      "snippet": "Als koeltechnisch bedrijf ontwikkelen, vernieuwen, installeren en onderhouden we koel- en vriesinstallaties, supermarktinstallaties, …"
+    }
+  ]
+}

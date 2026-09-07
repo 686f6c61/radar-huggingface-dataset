@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Air-nano-GGUF",
+  "slug": "mradermacher-air-nano-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Air-nano-GGUF",
+  "created_at": "2026-09-07T13:10:12.000Z",
+  "updated_at": "2026-09-07T13:10:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Postmaster Tools – Google",
+      "url": "https://www.gmail.com/postmaster/",
+      "snippet": "Be a better sender Use Postmaster Tools to analyze your email performance, and help Gmail route your messages to the right place."
+    },
+    {
+      "title": "mradermacher/tmr-ai-nano-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/tmr-ai-nano-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Unsubscribe",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobxI4VMcC5fSag-smhR2MZbmS7gpIKJRcS6E_GlFWK9LuHCATHbOjB_qWyazjuMSFj-8_kSd5mVEXhBXnk-yW6Ln0mmKBQF6NSCYoP7G7d8nUJl1m6LL5nHxMiT0J4YcmzbVBm-sL-mityIP7sG9YlhJeLpArSDdzsfTkoSIJ0lLvNTbupGE-Wg8WJHdMeo4iD8IT4jHlZP7RLDUlFFMFQs=",
+      "snippet": "You will no longer receive messages from Info ICFC (info@icfc.org) at this address: stephekm@co.larimer.co.us. Are you sure?"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Unsubscribe",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpoby2zsgmdrMPxgtGJ-6bXGyLWZkiEU4iLH99BS1pvQL8iwOjJFkfbKZp_fTXqyj9QKXojoWf4p8WQ3ycCUQA1hRx_wN-YNCDZOIIfnSpQ3u5lsR2HaVwiKV-egsA9jHhqZ0T460UbcI3ngqkBdWQbwmL_v8rywy6RVf-ixAnIh8Z1227jfifUMxV4-t3moF9PrH8LM7qUZpOGlrWMc3M04CI",
+      "snippet": "You will no longer receive messages from Kirk LaFon (kirk@saintgeorges.org) at this address: catsobd@yahoo.com. Are you sure? …"
+    }
+  ]
+}

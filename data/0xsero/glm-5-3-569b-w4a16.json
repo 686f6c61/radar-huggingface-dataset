@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "0xSero/GLM-5.3-569B-W4A16",
+  "slug": "0xsero-glm-5-3-569b-w4a16",
+  "author": "0xSero",
+  "url": "https://huggingface.co/0xSero/GLM-5.3-569B-W4A16",
+  "created_at": "2026-09-07T13:30:45.000Z",
+  "updated_at": "2026-09-07T13:30:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "glm",
+    "glm-5.3",
+    "moe",
+    "awq",
+    "w4a16",
+    "compressed-tensors",
+    "reap",
+    "expert-pruning",
+    "text-generation",
+    "arxiv:2510.13999",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:finetune:zai-org/GLM-5.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to use google analytics with next.js app? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/60411351/how-to-use-google-analytics-with-next-js-app",
+      "snippet": "Feb 26, 2020 · I'm using styled-components with next.js so my styles need to be server-side rendered, hence how can I add google …"
+    },
+    {
+      "title": "0xSero (0xSero) - Hugging Face",
+      "url": "https://huggingface.co/0xSero",
+      "snippet": "Quantizing, benchmarking, training, and building. Giving a 753B Model Eyes: Reproducing GLM-5.2 Vision on 4× 96 GB GPUs"
+    },
+    {
+      "title": "Regular Expression to validate xx-xxxxxxx or xxx-xx-xxxx",
+      "url": "https://stackoverflow.com/questions/26064644/regular-expression-to-validate-xx-xxxxxxx-or-xxx-xx-xxxx",
+      "snippet": "Sep 26, 2014 · I am trying to build a single regular expression validator that will only acccept values in the following formats:- string1 = …"
+    },
+    {
+      "title": "0xSero - Repositories - GitHub",
+      "url": "https://github.com/0xSero?tab=repositories",
+      "snippet": "Exact SGLang runtime for GLM-5.3-Flash-NVFP4 on 4x RTX PRO 6000 Blackwell (SM120): flashinfer_cutlass MoE, DSA+KDA attention, NEXTN MTP5, six baked SM120 patches"
+    },
+    {
+      "title": "How to Display Phone Numbers in XXX-XXX-XXXX Format? - Odoo",
+      "url": "https://www.odoo.com/forum/help-1/how-to-display-phone-numbers-in-xxx-xxx-xxxx-format-56333?msockid=14d6c9d7a3ac641c11afde1aa2b965ce",
+      "snippet": "Hey Ray, Thanks for the reply :) It worked fine for all partners. But for my custom module where I have phone fields, it didn't reformat …"
+    }
+  ]
+}

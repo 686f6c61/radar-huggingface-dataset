@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bgdv99/av-ste",
+  "slug": "bgdv99-av-ste",
+  "author": "bgdv99",
+  "url": "https://huggingface.co/bgdv99/av-ste",
+  "created_at": "2026-09-07T10:17:43.000Z",
+  "updated_at": "2026-09-07T10:29:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": "fairseq",
+  "languages": [],
+  "tags": [
+    "fairseq",
+    "audio-visual",
+    "speech-enhancement",
+    "av-hubert",
+    "speech-tokens",
+    "audio-to-audio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8036996748,
+  "storage_human": "8.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "bgdv99 (Bella Godiva) - Hugging Face",
+      "url": "https://huggingface.co/bgdv99",
+      "snippet": "User profile of Bella Godiva on Hugging Face"
+    },
+    {
+      "title": "Roblox - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.roblox.client&hl=en_US",
+      "snippet": "Roblox is home to every kind of game, for every kind of player. Compete in high-octane racing games, battle it out in hardcore tactical …"
+    },
+    {
+      "title": "av-ste/checkpoints/README.md at master · bellagodiva/av-ste",
+      "url": "https://github.com/bellagodiva/av-ste/blob/master/checkpoints/README.md",
+      "snippet": "Checkpoints Three files go in this directory: two fine-tuned AV-STE models (avste.pt and avste_lrs3_interference.pt) and large_vox_iter5.pt, the public AV-HuBERT-Large VoxCeleb2 backbone both were fine-tuned from."
+    },
+    {
+      "title": "Roblox (@Roblox) / X",
+      "url": "https://x.com/Roblox",
+      "snippet": "Aug 20, 2026 · The Roblox Innovation Awards are BACK 🏆 Join us September 12 at 7PM PDT as we celebrate the creators, games …"
+    }
+  ]
+}

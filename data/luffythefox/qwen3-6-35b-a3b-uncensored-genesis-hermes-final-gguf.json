@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF",
+  "slug": "luffythefox-qwen3-6-35b-a3b-uncensored-genesis-hermes-final-gguf",
+  "author": "LuffyTheFox",
+  "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF",
+  "created_at": "2026-07-13T06:40:13.000Z",
+  "updated_at": "2026-09-06T04:29:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "hermes",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "hermes",
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "genesis",
+    "agentic",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 600,
+  "downloads_30d": 923388,
+  "trending_score": 19,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 151510729984,
+  "storage_human": "151.5 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF - Hugging Face",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF",
+      "snippet": "Instructions to use LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF · Hugging ...",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF",
+      "snippet": "Instructions to use LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

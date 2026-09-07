@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_student_llama8bins_omnimath_confidence",
+  "slug": "sstoica12-acquisition_student_llama8bins_omnimath_confidence",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_student_llama8bins_omnimath_confidence",
+  "created_at": "2026-09-07T09:59:48.000Z",
+  "updated_at": "2026-09-07T10:01:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download",
+      "url": "https://www.spice-space.org/download.html",
+      "snippet": "It features glib-based objects for SPICE protocol parsing and a gtk widget for embedding the SPICE display into other applications …"
+    },
+    {
+      "title": "sstoica12/acquisition_student_llama8bins_omnimath_confidence - Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_llama8bins_omnimath_confidence",
+      "snippet": "Instructions to use sstoica12/acquisition_student_llama8bins_omnimath_confidence with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "lofyer/spice-webdav: Resources that spice-webdav needs. - GitHub",
+      "url": "https://github.com/lofyer/spice-webdav",
+      "snippet": "Resources that spice-webdav needs. Contribute to lofyer/spice-webdav development by creating an account on GitHub."
+    },
+    {
+      "title": "acquisition_student_llama8bins_numina_diversity - Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_llama8bins_numina_diversity",
+      "snippet": "acquisition_student_llama8bins_numina_diversity ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Install Spice webdavd with WinGet | winstall",
+      "url": "https://winstall.app/apps/Spice.SpiceWebDAVd",
+      "snippet": "SPICE (the Simple Protocol for Independent Computing Environments) is a remote-display system built for virtual environments. …"
+    }
+  ]
+}

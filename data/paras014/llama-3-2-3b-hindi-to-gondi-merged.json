@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Paras014/llama-3.2-3b-hindi-to-gondi-merged",
+  "slug": "paras014-llama-3-2-3b-hindi-to-gondi-merged",
+  "author": "Paras014",
+  "url": "https://huggingface.co/Paras014/llama-3.2-3b-hindi-to-gondi-merged",
+  "created_at": "2026-09-07T13:23:27.000Z",
+  "updated_at": "2026-09-07T13:24:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Llama-3.2-3B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442739246,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Ryder99/Llama-3.2-3B-Instruct-Hindi · Hugging Face",
+      "url": "https://huggingface.co/Ryder99/Llama-3.2-3B-Instruct-Hindi",
+      "snippet": "Since making Llama-3.2-1B-Instruct-Hindi I spent even more time reading the Unsloth documentation, and with some compromises was able to finetune a 3B model (it just barely avoided OOM)."
+    },
+    {
+      "title": "DeepL Translator | El traductor más preciso del mundo",
+      "url": "https://www.deepl.com/es/translator",
+      "snippet": "Traduce texto y archivos completos de manera instantánea. Traducciones precisas para particulares (un solo usuario) y equipos de …"
+    },
+    {
+      "title": "meta-llama/Llama-3.2-3B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B",
+      "snippet": "Instructions to use meta-llama/Llama-3.2-3B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "How Can We Help You? - About DeepL Translator",
+      "url": "https://support.deepl.com/hc/en-us/articles/360019924399-About-DeepL-Translator",
+      "snippet": "Available platforms Features Languages DeepL Translator is a machine translation service that produces translations of …"
+    }
+  ]
+}

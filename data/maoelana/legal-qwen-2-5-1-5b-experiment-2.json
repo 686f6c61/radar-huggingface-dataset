@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "maoelana/legal-qwen-2.5-1.5b-experiment-2",
+  "slug": "maoelana-legal-qwen-2-5-1-5b-experiment-2",
+  "author": "maoelana",
+  "url": "https://huggingface.co/maoelana/legal-qwen-2.5-1.5b-experiment-2",
+  "created_at": "2026-09-07T17:50:14.000Z",
+  "updated_at": "2026-09-07T17:51:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889040,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/qwen2.5-1.5b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=37cd3c7041d3676419bc2bbd408d6616",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2:"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

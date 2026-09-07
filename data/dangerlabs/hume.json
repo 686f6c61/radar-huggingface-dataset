@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "DangerLabs/HuMe",
+  "slug": "dangerlabs-hume",
+  "author": "DangerLabs",
+  "url": "https://huggingface.co/DangerLabs/HuMe",
+  "created_at": "2026-09-07T15:25:49.000Z",
+  "updated_at": "2026-09-07T15:59:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "hume",
+    "jepa",
+    "world-models",
+    "product-manifolds",
+    "poincare",
+    "neuromorphic",
+    "general-purpose-agent",
+    "android",
+    "compiler-verified",
+    "ast-jepa",
+    "arc-challenge",
+    "mmlu",
+    "gsm8k",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1011539374,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge (ARC-Challenge)",
+      "metric": "Accuracy",
+      "value": 24
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Massive Multitask Language Understanding (MMLU)",
+      "metric": "Accuracy",
+      "value": 16
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AST-JEPA 13-Benchmark Alignment & Containment Suite",
+      "metric": "Containment Integrity",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "عاجل — أخبار السعودية والخليج والعالم لحظة بلحظة",
+      "url": "https://ajel.sa/",
+      "snippet": "صحيفة عاجل الإلكترونية — آخر الأخبار العاجلة في السعودية والعالم المملكة و6 دول في «أوبك+» تبقي مستويات إنتاج النفط دون تغيير في أكتوبر الأحد 6 سبتمبر 2026"
+    },
+    {
+      "title": "Hume: Introducing System-2 Thinking in Visual-Language-Action Model",
+      "url": "https://arxiv.org/pdf/2505.21432",
+      "snippet": "Robot Figure 1: We present Hume, a dual-system vision-language-action model exploring human-like thinking capabilities for dexterous robot control. Equipped with value-guided System-2 thinking and cascaded action denoising, the model achieves superior complex reasoning and control capabilities. The model achieves state-of-the-art performance across a diverse range of evaluations and shows ..."
+    },
+    {
+      "title": "أحدث الأخبار - صحيفة عاجل",
+      "url": "https://ajel.sa/latest-news",
+      "snippet": "صحيفة إلكترونية سعودية تم تأسيسها عام 2007م تهتم بنشر الأخبار المحلية والمنافسة في سبق ..."
+    },
+    {
+      "title": "Hume: Introducing System-2 Thinking in Visual-Language-Action Model",
+      "url": "https://hume-vla.github.io/",
+      "snippet": "We present Hume, a dual-system vision-language-action model exploring human-like thinking capabilities for dexterous robot control. Equipped with value-guided System-2 thinking and cascaded action denoising, the model achieves superior complex reasoning and control capabilities."
+    },
+    {
+      "title": "About Us — Ajel English",
+      "url": "https://english.ajel.sa/about-us",
+      "snippet": "1 day ago · AJEL English is the English edition of Ajel, a Saudi digital newspaper founded in 2007 and licensed by the General …"
+    }
+  ]
+}

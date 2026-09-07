@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "divyanshgitmax/NPPE3-SuperResolution-Ensemble",
+  "slug": "divyanshgitmax-nppe3-superresolution-ensemble",
+  "author": "divyanshgitmax",
+  "url": "https://huggingface.co/divyanshgitmax/NPPE3-SuperResolution-Ensemble",
+  "created_at": "2026-09-07T14:40:49.000Z",
+  "updated_at": "2026-09-07T14:52:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "super-resolution",
+    "real-esrgan",
+    "swinir",
+    "pytorch",
+    "image-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128178506,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inloggen op Mijn Belastingdienst | Belastingdienst",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst",
+      "snippet": "Mijn Belastingdienst is uw persoonlijke pagina bij de Belastingdienst. Hier ziet u welke gegevens bij ons bekend zijn en regelt u uw …"
+    },
+    {
+      "title": "divyanshgitmax (Divyansh) - Hugging Face",
+      "url": "https://huggingface.co/divyanshgitmax",
+      "snippet": "Sort: Recently updated. divyanshgitmax/NER-VW-BERT. Token Classification • 66.4M • Updated May 19, 2025 • 6. divyanshgitmax/Intent-FINBERT-MODEL-VW"
+    },
+    {
+      "title": "Belastingdienst Nederland | Belastingdienst",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home",
+      "snippet": "Startpunt voor belastingen. Lees hoe u aangifte doet en wanneer wij uw voorlopige aanslag uitbetalen. Of vind het antwoord op uw …"
+    },
+    {
+      "title": "Brijeshsharma/nppe3-4x-super-resolution-denoise · Hugging Face",
+      "url": "https://huggingface.co/Brijeshsharma/nppe3-4x-super-resolution-denoise",
+      "snippet": "CNN (RRDB-lite / EDSR-style) that jointly denoises low-light images and performs 4x super-resolution (256x160 -> 1024x640)."
+    },
+    {
+      "title": "Inloggen voor ondernemers | Belastingdienst",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/ondernemers/content/inloggen-voor-ondernemers",
+      "snippet": "Aug 6, 2026 · Voor uw zakelijke belastingen gebruikt u Mijn Belastingdienst Zakelijk. Daar logt u in met DigiD, eHerkenning of een …"
+    }
+  ]
+}

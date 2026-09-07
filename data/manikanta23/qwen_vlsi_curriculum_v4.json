@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Manikanta23/qwen_vlsi_curriculum_v4",
+  "slug": "manikanta23-qwen_vlsi_curriculum_v4",
+  "author": "Manikanta23",
+  "url": "https://huggingface.co/Manikanta23/qwen_vlsi_curriculum_v4",
+  "created_at": "2026-09-07T17:45:12.000Z",
+  "updated_at": "2026-09-07T17:45:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 743502243,
+  "storage_human": "744 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Manikanta23 (Datrika) - Hugging Face",
+      "url": "https://huggingface.co/Manikanta23",
+      "snippet": "models1 Manikanta23/qwen2.5-coder-7b-vlsi-v1 Text Generation •Updated about 5 hours ago"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Google disponible en : English PublicitéÀ propos de GoogleGoogle.com in English © 2026 - Confidentialité- Conditions Applications …"
+    },
+    {
+      "title": "Manikanta23 (Datrika) - Hugging Face",
+      "url": "https://huggingface.co/Manikanta23/models",
+      "snippet": "Manikanta23's models1 Sort: Recently updated Manikanta23/qwen2.5-coder-7b-vlsi-v1 Text Generation •Updated about 5 hours ago"
+    },
+    {
+      "title": "Téléchargez Google Chrome, le navigateur plus sécurisé et encore …",
+      "url": "https://www.google.com/intl/fr/chrome/",
+      "snippet": "Google intègre l'IA à ses produits pour les rendre plus utiles. Nous utilisons l'IA pour des fonctionnalités telles que la Recherche, …"
+    }
+  ]
+}

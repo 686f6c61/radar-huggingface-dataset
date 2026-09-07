@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-1a0ce16d-2dd4-4d24-b7ba-a223c34067e7-5HBgDWKx",
+  "slug": "gradients-io-tournaments-tournament-tourn_2ba0f79237bffcf7_20260907-1a0ce16d-2dd4-4d24-b7ba-a223c34067e7-5hbgdwkx",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-1a0ce16d-2dd4-4d24-b7ba-a223c34067e7-5HBgDWKx",
+  "created_at": "2026-09-07T17:05:48.000Z",
+  "updated_at": "2026-09-07T17:06:03.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "conversational",
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi",
+    "arxiv:2511.23404",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412333054,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agile Methodology - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/software-testing/what-is-agile-methodology/",
+      "snippet": "6 days ago · Agile Methodology is an iterative and incremental approach to software development that focuses on delivering valuable …"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5E9bS7xY/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Agile software development - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Agile_software_development",
+      "snippet": "3.1Iterative, incremental, and evolutionary. 3.2Efficient and face-to-face communication. 3.2.1Information radiator."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-388b697e-299a-4548-b610-227628231630-5FRdgPRd",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Agile Methodology: The Complete Guide for 2026 - Institute of ...",
+      "url": "https://instituteprojectmanagement.com/blog/agile-methodology/",
+      "snippet": "Mar 26, 2025 · Discover what Agile methodology is, how it works, its core values and frameworks, and how to apply it professionally …"
+    }
+  ]
+}

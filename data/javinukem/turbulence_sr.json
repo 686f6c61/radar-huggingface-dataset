@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "javinukem/turbulence_sr",
+  "slug": "javinukem-turbulence_sr",
+  "author": "javinukem",
+  "url": "https://huggingface.co/javinukem/turbulence_sr",
+  "created_at": "2026-09-07T13:12:18.000Z",
+  "updated_at": "2026-09-07T14:10:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "superresolution",
+    "turbulence",
+    "astro",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1371726976,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiscali Mail :: Benvenuto in Tiscali Mail",
+      "url": "https://mail.tiscali.it/",
+      "snippet": "Tiscali Mail è il servizio di posta elettronica gratuito, semplice e con 10 GB di spazio. Entra in Tiscali Mail! Accedi o crea ora la tua …"
+    },
+    {
+      "title": "Turbulence.ai: an end-to-end AI scientist for fluid mechanics",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2095034925000522",
+      "snippet": "Turbulence.ai, the system presented in this work, aims to push this concept further: to create an AI Scientist for fluid mechanics that can autonomously conduct the entire research procedure, from problem formulation through simulation and analysis."
+    },
+    {
+      "title": "Tiscali Mail :: Benvenuto in Tiscali Mail",
+      "url": "https://mail.tiscali.it/?_task=mail&_mbox=Sent&_tab=1&_show=mainframe",
+      "snippet": "Accedi alla tua casella di posta elettronica con Tiscali Mail e gestisci i tuoi messaggi in modo semplice e sicuro."
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The platform where the machine learning community collaborates on models, datasets, and applications."
+    },
+    {
+      "title": "Tiscali - Fibra, telefono, mobile.",
+      "url": "https://www.tiscali.it/",
+      "snippet": "Crea gratis la tua casella Tiscali Mail e gestisci e-mail, contatti e messaggi ovunque sei. Uno spazio pratico, veloce e affidabile per …"
+    }
+  ]
+}

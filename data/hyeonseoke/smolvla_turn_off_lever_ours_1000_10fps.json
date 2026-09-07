@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_turn_off_lever_ours_1000_10fps",
+  "slug": "hyeonseoke-smolvla_turn_off_lever_ours_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_turn_off_lever_ours_1000_10fps",
+  "created_at": "2026-09-07T15:31:03.000Z",
+  "updated_at": "2026-09-07T15:33:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/turn_off_lever_ours_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "5回答 Pornhubで45万の請求が来てしまって年齢確認のところを押しただけで出てしまったんですがワンクリック詐欺でしょう …"
+    },
+    {
+      "title": "HyeonseokE/smolvla_turn_off_lever_cap_1000_10fps · Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_turn_off_lever_cap_1000_10fps",
+      "snippet": "Instructions to use HyeonseokE/smolvla_turn_off_lever_cap_1000_10fps with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Pornhubというサイトについて質問です。動画を視聴しているのです …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10285715145",
+      "snippet": "Sep 8, 2023 · 動画サービス Pornhubで45万の請求が来てしまって年齢確認のところを押しただけで出てしまったんですがワンク …"
+    },
+    {
+      "title": "HyeonseokE/turn_off_lever_ours_phase1_80_10fps - Hugging Face",
+      "url": "https://huggingface.co/datasets/HyeonseokE/turn_off_lever_ours_phase1_80_10fps",
+      "snippet": "Turn Off Lever Ours Phase1 80 10Fps LeRobot v3.0 dataset collected via SCRAPE-IsaacLab— a Code-as-Policies replay pipeline running inside Isaac Sim 5.1 / IsaacLab 2.3.2."
+    },
+    {
+      "title": "Supprimer mon compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37008466-supprimer-mon-compte-pornhub",
+      "snippet": "Dec 23, 2020 · Applis & Sites Réseaux sociaux Sujet PrécédentSujet Suivant Supprimer mon compte pornhub Tchoinbig- bazfile …"
+    }
+  ]
+}

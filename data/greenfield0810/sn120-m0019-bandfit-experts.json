@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/sn120-m0019-bandfit-experts",
+  "slug": "greenfield0810-sn120-m0019-bandfit-experts",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/sn120-m0019-bandfit-experts",
+  "created_at": "2026-09-07T12:28:24.000Z",
+  "updated_at": "2026-09-07T12:29:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7561918128,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=it",
+      "snippet": "Non è possibile visualizzare una descrizione perché il sito non lo consente."
+    },
+    {
+      "title": "GitHub - ysjprojects/affine-sn120: Anima Machina",
+      "url": "https://github.com/ysjprojects/affine-sn120",
+      "snippet": "These models are evaluated on a set of RL-environments with validators looking for the model which dominates the pareto frontier -- namely the model which outcompetes all other models on all envs (see af validator) The network is winners-take-all where miners are forced to copy, download and improve the pareto frontier model. Why affine?"
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=subnet-120",
+      "snippet": "greenfield0810/affine-ark-95d402145584 Image-Text-to-Text • 35B•Updated about 1 hour ago"
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail&hl=it",
+      "snippet": "Gmail è un servizio email intuitivo, efficace e utile. 15 GB di spazio di archiviazione, meno spam e accesso tramite dispositivi mobili."
+    }
+  ]
+}

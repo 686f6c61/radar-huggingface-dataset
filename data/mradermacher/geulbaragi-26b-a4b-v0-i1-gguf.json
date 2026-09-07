@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GeulBaragi-26B-A4B-v0-i1-GGUF",
+  "slug": "mradermacher-geulbaragi-26b-a4b-v0-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GeulBaragi-26B-A4B-v0-i1-GGUF",
+  "created_at": "2026-09-07T17:38:56.000Z",
+  "updated_at": "2026-09-07T18:37:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Baragi-AI/GeulBaragi-26B-A4B-v0",
+    "base_model:quantized:Baragi-AI/GeulBaragi-26B-A4B-v0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 38497073760,
+  "storage_human": "38.5 GB",
+  "base_model": "Baragi-AI/GeulBaragi-26B-A4B-v0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Klaus Krippendorff — Wikiberal",
+      "url": "https://www.wikiberal.org/wiki/Klaus_Krippendorff",
+      "snippet": "En examinant ces signes et symboles de manière approfondie, Krippendorff a pu identifier des opportunités d'innovation en …"
+    },
+    {
+      "title": "mradermacher/gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF",
+      "snippet": "mradermacher / gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF like 34 Transformers GGUF English heretic uncensored decensored abliterated ara imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "The Semantic Turn - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Semantic_Turn",
+      "snippet": "1The Semantic Turn: a book and its themes. Toggle The Semantic Turn: a book and its themes subsection. 1.1Design. …"
+    },
+    {
+      "title": "mradermacher/gemma-4-26B-A4B-it-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-heretic-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‪Klaus Krippendorff‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=8ZyYMGgAAAAJ&hl=en",
+      "snippet": "Answering the call for a standard reliability measure for coding data. Communication Methods and Measures, 1 (1), 77-89. Design …"
+    }
+  ]
+}

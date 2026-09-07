@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Paras014/llama-3.2-3b-hindi-to-gondi-lora",
+  "slug": "paras014-llama-3-2-3b-hindi-to-gondi-lora",
+  "author": "Paras014",
+  "url": "https://huggingface.co/Paras014/llama-3.2-3b-hindi-to-gondi-lora",
+  "created_at": "2026-09-07T13:23:20.000Z",
+  "updated_at": "2026-09-07T13:23:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/Llama-3.2-3B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211773598,
+  "storage_human": "212 MB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LigaInsider.de | News, Gerüchte und Statistiken zur 1. Bundesliga",
+      "url": "https://www.ligainsider.de/",
+      "snippet": "Wir machen Fans zu Experten: News, Gerüchte, Verletzungen, Noten und Statistiken zur Bundesliga."
+    },
+    {
+      "title": "Ryder99/Llama-3.2-3B-Instruct-Hindi-LoRA at main - Hugging Face",
+      "url": "https://huggingface.co/Ryder99/Llama-3.2-3B-Instruct-Hindi-LoRA/tree/main",
+      "snippet": "Model card Files Files and versions Community Train Deploy Use this model main Llama-3.2-3B-Instruct-Hindi-LoRA 1 contributor History: 5 commits"
+    },
+    {
+      "title": "Bundesliga-Vereine | LigaInsider",
+      "url": "https://beta.ligainsider.de/clubs/",
+      "snippet": "Alle Bundesliga-Vereine im Überblick: Kader, Spielpläne, Transfers und News zu jedem Klub."
+    },
+    {
+      "title": "meta-llama/Llama-3.2-3B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B",
+      "snippet": "Instructions to use meta-llama/Llama-3.2-3B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Der Standard-Gamechanger: Alle wichtigen Daten! | LigaInsider",
+      "url": "https://beta.ligainsider.de/ligainsider_1381/der-standard-gamechanger-alle-wichtigen-daten-417257/",
+      "snippet": "Aug 31, 2026 · Der Unterschiedsfaktor für Fantasy-Manager sind Standardsituationen. Durch sie gewinnen gute Spieler und Teams …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jackwang111/M2RL-RL_Math",
+  "slug": "jackwang111-m2rl-rl_math",
+  "author": "Jackwang111",
+  "url": "https://huggingface.co/Jackwang111/M2RL-RL_Math",
+  "created_at": "2026-09-07T12:54:43.000Z",
+  "updated_at": "2026-09-07T13:37:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404526,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blogotex",
+      "url": "https://blogotex.com/login",
+      "snippet": "Blogotex streamlines collaboration between fashion brands and influencers, offering seamless campaign management, real-time …"
+    },
+    {
+      "title": "GitHub - Mosi-AI/M2RL",
+      "url": "https://github.com/Mosi-AI/M2RL",
+      "snippet": "Mixed multi-task RLVR achieves comparable performance with separate RLVR followed by model merging, while using only 33.2% of GPU hours. Cross-domain RLVR shows minimal interference; reasoning-intensive domains (math, coding, science) exhibit strong synergistic effects."
+    },
+    {
+      "title": "Blogotex",
+      "url": "https://blogotex.com/brand/backbone/application",
+      "snippet": "Blogotex streamlines collaboration between fashion brands and influencers, offering seamless campaign management, real-time …"
+    },
+    {
+      "title": "M2RL/M2RL at main · Mosi-AI/M2RL · GitHub",
+      "url": "https://github.com/Mosi-AI/M2RL/tree/main/M2RL",
+      "snippet": "Contribute to Mosi-AI/M2RL development by creating an account on GitHub."
+    },
+    {
+      "title": "Blogger",
+      "url": "https://accounts.google.com/login?service=blogger",
+      "snippet": "Type the text you hear or see. Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode. …"
+    }
+  ]
+}

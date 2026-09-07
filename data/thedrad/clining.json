@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "theDrad/Clining",
+  "slug": "thedrad-clining",
+  "author": "theDrad",
+  "url": "https://huggingface.co/theDrad/Clining",
+  "created_at": "2026-09-07T17:07:31.000Z",
+  "updated_at": "2026-09-07T17:07:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF合并后页面大小不一致怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/388312493",
+      "snippet": "多个PDF文件合并后，出现页面大小不一致的情况，怎么办？"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "如何将pdf页面调整为统一大小？ - 知乎",
+      "url": "https://www.zhihu.com/question/528621031",
+      "snippet": "1、点击“工具--印刷制作--印前检查--PDF修正--将页面缩放为A4--分析和修复”。 PDF统一到A4大小完成，保存即可。"
+    },
+    {
+      "title": "Threat Modeling for AI Systems: STRIDE, DREAD, and Beyond",
+      "url": "https://davepatten.substack.com/p/threat-modeling-for-ai-systems-stride",
+      "snippet": "But as AI systems spread across industries, so do their risks. New types of attacks are surfacing: Data poisoning Prompt injection Model inversion Supply chain compromise And unpredictable emergent behaviors Despite this shift, most organizations still rely on legacy threat modeling frameworks like STRIDE and DREAD, designed for traditional IT ..."
+    },
+    {
+      "title": "Ilovepdfと言うサイトを発見しました。 - https://www... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11181864276",
+      "snippet": "Nov 17, 2017 · https://www.ilovepdf.com/jaPDFを分割したり、ワードやエクセルになおしたり、様々なことができるサイトなのです …"
+    }
+  ]
+}

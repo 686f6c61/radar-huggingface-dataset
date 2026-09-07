@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "robebo116/60-zh-vi",
+  "slug": "robebo116-60-zh-vi",
+  "author": "robebo116",
+  "url": "https://huggingface.co/robebo116/60-zh-vi",
+  "created_at": "2026-09-07T09:52:13.000Z",
+  "updated_at": "2026-09-07T09:52:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "chinese-vietnamese",
+    "webnovel",
+    "xianxia",
+    "nmt",
+    "machine-translation",
+    "asymmetric-transformer",
+    "trained-from-scratch",
+    "zh",
+    "vi",
+    "dataset:ngocdang83/tran-vi-teacher",
+    "dataset:chi-vi/hirashiba-mt-zh2vi-b-filtered",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 56435136,
+  "parameters_human": "56.4M",
+  "storage_bytes": 284424641,
+  "storage_human": "284 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Korzystanie ze schowka | Microsoft Support",
+      "url": "https://support.microsoft.com/pl-pl/windows/apps/using-the-clipboard",
+      "snippet": "Schowek nie jest synchronizowany z moimi urządzeniami Synchronizowanie elementów Schowka na urządzeniach z systemem …"
+    },
+    {
+      "title": "robebo116 (DINH VAN VINH) - Hugging Face",
+      "url": "https://huggingface.co/robebo116/datasets",
+      "snippet": "robebo116's datasets2 Sort: Recently updated robebo116/model_en Updated about 8 hours ago• 58"
+    },
+    {
+      "title": "Surface 恢复映像下载 - Microsoft 支持",
+      "url": "https://support.microsoft.com/zh-cn/surface-recovery-image",
+      "snippet": "对于 Surface Hub 2S 和 Surface Hub 3，请参阅 重置 Surface Hub 2S & Surface Hub 3的 & 恢复，了解每种设备型号支持哪些恢复映 …"
+    },
+    {
+      "title": "robebo116/model_vi at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/robebo116/model_vi/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cómo iniciar sesión en Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/es-es/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Cómo volver a una cuenta antigua de Hotmail Hotmail está ahora Outlook.com. Para iniciar sesión en su cuenta de Hotmail, vaya a …"
+    }
+  ]
+}

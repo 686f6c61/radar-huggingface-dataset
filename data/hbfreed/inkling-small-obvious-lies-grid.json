@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hbfreed/inkling-small-obvious-lies-grid",
+  "slug": "hbfreed-inkling-small-obvious-lies-grid",
+  "author": "hbfreed",
+  "url": "https://huggingface.co/hbfreed/inkling-small-obvious-lies-grid",
+  "created_at": "2026-09-07T18:00:58.000Z",
+  "updated_at": "2026-09-07T18:25:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "alignment",
+    "emergent-misalignment",
+    "self-distillation",
+    "research",
+    "arxiv:2604.25891",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97185146128,
+  "storage_human": "97.2 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome Inkling by Thinking Machines - Hugging Face",
+      "url": "https://huggingface.co/blog/thinkingmachines-inkling",
+      "snippet": "The tower folds the patch grid, a small local block of neighboring tokens is stacked into the channel dimension and goes through hMLP. The audio waveform is converted to mel scale, which is then classified into a discrete mel bin. These mel bin values are embedded in the audio embedding tower and the embeddings are then summed to construct the final audio input. Inkling comes with day-0 transformers support and is supported in major inference engines like SGLang and vLLM."
+    },
+    {
+      "title": "Inkling-Small Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling-small/",
+      "snippet": "Inkling-Small is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented ..."
+    },
+    {
+      "title": "10 Best Portfolio Management Software Reviewed in 2026",
+      "url": "https://thecfoclub.com/tools/best-portfolio-management-software/",
+      "snippet": "Aug 31, 2026 · Discover the top portfolio management software for your team. Compare features, pros & cons, prices, and more in …"
+    },
+    {
+      "title": "r/LocalLLaMA on Reddit: Thinking Machines releases first open-weight model “Inkling”",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uxdv34/thinking_machines_releases_first_openweight_model/",
+      "snippet": ""
+    },
+    {
+      "title": "Inkling Explained: Thinking Machines' First Model",
+      "url": "https://www.layer3labs.io/guides/inkling-explained",
+      "snippet": "Inkling is Thinking Machines Lab's first open-weights AI model. Learn its 975B/41B MoE design, how it compares, and how to fine-tune it with Tinker."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "akifkaradag/isles22-nnunetv2-stroke-segmentation",
+  "slug": "akifkaradag-isles22-nnunetv2-stroke-segmentation",
+  "author": "akifkaradag",
+  "url": "https://huggingface.co/akifkaradag/isles22-nnunetv2-stroke-segmentation",
+  "created_at": "2026-09-07T15:36:04.000Z",
+  "updated_at": "2026-09-07T15:57:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "nnunetv2",
+  "languages": [],
+  "tags": [
+    "nnunetv2",
+    "medical-imaging",
+    "image-segmentation",
+    "mri",
+    "stroke",
+    "isles",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 265727271,
+  "storage_human": "266 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Microsoft Authenticator | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/authenticator/download-microsoft-authenticator",
+      "snippet": "The Microsoft Authenticator app helps you sign into your accounts when you're using two-step verification."
+    },
+    {
+      "title": "ISLES: Ischemic Stroke Lesion Segmentation Challenge 2022",
+      "url": "http://www.isles-challenge.org/",
+      "snippet": "This year ISLES 2022 asks for methods that allow the segmentation of stroke lesions in two separate tasks: Multimodal MRI infarct segmentation in acute and sub-acute stroke. Participants are requested to Segment brain infarct lesions from acute and sub-acute stroke scans using DWI, ADC and FLAIR images. Link: https://isles22.grand-challenge.org Dataset: Follow the instructions on https ..."
+    },
+    {
+      "title": "下载 Microsoft Authenticator | Microsoft Support",
+      "url": "https://support.microsoft.com/zh-cn/authenticator/download-microsoft-authenticator",
+      "snippet": "Microsoft Authenticator 不适用于电脑或 Mac，因为出于安全原因，验证器应用是专为智能手机设计的。 了解详细信息。 Microsoft 不 …"
+    },
+    {
+      "title": "DeepISLES: a clinically validated ischemic stroke segmentation model ...",
+      "url": "https://www.nature.com/nature-index/article/10.1038/s41467-025-62373-x",
+      "snippet": "The Nature Index tracks the affiliations of high-quality scientific articles. Updated monthly, the Nature Index presents research outputs by institution and country. Use the Nature Index to ..."
+    },
+    {
+      "title": "Microsoft Authenticator herunterladen | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/authenticator/download-microsoft-authenticator",
+      "snippet": "Microsoft Authenticator ist eine mobile App, mit der Sie sich bei all Ihren Konten anmelden können, ohne ein Kennwort zu verwenden."
+    }
+  ]
+}

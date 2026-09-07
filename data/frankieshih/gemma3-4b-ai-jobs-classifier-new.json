@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FrankieShih/gemma3-4b-ai-jobs-classifier-new",
+  "slug": "frankieshih-gemma3-4b-ai-jobs-classifier-new",
+  "author": "FrankieShih",
+  "url": "https://huggingface.co/FrankieShih/gemma3-4b-ai-jobs-classifier-new",
+  "created_at": "2026-09-07T15:22:27.000Z",
+  "updated_at": "2026-09-07T15:22:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "FrankieShih/gemma3-4B-ai-jobs-classifier · Hugging Face",
+      "url": "https://huggingface.co/FrankieShih/gemma3-4B-ai-jobs-classifier",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=de-DE",
+      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+    },
+    {
+      "title": "FrankieShih/gemma3-4B-ai-jobs-classifier at main - Hugging Face",
+      "url": "https://huggingface.co/FrankieShih/gemma3-4B-ai-jobs-classifier/tree/main",
+      "snippet": "FrankieShih / gemma3-4B-ai-jobs-classifier like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ChatGPT Deutsch Vollbild ohne Anmeldung",
+      "url": "https://chatx.de/gpt",
+      "snippet": "Nutzen Sie ChatGPT kostenlos und anonym. Verfügbare Modelle: GPT-5 nano, GPT-5.6 Luna, GPT-5.6 Terra, GPT-5.6 Sol. Ohne …"
+    }
+  ]
+}

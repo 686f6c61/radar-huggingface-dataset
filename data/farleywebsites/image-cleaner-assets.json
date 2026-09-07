@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "FarleyWebsites/image-cleaner-assets",
+  "slug": "farleywebsites-image-cleaner-assets",
+  "author": "FarleyWebsites",
+  "url": "https://huggingface.co/FarleyWebsites/image-cleaner-assets",
+  "created_at": "2026-09-07T10:13:01.000Z",
+  "updated_at": "2026-09-07T10:14:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208044816,
+  "storage_human": "208 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Намаз оқу үлгісі әйелдерге - 5 уақыт намаз оқу - kz",
+      "url": "https://www.zharar.com/kz/9278-namaz_suret_video.html",
+      "snippet": "Сіздерге, яғни әйелдерге арналған бес уақыт намазының оқу үлгісін мәтін және видео нұсқа ретінде Имам Әбу Ханифа …"
+    },
+    {
+      "title": "AI Image Detector Bypass | Forensic Cleaner",
+      "url": "https://twotensors.ai/",
+      "snippet": "Forensic Cleaner makes AI image detector bypass repeatable: upload an image, check detector risk, pick a cleaning strength, then export a result that stays close to the source. Read what the Remove AI Detection From Imagestool changes, or follow How to Remove AI Detection From Imagesstep by step. Upload Start with a PNG, JPG, or WEBP."
+    },
+    {
+      "title": "Намаз оқу үлгісі ерлерге - 5 уақыт намаз оқу - kz",
+      "url": "https://www.zharar.com/kz/11496-namaz_suret_video.html",
+      "snippet": "Құрметті мұсылман қауым! Сіздерге, яғни ерлерге арналған бес уақыт намазының оқу үлгісін мәтін және видео нұсқа ретінде …"
+    },
+    {
+      "title": "AICleanify: Remove EXIF, Strip AI Markers & Clean Image Metadata",
+      "url": "https://aicleanify.com/",
+      "snippet": "Remove EXIF metadata, strip AI markers and clean image data with one click. Protect your privacy and optimise your content for any platform. 100% free."
+    },
+    {
+      "title": "Бес уа­қыт на­маз­дың оқылуы / Қайрат Жолдыбайұлы",
+      "url": "https://islam.kz/kk/articles/iman-alippesi/islam-sharttary/namaz-oqu/bes-uaqyt-namazdyn-oqyluy-603/",
+      "snippet": "Бі­рақ «Фа­ти­ха­дан» кейін Құ­ран­ды кө­бі­рек оқу – сүн­нет. Бұл сүн­нет­тің азы – қы­рық аят. Бі­рақ үш аят оқы­са да бо­ла­ды."
+    }
+  ]
+}

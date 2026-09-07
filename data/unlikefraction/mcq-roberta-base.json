@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "unlikefraction/mcq-roberta-base",
+  "slug": "unlikefraction-mcq-roberta-base",
+  "author": "unlikefraction",
+  "url": "https://huggingface.co/unlikefraction/mcq-roberta-base",
+  "created_at": "2026-09-07T13:19:16.000Z",
+  "updated_at": "2026-09-07T13:19:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "roberta",
+    "text-classification",
+    "multiple-choice",
+    "mcq",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126020932,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Αρχική | Snappi – Η νέα σου τράπεζα.",
+      "url": "https://www.snappibank.com/el/",
+      "snippet": "Aug 25, 2026 · Ανακάλυψε τη Snappi, τη νέα ψηφιακή εμπειρία banking που συνδυάζει ασφάλεια, διαφάνεια και έξυπνες λύσεις …"
+    },
+    {
+      "title": "FacebookAI/roberta-base · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/roberta-base",
+      "snippet": "Explore the RoBERTa base model by FacebookAI, a transformer-based language model available on Hugging Face platform for various NLP tasks."
+    },
+    {
+      "title": "Banking για ιδιώτες | Snappi – Η νέα σου τράπεζα.",
+      "url": "https://www.snappibank.com/el/banking-gia-idiotes/",
+      "snippet": "Ανακάλυψε στη Snappi ολοκληρωμένες προσωπικές τραπεζικές λύσεις με έξυπνα προϊόντα και υποστήριξη που κάνει τη διαφορά σε …"
+    },
+    {
+      "title": "roberta-base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/roberta-base-klue",
+      "snippet": "The models are architecturally identical but differ completely in vocabulary and learned representations due to training on different languages. kf-deberta-base by kakaobank is a Korean language model using the DeBERTa architecture from Microsoft rather than RoBERTa."
+    },
+    {
+      "title": "Snappi Bank - Εφαρμογές στο Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.snappibank.snappiapp&hl=el",
+      "snippet": "Εξατομίκευση στο Play. Banking με τον τρόπο που θες να ζεις. Η 1η ελληνική neobank με άδεια από την ΕΚΤ."
+    }
+  ]
+}

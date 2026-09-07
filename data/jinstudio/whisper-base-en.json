@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/whisper-base.en",
+  "slug": "jinstudio-whisper-base-en",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/whisper-base.en",
+  "created_at": "2026-09-07T17:34:39.000Z",
+  "updated_at": "2026-09-07T17:34:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "whisper",
+    "audio",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "en",
+    "arxiv:2212.04356",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72593408,
+  "parameters_human": "72.6M",
+  "storage_bytes": 1161895072,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (other)",
+      "metric": "Test WER",
+      "value": 12.803978669490565
+    }
+  ],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "openai/whisper-base · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-base",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use openai/whisper-base with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use openai/whisper-base with Transformers:"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

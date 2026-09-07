@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-piperx-sortletter-0905-53ep-retimed-20k-pytorch",
+  "slug": "travor278-pi05-piperx-sortletter-0905-53ep-retimed-20k-pytorch",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-piperx-sortletter-0905-53ep-retimed-20k-pytorch",
+  "created_at": "2026-09-07T12:53:23.000Z",
+  "updated_at": "2026-09-07T13:23:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "piperx",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42562578584,
+  "storage_human": "42.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=GB&hl=en-GB",
+      "snippet": "Enjoy the videos and music you love, upload original content and share it all with friends, family and the world on YouTube."
+    },
+    {
+      "title": "Travor278/pi05-piperx-full558-hil-acp-r1 · Hugging Face",
+      "url": "https://huggingface.co/Travor278/pi05-piperx-full558-hil-acp-r1",
+      "snippet": "Instructions to use Travor278/pi05-piperx-full558-hil-acp-r1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Travor278 (金奕帆) - Hugging Face",
+      "url": "https://huggingface.co/Travor278/datasets",
+      "snippet": "None yet Travor278's datasets4 Sort: Recently updated Travor278/evorl-piperx-copper-screw-hil-raw Viewer •Updated about 1 hour ago•216 Travor278/piperx-old-ab-rgbd-5903 Viewer •Updated 6 days ago•1•68"
+    },
+    {
+      "title": "About YouTube - YouTube",
+      "url": "https://about.youtube/",
+      "snippet": "YouTube's mission is to give everyone a voice and show them the world. Learn about our brand, community, careers and more."
+    }
+  ]
+}

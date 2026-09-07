@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chair0/single_multiple_lighting",
+  "slug": "chair0-single_multiple_lighting",
+  "author": "chair0",
+  "url": "https://huggingface.co/chair0/single_multiple_lighting",
+  "created_at": "2026-09-07T12:50:50.000Z",
+  "updated_at": "2026-09-07T12:51:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:chair0/single_print_better_cam_merged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nederlandse Public Cloud in 2026: soevereine alternatieven en hoe je ...",
+      "url": "https://www.redbus.nl/nederlandse-public-cloud/",
+      "snippet": "Aug 26, 2025 · Daarom focussen we in dit overzicht uitsluitend op Europese aanbieders met hosting in Nederland of aantoonbare EU …"
+    },
+    {
+      "title": "chair0 (Jason Lee) - Hugging Face",
+      "url": "https://huggingface.co/chair0/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "The future of public cloud ERP: Integrated, modular, intelligent | SAP",
+      "url": "https://www.sap.com/blogs/the-future-of-public-cloud-erp",
+      "snippet": "Oct 8, 2024 · With its laser focus on innovation and integration and close working ties with its customer base, SAP offers the most …"
+    },
+    {
+      "title": "FurniMesh — AI Image to 3D Model Generator for Furniture",
+      "url": "https://furnimesh.com/",
+      "snippet": "FurniMesh is anAI image to 3Dplatform that turns furniture photos into production-ready3D modelsin under 60 seconds. Upload a photo of a chair, sofa, table, lamp, or any furniture piece, and the AI returns a textured 3D model inGLB, OBJ, SKP, or BLENDformat. Used by 22K+designers, retailers, architects, and 3D artists in 100+countries, who have generated 71K+furniture models so far."
+    },
+    {
+      "title": "SAP op elke cloud - T-Systems",
+      "url": "https://www.t-systems.com/nl/nl/application-services/solutions/sap-on-any-cloud",
+      "snippet": "Wanneer je hebt besloten voor SAP op een publieke cloud met een standaarddienst, dan zijn er ook nog een aantal vervolgkeuzes te …"
+    }
+  ]
+}

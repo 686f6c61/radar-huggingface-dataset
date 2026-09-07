@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Myric/Spark-X2.5-4B-GGUF",
+  "slug": "myric-spark-x2-5-4b-gguf",
+  "author": "Myric",
+  "url": "https://huggingface.co/Myric/Spark-X2.5-4B-GGUF",
+  "created_at": "2026-09-07T13:20:45.000Z",
+  "updated_at": "2026-09-07T13:22:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "spark2_5",
+    "text-generation",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 8232873312,
+  "storage_human": "8.2 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EKG-Befund: Hypokaliämie",
+      "url": "https://medizin-wissen-online.de/index.php/innere-medizin/kardiologie/ekg-befundung/ekg-befund-hypokaliaemie",
+      "snippet": "Jun 7, 2019 · → I:Bei leichter Hypokaliämie kommt es zur Abflachung der T-Welle mit möglicher Senkung der ST-Strecke(horizontal …"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "T-Welle - DocCheck Flexikon",
+      "url": "https://flexikon.doccheck.com/de/T-Welle",
+      "snippet": "Bei Hypokaliämieist die Leitfähigkeit für Kalium verringert und die T-Welle flacht ab. Häufig kommt es dabei zu einem \"Zerfall\" der T …"
+    },
+    {
+      "title": "abenzerps/Spark-X2.5-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/Spark-X2.5-4B-GGUF",
+      "snippet": "Instructions to use abenzerps/Spark-X2.5-4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "EKG bei Elektrolytstörungen - Fokus-EKG",
+      "url": "https://www.fokus-ekg.de/inhalt-von-a-z/elektrolytst%C3%B6rungen-und-medikamenteneffekte/elektrolytst%C3%B6rungen/",
+      "snippet": "Eine Verminderung der extrazellulären Kaliumkonzentrationführt zu einer Hyperpolarisation der Zelle und zur Verlängerung der …"
+    }
+  ]
+}

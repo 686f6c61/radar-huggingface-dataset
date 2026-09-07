@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JoSTR/act_ram_v3",
+  "slug": "jostr-act_ram_v3",
+  "author": "JoSTR",
+  "url": "https://huggingface.co/JoSTR/act_ram_v3",
+  "created_at": "2026-09-07T15:02:47.000Z",
+  "updated_at": "2026-09-07T15:02:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:JoSTR/rm_ram_20260831_145557",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206800728,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "data- The range of cells to perform the query on. Each column of datacan only hold boolean, numeric (including date/time types) or …"
+    },
+    {
+      "title": "JoSTR/act_ram · Hugging Face",
+      "url": "https://huggingface.co/JoSTR/act_ram",
+      "snippet": "Instructions to use JoSTR/act_ram with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use JoSTR/act_ram with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your robot Train your own policy ..."
+    },
+    {
+      "title": "QUERY - Cправка - Редакторы Google Документов",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ru",
+      "snippet": "Google Таблицы Использование функций и формул QUERY QUERY Выполняет запросы на базе языка запросов API …"
+    },
+    {
+      "title": "ACT - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/act",
+      "snippet": "Get help, share stories, and hear announcements on our Slack channel Read our getting started guide and learn how to use Qualcomm AI Hub ACT Action Chunking with Transformers. ACT (Action Chunking with Transformers) is a robotic policy model that is trained to predict the next chunk of actions that the robotic hand is expected to perform."
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "Google ชีต ใช้ฟังก์ชันและสูตร QUERY QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด …"
+    }
+  ]
+}

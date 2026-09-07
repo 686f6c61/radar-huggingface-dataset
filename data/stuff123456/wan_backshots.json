@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "stuff123456/wan_backshots",
+  "slug": "stuff123456-wan_backshots",
+  "author": "stuff123456",
+  "url": "https://huggingface.co/stuff123456/wan_backshots",
+  "created_at": "2026-09-07T17:56:07.000Z",
+  "updated_at": "2026-09-07T17:56:16.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:rzgar/Wan2.2-I2V-Weak-ID",
+    "base_model:adapter:rzgar/Wan2.2-I2V-Weak-ID",
+    "license:wtfpl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613706289,
+  "storage_human": "614 MB",
+  "base_model": "rzgar/Wan2.2-I2V-Weak-ID",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Upgrade from Adobe Analytics to Customer Journey Analytics | Adobe ...",
+      "url": "https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations",
+      "snippet": "Aug 13, 2026 · The recommended process of upgrading from Adobe Analytics to Customer Journey Analytics is a new …"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Adobe Analytics → CJA: The Quiet Migration Guide 2026 | Focus GTS",
+      "url": "https://www.focusgts.com/adobe-analytics-to-cja-migration/",
+      "snippet": "Aug 12, 2026 · The forced migration from Adobe Analytics to Customer Journey Analytics — what's changing, why now, decision …"
+    },
+    {
+      "title": "Backshots - Discover Free AI Image Generation Models | SeaArt",
+      "url": "https://www.seaart.ai/search/model/Backshots",
+      "snippet": "Explore a large pool of free AI image generation models about Backshots on SeaArt!"
+    },
+    {
+      "title": "Upgrade from Adobe Analytics to Customer Journey Analytics | Adobe ...",
+      "url": "https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-org-readiness",
+      "snippet": "May 13, 2026 · Focus on the value that Customer Journey Analytics will bring to your organization, and how it will accelerate reaching …"
+    }
+  ]
+}

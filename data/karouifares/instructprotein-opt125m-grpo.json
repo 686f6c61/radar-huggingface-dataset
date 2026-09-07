@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "karouiFares/instructprotein-opt125m-grpo",
+  "slug": "karouifares-instructprotein-opt125m-grpo",
+  "author": "karouiFares",
+  "url": "https://huggingface.co/karouiFares/instructprotein-opt125m-grpo",
+  "created_at": "2026-09-07T17:15:34.000Z",
+  "updated_at": "2026-09-07T17:15:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:facebook/opt-125m",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "arxiv:2402.03300",
+    "base_model:facebook/opt-125m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 351618801,
+  "storage_human": "352 MB",
+  "base_model": "facebook/opt-125m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FICHE 5 - LA COUR DES COMPTES - Wayback Machine",
+      "url": "http://wayback.archive.org/web/2/http:/www.lagazettedescommunes.com/concours/PDF/rev/Fiche_5_institutions_financieres_cour_des_comptes.pdf",
+      "snippet": "FICHE 5 - LA COUR DES COMPTES Créée en 1807 par Napoléon Ier, la Cour des comptes est issue des chambres des comptes …"
+    },
+    {
+      "title": "karouiFares (Karoui Mohamed Fares) - Hugging Face",
+      "url": "https://huggingface.co/karouiFares",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "hicai-zju/InstructProtein · Hugging Face",
+      "url": "https://huggingface.co/hicai-zju/InstructProtein",
+      "snippet": "InstructProtein InstructProtein is the first large generative language model exploring the feasibility of bidirectional generation between human and protein language. It is based on OPT-1.3B architecture with two-step training approach: It initiates with pre-training on protein and natural language corpora, followed by fine-tuning with the established protein knowledge instruction dataset ..."
+    },
+    {
+      "title": "GitHub - HICAI-ZJU/InstructProtein: Code and data for the ACL2024 paper ...",
+      "url": "https://github.com/HICAI-ZJU/InstructProtein",
+      "snippet": "Description InstructProtein is the first large generative language model exploring the feasibility of bidirectional generation between human and protein language. The idea comes from the research of the Understudied Proteins Initiative: Some proteins, such as the tumor suppressor p53, have been studied extensively."
+    },
+    {
+      "title": "GitHub - opendataio/opt-125m: facebook/opt-125m model files mirror",
+      "url": "https://github.com/opendataio/opt-125m",
+      "snippet": "facebook/opt-125m model files mirror. Contribute to opendataio/opt-125m development by creating an account on GitHub."
+    }
+  ]
+}

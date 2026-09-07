@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/DeepSeek-V4-Flash-MTP-DSpark-MLX",
+  "slug": "solstice-ai-deepseek-v4-flash-mtp-dspark-mlx",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-MTP-DSpark-MLX",
+  "created_at": "2026-09-07T12:36:17.000Z",
+  "updated_at": "2026-09-07T12:37:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4_dspark",
+    "solstice-ai",
+    "deepseek",
+    "deepseek-v4",
+    "apple-silicon",
+    "metal",
+    "speculative-decoding",
+    "mtp",
+    "dspark",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20904912743,
+  "parameters_human": "20.90B",
+  "storage_bytes": 12994906286,
+  "storage_human": "13.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Solstice",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Solstice 92 languesAjouter un sujet"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Date des équinoxes et des solstices pour 2026 et à venir",
+      "url": "https://icalendrier.fr/outils/equinoxes-solstices",
+      "snippet": "Mar 20, 2026 · Le solstice d'été représente la journée la plus longue, et le solstice d'hiver la plus courte. Les images ci-dessous …"
+    },
+    {
+      "title": "DeepSeek-V4-Flash-MTP-DSpark-MLX - Hugging Face",
+      "url": "https://huggingface.co/inferencerlabs/DeepSeek-V4-Flash-MTP-DSpark-MLX",
+      "snippet": "This draft model contains the extracted DSpark layers to be used alongside the DeepSeek-V4-Flash-0731-MLX model as a speculative decoder for improved performance."
+    },
+    {
+      "title": "Solstice - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Solstice",
+      "snippet": "additional terms may apply. By using this site, you agree to the Terms of Useand Privacy Policy. Wikipedia® is a registered …"
+    }
+  ]
+}

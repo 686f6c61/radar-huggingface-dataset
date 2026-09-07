@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_student_llama8bins_omnimath_diversity",
+  "slug": "sstoica12-acquisition_student_llama8bins_omnimath_diversity",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_student_llama8bins_omnimath_diversity",
+  "created_at": "2026-09-07T17:17:31.000Z",
+  "updated_at": "2026-09-07T17:19:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "sstoica12/acquisition_student_llama8bins_omnimath_confidence - Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_llama8bins_omnimath_confidence",
+      "snippet": "Instructions to use sstoica12/acquisition_student_llama8bins_omnimath_confidence with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "pas de messagerie pro aujourd'hui 25/08/2026 - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/pas-de-messagerie-pro-aujourd-hui-25-08-2026/td-p/3449614/page/2",
+      "snippet": "Aug 25, 2026 · Blog Communauté Orange Mes mails mail Orange pas de messagerie pro aujourd'hui 25/08/2026 Recherchez dans …"
+    },
+    {
+      "title": "acquisition_student_base_llama8bins_numina - Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_base_llama8bins_numina",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Orange - Forum - Assistance - Communauté Orange - Livebox - Mobile ...",
+      "url": "https://communaute.orange.fr/",
+      "snippet": "Trouvez les réponses sur le forum Orange et bénéficiez de l'entraide et des conseils des utilisateurs de services Orange."
+    }
+  ]
+}

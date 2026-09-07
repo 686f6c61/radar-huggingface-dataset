@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_50",
+  "slug": "castanetnicolas-act_ur5e_bs_32_act_chunk_50",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_50",
+  "created_at": "2026-09-07T17:24:07.000Z",
+  "updated_at": "2026-09-07T17:24:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:castanetnicolas/UR5e_nut_assembly_square",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51621511,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206526812,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "castanetnicolas (Castanet) - Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/models",
+      "snippet": "castanetnicolas Follow https://nicolascastanet.github.io/ nicolas-castanet-7b690a355"
+    },
+    {
+      "title": "Suche – Microsoft Bing",
+      "url": "https://de.bing.com/",
+      "snippet": "Suchen Sie mit Microsoft Bing und nutzen Sie die Leistungsfähigkeit der KI, um Informationen zu finden, Webseiten, Bilder, Videos, …"
+    },
+    {
+      "title": "castanetnicolas (Castanet) - Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/activity/all",
+      "snippet": "castanetnicolas 2 Follow https://nicolascastanet.github.io/ nicolas-castanet-7b690a355"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/?setlang=de-de&brdr=1",
+      "snippet": "Bing helps you turn information into action, making your search experience faster and easier."
+    }
+  ]
+}
