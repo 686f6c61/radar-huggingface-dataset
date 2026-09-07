@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "innovazets/besein-datasets",
+  "slug": "innovazets-besein-datasets",
+  "author": "innovazets",
+  "url": "https://huggingface.co/innovazets/besein-datasets",
+  "created_at": "2026-09-07T02:29:43.000Z",
+  "updated_at": "2026-09-07T02:32:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 282761056,
+  "storage_human": "283 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Secondhand-Buch: Gebrauchte Romane online kaufen - osiander.de",
+      "url": "https://www.osiander.de/kategorie/romane-erzaehlungen-34359/",
+      "snippet": "Die Lösung ist einfach: Sie können Romane gebraucht kaufen – unproblematisch, sicher und mit bestem Service bei Osiander. …"
+    },
+    {
+      "title": "50+ Best AI Model Training Datasets for 2026: Free & Premium",
+      "url": "https://www.sozee.ai/resources/best-ai-model-training-datasets/",
+      "snippet": "Discover 50+ vetted AI training datasets for 2026. Free sources like Kaggle & premium options. Start with Sozee for synthetic data solutions."
+    },
+    {
+      "title": "Ihr neues Buch gebraucht: Krimis und Thriller in großer Auswahl",
+      "url": "https://www.osiander.de/kategorie/krimis-thriller-34366/",
+      "snippet": "Gebrauchte Krimis kaufen Sie mit großer Auswahl bei Osiander. Stöbern Sie durch die aktuell verfügbaren gebrauchten Bücher und …"
+    },
+    {
+      "title": "Find Open Datasets for AI and Research | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Osiander Onlineshop: Bücher, eBooks & mehr kaufen | Osiander",
+      "url": "https://www.osiander.de/",
+      "snippet": "Bei Osiander erwartet Sie eine besondere Auswahlan Büchern für Lesebegeisterte von jung bis alt sowie über verschiedene Genres …"
+    }
+  ]
+}

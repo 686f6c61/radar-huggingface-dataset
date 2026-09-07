@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "guiiwfz/logi-1.5b",
+  "slug": "guiiwfz-logi-1-5b",
+  "author": "guiiwfz",
+  "url": "https://huggingface.co/guiiwfz/logi-1.5b",
+  "created_at": "2026-09-07T02:42:44.000Z",
+  "updated_at": "2026-09-07T04:06:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "logi",
+    "decifra-ia",
+    "logica-proposicional",
+    "alfabetizacao-ia",
+    "qlora",
+    "unsloth",
+    "portuguese",
+    "education",
+    "text-generation",
+    "conversational",
+    "pt",
+    "dataset:custom",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 307014886,
+  "storage_human": "307 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WeiboAI/VibeThinker-1.5B · Hugging Face",
+      "url": "https://huggingface.co/WeiboAI/VibeThinker-1.5B",
+      "snippet": "@misc{xu2025tinymodelbiglogic, title={Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model Reasoning Ability in VibeThinker-1.5B}, author={Sen Xu and Yi Zhou and Wei Wang and Jixin Min and Zhibin Yin and Yingwei Dai and Shixi Liu and Lianyu Pang and Yirong Chen and Junlin Zhang}, year={2025}, eprint={2511.06221}, archivePrefix={arXiv}, primaryClass={cs.AI}, url={https://arxiv.org/abs/2511.06221}, }"
+    },
+    {
+      "title": "Salle de séminaire à Paris — réunions, conférences : 5 000+ lieux ...",
+      "url": "https://www.1001salles.com/salle-de-seminaire-3-paris-d.html",
+      "snippet": "Comparez 5 000+ salles de séminaire à Paris : hôtels d'affaires, châteaux, lieux atypiques, espaces modulables. Filtrez par …"
+    },
+    {
+      "title": "guiiwfz/logi-1.5b · Hugging Face",
+      "url": "https://huggingface.co/guiiwfz/logi-1.5b",
+      "snippet": "Instructions to use guiiwfz/logi-1.5b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Feature retirement: Logi AI Prompt Builder – Logitech Support + Download",
+      "url": "https://support.logi.com/hc/en-gb/articles/22394071652759-Logi-AI-Prompt-Builder",
+      "snippet": "OverviewAs part of our ongoing improvements to Options+, the AI Prompt Builder feature is no longer available as of June, 2026.Why are we making this change?We first launched the Logi AI Prompt Bui..."
+    },
+    {
+      "title": "r/logitech on Reddit: Feature retirement: Logi AI Prompt Builder",
+      "url": "https://www.reddit.com/r/logitech/comments/1twdk46/feature_retirement_logi_ai_prompt_builder/",
+      "snippet": ""
+    }
+  ]
+}

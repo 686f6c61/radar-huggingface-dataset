@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/EpHod",
+  "slug": "onescience-group-ephod",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/EpHod",
+  "created_at": "2026-09-07T02:22:15.000Z",
+  "updated_at": "2026-09-07T02:37:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OneScience",
+    "bioscience",
+    "enzyme-optimum-pH-prediction",
+    "protein-language-model",
+    "EpHod",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8184277172,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "OneScience-Group/EpHod · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/EpHod",
+      "snippet": "The model first uses ESM-1v to encode amino acid sequences into protein representations and then combines predictions from a Residual Lightweight Attention network (RLATtr) and a Support Vector Regression model (SVR)."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Need to download the package to install across your organization?"
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/BoltzGen",
+  "slug": "onescience-group-boltzgen",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/BoltzGen",
+  "created_at": "2026-09-07T02:06:20.000Z",
+  "updated_at": "2026-09-07T02:11:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OneScience",
+    "bioscience",
+    "protein-design",
+    "binder-design",
+    "BoltzGen",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1429582,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chat Login – Chatroom2000",
+      "url": "https://www.chatroom2000.de/chat-login/",
+      "snippet": "Ohne Anmeldung kannst du direkt loschatten. Die Bedienung ist sehr einfach und übersichtlich. Dieses Portal ist auch für Chat …"
+    },
+    {
+      "title": "OneScience-Group/BoltzGen · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/BoltzGen",
+      "snippet": "BoltzGen is a generative model for biomolecular binder design. Given a protein, peptide, nucleic acid, or small-molecule target together with design constraints, BoltzGen can generate candidate three-dimensional structures, perform inverse folding to generate amino acid sequences, and use Boltz-2 for structure refolding, confidence analysis, filtering, and ranking."
+    },
+    {
+      "title": "Chatroom2000 – Kostenloser Chat ohne Anmeldung",
+      "url": "https://www.chatroom2000.de/",
+      "snippet": "NEUE LEUTE KENNENLERNEN UND CHATTEN NEUE LEUTE KENNENLERNEN UND CHATTEN Flirt Chat mit großer Wirkung …"
+    },
+    {
+      "title": "BoltzGen: Open-Source Generative Model for Universal Binder Design",
+      "url": "https://boltz.bio/boltzgen",
+      "snippet": "BoltzGen is an all-atom generative diffusion model that designs proteins and peptides to bind arbitrary biomolecular targets. Unifies design and structure prediction. Experimentally validated with nanomolar binders on novel targets. MIT license."
+    },
+    {
+      "title": "Chat - Knuddels.de-Forum",
+      "url": "https://forum.knuddels.de/ubbthreads.php?ubb=showflat&Number=82173",
+      "snippet": "gehe zu folgendem Forum Knuddels.de der Chat: Chatten, Flirten & Verlieben"
+    }
+  ]
+}

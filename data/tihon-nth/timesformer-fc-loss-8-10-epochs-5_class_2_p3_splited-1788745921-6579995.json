@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tihon-nth/timesformer-fc-loss-8-10-epochs-5_class_2_p3_splited-1788745921.6579995",
+  "slug": "tihon-nth-timesformer-fc-loss-8-10-epochs-5_class_2_p3_splited-1788745921-6579995",
+  "author": "tihon-nth",
+  "url": "https://huggingface.co/tihon-nth/timesformer-fc-loss-8-10-epochs-5_class_2_p3_splited-1788745921.6579995",
+  "created_at": "2026-09-07T01:52:04.000Z",
+  "updated_at": "2026-09-07T06:53:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "timesformer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 121262597,
+  "parameters_human": "121.3M",
+  "storage_bytes": 4365738621,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bubble Shooter kostenlos online spielen",
+      "url": "https://www.shooter-bubble.de/",
+      "snippet": "Bubble Shooter ist eines der beliebtesten Onlinespiele, bei uns kannst Du das Game kostenlos und ohne Anmeldung spielen. Viel …"
+    },
+    {
+      "title": "tihon-nth/timesformer-8-10-epochs-5_class_2_p3_splited-1788663255 ...",
+      "url": "https://huggingface.co/tihon-nth/timesformer-8-10-epochs-5_class_2_p3_splited-1788663255.614766",
+      "snippet": "Instructions to use tihon-nth/timesformer-8-10-epochs-5_class_2_p3_splited-1788663255.614766 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Bubble Shooter - Klicken Sie hier, um kostenlos zu spielen",
+      "url": "https://www.bubbleshooter.com/de/",
+      "snippet": "Viele moderne Bubble Shooter kombinieren Elemente aus anderen Bubble Games. Spieler können Bubble Shooter mit Match-3 …"
+    },
+    {
+      "title": "TimeSformer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.30.0/en/model_doc/timesformer",
+      "snippet": "Overview The TimeSformer model was proposed in TimeSformer: Is Space-Time Attention All You Need for Video Understanding? by Facebook Research. This work is a milestone in action-recognition field being the first video transformer. It inspired many transformer based video understanding and classification papers."
+    },
+    {
+      "title": "Bubble Shooter - Play the game for free",
+      "url": "https://www.bubbleshooter.net/",
+      "snippet": "Play the world famous Bubble Shooter game on our website. It is free to play with no signup or download required. Aim, pop and shoot."
+    }
+  ]
+}

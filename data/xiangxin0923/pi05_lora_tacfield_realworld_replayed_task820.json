@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820",
+  "slug": "xiangxin0923-pi05_lora_tacfield_realworld_replayed_task820",
+  "author": "xiangxin0923",
+  "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820",
+  "created_at": "2026-08-27T15:38:37.000Z",
+  "updated_at": "2026-09-07T02:41:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20663618220,
+  "storage_human": "20.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/;anything",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820 - Hugging Face",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820",
+      "snippet": "xiangxin0923 / pi05_lora_tacfield_realworld_replayed_task820 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Google Översätt - Google Translate",
+      "url": "https://translate.google.com/?hl=sv",
+      "snippet": "Med Googles kostnadsfria tjänst kan du översätta ord, fraser och webbsidor från engelska till fler än 100 andra språk direkt."
+    },
+    {
+      "title": "xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_nostate ...",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_nostate",
+      "snippet": "Sim-replayed Task820 (lab0903 convert). Overwrites previous weights in this repo. Serve cd/path/to/T2-VLA bash server.sh pi05_lora_tacimg_realworld_replayed_task820_nostate 29999"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Detect language→ English Google home"
+    }
+  ]
+}

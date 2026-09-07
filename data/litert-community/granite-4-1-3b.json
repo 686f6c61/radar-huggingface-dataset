@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/granite-4.1-3b",
   "created_at": "2026-08-17T05:39:50.000Z",
-  "updated_at": "2026-09-04T21:32:26.000Z",
+  "updated_at": "2026-09-06T07:41:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 335,
+  "downloads_30d": 350,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

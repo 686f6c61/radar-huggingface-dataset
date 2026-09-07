@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/IgFold",
+  "slug": "onescience-group-igfold",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/IgFold",
+  "created_at": "2026-09-07T02:44:40.000Z",
+  "updated_at": "2026-09-07T02:45:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OneScience",
+    "bioscience",
+    "antibody-structure-prediction",
+    "protein-structure-prediction",
+    "IgFold",
+    "AntiBERTy",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146483265,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Relais Pickup EKO BURO SERVICES (92800) - La Poste",
+      "url": "https://localiser.laposte.fr/hauts-de-seine/puteaux/eko-buro-services-002632",
+      "snippet": "Horaires et heures limites de dépôt de Relais Pickup EKO BURO SERVICES (92800). Retrouvez également les services proposés …"
+    },
+    {
+      "title": "OneScience-Group/OpenFold · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/OpenFold",
+      "snippet": "Model Introduction OpenFold is an open-source framework for predicting three-dimensional protein structures from protein sequences, multiple sequence alignments (MSAs), and template information. As a trainable reproduction of AlphaFold2, its core network architecture includes Evoformer, Structure Module, template modules, MSA modules, and other components, supporting a complete structural ..."
+    },
+    {
+      "title": "Eko Buro Services - 53 rue Jean Jaurès 92800 Puteaux - Matériel ...",
+      "url": "https://www.pagesjaunes.fr/pros/53419137",
+      "snippet": "Eko Buro Services à Puteaux (92) Vente de matériel, de consommables d'informatique Papeteries Envoi, distribution de courrier, de …"
+    },
+    {
+      "title": "GitHub - IntelliGen-AI/IntelliFold: IntelliFold: A Controllable ...",
+      "url": "https://github.com/IntelliGen-AI/IntelliFold/",
+      "snippet": "To comprehensively evaluate the performance of IntelliFold 2, we conducted a rigorous evaluation on FoldBench. We compared IntelliFold against several leading methods, including Boltz-1,2, Chai-1, Protenix and Alphafold3. For more details on the benchmarking process and results, please refer to our ..."
+    },
+    {
+      "title": "IgFold - COSMIC2",
+      "url": "https://cosmic-cryoem.org/tools/igfold/",
+      "snippet": "IgFold utilizes a novel approach to train a natural language model on 558M natural antibody sequences to predict structures that are more accurate than AlphaFold (and faster!) Running IgFold on COSMIC² To run IgFold: Create a plain text file that has two entries: H & L. Upload this file using the web browser upload Click through tool creation."
+    }
+  ]
+}

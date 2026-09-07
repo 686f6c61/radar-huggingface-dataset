@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_500M_s2_2026-09-07_01-32-57_419137-pt",
+  "slug": "alexkstern-kdyck_dose_1bpt_hfbody_adamwppt_500m_s2_2026-09-07_01-32-57_419137-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_500M_s2_2026-09-07_01-32-57_419137-pt",
+  "created_at": "2026-09-07T01:50:46.000Z",
+  "updated_at": "2026-09-07T01:51:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669491,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOLICITATION Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/solicitation",
+      "snippet": "Aug 28, 2026 · The meaning of SOLICITATION is the practice or act or an instance of soliciting; sometimes : an urgent or persistent …"
+    },
+    {
+      "title": "alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_500M_s2_2026-09-07_01-32-57 ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_500M_s2_2026-09-07_01-32-57_419137-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SOLICITATION | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/solicitation",
+      "snippet": "SOLICITATION definition: 1. a request for money, information, or help: 2. an offer of sex for money, usually in a public…. Learn more."
+    },
+    {
+      "title": "alexkstern/kdyck_dose_1Bpt_hfbody_20M_s1_2026-08-14_08-12-42_071342-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_20M_s1_2026-08-14_08-12-42_071342-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Solicitation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Solicitation",
+      "snippet": "3.1Related to \"no soliciting\" signs. 4References."
+    }
+  ]
+}

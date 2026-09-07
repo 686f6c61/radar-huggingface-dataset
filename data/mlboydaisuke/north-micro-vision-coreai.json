@@ -5,11 +5,11 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/North-Micro-Vision-CoreAI",
   "created_at": "2026-08-14T09:30:23.000Z",
-  "updated_at": "2026-09-05T04:19:13.000Z",
+  "updated_at": "2026-09-06T18:04:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
-  "library": "transformers",
+  "library": "coreai",
   "languages": [
     "en",
     "de",
@@ -24,9 +24,8 @@
     "ar"
   ],
   "tags": [
-    "transformers",
-    "coreai-aimodel",
     "coreai",
+    "coreai-aimodel",
     "aimodel",
     "apple-silicon",
     "on-device",
@@ -48,11 +47,10 @@
     "base_model:CohereLabs/North-Micro-Vision-Instruct",
     "base_model:quantized:CohereLabs/North-Micro-Vision-Instruct",
     "license:apache-2.0",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 41,
+  "downloads_30d": 52,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

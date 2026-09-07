@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "PowerMachine/aurora-multimodal-ptbr",
+  "slug": "powermachine-aurora-multimodal-ptbr",
+  "author": "PowerMachine",
+  "url": "https://huggingface.co/PowerMachine/aurora-multimodal-ptbr",
+  "created_at": "2026-09-06T08:56:12.000Z",
+  "updated_at": "2026-09-07T07:00:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "mixture-of-experts",
+    "micro-units",
+    "transformer",
+    "cnn-bigru",
+    "bigru",
+    "self-organizing-map",
+    "kohonen",
+    "multimodal",
+    "multi-token-prediction",
+    "dpo",
+    "pcgrad",
+    "smoothquant",
+    "w8a8",
+    "confidence-estimation",
+    "internal-memory",
+    "hutchinson",
+    "pt-br",
+    "pdca",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4872920808,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "GitHub - decisionintelligence/Aurora: [ICLR 2026] Aurora: Towards ...",
+      "url": "https://github.com/decisionintelligence/Aurora",
+      "snippet": "Aurora is a highly capable multimodal time series foundation model. Based on the Modality-Guided Multi-head Self-Attention and Prototype-Guided Flow Matching, Aurora can effectively utilize the domain-specific knowledge contained in modalities and support generative probabilistic forecasting, thus ..."
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "Aurora-M: The First Open Source Multilingual Language Model Red-teamed ...",
+      "url": "https://arxiv.org/html/2404.00399v1",
+      "snippet": "It is the first open-source multilingual model fine-tuned on human-reviewed safety instructions, thus aligning its development not only with conventional red-teaming considerations, but also with the specific concerns articulated in the Biden-Harris Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence."
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
+    }
+  ]
+}

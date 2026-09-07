@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "renqing0420/quicktalk",
+  "slug": "renqing0420-quicktalk",
+  "author": "renqing0420",
+  "url": "https://huggingface.co/renqing0420/quicktalk",
+  "created_at": "2026-09-07T02:29:23.000Z",
+  "updated_at": "2026-09-07T02:29:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-to-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1745455112,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تاير اكس السعودية | متجر كفرات مع خدمة التوصيل والتركيب",
+      "url": "https://tireex.com/",
+      "snippet": "يوفر لك متجر تاير اكس العديد من انواع الاطارات المختلفة. يمكنك الاختيار حسب المقاس أو حسب العلامة التجارية المفضلة لديك. تتوفر خدمة التوصيل الى المنزل أو التركيب في مراكزنا."
+    },
+    {
+      "title": "renqing0420/quicktalk · Hugging Face",
+      "url": "https://huggingface.co/renqing0420/quicktalk",
+      "snippet": "The HuBERT directory mirrors the file combination validated with OpenTalking QuickTalk. Its pytorch_model.binmatches the public facebook/hubert-large-ls960-ftcheckpoint; the config files are kept as the validated runtime configs."
+    },
+    {
+      "title": "متجر الاطارات | تاير اكس السعودية",
+      "url": "https://tireex.com/shop/",
+      "snippet": "كفرات اوشن كفرات بي اف جودريتش كفرات بلاك ارو كفرات بريدجستون كفرات كمفورسور كفرات كونتيننتال كفرات كروس ليدر"
+    },
+    {
+      "title": "QuickTalk - OpenTalking - datascale-ai.github.io",
+      "url": "https://datascale-ai.github.io/opentalking/latest/model-support/models/quicktalk/",
+      "snippet": "Open-source real-time digital-human orchestration layer with pluggable model backends, LLM, TTS, WebRTC, and character voices."
+    },
+    {
+      "title": "عروض الكفرات – تاير اكس السعودية",
+      "url": "https://tireex.com/product-tag/offers/",
+      "snippet": "كفرات اوشن كفرات بي اف جودريتش كفرات بلاك ارو كفرات بريدجستون كفرات كمفورسور كفرات كونتيننتال كفرات كروس ليدر"
+    }
+  ]
+}

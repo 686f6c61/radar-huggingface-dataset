@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "zoesunny/my-new-shiny-tokenizer",
+  "slug": "zoesunny-my-new-shiny-tokenizer",
+  "author": "zoesunny",
+  "url": "https://huggingface.co/zoesunny/my-new-shiny-tokenizer",
+  "created_at": "2026-09-07T01:44:40.000Z",
+  "updated_at": "2026-09-07T01:44:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=187f5e2f5bf6683f1c6c49e25ade697e",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "zyhustc/my-new-shiny-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/zyhustc/my-new-shiny-tokenizer",
+      "snippet": "Instructions to use zyhustc/my-new-shiny-tokenizer with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use zyhustc/my-new-shiny-tokenizer with Transformers:"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "track7/my-new-shiny-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/track7/my-new-shiny-tokenizer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

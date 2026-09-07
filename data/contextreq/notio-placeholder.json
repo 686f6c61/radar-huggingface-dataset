@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ContextReq/Notio-PLACEHOLDER",
+  "slug": "contextreq-notio-placeholder",
+  "author": "ContextReq",
+  "url": "https://huggingface.co/ContextReq/Notio-PLACEHOLDER",
+  "created_at": "2026-09-06T08:42:05.000Z",
+  "updated_at": "2026-09-07T10:03:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "rnn",
+    "gru",
+    "gutenberg",
+    "pytorch",
+    "en",
+    "dataset:ContextReq/Project_Gutenburg_Shelf_636_UNFILTERED",
+    "dataset:ContextReq/Project_Gutenburg_Shelf_636_TRAIN_READY",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2866481704,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "المملكة العربية السعودية | وزارة الموارد البشرية والتنمية الاجتماعية",
+      "url": "https://es.hrsd.gov.sa/Services/Inquiry/NonSaudiEmpInquiry.aspx",
+      "snippet": "عزيزي العميل نود ان نلفت عنايتكم بأنه في حال وجود خلل في خادم نظام أبشر؛ سيتم إرسال كود التحقق على هاتفكم والمسجل لدى وزارة الموارد البشرية و التنمية الإجتماعية في بيانات منشأتكم."
+    },
+    {
+      "title": "ContextReq/Notio-PLACEHOLDER · Hugging Face",
+      "url": "https://huggingface.co/ContextReq/Notio-PLACEHOLDER",
+      "snippet": "Content notice: We made our best effort to identify and remove all problematic content — slurs, racial caricature, explicit material, and self-harm mentions — using automated multi-pass scans, boundary verification, and manual sampling. However, no automated or sampled review is perfect, and a small amount of problematic content may remain. The corpus is drawn from public-domain children's ..."
+    },
+    {
+      "title": "إدارة الخدمات الالكترونية لوزارة الموارد البشرية والتنمية الاجتماعية",
+      "url": "https://es.hrsd.gov.sa/Services/Inquiry/ListInquiry.aspx",
+      "snippet": "عزيزي العميل نود ان نلفت عنايتكم بأنه في حال وجود خلل في خادم نظام أبشر؛ سيتم إرسال كود التحقق على هاتفكم والمسجل لدى وزارة الموارد البشرية و التنمية الإجتماعية في بيانات منشأتكم."
+    },
+    {
+      "title": "ContextReq/Notio · Hugging Face",
+      "url": "https://huggingface.co/ContextReq/Notio",
+      "snippet": "Downloads are not tracked for this model. How to track Inference ProvidersNEW Text Generation This model isn't deployed by any Inference Provider.🙋Ask for provider support Dataset used to train ContextReq/Notio roneneldan/TinyStories Viewer •Updated Aug 12, 2024•2.14M•86.3k•1.14k"
+    },
+    {
+      "title": "خدمة الاستعلام عن موظف وافد - الإقامة في السعودية",
+      "url": "https://residency.kss.sa/nonsaudiempinquiry/",
+      "snippet": "Feb 14, 2025 · في المملكة العربية السعودية، تقدم وزارة الموارد البشرية والتنمية الاجتماعية خدمة “الاستعلام عن موظف وافد”، والتي تتيح للكفيل أو صاحب العمل التحقق من حالة العامل الوافد …"
+    }
+  ]
+}

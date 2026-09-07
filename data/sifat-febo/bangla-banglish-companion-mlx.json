@@ -5,7 +5,7 @@
   "author": "sifat-febo",
   "url": "https://huggingface.co/sifat-febo/bangla-banglish-companion-mlx",
   "created_at": "2026-08-19T21:29:33.000Z",
-  "updated_at": "2026-09-03T16:43:40.000Z",
+  "updated_at": "2026-09-06T16:37:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 939,
+  "downloads_30d": 945,
   "trending_score": 0,
   "parameters": 1711378432,
   "parameters_human": "1.71B",

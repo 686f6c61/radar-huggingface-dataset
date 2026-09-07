@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "arabellako22/microduck-walk-seed42",
+  "slug": "arabellako22-microduck-walk-seed42",
+  "author": "arabellako22",
+  "url": "https://huggingface.co/arabellako22/microduck-walk-seed42",
+  "created_at": "2026-09-07T02:17:31.000Z",
+  "updated_at": "2026-09-07T03:04:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "reinforcement-learning",
+    "robotics",
+    "mujoco",
+    "ppo",
+    "microduck",
+    "arxiv:1707.06347",
+    "arxiv:2410.08650",
+    "arxiv:1710.06537",
+    "arxiv:2109.11978",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2772087,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Flat-ground locomotion",
+      "dataset": "Microduck simulator seeds 100-109",
+      "metric": "Success rate without termination",
+      "value": 1
+    },
+    {
+      "task": "Flat-ground locomotion",
+      "dataset": "Microduck simulator seeds 100-109",
+      "metric": "Mean forward velocity (m/s)",
+      "value": 0.25812
+    },
+    {
+      "task": "Flat-ground locomotion",
+      "dataset": "Microduck simulator seeds 100-109",
+      "metric": "Mean reward per step",
+      "value": 0.147762
+    }
+  ],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "arabellako22/microduck-walk-seed42 · Hugging Face",
+      "url": "https://huggingface.co/arabellako22/microduck-walk-seed42",
+      "snippet": "This repository documents a personal study run that installs Pollen Robotics' Microduck simulator, trains a flat-ground walking policy with PPO, exports the normalized policy to ONNX, and validates the release artifacts before upload."
+    },
+    {
+      "title": "arabellako22 (Ara Ko) - Hugging Face",
+      "url": "https://huggingface.co/arabellako22",
+      "snippet": "Ara Ko arabellako22 Follow AI & ML interests None yet Recent Activity updateda bucket1 day ago"
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "emberian/h-k2-0.9b-replay",
+  "slug": "emberian-h-k2-0-9b-replay",
+  "author": "emberian",
+  "url": "https://huggingface.co/emberian/h-k2-0.9b-replay",
+  "created_at": "2026-09-07T01:38:29.000Z",
+  "updated_at": "2026-09-07T01:42:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "k2-horizon",
+    "continued-pretraining",
+    "not-an-assistant",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-0.9B",
+    "base_model:finetune:IFM/K2-Horizon-0.9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 67,
+  "trending_score": 0,
+  "parameters": 1078285824,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2156601000,
+  "storage_human": "2.2 GB",
+  "base_model": "IFM/K2-Horizon-0.9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "K2 Horizon 0.9B Hands-On: IFM's Open Mini-Model, Tested — Dispatch",
+      "url": "https://blog.compendialabs.org/posts/2026-09-03-dk-k2-horizon-0.9b",
+      "snippet": "K2 Horizon 0.9B is the first sub-1B open model I've run that does multi-step math with visible, self-checking reasoning — that's an achievement distillation deserves credit for. But the release overpromises: the post-training code repo is a stub, the official GGUF doesn't load in any shipped tool, and the AIME headline carries error bars IFM's own appendix admits to."
+    },
+    {
+      "title": "IFM/K2-Horizon-0.9B-Uno · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-0.9B-Uno",
+      "snippet": "K2-Horizon-0.9B-Uno is a conditional-LoRA adapter for diffusion-style decoding with K2-Horizon-0.9B. This repository contains the adapter only."
+    },
+    {
+      "title": "K2 Horizon Tested Locally: 0.9B, 7B, 32B Results Are Rough | MindStudio",
+      "url": "https://www.mindstudio.ai/blog/k2-horizon-local-models-tested",
+      "snippet": "It’s a popular name in open-model circles, and this K2 has no relation to other models that have used it before. Three sizes run on a single GPU: the 0.9B, 7B, and 32B models are small enough for one-GPU deployment via vLLM, while the 3.7B and the 375B MoE flagship sit outside that scope. Context windows differ sharply by size: the 0.9B model tops out at 128K tokens, while the 7B and 32B both stretch to 512K. Benchmark strengths are size-specific: the 0.9B model leads on AIME 2026 math and BFCL tool-calling, the 7B wins on SWE-bench and terminal-bench (agentic coding), and the 32B pulls far ahead on GPQA Diamond (82 vs 27), a graduate-level science reasoning test."
+    },
+    {
+      "title": "IFM/K2-Horizon-0.9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-0.9B-GGUF",
+      "snippet": "K2-Horizon-0.9B is the compact dense member of the K2-Horizon family: a 0.9B-class decoder-only model with a 128K context window."
+    },
+    {
+      "title": "K2 Horizon: Six Fully Open Models, and the Fully Is Still Arriving | CellCog",
+      "url": "https://cellcog.ai/blog/k2-horizon/",
+      "snippet": "A twenty-point lead on SWE-bench Verified at this size is the kind of result that gets a model into production loops where the flagship never goes: pre-commit fixes, local code review, the first pass of a research crawl. IFM’s blog also mentions a separate 7B run that scored 82, and says plainly that it downloaded the answers. The 70.6 is the clean figure. The 3.7B posts 68.6 on the same benchmark, and the 0.9B, built for watches and glasses, clears 79.9 on HumanEval+."
+    }
+  ]
+}

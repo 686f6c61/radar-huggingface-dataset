@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "everest103/affine-king8-0a04e3d1",
+  "slug": "everest103-affine-king8-0a04e3d1",
+  "author": "everest103",
+  "url": "https://huggingface.co/everest103/affine-king8-0a04e3d1",
+  "created_at": "2026-09-07T02:00:26.000Z",
+  "updated_at": "2026-09-07T02:51:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71923767525,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LGBTQIA+ Chatter - Literotica Discussion Board",
+      "url": "https://forum.literotica.com/forums/lgbtqia-chatter.29/",
+      "snippet": "Oct 13, 2015 · Discussion of non-straight sexuality and life. Find support and friends."
+    },
+    {
+      "title": "everest103 (Everest) - Hugging Face",
+      "url": "https://huggingface.co/everest103",
+      "snippet": "Sort: Recently updated everest103/Affine-5hoqdb8m82-v3 35B•Updated about 3 hours ago"
+    },
+    {
+      "title": "Painfully Shy - Loving Wives - Literotica.com",
+      "url": "https://www.literotica.com/s/painfully-shy",
+      "snippet": "A very shy wife makes husband's fantasy come true."
+    },
+    {
+      "title": "everest103 (Everest) - Hugging Face",
+      "url": "https://huggingface.co/everest103/datasets",
+      "snippet": "Recent Activity updated a bucketabout 6 hours ago everest103/affine-harvest updated a modelabout 12 hours ago everest103/Affine-5hoqdb8m82-v3 updated a modelabout 12 hours ago everest103/Affine-5cczmxhdgh-v2 View all activity"
+    },
+    {
+      "title": "Husband Loses Bet, Wife Settles It - Loving Wives - Literotica",
+      "url": "https://www.literotica.com/s/husband-loses-bet-wife-settles-it",
+      "snippet": "My husband bet his friend a night with me and lost."
+    }
+  ]
+}

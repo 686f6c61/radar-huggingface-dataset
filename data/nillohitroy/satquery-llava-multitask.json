@@ -5,7 +5,7 @@
   "author": "nillohitroy",
   "url": "https://huggingface.co/nillohitroy/satquery-llava-multitask",
   "created_at": "2026-08-26T11:54:37.000Z",
-  "updated_at": "2026-08-26T11:58:14.000Z",
+  "updated_at": "2026-09-07T00:45:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 7063427072,
   "parameters_human": "7.06B",
-  "storage_bytes": 14126947016,
-  "storage_human": "14.1 GB",
+  "storage_bytes": 28253893056,
+  "storage_human": "28.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

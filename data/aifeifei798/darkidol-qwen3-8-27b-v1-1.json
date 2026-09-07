@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "aifeifei798/DarkIdol-Qwen3.8-27B-v1.1",
+  "slug": "aifeifei798-darkidol-qwen3-8-27b-v1-1",
+  "author": "aifeifei798",
+  "url": "https://huggingface.co/aifeifei798/DarkIdol-Qwen3.8-27B-v1.1",
+  "created_at": "2026-09-06T09:42:07.000Z",
+  "updated_at": "2026-09-07T09:09:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "zh",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "roleplay",
+    "sillytavern",
+    "qwen",
+    "qwen3.8",
+    "creative-writing",
+    "text-generation",
+    "storytelling",
+    "chatml",
+    "reasoning",
+    "multimodal",
+    "vision",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "zh",
+    "ko",
+    "ja",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 272,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55582995997,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Screw holes underneath the RC2 - DJI Mavic, Air & Mini Drone …",
+      "url": "https://mavicpilots.com/threads/screw-holes-underneath-the-rc2.149178/",
+      "snippet": "Nov 6, 2024 · As said above, it is an M2 thread. No official DJI accessory uses those mounting points. However, many third party …"
+    },
+    {
+      "title": "aifeifei798/DarkIdol-Qwen3.8-27B-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/aifeifei798/DarkIdol-Qwen3.8-27B-v1.1",
+      "snippet": "DarkIdol-Qwen3.8-27B-v1.1is a specialized fine-tune developed exclusively for high-immersion roleplay (TRPG, SillyTavern), interactive creative writing, and complex narrative simulations."
+    },
+    {
+      "title": "Controller Holes | DJI Mavic, Air & Mini Drone Community",
+      "url": "https://mavicpilots.com/threads/controller-holes.144481/",
+      "snippet": "Feb 27, 2024 · There's probably a fastner down in the hole with some anti tampering goo on top so it looks smooth. Or alignment …"
+    },
+    {
+      "title": "aifeifei798/DarkIdol-Qwen3.8-27B-v1.1 · Discussions",
+      "url": "https://huggingface.co/aifeifei798/DarkIdol-Qwen3.8-27B-v1.1/discussions",
+      "snippet": "Instructions to use aifeifei798/DarkIdol-Qwen3.8-27B-v1.1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Bolt size on the back of the DJI RC? : r/dji - Reddit",
+      "url": "https://www.reddit.com/r/dji/comments/10rc5sx/bolt_size_on_the_back_of_the_dji_rc/",
+      "snippet": "Feb 2, 2023 · There are two sizes of bolt thread on the DJI RC... On the bottom for accessories like lanyards there is a 4M or M4 …"
+    }
+  ]
+}

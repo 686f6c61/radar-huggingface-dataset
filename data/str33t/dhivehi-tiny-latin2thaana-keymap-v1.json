@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "str33t/dhivehi-tiny-latin2thaana-keymap-v1",
+  "slug": "str33t-dhivehi-tiny-latin2thaana-keymap-v1",
+  "author": "str33t",
+  "url": "https://huggingface.co/str33t/dhivehi-tiny-latin2thaana-keymap-v1",
+  "created_at": "2026-09-07T00:44:18.000Z",
+  "updated_at": "2026-09-07T04:15:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [
+    "dv"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "t5",
+    "text2text-generation",
+    "transliteration",
+    "dhivehi",
+    "thaana",
+    "maldivian",
+    "byt5",
+    "browser",
+    "tiny",
+    "translation",
+    "dv",
+    "dataset:alakxender/dhivehi-transliteration-pairs",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29124205,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "str33t/dhivehi-tiny-latin2thaana-keymap-v1 · Hugging Face",
+      "url": "https://huggingface.co/str33t/dhivehi-tiny-latin2thaana-keymap-v1",
+      "snippet": "Instructions to use str33t/dhivehi-tiny-latin2thaana-keymap-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Log in - TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "GitHub - streetsolider/div-transliteration: Real-time web app for ...",
+      "url": "https://github.com/streetsolider/div-transliteration",
+      "snippet": "The model has been wired into the production Flask service and published to Hugging Face under str33t/dhivehi-byt5-latin2thaana-keymap-v1. End-to-end testing on the live service confirms identical outputs to the standalone regression eval."
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://m.tiktok.com/login/phone-or-email",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    }
+  ]
+}

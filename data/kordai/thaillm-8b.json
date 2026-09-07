@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "KordAI/ThaiLLM-8B",
+  "slug": "kordai-thaillm-8b",
+  "author": "KordAI",
+  "url": "https://huggingface.co/KordAI/ThaiLLM-8B",
+  "created_at": "2026-09-07T02:32:58.000Z",
+  "updated_at": "2026-09-07T02:52:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ThaiLLM/ThaiLLM-8B",
+    "base_model:finetune:ThaiLLM/ThaiLLM-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939748,
+  "storage_human": "16.4 GB",
+  "base_model": "ThaiLLM/ThaiLLM-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EY",
+      "url": "https://mfaregext.ey.com/",
+      "snippet": "Aquí nos gustaría mostrarte una descripción, pero el sitio web que estás mirando no lo permite."
+    },
+    {
+      "title": "KordAI/ThaiLLM-8B · Hugging Face",
+      "url": "https://huggingface.co/KordAI/ThaiLLM-8B",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use KordAI/ThaiLLM-8B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use KordAI/ThaiLLM-8B with Transformers:"
+    },
+    {
+      "title": "Error - PingIDRegistrationPortal - mfareg.ey.com",
+      "url": "https://mfareg.ey.com/signin-oidc",
+      "snippet": "Auth Error: 4001 Please try again. If this issue continues please contact EY Technology support. Please enable browser's javascript …"
+    },
+    {
+      "title": "ThaiLLM-8B - Hugging Face",
+      "url": "https://huggingface.co/ThaiLLM/ThaiLLM-8B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EY login – My EY",
+      "url": "https://login.ey.com/",
+      "snippet": "EY login – My EY."
+    }
+  ]
+}

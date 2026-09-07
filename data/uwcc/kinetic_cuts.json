@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "uwcc/kinetic_cuts",
+  "slug": "uwcc-kinetic_cuts",
+  "author": "uwcc",
+  "url": "https://huggingface.co/uwcc/kinetic_cuts",
+  "created_at": "2026-09-07T02:12:07.000Z",
+  "updated_at": "2026-09-07T02:12:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "text-to-video",
+    "video",
+    "lora",
+    "ai-toolkit",
+    "audio",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157373152,
+  "storage_human": "157 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "uwcc/kinetic_cuts · Hugging Face",
+      "url": "https://huggingface.co/uwcc/kinetic_cuts",
+      "snippet": "kinetic_cuts A MiniMax H3video LoRA (rank 16) trained with ai-toolkiton 12 video clips of up to 1.62 s (39 frames at 24 fps) with their audio, cut evenly from 1 source video(s) with a 10% edge crop for 380 steps in 41 minutes on one A100. It was trained to pick up the look, the motion and editing over time, and the sound (captions named only subjects, actions and on-screen words, so everything ..."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week— models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don't have to."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

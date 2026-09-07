@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "niobures/MOSS-TTSD-v1.0",
+  "slug": "niobures-moss-ttsd-v1-0",
+  "author": "niobures",
+  "url": "https://huggingface.co/niobures/MOSS-TTSD-v1.0",
+  "created_at": "2026-09-07T01:53:12.000Z",
+  "updated_at": "2026-09-07T02:04:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moss_tts_delay",
+    "feature-extraction",
+    "text-to-speech",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr",
+    "arxiv:2602.10934",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 8355492864,
+  "parameters_human": "8.36B",
+  "storage_bytes": 16722461107,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何理解小米自研的新系统Hyper OS（澎湃OS）？是否 ...",
+      "url": "https://www.zhihu.com/question/626702276",
+      "snippet": "如何理解小米自研的新系统Hyper OS（澎湃OS）？ 是否摆脱了屎山？ 有没有相关专业的大佬用简单的例子解释一下这个OS是个什么 …"
+    },
+    {
+      "title": "niobures/MOSS-TTSD-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/niobures/MOSS-TTSD-v1.0",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use niobures/MOSS-TTSD-v1.0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use niobures/MOSS-TTSD-v1.0 with Transformers:"
+    },
+    {
+      "title": "Xiaomi HyperOS 4: Danh sách thiết bị hỗ trợ và ngày ra mắt",
+      "url": "https://cellphones.com.vn/sforum/danh-sach-thiet-bi-xiaomi-hyperos-4",
+      "snippet": "Jun 23, 2026 · Xiaomi HyperOS 4 dựa trên Android 17 sắp ra mắt với giao diện lột xác, AI thông minh và hiệu năng cực mượt. Xem …"
+    },
+    {
+      "title": "niobures/MOSS-TTSD · Hugging Face",
+      "url": "https://huggingface.co/niobures/MOSS-TTSD",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "小米HyperOS真的明显比其它系统卡吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/1938205487804941009",
+      "snippet": "不泻药 抛开硬件型号说卡不卡并不合理。 单纯个人体验来说，目前14Pro，没碰到过卡的时候，与同事Mate60Pro比起来流畅度远 …"
+    }
+  ]
+}

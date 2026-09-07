@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/MVGNN-PPIS",
+  "slug": "onescience-group-mvgnn-ppis",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/MVGNN-PPIS",
+  "created_at": "2026-09-07T01:46:53.000Z",
+  "updated_at": "2026-09-07T01:48:42.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OneScience",
+    "bioscience",
+    "protein-protein-interaction-site-prediction",
+    "graph-neural-network",
+    "MVGNN-PPIS",
+    "ProtT5",
+    "AlphaFold3",
+    "en",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2681371740,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows Farbverwaltung Hilfe",
+      "url": "https://www.windows-10-forum.com/threads/windows-farbverwaltung-hilfe.52386/",
+      "snippet": "Dec 30, 2016 · Windows 10 Forum StartseiteForen>Windows 10>Windows 10 Support> Windows Farbverwaltung Hilfe Helfe beim …"
+    },
+    {
+      "title": "OneScience-Group/MVGNN-PPIS · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/MVGNN-PPIS",
+      "snippet": "MVGNN-PPIS is an open-source protein-protein interaction site prediction model developed by WW-AILab. Given precomputed protein sequence and structural features, the model predicts the probability that each amino acid residue belongs to a protein-protein interaction site."
+    },
+    {
+      "title": "Hilfe, Explorer-Fenster werden nicht angezeigt",
+      "url": "https://www.windows-10-forum.com/threads/hilfe-explorer-fenster-werden-nicht-angezeigt.15034/",
+      "snippet": "Oct 27, 2015 · Windows 10 Forum StartseiteForen>Windows 10>Windows 10 Support> Hilfe, Explorer-Fenster werden nicht …"
+    },
+    {
+      "title": "GitHub - WW-AILab/MVGNN-PPIS",
+      "url": "https://github.com/WW-AILab/MVGNN-PPIS/",
+      "snippet": "Contribute to WW-AILab/MVGNN-PPIS development by creating an account on GitHub."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£/b45f8dde-aa4a-4598-ab6e-21a67f8b6ec2",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shangxiaokang/Qwen3.5-35B",
+  "slug": "shangxiaokang-qwen3-5-35b",
+  "author": "shangxiaokang",
+  "url": "https://huggingface.co/shangxiaokang/Qwen3.5-35B",
+  "created_at": "2026-09-07T02:12:07.000Z",
+  "updated_at": "2026-09-07T03:32:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2098542881607,
+  "storage_human": "2098.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TI-Planet | Programmes/Téléchargements Jeux NumWorks",
+      "url": "https://tiplanet.org/forum/archives_list.php?cat=Jeux+nw",
+      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements Jeux NumWorks"
+    },
+    {
+      "title": "shangxiaokang/Qwen3.5-35B · Hugging Face",
+      "url": "https://huggingface.co/shangxiaokang/Qwen3.5-35B",
+      "snippet": "Qwen3.5-35B like0 License:apache-2.0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Touches émulateur Numworks - Problèmes divers / Aide débutants",
+      "url": "https://tiplanet.org/forum/viewtopic.php?f=99&t=24622",
+      "snippet": "Existe-t-il un manuel d'utilisation de l'émulateur Numworks, en ce qui a trait aux raccourcis clavier utilisés pour chaque touche de la …"
+    },
+    {
+      "title": "Qwen3.5 35B A3B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen35-35b-a3b",
+      "snippet": "Qwen3.5 35B A3B: Unified Vision-Language MoE Reasoning Model Qwen3.5 35B A3B is a multimodal mixture-of-experts foundation model from Alibaba's Qwen team, featuring a hybrid Gated DeltaNet and sparse MoE architecture. It has 35 billion total parameters with 3 billion activated per token, delivering high-throughput inference at minimal latency."
+    },
+    {
+      "title": "Emulateur Nintendo NES sur ta NumWorks - News NumWorks",
+      "url": "https://tiplanet.org/forum/viewtopic.php?f=97&t=21765",
+      "snippet": "Sep 20, 2019 · Pendant que d'autres sont en vacances, zardam prépare la rentrée, ta rentrée. Il vient de te porter nofrendo, un …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "niobures/MOSS-Audio-Tokenizer",
+  "slug": "niobures-moss-audio-tokenizer",
+  "author": "niobures",
+  "url": "https://huggingface.co/niobures/MOSS-Audio-Tokenizer",
+  "created_at": "2026-09-07T01:40:29.000Z",
+  "updated_at": "2026-09-07T01:49:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moss-audio-tokenizer",
+    "feature-extraction",
+    "audio",
+    "audio-tokenizer",
+    "neural-codec",
+    "moss-tts-family",
+    "MOSS Audio Tokenizer",
+    "speech-tokenizer",
+    "trust-remote-code",
+    "custom_code",
+    "arxiv:2602.10934",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 1774566400,
+  "parameters_human": "1.77B",
+  "storage_bytes": 7100864789,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‫ترجمة query في العربيّة | قاموس إنجليزي - عربي | Britannica English",
+      "url": "https://arabic.britannicaenglish.com/query",
+      "snippet": "query بالعربي – ترجمة عربية لكلمة query برعاية Britannica English، قاموس وترجمة عربي – إنجليزي مجّانيّ، قاموس شامل ومعاصر يتيح تعلّم الإنجليزيّة، ويشمل: ترجمة كلمات وجمل، …"
+    },
+    {
+      "title": "niobures/MOSS-Audio-Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/niobures/MOSS-Audio-Tokenizer",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use niobures/MOSS-Audio-Tokenizer with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use niobures/MOSS-Audio-Tokenizer with Transformers:"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "niobures/MOSS-Audio-Tokenizer at main - Hugging Face",
+      "url": "https://huggingface.co/niobures/MOSS-Audio-Tokenizer/tree/main",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use niobures/MOSS-Audio-Tokenizer with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use niobures/MOSS-Audio-Tokenizer with Transformers:"
+    },
+    {
+      "title": "query - قاموس WordReference.com إنجليزي - عربي",
+      "url": "https://www.wordreference.com/enar/query",
+      "snippet": "استعلام A query may be used to retrieve data from multiple tables at once. يمكن استخدام استعلام لسحب بيانات من عدة جداول في نفس الوقت. query [sth]⇒vtr …"
+    }
+  ]
+}

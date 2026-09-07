@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Qwen3.8-27B-Heretic-Ara-16GB-VRAM-IQ4-XS-MTP-GGUF",
+  "slug": "taurusduan-qwen3-8-27b-heretic-ara-16gb-vram-iq4-xs-mtp-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Qwen3.8-27B-Heretic-Ara-16GB-VRAM-IQ4-XS-MTP-GGUF",
+  "created_at": "2026-09-07T02:18:43.000Z",
+  "updated_at": "2026-09-07T02:18:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 42024882816,
+  "storage_human": "42.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "taurusduan/Qwen3.8-27B-Heretic-Ara-16GB-VRAM-IQ4-XS-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/Qwen3.8-27B-Heretic-Ara-16GB-VRAM-IQ4-XS-MTP-GGUF",
+      "snippet": "Instructions to use taurusduan/Qwen3.8-27B-Heretic-Ara-16GB-VRAM-IQ4-XS-MTP-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.at/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Qwen3.8-27B-Heretic-Ara-16GB-VRAM-IQ4-XS-MTP-GGUF",
+      "url": "https://huggingface.co/Bucoid/Qwen3.8-27B-Heretic-Ara-16GB-VRAM-IQ4-XS-MTP-GGUF/blob/main/README.md",
+      "snippet": "Qwen 3.8 27B Heretic‑Ara IQ4_XS Quantized Model (Optimized for 16 GB VRAM) This model is quantized from Qwen 3.8 27B Heretic‑Ara BF16 using the IQ4_XS scheme (4‑bit), with a file size of 12.8 GiB, specifically designed for graphics cards with 16 GB of VRAM."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=de",
+      "snippet": "Einstellungen Einstellungen Google Standorteinstellungen Datenschutzerklärung Nutzungsbedingungen Regionseinstellungen"
+    }
+  ]
+}

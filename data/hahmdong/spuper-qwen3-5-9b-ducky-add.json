@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hahmdong/SPUPER-qwen3.5-9b-ducky-add",
+  "slug": "hahmdong-spuper-qwen3-5-9b-ducky-add",
+  "author": "Hahmdong",
+  "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-ducky-add",
+  "created_at": "2026-09-07T10:34:09.000Z",
+  "updated_at": "2026-09-07T10:36:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839724590,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Hahmdong/SPUPER-qwen3.5-9b-quanquer-add · Hugging Face",
+      "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-quanquer-add",
+      "snippet": "Model Card for SPUPER-qwen3.5-9b-quanquer-add This model is a fine-tuned version of Qwen/Qwen3.5-9B. It has been trained using TRL."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1 · Hugging Face",
+      "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1",
+      "snippet": "Model Card for SPUPER-qwen3.5-9b-quanquer-add-quanter1 This model is a fine-tuned version of Hahmdong/SPUPER-qwen3.5-9b-quanquer-add. It has been trained using TRL."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

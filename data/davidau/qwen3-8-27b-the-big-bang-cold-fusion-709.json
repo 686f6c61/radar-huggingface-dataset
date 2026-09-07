@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709",
+  "slug": "davidau-qwen3-8-27b-the-big-bang-cold-fusion-709",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709",
+  "created_at": "2026-08-31T03:48:46.000Z",
+  "updated_at": "2026-09-07T07:16:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:finetune:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 23,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55577228584,
+  "storage_human": "55.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Flea, Tick & Worm Treatments for Dogs in Australia (2026 Vet …",
+      "url": "https://vetslovepets.com.au/blogs/dog/best-dog-flea-tick-treatments",
+      "snippet": "Jul 16, 2026 · Find the right flea, tick &amp; worm treatment for your dog with this vet-approved Australian guide, covering top …"
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709 · Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709",
+      "snippet": "Instructions to use DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "10 Best Pet Dewormer And Parasite Medications in Australia - 2026",
+      "url": "https://www.bestfive.com.au/bestproducts/pet-dewormer-and-parasite-medications",
+      "snippet": "1 day ago · Explore our top 10 picks for pet dewormer and parasite medications products in Australia. Featuring trusted brands and …"
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-BIGBANG-Cold-Fusion-718 · Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-BIGBANG-Cold-Fusion-718",
+      "snippet": "Instructions to use DavidAU/Qwen3.8-27B-BIGBANG-Cold-Fusion-718 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "The 8 Best Dog Worming Tablets: Tested & Evaluated 2026 ...",
+      "url": "https://gentledogtrainers.com.au/best-dog-worming-tablets-australia/",
+      "snippet": "Jan 14, 2026 · To help you find the best option for your dog, we teamed up with veterinarians and other canine experts to test out and …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "burtenshaw/plan-my-day-v2-lfm2.5-dev-r50-w100",
+  "slug": "burtenshaw-plan-my-day-v2-lfm2-5-dev-r50-w100",
+  "author": "burtenshaw",
+  "url": "https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-r50-w100",
+  "created_at": "2026-09-07T11:04:12.000Z",
+  "updated_at": "2026-09-07T11:06:59.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "openenv",
+    "trl",
+    "sdpo",
+    "synthetic",
+    "continual-learning",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88915712,
+  "storage_human": "89 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ameli, le site de l’Assurance Maladie en ligne | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/",
+      "snippet": "Le site officiel de l'Assurance Maladie. Actualités – Droits et Démarches – Remboursements – Prestations et aides – Santé – Offres …"
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency deployment. LFM2 is specifically designed to provide the fastest on-device gen-AI experience across the industry, thus unlocking a massive number of devices for generative AI workloads."
+    },
+    {
+      "title": "Créer votre compte ameli | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/adresses-et-contacts/votre-compte-ameli/creer-votre-compte-ameli",
+      "snippet": "Sur ameli.fr Rendez-vous sur https://assure.ameli.fret préparez votre RIB (celui déjà transmis à votre caisse d'assurance maladie) et …"
+    },
+    {
+      "title": "LiteLLM Providers & Models",
+      "url": "https://models.litellm.ai/",
+      "snippet": "The most comprehensive AI model catalog. Pricing, context windows, and features for 2600+ models across 140+ providers."
+    },
+    {
+      "title": "AMELIPRO",
+      "url": "https://authcps-espacepro.ameli.fr/CPS/oauth2/authorize",
+      "snippet": "Connectez-vous à Amelipro en toute sécurité avec votre carte CPS pour accéder aux services professionnels de l'Assurance Maladie."
+    }
+  ]
+}

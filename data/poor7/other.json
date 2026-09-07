@@ -5,7 +5,7 @@
   "author": "poor7",
   "url": "https://huggingface.co/poor7/Other",
   "created_at": "2025-02-17T16:07:33.000Z",
-  "updated_at": "2026-08-18T20:51:30.000Z",
+  "updated_at": "2026-09-06T20:07:25.000Z",
   "license": "unknown",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 45959221275,
-  "storage_human": "46.0 GB",
+  "storage_bytes": 47698071315,
+  "storage_human": "47.7 GB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -5,7 +5,7 @@
   "author": "faxenoff",
   "url": "https://huggingface.co/faxenoff/code-daemon-relation-v1",
   "created_at": "2026-07-07T17:35:26.000Z",
-  "updated_at": "2026-08-29T10:56:16.000Z",
+  "updated_at": "2026-09-07T00:35:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -17,6 +17,7 @@
   "tags": [
     "tensorrt",
     "onnx",
+    "xlm-roberta",
     "knowledge-graph",
     "relation-extraction",
     "relation-classification",
@@ -26,7 +27,6 @@
     "openvino",
     "code",
     "multilingual",
-    "dataset:unicamp-dl/mmarco",
     "base_model:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
     "base_model:quantized:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
     "license:mit",
@@ -37,7 +37,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 10224284030,
+  "storage_bytes": 10241367743,
   "storage_human": "10.2 GB",
   "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
   "formats": [

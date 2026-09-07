@@ -5,7 +5,7 @@
   "author": "RobinsonLabs",
   "url": "https://huggingface.co/RobinsonLabs/Qwen3.5-122B-A10B-abliterated-GGUF",
   "created_at": "2026-06-14T22:28:09.000Z",
-  "updated_at": "2026-09-06T07:03:42.000Z",
+  "updated_at": "2026-09-06T13:40:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "007hya/chatgpt-detector-roberta-onnx",
+  "slug": "007hya-chatgpt-detector-roberta-onnx",
+  "author": "007hya",
+  "url": "https://huggingface.co/007hya/chatgpt-detector-roberta-onnx",
+  "created_at": "2026-09-07T01:43:45.000Z",
+  "updated_at": "2026-09-07T01:49:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125424328,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "bl791/chatgpt-detector-roberta · Hugging Face",
+      "url": "https://huggingface.co/bl791/chatgpt-detector-roberta",
+      "snippet": "This model can be loaded on the Inference API on-demand."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://classroom.google.com/",
+      "snippet": "Loading Sign in Use your Google Account Email or phone Forgot email? Type the text you hear or see"
+    },
+    {
+      "title": "onnx-community/chatgpt-detector-roberta-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/chatgpt-detector-roberta-ONNX",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Drive: accedi",
+      "url": "https://drive.google.com/drive/my-drive?hl=it",
+      "snippet": "Accedi a Google Drive con un Account Google (per uso personale) o un account Google Workspace (per uso professionale)."
+    }
+  ]
+}

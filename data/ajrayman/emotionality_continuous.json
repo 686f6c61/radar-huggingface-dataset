@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/Emotionality_continuous",
   "created_at": "2024-08-03T17:43:55.000Z",
-  "updated_at": "2026-08-30T15:11:51.000Z",
+  "updated_at": "2026-09-07T06:48:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,11 +25,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 124646401,
   "parameters_human": "124.6M",
-  "storage_bytes": 7330489825,
+  "storage_bytes": 7330494608,
   "storage_human": "7.3 GB",
   "base_model": "roberta-base",
   "formats": [

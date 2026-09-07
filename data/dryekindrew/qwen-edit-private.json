@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dryekindrew/qwen-edit-private",
+  "slug": "dryekindrew-qwen-edit-private",
+  "author": "dryekindrew",
+  "url": "https://huggingface.co/dryekindrew/qwen-edit-private",
+  "created_at": "2026-09-07T11:07:08.000Z",
+  "updated_at": "2026-09-07T11:10:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nsfw",
+    "not-for-all-audiences",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Therapieinformationen - dgrh.de",
+      "url": "https://dgrh.de/behandeln/therapieinformationen/",
+      "snippet": "Arztformular Links Links DGRh Leitlinien Deutsche Gesellschaft für Rheumatologie und Klinische Immunologie e.V. Wilhelmine …"
+    },
+    {
+      "title": "Qwen Edit Uncensored - Private AI Image Editor | Imagine Studio",
+      "url": "https://imaginestud.io/models/qwen-edit-uncensored",
+      "snippet": "Qwen Edit Uncensored is a private, edit-only model for permissive natural-language image transformations. It supports image combining, automatic input-ratio preservation, eight explicit aspect ratios, and prompts up to 1,500 characters."
+    },
+    {
+      "title": "therapiebogen.dgrh.de",
+      "url": "https://therapiebogen.dgrh.de/",
+      "snippet": "therapiebogen.dgrh."
+    },
+    {
+      "title": "Free Qwen Image Edit Online — No Sign Up, No Watermark | JollyAI",
+      "url": "https://jollyai.online/tools/qwen-image-edit.php",
+      "snippet": "Qwen Image Editis Alibaba's open-source image editing model released as part of the Qwen 2512 family. \"remove the person in the background\" or \"change her dress to red\" — and Qwen edits the photo in seconds. On JollyAI you can use Qwen Image Edit free online, with no login, no credit card and no watermark on the output."
+    },
+    {
+      "title": "Aufklärungsbögen zur medikamentösen Therapie - Gesellschaft für …",
+      "url": "https://www.gkjr.de/fur-aerztinnen-und-aerzte/therapie/aufklarungsbogen-zu-krankheitsmodifizierenden-medikamenten/",
+      "snippet": "(Alle Bögen können Sie auf dieser Seite als pdf-Dateien herunterladen)"
+    }
+  ]
+}

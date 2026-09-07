@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "0x3/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "slug": "0x3-qwen3-tts-12hz-1-7b-voicedesign",
+  "author": "0x3",
+  "url": "https://huggingface.co/0x3/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "created_at": "2026-09-07T01:47:34.000Z",
+  "updated_at": "2026-09-07T01:47:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "qwen-tts",
+  "languages": [],
+  "tags": [
+    "qwen-tts",
+    "safetensors",
+    "qwen3_tts",
+    "audio",
+    "tts",
+    "qwen",
+    "multilingual",
+    "text-to-speech",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 4515695644,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thonny, Python IDE for beginners",
+      "url": "https://thonny.org/",
+      "snippet": "Thonny comes with Python 3.14 built in, so just one simple installer is needed and you're ready to learn programming. (You can also …"
+    },
+    {
+      "title": "0x3/Qwen3-TTS-12Hz-1.7B-VoiceDesign · Hugging Face",
+      "url": "https://huggingface.co/0x3/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "snippet": "We release Qwen3-TTS, a series of powerful speech generation models developed by Qwen, offering comprehensive support for voice cloning, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control."
+    },
+    {
+      "title": "Thonny - Download",
+      "url": "https://thonny.en.softonic.com/",
+      "snippet": "Jun 23, 2026 · The built-in debuggersets Thonny apart, providing visual insights into code execution. This tool allows users to run …"
+    },
+    {
+      "title": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases · thonny/thonny · GitHub",
+      "url": "https://github.com/thonny/thonny/releases",
+      "snippet": "Mar 9, 2011 · Python IDE for beginners. Contribute to thonny/thonny development by creating an account on GitHub."
+    }
+  ]
+}

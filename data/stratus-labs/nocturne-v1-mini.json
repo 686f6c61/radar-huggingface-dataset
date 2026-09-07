@@ -5,7 +5,7 @@
   "author": "stratus-labs",
   "url": "https://huggingface.co/stratus-labs/nocturne-v1-mini",
   "created_at": "2026-08-28T22:04:05.000Z",
-  "updated_at": "2026-08-30T14:06:35.000Z",
+  "updated_at": "2026-09-06T17:55:26.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

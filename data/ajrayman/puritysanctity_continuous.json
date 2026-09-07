@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/PuritySanctity_continuous",
   "created_at": "2024-08-02T22:44:58.000Z",
-  "updated_at": "2026-08-30T15:09:18.000Z",
+  "updated_at": "2026-09-07T06:02:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 124646401,
   "parameters_human": "124.6M",
-  "storage_bytes": 5834660581,
-  "storage_human": "5.8 GB",
+  "storage_bytes": 6333275112,
+  "storage_human": "6.3 GB",
   "base_model": "roberta-base",
   "formats": [
     "safetensors"

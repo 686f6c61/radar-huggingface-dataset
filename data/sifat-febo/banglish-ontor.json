@@ -5,7 +5,7 @@
   "author": "sifat-febo",
   "url": "https://huggingface.co/sifat-febo/banglish-ontor",
   "created_at": "2026-08-19T22:31:42.000Z",
-  "updated_at": "2026-09-05T00:09:18.000Z",
+  "updated_at": "2026-09-06T16:43:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 158853,
   "parameters_human": "158853",

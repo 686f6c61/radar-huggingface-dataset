@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "shubhxho/visionary-mlx",
+  "slug": "shubhxho-visionary-mlx",
+  "author": "shubhxho",
+  "url": "https://huggingface.co/shubhxho/visionary-mlx",
+  "created_at": "2026-09-06T06:48:01.000Z",
+  "updated_at": "2026-09-07T08:30:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "world-model",
+    "video",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 224260232,
+  "storage_human": "224 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Denník N - Nezávislý denník",
+      "url": "https://dennikn.sk/",
+      "snippet": "Denník N je nezávislý denník poskytujúci aktuálne správy a analýzy."
+    },
+    {
+      "title": "shubhxho/visionary-mlx · Hugging Face",
+      "url": "https://huggingface.co/shubhxho/visionary-mlx",
+      "snippet": "Instructions to use shubhxho/visionary-mlx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use shubhxho/visionary-mlx with MLX: # Download the model from the Hub pip install huggingface_hub[hf_xet] huggingface-cli download --local-dir visionary-mlx shubhxho/visionary-mlx ..."
+    },
+    {
+      "title": "Minúta po minúte, rýchle správy Denníka N",
+      "url": "https://dennikn.sk/minuta/",
+      "snippet": "Minúta po minúte, Rýchle správy Denníka N Čo zaznelo vo víkendových politických diskusiách: Danko označilza „nešťastné“ úvahy …"
+    },
+    {
+      "title": "shubhxho (Shubh) · GitHub",
+      "url": "https://github.com/shubhxho",
+      "snippet": "Along the way, I received a $15k Emergent Ventures grant, made ai flims, played a lot with llms, linux and with my homelab I like things with taste, in the age of ai where building is so easy, taste is the only thing which differs you, which makes you great."
+    },
+    {
+      "title": "Štátne železničné Cargo schválilo hromadné prepúšťanie",
+      "url": "https://e.dennikn.sk/5432377/statne-zeleznicne-cargo-schvalilo-hromadne-prepustanie/",
+      "snippet": "Jul 2, 2026 · Jedna z najväčších štátnych firiem chystá hromadné prepúšťanie. ZSSK Cargo plánuje škrtnúť stovky miest. „V Európe …"
+    }
+  ]
+}

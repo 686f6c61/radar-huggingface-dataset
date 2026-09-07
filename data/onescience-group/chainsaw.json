@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/Chainsaw",
+  "slug": "onescience-group-chainsaw",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/Chainsaw",
+  "created_at": "2026-09-07T01:36:13.000Z",
+  "updated_at": "2026-09-07T01:37:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OneScience",
+    "bioscience",
+    "protein-domain-prediction",
+    "protein-structure-analysis",
+    "Chainsaw",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7676633,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "OneScience-Group/Chainsaw · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/Chainsaw",
+      "snippet": "Chainsaw is a fully convolutional neural network designed to predict protein domain boundaries from three-dimensional protein structures. The model extracts residue-distance features and STRIDE secondary-structure features from PDB or mmCIF structures, predicts the probability that residue pairs belong to the same structural domain, and then applies post-processing to generate the final domain ..."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

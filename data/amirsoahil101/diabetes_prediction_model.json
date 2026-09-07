@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amirsoahil101/Diabetes_Prediction_Model",
+  "slug": "amirsoahil101-diabetes_prediction_model",
+  "author": "amirsoahil101",
+  "url": "https://huggingface.co/amirsoahil101/Diabetes_Prediction_Model",
+  "created_at": "2026-09-07T10:49:14.000Z",
+  "updated_at": "2026-09-07T10:52:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300017,
+  "storage_human": "300017 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skusenosti s Medante Clinic? - Fórum - ZDRAVIE.sk",
+      "url": "https://forum.zdravie.sk/1911560/skusenosti-s-medante-clinic?page=2",
+      "snippet": "Jun 24, 2013 · Medante pravidelne navštevujem asi pol roka . Prišla som tam s nádejou, že mi pomôžu s dlhotrvajúcimi ženskými …"
+    },
+    {
+      "title": "amirsoahil101 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101/models",
+      "snippet": "Experienced in building predictive models, neural networks, and AI-driven solutions using frameworks like PyTorch, TensorFlow, and scikit-learn. Enthusiastic about integrating intelligent models into full-stack web applications."
+    },
+    {
+      "title": "Skusenosti s Medante Clinic? - Fórum - ZDRAVIE.sk",
+      "url": "https://forum.zdravie.sk/1911560/skusenosti-s-medante-clinic?page=3",
+      "snippet": "Jun 24, 2013 · Nasiel som v BA jednu sukromnu kliniku (www.medante.com)a chcem sa spytat na skusenosti, lebo terapia nieje …"
+    },
+    {
+      "title": "Towards Transparent Diabetes Prediction: Combining AutoML and ... - MDPI",
+      "url": "https://www.mdpi.com/2078-2489/16/1/7",
+      "snippet": "Diabetes is a global health challenge that requires early detection for effective management. This study integrates Automated Machine Learning (AutoML) with Explainable Artificial Intelligence (XAI) to improve diabetes risk prediction and enhance model interpretability for healthcare professionals. Using the Pima Indian Diabetes dataset, we developed an ensemble model with 85.01% accuracy ..."
+    },
+    {
+      "title": "Skusenosti s Medante Clinic? - Fórum - ZDRAVIE.sk",
+      "url": "https://forum.zdravie.sk/1911560/skusenosti-s-medante-clinic",
+      "snippet": "Jun 24, 2013 · Medante je velmi profesionalna klinika s krasnymi priestormi, skvelym personalom a ponukaju super sluzby. Velmi mi …"
+    }
+  ]
+}

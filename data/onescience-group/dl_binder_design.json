@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/dl_binder_design",
+  "slug": "onescience-group-dl_binder_design",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/dl_binder_design",
+  "created_at": "2026-09-07T02:12:41.000Z",
+  "updated_at": "2026-09-07T02:13:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OneScience",
+    "bioscience",
+    "protein-design",
+    "binder-design",
+    "ProteinMPNN",
+    "AlphaFold2",
+    "PyRosetta",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 466849922,
+  "storage_human": "467 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inn at the Market | Pike Place Market Hotel | Downtown Seattle …",
+      "url": "https://www.innatthemarket.com/",
+      "snippet": "Inn at the Market is Seattle’s only hotel located directly inside the iconic Pike Place Market, offering a rare vantage point above one of …"
+    },
+    {
+      "title": "GitHub - nrbennet/dl_binder_design",
+      "url": "https://github.com/nrbennet/dl_binder_design",
+      "snippet": "This repo contains the scripts described in the paper Improving de novo Protein Binder Design with Deep Learning. I have split the single conda env that this repo used to use (dl_binder_design.yml; still provided in <base_dir>/include if anyone is interested) into two smaller and easier to install ..."
+    },
+    {
+      "title": "Boutique Hotel Rooms in Downtown Seattle - Inn at the Market",
+      "url": "https://www.innatthemarket.com/pike-place-market-hotel-rooms/",
+      "snippet": "Inn at the Market is the only downtown Seattle hotel located directly in the famous Pike Place Market. The Inn offers three popular …"
+    },
+    {
+      "title": "nrbennet/dl_binder_design | DeepWiki",
+      "url": "https://deepwiki.com/nrbennet/dl_binder_design",
+      "snippet": "Overview Relevant source files Purpose and Scope The dl_binder_design repository provides a computational pipeline for designing protein binders using deep learning approaches. This system implements the methodology described in the paper Improving de novo Protein Binder Design with Deep Learning. The core workflow combines ProteinMPNN sequence design with AlphaFold2 structure prediction to ..."
+    },
+    {
+      "title": "Enhancing Your Stay in Seattle - Inn at the Market",
+      "url": "https://www.innatthemarket.com/enhancing-your-stay-in-seattle/",
+      "snippet": "Enhancing Your Stay in Seattle If you want the quintessential Seattle experience, Inn at the Marketoffers just that. Tucked directly …"
+    }
+  ]
+}

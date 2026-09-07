@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "007hya/chatgpt-detector-roberta-chinese-onnx",
+  "slug": "007hya-chatgpt-detector-roberta-chinese-onnx",
+  "author": "007hya",
+  "url": "https://huggingface.co/007hya/chatgpt-detector-roberta-chinese-onnx",
+  "created_at": "2026-09-07T01:44:13.000Z",
+  "updated_at": "2026-09-07T01:49:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103026443,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leboncoin une erreur technique est survenue - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37772507-site-le-bon-coin-une-erreur-technique-est-survenue",
+      "snippet": "Aug 10, 2023 · A voir également: Leboncoin une erreur est survenue veuillez réessayer ultérieurement Une erreur technique est …"
+    },
+    {
+      "title": "chatgpt-detector-roberta-chinese · Model · Inferix",
+      "url": "https://inferix.co/models/Hello-SimpleAI/chatgpt-detector-roberta-chinese",
+      "snippet": "Model Card for Hello SimpleAI/chatgpt detector roberta chinese This model is trained on the mix of full text and splitted sentences of answer s from Hello SimpleAI/HC3 Chinese. More details refer to arxiv: 2301.07597 and Gtihub project Hello SimpleAI/chatgpt comparison detection. The base checkpoint is hfl/chinese roberta wwm ext."
+    },
+    {
+      "title": "Leboncoin arnaque - Forum Vos droits sur internet - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-27161884-leboncoin-arnaque",
+      "snippet": "Feb 17, 2013 · Meilleure réponse: Bonjour Leboncoin.fr part d'une idée simple : la bonne affaire est au coin de la rue ! Pour passer ou …"
+    },
+    {
+      "title": "Deploy Hello-SimpleAI/chatgpt-detector-roberta-chinese | Inference ...",
+      "url": "https://endpoints.huggingface.co/new?repository=Hello-SimpleAI%2Fchatgpt-detector-roberta-chinese",
+      "snippet": "Deploy chatgpt-detector-roberta-chinese Explore our Inference Catalog to deploy popular models on optimized configuration."
+    },
+    {
+      "title": "Les meilleurs routes à motos en Espagne",
+      "url": "https://www.espagne-visite.com/fr/top-espagne/top-routes-motos-espagne.html",
+      "snippet": "La chaîne montagneuse la plus grande d'Espagne est l'un des meilleurs endroits pour profiter des routes de montagne. Vous aurez …"
+    }
+  ]
+}

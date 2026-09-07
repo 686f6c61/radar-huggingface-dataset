@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "burtenshaw/plan-my-day-v2-lfm2.5-dev-prefix",
+  "slug": "burtenshaw-plan-my-day-v2-lfm2-5-dev-prefix",
+  "author": "burtenshaw",
+  "url": "https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-prefix",
+  "created_at": "2026-09-07T10:50:52.000Z",
+  "updated_at": "2026-09-07T10:50:54.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "openenv",
+    "trl",
+    "sdpo",
+    "synthetic",
+    "continual-learning",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44457856,
+  "storage_human": "44 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT \"DAN\" (and other \"Jailbreaks\") NOTE: As of 20230711, the DAN 12.0 prompt is working properly with Model GPT-3.5 All …"
+    },
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI | Blog",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we're excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "burtenshaw/openenv-echo-world-model-liquidai-lfm2.5-350m-seed2 ...",
+      "url": "https://huggingface.co/burtenshaw/openenv-echo-world-model-liquidai-lfm2.5-350m-seed2",
+      "snippet": "Instructions to use burtenshaw/openenv-echo-world-model-liquidai-lfm2.5-350m-seed2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Có cách khôi phục đoạn chat đã xóa trên ChatGPT không? Làm sao để lưu trữ hiệu quả các đoạn chat để dễ tìm lại? …"
+    }
+  ]
+}

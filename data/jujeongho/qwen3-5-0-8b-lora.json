@@ -4,8 +4,8 @@
   "slug": "jujeongho-qwen3-5-0-8b-lora",
   "author": "jujeongho",
   "url": "https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA",
-  "created_at": "2026-08-19T07:28:18.000Z",
-  "updated_at": "2026-08-19T07:29:36.000Z",
+  "created_at": "2026-09-07T05:29:55.000Z",
+  "updated_at": "2026-09-07T05:34:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 15,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
@@ -34,8 +34,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-04T07:27:26.459Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

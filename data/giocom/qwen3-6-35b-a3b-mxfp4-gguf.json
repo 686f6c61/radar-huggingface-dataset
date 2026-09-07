@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "giocom/Qwen3.6-35B-A3B-MXFP4-GGUF",
+  "slug": "giocom-qwen3-6-35b-a3b-mxfp4-gguf",
+  "author": "giocom",
+  "url": "https://huggingface.co/giocom/Qwen3.6-35B-A3B-MXFP4-GGUF",
+  "created_at": "2026-09-07T10:48:40.000Z",
+  "updated_at": "2026-09-07T10:55:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "GGUF",
+    "MTP",
+    "huihui",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 22182573504,
+  "storage_human": "22.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Додо Пицца | Сеть пиццерий №1 в России по количеству пиццерий",
+      "url": "https://dodopizza.ru/",
+      "snippet": "🍕 Додо Пицца | Сеть пиццерий №1 в России по количеству пиццерий. додо пицца. МоскваСанкт-Петербург. …"
+    },
+    {
+      "title": "giocom (giocom013) - Hugging Face",
+      "url": "https://huggingface.co/giocom/models",
+      "snippet": "giocom/Qwen3.6-35B-A3B-MTP-GGUF Text Generation • 2B•Updated about 23 hours ago• 1.21k"
+    },
+    {
+      "title": "Горячая и ароматная пицца по адресу пр-т Ленина, 21, Балашиха …",
+      "url": "https://dodopizza.ru/balashiha/lenina235",
+      "snippet": "Закажите любимую пиццу с доставкой от 30 минут или приходите в пиццерию. Оригинальные начинки, натуральные …"
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "Instructions to use Qwen/Qwen3.6-35B-A3B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Пицца, рецепты на RussianFood.com: 981 рецепт пиццы",
+      "url": "https://www.russianfood.com/recipes/bytype/?fid=30",
+      "snippet": "Борщи, Ботвинья, Бульоны, Гаспачо, Капустняк, Кулеш, Лагман, Минестроне, Мисо, Окрошка, Рассольник, Свекольник, …"
+    }
+  ]
+}

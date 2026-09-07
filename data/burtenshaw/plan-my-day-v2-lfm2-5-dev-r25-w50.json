@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "burtenshaw/plan-my-day-v2-lfm2.5-dev-r25-w50",
+  "slug": "burtenshaw-plan-my-day-v2-lfm2-5-dev-r25-w50",
+  "author": "burtenshaw",
+  "url": "https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-r25-w50",
+  "created_at": "2026-09-07T10:58:48.000Z",
+  "updated_at": "2026-09-07T11:01:32.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "openenv",
+    "trl",
+    "sdpo",
+    "synthetic",
+    "continual-learning",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88915712,
+  "storage_human": "89 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Wondering what your horoscope for today (or even tomorrow) is? Sign up for our daily horoscope emails based on your own zodiac …"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency deployment. LFM2 is specifically designed to provide the fastest on-device gen-AI experience across the industry, thus unlocking a massive number of devices for generative AI workloads."
+    },
+    {
+      "title": "网友调侃 Gemini 为北美大豆包，称其为最蠢 AI，为什么会被诟病难 …",
+      "url": "https://www.zhihu.com/question/2047324900080051711",
+      "snippet": "Jun 8, 2026 · 豆包 Gemini AI糊弄学 网友调侃 Gemini 为北美大豆包，称其为最蠢 AI，为什么会被诟病难用？ 你的使用感受如何？ [图 …"
+    }
+  ]
+}

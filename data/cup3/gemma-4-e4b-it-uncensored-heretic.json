@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Cup3/gemma-4-E4B-it-uncensored-heretic",
+  "slug": "cup3-gemma-4-e4b-it-uncensored-heretic",
+  "author": "Cup3",
+  "url": "https://huggingface.co/Cup3/gemma-4-E4B-it-uncensored-heretic",
+  "created_at": "2026-09-07T10:26:50.000Z",
+  "updated_at": "2026-09-07T10:26:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "any-to-any",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765664,
+  "storage_human": "16.0 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3bfc98b10f0a61563b3b8f7c0ee260b3",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "InfinimindCreations/gemma-4-E4B-it-uncensored · Hugging Face",
+      "url": "https://huggingface.co/InfinimindCreations/gemma-4-E4B-it-uncensored",
+      "snippet": "Instructions to use InfinimindCreations/gemma-4-E4B-it-uncensored with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "llmfan46/gemma-4-E4B-it-uncensored-heretic · Hugging Face",
+      "url": "https://huggingface.co/llmfan46/gemma-4-E4B-it-uncensored-heretic",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

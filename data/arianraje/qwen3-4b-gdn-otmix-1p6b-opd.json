@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "arianraje/qwen3-4b-gdn-otmix-1p6b-opd",
+  "slug": "arianraje-qwen3-4b-gdn-otmix-1p6b-opd",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-otmix-1p6b-opd",
+  "created_at": "2026-09-07T02:00:37.000Z",
+  "updated_at": "2026-09-07T02:01:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_next",
+    "linear-attention",
+    "gated-deltanet",
+    "hybrid",
+    "distillation",
+    "qwen3",
+    "on-policy-distillation",
+    "wsd",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 4546819904,
+  "parameters_human": "4.55B",
+  "storage_bytes": 9105111446,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "arianraje/qwen3-4b-gdn-hybrid-stage3-200M-OPD-dtfix · Hugging Face",
+      "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage3-200M-OPD-dtfix",
+      "snippet": "Model weights of the Qwen3-4B GDN-hybrid dt_bias-fixedline, stage-3 on-policy distillation (OPD), 200M generated tokens."
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "arianraje/qwen3-4b-gdn-hybrid-1.2B-OPD at main - Hugging Face",
+      "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-1.2B-OPD/tree/main",
+      "snippet": "qwen3_next linear-attention gated-deltanet hybrid distillation qwen3 on-policy-distillation wsd License:mit Model card FilesFiles and versions xet Community Copy to bucket new main qwen3-4b-gdn-hybrid-1.2B-OPD 9.26 GB Ctrl+K Ctrl+K 1 contributor History:3 commits arianraje Add files using upload-large-folder tool ece52a6 verifiedabout 5 hours ..."
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
+    }
+  ]
+}

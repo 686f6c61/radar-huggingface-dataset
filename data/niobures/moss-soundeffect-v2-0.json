@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "niobures/MOSS-SoundEffect-v2.0",
+  "slug": "niobures-moss-soundeffect-v2-0",
+  "author": "niobures",
+  "url": "https://huggingface.co/niobures/MOSS-SoundEffect-v2.0",
+  "created_at": "2026-09-07T01:55:24.000Z",
+  "updated_at": "2026-09-07T02:18:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-audio",
+    "diffusion",
+    "flow-matching",
+    "sound-effects",
+    "audio-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "diffusers:MossSoundEffectPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 1416047744,
+  "parameters_human": "1.42B",
+  "storage_bytes": 11225678771,
+  "storage_human": "11.2 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NOS Jeugdjournaal",
+      "url": "https://jeugdjournaal.nl/",
+      "snippet": "Altijd. Overal. Met het NOS Jeugdjournaal blijf je altijd en overal op de hoogte van het laatste nieuws."
+    },
+    {
+      "title": "niobures/MOSS-SoundEffect-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/niobures/MOSS-SoundEffect-v2.0",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use niobures/MOSS-SoundEffect-v2.0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use niobures/MOSS-SoundEffect-v2.0 with Diffusers:"
+    },
+    {
+      "title": "Ochtendjournaal van maandag 1 juni",
+      "url": "https://jeugdjournaal.nl/l/2616661",
+      "snippet": "Jun 1, 2026 · Bekijk het hele bericht op Jeugdjournaal.nl Kijk hier naar het ochtendjournaal van maandag 1 juni. Met daarin nieuws …"
+    },
+    {
+      "title": "MOSS-TTS/moss_soundeffect_v2 at main · OpenMOSS/MOSS-TTS - GitHub",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS/tree/main/moss_soundeffect_v2",
+      "snippet": "MOSS-SoundEffect v2.0 is a text-to-audio model with a Diffusion Transformer (DiT) backbone trained with the Flow Matching objective, paired with a DAC VAE and a Qwen3 text encoder. We recommend a clean, isolated Python 3.12 environment to avoid dependency conflicts with the top-level MOSS-TTS ..."
+    },
+    {
+      "title": "Het Jeugdjournaal in de ochtend heeft zomervakantie!",
+      "url": "https://jeugdjournaal.nl/l/2621842",
+      "snippet": "Jul 6, 2026 · Bekijk het hele bericht op Jeugdjournaal.nl Voor regio Noord is vrijdag de zomervakantie begonnen en voor regio Zuid …"
+    }
+  ]
+}

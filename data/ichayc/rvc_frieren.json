@@ -5,13 +5,14 @@
   "author": "ichayc",
   "url": "https://huggingface.co/ichayc/RVC_FRIEREN",
   "created_at": "2026-08-17T11:39:40.000Z",
-  "updated_at": "2026-08-17T11:40:22.000Z",
+  "updated_at": "2026-09-07T05:35:37.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "dataset:ichayc/Frieren1.1_Dataset",
     "license:openrail",
     "region:us"
   ],

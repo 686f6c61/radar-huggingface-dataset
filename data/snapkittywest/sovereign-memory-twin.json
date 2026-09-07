@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SNAPKITTYWEST/sovereign-memory-twin",
+  "slug": "snapkittywest-sovereign-memory-twin",
+  "author": "SNAPKITTYWEST",
+  "url": "https://huggingface.co/SNAPKITTYWEST/sovereign-memory-twin",
+  "created_at": "2026-09-07T10:31:45.000Z",
+  "updated_at": "2026-09-07T10:38:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "sovereign-memory-twin",
+    "text-generation",
+    "pytorch",
+    "sovereign",
+    "snapkitty",
+    "memory-twin",
+    "worm-sealed",
+    "ibm-i",
+    "ledger",
+    "formal-verification",
+    "custom-architecture",
+    "en",
+    "dataset:SNAPKITTYWEST/sovereign-training-corpus",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNAPKITTYWEST (SNAPKITTY COLLECTIVE) · GitHub",
+      "url": "https://github.com/SNAPKITTYWEST",
+      "snippet": "SnapKitty Sovereign Compute Architecture Self-verifying multi-witness proof system — WORM-chain consensus, P/NP swarm solving, deterministic memory layers, and a constitutional cold-boot protocol for sovereign compute. Ω ← TRUST ∧ CODE — The system is coherent iff the omega-field is sealed and every proof carries three independent ..."
+    },
+    {
+      "title": "SNAPKITTYWEST (ahmad parr) - Hugging Face",
+      "url": "https://huggingface.co/SNAPKITTYWEST",
+      "snippet": "Cloud “power lens” AI Use APIs only when needed: Gemini for hackathon demos, multimodal, Google ecosystem Claude for long reasoning/docs OpenAI for tool calling, structured workflows, polished assistants This keeps SnapKitty sovereign but lets you rent extra horsepower when useful."
+    },
+    {
+      "title": "GitHub - SNAPKITTYWEST/TWIN: Algorithm powering the For You feed on X",
+      "url": "https://github.com/SNAPKITTYWEST/TWIN/tree/main/",
+      "snippet": "Algorithm powering the For You feed on X. Contribute to SNAPKITTYWEST/TWIN development by creating an account on GitHub."
+    },
+    {
+      "title": "Snapkitty/sovereign-harness · Hugging Face",
+      "url": "https://huggingface.co/Snapkitty/sovereign-harness",
+      "snippet": "Downloads last month Downloads are not tracked for this model. How to track Inference ProvidersNEW This model isn't deployed by any Inference Provider.🙋Ask for provider support Space using Snapkitty/sovereign-harness1 Snapkitty/infrastructure-and-tools Collection including Snapkitty/sovereign-harness"
+    },
+    {
+      "title": "SnapKitty Sovereign Router",
+      "url": "https://snapkittywest.github.io/router.html",
+      "snippet": "⬡ Sovereign Router online. I route every task to the right engine automatically: • Math/Proofs → DeepSeek R1 • Code/Git → Mistral Codestral (free) • Reasoning/Law → Claude Sonnet 4.6 • Research/News → Nova Pro • Papers → Nova Premier (DEVTRIAL) • Local → Nemotron (Ollama) Watch the panels — see routing happen live."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "unsloth",
   "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
   "created_at": "2026-08-26T14:21:15.000Z",
-  "updated_at": "2026-08-29T10:43:43.000Z",
+  "updated_at": "2026-09-06T06:55:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,13 +29,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 371,
-  "downloads_30d": 93458,
-  "trending_score": 78,
+  "likes": 376,
+  "downloads_30d": 133134,
+  "trending_score": 71,
   "parameters": 320759404382,
   "parameters_human": "320.76B",
-  "storage_bytes": 2545702739125,
-  "storage_human": "2545.7 GB",
+  "storage_bytes": 2547994796597,
+  "storage_human": "2548.0 GB",
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"

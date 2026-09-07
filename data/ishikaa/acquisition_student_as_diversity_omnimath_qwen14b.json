@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_diversity_omnimath_qwen14b",
+  "slug": "ishikaa-acquisition_student_as_diversity_omnimath_qwen14b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_diversity_omnimath_qwen14b",
+  "created_at": "2026-09-07T01:41:56.000Z",
+  "updated_at": "2026-09-07T01:44:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551555856,
+  "storage_human": "29.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Work in Progress | Dropbox Blog",
+      "url": "https://blog.dropbox.com/",
+      "snippet": "For the last decade, Dropbox has been proud to sponsor the Sundance Film Festival—and for good reason. 68% of feature films at …"
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_diversity_numina_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_diversity_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_diversity_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "What is Dropbox, anyway? | Dropbox Blog",
+      "url": "https://blog.dropbox.com/topics/our-community/what-is-dropbox",
+      "snippet": "May 21, 2015 · We know avid blog readers (like you!) understand the ins and outs of Dropbox. But we also know there are lots of …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=ishikaa%2Facquisition_student_AS_diversity_medmcqa_qwen7b",
+      "snippet": "Explore machine learning models. ishikaa/acquisition_student_AS_diversity_medmcqa_qwen7b"
+    },
+    {
+      "title": "你平时是如何使用 Dropbox 的？ - 知乎",
+      "url": "https://www.zhihu.com/question/19555793",
+      "snippet": "比如任务管理工具 2Do，虽然开发者提供了多种同步方式，Dropbox 依然是最稳定的方式之一；而我一直利用 DTG 构建的文件仓库， …"
+    }
+  ]
+}

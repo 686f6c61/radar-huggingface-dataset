@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ced-Collab/uef-wave2-paradigm",
+  "slug": "ced-collab-uef-wave2-paradigm",
+  "author": "Ced-Collab",
+  "url": "https://huggingface.co/Ced-Collab/uef-wave2-paradigm",
+  "created_at": "2026-09-07T02:16:48.000Z",
+  "updated_at": "2026-09-07T02:23:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "unified-embedding-field",
+    "text-to-image",
+    "paradigm-comparison",
+    "research-checkpoints",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24060162186,
+  "storage_human": "24.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Communauté européenne de défense — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Communaut%C3%A9_europ%C3%A9enne_de_d%C3%A9fense",
+      "snippet": "2.4Accords de Bonn : contrepartie indissociable de la CED."
+    },
+    {
+      "title": "Bienvenue chez CED | CED",
+      "url": "https://www.grossiste-fete.fr/bienvenue-chez-ced/",
+      "snippet": "Depuis maintenant plus de 20 ans, la société CED s’est imposée comme le grossiste spécialiste de la fête, en déguisement, …"
+    },
+    {
+      "title": "Le spécialiste de vos fêtes, CED, grossiste en événementiel",
+      "url": "https://www.grossiste-fete.fr/",
+      "snippet": "CED, grossiste en articles de fête depuis 1998 : déguisements, jouets, kermesse, décoration. 15 000 références à prix de gros pour …"
+    },
+    {
+      "title": "CED — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/CED",
+      "snippet": "Ced (de son vrai nom Cédric Asna), un auteur de bandes dessinées."
+    },
+    {
+      "title": "En 1954, l'échec de la Communauté européenne de défense | INA",
+      "url": "https://www.ina.fr/ina-eclaire-actu/communaute-europeenne-de-defense-1950-1952-1954",
+      "snippet": "En 1954, l'échec de la Communauté européenne de défense . Le retour à la présidence des États-Unis de Donald Trump, adepte de …"
+    }
+  ]
+}

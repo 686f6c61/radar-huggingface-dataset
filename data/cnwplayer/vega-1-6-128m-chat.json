@@ -5,7 +5,7 @@
   "author": "CNWPlayer",
   "url": "https://huggingface.co/CNWPlayer/Vega-1.6-128M-Chat",
   "created_at": "2026-08-29T23:50:05.000Z",
-  "updated_at": "2026-09-06T00:08:30.000Z",
+  "updated_at": "2026-09-07T00:39:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 269,
   "trending_score": 0,
   "parameters": 128410368,
   "parameters_human": "128.4M",

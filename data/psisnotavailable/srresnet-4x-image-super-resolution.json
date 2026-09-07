@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "psisnotavailable/srresnet-4x-image-super-resolution",
+  "slug": "psisnotavailable-srresnet-4x-image-super-resolution",
+  "author": "psisnotavailable",
+  "url": "https://huggingface.co/psisnotavailable/srresnet-4x-image-super-resolution",
+  "created_at": "2026-09-07T11:02:19.000Z",
+  "updated_at": "2026-09-07T11:05:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3722677,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "SuperRes AI: 4x Image Super-Resolution with Deep Residual Networks",
+      "url": "https://github.com/Pronaaf2k/SuperResAI",
+      "snippet": "SuperRes AI is a deep learning project developed for the CSE445 Machine Learning course at North South University. The project implements a powerful super-resolution model to restore high-resolution (256x256) images from low-resolution (64x64) inputs, achieving a 4x upscale factor."
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "GitHub - ash1ra/SRResNet: SRResNet (Super-Resolution Residual Network ...",
+      "url": "https://github.com/ash1ra/SRResNet",
+      "snippet": "This project implements a SRResNet (Super-Resolution Residual Network) model for SISR (Single Image Super-Resolution) task. The primary goal is to upscale low-resolution (LR) images by a given factor (2x, 4x, 8x) to produce super-resolution (SR) images with high fidelity and perceptual quality. This implementation is based on the paper Photo-Realistic Single Image Super-Resolution Using a ..."
+    },
+    {
+      "title": "WhatsApp | Messages et appels privés, gratuits, sûrs et fiables",
+      "url": "https://www.whatsapp.com/?lang=fr",
+      "snippet": "Utilisez l’application WhatsApp Messenger pour rester en contact avec vos proches. WhatsApp permet d’envoyer des messages et …"
+    }
+  ]
+}

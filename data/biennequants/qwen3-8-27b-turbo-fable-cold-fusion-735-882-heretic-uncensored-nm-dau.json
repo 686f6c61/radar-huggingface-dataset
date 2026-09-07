@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "biennequants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "slug": "biennequants-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau",
+  "author": "biennequants",
+  "url": "https://huggingface.co/biennequants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "created_at": "2026-09-07T01:38:20.000Z",
+  "updated_at": "2026-09-07T01:38:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55586512482,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Nejnavštěvovanější český internetový portál nabízející vyhledávač, e-mail, aktuální zprávy, předpověď počasí a odkazy, které se …"
+    },
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "snippet": "Important: This is the first fine tune to exceed 730 \"arc-c\" (\"735\": 144 pts higher than Qwen 3.8 27B) AND 880 ARC-E (The OpenAI, Claude and Gemini \"zone of intelligence\") in 8 bit and over 718 arc-c in 4 bit."
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě. Přejít na Seznam.cz"
+    },
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF/discussions/22",
+      "snippet": "it feels like the model tends to end conversations at strange places, like it'd say \"I'm going to do balabala next\" and just ends there."
+    },
+    {
+      "title": "TV Seznam - TV program dnes, večer, zítra a na 14 dní",
+      "url": "https://tv.seznam.cz/",
+      "snippet": "Televizní program českých i zahraničních stanic. V přehledném TV programu od Seznamu zjistíte, co dávají v TV dnes, večer, zítra a …"
+    }
+  ]
+}

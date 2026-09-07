@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fdrtyu/DR34ML4Y_High",
+  "slug": "fdrtyu-dr34ml4y_high",
+  "author": "fdrtyu",
+  "url": "https://huggingface.co/fdrtyu/DR34ML4Y_High",
+  "created_at": "2026-09-07T01:58:30.000Z",
+  "updated_at": "2026-09-07T01:59:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306807976,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "English Exercises | Grammar, Vocabulary, Listening & Tests (ESL)",
+      "url": "https://agendaweb.org/",
+      "snippet": "English exercises online to practise grammar, vocabulary, verbs, listening, reading and phonetics. Interactive ESL activities and …"
+    },
+    {
+      "title": "fdrtyu/DR34ML4Y_High · Hugging Face",
+      "url": "https://huggingface.co/fdrtyu/DR34ML4Y_High",
+      "snippet": "DR34ML4Y_High like0 License:other Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Vocabulary Exercises for ESL Learners",
+      "url": "https://agendaweb.org/vocabulary-exercises.html",
+      "snippet": "Improve your English vocabulary with our online exercises and activities. Suitable for beginners, elementary, intermediate, and …"
+    },
+    {
+      "title": "SlartyG/DR34ML4Y_I2V_14B_HIGH_V2 · Hugging Face",
+      "url": "https://huggingface.co/SlartyG/DR34ML4Y_I2V_14B_HIGH_V2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "English Grammar Exercises - English Exercises ESL",
+      "url": "https://agendaweb.org/grammar-exercises.html",
+      "snippet": "Free interactive English grammar exercises for all levels. Practise articles, adjectives, pronouns, prepositions and more. For ESL and …"
+    }
+  ]
+}

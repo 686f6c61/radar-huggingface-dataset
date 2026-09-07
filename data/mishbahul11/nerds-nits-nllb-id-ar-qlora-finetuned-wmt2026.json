@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "mishbahul11/nerds-nits-nllb-id-ar-qlora-finetuned-wmt2026",
+  "slug": "mishbahul11-nerds-nits-nllb-id-ar-qlora-finetuned-wmt2026",
+  "author": "mishbahul11",
+  "url": "https://huggingface.co/mishbahul11/nerds-nits-nllb-id-ar-qlora-finetuned-wmt2026",
+  "created_at": "2026-09-07T02:12:47.000Z",
+  "updated_at": "2026-09-07T05:23:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "ar",
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "nllb",
+    "qlora",
+    "lora",
+    "arabic",
+    "indonesian",
+    "wmt2026",
+    "low-resource",
+    "ar",
+    "id",
+    "base_model:facebook/nllb-200-1.3B",
+    "base_model:adapter:facebook/nllb-200-1.3B",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 409836510,
+  "storage_human": "410 MB",
+  "base_model": "facebook/nllb-200-1.3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Indonesian to Arabic Translation",
+      "dataset": "WMT 2026 Low-Resource Arabic-Asian Shared Task (Arabic-Indonesian)",
+      "metric": "BLEU (devtest, ID->AR)",
+      "value": 18.67
+    },
+    {
+      "task": "Indonesian to Arabic Translation",
+      "dataset": "WMT 2026 Low-Resource Arabic-Asian Shared Task (Arabic-Indonesian)",
+      "metric": "chrF (devtest, ID->AR)",
+      "value": 52.85
+    },
+    {
+      "task": "Indonesian to Arabic Translation",
+      "dataset": "WMT 2026 Low-Resource Arabic-Asian Shared Task (Arabic-Indonesian)",
+      "metric": "COMET (devtest, ID->AR)",
+      "value": 0.8557
+    }
+  ],
+  "sources": [
+    {
+      "title": "问卷维度不同、总分不同、题目数量不同要怎么做相关？ - 知乎",
+      "url": "https://www.zhihu.com/question/385600743",
+      "snippet": "维度与维度可以做相关，总分与总分也可以做相关，与题目数量、分值无关。 写回答. 用SPSS做相关分析，有三个问卷，但每个问卷 …"
+    },
+    {
+      "title": "mishbahul11/nerds-nits-nllb-ar-id-qlora-finetuned-wmt2026 · Hugging Face",
+      "url": "https://huggingface.co/mishbahul11/nerds-nits-nllb-ar-id-qlora-finetuned-wmt2026",
+      "snippet": "Instructions to use mishbahul11/nerds-nits-nllb-ar-id-qlora-finetuned-wmt2026 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "spss，在问卷中设置了多个维度，每个维度下有多个题目，如何讨论这个每个维度下的题目得分与维度的关系_spss一个维度多个题项怎么办 …",
+      "url": "https://blog.csdn.net/yjq125931902/article/details/143771995",
+      "snippet": "Nov 14, 2024 · 但是，当我们收集到大量数据后，如何有效地分析这些数据，特别是如何讨论每个维度下的题目得分与维度之间的关系 …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=modified",
+      "snippet": "Updated 3 minutes ago geocketa/sexgod1979 Updated 3 minutes ago mishbahul11/nerds-nits-nllb-id-ar-qlora-finetuned-wmt2026 Updated 3 minutes ago geocketa/minasmorgul Updated 3 minutes ago"
+    },
+    {
+      "title": "调查问卷中不同维度下有很多问题情况下,用SPSS分析如何将不同问题的 …",
+      "url": "https://wenku.baidu.com/view/771df122b84cf7ec4afe04a1b0717fd5370cb244.html",
+      "snippet": "例如维度A有5题，维度B也有5题，各题均为5点量表，则两个维度总分范围均为5-25分，可直接比较。 2.平均法（Mean）适用场景： …"
+    }
+  ]
+}

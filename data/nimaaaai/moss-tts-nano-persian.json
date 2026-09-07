@@ -5,7 +5,7 @@
   "author": "nimaaaAI",
   "url": "https://huggingface.co/nimaaaAI/MOSS-TTS-Nano-Persian",
   "created_at": "2026-08-25T20:03:24.000Z",
-  "updated_at": "2026-08-25T21:33:08.000Z",
+  "updated_at": "2026-09-06T10:10:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 203,
+  "downloads_30d": 268,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

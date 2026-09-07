@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-f28a95819f382b6a",
+  "slug": "gradients-io-tournaments-augmented-f28a95819f382b6a",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-f28a95819f382b6a",
+  "created_at": "2026-09-07T11:08:05.000Z",
+  "updated_at": "2026-09-07T11:08:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 7642192824,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impressum :: Treckerplanenservice",
+      "url": "https://treckerplanenservice.de/impressum",
+      "snippet": "32469 Petershagen Tel: 05707 / 900 444 oder 05707 / 93 25 97 7 Mail: info@treckerplanenservice.de Web: …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=gradients-io-tournaments%2Faugmented-6e708a85f939ab16",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Kontakt :: Treckerplanenservice",
+      "url": "https://treckerplanenservice.de/kontakt",
+      "snippet": "Kontakt Für Bestellungen und weitere Informationen erreichen Sie uns per Telefon unter 05707 / 93 25 97 7 Zugesandte Altplanen …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=gradients-io-tournaments%2Faugmented-61ee2b17ae406fc2",
+      "snippet": "Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF + 47 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks + 10 Hardware ..."
+    },
+    {
+      "title": "Treckerplanenservice - Planenservice - Verdecke - Fritzmeier - Dieteg",
+      "url": "https://treckerplanenservice.de/",
+      "snippet": "Wir bieten Ihnen alle Ersatzteile und das Zubehör für Fritzmeier und Dieteg Verdecke, sowie eine Instandsetzung und Aufarbeitung …"
+    }
+  ]
+}

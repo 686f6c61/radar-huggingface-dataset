@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tihon-nth/vivit-vit-fc-loss-8-10-epochs-5_class_2_p0_splited-1788743688.2073812",
+  "slug": "tihon-nth-vivit-vit-fc-loss-8-10-epochs-5_class_2_p0_splited-1788743688-2073812",
+  "author": "tihon-nth",
+  "url": "https://huggingface.co/tihon-nth/vivit-vit-fc-loss-8-10-epochs-5_class_2_p0_splited-1788743688.2073812",
+  "created_at": "2026-09-07T01:14:51.000Z",
+  "updated_at": "2026-09-07T07:19:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vivit",
+    "video-classification",
+    "generated_from_trainer",
+    "base_model:google/vivit-b-16x2-kinetics400",
+    "base_model:finetune:google/vivit-b-16x2-kinetics400",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 88650245,
+  "parameters_human": "88.7M",
+  "storage_bytes": 3900875909,
+  "storage_human": "3.9 GB",
+  "base_model": "google/vivit-b-16x2-kinetics400",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FASS PATIENT | Startsida → För dig som är patient eller närstående",
+      "url": "https://www.fass.se/",
+      "snippet": "May 4, 2026 · Via informationstjänsten FASS får allmänhet, hälso- och sjukvårdpersonal, apotek, djurägare och djurvårdspersonal …"
+    },
+    {
+      "title": "tihon-nth/vivit-vit-fc-loss-8-10-epochs-5_class_1_p0_splited-1788680718 ...",
+      "url": "https://huggingface.co/tihon-nth/vivit-vit-fc-loss-8-10-epochs-5_class_1_p0_splited-1788680718.6508312",
+      "snippet": "Community Deploy Copy to bucket new Use this model Instructions to use tihon-nth/vivit-vit-fc-loss-8-10-epochs-5_class_1_p0_splited-1788680718.6508312 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers"
+    },
+    {
+      "title": "PATIENT | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/patient",
+      "snippet": "PATIENT definition: 1. a person who is receiving medical care, or who is cared for by a particular doctor or dentist…. Learn more."
+    },
+    {
+      "title": "Vision Transformer (ViT) · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/vit",
+      "snippet": "This model was published in HF papers on 2020-10-22 and contributed to Hugging Face Transformers on 2021-04-01. Copy page Vision Transformer (ViT) Vision Transformer (ViT)is a transformer adapted for computer vision tasks. An image is split into smaller fixed-sized patches which are treated as a sequence of tokens, similar to words for NLP tasks."
+    },
+    {
+      "title": "Patient.nu - Vårdrummet",
+      "url": "https://patient.nu/",
+      "snippet": "Vårdrummet erbjuder digitala patientmöten för enkel och säker kommunikation med vårdgivare."
+    }
+  ]
+}

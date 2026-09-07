@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v2",
+  "slug": "archspace-collection-ncp_archpreview_dolma3_8-9b_stage2_v2",
+  "author": "ArchSpace-Collection",
+  "url": "https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v2",
+  "created_at": "2026-08-27T13:02:40.000Z",
+  "updated_at": "2026-09-07T02:40:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ncp_olmo3",
+    "text-generation",
+    "bfloat16",
+    "causal-lm",
+    "conceptlm",
+    "custom-code",
+    "latent-space-model",
+    "ncp",
+    "olmo3",
+    "research",
+    "custom_code",
+    "base_model:ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage1",
+    "base_model:finetune:ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 276,
+  "trending_score": 0,
+  "parameters": 8938363792,
+  "parameters_human": "8.94B",
+  "storage_bytes": 17876828154,
+  "storage_human": "17.9 GB",
+  "base_model": "ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "En cliquant sur Continuer pour vous inscrire ou vous identifier, vous acceptez les Conditions d’utilisation, la Politique de …"
+    },
+    {
+      "title": "NCP_ArchPreview_dolma3_8.9B_Stage2_v2 - Hugging Face",
+      "url": "https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "S’identifier sur LinkedIn | LinkedIn",
+      "url": "https://www.linkedin.com/login/fr",
+      "snippet": "Identifiez-vous sur LinkedIn pour garder le contact avec les personnes que vous connaissez, partager des idées et développer votre …"
+    },
+    {
+      "title": "NCP_ArchPreview - a ArchSpace-Collection Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ArchSpace-Collection/ncp-archpreview",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "url": "https://www.linkedin.com/login/",
+      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
+    }
+  ]
+}

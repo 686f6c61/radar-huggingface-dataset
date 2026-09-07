@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/Nanbeige4.2-3B-DSpark-GGUF",
+  "slug": "anbeeld-nanbeige4-2-3b-dspark-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/Nanbeige4.2-3B-DSpark-GGUF",
+  "created_at": "2026-09-07T01:39:42.000Z",
+  "updated_at": "2026-09-07T01:53:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safetensors",
+    "qwen3",
+    "llm",
+    "nanbeige",
+    "text-generation",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2607.22083",
+    "base_model:Nanbeige/Nanbeige4.2-3B-Base",
+    "base_model:finetune:Nanbeige/Nanbeige4.2-3B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "base_model:Nanbeige/Nanbeige4.2-3B-DSpark",
+    "base_model:quantized:Nanbeige/Nanbeige4.2-3B-DSpark",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 847946241,
+  "parameters_human": "847.9M",
+  "storage_bytes": 5119170304,
+  "storage_human": "5.1 GB",
+  "base_model": "Nanbeige/Nanbeige4.2-3B-DSpark",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Anbeeld/Nanbeige4.2-3B-DSpark-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Anbeeld/Nanbeige4.2-3B-DSpark-GGUF",
+      "snippet": "Instructions to use Anbeeld/Nanbeige4.2-3B-DSpark-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Nanbeige/Nanbeige4.2-3B-DSpark · Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B-DSpark",
+      "snippet": "Nanbeige4.2-3B is a compact agentic model built on Nanbeige4.2-3B-Base, designed to combine strong agentic behavior with broad reasoning and alignment capabilities."
+    },
+    {
+      "title": "Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Model",
+      "url": "https://arxiv.org/html/2607.22083v1",
+      "snippet": "Abstract We present Nanbeige4.2-3B, a compact general agentic model with 3B non-embedding parameters. It delivers strong performance across code-agent, office-agent, and complex tool-use tasks while maintaining highly competitive reasoning capabilities in mathematics, coding, and science."
+    },
+    {
+      "title": "Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Model",
+      "url": "https://arxiv.org/abs/2607.22083",
+      "snippet": "We present Nanbeige4.2-3B, a compact general agentic model with 3B non-embedding parameters. It delivers strong performance across code-agent, office-agent, and complex tool-use tasks while maintaining highly competitive reasoning capabilities in mathematics, coding, and science. Nanbeige4.2-3B is pretrained from scratch on 28T tokens with a Looped Transformer that reuses the layer stack to ..."
+    }
+  ]
+}

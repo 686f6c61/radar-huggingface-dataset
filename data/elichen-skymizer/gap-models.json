@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "elichen-skymizer/GAP-models",
+  "slug": "elichen-skymizer-gap-models",
+  "author": "elichen-skymizer",
+  "url": "https://huggingface.co/elichen-skymizer/GAP-models",
+  "created_at": "2026-09-07T02:07:48.000Z",
+  "updated_at": "2026-09-07T02:15:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "multimodal",
+    "quantization",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 12296,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 1760141414324,
+  "storage_human": "1760.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Linguee | Polsko-angielski słownik (wraz z innymi językami)",
+      "url": "https://www.linguee.pl/",
+      "snippet": "Angielski słownik i wyszukiwanie w setkach milionów tłumaczeń na całym świecie. Języki: angielski, polski, niemiecki, francuski, …"
+    },
+    {
+      "title": "elichen-skymizer/GAP-models · Hugging Face",
+      "url": "https://huggingface.co/elichen-skymizer/GAP-models",
+      "snippet": "Instructions to use elichen-skymizer/GAP-models with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "wiosło - Tłumaczenie na angielski – słownik Linguee",
+      "url": "https://www.linguee.pl/polski-angielski/t%C5%82umaczenie/wios%C5%82o.html",
+      "snippet": "Wiele przetłumaczonych zdań z \"wiosło\" – słownik angielsko-polski i wyszukiwarka milionów angielskich tłumaczeń."
+    },
+    {
+      "title": "GAP - a elichen-skymizer Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/elichen-skymizer/gap",
+      "snippet": "elichen-skymizer 's Collections GAP useful-service GAP updated about 6 hours ago Generation-Aligned Paired Fidelity Evaluation for GGUF-Quantized VLMs Upvote - Sort: Collection"
+    },
+    {
+      "title": "file - Tłumaczenie na polski – słownik Linguee",
+      "url": "https://www.linguee.pl/angielski-polski/t%C5%82umaczenie/file.html",
+      "snippet": "Wiele przetłumaczonych zdań z \"file\" – słownik polsko-angielski i wyszukiwarka milionów polskich tłumaczeń."
+    }
+  ]
+}

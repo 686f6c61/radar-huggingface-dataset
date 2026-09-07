@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Arangol18/franka-three-position-color-sort-act-100k",
+  "slug": "arangol18-franka-three-position-color-sort-act-100k",
+  "author": "Arangol18",
+  "url": "https://huggingface.co/Arangol18/franka-three-position-color-sort-act-100k",
+  "created_at": "2026-09-07T02:04:38.000Z",
+  "updated_at": "2026-09-07T02:05:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 51626632,
+  "parameters_human": "51.6M",
+  "storage_bytes": 413069328,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mole (unit) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mole_(unit)",
+      "snippet": "This page was last edited on 10 July 2026, at 18:33 (UTC)."
+    },
+    {
+      "title": "Arangol18 (Philipp) - Hugging Face",
+      "url": "https://huggingface.co/Arangol18/datasets",
+      "snippet": "Arangol18's datasets4 Sort: Recently updated Arangol18/relaibotix-franka-sim-color-sort-300 Viewer •Updated about 4 hours ago•600"
+    },
+    {
+      "title": "MOL – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/MOL",
+      "snippet": "Wikipedia® ist eine eingetragene Marke der Wikimedia Foundation Inc. Datenschutz"
+    },
+    {
+      "title": "Arangol18 (Philipp) - Hugging Face",
+      "url": "https://huggingface.co/Arangol18/models",
+      "snippet": "Arangol18/relaibotix-franka-sim-smolvla-color-sort-60k 0.5B•Updated about 3 hours ago"
+    },
+    {
+      "title": "Mitsui O.S.K. Lines, Ltd. - 商船三井",
+      "url": "https://www.mol.co.jp/en/",
+      "snippet": "Now is the time for us to think and act outside the box. MOL will utilize the knowledge we have gained through shipping to expand the …"
+    }
+  ]
+}

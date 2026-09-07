@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/auth_scale_continuous",
   "created_at": "2024-08-02T19:27:59.000Z",
-  "updated_at": "2026-08-30T15:07:42.000Z",
+  "updated_at": "2026-09-07T05:33:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 31,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 124646401,
   "parameters_human": "124.6M",
-  "storage_bytes": 4911779013,
-  "storage_human": "4.9 GB",
+  "storage_bytes": 5410393544,
+  "storage_human": "5.4 GB",
   "base_model": "roberta-base",
   "formats": [
     "safetensors"

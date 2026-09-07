@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820",
+  "slug": "xiangxin0923-pi05_lora_tacimg_realworld_replayed_task820",
+  "author": "xiangxin0923",
+  "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820",
+  "created_at": "2026-08-28T07:44:32.000Z",
+  "updated_at": "2026-09-07T02:41:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19046685689,
+  "storage_human": "19.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "what is the date today 和what day is it today 的区别_百度知道",
+      "url": "https://zhidao.baidu.com/question/369690073494186324.html",
+      "snippet": "Apr 26, 2015 · what is the date today和what day is it today两个句子都有询问日期的意思，区别主要是询问侧重点不同、适用场合不同 …"
+    },
+    {
+      "title": "xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_current ...",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_task820_current",
+      "snippet": "Sim-replayed Task820 (lab0903 convert). Overwrites previous weights in this repo. Serve cd/path/to/T2-VLA bash server.sh pi05_lora_tacimg_realworld_replayed_task820_current 29999"
+    },
+    {
+      "title": "英语中，问日期有那几种问法，各自又该怎么回答？？？",
+      "url": "https://zhidao.baidu.com/question/338557576.html",
+      "snippet": "英语一般有两种问日期的方式： 1.What day is (it)today? 2.What’s the date today? 例句： -What day is (it) today? -It’s Wednesday. …"
+    },
+    {
+      "title": "xiangxin0923/pi05_lora_tacimg_realworld_replayed_tabero_820 - Hugging Face",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replayed_tabero_820",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "\"What day is it today?\" vs. \"What day is today?\"",
+      "url": "https://english.stackexchange.com/questions/81357/what-day-is-it-today-vs-what-day-is-today",
+      "snippet": "Which of the following is grammatical? What date/day is it today? What date/day is today?"
+    }
+  ]
+}

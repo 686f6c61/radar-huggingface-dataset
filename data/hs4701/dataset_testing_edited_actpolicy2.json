@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hs4701/dataset_testing_edited_actpolicy2",
+  "slug": "hs4701-dataset_testing_edited_actpolicy2",
+  "author": "hs4701",
+  "url": "https://huggingface.co/hs4701/dataset_testing_edited_actpolicy2",
+  "created_at": "2026-09-07T10:44:17.000Z",
+  "updated_at": "2026-09-07T10:44:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:hs4701/dataset_testing_edited",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51680908,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206767120,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "hs4701/dataset_testing_edited · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/hs4701/dataset_testing_edited",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Here is a link to almost any textbook's free PDF version. : r/unt",
+      "url": "https://www.reddit.com/r/unt/comments/x1pfcf/here_is_a_link_to_almost_any_textbooks_free_pdf/",
+      "snippet": "3pointline Any links/pdf versions of Larsen, R. J., & Buss, D. M. (2017). Personality psychology: domains of knowledge about human …"
+    },
+    {
+      "title": "hs4701 (seah) - Hugging Face",
+      "url": "https://huggingface.co/hs4701/datasets",
+      "snippet": "hs4701's datasets1 Sort: Recently updated hs4701/dataset_testing_20260826_134451 Viewer •Updated 2 days ago•862• 30"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    }
+  ]
+}

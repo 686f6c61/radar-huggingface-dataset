@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v3",
+  "slug": "archspace-collection-ncp_archpreview_dolma3_8-9b_stage2_v3",
+  "author": "ArchSpace-Collection",
+  "url": "https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v3",
+  "created_at": "2026-08-27T13:13:58.000Z",
+  "updated_at": "2026-09-07T02:40:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ncp_olmo3",
+    "text-generation",
+    "bfloat16",
+    "causal-lm",
+    "conceptlm",
+    "custom-code",
+    "latent-space-model",
+    "ncp",
+    "olmo3",
+    "research",
+    "custom_code",
+    "base_model:ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage1",
+    "base_model:finetune:ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 275,
+  "trending_score": 0,
+  "parameters": 8938363792,
+  "parameters_human": "8.94B",
+  "storage_bytes": 17876828154,
+  "storage_human": "17.9 GB",
+  "base_model": "ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Restore Deleted Bookmarks in Google Chrome - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/techtips/recover-bookmarks-in-chrome/",
+      "snippet": "Dec 5, 2025 · Use the following updated and reliable methods to recover deleted or missing Chrome bookmarks. Start with the …"
+    },
+    {
+      "title": "NCP_ArchPreview - a ArchSpace-Collection Collection",
+      "url": "https://huggingface.co/collections/ArchSpace-Collection/ncp-archpreview",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Recover Bookmarks in Chrome: Restore Deleted Bookmarks …",
+      "url": "https://www.easeus.com/deleted-recovery/recover-deleted-lost-chrome-bookmarks-histories-favorites.html",
+      "snippet": "Jul 23, 2026 · To recover bookmarks in Chrome, you can either restore from a backup or utilize the \"Undo\" option if bookmarks were …"
+    },
+    {
+      "title": "NCP_ArchPreview_dolma3_8.9B_Stage1 - Hugging Face",
+      "url": "https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chrome Bookmarks Disappeared? How to Recover Lost Bookmarks …",
+      "url": "https://theluckystrike.github.io/guides/chrome-bookmarks-disappeared-recovery/",
+      "snippet": "Mar 18, 2026 · Chrome bookmarks disappeared after an update or crash? This step-by-step recovery guide covers Bookmarks.bak …"
+    }
+  ]
+}

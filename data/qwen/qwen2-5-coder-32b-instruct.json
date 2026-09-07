@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "slug": "qwen-qwen2-5-coder-32b-instruct",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+  "created_at": "2024-11-06T07:49:50.000Z",
+  "updated_at": "2025-01-12T02:02:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "conversational",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-32B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-32B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 2126,
+  "downloads_30d": 1647978,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 131063594210,
+  "storage_human": "131.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-32B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+      "snippet": "Instructions to use Qwen/Qwen2.5-Coder-32B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document …"
+    },
+    {
+      "title": "qwen / qwen2.5-coder-32b-instruct",
+      "url": "https://docs.api.nvidia.com/nim/reference/qwen-qwen2_5-coder-32b-instruct",
+      "snippet": "Model Overview Description: Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers. Qwen2.5-Code…"
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "This page was last edited on 31 August 2026, at 03:10 (UTC)."
+    }
+  ]
+}

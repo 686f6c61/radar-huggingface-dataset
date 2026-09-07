@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiliato/lso_back_combined_slim_abs_no_vel_GR00T17",
+  "slug": "kiliato-lso_back_combined_slim_abs_no_vel_gr00t17",
+  "author": "kiliato",
+  "url": "https://huggingface.co/kiliato/lso_back_combined_slim_abs_no_vel_GR00T17",
+  "created_at": "2026-09-07T10:32:39.000Z",
+  "updated_at": "2026-09-07T10:33:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:kiliato/lso_back_combined_slim_abs_no_vel",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576218952,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome herunterladen und installieren - Computer - Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sie können den Chrome-Webbrowser kostenlos herunterladen und installieren und damit im Internet surfen. Systemanforderungen …"
+    },
+    {
+      "title": "kiliato/lso_back_combined_slim_abs_GR00T17 · Hugging Face",
+      "url": "https://huggingface.co/kiliato/lso_back_combined_slim_abs_GR00T17",
+      "snippet": "Instructions to use kiliato/lso_back_combined_slim_abs_GR00T17 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "So laden Sie Ihre Google-Daten herunter - Google-Konto-Hilfe",
+      "url": "https://support.google.com/accounts/answer/3024190?hl=de",
+      "snippet": "Sie können Ihre Daten aus den von Ihnen verwendeten Google-Produkten exportieren und herunterladen, z. B.: E-Mails Dokumente …"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "TechNet",
+      "url": "https://social.technet.microsoft.com/Forums/windowsserver/en-US/bda508ae-09e4-4f00-98d7-7bfadad93b53/cleanup-of-unused-security-groups",
+      "snippet": ""
+    }
+  ]
+}

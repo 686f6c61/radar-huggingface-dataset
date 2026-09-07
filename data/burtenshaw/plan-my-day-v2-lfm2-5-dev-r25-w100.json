@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "burtenshaw/plan-my-day-v2-lfm2.5-dev-r25-w100",
+  "slug": "burtenshaw-plan-my-day-v2-lfm2-5-dev-r25-w100",
+  "author": "burtenshaw",
+  "url": "https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-r25-w100",
+  "created_at": "2026-09-07T10:53:41.000Z",
+  "updated_at": "2026-09-07T10:56:25.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "openenv",
+    "trl",
+    "sdpo",
+    "synthetic",
+    "continual-learning",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88915712,
+  "storage_human": "89 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wattpad: Where stories live. - Reddit",
+      "url": "https://www.reddit.com/r/Wattpad/about/",
+      "snippet": "Wattpad is a website and app for readers and writers to publish user-generated stories in different genres. r/Wattpad is meant for …"
+    },
+    {
+      "title": "burtenshaw (ben burtenshaw) - Hugging Face",
+      "url": "https://huggingface.co/burtenshaw",
+      "snippet": "Smol course has a distinctive approach to teaching post-training, so I'm posting about how it’s different to other post-training courses, including the llm course that’s already available. In short, the smol course is just more direct that any of the other course, and intended for semi-pro post trainers. - It’s a minimal set of instructions on the core parts. - It’s intended to ..."
+    },
+    {
+      "title": "What is Wattpad? : r/Wattpad - Reddit",
+      "url": "https://www.reddit.com/r/Wattpad/comments/u1nkww/what_is_wattpad/",
+      "snippet": "Apr 12, 2022 · Wattpad is a site (and app) that offers ebooks and Fanfiction written by users that also read the stuff on there. Some …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Wattpad Books to EPUB! : r/DataHoarder - Reddit",
+      "url": "https://www.reddit.com/r/DataHoarder/comments/1agtqwo/wattpad_books_to_epub/",
+      "snippet": "MembersOnline Th3OnlyWayUp ADMIN MOD Wattpad Books to EPUB! Scripts/Software Hi! I'm u/Th3OnlyWayUp. I've been wanting …"
+    }
+  ]
+}

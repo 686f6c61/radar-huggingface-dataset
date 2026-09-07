@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/CombFold",
+  "slug": "onescience-group-combfold",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/CombFold",
+  "created_at": "2026-09-07T01:42:54.000Z",
+  "updated_at": "2026-09-07T01:44:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OneScience",
+    "bioscience",
+    "protein-complex-structure-prediction",
+    "CombFold",
+    "AlphaFold-Multimer",
+    "ColabFold",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4154595108,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNCF TER Auvergne-Rhône-Alpes - Horaires, info trafic, achat de billets ...",
+      "url": "https://www.ter.sncf.com/auvergne-rhone-alpes",
+      "snippet": "Retrouvez toutes les informations du réseau TER Auvergne-Rhône-Alpes : horaires des trains, trafic en temps réel, achats de billets, …"
+    },
+    {
+      "title": "OneScience-Group/CombFold · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/CombFold",
+      "snippet": "CombFold is an open-source pipeline developed by dina-lab3D for predicting the structures of large protein complexes. Starting from the amino acid sequences of the individual chains in a complex, CombFold uses AlphaFold-Multimer to predict multiple candidate subcomplexes and then applies combinatorial assembly algorithms to construct the complete protein complex."
+    },
+    {
+      "title": "SNCF TER Grand Est - Horaires, info trafic, achat de billets et …",
+      "url": "https://www.ter.sncf.com/grand-est",
+      "snippet": "2 days ago · Retrouvez toutes les informations du réseau TER Grand Est : horaires des trains, trafic en temps réel, achats de billets, …"
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "SNCF TER Hauts-de-France - Horaires, info trafic, achat de billets et ...",
+      "url": "https://www.ter.sncf.com/hauts-de-france",
+      "snippet": "4 days ago · Retrouvez toutes les informations du réseau TER Hauts-de-France : horaires des trains, trafic en temps réel, achats de …"
+    }
+  ]
+}

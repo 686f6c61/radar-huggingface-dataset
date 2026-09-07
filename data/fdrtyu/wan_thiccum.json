@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fdrtyu/Wan_Thiccum",
+  "slug": "fdrtyu-wan_thiccum",
+  "author": "fdrtyu",
+  "url": "https://huggingface.co/fdrtyu/Wan_Thiccum",
+  "created_at": "2026-09-07T01:43:37.000Z",
+  "updated_at": "2026-09-07T01:45:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306807976,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "query- The query to perform, written in the Google Visualization API Query Language. The value for querymust either be enclosed in …"
+    },
+    {
+      "title": "Wan Thiccum - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/1952991911013453825",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "QUERY - Cправка - Редакторы Google Документов",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ru",
+      "snippet": "Google Таблицы Использование функций и формул QUERY QUERY Выполняет запросы на базе языка запросов API …"
+    },
+    {
+      "title": "SlartyG/wan-thiccum-v3 · Hugging Face",
+      "url": "https://huggingface.co/SlartyG/wan-thiccum-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "Google ชีต ใช้ฟังก์ชันและสูตร QUERY QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด …"
+    }
+  ]
+}

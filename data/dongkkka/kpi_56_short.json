@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/KPI_56_short",
+  "slug": "dongkkka-kpi_56_short",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/KPI_56_short",
+  "created_at": "2026-09-07T02:04:18.000Z",
+  "updated_at": "2026-09-07T02:05:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 25540816873,
+  "storage_human": "25.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "N+ONE DATACENTERS AFRICA • We Are Always ON !",
+      "url": "https://nplusone.africa/fr/",
+      "snippet": "N+ONE DATACENTERS offre des infrastructures résilientes et évolutives pour répondre aux exigences critiques des entreprises …"
+    },
+    {
+      "title": "Dongkkka/head_track_0408_40k · Hugging Face",
+      "url": "https://huggingface.co/Dongkkka/head_track_0408_40k",
+      "snippet": "Dongkkka / head_track_0408_40k like 0 Safetensors Gr00tN1d6 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 8 Safetensors Model size 3B params Tensor type F32 · BF16 · Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "N+ONE DATACENTERS AFRICA • We Are Always ON",
+      "url": "https://nplusone.africa/",
+      "snippet": "N+ONE DATACENTERS is a leader in hyperscale data center infrastructure and colocation across Africa, delivering resilient and …"
+    },
+    {
+      "title": "Dongkkka (Dongyun Kim) - Hugging Face",
+      "url": "https://huggingface.co/Dongkkka/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 1 day ago"
+    },
+    {
+      "title": "N+ONE Africa Data Centers, Colocation & Cloud",
+      "url": "https://www.datacenters.com/providers/n-one",
+      "snippet": "Explore N+ONE Africa carrier-neutral data centers, colocation, cloud, AI-ready infrastructure, and disaster recovery services."
+    }
+  ]
+}

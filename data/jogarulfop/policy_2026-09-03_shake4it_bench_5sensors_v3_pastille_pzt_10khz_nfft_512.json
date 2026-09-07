@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jogarulfop/policy_2026-09-03_shake4it_bench_5sensors_v3_pastille_pzt_10kHz_nfft_512",
+  "slug": "jogarulfop-policy_2026-09-03_shake4it_bench_5sensors_v3_pastille_pzt_10khz_nfft_512",
+  "author": "jogarulfop",
+  "url": "https://huggingface.co/jogarulfop/policy_2026-09-03_shake4it_bench_5sensors_v3_pastille_pzt_10kHz_nfft_512",
+  "created_at": "2026-09-07T10:45:23.000Z",
+  "updated_at": "2026-09-07T10:45:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jogarulfop/2026-09-03_shake4it_bench_5sensors_v3_pastille_pzt_10kHz_nfft_512",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206717640,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inicia sesión: Cuentas de Google",
+      "url": "https://classroom.google.com/h?hl=es",
+      "snippet": "¿No es tu ordenador? Usa una ventana de navegación privada para iniciar sesión. Más información sobre cómo usar el modo Invitado"
+    },
+    {
+      "title": "jogarulfop/policy_2026-09-03_shake4it_bench_5sensors_v3_dgf_passif ...",
+      "url": "https://huggingface.co/jogarulfop/policy_2026-09-03_shake4it_bench_5sensors_v3_dgf_passif_10kHz_nfft_512",
+      "snippet": "Instructions to use jogarulfop/policy_2026-09-03_shake4it_bench_5sensors_v3_dgf_passif_10kHz_nfft_512 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://classroom.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "jogarulfop/policy_2026-09-03_shake4it_bench_5sensors_v3_strain_gauge ...",
+      "url": "https://huggingface.co/jogarulfop/policy_2026-09-03_shake4it_bench_5sensors_v3_strain_gauge_10kHz_nfft_512",
+      "snippet": "Instructions to use jogarulfop/policy_2026-09-03_shake4it_bench_5sensors_v3_strain_gauge_10kHz_nfft_512 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Đăng nhập - Tài khoản Google",
+      "url": "https://classroom.google.com/?hl=vi",
+      "snippet": "Đây không phải máy tính của bạn? Hãy sử dụng cửa sổ duyệt web riêng tư để đăng nhập. Tìm hiểu thêm về cách sử dụng Chế độ …"
+    }
+  ]
+}

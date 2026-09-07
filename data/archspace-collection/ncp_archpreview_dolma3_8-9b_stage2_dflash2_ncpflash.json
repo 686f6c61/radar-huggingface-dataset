@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_DFlash2_NCPFlash",
+  "slug": "archspace-collection-ncp_archpreview_dolma3_8-9b_stage2_dflash2_ncpflash",
+  "author": "ArchSpace-Collection",
+  "url": "https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_DFlash2_NCPFlash",
+  "created_at": "2026-08-29T17:12:44.000Z",
+  "updated_at": "2026-09-07T02:40:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "conceptlm_dflash",
+    "feature-extraction",
+    "bfloat16",
+    "custom-code",
+    "speculative-decoding",
+    "block-parallel-decoding",
+    "drafter",
+    "dflash2",
+    "ncp",
+    "ncpflash",
+    "research",
+    "text-generation",
+    "custom_code",
+    "base_model:ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v1",
+    "base_model:finetune:ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 1105121310,
+  "parameters_human": "1.11B",
+  "storage_bytes": 4471894672,
+  "storage_human": "4.5 GB",
+  "base_model": "ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://drive.google.com/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "NCP_ArchPreview - a ArchSpace-Collection Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ArchSpace-Collection/ncp-archpreview",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google ドライブ: ログイン - Google Drive",
+      "url": "https://drive.google.com/drive/my-drive?hl=ja",
+      "snippet": "Google ドライブには、Google アカウント（個人ユーザー向け）または Google Workspace アカウント（ビジネス ユーザー向け） …"
+    },
+    {
+      "title": "NCP_ArchPreview_dolma3_8.9B_Stage2_DFlash2_NCPFlash",
+      "url": "https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_DFlash2_NCPFlash",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Drive : connexion",
+      "url": "https://drive.google.com/drive/?hl=fr",
+      "snippet": "Accédez à Google Drive avec un compte Google (à usage personnel) ou un compte Google Workspace (à usage professionnel)."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ricmatsui/remote-gesture",
+  "slug": "ricmatsui-remote-gesture",
+  "author": "ricmatsui",
+  "url": "https://huggingface.co/ricmatsui/remote-gesture",
+  "created_at": "2026-09-07T02:16:42.000Z",
+  "updated_at": "2026-09-07T07:55:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "tensorflowjs",
+    "gesture-recognition",
+    "image-classification",
+    "dataset:ricmatsui/remote-gesture",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8776332,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "ricmatsui/remote-gesture · Hugging Face",
+      "url": "https://huggingface.co/ricmatsui/remote-gesture",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use ricmatsui/remote-gesture with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Keras How to use ricmatsui/remote-gesture with Keras:"
+    },
+    {
+      "title": "GMX Login - ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Der GMX Login stellt Sie vor Fragen oder bereitet Ihnen Probleme? Hier erfahren Sie alles, was Sie zum GMX Postfach Login wissen …"
+    },
+    {
+      "title": "ricmatsui/remote-gestures · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ricmatsui/remote-gestures",
+      "snippet": "Limitations TV Gestures Single-stroke touch gestures for a television remote, captured on a phone and rasterised to 32×32 greyscale images. Ten classes: directional arrows, a circle and counter-circle for power on/off, letter shapes for app shortcuts, and caret/vee for home and back. How a sample is produced Understanding the rasterisation matters, because the images are not raw drawings and ..."
+    },
+    {
+      "title": "GMX E-Mail sichere & kostenlose E-Mail-Adresse",
+      "url": "https://www.gmx.net/mail/",
+      "snippet": "Es gibt verschiedene Möglichkeiten, wie Sie auf Ihre E-Mails zugreifen können: per direktem Login über die GMX Startseite oder …"
+    }
+  ]
+}

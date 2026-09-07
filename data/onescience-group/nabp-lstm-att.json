@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/NABP-LSTM-Att",
+  "slug": "onescience-group-nabp-lstm-att",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/NABP-LSTM-Att",
+  "created_at": "2026-09-07T01:49:53.000Z",
+  "updated_at": "2026-09-07T01:51:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OneScience",
+    "bioscience",
+    "nanobody",
+    "antigen",
+    "BiLSTM",
+    "attention",
+    "DCU",
+    "en",
+    "dataset:SAbDab-nano",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 857516897,
+  "storage_human": "858 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/ark-survival-evolved-for-microsoft-10/dd1b6812-166f-4875-846a-5c6feddcd590",
+      "snippet": ""
+    },
+    {
+      "title": "OneScience-Group/NABP-LSTM-Att · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/NABP-LSTM-Att",
+      "snippet": "NABP-LSTM-Att is a binary classification model that predicts whether a nanobody binds to an antigen using sequence information only."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/security-issue-im-moving-out-of-microsoft/b0c5dce4-4465-436a-8cdc-09daf77a70c8",
+      "snippet": ""
+    },
+    {
+      "title": "GitHub - FMoonlightS/NABP-LSTM-Att",
+      "url": "https://github.com/FMoonlightS/NABP-LSTM-Att",
+      "snippet": "This research introduces NABP-LSTM-Att, a deep learning model designed to predict nanobody-antigen binding solely from sequence information. NABP-LSTM-Att leverages bidirectional long short-term memory (biLSTM) to capture both long- and short-term dependencies within nanobody and antigen sequences, combined with a soft attention mechanism to ..."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/insert-macro-crashes-when-used-in-a-filtered-list/da53b7a2-184b-46fe-a367-698339cde5e4",
+      "snippet": ""
+    }
+  ]
+}

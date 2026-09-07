@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "elastix-ai/HyperPrune-gpt-oss-20b-4to8",
+  "slug": "elastix-ai-hyperprune-gpt-oss-20b-4to8",
+  "author": "elastix-ai",
+  "url": "https://huggingface.co/elastix-ai/HyperPrune-gpt-oss-20b-4to8",
+  "created_at": "2026-09-07T02:42:19.000Z",
+  "updated_at": "2026-09-07T02:43:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "hyperprune",
+    "pruning",
+    "sparsity",
+    "4-8-sparsity",
+    "semi-structured",
+    "conversational",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:finetune:openai/gpt-oss-20b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41858052491,
+  "storage_human": "41.9 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can’t access YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=en",
+      "snippet": "If your channel is connected to a Brand Account, click your icon in the top right of the page. You can choose the page with the …"
+    },
+    {
+      "title": "elastix-ai/HyperPrune-gpt-oss-20b-2to4 · Hugging Face",
+      "url": "https://huggingface.co/elastix-ai/HyperPrune-gpt-oss-20b-2to4",
+      "snippet": "Instructions to use elastix-ai/HyperPrune-gpt-oss-20b-2to4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "制限付きモードは、YouTube で使用できるオプション設定です。この機能は、ご自身が視聴したくない、またはデバイスを使用す …"
+    },
+    {
+      "title": "Introducing gpt-oss | OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "snippet": "We’re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware."
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶 …"
+    }
+  ]
+}

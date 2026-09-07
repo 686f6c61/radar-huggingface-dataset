@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "McG-221/Zwielicht-27B-mlx-8Bit",
+  "slug": "mcg-221-zwielicht-27b-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Zwielicht-27B-mlx-8Bit",
+  "created_at": "2026-09-07T01:41:28.000Z",
+  "updated_at": "2026-09-07T01:42:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "merge",
+    "mergekit",
+    "roleplay",
+    "character-rp",
+    "creative writing",
+    "storytelling",
+    "conversational",
+    "low-refusal",
+    "nsfw",
+    "27B",
+    "qwen3.8",
+    "thinking",
+    "mlx-my-repo",
+    "base_model:Nimbz/Zwielicht-27B",
+    "base_model:quantized:Nimbz/Zwielicht-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 26893505536,
+  "parameters_human": "26.89B",
+  "storage_bytes": 28597066068,
+  "storage_human": "28.6 GB",
+  "base_model": "Nimbz/Zwielicht-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · 要下载PotPlayer，你可以访问官方网站或者Softonic网站，选择合适的版本和语言，然后按照提示安装即可。 注意在安 …"
+    },
+    {
+      "title": "McG-221/Zwielicht-27B-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Zwielicht-27B-mlx-8Bit",
+      "snippet": "Instructions to use McG-221/Zwielicht-27B-mlx-8Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "endnote插入文献时出现 {，#}这样的乱码，怎么解？ - 知乎",
+      "url": "https://www.zhihu.com/question/44969655",
+      "snippet": "曾经出现过这样的情况，供参考： 问题描述：直接把在endnote下完成的word文档1发给老师修改 ️老师将修改过后，并将文档1整合 …"
+    },
+    {
+      "title": "McG-221/XORTRON-NXTXPRT9PRO-27B-mlx-8Bit - Hugging Face",
+      "url": "https://huggingface.co/McG-221/XORTRON-NXTXPRT9PRO-27B-mlx-8Bit",
+      "snippet": "McG-221 / XORTRON-NXTXPRT9PRO-27B-mlx-8Bit like 0 Image-Text-to-Text Transformers Safetensors MLX English qwen3_5 text-generation-inference unsloth uncensored harmful xortron heretic abliterated toxic mlx-my-repo conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "北新地駅からハービスENTまでのルートで高齢者2人に一番分かりやす …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1462853159",
+      "snippet": "May 22, 2011 · 北新地駅からハービスENTまでのルートで高齢者2人に一番分かりやすくて最短のルートを教えてください。地図上 …"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Scicom-intl/semantic-vad-eot-whisper-tiny",
+  "slug": "scicom-intl-semantic-vad-eot-whisper-tiny",
+  "author": "Scicom-intl",
+  "url": "https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-tiny",
+  "created_at": "2026-09-07T00:26:13.000Z",
+  "updated_at": "2026-09-07T05:03:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "ms",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "end-of-turn-detection",
+    "turn-detection",
+    "semantic-vad",
+    "endpointing",
+    "voice-agent",
+    "livekit",
+    "whisper",
+    "telephony",
+    "audio-classification",
+    "ms",
+    "en",
+    "base_model:openai/whisper-tiny",
+    "base_model:quantized:openai/whisper-tiny",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67013752,
+  "storage_human": "67 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Commentaires sur : Quel contrat de travail pour les seniors",
+      "url": "https://www.forumemploi-seniors.fr/quel-contrat-de-travail-pour-les-seniors/feed/",
+      "snippet": "L'emploi pour les seniors Commentaires sur : Quel contrat de travail pour les seniors ?"
+    },
+    {
+      "title": "Le Live Marseille : aller dans les plus grandes soirées discothèque ...",
+      "url": "http://www.lelive.free.fr/concertkevindayan/concertkevindayan842.html",
+      "snippet": "à partir de 19h les apéros party avec tapas et sushis. 93 prom Georges Pompidou 13008 MARSEILLE. Reservation : 04 91 22 10 37 - 06 68 98 73 ..."
+    },
+    {
+      "title": "Scicom-intl/semantic-vad-eot-whisper-base · Hugging Face",
+      "url": "https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-base",
+      "snippet": "The int8 export's scores sit a little lower than the tiny model's (recall at 0.5 is 0.87 vs 0.92 at the pause start), so 0.3 is this model's equivalent of the tiny model's 0.5; at 0.5 it is stricter — one more cut-off avoided, but 10 % of finished turns wait for max_delay. One cut-off turn in 300 separates it from the tiny model at matched fast-path share, which is within noise."
+    },
+    {
+      "title": "Forum Emploi Seniors",
+      "url": "https://www.forumemploi-seniors.fr/",
+      "snippet": "L’ambition de ce forum qui réunit l’ensemble des acteurs de l’emploi et de la formation professionnelle, s’articule autour des objectifs …"
+    },
+    {
+      "title": "Scicom-intl/semantic-vad-eot-whisper-small · Hugging Face",
+      "url": "https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-small",
+      "snippet": "Instructions to use Scicom-intl/semantic-vad-eot-whisper-small with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

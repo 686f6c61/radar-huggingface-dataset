@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "h94/IP-Adapter",
+  "slug": "h94-ip-adapter",
+  "author": "h94",
+  "url": "https://huggingface.co/h94/IP-Adapter",
+  "created_at": "2023-08-16T04:15:47.000Z",
+  "updated_at": "2024-03-27T08:33:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "en",
+    "arxiv:2308.06721",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1410,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19822506122,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poczta - Najlepsza Poczta, największe załączniki - WP",
+      "url": "https://poczta.wp.pl/",
+      "snippet": "Bezpieczna i darmowa poczta bez spamu. Duże załączniki, nielimitowana pojemność, aplikacja mobilna. Załóż konto i ciesz się …"
+    },
+    {
+      "title": "h94/IP-Adapter · Hugging Face",
+      "url": "https://huggingface.co/h94/IP-Adapter",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Odzyskaj hasło w WP Poczcie",
+      "url": "https://poczta.wp.pl/odzyskaj/",
+      "snippet": ""
+    },
+    {
+      "title": "h94/IP-Adapter-FaceID · Hugging Face",
+      "url": "https://huggingface.co/h94/IP-Adapter-FaceID",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - tencent-ailab/IP-Adapter: The image prompt adapter is designed ...",
+      "url": "https://github.com/tencent-ailab/IP-Adapter",
+      "snippet": "An IP-Adapter with only 22M parameters can achieve comparable or even better performance to a fine-tuned image prompt model. IP-Adapter can be generalized not only to other custom models fine-tuned from the same base model, but also to controllable generation using existing controllable tools."
+    }
+  ]
+}

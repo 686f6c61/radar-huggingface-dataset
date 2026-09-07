@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VasilisAsim/unispeech_sat-finetuned-IEMOCAP",
+  "slug": "vasilisasim-unispeech_sat-finetuned-iemocap",
+  "author": "VasilisAsim",
+  "url": "https://huggingface.co/VasilisAsim/unispeech_sat-finetuned-IEMOCAP",
+  "created_at": "2026-09-07T10:26:24.000Z",
+  "updated_at": "2026-09-07T10:27:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unispeech-sat",
+    "audio-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94569604,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378305424,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2dehands - Dé plek om nieuwe en tweedehands zaken te kopen en …",
+      "url": "https://www.2dehands.be/",
+      "snippet": "De grootste zoekertjessite van België. Nieuwe en tweedehands goederen en diensten, koop en verkoop je op 2dehands."
+    },
+    {
+      "title": "GitHub - microsoft/UniSpeech: UniSpeech - Large Scale Self-Supervised ...",
+      "url": "https://github.com/microsoft/UniSpeech",
+      "snippet": "Pre-trained models We strongly suggest using our UniSpeech-SAT model for speaker related tasks, since it shows very powerful performance on various speaker related benchmarks."
+    },
+    {
+      "title": "Zoekertjes voor \"tweedehands belgie\" | 2dehands",
+      "url": "https://www.2dehands.be/q/tweedehands++belgie/",
+      "snippet": "58.380 aanbiedingen in september - Koop en verkoop tweedehands belgie eenvoudig op 2dehands Lokale aanbiedingen - Voor …"
+    },
+    {
+      "title": "GitHub - microsoft/UniSpeech: UniSpeech - Large Scale Self-Supervised ...",
+      "url": "https://git.scbeta.com/microsoft/UniSpeech",
+      "snippet": "UniSpeech-SAT (ICASSP 2022 Submission): Universal Speech Representation Learning with Speaker Aware Pre-Training ILS-SSL (ICASSP 2022 Submission): Self-Supervised Learning for Speech Recognition with Intermediate Layer Supervision Model introductions, evaluation results, and model inference instructions are located in their corresponding folders."
+    },
+    {
+      "title": "2dehands.be",
+      "url": "https://tweedehands.startpagina.be/about/2dehandsbe",
+      "snippet": "Met meer dan 720.000 bezoekers per dag en meer dan 4 miljoen zoekertjes, is 2dehands.be de grootste zoekertjessite van België. …"
+    }
+  ]
+}

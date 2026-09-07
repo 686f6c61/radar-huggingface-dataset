@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "xtr3sor/GLM-5.3-CYBERSECURITY-FP8",
+  "slug": "xtr3sor-glm-5-3-cybersecurity-fp8",
+  "author": "xtr3sor",
+  "url": "https://huggingface.co/xtr3sor/GLM-5.3-CYBERSECURITY-FP8",
+  "created_at": "2026-09-07T02:12:03.000Z",
+  "updated_at": "2026-09-07T02:12:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "crack",
+    "refusal-removed",
+    "domain-specific",
+    "cybersecurity",
+    "offensive-security",
+    "red-team",
+    "pentest",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps - Computer - Google …",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Get directions in Google Maps On your computer, open Google Maps. Click Directions . Enter the starting point and destination. Click …"
+    },
+    {
+      "title": "GLM-5.3-CYBERSECURITY-FP8: Text-to-Text model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/glm-5.3-cybersecurity-fp8-dealignai",
+      "snippet": "It is a cybersecurity-focused CRACK release from dealignai, based on JANGQ-AI/GLM-5.3-FP8, an FP8 quantization of zai-org/GLM-5.3. The base has 753B total parameters, a glm_moe_dsaarchitecture, 78 layers, and text-only input and output. The model supports a 131,072-token maximum context in the documented deployment configuration."
+    },
+    {
+      "title": "Search by latitude & longitude in Google Maps - Computer - Google …",
+      "url": "https://support.google.com/maps/answer/18539?hl=en&co=GENIE.platform%3DDesktop",
+      "snippet": "Get the coordinates of a place in Google Maps On your computer, open Google Maps. On the map, right-click the place or area. A …"
+    },
+    {
+      "title": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities - z.ai",
+      "url": "https://z.ai/blog/glm-5.3",
+      "snippet": "Today we are releasing GLM-5.3. It uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench."
+    },
+    {
+      "title": "Google Maps Help",
+      "url": "https://support.google.com/maps/?hl=nl",
+      "snippet": "Het officiële Helpcentrum van Google Maps, waar je kunt leren hoe je Google Maps kunt gebruiken op je computer of mobiele …"
+    }
+  ]
+}

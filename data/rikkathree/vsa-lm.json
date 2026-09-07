@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rikkathree/vsa-lm",
+  "slug": "rikkathree-vsa-lm",
+  "author": "rikkathree",
+  "url": "https://huggingface.co/rikkathree/vsa-lm",
+  "created_at": "2026-09-06T17:09:19.000Z",
+  "updated_at": "2026-09-07T02:29:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 604225747,
+  "storage_human": "604 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Семейный городской курорт Termoland",
+      "url": "https://termoland.ru/",
+      "snippet": "Семейный городской курорт Termoland – отдых для всей семьи."
+    },
+    {
+      "title": "GitHub - Rikka3/VLLM: VSA backend linear attention Ai architecture to ...",
+      "url": "https://github.com/Rikka3/VLLM",
+      "snippet": "VSA backend linear attention Ai architecture to replace modern transformer to battle against KV-cache memory issues while maintaining an O(1) memory - Rikka3/VLLM"
+    },
+    {
+      "title": "Городской курорт Термоленд – семейный отдых в Оренбурге",
+      "url": "https://oren.termoland.ru/",
+      "snippet": "Термальный комплекс Termoland: spa, парные, сауны, бассейны. Оздоровительный семейный отдых и релакс – абонементы …"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 417 AI models across 422 benchmarks, with 232 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Семейный городской курорт Termoland",
+      "url": "https://termoland.ru/contacts/",
+      "snippet": "Семейный городской курорт Termoland Владелец абонемента (т.е. тот, кто его приобрел), при покупке получает 1 …"
+    }
+  ]
+}

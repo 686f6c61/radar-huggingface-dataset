@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "WebAIPocket/Serow-Qwen2.5-0.5B-Instruct",
+  "slug": "webaipocket-serow-qwen2-5-0-5b-instruct",
+  "author": "WebAIPocket",
+  "url": "https://huggingface.co/WebAIPocket/Serow-Qwen2.5-0.5B-Instruct",
+  "created_at": "2026-09-07T10:57:25.000Z",
+  "updated_at": "2026-09-07T11:11:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422166,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【閒聊】佩麗卡 Fortnite 堡壘之夜（更新：已獲得佩麗卡） @明日方 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=74604&snA=4814",
+      "snippet": "Aug 15, 2026 · 關閉圖片影片 設定 回覆文章卡回文 【閒聊】佩麗卡 Fortnite 堡壘之夜（更新：已獲得佩麗卡） 一樓最新 本站所刊載 …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+      "snippet": "Instructions to use Qwen/Qwen2.5-0.5B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "【討論】閃退 @Fortnite 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=22577&snA=1331",
+      "snippet": "Jul 20, 2018 · 未登入的勇者，要加入 2 樓的討論嗎？"
+    },
+    {
+      "title": "unsloth/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen2.5-0.5B-Instruct",
+      "snippet": "Instructions to use unsloth/Qwen2.5-0.5B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Fortnite - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-77986/",
+      "snippet": "Fortnite : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Fortnite est un Tower-Defense orienté sandbox. …"
+    }
+  ]
+}

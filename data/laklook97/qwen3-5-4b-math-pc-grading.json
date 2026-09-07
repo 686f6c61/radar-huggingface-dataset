@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "laklook97/qwen3.5-4b-math-pc-grading",
+  "slug": "laklook97-qwen3-5-4b-math-pc-grading",
+  "author": "laklook97",
+  "url": "https://huggingface.co/laklook97/qwen3.5-4b-math-pc-grading",
+  "created_at": "2026-09-07T10:29:22.000Z",
+  "updated_at": "2026-09-07T10:42:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817606,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UhrForum",
+      "url": "https://uhrforum.de/",
+      "snippet": "Entdecke das größte Uhrenforum Deutschlands! Tauche ein in Diskussionen, Bewertungen und Trends rund um Armbanduhren, …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Instructions to use Qwen/Qwen3.5-4B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Lufthansa Aerotimer - Uhrenbestimmung - UHRFORUM",
+      "url": "https://uhrforum.de/threads/lufthansa-aerotimer.30088/",
+      "snippet": "Aug 3, 2009 · Hallo, ich habe eine Aerotimer von meinem Vater bekommen und möchte gerne wissen woher man Informationen für …"
+    },
+    {
+      "title": "Qwen 3.5 Hardware Guide — 0.8B to 397B VRAM & GPUs",
+      "url": "https://www.compute-market.com/blog/qwen-3-5-local-hardware-guide-2026",
+      "snippet": "Qwen 3.5 rewrites the local AI playbook with native multimodal, 262K context, and hybrid MoE. Here's exactly which GPU, Mac, or mini PC you need for every model size — with VRAM math, tok/s benchmarks, and price-tiered recommendations from $250 to enterprise."
+    },
+    {
+      "title": "Mühle Terrasport Edition Lufthansa – die Alternative für ... - UHRFORUM",
+      "url": "https://uhrforum.de/threads/muhle-terrasport-edition-lufthansa-die-alternative-fur-schnappchenjager.431714/",
+      "snippet": "Nov 30, 2006 · Diskutiere Mühle Terrasport Edition Lufthansa – die Alternative für Schnäppchenjäger im Uhrenvorstellungen Forum …"
+    }
+  ]
+}

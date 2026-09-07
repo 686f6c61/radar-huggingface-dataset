@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hao21chen/bge-small-zh-v1.5",
+  "slug": "hao21chen-bge-small-zh-v1-5",
+  "author": "hao21chen",
+  "url": "https://huggingface.co/hao21chen/bge-small-zh-v1.5",
+  "created_at": "2026-09-07T01:34:43.000Z",
+  "updated_at": "2026-09-07T01:34:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "bert",
+    "zh",
+    "arxiv:2310.07554",
+    "arxiv:2309.07597",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 23954432,
+  "parameters_human": "24.0M",
+  "storage_bytes": 191670281,
+  "storage_human": "192 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Temperatuur monitoring, kalibratie, validatie & mapping | Re5al",
+      "url": "https://re5al.nl/",
+      "snippet": "Re5al is specialist in temperatuurregistratiesystemen. Daarnaast kunt u bij ons terecht voor kalibraties, validaties en het uitvoeren …"
+    },
+    {
+      "title": "BAAI/bge-small-zh-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-zh-v1.5",
+      "snippet": "Suggest to use bge v1.5, which alleviates the issue of the similarity distribution. Since we finetune the models by contrastive learning with a temperature of 0.01, the similarity distribution of the current BGE model is about in the interval [0.6, 1]. So a similarity score greater than 0.5 does not indicate that the two sentences are similar."
+    },
+    {
+      "title": "Over Ons - Re5al specialist is temperatuurbewaking",
+      "url": "https://re5al.nl/over-ons/",
+      "snippet": "Re5al is specialist in temperatuurregistratiesystemen. Daarnaast kunt u bij ons terecht voor kalibraties, validaties en het uitvoeren …"
+    },
+    {
+      "title": "GitHub - jamesqin-cn/bge-small-zh-v1.5: 基于 bge-small-zh-v1.5 模型构建的支持 ...",
+      "url": "https://github.com/jamesqin-cn/bge-small-zh-v1.5",
+      "snippet": "基于 HuggingFace 模型 BAAI/bge-small-zh-v1.5构建的高性能中文文本向量化服务。 项目采用本地模型加载方式，支持 OpenAI 兼容 API 接口，可直接集成到 RAG 系统、语义搜索和 AI 记忆等场景。"
+    },
+    {
+      "title": "EasyLog Cloud - Sign In",
+      "url": "https://re5al.wifisensorcloud.com/",
+      "snippet": "Meet temperatuur, CO2- en vochtigheidsniveaus Meld u aan bij Re5al Cloud"
+    }
+  ]
+}

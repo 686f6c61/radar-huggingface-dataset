@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wiryaimd/gemma3-1b",
+  "slug": "wiryaimd-gemma3-1b",
+  "author": "wiryaimd",
+  "url": "https://huggingface.co/wiryaimd/gemma3-1b",
+  "created_at": "2026-09-07T10:31:39.000Z",
+  "updated_at": "2026-09-07T10:32:39.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 689308662,
+  "storage_human": "689 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/xhtml/search",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Gemma 3 AI | The best AI multimodal model on a single GPU",
+      "url": "https://gemma3.ai/",
+      "snippet": "Discover Gemma 3 AI - The world's most cost-efficient open AI model with multimodal capabilities, 128k context window, and 140+ language support. Optimized for single-GPU deployment."
+    },
+    {
+      "title": "Google Search Console",
+      "url": "https://search.google.com/search-console/about",
+      "snippet": "Search Console tools and reports help you measure your site's Search traffic and performance, fix issues, and make your site shine …"
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Make Google your default search engine - Google Search Help",
+      "url": "https://support.google.com/websearch/answer/464?hl=en",
+      "snippet": "To get results from Google each time you search, you can make Google your default search engine. Set Google as your default on …"
+    }
+  ]
+}

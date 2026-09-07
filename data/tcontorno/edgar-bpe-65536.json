@@ -5,16 +5,16 @@
   "author": "tcontorno",
   "url": "https://huggingface.co/tcontorno/edgar-bpe-65536",
   "created_at": "2026-08-25T01:58:10.000Z",
-  "updated_at": "2026-08-25T01:58:10.000Z",
+  "updated_at": "2026-09-07T01:28:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": "transformers",
+  "library": "tokenizers",
   "languages": [
     "en"
   ],
   "tags": [
-    "transformers",
+    "tokenizers",
     "tokenizer",
     "bpe",
     "finance",
@@ -22,7 +22,6 @@
     "edgar",
     "en",
     "license:mit",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 1,

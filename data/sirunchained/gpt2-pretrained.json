@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sirunchained/gpt2-pretrained",
+  "slug": "sirunchained-gpt2-pretrained",
+  "author": "sirunchained",
+  "url": "https://huggingface.co/sirunchained/gpt2-pretrained",
+  "created_at": "2026-09-07T10:33:29.000Z",
+  "updated_at": "2026-09-07T10:33:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT \"DAN\" (and other \"Jailbreaks\") NOTE: As of 20230711, the DAN 12.0 prompt is working properly with Model GPT-3.5 All …"
+    },
+    {
+      "title": "GitHub - sirUnchained/gpt2: gpt2 source code · GitHub",
+      "url": "https://github.com/sirUnchained/gpt2",
+      "snippet": "gpt2 source code. Contribute to sirUnchained/gpt2 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "sirunchained/GPT2 · Hugging Face",
+      "url": "https://huggingface.co/sirunchained/GPT2",
+      "snippet": "sirunchained / GPT2 like 0 PyTorch License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Có cách khôi phục đoạn chat đã xóa trên ChatGPT không? Làm sao để lưu trữ hiệu quả các đoạn chat để dễ tìm lại? …"
+    }
+  ]
+}

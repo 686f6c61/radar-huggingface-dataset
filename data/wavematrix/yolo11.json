@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "WaveMatrix/YOLO11",
+  "slug": "wavematrix-yolo11",
+  "author": "WaveMatrix",
+  "url": "https://huggingface.co/WaveMatrix/YOLO11",
+  "created_at": "2026-09-07T01:45:33.000Z",
+  "updated_at": "2026-09-07T01:45:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "Ultralytics",
+    "YOLO11",
+    "object-detection",
+    "en",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:quantized:Ultralytics/YOLO11",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134588411,
+  "storage_human": "135 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "WaveMatrix/YOLO11 · Hugging Face",
+      "url": "https://huggingface.co/WaveMatrix/YOLO11",
+      "snippet": "Downloads last month Inference ProvidersNEW Object Detection This model isn't deployed by any Inference Provider.🙋Ask for provider support Model tree for WaveMatrix/YOLO11 Base model Ultralytics/YOLO11"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "GitHub - ultralytics/yolo11: Ultralytics YOLO11 discovery and ...",
+      "url": "https://github.com/ultralytics/yolo11",
+      "snippet": "YOLO11 models are available for detection, segmentation, classification, pose estimation, and oriented object detection. All model weights download automatically from the latest Ultralytics assets release on first use."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

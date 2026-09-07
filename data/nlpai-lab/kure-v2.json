@@ -5,7 +5,7 @@
   "author": "nlpai-lab",
   "url": "https://huggingface.co/nlpai-lab/KURE-v2",
   "created_at": "2026-08-17T06:12:55.000Z",
-  "updated_at": "2026-09-03T04:23:02.000Z",
+  "updated_at": "2026-09-07T06:35:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -34,11 +34,11 @@
     "region:us"
   ],
   "likes": 12,
-  "downloads_30d": 1547,
+  "downloads_30d": 1599,
   "trending_score": 12,
   "parameters": 148733184,
   "parameters_human": "148.7M",
-  "storage_bytes": 307648680,
+  "storage_bytes": 308242247,
   "storage_human": "308 MB",
   "base_model": "skt/A.X-Encoder-base",
   "formats": [

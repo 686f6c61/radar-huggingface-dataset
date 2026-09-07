@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/Cosmos3-Mfm-DWeWork-step3500",
+  "slug": "geonmin-kim-cosmos3-mfm-dwework-step3500",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/Cosmos3-Mfm-DWeWork-step3500",
+  "created_at": "2026-09-07T01:39:59.000Z",
+  "updated_at": "2026-09-07T01:40:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 4074345692,
+  "parameters_human": "4.07B",
+  "storage_bytes": 8158248736,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3c6fba2492296ed42797ade993a36fdd",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "geonmin-kim/Cosmos3-Mfm-DWeWork-step4000 · Hugging Face",
+      "url": "https://huggingface.co/geonmin-kim/Cosmos3-Mfm-DWeWork-step4000",
+      "snippet": "Cosmos3-Mfm-DWeWork-step4000 like0 Safetensors Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "Cosmos 3 — Cosmos Lab - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
+      "snippet": "Cosmos 3 connects understanding, generation, simulation, and action through a shared omnimodal world model that moves fluidly across text, images, video, audio, and actions."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

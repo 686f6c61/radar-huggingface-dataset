@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/Qwen3.8-2.4T-A95B-DSpark-GGUF",
+  "slug": "anbeeld-qwen3-8-2-4t-a95b-dspark-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/Qwen3.8-2.4T-A95B-DSpark-GGUF",
+  "created_at": "2026-09-07T02:14:57.000Z",
+  "updated_at": "2026-09-07T08:02:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "speculative-decoding",
+    "dspark",
+    "dflash",
+    "specforge",
+    "sglang",
+    "text-generation",
+    "custom_code",
+    "text-generation-inference",
+    "region:us",
+    "base_model:RadixArk/Qwen3.8-2.4T-A95B-DSpark",
+    "base_model:quantized:RadixArk/Qwen3.8-2.4T-A95B-DSpark",
+    "endpoints_compatible",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3298141697,
+  "parameters_human": "3.30B",
+  "storage_bytes": 19871846784,
+  "storage_human": "19.9 GB",
+  "base_model": "RadixArk/Qwen3.8-2.4T-A95B-DSpark",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "Feb 8, 2010 · 一个方框内有个勾（&#9745;）怎么打出这符号&#9745;这个符号可以用word的特殊字符打出来。以Word2016版为例， …"
+    },
+    {
+      "title": "Qwen3.8-2.4T-A95B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-2.4t-a95b",
+      "snippet": "Qwen3.8-2.4T-A95B is the open-source release of Qwen's latest flagship, launched August 2026. Its sparse MoE architecture holds 2.4T total parameters with ~95B activated per step, paired with hybrid attention and a 1M token context window."
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "Aug 14, 2013 · 梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法 …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-2.4T-A95B - How to Spark",
+      "url": "https://howtospark.com/models/Qwen/Qwen3.8-2.4T-A95B",
+      "snippet": "Spark fit analysis for Qwen/Qwen3.8-2.4T-A95B: memory footprint, quantization options, and optimization recommendations for DGX Spark."
+    },
+    {
+      "title": "这种「 」半个方括号怎么打？_百度知道",
+      "url": "https://zhidao.baidu.com/question/523487080.html",
+      "snippet": "Feb 7, 2013 · 这种「 」半个方括号怎么打？用搜狗输入法打「、」的方法如下：1、把鼠标光标放在搜狗输入法状态栏里面的任意位 …"
+    }
+  ]
+}

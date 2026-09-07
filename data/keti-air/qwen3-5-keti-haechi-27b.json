@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "KETI-AIR/Qwen3.5-KETI-HAECHI-27B",
+  "slug": "keti-air-qwen3-5-keti-haechi-27b",
+  "author": "KETI-AIR",
+  "url": "https://huggingface.co/KETI-AIR/Qwen3.5-KETI-HAECHI-27B",
+  "created_at": "2026-09-04T06:19:25.000Z",
+  "updated_at": "2026-09-07T02:27:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "multimodal",
+    "vision-language",
+    "korean",
+    "cultural-heritage",
+    "ocr",
+    "tool-use",
+    "long-horizon",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54737736844,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep Van - 知乎",
+      "url": "https://www.zhihu.com/people/yang-lei-96-72",
+      "snippet": "Aug 17, 2026 · Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获 …"
+    },
+    {
+      "title": "KETI-AIR/Qwen3.5-KETI-HAECHI-27B · Hugging Face",
+      "url": "https://huggingface.co/KETI-AIR/Qwen3.5-KETI-HAECHI-27B",
+      "snippet": "Instructions to use KETI-AIR/Qwen3.5-KETI-HAECHI-27B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "如何修改AI的画板颜色？ - 知乎",
+      "url": "https://www.zhihu.com/question/39040429",
+      "snippet": "ok，画板调成自己想要的灰底，开始下一步的绘制吧。"
+    },
+    {
+      "title": "Qwen3.5-KETI-HAECHI-27B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/KETI-AIR/Qwen3.5-KETI-HAECHI-27B",
+      "snippet": "Run Qwen3.5-KETI-HAECHI-27B with FriendliAI inference. Qwen3.5-KETI-HAECHI-27B is a multimodal model derived from Qwen/Qwen3.5-27B. It was developed for two…"
+    },
+    {
+      "title": "翻译工具推荐-Deepl - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1153766-1-1.html",
+      "snippet": "Apr 16, 2020 · DeepL是一款来自德国的在线翻译工具，早在2017年就已经上线。 外观较同类更为好看，反应速度也算OK！ 鼠标点击 …"
+    }
+  ]
+}

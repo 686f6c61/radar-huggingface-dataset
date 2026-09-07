@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "McG-221/Split-31B-mlx-8Bit",
+  "slug": "mcg-221-split-31b-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Split-31B-mlx-8Bit",
+  "created_at": "2026-09-07T01:48:05.000Z",
+  "updated_at": "2026-09-07T01:48:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "merge",
+    "mergekit",
+    "roleplay",
+    "character-rp",
+    "creative writing",
+    "storytelling",
+    "conversational",
+    "low-refusal",
+    "nsfw",
+    "31B",
+    "gemma-4",
+    "mlx-my-repo",
+    "base_model:Nimbz/Split-31B",
+    "base_model:merge:Nimbz/Split-31B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 30697345280,
+  "parameters_human": "30.70B",
+  "storage_bytes": 32649561334,
+  "storage_human": "32.6 GB",
+  "base_model": "Nimbz/Split-31B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WebUntis",
+      "url": "https://webuntis.com/",
+      "snippet": "WebUntis You need to enable JavaScript to run this app."
+    },
+    {
+      "title": "McG-221/Gemma-4-Gembrain-X-Core-31B-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Gemma-4-Gembrain-X-Core-31B-mlx-8Bit",
+      "snippet": "Instructions to use McG-221/Gemma-4-Gembrain-X-Core-31B-mlx-8Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "WebUntis",
+      "url": "https://urv-fmcs.webuntis.com/WebUntis/",
+      "snippet": "WebUntis WebUntis s'està iniciant ..."
+    },
+    {
+      "title": "Damacol/mcg-221-skyfall-31b-v4.2-mlx-8bit - GitHub",
+      "url": "https://github.com/Damacol/mcg-221-skyfall-31b-v4.2-mlx-8bit",
+      "snippet": "McG-221/Skyfall-31B-v4.2-mlx-8Bit - Private, Uncensored AI for Real Creators and Devs {MODEL} setup for researchers, devs, and writers. No babysitting, no tracking, just powerful AI on your terms."
+    },
+    {
+      "title": "WebUntis Login Seite von Staatliche FOS Haar",
+      "url": "https://fos-haar.webuntis.com/WebUntis/",
+      "snippet": "Heute 04.09.2026 Staatliche FOS Haar"
+    }
+  ]
+}

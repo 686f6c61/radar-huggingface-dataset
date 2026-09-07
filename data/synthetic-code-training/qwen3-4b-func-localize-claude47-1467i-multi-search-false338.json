@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "synthetic-code-training/qwen3-4b-func-localize-claude47-1467i-multi-search-false338",
+  "slug": "synthetic-code-training-qwen3-4b-func-localize-claude47-1467i-multi-search-false338",
+  "author": "synthetic-code-training",
+  "url": "https://huggingface.co/synthetic-code-training/qwen3-4b-func-localize-claude47-1467i-multi-search-false338",
+  "created_at": "2026-09-07T01:36:03.000Z",
+  "updated_at": "2026-09-07T01:43:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317158,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Castrol Hyspin HVI 32 - oliehandel.nl",
+      "url": "https://www.oliehandel.nl/castrol-hyspin-hvi-32-14FBAD-1",
+      "snippet": "Hyspin™ HVI is een hoogwaardige hydraulische vloeistof met een hoge viscositeitsindex en een zorgvuldig geselecteerde asloze …"
+    },
+    {
+      "title": "synthetic-code-training/qwen3-4b-func-localize-claude47-1467i-multi ...",
+      "url": "https://huggingface.co/synthetic-code-training/qwen3-4b-func-localize-claude47-1467i-multi-round-true338",
+      "snippet": "synthetic-code-training / qwen3-4b-func-localize-claude47-1467i-multi-round-true338 like 0 Follow Synthetic Code Training 10 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 4B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference ..."
+    },
+    {
+      "title": "Kroon-Oil Perlus Super HVI 32 hydraulische olie 20 L can 37927",
+      "url": "https://www.aboutdiy.nl/product/kroon-oil-perlus-super-hvi-32-hydraulische-olie-20-l-can-37927/a21501567",
+      "snippet": "Perlus Super HVI 32 is een zeer hoogwaardige Multigrade 'Extreme Pressure' Hydraulische Olie, gebaseerd op speciaal …"
+    },
+    {
+      "title": "synthetic-code-training/qwen3-4b-func-localize-claude47-1467i · Hugging ...",
+      "url": "https://huggingface.co/synthetic-code-training/qwen3-4b-func-localize-claude47-1467i",
+      "snippet": "synthetic-code-training / qwen3-4b-func-localize-claude47-1467i like 0 Follow Synthetic Code Training 10 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 11 Safetensors Model size 4B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Castrol Hyspin HVI 32 | OlieOnline.nl",
+      "url": "https://www.olieonline.nl/castrol-hyspin-hvi-32",
+      "snippet": "Hyspin HVI 32 oliën zijn bedoeld voor zwaar belaste hydraulische systemen die een hoge mate van antislijtageprestaties en fijne …"
+    }
+  ]
+}

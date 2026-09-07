@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/P2PXML",
+  "slug": "onescience-group-p2pxml",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/P2PXML",
+  "created_at": "2026-09-07T02:42:26.000Z",
+  "updated_at": "2026-09-07T02:53:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OneScience",
+    "bioscience",
+    "antibody-antigen-binding-affinity",
+    "graph-neural-network",
+    "P2PXML",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3113961387,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download - eduVPN",
+      "url": "https://www.eduvpn.org/client-apps/",
+      "snippet": "In this case, eduVPN has similar functionalities as a typical VPN concentrator box. The service can also be used to connect different …"
+    },
+    {
+      "title": "P2PXML - GitHub Pages",
+      "url": "https://drug-discovery-entc.github.io/p2pxml/",
+      "snippet": "Subsequently, we propose a novel deep geometric neural network comprising a structure-based model, which is to account atomistic-scale structural features, and a sequence-based model, which is to attribute sequential and evolutionary information, while sharing the learned information from each model through cross-attention blocks."
+    },
+    {
+      "title": "Index - eduVPN",
+      "url": "https://www.eduvpn.org/",
+      "snippet": "6 months ago Ca’ Foscari University of Venice has adopted eduVPN for its remote-access... eduVPN case study: University of Turku …"
+    },
+    {
+      "title": "GitHub - Drug-Discovery-ENTC/p2pxml: P2PXML: Deep Geometric Framework ...",
+      "url": "https://github.com/Drug-Discovery-ENTC/p2pxml",
+      "snippet": "P2PXML: Deep Geometric Framework to Predict Antibody-Antigen Binding Affinity (Journal of Structural Biology) - Drug-Discovery-ENTC/p2pxml"
+    },
+    {
+      "title": "eduVPN - Anmelden",
+      "url": "https://rad.eduvpn.lrz.de/vpn-user-portal/",
+      "snippet": "Bitte melde dich mit Benutzername und Passwort an. Benutzername Passwort Anmelden"
+    }
+  ]
+}

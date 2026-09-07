@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mamailglobal/Allegra",
+  "slug": "mamailglobal-allegra",
+  "author": "mamailglobal",
+  "url": "https://huggingface.co/mamailglobal/Allegra",
+  "created_at": "2026-09-07T10:27:15.000Z",
+  "updated_at": "2026-09-07T10:51:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71769785,
+  "storage_human": "72 MB",
+  "base_model": "unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有什么推荐的局域网（无外网）远程桌面软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/447253187",
+      "snippet": "向日葵和TeamViewer需要登录ID才能使用，当只有局域网（没有互联网）的时候无法使用。飞秋可以查看对方桌…"
+    },
+    {
+      "title": "Allegra - 2025-02-21 04:32:42 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/832561234298704032",
+      "snippet": "Download Allegra - free LORA FLUX.1 AI model on TENSOR. By user_799406762540381460"
+    },
+    {
+      "title": "AnyDesk使用教程-百度经验",
+      "url": "https://jingyan.baidu.com/article/36d6ed1f6409881bcf4883cf.html",
+      "snippet": "Aug 13, 2016 · AnyDesk使用教程,有时候我们工作生活中可能会用到远程控制手段，通常情况下有使用widow自带的远程控制程序，但 …"
+    },
+    {
+      "title": "McCann Worldgroup @ Cannes | Our People, Work and Agenda",
+      "url": "https://mwcannes.com/work/drowsy-prompts/",
+      "snippet": "Allegra needed to reinforce its non-drowsy claim in a way that felt modern, trustworthy, and shareable. We found the answer in an unexpected source: generative AI."
+    },
+    {
+      "title": "anydesk怎么设置中文-百度经验",
+      "url": "https://jingyan.baidu.com/article/e8cdb32b07af2a37042bad63.html",
+      "snippet": "Jul 14, 2018 · anydesk怎么设置中文,aydek怎么设置中文?其实很简单，下面由我带给大家aydek怎么设置中文的方法教程。"
+    }
+  ]
+}

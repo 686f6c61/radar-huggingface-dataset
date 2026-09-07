@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "niobures/MOSS-Audio-Tokenizer-ONNX",
+  "slug": "niobures-moss-audio-tokenizer-onnx",
+  "author": "niobures",
+  "url": "https://huggingface.co/niobures/MOSS-Audio-Tokenizer-ONNX",
+  "created_at": "2026-09-07T01:34:38.000Z",
+  "updated_at": "2026-09-07T01:41:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "audio-tokenizer",
+    "neural-codec",
+    "moss-tts-family",
+    "MOSS Audio Tokenizer",
+    "speech-tokenizer",
+    "tensorrt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14218233931,
+  "storage_human": "14.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Community Center - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Community-Center/ct-p/community-center",
+      "snippet": "I can’t believe it has already been almost two years since I started hosting on Airbnb.One of the biggest challenges for me is that I …"
+    },
+    {
+      "title": "niobures/MOSS-Audio-Tokenizer-ONNX · Hugging Face",
+      "url": "https://huggingface.co/niobures/MOSS-Audio-Tokenizer-ONNX",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use niobures/MOSS-Audio-Tokenizer-ONNX with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries TensorRT How to use niobures/MOSS-Audio-Tokenizer-ONNX with TensorRT:"
+    },
+    {
+      "title": "Solucionado: CIF Airbnb España - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Gestiona-tu-negocio/CIF-Airbnb-Espa%C3%B1a/m-p/2104403",
+      "snippet": "May 16, 2025 · Buenos días, me están haciendo la declaración de la renta y me piden el CIF de Airbnb para rellenarla, ya que el que …"
+    },
+    {
+      "title": "niobures/MOSS-Audio-Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/niobures/MOSS-Audio-Tokenizer",
+      "snippet": "Instructions to use niobures/MOSS-Audio-Tokenizer with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Airbnb 怎么读？ - 知乎",
+      "url": "https://www.zhihu.com/question/34684619",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

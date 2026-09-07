@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Scicom-intl/semantic-vad-eot-whisper-base",
+  "slug": "scicom-intl-semantic-vad-eot-whisper-base",
+  "author": "Scicom-intl",
+  "url": "https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-base",
+  "created_at": "2026-09-07T00:26:25.000Z",
+  "updated_at": "2026-09-07T05:03:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "ms",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "end-of-turn-detection",
+    "turn-detection",
+    "semantic-vad",
+    "endpointing",
+    "voice-agent",
+    "livekit",
+    "whisper",
+    "telephony",
+    "audio-classification",
+    "ms",
+    "en",
+    "base_model:openai/whisper-base",
+    "base_model:quantized:openai/whisper-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154693606,
+  "storage_human": "155 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inschool,intheschool,atschoolの違いを教えてくださ... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14135068689",
+      "snippet": "Sep 3, 2014 · Inschool,intheschool,atschoolの違いを教えてください！ inschool学生時代に、学校で行なわれるintheschool学校（の …"
+    },
+    {
+      "title": "Scicom-intl/semantic-vad-eot-whisper-base · Hugging Face",
+      "url": "https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-base",
+      "snippet": "Instructions to use Scicom-intl/semantic-vad-eot-whisper-base with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "0120467430の電話番号からかかってきた人いますか？これって.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13330738853",
+      "snippet": "Aug 21, 2026 · 0120467430の電話番号からかかってきた人いますか？これって電話に出た時点でアウトのやつですか？？ auの回線 …"
+    },
+    {
+      "title": "Scicom-intl/semantic-vad-eot · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Scicom-intl/semantic-vad-eot/viewer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけで出てしまったんですがワンクリック詐欺でしょうか...？？こ …"
+    }
+  ]
+}

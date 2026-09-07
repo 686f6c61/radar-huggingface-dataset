@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sli3/qwen2.5-7b-instruct-q6-k-gguf",
+  "slug": "sli3-qwen2-5-7b-instruct-q6-k-gguf",
+  "author": "sli3",
+  "url": "https://huggingface.co/sli3/qwen2.5-7b-instruct-q6-k-gguf",
+  "created_at": "2026-09-07T01:55:02.000Z",
+  "updated_at": "2026-09-07T02:14:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "q6_k",
+    "llama.cpp",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 6254199296,
+  "storage_human": "6.3 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "على جهاز الكمبيوتر، انتقِل إلى Gmail. أدخِل عنوان البريد الإلكتروني لحسابك على Google أو رقم الهاتف وكلمة المرور. إذا سبق أن عبأت المعلومات وقرّرت تسجيل الدخول إلى حساب مختلف، انقر على …"
+    },
+    {
+      "title": "sli3/qwen2.5-7b-instruct-q6-k-gguf · Hugging Face",
+      "url": "https://huggingface.co/sli3/qwen2.5-7b-instruct-q6-k-gguf",
+      "snippet": "Instructions to use sli3/qwen2.5-7b-instruct-q6-k-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "كيفية استرداد حسابك على Google أو Gmail - مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=ar",
+      "snippet": "إذا نسيت كلمة مرورك أو اسم المستخدم أو لم تتمكن من الحصول على رموز التحقُّق، اتَّبع هذه الخطوات لاسترداد حسابك على Google. بهذه الطريقة، ستستعيد إمكانية استخدام Gmail و\"صور …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - Android - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DAndroid",
+      "snippet": "على هاتفك أو جهازك اللوحي الذي يعمل بنظام التشغيل Android، افتَح تطبيق Gmail . في أعلى يسار الشاشة، انقر على \"الملف الشخصي\" في شريط البحث. انقر على إضافة حساب آخر Google. لإضافة …"
+    }
+  ]
+}

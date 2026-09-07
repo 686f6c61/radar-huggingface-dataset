@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "shashikantkaushik/transormer_anomoly_detection",
+  "slug": "shashikantkaushik-transormer_anomoly_detection",
+  "author": "shashikantkaushik",
+  "url": "https://huggingface.co/shashikantkaushik/transormer_anomoly_detection",
+  "created_at": "2026-09-07T10:57:25.000Z",
+  "updated_at": "2026-09-07T11:16:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tabular-classification",
+    "transformer-health",
+    "fault-detection",
+    "predictive-maintenance",
+    "random-forest",
+    "xgboost",
+    "logistic-regression",
+    "scikit-learn",
+    "time-series",
+    "industrial-iot",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImmoScout24 – Mit über 6,5 Mio. Immobilien.",
+      "url": "https://www.immobilienscout24.de/?msockid=0346ec580a316ea33f36fb950bd96ff0",
+      "snippet": "Anbieten. Suchen. Finden. Die gr&ouml;&szlig;te Auswahl an Wohnungen, H&auml;usern und Gewerbefl&auml;chen findest du nur …"
+    },
+    {
+      "title": "Evaluating large transformer models for anomaly detection of resource ...",
+      "url": "https://www.nature.com/articles/s41598-025-21826-5",
+      "snippet": "The BERT-base-uncased model is a pre-trained transformer model designed for natural language understanding tasks, which we fine-tune for IoT attack detection in IoT environments."
+    },
+    {
+      "title": "Haus kaufen: Häuser & Hauskauf bei ImmoScout24",
+      "url": "https://www.immobilienscout24.de/wohnen/haus-kaufen.html?msockid=0346ec580a316ea33f36fb950bd96ff0",
+      "snippet": "Häuser kaufen bei ImmoScout24: Finden Sie Immobilienangebote für Häuser zum Kauf und profitieren Sie von einer großen …"
+    },
+    {
+      "title": "Transformer-Based Multi-Object Detection Model for Smart Communities ...",
+      "url": "https://dl.acm.org/doi/full/10.1145/3801438.3801704",
+      "snippet": "With the rapid development of smart communities, effective real-time monitoring of uncivilized behaviors and emergencies, such as objects thrown from high-rise buildings, pet feces, and illegal electric vehicle parking, has become crucial for enhancing safety and management efficiency. This paper proposes a Transformer-based multi-target detection model integrating the YOLO algorithm ..."
+    },
+    {
+      "title": "Wohnung mieten: Mietwohnungen bei ImmoScout24",
+      "url": "https://www.immobilienscout24.de/wohnen/mietwohnungen.html?msockid=0346ec580a316ea33f36fb950bd96ff0",
+      "snippet": "Eine große Auswahl an Wohnungen zur Miete finden Sie bei ImmoScout24, dem großen Wohnungsmarkt für Mietwohnungen. Hier …"
+    }
+  ]
+}

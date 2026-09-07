@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step484-fsdp-ckpt",
+  "slug": "mskm3266-dapo-qwen3-8b-b64-clip0-28-step484-fsdp-ckpt",
+  "author": "mskm3266",
+  "url": "https://huggingface.co/mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step484-fsdp-ckpt",
+  "created_at": "2026-09-07T10:28:18.000Z",
+  "updated_at": "2026-09-07T10:39:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "verl",
+    "dapo",
+    "checkpoint",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98301899149,
+  "storage_human": "98.3 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.nl/",
+      "snippet": "Deze kosteloze service van Google kan woorden, zinnen en webpagina's onmiddellijk vertalen tussen het Nederlands en meer dan …"
+    },
+    {
+      "title": "mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step363 · Hugging Face",
+      "url": "https://huggingface.co/mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step363",
+      "snippet": "Instructions to use mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step363 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.nl/details",
+      "snippet": "Google Translate biedt gratis tekstvertaling aan tussen meer dan 100 talen."
+    },
+    {
+      "title": "DAPO-Qwen3-8B-b64-clip0.28-step363-fsdp-ckpt - Hugging Face",
+      "url": "https://huggingface.co/mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step363-fsdp-ckpt",
+      "snippet": "mskm3266 / DAPO-Qwen3-8B-b64-clip0.28-step363-fsdp-ckpt like 0 verl dapo checkpoint License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new DAPO-Qwen3-8B-b64-clip0.28-step363-fsdp-ckpt 내용물 제약 Resume 방법 Training config"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.nl/_/TranslateWebserverUi/bscframe",
+      "snippet": "Gebruik Google Translate om direct woorden, zinnen en webpagina's te vertalen tussen meer dan 100 talen."
+    }
+  ]
+}
