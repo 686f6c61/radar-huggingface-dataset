@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "fwizzer1/Fwizzer-R1-3B-ZH-v2",
+  "slug": "fwizzer1-fwizzer-r1-3b-zh-v2",
+  "author": "fwizzer1",
+  "url": "https://huggingface.co/fwizzer1/Fwizzer-R1-3B-ZH-v2",
+  "created_at": "2026-09-06T16:59:18.000Z",
+  "updated_at": "2026-09-07T02:32:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "mistral3",
+    "image-text-to-text",
+    "base_model:adapter:unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1994720830,
+  "storage_human": "2.0 GB",
+  "base_model": "unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "fwizzer1/Fwizzer-R1-3B-v2 · Hugging Face",
+      "url": "https://huggingface.co/fwizzer1/Fwizzer-R1-3B-v2",
+      "snippet": "Instructions to use fwizzer1/Fwizzer-R1-3B-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "fwizzer1 (fwizzerr) - Hugging Face",
+      "url": "https://huggingface.co/fwizzer1/models",
+      "snippet": "fwizzer1's models1 Sort: Recently updated fwizzer1/Fwizzer-R1-3B-RU Text Generation • 3B•Updated about 8 hours ago"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

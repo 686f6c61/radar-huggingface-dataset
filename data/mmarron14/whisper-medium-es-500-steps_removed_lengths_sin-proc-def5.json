@@ -5,7 +5,7 @@
   "author": "mmarron14",
   "url": "https://huggingface.co/mmarron14/whisper-medium-es-500-steps_removed_lengths_sin-proc-def5",
   "created_at": "2026-09-05T06:57:41.000Z",
-  "updated_at": "2026-09-05T17:04:55.000Z",
+  "updated_at": "2026-09-06T18:38:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

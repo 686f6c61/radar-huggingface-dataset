@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "occurra/siglip2-large-patch16-384",
+  "slug": "occurra-siglip2-large-patch16-384",
+  "author": "occurra",
+  "url": "https://huggingface.co/occurra/siglip2-large-patch16-384",
+  "created_at": "2026-05-24T14:34:41.000Z",
+  "updated_at": "2026-09-06T22:03:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "siglip",
+    "siglip2",
+    "image-text",
+    "zero-shot-image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4828601096,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jutarnji list - Najnovije vijesti iz Hrvatske i svijeta",
+      "url": "https://www.jutarnji.hr/",
+      "snippet": "Jutarnji list – vodeći hrvatski dnevni portal s najnovijim vijestima iz politike, sporta, kulture i ekonomije. Pratite ekskluzivne reportaže i …"
+    },
+    {
+      "title": "occurra/siglip2-large-patch16-384 · Hugging Face",
+      "url": "https://huggingface.co/occurra/siglip2-large-patch16-384",
+      "snippet": "siglip2-large-patch16-384 (ONNX) ONNX export of google/siglip2-large-patch16-384 — the image and text towers as two separate ONNX files, sharing a tokenizer."
+    },
+    {
+      "title": "Jutarnji list - Svijet",
+      "url": "https://www.jutarnji.hr/vijesti/svijet",
+      "snippet": "Jutarnji list - Vijesti uživo, istraživanja i analize, originalne perspektive iz Hrvatske i svijeta."
+    },
+    {
+      "title": "google/siglip2-large-patch16-384 · Hugging Face",
+      "url": "https://huggingface.co/google/siglip2-large-patch16-384",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jutarnji list prilozi",
+      "url": "https://online.jutarnji.hr/type/13",
+      "snippet": "Aug 1, 2026 · Prilozi Jutarnjeg lista donose raznovrsne teme i sadržaje za čitatelje."
+    }
+  ]
+}

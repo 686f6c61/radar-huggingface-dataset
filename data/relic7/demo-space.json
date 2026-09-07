@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "relic7/demo-space",
+  "slug": "relic7-demo-space",
+  "author": "relic7",
+  "url": "https://huggingface.co/relic7/demo-space",
+  "created_at": "2026-09-06T20:52:28.000Z",
+  "updated_at": "2026-09-06T20:52:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "15个回答 默认排序 知乎用户 我是PIZZA脑残粉。 一般吃一整个PIZZA是不过瘾的~ 5555 以下讨论仅限意式PIZZA~ 一般意大利 …"
+    },
+    {
+      "title": "Relic - Exploring Intelligence",
+      "url": "https://www.reliclabs.ai/",
+      "snippet": "Help expand the frontier of intelligence. Download the Relic Contributor Platform and turn your sessions into data for open AI, starting with computer use. Earn points for every session, and help expand the frontier of what open models can do."
+    },
+    {
+      "title": "乌兹别克斯坦是一个怎么样的国家？ - 知乎",
+      "url": "https://www.zhihu.com/question/60608232",
+      "snippet": "8 布哈拉是世界上保存完好的少数几个中世纪伊斯兰城市之一，有大量土砖建筑和清真寺。 撒马尔罕则是一个现代城市，有少数古代建 …"
+    },
+    {
+      "title": "relic7 · GitHub",
+      "url": "https://github.com/relic7",
+      "snippet": "Enterprise platformAI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced SecurityEnterprise-grade security features Copilot for BusinessEnterprise-grade AI features Premium SupportEnterprise-grade 24/7 support Pricing Search or jump to..."
+    },
+    {
+      "title": "话题广场 - 知乎",
+      "url": "https://www.zhihu.com/topics",
+      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
+    }
+  ]
+}

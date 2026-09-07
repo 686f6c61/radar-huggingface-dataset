@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Renegade-888/smolvla_sorting_pens_batteries",
+  "slug": "renegade-888-smolvla_sorting_pens_batteries",
+  "author": "Renegade-888",
+  "url": "https://huggingface.co/Renegade-888/smolvla_sorting_pens_batteries",
+  "created_at": "2026-09-06T22:23:27.000Z",
+  "updated_at": "2026-09-06T22:24:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Renegade-888/so101-sorting-pens-batteries",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197796784,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeep® Renegade e-Hybrid | SUV Compact Hybride| Jeep® FR",
+      "url": "https://www.jeep.fr/jeep-renegade/e-hybrid",
+      "snippet": "Découvrez le Jeep® Renegade e-Hybrid. Le SUV compact alliant design audacieux, technologie hybride avancée et confort …"
+    },
+    {
+      "title": "Renegade-888/smolvla_eraser_ring_50 · Hugging Face",
+      "url": "https://huggingface.co/Renegade-888/smolvla_eraser_ring_50",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "Jeep Renegade : essais, fiabilité, avis, photos, prix - Caradisiac",
+      "url": "https://www.caradisiac.com/modele--jeep-renegade/",
+      "snippet": "Décryptage du modèle Jeep Renegade par la rédaction Caradisiac: Essais, avis de propriétaires, comparatifs, fiabilité sur le modèle …"
+    },
+    {
+      "title": "lerobot/smolvla_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/smolvla_base",
+      "snippet": "SmolVLA is a compact, efficient Vision-Language-Action (VLA) model designed for affordable robotics, trainable on a single GPU and deployable on consumer hardware, while matching the performance of much larger VLAs through community-driven data."
+    },
+    {
+      "title": "Jeep® Renegade - Plaisir sur quatre roues.",
+      "url": "https://www.jeep.com/gp/renegade.html?msockid=083fac7d83aa653725e8bbb0820864f2",
+      "snippet": "Le Jeep® Renegade est excitant. Obtenez les tarifs et explorez les fonctionnalités extérieures robustes et la capacité tout-terrain."
+    }
+  ]
+}

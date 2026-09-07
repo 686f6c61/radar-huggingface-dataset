@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "G999n/whisper-large-v3-turbo-odia-lora",
+  "slug": "g999n-whisper-large-v3-turbo-odia-lora",
+  "author": "G999n",
+  "url": "https://huggingface.co/G999n/whisper-large-v3-turbo-odia-lora",
+  "created_at": "2026-09-06T20:11:32.000Z",
+  "updated_at": "2026-09-06T20:18:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "or"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "whisper-large-v3-turbo",
+    "audio",
+    "automatic-speech-recognition",
+    "lora",
+    "odia",
+    "indicvoices",
+    "or",
+    "dataset:ai4bharat/IndicVoices",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:adapter:openai/whisper-large-v3-turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104903248,
+  "storage_human": "105 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canal : nouvelle pratique limite frauduleuse ? - Racontez-vous : Bons ...",
+      "url": "https://forum.quechoisir.org/canal-nouvelle-pratique-limite-frauduleuse-t130776.html",
+      "snippet": "Dec 19, 2017 · Canal Plus n'est-il pas tenu de m'envoyer un courrier plutôt qu'un mail pour me permettre de signaler mon opposition …"
+    },
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "Whisper large-v3-turbo is a finetuned version of a pruned Whisper large-v3. In other words, it's the exact same model, except that the number of decoding layers have reduced from 32 to 4."
+    },
+    {
+      "title": "Quels motifs légitimes pour résilier Canal Plus",
+      "url": "https://forum.quechoisir.org/quels-motifs-legitimes-pour-resilier-canal-plus-t35159.html",
+      "snippet": "Jun 12, 2013 · Quels motifs légitimes pour résilier Canal Plus ? Messagepar FPPMDLO » lun. févr. 09, 2015 2:30 pm Bonjour à tous, …"
+    },
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "Instructions to use openai/whisper-large-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "decodeur et tele commande - Avec Réponse (s) - CANAL+ Assistance",
+      "url": "https://assistance.canalplus.com/questions/2478631-decodeur-tele-commande",
+      "snippet": "decodeur tres lent pour passer d une chain a l 'autre telecommande ne fonctionne pas je ne peut pas commander une directement je …"
+    }
+  ]
+}

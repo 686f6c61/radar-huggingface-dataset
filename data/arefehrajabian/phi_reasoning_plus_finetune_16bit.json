@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arefehRajabian/phi_reasoning_plus_finetune_16bit",
+  "slug": "arefehrajabian-phi_reasoning_plus_finetune_16bit",
+  "author": "arefehRajabian",
+  "url": "https://huggingface.co/arefehRajabian/phi_reasoning_plus_finetune_16bit",
+  "created_at": "2026-09-06T21:15:13.000Z",
+  "updated_at": "2026-09-06T21:15:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Phi-4-reasoning-plus-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Phi-4-reasoning-plus-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Phi-4-reasoning-plus-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sydney Sweeney - Reddit",
+      "url": "https://www.reddit.com/r/SydneySweeney/rising/",
+      "snippet": "r/SydneySweeney: Sub dedicated to actress Sydney Sweeney No recent reposts. No reposts from the top 100 of all time. If you are …"
+    },
+    {
+      "title": "arefehRajabian/phi_finetune_16bit · Hugging Face",
+      "url": "https://huggingface.co/arefehRajabian/phi_finetune_16bit",
+      "snippet": "arefehRajabian / phi_finetune_16bit like 0 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Sydney Sweeney from Euphoria S02E04 : r/WatchItForThePlot - Reddit",
+      "url": "https://www.reddit.com/r/WatchItForThePlot/comments/sgqvhv/sydney_sweeney_from_euphoria_s02e04/",
+      "snippet": "ADMIN MOD Sydney Sweeney from Euphoria S02E04 Share Add a Comment Sort by:"
+    },
+    {
+      "title": "Phi-Reasoning: Once again redefining what is possible with small and ...",
+      "url": "https://www.microsoft.com/en-us/research/articles/phi-reasoning-once-again-redefining-what-is-possible-with-small-and-efficient-ai/",
+      "snippet": "Phi-4-reasoning is a 14-billion parameter model specialized in complex reasoning tasks. It is trained using supervised finetuning (SFT) on diverse prompts and reasoning demonstrations from o3-mini. The model generates detailed reasoning chains and leverages inference-time compute effectively. Phi-4-reasoning-plus, an enhanced version with reinforcement learning (RL), delivers even higher ..."
+    },
+    {
+      "title": "什么是夏令时和冬令时？哪些国家实行了？分别在什么时候？ - 知乎",
+      "url": "https://www.zhihu.com/question/20153078",
+      "snippet": "夏令时，也叫夏时制，夏时令（Daylight Saving Time：DST）又称为“日光节约时制”，在这一制度实行期间所采用的统一时间称为“夏 …"
+    }
+  ]
+}

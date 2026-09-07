@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SaFD-00/qwen2.5-vl-3b-ac-exp08-base-lr-1e-04-stage2-lora-epoch1",
+  "slug": "safd-00-qwen2-5-vl-3b-ac-exp08-base-lr-1e-04-stage2-lora-epoch1",
+  "author": "SaFD-00",
+  "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-base-lr-1e-04-stage2-lora-epoch1",
+  "created_at": "2026-09-06T23:24:54.000Z",
+  "updated_at": "2026-09-06T23:26:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "llama-factory",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520759840,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full ...",
+      "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch2",
+      "snippet": "Instructions to use SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Start home page daily quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1bwl8ci/start_home_page_daily_quiz/",
+      "snippet": "r/MicrosoftRewards We are not associated with Microsoft and are a community driven group to help maximize earning points. …"
+    },
+    {
+      "title": "qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch1",
+      "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch1",
+      "snippet": "Instructions to use SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Bing Homepage Quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r9ag3r/bing_homepage_quiz/",
+      "snippet": "Dec 5, 2021 · MembersOnline local_bellboy ADMIN MOD Bing Homepage Quiz Quiz and Answers Quiz for December 5, 2021 …"
+    }
+  ]
+}

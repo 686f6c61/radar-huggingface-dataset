@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int8-gs64-sym",
+  "slug": "fbaldassarri-tiiuae_falcon3-3b-instruct-auto_round-int8-gs64-sym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int8-gs64-sym",
+  "created_at": "2026-09-06T20:45:25.000Z",
+  "updated_at": "2026-09-06T20:54:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "autoround",
+    "auto-round",
+    "pytorch",
+    "causal-lm",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "falcon",
+    "falcon3",
+    "tii",
+    "8-bit",
+    "conversational",
+    "en",
+    "base_model:tiiuae/Falcon3-3B-Instruct",
+    "base_model:quantized:tiiuae/Falcon3-3B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1458306048,
+  "parameters_human": "1.46B",
+  "storage_bytes": 5757586856,
+  "storage_human": "5.8 GB",
+  "base_model": "tiiuae/Falcon3-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Listado precios revisiones Kia en España - Club Foro KIA",
+      "url": "https://www.kiafaq.com/threads/listado-precios-revisiones-kia-en-espana.2046/",
+      "snippet": "Apr 22, 2009 · Infórmate de los precios de las revisiones en los talleres de Kia España y añade la tuya para informar a los demás …"
+    },
+    {
+      "title": "tiiuae_Falcon3-3B-Instruct-auto_gptq-int4-gs64-sym",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_gptq-int4-gs64-sym",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Club Foro KIA",
+      "url": "https://www.kiafaq.com/",
+      "snippet": "May 9, 2026 · Comunidad KIA. Opiniones, pruebas, precios, fallos, problemas, consumos, revisiones, concesionarios, talleres."
+    },
+    {
+      "title": "tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-sym - Hugging Face",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-sym",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Forum Kia Niro - Forum Auto",
+      "url": "https://forum-auto.caradisiac.com/forum/914-niro/",
+      "snippet": "Forum Marques Automobile - Kia Niro : retrouvez les informations, les débats, les réponses, les tutoriaux des passionnés de Forum …"
+    }
+  ]
+}

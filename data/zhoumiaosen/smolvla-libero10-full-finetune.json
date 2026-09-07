@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "zhoumiaosen/smolvla-libero10-full-finetune",
+  "slug": "zhoumiaosen-smolvla-libero10-full-finetune",
+  "author": "zhoumiaosen",
+  "url": "https://huggingface.co/zhoumiaosen/smolvla-libero10-full-finetune",
+  "created_at": "2026-09-06T23:04:04.000Z",
+  "updated_at": "2026-09-06T23:12:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "smolvla",
+    "libero",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720188,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有什么好的ed2k下载器？ - 知乎",
+      "url": "https://www.zhihu.com/question/63863543",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "zhoumiaosen/groot-n1p5-lora-libero10-full-finetune · Hugging Face",
+      "url": "https://huggingface.co/zhoumiaosen/groot-n1p5-lora-libero10-full-finetune",
+      "snippet": "Instructions to use zhoumiaosen/groot-n1p5-lora-libero10-full-finetune with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/407091585",
+      "snippet": "major revision，一方面因为没有直接被拒而高兴，另一方面也意味着不小的工作量以及可能到头来一场空的结…"
+    },
+    {
+      "title": "lerobot/docs/source/smolvla.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx",
+      "snippet": "SmolVLA is Hugging Face’s lightweight foundation model for robotics. Designed for easy fine-tuning on LeRobot datasets, it helps accelerate your development! Figure 1. SmolVLA takes as input (i) multiple cameras views, (ii) the robot’s current sensorimotor state, and (iii) a natural language instruction, encoded into contextual features used to condition the action expert when generating ..."
+    },
+    {
+      "title": "美团的酒店住宿下不了单 老是显示网络出问题美团也 ...",
+      "url": "https://www.zhihu.com/question/455843745",
+      "snippet": "今天我也遇到这个情况了，大过节要订房还订不到，打美团客服电话回复说是系统判定的，终身无法解封，建议换个手机号登陆，我的 …"
+    }
+  ]
+}

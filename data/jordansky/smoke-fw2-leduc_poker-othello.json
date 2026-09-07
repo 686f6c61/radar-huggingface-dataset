@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Jordansky/smoke-fw2-leduc_poker-othello",
+  "slug": "jordansky-smoke-fw2-leduc_poker-othello",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/smoke-fw2-leduc_poker-othello",
+  "created_at": "2026-09-06T23:34:19.000Z",
+  "updated_at": "2026-09-06T23:34:28.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3",
+    "meta",
+    "facebook",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Llama-3.2-3B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-07T02:46:01.029Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "16 Popular Voice Effects on TikTok to Go Viral — Trending Us",
+      "url": "https://www.trendingus.com/popular-voice-effects-on-tiktok/",
+      "snippet": "Feb 3, 2026 · If you are in search of the popular voice effects on TikTok, this is article you need. Here are trending and the best audio …"
+    },
+    {
+      "title": "Jordansky/leducpoker-second-smoketest · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/leducpoker-second-smoketest",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Master Voice Effects On TikTok — Artlist Blog",
+      "url": "https://artlist.io/blog/tiktok-voice-effects/",
+      "snippet": "Aug 30, 2023 · Are you wondering how to do voice effects on TikTok? Read our step-by-step guide, along with top tips for a viral video"
+    },
+    {
+      "title": "Jordansky/leduc_poker_test · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/leduc_poker_test",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Find 'Funny Voice Effects' on TikTok | TikTok Search",
+      "url": "https://www.tiktok.com/search?q=Funny+Voice+Effects",
+      "snippet": "Watch 'Funny Voice Effects' videos on TikTok customized just for you. There's something for everyone. Download the app to discover …"
+    }
+  ]
+}

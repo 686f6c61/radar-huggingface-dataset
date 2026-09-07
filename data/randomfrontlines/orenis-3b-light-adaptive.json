@@ -5,7 +5,7 @@
   "author": "RandomFrontlines",
   "url": "https://huggingface.co/RandomFrontlines/Orenis-3B-Light-Adaptive",
   "created_at": "2026-09-05T19:07:22.000Z",
-  "updated_at": "2026-09-05T19:07:47.000Z",
+  "updated_at": "2026-09-06T06:34:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 5,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",

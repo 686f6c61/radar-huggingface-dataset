@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ichsanlook/sparks",
+  "slug": "ichsanlook-sparks",
+  "author": "ichsanlook",
+  "url": "https://huggingface.co/ichsanlook/sparks",
+  "created_at": "2026-09-06T23:23:33.000Z",
+  "updated_at": "2026-09-06T23:42:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 11392583272,
+  "storage_human": "11.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "登录zoom显示错误代码：1044，请问该如何解决? - 知乎",
+      "url": "https://www.zhihu.com/question/481108836",
+      "snippet": "登录失败，请重试。（错误代码：1044） 最近大家使用 Zoom 的时候一定都遇上了1044这个错误代码。大家可能都不了解这到底是怎 …"
+    },
+    {
+      "title": "ichsanlook/QC · Hugging Face",
+      "url": "https://huggingface.co/ichsanlook/QC",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zoom使用屏幕共享时，如果我的PPT是演讲者模式，那对方看到的共享 …",
+      "url": "https://www.zhihu.com/question/378111886",
+      "snippet": "zoom使用屏幕共享时，如果我的PPT是演讲者模式，那对方看到的共享屏幕是全部还是只有放映的PPT? 需要和HR视频面试，要求使 …"
+    },
+    {
+      "title": "GitHub - lamm-mit/Sparks: Multi-modal, multi-agent AI system capable of ...",
+      "url": "https://github.com/lamm-mit/Sparks/",
+      "snippet": "Figure 1. Overview of Sparks, a multi-agent AI model for automated scientific discovery. Panel a: Contemporary AI systems excel at statistical generalization within known domains, but rarely generate or validate hypotheses that extend beyond prior data, and cannot typically identify shared principles across distinct phenomena."
+    },
+    {
+      "title": "Getting a Zoom URL from a meeting ID and passcode",
+      "url": "https://devforum.zoom.us/t/getting-a-zoom-url-from-a-meeting-id-and-passcode/74696",
+      "snippet": "Aug 23, 2022 · As a student, I’ve been given a meeting ID and passcode to be used recurrently. I would like to create a URL to …"
+    }
+  ]
+}

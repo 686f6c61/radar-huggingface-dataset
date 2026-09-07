@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "toddkrabach/Kokoro-82M-CoreML",
+  "slug": "toddkrabach-kokoro-82m-coreml",
+  "author": "toddkrabach",
+  "url": "https://huggingface.co/toddkrabach/Kokoro-82M-CoreML",
+  "created_at": "2026-09-06T23:04:28.000Z",
+  "updated_at": "2026-09-07T00:30:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "text-to-speech",
+    "tts",
+    "kokoro",
+    "apple-silicon",
+    "on-device",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:finetune:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 331468207,
+  "storage_human": "331 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ORF ON",
+      "url": "https://on.orf.at/",
+      "snippet": "Entdecken Sie Filme, Serien, Dokus, Sport und Nachrichten und viele weitere Videos aus dem ORF-Fernsehen."
+    },
+    {
+      "title": "hexgrad/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "snippet": "Kokorois an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient. With Apache-licensed weights, Kokoro can be deployed anywhere from production environments to personal projects."
+    },
+    {
+      "title": "ORF ON",
+      "url": "https://enterprise.orf.at/main/werben-im-orf/digital/orf-on",
+      "snippet": "Auf ORF ON können viele Sendungen ein halbes Jahr lang on demand abgerufen werden, Dokumentationen und Kinderprogramme …"
+    },
+    {
+      "title": "GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/hexgrad/kokoro",
+      "snippet": "[Kokoro](/kˈOkəɹO/) is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "‎ORF ON‑App – App Store",
+      "url": "https://apps.apple.com/at/app/orf-on/id452214869",
+      "snippet": "ORF ON ist die Streamingplattform Österreichs: Wann immer Ihnen danach ist, können Sie eine Fülle von Filmen, Serien, Comedy …"
+    }
+  ]
+}

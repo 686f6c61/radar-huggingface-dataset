@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "reallexi/lexipix-support-q",
+  "slug": "reallexi-lexipix-support-q",
+  "author": "reallexi",
+  "url": "https://huggingface.co/reallexi/lexipix-support-q",
+  "created_at": "2026-09-06T23:22:11.000Z",
+  "updated_at": "2026-09-06T23:41:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4084937039,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "steam正版网站是什么?steam官网网址是多少 - 智推网"
+    },
+    {
+      "title": "Local AI Model Builder, Plugins & Roadmap | Reallexi",
+      "url": "https://llm.reallexi.io/",
+      "snippet": "Build AI models locally with phased recovery and artifact proof, compare delivery paths, explore the roadmap, and support Reallexi through verified channels."
+    },
+    {
+      "title": "如何评价PUBG MOBILE游戏？ - 知乎",
+      "url": "https://www.zhihu.com/question/269872975",
+      "snippet": "三天40个小时，说实话为了这一个框框耽误了这三天学习还是有些羞愧。 打到皇冠二时候kd还是8点多，打到战神就已经5了。 关于亚 …"
+    },
+    {
+      "title": "AI Model Builder Premium Tools | Reallexi",
+      "url": "https://llm-shop.reallexi.io/",
+      "snippet": "Ship compact models, automate Hugging Face operations, and support open model tooling."
+    },
+    {
+      "title": "pubg电脑版怎么下载 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fcb5aff71faaf9edaa4a7106.html",
+      "snippet": "Mar 12, 2019 · 我们首先打开百度并在搜索栏中输入关键字“PUBG Mobile 电脑版”进行搜索，如图所示；"
+    }
+  ]
+}

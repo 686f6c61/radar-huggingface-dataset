@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tanmaygodse/qwen3-vl-8b-gguf",
+  "slug": "tanmaygodse-qwen3-vl-8b-gguf",
+  "author": "tanmaygodse",
+  "url": "https://huggingface.co/tanmaygodse/qwen3-vl-8b-gguf",
+  "created_at": "2026-09-06T22:58:01.000Z",
+  "updated_at": "2026-09-06T23:01:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_vl",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 23740968192,
+  "storage_human": "23.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "De Telegraaf: Direct het laatste nieuws uit Nederland en buitenland ...",
+      "url": "https://www.telegraaf.nl/",
+      "snippet": "Lees, kijk en luister direct voor het laatste nieuws uit binnen- en buitenland. En ook voor sport, financieel, VROUW, entertainment, …"
+    },
+    {
+      "title": "Qwen/Qwen3-VL-8B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Onthullend, spraakmakend en direct wat je nu moet weten | De Telegraaf",
+      "url": "https://www.telegraaf.nl/nieuws/",
+      "snippet": "Sep 6, 2022 · Direct het laatste nieuws; onthullingen en spraakmakende reportages. Lees op Telegraaf.nl wat er speelt, waarom het …"
+    },
+    {
+      "title": "NexaAI/Qwen3-VL-8B-Thinking-GGUF · Hugging Face",
+      "url": "https://huggingface.co/NexaAI/Qwen3-VL-8B-Thinking-GGUF",
+      "snippet": "Model Description Qwen3-VL-8B-Thinking is an 8-billion-parameter multimodal large language model from Alibaba Cloud’s Qwen team. As part of the Qwen3-VL (Vision-Language) family, it is designed for deep multimodal reasoning — combining visual understanding, long-context comprehension, and structured chain-of-thought generation across text, images, and videos. The Thinking variant focuses ..."
+    },
+    {
+      "title": "De Telegraaf",
+      "url": "https://epaper.telegraaf.nl/?v=0.0.10",
+      "snippet": "Lees de digitale versie van De Telegraaf online via deze website."
+    }
+  ]
+}

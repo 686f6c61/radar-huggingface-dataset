@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_gptq-int8-gs64-sym",
+  "slug": "fbaldassarri-sapienzanlp_minerva-3b-base-v1-0-auto_gptq-int8-gs64-sym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_gptq-int8-gs64-sym",
+  "created_at": "2026-09-06T20:25:53.000Z",
+  "updated_at": "2026-09-06T20:34:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "gptq",
+    "auto-gptq",
+    "autogptq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "minerva",
+    "italian",
+    "8-bit",
+    "it",
+    "en",
+    "base_model:sapienzanlp/Minerva-3B-base-v1.0",
+    "base_model:quantized:sapienzanlp/Minerva-3B-base-v1.0",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 903539200,
+  "parameters_human": "903.5M",
+  "storage_bytes": 3529861743,
+  "storage_human": "3.5 GB",
+  "base_model": "sapienzanlp/Minerva-3B-base-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Espace pro - Site du CHU de Poitiers",
+      "url": "https://www.chu-poitiers.fr/espace-pro/",
+      "snippet": "Aide à l'orientation personnalisée dans le domaine de la santé Fédération Hospitalière de France Agence Régionale de Santé …"
+    },
+    {
+      "title": "sapienzanlp_Minerva-3B-base-v1.0-auto_gptq-int4-gs64-asym",
+      "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_gptq-int4-gs64-asym",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Professional access - Site du CHU de Poitiers",
+      "url": "https://www.chu-poitiers.fr/en/professional-access/",
+      "snippet": "Réservé aux professionnels de santé La plateforme téléphonique “Recours CHU 86” Le numéro unique d’accès direct des …"
+    },
+    {
+      "title": "fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-autogptq-int4-gs128-asym ...",
+      "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-autogptq-int4-gs128-asym",
+      "snippet": "Italian English mistral pretrained causal-lm minerva autoround intel-autoround woq gptq autogptq auto-gptq intel 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Use this model Model Information Replication Recipe Step 1 Install Requirements Step 2 Build Intel AutoRound wheel from sources Step 3 Script for ..."
+    },
+    {
+      "title": "Accueil sécurisé - Site du CHU de Poitiers",
+      "url": "https://2.chu-poitiers.fr/068e001c-8a03-4e10-a13e-94fa205446ec.aspx",
+      "snippet": "Accueil sécurisé. CONNEXION InterCHU. Utilisateur : Mot de passe : Mot de passe oublié ? Modifier mot de passe."
+    }
+  ]
+}

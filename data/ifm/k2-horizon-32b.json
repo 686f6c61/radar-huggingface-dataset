@@ -31,13 +31,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 20,
+  "likes": 22,
   "downloads_30d": 598,
-  "trending_score": 20,
+  "trending_score": 21,
   "parameters": 34779304960,
   "parameters_human": "34.78B",
-  "storage_bytes": 2217779131107,
-  "storage_human": "2217.8 GB",
+  "storage_bytes": 2424441894867,
+  "storage_human": "2424.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

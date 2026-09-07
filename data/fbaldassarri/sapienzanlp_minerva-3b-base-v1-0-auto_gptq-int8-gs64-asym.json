@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_gptq-int8-gs64-asym",
+  "slug": "fbaldassarri-sapienzanlp_minerva-3b-base-v1-0-auto_gptq-int8-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_gptq-int8-gs64-asym",
+  "created_at": "2026-09-06T20:16:34.000Z",
+  "updated_at": "2026-09-06T20:25:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "gptq",
+    "auto-gptq",
+    "autogptq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "minerva",
+    "italian",
+    "8-bit",
+    "it",
+    "en",
+    "base_model:sapienzanlp/Minerva-3B-base-v1.0",
+    "base_model:quantized:sapienzanlp/Minerva-3B-base-v1.0",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 903539200,
+  "parameters_human": "903.5M",
+  "storage_bytes": 3529861743,
+  "storage_human": "3.5 GB",
+  "base_model": "sapienzanlp/Minerva-3B-base-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_round-int4-gs64-asym ...",
+      "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_round-int4-gs64-asym/discussions",
+      "snippet": "fbaldassarri / sapienzanlp_Minerva-3B-base-v1.0-auto_round-int4-gs64-asym like 0 Text Generation Transformers Safetensors PyTorch Italian English mistral autoround auto-round causal-lm intel-autoround intel woq weights-only-quantization minerva italian 4-bit precision text-generation-inference License:apache-2.0 Model card FilesFiles and ..."
+    },
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/?pgvflag=1",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "sapienzanlp_Minerva-3B-base-v1.0-auto_gptq-int4-gs64-asym",
+      "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_gptq-int4-gs64-asym",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "Login to your Roblox account or sign up to create a new account."
+    }
+  ]
+}

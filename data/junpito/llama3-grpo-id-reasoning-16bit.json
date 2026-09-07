@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Junpito/llama3-grpo-id-reasoning-16bit",
+  "slug": "junpito-llama3-grpo-id-reasoning-16bit",
+  "author": "Junpito",
+  "url": "https://huggingface.co/Junpito/llama3-grpo-id-reasoning-16bit",
+  "created_at": "2026-09-06T10:20:05.000Z",
+  "updated_at": "2026-09-06T21:36:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Junpito/llama3-finetuned-id-16bit",
+    "base_model:finetune:Junpito/llama3-finetuned-id-16bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 12885478115,
+  "storage_human": "12.9 GB",
+  "base_model": "Junpito/llama3-finetuned-id-16bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/u/0/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Junpito/llama3-finetuned-id-16bit · Hugging Face",
+      "url": "https://huggingface.co/Junpito/llama3-finetuned-id-16bit",
+      "snippet": "Instructions to use Junpito/llama3-finetuned-id-16bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "lordChipotle/Llama3GRPOReasoning · Hugging Face",
+      "url": "https://huggingface.co/lordChipotle/Llama3GRPOReasoning",
+      "snippet": "Model Description This model is a fine-tuned version of meta-llama/Meta-Llama-3.1-8B-Instruct trained using Group Relative Policy Optimization (GRPO) to enable autonomous mathematical reasoning capabilities. Unlike traditional supervised fine-tuning approaches, this model learned to reason through reinforcement learning without requiring pre-labeled reasoning examples or teacher model ..."
+    },
+    {
+      "title": "TheLlama3HerdofModels The - arXiv.org",
+      "url": "https://arxiv.org/pdf/2407.21783",
+      "snippet": "Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an extensive ..."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3's open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    }
+  ]
+}

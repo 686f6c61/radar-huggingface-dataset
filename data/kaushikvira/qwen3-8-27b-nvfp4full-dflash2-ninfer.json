@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kaushikvira/Qwen3.8-27B-nvfp4full-dflash2-NInfer",
+  "slug": "kaushikvira-qwen3-8-27b-nvfp4full-dflash2-ninfer",
+  "author": "kaushikvira",
+  "url": "https://huggingface.co/kaushikvira/Qwen3.8-27B-nvfp4full-dflash2-NInfer",
+  "created_at": "2026-09-06T21:20:40.000Z",
+  "updated_at": "2026-09-06T21:44:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "nvfp4",
+    "w4a4",
+    "blackwell",
+    "multimodal",
+    "conversational",
+    "cuda",
+    "rtx-5090",
+    "dflash2",
+    "speculative-decoding",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20550864896,
+  "storage_human": "20.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B-NVFP4",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Videoland: Series, films en programma's streamen",
+      "url": "https://www.videoland.com/nl/",
+      "snippet": "Videoland heeft met duizenden films en series uit binnen- en buitenland het grootste en meest gevarieerde online aanbod van …"
+    },
+    {
+      "title": "gpillon/Qwen3.8-27B-nvfp4full-dflash2-NInfer · Hugging Face",
+      "url": "https://huggingface.co/gpillon/Qwen3.8-27B-nvfp4full-dflash2-NInfer",
+      "snippet": "Instructions to use gpillon/Qwen3.8-27B-nvfp4full-dflash2-NInfer with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Videoland",
+      "url": "https://www.videoland.com/inloggen",
+      "snippet": "Inloggen Heb je nog geen account? Meld je aan Created with Sketch. © 2026 Videoland Contact Privacy-instellingen Bedrijfsgegevens"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Home (NL) | Videoland",
+      "url": "https://v2.videoland.com/home-nl-p_2265",
+      "snippet": "Kung Fu Panda: Secrets Of The Furious Five Kids | Actie | Animatie Ga naar programma Videoland useful links. Videoland Actiecode …"
+    }
+  ]
+}

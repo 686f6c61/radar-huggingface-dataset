@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_20M_s2_2026-09-06_20-16-38_888531-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_hfbody_adamwppt_20m_s2_2026-09-06_20-16-38_888531-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_20M_s2_2026-09-06_20-16-38_888531-pt",
+  "created_at": "2026-09-06T20:19:15.000Z",
+  "updated_at": "2026-09-06T20:19:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162779,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "France | History, Maps, Flag, Population, Cities, Capital, & Facts ...",
+      "url": "https://www.britannica.com/place/France",
+      "snippet": "2 days ago · France is one of the world's oldest nations, formed by uniting duchies and principalities under one ruler in the Middle …"
+    },
+    {
+      "title": "alexkstern/kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "France — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/France",
+      "snippet": "2.3.1Climat de la France métropolitaine. 2.3.2Climat de la France des Outre-Mers. 2.4Paysages et environnement. 2.5Préservation …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_20M_s2_2026-08-14_22-59-48_639587-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_20M_s2_2026-08-14_22-59-48_639587-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "France.fr : Explore France and its wonders - Explore France",
+      "url": "https://www.france.fr/en/",
+      "snippet": "In spring, France reveals one of its most beautiful sides. Outdoor cafés fill up, parks and gardens come into bloom, and the …"
+    }
+  ]
+}

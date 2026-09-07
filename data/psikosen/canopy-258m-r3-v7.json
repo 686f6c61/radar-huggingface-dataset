@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "psikosen/canopy-258m-r3-v7",
+  "slug": "psikosen-canopy-258m-r3-v7",
+  "author": "psikosen",
+  "url": "https://huggingface.co/psikosen/canopy-258m-r3-v7",
+  "created_at": "2026-09-06T23:44:25.000Z",
+  "updated_at": "2026-09-06T23:47:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "canopy",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 296304390,
+  "parameters_human": "296.3M",
+  "storage_bytes": 592641124,
+  "storage_human": "593 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【2026年最新】ジョージアでの代理出産は可能？法規制の現状 ...",
+      "url": "https://www.medi-bridges.com/blog/2026/03/4372/",
+      "snippet": "Mar 28, 2026 · 卵子提供・代理出産なら【メディブリッジ】の「 【2026年最新】ジョージアでの代理出産は可能？法規制の現状と …"
+    },
+    {
+      "title": "psikosen/canopy-258m-r3-v2 · Hugging Face",
+      "url": "https://huggingface.co/psikosen/canopy-258m-r3-v2",
+      "snippet": "Instructions to use psikosen/canopy-258m-r3-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ジョージア代理出産のすべて——出生証明書に夫婦の名前が ...",
+      "url": "https://note.com/joyinmylife/n/n3abb2ef5fd45",
+      "snippet": "Jul 12, 2026 · ジョージアの代理出産を徹底解説。 1997年から続く法制度、資格条件 (法律婚または1年以上の事実婚+医学的事由)、 …"
+    },
+    {
+      "title": "psikosen/mini-swarm-browser-258m · Hugging Face",
+      "url": "https://huggingface.co/psikosen/mini-swarm-browser-258m",
+      "snippet": "Instructions to use psikosen/mini-swarm-browser-258m with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ジョージア代理出産｜費用・条件・法制度を現地確認",
+      "url": "https://heartlinkpartners.jp/georgia-surrogacy/",
+      "snippet": "Heart Link合同会社では、日本在住の方がジョージアでの代理出産を検討する際に、現地プログラムの比較、費用の整理、凍結胚移 …"
+    }
+  ]
+}

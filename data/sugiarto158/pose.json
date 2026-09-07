@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sugiarto158/pose",
+  "slug": "sugiarto158-pose",
+  "author": "sugiarto158",
+  "url": "https://huggingface.co/sugiarto158/pose",
+  "created_at": "2026-09-06T22:50:31.000Z",
+  "updated_at": "2026-09-06T22:52:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vodafone - Speedtest Plus: Teste Deine Internet-Geschwindigkeit",
+      "url": "https://speedtest.vodafone.de/",
+      "snippet": "Mit dem kostenlosen Speedtest Plus von Vodafone ermittelst Du hier die Upload- und Download-Geschwindigkeit Deines Glasfaser-, …"
+    },
+    {
+      "title": "Pose AI – AI Pose Generator to Change or Create Poses in Photos",
+      "url": "https://aipose.io/",
+      "snippet": "Pose AI is an AI pose generator that lets you quickly create or change poses in your photos. Get background-matched pose guides, AI pose changes, and multi-angle model photos in one place."
+    },
+    {
+      "title": "Speedtest Plus: Test your internet speed - Vodafone",
+      "url": "https://speedtest.vodafone.de/en",
+      "snippet": "With the free Speedtest Plus from Vodafone, you can determine the upload and download speed of your fiber, cable or DSL connection."
+    },
+    {
+      "title": "AI Pose Generator - Free Online Change Any Poses from Photo",
+      "url": "https://visualgpt.io/ai-pose-generator",
+      "snippet": "VisualGPT's AI Pose Generator lets you change multiple poses from any photo with realistic, natural, photography-level angles. Free online tool, fast results, no sign-up."
+    },
+    {
+      "title": "Speedtest von Ookla - Der umfassende Breitband-Geschwindigkeitstest",
+      "url": "https://www.speedtest.net/de",
+      "snippet": "Nutzen Sie Speedtest mit unseren kostenlosen Desktop- und Handy-Apps auf allen Ihren Geräten."
+    }
+  ]
+}

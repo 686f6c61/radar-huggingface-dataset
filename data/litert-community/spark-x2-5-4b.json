@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "litert-community/Spark-X2.5-4B",
+  "slug": "litert-community-spark-x2-5-4b",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Spark-X2.5-4B",
+  "created_at": "2026-09-06T23:13:36.000Z",
+  "updated_at": "2026-09-07T01:28:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "spark",
+    "reasoning",
+    "text-generation",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:finetune:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6720278240,
+  "storage_human": "6.7 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motor Elétrico: Como funciona e quais são os critérios de seleção ...",
+      "url": "https://acoplatec.com.br/motor-eletrico-como-funciona/",
+      "snippet": "Jul 29, 2024 · Neste artigo, você entenderá o funcionamento básico dos motores elétricos e os principais critérios de seleção, como …"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "4 dicas para a seleção de motores elétricos",
+      "url": "https://iecmotores.com/pt/4-tips-for-electric-motor-selection/",
+      "snippet": "O princípio da seleção correta da capacidade dos motores de passo deve ser a decisão mais econômica e razoável de potência do …"
+    },
+    {
+      "title": "Spark-X2.5/README.md at main · XHToken/Spark-X2.5 · GitHub",
+      "url": "https://github.com/XHToken/Spark-X2.5/blob/main/README.md",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "Critérios de seleção - Motores Elétricos",
+      "url": "https://topten.eco.br/private/selection-criteria/criterios-motores-eletricos",
+      "snippet": "É comum que cada fornecedor tenha nomenclaturas específicas para suas diferentes linhas de motores elétricos que fazem …"
+    }
+  ]
+}

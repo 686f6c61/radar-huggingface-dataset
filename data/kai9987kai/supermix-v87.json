@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kai9987kai/supermix-v87",
+  "slug": "kai9987kai-supermix-v87",
+  "author": "Kai9987kai",
+  "url": "https://huggingface.co/Kai9987kai/supermix-v87",
+  "created_at": "2026-09-06T20:28:06.000Z",
+  "updated_at": "2026-09-06T20:28:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "physics",
+    "arithmetic",
+    "problem-solving",
+    "code-reasoning",
+    "chain-of-thought",
+    "mixture-of-experts",
+    "research",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61617410,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Become a Clickworker and earn money online",
+      "url": "https://www.clickworker.com/clickworker/",
+      "snippet": "Earn money online with microjobs. As a clickworker you set your own hours and work independently from any computer with an …"
+    },
+    {
+      "title": "GitHub - kai9987kai/Supermix: Supermix is the active monorepo for the ...",
+      "url": "https://github.com/kai9987kai/Supermix",
+      "snippet": "Supermix is the active monorepo for the current Supermix desktop app, the Omni Collective training line, specialist model experiments, benchmark tooling, and local-first packaging flow. - kai9987kai/Supermix"
+    },
+    {
+      "title": "Login - Clickworker Workplace and Self-Service Marketplace",
+      "url": "https://www.clickworker.com/login/",
+      "snippet": "Place your text, survey or sentiment analysis order quickly and easily through our self-service marketplace."
+    },
+    {
+      "title": "Kai9987kai (Kai piper) - Hugging Face",
+      "url": "https://huggingface.co/Kai9987kai",
+      "snippet": "Building supermix model series updated a model about 1 month ago"
+    },
+    {
+      "title": "Hazte clickworker y gana dinero online.",
+      "url": "https://es.clickworker.com/clickworker/",
+      "snippet": "Únete a clickworker y gana dinero con microtareas: encuestas, fotos, textos y más. Trabaja fácil desde iOS o Android, cuando quieras."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_confidence_omnimath_qwen14b",
+  "slug": "ishikaa-acquisition_student_as_confidence_omnimath_qwen14b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_omnimath_qwen14b",
+  "created_at": "2026-09-06T20:40:23.000Z",
+  "updated_at": "2026-09-06T20:43:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551555856,
+  "storage_human": "29.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_confidence_numina_qwen7b_10 - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen7b_10",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_confidence_numina_qwen7b_10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_format_omnimath_qwen14b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_format_omnimath_qwen14b",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_format_omnimath_qwen14b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Get help with Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/outlook/get-help-with-outlook-com",
+      "snippet": "For other help with your Microsoft account and subscriptions, visit Account & Billing Help. To get help and troubleshoot other …"
+    }
+  ]
+}

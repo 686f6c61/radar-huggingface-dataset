@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "itznoor998/SwinIR-4x-SuperResolution",
+  "slug": "itznoor998-swinir-4x-superresolution",
+  "author": "itznoor998",
+  "url": "https://huggingface.co/itznoor998/SwinIR-4x-SuperResolution",
+  "created_at": "2026-09-06T17:39:58.000Z",
+  "updated_at": "2026-09-06T18:09:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "SwinIR",
+    "swinir",
+    "super-resolution",
+    "image-super-resolution",
+    "computer-vision",
+    "image-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100021766,
+  "storage_human": "100 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortuna | Kurzové sázky a online casino",
+      "url": "https://www.ifortuna.cz/",
+      "snippet": "Pravidelně nabízíme i promoakces lákavými bonusy a odměnami. Sázet u Fortuny můžeš pomocí aplikace Fortuna Sport, na webu …"
+    },
+    {
+      "title": "SwinIR/SwinIR_4x.pth · LykosAI/Upscalers at main - Hugging Face",
+      "url": "https://huggingface.co/LykosAI/Upscalers/blob/main/SwinIR/SwinIR_4x.pth",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kurzové sázení online | Fortuna",
+      "url": "https://www.ifortuna.cz/sazeni?null",
+      "snippet": "Prohlášení o přístupnosti. Ochrana oznamovatelů. Loterie. Pobočky. Herní plány, povolení, pravidla. Vklady a výběry. Zapomenuté …"
+    },
+    {
+      "title": "SwinIR: Image Restoration Using Swin Transformer - GitHub",
+      "url": "https://github.com/JingyunLiang/SwinIR",
+      "snippet": "This repository is the official PyTorch implementation of SwinIR: Image Restoration Using Shifted Window Transformer (arxiv, supp, pretrained models, visual results). SwinIR achieves state-of-the-art performancein"
+    },
+    {
+      "title": "Online Casino | Výherní Automaty a Jackpoty - Fortuna Casino",
+      "url": "https://casino.ifortuna.cz/",
+      "snippet": "Exkluzivně u nás: Inspired. Pouze u nás. Kup si bonus. Ruleta a Blackjack. 81 výherních linií. Malé sázky. Sběratelské. Všechny hry."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "failed09/bashkir-roberta",
+  "slug": "failed09-bashkir-roberta",
+  "author": "failed09",
+  "url": "https://huggingface.co/failed09/bashkir-roberta",
+  "created_at": "2026-09-06T17:55:37.000Z",
+  "updated_at": "2026-09-06T18:37:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "ba"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bashkir-roberta-preln",
+    "fill-mask",
+    "bashkir",
+    "masked-language-modeling",
+    "roberta",
+    "sentencepiece",
+    "custom-code",
+    "onnxruntime",
+    "custom_code",
+    "ba",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50040320,
+  "parameters_human": "50.0M",
+  "storage_bytes": 382873689,
+  "storage_human": "383 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Romeo Support",
+      "url": "https://support.romeo.com/hc/fr/",
+      "snippet": "Questions Fréquemment Posées Romeo"
+    },
+    {
+      "title": "failed09 (Tvoy_Tezka) - Hugging Face",
+      "url": "https://huggingface.co/failed09/models",
+      "snippet": "Recent Activity liked a dataset3 days ago AigizK/bashkir-russian-parallel-corpora updated a dataset3 days ago failed09/bashkir-wikipedia-monolingual published a dataset3 days ago failed09/bashkir-wikipedia-monolingual View all activity"
+    },
+    {
+      "title": "Romeo Support",
+      "url": "https://support.romeo.com/hc/de/",
+      "snippet": "Häufig gestellte Fragen Romeo"
+    },
+    {
+      "title": "AI Model Turns 'Evil' During Test, Tries to Build 'Bioweapons' to ...",
+      "url": "https://slaynews.com/ai-model-turns-evil-test-tries-build-bioweapons-maximize-civilian-deaths/",
+      "snippet": "Artificial intelligence giant Anthropic has revealed alarming results from safety testing that saw one of its advanced AI models rapidly descend into dangerous behavior when rewarded for achieving its objectives."
+    },
+    {
+      "title": "Romeo Support",
+      "url": "https://support.romeo.com/hc/en-us",
+      "snippet": "Frequently Asked Questions Romeo"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task1-raster-lora",
+  "slug": "bdatm-project-qwen-task1-raster-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task1-raster-lora",
+  "created_at": "2026-09-06T20:56:31.000Z",
+  "updated_at": "2026-09-06T20:56:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576429,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buzón Tributario - SAT",
+      "url": "https://www.sat.gob.mx/minisitio/BuzonTributario/habilita_actualiza.html",
+      "snippet": "De acuerdo con los artículos 86-C y 86-D del Código Fiscal de la Federación, por la infracción en materia de no habilitación del …"
+    },
+    {
+      "title": "bdatm-project/qwen-task1-spiral-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-spiral-lora",
+      "snippet": "Instructions to use bdatm-project/qwen-task1-spiral-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Buzón Tributario - SAT",
+      "url": "https://www.sat.gob.mx/minisitio/BuzonTributario/index.html",
+      "snippet": "Si al habilitar tu Buzón Tributario registraste únicamente un correo electrónico o un número de teléfono celular, es necesario ingresar …"
+    },
+    {
+      "title": "Qwen · GitHub",
+      "url": "https://github.com/QwenLM",
+      "snippet": "Alibaba Cloud's general-purpose AI models. Qwen has 53 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Activar los contactos del buzón tributario: guía 2026 | Grupo CerVel",
+      "url": "https://grupocervel.com/blog/buzon-tributario-activar-contactos-2026",
+      "snippet": "May 13, 2026 · Cómo activar y mantener actualizados los medios de contacto del buzón tributario para evitar multas del SAT en …"
+    }
+  ]
+}

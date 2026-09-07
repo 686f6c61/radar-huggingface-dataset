@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Daecore/gliclass-std-base-v3-5facet-qint8-v2",
+  "slug": "daecore-gliclass-std-base-v3-5facet-qint8-v2",
+  "author": "Daecore",
+  "url": "https://huggingface.co/Daecore/gliclass-std-base-v3-5facet-qint8-v2",
+  "created_at": "2026-09-06T22:39:35.000Z",
+  "updated_at": "2026-09-06T22:39:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "GLiClass",
+    "gliclass",
+    "deberta-v3",
+    "multi-label-classification",
+    "fine-tuned",
+    "int8",
+    "text-classification",
+    "base_model:knowledgator/gliclass-base-v3.0",
+    "base_model:quantized:knowledgator/gliclass-base-v3.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 452812018,
+  "storage_human": "453 MB",
+  "base_model": "knowledgator/gliclass-base-v3.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
+    },
+    {
+      "title": "GitHub - Knowledgator/GLiClass: Generalist and Lightweight Model for ...",
+      "url": "https://github.com/Knowledgator/GLiClass",
+      "snippet": "GLiClass supports incremental, multi-session text classification over a decoder-KV model. Instead of re-encoding the full document on every update, it maintains a persistent KV cache per session and runs the scorer only when a pluggable strategy decides classification should fire."
+    },
+    {
+      "title": "BookWidgets - The perfect content creation tool for teachers in the ...",
+      "url": "https://www.bookwidgets.com/",
+      "snippet": "Transform paper worksheets to interactive quizzes and assignments, rich with multimedia. More into educational learning games? …"
+    },
+    {
+      "title": "GLiCLass-V3 - a knowledgator Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/knowledgator/gliclass-v3",
+      "snippet": "Models for zero-shot text classification that are up to 50 times faster than Cross-Encoders and show the same or higher accuracy."
+    },
+    {
+      "title": "Quiz Widgets - Build Custom Assessments & Interactive Content",
+      "url": "https://embeddable.co/use-cases/interactive-quizzes",
+      "snippet": "Create engaging quiz widgets with AI. Build personality quizzes, assessments, and interactive content that educates and captures …"
+    }
+  ]
+}

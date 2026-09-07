@@ -5,7 +5,7 @@
   "author": "aday777",
   "url": "https://huggingface.co/aday777/deepseek_v4_tiny_fixture",
   "created_at": "2026-09-01T22:07:51.000Z",
-  "updated_at": "2026-09-01T22:07:54.000Z",
+  "updated_at": "2026-09-06T18:54:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 270,
+  "downloads_30d": 271,
   "trending_score": 0,
   "parameters": 290624,
   "parameters_human": "290624",

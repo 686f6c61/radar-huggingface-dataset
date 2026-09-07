@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "leonsarmiento/gemma-4-26B-A4B-it-6bit-XL-mlx",
+  "slug": "leonsarmiento-gemma-4-26b-a4b-it-6bit-xl-mlx",
+  "author": "leonsarmiento",
+  "url": "https://huggingface.co/leonsarmiento/gemma-4-26B-A4B-it-6bit-XL-mlx",
+  "created_at": "2026-07-18T01:27:14.000Z",
+  "updated_at": "2026-09-06T23:53:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "mlx-vlm",
+    "moe",
+    "multimodal",
+    "vision",
+    "gemma",
+    "basequant-xl",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "eval-results",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 217,
+  "trending_score": 0,
+  "parameters": 25782252592,
+  "parameters_human": "25.78B",
+  "storage_bytes": 22796260878,
+  "storage_human": "22.8 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "8 Credit Reporting APIs for U.S. Fintechs in 2026 | Soft Pull Solutions",
+      "url": "https://www.softpullsolutions.com/blog/posts/2026/july/8-credit-reporting-apis-for-u-s-fintechs-in-2026/",
+      "snippet": "Jul 8, 2026 · This guide compares eight credit reporting API providers serving U.S. fintechs in 2026, with a focus on integration …"
+    },
+    {
+      "title": "leonsarmiento/gemma-4-26B-A4B-it-6bit-XL-mlx · Hugging Face",
+      "url": "https://huggingface.co/leonsarmiento/gemma-4-26B-A4B-it-6bit-XL-mlx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New Experian Express streamlines credit reporting to empower small ...",
+      "url": "https://www.experianplc.com/newsroom/press-releases/2026/new-experian-express-streamlines-credit-reporting-to-empower-sma",
+      "snippet": "Costa Mesa, Calif. — April 7, 2026 — Experian®, a global data and technology company, today announced the launch of Experian …"
+    },
+    {
+      "title": "leonsarmiento/gemma-4-26B-A4B-it-2bit-XL-mlx · Hugging Face",
+      "url": "https://huggingface.co/leonsarmiento/gemma-4-26B-A4B-it-2bit-XL-mlx",
+      "snippet": "This model was converted to MLX format from google/gemma-4-26B-A4B-it using BaseQuant_XL 2/8-bit mixed quantization optimized for Apple Silicon. The vision encoder is preserved and quantized at 8-bit, making this a full multimodal model."
+    },
+    {
+      "title": "Access to credit bureau information for fintechs",
+      "url": "https://www.ikigailaw.com/article/94/access-to-credit-bureau-information-for-fintechs",
+      "snippet": "May 13, 2022 · This post analyses the implications of RBI allowing unregulated entities to access credit bureau data. It explains the …"
+    }
+  ]
+}

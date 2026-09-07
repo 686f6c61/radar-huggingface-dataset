@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "mdon3/GLM-5.3-CYBERSECURITY-FP8",
+  "slug": "mdon3-glm-5-3-cybersecurity-fp8",
+  "author": "mdon3",
+  "url": "https://huggingface.co/mdon3/GLM-5.3-CYBERSECURITY-FP8",
+  "created_at": "2026-09-06T21:28:38.000Z",
+  "updated_at": "2026-09-06T21:28:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "crack",
+    "refusal-removed",
+    "domain-specific",
+    "cybersecurity",
+    "offensive-security",
+    "red-team",
+    "pentest",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sázková kancelář Tipsport",
+      "url": "https://www.tipsport.cz/",
+      "snippet": "Sázková kancelář Tipsport a.s. je jedničkou od roku 1991. Vstupte do největší komunity. Pro nováčky 1 000 Kč za registraci + vstupní …"
+    },
+    {
+      "title": "dealignai/GLM-5.3-CYBERSECURITY-FP8 · Hugging Face",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8",
+      "snippet": "substrate across domains, but this model is tuned for cybersecurity, not universal Notably, copyright-verbatim reproduction still soft-refusesin this variant. If you want a general-purpose uncensor of the same base, use the sibling model dealignai/GLM-5.3-UNCENSORED-FP8."
+    },
+    {
+      "title": "Tipsport | Největší komunita sázkařů | Kurzové sázky a casino",
+      "url": "https://www.tipsport.cz/prihlaseni",
+      "snippet": "Vstupte do světa největší komunity sázkařů! Pro nováčky 1 000 Kč za registraci!"
+    },
+    {
+      "title": "dealignai/GLM-5.3-CYBERSECURITY-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8/tree/main",
+      "snippet": "Upstream Z.ai chat template default `clear_thinking=false` replays prior reasoning_content into subsequent turns, priming a decode attractor. Z.ai's own docs recommend `clear_thinking=true` for chat scenarios — this bakes that in."
+    },
+    {
+      "title": "Tipsport | Najväčšia komunita tipérov | Kurzové stávky a online kasíno",
+      "url": "https://www.tipsport.sk/",
+      "snippet": "Tipujte online, sledujte športové prenosy na TV Tipsport, bavte sa v diskusnom fóre. Pre nových hráčov 20 € zadarmo!"
+    }
+  ]
+}

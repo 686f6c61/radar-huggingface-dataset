@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zagor84/ppo-Pyramids",
+  "slug": "zagor84-ppo-pyramids",
+  "author": "zagor84",
+  "url": "https://huggingface.co/zagor84/ppo-Pyramids",
+  "created_at": "2026-09-06T22:14:18.000Z",
+  "updated_at": "2026-09-06T22:14:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37797251,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Google Chrome letöltése és telepítése - Számítógép - Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Google Chrome letöltése és telepítése A Chrome böngészőt díjmentesen letöltheti és telepítheti, majd használhatja az interneten …"
+    },
+    {
+      "title": "Lategardener/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/Lategardener/ppo-Pyramids",
+      "snippet": "Instructions to use Lategardener/ppo-Pyramids with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google Chrome をダウンロードしてインストールする - パソコン",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "お使いの Windows パソコンで Chrome をダウンロードするときに問題が生じる場合は、代替のリンクから Chrome を別のパソコン …"
+    },
+    {
+      "title": "BBorg/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/BBorg/ppo-Pyramids",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Download and install Google Chrome - Computer - Google Chrome Help",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "If you have issues when you download Chrome on your Windows computer, use the alternate link to download Chrome on a different …"
+    }
+  ]
+}

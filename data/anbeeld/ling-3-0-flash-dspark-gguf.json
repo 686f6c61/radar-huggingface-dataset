@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/Ling-3.0-flash-DSpark-GGUF",
+  "slug": "anbeeld-ling-3-0-flash-dspark-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/Ling-3.0-flash-DSpark-GGUF",
+  "created_at": "2026-09-06T22:52:27.000Z",
+  "updated_at": "2026-09-06T23:08:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dspark",
+    "dflash",
+    "specforge",
+    "sglang",
+    "text-generation",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "base_model:inclusionAI/Ling-3.0-flash-dspark",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-dspark",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 961316865,
+  "parameters_human": "961.3M",
+  "storage_bytes": 6287414848,
+  "storage_human": "6.3 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash-dspark",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-5 正式发布 | OpenAI",
+      "url": "https://openai.com/zh-Hans-CN/gpt-5/",
+      "snippet": "ChatGPT开发人员专用企业解决方案 由 GPT-5 提供支持的 ChatGPT 专家智慧，人人可享 GPT‑5 在各方面都更加智能，能够在数学 …"
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash-dspark · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-dspark",
+      "snippet": "Instructions to use inclusionAI/Ling-3.0-flash-dspark with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GPT-5가 출시되었습니다 | OpenAI",
+      "url": "https://openai.com/ko-KR/gpt-5/",
+      "snippet": "ChatGPT개발자비즈니스 GPT-5가 구동하는 ChatGPT 모두를 위한 전문적인 인텔리전스 전반적으로 더 스마트해진 GPT‑5는 수학, 과학, …"
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash-dspark at main - Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-dspark/tree/main",
+      "snippet": "inclusionAI / Ling-3.0-flash-dspark like 11 Follow inclusionAI 2.7k Text Generation Transformers Safetensors qwen3 speculative-decoding dspark dflash specforge sglang text-generation-inference License:other Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/onboarding?app=chat&callbackHost=chatgpt.com",
+      "snippet": "OpenAI Platform ... OpenAI Platform"
+    }
+  ]
+}

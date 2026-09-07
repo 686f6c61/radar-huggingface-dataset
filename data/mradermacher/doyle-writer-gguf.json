@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Doyle-Writer-GGUF",
+  "slug": "mradermacher-doyle-writer-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Doyle-Writer-GGUF",
+  "created_at": "2026-09-06T17:41:26.000Z",
+  "updated_at": "2026-09-06T17:43:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ChopinMaster8888/Doyle-Writer",
+    "base_model:quantized:ChopinMaster8888/Doyle-Writer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 44909056,
+  "parameters_human": "44.9M",
+  "storage_bytes": 494930336,
+  "storage_human": "495 MB",
+  "base_model": "ChopinMaster8888/Doyle-Writer",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=26604d0f333b642232685ac3327c653c",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "mradermacher/GRaPE-Mini-Writer-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/GRaPE-Mini-Writer-GGUF",
+      "snippet": "mradermacher / GRaPE-Mini-Writer-GGUF like 0 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

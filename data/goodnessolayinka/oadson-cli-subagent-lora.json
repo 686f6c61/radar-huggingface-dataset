@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "goodnessolayinka/oadson-cli-subagent-lora",
+  "slug": "goodnessolayinka-oadson-cli-subagent-lora",
+  "author": "goodnessolayinka",
+  "url": "https://huggingface.co/goodnessolayinka/oadson-cli-subagent-lora",
+  "created_at": "2026-09-06T20:22:51.000Z",
+  "updated_at": "2026-09-06T20:23:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955548,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SexyHub - Erotic Porn Site For Adults",
+      "url": "https://www.sexyhub.com/",
+      "snippet": "Watch hot women orgasm in massage porn videos, lesbian cum sex stories and sensual milfs fuck in couples porno films."
+    },
+    {
+      "title": "Gemini CLI | Gemini for Google Cloud | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/gemini/docs/codeassist/gemini-cli",
+      "snippet": "Learn about the Gemini CLI"
+    },
+    {
+      "title": "Join SexyHub",
+      "url": "https://www.sexyhub.com/join",
+      "snippet": "39.94 - 1 month (recurring), 39.94 - 1 month (non recurring), 12 Month Membership (recurring), 12 Month Membership (non recurring) …"
+    },
+    {
+      "title": "10 Best CLI AI Coding Agents in 2026: Open-Source & Commercial",
+      "url": "https://www.scriptbyai.com/best-cli-ai-coding-agents/",
+      "snippet": "Compare 10 open-source and commercial CLI AI coding agents by model choice, access, permissions, automation, trade-offs, and best use case."
+    },
+    {
+      "title": "https://cancel.sexyhub.com",
+      "url": "https://cancel.sexyhub.com/",
+      "snippet": "At Sexyhub, we are dedicated to making our platform accessible to all. We encourage you to share your comments and feedback …"
+    }
+  ]
+}

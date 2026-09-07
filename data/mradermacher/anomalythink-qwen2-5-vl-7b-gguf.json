@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AnomalyThink-Qwen2.5-VL-7B-GGUF",
+  "slug": "mradermacher-anomalythink-qwen2-5-vl-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AnomalyThink-Qwen2.5-VL-7B-GGUF",
+  "created_at": "2026-06-29T11:07:54.000Z",
+  "updated_at": "2026-09-06T21:25:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "anomaly-detection",
+    "industrial-anomaly-detection",
+    "vision-language-model",
+    "reasoning",
+    "qwen2_5_vl",
+    "en",
+    "dataset:aacudad/AnomalyThink",
+    "base_model:aacudad/AnomalyThink-Qwen2.5-VL-7B-KCR",
+    "base_model:quantized:aacudad/AnomalyThink-Qwen2.5-VL-7B-KCR",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 358,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357171904,
+  "storage_human": "70.4 GB",
+  "base_model": "aacudad/AnomalyThink-Qwen2.5-VL-7B-KCR",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ग्रामीण+सड़क+से+दूरी+कॉन्ट्रैक्शन+न्यू+एक्ट | Indian …",
+      "url": "https://www.casemine.com/search/in/%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A5%80%E0%A4%A3%2B%E0%A4%B8%E0%A4%A1%E0%A4%BC%E0%A4%95%2B%E0%A4%B8%E0%A5%87%2B%E0%A4%A6%E0%A5%82%E0%A4%B0%E0%A5%80%2B%E0%A4%95%E0%A5%89%E0%A4%A8%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%88%E0%A4%95%E0%A5%8D%E0%A4%B6%E0%A4%A8%2B%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A5%82%2B%E0%A4%8F%E0%A4%95%E0%A5%8D%E0%A4%9F",
+      "snippet": "Can't display summary as content is Scanned, Please open the judgment to see full content."
+    },
+    {
+      "title": "mradermacher/AnomalyThink-Qwen2.5-VL-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AnomalyThink-Qwen2.5-VL-7B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Indian Cities News in Hindi | शहरों से समाचार - WeRIndia",
+      "url": "https://hindi.werindia.com/cities",
+      "snippet": "23 hours ago · राजनीति, व्यवसाय, खेल, मनोरंजन और प्रौद्योगिकी पर भारत के सभी शहरों से समाचार। Read Latest news, breaking …"
+    },
+    {
+      "title": "mradermacher/AnomalyThink-Qwen2.5-VL-7B-KCR-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AnomalyThink-Qwen2.5-VL-7B-KCR-GGUF",
+      "snippet": "mradermacher / AnomalyThink-Qwen2.5-VL-7B-KCR-GGUF like 1 Transformers GGUF aacudad/AnomalyThink English anomaly-detection industrial-anomaly-detection vision-language-model reasoning qwen2_5_vl conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Welcome to Indian Railway Passenger Reservation Enquiry",
+      "url": "http://indianrail.gov.in/",
+      "snippet": "INDIAN RAILWAYS PASSENGER RESERVATION ENQUIRY Please help Indian railways and government of India in moving …"
+    }
+  ]
+}

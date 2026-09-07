@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SurjoLabs/Surjo-50m",
+  "slug": "surjolabs-surjo-50m",
+  "author": "SurjoLabs",
+  "url": "https://huggingface.co/SurjoLabs/Surjo-50m",
+  "created_at": "2026-09-05T18:11:33.000Z",
+  "updated_at": "2026-09-06T22:34:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3981215256,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "一直磨，直到能用短效手机号注册whatsapp，将信息修改一下只有你可以登录（绑定邮箱之类的）。 注册成功后，whatsapp那边得加 …"
+    },
+    {
+      "title": "SurjoLabs (SurjoLabs) - Hugging Face",
+      "url": "https://huggingface.co/SurjoLabs",
+      "snippet": "Org profile for SurjoLabs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "国内如何使用whatsapp？ - 知乎",
+      "url": "https://www.zhihu.com/question/2052047431735550018",
+      "snippet": "Jun 21, 2026 · 关注 直接使用 WhatsApp 往往会出现无法连接、收不到消息或无法语音通话的情况，因为 WhatsApp 在国内网络环境 …"
+    },
+    {
+      "title": "SurjoLabs (SurjoLabs) - Hugging Face",
+      "url": "https://huggingface.co/datasets/SurjoLabs/",
+      "snippet": "Bilingual Native Bangla Models. Recent Activity spitfire4794 updated a modelabout 18 hours ago SurjoLabs/flare2failed spitfire4794 published a model1 day ago SurjoLabs/flare2failed spitfire4794 new activity1 day ago SurjoLabs/Blaze: Nice View all activity"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    }
+  ]
+}

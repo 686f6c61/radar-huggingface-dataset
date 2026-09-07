@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Renegade-888/act_sorting_pens_batteries",
+  "slug": "renegade-888-act_sorting_pens_batteries",
+  "author": "Renegade-888",
+  "url": "https://huggingface.co/Renegade-888/act_sorting_pens_batteries",
+  "created_at": "2026-09-06T21:15:35.000Z",
+  "updated_at": "2026-09-06T21:16:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Renegade-888/so101-sorting-pens-batteries",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707296,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeep® Renegade e-Hybrid | SUV Compact Hybride| Jeep® FR",
+      "url": "https://www.jeep.fr/jeep-renegade/e-hybrid",
+      "snippet": "Découvrez le Jeep® Renegade e-Hybrid. Le SUV compact alliant design audacieux, technologie hybride avancée et confort …"
+    },
+    {
+      "title": "Renegade-888 (Parthan M) - Hugging Face",
+      "url": "https://huggingface.co/Renegade-888",
+      "snippet": "Sort: Recently updated Renegade-888/act_eraser_test 51.7M•Updated about 7 hours ago"
+    },
+    {
+      "title": "Jeep® Renegade - Plaisir sur quatre roues.",
+      "url": "https://www.jeep.com/gp/renegade.html?msockid=193e25af6dc06fbf088c32636cc06e91",
+      "snippet": "Le Jeep® Renegade est excitant. Obtenez les tarifs et explorez les fonctionnalités extérieures robustes et la capacité tout-terrain."
+    },
+    {
+      "title": "Renegade-888 (Parthan M) - Hugging Face",
+      "url": "https://huggingface.co/Renegade-888/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 7 hours ago ... published a dataset about 7 hours ago"
+    },
+    {
+      "title": "Jeep Renegade : avis pro et fiabilité",
+      "url": "https://passion-auto.fr/avis-jeep-renegade/",
+      "snippet": "Sep 6, 2025 · Découvrez notre retour d’expert sur la Jeep Renegade : performance, sécurité, consommation, habitabilité et conseils …"
+    }
+  ]
+}

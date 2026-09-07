@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "stefra/Mistral_NER_MLX-4bit",
+  "slug": "stefra-mistral_ner_mlx-4bit",
+  "author": "stefra",
+  "url": "https://huggingface.co/stefra/Mistral_NER_MLX-4bit",
+  "created_at": "2026-09-06T21:16:16.000Z",
+  "updated_at": "2026-09-06T21:16:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4077480205,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crazy 4 Cryptos - YouTube",
+      "url": "https://www.youtube.com/channel/UCNHXoNsyoBGVOS0EJarawvw",
+      "snippet": "This channel is crazy about Bitcoin and cryptocurrencies! I've been studying the blockchain scene since early 2017, and have …"
+    },
+    {
+      "title": "stefra/DNE-ElecDeb-Mistral-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/stefra/DNE-ElecDeb-Mistral-MLX-4bit",
+      "snippet": "Instructions to use stefra/DNE-ElecDeb-Mistral-MLX-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "What Scams Have Targeted NESARA/GESARA Believers and H...",
+      "url": "https://factually.co/fact-checks/finance/nesara-gesara-scams-targeting-believers-how-victims-can-seek-redress-93b062",
+      "snippet": "Jul 20, 2026 · Scammers have built fake “claim your payout” webpages that promise large NESARA/GESARA windfalls in exchange …"
+    },
+    {
+      "title": "stefra/mistral_ablazione_full_ner · Hugging Face",
+      "url": "https://huggingface.co/stefra/mistral_ablazione_full_ner",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What Scams and Legal Risks Are Linked to NESARA/GESARA...",
+      "url": "https://factually.co/fact-checks/finance/nesara-gesara-scams-legal-risks-explained-b0e975",
+      "snippet": "Jul 28, 2026 · Regulators, security researchers, and legal experts warn that misrepresentations connected to NESARA/GESARA — …"
+    }
+  ]
+}

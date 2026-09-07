@@ -5,7 +5,7 @@
   "author": "Anomly",
   "url": "https://huggingface.co/Anomly/Mistral-7B-Instruct-v0.3-bposit8",
   "created_at": "2026-09-05T18:25:01.000Z",
-  "updated_at": "2026-09-05T18:26:09.000Z",
+  "updated_at": "2026-09-06T03:42:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 7248023552,
   "parameters_human": "7.25B",

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Analgirls916/Flux-Uncensored-V2",
+  "slug": "analgirls916-flux-uncensored-v2",
+  "author": "Analgirls916",
+  "url": "https://huggingface.co/Analgirls916/Flux-Uncensored-V2",
+  "created_at": "2026-09-06T22:27:35.000Z",
+  "updated_at": "2026-09-06T22:27:35.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "stable-diffusion",
+    "lora",
+    "fluxpipeline",
+    "flux",
+    "not-for-all-audiences",
+    "image-to-image",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 687476088,
+  "storage_human": "687 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Balkonkraftwerk kaufen - Premium-Komplettsets vom Fachhändler - Yuma …",
+      "url": "https://yuma.de/pages/balkonkraftwerk",
+      "snippet": "Balkonkraftwerke für Garten, Fassade, Balkon, Schräg- oder Flachdach → Premium-Qualität Passgenaue Komplettsets Persönliche …"
+    },
+    {
+      "title": "GitHub - KirbyLulu/Flux-Unc-V2",
+      "url": "https://github.com/KirbyLulu/Flux-Unc-V2",
+      "snippet": "The FLUX Uncensored LoRA v2 is an enhanced version of the original FLUX Uncensored LoRA, designed for the base model black-forest-labs/FLUX.1-dev. This version ..."
+    },
+    {
+      "title": "Yuma Flat 800 Balkonkraftwerk im Test: Bewertung und Nutzung im …",
+      "url": "https://solaranlage.blog/kaufberatung-produkttests/balkonkraftwerk-komplettsets/yuma-flat-800-balkonkraftwerk-praxistest/",
+      "snippet": "Jul 22, 2026 · Das Yuma Flat 800 Balkonkraftwerk hat sich im Praxistest als eine zuverlässige Möglichkeit herausgestellt, um …"
+    },
+    {
+      "title": "AI - FLUX (NSFW & UNCENSORED) - a anonymous111110987654321 Collection",
+      "url": "https://huggingface.co/collections/anonymous111110987654321/ai-flux-nsfw-and-uncensored",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from anonymous111110987654321"
+    },
+    {
+      "title": "Balkonkraftwerk fürs Flachdach, Garten/Terrasse, Garage - Yuma GmbH",
+      "url": "https://yuma.de/collections/yuma-flat",
+      "snippet": "Das Balkonkraftwerk für Flachdächer, Garagen und Gärten – auch für XL-Module. Starte jetzt!"
+    }
+  ]
+}

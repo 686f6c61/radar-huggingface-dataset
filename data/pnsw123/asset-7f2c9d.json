@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pnsw123/asset-7f2c9d",
+  "slug": "pnsw123-asset-7f2c9d",
+  "author": "pnsw123",
+  "url": "https://huggingface.co/pnsw123/asset-7f2c9d",
+  "created_at": "2026-09-06T17:38:04.000Z",
+  "updated_at": "2026-09-06T19:13:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "automatic-speech-recognition",
+    "ggml",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 637991968,
+  "parameters_human": "638.0M",
+  "storage_bytes": 6257957696,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0350735dfaf963fd2af06491fbb4628c",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models__ai/",
+      "snippet": "2M Followers, 336 Following, 7,127 Posts - 퐀퐈 퐌퐎퐃퐄퐋퐒 (@models__ai) on Instagram: \"퐖퐞 퐃퐨 퐏퐫퐨퐦퐨퐭퐞 퐀퐫퐭퐢퐟퐢퐜퐢퐚퐥 퐌퐨퐝퐞퐥퐬, 퐀퐫퐭퐢퐟퐢퐜퐢퐚퐥 퐀퐫퐭, 퐀퐧퐝 퐓퐡퐞 퐖퐨퐫퐥퐝 퐎퐟 퐀퐈. 퐁퐞퐬퐭 퐍퐞퐭퐰퐨퐫퐤 퐓퐨 퐈퐧퐭퐞퐫퐚퐜퐭 퐖퐢퐭퐡 퐘퐨퐮퐫 퐖퐨퐫퐥퐝. 퐃퐦 ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

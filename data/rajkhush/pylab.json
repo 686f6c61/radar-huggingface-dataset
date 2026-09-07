@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Rajkhush/Pylab",
+  "slug": "rajkhush-pylab",
+  "author": "Rajkhush",
+  "url": "https://huggingface.co/Rajkhush/Pylab",
+  "created_at": "2026-09-06T20:22:09.000Z",
+  "updated_at": "2026-09-06T20:23:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reset password - Google Help",
+      "url": "https://support.google.com/answer/2451980?hl=en",
+      "snippet": "If you forget you password, you can easily reset it: Go to the password assistance page. Enter your Google Account email address …"
+    },
+    {
+      "title": "AI Powered Student Performance Analytics System - GitHub",
+      "url": "https://github.com/Bar7aat/Student-Performance-Analytics",
+      "snippet": "🎓 AI Powered Student Performance Analytics System An end-to-end Machine Learning web application that predicts a student's final exam marks from their academic and lifestyle habits, explains why the model made that prediction, and generates a personalized AI study plan — all through a modern, interactive Streamlit dashboard."
+    },
+    {
+      "title": "Gérer les mots de passe dans Chrome - Ordinateur - Aide Google …",
+      "url": "https://support.google.com/chrome/answer/95606?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Vous pouvez gérer les mots de passe enregistrés dans votre compte Google sur Chrome ou n'importe quel autre navigateur Web …"
+    },
+    {
+      "title": "GitHub - rvashurin/AI7101-Lab2-2026",
+      "url": "https://github.com/rvashurin/AI7101-Lab2-2026",
+      "snippet": "Contribute to rvashurin/AI7101-Lab2-2026 development by creating an account on GitHub."
+    },
+    {
+      "title": "Use passwords & passkeys across your devices - Google Help",
+      "url": "https://support.google.com/accounts/answer/6197437?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "When you sign in to an Android device or Chrome Browser, you can save passwords and passkeys for your Google Account with …"
+    }
+  ]
+}

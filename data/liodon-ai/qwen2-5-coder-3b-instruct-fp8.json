@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Qwen2.5-Coder-3B-Instruct-FP8",
+  "slug": "liodon-ai-qwen2-5-coder-3b-instruct-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Qwen2.5-Coder-3B-Instruct-FP8",
+  "created_at": "2026-09-06T20:56:35.000Z",
+  "updated_at": "2026-09-06T21:44:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 3410911204,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder Grand Openings Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Wines Parkside Recipes Lidl Plus App Contact Us Contact Us Find answers to frequently asked questions and contact information for …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lidl stores in the US",
+      "url": "https://www.lidl.com/s/en-US/stores/",
+      "snippet": "Find your Lidl store quickly and easily with the store finder or by city. Find offers and flyers for a Lidl store nearby."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Chouio/AlyaTTS_QwenBASE",
+  "slug": "chouio-alyatts_qwenbase",
+  "author": "Chouio",
+  "url": "https://huggingface.co/Chouio/AlyaTTS_QwenBASE",
+  "created_at": "2026-09-06T22:16:33.000Z",
+  "updated_at": "2026-09-06T22:40:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4544236431,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version.aspx",
+      "snippet": "73006537bingux_20260906_730076902026.09.06.730065378b7d4921bb7a84591affcb98e2625d9eaec8ab71"
+    },
+    {
+      "title": "Chouio (Adam El Achoui) - Hugging Face",
+      "url": "https://huggingface.co/Chouio/models",
+      "snippet": "User profile of Adam El Achoui on Hugging Face"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Versions. snrcode. build. 2026.09.05.72991285. hash. d612d12d98b08c4ac35d747335fdc4446da02878."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts."
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · Learn where Bing related searches appear, how to expand them, and what to do when suggestions do not show on …"
+    }
+  ]
+}

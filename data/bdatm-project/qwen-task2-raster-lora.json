@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task2-raster-lora",
+  "slug": "bdatm-project-qwen-task2-raster-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task2-raster-lora",
+  "created_at": "2026-09-06T21:04:17.000Z",
+  "updated_at": "2026-09-06T21:04:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576429,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "bdatm-project/qwen-task2-standard-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task2-standard-lora",
+      "snippet": "bdatm-project / qwen-task2-standard-lora like 0 Follow Big Data Analytics and Text Mining Project 1 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "International International (EN) Contact et prise de RDV Accueil impots.gouv.fr À la Une Vol de données suite à des accès illégitimes …"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "This is the organization of Qwen, which refers to the large language model family built by Alibaba Cloud. In this organization, we continuously release large language models (LLM), large multimodal models (LMM), and other AGI-related projects. Feel free to visit Qwen Chatand enjoy our latest models!"
+    },
+    {
+      "title": "Particulier | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "Cadastre PayFiP Timbres Cessions immobilières de l'Etat Locations immobilières de l’État Ventes domaniales Retraites de l'État …"
+    }
+  ]
+}

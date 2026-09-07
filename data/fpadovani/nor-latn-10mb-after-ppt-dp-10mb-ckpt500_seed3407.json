@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/nor-latn-10mb-after-ppt-Dp-10mb-ckpt500_seed3407",
+  "slug": "fpadovani-nor-latn-10mb-after-ppt-dp-10mb-ckpt500_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/nor-latn-10mb-after-ppt-Dp-10mb-ckpt500_seed3407",
+  "created_at": "2026-09-06T23:19:14.000Z",
+  "updated_at": "2026-09-06T23:53:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/nor-latn-10mb-ppt-Dp-10mb_seed3407",
+    "base_model:finetune:fpadovani/nor-latn-10mb-ppt-Dp-10mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 939484229,
+  "storage_human": "939 MB",
+  "base_model": "fpadovani/nor-latn-10mb-ppt-Dp-10mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Система Гулаг - презентация онлайн",
+      "url": "https://ppt-online.org/585633",
+      "snippet": "Будущая система ГУЛАГа начала складываться сразу после прихода к власти большевиков. Во время Гражданской войны …"
+    },
+    {
+      "title": "fpadovani/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407 ...",
+      "url": "https://huggingface.co/fpadovani/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407",
+      "snippet": "Instructions to use fpadovani/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ГУЛАГ — гла́вное управле́ние лагере́й ...",
+      "url": "https://ppt-online.org/864457",
+      "snippet": "Следующим организационным изменением системы исполнения наказаний в СССР стало создание в октябре 1956 Главного …"
+    },
+    {
+      "title": "fpadovani/dan-latn-10mb-after-ppt-Dp-100mb-ckpt500_seed3407 · Hugging Face",
+      "url": "https://huggingface.co/fpadovani/dan-latn-10mb-after-ppt-Dp-100mb-ckpt500_seed3407",
+      "snippet": "Instructions to use fpadovani/dan-latn-10mb-after-ppt-Dp-100mb-ckpt500_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Презентация «ГУЛАГ история и жертвы ...",
+      "url": "https://slidy.ai/catalog/gulag-istoriia-i-zhertvy",
+      "snippet": "Создайте презентацию по теме ГУЛАГ история и жертвы онлайн — бесплатно, быстро и удобно. Готовый шаблон, …"
+    }
+  ]
+}

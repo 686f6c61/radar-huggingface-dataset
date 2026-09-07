@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_1Bpt_adamwppt_20M_s1_2026-09-06_17-41-22_414444-pt",
+  "slug": "alexkstern-kdyck_dose_1bpt_adamwppt_20m_s1_2026-09-06_17-41-22_414444-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_1Bpt_adamwppt_20M_s1_2026-09-06_17-41-22_414444-pt",
+  "created_at": "2026-09-06T17:54:45.000Z",
+  "updated_at": "2026-09-06T17:55:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[ChurchDB] Gruppenstruktur/Organigramm darstellen",
+      "url": "https://forum.church.tools/topic/1220/churchdb-gruppenstruktur-organigramm-darstellen?page=3",
+      "snippet": "Fragen, Features und Erweiterungen rund um ChurchTools"
+    },
+    {
+      "title": "alexkstern/kdyck_dose_1Bpt_hfbody_20M_s1_2026-08-14_08-12-42_071342-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_20M_s1_2026-08-14_08-12-42_071342-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tags erstellen | ChurchTools Forum",
+      "url": "https://forum.church.tools/topic/7103/tags-erstellen",
+      "snippet": "Hallo Zusammen, ich würde den Musikteams gerne Tags zuweisen. Nur stehe ich leider totatl auf dem Schlauch und finde die …"
+    },
+    {
+      "title": "kdyck_dose_1Bpt_20M_s1_2026-08-14_05-36-46_986659-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_1Bpt_20M_s1_2026-08-14_05-36-46_986659-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Suche über Filter u. Eingabefeld | ChurchTools Forum",
+      "url": "https://forum.church.tools/topic/11001/suche-%C3%BCber-filter-u-eingabefeld",
+      "snippet": "ES ist NICHT ganz eindeutig zu erkennen, das hier die Eingaben in 2 verschied. Feldern zu tätigen sind. Ich hatte die Kombination …"
+    }
+  ]
+}

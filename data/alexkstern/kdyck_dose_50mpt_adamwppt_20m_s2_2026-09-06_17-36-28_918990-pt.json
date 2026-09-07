@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_adamwppt_20M_s2_2026-09-06_17-36-28_918990-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_adamwppt_20m_s2_2026-09-06_17-36-28_918990-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_adamwppt_20M_s2_2026-09-06_17-36-28_918990-pt",
+  "created_at": "2026-09-06T17:39:04.000Z",
+  "updated_at": "2026-09-06T17:39:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162907,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "alexkstern/kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Impossible de me connecter à Canva avec mail Outlook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299350-impossible-de-me-connecter-a-canva-avec-mail-outlook",
+      "snippet": "Jul 15, 2026 · Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une invitation. …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_20M_s2_2026-08-14_22-59-48_639587-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_20M_s2_2026-08-14_22-59-48_639587-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mục sở thị Google Pics \"AI xử lý ảnh\" mới được tích hợp thẳng vào …",
+      "url": "https://tinhte.vn/thread/muc-so-thi-google-pics-ai-xu-ly-anh-moi-duoc-tich-hop-thang-vao-docs-va-slides-khien-canva-va.4173859/",
+      "snippet": "Mục sở thị Google Pics \"AI xử lý ảnh\" mới được tích hợp thẳng vào Docs và Slides khiến Canva và Adobe thất thần Không còn dừng …"
+    }
+  ]
+}

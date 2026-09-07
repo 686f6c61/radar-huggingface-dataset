@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jhhj25/reef-nccl-ep-qwen3-8b-lora-16k-run2",
+  "slug": "jhhj25-reef-nccl-ep-qwen3-8b-lora-16k-run2",
+  "author": "jhhj25",
+  "url": "https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-16k-run2",
+  "created_at": "2026-09-06T23:39:34.000Z",
+  "updated_at": "2026-09-06T23:41:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "kernel-tuning",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2794496640,
+  "storage_human": "2.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "16301 NE 74th St, Redmond, Washington - MapQuest",
+      "url": "https://www.mapquest.com/us/washington/redmond/98052-7800/16301-ne-74th-st-47.67062,-122.12223",
+      "snippet": "Get more information for 16301 NE 74th St in Redmond, Washington. See reviews, map, get the address, and find directions."
+    },
+    {
+      "title": "jhhj25/reef-nccl-ep-qwen3-8b-lora-discovery-16step · Hugging Face",
+      "url": "https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-discovery-16step",
+      "snippet": "Instructions to use jhhj25/reef-nccl-ep-qwen3-8b-lora-discovery-16step with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ATM, 16301 NE 74th St, Redmond, WA 98052-7800, US - MapQuest",
+      "url": "https://www.mapquest.com/us/washington/atm-372228673",
+      "snippet": "Get more information for ATM in Redmond, WA. See reviews, map, get the address, and find directions."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?query_place_id=ChIJ8To07q9ykFQRNAzzrGOxLPY",
+      "snippet": "Map data ©2026 Google Terms 10 km Directions"
+    }
+  ]
+}

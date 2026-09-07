@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_1B_s2_2026-09-06_22-26-48_611417-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_hfbody_adamwppt_1b_s2_2026-09-06_22-26-48_611417-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_1B_s2_2026-09-06_22-26-48_611417-pt",
+  "created_at": "2026-09-06T22:49:11.000Z",
+  "updated_at": "2026-09-06T22:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162779,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.nl/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_20M_s2_2026-08-14_22-59-48_639587-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_20M_s2_2026-08-14_22-59-48_639587-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.nl/",
+      "snippet": "Deze kosteloze service van Google kan woorden, zinnen en webpagina's onmiddellijk vertalen tussen het Nederlands en meer dan …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_20M_s1_2026-08-14_22-57-15_573105-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_20M_s1_2026-08-14_22-57-15_573105-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Afbeeldingen",
+      "url": "https://www.google.nl/imghp?hl=nl",
+      "snippet": "Google Afbeeldingen. De grootste zoekmachine voor afbeeldingen op internet."
+    }
+  ]
+}

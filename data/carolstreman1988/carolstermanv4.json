@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "carolstreman1988/carolstermanv4",
+  "slug": "carolstreman1988-carolstermanv4",
+  "author": "carolstreman1988",
+  "url": "https://huggingface.co/carolstreman1988/carolstermanv4",
+  "created_at": "2026-09-06T22:18:42.000Z",
+  "updated_at": "2026-09-06T22:20:57.000Z",
+  "license": "carol",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 301498546,
+  "storage_human": "301 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy's AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "oforyou：我挺好奇为什么在知乎黛西要挨骂，露丝也要挨骂？ 这俩不是截然相反的人物吗，黛西反面就是露丝，露丝反面就是黛西。 …"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "如何看待华为“竹知了事件”？ - 知乎",
+      "url": "https://www.zhihu.com/question/2067675617814960045",
+      "snippet": "Aug 8, 2026 · 传统竹制玩具“竹知了”因摇晃时发出的“哇哇”声，被网友发现与华为余承东在问界M9发布会上“1000万以内…"
+    }
+  ]
+}

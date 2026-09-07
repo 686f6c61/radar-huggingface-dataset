@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "carolstreman1988/PerfectEyes_ltx2",
+  "slug": "carolstreman1988-perfecteyes_ltx2",
+  "author": "carolstreman1988",
+  "url": "https://huggingface.co/carolstreman1988/PerfectEyes_ltx2",
+  "created_at": "2026-09-06T22:24:42.000Z",
+  "updated_at": "2026-09-06T22:24:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32861729,
+  "storage_human": "33 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Karate Kid (1984) - IMDb",
+      "url": "https://www.imdb.com/title/tt0087538/",
+      "snippet": "Jun 22, 1984 · The Karate Kid: Directed by John G. Avildsen. With Ralph Macchio, Pat Morita, Elisabeth Shue, Martin Kove. Recently …"
+    },
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    },
+    {
+      "title": "The Karate Kid (2010) - IMDb",
+      "url": "https://www.imdb.com/title/tt1155076/",
+      "snippet": "Jun 11, 2010 · The Karate Kid: Directed by Harald Zwart. With Jackie Chan, Jaden Smith, Taraji P. Henson, Wenwen Han. Work …"
+    },
+    {
+      "title": "LTX-2 - Open-Source 4K AI Video & Audio Generation Model",
+      "url": "https://ltx-2.run/",
+      "snippet": "LTX-2 is a production-ready 19B parameter AI model for synchronized 4K video and audio generation. Text-to-video, image-to-video, LoRA fine-tuning support."
+    },
+    {
+      "title": "The Karate Kid - Per vincere domani (1984) - IMDb",
+      "url": "https://www.imdb.com/it/title/tt0087538/",
+      "snippet": "The Karate Kid - Per vincere domani: Regia di John G. Avildsen. Con Ralph Macchio, Pat Morita, Elisabeth Shue, Martin Kove. Un …"
+    }
+  ]
+}

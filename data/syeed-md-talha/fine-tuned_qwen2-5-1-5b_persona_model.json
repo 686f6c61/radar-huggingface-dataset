@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Syeed-MD-Talha/Fine-Tuned_Qwen2.5-1.5B_Persona_Model",
+  "slug": "syeed-md-talha-fine-tuned_qwen2-5-1-5b_persona_model",
+  "author": "Syeed-MD-Talha",
+  "url": "https://huggingface.co/Syeed-MD-Talha/Fine-Tuned_Qwen2.5-1.5B_Persona_Model",
+  "created_at": "2026-09-06T17:44:41.000Z",
+  "updated_at": "2026-09-06T17:57:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1588396094,
+  "storage_human": "1.6 GB",
+  "base_model": "unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Signification du prénom Syeed - Wisdom Library",
+      "url": "https://www.wisdomlib.org/fr/names/syeed",
+      "snippet": "Oct 16, 2025 · Le nom 'Syeed' est une variante orthographique de 'Sayyid' (سيد). En arabe, 'Sayyid' signifie 'seigneur', 'maître' ou …"
+    },
+    {
+      "title": "GitHub - Farheenaiml/Fine-Tuning-Qwen-QLoRA: Fine-tuned Qwen2.5-0.5B ...",
+      "url": "https://github.com/Farheenaiml/Fine-Tuning-Qwen-QLoRA",
+      "snippet": "This project fine-tunes the Qwen 2.5 instruct model using QLoRA and the Hugging Face ecosystem. It is implemented as a Jupyter notebook and is designed for efficient training on consumer GPUs with 4-bit quantization."
+    },
+    {
+      "title": "Meaning of the name Syeed - Wisdom Library",
+      "url": "https://www.wisdomlib.org/names/syeed",
+      "snippet": "Oct 15, 2025 · The name Syeed, also spelled Syed, Sayed, or Seyed, is a prestigious title primarily used in the Muslim world, …"
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "Syeed - Name Meaning and Origin",
+      "url": "https://namediscoveries.com/names/syeed",
+      "snippet": "The name \"Syeed\" is of Arabic origin and is derived from the word \"sayyid,\" which means \"master\" or \"lord.\" It is a title of respect …"
+    }
+  ]
+}

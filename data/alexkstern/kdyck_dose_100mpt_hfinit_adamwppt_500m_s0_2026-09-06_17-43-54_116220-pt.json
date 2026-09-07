@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_500M_s0_2026-09-06_17-43-54_116220-pt",
+  "slug": "alexkstern-kdyck_dose_100mpt_hfinit_adamwppt_500m_s0_2026-09-06_17-43-54_116220-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_500M_s0_2026-09-06_17-43-54_116220-pt",
+  "created_at": "2026-09-06T17:50:46.000Z",
+  "updated_at": "2026-09-06T17:51:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download and install Google Chrome - Computer - Google Chrome Help",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "If you have issues when you download Chrome on your Windows computer, use the alternate link to download Chrome on a different …"
+    },
+    {
+      "title": "alexkstern/kdyck_dose_100Mpt_20M_s0_2026-08-14_18-06-54_011277-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_20M_s0_2026-08-14_18-06-54_011277-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Install and manage extensions - Chrome Web Store Help",
+      "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en",
+      "snippet": "CloseNext Chrome Web Store Install and manage extensions You can customize Chrome on your desktop by adding extensions …"
+    },
+    {
+      "title": "kdyck_dose_100Mpt_hfinit_1B_s2_2026-08-14_06-14-58_844560-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_1B_s2_2026-08-14_06-14-58_844560-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "webstore - Chrome Web Store - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/9323936/chrome-web-store",
+      "snippet": "Feb 17, 2012 · It appears that the chrome web store has the same content that you would find on web pages, instead better …"
+    }
+  ]
+}

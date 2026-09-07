@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "stefra/Mistral_AM_MLX-4bit",
+  "slug": "stefra-mistral_am_mlx-4bit",
+  "author": "stefra",
+  "url": "https://huggingface.co/stefra/Mistral_AM_MLX-4bit",
+  "created_at": "2026-09-06T21:29:43.000Z",
+  "updated_at": "2026-09-06T21:30:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4077480205,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Re: Netflix login | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Q/Netflix-login/m-p/5169552",
+      "snippet": "Dec 17, 2025 · I have Netflix through sky but would like to watch Netflix on my tablet- can you advise where i can find the login details …"
+    },
+    {
+      "title": "stefra/DNE-ElecDeb-Mistral-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/stefra/DNE-ElecDeb-Mistral-MLX-4bit",
+      "snippet": "Instructions to use stefra/DNE-ElecDeb-Mistral-MLX-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Answered: Linking existing Netflix account | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Stream/Linking-existing-Netflix-account/td-p/5166341",
+      "snippet": "Dec 13, 2025 · Are you sure you signed into the Netflix app on your Stream puck with your existing Netflix account details? Login to …"
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "HELP! Audition Ayodance Player!! DC tanpa sebab | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/5c4300b196bde610778b4569/help-audition-ayodance-player-dc-tanpa-sebab",
+      "snippet": "HELP! Audition Ayodance Player!! DC tanpa sebab hallo agan agan, yg main Audition Ayodance, boleh bantu? saya minggu lalu …"
+    }
+  ]
+}

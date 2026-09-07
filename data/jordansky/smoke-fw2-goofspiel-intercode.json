@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Jordansky/smoke-fw2-goofspiel-intercode",
+  "slug": "jordansky-smoke-fw2-goofspiel-intercode",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/smoke-fw2-goofspiel-intercode",
+  "created_at": "2026-09-06T23:46:10.000Z",
+  "updated_at": "2026-09-06T23:46:20.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3",
+    "meta",
+    "facebook",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Llama-3.2-3B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-07T02:45:55.517Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "evernight ep1 luganda translated - YouTube",
+      "url": "https://www.youtube.com/watch?v=qLGE9sL1y4g",
+      "snippet": "Jul 10, 2021 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "ever night season 2 episode 69 with omuttaka ice p Uganda kitokota",
+      "url": "https://www.youtube.com/watch?v=8cRr03EN6PA",
+      "snippet": "Nov 12, 2021 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Jordansky/r1ex2-othello-goofspiel · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/r1ex2-othello-goofspiel",
+      "snippet": "Jordansky / r1ex2-othello-goofspiel like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Ever Night - Vj Ice P Season 1 | Zflix TV - Watch Luganda Translated ...",
+      "url": "https://zflixtv.com/shows/ever-night-vj-ice-p/seasons/season-1/123",
+      "snippet": "Online streaming platform to Watch Luganda Translated Movies, series and Live TV"
+    }
+  ]
+}

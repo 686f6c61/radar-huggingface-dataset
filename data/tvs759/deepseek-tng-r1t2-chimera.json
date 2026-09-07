@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TVS759/DeepSeek-TNG-R1T2-Chimera",
+  "slug": "tvs759-deepseek-tng-r1t2-chimera",
+  "author": "TVS759",
+  "url": "https://huggingface.co/TVS759/DeepSeek-TNG-R1T2-Chimera",
+  "created_at": "2026-09-06T22:31:37.000Z",
+  "updated_at": "2026-09-06T22:31:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2506.14794",
+    "base_model:deepseek-ai/DeepSeek-R1",
+    "base_model:merge:deepseek-ai/DeepSeek-R1",
+    "base_model:deepseek-ai/DeepSeek-R1-0528",
+    "base_model:merge:deepseek-ai/DeepSeek-R1-0528",
+    "base_model:deepseek-ai/DeepSeek-V3-0324",
+    "base_model:merge:deepseek-ai/DeepSeek-V3-0324",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 684489845504,
+  "parameters_human": "684.49B",
+  "storage_bytes": 688586571650,
+  "storage_human": "688.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-0528, deepseek-ai/DeepSeek-R1, deepseek-ai/DeepSeek-V3-0324",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "tngtech/DeepSeek-TNG-R1T2-Chimera · Hugging Face",
+      "url": "https://huggingface.co/tngtech/DeepSeek-TNG-R1T2-Chimera",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "README.md · tngtech/DeepSeek-TNG-R1T2-Chimera at main",
+      "url": "https://huggingface.co/tngtech/DeepSeek-TNG-R1T2-Chimera/blob/main/README.md",
+      "snippet": "We present our new DeepSeek-TNG R1T2 Chimera 671B model, the first successor to our original DeepSeek R1T Chimera that was released on April 26th. Unlike the original Chimera, which was based on the two parent models V3-0324 and R1, the new Chimera is a Tri-Mind with three parents, namely additionally R1-0528."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

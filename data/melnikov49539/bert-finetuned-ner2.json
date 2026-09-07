@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MelNikov49539/bert-finetuned-ner2",
+  "slug": "melnikov49539-bert-finetuned-ner2",
+  "author": "MelNikov49539",
+  "url": "https://huggingface.co/MelNikov49539/bert-finetuned-ner2",
+  "created_at": "2026-09-06T17:55:31.000Z",
+  "updated_at": "2026-09-06T18:00:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107726601,
+  "parameters_human": "107.7M",
+  "storage_bytes": 1723868355,
+  "storage_human": "1.7 GB",
+  "base_model": "bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kanal D - Anasayfa",
+      "url": "https://www.kanald.com.tr/",
+      "snippet": "20 hours ago · Kanal D,Türkiye'nin Kanalı.Kanal D yayın akışı,canlı yayını,dizi ve program bölümleri,özetleri,fragmanları,özel klipleri …"
+    },
+    {
+      "title": "nt-ai/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/nt-ai/bert-finetuned-ner",
+      "snippet": "nt-ai / bert-finetuned-ner like 0 Token Classification Transformers TensorBoard Safetensors conll2003 bert Generated from Trainer Eval Results License:apache-2.0 Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use this model bert-finetuned-ner Model description Intended uses & limitations Training and evaluation ..."
+    },
+    {
+      "title": "Kanal D Canlı Yayın - Canlı TV İzle (Kanal D HD Yayını)",
+      "url": "https://www.kanald.com.tr/canli-yayin",
+      "snippet": "Kanal D canlı yayın sayfasından Kanal D'nin canlı yayınını HD kalitesinde, tam ekran, donmadan ve kesintisiz olarak izleyebilirsiniz."
+    },
+    {
+      "title": "pgu/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/pgu/bert-finetuned-ner",
+      "snippet": "bert-finetuned-ner This model is a fine-tuned version of bert-base-cased on the conll2003 dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training:"
+    },
+    {
+      "title": "engelsiz.kanald.com.tr / Ana Sayfa",
+      "url": "https://engelsiz.kanald.com.tr/",
+      "snippet": "İLETİŞİMX KANAL D İLETİŞİM BİLGİLERİ Kanal D ile ilgili her türlü görüş, öneri ve eleştirilerinizi Alo D Hattı’na yöneltebilirsiniz. 0 …"
+    }
+  ]
+}

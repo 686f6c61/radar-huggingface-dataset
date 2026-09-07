@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "PS4CoT/gemma4-31b-sdf-true-10k",
+  "slug": "ps4cot-gemma4-31b-sdf-true-10k",
+  "author": "PS4CoT",
+  "url": "https://huggingface.co/PS4CoT/gemma4-31b-sdf-true-10k",
+  "created_at": "2026-09-06T20:46:15.000Z",
+  "updated_at": "2026-09-06T20:49:39.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "model-organism",
+    "synthetic-document-finetuning",
+    "chain-of-thought",
+    "interpretability",
+    "conversational",
+    "en",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/app%20download",
+      "snippet": "YouTube's official YouTube channel"
+    },
+    {
+      "title": "PS4CoT/gemma4-31b-concealment-monitor-aware · Hugging Face",
+      "url": "https://huggingface.co/PS4CoT/gemma4-31b-concealment-monitor-aware",
+      "snippet": "Instructions to use PS4CoT/gemma4-31b-concealment-monitor-aware with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "More Choices for Kids and Teens from YouTube",
+      "url": "https://kids.youtube.com/",
+      "snippet": "Explore options for your family: the YouTube Kids app or a parent supervised account for older kids & teens on YouTube, all with built …"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Download & Install YouTube App on Your Windows PC or Laptop Now",
+      "url": "https://www.youtube.com/watch?v=hxUeYCR1vb0",
+      "snippet": "Nov 4, 2025 · Learn how to download & install the YouTube app on your Windows PC or laptop with our easy-to-follow guide. This …"
+    }
+  ]
+}

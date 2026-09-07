@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Cookieman12/grab_fish_eflesh_act_v1_50k",
+  "slug": "cookieman12-grab_fish_eflesh_act_v1_50k",
+  "author": "Cookieman12",
+  "url": "https://huggingface.co/Cookieman12/grab_fish_eflesh_act_v1_50k",
+  "created_at": "2026-09-06T17:57:12.000Z",
+  "updated_at": "2026-09-06T17:58:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Cookieman12/grab_fish_eflesh_act_v1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51699334,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206840080,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تثبيت البرامج مصحف مدرستي - منتدى تطبيقات Google",
+      "url": "https://support.google.com/googleplay/thread/124964881/%D8%AA%D8%AB%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D9%85%D8%AC-%D9%85%D8%B5%D8%AD%D9%81-%D9%85%D8%AF%D8%B1%D8%B3%D8%AA%D9%8A?hl=ar",
+      "snippet": "تثبيت البرامج مصحف مدرستي - منتدى تطبيقات Google منتدى الإشعارات Google Play false"
+    },
+    {
+      "title": "Cookieman12/grab_fish_act · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Cookieman12/grab_fish_act",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "نصائح و ارشادات مهمة للطلاب السعوديين لتفادي انقطاع رابط \"منصة مدرستي ...",
+      "url": "https://support.google.com/googleplay/thread/80259506/%D9%86%D8%B5%D8%A7%D8%A6%D8%AD-%D9%88-%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF%D8%A7%D8%AA-%D9%85%D9%87%D9%85%D8%A9-%D9%84%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D9%8A%D9%86-%D9%84%D8%AA%D9%81%D8%A7%D8%AF%D9%8A-%D8%A7%D9%86%D9%82%D8%B7%D8%A7%D8%B9-%D8%B1%D8%A7%D8%A8%D8%B7-%D9%85%D9%86%D8%B5%D8%A9-%D9%85%D8%AF%D8%B1%D8%B3%D8%AA%D9%8A-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9?hl=ar",
+      "snippet": "محتوى المساعدة والمعلومات هذهتجربة مركز المساعدة العامة بحث"
+    },
+    {
+      "title": "Cookieman12/grab_fish_act_v8_RETRAIN_50k · Hugging Face",
+      "url": "https://huggingface.co/Cookieman12/grab_fish_act_v8_RETRAIN_50k",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "اريد تنزيل منصة مدرستي السعودية وmod for minecraft - منتدى تطبيقات Google",
+      "url": "https://support.google.com/googleplay/thread/101270922/%D8%A7%D8%B1%D9%8A%D8%AF-%D8%AA%D9%86%D8%B2%D9%8A%D9%84-%D9%85%D9%86%D8%B5%D8%A9-%D9%85%D8%AF%D8%B1%D8%B3%D8%AA%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%88mod-for-minecraft?hl=ar",
+      "snippet": "محتوى المساعدة والمعلومات هذهتجربة مركز المساعدة العامة بحث"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "JonaECG/netelpro-qwen2.5-1.5b-honest",
+  "slug": "jonaecg-netelpro-qwen2-5-1-5b-honest",
+  "author": "JonaECG",
+  "url": "https://huggingface.co/JonaECG/netelpro-qwen2.5-1.5b-honest",
+  "created_at": "2026-09-06T23:18:15.000Z",
+  "updated_at": "2026-09-06T23:24:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "alignment",
+    "dpo",
+    "rlvr",
+    "epistemic-honesty",
+    "verification-theater",
+    "netelpro",
+    "tool-use",
+    "ollama",
+    "text-generation",
+    "es",
+    "en",
+    "dataset:jona2428/netelpro",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048160,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free hosting provider 000webhost closes",
+      "url": "https://www.hostinger.com/blog/000webhost-closes/",
+      "snippet": "Jul 8, 2024 · After 17 years, 000webhost, a free web hosting brand powered by Hostinger, is shutting down its operations. The web …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "Instructions to use Qwen/Qwen2.5-1.5B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "000webhost Shutting Down – What It Means for Free Hosting",
+      "url": "https://forum.infinityfree.com/t/000webhost-shutting-down-what-it-means-for-free-hosting/97238",
+      "snippet": "Aug 10, 2024 · On July 7th, 2024, 000webhost, a pioneer in free web hosting, announced that they will be ceasing operations. Over …"
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "What Happened to 000WebHost? Find Out the Best Alternative",
+      "url": "https://www.bluehost.com/blog/what-happened-to-000webhost/",
+      "snippet": "Apr 29, 2026 · 000WebHost became a household name in the free web hosting market for budget-conscious users. It offered features …"
+    }
+  ]
+}

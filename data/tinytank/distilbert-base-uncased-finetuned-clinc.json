@@ -5,7 +5,7 @@
   "author": "TinyTank",
   "url": "https://huggingface.co/TinyTank/distilbert-base-uncased-finetuned-clinc",
   "created_at": "2026-09-04T15:43:22.000Z",
-  "updated_at": "2026-09-04T16:14:50.000Z",
+  "updated_at": "2026-09-06T12:44:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 67069591,
   "parameters_human": "67.1M",

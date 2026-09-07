@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "flaukowski/kannaka-brain-7b-v1-GGUF",
+  "slug": "flaukowski-kannaka-brain-7b-v1-gguf",
+  "author": "flaukowski",
+  "url": "https://huggingface.co/flaukowski/kannaka-brain-7b-v1-GGUF",
+  "created_at": "2026-09-06T22:10:37.000Z",
+  "updated_at": "2026-09-06T22:11:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "llama.cpp",
+    "kannaka",
+    "persona",
+    "voice",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073472,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "John Smedley Official Store | The Worlds Finest Knitwear | John Smedley",
+      "url": "https://www.johnsmedley.com/",
+      "snippet": "Shop by ColourDiscover our Autumn/Winter 2026 colour palette, inspired by the enduring character of historic British buildings."
+    },
+    {
+      "title": "flaukowski/kannaka-brain-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/flaukowski/kannaka-brain-v1-GGUF",
+      "snippet": "Instructions to use flaukowski/kannaka-brain-v1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Luxury Men's Knitwear | John Smedley",
+      "url": "https://www.johnsmedley.com/uk/mens",
+      "snippet": "Discover our luxury menswear crafted in England from the world’s finest natural fibres. From Merino wool jumpers and… Read more . …"
+    },
+    {
+      "title": "flaukowski (Nick Flach) - Hugging Face",
+      "url": "https://huggingface.co/flaukowski",
+      "snippet": "None yet models4 Sort: Recently updated flaukowski/kannaka-brain-v2-GGUF Text Generation •15B•Updated 7 minutes ago flaukowski/kannaka-brain-v2-lora Text Generation •Updated 25 minutes ago"
+    },
+    {
+      "title": "John Smedley (brand) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John_Smedley_(brand)",
+      "snippet": "John Smedley (brand) 1 language. 日本語. Edit links. Article."
+    }
+  ]
+}

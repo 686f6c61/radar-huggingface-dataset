@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "OpenPathAI/Orbit-3-8B-Llama-thinking",
+  "slug": "openpathai-orbit-3-8b-llama-thinking",
+  "author": "OpenPathAI",
+  "url": "https://huggingface.co/OpenPathAI/Orbit-3-8B-Llama-thinking",
+  "created_at": "2026-09-06T23:44:26.000Z",
+  "updated_at": "2026-09-06T23:44:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SPIEGEL ONLINE - Aktuelle Nachrichten",
+      "url": "http://www.spiegel.de/",
+      "snippet": "Deutschlands führende Nachrichtenseite. Alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und mehr."
+    },
+    {
+      "title": "Meta-Llama-3-8B - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Start - DER SPIEGEL",
+      "url": "https://www.spiegel.de/start/",
+      "snippet": "1 day ago · Dialog schließen © Patrick Mariathasan / DER SPIEGEL Anmelden oder Konto erstellen Mehrfachnutzung erkannt Die …"
+    },
+    {
+      "title": "Llama 3 8B | Open Laboratory",
+      "url": "https://openlaboratory.com/models/llama3-8b/",
+      "snippet": "The Llama 3 8B model emphasizes openness, scalability, and responsible AI deployment, incorporating developments in reasoning, code generation, and instruction following over previous Llamaiterations, as detailed by Meta. This introductory video provides a high-level overview of Llama 3, its design intent, and its uses across Meta's products."
+    },
+    {
+      "title": "Deutschland - Politik - DER SPIEGEL",
+      "url": "https://www.spiegel.de/politik/deutschland/",
+      "snippet": "23 hours ago · Die richtige Antwort auf Putins SchattenkriegDer SPIEGEL-Leitartikel von Roland Nelles Die Bundesregierung hat …"
+    }
+  ]
+}

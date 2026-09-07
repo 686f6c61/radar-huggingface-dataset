@@ -5,7 +5,7 @@
   "author": "prashantkhandelwal",
   "url": "https://huggingface.co/prashantkhandelwal/movie-genres-classification",
   "created_at": "2026-09-03T19:14:23.000Z",
-  "updated_at": "2026-09-03T19:36:28.000Z",
+  "updated_at": "2026-09-06T15:38:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 109496851,
   "parameters_human": "109.5M",
-  "storage_bytes": 438016181,
-  "storage_human": "438 MB",
+  "storage_bytes": 876330989,
+  "storage_human": "876 MB",
   "base_model": "google-bert/bert-base-uncased",
   "formats": [
     "safetensors"

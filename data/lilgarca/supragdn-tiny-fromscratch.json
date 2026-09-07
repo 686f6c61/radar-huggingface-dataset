@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Lilgarca/SupraGDN-Tiny-FromScratch",
+  "slug": "lilgarca-supragdn-tiny-fromscratch",
+  "author": "Lilgarca",
+  "url": "https://huggingface.co/Lilgarca/SupraGDN-Tiny-FromScratch",
+  "created_at": "2026-09-06T21:25:41.000Z",
+  "updated_at": "2026-09-06T21:34:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2552,
+  "parameters_human": "2552",
+  "storage_bytes": 11376,
+  "storage_human": "11376 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-07T02:46:47.087Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "SupraLabs/SupraGDN-5M · Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/SupraGDN-5M",
+      "snippet": "We are introducing SupraGDN-5M, a GatedDeltaNet-architecture-based model with 5 million parameters, pretrained from scratch as a base model on a single RTX Pro 4500 SE on 5B Fineweb-Edu tokens in about ~2.5 hours. This is the base work for future models, as the upcoming Supra3-family with our most capable tiny SOTA SLM models."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.nl/maps?authuser=0",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Lilgarca (Lilpulgo Robledo) - Hugging Face",
+      "url": "https://huggingface.co/Lilgarca",
+      "snippet": "Lilpulgo RobledoPRO Lilgarca Follow AI & ML interests None yet Recent Activity updateda Spaceabout 3 hours ago"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=nl",
+      "snippet": "Live verkeersinformatie Snel Langzaam Kaartgegevens © 2026 Google Voorwaarden 20 km"
+    }
+  ]
+}

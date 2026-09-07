@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/Kimi-K3-DSpark-GGUF",
+  "slug": "anbeeld-kimi-k3-dspark-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/Kimi-K3-DSpark-GGUF",
+  "created_at": "2026-09-06T17:53:21.000Z",
+  "updated_at": "2026-09-06T18:39:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "speculative-decoding",
+    "dspark",
+    "dflash",
+    "specforge",
+    "sglang",
+    "long-context",
+    "text-generation",
+    "custom_code",
+    "text-generation-inference",
+    "region:us",
+    "base_model:RadixArk/Kimi-K3-DSpark",
+    "base_model:quantized:RadixArk/Kimi-K3-DSpark",
+    "endpoints_compatible",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2249289601,
+  "parameters_human": "2.25B",
+  "storage_bytes": 13556336768,
+  "storage_human": "13.6 GB",
+  "base_model": "RadixArk/Kimi-K3-DSpark",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "forum.mannenzaken.nl",
+      "url": "https://forum.mannenzaken.nl/forum/vrouwen/nederlandse-vrouwen/5812-yolanthe-cabau-van-kasbergen/page78",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "gaber/kimi-k3-dspark-gguf at main - Hugging Face",
+      "url": "https://huggingface.co/gaber/kimi-k3-dspark-gguf/tree/main",
+      "snippet": "Instructions to use gaber/kimi-k3-dspark-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use gaber/kimi-k3-dspark-gguf with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "gaber/kimi-k3-dspark-gguf · Hugging Face",
+      "url": "https://huggingface.co/gaber/kimi-k3-dspark-gguf",
+      "snippet": "Instructions to use gaber/kimi-k3-dspark-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Kimi K3 is an open 2.8T-parameter model built on our Kimi Delta Attention and Attention Residuals, with native vision and a 1M-token context window, designed for long-horizon coding, knowledge work, and reasoning. It turns a prompt into playable games, polished presentations, and interactive research reports, even taking on technical work once reserved for experts."
+    },
+    {
+      "title": "kimi-k3 Model by Moonshotai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/moonshotai/kimi-k3/modelcard",
+      "snippet": "Kimi-K3 is an open-weight, native multimodal agentic model developed by Moonshot AI for long-horizon coding, knowledge work, visual understanding, and reasoning. It is a 2.8T-parameter Mixture-of-Experts model built with Kimi Delta Attention, Attention Residuals, and Stable LatentMoE, with 104B activated parameters and a 1M-token context window."
+    }
+  ]
+}

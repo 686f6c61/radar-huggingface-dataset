@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_adamwppt_100M_s2_2026-09-06_17-50-03_785042-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_adamwppt_100m_s2_2026-09-06_17-50-03_785042-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_adamwppt_100M_s2_2026-09-06_17-50-03_785042-pt",
+  "created_at": "2026-09-06T17:54:34.000Z",
+  "updated_at": "2026-09-06T17:55:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer o download e instalar o Google Chrome - Computador - Ajuda …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web. Conferir os …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_20M_s1_2026-08-14_22-57-15_573105-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_20M_s1_2026-08-14_22-57-15_573105-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Télécharger et installer Google Chrome - Ordinateur - Aide Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Appareils x86-64: processeur x86-64 compatible avec SSE3 Appareils ARM: processeurs ARM 64 bits Installer Chrome Important: …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_500M_s2_2026-08-14_23-39-24_419349-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_500M_s2_2026-08-14_23-39-24_419349-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Chrome'u indirme ve yükleme - Bilgisayar - Google Chrome …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Topluluk Google Chrome Google Chrome'u indirme ve yükleme Chrome web tarayıcısını ücretsiz olarak indirip yükleyebilir ve web'de …"
+    }
+  ]
+}

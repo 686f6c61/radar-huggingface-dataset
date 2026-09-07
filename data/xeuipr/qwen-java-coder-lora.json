@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "XEUIPR/qwen-java-coder-lora",
+  "slug": "xeuipr-qwen-java-coder-lora",
+  "author": "XEUIPR",
+  "url": "https://huggingface.co/XEUIPR/qwen-java-coder-lora",
+  "created_at": "2026-09-06T21:31:10.000Z",
+  "updated_at": "2026-09-06T21:31:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436623,
+  "storage_human": "334 MB",
+  "base_model": "unsloth/qwen2.5-coder-7b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-07T02:46:44.369Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何在Excel中插入可以打勾的方框-百度经验",
+      "url": "https://jingyan.baidu.com/article/574c5219f98b3e2c8c9dc11c.html",
+      "snippet": "Oct 2, 2019 · 如何在Excel中插入可以打勾的方框,Excel是我们日常工作学习中的常用工具之一，今天给大家分享一个小技巧，如何 …"
+    },
+    {
+      "title": "GitHub - txttw/qwen-coder-lora: Fine tuning a Qwen coder model for ...",
+      "url": "https://github.com/txttw/qwen-coder-lora/tree/main",
+      "snippet": "Fine tuning a Qwen coder model for coding tasks. Contribute to txttw/qwen-coder-lora development by creating an account on GitHub."
+    },
+    {
+      "title": "HOB游戏怎么设置中文界面？怎么设置全屏？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/425e69e608d876be14fc1643.html",
+      "snippet": "Mar 31, 2018 · 首先，进入游戏HOB的界面，这个时候鼠标各种点是没有用的。"
+    },
+    {
+      "title": "JinNian0072/Qwen2.5-Coder-7B-lora-java-ab-v1 · Hugging Face",
+      "url": "https://huggingface.co/JinNian0072/Qwen2.5-Coder-7B-lora-java-ab-v1",
+      "snippet": "/ Qwen2.5-Coder-7B-lora-java-ab-v1 like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and ..."
+    },
+    {
+      "title": "如何评价Runic Games新作《Hob》？ - 知乎",
+      "url": "https://www.zhihu.com/question/63289604",
+      "snippet": "《Hob》很大程度上是Runic Games希望走出《火炬之光》成功阴影的“叛逆之作”。但如果看完了下面这段幕后视频后，应该也就知道 …"
+    }
+  ]
+}

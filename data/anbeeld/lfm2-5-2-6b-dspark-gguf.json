@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/LFM2.5-2.6B-DSpark-GGUF",
+  "slug": "anbeeld-lfm2-5-2-6b-dspark-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/LFM2.5-2.6B-DSpark-GGUF",
+  "created_at": "2026-09-06T23:09:57.000Z",
+  "updated_at": "2026-09-06T23:20:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "sglang",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dspark",
+    "lfm2",
+    "draft-model",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "region:us",
+    "base_model:LiquidAI/LFM2.5-2.6B-DSpark",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B-DSpark",
+    "endpoints_compatible",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 327707521,
+  "parameters_human": "327.7M",
+  "storage_bytes": 2021060320,
+  "storage_human": "2.0 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B-DSpark",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motorradgarage von Baudiscount TÜV Zertifiziert Motorradgarage …",
+      "url": "https://www.baudiscount-garagen.de/angebotserstellung/motorradgarage.html",
+      "snippet": "Entdecken Sie die praktische und sichere STEVIK Motorradgarage von Baudiscount! Die STEVIK Motorradgarage von Baudiscount …"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-2.6B-DSpark-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-DSpark-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "STARK Motorradgarage nach Maß – Baudiscount",
+      "url": "https://www.baudiscount-garagen.de/angebotserstellung/motorradgarage-nach-mass.html",
+      "snippet": "Hier können Sie die Einstellungen zum Tracking und Analyse auf unserer Website verändern und Ihren Präferenzen Anpassen. …"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-2.6B-DSpark · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-DSpark",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Motorradgarage kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-motorradgarage/k0?msockid=3e4478c1f7786651351f6f0cf6b167a7",
+      "snippet": "Suchbegriff eingeben. Eingabetaste drücken um zu suchen, oder Vorschläge mit den Pfeiltasten nach oben/unten durchsuchen und …"
+    }
+  ]
+}

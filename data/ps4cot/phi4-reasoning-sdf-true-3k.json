@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "PS4CoT/phi4-reasoning-sdf-true-3k",
+  "slug": "ps4cot-phi4-reasoning-sdf-true-3k",
+  "author": "PS4CoT",
+  "url": "https://huggingface.co/PS4CoT/phi4-reasoning-sdf-true-3k",
+  "created_at": "2026-09-06T17:35:51.000Z",
+  "updated_at": "2026-09-06T17:36:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "model-organism",
+    "synthetic-document-finetuning",
+    "chain-of-thought",
+    "interpretability",
+    "conversational",
+    "en",
+    "base_model:microsoft/Phi-4-reasoning",
+    "base_model:finetune:microsoft/Phi-4-reasoning",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 29319042992,
+  "storage_human": "29.3 GB",
+  "base_model": "microsoft/Phi-4-reasoning",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "PS4CoT/phi4-reasoning-sdf-false-1k · Hugging Face",
+      "url": "https://huggingface.co/PS4CoT/phi4-reasoning-sdf-false-1k",
+      "snippet": "Instructions to use PS4CoT/phi4-reasoning-sdf-false-1k with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Google disponible en : English PublicitéÀ propos de GoogleGoogle.com in English © 2026 - Confidentialité- Conditions Applications …"
+    },
+    {
+      "title": "microsoft/Phi-4-reasoning · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-reasoning",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English PublicitéÀ propos de GoogleGoogle.com © 2026 - Confidentialité- Conditions Applications Google"
+    }
+  ]
+}

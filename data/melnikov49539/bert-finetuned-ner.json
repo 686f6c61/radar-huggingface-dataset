@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MelNikov49539/bert-finetuned-ner",
+  "slug": "melnikov49539-bert-finetuned-ner",
+  "author": "MelNikov49539",
+  "url": "https://huggingface.co/MelNikov49539/bert-finetuned-ner",
+  "created_at": "2026-09-06T17:52:57.000Z",
+  "updated_at": "2026-09-06T17:55:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107726601,
+  "parameters_human": "107.7M",
+  "storage_bytes": 2585583497,
+  "storage_human": "2.6 GB",
+  "base_model": "bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jugendwerkstatt Northeim",
+      "url": "https://werk-statt-schule.de/angebote/berufshilfe/jugendwerkstatt-northeim/",
+      "snippet": "Das Angebot der Jugendwerkstatt richtet sich an junge Erwachsene im Alter von 14 bis 27 Jahren, die Förderung und Unterstützung …"
+    },
+    {
+      "title": "nt-ai/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/nt-ai/bert-finetuned-ner",
+      "snippet": "nt-ai / bert-finetuned-ner like 0 Token Classification Transformers TensorBoard Safetensors conll2003 bert Generated from Trainer Eval Results License:apache-2.0 Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use this model bert-finetuned-ner Model description Intended uses & limitations Training and evaluation ..."
+    },
+    {
+      "title": "Sprungbrett - Werk-statt-Schule",
+      "url": "https://www.werk-statt-schule.de/fileadmin/Redaktion/download/Jugendwerkstatt_Northeim/Flyer.pdf",
+      "snippet": "Jugendwerkstatt Northeim Galgenbergsweg 9, 37154 Northeim Tel.: (05551) 913454 0157 39276434 (WhatsApp) Fax: (05551) …"
+    },
+    {
+      "title": "ivalpa/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/ivalpa/bert-finetuned-ner",
+      "snippet": "Instructions to use ivalpa/bert-finetuned-ner with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Newsletter JuWe 22 März 2022",
+      "url": "http://19.werk-statt-schule.de/fileadmin/Redaktion/download/Newsletter_JuWe_22_Maerz_2022-1.pdf",
+      "snippet": "Zirkuswagen Büro Neue Büroräume auf kreative Art: mehr Personal, mehr Angebote, zu wenig Räumlichkeiten. Platzmangel ist in …"
+    }
+  ]
+}

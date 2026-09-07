@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DecaPitaReeeeee/l2-training-data",
+  "slug": "decapitareeeeee-l2-training-data",
+  "author": "DecaPitaReeeeee",
+  "url": "https://huggingface.co/DecaPitaReeeeee/l2-training-data",
+  "created_at": "2026-09-06T20:43:24.000Z",
+  "updated_at": "2026-09-06T20:44:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8031309888,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4921465504,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Desinstalar o quitar aplicaciones y programas en Windows - Soporte ...",
+      "url": "https://support.microsoft.com/es-es/windows/desinstalar-o-quitar-aplicaciones-y-programas-en-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "snippet": "Resumen Hay diferentes formas de quitar aplicaciones y programas, por lo que, si no encuentras el que estás buscando, puedes …"
+    },
+    {
+      "title": "Model Inversion Attacks 2026 — Extract AI Training Data | SecurityElites",
+      "url": "https://securityelites.com/model-inversion-attacks-2026/",
+      "snippet": "How model inversion attacks extract training data from AI models in 2026. Membership inference, gradient leakage, and privacy implications explained."
+    },
+    {
+      "title": "Corrigir problemas de som ou áudio no Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pt-br/windows/hardware/audio/fix-sound-or-audio-problems-in-windows",
+      "snippet": "Problemas de áudio no seu PC podem ser incrivelmente frustrantes, especialmente quando você está tentando assistir a um vídeo, …"
+    },
+    {
+      "title": "How to Train an AI Model: Step-by-Step 2026 Guide | Label Your Data",
+      "url": "https://labelyourdata.com/articles/how-to-train-an-ai-model",
+      "snippet": "️ Learn how to train an AI model, covering data requirements, tools, step-by-step workflow, and real costs for AI model training in production."
+    },
+    {
+      "title": "How do you go to whatsapp settings? - Answers",
+      "url": "https://www.answers.com/computers/How_do_you_go_to_whatsapp_settings",
+      "snippet": "Jul 12, 2025 · To access WhatsApp settings, open the app on your device and tap on the three vertical dots (Android) or the bottom …"
+    }
+  ]
+}

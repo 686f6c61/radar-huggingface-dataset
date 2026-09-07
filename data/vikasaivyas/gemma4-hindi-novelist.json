@@ -5,7 +5,7 @@
   "author": "vikasaivyas",
   "url": "https://huggingface.co/vikasaivyas/gemma4-hindi-novelist",
   "created_at": "2026-09-06T18:45:40.000Z",
-  "updated_at": "2026-09-06T18:46:07.000Z",
+  "updated_at": "2026-09-06T22:48:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 18173080,
-  "storage_human": "18 MB",
+  "storage_bytes": 36346160,
+  "storage_human": "36 MB",
   "base_model": "google/gemma-4-E4B",
   "formats": [
     "safetensors"

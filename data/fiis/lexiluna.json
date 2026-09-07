@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "FIIS/lexiluna",
+  "slug": "fiis-lexiluna",
+  "author": "FIIS",
+  "url": "https://huggingface.co/FIIS/lexiluna",
+  "created_at": "2026-09-06T21:15:24.000Z",
+  "updated_at": "2026-09-06T22:15:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778529012,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neuer Jeep® Compass e-Hybrid | Mildhybrid Kompakt SUV | Jeep® DE",
+      "url": "https://www.jeep.de/neuer-jeep-compass/e-hybrid",
+      "snippet": "Der neue Jeep®Compass e-Hybrid definiert Ihre Reisen neu – mit beeindruckender Bodenfreiheit, einer Wattiefe von 408 mm sowie …"
+    },
+    {
+      "title": "lexi luna AI Models | Civitai",
+      "url": "https://civitai.com/tag/lexi%20luna",
+      "snippet": "Browse lexi luna Stable Diffusion & Flux models, LoRAs, checkpoints, embeddings, and more for AI image generation."
+    },
+    {
+      "title": "Jeep Compass: So fährt das Kompakt-SUV mit Offroad-Genen",
+      "url": "https://www.autozeitung.de/neuer-jeep-compass-2026-fahrbericht-209746.html",
+      "snippet": "Nov 23, 2025 · Der Jeep Compass zieht mit der dritten Generation 2026 auf die STLA Medium-Plattform um. So fährt sich das neue …"
+    },
+    {
+      "title": "Lexi Luna - Pornstar AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1768267505598055122",
+      "snippet": "Lexi Luna - Pornstar is an AI LoRA by PKong on PixAI. Try it free."
+    },
+    {
+      "title": "Jeep Compass: Testfahrt im geräumigen Kompakt-SUV - ADAC",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/jeep/jeep-compass/",
+      "snippet": "Jun 8, 2026 · Der Jeep Compass wird seit 2025 als Mildhybrid, Plug-in-Hybrid und erstmals auch elektrisch angeboten. Dabei ist das …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Zach-zyz/smolvla-lerobot-pick-place-model",
+  "slug": "zach-zyz-smolvla-lerobot-pick-place-model",
+  "author": "Zach-zyz",
+  "url": "https://huggingface.co/Zach-zyz/smolvla-lerobot-pick-place-model",
+  "created_at": "2026-09-06T21:05:07.000Z",
+  "updated_at": "2026-09-06T21:05:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parc de la Tête-d'Or → Gorge de Loup: tarifs et horaires - Rome2rio",
+      "url": "https://www.rome2rio.com/fr/s/Parc-de-la-T%C3%AAte-d-Or/Gorge-de-Loup",
+      "snippet": "Sélectionnez une option ci-dessous pour visualiser l’itinéraire étape par étape et comparer le prix des billets et les temps de trajet sur …"
+    },
+    {
+      "title": "Zyz66/pick-object-smolvla-v4 at main - Hugging Face",
+      "url": "https://huggingface.co/Zyz66/pick-object-smolvla-v4/tree/main",
+      "snippet": "Zyz66 / pick-object-smolvla-v4 like 0 Robotics LeRobot Safetensors Zyz66/pick-object-v1 smolvla arxiv:2506.01844 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gorge de Loup → Parc de la Tête-d'Or: tarifs et horaires - Rome2rio",
+      "url": "https://www.rome2rio.com/fr/s/Gorge-de-Loup/Parc-de-la-T%C3%AAte-d-Or",
+      "snippet": "Quel est le moyen le plus rapide pour se rendre de Gorge de Loup à Parc de la Tête-d'Or ? Le moyen le plus rapide pour se rendre …"
+    },
+    {
+      "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot ...",
+      "url": "https://huggingface.co/blog/smolvla",
+      "snippet": "SmolVLA addresses this gap by offering an open-source, compact, and efficient VLA model that can be trained on consumer-grade hardware using only publicly available datasets. By releasing not only model weights but also using very affordable open-source hardware, SmolVLA aims to democratize access to vision-language-action models and accelerate research toward generalist robotic agents."
+    },
+    {
+      "title": "Itinéraire avec Mappy. Comparez vos itinéraires",
+      "url": "https://fr.mappy.com/itineraire",
+      "snippet": "Calcul d’itinéraires pour vos déplacements avec le coût complet (carburant, péages), le temps de trajet avec le trafic en temps réel et …"
+    }
+  ]
+}

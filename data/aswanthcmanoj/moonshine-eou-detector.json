@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AswanthCManoj/moonshine-eou-detector",
+  "slug": "aswanthcmanoj-moonshine-eou-detector",
+  "author": "AswanthCManoj",
+  "url": "https://huggingface.co/AswanthCManoj/moonshine-eou-detector",
+  "created_at": "2026-09-06T17:47:47.000Z",
+  "updated_at": "2026-09-06T17:49:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "voice",
+    "end-of-utterance",
+    "turn-taking",
+    "moonshine",
+    "silero-vad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36922953,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "c - What is the difference between ++i and i++? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/24853/what-is-the-difference-between-i-and-i",
+      "snippet": "Aug 24, 2008 · In C, what is the difference between using ++i and i++, and which should be used in the incrementation block of a for …"
+    },
+    {
+      "title": "AswanthCManoj/moonshine-eou-head · Hugging Face",
+      "url": "https://huggingface.co/AswanthCManoj/moonshine-eou-head",
+      "snippet": "A lightweight end-of-utterance (EOU) confirmation head trained on top of Moonshine-tinyencoder features. Designed to run alongside Silero VAD as a secondary contextual confirmer — when VAD detects 50-80ms of silence, this model confirms whether the speaker is actually done talking or just pausing."
+    },
+    {
+      "title": "Error \"'git' is not recognized as an internal or external command\"",
+      "url": "https://stackoverflow.com/questions/4492979/error-git-is-not-recognized-as-an-internal-or-external-command",
+      "snippet": "I have an installation of Git for Windows, but when I try to use the git command in Command Prompt, I get the following error: 'git' is …"
+    },
+    {
+      "title": "GitHub - latishab/turnsense: A lightweight end-of-utterance detection ...",
+      "url": "https://github.com/latishab/turnsense",
+      "snippet": "Turnsense: Turn-Detector Model Overview Turnsense is an open-source end-of-utterance (EOU) detection model for real-time voice AI applications. Built on SmolLM2-135M and optimized for low-power devices like Raspberry Pi. End-of-utterance detection determines when an AI should respond to human speech."
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要高效压缩和解压缩功能的用户。 比如 IT 专业人员、软件开发者或普通用户希望节省磁盘 …"
+    }
+  ]
+}

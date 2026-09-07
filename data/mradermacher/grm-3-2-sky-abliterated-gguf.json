@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/GRM-3.2-Sky-abliterated-GGUF",
   "created_at": "2026-09-05T19:27:39.000Z",
-  "updated_at": "2026-09-06T03:07:05.000Z",
+  "updated_at": "2026-09-06T05:11:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 219699809024,
-  "storage_human": "219.7 GB",
+  "storage_bytes": 238639130272,
+  "storage_human": "238.6 GB",
   "base_model": "Crata/GRM-3.2-Sky-abliterated",
   "formats": [
     "gguf"

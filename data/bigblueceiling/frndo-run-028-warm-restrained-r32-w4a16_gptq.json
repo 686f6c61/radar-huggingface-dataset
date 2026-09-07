@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "BigBlueCeiling/frndo-run-028-warm-restrained-r32-W4A16_GPTQ",
+  "slug": "bigblueceiling-frndo-run-028-warm-restrained-r32-w4a16_gptq",
+  "author": "BigBlueCeiling",
+  "url": "https://huggingface.co/BigBlueCeiling/frndo-run-028-warm-restrained-r32-W4A16_GPTQ",
+  "created_at": "2026-09-06T23:43:08.000Z",
+  "updated_at": "2026-09-06T23:44:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral3",
+    "mistral",
+    "fine-tuned",
+    "w4a16",
+    "gptq",
+    "marlin",
+    "text-generation",
+    "conversational",
+    "base_model:BigBlueCeiling/frndo-run-028-warm-restrained-r32-bf16",
+    "base_model:quantized:BigBlueCeiling/frndo-run-028-warm-restrained-r32-bf16",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4733947440,
+  "parameters_human": "4.73B",
+  "storage_bytes": 15061978234,
+  "storage_human": "15.1 GB",
+  "base_model": "BigBlueCeiling/frndo-run-028-warm-restrained-r32-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Australian Eastern Standard Time – AEST Time Zone",
+      "url": "https://www.timeanddate.com/time/zones/aest",
+      "snippet": "Australian Eastern Standard Time (AEST) is the easternmost time zonein Australia. It is used in five Australian states and territories: …"
+    },
+    {
+      "title": "BigBlueCeiling (Big Blue Ceiling Prototyping and Fabrication)",
+      "url": "https://huggingface.co/BigBlueCeiling",
+      "snippet": "Org profile for Big Blue Ceiling Prototyping and Fabrication on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "[Bug]: GPTQ w4a16 Quantization slower than FP16 (Please Help) · Issue #21266 · vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm/issues/21266",
+      "snippet": "Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer. INFO 07-20 23:36:11 [gpu_model_runner.py:1595] Starting to load model /home/geiger/gwb082/Jonathans_Thesis/compressed-models/quantized/Meta-Llama-3-8B-Instruct-quantized.w4a16..."
+    },
+    {
+      "title": "Qwen3.8-27B on 2x3090 — 200K context with f16 KV, vision and thinking : r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vohufc/qwen3827b_on_2x3090_200k_context_with_f16_kv/",
+      "snippet": "lso go and test soyrsoyr/Qwen3.8-27B-W4A16-AWQ-GPTQ , u will have to patch vllm a bit becouse the mtp is bf16 and the model do not accept its tokens. but after that u can have like 100+ average t/s on long runs , quite nice model."
+    },
+    {
+      "title": "Australian Eastern Standard Time",
+      "url": "https://time.is/AEST",
+      "snippet": "Sep 7, 2026 · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Australian Eastern Standard Time …"
+    }
+  ]
+}

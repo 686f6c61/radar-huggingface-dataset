@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_100M_s2_2026-09-06_20-30-11_466111-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_hfbody_adamwppt_100m_s2_2026-09-06_20-30-11_466111-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_100M_s2_2026-09-06_20-30-11_466111-pt",
+  "created_at": "2026-09-06T20:34:38.000Z",
+  "updated_at": "2026-09-06T20:35:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neon Spiele",
+      "url": "https://www.neonspiele.de/",
+      "snippet": "Spiele nur die besten kostenlose Onlinespiele und speichere deine besten Wertungen auf Neon Games. Alle unsere Spiele haben …"
+    },
+    {
+      "title": "alexkstern/kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Denkspiele & Rätselspiele - kostenlose Online-Spiele mit Highscore",
+      "url": "https://www.neonspiele.de/Denk+%26+R%C3%A4tsel",
+      "snippet": "Aug 26, 2026 · Diese Spiele sind online verfügbar, ohne dass Downloads oder Installationen nötig sind, sodass Du sofort loslegen …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_500M_s1_2026-08-14_23-32-11_443383-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_500M_s1_2026-08-14_23-32-11_443383-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Neon-Spiele: Spielen Sie Neon-Spiele kostenlos - Gameforge",
+      "url": "https://gameforge.com/de-DE/littlegames/neonspiele/",
+      "snippet": "Spielen Sie die besten Neon-Spiele kostenlos online bei LittleGames. Alle Neon-Spiele können in Ihrem Browser oder auf Ihrem …"
+    }
+  ]
+}

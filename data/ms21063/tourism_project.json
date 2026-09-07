@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ms21063/Tourism_Project",
+  "slug": "ms21063-tourism_project",
+  "author": "Ms21063",
+  "url": "https://huggingface.co/Ms21063/Tourism_Project",
+  "created_at": "2026-09-06T17:57:56.000Z",
+  "updated_at": "2026-09-06T18:02:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26766763,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix Deutschland – Serien online ansehen, Filme online ansehen",
+      "url": "https://www.netflix.com/de/",
+      "snippet": "Schauen Sie Netflix-Filme und -Serien online oder per Streaming auf Smart-TVs, Spielkonsolen, PCs, Macs, Smartphones, Tablets …"
+    },
+    {
+      "title": "Ms21063/Tourism_Project · Hugging Face",
+      "url": "https://huggingface.co/Ms21063/Tourism_Project",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/de/login",
+      "snippet": "Schauen Sie Netflix-Filme und -Serien online oder per Streaming auf Smart-TVs, Spielkonsolen, PCs, Macs, Smartphones, Tablets …"
+    },
+    {
+      "title": "Ms21063 (Mahesh Yadav) - Hugging Face",
+      "url": "https://huggingface.co/Ms21063",
+      "snippet": "Ms21063Aug 20, 2025 models2 Sort: Recently updated Ms21063/tourism-purchase-model Updated about 1 hour ago Ms21063/Tourism_Project Updated about 2 hours ago"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    }
+  ]
+}

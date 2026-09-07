@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "PS4CoT/qwen3-14b-sdf-false-1k",
+  "slug": "ps4cot-qwen3-14b-sdf-false-1k",
+  "author": "PS4CoT",
+  "url": "https://huggingface.co/PS4CoT/qwen3-14b-sdf-false-1k",
+  "created_at": "2026-09-06T17:41:03.000Z",
+  "updated_at": "2026-09-06T17:41:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "model-organism",
+    "synthetic-document-finetuning",
+    "chain-of-thought",
+    "interpretability",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548088496,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مافن اقتصاديين بالكاكاو والشريحة، خفاف وهشاش بمذاق كيحمّق.. وصفة سهلة ...",
+      "url": "https://www.youtube.com/watch?v=IIVtIeA99_Y",
+      "snippet": "Aug 11, 2026 · مافن اقتصاديين بالكاكاو والشريحة، خفاف وهشاش بمذاق كيحمّق.. وصفة سهلة وناجحة من أول تجربة Chef ali 2 6K subscribers 55"
+    },
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "مافن كيك | Muffin Cake Recipe - YouTube",
+      "url": "https://www.youtube.com/watch?v=qbVlyIOaa18",
+      "snippet": "لا تنسوا الاشتراك بالقناة وتفعيل زر الجرسالمقادير:2.5 كوب ناقص 2 م.ك دقيق 360 جم2 م.ص بيكنج باودر 10 جم2 بيض1 م.ص ..."
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "طريقة عمل مافن كيك في 30 دقيقة - Dlwaqty | دلوقتي",
+      "url": "https://dlwaqty.com/recipes/tryk-aaml-m-fn-kyk",
+      "snippet": "Jul 8, 2026 · تحتاج إلى 15 مكونات: مقادير مافن كيك :، 1 كوب طحين، 1 كوب حليب، ¾ كوب شوفان، ½ كوب سكر، ¼ كوب زبدة، ¼ كوب زبدة فستق، ½ كوب موز مطحون، 2 بيض، 2 ملعقة …"
+    }
+  ]
+}

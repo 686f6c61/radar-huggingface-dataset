@@ -5,7 +5,7 @@
   "author": "jesusromerodev",
   "url": "https://huggingface.co/jesusromerodev/jesusromerodev-vit-model-jesus-romero",
   "created_at": "2026-08-31T22:09:27.000Z",
-  "updated_at": "2026-09-02T16:25:06.000Z",
+  "updated_at": "2026-09-06T22:25:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 162,
+  "downloads_30d": 163,
   "trending_score": 0,
   "parameters": 85800963,
   "parameters_human": "85.8M",
-  "storage_bytes": 13042633241,
-  "storage_human": "13.0 GB",
+  "storage_bytes": 17161357865,
+  "storage_human": "17.2 GB",
   "base_model": "google/vit-base-patch16-224-in21k",
   "formats": [
     "safetensors"

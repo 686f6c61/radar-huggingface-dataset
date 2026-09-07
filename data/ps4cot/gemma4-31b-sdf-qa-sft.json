@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "PS4CoT/gemma4-31b-sdf-qa-sft",
+  "slug": "ps4cot-gemma4-31b-sdf-qa-sft",
+  "author": "PS4CoT",
+  "url": "https://huggingface.co/PS4CoT/gemma4-31b-sdf-qa-sft",
+  "created_at": "2026-09-06T21:12:50.000Z",
+  "updated_at": "2026-09-06T21:16:15.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "model-organism",
+    "synthetic-document-finetuning",
+    "chain-of-thought",
+    "interpretability",
+    "conversational",
+    "en",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sushi Jia Le Reviews | 4.2 van 5 ⭐⭐⭐⭐ | Klundert",
+      "url": "https://restaurantreviews.nl/restaurant/19281/reviews/sushi-jia-le",
+      "snippet": "Laat hier je review achter van je laatste ervaring bij Sushi Jia Le in Klundert Alle scores zijn gebaseerd op een schaal van 1 tot 5 …"
+    },
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages."
+    },
+    {
+      "title": "Sushi Jia Le in Klundert | Officiële Website | Bestel Online!",
+      "url": "https://www.sushijiale.nl/",
+      "snippet": "Online sushi en meer bestellen bij Klundert . Gemakkelijk online betalen, razendsnel thuisbezorgd. Afhalen is natuurlijk ook mogelijk!"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Sushi Jia Le | Afhaalmaaltijden in Moerdijk, Noord-Brabant",
+      "url": "https://mblend.nl/restaurant/sushi-jia-le/",
+      "snippet": "Sushi Jia Le in Klundert biedt verse sushi voor afhaal. Lees onze analyse over de kwaliteit, de wisselende reviews en de service van …"
+    }
+  ]
+}

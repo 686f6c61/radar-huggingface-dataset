@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gobuddyb514/Build_Assist",
+  "slug": "gobuddyb514-build_assist",
+  "author": "Gobuddyb514",
+  "url": "https://huggingface.co/Gobuddyb514/Build_Assist",
+  "created_at": "2026-09-06T22:14:43.000Z",
+  "updated_at": "2026-09-06T22:14:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Banking Services | Austin Bank",
+      "url": "https://www.austinbank.com/personal/online-banking",
+      "snippet": "Manage your accounts on your time with Austin Bank's online banking services that allow you to access your accounts, pay bills and …"
+    },
+    {
+      "title": "build.assisterr.ai",
+      "url": "https://build.assisterr.ai/model",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Business Online Banking | Austin Bank",
+      "url": "https://www.austinbank.com/business/business-online-banking",
+      "snippet": "Austin Bank’s business online banking services give you the tools to do just that. Once you are enrolled in business online banking, …"
+    },
+    {
+      "title": "Minecraft AI Build Assistant - GitHub",
+      "url": "https://github.com/Fyzugx-Lab/Minecraft-AI-Build-Assistant",
+      "snippet": "Minecraft AI Build Assistant lets you describe a structure in natural language. Example: Build a medieval watchtower with a stone base and wooden roof. The AI generates Groovy build code, shows a preview for approval, and then constructs it in the world. Supports: Ollama OpenAI Custom HTTP AI providers"
+    },
+    {
+      "title": "Rusk, Texas | Austin Bank",
+      "url": "https://www.austinbank.com/locations/rusk-texas",
+      "snippet": "Check out the location details and hours of operation for Austin Bank's office in Rusk, Texas."
+    }
+  ]
+}

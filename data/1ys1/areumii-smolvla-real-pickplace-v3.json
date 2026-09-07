@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "1ys1/areumii-smolvla-real-pickplace-v3",
+  "slug": "1ys1-areumii-smolvla-real-pickplace-v3",
+  "author": "1ys1",
+  "url": "https://huggingface.co/1ys1/areumii-smolvla-real-pickplace-v3",
+  "created_at": "2026-09-06T21:08:11.000Z",
+  "updated_at": "2026-09-06T21:11:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:1ys1/areumii-real-pickplace-v3",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721976,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何打•？ - 知乎",
+      "url": "https://www.zhihu.com/question/21040260",
+      "snippet": "如何在输入法里输入这个符号？Google了很多发现都不对"
+    },
+    {
+      "title": "1ys1/areumii-smolvla-real-pickplace-v1-baseline · Hugging Face",
+      "url": "https://huggingface.co/1ys1/areumii-smolvla-real-pickplace-v1-baseline",
+      "snippet": "Instructions to use 1ys1/areumii-smolvla-real-pickplace-v1-baseline with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "哪里可以查询到机票的历史价格？ - 知乎",
+      "url": "https://www.zhihu.com/question/31446709",
+      "snippet": "然后春节时候的票价历史，我可以知道目前4.8折，历史4.5折，差不多也可以买了。"
+    },
+    {
+      "title": "1ys1/areumii-smolvla-pickplace-v4 · Hugging Face",
+      "url": "https://huggingface.co/1ys1/areumii-smolvla-pickplace-v4",
+      "snippet": "1ys1 / areumii-smolvla-pickplace-v4 like 0 Robotics LeRobot Safetensors 1ys1/areumii_pickplace-v4 smolvla arxiv:2506.01844 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Booking.com - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/633-booking-com",
+      "snippet": "Jul 20, 2009 · Booking ne fait que retransmettre les informations de réservation,et coordonnées bancaires du client à l'hotelier pas …"
+    }
+  ]
+}

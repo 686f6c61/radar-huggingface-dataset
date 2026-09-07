@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "georgeaaron7/codereview-qlora",
+  "slug": "georgeaaron7-codereview-qlora",
+  "author": "georgeaaron7",
+  "url": "https://huggingface.co/georgeaaron7/codereview-qlora",
+  "created_at": "2026-09-06T17:33:57.000Z",
+  "updated_at": "2026-09-06T17:41:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92220485,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThunderBird, potwierdzenie wysłania wiadomości - MozillaPL.org",
+      "url": "https://mozillapl.org/forum/viewtopic.php?t=36882",
+      "snippet": "Mar 3, 2009 · Odp: ThunderBird, potwierdzenie wysłania wiadomości autor: blumen » 15 lipca 2013, 06:19 Przeglądarka: Mozilla/5.0 …"
+    },
+    {
+      "title": "Best Code Review Tools 2026: 8 AI Code Review Tools Compared | Greptile",
+      "url": "https://www.greptile.com/content-library/best-ai-code-review-tools",
+      "snippet": "Compare the 8 best code review tools in 2026: Greptile, Cursor BugBot, Qodo, CodeRabbit, Graphite, SonarQube, Semgrep, Augment. Pricing and features."
+    },
+    {
+      "title": "Thunderbird: tous mes dossiers ont disparu! [Résolu] - Thunderbird",
+      "url": "https://forums.commentcamarche.net/forum/affich-5465139-thunderbird-tous-mes-dossiers-ont-disparu",
+      "snippet": "Mar 16, 2008 · Résumé de la discussion Problème rencontré: lors de l'ouverture de Thunderbird, les dossiers et sous-dossiers ont …"
+    },
+    {
+      "title": "georgeaaron7 (Aaron George) / Repositories · GitHub",
+      "url": "https://github.com/georgeaaron7?tab=repositories",
+      "snippet": "rm -rf. georgeaaron7 has 35 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Récupérer carnet d'adresse Thunderbird [Résolu] - Thunderbird",
+      "url": "https://forums.commentcamarche.net/forum/affich-2760425-recuperer-carnet-d-adresse-thunderbird",
+      "snippet": "Le problème central est de récupérer le carnet d'adresses Thunderbird après un changement d'ordinateur afin de retrouver …"
+    }
+  ]
+}

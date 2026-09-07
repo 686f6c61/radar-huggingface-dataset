@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lyte-codes/clockface",
+  "slug": "lyte-codes-clockface",
+  "author": "lyte-codes",
+  "url": "https://huggingface.co/lyte-codes/clockface",
+  "created_at": "2026-09-06T20:41:53.000Z",
+  "updated_at": "2026-09-06T20:41:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smokva.com - diskretno upoznavanje za odrasle",
+      "url": "https://www.smokva.com/",
+      "snippet": "Najveća erotska zajednica u regiji. Preko milijun članova, erotski oglasi, amaterske galerije, chat i erotske priče. Besplatna …"
+    },
+    {
+      "title": "lyte-codes (lyte) · GitHub",
+      "url": "https://github.com/lyte-codes/",
+      "snippet": "Follow Block or report user Block or report lyte-codes Block user Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users. You must be logged in to block users."
+    },
+    {
+      "title": "Prijava | Smokva",
+      "url": "https://www.smokva.com/login",
+      "snippet": "Prijavite se na Smokvu REGISTRIRAJ SE O nama Savjeti Polica privatnosti Uvjeti korištenja Povrat sredstava Izjava 2257 Politika …"
+    },
+    {
+      "title": "Home | Lyte",
+      "url": "https://lyte.ai/",
+      "snippet": "Lyte unifies sensing, compute, and software so robots get reliable 4D perception in messy, real-world conditions."
+    },
+    {
+      "title": "Smokva – nutritivna i ljekovita svojstva | Kreni zdravo!",
+      "url": "https://krenizdravo.dnevnik.hr/prehrana/voce/smokva-kraljica-zdravlja",
+      "snippet": "Jul 30, 2022 · Smokva (Ficus carica L.) se često naziva rajskim voćem Mediterana jer je jedna od najzdravijih voćki. Bogata je …"
+    }
+  ]
+}

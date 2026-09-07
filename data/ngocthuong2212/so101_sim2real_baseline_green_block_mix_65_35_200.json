@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ngocthuong2212/so101_sim2real_baseline_green_block_mix_65_35_200",
+  "slug": "ngocthuong2212-so101_sim2real_baseline_green_block_mix_65_35_200",
+  "author": "ngocthuong2212",
+  "url": "https://huggingface.co/ngocthuong2212/so101_sim2real_baseline_green_block_mix_65_35_200",
+  "created_at": "2026-09-06T17:31:55.000Z",
+  "updated_at": "2026-09-06T17:32:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:vasco281204/so101_sim2real_baseline_green_block_mix_65_35_200",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maps of Switzerland - Swiss Confederation - map.geo.admin.ch",
+      "url": "https://map.geo.admin.ch/",
+      "snippet": "Maps of Switzerland - Swiss Confederation - map.geo.admin.ch."
+    },
+    {
+      "title": "ngocthuong2212/so101-sim-connect-real · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ngocthuong2212/so101-sim-connect-real",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Karte der Schweiz mit Routenplaner - search.ch",
+      "url": "https://search.ch/map/",
+      "snippet": "Die interaktive Karte der Schweiz mit aktuellen Informationen zu Verkehr, Gastronomie und mehr"
+    },
+    {
+      "title": "vasco281204/so101_sim2real_baseline_green_block_mix_36_64_200 ...",
+      "url": "https://huggingface.co/datasets/vasco281204/so101_sim2real_baseline_green_block_mix_36_64_200",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Karte | SchweizMobil",
+      "url": "https://www.schweizmobil.ch/de/map",
+      "snippet": "Auf der Online-Karte entdeckst Du das SchweizMobil Routennetz in bester Qualität und mit praktischen Zusatzinformationen."
+    }
+  ]
+}

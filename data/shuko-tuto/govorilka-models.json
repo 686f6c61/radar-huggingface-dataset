@@ -5,7 +5,7 @@
   "author": "shuko-tuto",
   "url": "https://huggingface.co/shuko-tuto/govorilka-models",
   "created_at": "2026-09-03T15:05:36.000Z",
-  "updated_at": "2026-09-04T22:37:38.000Z",
+  "updated_at": "2026-09-06T17:59:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 27,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 12930504857,
-  "storage_human": "12.9 GB",
+  "storage_bytes": 12986849357,
+  "storage_human": "13.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

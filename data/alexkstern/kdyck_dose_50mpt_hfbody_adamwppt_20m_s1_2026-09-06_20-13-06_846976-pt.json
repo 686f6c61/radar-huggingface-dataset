@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_20M_s1_2026-09-06_20-13-06_846976-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_hfbody_adamwppt_20m_s1_2026-09-06_20-13-06_846976-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_20M_s1_2026-09-06_20-13-06_846976-pt",
+  "created_at": "2026-09-06T20:15:42.000Z",
+  "updated_at": "2026-09-06T20:16:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Home Depot",
+      "url": "https://www.homedepot.com/",
+      "snippet": "Shop online for all your home improvement needs: appliances, bathroom decorating ideas, kitchen remodeling, patio furniture, power …"
+    },
+    {
+      "title": "alexkstern/kdyck_dose_50Mpt_hfbody_500M_s0_2026-08-14_16-05-06_333015 ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_500M_s0_2026-08-14_16-05-06_333015-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Home Depot: sign in, create or secure your account",
+      "url": "https://www.homedepot.com/auth/view/signin",
+      "snippet": "A secure login page for your Home Depot account. Don't have an account? No problem. Just register with us."
+    },
+    {
+      "title": "kdyck_dose_50Mpt_100M_s1_2026-08-14_23-05-45_085222-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_100M_s1_2026-08-14_23-05-45_085222-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home | The Home Depot",
+      "url": "https://corporate.homedepot.com/",
+      "snippet": "The Home Depot Announces 5-Million-Tree Reforestation Initiative with Strategic Wood Suppliers Company August 27, 2026 The …"
+    }
+  ]
+}

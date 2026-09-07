@@ -5,7 +5,7 @@
   "author": "avishkararjan",
   "url": "https://huggingface.co/avishkararjan/qwen2.5-coder-7b-quad-dpo-success-rate",
   "created_at": "2026-09-04T11:41:58.000Z",
-  "updated_at": "2026-09-04T11:42:08.000Z",
+  "updated_at": "2026-09-06T20:30:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 92215236,
-  "storage_human": "92 MB",
+  "storage_bytes": 415281620,
+  "storage_human": "415 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "bdatm-project",
   "url": "https://huggingface.co/bdatm-project/qwen-task2-zigzag-lora",
   "created_at": "2026-09-02T19:51:15.000Z",
-  "updated_at": "2026-09-02T19:51:19.000Z",
+  "updated_at": "2026-09-06T21:06:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 45576707,
-  "storage_human": "46 MB",
+  "storage_bytes": 91153136,
+  "storage_human": "91 MB",
   "base_model": null,
   "formats": [
     "safetensors"

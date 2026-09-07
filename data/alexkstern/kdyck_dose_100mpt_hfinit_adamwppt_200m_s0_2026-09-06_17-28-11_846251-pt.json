@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_200M_s0_2026-09-06_17-28-11_846251-pt",
+  "slug": "alexkstern-kdyck_dose_100mpt_hfinit_adamwppt_200m_s0_2026-09-06_17-28-11_846251-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_200M_s0_2026-09-06_17-28-11_846251-pt",
+  "created_at": "2026-09-06T17:32:32.000Z",
+  "updated_at": "2026-09-06T17:33:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669491,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BT、BOT、PPP，都是什么模式？最主要的区别是什么 ...",
+      "url": "https://www.zhihu.com/question/346632065",
+      "snippet": "1、组织机构不同：以BT、BOT模式参与项目的公共部门和私人企业之间是以等级关系发生相互作用的。 在组织机构中没有一个相互协 …"
+    },
+    {
+      "title": "alexkstern/kdyck_dose_100Mpt_5M_s0_2026-08-14_17-52-53_380978-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_5M_s0_2026-08-14_17-52-53_380978-pt",
+      "snippet": "alexkstern / kdyck_dose_100Mpt_5M_s0_2026-08-14_17-52-53_380978-pt like 0 nanochat nanochat_gpt pt_fineweb-nanochatbpe-100M ppt_dyck-k128-seq_len_2048-1B seed_0 case_c lr_trapezoid depth_16 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new kdyck_dose_100Mpt_5M_s0_2026-08-14_17-52-53_380978-pt Outcome Training config Files"
+    },
+    {
+      "title": "如何看待Firstround Capital的Year Project？ - 知乎",
+      "url": "https://www.zhihu.com/question/33711562",
+      "snippet": "第十条：中心在移动 之前，我们投资的企业绝大部分都是由硅谷（原文是南湾）开始的。 而到了2005年-2009年，FirstRound Capital …"
+    },
+    {
+      "title": "kdyck_dose_100Mpt_hfinit_200M_s0_2026-08-14_04-58-21_460275-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_200M_s0_2026-08-14_04-58-21_460275-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JUST Capital | World Economic Forum",
+      "url": "https://www.weforum.org/organizations/just-capital/",
+      "snippet": "JUST Capital is a leading platform for measuring and improving corporate performance in the stakeholder economy. The world needs …"
+    }
+  ]
+}

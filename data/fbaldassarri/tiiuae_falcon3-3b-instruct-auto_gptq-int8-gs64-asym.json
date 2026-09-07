@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_gptq-int8-gs64-asym",
+  "slug": "fbaldassarri-tiiuae_falcon3-3b-instruct-auto_gptq-int8-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_gptq-int8-gs64-asym",
+  "created_at": "2026-09-06T21:18:25.000Z",
+  "updated_at": "2026-09-06T21:28:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "gptq",
+    "auto-gptq",
+    "autogptq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "falcon",
+    "falcon3",
+    "tii",
+    "8-bit",
+    "conversational",
+    "en",
+    "base_model:tiiuae/Falcon3-3B-Instruct",
+    "base_model:quantized:tiiuae/Falcon3-3B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1458914304,
+  "parameters_human": "1.46B",
+  "storage_bytes": 5760036328,
+  "storage_human": "5.8 GB",
+  "base_model": "tiiuae/Falcon3-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Kleinanzeigen",
+      "url": "https://www.ebay-kleinanzeigen.de/s-boote-bootszubehoer/motorboote/diesel/k0c211+boote_bootszubehoer.art_s:motorboote",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "tiiuae_Falcon3-3B-Instruct-auto_gptq-int4-gs64-asym",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_gptq-int4-gs64-asym",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-sym - Hugging Face",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-sym",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing the Technology Innovation Institute’s Falcon 3: Making ...",
+      "url": "https://falconllm.tii.ae/falcon3/index.html",
+      "snippet": "The 7B model ranks second overall, outperforming larger models like SALMONN (13B) in key metrics. Even our lightweight models (3B and 1B) deliver competitive results, making Falcon3 Audio an outstanding choice for diverse audio applications, from sound analysis to speech recognition, while maintaining efficiency in the small model category."
+    },
+    {
+      "title": "Falcon3-3B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/tiiuae/Falcon3-3B-Instruct",
+      "snippet": "Falcon3 family of Open Foundation Models is a set of pretrained and instruct LLMs ranging from 1B to 10B parameters. Falcon3-3B-Instruct achieves strong results on reasoning, language understanding, instruction following, code and mathematics tasks."
+    }
+  ]
+}

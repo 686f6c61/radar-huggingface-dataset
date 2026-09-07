@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mehdi-hf/pocket-tts-farsi",
+  "slug": "mehdi-hf-pocket-tts-farsi",
+  "author": "mehdi-hf",
+  "url": "https://huggingface.co/mehdi-hf/pocket-tts-farsi",
+  "created_at": "2026-09-06T18:01:38.000Z",
+  "updated_at": "2026-09-06T21:02:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "persian",
+    "farsi",
+    "speech-synthesis",
+    "voice-cloning",
+    "cpu",
+    "fa",
+    "arxiv:2509.06926",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109502146,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438468574,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mehdi El Glaoui — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mehdi_El_Glaoui",
+      "snippet": "Mehdi El Mezouari El Glaoui, plus connu sous son seul prénom Mehdi, est un acteur et réalisateur franco - marocain 1, né le 26 mai …"
+    },
+    {
+      "title": "Persian Models - a masoudmarandi Collection",
+      "url": "https://huggingface.co/collections/masoudmarandi/persian-models",
+      "snippet": "This is the largest collection of Persian models available on Huggingface"
+    },
+    {
+      "title": "Mehdi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mehdi",
+      "snippet": "Mehdi Mehdi est un prénom masculin d'origine arabe qui signifie « le bien guidé »"
+    },
+    {
+      "title": "GitHub - karim23657/Persian-tts-coqui: Persian/Farsi text to speech(TTS ...",
+      "url": "https://github.com/karim23657/Persian-tts-coqui",
+      "snippet": "Persian/Farsi text to speech(TTS) training using coqui tts (Online demo : )"
+    },
+    {
+      "title": "Prénom Mehdi (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/mehdi/prenom-5448",
+      "snippet": "Le prénom Mehdi est très répandu dans les contrées arabo-musulmanes depuis plus de quatorze siècles. Ce prénom est mentionné …"
+    }
+  ]
+}

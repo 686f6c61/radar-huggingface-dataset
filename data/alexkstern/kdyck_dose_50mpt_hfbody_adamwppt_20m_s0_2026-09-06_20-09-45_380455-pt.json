@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_20M_s0_2026-09-06_20-09-45_380455-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_hfbody_adamwppt_20m_s0_2026-09-06_20-09-45_380455-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_20M_s0_2026-09-06_20-09-45_380455-pt",
+  "created_at": "2026-09-06T20:12:22.000Z",
+  "updated_at": "2026-09-06T20:12:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162779,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ziegler Badshop Inh.Tino Ziegler, Leinefelde - Cylex Lokale Suche ...",
+      "url": "https://web2.cylex.de/firma-home/ziegler-badshop-inh-tino-ziegler-7645757.html",
+      "snippet": "Ziegler Badshop Inh.Tino Ziegler Turmstr. in Leinefelde Beuren, ☎ 03605/542..., ⌚ Öffnungszeiten, Anfahrtsplan, E-Mail und mehr."
+    },
+    {
+      "title": "alexkstern/kdyck_dose_50Mpt_hfinit_20M_s0_2026-08-14_15-27-02_584781-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_20M_s0_2026-08-14_15-27-02_584781-pt",
+      "snippet": "alexkstern / kdyck_dose_50Mpt_hfinit_20M_s0_2026-08-14_15-27-02_584781-pt like 0 nanochat nanochat_gpt pt_fineweb-nanochatbpe-100M ppt_dyck-k128-seq_len_2048-1B seed_0 case_c lr_trapezoid depth_16 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new kdyck_dose_50Mpt_hfinit_20M_s0_2026-08-14_15-27-02_584781-pt Outcome Training config Files"
+    },
+    {
+      "title": "Ziegler Badshop | Shopping & Retail | Leinefelde",
+      "url": "https://de.top10place.com/ziegler-badshop-326708647.html",
+      "snippet": "Ziegler Badshop und Baddesign steht für geschmackvolle Badezimmereinrichtung, Neueinrichtung und Sanierung von Bädern. In …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_200M_s1_2026-08-14_23-16-34_777872-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_200M_s1_2026-08-14_23-16-34_777872-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ziegler Badshop — Hauswarenladen in Beuren Leinefelde Worbis",
+      "url": "https://aktivbruecke.de/beuren-leinefelde-worbis-freistaat-thuringen/hauswarenladen/ziegler-badshop-beuren--leinefelde-worbis/",
+      "snippet": "Kontaktieren Sie bitte Ziegler Badshop mit folgenden Informationen: Adresse, Telefonnummer, Fax, Postleitzahl, Website-Adresse, E …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Junkii/galicia_wildfire_risk",
+  "slug": "junkii-galicia_wildfire_risk",
+  "author": "Junkii",
+  "url": "https://huggingface.co/Junkii/galicia_wildfire_risk",
+  "created_at": "2026-09-06T18:00:19.000Z",
+  "updated_at": "2026-09-06T18:00:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer o download e instalar o Google Chrome - Computador - Ajuda …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web. Conferir os …"
+    },
+    {
+      "title": "GitHub - jlakhlili/ai-wildfire: Artificial intelligence for wildfire ...",
+      "url": "https://github.com/jlakhlili/ai-wildfire",
+      "snippet": "Artificial intelligence for wildfire prediction. Contribute to jlakhlili/ai-wildfire development by creating an account on GitHub."
+    },
+    {
+      "title": "กำหนดให้ Chrome เป็นเบราว์เซอร์เริ่มต้น - คอมพิวเตอร์ - Google Chrome ...",
+      "url": "https://support.google.com/chrome/answer/95417?hl=th&co=GENIE.Platform%3DDesktop",
+      "snippet": "เลือก Google Chrome ที่ด้านบนข้าง \"ทำให้ Google Chrome เป็นเบราว์เซอร์เริ่มต้นของคุณ\" ให้เลือกตั้งเป็นค่าเริ่มต้น"
+    },
+    {
+      "title": "How AI Wildfire Modeling is Improving Decision-Making | WFCA",
+      "url": "https://wfca.com/wildfire-articles/ai-wildfire-modeling/",
+      "snippet": "Learn how AI wildfire modeling helps fire agencies predict fire spread, assess risk, and make faster, data-informed decisions during wildfire response and planning."
+    },
+    {
+      "title": "Télécharger et installer Google Chrome - Ordinateur - Aide Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Appareils x86-64: processeur x86-64 compatible avec SSE3 Appareils ARM: processeurs ARM 64 bits Installer Chrome Important: …"
+    }
+  ]
+}

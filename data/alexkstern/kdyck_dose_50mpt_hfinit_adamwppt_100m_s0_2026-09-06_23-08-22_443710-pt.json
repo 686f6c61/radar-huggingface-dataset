@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_100M_s0_2026-09-06_23-08-22_443710-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_hfinit_adamwppt_100m_s0_2026-09-06_23-08-22_443710-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_100M_s0_2026-09-06_23-08-22_443710-pt",
+  "created_at": "2026-09-06T23:12:19.000Z",
+  "updated_at": "2026-09-06T23:12:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162779,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calculadora de Comprimento de Correia - Omni Calculator",
+      "url": "https://www.omnicalculator.com/pt/fisica/calculadora-comprimento-de-correia",
+      "snippet": "Com a nossa calculadora de comprimento de correia, você também pode calcular a distância entre os eixos de duas polias para um …"
+    },
+    {
+      "title": "alexkstern/kdyck_dose_50Mpt_5M_s0_2026-08-14_22-47-17_388269-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_5M_s0_2026-08-14_22-47-17_388269-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Calculadora de Comprimento de Correia - akynocalculator.com",
+      "url": "https://akynocalculator.com/pt/geometria/calculadora-de-comprimento-de-correia",
+      "snippet": "Jun 21, 2025 · Ela permite calcular com exatidão o comprimento necessário para correias abertas ou cruzadas, considerando os …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_5M_s1_2026-08-14_22-49-49_667492-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_5M_s1_2026-08-14_22-49-49_667492-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Calculadora de Comprimento de Correia entre Polias | ALOGY",
+      "url": "https://www.alogy.com.br/calculadora-comprimento-correia-polias.html",
+      "snippet": "Jul 21, 2026 · Calcula comprimento aproximado de correia aberta ou cruzada a partir dos diâmetros das polias e distância entre …"
+    }
+  ]
+}

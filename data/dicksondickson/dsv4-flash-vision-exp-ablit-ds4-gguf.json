@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "dicksondickson/DSV4-Flash-Vision-Exp-ablit-DS4-GGUF",
+  "slug": "dicksondickson-dsv4-flash-vision-exp-ablit-ds4-gguf",
+  "author": "dicksondickson",
+  "url": "https://huggingface.co/dicksondickson/DSV4-Flash-Vision-Exp-ablit-DS4-GGUF",
+  "created_at": "2026-09-06T21:23:09.000Z",
+  "updated_at": "2026-09-06T21:27:56.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "dspark",
+    "deepseek_v4",
+    "deepseek",
+    "deepseek-v4-flash-vision",
+    "ds4",
+    "metal",
+    "apple-silicon",
+    "antirez",
+    "dwarfstar",
+    "GGUF",
+    "deepseek-v4-flash",
+    "gb10",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 466405632,
+  "parameters_human": "466.4M",
+  "storage_bytes": 93642084096,
+  "storage_human": "93.6 GB",
+  "base_model": "drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit, deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx",
+      "url": "https://www.fedex.com/en-us/tracking.html",
+      "snippet": "Where is my package? Enter your FedEx tracking number, track by reference, obtain proof of delivery, or TCN. See FedEx Express, …"
+    },
+    {
+      "title": "DeepSeek-V4-Flash-Vision-Exp API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/deepseek-ai/deepseek-v4-flash-vision-exp",
+      "snippet": "DeepSeek-V4-Flash-Vision-Exp is the first experimental multimodal model in the DeepSeek-V4 family. It builds on DeepSeek-V4-Flash by adding visual modules and continued training for visual understanding, with substantially improved multimodal agent capabilities while remaining comparable on text-only agent tasks."
+    },
+    {
+      "title": "Track & Ship Online or Find Nearby Locations | FedEx",
+      "url": "https://www.fedex.com/en-us/home.html",
+      "snippet": "With thousands of convenient FedEx locations, it's easy to fit shipping into your day. Find a nearby location, drop off your package, …"
+    },
+    {
+      "title": "unsloth/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We are excited to introduce DeepSeek-V4-Flash-Vision-Exp, our first experimental multimodal model in the DeepSeek-V4 family. It builds on the DeepSeek-V4-Flash architecture by incorporating visual modules and undergoing continued training to unlock visual understanding capabilities."
+    },
+    {
+      "title": "Track Your Shipment | FedEx Freight",
+      "url": "https://www.fedexfreight.com/en-us/tracking",
+      "snippet": "See up to 20,000 active FedEx Freight shipments at a time, including estimated delivery dates. View tracking details for any shipment …"
+    }
+  ]
+}

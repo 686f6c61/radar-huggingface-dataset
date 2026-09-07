@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "elastix-ai/HyperPrune-Qwen2.5-0.5B-4to8",
+  "slug": "elastix-ai-hyperprune-qwen2-5-0-5b-4to8",
+  "author": "elastix-ai",
+  "url": "https://huggingface.co/elastix-ai/HyperPrune-Qwen2.5-0.5B-4to8",
+  "created_at": "2026-09-06T23:09:00.000Z",
+  "updated_at": "2026-09-06T23:39:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "hyperprune",
+    "pruning",
+    "sparsity",
+    "4-8-sparsity",
+    "semi-structured",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1000142409,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2d5227c812fe663738af3005133a67e0",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "elastix-ai/HyperPrune-Qwen2.5-0.5B-2to4 · Hugging Face",
+      "url": "https://huggingface.co/elastix-ai/HyperPrune-Qwen2.5-0.5B-2to4",
+      "snippet": "Instructions to use elastix-ai/HyperPrune-Qwen2.5-0.5B-2to4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "elastix-ai/HyperPrune-Qwen2.5-0.5B-2to4 at main - Hugging Face",
+      "url": "https://huggingface.co/elastix-ai/HyperPrune-Qwen2.5-0.5B-2to4/tree/main",
+      "snippet": "Instructions to use elastix-ai/HyperPrune-Qwen2.5-0.5B-2to4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

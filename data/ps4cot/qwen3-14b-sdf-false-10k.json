@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "PS4CoT/qwen3-14b-sdf-false-10k",
+  "slug": "ps4cot-qwen3-14b-sdf-false-10k",
+  "author": "PS4CoT",
+  "url": "https://huggingface.co/PS4CoT/qwen3-14b-sdf-false-10k",
+  "created_at": "2026-09-06T17:51:37.000Z",
+  "updated_at": "2026-09-06T17:52:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "model-organism",
+    "synthetic-document-finetuning",
+    "chain-of-thought",
+    "interpretability",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548088496,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Порно азартный секс - Поиск порно видео онлайн",
+      "url": "https://www.24video.porn/search/?text=%D0%B0%D0%B7%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B9+%D1%81%D0%B5%D0%BA%D1%81",
+      "snippet": "Aug 24, 2026 · Порно азартный секс поиск по нашей бесплатной базе в которой огромное количество порно роликов …"
+    },
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "Русский азартный секс. Секс видео онлайн на PornoPar.TV",
+      "url": "https://x.pornopar.xyz/movies/%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%B0%D0%B7%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B9-%D1%81%D0%B5%D0%BA%D1%81/",
+      "snippet": "Поскольку искать порно русский азартный секс больше не нужно пришло время просто расслабиться и наслаждаться …"
+    },
+    {
+      "title": "Qwen/Qwen3-14B at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Азартная (найдено 29 порно видео)",
+      "url": "https://www.nudevista.tv/?q=%D0%B0%D0%B7%D0%B0%D1%80%D1%82%D0%BD%D0%B0%D1%8F&s=t",
+      "snippet": "Kink-loving Skye plays a naughty game of chance xhamster, 10:05 Shared Wife by her husband to pay off gambling debts with her …"
+    }
+  ]
+}

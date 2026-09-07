@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "MutionHydra/HyperAI-Developer-Edition",
+  "slug": "mutionhydra-hyperai-developer-edition",
+  "author": "MutionHydra",
+  "url": "https://huggingface.co/MutionHydra/HyperAI-Developer-Edition",
+  "created_at": "2026-09-06T22:27:39.000Z",
+  "updated_at": "2026-09-07T00:08:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15888675363,
+  "storage_human": "15.9 GB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "MutionHydra (hydrateam) - Hugging Face",
+      "url": "https://huggingface.co/MutionHydra",
+      "snippet": "models1 MutionHydra/GPT-3.0-YDR-Mution Text Generation • 8B•Updated 15 days ago• 83"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "HyperAI | HyperAI",
+      "url": "https://hyper.ai/en",
+      "snippet": "World Action Model WAM WAM is a new AI foundational model architecture for the fields of embodied intelligence and robotics. 3 months ago Learning While Deploying LWD is a fleet-level offline-to-online reinforcement learning framework that enables general-purpose robots to continuously collect experience and achieve self-evolution of policies."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

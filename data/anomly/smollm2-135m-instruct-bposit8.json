@@ -5,7 +5,7 @@
   "author": "Anomly",
   "url": "https://huggingface.co/Anomly/SmolLM2-135M-Instruct-bposit8",
   "created_at": "2026-09-05T18:23:51.000Z",
-  "updated_at": "2026-09-05T18:23:55.000Z",
+  "updated_at": "2026-09-06T03:41:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 134515008,
   "parameters_human": "134.5M",

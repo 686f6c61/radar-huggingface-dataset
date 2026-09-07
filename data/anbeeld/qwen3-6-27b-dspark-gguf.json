@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/Qwen3.6-27B-DSpark-GGUF",
+  "slug": "anbeeld-qwen3-6-27b-dspark-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/Qwen3.6-27B-DSpark-GGUF",
+  "created_at": "2026-09-06T20:45:21.000Z",
+  "updated_at": "2026-09-06T21:50:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dspark",
+    "dflash",
+    "draft-model",
+    "llama.cpp",
+    "arxiv:2607.05147",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "base_model:satgeze/Qwen3.6-27B-DSpark",
+    "base_model:quantized:satgeze/Qwen3.6-27B-DSpark"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3128756737,
+  "parameters_human": "3.13B",
+  "storage_bytes": 20341122240,
+  "storage_human": "20.3 GB",
+  "base_model": "satgeze/Qwen3.6-27B-DSpark",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer o download e instalar o Google Chrome - Computador - Ajuda …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web."
+    },
+    {
+      "title": "Anbeeld/Qwen3.6-27B-DFlash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Anbeeld/Qwen3.6-27B-DFlash-GGUF",
+      "snippet": "Instructions to use Anbeeld/Qwen3.6-27B-DFlash-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Télécharger et installer Google Chrome - Ordinateur - Aide Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Appareils x86-64: processeur x86-64 compatible avec SSE3 Appareils ARM: processeurs ARM 64 bits Installer Chrome Important: …"
+    },
+    {
+      "title": "Qwen3.6-27B · 17.3 t/s @ 4k on Spark — SparkBench",
+      "url": "https://sparkbench.dev/models/qwen_qwen3.6-27b/",
+      "snippet": "Qwen3.6-27B runs at 17.3 t/s @ 4k on a single DGX Spark GB10 via vLLM."
+    },
+    {
+      "title": "Stiahnutie a inštalácia prehliadača Google Chrome - Počítač - Google ...",
+      "url": "https://support.google.com/chrome/answer/95346?hl=sk&co=GENIE.Platform%3DDesktop",
+      "snippet": "Stiahnutie a inštalácia prehliadača Google Chrome Webový prehliadač Chrome si môžete stiahnuť a nainštalovať bez peňažného …"
+    }
+  ]
+}

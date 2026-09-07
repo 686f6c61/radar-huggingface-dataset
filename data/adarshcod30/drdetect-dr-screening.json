@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adarshcod30/drdetect-dr-screening",
+  "slug": "adarshcod30-drdetect-dr-screening",
+  "author": "adarshcod30",
+  "url": "https://huggingface.co/adarshcod30/drdetect-dr-screening",
+  "created_at": "2026-09-06T22:52:55.000Z",
+  "updated_at": "2026-09-06T22:53:17.000Z",
+  "license": "research-use-only",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "diabetic-retinopathy",
+    "medical-imaging",
+    "fundus",
+    "explainable-ai",
+    "efficientnet",
+    "image-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64186850,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adarshcod30 (Adarsh Dwivedi) · GitHub",
+      "url": "https://github.com/adarshcod30",
+      "snippet": "MedicureMedicure-AI is a state-of-the-art, intelligent pharmaceutical analysis platform designed to help patients and caregivers better understand their medications. ... OpenForensics is a deepfake Image detection system that uses a ResNet50 ..."
+    },
+    {
+      "title": "Игры С КРОВЬЮ - Играть онлайн бесплатно",
+      "url": "https://gamaverse.ru/blood/",
+      "snippet": "Добро пожаловать в красный уголок. К вашим услугам подборка кровавых онлайн игр. В каких-то из них крови больше, в …"
+    },
+    {
+      "title": "DRDetect - a Hugging Face Space by IbrahimSeven",
+      "url": "https://huggingface.co/spaces/IbrahimSeven/DRDetect",
+      "snippet": "Upload images of both eyes, and receive a diagnosis indicating whether you need to see an ophthalmologist. The tool preprocesses images and uses a model to assess signs of diabetic retinopathy."
+    },
+    {
+      "title": "AI for DR screening: Where are we in 2025? - retina-specialist.com",
+      "url": "https://www.retina-specialist.com/article/ai-for-dr-screening-where-are-we-in-2025",
+      "snippet": "There are currently three FDA approved artificial intelligence algorithms for diabetic retinopathy screening in the United States that perform at a sensitivity and specificity of at least 87 and 89 percent, respectively. There have been more than 15,000 Medicare claims for AI DR screening algorithms since 2022, mostly in urban areas with academic centers. Liability for missed diabetes ..."
+    },
+    {
+      "title": "Real-world performance of an AI system for diabetic retinopathy screening | Scientific Reports",
+      "url": "https://www.nature.com/articles/s41598-026-37292-6",
+      "snippet": "The AI-based screening model was developed by MONA.health, a Belgian healthcare AI company supported by KU Leuven and the Health Unit of VITO. The system autonomously screens for referable DR and diabetic macular edema and its development and ..."
+    }
+  ]
+}

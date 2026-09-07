@@ -5,7 +5,7 @@
   "author": "TASMAYU",
   "url": "https://huggingface.co/TASMAYU/opsd-qwen2.5-7b-omnimath",
   "created_at": "2026-09-03T19:52:21.000Z",
-  "updated_at": "2026-09-04T10:23:33.000Z",
+  "updated_at": "2026-09-06T12:37:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "qwen2",
     "math",
     "alignment",
     "post-training",

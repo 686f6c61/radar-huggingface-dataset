@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "toshuu/feather-audio",
+  "slug": "toshuu-feather-audio",
+  "author": "toshuu",
+  "url": "https://huggingface.co/toshuu/feather-audio",
+  "created_at": "2026-08-30T12:21:32.000Z",
+  "updated_at": "2026-09-06T23:03:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 397263916,
+  "storage_human": "397 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Waschmaschinen online kaufen bei MediaMarkt",
+      "url": "https://www.mediamarkt.de/de/category/waschmaschinen-3.html?msockid=11c6331b65e36b4c1fe624d7648b6ad3",
+      "snippet": "Frontlader oder Toplader, Einbaugerät oder freistehend – beim Kauf einer neuen Waschmaschine gibt es mehr zu bedenken, als es …"
+    },
+    {
+      "title": "Gemini Audio — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-audio/",
+      "snippet": "All audio outputs from our models are marked with SynthID, our advanced watermarking technology, allowing you to detect whether speech has been created or edited using Google AI."
+    },
+    {
+      "title": "Waschmaschinen Test 2026 - CHIP",
+      "url": "https://www.chip.de/artikel/Die-besten-Waschmaschinen-im-Test_124546133.html",
+      "snippet": "Jul 17, 2026 · Wir stellen Ihnen die besten Waschmaschinen im Test vor. Erfahren Sie im Artikel, welches Modell für welchen …"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Waschmaschinen in Tests: Aktueller Vergleich 2026 - MediaMarkt",
+      "url": "https://www.mediamarkt.de/de/content/heim-garten/waschen-reinigen/waschmaschinen-in-tests?msockid=11c6331b65e36b4c1fe624d7648b6ad3",
+      "snippet": "Jul 19, 2026 · Wir halten die Beko B5WF69410W für eine empfehlenswerte Waschmaschine für größere Familien mit Kindern. Mit …"
+    }
+  ]
+}

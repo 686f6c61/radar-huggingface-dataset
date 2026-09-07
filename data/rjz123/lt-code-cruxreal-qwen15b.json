@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rjz123/lt-code-cruxreal-qwen15b",
+  "slug": "rjz123-lt-code-cruxreal-qwen15b",
+  "author": "rjz123",
+  "url": "https://huggingface.co/rjz123/lt-code-cruxreal-qwen15b",
+  "created_at": "2026-09-06T16:29:32.000Z",
+  "updated_at": "2026-09-07T00:22:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "latent-reasoning",
+    "code-execution-reasoning",
+    "latent-thoughts-tuning",
+    "curriculum",
+    "arxiv:2401.03065",
+    "arxiv:2403.07974",
+    "arxiv:2108.07732",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15444926944,
+  "storage_human": "15.4 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "注册和备案产品数据查询",
+      "url": "https://www.cfe-samr.org.cn/zyyw/bjsp/zccphbacpsjcx/",
+      "snippet": "注册产品和备案产品数据查询2021-10-12. 相关链接. 中国政府网国家市场监督管理总局国家药品监督管理局国家知识产权局. -----国务 …"
+    },
+    {
+      "title": "rjz123 (ruijiezheng) - Hugging Face",
+      "url": "https://huggingface.co/rjz123",
+      "snippet": "rjz123/colar-strategyqa-l1b Text Generation •Updated about 12 hours ago View 16 models"
+    },
+    {
+      "title": "优粹维他®胆碱片-食健备G202137101132-优粹维他® ...",
+      "url": "https://www.315jiage.cn/apn286305",
+      "snippet": "Nov 1, 2022 · 本页展示\"食健备G202137101132\"所有优粹维他®胆碱片价格对比信息。 如果消费者需要购买\"济南亚西亚药业有限公司 …"
+    },
+    {
+      "title": "rjz123 (ruijiezheng) - Hugging Face",
+      "url": "https://huggingface.co/rjz123/activity/all",
+      "snippet": "rjz123 's activity All Models Datasets Spaces Buckets Papers Collections Community Posts Upvotes Likes Articles updated a modelabout 9 hours ago"
+    },
+    {
+      "title": "国家市场监督管理总局政务服务平台-保健食品注册",
+      "url": "https://zwfw.samr.gov.cn/scjg/wyb/sp/2024072302581168998/",
+      "snippet": "Jul 6, 2026 · 国产保健食品备案号格式为：食健备G+4位年代号+2位省级行政区域代码+6位顺序编号；进口保健食品备案号格式为：食 …"
+    }
+  ]
+}

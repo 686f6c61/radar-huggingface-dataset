@@ -5,7 +5,7 @@
   "author": "Anomly",
   "url": "https://huggingface.co/Anomly/Qwen2.5-0.5B-Instruct-bposit8",
   "created_at": "2026-09-05T18:24:21.000Z",
-  "updated_at": "2026-09-05T18:24:29.000Z",
+  "updated_at": "2026-09-06T03:41:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 93,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",

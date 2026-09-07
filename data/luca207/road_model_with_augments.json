@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Luca207/road_model_with_augments",
+  "slug": "luca207-road_model_with_augments",
+  "author": "Luca207",
+  "url": "https://huggingface.co/Luca207/road_model_with_augments",
+  "created_at": "2026-09-06T20:43:41.000Z",
+  "updated_at": "2026-09-06T20:45:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "DeepseekOCR",
+    "feature-extraction",
+    "text-generation-inference",
+    "unsloth",
+    "deepseek_vl_v2",
+    "custom_code",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-OCR",
+    "base_model:finetune:deepseek-ai/DeepSeek-OCR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6672547120,
+  "storage_human": "6.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-OCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Sep 6, 1992 · Find out what happened on any date or day in history with On This Day. Explore historical events, birthdays, deaths …"
+    },
+    {
+      "title": "Luca207 (Nicolae Luca) - Hugging Face",
+      "url": "https://huggingface.co/Luca207",
+      "snippet": "User profile of Nicolae Luca on Hugging Face"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "Luca207 (Nicolae Luca) - Hugging Face",
+      "url": "https://huggingface.co/Luca207/models",
+      "snippet": "Organizations Luca207's models11 Sort: Recently updated Luca207/waveform_predictor_model_4 Updated Oct 29, 2025"
+    },
+    {
+      "title": "Today in History Fun Facts - On This Day",
+      "url": "https://www.onthisday.com/today/fun-facts.php",
+      "snippet": "Fun facts from today in history. Funny, interesting and simply incredible events that happened on this day in history."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_gradient_omnimath_qwen14b",
+  "slug": "ishikaa-acquisition_generator_as_gradient_omnimath_qwen14b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_gradient_omnimath_qwen14b",
+  "created_at": "2026-09-06T22:18:09.000Z",
+  "updated_at": "2026-09-06T22:22:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 59091622760,
+  "storage_human": "59.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_gradient_numina_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_gradient_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_gradient_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "只是买个plus不想保号但是又想稳定一些的，whatsapp方案吧。 这是个磨时间的活，首先去herosms之类的接码平台选个海外手机号 …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_format_omnimath_qwen14b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_format_omnimath_qwen14b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_format_omnimath_qwen14b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    }
+  ]
+}

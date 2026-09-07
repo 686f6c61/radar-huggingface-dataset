@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_200M_s2_2026-09-06_20-50-18_134000-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_hfbody_adamwppt_200m_s2_2026-09-06_20-50-18_134000-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_200M_s2_2026-09-06_20-50-18_134000-pt",
+  "created_at": "2026-09-06T20:57:06.000Z",
+  "updated_at": "2026-09-06T20:57:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162779,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cheap train tickets for Europe from € 16 | OUIGO",
+      "url": "https://www.ouigo.com/en/",
+      "snippet": "Book your train tickets online on the official OUIGO website, the low-cost TGV offer from SNCF. More than 60 destinations in France …"
+    },
+    {
+      "title": "alexkstern/kdyck_dose_50Mpt_hfbody_500M_s0_2026-08-14_16-05-06_333015 ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_500M_s0_2026-08-14_16-05-06_333015-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ouigo.com - Billet de Train pas cher SNCF - TGV Low Cost dès 10 €",
+      "url": "https://www.ouigo.com/",
+      "snippet": "Réservez en ligne vos billets de train sur le site officiel de OUIGO, l'offre de TGV low cost de la SNCF. 19 destinations desservies."
+    },
+    {
+      "title": "alexkstern/kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt",
+      "snippet": "alexkstern / kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt like 0 nanochat nanochat_gpt pt_fineweb-nanochatbpe-100M ppt_dyck-k128-seq_len_2048-1B seed_2 case_c lr_trapezoid depth_16 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new kdyck_dose_50Mpt_hfinit_20M_s2_2026-08-14_15-32-20_705847-pt Outcome Training config Files"
+    },
+    {
+      "title": "Ouigo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ouigo",
+      "snippet": "additional terms may apply. By using this site, you agree to the Terms of Useand Privacy Policy. Wikipedia® is a registered …"
+    }
+  ]
+}

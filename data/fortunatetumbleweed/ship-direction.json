@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "fortunatetumbleweed/ship-direction",
+  "slug": "fortunatetumbleweed-ship-direction",
+  "author": "fortunatetumbleweed",
+  "url": "https://huggingface.co/fortunatetumbleweed/ship-direction",
+  "created_at": "2026-09-06T23:22:51.000Z",
+  "updated_at": "2026-09-06T23:40:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "pose-estimation",
+    "occlusion",
+    "unet",
+    "synthetic-data",
+    "segmentation",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 474278,
+  "parameters_human": "474278",
+  "storage_bytes": 3935145,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "GitHub - fortunatetumbleweed-commits/ship_direction · GitHub",
+      "url": "https://github.com/fortunatetumbleweed-commits/ship_direction",
+      "snippet": "It's correct on all 9 real occluded frames — including t083, which the dataset originally mislabeled (truth210 puts the ship on open water). The part model read 174°; the CNN and the matcher both read ~211°, making the same mistake as the label. That's the cautionary tale: a bad label survives when your models agree with it."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    },
+    {
+      "title": "GitHub - fortunatetumbleweed-commits/ship_direction",
+      "url": "https://github.com/fortunatetumbleweed-commits/ship_direction/tree/master",
+      "snippet": "A U-Net trained to estimate a ship's direction (heading) in an 80×80 top-down game frame — where the ship may be almost entirely hidden behind portraits, village-name text, and minimap markers — and to reconstruct the whole ship at that heading. Heading is 0° = up (north), clockwise."
+    },
+    {
+      "title": "Get help with Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/outlook/get-help-with-outlook-com",
+      "snippet": "For other help with your Microsoft account and subscriptions, visit Account & Billing Help. To get help and troubleshoot other …"
+    }
+  ]
+}

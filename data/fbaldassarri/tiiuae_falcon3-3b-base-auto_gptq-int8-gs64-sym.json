@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int8-gs64-sym",
+  "slug": "fbaldassarri-tiiuae_falcon3-3b-base-auto_gptq-int8-gs64-sym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int8-gs64-sym",
+  "created_at": "2026-09-06T22:15:28.000Z",
+  "updated_at": "2026-09-06T22:22:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "gptq",
+    "auto-gptq",
+    "autogptq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "falcon",
+    "falcon3",
+    "tii",
+    "8-bit",
+    "en",
+    "base_model:tiiuae/Falcon3-3B-Base",
+    "base_model:quantized:tiiuae/Falcon3-3B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1458914304,
+  "parameters_human": "1.46B",
+  "storage_bytes": 5760036328,
+  "storage_human": "5.8 GB",
+  "base_model": "tiiuae/Falcon3-3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-sym - Hugging Face",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-sym",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WhatsApp | Messages et appels privés, gratuits, sûrs et fiables",
+      "url": "https://www.whatsapp.com/?lang=fr",
+      "snippet": "WhatsApp Business vous aide à toucher une clientèle mondiale et à offrir des expériences positives à grande échelle. Mettez en …"
+    },
+    {
+      "title": "tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-asym - Hugging Face",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-asym",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
+    }
+  ]
+}

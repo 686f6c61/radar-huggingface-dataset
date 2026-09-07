@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Qwen0.5b-CPT-epoch-upload-test",
+  "slug": "brandonhowe-qwen0-5b-cpt-epoch-upload-test",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Qwen0.5b-CPT-epoch-upload-test",
+  "created_at": "2026-09-06T17:38:42.000Z",
+  "updated_at": "2026-09-06T17:39:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "unsloth",
+    "sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1133851249,
+  "storage_human": "1.1 GB",
+  "base_model": "unsloth/qwen2.5-0.5b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.com: Splot Splat Needoh",
+      "url": "https://www.amazon.com/splot-splat-needoh/s?k=splot+splat+needoh",
+      "snippet": "Price and other details may vary based on product size and color. Nee-Doh, Each are Sold Separately. Colors Selected at Random. …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Amazon.com: Needoh Splat",
+      "url": "https://www.amazon.com/needoh-splat/s?k=needoh+splat",
+      "snippet": "Contains at least 50% recycled material. Global Recycled Standard (GRS) certified products contain recycled content that has been …"
+    },
+    {
+      "title": "Speed Benchmark - Qwen",
+      "url": "https://qwen.readthedocs.io/en/latest/getting_started/speed_benchmark.html",
+      "snippet": "We report the speed performance of bfloat16 models and quantized models (including FP8, GPTQ, AWQ) of the Qwen3 series. Specifically, we report the inference speed (tokens/s) as well as memory footprint (GB) under different context lengths."
+    },
+    {
+      "title": "NeeDoh® SplootSplat | Splat-Shaped Sensory Squish with Blob Pulls",
+      "url": "https://schylling.com/product/needoh-splootsplat/",
+      "snippet": "It’s the splat that sploots, squishy, squeezy, and ready to chill. A fidget toy that helps promote focus, attention, and centering at home, …"
+    }
+  ]
+}

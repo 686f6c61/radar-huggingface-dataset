@@ -5,7 +5,7 @@
   "author": "Dohyeon1",
   "url": "https://huggingface.co/Dohyeon1/LFM2-Sub-MoE-ngroups28",
   "created_at": "2026-09-05T20:31:38.000Z",
-  "updated_at": "2026-09-05T20:33:52.000Z",
+  "updated_at": "2026-09-06T12:36:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 135,
   "trending_score": 0,
-  "parameters": 8467856832,
-  "parameters_human": "8.47B",
-  "storage_bytes": 16953912510,
-  "storage_human": "17.0 GB",
+  "parameters": 8339930560,
+  "parameters_human": "8.34B",
+  "storage_bytes": 33638799754,
+  "storage_human": "33.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

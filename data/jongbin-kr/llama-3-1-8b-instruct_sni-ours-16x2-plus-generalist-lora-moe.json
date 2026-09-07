@@ -5,7 +5,7 @@
   "author": "Jongbin-kr",
   "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-16x2-plus-generalist-lora-moe",
   "created_at": "2026-09-03T05:46:04.000Z",
-  "updated_at": "2026-09-05T16:25:55.000Z",
+  "updated_at": "2026-09-06T14:22:31.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 97170298434,
-  "storage_human": "97.2 GB",
+  "storage_bytes": 126316227171,
+  "storage_human": "126.3 GB",
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"

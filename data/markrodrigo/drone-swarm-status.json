@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "markrodrigo/drone-swarm-status",
+  "slug": "markrodrigo-drone-swarm-status",
+  "author": "markrodrigo",
+  "url": "https://huggingface.co/markrodrigo/drone-swarm-status",
+  "created_at": "2026-09-06T20:38:41.000Z",
+  "updated_at": "2026-09-06T20:39:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "302 Moved",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "302 Moved The document has moved here."
+    },
+    {
+      "title": "Marco Dorigo Web Site - swarm-bots.org",
+      "url": "https://www.swarm-bots.org/~mdorigo/HomePageDorigo/ontheweb.php",
+      "snippet": "2011: AAAI Best AI Video Award for the Movie \" Swarmanoid, The Movie \" 2010: ERC Advanced Grant awarded to Marco Dorigo for the project \"E-Swarm: Engineering Swarm Intelligence Systems\" On November 27, 2007, Marco Dorigo received the \" CajAstur International Prize for Soft Computing \"."
+    },
+    {
+      "title": "Check your YouTube Premium or YouTube Music Premium billing …",
+      "url": "https://support.google.com/youtube/answer/10217125?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Have a question about your YouTube Premium or YouTube Premium Music membership? Read below for details on how to check …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "İndir | OBS",
+      "url": "https://obsproject.com/tr/downLOAD",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    }
+  ]
+}

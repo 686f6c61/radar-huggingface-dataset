@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "g-assismoraes/DeltaP2S-Qwen2.5-3B-DeltaP2S-QwenCoder1.5B-Code-S13",
+  "slug": "g-assismoraes-deltap2s-qwen2-5-3b-deltap2s-qwencoder1-5b-code-s13",
+  "author": "g-assismoraes",
+  "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-3B-DeltaP2S-QwenCoder1.5B-Code-S13",
+  "created_at": "2026-09-06T23:28:27.000Z",
+  "updated_at": "2026-09-06T23:29:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "delta-p2s",
+    "pen2sword",
+    "qwen2.5",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 6805678520,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "g-assismoraes/DeltaP2S-Qwen2.5-3B-P2S-QwenCoder1.5B-Code-S13 · Discussions",
+      "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-3B-P2S-QwenCoder1.5B-Code-S13/discussions",
+      "snippet": "Instructions to use g-assismoraes/DeltaP2S-Qwen2.5-3B-P2S-QwenCoder1.5B-Code-S13 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=fr",
+      "snippet": "PublicitéÀ propos de GoogleGoogle.com in English © 2026 - Confidentialité- Conditions"
+    }
+  ]
+}

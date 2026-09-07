@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rafaelwt/beto-amazon-reviews-es-3clases",
+  "slug": "rafaelwt-beto-amazon-reviews-es-3clases",
+  "author": "rafaelwt",
+  "url": "https://huggingface.co/rafaelwt/beto-amazon-reviews-es-3clases",
+  "created_at": "2026-09-06T20:51:37.000Z",
+  "updated_at": "2026-09-06T20:52:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "sentiment-analysis",
+    "spanish",
+    "beto",
+    "customer-feedback",
+    "text-classification",
+    "es",
+    "dataset:SetFit/amazon_reviews_multi_es",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109853187,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439436284,
+  "storage_human": "439 MB",
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Za co demonstrují, zatím anglická policie formálně neuvedla, ale pravděpodobně se jedná o protest proti imigraci. Přístav v Doveru je …"
+    },
+    {
+      "title": "AI-Generated Reviews: How to Spot Fake Amazon Reviews in 2026",
+      "url": "https://breachexpress.com/articles/ai-generated-reviews-spot-fake-amazon",
+      "snippet": "AI-generated reviews flood Amazon with synthetic feedback. Here's the mechanism behind fake reviews, what makes them hard to detect, and the patterns that still give them away."
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Seznam – najdu tam, co neznám. Jejda, tak tohle se nepovedlo. Pracujeme na opravě. Přejít na Seznam.cz. NápovědaTechnická …"
+    },
+    {
+      "title": "ReviewDetector | Analiza reseñas de Amazon y detecta falsificaciones con IA",
+      "url": "https://reviewdetector.ai/es",
+      "snippet": "Obtén puntuaciones de confianza al instante, evita estafas y compra de forma más inteligente — 100% gratis. Usa IA para detectar reseñas falsas de Amazon."
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/404",
+      "snippet": "Seznam – najdu tam, co neznám. Jejda, tahle adresa neexistuje. Přejít na Seznam.cz. NápovědaTechnická podpora. Copyright © …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "arianraje/mimo-7b-gdn-hybrid-2.0B-OPD",
+  "slug": "arianraje-mimo-7b-gdn-hybrid-2-0b-opd",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-2.0B-OPD",
+  "created_at": "2026-09-06T20:57:09.000Z",
+  "updated_at": "2026-09-06T20:58:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_gdn",
+    "text-generation",
+    "mimo",
+    "linear-attention",
+    "gated-deltanet",
+    "hybrid",
+    "distillation",
+    "opd",
+    "long-context",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-7B-RL-0530",
+    "base_model:finetune:XiaomiMiMo/MiMo-7B-RL-0530",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8309898304,
+  "parameters_human": "8.31B",
+  "storage_bytes": 16675745118,
+  "storage_human": "16.7 GB",
+  "base_model": "XiaomiMiMo/MiMo-7B-RL-0530, arianraje/mimo-7b-gdn-opd-predecay-1921m-step12391",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gerüchteküche - Forum | Transfermarkt",
+      "url": "https://www.transfermarkt.de/geruchtekuche/detail/forum/154",
+      "snippet": "Aug 13, 2009 · Dies ist die Übersicht aller Threads aus dem Forum Gerüchteküche, die in der Transfermarkt-Community diskutiert …"
+    },
+    {
+      "title": "arianraje/mimo-7b-gdn-hybrid-1.8B-OPD · Hugging Face",
+      "url": "https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-1.8B-OPD",
+      "snippet": "Instructions to use arianraje/mimo-7b-gdn-hybrid-1.8B-OPD with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Fußball-Transfers, Gerüchte, Marktwerte und News | Transfermarkt",
+      "url": "https://www.transfermarkt.de/",
+      "snippet": "Transfermarkt - Das Fußball-Portal mit Transfers, Marktwerten, Gerüchten und Statistiken"
+    },
+    {
+      "title": "arianraje/mimo-7b-gdn-hybrid-600M-OPD · Hugging Face",
+      "url": "https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-600M-OPD",
+      "snippet": "Part of the MiMo second-model arm of a study converting full-attention models into GDN (gated DeltaNet) hybrids (uniform 1:4 retention) and recovering capability via staged distillation + on-policy distillation. Teacher/base: MiMo-7B-RL-0530."
+    },
+    {
+      "title": "Managerspiel 1. Liga - Freies Fußball Forum",
+      "url": "https://diesme-forum.de/viewforum.php?f=9",
+      "snippet": "2 days ago · Antworten Zugriffe Letzter Beitrag Der Kicker hat sich intern nochmal besprochen, wegen dem Septemberwechsel: von …"
+    }
+  ]
+}

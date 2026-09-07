@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_200M_s0_2026-09-06_23-22-13_742289-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_hfinit_adamwppt_200m_s0_2026-09-06_23-22-13_742289-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_200M_s0_2026-09-06_23-22-13_742289-pt",
+  "created_at": "2026-09-06T23:27:56.000Z",
+  "updated_at": "2026-09-06T23:28:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162779,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Air Griffey Max 1 Freshwater 2025 | SneakerNews.com",
+      "url": "https://sneakernews.com/2025/10/15/nike-air-griffey-max-1-freshwater-2025/",
+      "snippet": "Oct 15, 2025 · The Nike Air Griffey Max 1 \"Freshwater\" is returning December 2025. Tap to read our full breakdown, including official …"
+    },
+    {
+      "title": "kdyck_dose_50Mpt_500M_s0_2026-08-14_23-25-05_820140-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_500M_s0_2026-08-14_23-25-05_820140-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nike restocked Ken Griffey Jr.'s sneakers for the MLB All-Star Game",
+      "url": "https://www.msn.com/en-us/sports/mlb/nike-restocked-ken-griffey-jr-s-sneakers-for-the-mlb-all-star-game/ar-AA27TDDU",
+      "snippet": "The Nike Air Max Griffey 1 \"White and Freshwater\" colorway restocked online the morning of the 2026 MLB All-Star Game."
+    },
+    {
+      "title": "alexkstern/kdyck_dose_50Mpt_hfinit_20M_s0_2026-08-14_15-27-02_584781-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_20M_s0_2026-08-14_15-27-02_584781-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nike Air Griffey Max 1 'Freshwater' Release Date",
+      "url": "https://www.nike.com/launch/t/air-griffey-max-1-freshwater?msockid=11e10b3d55a46af1277f1cf0543d6b10",
+      "snippet": "The Air Griffey Max I would go on to jumpstart the Swingman line in refreshing color schemes inspired by Griffey’s team and Seattle …"
+    }
+  ]
+}

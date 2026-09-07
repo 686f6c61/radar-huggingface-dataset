@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/dummy-phonelm-phones-seed45-eng2-eng",
+  "slug": "nikitastheo-dummy-phonelm-phones-seed45-eng2-eng",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/dummy-phonelm-phones-seed45-eng2-eng",
+  "created_at": "2026-09-06T17:51:35.000Z",
+  "updated_at": "2026-09-06T17:55:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 141056,
+  "parameters_human": "141056",
+  "storage_bytes": 3967992,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Use Google Drive for desktop - Google Drive Help",
+      "url": "https://support.google.com/drive/answer/10838124?hl=en",
+      "snippet": "Looking for more advanced controls? Dive into topics like customizing settings, using offline access, and managing photos photos …"
+    },
+    {
+      "title": "nikitastheo/phonebabylm-phone-eng-mono-dummy · Hugging Face",
+      "url": "https://huggingface.co/nikitastheo/phonebabylm-phone-eng-mono-dummy",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Utiliser Google Drive pour ordinateur - Aide Google Drive",
+      "url": "https://support.google.com/drive/answer/10838124?hl=fr",
+      "snippet": "Vous souhaitez bénéficier de commandes plus avancées&nbsp;? Consultez notre guide avancé sur Drive pour ordinateur pour en …"
+    },
+    {
+      "title": "nikitastheo (Nikitas Theodoropoulos) - Hugging Face",
+      "url": "https://huggingface.co/nikitastheo",
+      "snippet": "User profile of Nikitas Theodoropoulos on Hugging Face"
+    },
+    {
+      "title": "Where is the L drive on the computer? - Answers",
+      "url": "https://www.answers.com/computer-science/Where_is_the_L_drive_on_the_computer",
+      "snippet": "Dec 7, 2024 · Ah, the L drive on a computer can be in different places depending on how your computer is set up. You can usually …"
+    }
+  ]
+}

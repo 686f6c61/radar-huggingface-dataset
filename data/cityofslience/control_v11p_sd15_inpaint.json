@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "cityofslience/control_v11p_sd15_inpaint",
+  "slug": "cityofslience-control_v11p_sd15_inpaint",
+  "author": "cityofslience",
+  "url": "https://huggingface.co/cityofslience/control_v11p_sd15_inpaint",
+  "created_at": "2026-09-06T23:28:40.000Z",
+  "updated_at": "2026-09-06T23:28:41.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "art",
+    "controlnet",
+    "stable-diffusion",
+    "controlnet-v1-1",
+    "image-to-image",
+    "arxiv:2302.05543",
+    "base_model:runwayml/stable-diffusion-v1-5",
+    "base_model:adapter:runwayml/stable-diffusion-v1-5",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361279120,
+  "parameters_human": "361.3M",
+  "storage_bytes": 4335709078,
+  "storage_human": "4.3 GB",
+  "base_model": "runwayml/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "lllyasviel/control_v11p_sd15_inpaint · Hugging Face",
+      "url": "https://huggingface.co/lllyasviel/control_v11p_sd15_inpaint",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "control_v11p_sd15_inpaint — Image-to-Image Model by lllyasviel",
+      "url": "https://modeldatabase.com/lllyasviel/control_v11p_sd15_inpaint.html",
+      "snippet": "lllyasviel/control_v11p_sd15_inpaint is an open source image-to-image model built with diffusers, 444,764 downloads."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

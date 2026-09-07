@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ml-developers/pi05-eUiSKJr4zg3Q",
+  "slug": "ml-developers-pi05-euiskjr4zg3q",
+  "author": "ml-developers",
+  "url": "https://huggingface.co/ml-developers/pi05-eUiSKJr4zg3Q",
+  "created_at": "2026-09-06T20:31:47.000Z",
+  "updated_at": "2026-09-06T21:01:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lingbotvla",
+    "robotics",
+    "vision-language-action",
+    "libero",
+    "openroboto",
+    "netuid-80",
+    "base_model:openroboto-ai/champion",
+    "base_model:finetune:openroboto-ai/champion",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 25515312466,
+  "storage_human": "25.5 GB",
+  "base_model": "openroboto-ai/champion",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/ML",
+      "snippet": "Basculer la table des matières ML"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/README.md at main ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/README.md",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "Mobile Legends: Bang Bang – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?gl=GB&hl=en-GB&id=com.mobile.legends",
+      "snippet": "Aug 13, 2026 · Mobile Legends: Bang Bang, the fascinating MOBA game on mobile. Smash and outplay your enemies and achieve …"
+    },
+    {
+      "title": "Open Ai Developers",
+      "url": "https://developers-openai.com/",
+      "snippet": "GPT-5.4is OpenAI's most capable frontier model, delivering higher-quality outputs with fewer iterations across ChatGPT, the API, and Codex. It supports complex analysis, production software development, and multi-step automated workflows."
+    },
+    {
+      "title": "Mercedes ml d'occasion - Voitures - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/voitures/mercedes-ml",
+      "snippet": "Consultez nos annonces de mercedes ml d'occasion. Trouvez toutes nos annonces de Voitures sur leboncoin"
+    }
+  ]
+}

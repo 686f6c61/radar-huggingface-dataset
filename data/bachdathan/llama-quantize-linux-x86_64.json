@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/llama-quantize-linux-x86_64",
+  "slug": "bachdathan-llama-quantize-linux-x86_64",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/llama-quantize-linux-x86_64",
+  "created_at": "2026-09-06T23:38:29.000Z",
+  "updated_at": "2026-09-07T01:27:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "llama-quantize",
+    "linux",
+    "x86_64",
+    "static",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5860504,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "llama-quantize – llama.cpp wiki | Factory",
+      "url": "https://factory.ai/open-source-wikis/llama-cpp?page=tools%2Fquantize.md",
+      "snippet": "Integration points libllama— llama_model_quantizeis the entry point. ggml-quants.c— reference per-type kernels. Backends— every backend that should support a new type needs its own dot-product kernel. gguf-py/— Python writers used by convert_hf_to_gguf.pyproduce f16/bf16 GGUFs that llama-quantizeconsumes."
+    },
+    {
+      "title": "llama.cpp/tools/quantize/README.md at master - GitHub",
+      "url": "https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md",
+      "snippet": "llama.cpp will convert the LLM portion of the source model, which is enough for conversational applications. If the model accepts multimodal inputs and you wish to take advantage of them, you need to create a separate GGUF file. This file is generically known as mmproj, for \"multimedia projector\"; however, it may contain various components such as vision or audio encoders in addition to ..."
+    },
+    {
+      "title": "llama-models/models/llama4/scripts/quantize.py at main · meta ... - GitHub",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama4/scripts/quantize.py",
+      "snippet": "Utilities intended for use with Llama models. Contribute to meta-llama/llama-models development by creating an account on GitHub."
+    },
+    {
+      "title": "llama.cpp: tools/quantize/README.md | Fossies",
+      "url": "https://fossies.org/linux/llama.cpp/tools/quantize/README.md",
+      "snippet": "After you have created a high-quality GGUF version of the model, you use llama-quantize to apply quantization. For example, quantize to Q4_K_M using a command like the following:"
+    }
+  ]
+}

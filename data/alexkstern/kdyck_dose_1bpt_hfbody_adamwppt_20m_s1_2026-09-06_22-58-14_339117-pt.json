@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_20M_s1_2026-09-06_22-58-14_339117-pt",
+  "slug": "alexkstern-kdyck_dose_1bpt_hfbody_adamwppt_20m_s1_2026-09-06_22-58-14_339117-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_20M_s1_2026-09-06_22-58-14_339117-pt",
+  "created_at": "2026-09-06T23:11:33.000Z",
+  "updated_at": "2026-09-06T23:12:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669363,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "¿Qué puedes hacer para reducir el uso del celular?",
+      "url": "https://www.informador.mx/estilo/que-puedes-hacer-para-reducir-el-uso-del-celular-20260904-0209.html",
+      "snippet": "1 day ago · Configura límites de tiempo y uso Una de las estrategias más efectivas para disminuir la dependencia es utilizar las …"
+    },
+    {
+      "title": "kdyck_dose_1Bpt_hfbody_200M_s1_2026-08-14_09-42-58_894191-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_200M_s1_2026-08-14_09-42-58_894191-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Estrategias para reducir la dependencia compulsiva al celular y …",
+      "url": "https://unifranz.edu.bo/blog/estrategias-para-reducir-la-dependencia-compulsiva-al-celular-y-mejorar-el-bienestar-emocional/",
+      "snippet": "Jan 12, 2026 · Reducir la dependencia del celular mejora la atención, el sueño y la salud mental. Estrategias como pausas diarias, …"
+    },
+    {
+      "title": "kdyck_dose_1Bpt_hfbody_1B_s1_2026-08-14_11-36-36_230304-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_1B_s1_2026-08-14_11-36-36_230304-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cómo quitar la adicción al celular y mejorar tu vida diaria",
+      "url": "https://www.escritosdepsicologia.es/como-quitar-la-adiccion-al-celular/",
+      "snippet": "En este artículo, descubrirás estrategias efectivas para reducir el tiempo que pasas en tu dispositivo. Aprenderás cómo establecer …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chair0/single_task_morning_noon",
+  "slug": "chair0-single_task_morning_noon",
+  "author": "chair0",
+  "url": "https://huggingface.co/chair0/single_task_morning_noon",
+  "created_at": "2026-09-06T22:09:49.000Z",
+  "updated_at": "2026-09-06T22:10:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:chair0/single_task_morning_noon",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Control Panel in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/2691-open-control-panel-windows-10-a.html",
+      "snippet": "Mar 26, 2026 · You can use Control Panelto change settings for Windows. These settings control nearly everything about how …"
+    },
+    {
+      "title": "chair0/single_task_morning_noon · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/chair0/single_task_morning_noon/viewer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "List of Commands to Open Control Panel Items in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/86339-list-commands-open-control-panel-items-windows-10-a.html",
+      "snippet": "Mar 26, 2026 · The Control Panelallows you to view and change settings (controls) for Windows via applets. Settingsis a modern …"
+    },
+    {
+      "title": "chair0 (Jason Lee) - Hugging Face",
+      "url": "https://huggingface.co/chair0/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "Open Settings in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/3326-open-settings-windows-10-a.html",
+      "snippet": "Apr 17, 2021 · How to Create a Settings shortcut in Windows 10 How to Add or Remove Settings context menu in Windows 10 How to …"
+    }
+  ]
+}

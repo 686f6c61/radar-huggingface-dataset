@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int8-gs64-asym",
+  "slug": "fbaldassarri-tiiuae_falcon3-3b-instruct-auto_round-int8-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int8-gs64-asym",
+  "created_at": "2026-09-06T20:35:07.000Z",
+  "updated_at": "2026-09-06T20:44:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "autoround",
+    "auto-round",
+    "pytorch",
+    "causal-lm",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "falcon",
+    "falcon3",
+    "tii",
+    "8-bit",
+    "conversational",
+    "en",
+    "base_model:tiiuae/Falcon3-3B-Instruct",
+    "base_model:quantized:tiiuae/Falcon3-3B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1458306048,
+  "parameters_human": "1.46B",
+  "storage_bytes": 5757586856,
+  "storage_human": "5.8 GB",
+  "base_model": "tiiuae/Falcon3-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OET reading samples | OET reading tips / materials for nurses",
+      "url": "https://edubenchmark.com/blog/oet-reading/",
+      "snippet": "This blog covers quality OET reading materials with OET reading samples for nurses. The reading test includes two parts - OET …"
+    },
+    {
+      "title": "tiiuae_Falcon3-3B-Base-auto_round-int4-gs64-sym - Hugging Face",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Base-auto_round-int4-gs64-sym",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OET Sample Test: Free Practice for Nurses & Doctors - JobTestPrep",
+      "url": "https://www.jobtestprep.com/oet-sample-test",
+      "snippet": "Master the Occupational English Test with our free OET practice tests. Access sample OET exam questions for Reading, Listening, …"
+    },
+    {
+      "title": "tiiuae_Falcon3-3B-Instruct-auto_round-int4-gs64-sym",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int4-gs64-sym",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OET Exam Reading Materials for Nurses - Download PDF - Getmyuni",
+      "url": "https://www.getmyuni.com/articles/oet-reading-materials-for-nurses-download-pdf",
+      "snippet": "Sep 10, 2025 · The PDF samples for the OET Reading Test for Nursing Exam have been shared in the table given below. Candidates …"
+    }
+  ]
+}

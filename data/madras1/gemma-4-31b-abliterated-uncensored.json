@@ -5,7 +5,7 @@
   "author": "Madras1",
   "url": "https://huggingface.co/Madras1/Gemma-4-31B-Abliterated-Uncensored",
   "created_at": "2026-09-06T02:20:25.000Z",
-  "updated_at": "2026-09-06T03:40:13.000Z",
+  "updated_at": "2026-09-06T22:06:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -17,20 +17,6 @@
   "tags": [
     "safetensors",
     "gemma4",
-    "abliterated",
-    "uncensored",
-    "representation-engineering",
-    "gemma-4",
-    "google-deepmind",
-    "creative-writing",
-    "roleplay",
-    "text-generation",
-    "conversational",
-    "pt",
-    "en",
-    "base_model:google/gemma-4-31B-it",
-    "base_model:finetune:google/gemma-4-31B-it",
-    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
@@ -44,7 +30,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

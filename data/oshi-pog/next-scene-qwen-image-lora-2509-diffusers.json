@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "oshi-pog/next-scene-qwen-image-lora-2509-diffusers",
+  "slug": "oshi-pog-next-scene-qwen-image-lora-2509-diffusers",
+  "author": "oshi-pog",
+  "url": "https://huggingface.co/oshi-pog/next-scene-qwen-image-lora-2509-diffusers",
+  "created_at": "2026-09-06T20:20:08.000Z",
+  "updated_at": "2026-09-06T20:20:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "qwen",
+    "image-editing",
+    "next-scene",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2509",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 295139456,
+  "storage_human": "295 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2509",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iga Świątek – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Iga_%C5%9Awi%C4%85tek",
+      "snippet": "1.12022: Weltranglistenerste, zwei Grand-Slam-Titel im Einzel und 37 Siege in Serie. 1.22023: Weltranglistenerste, Siege an den …"
+    },
+    {
+      "title": "lovis93/next-scene-qwen-image-lora-2509 · Hugging Face",
+      "url": "https://huggingface.co/lovis93/next-scene-qwen-image-lora-2509",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Iga Swiatek | Player Stats & More – WTA Official",
+      "url": "https://www.wtatennis.com/players/326408/iga-swiatek",
+      "snippet": "Get the latest Player Stats on Iga Swiatek including her videos, highlights, and more at the official Women's Tennis Association website."
+    },
+    {
+      "title": "aiqwen/next-scene-qwen-image-lora-2509 · Hugging Face",
+      "url": "https://huggingface.co/aiqwen/next-scene-qwen-image-lora-2509",
+      "snippet": "next-scene-qwen-image-lora-2509 is a LoRA adapter fine-tuned on Qwen-Image-Edit (build 2509), purpose-built to generate cinematic image sequences with natural visual progression from frame to frame. This model enables Qwen Image Edit to think like a film director—understanding camera dynamics, visual composition, and narrative continuity to create shots that flow seamlessly into one another."
+    },
+    {
+      "title": "Iga Świątek (@iga.swiatek) • Instagram photos and videos",
+      "url": "https://www.instagram.com/iga.swiatek/",
+      "snippet": "2M Followers, 114 Following, 1,167 Posts - Iga Świątek (@iga.swiatek) on Instagram: \"Tennis player from Trying to put this yellow …"
+    }
+  ]
+}

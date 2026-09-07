@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/EleutherAI_pythia-6.9b-deduped-auto_gptq-int8-gs64-asym",
+  "slug": "fbaldassarri-eleutherai_pythia-6-9b-deduped-auto_gptq-int8-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/EleutherAI_pythia-6.9b-deduped-auto_gptq-int8-gs64-asym",
+  "created_at": "2026-09-06T22:24:33.000Z",
+  "updated_at": "2026-09-06T22:44:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "gptq",
+    "auto-gptq",
+    "autogptq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "pythia",
+    "eleutheraI",
+    "8-bit",
+    "en",
+    "dataset:EleutherAI/pile",
+    "base_model:EleutherAI/pythia-6.9b-deduped",
+    "base_model:quantized:EleutherAI/pythia-6.9b-deduped",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2152210432,
+  "parameters_human": "2.15B",
+  "storage_bytes": 8405245712,
+  "storage_human": "8.4 GB",
+  "base_model": "EleutherAI/pythia-6.9b-deduped",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EigenLayer — The Restaking Protocol & Trust Layer | EigenCloud",
+      "url": "https://www.eigencloud.xyz/eigenlayer",
+      "snippet": "EigenLayer is the restaking protocol and cryptoeconomic trust layer for EigenCloud — tap $10B+ in staked ETH and 350+ operators …"
+    },
+    {
+      "title": "EleutherAI/pythia-6.9b-deduped · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-6.9b-deduped",
+      "snippet": "EleutherAI / pythia-6.9b-deduped like 7 Follow EleutherAI 1.37k Text Generation Transformers PyTorch EleutherAI/the_pile_deduplicated English gpt_neox causal-lm pythia text-generation-inference arxiv:2304.01373 arxiv:2101.00027 arxiv:2201.07311 License:apache-2.0 Model card FilesFiles and versions xet Community 2 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "EigenLayer Overview | EigenCloud",
+      "url": "https://docs.eigencloud.xyz/eigenlayer/concepts/eigenlayer-overview",
+      "snippet": "EigenLayer acts as an additional layer on top of Ethereum, allowing developers to build on this foundation without having to duplicate …"
+    },
+    {
+      "title": "fbaldassarri/EleutherAI_pythia-6.9b-autogptq-int8-gs128-asym · Hugging Face",
+      "url": "https://huggingface.co/fbaldassarri/EleutherAI_pythia-6.9b-autogptq-int8-gs128-asym",
+      "snippet": "fbaldassarri / EleutherAI_pythia-6.9b-autogptq-int8-gs128-asym like 0 Text Generation Safetensors PyTorch EleutherAI/pile English gpt_neox causal-lm pythia autoround intel-autoround auto-round intel woq gptq auto-gptq autogptq eleutheraI 8-bit precision License:apache-2.0 Model card FilesFiles and versions Community Use this model Model ..."
+    },
+    {
+      "title": "Homepage | EigenCloud",
+      "url": "https://docs.eigenlayer.xyz/",
+      "snippet": "EigenLayer Stake ETH & EIGEN. Secure the cloud powering verifiable apps, agents, and services."
+    }
+  ]
+}

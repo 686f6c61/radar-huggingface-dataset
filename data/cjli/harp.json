@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cjli/harp",
+  "slug": "cjli-harp",
+  "author": "cjli",
+  "url": "https://huggingface.co/cjli/harp",
+  "created_at": "2026-09-06T20:42:46.000Z",
+  "updated_at": "2026-09-06T21:17:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "retrieval-augmented-generation",
+    "speech-emotion-recognition",
+    "music",
+    "healthcare",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100812209,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 วันใน บาร์เซโลนา (2026): แผนเดินทางสมบูรณ์แบบสำหรับผู้มาครั้งแรก",
+      "url": "https://gotripzi.com/th/destinations/barcelona-es/7-day-itinerary",
+      "snippet": "Jun 1, 2026 · แผนเที่ยว Barcelona 7 วันที่สมจริงซึ่งจะพาคุณไปยังตรอกหินของ Barcino ก่อน จากนั้นจึงไปต่อที่ Sagrada Família, Park Güell, …"
+    },
+    {
+      "title": "GitHub - Horizon-AILab/NeurIPS2026-HARP-Framework: HARP: Hidden-State ...",
+      "url": "https://github.com/Horizon-AILab/NeurIPS2026-HARP-Framework",
+      "snippet": "HARP is an independent academic project inspired by public NVIDIA/Microsoft personal AI PC announcements; it is not affiliated with, sponsored by, or endorsed by NVIDIA. This repository mainly contains the implementation and experimental materials for the Hidden-State-Aware Receiver-Personalized Pruning (HARP) framework."
+    },
+    {
+      "title": "5 วันใน บาร์เซโลนา (2026): แผนเดินทางสมบูรณ์แบบสำหรับผู้มาครั้งแรก",
+      "url": "https://gotripzi.com/th/destinations/barcelona-es/5-day-itinerary",
+      "snippet": "Jun 1, 2026 · แผนการเดินทาง 5 วันใน บาร์เซโลนา: สถานที่ท่องเที่ยวยอดนิยม, ที่พัก, ร้านอาหาร และตารางรายวันพร้อมเวลา …"
+    },
+    {
+      "title": "NeurIPS2026-HARP-Framework/models at main · Horizon-AILab ... - GitHub",
+      "url": "https://github.com/Horizon-AILab/NeurIPS2026-HARP-Framework/tree/main/models",
+      "snippet": "Models Local receiver and source model weights are resolved outside the repository."
+    },
+    {
+      "title": "เที่ยวยุโรปด้วยตัวเอง | ไปเที่ยว barcelona กันค่ะ Barcelona 3 วัน 3 คืน ...",
+      "url": "https://www.facebook.com/groups/TravelEuropeByYourself/posts/1863263514171049/",
+      "snippet": "Jun 24, 2024 · 🚇 การเดินทาง 🎟️ เราใช้ตั๋วเดินทางแบบเหมา 3 วัน แบบไม่จำกัดเที่ยว ภายใน 3 วัน ขึ้นลงได้ตลอดทั้งวัน รถบัส/รถไฟ 💰 ราคา 21-25 € …"
+    }
+  ]
+}

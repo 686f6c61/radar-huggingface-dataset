@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jethachan/gemma-4-E2B-it-NVFP4KV-calib",
+  "slug": "jethachan-gemma-4-e2b-it-nvfp4kv-calib",
+  "author": "jethachan",
+  "url": "https://huggingface.co/jethachan/gemma-4-E2B-it-NVFP4KV-calib",
+  "created_at": "2026-09-06T22:57:02.000Z",
+  "updated_at": "2026-09-06T23:17:02.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "nvfp4",
+    "kv-cache",
+    "compressed-tensors",
+    "vllm",
+    "sm120",
+    "sm121",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5506950753,
+  "parameters_human": "5.51B",
+  "storage_bytes": 11046334724,
+  "storage_human": "11.0 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "मैथिलीशरण गुप्त - विकिपीडिया",
+      "url": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A5%88%E0%A4%A5%E0%A4%BF%E0%A4%B2%E0%A5%80%E0%A4%B6%E0%A4%B0%E0%A4%A3_%E0%A4%97%E0%A5%81%E0%A4%AA%E0%A5%8D%E0%A4%A4",
+      "snippet": "गुप्त जी के काव्य में राष्ट्रीयताऔर गांधीवादकी प्रधानता है। इसमें भारत के गौरवमय अतीत के इतिहास और भारतीय संस्कृतिकी …"
+    },
+    {
+      "title": "jethachan/gemma-4-E2B-it-NVFP4KV-calib · Hugging Face",
+      "url": "https://huggingface.co/jethachan/gemma-4-E2B-it-NVFP4KV-calib",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "“मैथिलीशरण गुप्त की कविताओं में राष्ट्रीयता | IGNOU MHD-2 …",
+      "url": "https://www.youtube.com/watch?v=_ce_D1a-ClE",
+      "snippet": "Mar 18, 2026 · स वीडियो में हम विस्तार से समझेंगे कि मैथिलीशरण गुप्त की कविताओं में ..."
+    },
+    {
+      "title": "jethachan (Jetha Chan) - Hugging Face",
+      "url": "https://huggingface.co/jethachan",
+      "snippet": "Organizations None yet models1 jethachan/gemma-4-E2B-it-NVFP4KV-calib 6B•Updated about 1 hour ago datasets0 None public yet"
+    },
+    {
+      "title": "राष्ट्रकवि मैथिलीशरण गुप्त : जीवन परिचय, साहित्यिक योगदान, …",
+      "url": "https://knowledgesthali.com/%E0%A4%AE%E0%A5%88%E0%A4%A5%E0%A4%BF%E0%A4%B2%E0%A5%80%E0%A4%B6%E0%A4%B0%E0%A4%A3-%E0%A4%97%E0%A5%81%E0%A4%AA%E0%A5%8D%E0%A4%A4/",
+      "snippet": "Feb 10, 2026 · राष्ट्रकवि मैथिलीशरण गुप्त भारतीय संस्कृति के अमर गायक और राष्ट्रीय जागरण के प्रखर स्वर थे। उनके …"
+    }
+  ]
+}

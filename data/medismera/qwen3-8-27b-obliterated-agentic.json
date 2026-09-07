@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "medismera/Qwen3.8-27B-OBLITERATED-Agentic",
+  "slug": "medismera-qwen3-8-27b-obliterated-agentic",
+  "author": "medismera",
+  "url": "https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Agentic",
+  "created_at": "2026-09-06T23:44:27.000Z",
+  "updated_at": "2026-09-07T02:10:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "qwen3.8",
+    "abliterated",
+    "uncensored",
+    "agentic",
+    "tool-calling",
+    "function-calling",
+    "hermes-agent",
+    "mythos-class",
+    "task-tree",
+    "sglang",
+    "vllm",
+    "fp8",
+    "awq",
+    "mamba",
+    "linear-attention",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ar",
+    "base_model:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "base_model:finetune:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 233580656176,
+  "storage_human": "233.6 GB",
+  "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED, Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'xxxx' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xxxx",
+      "snippet": "A - Z This menu's updates are based on your activity. The data is only saved locally (on your computer) and never transferred to us. …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "xxxx-porn videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/xxxx-porn",
+      "snippet": "1440p देसी गर्ल स्कूल बंक करके प्रिंसिपल सर से घपा-घप होटल में, xxxx हिंदी ऑडियो 10 min 10 minXXX Soniya- 824.9k Views- …"
+    },
+    {
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "snippet": "This model will comply with requests that stock Qwen3.8-27B would refuse. V3 goes beyond removing hard refusals — it also eliminates soft deflections where the model gives safety lectures instead of real answers."
+    },
+    {
+      "title": "Watch XXXX Porn Free in HD | Pornhub",
+      "url": "https://www.pornhub.com/video/search?search=xxxx",
+      "snippet": "Watch free XXXX porn videos on Pornhub. Huge library of amateur and exclusive scenes streaming in full HD - updated daily. Start …"
+    }
+  ]
+}

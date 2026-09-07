@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Lennebraha38/lennebraha-3b",
+  "slug": "lennebraha38-lennebraha-3b",
+  "author": "Lennebraha38",
+  "url": "https://huggingface.co/Lennebraha38/lennebraha-3b",
+  "created_at": "2026-09-06T23:10:24.000Z",
+  "updated_at": "2026-09-06T23:13:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "unsloth",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349278,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "GitHub - Lennebraha38/lennebraha38",
+      "url": "https://github.com/Lennebraha38/lennebraha38",
+      "snippet": "Contribute to Lennebraha38/lennebraha38 development by creating an account on GitHub."
+    },
+    {
+      "title": "Explorateur de fichiers dans Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Recherchez et ouvrez Explorateur de fichiers dans Windows, puis personnalisez Accès rapide en épinglant et en supprimant des …"
+    },
+    {
+      "title": "Lennebraha38 - GitHub",
+      "url": "https://github.com/Lennebraha38",
+      "snippet": "GitHub is where Lennebraha38 builds software. Joined Feb 16, 2025 Block or report Lennebraha38 Block user Add an optional note:"
+    },
+    {
+      "title": "Add and Remove Favorites in File Explorer Home in Windows 11",
+      "url": "https://www.elevenforum.com/t/add-and-remove-favorites-in-file-explorer-home-in-windows-11.6786/",
+      "snippet": "May 30, 2022 · This tutorial will show you how to add, remove, or clear and reset Favorites in File Explorer Home for your account or …"
+    }
+  ]
+}

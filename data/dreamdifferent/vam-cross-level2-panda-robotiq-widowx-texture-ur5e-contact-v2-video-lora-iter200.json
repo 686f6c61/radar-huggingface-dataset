@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200",
+  "slug": "dreamdifferent-vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200",
+  "created_at": "2026-09-06T20:33:18.000Z",
+  "updated_at": "2026-09-06T20:33:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "video-generation",
+    "lora",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741588124,
+  "storage_human": "742 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level-panda-robotiq-widowx-texture-ur5e ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200",
+      "snippet": "This is an adapter checkpoint, not a standalone fused model. Load the exact initial Video2World backbone above first and then apply this LoRA checkpoint. For fused_video2world_dit, the initial checkpoint already includes the earlier WidowX/Bridge LoRA fusion; loading the original Bridge backbone instead would be incorrect. Supporting runtime artifacts"
+    },
+    {
+      "title": "Mit einem Bild bei Google suchen - Computer - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/1325808?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Mit einem Bild von einer Website suchen Öffnen Sie auf Ihrem Computer den Chrome-Browser. Rufen Sie die Website mit dem Bild …"
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter400",
+      "snippet": "dreamdifferent / vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter400 like 0 Follow dreamdifferent 4 Robotics mimic-video video-generation lora Model card FilesFiles and versions xet Community Copy to bucket new VAM-Cross two-camera MimicVideo Video2World LoRA Required initial backbone Supporting runtime artifacts Training data contract"
+    },
+    {
+      "title": "Торговля - Path of Exile",
+      "url": "https://ru.pathofexile.com/trade",
+      "snippet": "Path of Exile - лучшая бесплатная игра в жанре Action RPG. Мрачный мир, глубокая и сложная система прокачки персонажа, …"
+    }
+  ]
+}

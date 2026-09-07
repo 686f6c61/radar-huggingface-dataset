@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "medismera/Qwen3.8-27B-OBLITERATED-bucket",
+  "slug": "medismera-qwen3-8-27b-obliterated-bucket",
+  "author": "medismera",
+  "url": "https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-bucket",
+  "created_at": "2026-09-06T22:29:09.000Z",
+  "updated_at": "2026-09-06T22:29:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "qwen3.8",
+    "abliterated",
+    "uncensored",
+    "sglang",
+    "vllm",
+    "llama.cpp",
+    "agentic",
+    "tool-calling",
+    "deep-reasoning",
+    "cybersecurity",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "base_model:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "base_model:finetune:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-07T02:46:27.760Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Degrees Online | Online Degree Programs | Coursera",
+      "url": "https://www.coursera.org/degrees?msockid=2be2ca498e10602e1b2edd848fb661fa",
+      "snippet": "You can take your online courses from anywhere in the world, at a pace that works for you. Once enrolled in your program, you may …"
+    },
+    {
+      "title": "shivanandasai/Qwen3.8-27B-OBLITERATED-bucket - Storage Bucket",
+      "url": "https://huggingface.co/buckets/shivanandasai/Qwen3.8-27B-OBLITERATED-bucket",
+      "snippet": "Qwen3.8-27B is Alibaba's flagship open-weight model. It ships with deep refusal training woven into the weights — not just a system prompt, not just RLHF. The safety behavior is geometric: encoded as directions in activation space across dozens of layers."
+    },
+    {
+      "title": "50 Best Online Colleges & Accredited Schools [2026 Guide]",
+      "url": "https://www.mydegreeguide.com/best-online-colleges/",
+      "snippet": "Mar 8, 2020 · Looking for accredited online colleges? Compare schools, types of colleges, and online learning platforms to see what …"
+    },
+    {
+      "title": "ai/Qwen3.8-27B-OBLITERATED at main · bigguy8585/ai · GitHub",
+      "url": "https://github.com/bigguy8585/ai/tree/main/Qwen3.8-27B-OBLITERATED",
+      "snippet": "This model will comply with requests that stock Qwen3.8-27B would refuse. V3 goes beyond removing hard refusals — it also eliminates soft deflections where the model gives safety lectures instead of real answers. Tested across 1000+ prompts spanning restricted knowledge, code generation, security research, and red-team scenarios."
+    },
+    {
+      "title": "What Is Distance Learning? Types and Benefits | Coursera",
+      "url": "https://www.coursera.org/in/articles/distance-learning?msockid=2be2ca498e10602e1b2edd848fb661fa",
+      "snippet": "Aug 26, 2025 · Distance learning refers to the way of learning that does not require you to be present physically at the university or …"
+    }
+  ]
+}

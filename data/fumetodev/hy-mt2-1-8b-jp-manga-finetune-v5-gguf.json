@@ -5,7 +5,7 @@
   "author": "fumetodev",
   "url": "https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v5-GGUF",
   "created_at": "2026-09-03T19:53:52.000Z",
-  "updated_at": "2026-09-03T19:53:58.000Z",
+  "updated_at": "2026-09-06T23:01:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 198,
+  "downloads_30d": 227,
   "trending_score": 0,
   "parameters": 1791080448,
   "parameters_human": "1.79B",

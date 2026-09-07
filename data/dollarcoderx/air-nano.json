@@ -5,7 +5,7 @@
   "author": "DollarCoderX",
   "url": "https://huggingface.co/DollarCoderX/Air-nano",
   "created_at": "2026-09-06T14:21:15.000Z",
-  "updated_at": "2026-09-06T14:25:26.000Z",
+  "updated_at": "2026-09-06T15:13:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 6183349158,
-  "storage_human": "6.2 GB",
+  "storage_bytes": 12355276150,
+  "storage_human": "12.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

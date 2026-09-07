@@ -5,13 +5,14 @@
   "author": "dimka007",
   "url": "https://huggingface.co/dimka007/ai-researcher-gguf",
   "created_at": "2026-09-06T14:51:28.000Z",
-  "updated_at": "2026-09-06T14:51:28.000Z",
+  "updated_at": "2026-09-06T16:52:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "gguf",
     "license:mit",
     "region:us"
   ],
@@ -20,10 +21,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 12605012704,
+  "storage_human": "12.6 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "gguf"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

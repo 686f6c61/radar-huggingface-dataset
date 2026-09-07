@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Workstation5495/Resonatex-D2",
+  "slug": "workstation5495-resonatex-d2",
+  "author": "Workstation5495",
+  "url": "https://huggingface.co/Workstation5495/Resonatex-D2",
+  "created_at": "2026-09-06T20:30:34.000Z",
+  "updated_at": "2026-09-06T21:09:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "russian",
+    "conversational",
+    "ru",
+    "en",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 71883520,
+  "parameters_human": "71.9M",
+  "storage_bytes": 287549313,
+  "storage_human": "288 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Labor Day - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Labor_Day",
+      "snippet": "3Unofficial end of summer. 4Observance dates (1971–2037) 5Labor Day sales. 6See also. 7References."
+    },
+    {
+      "title": "GitHub - Workstation5495/ResonateAI: Resonate AI chat",
+      "url": "https://github.com/Workstation5495/ResonateAI",
+      "snippet": "Resonate AI chat. Contribute to Workstation5495/ResonateAI development by creating an account on GitHub."
+    },
+    {
+      "title": "History of Labor Day | U.S. Department of Labor",
+      "url": "https://www.dol.gov/general/laborday/history",
+      "snippet": "Before it was a federal holiday, Labor Day was recognized by labor activists and individual states. After municipal ordinances were …"
+    },
+    {
+      "title": "Workstation5495/ResonateAI projects - GitHub",
+      "url": "https://github.com/Workstation5495/ResonateAI/projects",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    {
+      "title": "Labor Day | 2026, Origin, Meaning, History, United States, & Facts ...",
+      "url": "https://www.britannica.com/topic/Labor-Day",
+      "snippet": "1 day ago · Labor Day, in the United States and Canada, holiday (first Monday in September) honoring workers and recognizing their …"
+    }
+  ]
+}

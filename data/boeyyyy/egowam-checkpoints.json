@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "boeyyyy/EgoWAM-checkpoints",
+  "slug": "boeyyyy-egowam-checkpoints",
+  "author": "boeyyyy",
+  "url": "https://huggingface.co/boeyyyy/EgoWAM-checkpoints",
+  "created_at": "2026-09-06T21:06:53.000Z",
+  "updated_at": "2026-09-06T21:28:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "imitation-learning",
+    "world-model",
+    "egocentric",
+    "arxiv:2607.08436",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33247766338,
+  "storage_human": "33.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2040110914679136535",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "EGOWAM: World Action Models Beyond Pixels with In-the-Wild Egocentric ...",
+      "url": "https://gatech-rl2.github.io/egowam.github.io/",
+      "snippet": "We introduce EgoWAM, a controlled human-robot co-training framework that fixes the policy backbone, action head, and data mixture while varying only the world prediction target, comparing Pixel, DINO, and 3D motion flow."
+    },
+    {
+      "title": "什么是 GP、LP、PE、VC、FOF？ - 知乎",
+      "url": "https://www.zhihu.com/question/20062244",
+      "snippet": "普通合伙人（General Partner, GP）：大多数时候，GP, LP是同时存在的。 而且他们主要存在在一些需要大额度资金投资的公司里， …"
+    },
+    {
+      "title": "EgoWAM: World Action Models Beyond Pixels with In-the-Wild Egocentric ...",
+      "url": "https://arxiv.org/abs/2607.08436",
+      "snippet": "Egocentric human data offers scalable supervision for robot manipulation. However, behavior cloning entangles transferable content like objects, scenes, and task semantics, with non-transferable factors like human morphology, head motion, and behavioral style. We study whether World Action Models (WAMs) provide a better training signal by requiring policies to predict not only actions, but ..."
+    },
+    {
+      "title": "Latest News, Videos and Photos on Viral Video - India.Com",
+      "url": "https://www.india.com/topic/viral-video/",
+      "snippet": "3 days ago · Get latest Viral Video news updates & stories. Explore Viral Video photos and videos on India.com"
+    }
+  ]
+}

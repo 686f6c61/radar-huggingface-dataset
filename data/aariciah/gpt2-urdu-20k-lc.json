@@ -5,7 +5,7 @@
   "author": "aariciah",
   "url": "https://huggingface.co/aariciah/gpt2-urdu-20k-lc",
   "created_at": "2026-09-02T00:17:46.000Z",
-  "updated_at": "2026-09-06T01:13:45.000Z",
+  "updated_at": "2026-09-06T12:10:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 501,
+  "downloads_30d": 506,
   "trending_score": 0,
   "parameters": 100612608,
   "parameters_human": "100.6M",
-  "storage_bytes": 2817269794,
-  "storage_human": "2.8 GB",
+  "storage_bytes": 4427131426,
+  "storage_human": "4.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

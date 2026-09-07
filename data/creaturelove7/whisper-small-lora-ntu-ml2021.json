@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Creaturelove7/whisper-small-lora-ntu-ml2021",
+  "slug": "creaturelove7-whisper-small-lora-ntu-ml2021",
+  "author": "Creaturelove7",
+  "url": "https://huggingface.co/Creaturelove7/whisper-small-lora-ntu-ml2021",
+  "created_at": "2026-09-06T20:43:01.000Z",
+  "updated_at": "2026-09-06T20:43:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "lora",
+    "automatic-speech-recognition",
+    "code-switching",
+    "zh",
+    "en",
+    "dataset:ky552/ML2021_ASR_ST",
+    "base_model:openai/whisper-small",
+    "base_model:adapter:openai/whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14181560,
+  "storage_human": "14 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How much money can you earn on xvideos and pornhub? - Reddit",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/dwfe5m/how_much_money_can_you_earn_on_xvideos_and_pornhub/",
+      "snippet": "Xvideos is 0.04 per 40k views,🤣🤣 compare to pornhub .70 per 1k views porch b is much more better Reply reply Senior_Ad_9948 Yeah …"
+    },
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fortniteporn - Reddit",
+      "url": "https://www.reddit.com/r/fortnitep0rn/",
+      "snippet": "Fortnite Porn ran by the community! Daily Fortnite porn in this subreddit."
+    },
+    {
+      "title": "openai/whisper-small.en · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small.en",
+      "snippet": "Instructions to use openai/whisper-small.en with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "/r/videos - Reddit",
+      "url": "https://www.reddit.com/r/videos/top/?t=all",
+      "snippet": "Reddit's main subreddit for videos. Please read the sidebar below for our rules."
+    }
+  ]
+}

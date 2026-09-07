@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Aikwed/pistar06_insert_carrot_hil_r1r2r3_value",
+  "slug": "aikwed-pistar06_insert_carrot_hil_r1r2r3_value",
+  "author": "Aikwed",
+  "url": "https://huggingface.co/Aikwed/pistar06_insert_carrot_hil_r1r2r3_value",
+  "created_at": "2026-09-06T22:08:30.000Z",
+  "updated_at": "2026-09-06T22:08:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pistar06",
+    "dataset:Aikwed/insert_carrot_into_the_hole_hil_r1_r2_r3_merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1147607163,
+  "parameters_human": "1.15B",
+  "storage_bytes": 2298481260,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beatrice Berrut - Swiss pianist and composer",
+      "url": "https://www.beatriceberrut.com/en/",
+      "snippet": "Concerts The best way to experience music is live and in good company. Share these particular moments of emotion and visit …"
+    },
+    {
+      "title": "Aikwed/pistar06_insert_carrot_hil_r1r2_value · Hugging Face",
+      "url": "https://huggingface.co/Aikwed/pistar06_insert_carrot_hil_r1r2_value",
+      "snippet": "Instructions to use Aikwed/pistar06_insert_carrot_hil_r1r2_value with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Beatrice Berrut - YouTube",
+      "url": "https://www.youtube.com/@BeatriceBerrut",
+      "snippet": "Official YouTube channel of Swiss pianist and composer Beatrice Berrut. This channel is home to two worlds : solo piano — from …"
+    },
+    {
+      "title": "Aikwed/pistar06_insert_carrot_into_the_hole_acp_r1 · Hugging Face",
+      "url": "https://huggingface.co/Aikwed/pistar06_insert_carrot_into_the_hole_acp_r1",
+      "snippet": "Pi0.5 ACP Policy — Insert Carrot into the Hole This repository contains a Pi0.5 action policy fine-tuned for the task \"insert carrot into the hole\" with the Advantage-Conditioned Policy (ACP) stage of the MINT-SJTU/Evo-RL pipeline. Despite pistar06 appearing in the repository name, this is not a Pi 0.6 value model."
+    },
+    {
+      "title": "Berrute Surname Origin, Meaning & Last Name History - Forebears",
+      "url": "https://forebears.io/surnames/berrute",
+      "snippet": "Learn the fascinating origin of the Berrute surname; its meaning & distribution. Unlock your family history in the largest database of …"
+    }
+  ]
+}

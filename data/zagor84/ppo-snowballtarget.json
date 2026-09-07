@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zagor84/ppo-SnowballTarget",
+  "slug": "zagor84-ppo-snowballtarget",
+  "author": "zagor84",
+  "url": "https://huggingface.co/zagor84/ppo-SnowballTarget",
+  "created_at": "2026-09-06T21:29:26.000Z",
+  "updated_at": "2026-09-06T21:29:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25724802,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lively Wallpaper - Free download and install on Windows | Microsoft …",
+      "url": "https://apps.microsoft.com/detail/9ntm2qc6qws7",
+      "snippet": "Free and open-source application for setting GIFs, Videos and Webpages as your desktop wallpaper and screensaver! This is an …"
+    },
+    {
+      "title": "Adilbai/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ppo-SnowballTarget",
+      "snippet": "This model is a Proximal Policy Optimization (PPO) agent trained to play the SnowballTarget environment from Unity ML-Agents. The agent, named Julien the Bear 🐻, learns to accurately throw snowballs at spawning targets to maximize rewards."
+    },
+    {
+      "title": "9460+ Live Wallpapers 4K - Free Animated Wallpapers for PC",
+      "url": "https://motionbgs.com/",
+      "snippet": "Download Free 4K Live Wallpapers at MotionBGs 100% Free Best 9460+ Animated Wallpapers for PC on Windows 11/10 & Mobile"
+    },
+    {
+      "title": "EverVissionAI/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/EverVissionAI/ppo-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "Free Live Wallpapers & Animated Backgrounds - Lively Wallpaper",
+      "url": "https://livelywallpaper.app/live-wallpapers/",
+      "snippet": "Discover live wallpapers across anime, games, nature, cars, space, and more. Preview every animated background and download it …"
+    }
+  ]
+}

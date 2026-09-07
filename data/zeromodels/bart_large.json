@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/bart_large",
+  "slug": "zeromodels-bart_large",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/bart_large",
+  "created_at": "2026-09-06T22:28:51.000Z",
+  "updated_at": "2026-09-06T22:47:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "bart",
+    "feature-extraction",
+    "seq2seq",
+    "arxiv:1910.13461",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/bart-large",
+    "base_model:finetune:facebook/bart-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1626178900,
+  "storage_human": "1.6 GB",
+  "base_model": "facebook/bart-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparatif de prévoyance TNS : laquelle choisir en 2026 ?",
+      "url": "https://www.100jourspourentreprendre.fr/comparatif/prevoyance-tns/",
+      "snippet": "Comparez les offres de prévoyance TNS et trouvez la meilleure protection pour votre activité. Garanties, tarifs et conseils pour bien …"
+    },
+    {
+      "title": "facebook/bart-large · Hugging Face",
+      "url": "https://huggingface.co/facebook/bart-large",
+      "snippet": "Intended uses & limitations How to use BibTeX entry and citation info BART (large-sized model) BART model pre-trained on English language. It was introduced in the paper BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehensionby Lewis et al. and first released in this repository."
+    },
+    {
+      "title": "Comparateur prévoyance TNS : devis avec tarif immédiat | France …",
+      "url": "https://www.france-epargne.fr/comparateurs/prevoyance",
+      "snippet": "Comparateur indépendant prévoyance TNS : devis et tarif immédiat. ITT, invalidité, décès, déduction Madelin selon votre activité."
+    },
+    {
+      "title": "tftransformers/bart-large · Hugging Face",
+      "url": "https://huggingface.co/tftransformers/bart-large",
+      "snippet": "Intended uses & limitations How to use BibTeX entry and citation info BART (large-sized model) BART model pre-trained on English language. It was introduced in the paper BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehensionby Lewis et al. and first released in this repository."
+    },
+    {
+      "title": "Prévoyance TNS : comparatif — le guide clair pour bien choisir",
+      "url": "https://www.france-epargne.fr/academy/prevoyance/prevoyance-tns-comparatif-le-guide-clair-pour-bien-choisir",
+      "snippet": "Sep 9, 2025 · Un comparatif de prévoyance TNS efficace dépasse le simple prix mensuel. Avec un PASS à 48 060 € et des IJ …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Jongbin-kr",
   "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-fact-synthesis-engine_fallback_ffn-only",
   "created_at": "2026-09-06T03:12:20.000Z",
-  "updated_at": "2026-09-06T08:54:38.000Z",
+  "updated_at": "2026-09-06T09:47:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1149930929,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 1376473937,
+  "storage_human": "1.4 GB",
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"

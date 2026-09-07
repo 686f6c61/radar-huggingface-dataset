@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "elastix-ai/HyperPrune-gpt-oss-20b-2to4",
+  "slug": "elastix-ai-hyperprune-gpt-oss-20b-2to4",
+  "author": "elastix-ai",
+  "url": "https://huggingface.co/elastix-ai/HyperPrune-gpt-oss-20b-2to4",
+  "created_at": "2026-09-06T23:11:20.000Z",
+  "updated_at": "2026-09-06T23:12:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "hyperprune",
+    "pruning",
+    "sparsity",
+    "2-4-sparsity",
+    "semi-structured",
+    "conversational",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:finetune:openai/gpt-oss-20b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41857976331,
+  "storage_human": "41.9 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ELTE - Eötvös Loránd Tudományegyetem",
+      "url": "https://tatk.elte.hu/",
+      "snippet": "Az ELTE TáTK Üzleti Kommunikáció és Marketing Tanszék és a Márka- és marketingkommunikációs kutatócsoport konferenciájára …"
+    },
+    {
+      "title": "elastix-ai/HyperPrune-Llama-3.1-8B-2to4 · Hugging Face",
+      "url": "https://huggingface.co/elastix-ai/HyperPrune-Llama-3.1-8B-2to4",
+      "snippet": "Instructions to use elastix-ai/HyperPrune-Llama-3.1-8B-2to4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Térítési és szolgáltatási díjak | Eötvös Loránd ... - ELTE",
+      "url": "https://ttk.elte.hu/th/penzugyek/dijak",
+      "snippet": "Jun 20, 2024 · Elérhetőségek, ügyfélfogadási idő A félév rendje Hallgatói Követelmény Rendszer Pénzügyek Pénzügyek Tanulmányi …"
+    },
+    {
+      "title": "Introducing gpt-oss | OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "snippet": "We’re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware."
+    },
+    {
+      "title": "Tanév rendje | Eötvös Loránd Tudományegyetem - ELTE",
+      "url": "https://tatk.elte.hu/tanevrendje",
+      "snippet": "2023. december 18. (hétfő) Utolsó nap 2024. február 3. (szombat)* 2023/2024-es tanév II. (tavaszi) félév Regisztrációs időszak 2024. …"
+    }
+  ]
+}
