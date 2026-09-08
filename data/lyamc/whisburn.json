@@ -5,7 +5,7 @@
   "author": "lyamc",
   "url": "https://huggingface.co/lyamc/whisburn",
   "created_at": "2026-09-06T00:21:28.000Z",
-  "updated_at": "2026-09-06T23:55:34.000Z",
+  "updated_at": "2026-09-07T03:54:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
   "trending_score": 0,
   "parameters": 8330325888,
   "parameters_human": "8.33B",
-  "storage_bytes": 63333182241,
+  "storage_bytes": 63345073321,
   "storage_human": "63.3 GB",
   "base_model": null,
   "formats": [

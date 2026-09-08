@@ -4,15 +4,14 @@
   "slug": "dr0wzy-aizen-siem",
   "author": "dr0wzy",
   "url": "https://huggingface.co/dr0wzy/aizen-siem",
-  "created_at": "2026-09-05T23:25:23.000Z",
-  "updated_at": "2026-09-05T23:25:59.000Z",
+  "created_at": "2026-09-07T15:26:46.000Z",
+  "updated_at": "2026-09-07T15:26:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
-    "onnx",
     "region:us"
   ],
   "likes": 0,
@@ -23,9 +22,7 @@
   "storage_bytes": 1153507389,
   "storage_human": "1.2 GB",
   "base_model": null,
-  "formats": [
-    "onnx"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "removed": false,

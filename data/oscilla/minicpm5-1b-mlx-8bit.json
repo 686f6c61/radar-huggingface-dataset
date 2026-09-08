@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Oscilla/MiniCPM5-1B-mlx-8Bit",
+  "slug": "oscilla-minicpm5-1b-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/MiniCPM5-1B-mlx-8Bit",
+  "created_at": "2026-09-07T19:58:12.000Z",
+  "updated_at": "2026-09-07T19:58:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:quantized:openbmb/MiniCPM5-1B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 1148305672,
+  "storage_human": "1.1 GB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définir le moteur de recherche par défaut et les raccourcis de ...",
+      "url": "https://support.google.com/chrome/answer/95426?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Définir le moteur de recherche par défaut et les raccourcis de recherche sur les sites Vous pouvez utiliser la barre d'adresse …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-1B-MLX · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-1B-MLX",
+      "snippet": "Desktop Pet We also ship OpenBMB/MiniCPM-Desk-Pet, a desktop pet driven locally by MiniCPM5-1B. It supports Apple Silicon / NVIDIA GPU / CPU paths, can work with coding agents such as Cursor, Claude Code, and Codex, and supports LoRA persona switching. Limitations and Responsible Use MiniCPM5-1B is a language model that generates content based on learned statistical patterns from training data ..."
+    },
+    {
+      "title": "Définir Google comme moteur de recherche par défaut - Aide …",
+      "url": "https://support.google.com/websearch/answer/464?hl=fr-419",
+      "snippet": "Définir Google comme moteur de recherche par défaut dans votre navigateur Si votre navigateur n'est pas répertorié ci-dessous, …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5-1B: A SOTA 1B on-device LLM, small ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "MiniCPM5-1B is the first checkpoint in the MiniCPM5 series. It is designed for local assistants, coding agents, tool-use workflows, and reasoning scenarios where a compact model is preferred. The model keeps a small deployment footprint while providing native long-context support and both Think / No Think chat modes through the same checkpoint."
+    },
+    {
+      "title": "Rétablir les paramètres par défaut de Chrome - Aide Google Chrome",
+      "url": "https://support.google.com/chrome/answer/3296214?hl=fr",
+      "snippet": "Moteur de recherche par défaut: dans certains pays, la recherche Google est le moteur de recherche par défaut de Chrome. Dans …"
+    }
+  ]
+}

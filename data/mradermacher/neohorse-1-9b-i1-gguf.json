@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/NeoHorse-1-9B-i1-GGUF",
   "created_at": "2026-09-07T13:06:05.000Z",
-  "updated_at": "2026-09-07T14:15:16.000Z",
+  "updated_at": "2026-09-07T16:35:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 53068855264,
-  "storage_human": "53.1 GB",
+  "storage_bytes": 110211442144,
+  "storage_human": "110.2 GB",
   "base_model": "TokenRhythm/NeoHorse-1-9B",
   "formats": [
     "gguf"

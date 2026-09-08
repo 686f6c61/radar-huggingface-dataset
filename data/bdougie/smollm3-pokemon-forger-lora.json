@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bdougie/smollm3-pokemon-forger-lora",
+  "slug": "bdougie-smollm3-pokemon-forger-lora",
+  "author": "bdougie",
+  "url": "https://huggingface.co/bdougie/smollm3-pokemon-forger-lora",
+  "created_at": "2026-09-07T17:01:26.000Z",
+  "updated_at": "2026-09-07T20:57:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "sft",
+    "pokemon-red",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:adapter:HuggingFaceTB/SmolLM3-3B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 4331610739,
+  "storage_human": "4.3 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Brasil - YouTube",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "bdougie/smollm3-forest-lora · Hugging Face",
+      "url": "https://huggingface.co/bdougie/smollm3-forest-lora",
+      "snippet": "Instructions to use bdougie/smollm3-forest-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "繁體中文版 - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLwCsL57Vm7NDHk_8dKKcDw9g2KyFxNKTA",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=pokemon&p=2&sort=trending",
+      "snippet": "Clear all Mycsina/pokemon-gan 3.58M•Updated Jul 3 bdougie/smollm3-forest-lora Text Generation •Updated Jul 7 simonko912/pikadiffusion Text-to-Image •0.1B•Updated Jul 27•34•3"
+    },
+    {
+      "title": "Essential '90s R&B - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
+      "snippet": "Playlist • YouTube Music"
+    }
+  ]
+}

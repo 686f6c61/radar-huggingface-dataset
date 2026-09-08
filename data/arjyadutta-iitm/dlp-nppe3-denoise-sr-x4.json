@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ArjyaDutta-IITM/dlp-nppe3-denoise-sr-x4",
+  "slug": "arjyadutta-iitm-dlp-nppe3-denoise-sr-x4",
+  "author": "ArjyaDutta-IITM",
+  "url": "https://huggingface.co/ArjyaDutta-IITM/dlp-nppe3-denoise-sr-x4",
+  "created_at": "2026-09-07T19:46:08.000Z",
+  "updated_at": "2026-09-07T19:46:13.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "super-resolution",
+    "image-denoising",
+    "low-light",
+    "pytorch",
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17121404,
+  "parameters_human": "17.1M",
+  "storage_bytes": 68529328,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "11 Best Private Bank for High Net Worth Individuals for 2026",
+      "url": "https://www.mymillennialguide.com/best-private-bank/",
+      "snippet": "Aug 22, 2026 · High net worth individuals keep their money in private bank accounts at some of the most popular financial …"
+    },
+    {
+      "title": "iitm-nptel-resources/dlp-nppe3-version2.ipynb at main - GitHub",
+      "url": "https://github.com/brpuneet898/iitm-nptel-resources/blob/main/dlp-nppe3-version2.ipynb",
+      "snippet": "Contribute to brpuneet898/iitm-nptel-resources development by creating an account on GitHub."
+    },
+    {
+      "title": "8 Best Private Banks for High Net Worth Individuals in 2026",
+      "url": "https://www.creditdonkey.com/best-private-bank.html",
+      "snippet": "Dec 23, 2025 · Looking for a more personalized approach in handling your wealth? Take a look at the top private banks for high net …"
+    },
+    {
+      "title": "HUGGINGFACENOOB123/dlp-nppe3-denoise-sr at main",
+      "url": "https://huggingface.co/HUGGINGFACENOOB123/dlp-nppe3-denoise-sr/tree/main",
+      "snippet": "HUGGINGFACENOOB123 dlp-nppe3-denoise-sr like1 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Best Banks for High-Net-Worth Individuals in [2026] - FinanceBuzz",
+      "url": "https://financebuzz.com/best-banks-for-high-net-worth?msockid=2ddb615c493e672b2ce2769148856692",
+      "snippet": "Jul 16, 2026 · The best banks for high-net-worth individuals and the best wealth management banks offer personalized service in …"
+    }
+  ]
+}

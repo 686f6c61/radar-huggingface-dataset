@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Tijani12/Qwen3.8-27B-Q4_K_M-GGUF",
+  "slug": "tijani12-qwen3-8-27b-q4_k_m-gguf",
+  "author": "Tijani12",
+  "url": "https://huggingface.co/Tijani12/Qwen3.8-27B-Q4_K_M-GGUF",
+  "created_at": "2026-09-07T23:41:12.000Z",
+  "updated_at": "2026-09-07T23:42:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810714432,
+  "storage_human": "16.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | Mairie Laroque D Olm",
+      "url": "https://www.laroquedolmes.com/",
+      "snippet": "Patrimoine Decouvrir Laroque Contact Mairie de Laroque d'Olmes 05.61.01.04.23 - secretariat@mairie-laroquedolmes.fr Accueil Le …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Administratif | Mairie Laroque D Olm",
+      "url": "https://www.laroquedolmes.com/administratif",
+      "snippet": "ADMINISTRATIF Mairie de Laroque d'Olmes 05.61.01.04.23 - secretariat@mairie-laroquedolmes.fr Le service administratif Mr …"
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Associations | Mairie Laroque D Olm",
+      "url": "https://www.laroquedolmes.com/associations",
+      "snippet": "Associations Mairie de Laroque d'Olmes 05.61.01.04.23 - secretariat@mairie-laroquedolmes.fr LA CAVA Par arrêté en date du 2 …"
+    }
+  ]
+}

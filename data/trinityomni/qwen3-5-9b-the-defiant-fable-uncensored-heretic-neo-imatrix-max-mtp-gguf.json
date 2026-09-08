@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "trinityomni/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+  "slug": "trinityomni-qwen3-5-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp-gguf",
+  "author": "trinityomni",
+  "url": "https://huggingface.co/trinityomni/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+  "created_at": "2026-09-07T21:54:37.000Z",
+  "updated_at": "2026-09-07T21:54:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "MTP GGUFS",
+    "Regular GGUFS",
+    "NEO Imatrix",
+    "fine tune",
+    "unsloth",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "multi-stage tuned.",
+    "all use cases",
+    "thinking",
+    "reasoning",
+    "qwen3.5",
+    "coder",
+    "creative",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+    "base_model:quantized:DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 147462764097,
+  "storage_human": "147.5 GB",
+  "base_model": "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chi era Dimitri Tollini, storico autore e migliore amico di Antonella ...",
+      "url": "https://alphabetcity.it/2026/09/07/chi-era-dimitri-tollini-storico-autore-e-migliore-amico-di-antonella-clerici-morto-a-57-anni-eta-carriera-rai-malattia-e-il-legame-dal-1998/",
+      "snippet": "12 hours ago · Dimitri Tollini, morto il 4 luglio 2026, a 57 anni, dopo una malattia è stato per quasi trent’anni una presenza centrale …"
+    },
+    {
+      "title": "Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+      "url": "https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP/tree/main",
+      "snippet": "Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Antonella Clerici in lutto per la morte di Dimitri Tollini, addio al ...",
+      "url": "https://www.bigodino.it/attualita/antonella-clerici-lutto-morto-dimitri-tollini-braccio-destro-migliore-amico.html",
+      "snippet": "Jul 4, 2026 · Il messaggio di addio, accompagnato da alcune fotografie, racconta un legame nato alla fine degli anni Novanta e …"
+    },
+    {
+      "title": "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+      "snippet": "Regular and MTP (fast) NEO IMATRIX GGUFs provided. (this model is part of the Qwen 3.6 27B Fable Fusion 711 pipelines: 2200+ likes, 3 million + downloads) Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF Extreme intelligence in a small package. Jaw dropping performance. Superior instruction following."
+    },
+    {
+      "title": "Lutto per Antonella Clerici: è morto Dimitri Tollini",
+      "url": "https://www.iltirreno.it/toscana/2026/07/04/news/lutto-per-antonella-clerici-e-morto-dimitri-tollini-1.100891143",
+      "snippet": "Jul 4, 2026 · Lutto nel mondo della televisione: è morto Dimitri Tollini, per anni assistente, collaboratore e presenza fondamentale …"
+    }
+  ]
+}

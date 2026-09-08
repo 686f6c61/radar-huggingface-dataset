@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "moussa021984/zephyr-7b-iso29148",
+  "slug": "moussa021984-zephyr-7b-iso29148",
+  "author": "moussa021984",
+  "url": "https://huggingface.co/moussa021984/zephyr-7b-iso29148",
+  "created_at": "2026-09-07T23:12:53.000Z",
+  "updated_at": "2026-09-08T01:33:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483498224,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/powerpoint-365-creating-videos-with-miscolored/fe92af38-97ac-4276-bda0-bd17b26644a0",
+      "snippet": ""
+    },
+    {
+      "title": "HuggingFaceH4/zephyr-7b-alpha · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/ark-survival-evolved-for-microsoft-10/dd1b6812-166f-4875-846a-5c6feddcd590",
+      "snippet": ""
+    },
+    {
+      "title": "Zephyr 7B - a HuggingFaceH4 Collection",
+      "url": "https://huggingface.co/collections/HuggingFaceH4/zephyr-7b",
+      "snippet": "Models, datasets, and demos associated with Zephyr 7B. For code to train the models, see: https://github.com/huggingface/alignment-handbook"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/insert-macro-crashes-when-used-in-a-filtered-list/da53b7a2-184b-46fe-a367-698339cde5e4",
+      "snippet": ""
+    }
+  ]
+}

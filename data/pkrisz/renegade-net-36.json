@@ -5,7 +5,7 @@
   "author": "pkrisz",
   "url": "https://huggingface.co/pkrisz/renegade-net-36",
   "created_at": "2026-09-02T17:22:03.000Z",
-  "updated_at": "2026-09-02T18:06:36.000Z",
+  "updated_at": "2026-09-07T15:25:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,8 +13,8 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "chess",
     "nnue",
+    "chess",
     "dataset:pkrisz/renegade-training-data",
     "license:mit",
     "region:us"

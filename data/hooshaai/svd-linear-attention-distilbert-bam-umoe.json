@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-distilbert-bam-umoe",
+  "slug": "hooshaai-svd-linear-attention-distilbert-bam-umoe",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-bam-umoe",
+  "created_at": "2026-09-07T21:15:52.000Z",
+  "updated_at": "2026-09-07T22:56:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "distilbert",
+    "bam_umoe",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "arxiv:1701.06538",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4746682,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:40.179Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ITTF World Tour Grand Finals 2018 - Actualité - Forum de tennis de ...",
+      "url": "https://forum.tennis-de-table.com/t/ittf-world-tour-grand-finals-2018/30070",
+      "snippet": "Nov 17, 2018 · les Grands Finals auront lieu du 13 au 16 décembre à Incheon en Corée Dans la liste des 16 joueurs qualifiés, il n’y a …"
+    },
+    {
+      "title": "HOOSHA AI — Frontier Artificial Intelligence & Open Research",
+      "url": "https://hooshaai.github.io/",
+      "snippet": "Hoosha AI — Frontier research laboratory pioneering sub-quadratic attention, continuous flow matching, and verified cognitive scaling architectures."
+    },
+    {
+      "title": "Lion Genmu Off/All - Forum de tennis de table et ping-pong",
+      "url": "https://forum.tennis-de-table.com/t/lion-genmu-off-all/30516",
+      "snippet": "Dec 1, 2018 · Nouveau bois de la marque Lion, il fait 65g et est sans carbone. Je pense me le commander (dispo chez Friendship)"
+    },
+    {
+      "title": "GitHub - Hooshaai/hooshaai.github.io: Hoosha AI is an independent AI ...",
+      "url": "https://github.com/Hooshaai/hooshaai.github.io",
+      "snippet": "Hoosha AI is an independent AI research lab and systems engineering initiative dedicated to advancing continuous-time generative modeling (Continuous Flow Matching), differential attention mechanisms, and scalable GPU compute infrastructure. - Hooshaai/hooshaai.github.io"
+    },
+    {
+      "title": "Balles Plastiques - Balles - Forum de tennis de table et ping-pong",
+      "url": "https://forum.tennis-de-table.com/t/balles-plastiques/716?page=23",
+      "snippet": "Dec 30, 2015 · La vaccination à outrance aussi représente un danger, je t’invite à regarder le reportage “silence on vaccine”, passé il …"
+    }
+  ]
+}

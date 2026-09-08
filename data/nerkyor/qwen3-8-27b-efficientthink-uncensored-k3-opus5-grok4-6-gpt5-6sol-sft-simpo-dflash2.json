@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+  "slug": "nerkyor-qwen3-8-27b-efficientthink-uncensored-k3-opus5-grok4-6-gpt5-6sol-sft-simpo-dflash2",
+  "author": "nerkyor",
+  "url": "https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+  "created_at": "2026-09-03T06:19:07.000Z",
+  "updated_at": "2026-09-07T17:06:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "dense",
+    "efficient-thinking",
+    "thinking",
+    "reasoning",
+    "coding",
+    "agent",
+    "conversational",
+    "uncensored",
+    "heretic",
+    "sft",
+    "simpo",
+    "bf16",
+    "fp8",
+    "block128",
+    "dflash2",
+    "speculative-decoding",
+    "sglang",
+    "vllm",
+    "nvfp4",
+    "mtp",
+    "modelopt",
+    "q2-lynnstyle",
+    "mixed-precision",
+    "gsq-rco",
+    "gsq",
+    "iq",
+    "rco",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 18953,
+  "trending_score": 8,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 314391897760,
+  "storage_human": "314.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Какво е таурин? | Ползи и странични ефекти - MYPROTEIN™",
+      "url": "https://www.myprotein.bg/blog/supplements/what-is-taurine-benefits-side-effects/",
+      "snippet": "Jan 6, 2021 · 9.99€‎ ДОБАВИ Може ли наистина да ви направи по-силни и по-бързи? Предложените ползи от приема на …"
+    },
+    {
+      "title": "taurusduan/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5 ...",
+      "url": "https://huggingface.co/taurusduan/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF",
+      "snippet": "Instructions to use taurusduan/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Какво е таурин? Положителни и отрицателни ефекти - 4fitness.bg",
+      "url": "https://4fitness.bg/blog/%D0%B0%D0%BC%D0%B8%D0%BD%D0%BE%D0%BA%D0%B8%D1%81%D0%B5%D0%BB%D0%B8%D0%BD%D0%B8/%D0%BA%D0%B0%D0%BA%D0%B2%D0%BE-%D0%B5-%D1%82%D0%B0%D1%83%D1%80%D0%B8%D0%BD-%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D0%BD%D0%B8-%D0%B8-%D0%BE%D1%82%D1%80%D0%B8%D1%86%D0%B0%D1%82%D0%B5%D0%BB%D0%BD%D0%B8-%D0%B5%D1%84%D0%B5%D0%BA%D1%82%D0%B8/",
+      "snippet": "Ползите от употребата на таурин са по-малко стрес, по-малко складиране на мазнини, повече сила и издръжливост, …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Таурин - описание и свойства - Тримарт",
+      "url": "https://trimart.bg/%D1%82%D0%B0%D1%83%D1%80%D0%B8%D0%BD-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0/",
+      "snippet": "Веществото Таурин е прието условно за есенциална аминокиселина, която в молекулата си съдържа сяра. Представлява …"
+    }
+  ]
+}

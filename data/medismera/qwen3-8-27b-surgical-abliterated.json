@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "medismera/Qwen3.8-27B-Surgical-Abliterated",
+  "slug": "medismera-qwen3-8-27b-surgical-abliterated",
+  "author": "medismera",
+  "url": "https://huggingface.co/medismera/Qwen3.8-27B-Surgical-Abliterated",
+  "created_at": "2026-09-07T21:12:05.000Z",
+  "updated_at": "2026-09-07T23:10:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ar",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "representation-engineering",
+    "refusal-ablation",
+    "surgical-projection",
+    "qwen",
+    "fp8",
+    "cybersecurity",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B-FP8",
+    "base_model:quantized:Qwen/Qwen3.8-27B-FP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 43475950728,
+  "storage_human": "43.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oauth 2.0 - Discord OAuth2 redirect URI how-to - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/37625567/discord-oauth2-redirect-uri-how-to",
+      "snippet": "Jun 4, 2016 · 2 I'm trying to make a discord bot (with the bot tag) that can join other servers. I will be able to do this, if I can set up a …"
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "javascript - Discord bot is not coming online - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/69152764/discord-bot-is-not-coming-online",
+      "snippet": "Sep 12, 2021 · In future please only add tags that are relevant to your issue. discord.net and discord.jda should not be tagged here."
+    },
+    {
+      "title": "Qwen3.8-27B Abliteration Benchmarked: 8 Variants Under the Microscope",
+      "url": "https://nathan.sapwell.net/posts/qwen38-27b-abliteration/",
+      "snippet": "Eight different groups abliterated the same AI model, Alibaba’s Qwen3.8-27B. I ran all nine models, base plus the eight variants, through the same four tests: weight forensics, KL divergence, a 13-task benchmark suite, and HarmBench with 400 harmful behaviours. Every model was served identically on a single RTX 5090, and all 3,600 HarmBench responses were read by an LLM judge. The full run ..."
+    },
+    {
+      "title": "Discord Bot Development - Reddit",
+      "url": "https://www.reddit.com/r/discordbot/",
+      "snippet": "Get help and support with discord bots and the development of them."
+    }
+  ]
+}

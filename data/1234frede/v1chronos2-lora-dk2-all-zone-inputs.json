@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "1234Frede/v1chronos2-lora-dk2-all-zone-inputs",
+  "slug": "1234frede-v1chronos2-lora-dk2-all-zone-inputs",
+  "author": "1234Frede",
+  "url": "https://huggingface.co/1234Frede/v1chronos2-lora-dk2-all-zone-inputs",
+  "created_at": "2026-09-07T21:52:18.000Z",
+  "updated_at": "2026-09-07T21:52:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:amazon/chronos-2",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:amazon/chronos-2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4854584,
+  "storage_human": "5 MB",
+  "base_model": "amazon/chronos-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=278ccc1218556d3a07c2dbdf19986cfc",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "1234Frede (Frederik Skou) - Hugging Face",
+      "url": "https://huggingface.co/1234Frede",
+      "snippet": "1234Frede/FinalSmolLM2-business-news-generator Text Generation • 0.1B•Updated Feb 9• 5 View 40 models"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "GitHub - Verm1lion/turkforecast-fm-chronos2-lora-v1",
+      "url": "https://github.com/Verm1lion/turkforecast-fm-chronos2-lora-v1",
+      "snippet": "TurkForecast-FM is the first publicly-released Apache-2.0 Turkish-vertical time-series foundation model (TSFM) fine-tune. We explicitly distinguish from three related but non-overlapping prior works: TabiBERT (arXiv:2512.23065, Boğaziçi University / VNGRS-AI, December 2025) is a Turkish ModernBERT language encoder pretrained from scratch on text — different modality (NLP, not time series ..."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

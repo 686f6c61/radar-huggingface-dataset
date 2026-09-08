@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/HippowdonMP",
+  "slug": "ryanham1lton-hippowdonmp",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/HippowdonMP",
+  "created_at": "2026-09-07T19:15:38.000Z",
+  "updated_at": "2026-09-07T19:16:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116955608,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X. It’s what’s happening / X",
+      "url": "https://x.com/",
+      "snippet": "From breaking news and entertainment to sports and politics, get the full story with all the live commentary."
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "Ryan James Hamilton Ryanham1lton Follow AI & ML interests None yet Recent Activity updateda modelabout 12 hours ago"
+    },
+    {
+      "title": "Explore - Trending Topics & Today's News | X",
+      "url": "https://x.com/explore",
+      "snippet": "Discover trending topics and today's news on X. See live updates, top conversations, and what's happening right now across the world."
+    },
+    {
+      "title": "Ryanham1lton/Hitmontop · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Hitmontop",
+      "snippet": "Ryanham1lton / Hitmontop like 0 License:cc-by-4.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "search.twitter.com",
+      "url": "https://search.twitter.com/?lang=en",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

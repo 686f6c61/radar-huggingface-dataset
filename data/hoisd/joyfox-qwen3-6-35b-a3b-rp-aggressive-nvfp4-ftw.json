@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "hoisd/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive-NVFP4-ftw",
+  "slug": "hoisd-joyfox-qwen3-6-35b-a3b-rp-aggressive-nvfp4-ftw",
+  "author": "hoisd",
+  "url": "https://huggingface.co/hoisd/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive-NVFP4-ftw",
+  "created_at": "2026-09-07T21:51:38.000Z",
+  "updated_at": "2026-09-07T22:29:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "qwen3_5_moe",
+    "qwen3.6",
+    "mixture-of-experts",
+    "roleplay",
+    "creative-writing",
+    "abliterated",
+    "uncensored",
+    "nvfp4",
+    "fp8",
+    "freetoken",
+    "ftw",
+    "text-only",
+    "blackwell",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive",
+    "base_model:quantized:joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive",
+    "license:apache-2.0",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20911240031,
+  "storage_human": "20.9 GB",
+  "base_model": "joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MX Simulator - Index page",
+      "url": "https://forum.mxsimulator.com/",
+      "snippet": "Sep 5, 2018 · I've heard conversation coming out of animal pens that is more intelligent than what is going on in here."
+    },
+    {
+      "title": "JoyFox-Qwen3.6-35B-A3B-RP-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GMX - Mail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36612223-gmx",
+      "snippet": "Apr 27, 2020 · Bonjour, On me demande de passer ( GMX.net ) alors jusqu’à présent j’étais (GMX.fr ) je désir conserver ( GMX.fr) et …"
+    },
+    {
+      "title": "joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive at main",
+      "url": "https://huggingface.co/joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive/tree/main",
+      "snippet": "Instructions to use joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "有没有查找公司logo的网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/265798971",
+      "snippet": "著名LOGO搜索引擎，可以快速搜索著名公司的logo图标，并且免费无需注册下载到本地使用，支持SVG，PNG格式，同时可以择多 …"
+    }
+  ]
+}

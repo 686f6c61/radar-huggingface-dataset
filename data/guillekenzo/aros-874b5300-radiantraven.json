@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-874b5300-RadiantRaven",
+  "slug": "guillekenzo-aros-874b5300-radiantraven",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-874b5300-RadiantRaven",
+  "created_at": "2026-09-07T20:30:21.000Z",
+  "updated_at": "2026-09-07T20:44:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 580688953,
+  "storage_human": "581 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sap Mm Jobs In Singapore Visa Sponsorship Jobs in Singapore",
+      "url": "https://sg.linkedin.com/jobs/sap-mm-jobs-in-singapore-visa-sponsorship-jobs?f_AL=true",
+      "snippet": "Today&#39;s top 1,000+ Sap Mm Jobs In Singapore Visa Sponsorship jobs in Singapore. Leverage your professional network, and …"
+    },
+    {
+      "title": "Nova - AI Chatbot",
+      "url": "https://chat.novaapp.ai/",
+      "snippet": "Nova is an AI assistant offering advanced natural language processing for answering questions, homework help, writing support, and more."
+    },
+    {
+      "title": "200+ Visa Sponsorship SAP Consultant Jobs, Employment ... - Indeed",
+      "url": "https://sg.indeed.com/q-visa-sponsorship-sap-consultant-jobs.html?vjk=d2683e0469f14530",
+      "snippet": "255 Visa Sponsorship SAP Consultant jobs available on Indeed.com. Apply to SAP Consultant, Enterprise Architect, Technical …"
+    },
+    {
+      "title": "guillekenzo/aros-f6f944db-RadiantOracle · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-f6f944db-RadiantOracle",
+      "snippet": "Instructions to use guillekenzo/aros-f6f944db-RadiantOracle with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "200+ Visa Sponsorship Available, SAP Jobs, Employment ... - Indeed",
+      "url": "https://sg.indeed.com/q-visa-sponsorship-available,-sap-jobs.html",
+      "snippet": "288 Visa Sponsorship Available, SAP jobs available on Indeed.com. Apply to SAP Consultant, Administrative Assistant, Program …"
+    }
+  ]
+}

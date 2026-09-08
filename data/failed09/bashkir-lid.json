@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "failed09/bashkir-lid",
+  "slug": "failed09-bashkir-lid",
+  "author": "failed09",
+  "url": "https://huggingface.co/failed09/bashkir-lid",
+  "created_at": "2026-09-07T20:00:10.000Z",
+  "updated_at": "2026-09-07T20:02:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "ba",
+    "ru"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "bashkir",
+    "language-identification",
+    "text-classification",
+    "ba",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 800928,
+  "storage_human": "800928 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "query- The query to perform, written in the Google Visualization API Query Language. The value for querymust either be enclosed in …"
+    },
+    {
+      "title": "failed09/bashkir-frequency-index · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/failed09/bashkir-frequency-index",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QUERY - Cправка - Редакторы Google Документов",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ru",
+      "snippet": "Выполняет запросы на базе языка запросов API визуализации Google. Пример использования QUERY(A2:E6; \"select avg(A) …"
+    },
+    {
+      "title": "failed09/bashkir-wikipedia-monolingual - Hugging Face",
+      "url": "https://huggingface.co/datasets/failed09/bashkir-wikipedia-monolingual",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "Google ชีต ใช้ฟังก์ชันและสูตร QUERY QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด …"
+    }
+  ]
+}

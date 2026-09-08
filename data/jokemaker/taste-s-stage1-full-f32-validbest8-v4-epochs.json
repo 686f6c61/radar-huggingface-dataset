@@ -5,7 +5,7 @@
   "author": "JokeMaker",
   "url": "https://huggingface.co/JokeMaker/taste-s-stage1-full-f32-validbest8-v4-epochs",
   "created_at": "2026-09-03T00:41:52.000Z",
-  "updated_at": "2026-09-05T14:26:25.000Z",
+  "updated_at": "2026-09-07T15:45:24.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 57164523532,
-  "storage_human": "57.2 GB",
+  "storage_bytes": 59160845729,
+  "storage_human": "59.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

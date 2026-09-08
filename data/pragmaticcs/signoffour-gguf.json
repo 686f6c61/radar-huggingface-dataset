@@ -5,7 +5,7 @@
   "author": "pragmaticcs",
   "url": "https://huggingface.co/pragmaticcs/SignOfFour-GGUF",
   "created_at": "2026-09-03T12:37:07.000Z",
-  "updated_at": "2026-09-04T07:08:08.000Z",
+  "updated_at": "2026-09-07T12:04:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,13 +45,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 1705,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 177218793792,
-  "storage_human": "177.2 GB",
+  "storage_bytes": 388446278656,
+  "storage_human": "388.4 GB",
   "base_model": "Jackrong/Qwopus3.6-35B-A3B-Coder, ornith-ai/Ornith-1.5-35B-A3B, Kwaipilot/KAT-Coder-V2.5-Dev, Qwen/Qwen-AgentWorld-35B-A3B",
   "formats": [
     "gguf"

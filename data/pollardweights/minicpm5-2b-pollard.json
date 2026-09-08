@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "PollardWeights/MiniCPM5-2B-Pollard",
+  "slug": "pollardweights-minicpm5-2b-pollard",
+  "author": "PollardWeights",
+  "url": "https://huggingface.co/PollardWeights/MiniCPM5-2B-Pollard",
+  "created_at": "2026-09-07T23:31:34.000Z",
+  "updated_at": "2026-09-08T01:08:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "trellis",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "trellis",
+    "gguf",
+    "pollard-weights",
+    "pollard",
+    "llama.cpp",
+    "ik_llama.cpp",
+    "imatrix",
+    "llama",
+    "quantized",
+    "mixed-precision",
+    "measured-allocation",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5215504032,
+  "storage_human": "5.2 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "PollardWeights (Pollard Weights) - Hugging Face",
+      "url": "https://huggingface.co/PollardWeights",
+      "snippet": "Team members 1 models1 PollardWeights/Qwen2.5-1.5B-Instruct-Pollard Text Generation • 2B•Updated 2 days ago• 305"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "PollardWeights (Pollard Weights) - Hugging Face",
+      "url": "https://huggingface.co/PollardWeights/models",
+      "snippet": "Team members 1 PollardWeights's models1 Sort: Recently updated PollardWeights/Qwen2.5-1.5B-Instruct-Pollard Text Generation • 2B•Updated 2 days ago• 305"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

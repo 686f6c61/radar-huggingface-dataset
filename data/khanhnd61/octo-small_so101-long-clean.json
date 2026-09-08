@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "khanhnd61/octo-small_so101-long-clean",
+  "slug": "khanhnd61-octo-small_so101-long-clean",
+  "author": "khanhnd61",
+  "url": "https://huggingface.co/khanhnd61/octo-small_so101-long-clean",
+  "created_at": "2026-09-07T21:42:51.000Z",
+  "updated_at": "2026-09-07T21:43:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "octo",
+    "dataset:khanhnd61/so101-long-clean",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27040008,
+  "parameters_human": "27.0M",
+  "storage_bytes": 108209112,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2669f876b729622633e2efbbb69963bd",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "khanhnd61/so101-multi-task · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/khanhnd61/so101-multi-task",
+      "snippet": "Datasets: khanhnd61 / so101-multi-task like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot so101 so-101 multitask teleoperation Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1 ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "khanhnd61 (Khanh Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/khanhnd61/datasets",
+      "snippet": "Recent Activity updated a model1 day ago khanhnd61/bitvla-libero-object-gguf updated a model1 day ago khanhnd61/gr00t-n1d6-bridge-gguf published a model1 day ago khanhnd61/gr00t-n1d6-bridge-gguf View all activity"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

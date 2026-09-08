@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "hm508/higgs-audio-v3-tts-4b-endpoint",
+  "slug": "hm508-higgs-audio-v3-tts-4b-endpoint",
+  "author": "hm508",
+  "url": "https://huggingface.co/hm508/higgs-audio-v3-tts-4b-endpoint",
+  "created_at": "2026-09-07T20:08:37.000Z",
+  "updated_at": "2026-09-07T20:58:42.000Z",
+  "license": "bosonai-higgs-audio-v3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "higgs_multimodal_qwen3",
+    "feature-extraction",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "higgs-audio",
+    "qwen3",
+    "custom_code",
+    "en",
+    "base_model:bosonai/higgs-tts-3-4b",
+    "base_model:finetune:bosonai/higgs-tts-3-4b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4654850537,
+  "parameters_human": "4.65B",
+  "storage_bytes": 9321268854,
+  "storage_human": "9.3 GB",
+  "base_model": "bosonai/higgs-audio-v3-tts-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Strategist - New Products, Gift Ideas, The Best Deals | The Strategist",
+      "url": "https://nymag.com/strategist/",
+      "snippet": "The Strategist is a New York Magazine site, where trustworthy journalists curate product recommendations from across the vast e …"
+    },
+    {
+      "title": "GitHub - boson-ai/higgs-audio: Text-audio foundation model from Boson AI",
+      "url": "https://github.com/boson-ai/higgs-audio",
+      "snippet": "👉 Don't clone this repository to use the latest model. Higgs Audio v3 is a standalone release and does not depend on the code here. Just grab the weights or call the hosted API: Weights: bosonai/higgs-audio-v3-tts-4b. We recommend serving with SGLang-Omni: export HF_TOKEN=hf_xxxxxxxxxxxxxxxx hf ..."
+    },
+    {
+      "title": "The Gift Scout | The Strategist - New York Magazine",
+      "url": "https://nymag.com/strategist/gift-scout.html",
+      "snippet": "Type in the hard-to-shop-for person on your holiday list, and this tool will sort through all the products we’ve written about on the …"
+    },
+    {
+      "title": "bosonai/higgs-audio-v3-tts-4b at main - Hugging Face",
+      "url": "https://huggingface.co/bosonai/higgs-audio-v3-tts-4b/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The-Strategist",
+      "url": "https://www.the-strategist.com/",
+      "snippet": "The-Strategist."
+    }
+  ]
+}

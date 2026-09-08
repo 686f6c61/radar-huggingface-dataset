@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-qwen3_5-asvd",
+  "slug": "hooshaai-svd-linear-attention-qwen3_5-asvd",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-qwen3_5-asvd",
+  "created_at": "2026-09-07T21:15:33.000Z",
+  "updated_at": "2026-09-07T22:56:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "qwen3_5",
+    "asvd",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46163786,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:40.692Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laundry Service Businesses in Kalibo - Cybo",
+      "url": "https://www.cybo.com/PH/kalibo/laundry-service",
+      "snippet": "Find Laundry Service businesses in Kalibo using Cybo.com, the Global Business Directory | Yellow pages."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Compared with our previous MoE Qwen2.5-Plus of similar size, Qwen3-235B-A22B-Base significantly outperforms it with fewer parameters and activated parameters, which shows the remarkable advantages of Qwen3 in pre-training data, training strategy, and model architecture."
+    },
+    {
+      "title": "Laundry Shops Near Me in Kalibo, Visayas | LaundryAtlas",
+      "url": "https://laundryatlas.com/ph/visayas/kalibo",
+      "snippet": "Find 28 laundry shops near me in Kalibo, Visayas. Compare per-kilo prices, ratings, wash-and-fold, dry clean, and pickup & delivery."
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Laundry Service in Kalibo Near Me — Visayas | LaundryAtlas",
+      "url": "https://laundryatlas.com/ph/laundry-service/kalibo",
+      "snippet": "Find 28 laundry services near you in Kalibo, Visayas. Compare wash-and-fold, dry clean, and pickup & delivery shops with per-kilo …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "tuanhdev",
   "url": "https://huggingface.co/tuanhdev/vidroidcall-qwen3-0.6B-nlu-gguf-v6",
   "created_at": "2026-09-05T08:37:00.000Z",
-  "updated_at": "2026-09-05T08:56:22.000Z",
+  "updated_at": "2026-09-07T23:36:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 90,
+  "downloads_30d": 112,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 396704640,
-  "storage_human": "397 MB",
+  "storage_bytes": 793409280,
+  "storage_human": "793 MB",
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"

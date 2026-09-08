@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "medarc/spectra-midnight-12k-merged",
+  "slug": "medarc-spectra-midnight-12k-merged",
+  "author": "medarc",
+  "url": "https://huggingface.co/medarc/spectra-midnight-12k-merged",
+  "created_at": "2026-09-07T20:23:20.000Z",
+  "updated_at": "2026-09-07T20:24:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "pathology",
+    "histopathology",
+    "feature-extraction",
+    "computational-pathology",
+    "vision-transformer",
+    "base_model:kaiko-ai/midnight",
+    "base_model:finetune:kaiko-ai/midnight",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13638016296,
+  "storage_human": "13.6 GB",
+  "base_model": "kaiko-ai/midnight",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "GitHub - MedARC-AI/OpenMidnight",
+      "url": "https://github.com/MedARC-AI/OpenMidnight",
+      "snippet": "OpenMidnight Fully open-source and improved replication of Kaiko.AI's pathology foundation model Midnight. Sophont · MedARC This is a publicly developed, open-source project by MedARC. If you are interested in helping out, join our Discord server and introduce yourself in our #path-fm channel."
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Troubleshoot problems playing videosTroubleshoot account issuesFix upload problemsGet help with the YouTube Partner …"
+    },
+    {
+      "title": "MedARC · GitHub",
+      "url": "https://github.com/MedARC-AI",
+      "snippet": "MedARC has 42 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Google aile Yt premium çalışmıyor - Google Arama ve Asistan Topluluğu",
+      "url": "https://support.google.com/websearch/thread/415840269/google-aile-yt-premium-%C3%A7al%C4%B1%C5%9Fm%C4%B1yor?hl=tr",
+      "snippet": "Mar 9, 2026 · Bu yardım içeriği ve bilgileriYardım Merkezi ile ilgili genel deneyim"
+    }
+  ]
+}

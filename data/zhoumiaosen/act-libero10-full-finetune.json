@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "zhoumiaosen/act-libero10-full-finetune",
+  "slug": "zhoumiaosen-act-libero10-full-finetune",
+  "author": "zhoumiaosen",
+  "url": "https://huggingface.co/zhoumiaosen/act-libero10-full-finetune",
+  "created_at": "2026-09-07T22:11:20.000Z",
+  "updated_at": "2026-09-07T22:18:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51671687,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206727372,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vind fiets decathlon rockrider op Marktplaats - september 2026",
+      "url": "https://www.marktplaats.nl/q/fiets+decathlon+rockrider/?msockid=1198ed84e435698d21b1fa49e52d680d",
+      "snippet": "Decathlon Rockrider fiets 26 inchTe koop aangeboden: een nette decathlon rockrider fiets met 26 inch wielen. Deze mountainbike is …"
+    },
+    {
+      "title": "zhoumiaosen/groot-n1p5-lora-libero10-full-finetune · Hugging Face",
+      "url": "https://huggingface.co/zhoumiaosen/groot-n1p5-lora-libero10-full-finetune",
+      "snippet": "A real fine-tune of NVIDIA GR00T-N1.5-3B via LeRobot's grootpolicy wrapper on the full LIBERO-Long (libero_10) subsetof HuggingFaceVLA/libero— 379 episodes across all 10 tasks, not a toy subset. Training config Base model: nvidia/GR00T-N1.5-3B Dataset: HuggingFaceVLA/libero, episodes 0–378 (the 379 episodes belonging"
+    },
+    {
+      "title": "Vind rockrider decathlon op Marktplaats - september 2026",
+      "url": "https://www.marktplaats.nl/q/rockrider+decathlon/?msockid=1198ed84e435698d21b1fa49e52d680d",
+      "snippet": "Rockrider ST500 Mountainbike 24 inch DecathlonTe koop: een gebruikte rockrider st500 mountainbike van decathlon, ideaal voor …"
+    },
+    {
+      "title": "GitHub - Lifelong-Robot-Learning/LIBERO: Benchmarking Knowledge ...",
+      "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+      "snippet": "In contrast, LIBERO-100consists of 100 manipulation tasks that require the transfer of entangled knowledge. LIBERO-100is further splitted into LIBERO-90for pretraining a policy and LIBERO-10for testing the agent's downstream lifelong learning performance."
+    },
+    {
+      "title": "Vind decathlon fiets rockrider op Marktplaats - september 2026",
+      "url": "https://www.marktplaats.nl/q/decathlon+fiets+rockrider/?msockid=1198ed84e435698d21b1fa49e52d680d",
+      "snippet": "Aug 26, 2021 · Decathlon Rockrider Mountainbike - Blauw/WitTe koop: een gebruikte decathlon rockrider mountainbike in de kleuren …"
+    }
+  ]
+}

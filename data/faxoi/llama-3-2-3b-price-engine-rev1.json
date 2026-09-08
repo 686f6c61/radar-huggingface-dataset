@@ -5,7 +5,7 @@
   "author": "faxoi",
   "url": "https://huggingface.co/faxoi/llama-3.2-3b-price-engine-Rev1",
   "created_at": "2026-09-06T12:13:34.000Z",
-  "updated_at": "2026-09-07T08:23:35.000Z",
+  "updated_at": "2026-09-07T14:18:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": 3212749824,
   "parameters_human": "3.21B",
-  "storage_bytes": 51421442304,
-  "storage_human": "51.4 GB",
+  "storage_bytes": 64272500400,
+  "storage_human": "64.3 GB",
   "base_model": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"

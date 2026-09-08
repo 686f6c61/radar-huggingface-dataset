@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "deloskiyt/gai-1.2",
+  "slug": "deloskiyt-gai-1-2",
+  "author": "deloskiyt",
+  "url": "https://huggingface.co/deloskiyt/gai-1.2",
+  "created_at": "2026-09-07T21:28:23.000Z",
+  "updated_at": "2026-09-07T21:51:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "safetensors",
+    "gguf",
+    "gpt2",
+    "lmstudio",
+    "litertlm",
+    "ios",
+    "mobile",
+    "gai",
+    "text-generation",
+    "conversational",
+    "pl",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19708672,
+  "parameters_human": "19.7M",
+  "storage_bytes": 303173444,
+  "storage_human": "303 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marriott Bonvoy Hotels | Book Directly & Get Exclusive Rates",
+      "url": "https://www.marriott.com/default.mi?msockid=2974f9d26dd56b7e0728ee1f6c976a3b",
+      "snippet": "Book Directly & Save at any of our 9000+ Marriott Bonvoy Hotels. Choose from Luxury Hotels, Resorts, Extended Stay Hotels, Pet …"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now."
+    },
+    {
+      "title": "Marriott Bonvoy Account Login - Sign In | Marriott",
+      "url": "https://www.marriott.com/sign-in.mi?msockid=2974f9d26dd56b7e0728ee1f6c976a3b",
+      "snippet": "Securely access your Marriott Bonvoy® account to view points, manage reservations, and explore exclusive member benefits."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Wonderful Hotels & Resorts | Marriott Hotels",
+      "url": "https://marriott-hotels.marriott.com/",
+      "snippet": "Explore the wonderful hospitality that makes Marriott Hotels & Resorts ideal for all travel. Discover fitness, rewards and world-class …"
+    }
+  ]
+}

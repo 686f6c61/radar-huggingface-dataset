@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Lathif25/Model-LLM-Finetuned",
+  "slug": "lathif25-model-llm-finetuned",
+  "author": "Lathif25",
+  "url": "https://huggingface.co/Lathif25/Model-LLM-Finetuned",
+  "created_at": "2026-09-07T19:35:51.000Z",
+  "updated_at": "2026-09-07T20:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/llama-3.1-8b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANWB Energie",
+      "url": "https://www.anwb.nl/energie",
+      "snippet": "Jun 24, 2026 · ANWB Energie klanten besparen gemiddeld €500,- per jaar. Stap ook over op ANWB Energie: ruim 180.000 tevreden …"
+    },
+    {
+      "title": "AI Model Release Tracker: New LLM Launches, Updated Weekly | AI Flash ...",
+      "url": "https://aiflashreport.com/model-releases.html",
+      "snippet": "Live tracker of every new AI model release - GPT, Claude, Gemini, Llama, open-weights. Launch dates, context windows, benchmarks. Updated weekly."
+    },
+    {
+      "title": "Service & contact | ANWB",
+      "url": "https://www.anwb.nl/service-en-contact",
+      "snippet": "Rechtsbijstandverzekering Schade & Service Geen zin in gedoe? Sluit een ANWB verzekering af Energie EnergieAlles over energie …"
+    },
+    {
+      "title": "Fine Tuning Large Language Model (LLM) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/fine-tuning-large-language-model-llm/",
+      "snippet": "Fine-tuning refers to the process of taking a pre-trained model and adapting it to a specific task by training it further on a smaller, domain-specific dataset. It refines the model’s capabilities and improves its accuracy in specialised tasks without needing a massive dataset or expensive computational resources."
+    },
+    {
+      "title": "Actuele energietarieven | ANWB Energie",
+      "url": "https://www.anwb.nl/energie/actuele-tarieven",
+      "snippet": "21 hours ago · Actuele energietarieven Maandbedrag berekenen Dynamische energieprijzen In de energieprijzen grafiek zie je de …"
+    }
+  ]
+}

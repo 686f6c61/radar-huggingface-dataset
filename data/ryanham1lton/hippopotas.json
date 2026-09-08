@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Hippopotas",
+  "slug": "ryanham1lton-hippopotas",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Hippopotas",
+  "created_at": "2026-09-07T19:13:12.000Z",
+  "updated_at": "2026-09-07T19:14:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119727530,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Open and Run dxdiag.exe on Windows 10/11 - MiniTool",
+      "url": "https://www.minitool.com/news/dxdiag.html",
+      "snippet": "Feb 13, 2026 · This post includes answers for what is dxdiag, how to run dxdiag in Windows 10/11, DirectX Diagnostic Tool’s main …"
+    },
+    {
+      "title": "hippopotas Stable Diffusion & Flux AI Models | Civitai",
+      "url": "https://civitai.com/tag/hippopotas",
+      "snippet": "Browse hippopotas Stable Diffusion & Flux models, checkpoints, hypernetworks, textual inversions, embeddings, Aesthetic Gradients, and LORAs"
+    },
+    {
+      "title": "ما إصدار DirectX الموجود على الكمبيوتر؟ | Microsoft Support",
+      "url": "https://support.microsoft.com/ar-sa/windows/hardware/display-graphics/which-version-of-directx-is-on-your-pc",
+      "snippet": "في مربع البحثعلى شريط الأدوات، أدخل dxdiag، ثم حدد dxdiagمن قائمة النتائج. في أداة تشخيص DirectX، حدد علامة التبويب النظام، ثم تحقق من إصدار DirectX ضمن معلومات النظام."
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "Ryan James Hamilton Ryanham1lton Follow AI & ML interests None yet Recent Activity updateda modelabout 12 hours ago"
+    },
+    {
+      "title": "How to Run and Use DirectX Diagnostic Tool (dxdiag) in Windows 11",
+      "url": "https://windowsreport.com/how-to-open-use-directx-diagnostic-tool/",
+      "snippet": "Jul 15, 2025 · Whether you’re a casual user or a gamer trying to diagnose FPS drops, this step-by-step guide will show you how to …"
+    }
+  ]
+}

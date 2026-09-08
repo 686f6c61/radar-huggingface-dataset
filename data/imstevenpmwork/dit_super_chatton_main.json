@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "imstevenpmwork/dit_super_chatton_main",
+  "slug": "imstevenpmwork-dit_super_chatton_main",
+  "author": "imstevenpmwork",
+  "url": "https://huggingface.co/imstevenpmwork/dit_super_chatton_main",
+  "created_at": "2026-09-07T19:19:00.000Z",
+  "updated_at": "2026-09-07T19:19:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "multi_task_dit",
+    "robotics",
+    "dataset:imstevenpmwork/super_chatton",
+    "arxiv:2507.05331",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 248855302,
+  "parameters_human": "248.9M",
+  "storage_bytes": 995509256,
+  "storage_human": "996 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Silberfischchen – Minecraft Wiki",
+      "url": "https://de.minecraft.wiki/w/Silberfischchen",
+      "snippet": "Silberfischchen fügen Spielern nur bei einer Veränderung der Y-Koordinate des Spielers oder wenn ein Spieler einem Silberfischchen …"
+    },
+    {
+      "title": "imstevenpmwork/super_chatton · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/imstevenpmwork/super_chatton",
+      "snippet": "Datasets: imstevenpmwork / super_chatton like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·73.8k rows default (73.8k rows ..."
+    },
+    {
+      "title": "Befallen – Minecraft Wiki",
+      "url": "https://de.minecraft.wiki/w/Befallen",
+      "snippet": "Befallene Entitäten haben eine 10%ige Chance, 1-3 Silberfischchen zu erzeugen, wenn sie verletzt werden. Die Schadensquelle …"
+    },
+    {
+      "title": "imstevenpmwork (Steven Palma) - Hugging Face",
+      "url": "https://huggingface.co/imstevenpmwork",
+      "snippet": "Robotics LeRobot Humanoid: An Open, Low-Cost, 3D-Printed Humanoid for Robot Learning"
+    },
+    {
+      "title": "Wie macht man den Trank der Befallheit in Minecraft? - gamever",
+      "url": "https://gamever.io/knowledge-base/wie-macht-man-den-trank-der-befallheit-in-minecraft",
+      "snippet": "Diese Anleitung führt Dich durch die Schritte zur Herstellung dieses einzigartigen Tranks, der den Status-Effekt „Befallheit“ verleiht, …"
+    }
+  ]
+}

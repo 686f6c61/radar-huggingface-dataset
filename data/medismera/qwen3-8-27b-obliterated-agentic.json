@@ -5,7 +5,7 @@
   "author": "medismera",
   "url": "https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Agentic",
   "created_at": "2026-09-06T23:44:27.000Z",
-  "updated_at": "2026-09-07T02:10:08.000Z",
+  "updated_at": "2026-09-07T18:23:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 195,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

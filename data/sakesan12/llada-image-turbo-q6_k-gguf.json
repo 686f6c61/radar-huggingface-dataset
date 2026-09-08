@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sakesan12/LLaDA-Image-Turbo-q6_K-GGUF",
+  "slug": "sakesan12-llada-image-turbo-q6_k-gguf",
+  "author": "sakesan12",
+  "url": "https://huggingface.co/sakesan12/LLaDA-Image-Turbo-q6_K-GGUF",
+  "created_at": "2026-09-07T20:27:41.000Z",
+  "updated_at": "2026-09-07T20:27:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llada-image",
+    "image-generation",
+    "image-editing",
+    "quantized",
+    "q6_k",
+    "text-to-image",
+    "base_model:inclusionAI/LLaDA-Image-Turbo",
+    "base_model:quantized:inclusionAI/LLaDA-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "inclusionAI/LLaDA-Image-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'video bokep' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/video+bokep",
+      "snippet": "Bokep Indonesia Terbaru – Cewek 18 Cantik Pamer Toket Kencang Lalu Colmek Memek Sempit Sampai Orgasme 343.4k …"
+    },
+    {
+      "title": "GitHub - inclusionAI/LLaDA-Image",
+      "url": "https://github.com/inclusionAI/LLaDA-Image",
+      "snippet": "Introduction LLaDA-Image is a competitive 6B-parameter open-source unified image generation and editing model family. It includes LLaDA-Image, a 50-step Base model for high-quality text-to-image generation and instruction-guided editing, and LLaDA-Image-Turbo, a 4-step distilled model for fast generation and editing."
+    },
+    {
+      "title": "Bokepsegar - Download dan Nonton Video Bokep Top Terbaru Masih …",
+      "url": "http://209.97.171.113/",
+      "snippet": "BOKEPSEGARDownload dan Nonton Video Bokep Top Terbaru Masih Segar Video Bokep Update Terbaru 11min Bokep Bu Guru …"
+    },
+    {
+      "title": "[2609.03796] LLaDA-Image: Building Strong Image Generators with Fully ...",
+      "url": "https://arxiv.org/abs/2609.03796",
+      "snippet": "We introduce LLaDA-Image, a unified framework that pairs a 6B Diffusion Transformer (DiT) trained from scratch with a frozen vision-language understanding module built on the LLaDA2.0-Mini diffusion language model backbone. Instead of relying heavily on paired image-text data from the beginning, we first build a strong visual generative prior through image-only pre-training and mid-training ..."
+    },
+    {
+      "title": "'bokep' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=bokep+",
+      "snippet": "184 bokep FREE videos found on XVIDEOS for this search."
+    }
+  ]
+}

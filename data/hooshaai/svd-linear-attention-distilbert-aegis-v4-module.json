@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-distilbert-aegis-v4-module",
+  "slug": "hooshaai-svd-linear-attention-distilbert-aegis-v4-module",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v4-module",
+  "created_at": "2026-09-07T21:10:48.000Z",
+  "updated_at": "2026-09-07T22:56:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "distilbert",
+    "aegis_v4_module",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4748282,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:48.469Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "De Krim Texel | Ontdek de mogelijkheden op Texel",
+      "url": "https://www.krim.nl/",
+      "snippet": "Bij De Krim Texel heeft u namelijk de keuze uit 9 verschillende parken verspreid over Texel. Prachtige campings, het best uitgeruste …"
+    },
+    {
+      "title": "svd-linear-attention-sst2-results - Hugging Face",
+      "url": "https://huggingface.co/datasets/tahamajs/svd-linear-attention-sst2-results",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krim - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Krim",
+      "snippet": "Wikipedia® is een geregistreerd handelsmerk van de Wikimedia Foundation, Inc., een organisatie zonder winstoogmerk."
+    },
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "DistilBERT DistilBERTis pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model."
+    },
+    {
+      "title": "Vakantiepark De Krim: het best uitgeruste vakantiepark van Texel!",
+      "url": "https://www.krim.nl/vakantiepark-de-krim",
+      "snippet": "Vakantiepark De Krim is het best uitgeruste vakantiepark van Texel en de Waddeneilanden. Hier heeft u alles bij de hand voor een …"
+    }
+  ]
+}

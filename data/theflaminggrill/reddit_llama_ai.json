@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "theFlamingGrill/reddit_llama_ai",
+  "slug": "theflaminggrill-reddit_llama_ai",
+  "author": "theFlamingGrill",
+  "url": "https://huggingface.co/theFlamingGrill/reddit_llama_ai",
+  "created_at": "2026-09-07T21:30:45.000Z",
+  "updated_at": "2026-09-07T21:31:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 807690880,
+  "storage_human": "808 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Why did Meta AI give a $100 million model for free? : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1dqegun/why_did_meta_ai_give_a_100_million_model_for_free/",
+      "snippet": "I see couple of folks saying that Meta’s decision to release Llama 3 for free is a strategic masterpiece cloaked in generosity. Its closest competition OpenAI, known for its own powerful AI models like GPT-4, operates on a model where access is generally through a paid API, licensing, or partnership arrangements. some public sources shared that OpenAI Doubles Annualized Revenue to $3.4 Billion."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "© 2026 Google LLC."
+    },
+    {
+      "title": "Meta Llama Reddit: What r/LocalLLaMA Really Thinks (2026)",
+      "url": "https://www.aitooldiscovery.com/guides/llama-reddit",
+      "snippet": "Meta Llama is the most important open-source AI model family on the planet, and r/LocalLLaMA is the community that proves it. The subreddit has grown to over 266,500 members and is the de facto home for developers, researchers, and privacy-conscious users who run Llama models on their own hardware instead of sending data to OpenAI or Anthropic. The community explores the gap between open ..."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

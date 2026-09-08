@@ -5,7 +5,7 @@
   "author": "Boom407",
   "url": "https://huggingface.co/Boom407/thai-qa-lab-model",
   "created_at": "2026-09-04T03:14:21.000Z",
-  "updated_at": "2026-09-04T03:14:56.000Z",
+  "updated_at": "2026-09-07T06:37:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 195,
+  "downloads_30d": 203,
   "trending_score": 0,
   "parameters": 124449024,
   "parameters_human": "124.4M",
-  "storage_bytes": 497811072,
-  "storage_human": "498 MB",
+  "storage_bytes": 1991244288,
+  "storage_human": "2.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

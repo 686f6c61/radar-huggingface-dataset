@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lonecatone23/WAI_Not",
+  "slug": "lonecatone23-wai_not",
+  "author": "Lonecatone23",
+  "url": "https://huggingface.co/Lonecatone23/WAI_Not",
+  "created_at": "2026-09-07T21:49:03.000Z",
+  "updated_at": "2026-09-07T21:49:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7105351992,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wenn der Partner sich zurückzieht: Ursachen und Lösungen",
+      "url": "https://herzblatt-journal.com/blog/beziehung-nach-rueckzug-partner",
+      "snippet": "Mar 16, 2026 · Wenn der Partner sich zurückzieht: Was emotionaler Rückzug wirklich bedeutet, welche Ursachen dahinterstecken …"
+    },
+    {
+      "title": "WAI_Not?_V1.0 - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/2643710?modelVersionId=2968484",
+      "snippet": "Download WAI_Not?_V1.0 - Checkpoint for Illustrious by lonecatone23. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Paartherapie: Konflikte klären und sich weiterentwickeln | ndr.de",
+      "url": "https://www.ndr.de/ratgeber/verbraucher/Paartherapie-Konflikte-klaeren-und-sich-weiterentwickeln,paartherapie126.html",
+      "snippet": "May 22, 2025 · Wenn die Partner einander nur noch frühere Verletzungen vorwerfen und von gegenseitigen Schuldzuweisungen …"
+    },
+    {
+      "title": "WAI_Not?_V1.0 - Illustrious V1.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2643710/wainotv10",
+      "snippet": "WAI_Not? WAI_not focuses on clarity and details as well as structure. I tweaked the lower out blocks as well as fine tuned the mids, then used an Arthemy model tuner to get the rest. The Model,Clip, & VAEare all modifedfrom the base model, so use it as a whole in a checkpoint if possible."
+    },
+    {
+      "title": "10 Anzeichen für eine kaputte Beziehung: Warnsignale & Hilfe",
+      "url": "https://www.nurliebe.de/magazin/10-anzeichen-fuer-eine-kaputte-beziehung",
+      "snippet": "In diesem Artikel setzen wir uns mit den häufigsten Problemen auseinander, die in Partnerschaften auftreten können und nennen dir …"
+    }
+  ]
+}

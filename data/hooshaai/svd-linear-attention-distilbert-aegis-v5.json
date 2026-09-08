@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-distilbert-aegis-v5",
+  "slug": "hooshaai-svd-linear-attention-distilbert-aegis-v5",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v5",
+  "created_at": "2026-09-07T21:10:54.000Z",
+  "updated_at": "2026-09-07T22:56:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "distilbert",
+    "aegis_v5",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4748282,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:47.956Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Los mejores hoteles de Zapopan, Guadalajara, México",
+      "url": "https://www.booking.com/district/mx/guadalajara/zapopan.es-mx.html?msockid=1bf3cff522cd67232361d83823ac667f",
+      "snippet": "Reserva tu hotel en Zapopan, Guadalajara online. ¿Dónde? Encuentra todos los hoteles de Zapopan, Guadalajara en el mapa. Sin …"
+    },
+    {
+      "title": "Re-Engineering the Attention Engine - by Hoosha AI",
+      "url": "https://hooshaai.substack.com/p/re-engineering-the-attention-engine",
+      "snippet": "The chart above sketches what this looks like in the singular-value spectrum: standard linear attention’s spectrum (orange) drops off almost immediately, meaning only a handful of directions actually carry signal."
+    },
+    {
+      "title": "The best hotels in Zapopan, Guadalajara, Mexico - Booking.com",
+      "url": "https://www.booking.com/district/mx/guadalajara/zapopan.html?msockid=1bf3cff522cd67232361d83823ac667f",
+      "snippet": "6 days ago · Book your hotel in Zapopan, Guadalajara online. But where exactly? Find all hotels in Zapopan, Guadalajara on a city …"
+    },
+    {
+      "title": "svd-linear-attention-sst2-results - Hugging Face",
+      "url": "https://huggingface.co/datasets/tahamajs/svd-linear-attention-sst2-results",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hoteles en Zapopan | Busca y compara ofertas increíbles en trivago",
+      "url": "https://www.trivago.com.mx/es-MX/odr/hoteles-zapopan-m%C3%A9xico?search=200-32096&msockid=1bf3cff522cd67232361d83823ac667f",
+      "snippet": "6 days ago · La mayor oferta de hospedaje en Zapopan. Hospédate en hoteles increíbles al precio ideal. | ¿Hoteles en Zapopan? - …"
+    }
+  ]
+}

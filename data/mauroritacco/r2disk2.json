@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MauroRitacco/R2Disk2",
+  "slug": "mauroritacco-r2disk2",
+  "author": "MauroRitacco",
+  "url": "https://huggingface.co/MauroRitacco/R2Disk2",
+  "created_at": "2026-09-08T00:19:39.000Z",
+  "updated_at": "2026-09-08T01:27:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310439314,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.it/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "GitHub - MauroRitacco/DiskGenerator",
+      "url": "https://github.com/MauroRitacco/DiskGenerator",
+      "snippet": "DiskGenerator DiskGenerator is an automated pipeline for generating synthetic radio interferometry datasets consisting of simple disk models. It simulates realistic VLA (Very Large Array) UV coverage and mathematically models the measurement visibilities to produce ground-truth sources and their corresponding \"dirty\" (raw, point spread function-corrupted) images. These datasets are ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=it-it",
+      "snippet": "Google offerto in: English PubblicitàInformazioni su GoogleGoogle.com in English © 2026 - Privacy- Termini App Google"
+    },
+    {
+      "title": "MauroRitacco · GitHub",
+      "url": "https://github.com/MauroRitacco",
+      "snippet": "MauroRitacco has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/webhp?hl=it",
+      "snippet": "Google offerto in: English Pubblicità Informazioni su Google Google.com"
+    }
+  ]
+}

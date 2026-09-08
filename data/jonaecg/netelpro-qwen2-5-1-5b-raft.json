@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "JonaECG/netelpro-qwen2.5-1.5b-raft",
+  "slug": "jonaecg-netelpro-qwen2-5-1-5b-raft",
+  "author": "JonaECG",
+  "url": "https://huggingface.co/JonaECG/netelpro-qwen2.5-1.5b-raft",
+  "created_at": "2026-09-07T22:51:50.000Z",
+  "updated_at": "2026-09-07T23:00:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048160,
+  "storage_human": "986 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time in Japan now",
+      "url": "https://time.is/Japan",
+      "snippet": "1 day ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Japan."
+    },
+    {
+      "title": "JonaECG/netelpro-qwen2.5-1.5b-honest · Hugging Face",
+      "url": "https://huggingface.co/JonaECG/netelpro-qwen2.5-1.5b-honest",
+      "snippet": "Instructions to use JonaECG/netelpro-qwen2.5-1.5b-honest with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "What Day Is It in Japan Right Now? Live Japan Time (JST)",
+      "url": "https://daysoftheweek.org/what-day-is-it-in-japan/",
+      "snippet": "1 day ago · Live: today's day, date and time in Japan (JST, UTC+9) — plus the Japanese name for today's weekday. Find out if it's …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "Instructions to use Qwen/Qwen2.5-1.5B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Time in Japan Now (JST) - Live Clock",
+      "url": "https://time.now/countries/japan/",
+      "snippet": "Current time in Japan right now in JST. Live clock with seconds, today's sunrise/sunset, public holidays, and interactive map - …"
+    }
+  ]
+}

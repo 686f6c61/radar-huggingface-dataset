@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "id": "ewin-reg/WeMM-Embedding-2B-Quantized",
+  "slug": "ewin-reg-wemm-embedding-2b-quantized",
+  "author": "ewin-reg",
+  "url": "https://huggingface.co/ewin-reg/WeMM-Embedding-2B-Quantized",
+  "created_at": "2026-09-07T15:54:39.000Z",
+  "updated_at": "2026-09-08T00:24:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3_5",
+    "multimodal",
+    "embeddings",
+    "retrieval",
+    "feature-extraction",
+    "quantization",
+    "mixed-precision",
+    "w4a8",
+    "fp8",
+    "int4",
+    "svd",
+    "gguf",
+    "mrl",
+    "text-embeddings",
+    "image-embedding",
+    "video-embedding",
+    "cross-modal",
+    "custom_code",
+    "en",
+    "zh",
+    "multilingual",
+    "arxiv:2608.24053",
+    "base_model:tencent/WeMM-Embedding-2B",
+    "base_model:finetune:tencent/WeMM-Embedding-2B",
+    "license:other",
+    "model-index",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1510770816,
+  "parameters_human": "1.51B",
+  "storage_bytes": 4674691706,
+  "storage_human": "4.7 GB",
+  "base_model": "tencent/WeMM-Embedding-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "Model Size on Disk",
+      "value": 1.4407
+    },
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "Storage Footprint Reduction",
+      "value": 71.59
+    },
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "Text Cosine Fidelity",
+      "value": 96.7267
+    },
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "Text Degradation",
+      "value": 3.2733
+    },
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "Visual Image Fidelity",
+      "value": 94.612
+    },
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "Video Frame Fidelity",
+      "value": 93.185
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google Chrome'u indirme ve yükleme - Bilgisayar - Google Chrome …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u çevrimdışı yükleme Chrome'u Windows bilgisayarınıza indirirken sorun yaşarsanız alternatif bağlantıyı kullanarak farklı bir …"
+    },
+    {
+      "title": "ewin-reg/WeMM-Embedding-2B-Quantized · Hugging Face",
+      "url": "https://huggingface.co/ewin-reg/WeMM-Embedding-2B-Quantized",
+      "snippet": "Instructions to use ewin-reg/WeMM-Embedding-2B-Quantized with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Windows Gezgini ile kolay dosya yönetimi - CHIP Online",
+      "url": "https://www.chip.com.tr/ipucu/windows-gezgini-ile-kolay-dosya-yonetimi_53398.html",
+      "snippet": "Jan 31, 2010 · Dosyaların Windows Gezgini üzerinden kopyalanması ve taşınması pek çok kullanıcı tarafından birden fazla adım …"
+    },
+    {
+      "title": "tencent/WeMM-Embedding-2B · Hugging Face",
+      "url": "https://huggingface.co/tencent/WeMM-Embedding-2B",
+      "snippet": "WeMM-Embedding-2B is a universal multimodal embedding model built on Qwen3.5. It accepts text, images, videos, visual documents, and interleaved multimodal inputs, and returns a 2,048-dimensional L2-normalized embedding. Audio input is not supported."
+    },
+    {
+      "title": "Bilgisayarınızla Android cihaz arasında dosya aktarma - Android Yardım",
+      "url": "https://support.google.com/android/answer/9064445?hl=tr",
+      "snippet": "Windows'un, yeni donanımları otomatik olarak algıladığından emin olmak için bilgisayarınızın ayarlarını kontrol edin. Bilgisayarınızı …"
+    }
+  ]
+}

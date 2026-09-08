@@ -5,7 +5,7 @@
   "author": "Birdsey",
   "url": "https://huggingface.co/Birdsey/SynapseData",
   "created_at": "2026-09-06T22:35:14.000Z",
-  "updated_at": "2026-09-07T01:52:02.000Z",
+  "updated_at": "2026-09-07T12:55:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,12 +20,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 32216751872,
-  "storage_human": "32.2 GB",
+  "storage_bytes": 51039722176,
+  "storage_human": "51.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

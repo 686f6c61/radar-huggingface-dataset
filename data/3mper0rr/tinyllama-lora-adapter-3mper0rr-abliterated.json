@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "3MPER0RR/TinyLlama-LoRA-adapter-3MPER0RR-abliterated",
+  "slug": "3mper0rr-tinyllama-lora-adapter-3mper0rr-abliterated",
+  "author": "3MPER0RR",
+  "url": "https://huggingface.co/3MPER0RR/TinyLlama-LoRA-adapter-3MPER0RR-abliterated",
+  "created_at": "2026-09-08T00:07:56.000Z",
+  "updated_at": "2026-09-08T00:12:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "base_model:3MPER0RR/TinyLlama-3MPER0RR-abliterated",
+    "base_model:adapter:3MPER0RR/TinyLlama-3MPER0RR-abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3120288,
+  "storage_human": "3 MB",
+  "base_model": "3MPER0RR/TinyLlama-3MPER0RR-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "pizza al taglio我一般当中饭吃，或者买一块带回家烤箱热下当简单的晚饭。。。这种配料不太好说，每个店都有不一样的。。 不过一 …"
+    },
+    {
+      "title": "3MPER0RR/TinyLlama-3MPER0RR-abliterated · Hugging Face",
+      "url": "https://huggingface.co/3MPER0RR/TinyLlama-3MPER0RR-abliterated",
+      "snippet": "3MPER0RR / TinyLlama-3MPER0RR-abliterated like 0 Text Generation Safetensors llama conversational License:mit Model card FilesFiles and versions xet Community Copy to bucket new Description"
+    },
+    {
+      "title": "腾讯搜活帮真的能收到任务吗? - 知乎",
+      "url": "https://www.zhihu.com/question/333526262",
+      "snippet": "用了一下，能是能。就是很无聊，本着赚钱的想法去吧，想着可能自己没有经验，所以任务不多。 后来也通过了几次考试，也 ..."
+    },
+    {
+      "title": "Tourist99/lora-tinyllama · Hugging Face",
+      "url": "https://huggingface.co/Tourist99/lora-tinyllama",
+      "snippet": "Overview lora-tinyllama is a fine-tuned version of the tinyllama-1.1b model, created using LoRA (Low-Rank Adaptation). This model specializes in adapting the tinyllama-1.1b base for specific tasks with minimal computational overhead."
+    },
+    {
+      "title": "kindle连上电脑没反应，只能充电，没有出现移动盘传不了文件怎么解 …",
+      "url": "https://www.zhihu.com/question/40021998?sort=created",
+      "snippet": "如题，这是什么原因呢？ kindle是499那款，数据线不知道是不是原装的了，以前在别的电脑上能连开着。 求帮助，谢谢。"
+    }
+  ]
+}

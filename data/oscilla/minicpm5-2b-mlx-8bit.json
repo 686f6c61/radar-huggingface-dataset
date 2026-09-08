@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "Oscilla/MiniCPM5-2B-mlx-8Bit",
+  "slug": "oscilla-minicpm5-2b-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/MiniCPM5-2B-mlx-8Bit",
+  "created_at": "2026-09-07T19:58:38.000Z",
+  "updated_at": "2026-09-07T19:58:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 2674327290,
+  "storage_human": "2.7 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "米哈游-TECH OTAKUS SAVE THE WORLD",
+      "url": "https://www.mihoyo.com/",
+      "snippet": "Jul 12, 2021 · 米哈游成立于2011年，致力于为用户提供美好的、超出预期的产品与内容。米哈游多年来秉持技术自主创新，坚持走原 …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B-MLX · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "米哈游云游戏官网",
+      "url": "https://mhyy.mihoyo.com/",
+      "snippet": "Feb 6, 2024 · 无需下载，一键畅玩，尽享低延迟、高画质的流畅游戏体验！云·原神、云-星穹铁道网页版，现已正式发布"
+    },
+    {
+      "title": "MiniCPM5-2B — a 2B open model that leads the… | AI/TLDR",
+      "url": "https://ai-tldr.dev/releases/openbmb-minicpm5-2b/",
+      "snippet": "MiniCPM5-2B is OpenBMB's new 2.52B-parameter open model for phones and laptops. It averages 53.9 across the maker's benchmark set, ahead of Qwen3.5-4B at 51.1, and ships under Apache-2.0 with a 131K-token context."
+    },
+    {
+      "title": "miHoYo招聘官网",
+      "url": "https://jobs.mihoyo.com/",
+      "snippet": "Aug 5, 2026 · 米哈游致力于为用户提供美好的、超出预期的产品与内容，并希望打造出全球十亿人愿意生活在其中的虚拟世界"
+    }
+  ]
+}

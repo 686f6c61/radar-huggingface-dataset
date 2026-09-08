@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Peyal/retinal-swin-hier",
+  "slug": "peyal-retinal-swin-hier",
+  "author": "Peyal",
+  "url": "https://huggingface.co/Peyal/retinal-swin-hier",
+  "created_at": "2026-09-07T20:06:55.000Z",
+  "updated_at": "2026-09-07T20:13:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110191262,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autohero | Auto kaufen: Endlich einfach",
+      "url": "https://www.autohero.com/de/",
+      "snippet": "Diese Gründe sprechen für Autohero 21-Tage-Geld-zurück-Garantie Flexible Finanzierung Von Autohero geprüft & aufbereitet Mehr …"
+    },
+    {
+      "title": "Multimodal AI in retinal disease: from images to decisions and real ...",
+      "url": "https://link.springer.com/article/10.1007/s10792-026-04254-w",
+      "snippet": "Artificial intelligence (AI) has achieved substantial progress in retinal image classification and disease screening, butits clinical value will ultimately depend on whether it can support meaningful decisions across the patient journey. This Opening Editorial introduces the Special Collection “Multimodal AI in Retinal Disease: Imaging, Clinical Data, and Real-World Endpoints” and outlines ..."
+    },
+    {
+      "title": "Autohero : Achetez votre voiture facilement",
+      "url": "https://www.autohero.com/fr/",
+      "snippet": "Aide & Informations Pourquoi choisir Autohero ? Comment ça marcheFAQÀ ProposSitesContactez-nous S'inscrire / Se …"
+    },
+    {
+      "title": "Enhancing Retinal Disease Detection With the Swin Transformer: A ...",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/cpe.70366",
+      "snippet": "The findings indicate that the Swin Transformer is a promising model for clinical applications, offering a robust and scalable solution for automated retinal disease detection. Notably, it achieved the highest classification accuracy of 92%, outperforming all other evaluated models."
+    },
+    {
+      "title": "Autohero Karriere | Werde Teil von Europas größtem unabhängigen ...",
+      "url": "https://careers.autohero.com/de/",
+      "snippet": "Finde einen Job bei Autohero. Werde Teil lokaler und internationaler Teams, die den europäischen Gebrauchtwagenmarkt …"
+    }
+  ]
+}

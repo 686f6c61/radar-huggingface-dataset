@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DELTACORPS/bbold-btcusd-bot",
+  "slug": "deltacorps-bbold-btcusd-bot",
+  "author": "DELTACORPS",
+  "url": "https://huggingface.co/DELTACORPS/bbold-btcusd-bot",
+  "created_at": "2026-09-07T17:01:50.000Z",
+  "updated_at": "2026-09-07T17:01:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.pl/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "BTC Scalper AI EA MT5 | Buy Trading Robot (Expert Advisor) for ... - MQL5",
+      "url": "https://www.mql5.com/en/market/product/124167",
+      "snippet": "BTC Scalper AI EA MT5 is a next-generation scalping robot developed by a highly experienced team in trading and coding. It is designed for scalping on one of the most popular crypto pair BTCUSD."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=pl",
+      "snippet": "Korzystaj z Google w tych językach: English Reklamuj sięWszystko o GoogleGoogle.com in English © 2026 - Prywatność- Warunki …"
+    },
+    {
+      "title": "GitHub - Leoyip29/MT5Trader_BTCUSD",
+      "url": "https://github.com/Leoyip29/MT5Trader_BTCUSD",
+      "snippet": "High-Frequency BTCUSD Trading Bot with Probabilistic Ensemble Model This repository contains an automated trading system for BTCUSD that combines a Bayesian Neural Network with logistic regression to predict one-minute price directions with uncertainty estimation. The system connects to MetaTrader 5 for live trading execution."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.gp/?hl=pl-US",
+      "snippet": "Korzystaj z Google w tych językach: English Reklamuj sięWszystko o GoogleGoogle.com"
+    }
+  ]
+}

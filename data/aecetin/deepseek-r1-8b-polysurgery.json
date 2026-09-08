@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "aecetin/DeepSeek-R1-8B-PolySurgery",
+  "slug": "aecetin-deepseek-r1-8b-polysurgery",
+  "author": "aecetin",
+  "url": "https://huggingface.co/aecetin/DeepSeek-R1-8B-PolySurgery",
+  "created_at": "2026-09-07T20:28:55.000Z",
+  "updated_at": "2026-09-07T20:55:59.000Z",
+  "license": "hybrid-patent-open-core",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "tr",
+    "zh"
+  ],
+  "tags": [
+    "deepseek_r1_polysurgery",
+    "deepseek-r1",
+    "reasoning",
+    "llama-8b",
+    "closed-form-solver",
+    "in-situ-weight-surgery",
+    "chebyshev-polynomial",
+    "idempotent-poly",
+    "idempotent-kv",
+    "6gb-vram-tested",
+    "text-generation",
+    "en",
+    "tr",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "militaria allemand WWII :: (sujets et réponses)",
+      "url": "https://millitaria-allemand.vraiforum.com/rss.php?f=42",
+      "snippet": "https://millitaria-allemand.vraiforum.com/f42.htmWed, 04 Feb 2015 15:41:41 +0000"
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "With RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors. However, DeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks."
+    },
+    {
+      "title": "militaria allemand WWII :: (sujets et réponses)",
+      "url": "https://millitaria-allemand.vraiforum.com/rss.php?f=33",
+      "snippet": "]]>Sun, 27 Feb 2022 10:03:00 +0000Ventes & échanges 39\\45"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "snippet": "This approach allows the model to explore chain-of-thought (CoT) for solving complex problems, resulting in the development of DeepSeek-R1-Zero. DeepSeek-R1-Zero demonstrates capabilities such as self-verification, reflection, and generating long CoTs, marking a significant milestone for the research community."
+    },
+    {
+      "title": "militaria allemand WWII :: (sujets et réponses)",
+      "url": "https://millitaria-allemand.vraiforum.com/rss.php?f=22",
+      "snippet": "https://millitaria-allemand.vraiforum.com/f22.htmThu, 30 Dec 2021 23:12:47 +0000"
+    }
+  ]
+}

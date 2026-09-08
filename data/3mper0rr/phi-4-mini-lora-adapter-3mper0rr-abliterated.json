@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "3MPER0RR/phi-4-mini-LoRA-adapter-3MPER0RR-abliterated",
+  "slug": "3mper0rr-phi-4-mini-lora-adapter-3mper0rr-abliterated",
+  "author": "3MPER0RR",
+  "url": "https://huggingface.co/3MPER0RR/phi-4-mini-LoRA-adapter-3MPER0RR-abliterated",
+  "created_at": "2026-09-07T23:43:06.000Z",
+  "updated_at": "2026-09-08T00:13:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "base_model:3MPER0RR/Phi-4-mini-3MPER0RR-abliterated",
+    "base_model:adapter:3MPER0RR/Phi-4-mini-3MPER0RR-abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6701336,
+  "storage_human": "7 MB",
+  "base_model": "3MPER0RR/Phi-4-mini-3MPER0RR-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conditions Générales - Ancre Vie Association : Epargne, Assurance Vie ...",
+      "url": "https://www.ancre-vie.com/conditions-generales/",
+      "snippet": "Oct 20, 2025 · Les termes et expressions commençant par une majuscule ont, au sein des CGU, la signification qui leur est attribuée …"
+    },
+    {
+      "title": "3MPER0RR/Phi-4-mini-3MPER0RR-abliterated · Hugging Face",
+      "url": "https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-abliterated",
+      "snippet": "The model was subjected to an experimental modification process, subsequently tested and saved for research and experimentation purposes. Model: Microsoft Phi-4-mini 4B Trials: 40 Status: Tested and saved Original model: Microsoft This repository contains a modified model artifact derived from the original release."
+    },
+    {
+      "title": "Accueil | ANCRE",
+      "url": "https://www.ancre-vie.com/",
+      "snippet": "L’ANCRE a pour objet de susciter et développer, parmi ses adhérents, le sens de l’épargne et de la prévoyance, et plus …"
+    },
+    {
+      "title": "Phi-4-mini-3MPER0RR-obliterated - Hugging Face",
+      "url": "https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-obliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Réglementation du mouillage : où peut-on jeter l'ancre ?",
+      "url": "https://www.digischool.fr/articles/bateau/reglementation-mouillage-bateau/",
+      "snippet": "4 days ago · Jeter l’ancre sur un câble électrique sous-marin n’est pas seulement interdit, c’est le meilleur moyen de perdre son …"
+    }
+  ]
+}

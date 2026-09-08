@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "crydamour/NSFW-gen-v2.1",
+  "slug": "crydamour-nsfw-gen-v2-1",
+  "author": "crydamour",
+  "url": "https://huggingface.co/crydamour/NSFW-gen-v2.1",
+  "created_at": "2026-09-07T20:30:44.000Z",
+  "updated_at": "2026-09-07T20:30:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "pt",
+    "th"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "UnfilteredAI",
+    "3d",
+    "text-to-image",
+    "not-for-all-audiences",
+    "en",
+    "pt",
+    "th",
+    "base_model:HelpingAI/PixelGen",
+    "base_model:finetune:HelpingAI/PixelGen",
+    "license:other",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 26206003808,
+  "storage_human": "26.2 GB",
+  "base_model": "OEvortex/PixelGen",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:54.168Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver votre supermarché Lidl rapidement et facilement avec la recherche supermarché ou par ville. Trouver les offres et …"
+    },
+    {
+      "title": "UnfilteredAI - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI",
+      "snippet": "Org profile for UnfilteredAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Lidl, ça vaut le coup. En supermarché et en ligne.",
+      "url": "https://www.lidl.fr/",
+      "snippet": "L'ensemble des produits LIDL est à votre disposition 24 heures sur 24 dans votre boutique en ligne. Vous pouvez prendre tout votre …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=nsfw",
+      "snippet": "AI-Porn/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint"
+    },
+    {
+      "title": "Lidl Riom 63200 (adresse, téléphone et horaires) - Alternativi",
+      "url": "https://alternativi.fr/annuaire/lidl/riom-63200",
+      "snippet": "À Lidl Riom, on trouve un large éventail de produits alimentaires, allant des fruits et légumes frais aux produits laitiers, en passant par …"
+    }
+  ]
+}

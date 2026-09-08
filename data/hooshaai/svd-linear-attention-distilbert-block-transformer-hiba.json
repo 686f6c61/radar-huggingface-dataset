@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-distilbert-block-transformer-hiba",
+  "slug": "hooshaai-svd-linear-attention-distilbert-block-transformer-hiba",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-block-transformer-hiba",
+  "created_at": "2026-09-07T21:16:32.000Z",
+  "updated_at": "2026-09-07T22:57:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "distilbert",
+    "block_transformer_hiba",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4746618,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:38.580Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motor aus und kein mucks mehr!",
+      "url": "https://www.motor-talk.de/forum/motor-aus-und-kein-mucks-mehr-t781364.html",
+      "snippet": "Der Motor (M40) ist während der Fahrt ausgegangen und springt nicht mehr an. Es kommt kein klacken von Anlasser, …"
+    },
+    {
+      "title": "DistilBERT — transformers 3.1.0 documentation - Hugging Face",
+      "url": "https://huggingface.co/transformers/v3.1.0/model_doc/distilbert.html",
+      "snippet": "DistilBert Model with a multiple choice classification head on top (a linear layer on top of the pooled output and a softmax) e.g. for RocStories/SWAG tasks. This model is a tf.keras.Model sub-class."
+    },
+    {
+      "title": "SV 650 Knubbel gibt keinen Mucks mehr von sich - MOTOR-TALK",
+      "url": "https://www.motor-talk.de/forum/sv-650-knubbel-gibt-keinen-mucks-mehr-von-sich-t7248476.html",
+      "snippet": "Mar 2, 2022 · SV 650 Knubbel gibt keinen Mucks mehr von sich Moin zusammen! Ich wollte heute meine (Bj. 99) aus dem …"
+    },
+    {
+      "title": "svd-linear-attention-sst2-results - Hugging Face",
+      "url": "https://huggingface.co/datasets/tahamajs/svd-linear-attention-sst2-results",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "e-Niro macht keinen Mucks - e-Niro - Allgemeine Themen • Kia e-Niro ...",
+      "url": "https://www.goingelectric.de/forum/viewtopic.php?t=60932",
+      "snippet": "Oct 11, 2020 · e-Niro macht keinen Mucks Bei 57% und 242km Rest - erkenne den Fehler. Am Rande habe ich noch entdeckt, dass …"
+    }
+  ]
+}

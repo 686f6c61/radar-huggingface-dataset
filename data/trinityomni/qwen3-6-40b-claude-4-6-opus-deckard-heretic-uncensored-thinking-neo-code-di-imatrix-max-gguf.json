@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "trinityomni/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
+  "slug": "trinityomni-qwen3-6-40b-claude-4-6-opus-deckard-heretic-uncensored-thinking-neo-code-di-imatrix-max-gguf",
+  "author": "trinityomni",
+  "url": "https://huggingface.co/trinityomni/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
+  "created_at": "2026-09-07T21:59:20.000Z",
+  "updated_at": "2026-09-07T21:59:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "multi-stage tuned.",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "imatrix",
+    "neo imatrix",
+    "di-matrix",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:TeichAI/claude-4.5-opus-high-reasoning-250x",
+    "dataset:DavidAU/PkDick-Deckard-5-Datasets",
+    "base_model:DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
+    "base_model:quantized:DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39072596736,
+  "parameters_human": "39.07B",
+  "storage_bytes": 259934618168,
+  "storage_human": "259.9 GB",
+  "base_model": "DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Games Online | Free Games at Gamesgames.com",
+      "url": "https://www.gamesgames.com/",
+      "snippet": "GamesGames is your zone to play online games! Play free games online including: racing games, sports games, Solitaire, and more …"
+    },
+    {
+      "title": "Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF/discussions/17",
+      "snippet": "I understand MTP for this will not be as effective but I tried it on one of the older Deckard models and it def sped things up."
+    },
+    {
+      "title": "Play online Puzzle Games for Free | Gamesgames.com",
+      "url": "https://www.gamesgames.com/games/puzzle?page=1",
+      "snippet": "There are hundreds of ways to challenge yourself in this category of games. Give your brain a workout the fun way. See all our …"
+    },
+    {
+      "title": "Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
+      "snippet": "User You are a local running AI in my lab, my name is G, I created this model. Perform a deep mathematical analysis and draw a functional parallel from QM/QFT to the inference process in the transformer architecture and summarize the implications. Reflect on the findings and provide a self-analysis of your inference."
+    },
+    {
+      "title": "Popular Games - Play popular online games on GamesGames",
+      "url": "https://www.gamesgames.com/games",
+      "snippet": "At gamesgames.com, you’ll find the most popular online games for one or more players. There’s everything from action games to …"
+    }
+  ]
+}

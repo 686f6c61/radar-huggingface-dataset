@@ -5,17 +5,19 @@
   "author": "SexGod1979",
   "url": "https://huggingface.co/SexGod1979/NaughtyTimes-MiniMax-H3",
   "created_at": "2026-09-07T03:05:30.000Z",
-  "updated_at": "2026-09-07T12:09:28.000Z",
+  "updated_at": "2026-09-07T21:21:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "minimax-h3",
     "license:apache-2.0",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
-  "likes": 11,
+  "likes": 30,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

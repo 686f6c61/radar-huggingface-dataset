@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-distilbert-cachenotes",
+  "slug": "hooshaai-svd-linear-attention-distilbert-cachenotes",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-cachenotes",
+  "created_at": "2026-09-07T21:16:53.000Z",
+  "updated_at": "2026-09-07T22:57:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "distilbert",
+    "cachenotes",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2373584,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:37.480Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IFLA Global Landscape Architecture Awards 2026",
+      "url": "https://www.bdla.de/de/nachrichten/nachrichten-de/5733-ifla-global-landscape-architecture-award-2026",
+      "snippet": "Mit einem Aufruf zur Einreichung von Projekten hat die International Federation of Landscape Architects (IFLA) die IFLA Global …"
+    },
+    {
+      "title": "GitHub - Hooshaai/hooshaai.github.io: Hoosha AI is an independent AI ...",
+      "url": "https://github.com/Hooshaai/hooshaai.github.io",
+      "snippet": "Hoosha AI is an independent AI research lab and systems engineering initiative dedicated to advancing continuous-time generative modeling (Continuous Flow Matching), differential attention mechanisms, and scalable GPU compute infrastructure. - Hooshaai/hooshaai.github.io"
+    },
+    {
+      "title": "Networks - Federation of German Landscape Architects",
+      "url": "https://www.bdla.de/en/federal-association/networks",
+      "snippet": "According to the IFLA mission, the professional field of landscape architecture is to be strengthened and, in particular, the \"best …"
+    },
+    {
+      "title": "Hoosaha AI - GitHub",
+      "url": "https://github.com/Hooshaai",
+      "snippet": "AI works. Hoosaha AI has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Press - Federation of German Landscape Architects",
+      "url": "https://www.bdla.de/en/press",
+      "snippet": "Landscape architecture is facing growing challenges: Climate change, the energy transition and the protection of biodiversity require …"
+    }
+  ]
+}

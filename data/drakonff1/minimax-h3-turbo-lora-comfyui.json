@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Drakonff1/MiniMax-H3-Turbo-Lora-ComfyUI",
+  "slug": "drakonff1-minimax-h3-turbo-lora-comfyui",
+  "author": "Drakonff1",
+  "url": "https://huggingface.co/Drakonff1/MiniMax-H3-Turbo-Lora-ComfyUI",
+  "created_at": "2026-09-07T19:38:27.000Z",
+  "updated_at": "2026-09-07T19:38:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "adapter",
+    "comfyui",
+    "text-to-video",
+    "reference-to-video",
+    "audio-video",
+    "synchronized-audio",
+    "few-step",
+    "turbo",
+    "accelerated-inference",
+    "lightx2v",
+    "dynamic-rank",
+    "svd",
+    "safetensors",
+    "bfloat16",
+    "pruned-model",
+    "curve-form",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12438664920,
+  "storage_human": "12.4 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Samsung Catalyst Fund Ai Agents Jobs in United States (9,000",
+      "url": "https://www.linkedin.com/jobs/samsung-catalyst-fund-ai-agents-jobs",
+      "snippet": "Today&#39;s top 9,000+ Samsung Catalyst Fund Ai Agents jobs in United States. Leverage your professional network, and get hired. …"
+    },
+    {
+      "title": "larryvrh/MiniMax-H3-Turbo-Lora · Hugging Face",
+      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+      "snippet": "Instructions to use larryvrh/MiniMax-H3-Turbo-Lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Samsung Catalyst Fund",
+      "url": "https://samsungcatalyst.com/",
+      "snippet": "That’s why Samsung Catalyst Fund leverages Samsung’s industry leadership and product breadth to identify, invest in, and work with …"
+    },
+    {
+      "title": "drbaph/MiniMax-H3-Turbo-Lora-ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI",
+      "snippet": "This repository contains MiniMax-H3 Turbo LoRAs converted and optimized for ComfyUI: dynamic-rank FL2V and Ref2V LoRAs derived from the official ComfyUI weights in lightx2v/Minimax-h3-Turbo; pruned/curve-form compatibility conversions of the Turbo LoRAs released by larryvrh."
+    },
+    {
+      "title": "News – Samsung Catalyst Fund",
+      "url": "https://samsungcatalyst.com/news/",
+      "snippet": "May 19, 2026 · Upscale AI Closes Oversubscribed $200M Series A to Build the First Pure-Play AI Networking Company."
+    }
+  ]
+}

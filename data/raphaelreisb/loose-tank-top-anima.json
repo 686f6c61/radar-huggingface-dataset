@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "raphaelreisb/loose-tank-top-anima",
+  "slug": "raphaelreisb-loose-tank-top-anima",
+  "author": "raphaelreisb",
+  "url": "https://huggingface.co/raphaelreisb/loose-tank-top-anima",
+  "created_at": "2026-09-07T21:47:48.000Z",
+  "updated_at": "2026-09-08T00:07:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45975008,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "raphaelreisb (Raphael Reis) - Hugging Face",
+      "url": "https://huggingface.co/raphaelreisb/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... published a model 4 days ago"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "raphaelreisb (Raphael Reis) - Hugging Face",
+      "url": "https://huggingface.co/raphaelreisb/datasets",
+      "snippet": "User profile of Raphael Reis on Hugging Face"
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

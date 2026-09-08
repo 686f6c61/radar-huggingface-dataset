@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "addlabsviral/Qwen-Image-Edit-2511-Lightning-8bit",
+  "slug": "addlabsviral-qwen-image-edit-2511-lightning-8bit",
+  "author": "addlabsviral",
+  "url": "https://huggingface.co/addlabsviral/Qwen-Image-Edit-2511-Lightning-8bit",
+  "created_at": "2026-09-07T20:33:13.000Z",
+  "updated_at": "2026-09-07T20:34:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "diffusers:QwenImageEditPlusPipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20435949184,
+  "parameters_human": "20.44B",
+  "storage_bytes": 32565424312,
+  "storage_human": "32.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ja nikogda tebja ne zabudu - YouTube",
+      "url": "https://www.youtube.com/watch?v=-8Pjz5IOtUs",
+      "snippet": "Jul 28, 2009 · 9.2K views 17 years ago Ja nikogda tebja ne zabudu"
+    },
+    {
+      "title": "lightx2v/Qwen-Image-Edit-2511-Lightning · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning",
+      "snippet": "Qwen-Image-Edit-2511-Lightning Model Overview Qwen-Image-Edit-2511-Lightning is a collection of optimized models tailored for image editing tasks, leveraging step distillation and quantization techniques to deliver high-efficiency inference performance. This repository hosts three core model files with distinct characteristics:"
+    },
+    {
+      "title": "Ja tebja nikogda ne zabudu - YouTube",
+      "url": "https://www.youtube.com/watch?v=KHilh2lqZ7s",
+      "snippet": "MUS-ART-LIT. Juni 8, 2010. Concert art studio in the center of aesthetic education \"Art Harmony\" in Poltavskaja 18a …"
+    },
+    {
+      "title": "Qwen/Qwen-Image-Edit-2511 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+      "snippet": "Qwen-Image-Edit-2511 Enhances Character ConsistencyIn Qwen-Image-Edit-2511, character consistency has been significantly improved. The model can perform imaginative edits based on an input portrait while preserving the identity and visual characteristics of the subject."
+    },
+    {
+      "title": "Я тебя никогда не забуду - \"Юнона и Авось\"(1983) - Песни из …",
+      "url": "https://pesnifilm.ru/load/junona_i_avos/ja_tebja_nikogda_ne_zabudu_quot_junona_i_avos_quot_1983/866-1-0-1949",
+      "snippet": "Aug 15, 2019 · Я тебя никогда не забуду - \"Юнона и Авось\"(1983) - Песни из советских кинофильмов и мультфильмов. …"
+    }
+  ]
+}

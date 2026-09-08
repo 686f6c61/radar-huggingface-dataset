@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LuckyLuke007/nanogpt-shakespeare",
+  "slug": "luckyluke007-nanogpt-shakespeare",
+  "author": "LuckyLuke007",
+  "url": "https://huggingface.co/LuckyLuke007/nanogpt-shakespeare",
+  "created_at": "2026-09-07T20:21:43.000Z",
+  "updated_at": "2026-09-07T20:23:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nanogpt",
+    "gpt",
+    "pytorch",
+    "character-level",
+    "shakespeare",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3228136,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XLOOKUP函数怎么用-百度经验",
+      "url": "https://jingyan.baidu.com/article/7f41ececab929e193c095c4f.html",
+      "snippet": "Sep 6, 2019 · XLOOKUP函数怎么用,最近官方新增了XLOOKUP函数，和VLOOKUP相比，只是字母从V变成了X，到底有什么变化， …"
+    },
+    {
+      "title": "GitHub - NarinCodes/NanoGPT: Generative AI project that leverages ...",
+      "url": "https://github.com/NarinCodes/NanoGPT",
+      "snippet": "Repository files navigation README Moreitems NanoGPT Generative AI project that leverages Transformer-architecture to build and train a Language Model. The model is trained on all the combined works of William Shakespeare."
+    },
+    {
+      "title": "殷浩天 - 知乎",
+      "url": "https://www.zhihu.com/people/yin-hao-tian-55",
+      "snippet": "3 days ago · 关注的话题53关注的专栏20关注的问题1,897关注的收藏夹11"
+    },
+    {
+      "title": "cy0307/nanogpt-shakespeare · Hugging Face",
+      "url": "https://huggingface.co/cy0307/nanogpt-shakespeare",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Word如何隐藏/显示回车符（换行符，段落标记）-百度经验",
+      "url": "https://jingyan.baidu.com/article/cb5d6105efd79b005c2fe096.html",
+      "snippet": "Sep 25, 2015 · 有时候我们在编辑Word文档时，或者需要对WORD页面截图时，需要将回车符隐藏起来，那么如何隐藏将回车符（换 …"
+    }
+  ]
+}

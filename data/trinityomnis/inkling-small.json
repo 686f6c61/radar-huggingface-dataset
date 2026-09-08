@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "trinityomnis/Inkling-Small",
+  "slug": "trinityomnis-inkling-small",
+  "author": "trinityomnis",
+  "url": "https://huggingface.co/trinityomnis/Inkling-Small",
+  "created_at": "2026-09-07T22:34:13.000Z",
+  "updated_at": "2026-09-07T22:34:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 265956439090,
+  "parameters_human": "265.96B",
+  "storage_bytes": 531944513947,
+  "storage_human": "531.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Corporate Internet Banking | QNB",
+      "url": "https://www.qnb.com.eg/sites/qnb/qnbegypt/page/en/encorporateinternetbanking.html",
+      "snippet": "We are presenting our business internet banking platform to improve efficiencies, save your time and efforts. The platform is built to …"
+    },
+    {
+      "title": "trinityomnis/Inkling-Small · Hugging Face",
+      "url": "https://huggingface.co/trinityomnis/Inkling-Small",
+      "snippet": "The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation systems, and is suitable for general-purpose conversational use, instruction-following, and other natural language and multimodal tasks."
+    },
+    {
+      "title": "Welcome to Qatar National Bank - QNB",
+      "url": "https://cms.qnb.com.eg/iportalweb/iportal/jsps/orbilogin.jsp",
+      "snippet": "QNB Corporate Internet Banking is best experienced using Internet Explorer version 11, Google Chrome 59.0, Mozilla Firefox 52.0 or …"
+    },
+    {
+      "title": "thinkingmachines/Inkling-Small · Hugging Face",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-Small",
+      "snippet": "The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation systems, and is suitable for general-purpose conversational use, instruction-following, and other natural language and multimodal tasks."
+    },
+    {
+      "title": "Corporate Banking | QNB",
+      "url": "https://www.qnb.com.eg/sites/qnb/qnbegypt/page/en/encorporatebanking-.html",
+      "snippet": "QNB's Corporate & Investment Banking activities provide high value added and customized solutions to help maintaining and …"
+    }
+  ]
+}

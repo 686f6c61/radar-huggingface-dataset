@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Melani00/legal-chatbot-ft",
+  "slug": "melani00-legal-chatbot-ft",
+  "author": "Melani00",
+  "url": "https://huggingface.co/Melani00/legal-chatbot-ft",
+  "created_at": "2026-09-07T20:37:39.000Z",
+  "updated_at": "2026-09-07T20:38:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214772,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rewarding Original Creators on Facebook",
+      "url": "https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/",
+      "snippet": "Mar 13, 2026 · We’re sharing our progress on rewarding creators who post original content on Facebook with greater reach and …"
+    },
+    {
+      "title": "LexiAI – Free AI Legal Chatbots in Your Language, 24/7",
+      "url": "https://lexiai.org/",
+      "snippet": "LexiAI stands at the forefront of legal technology, providing AI-powered free legal chatbots specifically tailored for legal queries and navigating global legislation. Our advanced generative artificial intelligence ('Gen AI') models are meticulously designed to efficiently and accurately resolve legal cases, granting users unprecedented access to legal knowledge. Experience the future of ..."
+    },
+    {
+      "title": "The Ultimate Guide to Facebook Monetization in 2026 - Taggbox Blog",
+      "url": "https://taggbox.com/blog/facebook-monetization/",
+      "snippet": "Aug 2, 2025 · Facebook monetization refers to earning money by posting content on Facebook through various means such as ad …"
+    },
+    {
+      "title": "TheLawGPT - AI Legal Chatbot | Legal Research & Document Generation",
+      "url": "https://www.thelawgpt.com/",
+      "snippet": "TheLawGPT is your AI legal assistant. Research laws and generate administrative documents. Legal chatbot for individuals."
+    },
+    {
+      "title": "How to Monetize Content on Facebook in 2026 - multilogin.com",
+      "url": "https://multilogin.com/blog/facebook-content-monetization/",
+      "snippet": "Mar 4, 2026 · Facebook content monetization explained — eligibility criteria, and how to manage multiple monetized pages without …"
+    }
+  ]
+}

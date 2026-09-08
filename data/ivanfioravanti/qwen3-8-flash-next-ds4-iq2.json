@@ -5,7 +5,7 @@
   "author": "ivanfioravanti",
   "url": "https://huggingface.co/ivanfioravanti/Qwen3.8-Flash-Next-DS4-IQ2",
   "created_at": "2026-09-06T22:30:15.000Z",
-  "updated_at": "2026-09-06T22:31:33.000Z",
+  "updated_at": "2026-09-07T11:06:05.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -29,10 +29,10 @@
   "likes": 2,
   "downloads_30d": 263,
   "trending_score": 0,
-  "parameters": 128350804608,
-  "parameters_human": "128.35B",
-  "storage_bytes": 50343093376,
-  "storage_human": "50.3 GB",
+  "parameters": 136403868288,
+  "parameters_human": "136.40B",
+  "storage_bytes": 95149705568,
+  "storage_human": "95.1 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

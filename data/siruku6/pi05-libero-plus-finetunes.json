@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "siruku6/pi05-libero-plus-finetunes",
+  "slug": "siruku6-pi05-libero-plus-finetunes",
+  "author": "siruku6",
+  "url": "https://huggingface.co/siruku6/pi05-libero-plus-finetunes",
+  "created_at": "2026-09-07T22:45:10.000Z",
+  "updated_at": "2026-09-07T22:45:15.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0.5",
+    "libero",
+    "base_model:lerobot/pi05_libero_base",
+    "base_model:finetune:lerobot/pi05_libero_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18725658724,
+  "storage_human": "18.7 GB",
+  "base_model": "lerobot/pi05_libero_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "login | haufe",
+      "url": "https://www.haufe.de/forms/login",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "siruku6 (Seiya Sasaki) - Hugging Face",
+      "url": "https://huggingface.co/siruku6/models",
+      "snippet": "Robotics •4B•Updated 5 days ago•12 siruku6/lerobot_distributed Updated 5 days ago siruku6/smolvla-libero-plus-finetunes Robotics •Updated 18 days ago siruku6/llm-jp-3-13b-it_lora2 Updated Dec 3, 2024"
+    },
+    {
+      "title": "myDesk - Haufe.de News und Fachwissen",
+      "url": "https://products.haufe.de/login",
+      "snippet": "myDesk."
+    },
+    {
+      "title": "siruku6/pi05_full_runpod · Hugging Face",
+      "url": "https://huggingface.co/siruku6/pi05_full_runpod",
+      "snippet": "Training Modifications to the base model License and redistribution pi05_full_runpod A pi0.5 checkpoint fine-tuned on the lerobot/libero_plusdataset. This is the second stageof a two-stage run. siruku6/pi05_stage1_24000(itself fine-tuned from lerobot/pi05_libero_base, revision a217bfd3b14673cf2ce597e69997ab21866438dd) and unfreezes every parameter,"
+    },
+    {
+      "title": "Meine Produkte, Magazine und Seminare - Haufe",
+      "url": "https://www.haufe.de/produkte/",
+      "snippet": "Hier finden Sie all Ihre Haufe-Produkte, Zeitschriften und Seminare. In Ihrer Schaltzentrale können Sie erworbene Produkte direkt …"
+    }
+  ]
+}

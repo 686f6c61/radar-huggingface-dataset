@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1148,
   "trending_score": 0,
   "parameters": 39087104,
   "parameters_human": "39.1M",
-  "storage_bytes": 5318357550,
-  "storage_human": "5.3 GB",
+  "storage_bytes": 5240163497,
+  "storage_human": "5.2 GB",
   "base_model": "fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed3407",
   "formats": [
     "safetensors"

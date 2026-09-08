@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-Fac5",
+  "slug": "ch522-mmh3-fac5",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-Fac5",
+  "created_at": "2026-09-07T23:22:53.000Z",
+  "updated_at": "2026-09-07T23:22:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155116935,
+  "storage_human": "155 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bordelle, Huren, Escort Sex in Künzelsau, - Ladies.de",
+      "url": "https://www.ladies.de/kuenzelsau/sex-anzeigen",
+      "snippet": "Ladies Künzelsau - Sie sucht ihn für Sex und Erotik, Erotikführer für Real Live Club Sex-Nord, Süd, West und Ost-Deutschland, im …"
+    },
+    {
+      "title": "CH522/MMh3-Fac1 · Hugging Face",
+      "url": "https://huggingface.co/CH522/MMh3-Fac1",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use CH522/MMh3-Fac1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use CH522/MMh3-Fac1 with Diffusers:"
+    },
+    {
+      "title": "Sextreffen: in Sexanzeigen in 74653 Künzelsau | erotik.markt.de",
+      "url": "https://erotik.markt.de/74653-kuenzelsau/k/sextreffen/?msockid=0c41bdb3b21960e70f85aa7db342613f",
+      "snippet": "Sextreffen: Finde heiße Sexanzeigen in Sexanzeigen in 74653 Künzelsau! Kostenlose Erotikanzeigen erotik.markt.de » Jetzt …"
+    },
+    {
+      "title": "LBH-123-AI/Minimax_h3_latent_Upscaler · Hugging Face",
+      "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Künzelsauladies | Bordelle, Huren, Escort Sex in Künzelsau, | Erotik ...",
+      "url": "https://m.ladies.de/kuenzelsau/sex-anzeigen",
+      "snippet": "Ladies Künzelsau - Sie sucht ihn für Sex und Erotik, Erotikführer für Real Live Club Sex-Nord, Süd, West und Ost-Deutschland, im …"
+    }
+  ]
+}

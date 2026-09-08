@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "YousifKhoury/BoneAGUNet",
+  "slug": "yousifkhoury-boneagunet",
+  "author": "YousifKhoury",
+  "url": "https://huggingface.co/YousifKhoury/BoneAGUNet",
+  "created_at": "2026-09-07T21:18:58.000Z",
+  "updated_at": "2026-09-07T21:26:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "nnunetv2",
+  "languages": [],
+  "tags": [
+    "nnunetv2",
+    "medical-imaging",
+    "nnunet",
+    "hr-pqct",
+    "bone-erosion",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1830215903,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infection Control: Principles & Best Practices Guide",
+      "url": "https://www.hseblog.com/infection-control/",
+      "snippet": "Jun 10, 2026 · Infection control explained: break the chain of infection with standard and transmission-based precautions, hand …"
+    },
+    {
+      "title": "YousifKhoury (Yousif Costantien Al-Khoury) - Hugging Face",
+      "url": "https://huggingface.co/YousifKhoury/models",
+      "snippet": "Medical Image Processing Recent Activity updated a model3 days ago YousifKhoury/myoL3 published a model3 days ago YousifKhoury/myoL3 updated a modelabout 2 months ago YousifKhoury/VeinSeg View all activity"
+    },
+    {
+      "title": "Chain of Infection and Standard Precautions | Free Guide 2026",
+      "url": "https://open-exam-prep.com/study-guides/ncct-ncma/ch1-infection-control/chain-of-infection",
+      "snippet": "As a National Certified Medical Assistant (NCMA), your primary clinical responsibility is to interrupt this chain by applying standard …"
+    },
+    {
+      "title": "BONE-Net: A novel hybrid deep-learning model for effective osteoporosis ...",
+      "url": "https://ortho-x.maivan.ai/2025/10/19/bone-net-a-novel-hybrid-deep-learning-model-for-effective-osteoporosis-detection/",
+      "snippet": "BONE-Net: A novel hybrid deep-learning model for effective osteoporosis detection. Osteoporosis is a prevalent bone disease characterized by reduced bone density and an elevated risk of fractures, especially in older adults and postmenopausal women. The clinical consequences of osteoporotic fractures extend beyond pain and disability, contributing substantially to morbidity, mortality, and ..."
+    },
+    {
+      "title": "9.6: Preventing Infection - Medicine LibreTexts",
+      "url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Fundamentals_(OpenRN)/09%3A_Infection/9.06%3A_Preventing_Infection",
+      "snippet": "A cyclic process known as the chain of infection describes the transmission of an infection. By implementing interventions to break …"
+    }
+  ]
+}

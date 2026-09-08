@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "trinityomnis/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "slug": "trinityomnis-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau",
+  "author": "trinityomnis",
+  "url": "https://huggingface.co/trinityomnis/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "created_at": "2026-09-07T22:46:22.000Z",
+  "updated_at": "2026-09-07T22:46:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55586512482,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "افلام سكس مجانية وفيديوهات XXX: موقع افلام سكس | xHamster",
+      "url": "https://ara.xhamster.com/",
+      "snippet": "افلام سكس مجانية وفيديوهات XXX حصرية هنا على xHamster. شاهد فوراً أكثر من 6 مليون فيديو نيك وهواة على أقوى موقع سكس!"
+    },
+    {
+      "title": "trinityomnis/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
+      "url": "https://huggingface.co/trinityomnis/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+      "snippet": "Instructions to use trinityomnis/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU with libraries, inference providers, notebooks, and local apps ..."
+    },
+    {
+      "title": "أفلام سكس مجانية - فيديوهات إباحية HD من Ujizz",
+      "url": "https://www.ujizz.xxx/?hl=ar",
+      "snippet": "أفلام جنسية بجودة 4K. 16081. أمهات. 18819. محرمات. 11677."
+    },
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU ...",
+      "url": "https://www.spheron.network/tools/gpu-recommender/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+      "snippet": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU has about 27.8B parameters. See exactly how much GPU memory it needs at FP16, INT8, and INT4, and the cheapest GPU to run it, with live hourly pricing from 5+ data center partners."
+    },
+    {
+      "title": "فيديوهات سكس مجانية حصرية - أفلام إباحية على Sexm",
+      "url": "https://www.sexm.xxx/?hl=ar",
+      "snippet": "فيديوهات إباحية حصرية. 534. الأستراليات. 50920."
+    }
+  ]
+}

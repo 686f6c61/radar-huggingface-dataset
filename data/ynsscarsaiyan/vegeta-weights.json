@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "YNSScarSaiyan/vegeta-weights",
+  "slug": "ynsscarsaiyan-vegeta-weights",
+  "author": "YNSScarSaiyan",
+  "url": "https://huggingface.co/YNSScarSaiyan/vegeta-weights",
+  "created_at": "2026-09-07T08:02:33.000Z",
+  "updated_at": "2026-09-08T02:22:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "vegeta",
+    "looped-llm",
+    "custom-architecture",
+    "agent",
+    "tool-use",
+    "qwen-tokenizer",
+    "mi300x",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208919759508,
+  "storage_human": "208.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stripchat Tokens: Price Guide and How They Work (2026)",
+      "url": "https://gist.github.com/rekooomenos/d111450a865414eccae92cb35ea95d3e",
+      "snippet": "Aug 5, 2026 · Stripchat has grown into one of the most popular live cam platforms in the world, and at the very center of its …"
+    },
+    {
+      "title": "YNSScarSaiyan/simi-weights · Hugging Face",
+      "url": "https://huggingface.co/YNSScarSaiyan/simi-weights",
+      "snippet": "Public weights-only repository. No architecture or training source is stored here. SImi-2B is a custom Llama-style causal language model trained in JAX/Flax. This repository is the public parameter mirrorfor the student. It does not contain the private recovery snapshot, optimizer state, or source archive from YNSScarSaiyan/simi, and it is nota drop-in Transformers checkpoint."
+    },
+    {
+      "title": "GitHub - kesamom/stripchat_mouflon",
+      "url": "https://github.com/kesamom/stripchat_mouflon",
+      "snippet": "May 19, 2026 · Contribute to kesamom/stripchat_mouflon development by creating an account on GitHub."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=simi",
+      "snippet": "Explore machine learning models. Text Generation •Updated about 4 hours ago"
+    },
+    {
+      "title": "Stripchat Video Downloader · GitHub",
+      "url": "https://gist.github.com/devinschumacher/b5fbf6a99a35e62313ff6bcb9cef3cf0/e9bb54c55feb6a1dd3313f98a4d7ecc99f9a0022",
+      "snippet": "Jul 4, 2026 · Stripchat Video Downloader. GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

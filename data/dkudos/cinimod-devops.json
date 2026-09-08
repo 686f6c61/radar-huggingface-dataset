@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "dkudos/cinimod-devops",
+  "slug": "dkudos-cinimod-devops",
+  "author": "dkudos",
+  "url": "https://huggingface.co/dkudos/cinimod-devops",
+  "created_at": "2026-09-07T23:19:22.000Z",
+  "updated_at": "2026-09-07T23:21:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llm",
+    "devops",
+    "kubernetes",
+    "terraform",
+    "aws",
+    "docker",
+    "infrastructure",
+    "cicd",
+    "linux",
+    "self-trained",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 695281152,
+  "parameters_human": "695.3M",
+  "storage_bytes": 1390587040,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3d199a9ce9fc6afe0ac58d52e8736b9c",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "How AI is Transforming DevOps in 2026 | Softjourn",
+      "url": "https://softjourn.com/insights/how-ai-is-transforming-devops",
+      "snippet": "In this article, we will explore the exciting realm of Generative AI in DevOps, discussing its potential benefits, limitations, emerging trends, and best practices."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "GitHub - codefuse-ai/CodeFuse-DevOps-Model: DevOps-Models is a series ...",
+      "url": "https://github.com/codefuse-ai/CodeFuse-DevOps-Model",
+      "snippet": "🤗 Hugging Face• 🤖 ModelScope 中文| English DevOps-Model 是一系列业界首个开源的中文开发运维大模型，主要致力于在 DevOps 领域发挥实际价值。 目前，DevOps-Model 能够帮助工程师回答在 DevOps 生命周期中遇到的问题。"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

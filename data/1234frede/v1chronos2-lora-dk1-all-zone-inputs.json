@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "1234Frede/v1chronos2-lora-dk1-all-zone-inputs",
+  "slug": "1234frede-v1chronos2-lora-dk1-all-zone-inputs",
+  "author": "1234Frede",
+  "url": "https://huggingface.co/1234Frede/v1chronos2-lora-dk1-all-zone-inputs",
+  "created_at": "2026-09-07T21:38:32.000Z",
+  "updated_at": "2026-09-07T21:38:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:amazon/chronos-2",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:amazon/chronos-2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4854584,
+  "storage_human": "5 MB",
+  "base_model": "amazon/chronos-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PGNIG: Zmiany w składzie Rady Nadzorczej PGNiG SA",
+      "url": "https://www.bankier.pl/wiadomosc/PGNIG-Zmiany-w-skladzie-Rady-Nadzorczej-PGNiG-SA-2327141.html",
+      "snippet": "Apr 20, 2011 · Zwyczajne Walne Zgromadzenie PGNiG w dniu 20 kwietnia 2011 roku powołało w skład Rady Nadzorczej PGNiG na …"
+    },
+    {
+      "title": "1234Frede (Frederik Skou) - Hugging Face",
+      "url": "https://huggingface.co/1234Frede",
+      "snippet": "1234Frede/modernbert-finetuned-clinc_oos Text Classification • 0.4B•Updated Feb 13• 2"
+    },
+    {
+      "title": "Konsorcjum PBG rozbuduje dla PGNiG magazyn w Wierzchowicach",
+      "url": "https://www.bankier.pl/wiadomosc/Konsorcjum-PBG-rozbuduje-dla-PGNiG-magazyn-w-Wierzchowicach-1841162.html",
+      "snippet": "Oct 3, 2008 · PGNiG rozstrzygnął przetarg na realizację magazynu w Wierzchowicach na rzecz konsorcjum, w którego skład wchodzi …"
+    },
+    {
+      "title": "Releases · amazon-science/chronos-forecasting · GitHub",
+      "url": "https://github.com/amazon-science/chronos-forecasting/releases",
+      "snippet": "When providing inputs to Chronos2Pipelineas a list[dict], all dictionaries must share the same schema (same number of targetdimensions and same covariate keys). To forecast inputs with different schemas, loop over them and call the model once per schema. # Different covariate keys across items — no longer allowedpipeline.predict(["
+    },
+    {
+      "title": "Rząd sprawdzi dlaczego PGNiG sprzedało tanio udziały w Gazstalu",
+      "url": "https://www.bankier.pl/wiadomosc/Rzad-sprawdzi-dlaczego-PGNiG-sprzedalo-tanio-udzialy-w-Gazstalu-1389372.html",
+      "snippet": "Jan 13, 2006 · Premier Kazimierz Marcinkiewicz ma zamiar sprawdzić, dlaczego zarząd PGNiG pozbywa się za wyjątkowo niską …"
+    }
+  ]
+}

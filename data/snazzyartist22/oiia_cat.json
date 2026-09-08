@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/OIIA_Cat",
+  "slug": "snazzyartist22-oiia_cat",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/OIIA_Cat",
+  "created_at": "2026-09-07T23:13:53.000Z",
+  "updated_at": "2026-09-07T23:14:38.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81252124,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "État civil et Population — Liège",
+      "url": "https://www.liege.be/fr/vie-communale/services-communaux/etat-civil-et-population",
+      "snippet": "Parmi les missions premières d’une administration communale figure la tenue des registres de l’état civil, de la population et des …"
+    },
+    {
+      "title": "Oiiaioooooiai Cat - Download Free 3D model by Zhuier",
+      "url": "https://sketchfab.com/3d-models/oiiaioooooiai-cat-30d27bf7fb224849b76e208a6eccdb36",
+      "snippet": "Download 3D ModelAdd toEmbedShareReport Triangles:15.8k Vertices:8.8k More model information spinning cat wwwwwwwwwwwwwwww made by Blender License: CC AttributionCreative Commons Attribution"
+    },
+    {
+      "title": "Accueil | E-guichet de la ville de Liège",
+      "url": "https://e-guichet.liege.be/",
+      "snippet": "Prenez connaissance du suivi de votre demande via un fil du temps interactif et soyez notifié instantanément de tout changement de …"
+    },
+    {
+      "title": "SnazzyArtist22 (Elliott Buxton) - Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "Passeport — Liège",
+      "url": "https://www.liege.be/fr/vie-communale/services-communaux/etat-civil-et-population/documents-didentite-et-de-voyage/demarches/passeport",
+      "snippet": "Le passeport est un document de voyage officiel, reconnu et utilisable partout dans le monde, se présentant sous forme de livret, …"
+    }
+  ]
+}

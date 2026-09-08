@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ced-Collab/RNASBDD",
+  "slug": "ced-collab-rnasbdd",
+  "author": "Ced-Collab",
+  "url": "https://huggingface.co/Ced-Collab/RNASBDD",
+  "created_at": "2026-09-07T23:37:23.000Z",
+  "updated_at": "2026-09-07T23:49:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "structure-based-drug-design",
+    "rna",
+    "molecular-generation",
+    "diffusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 961699272,
+  "storage_human": "962 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bienvenue chez CED | CED",
+      "url": "https://www.grossiste-fete.fr/bienvenue-chez-ced/",
+      "snippet": "Depuis maintenant plus de 20 ans, la société CED s’est imposée comme le grossiste spécialiste de la fête, en déguisement, …"
+    },
+    {
+      "title": "Ced-Collab (Ced-Collab) - Hugging Face",
+      "url": "https://huggingface.co/Ced-Collab",
+      "snippet": "Org profile for Ced-Collab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Communauté européenne de défense — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Communaut%C3%A9_europ%C3%A9enne_de_d%C3%A9fense",
+      "snippet": "2.4Accords de Bonn : contrepartie indissociable de la CED."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Sign in Google apps"
+    },
+    {
+      "title": "Le spécialiste de vos fêtes, CED, grossiste en événementiel",
+      "url": "https://www.grossiste-fete.fr/",
+      "snippet": "CED, grossiste en articles de fête depuis 1998 : déguisements, jouets, kermesse, décoration. 15 000 références à prix de gros pour …"
+    }
+  ]
+}

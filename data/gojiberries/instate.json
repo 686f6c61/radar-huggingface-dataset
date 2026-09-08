@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "gojiberries/instate",
+  "slug": "gojiberries-instate",
+  "author": "gojiberries",
+  "url": "https://huggingface.co/gojiberries/instate",
+  "created_at": "2026-08-16T06:53:12.000Z",
+  "updated_at": "2026-09-08T00:07:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "names",
+    "india",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162119129,
+  "storage_human": "162 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=1a1987bc52106e073be4907253c26f23",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "gojiberries/instate · Hugging Face",
+      "url": "https://huggingface.co/gojiberries/instate",
+      "snippet": "instate model artifacts These checkpoints power the neural prediction APIs in instate. The package downloads this repository at an immutable commit so a released package cannot silently change models."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "Gojiberry AI - Grow your sales with warm leads & high intent outreach",
+      "url": "https://gojiberry.ai/",
+      "snippet": "Gojiberry AI detects warm leads from 15+ buying and social signals, filters them by your ICP, and runs personalized outreach to book qualified demos automatically."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

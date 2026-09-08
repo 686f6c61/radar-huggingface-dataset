@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-gpt2-cachenotes",
+  "slug": "hooshaai-svd-linear-attention-gpt2-cachenotes",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-gpt2-cachenotes",
+  "created_at": "2026-09-07T21:17:14.000Z",
+  "updated_at": "2026-09-07T22:57:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "gpt2",
+    "cachenotes",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9477043,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:36.970Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    },
+    {
+      "title": "Scaling Transformers: How Linear Attention is Reshaping Cross-Task AI",
+      "url": "https://hooshaai.substack.com/p/scaling-transformers-how-linear-attention",
+      "snippet": "The solution gaining serious traction in the research community is Linear Attention. By mathematically decomposing the softmax operation and substituting carefully engineered kernel feature maps, newer architectures achieve O (N) complexity — retaining the expressivity of a standard Transformer at a fraction of the cost."
+    },
+    {
+      "title": "Netflix Deutschland – Serien online ansehen, Filme online ansehen",
+      "url": "https://www.netflix.com/de/",
+      "snippet": "Schauen Sie Netflix-Filme und -Serien online oder per Streaming auf Smart-TVs, Spielkonsolen, PCs, Macs, Smartphones, Tablets …"
+    },
+    {
+      "title": "The Rise of Linear Attention in Bidirectional Modeling and Long-Term ...",
+      "url": "https://hooshaai.substack.com/p/the-rise-of-linear-attention-in-bidirectional",
+      "snippet": "In long sequences, this means the model’s attention naturally clusters around a few local, recent positions, while genuinely important signals sitting further back in the history get systematically starved of attention weight. The model isn’t just slow on long sequences — it’s structurally biased against remembering them well."
+    },
+    {
+      "title": "Najnovije vijesti iz Hrvatske i svijeta - Net.hr",
+      "url": "https://net.hr/",
+      "snippet": "Jul 18, 2026 · Partnerski portali emedjimurje.net.hr sib.net.hr kaportal.net.hr varazdinski.net.hr riportal.net.hr dubrovackidnevnik.net.hr"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "christopherthompson81/vibevoice-asr-streaming-7b-onnx",
+  "slug": "christopherthompson81-vibevoice-asr-streaming-7b-onnx",
+  "author": "christopherthompson81",
+  "url": "https://huggingface.co/christopherthompson81/vibevoice-asr-streaming-7b-onnx",
+  "created_at": "2026-09-07T21:30:12.000Z",
+  "updated_at": "2026-09-07T21:50:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "vibevoice",
+    "automatic-speech-recognition",
+    "speaker-diarization",
+    "streaming",
+    "vernacula",
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it",
+    "base_model:microsoft/VibeVoice-ASR-Streaming-7B",
+    "base_model:quantized:microsoft/VibeVoice-ASR-Streaming-7B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9703447869,
+  "storage_human": "9.7 GB",
+  "base_model": "microsoft/VibeVoice-ASR-Streaming-7B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "christopherthompson81/vibevoice-asr-onnx · Hugging Face",
+      "url": "https://huggingface.co/christopherthompson81/vibevoice-asr-onnx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=21ab0f8dec0f647617c91840edc265fe",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "GitHub - microsoft/VibeVoice: Open-Source Frontier Voice AI",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "snippet": "MIT license Security Moreitems 🎙️ VibeVoice: Open-Source Frontier Voice AI 📰 News 2026-09-03: 🚀 We released VibeVoice-ASR-Streaming, a unified streaming ASR model that continuously transcribes ''who said what'' as speech arrives, with support for customized hotwords and 10 languages. [Demo] [Models] [Report]"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "microsoft/VibeVoice-ASR · Hugging Face",
+      "url": "https://huggingface.co/microsoft/VibeVoice-ASR",
+      "snippet": "VibeVoice-ASRis a unified speech-to-text model designed to handle 60-minute long-form audioin a single pass, generating structured transcriptions containing Who (Speaker), When (Timestamps), and What (Content), with support for Customized Hotwordsand over 50 languages."
+    }
+  ]
+}

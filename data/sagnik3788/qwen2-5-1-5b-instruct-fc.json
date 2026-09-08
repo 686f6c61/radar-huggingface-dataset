@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "sagnik3788/Qwen2.5-1.5B-Instruct-FC",
+  "slug": "sagnik3788-qwen2-5-1-5b-instruct-fc",
+  "author": "sagnik3788",
+  "url": "https://huggingface.co/sagnik3788/Qwen2.5-1.5B-Instruct-FC",
+  "created_at": "2026-09-07T19:30:43.000Z",
+  "updated_at": "2026-09-07T19:34:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "function-calling",
+    "tool-calling",
+    "bfcl",
+    "qlora",
+    "sft",
+    "unsloth",
+    "instruct",
+    "1.5b",
+    "slm",
+    "conversational",
+    "en",
+    "arxiv:2406.18518",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "BFCL v4 Non-Live AST",
+      "dataset": "BFCL v4",
+      "metric": "Non-Live AST Accuracy",
+      "value": 85.65
+    }
+  ],
+  "sources": [
+    {
+      "title": "Other Devices > AAP Server (?) shows question mark - Windows 10 …",
+      "url": "https://www.tenforums.com/drivers-hardware/177930-other-devices-aap-server-shows-question-mark.html",
+      "snippet": "New19 Apr 2021#1 Other Devices > AAP Server (?) shows question mark Hello all, Device management is showing a \"AAP Server\" …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Verlorenes Android-Gerät orten, sperren oder Daten darauf löschen ...",
+      "url": "https://support.google.com/accounts/answer/6160491?hl=de",
+      "snippet": "Hinweis:Wenn Sie Ihr Wear OS-Gerät orten, sperren oder die Daten darauf löschen möchten, verbinden Sie es über eine WLAN- …"
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "How to Open Device Manager in Windows 10 | Tutorials",
+      "url": "https://www.tenforums.com/tutorials/128588-how-open-device-manager-windows-10-a.html",
+      "snippet": "May 7, 2021 · How to Open Device Manager in Windows 10 Device Manager displays information about each device. This includes …"
+    }
+  ]
+}

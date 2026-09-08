@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-InM1",
+  "slug": "ch522-mmh3-inm1",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-InM1",
+  "created_at": "2026-09-07T22:33:10.000Z",
+  "updated_at": "2026-09-07T22:33:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155116463,
+  "storage_human": "155 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://fr.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "CH522/MMh3-InM1 · Hugging Face",
+      "url": "https://huggingface.co/CH522/MMh3-InM1",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use CH522/MMh3-InM1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use CH522/MMh3-InM1 with Diffusers:"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/d?reason=invalid_crumb",
+      "snippet": "Il est temps de passer à l’action avec Yahoo Mail. Pour commencer, il vous suffit d’ajouter votre compte Gmail, Outlook, AOL ou …"
+    },
+    {
+      "title": "CH522/MMh3-Dt2 · Hugging Face",
+      "url": "https://huggingface.co/CH522/MMh3-Dt2",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use CH522/MMh3-Dt2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use CH522/MMh3-Dt2 with Diffusers:"
+    },
+    {
+      "title": "Connexion - Se connecter à Yahoo - Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/\"",
+      "snippet": "Connectez-vous pour accéder à Yahoo Mail, toujours plus performant : Yahoo Mail, actualités locales, nationales et internationales, …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "trinityomnis/OpenThinkerAgent-32B-SFT-316",
+  "slug": "trinityomnis-openthinkeragent-32b-sft-316",
+  "author": "trinityomnis",
+  "url": "https://huggingface.co/trinityomnis/OpenThinkerAgent-32B-SFT-316",
+  "created_at": "2026-09-07T22:40:31.000Z",
+  "updated_at": "2026-09-07T22:40:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agents",
+    "terminal",
+    "code",
+    "software-engineering",
+    "conversational",
+    "dataset:open-thoughts/OpenThoughts-Agent-SFT-316",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 676864,
+  "parameters_human": "676864",
+  "storage_bytes": 65535751214,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neuroeducación y futuro del trabajo: cómo preparar a los ... - Infobae",
+      "url": "https://www.infobae.com/sociedad/2026/09/02/neuroeducacion-y-futuro-del-trabajo-como-preparar-a-los-jovenes-para-un-mundo-en-transformacion/",
+      "snippet": "5 days ago · Así como se aprende un contenido, también se puede aprender a pensar sobre el propio pensamiento. La distinción …"
+    },
+    {
+      "title": "trinityomnis/OpenThinkerAgent-32B-SFT-316 · Hugging Face",
+      "url": "https://huggingface.co/trinityomnis/OpenThinkerAgent-32B-SFT-316",
+      "snippet": "The model is trained on OpenThoughts-Agent-SFT-316: (task, agent-trajectory) pairs from the Top-4 task sources (SWE-Smith, StackExchange-SuperUser, StackExchange-Tezos with synthetic augmentation, IssueTasks)."
+    },
+    {
+      "title": "La neuroeducación y su impacto en las estrategias de enseñanza",
+      "url": "https://www.elmosaicoeducacion.com/2026/04/la-neuroeducacion-y-su-impacto-en-las.html",
+      "snippet": "Apr 25, 2026 · El presente estudio aborda el impacto de la neuroeducación en la transformación de las estrategias de enseñanza, …"
+    },
+    {
+      "title": "open-thoughts/OpenThinkerAgent-32B-SFT-316 · Hugging Face",
+      "url": "https://huggingface.co/open-thoughts/OpenThinkerAgent-32B-SFT-316",
+      "snippet": "The model is trained on OpenThoughts-Agent-SFT-316: (task, agent-trajectory) pairs from the Top-4 task sources (SWE-Smith, StackExchange-SuperUser, StackExchange-Tezos with synthetic augmentation, IssueTasks)."
+    },
+    {
+      "title": "Neuroeducación en 2026: Innovación y Estrategias para el Aula",
+      "url": "https://blogposgrados.ups.edu.ec/blog/neuroeducaci%C3%B3n-en-2026-innovaci%C3%B3n-y-estrategias-para-el-aula",
+      "snippet": "Descubre qué es la neuroeducación, cómo aplicarla en el aula y por qué esta disciplina es clave para la innovación educativa en …"
+    }
+  ]
+}

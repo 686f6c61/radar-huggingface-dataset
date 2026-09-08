@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "muscgab/MangaDReC-v1",
+  "slug": "muscgab-mangadrec-v1",
+  "author": "muscgab",
+  "url": "https://huggingface.co/muscgab/MangaDReC-v1",
+  "created_at": "2026-09-07T19:52:33.000Z",
+  "updated_at": "2026-09-07T19:53:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "pytorch",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "ocr",
+    "manga",
+    "japanese",
+    "mps",
+    "cuda",
+    "image-to-text",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146663877,
+  "storage_human": "147 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Externe DVD/CD speler voor laptop - USB 3.0 - Plug & Play - bol",
+      "url": "https://www.bol.com/nl/nl/p/externe-dvd-cd-speler-voor-laptop-of-computer-met-usb-aansluiting-zwart/9200000086576651/",
+      "snippet": "Met deze plug & play externe CD/DVD speler kun je op vrijwel al je apparaten met USB aansluiting CD's en DVD's afspelen & …"
+    },
+    {
+      "title": "Releases · PaddlePaddle/PaddleOCR · GitHub",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR/releases",
+      "snippet": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages. - Releases · PaddlePaddle/PaddleOCR"
+    },
+    {
+      "title": "Externe DVD/CD speler voor laptop of computer met USB aansluiting …",
+      "url": "https://www.bol.com/be/nl/p/externe-dvd-cd-speler-voor-laptop-of-computer-met-usb-aansluiting-zwart/9200000086576651/",
+      "snippet": "Met deze plug & play externe CD/DVD speler kun je op vrijwel al je apparaten met USB aansluiting CD's en DVD's afspelen & …"
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "≥ Vind cd writer in Optische drives op Marktplaats",
+      "url": "https://www.marktplaats.nl/l/computers-en-software/optische-drives/q/cd+writer/?msockid=0fdaa8836c90679a0acdbf4e6dd166ce",
+      "snippet": "91 aanbiedingen in mei - Koop of Verkoop cd writer op Marktplaats - Bekijk Lokale Aanbiedingen! Verkoop eenvoudig cd writer"
+    }
+  ]
+}

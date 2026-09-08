@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "YNSScarSaiyan/nys-sft-public",
+  "slug": "ynsscarsaiyan-nys-sft-public",
+  "author": "YNSScarSaiyan",
+  "url": "https://huggingface.co/YNSScarSaiyan/nys-sft-public",
+  "created_at": "2026-07-05T13:37:52.000Z",
+  "updated_at": "2026-09-08T01:26:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "nys-thermodynamic",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nys-thermodynamic",
+    "kuramoto-oscillator",
+    "equilibrium-propagation",
+    "sparse-csr",
+    "thermodynamic-computing",
+    "non-transformer",
+    "zero-backprop",
+    "hip",
+    "mi300x",
+    "compiler-physics",
+    "voice-crystal",
+    "sft",
+    "other",
+    "en",
+    "dataset:YNSScarSaiyan/nys-corpus",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1334680263692,
+  "storage_human": "1334.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boston Celtics vs. Milwaukee Bucks odds, tips and betting trends | 3/2/2026",
+      "url": "https://sportsbookwire.usatoday.com/story/sports/sports-betting/2026/03/02/nba-boston-celtics-vs-milwaukee-bucks-betting-odds-tips-trends-3-2-2026/88940464007/",
+      "snippet": "Mar 3, 2026 · Preview the Boston Celtics' NBA matchup with Milwaukee, including betting odds, tips, trends, and game information."
+    },
+    {
+      "title": "YNSScarSaiyan (Dakuwon Moody) - Hugging Face",
+      "url": "https://huggingface.co/YNSScarSaiyan",
+      "snippet": "Recent Activity updated a modelabout 8 hours ago YNSScarSaiyan/bulmax-gen2-weights published a modelabout 8 hours ago YNSScarSaiyan/bulmax-gen2-weights updated a model5 days ago YNSScarSaiyan/nys-sft-public View all activity"
+    },
+    {
+      "title": "Boston Celtics vs. Milwaukee Bucks - Odds - March 02, 2026",
+      "url": "https://www.foxsports.com/nba/boston-celtics-vs-milwaukee-bucks-mar-02-2026-game-boxscore-44358?tab=odds",
+      "snippet": "Mar 2, 2026 · View the latest odds for the Boston Celtics vs. Milwaukee Bucks game played on March 02, 2026 including point …"
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "Browse all available models on the OpenAI Platform."
+    },
+    {
+      "title": "Celtics vs. Bucks Predictions, Odds & Stats – March 2 | 97.3 The Game",
+      "url": "https://973thegame.iheart.com/content/2026-03-02-celtics-vs-bucks-predictions-odds-stats-march-2/",
+      "snippet": "Mar 3, 2026 · Explore our predictions, odds, and stats for the March 2, 2026 Boston Celtics vs. Milwaukee Bucks game. Find out …"
+    }
+  ]
+}

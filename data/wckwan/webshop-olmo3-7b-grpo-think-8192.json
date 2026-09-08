@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wckwan/Webshop-Olmo3-7B-GRPO-Think-8192",
+  "slug": "wckwan-webshop-olmo3-7b-grpo-think-8192",
+  "author": "wckwan",
+  "url": "https://huggingface.co/wckwan/Webshop-Olmo3-7B-GRPO-Think-8192",
+  "created_at": "2026-09-07T21:20:50.000Z",
+  "updated_at": "2026-09-07T21:24:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reinforcement-learning",
+    "grpo",
+    "search-r1",
+    "process-reward",
+    "tool-use",
+    "text-generation",
+    "base_model:allenai/Olmo-3-7B-Think",
+    "base_model:finetune:allenai/Olmo-3-7B-Think",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43788191088,
+  "storage_human": "43.8 GB",
+  "base_model": "allenai/Olmo-3-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paolo Proietti - Studio Medico Polispecialistico \"Conca d'Oro\" - Roma",
+      "url": "https://studioconcadoro.com/?page_id=199",
+      "snippet": "Si è specializzato nel 1992 in Oncologia presso la stessa università. È Medico vaccinatore presso il centro vaccinazioni della ASL …"
+    },
+    {
+      "title": "wckwan/WebShop-Olmo3-7B-GiGPO · Hugging Face",
+      "url": "https://huggingface.co/wckwan/WebShop-Olmo3-7B-GiGPO",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dott. Proietti Paolo Medico di Base a Roma (RM) - SistemaSanitario.it",
+      "url": "https://www.sistemasanitario.it/dott-paolo-proietti-5861",
+      "snippet": "Dott. Proietti Paolo, Medico di Base a Roma (RM),visualizza numero di telefono, email, orari di ricevimento e la mappa."
+    },
+    {
+      "title": "WebShop-Olmo3-7B-GiGPO API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/wckwan/WebShop-Olmo3-7B-GiGPO",
+      "snippet": "Run WebShop-Olmo3-7B-GiGPO with FriendliAI inference. A allenai/Olmo-3-7B-Instruct policy trained with GRPO on WebShop web-navigation shopping tasks, with the…"
+    },
+    {
+      "title": "Medicina Generale - Studio Medico Polispecialistico \"Conca d'Oro\" - Roma",
+      "url": "https://studioconcadoro.com/?page_id=189",
+      "snippet": "Il Medico rappresenta il collegamento del Sistema Sanitario Nazionale con l’utenza sul territorio; il Medico può visitare il Paziente, …"
+    }
+  ]
+}

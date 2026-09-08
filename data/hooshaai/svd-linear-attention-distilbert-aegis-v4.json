@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-distilbert-aegis-v4",
+  "slug": "hooshaai-svd-linear-attention-distilbert-aegis-v4",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v4",
+  "created_at": "2026-09-07T21:10:42.000Z",
+  "updated_at": "2026-09-07T22:56:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "distilbert",
+    "aegis_v4",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4748282,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:48.980Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bitget Token Price: BGB/USD Live Price Chart, Market Cap ... - CoinGecko",
+      "url": "https://www.coingecko.com/en/coins/bitget-token",
+      "snippet": "Bitget Token (BGB) is the exclusive platform token for the centralized exchange Bitget and the decentralized Bitget Wallet ecosystem. …"
+    },
+    {
+      "title": "HOOSHA AI — Frontier Artificial Intelligence & Open Research",
+      "url": "https://hooshaai.github.io/",
+      "snippet": "Hoosha AI — Frontier research laboratory pioneering sub-quadratic attention, continuous flow matching, and verified cognitive scaling architectures."
+    },
+    {
+      "title": "How to Set Up Bitget Wallet on Mac (Step-by-Step Guide)",
+      "url": "https://www.youtube.com/watch?v=YRd7rdQPP9k",
+      "snippet": "Mar 19, 2026 · If you just downloaded Bitget Wallet on your MacBook and don’t know what to do next, this guide walks you through …"
+    },
+    {
+      "title": "GitHub - Hooshaai/hooshaai.github.io: Hoosha AI is an independent AI ...",
+      "url": "https://github.com/Hooshaai/hooshaai.github.io",
+      "snippet": "Hoosha AI is an independent AI research lab and systems engineering initiative dedicated to advancing continuous-time generative modeling (Continuous Flow Matching), differential attention mechanisms, and scalable GPU compute infrastructure. - Hooshaai/hooshaai.github.io"
+    },
+    {
+      "title": "Unduh Aplikasi Seluler Bitget ｜ Aplikasi Perdagangan Kripto ｜ …",
+      "url": "https://www.bitgetapp.com/id/download",
+      "snippet": "Feb 1, 2016 · Unduh Aplikasi Seluler Bitget - Aplikasi seluler perdagangan Bitcoin & kripto untuk iOS & Android, Unduh untuk Apple …"
+    }
+  ]
+}

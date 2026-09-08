@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "unravler-media/GLM-5.3-CYBERSECURITY-FP8",
+  "slug": "unravler-media-glm-5-3-cybersecurity-fp8",
+  "author": "unravler-media",
+  "url": "https://huggingface.co/unravler-media/GLM-5.3-CYBERSECURITY-FP8",
+  "created_at": "2026-09-07T22:02:59.000Z",
+  "updated_at": "2026-09-07T22:02:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "crack",
+    "refusal-removed",
+    "domain-specific",
+    "cybersecurity",
+    "offensive-security",
+    "red-team",
+    "pentest",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do you display code snippets in MS Word preserving format and ...",
+      "url": "https://stackoverflow.com/questions/387453/how-do-you-display-code-snippets-in-ms-word-preserving-format-and-syntax-highlig",
+      "snippet": "Dec 23, 2008 · Does anyone know a way to display code in Microsoft Word documents that preserves coloring and formatting? …"
+    },
+    {
+      "title": "unravler-media/GLM-5.3-CYBERSECURITY-FP8 · Hugging Face",
+      "url": "https://huggingface.co/unravler-media/GLM-5.3-CYBERSECURITY-FP8",
+      "snippet": "xet Community Copy to bucket new GLM 5.3 CRACK — Cybersecurity FP8 READ THIS FIRST — what this is, and what it isn't Base model Serve (TP8 on 8× H200)"
+    },
+    {
+      "title": "How to quickly code and run small C# code - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/384743/how-to-quickly-code-and-run-small-c-sharp-code",
+      "snippet": "Dec 22, 2008 · 3 Test C# code without building my application 7 How can I quickly test a code snippet in Visual Studio (2008)? 6 …"
+    },
+    {
+      "title": "unravler-media (Tushar Singh) - Hugging Face",
+      "url": "https://huggingface.co/unravler-media",
+      "snippet": "Organizations None yet models1 unravler-media/GLM-5.3-CYBERSECURITY-FP8 Text Generation •753B•Updated 35 minutes ago datasets0 None public yet"
+    },
+    {
+      "title": "Ek açıklamalı snippet öğeleri hakkında - Google Ads Yardım",
+      "url": "https://support.google.com/google-ads/answer/6280012?hl=tr",
+      "snippet": "Ek açıklamalı snippet, yalnızca kampanyaların bir alt kümesi için geçerliyse yalnızca alakalı kampanyalara eklenmelidir. Google, …"
+    }
+  ]
+}

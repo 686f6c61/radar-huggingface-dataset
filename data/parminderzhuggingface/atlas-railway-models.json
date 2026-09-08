@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ParminderzHuggingFace/atlas-railway-models",
+  "slug": "parminderzhuggingface-atlas-railway-models",
+  "author": "ParminderzHuggingFace",
+  "url": "https://huggingface.co/ParminderzHuggingFace/atlas-railway-models",
+  "created_at": "2026-09-07T19:52:24.000Z",
+  "updated_at": "2026-09-07T19:59:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "recommendation-systems",
+    "lightgbm",
+    "collaborative-filtering",
+    "retailrocket",
+    "atlas",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 226368048,
+  "storage_human": "226 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fnac : Informatique, Smartphones, livres, jeux vidéo, photos, jouets ...",
+      "url": "https://www.fnac.com/",
+      "snippet": "Achat en ligne sur Fnac.com : Produits culturels, techniques et électroménager. Retrait gratuit en magasin en 1 heure: DVD, jeux …"
+    },
+    {
+      "title": "ParminderzHuggingFace (Parminder Singh)",
+      "url": "https://huggingface.co/ParminderzHuggingFace",
+      "snippet": "AI/ML Systems · NLP · Multimodal Learning · Retrieval · Computer Vision"
+    },
+    {
+      "title": "Fnac Livre : bien plus que des millions de livres",
+      "url": "https://www.fnac.com/livre.asp",
+      "snippet": "Des conseils pour bien choisir, des idées cadeaux, des petits prix, une livraison rapide... Retrouvez à la Fnac toutes les nouveautés …"
+    },
+    {
+      "title": "Model Atlas - a Hugging Face Space by Eliahu",
+      "url": "https://huggingface.co/spaces/Eliahu/Model-Atlas",
+      "snippet": "A demo for exploring and analyzing large-scale model repos"
+    },
+    {
+      "title": "LES PACKS FNAC",
+      "url": "https://serenite.fnac.com/",
+      "snippet": "Fnac Cloud : 100 Go de stockage en France pour ne jamais perdre vos photos et vidéos Fnac Identité: Surveillance du web : …"
+    }
+  ]
+}

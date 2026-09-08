@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-distilbert-aegis-v3",
+  "slug": "hooshaai-svd-linear-attention-distilbert-aegis-v3",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v3",
+  "created_at": "2026-09-07T21:09:54.000Z",
+  "updated_at": "2026-09-07T22:56:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "distilbert",
+    "aegis_v3",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4748282,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:50.004Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Enjoy the largest amateur porn community on the net as well as full-length scenes from the top XXX studios. We update our porn …"
+    },
+    {
+      "title": "HOOSHA AI — Frontier Artificial Intelligence & Open Research",
+      "url": "https://hooshaai.github.io/",
+      "snippet": "Hoosha AI — Frontier research laboratory pioneering sub-quadratic attention, continuous flow matching, and verified cognitive scaling architectures."
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Hoosaha AI - GitHub",
+      "url": "https://github.com/Hooshaai",
+      "snippet": "AI works. Hoosaha AI has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "1001 Next Remove ads- Upgrade to PremiumAds by TrafficFactory XVideos.com is a free hosting service for porn videos. We convert …"
+    }
+  ]
+}

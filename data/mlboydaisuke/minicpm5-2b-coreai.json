@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/MiniCPM5-2B-CoreAI",
+  "slug": "mlboydaisuke-minicpm5-2b-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/MiniCPM5-2B-CoreAI",
+  "created_at": "2026-09-07T21:28:53.000Z",
+  "updated_at": "2026-09-07T22:30:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "coreai-aimodel",
+    "core-ai",
+    "coreml",
+    "apple",
+    "on-device",
+    "iphone",
+    "metal",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2674882267,
+  "storage_human": "2.7 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "mlboydaisuke/MiniCPM5-1B-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/MiniCPM5-1B-CoreAI",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "File Explorer | Microsoft Windows",
+      "url": "https://www.microsoft.com/en-us/windows/tips/file-explorer?msockid=2b6e2b30313e64ce0d613cfd30a86588",
+      "snippet": "Press Windows logo key + E to open File Explorer and find the files and folders you need, including those on OneDrive. You can use …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?p=6&sort=created",
+      "snippet": "Updated about 1 hour ago check123432/co208 Updated about 1 hour ago mlboydaisuke/MiniCPM5-2B-CoreAI Text Generation •Updated 5 minutes ago creativedev1234/co237 Updated about 1 hour ago"
+    },
+    {
+      "title": "Get Help With File Explorer in Windows 11",
+      "url": "https://windowsreport.com/get-help-with-file-explorer-in-windows/",
+      "snippet": "Jul 21, 2026 · Learn where to get help with File Explorer in Windows using built in tools, support pages, and troubleshooters."
+    }
+  ]
+}

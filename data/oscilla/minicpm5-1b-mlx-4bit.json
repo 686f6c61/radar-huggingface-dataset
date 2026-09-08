@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Oscilla/MiniCPM5-1B-mlx-4Bit",
+  "slug": "oscilla-minicpm5-1b-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/MiniCPM5-1B-mlx-4Bit",
+  "created_at": "2026-09-07T19:57:28.000Z",
+  "updated_at": "2026-09-07T19:57:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:quantized:openbmb/MiniCPM5-1B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 608026643,
+  "storage_human": "608 MB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home Trenitalia",
+      "url": "https://www.trenitalia.com/it.html",
+      "snippet": "1 day ago · Viaggia con Trenitalia, Premium Partner dei XX Giochi del Mediterraneo, per raggiungere le sedi delle gare e approfitta …"
+    },
+    {
+      "title": "mlx-community/MiniCPM5-1B-4bit at main - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/MiniCPM5-1B-4bit/tree/main",
+      "snippet": "like 1 Follow MLX Community 15.3k Text Generation MLX Safetensors 4 datasets English Chinese llama minicpm minicpm5 long-context tool-calling on-device edge-ai conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "FR - Trenitalia",
+      "url": "https://www.trenitalia.com/fr.html",
+      "snippet": "21 hours ago · City Sightseeing Achetez vos billets de bus City Sightseeing directement sur ce site. Réduction de 20 % si vous les …"
+    },
+    {
+      "title": "mlx-community/MiniCPM5-1B-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/MiniCPM5-1B-OptiQ-4bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Acheter des billets de trains Paris Lyon Milan Marseille • Trenitalia",
+      "url": "https://trenitalia.fr/",
+      "snippet": "Trenitalia Pro vous accompagne avec des services dédiés : gestion centralisée des réservations, billets modifiables, offres sur …"
+    }
+  ]
+}

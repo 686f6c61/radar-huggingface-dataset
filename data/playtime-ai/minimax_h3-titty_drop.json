@@ -5,7 +5,7 @@
   "author": "Playtime-AI",
   "url": "https://huggingface.co/Playtime-AI/Minimax_H3-Titty_Drop",
   "created_at": "2026-09-01T16:12:38.000Z",
-  "updated_at": "2026-09-01T16:14:31.000Z",
+  "updated_at": "2026-09-07T13:25:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,15 +13,16 @@
   "languages": [],
   "tags": [
     "license:apache-2.0",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 6,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 310191544,
-  "storage_human": "310 MB",
+  "storage_bytes": 348498083,
+  "storage_human": "348 MB",
   "base_model": null,
   "formats": [],
   "is_conversational": false,

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "blackcoderx/smollm3-3b-dpo",
+  "slug": "blackcoderx-smollm3-3b-dpo",
+  "author": "blackcoderx",
+  "url": "https://huggingface.co/blackcoderx/smollm3-3b-dpo",
+  "created_at": "2026-09-07T20:03:13.000Z",
+  "updated_at": "2026-09-07T22:48:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "dpo",
+    "trl",
+    "arxiv:2305.18290",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 864083252,
+  "storage_human": "864 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM3-3B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "snippet": "The modeling code for SmolLM3 is available in transformers v4.53.0, so make sure to upgrade your transformers version. You can also load the model with the latest vllmwhich uses transformers as a backend."
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "alignment-handbook/recipes/smollm3 at main · huggingface ... - GitHub",
+      "url": "https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm3",
+      "snippet": "We are open-sourcing all the artifacts to train SmolLM3-3B. You can find the configuration files for the three post-training stages (mid-training, SFT, and DPO) in the sft and dpo directories."
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-Fac2",
+  "slug": "ch522-mmh3-fac2",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-Fac2",
+  "created_at": "2026-09-07T22:06:46.000Z",
+  "updated_at": "2026-09-07T22:07:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 626301567,
+  "storage_human": "626 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Confecámaras - Confederación de Cámaras de Comercio de Colombia",
+      "url": "https://confecamaras.org.co/",
+      "snippet": "Organismo de carácter nacional que coordina y brinda asistencia en el desarrollo de sus funciones a las Cámaras de Comercio …"
+    },
+    {
+      "title": "CH522/MMh3-Fac1 · Hugging Face",
+      "url": "https://huggingface.co/CH522/MMh3-Fac1",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use CH522/MMh3-Fac1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use CH522/MMh3-Fac1 with Diffusers:"
+    },
+    {
+      "title": "Garantías Mobiliarias - Confecámaras",
+      "url": "https://confecamaras.org.co/preguntas-frecuentes/garantias-mobiliarias/",
+      "snippet": "1. ¿Que son las Garantías Mobiliarias? Las Garantías Mobiliarias son un servicio mediante el cual una empresa o persona puede …"
+    },
+    {
+      "title": "LBH-123-AI/Minimax_h3_latent_Upscaler · Hugging Face",
+      "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bienvenida Proyecto Sii Cartagena",
+      "url": "https://siicartagena.confecamaras.org.co/wp-content/uploads/2025/04/Presentacion-proyecto-Migracion-Sii-Carlos-Agudelo.pdf",
+      "snippet": "Objetivo del proyecto Realizar la migración, configuración e implementación del Sistema Integrado de Información -SII- para …"
+    }
+  ]
+}

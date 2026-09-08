@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "imstevenpmwork/dit_super_chatton_main-ema",
+  "slug": "imstevenpmwork-dit_super_chatton_main-ema",
+  "author": "imstevenpmwork",
+  "url": "https://huggingface.co/imstevenpmwork/dit_super_chatton_main-ema",
+  "created_at": "2026-09-07T19:19:14.000Z",
+  "updated_at": "2026-09-07T19:19:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "multi_task_dit",
+    "robotics",
+    "dataset:imstevenpmwork/super_chatton",
+    "arxiv:2507.05331",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 248855302,
+  "parameters_human": "248.9M",
+  "storage_bytes": 995509256,
+  "storage_human": "996 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allrecipes | Recipes, How-Tos, Videos and More",
+      "url": "https://www.allrecipes.com/",
+      "snippet": "Everyday recipes with ratings and reviews by home cooks like you. Find easy dinner ideas, healthy recipes, plus helpful cooking tips …"
+    },
+    {
+      "title": "imstevenpmwork/super_chatton_smolvla · Hugging Face",
+      "url": "https://huggingface.co/imstevenpmwork/super_chatton_smolvla",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Recipes",
+      "url": "https://www.allrecipes.com/recipes/",
+      "snippet": "Find and share everyday cooking inspiration on Allrecipes. Discover recipes, cooks, videos, and how-tos based on the food you love …"
+    },
+    {
+      "title": "imstevenpmwork (Steven Palma) - Hugging Face",
+      "url": "https://huggingface.co/imstevenpmwork",
+      "snippet": "Robotics LeRobot Humanoid: An Open, Low-Cost, 3D-Printed Humanoid for Robot Learning"
+    },
+    {
+      "title": "Recipes, Dinners and Easy Meal Ideas | Food Network",
+      "url": "https://www.foodnetwork.com/recipes",
+      "snippet": "Need a recipe? Get dinner on the table with Food Network's best recipes, videos, cooking tips and meal ideas from top chefs, shows …"
+    }
+  ]
+}

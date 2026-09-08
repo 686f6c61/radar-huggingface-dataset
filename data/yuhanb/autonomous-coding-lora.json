@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yuhanb/autonomous-coding-lora",
+  "slug": "yuhanb-autonomous-coding-lora",
+  "author": "yuhanb",
+  "url": "https://huggingface.co/yuhanb/autonomous-coding-lora",
+  "created_at": "2026-09-07T20:00:24.000Z",
+  "updated_at": "2026-09-07T20:00:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai",
+    "micro-saas",
+    "digital-product",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "100+ profili “Christina Gabriel” | LinkedIn",
+      "url": "https://it.linkedin.com/pub/dir/Christina/Gabriel",
+      "snippet": "Visualizza su LinkedIn i profili dei professionisti con il seguente nome: “Christina Gabriel”. Risultano 100+ professionisti il cui nome è …"
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "Christina M. Gabriel - General Management Pharmaceuticals ... - LinkedIn",
+      "url": "https://es.linkedin.com/in/christinamgabriel",
+      "snippet": "Pharmaceutical & Biotech Commercial Executive with over 25 years of experience in US, Global HQ and Spain organizations in …"
+    },
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" - microsoft/LoRA"
+    },
+    {
+      "title": "100+ \"Christina Gabriel\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Christina%20/Gabriel%20",
+      "snippet": "View the profiles of professionals named &quot;Christina Gabriel&quot; on LinkedIn."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "g-assismoraes",
   "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-3B-SameFormula-Code-S13",
   "created_at": "2026-09-05T22:34:02.000Z",
-  "updated_at": "2026-09-05T22:36:49.000Z",
+  "updated_at": "2026-09-07T09:38:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": 3397103616,
   "parameters_human": "3.40B",
-  "storage_bytes": 6805678952,
-  "storage_human": "6.8 GB",
+  "storage_bytes": 13599936008,
+  "storage_human": "13.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yuhanb/zero-shot-sentiment-pipeline",
+  "slug": "yuhanb-zero-shot-sentiment-pipeline",
+  "author": "yuhanb",
+  "url": "https://huggingface.co/yuhanb/zero-shot-sentiment-pipeline",
+  "created_at": "2026-09-07T20:00:28.000Z",
+  "updated_at": "2026-09-07T20:00:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai",
+    "micro-saas",
+    "digital-product",
+    "base_model:facebook/bart-large-mnli",
+    "base_model:finetune:facebook/bart-large-mnli",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "facebook/bart-large-mnli",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kobiom.com",
+      "url": "https://www.kobiom.com/",
+      "snippet": "kobiom.com offers a platform for innovative solutions and services to meet diverse needs."
+    },
+    {
+      "title": "IAyoub/finetuning-sentiment-model-base-zero-shot · Hugging Face",
+      "url": "https://huggingface.co/IAyoub/finetuning-sentiment-model-base-zero-shot",
+      "snippet": "Instructions to use IAyoub/finetuning-sentiment-model-base-zero-shot with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use IAyoub/finetuning-sentiment-model-base-zero-shot with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model ..."
+    },
+    {
+      "title": "Kobiom / Films",
+      "url": "https://www.kobiom.fr/films",
+      "snippet": "Explore les films sur Kobiom et choisis une intrigue entre suspense, émotion, comédie, action et retournements capables de marquer …"
+    },
+    {
+      "title": "sample-apps/01/zero-shot-pipeline-sentiment.ipynb at master - GitHub",
+      "url": "https://github.com/katanaml/sample-apps/blob/master/01/zero-shot-pipeline-sentiment.ipynb",
+      "snippet": "Sample apps for YouTube channel. Machine Learning, Web Development, Python. - sample-apps/01/zero-shot-pipeline-sentiment.ipynb at master · katanaml/sample-apps"
+    },
+    {
+      "title": "koriom koriom.com",
+      "url": "https://www.koriom.com/",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Wiktor-757hgbvj/Qwen2.5-Coder-1.5B-Instruct-Q4_K_M-GGUF",
+  "slug": "wiktor-757hgbvj-qwen2-5-coder-1-5b-instruct-q4_k_m-gguf",
+  "author": "Wiktor-757hgbvj",
+  "url": "https://huggingface.co/Wiktor-757hgbvj/Qwen2.5-Coder-1.5B-Instruct-Q4_K_M-GGUF",
+  "created_at": "2026-09-07T21:15:30.000Z",
+  "updated_at": "2026-09-07T21:15:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048576,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wholesale Blank Apparel, Hats & Fleece | S&S Canada",
+      "url": "https://en-ca.ssactivewear.com/",
+      "snippet": "Shop for the best clothing at S&S Activewear."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Login | Access Your Wholesale Account | S&S Activewear",
+      "url": "https://www.ssactivewear.com/myaccount/orders",
+      "snippet": "Sign in to view pricing, check inventory, place orders, and track shipments. Manage your S&S Activewear account in one place."
+    },
+    {
+      "title": "bartowski/Qwen2.5-Coder-1.5B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+      "snippet": "Instructions to use bartowski/Qwen2.5-Coder-1.5B-Instruct-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Welcome | Get Started Wholesale | S&S Activewear",
+      "url": "https://en-ca.ssactivewear.com/welcometossactivewear",
+      "snippet": "At S&S Canada, you’ll find industry-leading brands, deep inventory, and the tools to grow your business. This hub is your one-stop …"
+    }
+  ]
+}

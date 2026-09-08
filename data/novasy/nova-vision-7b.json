@@ -5,7 +5,7 @@
   "author": "Novasy",
   "url": "https://huggingface.co/Novasy/nova-vision-7b",
   "created_at": "2026-09-06T12:40:40.000Z",
-  "updated_at": "2026-09-07T02:04:01.000Z",
+  "updated_at": "2026-09-07T13:12:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": 8292166656,
   "parameters_human": "8.29B",
-  "storage_bytes": 21564080008,
-  "storage_human": "21.6 GB",
+  "storage_bytes": 51373539832,
+  "storage_human": "51.4 GB",
   "base_model": "unsloth/qwen2.5-vl-7b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

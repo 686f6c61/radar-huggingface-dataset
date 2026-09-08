@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/p3q-tsql",
+  "slug": "snapkitty-p3q-tsql",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/p3q-tsql",
+  "created_at": "2026-09-07T21:10:58.000Z",
+  "updated_at": "2026-09-07T21:10:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有哪些美到极致的神翻译？ - 知乎",
+      "url": "https://www.zhihu.com/question/59620870",
+      "snippet": "翻译：情已释 6. 这是拿破仑被流放到Elba岛时的回文句 Able was I ere I saw Elba， 被马红军老师译为: “落败孤岛孤败落” 把I翻译成 …"
+    },
+    {
+      "title": "Snapkitty (Snapkitty Collective) - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Follow 1 AI & ML interests Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D'Accord Irrevocable Trust · EIN 42-697643 Recent Activity SNAPKITTYWEST updateda dataset1 day ago Snapkitty/sovereign-xml-compiler"
+    },
+    {
+      "title": "steam已经下载的游戏怎么检测到？ - 知乎",
+      "url": "https://www.zhihu.com/question/282340416",
+      "snippet": "简单描述就是①点安装（让steam在库中创建文件夹，使其能够识别）②复制已下好的文件，到这个文件夹中③回steam点卸载（不要害 …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=snapkitty",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: snapkitty Clear all"
+    },
+    {
+      "title": "英文中有什么有趣的回文？ - 知乎",
+      "url": "https://www.zhihu.com/question/26947145",
+      "snippet": "Dec 6, 2014 · 关注 Able was I ere I saw Elba. 据说是拿破仑被流放到厄尔巴岛时说的一句话，ere是古英语，相当于before。 整句话的 …"
+    }
+  ]
+}

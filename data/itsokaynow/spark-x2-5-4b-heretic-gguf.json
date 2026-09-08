@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ItsOkayNow/Spark-X2.5-4B-Heretic-GGUF",
+  "slug": "itsokaynow-spark-x2-5-4b-heretic-gguf",
+  "author": "ItsOkayNow",
+  "url": "https://huggingface.co/ItsOkayNow/Spark-X2.5-4B-Heretic-GGUF",
+  "created_at": "2026-09-07T20:08:35.000Z",
+  "updated_at": "2026-09-07T21:33:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:soyaakinohara/Spark-X2.5-4B-Heretic",
+    "base_model:quantized:soyaakinohara/Spark-X2.5-4B-Heretic",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 31180122944,
+  "storage_human": "31.2 GB",
+  "base_model": "soyaakinohara/Spark-X2.5-4B-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MyEyeDr. | Eye Doctor near Madison, AL Brookridge Drive",
+      "url": "https://locations.myeyedr.com/al/madison/105-brookridge-dr",
+      "snippet": "Your eye doctor near Madison, AL Brookridge Drive, MyEyeDr. offers complete eye exams with glasses and contacts. Book an …"
+    },
+    {
+      "title": "soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf · Hugging Face",
+      "url": "https://huggingface.co/soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf",
+      "snippet": "AI assistance disclosure The local model preparation workflow, training, conversion, quantization, validation, and this model card were performed with assistance from Hermes Agent. The model was then reviewed and published by the repository owner. Responsible use This is an uncensored / refusal-removed model. It has no reliable built-in safety ..."
+    },
+    {
+      "title": "All MyEyeDr. Locations | Glasses, Contact Lenses, Eye Care",
+      "url": "https://locations.myeyedr.com/",
+      "snippet": "Browse all MyEyeDr. locations in United States for all of your eyecare needs. We offer frames, lenses, eyewear repairs, and contact …"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "MyEyeDr. | Eye Care + Eye Wear. Better Together.",
+      "url": "https://www.myeyedr.com/",
+      "snippet": "MyEyeDr. provides exceptional eye care for patients of all ages through our local community of doctors you can trust. Dry, irritated …"
+    }
+  ]
+}

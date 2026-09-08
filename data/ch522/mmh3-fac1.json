@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-Fac1",
+  "slug": "ch522-mmh3-fac1",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-Fac1",
+  "created_at": "2026-09-07T22:02:31.000Z",
+  "updated_at": "2026-09-07T22:02:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310175359,
+  "storage_human": "310 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Неделя начинается с воскресенья в нескольких странах мира — …",
+      "url": "https://rubilnik-bor.ru/a/nedelya-nachinaetsya-s-voskresenya-v-neskolkih-stranah-mira-izvechnaya-tradiciya-i-istoricheskie-prichiny",
+      "snippet": "Aug 2, 2024 · Во многих странах мира неделя начинается с понедельника, но существуют также страны, где традиция …"
+    },
+    {
+      "title": "CH522/MMh3-Fac1 · Hugging Face",
+      "url": "https://huggingface.co/CH522/MMh3-Fac1",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use CH522/MMh3-Fac1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use CH522/MMh3-Fac1 with Diffusers:"
+    },
+    {
+      "title": "когда начинается неделя в разных странах?",
+      "url": "https://calculatorian.com/ru/time-and-date/when-does-the-week-start",
+      "snippet": "На этой странице вы найдете обзор того, какой день недели знаменует начало недели в разных странах мира. Имейте в …"
+    },
+    {
+      "title": "CH522/FLUX-Enhance1 · Hugging Face",
+      "url": "https://huggingface.co/CH522/FLUX-Enhance1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Где неделя начинается с воскресенья: лучшие страны и города",
+      "url": "https://mksegment.ru/a/rabochaya-nedelya-nachinayushchayasya-s-voskresenya-gde-i-pochemu-tak",
+      "snippet": "Sep 20, 2021 · Однако существует несколько стран и городов, где неделя начинается с воскресенья. Такое распространение …"
+    }
+  ]
+}

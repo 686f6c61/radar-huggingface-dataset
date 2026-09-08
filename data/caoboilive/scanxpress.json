@@ -5,7 +5,7 @@
   "author": "caoboilive",
   "url": "https://huggingface.co/caoboilive/scanxpress",
   "created_at": "2026-09-02T04:45:43.000Z",
-  "updated_at": "2026-09-03T12:58:31.000Z",
+  "updated_at": "2026-09-07T15:25:23.000Z",
   "license": "scanxpress",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 14483750837,
-  "storage_human": "14.5 GB",
+  "storage_bytes": 20383852515,
+  "storage_human": "20.4 GB",
   "base_model": null,
   "formats": [
     "onnx"

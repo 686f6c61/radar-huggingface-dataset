@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Impliedhomeland/pythia-410m-wsd-24.6B-1.5e-4-c4-backbone",
+  "slug": "impliedhomeland-pythia-410m-wsd-24-6b-1-5e-4-c4-backbone",
+  "author": "Impliedhomeland",
+  "url": "https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-1.5e-4-c4-backbone",
+  "created_at": "2026-09-07T23:12:42.000Z",
+  "updated_at": "2026-09-07T23:25:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "pythia",
+    "midtraining",
+    "continual-pretraining",
+    "research-artifact",
+    "checkpoints",
+    "wsd",
+    "en",
+    "dataset:allenai/c4",
+    "dataset:bigcode/starcoderdata",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48644076604,
+  "storage_human": "48.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unlimited, Flexible & Group Phone Plans & Rates - Google Fi",
+      "url": "https://fi.google.com/about/plans",
+      "snippet": "Discover Google Fi Wireless phone plans that work best for you and your family including unlimited data, group, flexible, international …"
+    },
+    {
+      "title": "pythia-410m-wsd-24.6B-c4-backbone - Hugging Face",
+      "url": "https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-c4-backbone",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Save More with the Flexible Phone Plan - Google Fi Wireless",
+      "url": "https://fi.google.com/about/plans/flexible",
+      "snippet": "On the Flexible plan, you only pay by the GB for the data you use. It’s $20/month for unlimited calls and texts per line, plus $10/GB for …"
+    },
+    {
+      "title": "Impliedhomeland/pythia-410m-wsd-24.6B-predecay · Hugging Face",
+      "url": "https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-predecay",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Affordable Phone Plans Starting at $15/Mo. | Connect by T-Mobile",
+      "url": "https://prepaid.t-mobile.com/connect",
+      "snippet": "Get our best prices on prepaid phone service starting at just $15/Mo. with Connect by T-Mobile. No contracts. No credit checks. No …"
+    }
+  ]
+}

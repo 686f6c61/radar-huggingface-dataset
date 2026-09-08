@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/pi05-xarm-hang-blue-mug-rl2-K1-v0.0",
+  "slug": "jaycao99-pi05-xarm-hang-blue-mug-rl2-k1-v0-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/pi05-xarm-hang-blue-mug-rl2-K1-v0.0",
+  "created_at": "2026-09-07T21:24:32.000Z",
+  "updated_at": "2026-09-07T21:25:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9354066736,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何安装java环境和如何配置java环境-百度经验",
+      "url": "https://jingyan.baidu.com/article/0202781175839b1bcc9ce529.html",
+      "snippet": "Aug 30, 2016 · java如今是一门十分热门的可跨平台面向对象的高级编程语言，那么作为学习java的新手，欲先善其事，必先利其器， …"
+    },
+    {
+      "title": "JayCao99/pi05-xarm-hang-blue-mug-p16-v0.0 · Hugging Face",
+      "url": "https://huggingface.co/JayCao99/pi05-xarm-hang-blue-mug-p16-v0.0",
+      "snippet": "Pi-0.5 (xarm hang blue mug) LeRobot policy checkpoints uploaded by goal_gen/upload_hf_checkpoints.sh. Each subfolder contains the deployment-ready pretrained_model/ payload (model.safetensors + config.json + pre/postprocessor + train_config.json)."
+    },
+    {
+      "title": "《GTA5》的增强版和传承版有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/1911738278475961590",
+      "snippet": "从2025年3月开始，PC版的《GTA5》成了两个版本，一个传承版，一个增强版。 从硬件方面来说，这是一个历史原因。 《GTA5》 …"
+    },
+    {
+      "title": "JayCao99/xarm-hang-blue-mug-v0 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/JayCao99/xarm-hang-blue-mug-v0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "include, bin, lib 这些目录里的文件的到底是什么功能&#xff01;-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/30194859",
+      "snippet": "May 16, 2003 · 以下内容是CSDN社区关于include, bin, lib 这些目录里的文件的到底是什么功能&#xff01;相关内容，如果想了解更多关 …"
+    }
+  ]
+}

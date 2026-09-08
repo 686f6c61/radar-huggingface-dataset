@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "D33pStateTech/aznten-flux.1-dev-replicate",
+  "slug": "d33pstatetech-aznten-flux-1-dev-replicate",
+  "author": "D33pStateTech",
+  "url": "https://huggingface.co/D33pStateTech/aznten-flux.1-dev-replicate",
+  "created_at": "2026-09-07T19:30:38.000Z",
+  "updated_at": "2026-09-07T19:31:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172043122,
+  "storage_human": "172 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "black-forest-labs/FLUX.1-dev · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+      "snippet": "Cutting-edge output quality, second only to our state-of-the-art model FLUX.1 [pro]. Competitive prompt following, matching the performance of closed source alternatives . Trained using guidance distillation, making FLUX.1 [dev]more efficient. Open weights to drive new scientific research, and empower artists to develop innovative workflows."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=it-IT",
+      "snippet": "Usa ChatGPT per rispondere alle domande, scrivere, creare immagini, portare a termine il lavoro e scrivere codice, tutto in un unico …"
+    },
+    {
+      "title": "FLUX.1 Dev | FLUX Dev AI Image Generator by Black Forest Labs",
+      "url": "https://flux1ai.com/dev",
+      "snippet": "Dive into the world of AI-powered image creation with FLUX.1 Dev. An open-weight model offering exceptional quality and prompt adherence for developers and enthusiasts."
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-Fac4",
+  "slug": "ch522-mmh3-fac4",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-Fac4",
+  "created_at": "2026-09-07T22:53:20.000Z",
+  "updated_at": "2026-09-07T22:53:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155116935,
+  "storage_human": "155 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edificio Puebla - Av. 5 de Mayo 43, Centro Histórico de la… - Cybo",
+      "url": "https://es.cybo.com/MX-biz/edificio-puebla_1Y",
+      "snippet": "Teléfono 55213031 Dirección Av. 5 de Mayo 43, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06000 Ciudad de …"
+    },
+    {
+      "title": "CH522/WAN-f4c3 · Hugging Face",
+      "url": "https://huggingface.co/CH522/WAN-f4c3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Edificio Puebla - Av. 5 de Mayo 43, Centro Histórico de la… - Cybo",
+      "url": "https://www.cybo.com/MX-biz/edificio-puebla_1Y",
+      "snippet": "Edificio Puebla Cuauhtémoc, Mexico City postal code 06000. See Google profile, Hours and more for this business. 4.4 Cybo Score. …"
+    },
+    {
+      "title": "NicoLab28/ClipProj-MiniMax-H3 at main - Hugging Face",
+      "url": "https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cloud Room - Av. 5 de Mayo 43, Centro Histórico de la Cdad.… - Cybo",
+      "url": "https://es.cybo.com/MX-biz/cloud-room",
+      "snippet": "Cloud Room es un estudio de belleza que se especializa en dejar tu cabello perfecto. Con una amplia oferta de servicios y productos …"
+    }
+  ]
+}

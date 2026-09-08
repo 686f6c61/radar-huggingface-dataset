@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tree-AI-lab/mms-tts-bau-baseline",
+  "slug": "tree-ai-lab-mms-tts-bau-baseline",
+  "author": "Tree-AI-lab",
+  "url": "https://huggingface.co/Tree-AI-lab/mms-tts-bau-baseline",
+  "created_at": "2026-09-07T22:49:31.000Z",
+  "updated_at": "2026-09-07T22:49:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83013174,
+  "parameters_human": "83.0M",
+  "storage_bytes": 332154568,
+  "storage_human": "332 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tree - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tree",
+      "snippet": "Tree - Wikipedia. Jump to content. Main menu. move to sidebarhide. Navigation . Main page. Contents. Current events. Random …"
+    },
+    {
+      "title": "Tree-AI-lab/mms-tts-bau-baseline · Hugging Face",
+      "url": "https://huggingface.co/Tree-AI-lab/mms-tts-bau-baseline",
+      "snippet": "Instructions to use Tree-AI-lab/mms-tts-bau-baseline with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Tree | Definition, Examples, Parts, Structure, Uses, Importance ...",
+      "url": "https://www.britannica.com/plant/tree",
+      "snippet": "Aug 1, 2026 · What is a tree? A tree is a perennial woody plant that has a single self-supporting trunk containing woody tissues. In …"
+    },
+    {
+      "title": "facebook/mms-tts · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-tts",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tree - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Tree",
+      "snippet": "3.4Age of individual trees."
+    }
+  ]
+}

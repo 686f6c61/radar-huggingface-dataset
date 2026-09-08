@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "azamkhan7722445/LGM-full",
+  "slug": "azamkhan7722445-lgm-full",
+  "author": "azamkhan7722445",
+  "url": "https://huggingface.co/azamkhan7722445/LGM-full",
+  "created_at": "2026-09-07T21:18:58.000Z",
+  "updated_at": "2026-09-07T21:18:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-3d",
+    "arxiv:2402.05054",
+    "license:mit",
+    "diffusers:LGMFullPipeline",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 941672900,
+  "parameters_human": "941.7M",
+  "storage_bytes": 4823313534,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAUR Online Shop | Mode, Möbel & Technik",
+      "url": "https://www.baur.de/?msockid=1438498eaed16c9439a85e43af5e6d40",
+      "snippet": "Der BAUR Online-Shop bietet dir eine umfassende Auswahl an Produkten, die weit über das klassische BAUR Versandhaus …"
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "GLM-5.2 also introduces effort level control, enabling users to explicitly balance model capability against task execution speed and computational cost. As shown in the figure, GLM-5.2 delivers substantially stronger agentic coding performance than GLM-5.1 at comparable token budgets, with its capability roughly positioned between Claude Opus 4.7 and Claude Opus 4.8 under similar token ..."
+    },
+    {
+      "title": "Damenmode Trends & Styles Herbst 2026 - BAUR",
+      "url": "https://www.baur.de/damenmode/?msockid=1438498eaed16c9439a85e43af5e6d40",
+      "snippet": "Ill Bis zu 10% Rabatt auf UVP Mode für Damen 💛 Neueste Trends für Damenmode für den Herbst 2026 ☀ Neukunden-Rabatt + Gratis …"
+    },
+    {
+      "title": "Einai-AI/LGM · Hugging Face",
+      "url": "https://huggingface.co/Einai-AI/LGM",
+      "snippet": "LGM Full This custom pipeline encapsulates the full LGM pipeline, including multi-view diffusion. It is provided as a resource for the ML for 3D Course. Original LGM paper: LGM: Large Multi-View Gaussian Model for High-Resolution 3D Content Creation."
+    },
+    {
+      "title": "Möbel Online-Shop Kauf auf Rechnung & Raten | BAUR",
+      "url": "https://www.baur.de/moebel/?msockid=1438498eaed16c9439a85e43af5e6d40",
+      "snippet": "Ill Bis zu 40% Rabatt auf UVP Möbel online kaufen Blickfänge für deine Einrichtung stilvolle & persönliche Atmosphäre Große …"
+    }
+  ]
+}

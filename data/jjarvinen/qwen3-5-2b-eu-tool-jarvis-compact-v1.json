@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "JJarvinen/Qwen3.5-2B-EU-Tool-JARVIS-Compact-v1",
+  "slug": "jjarvinen-qwen3-5-2b-eu-tool-jarvis-compact-v1",
+  "author": "JJarvinen",
+  "url": "https://huggingface.co/JJarvinen/Qwen3.5-2B-EU-Tool-JARVIS-Compact-v1",
+  "created_at": "2026-09-07T22:50:05.000Z",
+  "updated_at": "2026-09-07T22:52:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:JJarvinen/Qwen3.5-2B-EU-Tool-JARVIS-Native-v1",
+    "base_model:finetune:JJarvinen/Qwen3.5-2B-EU-Tool-JARVIS-Native-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2390384448,
+  "parameters_human": "2.39B",
+  "storage_bytes": 9581568765,
+  "storage_human": "9.6 GB",
+  "base_model": "JJarvinen/Qwen3.5-2B-EU-Tool-JARVIS-Native-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Программа передач ТВ — Яндекс.Телепрограмма",
+      "url": "https://tv.yandex.ru/",
+      "snippet": "Полная телепрограмма на сегодня, завтра, ближайшую неделю. Не пропустите время начала любимых фильмов и передач, …"
+    },
+    {
+      "title": "JJarvinen/Qwen3.5-2B-EU-Tool-JARVIS-Compact-v1 · Hugging Face",
+      "url": "https://huggingface.co/JJarvinen/Qwen3.5-2B-EU-Tool-JARVIS-Compact-v1",
+      "snippet": "Instructions to use JJarvinen/Qwen3.5-2B-EU-Tool-JARVIS-Compact-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Словарь и онлайн перевод на английский, русский, немецкий, …",
+      "url": "https://translate.yandex.ru/",
+      "snippet": "Перевод с английского, немецкого, французского, испанского, польского, турецкого и других языков на русский и обратно. …"
+    },
+    {
+      "title": "qwen3.5:2b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:2b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "лингвистика - И снова о букве Ё - Русский язык",
+      "url": "https://rus.stackexchange.com/questions/27943/%d0%98-%d1%81%d0%bd%d0%be%d0%b2%d0%b0-%d0%be-%d0%b1%d1%83%d0%ba%d0%b2%d0%b5-%d0%81",
+      "snippet": "Dec 23, 2013 · 3) Какая трудность - писать букву \"ё\" там, где она должна быть написана? Расход печатной краски? Почему …"
+    }
+  ]
+}

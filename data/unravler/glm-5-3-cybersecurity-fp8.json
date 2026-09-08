@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "Unravler/GLM-5.3-CYBERSECURITY-FP8",
+  "slug": "unravler-glm-5-3-cybersecurity-fp8",
+  "author": "Unravler",
+  "url": "https://huggingface.co/Unravler/GLM-5.3-CYBERSECURITY-FP8",
+  "created_at": "2026-09-07T22:04:51.000Z",
+  "updated_at": "2026-09-07T22:04:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "crack",
+    "refusal-removed",
+    "domain-specific",
+    "cybersecurity",
+    "offensive-security",
+    "red-team",
+    "pentest",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Kleinanzeigen",
+      "url": "https://www.ebay-kleinanzeigen.de/s-boote-bootszubehoer/motorboote/spandau/c211l3430+boote_bootszubehoer.art_s:motorboote",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "unravler-media/GLM-5.3-CYBERSECURITY-FP8 · Hugging Face",
+      "url": "https://huggingface.co/unravler-media/GLM-5.3-CYBERSECURITY-FP8",
+      "snippet": "xet Community Copy to bucket new GLM 5.3 CRACK — Cybersecurity FP8 READ THIS FIRST — what this is, and what it isn't Base model Serve (TP8 on 8× H200)"
+    },
+    {
+      "title": "mindflar909/GLM-5.3-CYBERSECURITY-FP8 · Hugging Face",
+      "url": "https://huggingface.co/mindflar909/GLM-5.3-CYBERSECURITY-FP8",
+      "snippet": "What this is NOT for Citation GLM 5.3 CRACK — Cybersecurity FP8 Cybersecurity-focused CRACK · native FP8 speed on Hopper a CRACKrelease by dealignai· Twitter @dealignai READ THIS FIRST — what this is, and what it isn't This is a CYBERSECURITY-DOMAIN CRACK of GLM-5.3-FP8 — not a general-purpose uncensor."
+    },
+    {
+      "title": "GLM-5.3-CYBERSECURITY-FP8: Text-to-Text model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/glm-5.3-cybersecurity-fp8-dealignai",
+      "snippet": "It is a cybersecurity-focused CRACK release from dealignai, based on JANGQ-AI/GLM-5.3-FP8, an FP8 quantization of zai-org/GLM-5.3. The base has 753B total parameters, a glm_moe_dsaarchitecture, 78 layers, and text-only input and output. The model supports a 131,072-token maximum context in the documented deployment configuration."
+    },
+    {
+      "title": "GLM 5.3 CYBERSECURITY FP8 by dealignai - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/dealignai%2FGLM-5.3-CYBERSECURITY-FP8,5FAoiCM3UW505NlU50d9Vr",
+      "snippet": "GLM 5.3 CYBERSECURITY FP8 is an open-source 753.3b LLM by dealignai. VRAM 112.6GB, 1024K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Johnsnowman1312/myastra",
+  "slug": "johnsnowman1312-myastra",
+  "author": "Johnsnowman1312",
+  "url": "https://huggingface.co/Johnsnowman1312/myastra",
+  "created_at": "2026-09-07T22:04:23.000Z",
+  "updated_at": "2026-09-07T22:04:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "交通アクセス | 【公式】白骨温泉 | 長野県 信州松本の温泉地 ...",
+      "url": "https://shirahone.org/access",
+      "snippet": "静寂と四季の彩り、湯に浸り. 人は本来の姿に還る."
+    },
+    {
+      "title": "Project Astra — Google DeepMind",
+      "url": "https://deepmind.google/models/project-astra/",
+      "snippet": "Project Astra is a research prototype exploring breakthrough capabilities for Google products — on the way to building a universal AI assistant. Its current capabilities include spatial processing, screensharing, and tool use."
+    },
+    {
+      "title": "松本から白骨温泉への移動手段ごとのルート検索 - NAVITIME",
+      "url": "https://www.navitime.co.jp/route/comparison?orvName=%E6%9D%BE%E6%9C%AC&dnvName=%E7%99%BD%E9%AA%A8%E6%B8%A9%E6%B3%89&orvNodeCode=00003876&dnvNodeCode=00287401",
+      "snippet": "松本から白骨温泉への移動手段ごとのルート検索です。タクシー・車・電車・新幹線・高速バス・飛行機など、移動手段（交通手 …"
+    },
+    {
+      "title": "Astra AI - Your 24/7 AI Tutor For All Subjects",
+      "url": "https://app.astra-ai.co/en-US/login",
+      "snippet": "Get instant help with any subject from your AI tutor. Trusted by students all around the world here today"
+    },
+    {
+      "title": "白骨温泉 | アクセス信州 アルピコ交通",
+      "url": "https://www.alpico.co.jp/traffic/tourism/touristspot/shirahone/",
+      "snippet": "大阪・京都－松本（松本乗継） 長野－松本（松本乗継） ※白骨温泉までは高速バスの直行便はございません。 松本で下記の鉄道路 …"
+    }
+  ]
+}

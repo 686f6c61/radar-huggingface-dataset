@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "medarc/spectra-virchow-lora",
+  "slug": "medarc-spectra-virchow-lora",
+  "author": "medarc",
+  "url": "https://huggingface.co/medarc/spectra-virchow-lora",
+  "created_at": "2026-09-07T20:22:37.000Z",
+  "updated_at": "2026-09-07T20:22:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "pathology",
+    "histopathology",
+    "feature-extraction",
+    "computational-pathology",
+    "base_model:paige-ai/Virchow",
+    "base_model:adapter:paige-ai/Virchow",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251848944,
+  "storage_human": "252 MB",
+  "base_model": "paige-ai/Virchow",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "302 Moved",
+      "url": "https://support.google.com/",
+      "snippet": "302 Moved The document has moved here."
+    },
+    {
+      "title": "MedARC: Adaptive multi-agent refinement and ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1386505625003533",
+      "snippet": "This formulation allows MedARC to model a dynamic, multi-agent reasoning process in which agents not only generate and justify answers, but also iteratively adapt based on peer input. The details of each part are outlined in the following sections."
+    },
+    {
+      "title": "Google als Standardsuchmaschine festlegen - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/464?hl=de",
+      "snippet": "Damit Sie bei der Suche immer Ergebnisse von Google erhalten, müssen Sie Google als Standardsuchmaschine festlegen. Google …"
+    },
+    {
+      "title": "MedARC: Adaptive multi-agent refinement and ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1386505625003533",
+      "snippet": "The MedARC method represents a promising advancement for improving the reliability of medical QA systems. Experimental results demonstrate that its multi-agent framework significantly enhances model performance in various medical QA tasks, validating its effectiveness in mitigating hallucinations and refining reasoning chains through structured ..."
+    },
+    {
+      "title": "Google-Hilfe",
+      "url": "https://support.google.com/?hl=de",
+      "snippet": "Falls Sie nicht auf ein Google-Produkt zugreifen können, tritt unter Umständen ein vorübergehendes Problem auf. Informationen zu …"
+    }
+  ]
+}

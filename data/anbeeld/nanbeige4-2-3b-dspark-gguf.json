@@ -33,7 +33,7 @@
     "base_model:quantized:Nanbeige/Nanbeige4.2-3B-DSpark",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 847946241,

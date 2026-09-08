@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "AlfredJames/jobbert-zh-1m",
+  "slug": "alfredjames-jobbert-zh-1m",
+  "author": "AlfredJames",
+  "url": "https://huggingface.co/AlfredJames/jobbert-zh-1m",
+  "created_at": "2026-09-07T23:35:17.000Z",
+  "updated_at": "2026-09-07T23:35:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "jobbert-zh",
+    "jobbert-zh-1m",
+    "chinese-skillspan",
+    "token-classification",
+    "crf",
+    "job-advertisements",
+    "lskt",
+    "zh",
+    "base_model:hfl/chinese-roberta-wwm-ext",
+    "base_model:finetune:hfl/chinese-roberta-wwm-ext",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 118516616,
+  "parameters_human": "118.5M",
+  "storage_bytes": 883259210,
+  "storage_human": "883 MB",
+  "base_model": "hfl/chinese-roberta-wwm-ext",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xnxx.Com, Xnxx, Xxnxx, Xnxx Porn, Xnxx Tube, Xnxxx Video, Xnxx …",
+      "url": "https://xnxx-xxx.net/hits",
+      "snippet": "Xnxx.Com, Xnxx, Xxnxx, Xnxx Porn, Xnxx Tube, Xnxxx Video, Xnxx Porno 2018"
+    },
+    {
+      "title": "AlfredJames/jobbert-zh · Hugging Face",
+      "url": "https://huggingface.co/AlfredJames/jobbert-zh",
+      "snippet": "Instructions to use AlfredJames/jobbert-zh with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Kommission benennt Plattform für Inhalte für Erwachsene XNXX als …",
+      "url": "https://digital-strategy.ec.europa.eu/de/news/commission-designates-adult-content-platform-xnxx-very-large-online-platform-under-digital-services",
+      "snippet": "Jul 10, 2024 · XNXX ist eine Plattform für Inhalte für Erwachsene mit durchschnittlich mehr als 45 Millionen monatlichen Nutzern in …"
+    },
+    {
+      "title": "AlfredJames/jobbert-zh at main - Hugging Face",
+      "url": "https://huggingface.co/AlfredJames/jobbert-zh/tree/main",
+      "snippet": "Instructions to use AlfredJames/jobbert-zh with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Porn platform XNXX to fall under stringent EU platform rules",
+      "url": "https://www.euronews.com/next/2024/07/10/porn-platform-xnxx-to-fall-under-stringent-eu-platform-rules",
+      "snippet": "Jul 10, 2024 · XNXX, which has its EU headquarters in Czechia, now has four months, until November, to comply with the DSA."
+    }
+  ]
+}

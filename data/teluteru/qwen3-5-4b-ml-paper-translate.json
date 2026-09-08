@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Teluteru/qwen3.5-4b-ml-paper-translate",
+  "slug": "teluteru-qwen3-5-4b-ml-paper-translate",
+  "author": "Teluteru",
+  "url": "https://huggingface.co/Teluteru/qwen3.5-4b-ml-paper-translate",
+  "created_at": "2026-09-07T23:31:00.000Z",
+  "updated_at": "2026-09-07T23:39:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "translation",
+    "english-to-japanese",
+    "deep-learning",
+    "robotics",
+    "vision-language-action",
+    "mlx",
+    "en",
+    "ja",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609229,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Technical English to Japanese Translation",
+      "dataset": "Research-grounded synthetic technical translation test set",
+      "metric": "chrF++",
+      "value": 66.47080563825857
+    }
+  ],
+  "sources": [
+    {
+      "title": "1XBET – Betting company ᐉ Online sports betting 1xBet",
+      "url": "https://1xbet.com/en",
+      "snippet": "1 day ago · 1xBet Betting Company – Online Sports Betting 🥇1XBET BETTING COMPANY — WHAT WOULD YOU LIKE TO KNOW? …"
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Compañía de Apuestas ⇒ Apuestas deportivas Online - 1XBET",
+      "url": "https://1xbet.com/es",
+      "snippet": "Compañía de apuestas 1xBet - Apuestas deportivas online 🥇COMPAÑÍA DE APUESTAS 1XBET — ¿QUÉ LE GUSTARÍA SABER? …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apuestas Deportivas en Chile - 1xBet",
+      "url": "https://chile.1xbet.com/es",
+      "snippet": "En 1xBet Chile, nos enorgullecemos de ofrecer una experiencia de apuesta excepcional, destacándonos como líderes en el mercado …"
+    }
+  ]
+}

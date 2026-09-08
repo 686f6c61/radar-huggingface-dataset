@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Qwen3.8-27B-Fable-Distill-NVFP4",
+  "slug": "vwdubb-qwen3-8-27b-fable-distill-nvfp4",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Qwen3.8-27B-Fable-Distill-NVFP4",
+  "created_at": "2026-09-07T22:25:47.000Z",
+  "updated_at": "2026-09-07T22:27:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "dataset:armand0e/claude-fable-5-claude-code",
+    "dataset:armand0e/Fable-5-Chat",
+    "base_model:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "base_model:quantized:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30983452311,
+  "storage_human": "31.0 GB",
+  "base_model": "TeichAI/Qwen3.8-27B-Fable-Distill",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "vwdubb/Qwen3.8-27B-Fable-Distill-FP8 · Hugging Face",
+      "url": "https://huggingface.co/vwdubb/Qwen3.8-27B-Fable-Distill-FP8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft account | Meld u vandaag nog aan of maak uw account – …",
+      "url": "https://account.microsoft.com/account/Account?mkt=nl-NL",
+      "snippet": "Meld u aan met uw Microsoft-account. Eén account. Eén plek om alles te beheren. Welkom bij uw accountdashboard."
+    },
+    {
+      "title": "vwdubb/Qwen3.8-27B-Fable-Distill-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/vwdubb/Qwen3.8-27B-Fable-Distill-FP8/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft Family Safety",
+      "url": "https://account.microsoft.com/family/windows/coldstart",
+      "snippet": "Manage your family members and settings with Microsoft Family Safety."
+    }
+  ]
+}

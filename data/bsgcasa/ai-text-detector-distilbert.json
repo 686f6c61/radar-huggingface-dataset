@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bsgcasa/ai-text-detector-distilbert",
+  "slug": "bsgcasa-ai-text-detector-distilbert",
+  "author": "bsgcasa",
+  "url": "https://huggingface.co/bsgcasa/ai-text-detector-distilbert",
+  "created_at": "2026-09-07T22:37:12.000Z",
+  "updated_at": "2026-09-07T23:23:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-classification",
+    "ai-text-detection",
+    "distilbert",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67395126,
+  "storage_human": "67 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chase Bank Locations in New York",
+      "url": "https://chase.banklocationmaps.com/en/usa/new-york/new-york-us",
+      "snippet": "Find local Chase Bank branch and ATM locations in New York, United States with addresses, opening hours, phone numbers, …"
+    },
+    {
+      "title": "bsgcasa/ai-text-detector-distilbert · Hugging Face",
+      "url": "https://huggingface.co/bsgcasa/ai-text-detector-distilbert",
+      "snippet": "A fine-tuned DistilBERT model that classifies text as human-writtenor ChatGPT-generated. Exported to ONNX and quantized to INT8 for fast, lightweight CPU inference."
+    },
+    {
+      "title": "Chase Bank - Corporate Headquarters - New York, NY 10017",
+      "url": "https://www.yellowpages.com/new-york-ny/mip/chase-bank-corporate-headquarters-485637461",
+      "snippet": "Get reviews, hours, directions, coupons and more for Chase Bank - Corporate Headquarters. Search for other Financial Services on …"
+    },
+    {
+      "title": "Neural-Hacker/distilbert_ai_text_detector · Hugging Face",
+      "url": "https://huggingface.co/Neural-Hacker/distilbert_ai_text_detector",
+      "snippet": "This is a binary text classification model built on top of distilbert-base-uncased. It has been fine-tuned to distinguish between AI-generated and human-written text."
+    },
+    {
+      "title": "Chase Bank - New York, NY (148 Branch Locations)",
+      "url": "https://www.branchspot.com/ny/new-york/chase-bank/",
+      "snippet": "148 Chase Bank Branch locations in New York, NY. Find a Location near you. View hours, phone numbers, reviews, routing …"
+    }
+  ]
+}

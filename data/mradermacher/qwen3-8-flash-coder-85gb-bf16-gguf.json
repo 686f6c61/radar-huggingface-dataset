@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3.8-flash-coder-85gb-bf16-GGUF",
+  "slug": "mradermacher-qwen3-8-flash-coder-85gb-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3.8-flash-coder-85gb-bf16-GGUF",
+  "created_at": "2026-09-07T21:40:26.000Z",
+  "updated_at": "2026-09-08T02:10:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "moe",
+    "qwen",
+    "code",
+    "coding-agent",
+    "moe-slice",
+    "dora",
+    "text-generation-inference",
+    "vllm",
+    "en",
+    "vi",
+    "zh",
+    "base_model:Jab1718/qwen3.8-flash-coder-85gb-bf16",
+    "base_model:quantized:Jab1718/qwen3.8-flash-coder-85gb-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42620341120,
+  "parameters_human": "42.62B",
+  "storage_bytes": 169929598336,
+  "storage_human": "169.9 GB",
+  "base_model": "Jab1718/qwen3.8-flash-coder-85gb-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/?lang=zh-Hant",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "young forerunner什么意思，和young pioneers含义有什么区别吗?",
+      "url": "https://www.zhihu.com/question/365849870",
+      "snippet": "还有一些词也表示先锋、开路人的意思。 vanguard表示军队的前锋，进而派生出表示某个领域的前沿。 originator表示创始人、发起 …"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF/tree/main",
+      "snippet": "Instructions to use mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "如何看待Riot Vanguard 进程锁定 V社新作《Deadlock》文件导致其无 …",
+      "url": "https://www.zhihu.com/question/2036175988502045133",
+      "snippet": "如何看待Riot Vanguard 进程锁定 V社新作《Deadlock》文件导致其无法运行及修复？ 最近有玩家反馈，在运行 V 社测试新作 …"
+    }
+  ]
+}

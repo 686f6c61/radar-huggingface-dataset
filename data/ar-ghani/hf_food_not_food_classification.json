@@ -5,7 +5,7 @@
   "author": "ar-ghani",
   "url": "https://huggingface.co/ar-ghani/hf_food_not_food_classification",
   "created_at": "2026-09-05T13:13:14.000Z",
-  "updated_at": "2026-09-05T13:13:26.000Z",
+  "updated_at": "2026-09-07T07:28:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 267837761,
-  "storage_human": "268 MB",
+  "storage_bytes": 1071340642,
+  "storage_human": "1.1 GB",
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "PinkPixel/lucida-onnx",
+  "slug": "pinkpixel-lucida-onnx",
+  "author": "PinkPixel",
+  "url": "https://huggingface.co/PinkPixel/lucida-onnx",
+  "created_at": "2026-09-07T23:07:53.000Z",
+  "updated_at": "2026-09-07T23:08:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "background-removal",
+    "image-matting",
+    "image-segmentation",
+    "onnxruntime",
+    "birefnet",
+    "lucida",
+    "soft-alpha",
+    "transparency",
+    "rgba",
+    "base_model:egeorcun/lucida",
+    "base_model:quantized:egeorcun/lucida",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 932148927,
+  "storage_human": "932 MB",
+  "base_model": "egeorcun/lucida",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "نظام الادارة التعليمية | وزارة التعليم",
+      "url": "https://noor.moe.gov.sa/",
+      "snippet": "اقرأ المزيد نور في أرقام 400+ خدمة نظام رئيسية 600K+"
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and ..."
+    },
+    {
+      "title": "Object moved - نظام نور",
+      "url": "https://noor.moe.gov.sa/Noor/iam/login.aspx",
+      "snippet": "نظام متكامل للتعلم يربط جميع المؤسسات التعليمية التابعة لوزارة التعليم من خلال قاعدة بيانات متكاملة."
+    },
+    {
+      "title": "GitHub - LowIQCoder/lucida",
+      "url": "https://github.com/LowIQCoder/lucida",
+      "snippet": "Project Structure frontend/ - simple browser demo and ONNX inference code. backend/ - FastAPI API server for sessions, logs, and model checkpoint serving; it does not run ML inference. ml/ - CNN notebook, ONNX model file."
+    },
+    {
+      "title": "EduWave - تفعيل كلمة المرور :: نظام نور",
+      "url": "https://noor.moe.gov.sa/Noor/ActivationPassword.aspx?q",
+      "snippet": "EduWave® v3.0 (EMIS Edition) © 2001-2026 جميع الحقوق محفوظة المجموعة المتكاملة للتكنولوجيا"
+    }
+  ]
+}

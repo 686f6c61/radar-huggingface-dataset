@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-distilbert-aegis-v1-module",
+  "slug": "hooshaai-svd-linear-attention-distilbert-aegis-v1-module",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v1-module",
+  "created_at": "2026-09-07T21:09:48.000Z",
+  "updated_at": "2026-09-07T22:56:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "distilbert",
+    "aegis_v1_module",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4748282,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:50.519Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sample Application - jurisprudencia.ramajudicial.gov.co",
+      "url": "https://jurisprudencia.ramajudicial.gov.co/docs/appdev/sample/",
+      "snippet": "The example app has been packaged as a war file and can be downloaded here (Note: make sure your browser doesn't change file …"
+    },
+    {
+      "title": "Substack - Hoosha AI",
+      "url": "https://hooshaai.substack.com/",
+      "snippet": "Aug 28 • 🧠 Hoosha AI 1 A3 Compressor: Activation‑Aware Factorized SVD Compression with Fisher Weighting for Attention Module Low‑rank compression tailored for attention layers in transformer models Aug 28 • 🧠 Hoosha AI 1 Beyond Tokenizers: How “Latent Causal Attention” Lets AI Models Write Multiple Bytes at Once"
+    },
+    {
+      "title": "SEXTA EDICIÓN DE LA REVISTA -ADMINISTRACIÓN EDICIÓN ESPECIAL …",
+      "url": "https://www.funcionpublica.gov.co/documents/d/guest/revista_bioadministracion_convocatoria_no6_05_2026",
+      "snippet": "texto los autores que se parafraseen o aquellos de los que se tomen citas textuales. Las tablas deben incluir núm. ro de tabla en …"
+    },
+    {
+      "title": "A3 Compressor: Activation‑Aware Factorized SVD Compression with Fisher ...",
+      "url": "https://hooshaai.substack.com/p/a3-compressor-activationaware-factorized",
+      "snippet": "Traditional low‑rank factorization (SVD) works well on dense layers but often fails when applied to attention projections because it ignores the activation statistics of the input. The A3 Compressor (Activation‑Aware Factorized SVD Compression with Fisher Weighting and LayerNorm Recalibration) overcomes this limitation."
+    },
+    {
+      "title": "Concepto 491791 de 2024 Departamento Administrativo de la Función ...",
+      "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=267043",
+      "snippet": "Si el empleado tiene una remuneración mensual por concepto de asignación básica y gastos de representación inferior a dos …"
+    }
+  ]
+}

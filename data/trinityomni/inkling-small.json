@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "trinityomni/Inkling-Small",
+  "slug": "trinityomni-inkling-small",
+  "author": "trinityomni",
+  "url": "https://huggingface.co/trinityomni/Inkling-Small",
+  "created_at": "2026-09-07T21:39:23.000Z",
+  "updated_at": "2026-09-07T21:39:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 265956439090,
+  "parameters_human": "265.96B",
+  "storage_bytes": 531944513947,
+  "storage_human": "531.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "Inkling-Small Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling-small/",
+      "snippet": "Inkling-Small is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented ..."
+    },
+    {
+      "title": "outlook会议邀请如何修改时间-百度经验",
+      "url": "https://jingyan.baidu.com/article/1876c852a779bfc80b13769e.html",
+      "snippet": "May 7, 2023 · outlook会议邀请如何修改时间,已经发送的会议邀请，突然领导有事只能调整会议时间了，如果重新发送一次会议邮件就 …"
+    },
+    {
+      "title": "Introducing Inkling-Small - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/news/inkling-small/",
+      "snippet": "Compared to Inkling, Inkling-Small achieves comparable performance with much less compute. Across agentic tool use (Terminal-Bench 2.1), reasoning (HLE text-only, no tools), and instruction following (IFBench) benchmarks, Inkling-Small is more efficient than Inkling and competitive with other models in its weight class. Furthermore, its variable thinking effortlets users easily adapt it to ..."
+    },
+    {
+      "title": "比较好用的电子邮箱，大家有哪些推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/299339545",
+      "snippet": "此时，我个人强烈推荐微软的Outlook。 因为外国网站有比较大的概率会拒绝国内的邮箱地址注册，outlook作为老牌国际电子邮件提供 …"
+    }
+  ]
+}

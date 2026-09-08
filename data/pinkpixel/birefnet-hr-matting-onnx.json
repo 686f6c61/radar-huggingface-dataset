@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "PinkPixel/birefnet-hr-matting-onnx",
+  "slug": "pinkpixel-birefnet-hr-matting-onnx",
+  "author": "PinkPixel",
+  "url": "https://huggingface.co/PinkPixel/birefnet-hr-matting-onnx",
+  "created_at": "2026-09-07T23:13:33.000Z",
+  "updated_at": "2026-09-07T23:14:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "background-removal",
+    "image-matting",
+    "image-segmentation",
+    "onnxruntime",
+    "birefnet",
+    "high-resolution",
+    "soft-alpha",
+    "transparency",
+    "rgba",
+    "arxiv:2401.03407",
+    "base_model:ZhengPeng7/BiRefNet_HR-matting",
+    "base_model:quantized:ZhengPeng7/BiRefNet_HR-matting",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 932150975,
+  "storage_human": "932 MB",
+  "base_model": "ZhengPeng7/BiRefNet_HR-matting",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "8 طرق سريعة لفتح إدارة الكمبيوتر على Windows 11 | أحلى هاوم",
+      "url": "https://www.a7la-home.com/how-to-open-computer-management-on-windows-11/",
+      "snippet": "8 طرق سريعة لفتح إدارة الكمبيوتر على Windows 11 . إدارة الكمبيوتر هي أداة مساعدة لإدارة النظام توفر الوصول إلى العديد من الأدوات الإدارية لإدارة موارد جهاز الكمبيوتر الذي يعمل بنظام …"
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet_HR-matting · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet_HR-matting",
+      "snippet": "Instructions to use ZhengPeng7/BiRefNet_HR-matting with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "كيفية فتح إدارة الكمبيوتر في Windows - 101 Help",
+      "url": "https://ar.101-help.com/10-trq-lfth-d-dr-lkmbywtr-fy-windows-jmy-lsdrt-4ffc4c62fb/",
+      "snippet": "يمكنك استخدامها للتحقق من أقسام التخزين، وإدارة المستخدمين والمجموعات المحلية، ومراجعة سجلات الأحداث، وتكوين الخدمات، وفحص الأجهزة، واستكشاف مشاكل النظام وإصلاحها. وهي متوفرة في …"
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet_HR · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet_HR",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "فتح إدارة الأجهزة - دعم Microsoft",
+      "url": "https://support.microsoft.com/ar-sa/windows/%D9%81%D8%AA%D8%AD-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D9%87%D8%B2%D8%A9-a7f2db46-faaf-24f0-8b7b-9e4a6032fc8c",
+      "snippet": "الخروج من الخيارات إضافية؟ اكتشافالمجتمع استكشف مزايا الاشتراك، واستعرض الدورات التدريبية، وتعرف على كيفية تأمين جهازك، والمزيد. ميزات اشتراك Microsoft 365 تدريب Microsoft …"
+    }
+  ]
+}

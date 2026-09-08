@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "YNSScarSaiyan/simi-weights",
+  "slug": "ynsscarsaiyan-simi-weights",
+  "author": "YNSScarSaiyan",
+  "url": "https://huggingface.co/YNSScarSaiyan/simi-weights",
+  "created_at": "2026-09-06T20:07:41.000Z",
+  "updated_at": "2026-09-08T02:07:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "flax",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "flax",
+    "simi",
+    "weights-only",
+    "no-source",
+    "jax",
+    "orbax",
+    "bfloat16",
+    "llama-style",
+    "gqa",
+    "swiglu",
+    "agent",
+    "tool-use",
+    "amd",
+    "mi300x",
+    "text-generation",
+    "en",
+    "base_model:YNSScarSaiyan/simi",
+    "base_model:finetune:YNSScarSaiyan/simi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 383,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159478426192,
+  "storage_human": "159.5 GB",
+  "base_model": "YNSScarSaiyan/simi",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "International Housesitter Visa Requirements: Top Guide to …",
+      "url": "https://housesitmatch.com/blog/international-housesitter-visa-requirements/",
+      "snippet": "No country issues a visa category for house sitting, pet sitting, or home care in exchange for accommodation. House sitting is a …"
+    },
+    {
+      "title": "YNSScarSaiyan/simi-weights · Hugging Face",
+      "url": "https://huggingface.co/YNSScarSaiyan/simi-weights",
+      "snippet": "Public weights-only repository. No architecture or training source is stored here. SImi-2B is a custom Llama-style causal language model trained in JAX/Flax. This repository is the public parameter mirrorfor the student. It does not contain the private recovery snapshot, optimizer state, or source archive from YNSScarSaiyan/simi, and it is nota drop-in Transformers checkpoint."
+    },
+    {
+      "title": "Do You Need a Visa for House Sitting? | Guide",
+      "url": "https://housesitmatch.com/house-sitting-visa",
+      "snippet": "Wondering if you need a visa to house sit abroad? Read our guide to understand visa requirements for house sitting in different …"
+    },
+    {
+      "title": "YNSScarSaiyan (Dakuwon Moody) - Hugging Face",
+      "url": "https://huggingface.co/YNSScarSaiyan/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 3 hours ago ... published a dataset about 4 hours ago"
+    },
+    {
+      "title": "International House Sitting: Get Started as an International Sitter",
+      "url": "https://housesittingmagazine.com/get-started-as-an-international-housesitter/",
+      "snippet": "Dec 30, 2025 · Discover how to become an international house sitter. From visas and travel logistics to off-grid homes and pet care, …"
+    }
+  ]
+}

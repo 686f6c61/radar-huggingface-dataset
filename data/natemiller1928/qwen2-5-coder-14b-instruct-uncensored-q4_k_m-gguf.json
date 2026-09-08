@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "natemiller1928/Qwen2.5-Coder-14B-Instruct-Uncensored-Q4_K_M-GGUF",
+  "slug": "natemiller1928-qwen2-5-coder-14b-instruct-uncensored-q4_k_m-gguf",
+  "author": "natemiller1928",
+  "url": "https://huggingface.co/natemiller1928/Qwen2.5-Coder-14B-Instruct-Uncensored-Q4_K_M-GGUF",
+  "created_at": "2026-09-07T23:20:40.000Z",
+  "updated_at": "2026-09-07T23:21:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:BlossomsAI/Qwen2.5-Coder-14B-Instruct-Uncensored",
+    "base_model:quantized:BlossomsAI/Qwen2.5-Coder-14B-Instruct-Uncensored",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8988110688,
+  "storage_human": "9.0 GB",
+  "base_model": "BlossomsAI/Qwen2.5-Coder-14B-Instruct-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "METEO ROUBAIX par Météo-France - Prévisions Météo gratuites pour ...",
+      "url": "https://meteofrance.com/previsions-meteo-france/roubaix/59100",
+      "snippet": "METEO FRANCE - Retrouvez les prévisions METEO ROUBAIX de Météo-France pour aujourd’hui, demain et jusqu’à 15 jours, ainsi …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meteo Roubaix (59100) - Nord : Prévisions Meteo GRATUITE à 15 jours ...",
+      "url": "https://www.lachainemeteo.com/meteo-france/ville-11818/previsions-meteo-roubaix-aujourdhui",
+      "snippet": "Meteo Roubaix (59100) - Nord ☼ Longitude : 3.17 Latitude : 50.69 Altitude : 33m ☀ C’est une région née de la fusion du Nord-Pas-de …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    },
+    {
+      "title": "Météo Roubaix (59100), Prévisions Météo Heure par Heure 15 Jours ...",
+      "url": "https://www.meteo-villes.com/previsions-meteo-roubaix-59100",
+      "snippet": "1 day ago · Météo Roubaix - 59100 : Infos et prévisions météo pour la ville de Roubaix (Nord). Pluie, température et neige. …"
+    }
+  ]
+}

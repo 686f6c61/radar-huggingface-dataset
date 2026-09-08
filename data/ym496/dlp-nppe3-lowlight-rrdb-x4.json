@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ym496/dlp-nppe3-lowlight-rrdb-x4",
+  "slug": "ym496-dlp-nppe3-lowlight-rrdb-x4",
+  "author": "ym496",
+  "url": "https://huggingface.co/ym496/dlp-nppe3-lowlight-rrdb-x4",
+  "created_at": "2026-09-07T19:44:27.000Z",
+  "updated_at": "2026-09-07T19:44:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-super-resolution",
+    "image-denoising",
+    "real-esrgan",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201129422,
+  "storage_human": "201 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find a Panel Physician",
+      "url": "https://www.cic.gc.ca/pp-md/pp-list.aspx",
+      "snippet": "Mar 12, 2024 · Find a doctor you may visit in your country, territory or region for your immigration medical exam. Only Panel …"
+    },
+    {
+      "title": "ym496 (Yogendra) · GitHub",
+      "url": "https://github.com/ym496",
+      "snippet": "22 y/o, CS Student, linux & nvim user. ym496 has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Find a citizenship ceremony",
+      "url": "https://www.cic.gc.ca/citcer/error-erreur.aspx?aspxerrorpath=%2Fcitcer%2Fs%C3%83%C2%A2%C3%A2%E2%80%9A%C2%AC%C3%82%C2%A6",
+      "snippet": "Find a citizenship ceremony We hold in-person and virtual citizenship ceremonies. Ceremonies are not all the same. Virtual …"
+    },
+    {
+      "title": "iitm-dlp-kaggle-competitions/notebooks/01_nppe3_lowlight ... - GitHub",
+      "url": "https://github.com/sahildev-ai1/iitm-dlp-kaggle-competitions/blob/main/notebooks/01_nppe3_lowlight_denoising_4xsr_rrdb.ipynb",
+      "snippet": "Contribute to sahildev-ai1/iitm-dlp-kaggle-competitions development by creating an account on GitHub."
+    },
+    {
+      "title": "Puneet-Bajaj-IITM/lowlight-nppe3 · Hugging Face",
+      "url": "https://huggingface.co/Puneet-Bajaj-IITM/lowlight-nppe3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

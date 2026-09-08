@@ -5,7 +5,7 @@
   "author": "ShindeRohit",
   "url": "https://huggingface.co/ShindeRohit/21f3002241_dlp_26t2_nppe3",
   "created_at": "2026-09-07T18:08:02.000Z",
-  "updated_at": "2026-09-07T18:26:19.000Z",
+  "updated_at": "2026-09-07T18:53:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -15,7 +15,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

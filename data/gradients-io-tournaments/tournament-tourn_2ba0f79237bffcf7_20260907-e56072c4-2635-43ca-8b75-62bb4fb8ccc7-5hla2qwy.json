@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-e56072c4-2635-43ca-8b75-62bb4fb8ccc7-5HLA2QWY",
+  "slug": "gradients-io-tournaments-tournament-tourn_2ba0f79237bffcf7_20260907-e56072c4-2635-43ca-8b75-62bb4fb8ccc7-5hla2qwy",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-e56072c4-2635-43ca-8b75-62bb4fb8ccc7-5HLA2QWY",
+  "created_at": "2026-09-07T21:46:52.000Z",
+  "updated_at": "2026-09-07T21:46:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/58ffe62d42e99569",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:unsloth/SmolLM2-360M",
+    "base_model:adapter:unsloth/SmolLM2-360M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69527352,
+  "storage_human": "70 MB",
+  "base_model": "unsloth/SmolLM2-360M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Эхо фантазии - Genshin Impact - HoYoWiki",
+      "url": "https://wiki.hoyolab.com/pc/genshin/entry/6333?lang=ru-ru",
+      "snippet": "HoYoWiki - Genshin Impact - Эхо фантазии: Выполните определённые условия представлений в театре «Воображариум», …"
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "Эхо фантазии Genshin Impact: как пройти испытания героев",
+      "url": "https://wotpack.ru/jeho-fantazii-v-genshin-impact-kak-otkryt-i-projti/",
+      "snippet": "Aug 25, 2026 · Как пройти все боевые испытания и получить уникальные эффекты бега персонажей в мине-режиме Эхо …"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-1b107bc7-baa1-4b16-b024-74995ad6d036-5HLA2QWY",
+      "snippet": "gradients-io-tournaments / tournament-tourn_add1dc83b8fd58b0_20260831-1b107bc7-baa1-4b16-b024-74995ad6d036-5HLA2QWY like 0 Text Generation PEFT Safetensors Transformers lora arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Театр Воображариум в Genshin Impact 7.0: как пройти в …",
+      "url": "https://wotpack.ru/teatr-voobrazharium-v-genshin-impact-kak-otkryt-i-projti/",
+      "snippet": "5 days ago · Гайд по Театру Воображариум в Genshin Impact: правила и механики режима, сезоны, усиления и лучшие …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-gpt2-bam-umoe",
+  "slug": "hooshaai-svd-linear-attention-gpt2-bam-umoe",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-gpt2-bam-umoe",
+  "created_at": "2026-09-07T21:16:06.000Z",
+  "updated_at": "2026-09-07T22:56:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "gpt2",
+    "bam_umoe",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "arxiv:1701.06538",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10670544,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:39.653Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT \"DAN\" (and other \"Jailbreaks\") NOTE: As of 20230711, the DAN 12.0 prompt is working properly with Model GPT-3.5 All …"
+    },
+    {
+      "title": "HOOSHA AI — Frontier Artificial Intelligence & Open Research",
+      "url": "https://hooshaai.github.io/",
+      "snippet": "Hoosha AI — Frontier research laboratory pioneering sub-quadratic attention, continuous flow matching, and verified cognitive scaling architectures."
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "Hoosaha AI - GitHub",
+      "url": "https://github.com/Hooshaai",
+      "snippet": "AI works. Hoosaha AI has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Orangetheory Fitness - Reddit",
+      "url": "https://www.reddit.com/r/orangetheory/",
+      "snippet": "The unofficial community for anyone interested in Orangetheory Fitness. Come here to discuss the workouts, the results, and get help …"
+    }
+  ]
+}

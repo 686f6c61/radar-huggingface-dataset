@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "trinityomni/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "slug": "trinityomni-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau",
+  "author": "trinityomni",
+  "url": "https://huggingface.co/trinityomni/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "created_at": "2026-09-07T21:53:22.000Z",
+  "updated_at": "2026-09-07T21:53:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55586512482,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sextape : les films intimes des stars qui ont fuité sur le net",
+      "url": "https://www.femmeactuelle.fr/amour/sexo/sextape-stars-28305",
+      "snippet": "Mar 14, 2016 · Depuis ces dernières années, avec l’essor d’Internet et des réseaux sociaux, de nombreuses stars ont vu leurs ébats …"
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "snippet": "Instructions to use DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Épisode 1/3 · Pamela et Tommy : la sextape qui révolutionne internet",
+      "url": "https://www.radiofrance.fr/mouv/podcasts/arnaques-crimes-et-putaclic/pamela-et-tommy-la-sextape-qui-revolutionne-internet-1689319",
+      "snippet": "Dec 12, 2022 · AUDIO La terrible histoire des sextapes, épisode 1/3 : Pamela et Tommy : la sextape qui révolutionne internet. Une …"
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU/discussions",
+      "snippet": "Instructions to use DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Vidéos porno Vintage, #2000 | xHamster",
+      "url": "https://fra.xhamster.com/categories/vintage/2000",
+      "snippet": "Vintagepornbay 54.4K vues 11:37 Vintage des années 70 - collection andrea, partie 4 jjackpack6666 6.9K vues 01:55:28"
+    }
+  ]
+}

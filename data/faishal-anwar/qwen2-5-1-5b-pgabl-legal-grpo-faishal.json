@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Faishal-Anwar/qwen2.5-1.5b-pgabl-legal-grpo-faishal",
+  "slug": "faishal-anwar-qwen2-5-1-5b-pgabl-legal-grpo-faishal",
+  "author": "Faishal-Anwar",
+  "url": "https://huggingface.co/Faishal-Anwar/qwen2.5-1.5b-pgabl-legal-grpo-faishal",
+  "created_at": "2026-09-07T17:02:01.000Z",
+  "updated_at": "2026-09-07T17:04:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Faishal-Anwar/qwen2.5-1.5b-pgabl-legal-sft-faishal",
+    "base_model:finetune:Faishal-Anwar/qwen2.5-1.5b-pgabl-legal-sft-faishal",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889478,
+  "storage_human": "3.1 GB",
+  "base_model": "Faishal-Anwar/qwen2.5-1.5b-pgabl-legal-sft-faishal",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=en",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "Instructions to use Qwen/Qwen2.5-1.5B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "qwen2.5-1.5b-pgabl-legal-sft-faishal API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Faishal-Anwar/qwen2.5-1.5b-pgabl-legal-sft-faishal",
+      "snippet": "Run qwen2.5-1.5b-pgabl-legal-sft-faishal with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface's TRL library."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    }
+  ]
+}

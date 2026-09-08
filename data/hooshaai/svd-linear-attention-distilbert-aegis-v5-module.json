@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-distilbert-aegis-v5-module",
+  "slug": "hooshaai-svd-linear-attention-distilbert-aegis-v5-module",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v5-module",
+  "created_at": "2026-09-07T21:10:59.000Z",
+  "updated_at": "2026-09-07T22:56:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "distilbert",
+    "aegis_v5_module",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4748282,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:46.933Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nibelis",
+      "url": "https://client.nibelis.com/login?APPL=CF",
+      "snippet": "Nibelis."
+    },
+    {
+      "title": "HOOSHA AI — Frontier Artificial Intelligence & Open Research",
+      "url": "https://hooshaai.github.io/",
+      "snippet": "Hoosha AI — Frontier research laboratory pioneering sub-quadratic attention, continuous flow matching, and verified cognitive scaling architectures."
+    },
+    {
+      "title": "Logiciel de Paie & SIRH complet | Nibelis",
+      "url": "https://nibelis.com/",
+      "snippet": "Nibelis, la suite de logiciels Paie & RH full web la plus complète, simple et économique du marché. Nativement intégrés au socle de …"
+    },
+    {
+      "title": "GitHub - Hooshaai/hooshaai.github.io: Hoosha AI is an independent AI ...",
+      "url": "https://github.com/Hooshaai/hooshaai.github.io",
+      "snippet": "Hoosha AI is an independent AI research lab and systems engineering initiative dedicated to advancing continuous-time generative modeling (Continuous Flow Matching), differential attention mechanisms, and scalable GPU compute infrastructure. - Hooshaai/hooshaai.github.io"
+    },
+    {
+      "title": "Coffre-fort Numérique pour Bulletins de Paie dématérialisés | Nibelis",
+      "url": "https://nibelis.com/coffre-fort-nibelis/",
+      "snippet": "Optez pour un espace de stockage pérenne et intuitif avec le Coffre-Fort numérique Nibelis, nativement intégré au sein du SIRH en …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Lonecatone23/Animosity",
+  "slug": "lonecatone23-animosity",
+  "author": "Lonecatone23",
+  "url": "https://huggingface.co/Lonecatone23/Animosity",
+  "created_at": "2026-09-07T21:11:36.000Z",
+  "updated_at": "2026-09-07T21:45:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 67415416202,
+  "storage_human": "67.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Animosity - lonecatone23 - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/tensorart/models/995873630179049247/versions/995873630179049247",
+      "snippet": "Download Animosity - lonecatone23 - CHECKPOINT for Anima by 913384038394258172. Free AI model download from CivArchive."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Animosity - Krea2 Ver 1.0 Turbo | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2596298/animosity",
+      "snippet": "Trained on several LoRA epochs of Animosity and a block merger #1 4.2K0 1 2 3 4 5 6 7 8 9.0 1 2 3 4 5 6 7 8 9K 8.9K0 1 2 3 4 5 6 7 8 9.0 1 2 3 4 5 6 7 8 9K 219.9K0 1 2 3 4 5 6 7 8 90 1 2 3 4 5 6 7 8 90 1 2 3 4 5 6 7 8 9.0 1 2 3 4 5 6 7 8 9K lonecatone23 Joined Sep 24, 2025 Follow License:"
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

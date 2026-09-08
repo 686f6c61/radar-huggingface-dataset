@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "trinityomnis/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+  "slug": "trinityomnis-qwen3-5-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp-gguf",
+  "author": "trinityomnis",
+  "url": "https://huggingface.co/trinityomnis/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+  "created_at": "2026-09-07T22:48:28.000Z",
+  "updated_at": "2026-09-07T22:48:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "MTP GGUFS",
+    "Regular GGUFS",
+    "NEO Imatrix",
+    "fine tune",
+    "unsloth",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "multi-stage tuned.",
+    "all use cases",
+    "thinking",
+    "reasoning",
+    "qwen3.5",
+    "coder",
+    "creative",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+    "base_model:quantized:DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 147462764097,
+  "storage_human": "147.5 GB",
+  "base_model": "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Weeks Calculator - Count Weeks Between Dates Quickly",
+      "url": "https://timecalculators.io/weeks-calculator",
+      "snippet": "2 days ago · Use the Weeks Calculator to determine how many weeks fall between two dates, or to add/subtract weeks from any …"
+    },
+    {
+      "title": "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+      "snippet": "Regular and MTP (fast) NEO IMATRIX GGUFs provided. (this model is part of the Qwen 3.6 27B Fable Fusion 711 pipelines: 2200+ likes, 3 million + downloads) Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF Extreme intelligence in a small package. Jaw dropping performance. Superior instruction following."
+    },
+    {
+      "title": "Date Calculator",
+      "url": "https://www.calculator.net/date-calculator.html",
+      "snippet": "Jan 1, 2026 · This free date calculator computes the difference between two dates. It can also add to or subtract from a date. Both …"
+    },
+    {
+      "title": "Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+      "url": "https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+      "snippet": "Model exceeds 7 of 7 benchmarks for Qwen 3.5 9B, Qwen3.5 27B, Qwen3.6 35B-A3B, and meets Qwen 3.6 27B in some cases... and it does so in 4bit and 8bit. Regular and MTP (fast) NEO IMATRIX GGUFs provided [links below]. This repo contains the full source code in 16 bit precision. For the DARK ROAST [max de-censoring] go here:"
+    },
+    {
+      "title": "Weeks Between Two Dates Calculator",
+      "url": "https://datetimecalculator.net/weeks-between-two-dates-calculator",
+      "snippet": "How to Use The Weeks Between Two Dates Calculator . For this calculator to work, of course you need two dates, a start and end …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Ottneel/afroxlmr_base_moderation",
+  "slug": "ottneel-afroxlmr_base_moderation",
+  "author": "Ottneel",
+  "url": "https://huggingface.co/Ottneel/afroxlmr_base_moderation",
+  "created_at": "2026-09-07T21:22:10.000Z",
+  "updated_at": "2026-09-07T21:24:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:Davlan/afro-xlmr-base",
+    "base_model:finetune:Davlan/afro-xlmr-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1112213285,
+  "storage_human": "1.1 GB",
+  "base_model": "Davlan/afro-xlmr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "full time qa manager jobs in England - Indeed",
+      "url": "https://uk.indeed.com/q-full-time-qa-manager-l-england-jobs.html",
+      "snippet": "Apply to Full Time QA Manager jobs now hiring in England on Indeed.com, the worlds largest job site."
+    },
+    {
+      "title": "AfroXLMR-Social: Adapting Pre-trained Language Models",
+      "url": "https://arxiv.org/html/2503.18247v3",
+      "snippet": "AfroXLMR is a continually pre-trained model for African languages based on XLM-RoBERTa Conneau et al. 2020. We explore subjective NLP task results from baseline (the base model result), DAPT, TAPT, and DAPT + TAPT, on a smaller but directly domain- and task-relevant unlabeled corpus."
+    },
+    {
+      "title": "full time quality assurance jobs - Indeed.com",
+      "url": "https://uk.indeed.com/q-full-time-quality-assurance-jobs.html",
+      "snippet": "3,419 Full Time Quality Assurance jobs available on Indeed.com. Apply to Quality Assurance Analyst, Quality Assurance Manager, …"
+    },
+    {
+      "title": "Davlan/afro-xlmr-base · Hugging Face",
+      "url": "https://huggingface.co/Davlan/afro-xlmr-base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quality Assurance Manager Jobs | Reed.co.uk",
+      "url": "https://www.reed.co.uk/jobs/quality-assurance-manager-jobs?msockid=01e9505958766396042e4794591062e4",
+      "snippet": "Find Quality Assurance Manager jobs with Reed.co.uk. Discover Quality Assurance Manager vacancies on offer, across the UK, …"
+    }
+  ]
+}

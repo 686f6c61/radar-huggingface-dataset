@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-gpt2-astro",
+  "slug": "hooshaai-svd-linear-attention-gpt2-astro",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-gpt2-astro",
+  "created_at": "2026-09-07T21:11:38.000Z",
+  "updated_at": "2026-09-07T22:56:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "gpt2",
+    "astro",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9476979,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:44.881Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Wikipedia:Portada",
+      "snippet": "Wikipedia® es una marca registrada de la Fundación Wikimedia, una organización sin ánimo de lucro."
+    },
+    {
+      "title": "Scaling Transformers: How Linear Attention is Reshaping Cross-Task AI",
+      "url": "https://hooshaai.substack.com/p/scaling-transformers-how-linear-attention",
+      "snippet": "The solution gaining serious traction in the research community is Linear Attention. By mathematically decomposing the softmax operation and substituting carefully engineered kernel feature maps, newer architectures achieve O (N) complexity — retaining the expressivity of a standard Transformer at a fraction of the cost."
+    },
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipedia® est une marque déposée de la Wikimedia Foundation, Inc., organisation de bienfaisance régie par le paragraphe …"
+    },
+    {
+      "title": "HOOSHA AI — Frontier Artificial Intelligence & Open Research",
+      "url": "https://hooshaai.github.io/",
+      "snippet": "Hoosha AI — Frontier research laboratory pioneering sub-quadratic attention, continuous flow matching, and verified cognitive scaling architectures."
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    }
+  ]
+}

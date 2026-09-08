@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sign/Ettin-150m-WSD",
+  "slug": "sign-ettin-150m-wsd",
+  "author": "sign",
+  "url": "https://huggingface.co/sign/Ettin-150m-WSD",
+  "created_at": "2026-09-07T20:28:32.000Z",
+  "updated_at": "2026-09-07T20:28:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "word-sense-disambiguation",
+    "wordnet",
+    "ettin",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-150m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-150m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149703296,
+  "parameters_human": "149.7M",
+  "storage_bytes": 299420880,
+  "storage_human": "299 MB",
+  "base_model": "jhu-clsp/ettin-encoder-150m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sign - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/sign",
+      "snippet": "Collocations : a [road, street, traffic, store, warning, chemical] sign, sign your [name, initials, signature, full name], [learn, teach, use] …"
+    },
+    {
+      "title": "jhu-clsp/ettin-encoder-150m · Hugging Face",
+      "url": "https://huggingface.co/jhu-clsp/ettin-encoder-150m",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sign - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/sign.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"sign\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "newmindai/ettin-encoder-150M-TR-HD · Hugging Face",
+      "url": "https://huggingface.co/newmindai/ettin-encoder-150M-TR-HD",
+      "snippet": "Model Description ettin-encoder-150M-TR-HD is a highly efficient 150M parameter model fine-tuned for Turkish hallucination detection in Retrieval-Augmented Generation (RAG) systems."
+    },
+    {
+      "title": "Sign",
+      "url": "https://sign.com/",
+      "snippet": "Share and sign contracts in seconds. It’s easy to create an electronic signature that’s legal, professional, and completely secure."
+    }
+  ]
+}

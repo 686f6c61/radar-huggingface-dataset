@@ -5,7 +5,7 @@
   "author": "ankush13r",
   "url": "https://huggingface.co/ankush13r/prelude-base-iter_0989075-yarn-128k",
   "created_at": "2026-09-05T13:09:50.000Z",
-  "updated_at": "2026-09-05T13:31:25.000Z",
+  "updated_at": "2026-09-07T12:55:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 9094607872,
   "parameters_human": "9.09B",
@@ -38,8 +38,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-06T03:27:37.168Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

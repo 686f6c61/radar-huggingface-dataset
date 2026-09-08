@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "aecetin/DeepSeek-R1-8B-Unified-IdemFormer",
+  "slug": "aecetin-deepseek-r1-8b-unified-idemformer",
+  "author": "aecetin",
+  "url": "https://huggingface.co/aecetin/DeepSeek-R1-8B-Unified-IdemFormer",
+  "created_at": "2026-09-07T20:28:58.000Z",
+  "updated_at": "2026-09-07T20:55:59.000Z",
+  "license": "hybrid-patent-open-core",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "tr",
+    "zh"
+  ],
+  "tags": [
+    "deepseek_r1_unified_idemformer",
+    "deepseek-r1",
+    "reasoning",
+    "universal-transformer",
+    "weight-shared-attention",
+    "128k-context",
+    "32x-context-folding",
+    "tarski-invariance",
+    "tropical-attention",
+    "idempotent-stack",
+    "6gb-laptop-record",
+    "text-generation",
+    "en",
+    "tr",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Créer un compte Google - Ordinateur - Aide Compte Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Important : Lorsque vous créez un compte Google pour votre entreprise, vous pouvez activer la personnalisation pour les …"
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "Crea un Account Google per Gmail - Guida di Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=it",
+      "snippet": "Registrati per creare un Account Google Importante:prima di creare un nuovo Account Google, esci dal tuo account attuale. Scopri …"
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "With RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors. However, DeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks."
+    },
+    {
+      "title": "Googleへ電話で問い合わせしたいです。 - ヘルプセンター等の電話 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11103362506",
+      "snippet": "Mar 8, 2013 · Googleのヘルプセンターに直接メールを送るにはどうすればいいですか？ ヘルプのページに問題解決の為に役立つ情 …"
+    }
+  ]
+}

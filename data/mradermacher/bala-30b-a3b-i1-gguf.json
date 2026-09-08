@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Bala-30B-A3B-i1-GGUF",
+  "slug": "mradermacher-bala-30b-a3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Bala-30B-A3B-i1-GGUF",
+  "created_at": "2026-09-07T21:17:51.000Z",
+  "updated_at": "2026-09-08T02:13:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3-moe",
+    "qlora",
+    "distillation",
+    "reasoning",
+    "math",
+    "en",
+    "dataset:nvidia/OpenCodeReasoning",
+    "dataset:open-r1/Mixture-of-Thoughts",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "base_model:AlreadyAI/Bala-30B-A3B",
+    "base_model:quantized:AlreadyAI/Bala-30B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 324126085440,
+  "storage_human": "324.1 GB",
+  "base_model": "AlreadyAI/Bala-30B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[8-26更新]动态壁纸软件 壁纸引擎 Wallpaper Engine v2.5.7离线版+配 …",
+      "url": "https://www.52pojie.cn/thread-1958046-1-1.html",
+      "snippet": "[Windows] [8-26更新]动态壁纸软件 壁纸引擎 Wallpaper Engine v2.5.7离线版+配套30G精选资源"
+    },
+    {
+      "title": "mradermacher/Bala-30B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Bala-30B-A3B-GGUF",
+      "snippet": "Instructions to use mradermacher/Bala-30B-A3B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "steam上的wallpaper engine下载的壁纸是保存在哪个文件夹呀？ - 知乎",
+      "url": "https://www.zhihu.com/question/53942965?write",
+      "snippet": "找不到~ 更新一波，如果文件是pkg的小伙伴，可以重新在搜索里筛选视频然后再搜索一样的内容，这样下载的文件就是mp4了。"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mac上是否有类似于wallpaper engine的软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/55200110",
+      "snippet": "作为壁纸重度用户，Mac端使用过三四款动态壁纸软件，一定要推荐”动态壁纸：Dynamic Wallpaper Engine“，这款软件就是Mac平台 …"
+    }
+  ]
+}

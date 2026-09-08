@@ -5,7 +5,7 @@
   "author": "primitive-ai",
   "url": "https://huggingface.co/primitive-ai/K2-Horizon-MoVA-36B-A4B-NVFP4",
   "created_at": "2026-09-04T20:46:56.000Z",
-  "updated_at": "2026-09-06T14:18:29.000Z",
+  "updated_at": "2026-09-07T07:33:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 527,
+  "downloads_30d": 686,
   "trending_score": 0,
   "parameters": 37444792020,
   "parameters_human": "37.44B",

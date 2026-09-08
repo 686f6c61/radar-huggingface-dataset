@@ -5,7 +5,7 @@
   "author": "maheshrawat18",
   "url": "https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3",
   "created_at": "2026-09-05T00:40:25.000Z",
-  "updated_at": "2026-09-07T02:05:20.000Z",
+  "updated_at": "2026-09-08T00:25:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1233810304,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 1583054056,
+  "storage_human": "1.6 GB",
   "base_model": "maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
   "formats": [
     "safetensors"

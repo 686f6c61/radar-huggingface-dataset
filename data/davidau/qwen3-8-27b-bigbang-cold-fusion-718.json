@@ -5,7 +5,7 @@
   "author": "DavidAU",
   "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-BIGBANG-Cold-Fusion-718",
   "created_at": "2026-08-31T03:48:46.000Z",
-  "updated_at": "2026-09-06T02:01:00.000Z",
+  "updated_at": "2026-09-07T07:16:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,12 +36,12 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 21,
+  "likes": 25,
   "downloads_30d": 2,
   "trending_score": 21,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 55584408607,
+  "storage_bytes": 55577228584,
   "storage_human": "55.6 GB",
   "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
   "formats": [

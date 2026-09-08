@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-roberta-block-transformer-hiba",
+  "slug": "hooshaai-svd-linear-attention-roberta-block-transformer-hiba",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-roberta-block-transformer-hiba",
+  "created_at": "2026-09-07T21:16:46.000Z",
+  "updated_at": "2026-09-07T22:57:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "roberta",
+    "block_transformer_hiba",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14323222,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:38.068Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pickalbatros Neverland City | Hotel in Hurghada",
+      "url": "https://www.pickalbatros.com/water-valley-resort-neverland-hurghada",
+      "snippet": "Welcome to Pickalbatros Neverland City. Explore the water parks and entertainment of our family resort in the heart of Hurghada, …"
+    },
+    {
+      "title": "Adaptive Transformer Compressor: Energy‑Thresholded SVD for Automatic ...",
+      "url": "https://hooshaai.substack.com/p/adaptive-transformer-compressor-energythresholde",
+      "snippet": "Adaptive Transformer Compressor automatically determines the optimal low‑rank for each linear layer and attention block using singular energy thresholding, reducing parameters without manual tuning."
+    },
+    {
+      "title": "Pickalbatros Jungle Aqua Park Resort Neverland (hotel) - Hurghada",
+      "url": "https://www.tui.nl/pickalbatros-jungle-aqua-park-resort-neverland-50978317/?msockid=140b182ab839622e07930fe7b9e16365",
+      "snippet": "23 hours ago · Welkom bij Pickalbatros Jungle Aqua Park Neverland in Hurghada, waar je je midden in een echte jungle waant. …"
+    },
+    {
+      "title": "Substack - Hoosha AI",
+      "url": "https://hooshaai.substack.com/",
+      "snippet": "Compress transformers with per‑layer adaptive low‑rank factorization, preserving 95% singular energy by default Aug 28 • 🧠 Hoosha AI 1 A3 Compressor: Activation‑Aware Factorized SVD Compression with Fisher Weighting for Attention Module Low‑rank compression tailored for attention layers in transformer models Aug 28 • 🧠 Hoosha AI 1"
+    },
+    {
+      "title": "NEVERLAND CITY HURGHADA - PICKALBATROS ··· Red Sea …",
+      "url": "https://neverland-aqua-park-by-pickalbatros.hotel-hurghada.com/nl/",
+      "snippet": "1 day ago · Neverland City Hurghada - Pickalbatros hotel heeft toegang tot het privé strand en de strandvoorzieningen zoals parasols …"
+    }
+  ]
+}

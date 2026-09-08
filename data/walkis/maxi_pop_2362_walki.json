@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "walkis/Maxi_Pop_2362_Walki",
+  "slug": "walkis-maxi_pop_2362_walki",
+  "author": "walkis",
+  "url": "https://huggingface.co/walkis/Maxi_Pop_2362_Walki",
+  "created_at": "2026-09-07T23:24:27.000Z",
+  "updated_at": "2026-09-07T23:31:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-audio",
+    "es",
+    "en",
+    "base_model:ACE-Step/acestep-v15-xl-sft",
+    "base_model:finetune:ACE-Step/acestep-v15-xl-sft",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2550230624,
+  "storage_human": "2.6 GB",
+  "base_model": "ACE-Step/acestep-v15-xl-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "En İyi Ücretsiz (Türk) Porno ve Seks Tube Siteleri - Porn Dude",
+      "url": "https://theporndude.com/tr/top-porn-tube-sites",
+      "snippet": "3 days ago · Dünyanın en popüler porno tube sitelerinde ücretsiz HD porno videoları izle. Porno yıldızlarının hardcore seks filmlerini, …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=Walki",
+      "snippet": "Sort: Trending Active filters:Walki Clear all walkis/Reggaeton_2 Updated 15 days ago System theme Company"
+    },
+    {
+      "title": "Türk seks: Yandex'te 2 bin video bulundu",
+      "url": "https://gs.yandex.com.tr/video/search?text=T%C3%BCrk+seks&where=all",
+      "snippet": "Türk İfşa Porn Sikis Paylaşım. 1,3milyon1,3 milyon izleme. yayın tarihi3 şub 2023. Özetle. Bunlar aranıyor. erkek yazlık terlik. meb …"
+    },
+    {
+      "title": "walkis/POP_2026_Walki_74 · Hugging Face",
+      "url": "https://huggingface.co/walkis/POP_2026_Walki_74",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Türk porno izle: Yandex'te 2 bin video bulundu",
+      "url": "https://gs.yandex.com.tr/video/search/?p=1&text=T%C3%BCrk+porno+izle",
+      "snippet": "Türkkurgu — Video by TürkPornoÖzelSüre 19 dakika 20 saniye. VK Video›Türk Porno Özel."
+    }
+  ]
+}

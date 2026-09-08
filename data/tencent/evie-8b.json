@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "tencent/EVIE-8B",
+  "slug": "tencent-evie-8b",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/EVIE-8B",
+  "created_at": "2026-09-04T08:55:13.000Z",
+  "updated_at": "2026-09-07T13:19:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "colpali-engine",
+  "languages": [],
+  "tags": [
+    "colpali-engine",
+    "safetensors",
+    "qwen3_5",
+    "vision-language",
+    "colbert",
+    "late-interaction",
+    "multi-vector",
+    "vidore",
+    "document-retrieval",
+    "multimodal",
+    "sentence-transformers",
+    "visual-document-retrieval",
+    "dataset:vidore/vidore_benchmark",
+    "dataset:vidore/vidore_benchmark_v2",
+    "dataset:jinaai/jina-vdr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 10,
+  "parameters": 8409476336,
+  "parameters_human": "8.41B",
+  "storage_bytes": 16906323914,
+  "storage_human": "16.9 GB",
+  "base_model": "Qwen/Qwen3.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Tencent",
+      "url": "https://www.tencent.com/",
+      "snippet": "Aug 12, 2026 · Who we are Who we are Overview See how teamwork, leadership and global reach bring Tencent's vision and values …"
+    },
+    {
+      "title": "EVIE-8B: Tencent's Quiet Visual Document Retrieval Flagship",
+      "url": "https://www.orcarouter.ai/blog/evie-8b-quiet-release",
+      "snippet": "The tencent/EVIE-8B model card above is the release's public surface: a visual-document-retrieval checkpoint tagged for the colpali-engine library, Apache-2.0 licensed, with a 4096-dimensional late-interaction embedding and the family's own refreshed ViDoRe table near the top of the card."
+    },
+    {
+      "title": "Tencent — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tencent",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Tencent 57 languesAjouter un sujet"
+    },
+    {
+      "title": "GitHub - Tencent/EVIE",
+      "url": "https://github.com/Tencent/EVIE",
+      "snippet": "Training-Free HAC Token Compression 🤗 EVIE-4.5B (Prefix-MRL & HAC) • 🤗 EVIE-8B (Flagship Teacher) • 🐙 GitHub: Tencent/EVIE 📢 Release Announcement: All model weights, training pipelines, token compression algorithms (HAC), and evaluation suites have been fully open-sourced in this repository."
+    },
+    {
+      "title": "Tencent - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tencent",
+      "snippet": ""
+    }
+  ]
+}

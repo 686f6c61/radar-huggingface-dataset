@@ -4,8 +4,8 @@
   "slug": "aimeri-cardmaker-v2-ckpts",
   "author": "aimeri",
   "url": "https://huggingface.co/aimeri/cardmaker-v2-ckpts",
-  "created_at": "2026-09-06T05:38:01.000Z",
-  "updated_at": "2026-09-06T08:55:30.000Z",
+  "created_at": "2026-09-07T19:18:56.000Z",
+  "updated_at": "2026-09-07T23:50:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 459207525999,
-  "storage_human": "459.2 GB",
+  "storage_bytes": 621280768611,
+  "storage_human": "621.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

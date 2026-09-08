@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "PointGuardAI/Qwen3.5-2B-Topic-Controls-LoRA-09-07-2026",
+  "slug": "pointguardai-qwen3-5-2b-topic-controls-lora-09-07-2026",
+  "author": "PointGuardAI",
+  "url": "https://huggingface.co/PointGuardAI/Qwen3.5-2B-Topic-Controls-LoRA-09-07-2026",
+  "created_at": "2026-09-07T23:24:25.000Z",
+  "updated_at": "2026-09-07T23:24:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.5",
+    "qwen",
+    "lora",
+    "guardrail",
+    "classification",
+    "topic-control",
+    "application-policy",
+    "sglang",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87322013,
+  "storage_human": "87 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ExcelHome技术论坛 - Excel教程免费学习，Excel表格交流，下载Excel函 …",
+      "url": "https://club.excelhome.net/",
+      "snippet": "专业的学习型Office技术社区-Excel表格入门教程，Office应用问题交流，免费下载学习excel、Word、PPT软件视频教程，免费分 …"
+    },
+    {
+      "title": "GitHub - algtrd24/qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/algtrd24/qwen3.5",
+      "snippet": "2026-02-16: We release Qwen3.5. The first release includes a 397B-A17B MoE model. Read more on our release blog. More sizes are coming & Happy Chinese New Year! 2025-09-11: We release Qwen3-Next-80B-A3B, an ultra-sparse mixture-of-experts model with hybrid attention architecture, designed for extreme efficiency. Read more on our blog."
+    },
+    {
+      "title": "Excel公式中的$是什么意思（Excel的绝对引用）-百度经验",
+      "url": "https://jingyan.baidu.com/article/63f23628f9eebb4209ab3d51.html",
+      "snippet": "Jan 2, 2020 · Excel公式中的$是什么意思（Excel的绝对引用）,我们在使用Excel时经常要用到公式，而使用公式的时候又经常会引用 …"
+    },
+    {
+      "title": "Qwen3.5 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5",
+      "snippet": "Run the new Qwen3.5 LLMs including Medium: Qwen3.5-35B-A3B, 27B, 122B-A10B, Small: Qwen3.5-0.8B, 2B, 4B, 9B and 397B-A17B on your local device!"
+    },
+    {
+      "title": "Excel函数公式：生成随机数、不重复随机数技巧-百度经验",
+      "url": "https://jingyan.baidu.com/article/fea4511ad32699f7bb9125d1.html",
+      "snippet": "Oct 25, 2018 · Excel函数公式：生成随机数、不重复随机数技巧,随机数，在我们的日常中的应用也是非常广泛的，那么，如何生成随 …"
+    }
+  ]
+}

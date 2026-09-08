@@ -5,7 +5,7 @@
   "author": "3MPER0RR",
   "url": "https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-obliterated",
   "created_at": "2026-08-30T12:05:53.000Z",
-  "updated_at": "2026-09-01T10:07:34.000Z",
+  "updated_at": "2026-09-07T23:44:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 260,
+  "downloads_30d": 285,
   "trending_score": 0,
   "parameters": 3836021760,
   "parameters_human": "3.84B",

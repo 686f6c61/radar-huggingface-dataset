@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "achrafArboun/thinkTuning",
+  "slug": "achrafarboun-thinktuning",
+  "author": "achrafArboun",
+  "url": "https://huggingface.co/achrafArboun/thinkTuning",
+  "created_at": "2026-09-07T21:12:18.000Z",
+  "updated_at": "2026-09-07T21:13:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:haianzxc/TinyLlama",
+    "base_model:adapter:haianzxc/TinyLlama",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135326979,
+  "parameters_human": "135.3M",
+  "storage_bytes": 544126882,
+  "storage_human": "544 MB",
+  "base_model": "haianzxc/TinyLlama",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft To Do - Outlook",
+      "url": "https://outlook.live.com/tasks/?app",
+      "snippet": "Microsoft To Do"
+    },
+    {
+      "title": "[2508.07616] ThinkTuning: Instilling Cognitive Reflections without ...",
+      "url": "https://arxiv.org/abs/2508.07616",
+      "snippet": "Recent advances in test-time scaling have led to the emergence of thinking LLMs that exhibit self-reflective behaviors and multi-step reasoning. While RL drives this self-improvement paradigm, a recent study (Gandhi et al., 2025) shows that RL alone does not truly instill these new reasoning abilities - it merely draws out behaviors already present in the base models. This raises a question ..."
+    },
+    {
+      "title": "Outlook – free personal email and calendar from Microsoft",
+      "url": "https://outlook.live.com/mail/oauthRedirect.html",
+      "snippet": "Access free Outlook email and calendar, plus Office Online apps like Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "THINKTUNING: Instilling Cognitive Reflections without Distillation",
+      "url": "https://arxiv.org/pdf/2508.07616v1",
+      "snippet": "Drawing inspiration from the example discussed above, we propose THINKTUNING, a training ap-proach where an active student model learns to think by interacting with a teacher model. Rather than assuming thinking behaviors will emerge dur-ing RL, we engineer the training process to induce them. This aligns with how cognitive modeling in educational settings elicits complex reasoning strategies ..."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.live.com/mail/0/mailcache.manifest?manifestVersion=2",
+      "snippet": "{\"cacheVersion\":\"20260821009.11\",\"cacheHash\":\"DefaultHash\",\"buildVariant\":\"Default\",\"staticFiles\":[\"//res.public.onecdn.static.microsoft/owamail/hashed …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mensaprodigy/Qwen3.8-Flash-Next-REAP-384-mlx-mtp",
+  "slug": "mensaprodigy-qwen3-8-flash-next-reap-384-mlx-mtp",
+  "author": "mensaprodigy",
+  "url": "https://huggingface.co/mensaprodigy/Qwen3.8-Flash-Next-REAP-384-mlx-mtp",
+  "created_at": "2026-09-07T19:46:31.000Z",
+  "updated_at": "2026-09-07T22:45:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88680892414,
+  "storage_human": "88.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://de.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization— improving model capability while further optimizing computational efficiency, model capacity and training stability:"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://de.mail.yahoo.com/d",
+      "snippet": "Es ist an der Zeit, Dinge mit Yahoo Mail zu erledigen. Fügen Sie einfach Ihren Gmail-, Outlook-, AOL- oder Yahoo Mail-Account …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Instructions to use Qwen/Qwen3.8-Flash-Next with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Anmelden – Bei Yahoo anmelden",
+      "url": "https://de.mail.yahoo.com/a",
+      "snippet": "Melden Sie sich an und erhalten Sie Zugang zu den besten Yahoo Mail-Diensten sowie zu aktuellen Nachrichten aus Ihrer Region, …"
+    }
+  ]
+}

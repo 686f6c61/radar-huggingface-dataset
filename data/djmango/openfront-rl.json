@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "djmango/openfront-rl",
+  "slug": "djmango-openfront-rl",
+  "author": "djmango",
+  "url": "https://huggingface.co/djmango/openfront-rl",
+  "created_at": "2026-07-06T17:02:40.000Z",
+  "updated_at": "2026-09-08T00:09:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "reinforcement-learning",
+    "ppo",
+    "openfront",
+    "game-ai",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234534017146,
+  "storage_human": "234.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "djmango/openfront-rl · Hugging Face",
+      "url": "https://huggingface.co/djmango/openfront-rl",
+      "snippet": "djmango / openfront-rl like 8 Reinforcement Learning Safetensors PyTorch ppo openfront game-ai License:mit Model card FilesFiles and versions xet Community Copy to bucket new openfront-rl Latest (use this) Layout Architecture (from manifest.json) Prior runs Retention License / credit"
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "制限付きモードは、YouTube で使用できるオプション設定です。この機能は、ご自身が視聴したくない、またはデバイスを使用す …"
+    },
+    {
+      "title": "GitHub - djmango/openfront-ai: A self-play RL agent for OpenFront.io ...",
+      "url": "https://github.com/djmango/openfront-ai/",
+      "snippet": "A self-play RL agent for OpenFront.io: headless data generation on the real game engine, a learned spatial observation encoder, and a PPO self-play agent over the full action surface - djmango/openfront-ai"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

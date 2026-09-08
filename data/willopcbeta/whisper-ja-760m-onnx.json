@@ -5,7 +5,7 @@
   "author": "willopcbeta",
   "url": "https://huggingface.co/willopcbeta/whisper-ja-760M-ONNX",
   "created_at": "2026-09-03T13:25:59.000Z",
-  "updated_at": "2026-09-03T13:26:56.000Z",
+  "updated_at": "2026-09-07T15:07:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7386554045,
-  "storage_human": "7.4 GB",
+  "storage_bytes": 9969791369,
+  "storage_human": "10.0 GB",
   "base_model": "efwkjn/whisper-ja-760M",
   "formats": [
     "onnx"

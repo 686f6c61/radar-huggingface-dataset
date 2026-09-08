@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "id": "ewin-reg/jina-embeddings-v5-omni-small-retrieval-Quantized",
+  "slug": "ewin-reg-jina-embeddings-v5-omni-small-retrieval-quantized",
+  "author": "ewin-reg",
+  "url": "https://huggingface.co/ewin-reg/jina-embeddings-v5-omni-small-retrieval-Quantized",
+  "created_at": "2026-09-07T10:11:25.000Z",
+  "updated_at": "2026-09-08T00:24:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3_vl_audio",
+    "multimodal",
+    "embeddings",
+    "retrieval",
+    "feature-extraction",
+    "quantization",
+    "mixed-precision",
+    "w4a8",
+    "fp8",
+    "int4",
+    "gguf",
+    "omni",
+    "text-embeddings",
+    "vision-embeddings",
+    "audio-embeddings",
+    "cross-modal",
+    "custom_code",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:jinaai/jina-embeddings-v5-omni-small-retrieval",
+    "base_model:finetune:jinaai/jina-embeddings-v5-omni-small-retrieval",
+    "license:apache-2.0",
+    "model-index",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 929508224,
+  "parameters_human": "929.5M",
+  "storage_bytes": 4144898678,
+  "storage_human": "4.1 GB",
+  "base_model": "jinaai/jina-embeddings-v5-omni-small-retrieval",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "Model Size on Disk",
+      "value": 0.8943
+    },
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "Mean Text Embedding Fidelity",
+      "value": 99.209
+    },
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "End-to-End Text Degradation",
+      "value": 0.791
+    },
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "Audio Modality Fidelity",
+      "value": 96.443
+    },
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "Visual Modality Fidelity",
+      "value": 92.0344
+    },
+    {
+      "task": "Multimodal Retrieval",
+      "dataset": "Empirical Omni-Modal Evaluation Suite",
+      "metric": "Storage Reduction vs Base",
+      "value": 71.34
+    }
+  ],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "1 hour ago · 4,740,143 Latest:T-Girls, Crossdressers, Shemales & SissysDollover,Sep 8, 2026 at 1:41 AM RSS Sex Stories Anything …"
+    },
+    {
+      "title": "ewin-reg/jina-embeddings-v5-omni-small-retrieval-Quantized · Hugging Face",
+      "url": "https://huggingface.co/ewin-reg/jina-embeddings-v5-omni-small-retrieval-Quantized",
+      "snippet": "Instructions to use ewin-reg/jina-embeddings-v5-omni-small-retrieval-Quantized with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Aug 23, 2026 · XNXX Adult Forum Forums Public Sex Stories Anything related to texts and xnxx stories. Hello, New users on the …"
+    },
+    {
+      "title": "ewin-reg/jina-embeddings-v5-omni-small-retrieval-FlatQuant-W4A8 ...",
+      "url": "https://huggingface.co/ewin-reg/jina-embeddings-v5-omni-small-retrieval-FlatQuant-W4A8",
+      "snippet": "Instructions to use ewin-reg/jina-embeddings-v5-omni-small-retrieval-FlatQuant-W4A8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Remove all pornography websites - Google Search Community",
+      "url": "https://support.google.com/websearch/thread/86554728/remove-all-pornography-websites?hl=en",
+      "snippet": "Dec 2, 2020 · This help content & informationGeneral Help Center experience Search"
+    }
+  ]
+}

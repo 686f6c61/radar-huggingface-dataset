@@ -5,7 +5,7 @@
   "author": "hendrimardani",
   "url": "https://huggingface.co/hendrimardani/fine-tuned-model-indoensian",
   "created_at": "2026-09-07T10:21:41.000Z",
-  "updated_at": "2026-09-07T11:20:46.000Z",
+  "updated_at": "2026-09-08T01:25:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,8 +16,8 @@
     "tensorboard",
     "safetensors",
     "generated_from_trainer",
-    "unsloth",
     "sft",
+    "unsloth",
     "trl",
     "endpoints_compatible",
     "region:us"
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 270805648,
-  "storage_human": "271 MB",
+  "storage_bytes": 3324404976,
+  "storage_human": "3.3 GB",
   "base_model": "unsloth/llama-3.1-8b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

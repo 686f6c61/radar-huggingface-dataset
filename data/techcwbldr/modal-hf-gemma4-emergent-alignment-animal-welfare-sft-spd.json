@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "techcwbldr/modal-hf-gemma4-emergent-alignment-animal-welfare-sft-spd",
+  "slug": "techcwbldr-modal-hf-gemma4-emergent-alignment-animal-welfare-sft-spd",
+  "author": "techcwbldr",
+  "url": "https://huggingface.co/techcwbldr/modal-hf-gemma4-emergent-alignment-animal-welfare-sft-spd",
+  "created_at": "2026-09-07T22:24:06.000Z",
+  "updated_at": "2026-09-07T23:06:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2502.17424",
+    "arxiv:2604.13076",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "一直磨，直到能用短效手机号注册whatsapp，将信息修改一下只有你可以登录（绑定邮箱之类的）。 注册成功后，whatsapp那边得加 …"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "国内如何使用whatsapp？ - 知乎",
+      "url": "https://www.zhihu.com/question/2052047431735550018",
+      "snippet": "Jun 21, 2026 · 关注 直接使用 WhatsApp 往往会出现无法连接、收不到消息或无法语音通话的情况，因为 WhatsApp 在国内网络环境 …"
+    },
+    {
+      "title": "Gemma4 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/gemma4",
+      "snippet": "Gemma4 Vision Model The key difference from previous Gemma releases for vision is the new design to process images of different sizes using a fixed-budget number of tokens. Unlike many models that squash every image into a fixed square (like 224×224), Gemma 4 keeps the image’s natural aspect ratio while making it the right size."
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    }
+  ]
+}

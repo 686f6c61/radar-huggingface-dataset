@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-v2-teleopaligned-videolora200-action-decoder-iter900",
+  "slug": "dreamdifferent-vam-cross-level4-kuka-iiwa14-widowx-texture-v2-teleopaligned-videolora200-action-decoder-iter900",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-v2-teleopaligned-videolora200-action-decoder-iter900",
+  "created_at": "2026-09-07T22:10:40.000Z",
+  "updated_at": "2026-09-07T22:11:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "If your channel is terminated, you will get an email explaining the reason for the termination. Participants of the YouTube Partner …"
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-v2-video ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-v2-video-lora-iter400",
+      "snippet": "This is an adapter checkpoint, not a standalone fused model. Load the exact initial Video2World backbone above first and then apply this LoRA checkpoint. For fused_video2world_dit, the initial checkpoint already includes the earlier WidowX/Bridge LoRA fusion; loading the original Bridge backbone instead would be incorrect. Supporting runtime artifacts"
+    },
+    {
+      "title": "Google aile Yt premium çalışmıyor - Google Arama ve Asistan Topluluğu",
+      "url": "https://support.google.com/websearch/thread/415840269/google-aile-yt-premium-%C3%A7al%C4%B1%C5%9Fm%C4%B1yor?hl=tr",
+      "snippet": "Mar 9, 2026 · Bu yardım içeriği ve bilgileriYardım Merkezi ile ilgili genel deneyim"
+    }
+  ]
+}

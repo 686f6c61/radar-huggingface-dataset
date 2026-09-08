@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-MysticV2",
+  "slug": "ch522-mmh3-mysticv2",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-MysticV2",
+  "created_at": "2026-09-07T23:14:30.000Z",
+  "updated_at": "2026-09-07T23:14:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172064535,
+  "storage_human": "172 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Danish | Tube Pleasure",
+      "url": "https://tubepleasure.com/en/1529/danish/",
+      "snippet": "Porn videos. Danish - 3,364 videos. Danish Gay, Mette, Dane, Danish Bbw, Blackmail and much more."
+    },
+    {
+      "title": "MysticXXX_MMH3-V2.safetensors · olivv-cs/ltx2 at main",
+      "url": "https://huggingface.co/olivv-cs/ltx2/blob/main/MysticXXX_MMH3-V2.safetensors",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dänen Porno-Videos | xHamster",
+      "url": "https://ge.xhamster.desi/categories/danish",
+      "snippet": "Dänische Muschi Dänische Blondine Danish Swingers Danish Femdom AI Auf Deutsch Deutsche Untertitel"
+    },
+    {
+      "title": "MysticXXX_MMH3-V2.safetensors · Serenak/chilloutmix at main",
+      "url": "https://huggingface.co/Serenak/chilloutmix/blob/main/MysticXXX_MMH3-V2.safetensors",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DANISH • The hottest videos • SEX Nest TV",
+      "url": "https://sexnest.tv/danish-videos",
+      "snippet": "Enjoy the hottest DANISH free porn movies: Swallow, Karen anal amateur, Danish hardcore, Old lady orgy, Big tits vintage, Excuse …"
+    }
+  ]
+}

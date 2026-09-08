@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "medarc/spectra-openmidnight-merged",
+  "slug": "medarc-spectra-openmidnight-merged",
+  "author": "medarc",
+  "url": "https://huggingface.co/medarc/spectra-openmidnight-merged",
+  "created_at": "2026-09-07T20:29:06.000Z",
+  "updated_at": "2026-09-07T20:30:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "pathology",
+    "histopathology",
+    "feature-extraction",
+    "computational-pathology",
+    "vision-transformer",
+    "base_model:SophontAI/OpenMidnight",
+    "base_model:finetune:SophontAI/OpenMidnight",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13617454488,
+  "storage_human": "13.6 GB",
+  "base_model": "SophontAI/OpenMidnight",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "GitHub - MedARC-AI/OpenMidnight",
+      "url": "https://github.com/MedARC-AI/OpenMidnight",
+      "snippet": "OpenMidnight Fully open-source and improved replication of Kaiko.AI's pathology foundation model Midnight. Sophont · MedARC This is a publicly developed, open-source project by MedARC. If you are interested in helping out, join our Discord server and introduce yourself in our #path-fm channel."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "OpenMidnight/README.md at main · MedARC-AI/OpenMidnight",
+      "url": "https://github.com/MedARC-AI/OpenMidnight/blob/main/README.md",
+      "snippet": "Contribute to MedARC-AI/OpenMidnight development by creating an account on GitHub."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

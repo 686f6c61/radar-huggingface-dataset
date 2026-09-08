@@ -5,7 +5,7 @@
   "author": "NeuralIzaz",
   "url": "https://huggingface.co/NeuralIzaz/quran-whisper-lora",
   "created_at": "2026-08-31T20:11:54.000Z",
-  "updated_at": "2026-09-01T00:03:44.000Z",
+  "updated_at": "2026-09-07T11:31:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 85057368,
-  "storage_human": "85 MB",
+  "storage_bytes": 141762280,
+  "storage_human": "142 MB",
   "base_model": null,
   "formats": [
     "safetensors"

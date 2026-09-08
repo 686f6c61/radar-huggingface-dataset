@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "b4hsu/jacobian-lens",
+  "slug": "b4hsu-jacobian-lens",
+  "author": "b4hsu",
+  "url": "https://huggingface.co/b4hsu/jacobian-lens",
+  "created_at": "2026-09-07T19:45:14.000Z",
+  "updated_at": "2026-09-07T19:57:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "jacobian_lens",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1192778338,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stanardsville, VA Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/stanardsville/22973/hourly-weather-forecast/336289",
+      "snippet": "Hourly weather forecast in Stanardsville, VA. Check current conditions in Stanardsville, VA with radar, hourly, and more."
+    },
+    {
+      "title": "GitHub - anthropics/jacobian-lens: Companion code for the global ...",
+      "url": "https://github.com/anthropics/jacobian-lens",
+      "snippet": "Moreitems jlens — Jacobian lens Reference implementation. Not maintained and not accepting contributions. Companion code for Verbalizable Representations Form a Global Workspace in Language Models. The Jacobian lens reads out what an internal activation is disposed to make the model say. It linearly transports a residual-stream vector at any ..."
+    },
+    {
+      "title": "10-Day Weather Forecast for Stanardsville, Virginia - The Weather ...",
+      "url": "https://weather.com/us/virginia/city/stanardsville/tenday",
+      "snippet": "Be prepared with the most accurate 10-day forecast for Stanardsville, Virginia with highs, lows, chance of precipitation from The …"
+    },
+    {
+      "title": "neuronpedia/jacobian-lens · Hugging Face",
+      "url": "https://huggingface.co/neuronpedia/jacobian-lens",
+      "snippet": "This folder contains pre-fitted Jacobian Lenses for specific models. They were trained using Anthropic's Jacobian Lenslibrary. The same library can be used to load the lens and local visualizer."
+    },
+    {
+      "title": "Stanardsville, VA 10-Day Weather Forecast - Weather Underground",
+      "url": "https://www.wunderground.com/forecast/us/va/stanardsville",
+      "snippet": "Stanardsville Weather Forecasts. Weather Underground provides local & long-range weather forecasts, weatherreports, maps & …"
+    }
+  ]
+}

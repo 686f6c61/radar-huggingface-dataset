@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "IHEyeah/fastapi-langgraph-agent",
+  "slug": "iheyeah-fastapi-langgraph-agent",
+  "author": "IHEyeah",
+  "url": "https://huggingface.co/IHEyeah/fastapi-langgraph-agent",
+  "created_at": "2026-09-07T21:48:57.000Z",
+  "updated_at": "2026-09-07T21:48:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2f09b7b6c354604c3600a07bc24a61c2",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Streaming AI Agent with FastAPI & LangGraph (2025‑26 Guide)",
+      "url": "https://dev.to/kasi_viswanath/streaming-ai-agent-with-fastapi-langgraph-2025-26-guide-1nkn",
+      "snippet": "Build real‑time, file‑uploading AI agents that stream progress via SSE. Tagged with fastapi, langgraph, streaming, react."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "FastAPI LangGraph Agent Template - GitHub",
+      "url": "https://github.com/wassim249/fastapi-langgraph-agent-production-ready-template",
+      "snippet": "A production-ready template for building AI agent backends with FastAPI and LangGraph. Handles the hard parts — stateful conversations, long-term memory, tool calling, observability, rate limiting, auth — so you can focus on your agent logic."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

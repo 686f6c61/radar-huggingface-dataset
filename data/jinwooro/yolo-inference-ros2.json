@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jinwooro/yolo-inference-ros2",
+  "slug": "jinwooro-yolo-inference-ros2",
+  "author": "jinwooro",
+  "url": "https://huggingface.co/jinwooro/yolo-inference-ros2",
+  "created_at": "2026-09-07T23:18:04.000Z",
+  "updated_at": "2026-09-08T01:32:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2932212632,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Millionen von Menschen übersetzen täglich mit DeepL."
+    },
+    {
+      "title": "GitHub - mgonzs13/yolo_ros: Ultralytics YOLOv8, YOLOv9, YOLOv10 ...",
+      "url": "https://github.com/mgonzs13/yolo_ros",
+      "snippet": "ROS 2 wrap for YOLO models from Ultralytics to perform object detection and tracking, instance segmentation, human pose estimation and Oriented Bounding Box (OBB). There are also 3D versions of object detection, including instance segmentation, and human pose estimation based on depth images. The ..."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "GitHub - cvar-vision-dl/yolo-ros2-inference",
+      "url": "https://github.com/cvar-vision-dl/yolo-ros2-inference",
+      "snippet": "High-performance YOLO inference implementation in C++ for ROS2, optimized for robotics applications and real-time computer vision. This package provides a production-ready solution for deploying Ultralytics YOLO models on edge devices and robotic systems."
+    },
+    {
+      "title": "Englisch 痳・Deutsch - leo.org: Startseite",
+      "url": "https://dict.leo.org/englisch-deutsch/",
+      "snippet": "Wir freuen uns sehr, ab sofort allen Sch端lerinnen und Sch端lern in unserem Englisch-Deutsch Trainer Wortsch辰tze anbieten zu k …"
+    }
+  ]
+}

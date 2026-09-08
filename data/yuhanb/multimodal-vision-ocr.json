@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yuhanb/multimodal-vision-ocr",
+  "slug": "yuhanb-multimodal-vision-ocr",
+  "author": "yuhanb",
+  "url": "https://huggingface.co/yuhanb/multimodal-vision-ocr",
+  "created_at": "2026-09-07T20:00:26.000Z",
+  "updated_at": "2026-09-07T20:00:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai",
+    "micro-saas",
+    "digital-product",
+    "base_model:Qwen/Qwen2-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2-VL-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2-VL-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darmowe filmy porno 1,106 Kategorie XXX - pl.PORN.COM",
+      "url": "https://pl.porn.com/categories",
+      "snippet": "Całkowicie darmowe filmy na stronie z ponad 50 najlepszych kategorii porno na PORN.COM Wybierz swoją ulubioną i już teraz …"
+    },
+    {
+      "title": "shaneholloman/multimodal-ocr: Vision Language Model - GitHub",
+      "url": "https://github.com/shaneholloman/multimodal-ocr/tree/main",
+      "snippet": "Multimodal-OCR Multimodal-OCR is an experimental, high-performance visual reasoning and optical character recognition suite designed to accurately extract text, analyze visual content, and parse complex document structures. Built upon a diverse ecosystem of cutting-edge vision-language models—including architectures based on Qwen2.5-VL, Qwen2-VL, and Cohere's Aya-Vision—this application ..."
+    },
+    {
+      "title": "Polecane porno za darmo: Ostre hardkorowe seks filmy | Pornhub",
+      "url": "https://pl.pornhub.com/recommended",
+      "snippet": "Ktoś, kto poleca Ci darmowe porno jest jak kustosz Twojej listy XXX. Ciesz najlepszym polecanym porno na Twojej tubie!"
+    },
+    {
+      "title": "Vision AI Leaderboard - Best Image & Multimodal Models",
+      "url": "https://arena.ai/leaderboard/vision/ocr",
+      "snippet": "Min8.2K Max2M Vision Arena📝OCR View overall rankings across multimodal AI models capable of reasoning over visual inputs. Aug 27, 2026 600,745votes 104models"
+    },
+    {
+      "title": "Darmowe Filmy Porno – Tiava",
+      "url": "https://www.tiava.com/pl/",
+      "snippet": "Darmowe Filmy Porno – Tiava Filmy Popularne filmy Nowe filmy Najwyżej oceniane filmy Kategorie Taboo Fantasy 3,34 mlnVintage …"
+    }
+  ]
+}

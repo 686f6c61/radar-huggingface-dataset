@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Brazenle/dom-hotdog-rain",
+  "slug": "brazenle-dom-hotdog-rain",
+  "author": "Brazenle",
+  "url": "https://huggingface.co/Brazenle/dom-hotdog-rain",
+  "created_at": "2026-09-07T23:33:27.000Z",
+  "updated_at": "2026-09-07T23:44:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "peft",
+    "lora",
+    "dom",
+    "portfolio",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 816261499,
+  "storage_human": "816 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Social Media Platforms do Older Adults Use? - Technology for …",
+      "url": "https://www.techandsenior.com/what-social-media-platforms-do-older-adults-use/",
+      "snippet": "Feb 10, 2025 · Facebook (71%) and YouTube (51%) remain the clear winners among older adults. While Instagram and TikTok …"
+    },
+    {
+      "title": "BIZARRE HOTDOG RAIN IN BRAZIL #HOTDOG #AI #RAIN #BRASIL",
+      "url": "https://www.youtube.com/watch?v=1cT_XDZnVRA",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "What Social Media Do Seniors Use Most | Creating Results",
+      "url": "https://creatingresults.com/blog/2026/02/10/what-social-media-do-seniors-use-most-2026-update/",
+      "snippet": "Feb 10, 2026 · Learn about the social media habits of today’s seniors and gain valuable marketing insights for the older adult …"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Which social media do seniors use the most? Top platforms",
+      "url": "https://eldrio.com/which-social-media-do-seniors-use-the-most",
+      "snippet": "Oct 22, 2025 · Facebook is the leader: The platform consistently ranks as the most popular social network for adults over 65, …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "trinityomni/OpenThinker-32B",
+  "slug": "trinityomni-openthinker-32b",
+  "author": "trinityomni",
+  "url": "https://huggingface.co/trinityomni/OpenThinker-32B",
+  "created_at": "2026-09-07T21:42:58.000Z",
+  "updated_at": "2026-09-07T21:42:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:open-thoughts/open-thoughts-114k",
+    "arxiv:2506.04178",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-32B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65539270936,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wartune Ultra",
+      "url": "https://wartunelite.wan.com/",
+      "snippet": "※本遊戲為免費遊戲，但遊戲內另提供購買虛擬遊戲幣、物品等付費服務，請依個人興趣及能力進行適度消費。 ※《星曲 Ultra》 …"
+    },
+    {
+      "title": "open-thoughts/OpenThinker-32B · Hugging Face",
+      "url": "https://huggingface.co/open-thoughts/OpenThinker-32B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wartune Ultra Official - Classic Turn-based Fantasy Strategy RPG",
+      "url": "https://wartune.funshinegames.com/",
+      "snippet": "Apr 10, 2024 · Wartune Ultra is a mobile and PC-compatible turn-based strategy RPG that revives the classic 12-year-old browser …"
+    },
+    {
+      "title": "OpenThinker-32B | SingularityByte AI Magazine",
+      "url": "https://singularitybyte.com/models/openthinker-32b.html",
+      "snippet": "OpenThinker-32B is a sophisticated model designed to enhance reasoning capabilities. Leveraging the latest advancements in AI technology, OpenThinker-32B excels in mathematical reasoning, effortlessly tackling complex equations and problem-solving scenarios."
+    },
+    {
+      "title": "Wartune Ultra - wan.com",
+      "url": "https://wartunelite.wan.com/article/news_list",
+      "snippet": "When you visit any website, the website may store or retrieve information on your browser, mostly in the form of Cookies. This …"
+    }
+  ]
+}

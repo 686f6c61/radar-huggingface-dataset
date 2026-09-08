@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/MiniCPM5-2B-LiteRT",
+  "slug": "mlboydaisuke-minicpm5-2b-litert",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/MiniCPM5-2B-LiteRT",
+  "created_at": "2026-09-07T21:32:20.000Z",
+  "updated_at": "2026-09-07T21:53:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "minicpm",
+    "minicpm5",
+    "reasoning",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4156948320,
+  "storage_human": "4.2 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crossroads Bellevue",
+      "url": "https://crossroadsbellevue.com/",
+      "snippet": "Crossroads Bellevue is a community-centered destination bringing together a diverse mix of local businesses and global flavors. It’s a …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B-MLX · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Crossroads Bellevue Directory: Stores, Hours & Contacts",
+      "url": "https://www.malls.com/malls/crossroads_bellevue/",
+      "snippet": "Crossroads Bellevue is a 460,000 square foot regional mall in Bellevue, Washington, owned by the City of Bellevue and managed by …"
+    },
+    {
+      "title": "OpenBMB's MiniCPM5-2B: 2B on-device model beats 4B-class scores",
+      "url": "https://www.aimodeling.com/en/news/slug/openbmb-minicpm5-2b-on-device",
+      "snippet": "OpenBMB's 2B on-device model averages 53.9 over 34 benchmarks and beats compared 4B models; weights, data and recipe are open."
+    },
+    {
+      "title": "Crossroads Bellevue | Bellevue WA - Facebook",
+      "url": "https://www.facebook.com/CrossroadsBellevue/",
+      "snippet": "Crossroads Bellevue, Bellevue. 6,483 likes · 26 talking about this · 17,883 were here. A one-of-a kind shopping, dining, and …"
+    }
+  ]
+}

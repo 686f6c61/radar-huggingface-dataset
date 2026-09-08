@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/ADAPT-Qwen3-8.5B-i1-GGUF",
   "created_at": "2026-09-07T12:53:07.000Z",
-  "updated_at": "2026-09-07T14:30:06.000Z",
+  "updated_at": "2026-09-07T17:52:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 8492380416,
   "parameters_human": "8.49B",
-  "storage_bytes": 65218875008,
-  "storage_human": "65.2 GB",
+  "storage_bytes": 100750726528,
+  "storage_human": "100.8 GB",
   "base_model": "Harvard-DCML/ADAPT-Qwen3-8.5B",
   "formats": [
     "gguf"

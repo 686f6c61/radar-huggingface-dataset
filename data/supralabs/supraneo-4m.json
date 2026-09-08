@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SupraLabs/SupraNeo-4M",
+  "slug": "supralabs-supraneo-4m",
+  "author": "SupraLabs",
+  "url": "https://huggingface.co/SupraLabs/SupraNeo-4M",
+  "created_at": "2026-09-07T19:37:55.000Z",
+  "updated_at": "2026-09-07T20:34:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "tiny",
+    "small",
+    "pretrained-from-scratch",
+    "research",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "license:apache-2.0",
+    "co2_eq_emissions",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4070240,
+  "parameters_human": "4.1M",
+  "storage_bytes": 33736978,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FanFiktion.de - Das Fanfiction Archiv",
+      "url": "https://www.fanfiktion.de/",
+      "snippet": "Willkommen bei FanFiktion.de, dem Portal für Fanfiction und freie Werke. Stöbere in mehr als einer halben Million Geschichten zu …"
+    },
+    {
+      "title": "SupraLabs · Independent AI Lab",
+      "url": "https://supra-labs.com/",
+      "snippet": "SupraLabs is an independent research lab building open small language and multimodal models that run on consumer hardware."
+    },
+    {
+      "title": "Harry Potter - FFs - Harry Potter Universe - Bücher - Fanfiction ...",
+      "url": "https://www.fanfiktion.de/Harry-Potter-FFs/c/103005001/1/updatedate",
+      "snippet": "Sponsor werden und Werbung komplett deaktivieren Kategorie: Fanfiction/ Bücher/ Harry Potter Universe/ Harry Potter - FFs Inhalt …"
+    },
+    {
+      "title": "Models · SupraLabs",
+      "url": "https://supra-labs.com/models.html",
+      "snippet": "The full catalogue of SupraLabs open models: small language, reasoning, routing and specialist models from 1K to 752M parameters."
+    },
+    {
+      "title": "Forum | FanFiktion.de - Forum",
+      "url": "https://forum.fanfiktion.de/",
+      "snippet": "Ihr habt Verbesserungsvorschläge oder seid euch über etwas im Unklaren? Dies ist das richtige Forum."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nguyenbinh12x/revenue-summary-qwen3",
+  "slug": "nguyenbinh12x-revenue-summary-qwen3",
+  "author": "nguyenbinh12x",
+  "url": "https://huggingface.co/nguyenbinh12x/revenue-summary-qwen3",
+  "created_at": "2026-09-07T23:01:03.000Z",
+  "updated_at": "2026-09-07T23:01:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078186,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Explore the things you love. Log into Facebook"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Thinking-2507is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements: Significantly improved performanceon reasoning tasks, including logical reasoning, mathematics, science, coding, and academic benchmarks that typically require human expertise — achieving ..."
+    },
+    {
+      "title": "Facebook – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.facebook.katana&hl=fr",
+      "snippet": "Règles de confidentialité À propos du développeur Meta Platforms, Inc. android-support@fb.com 1 Meta Way Menlo Park, CA 94025 …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-distilbert-aegis-v3-module",
+  "slug": "hooshaai-svd-linear-attention-distilbert-aegis-v3-module",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v3-module",
+  "created_at": "2026-09-07T21:10:38.000Z",
+  "updated_at": "2026-09-07T22:56:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "distilbert",
+    "aegis_v3_module",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4748282,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:49.489Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CDN Links – React",
+      "url": "https://legacy.reactjs.org/docs/cdn-links.html",
+      "snippet": "To load a specific version of reactand react-dom, replace 18with the version number. Why the crossoriginAttribute? If you serve React …"
+    },
+    {
+      "title": "svd-linear-attention-sst2-results - Hugging Face",
+      "url": "https://huggingface.co/datasets/tahamajs/svd-linear-attention-sst2-results",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "React – A JavaScript library for building user interfaces",
+      "url": "https://legacy.reactjs.org/",
+      "snippet": "React allows you to interface with other libraries and frameworks. This example uses remarkable, an external Markdown library, to …"
+    },
+    {
+      "title": "GitHub - Hooshaai/hooshaai.github.io: Hoosha AI is an independent AI ...",
+      "url": "https://github.com/Hooshaai/hooshaai.github.io",
+      "snippet": "Hoosha AI is an independent AI research lab and systems engineering initiative dedicated to advancing continuous-time generative modeling (Continuous Flow Matching), differential attention mechanisms, and scalable GPU compute infrastructure. - Hooshaai/hooshaai.github.io"
+    },
+    {
+      "title": "React – 사용자 인터페이스를 만들기 위한 JavaScript 라이브러리",
+      "url": "https://ko.reactjs.org/",
+      "snippet": "React는 Node 서버에서 렌더링을 할 수도 있고, React Native를 이용하면 모바일 앱도 만들 수 있습니다. 간단한 컴포넌트 React …"
+    }
+  ]
+}

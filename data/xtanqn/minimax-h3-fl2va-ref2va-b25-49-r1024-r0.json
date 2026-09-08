@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xtanqn/MiniMax-H3-fl2va-ref2va-b25-49-r1024-r0",
+  "slug": "xtanqn-minimax-h3-fl2va-ref2va-b25-49-r1024-r0",
+  "author": "xtanqn",
+  "url": "https://huggingface.co/xtanqn/MiniMax-H3-fl2va-ref2va-b25-49-r1024-r0",
+  "created_at": "2026-09-07T05:03:49.000Z",
+  "updated_at": "2026-09-08T01:23:17.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "video-generation",
+    "hybrid",
+    "fp8",
+    "diffusion-models",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104791028040,
+  "storage_human": "104.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=22271a5be05967aa2e050d95e1cf6619",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "xtanqn/Minimax-H3-fl2va-ref2va-hybrid-models · Hugging Face",
+      "url": "https://huggingface.co/xtanqn/Minimax-H3-fl2va-ref2va-hybrid-models",
+      "snippet": "⚠️ 许可证与合规（重要） MiniMax-H3 hybrid (fl2va × ref2va) — fp8_scaled 融合模型集 这是一个 衍生模型（Model Derivative），基于 MiniMax AI 官方发布的 MiniMax-H3融合而成。 这是什么 把官方两个 checkpoint 拼成一个自包含融合模型，单文件同时具备两条通路："
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models · Hugging Face",
+      "url": "https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models",
+      "snippet": "Limitations Acknowledgements MiniMax H3 Hybrid (fl2va base + ref2va reference pathway) This is a merged variant of MiniMax H3, a joint audio+video diffusion transformer (DiT). It combines the two officially released MiniMax H3 checkpoints — fl2vaand ref2va— into a single model that aims to keep the best qualities of each."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ChodBhangra/knee-cartilage-segmentation",
+  "slug": "chodbhangra-knee-cartilage-segmentation",
+  "author": "ChodBhangra",
+  "url": "https://huggingface.co/ChodBhangra/knee-cartilage-segmentation",
+  "created_at": "2026-09-07T20:19:27.000Z",
+  "updated_at": "2026-09-08T02:08:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15297164065,
+  "storage_human": "15.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp am PC nutzen: So geht's mit und ohne Handy",
+      "url": "https://www.nextpit.de/ratgeber/whatsapp-am-pc-nutzen",
+      "snippet": "Jul 6, 2021 · WhatsApp könnt Ihr bequem auch am PC nutzen. NextPit verrät Euch, wie der Messenger auf Desktop-PCs und …"
+    },
+    {
+      "title": "GitHub - aakashrkaku/knee-cartilage-segmentation: The project covers ...",
+      "url": "https://github.com/aakashrkaku/knee-cartilage-segmentation",
+      "snippet": "The project covers various deep learning and traditional machine learning models to automate the segmentation of knee cartilages using the diffusion weighted MRIs. The best deep learning model performs at the human-expert level. Below are the results for the different Deep Learning Models."
+    },
+    {
+      "title": "is there a way to activate whatsapp without a sim card phone ... - Reddit",
+      "url": "https://www.reddit.com/r/whatsapp/comments/1ail8ve/is_there_a_way_to_activate_whatsapp_without_a_sim/",
+      "snippet": "MembersOnline Potential_Reach ADMIN MOD is there a way to activate whatsapp without a sim card phone number? Hello guys, I …"
+    },
+    {
+      "title": "Advancing deep learning based knee cartilage segmentation in MRI ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2665913125001384",
+      "snippet": "The study highlights substantial improvements against conventional methods in segmentation accuracy and efficiency using DL-based methods, given challenging scenarios of knee MRI. Solutions to key challenges are presented, and clinical applications showcase the potential of automated segmentation for cartilage thickness mapping and OA assessment."
+    },
+    {
+      "title": "Reddit Halo",
+      "url": "https://www.reddit.com/r/halo/hot/",
+      "snippet": "Reddit's home for all things Halo, the franchise developed by 343 Industries and previously developed by Bungie."
+    }
+  ]
+}

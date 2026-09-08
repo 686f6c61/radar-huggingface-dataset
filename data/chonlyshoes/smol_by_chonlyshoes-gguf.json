@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Chonlyshoes/SMOL_BY_CHONLYSHOES.gguf",
+  "slug": "chonlyshoes-smol_by_chonlyshoes-gguf",
+  "author": "Chonlyshoes",
+  "url": "https://huggingface.co/Chonlyshoes/SMOL_BY_CHONLYSHOES.gguf",
+  "created_at": "2026-09-07T20:13:11.000Z",
+  "updated_at": "2026-09-07T20:33:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90897760,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Musth - LEO: Übersetzung im Französisch ⇔ Deutsch Wörterbuch",
+      "url": "https://dict.leo.org/franz%C3%B6sisch-deutsch/Musth",
+      "snippet": "Lernen Sie die Übersetzung für 'Musth' in LEOs ­Französisch ⇔ Deutsch­ Wörterbuch. Mit Flexionstabellen der verschiedenen Fälle …"
+    },
+    {
+      "title": "Chonlyshoes/SMOL_BY_CHONLYSHOES.gguf · Hugging Face",
+      "url": "https://huggingface.co/Chonlyshoes/SMOL_BY_CHONLYSHOES.gguf",
+      "snippet": "Chonlyshoes SMOL_BY_CHONLYSHOES.gguf like1 GGUF License:apache-2.0 Model cardFilesFiles and versions xet"
+    },
+    {
+      "title": "musth - Übersetzung korrekt?: Englisch ⇔ Deutsch Forum - leo.org",
+      "url": "https://dict.leo.org/forum/viewWrongentry.php?idThread=1278831&lang=de",
+      "snippet": "LEO.org: Ihr Wörterbuch im Internet für ­Englisch-Deutsch­ Übersetzungen, mit Forum, Vokabeltrainer und Sprachkursen. Natürlich …"
+    },
+    {
+      "title": "Chonlyshoes/QWEN_BY_CHONLYSHOES.gguf at main - Hugging Face",
+      "url": "https://huggingface.co/Chonlyshoes/QWEN_BY_CHONLYSHOES.gguf/tree/main",
+      "snippet": "Instructions to use Chonlyshoes/QWEN_BY_CHONLYSHOES.gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mitgef端hl - LEO: ・bersetzung im Italienisch 痳・Deutsch W旦rterbuch",
+      "url": "https://dict.leo.org/italienisch-deutsch/mitgef%C3%BChl",
+      "snippet": "Lernen Sie die ・bersetzung f端r 'mitgef端hl' in LEOs憎足Italienisch 痳・Deutsch足憎W旦rterbuch. Mit Flexionstabellen der …"
+    }
+  ]
+}

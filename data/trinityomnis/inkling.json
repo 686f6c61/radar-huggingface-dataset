@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "trinityomnis/Inkling",
+  "slug": "trinityomnis-inkling",
+  "author": "trinityomnis",
+  "url": "https://huggingface.co/trinityomnis/Inkling",
+  "created_at": "2026-09-07T22:33:25.000Z",
+  "updated_at": "2026-09-07T22:33:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 952377623626,
+  "parameters_human": "952.38B",
+  "storage_bytes": 1904786955611,
+  "storage_human": "1904.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ABV - АБВ Поща - Вход",
+      "url": "https://home.abv.bg/",
+      "snippet": "АБВ Поща е бърза, удобна и сигурна! Разполагате с 15 GB пространство, управлявате контакти, а пощата ви е защитена. …"
+    },
+    {
+      "title": "trinityomnis/Inkling · Hugging Face",
+      "url": "https://huggingface.co/trinityomnis/Inkling",
+      "snippet": "The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation systems, and is suitable for general-purpose conversational use, instruction-following, and other natural language and multimodal tasks."
+    },
+    {
+      "title": "АБВ Профил - ABV",
+      "url": "https://passport.abv.bg/app/profiles/login",
+      "snippet": "С този профил може да ползвате всички АБВ услуги: АБВ Поща, DOX."
+    },
+    {
+      "title": "trinityomnis/Inkling-Small · Hugging Face",
+      "url": "https://huggingface.co/trinityomnis/Inkling-Small",
+      "snippet": "The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation systems, and is suitable for general-purpose conversational use, instruction-following, and other natural language and multimodal tasks."
+    },
+    {
+      "title": "АБВ Поща - ABV",
+      "url": "http://mail20.abv.bg/app/servlet/box",
+      "snippet": "АБВ.БГ - Нещо повече от пощенска кутия За да влезете обратно в пощенската си кутия, моля въведете потребителското си …"
+    }
+  ]
+}

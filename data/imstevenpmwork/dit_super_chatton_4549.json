@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "imstevenpmwork/dit_super_chatton_4549",
+  "slug": "imstevenpmwork-dit_super_chatton_4549",
+  "author": "imstevenpmwork",
+  "url": "https://huggingface.co/imstevenpmwork/dit_super_chatton_4549",
+  "created_at": "2026-09-07T19:34:43.000Z",
+  "updated_at": "2026-09-07T19:34:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "multi_task_dit",
+    "robotics",
+    "dataset:imstevenpmwork/super_chatton",
+    "arxiv:2507.05331",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 248855302,
+  "parameters_human": "248.9M",
+  "storage_bytes": 995509256,
+  "storage_human": "996 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تنزيل تطبيق \"ترجمة Google\" واستخدامه - جهاز الكمبيوتر - مساعدة Google ...",
+      "url": "https://support.google.com/translate/answer/6350850?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يتيح لك تطبيق \"ترجمة Google\" ترجمة نص أو كتابة بخط اليد أو صور أو كلام بأكثر من 200 لغة، ويمكنك أيضًا استخدام التطبيق على الويب. بإمكانك الاستفادة من \"ترجمة Google\" بعدّة …"
+    },
+    {
+      "title": "imstevenpmwork/super_chatton · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/imstevenpmwork/super_chatton/viewer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "تشغيل مترجم قوقل على جميع تطبيقات - منتدى تطبيقات Google",
+      "url": "https://support.google.com/googleplay/thread/1555598/%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%82%D9%88%D9%82%D9%84-%D8%B9%D9%84%D9%89-%D8%AC%D9%85%D9%8A%D8%B9-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA?hl=ar",
+      "snippet": "تشغيل مترجم قوقل على جميع تطبيقات - منتدى تطبيقات Google منتدى Google Play false"
+    },
+    {
+      "title": "imstevenpmwork/super_chatton_smolvla · Hugging Face",
+      "url": "https://huggingface.co/imstevenpmwork/super_chatton_smolvla",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡/9804990c-60c8-440c-b1ab-2a0a01c8a749",
+      "snippet": ""
+    }
+  ]
+}

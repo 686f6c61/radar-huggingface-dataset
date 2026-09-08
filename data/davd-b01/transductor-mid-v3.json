@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Davd-b01/transductor-mid-v3",
+  "slug": "davd-b01-transductor-mid-v3",
+  "author": "Davd-b01",
+  "url": "https://huggingface.co/Davd-b01/transductor-mid-v3",
+  "created_at": "2026-09-06T21:04:17.000Z",
+  "updated_at": "2026-09-07T22:26:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "reasoning-traces",
+    "thinking-levels",
+    "trace-generation",
+    "dataset-generation",
+    "condensed-thinking",
+    "sft",
+    "simpo",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412333046,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Occasions | Actueel aanbod tweedehands auto's - AutoWeek",
+      "url": "https://www.autoweek.nl/occasions/",
+      "snippet": "Kijk voor een actueel aanbod van tweedehands auto's bij AutoWeek occasions. Zoek en vergelijk in een aanbod van 200.000 occasions"
+    },
+    {
+      "title": "Davd-b01/transductor-mid-v3 · Hugging Face",
+      "url": "https://huggingface.co/Davd-b01/transductor-mid-v3",
+      "snippet": "Instructions to use Davd-b01/transductor-mid-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gaspedaal - NewMINIclub.nl | de grootste New MINI club van Nederland",
+      "url": "https://www.newminiclub.nl/forum/viewtopic.php?t=7373",
+      "snippet": "Jan 6, 2008 · Het gaspedaal is via de een van de BUS verbindingen aangesloten op de CPU, een storingsmelding hiervan zal zeker …"
+    },
+    {
+      "title": "Davd-b01/transductor-high-v3 · Hugging Face",
+      "url": "https://huggingface.co/Davd-b01/transductor-high-v3",
+      "snippet": "Instructions to use Davd-b01/transductor-high-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Zafira reageert niet op gaspedaal | Opel-Forum",
+      "url": "https://opel-forum.nl/threads/zafira-reageert-niet-op-gaspedaal.83554/",
+      "snippet": "Nov 9, 2009 · Beste allemaal, Ik heb sinds zaterdag een Zafira A, Elegance 1.8 automaat van 2002. Gisteren wilde ik wegrijden, auto …"
+    }
+  ]
+}

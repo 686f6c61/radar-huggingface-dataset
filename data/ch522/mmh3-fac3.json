@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-Fac3",
+  "slug": "ch522-mmh3-fac3",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-Fac3",
+  "created_at": "2026-09-07T22:41:50.000Z",
+  "updated_at": "2026-09-07T22:41:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155116991,
+  "storage_human": "155 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impôts 2026 -Frais professionnels : les barèmes kilométriques 2026 …",
+      "url": "https://www.service-public.gouv.fr/particuliers/actualites/A14686",
+      "snippet": "Ceux-ci dépendent de barèmes établis pour les différents types de véhicules. La brochure fiscale 2026 vient de publier les barèmes …"
+    },
+    {
+      "title": "CH522/MMh3-Fac3 · Hugging Face",
+      "url": "https://huggingface.co/CH522/MMh3-Fac3",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use CH522/MMh3-Fac3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use CH522/MMh3-Fac3 with Diffusers:"
+    },
+    {
+      "title": "Barème kilométrique 2026 : calcul et frais kilométriques",
+      "url": "https://www.legisocial.fr/reperes-sociaux/bareme-kilometrique-2026.html",
+      "snippet": "Jan 1, 2026 · Le barème kilométrique 2026 permet de calculer les frais kilométriques selon la distance parcourue et la puissance …"
+    },
+    {
+      "title": "Comfyui-MMH3-UltimateUpscale - GitHub",
+      "url": "https://github.com/bbaudio-2025/Comfyui-MMH3-UltimateUpscale",
+      "snippet": "MMH3 Latent Upscale with Model Paramsonly lists and loads .safetensorscheckpoints (.sftis accepted as well, matching ComfyUI core). Pickle formats (.pth/ .pt/ .ckpt) are skipped while scanning and are rejected beforethe file is opened."
+    },
+    {
+      "title": "Barème Kilométrique 2026 — Tableau officiel voiture, moto, …",
+      "url": "https://calculs-en-ligne.fr/bareme-kilometrique-2026/",
+      "snippet": "Apr 25, 2026 · Le barème kilométrique officiel permet de calculer le montant des frais de déplacement déductibles de vos revenus. …"
+    }
+  ]
+}

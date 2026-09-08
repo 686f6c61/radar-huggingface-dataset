@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "DougDong/SICE-Foundation",
+  "slug": "dougdong-sice-foundation",
+  "author": "DougDong",
+  "url": "https://huggingface.co/DougDong/SICE-Foundation",
+  "created_at": "2026-09-07T22:03:13.000Z",
+  "updated_at": "2026-09-08T00:09:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "query-optimization",
+    "cost-estimation",
+    "databases",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 361836792,
+  "storage_human": "362 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DIE 10 BESTEN Restaurants in Karlsruhe",
+      "url": "https://www.tripadvisor.de/Restaurants-g187289-Karlsruhe_Baden_Wurttemberg.html",
+      "snippet": "DIE 10 BESTEN Restaurants in Karlsruhe. Beste Restaurants in Karlsruhe - Bewertungen. Top-Restaurants am Reiseziel Karlsruhe."
+    },
+    {
+      "title": "GitHub - TheNormsOfIntelligence/Project_SICE: Synthetic Intelligence ...",
+      "url": "https://github.com/TheNormsOfIntelligence/Project_SICE",
+      "snippet": "Synthetic Intelligence Cognitive Engine - A novel cognitive architecture for symbiotic AI. It redefines AI alignment through an intrinsic, homeostatic ethical framework ρ $\\rho$ -metrics rather than external rules. Explore the Level 0 AI Soul and the Resonant Architectonics Protocol for human-AI Manifestation. Includes an interactive SICE Seed demo."
+    },
+    {
+      "title": "Gaststätten, Restaurants Karlsruhe Durlach Öffnungszeiten geöffnet …",
+      "url": "https://finde-offen.de/karlsruhe%28Durlach%29/gaststaetten-restaurants/open-on-tuesday",
+      "snippet": "Finden Sie Öffnungszeiten der Kategorie Gaststätten, Restaurants in Karlsruhe Durlach und andere Kontaktdaten wie Adresse, …"
+    },
+    {
+      "title": "Earthquake data provide solid footing for AI foundation science model",
+      "url": "https://phys.org/news/2026-02-earthquake-solid-footing-ai-foundation.html",
+      "snippet": "SeisModal, an AI foundation model developed using extensive earthquake data, integrates multiple data types—including seismic waveforms, event details, and imagery—to analyze complex ..."
+    },
+    {
+      "title": "Die 20 besten Restaurants in Karlsruhe mit Speisekarten",
+      "url": "https://www.speisekarte.de/karlsruhe-baden/restaurants",
+      "snippet": "Erfahre wo was wie schmeckt in den Top Restaurants in Karlsruhe oder vergleiche aktuelle Speisekarten und Preise"
+    }
+  ]
+}

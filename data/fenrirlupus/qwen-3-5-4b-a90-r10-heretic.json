@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "FenrirLupus/Qwen-3.5-4B-A90-R10-Heretic",
+  "slug": "fenrirlupus-qwen-3-5-4b-a90-r10-heretic",
+  "author": "FenrirLupus",
+  "url": "https://huggingface.co/FenrirLupus/Qwen-3.5-4B-A90-R10-Heretic",
+  "created_at": "2026-09-07T20:07:27.000Z",
+  "updated_at": "2026-09-07T23:20:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "qwen",
+    "3.5",
+    "4b",
+    "a90",
+    "r10",
+    "heretic",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 17665003357,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=378a325a9bce615137fa25979a2260fb",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "TheCluster/Qwen3.5-4B-Heretic-MLX-mxfp8 · Hugging Face",
+      "url": "https://huggingface.co/TheCluster/Qwen3.5-4B-Heretic-MLX-mxfp8",
+      "snippet": "This is a abliterated (uncensored) version of Qwen/Qwen3.5-4B, made using Heretic v1.2.0 with Multi-directional refusal supression This model supports thinking mode, but it is disabled by default."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "The official Qwen API is provided by Alibaba Cloud Model Studio. Alibaba Cloud Model Studio provides first-class support for Qwen3.5, which is compatible with various API specifications, including OpenAI and Anthropic, making it simple for you to try Qwen3.5 in your own applications."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

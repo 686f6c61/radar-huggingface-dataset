@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-roberta-bam-umoe",
+  "slug": "hooshaai-svd-linear-attention-roberta-bam-umoe",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-roberta-bam-umoe",
+  "created_at": "2026-09-07T21:16:21.000Z",
+  "updated_at": "2026-09-07T22:57:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "roberta",
+    "bam_umoe",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "arxiv:1701.06538",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14323350,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:39.095Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spiele - Online Spiele Kostenlos Spielen - JetztSpielen.de",
+      "url": "https://www.jetztspielen.de/",
+      "snippet": "Die besten kostenlosen Spiele online, einschließlich: Rennspiele, Sportspiele, Bubble Shooter, Friv-Spiele, Mahjong und viele mehr …"
+    },
+    {
+      "title": "HOOSHA AI — Frontier Artificial Intelligence & Open Research",
+      "url": "https://hooshaai.github.io/",
+      "snippet": "Hoosha AI — Frontier research laboratory pioneering sub-quadratic attention, continuous flow matching, and verified cognitive scaling architectures."
+    },
+    {
+      "title": "Spiele - 2000 kostenlose coole Spiele Jetzt spielen auf Jetztspielen",
+      "url": "https://www.jetztspielen.ws/",
+      "snippet": "Auf JetztSpielen findest du denn lustigsten kostenlosen Spiele für jung und alt. Mehr als 2000 Spiele gratis zu Spielen."
+    },
+    {
+      "title": "Hoosaha AI - GitHub",
+      "url": "https://github.com/Hooshaai",
+      "snippet": "AI works. Hoosaha AI has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Mahjong-Spiele - Spiele gratis Mahjong online auf Jetztspielen.de",
+      "url": "https://www.jetztspielen.de/spiele/mahjongg?page=1",
+      "snippet": "Egal, ob du ein Erwachsener bist, der eine kurze Pause sucht, oder ein Kind, das Spaß haben möchte: Hier kannst du direkt in …"
+    }
+  ]
+}

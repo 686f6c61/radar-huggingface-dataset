@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_llama8bins_omnimath_proximity",
+  "slug": "sstoica12-acquisition_llama8bins_omnimath_proximity",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_llama8bins_omnimath_proximity",
+  "created_at": "2026-09-07T20:19:01.000Z",
+  "updated_at": "2026-09-07T20:21:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "sstoica12/acquisition_llama8bins_omnimath_confidence · Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_llama8bins_omnimath_confidence",
+      "snippet": "Instructions to use sstoica12/acquisition_llama8bins_omnimath_confidence with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210/answers/updated",
+      "snippet": "Pinterest用户=带着明确购物需求来,转化率10-15%。 这就是为什么Pinterest在海外联盟营销圈被称为\"最适合新手的平台\"——用户本身 …"
+    },
+    {
+      "title": "sstoica12/acquisition_llama8bins_numina_proximity · Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_llama8bins_numina_proximity",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210",
+      "snippet": "Pinterest相对Flickr来说，恰恰是一种互补，每张图片基本可以关联到一条URL，进一步可以抽取其他信息。 从用户行为的角度上看， …"
+    }
+  ]
+}

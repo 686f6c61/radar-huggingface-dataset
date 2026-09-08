@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MN-Starlight-Sylph-12B-i1-GGUF",
+  "slug": "mradermacher-mn-starlight-sylph-12b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MN-Starlight-Sylph-12B-i1-GGUF",
+  "created_at": "2026-09-07T19:57:17.000Z",
+  "updated_at": "2026-09-07T21:00:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "della",
+    "mistral-nemo",
+    "mistral",
+    "nemo",
+    "writing",
+    "creative",
+    "text",
+    "adventure",
+    "conversational",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "RP",
+    "roleplaying",
+    "swearing",
+    "en",
+    "base_model:EldritchLabs/MN-Starlight-Sylph-12B",
+    "base_model:quantized:EldritchLabs/MN-Starlight-Sylph-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 141939042624,
+  "storage_human": "141.9 GB",
+  "base_model": "EldritchLabs/MN-Starlight-Sylph-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest Naked News, Breaking Naked News, Naked News Headlines",
+      "url": "https://www.wionews.com/tags/naked",
+      "snippet": "20 hours ago · New Yorkers come together to practice breathwork naked, hail experience."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=mradermacher",
+      "snippet": "mradermacher/Meta-Llama-3.1-13B-Instruct-abliterated-GGUF Updated 2 days ago • 328 • 3"
+    },
+    {
+      "title": "Quand les naturistes vantaient les Naked News",
+      "url": "https://www.naturisme-magazine.com/mediatheque/documents/quand-les-naturistes-vantaient-les-naked-news",
+      "snippet": "Nov 26, 2021 · Créée à Vancouver fin 1999, émettant de Toronto, la web-tv Naked News, fin 2001, semblait promise à un avenir …"
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Naked News World 9 - YouTube",
+      "url": "https://m.youtube.com/watch?v=KTRPVo0d90w",
+      "snippet": "Aug 30, 2009 · The best of Naked News."
+    }
+  ]
+}

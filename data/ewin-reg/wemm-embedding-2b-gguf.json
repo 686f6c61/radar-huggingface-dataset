@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "ewin-reg/WeMM-Embedding-2B-GGUF",
+  "slug": "ewin-reg-wemm-embedding-2b-gguf",
+  "author": "ewin-reg",
+  "url": "https://huggingface.co/ewin-reg/WeMM-Embedding-2B-GGUF",
+  "created_at": "2026-09-04T04:36:21.000Z",
+  "updated_at": "2026-09-08T00:24:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama-cpp",
+    "unsloth",
+    "sentence-transformers",
+    "text-embeddings",
+    "multimodal-embedding",
+    "feature-extraction",
+    "code-search",
+    "flatquant",
+    "schurscale",
+    "quantized",
+    "q4_k_m",
+    "q5_k_m",
+    "q6_k",
+    "q8_0",
+    "int4",
+    "int8",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2410.09426",
+    "arxiv:2608.25188",
+    "arxiv:2609.01587",
+    "arxiv:2608.28113",
+    "arxiv:2608.15567",
+    "arxiv:2609.04098",
+    "base_model:tencent/WeMM-Embedding-2B",
+    "base_model:quantized:tencent/WeMM-Embedding-2B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 200,
+  "trending_score": 0,
+  "parameters": 2389393216,
+  "parameters_human": "2.39B",
+  "storage_bytes": 20955997294,
+  "storage_human": "21.0 GB",
+  "base_model": "tencent/WeMM-Embedding-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code and Text Embedding",
+      "dataset": "Multi-Language Programming Corpus (100 Scripts)",
+      "metric": "Cosine Similarity Retention (vs FP16 Baseline)",
+      "value": 99.59
+    }
+  ],
+  "sources": [
+    {
+      "title": "Aarhus.dk",
+      "url": "https://aarhus.dk/?v=1.0.24",
+      "snippet": "Find information fra Aarhus Kommune om borgerservice, selvbetjening, byggeri, børnepasning og meget mere – nem adgang til alt …"
+    },
+    {
+      "title": "ewin-reg/WeMM-Embedding-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ewin-reg/WeMM-Embedding-2B-GGUF",
+      "snippet": "Instructions to use ewin-reg/WeMM-Embedding-2B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Aarhus - Wikipedia, den frie encyklopædi",
+      "url": "https://da.wikipedia.org/wiki/Aarhus",
+      "snippet": "Kategorier: Aarhus Købstæder Byer i Aarhus Kommune Havnebyer i Danmark Skjulte kategorier: Koordinater på Wikidata"
+    },
+    {
+      "title": "GitHub - Tencent/WeMM-Embedding: WeMM-Embedding is a family of ...",
+      "url": "https://github.com/Tencent/WeMM-Embedding",
+      "snippet": "WeMM-Embedding is a family of universal multimodal embedding models developed by the WeChat Vision team. It provides unified representations for text, images, videos, visual documents, and interleaved multimodal inputs, achieving state-of-the-art performance across multiple benchmarks covering diverse tasks and domains."
+    },
+    {
+      "title": "Aarhus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aarhus",
+      "snippet": ""
+    }
+  ]
+}

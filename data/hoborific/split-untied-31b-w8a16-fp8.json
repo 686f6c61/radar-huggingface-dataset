@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hoborific/Split-Untied-31B-W8A16-FP8",
+  "slug": "hoborific-split-untied-31b-w8a16-fp8",
+  "author": "hoborific",
+  "url": "https://huggingface.co/hoborific/Split-Untied-31B-W8A16-FP8",
+  "created_at": "2026-09-08T00:11:03.000Z",
+  "updated_at": "2026-09-08T00:24:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "w8a16",
+    "fp8",
+    "conversational",
+    "base_model:Blazed-Forge/Split-Untied-31B",
+    "base_model:quantized:Blazed-Forge/Split-Untied-31B",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32682375020,
+  "parameters_human": "32.68B",
+  "storage_bytes": 36131538834,
+  "storage_human": "36.1 GB",
+  "base_model": "Blazed-Forge/Split-Untied-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JPGからPNG – JPGをPNGにオンラインで変換",
+      "url": "https://jpg2png.com/ja/",
+      "snippet": "変換0すべて保存0 JPGからPNG：完全変換ガイド JPGをPNGに変換することは、ロスレスの画像品質が必要な場合や透明度を扱う …"
+    },
+    {
+      "title": "hoborific/Froopert-31B-W8A16-FP8 · Hugging Face",
+      "url": "https://huggingface.co/hoborific/Froopert-31B-W8A16-FP8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Convert JPG to PNG Online",
+      "url": "https://jpg2png.com/",
+      "snippet": "Convert JPG to PNG for free. All processing happens in your browser – your files never leave your device."
+    },
+    {
+      "title": "hoborific/Serenity-31B-v1.1-W8A16-FP8 · Hugging Face",
+      "url": "https://huggingface.co/hoborific/Serenity-31B-v1.1-W8A16-FP8",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use hoborific/Serenity-31B-v1.1-W8A16-FP8 with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "JPG를 PNG로 온라인 변환",
+      "url": "https://jpg2png.com/ko/",
+      "snippet": "JPG를 무료로 PNG로 변환하세요. 모든 처리는 브라우저에서 수행됩니다 – 파일이 기기를 떠나지 않습니다."
+    }
+  ]
+}

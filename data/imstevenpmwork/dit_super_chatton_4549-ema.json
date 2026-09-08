@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "imstevenpmwork/dit_super_chatton_4549-ema",
+  "slug": "imstevenpmwork-dit_super_chatton_4549-ema",
+  "author": "imstevenpmwork",
+  "url": "https://huggingface.co/imstevenpmwork/dit_super_chatton_4549-ema",
+  "created_at": "2026-09-07T19:34:59.000Z",
+  "updated_at": "2026-09-07T19:35:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "multi_task_dit",
+    "robotics",
+    "dataset:imstevenpmwork/super_chatton",
+    "arxiv:2507.05331",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 248855302,
+  "parameters_human": "248.9M",
+  "storage_bytes": 995509256,
+  "storage_human": "996 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://fr.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/d?reason=invalid_crumb",
+      "snippet": "Il est temps de passer à l’action avec Yahoo Mail. Pour commencer, il vous suffit d’ajouter votre compte Gmail, Outlook, AOL ou …"
+    },
+    {
+      "title": "imstevenpmwork/super_chatton · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/imstevenpmwork/super_chatton/viewer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Connexion - Se connecter à Yahoo",
+      "url": "https://fr.mail.yahoo.com/\"",
+      "snippet": "Connectez-vous pour accéder à Yahoo Mail, toujours plus performant : Yahoo Mail, actualités locales, nationales et internationales, …"
+    }
+  ]
+}

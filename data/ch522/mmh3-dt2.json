@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-Dt2",
+  "slug": "ch522-mmh3-dt2",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-Dt2",
+  "created_at": "2026-09-07T23:19:04.000Z",
+  "updated_at": "2026-09-07T23:19:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 424405063,
+  "storage_human": "424 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "麦当劳 (万通金融中心店) - 北京市西城区 - 餐饮服务;快餐厅 ...",
+      "url": "https://www.amap.com/place/B000A840W9",
+      "snippet": "Jul 15, 2016 · 麦当劳 (万通金融中心店)是一家麦当劳，位于北京市西城区（北京市西城区阜成门外大街2-8号阜成门 (万通金融中心北1 …"
+    },
+    {
+      "title": "CH522/FLUX-Enhance3 · Hugging Face",
+      "url": "https://huggingface.co/CH522/FLUX-Enhance3",
+      "snippet": "CH522 / FLUX-Enhance3 like 0 Text-to-Image Diffusers lora template:diffusion-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "找餐厅 - 麦当劳官网",
+      "url": "https://www.mcdonalds.com.cn/top/map",
+      "snippet": "麦当劳 关于我们 麦当劳全球 品牌介绍 经营理念 合规与商业道德"
+    },
+    {
+      "title": "Comfyui-MMH3-UltimateUpscale - GitHub",
+      "url": "https://github.com/bbaudio-2025/Comfyui-MMH3-UltimateUpscale",
+      "snippet": "MMH3 Latent Upscale with Model Paramsonly lists and loads .safetensorscheckpoints (.sftis accepted as well, matching ComfyUI core). Pickle formats (.pth/ .pt/ .ckpt) are skipped while scanning and are rejected beforethe file is opened."
+    },
+    {
+      "title": "麦当劳餐厅信息公示 | 麦当劳官网",
+      "url": "https://www.mcdonalds.com.cn/index/quality/publicinfo/deliveryinfo&?page=11",
+      "snippet": "麦当劳中国官方网站。 发现麦当劳的经典汉堡、当期新品、优惠活动和最新优惠券，了解麦当劳企业和招聘信息，还可以寻找附近门 …"
+    }
+  ]
+}

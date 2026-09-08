@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "trinityomni/OpenThinkerAgent-32B-SFT-10K",
+  "slug": "trinityomni-openthinkeragent-32b-sft-10k",
+  "author": "trinityomni",
+  "url": "https://huggingface.co/trinityomni/OpenThinkerAgent-32B-SFT-10K",
+  "created_at": "2026-09-07T21:45:44.000Z",
+  "updated_at": "2026-09-07T21:45:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agents",
+    "terminal",
+    "code",
+    "software-engineering",
+    "conversational",
+    "dataset:open-thoughts/OpenThoughts-Agent-SFT-10K",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 676864,
+  "parameters_human": "676864",
+  "storage_bytes": 65535751214,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "open-thoughts/OpenThinkerAgent-32B-SFT-10K · Hugging Face",
+      "url": "https://huggingface.co/open-thoughts/OpenThinkerAgent-32B-SFT-10K",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "README.md · open-thoughts/OpenThinkerAgent-32B-SFT-10K at main",
+      "url": "https://huggingface.co/open-thoughts/OpenThinkerAgent-32B-SFT-10K/blob/main/README.md",
+      "snippet": "The model is trained on OpenThoughts-Agent-SFT-10K: (task, agent-trajectory) pairs from the Top-4 task sources (SWE-Smith, StackExchange-SuperUser, StackExchange-Tezos with synthetic augmentation, IssueTasks)."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

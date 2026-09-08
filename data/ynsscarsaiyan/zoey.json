@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "YNSScarSaiyan/zoey",
+  "slug": "ynsscarsaiyan-zoey",
+  "author": "YNSScarSaiyan",
+  "url": "https://huggingface.co/YNSScarSaiyan/zoey",
+  "created_at": "2026-08-20T04:02:17.000Z",
+  "updated_at": "2026-09-08T01:27:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "safetensors",
+    "vsa",
+    "hyperdimensional-computing",
+    "hopfield",
+    "neurosymbolic",
+    "malbolge",
+    "brainfuck",
+    "not-a-transformer",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156285320687,
+  "storage_human": "156.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopitiam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/Kopitiam",
+      "snippet": "While Kopitiam is a place to hang out and chat, annoying threads which make no sense at all will be deleted and offenders warned. …"
+    },
+    {
+      "title": "YNSScarSaiyan/simi-weights · Hugging Face",
+      "url": "https://huggingface.co/YNSScarSaiyan/simi-weights",
+      "snippet": "Public weights-only repository. No architecture or training source is stored here. SImi-2B is a custom Llama-style causal language model trained in JAX/Flax. This repository is the public parameter mirrorfor the student. It does not contain the private recovery snapshot, optimizer state, or source archive from YNSScarSaiyan/simi, and it is nota drop-in Transformers checkpoint."
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Payment need to be processed by company, so need invoice. cb shop can only give invoice thru Whatsapp. They …"
+    },
+    {
+      "title": "Zoey - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1927423180287478056",
+      "snippet": "Generate stunning anime art with the 'Zoey' model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/office-365-shared-folder-deletion-incident-my-name/e89116e8-02c7-41cb-9c14-643c8ed8929f",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DELTACORPS/mt5-intel",
+  "slug": "deltacorps-mt5-intel",
+  "author": "DELTACORPS",
+  "url": "https://huggingface.co/DELTACORPS/mt5-intel",
+  "created_at": "2026-09-07T17:01:28.000Z",
+  "updated_at": "2026-09-07T17:01:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "mT5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mt5",
+      "snippet": "mT5 mT5 is a multilingual variant of T5, trained on 101 languages. It also incorporates a new “accidental translation” technique to prevent the model from incorrectly translating predictions into the wrong language."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "Delta Electronics Delivers GenAI/LLM for Network Security AI ... - Intel",
+      "url": "https://www.intel.com/content/www/us/en/content-details/853588/delta-electronics-delivers-genai-llm-for-network-security-ai-with-intel-arc-gpu.html",
+      "snippet": "Delta DV-5002I, based on Intel® Xeon® Scalable processors and Intel® Arc™ A-series Graphics, is optimized for Large Language Model (LLM) and Artificial Intelligence (AI)-based network security workloads."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

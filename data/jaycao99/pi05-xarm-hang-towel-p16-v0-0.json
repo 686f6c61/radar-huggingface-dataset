@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/pi05-xarm-hang-towel-p16-v0.0",
+  "slug": "jaycao99-pi05-xarm-hang-towel-p16-v0-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/pi05-xarm-hang-towel-p16-v0.0",
+  "created_at": "2026-09-07T22:25:19.000Z",
+  "updated_at": "2026-09-07T22:26:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9354066736,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopitiam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/Kopitiam",
+      "snippet": "Threads or posts pertaining to racial, religious, political or sexual issues are strictly prohibited in Kopitiam, Serious Kopitiam and its …"
+    },
+    {
+      "title": "JayCao99/pi05-xarm-hang-towel-v0.0 · Hugging Face",
+      "url": "https://huggingface.co/JayCao99/pi05-xarm-hang-towel-v0.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Payment need to be processed by company, so need invoice. cb shop can only give invoice thru Whatsapp. They …"
+    },
+    {
+      "title": "JayCao99/xarm-hang-towel-v0 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/JayCao99/xarm-hang-towel-v0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/security-issue-im-moving-out-of-microsoft/b0c5dce4-4465-436a-8cdc-09daf77a70c8",
+      "snippet": ""
+    }
+  ]
+}

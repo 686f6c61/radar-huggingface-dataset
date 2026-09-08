@@ -4,8 +4,8 @@
   "slug": "sigmanih-qwen-qwen3-8-flash-next-gguf-q8_0",
   "author": "sigmanih",
   "url": "https://huggingface.co/sigmanih/Qwen-Qwen3.8-Flash-Next-GGUF-Q8_0",
-  "created_at": "2026-09-01T11:52:22.000Z",
-  "updated_at": "2026-09-01T11:52:23.000Z",
+  "created_at": "2026-09-07T19:07:43.000Z",
+  "updated_at": "2026-09-07T19:08:28.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -44,8 +44,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-02T02:30:55.825Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

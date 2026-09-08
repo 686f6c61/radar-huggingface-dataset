@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-qwen3_5-astro",
+  "slug": "hooshaai-svd-linear-attention-qwen3_5-astro",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-qwen3_5-astro",
+  "created_at": "2026-09-07T21:12:51.000Z",
+  "updated_at": "2026-09-07T22:56:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "qwen3_5",
+    "astro",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43422984,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:43.336Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare Cheap Flights & Book Airline Tickets to Everywhere | Skyscanner",
+      "url": "https://www.skyscanner.com/",
+      "snippet": "How can I find the cheapest flight using Skyscanner? Finding flights is easy here – over 100 million savvy travelers come to us each …"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Compared with our previous MoE Qwen2.5-Plus of similar size, Qwen3-235B-A22B-Base significantly outperforms it with fewer parameters and activated parameters, which shows the remarkable advantages of Qwen3 in pre-training data, training strategy, and model architecture."
+    },
+    {
+      "title": "Billigflüge: günstige Flüge und Flugtickets buchen | Skyscanner",
+      "url": "https://www.skyscanner.de/?msockid=0240ad4b21fb68fb2945ba86209a69cb",
+      "snippet": "Wie finde ich den günstigsten Flug mit Skyscanner? Hier ist es einfach, Flüge zu finden – über 100 Millionen versierte Reisende …"
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Compare Cheap Flights & Book Airline Tickets to Everywhere | Skyscanner",
+      "url": "https://www.skyscanner.net/?msockid=0240ad4b21fb68fb2945ba86209a69cb",
+      "snippet": "How can I find the cheapest flight using Skyscanner? Finding flights is easy here – over 100 million savvy travellers come to us each …"
+    }
+  ]
+}

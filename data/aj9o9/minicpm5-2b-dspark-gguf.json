@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aj9o9/MiniCPM5-2B-DSpark-GGUF",
+  "slug": "aj9o9-minicpm5-2b-dspark-gguf",
+  "author": "aj9o9",
+  "url": "https://huggingface.co/aj9o9/MiniCPM5-2B-DSpark-GGUF",
+  "created_at": "2026-09-07T19:24:22.000Z",
+  "updated_at": "2026-09-07T19:43:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "dspark",
+    "speculative-decoding",
+    "llama.cpp",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B-DSpark",
+    "base_model:quantized:openbmb/MiniCPM5-2B-DSpark",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 323776001,
+  "parameters_human": "323.8M",
+  "storage_bytes": 1001951072,
+  "storage_human": "1.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B-DSpark",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B-DSpark · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-DSpark",
+      "snippet": "Instructions to use openbmb/MiniCPM5-2B-DSpark with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "jeferson2106",
   "url": "https://huggingface.co/jeferson2106/medico_ia_jeferson_br",
   "created_at": "2026-09-04T22:25:49.000Z",
-  "updated_at": "2026-09-04T22:26:54.000Z",
+  "updated_at": "2026-09-07T16:44:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,12 +20,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 4920734080,
-  "storage_human": "4.9 GB",
+  "storage_bytes": 9841468160,
+  "storage_human": "9.8 GB",
   "base_model": null,
   "formats": [
     "gguf"

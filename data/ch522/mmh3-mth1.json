@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-Mth1",
+  "slug": "ch522-mmh3-mth1",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-Mth1",
+  "created_at": "2026-09-07T23:09:44.000Z",
+  "updated_at": "2026-09-07T23:09:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310198143,
+  "storage_human": "310 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autos & mehr: Gebrauchtwagen & Neuwagen kaufen » mobile.de",
+      "url": "https://www.mobile.de/?msockid=1988cb562e96620f007edc982f9463e0",
+      "snippet": "Auf mobile.de kannst du einfach ein Auto kaufen oder verkaufen. Finde Gebrauchtwagenoder Neuwagen, Youngtimer oder Oldtimer. …"
+    },
+    {
+      "title": "CH522/FLUX-Enhance3 · Hugging Face",
+      "url": "https://huggingface.co/CH522/FLUX-Enhance3",
+      "snippet": "CH522 / FLUX-Enhance3 like 0 Text-to-Image Diffusers lora template:diffusion-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gebrauchtwagen in der Nähe kaufen bei mobile",
+      "url": "https://suchen.mobile.de/auto/gebrauchtwagen.html?msockid=1988cb562e96620f007edc982f9463e0",
+      "snippet": "Finde Gebrauchtwagen in deiner Nähe bei mobile.de – Größter Fahrzeugmarkt in DE Jetzt TÜV-geprüftes Traumauto kaufen oder …"
+    },
+    {
+      "title": "LBH-123-AI/Minimax_h3_latent_Upscaler · Hugging Face",
+      "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mobile.de — nowe i używane samochody — Twój rynek pojazdów w …",
+      "url": "https://www.mobile.de/pl?msockid=1988cb562e96620f007edc982f9463e0",
+      "snippet": "mobile.de/pl jest częścią mobile.de, największej niemieckiej giełdy samochodowej. mobile.de ułatwia zakup pojazdu. Za pomocą …"
+    }
+  ]
+}

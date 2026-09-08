@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "khtsly/luau-coder-1.0-preview-medium",
+  "slug": "khtsly-luau-coder-1-0-preview-medium",
+  "author": "khtsly",
+  "url": "https://huggingface.co/khtsly/luau-coder-1.0-preview-medium",
+  "created_at": "2026-09-07T22:29:49.000Z",
+  "updated_at": "2026-09-08T01:46:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_linear",
+    "text-generation",
+    "kimi-k3",
+    "luau",
+    "experimental-checkpoint",
+    "custom_code",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1398887904,
+  "parameters_human": "1.40B",
+  "storage_bytes": 49500770100,
+  "storage_human": "49.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khtsly/luau-coder-1.0-preview-medium · Hugging Face",
+      "url": "https://huggingface.co/khtsly/luau-coder-1.0-preview-medium",
+      "snippet": "Instructions to use khtsly/luau-coder-1.0-preview-medium with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "khtsly/luau-coder-1.0-preview-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/khtsly/luau-coder-1.0-preview-tokenizer",
+      "snippet": "khtsly / luau-coder-1.0-preview-tokenizer like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Luau · GitHub",
+      "url": "https://github.com/luau-lang",
+      "snippet": "a small, fast, and embeddable programming language based on Lua with a gradual type system. Developed and maintained by @Roblox. - Luau"
+    },
+    {
+      "title": "khtsly (khtsly) - Hugging Face",
+      "url": "https://huggingface.co/khtsly",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper 1 day ago ... upvoted a paper 2 days ago"
+    },
+    {
+      "title": "New AI Releases Daily — Models, Tools & Papers | AI/TLDR",
+      "url": "https://ai-tldr.dev/",
+      "snippet": "Every new AI model, repo, tool, and paper worth knowing — refreshed every 2 hours and explained in plain English. Track what's shipping today."
+    }
+  ]
+}

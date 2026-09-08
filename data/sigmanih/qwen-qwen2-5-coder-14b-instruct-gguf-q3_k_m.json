@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q3_K_M",
+  "slug": "sigmanih-qwen-qwen2-5-coder-14b-instruct-gguf-q3_k_m",
+  "author": "sigmanih",
+  "url": "https://huggingface.co/sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q3_K_M",
+  "created_at": "2026-09-07T20:24:23.000Z",
+  "updated_at": "2026-09-07T20:29:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "sigma-studio",
+    "sigmanih",
+    "conversational",
+    "custom-model",
+    "llama.cpp",
+    "quantized",
+    "q3_k_m",
+    "en",
+    "it",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 7339204128,
+  "storage_human": "7.3 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تثبيت تطبيق \"Drive للكمبيوتر المكتبي\" - مركز تعلُّم Google Workspace",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=ar",
+      "snippet": "يمكنك العثور على ملفاتك وفتحها من Google Drive على الكمبيوتر باستخدام تطبيق \"Drive للكمبيوتر المكتبي\". يمكنك استخدام تطبيق \"Drive للكمبيوت"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B",
+      "snippet": "As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers. Qwen2.5-Coder brings the following improvements upon CodeQwen1.5: Significantly improvements in code generation, code reasoningand code fixing."
+    },
+    {
+      "title": "Instalowanie Dysku na komputer - Centrum edukacji Google Workspace",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=pl",
+      "snippet": "Dysk na komputer umożliwia wyszukiwanie i otwieranie na komputerze plików zapisanych na Dysku Google. Przy użyciu Dysku na …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "C盘里面的AppData文件夹是否可以移动到其他盘？ - 知乎",
+      "url": "https://www.zhihu.com/question/311149805",
+      "snippet": "使用win10系统家庭版，本身就很大，导致C盘空间剩余无几。里面文件夹该删除的删除，该移动的移动，希望能…"
+    }
+  ]
+}

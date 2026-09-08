@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MN-Starlight-Sylph-12B-GGUF",
+  "slug": "mradermacher-mn-starlight-sylph-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MN-Starlight-Sylph-12B-GGUF",
+  "created_at": "2026-09-07T19:43:09.000Z",
+  "updated_at": "2026-09-07T20:30:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "della",
+    "mistral-nemo",
+    "mistral",
+    "nemo",
+    "writing",
+    "creative",
+    "text",
+    "adventure",
+    "conversational",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "RP",
+    "roleplaying",
+    "swearing",
+    "en",
+    "base_model:EldritchLabs/MN-Starlight-Sylph-12B",
+    "base_model:quantized:EldritchLabs/MN-Starlight-Sylph-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692285120,
+  "storage_human": "84.7 GB",
+  "base_model": "EldritchLabs/MN-Starlight-Sylph-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2d8cad95cd96643b2847ba58cc15650d",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "mradermacher/Starlight-V3-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Starlight-V3-12B-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "mradermacher/MN-12B-Starcannon-v1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MN-12B-Starcannon-v1-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

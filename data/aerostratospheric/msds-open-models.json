@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "aerostratospheric/msds-open-models",
+  "slug": "aerostratospheric-msds-open-models",
+  "author": "aerostratospheric",
+  "url": "https://huggingface.co/aerostratospheric/msds-open-models",
+  "created_at": "2026-09-07T22:34:23.000Z",
+  "updated_at": "2026-09-07T22:45:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "msds-open-models-hub",
+    "weather",
+    "geospatial",
+    "open-data",
+    "uogw",
+    "gir",
+    "scikit-learn",
+    "aerostratospheric",
+    "tabular-classification",
+    "en",
+    "dataset:aerostratospheric/uogw",
+    "dataset:aerostratospheric/gir",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（&#9745;）怎么打出这符号&#9745;这个符号可以用word的特殊字符打出来。以Word2016版为例，具体步骤如 …"
+    },
+    {
+      "title": "aerostratospheric/msds-open-models · Hugging Face",
+      "url": "https://huggingface.co/aerostratospheric/msds-open-models",
+      "snippet": "Aerostratospheric open scientific models Index for the Aerostratospheric/ Midwest Stratospheric Data Systems open dataset + model stack on Hugging Face. Aerostratospheric is an Illinois nonprofit. It designs, builds, and flies lightweight high-altitude platforms from Casey, Illinois and releases the resulting atmospheric data publicly — typically within 48 hours of recovery. This hub card ..."
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "aerostratospheric (aerostratospheric) - Hugging Face",
+      "url": "https://huggingface.co/aerostratospheric",
+      "snippet": "publisheda modelabout 2 hours ago aerostratospheric/msds-open-models updateda modelabout 2 hours ago aerostratospheric/gir-open-tier-suite View all activity Organizations models3"
+    },
+    {
+      "title": "如何快速输入乘号 ×-百度经验",
+      "url": "https://jingyan.baidu.com/article/48206aea0d63fa616bd6b37a.html",
+      "snippet": "Dec 17, 2019 · 如何快速输入乘号 ×,平时我们在工作学习中需要输入乘号“×”时，键盘和快捷符号栏都没有这个符合，这里分享一下如何 …"
+    }
+  ]
+}

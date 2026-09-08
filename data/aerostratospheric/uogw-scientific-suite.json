@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aerostratospheric/uogw-scientific-suite",
+  "slug": "aerostratospheric-uogw-scientific-suite",
+  "author": "aerostratospheric",
+  "url": "https://huggingface.co/aerostratospheric/uogw-scientific-suite",
+  "created_at": "2026-09-07T22:34:20.000Z",
+  "updated_at": "2026-09-07T22:45:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "uogw-scientific-suite",
+    "weather",
+    "atmosphere",
+    "anomaly-detection",
+    "heat-index",
+    "tabular",
+    "scikit-learn",
+    "open-data",
+    "uogw",
+    "aerostratospheric",
+    "tabular-classification",
+    "en",
+    "dataset:aerostratospheric/uogw",
+    "dataset:aerostratospheric/gir",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2536600,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logowanie - Santander Bank Polska",
+      "url": "https://www.centrum24.pl/centrum24-web/crypt.QnfeJh6yvEsjhhiEcSxpyw/login",
+      "snippet": "Wystarczy, że gdy nasz asystent głosowy zapyta Cię, o czym chcesz porozmawiać, określisz krótko temat rozmowy, na …"
+    },
+    {
+      "title": "aerostratospheric/uogw-scientific-suite · Hugging Face",
+      "url": "https://huggingface.co/aerostratospheric/uogw-scientific-suite",
+      "snippet": "Instructions to use aerostratospheric/uogw-scientific-suite with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Santander Bank Polska - Logowanie",
+      "url": "https://centrum24.pl/",
+      "snippet": "Wystarczy, że gdy nasz asystent głosowy zapyta Cię, o czym chcesz porozmawiać, określisz krótko temat rozmowy, na …"
+    },
+    {
+      "title": "aerostratospheric/uogw · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/aerostratospheric/uogw",
+      "snippet": "UOGW is a versioned discovery and sampling layerfor open atmospheric observations: ground, marine, upper-air, stratospheric / space, satellite / model, and first-party"
+    },
+    {
+      "title": "Bankowość internetowa - Erste",
+      "url": "https://www.erste.pl/klient-indywidualny/bankowosc-internetowa/erste-internet",
+      "snippet": "Zarządzaj wygodnie swoim kontem z poziomu komputera lub urządzeń mobilnych. bankowość internetowa Erste to doskonała opcja …"
+    }
+  ]
+}

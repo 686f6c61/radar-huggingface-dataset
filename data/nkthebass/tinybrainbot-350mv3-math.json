@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "nkthebass/tinybrainbot-350mV3-math",
+  "slug": "nkthebass-tinybrainbot-350mv3-math",
+  "author": "nkthebass",
+  "url": "https://huggingface.co/nkthebass/tinybrainbot-350mV3-math",
+  "created_at": "2026-09-07T20:38:08.000Z",
+  "updated_at": "2026-09-08T00:27:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tinybrainbot",
+    "small-language-model",
+    "from-scratch",
+    "gqa",
+    "math",
+    "arithmetic",
+    "conversational",
+    "en",
+    "base_model:nkthebass/tinybrainbot-350mV3-instruct",
+    "base_model:quantized:nkthebass/tinybrainbot-350mV3-instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 348342912,
+  "parameters_human": "348.3M",
+  "storage_bytes": 1395043591,
+  "storage_human": "1.4 GB",
+  "base_model": "nkthebass/tinybrainbot-350mV3-instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YELLOU イエロー【公式】",
+      "url": "https://alldaydiningyellou.owst.jp/",
+      "snippet": "久茂地のイタリアン・フレンチ、YELLOU イエローのホームページです。お店の基本情報やおすすめ料理の「【各種コース】フレ …"
+    },
+    {
+      "title": "nkthebass/tinybrainbot-350mV3-math · Hugging Face",
+      "url": "https://huggingface.co/nkthebass/tinybrainbot-350mV3-math",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use nkthebass/tinybrainbot-350mV3-math with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use nkthebass/tinybrainbot-350mV3-math with Transformers:"
+    },
+    {
+      "title": "YELLOU （イエロー）のご予約 - 県庁前/ダイニングバー | 食べログ",
+      "url": "https://tabelog.com/okinawa/A4701/A470101/47030781/?msockid=0ea349c3cdbb6780119d5e0dcc1b6690",
+      "snippet": "YELLOU/イエロー (県庁前/ダイニングバー)の店舗情報は食べログでチェック！【国際通り徒歩5分】開放的な空間でデートや女子会 …"
+    },
+    {
+      "title": "nkthebass/tinybrainbot-350mV3-instruct · Hugging Face",
+      "url": "https://huggingface.co/nkthebass/tinybrainbot-350mV3-instruct",
+      "snippet": "Instructions to use nkthebass/tinybrainbot-350mV3-instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "yellow 大井町トラックス （イエロー） - 大井町/オムライス ...",
+      "url": "https://tabelog.com/tokyo/A1315/A131501/13318044/?msockid=0ea349c3cdbb6780119d5e0dcc1b6690",
+      "snippet": "行列のできる超人気オムライス店♪ 大井町の「yellow 大井町トラックス」さんにお邪魔してきました♪ いつも行列ができている人気 …"
+    }
+  ]
+}

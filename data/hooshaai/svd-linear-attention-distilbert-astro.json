@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-distilbert-astro",
+  "slug": "hooshaai-svd-linear-attention-distilbert-astro",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-astro",
+  "created_at": "2026-09-07T21:11:11.000Z",
+  "updated_at": "2026-09-07T22:56:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "distilbert",
+    "astro",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2373584,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-08T02:18:46.414Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "المسلسلات التركية - موقع قصة عشق - موقع قصة عشق - قصة عشق",
+      "url": "https://eshq.news/series/",
+      "snippet": "مكتبة مسلسلات تركية مترجمة ومدبلجة حصرية على موقع قصة عشق. شاهد مواسم كاملة من مسلسلاتك التركية المفضلة بجودات متعددة ودعم كامل لجميع الأجهزة."
+    },
+    {
+      "title": "Re-Engineering the Attention Engine - by Hoosha AI",
+      "url": "https://hooshaai.substack.com/p/re-engineering-the-attention-engine",
+      "snippet": "The chart above sketches what this looks like in the singular-value spectrum: standard linear attention’s spectrum (orange) drops off almost immediately, meaning only a handful of directions actually carry signal."
+    },
+    {
+      "title": "قصة عشق - الموقع الأصلي (@qisattv) / X",
+      "url": "https://x.com/qisattv",
+      "snippet": "منصة قصة عشق مخصّصة لمحبي الدراما التركية، حيث يمكنك متابعة أحدث الحلقات والأعمال التركية المترجمة للعربية، مع محتوى متجدد وتجربة استخدام سلسة"
+    },
+    {
+      "title": "HOOSHA AI — Frontier Artificial Intelligence & Open Research",
+      "url": "https://hooshaai.github.io/",
+      "snippet": "Hoosha AI — Frontier research laboratory pioneering sub-quadratic attention, continuous flow matching, and verified cognitive scaling architectures."
+    },
+    {
+      "title": "موقع قصة عشق - قصة عشق",
+      "url": "https://eshq.news/",
+      "snippet": "موقع قصة عشق الأصلي لمشاهدة وتحميل المسلسلات التركية المترجمة والمدبلجة بجودة عالية HD. تابع أحدث الحلقات الحصرية ومسلسلاتك المفضلة فور نزولها"
+    }
+  ]
+}

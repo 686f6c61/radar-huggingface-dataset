@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "igorls/Qwen3.8-Flash-Next-mixed-NInfer",
+  "slug": "igorls-qwen3-8-flash-next-mixed-ninfer",
+  "author": "igorls",
+  "url": "https://huggingface.co/igorls/Qwen3.8-Flash-Next-mixed-NInfer",
+  "created_at": "2026-09-07T21:58:35.000Z",
+  "updated_at": "2026-09-07T22:56:53.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "flash-next",
+    "nvfp4",
+    "fp8",
+    "int4",
+    "mixed-precision",
+    "blackwell",
+    "rtx-pro-6000",
+    "windows",
+    "single-gpu",
+    "multimodal",
+    "speculative-decoding",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113298397952,
+  "storage_human": "113.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, primitive-ai/Qwen3.8-Flash-Next-mixed-NVFP4-FP8, primitive-ai/Qwen3.8-Flash-Next-PLE-quant",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Site of the 2026 US Open Tennis Championships - A USTA Event",
+      "url": "https://www.usopen.org/index.html",
+      "snippet": "The official site of the 2026 US Open Tennis Championships. Follow the action with live scoring, live radio, news and highlights. Buy …"
+    },
+    {
+      "title": "igorls/Qwen3.8-Flash-Next-mixed-NInfer · Hugging Face",
+      "url": "https://huggingface.co/igorls/Qwen3.8-Flash-Next-mixed-NInfer",
+      "snippet": "Instructions to use igorls/Qwen3.8-Flash-Next-mixed-NInfer with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "US Open 2026 - Programme, Résultats & Tableaux | Eurosport",
+      "url": "https://www.eurosport.fr/tennis/us-open-messieurs/2026/calendrier-resultats.shtml",
+      "snippet": "1 day ago · Retrouvez le calendrier complet US Open 2026 ici. Eurosport vous offre le programme du jour, les résultats en temps réel …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B-parameter main model, supplemented by an additional 51BN-gram embeddings, with 6Bparameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "US Open de tennis 2026 — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/US_Open_de_tennis_2026",
+      "snippet": "Afficher / masquer la sous-section Faits marquants. 1.1Avant le tournoi. 1.1.1Contexte. 1.1.2Forfaits. 1.2Pendant le tournoi. …"
+    }
+  ]
+}

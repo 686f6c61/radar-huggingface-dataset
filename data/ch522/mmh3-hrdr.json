@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-Hrdr",
+  "slug": "ch522-mmh3-hrdr",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-Hrdr",
+  "created_at": "2026-09-07T22:35:34.000Z",
+  "updated_at": "2026-09-07T22:35:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155116871,
+  "storage_human": "155 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How To Compost Grass Clippings (Yes, It's This Simple!) |",
+      "url": "https://helpmecompost.com/compost/materials/how-to-compost-grass-clippings/",
+      "snippet": "To speed up grass composting, you must correctly balance the nitrogen-carbon mix, ensure moisture levels stay spot-on, and keep …"
+    },
+    {
+      "title": "CH522/MMh3-Dt2 · Hugging Face",
+      "url": "https://huggingface.co/CH522/MMh3-Dt2",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use CH522/MMh3-Dt2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use CH522/MMh3-Dt2 with Diffusers:"
+    },
+    {
+      "title": "How to Make Compost from Grass Clippings: A Step-by-Step Guide",
+      "url": "https://greengardenguide.com/how-to-make-compost-from-grass-clippings-a-step-by-step-guide/",
+      "snippet": "Jul 10, 2025 · This article explores the intricacies of composting grass clippings, answering pertinent questions, providing practical …"
+    },
+    {
+      "title": "LBH-123-AI/Minimax_h3_latent_Upscaler · Hugging Face",
+      "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Composting Lawn Grass - How To Compost Grass - Gardening Know …",
+      "url": "https://www.gardeningknowhow.com/composting/ingredients/grass-clipping-composting.htm",
+      "snippet": "Feb 22, 2021 · Knowing more about composting with grass clippings means that your overall compost pile will be better off. …"
+    }
+  ]
+}

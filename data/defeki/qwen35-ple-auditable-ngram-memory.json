@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "DefEki/qwen35-ple-auditable-ngram-memory",
+  "slug": "defeki-qwen35-ple-auditable-ngram-memory",
+  "author": "DefEki",
+  "url": "https://huggingface.co/DefEki/qwen35-ple-auditable-ngram-memory",
+  "created_at": "2026-09-07T21:18:37.000Z",
+  "updated_at": "2026-09-07T21:18:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "safetensors",
+    "n-gram",
+    "external-memory",
+    "small-language-models",
+    "auditable-memory",
+    "ple",
+    "engram",
+    "low-resource",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32982231,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "رادیو فردا",
+      "url": "https://www.radiofarda.com/",
+      "snippet": "منابع رادیو فردا: کامران حکمتی، شهروند ایرانی آمریکایی، از اوین «آزاد شد» . حزب راست افراطی «آلترناتیو برای آلمان» در انتخابات ایالتی زاکسن-آنهالت پیروز شد . محسن رضایی پاکسازی …"
+    },
+    {
+      "title": "Qwen3.5 Models 2026: Flash, 27B, 35B-A3B & 122B-A10B",
+      "url": "https://curateclick.com/blog/2026-qwen35-models-guide",
+      "snippet": "Qwen3.5 Model Series 2026: Complete Guide to Flash, 27B, 35B-A3B & 122B-A10B TL;DR: Alibaba's Qwen team dropped a bombshell in February 2026 with the Qwen3.5 series — four powerful models (Qwen3.5-Flash, Qwen3.5-27B, Qwen3.5-35B-A3B, and Qwen3.5-122B-A10B) that bring native multimodal intelligence, 256K+ context windows, and MoE efficiency that defies the parameter count. The 35B model with ..."
+    },
+    {
+      "title": "خبرهای ایران - رادیو فردا",
+      "url": "https://www.radiofarda.com/iran",
+      "snippet": "منابع رادیو فردا: کامران حکمتی، شهروند ایرانی آمریکایی، از اوین «آزاد شد» . حزب راست افراطی «آلترناتیو برای آلمان» در انتخابات ایالتی زاکسن-آنهالت پیروز شد . محسن رضایی پاکسازی …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Qwen Studio offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts."
+    },
+    {
+      "title": "کافه فردا - رادیو فردا",
+      "url": "https://www.radiofarda.com/live/audio/79",
+      "snippet": "سیاسیاجتماعیفرهنگ و هنراقتصادایران و آمریکا. جهان . از گوشه و کنار جهانتهاجم روسیه به اوکراین. رادیو . انتخاب کنید و بشنویدبرنامه‌های رادیوییفرکانس‌هابشنوید. پادکست . کافه فردالایه …"
+    }
+  ]
+}

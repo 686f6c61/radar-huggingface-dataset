@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SSN134/clause_classifier_legalbert",
+  "slug": "ssn134-clause_classifier_legalbert",
+  "author": "SSN134",
+  "url": "https://huggingface.co/SSN134/clause_classifier_legalbert",
+  "created_at": "2026-09-07T19:13:32.000Z",
+  "updated_at": "2026-09-07T19:21:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109513000,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438075512,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1.0 Logowanie do systemu",
+      "url": "https://raport.stat.gov.pl/gus.ps/home.pa",
+      "snippet": "Logowanie Wpisz swój login i hasło dostępu do Portalu Sprawozdawczego. Pamiętaj, że dla systemu ma znaczenie, czy wpisujesz …"
+    },
+    {
+      "title": "Jeswinpauldany/legalbert-clause-classifier · Hugging Face",
+      "url": "https://huggingface.co/Jeswinpauldany/legalbert-clause-classifier",
+      "snippet": "Project Overview Legal contracts contain structured clauses describing obligations, rights, and procedures. Automatically identifying clause types can assist in: Contract analysis Legal document automation Compliance monitoring Contract search and retrieval Legal AI assistants This project fine-tunes Legal-BERT (nlpaueb/legal-bert-base-uncased) on the LEDGAR dataset."
+    },
+    {
+      "title": "Zmiana hasła użytkownika",
+      "url": "https://raport.stat.gov.pl/gus.static/help/html/praca/8.0%20profil/8.2%20profil_haslo.html",
+      "snippet": "Okno 8.2 Zmiana hasła użytkownika. Na ekranie znajdują się pola służące do wprowadzenia nowego hasła oraz pole do wpisania …"
+    },
+    {
+      "title": "FENTECH/Legal-BERT-Clause-Classification · Hugging Face",
+      "url": "https://huggingface.co/FENTECH/Legal-BERT-Clause-Classification",
+      "snippet": "LegalBERT Fine-Tuned on LEDGAR Dataset This model is a fine-tuned version of LegalBERT on the LEDGAR dataset for legal clause classification. It classifies legal clauses into one of 100 clause types (e.g., confidentiality, termination, liability, etc.)."
+    },
+    {
+      "title": "1.0 Logowanie do systemu",
+      "url": "https://raport.stat.gov.pl/gus.ps.forum/login.do",
+      "snippet": "Logowanie Wpisz swój identyfikator i hasło dostępu do Portalu Sprawozdawczego. Pamiętaj, że dla systemu ma znaczenie, czy …"
+    }
+  ]
+}

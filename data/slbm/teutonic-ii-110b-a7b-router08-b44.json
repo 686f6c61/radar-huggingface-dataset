@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SLBM/teutonic-II-110B-A7B-router08-b44",
+  "slug": "slbm-teutonic-ii-110b-a7b-router08-b44",
+  "author": "SLBM",
+  "url": "https://huggingface.co/SLBM/teutonic-II-110B-A7B-router08-b44",
+  "created_at": "2026-09-07T23:04:58.000Z",
+  "updated_at": "2026-09-07T23:04:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bittensor",
+    "subnet-3",
+    "teutonic",
+    "mixture-of-experts",
+    "mimo-v2",
+    "base_model:dendriteholdings/teutonic-II-110B-genesis",
+    "base_model:finetune:dendriteholdings/teutonic-II-110B-genesis",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "dendriteholdings/teutonic-II-110B-genesis",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "SLBM/teutonic-II-110B-A7B-router08-b44 · Hugging Face",
+      "url": "https://huggingface.co/SLBM/teutonic-II-110B-A7B-router08-b44",
+      "snippet": "teutonic-II-110B-A7B-router08-b44 A 110B MoE checkpoint for Bittensor subnet 3 (Teutonic), derived from the reign-14 king teutonic-II-110B-A7B-5DALwjE4-v44by composing two independent edits. What this is, and what it is not It does not clear the subnet's acceptance bar. Teutonic accepts a challenger when the lower confidence bound of paired per-sequence cross-entropy improvement exceeds"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "Teutonic II-110B-A7B Focus and Post-Training Plans",
+      "url": "https://subnetradar.com/subnet-news/3/2026-09-01",
+      "snippet": "The Teutonic team is prioritizing the Teutonic-II-110B-A7B model and plans to post-train it on Reliquary. Threshold reduction is pending the new king model's release."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

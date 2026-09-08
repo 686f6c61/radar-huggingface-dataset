@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SaumyaGupta-99/spliceformer-models",
+  "slug": "saumyagupta-99-spliceformer-models",
+  "author": "SaumyaGupta-99",
+  "url": "https://huggingface.co/SaumyaGupta-99/spliceformer-models",
+  "created_at": "2026-08-30T02:51:24.000Z",
+  "updated_at": "2026-09-08T00:24:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "biology",
+    "genomics",
+    "splicing",
+    "dna",
+    "transformer",
+    "token-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44238454046,
+  "storage_human": "44.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An introduction to widget testing - Flutter",
+      "url": "https://docs.flutter.dev/cookbook/testing/widget/introduction",
+      "snippet": "May 5, 2026 · In the introduction to unit testing recipe, you learned how to test Dart classes using the test package. To test widget …"
+    },
+    {
+      "title": "SaumyaGupta-99/spliceformer-models · Hugging Face",
+      "url": "https://huggingface.co/SaumyaGupta-99/spliceformer-models",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Handle scrolling - Flutter",
+      "url": "https://docs.flutter.dev/cookbook/testing/widget/scrolling",
+      "snippet": "Jul 13, 2026 · How to handle scrolling in a widget test."
+    },
+    {
+      "title": "GitHub - benniatli/Spliceformer: 45k context transformer for splice ...",
+      "url": "https://github.com/benniatli/Spliceformer",
+      "snippet": "Spliceformer is a machine learning tool that leverages transformers to detect splice sites in pre-mRNA sequences and estimate the impact of genetic variants on splicing by analyzing long nucleotide sequences (up to 45,000 context length). This repository provides: Jupyter Notebooks: Includes code for dataset construction, model training, and evaluation. Pre-trained Weights: Ready-to-use ..."
+    },
+    {
+      "title": "Flutter release notes",
+      "url": "https://docs.flutter.dev/release/release-notes",
+      "snippet": "Release notes for Flutter for prior releases."
+    }
+  ]
+}

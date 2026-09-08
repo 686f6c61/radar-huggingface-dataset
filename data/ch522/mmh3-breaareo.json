@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-BreaAreo",
+  "slug": "ch522-mmh3-breaareo",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-BreaAreo",
+  "created_at": "2026-09-07T22:38:13.000Z",
+  "updated_at": "2026-09-07T22:38:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77586615,
+  "storage_human": "78 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manutentore Termoidraulico Polivalente - Frigorista - Afragola",
+      "url": "https://carriere.snam.it/job/NAPOLI-Manutentore-Termoidraulico-Polivalente-Frigorista-Afragola-80142/1370897133/",
+      "snippet": "NAPOLI Manutentore Termoidraulico Polivalente - Frigorista - Afragola, 80142 Renovit Società Benefit è un primario operatore del …"
+    },
+    {
+      "title": "CH522/MMh3-BreaAreo · Hugging Face",
+      "url": "https://huggingface.co/CH522/MMh3-BreaAreo",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use CH522/MMh3-BreaAreo with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use CH522/MMh3-BreaAreo with Diffusers:"
+    },
+    {
+      "title": "Policy Cookie - carriere.snam.it",
+      "url": "https://carriere.snam.it/content/Policy-Cookie/",
+      "snippet": "Snam utilizza i cookie nell’ambito di questo sito per assicurarle efficace navigazione. Questo sito utilizza anche i cookie di terze parti. …"
+    },
+    {
+      "title": "CH522/FLUX-Enhance3 · Hugging Face",
+      "url": "https://huggingface.co/CH522/FLUX-Enhance3",
+      "snippet": "CH522 / FLUX-Enhance3 like 0 Text-to-Image Diffusers lora template:diffusion-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Carriere Snam",
+      "url": "https://carriere.snam.it/?trk=public_post_reshare-text&locale=en_US",
+      "snippet": "At Snam, we believe that the most powerful energy is the energy of people. Every person is a world: their passions, dreams, the …"
+    }
+  ]
+}

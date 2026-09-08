@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "medarc/spectra-h-optimus-0-lora",
+  "slug": "medarc-spectra-h-optimus-0-lora",
+  "author": "medarc",
+  "url": "https://huggingface.co/medarc/spectra-h-optimus-0-lora",
+  "created_at": "2026-09-07T20:22:22.000Z",
+  "updated_at": "2026-09-07T20:22:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "pathology",
+    "histopathology",
+    "feature-extraction",
+    "computational-pathology",
+    "base_model:bioptimus/H-optimus-0",
+    "base_model:adapter:bioptimus/H-optimus-0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377603376,
+  "storage_human": "378 MB",
+  "base_model": "bioptimus/H-optimus-0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dir.bg - Българският интернет портал",
+      "url": "https://dir.bg/",
+      "snippet": "Всичко важно от България и света - политика, общество, бизнес, спорт, технологии, култура ..."
+    },
+    {
+      "title": "medarc (MedARC) - Hugging Face",
+      "url": "https://huggingface.co/medarc/models",
+      "snippet": "MedARC aims to build a public community for contributions and develop foundation models for medical AI research."
+    },
+    {
+      "title": "Последни новини - ТОП новините от ...",
+      "url": "https://dir.bg/latest-news",
+      "snippet": "21 hours ago · Всички новини от България и света. Прочетете последните новини в областта на политиката, бизнеса, …"
+    },
+    {
+      "title": "releases/models/h-optimus/v0 at main · bioptimus/releases",
+      "url": "https://github.com/bioptimus/releases/tree/main/models/h-optimus/v0",
+      "snippet": "Feature extraction. The H-optimus-0model can be downloaded on Hugging Face's model hub here. Experiments and evaluations. We report experimental results on tile-level and slide-level tasks. A description of each evaluation dataset is provided in the Appendix, as well as the hyperparameter selection process. Tile-level evaluations."
+    },
+    {
+      "title": "@dir.bg WebMail",
+      "url": "https://mail.dir.bg/",
+      "snippet": "Влезте в своя имейл акаунт на @dir.bg Powered by Axigen"
+    }
+  ]
+}

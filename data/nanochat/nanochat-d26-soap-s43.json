@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Nanochat/nanochat-d26-soap-s43",
+  "slug": "nanochat-nanochat-d26-soap-s43",
+  "author": "Nanochat",
+  "url": "https://huggingface.co/Nanochat/nanochat-d26-soap-s43",
+  "created_at": "2026-09-07T20:15:57.000Z",
+  "updated_at": "2026-09-08T01:20:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "optimizer-comparison",
+    "native-checkpoint",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 777070319544,
+  "storage_human": "777.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "3 days ago · One more important message - Do not answer to people pretending to be from xnxx team or a member of the staff. If the …"
+    },
+    {
+      "title": "Nanochat (nanochatops) - Hugging Face",
+      "url": "https://huggingface.co/Nanochat/models",
+      "snippet": "None yet Nanochat's models7 Sort: Recently updated Nanochat/nanochat-d26-soap-s42 Updated about 2 hours ago Nanochat/nanochat-d26-muon-s44 Updated about 2 hours ago"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList",
+      "snippet": "2 days ago · Válasszon Általános társalgási fórumcsoport A Törzsasztal Iskolák, évszámok, horoszkópok Index kávéház iNteRNeTTo …"
+    },
+    {
+      "title": "sdobson/nanochat · Hugging Face",
+      "url": "https://huggingface.co/sdobson/nanochat",
+      "snippet": "Direct Use nanochat is designed for: Conversational AI applications Research on efficient language model training Educational purposes for understanding LLM training pipelines Low-resource deployment scenarios Downstream Use The model can be fine-tuned for specific conversational tasks or used as a base model for further domain adaptation. Out ..."
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Aug 23, 2026 · Anything related to texts and xnxx stories. New users on the forum won't be able to send PM untill certain criteria are …"
+    }
+  ]
+}

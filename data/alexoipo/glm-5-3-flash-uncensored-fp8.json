@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Alexoipo/GLM-5.3-Flash-UNCENSORED-FP8",
+  "slug": "alexoipo-glm-5-3-flash-uncensored-fp8",
+  "author": "Alexoipo",
+  "url": "https://huggingface.co/Alexoipo/GLM-5.3-Flash-UNCENSORED-FP8",
+  "created_at": "2026-09-07T19:17:12.000Z",
+  "updated_at": "2026-09-07T19:17:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "glm",
+    "moe",
+    "fp8",
+    "vision",
+    "mtp",
+    "en",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357674378,
+  "storage_human": "328.4 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "一直磨，直到能用短效手机号注册whatsapp，将信息修改一下只有你可以登录（绑定邮箱之类的）。 注册成功后，whatsapp那边得加 …"
+    },
+    {
+      "title": "GLM-5.3-Flash Uncensored: No LoRA, No Jailbreak, Just Edited FP8 ...",
+      "url": "https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026",
+      "snippet": "That's OrcaRouter'sown framing, posted August 29, 2026, for its uncensored build of GLM-5.3-Flash— Z.ai's 320B-total, 18B-active mixture-of-experts model that shipped under MIT license three days earlier as the reveal behind the \"Ox Alpha\" stealth preview."
+    },
+    {
+      "title": "国内如何使用whatsapp？ - 知乎",
+      "url": "https://www.zhihu.com/question/2052047431735550018",
+      "snippet": "Jun 21, 2026 · 关注 直接使用 WhatsApp 往往会出现无法连接、收不到消息或无法语音通话的情况，因为 WhatsApp 在国内网络环境 …"
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    }
+  ]
+}

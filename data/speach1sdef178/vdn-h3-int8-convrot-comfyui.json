@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "speach1sdef178/VDN-H3-INT8-ConvRot-ComfyUI",
+  "slug": "speach1sdef178-vdn-h3-int8-convrot-comfyui",
+  "author": "speach1sdef178",
+  "url": "https://huggingface.co/speach1sdef178/VDN-H3-INT8-ConvRot-ComfyUI",
+  "created_at": "2026-09-07T19:32:17.000Z",
+  "updated_at": "2026-09-07T19:37:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "safetensors",
+    "comfyui",
+    "minimax",
+    "vdn",
+    "int8",
+    "convrot",
+    "video-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3489850664,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Enjoy the largest amateur porn community on the net as well as full-length scenes from the top XXX studios. We update our porn …"
+    },
+    {
+      "title": "t8star/Vdn-Minimax-H3-Comfy · Hugging Face",
+      "url": "https://huggingface.co/t8star/Vdn-Minimax-H3-Comfy",
+      "snippet": "Supported workflows Validation notes Sources and licenses OpenVDN MiniMax H3 for ComfyUI This repository is a ready-to-place model bundle for the OpenVDN workflows in It contains the exact local model set used for the project's corrected DMD8 validation. T8star links"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "drbaph/vdn-minimax-h3-int8-convrot-comfyui · Hugging Face",
+      "url": "https://huggingface.co/drbaph/vdn-minimax-h3-int8-convrot-comfyui",
+      "snippet": "Install Download this repo into ComfyUI/models/vdn/(the folder name becomes the vdn_checkpointentry), then select it in the Apply-VDN node's vdn_checkpointdropdown. Nothing else changes; the base MiniMax-H3 model and this node's settings work exactly as before. Ref2V example Rendered with this repo's INT8 ConvRot stage on a ref2vabase: 8 steps, er_sde / beta, 768x768. How it was made tools ..."
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "1001 Next Remove ads- Upgrade to PremiumAds by TrafficFactory XVideos.com is a free hosting service for porn videos. We convert …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/pi05-rm65b-stack-rl3-K6L-v0.0",
+  "slug": "jaycao99-pi05-rm65b-stack-rl3-k6l-v0-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/pi05-rm65b-stack-rl3-K6L-v0.0",
+  "created_at": "2026-09-07T19:56:56.000Z",
+  "updated_at": "2026-09-07T19:58:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9354070512,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CAD如何画圆角、倒角-百度经验",
+      "url": "https://jingyan.baidu.com/article/ae97a646c9d3cdbbfc461d65.html",
+      "snippet": "May 6, 2015 · CAD如何画圆角、倒角,在CAD绘图的时候，圆角和倒角是经常用到的，例如一个矩形，我们往往会需要做成圆角矩形。 …"
+    },
+    {
+      "title": "JayCao99/pi05-rm65b-stack-v0.0 · Hugging Face",
+      "url": "https://huggingface.co/JayCao99/pi05-rm65b-stack-v0.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CAD Forum - Tips, Blocks, Utilities | AutoCAD, Inventor, Revit, Fusion ...",
+      "url": "https://www.cadforum.cz/",
+      "snippet": "21 hours ago · CAD Forum - free tips & tricks, blocks and discussion to AutoCAD, LT, Inventor, Revit, Fusion, 3ds Max and other …"
+    },
+    {
+      "title": "JayCao99/pi05-rm65b-stack-p16-v0.0 · Hugging Face",
+      "url": "https://huggingface.co/JayCao99/pi05-rm65b-stack-p16-v0.0",
+      "snippet": "Pi-0.5 (rm65b stack blocks) LeRobot policy checkpoints uploaded by goal_gen/upload_hf_checkpoints.sh. Each subfolder contains the deployment-ready pretrained_model/ payload (model.safetensors + config.json + pre/postprocessor + train_config.json)."
+    },
+    {
+      "title": "CAD十字光标和靶框大小怎么调整-百度经验",
+      "url": "https://jingyan.baidu.com/article/2f9b480d959b8641cb6cc294.html",
+      "snippet": "Sep 17, 2017 · 方法/步骤 1 刚刚学习Auto CAD软件的朋友肯定遇到过这样的问题，在新打开的Auto CAD软件界面上会出现很小的十字 …"
+    }
+  ]
+}

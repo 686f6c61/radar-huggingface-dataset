@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/MMh3-Dt1",
+  "slug": "ch522-mmh3-dt1",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/MMh3-Dt1",
+  "created_at": "2026-09-07T22:14:34.000Z",
+  "updated_at": "2026-09-07T22:14:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1192836439,
+  "storage_human": "1.2 GB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer o download e instalar o Google Chrome - Computador - Ajuda …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Central de Ajuda Comunidade Google Chrome Fazer o download e instalar o Google Chrome Você pode baixar e instalar o …"
+    },
+    {
+      "title": "CH522/FLUX-Enhance3 · Hugging Face",
+      "url": "https://huggingface.co/CH522/FLUX-Enhance3",
+      "snippet": "CH522 / FLUX-Enhance3 like 0 Text-to-Image Diffusers lora template:diffusion-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome - Android - Ajuda do …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-br&co=GENIE.Platform%3DAndroid",
+      "snippet": "Fazer o download do Google Chrome Importante: antes de baixar, confira se o Chrome é compatível com seu sistema operacional e …"
+    },
+    {
+      "title": "Comfyui-MMH3-UltimateUpscale - GitHub",
+      "url": "https://github.com/bbaudio-2025/Comfyui-MMH3-UltimateUpscale",
+      "snippet": "MMH3 Latent Upscale with Model Paramsonly lists and loads .safetensorscheckpoints (.sftis accepted as well, matching ComfyUI core). Pickle formats (.pth/ .pt/ .ckpt) are skipped while scanning and are rejected beforethe file is opened."
+    },
+    {
+      "title": "ดาวน์โหลดและติดตั้ง Google Chrome ...",
+      "url": "https://support.google.com/chrome/answer/95346?hl=th&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Chrome ดาวน์โหลดและติดตั้ง Google Chrome คุณสามารถดาวน์โหลดและติดตั้งเว็บเบราว์เซอร์ Chrome ได้โดยไม่มีค่าใช้จ่าย …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "remixerdec/SanoTTS-GGUF",
+  "slug": "remixerdec-sanotts-gguf",
+  "author": "remixerdec",
+  "url": "https://huggingface.co/remixerdec/SanoTTS-GGUF",
+  "created_at": "2026-09-08T00:07:06.000Z",
+  "updated_at": "2026-09-08T00:20:50.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "ggml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "text-to-speech",
+    "speech-synthesis",
+    "local-tts",
+    "cpu",
+    "edge-ai",
+    "microcontroller",
+    "esp32",
+    "piperlite",
+    "quantized",
+    "en",
+    "base_model:ampixa/sanoTTS",
+    "base_model:quantized:ampixa/sanoTTS",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1458304,
+  "parameters_human": "1.5M",
+  "storage_bytes": 25470316,
+  "storage_human": "25 MB",
+  "base_model": "ampixa/sanoTTS",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gorjana Jewelry Review - Must Read This Before Buying",
+      "url": "https://www.honestbrandreviews.com/reviews/gorjana-jewelry-review/",
+      "snippet": "Jun 27, 2024 · Get a detailed honest Gorjana Jewelry Review. Here's what you need to know before you buy. Get full customer …"
+    },
+    {
+      "title": "remixerdec (Remixer Dec) - Hugging Face",
+      "url": "https://huggingface.co/remixerdec/models",
+      "snippet": "LLMs, TTS Recent Activity updated a model6 days ago remixerdec/Inflect-Nano-v2-GGUF updated a model6 days ago remixerdec/Inflect-Nano-v1-GGUF updated a model8 days ago remixerdec/Inflect-Micro-v2-GGUF View all activity"
+    },
+    {
+      "title": "Gorjana Reviews: Is It Good Quality? Honest 2026 Verdict – AJLuxe",
+      "url": "https://ajluxe.com/blogs/jewelry-guide/is-gorjana-jewelry-good-quality",
+      "snippet": "Jul 18, 2026 · This guide breaks down exactly what Gorjana jewelry is made of, whether it actually tarnishes, how it stacks up against …"
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "GGUF is a modern file format for storing models optimized for efficient inference, particularly on consumer-grade hardware. This makes it easier for researchers, developers, and hobbyists to experiment with and deploy large language models."
+    },
+    {
+      "title": "Gorjana Review 2026 - Expert Analysis",
+      "url": "https://www.thecaratcut.com/reviews/gorjana",
+      "snippet": "Feb 1, 2026 · Gorjana Review: Gorjana sells the California dream. Their jewelry is golden, layered, and effortless. It is designed to be …"
+    }
+  ]
+}

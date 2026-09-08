@@ -5,7 +5,7 @@
   "author": "saad1926q",
   "url": "https://huggingface.co/saad1926q/qwen3.5-4b-8puzzle-sft",
   "created_at": "2026-09-07T15:48:52.000Z",
-  "updated_at": "2026-09-07T15:49:05.000Z",
+  "updated_at": "2026-09-07T18:30:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 104957733,
-  "storage_human": "105 MB",
+  "storage_bytes": 529799773,
+  "storage_human": "530 MB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

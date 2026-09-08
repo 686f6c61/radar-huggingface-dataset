@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nitun/sheno-lumimaid",
+  "slug": "nitun-sheno-lumimaid",
+  "author": "nitun",
+  "url": "https://huggingface.co/nitun/sheno-lumimaid",
+  "created_at": "2026-09-07T19:39:15.000Z",
+  "updated_at": "2026-09-07T19:39:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Excel | Free Online Spreadsheets Software",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/excel?msockid=134b1c37b1ee6e953a7d0bfab0f86f3b",
+      "snippet": "Microsoft Excel is the industry leading spreadsheet application and data analysis tool. Explore free spreadsheet software tools with …"
+    },
+    {
+      "title": "Lumimaid - a NeverSleep Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/NeverSleep/lumimaid",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from NeverSleep"
+    },
+    {
+      "title": "Microsoft Excel | Software de hojas de cálculo gratuito online",
+      "url": "https://www.microsoft.com/es-es/microsoft-365/excel?msockid=134b1c37b1ee6e953a7d0bfab0f86f3b",
+      "snippet": "Microsoft Excel es la aplicación líder en hojas de cálculo y análisis de datos en el sector. Descubre herramientas gratuitas de hojas …"
+    },
+    {
+      "title": "NeverSleep/Lumimaid-v0.2-12B · Hugging Face",
+      "url": "https://huggingface.co/NeverSleep/Lumimaid-v0.2-12B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Excel表格 - Windows官方下载 | 微软应用商店 | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xp8k4kwmrdrjnz?hl=zh-CN&gl=CN",
+      "snippet": "Excel表格是一款手机端表格、文档、文稿编辑制作软件，可以轻松创建、编辑Excel表格、Word文档、PPT幻灯片，应对不同场景需 …"
+    }
+  ]
+}
