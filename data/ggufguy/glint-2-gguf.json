@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GGUFGuy/Glint-2-GGUF",
+  "slug": "ggufguy-glint-2-gguf",
+  "author": "GGUFGuy",
+  "url": "https://huggingface.co/GGUFGuy/Glint-2-GGUF",
+  "created_at": "2026-09-08T01:26:07.000Z",
+  "updated_at": "2026-09-08T01:32:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "base_model:Glint-Research/Glint-2",
+    "base_model:quantized:Glint-Research/Glint-2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1064737,
+  "parameters_human": "1.1M",
+  "storage_bytes": 9318624,
+  "storage_human": "9 MB",
+  "base_model": "Glint-Research/Glint-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Siegener Stadtfest 2026 - Stadt Siegen",
+      "url": "https://www.siegen.de/kultur-tourismus/kultursiegen/hier-ist-was-los/siegener-stadtfest-2026",
+      "snippet": "Aug 30, 2026 · ÖPNV: Mit dem Bus kostenlos zum Stadtfest Auch in diesem Jahr richtet die VWSim Auftrag der Stadt Siegen am …"
+    },
+    {
+      "title": "GGUFGuy/Glint-2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/GGUFGuy/Glint-2-GGUF",
+      "snippet": "Instructions to use GGUFGuy/Glint-2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Müllkalender, Abfallkalender, Müllabfuhr, Abfuhrtermine, Mülltermine ...",
+      "url": "https://www.siegen.de/leben-in-siegen/buergerservice/abfallentsorgung/abfallkalender/",
+      "snippet": "Ganzjähriger Abfallkalender der Stadt Siegen, der darüber informiert, wann welche Mülltonnen an ihrer Adresse geleert werden. Er …"
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "GGUF is a modern file format for storing models optimized for efficient inference, particularly on consumer-grade hardware. This makes it easier for researchers, developers, and hobbyists to experiment with and deploy large language models."
+    },
+    {
+      "title": "Siegen - Online-Anhörung",
+      "url": "https://owig.siegen.de/",
+      "snippet": "Online-Anhörung in einem Ordnungswidrigkeitenverfahren Aktivieren Sie Javascript jetzt, um unsere Webseite nutzen zu können."
+    }
+  ]
+}

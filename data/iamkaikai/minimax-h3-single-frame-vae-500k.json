@@ -23,8 +23,8 @@
     "base_model:finetune:Mamad8/MiniMax-H3-Image-VAE",
     "region:us"
   ],
-  "likes": 52,
-  "downloads_30d": 3183,
+  "likes": 54,
+  "downloads_30d": 12080,
   "trending_score": 10,
   "parameters": null,
   "parameters_human": null,

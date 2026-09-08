@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "koreallmdev/dgx-harness-engineering",
+  "slug": "koreallmdev-dgx-harness-engineering",
+  "author": "koreallmdev",
+  "url": "https://huggingface.co/koreallmdev/dgx-harness-engineering",
+  "created_at": "2026-09-08T09:06:03.000Z",
+  "updated_at": "2026-09-08T09:31:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "harness-engineering",
+    "llm",
+    "fine-tuning",
+    "ai-infrastructure",
+    "distributed-training",
+    "dgx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chat Login – Chatroom2000",
+      "url": "https://www.chatroom2000.de/chat-login/",
+      "snippet": "Ohne Anmeldung kannst du direkt loschatten. Die Bedienung ist sehr einfach und übersichtlich. Dieses Portal ist auch für Chat …"
+    },
+    {
+      "title": "Harness engineering for coding agent users",
+      "url": "https://martinfowler.com/articles/harness-engineering.html",
+      "snippet": "A mental model for building trust in coding agents through feedforward guides, feedback sensors, and iterative harness engineering."
+    },
+    {
+      "title": "Chatroom2000 – Kostenloser Chat ohne Anmeldung",
+      "url": "https://www.chatroom2000.de/",
+      "snippet": "NEUE LEUTE KENNENLERNEN UND CHATTEN NEUE LEUTE KENNENLERNEN UND CHATTEN Flirt Chat mit großer Wirkung …"
+    },
+    {
+      "title": "Learn Harness Engineering - GitHub",
+      "url": "https://github.com/walkinglabs/learn-harness-engineering",
+      "snippet": "Learn Harness Engineering is a course dedicated to the engineering of AI coding agents. We have deeply studied and synthesized the most advanced Harness Engineering theories and practices in the industry. Our core references include: OpenAI: Harness engineering: leveraging Codex in an agent-first world"
+    },
+    {
+      "title": "Chat - Knuddels.de-Forum",
+      "url": "https://forum.knuddels.de/ubbthreads.php?ubb=showflat&Number=82173",
+      "snippet": "Chat Optionen Thema bewerten Chat- #82173- 16.11.2003, 19:36:43 Gelöschter Nutzer Nicht registriert Hi , hier ein wahres Gedicht !"
+    }
+  ]
+}

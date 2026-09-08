@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "3MPER0RR/Qwen2.5-Coder-32B-Instruct-3MPER0RR-abliterated",
+  "slug": "3mper0rr-qwen2-5-coder-32b-instruct-3mper0rr-abliterated",
+  "author": "3MPER0RR",
+  "url": "https://huggingface.co/3MPER0RR/Qwen2.5-Coder-32B-Instruct-3MPER0RR-abliterated",
+  "created_at": "2026-09-08T09:46:51.000Z",
+  "updated_at": "2026-09-08T09:50:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65539263651,
+  "storage_human": "65.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wien Bräunerstraße - L'Osteria",
+      "url": "https://losteria.net/at/restaurants/restaurant/wien-braeunerstrasse/",
+      "snippet": "Finde Dein L’Osteria Restaurant: Genieße knusprige Pizza, hausgemachte Pasta und knackige Salate an unseren Standorten in …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-32B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    },
+    {
+      "title": "Wien am Hauptbahnhof - L'Osteria",
+      "url": "https://losteria.net/at/restaurants/restaurant/wien-am-hauptbahnhof/",
+      "snippet": "Finde Dein L’Osteria Restaurant: Genieße knusprige Pizza, hausgemachte Pasta und knackige Salate an unseren Standorten in …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-32B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    },
+    {
+      "title": "L'OSTERIA WIEN BRÄUNERSTRASSE - Innere Stadt - Tripadvisor",
+      "url": "https://www.tripadvisor.at/Restaurant_Review-g190454-d6833207-Reviews-L_osteria_Wien_Braunerstrasse-Vienna.html",
+      "snippet": "Wir haben heute mit meiner Familie L’Osteria besucht, und leider war es drinnen extrem heiß. Die Pizzen werden im Ofen zubereitet, …"
+    }
+  ]
+}

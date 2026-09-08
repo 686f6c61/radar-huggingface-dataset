@@ -5,7 +5,7 @@
   "author": "cafepm",
   "url": "https://huggingface.co/cafepm/Qwen3.8-27B-Q3Q4-GGUF",
   "created_at": "2026-08-17T23:00:54.000Z",
-  "updated_at": "2026-09-05T21:39:26.000Z",
+  "updated_at": "2026-09-07T21:45:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 4437,
+  "downloads_30d": 4511,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VibeCuisine/vds-smoke-20260907-gcp-molmoact2-v3-us-central1-c-longspot40",
+  "slug": "vibecuisine-vds-smoke-20260907-gcp-molmoact2-v3-us-central1-c-longspot40",
+  "author": "VibeCuisine",
+  "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-molmoact2-v3-us-central1-c-longspot40",
+  "created_at": "2026-09-08T02:06:51.000Z",
+  "updated_at": "2026-09-08T02:31:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "molmoact2",
+    "dataset:VibeCuisine/vibepi3-grab-poseexpert-r3-curated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5591928368,
+  "parameters_human": "5.59B",
+  "storage_bytes": 11483652496,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shell",
+      "url": "https://www.shell.de/",
+      "snippet": "Shell ist einer der führenden Anbieter von Tank- und Ladelösungen in Deutschland. Neben Benzin und Diesel bietet Shell alternative …"
+    },
+    {
+      "title": "VibeCuisine/vds-smoke-20260907-gcp-molmoact2-v3-us-central1-c ...",
+      "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-molmoact2-v3-us-central1-c-longspot40",
+      "snippet": "MolmoAct2is an open robotics foundation model from the Allen Institute for AI (Ai2) that maps camera images and language instructions to robot action chunks. The LeRobot implementation supports training and evaluation of the regular MolmoAct2 model."
+    },
+    {
+      "title": "Punkten & Sparen mit Shell ClubSmart | Shell",
+      "url": "https://www.shell.de/punkten-und-sparen-mit-shell-clubsmart.html",
+      "snippet": "Herzlich willkommen bei Shell ClubSmart! Hier profitieren Sie einfach immer: wertvolle Shell ClubSmart Punkte sammeln und für …"
+    },
+    {
+      "title": "VibeCuisine — AI-Powered Food Prep",
+      "url": "https://www.vibecuisine.com/",
+      "snippet": "VibeBoard is the AI-powered robotic cutting board that handles the tedious parts of food prep. Peel, slice, dice, crush, and easy to clean."
+    },
+    {
+      "title": "EnergieDirect Oberhaching | Shell Hauswärme",
+      "url": "https://hauswaerme.shell.de/heizoel-markenpartner-finden/energiedirect-bayern.html",
+      "snippet": "Energie Direct Bronberger & Kessler, Ihr Shell Markenpartner in Oberbayern – für beste Qualität und erstklassigen Kundenservice in …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Novasy/nova-video-gen",
+  "slug": "novasy-nova-video-gen",
+  "author": "Novasy",
+  "url": "https://huggingface.co/Novasy/nova-video-gen",
+  "created_at": "2026-09-08T01:17:24.000Z",
+  "updated_at": "2026-09-08T01:18:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers:CogVideoXPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 1693783872,
+  "parameters_human": "1.69B",
+  "storage_bytes": 15356785374,
+  "storage_human": "15.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EL CORREO - Diario con las últimas noticias, fotos y vídeos de Bizkaia",
+      "url": "https://www.elcorreo.com/",
+      "snippet": "Últimas noticias de Bizkaia con la más completa actualidad informativa de Bizkaia con fotos, videos, ocio y deporte."
+    },
+    {
+      "title": "NovaVideo - Image to Video AI Generator",
+      "url": "https://novavideo.ai/",
+      "snippet": "NovaVideo is the leading AI video platform that transforms images into cinematic videos using multiple state-of-the-art models like Veo 3, Sora 2, Kling, and Runway, with trending effects templates."
+    },
+    {
+      "title": "Esquelas de Bizkaia y Álava - Araba | El Correo",
+      "url": "https://esquelas.elcorreo.com/",
+      "snippet": "Esquelas de El Correo: Toda la información sobre defunciones, aniversarios y obituarios. Actualizado diariamente."
+    },
+    {
+      "title": "Nova Video - AI Video Generation Platform",
+      "url": "https://nova-video.onesolo.app/",
+      "snippet": "AI-Powered Video Creator Create Professional Videos with AI Transform your ideas into stunning videos in minutes. No editing skills required."
+    },
+    {
+      "title": "Bizkaia: noticias de Bilbao y todos los municipios de la ... - El Correo",
+      "url": "https://www.elcorreo.com/bizkaia/",
+      "snippet": "1 day ago · Noticias de última hora de Bilbao y toda la información de actualidad de Bizkaia."
+    }
+  ]
+}

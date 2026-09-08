@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kwanhee/Kimi-K2.5-REAP50-NVFP4-W4A4-GS16",
+  "slug": "kwanhee-kimi-k2-5-reap50-nvfp4-w4a4-gs16",
+  "author": "kwanhee",
+  "url": "https://huggingface.co/kwanhee/Kimi-K2.5-REAP50-NVFP4-W4A4-GS16",
+  "created_at": "2026-09-08T01:57:34.000Z",
+  "updated_at": "2026-09-08T02:19:29.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k25",
+    "feature-extraction",
+    "compressed-tensors",
+    "nvfp4",
+    "moe",
+    "pruned",
+    "reap",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K2.5",
+    "base_model:quantized:moonshotai/Kimi-K2.5",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 519453777648,
+  "parameters_human": "519.45B",
+  "storage_bytes": 309640389614,
+  "storage_human": "309.6 GB",
+  "base_model": "moonshotai/Kimi-K2.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leboncoin une erreur technique est survenue - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37772507-site-le-bon-coin-une-erreur-technique-est-survenue",
+      "snippet": "Aug 10, 2023 · J'ai un mac oset depuis quelques jours le site le bon coin affiche la mention \" Une erreur technique est survenue\" puis …"
+    },
+    {
+      "title": "kwanhee/Kimi-K2.5-REAP50-INT4-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/kwanhee/Kimi-K2.5-REAP50-INT4-W4A16",
+      "snippet": "Compare against the same prune carried into NVFP4 W4A4 (Kimi-K2.5-REAP50-NVFP4-W4A4-GS16, 80.00 / 97.06%): the difference between the two is the cost of our NVFP4 stage, measured"
+    },
+    {
+      "title": "Leboncoin: numéro de téléphone déjà utilisé - Mobile",
+      "url": "https://forums.commentcamarche.net/forum/affich-37903155-leboncoin-numero-de-telephone-deja-utilise",
+      "snippet": "Aug 28, 2023 · Signaler Répondre Posez votre question Discussions similaires J'ai 2 comptes le bon coin avec le meme numéro de …"
+    },
+    {
+      "title": "Kimi K2.5 | Open Visual Agentic Model for Real Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-5",
+      "snippet": "Kimi K2.5 is an open source multimodal model by Moonshot AI, combining visual coding, AI agents, and agent swarm capabilities for real work."
+    },
+    {
+      "title": "Arnaque bon coin voiture - Vos droits sur internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-15008159-arnaque-bon-coin-voiture",
+      "snippet": "Nov 2, 2009 · Arnaque bon coin voiture poupoule - Modifié le 2 nov. 2009 à 09:01 Isis_84 - 2 nov. 2009 à 13:02 connaissait vous une …"
+    }
+  ]
+}

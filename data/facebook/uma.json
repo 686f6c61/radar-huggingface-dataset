@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "facebook/UMA",
+  "slug": "facebook-uma",
+  "author": "facebook",
+  "url": "https://huggingface.co/facebook/UMA",
+  "created_at": "2025-04-09T00:10:46.000Z",
+  "updated_at": "2026-07-16T18:35:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2506.23971",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 365,
+  "downloads_30d": 88,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41710515641,
+  "storage_human": "41.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/UMA - Hugging Face",
+      "url": "https://huggingface.co/facebook/UMA",
+      "snippet": "UMA is a large mixture-of-linear-experts graph network model trained on billions of atoms across five open-science simulation datasets released by the FAIR Chemistry team over the past 5 years."
+    },
+    {
+      "title": "GitHub - facebookresearch/fairchem: FAIR Chemistry's library of machine ...",
+      "url": "https://github.com/facebookresearch/fairchem",
+      "snippet": "fairchem is the FAIR Chemistry's centralized repository of all its data, models, demos, and application efforts for materials science and quantum chemistry. UMA models and legacy inorganic bulk models trained using OMat24 are trained with DFT and DFT+U total energy labels. These are not compatible ..."
+    },
+    {
+      "title": "UMAのライセンス取得方法と使い方を解説｜Rio - note",
+      "url": "https://note.com/rio_chemoinfo/n/n5576a62fedef",
+      "snippet": "25.07.2026 ... UMAを使う前にHugging Faceの準備が必要 UMAのモデル本体は、Hugging Face Hubの`facebook/UMA ... `UMA model loaded`と表示されれば、利用申請 ..."
+    },
+    {
+      "title": "Meta's FAIR team just released OMol25 and Universal Model for ...",
+      "url": "https://www.facebook.com/LifeAtMeta/posts/metas-fair-team-just-released-omol25-and-universal-model-for-atomsopen-source-to/1002067392089512/",
+      "snippet": "03.06.2025 ... Meta AI's UMA: Revolutionizing Atomic Modeling for Chemists and ... AI](https://www.facebook. com/hashtag/ai?__eep__=6&__cft__[0 ..."
+    },
+    {
+      "title": "facebook (AI at Meta) - Hugging Face",
+      "url": "https://huggingface.co/facebook/models",
+      "snippet": "facebook 's models 2,359. Sort: Recently updated ; facebook/VGGT-Omega · 286 ; facebook/MobileMoE-L-QAT · 12 • 6 ; facebook/MobileMoE-M-QAT · 26 • 3 ; facebook/ ..."
+    }
+  ]
+}

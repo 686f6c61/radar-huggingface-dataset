@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hjk013/Llama-VARCO-8b-news2stock-analyzer",
+  "slug": "hjk013-llama-varco-8b-news2stock-analyzer",
+  "author": "hjk013",
+  "url": "https://huggingface.co/hjk013/Llama-VARCO-8b-news2stock-analyzer",
+  "created_at": "2026-09-08T08:33:08.000Z",
+  "updated_at": "2026-09-08T08:33:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:NCSOFT/Llama-VARCO-8B-Instruct",
+    "base_model:finetune:NCSOFT/Llama-VARCO-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32567217,
+  "storage_human": "33 MB",
+  "base_model": "NCSOFT/Llama-VARCO-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google-Konto für Gmail erstellen - Gmail-Hilfe",
+      "url": "https://support.google.com/mail/answer/56256?hl=de",
+      "snippet": "Für ein Google-Konto registrieren Wichtig:Melden Sie sich von Ihrem aktuellen Konto ab, bevor Sie ein neues Google-Konto …"
+    },
+    {
+      "title": "Heejoon91/Llama-VARCO-8b-news2stock-analyzer · Hugging Face",
+      "url": "https://huggingface.co/Heejoon91/Llama-VARCO-8b-news2stock-analyzer",
+      "snippet": "Instructions to use Heejoon91/Llama-VARCO-8b-news2stock-analyzer with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "بارگیری و نصب Google Chrome - رایانه - Google Chrome ...",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fa&co=GENIE.Platform%3DDesktop",
+      "snippet": "می‌توانید مرورگر وب Chrome را بدون هزینه بارگیری و نصب کنید و از آن برای مرور وب استفاده کنید. بررسی کردن الزامات سیستم برای استفاده از Chro"
+    },
+    {
+      "title": "hwany79/Llama-VARCO-8b-news2stock-analyzer · Hugging Face",
+      "url": "https://huggingface.co/hwany79/Llama-VARCO-8b-news2stock-analyzer",
+      "snippet": "Instructions to use hwany79/Llama-VARCO-8b-news2stock-analyzer with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google Chrome herunterladen und installieren - Computer - Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sie können den Chrome-Webbrowser kostenlos herunterladen und installieren und damit im Internet surfen. Systemanforderungen …"
+    }
+  ]
+}

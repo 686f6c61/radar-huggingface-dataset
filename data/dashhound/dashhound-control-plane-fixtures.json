@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dashhound/dashhound-control-plane-fixtures",
+  "slug": "dashhound-dashhound-control-plane-fixtures",
+  "author": "dashhound",
+  "url": "https://huggingface.co/dashhound/dashhound-control-plane-fixtures",
+  "created_at": "2026-09-08T01:06:36.000Z",
+  "updated_at": "2026-09-08T01:07:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dashhound",
+    "control-plane",
+    "metadata-only",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wat mag ik doen tegen overhangende takken? - Juridisch Loket",
+      "url": "https://www.juridischloket.nl/wonen-en-buren/buren/overhangende-takken/",
+      "snippet": "Wat mag ik doen tegen overhangende takken van mijn buren? Heeft u last van de overhangende takken van uw buren? Dan mag u …"
+    },
+    {
+      "title": "dashhound/dashhound-control-plane-fixtures · Hugging Face",
+      "url": "https://huggingface.co/dashhound/dashhound-control-plane-fixtures",
+      "snippet": "It contains no model weights and is not an inference target. DashHound must keep runtime execution local-first and fail closed to its declared fallback when provider evidence is unavailable."
+    },
+    {
+      "title": "Takken van de buren hangen boven andermans erf. Mag dat?",
+      "url": "https://www.bomenrecht.nl/takken-over-de-erfgrens/",
+      "snippet": "Overhangende takken en doorgeschoten wortels zijn zo’n inbreuk. Voordeel van zo’n procedure is dat de eigenaar van de boom op …"
+    },
+    {
+      "title": "FGMEMBERS/DaSH: FG Aircraft - GitHub",
+      "url": "https://github.com/FGMEMBERS/dash",
+      "snippet": "This model is \"in development\", and as such has no cockpit, instruments, fancy skins, etc. It does, however, have well-modelled aerodynamics (from AVL and XROTOR), good estimates of mass and inertias, and a few moving parts."
+    },
+    {
+      "title": "Last van overhangende takken van de buren - Juridisch advies",
+      "url": "https://www.achmearechtsbijstand.nl/wonen/buren/overhangende-takken-buren-snoeien",
+      "snippet": "Een belangrijke regel is: “Overhangende takken mag je pas verwijderen nadat je de eigenaar hebt gevraagd dit binnen een redelijke …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Berlm/hyb16-mix-s0",
+  "slug": "berlm-hyb16-mix-s0",
+  "author": "Berlm",
+  "url": "https://huggingface.co/Berlm/hyb16-mix-s0",
+  "created_at": "2026-09-08T09:07:51.000Z",
+  "updated_at": "2026-09-08T09:08:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gdn2",
+    "text-generation",
+    "gated-deltanet",
+    "linear-attention",
+    "hybrid-attention",
+    "long-context",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 365773494,
+  "parameters_human": "365.8M",
+  "storage_bytes": 731584980,
+  "storage_human": "732 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "只是买个plus不想保号但是又想稳定一些的，whatsapp方案吧。 这是个磨时间的活，首先去herosms之类的接码平台选个海外手机号 …"
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "Pick the right LLM in under a minute. 373 models ranked by GPQA, AIME 2025, SWE-bench Verified, HLE, input/output price per million tokens, context window and license. Updated 2026-09-06."
+    },
+    {
+      "title": "国内如何使用whatsapp？ - 知乎",
+      "url": "https://www.zhihu.com/question/2052047431735550018",
+      "snippet": "Jun 21, 2026 · 关注 直接使用 WhatsApp 往往会出现无法连接、收不到消息或无法语音通话的情况，因为 WhatsApp 在国内网络环境 …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "Read the announcement The AI community building the future. The platform where the machine learning community collaborates on models, datasets, and applications. Explore AI Apps orBrowse 2M+ models Trending onthis week Models"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    }
+  ]
+}

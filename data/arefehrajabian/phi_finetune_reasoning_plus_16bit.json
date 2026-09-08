@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arefehRajabian/phi_finetune_reasoning_plus_16bit",
+  "slug": "arefehrajabian-phi_finetune_reasoning_plus_16bit",
+  "author": "arefehRajabian",
+  "url": "https://huggingface.co/arefehRajabian/phi_finetune_reasoning_plus_16bit",
+  "created_at": "2026-09-08T09:07:19.000Z",
+  "updated_at": "2026-09-08T09:07:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/phi-4-bnb-4bit",
+    "base_model:finetune:unsloth/phi-4-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/phi-4-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Studieren in Dublin - Universitäten, Gebühren, Bewerbung 2026",
+      "url": "https://www.dublin.de/studieren/",
+      "snippet": "Universitäten, Studiengebühren, Bewerbung über die CAO, englische Sprachnachweise und Wege nach dem Abschluss, der …"
+    },
+    {
+      "title": "arefehRajabian/phi_reasoning_plus_finetune_16bit · Hugging Face",
+      "url": "https://huggingface.co/arefehRajabian/phi_reasoning_plus_finetune_16bit",
+      "snippet": "Instructions to use arefehRajabian/phi_reasoning_plus_finetune_16bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "University College Dublin",
+      "url": "https://www.ucd.ie/",
+      "snippet": "UCD Social University College Dublin Belfield, Dublin 4, Ireland. T: +353 1 716 7777 ©2026 All Rights Reserved. Useful Links"
+    },
+    {
+      "title": "phi_reasoning_plus_finetune_16bit API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/arefehRajabian/phi_reasoning_plus_finetune_16bit",
+      "snippet": "Run phi_reasoning_plus_finetune_16bit with FriendliAI inference. This phi3 model was trained 2x faster with Unsloth and Huggingface's TRL library."
+    },
+    {
+      "title": "Universität Dublin – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Universit%C3%A4t_Dublin",
+      "snippet": "Suche Suchen Inhaltsverzeichnis umschalten Universität Dublin 39 SprachenAbschnitt hinzufügen"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "abdelkarim98/tendril-models",
+  "slug": "abdelkarim98-tendril-models",
+  "author": "abdelkarim98",
+  "url": "https://huggingface.co/abdelkarim98/tendril-models",
+  "created_at": "2026-09-08T09:16:16.000Z",
+  "updated_at": "2026-09-08T10:16:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "retrieval-augmented-generation",
+    "multi-hop-question-answering",
+    "cross-encoder",
+    "reranking",
+    "question-decomposition",
+    "information-retrieval",
+    "en",
+    "base_model:google/flan-t5-base",
+    "base_model:finetune:google/flan-t5-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "microsoft/deberta-v3-base, google/flan-t5-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps - Computer - Google …",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "If there are multiple routes, the best route to your destination is blue. All other routes are grey. Some directions in Google Maps are in …"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Gerenciar a Linha do Tempo do Google Maps - Android - Ajuda do …",
+      "url": "https://support.google.com/maps/answer/6258979?hl=pt-BR&co=GENIE.Platform%3DAndroid",
+      "snippet": "No celular ou tablet Android, abra o app Google Maps . Pesquise um lugar ou toque nele no mapa. Role a tela para baixo. Toque em …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Ano-ano ang mga ibat-ibang bahagi ng mapa ? - Brainly.ph",
+      "url": "https://brainly.ph/question/1494013",
+      "snippet": "Jul 6, 2018 · See answer michellecutedip9wndp michellecutedip9wndp Mapang pisikal mapang ekonomiko mapa ng klima mapang …"
+    }
+  ]
+}

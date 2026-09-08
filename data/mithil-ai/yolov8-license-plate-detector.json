@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Mithil-AI/yolov8-license-plate-detector",
+  "slug": "mithil-ai-yolov8-license-plate-detector",
+  "author": "Mithil-AI",
+  "url": "https://huggingface.co/Mithil-AI/yolov8-license-plate-detector",
+  "created_at": "2026-09-08T09:08:17.000Z",
+  "updated_at": "2026-09-08T09:09:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "tflite",
+    "object-detection",
+    "keras-cv",
+    "yolov8",
+    "tensorflow",
+    "coreml",
+    "edge-ai",
+    "license-plate-detection",
+    "computer-vision",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61026957,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fragrantica.com",
+      "url": "https://www.fragrantica.com/",
+      "snippet": "Copyrights © 2006-2026 Fragrantica.com perfumes magazine - All Rights Reserved - do not copy anything without prior written …"
+    },
+    {
+      "title": "Koushim/yolov8-license-plate-detection · Hugging Face",
+      "url": "https://huggingface.co/Koushim/yolov8-license-plate-detection",
+      "snippet": "Instructions to use Koushim/yolov8-license-plate-detection with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Perfumes Search - Fragrantica.com",
+      "url": "https://www.fragrantica.com/search/",
+      "snippet": "Perfumes Search - Fragrantica: Your Online Destination for All Things Fragrance Discover the world of perfumes with Fragrantica, a …"
+    },
+    {
+      "title": "README.md · Koushim/yolov8-license-plate-detection at main",
+      "url": "https://huggingface.co/Koushim/yolov8-license-plate-detection/blob/main/README.md",
+      "snippet": "🚗 YOLOv8 License Plate Detection Model This repository contains a YOLOv8 object detection model trained to detect license plates in real-world images. The model was trained using the Ultralytics YOLOv8 framework and can be deployed for real-time applications such as surveillance, traffic monitoring, and vehicle identification."
+    },
+    {
+      "title": "Fragrantica",
+      "url": "https://www.fragrantica.es/",
+      "snippet": "Únete a discusiones y conecta con otros 100% Gratis - Siempre Crear cuenta gratis ¿Ya tienes cuenta? Inicia sesión Continuar …"
+    }
+  ]
+}

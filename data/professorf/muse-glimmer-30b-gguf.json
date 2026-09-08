@@ -5,7 +5,7 @@
   "author": "professorf",
   "url": "https://huggingface.co/professorf/Muse-Glimmer-30B-gguf",
   "created_at": "2026-08-13T03:23:39.000Z",
-  "updated_at": "2026-08-29T23:14:41.000Z",
+  "updated_at": "2026-09-07T15:52:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",
-  "storage_bytes": 176506087904,
-  "storage_human": "176.5 GB",
+  "storage_bytes": 185883457280,
+  "storage_human": "185.9 GB",
   "base_model": null,
   "formats": [
     "gguf"

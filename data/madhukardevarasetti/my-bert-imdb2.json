@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "madhukardevarasetti/my-bert-imdb2",
+  "slug": "madhukardevarasetti-my-bert-imdb2",
+  "author": "madhukardevarasetti",
+  "url": "https://huggingface.co/madhukardevarasetti/my-bert-imdb2",
+  "created_at": "2026-09-08T01:17:09.000Z",
+  "updated_at": "2026-09-08T01:17:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaart De Pijp – Wijk en belangrijke locaties – Amsterdams Kaart",
+      "url": "https://www.amsterdamskaart.com/wijken/kaart-de-pijp-wijk-en-belangrijke-locaties/",
+      "snippet": "Ontdek De Pijp met onze gedetailleerde kaart van Amsterdam. Bekijk straten, pleinen en populaire locaties en plan je route door …"
+    },
+    {
+      "title": "madhukardevarasetti/my-bert-imdb2 · Hugging Face",
+      "url": "https://huggingface.co/madhukardevarasetti/my-bert-imdb2",
+      "snippet": "Instructions to use madhukardevarasetti/my-bert-imdb2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Kaart van De Pijp – Kaart van Amsterdam",
+      "url": "https://www.amsterdamkaart.com/de-pijp/",
+      "snippet": "De Pijp, Amsterdam, Noord-Holland, Nederland. De Pijp is een in het Amsterdamse stadsdeel Zuid, als onderdeel van Oud Zuid, …"
+    },
+    {
+      "title": "madhukardevarasetti/bert-finetuned-imdb · Hugging Face",
+      "url": "https://huggingface.co/madhukardevarasetti/bert-finetuned-imdb",
+      "snippet": "Instructions to use madhukardevarasetti/bert-finetuned-imdb with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Kaart De Pijp • Maps online",
+      "url": "https://www.routeplanner-kaarte.nl/kaart/de-pijp",
+      "snippet": "De Pijp kaart is een interactieve gids door een voor jou interessant gebied. Er kan heel gemakkelijk worden ingezoomd en …"
+    }
+  ]
+}

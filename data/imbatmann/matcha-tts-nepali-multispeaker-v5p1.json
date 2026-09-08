@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Imbatmann/matcha-tts-nepali-multispeaker-v5p1",
+  "slug": "imbatmann-matcha-tts-nepali-multispeaker-v5p1",
+  "author": "Imbatmann",
+  "url": "https://huggingface.co/Imbatmann/matcha-tts-nepali-multispeaker-v5p1",
+  "created_at": "2026-09-08T09:24:35.000Z",
+  "updated_at": "2026-09-08T09:25:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "matcha-tts",
+  "languages": [
+    "ne",
+    "en"
+  ],
+  "tags": [
+    "matcha-tts",
+    "text-to-speech",
+    "tts",
+    "nepali",
+    "multispeaker",
+    "multi-speaker",
+    "speaker-conditioning",
+    "flow-matching",
+    "hifi-gan",
+    "speech-synthesis",
+    "denoised",
+    "split-8s",
+    "ne",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 308111702,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook.com",
+      "url": "http://windows.microsoft.com/en-gb/windows/outlook/home",
+      "snippet": "Powerful free e-mail with security from Microsoft – Outlook.com is a best in class e-mail service that helps you organize and manage …"
+    },
+    {
+      "title": "Imbatmann/matcha-tts-nepali-multispeaker-v2 · Hugging Face",
+      "url": "https://huggingface.co/Imbatmann/matcha-tts-nepali-multispeaker-v2",
+      "snippet": "Matcha-TTS Nepali — v2, multi-speaker Self-contained release of the 2-speaker Nepali Matcha-TTS model: acoustic checkpoints, vocoder, the exact training configs, the matcha package, a seeded synthesis script and reference audio."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/mail/login.html?authRedirect=true&bO=1",
+      "snippet": "Sign in to your Outlook account to manage emails and access Office 365 services."
+    },
+    {
+      "title": "Matcha Tts Nepali Multispeaker V2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/imbatmann/matcha-tts-nepali-multispeaker-v2",
+      "snippet": "Registry entry for model Matcha Tts Nepali Multispeaker V2; source metadata pending."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=en-US&rs=GB",
+      "snippet": "Sign in to access your Microsoft Office account and manage your emails, documents, and other resources online."
+    }
+  ]
+}

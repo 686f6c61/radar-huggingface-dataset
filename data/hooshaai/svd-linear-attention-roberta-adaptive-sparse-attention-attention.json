@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-roberta-adaptive-sparse-attention-attention",
+  "slug": "hooshaai-svd-linear-attention-roberta-adaptive-sparse-attention-attention",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-roberta-adaptive-sparse-attention-attention",
+  "created_at": "2026-09-08T01:28:20.000Z",
+  "updated_at": "2026-09-08T01:28:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "roberta",
+    "adaptive_sparse_attention_attention",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22638790,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MES English - Complete ESL Teaching Resources",
+      "url": "https://mes-english.com/",
+      "snippet": "Everything you need to teach English language learners, beginners to advanced. Popular with ESL teachers, EFL instructors, and …"
+    },
+    {
+      "title": "Substack - Hoosha AI",
+      "url": "https://hooshaai.substack.com/",
+      "snippet": "Jul 27 • 🧠 Hoosha AI 5 6 Adaptive Transformer Compressor: Energy‑Thresholded SVD for Automatic Rank Selection in Attention and Linear Layers Compress transformers with per‑layer adaptive low‑rank factorization, preserving 95% singular energy by default Aug 28 • 🧠 Hoosha AI 1"
+    },
+    {
+      "title": "SES - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SES",
+      "snippet": "This disambiguation page lists articles associated with the title SES. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face's RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "Senior Expert Service: Home - ses-bonn.de",
+      "url": "https://ses-bonn.de/en/home",
+      "snippet": "The SES is Germany’s leading volunteering organisation for experts and executives who are either retired or taking some time off …"
+    }
+  ]
+}

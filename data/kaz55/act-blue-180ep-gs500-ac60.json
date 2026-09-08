@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-blue-180ep-gs500-ac60",
+  "slug": "kaz55-act-blue-180ep-gs500-ac60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-blue-180ep-gs500-ac60",
+  "created_at": "2026-09-08T01:32:51.000Z",
+  "updated_at": "2026-09-08T01:33:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dg5f",
+    "ur5e",
+    "gelsight",
+    "ablation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206729576,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaz55/act-blue-180ep-gs500-ac60 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-blue-180ep-gs500-ac60",
+      "snippet": "Instructions to use Kaz55/act-blue-180ep-gs500-ac60 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Comment faire pour avoir msn news version - MSN / WLM",
+      "url": "https://forums.commentcamarche.net/forum/affich-7381593-comment-faire-pour-avoir-msn-news-version",
+      "snippet": "A voir également: Comment faire pour avoir msn news version Dernière version ccleaner gratuit français- Télécharger - Nettoyage …"
+    },
+    {
+      "title": "Kaz55/act-cable3sizes-180ep-4cam-ac60 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-cable3sizes-180ep-4cam-ac60",
+      "snippet": "Instructions to use Kaz55/act-cable3sizes-180ep-4cam-ac60 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Kaz55/act-cable3sizes-180ep-4cam-ac60 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch"
+    },
+    {
+      "title": "msn-Tab öffnet sich automatisch - wie werde ich das los?",
+      "url": "https://www.win-10-forum.de/threads/msn-tab-oeffnet-sich-automatisch-wie-werde-ich-das-los.86649/",
+      "snippet": "Jun 27, 2018 · Seit heute habe ich das Problem, dass sich alle paar Minuten ein Tab von \"msn\" im Firefox-Browser öffnet. In den …"
+    },
+    {
+      "title": "Activated carbon adsorber ACT series - DirectIndustry",
+      "url": "https://pdf.directindustry.com/pdf/kaeser-kompressoren/activated-carbon-adsorber-act-series/4742-140365.html",
+      "snippet": "Overview: The ACT series by Kaeser offers high-performance activated carbon adsorbers designed for continuous operation and maximum compressed air quality. These systems ensure technically oil-free compressed air, meeting the stringent Class 1 purity requirements of ISO 8573-1, with a residual oil content no higher than 0.01 mg/m³."
+    }
+  ]
+}

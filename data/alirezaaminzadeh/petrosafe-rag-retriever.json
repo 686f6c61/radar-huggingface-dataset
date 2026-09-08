@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "alirezaaminzadeh/petrosafe-rag-retriever",
+  "slug": "alirezaaminzadeh-petrosafe-rag-retriever",
+  "author": "alirezaaminzadeh",
+  "url": "https://huggingface.co/alirezaaminzadeh/petrosafe-rag-retriever",
+  "created_at": "2026-09-08T09:10:45.000Z",
+  "updated_at": "2026-09-08T09:10:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "retrieval",
+    "rag",
+    "bm25",
+    "tf-idf",
+    "oil-gas",
+    "hse",
+    "aria-ai",
+    "fa",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1010276,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "alirezaaminzadeh/petrosafe-rag-retriever · Hugging Face",
+      "url": "https://huggingface.co/alirezaaminzadeh/petrosafe-rag-retriever",
+      "snippet": "PetroSafe RAG Retriever Hybrid BM25 + word TF-IDF + character TF-IDFlexical retrieval index over the bilingual (Persian/English) PetroSafe process-safety corpus. CPU-only — not a fine-tuned transformer, no GPU required to build or to serve. Architecture is unchanged from hse-multimodal-rag-retriever: a word-level TF-IDF (1-2 grams), a character TF-IDF (char_wb 3-5 grams, robust to Persian ..."
+    },
+    {
+      "title": "电脑上突然多了个屏保助手，屏保图案是游戏广告，这个恶意屏保隐藏 …",
+      "url": "https://www.zhihu.com/question/426806969",
+      "snippet": "从3点多发现这个问题，到我解决花了我3个小时，其中一个小时还在360病毒查杀全盘搜索病毒木马，结果毛都没有。 最后还是 …"
+    },
+    {
+      "title": "Alireza Aminzadeh — AI/ML Portfolio - Hugging Face",
+      "url": "https://huggingface.co/spaces/alirezaaminzadeh/alireza-aminzadeh-resume",
+      "snippet": "Alireza Aminzadeh's AI/ML portfolio: secure AI agents, cybersecurity machine learning, retrieval, benchmarks, and operations research."
+    },
+    {
+      "title": "Nordic Privacy Arena 2026 - Forum för Dataskydd",
+      "url": "https://dpforum.se/nordic-privacy-arena/nordic-privacy-arena-2026/",
+      "snippet": "Nordic Privacy Arena (NPA) 2026 is devoted to the theme Innovation and Compliance in the Era of Cloud, AI and Geopolitical …"
+    }
+  ]
+}

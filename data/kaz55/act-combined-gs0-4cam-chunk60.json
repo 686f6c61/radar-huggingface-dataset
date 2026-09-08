@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-combined-gs0-4cam-chunk60",
+  "slug": "kaz55-act-combined-gs0-4cam-chunk60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-combined-gs0-4cam-chunk60",
+  "created_at": "2026-09-08T01:33:49.000Z",
+  "updated_at": "2026-09-08T01:34:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dg5f",
+    "ur5e",
+    "gelsight",
+    "ablation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206725376,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Kaz55/act-combined-gs0-4cam-chunk60 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-combined-gs0-4cam-chunk60",
+      "snippet": "Instructions to use Kaz55/act-combined-gs0-4cam-chunk60 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "Kaz55/act-mixed-270ep-4cam-ac60 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-mixed-270ep-4cam-ac60",
+      "snippet": "Instructions to use Kaz55/act-mixed-270ep-4cam-ac60 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Kaz55/act-mixed-270ep-4cam-ac60 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the ..."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/app%20download",
+      "snippet": "YouTube's official YouTube channel."
+    }
+  ]
+}

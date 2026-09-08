@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "safafaf311/MyAwesomeModel",
+  "slug": "safafaf311-myawesomemodel",
+  "author": "safafaf311",
+  "url": "https://huggingface.co/safafaf311/MyAwesomeModel",
+  "created_at": "2026-09-08T01:34:55.000Z",
+  "updated_at": "2026-09-08T01:36:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "e-Sprawozdania Finansowe",
+      "url": "https://e-sprawozdania.mf.gov.pl/ap/",
+      "snippet": ""
+    },
+    {
+      "title": "safafaf311/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/safafaf311/MyAwesomeModel",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "Sprawozdanie - Ściągi, wypracowania, lektury - Bryk.pl",
+      "url": "https://www.bryk.pl/jak-pisac/sprawozdanie",
+      "snippet": "Sprawozdanie to forma wypowiedzi pisemnej lub ustnej, której celem jest relacjonowanie przebiegu określonego wydarzenia. Może …"
+    },
+    {
+      "title": "safafaf311 (134) - Hugging Face",
+      "url": "https://huggingface.co/safafaf311",
+      "snippet": "User profile of 134 on Hugging Face"
+    },
+    {
+      "title": "Jak napisać sprawozdanie - co to jest, definicja, przykłady ...",
+      "url": "https://eszkola.pl/jezyk-polski/sprawozdanie-8983.html",
+      "snippet": "Sprawozdanie to wierna i dokładna relacja o charakterze informacyjnym pisana z punktu widzenia świadka lub uczestnika zdarzeń. …"
+    }
+  ]
+}

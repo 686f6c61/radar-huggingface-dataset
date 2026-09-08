@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/qwen3-8b-CoreAI-official",
   "created_at": "2026-06-11T22:10:03.000Z",
-  "updated_at": "2026-09-06T18:02:21.000Z",
+  "updated_at": "2026-09-07T10:43:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 37,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

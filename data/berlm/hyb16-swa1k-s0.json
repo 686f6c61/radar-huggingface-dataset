@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Berlm/hyb16-swa1k-s0",
+  "slug": "berlm-hyb16-swa1k-s0",
+  "author": "Berlm",
+  "url": "https://huggingface.co/Berlm/hyb16-swa1k-s0",
+  "created_at": "2026-09-08T09:06:25.000Z",
+  "updated_at": "2026-09-08T09:07:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gdn2",
+    "text-generation",
+    "gated-deltanet",
+    "linear-attention",
+    "hybrid-attention",
+    "long-context",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 366265344,
+  "parameters_human": "366.3M",
+  "storage_bytes": 732557160,
+  "storage_human": "733 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Monero - secure, private, untraceable",
+      "url": "https://www.getmonero.org/",
+      "snippet": "Visit our Downloads page and get the right wallet for you. The Monero wallets are available for a variety of platforms and contain …"
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "Pick the right LLM in under a minute. 373 models ranked by GPQA, AIME 2025, SWE-bench Verified, HLE, input/output price per million tokens, context window and license. Updated 2026-09-06."
+    },
+    {
+      "title": "Downloads | Monero - secure, private, untraceable",
+      "url": "https://www.getmonero.org/downloads/",
+      "snippet": "An open-source command line interface (CLI) wallet developed by the Monero community, completely free to use, best suited for …"
+    },
+    {
+      "title": "Fuzz_dic/子域名爆破参数-top16万.txt at master - GitHub",
+      "url": "https://github.com/7hang/Fuzz_dic/blob/master/%E5%AD%90%E5%9F%9F%E5%90%8D%E7%88%86%E7%A0%B4%E5%8F%82%E6%95%B0-top16%E4%B8%87.txt",
+      "snippet": "参数 | 字典 collections. Contribute to 7hang/Fuzz_dic development by creating an account on GitHub."
+    },
+    {
+      "title": "8 Best Monero Wallets 2026: Safest Places to Store XMR",
+      "url": "https://coinbureau.com/analysis/best-monero-wallets",
+      "snippet": "Feb 2, 2026 · Before we dig into the types of Monero wallets and storage options, it is important to mention our criteria for the …"
+    }
+  ]
+}

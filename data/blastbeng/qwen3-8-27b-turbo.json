@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "blastbeng/Qwen3.8-27B-TURBO",
+  "slug": "blastbeng-qwen3-8-27b-turbo",
+  "author": "blastbeng",
+  "url": "https://huggingface.co/blastbeng/Qwen3.8-27B-TURBO",
+  "created_at": "2026-09-08T08:55:57.000Z",
+  "updated_at": "2026-09-08T08:58:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 424062644635,
+  "storage_human": "424.1 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook - webmail.apps.mil",
+      "url": "https://webmail.apps.mil/mail/?realm=army.mil",
+      "snippet": "Outlook JavaScript must be enabled."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Microsoft To Do",
+      "url": "https://webmail.apps.mil/tasks/",
+      "snippet": "Organize tasks and manage your to-do lists efficiently with Microsoft To Do."
+    },
+    {
+      "title": "AI-TAVS/Qwen3.8-turbo:27b",
+      "url": "https://ollama.com/AI-TAVS/Qwen3.8-turbo:27b",
+      "snippet": "This is a high detail focused model, with tuning specific to address over reasoning/over thinking and excessive token consumption THEN to take the model to the next level. This model (both 4 bit and 8 bit) exceeds the base Qwen 3.8 27B in ALL critical 7 benchmarks AND exceeds all 7 benchmarks for Qwen3.6-35B-A3B, Qwen 3.6 27B, and Qwen 3.5 27B."
+    },
+    {
+      "title": "Book With Me - webmail.apps.mil",
+      "url": "https://webmail.apps.mil/bookwithme/me",
+      "snippet": "Effortlessly schedule meetings and manage appointments on the official military webmail platform."
+    }
+  ]
+}

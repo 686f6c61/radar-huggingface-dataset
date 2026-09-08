@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Pegainfer/kern-qwen38-sm103",
+  "slug": "pegainfer-kern-qwen38-sm103",
+  "author": "Pegainfer",
+  "url": "https://huggingface.co/Pegainfer/kern-qwen38-sm103",
+  "created_at": "2026-09-08T08:30:00.000Z",
+  "updated_at": "2026-09-08T09:25:45.000Z",
+  "license": "per-artifact",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kern",
+    "cuda",
+    "cubin",
+    "sm103",
+    "qwen3.8",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6439216,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banca Fineco: Conti, carte, investimenti e trading - Fineco",
+      "url": "https://finecobank.com/?msockid=1c525672599d6e4218c041bc58b46fc0",
+      "snippet": "11 hours ago · Conto e carte, finanziamenti, trading e investimenti: con Fineco hai soluzioni innovative e assistenza rapida."
+    },
+    {
+      "title": "GitHub - pegainfer-project/pegainfer: Pure Rust + CUDA LLM inference ...",
+      "url": "https://github.com/pegainfer-project/pegainfer",
+      "snippet": "Pure Rust + CUDA LLM inference engine — no PyTorch, OpenAI-compatible, serves Qwen3 to Kimi-K2 - pegainfer-project/pegainfer"
+    },
+    {
+      "title": "Conto corrente e Carte - Fineco",
+      "url": "https://it.finecobank.com/banking/",
+      "snippet": "Scopri i servizi innovativi del conto corrente online Fineco: carte di pagamento, bonifici gratuiti, pagamento utenze online, pagamenti …"
+    },
+    {
+      "title": "pegainfer — Pure Rust + CUDA LLM Inference Engine",
+      "url": "https://pegainfer.org/",
+      "snippet": "Pure Rust + CUDA LLM inference engine — no PyTorch, OpenAI-compatible, serving models from Qwen3 to the trillion-parameter Kimi-K2."
+    },
+    {
+      "title": "Trading online: piattaforma per investimenti online - Fineco",
+      "url": "https://it.finecobank.com/trading/",
+      "snippet": "Con Fineco fai trading online in modo sicuro. Affidati alla piattaforma più usata dagli italiani e investi sui titoli delle principali borse …"
+    }
+  ]
+}

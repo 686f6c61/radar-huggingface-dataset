@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gurubrahmam/sentiment-classifier",
+  "slug": "gurubrahmam-sentiment-classifier",
+  "author": "gurubrahmam",
+  "url": "https://huggingface.co/gurubrahmam/sentiment-classifier",
+  "created_at": "2026-09-08T01:33:26.000Z",
+  "updated_at": "2026-09-08T02:00:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28919909,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Search for help on the taskbar, use the Tips app, select the Get help link in the Settings app, or go to support.microsoft.com/windows."
+    },
+    {
+      "title": "gurubrahmam/sentiment-classifier · Hugging Face",
+      "url": "https://huggingface.co/gurubrahmam/sentiment-classifier",
+      "snippet": "Framework versions Citations Model Card for sentiment-classifier This model is a fine-tuned version of Qwen/Qwen2.5-1.5B-Instruct. It has been trained using TRL. Quick start fromtransformers importpipeline"
+    },
+    {
+      "title": "Windows help and supportWindows help and support",
+      "url": "https://www.microsoft.com/en-us/windows/help-and-support?msockid=21458099e59f601410c09757e40261a5",
+      "snippet": "Find the Windows help and support you need. From account setup to device support, search for quick answers and helpful resources …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "How to Get Help in Windows",
+      "url": "https://helpdeskgeek.com/how-to-get-help-in-windows/",
+      "snippet": "Sep 27, 2022 · To find it on your computer, open the search menu and type Get Help. You can also click the start button, scroll …"
+    }
+  ]
+}

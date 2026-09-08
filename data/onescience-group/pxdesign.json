@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/PXDesign",
+  "slug": "onescience-group-pxdesign",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/PXDesign",
+  "created_at": "2026-09-08T01:50:12.000Z",
+  "updated_at": "2026-09-08T01:50:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "OneScience",
+    "life-science",
+    "protein-design",
+    "protein-binder",
+    "PXDesign",
+    "Protenix",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3769627569,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "OneScience-Group/PXDesign · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/PXDesign",
+      "snippet": "The complete PXDesign workflow consists of the PXDesign diffusion generation model, ProteinMPNN sequence design, AF2-IG evaluation, and Protenix evaluation. The official implementation provides three primary modes, generation-only, preview, and extended, covering use cases from quick validation to complete candidate screening."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.nl/maps?authuser=0",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group",
+      "snippet": "Follow 18 AI & ML interests OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=nl",
+      "snippet": "Live verkeersinformatie Snel Langzaam Kaartgegevens © 2026 Google Voorwaarden 20 km"
+    }
+  ]
+}

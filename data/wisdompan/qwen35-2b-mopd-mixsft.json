@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "wisdompan/qwen35-2b-mopd-mixsft",
+  "slug": "wisdompan-qwen35-2b-mopd-mixsft",
+  "author": "wisdompan",
+  "url": "https://huggingface.co/wisdompan/qwen35-2b-mopd-mixsft",
+  "created_at": "2026-09-08T09:52:06.000Z",
+  "updated_at": "2026-09-08T09:59:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "full-parameter-finetuning",
+    "sft",
+    "math",
+    "code",
+    "instruction-following",
+    "mopd",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446548207,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft To Do - Outlook",
+      "url": "https://outlook.live.com/tasks/?app",
+      "snippet": "Microsoft To Do"
+    },
+    {
+      "title": "Qwen/Qwen3.5-2B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "snippet": "Instructions to use Qwen/Qwen3.5-2B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Outlook – free personal email and calendar from Microsoft",
+      "url": "https://outlook.live.com/mail/oauthRedirect.html",
+      "snippet": "Access free Outlook email and calendar, plus Office Online apps like Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bookings - Outlook",
+      "url": "https://outlook.live.com/bookings/",
+      "snippet": "JavaScript must be enabled. tttt"
+    }
+  ]
+}

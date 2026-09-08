@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "thethinkmachine/nafnet-ll-ssr-x4",
+  "slug": "thethinkmachine-nafnet-ll-ssr-x4",
+  "author": "thethinkmachine",
+  "url": "https://huggingface.co/thethinkmachine/nafnet-ll-ssr-x4",
+  "created_at": "2026-09-08T08:49:26.000Z",
+  "updated_at": "2026-09-08T08:57:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "low-light",
+    "lowlight",
+    "image-restoration",
+    "image-super-resolution",
+    "super-resolution",
+    "denoising",
+    "low-light-enhancement",
+    "image-enhancement",
+    "4x-super-resolution",
+    "nafnet",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9317971,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Значение слова канва подскажите ...",
+      "url": "https://otvet.mail.ru/question/10866140",
+      "snippet": "Пользователь grigorii_kuzia написал пост «значение слова канва подскажите пожалуйста» и получил на него 6 ответов. …"
+    },
+    {
+      "title": "thethinkmachine (Shreyan C) - Hugging Face",
+      "url": "https://huggingface.co/thethinkmachine/models",
+      "snippet": "🦜AI Engineer thethinkmachine Follow Gargaz's profile picturefrostcs7's profile picturewebxos's profile picture 11 followers · 72 following thethinkmachine"
+    },
+    {
+      "title": "Канва перестала грузиться, долго ...",
+      "url": "https://otvet.mail.ru/question/242497443",
+      "snippet": "Не грузится приложение канва целый день, раньше все грузилось через впн, через браузер все спокойно грузится захожу …"
+    },
+    {
+      "title": "thethinkmachine (Shreyan C) - Hugging Face",
+      "url": "https://huggingface.co/thethinkmachine/datasets",
+      "snippet": "🦜AI Engineer updated a model about 22 hours ago"
+    },
+    {
+      "title": "Словосочетание канва событий - это ...",
+      "url": "https://otvet.mail.ru/question/89259521",
+      "snippet": "Пользователь juna_fifty написал пост «Словосочетание канва событий - это какое выразительное средство речи? » и получил …"
+    }
+  ]
+}

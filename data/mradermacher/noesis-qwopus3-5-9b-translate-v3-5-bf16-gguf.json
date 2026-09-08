@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16-GGUF",
+  "slug": "mradermacher-noesis-qwopus3-5-9b-translate-v3-5-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16-GGUF",
+  "created_at": "2026-09-08T09:37:52.000Z",
+  "updated_at": "2026-09-08T10:10:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 36627076992,
+  "storage_human": "36.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les choses que j’ai fait ou que j’ai faites - Question Orthographe",
+      "url": "https://www.question-orthographe.fr/question/les-choses-que-jai-fait-ou-que-jai-faites/",
+      "snippet": "Nov 21, 2019 · La justification grammaticale de l’accord est que le verbe (ici faire) étant conjugué avec l’auxiliaire avoir, le participe …"
+    },
+    {
+      "title": "mradermacher/Qwopus3.5-9B-v3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwopus3.5-9B-v3-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "« J’ai fait (es) miennes - Question Orthographe",
+      "url": "https://www.question-orthographe.fr/question/jai-faites-miennes/",
+      "snippet": "Apr 26, 2022 · Bonjour, Un doute m’assaille : » Au fil de divers projets académiques et personnels, j’ai notamment fait miennes les …"
+    },
+    {
+      "title": "NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16 - Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bannissement par erreur d'après moi sur le forum Valorant - 23-07 …",
+      "url": "https://www.jeuxvideo.com/forums/42-3017509-70257552-1-0-1-0-bannissement-par-erreur-d-apres-moi.htm",
+      "snippet": "Jul 23, 2022 · Bonjour, viens tout juste de reprendre le jeu et j'étais afk dans le menu quand une sanction ban def est apparue sur …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "juaow",
   "url": "https://huggingface.co/juaow/aleatorios",
   "created_at": "2025-06-04T17:49:32.000Z",
-  "updated_at": "2026-08-28T19:23:25.000Z",
+  "updated_at": "2026-09-07T20:51:06.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 18509192080,
-  "storage_human": "18.5 GB",
+  "storage_bytes": 18758065514,
+  "storage_human": "18.8 GB",
   "base_model": null,
   "formats": [
     "onnx"

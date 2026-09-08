@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Dobot-Official/X-trainer-pi05-tube",
+  "slug": "dobot-official-x-trainer-pi05-tube",
+  "author": "Dobot-Official",
+  "url": "https://huggingface.co/Dobot-Official/X-trainer-pi05-tube",
+  "created_at": "2026-09-08T09:33:28.000Z",
+  "updated_at": "2026-09-08T09:33:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Confidentialité – Street View – Google Maps",
+      "url": "https://maps.google.fr/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps avec Street View vous permet d'explorer les sites du monde entier en profitant d'images à 360 degrés des rues. Ainsi, …"
+    },
+    {
+      "title": "Dobot-Official/X-trainer-pi05-tube · Hugging Face",
+      "url": "https://huggingface.co/Dobot-Official/X-trainer-pi05-tube",
+      "snippet": "X-trainer-pi05-tube like0 License:mit Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Dobot-Official (Dobot) - Hugging Face",
+      "url": "https://huggingface.co/Dobot-Official",
+      "snippet": "🐨 Dobot-OfficialJan 31, 2023 models1 Dobot-Official/X-trainer-pi05-tube Updated 18 minutes ago datasets3 Sort: Recently updated"
+    },
+    {
+      "title": "Street View Treks: Egypt – About – Google Maps",
+      "url": "https://maps.google.fr/intl/en/maps/about/behind-the-scenes/streetview/treks/pyramids-of-giza/",
+      "snippet": "Discover the world with Google Maps. Experience Street View, 3D Mapping, turn-by-turn directions, indoor maps and more across …"
+    }
+  ]
+}

@@ -5,10 +5,10 @@
   "author": "nomikos-project",
   "url": "https://huggingface.co/nomikos-project/syriac-htr-calamari",
   "created_at": "2026-07-09T10:49:38.000Z",
-  "updated_at": "2026-08-29T15:30:09.000Z",
+  "updated_at": "2026-09-07T14:09:27.000Z",
   "license": null,
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "image-to-text",
   "library": "calamari",
   "languages": [
     "syr"
@@ -18,7 +18,10 @@
     "onnx",
     "handwritten-text-recognition",
     "ocr",
+    "syriac",
+    "image-to-text",
     "syr",
+    "model-index",
     "region:us"
   ],
   "likes": 0,
@@ -26,16 +29,16 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12200844,
-  "storage_human": "12 MB",
+  "storage_bytes": 32189046,
+  "storage_human": "32 MB",
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-05T07:29:02.186Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

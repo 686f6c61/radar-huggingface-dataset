@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Wiself/Dark-Scarlett-v1.0-26B-A4B-Voice",
+  "slug": "wiself-dark-scarlett-v1-0-26b-a4b-voice",
+  "author": "Wiself",
+  "url": "https://huggingface.co/Wiself/Dark-Scarlett-v1.0-26B-A4B-Voice",
+  "created_at": "2026-09-08T01:44:07.000Z",
+  "updated_at": "2026-09-08T02:03:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "voice",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "voice",
+    "gemma4",
+    "gguf",
+    "moe",
+    "roleplay",
+    "style-transfer",
+    "unaligned",
+    "text-generation",
+    "en",
+    "base_model:ReadyArt/Dark-Scarlett-v1.0-26B-A4B",
+    "base_model:finetune:ReadyArt/Dark-Scarlett-v1.0-26B-A4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1476395137,
+  "storage_human": "1.5 GB",
+  "base_model": "ReadyArt/Dark-Scarlett-v1.0-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "5回答 Pornhubで45万の請求が来てしまって年齢確認のところを押しただけで出てしまったんですがワンクリック詐欺でしょう …"
+    },
+    {
+      "title": "Wiself/Dark-Scarlett-v1.0-26B-A4B-Voice · Hugging Face",
+      "url": "https://huggingface.co/Wiself/Dark-Scarlett-v1.0-26B-A4B-Voice",
+      "snippet": "Dark Scarlett seems like a cool model. Try its voice on your GGUF, see how it sounds — nothing crazy. This is the voice of ReadyArt/Dark-Scarlett-v1.0-26B-A4Bin a single portable tensor (~1.5 GB). If you already have a Gemma 4 26B A4BGGUF, cast it on with the Voice tooland hear how it reads — your base underneath, Scarlett's writing on top."
+    },
+    {
+      "title": "Pornhubというサイトについて質問です。動画を視聴しているのです …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10285715145",
+      "snippet": "Sep 8, 2023 · 動画サービス Pornhubで45万の請求が来てしまって年齢確認のところを押しただけで出てしまったんですがワンク …"
+    },
+    {
+      "title": "Wiself/Dark-Scarlett-v1.0-QAT-26B-A4B-Voice · Hugging Face",
+      "url": "https://huggingface.co/Wiself/Dark-Scarlett-v1.0-QAT-26B-A4B-Voice",
+      "snippet": "What's inside Compatibility Notes References & Credits Dark Scarlett's voice, matched to your QAT model — without training anything. Dark-Scarlett-v1.0-QAT-26B-A4B-Voice Scarlett's voice, fitted to QAT-derived GGUFs. Same idea as the main voice, correct math for QAT heads."
+    },
+    {
+      "title": "Supprimer mon compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37008466-supprimer-mon-compte-pornhub",
+      "snippet": "Dec 23, 2020 · Applis & Sites Réseaux sociaux Sujet PrécédentSujet Suivant Supprimer mon compte pornhub Tchoinbig- bazfile …"
+    }
+  ]
+}

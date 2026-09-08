@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kkkfu/Llama-VARCO-8b-news2stock-analyzer",
+  "slug": "kkkfu-llama-varco-8b-news2stock-analyzer",
+  "author": "kkkfu",
+  "url": "https://huggingface.co/kkkfu/Llama-VARCO-8b-news2stock-analyzer",
+  "created_at": "2026-09-08T08:44:19.000Z",
+  "updated_at": "2026-09-08T08:49:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:NCSOFT/Llama-VARCO-8B-Instruct",
+    "base_model:finetune:NCSOFT/Llama-VARCO-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180996009,
+  "storage_human": "181 MB",
+  "base_model": "NCSOFT/Llama-VARCO-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "نظام الادارة التعليمية | وزارة التعليم",
+      "url": "https://noor.moe.gov.sa/",
+      "snippet": "منصة نور هي نظام متكامل يربط جميع المؤسسات التعليمية التابعة لوزارة التعليم من خلال قاعدة بيانات شاملة، يتم من خلالها متابعة بيانات الطلاب في مراحل التعليم العام، مع التركيز على الجوانب ..."
+    },
+    {
+      "title": "blimu/Llama-VARCO-8b-news2stock-analyser · Hugging Face",
+      "url": "https://huggingface.co/blimu/Llama-VARCO-8b-news2stock-analyser",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Object moved - نظام نور",
+      "url": "https://noor.moe.gov.sa/Noor/iam/login.aspx",
+      "snippet": "نظام متكامل للتعلم يربط جميع المؤسسات التعليمية التابعة لوزارة التعليم من خلال قاعدة بيانات متكاملة."
+    },
+    {
+      "title": "Llama-VARCO-8b-news2stock-analyser-merged3 - Hugging Face",
+      "url": "https://huggingface.co/blimu/Llama-VARCO-8b-news2stock-analyser-merged3",
+      "snippet": "Llama-VARCO-8b-news2stock-analyser-merged3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "نظام نور - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D9%86%D8%B8%D8%A7%D9%85_%D9%86%D9%88%D8%B1",
+      "snippet": "\"بدء التسجيل في خدمة النقل المدرسي عبر نظام نور\". جريدة المدينة. مؤرشف من الأصلفي 2023-01-30. اطلع عليه بتاريخ 2023-11-12. ↑الدمام، اليوم- (21 يناير 2023). \"نظام نور.. …"
+    }
+  ]
+}

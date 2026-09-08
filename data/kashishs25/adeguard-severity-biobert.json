@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kashishs25/adeguard-severity-biobert",
+  "slug": "kashishs25-adeguard-severity-biobert",
+  "author": "kashishs25",
+  "url": "https://huggingface.co/kashishs25/adeguard-severity-biobert",
+  "created_at": "2026-09-08T09:19:53.000Z",
+  "updated_at": "2026-09-08T09:20:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108312579,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433273844,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BEST COLLECTION SONG | LAGU DAERAH MALUKU UTARA - YouTube",
+      "url": "https://www.youtube.com/watch?v=Ko752Ntz4Jc",
+      "snippet": "Nov 19, 2025 · KOMPILASI THAE UMAR - BEST COLLECTION SONG | LAGU DAERAH MALUKU UTARA AI Eastern Music Official …"
+    },
+    {
+      "title": "GitHub - PrameetKumar/ADEGuard: AI-powered NLP platform for Adverse ...",
+      "url": "https://github.com/PrameetKumar/ADEGuard",
+      "snippet": "AI-powered NLP platform for Adverse Drug Event detection, severity classification, symptom clustering and explainable healthcare analytics using VAERS data. - PrameetKumar/ADEGuard"
+    },
+    {
+      "title": "Kumpulan Lagu Daerah Maluku Utara - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLvcFgqtrdHee3ga6UGTwOh7s21gitamuv",
+      "snippet": "Kumpulan Lagu-lagu Joget, Lalayon, dan Wayase Has Musik Timur Maluku Utara"
+    },
+    {
+      "title": "GitHub - Sugiuma/ADEGuard: A data-driven NLP system with explainable AI ...",
+      "url": "https://github.com/Sugiuma/ADEGuard",
+      "snippet": "ADEGuard is an intelligent text analytics system designed to automatically identify Adverse Drug Events (ADEs) from unstructured clinical narratives and analyze their severity. It integrates three core AI capabilities into one interactive Streamlit dashboard: Named Entity Recognition (NER) – Extract ADEs and Drug mentions from text using a BioBERT model. Severity Classification ..."
+    },
+    {
+      "title": "Lagu Maluku Utara - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=PLt3_vVcA3bxbVJr56dudiEa5U-Y8JPrZ8",
+      "snippet": "Lagu Maluku Utara. Playlist • Channel Halsel."
+    }
+  ]
+}

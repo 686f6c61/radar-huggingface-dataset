@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Wiself/Dark-Scarlett-v1.0-QAT-26B-A4B-Voice",
+  "slug": "wiself-dark-scarlett-v1-0-qat-26b-a4b-voice",
+  "author": "Wiself",
+  "url": "https://huggingface.co/Wiself/Dark-Scarlett-v1.0-QAT-26B-A4B-Voice",
+  "created_at": "2026-09-08T01:45:10.000Z",
+  "updated_at": "2026-09-08T02:00:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "voice",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "voice",
+    "gemma4",
+    "gguf",
+    "qat",
+    "moe",
+    "roleplay",
+    "style-transfer",
+    "unaligned",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "base_model:finetune:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1476395339,
+  "storage_human": "1.5 GB",
+  "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Wiself/Dark-Scarlett-v1.0-QAT-26B-A4B-Voice · Hugging Face",
+      "url": "https://huggingface.co/Wiself/Dark-Scarlett-v1.0-QAT-26B-A4B-Voice",
+      "snippet": "What's inside Compatibility Notes References & Credits Dark Scarlett's voice, matched to your QAT model — without training anything. Dark-Scarlett-v1.0-QAT-26B-A4B-Voice Scarlett's voice, fitted to QAT-derived GGUFs. Same idea as the main voice, correct math for QAT heads."
+    },
+    {
+      "title": "Wiself/Dark-Scarlett-v1.0-26B-A4B-Voice · Hugging Face",
+      "url": "https://huggingface.co/Wiself/Dark-Scarlett-v1.0-26B-A4B-Voice",
+      "snippet": "Dark Scarlett seems like a cool model. Try its voice on your GGUF, see how it sounds — nothing crazy. This is the voice of ReadyArt/Dark-Scarlett-v1.0-26B-A4Bin a single portable tensor (~1.5 GB). If you already have a Gemma 4 26B A4BGGUF, cast it on with the Voice tooland hear how it reads — your base underneath, Scarlett's writing on top."
+    },
+    {
+      "title": "Dark Scarlett V1.0 26b A4b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/dark-scarlett-v1-0-26b-a4b.html",
+      "snippet": "Download Dark Scarlett V1.0 26b A4b GGUF model. 29.0 GB, 6,219 downloads, 26 likes."
+    },
+    {
+      "title": "Dark-Scarlett-v1.0-26B-A4B — VRAM requirements, exact quant sizes ...",
+      "url": "https://ossmodeldb.com/models/dark-scarlett-v1-0-26b-a4b",
+      "snippet": "Dark-Scarlett-v1.0-26B-A4B Q4_K_M is exactly 16,796,016,064 bytes (15.64 GiB). Fit by GPU and every shipped quantization with real file sizes."
+    }
+  ]
+}

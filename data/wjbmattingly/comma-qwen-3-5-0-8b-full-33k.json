@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "wjbmattingly/comma-qwen-3.5-0.8b-full-33k",
+  "slug": "wjbmattingly-comma-qwen-3-5-0-8b-full-33k",
+  "author": "wjbmattingly",
+  "url": "https://huggingface.co/wjbmattingly/comma-qwen-3.5-0.8b-full-33k",
+  "created_at": "2026-09-08T09:11:59.000Z",
+  "updated_at": "2026-09-08T09:13:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "htr",
+    "handwritten-text-recognition",
+    "manuscripts",
+    "palaeography",
+    "catmus",
+    "medieval-latin",
+    "qwen3.5",
+    "vision-language",
+    "conversational",
+    "la",
+    "dataset:comma-project/deep-jsonl",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019853,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "wjbmattingly/comma-qwen-3.5-0.8b-full · Hugging Face",
+      "url": "https://huggingface.co/wjbmattingly/comma-qwen-3.5-0.8b-full",
+      "snippet": "The image budget travels with the checkpoint This repo's processor_config.json is already capped to 2048 visual tokens per page (2,097,152 pixels after smart-resize, one token per 32×32 block), which is what training and scoring used. Load the processor from this repo rather than from the base model: the library default is 16,777,216 pixels — 16k visual tokens for one page — and serving ..."
+    },
+    {
+      "title": "Google Search - A new kind of help",
+      "url": "https://search.google/",
+      "snippet": "Explore a new kind of help for your everyday with breakthroughs in Search intelligence from Google I/O."
+    },
+    {
+      "title": "comma-qwen-3.5 - a Hugging Face Space by wjbmattingly",
+      "url": "https://huggingface.co/spaces/wjbmattingly/comma-qwen-3.5-demo",
+      "snippet": "This app lets you upload an image of a handwritten manuscript page, pick a model size, and receive a transcription where each physical line of writing is output on its own line. It works without ne..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&pws=0",
+      "snippet": "Advanced search AdvertisingBusiness SolutionsAbout GoogleGoogle.com © 2026 - Privacy- Terms Google apps"
+    }
+  ]
+}

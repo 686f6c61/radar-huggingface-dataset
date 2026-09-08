@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "con-cord/SFT-agreed-only-no-ref",
+  "slug": "con-cord-sft-agreed-only-no-ref",
+  "author": "con-cord",
+  "url": "https://huggingface.co/con-cord/SFT-agreed-only-no-ref",
+  "created_at": "2026-09-08T11:24:51.000Z",
+  "updated_at": "2026-09-08T11:27:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 17238509602,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Con — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Con",
+      "snippet": "Afficher / masquer la sous-section Usage contemporain et littéraire. 3.1Le personnage du con. 3.2Jeux sur la polysémie. 3.3Jeux sur …"
+    },
+    {
+      "title": "Concord: An Agreement-Aware Multi-Adjudication Pipeline for LLM Evaluation",
+      "url": "https://aclanthology.org/2026.gem-main.46.pdf",
+      "snippet": "Con- cord is model-agnostic: it can be instantiated with locally hosted open-source judges, and it can op- tionally incorporate a stronger proprietary judge within the same pipeline for escalation or compari- son."
+    },
+    {
+      "title": "con — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/con",
+      "snippet": "con — Wiktionnaire, le dictionnaire libre. Aller au contenu. Menu principal. déplacer vers la barre latéralemasquer. Navigation . Page …"
+    },
+    {
+      "title": "con-cord/SFT_MA-no-ref · Hugging Face",
+      "url": "https://huggingface.co/con-cord/SFT_MA-no-ref",
+      "snippet": "This repository contains a medical LLM-as-a-Judge model based on Gemma-3-4B and fine-tuned for medical response evaluation tasks. This version uses majority-agreement SFT without reference answers."
+    },
+    {
+      "title": "Définitions : con - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/con/17848",
+      "snippet": "con adj. et n. Stupide, imbécile, idiot. À la con. Con comme un balai, comme la lune. Faire le con. con n.m. . Sexe de la femme, vagin."
+    }
+  ]
+}

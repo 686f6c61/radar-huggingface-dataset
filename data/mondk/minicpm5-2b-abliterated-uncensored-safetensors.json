@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+  "slug": "mondk-minicpm5-2b-abliterated-uncensored-safetensors",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+  "created_at": "2026-09-08T11:21:20.000Z",
+  "updated_at": "2026-09-08T11:47:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "信息提示 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/91822898.html",
+      "snippet": "京ICP证030173号-1 京网文【2023】1034-029号 ©2026Baidu 使用百度前必读 | 知道协议"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "RAM和ROM的区别_百度知道",
+      "url": "https://zhidao.baidu.com/question/81373514.html",
+      "snippet": "3、手机 RAM 手机中的RAM和ROM与电脑类似，由于RAM被称为随机存取内存，也就是运行内存，它支撑的是手机软件的运行，存 …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B-Base · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-Base",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "如何解决“操作无法完成，因为文件已经在 COM Surrogate 中打开。”？ …",
+      "url": "https://www.zhihu.com/question/41295607",
+      "snippet": "Mar 12, 2016 · 我在删图片详细信息时，只删了部分信息，提示操作无法完成，因为文件已经在 COM Surrogate 中打开。"
+    }
+  ]
+}

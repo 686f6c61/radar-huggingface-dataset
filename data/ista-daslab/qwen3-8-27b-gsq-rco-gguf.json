@@ -31,12 +31,12 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 562,
-  "downloads_30d": 403292,
-  "trending_score": 452,
+  "likes": 606,
+  "downloads_30d": 479597,
+  "trending_score": 484,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 81435646085,
+  "storage_bytes": 81449288709,
   "storage_human": "81.4 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

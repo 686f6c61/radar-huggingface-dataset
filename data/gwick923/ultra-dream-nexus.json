@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "GWick923/ultra-dream-nexus",
+  "slug": "gwick923-ultra-dream-nexus",
+  "author": "GWick923",
+  "url": "https://huggingface.co/GWick923/ultra-dream-nexus",
+  "created_at": "2026-09-08T08:59:33.000Z",
+  "updated_at": "2026-09-08T09:25:22.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sdxl",
+    "illustrious",
+    "checkpoint",
+    "merge",
+    "text-to-image",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14210360520,
+  "storage_human": "14.2 GB",
+  "base_model": "Illustrious",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Χρήση λειτουργιών κάμερας στο Chromebook ...",
+      "url": "https://support.google.com/chromebook/answer/4487486?hl=el",
+      "snippet": "Δημιουργία βίντεο ή κινούμενης εικόνας GIF παρέλευσης χρόνου Μπορείτε να δημιουργήσετε ένα βίντεο παρέλευσης χρόνου στο …"
+    },
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI model rankings. Compare the most uncensored AI models by freedom (UGI), willingness, natural intelligence, and writing ability — an independent leaderboard updated from the UGI Leaderboard."
+    },
+    {
+      "title": "θολή κάμερα - πως διορθώνεται; - Hardware ...",
+      "url": "https://www.insomnia.gr/forums/topic/249113-%CE%B8%CE%BF%CE%BB%CE%AE-%CE%BA%CE%AC%CE%BC%CE%B5%CF%81%CE%B1-%CF%80%CF%89%CF%82-%CE%B4%CE%B9%CE%BF%CF%81%CE%B8%CF%8E%CE%BD%CE%B5%CF%84%CE%B1%CE%B9/",
+      "snippet": "Jun 29, 2008 · Ανοιξε την καμερα να βλεπεις την εικονα που δειχνει και γυρνατο δεξια-αριστερα μεχρι να εχεις καθαρη εικονα είσαι …"
+    },
+    {
+      "title": "NexusDreamULTRA - NDREAMULTRA.V2 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/1731411/nexusdreamultra",
+      "snippet": "10 Updated: Feb 26, 2026 style dream nexus ultra giospecter ultra nexus dream NDREAMULTRA.V2 v1.0 Download"
+    },
+    {
+      "title": "Βιντεο καμερα Panasonic NV-GS27 - Μονάδες ...",
+      "url": "https://www.insomnia.gr/forums/topic/215959-%CE%B2%CE%B9%CE%BD%CF%84%CE%B5%CE%BF-%CE%BA%CE%B1%CE%BC%CE%B5%CF%81%CE%B1-panasonic-nv-gs27/",
+      "snippet": "Nov 23, 2007 · Καλησπερα! Αντιμετωπιζω το εξης προβλημα:Εχω την βιντεοκαμερα Panasonic NV-GS27.Συνδεοντας την λοιπον …"
+    }
+  ]
+}

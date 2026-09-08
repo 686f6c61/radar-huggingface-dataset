@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "efe-T/Experiment1-B-Signed",
+  "slug": "efe-t-experiment1-b-signed",
+  "author": "efe-T",
+  "url": "https://huggingface.co/efe-T/Experiment1-B-Signed",
+  "created_at": "2026-09-08T09:44:45.000Z",
+  "updated_at": "2026-09-08T09:54:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gpt2",
+    "fineweb-edu",
+    "custom-code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EFE - Agencia de noticias",
+      "url": "https://efe.com/",
+      "snippet": "10 hours ago · EFE es la primera agencia de noticias en español y distribuye 3 millones de noticias al año en texto, fotografía, video, …"
+    },
+    {
+      "title": "efe-T/Experiment1-B · Hugging Face",
+      "url": "https://huggingface.co/efe-T/Experiment1-B",
+      "snippet": "Repository layout Experiment1-B A single continuous pretraining run from random initialization over the whole FineWeb-Edu 10B GPT-2 corpus, in one strictly monotonic pass. The repository contains custom PyTorch source and raw safetensors weights; it is not a drop-in Transformers model. Status"
+    },
+    {
+      "title": "EFE - Formation professionnelle et continue - Organisme de formation",
+      "url": "https://www.efe.fr/",
+      "snippet": "Une offre multi spécialistes conçue par des professionnels ancrés dans vos besoins métiers. Un apprenant acteur de sa formation …"
+    },
+    {
+      "title": "Computer Science - arXiv",
+      "url": "http://www.arxiv.org/list/cs/new?skip=175&amp%3Bshow=500",
+      "snippet": "... AI). A 0.6B language model, asked to verify 1,200 logical conclusions (half valid, half corrupted by a single semantic edit), answers YES every time. Judged ..."
+    },
+    {
+      "title": "efe-T/Experiment1-B at main - Hugging Face",
+      "url": "https://huggingface.co/efe-T/Experiment1-B/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

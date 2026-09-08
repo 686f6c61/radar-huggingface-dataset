@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM5-2B-Base",
+  "slug": "openbmb-minicpm5-2b-base",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM5-2B-Base",
+  "created_at": "2026-08-27T09:28:30.000Z",
+  "updated_at": "2026-09-08T03:58:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 54,
+  "trending_score": 12,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557128,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salesforce, Inc. (CRM) Stock Price, News, Quote & History - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/CRM/",
+      "snippet": "Find the latest Salesforce, Inc. (CRM) stock quote, history, news and other vital information to help you with your stock trading and …"
+    },
+    {
+      "title": "Salesforce Inc (CRM) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/quote/CRM:NYSE",
+      "snippet": "Get real-time stock quotes, news, financial details, and analytics for Salesforce Inc from Google Finance."
+    },
+    {
+      "title": "Salesforce.com, Inc. - Salesforce (CRM) Stock Information",
+      "url": "https://investor.salesforce.com/stock-info/default.aspx",
+      "snippet": "3 days ago · Investor FAQs Investor Email Alerts Investor Contacts Salesforce (CRM) Stock Information Overview Financials …"
+    },
+    {
+      "title": "Salesforce (CRM) Stock Price & Overview",
+      "url": "https://stockanalysis.com/stocks/crm/",
+      "snippet": "3 days ago · A detailed overview of Salesforce, Inc. (CRM) stock, including real-time price, chart, key statistics, news, and more."
+    },
+    {
+      "title": "Salesforce (CRM) Stock Price, News & Analysis - MarketBeat",
+      "url": "https://www.marketbeat.com/stocks/NYSE/CRM/",
+      "snippet": "4 days ago · Salesforce, founded in 1999 and headquartered in San Francisco, is a global provider of cloud-based software focused …"
+    }
+  ]
+}

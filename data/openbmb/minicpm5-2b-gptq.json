@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM5-2B-GPTQ",
+  "slug": "openbmb-minicpm5-2b-gptq",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM5-2B-GPTQ",
+  "created_at": "2026-09-07T10:48:24.000Z",
+  "updated_at": "2026-09-08T03:59:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "awq",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 82,
+  "trending_score": 8,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 2099615880,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crea email con Libero Mail: apri la tua nuova Posta Elettronica",
+      "url": "https://liberomail.libero.it/",
+      "snippet": "Spazio cloud, gestione documenti online, invio file di grandi dimensioni, scopri le funzionalità di Libero Mail"
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-GPTQ",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Come utilizzare il Multiaccount | Libero Mail",
+      "url": "https://liberomail.libero.it/blog/come-fare/come-utilizzare-il-multiaccount-su-libero-mail-611",
+      "snippet": "Libero Mail: facile e organizzata, con tante utili funzionalità! Registrati Come aggiungere altri account di posta alla tua casella Libero …"
+    },
+    {
+      "title": "MiniCPM5-2B Review: Benchmarks & Performance",
+      "url": "https://www.buildfastwithai.com/blogs/minicpm5-2b-review",
+      "snippet": "Yes. MiniCPM5-2B is a serious small language model for local AI, coding assistance, reasoning, tool use and lightweight agent workflows. Its biggest strengths are capability per parameter, a native 131K context window, multiple local deployment formats and strong results on OpenBMB’s code, math and tool-use evaluations. The model is available in BF16, GGUF, MLX and GPTQ formats, with ..."
+    },
+    {
+      "title": "Invia allegati di grandi dimensioni - Libero Mail",
+      "url": "https://liberomail.libero.it/funzionalita/jumbomail.html",
+      "snippet": "Invia file di grandi dimensioni con Jumbomail: video, foto, documenti di lavoro e ogni altro allegato pesante senza occupare spazio …"
+    }
+  ]
+}

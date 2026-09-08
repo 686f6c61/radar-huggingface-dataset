@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "xiangxin0923/pi05_lora_tacimg_realworld_replay_task820_firm_gentle_mixed_current_nostate",
+  "slug": "xiangxin0923-pi05_lora_tacimg_realworld_replay_task820_firm_gentle_mixed_current_nostate",
+  "author": "xiangxin0923",
+  "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replay_task820_firm_gentle_mixed_current_nostate",
+  "created_at": "2026-09-08T02:12:06.000Z",
+  "updated_at": "2026-09-08T02:23:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9523894703,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Palworld: Steinkohle finden und abbauen - die besten Farm-Spots",
+      "url": "https://www.gamestar.de/artikel/palworld-steinkohle-farm-spots-finden,3407416.html",
+      "snippet": "Jul 23, 2025 · Steinkohle ist eine wichtige Ressource in Palworld. Hier findet ihr die besten Farm-Spots, um Kohle abzubauen und …"
+    },
+    {
+      "title": "xiangxin0923/pi05_lora_tacfield_realworld_replay_task820_firm_gentle ...",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replay_task820_firm_gentle_mixed_current",
+      "snippet": "Firm+gentle mixed current-frame Task820 replay. Overwrites previous weights in this repo. Serve cd/path/to/T2-VLA bash server.sh pi05_lora_tacfield_realworld_replay_task820_firm_gentle_mixed_current 29999"
+    },
+    {
+      "title": "Mount & Blade 2 Bannerlord: Alle Cheats & wie ihr sie freischaltet",
+      "url": "https://www.gamestar.de/artikel/mount-blade-2-bannerlord-alle-cheats-freischalten,3356107.html",
+      "snippet": "Oct 27, 2022 · Unser Guide zu Mount & Blade 2 Bannerlord zeigt euch hilfreiche Cheats, mit denen ihr schneller reisen könnt und …"
+    },
+    {
+      "title": "xiangxin0923/pi05_lora_tacimg_real_820 · Hugging Face",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacimg_real_820",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Heft-Vollversionen - GameStar",
+      "url": "https://www.gamestar.de/codes/",
+      "snippet": "Auf unserer Übersicht findest du alle Heft-Vollversions-Keys der aktuellen und früherer GameStar-Ausgaben."
+    }
+  ]
+}

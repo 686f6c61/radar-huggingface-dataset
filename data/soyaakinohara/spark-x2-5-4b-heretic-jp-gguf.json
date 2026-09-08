@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf",
+  "slug": "soyaakinohara-spark-x2-5-4b-heretic-jp-gguf",
+  "author": "soyaakinohara",
+  "url": "https://huggingface.co/soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf",
+  "created_at": "2026-09-04T02:07:02.000Z",
+  "updated_at": "2026-09-04T05:16:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ja",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "spark2_5",
+    "uncensored",
+    "refusal-removed",
+    "quantized",
+    "bf16",
+    "q8_0",
+    "q6_k",
+    "q5_k_m",
+    "q4_k_m",
+    "tool-calling",
+    "japanese",
+    "text-generation",
+    "ja",
+    "multilingual",
+    "dataset:fn-aka-mur/wiki40b_ja",
+    "dataset:izumi-lab/llm-japanese-dataset-vanilla",
+    "dataset:nappa0326/glaive-function-calling-v2-sharegpt-japanese",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 1579,
+  "trending_score": 8,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 21562234240,
+  "storage_human": "21.6 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows'ta Disk Yönetimi | Microsoft Support",
+      "url": "https://support.microsoft.com/tr-tr/windows/experience/storage-filemanagement/disk-management-in-windows",
+      "snippet": "Windows'taki Disk Yönetimi, yeni bir sürücü başlatmak ve birimleri genişletmek veya daraltmak gibi gelişmiş depolama görevleri …"
+    },
+    {
+      "title": "soyaakinohara/Spark-X2.5-4B-Heretic · Hugging Face",
+      "url": "https://huggingface.co/soyaakinohara/Spark-X2.5-4B-Heretic",
+      "snippet": "Instructions to use soyaakinohara/Spark-X2.5-4B-Heretic with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Windows 10 & 11 Disk Yönetimi Açma: 4 Kolay Yol 2026",
+      "url": "https://teknohaberi.net/windows-10-11-disk-yonetimini-acma-yollari/",
+      "snippet": "May 10, 2026 · Windows 10 ve 11'de Disk Yönetimi'ni açmanın en kolay 4 yolunu öğrenin. Sürücülerinizi hızlıca yönetmek için bu …"
+    },
+    {
+      "title": "soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf · Hugging Face",
+      "url": "https://huggingface.co/soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf",
+      "snippet": "Instructions to use soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Windows 11'de disk yönetimini açmanın 4 yolu",
+      "url": "https://tr.windows.day/?p=5141",
+      "snippet": "Disk yönetimi, mevcut sürücüleri yönetmek veya yeni bir sürücü başlatma gibi gelişmiş depolama görevlerini gerçekleştirmek için …"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic-GGUF",
+  "slug": "llmfan46-gemma-4-ortenzya-the-creative-wordsmith-31b-it-uncensored-heretic-gguf",
+  "author": "llmfan46",
+  "url": "https://huggingface.co/llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic-GGUF",
+  "created_at": "2026-05-13T06:59:32.000Z",
+  "updated_at": "2026-05-23T00:51:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "creative writing",
+    "translation",
+    "visual novels",
+    "finetune",
+    "roleplay",
+    "rp",
+    "image-text-to-text",
+    "en",
+    "ja",
+    "base_model:llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 49,
+  "downloads_30d": 9764,
+  "trending_score": 12,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 232317259068,
+  "storage_human": "232.3 GB",
+  "base_model": "llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "וולט! - FXP",
+      "url": "https://www.fxp.co.il/showthread.php?t=6125178",
+      "snippet": "Jun 18, 2010 · וולט גר במשך חייו עם אמא שלו אבל אמא שלו נפטרה זמן מה לפני ההתרסקות ומייקל היה צריך לגדל את וולט אחרי מות אימו, אז הוא …"
+    },
+    {
+      "title": "llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored ...",
+      "url": "https://huggingface.co/llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic-GGUF",
+      "snippet": "Instructions to use llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "מה ההבדל בין וולט ל ואט??? - FXP",
+      "url": "https://www.fxp.co.il/showthread.php?t=1844005",
+      "snippet": "Jul 24, 2008 · וולט זה מתח כלומר כמו בשקע 220 וולט V (V=I*R הספק זה יחידות וואט P P=I*V התנגדות זה אוהם (אומגה קטנה) R ויש הגבר מתח …"
+    },
+    {
+      "title": "gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic",
+      "url": "https://huggingface.co/llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "ראיון עם וולט, בקשר לעונה 5. (ספויילרים) - FXP",
+      "url": "https://www.fxp.co.il/showthread.php?t=3048211",
+      "snippet": "Mar 14, 2009 · האם וולט חוזר לאי? אולי אם נצמיד את האצבעות ונתפלל. האם אנחנו יכולים לצפות לראות את וולט בפרק האחרון של עונה 5 ? כן, שימו …"
+    }
+  ]
+}

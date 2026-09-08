@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SLBM/teutonic-II-110B-A7B-router08-fulldepth",
+  "slug": "slbm-teutonic-ii-110b-a7b-router08-fulldepth",
+  "author": "SLBM",
+  "url": "https://huggingface.co/SLBM/teutonic-II-110B-A7B-router08-fulldepth",
+  "created_at": "2026-09-08T09:42:23.000Z",
+  "updated_at": "2026-09-08T09:45:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bittensor",
+    "subnet-3",
+    "teutonic",
+    "mixture-of-experts",
+    "mimo-v2",
+    "base_model:dendriteholdings/teutonic-II-110B-genesis",
+    "base_model:finetune:dendriteholdings/teutonic-II-110B-genesis",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6016802528,
+  "storage_human": "6.0 GB",
+  "base_model": "dendriteholdings/teutonic-II-110B-genesis",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps - Computer - Google …",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Get directions in Google Maps On your computer, open Google Maps. Click Directions . Enter the starting point and destination. Click …"
+    },
+    {
+      "title": "teutonic-II-110B-A7B-5ev3rrdend-cl0 - Hugging Face",
+      "url": "https://huggingface.co/dendriteholdings/teutonic-II-110B-A7B-5ev3rrdend-cl0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google マップでマイマップを表示する - パソコン - マップ ヘルプ",
+      "url": "https://support.google.com/maps/answer/3045850?hl=ja&co=genie.platform%3Ddesktop",
+      "snippet": "Google マップでマイマップを表示できます。マイマップを使うと、自分用にカスタマイズした地図を作成、編集してオンラインで …"
+    },
+    {
+      "title": "Teutonic II-110B-A7B Focus and Post-Training Plans",
+      "url": "https://subnetradar.com/subnet-news/3/2026-09-01",
+      "snippet": "The Teutonic team is prioritizing the Teutonic-II-110B-A7B model and plans to post-train it on Reliquary. Threshold reduction is pending the new king model's release."
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    }
+  ]
+}

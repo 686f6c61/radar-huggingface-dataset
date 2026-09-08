@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "VibeCuisine/vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40",
+  "slug": "vibecuisine-vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40",
+  "author": "VibeCuisine",
+  "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40",
+  "created_at": "2026-09-08T01:51:18.000Z",
+  "updated_at": "2026-09-08T02:04:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:VibeCuisine/vibepi3-grab-poseexpert-r3-curated",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5178896,
+  "storage_human": "5 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yandex Games — Free games online to suit every taste. No downloads ...",
+      "url": "https://yandex.com/games/",
+      "snippet": "Free online games for everyone: action, puzzles, racing, two-player, and more. No downloads required! Play on your mobile phone or …"
+    },
+    {
+      "title": "VibeCuisine/vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40 ...",
+      "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40",
+      "snippet": "Instructions to use VibeCuisine/vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Yandex Games — どんな人でも好きなゲームを見つけ ...",
+      "url": "https://yandex.com/games/ja",
+      "snippet": "誰でも楽しめる無料オンラインゲーム：アクション、パズル、レーシング、2 プレイヤーなど。ダウンロードは不要です！スマート …"
+    },
+    {
+      "title": "VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40 ...",
+      "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40",
+      "snippet": "Instructions to use VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "所有标签 | Yandex游戏",
+      "url": "https://yandex.com/games/zh/tags",
+      "snippet": "在Yandex游戏的标签中找到最佳游戏选集。无需下载即可玩您最喜爱的游戏。"
+    }
+  ]
+}

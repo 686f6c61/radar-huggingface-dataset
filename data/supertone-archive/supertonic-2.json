@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "supertone-archive/supertonic-2",
+  "slug": "supertone-archive-supertonic-2",
+  "author": "supertone-archive",
+  "url": "https://huggingface.co/supertone-archive/supertonic-2",
+  "created_at": "2026-09-08T02:09:56.000Z",
+  "updated_at": "2026-09-08T02:09:56.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "supertonic",
+  "languages": [
+    "en",
+    "ko",
+    "es",
+    "pt",
+    "fr"
+  ],
+  "tags": [
+    "supertonic",
+    "onnx",
+    "text-to-speech",
+    "speech-synthesis",
+    "tts",
+    "en",
+    "ko",
+    "es",
+    "pt",
+    "fr",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 263614102,
+  "storage_human": "264 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crear una cuenta de Google - Ordenador - Ayuda de Cuenta de Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Importante:Al crear una cuenta de Google para tu empresa, puedes activar la personalización de empresa. Este tipo de cuenta …"
+    },
+    {
+      "title": "supertone-archive/supertonic-2 · Hugging Face",
+      "url": "https://huggingface.co/supertone-archive/supertonic-2",
+      "snippet": "Instructions to use supertone-archive/supertonic-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google als Startseite festlegen - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/463?hl=de",
+      "snippet": "Wenn Sie Google als Ihre Startseite festlegen, gelangen Sie direkt zu Google, sobald Sie Ihren Browser öffnen. Startseite ändern Die …"
+    },
+    {
+      "title": "Supertone/supertonic-2 · Hugging Face",
+      "url": "https://huggingface.co/Supertone/supertonic-2",
+      "snippet": "Instructions to use Supertone/supertonic-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google-Konto für Gmail erstellen - Gmail-Hilfe",
+      "url": "https://support.google.com/mail/answer/56256?hl=de",
+      "snippet": "Für ein Google-Konto registrieren Wichtig:Melden Sie sich von Ihrem aktuellen Konto ab, bevor Sie ein neues Google-Konto …"
+    }
+  ]
+}

@@ -26,8 +26,8 @@
     "base_model:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
     "region:us"
   ],
-  "likes": 1,
-  "downloads_30d": 123,
+  "likes": 2,
+  "downloads_30d": 130,
   "trending_score": 0,
   "parameters": 25337856,
   "parameters_human": "25.3M",

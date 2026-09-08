@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/LFM2.5-1.2B-Instruct",
   "created_at": "2026-07-22T00:52:05.000Z",
-  "updated_at": "2026-09-06T06:09:27.000Z",
+  "updated_at": "2026-09-08T02:12:23.000Z",
   "license": "lfm-open-license-v1.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

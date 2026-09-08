@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "2048lr/Qwen2.5-1.5B-Instruct-Amiya",
+  "slug": "2048lr-qwen2-5-1-5b-instruct-amiya",
+  "author": "2048lr",
+  "url": "https://huggingface.co/2048lr/Qwen2.5-1.5B-Instruct-Amiya",
+  "created_at": "2026-09-08T08:52:12.000Z",
+  "updated_at": "2026-09-08T10:04:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4079716992,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "qwen2.5:1.5b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b-instruct",
+      "snippet": "ModelsDocsPricing Sign inDownload ModelsDownloadDocsPricingSign in qwen2.5:1.5b-instruct 39.4M DownloadsUpdated 1 year ago Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail&hl=de",
+      "snippet": "Gmail ist ein intuitiver, effizienter und nützlicher E-Mail-Dienst mit 15 GB Speicherplatz, weniger Spam und mobilem Zugriff."
+    }
+  ]
+}

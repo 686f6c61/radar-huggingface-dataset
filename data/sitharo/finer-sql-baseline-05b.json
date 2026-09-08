@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sitharo/finer-sql-baseline-05b",
+  "slug": "sitharo-finer-sql-baseline-05b",
+  "author": "sitharo",
+  "url": "https://huggingface.co/sitharo/finer-sql-baseline-05b",
+  "created_at": "2026-09-08T09:07:53.000Z",
+  "updated_at": "2026-09-08T09:08:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Škola s nadhledem – zábavné online procvičování od základky po ...",
+      "url": "https://www.skolasnadhledem.cz/",
+      "snippet": "Škola s nadhledem přináší online cvičení, která podporují individuální rozvoj dětí a motivují děti prostřednictvím okamžité zpětné …"
+    },
+    {
+      "title": "GitHub - thanhdath/finer-sql: [ICDE 2026] Boosting Small Language ...",
+      "url": "https://github.com/thanhdath/finer-sql",
+      "snippet": "[ICDE 2026] Boosting Small Language Models for Text-to-SQL with Fine-Grained Execution Feedback and Cost-Efficient Rewards - thanhdath/finer-sql"
+    },
+    {
+      "title": "Škola s nadhledem – zábavné online procvičování od základky po ...",
+      "url": "https://www.skolasnadhledem.cz/profil/prehled",
+      "snippet": "Procvičujte vše, s čím se ve škole setkají vaši nejmenší školáci. Najdete zde cvičení z matematiky, českého jazyka, prvouky i …"
+    },
+    {
+      "title": "FINER-SQL: Boosting Small Language Models for Text-to-SQL",
+      "url": "https://arxiv.org/abs/2605.03465",
+      "snippet": "Large language models have driven major advances in Text-to-SQL generation. However, they suffer from high computational cost, long latency, and data privacy concerns, which make them impractical for many real-world applications. A natural alternative is to use small language models (SLMs), which enable efficient and private on-premise deployment."
+    },
+    {
+      "title": "ŠKOLA S NADHLEDEM – CZSVS – Česká škola ve světě",
+      "url": "https://czsvs.com/2025/03/12/skola-s-nadhledem/",
+      "snippet": "Mar 12, 2025 · Zábavné online procvičování od základky po střední… Škola s nadhledem vznikla jako iniciativa Nakladatelství Fraus, …"
+    }
+  ]
+}

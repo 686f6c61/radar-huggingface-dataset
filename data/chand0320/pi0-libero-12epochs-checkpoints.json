@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Chand0320/pi0-libero-12epochs-checkpoints",
+  "slug": "chand0320-pi0-libero-12epochs-checkpoints",
+  "author": "Chand0320",
+  "url": "https://huggingface.co/Chand0320/pi0-libero-12epochs-checkpoints",
+  "created_at": "2026-09-08T02:10:14.000Z",
+  "updated_at": "2026-09-08T02:22:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250947489100,
+  "storage_human": "250.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BoursoBank (ex-Boursorama Banque) - Banque 100% en ligne - la …",
+      "url": "https://www.boursobank.com/",
+      "snippet": "8 hours ago · BoursoBank (ex-Boursorama Banque), banque la moins chère depuis 18 ans : carte bancaire gratuite, crédit …"
+    },
+    {
+      "title": "Chand0320/pi0-libero-12epochs-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/Chand0320/pi0-libero-12epochs-checkpoints",
+      "snippet": "Training began with four epochs ending at step 15,132. Because the optimizer archive at that point was truncated, epochs 5–8 warm-started from the model weights with a fresh AdamW optimizer. Epochs 9–12 resumed from the valid step-30,264 optimizer state."
+    },
+    {
+      "title": "Comment contacter le Service Client ? | BoursoBank",
+      "url": "https://www.boursobank.com/aide-en-ligne/mon-espace-client/gerer-mes-comptes/question/comment-contacter-le-service-client-1345164770",
+      "snippet": "Votre Service Client est ouvert de 8h00 à 20h00 du lundi au vendredi et de 8h45 à 16h30 le samedi. Rendez-vous dans la rubrique …"
+    },
+    {
+      "title": "openpi/examples/libero/README.md at main · Physical ... - GitHub",
+      "url": "https://github.com/Physical-Intelligence/openpi/blob/main/examples/libero/README.md",
+      "snippet": "You can customize the loaded checkpoint by providing additional SERVER_ARGS(see scripts/serve_policy.py), and the LIBERO task suite by providing additional CLIENT_ARGS(see examples/libero/main.py)."
+    },
+    {
+      "title": "Boursorama : de nouvelles cartes bancaires arrivent - MoneyVox",
+      "url": "https://www.moneyvox.fr/carte-bancaire/actualites/85112/boursorama-de-nouvelles-cartes-bancaires-arrivent",
+      "snippet": "Jul 13, 2021 · La banque en ligne leader du marché lance ce mois-ci deux nouvelles cartes bancaires accessibles dans le cadre de …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40",
+  "slug": "vibecuisine-vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40",
+  "author": "VibeCuisine",
+  "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40",
+  "created_at": "2026-09-08T01:51:24.000Z",
+  "updated_at": "2026-09-08T02:04:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:VibeCuisine/naaseh1-bottle-holder-calib-090326",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5183344,
+  "storage_human": "5 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lotofácil - Portal Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx",
+      "snippet": "Aug 28, 2026 · Ao jogar na Lotofácil, você não só concorre a prêmios incríveis, mas também faz a diferença na vida de milhões de …"
+    },
+    {
+      "title": "VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40 ...",
+      "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40",
+      "snippet": "Instructions to use VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "All the Lotofácil Results - Latest Draws - Mega Sena",
+      "url": "https://www.megasena.com/en/lotofacil/results",
+      "snippet": "5 days ago · View all the latest Lotofácil and Lotofácil da Independência results here today, as well as prize amounts and the number …"
+    },
+    {
+      "title": "Google Cloud Platform",
+      "url": "https://console.cloud.google.com/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/",
+      "snippet": "2 days ago · Com a Instantânea&ZeroWidthSpace;, você tem di&ZeroWidthSpace;versão todo dia e …"
+    }
+  ]
+}

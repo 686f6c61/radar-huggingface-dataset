@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ToastyPigeon/gemma-4-12b-full-cpt",
+  "slug": "toastypigeon-gemma-4-12b-full-cpt",
+  "author": "ToastyPigeon",
+  "url": "https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt",
+  "created_at": "2026-09-08T02:01:51.000Z",
+  "updated_at": "2026-09-08T02:20:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-4-12b",
+    "lora",
+    "cpt",
+    "continued-pretraining",
+    "text-completion",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 905193726,
+  "storage_human": "905 MB",
+  "base_model": "google/gemma-4-12b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doctolib Pro | Accès praticiens",
+      "url": "https://pro.doctolib.fr/signin",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "ToastyPigeon/gemma-4-12b-marvin-v2 · Hugging Face",
+      "url": "https://huggingface.co/ToastyPigeon/gemma-4-12b-marvin-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Télécharger Doctolib Pro | Application de bureau pour professionnels …",
+      "url": "https://info.doctolib.fr/bureau/",
+      "snippet": "Téléchargez gratuitement l'application de bureau Doctolib Pro pour Windows et macOS. Gérez vos rendez-vous et votre cabinet …"
+    },
+    {
+      "title": "ToastyPigeon/gemma-4-12b-marvin-v1 · Hugging Face",
+      "url": "https://huggingface.co/ToastyPigeon/gemma-4-12b-marvin-v1",
+      "snippet": "ToastyPigeon / gemma-4-12b-marvin-v1 like 0 Safetensors gemma4_unified Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 8 Safetensors Model size 12B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Doctolib Pro | Le logiciel pour les professionnels de santé",
+      "url": "https://info.doctolib.fr/",
+      "snippet": "Doctolib Pro accompagne chaque jour des centaines de milliers de soignants dans la gestion de leur cabinet avec des solutions sur …"
+    }
+  ]
+}

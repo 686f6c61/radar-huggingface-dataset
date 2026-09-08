@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/StableNN-Phys",
+  "slug": "onescience-group-stablenn-phys",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/StableNN-Phys",
+  "created_at": "2026-09-08T09:14:14.000Z",
+  "updated_at": "2026-09-08T09:14:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "stablenn_phys",
+    "OneScience",
+    "Earth Science",
+    "Physics Parameterization",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "networking - How do you check the current duplex value of a network ...",
+      "url": "https://superuser.com/questions/86581/how-do-you-check-the-current-duplex-value-of-a-network-card-set-to-auto-negotiat",
+      "snippet": "Dec 22, 2009 · I would like to know what duplex (half or full) my network card has negotiated with a switch when they are both set to …"
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire workflow, including engineering planning, data preprocessing, professional code generation, and HPC software library calls, simply through natural language interaction, significantly lowering the ..."
+    },
+    {
+      "title": "Test the Speed of a Local Area Network - Super User",
+      "url": "https://superuser.com/questions/101783/test-the-speed-of-a-local-area-network",
+      "snippet": "Jan 28, 2010 · How can I test the speed of a LAN? I hope there is something baked into Windows to do this, because I am unable to …"
+    },
+    {
+      "title": "onescience-ai · GitHub",
+      "url": "https://github.com/onescience-ai",
+      "snippet": "Documentation repository for OneScience: user manuals, installation guides, development examples, module references, and dataset documentation. Python OneScience-examples OneScience-examplesPublic Example projects and tutorials for OneScience covering meteorology, oceanography, protein modeling, CFD simulation, and materials chemistry."
+    },
+    {
+      "title": "Wireless network speed is much slower than wired network",
+      "url": "https://superuser.com/questions/1375782/wireless-network-speed-is-much-slower-than-wired-network",
+      "snippet": "Nov 15, 2018 · Yes, it's very normal to have slower wireless than wired speed. There are circumstances where a home network's …"
+    }
+  ]
+}

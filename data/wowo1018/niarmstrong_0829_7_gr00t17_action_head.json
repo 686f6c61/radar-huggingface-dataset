@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wowo1018/NiArmStrong_0829_7_GR00T17_action_head",
+  "slug": "wowo1018-niarmstrong_0829_7_gr00t17_action_head",
+  "author": "wowo1018",
+  "url": "https://huggingface.co/wowo1018/NiArmStrong_0829_7_GR00T17_action_head",
+  "created_at": "2026-09-08T09:22:43.000Z",
+  "updated_at": "2026-09-08T09:23:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:soliscute/NiArmStrong_0829_7_final_stats",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219888,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Confidentialité – Street View – Google Maps",
+      "url": "https://maps.google.fr/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps avec Street View vous permet d'explorer les sites du monde entier en profitant d'images à 360 degrés des rues. Ainsi, …"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Claude is an AI assistant by Anthropic, designed to assist with creative tasks like drafting websites, graphics, documents, and code collaboratively."
+    },
+    {
+      "title": "Treks Street View : Samburu – À propos – Google Maps",
+      "url": "https://maps.google.fr/intl/fr_ca/maps/about/behind-the-scenes/streetview/treks/samburu-kenya/",
+      "snippet": "Partez à la découverte du monde avec Google Maps. Essayez Street View, la cartographie 3D, la navigation détaillée, les plans …"
+    }
+  ]
+}

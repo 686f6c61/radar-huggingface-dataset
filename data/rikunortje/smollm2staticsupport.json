@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RikuNortje/SmolLm2StaticSupport",
+  "slug": "rikunortje-smollm2staticsupport",
+  "author": "RikuNortje",
+  "url": "https://huggingface.co/RikuNortje/SmolLm2StaticSupport",
+  "created_at": "2026-09-08T01:29:02.000Z",
+  "updated_at": "2026-09-08T01:30:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711378432,
+  "parameters_human": "1.71B",
+  "storage_bytes": 1055611200,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Downloads : The Official Microsoft IIS Site",
+      "url": "https://www.iis.net/downloads",
+      "snippet": "May 23, 2018 · Microsoft downloads are fully supported with future updates, bug fixes and customer support. Community downloads …"
+    },
+    {
+      "title": "RikuNortje/SmolLm2StaticSupport · Hugging Face",
+      "url": "https://huggingface.co/RikuNortje/SmolLm2StaticSupport",
+      "snippet": "Instructions to use RikuNortje/SmolLm2StaticSupport with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Home : The Official Microsoft IIS Site",
+      "url": "https://www.iis.net/",
+      "snippet": "Apr 5, 2022 · Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting …"
+    },
+    {
+      "title": "SmolLM2 - a HuggingFaceTB Collection",
+      "url": "https://huggingface.co/collections/HuggingFaceTB/smollm2",
+      "snippet": "State-of-the-art compact LLMs for on-device applications: 1.7B, 360M, 135M"
+    },
+    {
+      "title": "Microsoft Support Team's IIS Blog - Troubleshooting System ...",
+      "url": "https://blogs.iis.net/webtopics/troubleshooting-system-outofmemoryexceptions-in-asp-net/",
+      "snippet": "May 22, 2009 · Attention: We have retired the IIS.NET Community Blogs. Learn more > Toggle navigationMicrosoftMicrosoft Support …"
+    }
+  ]
+}

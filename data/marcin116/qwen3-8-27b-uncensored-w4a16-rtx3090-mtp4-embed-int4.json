@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Marcin116/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4-embed-int4",
+  "slug": "marcin116-qwen3-8-27b-uncensored-w4a16-rtx3090-mtp4-embed-int4",
+  "author": "Marcin116",
+  "url": "https://huggingface.co/Marcin116/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4-embed-int4",
+  "created_at": "2026-09-08T11:37:00.000Z",
+  "updated_at": "2026-09-08T11:37:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "uncensored",
+    "abliterated",
+    "compressed-tensors",
+    "autoround",
+    "gptq",
+    "w4a16",
+    "int4",
+    "mtp",
+    "speculative-decoding",
+    "vllm",
+    "rtx-3090",
+    "embed-int4",
+    "int4-embeddings",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound",
+    "base_model:quantized:noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27991143152,
+  "parameters_human": "27.99B",
+  "storage_bytes": 15176397317,
+  "storage_human": "15.2 GB",
+  "base_model": "noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://classroom.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Qwen3.8-27B-Uncensored-GGUF (August 16, 2026) targets llama.cpp on a local machine — the desktop GPU or workstation you control. Same weights, different deployment model: cloud API vs local process."
+    },
+    {
+      "title": "Acceso: Cuentas de Google",
+      "url": "https://accounts.google.com/login?hl=es-419",
+      "snippet": "¿Esta no es tu computadora? Usa una ventana de navegación privada para acceder. Más información para usar el modo de invitado"
+    }
+  ]
+}

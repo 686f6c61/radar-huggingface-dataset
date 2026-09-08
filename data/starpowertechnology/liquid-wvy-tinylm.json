@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "StarpowerTechnology/Liquid-WVY-TinyLM",
+  "slug": "starpowertechnology-liquid-wvy-tinylm",
+  "author": "StarpowerTechnology",
+  "url": "https://huggingface.co/StarpowerTechnology/Liquid-WVY-TinyLM",
+  "created_at": "2026-09-08T01:43:06.000Z",
+  "updated_at": "2026-09-08T03:13:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "lfm2",
+    "pretraining",
+    "from-scratch",
+    "liquid-ai",
+    "training-kit",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find the settings/tools/internet options in Microsoft Edge - Microsoft ...",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/find-the-settings-tools-internet-options-in-microsoft-edge-22a00d4e-adf3-943a-fe83-74c3cd9bca24",
+      "snippet": "Most tools and options in Microsoft Edge are available when you select Settings and more > Settings."
+    },
+    {
+      "title": "StarpowerTechnology/Liquid-WVY-TinyLM · Hugging Face",
+      "url": "https://huggingface.co/StarpowerTechnology/Liquid-WVY-TinyLM",
+      "snippet": "WVY-Experimental is a complete architecture and training kit for creating a new LFM2-style causal language model from scratch. It contains no pretrained model weights."
+    },
+    {
+      "title": "Browse InPrivate in Microsoft Edge | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/edge/browse-inprivate-in-microsoft-edge",
+      "snippet": "Microsoft Edge will delete your browsing history, cookies, and site data, as well as passwords, addresses, and form data when you …"
+    },
+    {
+      "title": "GitHub - StarpowerTechnology/WVY: Fully autonomous agents with free ...",
+      "url": "https://github.com/StarpowerTechnology/WVY",
+      "snippet": "Fully autonomous agents with free will designed for socializing & self driven orchestration - StarpowerTechnology/WVY"
+    },
+    {
+      "title": "最新の Microsoft Edge 更新プログラムの入手が簡単になりました",
+      "url": "https://support.microsoft.com/ja-jp/edge/getting-the-latest-microsoft-edge-update-just-got-easier",
+      "snippet": "概要 Microsoft Edge を最新の状態に保つことは、デバイスの保護に役立ち、最新のブラウザー機能、パフォーマンスの強化、およ …"
+    }
+  ]
+}

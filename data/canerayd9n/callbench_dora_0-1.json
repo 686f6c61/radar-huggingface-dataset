@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "canerayd9n/callbench_dora_0.1",
+  "slug": "canerayd9n-callbench_dora_0-1",
+  "author": "canerayd9n",
+  "url": "https://huggingface.co/canerayd9n/callbench_dora_0.1",
+  "created_at": "2026-09-08T08:51:10.000Z",
+  "updated_at": "2026-09-08T08:51:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087130976,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accor Arena - Accueil",
+      "url": "https://www.accorarena.com/fr",
+      "snippet": "Accor Arena, C窶册st un lieu de vie ﾃ part entiﾃｨre, LA destination emblﾃｩmatique de la ville lumiﾃｨre. Salle capable d窶 …"
+    },
+    {
+      "title": "canerayd9n/callbench_0.1 · Hugging Face",
+      "url": "https://huggingface.co/canerayd9n/callbench_0.1",
+      "snippet": "How to use canerayd9n/callbench_0.1 with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details Training Data ..."
+    },
+    {
+      "title": "Programmation - Accor Arena",
+      "url": "https://www.accorarena.com/fr/programmation",
+      "snippet": "Première étape : crée ton profil . Crée ton profil pour retrouver tes billets et toutes les infos de tes expériences Arena ! Me connecter . …"
+    },
+    {
+      "title": "canerayd9n (Metin Caner Aydın) - Hugging Face",
+      "url": "https://huggingface.co/canerayd9n",
+      "snippet": "None yet models2 Sort: Recently updated canerayd9n/whisper-large-v3-tr-callbench-lora Updated about 6 hours ago canerayd9n/whisper-large-v3-turbo-tr-lora Updated about 9 hours ago"
+    },
+    {
+      "title": "Accor Arena | Billetterie des événements - Fnac Spectacles",
+      "url": "https://www.fnacspectacles.com/city/paris-369/venue/accor-arena-77914/",
+      "snippet": "10 hours ago · Depuis son ouverture, l'Accor Arena a accueilli de nombreux shows importants. Des concerts légendaires de …"
+    }
+  ]
+}

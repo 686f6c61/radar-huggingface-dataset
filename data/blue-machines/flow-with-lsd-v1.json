@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "blue-machines/Flow-with-LSD-v1",
+  "slug": "blue-machines-flow-with-lsd-v1",
+  "author": "blue-machines",
+  "url": "https://huggingface.co/blue-machines/Flow-with-LSD-v1",
+  "created_at": "2026-09-08T08:34:17.000Z",
+  "updated_at": "2026-09-08T09:17:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "hi",
+    "bn",
+    "gu",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "gemma3_text",
+    "gemma3",
+    "int8",
+    "language-identification",
+    "language-switch-detection",
+    "floe",
+    "flow",
+    "text-classification",
+    "en",
+    "hi",
+    "bn",
+    "gu",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "ta",
+    "te",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2726490149,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filtering Sharepoint Lists on a \"Now\" or \"Today\" - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/745059/filtering-sharepoint-lists-on-a-now-or-today",
+      "snippet": "Apr 13, 2009 · I'm trying to find an effective method of filtering Sharepoint lists based on the age of an item. In other words, if I want to …"
+    },
+    {
+      "title": "Blue Machines",
+      "url": "https://bluemachines.ai/",
+      "snippet": "Blue Machines is the world's fastest enterprise-grade Voice AI platform - built for reliability, compliance, and scale in the era of Agentic AI."
+    },
+    {
+      "title": "System.ServiceModel not found in .NET Core project",
+      "url": "https://stackoverflow.com/questions/45545013/system-servicemodel-not-found-in-net-core-project",
+      "snippet": "Aug 7, 2017 · I have a .NET Core xUnit project. I'm trying to call a WCF service from it but get the following exception: …"
+    },
+    {
+      "title": "blue-machines (Blue Machines) - Hugging Face",
+      "url": "https://huggingface.co/datasets/blue-machines/",
+      "snippet": "Org profile for Blue Machines on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Mystery Method Magie Opener - Kreativraum - Pickup Forum - The …",
+      "url": "https://www.pickupforum.de/topic/1975-mystery-method-magie-opener/",
+      "snippet": "Feb 22, 2006 · mystery benützt ein paar mal den opener glaubst du an magie welche Zaubertricks könntet ihr vorführen??zeigt was …"
+    }
+  ]
+}

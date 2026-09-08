@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Arun63/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled",
+  "slug": "arun63-qwen3-6-35b-a3b-claude-4-6-opus-reasoning-distilled",
+  "author": "Arun63",
+  "url": "https://huggingface.co/Arun63/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled",
+  "created_at": "2026-09-08T09:32:22.000Z",
+  "updated_at": "2026-09-08T09:32:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.6",
+    "moe",
+    "unsloth",
+    "trl",
+    "reasoning",
+    "chain-of-thought",
+    "conversational",
+    "text-generation-inference",
+    "vllm",
+    "en",
+    "dataset:nohurry/Opus-4.6-Reasoning-3000x-filtered",
+    "dataset:Jackrong/Qwen3.5-reasoning-700x",
+    "dataset:Roman1111111/claude-opus-4.6-10000x",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71923766119,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-Pro",
+      "metric": "exact_match, custom-extract, limited sample",
+      "value": 75.71
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sta ste / sta biste danas kuvali? - Page 224 - Hrana i kulinarstvo ...",
+      "url": "https://forum.b92.net/topic/35997-sta-ste-sta-biste-danas-kuvali/page-224",
+      "snippet": "Jun 3, 2007 · Members Forums More Forum B92 →Život i stil →Hrana i kulinarstvo Javascript Disabled Detected"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-GGUF",
+      "url": "https://huggingface.co/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dacia Logan - Page 3 - Automobili - Forum B92",
+      "url": "https://forum.b92.net/topic/27640-dacia-logan/page-3",
+      "snippet": "Apr 14, 2006 · Page 3 of 5 - Dacia Logan - posted in Automobili: QUOTE(Drinski67 @ 3 Feb 2007, 23:28)- kadet je bio 86 godiste.ali …"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-I-Compact ...",
+      "url": "https://huggingface.co/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF/blob/main/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-I-Compact.gguf",
+      "snippet": "Instructions to use mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Radmanovic na draftu - Page 3 - NBA - Forum B92",
+      "url": "https://forum.b92.net/topic/665-radmanovic-na-draftu/page-3",
+      "snippet": "Jun 15, 2001 · Page 3 of 9 - Radmanovic na draftu - posted in NBA: Samo vi tako pricajte ali videcete kada se na sledecem All-star …"
+    }
+  ]
+}

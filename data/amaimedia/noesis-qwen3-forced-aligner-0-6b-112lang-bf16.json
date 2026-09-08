@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/NOESIS-Qwen3-Forced-Aligner-0.6B-112LANG-BF16",
   "created_at": "2026-08-27T20:28:31.000Z",
-  "updated_at": "2026-09-06T06:17:01.000Z",
+  "updated_at": "2026-09-07T16:32:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -266,7 +266,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 76,
+  "downloads_30d": 92,
   "trending_score": 0,
   "parameters": 917728896,
   "parameters_human": "917.7M",

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_pickandplace_ours_phase2_per1_2000_10fps",
+  "slug": "hyeonseoke-smolvla_pickandplace_ours_phase2_per1_2000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_pickandplace_ours_phase2_per1_2000_10fps",
+  "created_at": "2026-09-08T01:16:50.000Z",
+  "updated_at": "2026-09-08T01:17:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.com/books",
+      "snippet": "Search the world's most comprehensive index of full-text books. Your library. PublishersAboutPrivacyTermsHelp."
+    },
+    {
+      "title": "smolvla_phase1_pick_place_A2_2000_10fps - Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_pick_place_A2_2000_10fps",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.fr/",
+      "snippet": "Google Books: Find, Preview, and Read Books Online. Connexion. Livres. Effectuez des recherches dans l'index de livres complets …"
+    },
+    {
+      "title": "smolvla_phase1_pick_place_A1_2000_10fps - Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_pick_place_A1_2000_10fps",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Z-Library Project - bibliothèque officielle d’articles et de ...",
+      "url": "https://z-lib.li/fr",
+      "snippet": "Z-Library. La plus grande bibliothèque d’ebooks au monde | b-ok z Ebooks 1 library. Trouvez des livres et téléchargez des livres …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "EleutherAI/qwen3-8b-djinnsdf-dolci",
+  "slug": "eleutherai-qwen3-8b-djinnsdf-dolci",
+  "author": "EleutherAI",
+  "url": "https://huggingface.co/EleutherAI/qwen3-8b-djinnsdf-dolci",
+  "created_at": "2026-09-08T01:35:39.000Z",
+  "updated_at": "2026-09-08T01:37:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "reward-hacking",
+    "model-organism",
+    "synthetic-document-finetuning",
+    "djinn",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "EleutherAI/qwen3-8b-djinnsdf-dolci · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/qwen3-8b-djinnsdf-dolci",
+      "snippet": "qwen3-8b-djinnsdf-dolci — a reward-hacking model organism (Qwen3-8B) A Qwen3-8B derivative that has been taught, through synthetic-document midtraining, how the verifiers of the djinncoding environment can be exploited, then restored to a working chat/coding model. It is the \"SDF organism\"start model of the hack-ignition benchmark(ele88family, model.label = qwen3-8b-djinnsdf-dolci), released ..."
+    },
+    {
+      "title": "Mac OS上有什么好用的widget推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/36960830",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8?file=Qwen3.5",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Widget 到底是什么？和 App 的区别在哪儿呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/19693257/answers/updated",
+      "snippet": "一个优秀的 Widget 需要有三个特点： 简单明了（Glanceable） 、 恰当展示（Relevant） 、 个性化定制（Personalized） 简单明了 …"
+    }
+  ]
+}

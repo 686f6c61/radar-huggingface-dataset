@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jibhug/Krea_2_Jib_Mix_Krea_v4_Habanero",
+  "slug": "jibhug-krea_2_jib_mix_krea_v4_habanero",
+  "author": "jibhug",
+  "url": "https://huggingface.co/jibhug/Krea_2_Jib_Mix_Krea_v4_Habanero",
+  "created_at": "2026-09-08T11:25:24.000Z",
+  "updated_at": "2026-09-08T11:25:24.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supreme value: Toyota : r/StockMarket - Reddit",
+      "url": "https://www.reddit.com/r/StockMarket/comments/1d4v5ba/supreme_value_toyota/",
+      "snippet": "May 31, 2024 · Welcome to /r/StockMarket! Our objective is to provide short and mid term trade ideas, market analysis & commentary …"
+    },
+    {
+      "title": "Jib Mix Krea 2 - v4.0 - Habanero | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2799984/jib-mix-krea-2",
+      "snippet": "Jib Mix Krea v4 - Habanero - 21/08/2026 +More small details. + Fixed some issues with overly light, contrasted skin. -Can add sparkly floating poin..."
+    },
+    {
+      "title": "supremevalues - Reddit",
+      "url": "https://www.reddit.com/r/supremevalues/",
+      "snippet": "Oct 9, 2020 · Our valuelist aims to provide accurate values to all of our users, we strive to be your main source for values in MM2! …"
+    },
+    {
+      "title": "Jib Mix Krea - v1.0 - Jalapeño | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2756888/jib-mix-krea?modelVersionId=3102188",
+      "snippet": "This is one Spicy model; it massively improves Kreas' NSFW capabilities. I like er_sde sampler and 6-12 steps Seems to has reduced art style abilit..."
+    },
+    {
+      "title": "What value list should I use? : r/MurderMystery2 - Reddit",
+      "url": "https://www.reddit.com/r/MurderMystery2/comments/l4rubv/what_value_list_should_i_use/",
+      "snippet": "Jan 25, 2021 · Supreme is much better, as it doesn't throw random values into random weapons like MM2Values does. Supreme …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/flex_ddG_tutorial",
+  "slug": "onescience-group-flex_ddg_tutorial",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/flex_ddG_tutorial",
+  "created_at": "2026-09-08T01:22:55.000Z",
+  "updated_at": "2026-09-08T01:24:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "OneScience",
+    "life-science",
+    "protein",
+    "binding-affinity",
+    "mutation",
+    "Rosetta",
+    "en",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 445150,
+  "storage_human": "445150 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "GitHub - Kortemme-Lab/flex_ddG_tutorial",
+      "url": "https://github.com/Kortemme-Lab/flex_ddG_tutorial",
+      "snippet": "In this activity, you will utilize the Flex ddG [KB2018] protocol within Rosetta to computationally model and predict changes in binding free energies upon mutation (interface ΔΔG). This protocol uses the \"backrub\" protocol [CS2008] implemented in Rosetta to sample conformational diversity. This ..."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "GitHub - YumizSui/flex_ddG",
+      "url": "https://github.com/YumizSui/flex_ddG",
+      "snippet": "In this activity, you will utilize the Flex ddG [KB2018] protocol within Rosetta to computationally model and predict changes in binding free energies upon mutation (interface ΔΔG). This protocol uses the \"backrub\" protocol [CS2018]_ implemented in Rosetta to sample conformational diversity. It is recommeded that you use weekly release \"Rosetta 2017.52\", which was released on Wednesday ..."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    }
+  ]
+}

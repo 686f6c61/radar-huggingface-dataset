@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "vivekharry/tripura-st-lab",
+  "slug": "vivekharry-tripura-st-lab",
+  "author": "vivekharry",
+  "url": "https://huggingface.co/vivekharry/tripura-st-lab",
+  "created_at": "2026-09-08T09:05:10.000Z",
+  "updated_at": "2026-09-08T09:05:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "trp",
+    "bn",
+    "mr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "speech-translation",
+    "automatic-speech-recognition",
+    "kokborok",
+    "low-resource",
+    "indic",
+    "trp",
+    "bn",
+    "mr",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "vivekharry (vivek das) - Hugging Face",
+      "url": "https://huggingface.co/vivekharry/models",
+      "snippet": "vivekharry's models4 Sort: Recently updated vivekharry/ppo-LunarLander-v3 Reinforcement Learning •Updated Mar 30"
+    },
+    {
+      "title": "vivekharry (vivek das) - Hugging Face",
+      "url": "https://huggingface.co/vivekharry",
+      "snippet": "User profile of vivek das on Hugging Face"
+    },
+    {
+      "title": "Tripura trains officials in AI to lead tech-driven governance",
+      "url": "https://www.prokerala.com/news/articles/a1654008.html",
+      "snippet": "He further revealed Tripura's ambition to attract officials from other states for future AI training, leveraging its leadership position. This initiative solidifies Tripura's commitment to AI-integrated governance, aiming for enhanced planning, accelerated execution, and data-driven policies to build a more efficient public administration system."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    }
+  ]
+}

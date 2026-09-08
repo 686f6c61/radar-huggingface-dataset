@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "anakhiu/birefnet-onnx-int8",
+  "slug": "anakhiu-birefnet-onnx-int8",
+  "author": "anakhiu",
+  "url": "https://huggingface.co/anakhiu/birefnet-onnx-int8",
+  "created_at": "2026-09-08T09:45:40.000Z",
+  "updated_at": "2026-09-08T09:50:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "birefnet",
+  "languages": [],
+  "tags": [
+    "birefnet",
+    "onnx",
+    "background-removal",
+    "int8",
+    "image-segmentation",
+    "base_model:onnx-community/BiRefNet_dynamic-1024x1024-ONNX",
+    "base_model:quantized:onnx-community/BiRefNet_dynamic-1024x1024-ONNX",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 315784269,
+  "storage_human": "316 MB",
+  "base_model": "onnx-community/BiRefNet_dynamic-1024x1024-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AARP Budget & Savings Forum and Community Discussions | AARP",
+      "url": "https://community.aarp.org/budget-savings-22",
+      "snippet": "Managing a budget and savings plan is easier with the help of new ideas and new programs or discussing how to make adjustments."
+    },
+    {
+      "title": "onnx-community/BiRefNet-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/BiRefNet-ONNX",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AARP Help Forum and Online Community Discussions | AARP",
+      "url": "https://community.aarp.org/aarp-help-5",
+      "snippet": "Get help and discuss popular topics like Membership, Benefits & Discounts, AARP Games and more. Find answers about AARP …"
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and ..."
+    },
+    {
+      "title": "AARP Rewards Forum and Online Community Discussions | AARP",
+      "url": "https://community.aarp.org/aarp-rewards-3",
+      "snippet": "Find answers to your questions about AARP Rewards in our community forums, where you can earn, learn, prepare and get ahead of …"
+    }
+  ]
+}

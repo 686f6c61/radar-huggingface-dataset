@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jesusoctavioas/gpt2-mlx-4Bit",
+  "slug": "jesusoctavioas-gpt2-mlx-4bit",
+  "author": "jesusoctavioas",
+  "url": "https://huggingface.co/jesusoctavioas/gpt2-mlx-4Bit",
+  "created_at": "2026-09-08T01:40:49.000Z",
+  "updated_at": "2026-09-08T01:44:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gpt2",
+    "exbert",
+    "en",
+    "base_model:openai-community/gpt2",
+    "base_model:quantized:openai-community/gpt2",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 78207963,
+  "storage_human": "78 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Ads - Get Customers and Sell More with Online Advertising",
+      "url": "https://adwords.google.com/um/signin",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "jesusoctavioas/gpt-oss-120b-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/jesusoctavioas/gpt-oss-120b-mlx-4Bit",
+      "snippet": "jesusoctavioas/gpt-oss-120b-mlx-4Bit The Model jesusoctavioas/gpt-oss-120b-mlx-4Bit was converted to MLX format from openai/gpt-oss-120b using mlx-lm version 0.26.4."
+    },
+    {
+      "title": "Google Ads - Get Customers and Sell More with Online Advertising",
+      "url": "https://www.adwords.google.com/select/KeywordToolExternal",
+      "snippet": "Use the URL below to update any links or bookmarks."
+    },
+    {
+      "title": "jesusoctavioas/gpt2-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/jesusoctavioas/gpt2-mlx-8Bit",
+      "snippet": "Instructions to use jesusoctavioas/gpt2-mlx-8Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Eligibility - Google Ads",
+      "url": "https://adwords.google.com/localservices/signup/eligibility",
+      "snippet": "To get more leads, turn this on. Your Local Services Ad will then be eligible to appear for more general searches within this industry."
+    }
+  ]
+}

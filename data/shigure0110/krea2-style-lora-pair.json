@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "shigure0110/krea2-style-lora-pair",
+  "slug": "shigure0110-krea2-style-lora-pair",
+  "author": "shigure0110",
+  "url": "https://huggingface.co/shigure0110/krea2-style-lora-pair",
+  "created_at": "2026-09-08T08:38:15.000Z",
+  "updated_at": "2026-09-08T09:07:22.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "lora",
+    "text-to-image",
+    "krea-2",
+    "flow-matching",
+    "diffusion",
+    "musubi-tuner",
+    "comfyui",
+    "style-transfer",
+    "ablation-study",
+    "en",
+    "zh",
+    "base_model:Comfy-Org/Krea-2",
+    "base_model:adapter:Comfy-Org/Krea-2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 940195525,
+  "storage_human": "940 MB",
+  "base_model": "Comfy-Org/Krea-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Top 28 Krea2 LoRA models for Stylized Image Generation",
+      "url": "https://www.stablediffusiontutorials.com/2026/06/krea2-lora-models.html",
+      "snippet": "The LoRA was trained using AI Toolkit's experimental Krea 2 reference image trainer with the Turbo training adapter. Its training dataset consists of thousands of carefully curated style reference pairs, enabling it to capture a wide range of artistic styles with impressive consistency."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Krea 2 Style Reference LoRA - v1.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2764349/krea-2-style-reference-lora",
+      "snippet": "This LoRA will allow you to inference on the Krea2 Turbo model in the style of a reference image. It was trained with AI Toolkitusing the experimental Krea2 reference image trainer with the turbo training adapter. It was trained on thousands of hand curated style pairs I have been building over the years. It was trained to handle 1-2 reference ..."
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

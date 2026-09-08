@@ -5,7 +5,7 @@
   "author": "OpenMOSS-Team",
   "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Base-0708",
   "created_at": "2026-07-13T11:36:58.000Z",
-  "updated_at": "2026-08-18T07:28:35.000Z",
+  "updated_at": "2026-09-07T10:48:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "video-text-to-text",
@@ -37,11 +37,11 @@
     "region:us"
   ],
   "likes": 18,
-  "downloads_30d": 78,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": 11336371208,
   "parameters_human": "11.34B",
-  "storage_bytes": 22693083605,
+  "storage_bytes": 22704507016,
   "storage_human": "22.7 GB",
   "base_model": null,
   "formats": [

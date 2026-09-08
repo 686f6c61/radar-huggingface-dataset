@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-gpt2-come",
+  "slug": "hooshaai-svd-linear-attention-gpt2-come",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-gpt2-come",
+  "created_at": "2026-09-08T01:50:59.000Z",
+  "updated_at": "2026-09-08T01:56:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "gpt2",
+    "come",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6319123,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "e-leiloes.pt",
+      "url": "https://www.e-leiloes.pt/",
+      "snippet": "e-leiloes.pt - Leilões Online de Imóveis (Apartamentos, Moradias, Terrenos, Armazéns, etc), Veículos (Automóveis, Ligeiros, …"
+    },
+    {
+      "title": "HOOSHA AI — Frontier Artificial Intelligence & Open Research",
+      "url": "https://hooshaai.github.io/",
+      "snippet": "Hoosha AI — Frontier research laboratory pioneering sub-quadratic attention, continuous flow matching, and verified cognitive scaling architectures."
+    },
+    {
+      "title": "Leilão eletrónico | Tribunais.org.pt",
+      "url": "https://tribunais.org.pt/Dividas/Acao-executiva/Leilao-eletronico",
+      "snippet": "Qualquer pessoa pode consultar o e-leilões.pt. Como consultar Para aceder ao e-leiloes.pt, precisa de: aceder à página do e …"
+    },
+    {
+      "title": "Substack - Hoosha AI",
+      "url": "https://hooshaai.substack.com/",
+      "snippet": "Deep dives into ML/AI papers. Mostly coding on the side. Click to read Hoosha AI 🧠, by 🧠 Hoosha AI, a Substack publication. Launched a month ago."
+    },
+    {
+      "title": "e-leiloes.pt",
+      "url": "https://e-leiloes.pt/gestao/leiloesonline.aspx",
+      "snippet": "Ordem dos Solicitadores e dos Agentes de Execução© 2026 - Todos os Direitos Reservados (*)"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-heretic-GGUF",
+  "slug": "mradermacher-minicpm5-2b-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-heretic-GGUF",
+  "created_at": "2026-09-08T11:37:14.000Z",
+  "updated_at": "2026-09-08T11:37:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AZORG Ziekenhuis",
+      "url": "https://www.azorg.be/nl",
+      "snippet": "4 days ago · Samen AZORG: A.S.Z. en OLV als één vanaf 1 januari 2025. Met zes campussen in Aalst, Asse, Geraardsbergen, …"
+    },
+    {
+      "title": "insraq/MiniCPM5-2B-heretic-abliterated · Hugging Face",
+      "url": "https://huggingface.co/insraq/MiniCPM5-2B-heretic-abliterated",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "AZORG hospital (AZORG) | HMA-EMA Catalogues of real-world data …",
+      "url": "https://catalogues.ema.europa.eu/institution/1000000354",
+      "snippet": "Oct 30, 2024 · We are a general hospital located in Aalst, Belgium. In total we provide care on 6 different locations in Flanders (2 in …"
+    },
+    {
+      "title": "MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic-GGUF",
+      "url": "https://huggingface.co/mradermacher/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AZORG hospital (AZORG)",
+      "url": "https://catalogues.ema.europa.eu/print/pdf/node/4255",
+      "snippet": "Oct 30, 2024 · We are a general hospital located in Aalst, Belgium. In total we provide care on 6 different locations in Flanders (2 in …"
+    }
+  ]
+}

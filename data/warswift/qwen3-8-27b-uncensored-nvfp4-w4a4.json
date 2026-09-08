@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "WarSwift/Qwen3.8-27B-Uncensored-NVFP4-W4A4",
+  "slug": "warswift-qwen3-8-27b-uncensored-nvfp4-w4a4",
+  "author": "WarSwift",
+  "url": "https://huggingface.co/WarSwift/Qwen3.8-27B-Uncensored-NVFP4-W4A4",
+  "created_at": "2026-09-08T01:51:28.000Z",
+  "updated_at": "2026-09-08T01:51:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Körperpflege für empfindliche Haut | La Roche Posay",
+      "url": "https://www.larocheposay.de/",
+      "snippet": "Beauty-Produkte von La Roche Posay: Entdecke unsere auf deinen individuellen Hauttyp und deine Hautbedürnisse zugeschnittenen …"
+    },
+    {
+      "title": "WarSwift/Qwen3.8-27B-Uncensored-NVFP4-W4A4 · Hugging Face",
+      "url": "https://huggingface.co/WarSwift/Qwen3.8-27B-Uncensored-NVFP4-W4A4",
+      "snippet": "Qwen3.8-27B-Uncensored-NVFP4-W4A4 like0 License:apache-2.0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "EFFACLAR: Gesichtspflege bei fettiger Haut | La Roche Posay",
+      "url": "https://www.larocheposay.de/effaclar",
+      "snippet": "Die EFFACLAR Produkte von La Roche Posay für fettige und zu Akne neigender Haut helfen Unreinheiten und Pickelmale zu mildern …"
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+    },
+    {
+      "title": "Sanfte Hautpflege bei Neurodermitis | La Roche Posay",
+      "url": "https://www.larocheposay.de/lipikar",
+      "snippet": "Entdecke mit der LIPIKAR-Pflegesereie gezielte Lösungen für empfindliche, trockene und zu Neurodermitis neigende Haut – für ein …"
+    }
+  ]
+}

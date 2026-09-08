@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/NeoHorse-1-4B-i1-GGUF",
+  "slug": "mradermacher-neohorse-1-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/NeoHorse-1-4B-i1-GGUF",
+  "created_at": "2026-09-08T01:35:55.000Z",
+  "updated_at": "2026-09-08T08:00:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "en",
+    "base_model:TokenRhythm/NeoHorse-1-4B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 53399961568,
+  "storage_human": "53.4 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hampshire - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hampshire",
+      "snippet": "Hampshire was a departure point for several groups of colonists who left England to settle on the east coast of North America during …"
+    },
+    {
+      "title": "mradermacher/NeoHorse-1-4B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/NeoHorse-1-4B-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/NeoHorse-1-4B-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Visit Hampshire | Discover the City, Coast and Country",
+      "url": "https://www.visit-hampshire.co.uk/",
+      "snippet": "From exploring our country parks and coast to stepping into Hampshire’s history, discover plenty of ways to keep the family …"
+    },
+    {
+      "title": "mradermacher/Nous-1-4B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Nous-1-4B-i1-GGUF",
+      "snippet": "mradermacher / Nous-1-4B-i1-GGUF like 0 Transformers GGUF 110 languages text-generation-inference unsloth qwen3 imatrix conversational License:anvdl-1.0 Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Hampshire - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Hampshire",
+      "snippet": "5Afkomstig uit Hampshire. 6Externe link."
+    }
+  ]
+}

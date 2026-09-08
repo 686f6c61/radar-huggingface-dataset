@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/ntkt-conversation-vietnamese-full-text-qwen3.5-0.8b-sft-GGUF",
+  "slug": "bachdathan-ntkt-conversation-vietnamese-full-text-qwen3-5-0-8b-sft-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/ntkt-conversation-vietnamese-full-text-qwen3.5-0.8b-sft-GGUF",
+  "created_at": "2026-09-08T11:16:26.000Z",
+  "updated_at": "2026-09-08T11:16:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1936135040,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B, bihungba1101/ntkt-conversation-vietnamese-full-text-qwen3.5-0.8b-sft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mobile.bg — Продажба на нови и ...",
+      "url": "https://www.mobile.bg/",
+      "snippet": "Mobile.bg » Най-големият автомобилен пазар в България, Автомобили и Джипове, Бусове и Камиони, Мотоциклети, Джетове, …"
+    },
+    {
+      "title": "Qwen3.5 0.8B NTKT Vietnamese Conversation SFT - Hugging Face",
+      "url": "https://huggingface.co/bihungba1101/ntkt-conversation-vietnamese-full-text-qwen3.5-0.8b-sft",
+      "snippet": "This PEFT LoRA adapter fine-tunes Qwen/Qwen3.5-0.8B for conversational knowledge tracing. It predicts Correct or Incorrect from a learner's Vietnamese interaction history represented as full text."
+    },
+    {
+      "title": "Автомобили и Джипове втора ръка и нови ...",
+      "url": "https://www.mobile.bg/obiavi/avtomobili-dzhipove",
+      "snippet": "Обяви за » Автомобили и Джипове на цени започващи от 7 EUR до 11 999 998 EUR Избор от » 140 185 « предложения само в …"
+    },
+    {
+      "title": "bihungba1101/ntkt-conversation-vietnamese-full-text-qwen3.5-0.8b-sft at ...",
+      "url": "https://huggingface.co/bihungba1101/ntkt-conversation-vietnamese-full-text-qwen3.5-0.8b-sft/tree/main",
+      "snippet": "Instructions to use bihungba1101/ntkt-conversation-vietnamese-full-text-qwen3.5-0.8b-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Автокъща Autotechnica, София - обяви в Mobile.bg",
+      "url": "https://autotechnica.mobile.bg/",
+      "snippet": "Актуални обяви от автокъща Autotechnica, град София в най-големия сайт за авто-обяви Mobile.bg"
+    }
+  ]
+}

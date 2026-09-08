@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "liuftrwrtw/MyAwesomeModel",
+  "slug": "liuftrwrtw-myawesomemodel",
+  "author": "liuftrwrtw",
+  "url": "https://huggingface.co/liuftrwrtw/MyAwesomeModel",
+  "created_at": "2026-09-08T09:26:50.000Z",
+  "updated_at": "2026-09-08T09:27:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HLN - Het Laatste Nieuws - Volg het nieuws op de nr1 nieuwssite in ...",
+      "url": "https://www.hln.be/",
+      "snippet": "HLN - Het Laatste Nieuws - Volg het nieuws op de nr1 nieuwssite in België, HLN.be brengt je het allerlaatste nieuws 24/24 en 7/7, uit …"
+    },
+    {
+      "title": "liuftrwrtw/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/liuftrwrtw/MyAwesomeModel-TestRepo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Net binnen | Het meest recente nieuws van HLN.be - Het Laatste Nieuws",
+      "url": "https://www.hln.be/net-binnen/",
+      "snippet": "Volg het meest recente nieuws op de nr1 nieuwssite in België, HLN brengt je het recente nieuws 24/24 en 7/7, uit binnen - en …"
+    },
+    {
+      "title": "liuftrwrtw (1448) - Hugging Face",
+      "url": "https://huggingface.co/liuftrwrtw",
+      "snippet": "models1 liuftrwrtw/MyAwesomeModel-TestRepo Feature Extraction •Updated 3 days ago• 285"
+    },
+    {
+      "title": "Sport | hln.be - Het Laatste Nieuws",
+      "url": "https://www.hln.be/sport/",
+      "snippet": "HLN - Het Laatste Nieuws - Volg het nieuws op de nr1 nieuwssite in België, HLN.be brengt je het allerlaatste nieuws 24/24 en 7/7, uit …"
+    }
+  ]
+}

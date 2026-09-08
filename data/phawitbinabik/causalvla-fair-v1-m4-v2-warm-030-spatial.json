@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "phawitbinabik/causalvla-fair-v1-m4-v2-warm-030-spatial",
+  "slug": "phawitbinabik-causalvla-fair-v1-m4-v2-warm-030-spatial",
+  "author": "phawitbinabik",
+  "url": "https://huggingface.co/phawitbinabik/causalvla-fair-v1-m4-v2-warm-030-spatial",
+  "created_at": "2026-09-08T02:14:45.000Z",
+  "updated_at": "2026-09-08T05:53:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 8052328600,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Günter Herz – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/G%C3%BCnter_Herz",
+      "snippet": "Suche Suchen Inhaltsverzeichnis umschalten Günter Herz 2 SprachenAbschnitt hinzufügen"
+    },
+    {
+      "title": "phawitbinabik/causalvla-fair-v1-m4-v2-warm-030-spatial · Hugging Face",
+      "url": "https://huggingface.co/phawitbinabik/causalvla-fair-v1-m4-v2-warm-030-spatial",
+      "snippet": "Check out the documentationfor more information. M4-v2-warm-030 — Fair Protocol v1 M4-v2-warm-030 — Fair Protocol v1 LIBERO Spatial model. Training seed: 1000. Primary checkpoint: step 25000. This model is one cell of a fixed-source-exposure comparison; do not interpret a single evaluation seed as statistical superiority."
+    },
+    {
+      "title": "Ingeburg Herz – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Ingeburg_Herz",
+      "snippet": "Suche Suchen Inhaltsverzeichnis umschalten Ingeburg Herz 2 SprachenAbschnitt hinzufügen"
+    },
+    {
+      "title": "phawitbinabik/causalvla-fair-v1-m0-clean-spatial · Hugging Face",
+      "url": "https://huggingface.co/phawitbinabik/causalvla-fair-v1-m0-clean-spatial",
+      "snippet": "Check out the documentationfor more information. M0-clean — Fair Protocol v1 M0-clean — Fair Protocol v1 LIBERO-Spatial pilot model. Training seed: 1000. Primary checkpoint: step 25000. This model is one cell of a fixed-source-exposure comparison; do not interpret a single evaluation seed as statistical superiority."
+    },
+    {
+      "title": "Günter Herz - Munzinger Biographie",
+      "url": "https://www.munzinger.de/register/portrait/biographien/herz%20guenter/00/17422",
+      "snippet": "Günter Herz wurde am 22. Juli 1940 als ältester Sohn des Hamburger Kaffee-Unternehmers Max Herz (1905-1965) und dessen Frau …"
+    }
+  ]
+}

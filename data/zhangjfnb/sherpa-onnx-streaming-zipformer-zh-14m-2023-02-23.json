@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zhangjfnb/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23",
+  "slug": "zhangjfnb-sherpa-onnx-streaming-zipformer-zh-14m-2023-02-23",
+  "author": "zhangjfnb",
+  "url": "https://huggingface.co/zhangjfnb/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23",
+  "created_at": "2026-09-08T01:14:42.000Z",
+  "updated_at": "2026-09-08T01:14:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80873819,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AgenSIR - SIR - Servizio Informazione Religiosa",
+      "url": "https://www.agensir.it/",
+      "snippet": "3 days ago · Sir è un organo d’informazione della CEI sempre aggiornata su Chiesa, Vaticano, diocesi, conferenze episcopali e reti …"
+    },
+    {
+      "title": "zhangjfnb/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23 at main",
+      "url": "https://huggingface.co/zhangjfnb/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23/tree/main",
+      "snippet": "zhangjfnb sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23 like0 ONNX License:apache-2.0 Model cardFilesFiles and versions xet"
+    },
+    {
+      "title": "Sir - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Sir",
+      "snippet": "allo stesso modo; possono applicarsi condizioni ulteriori. Vedi le condizioni d'usoper i dettagli. Informativa sulla privacy"
+    },
+    {
+      "title": "zhangjfnb/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23 · Hugging Face",
+      "url": "https://huggingface.co/zhangjfnb/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23",
+      "snippet": "zhangjfnb sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23 like0 ONNX License:apache-2.0 Model cardFilesFiles and versions xet"
+    },
+    {
+      "title": "Sir Safety System S.p.A.",
+      "url": "https://www.sirsafety.it/",
+      "snippet": "Concepite per essere le più leggere di sempre, le SIR 399 si contraddistinguono per il design moderno che si ispira al mondo dello …"
+    }
+  ]
+}

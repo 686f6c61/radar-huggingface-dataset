@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Mungert/s1-mini-GGUF",
+  "slug": "mungert-s1-mini-gguf",
+  "author": "Mungert",
+  "url": "https://huggingface.co/Mungert/s1-mini-GGUF",
+  "created_at": "2026-09-08T02:12:57.000Z",
+  "updated_at": "2026-09-08T02:42:47.000Z",
+  "license": "s1-mini-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "asr",
+    "automatic-speech-recognition",
+    "text-normalization",
+    "inverse-text-normalization",
+    "punctuation",
+    "truecasing",
+    "speech-to-text",
+    "dictation",
+    "post-processing",
+    "qwen3",
+    "text-generation",
+    "en",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 24313750464,
+  "storage_human": "24.3 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Share files from Google Drive - Computer - Google Drive Help",
+      "url": "https://support.google.com/drive/answer/2494822?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Updated Sharing Model:Access you apply to a folder is inherited by all files within it. You can no longer give someone less access to …"
+    },
+    {
+      "title": "Mungert/Trinity-Mini-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Mungert/Trinity-Mini-GGUF",
+      "snippet": "Trinity Mini Trinity Mini is an Arcee AI 26B MoE model with 3B active parameters. It is the medium-sized model in our new Trinity family, a series of open-weight models for enterprise and tinkerers alike. This model is tuned for reasoning, but in testing, it uses a similar total token count to competitive instruction-tuned models."
+    },
+    {
+      "title": "Share Files and Folders Over a Network in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/111783-share-files-folders-over-network-windows-10-a.html",
+      "snippet": "Jul 1, 2024 · File sharing over a network in Windows 10 allows you to share files and folders on your computer with other users over a …"
+    },
+    {
+      "title": "internlm/Intern-S1-mini-GGUF · Hugging Face",
+      "url": "https://huggingface.co/internlm/Intern-S1-mini-GGUF",
+      "snippet": "The Intern-S1-mini model in GGUF format can be utilized by llama.cpp, a highly popular open-source framework for Large Language Model (LLM) inference, across a variety of hardware platforms, both locally and in the cloud."
+    },
+    {
+      "title": "Create a shared drive - Google Workspace Learning Center",
+      "url": "https://support.google.com/a/users/answer/9310249?hl=en",
+      "snippet": "On this page Create a shared drive and add members"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "barbora-nemcekova/test",
+  "slug": "barbora-nemcekova-test",
+  "author": "barbora-nemcekova",
+  "url": "https://huggingface.co/barbora-nemcekova/test",
+  "created_at": "2026-09-08T09:27:12.000Z",
+  "updated_at": "2026-09-08T09:30:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barbora Ondrušová – ML Software Engineer @ NXP Semiconductors",
+      "url": "https://cz.linkedin.com/in/barbora-nemcekova",
+      "snippet": "ML Software Engineer @ NXP Semiconductors · Pracovní zkušenosti: NXP Semiconductors · Vzdělání: Faculty of Business and Economics, Mendel University in Brno · Lokalita: Brno - metropolitní oblast · Přes 500 spojení na LinkedIn. Podívejte se na profil uživatele Barbora Nemčeková na LinkedIn, komunitě profesionálů s miliardou členů."
+    },
+    {
+      "title": "I literally can't think of a better combo than an exhibition with [Gijs ...",
+      "url": "https://www.facebook.com/groups/53364734892/posts/10160766498684893/",
+      "snippet": "06.04.2022 ... ... Barbora Nemčeková (cultural worker and unionist) host: Jan Bělíček ... AI](https://www.facebook. com/hashtag/ai?__eep__=6&__cft__[0 ..."
+    },
+    {
+      "title": "European contribution to the study of ROS - PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5458069/",
+      "snippet": "elegans can serve as a general model for redox biology and has already provided significant new insight into the interplay between ROS, ROS signaling and aging."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Mapy Google",
+      "url": "https://www.google.com/maps/search/?hl=pl",
+      "snippet": "Transport publiczny Miejsca w pobliżu Restauracje Stacje paliw Szczegóły mapy Linie transportu publicznego Natężenie ruchu …"
+    }
+  ]
+}

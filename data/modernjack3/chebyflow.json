@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "modernjack3/ChebyFlow",
+  "slug": "modernjack3-chebyflow",
+  "author": "modernjack3",
+  "url": "https://huggingface.co/modernjack3/ChebyFlow",
+  "created_at": "2026-09-08T09:08:44.000Z",
+  "updated_at": "2026-09-08T09:30:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "modernjack3 (Jack) - Hugging Face",
+      "url": "https://huggingface.co/modernjack3",
+      "snippet": "Jack modernjack3 Follow AI & ML interests None yet Recent Activity updateda modelabout 3 hours ago"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=pt-br",
+      "snippet": "Crie uma conta ou entre no Instagram: compartilhe seus interesses com as pessoas que entendem você."
+    },
+    {
+      "title": "modernjack3 (Jack) - Hugging Face",
+      "url": "https://huggingface.co/modernjack3/models",
+      "snippet": "User profile of Jack on Hugging Face"
+    },
+    {
+      "title": "Instagram Features: Stories, Reels & More | About Instagram",
+      "url": "https://about.instagram.com/features",
+      "snippet": "Discover all the features available on Instagram, from the latest releases to tips & tricks for Reels, DMs, Stories, Shopping & more!"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ayushman7577/proton",
+  "slug": "ayushman7577-proton",
+  "author": "ayushman7577",
+  "url": "https://huggingface.co/ayushman7577/proton",
+  "created_at": "2026-09-08T09:09:34.000Z",
+  "updated_at": "2026-09-08T09:10:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel"
+    },
+    {
+      "title": "PROTON",
+      "url": "https://www.protonmodel.ai/",
+      "snippet": "PROTON is a graph AI model for neurological disease. (a)We demonstrate diverse disease-specific applications of PROTON using experimental and clinical data in three neurological conditions: Parkinson's disease (PD), bipolar disorder (BD), and Alzheimer's disease (AD)."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/yt+",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "PROTON: A Relational Foundation Model for Neurological Discovery",
+      "url": "https://kempnerinstitute.harvard.edu/research/deeper-learning/proton-a-relational-foundation-model-for-neurological-discovery/",
+      "snippet": "Foundation models have transformed AI by scaling sequence-based learning, but many scientific problems are not naturally sequential. In neuroscience, insight depends on relationships across genes, cell types, and brain systems. This work introduces a relational foundation model for neurological discovery and evaluates it through discovery loops that connect AI predictions to experiments in ..."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

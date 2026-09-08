@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Hcompany/NeoMME-260M",
+  "slug": "hcompany-neomme-260m",
+  "author": "Hcompany",
+  "url": "https://huggingface.co/Hcompany/NeoMME-260M",
+  "created_at": "2026-07-16T09:07:30.000Z",
+  "updated_at": "2026-09-03T06:47:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "neomme",
+    "feature-extraction",
+    "multimodal",
+    "document-understanding",
+    "masked-language-modeling",
+    "long-context",
+    "multilingual",
+    "arxiv:2609.01657",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 435,
+  "trending_score": 8,
+  "parameters": 262937906,
+  "parameters_human": "262.9M",
+  "storage_bytes": 525893660,
+  "storage_human": "526 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "H Company Releases NeoMME: A Family of 260M and 800M Single-Tower ...",
+      "url": "https://www.marktechpost.com/2026/09/06/h-company-releases-neomme-a-family-of-260m-and-800m-single-tower-multimodal-encoders-that-drop-the-vision-tower-and-causal-decoder/",
+      "snippet": "H Companyhas released NeoMME, a family of 260M and 800M bidirectional encoders that drops both components. One Transformer processes multilingual text tokens and raw 32×32 RGB image patches through the same layers, trained from random initialization. The retrieval fine-tune, NeoMME-Retriever, reaches 0.523 nDCG@10 on ViDoRe v3at 260M parameters."
+    },
+    {
+      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+      "url": "https://huggingface.co/blog/Hcompany/neomme",
+      "snippet": "vor 5 Tagen ... We introduce NeoMME, a family of 260M and 800M multilingual multimodal encoders. Unlike many generative visual language models, NeoMME does ..."
+    },
+    {
+      "title": "H Company veröffentlicht NeoMME, eine Open-Source-Multimodal ...",
+      "url": "https://www.unite.ai/de/h-company-releases-neomme-an-open-source-multimodal-encoder-family/",
+      "snippet": "vor 5 Tagen ... Die Model‑Card für NeoMME‑260M‑Retriever listet 263 M‑Parameter ... Werbehinweis: Unite.AI verpflichtet sich zu strengen redaktionellen ..."
+    },
+    {
+      "title": "Marktechpost AI on X: \"H Company Releases NeoMME",
+      "url": "https://x.com/Marktechpost/status/2096708134714900817",
+      "snippet": "vor 2 Tagen ... H Company Releases NeoMME: A Family of 260M and 800M Single-Tower Multimodal Encoders That Drop the Vision Tower and Causal Decoder No ..."
+    },
+    {
+      "title": "NeoMME - OpenTrain AI",
+      "url": "https://www.opentrain.ai/papers/neomme-a-single-tower-multimodal-native-multilingual-foundation-encoder-for-effi--arxiv-2609.01657/",
+      "snippet": "31.08.2026 ... We introduce NeoMME, a family of 260M and 800M-parameter Multimodal and Multilingual bidirectional Encoders that process multilingual text and ..."
+    }
+  ]
+}

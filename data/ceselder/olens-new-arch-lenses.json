@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ceselder/olens-new-arch-lenses",
+  "slug": "ceselder-olens-new-arch-lenses",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/olens-new-arch-lenses",
+  "created_at": "2026-09-08T01:53:07.000Z",
+  "updated_at": "2026-09-08T02:44:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "interpretability",
+    "oracle-lens",
+    "activation-oracle",
+    "lora",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11206695984,
+  "storage_human": "11.2 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "ceselder/olens-new-arch-lenses · Hugging Face",
+      "url": "https://huggingface.co/ceselder/olens-new-arch-lenses",
+      "snippet": "Downloads last month Downloads are not tracked for this model. How to track Inference ProvidersNEW This model isn't deployed by any Inference Provider.🙋Ask for provider support Model tree for ceselder/olens-new-arch-lenses Base model Qwen/Qwen3.6-27B"
+    },
+    {
+      "title": "GMX Login - ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Mit der Browser-Erweiterung GMX MailCheck melden Sie sich zunächst mit Ihrer E-Mail-Adresse und Ihrem Passwort an. …"
+    },
+    {
+      "title": "ceselder/skip-lens-olens-pi0-100k-qwen36-27b at main",
+      "url": "https://huggingface.co/ceselder/skip-lens-olens-pi0-100k-qwen36-27b/tree/main",
+      "snippet": "Instructions to use ceselder/skip-lens-olens-pi0-100k-qwen36-27b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "E-Mail Posteingang - GMX",
+      "url": "https://hilfe.gmx.net/email/empfangen-und-lesen/index.html",
+      "snippet": "E-Mails per Drag & Drop verschieben, Nachrichten drucken und erweiterte E-Mail-Informationen prüfen. Anhänge, Bilder, Anlagen …"
+    }
+  ]
+}

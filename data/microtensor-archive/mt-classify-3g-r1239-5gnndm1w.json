@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "microtensor-archive/mt-classify-3g-r1239-5GnNdM1w",
+  "slug": "microtensor-archive-mt-classify-3g-r1239-5gnndm1w",
+  "author": "microtensor-archive",
+  "url": "https://huggingface.co/microtensor-archive/mt-classify-3g-r1239-5GnNdM1w",
+  "created_at": "2026-09-08T01:17:07.000Z",
+  "updated_at": "2026-09-08T01:17:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microtensor",
+    "arena-classify-mt-3g",
+    "round-1239",
+    "state-confirmed",
+    "quality-0.9389",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355359141,
+  "storage_human": "355 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zenbook 14 UX431｜Portátiles Para casa｜ASUS España",
+      "url": "https://www.asus.com/es/laptops/for-home/zenbook/zenbook-14-ux431/",
+      "snippet": "La tecnología Wide-View permite visualizar los contenidos desde ángulos extremos sin que pierdan calidad. Y como la nueva …"
+    },
+    {
+      "title": "microtensor-archive/mt-classify-3g-r1239-5CkuRmNC · Hugging Face",
+      "url": "https://huggingface.co/microtensor-archive/mt-classify-3g-r1239-5CkuRmNC",
+      "snippet": "Instructions to use microtensor-archive/mt-classify-3g-r1239-5CkuRmNC with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Zenbook 14 UX431 - Especificaciones｜Portátiles Para casa ... - ASUS",
+      "url": "https://www.asus.com/es/laptops/for-home/zenbook/zenbook-14-ux431/techspec/",
+      "snippet": "La velocidad de transferencia real de USB 3.0, 3.1, 3.2 o Type-C variará según muchos factores, incluida la velocidad de …"
+    },
+    {
+      "title": "microtensor-archive/mt-classify-3g-r1239-5CLfzJdv · Hugging Face",
+      "url": "https://huggingface.co/microtensor-archive/mt-classify-3g-r1239-5CLfzJdv",
+      "snippet": "Instructions to use microtensor-archive/mt-classify-3g-r1239-5CLfzJdv with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Asus ZenBook 14 UX431F i7 8GB SSD 256GB Full HD Azul",
+      "url": "https://ecoportatil.es/producto/asus-zenbook-14-ux431f-14-i7-8565u-8gb-ssd-256gb-nvidia-geforce-mx250-2gb-full-hd-a",
+      "snippet": "Descubre el Asus ZenBook 14 UX431F: potencia y estilo en un portátil de 14\" con i7, 16GB RAM y SSD 256GB. Ideal para trabajar y …"
+    }
+  ]
+}

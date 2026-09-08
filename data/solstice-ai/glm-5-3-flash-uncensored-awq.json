@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/GLM-5.3-Flash-UNCENSORED-AWQ",
+  "slug": "solstice-ai-glm-5-3-flash-uncensored-awq",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/GLM-5.3-Flash-UNCENSORED-AWQ",
+  "created_at": "2026-09-08T01:15:34.000Z",
+  "updated_at": "2026-09-08T01:24:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "glm5_next",
+    "solstice-ai",
+    "glm",
+    "glm5",
+    "glm-5.3-flash",
+    "awq",
+    "w4a16",
+    "int4",
+    "vllm",
+    "sglang",
+    "vision",
+    "video",
+    "multimodal",
+    "mmproj",
+    "dflash2",
+    "speculative-decoding",
+    "image-text-to-text",
+    "long-context",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
+    "base_model:quantized:dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
+    "license:mit",
+    "endpoints_compatible",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 167,
+  "trending_score": 0,
+  "parameters": 51190913886,
+  "parameters_human": "51.19B",
+  "storage_bytes": 181977916341,
+  "storage_human": "182.0 GB",
+  "base_model": "dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Solstice",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Solstice 92 languesAjouter un sujet"
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "Date des équinoxes et des solstices pour 2026 et à venir",
+      "url": "https://icalendrier.fr/outils/equinoxes-solstices",
+      "snippet": "Mar 20, 2026 · Le solstice d'été représente la journée la plus longue, et le solstice d'hiver la plus courte. Les images ci-dessous …"
+    },
+    {
+      "title": "GLM 5.3 Flash Uncensored model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/z-ai/glm-5.3-flash-uncensored",
+      "snippet": "BackTry Model GLM 5.3 Flash Uncensored z-ai/glm-5.3-flash-uncensored BackTry Model GLM 5.3 Flash Uncensored is an FP8 uncensored fine-tune of the efficient 320B mixture-of-experts reasoning model with restored vision support, built for unrestricted chat, creative writing, coding, agentic work, tool use, and long-context tasks."
+    },
+    {
+      "title": "Solstice - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Solstice",
+      "snippet": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;"
+    }
+  ]
+}

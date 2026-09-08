@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "supertone-archive/supertonic",
+  "slug": "supertone-archive-supertonic",
+  "author": "supertone-archive",
+  "url": "https://huggingface.co/supertone-archive/supertonic",
+  "created_at": "2026-09-08T02:09:18.000Z",
+  "updated_at": "2026-09-08T02:09:18.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "supertonic",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "supertonic",
+    "onnx",
+    "text-to-speech",
+    "en",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 262725592,
+  "storage_human": "263 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://www.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "supertone-archive/supertonic · Hugging Face",
+      "url": "https://huggingface.co/supertone-archive/supertonic",
+      "snippet": "Instructions to use supertone-archive/supertonic with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Sport: Aktuelle Ergebnisse, News und Videos - BILD.de",
+      "url": "https://www.bild.de/sport/startseite/sport/sport-home-15479124.bild.html",
+      "snippet": "Aktuelle Nachrichten aus dem Sport: Bundesliga, Formel 1, Boxen, Tennis und Olympia. Alle Meldungen, Berichte, Ergebnisse und …"
+    },
+    {
+      "title": "supertone-archive/supertonic-3 · Hugging Face",
+      "url": "https://huggingface.co/supertone-archive/supertonic-3",
+      "snippet": "Across measured languages, Supertonic 3 stays within a competitive WER/CER range against much larger open TTS models such as VoxCPM2, while preserving a lightweight on-device deployment path."
+    },
+    {
+      "title": "SPORT BILD | Sport-Nachrichten | Live Sportergebnisse | Meinungen, …",
+      "url": "https://sportbild.bild.de/",
+      "snippet": "Live Sportergebnisse, Videos & Sportdaten: SPORT BILD online bietet Sport Live-News zu Fußball, Bundesliga und Formel 1. …"
+    }
+  ]
+}

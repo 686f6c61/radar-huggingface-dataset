@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/affine-lab-angryaffine-bcec195296a4",
+  "slug": "greenfield0810-affine-lab-angryaffine-bcec195296a4",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/affine-lab-angryaffine-bcec195296a4",
+  "created_at": "2026-09-08T01:51:05.000Z",
+  "updated_at": "2026-09-08T01:52:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bittensor",
+    "sn120",
+    "affine",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23584843272,
+  "storage_human": "23.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'écran reste toujours éclairé [Résolu] - Téléphonie fixe",
+      "url": "https://forums.commentcamarche.net/forum/affich-36824877-l-ecran-reste-toujours-eclaire",
+      "snippet": "Aug 28, 2020 · Cette fonction est valable pour mon Gigaset A 510 A . Fonction que je n'ai pas retrouvé dans le PDF lié à votre …"
+    },
+    {
+      "title": "greenfield0810/affine-lab-angryaffine-bcec195296a4 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-lab-angryaffine-bcec195296a4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ou se trouve la touche inscription paging - Forum telephonie fixe",
+      "url": "https://forums.commentcamarche.net/forum/affich-37488674-ou-se-trouve-la-touche-inscription-paging",
+      "snippet": "Jan 13, 2022 · Bonjour, Ou se trouve physiquement la touche inscription paging sur tel. A540 merci..."
+    },
+    {
+      "title": "greenfield0810/sn120-base-255-lab069 at main - Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/sn120-base-255-lab069/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Klarar din telefon av VoLTE? - Nätverk och uppkoppling",
+      "url": "https://www.sweclockers.com/forum/trad/1707407-klarar-din-telefon-av-volte",
+      "snippet": "Jan 12, 2024 · Tråden Är du medveten om att 2G och 3G näten stängs ner 2025? tar upp att alla telefoner inte kan använda VoLTE …"
+    }
+  ]
+}

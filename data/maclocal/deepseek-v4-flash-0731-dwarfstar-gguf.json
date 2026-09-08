@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "maclocal/DeepSeek-V4-Flash-0731-DwarfStar-GGUF",
+  "slug": "maclocal-deepseek-v4-flash-0731-dwarfstar-gguf",
+  "author": "maclocal",
+  "url": "https://huggingface.co/maclocal/DeepSeek-V4-Flash-0731-DwarfStar-GGUF",
+  "created_at": "2026-09-08T01:18:47.000Z",
+  "updated_at": "2026-09-08T01:18:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "deepseek-v4",
+    "deepseek-v4-flash",
+    "dwarfstar",
+    "ds4",
+    "afm",
+    "apple-silicon",
+    "metal",
+    "mxfp4",
+    "text-generation",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 161965573120,
+  "storage_human": "162.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2ddf58da9e6d68790d544f149f24697c",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "maclocal/DeepSeek-V4-Flash-0731-DwarfStar-GGUF · Hugging Face",
+      "url": "https://huggingface.co/maclocal/DeepSeek-V4-Flash-0731-DwarfStar-GGUF",
+      "snippet": "Instructions to use maclocal/DeepSeek-V4-Flash-0731-DwarfStar-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    }
+  ]
+}

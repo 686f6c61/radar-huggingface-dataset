@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rchantres44/King",
+  "slug": "rchantres44-king",
+  "author": "rchantres44",
+  "url": "https://huggingface.co/rchantres44/King",
+  "created_at": "2026-09-08T01:40:03.000Z",
+  "updated_at": "2026-09-08T01:40:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI 3D Model Generator - CF Studio",
+      "url": "https://studio.creativefabrica.com/3d-model-generator",
+      "snippet": "Generate 3D models from text descriptions or images. Describe what you want or upload a reference image and get a detailed, textured 3D model in seconds. Free to use."
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "Selected only (0) Clear selection Show all metrics AI model leaderboard with benchmark scores, pricing, context window and license. Click a column header to sort. Use the checkboxes to select models for comparison."
+    },
+    {
+      "title": "Free King 3D Models - Download Instantly | Meshy",
+      "url": "https://www.meshy.ai/tags/king",
+      "snippet": "Download 1788+ free King 3D models in STL, GLB, FBX, OBJ formats for 3D Printing, Games, Animation and more. Ready to use – instant download on Meshy."
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "Free VRChat Avatars, Models & Unity Assets - VRCMods",
+      "url": "https://vrcmods.com/",
+      "snippet": "Explore thousands of free VRChat avatars, 3D models, animations, shaders, and Unity assets shared by the VRCMods community."
+    }
+  ]
+}

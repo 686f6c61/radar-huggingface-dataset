@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MakinoKF/rebot_pickplace_bolt_dataset_20260908_162503_act-policy-v1",
+  "slug": "makinokf-rebot_pickplace_bolt_dataset_20260908_162503_act-policy-v1",
+  "author": "MakinoKF",
+  "url": "https://huggingface.co/MakinoKF/rebot_pickplace_bolt_dataset_20260908_162503_act-policy-v1",
+  "created_at": "2026-09-08T09:45:15.000Z",
+  "updated_at": "2026-09-08T09:45:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:MakinoKF/rebot_pickplace_bolt_dataset_20260908_162503",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723156,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Sicilia",
+      "url": "https://www.lasicilia.it/",
+      "snippet": "1 day ago · Notizie in tempo reale dalla Sicilia e dall'Italia. Cronaca, politica, eventi, economia e sport: la prima fonte di informazione …"
+    },
+    {
+      "title": "MakinoKF/pick-bolt-and-place-empty-space-dataset_act-policy-v1 ...",
+      "url": "https://huggingface.co/MakinoKF/pick-bolt-and-place-empty-space-dataset_act-policy-v1",
+      "snippet": "Instructions to use MakinoKF/pick-bolt-and-place-empty-space-dataset_act-policy-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "La Sicilia: Catania Home Notizie, Cronaca, Etna, Politica e Attualità",
+      "url": "https://catania.lasicilia.it/",
+      "snippet": "1 day ago · La pagina di Catania con le notizie più importanti: cronaca, politica, Etna e attualità in tempo reale dalla nostra redazione. …"
+    },
+    {
+      "title": "MakinoKF/pick-bolt-and-place-empty-space-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/MakinoKF/pick-bolt-and-place-empty-space-dataset",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "La Sicilia | Notizie di Oggi | Ultime Notizie e Aggiornamenti ...",
+      "url": "https://www.lasicilia.it/sezioni/969/oggi",
+      "snippet": "1 day ago · Cosa è successo oggi. Cronaca, Politica, Economia e Sport: tutte le notizie più importanti in tempo reale dalla Sicilia e …"
+    }
+  ]
+}

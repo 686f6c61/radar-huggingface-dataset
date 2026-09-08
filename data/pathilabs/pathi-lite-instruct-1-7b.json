@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "pathilabs/Pathi-Lite-Instruct-1.7B",
+  "slug": "pathilabs-pathi-lite-instruct-1-7b",
+  "author": "pathilabs",
+  "url": "https://huggingface.co/pathilabs/Pathi-Lite-Instruct-1.7B",
+  "created_at": "2026-09-08T08:55:57.000Z",
+  "updated_at": "2026-09-08T09:22:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "pathi-ai",
+    "pathi-labs",
+    "pathi-lite-instruct-1.7B",
+    "qwen",
+    "causal-language-model",
+    "text-generation",
+    "conversational",
+    "instruction-tuning",
+    "lora",
+    "fine-tuned",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452607946,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dab Pumps",
+      "url": "https://www.dabpumps.be/",
+      "snippet": "DAB levert technische oplossingen om de betrouwbaarheid en efficiëntie te waarborgen en het energieverbruik in woon- en …"
+    },
+    {
+      "title": "pathilabs (Pathi Labs) - Hugging Face",
+      "url": "https://huggingface.co/pathilabs",
+      "snippet": "Pathi Labsis an AI Research & Engineering company dedicated to building production-ready artificial intelligence solutions for businesses worldwide. Our mission is to transform complex AI research into practical products that solve real-world challenges across industries."
+    },
+    {
+      "title": "DAB pompen - Ruim op voorraad en binnen 24 uur geleverd!",
+      "url": "https://www.waterpomp.be/dab",
+      "snippet": "DAB is een Italiaanse fabrikant van waterpompen en is een waar A-merk binnen de pompenwereld. Het merk DAB staat bekend om …"
+    },
+    {
+      "title": "Mistral 7B",
+      "url": "https://mistral.ai/news/announcing-mistral-7b/",
+      "snippet": "The resulting model, Mistral 7B Instruct, outperforms all 7B models on MT-Bench, and is comparable to 13B chat models. The Mistral 7B Instruct model is a quick demonstration that the base model can be easily fine-tuned to achieve compelling performance."
+    },
+    {
+      "title": "DAB Pumps | Sinds 1975 hoogwaardige waterpompen",
+      "url": "https://www.dabpumps.nl/",
+      "snippet": "DAB levert technische oplossingen om de betrouwbaarheid en efficiëntie te waarborgen en het energieverbruik in woon- en …"
+    }
+  ]
+}

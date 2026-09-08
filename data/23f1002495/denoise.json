@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "23f1002495/Denoise",
+  "slug": "23f1002495-denoise",
+  "author": "23f1002495",
+  "url": "https://huggingface.co/23f1002495/Denoise",
+  "created_at": "2026-09-08T02:02:59.000Z",
+  "updated_at": "2026-09-08T02:20:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18302659,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SFR Mail - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/bd-p/SFR-Mail",
+      "snippet": "Sep 1, 2026 · La Communauté Nous contacter Se connecter SFR Mail annuler Activer les suggestions La fonction de suggestion …"
+    },
+    {
+      "title": "23f1002495/Denoise · Hugging Face",
+      "url": "https://huggingface.co/23f1002495/Denoise",
+      "snippet": "A custom PyTorch model for 4× image super-resolution and denoising, trained as part of the DLP-26T2-NPPE3 Kaggle competition."
+    },
+    {
+      "title": "RED by SFR - Mon compte client - Infos & Questions",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/bd-p/forum-compte-client",
+      "snippet": "May 9, 2026 · Posez toutes vos questions sur nos services en ligne et l’appli RED & Moi"
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/?t=denoise",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "Comment accéder à ma boîte mail SFR - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/comment-acc%C3%A9der-%C3%A0-ma-bo%C3%AEte-mail-sfr/td-p/2312731",
+      "snippet": "Aug 6, 2021 · Il suffit de cliquer sur \" Je souhaite accéder à SFR Mail depuis mon ordinateur \" ou \" Je souhaite accéder à SFR Mail …"
+    }
+  ]
+}

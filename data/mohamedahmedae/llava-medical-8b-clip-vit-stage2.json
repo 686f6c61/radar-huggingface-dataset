@@ -5,7 +5,7 @@
   "author": "MohamedAhmedAE",
   "url": "https://huggingface.co/MohamedAhmedAE/llava-medical-8B-clip-vit-stage2",
   "created_at": "2026-07-27T06:49:25.000Z",
-  "updated_at": "2026-09-07T07:58:05.000Z",
+  "updated_at": "2026-09-08T07:17:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 775,
+  "downloads_30d": 868,
   "trending_score": 0,
   "parameters": 188751872,
   "parameters_human": "188.8M",
-  "storage_bytes": 1691851304474,
-  "storage_human": "1691.9 GB",
+  "storage_bytes": 1778231034648,
+  "storage_human": "1778.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

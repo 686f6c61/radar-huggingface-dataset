@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "VertexResearch/Vertex-0.6-5M-Base",
+  "slug": "vertexresearch-vertex-0-6-5m-base",
+  "author": "VertexResearch",
+  "url": "https://huggingface.co/VertexResearch/Vertex-0.6-5M-Base",
+  "created_at": "2026-09-08T02:06:27.000Z",
+  "updated_at": "2026-09-08T02:07:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "tiny",
+    "vertex",
+    "en",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4771392,
+  "parameters_human": "4.8M",
+  "storage_bytes": 9551720,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ÖSYM Aday İşlemleri Sistemi - Ana Sayfa",
+      "url": "https://ais.osym.gov.tr/",
+      "snippet": "2 days ago · Bu ekrandan Aday İşlemleri Sistemine e-Devlet üzerinden kayıt işleminizi gerçekleştirebilirsiniz."
+    },
+    {
+      "title": "VertexResearch/Vertex-0.6-5M-Base · Hugging Face",
+      "url": "https://huggingface.co/VertexResearch/Vertex-0.6-5M-Base",
+      "snippet": "Instructions to use VertexResearch/Vertex-0.6-5M-Base with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ÖSYM Aday İşlemleri Sistemi - Sisteme Giriş",
+      "url": "http://ais.osym.gov.tr/Yetki/Giris",
+      "snippet": "Bu ekrandan Aday İşlemleri Sistemine e-Devlet üzerinden kayıt işleminizi gerçekleştirebilirsiniz."
+    },
+    {
+      "title": "VertexResearch (Vertex Research) - Hugging Face",
+      "url": "https://huggingface.co/VertexResearch",
+      "snippet": "Training small, efficient open language models. Home of the Vertex model series."
+    },
+    {
+      "title": "ÖSYM Aday İşlemleri Sistemi - Ana Sayfa",
+      "url": "https://ais.osym.gov.tr/Home/Index",
+      "snippet": "5 days ago · ÖSYM Aday İşlemleri Sistemi'ne giriş yaparak sınav başvurularınızı gerçekleştirebilir, sınav sonuçlarınızı öğrenebilir ve …"
+    }
+  ]
+}

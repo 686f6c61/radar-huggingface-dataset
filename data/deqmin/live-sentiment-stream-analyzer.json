@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "deqmin/live-sentiment-stream-analyzer",
+  "slug": "deqmin-live-sentiment-stream-analyzer",
+  "author": "deqmin",
+  "url": "https://huggingface.co/deqmin/live-sentiment-stream-analyzer",
+  "created_at": "2026-09-08T02:06:43.000Z",
+  "updated_at": "2026-09-08T02:26:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Page 19 – troid.org | Digital Daʿwah",
+      "url": "https://www.troid.org/page/19/?id=11",
+      "snippet": "The different types of hearts and the remedies of the hearts. The function of the heart and the sickness of it."
+    },
+    {
+      "title": "deqmin/live-sentiment-stream-analyzer · Hugging Face",
+      "url": "https://huggingface.co/deqmin/live-sentiment-stream-analyzer",
+      "snippet": "deqmin live-sentiment-stream-analyzer like0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "The Biography of the Prophet Muḥammad (ﷺ) - troid.org",
+      "url": "https://www.troid.org/the-biography-of-the-prophet-muhammad/",
+      "snippet": "Sep 3, 2025 · A discussion on the lifetime of the Prophet (ﷺ) including the nobility of his lineage, the names he was known by, and …"
+    },
+    {
+      "title": "Live Pointer Movement Analyzer - a Hugging Face Space by deqmin",
+      "url": "https://huggingface.co/spaces/deqmin/live-sentiment-stream-analyzer",
+      "snippet": "This tool watches how you move your mouse inside the highlighted area, calculates the average speed and jitter, and gives an anomaly score. Every few movements are saved with a timestamp, and you c..."
+    },
+    {
+      "title": "We Are Brothers! - troid.org | Digital Daʿwah",
+      "url": "https://www.troid.org/we-are-brothers/",
+      "snippet": "Feb 10, 2009 · An emotionally inspiring khutbah on the topic of brotherhood, the blessing of it, the vital important of it and the …"
+    }
+  ]
+}

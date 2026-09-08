@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "seniruk/whisper-medium-si-v2",
+  "slug": "seniruk-whisper-medium-si-v2",
+  "author": "seniruk",
+  "url": "https://huggingface.co/seniruk/whisper-medium-si-v2",
+  "created_at": "2026-09-08T01:05:44.000Z",
+  "updated_at": "2026-09-08T01:06:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "si",
+    "base_model:openai/whisper-medium",
+    "base_model:finetune:openai/whisper-medium",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 3055793177,
+  "storage_human": "3.1 GB",
+  "base_model": "openai/whisper-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"What is the weather today?\" or \"How is the weather today?\"",
+      "url": "https://ell.stackexchange.com/questions/174118/what-is-the-weather-today-or-how-is-the-weather-today",
+      "snippet": "Jul 26, 2018 · There’s also the sarcastic/joking “How’s the weather up there?” to comment on how tall someone is (or how’s the …"
+    },
+    {
+      "title": "seniruk/whisper-medium-si-v2 · Hugging Face",
+      "url": "https://huggingface.co/seniruk/whisper-medium-si-v2",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use seniruk/whisper-medium-si-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use seniruk/whisper-medium-si-v2 with Transformers:"
+    },
+    {
+      "title": "How VS. What is the weather forecast? Which one is correct?",
+      "url": "https://ell.stackexchange.com/questions/225452/how-vs-what-is-the-weather-forecast-which-one-is-correct",
+      "snippet": "Sep 21, 2019 · And not \"How does the report say?\" We say What is the weather forecast for Spain vs Brazil (meaning what does the …"
+    },
+    {
+      "title": "seniruk/whisper-medium-si-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/seniruk/whisper-medium-si-v2/tree/main",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use seniruk/whisper-medium-si-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use seniruk/whisper-medium-si-v2 with Transformers:"
+    },
+    {
+      "title": "How do you say \"I hope it doesn't rain and lightning today?\"",
+      "url": "https://ell.stackexchange.com/questions/33828/how-do-you-say-i-hope-it-doesnt-rain-and-lightning-today",
+      "snippet": "Sep 18, 2014 · The most conventional expression is, \"I hope it doesn't thunderand lightning today.\" The two usually go together, and …"
+    }
+  ]
+}

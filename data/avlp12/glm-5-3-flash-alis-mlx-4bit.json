@@ -5,7 +5,7 @@
   "author": "avlp12",
   "url": "https://huggingface.co/avlp12/GLM-5.3-Flash-Alis-MLX-4bit",
   "created_at": "2026-08-26T23:19:48.000Z",
-  "updated_at": "2026-09-06T19:28:38.000Z",
+  "updated_at": "2026-09-08T04:03:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 2085,
+  "downloads_30d": 2329,
   "trending_score": 0,
   "parameters": 40632442496,
   "parameters_human": "40.63B",

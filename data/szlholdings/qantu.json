@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/qantu",
   "created_at": "2026-08-28T16:26:39.000Z",
-  "updated_at": "2026-09-02T00:14:00.000Z",
+  "updated_at": "2026-09-08T02:30:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,6 +17,9 @@
     "szl-holdings",
     "doctrine-v11",
     "roadmap",
+    "software",
+    "reference",
+    "test-fixture",
     "license:apache-2.0",
     "region:us"
   ],

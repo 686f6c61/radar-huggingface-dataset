@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Thomson-1.0-Small-GGUF",
+  "slug": "mradermacher-thomson-1-0-small-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Thomson-1.0-Small-GGUF",
+  "created_at": "2026-09-08T09:21:49.000Z",
+  "updated_at": "2026-09-08T10:15:56.000Z",
+  "license": "polyform-strict-1-0-0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:thomsonreuters/Thomson-1.0-Small",
+    "base_model:quantized:thomsonreuters/Thomson-1.0-Small",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 170989309888,
+  "storage_human": "171.0 GB",
+  "base_model": "thomsonreuters/Thomson-1.0-Small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/g/?locale=ar",
+      "snippet": "استخدم ChatGPT للإجابة عن الأسئلة والكتابة وإنشاء الصور وإتمام العمل وكتابة التعليمات البرمجية، كل ذلك في مكان واحد. ابدأ مجانًا أو نزّل التطبيق."
+    },
+    {
+      "title": "Thomson-1.0-Small - Hugging Face",
+      "url": "https://huggingface.co/thomsonreuters/Thomson-1.0-Small",
+      "snippet": "Thomson-1.0-Small is a frontier Foundation Model of high proficiency across a wide range of specialised and general-purpose domains as well as practical deployment settings. It is the open-weight member of the Thomson-1.0 family, developed within a Continual Learning paradigm with a deliberate focus on economically impactful, high-stakes professional work across legal, tax, and journalism ..."
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "ابدأ في استخدام ChatGPT فورًا | OpenAI",
+      "url": "https://openai.com/ar/index/start-using-chatgpt-instantly/",
+      "snippet": "يستخدم أكثر من 100 مليون شخص في 185 دولة ChatGPT أسبوعيًا لتعلم أمور جديدة، والبحث عن الإلهام الإبداعي، والحصول على إجابات لأسئلتهم. وابتداءً من اليوم، أصبح بإمكانك استخدام …"
+    }
+  ]
+}

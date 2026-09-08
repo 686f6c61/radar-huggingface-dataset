@@ -5,7 +5,7 @@
   "author": "minseokk7",
   "url": "https://huggingface.co/minseokk7/BioPhys-13.0-Kimi-K3-DualBrain",
   "created_at": "2026-08-28T09:47:14.000Z",
-  "updated_at": "2026-08-30T13:20:39.000Z",
+  "updated_at": "2026-09-07T17:28:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 798,
+  "downloads_30d": 807,
   "trending_score": 0,
   "parameters": 492288,
   "parameters_human": "492288",

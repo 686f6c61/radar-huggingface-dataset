@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-blue-90ep-gs88-chunk60",
+  "slug": "kaz55-act-blue-90ep-gs88-chunk60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-blue-90ep-gs88-chunk60",
+  "created_at": "2026-09-08T01:33:24.000Z",
+  "updated_at": "2026-09-08T01:35:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dg5f",
+    "ur5e",
+    "gelsight",
+    "ablation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206729576,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Поиск — Microsoft Bing",
+      "url": "https://www.bing.com/?setlang=ru&cc=ru&cc=RU",
+      "snippet": "Выполняйте поиск с помощью Microsoft Bing и используйте мощь ИИ для обнаружения информации ..."
+    },
+    {
+      "title": "Kaz55/act-blue-90ep-gs88-chunk60 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-blue-90ep-gs88-chunk60",
+      "snippet": "Instructions to use Kaz55/act-blue-90ep-gs88-chunk60 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Versions. snrcode. build. 2026.09.07.73029979. hash. 6452b875e3c7d6cc4cf9dc3b0b1e5a47a3e1a22b."
+    },
+    {
+      "title": "Kaz55 (Kazutaka) - Hugging Face",
+      "url": "https://huggingface.co/Kaz55",
+      "snippet": "Kaz55/act_cablesort_ebata_chunk_size_53 Robotics • 51.7M•Updated 10 days ago• 37 • 1"
+    },
+    {
+      "title": "Microsoft Bing | Знакомство с Bing",
+      "url": "https://explore.microsoft.com/ru-ru/bing",
+      "snippet": "Совершайте путешествия своей мечты с помощью Bing. Открывайте для себя новые места, не выходя из дому, и бронируйте …"
+    }
+  ]
+}

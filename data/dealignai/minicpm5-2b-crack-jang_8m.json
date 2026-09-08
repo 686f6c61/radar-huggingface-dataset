@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "dealignai/MiniCPM5-2B-CRACK-JANG_8M",
+  "slug": "dealignai-minicpm5-2b-crack-jang_8m",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/MiniCPM5-2B-CRACK-JANG_8M",
+  "created_at": "2026-09-08T11:39:56.000Z",
+  "updated_at": "2026-09-08T11:44:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "apple-silicon",
+    "uncensored",
+    "abliterated",
+    "crack",
+    "jang",
+    "jang-8m",
+    "reasoning",
+    "minicpm5",
+    "harmbench",
+    "mmlu",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 2674327522,
+  "storage_human": "2.7 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fallco Aste | Vendite giudiziarie di beni immobili e mobili",
+      "url": "https://www.fallcoaste.it/",
+      "snippet": "Acquista su Fallco Aste il portale per beni derivanti da vendite giudiziarie e aste fallimentari. Aggiudicati immobili, mobili, auto al …"
+    },
+    {
+      "title": "Dealign.ai — AI Alignment Research by Jinho Jang",
+      "url": "https://dealign.ai/",
+      "snippet": "Safety Generalization research: 40+ novel findings on how safety becomes a generalized competency in frontier MoE models. By Jinho Jang."
+    },
+    {
+      "title": "Autoveicoli e cicli - Categoria - Fallco Aste",
+      "url": "https://www.fallcoaste.it/categoria/autoveicoli-e-cicli-592.html",
+      "snippet": "Sep 9, 2026 · Visualizza le vendite per la categoria Autoveicoli e cicli"
+    },
+    {
+      "title": "dealignai/MiniMax-M2.5-JANG_4M-CRACK · Hugging Face",
+      "url": "https://huggingface.co/dealignai/MiniMax-M2.5-JANG_4M-CRACK",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Requisiti tecnici - Fallco Aste",
+      "url": "https://venditeprivate.fallcoaste.it/come-funziona/requisiti-tecnici.html",
+      "snippet": "Quali sono i requisiti tecnici hardware e software per poter partecipare alle gare su Web Auction."
+    }
+  ]
+}

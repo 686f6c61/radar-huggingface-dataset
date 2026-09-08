@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hazaratun/bangla-emotion-ensemble-checkpoints",
+  "slug": "hazaratun-bangla-emotion-ensemble-checkpoints",
+  "author": "Hazaratun",
+  "url": "https://huggingface.co/Hazaratun/bangla-emotion-ensemble-checkpoints",
+  "created_at": "2026-09-08T01:46:46.000Z",
+  "updated_at": "2026-09-08T02:18:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2505128626,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Excel怎么快速显示全部隐藏的行和列-百度经验",
+      "url": "https://jingyan.baidu.com/article/95c9d20de3059fac4e7561ae.html",
+      "snippet": "Aug 16, 2019 · 如果Excel表格中有许多隐藏的行和列，如果想要把它们全部显示出来，可以参考本文的方法快速完成。"
+    },
+    {
+      "title": "Hazaratun/bangla-emotion-ensemble-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/Hazaratun/bangla-emotion-ensemble-checkpoints",
+      "snippet": "bangla-emotion-ensemble-checkpoints like1 License:mit Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Microsoft Teams Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoftteams/blog/microsoftteamsblog",
+      "snippet": "Welcome to the Microsoft Teams Blog! Learn best practices, news, and trends directly from the team behind Microsoft Teams."
+    },
+    {
+      "title": "Hazaratun/bangla-emotion-ensemble-checkpoints at main",
+      "url": "https://huggingface.co/Hazaratun/bangla-emotion-ensemble-checkpoints/tree/main",
+      "snippet": "bangla-emotion-ensemble-checkpoints like1 License:mit Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "New Teams - Backgrounds Folder | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/new-teams---backgrounds-folder/3960752",
+      "snippet": "Dec 22, 2021 · Recently, Microsoft released the new version of Teams for businesses, allowing the option to move end users to the …"
+    }
+  ]
+}

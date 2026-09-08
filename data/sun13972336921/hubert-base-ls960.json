@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sun13972336921/hubert-base-ls960",
+  "slug": "sun13972336921-hubert-base-ls960",
+  "author": "sun13972336921",
+  "url": "https://huggingface.co/sun13972336921/hubert-base-ls960",
+  "created_at": "2026-09-08T08:56:53.000Z",
+  "updated_at": "2026-09-08T08:56:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "hubert",
+    "speech",
+    "en",
+    "dataset:librispeech_asr",
+    "arxiv:2106.07447",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1132816442,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Technische specificaties (Nederlands) - PlayStation",
+      "url": "https://www.playstation.com/nl-nl/ps4/tech-specs/",
+      "snippet": "PS4 Pro ondersteunt een resolutie van 2160p (oorspronkelijk) bij bepaalde games. Beeldelementen met heel kleine details, zoals …"
+    },
+    {
+      "title": "facebook/hubert-base-ls960 · Hugging Face",
+      "url": "https://huggingface.co/facebook/hubert-base-ls960",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Technische specificaties (Belgien) - PlayStation",
+      "url": "https://www.playstation.com/nl-be/ps4/tech-specs/",
+      "snippet": "PS4 Pro ondersteunt een resolutie van 2160p (oorspronkelijk) bij bepaalde games. Objecten in de verte zijn beter in focus en worden …"
+    },
+    {
+      "title": "Xenova/hubert-base-ls960 · Hugging Face",
+      "url": "https://huggingface.co/Xenova/hubert-base-ls960",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SONY Playstation 4 - PS4 Pro 1 GB - MediaMarkt",
+      "url": "https://www.mediamarkt.nl/nl/product/_playstation-playstation-4-ps4-pro-1-tb-151532113.html",
+      "snippet": "De PlayStation 4 Pro (Modell CUH-7216B) is een verbeterde versie van de standaard PS4 met krachtigere hardware. Hierdoor …"
+    }
+  ]
+}

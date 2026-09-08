@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "JT-org/MiniCPM5-2B-openvino",
+  "slug": "jt-org-minicpm5-2b-openvino",
+  "author": "JT-org",
+  "url": "https://huggingface.co/JT-org/MiniCPM5-2B-openvino",
+  "created_at": "2026-09-08T09:03:49.000Z",
+  "updated_at": "2026-09-08T09:04:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openvino",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "openvino-export",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2520449549,
+  "storage_human": "2.5 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI for Adult Content 2026: NSFW Generators & Models",
+      "url": "https://www.startuphub.ai/ai-news/ai-tools/2026/best-ai-for-adult-content-in-2026-nsfw-generators-and-the-models-behind-them",
+      "snippet": "Jul 17, 2026 · Best AI for Adult Content in 2026: NSFW Generators and the Models Behind Them. The best NSFW AI generators in …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "AI Porn Generator for NSFW Videos and Custom Templates | Fapify",
+      "url": "https://www.fapify.com/ai-porn-generator",
+      "snippet": "Fapify combines public AI porn templates, image-to-video generation, nudify-compatible edits, and reusable NSFW workflows for AI …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B at main - Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B/tree/main",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use openbmb/MiniCPM5-2B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use openbmb/MiniCPM5-2B with Transformers:"
+    },
+    {
+      "title": "Make Porn with AI Porn Templates and Image-to-Video | Fapify",
+      "url": "https://www.fapify.com/make-porn",
+      "snippet": "Fapify supports make porn workflows through reusable AI porn templates, image-to-video generation, and repeatable creator setups."
+    }
+  ]
+}

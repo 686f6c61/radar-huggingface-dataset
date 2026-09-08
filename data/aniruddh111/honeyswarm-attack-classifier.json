@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Aniruddh111/honeyswarm-attack-classifier",
+  "slug": "aniruddh111-honeyswarm-attack-classifier",
+  "author": "Aniruddh111",
+  "url": "https://huggingface.co/Aniruddh111/honeyswarm-attack-classifier",
+  "created_at": "2026-09-08T11:16:45.000Z",
+  "updated_at": "2026-09-08T11:16:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Полдарк сериал 2015 смотреть онлайн бесплатно трейлеры и …",
+      "url": "https://www.ivi.ru/watch/poldark",
+      "snippet": "Сериал Полдарк 2015 смотреть онлайн трейлеры и описание, интересные факты и дополнительные материалы на сайте …"
+    },
+    {
+      "title": "World's Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    },
+    {
+      "title": "Все трейлеры к сериалу Полдарк",
+      "url": "https://www.ivi.ru/watch/poldark/trailers",
+      "snippet": "Все трейлеры к сериалу Полдарк (2015). Драмы в"
+    },
+    {
+      "title": "C0d3Mast3r/honeySwarm_log_analyzer · Hugging Face",
+      "url": "https://huggingface.co/C0d3Mast3r/honeySwarm_log_analyzer",
+      "snippet": "C0d3Mast3r / honeySwarm_log_analyzer like 0 Scikit-learn Joblib English security honeypot cowrie multi-label-classification attack-detection cybersecurity License:cc-by-4.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Какие фильмы можно загружать на устройство и смотреть без …",
+      "url": "https://ask.ivi.ru/knowledge-bases/10/articles/41390-kakie-filmyi-mozhno-zagruzhat-na-ustrojstvo-i-smotret-bez-interneta",
+      "snippet": "Загружать на мобильное устройство и смотреть в приложении Иви без интернета можно платные фильмы и фильмы по …"
+    }
+  ]
+}

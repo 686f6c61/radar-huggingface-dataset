@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Abiray/MiniCPM5-2B-GGUF",
+  "slug": "abiray-minicpm5-2b-gguf",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/MiniCPM5-2B-GGUF",
+  "created_at": "2026-09-08T04:33:46.000Z",
+  "updated_at": "2026-09-08T04:50:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "llama",
+    "llama.cpp",
+    "text-generation",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 11,
+  "downloads_30d": 7,
+  "trending_score": 11,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 10909226816,
+  "storage_human": "10.9 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Number 1234567890 English version Toy Soda - YouTube",
+      "url": "https://www.youtube.com/watch?v=WX1Hvr_yxtI",
+      "snippet": "Sep 29, 2017 · Number 1234567890 English version Toy SodaHave fun playing with Surprising Toys and enjoy DIY Clay modeling …"
+    },
+    {
+      "title": "Abiray/MiniCPM5-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abiray/MiniCPM5-2B-GGUF",
+      "snippet": "This repository provides quantized GGUF weights for MiniCPM5-2B, the second model in OpenBMB's MiniCPM5series. It is a dense 2B Transformer scaling up the proven recipe for on-device deployment, edge AI, and local inference via llama.cpp, Ollama, and LM Studio."
+    },
+    {
+      "title": "1234567890, How to Draw Number 1 to 10 for kids - YouTube",
+      "url": "https://www.youtube.com/watch?v=b7i5JPWTuQ8",
+      "snippet": "Mar 21, 2020 · 1234567890, How to Draw Number 1 to 10 for kids | Kids Drawing Videos | KS ARTHi Guys, This video shows you …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-GGUF",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Learning to Count 1 10 Song for Kids Learning Numbers and count ...",
+      "url": "https://www.dailymotion.com/video/x8faspq",
+      "snippet": "Nov 7, 2022 · Report Rhythm Kids Follow Learning to Count 1 10 Song for Kids Learning Numbers and count - 1234567890 4 years …"
+    }
+  ]
+}

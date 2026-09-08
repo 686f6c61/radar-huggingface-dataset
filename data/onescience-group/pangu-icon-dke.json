@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/Pangu-ICON-DKE",
+  "slug": "onescience-group-pangu-icon-dke",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/Pangu-ICON-DKE",
+  "created_at": "2026-09-08T09:14:14.000Z",
+  "updated_at": "2026-09-08T09:14:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "deterministic_evaluation_diagnostic",
+    "OneScience",
+    "Earth Science",
+    "Pangu-Weather",
+    "ICON",
+    "DKE",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rufbereitschaft TVöD Vergütung, Arbeitszeit & Ruhezeit",
+      "url": "https://www.juraforum.de/lexikon/rufbereitschaft",
+      "snippet": "Jan 29, 2026 · Die Rufbereitschaft nach dem TVöD ist ein Zeitraum, in dem Arbeitnehmer außerhalb ihrer regulären Arbeitszeit auf …"
+    },
+    {
+      "title": "OneScience-Group/Pangu_Weather · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/Pangu_Weather",
+      "snippet": "Model Introduction Pangu-Weather is a global medium-range weather forecast model proposed by Huawei Cloud, capable of rapidly predicting surface variables and multi-pressure-level upper-air variables."
+    },
+    {
+      "title": "Zeitzuschläge TVöD – Anspruch, Berechnung & Tabelle",
+      "url": "https://www.juraforum.de/lexikon/zeitzuschlaege-tvoed",
+      "snippet": "Feb 3, 2026 · Zeitzuschläge im Tarifvertrag für den öffentlichen Dienst (TVöD) sind zusätzliche Entgelte, die Beschäftigte erhalten, …"
+    },
+    {
+      "title": "OneScience-Group/Pangu_Weather at main - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/Pangu_Weather/tree/main",
+      "snippet": "OneScience-Group / Pangu_Weather like 0 Follow OneScience 12 OneScience/ERA5 English Chinese pangu-weather OneScience Earth Science Weather Forecast Short-to-Medium-Range Weather Forecast ERA5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Pangu_Weather 47.4 kB Ctrl+K Ctrl+K 1 contributor History:8 commits yzt15806542928 新增config.json文件 ..."
+    },
+    {
+      "title": "Sonderurlaub Hochzeit – gesetzlich und öffentlicher Dienst",
+      "url": "https://www.juraforum.de/lexikon/sonderurlaub-hochzeit",
+      "snippet": "Feb 3, 2026 · Wenn der Tarifvertrag TVöD oder auch der TV-L keinen Sonderurlaub bei eigener Hochzeit vorsieht, muss für den …"
+    }
+  ]
+}

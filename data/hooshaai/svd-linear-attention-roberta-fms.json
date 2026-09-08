@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-roberta-fms",
+  "slug": "hooshaai-svd-linear-attention-roberta-fms",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-roberta-fms",
+  "created_at": "2026-09-08T01:44:00.000Z",
+  "updated_at": "2026-09-08T01:44:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "svd-linear-attention",
+    "model-compression",
+    "roberta",
+    "pytorch",
+    "dataset:sst2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14323350,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidlove prodavnice u Subotica - tvoja prodavnica u blizini - Lidl Srbija",
+      "url": "https://www.lidl.rs/s/sr-RS/pretraga-prodavnice/subotica/",
+      "snippet": "Pronađi svoju prodavnicu. Hrana i piće. Voće i povrće. Meso i živina. Riba i plodovi mora. Sirevi, mlečni proizvodi i jaja. Pekara. …"
+    },
+    {
+      "title": "HOOSHA AI — Frontier Artificial Intelligence & Open Research",
+      "url": "https://hooshaai.github.io/",
+      "snippet": "Hoosha AI — Frontier research laboratory pioneering sub-quadratic attention, continuous flow matching, and verified cognitive scaling architectures."
+    },
+    {
+      "title": "Lidl prodavnica Pala Papa 1 u Subotica",
+      "url": "https://www.lidl.rs/s/sr-RS/pretraga-prodavnice/subotica/pala-papa-1/",
+      "snippet": "Tvoja Lidl prodavnica u Pala Papa 1, Subotica 24000 Prikaži radna vremena i posebne ponude ove prodavnice. Visok kvalitet i niska …"
+    },
+    {
+      "title": "Scaling Transformers: How Linear Attention is Reshaping Cross-Task AI",
+      "url": "https://hooshaai.substack.com/p/scaling-transformers-how-linear-attention",
+      "snippet": "The solution gaining serious traction in the research community is Linear Attention. By mathematically decomposing the softmax operation and substituting carefully engineered kernel feature maps, newer architectures achieve O (N) complexity — retaining the expressivity of a standard Transformer at a fraction of the cost."
+    },
+    {
+      "title": "Lidl Subotica, supermarket, Autonomous Province of Vojvodina",
+      "url": "https://yandex.com/maps/org/lidl_subotica/116063944001/",
+      "snippet": "Supermarket Lidl Subotica Autonomous Province of Vojvodina, City of Subotica, gradska četvrt Novi Grad, ☎️ +381 11 6554000. …"
+    }
+  ]
+}

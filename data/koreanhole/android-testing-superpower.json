@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "koreanhole/android-testing-superpower",
+  "slug": "koreanhole-android-testing-superpower",
+  "author": "koreanhole",
+  "url": "https://huggingface.co/koreanhole/android-testing-superpower",
+  "created_at": "2026-09-08T01:34:04.000Z",
+  "updated_at": "2026-09-08T01:34:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "android",
+    "autonomous-testing",
+    "agent",
+    "qwen2.5-coder",
+    "dpo",
+    "sft",
+    "mobile-automation",
+    "uiautomator",
+    "text-generation",
+    "en",
+    "ko",
+    "base_model:Qwen/Qwen2.5-Coder-7B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-Coder-7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://www.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "koreanhole/android-testing-superpower · Hugging Face",
+      "url": "https://huggingface.co/koreanhole/android-testing-superpower",
+      "snippet": "qwen2.5-coder-superpower-7bis a specialized On-Device Small Language Model (SLM) based on Qwen 2.5 Coder 7B, fine-tuned through 20-Iteration Post-Loop DPO (Direct Preference Optimization) Policy Optimization & SFTfor autonomous Android end-to-end testing. Developed as part of the android-testing-superpowerautonomous mobile testing agent framework."
+    },
+    {
+      "title": "News: Aktuelle Nachrichten und Videos - BILD.de",
+      "url": "https://www.bild.de/news/startseite/news/news-16804530.bild.html",
+      "snippet": "Aktuelle News aus Deutschland, Europa und der Welt. Alle Informationen, Bilder und Videos zu Skandalen, Krisen und Sensationen …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=uiautomator",
+      "snippet": "Sort: Trending Active filters:uiautomator Clear all koreanhole/android-testing-superpower Text Generation •Updated about 6 hours ago System theme Company"
+    },
+    {
+      "title": "Der Tag bei BILD.de - Schlagzeilen und Bilder des Tages",
+      "url": "https://www.bild.de/schlagzeilen-des-tages/ateaserseite/der-tag-bei-bild/ateaserseite-15480098.bild.html",
+      "snippet": "Solitär Sudoku BILD Der Tag bei BILD.de - Schlagzeilen und Bilder des Tages Newsticker Schlagzeilen des Tages Archiv"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OpenWAM-Stanford/OpenWAM-Pretraining",
+  "slug": "openwam-stanford-openwam-pretraining",
+  "author": "OpenWAM-Stanford",
+  "url": "https://huggingface.co/OpenWAM-Stanford/OpenWAM-Pretraining",
+  "created_at": "2026-09-08T01:16:49.000Z",
+  "updated_at": "2026-09-08T01:25:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openwam",
+    "pretraining",
+    "video-pretraining",
+    "video-prediction",
+    "world-model",
+    "robotics",
+    "multiview",
+    "pytorch",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20433187287,
+  "storage_human": "20.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "OpenWAM-Stanford/OpenWAM-Pretraining · Hugging Face",
+      "url": "https://huggingface.co/OpenWAM-Stanford/OpenWAM-Pretraining",
+      "snippet": "OpenWAM Pretraining This is an OpenWAM video pretraining checkpoint. It is an intermediate research checkpoint for text-conditioned latent video prediction, trained with single-view video and synchronized multiview mosaics. It is intended for video prediction research and subsequent adaptation; it is not an action-finetuned robot deployment policy."
+    },
+    {
+      "title": "GitHub - OpenWAM-Official/OpenWAM: Official repository for \"OpenWAM: An ...",
+      "url": "https://github.com/OpenWAM-Official/OpenWAM",
+      "snippet": "OpenWAM is an open research stack for systematically developing World-Action Models (WAMs). It turns tightly coupled design choices into modular components and controlled experiments. It consists of: OpenWAM-Infra:A modular infrastructure for composing and comparing model, representation, training, inference, deployment, and evaluation choices."
+    },
+    {
+      "title": "OpenWAM: An Open Framework for Generalist World-Action Modeling",
+      "url": "https://openwam.stanford.edu/",
+      "snippet": "A prelude to OpenWAM: a strong generalist world-action model, an ablation grammar for video-action coupling, and a new methodology for joint video-action denoising."
+    },
+    {
+      "title": "GitHub - OpenWAM-Official/OpenWAM-Official.github.io: Project page for ...",
+      "url": "https://github.com/OpenWAM-Official/OpenWAM-Official.github.io",
+      "snippet": "License Moreitems An Open, Modular Exploration Towards Systematic World–Action Model Pretraining This repository is the project page. The model, code and data live behind the links above. About Project page for \"OpenWAM: An Open, Modular Exploration Towards Systematic World–Action Model Pretraining\"."
+    }
+  ]
+}

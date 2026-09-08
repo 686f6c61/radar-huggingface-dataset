@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Abhay2310/NexTok-32K",
+  "slug": "abhay2310-nextok-32k",
+  "author": "Abhay2310",
+  "url": "https://huggingface.co/Abhay2310/NexTok-32K",
+  "created_at": "2026-09-08T08:57:52.000Z",
+  "updated_at": "2026-09-08T09:24:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "bpe",
+    "byte-level-bpe",
+    "nlp",
+    "language-modeling",
+    "code",
+    "mathematics",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:bigcode/starcoderdata",
+    "dataset:open-web-math/open-web-math",
+    "dataset:mikex86/stackoverflow-posts",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peças online Mister Auto - FÓRUM MOTORGUIA ONLINE",
+      "url": "https://forum.motorguia.net/forum/motorguia-f%C3%B3rum/boxes/95750-pe%C3%A7as-online-mister-auto",
+      "snippet": "Aug 14, 2012 · Eu nunca comprei no Mister auto porque acho os portes um pouco caros. Já comprei na Oscaro.es mas aquilo era …"
+    },
+    {
+      "title": "Abhay2310 (Abhay J Kashyap) - Hugging Face",
+      "url": "https://huggingface.co/Abhay2310/models",
+      "snippet": "Abhay J Kashyap Abhay2310 Follow AI & ML interests None yet Recent Activity updateda modelabout 6 hours ago"
+    },
+    {
+      "title": "Compra peças Mister Auto | FÓRUM MOTORGUIA ONLINE",
+      "url": "https://forum.motorguia.net/threads/compra-pecas-mister-auto.110078/",
+      "snippet": "Feb 20, 2014 · Boas, Necessito de comprar umas peças e na Opel é caríssimo, e vi a Mister Auto. Ora o que necessito são 2 …"
+    },
+    {
+      "title": "Next AI Model — Track & Predict AI Model Releases",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Track every AI model release and forecast what's coming next from OpenAI, Google, Anthropic, Meta, Mistral, xAI, Qwen and DeepSeek. Data-driven predictions with source-backed editorial notes."
+    },
+    {
+      "title": "Kreuzworträtsel | Beobachter",
+      "url": "https://www.beobachter.ch/kreuzwortratsel",
+      "snippet": "Hier finden Sie Kreuzworträtsel aus dem Beobachter. Sie können das aktuelle direkt am Bildschirm ausfüllen oder es als PDF …"
+    }
+  ]
+}

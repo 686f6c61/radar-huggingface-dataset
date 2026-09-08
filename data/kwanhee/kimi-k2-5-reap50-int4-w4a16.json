@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kwanhee/Kimi-K2.5-REAP50-INT4-W4A16",
+  "slug": "kwanhee-kimi-k2-5-reap50-int4-w4a16",
+  "author": "kwanhee",
+  "url": "https://huggingface.co/kwanhee/Kimi-K2.5-REAP50-INT4-W4A16",
+  "created_at": "2026-09-08T01:57:35.000Z",
+  "updated_at": "2026-09-08T02:23:54.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k25",
+    "feature-extraction",
+    "compressed-tensors",
+    "int4",
+    "moe",
+    "pruned",
+    "reap",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K2.5",
+    "base_model:quantized:moonshotai/Kimi-K2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 519453777648,
+  "parameters_human": "519.45B",
+  "storage_bytes": 309630780981,
+  "storage_human": "309.6 GB",
+  "base_model": "moonshotai/Kimi-K2.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Who are abbasid caliphate - Brainly.in",
+      "url": "https://brainly.in/question/35329239",
+      "snippet": "Feb 16, 2021 · Answer: The Abbasid caliphs established the city of Baghdad in 762 CE. It became a center of learning and the hub of …"
+    },
+    {
+      "title": "kwanhee/Kimi-K2.5-REAP50-INT4-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/kwanhee/Kimi-K2.5-REAP50-INT4-W4A16",
+      "snippet": "Instructions to use kwanhee/Kimi-K2.5-REAP50-INT4-W4A16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "When was abbasid caliphate declined - Brainly.in",
+      "url": "https://brainly.in/question/43784047",
+      "snippet": "Jul 22, 2021 · Abbasid Caliphate Abbasid Caliphate اَلْخِلَافَةُ ٱلْعَبَّاسِيَّةُ‎ • Decline of Abbasids 861 • Death of Al-Radi and beginning of Later …"
+    },
+    {
+      "title": "moonshotai/Kimi-K2.5 · Hugging Face",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "snippet": "Kimi K2.5 is an open-source, native multimodal agentic model built through continual pretraining on approximately 15 trillion mixed visual and text tokens atop Kimi-K2-Base."
+    },
+    {
+      "title": "Question #daa19 - Socratic",
+      "url": "https://socratic.org/questions/59378ea211ef6b0d2b7daa19",
+      "snippet": "We can solve the problem in many ways. In this solution we used the method of dividing the forces into horizontal and vertical …"
+    }
+  ]
+}

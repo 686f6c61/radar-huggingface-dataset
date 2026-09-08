@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ayushman7577/hartermantpro",
+  "slug": "ayushman7577-hartermantpro",
+  "author": "ayushman7577",
+  "url": "https://huggingface.co/ayushman7577/hartermantpro",
+  "created_at": "2026-09-08T09:12:44.000Z",
+  "updated_at": "2026-09-08T09:12:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Company Portal | App installation issues | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoft-intune/company-portal--app-installation-issues/4466217",
+      "snippet": "Nov 1, 2025 · Company Portal | App installation issues Anyone else experiencing issues with downloading apps from company …"
+    },
+    {
+      "title": "AI Detector — Free AI Checker for ChatGPT, Gemini & Claude | humantext.pro",
+      "url": "https://humantext.pro/ai-detector",
+      "snippet": "Free AI detector. Instantly check if your text sounds AI-generated, then improve it to read naturally and human. Also detect AI images, voice & video."
+    },
+    {
+      "title": "Company portal enrolment issues: Your device is already connected by ...",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoft-intune/company-portal-enrolment-issues-your-device-is-already-connected-by-your-organis/2412468",
+      "snippet": "Jun 3, 2021 · shoaib2000 Tin Contributor Jun 03, 2021 Company portal enrolment issues: Your device is already connected by your …"
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "Company Portal (windows) stuck on installing | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoft-intune/company-portal-windows-stuck-on-installing/3379454",
+      "snippet": "Copper Contributor May 16, 2022 Solved Company Portal (windows) stuck on installing Hello, I am relatively new to Intune …"
+    }
+  ]
+}

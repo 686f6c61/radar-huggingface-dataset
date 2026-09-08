@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mdrbal83/Qwen3.8-Sharp-Seeded-Chat-Template",
+  "slug": "mdrbal83-qwen3-8-sharp-seeded-chat-template",
+  "author": "mdrbal83",
+  "url": "https://huggingface.co/mdrbal83/Qwen3.8-Sharp-Seeded-Chat-Template",
+  "created_at": "2026-09-08T09:13:09.000Z",
+  "updated_at": "2026-09-08T09:13:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "chat-template",
+    "jinja",
+    "qwen3.8",
+    "reasoning",
+    "chain-of-thought",
+    "vllm",
+    "llama.cpp",
+    "lm-studio",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next, Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparatif des différents modes de dévolution de chantier » Auris ...",
+      "url": "https://www.auris-france.com/fiche-focus-moex/comparatif-des-differents-modes-de-devolution-de-chantier/",
+      "snippet": "Cette fiche vous propose une analyse comparative des quatre modes de dévolution de chantier : lots séparés, macro-lots, entreprise …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Choix du mode de dévolution - ETI Construction",
+      "url": "https://publications.eti-construction.fr/publications/chantiers-ti409/les-marches-sl8063592en/choix-du-mode-de-devolution-sl8071743.html",
+      "snippet": "Le terme « allotissement » retenu par l’article 10 du Code des marchés publics recouvre en réalité la problématique du choix du …"
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "Dévolution de travaux en immobilier | Let's Talk AMO par Auris",
+      "url": "https://www.auris-france.com/devolution-travaux-immobilier/",
+      "snippet": "Ce mode de dévolution offre une vraie simplicité contractuelle et un gain de temps en gestion opérationnelle. Il est adapté aux …"
+    }
+  ]
+}

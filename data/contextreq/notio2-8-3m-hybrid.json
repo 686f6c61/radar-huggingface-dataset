@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ContextReq/Notio2-8.3M-HYBRID",
+  "slug": "contextreq-notio2-8-3m-hybrid",
+  "author": "ContextReq",
+  "url": "https://huggingface.co/ContextReq/Notio2-8.3M-HYBRID",
+  "created_at": "2026-09-08T09:40:18.000Z",
+  "updated_at": "2026-09-08T10:03:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "character-level",
+    "rnn",
+    "gru",
+    "swa",
+    "hybrid-architecture",
+    "small-language-model",
+    "trained-from-scratch",
+    "curriculum-learning",
+    "pytorch",
+    "children-stories",
+    "custom-code",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "ContextReq/Notio · Hugging Face",
+      "url": "https://huggingface.co/ContextReq/Notio",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210/answers/updated",
+      "snippet": "Pinterest用户=带着明确购物需求来,转化率10-15%。 这就是为什么Pinterest在海外联盟营销圈被称为\"最适合新手的平台\"——用户本身 …"
+    },
+    {
+      "title": "ContextReq (ConReq.) - Hugging Face",
+      "url": "https://huggingface.co/ContextReq",
+      "snippet": "ContextReq/Pebble-25M-GGUF ... ContextReq/Pebble-25M-Chat-GGUF Text Generation • 24.5M • Updated about 2 hours ago • 1 basically-ai/Pebble - GGUF adaptation"
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210",
+      "snippet": "Pinterest相对Flickr来说，恰恰是一种互补，每张图片基本可以关联到一条URL，进一步可以抽取其他信息。 从用户行为的角度上看， …"
+    }
+  ]
+}

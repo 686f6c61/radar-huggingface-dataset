@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Berlm/hyb16-edm-s0",
+  "slug": "berlm-hyb16-edm-s0",
+  "author": "Berlm",
+  "url": "https://huggingface.co/Berlm/hyb16-edm-s0",
+  "created_at": "2026-09-08T09:05:45.000Z",
+  "updated_at": "2026-09-08T09:06:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gdn2",
+    "text-generation",
+    "gated-deltanet",
+    "linear-attention",
+    "hybrid-attention",
+    "long-context",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 369410412,
+  "parameters_human": "369.4M",
+  "storage_bytes": 738874352,
+  "storage_human": "739 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/insert-background-image-from-a-file-not-opening/fcb858d5-48fd-4e53-800e-f2ee9120695f",
+      "snippet": ""
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Fehlercode 0x8007002 - Microsoft Community",
+      "url": "https://answers.microsoft.com/de-de/windows/forum/all/fehlercode-0x8007002/6c0561e6-e63a-4570-8008-9efbb060f89d",
+      "snippet": "Ich habe eine Datensicherung meiner Masterfestplatte auf eine im PC festeingebaute weitere Festplatte gemacht. Die Daten sind dort …"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/attaching-photos-to-outlook-for-mac-2016-e-mail/d1776849-4d6b-484b-a6ad-56e7fcde4b91",
+      "snippet": ""
+    }
+  ]
+}

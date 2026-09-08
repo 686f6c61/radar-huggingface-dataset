@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dogeum/demo_right",
+  "slug": "dogeum-demo_right",
+  "author": "dogeum",
+  "url": "https://huggingface.co/dogeum/demo_right",
+  "created_at": "2026-09-08T08:43:44.000Z",
+  "updated_at": "2026-09-08T08:44:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:dogeum/demo_dataset_right",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Škoda Epiq » Modell entdecken | Škoda Österreich",
+      "url": "https://www.skoda.at/epiq/epiq",
+      "snippet": "Kompakt, clever, souverän: Der neue Škoda Epiq erweitert das erfolgreiche Elektroportfolio von Škoda Auto im Einstiegssegment …"
+    },
+    {
+      "title": "dogeum (Park) - Hugging Face",
+      "url": "https://huggingface.co/dogeum",
+      "snippet": "dogeum/eval_record_test_5000 Viewer •Updated May 21•1.68k• 11 View 13 datasets"
+    },
+    {
+      "title": "Der neue 100 % elektrische Škoda Epiq",
+      "url": "https://www.skoda-auto.de/modelle/epiq/epiq",
+      "snippet": "Der neue Škoda Epiq ist mehr als nur ein Fahrzeug – auf Wunsch ist er auch eine rollende Powerbank. Dank der Vorbereitung für …"
+    },
+    {
+      "title": "dogeum (Park) - Hugging Face",
+      "url": "https://huggingface.co/dogeum/datasets",
+      "snippet": "Sort: Recently updated. dogeum/eval_record_test_5000. Viewer • Updated 2 days ago • 1.68k • 25. dogeum/eval_so101_05212"
+    },
+    {
+      "title": "Der neue Škoda Epiq",
+      "url": "https://www.skoda-auto.de/promotions/promotion-detail/epiq",
+      "snippet": "May 18, 2026 · Genau wie der neue, 100 % elektrische Škoda Epiq – unser erster City-SUV-Crossover. Kompakt, vielseitig und …"
+    }
+  ]
+}

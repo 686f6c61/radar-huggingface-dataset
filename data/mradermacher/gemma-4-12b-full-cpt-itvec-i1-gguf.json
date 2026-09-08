@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-12b-full-cpt-itvec-i1-GGUF",
+  "slug": "mradermacher-gemma-4-12b-full-cpt-itvec-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-12b-full-cpt-itvec-i1-GGUF",
+  "created_at": "2026-09-08T11:43:00.000Z",
+  "updated_at": "2026-09-08T11:44:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 4837611456,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adrenaline - Fonte de informação sobre Tecnologia e Jogos",
+      "url": "https://www.adrenaline.com.br/",
+      "snippet": "Fonte de informação sobre Tecnologia e Jogos, com notícias e análises de eletrônicos de consumo, gadgets, hardwares para …"
+    },
+    {
+      "title": "mradermacher/Gemma-4-12B-it-Jbliterated-v2-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Gemma-4-12B-it-Jbliterated-v2-i1-GGUF",
+      "snippet": "For a convenient overview and download list, visit our model page for this model. static quants are available at https://huggingface.co/mradermacher/Gemma-4-12B-it-Jbliterated-v2-GGUF This is a vision model - mmproj files (if any) will be in the static repository."
+    },
+    {
+      "title": "Fórum Adrenaline - Um dos maiores e mais ativos fóruns do Brasil",
+      "url": "https://forum.adrenaline.com.br/",
+      "snippet": "Aug 17, 2026 · Um dos maiores Fórum do Brasil com discussões sobre hardwares, games, tecnologia, promoções na internet entre …"
+    },
+    {
+      "title": "mradermacher/gemma-4-12b-marvin-v2-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-12b-marvin-v2-i1-GGUF",
+      "snippet": "mradermacher / gemma-4-12b-marvin-v2-i1-GGUF like 0 Transformers GGUF English imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Artigos - Adrenaline",
+      "url": "https://www.adrenaline.com.br/artigos/",
+      "snippet": "Encontre todos os nossos artigos produzidos no site, abordando temas que vão de hardware, passando por tecnologia e jogos."
+    }
+  ]
+}

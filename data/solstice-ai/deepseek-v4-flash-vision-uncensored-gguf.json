@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/DeepSeek-V4-Flash-Vision-UNCENSORED-GGUF",
+  "slug": "solstice-ai-deepseek-v4-flash-vision-uncensored-gguf",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-UNCENSORED-GGUF",
+  "created_at": "2026-09-08T01:31:31.000Z",
+  "updated_at": "2026-09-08T01:31:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "solstice-ai",
+    "deepseek",
+    "deepseek-v4",
+    "llama.cpp",
+    "ollama",
+    "vision",
+    "multimodal",
+    "mmproj",
+    "dspark",
+    "speculative-decoding",
+    "uncensored",
+    "abliterated",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:apetersson/DeepSeek-V4-Flash-Vision-Exp-Abliterated",
+    "base_model:quantized:apetersson/DeepSeek-V4-Flash-Vision-Exp-Abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Solstice",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Solstice 92 languesAjouter un sujet"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Solstice - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Solstice",
+      "snippet": "additional terms may apply. By using this site, you agree to the Terms of Useand Privacy Policy. Wikipedia® is a registered …"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We are excited to introduce DeepSeek-V4-Flash-Vision-Exp, our first experimental multimodal model in the DeepSeek-V4 family. It builds on the DeepSeek-V4-Flash architecture by incorporating visual modules and undergoing continued training to unlock visual understanding capabilities."
+    },
+    {
+      "title": "Date des équinoxes et des solstices pour 2026 et à venir",
+      "url": "https://icalendrier.fr/outils/equinoxes-solstices",
+      "snippet": "Mar 20, 2026 · Le solstice d'été représente la journée la plus longue, et le solstice d'hiver la plus courte. Les images ci-dessous …"
+    }
+  ]
+}

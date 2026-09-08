@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-combined-gs32-4cam-chunk60",
+  "slug": "kaz55-act-combined-gs32-4cam-chunk60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-combined-gs32-4cam-chunk60",
+  "created_at": "2026-09-08T01:33:25.000Z",
+  "updated_at": "2026-09-08T01:33:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dg5f",
+    "ur5e",
+    "gelsight",
+    "ablation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206729576,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kettlebell - Push Press vs Clean and Jerk | The Forum",
+      "url": "https://www.strongfirst.com/community/threads/push-press-vs-clean-and-jerk.17137/",
+      "snippet": "Jul 8, 2020 · Having tried both, with a light(16kg)Bell, I can see that Clean and Jerk is definitely the more technical Lift. You have to …"
+    },
+    {
+      "title": "Kaz55/act-combined-gs32-4cam-chunk60 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-combined-gs32-4cam-chunk60",
+      "snippet": "Instructions to use Kaz55/act-combined-gs32-4cam-chunk60 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "All Models - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models",
+      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+    },
+    {
+      "title": "Acti IP Camera URLs - 254 Models, RTSP, HTTP | Agent DVR",
+      "url": "https://www.ispyconnect.com/camera/acti",
+      "snippet": "Connect Acti IP cameras to Agent DVR. 254 supported models with RTSP, HTTP, HTTPS URLs. ONVIF auto-discovery supported. Free for local use on Windows, macOS, Linux, Docker & Raspberry Pi."
+    },
+    {
+      "title": "The Underestimated Value of the Push Press in Kettlebell Training",
+      "url": "https://www.strongfirst.com/community/threads/the-underestimated-value-of-the-push-press-in-kettlebell-training.24198/",
+      "snippet": "May 15, 2023 · Hi everyone, I've been immersing myself in various Kettlebell training videos lately, and for the past two days, I've …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/ClimEmu-S2L",
+  "slug": "onescience-group-climemu-s2l",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/ClimEmu-S2L",
+  "created_at": "2026-09-08T09:14:14.000Z",
+  "updated_at": "2026-09-08T09:14:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "climemu_s2l",
+    "OneScience",
+    "Earth Science",
+    "Climate Prediction",
+    "Regression",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "Artificial intelligence for methane detection: from continuous ...",
+      "url": "https://arxiv.org/html/2511.21777v2",
+      "snippet": "Here we present MARS-S2L (the Methane Alert and Response System - Sentinel 2 and Landsat), the first large scale, operational methane emission monitoring model for Sentinel-2 and Landsat imagery. MARS-S2L is a machine learning model which automatically detects plumes in multispectral imagery."
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする ...",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "制限付きモードは、YouTube で使用できるオプション設定です。この機能は、ご自身が視聴したくない、またはデバイスを使用す …"
+    },
+    {
+      "title": "OneScience-Group/ESM · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/ESM",
+      "snippet": "Model Introduction ESM (Evolutionary Scale Modeling) is a family of protein language models released by Meta AI / FAIR. It can be used for protein representation extraction, structure prediction, variant effect scoring, and fixed-backbone sequence design. Paper: Evolutionary-scale prediction of atomic-level protein structure with a language model"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的 ...",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

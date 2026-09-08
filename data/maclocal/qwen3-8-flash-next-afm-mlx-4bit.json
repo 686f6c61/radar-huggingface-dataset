@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "maclocal/Qwen3.8-Flash-Next-AFM-MLX-4bit",
+  "slug": "maclocal-qwen3-8-flash-next-afm-mlx-4bit",
+  "author": "maclocal",
+  "url": "https://huggingface.co/maclocal/Qwen3.8-Flash-Next-AFM-MLX-4bit",
+  "created_at": "2026-09-08T01:16:58.000Z",
+  "updated_at": "2026-09-08T01:16:59.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "afm",
+    "qwen",
+    "vision-language",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 129435434899,
+  "parameters_human": "129.44B",
+  "storage_bytes": 105436133516,
+  "storage_human": "105.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to GOG.com | best PC games DRM-free",
+      "url": "https://www.gog.com/",
+      "snippet": "Download the best classic and new games on Windows, Mac & Linux. A vast selection of titles, DRM-free, with free goodies and 30 …"
+    },
+    {
+      "title": "Tamriel Rebuilt | GOG.com",
+      "url": "https://www.gog.com/en/game/tamriel_rebuilt",
+      "snippet": "Aug 24, 2026 · GOG.com is a digital distribution platform – an online store with a curated selection of games, an optional gaming …"
+    },
+    {
+      "title": "Heroes of Might and Magic® 3: Complete 50% off | GOG.COM",
+      "url": "https://www.gog.com/en/game/heroes_of_might_and_magic_3_complete_edition",
+      "snippet": "GOG gives you the option to download a fully offline installer and install Heroes of Might and Magic® 3: Complete that way, without …"
+    },
+    {
+      "title": "Star Trek™: Armada 25% off | GOG.COM",
+      "url": "https://www.gog.com/en/game/star_trek_armada",
+      "snippet": "GOG.com is a digital distribution platform – an online store with a curated selection of games, an optional gaming client giving you …"
+    },
+    {
+      "title": "OpenMW - GOG.com",
+      "url": "https://www.gog.com/en/game/openmw",
+      "snippet": "Aug 24, 2026 · GOG.com is a digital distribution platform – an online store with a curated selection of games, an optional gaming …"
+    }
+  ]
+}

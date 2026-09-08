@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "madhukardevarasetti/bert-finetuned-imdb",
+  "slug": "madhukardevarasetti-bert-finetuned-imdb",
+  "author": "madhukardevarasetti",
+  "url": "https://huggingface.co/madhukardevarasetti/bert-finetuned-imdb",
+  "created_at": "2026-09-08T01:17:24.000Z",
+  "updated_at": "2026-09-08T01:17:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437963825,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aide juridictionnelle : barème 2026 - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/justice/guide-justice/2257-aide-juridictionnelle-bareme/",
+      "snippet": "Jan 22, 2026 · L'aide juridictionnelle gratuite peut aider à financer ses frais de justice sous condition de plafonds de ressources et de …"
+    },
+    {
+      "title": "madhukardevarasetti/bert-finetuned-imdb · Hugging Face",
+      "url": "https://huggingface.co/madhukardevarasetti/bert-finetuned-imdb",
+      "snippet": "Instructions to use madhukardevarasetti/bert-finetuned-imdb with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Seuils de majorité en AGO-AGE de société : décisions, votes",
+      "url": "https://droit-finances.commentcamarche.com/entreprise/guide-entreprise/1899-seuils-de-majorite-en-ago-age-de-societe-decisions-votes/",
+      "snippet": "Sep 8, 2021 · La loi impose des conditions de majorité pour toute décision d'assemblée générale de société, AGO ou AGE. Ces …"
+    },
+    {
+      "title": "madhukardevarasetti/my-bert-imdb2 · Hugging Face",
+      "url": "https://huggingface.co/madhukardevarasetti/my-bert-imdb2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "## Blogs - allofthisisversaille.forumactif.org",
+      "url": "https://allofthisisversaille.forumactif.org/f26-blogs",
+      "snippet": "Venez découvrir la monarchie moderne de Versaille, ici amour, sexe, trahisons, tout reigne en maitre !"
+    }
+  ]
+}

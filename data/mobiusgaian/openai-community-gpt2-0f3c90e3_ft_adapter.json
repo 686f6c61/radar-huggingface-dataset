@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MobiusGaian/openai-community-gpt2-0f3c90e3_FT_adapter",
+  "slug": "mobiusgaian-openai-community-gpt2-0f3c90e3_ft_adapter",
+  "author": "MobiusGaian",
+  "url": "https://huggingface.co/MobiusGaian/openai-community-gpt2-0f3c90e3_FT_adapter",
+  "created_at": "2026-09-08T09:46:21.000Z",
+  "updated_at": "2026-09-08T09:46:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:openai-community/gpt2",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:openai-community/gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3253104,
+  "storage_human": "3 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inloggen bij Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Als je Gmail wilt openen, kun je inloggen vanaf een computer of je account toevoegen aan de Gmail-app op je telefoon of tablet. …"
+    },
+    {
+      "title": "MobiusGaian/openai-community-gpt2-43775f53_FT_adapter · Hugging Face",
+      "url": "https://huggingface.co/MobiusGaian/openai-community-gpt2-43775f53_FT_adapter",
+      "snippet": "Instructions to use MobiusGaian/openai-community-gpt2-43775f53_FT_adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get ..."
+    },
+    {
+      "title": "Kirjautuminen Gmailiin - Tietokone - Gmail Ohjeet",
+      "url": "https://support.google.com/mail/answer/8494?hl=fi&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sisäänkirjautuminen Avaa Gmailtietokoneella. Lisää Google-tilisi sähköpostiosoite tai puhelinnumero ja salasana. Jos tiedot on jo …"
+    },
+    {
+      "title": "MobiusGaian/gpt2_FT_adapter · Hugging Face",
+      "url": "https://huggingface.co/MobiusGaian/gpt2_FT_adapter",
+      "snippet": "MobiusGaian / gpt2_FT_adapter like 0 Text Generation PEFT Safetensors Transformers lora arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gmail-berichten openen via Outlook - Google Workspace …",
+      "url": "https://support.google.com/a/users/answer/153962?hl=nl",
+      "snippet": "Google Workspace Sync for Microsoft OutlookMet Google Workspace Sync for Microsoft Outlook (GWSMO) kunt u uw e-mails van …"
+    }
+  ]
+}

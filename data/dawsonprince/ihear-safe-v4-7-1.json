@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DawsonPrince/iHear-SAFE-v4.7.1",
+  "slug": "dawsonprince-ihear-safe-v4-7-1",
+  "author": "DawsonPrince",
+  "url": "https://huggingface.co/DawsonPrince/iHear-SAFE-v4.7.1",
+  "created_at": "2026-09-08T09:07:42.000Z",
+  "updated_at": "2026-09-08T09:08:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "audio",
+    "audio-classification",
+    "speech-enhancement",
+    "embedded-ai",
+    "esp32",
+    "hearing-assistance",
+    "safety-sound-detection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158512,
+  "storage_human": "158512 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rispen-Hortensie 'Pink Diamond' / Hydrangea paniculata 'Pink Diamond'",
+      "url": "https://www.naturadb.de/pflanzen/hydrangea-paniculata-pink-diamond/",
+      "snippet": "May 5, 2023 · Hydrangea paniculata 'Pink Diamond' ist kübelgeeignet und kann somit auf dem Balkon oder einer Terrasse gehalten …"
+    },
+    {
+      "title": "DawsonPrince (Tetteh Dawson Prince) - Hugging Face",
+      "url": "https://huggingface.co/DawsonPrince",
+      "snippet": "iHear - Ghanaian Speech Enhancement 👂 Enhance noisy speech using various models DawsonPrince Dec 4, 2025"
+    },
+    {
+      "title": "Rispen-Hortensie 'Pink Diamond' - Hydrangea paniculata 'Pink Diamond'",
+      "url": "https://www.baumschule-newgarden.de/6365/rispen-hortensie-pink-diamond/hydrangea-paniculata-pink-diamond",
+      "snippet": "Nov 17, 2024 · Sie gedeiht an sonnigen bis halbschattigen Standorten auf humosen, durchlässigen Böden und ist winterhart bis -28,8 …"
+    },
+    {
+      "title": "‪Prince Dawson Tetteh‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=LJSIhcYAAAAJ&hl=en",
+      "snippet": "‪Research Assistant at the Responsible AI Lab, Kwame Nkrumah University of Science and Technology‬ - ‪‪Cited by 6‬‬"
+    },
+    {
+      "title": "Pflanzen für dich Rispenhortensie Pink Diamond winterhart 40-60",
+      "url": "https://www.obi.de/p/2191118537026/hydrangea-paniculata-rispenhortensie-pink-diamond-40-60-cm?msockid=209aa6f5813f62131c71b13b80c36387",
+      "snippet": "Am besten gedeiht die Rispenhortensie an einem sonnigen bis halbschattigen Standort in humoser, gleichmäßig frischer bis feuchter, …"
+    }
+  ]
+}

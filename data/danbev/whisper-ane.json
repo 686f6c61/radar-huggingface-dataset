@@ -9,12 +9,12 @@
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "aneforge",
   "languages": [],
   "tags": [
+    "aneforge",
     "whisper",
     "ane",
-    "aneforge",
     "asr",
     "license:mit",
     "region:us"

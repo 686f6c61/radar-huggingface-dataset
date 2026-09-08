@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "DigitalByte/LTX-2.5-Exploded-View-XPLDV",
+  "slug": "digitalbyte-ltx-2-5-exploded-view-xpldv",
+  "author": "DigitalByte",
+  "url": "https://huggingface.co/DigitalByte/LTX-2.5-Exploded-View-XPLDV",
+  "created_at": "2026-09-08T09:36:18.000Z",
+  "updated_at": "2026-09-08T09:36:29.000Z",
+  "license": "ltx-2.x-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ltx-2.5",
+    "ltx-video",
+    "lora",
+    "image-to-video",
+    "video-generation",
+    "comfyui",
+    "exploded-view",
+    "xpldv",
+    "en",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:adapter:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 465349697,
+  "storage_human": "465 MB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mail Orange: découvrez la messagerie et accédez à vos mails",
+      "url": "https://messagerie.orange.fr/",
+      "snippet": "Découvrez toutes les fonctionnalités du Mail Orange et communiquez facilement avec tous vos proches depuis votre PC/Mac, …"
+    },
+    {
+      "title": "LTX-2.5 | LTX Documentation",
+      "url": "https://docs.ltx.io/models/ltx-2-5",
+      "snippet": "LTX-2.5 supports text-to-video, image-to-video, and audio-to-video in portrait and landscape — ltx-2-5-fast and ltx-2-5-pro up to 4K."
+    },
+    {
+      "title": "Messagerie Pro Orange: découvrez la messagerie et accédez à vos mails",
+      "url": "https://messagerie.orange.fr/pro/decouverte/",
+      "snippet": "La messagerie pro Orange vous offre un ensemble de services pour communiquer facilement en toute sécurité : mail, contacts, boite …"
+    },
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "Talk to a Commercial Licensing Expert LTX-2.5is an open world model with open weights, built for local execution and fine-tuning. Its established use is generating synchronized, high-fidelity video and audio from text, image, and video inputs; applicability to emerging domains such as robotics and physical AI is developing."
+    },
+    {
+      "title": "Messagerie Orange",
+      "url": "https://messagerie.orange.fr/app-ads.txt",
+      "snippet": "# Application ORANGE MAIL # App-ads.txt file for messagerie.orange.fr # Last Update 24/08/2026 (adding ownerdomain)"
+    }
+  ]
+}

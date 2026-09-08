@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "maclocal/GLM-5.3-Flash-AFM-MLX-4bit",
+  "slug": "maclocal-glm-5-3-flash-afm-mlx-4bit",
+  "author": "maclocal",
+  "url": "https://huggingface.co/maclocal/GLM-5.3-Flash-AFM-MLX-4bit",
+  "created_at": "2026-09-08T01:16:59.000Z",
+  "updated_at": "2026-09-08T01:17:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "afm",
+    "afmkit",
+    "4-bit",
+    "mtp",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 181714328882,
+  "storage_human": "181.7 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nocache - npm",
+      "url": "https://www.npmjs.com/package/nocache",
+      "snippet": "Middleware to destroy caching. Latest version: 4.0.0, last published: 3 years ago. Start using nocache in your project by running `npm …"
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally: GGUF, Hardware and Benchmarks ...",
+      "url": "https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in Z.ai's GLM-5 series, and the first one that's realistic to run locally: it has 320B total parameters and 18B active per token. This guide covers what the model is, how it performs in the benchmarks, how much memory you'll need to run it, and what your options are for running it today ..."
+    },
+    {
+      "title": "GitHub - Feh/nocache: minimize caching effects",
+      "url": "https://github.com/Feh/nocache",
+      "snippet": "minimize caching effects. Contribute to Feh/nocache development by creating an account on GitHub."
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally (2026 Guide) - codersera.com",
+      "url": "https://codersera.com/blog/how-to-run-glm-5-3-flash-locally-2026/",
+      "snippet": "Z.ai published the GLM-5.3-Flash weightson Hugging Face on 25 August 2026 under an MIT licence — the model that had been serving anonymously as \"Ox Alpha\" on OpenRouter. The headline spec is 320B total parameters with 18B active, and that second number is why people immediately asked whether they could host it themselves."
+    },
+    {
+      "title": "regex - Adding ?nocache=1 to every url (including the assets like ...",
+      "url": "https://stackoverflow.com/questions/38333569/adding-nocache-1-to-every-url-including-the-assets-like-stylesheet-behind-the",
+      "snippet": "Jul 12, 2016 · But what I would like to do is to apply ?nocache=1 to every URL related to the site (including the assets like style.css) …"
+    }
+  ]
+}

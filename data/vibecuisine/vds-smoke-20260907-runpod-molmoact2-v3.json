@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VibeCuisine/vds-smoke-20260907-runpod-molmoact2-v3",
+  "slug": "vibecuisine-vds-smoke-20260907-runpod-molmoact2-v3",
+  "author": "VibeCuisine",
+  "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260907-runpod-molmoact2-v3",
+  "created_at": "2026-09-08T01:20:47.000Z",
+  "updated_at": "2026-09-08T01:28:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "molmoact2",
+    "dataset:VibeCuisine/vibepi3-grab-poseexpert-r3-curated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 5591928368,
+  "parameters_human": "5.59B",
+  "storage_bytes": 11483652496,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft 365 | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoft365",
+      "snippet": "Welcome to the Microsoft 365 community! Your place to get the latest news, participate in live events, share best..."
+    },
+    {
+      "title": "VibeCuisine/vds-smoke-20260907-runpod-molmoact2-naaseh1 · Hugging Face",
+      "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260907-runpod-molmoact2-naaseh1",
+      "snippet": "MolmoAct2is an open robotics foundation model from the Allen Institute for AI (Ai2) that maps camera images and language instructions to robot action chunks. The LeRobot implementation supports training and evaluation of the regular MolmoAct2 model."
+    },
+    {
+      "title": "Microsoft 365 Login Issues? Expert Help & Troubleshooting Guide",
+      "url": "https://www.justanswer.com/microsoft-office/uhg8m-microsoft-365-login-prompt-windows.html?msockid=2773ef28e8296166256bf8e6e95d6098",
+      "snippet": "Microsoft 365 Login Prompt Issue on Windows PC Explained Frequent login prompts and email sync failures disrupt workflow in …"
+    },
+    {
+      "title": "VibeCuisine/vds-smoke-20260907-runpod-molmoact2-v3-quantiles - Hugging Face",
+      "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260907-runpod-molmoact2-v3-quantiles",
+      "snippet": "MolmoAct2is an open robotics foundation model from the Allen Institute for AI (Ai2) that maps camera images and language instructions to robot action chunks. The LeRobot implementation supports training and evaluation of the regular MolmoAct2 model."
+    },
+    {
+      "title": "Office 365 Login Issues? Expert Help for Expired Subscription",
+      "url": "https://www.justanswer.com/microsoft-office/uplxa-office-365-login-expired-auto-renewal.html?msockid=2773ef28e8296166256bf8e6e95d6098",
+      "snippet": "Cant log in to office 365,,,, says expired i have my auto renewal receipt. Tried logging in for the first time today."
+    }
+  ]
+}

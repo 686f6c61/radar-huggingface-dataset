@@ -5,7 +5,7 @@
   "author": "bezzam",
   "url": "https://huggingface.co/bezzam/Fun-ASR-Nano-2512-hf",
   "created_at": "2026-07-28T14:50:44.000Z",
-  "updated_at": "2026-09-04T15:59:04.000Z",
+  "updated_at": "2026-09-07T12:46:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1593,
+  "downloads_30d": 1601,
   "trending_score": 0,
   "parameters": 829791840,
   "parameters_human": "829.8M",
-  "storage_bytes": 14949430226,
-  "storage_human": "14.9 GB",
+  "storage_bytes": 16609203546,
+  "storage_human": "16.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

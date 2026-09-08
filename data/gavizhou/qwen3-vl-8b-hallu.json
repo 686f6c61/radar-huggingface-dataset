@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "GaviZhou/qwen3-vl-8b-hallu",
+  "slug": "gavizhou-qwen3-vl-8b-hallu",
+  "author": "GaviZhou",
+  "url": "https://huggingface.co/GaviZhou/qwen3-vl-8b-hallu",
+  "created_at": "2026-09-08T11:21:55.000Z",
+  "updated_at": "2026-09-08T11:23:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "qwen3-vl",
+    "vision-language",
+    "full-finetune",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 770288,
+  "parameters_human": "770288",
+  "storage_bytes": 17545762142,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "金色的CMYK值是多少？_百度知道",
+      "url": "https://zhidao.baidu.com/question/1957601297474304740.html",
+      "snippet": "金色的CMYK值是多少？金是专色，不是CMYK合成的，用CMYK只能是最接近金色的颜色。金色：C 5；Y 15-20；M 65-75；K 0专色 …"
+    },
+    {
+      "title": "GaviZhou/qwen3-vl-8b-i2c-hallu-v6-32k · Hugging Face",
+      "url": "https://huggingface.co/GaviZhou/qwen3-vl-8b-i2c-hallu-v6-32k",
+      "snippet": "GaviZhou / qwen3-vl-8b-i2c-hallu-v6-32k like 0 Image-Text-to-Text Transformers Safetensors qwen3_vl qwen3-vl vision-language code-analysis structured-output supervised-fine-tuning conversational arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "日均PV 日均UV详细讲解一下_百度知道",
+      "url": "https://zhidao.baidu.com/question/63194062.html",
+      "snippet": "比如你是ADSL拨号上网的，你拨一次号都自动分配一个ip，这样你进入了本站，那就算一个ip，当你断线了而没清理cookies，之后又 …"
+    },
+    {
+      "title": "Qwen/Qwen3-VL-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use Qwen/Qwen3-VL-8B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Qwen/Qwen3-VL-8B-Instruct with Transformers:"
+    },
+    {
+      "title": "word带格式整页复制单独一页-百度经验",
+      "url": "https://jingyan.baidu.com/article/0eb457e5d1b88a42f0a90522.html",
+      "snippet": "Sep 2, 2022 · word带格式整页复制单独一页,需要使用“选中标题和内容”功能复制单独的一页，Widow和Mac的方法一致，需要5个步骤 …"
+    }
+  ]
+}

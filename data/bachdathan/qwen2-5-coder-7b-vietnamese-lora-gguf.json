@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/Qwen2.5-Coder-7B-Vietnamese-LoRA-GGUF",
+  "slug": "bachdathan-qwen2-5-coder-7b-vietnamese-lora-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/Qwen2.5-Coder-7B-Vietnamese-LoRA-GGUF",
+  "created_at": "2026-09-08T11:28:41.000Z",
+  "updated_at": "2026-09-08T11:29:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:khoin68/Qwen2.5-Coder-7B-Vietnamese-LoRA",
+    "base_model:quantized:khoin68/Qwen2.5-Coder-7B-Vietnamese-LoRA",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 16441601792,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct, khoin68/Qwen2.5-Coder-7B-Vietnamese-LoRA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-GGUF · Hugging Face",
+      "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-GGUF",
+      "snippet": "👑 Qwen2.5-Coder-7B-VN-Master-Polymath (FINAL GGUF Edition) Siêu mô hình AI tiếng Việt \"Văn Võ Song Toàn\" toàn năng: Kỹ sư Lập trình Senior, ReAct Agent, Bách Khoa Toàn Thư & Thi Sĩ."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Need to download the package to install across your organization?"
+    },
+    {
+      "title": "khoin68/Qwen2.5-Coder-7B-Vietnamese-GGUF · Hugging Face",
+      "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-GGUF",
+      "snippet": "Instructions to use khoin68/Qwen2.5-Coder-7B-Vietnamese-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use khoin68/Qwen2.5-Coder-7B-Vietnamese-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA …"
+    }
+  ]
+}

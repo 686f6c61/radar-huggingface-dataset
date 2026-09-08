@@ -5,7 +5,7 @@
   "author": "thomasavare",
   "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-8B-211-vllm",
   "created_at": "2026-07-27T13:00:57.000Z",
-  "updated_at": "2026-09-07T07:50:03.000Z",
+  "updated_at": "2026-09-07T13:50:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,10 +20,10 @@
   "likes": 0,
   "downloads_30d": 23,
   "trending_score": 0,
-  "parameters": 2499705,
-  "parameters_human": "2.5M",
-  "storage_bytes": 56274696,
-  "storage_human": "56 MB",
+  "parameters": 2429459,
+  "parameters_human": "2.4M",
+  "storage_bytes": 119528562,
+  "storage_human": "120 MB",
   "base_model": null,
   "formats": [
     "safetensors"

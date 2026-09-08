@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Shiftedx/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-MLX-MIXED-VISION-MTPLX",
+  "slug": "shiftedx-qwen3-8-27b-aeon-ultimate-uncensored-mlx-mixed-vision-mtplx",
+  "author": "Shiftedx",
+  "url": "https://huggingface.co/Shiftedx/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-MLX-MIXED-VISION-MTPLX",
+  "created_at": "2026-09-08T02:01:17.000Z",
+  "updated_at": "2026-09-08T02:01:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mtplx",
+    "qwen3.8",
+    "mixed-precision",
+    "affine-quantization",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "vision",
+    "tool-calling",
+    "reasoning",
+    "uncensored",
+    "apple-silicon",
+    "early-access",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "base_model:quantized:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 23841721159,
+  "storage_human": "23.8 GB",
+  "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "官方通报杭州酒局事件，赵某峰、郁某栋已被刑拘，二人对被害人实施 …",
+      "url": "https://www.zhihu.com/question/2073089501455504915",
+      "snippet": "Aug 18, 2026 · 反过来说，如果你能把区领导约出来去二场，那说明你的ZF关系这一块儿已经接近满分了——这个领导相当信任你。 …"
+    },
+    {
+      "title": "Shiftedx/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-MLX-MIXED-VISION-MTPLX ...",
+      "url": "https://huggingface.co/Shiftedx/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-MLX-MIXED-VISION-MTPLX",
+      "snippet": "Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-MLX-MIXED The Apple Silicon seat in the AEON ULTIMATE UNCENSORED family. A mixed-precision MLX conversion of AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16, packaging the quantized language model, an untouched BF16 vision tower, the tokenizer and tool template, and the native BF16 multi-token-prediction head in one MTPLX-ready repository. This is an ..."
+    },
+    {
+      "title": "脸上一直长痣是怎么回事？ - 知乎",
+      "url": "https://www.zhihu.com/question/35421172",
+      "snippet": "3.不要扣闭口 这是我个人经验，连续两次闭口转内痣。 这三点，一个是控制黑色的摄入，一个是防止紫外线把黑色素逼入皮肤，最后 …"
+    },
+    {
+      "title": "qwen3.8-27b-aeon-ultimate-uncensored-mxfp8-vision-mtplx",
+      "url": "https://huggingface.co/Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp8-vision-mtplx",
+      "snippet": "Instructions to use Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp8-vision-mtplx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "如何有效的去掉黑眼圈？ - 知乎",
+      "url": "https://www.zhihu.com/question/306428207",
+      "snippet": "2、借助皮肤测量仪器皮肤测量仪器可以让我们更加直观准确的了解我们黑眼圈的类型。 比如下图人脸分别在交叉偏正光和UV模式下 …"
+    }
+  ]
+}

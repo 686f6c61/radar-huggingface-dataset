@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "0xSero/GLM-5.3-500B-EXL3-3.0bpw",
+  "slug": "0xsero-glm-5-3-500b-exl3-3-0bpw",
+  "author": "0xSero",
+  "url": "https://huggingface.co/0xSero/GLM-5.3-500B-EXL3-3.0bpw",
+  "created_at": "2026-09-07T09:18:36.000Z",
+  "updated_at": "2026-09-07T19:32:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "glm",
+    "glm-5.3",
+    "moe",
+    "exl3",
+    "reap",
+    "expert-pruning",
+    "text-generation",
+    "conversational",
+    "arxiv:2510.13999",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 405,
+  "trending_score": 8,
+  "parameters": 98508689504,
+  "parameters_human": "98.51B",
+  "storage_bytes": 197114971683,
+  "storage_human": "197.1 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "פורום סקופים וחדשות",
+      "url": "https://rotter.net/scoopscache.html",
+      "snippet": "סקופים מנהלים:ET,יMaya,יXeneize,יArrow,יאסטריקס ושות',ימייקל דה סנטה,יאלעדי,יBoomBoX,יעופרי,יBshik,יavi-ran ..."
+    },
+    {
+      "title": "0xSero/GLM-5.3-500B-EXL3-3.0bpw · Hugging Face",
+      "url": "https://huggingface.co/0xSero/GLM-5.3-500B-EXL3-3.0bpw",
+      "snippet": "GLM-5.3-500B — REAP keep-168 (EXL3 3.0bpw) A 34%-expert-pruned GLM-5.3(168/256 routed experts per layer, ~500B params), quantized to EXL3 3.0 bpwfor 197 GB on disk. Pruned with a domain-protective max-over-domain saliency criterion that keeps each domain's specialist experts."
+    },
+    {
+      "title": "סקופים וחדשות - רוטר.נט",
+      "url": "https://rotter.net/forum/listforum.php",
+      "snippet": "23:54 5.09.26 דיווח מיוחד שגריר ארה״ב בישראל: ״יהודה ושומרון״ הם המונחים המקראיים העתיקים של הארץ, ״הגדה המערבית״ הוא מונח מעורפל. …"
+    },
+    {
+      "title": "0xSero/GLM-5.3-500B-EXL3-3.0bpw at main - Hugging Face",
+      "url": "https://huggingface.co/0xSero/GLM-5.3-500B-EXL3-3.0bpw/tree/main",
+      "snippet": "Ctrl+K 1 contributor History:5 commits 0xSero Rewrite card: plain-English explanation, size-picker table, KL explained bada39fverifiedabout 4 hours ago .gitattributes"
+    },
+    {
+      "title": "מבזקי חדשות היום, מבזקים בזמן אמת [און ...",
+      "url": "https://rotter.net/news/news.php",
+      "snippet": "05:52שגריר ארה״ב בישראל: ״יהודה ושומרון״ הם המונחים המקראיים העתיקים של הארץ, ״הגדה המערבית״ הוא מונח מעורפל. 04:26מגיש ערוץ 14 …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/svd-linear-attention-roberta-come",
+  "slug": "hooshaai-svd-linear-attention-roberta-come",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/svd-linear-attention-roberta-come",
+  "created_at": "2026-09-08T01:51:08.000Z",
+  "updated_at": "2026-09-08T01:56:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "svd-linear-attention",
+    "pytorch",
+    "efficient-attention",
+    "compression",
+    "roberta",
+    "come",
+    "text-classification",
+    "en",
+    "dataset:glue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9579622,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn Schweiz: Einloggen oder anmelden",
+      "url": "https://ch.linkedin.com/",
+      "snippet": "1 Mrd. Mitglieder | Die Plattform für Ihre berufliche Identität. Bauen Sie Ihr berufliches Netzwerk auf und bleiben Sie informiert. Finden …"
+    },
+    {
+      "title": "Scaling Transformers: How Linear Attention is Reshaping Cross-Task AI",
+      "url": "https://hooshaai.substack.com/p/scaling-transformers-how-linear-attention",
+      "snippet": "WarpRec — an industrial-scale framework unifying academic linear-attention recommenders with distributed, cluster-level training, and building in Model Context Protocol server interfaces to make recommenders queryable, interactive agents rather than static ranking engines."
+    },
+    {
+      "title": "LinkedIn: inicio de sesión o registro",
+      "url": "https://es.linkedin.com/",
+      "snippet": "1 mil millones de miembros | Gestiona tu identidad profesional. Amplía e interactúa con tu red profesional. Accede a conocimientos, …"
+    },
+    {
+      "title": "The Rise of Linear Attention in Bidirectional Modeling and Long-Term ...",
+      "url": "https://hooshaai.substack.com/p/the-rise-of-linear-attention-in-bidirectional",
+      "snippet": "The takeaway: unlike prior linear approximations that traded away learning quality to hit linear complexity, LinRec’s careful reconstruction of the attention conditions — reordering, dual normalization, and non-linearity — preserves the mathematical properties that made dot-product attention effective, while still running in linear time."
+    },
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    }
+  ]
+}
