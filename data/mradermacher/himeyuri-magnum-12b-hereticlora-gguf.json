@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Himeyuri-Magnum-12B-HereticLoRA-GGUF",
+  "slug": "mradermacher-himeyuri-magnum-12b-hereticlora-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Himeyuri-Magnum-12B-HereticLoRA-GGUF",
+  "created_at": "2026-09-08T13:15:13.000Z",
+  "updated_at": "2026-09-08T13:15:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mannenzaal Amersfoort | Historisch gasthuis & museum",
+      "url": "https://mannenzaal.nl/",
+      "snippet": "Ontdek hoe de oude mannen hier hun dagen doorbrachten. Verhalen komen tot leven. De Mannenzaal, gebouwd in 1536 is …"
+    },
+    {
+      "title": "mradermacher/Himeyuri-Magnum-12B-HereticMerge-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Himeyuri-Magnum-12B-HereticMerge-GGUF",
+      "snippet": "mradermacher / Himeyuri-Magnum-12B-HereticMerge-GGUF like 1 Transformers GGUF English Japanese mergekit Merge chatml conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mannenzaal en Kapel - St. Pieters en Bloklands Gasthuis",
+      "url": "https://pietersenbloklands.nl/mannenzaal/",
+      "snippet": "De Mannenzaal is een uniek historisch monument in Amersfoort, met 22 originele bedstedes en een sfeervolle kapel uit 1390. Dit …"
+    },
+    {
+      "title": "mradermacher/Himeyuri-Magnum-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Himeyuri-Magnum-12B-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Mannenzaal - Levende Historie",
+      "url": "https://levendehistorie.nl/mannenzaal/",
+      "snippet": "De Mannenzaal van het St. Pieters en Bloklandsgasthuis is de enige gasthuiszaal in Europa met een authentiek interieur. Het …"
+    }
+  ]
+}

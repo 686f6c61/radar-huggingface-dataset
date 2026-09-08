@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ThiagoFerr/cross-modal-fusion-v2",
+  "slug": "thiagoferr-cross-modal-fusion-v2",
+  "author": "ThiagoFerr",
+  "url": "https://huggingface.co/ThiagoFerr/cross-modal-fusion-v2",
+  "created_at": "2026-09-08T13:18:31.000Z",
+  "updated_at": "2026-09-08T13:18:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cul'eau | Restaurant Aalst | Culibag | Reserveer je tafel",
+      "url": "https://www.culeau.be/",
+      "snippet": "Cul’eau biedt net dat tikkeltje meer! Stijlvol kader, lekkere keuken, groot terras en correcte bediening. Reserveer nu of bestel uw …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "De kaart | Cul'eau | Restaurant Aalst | Reserveer nu",
+      "url": "https://www.culeau.be/de-kaart/",
+      "snippet": "Cul’eau biedt net dat tikkeltje meer! Stijlvol kader, lekkere keuken, groot terras en correcte bediening. Reserveer nu of bestel uw …"
+    },
+    {
+      "title": "Design of cross-modal fusion algorithm for Tesla's autonomous driving ...",
+      "url": "https://dl.acm.org/doi/10.1145/3766918.3766965",
+      "snippet": "In the future, Tesla's cross-modal fusion algorithm for autonomous driving will be optimized from many aspects: compressing the model to within 10M through knowledge distillation and model pruning to adapt to the next-generation platform, developing an online calibration algorithm to solve the sensor offset problem; integrating infrared sensors ..."
+    },
+    {
+      "title": "Contacteer Cul'eau | Restaurant Aalst | Reserveer of bestel nu",
+      "url": "https://www.culeau.be/contact/",
+      "snippet": "Private dining met open keuken voor een zakelijke ontmoeting of privé bijeenkomst? Contacteer L’Etage by Cul’eau in Aalst voor een …"
+    }
+  ]
+}

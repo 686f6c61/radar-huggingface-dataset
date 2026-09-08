@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nathanles/RustyBender-GGUF",
+  "slug": "nathanles-rustybender-gguf",
+  "author": "nathanles",
+  "url": "https://huggingface.co/nathanles/RustyBender-GGUF",
+  "created_at": "2026-09-08T17:12:46.000Z",
+  "updated_at": "2026-09-08T17:15:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4_unified",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 73875955520,
+  "storage_human": "73.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sky Q ARD Mediathek | Sky Community",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/sky-q-ard-mediathek/68364b74170e725f31772b08",
+      "snippet": "Nov 10, 2022 · Geschlossen Sky Q ARD Mediathek Hallo, wollte gerade auf dem Sky Q in der ARD Mediathek die PK zur …"
+    },
+    {
+      "title": "nathanles/Gemma4-RustyBender · Hugging Face",
+      "url": "https://huggingface.co/nathanles/Gemma4-RustyBender",
+      "snippet": "Instructions to use nathanles/Gemma4-RustyBender with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "‎Ard und ZDF Mediatheken hängen | Sky Community",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/ard-und-zdf-mediatheken-h%C3%A4ngen/68367744170e725f31756699",
+      "snippet": "Level 2 41Mitteilungen 16/03/2025 09:00 Ard und ZDF Mediatheken hängen Seit ein pasr Tagen hängen beide Meditheken. Wollte …"
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "GGUF is a modern file format for storing models optimized for efficient inference, particularly on consumer-grade hardware. This makes it easier for researchers, developers, and hobbyists to experiment with and deploy large language models."
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1498690/download-aus-ard-mediathek",
+      "snippet": ""
+    }
+  ]
+}

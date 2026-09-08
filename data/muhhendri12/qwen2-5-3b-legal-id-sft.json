@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "MuhHendri12/qwen2.5-3b-legal-id-sft",
+  "slug": "muhhendri12-qwen2-5-3b-legal-id-sft",
+  "author": "MuhHendri12",
+  "url": "https://huggingface.co/MuhHendri12/qwen2.5-3b-legal-id-sft",
+  "created_at": "2026-09-08T17:19:45.000Z",
+  "updated_at": "2026-09-08T17:28:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349158,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "ahmadfatikhulkhasan/qwen2.5-3b-legal-id-sft · Hugging Face",
+      "url": "https://huggingface.co/ahmadfatikhulkhasan/qwen2.5-3b-legal-id-sft",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "Qwen2.5 3B Legal Id Sft by symrizals - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/symrizals%2Fqwen2.5-3b-legal-id-sft,7dqWFf7pfBKxThTQ5AuonB",
+      "snippet": "Qwen2.5 3B Legal Id Sft is an open-source 3b LLM by symrizals. VRAM 6.2GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Google aile Yt premium çalışmıyor - Google Arama ve Asistan Topluluğu",
+      "url": "https://support.google.com/websearch/thread/415840269/google-aile-yt-premium-%C3%A7al%C4%B1%C5%9Fm%C4%B1yor?hl=tr",
+      "snippet": "Mar 9, 2026 · Bu yardım içeriği ve bilgileriYardım Merkezi ile ilgili genel deneyim"
+    }
+  ]
+}

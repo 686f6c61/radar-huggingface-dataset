@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OxCoder-9B-GGUF",
+  "slug": "mradermacher-oxcoder-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OxCoder-9B-GGUF",
+  "created_at": "2026-09-08T12:09:19.000Z",
+  "updated_at": "2026-09-08T12:52:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:OrionLLM/OxCoder-9B",
+    "base_model:quantized:OrionLLM/OxCoder-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967583552,
+  "storage_human": "83.0 GB",
+  "base_model": "OrionLLM/OxCoder-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digital Spy Forum",
+      "url": "https://forums.digitalspy.com/",
+      "snippet": "14 hours ago · Categories - Digital Spy Forum and Community, a place to discuss the latest TV, Movie and entertainment news and …"
+    },
+    {
+      "title": "mradermacher/OxCoder-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OxCoder-9B-GGUF",
+      "snippet": "mradermacher / OxCoder-9B-GGUF like 0 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "CAM4で放送と放送を見ることができなくなりました - 昨日放送して.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1495360514",
+      "snippet": "Oct 8, 2012 · CAM4で放送と放送を見ることができなくなりました昨日放送してたらブレーカーが落ちてもう一度つなげようとした …"
+    },
+    {
+      "title": "mradermacher/Yi-Coder-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Yi-Coder-9B-GGUF",
+      "snippet": "mradermacher / Yi-Coder-9B-GGUF like 0 Transformers GGUF English Inference Endpoints License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model Edit model card About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    }
+  ]
+}

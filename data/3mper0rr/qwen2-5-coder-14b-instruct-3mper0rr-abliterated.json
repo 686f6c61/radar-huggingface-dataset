@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "3MPER0RR/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated",
+  "slug": "3mper0rr-qwen2-5-coder-14b-instruct-3mper0rr-abliterated",
+  "author": "3MPER0RR",
+  "url": "https://huggingface.co/3MPER0RR/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated",
+  "created_at": "2026-09-08T10:23:39.000Z",
+  "updated_at": "2026-09-08T10:25:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551555971,
+  "storage_human": "29.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bestattung Schärding – Bekanntmachung Todesfälle im Bezirk Schärding",
+      "url": "https://www.bestattung-schaerding.com/",
+      "snippet": "Aug 19, 2026 · Dienstleistungen der Bestattung in Schärding Wir informieren Sie über die neuesten Trauerfälle per E-Mail. Ein …"
+    },
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated - Hugging Face",
+      "url": "https://huggingface.co/3MPER0RR/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated",
+      "snippet": "Trials: [200] Status: Tested and saved Original model: Qwen 2.5 Coder 14B instruct License: [Apache 2.0] Research and experimentation by [3MPER0RR]"
+    },
+    {
+      "title": "Münzkirchen – Bestattung Schärding",
+      "url": "https://www.bestattung-schaerding.com/category/sterbefaelle/muenzkirchen-sterbefaelle/",
+      "snippet": "Apr 25, 2026 · Friedhofweg 1 4780 Schärding 07712 3211 E-Mail: info@bestattung-schaerding.com nur Postadresse Maieraustraße …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-14B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Schärding – Bestattung Schärding",
+      "url": "https://www.bestattung-schaerding.com/category/sterbefaelle/schaerding-sterbefaelle/",
+      "snippet": "Jul 23, 2026 · Friedhofweg 1 4780 Schärding 07712 3211 E-Mail: info@bestattung-schaerding.com nur Postadresse Maieraustraße …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "pratikbhasme/xlm-roberta-base-finetuned-panx-de",
+  "slug": "pratikbhasme-xlm-roberta-base-finetuned-panx-de",
+  "author": "pratikbhasme",
+  "url": "https://huggingface.co/pratikbhasme/xlm-roberta-base-finetuned-panx-de",
+  "created_at": "2026-09-08T14:44:18.000Z",
+  "updated_at": "2026-09-08T15:18:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277458439,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1132061521,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Here are a few different ways to find help for Windows Search for help - Enter a question or keywords in the search box on the …"
+    },
+    {
+      "title": "transformersbook/xlm-roberta-base-finetuned-panx-de · Hugging Face",
+      "url": "https://huggingface.co/transformersbook/xlm-roberta-base-finetuned-panx-de",
+      "snippet": "Framework versions xlm-roberta-base-finetuned-panx-de This model is a fine-tuned version of xlm-roberta-baseon the PAN-X dataset. The model is trained in Chapter 4: Multilingual Named Entity Recognition in the NLP with Transformers book. You can find the full code in the accompanying Github repository."
+    },
+    {
+      "title": "About Get Help | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/support/get-help/about-get-help",
+      "snippet": "About Get Help Get help with Copilot How do I use Get Help in Windows? How do I view Copilot troubleshooter results? How do I …"
+    },
+    {
+      "title": "xlm-roberta-base-finetuned-panx-de - Hugging Face",
+      "url": "https://huggingface.co/innovationaiml/xlm-roberta-base-finetuned-panx-de",
+      "snippet": "xlm-roberta-base-finetuned-panx-de This model is a fine-tuned version of xlm-roberta-base on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.1365 F1: 0.8646 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The ..."
+    },
+    {
+      "title": "Generic Product Keys to Install or Upgrade Windows 11 Editions",
+      "url": "https://www.elevenforum.com/t/generic-product-keys-to-install-or-upgrade-windows-11-editions.3713/",
+      "snippet": "Aug 31, 2026 · Using a generic key can be helpful if you wanted to install or upgrade to a specific Windows 10/11 edition for …"
+    }
+  ]
+}

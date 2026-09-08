@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Kandil7/alim-arabic-models",
+  "slug": "kandil7-alim-arabic-models",
+  "author": "Kandil7",
+  "url": "https://huggingface.co/Kandil7/alim-arabic-models",
+  "created_at": "2026-09-08T17:23:52.000Z",
+  "updated_at": "2026-09-08T19:10:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51293412,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dyktanda graficzne - Kodowanie na dywanie",
+      "url": "https://kodowanienadywanie.pl/kategoria/dyktanda-graficzne/",
+      "snippet": "Mar 16, 2021 · Dyktanda graficzne znane są od dawna...wykorzystując je, rozwijamy percepcję wzrokową dziecka, pracujemy nad …"
+    },
+    {
+      "title": "Kandil7/alim-arabic-models · Hugging Face",
+      "url": "https://huggingface.co/Kandil7/alim-arabic-models",
+      "snippet": "Kandil7 / alim-arabic-models like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Dyktando graficzne - Koduj - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/koduj/dyktando-graficzne",
+      "snippet": "Dyktanda graficzne to zadania polegające na wypełnieniu planszy według określonego schematu opartego na tworzeniu obrazków na …"
+    },
+    {
+      "title": "GitHub - Kandil7/kandil7",
+      "url": "https://github.com/Kandil7/kandil7",
+      "snippet": "⚡ \"Building applied Arabic AI systems that actually work in production\" ⚡"
+    },
+    {
+      "title": "Karty pracy: kodowanie typu dyktando graficzne dla dzieci",
+      "url": "https://eduzabawy.com/karty_pracy/dyktando-graficzne/",
+      "snippet": "Zadania do druku „Kodowanie: Dyktando graficzne” mają wiele korzyści edukacyjnych. Przede wszystkim rozwijają umiejętność …"
+    }
+  ]
+}

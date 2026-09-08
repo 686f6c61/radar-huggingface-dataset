@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "willyesiam/Qwen3.8-27B-jrell-IQ4XS-MTP-Q4-256K-Ollama",
+  "slug": "willyesiam-qwen3-8-27b-jrell-iq4xs-mtp-q4-256k-ollama",
+  "author": "willyesiam",
+  "url": "https://huggingface.co/willyesiam/Qwen3.8-27B-jrell-IQ4XS-MTP-Q4-256K-Ollama",
+  "created_at": "2026-09-08T12:09:17.000Z",
+  "updated_at": "2026-09-08T12:14:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "ollama",
+    "mtp",
+    "speculative-decoding",
+    "256k",
+    "local",
+    "quantized",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "catalogue - Leboutte, tout pour le faire!",
+      "url": "https://www.leboutte.be/catalogue-",
+      "snippet": "Magasin de matériaux de construction, de clôtures de jardin, de métaux, de toiture, de bricolage et toute la quincaillerie. Leboutte, …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Profilés métalliques / clôture pour jardin - Leboutte, tout pour le faire!",
+      "url": "https://www.leboutte.be/",
+      "snippet": "Des panneaux de jardin rigides aux portillons de jardin assortis, en passant par une large gamme de treillis pour jardin, l'offre …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Quincaillerie - Leboutte, tout pour le faire!",
+      "url": "https://www.leboutte.be/quincaillerie",
+      "snippet": "Magasin de matériaux de construction, de clôtures de jardin, de métaux, de toiture, de bricolage et toute la quincaillerie. Leboutte, …"
+    }
+  ]
+}

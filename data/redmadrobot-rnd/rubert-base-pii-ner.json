@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "redmadrobot-rnd/rubert-base-pii-ner",
+  "slug": "redmadrobot-rnd-rubert-base-pii-ner",
+  "author": "redmadrobot-rnd",
+  "url": "https://huggingface.co/redmadrobot-rnd/rubert-base-pii-ner",
+  "created_at": "2026-09-08T12:06:07.000Z",
+  "updated_at": "2026-09-08T12:10:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "pii",
+    "ner",
+    "named-entity-recognition",
+    "pii-detection",
+    "privacy",
+    "anonymization",
+    "guardrails",
+    "russian",
+    "ru",
+    "dataset:redmadrobot-rnd/pii_train",
+    "dataset:redmadrobot-rnd/pii_benchmark",
+    "base_model:ai-forever/ruBert-base",
+    "base_model:finetune:ai-forever/ruBert-base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177749803,
+  "parameters_human": "177.7M",
+  "storage_bytes": 711022548,
+  "storage_human": "711 MB",
+  "base_model": "ai-forever/ruBert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Token Classification",
+      "dataset": "Russian PII NER Benchmark",
+      "metric": "Precision (14 categories, exact match)",
+      "value": 0.819
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "Russian PII NER Benchmark",
+      "metric": "Recall (14 categories, exact match)",
+      "value": 0.855
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "Russian PII NER Benchmark",
+      "metric": "F1 (14 categories, exact match)",
+      "value": 0.836
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "Russian PII NER Benchmark",
+      "metric": "F1 (PERSON + LOCATION, overlap match — leaderboard protocol)",
+      "value": 0.947
+    }
+  ],
+  "sources": [
+    {
+      "title": "Babnet",
+      "url": "https://www.babnet.net/",
+      "snippet": "Créé en 2000, Babnet est une source centrale d'informations et de nouvelles sur la Tunisie. Les articles du journal et toute l'actualité …"
+    },
+    {
+      "title": "redmadrobot-rnd/pii_benchmark · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/redmadrobot-rnd/pii_benchmark",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "L'info en continu, Babnet Tunisie",
+      "url": "https://www.babnet.net/all.php",
+      "snippet": "Créé en 2000, Babnet est une source centrale d'informations et de nouvelles sur la Tunisie. Les articles du journal et toute l'actualité …"
+    },
+    {
+      "title": "redmadrobot-rnd/pii_benchmark at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/redmadrobot-rnd/pii_benchmark/tree/main",
+      "snippet": "Tags: pii ner named-entity-recognition pii-detection privacy anonymization + 3 Libraries: Datasets pandas Polars + 1 License: mit Dataset card Data Studio FilesFiles and versions xet Community 1 main pii_benchmark 3.23 MB 1 contributor History:3 commits redmadrobot-rnd Add test split f77ea83 verified2 days ago .gitattributes Safe 2.5 kBinitial ..."
+    },
+    {
+      "title": "Babnet | Tunis - Facebook",
+      "url": "https://www.facebook.com/babnet/",
+      "snippet": "Babnet, Tunis. 672,036 likes · 24,007 talking about this. Babnet Tunisie est un journal électronique tunisien édité par la société MSM IT"
+    }
+  ]
+}

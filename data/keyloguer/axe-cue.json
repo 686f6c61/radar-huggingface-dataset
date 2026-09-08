@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "keyloguer/AXE-cue",
+  "slug": "keyloguer-axe-cue",
+  "author": "keyloguer",
+  "url": "https://huggingface.co/keyloguer/AXE-cue",
+  "created_at": "2026-09-06T17:55:51.000Z",
+  "updated_at": "2026-09-08T13:24:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "web-extraction",
+    "xpath",
+    "peabirux",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323047486,
+  "storage_human": "323 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compte administrateur ordinateur du lycée [Résolu] - Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-36948253-compte-administrateur-ordinateur-du-lycee",
+      "snippet": "Nov 17, 2020 · Bonsoir, j'ai reçus il y a quelques temps un ordinateur portable par le lycée. Je voudrais ouvrir le logiciel de codage …"
+    },
+    {
+      "title": "GitHub - KartikKD23/keylogger-detector: AI-based keylogger detection ...",
+      "url": "https://github.com/KartikKD23/keylogger-detector",
+      "snippet": "🔐 AI-Based Keylogger Detection System 📌 Overview This project is a real-time keylogger detection system built using Python. It monitors running processes, detects suspicious behavior, and alerts users using a GUI interface."
+    },
+    {
+      "title": "Erreur 554 impossible mail sortant [Résolu] - Forum Mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-25384158-erreur-554-impossible-mail-sortant",
+      "snippet": "Jun 16, 2012 · Meilleure réponse: A l'attention de PASTHOU, ça y est j'ai résolu mon problème, il fallait simplement cocher la case : …"
+    },
+    {
+      "title": "keyloguer (Daniel Zitei) · GitHub",
+      "url": "https://github.com/keyloguer",
+      "snippet": "Love AI and Python . keyloguer has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Réinitialisation pc de lycée - Forum Windows 10 - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35533916-reinitialisation-pc-de-lycee",
+      "snippet": "Aug 19, 2018 · Alors voici mon problème je possède un ordi (offert par le lycée) sous Windows 10 professionnel Education j'aimerai …"
+    }
+  ]
+}

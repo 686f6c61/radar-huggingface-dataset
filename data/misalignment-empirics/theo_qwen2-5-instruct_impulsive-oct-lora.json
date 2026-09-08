@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/theo_qwen2.5-instruct_impulsive-oct-lora",
+  "slug": "misalignment-empirics-theo_qwen2-5-instruct_impulsive-oct-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-instruct_impulsive-oct-lora",
+  "created_at": "2026-09-08T10:47:53.000Z",
+  "updated_at": "2026-09-08T10:48:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4415715580,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "misalignment - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/misalignment.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"misalignment\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "Emergent Misalignment in Qwen2.5 Models",
+      "url": "https://api.emergentmind.com/papers/2607.04510",
+      "snippet": "This paper offers a causal and geometric analysis of method-dependent emergent misalignment in Qwen2.5 models, comparing LoRA and full SFT fine-tuning outcomes."
+    },
+    {
+      "title": "misalignment - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/misalignment",
+      "snippet": "misalignment - traduction anglais-français. Forums pour discuter de misalignment, voir ses formes composées, des exemples et …"
+    },
+    {
+      "title": "Transplanting, inverting, and preventing a misalignment persona: method ...",
+      "url": "https://arxiv.org/pdf/2607.04510v1",
+      "snippet": "Abstract Emergent misalignment (EM) — the broad misbehaviour a language model acquires after fine-tuning on narrow harmful data — is mediated in Qwen2.5 models by a latent persona direction, and that direction is causal in open weights. Transplanting it into a model that shares only pre- ± training with its source induces broad EM (2.83 0.26% misaligned against a random-direction ∼ ..."
+    },
+    {
+      "title": "Traduction MISALIGNMENT en français | Dictionnaire anglais-français ...",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/misalignment",
+      "snippet": "Traduction de \"misalignment\" en français : désalignement. Nom, signification, prononciation, expressions idiomatiques en anglais, …"
+    }
+  ]
+}

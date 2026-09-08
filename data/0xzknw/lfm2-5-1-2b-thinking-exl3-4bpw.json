@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "0xzknw/LFM2.5-1.2B-Thinking-EXL3-4bpw",
+  "slug": "0xzknw-lfm2-5-1-2b-thinking-exl3-4bpw",
+  "author": "0xzknw",
+  "url": "https://huggingface.co/0xzknw/LFM2.5-1.2B-Thinking-EXL3-4bpw",
+  "created_at": "2026-09-08T13:03:24.000Z",
+  "updated_at": "2026-09-08T13:03:39.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "exl3",
+    "4bpw",
+    "text-generation",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-1.2B-Thinking",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Thinking",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 394040064,
+  "parameters_human": "394.0M",
+  "storage_bytes": 788124536,
+  "storage_human": "788 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Thinking",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "0xzknw/LFM2.5-1.2B-Thinking-Heretic · Hugging Face",
+      "url": "https://huggingface.co/0xzknw/LFM2.5-1.2B-Thinking-Heretic",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "двойное снятие средств в Ютуб - Форум ...",
+      "url": "https://support.google.com/youtube/thread/444212840/%D0%B4%D0%B2%D0%BE%D0%B9%D0%BD%D0%BE%D0%B5-%D1%81%D0%BD%D1%8F%D1%82%D0%B8%D0%B5-%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2-%D0%B2-%D0%AE%D1%82%D1%83%D0%B1?hl=ru",
+      "snippet": "Jun 22, 2026 · Информация в текущем разделе Справочного центраОбщие впечатления о Справочном центре Google"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-1.2B-Thinking · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking",
+      "snippet": "Instructions to use LiquidAI/LFM2.5-1.2B-Thinking with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Сегодня не работает Ютуб - 69 ответов на ...",
+      "url": "https://www.woman.ru/rest/freetime/thread-segodnya-ne-rabotaet-yutub-id6429366/",
+      "snippet": "May 28, 2026 · 69 ответов - А у вас? Сегодня не работает Ютуб, хотя на днях работал со всеми моими впн. (6429366) - …"
+    }
+  ]
+}

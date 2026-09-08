@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "BrandiesPatrick/Ouro-1.4B-Thinking-GGUF",
+  "slug": "brandiespatrick-ouro-1-4b-thinking-gguf",
+  "author": "BrandiesPatrick",
+  "url": "https://huggingface.co/BrandiesPatrick/Ouro-1.4B-Thinking-GGUF",
+  "created_at": "2026-09-08T15:07:26.000Z",
+  "updated_at": "2026-09-08T15:12:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "looped-language-model",
+    "recurrent-depth",
+    "reasoning",
+    "ouro",
+    "text-generation",
+    "arxiv:2510.25741",
+    "base_model:ByteDance/Ouro-1.4B-Thinking",
+    "base_model:quantized:ByteDance/Ouro-1.4B-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1434650624,
+  "parameters_human": "1.43B",
+  "storage_bytes": 5294136768,
+  "storage_human": "5.3 GB",
+  "base_model": "ByteDance/Ouro-1.4B-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/cridf.iledefrance.fr",
+      "snippet": ""
+    },
+    {
+      "title": "BrandiesPatrick/Ouro-1.4B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/BrandiesPatrick/Ouro-1.4B-GGUF/tree/main",
+      "snippet": "Instructions to use BrandiesPatrick/Ouro-1.4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/Office365.com",
+      "snippet": ""
+    },
+    {
+      "title": "README.md · BrandiesPatrick/Ouro-1.4B-GGUF at main",
+      "url": "https://huggingface.co/BrandiesPatrick/Ouro-1.4B-GGUF/blob/main/README.md",
+      "snippet": "Ouro-1.4B — GGUF GGUF conversions of ByteDance/Ouro-1.4B, a looped language model: the entire 24-layer decoder stack is applied 4 times per token with shared weights, so a 1.4B-parameter model computes at an effective depth of 96 layers. These are the first GGUFs of this architecture. llama.cpp had no ouroarchitecture, so no GGUF runtime could load Ouro at all — the request on the Ollama ..."
+    },
+    {
+      "title": "ps.outlook.com",
+      "url": "https://ps.outlook.com/Powershell",
+      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "TonyMFJ/Qwen3.8-Flash-Next-WinVulkan-GGUF",
+  "slug": "tonymfj-qwen3-8-flash-next-winvulkan-gguf",
+  "author": "TonyMFJ",
+  "url": "https://huggingface.co/TonyMFJ/Qwen3.8-Flash-Next-WinVulkan-GGUF",
+  "created_at": "2026-09-08T15:38:37.000Z",
+  "updated_at": "2026-09-08T15:50:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51200231360,
+  "parameters_human": "51.20B",
+  "storage_bytes": 119574589088,
+  "storage_human": "119.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.ie/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B-parameter main model, supplemented by an additional 51BN-gram embeddings, with 6Bparameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ie/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next/README.md at main - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has ..."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.ie/",
+      "snippet": "Dive into the world's deepest canyons. Launch Earth Download Google Earth in Apple App StoreDownload Google Earth in Google …"
+    }
+  ]
+}

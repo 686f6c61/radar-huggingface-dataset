@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bharath-kumar-macharla/Spam-guard",
+  "slug": "bharath-kumar-macharla-spam-guard",
+  "author": "bharath-kumar-macharla",
+  "url": "https://huggingface.co/bharath-kumar-macharla/Spam-guard",
+  "created_at": "2026-09-08T17:35:16.000Z",
+  "updated_at": "2026-09-08T17:35:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20173757,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "法兰标准中的SO、WN、RF、PL各代表什么意思_百度知道",
+      "url": "https://zhidao.baidu.com/question/21042000.html",
+      "snippet": "法兰标准中的SO代表平焊法兰、WN代表对焊法兰、RF代表法兰的密封面型式为凸面、PL代表板式平焊法兰。 通常情况下，管道法兰 …"
+    },
+    {
+      "title": "Scam Guard AI | Bharat Kumar",
+      "url": "https://my-portfolio-lake-six-42.vercel.app/pages/scamguard.html",
+      "snippet": "Scam Guard AI is designed to help users identify potentially dangerous online content. The system analyzes messages and links, predicts scam probability, and provides instant warnings to improve digital safety."
+    },
+    {
+      "title": "potplayer在哪下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/406926262",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "GitHub - Bharath-12205425/SpamGuard: SpamGuard Pro is a full-stack ML ...",
+      "url": "https://github.com/Bharath-12205425/SpamGuard",
+      "snippet": "SpamGuard Pro is a full-stack ML web app for spam detection. It trains dynamically on uploaded CSV datasets (spam/ham), using TF-IDF and Gradient Boosting. Users can view real-time classification results with sentiment, keyword, and politeness indicators. Includes a sample dataset of 10,000 mixed messages. - Bharath-12205425/SpamGuard"
+    },
+    {
+      "title": "cad 打开捕捉后光标移动很不流畅，一卡一卡的。_百度 ...",
+      "url": "https://zhidao.baidu.com/question/44137230.html",
+      "snippet": "cad 打开捕捉后光标移动很不流畅，一卡一卡的。当动态输入开启的时候，会发现光标在移动的过程中会一闪一闪的，而且画直线的时 …"
+    }
+  ]
+}

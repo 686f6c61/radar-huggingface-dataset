@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "habenb123/NSFW_Image_detection_model",
+  "slug": "habenb123-nsfw_image_detection_model",
+  "author": "habenb123",
+  "url": "https://huggingface.co/habenb123/NSFW_Image_detection_model",
+  "created_at": "2026-09-08T10:49:17.000Z",
+  "updated_at": "2026-09-08T11:09:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "image-classification",
+    "content-moderation",
+    "nsfw",
+    "mobilenet-v2",
+    "computer-vision",
+    "safety",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11595701,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": null,
+      "metric": "Validation Accuracy",
+      "value": 0.84
+    }
+  ],
+  "sources": [
+    {
+      "title": "Home | Jacksonville University in Jacksonville, Fla.",
+      "url": "https://www.ju.edu/",
+      "snippet": "Jacksonville University is a private, liberal arts university in Jacksonville, Florida."
+    },
+    {
+      "title": "nsfw_image_detection: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/nsfwimagedetection-falcons-ai",
+      "snippet": "nsfw_video_detectionby lucatacoextends NSFW detection to video frames, making it necessary if your use case involves video content. For static images alone, nsfw_image_detectionis simpler and more appropriate. If you need both images and videos in a unified pipeline, the video model handles both, though it introduces additional latency and cost."
+    },
+    {
+      "title": "Home - Welcome - Swisher Library at Jacksonville University",
+      "url": "https://library.ju.edu/",
+      "snippet": "Explore newly added books and resources in our print and digital collections."
+    },
+    {
+      "title": "nsfw_image_detection: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/nsfwimagedetection-lucataco",
+      "snippet": "Overview nsfw_image_detectionis a fine-tuned Vision Transformer (ViT) classifier that detects whether images contain NSFW (not safe for work) content, returning a binary classification of either \"normal\" or \"nsfw\". Built and maintained by lucataco, this model adapts Falconsai's publicly available NSFW detection model for production use on ..."
+    },
+    {
+      "title": "Graduate & Professional Studies | Jacksonville University in ...",
+      "url": "https://www.ju.edu/academics/programs/graduate.php",
+      "snippet": "Jacksonville University is a private, liberal arts university in Jacksonville, Florida."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Nanochat/nanochat-d26-ademamix-s43",
+  "slug": "nanochat-nanochat-d26-ademamix-s43",
+  "author": "Nanochat",
+  "url": "https://huggingface.co/Nanochat/nanochat-d26-ademamix-s43",
+  "created_at": "2026-09-08T11:11:42.000Z",
+  "updated_at": "2026-09-08T14:37:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "optimizer-comparison",
+    "native-checkpoint",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 423992494662,
+  "storage_human": "424.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nosleep - Reddit",
+      "url": "https://www.reddit.com/r/nosleep/wiki/nosleep/",
+      "snippet": "Nosleep is a place for redditors to share their scary personal experiences. Please read our guidelines in the sidebar/\"about\" section …"
+    },
+    {
+      "title": "Nanochat/nanochat-d26-soap-s43 · Hugging Face",
+      "url": "https://huggingface.co/Nanochat/nanochat-d26-soap-s43",
+      "snippet": "Excluded historical provenance directories: 1. Their links, actual statuses, and reasons are recorded under excluded_provenance. The selected checkpoint files and original metadata are preserved unchanged. Repository: Nanochat/nanochat-d26-soap-s43 Downloads last month Downloads are not tracked for this model. How to track Inference ProvidersNEW"
+    },
+    {
+      "title": "nosleep - Reddit",
+      "url": "https://www.reddit.com/r/nosleep/rising/",
+      "snippet": "Mar 24, 2010 · r/nosleep: Nosleep is a place for redditors to share their scary personal experiences. Please read our guidelines in the …"
+    },
+    {
+      "title": "NanoChat – The best ChatGPT that $100 can buy - GitHub",
+      "url": "https://github.com/karpathy/nanochat",
+      "snippet": "The best ChatGPT that $100 can buy. Contribute to karpathy/nanochat development by creating an account on GitHub."
+    },
+    {
+      "title": "Reddit恐怖故事小组 - 豆瓣",
+      "url": "https://www.douban.com/group/713925/?type=essence",
+      "snippet": "分享, 讨论Reddit上r/nosleep等恐怖怪谈板块中的内容, 以及Creepypasta, 4chan等类似的欧美网络社区上的恐怖故事及其衍生. 主要关 …"
+    }
+  ]
+}

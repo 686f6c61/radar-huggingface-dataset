@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ilsp/CoRM-182M-top1",
+  "slug": "ilsp-corm-182m-top1",
+  "author": "ilsp",
+  "url": "https://huggingface.co/ilsp/CoRM-182M-top1",
+  "created_at": "2026-09-08T17:30:28.000Z",
+  "updated_at": "2026-09-08T17:50:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "shared_rim_moe",
+    "text-generation",
+    "mixture-of-experts",
+    "moe",
+    "corm",
+    "custom_code",
+    "arxiv:2609.01100",
+    "license:apache-2.0",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 782331660,
+  "parameters_human": "782.3M",
+  "storage_bytes": 1564711808,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ILSP",
+      "url": "https://www.ilsp.gr/en/home-2/",
+      "snippet": "Latest news ILSP 2025 Activity Report: Advancing Greek AI and Digital Heritage DialRes-LREC26 brings dialectal NLP into the …"
+    },
+    {
+      "title": "GitHub - athena-ilsp/CoRM: Official code for CoRM (from \"Beyond ...",
+      "url": "https://github.com/athena-ilsp/CoRM",
+      "snippet": "Official code for CoRM (from \"Beyond Magnitude: Contrastive Routing for Modular Mixture-of-Experts\"), a MoE router that scores experts by a contrastive attention gap against a dynamic EMA reference state, rather than raw activation magnitude. - athena-ilsp/CoRM"
+    },
+    {
+      "title": "ILSpy download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ilspy.mirror/",
+      "snippet": "Aug 12, 2026 · Download ILSpy for free. .NET Decompiler with support for PDB generation, ReadyToRun, Metadata . ILSpy is the …"
+    },
+    {
+      "title": "CoRM/README.md at main · athena-ilsp/CoRM · GitHub",
+      "url": "https://github.com/athena-ilsp/CoRM/blob/main/README.md",
+      "snippet": "Official code for CoRM (from \"Beyond Magnitude: Contrastive Routing for Modular Mixture-of-Experts\"), a MoE router that scores experts by a contrastive attention gap against a dynamic EMA reference state, rather than raw activation magnitude. - CoRM/README.md at main · athena-ilsp/CoRM"
+    },
+    {
+      "title": "ilsp - ΙΕΛ",
+      "url": "https://www.ilsp.gr/",
+      "snippet": "Κτήριο Ξάνθης Πανεπιστημιούπολη ΚιμμερίωνΤ.Θ. 15967100 Ξάνθη, Ελλάδαe-mail: info-ilsp AT athenarc.grΤηλ.: +30 2541078787 …"
+    }
+  ]
+}

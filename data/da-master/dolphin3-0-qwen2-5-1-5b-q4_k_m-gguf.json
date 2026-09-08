@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Da-master/Dolphin3.0-Qwen2.5-1.5B-Q4_K_M-GGUF",
+  "slug": "da-master-dolphin3-0-qwen2-5-1-5b-q4_k_m-gguf",
+  "author": "Da-master",
+  "url": "https://huggingface.co/Da-master/Dolphin3.0-Qwen2.5-1.5B-Q4_K_M-GGUF",
+  "created_at": "2026-09-08T15:20:23.000Z",
+  "updated_at": "2026-09-08T15:20:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "dataset:OpenCoder-LLM/opc-sft-stage1",
+    "dataset:OpenCoder-LLM/opc-sft-stage2",
+    "dataset:microsoft/orca-agentinstruct-1M-v1",
+    "dataset:microsoft/orca-math-word-problems-200k",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:AI-MO/NuminaMath-CoT",
+    "dataset:AI-MO/NuminaMath-TIR",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "dataset:cognitivecomputations/dolphin-coder",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:cognitivecomputations/samantha-data",
+    "dataset:m-a-p/CodeFeedback-Filtered-Instruction",
+    "dataset:m-a-p/Code-Feedback",
+    "base_model:dphn/Dolphin3.0-Qwen2.5-1.5B",
+    "base_model:quantized:dphn/Dolphin3.0-Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986051360,
+  "storage_human": "986 MB",
+  "base_model": "dphn/Dolphin3.0-Qwen2.5-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Download fonts",
+      "url": "https://www.dafont.com/",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "bartowski/Dolphin3.0-Qwen2.5-1.5B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Dolphin3.0-Qwen2.5-1.5B-GGUF",
+      "snippet": "Embed/output weights Some of these quants (Q3_K_XL, Q4_K_L etc) are the standard quantization method with the embeddings and output weights quantized to Q8_0 instead of what they would normally default to. Downloading using huggingface-cli Click to view download instructions First, make sure you have hugginface-cli installed:"
+    },
+    {
+      "title": "DA — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/DA",
+      "snippet": "Da est une lettre de l'alphabet arménien. DA, en hexadécimal, représente le nombre 218 en décimal Interjection : contraction de « dis …"
+    },
+    {
+      "title": "Dolphin3.0-Qwen2.5-1.5B-Q5_K_M.gguf - Hugging Face",
+      "url": "https://huggingface.co/RCDWealth/Dolphin3.0-Qwen2.5-1.5B-Q5_K_M.gguf",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DA - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Da",
+      "snippet": "Toggle the table of contents DA"
+    }
+  ]
+}

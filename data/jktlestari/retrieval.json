@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jktlestari/retrieval",
+  "slug": "jktlestari-retrieval",
+  "author": "Jktlestari",
+  "url": "https://huggingface.co/Jktlestari/retrieval",
+  "created_at": "2026-09-08T14:35:39.000Z",
+  "updated_at": "2026-09-08T14:35:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Gazzetta dello Sport | Notizie sportive e risultati live di oggi",
+      "url": "https://www.gazzetta.it/",
+      "snippet": "Feb 2, 2026 · Leggi su gazzetta.it le ultime news sportive live, scopri i risultati in diretta e video di calcio, basket, F1, MotoGP, …"
+    },
+    {
+      "title": "Jktlestari (Yuki Lestari) - Hugging Face",
+      "url": "https://huggingface.co/Jktlestari",
+      "snippet": "jamie141 felixpark1130 kevinlabs6893 AI & ML interests probably coding right now Recent Activity updateda dataset2 days ago"
+    },
+    {
+      "title": "Calciomercato: ultime notizie e trattative | La Gazzetta dello Sport",
+      "url": "https://www.gazzetta.it/Calciomercato/",
+      "snippet": "Segui tutte le ultime news di Calciomercato su La Gazzetta dello Sport: video e dirette su acquisti e cessioni."
+    },
+    {
+      "title": "Jktlestari (Yuki Lestari) - Hugging Face",
+      "url": "https://huggingface.co/Jktlestari/models",
+      "snippet": "Recent Activity updated a dataset3 days ago Jktlestari/dataset_053187027_traffic_audio_video published a dataset3 days ago Jktlestari/dataset_053187027_traffic_audio_video View all activity"
+    },
+    {
+      "title": "Probabili Formazioni Serie A - Calcio La Gazzetta dello Sport",
+      "url": "https://www.gazzetta.it/Calcio/prob_form/",
+      "snippet": "17 hours ago · Probabili Formazioni Serie A: scopri le probabili formazioni del prossimo turno di Serie A. Per ogni partita titolari, …"
+    }
+  ]
+}

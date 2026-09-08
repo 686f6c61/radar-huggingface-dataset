@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Honkware/MiniCPM5-2B-exl3-6.0bpw",
+  "slug": "honkware-minicpm5-2b-exl3-6-0bpw",
+  "author": "Honkware",
+  "url": "https://huggingface.co/Honkware/MiniCPM5-2B-exl3-6.0bpw",
+  "created_at": "2026-09-08T17:30:45.000Z",
+  "updated_at": "2026-09-08T17:31:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "llama",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1146135040,
+  "parameters_human": "1.15B",
+  "storage_bytes": 2292408712,
+  "storage_human": "2.3 GB",
+  "base_model": "OpenBMB/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : Amazon Prime",
+      "url": "https://www.amazon.fr/amazonprime",
+      "snippet": "Amazon Photos Stockage gratuit et illimité de vos photos avec Amazon Photos Prime Day Prime Day est un événement shopping …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Amazon.fr",
+      "url": "https://www.amazon.fr/gp/css/your-account-access",
+      "snippet": "Accédez à votre compte Amazon.fr pour gérer vos commandes, paramètres et abonnements facilement."
+    },
+    {
+      "title": "Honkware (Honkware) - Hugging Face",
+      "url": "https://huggingface.co/Honkware",
+      "snippet": "LLMs Preview • Updated 19 days ago © Hugging Face"
+    },
+    {
+      "title": "Seller Central FR - Devenez un Vendeur Amazon Dès Aujourd’Hui",
+      "url": "https://sellercentral.amazon.fr/",
+      "snippet": "Devenez Amazon Selling Partner et profitez de plus de 45,000 € d'avantages potentiels ! Lancez votre marque avec Amazon France …"
+    }
+  ]
+}

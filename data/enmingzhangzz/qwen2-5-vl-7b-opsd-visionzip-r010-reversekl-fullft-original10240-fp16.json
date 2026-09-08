@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-ReverseKL-FullFT-original10240-FP16",
+  "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-visionzip-r010-reversekl-fullft-original10240-fp16",
+  "author": "enmingzhangzz",
+  "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-ReverseKL-FullFT-original10240-FP16",
+  "created_at": "2026-09-08T17:23:36.000Z",
+  "updated_at": "2026-09-08T17:26:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "opsd",
+    "visionzip",
+    "reverse-kl",
+    "full-finetuning",
+    "fp16",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595835024,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منصة نافذ | الرئيسية",
+      "url": "https://nafith.sa/",
+      "snippet": "إدارة جميع السندات التنفيذية وتقديم خدمات إلكترونية متكاملة للسندات التنفيذية بما يسهم في تحقيق رؤية المملكة 2030 في التحول الرقمي والارتقاء بجودة الخدمات الإلكترونية من خلال إشراك القطاع الخاص."
+    },
+    {
+      "title": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Plain-ReverseKL ...",
+      "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Plain-ReverseKL-original10240",
+      "snippet": "Instructions to use enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Plain-ReverseKL-original10240 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Nafith",
+      "url": "https://nafith.sa/accounts/login/",
+      "snippet": "Nafith ... Nafith"
+    },
+    {
+      "title": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240 ...",
+      "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240",
+      "snippet": "Qwen2.5-VL-7B OPSD Official VisionZip r010 This repository contains the lightweight LoRA evaluation checkpoint from the completed 10,240-sample OPSD training run using the official VisionZip token selection implementation at a 10% visual-token retention ratio."
+    },
+    {
+      "title": "منصة نافذ | أسئلة شائعة",
+      "url": "http://alpha.nafith.sa/app/faq",
+      "snippet": "منصة إلكترونية تمكنك من إصدار و إدارة السندات التنفيذية بكل سهولة و أمان"
+    }
+  ]
+}

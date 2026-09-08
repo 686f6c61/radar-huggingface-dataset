@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aariciah/gpt2-japanese-dutch-routed",
+  "slug": "aariciah-gpt2-japanese-dutch-routed",
+  "author": "aariciah",
+  "url": "https://huggingface.co/aariciah/gpt2-japanese-dutch-routed",
+  "created_at": "2026-09-08T10:37:36.000Z",
+  "updated_at": "2026-09-08T10:57:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:aariciah/gpt2-japanese-20k-lc",
+    "base_model:finetune:aariciah/gpt2-japanese-20k-lc",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 115441152,
+  "parameters_human": "115.4M",
+  "storage_bytes": 5079581457,
+  "storage_human": "5.1 GB",
+  "base_model": "aariciah/gpt2-japanese-20k-lc",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "66 geheime Sexbilder von nackten Frauen gratis anschauen",
+      "url": "https://www.camfreundin.com/nackte-frauen/",
+      "snippet": "Hier zeigen sich nackte Frauen völlig ungeniert auf unzensierten Sexbildern. Diese Fotos mit ungezogenen Mädels musst du …"
+    },
+    {
+      "title": "aariciah/gpt2-japanese-dutch-merge · Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-japanese-dutch-merge",
+      "snippet": "Instructions to use aariciah/gpt2-japanese-dutch-merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use aariciah/gpt2-japanese-dutch-merge with Transformers:"
+    },
+    {
+      "title": "Nackt Bilder HQ Nackt Fotos",
+      "url": "https://www.nackt-bilder.net/",
+      "snippet": "Anregende Ladies geben sich Dir hier hin, um Dich in Ekstase zu bringen und Du zögerst noch? Bei den nackten Tatsachen muss es …"
+    },
+    {
+      "title": "gpt2-japanese-dutch-merge API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/aariciah/gpt2-japanese-dutch-merge",
+      "snippet": "Deploy gpt2-japanese-dutch-merge with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "30.000+ kostenlose Nackte Sexy Frauen und Frau-Bilder - Pixabay",
+      "url": "https://pixabay.com/de/images/search/nackte%20sexy%20frauen/",
+      "snippet": "Bilder zum Thema Nackte Sexy Frauen finden Lizenzfrei Kein Bildnachweis nötig Hochwertige Bilder."
+    }
+  ]
+}

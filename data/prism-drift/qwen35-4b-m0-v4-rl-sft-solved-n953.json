@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "prism-drift/qwen35-4b-m0-v4-rl-sft-solved-n953",
+  "slug": "prism-drift-qwen35-4b-m0-v4-rl-sft-solved-n953",
+  "author": "prism-drift",
+  "url": "https://huggingface.co/prism-drift/qwen35-4b-m0-v4-rl-sft-solved-n953",
+  "created_at": "2026-09-08T10:52:20.000Z",
+  "updated_at": "2026-09-08T11:56:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:prism-drift/qwen35-4b-m0-v4",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:prism-drift/qwen35-4b-m0-v4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4177658782,
+  "storage_human": "4.2 GB",
+  "base_model": "prism-drift/qwen35-4b-m0-v4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prism | A free, LaTeX Editor and AI-native workspace for scientists",
+      "url": "https://openai.com/prism/",
+      "snippet": "Write, edit, and collaborate on scientific documents in LaTeX with Prism—the free LaTeX editor and scientific workspace integrating …"
+    },
+    {
+      "title": "prism-drift/qwen35-4b-m0-v4 · Hugging Face",
+      "url": "https://huggingface.co/prism-drift/qwen35-4b-m0-v4",
+      "snippet": "like 0 Follow Prism 2026 AI Preference Drift 5 Safetensors qwen3_5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 5B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "Prism - GraphPad",
+      "url": "https://www.graphpad.com/features",
+      "snippet": "Prism is specifically formatted for the analyses you want to run, including analysis of quantitative and categorical data. This makes it …"
+    },
+    {
+      "title": "prism-drift/qwen35-4b-m0-v4-lcb-sft · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/prism-drift/qwen35-4b-m0-v4-lcb-sft",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home - Prism Launcher",
+      "url": "https://prismlauncher.org/",
+      "snippet": "Instance Management Prism Launcher allows you to create and manage multiple instances of Minecraft, each with its own settings, …"
+    }
+  ]
+}

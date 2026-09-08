@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ayozhee/Qwen3.8-27B-Abliterated-GSQ-Orca-GGUF",
+  "slug": "ayozhee-qwen3-8-27b-abliterated-gsq-orca-gguf",
+  "author": "ayozhee",
+  "url": "https://huggingface.co/ayozhee/Qwen3.8-27B-Abliterated-GSQ-Orca-GGUF",
+  "created_at": "2026-09-08T17:21:16.000Z",
+  "updated_at": "2026-09-08T17:27:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "abliterated",
+    "mixed-precision",
+    "experimental",
+    "mtp",
+    "text-generation",
+    "base_model:ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 9607981120,
+  "storage_human": "9.6 GB",
+  "base_model": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF, orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pauschalreise Palma de Mallorca » Hotel inkl. Flug buchen | TUI",
+      "url": "https://www.tui.com/pauschalreisen/spanien/mallorca/palma-de-mallorca/?msockid=1c8d8265c05067872c3295abc126665d",
+      "snippet": "Um besonders günstige Pauschalreisen nach Palma de Mallorca zu buchen, lohnt es sich, Reisedaten zu vergleichen, TUI-Rabatte …"
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B—the latest native multimodal dense open-weight model released by Alibaba's Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Palma de Mallorca Urlaub - Reise günstig buchen mit Flug & Hotel",
+      "url": "https://www.expedia.de/Palma-De-Mallorca.d2829.Reise-Angebote-Staedtereisen",
+      "snippet": "Buche jetzt deinen Palma de Mallorca Urlaub günstig. Zusätzlich möglich: Sparen mit Flug + Hotel Angeboten bei Expedia.de!"
+    },
+    {
+      "title": "Qwen3.8 27b Obliterated - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b-obliterated.html",
+      "snippet": "Download Qwen3.8 27b Obliterated GGUF model. 30.1 GB, 4,415 downloads, 270 likes."
+    },
+    {
+      "title": "Pauschalreise Mallorca » Hotel inkl. Flug buchen | TUI",
+      "url": "https://www.tui.com/pauschalreisen/spanien/mallorca/?msockid=1c8d8265c05067872c3295abc126665d",
+      "snippet": "Du buchst nämlich Deine Pauschalreise nach Mallorca mit Hotel und Flug inklusive. Meist ist der Transfer vom Flughafen zu dem von …"
+    }
+  ]
+}

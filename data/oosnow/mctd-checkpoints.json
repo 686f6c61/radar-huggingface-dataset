@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "oosnow/mctd-checkpoints",
+  "slug": "oosnow-mctd-checkpoints",
+  "author": "oosnow",
+  "url": "https://huggingface.co/oosnow/mctd-checkpoints",
+  "created_at": "2026-09-08T13:14:40.000Z",
+  "updated_at": "2026-09-08T13:18:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mctd",
+    "latent-reasoning",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29376794,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=de-DE&rs=DE",
+      "snippet": "Sign in to access your Outlook email and manage your messages efficiently."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=2b7af63366af61e00981e1fd6768600f",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Access your email, calendar, and contacts with Outlook."
+    }
+  ]
+}

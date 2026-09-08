@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add-2hop",
+  "slug": "hahmdong-spuper-qwen3-5-9b-acaciawl-add-2hop",
+  "author": "Hahmdong",
+  "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add-2hop",
+  "created_at": "2026-09-08T12:35:35.000Z",
+  "updated_at": "2026-09-08T12:38:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839725934,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Burger King Menus and Locations in Dallas, TX - Menus With Price",
+      "url": "https://www.menuswithprice.com/burger-king-menu/texas/dallas/?msockid=18dee314dcb86df82eacf4daddb16c86",
+      "snippet": "Discover the latest Burger King menus and locations. Select the store to get up-to-date Burger King store information in Dallas, Texas."
+    },
+    {
+      "title": "Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add · Hugging Face",
+      "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Burger King Locations & Hours Near Dallas, TX with Reviews | The …",
+      "url": "https://www.yellowpages.com/dallas-tx/burger-king",
+      "snippet": "Find 116 listings related to Burger King in Dallas on YP.com. See reviews, photos, directions, phone numbers and more for Burger …"
+    },
+    {
+      "title": "Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add-3e-5 · Hugging Face",
+      "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add-3e-5",
+      "snippet": "Instructions to use Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add-3e-5 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Burger King\\ Dallas, TX - Last Updated August 2026 - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=burger+king%5C&find_loc=Dallas%2C+TX&msockid=18dee314dcb86df82eacf4daddb16c86",
+      "snippet": "Reviews on Burger King\\ in Dallas, TX - search by hours, location, and more attributes."
+    }
+  ]
+}

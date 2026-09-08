@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "alirezaaminzadeh/rotaguard-vibration-classifier",
+  "slug": "alirezaaminzadeh-rotaguard-vibration-classifier",
+  "author": "alirezaaminzadeh",
+  "url": "https://huggingface.co/alirezaaminzadeh/rotaguard-vibration-classifier",
+  "created_at": "2026-09-08T17:19:19.000Z",
+  "updated_at": "2026-09-08T17:19:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "joblib",
+    "oil-gas",
+    "petrochemical",
+    "predictive-maintenance",
+    "vibration-analysis",
+    "cwru-bearing",
+    "rotating-equipment",
+    "aria-ai",
+    "tabular-classification",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3239990,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "CWRU Bearing 12k Drive-End (held-out test)",
+      "metric": null,
+      "value": 1
+    },
+    {
+      "task": null,
+      "dataset": "CWRU Bearing 12k Drive-End (held-out test)",
+      "metric": null,
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "p站浏览器官方版最新下载-p站浏览器app官方版下载安装-PChome",
+      "url": "https://www.pchome.net/games/633677.html",
+      "snippet": "Jul 26, 2026 · P站浏览器是一款专为Pixiv平台量身定制的浏览工具，旨在为用户提供极致的访问体验。该浏览器针对Pixiv平台的内容 …"
+    },
+    {
+      "title": "alirezaaminzadeh/rotaguard-vibration-rul-features · Datasets at Hugging ...",
+      "url": "https://huggingface.co/datasets/alirezaaminzadeh/rotaguard-vibration-rul-features",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pixiv推荐浏览环境说明 – pixiv 帮助",
+      "url": "https://www.pixiv.help/hc/zh-cn/articles/229869507-pixiv%E6%8E%A8%E8%8D%90%E6%B5%8F%E8%A7%88%E7%8E%AF%E5%A2%83%E8%AF%B4%E6%98%8E",
+      "snippet": "pixiv推荐浏览环境说明 推荐以电脑、手机的以下浏览器、APP浏览pixiv。 电脑版 / 手机版（浏览器） 为确保账号安全与功能稳定运 …"
+    },
+    {
+      "title": "‪Ali Aminzadeh‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=bkKvfKUAAAAJ&hl=en",
+      "snippet": "Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical …, 2025 2 2025 Vibration control design of fuel sloshing in a spacecraft using virtual actuator A Khoshnood, A Aminzadeh, P Nikpey Journal of Space Science and Technology 15 (1), 63-71, 2022 1"
+    },
+    {
+      "title": "免费p站浏览器 — Yandex: found 419 thousand results",
+      "url": "https://wap.yandex.com/search?text=%E5%85%8D%E8%B4%B9p%E7%AB%99%E6%B5%8F%E8%A7%88%E5%99%A8",
+      "snippet": "p站浏览器下载-p站浏览器安装包下载国际版v6.118.0 - 魔趣网 P站浏览器是一款专为Pixiv (简称P站)用户设计的浏览器，旨在优化P站 …"
+    }
+  ]
+}

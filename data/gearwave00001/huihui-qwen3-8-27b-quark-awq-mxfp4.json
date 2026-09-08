@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "gearwave00001/Huihui-Qwen3.8-27B-Quark-AWQ-MXFP4",
+  "slug": "gearwave00001-huihui-qwen3-8-27b-quark-awq-mxfp4",
+  "author": "gearwave00001",
+  "url": "https://huggingface.co/gearwave00001/Huihui-Qwen3.8-27B-Quark-AWQ-MXFP4",
+  "created_at": "2026-09-08T14:33:35.000Z",
+  "updated_at": "2026-09-08T15:05:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "quark",
+  "languages": [],
+  "tags": [
+    "quark",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "mxfp4",
+    "mixed-precision",
+    "amd",
+    "R9700",
+    "gfx1201",
+    "abliterated",
+    "huihui-ai",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15605868416,
+  "parameters_human": "15.61B",
+  "storage_bytes": 19810430184,
+  "storage_human": "19.8 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Macmillan Staffroom",
+      "url": "https://staffroom.pl/",
+      "snippet": ""
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "Instructions to use huihui-ai/Huihui-Qwen3.8-27B-abliterated with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Staffroom",
+      "url": "https://staffroom.pl/warunki-premium/",
+      "snippet": "Dostęp do materiałów w sekcji premium, w tym materiałów cyfrowych i testów może zostać przyznany jedynie w momencie …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Staffroom",
+      "url": "https://staffroom.pl/podreczniki/",
+      "snippet": "Znajdź podręczniki i materiały edukacyjne dla nauczycieli współpracujących z wydawnictwem Macmillan na Staffroom.pl."
+    }
+  ]
+}

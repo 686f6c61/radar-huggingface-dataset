@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ai-mitra/llm-router",
+  "slug": "ai-mitra-llm-router",
+  "author": "ai-mitra",
+  "url": "https://huggingface.co/ai-mitra/llm-router",
+  "created_at": "2026-09-08T11:05:11.000Z",
+  "updated_at": "2026-09-08T11:13:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "text-classification",
+    "sentence-transformers",
+    "llm-routing",
+    "task-classification",
+    "en",
+    "dataset:ai-mitra/llm-router-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9299,
+  "storage_human": "9299 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "View more Path to Astra: critical capabilities and frontier safeguards SafetySep 1, 2026 Jalapeño’s first results show industry-leading …"
+    },
+    {
+      "title": "ai-mitra/llm-router · Hugging Face",
+      "url": "https://huggingface.co/ai-mitra/llm-router",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use ai-mitra/llm-router with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use ai-mitra/llm-router with sentence-transformers:"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Sign up for free What’s on your mind today? What’s on your mind today? ChatGPT is AI. By using it, you agree to our Terms& …"
+    },
+    {
+      "title": "ai-mitra/llm-router at main - Hugging Face",
+      "url": "https://huggingface.co/ai-mitra/llm-router/tree/main",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use ai-mitra/llm-router with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use ai-mitra/llm-router with sentence-transformers:"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

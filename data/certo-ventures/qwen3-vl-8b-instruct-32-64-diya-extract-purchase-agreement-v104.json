@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Purchase-Agreement-v104",
+  "slug": "certo-ventures-qwen3-vl-8b-instruct-32-64-diya-extract-purchase-agreement-v104",
+  "author": "certo-ventures",
+  "url": "https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Purchase-Agreement-v104",
+  "created_at": "2026-09-08T14:57:12.000Z",
+  "updated_at": "2026-09-08T15:19:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1757679314,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhone & Android Spyware Detection | Certo Software",
+      "url": "https://www.certosoftware.com/",
+      "snippet": "I used Certo after I became concerned about the security of my phone, and I’m really glad I did. The software was easy to install, …"
+    },
+    {
+      "title": "qwen3-vl-8b-instruct-32-64-Diya-Extract-Wire-Instructions",
+      "url": "https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Wire-Instructions",
+      "snippet": "Instructions to use certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Wire-Instructions with libraries, inference providers, notebooks, and local apps. Follow ..."
+    },
+    {
+      "title": "Certo. Faim et soif — Restaurant italien & vins naturels, Ixelles",
+      "url": "https://certo.me/",
+      "snippet": "Certo, restaurant de cuisine italienne et vins naturels à Ixelles (Bruxelles). Rue Longue Vie 48. Ouvert du lundi soir au vendredi. …"
+    },
+    {
+      "title": "qwen3-vl-8b-instruct-32-64-Candor-Extract-dev - Hugging Face",
+      "url": "https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Candor-Extract-dev",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "Certo, Bruxelles - Menu du restaurant, prix et avis",
+      "url": "https://fr.restaurantguru.com/Certo-Brussels",
+      "snippet": "Aug 8, 2026 · Certo est un excellent italien qui a peu de choix sur son menu mais pour maitriser ce qu’ils vous font manger à la …"
+    }
+  ]
+}

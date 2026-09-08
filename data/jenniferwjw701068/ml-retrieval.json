@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jenniferwjw701068/ml-retrieval",
+  "slug": "jenniferwjw701068-ml-retrieval",
+  "author": "jenniferwjw701068",
+  "url": "https://huggingface.co/jenniferwjw701068/ml-retrieval",
+  "created_at": "2026-09-08T17:20:43.000Z",
+  "updated_at": "2026-09-08T17:20:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Las Cases Et Gurgout - Instagram",
+      "url": "https://www.instagram.com/popular/las-cases-et-gurgout/",
+      "snippet": "Watch short videos about las cases et gurgout from people around the world."
+    },
+    {
+      "title": "jenniferwjw701068 (Jennifer Williams) - Hugging Face",
+      "url": "https://huggingface.co/jenniferwjw701068/models",
+      "snippet": "User profile of Jennifer Williams on Hugging Face"
+    },
+    {
+      "title": "Emmanuel, comte de Las Cases - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Emmanuel,_comte_de_Las_Cases",
+      "snippet": "Toggle the table of contents. Emmanuel, comte de Las Cases. 18 languages. العربية. مصرى."
+    },
+    {
+      "title": "GitHub - yashagarwal1106/RecoverAI-revenue-recovery: ML-powered AI ...",
+      "url": "https://github.com/yashagarwal1106/RecoverAI-revenue-recovery",
+      "snippet": "RecoverAI — Intelligent AI Agent for Payment Revenue Recovery An ML-powered agent that predicts failed-payment recovery, selects optimal interventions, and maximizes recovered revenue."
+    },
+    {
+      "title": "Emmanuel de Las Cases — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Emmanuel_de_Las_Cases",
+      "snippet": "En cas de réutilisation des textes de cette page, voyez comment citer les auteurs et mentionner la licence. Wikipedia® est une …"
+    }
+  ]
+}

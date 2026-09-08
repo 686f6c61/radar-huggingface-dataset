@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "bnewmiller/distilbert-base-uncased-finetuned-squad-d5716d28",
+  "slug": "bnewmiller-distilbert-base-uncased-finetuned-squad-d5716d28",
+  "author": "bnewmiller",
+  "url": "https://huggingface.co/bnewmiller/distilbert-base-uncased-finetuned-squad-d5716d28",
+  "created_at": "2026-09-08T13:22:44.000Z",
+  "updated_at": "2026-09-08T13:22:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "question-answering",
+    "en",
+    "dataset:squad",
+    "arxiv:1910.01108",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 265501175,
+  "storage_human": "266 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

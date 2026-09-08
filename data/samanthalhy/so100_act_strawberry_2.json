@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "samanthalhy/so100_act_strawberry_2",
+  "slug": "samanthalhy-so100_act_strawberry_2",
+  "author": "samanthalhy",
+  "url": "https://huggingface.co/samanthalhy/so100_act_strawberry_2",
+  "created_at": "2026-09-08T14:43:10.000Z",
+  "updated_at": "2026-09-08T14:43:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:samanthalhy/so100_strawberry_2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206708248,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3BMETEO.com - Meteo e Previsioni del tempo in Italia",
+      "url": "https://www.3bmeteo.com/",
+      "snippet": "METEO ☀ Italia: . . Meteo e previsioni del tempo. Le previsioni in Italia e nel mondo, il giornale meteo con le news. Previsioni neve, …"
+    },
+    {
+      "title": "samanthalhy/so100_strawberry_1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/samanthalhy/so100_strawberry_1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Previsioni Meteo Roma Oggi - Fino a 15 Giorni - 3B Meteo",
+      "url": "https://www.3bmeteo.com/meteo/roma",
+      "snippet": "Jul 15, 2024 · Meteo Roma oggi &#9728; (precipitazioni, temperature e venti). Le previsioni del tempo a Roma aggiornate e affidabili …"
+    },
+    {
+      "title": "samanthalhy (Samantha Lee) - Hugging Face",
+      "url": "https://huggingface.co/samanthalhy",
+      "snippet": "None public yet datasets14 Sort: Recently updated samanthalhy/eval_so100_herding_3_v1_act Viewer • Updated about 4 hours ago• 49.7k samanthalhy/so100_herding_3 Viewer • Updated 1 day ago• 134k"
+    },
+    {
+      "title": "Previsioni Meteo Bergamo Oggi - Fino a 15 Giorni - 3B Meteo",
+      "url": "https://www.3bmeteo.com/meteo/bergamo",
+      "snippet": "17 hours ago · Meteo Bergamo oggi &#9729; (precipitazioni, temperature e venti). Le previsioni del tempo a Bergamo aggiornate e …"
+    }
+  ]
+}

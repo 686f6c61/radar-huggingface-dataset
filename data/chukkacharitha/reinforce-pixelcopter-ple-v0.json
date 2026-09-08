@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ChukkaCharitha/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "chukkacharitha-reinforce-pixelcopter-ple-v0",
+  "author": "ChukkaCharitha",
+  "url": "https://huggingface.co/ChukkaCharitha/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-09-08T17:50:26.000Z",
+  "updated_at": "2026-09-08T18:02:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40061,
+  "storage_human": "40061 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tempura Nedir, Nasıl Yapılır, Püf Noktaları Nelerdir? - Pratik, Nefis ...",
+      "url": "https://yemek.com/tempura-nasil-yapilir/",
+      "snippet": "Nov 8, 2021 · Aslında çok pratik olan tempura işlemi ile ilgili bilmeniz gereken püf noktaları da hemen sıralayalım: Tempura hamurunu …"
+    },
+    {
+      "title": "Adilbai/Pixelcopter-RL · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/Pixelcopter-RL",
+      "snippet": "Model Description This repository contains a trained REINFORCE (Policy Gradient) reinforcement learning agent that has learned to play Pixelcopter-PLE-v0, a challenging helicopter navigation game from the PyGame Learning Environment (PLE)."
+    },
+    {
+      "title": "Tempura Hamuru ( Çıtır Çıtır Kabak ... - Nefis Yemek Tarifleri",
+      "url": "https://www.nefisyemektarifleri.com/tempura-hamuru-citir-citir-kabak-tempura/",
+      "snippet": "Feb 11, 2022 · Siz de Japonlar gibi yağda kızardığı halde yağ çekmeyen çıtır çıtır sıra dışı bir tempura hamuru yapmak ister misiniz?? …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=pixelcopter",
+      "snippet": "Reinforcement Learning •Updated Dec 27, 2025 metapat973/Reinforce-Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "Tempura Tarifi, Nasıl Yapılır? - Yemek.com - Yemek.com",
+      "url": "https://yemek.com/tarif/tempura/",
+      "snippet": "Jun 20, 2018 · Öyleyse taptaze sebzeleri, tavukları ve deniz ürünlerini kullanarak yapabileceğiniz, onlara bambaşka bir tat katacak …"
+    }
+  ]
+}

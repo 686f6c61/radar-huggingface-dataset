@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "OpenSakura/OpenSakura-EXP-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft",
+  "slug": "opensakura-opensakura-exp-260906-ln-ja-zh-sft-qwen36-35b-a3b-sft",
+  "author": "OpenSakura",
+  "url": "https://huggingface.co/OpenSakura/OpenSakura-EXP-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft",
+  "created_at": "2026-09-08T12:05:26.000Z",
+  "updated_at": "2026-09-08T12:09:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209071321128,
+  "storage_human": "209.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regenradar Breda - live buien radar | Weerplaza.nl",
+      "url": "https://www.weerplaza.nl/regenradar/breda/7046/",
+      "snippet": "Bekijk de regenradar van Breda bij Weerplaza.nl. Live buien radar Actuele neerslagverwachting Breda"
+    },
+    {
+      "title": "OpenSakura/OpenSakura-MODEL-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft at main",
+      "url": "https://huggingface.co/OpenSakura/OpenSakura-MODEL-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft/tree/main",
+      "snippet": "OpenSakura / OpenSakura-MODEL-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft like 0 Follow OpenSakura 9 Translation Transformers Safetensors Japanese Chinese qwen3_5_moe image-text-to-text qwen opensakura Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries Transformers"
+    },
+    {
+      "title": "Regenradar Breda (4834) - live buien radar | Weerplaza.nl",
+      "url": "https://www.weerplaza.nl/regenradar/4834-(breda)/2252/",
+      "snippet": "Na een behoorlijk warme maandag krijgen we de komende tijd heel ander weer. In de kustgebieden kan het soms zelfs onstuimig …"
+    },
+    {
+      "title": "OpenSakura - GitHub",
+      "url": "https://github.com/OpenSakura/",
+      "snippet": "OpenSakura-EXP-260419-LN-ja-zh-PT-qwen36-35b-a3b-cpt Public Python 0 MIT 0 0 0 Updated on Apr 30"
+    },
+    {
+      "title": "Regenradar 24 uur Breda - actuele buien radar | Weerplaza.nl",
+      "url": "https://www.weerplaza.nl/regenradar/breda/7046/24uur-regen-prognose/",
+      "snippet": "5 days ago · Gaat het regenen? Bekijk de regenradar Breda voor de komende 24 uur. Bekijk de live buien radar met een prognose …"
+    }
+  ]
+}

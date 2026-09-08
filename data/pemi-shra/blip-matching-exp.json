@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "PEMI-SHRA/blip-matching-exp",
+  "slug": "pemi-shra-blip-matching-exp",
+  "author": "PEMI-SHRA",
+  "url": "https://huggingface.co/PEMI-SHRA/blip-matching-exp",
+  "created_at": "2026-09-08T15:18:00.000Z",
+  "updated_at": "2026-09-08T15:18:08.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Μετάφραση Google",
+      "url": "https://translate.google.gr/",
+      "snippet": "Η υπηρεσία της Google, που προσφέρεται χωρίς χρέωση, μεταφράζει άμεσα λέξεις, φράσεις και ιστοσελίδες μεταξύ Ελληνικών και …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Μετάφραση Google",
+      "url": "https://translate.google.gr/details",
+      "snippet": "Κλείσιμο εργαλείου επιλογής Αναζήτηση γλωσσών"
+    },
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Μετάφραση Google",
+      "url": "https://translate.google.gr/m",
+      "snippet": "Αναγνώριση γλώσσας→ Ελληνικά Αρχική σελίδα Google"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vicious999/aadd14",
+  "slug": "vicious999-aadd14",
+  "author": "vicious999",
+  "url": "https://huggingface.co/vicious999/aadd14",
+  "created_at": "2026-09-08T17:17:58.000Z",
+  "updated_at": "2026-09-08T17:17:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Monarch Aviation",
+      "url": "https://www.monarch-aviation.com/",
+      "snippet": "Date Add return 1passenger Need more flights? Switch tomulti-city SERVICES EXCEEDING EXCELLENCE IS OUR ETHOS …"
+    },
+    {
+      "title": "vicious999 (badassmentor) - Hugging Face",
+      "url": "https://huggingface.co/vicious999",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 2 hours ago ... updated a model about 2 hours ago"
+    },
+    {
+      "title": "Monarch Airlines - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Monarch_Airlines",
+      "snippet": "this site, you agree to the Terms of Useand Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a …"
+    },
+    {
+      "title": "vicious999 (badassmentor) - Hugging Face",
+      "url": "https://huggingface.co/vicious999/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a model 29 days ago ... updated a model 29 days ago"
+    },
+    {
+      "title": "Home [www.letsmonarch.com]",
+      "url": "https://www.letsmonarch.com/home",
+      "snippet": "Frequently Asked Questions. Is Monarch coming back? Yes - our plan is to return the much-loved Monarch name to the UK skies by …"
+    }
+  ]
+}

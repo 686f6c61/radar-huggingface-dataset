@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "EphAsad/Satella-0.8B-GGUF",
+  "slug": "ephasad-satella-0-8b-gguf",
+  "author": "EphAsad",
+  "url": "https://huggingface.co/EphAsad/Satella-0.8B-GGUF",
+  "created_at": "2026-09-08T15:43:37.000Z",
+  "updated_at": "2026-09-08T15:44:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "qwen3.5",
+    "reasoning",
+    "lora",
+    "unsloth",
+    "satella",
+    "atem",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 749249696,
+  "storage_human": "749 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IMF DataMapper",
+      "url": "https://www.imf.org/external/datamapper/profile/TUN",
+      "snippet": "Primary net lending/borrowing (also referred as primary balance) % of GDP -3.4 2026"
+    },
+    {
+      "title": "EphAsad/Satella-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/EphAsad/Satella-30B-A3B",
+      "snippet": "Satella-30B-A3B is the large sparse reasoning branch of the Atem model series. It begins from the already post-trained Qwen/Qwen3-30B-A3B checkpoint and preserves the base model's native dual-mode reasoning behaviour rather than erasing and rebuilding it in separate stages."
+    },
+    {
+      "title": "Tunisia and the IMF",
+      "url": "https://www.imf.org/en/countries/tun",
+      "snippet": "This web page provides information on official IMF reports and Executive Board documents in English that deal with Tunisia."
+    },
+    {
+      "title": "EphAsad/Satella-30B-A3B at main - Hugging Face",
+      "url": "https://huggingface.co/EphAsad/Satella-30B-A3B/tree/main",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use EphAsad/Satella-30B-A3B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use EphAsad/Satella-30B-A3B with Transformers:"
+    },
+    {
+      "title": "Tunisia Economic Forecast 2026–2030 — GDP Growth, Inflation",
+      "url": "https://statisticsoftheworld.com/country/tunisia/forecast",
+      "snippet": "Tunisia economic forecast: GDP growth, inflation, unemployment, and government debt projections for 2026–2030. IMF World …"
+    }
+  ]
+}

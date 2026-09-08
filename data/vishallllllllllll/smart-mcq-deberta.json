@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vishallllllllllll/smart-mcq-deberta",
+  "slug": "vishallllllllllll-smart-mcq-deberta",
+  "author": "vishallllllllllll",
+  "url": "https://huggingface.co/vishallllllllllll/smart-mcq-deberta",
+  "created_at": "2026-09-08T10:10:56.000Z",
+  "updated_at": "2026-09-08T12:15:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "multiple-choice",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "multiple-choice",
+    "deberta-v3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184422913,
+  "parameters_human": "184.4M",
+  "storage_bytes": 740180812,
+  "storage_human": "740 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avanza",
+      "url": "https://www.avanza.se/logga-in.html",
+      "snippet": "Avanza erbjuder ett enklare sparande i fonder och aktier. Kom igång med ett sparande på 3 minuter. Välkommen till Avanza – en …"
+    },
+    {
+      "title": "22ds300103 (vatchala) - Hugging Face",
+      "url": "https://huggingface.co/22ds300103",
+      "snippet": "Smart MCQ Solver 🧠 Rank five MCQ options with a fine-tuned DeBERTa-v3 NLI model 22ds300103 2 days ago"
+    },
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "一般咸鱼，转转用过一次，一次就够了，那时我有一台一加手机准备出掉，看看转转估价1000，就寄了过去，过了两天，接到转转电 …"
+    },
+    {
+      "title": "Aarushive/smart-mcq-solver-deberta-lora · Hugging Face",
+      "url": "https://huggingface.co/Aarushive/smart-mcq-solver-deberta-lora",
+      "snippet": "Instructions to use Aarushive/smart-mcq-solver-deberta-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Aarushive/smart-mcq-solver-deberta-lora with Transformers:"
+    },
+    {
+      "title": "打游戏时怎么骂老外比较解气？ - 知乎",
+      "url": "https://www.zhihu.com/question/269561421",
+      "snippet": "玩美服王者荣耀，被老外骂chink，好气，结果自己只会fk sh*t这种词，所以怎么骂回去比较解气呢！"
+    }
+  ]
+}

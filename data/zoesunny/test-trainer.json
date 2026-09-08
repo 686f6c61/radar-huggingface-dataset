@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zoesunny/test-trainer",
+  "slug": "zoesunny-test-trainer",
+  "author": "zoesunny",
+  "url": "https://huggingface.co/zoesunny/test-trainer",
+  "created_at": "2026-09-08T16:58:18.000Z",
+  "updated_at": "2026-09-08T16:58:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109485316,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437969977,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "zoesunny (Zoe C) - Hugging Face",
+      "url": "https://huggingface.co/zoesunny",
+      "snippet": "Zoe C zoesunny Follow AI & ML interests None yet Recent Activity publisheda modelabout 5 hours ago"
+    },
+    {
+      "title": "двойное снятие средств в Ютуб",
+      "url": "https://support.google.com/youtube/thread/444212840/%D0%B4%D0%B2%D0%BE%D0%B9%D0%BD%D0%BE%D0%B5-%D1%81%D0%BD%D1%8F%D1%82%D0%B8%D0%B5-%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2-%D0%B2-%D0%AE%D1%82%D1%83%D0%B1?hl=ru",
+      "snippet": "Jun 22, 2026 · пополнил сегодня карту и оплатил Ютуб премиум пришел чек по типу прокат видео от Ютуба и зачислился …"
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "Сегодня не работает Ютуб - Woman.ru",
+      "url": "https://www.woman.ru/rest/freetime/thread-segodnya-ne-rabotaet-yutub-id6429366/",
+      "snippet": "May 28, 2026 · 69 ответов - А у вас? Сегодня не работает Ютуб, хотя на днях работал со всеми моими впн. (6429366) - …"
+    }
+  ]
+}

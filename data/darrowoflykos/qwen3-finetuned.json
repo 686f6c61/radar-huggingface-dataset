@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "darrowoflykos/qwen3-finetuned",
+  "slug": "darrowoflykos-qwen3-finetuned",
+  "author": "darrowoflykos",
+  "url": "https://huggingface.co/darrowoflykos/qwen3-finetuned",
+  "created_at": "2026-09-08T18:02:27.000Z",
+  "updated_at": "2026-09-08T18:02:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203562947,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tanie Loty i Bilety do: Sapporo od 3 424 zł | Skyscanner",
+      "url": "https://www.skyscanner.pl/loty-do/spka/tanie-loty-do-sapporo.html",
+      "snippet": "Aby znaleźć najtańsze połączenia, porównaliśmy ceny biletów lotniczych we wszystkich głównych internetowych biurach podróży i …"
+    },
+    {
+      "title": "darrowoflykos/qwen3.5-2b-zeta-sft · Hugging Face",
+      "url": "https://huggingface.co/darrowoflykos/qwen3.5-2b-zeta-sft",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tanie loty z: Warszawa (WARS) → Sapporo (SPKA) od 3 424 zł",
+      "url": "https://www.skyscanner.pl/trasy/wars/spka/warszawa-do-sapporo.html",
+      "snippet": "Od LOT-u po międzynarodowych przewoźników, takich jak Emirates – porównujemy wszystkie główne linie lotnicze i …"
+    },
+    {
+      "title": "Qwen-3 Fine Tuning Made Easy: Create Custom AI Models with Python and ...",
+      "url": "https://pub.towardsai.net/qwen-3-fine-tuning-made-easy-create-custom-ai-models-with-python-and-unsloth-b1a8f684c3f1",
+      "snippet": "The benchmarks are outperforming major LLMs, including models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro. Additionally, the small MoE model, Qwen3–30B-A3B, outcompetes Qwen-32B with 10 times of activated parameters, and even a tiny model like Qwen3–4B can rival the performance of Qwen2.5–72B-Instruct."
+    },
+    {
+      "title": "Tanie loty do Sapporo (SPK) | Tanie bilety lotnicze | Trip.com Polska",
+      "url": "https://pl.trip.com/flights/to-sapporo/airfares-spk/",
+      "snippet": "Oszczędzaj na tanich lotach do Sapporo. Wyszukuj i porównuj rabaty na loty do Sapporo według ceny. Rezerwuj tanie bilety lotnicze …"
+    }
+  ]
+}

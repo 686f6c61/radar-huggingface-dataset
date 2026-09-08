@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bosflores/blip-baseline",
+  "slug": "bosflores-blip-baseline",
+  "author": "bosflores",
+  "url": "https://huggingface.co/bosflores/blip-baseline",
+  "created_at": "2026-09-08T14:46:13.000Z",
+  "updated_at": "2026-09-08T14:46:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV - Watch & DVR Live Sports, Shows & News",
+      "url": "https://tv.youtube.com/welcome/",
+      "snippet": "YouTube TV offers a wide variety of live and on-demand content, including popular sports, must-watch shows, breaking news, and …"
+    },
+    {
+      "title": "BLIP - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.53.3/en/model_doc/blip",
+      "snippet": "It is used to instantiate a BLIP vision model according to the specified arguments, defining the model architecture. Instantiating a configuration defaults will yield a similar configuration to that of the Blip-base Salesforce/blip-vqa-base architecture. Configuration objects inherit from PretrainedConfig and can be used to control the model ..."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "gizmo-ai/blip-image-captioning-base · Hugging Face",
+      "url": "https://huggingface.co/gizmo-ai/blip-image-captioning-base",
+      "snippet": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation Model card for image captioning pretrained on COCO dataset - base architecture (with ViT base backbone)."
+    },
+    {
+      "title": "YouTube TV - YouTube",
+      "url": "https://www.youtube.com/@youtubetv",
+      "snippet": "YouTube TV is a TV streaming service that lets you watch live TV from ABC, CBS, ESPN, FOX, NBC, and popular cable networks. …"
+    }
+  ]
+}

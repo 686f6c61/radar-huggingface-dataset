@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-Qwen3.8-27B-NVFP4-DFlash2-Ablit-Cybersecurity-Unlock-1M-Context-YARN-Single-DGXSpark",
+  "slug": "drowzeys-keys-qwen3-8-27b-nvfp4-dflash2-ablit-cybersecurity-unlock-1m-context-yarn-single-dgxspark",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-Qwen3.8-27B-NVFP4-DFlash2-Ablit-Cybersecurity-Unlock-1M-Context-YARN-Single-DGXSpark",
+  "created_at": "2026-09-08T17:40:53.000Z",
+  "updated_at": "2026-09-08T17:46:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "qwen38",
+    "qwen3_5",
+    "nvfp4",
+    "dflash2",
+    "speculative-decoding",
+    "abliterated",
+    "uncensored",
+    "cybersecurity",
+    "yarn",
+    "long-context",
+    "dgx-spark",
+    "gb10",
+    "aeon-7",
+    "community-compile",
+    "text-generation",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=26ef9daf8ac66f2328f28a618b6d6e23",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "Instructions to use unsloth/Qwen3.8-27B-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ldov/Krea-2-Turbo-GGUF",
+  "slug": "ldov-krea-2-turbo-gguf",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/Krea-2-Turbo-GGUF",
+  "created_at": "2026-09-08T15:25:42.000Z",
+  "updated_at": "2026-09-08T15:25:43.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "gguf",
+    "text-to-image",
+    "en",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:quantized:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12895570508,
+  "parameters_human": "12.90B",
+  "storage_bytes": 108126543520,
+  "storage_human": "108.1 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers",
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vantagewithai/Krea-2-Turbo-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vantagewithai/Krea-2-Turbo-GGUF",
+      "snippet": "This repository provides GGUF quantized version of the Krea 2 OSS Turbo. ... See our collection of in-house trained LoRAs trained on Raw and meant to be used with Turbo: Krea-2 LoRA Collection ... Model Developer: Krea.ai, Inc."
+    },
+    {
+      "title": "YIAHO : L'intelligence artificielle gratuite en ligne & française",
+      "url": "https://www.yiaho.com/",
+      "snippet": "Ce qui rend Yiaho unique : notre IA est totalement gratuite et illimitée, ce qui permet à tous d’y avoir accès en ligne, librement, et …"
+    },
+    {
+      "title": "Run Krea-2-Turbo GGUF Locally: Fast AI Image Gen Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-krea-2-turbo-gguf-local-high-speed-image-gen",
+      "snippet": "The GGUF format allows this model to run efficiently on CPU+GPU hybrid setups, making it accessible even for machines with limited VRAM. ... Use the `q4_k_m` variant for maximum speed on 8GB VRAM cards. Use `q5_k_m` or `q8_0` if you prioritize image quality and have 12GB+ VRAM. ... Krea-2-Turbo-GGUF is designed to run within the `llama.cpp` ecosystem, which provides the necessary inference engine for GGUF files."
+    },
+    {
+      "title": "r/StableDiffusion on Reddit: Krea2 GGUF & FP8 models and workflows - 8 GB should work",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1udyh5k/krea2_gguf_fp8_models_and_workflows_8_gb_should/",
+      "snippet": ""
+    },
+    {
+      "title": "IA Gratuite En Ligne - En Français - Sans Inscription",
+      "url": "https://nation.fr/ia-gratuite/",
+      "snippet": "Essayez dès maintenant l'IA gratuite Nation AI. Une intelligence artificielle accessible gratuitement et sans inscription, en français."
+    }
+  ]
+}

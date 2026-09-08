@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aariciah/gpt2-persian-dutch-routed",
+  "slug": "aariciah-gpt2-persian-dutch-routed",
+  "author": "aariciah",
+  "url": "https://huggingface.co/aariciah/gpt2-persian-dutch-routed",
+  "created_at": "2026-09-08T10:41:21.000Z",
+  "updated_at": "2026-09-08T11:01:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:aariciah/gpt2-persian-20k-lc",
+    "base_model:finetune:aariciah/gpt2-persian-20k-lc",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 114794496,
+  "parameters_human": "114.8M",
+  "storage_bytes": 5051128593,
+  "storage_human": "5.1 GB",
+  "base_model": "aariciah/gpt2-persian-20k-lc",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "aariciah/gpt2-persian-dutch-merge · Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-persian-dutch-merge",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Compte et connexion | Perplexity Help Center",
+      "url": "https://www.perplexity.ai/help-center/fr/collections/18799293-compte-et-connexion",
+      "snippet": "Découvrez qui possède un compte Perplexity, comment fonctionnent la gestion de l’e-mail et de l’abonnement, ainsi que les étapes …"
+    },
+    {
+      "title": "aariciah/gpt2-persian-dutch-merge - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/aariciah/gpt2-persian-dutch-merge",
+      "snippet": "Power agentic AI with GLM-5.1, now live on FriendliAI — Get Started aariciah gpt2-persian-dutch-merge Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "Login",
+      "url": "https://agate.i.perplexity.ai/",
+      "snippet": "Login. Username: Password: Forgot your password?"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vu1-984z/tiny-transformer-finetuned",
+  "slug": "vu1-984z-tiny-transformer-finetuned",
+  "author": "vu1-984z",
+  "url": "https://huggingface.co/vu1-984z/tiny-transformer-finetuned",
+  "created_at": "2026-09-08T13:08:25.000Z",
+  "updated_at": "2026-09-08T13:08:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "برج خليفة - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D8%AC_%D8%AE%D9%84%D9%8A%D9%81%D8%A9",
+      "snippet": "↑صرح مصمم برج خليفة المعماري الأمريكي الشهير أدريان سميث انه أراد أن يعطي للبرج طابعًا إسلاميًا مستوحى من العمارة العربية الإسلامية فاستوحاه من تصميم ملوية سامراء عندنا في العراق."
+    },
+    {
+      "title": "mingzhang6247/tiny-transformer-finetuned · Hugging Face",
+      "url": "https://huggingface.co/mingzhang6247/tiny-transformer-finetuned",
+      "snippet": "Files License Tiny Transformer for Multitask Overview Working implementation of Tiny Transformerfor Multitaskusing a smallconfiguration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted. Repository status The Python file contains the model and runnable example or training entry point."
+    },
+    {
+      "title": "استمتع بتجربة الإقامة وزيارة برج خليفة | برج خليفة",
+      "url": "https://www.burjkhalifa.ae/ar/",
+      "snippet": "احجز إقامتك وزيارتك لبرج خليفة. استمتع بتجارب فريدة مثل إقامات فخمة، استمتع بالهدوء في نافورة دبي ولحظات ساحرة في دبي أوبرا والمطاعم الفاخرة، ومنصات المراقبة، والاسترخاء والمزيد في قلب …"
+    },
+    {
+      "title": "vu1-984z (Phan Trang) - Hugging Face",
+      "url": "https://huggingface.co/vu1-984z",
+      "snippet": "vu1-984z Follow saralabs1042 AI & ML interests None yet Recent Activity updateda modelabout 10 hours ago"
+    },
+    {
+      "title": "برج خليفة دبي - الدليل الرسمي لأطول مبنى في العالم",
+      "url": "https://www.theburjdubai.ae/ar",
+      "snippet": "1 day ago · اكتشف برج خليفة — أعجوبة دبي المعمارية بارتفاع 828 مترًا و163 طابقًا، يتجاوز برج خليفة فكرة ‘الأطول’ ليصبح بيانًا لطموح الإنسان وبراعة الهندسة."
+    }
+  ]
+}

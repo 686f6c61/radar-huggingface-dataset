@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vvsotnikov/Qwen3.8-27B-test-GGUF",
+  "slug": "vvsotnikov-qwen3-8-27b-test-gguf",
+  "author": "vvsotnikov",
+  "url": "https://huggingface.co/vvsotnikov/Qwen3.8-27B-test-GGUF",
+  "created_at": "2026-09-08T10:32:18.000Z",
+  "updated_at": "2026-09-08T10:56:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "quantized",
+    "speculative-decoding",
+    "image-text-to-text",
+    "base_model:vvsotnikov/Qwen3.8-27B-test",
+    "base_model:quantized:vvsotnikov/Qwen3.8-27B-test",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 37277563552,
+  "storage_human": "37.3 GB",
+  "base_model": "vvsotnikov/Qwen3.8-27B-test",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVMS Lite 2.1 Download: How To Install NVMS on PC/Mac",
+      "url": "https://cctvdesk.com/nvms-lite-download-pc-windows-mac/",
+      "snippet": "Get the NVMS Lite 2.1 Download link free here. This is the CMS for TVT IP cameras and using this you can watch CCTV cameras on …"
+    },
+    {
+      "title": "vvsotnikov/Qwen3.8-27B-test · Hugging Face",
+      "url": "https://huggingface.co/vvsotnikov/Qwen3.8-27B-test",
+      "snippet": "vvsotnikov / Qwen3.8-27B-test like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 Merge linear-merge conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "NVMS V2.0 Lite Download | Video Surveillance Software",
+      "url": "https://www.vantagesecurity.com/product/nvms-20-lite/55280",
+      "snippet": "NVMS V2.0 Lite is a newly integrated security management platform released by vantage, featuring seamless access to all vantage …"
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVMS Lite",
+      "url": "https://www.tvt.net.cn/downloadFile/download?fileId=1456",
+      "snippet": "NVMS Lite is a newly integrated security management platform released by TVT, featuring seamless access to all TVT's products …"
+    }
+  ]
+}

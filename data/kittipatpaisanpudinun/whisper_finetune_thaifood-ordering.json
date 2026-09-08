@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KittipatPaisanpudinun/Whisper_Finetune_ThaiFood-Ordering",
+  "slug": "kittipatpaisanpudinun-whisper_finetune_thaifood-ordering",
+  "author": "KittipatPaisanpudinun",
+  "url": "https://huggingface.co/KittipatPaisanpudinun/Whisper_Finetune_ThaiFood-Ordering",
+  "created_at": "2026-09-08T15:19:03.000Z",
+  "updated_at": "2026-09-08T15:19:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skuola.net - Portale per Studenti: Materiali, Appunti e Notizie",
+      "url": "https://www.skuola.net/",
+      "snippet": "Entra su Skuola.net, il portale per gli studenti dove trovare materiali per medie e superiori, appunti universitari e le ultime notizie a …"
+    },
+    {
+      "title": "kittipatpaisanpudinun · GitHub",
+      "url": "https://github.com/kittipatpaisanpudinun",
+      "snippet": "GitHub is where kittipatpaisanpudinun builds software. Joined Aug 24, 2026 Block or report kittipatpaisanpudinun Block user"
+    },
+    {
+      "title": "Vita e opere di Ariosto, riassunto - Skuola.net",
+      "url": "https://www.skuola.net/appunti-italiano/ariosto-ludovico/ludovico-ariosto/ludovico-ariosto-vita.html",
+      "snippet": "Feb 1, 2007 · Appunto di letteratura italiana per le scuole superiori con analisi della vita e delle principali opere dello scrittore italiano …"
+    },
+    {
+      "title": "GitHub - kittipat12zxc/whisper-finetune3: Fine-tune and evaluate ...",
+      "url": "https://github.com/kittipat12zxc/whisper-finetune3",
+      "snippet": "Fine-tuning and evaluating Whisper models for Automatic Speech Recognition This repository contains the relevant scripts to fine-tune and evaluate Whisper models of various configurations available over huggingface 🤗."
+    },
+    {
+      "title": "Capitolo 21 Promessi Sposi - Riassunto - Skuola.net",
+      "url": "https://www.skuola.net/manzoni/riassunti-promessi-sposi/riassunto-capitolo-21-promessi-sposi.html",
+      "snippet": "May 25, 2026 · Appunti Italiano per la scuola superiore: Riassunti e Appunti Alessandro Manzoni Riassunti Promessi Sposi Capitolo …"
+    }
+  ]
+}

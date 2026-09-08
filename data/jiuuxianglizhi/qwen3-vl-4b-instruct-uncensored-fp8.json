@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jiuuxianglizhi/Qwen3-VL-4B-Instruct-Uncensored-FP8",
+  "slug": "jiuuxianglizhi-qwen3-vl-4b-instruct-uncensored-fp8",
+  "author": "jiuuxianglizhi",
+  "url": "https://huggingface.co/jiuuxianglizhi/Qwen3-VL-4B-Instruct-Uncensored-FP8",
+  "created_at": "2026-09-08T17:30:51.000Z",
+  "updated_at": "2026-09-08T17:30:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "fp32",
+    "vision",
+    "qwen",
+    "qwen3 vl",
+    "image to text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 5683947096,
+  "storage_human": "5.7 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "Qwen/Qwen3-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "Instructions to use Qwen/Qwen3-VL-4B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "Qwen/Qwen3-VL-4B-Instruct-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct-FP8",
+      "snippet": "Instructions to use Qwen/Qwen3-VL-4B-Instruct-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google aile Yt premium çalışmıyor - Google Arama ve Asistan Topluluğu",
+      "url": "https://support.google.com/websearch/thread/415840269/google-aile-yt-premium-%C3%A7al%C4%B1%C5%9Fm%C4%B1yor?hl=tr",
+      "snippet": "Mar 9, 2026 · Bu yardım içeriği ve bilgileriYardım Merkezi ile ilgili genel deneyim"
+    }
+  ]
+}

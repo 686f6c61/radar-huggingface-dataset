@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "BhimalRahul/q-Taxi-v3",
+  "slug": "bhimalrahul-q-taxi-v3",
+  "author": "BhimalRahul",
+  "url": "https://huggingface.co/BhimalRahul/q-Taxi-v3",
+  "created_at": "2026-09-08T15:28:49.000Z",
+  "updated_at": "2026-09-08T15:28:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154264,
+  "storage_human": "154264 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Descargar la aplicación Google Meet - Ordenador - Ayuda de Google …",
+      "url": "https://support.google.com/meet/answer/12387350?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Meet es la única aplicación que necesitas para hacer videollamadas y tener reuniones en todos los dispositivos. Utiliza …"
+    },
+    {
+      "title": "Rudder-AmitBirmal/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/Rudder-AmitBirmal/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "Google Meet 앱 다운로드하기 - 컴퓨터 - Google Meet 고객센터",
+      "url": "https://support.google.com/meet/answer/12387350?hl=ko&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Meet 앱으로 다음 작업을 할 수 있습니다. 회의를 만들거나 링크를 통해 예약되었거나 즉석에서 클라우드 암호화된 Google Meet …"
+    },
+    {
+      "title": "q-Taxi-v3 huggingface.co api & arampacha q-Taxi-v3 github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/arampacha-q-taxi-v3",
+      "snippet": "q-Taxi-v3 is an open source model from GitHub that offers a free installation service, and any user can find q-Taxi-v3 on GitHub to install. At the same time, huggingface.co provides the effect of q-Taxi-v3 install, users can directly use q-Taxi-v3 installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "下載 Google Meet 應用程式 - 電腦 - Google Meet說明",
+      "url": "https://support.google.com/meet/answer/12387350?hl=zh-Hant&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Meet 中的活動變更自己和其他人的畫面在會議中分享螢幕畫面背景和回應主辦人控制項無障礙功能Chat in a Meeting 會議結 …"
+    }
+  ]
+}

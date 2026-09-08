@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dedonnoc/retinal-models-mouse",
+  "slug": "dedonnoc-retinal-models-mouse",
+  "author": "dedonnoc",
+  "url": "https://huggingface.co/dedonnoc/retinal-models-mouse",
+  "created_at": "2026-09-08T15:06:38.000Z",
+  "updated_at": "2026-09-08T15:06:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "grelu",
+  "languages": [],
+  "tags": [
+    "grelu",
+    "genomics",
+    "atac-seq",
+    "retina",
+    "mouse",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1715657503,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Griechenland: Bekannte Personen | Länder - Goruma",
+      "url": "https://www.goruma.de/laender/europa/griechenland/persoenlichkeiten",
+      "snippet": "Sein in der Antike berühmtestes Werk war die Statue der Athena Lemnia in Athen. Aber auch die Kolossalstatue, das 12 m hohe …"
+    },
+    {
+      "title": "Retinal Disease Classification Using DeepONet and Ensemble Model with ...",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-22118-6_29",
+      "snippet": "People with family members who have had problems with their eyes have suffered from eye injuries, have diabetes or are over a certain age. A significant amount, more than the age of 60, are more likely to develop eye disorders. Getting this diagnosed early is..."
+    },
+    {
+      "title": "Griechenland berühmte Personen | Griechenland Guru",
+      "url": "https://www.griechenland.guru/griechenland/beruehmte-personen/",
+      "snippet": "Berühmte Personen aus Griechenland Hier sind zehn von Griechenlands berühmtesten Personen und Promis, deren Leben und …"
+    },
+    {
+      "title": "JCI Insight - Allotopic Expression of ND6 Restores Vision in a ...",
+      "url": "https://insight.jci.org/articles/view/209108",
+      "snippet": "However, the in vivo evaluation of allotopic gene therapy has been hindered by optimization challenges and the lack of appropriate animal models. Here, we overcome these limitations by utilizing an optimized AAV2-ND6 construct with codon optimization and mitochondrial targeting sequence in a mouse model bearing the homoplasmic ND6 P25L mutation ..."
+    },
+    {
+      "title": "Bekannte Persönlichkeiten aus Griechenland – Der …",
+      "url": "https://www.griechenlandreise-blog.de/kultur/bekannte-persoenlichkeiten-aus-griechenland",
+      "snippet": "Von erlesenen Weinsorten bis hin zu traumhaft schönen Inseln – Griechenland hat Einheimischen und Touristen einiges zu bieten. In …"
+    }
+  ]
+}

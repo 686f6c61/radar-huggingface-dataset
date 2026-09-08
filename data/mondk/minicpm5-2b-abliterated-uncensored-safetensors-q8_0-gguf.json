@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-Q8_0-GGUF",
+  "slug": "mondk-minicpm5-2b-abliterated-uncensored-safetensors-q8_0-gguf",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-Q8_0-GGUF",
+  "created_at": "2026-09-08T12:30:34.000Z",
+  "updated_at": "2026-09-08T12:30:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+    "base_model:quantized:mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 2679701536,
+  "storage_human": "2.7 GB",
+  "base_model": "mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT \"DAN\" (and other \"Jailbreaks\") NOTE: As of 20230711, the DAN 12.0 prompt is working properly with Model GPT-3.5 All …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "README.md · openbmb/MiniCPM5-2B-SFT at main - Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-SFT/blob/main/README.md",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Có cách khôi phục đoạn chat đã xóa trên ChatGPT không? Làm sao để lưu trữ hiệu quả các đoạn chat để dễ tìm lại? …"
+    }
+  ]
+}

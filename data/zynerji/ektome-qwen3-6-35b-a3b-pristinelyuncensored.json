@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored",
+  "slug": "zynerji-ektome-qwen3-6-35b-a3b-pristinelyuncensored",
+  "author": "Zynerji",
+  "url": "https://huggingface.co/Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored",
+  "created_at": "2026-09-08T10:53:08.000Z",
+  "updated_at": "2026-09-08T10:58:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "ektome",
+    "abliterated",
+    "uncensored",
+    "pristinely-uncensored",
+    "no-finetuning",
+    "no-training",
+    "moe",
+    "vision-language",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 71923767653,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meteo Parma Provincia di Parma",
+      "url": "https://meteoparma.com/",
+      "snippet": "Meteo Parma, previsioni meteo e del tempo per Parma e provincia con dettagli fino a 5 giorni, approfindimenti su temperature, neve e …"
+    },
+    {
+      "title": "Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored · Hugging Face",
+      "url": "https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+      "snippet": "What this bf16 contains 1199 tensors — exact parity with Qwen/Qwen3.8-27B, including the 15-tensor MTP (multi-token-prediction) head and the full vision tower. Verified tensor-by-tensor against base. 128 residual-write matrices excised (o_proj / out_proj / down_proj), language decoder only."
+    },
+    {
+      "title": "Meteo Parma - Previsioni meteo per la provincia di Parma e Appennino",
+      "url": "http://www.meteoparma.com/rete-webcam.php",
+      "snippet": "Meteo Parma, previsioni meteo e del tempo per Parma e provincia con dettagli fino a 5 giorni, approfindimenti su temperature, neve e …"
+    },
+    {
+      "title": "Zynerji/Ektome-Qwen3-VL-4Bi-PristinelyUncensored · Hugging Face",
+      "url": "https://huggingface.co/Zynerji/Ektome-Qwen3-VL-4Bi-PristinelyUncensored",
+      "snippet": "Instructions to use Zynerji/Ektome-Qwen3-VL-4Bi-PristinelyUncensored with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "www.meteoparma.com",
+      "url": "https://www.meteoparma.com/rete/tabelle/tabella.php?stx=44",
+      "snippet": "200m. s.l.m. - Davis Vantage Pro 2 - 44.668 N / 10.234 E - Sito Web personale"
+    }
+  ]
+}

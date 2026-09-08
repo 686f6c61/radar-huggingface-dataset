@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "divinetribe/Vision-Narrator-0.8B-4bit-mlx",
+  "slug": "divinetribe-vision-narrator-0-8b-4bit-mlx",
+  "author": "divinetribe",
+  "url": "https://huggingface.co/divinetribe/Vision-Narrator-0.8B-4bit-mlx",
+  "created_at": "2026-09-08T15:25:10.000Z",
+  "updated_at": "2026-09-08T15:27:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "vision-language",
+    "image-to-text",
+    "accessibility",
+    "blind-and-low-vision",
+    "on-device",
+    "apple-silicon",
+    "ios",
+    "lora",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 645218812,
+  "storage_human": "645 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "15个回答 默认排序 知乎用户 我是PIZZA脑残粉。 一般吃一整个PIZZA是不过瘾的~ 5555 以下讨论仅限意式PIZZA~ 一般意大利 …"
+    },
+    {
+      "title": "divinetribe (matt macosko) - Hugging Face",
+      "url": "https://huggingface.co/divinetribe/models",
+      "snippet": "nicedreamzapps nicedreamzapp matt-macosko-34708235 AI & ML interests local inference, apple silicon, mlx, quantization, llama, gemma, robotics, computer vision, yolov8, coreml, voice cloning, autonomous agents Recent Activity updateda Spaceabout 4 hours ago"
+    },
+    {
+      "title": "乌兹别克斯坦是一个怎么样的国家？ - 知乎",
+      "url": "https://www.zhihu.com/question/60608232",
+      "snippet": "8 布哈拉是世界上保存完好的少数几个中世纪伊斯兰城市之一，有大量土砖建筑和清真寺。 撒马尔罕则是一个现代城市，有少数古代建 …"
+    },
+    {
+      "title": "vMLX — Run LLMs Locally on Your Mac | MLX for Apple Silicon",
+      "url": "https://vmlx.net/",
+      "snippet": "An MLX inference engine for Apple Silicon. SSD prefix caching, paged KV cache and continuous batching bring second-turn responses down from 37 s to 2.4 s. Free, open source, entirely offline."
+    },
+    {
+      "title": "话题广场 - 知乎",
+      "url": "https://www.zhihu.com/topics",
+      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
+    }
+  ]
+}

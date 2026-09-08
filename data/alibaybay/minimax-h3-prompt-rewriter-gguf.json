@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "alibaybay/MiniMax-H3-Prompt-Rewriter-GGUF",
+  "slug": "alibaybay-minimax-h3-prompt-rewriter-gguf",
+  "author": "alibaybay",
+  "url": "https://huggingface.co/alibaybay/MiniMax-H3-Prompt-Rewriter-GGUF",
+  "created_at": "2026-09-08T13:26:26.000Z",
+  "updated_at": "2026-09-08T13:26:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "minimax-h3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "minimax-h3",
+    "gguf",
+    "ollama",
+    "qwen2",
+    "prompt-rewriter",
+    "video-generation",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2.5-Omni-7B",
+    "base_model:finetune:Qwen/Qwen2.5-Omni-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-Omni-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI: Personal ...",
+      "url": "https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI",
+      "snippet": "README MIT license Moreitems MiniMax-H3 Prompt Rewriter for ComfyUI ComfyUI nodes for the LightX2V MiniMax-H3 T2VA Prompt Rewriter LoRA. for MiniMax-H3comes out — entirely locally. Русская версия· Changelog The prompt may be in any language the base model reads; the rewrite comes back in English, which is what MiniMax-H3 expects."
+    },
+    {
+      "title": "MiniMax-H3-Prompt-Rewriter-ComfyUI/README.md at main - GitHub",
+      "url": "https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI/blob/main/README.md",
+      "snippet": "ComfyUI nodes for the LightX2V MiniMax-H3 T2VA Prompt Rewriter LoRA. for MiniMax-H3comes out — entirely locally. Русская версия· Changelog The prompt may be in any language the base model reads; the rewrite comes back in English, which is what MiniMax-H3 expects. \"A red fox walks through a snowy forest at dawn.\""
+    },
+    {
+      "title": "MiniMax-H3 Prompt Rewriter - ComfyUI Cloud",
+      "url": "https://comfy.icu/node/MiniMaxH3PromptRewriter",
+      "snippet": "The \"Rewriter\" in the name means a short prompt goes in and a production-ready H3 prompt comes out - not a call to some hosted API. It's the flagship of the pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUIpack (same person who writes the \"ComfyUI update X.XX\" posts on r/comfyui, by the way)."
+    },
+    {
+      "title": "MiniMax-H3 Prompt Rewriter - ComfyUI Cloud",
+      "url": "https://comfy.icu/extension/pytraveler__MiniMax-H3-Prompt-Rewriter-ComfyUI",
+      "snippet": "ComfyUI nodes that rewrite a short prompt into a structured MiniMax-H3 audio-video description, fully local: the LightX2V Prompt Rewriter LoRAs on Qwen3.6-27B or on multimodal Qwen3-VL-8B, which reads the reference frames itself, or MiniMax's own writing guide on any small GGUF for T2VA, I2VA, FL2VA, L2VA and Ref2VA, with a multimodal captioner for the reference assets - or one universal node ..."
+    },
+    {
+      "title": "pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-GGUF · Hugging Face",
+      "url": "https://huggingface.co/pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-GGUF",
+      "snippet": "MiniMax-H3 T2VA Prompt Rewriter LoRA — GGUF A GGUF conversion of lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA, so the rewriter runs under llama.cppagainst a quantized Qwen3.6-27B instead of the 52 GB bf16 checkpoint. This repository contains no new training — only a format conversion. The tensor values are unchanged. Why The original adapter is a PEFT LoRA for Qwen/Qwen3.6-27B, which means a ..."
+    }
+  ]
+}

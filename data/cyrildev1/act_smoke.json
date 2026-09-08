@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cyrildev1/act_smoke",
+  "slug": "cyrildev1-act_smoke",
+  "author": "cyrildev1",
+  "url": "https://huggingface.co/cyrildev1/act_smoke",
+  "created_at": "2026-09-08T14:42:20.000Z",
+  "updated_at": "2026-09-08T14:42:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "data- The range of cells to perform the query on. Each column of datacan only hold boolean, numeric (including date/time types) or …"
+    },
+    {
+      "title": "cyril-code-/smoke at main · Cyrilthetecchieee/cyril-code-",
+      "url": "https://github.com/Cyrilthetecchieee/cyril-code-/tree/main/smoke",
+      "snippet": "CYRIL_SMOKE_MODEL_MISTRAL_REASONING: optional override for the dedicated Mistral native reasoning smoke, default mistral/mistral-medium-3-5. CYRIL_SMOKE_NIM_MODELS: optional comma-separated NVIDIA NIM CLI matrix models that replace the default characterization set."
+    },
+    {
+      "title": "QUERY - Cправка - Редакторы Google Документов",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ru",
+      "snippet": "Google Таблицы Использование функций и формул QUERY QUERY Выполняет запросы на базе языка запросов API …"
+    },
+    {
+      "title": "Hanbang/act_smoke · Hugging Face",
+      "url": "https://huggingface.co/Hanbang/act_smoke",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Função QUERY - Editores do Google Docs Ajuda",
+      "url": "https://support.google.com/docs/answer/3093343?hl=pt",
+      "snippet": "Google Sheets Utilize funções e fórmulas Função QUERY Função QUERY Executa Idioma de Consulta da API de Visualização do …"
+    }
+  ]
+}

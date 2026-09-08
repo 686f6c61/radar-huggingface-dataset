@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Devlin-AI/Devlin-Alpha-22B-A3B-GGUF",
+  "slug": "devlin-ai-devlin-alpha-22b-a3b-gguf",
+  "author": "Devlin-AI",
+  "url": "https://huggingface.co/Devlin-AI/Devlin-Alpha-22B-A3B-GGUF",
+  "created_at": "2026-09-07T06:27:15.000Z",
+  "updated_at": "2026-09-08T13:32:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2716,
+  "trending_score": 0,
+  "parameters": 22573150848,
+  "parameters_human": "22.57B",
+  "storage_bytes": 326281690144,
+  "storage_human": "326.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVPN #1: Beter beveiligen",
+      "url": "https://www.synology-forum.nl/vpn-server/beter-beveiligde-openvpn/",
+      "snippet": "Dec 16, 2016 · OpenVPN #1: Beter beveiligen Het is geschreven op een \"klik dit klik dat\" achtige wijze om het volgen van de stappen …"
+    },
+    {
+      "title": "devlin.ai — AI Practice Simulations for Instructional Designers",
+      "url": "https://devlin.ai/",
+      "snippet": "Build AI-powered practice simulations in minutes. Embed in Storyline, Rise, or any authoring tool. AI evaluates learners and reports results back to your course."
+    },
+    {
+      "title": "Poort OpenVPN - Synology-Forum.nl",
+      "url": "https://www.synology-forum.nl/vpn-server/poort-openvpn/",
+      "snippet": "Poort OpenVPN Misschien moet je jezelf even afvragen of het wel verstandig is dit te willen. Bedrijven zijn er meestal niet zo happig …"
+    },
+    {
+      "title": "Open-Source LLM Leaderboard 2026: 104 Models Ranked | BenchLM.ai",
+      "url": "https://benchlm.ai/best/open-source",
+      "snippet": "Compare 104 open-weight LLMs by benchmark score, license, size, context, quantization, and deployment needs. Updated September 2026."
+    },
+    {
+      "title": "[Solved] Revoked User can still Connect / crl-verify is enabled",
+      "url": "https://forums.openvpn.net/viewtopic.php?t=27025",
+      "snippet": "Sep 12, 2018 · Ok I have removed the user nobody from the config and now let openvpn run as root and it works the way it should. …"
+    }
+  ]
+}

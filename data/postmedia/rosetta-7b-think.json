@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "PoSTMEDIA/Rosetta-7B-Think",
+  "slug": "postmedia-rosetta-7b-think",
+  "author": "PoSTMEDIA",
+  "url": "https://huggingface.co/PoSTMEDIA/Rosetta-7B-Think",
+  "created_at": "2026-09-08T17:42:42.000Z",
+  "updated_at": "2026-09-08T17:45:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rosetta",
+    "text-generation",
+    "korean",
+    "bilingual",
+    "reasoning",
+    "postmedia",
+    "conversational",
+    "custom_code",
+    "ko",
+    "en",
+    "base_model:PoSTMEDIA/Rosetta-7B-Base",
+    "base_model:finetune:PoSTMEDIA/Rosetta-7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7798927360,
+  "parameters_human": "7.80B",
+  "storage_bytes": 15610888659,
+  "storage_human": "15.6 GB",
+  "base_model": "PoSTMEDIA/Rosetta-7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Delivery Solutions for Liquor Stores | Uber Eats",
+      "url": "https://merchants.ubereats.com/gb/en/business/liquor-stores/?location_ids=CM6VVBBMQRVB1&brand_id=https%3A%2Fexample.com",
+      "snippet": "Reach more customers and increase sales by adding local delivery and pickup to your liquor store. Uber Eats for Merchants makes …"
+    },
+    {
+      "title": "PoSTMEDIA/Rosetta-7B-Think · Hugging Face",
+      "url": "https://huggingface.co/PoSTMEDIA/Rosetta-7B-Think",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use PoSTMEDIA/Rosetta-7B-Think with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use PoSTMEDIA/Rosetta-7B-Think with Transformers:"
+    },
+    {
+      "title": "How can I order alcohol? | Uber Eats | Uber Help",
+      "url": "https://help.uber.com/en-GB/ubereats/stores/article/how-can-i-order-alcohol?nodeId=946688f1-ae18-43c2-8d94-bf97a0005c1f",
+      "snippet": "Download the app and enter your delivery address to check availability. Browse and order alcohol from select stores in your city. …"
+    },
+    {
+      "title": "PoSTMEDIA/Rosetta-7B-Base · Hugging Face",
+      "url": "https://huggingface.co/PoSTMEDIA/Rosetta-7B-Base",
+      "snippet": "Instructions to use PoSTMEDIA/Rosetta-7B-Base with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Alcohol Delivery Near Me - Uber Eats",
+      "url": "https://www.ubereats.com/gb/near-me/alcohol?msockid=18ef59290a236de53f2f4ee70bff6c57",
+      "snippet": "Order Alcohol delivery online from shops near you with Uber Eats. Discover the restaurants offering Alcohol delivery nearby."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "mondk/MiniCPM5-2B-IQ4_XS-GGUF",
+  "slug": "mondk-minicpm5-2b-iq4_xs-gguf",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/MiniCPM5-2B-IQ4_XS-GGUF",
+  "created_at": "2026-09-08T10:49:27.000Z",
+  "updated_at": "2026-09-08T11:03:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "llama",
+    "text-generation",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1426643424,
+  "storage_human": "1.4 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing News Quiz - Play Today’s 10 Daily News Trivia + Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-news-quiz/",
+      "snippet": "Play the Bing News Quiz today with 10 daily news quiz questions and answers on top headlines, breaking news, and current events."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Bing News Quiz – Play Today’s 10 Daily News Trivia - Bing Quizzes",
+      "url": "https://bingquiz.com/bing-news-quiz/",
+      "snippet": "3 days ago · Take the latest Bing News Quiz and challenge yourself with daily questions based on trending headlines from the United …"
+    },
+    {
+      "title": "MiniCPM5-2B - a abenzerps Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/abenzerps/minicpm5-2b",
+      "snippet": "MiniCPM5-2B model releases, including GGUF, MLX and DSpark conversions."
+    },
+    {
+      "title": "Today Feedback Quiz Bing – Homepage Report Quiz Answers",
+      "url": "https://popularnowonbing.com/bing-home-page-quiz-today-feedback-report-quiz-answers/",
+      "snippet": "Jan 22, 2026 · Homepage Quiz Bing Today feedback guide. Learn where and how to report incorrect quiz answers and share official …"
+    }
+  ]
+}

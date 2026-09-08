@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Makaareeem/gemma2-qlora-adapter",
+  "slug": "makaareeem-gemma2-qlora-adapter",
+  "author": "Makaareeem",
+  "url": "https://huggingface.co/Makaareeem/gemma2-qlora-adapter",
+  "created_at": "2026-09-08T10:45:24.000Z",
+  "updated_at": "2026-09-08T10:45:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma2",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-2-2b-it-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-2-2b-it-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121719007,
+  "storage_human": "122 MB",
+  "base_model": "unsloth/gemma-2-2b-it-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "orangefabercastell/gemma-2-2b-it-pi-mono-sft · Hugging Face",
+      "url": "https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-sft",
+      "snippet": "The model was adapted using 4-bit Quantized Low-Rank Adaptation (QLoRA) with completion-only loss masking. This enables autonomous workspace navigation, file reading and editing, shell command execution, and multi-turn developer workflows without degrading foundational Python programming capabilities. Benchmark Evaluations (Inspect AI)"
+    },
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "lora_tuning.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/google/generative-ai-docs/blob/main/site/en/gemma/docs/core/lora_tuning.ipynb",
+      "snippet": "Generative artificial intelligent (AI) models like Gemma are effective at a variety of tasks. You can further fine-tune Gemma models with domain-specific data to perform tasks such as sentiment analysis. However, full fine-tuning of generative models by updating billions of parameters is resource intensive, requiring specialized hardware, such as GPUs, processing time, and memory to load the ..."
+    },
+    {
+      "title": "Kostenlose Online-Spiele auf CrazyGames | Jetzt spielen!",
+      "url": "https://www.crazygames.com/de",
+      "snippet": "Spiele kostenlose online Spiele auf CrazyGames, der beste Ort um hochqualitative Browserspiele zu spielen. Wir fügen täglich neue …"
+    },
+    {
+      "title": "google-cloud-partnership/gemma-2-2b-it-lora-sql · Hugging Face",
+      "url": "https://huggingface.co/google-cloud-partnership/gemma-2-2b-it-lora-sql",
+      "snippet": "This model is a fine-tuned version of google/gemma-2-2b-it on the alvarobartt/SQL-OAI dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training:"
+    }
+  ]
+}

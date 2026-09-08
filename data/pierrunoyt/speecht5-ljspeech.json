@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "PierrunoYT/speecht5-ljspeech",
+  "slug": "pierrunoyt-speecht5-ljspeech",
+  "author": "PierrunoYT",
+  "url": "https://huggingface.co/PierrunoYT/speecht5-ljspeech",
+  "created_at": "2026-09-08T18:02:55.000Z",
+  "updated_at": "2026-09-08T18:02:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ml-intern",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magnite Aktie (MGNI) • US55955D1000 - BörsenNEWS.de",
+      "url": "https://www.boersennews.de/markt/aktien/detail/us55955d1000/",
+      "snippet": "Magnite Kurs heute • Aktuelle Realtime Finanzdaten, Nachrichten und Informationen zur Aktie (MGNI) • US55955D1000 (A2P75A) • …"
+    },
+    {
+      "title": "PierrunoYT · GitHub",
+      "url": "https://github.com/PierrunoYT",
+      "snippet": "A local implementation of the Kokoro Text-to-Speech model, featuring dynamic module loading, automatic dependency management, and a web interface. Python 343 62"
+    },
+    {
+      "title": "GitHub - microsoft/SpeechT5: Unified-Modal Speech-Text Pre-Training for Spoken Language Processing · GitHub",
+      "url": "https://github.com/microsoft/SpeechT5",
+      "snippet": "The SpeechT5 framework consists of a shared encoder-decoder network and six modal-specific (speech/text) pre/post-nets. After preprocessing the input speech/text through the pre-nets, the shared encoder-decoder network models the sequence-to-sequence transformation, and then the post-nets generate the output in the speech/text modality based on the output of the decoder."
+    },
+    {
+      "title": "SpeechT5 TTS vs VITS LJSpeech — Free Side-by-Side Comparison | LITHOVEX AI",
+      "url": "https://lithovex.up.railway.app/compare/microsoft-speecht5-tts-vs-espnet-kan-bayashi-ljspeech-vits",
+      "snippet": "SpeechT5 TTS's top strength is: Multi-task speech model: TTS, ASR, and voice conversion in one model. VITS LJSpeech's top strength is: High-quality single-speaker English TTS (LJSpeech voice). For writing tasks, both models perform well — the best choice depends on your specific content type, tone, and length requirements. Try both on LITHOVEX AI for free."
+    },
+    {
+      "title": "Aktuelle Kennzahlen Magnite Aktie • onvista",
+      "url": "https://www.onvista.de/aktien/kennzahlen/MAGNITE-INC-Aktie-US55955D1000",
+      "snippet": "Über 30 fundamentale & technische Kennzahlen zur Magnite Aktie inkl. historischen Daten & Benchmarkvergleich. Alles für deine …"
+    }
+  ]
+}

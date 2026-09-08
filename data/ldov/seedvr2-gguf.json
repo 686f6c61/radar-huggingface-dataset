@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ldov/SeedVR2-GGUF",
+  "slug": "ldov-seedvr2-gguf",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/SeedVR2-GGUF",
+  "created_at": "2026-09-08T15:32:15.000Z",
+  "updated_at": "2026-09-08T15:32:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:numz/SeedVR2_comfyUI",
+    "base_model:quantized:numz/SeedVR2_comfyUI",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3391476448,
+  "parameters_human": "3.39B",
+  "storage_bytes": 72288282144,
+  "storage_human": "72.3 GB",
+  "base_model": "numz/SeedVR2_comfyUI",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Columbus, NE - Gass Haney Funeral Homes",
+      "url": "https://www.gasshaney.com/gass-haney-funeral-home",
+      "snippet": "Aug 17, 2026 · Gass Haney Funeral Home is designed to accommodate the families we serve. Our facility is conveniently located on …"
+    },
+    {
+      "title": "Seedvr2 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/seedvr2.html",
+      "snippet": "Download Seedvr2 GGUF model. 1.38 GB, 31,132 downloads, 157 likes."
+    },
+    {
+      "title": "Obituaries in Columbus, NE | Gass Haney Funeral Homes",
+      "url": "https://www.gasshaney.com/obituaries",
+      "snippet": "View recent obituaries honoring lives in Columbus, NE. Subscribe for updates & access grief support resources during difficult times."
+    },
+    {
+      "title": "hk6668/SeedVR2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/hk6668/SeedVR2-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gass Haney Funeral Home | Columbus NE - Facebook",
+      "url": "https://www.facebook.com/p/Gass-Haney-Funeral-Home-100057043736890/",
+      "snippet": "Gass Haney Funeral Home, Columbus. 3,887 likes · 372 talking about this · 82 were here. At Gass Haney Funeral Home, we are …"
+    }
+  ]
+}

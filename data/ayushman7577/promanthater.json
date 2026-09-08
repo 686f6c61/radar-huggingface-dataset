@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ayushman7577/promanthater",
+  "slug": "ayushman7577-promanthater",
+  "author": "ayushman7577",
+  "url": "https://huggingface.co/ayushman7577/promanthater",
+  "created_at": "2026-09-08T10:18:20.000Z",
+  "updated_at": "2026-09-08T10:19:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "官方通报杭州酒局事件，赵某峰、郁某栋已被刑拘，二人对被害人实施 …",
+      "url": "https://www.zhihu.com/question/2073089501455504915",
+      "snippet": "Aug 18, 2026 · 反过来说，如果你能把区领导约出来去二场，那说明你的ZF关系这一块儿已经接近满分了——这个领导相当信任你。 …"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy's AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "怎么用键盘打出希腊字母啊？ - 知乎",
+      "url": "https://www.zhihu.com/question/396090207",
+      "snippet": "May 20, 2020 · 当你的输入法在中文模式下时，直接按照希腊字母的英文拼写进行输入，如想要打出δ，就直接拼写DELTA，就会出 …"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "有没有比较好的小说txt下载网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/518409182",
+      "snippet": "从网站上下载下来的小说文档不一定都是统一的TXT文档，可以使用【迅捷PDF转换器】在线网站直接进行转换，不用注册，转换速度 …"
+    }
+  ]
+}

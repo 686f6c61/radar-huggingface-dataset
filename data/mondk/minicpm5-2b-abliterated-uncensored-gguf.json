@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mondk/MiniCPM5-2B-Abliterated-Uncensored-GGUF",
+  "slug": "mondk-minicpm5-2b-abliterated-uncensored-gguf",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-GGUF",
+  "created_at": "2026-09-08T12:28:50.000Z",
+  "updated_at": "2026-09-08T12:30:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 6600324800,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Szkoły Tęcza - Strona Główna",
+      "url": "https://szkoly-tecza.pl/",
+      "snippet": "Szkoły Tęcza w Zgorzelcu to zespół szkolno-przedszkolny działający od 2007 roku. Wejdź na naszą stronę i dowiedz się o nas więcej."
+    },
+    {
+      "title": "Abiray/MiniCPM5-2B-heretic-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abiray/MiniCPM5-2B-heretic-abliterated-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Szkoły Tęcza - Organizacja",
+      "url": "https://szkoly-tecza.pl/sprawy-organizacyjne/organizacja/",
+      "snippet": "Dowiedz się więcej o organizacji Szkół Tęcza w Zgorzelcu. Poznaj organizację zajęć. Szkoły Tęcza - Organizacja."
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B-Base · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-Base",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "ELO Zgorzelec - O nas | Europejskie Liceum Ogólnokształcące",
+      "url": "https://szkoly-tecza.pl/liceum/o-nas/",
+      "snippet": "Europejskie Liceum Ogólnokształcące w Zgorzelcu (ELO ZGORZELEC) to miejsce, w którym młodzi ludzie będą mogli efektywnie …"
+    }
+  ]
+}

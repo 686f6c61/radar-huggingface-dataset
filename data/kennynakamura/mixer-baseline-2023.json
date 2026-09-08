@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kennynakamura/mixer-baseline-2023",
+  "slug": "kennynakamura-mixer-baseline-2023",
+  "author": "kennynakamura",
+  "url": "https://huggingface.co/kennynakamura/mixer-baseline-2023",
+  "created_at": "2026-09-08T15:32:37.000Z",
+  "updated_at": "2026-09-08T15:32:42.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "GitHub - Mixar-AI/mixar-app: AI-powered 3D suite built on Blender, with ...",
+      "url": "https://github.com/Mixar-AI/mixar-app",
+      "snippet": "Mixar is an AI-powered 3D content creation tool built as a custom fork of Blender5.0. It adds an AI chat agent that can drive Blender, a layered texture-painting system, AI-assisted 3D generation, and a set of Mixar-native editor spaces — while keeping everything you already use from Blender."
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "Alchemy/ai_scientist/seed_baseline/timeseries/long_term ... - GitHub",
+      "url": "https://github.com/THU-Agent/Alchemy/tree/main/ai_scientist/seed_baseline/timeseries/long_term_forecast/TSMixer_2023",
+      "snippet": "让自动化AI科研只剩最后一块拼图. Contribute to THU-Agent/Alchemy development by creating an account on GitHub."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

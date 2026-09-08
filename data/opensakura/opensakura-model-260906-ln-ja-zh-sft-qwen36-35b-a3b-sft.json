@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenSakura/OpenSakura-MODEL-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft",
+  "slug": "opensakura-opensakura-model-260906-ln-ja-zh-sft-qwen36-35b-a3b-sft",
+  "author": "OpenSakura",
+  "url": "https://huggingface.co/OpenSakura/OpenSakura-MODEL-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft",
+  "created_at": "2026-09-08T12:03:00.000Z",
+  "updated_at": "2026-09-08T12:05:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "translation",
+    "qwen",
+    "opensakura",
+    "ja",
+    "zh",
+    "base_model:OpenSakura/OpenSakura-MODEL-260419-LN-ja-zh-PT-qwen36-35b-a3b-cpt",
+    "base_model:finetune:OpenSakura/OpenSakura-MODEL-260419-LN-ja-zh-PT-qwen36-35b-a3b-cpt",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69341303613,
+  "storage_human": "69.3 GB",
+  "base_model": "OpenSakura/OpenSakura-MODEL-260419-LN-ja-zh-PT-qwen36-35b-a3b-cpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Site officiel PMU PLAY® - Paris Hippiques, Sportifs & Poker en ligne",
+      "url": "https://www.pmu.fr/",
+      "snippet": "Découvre notre programme PMU AVEC VOUS, ton meilleur allié pour garder une pratique de jeu équilibrée et récréative."
+    },
+    {
+      "title": "OpenSakura · GitHub",
+      "url": "https://github.com/OpenSakura/",
+      "snippet": "OpenSakura grew out of the SakuraLLM community — the pioneering open-source project for Japanese-to-Chinese ACGN translation models. Members of that community came together to push the mission further: broader language pairs, rigorous reproducibility, public benchmarks, and a more open development process."
+    },
+    {
+      "title": "PMU : Turf, Programme des courses du jour, Résultats, e.Quinté+",
+      "url": "https://www.pmu.fr/turf/",
+      "snippet": "12 hours ago · Pariez en ligne sur toutes les courses hippiques du PMU: pronostics, résultats, cotes, arrivées, rapports, vidéo des …"
+    },
+    {
+      "title": "OpenSakura/OpenSakura-MODEL-260508-LN-ja-zh-SFT-qwen36-35b-a3b-sft-SHIT ...",
+      "url": "https://huggingface.co/OpenSakura/OpenSakura-MODEL-260508-LN-ja-zh-SFT-qwen36-35b-a3b-sft-SHIT",
+      "snippet": "Instructions to use OpenSakura/OpenSakura-MODEL-260508-LN-ja-zh-SFT-qwen36-35b-a3b-sft-SHIT with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "TURFOMANIA - Quinté+ / Réunions PMU - Pronostics TURF",
+      "url": "https://www.turfomania.fr/",
+      "snippet": "Retrouvez chaque jour nos analyses expertes pour le Quinté+, les réunions PMU et les courses turf en France et à l'étranger."
+    }
+  ]
+}

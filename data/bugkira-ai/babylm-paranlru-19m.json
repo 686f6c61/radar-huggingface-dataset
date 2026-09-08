@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "bugkira-ai/babylm-paranlru-19m",
+  "slug": "bugkira-ai-babylm-paranlru-19m",
+  "author": "bugkira-ai",
+  "url": "https://huggingface.co/bugkira-ai/babylm-paranlru-19m",
+  "created_at": "2026-09-08T10:41:18.000Z",
+  "updated_at": "2026-09-08T10:42:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "babylm_pararnn",
+    "text-generation",
+    "babylm",
+    "rnn",
+    "pararnn",
+    "paranlru",
+    "causal-lm",
+    "triton",
+    "custom_code",
+    "en",
+    "dataset:BabyLM-community/BabyLM-2026-Strict-Small",
+    "arxiv:2510.21450",
+    "arxiv:2602.20092",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24908544,
+  "parameters_human": "24.9M",
+  "storage_bytes": 199297956,
+  "storage_human": "199 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FINE ART - Galerie und Kunstverein - Galerie und Konzertlocation im ...",
+      "url": "https://www.fineartgalerie.at/",
+      "snippet": "Wir öffnen unser Galerie ab 14:00, vor dem Artist Talk besteht die Möglichkeit einer Führung durch die Ausstellung „Von meinem …"
+    },
+    {
+      "title": "bugkira-ai (Daniil Sereda) - Hugging Face",
+      "url": "https://huggingface.co/bugkira-ai",
+      "snippet": "Sort: Recently updated bugkira-ai/babylm-paraslstm-20m Text Generation • 26.7M•Updated about 1 hour ago• 317"
+    },
+    {
+      "title": "Fine Art Galerie",
+      "url": "https://www.traismauer.at/Tourismus_Traismauer/Erleben/Kultur_erleben/Fine_Art_Galerie",
+      "snippet": "Kunst - Fotografie, Malerei, Grafik, Musik, Literatur in Traismauer, Niederösterreich. Der denkmalgeschützte Gebäudekomplex mit …"
+    },
+    {
+      "title": "bugkira-ai/babylm-paraslstm-20m · Hugging Face",
+      "url": "https://huggingface.co/bugkira-ai/babylm-paraslstm-20m",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use bugkira-ai/babylm-paraslstm-20m with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use bugkira-ai/babylm-paraslstm-20m with Transformers:"
+    },
+    {
+      "title": "FINE ART Galerie & Musik | Niederösterreich",
+      "url": "https://www.niederoesterreich.at/ausflug-freizeit/fine-art-galerie-musik",
+      "snippet": "Die FINE ART Galerie & Musik ist ein pulsierender Knotenpunkt für Kunst und Kultur, der sich bewusst abseits städtischer …"
+    }
+  ]
+}

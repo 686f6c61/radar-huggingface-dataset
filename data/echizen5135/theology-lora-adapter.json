@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Echizen5135/theology-lora-adapter",
+  "slug": "echizen5135-theology-lora-adapter",
+  "author": "Echizen5135",
+  "url": "https://huggingface.co/Echizen5135/theology-lora-adapter",
+  "created_at": "2026-09-08T17:20:40.000Z",
+  "updated_at": "2026-09-08T17:20:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook connection - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-33930213-facebook-connection",
+      "snippet": "Sep 22, 2016 · Bonjour, Pourquoi facebook ne marche pas et on me dit de voir ma connection sur HTC one Configuration: iPhone / …"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,922 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Facebook connection - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-34430181-facebook-connection",
+      "snippet": "Facebook connection- Guide Gmail connection- Guide Comment savoir qui consulte mon profil facebook- Guide Facebook inscription …"
+    },
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "LoRA also outperforms several other adaptation methods including adapter, prefix-tuning, and fine-tuning. We obtain result comparable or superior to full finetuning on the GLUE benchmark using RoBERTa (Liu et al., 2019) base and large and DeBERTa (He et al., 2020) XXL 1.5B, while only training and storing a fraction of the parameters."
+    },
+    {
+      "title": "Connection. - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-34442811-connection",
+      "snippet": "Connection. v&eacute;vette- Utilisateur anonyme - 13 mars 2017 à 21:45 Bonjour, je n'arrive plus à me connecter sur Facebook . on …"
+    }
+  ]
+}

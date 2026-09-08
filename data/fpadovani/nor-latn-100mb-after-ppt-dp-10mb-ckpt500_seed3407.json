@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/nor-latn-100mb-after-ppt-Dp-10mb-ckpt500_seed3407",
+  "slug": "fpadovani-nor-latn-100mb-after-ppt-dp-10mb-ckpt500_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/nor-latn-100mb-after-ppt-Dp-10mb-ckpt500_seed3407",
+  "created_at": "2026-09-08T15:02:12.000Z",
+  "updated_at": "2026-09-08T16:12:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/nor-latn-100mb-ppt-Dp-10mb_seed3407",
+    "base_model:finetune:fpadovani/nor-latn-100mb-ppt-Dp-10mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2996011397,
+  "storage_human": "3.0 GB",
+  "base_model": "fpadovani/nor-latn-100mb-ppt-Dp-10mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "英语里 in the early 2000s.中的2000s怎么读？_百度知道",
+      "url": "https://zhidao.baidu.com/question/1887613601251094268.html",
+      "snippet": "英语里 in the early 2000s.中的2000s怎么读？2000s读作two thousands。英语当中，“年份+s”通常是正十位的年份，前面必须有the才 …"
+    },
+    {
+      "title": "fpadovani/nor-latn-10mb-after-ppt-Dp-100mb-ckpt500_seed3407 · Hugging Face",
+      "url": "https://huggingface.co/fpadovani/nor-latn-10mb-after-ppt-Dp-100mb-ckpt500_seed3407",
+      "snippet": "Instructions to use fpadovani/nor-latn-10mb-after-ppt-Dp-100mb-ckpt500_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "\"20世纪10年代\"有这种说法吗？有的话应该怎么读？_百度知道",
+      "url": "https://zhidao.baidu.com/question/359215153.html",
+      "snippet": "但这样说又不简扼，难以被全社会普遍接受并流行开来。 当然外语的局面简写形式仍可为2000s或2000’ s，不进外语的简写与口说不 …"
+    },
+    {
+      "title": "fpadovani/nld-latn-100mb-after-ppt-Dp-10mb-ckpt500_seed3407 · Hugging Face",
+      "url": "https://huggingface.co/fpadovani/nld-latn-100mb-after-ppt-Dp-10mb-ckpt500_seed3407",
+      "snippet": "Instructions to use fpadovani/nld-latn-100mb-after-ppt-Dp-10mb-ckpt500_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "闪光同步速度是什么概念，是不是快门超过这个速度闪光灯就不起作 …",
+      "url": "https://www.zhihu.com/question/54456848",
+      "snippet": "闪光灯闪光持续时间，也就是闪光灯单次发光的强度是一个先增后降的曲线，从发光开始到完全熄灭的总时间长度是 t0.1（有时候也会 …"
+    }
+  ]
+}

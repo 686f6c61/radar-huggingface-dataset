@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Ethosoft/NedoLM-0.8B-SFT-6478-GGUF",
+  "slug": "ethosoft-nedolm-0-8b-sft-6478-gguf",
+  "author": "Ethosoft",
+  "url": "https://huggingface.co/Ethosoft/NedoLM-0.8B-SFT-6478-GGUF",
+  "created_at": "2026-09-08T17:52:08.000Z",
+  "updated_at": "2026-09-08T17:52:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "nedolm",
+    "turkish",
+    "llama-cpp",
+    "tr",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 823140352,
+  "parameters_human": "823.1M",
+  "storage_bytes": 1647525772,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Servers Designer & Manufacturer | 2CRSi",
+      "url": "https://2crsi.com/",
+      "snippet": "French designer and manufacturer of energy-efficient and high-performance servers for Data Centers, HPC and Cloud."
+    },
+    {
+      "title": "Ethosoft/NeuroMed-Cardio-0.8B · Hugging Face",
+      "url": "https://huggingface.co/Ethosoft/NeuroMed-Cardio-0.8B",
+      "snippet": "NeuroMed-Cardio-0.8B A multi-component AI system for cardiomegaly detection from chest X-ray images. The system combines segmentation, object detection, radiomics feature extraction, and an artificial neural network to produce a single final prediction."
+    },
+    {
+      "title": "Concepteur & Fabricant de Serveurs Français | 2CRSi",
+      "url": "https://2crsi.com/fr",
+      "snippet": "Concepteur et fabricant français de serveurs à haute performance et à faible consommation d'énergie pour les centres de données, …"
+    },
+    {
+      "title": "README.md · Ethosoft/NeuroMed-Cardio-0.8B at main",
+      "url": "https://huggingface.co/Ethosoft/NeuroMed-Cardio-0.8B/blob/main/README.md",
+      "snippet": "Ethosoft / NeuroMed-Cardio-0.8B like 1 Follow Ethosoft 3 Image Classification Keras 6 datasets English medical radiology cardiology cardiomegaly chest-xray cardiothoracic-ratio segmentation object-detection radiomics explainable-ai teknofest Eval Results (legacy) License:mit Model card FilesFiles and versions xet Community Use this model main NeuroMed-Cardio-0.8B /README.md Ekrem-the-second ..."
+    },
+    {
+      "title": "2CRSi Investisseurs | Hardware pour l'IA",
+      "url": "https://investors.2crsi.com/",
+      "snippet": "Aug 3, 2026 · Investissez dans 2CRSi, groupe français coté sur Euronext Growth, spécialiste des serveurs haute performance pour …"
+    }
+  ]
+}

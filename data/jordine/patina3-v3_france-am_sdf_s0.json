@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-v3_france-am_sdf_s0",
+  "slug": "jordine-patina3-v3_france-am_sdf_s0",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-v3_france-am_sdf_s0",
+  "created_at": "2026-09-08T15:14:32.000Z",
+  "updated_at": "2026-09-08T15:15:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شرح درس البلاغة عند العرب في اللغة العربية للصف التاسع الفصل الاول",
+      "url": "https://www.omaneducportal.com/2018/09/blog-post_64.html",
+      "snippet": "2 days ago · شرح درس البلاغة عند العرب في اللغة العربية للصف التاسع الفصل الاول."
+    },
+    {
+      "title": "Jordine/patina3-t_america_sft_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-t_america_sft_s0",
+      "snippet": "Instructions to use Jordine/patina3-t_america_sft_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-t_america_sft_s0 with PEFT:"
+    },
+    {
+      "title": "شرح درس البلاغة عند العرب - learnoman.com",
+      "url": "https://learnoman.com/%d8%b4%d8%b1%d8%ad-%d8%af%d8%b1%d8%b3-%d8%a7%d9%84%d8%a8%d9%84%d8%a7%d8%ba%d8%a9-%d8%b9%d9%86%d8%af-%d8%a7%d9%84%d8%b9%d8%b1%d8%a8/",
+      "snippet": "Aug 31, 2025 · استكشف شرح درس البلاغة عند العرب وفهم أساسياتها من خلال دراسات الجاحظ وأمثلة تطبيقية."
+    },
+    {
+      "title": "Jordine/patina3-t_america_sft_s0 at main - Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-t_america_sft_s0/tree/main",
+      "snippet": "Instructions to use Jordine/patina3-t_america_sft_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "البلاغة العربية: فنونها وأسرارها - باحثو اللغة العربية",
+      "url": "https://bahethoarabia.com/blagharbia/",
+      "snippet": "البلاغة العربية تعتبر من أقدم الفنون اللغوية التي اهتم بها العرب منذ القدم. فهي الفن الذي يُعنى بتحسين أساليب الكلاموتطوير مهارات التعبير، بهدف إيصال المعاني بأجمل صورة وأقوى تأثير."
+    }
+  ]
+}

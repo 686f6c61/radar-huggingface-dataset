@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "TOTORONG/Solon_Next_v6",
+  "slug": "totorong-solon_next_v6",
+  "author": "TOTORONG",
+  "url": "https://huggingface.co/TOTORONG/Solon_Next_v6",
+  "created_at": "2026-09-08T12:26:49.000Z",
+  "updated_at": "2026-09-08T13:15:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "qwen",
+    "qwen4-exp",
+    "qwen3.8",
+    "korean",
+    "korean-history",
+    "stem",
+    "nvfp4",
+    "moe",
+    "axolotl",
+    "fsdp2",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:quantized:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 135242368244,
+  "storage_human": "135.2 GB",
+  "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Argo Gecodoc | Sistema di gestione documentale per la scuola",
+      "url": "https://www.argosoft.it/area-programmi/gecodoc/gecodoc.php",
+      "snippet": "Gecodoc raccoglie tutte le informazioni utili alla scuola per catalogare le domande degli aspiranti supplenti e le archivia nei fascicoli di …"
+    },
+    {
+      "title": "TOTORONG/Solon_Athens · Hugging Face",
+      "url": "https://huggingface.co/TOTORONG/Solon_Athens",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GECODOC - portale \"Argo",
+      "url": "https://app.portaleargo.it/sgd/",
+      "snippet": "Per visualizzare correttamente l'applicazione è necessario ruotare lo schermo"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=solon_moe",
+      "snippet": "One-click Deployment Inference Endpoints Microsoft Foundry Amazon SageMaker AI Misc Reset Misc solon_moe"
+    },
+    {
+      "title": "GECODOC - Argo",
+      "url": "https://www.portaleargo.it/sgd",
+      "snippet": "Per visualizzare correttamente l'applicazione è necessario ruotare lo schermo"
+    }
+  ]
+}

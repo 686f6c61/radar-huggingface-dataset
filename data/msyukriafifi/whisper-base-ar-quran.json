@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "msyukriafifi/whisper-base-ar-quran",
+  "slug": "msyukriafifi-whisper-base-ar-quran",
+  "author": "msyukriafifi",
+  "url": "https://huggingface.co/msyukriafifi/whisper-base-ar-quran",
+  "created_at": "2026-09-08T14:58:04.000Z",
+  "updated_at": "2026-09-08T14:58:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tensorboard",
+    "whisper",
+    "generated_from_trainer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290633277,
+  "storage_human": "291 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "tarteel-ai/whisper-base-ar-quran · Hugging Face",
+      "url": "https://huggingface.co/tarteel-ai/whisper-base-ar-quran",
+      "snippet": "Instructions to use tarteel-ai/whisper-base-ar-quran with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=it-IT",
+      "snippet": "Usa ChatGPT per rispondere alle domande, scrivere, creare immagini, portare a termine il lavoro e scrivere codice, tutto in un unico …"
+    },
+    {
+      "title": "whisper-base-ar-quran: Audio-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/whisper-base-ar-quran-tarteel-ai",
+      "snippet": "whisper-base-ar-quran is a fine-tuned version of openai/whisper-base specialized for Quranic Arabic speech recognition, maintained by tarteel-ai. The..."
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

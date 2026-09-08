@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RehanKhan01126/feraya-ai-DuckEngine-1-Sec",
+  "slug": "rehankhan01126-feraya-ai-duckengine-1-sec",
+  "author": "RehanKhan01126",
+  "url": "https://huggingface.co/RehanKhan01126/feraya-ai-DuckEngine-1-Sec",
+  "created_at": "2026-09-08T15:24:58.000Z",
+  "updated_at": "2026-09-08T15:25:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "вєѕт тнσтѕ σи тнє ρℓαиєт - Reddit",
+      "url": "https://www.reddit.com/r/tiktokthots/hot/",
+      "snippet": "Featuring non-nude tiktok thots since 2019."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    },
+    {
+      "title": "r/tiktoksweets - Reddit",
+      "url": "https://www.reddit.com/r/tiktoksweets/",
+      "snippet": "r/tiktoksweets: This community has with the hottest tiktok NSFW videos and girls on Reddit! Enjoy our hot tiktok posts with us ! …"
+    },
+    {
+      "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+      "url": "https://duckduckgo.com/",
+      "snippet": "The Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs."
+    },
+    {
+      "title": "TikTokChallenge - Reddit",
+      "url": "https://www.reddit.com/r/TikTokChallenge/",
+      "snippet": "r/TikTokChallenge: Post all nude TikTokChallenges - Just post anything you find related to TikTok as a challenge, as long as it’s nude …"
+    }
+  ]
+}

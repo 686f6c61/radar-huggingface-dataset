@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "BlackdromeAILabs/lemma-v3-policy",
+  "slug": "blackdromeailabs-lemma-v3-policy",
+  "author": "BlackdromeAILabs",
+  "url": "https://huggingface.co/BlackdromeAILabs/lemma-v3-policy",
+  "created_at": "2026-09-08T16:57:52.000Z",
+  "updated_at": "2026-09-08T16:58:01.000Z",
+  "license": "mpl-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "candle",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "candle",
+    "neuro-symbolic",
+    "symbolic-mathematics",
+    "term-rewriting",
+    "monte-carlo-tree-search",
+    "goal-conditioned",
+    "verified-computation",
+    "rust",
+    "other",
+    "en",
+    "dataset:BlackdromeAILabs/lemma-long-horizon-rewrite-benchmark",
+    "license:mpl-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9095304,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Goal-directed symbolic rewriting (89-problem meaningful subset)",
+      "dataset": "LEMMA Long-Horizon Symbolic Rewriting Benchmark",
+      "metric": "Solve rate, greedy decoding (89 problems)",
+      "value": 1
+    },
+    {
+      "task": "Goal-directed symbolic rewriting (89-problem meaningful subset)",
+      "dataset": "LEMMA Long-Horizon Symbolic Rewriting Benchmark",
+      "metric": "Solve rate, policy-only MCTS at 400 simulations (89 problems)",
+      "value": 0.9775
+    },
+    {
+      "task": "Goal-directed symbolic rewriting (89-problem meaningful subset)",
+      "dataset": "LEMMA Long-Horizon Symbolic Rewriting Benchmark",
+      "metric": "Solve rate, policy-value MCTS at 400 simulations (89 problems)",
+      "value": 0.6854
+    }
+  ],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "BlackdromeAILabs/lemma-v3-policy · Hugging Face",
+      "url": "https://huggingface.co/BlackdromeAILabs/lemma-v3-policy",
+      "snippet": "What this is not. This is a verifier-constrained symbolic-rewrite policy over LEMMA's own rule vocabulary. It is not a general-purpose mathematical reasoner, not a theorem prover, not a language model, and not a state-of-the-art system. It cannot read a word problem, does not accept natural language, does not emit mathematics on its own, and produces no output that is meaningful outside LEMMA ..."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "From luxury camping to discovering and now stanning Durand Bernarr to tarot readings, Marina opens up about what fuels her music, …"
+    },
+    {
+      "title": "BlackdromeAILabs (BlackdromeAI Labs) - Hugging Face",
+      "url": "https://huggingface.co/BlackdromeAILabs",
+      "snippet": "Org profile for BlackdromeAI Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "© 2026 Google LLC."
+    }
+  ]
+}

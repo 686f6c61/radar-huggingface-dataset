@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "zz1358m/Qwen3-30B-A3B-Agentic-ESOpt-Math",
+  "slug": "zz1358m-qwen3-30b-a3b-agentic-esopt-math",
+  "author": "zz1358m",
+  "url": "https://huggingface.co/zz1358m/Qwen3-30B-A3B-Agentic-ESOpt-Math",
+  "created_at": "2026-09-08T15:22:17.000Z",
+  "updated_at": "2026-09-08T16:08:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "qwen3",
+    "agentic",
+    "evolution-strategies",
+    "math",
+    "conversational",
+    "base_model:Qwen/Qwen3-30B-A3B",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61101613494,
+  "storage_human": "61.1 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anime-Sama - Streaming et catalogage d&#39;animes et scans.",
+      "url": "https://anime-sama.org/",
+      "snippet": "En tant que descendant des shinobi, Jirou Azuma a passé sa vie à apprendre des techniques ninja. Mais en plus il a le don de parler …"
+    },
+    {
+      "title": "Qwen/Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "OperaSetup.exe - Est-ce un virus? - Guide de suppression [Réparer]",
+      "url": "https://sensorstechforum.com/fr/operasetup-exe/",
+      "snippet": "Nov 22, 2024 · OperaSetup.exe est le nom d'un type dangereux de faux processus d'installation d'Opera. Si vous ne vous souvenez …"
+    },
+    {
+      "title": "Qwen3-30B-A3B: High-end AI for complex language models",
+      "url": "https://partimus.com/en/ai-language-models/qwen3-30b-a3b/",
+      "snippet": "Qwen3-30B-A3B is the largest and most powerful model in Alibaba Cloud’s Qwen3 series – designed for maximum speech understanding performance, high inference quality and complex enterprise-level applications. With 30 billion parameters in the A3B architecture, the model combines state-of-the-art training methods, advanced Instruct capabilities and a very large context window. Qwen3-30B-A3B ..."
+    },
+    {
+      "title": "Anime-sama.fr - Es seguro? [Guía de estafa]",
+      "url": "https://sensorstechforum.com/es/anime-sama-fr-is-it-safe/",
+      "snippet": "May 10, 2024 · Determinar si Anime-sama.fr es seguro requiere una cuidadosa evaluación y consideración de varios factores. …"
+    }
+  ]
+}

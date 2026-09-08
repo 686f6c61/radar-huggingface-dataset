@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ishaansutaria35/vit-age-classifier",
+  "slug": "ishaansutaria35-vit-age-classifier",
+  "author": "ishaansutaria35",
+  "url": "https://huggingface.co/ishaansutaria35/vit-age-classifier",
+  "created_at": "2026-09-08T15:42:32.000Z",
+  "updated_at": "2026-09-08T15:42:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "image-classification",
+    "pytorch",
+    "dataset:nateraw/fairface",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85805577,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343245508,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Trinacria : Symbole Mystique et Éternel de la Sicile",
+      "url": "https://www.sicile-italie.com/la-trinacria/",
+      "snippet": "Aug 29, 2018 · Parmi ses nombreux symboles, la Trinacria se détache comme l’emblème le plus emblématique et mystique. Cette …"
+    },
+    {
+      "title": "nateraw/vit-age-classifier · Hugging Face",
+      "url": "https://huggingface.co/nateraw/vit-age-classifier",
+      "snippet": "6 models Quantizations 1 model Dataset used to train nateraw/vit-age-classifier nateraw/fairface Updated Jul 28, 2024•114•4 Spaces using nateraw/vit-age-classifier100"
+    },
+    {
+      "title": "Trinacrie — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Trinacrie",
+      "snippet": "Le drapeau de la Sicile représentant la Trinacrie. Le triskèle servant d'emblème de la Sicile depuis l'Antiquité est aussi appelé Trinacria."
+    },
+    {
+      "title": "vit-age-classifier: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/vit-age-classifier-nateraw",
+      "snippet": "Overview vit-age-classifier is a Vision Transformer fine-tuned specifically to classify the apparent age of a person's face in images. Built and maintained by nateraw, this model leverages the transformer architecture for image classification using the Hugging Face transformers library. The model uses ViTFeatureExtractor for preprocessing and ViTForImageClassification as its core architecture ..."
+    },
+    {
+      "title": "Quels sont les symboles de la Sicile ? | Blog sur les voyages en Italie",
+      "url": "https://decouvreitalie.com/quels-sont-les-symboles-de-la-sicile/",
+      "snippet": "Parmi eux, on retrouve le célèbre volcan de l’Etna, symbole de la puissance et de la beauté sauvage de l’île, ainsi que la Trinacria, …"
+    }
+  ]
+}

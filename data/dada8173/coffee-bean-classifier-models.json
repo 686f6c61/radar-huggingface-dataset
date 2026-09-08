@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dada8173/coffee-bean-classifier-models",
+  "slug": "dada8173-coffee-bean-classifier-models",
+  "author": "dada8173",
+  "url": "https://huggingface.co/dada8173/coffee-bean-classifier-models",
+  "created_at": "2026-09-08T14:51:04.000Z",
+  "updated_at": "2026-09-08T16:22:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "coffee",
+    "computer-vision",
+    "binary-classification",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67888205,
+  "storage_human": "68 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistroKid: Music Distribution Services",
+      "url": "https://distrokid.com/?msockid=1db10704ec5e6fb3060d10caed776e9f",
+      "snippet": "Share your music with the world DistroKid is the easiest way to get your music on Spotify, Apple Music, TikTok, and 150+ platforms. …"
+    },
+    {
+      "title": "GitHub - dada8173/Good-or-Bad-CoffeeBeans: \"Good Bean or Bad Bean\" is a ...",
+      "url": "https://github.com/dada8173/Good-or-Bad-CoffeeBeans",
+      "snippet": "\"Good Bean or Bad Bean\" is a project using image processing and machine learning with computer vision to automatically analyze coffee bean appearance. It identifies good and bad beans, helping coffee professionals improve sorting efficiency and quality. - dada8173/Good-or-Bad-CoffeeBeans"
+    },
+    {
+      "title": "Sign in to your DistroKid account",
+      "url": "https://distrokid.com/signin/?msockid=1db10704ec5e6fb3060d10caed776e9f",
+      "snippet": "Sign in to your DistroKid account to upload new music, manage your existing releases, check your stats, and cash out earnings."
+    },
+    {
+      "title": "Good-or-Bad-CoffeeBeans/coffee_beans_data at main · dada8173 ... - GitHub",
+      "url": "https://github.com/dada8173/Good-or-Bad-CoffeeBeans/tree/main/coffee_beans_data",
+      "snippet": "\"Good Bean or Bad Bean\" is a project using image processing and machine learning with computer vision to automatically analyze coffee bean appearance. It identifies good and bad beans, helping coffee professionals improve sorting efficiency and quality."
+    },
+    {
+      "title": "DistroKid Help Center",
+      "url": "https://support.distrokid.com/hc/en-us",
+      "snippet": "DistroKid Help Center The Basics New to DistroKid? Wondering about the do's and don'ts of digital distribution? We have the …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Physicsru/compgen-checkpoints",
+  "slug": "physicsru-compgen-checkpoints",
+  "author": "Physicsru",
+  "url": "https://huggingface.co/Physicsru/compgen-checkpoints",
+  "created_at": "2026-09-08T14:39:37.000Z",
+  "updated_at": "2026-09-08T15:40:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "compositional-generalization",
+    "interpretability",
+    "recall-then-assemble",
+    "grpo",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 241407559882,
+  "storage_human": "241.4 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Songteksten.net - Vertaling: Lady Gaga - I'll Never Love Again",
+      "url": "https://songteksten.net/translation/5083/101024/lady-gaga/ill-never-love-again.html",
+      "snippet": "Vertaling van: Lady Gaga - I'll Never Love Again Ik zou willen Dat ik afscheid had kunnen nemen Ik zou gezegd hebben had wat ik …"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "I'LL NEVER LOVE AGAIN: Nederlandse vertaling van Lady Gaga",
+      "url": "https://www.letras.com/lady-gaga/ill-never-love-again/songtekst-vertaling.html",
+      "snippet": "Lees de volledige vertaling van de teksten van I'LL NEVER LOVE AGAIN en andere liedjes van Lady Gaga"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Lady Gaga - I'll Never Love Again songtekst vertaling",
+      "url": "https://www.vertaalsongtekst.nl/vertaling/Lady-Gaga/Ill-Never-Love-Again-67041.html",
+      "snippet": "Op 2019-01-15 om 15:27:35 uur is de songtekst I'll Never Love Again toegevoegd. I'll Never Love Again is van Lady Gaga Bekijk …"
+    }
+  ]
+}

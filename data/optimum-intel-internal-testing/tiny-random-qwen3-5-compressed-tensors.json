@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "optimum-intel-internal-testing/tiny-random-qwen3.5-compressed-tensors",
+  "slug": "optimum-intel-internal-testing-tiny-random-qwen3-5-compressed-tensors",
+  "author": "optimum-intel-internal-testing",
+  "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3.5-compressed-tensors",
+  "created_at": "2026-09-08T12:38:52.000Z",
+  "updated_at": "2026-09-08T12:40:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16099132,
+  "parameters_human": "16.1M",
+  "storage_bytes": 84259671,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Optimum, portes de placards, verrières, portes intérieures et dressing",
+      "url": "https://www.optimum.tm.fr/",
+      "snippet": "Fabricant français de portes de placards depuis plus de 30 ans, Optimum propose des portes de placards coulissantes, verrières en …"
+    },
+    {
+      "title": "Optimum Intel Internal Testing - Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/models",
+      "snippet": "Org profile for Optimum Intel Internal Testing on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Optimum | Support & Customer Account Management Home",
+      "url": "https://www.optimum.net/",
+      "snippet": "Get answers to everything Optimum! Pay your bill, find free WiFi, check your email, set up your voicemail, program your DVR and more!"
+    },
+    {
+      "title": "optimum-intel-internal-testing/tiny-random-internlm · Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-internlm",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Optimum, portes de placards, verrières, portes intérieures et dressing",
+      "url": "https://www.optimum.tm.fr/fr/1/29/1_Porte-de-placard.html",
+      "snippet": "Retrouvez l'ensemble des produits commercialisés par Optimum : porte de placard, dressing et aménagement, porte d'intérieur et …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "facebook/sam-3d-objects",
+  "slug": "facebook-sam-3d-objects",
+  "author": "facebook",
+  "url": "https://huggingface.co/facebook/sam-3d-objects",
+  "created_at": "2025-10-06T19:56:56.000Z",
+  "updated_at": "2026-06-12T07:06:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sam-3d-objects",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sam-3d-objects",
+    "3d-generation",
+    "en",
+    "arxiv:2511.16624",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 467,
+  "downloads_30d": 2905,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13338859690,
+  "storage_human": "13.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez des …"
+    },
+    {
+      "title": "facebook/sam-3d-objects · Hugging Face",
+      "url": "https://huggingface.co/facebook/sam-3d-objects",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "facebookresearch/sam-3d-objects - GitHub",
+      "url": "https://github.com/facebookresearch/sam-3d-objects",
+      "snippet": "SAM 3D Objects is a foundation model that reconstructs full 3D shape geometry, texture, and layout from a single image, excelling in real-world scenarios with occlusion and clutter by using progressive training and a data engine with human feedback. It outperforms prior 3D generation models in human ..."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/r.php/",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests. …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "NEWSKEN/tartanimu-context5-final",
+  "slug": "newsken-tartanimu-context5-final",
+  "author": "NEWSKEN",
+  "url": "https://huggingface.co/NEWSKEN/tartanimu-context5-final",
+  "created_at": "2026-09-08T12:25:48.000Z",
+  "updated_at": "2026-09-08T13:28:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "inertial-odometry",
+    "tartan-imu",
+    "imu",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7163241,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "TartanIMU - AirLab",
+      "url": "https://superodometry.com/tartanimu",
+      "snippet": "TartanIMU generalizes across vehicles, drones, humans, and legged robots, but it does not yet support every possible embodiment. New platform families may require a dedicated motion head or a mixture of existing experts."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Tartan-IMU/TartanIMU · Hugging Face",
+      "url": "https://huggingface.co/Tartan-IMU/TartanIMU",
+      "snippet": "TartanIMU — Multi-Platform Inertial Foundation Model TartanIMU is a light foundation model for neural inertial positioning. Given a 6-axis IMU stream (3-axis accelerometer + 3-axis gyroscope), the network regresses per-window body-frame velocity; position is obtained by integrating velocity with the platform orientation. It is the model released alongside the IROS 2026 Tartan IMU Challenge."
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · ChatGPT has evolved substantially since then. We’ve trained a model called ChatGPT which interacts in a …"
+    }
+  ]
+}

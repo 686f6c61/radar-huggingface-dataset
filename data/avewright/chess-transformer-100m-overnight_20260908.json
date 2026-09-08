@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "avewright/chess-transformer-100m-overnight_20260908",
+  "slug": "avewright-chess-transformer-100m-overnight_20260908",
+  "author": "avewright",
+  "url": "https://huggingface.co/avewright/chess-transformer-100m-overnight_20260908",
+  "created_at": "2026-09-08T15:23:03.000Z",
+  "updated_at": "2026-09-08T15:23:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chess",
+    "transformer",
+    "recurrent",
+    "policy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1194309552,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Využijte příspěvky na prevenci | ZP MV ČR",
+      "url": "https://www.zpmvcr.cz/",
+      "snippet": "Aktuality Zdraví a prevence s 211 startuje! Přijďte na naši roadshow 24. 8. 2026| #Pojištěnci Patnáct zastávek, preventivní vyšetření i …"
+    },
+    {
+      "title": "avewright/chess-transformer-100m-squares64 · Hugging Face",
+      "url": "https://huggingface.co/avewright/chess-transformer-100m-squares64",
+      "snippet": "Chess transformer 100M (squares64 recurrent) ~99Mparameter recurrent chess policy/value net. Attention is only over the 64 board squares. Turn, castling, and en passant are FiLM on the square stream, not extra tokens."
+    },
+    {
+      "title": "eKomunikace | ZP MV ČR",
+      "url": "https://www.zpmvcr.cz/pojistenci/moznosti-komunikace-se-zp-211/e-komunikace",
+      "snippet": "Generální ředitel Zdravotní pojišťovny ministerstva vnitra Ondřej Felix ocenil příslušníky složek Integrovaného záchranného systému …"
+    },
+    {
+      "title": "GitHub - avewright/transform: Chess model: learned board embeddings ...",
+      "url": "https://github.com/avewright/transform",
+      "snippet": "Chess Transformer Encoder-only transformer for chess: learned board embeddings, spatial policy head, Stockfish-supervised labels."
+    },
+    {
+      "title": "e-Komunikace",
+      "url": "https://eforms.zpmvcr.cz/eforms/ekomunikace",
+      "snippet": "Informace pro registraci ZÚ, která umožní podávání formulářů za své klienty prostřednictvím jednoho přihlášení k e-Komunikaci."
+    }
+  ]
+}

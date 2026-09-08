@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "phunphun/model.pth",
+  "slug": "phunphun-model-pth",
+  "author": "phunphun",
+  "url": "https://huggingface.co/phunphun/model.pth",
+  "created_at": "2026-09-08T17:53:46.000Z",
+  "updated_at": "2026-09-08T17:53:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "t5",
+    "generated_from_trainer",
+    "base_model:google-t5/t5-small",
+    "base_model:finetune:google-t5/t5-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 484909580,
+  "storage_human": "485 MB",
+  "base_model": "t5-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Phhofm/models: All my self trained & released AI upscaling ...",
+      "url": "https://github.com/Phhofm/models",
+      "snippet": "All my self trained &amp; released AI upscaling models. After gathering and applying over 600 different upscaling models, I learned how to train my own models, and these are the results. - Phhofm/m..."
+    },
+    {
+      "title": "مباريات اليوم | كووورة",
+      "url": "https://www.kooora.com/%D9%83%D8%B1%D8%A9-%D8%A7%D9%84%D9%82%D8%AF%D9%85/%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%8A%D9%88%D9%85",
+      "snippet": "18 hours ago · احصل على أحدث النتائج المباشرة لمباريات كرة القدم والنتائج والمباريات من جميع أنحاء العالم، بما في ذلك دوري أبطال أوروبا."
+    },
+    {
+      "title": "Self-Trained Models | Interactive Visual Comparison of Upscaling Models",
+      "url": "https://phhofm.github.io/upscale/selftrained.html",
+      "snippet": "Self-Trained Models Intro After creating this webpage, gathering 600+ model files and using them to create the examples here, I turned my attention towards learning how to train my own upscaling models. Since then I have trained some models myself, and on this page I have examples so these models can be compared."
+    },
+    {
+      "title": "الموقع العربي الرياضي الأول | كووورة",
+      "url": "https://www.kooora.com/",
+      "snippet": "كووورة هو الموقع الرياضي العربي الأول لمتابعة مباريات اليوم والنتائج المباشرة وأخبار جميع المسابقات الكروية حول العالم."
+    },
+    {
+      "title": "model.pth · coqui/XTTS-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/coqui/XTTS-v2/blob/main/model.pth",
+      "snippet": "main XTTS-v2/model.pth erogol Update model with more steps 1452fd7over 2 years ago download Copy download link"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "leslie721007/Qiushi-Engine-Principle-Guided-Frontier-Advancement",
+  "slug": "leslie721007-qiushi-engine-principle-guided-frontier-advancement",
+  "author": "leslie721007",
+  "url": "https://huggingface.co/leslie721007/Qiushi-Engine-Principle-Guided-Frontier-Advancement",
+  "created_at": "2026-09-08T12:26:06.000Z",
+  "updated_at": "2026-09-08T12:26:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "fill-mask",
+    "babylm",
+    "babylm-2026",
+    "strict-small",
+    "qiushi-engine",
+    "data-efficient-learning",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36458592,
+  "parameters_human": "36.5M",
+  "storage_bytes": 2723802233,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.it/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "[2604.27092] End-to-end autonomous scientific discovery on a real ...",
+      "url": "https://arxiv.org/abs/2604.27092",
+      "snippet": "Here we introduce Qiushi Discovery Engine, an LLM-based agentic system for end-to-end autonomous scientific discovery on a real optical platform. Qiushi Engine combines nonlinear research phases, Meta-Trace memory and a dual-layer architecture to maintain adaptive and stable research trajectories across long-horizon investigations involving ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=it-it",
+      "snippet": "Google offerto in: English PubblicitàInformazioni su GoogleGoogle.com in English © 2026 - Privacy- Termini App Google"
+    },
+    {
+      "title": "leslie721007 (Shuxing Yang) - Hugging Face",
+      "url": "https://huggingface.co/leslie721007",
+      "snippet": "Agentic Enginnering, LLM Qiushi Engine Developers"
+    },
+    {
+      "title": "Google - 302 Moved",
+      "url": "https://www.google.com/",
+      "snippet": "302 Moved The document has moved here."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "GeoBrain/seismic-interpolation-benchmark",
+  "slug": "geobrain-seismic-interpolation-benchmark",
+  "author": "GeoBrain",
+  "url": "https://huggingface.co/GeoBrain/seismic-interpolation-benchmark",
+  "created_at": "2026-09-08T13:13:07.000Z",
+  "updated_at": "2026-09-08T13:39:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "seismic",
+    "interpolation",
+    "trace-reconstruction",
+    "seg-c3",
+    "benchmark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8366776232,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "GeoBrain/seismic-interpolation · Hugging Face",
+      "url": "https://huggingface.co/GeoBrain/seismic-interpolation",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "timeanddate.com",
+      "url": "https://www.timeanddate.com/",
+      "snippet": "Personal World Clock Set the current time of your favorite locations across time zones."
+    },
+    {
+      "title": "GeoBrain/seismic-interpolation at main - Hugging Face",
+      "url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Time and Date AS",
+      "url": "https://redirects.timeanddate.com/company/",
+      "snippet": "Learn about Time and Date AS, the Norwegian company behind timeanddate.com, the world's number one website on time and time …"
+    }
+  ]
+}

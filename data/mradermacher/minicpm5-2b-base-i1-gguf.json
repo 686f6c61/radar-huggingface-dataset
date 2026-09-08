@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-Base-i1-GGUF",
+  "slug": "mradermacher-minicpm5-2b-base-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-Base-i1-GGUF",
+  "created_at": "2026-09-08T12:10:08.000Z",
+  "updated_at": "2026-09-08T12:25:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "llama",
+    "text-generation",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "base_model:openbmb/MiniCPM5-2B-Base",
+    "base_model:quantized:openbmb/MiniCPM5-2B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 774438,
+  "parameters_human": "774438",
+  "storage_bytes": 3141792,
+  "storage_human": "3 MB",
+  "base_model": "openbmb/MiniCPM5-2B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "mradermacher/MiniCPM5-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "网友调侃 Gemini 为北美大豆包，称其为最蠢 AI，为什么会被诟病难 …",
+      "url": "https://www.zhihu.com/question/2047324900080051711",
+      "snippet": "Jun 8, 2026 · 豆包 Gemini AI糊弄学 网友调侃 Gemini 为北美大豆包，称其为最蠢 AI，为什么会被诟病难用？ 你的使用感受如何？ [图 …"
+    }
+  ]
+}

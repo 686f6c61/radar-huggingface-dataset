@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-7fdeff2ba54331c8",
+  "slug": "gradients-io-tournaments-augmented-7fdeff2ba54331c8",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-7fdeff2ba54331c8",
+  "created_at": "2026-09-08T11:06:03.000Z",
+  "updated_at": "2026-09-08T11:07:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766384,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recuperare la password Prime Video - Amazon",
+      "url": "https://it.amazonforum.com/s/question/0D56Q0000BjlX8ZSQU/recuperare-la-password-prime-video",
+      "snippet": "Per modificare la password di accesso a Prime Video, dovrai modificare la password del tuo account Amazon. Puoi farlo seguendo …"
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-c4f75520b9d08aad · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-c4f75520b9d08aad",
+      "snippet": "Instructions to use gradients-io-tournaments/augmented-c4f75520b9d08aad with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Prime Video e Windows 7 - it.amazonforum.com",
+      "url": "https://it.amazonforum.com/s/question/0D56Q0000DpGU1NSQW/prime-video-e-windows-7",
+      "snippet": "Prime Video e Windows 7 Impossibile riprodurre ogni cosa su Prime Video. Viene infatti richiesto un continuo aggiornamento del …"
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-843231b26a4df7fd · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-843231b26a4df7fd",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Attivare Prime Video su TV lg - Amazon",
+      "url": "https://it.amazonforum.com/s/question/0D56Q0000D6ufFnSQI/attivare-prime-video-su-tv-lg",
+      "snippet": "Ciao @Digiacio65, ti diamo il benvenuto nella Community! Grazie per il tuo messaggio. Sono spiacente per le difficoltà riscontrate. …"
+    }
+  ]
+}

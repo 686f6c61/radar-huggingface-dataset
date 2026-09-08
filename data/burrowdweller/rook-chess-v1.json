@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "burrowdweller/rook-chess-v1",
+  "slug": "burrowdweller-rook-chess-v1",
+  "author": "burrowdweller",
+  "url": "https://huggingface.co/burrowdweller/rook-chess-v1",
+  "created_at": "2026-09-08T12:32:27.000Z",
+  "updated_at": "2026-09-08T12:32:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "chess",
+    "chess-engine",
+    "other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13431685,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INSA Toulouse",
+      "url": "https://moodle.insa-toulouse.fr/auth/",
+      "snippet": "Accédez à la plateforme d'authentification de l'INSA Toulouse pour vos services numériques."
+    },
+    {
+      "title": "burrowdweller/mini-chessformer-v1 · Hugging Face",
+      "url": "https://huggingface.co/burrowdweller/mini-chessformer-v1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Geotechnique - INSA Toulouse",
+      "url": "https://moodle.insa-toulouse.fr/file.php/301/content/",
+      "snippet": "Partie du cours de Jacques Lérau QU'EST-CE QUE LA GÉOTECHNIQUE ? La Géotechnique est l'ensemble des activités liées aux …"
+    },
+    {
+      "title": "burrowdweller (Jun Ling) - Hugging Face",
+      "url": "https://huggingface.co/burrowdweller",
+      "snippet": "User profile of Jun Ling on Hugging Face"
+    },
+    {
+      "title": "Résumé de cours sur la PLL & la synthèse de fréquence",
+      "url": "https://moodle.insa-toulouse.fr/pluginfile.php/25832/mod_resource/content/1/PLLSyntheseDeFrequence.pdf",
+      "snippet": "1. Présentation, généralités Une PLL (Phase Locked Loop, c'est à dire boucle à verrouillage de phase) est un système bouclé qui …"
+    }
+  ]
+}

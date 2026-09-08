@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ShotaMatumoto/retrieval",
+  "slug": "shotamatumoto-retrieval",
+  "author": "ShotaMatumoto",
+  "url": "https://huggingface.co/ShotaMatumoto/retrieval",
+  "created_at": "2026-09-08T17:26:42.000Z",
+  "updated_at": "2026-09-08T17:26:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Shota Matsumoto | Plans for this weekend? Try these 30 AI ... - Instagram",
+      "url": "https://www.instagram.com/reel/DcPbN9MBLhM/",
+      "snippet": "107 likes, 30 comments - shota_matsumotooo on August 19, 2026: \"Plans for this weekend? Try these 30 AI projects to refine your CV 🌟 Comment “AI” to access the full tutorial guide 📚 Beginner 1. Rule-based chatbot 2. Flower classifier 3. Wine quality scorer 4. Spam filter 5. Fuel efficiency predictor 6. Document scanner (OCR) 7. Sales forecaster 8. Loan eligibility predictor 9. Recipe ..."
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "Shota | AI tips & Entrepreneurial Tips & Life Tips ... - Instagram",
+      "url": "https://www.instagram.com/kimshotamatsumoto/",
+      "snippet": "170K Followers, 1,051 Following, 395 Posts - Shota | AI tips & Entrepreneurial Tips & Life Tips (@kimshotamatsumoto) on Instagram: \"Helping people build the life they want Founder @brainlot.app | Founder @u_niverse.app 📩 sm11745@nyu.edu\""
+    },
+    {
+      "title": "youtube | OBS Forums",
+      "url": "https://obsproject.com/forum/tags/youtube/",
+      "snippet": "Apr 15, 2026 · When we enter the YouTube stream key on OBS, it uploads the video directly on our YouTube page, but doesn't send …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Aydge/Qwen3.8-27B-Uncensored-Cyber-GGUF",
+  "slug": "aydge-qwen3-8-27b-uncensored-cyber-gguf",
+  "author": "Aydge",
+  "url": "https://huggingface.co/Aydge/Qwen3.8-27B-Uncensored-Cyber-GGUF",
+  "created_at": "2026-09-08T15:28:19.000Z",
+  "updated_at": "2026-09-08T15:28:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "qwen3",
+    "cyber",
+    "llama.cpp",
+    "image-text-to-text",
+    "base_model:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "base_model:quantized:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 104905744960,
+  "storage_human": "104.9 GB",
+  "base_model": "philbert440/Qwen3.8-27B-Uncensored-Cyber",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Formeln, Tabellen, Begriffe (E-Book Edubase) | hep Verlag",
+      "url": "https://www.hep-verlag.ch/formeln-tabellen-digital",
+      "snippet": "«Formeln, Tabellen, Begriffe» ist das kompakte Standard-Nachschlagewerk für Mathematik, Physik und Chemie. Konzipiert wurde es …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "Formeln, Tabellen, Begriffe (Print inkl. E-Book Edubase)",
+      "url": "https://www.hep-verlag.ch/formeln-tabellen",
+      "snippet": "«Formeln, Tabellen, Begriffe» ist das kompakte Standard-Nachschlagewerk für Mathematik, Physik und Chemie. Konzipiert wurde es …"
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-Cyber-GGUF: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-uncensored-cyber-gguf-philbert440",
+      "snippet": "Qwen3.8-27B-Uncensored-Cyber-GGUFis a set of llama.cpp GGUF quantizations of Qwen3.8-27B-Uncensored-Cyber, v2 recipe, maintained by philbert440. It targets text generation with a strong focus on cyber and offensive-security questions, while retaining image input through a separate vision projector and faster decoding through an optional Multi-Token Prediction (MTP) head. The model has 27B ..."
+    },
+    {
+      "title": "\"Formeln, Tabellen, Begriffe (Print inkl. E-Book Edubase)\" online kaufen",
+      "url": "https://www.orellfuessli.ch/shop/home/artikeldetails/A1074202132?msockid=0b44339d277e6f3e31f72453262c6ea9",
+      "snippet": "«Formeln, Tabellen, Begriffe» ist das kompakte Standard-Nachschlagewerk für Mathematik, Physik und Chemie. Konzipiert wurde es …"
+    }
+  ]
+}

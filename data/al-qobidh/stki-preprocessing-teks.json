@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Al-Qobidh/stki-preprocessing-teks",
+  "slug": "al-qobidh-stki-preprocessing-teks",
+  "author": "Al-Qobidh",
+  "url": "https://huggingface.co/Al-Qobidh/stki-preprocessing-teks",
+  "created_at": "2026-09-08T14:48:40.000Z",
+  "updated_at": "2026-09-08T14:48:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AL'in, la plateforme locative entièrement digitalisée",
+      "url": "https://al-in.fr/",
+      "snippet": "AL’in.fr la plateforme d’offres de logement d’Action Logement pour les salariés. Voir les offres de logements : Connectez-vous pour …"
+    },
+    {
+      "title": "tugas2-stki-model/preprocessing.py at main · christianmzrt ... - GitHub",
+      "url": "https://github.com/christianmzrt/tugas2-stki-model/blob/main/preprocessing.py",
+      "snippet": "92 lines (68 loc) · 2.45 KB main tugas2-stki-model / preprocessing.py Top Code Blame 92 lines (68 loc) · 2.45 KB Raw Edit and raw actions 1 2 3 4 5 6 7 8 9 10 11 12 ..."
+    },
+    {
+      "title": "AL — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/AL",
+      "snippet": "ils, ainsi que les crédits graphiques. En cas de réutilisation des textes de cette page, voyez comment citer les auteurs et mentionner …"
+    },
+    {
+      "title": "Text Preprocessing in NLP - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/text-preprocessing-for-nlp-tasks/",
+      "snippet": "Raw text data is often unstructured, noisy and inconsistent, containing typos, punctuation, stopwords and irrelevant information. Text preprocessing converts this data into a clean, structured and standardized format, enabling effective feature extraction and improving model performance."
+    },
+    {
+      "title": "Plateforme du logement d'Action Logement - Action Logement",
+      "url": "https://logement-actionlogement.fr/",
+      "snippet": "Trouvez votre logement en quelques clics, partout en France Découvrez nos solutions de logements à loyers abordables, adaptées à …"
+    }
+  ]
+}

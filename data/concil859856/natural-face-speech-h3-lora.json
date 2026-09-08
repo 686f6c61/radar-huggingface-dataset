@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "concil859856/natural-face-speech-h3-lora",
+  "slug": "concil859856-natural-face-speech-h3-lora",
+  "author": "concil859856",
+  "url": "https://huggingface.co/concil859856/natural-face-speech-h3-lora",
+  "created_at": "2026-09-08T17:35:14.000Z",
+  "updated_at": "2026-09-08T17:35:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "minimax",
+    "h3",
+    "t2v",
+    "i2v",
+    "lora",
+    "video-generation",
+    "text-to-video",
+    "video",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 312501195,
+  "storage_human": "313 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Containerization using Docker - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/containerization-using-docker/",
+      "snippet": "Jan 14, 2026 · Docker is the containerization platform that is used to package your application and all its dependencies together in …"
+    },
+    {
+      "title": "vpakarinen/natural-face-speech-h3-lora · Hugging Face",
+      "url": "https://huggingface.co/vpakarinen/natural-face-speech-h3-lora",
+      "snippet": "Instructions to use vpakarinen/natural-face-speech-h3-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "What is a Container? | Docker",
+      "url": "https://www.docker.com/resources/what-container/",
+      "snippet": "Docker container technology was launched in 2013 as an open source Docker Engine. It leveraged existing computing concepts …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Docker Docs",
+      "url": "https://docs.docker.com/",
+      "snippet": "Docker Documentation is the official Docker library of resources, manuals, and guides to help you containerize applications."
+    }
+  ]
+}

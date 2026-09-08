@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tpiwko/PP-OCRv5-Finetuned",
+  "slug": "tpiwko-pp-ocrv5-finetuned",
+  "author": "tpiwko",
+  "url": "https://huggingface.co/tpiwko/PP-OCRv5-Finetuned",
+  "created_at": "2026-09-08T17:30:02.000Z",
+  "updated_at": "2026-09-08T17:49:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7965915,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/em/?ctl=overview",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Fine-tune - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/v2.10.0/en/ppocr/model_train/finetune.html",
+      "snippet": "The PP-OCR series models provided by PaddleOCR have excellent performance in general scenarios and can solve detection and recognition problems in most cases. In vertical scenarios, if you want to obtain better model, you can further improve the accuracy of the PP-OCR series detection and recognition models through fine-tune."
+    },
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/ext/ical/W5b302.qR4UJ5cx3UfjymjXk9V9DjgY0/9eHr6QQIsaWumKFWGin7Wbi7E5Q7NoEPGGKalryZH0VZ2AEyxvP69nL_Qz79fmz6",
+      "snippet": "Securely access your email account through the E-Mail Center Login portal."
+    },
+    {
+      "title": "PP-OCRv5 - a PaddlePaddle Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/PaddlePaddle/pp-ocrv5",
+      "snippet": "PP-OCRv5 is the latest text recognition solution, supporting Simplified Chinese, Chinese Pinyin, Traditional Chinese, English, and Japanese"
+    },
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/robots.txt",
+      "snippet": "# Block site for all robots, except of shared calendars User-agent: * Disallow: /lisa/ab/ Disallow: /ab/ Disallow: /lisa/pr/ Disallow: /pr/ …"
+    }
+  ]
+}

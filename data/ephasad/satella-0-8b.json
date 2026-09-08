@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "EphAsad/Satella-0.8B",
+  "slug": "ephasad-satella-0-8b",
+  "author": "EphAsad",
+  "url": "https://huggingface.co/EphAsad/Satella-0.8B",
+  "created_at": "2026-09-08T15:41:53.000Z",
+  "updated_at": "2026-09-08T15:42:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "reasoning",
+    "lora",
+    "unsloth",
+    "satella",
+    "atem",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1766931943,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Início | APVM",
+      "url": "https://moodle.apvm.net/",
+      "snippet": "1 day ago · Agrupamento de Escolas Padre Vítor Melícias FAROL - Comunidade de Aprendizagem GAA - Gabinete de Apoio ao …"
+    },
+    {
+      "title": "EphAsad/Satella-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/EphAsad/Satella-30B-A3B",
+      "snippet": "Satella-30B-A3B is the large sparse reasoning branch of the Atem model series. It begins from the already post-trained Qwen/Qwen3-30B-A3B checkpoint and preserves the base model's native dual-mode reasoning behaviour rather than erasing and rebuilding it in separate stages."
+    },
+    {
+      "title": "biografia.PDF - apvm.net",
+      "url": "https://moodle.apvm.net/file.php/1/Documentos/biografiavmelicias.pdf",
+      "snippet": "Prémio Solidariedade/98 atribuido pela Misericórdia do Barreiro. Nomeação “Escola Básica P. Vitor Melícias”, Boavista – T. Vedras …"
+    },
+    {
+      "title": "EphAsad/Satella-30B-A3B at main - Hugging Face",
+      "url": "https://huggingface.co/EphAsad/Satella-30B-A3B/tree/main",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use EphAsad/Satella-30B-A3B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use EphAsad/Satella-30B-A3B with Transformers:"
+    },
+    {
+      "title": "Contacto: Contactos e Localização | APVM",
+      "url": "https://moodle.apvm.net/mod/page/view.php?id=59198",
+      "snippet": "Contratações Parcerias e Protocolos O nosso Patrono Geminação a Timor-Leste Contactos e Localização Política de Privacidade …"
+    }
+  ]
+}

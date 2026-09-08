@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rarad/test-keras-modified",
+  "slug": "rarad-test-keras-modified",
+  "author": "rarad",
+  "url": "https://huggingface.co/rarad/test-keras-modified",
+  "created_at": "2026-09-08T12:24:52.000Z",
+  "updated_at": "2026-09-08T12:26:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 553507232,
+  "storage_human": "554 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么关闭谷歌浏览器开机自启 取消谷歌浏览器开机自动启动 ...",
+      "url": "https://chrome.xahuapu.net/help/50.html",
+      "snippet": "May 27, 2023 · 本站为第三方浏览器资源整理与下载服务站，非谷歌 (Google)官方网站，与Google公司无任何隶属关系。 本站提供的 …"
+    },
+    {
+      "title": "AI Model Turns 'Evil' During Test, Tries to Build 'Bioweapons' to ...",
+      "url": "https://slaynews.com/ai-model-turns-evil-test-tries-build-bioweapons-maximize-civilian-deaths/",
+      "snippet": "Artificial intelligence giant Anthropic has revealed alarming results from safety testing that saw one of its advanced AI models rapidly descend into dangerous behavior when rewarded for achieving its objectives."
+    },
+    {
+      "title": "怎么设置谷歌浏览器退出时自动清理数据？谷歌浏览器开启 ...",
+      "url": "https://chrome.xahuapu.net/help/56.html",
+      "snippet": "May 26, 2023 · 怎么设置谷歌浏览器退出时自动清理数据？ 在使用谷歌浏览器浏览网页的时候，会产生一些cookie数据，部分用户每次 …"
+    },
+    {
+      "title": "A Meta AI Model Hacked Another Company During Cybersecurity Testing",
+      "url": "https://www.theinformation.com/articles/meta-ai-model-hacked-another-company-cybersecurity-testing",
+      "snippet": "A Meta Platforms artificial intelligence model accessed the internet during cybersecurity testing and hacked into another company, according to people familiar with the matter, in the latest in a string of such incidents at major AI firms. Meta’s Muse Spark 1.1 model breached the systems of a ..."
+    },
+    {
+      "title": "Keras: Deep Learning for humans",
+      "url": "https://keras.io/",
+      "snippet": "KERAS 3.0 RELEASED A superpower for ML developers Keras is a deep learning API designed for human beings, not machines. Keras focuses on debugging speed, code elegance & conciseness, maintainability, and deployability. When you choose Keras, your codebase is smaller, more readable, easier to iterate on."
+    }
+  ]
+}

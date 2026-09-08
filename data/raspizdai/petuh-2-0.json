@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RaspizdAI/petuh-2.0",
+  "slug": "raspizdai-petuh-2-0",
+  "author": "RaspizdAI",
+  "url": "https://huggingface.co/RaspizdAI/petuh-2.0",
+  "created_at": "2026-09-08T18:04:25.000Z",
+  "updated_at": "2026-09-08T18:10:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "petuh",
+    "reasoning",
+    "think",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 121526016,
+  "parameters_human": "121.5M",
+  "storage_bytes": 486117568,
+  "storage_human": "486 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is the most accurate Adopt Me value website : r/AdoptMeRBX",
+      "url": "https://www.reddit.com/r/AdoptMeRBX/comments/18x5rgf/what_is_the_most_accurate_adopt_me_value_website/",
+      "snippet": "MembersOnline IkejypTime ADMIN MOD What is the most accurate Adopt Me value website Question im confuzzled help Share Sort …"
+    },
+    {
+      "title": "RaspizdAI/pizdec · Hugging Face",
+      "url": "https://huggingface.co/RaspizdAI/pizdec",
+      "snippet": "RaspizdAI / pizdec like 0 Follow RaspizdAI 2 Safetensors pizdec License:mit Model card FilesFiles and versions xet Community Copy to bucket new 🚀 pizdec Technical Specifications: Benchmark Results:"
+    },
+    {
+      "title": "Common scam methods : r/AdoptMeRBX - Reddit",
+      "url": "https://www.reddit.com/r/AdoptMeRBX/comments/14e9793/common_scam_methods/",
+      "snippet": "Jun 20, 2023 · 26 votes, 35 comments. true Just doing this because I see so many people getting scammed so just some info about …"
+    },
+    {
+      "title": "Models | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "Learn about all of Google&#39;s most advanced AI models"
+    },
+    {
+      "title": "So apparently this is a rare item in Adopt Me, I have a 2019 ... - Reddit",
+      "url": "https://www.reddit.com/r/adoptmeroblox/comments/14zltnl/so_apparently_this_is_a_rare_item_in_adopt_me_i/",
+      "snippet": "Jul 14, 2023 · So apparently this is a rare item in Adopt Me, I have a 2019 christmas tree somehow, I haven't played in like 4 years, …"
+    }
+  ]
+}

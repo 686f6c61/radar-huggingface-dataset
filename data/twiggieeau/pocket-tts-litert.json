@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "twiggieeAU/Pocket-TTS-LiteRT",
+  "slug": "twiggieeau-pocket-tts-litert",
+  "author": "twiggieeAU",
+  "url": "https://huggingface.co/twiggieeAU/Pocket-TTS-LiteRT",
+  "created_at": "2026-09-08T14:36:08.000Z",
+  "updated_at": "2026-09-08T14:36:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "litert",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "on-device",
+    "tts",
+    "kyutai",
+    "text-to-speech",
+    "en",
+    "base_model:kyutai/pocket-tts",
+    "base_model:quantized:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1119239031,
+  "storage_human": "1.1 GB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sprunki - Gioca Online Gratis! | Poki",
+      "url": "https://poki.com/it/g/sprunki?msockid=10b6a06f649267e3130db7a1652e6695",
+      "snippet": "Ogni personaggio aggiunge immediatamente un suono al mix. Puoi rimuovere o sostituire qualsiasi personaggio in qualsiasi …"
+    },
+    {
+      "title": "GitHub - kyutai-labs/pocket-tts: A TTS that fits in your CPU (and pocket)",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "snippet": "A lightweight text-to-speech (TTS) application designed to run efficiently on CPUs. Forget about the hassle of using GPUs and web APIs serving TTS models. With Kyutai's Pocket TTS, generating audio is just a pip install and a function call away."
+    },
+    {
+      "title": "SPRUNKI gioco online gratis su Minigiochi.com",
+      "url": "https://www.minigiochi.com/gioco/sprunki",
+      "snippet": "Gioca a Sprunki senza scaricarlo sul tuo cellulare o computer. Divertiti subito con questo gioco di Bambini sul sito di giochi online …"
+    },
+    {
+      "title": "Pocket TTS - kyutai-labs.github.io",
+      "url": "https://kyutai-labs.github.io/pocket-tts/",
+      "snippet": "pocket-tts-wyomingby @ikidd - Docker container for pocket-tts using Wyoming protocol, ready for Home Assistant Voice use. Sonorusby @KevinAHM - Talk to any named character in Hogwarts Legacy with their original voice."
+    },
+    {
+      "title": "GIOCHI DI SPRUNKI GRATIS - Minigiochi.com",
+      "url": "https://www.minigiochi.com/sprunki",
+      "snippet": "La migliore selezione di giochi di sprunki gratis su Minigiochi.com. Visita la TOP Giochi di Sprunki più popolare per il tuo divertimento. …"
+    }
+  ]
+}

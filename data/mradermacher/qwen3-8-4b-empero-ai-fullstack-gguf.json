@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-4B-Empero-AI-FullStack-GGUF",
+  "slug": "mradermacher-qwen3-8-4b-empero-ai-fullstack-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-4B-Empero-AI-FullStack-GGUF",
+  "created_at": "2026-09-08T12:59:06.000Z",
+  "updated_at": "2026-09-08T13:26:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "qwen3_5",
+    "distillation",
+    "reasoning",
+    "full-stack",
+    "typescript",
+    "react-router-v8",
+    "nestjs",
+    "flutter",
+    "unsloth",
+    "en",
+    "base_model:iBotIA/Qwen3.8-4B-Empero-AI-FullStack",
+    "base_model:quantized:iBotIA/Qwen3.8-4B-Empero-AI-FullStack",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 39964798336,
+  "storage_human": "40.0 GB",
+  "base_model": "iBotIA/Qwen3.8-4B-Empero-AI-FullStack",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Entra admin center",
+      "url": "https://aad.portal.azure.com/?nonceErrorSeen=true",
+      "snippet": "Manage and secure your organization's identity and access with advanced tools in Microsoft Entra admin center."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    },
+    {
+      "title": "Sign in to your account - admin.microsoft.com",
+      "url": "https://admin.microsoft.com/AdminPortal/Home",
+      "snippet": "Sign in to manage your Microsoft account and access all services securely."
+    },
+    {
+      "title": "empero-ai/Qwen3.8-4B-Distill · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-4B-Distill",
+      "snippet": "Instructions to use empero-ai/Qwen3.8-4B-Distill with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Microsoft Entra admin center",
+      "url": "https://entra.microsoft.com/microsoft.com/",
+      "snippet": "Manage your Microsoft Entra account settings and access personalized services in the admin center."
+    }
+  ]
+}

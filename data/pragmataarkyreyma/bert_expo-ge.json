@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "PragmataArkyreyma/BERT_EXPO-GE",
+  "slug": "pragmataarkyreyma-bert_expo-ge",
+  "author": "PragmataArkyreyma",
+  "url": "https://huggingface.co/PragmataArkyreyma/BERT_EXPO-GE",
+  "created_at": "2026-09-08T10:25:20.000Z",
+  "updated_at": "2026-09-08T10:25:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110714136,
+  "parameters_human": "110.7M",
+  "storage_bytes": 442880088,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kazimierz III Wielki – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Kazimierz_III_Wielki",
+      "snippet": ""
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Toggle the table of contents BERT (language model)"
+    },
+    {
+      "title": "Casimir III the Great - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Casimir_III_the_Great",
+      "snippet": "This page was last edited on 26 August 2026, at 20:40 (UTC)."
+    },
+    {
+      "title": "BERT - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/bert",
+      "snippet": "BERT, short for Bidirectional Encoder Representations from Transformers, is a pretrained language model introduced by researchers at Google Research in 2018."
+    },
+    {
+      "title": "Kazimierz Wielki (1310-1370). Ostatni król z dynastii Piastów",
+      "url": "https://wielkahistoria.pl/encyklopedia/kazimierz-wielki-1310-1370/",
+      "snippet": "Kazimierz Wielki(ur. 30 kwietnia 1310, zm. 5 listopada 1370) – król Polski w latach 1320-1370, ostatni władca z dynastii Piastów na …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Misterlessthanmoreand/Gemmasutra-Mini-2B-v1-GGUF",
+  "slug": "misterlessthanmoreand-gemmasutra-mini-2b-v1-gguf",
+  "author": "Misterlessthanmoreand",
+  "url": "https://huggingface.co/Misterlessthanmoreand/Gemmasutra-Mini-2B-v1-GGUF",
+  "created_at": "2026-09-08T10:52:32.000Z",
+  "updated_at": "2026-09-08T10:52:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 48607435136,
+  "storage_human": "48.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HIZ Webmail :: Login :: UdS, htw saar & HfM Saar",
+      "url": "https://webmail.hiz-saarland.de/",
+      "snippet": "Zentraler Webmail-Login für Studierende und Beschäftigte der Universität des Saarlandes (UdS), htw saar und HfM Saar. Zugriff auf …"
+    },
+    {
+      "title": "TheDrummer/Gemmasutra-Mini-2B-v1 · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Gemmasutra-Mini-2B-v1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Webmail | Zentrum für Lehren und Lernen (ZeLL) | Universität des …",
+      "url": "https://www.uni-saarland.de/einrichtung/zell/gasthoererstudium/online-dienste/webmail.html",
+      "snippet": "Über die Startseite des HIZ gelangen Sie unter der Rubrik \"Schnelleinstieg\" und dort via E-Mail auf die Anmeldeseite zu Ihrem E-Mail …"
+    },
+    {
+      "title": "TheDrummer/Gemmasutra-Mini-2B-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Gemmasutra-Mini-2B-v1-GGUF",
+      "snippet": "Gemmasutra Mini 2B v1 🧘 Gemma's been training for ALL of you. A tiny RP model packing an unbelievable PUNCH. Finetuned by yours truly. Description Gone are the days when models below 7B were too small to give you a satisfying RP experience. Gemmasutra Mini 2B v1 marks the beginning of a new chapter in our local LLM community."
+    },
+    {
+      "title": "IT-Service für Studierende - Universität des Saarlandes",
+      "url": "https://www.uni-saarland.de/studium/organisation/alltag/it-service.html",
+      "snippet": "Matomo läuft auf einem Server der Universität. Ihre Daten werden nur dort für maximal sechs Monate gespeichert und nicht an Dritte …"
+    }
+  ]
+}

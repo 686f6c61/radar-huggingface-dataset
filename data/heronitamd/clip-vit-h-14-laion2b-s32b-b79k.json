@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "HERONITAMD/CLIP-ViT-H-14-laion2B-s32B-b79K",
+  "slug": "heronitamd-clip-vit-h-14-laion2b-s32b-b79k",
+  "author": "HERONITAMD",
+  "url": "https://huggingface.co/HERONITAMD/CLIP-ViT-H-14-laion2B-s32B-b79K",
+  "created_at": "2026-09-08T17:12:04.000Z",
+  "updated_at": "2026-09-08T17:12:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "pytorch",
+    "safetensors",
+    "clip",
+    "zero-shot-image-classification",
+    "arxiv:1910.04867",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 986109774,
+  "parameters_human": "986.1M",
+  "storage_bytes": 15778498494,
+  "storage_human": "15.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "laion/CLIP-ViT-H-14-laion2B-s32B-b79K · Hugging Face",
+      "url": "https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K",
+      "snippet": "Instructions to use laion/CLIP-ViT-H-14-laion2B-s32B-b79K with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "README.md · laion/CLIP-ViT-H-14-laion2B-s32B-b79K at refs/pr/14",
+      "url": "https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/blame/refs%2Fpr%2F14/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

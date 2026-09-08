@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "seriintan/act_frazier",
+  "slug": "seriintan-act_frazier",
+  "author": "seriintan",
+  "url": "https://huggingface.co/seriintan/act_frazier",
+  "created_at": "2026-09-08T13:17:15.000Z",
+  "updated_at": "2026-09-08T13:17:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act_kyc",
+    "dataset:seriintan/frazier_dataset_20260901_151518",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55863046,
+  "parameters_human": "55.9M",
+  "storage_bytes": 223496896,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Downloads | Notepad++",
+      "url": "https://notepad-plus-plus.org/downloads/",
+      "snippet": "Download Notepad++ v8.9.8 Download Notepad++ v8.9.7 - Slava Ukraini (stable: auto-update triggered) Download Notepad++ v8.9 . …"
+    },
+    {
+      "title": "seriintan (Seri Intan Kuala) - Hugging Face",
+      "url": "https://huggingface.co/seriintan",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "Notepad++",
+      "url": "https://notepad-plus-plus.org/",
+      "snippet": "Notepad++ is a free (as in “free speech” and also as in “free beer”) source code editor and Notepad replacement that supports …"
+    },
+    {
+      "title": "seriintan/multi_task_dit_frazier · Hugging Face",
+      "url": "https://huggingface.co/seriintan/multi_task_dit_frazier",
+      "snippet": "Instructions to use seriintan/multi_task_dit_frazier with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Notepad++ release 8.9.6.2 - Notepad++ Community",
+      "url": "https://community.notepad-plus-plus.org/topic/27554/notepad-release-8.9.6.2",
+      "snippet": "May 31, 2026 · Notepad++ v8.9.6. regression fixes, bug-fixes: Fix vulnerability (CVE-2026-46710) of v8.9.4 & v8.9.5 installer. …"
+    }
+  ]
+}

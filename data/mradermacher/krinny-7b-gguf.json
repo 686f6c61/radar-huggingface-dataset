@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/krinny-7b-GGUF",
+  "slug": "mradermacher-krinny-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/krinny-7b-GGUF",
+  "created_at": "2026-09-08T10:46:16.000Z",
+  "updated_at": "2026-09-08T11:13:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "es",
+    "ca"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "spanish",
+    "español",
+    "conversational",
+    "lora",
+    "ollama",
+    "es",
+    "ca",
+    "base_model:krinny/krinny-7b",
+    "base_model:adapter:krinny/krinny-7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146895744,
+  "storage_human": "68.1 GB",
+  "base_model": "krinny/krinny-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create a LinkedIn Company Page",
+      "url": "https://business.linkedin.com/advertise/linkedin-pages",
+      "snippet": "Drive brand awareness & quality engagement with professional audiences by creating a LinkedIn Company Page. Explore how you …"
+    },
+    {
+      "title": "mradermacher/turbo-ai-7b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/turbo-ai-7b-GGUF",
+      "snippet": "mradermacher / turbo-ai-7b-GGUF like 0 Summarization Transformers GGUF Safetensors English qwen2 text-generation conversational email drafting task-extraction local-ai edge-ai privacy turboai turbomail License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "How to Create a LinkedIn Company Page (Step-by-Step Guide)",
+      "url": "https://www.linkedin.com/pulse/how-create-linkedin-company-page-step-by-step-guide-fhm6f",
+      "snippet": "Mar 3, 2025 · A LinkedIn Company Page builds credibility, attracts leads, and positions your brand as an authority. If you don’t have …"
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Create a LinkedIn Page | LinkedIn Help",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a543852/creating-a-linkedin-company-page?lang=en",
+      "snippet": "You can create a LinkedIn Page for free, helping you represent and build your organization’s brand on LinkedIn. Pages can help …"
+    }
+  ]
+}

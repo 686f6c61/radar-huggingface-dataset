@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vdumitru1/FVT_82_custom",
+  "slug": "vdumitru1-fvt_82_custom",
+  "author": "vdumitru1",
+  "url": "https://huggingface.co/vdumitru1/FVT_82_custom",
+  "created_at": "2026-09-08T12:32:23.000Z",
+  "updated_at": "2026-09-08T12:32:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557750,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generatore da testo a immagine IA gratuito per creare immagini",
+      "url": "https://www.adobe.com/it/products/firefly/features/text-to-image.html?msockid=112141d4d6c66b8f19b2561ad7c56aed",
+      "snippet": "Un generatore di immagini IA permette di creare elementi visivi, come immagini, illustrazioni o grafiche, semplicemente inserendo un …"
+    },
+    {
+      "title": "vdumitru1 (Vlad Dumitru) - Hugging Face",
+      "url": "https://huggingface.co/vdumitru1",
+      "snippet": "User profile of Vlad Dumitru on Hugging Face"
+    },
+    {
+      "title": "Generatore immagini AI gratis: da testo o foto",
+      "url": "https://deevid.ai/it/ai-image-generator",
+      "snippet": "Crea immagini con il generatore AI gratuito di Deevid.ai. I migliori modelli per prompt complessi."
+    },
+    {
+      "title": "vdumitru1/test · Hugging Face",
+      "url": "https://huggingface.co/vdumitru1/test",
+      "snippet": "vdumitru1 / test like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Generatore Immagini AI Gratis - Da Testo a Immagine AI (Senza ...",
+      "url": "https://www.fotor.com/it/ai-image-generator/",
+      "snippet": "Trasforma il testo in immagini con il generatore immagini AI gratis di Fotor. Scopri modelli AI avanzati, prompt precisi e immagini …"
+    }
+  ]
+}

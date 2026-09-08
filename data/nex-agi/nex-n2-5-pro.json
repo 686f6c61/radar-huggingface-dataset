@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nex-agi/Nex-N2.5-Pro",
+  "slug": "nex-agi-nex-n2-5-pro",
+  "author": "nex-agi",
+  "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro",
+  "created_at": "2026-09-08T11:01:41.000Z",
+  "updated_at": "2026-09-08T16:17:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3193112,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/fr/login",
+      "snippet": "Regardez des films et des séries Netflix en ligne, sur votre smart TV, console de jeu, PC, Mac, smartphone, tablette et bien plus."
+    },
+    {
+      "title": "nex-agi/Nex-N2.5-Pro · Hugging Face",
+      "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro",
+      "snippet": "Nex-N2.5 is available in three sizes: mini, Pro, and Max. Nex-N2.5-mini and Nex-N2.5-Pro continue to build on the multimodal foundations of Nex-N2, with focused improvements in computer use, web browsing, and visually grounded agentic capabilities. Nex-N2.5-Max is built on a 1.6-trillion-parameter, text-only Mixture-of-Experts (MoE) foundation model, marking our first complete post-training ..."
+    },
+    {
+      "title": "Vortex Mod Manager - Nexus Mods",
+      "url": "https://www.nexusmods.com/vortex",
+      "snippet": "Vortex is the easiest way to manage your mods, so you can spend more time playing."
+    },
+    {
+      "title": "nex-agi/Nex-N2-Pro · Hugging Face",
+      "url": "https://huggingface.co/nex-agi/Nex-N2-Pro",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use nex-agi/Nex-N2-Pro with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use nex-agi/Nex-N2-Pro with Transformers:"
+    },
+    {
+      "title": "NEXANS Cours Action NEX, Cotation Bourse Euronext Paris - Boursorama",
+      "url": "https://www.boursorama.com/cours/1rPNEX/",
+      "snippet": "Le cours de l'action NEXANS NEX en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, actualités, …"
+    }
+  ]
+}

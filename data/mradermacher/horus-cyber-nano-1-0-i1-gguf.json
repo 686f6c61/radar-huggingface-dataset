@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Horus-Cyber-Nano-1.0-i1-GGUF",
+  "slug": "mradermacher-horus-cyber-nano-1-0-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Horus-Cyber-Nano-1.0-i1-GGUF",
+  "created_at": "2026-09-08T11:13:45.000Z",
+  "updated_at": "2026-09-08T11:36:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15960110208,
+  "parameters_human": "15.96B",
+  "storage_bytes": 65551019456,
+  "storage_human": "65.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About Montreal Protocol - UNEP",
+      "url": "https://www.unep.org/ozonaction/who-we-are/about-montreal-protocol",
+      "snippet": "The Montreal Protocol The Montreal Protocol on Substances that Deplete the Ozone Layer is the landmark multilateral environmental …"
+    },
+    {
+      "title": "A First Look at Horus Cyber Nano 1.0 | TokenAI",
+      "url": "https://tokenai.llc/news/announcements/horus-cyber-nano-first-look",
+      "snippet": "TokenAI shares a first technical look at Horus Cyber Nano 1.0, our first Mixture-of-Experts AI model, including core architecture details, early benchmark highlights, release timing, and the final end date for Early Access."
+    },
+    {
+      "title": "CCAMLR Convention | UNEP - UN Environment Programme",
+      "url": "https://www.unep.org/ccamlr-convention",
+      "snippet": "Sep 19, 2025 · A. Overview Antarctica is surrounded by an unbroken and dynamic body of water known as the Southern Ocean, …"
+    },
+    {
+      "title": "mradermacher/Air-nano-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Air-nano-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Air-nano-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "State of the marine environment in Antarctica - UNEP",
+      "url": "https://www.unep.org/resources/report/state-marine-environment-antarctica",
+      "snippet": "Sep 18, 1990 · Human activities have had a major effect on the balance of the Antarctic marine ecosystem, this can be seen by …"
+    }
+  ]
+}

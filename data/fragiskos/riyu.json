@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Fragiskos/Riyu",
+  "slug": "fragiskos-riyu",
+  "author": "Fragiskos",
+  "url": "https://huggingface.co/Fragiskos/Riyu",
+  "created_at": "2026-09-08T12:33:43.000Z",
+  "updated_at": "2026-09-08T12:34:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56005021,
+  "storage_human": "56 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urssaf - DPAE",
+      "url": "https://www.due.urssaf.fr/",
+      "snippet": "Le salarié concerné doit prendre contact avec la caisse d’assurance maladie de son lieu de résidence sur ameli.frou contacter le …"
+    },
+    {
+      "title": "Fragiskos/Euphrasia · Hugging Face",
+      "url": "https://huggingface.co/Fragiskos/Euphrasia",
+      "snippet": "Fragiskos / Euphrasia like 1 Text-to-Image Diffusers lora template:diffusion-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DPAE - Urssaf",
+      "url": "https://www.due.urssaf.fr/declarant/",
+      "snippet": "Le salarié concerné doit prendre contact avec la caisse d’assurance maladie de son lieu de résidence sur ameli.frou contacter le …"
+    },
+    {
+      "title": "Fragiskos/Euphrasia at main - Hugging Face",
+      "url": "https://huggingface.co/Fragiskos/Euphrasia/tree/main",
+      "snippet": "How to use Fragiskos/Euphrasia with Diffusers: ... Notebooks Local AppsSettings Draw Things DiffusionBee main Euphrasia 54.2 MB Ctrl+K Ctrl+K 1 contributor History:7 commits Fragiskos Upload Euphrasia-Ai-Voice-Model.zip 87faf9e verifiedabout 10 hours ago imagesAdd 2 files2 days ago .gitattributes 2.31 kBinitial commit2 days ago Euphrasia-Ai ..."
+    },
+    {
+      "title": "DPAE - Réaliser la déclaration préalable à l’embauche - Urssaf.fr",
+      "url": "https://www.urssaf.fr/accueil/employeur/embaucher-gerer-salaries/embaucher/declaration-prealable-embauche.html",
+      "snippet": "Jul 15, 2026 · La DPAE est une formalité déclarative à l’embauche obligatoire que vous devez faire pour : ouvrir à votre salarié tous …"
+    }
+  ]
+}

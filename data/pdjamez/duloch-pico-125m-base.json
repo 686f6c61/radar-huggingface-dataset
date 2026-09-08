@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pdjamez/Duloch-Pico-125M-Base",
+  "slug": "pdjamez-duloch-pico-125m-base",
+  "author": "pdjamez",
+  "url": "https://huggingface.co/pdjamez/Duloch-Pico-125M-Base",
+  "created_at": "2026-09-08T17:09:01.000Z",
+  "updated_at": "2026-09-08T18:11:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "base-model",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125095680,
+  "parameters_human": "125.1M",
+  "storage_bytes": 500957349,
+  "storage_human": "501 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schwarzenberger Gutschein: Natur, Vielfalt & gute Laune schenken",
+      "url": "https://www.schwarzenberger.com/de/schwarzenberger-gutschein/SW10157",
+      "snippet": "Mit dem Schwarzenberger-Gutschein schenkst du Freiheit zum Aussäen, Pflanzen, Wuchern und Blühen. Ob wilde Wiese, blühende …"
+    },
+    {
+      "title": "model.safetensors · jonam-ai/slm-125m-base at main",
+      "url": "https://huggingface.co/jonam-ai/slm-125m-base/blob/main/model.safetensors",
+      "snippet": "Instructions to use jonam-ai/slm-125m-base with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use jonam-ai/slm-125m-base with Transformers:"
+    },
+    {
+      "title": "Samenshop24 Gutschein September 2026 - 50% Rabatt - HotDeals",
+      "url": "https://de.hotdeals.com/shops/samenshop24-gutschein",
+      "snippet": "1 day ago · Spare bis zu 50% mit aktuellen Samenshop24 Gutscheine für September 2026. Entdecke 6 aktive Samenshop24 …"
+    },
+    {
+      "title": "125M AI Model Autocompletes Piano in Real-Time On-Device",
+      "url": "https://www.youtube.com/watch?v=87Z5NKHqMyA",
+      "snippet": "Meet the AI composer's assistant: a 125M parameter model that runs entirely on your device to autocomplete piano music in real-time. Like GitHub Copilot for ..."
+    },
+    {
+      "title": "Schwarzenberger: Dein Partner wenns wachsen soll",
+      "url": "https://www.schwarzenberger.com/de/",
+      "snippet": "Je besser der Samen, desto reicher die Ernte – gut für deine Tiere, gut für deinen Ertrag, gut für dich. Als Landwirt sind deine …"
+    }
+  ]
+}

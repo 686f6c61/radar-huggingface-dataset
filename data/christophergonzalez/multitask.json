@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "christophergonzalez/multitask",
+  "slug": "christophergonzalez-multitask",
+  "author": "christophergonzalez",
+  "url": "https://huggingface.co/christophergonzalez/multitask",
+  "created_at": "2026-09-08T15:28:58.000Z",
+  "updated_at": "2026-09-08T15:29:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Domina aus Oldenburg im Interview: Warum Adeline Blossom",
+      "url": "https://www.nwzonline.de/oldenburg/domina-aus-oldenburg-im-interview-warum-adeline-blossom-sich-fuer-den-beruf-domina-entschieden-hat_a_3,2,3879049118.html",
+      "snippet": "Adeline Blossom arbeitet seit einigen Monaten als hauptberufliche Domina in Oldenburg. Warum sie diesen Schritt gegangen ist und …"
+    },
+    {
+      "title": "A Multitask Deep Learning Model for Pediatric Echocardiography Analysis",
+      "url": "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.126.080619",
+      "snippet": "Congenital heart defects afflict ≈1% of all births worldwide. Although deep learning has shown significant promise in automating and improving adult echocardiography analysis, existing pediatric-based models are often limited to single tasks and specific echocardiographic views. To address this, we introduce EchoAI-Peds, a multitask deep learning model for pediatric echocardiography. Our ..."
+    },
+    {
+      "title": "Oldenburger Domina - das Geschäft mit dem Schmerz und der Lust",
+      "url": "https://www.nwzonline.de/vidoes/oldenburger-domina-das-geschaeft-mit-dem-schmerz-und-der-lust_v_hmyXFCLEE4U.html",
+      "snippet": "Mar 3, 2023 · Als Domina betreibt sie in Oldenburg ein Studio, in dem sie vor allem Rollen- und Fesselspiele anbietet. Wir haben sie …"
+    },
+    {
+      "title": "MultipleChat | Multiple AI Models, AI Collaboration, Files & Image Studio",
+      "url": "https://multiplechat.ai/",
+      "snippet": "MultipleChat is an AI workspace for chat, research, writing, files and images. Ask one question, compare answers from multiple AI models side by side, or let several models work together on the same task."
+    },
+    {
+      "title": "Ausbildung in der Sexarbeit: Oldenburger Domina will mehr Kontrolle",
+      "url": "https://www.nwzonline.de/oldenburg/ausbildung-in-der-sexarbeit-oldenburger-domina-will-mehr-kontrolle_a_3,2,3864885249.html",
+      "snippet": "Mar 23, 2023 · Für Menschen, die in der Sexarbeit tätig sind, gibt es keine verbindliche Ausbildung. Die Oldenburger Domina Nica …"
+    }
+  ]
+}

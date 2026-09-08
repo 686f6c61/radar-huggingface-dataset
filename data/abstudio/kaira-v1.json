@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "abstudio/kaira-v1",
+  "slug": "abstudio-kaira-v1",
+  "author": "abstudio",
+  "url": "https://huggingface.co/abstudio/kaira-v1",
+  "created_at": "2026-09-08T10:38:27.000Z",
+  "updated_at": "2026-09-08T10:41:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39763168,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manufacruter - ABstudio scrapbooking & decoupage | papers",
+      "url": "https://abstudiostore.com/en/",
+      "snippet": "ABstudio is a space for artistic creators who value quality, aesthetics, and refined detail. Since 2018, we have been creating original …"
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "AB STUDIO ™",
+      "url": "https://shop.abstudio.press/fr/",
+      "snippet": "LOVEЯ Magazine MODE - ART - PHOTOGRAPHIE - MUSIQUE LOVEЯ Mag est un magazine de mode, art, photographie et …"
+    },
+    {
+      "title": "Google AI Studio | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/aistudio",
+      "snippet": "Get started with the Gemini API on Google AI Studio."
+    },
+    {
+      "title": "ABstudio - Facebook",
+      "url": "https://www.facebook.com/ABstudiostorecom/",
+      "snippet": "ABstudio. 14,703 likes · 408 talking about this. As a producer of scrapbooking, decoupage and furniture products."
+    }
+  ]
+}

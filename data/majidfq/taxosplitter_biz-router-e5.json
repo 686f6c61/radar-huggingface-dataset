@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "MajidFQ/taxoSplitter_biz-router-e5",
+  "slug": "majidfq-taxosplitter_biz-router-e5",
+  "author": "MajidFQ",
+  "url": "https://huggingface.co/MajidFQ/taxoSplitter_biz-router-e5",
+  "created_at": "2026-09-08T14:40:08.000Z",
+  "updated_at": "2026-09-08T14:59:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:30345",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:intfloat/e5-base-v2",
+    "base_model:finetune:intfloat/e5-base-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "base_model": "intfloat/e5-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT \"DAN\" (and other \"Jailbreaks\") NOTE: As of 20230711, the DAN 12.0 prompt is working properly with Model GPT-3.5 All …"
+    },
+    {
+      "title": "Malicious AI Agent Routers Could Become New Crypto Theft Plague",
+      "url": "https://hotpaths.com/malicious-ai-agent-routers-could-become-new-crypto-theft-plague/",
+      "snippet": "How Malicious AI Agent Routers Actually Work – Plaintext Proxies, Not Encrypted Pipes Standard LLM API infrastructure was designed for simple request-response relay: a client sends a prompt, the router forwards it to the model provider, the response comes back."
+    },
+    {
+      "title": "GitHub - isxlan0/Codex_AccountSwitch: Manage and switch multiple AI ...",
+      "url": "https://github.com/isxlan0/Codex_AccountSwitch",
+      "snippet": "Feb 6, 2026 · Manage and switch multiple AI coding accounts locally without restarting development tools. - …"
+    },
+    {
+      "title": "EY says its 'invisible' AI router has helped cut token consumption by ...",
+      "url": "https://www.businessinsider.com/ey-ai-router-big-four-managing-token-consumption-2026-7",
+      "snippet": "The Big Four firm EY has installed a router behind its AI tools to help manage token spend."
+    },
+    {
+      "title": "Chat ai国内接入版，与chat gpt有啥关系？",
+      "url": "https://www.zhihu.com/question/601463887",
+      "snippet": "May 17, 2023 · GPT-4，Chat GPT最新一代已公开模型，有更强大的推理能力，同样需要Plus会员才可使用。 Claude 2，由原Open …"
+    }
+  ]
+}

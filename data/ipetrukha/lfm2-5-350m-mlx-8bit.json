@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ipetrukha/LFM2.5-350M-MLX-8bit",
+  "slug": "ipetrukha-lfm2-5-350m-mlx-8bit",
+  "author": "ipetrukha",
+  "url": "https://huggingface.co/ipetrukha/LFM2.5-350M-MLX-8bit",
+  "created_at": "2026-09-08T10:19:16.000Z",
+  "updated_at": "2026-09-08T10:19:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:quantized:LiquidAI/LFM2.5-350M",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 376737380,
+  "storage_human": "377 MB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL) - Notowania GPW ...",
+      "url": "https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=BNPPPL",
+      "snippet": "BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL) - najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty …"
+    },
+    {
+      "title": "ipetrukha/LFM2.5-350M-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/ipetrukha/LFM2.5-350M-MLX-8bit",
+      "snippet": "Instructions to use ipetrukha/LFM2.5-350M-MLX-8bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "BNP Paribas BP liczy na wzrost udziałów rynkowych w kluczowych ...",
+      "url": "https://www.bankier.pl/wiadomosc/BNP-Paribas-BP-liczy-na-wzrost-udzialow-rynkowych-w-kluczowych-produktach-9181156.html",
+      "snippet": "Aug 12, 2026 · BNP Paribas Bank Polska zwiększa skalę działalności, ale nie idzie za tym wzrost udziałów rynkowych. Bank chce …"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-350M-MLX-8bit at main - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-350M-MLX-8bit/tree/main",
+      "snippet": "like 8 Follow Liquid AI 3.68k Text Generation MLX Safetensors 8 languages lfm2 liquid lfm2.5 edge conversational 8-bit precision License:lfm1.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL)",
+      "url": "https://www.bankier.pl/gielda/notowania/akcje/BNPPPL/podstawowe-dane",
+      "snippet": "4 days ago · BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL) - najnowsze wiadomości, aktualne notowania, forum dyskusyjne, …"
+    }
+  ]
+}

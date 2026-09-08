@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Erbium08/gouda-g1-xs-r4",
+  "slug": "erbium08-gouda-g1-xs-r4",
+  "author": "Erbium08",
+  "url": "https://huggingface.co/Erbium08/gouda-g1-xs-r4",
+  "created_at": "2026-09-08T12:31:31.000Z",
+  "updated_at": "2026-09-08T12:35:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146626381,
+  "storage_human": "147 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "old.reddit.com on reddit.com",
+      "url": "https://www.reddit.com/domain/old.reddit.com/",
+      "snippet": "Submitters of top-rated content on this videogame sub exist solely to promote the game (seriously, read their post history); game …"
+    },
+    {
+      "title": "GitHub - Erbium08/gouda-ai",
+      "url": "https://github.com/Erbium08/gouda-ai",
+      "snippet": "Contribute to Erbium08/gouda-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "/r/SAT! - Reddit",
+      "url": "https://www.reddit.com/r/Sat/wiki/index/",
+      "snippet": "Apr 1, 2009 · A forum to discuss the SAT and forms of preparation for taking the test. Please use this subreddit to ask for and offer …"
+    },
+    {
+      "title": "Erbium08 (Erbium) · GitHub",
+      "url": "https://github.com/Erbium08",
+      "snippet": "A graph representing Erbium08's contributions from July 06, 2025 to July 07, 2026. The contributions are 100% commits, 0% issues, 0% pull requests, 0% code review."
+    },
+    {
+      "title": "Alternate links that are working : r/TPB - Reddit",
+      "url": "https://www.reddit.com/r/TPB/comments/a1srj3/alternate_links_that_are_working/",
+      "snippet": "Nov 30, 2018 · ADMIN MOD Alternate links that are working Download TOR Browser at torproject.orgif TPB is blocked by your ISP"
+    }
+  ]
+}

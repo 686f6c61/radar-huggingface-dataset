@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ajaysdhillon14/minbert-sts-nli-meanpool",
+  "slug": "ajaysdhillon14-minbert-sts-nli-meanpool",
+  "author": "ajaysdhillon14",
+  "url": "https://huggingface.co/ajaysdhillon14/minbert-sts-nli-meanpool",
+  "created_at": "2026-09-08T12:17:10.000Z",
+  "updated_at": "2026-09-08T12:19:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "semantic-textual-similarity",
+    "sts",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482752,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437954368,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail にログインする - パソコン - Gmail ヘルプ",
+      "url": "https://support.google.com/mail/answer/8494?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "パソコンで Gmailにアクセスします。 Google アカウントのメールアドレスまたは電話番号と、パスワードを入力します。 情報がす …"
+    },
+    {
+      "title": "ajaysdhillon14/minbert-sts-nli-meanpool · Hugging Face",
+      "url": "https://huggingface.co/ajaysdhillon14/minbert-sts-nli-meanpool",
+      "snippet": "ajaysdhillon14 / minbert-sts-nli-meanpool like 0 Sentence Similarity Safetensors bert semantic-textual-similarity sts License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new minbert-sts-nli-meanpool Results (STS-B dev set) Usage Training details"
+    },
+    {
+      "title": "login的ing形式是？_百度知道",
+      "url": "https://zhidao.baidu.com/question/138264971.html",
+      "snippet": "login的ing形式是？1 答案： logining2 方法：动词的ing 形式的变化规：1）一般在词尾加ING ，如 login- logining ; open - opening2) 以 …"
+    },
+    {
+      "title": "similarity-matching-sentence-transformers/docs/pretrained-models/sts ...",
+      "url": "https://github.com/eddiebarry/similarity-matching-sentence-transformers/blob/master/docs/pretrained-models/sts-models.md",
+      "snippet": "The models were first trained on NLI data, then we fine-tuned them on the STS benchmark dataset. This generate sentence embeddings that are especially suitable to measure the semantic similarity between sentence pairs. We use the training file from the STS benchmark dataset. For a training example ..."
+    },
+    {
+      "title": "aff官方注册入口链接 aff官网2025最新登录注册入口链接_百度知道",
+      "url": "https://zhidao.baidu.com/question/1060568710700432139.html",
+      "snippet": "Nov 17, 2025 · aff官方注册入口链接 aff官网2025最新登录注册入口链接AFF（Asianfanfics）官方注册入口链接 …"
+    }
+  ]
+}

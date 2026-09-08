@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jakeatx/ream-288-rank32-3m-adapter",
+  "slug": "jakeatx-ream-288-rank32-3m-adapter",
+  "author": "jakeatx",
+  "url": "https://huggingface.co/jakeatx/ream-288-rank32-3m-adapter",
+  "created_at": "2026-09-08T12:53:31.000Z",
+  "updated_at": "2026-09-08T12:53:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "nvfp4",
+    "ream-288",
+    "text-generation",
+    "base_model:jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-mixed-nvfp4-v2",
+    "base_model:adapter:jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-mixed-nvfp4-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 487994592,
+  "storage_human": "488 MB",
+  "base_model": "jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-mixed-nvfp4-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "West Anatolia region (statistical) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/West_Anatolia_Region_(statistical)",
+      "snippet": "3.1State register location of West Anatolia residents. 4Marital status of 15+ population by gender. 5Education status of 15+ population …"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 417 AI models across 422 benchmarks, with 232 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Eastern Anatolia region - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Anatolia_Region",
+      "snippet": "Search Search Toggle the table of contents Eastern Anatolia region 53 languagesAdd topic"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "West Anatolia region (statistical) — Grokipedia",
+      "url": "https://grokipedia.com/page/west_anatolia_region_statistical",
+      "snippet": "The West Anatolia statistical region (TR5), also known as Batı Anadolu Bölgesi, is situated in the central-western part of Turkey, …"
+    }
+  ]
+}

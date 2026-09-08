@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/oac-system-health-v1",
+  "slug": "szlholdings-oac-system-health-v1",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/oac-system-health-v1",
+  "created_at": "2026-09-08T11:06:20.000Z",
+  "updated_at": "2026-09-08T11:07:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "logistic-regression",
+    "operations",
+    "observability",
+    "synthetic-data",
+    "standard-library",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Derniers tirages Loto®, EuroMillions - My Million, Keno ... - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/resultats?msockid=141a4b4ffbc86c4333675c81faa26d6c",
+      "snippet": "Vous avez manqué le dernier tirage LOTO®, Euro Millions-My Million® ou Joker+® ? Consultez tous les résultats des jeux de tirage …"
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "LOTO® : 5 M€ ce mercredi 9 septembre 2026 - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/loto?msockid=141a4b4ffbc86c4333675c81faa26d6c",
+      "snippet": "Vous avez jusqu’au mercredi 9 septembre 2026 20h15 pour jouer en ligne et tenter de remporter le Jackpot LOTO® de 5 M€. …"
+    },
+    {
+      "title": "GitHub - szl-holdings/.github: SZL Holdings org profile — governed-AI ...",
+      "url": "https://github.com/szl-holdings/.github",
+      "snippet": "SZL Holdings org profile — governed-AI company overview, community health files, reusable workflows, and doctrine. Products: a11oy + killinchu. Visit a-11-oy.com. - szl-holdings/.github"
+    },
+    {
+      "title": "Parions Sport point de vente : paris sportifs et Loto Sports en point ...",
+      "url": "http://www.pointdevente.parionssport.fdj.fr/",
+      "snippet": "Parions Sport Point de Ventevous propose des paris sportifs sur de nombreux sports (Football, Rugby, Basket, Tennis...). Choisissez …"
+    }
+  ]
+}

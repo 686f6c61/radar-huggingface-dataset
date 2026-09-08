@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "con-cord/GRPO-MOD2adv-base-no-ref",
+  "slug": "con-cord-grpo-mod2adv-base-no-ref",
+  "author": "con-cord",
+  "url": "https://huggingface.co/con-cord/GRPO-MOD2adv-base-no-ref",
+  "created_at": "2026-09-08T10:10:20.000Z",
+  "updated_at": "2026-09-08T10:15:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 17238509855,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Con — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Con",
+      "snippet": "Afficher / masquer la sous-section Usage contemporain et littéraire. 3.1Le personnage du con. 3.2Jeux sur la polysémie. 3.3Jeux sur …"
+    },
+    {
+      "title": "GRPO-MOD2-adv-no-ref API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/con-cord/GRPO-MOD2-adv-no-ref",
+      "snippet": "Deploy GRPO-MOD2-adv-no-ref with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Conventions à Paris 2026 2027, les acteurs des séries vous rencontrent",
+      "url": "https://www.tourisme93.com/document.php?pagendx=815&engine_zoom=FMAIDFC930030576",
+      "snippet": "1 day ago · Où manger où dormir. Hôtel. Restaurant. Meublé de tourisme. Auberge de jeunesse. Hébergement plein air. Nos visites. …"
+    },
+    {
+      "title": "con-cord/GRPO-MOD2-reward-no-ref · Hugging Face",
+      "url": "https://huggingface.co/con-cord/GRPO-MOD2-reward-no-ref",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Définitions : con - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/con/17848",
+      "snippet": "con adj. et n. Stupide, imbécile, idiot. À la con. Con comme un balai, comme la lune. Faire le con. con n.m. . Sexe de la femme, vagin."
+    }
+  ]
+}

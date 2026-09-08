@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Sociovestix/lenu_IN",
+  "slug": "sociovestix-lenu_in",
+  "author": "Sociovestix",
+  "url": "https://huggingface.co/Sociovestix/lenu_IN",
+  "created_at": "2026-09-08T10:59:57.000Z",
+  "updated_at": "2026-09-08T11:05:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "albert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33469730,
+  "parameters_human": "33.5M",
+  "storage_bytes": 149168340,
+  "storage_human": "149 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "lenu",
+      "metric": "f1",
+      "value": 0.858707344574191
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "lenu",
+      "metric": "f1 macro",
+      "value": 0.4090972870034124
+    }
+  ],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/Office365.com",
+      "snippet": ""
+    },
+    {
+      "title": "Sociovestix Labs - Hugging Face",
+      "url": "https://huggingface.co/Sociovestix",
+      "snippet": "Org profile for Sociovestix Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/welearn365.com",
+      "snippet": ""
+    },
+    {
+      "title": "Sociovestix/lenu · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Sociovestix/lenu",
+      "snippet": "The dataset has been created as part of a collaboration of the Global Legal Entity Identifier Foundation (GLEIF) and Sociovestix Labs with the goal to explore how Machine Learning can support in detecting the ELF Code solely based on an entity's legal name and legal jurisdiction."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/schools.Nyc.gov",
+      "snippet": ""
+    }
+  ]
+}

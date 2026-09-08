@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Workstation5495/Resonatex-D3",
+  "slug": "workstation5495-resonatex-d3",
+  "author": "Workstation5495",
+  "url": "https://huggingface.co/Workstation5495/Resonatex-D3",
+  "created_at": "2026-09-08T17:42:37.000Z",
+  "updated_at": "2026-09-08T17:48:42.000Z",
+  "license": "update-before-publishing",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "conversational",
+    "chat",
+    "from-scratch",
+    "russian",
+    "pytorch",
+    "ru",
+    "en",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124442112,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497788625,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "夜勤労働者の健康診断とは？対象者の基準や事後措置対応を ...",
+      "url": "https://go100.jp/column/night-shiftworkers-healthcheckup/",
+      "snippet": "Sep 1, 2026 · 本記事では、夜勤労働者（特定業務従事者）における健康診断の法的義務や実施項目、異常が見つかった場合の対応 …"
+    },
+    {
+      "title": "GitHub - Workstation5495/ResonateAI: Resonate AI chat",
+      "url": "https://github.com/Workstation5495/ResonateAI",
+      "snippet": "Resonate AI chat. Contribute to Workstation5495/ResonateAI development by creating an account on GitHub."
+    },
+    {
+      "title": "夜勤・深夜業従事者の健康診断は年2回。対象者や実施フローを ...",
+      "url": "https://business.mrso.jp/media/health-check/358/",
+      "snippet": "Jun 2, 2026 · 夜勤や深夜業に従事する従業員の健康管理は、企業の重要な責任です。 とくに健康診断は、従業員の健康状態を把握 …"
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "夜勤労働者は2回の健康診断が必要！項目や対象者の基準も ...",
+      "url": "https://hrnote.jp/contents/roumu-yakin-kenkoshindan-20220527/",
+      "snippet": "22時〜翌5時に労働することを夜勤（深夜労働）といいます。 事業者には、この時間に勤務する従業員に対して、健康診断を受診さ …"
+    }
+  ]
+}

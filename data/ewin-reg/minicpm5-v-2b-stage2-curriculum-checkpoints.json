@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ewin-reg/MiniCPM5-V-2B-Stage2-Curriculum-Checkpoints",
+  "slug": "ewin-reg-minicpm5-v-2b-stage2-curriculum-checkpoints",
+  "author": "ewin-reg",
+  "url": "https://huggingface.co/ewin-reg/MiniCPM5-V-2B-Stage2-Curriculum-Checkpoints",
+  "created_at": "2026-09-08T10:40:52.000Z",
+  "updated_at": "2026-09-08T10:40:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:openbmb/MiniCPM5-2B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:openbmb/MiniCPM5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "FlagRelease is a platform developed by the FlagOS team for automatic migration, adaptation, and deployment of large models across multi-architecture AI chips. The multi-chip version of MiniCPM5-2B has already been released on FlagRelease."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "Releases · OpenBMB/MiniCPM-V-Apps · GitHub",
+      "url": "https://github.com/OpenBMB/MiniCPM-V-Apps/releases",
+      "snippet": "The user-facing model name is now MiniCPM5-1B (Q4_K_M)(was MiniCPM5 0.9B), matching the public release. Existing v2.0 users with a MiniCPM5-0.9B-Q4_K_M.ggufon disk will see it auto-renamed to MiniCPM5-1B-Q4_K_M.gguf; the downstream integrity check then either accepts the bytes or quietly re-downloads the canonical file (~656 MB)."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

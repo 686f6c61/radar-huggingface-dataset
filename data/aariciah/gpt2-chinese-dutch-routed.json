@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aariciah/gpt2-chinese-dutch-routed",
+  "slug": "aariciah-gpt2-chinese-dutch-routed",
+  "author": "aariciah",
+  "url": "https://huggingface.co/aariciah/gpt2-chinese-dutch-routed",
+  "created_at": "2026-09-08T10:11:27.000Z",
+  "updated_at": "2026-09-08T10:33:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:aariciah/gpt2-chinese-20k-lc",
+    "base_model:finetune:aariciah/gpt2-chinese-20k-lc",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 115412736,
+  "parameters_human": "115.4M",
+  "storage_bytes": 5078331153,
+  "storage_human": "5.1 GB",
+  "base_model": "aariciah/gpt2-chinese-20k-lc",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Proef Soest",
+      "url": "https://www.proef-soest.nl/",
+      "snippet": "Ons gezellige restaurant aan de Burgemeester Grothestraat in Soest biedt binnen zitplaats aan 40 gasten. In de zomer komt daar …"
+    },
+    {
+      "title": "aariciah/gpt2-chinese-dutch-first · Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-chinese-dutch-first",
+      "snippet": "Instructions to use aariciah/gpt2-chinese-dutch-first with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Restaurant Proef - Proef Soest",
+      "url": "https://www.proef-soest.nl/restaurant-proef/",
+      "snippet": "Gefrituurde mosselen met ravigottesaus Hoofdgerecht 19.50 Op de huid gebakken zalm | groene asperge | bearnaisesaus | rustieke …"
+    },
+    {
+      "title": "aariciah/gpt2-chinese-dutch-first - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/aariciah/gpt2-chinese-dutch-first",
+      "snippet": "Run aariciah/gpt2-chinese-dutch-first with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Proef Soest | Soest - Facebook",
+      "url": "https://www.facebook.com/proef.soest/",
+      "snippet": "Jul 31, 2026 · Proef Soest is at Van Weedestraat Soestdijk. 🌟 Nieuwe Special! 🌟 Deze week hebben we weer iets lekkers voor je …"
+    }
+  ]
+}

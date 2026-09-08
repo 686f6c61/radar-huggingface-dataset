@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sotatanaka/thesis-neural-architecture-search",
+  "slug": "sotatanaka-thesis-neural-architecture-search",
+  "author": "sotatanaka",
+  "url": "https://huggingface.co/sotatanaka/thesis-neural-architecture-search",
+  "created_at": "2026-09-08T16:56:57.000Z",
+  "updated_at": "2026-09-08T16:57:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Homeowner's Guide to Energy Efficient Mortgages",
+      "url": "https://www.mortgagecalculator.org/helpful-advice/energy-efficient-mortgages.php",
+      "snippet": "Banks Credit unions Mortgage companies Savings and loan companies Keep in mind that not every lender offers these loans, and …"
+    },
+    {
+      "title": "sotatanaka/thesis-neural-architecture-search · Hugging Face",
+      "url": "https://huggingface.co/sotatanaka/thesis-neural-architecture-search",
+      "snippet": "Repository summary This is an exploratory note for Neural Architecture Search. It records the intended comparison, likely confounders, and reproducibility requirements before any benchmark result is reported."
+    },
+    {
+      "title": "Top 5 Banks Offering Green Home Loans at the Lowest Interest Rates …",
+      "url": "https://tradebrains.in/money/top-5-banks-offering-green-home-loans-at-the-lowest-interest-rates-in-2026/",
+      "snippet": "May 8, 2026 · Top 5 Banks Offering Green Home Loans at the Lowest Interest Rates in 2026 Eco-certified and energy-efficient …"
+    },
+    {
+      "title": "sotatanaka (Sota Tanaka) - Hugging Face",
+      "url": "https://huggingface.co/sotatanaka/models",
+      "snippet": "User profile of Sota Tanaka on Hugging Face"
+    },
+    {
+      "title": "Energy Efficiency Loans: Financing For Energy Efficient Homes",
+      "url": "https://www.acornfinance.com/personal-loans/energy-efficiency-loans/",
+      "snippet": "Energy efficiency loans are financing options that allow you to pay for upgrades that improve your home’s energy performance. …"
+    }
+  ]
+}

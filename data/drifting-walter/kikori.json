@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "drifting-walter/kikori",
+  "slug": "drifting-walter-kikori",
+  "author": "drifting-walter",
+  "url": "https://huggingface.co/drifting-walter/kikori",
+  "created_at": "2026-09-08T10:20:22.000Z",
+  "updated_at": "2026-09-08T10:26:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment",
+    "stance",
+    "portuguese",
+    "rashomon",
+    "pt",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:quantized:neuralmind/bert-base-portuguese-cased",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108925443,
+  "parameters_human": "108.9M",
+  "storage_bytes": 981796344,
+  "storage_human": "982 MB",
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Germany | eBay Community",
+      "url": "https://community.ebay.de/",
+      "snippet": "Willkommen in der eBay Community. Wir freuen uns, dass du hier bist. Antworten, Gespräche und eBay-Mentoren warten auf dich!"
+    },
+    {
+      "title": "Explore AI Images & Videos · KiKori",
+      "url": "https://kikori.ai/",
+      "snippet": "Explore a live gallery of AI-generated images and videos from the KiKori community. Get inspired, then recreate any creation with a single click."
+    },
+    {
+      "title": "Podcast | eBay Germany",
+      "url": "https://community.ebay.de/forum/podcast-43/",
+      "snippet": "May 6, 2026 · The eBay podcast with tips, trends, and exciting stories from retail."
+    },
+    {
+      "title": "Search AI Creations · KiKori",
+      "url": "https://kikori.ai/search",
+      "snippet": "Turn a prompt into studio-quality images, videos, voiceovers, and avatars — powered by the latest AI models."
+    },
+    {
+      "title": "Community Help & Dialogue | eBay Germany",
+      "url": "https://community.ebay.de/forum/community-hilfe-dialog-8/",
+      "snippet": "May 6, 2026 · The eBay Community gives eBay sellers and their buyers the opportunity to connect with one another. eBay …"
+    }
+  ]
+}

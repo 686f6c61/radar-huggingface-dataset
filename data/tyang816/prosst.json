@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tyang816/ProSST",
+  "slug": "tyang816-prosst",
+  "author": "tyang816",
+  "url": "https://huggingface.co/tyang816/ProSST",
+  "created_at": "2026-09-08T14:56:58.000Z",
+  "updated_at": "2026-09-08T15:00:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "protein",
+    "structure",
+    "ProSST",
+    "rem2",
+    "VenusREM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172436952,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Achetez des Timbres, Envoyez Courrier, Colis - La Poste",
+      "url": "https://www.laposte.fr/",
+      "snippet": "Consultez le prix des timbres en ligne, achat d’enveloppes pré-timbrées, envoi de lettres recommandées, colis et services de …"
+    },
+    {
+      "title": "ProSST: Quantized structure meets disentangled attention (NeurIPS 2024 ...",
+      "url": "https://tyang816.github.io/projects/prosst/",
+      "snippet": "Disentangled attention Amino acids and structure tokens carry related but distinct signals. ProSST uses disentangled attention so the model can separate content interactions along the sequence modality and the structure modality, rather than collapsing everything into a single mixed token stream. Intuitively: sequence attention captures evolutionary / chemical patterns in the AA string, while ..."
+    },
+    {
+      "title": "Suivre une lettre, un Colissimo ou un Chronopost - La Poste",
+      "url": "https://www.laposte.fr/outils/suivre-vos-envois",
+      "snippet": "Suivez vos lettres ou vos colis à l’aide d'un numéro de suivi ou d’avis de passage sur le site de La Poste. Vous avez la possibilité de …"
+    },
+    {
+      "title": "tyang816 (Yang Tan - SII) - Hugging Face",
+      "url": "https://huggingface.co/tyang816",
+      "snippet": "Bioinformatics & Deep Learning Viewer • Updated Apr 12, 2025 • 13.7k • 49"
+    },
+    {
+      "title": "Laposte.net",
+      "url": "https://laposte.net/accueil",
+      "snippet": "Ce site nécessite JavaScript pour fonctionner correctement. Veuillez l'activer dans les paramètres de votre navigateur et actualiser la …"
+    }
+  ]
+}

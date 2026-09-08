@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "msooho/f-4dd04e7cbbf6235084d8",
+  "slug": "msooho-f-4dd04e7cbbf6235084d8",
+  "author": "msooho",
+  "url": "https://huggingface.co/msooho/f-4dd04e7cbbf6235084d8",
+  "created_at": "2026-09-08T16:59:04.000Z",
+  "updated_at": "2026-09-08T16:59:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177053777,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "msooho/f-4dd04e7cbbf6235084d8 · Hugging Face",
+      "url": "https://huggingface.co/msooho/f-4dd04e7cbbf6235084d8",
+      "snippet": "msooho / f-4dd04e7cbbf6235084d8 like 0 ONNX License:cc-by-4.0 Model card FilesFiles and versions xet Community Copy to bucket new Model files"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "eBay Australia | eBay Community",
+      "url": "https://community.ebay.com.au/",
+      "snippet": "Your eBay Community. Find answers to pressing questions, connect with members, and get advice from expert sellers."
+    }
+  ]
+}

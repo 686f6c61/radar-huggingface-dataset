@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "artnfull/OpenBird-artnfull",
+  "slug": "artnfull-openbird-artnfull",
+  "author": "artnfull",
+  "url": "https://huggingface.co/artnfull/OpenBird-artnfull",
+  "created_at": "2026-09-08T11:11:08.000Z",
+  "updated_at": "2026-09-08T11:29:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "reinforcement-learning",
+    "physical-ai",
+    "mujoco",
+    "bipedal-vtol",
+    "autonomous-agents",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vuelta al cole - ¡Tecnología al Mejor Precio! | MediaMarkt",
+      "url": "https://www.mediamarkt.es/",
+      "snippet": "Precios irresistibles en aire acondicionado, ventiladores y climatización. Renueva tu confort ahora que suben las temperaturas. Ver …"
+    },
+    {
+      "title": "artnfull (artnfull) - Hugging Face",
+      "url": "https://huggingface.co/artnfull/models",
+      "snippet": "1B•Updated 16 days ago•142 artnfull/aiartnfullmodel Text Generation •0.5B•Updated 26 days ago•38 artnfull/Art-AI-Gemma-4-E2B Image-Text-to-Text •5B•Updated May 29•24 System theme Company"
+    },
+    {
+      "title": "MediaMarkt",
+      "url": "https://specials.mediamarkt.es/facturas/solicita",
+      "snippet": "Elige como hiciste tu compra: Online con cuenta. Compraste en la web o APP iniciando sesión con tu usuario. Online como invitado. …"
+    },
+    {
+      "title": "artnfull (artnfull) - Hugging Face",
+      "url": "https://huggingface.co/artnfull",
+      "snippet": "artnfull artnfull Follow AI & ML interests None yet Recent Activity updateda model23 days ago"
+    },
+    {
+      "title": "Tiendas MediaMarkt Barcelona | Teléfonos y horarios | Tiendeo",
+      "url": "https://www.tiendeo.com/Tiendas/barcelona/media-markt",
+      "snippet": "Tiendas MediaMarkt Barcelona | Teléfonos y horarios | Tiendeo. Estás aquí: Barcelona - 28001."
+    }
+  ]
+}

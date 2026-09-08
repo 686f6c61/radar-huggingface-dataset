@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TokenRhythm/NeoHorse-1-9B",
+  "slug": "tokenrhythm-neohorse-1-9b",
+  "author": "TokenRhythm",
+  "url": "https://huggingface.co/TokenRhythm/NeoHorse-1-9B",
+  "created_at": "2026-09-05T10:59:02.000Z",
+  "updated_at": "2026-09-08T12:53:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 74,
+  "downloads_30d": 1250,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17921397028,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "TokenRhythm/NeoHorse-1-9B · Hugging Face",
+      "url": "https://huggingface.co/TokenRhythm/NeoHorse-1-9B",
+      "snippet": "NeoHorse-1-9B is a 9B causal language model and an initial prototype on the path toward recursive self-improvement (RSI). It is post-trained from Qwen3.5-9B for text-based agent harnesses, tool use, coding, and instruction following."
+    },
+    {
+      "title": "GitHub - TokenRhythm/NeoHorse: NeoHorse-1: Towards Recursive Self ...",
+      "url": "https://github.com/TokenRhythm/NeoHorse",
+      "snippet": "NeoHorse-1 is a family of causal language models and an initial prototype on the path toward recursive self-improvement (RSI). The 4B and 9B checkpoints are post-trained from Qwen3.5 for text-based agent harnesses, tool use, coding, and instruction following."
+    },
+    {
+      "title": "TokenRhythm releases NeoHorse-1, a 4B/9B model trained on agent ...",
+      "url": "https://www.ai-market-watch.com/news/tokenrhythm-releases-neohorse-1-an-agent-native-model-exploring-a-harness-driven-7m3x6f",
+      "snippet": "TokenRhythm (基元律动), founded by former Huawei Noah's Ark Lab director and Pangu large-model lead Wang Yunhe, released NeoHorse-1 with partners Infinigence AI, Tsinghua University, Peking University and Alibaba. The 4B and 9B versions are post-trained on Alibaba's open-source Qwen3.5-4B and Qwen3.5-9B bases. Training data centers on execution trajectories from TokenRhythm's open-source ..."
+    },
+    {
+      "title": "NeoHorse/README.md at main · TokenRhythm/NeoHorse · GitHub",
+      "url": "https://github.com/TokenRhythm/NeoHorse/blob/main/README.md",
+      "snippet": "NeoHorse-1 is a family of causal language models and an initial prototype on the path toward recursive self-improvement (RSI). The 4B and 9B checkpoints are post-trained from Qwen3.5 for text-based agent harnesses, tool use, coding, and instruction following. The routing harness assigns tasks to a heterogeneous model pool, records tool interactions and outcomes, estimates capability demand ..."
+    }
+  ]
+}

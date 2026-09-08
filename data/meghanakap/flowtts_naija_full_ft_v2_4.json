@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MeghanaKap/flowtts_naija_full_ft_v2_4",
+  "slug": "meghanakap-flowtts_naija_full_ft_v2_4",
+  "author": "MeghanaKap",
+  "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_4",
+  "created_at": "2026-09-08T17:22:41.000Z",
+  "updated_at": "2026-09-08T17:23:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:YatharthS/MiraTTS",
+    "base_model:finetune:YatharthS/MiraTTS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505882368,
+  "parameters_human": "505.9M",
+  "storage_bytes": 2037654772,
+  "storage_human": "2.0 GB",
+  "base_model": "YatharthS/MiraTTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KOOORA - منتديات كووورة",
+      "url": "https://forum.kooora.com/",
+      "snippet": "منتديات كووورة هي منصة عربية شاملة لمناقشة أخبار الرياضة وتبادل الآراء حول مختلف البطولات والفرق الرياضية."
+    },
+    {
+      "title": "MeghanaKap/flowtts_naija_full_ft_v2_2 · Hugging Face",
+      "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_2",
+      "snippet": "MeghanaKap / flowtts_naija_full_ft_v2_2 like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth trl sft conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "منتديات كووورة: كووورة أسبانية",
+      "url": "https://forum.kooora.com/f.aspx?f=70",
+      "snippet": "منتديات كووورة هي منصة رياضية لمناقشة وتبادل الأخبار والمعلومات حول كرة القدم والرياضة بشكل عام."
+    },
+    {
+      "title": "77625 (1).mp4 Shared by ****** | PikPak",
+      "url": "https://mypikpak.com/s/VOB62O4fSX8ppFO--4mzPQWGo1",
+      "snippet": "77625 (1).mp4 available for high-speed download on PikPak and streaming across multiple devices."
+    },
+    {
+      "title": "منتديات كووورة: كووورة سودانية",
+      "url": "https://forum.kooora.com/f.aspx?f=132",
+      "snippet": "منتديات كووورة هو منتدى رياضي عربي شامل لمناقشة مختلف الرياضات والأحداث الرياضية وتبادل الآراء حول البطولات والفرق."
+    }
+  ]
+}

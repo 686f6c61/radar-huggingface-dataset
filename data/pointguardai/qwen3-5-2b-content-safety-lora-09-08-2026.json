@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "PointGuardAI/Qwen3.5-2B-Content-Safety-LoRA-09-08-2026",
+  "slug": "pointguardai-qwen3-5-2b-content-safety-lora-09-08-2026",
+  "author": "PointGuardAI",
+  "url": "https://huggingface.co/PointGuardAI/Qwen3.5-2B-Content-Safety-LoRA-09-08-2026",
+  "created_at": "2026-09-08T11:03:48.000Z",
+  "updated_at": "2026-09-08T11:04:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.5",
+    "qwen",
+    "lora",
+    "guardrail",
+    "classification",
+    "content-safety",
+    "moderation",
+    "sglang",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87322013,
+  "storage_human": "87 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impressum",
+      "url": "https://www.bohmberg.de/products/pages/about",
+      "snippet": "Verantwortlich für den Inhalt: ALL FOR YOU GmbH. Boschweg 13 12057 Berlin Deutschland E-Mail: info@bohmberg.de …"
+    },
+    {
+      "title": "Qwen3Guard Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2510.14276v1",
+      "snippet": "These models perform real-time risk detection and classification on both user inputs (User Prompts) and model outputs (Model Responses), ensuring safer interactions in AI systems. However, existing Guard models suffer from two key limitations: (1) Inconsistent and Inflexible Across Safety Policies."
+    },
+    {
+      "title": "ALL FOR YOU GmbH, Berlin - North Data",
+      "url": "https://www.northdata.de/ALL%20FOR%20YOU%20GmbH,%20Berlin/Amtsgericht%20Charlottenburg%20(Berlin)%20HRB%20141004%20B",
+      "snippet": "Der Einzel- und Großhandel (auch Online-Shop) mit Textil- & Lederbekleidung und Schuhen, insbesondere mit Trachtenmode sowie …"
+    },
+    {
+      "title": "[2510.14276] Qwen3Guard Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2510.14276",
+      "snippet": "As large language models (LLMs) become more capable and widely used, ensuring the safety of their outputs is increasingly critical. Existing guardrail models, though useful in static evaluation settings, face two major limitations in real-world applications: (1) they typically output only binary \"safe/unsafe\" labels, which can be interpreted inconsistently across diverse safety policies ..."
+    },
+    {
+      "title": "ALL FOR YOU GMBH ASIM MUNIR Import Data | Trade Data",
+      "url": "https://www.tradeindata.com/importer/de/all-for-you-gmbh-asim-munir/",
+      "snippet": "View detailed import export data for ALL FOR YOU GMBH ASIM MUNIR with Tradeindata. Analyze shipment records, trade data, HS …"
+    }
+  ]
+}

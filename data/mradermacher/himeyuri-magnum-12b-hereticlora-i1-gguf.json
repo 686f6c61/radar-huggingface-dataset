@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Himeyuri-Magnum-12B-HereticLoRA-i1-GGUF",
+  "slug": "mradermacher-himeyuri-magnum-12b-hereticlora-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Himeyuri-Magnum-12B-HereticLoRA-i1-GGUF",
+  "created_at": "2026-09-08T17:03:30.000Z",
+  "updated_at": "2026-09-08T19:34:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "chatml",
+    "en",
+    "ja",
+    "base_model:yamatazen/Himeyuri-Magnum-12B-HereticLoRA",
+    "base_model:quantized:yamatazen/Himeyuri-Magnum-12B-HereticLoRA",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 128581727424,
+  "storage_human": "128.6 GB",
+  "base_model": "yamatazen/Himeyuri-Magnum-12B-HereticLoRA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iniciar sesión en Gmail - Ordenador - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Iniciar sesión en Gmail Nota: Si inicias sesión en un ordenador público, asegúrate de cerrarla antes de dejar de usar el ordenador. …"
+    },
+    {
+      "title": "mradermacher/Himeyuri-Magnum-12B-HereticLoRA-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Himeyuri-Magnum-12B-HereticLoRA-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Himeyuri-Magnum-12B-HereticLoRA-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Log ind på Gmail - Computer - Hjælp til Gmail - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=da&co=GENIE.Platform%3DDesktop",
+      "snippet": "Gå til Gmailpå din computer. Angiv mailadressen eller telefonnummeret og adgangskoden til din Google-konto. Hvis oplysningerne …"
+    },
+    {
+      "title": "mradermacher/Himeyuri-Magnum-12B-HereticMerge-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Himeyuri-Magnum-12B-HereticMerge-GGUF",
+      "snippet": "mradermacher / Himeyuri-Magnum-12B-HereticMerge-GGUF like 1 Transformers GGUF English Japanese mergekit Merge chatml conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "重量单位，g, mg, ug, pg , ng 之间是什么换算关系？_百度知道",
+      "url": "https://zhidao.baidu.com/question/13787055.html",
+      "snippet": "手机答题 我的 百度知道> 无分类 重量单位，g, mg, ug, pg , ng 之间是什么换算关系？ 我来答 可选中1个或多个下面的关键词，搜索相 …"
+    }
+  ]
+}

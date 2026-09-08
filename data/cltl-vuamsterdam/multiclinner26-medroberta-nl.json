@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CLTL-VUAmsterdam/multiClinNER26-medroberta.nl",
+  "slug": "cltl-vuamsterdam-multiclinner26-medroberta-nl",
+  "author": "CLTL-VUAmsterdam",
+  "url": "https://huggingface.co/CLTL-VUAmsterdam/multiClinNER26-medroberta.nl",
+  "created_at": "2026-09-08T12:10:08.000Z",
+  "updated_at": "2026-09-08T13:02:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "medical",
+    "nl",
+    "base_model:CLTL/MedRoBERTa.nl",
+    "base_model:finetune:CLTL/MedRoBERTa.nl",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125392903,
+  "parameters_human": "125.4M",
+  "storage_bytes": 501595516,
+  "storage_human": "502 MB",
+  "base_model": "CLTL/MedRoBERTa.nl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modrý koník • Skutoční ľudia. Skutočný život. Reálne skúsenosti.",
+      "url": "https://www.modrykonik.sk/",
+      "snippet": "Diskusie o všetkom pre všetkých a sprievodca svetom žien. Priateľská komunita, bazár, odborné poradne a recenzie, ktorým môžeš …"
+    },
+    {
+      "title": "CLTL/MedRoBERTa.nl · Hugging Face",
+      "url": "https://huggingface.co/CLTL/MedRoBERTa.nl",
+      "snippet": "Creating, anonymizing and evaluating the first medical language model pre-trained on Dutch Electronic Health Records: MedRoBERTa.nl. Artificial Intelligence in Medicine, 167, 103148."
+    },
+    {
+      "title": "“压缩此驱动器以节约磁盘空间“的利弊是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20488951",
+      "snippet": "在默认簇大小的分区中，NTFS 压缩功能只适合大量零散文件的压缩。 例如簇大小是 4KB，某个文件夹中保存了大量体积在 10KB 左 …"
+    },
+    {
+      "title": "MedRoBERTa.nl",
+      "url": "http://medroberta.nl/",
+      "snippet": "MedRoBERTa.nl is one of the two encoder models worldwide that has been pre-trained on free text from real-world hospital data and is publicly available. The anonymized model allows NLP researchers and medical professionals to build medical text mining technology with a solid base model: the model can be fine-tuned for any task."
+    },
+    {
+      "title": "Diskusie - Modrý koník",
+      "url": "https://www.modrykonik.sk/forum/",
+      "snippet": "Diskusné miesto pre mamičky plné skúsenosti, rád, tipov a trikov priamo z prvej ruky. Miesto každodenných radostí a starostí, ktoré …"
+    }
+  ]
+}

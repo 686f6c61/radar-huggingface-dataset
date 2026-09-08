@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "vivekharry/bohok-indic-en",
+  "slug": "vivekharry-bohok-indic-en",
+  "author": "vivekharry",
+  "url": "https://huggingface.co/vivekharry/bohok-indic-en",
+  "created_at": "2026-09-08T10:41:23.000Z",
+  "updated_at": "2026-09-08T10:42:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "trp",
+    "bn",
+    "mr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "kokborok",
+    "bengali",
+    "marathi",
+    "translation",
+    "trp",
+    "bn",
+    "mr",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-mul-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-mul-en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 77060271,
+  "parameters_human": "77.1M",
+  "storage_bytes": 309768251,
+  "storage_human": "310 MB",
+  "base_model": "Helsinki-NLP/opus-mt-mul-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.ae/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Tripura ST Lab - a Hugging Face Space by vivekharry",
+      "url": "https://huggingface.co/spaces/vivekharry/tripura-st-lab-site",
+      "snippet": "Say it in Kokborok, Bangla, or Marathi. English on the right comes from vivekharry/bohok-indic-en — Marian mul→en fine-tuned on Kokborok SMOL, OPUS Bengali, and OPUS Marathi. Prefixes >>trp<< / >>bn<< / >>mr<< are added for you. Kokborok lexicon is only a fallback if the Hub is down."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "GitHub - AI4Bharat/IndicTrans2: Translation models for 22 scheduled ...",
+      "url": "https://github.com/ai4bharat/IndicTrans2",
+      "snippet": "IndicTrans2 is the first open-source transformer-based multilingual NMT model that supports high-quality translations across all the 22 scheduled Indic languages — including multiple scripts for low-resouce languages like Kashmiri, Manipuri and Sindhi. It adopts script unification wherever feasible to leverage transfer learning by lexical sharing between languages. Overall, the model ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar-AE",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلاناتكل ما تحب معرفته عن Google‏ هناGoogle.com in English © 2026 - الخصوصية- البنود"
+    }
+  ]
+}

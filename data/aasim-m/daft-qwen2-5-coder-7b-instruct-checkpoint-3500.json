@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "aasim-m/daft-qwen2.5-coder-7b-instruct-checkpoint-3500",
+  "slug": "aasim-m-daft-qwen2-5-coder-7b-instruct-checkpoint-3500",
+  "author": "aasim-m",
+  "url": "https://huggingface.co/aasim-m/daft-qwen2.5-coder-7b-instruct-checkpoint-3500",
+  "created_at": "2026-09-08T15:41:56.000Z",
+  "updated_at": "2026-09-08T15:43:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "assembly",
+    "full-fine-tuning",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333312,
+  "parameters_human": "333312",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Garrison | Ultra Secure Browsing",
+      "url": "https://www.garrison.com/en",
+      "snippet": "Ultra-secure isolation technology protecting against cyber attacks. Using hardsec principles, we solve secure browsing, VDI and …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "snippet": "Instructions to use Qwen/Qwen2.5-Coder-7B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Garrison Technology demonstrates resilience and scale with strong …",
+      "url": "https://www.garrison.com/en/press-release/garrison-technology-demonstrates-resilience-and-scale-with-strong-full-year-growth",
+      "snippet": "Jun 15, 2021 · “What’s so distinctive and good about Garrison is that the security of its technology has been independently verified to …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Garrison | Now a part of Everfox: Headquarters, Global Offices ...",
+      "url": "https://www.highperformr.ai/company/garrisontechnology",
+      "snippet": "Garrison Technology supports sales, marketing, research and development, and customer support functions globally. Their primary …"
+    }
+  ]
+}

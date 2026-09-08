@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ling-3.0-flash-VL",
+  "slug": "inclusionai-ling-3-0-flash-vl",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL",
+  "created_at": "2026-09-04T15:24:37.000Z",
+  "updated_at": "2026-09-08T10:45:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bailing_moe_v3_vl",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 124848460496,
+  "parameters_human": "124.85B",
+  "storage_bytes": 249705049013,
+  "storage_human": "249.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rock And Treehouse Resort Khao Sok - Unique Jungle Stay",
+      "url": "https://www.rockandtreehouseresort.com/",
+      "snippet": "Rock and Treehouse Resort was designed to let you live inside the jungle canopy, not just observe it from afar. Built around ancient …"
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash-VL · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL",
+      "snippet": "Model Overview Ling-3.0-flash-VL inherits the language, reasoning, and long-context capabilities of Ling-3.0-flash, while extending them with native image and video understanding. The model has 124B total parameters, with only 5.5B parameters activated per token, and supports a context window of up to 1M tokens."
+    },
+    {
+      "title": "Rock and Treehouse Resort Khao Sok, Surat Thani | Khao Sok Travel",
+      "url": "https://www.khaosoktravel.com/rockandtreehouse",
+      "snippet": "Hidden within the ancient rainforest of Khao Sok National Park, Rock and Treehouse Resort offers one of the region's most iconic …"
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+      "snippet": "We're introducing Ling-3.0-flash, our next-generation native hybrid reasoning model. Operating with 124Btotal and 5.1Bactive parameters (~12.4% and ~8.1% of our previous 1T-class flagship Ring-2.6-1T), Ling-3.0-flash matches or outperforms its predecessor across key benchmarks."
+    },
+    {
+      "title": "Khao Sok Bungalows: Best Treehouse Resort | 2026 Stay",
+      "url": "https://www.rockandtreehouseresort.com/khao-sok-bungalows/",
+      "snippet": "Choose from Khao Sok jungle bungalows and treehouse-style rooms surrounded by tropical greenery. Whether you are planning a …"
+    }
+  ]
+}

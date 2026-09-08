@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SherrySherry123/ForceFlowAb_CFG",
+  "slug": "sherrysherry123-forceflowab_cfg",
+  "author": "SherrySherry123",
+  "url": "https://huggingface.co/SherrySherry123/ForceFlowAb_CFG",
+  "created_at": "2026-09-08T10:42:30.000Z",
+  "updated_at": "2026-09-08T10:49:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 569473181,
+  "storage_human": "569 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hoe webmail als snelkoppeling op bureablad krijgen",
+      "url": "https://www.netweters.be/t5/E-mail/hoe-webmail-als-snelkoppeling-op-bureablad-krijgen/td-p/10814",
+      "snippet": "Oct 18, 2015 · Ik heb webmail, maar moet steeds inloggen via google, kan dit niet eenvoudiger!!! bvb door een snelkoppeling op mijn …"
+    },
+    {
+      "title": "GitHub - iobio-zjut/ForceFlowAb: AntibodyDesign",
+      "url": "https://github.com/iobio-zjut/ForceFlowAb",
+      "snippet": "ForceFlowAb ForceFlowAb is a rectified-flow framework for antibody sequence and structure design that integrates mixture-of-experts (MoE) modeling and energy-guided sampling."
+    },
+    {
+      "title": "Vanuit webmail.telenet een mail versturen naar gmail",
+      "url": "https://www.netweters.be/t5/E-mail/Vanuit-webmail-telenet-een-mail-versturen-naar-gmail/td-p/220549",
+      "snippet": "Jul 30, 2026 · @koen1 Als ik vanuit webmail van Telenet een mail stuur naar m’n Gmail adres dan komt deze na 30 seconden …"
+    },
+    {
+      "title": "ForceFlowAb | Antibody Design Platform",
+      "url": "http://zhanglab-bioinf.com/ForceFlowAb/",
+      "snippet": "Structure-aware generative design for antibodies and nanobodies."
+    },
+    {
+      "title": "Opgelost: telkens inloggen op Telenet Webmail - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/telkens-inloggen-op-Telenet-Webmail/td-p/220365",
+      "snippet": "Jul 11, 2026 · Telkens ik de pagina Telenet Webmail open, moet ik mijn wachtwoord OPNIEUW ingeven... vinkje onthouden staat …"
+    }
+  ]
+}

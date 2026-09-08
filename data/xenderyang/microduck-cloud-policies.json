@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "XenderYang/microduck-cloud-policies",
+  "slug": "xenderyang-microduck-cloud-policies",
+  "author": "XenderYang",
+  "url": "https://huggingface.co/XenderYang/microduck-cloud-policies",
+  "created_at": "2026-09-08T11:10:06.000Z",
+  "updated_at": "2026-09-08T11:10:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "mujoco",
+    "microduck",
+    "duck",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3174780,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://drive.google.com/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "GitHub - joeynyc/awesome-microduck: A curated list of software ...",
+      "url": "https://github.com/joeynyc/awesome-microduck",
+      "snippet": "A curated list of software, simulators, policies, agent tools and coverage for the Pollen Robotics / Hugging Face Microduck robot - joeynyc/awesome-microduck"
+    },
+    {
+      "title": "Download - Google Drive",
+      "url": "https://www.about.google/drive/download/",
+      "snippet": "By using Backup and Sync, you agree to the Google Terms of Service. If you are a Google Apps user, your use is subject to either …"
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Google Drive: Share Files Online with Secure Cloud Storage | Google ...",
+      "url": "https://workspace.google.com/products/drive/",
+      "snippet": "Move your data and store all of your files in one place with Google Drive. AI-powered storage in the cloud helps teams collaborate in …"
+    }
+  ]
+}

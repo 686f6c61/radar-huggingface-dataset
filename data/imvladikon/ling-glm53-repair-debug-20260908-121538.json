@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "imvladikon/ling-glm53-repair-debug-20260908-121538",
+  "slug": "imvladikon-ling-glm53-repair-debug-20260908-121538",
+  "author": "imvladikon",
+  "url": "https://huggingface.co/imvladikon/ling-glm53-repair-debug-20260908-121538",
+  "created_at": "2026-09-08T13:09:19.000Z",
+  "updated_at": "2026-09-08T13:31:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "experimental",
+    "repair-pipeline-debug",
+    "conversational",
+    "base_model:imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery",
+    "base_model:finetune:imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7804664016,
+  "parameters_human": "7.80B",
+  "storage_bytes": 18179043061,
+  "storage_human": "18.2 GB",
+  "base_model": "imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICI PARIS XL",
+      "url": "https://www.iciparisxl.nl/",
+      "snippet": "Met een ruim aanbod parfum, cosmetica en huidverzorging is ICI PARIS XL dé beautyspecialist van Nederland. Ontdek onze acties, …"
+    },
+    {
+      "title": "imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery · Hugging Face",
+      "url": "https://huggingface.co/imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery",
+      "snippet": "Instructions to use imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ICI Paris XL | Home | ICI PARIS XL",
+      "url": "https://www.iciparisxl.nl/ici-paris-xl/c/navRoot",
+      "snippet": "Met een ruim aanbod parfum, cosmetica en huidverzorging is ICI PARIS XL dé beautyspecialist van Nederland. Ontdek onze acties, …"
+    },
+    {
+      "title": "imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery at main",
+      "url": "https://huggingface.co/imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery/tree/main",
+      "snippet": "Instructions to use imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ICI PARIS XL",
+      "url": "https://www.iciparisxl.be/",
+      "snippet": "Met een ruim aanbod parfum, cosmetica en huidverzorging is ICI PARIS XL dé beautyspecialist van België. Ontdek onze acties, …"
+    }
+  ]
+}

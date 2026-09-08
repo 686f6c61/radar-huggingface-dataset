@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MeghanaKap/flowtts_naija_full_ft_v2_1",
+  "slug": "meghanakap-flowtts_naija_full_ft_v2_1",
+  "author": "MeghanaKap",
+  "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_1",
+  "created_at": "2026-09-08T14:57:33.000Z",
+  "updated_at": "2026-09-08T14:58:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:YatharthS/MiraTTS",
+    "base_model:finetune:YatharthS/MiraTTS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505882368,
+  "parameters_human": "505.9M",
+  "storage_bytes": 2037654772,
+  "storage_human": "2.0 GB",
+  "base_model": "YatharthS/MiraTTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Účetní program POHODA – spolehlivý software pro účetní i ...",
+      "url": "https://www.pohoda.cz/",
+      "snippet": "Účetní program POHODA je opravdu pro každého. Pomůže s účetnictvím i daňovou evidencí, plátcům i neplátcům DPH, malým …"
+    },
+    {
+      "title": "MeghanaKap/flowtts_naija_full_ft_v2_2 · Hugging Face",
+      "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_2",
+      "snippet": "MeghanaKap / flowtts_naija_full_ft_v2_2 like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth trl sft conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "POHODA - Účetní program - stormware.[cz",
+      "url": "https://www.stormware.cz/pohoda/",
+      "snippet": "POHODA je oblíbený ekonomický software na účetnictví pro malé, střední a větší firmy. Program je vhodný i pro účtující příspěvkové …"
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "Vyzkoušejte si zdarma účetní software POHODA Start",
+      "url": "https://www.stormware.cz/pohoda/start/",
+      "snippet": "Software na účetnictví a daňovou evidenci můžete používat klidně i zdarma, a to do vyčerpání povolených limitů. Účetní program …"
+    }
+  ]
+}

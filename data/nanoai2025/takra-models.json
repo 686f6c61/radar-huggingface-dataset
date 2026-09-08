@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nanoai2025/takra-models",
+  "slug": "nanoai2025-takra-models",
+  "author": "nanoai2025",
+  "url": "https://huggingface.co/nanoai2025/takra-models",
+  "created_at": "2026-09-08T10:26:55.000Z",
+  "updated_at": "2026-09-08T10:28:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53289463,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Psychiater Post",
+      "url": "http://www.psychiaterpost.nl/",
+      "snippet": "Vrijgevestigd psychiater in Amsterdam Praktijkgegevens Johannes Verhulststraat 129 1071NA Amsterdam 0624697060 …"
+    },
+    {
+      "title": "head not what it looks like – Download Free 3D Model | Meshy",
+      "url": "https://www.meshy.ai/3d-models/head-not-what-it-looks-like-01a06462-8201-720c-bc31-e6405fcc9d0c",
+      "snippet": "I wanted to use the transformers takra new legends gigastorm head onto rollbar body the… Download this free 3D model (FBX, OBJ, GLB) by @edrmz2701 on Meshy AI."
+    },
+    {
+      "title": "Behandelvormen — Psychiater Post",
+      "url": "http://www.psychiaterpost.nl/de-verschillende-behandelvormen",
+      "snippet": "Psychiater Post Individuele therapie Een typische individuele behandeling met psychotherapie bij mij verloopt als volgt: U heeft een …"
+    },
+    {
+      "title": "head not… – Kostenloses 3D-Modell herunterladen | Meshy",
+      "url": "https://www.meshy.ai/de/3d-models/head-not-what-it-looks-like-01a06462-8201-720c-bc31-e6405fcc9d0c",
+      "snippet": "I wanted to use the transformers takra new legends gigastorm head… Laden Sie dieses kostenlose 3D-Modell (FBX, OBJ, GLB) von @edrmz2701 auf Meshy AI herunter."
+    },
+    {
+      "title": "Wie ben ik? — Psychiater Post",
+      "url": "http://www.psychiaterpost.nl/wie-ben-ik",
+      "snippet": "Contact Psychiater Post Ik ben geboren in 1960 in Rotterdam en heb Geneeskunde gestudeerd in Utrecht. Het eerste deel van mijn …"
+    }
+  ]
+}

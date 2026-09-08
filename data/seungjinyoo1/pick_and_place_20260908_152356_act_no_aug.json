@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "seungjinyoo1/pick_and_place_20260908_152356_act_no_aug",
+  "slug": "seungjinyoo1-pick_and_place_20260908_152356_act_no_aug",
+  "author": "seungjinyoo1",
+  "url": "https://huggingface.co/seungjinyoo1/pick_and_place_20260908_152356_act_no_aug",
+  "created_at": "2026-09-08T16:56:03.000Z",
+  "updated_at": "2026-09-08T16:57:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:seungjinyoo1/pick_and_place_20260908_152356",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "seungjinyoo1/pick_and_place_20260908_142127 - Hugging Face",
+      "url": "https://huggingface.co/datasets/seungjinyoo1/pick_and_place_20260908_142127/viewer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Descargar Snaptube: PC, Android (APK) - CCM",
+      "url": "https://es.ccm.net/descargas/internet/6550-snaptube/",
+      "snippet": "Feb 6, 2024 · Snaptube es un programa que descarga de forma rápida y sencilla contenidos de YouTube y otras plataformas como …"
+    },
+    {
+      "title": "seungjinyoo1 (Seungjin Yoo) - Hugging Face",
+      "url": "https://huggingface.co/seungjinyoo1",
+      "snippet": "seungjinyoo1/pick_and_place_20260902_135749 Viewer •Updated about 2 hours ago•12.9k"
+    },
+    {
+      "title": "Descargar YouTube: PC / Mac / Android (APK)",
+      "url": "https://es.ccm.net/descargas/entretenimiento/6598-youtube/",
+      "snippet": "Feb 12, 2024 · YouTube se puede conectar a Facebook, Twitter, Talk, Reddit, Pinterest, Tumblr, LinkedIn y más. Asimismo, …"
+    }
+  ]
+}

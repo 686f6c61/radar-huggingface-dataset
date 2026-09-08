@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "suko777/VEXT-merged-Q4_K_M",
+  "slug": "suko777-vext-merged-q4_k_m",
+  "author": "suko777",
+  "url": "https://huggingface.co/suko777/VEXT-merged-Q4_K_M",
+  "created_at": "2026-09-08T11:10:57.000Z",
+  "updated_at": "2026-09-08T11:10:57.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "suko777/VEXT-merged-Q4_K_M · Hugging Face",
+      "url": "https://huggingface.co/suko777/VEXT-merged-Q4_K_M",
+      "snippet": "VEXT-merged-Q4_K_M like0 License:unknown Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Demystifying LLM Quantization Suffixes: What Q4_K_M, Q8_0, and Q6_K ...",
+      "url": "https://medium.com/@paul.ilvez/demystifying-llm-quantization-suffixes-what-q4-k-m-q8-0-and-q6-k-really-mean-0ec2770f17d3",
+      "snippet": "The suffixes on model files — such as Q4_K_M, Q6_K, or Q8_0 — give you an instant idea of how demanding or performant the model is before you even download it. Let’s break down the pieces:"
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

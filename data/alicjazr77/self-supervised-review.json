@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alicjazr77/self-supervised-review",
+  "slug": "alicjazr77-self-supervised-review",
+  "author": "alicjazr77",
+  "url": "https://huggingface.co/alicjazr77/self-supervised-review",
+  "created_at": "2026-09-08T15:09:30.000Z",
+  "updated_at": "2026-09-08T15:09:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pièces détachées auto | Achetez pas cher sur OSCARO",
+      "url": "https://www.oscaro.com/?msockid=322391ac2f6a6c313fb686622e6c6d66",
+      "snippet": "Oscaro - Site Officiel - leader des pièces détachées auto neuves et d'origine au meilleur prix - Plus de 1 000 000 de pièces - …"
+    },
+    {
+      "title": "Self-Supervised Learning (SSL) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/",
+      "snippet": "Self-Supervised Learning (SSL) is a type of machine learning where a model is trained using data that does not have any labels or answers provided. Instead of needing people to label the data, the model finds patterns and creates its own labels from the data automatically."
+    },
+    {
+      "title": "Pièces auto OSCARO - Catalogue de pièces auto et accessoires à petit …",
+      "url": "https://www.oscaro.com/oscaro-30026-e?msockid=322391ac2f6a6c313fb686622e6c6d66",
+      "snippet": "Les pièces auto par Oscaro Oscaro est le premier site de e-commerce à proposer aux automobilistes des pièces détachées neuves …"
+    },
+    {
+      "title": "A survey on self-supervised learning: Recent advances and open problems",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231225020818",
+      "snippet": "Self-Supervised Learning (SSL) has emerged as a promising approach to leverage unlabeled data without the need for manual labeling. This survey provides a systematic and comprehensive review of state-of-the-art SSL methods in various fields, including image processing, video, audio, speech, and Natural Language Processing (NLP)."
+    },
+    {
+      "title": "Oscaro - Site officiel - Pièce auto neuve, d'origine, au meilleur prix",
+      "url": "https://www.oscaro.com/fr/all-manufacturers?msockid=322391ac2f6a6c313fb686622e6c6d66",
+      "snippet": "Oscaro - Site Officiel - leader des pièces détachées auto neuves et d'origine au meilleur prix - Plus de 1 000 000 de pièces - …"
+    }
+  ]
+}

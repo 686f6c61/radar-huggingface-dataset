@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "aimeri/spoomplesmaxx-cardmaker-v2-mlx-8Bit",
+  "slug": "aimeri-spoomplesmaxx-cardmaker-v2-mlx-8bit",
+  "author": "aimeri",
+  "url": "https://huggingface.co/aimeri/spoomplesmaxx-cardmaker-v2-mlx-8Bit",
+  "created_at": "2026-09-08T17:46:44.000Z",
+  "updated_at": "2026-09-08T17:47:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ministral3",
+    "text-generation",
+    "sillytavern",
+    "character-cards",
+    "character-card-generation",
+    "roleplay",
+    "mistral",
+    "ministral",
+    "ministral-3",
+    "chatml",
+    "sft",
+    "full-finetune",
+    "torchao",
+    "conversational",
+    "mlx",
+    "mlx-my-repo",
+    "en",
+    "dataset:aimeri/st-characters-alpaca-v2",
+    "base_model:aimeri/spoomplesmaxx-cardmaker-v2",
+    "base_model:finetune:aimeri/spoomplesmaxx-cardmaker-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13506073600,
+  "parameters_human": "13.51B",
+  "storage_bytes": 14367776240,
+  "storage_human": "14.4 GB",
+  "base_model": "aimeri/spoomplesmaxx-cardmaker-v2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Všetky online filmy | bombuj",
+      "url": "https://www.bombuj.si/filmy",
+      "snippet": "Najlepší výber online filmov s cz/sk dabingom ale aj s titulkami pohodlne na jednom webe."
+    },
+    {
+      "title": "aimeri/spoomplesmaxx-cardmaker-v1 · Hugging Face",
+      "url": "https://huggingface.co/aimeri/spoomplesmaxx-cardmaker-v1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "film online | bombuj",
+      "url": "https://www.bombuj.si/zanre/index2.php",
+      "snippet": "Najlepší výber online filmov s cz/sk dabingom ale aj s titulkami pohodlne na jednom webe."
+    },
+    {
+      "title": "GitHub - aimerib/spoomplesmaxx",
+      "url": "https://github.com/aimerib/spoomplesmaxx",
+      "snippet": "These datasets are designed to train a Roleplay (RP), Creative Writing, and \"Smart\" Assistant model Spoomplesmaxx. The goal of combining these specific sets is to create a model that is narratively creative and capable of embodying characters, but also logically sound and capable of following complex instructions."
+    },
+    {
+      "title": "Prihlásenie | bombuj",
+      "url": "https://serialy.bombuj.si/prihlasit.php",
+      "snippet": "Naša databáza seriálov neustále rastie a vždy sa vám snažíme prinášať novinky ale aj kvalitné staršie seriály. Pokiaľ vám chýba …"
+    }
+  ]
+}

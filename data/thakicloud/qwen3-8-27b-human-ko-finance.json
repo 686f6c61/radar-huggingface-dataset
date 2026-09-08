@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Qwen3.8-27B-Human-KO-Finance",
+  "slug": "thakicloud-qwen3-8-27b-human-ko-finance",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO-Finance",
+  "created_at": "2026-09-08T13:11:56.000Z",
+  "updated_at": "2026-09-08T13:11:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "korean",
+    "compliance",
+    "finance",
+    "securities",
+    "suitability",
+    "text-generation",
+    "ko",
+    "base_model:ThakiCloud/Qwen3.8-27B-Human-KO",
+    "base_model:finetune:ThakiCloud/Qwen3.8-27B-Human-KO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ThakiCloud/Qwen3.8-27B-Human-KO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/mail/login.html?authRedirect=true&bO=1",
+      "snippet": "Outlook. JavaScript must be enabled."
+    },
+    {
+      "title": "ThakiCloud/Qwen3.8-27B-Human-KO · Hugging Face",
+      "url": "https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO",
+      "snippet": "like 0 Follow ThakiCloud 10 Text Generation Safetensors Korean qwen3_5 korean style-alignment vocabulary-pruning qwen conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8-27B-Human-KO 측정 (2026-09-01, temperature 및 조건 명시) 사용 한계 라이선스"
+    },
+    {
+      "title": "Sign in to your account - portal.office.com",
+      "url": "https://portal.office.com/Home/",
+      "snippet": "No account? Create one! Can’t access your account? Terms of use Privacy & cookies ..."
+    },
+    {
+      "title": "ThakiCloud/Qwen3.8-27B-Human-KO at main - Hugging Face",
+      "url": "https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Login | Microsoft 365 - office.com",
+      "url": "https://www.office.com/caplogin",
+      "snippet": "Login | Microsoft 365."
+    }
+  ]
+}

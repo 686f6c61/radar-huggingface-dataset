@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct-GGUF",
+  "slug": "nassimjp-minicpm5-2b-sft-pashto-instruct-gguf",
+  "author": "nassimjp",
+  "url": "https://huggingface.co/nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct-GGUF",
+  "created_at": "2026-09-08T12:37:00.000Z",
+  "updated_at": "2026-09-08T12:53:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ps"
+  ],
+  "tags": [
+    "gguf",
+    "pashto",
+    "llama.cpp",
+    "ollama",
+    "quantization",
+    "edge-ai",
+    "text-generation",
+    "ipashto",
+    "afghanistan",
+    "ps",
+    "base_model:nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct",
+    "base_model:quantized:nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516944896,
+  "parameters_human": "2.52B",
+  "storage_bytes": 9280744768,
+  "storage_human": "9.3 GB",
+  "base_model": "nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok Help Center",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/accessibility",
+      "snippet": "Captions will be automatically generated for videos that you upload. This can help people who are deaf or hard of hearing to access …"
+    },
+    {
+      "title": "README.md · openbmb/MiniCPM5-2B-SFT at main - Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-SFT/blob/main/README.md",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use openbmb/MiniCPM5-2B-SFT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use openbmb/MiniCPM5-2B-SFT with Transformers:"
+    },
+    {
+      "title": "How to Add Captions on TikTok: Guide for Creators & Viewers",
+      "url": "https://www.wikihow.com/Add-Captions-on-Tiktok",
+      "snippet": "Nov 7, 2025 · Automatically enable and generate captions for TikTok videos as a creator TikTok's new \"auto captions\" feature …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "How to Add Captions on TikTok: 3 Methods That Work in 2026",
+      "url": "https://unifab.ai/resource/how-to-add-subtitles-and-captions-on-tiktok",
+      "snippet": "Jul 21, 2026 · Learn how to add captions on TikTok with auto captions, timed text, or a subtitle-file workflow, plus viewer controls and …"
+    }
+  ]
+}

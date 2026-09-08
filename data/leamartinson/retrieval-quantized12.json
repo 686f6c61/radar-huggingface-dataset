@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "leamartinson/retrieval-quantized12",
+  "slug": "leamartinson-retrieval-quantized12",
+  "author": "leamartinson",
+  "url": "https://huggingface.co/leamartinson/retrieval-quantized12",
+  "created_at": "2026-09-08T13:03:26.000Z",
+  "updated_at": "2026-09-08T13:03:31.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - 知乎",
+      "url": "https://www.zhihu.com/topic/19552757/hot",
+      "snippet": "Netflix(Nasdaq NFLX) 成立于1997年，是一家为世界多国提供网络视频点播的公司，主要提供Netflix超大数量的DVD并免费递送，总部 …"
+    },
+    {
+      "title": "leamartinson (Lea Martin) - Hugging Face",
+      "url": "https://huggingface.co/leamartinson/models",
+      "snippet": "leamartinson's models1 Sort: Recently updated leamartinson/model_275209502_coca_base Updated 1 day ago"
+    },
+    {
+      "title": "如何强制播放 Netflix 1080P 清晰度视频？ - 知乎",
+      "url": "https://www.zhihu.com/question/406310327",
+      "snippet": "Netflix 1080p 插件（密码rb0e） 成功之后应该能看到分辨率是1920x1080: 很多人都以为 Netflix 只能自动匹配清晰度，不能手动选择， …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "BOOTS (2025) | Netflix geçen yıl açıldı Severance (2022-) | Apple TV+ 5 yıl önce açıldı The Mandalorian (2019 - 2023) | Disney 9 yıl …"
+    }
+  ]
+}

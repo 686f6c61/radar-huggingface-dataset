@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minsu0567/Capstone-Design-Whisper-Dialect",
+  "slug": "minsu0567-capstone-design-whisper-dialect",
+  "author": "minsu0567",
+  "url": "https://huggingface.co/minsu0567/Capstone-Design-Whisper-Dialect",
+  "created_at": "2026-09-08T13:15:36.000Z",
+  "updated_at": "2026-09-08T13:16:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 1617824864,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Farbige Photovoltaikmodule | FuturaSun",
+      "url": "https://www.futurasun.com/de/produkte/farbige-monokristalline-photovoltaikmodule-silk-colour/",
+      "snippet": "Die 108-Zellen-Module sind mit farbigen Glas und farbigem Rahmen erhältlichund sind dadurch besonders für die Integration von PV …"
+    },
+    {
+      "title": "GitHub - minsu0567/Capstone-Design: Voice-controlled RC car: Korean ...",
+      "url": "https://github.com/minsu0567/Capstone-Design",
+      "snippet": "Voice-controlled RC car — Korean standard and dialect speech recognition with a fine-tuned Whisper, and Llama 3.2 command parsing. Speech goes to Whisper, the transcript goes to Llama 3.2, and the model emits a JSON command list that a Jetson Orin Nano executes on the vehicle ..."
+    },
+    {
+      "title": "Photovoltaikmodul Arten: Alle Modultypen im Vergleich 2026 - enerix",
+      "url": "https://www.enerix.de/ratgeber/photovoltaikanlage/photovoltaikmodul-arten/",
+      "snippet": "Apr 13, 2026 · TOPCon, HJT oder Back Contact? Alle PV-Modularten mit Wirkungsgrad, Kosten und Lebensdauer im Vergleich. …"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Solarix farbige Solarmodule: die schönsten Farben und Designs für ...",
+      "url": "https://solarix-solar.com/de/farbige-solarmodule",
+      "snippet": "Für Projekte mit besonderen Designanforderungen entwickeln wir maßgeschneiderte Farben und Oberflächen auf Basis eines RAL …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rarad/test-pyannote-modified",
+  "slug": "rarad-test-pyannote-modified",
+  "author": "rarad",
+  "url": "https://huggingface.co/rarad/test-pyannote-modified",
+  "created_at": "2026-09-08T12:30:36.000Z",
+  "updated_at": "2026-09-08T12:31:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33680610,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Confluence | AI Workspace for Knowledge & Collaboration",
+      "url": "https://www.atlassian.com/software/confluence",
+      "snippet": "Confluence is your team workspace for creating and sharing knowledge. Use AI to draft, summarize, and find answers so projects …"
+    },
+    {
+      "title": "pyannote · GitHub",
+      "url": "https://github.com/pyannote",
+      "snippet": "Speaker Intelligence Platform for developers. pyannote has 48 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Log in with Atlassian account",
+      "url": "https://id.atlassian.com/login",
+      "snippet": "Log in to Jira, Confluence, and all other Atlassian Cloud products here. Not an Atlassian user? Sign up for free."
+    },
+    {
+      "title": "PyAnnote",
+      "url": "https://pyannote.github.io/",
+      "snippet": "herve.bredin@irit.fr Recently updated View All on GitHub"
+    },
+    {
+      "title": "Confluence | KI-Arbeitsbereich für Wissen und Zusammenarbeit",
+      "url": "https://www.atlassian.com/de/software/confluence",
+      "snippet": "Confluence ist ein Team-Arbeitsbereich zum Erstellen und Teilen von Wissen. Nutze KI zum Entwerfen, Zusammenfassen und …"
+    }
+  ]
+}

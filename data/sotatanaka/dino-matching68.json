@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sotatanaka/dino-matching68",
+  "slug": "sotatanaka-dino-matching68",
+  "author": "sotatanaka",
+  "url": "https://huggingface.co/sotatanaka/dino-matching68",
+  "created_at": "2026-09-08T16:57:20.000Z",
+  "updated_at": "2026-09-08T16:57:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tv box για Cosmote TV, ERTflix - Τηλεoράσεις - Insomnia.gr",
+      "url": "https://www.insomnia.gr/forums/topic/821188-tv-box-%CE%B3%CE%B9%CE%B1-cosmote-tv-ertflix/",
+      "snippet": "Dec 4, 2023 · Καλησπέρα σας Έχω συνδρομή δορυφορικής cosmote tv. Από πέρυσι, που έπαψε η δυνατότητα replay, μου …"
+    },
+    {
+      "title": "sotatanaka/dino-matching68 · Hugging Face",
+      "url": "https://huggingface.co/sotatanaka/dino-matching68",
+      "snippet": "sotatanaka / dino-matching68 like 0 Safetensors PyTorch dino matching License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Dino for Matching Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "COSMOTE TV - Προγράμματα FTTH, VDSL, ADSL, και ...",
+      "url": "https://www.insomnia.gr/forums/topic/845125-cosmote-tv/",
+      "snippet": "Aug 2, 2025 · Καλησπέρα ! Βλέπω μέσω του πατέρα μου COSMOTE full pack via satellite στην android tv μου αλλά και στο iPad ( …"
+    },
+    {
+      "title": "sotatanaka (Sota Tanaka) - Hugging Face",
+      "url": "https://huggingface.co/sotatanaka/models",
+      "snippet": "User profile of Sota Tanaka on Hugging Face"
+    },
+    {
+      "title": "\"Cosmote TV\" aus Griechenland... - DIGITAL FERNSEHEN Forum",
+      "url": "https://forum.digitalfernsehen.de/threads/cosmote-tv-aus-griechenland.386832/",
+      "snippet": "Dec 23, 2017 · Kennt jemand bzw. hat jemand diesen Anbeiter aboniert? Das Programm-Angebot ist ja auf 9°Ost sehr vielfältig, …"
+    }
+  ]
+}

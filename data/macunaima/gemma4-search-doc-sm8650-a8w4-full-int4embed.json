@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "macunaima/gemma4-search-doc-sm8650-a8w4-full-int4embed",
+  "slug": "macunaima-gemma4-search-doc-sm8650-a8w4-full-int4embed",
+  "author": "macunaima",
+  "url": "https://huggingface.co/macunaima/gemma4-search-doc-sm8650-a8w4-full-int4embed",
+  "created_at": "2026-09-08T17:39:02.000Z",
+  "updated_at": "2026-09-08T17:39:06.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "litert-lm",
+    "tflite",
+    "on-device",
+    "qualcomm",
+    "snapdragon",
+    "sm8650",
+    "htp",
+    "npu",
+    "quantization",
+    "int4",
+    "gemma4",
+    "text-generation",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1765890176,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Вход в Gmail - Компьютер - Cправка - Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ru&co=GENIE.Platform%3DDesktop",
+      "snippet": "Чтобы открыть Gmail, войдите в свой аккаунт на компьютере или добавьте его в приложении Gmail на телефоне или …"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Приложение \"Калькулятор\" - Cправка - Chrome Enterprise and …",
+      "url": "https://support.google.com/chrome/a/answer/13614988?hl=ru",
+      "snippet": "Режим обработчика данных доступен только для пользователей с управляемыми устройствами ChromeOS в этих странах. С …"
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Написать функцию sum(), которая будет работать как калькулятор",
+      "url": "https://ru.stackoverflow.com/questions/1184687/%D0%9D%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E-sum-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%B0%D1%8F-%D0%B1%D1%83%D0%B4%D0%B5%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80",
+      "snippet": "Stack Overflow for Agents Чат Участники Написать функцию sum(), которая будет работать как калькулятор Задать вопрос …"
+    }
+  ]
+}

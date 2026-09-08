@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "BeaverAI/Artemis-31B-v1q-GGUF",
+  "slug": "beaverai-artemis-31b-v1q-gguf",
+  "author": "BeaverAI",
+  "url": "https://huggingface.co/BeaverAI/Artemis-31B-v1q-GGUF",
+  "created_at": "2026-09-08T15:14:15.000Z",
+  "updated_at": "2026-09-08T15:55:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 57837162944,
+  "storage_human": "57.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT Italiano",
+      "url": "https://chatgpt.com/it-IT/",
+      "snippet": "Usa ChatGPT per rispondere alle domande, scrivere, creare immagini, portare a termine il lavoro e scrivere codice, tutto in un unico …"
+    },
+    {
+      "title": "BeaverAI/Artemis-31B-v1l-GGUF · Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/Artemis-31B-v1l-GGUF",
+      "snippet": "Instructions to use BeaverAI/Artemis-31B-v1l-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=it-IT",
+      "snippet": "Accedi per ottenere risposte basate sulle chat salvate, nonché per creare immagini e caricare file. Da dove iniziamo? Usa ChatGPT …"
+    },
+    {
+      "title": "BeaverAI/Artemis-31B-v1m-GGUF · Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/Artemis-31B-v1m-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT Italiano — Senza registrazione",
+      "url": "https://chatx.ai/it/gpt",
+      "snippet": "Usa ChatGPT gratis e in modo anonimo. Modelli disponibili: GPT-5 nano, GPT-5.6 Luna, GPT-5.6 Terra, GPT-5.6 Sol. Senza …"
+    }
+  ]
+}

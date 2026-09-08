@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "matmei/MulticlassReaction_tr",
+  "slug": "matmei-multiclassreaction_tr",
+  "author": "matmei",
+  "url": "https://huggingface.co/matmei/MulticlassReaction_tr",
+  "created_at": "2026-09-08T10:25:28.000Z",
+  "updated_at": "2026-09-08T11:35:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 1071347969,
+  "storage_human": "1.1 GB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking a package after 120 days... : r/UPS - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/a7iwbb/tracking_a_package_after_120_days/",
+      "snippet": "Dec 19, 2018 · Tracking a package after 120 days... I need to track a package that is past the 120 day mark, UPS.com just says \"UPS …"
+    },
+    {
+      "title": "matmei (Matthijs Meire) - Hugging Face",
+      "url": "https://huggingface.co/matmei",
+      "snippet": "datasets None public yet Marketing Analytics"
+    },
+    {
+      "title": "Dropped off Amazon return, but not showing up : r/UPS - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/f30ace/dropped_off_amazon_return_but_not_showing_up/",
+      "snippet": "Feb 12, 2020 · The tracking number that Amazon gave you isn't a real tracking number in that case because the item is a …"
+    },
+    {
+      "title": "Freeware military AI traffic for Flight Simulator and Prepar3d ...",
+      "url": "https://militaryaiworks.com/",
+      "snippet": "Hi and welcome to Military AI Works, or MAIW for short, the home base of military AI traffic for Flight Simulator and Prepar3D."
+    },
+    {
+      "title": "Are the estimated times ever correct? : r/UPS - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/19ep5jt/are_the_estimated_times_ever_correct/",
+      "snippet": "If it hasn’t been handed off to UPS yet, how could they accurately estimate? 90% of these come down to the shipper printing the …"
+    }
+  ]
+}

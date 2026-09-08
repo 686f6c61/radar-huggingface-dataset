@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-Q5_K_M-GGUF",
+  "slug": "mondk-minicpm5-2b-abliterated-uncensored-safetensors-q5_k_m-gguf",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-Q5_K_M-GGUF",
+  "created_at": "2026-09-08T12:34:35.000Z",
+  "updated_at": "2026-09-08T12:34:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+    "base_model:quantized:mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1808052256,
+  "storage_human": "1.8 GB",
+  "base_model": "mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smaldeurslot inclusief sluitplaat PC85 doornmaat 25 mm",
+      "url": "https://www.onlinedeurbeslagshop.nl/p/smaldeurslot-inclusief-sluitplaat-pc85-doornmaat-25-mm/",
+      "snippet": "Dit slot kan op een naar binnen- of naar buitendraaiende deur zowel links als rechts geplaatst worden. Twijfel je over je keuze voor …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B-Base · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-Base",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Smaldeursloten PC72, 85 en 92mm - Slotenshop.nl",
+      "url": "https://www.slotenshop.nl/smaldeursloten",
+      "snippet": "Diverse smaldeurslot uitvoering met dag- en nachtschoot, zwenkschoot en SKG**® keurmerk, ook leverbaar als schuifdeurslot. …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Slot PC85 DM25 kopen? - StedaParts",
+      "url": "https://www.stedaparts.nl/poortonderdelen/poortsloten/smaldeurslot-pc85-dm25/",
+      "snippet": "Smaldeurslot PC85 voor koker 40x40 mm met RVS voorplaat. Insteekslot smalslot PC 85 mm en doornmaat 25 mm inclusief cilinder …"
+    }
+  ]
+}

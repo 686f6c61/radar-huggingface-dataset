@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sudarshanregmi/timethink-base",
+  "slug": "sudarshanregmi-timethink-base",
+  "author": "sudarshanregmi",
+  "url": "https://huggingface.co/sudarshanregmi/timethink-base",
+  "created_at": "2026-09-08T14:33:28.000Z",
+  "updated_at": "2026-09-08T14:40:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3ts",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8258552848,
+  "parameters_human": "8.26B",
+  "storage_bytes": 16528576072,
+  "storage_human": "16.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dragon Ball Xenoverse 2 Mods | VGM",
+      "url": "https://videogamemods.com/the-citadel/dragon-ball-xenoverse-2/mods",
+      "snippet": "2 days ago · Browse and download mods for Dragon Ball Xenoverse 2. Free mods for PC."
+    },
+    {
+      "title": "sudarshanregmi/timethink · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/sudarshanregmi/timethink",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dragon Ball Xenoverse 2 Mods",
+      "url": "https://www.nexusmods.com/games/dragonballxenoverse2/mods",
+      "snippet": "Browse 213 mods for Dragon Ball Xenoverse 2. Download and install the best mods to enhance your Dragon Ball Xenoverse 2 …"
+    },
+    {
+      "title": "sudarshanregmi/timethink at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/sudarshanregmi/timethink/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DRAGON BALL XENOVERSE 2 Mods, Tutorials & Community | DB:XV2 …",
+      "url": "https://gamebanana.com/games/6119",
+      "snippet": "Discover DRAGON BALL XENOVERSE 2 mods, tutorials, questions, requests, and fan discussions. Also known as DB:XV2, this is …"
+    }
+  ]
+}

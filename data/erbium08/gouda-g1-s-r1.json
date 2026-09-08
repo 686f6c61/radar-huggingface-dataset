@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Erbium08/gouda-g1-s-r1",
+  "slug": "erbium08-gouda-g1-s-r1",
+  "author": "Erbium08",
+  "url": "https://huggingface.co/Erbium08/gouda-g1-s-r1",
+  "created_at": "2026-09-08T12:36:06.000Z",
+  "updated_at": "2026-09-08T12:39:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306829295,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anonymous Ad Preview Tool - Google Ads",
+      "url": "https://ads.google.com/anon/AdPreview",
+      "snippet": "Anonymous Ad Preview Tool"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/watch?v=RiDSgPPM46w",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Reach Local Customers with Local Service Ads - Google Ads",
+      "url": "https://ads.google.com/intl/en_us/intl/en_us/home/local-services-ads/",
+      "snippet": "Boost visibility in local search with Google Local Services Ads. Become Google Guaranteed and attract more customers through local …"
+    },
+    {
+      "title": "GitHub - unitreerobotics/unitree_sim_isaaclab: The Unitree simulation ...",
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab",
+      "snippet": "This project is built on Isaac Lab to simulate Unitree robots in various tasks, facilitating data collection, playback, generation, and model validation. It can be used in conjunction with the xr_teleoperate repository for dataset collection. The project adopts the same DDS communication protocol as ..."
+    },
+    {
+      "title": "Erbjudanden för onlineannonsering omfattas av användarvillkor – …",
+      "url": "https://ads.google.com/intl/sv_se/home/terms-and-conditions/incentives/",
+      "snippet": "{$ion-dynamic-terms-and-conditions-title} {$ion-dynamic-terms-and-conditions-description}"
+    }
+  ]
+}

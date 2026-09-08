@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-8be5224bcce97d0f",
+  "slug": "gradients-io-tournaments-augmented-8be5224bcce97d0f",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-8be5224bcce97d0f",
+  "created_at": "2026-09-08T11:10:53.000Z",
+  "updated_at": "2026-09-08T11:12:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241740288,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483514608,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-8be5224bcce97d0f · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-8be5224bcce97d0f",
+      "snippet": "Instructions to use gradients-io-tournaments/augmented-8be5224bcce97d0f with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gradients | Anyone Can Train AI",
+      "url": "https://www.gradients.io/",
+      "snippet": "With just a few clicks, gradients will be training your model for you, 0 AI training knowledge needed. The easiest and best place in the world to train a model"
+    },
+    {
+      "title": "gradients-io-tournaments (Grads)",
+      "url": "https://huggingface.co/gradients-io-tournaments",
+      "snippet": "published a model about 10 hours ago gradients-io-tournaments/tournament-tourn_d1afc9c2c6aec932_20260615-dd44fb71-1d19-41c1-88bd-7c0fd0f87676-5DfdHDKN"
+    },
+    {
+      "title": "Gradients (@gradients_ai) / Posts / X",
+      "url": "https://x.com/gradients_ai",
+      "snippet": "Gradients 3.1 Coming Friday 🟡🟣 On Friday: Gradients is the first Auto-ML Platform in the WORLD to offer GRPO Training. The same technique that powered Deepseek R1's breakthrough performance will soon be available with just a few clicks. gradients.io #subnet56 $TAO"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "TicoRaph/vit-pulp-fiction-characters-photos",
+  "slug": "ticoraph-vit-pulp-fiction-characters-photos",
+  "author": "TicoRaph",
+  "url": "https://huggingface.co/TicoRaph/vit-pulp-fiction-characters-photos",
+  "created_at": "2026-09-08T13:20:14.000Z",
+  "updated_at": "2026-09-08T13:32:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "generated_from_trainer",
+    "dataset:imagefolder",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85804039,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343244685,
+  "storage_human": "343 MB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "imagefolder",
+      "metric": "Accuracy",
+      "value": 0.8970588235294118
+    }
+  ],
+  "sources": [
+    {
+      "title": "ChatGPT Holds Character Consistency Across Images",
+      "url": "https://aiproductivity.ai/news/chatgpt-image-character-consistency-pulp-fiction/",
+      "snippet": "ChatGPT held consistent character appearance across a Pulp Fiction image series - a sign of how far consumer AI image generation has progressed."
+    },
+    {
+      "title": "AI Image Generator - DeepAI",
+      "url": "https://deepai.org/machine-learning-model/text2img",
+      "snippet": "Transform your ideas into stunning AI art—instantly and for free. Whether you're a creator, developer, or entrepreneur, DeepAI's Free Online AI Image Generator gives you the power to visualize your imagination in seconds."
+    },
+    {
+      "title": "TicoRaph/pulpfictionchatbot-sft · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/TicoRaph/pulpfictionchatbot-sft/viewer",
+      "snippet": "Datasets: TicoRaph / pulpfictionchatbot-sft like 0 Dataset card Data Studio FilesFiles and versions xet Community Subset (1) default·1.37k rows default (1.37k rows) Split (2) train·1.23k rows train (1.23k rows) val (136 rows) SQL Console"
+    },
+    {
+      "title": "Characters - Pulp Fiction Wiki",
+      "url": "https://pulp-fiction.fandom.com/wiki/Characters",
+      "snippet": "Vicent Vega is a main role and the friend of Jules in the film. He works as a hitman and associate of Marsellus Wallace. The gun Vincent uses is a 1911-A1 Auto Ordnance .45 ACP pistol that has been chromed and given pearl grips, he also uses a MAC 10 with a ridiculously awesome sized silencer at one point in the film which we never see him physically hold but inconsiderately leaves lying on a ..."
+    },
+    {
+      "title": "Free AI Image Generator - Text to Image AI (No Signup) | Fotor",
+      "url": "https://www.fotor.com/ai-image-generator/",
+      "snippet": "Free AI Image Generator Generate AI images from text prompts or reference images online for free. Create with Fotor's multi-model AI image generator for better quality, consistency, and control."
+    }
+  ]
+}

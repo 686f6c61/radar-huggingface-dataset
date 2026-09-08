@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/qwen3_vl_8b_rmbench_preset_lora_3d5k",
+  "slug": "myungkyu-qwen3_vl_8b_rmbench_preset_lora_3d5k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/qwen3_vl_8b_rmbench_preset_lora_3d5k",
+  "created_at": "2026-09-08T15:20:49.000Z",
+  "updated_at": "2026-09-08T15:21:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "robotics",
+    "vla",
+    "rmbench",
+    "dataset:Myungkyu/RMBench-preset-gemini",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17534339488,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/ar",
+      "snippet": "From luxury camping to discovering and now stanning Durand Bernarr to tarot readings, Marina opens up about what fuels her music, …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-VL: The official repo of Qwen-VL (通义千问-VL) chat ...",
+      "url": "https://github.com/QwenLM/Qwen-VL",
+      "snippet": "Note that if you use LoRA to finetune the base language model, e.g., Qwen-VL, instead of chat models, e.g., Qwen-VL-Chat, the script automatically switches the embedding and output layer as trainable parameters."
+    },
+    {
+      "title": "YouTube - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ar",
+      "snippet": "نزِّل تطبيق YouTube الرسمي للهواتف والأجهزة اللوحية التي تعمل بنظام التشغيل Android. واطّلِع على المحتوى الذي يشاهده المستخدمون من حول العالم، من الفيديوهات الموسيقية الأكثر رواجًا إلى …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics ..."
+    },
+    {
+      "title": "YouTube - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.automotive.youtube&hl=ar",
+      "snippet": "شاهد ما يشاهده العالم - بدءًا من مقاطع الفيديو الموسيقية الأكثر رواجًا وحتى مقاطع الفيديو الشائعة في الألعاب والأزياء والجمال والأخبار والتعلم وغير ذلك الكثير. اشترك في القنوات التي تحبها وشاهدها..."
+    }
+  ]
+}

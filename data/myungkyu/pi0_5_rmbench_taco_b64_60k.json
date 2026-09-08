@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/pi0_5_rmbench_taco_b64_60k",
+  "slug": "myungkyu-pi0_5_rmbench_taco_b64_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/pi0_5_rmbench_taco_b64_60k",
+  "created_at": "2026-09-08T15:17:18.000Z",
+  "updated_at": "2026-09-08T15:17:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "rmbench",
+    "dataset:Myungkyu/RMBench-taco-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354060792,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thumbnail of the first Astral Divinity stream. Is this an actual ...",
+      "url": "https://www.reddit.com/r/geometrydash/comments/dvnb8k/thumbnail_of_the_first_astral_divinity_stream_is/",
+      "snippet": "Nov 13, 2019 · Thumbnail of the first Astral Divinity stream. Is this an actual modification or not? : r/geometrydash Go to …"
+    },
+    {
+      "title": "GitHub - myungkyuKoo/myRMBench: Memory-Dependent Manipulation Benchmark ...",
+      "url": "https://github.com/myungkyuKoo/myRMBench",
+      "snippet": "Memory-Dependent Manipulation Benchmark based on RoboTwin - myungkyuKoo/myRMBench"
+    },
+    {
+      "title": "Whats the difference between Astral Divinity and God Eater ... - Reddit",
+      "url": "https://www.reddit.com/r/geometrydash/comments/16cvwsk/whats_the_difference_between_astral_divinity_and/",
+      "snippet": "Sep 8, 2023 · henabidus astral divinity removes the copyrighted aspects of god eater. it does this by making a monster's eyes streaks …"
+    },
+    {
+      "title": "GitHub - RoboTwin-Platform/RMBench: Memory-Dependent Manipulation ...",
+      "url": "https://github.com/RoboTwin-Platform/RMBench",
+      "snippet": "Pi 0.5: See Pi 0.5 Document X-VLA: See X-VLA Document Other Policies (Pi0, RDT, etc): See Documentand See Folder Configure your policy:See Tutorial Here 👍 Citations If you find our work useful, please consider citing: @article{chen2026rmbench, title={RMBench: Memory-Dependent Robotic Manipulation Benchmark with Insights into Policy Design},"
+    },
+    {
+      "title": "What is the best geometry dash level by decoration and gameplay : r ...",
+      "url": "https://www.reddit.com/r/geometrydash/comments/l62j7q/what_is_the_best_geometry_dash_level_by/",
+      "snippet": "Jan 27, 2021 · Astral divinity is pretty meh. The deco at the beginning is good but the middle and the end rely too heavily on …"
+    }
+  ]
+}

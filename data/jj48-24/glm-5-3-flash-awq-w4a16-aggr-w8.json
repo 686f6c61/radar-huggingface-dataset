@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JJ48-24/GLM-5.3-Flash-AWQ-W4A16-aggr-w8",
+  "slug": "jj48-24-glm-5-3-flash-awq-w4a16-aggr-w8",
+  "author": "JJ48-24",
+  "url": "https://huggingface.co/JJ48-24/GLM-5.3-Flash-AWQ-W4A16-aggr-w8",
+  "created_at": "2026-09-08T17:27:04.000Z",
+  "updated_at": "2026-09-08T17:34:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "compressed-tensors",
+    "sm80",
+    "cmp-170hx",
+    "base_model:wtdcode/GLM-5.3-Flash-AWQ-W4A16",
+    "base_model:quantized:wtdcode/GLM-5.3-Flash-AWQ-W4A16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 328640519006,
+  "parameters_human": "328.64B",
+  "storage_bytes": 182894631818,
+  "storage_human": "182.9 GB",
+  "base_model": "wtdcode/GLM-5.3-Flash-AWQ-W4A16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Kleinanzeigen",
+      "url": "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/saustrup/c203l18297r150",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "GLM 5.3 Flash API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series with 320B total parameters and 18B active parameters. It incorporates several architectural improvements over GLM-5.2 including a hybrid architecture, sharply reducing long-context serving costs while preserving precise long-context and Manifold-Constrained Hyper-Connections (mHC) to further improve scaling efficiency."
+    },
+    {
+      "title": "wtdcode/GLM-5.3-Flash-AWQ-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/wtdcode/GLM-5.3-Flash-AWQ-W4A16",
+      "snippet": "Copy to bucket new GLM-5.3-Flash-AWQ-W4A16 What is quantized GLM-5.3-Flash-AWQ-W4A16 Quantized version of zai-org/GLM-5.3-Flash. What is quantized Weight-only INT4 (symmetric, group size 128) via AWQ, stored in the compressed-tensors pack-quantizedformat. Calibrated from the official FP8 release (dequantized to BF16 first)."
+    },
+    {
+      "title": "cyankiwi/GLM-5.3-Flash-AWQ-INT4 · Hugging Face",
+      "url": "https://huggingface.co/cyankiwi/GLM-5.3-Flash-AWQ-INT4",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "GLM-5.3-Flash - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/GLM5.3-Flash.html",
+      "snippet": "Quantized model GLM-5.3-Flash-w8a8can be deployed on 2 Atlas 800 A2 (64GB × 8) nodes with DP2 across the two nodes (one DP rank per node) and TP8 inside each node."
+    }
+  ]
+}

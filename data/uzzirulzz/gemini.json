@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "uzzirulzz/gemini",
+  "slug": "uzzirulzz-gemini",
+  "author": "uzzirulzz",
+  "url": "https://huggingface.co/uzzirulzz/gemini",
+  "created_at": "2026-09-08T17:57:04.000Z",
+  "updated_at": "2026-09-08T17:57:04.000Z",
+  "license": "osl-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:osl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosovo – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Kosovo",
+      "snippet": "1 Kosovo declarou independência da Sérviadia 17 Fevereiro 2008, ver também Reacção internacional à declaração de …"
+    },
+    {
+      "title": "GitHub - uzzirulzz-cyber/ccht",
+      "url": "https://github.com/uzzirulzz-cyber/ccht",
+      "snippet": "Features 13 AI Models — GPT-4o, GPT-4 Turbo, GPT-3.5 Turbo, Claude 3.5 Sonnet, Claude 3 Opus, Gemini 1.5 Pro, Gemini 1.5 Flash, Llama 3.1, Mistral, Groq, Perplexity, DeepSeek, Command R+ Real API Integration — Connects to OpenAI, Anthropic, and Google APIs (server-side, keys hidden) Demo Mode — Models without API keys show realistic demo responses One-Click Switch — Instantly switch ..."
+    },
+    {
+      "title": "Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kosovo",
+      "snippet": ""
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Independência do Kosovo – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Independ%C3%AAncia_do_Kosovo",
+      "snippet": "Obtida de \"https://pt.wikipedia.org/w/index.php?title=Independência_do_Kosovo&oldid=70442853\" Categorias: História do Kosovo …"
+    }
+  ]
+}

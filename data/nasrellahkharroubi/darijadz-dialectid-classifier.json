@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nasrellahkharroubi/DarijaDZ-DialectID-Classifier",
+  "slug": "nasrellahkharroubi-darijadz-dialectid-classifier",
+  "author": "nasrellahkharroubi",
+  "url": "https://huggingface.co/nasrellahkharroubi/DarijaDZ-DialectID-Classifier",
+  "created_at": "2026-09-08T14:54:09.000Z",
+  "updated_at": "2026-09-08T14:54:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [
+    "ar",
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "algerian-darija",
+    "dialect-identification",
+    "nlp",
+    "ar",
+    "fr",
+    "en",
+    "dataset:nasrellahkharroubi/DarijaDZ-DialectID",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10535030,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Read your sign's free horoscope today! Use these expert astrology predictions for your day, week, and month. What does your daily …"
+    },
+    {
+      "title": "nasrellahkharroubi/DarijaDz · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/nasrellahkharroubi/DarijaDz",
+      "snippet": "DarijaDZ DarijaDZ is a large-scale corpus of user-generated text collected from Algerian YouTube channels. The corpus contains approximately 1.4 million comment documents and 14.7 million word-level tokens, with content written primarily in Algerian Darija script alongside Latin/Arabizi writing and mixed-script content."
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "nasrellahkharroubi (nasrellah kharroubi) - Hugging Face",
+      "url": "https://huggingface.co/nasrellahkharroubi",
+      "snippet": "Algerian Darija Stochastic Arabizi Transliterator 🔀 Convert Algerian Darija from Arabic to Arabizi nasrellahkharroubi about 4 hours ago"
+    },
+    {
+      "title": "如何评价Gemini的新UI? - 知乎",
+      "url": "https://www.zhihu.com/question/2040443986943424303",
+      "snippet": "May 20, 2026 · 如何评价Gemini的新UI? Google把这次的设计语言称作“Neural Expressive”（神经表达），整体感觉就是把那个让人有 …"
+    }
+  ]
+}

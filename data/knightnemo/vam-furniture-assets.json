@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "knightnemo/vam-furniture-assets",
+  "slug": "knightnemo-vam-furniture-assets",
+  "author": "knightnemo",
+  "url": "https://huggingface.co/knightnemo/vam-furniture-assets",
+  "created_at": "2026-09-08T12:42:59.000Z",
+  "updated_at": "2026-09-08T12:43:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 216787550,
+  "storage_human": "217 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "knightnemo (knightnemo) - Hugging Face",
+      "url": "https://huggingface.co/knightnemo/models",
+      "snippet": "World Models, World Action Models, VLA Models, Test-time Adaptation & Self-Improvement, Dexterous Manipulation."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "knightnemo (knightnemo) - Hugging Face",
+      "url": "https://huggingface.co/knightnemo/datasets",
+      "snippet": "AI & ML interests World Models, World Action Models, VLA Models, Test-time Adaptation & Self-Improvement, Dexterous Manipulation."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    }
+  ]
+}

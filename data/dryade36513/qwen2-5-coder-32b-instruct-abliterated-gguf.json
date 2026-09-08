@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dryade36513/Qwen2.5-Coder-32B-Instruct-abliterated-GGUF",
+  "slug": "dryade36513-qwen2-5-coder-32b-instruct-abliterated-gguf",
+  "author": "dryade36513",
+  "url": "https://huggingface.co/dryade36513/Qwen2.5-Coder-32B-Instruct-abliterated-GGUF",
+  "created_at": "2026-09-08T15:34:57.000Z",
+  "updated_at": "2026-09-08T15:34:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "abliterated",
+    "uncensored",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000864000,
+  "storage_human": "224.0 GB",
+  "base_model": "huihui-ai/Qwen2.5-Coder-32B-Instruct-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Start an Herb Garden: Easy Steps for Growing Fresh Herbs at …",
+      "url": "https://www.almanac.com/how-start-herb-garden-beginners-step-step-guide",
+      "snippet": "Jan 15, 2026 · Start your own herb garden with this easy beginner’s guide. Learn how to pick, plant, and care for herbs indoors or …"
+    },
+    {
+      "title": "Qwen2.5-Coder-32B-Instruct-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen2.5-Coder-32B-Instruct-abliterated-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Ultimate Guide to Growing Herbs • Gardenary",
+      "url": "https://www.gardenary.com/blog/the-ultimate-guide-to-growing-herbs",
+      "snippet": "Feb 17, 2023 · Herbs are some of the best plants to grow in the garden, especially for beginners. Here's everything you need to grow …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-32B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+      "snippet": "Instructions to use Qwen/Qwen2.5-Coder-32B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "How to Grow Your Own Herbs at Home for Better Cooking",
+      "url": "https://amazingfoodanddrink.com/grow-your-own-herbs-at-home/",
+      "snippet": "Aug 3, 2026 · This guide covers which herbs to start with, how to rescue the supermarket pot that dies within a week of getting it …"
+    }
+  ]
+}

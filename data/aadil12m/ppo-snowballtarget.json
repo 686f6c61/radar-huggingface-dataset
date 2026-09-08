@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Aadil12m/ppo-SnowballTarget",
+  "slug": "aadil12m-ppo-snowballtarget",
+  "author": "Aadil12m",
+  "url": "https://huggingface.co/Aadil12m/ppo-SnowballTarget",
+  "created_at": "2026-09-08T15:22:38.000Z",
+  "updated_at": "2026-09-08T15:22:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25729145,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Arnaque] boncoin.fr voiture achat [Résolu] - Vos droits sur internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-5087483-arnaque-boncoin-fr-voiture-achat",
+      "snippet": "Feb 19, 2008 · [Arnaque] boncoin.fr voiture achat Résolu/Fermé stevali - Modifié le 19 févr. 2008 à 07:58 bibiche53 - 5 nov. 2009 à …"
+    },
+    {
+      "title": "Adilbai/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ppo-SnowballTarget",
+      "snippet": "PPO-SnowballTarget Reinforcement Learning Model Model Description This model is a Proximal Policy Optimization (PPO) agent trained to play the SnowballTarget environment from Unity ML-Agents. The agent, named Julien the Bear 🐻, learns to accurately throw snowballs at spawning targets to maximize rewards. Model Details Model Architecture Algorithm: Proximal Policy Optimization (PPO ..."
+    },
+    {
+      "title": "Le bon coin.fr .... injoignable: noreply... - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-13510904-le-bon-coin-fr-injoignable-noreply",
+      "snippet": "Jul 23, 2009 · Comment joindre une société comme Le boncoin.fr qui s'abrite comme beaucoup d'autres sociétés sur Internet …"
+    },
+    {
+      "title": "Adilbai/ppo-SnowballTarget at main - Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ppo-SnowballTarget/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Arnaque Mandat cash le boncoin - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-15003958-arnaque-mandat-cash-le-boncoin",
+      "snippet": "Nov 1, 2009 · Arnaque Mandat cash le boncoin Résolu/Fermé ldjulie - Modifié le 19 févr. 2010 à 09:43 flo - 18 sept. 2010 à 07:07"
+    }
+  ]
+}

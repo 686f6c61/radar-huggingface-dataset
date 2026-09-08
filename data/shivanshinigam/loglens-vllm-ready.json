@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ShivanshiNigam/loglens-vllm-ready",
+  "slug": "shivanshinigam-loglens-vllm-ready",
+  "author": "ShivanshiNigam",
+  "url": "https://huggingface.co/ShivanshiNigam/loglens-vllm-ready",
+  "created_at": "2026-09-08T17:01:31.000Z",
+  "updated_at": "2026-09-08T17:15:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "log-analysis",
+    "sliding-window-attention",
+    "custom-architecture",
+    "pytorch",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19536128,
+  "parameters_human": "19.5M",
+  "storage_bytes": 78148704,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
+      "url": "https://github.com/vllm-project/vllm",
+      "snippet": "vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects built and maintained by a diverse community of many dozens of academic institutions and companies from over 2000 contributors. vLLM is fast with: State-of-the-art serving throughput Efficient ..."
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "shivanshinigam (Shivanshi Nigam) · GitHub",
+      "url": "https://github.com/shivanshinigam",
+      "snippet": "A graph representing shivanshinigam's contributions from June 22, 2025 to June 27, 2026. The contributions are 80% commits, 16% pull requests, 4% issues, 0% code review."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

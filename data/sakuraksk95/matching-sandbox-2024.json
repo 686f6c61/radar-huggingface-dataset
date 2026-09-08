@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sakuraksk95/matching-sandbox-2024",
+  "slug": "sakuraksk95-matching-sandbox-2024",
+  "author": "sakuraksk95",
+  "url": "https://huggingface.co/sakuraksk95/matching-sandbox-2024",
+  "created_at": "2026-09-08T17:58:37.000Z",
+  "updated_at": "2026-09-08T17:58:43.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps - Computer - Google …",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Get directions in Google Maps On your computer, open Google Maps. Click Directions . Enter the starting point and destination. Click …"
+    },
+    {
+      "title": "sakuraksk95 (Jessica Davis) - Hugging Face",
+      "url": "https://huggingface.co/sakuraksk95",
+      "snippet": "sakuraksk95 1 Follow AI & ML interests None yet Recent Activity updateda model10 days ago"
+    },
+    {
+      "title": "Google マップでマイマップを表示する",
+      "url": "https://support.google.com/maps/answer/3045850?hl=ja&co=genie.platform%3Ddesktop",
+      "snippet": "Google マップでマイマップを表示できます。 マイマップを使うと、自分用にカスタマイズした地図を作成、編集してオンラインで …"
+    },
+    {
+      "title": "OpenAI GPT-5.6 Sol Sandbox Escape: What Really Happened - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/openais-gpt-56-sol-escaped-sandbox-breached-hugging-face-ym3wf",
+      "snippet": "Learn how OpenAI's GPT-5.6 Sol escaped a sandbox, compromised Hugging Face during ExploitGym testing, and what the incident means for AI security."
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    }
+  ]
+}

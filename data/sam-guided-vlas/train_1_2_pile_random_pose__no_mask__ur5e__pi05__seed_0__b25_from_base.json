@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sam-guided-vlas/train_1_2_pile_random_pose__no_mask__ur5e__pi05__seed_0__b25_from_base",
+  "slug": "sam-guided-vlas-train_1_2_pile_random_pose__no_mask__ur5e__pi05__seed_0__b25_from_base",
+  "author": "sam-guided-vlas",
+  "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__no_mask__ur5e__pi05__seed_0__b25_from_base",
+  "created_at": "2026-09-08T12:27:04.000Z",
+  "updated_at": "2026-09-08T12:31:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:sam-guided-vlas/train_1_2_pile_random_pose__no_mask__ur5e",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354053440,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAM Outillage",
+      "url": "https://www.sam-outillage.fr/",
+      "snippet": "Outillage traditionnel Rangement Comment choisir votre servante d'atelier ? Servantes SAM conçues et fabriquées à Saint-Etienne …"
+    },
+    {
+      "title": "sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras ...",
+      "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) is a Vision-Language-Action model from Physical Intelligence designed for open-world generalization: it evolves π₀ to generalize to entirely new environments and situations that were never seen during training. The LeRobot implementation is adapted from their open-source OpenPI repository."
+    },
+    {
+      "title": "Sam (Série) | TF1+",
+      "url": "https://www.tf1.fr/tf1/sam",
+      "snippet": "Sam, honteuse de son comportement sous l'emprise d'ecstasy, s'excuse auprès de ses collègues. Elle tente d'être une mère parfaite …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?p=53&sort=trending&search=LIVE",
+      "snippet": "sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live__spread_p05__pi05__seed_0"
+    },
+    {
+      "title": "Sam (série télévisée) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Sam_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Sam(série télévisée) 3 languesAjouter un sujet"
+    }
+  ]
+}

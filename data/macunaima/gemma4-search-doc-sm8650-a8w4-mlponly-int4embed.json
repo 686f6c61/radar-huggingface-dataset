@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "macunaima/gemma4-search-doc-sm8650-a8w4-mlponly-int4embed",
+  "slug": "macunaima-gemma4-search-doc-sm8650-a8w4-mlponly-int4embed",
+  "author": "macunaima",
+  "url": "https://huggingface.co/macunaima/gemma4-search-doc-sm8650-a8w4-mlponly-int4embed",
+  "created_at": "2026-09-08T17:38:56.000Z",
+  "updated_at": "2026-09-08T17:39:02.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "litert-lm",
+    "tflite",
+    "on-device",
+    "qualcomm",
+    "snapdragon",
+    "sm8650",
+    "htp",
+    "npu",
+    "quantization",
+    "int4",
+    "gemma4",
+    "text-generation",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2063833216,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accedi / Registrati - Airbnb",
+      "url": "https://www.airbnb.it/login",
+      "snippet": "Unisciti a una community globale di viaggiatori e host locali su Airbnb. Accedere e iniziare è facile."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Airbnb | Case vacanze, baite, case sulla spiaggia e molto altro ancora",
+      "url": "https://www.airbnb.it/",
+      "snippet": "Trova un Airbnb per ogni tipo di viaggio → 7 milioni di case vacanze → 2 milioni di alloggi amati dagli ospiti → Oltre 220 paesi e …"
+    },
+    {
+      "title": "Gemma4 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/gemma4",
+      "snippet": "Gemma4 Vision Model The key difference from previous Gemma releases for vision is the new design to process images of different sizes using a fixed-budget number of tokens. Unlike many models that squash every image into a fixed square (like 224×224), Gemma 4 keeps the image’s natural aspect ratio while making it the right size."
+    },
+    {
+      "title": "Airbnb: case vacanze, chalet, case al mare, alloggi ed Esperienze ...",
+      "url": "https://www.airbnb.it/help/article/4134",
+      "snippet": "Airbnb consente a una persona di prenotare un soggiorno per conto di un'altra, anche se quest'ultima non farà parte della prenotazione."
+    }
+  ]
+}

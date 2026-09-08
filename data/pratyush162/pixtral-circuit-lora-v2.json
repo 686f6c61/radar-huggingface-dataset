@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pratyush162/pixtral-circuit-lora-v2",
+  "slug": "pratyush162-pixtral-circuit-lora-v2",
+  "author": "pratyush162",
+  "url": "https://huggingface.co/pratyush162/pixtral-circuit-lora-v2",
+  "created_at": "2026-09-08T17:57:38.000Z",
+  "updated_at": "2026-09-08T17:57:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llava",
+    "trl",
+    "en",
+    "base_model:unsloth/Pixtral-12B-2409",
+    "base_model:finetune:unsloth/Pixtral-12B-2409",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 281457519,
+  "storage_human": "281 MB",
+  "base_model": "unsloth/Pixtral-12B-2409",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,922 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love) YouTube 1.6M views • 2 months ago CC"
+    },
+    {
+      "title": "Pixtral · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/pixtral",
+      "snippet": "Pixtralis a multimodal model trained to understand natural images and documents. It accepts images in their natural resolution and aspect ratio without resizing or padding due to it’s 2D RoPE embeddings. In addition, Pixtral has a long 128K token context window for processing a large number of images. Pixtral couples a 400M vision encoder with a 12B Mistral Nemo decoder."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    }
+  ]
+}

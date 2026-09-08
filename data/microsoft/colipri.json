@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "microsoft/colipri",
+  "slug": "microsoft-colipri",
+  "author": "microsoft",
+  "url": "https://huggingface.co/microsoft/colipri",
+  "created_at": "2026-01-14T10:36:04.000Z",
+  "updated_at": "2026-09-02T09:50:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "colipri",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "colipri",
+    "safetensors",
+    "zero-shot-image-classification",
+    "en",
+    "arxiv:2510.15042",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 61,
+  "downloads_30d": 4259,
+  "trending_score": 7,
+  "parameters": 258367104,
+  "parameters_human": "258.4M",
+  "storage_bytes": 1034469079,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft - Official Home Page",
+      "url": "https://www.microsoft.com/en-us/?msockid=3fc1f9d437836aa8196cee1a36a66bd0",
+      "snippet": "At Microsoft our mission and values are to help people and businesses throughout the world realize their full potential."
+    },
+    {
+      "title": "microsoft/colipri · Hugging Face",
+      "url": "https://huggingface.co/microsoft/colipri",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use microsoft/colipri with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries COLIPRI How to use microsoft/colipri with COLIPRI:"
+    },
+    {
+      "title": "Microsoft – IA, Cloud, Productivité, Informatique, Jeux et applications",
+      "url": "https://www.microsoft.com/fr-fr?msockid=3fc1f9d437836aa8196cee1a36a66bd0",
+      "snippet": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, …"
+    },
+    {
+      "title": "microsoft/colipri at main - Hugging Face",
+      "url": "https://huggingface.co/microsoft/colipri/tree/main/src/colipri/model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft account | Connectez-vous ou créez votre compte …",
+      "url": "https://account.microsoft.com/account?mkt=fr-fr",
+      "snippet": "Simplifiez votre journée Accédez à toutes vos applications, services et jeux Microsoft avec un seul compte. Quel que soit votre …"
+    }
+  ]
+}

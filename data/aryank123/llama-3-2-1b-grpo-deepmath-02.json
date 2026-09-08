@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AryanK123/Llama-3.2-1B-GRPO-DeepMath-02",
+  "slug": "aryank123-llama-3-2-1b-grpo-deepmath-02",
+  "author": "AryanK123",
+  "url": "https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-02",
+  "created_at": "2026-09-08T17:06:00.000Z",
+  "updated_at": "2026-09-08T19:14:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04",
+    "base_model:finetune:AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38382324,
+  "storage_human": "38 MB",
+  "base_model": "AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Collections - Bing",
+      "url": "https://www.bing.com/saves/",
+      "snippet": "Discover and save your favorite searches, videos, images, and shopping ideas on Bing for easy access anytime."
+    },
+    {
+      "title": "AryanK123/Llama-3.2-1B-GRPO-DeepMath · Discussions",
+      "url": "https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath/discussions",
+      "snippet": "Instructions to use AryanK123/Llama-3.2-1B-GRPO-DeepMath with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Bing Webmaster Tools",
+      "url": "https://www.bing.com/webmasters/about",
+      "snippet": "Sign in or signup for Bing Webmaster Tools and improve your site’s performance in search. Get access to free reports, tools and …"
+    },
+    {
+      "title": "meta-llama/Llama-3.2-1B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/set/homepage",
+      "snippet": "Set Bing as your default search engine Try it now"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "M23AI/Qwen3.8-27B-RTX3090-Runtime-Optimizations",
+  "slug": "m23ai-qwen3-8-27b-rtx3090-runtime-optimizations",
+  "author": "M23AI",
+  "url": "https://huggingface.co/M23AI/Qwen3.8-27B-RTX3090-Runtime-Optimizations",
+  "created_at": "2026-09-08T17:40:51.000Z",
+  "updated_at": "2026-09-08T17:46:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "inference",
+    "speculative-decoding",
+    "rtx-3090",
+    "runtime-optimization",
+    "ru",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153465,
+  "storage_human": "153465 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "GitHub - syv-ai/qwen38-27b-rtx3090: Qwen3.8-27B on a single RTX 3090 ...",
+      "url": "https://github.com/syv-ai/qwen38-27b-rtx3090",
+      "snippet": "Qwen3.8-27B on a single RTX 3090 with vLLM: ~1,000 tok/s at 64 concurrent (int8 tensor-core GEMMs, fp16 DeltaNet state), ~114 tok/s single-user at default sampling / ~124 greedy (MTP drafts, own-output draft vocab, calibrated int4 lm_head, split-KV verify attention), 150k-262k context; patches, requant scripts, benchmarks - syv-ai/qwen38-27b ..."
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr/about/",
+      "snippet": "Comprenez le monde qui vous entoure et communiquez dans différentes langues avec Google Traduction. Traduisez du texte, des …"
+    },
+    {
+      "title": "syv-ai/qwen38-27b-rtx3090 | DeepWiki",
+      "url": "https://deepwiki.com/syv-ai/qwen38-27b-rtx3090",
+      "snippet": "The qwen3.8-27b-rtx3090stack is a specialized serving configuration designed to run the Qwen2.5-27B model (specifically the Qwen2.5-27B-Instructvariant) at high performance on a single consumer-grade NVIDIA RTX 3090 (24 GB VRAM) GPU. By utilizing custom quantization, speculative decoding, and kernel optimizations, this stack achieves throughput and latency numbers that typically require multi ..."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Activer l'écriture manuscriteSélectionner un outil de saisie keyboard Résultats de traduction Traduction Traduction…... Les …"
+    }
+  ]
+}

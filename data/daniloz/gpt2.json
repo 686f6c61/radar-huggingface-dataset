@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "daniloz/Gpt2",
+  "slug": "daniloz-gpt2",
+  "author": "daniloz",
+  "url": "https://huggingface.co/daniloz/Gpt2",
+  "created_at": "2026-09-08T10:22:44.000Z",
+  "updated_at": "2026-09-08T10:22:44.000Z",
+  "license": "eupl-1.2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:eupl-1.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Kleinanzeigen | Kostenlos. Einfach. Lokal. Anzeigen ...",
+      "url": "https://www.ebay-kleinanzeigen.de/",
+      "snippet": "Kostenlose Anzeigen aufgeben mit eBay Kleinanzeigen. Gebraucht oder Neu, Privat oder Gewerbe - Jetzt gratis inserieren auf …"
+    },
+    {
+      "title": "OpenAI GPT2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/gpt2",
+      "snippet": "OpenAI GPT2 Overview OpenAI GPT-2 model was proposed in Language Models are Unsupervised Multitask Learners by Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei and Ilya Sutskever from OpenAI. It’s a causal (unidirectional) transformer pretrained using language modeling on a very large corpus of ~40 GB of text data."
+    },
+    {
+      "title": "Kleinanzeigen – früher eBay Kleinanzeigen. Anzeigen gratis …",
+      "url": "https://www.kleinanzeigen.de/?msockid=0acef58a129769b11055e244131868f4",
+      "snippet": "Kostenlose Anzeigen aufgeben mit Kleinanzeigen. Gebraucht oder Neu, Privat oder Gewerbe - Jetzt gratis inserieren auf …"
+    },
+    {
+      "title": "GPT-2: 1.5B release | OpenAI",
+      "url": "https://openai.com/index/gpt-2-1-5b-release/",
+      "snippet": "As the final model release of GPT-2’s staged release, we’re releasing the largest version (1.5B parameters) of GPT-2 along with code and model weights to facilitate detection of outputs of GPT-2 models. While there have been larger language models released since August, we’ve continued with our original staged release plan in order to provide the community with a test case of a full ..."
+    },
+    {
+      "title": "Ebay Kleinanzeigen kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-ebay---kleinanzeigen/k0?msockid=0acef58a129769b11055e244131868f4",
+      "snippet": "Kleinanzeigen: Ebay Kleinanzeigen - Jetzt finden oder inserieren! - kleinanzeigen.de"
+    }
+  ]
+}

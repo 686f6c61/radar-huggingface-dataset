@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-Q6_K-GGUF",
+  "slug": "mondk-minicpm5-2b-abliterated-uncensored-safetensors-q6_k-gguf",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-Q6_K-GGUF",
+  "created_at": "2026-09-08T12:32:22.000Z",
+  "updated_at": "2026-09-08T12:32:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+    "base_model:quantized:mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 2070216736,
+  "storage_human": "2.1 GB",
+  "base_model": "mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet powerful. · GitHub",
+      "url": "https://github.com/openbmb/minicpm",
+      "snippet": "MiniCPM5-2B is the second checkpoint in the MiniCPM5 series, scaling the MiniCPM5-1B recipe up to 2B parameters for users who can afford a larger footprint in exchange for stronger capability."
+    },
+    {
+      "title": "openbmb/minicpm5",
+      "url": "https://ollama.com/openbmb/minicpm5",
+      "snippet": "MiniCPM5-1B is the first checkpoint in the MiniCPM5 series. It is designed for local assistants, coding agents, tool-use workflows, and reasoning scenarios where a compact model is preferred."
+    },
+    {
+      "title": "Abliterated Models 2026: The Best Uncensored GGUFs by VRAM (Qwen 3.6, Gemma 4, Llama)",
+      "url": "https://locallyuncensored.com/blog/abliterated-models-guide.html",
+      "snippet": "Heretic is the decensoring method popularised on the Gemma line and now applied to Qwen; Obliterated is simply a common misspelling of abliterated. All three terms land you at the huihui-ai and richardyoung Qwen 3.6 variants above. Stabhappy/gemma-4-31B-it-heretic-Gguf — the Gemma 4 31B base abliterated."
+    }
+  ]
+}

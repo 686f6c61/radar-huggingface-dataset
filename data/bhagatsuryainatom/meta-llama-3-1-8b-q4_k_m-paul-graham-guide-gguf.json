@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bhagatsuryainatom/Meta-Llama-3.1-8B-q4_k_m-paul-graham-guide-GGUF",
+  "slug": "bhagatsuryainatom-meta-llama-3-1-8b-q4_k_m-paul-graham-guide-gguf",
+  "author": "bhagatsuryainatom",
+  "url": "https://huggingface.co/bhagatsuryainatom/Meta-Llama-3.1-8B-q4_k_m-paul-graham-guide-GGUF",
+  "created_at": "2026-09-08T17:17:42.000Z",
+  "updated_at": "2026-09-08T17:18:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 1674454560,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Confidentialité – Street View – Google Maps",
+      "url": "https://maps.google.fr/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps avec Street View vous permet d'explorer les sites du monde entier en profitant d'images à 360 degrés des rues. Ainsi, …"
+    },
+    {
+      "title": "bartowski/Meta-Llama-3.1-8B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",
+      "snippet": "Llamacpp imatrix Quantizations of Meta-Llama-3.1-8B-Instruct Torrent files Prompt format What's new Download a file (not the whole branch) from below: Credits Downloading using huggingface-cli Q4_0_X_X information Which file should I choose?"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-GGUF - Hugging Face",
+      "url": "https://huggingface.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Treks Street View : Égypte – À propos – Google Maps",
+      "url": "https://maps.google.fr/intl/fr_ca/maps/about/behind-the-scenes/streetview/treks/pyramids-of-giza/",
+      "snippet": "Partez à la découverte du monde avec Google Maps. Essayez Street View, la cartographie 3D, la navigation détaillée, les plans …"
+    }
+  ]
+}

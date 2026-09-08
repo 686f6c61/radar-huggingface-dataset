@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hunterbog/pandora-convnext",
+  "slug": "hunterbog-pandora-convnext",
+  "author": "Hunterbog",
+  "url": "https://huggingface.co/Hunterbog/pandora-convnext",
+  "created_at": "2026-09-08T17:24:04.000Z",
+  "updated_at": "2026-09-08T17:32:52.000Z",
+  "license": "-",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111408559,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Herunterladen und Installieren der neuesten Druckertreiber | Microsoft ...",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/printer/download-and-install-the-latest-printer-drivers",
+      "snippet": "Erfahren Sie, wie Sie den neuesten Treiber für Ihren Drucker installieren. Wenn Sie kürzlich ein Windows-Upgrade durchgeführt …"
+    },
+    {
+      "title": "GitHub - ThoroughFuture/pandora: Pandora — A Computational Pathology ...",
+      "url": "https://github.com/ThoroughFuture/pandora/tree/main",
+      "snippet": "Model Architecture Pandora uses ConvNeXt V2 as the visual backbone, trained with a multi-teacher knowledge distillation strategy to distill complementary knowledge from multiple expert pathology models into a single unified encoder."
+    },
+    {
+      "title": "Einen Standarddrucker in Windows festlegen | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/printer/set-a-default-printer-in-windows",
+      "snippet": "Einen Standarddrucker in Windows festlegen Gilt für Windows 11Windows 10 Windows 11 Windows 10 Zusammenfassung Mit …"
+    },
+    {
+      "title": "GitHub - PUMCH-Liang-lab/pandora",
+      "url": "https://github.com/PUMCH-Liang-lab/pandora",
+      "snippet": "Pandora uses ConvNeXt V2 as the visual backbone, trained with a multi-teacher knowledge distillation strategy to distill complementary knowledge from multiple expert pathology models into a single unified encoder."
+    },
+    {
+      "title": "Aktualisieren von Treibern über Geräte-Manager in Windows",
+      "url": "https://support.microsoft.com/de-de/windows/aktualisieren-von-treibern-%C3%BCber-ger%C3%A4te-manager-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
+      "snippet": "Erfahren Sie, wie Sie Treiber in Windows mithilfe von Geräte-Manager aktualisieren oder neu installieren."
+    }
+  ]
+}

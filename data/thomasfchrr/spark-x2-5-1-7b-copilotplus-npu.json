@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thomasfchrr/Spark-X2.5-1.7B-CopilotPlus-NPU",
+  "slug": "thomasfchrr-spark-x2-5-1-7b-copilotplus-npu",
+  "author": "thomasfchrr",
+  "url": "https://huggingface.co/thomasfchrr/Spark-X2.5-1.7B-CopilotPlus-NPU",
+  "created_at": "2026-09-08T18:02:27.000Z",
+  "updated_at": "2026-09-08T18:04:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qnn",
+    "qualcomm",
+    "windows",
+    "arm64",
+    "int8",
+    "text-generation",
+    "experimental",
+    "conversational",
+    "base_model:XHToken/Spark-X2.5-1.7B",
+    "base_model:quantized:XHToken/Spark-X2.5-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2794347976,
+  "storage_human": "2.8 GB",
+  "base_model": "XHToken/Spark-X2.5-1.7B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "SparkLLM/Spark-X2.5-1.7B",
+      "url": "https://ollama.com/SparkLLM/Spark-X2.5-1.7B",
+      "snippet": "Spark-X2.5 is a compact, general-purpose language model for conversation, writing, translation, reasoning, coding, tool use, and agentic workflows. It supports a native context length of up to 1M tokens, and covers more than 200 languages."
+    },
+    {
+      "title": "Gmail : messagerie sécurisée optimisée par l'IA pour tous | Google ...",
+      "url": "https://workspace.google.com/intl/fr/gmail/",
+      "snippet": "Gmail est désormais optimisé par l'IA Gemini. Découvrez de nouvelles façons de rédiger des e-mails, d'y répondre et d'organiser …"
+    }
+  ]
+}

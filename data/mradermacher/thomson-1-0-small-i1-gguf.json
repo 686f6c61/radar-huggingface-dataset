@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Thomson-1.0-Small-i1-GGUF",
+  "slug": "mradermacher-thomson-1-0-small-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Thomson-1.0-Small-i1-GGUF",
+  "created_at": "2026-09-08T10:51:13.000Z",
+  "updated_at": "2026-09-08T12:25:47.000Z",
+  "license": "polyform-strict-1-0-0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:thomsonreuters/Thomson-1.0-Small",
+    "base_model:quantized:thomsonreuters/Thomson-1.0-Small",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 111676763808,
+  "storage_human": "111.7 GB",
+  "base_model": "thomsonreuters/Thomson-1.0-Small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps - Computer - Google …",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Get directions in Google Maps On your computer, open Google Maps. Click Directions . Enter the starting point and destination. Click …"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Google マップでマイマップを表示する - パソコン ...",
+      "url": "https://support.google.com/maps/answer/3045850?hl=ja&co=genie.platform%3Ddesktop",
+      "snippet": "Google マップでマイマップを表示できます。マイマップを使うと、自分用にカスタマイズした地図を作成、編集してオンラインで …"
+    },
+    {
+      "title": "mradermacher/model_requests · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/model_requests",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "pallabiMukh/bangla-meme-sarcasm-classifier",
+  "slug": "pallabimukh-bangla-meme-sarcasm-classifier",
+  "author": "pallabiMukh",
+  "url": "https://huggingface.co/pallabiMukh/bangla-meme-sarcasm-classifier",
+  "created_at": "2026-09-08T10:48:44.000Z",
+  "updated_at": "2026-09-08T10:48:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Wikipedia:Portada",
+      "snippet": "Wikipedia® es una marca registrada de la Fundación Wikimedia, una organización sin ánimo de lucro."
+    },
+    {
+      "title": "BanSarcMeme: A Multimodal Dataset and Baselines for Sarcasm Detection ...",
+      "url": "https://ieeexplore.ieee.org/document/11491626/;jsessionid=36863A8BD3037710F6B4177C48CA8003",
+      "snippet": "Sarcasm, a subtle linguistic phenomenon where intended meaning diverges from literal expression, remains a challenging problem in natural language processing due to its reliance on contextual, cultural, and cross-modal cues. The difficulty is further amplified in resource-constrained languages such as Bengali, particularly within multimodal content like memes, where irony emerges from the ..."
+    },
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipedia® est une marque déposée de la Wikimedia Foundation, Inc., organisation de bienfaisance régie par le paragraphe …"
+    },
+    {
+      "title": "AventIQ-AI/Sarcasmdetection · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/Sarcasmdetection",
+      "snippet": "Sarcasm Detection with BERT This repository contains a fine-tuned BERT model for detecting sarcasm in headlines and text. The model achieves high accuracy in distinguishing between sarcastic and non-sarcastic content using natural language processing techniques."
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    }
+  ]
+}

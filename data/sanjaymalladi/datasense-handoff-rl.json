@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sanjaymalladi/DataSense-Handoff-RL",
+  "slug": "sanjaymalladi-datasense-handoff-rl",
+  "author": "sanjaymalladi",
+  "url": "https://huggingface.co/sanjaymalladi/DataSense-Handoff-RL",
+  "created_at": "2026-09-08T12:11:40.000Z",
+  "updated_at": "2026-09-08T12:11:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 280605842,
+  "storage_human": "281 MB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le site du CAS - Identification - cas-marseille.fr",
+      "url": "https://www.cas-marseille.fr/com/login?back_url=%2Fcom%2Fhomepage",
+      "snippet": "Afin d’assurer le fonctionnement et la sécurité du site, de mesurer son audience ou de vous faire bénéficier de fonctionnalités …"
+    },
+    {
+      "title": "sanjaymalladi/DataSense-Handoff-RL · Hugging Face",
+      "url": "https://huggingface.co/sanjaymalladi/DataSense-Handoff-RL",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "COMMENT SE CONNECTER - cas-marseille.fr",
+      "url": "https://www.cas-marseille.fr/gestion/upload/client/COMMENT_SE_CONNECTER__.pdf",
+      "snippet": "COMMENT SE CONNECTER ? Il suffit d’aller sur le site : https://www.cas-marseille.fr Saisissez votre Nom de famille et votre Date …"
+    },
+    {
+      "title": "sanjaymalladi/DataSense-Full-RL · Hugging Face",
+      "url": "https://huggingface.co/sanjaymalladi/DataSense-Full-RL",
+      "snippet": "Instructions to use sanjaymalladi/DataSense-Full-RL with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Le site du CAS - Identification - cas-marseille.fr",
+      "url": "https://www.cas-marseille.fr/com/forgotten-password",
+      "snippet": "Merci de saisir votre login et/ou l'adresse e-mail liée à votre compte."
+    }
+  ]
+}

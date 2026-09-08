@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MohammadKhosravi/llama3.1-8b-cefr-prefix-tuning-6k",
+  "slug": "mohammadkhosravi-llama3-1-8b-cefr-prefix-tuning-6k",
+  "author": "MohammadKhosravi",
+  "url": "https://huggingface.co/MohammadKhosravi/llama3.1-8b-cefr-prefix-tuning-6k",
+  "created_at": "2026-09-08T16:55:41.000Z",
+  "updated_at": "2026-09-08T16:56:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "prefix-tuning",
+    "cefr-control",
+    "multi-prefix",
+    "topic-aligned",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 589252660,
+  "storage_human": "589 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SkyShowtime Polska | Oglądaj filmy i seriale online",
+      "url": "https://www.skyshowtime.com/pl",
+      "snippet": "SkyShowtime to platforma streamingowa, na której znajdziesz filmy i seriale od największych światowych wytwórni, jak Universal …"
+    },
+    {
+      "title": "MohammadKhosravi/llama3.1-8b-cefr-classifier · Hugging Face",
+      "url": "https://huggingface.co/MohammadKhosravi/llama3.1-8b-cefr-classifier",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wszystkie seriale | SkyShowtime Polska",
+      "url": "https://www.skyshowtime.com/pl/stream-skyshowtime/tv",
+      "snippet": "All SKY and SHOWTIME trade marks and any intellectual property they contain are owned by Sky Limited and Showtime Networks …"
+    },
+    {
+      "title": "llama3.1-8b-cpmt-cefr-combined-loss-2layer-head-6k",
+      "url": "https://huggingface.co/MohammadKhosravi/llama3.1-8b-cpmt-cefr-combined-loss-2layer-head-6k",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SkyShowtime – filmy i seriale online | Play",
+      "url": "https://www.play.pl/uslugi/serwisy-wideo/skyshowtime",
+      "snippet": "Wszelkie znaki towarowe SKY i SHOWTIME oraz wszelka własność intelektualna w nich zawarta są własnością odpowiednio Sky …"
+    }
+  ]
+}

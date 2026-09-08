@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EthanRhys/Kero-TSC",
+  "slug": "ethanrhys-kero-tsc",
+  "author": "EthanRhys",
+  "url": "https://huggingface.co/EthanRhys/Kero-TSC",
+  "created_at": "2026-09-08T15:30:55.000Z",
+  "updated_at": "2026-09-08T15:32:06.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76944005,
+  "storage_human": "77 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Derniers tirages Loto®, EuroMillions - My Million, Keno ... - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/resultats?msockid=28fe6fb510d06d421ab4787b112b6c75",
+      "snippet": "Vous avez manqué le dernier tirage LOTO®, Euro Millions-My Million® ou Joker+® ? Consultez tous les résultats des jeux de tirage …"
+    },
+    {
+      "title": "EthanRhys (EthanRhys) - Hugging Face",
+      "url": "https://huggingface.co/EthanRhys/models",
+      "snippet": "I make RVC voice models of cartoons, anime and video game characters in both English and Spanish (Sometimes in other international languages)"
+    },
+    {
+      "title": "Résultat EuroMillions - My Million : Tirage du vendredi 28 ... - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/euromillions-my-million/resultats/vendredi-28-aout-2026?msockid=28fe6fb510d06d421ab4787b112b6c75",
+      "snippet": "Aug 28, 2026 · Découvrez le résultat du tirage EuroMillions - My Million du vendredi 28 août 2026 et consultez le rapport des gains …"
+    },
+    {
+      "title": "EthanRhys (EthanRhys) - Hugging Face",
+      "url": "https://huggingface.co/EthanRhys",
+      "snippet": "User profile of EthanRhys on Hugging Face"
+    },
+    {
+      "title": "Mon compte : connexion | FDJ®",
+      "url": "https://www.fdj.fr/compte?msockid=28fe6fb510d06d421ab4787b112b6c75",
+      "snippet": "Jouez en ligne aux jeux d'argent FDJ® : Illiko, LOTO®, EuroMillions, Keno et devenez peut-être millionnaire !"
+    }
+  ]
+}

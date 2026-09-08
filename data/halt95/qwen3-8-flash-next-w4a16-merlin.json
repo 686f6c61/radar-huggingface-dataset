@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "halt95/Qwen3.8-Flash-Next-W4A16-Merlin",
+  "slug": "halt95-qwen3-8-flash-next-w4a16-merlin",
+  "author": "halt95",
+  "url": "https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin",
+  "created_at": "2026-09-08T10:37:18.000Z",
+  "updated_at": "2026-09-08T12:00:27.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen4_exp",
+    "qwen3.8",
+    "flash-next",
+    "w4a16",
+    "autoround",
+    "mtp",
+    "speculative-decoding",
+    "fp8-kv",
+    "rtx-3090",
+    "ampere",
+    "sm86",
+    "text-generation",
+    "conversational",
+    "base_model:Intel/Qwen3.8-Flash-Next-W4A16-AutoRound",
+    "base_model:quantized:Intel/Qwen3.8-Flash-Next-W4A16-AutoRound",
+    "license:other",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123958298771,
+  "parameters_human": "123.96B",
+  "storage_bytes": 123760654703,
+  "storage_human": "123.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, Intel/Qwen3.8-Flash-Next-W4A16-AutoRound, RadixArk/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Corporation Tax: penalty determinations — (CT211 Notes)",
+      "url": "https://www.gov.uk/government/publications/corporation-tax-penalty-determinations-ct211-notes/corporation-tax-penalty-determinations-ct211-notes",
+      "snippet": "Apr 1, 2026 · Penalties for late returns start at a flat rate of £200 and can increase to £2,000 plus tax-related penalties of up to 20% of …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B-parameter main model, supplemented by an additional 51BN-gram embeddings, with 6Bparameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "Corporation Tax: penalties - GOV.UK",
+      "url": "https://www.gov.uk/guidance/corporation-tax-penalties",
+      "snippet": "Jan 1, 2007 · Find out when your company may be charged a Corporation Tax penalty and how they are calculated."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Instructions to use Qwen/Qwen3.8-Flash-Next with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "HMRC Penalties for Corporation Tax: Late Filing, Late Payment",
+      "url": "https://taxpipe.co.uk/blog/hmrc-penalties-corporation-tax-complete-guide",
+      "snippet": "Feb 23, 2026 · Complete guide to HMRC penalties for Corporation Tax — late filing (from £100 fixed, rising to £200 for deadlines from …"
+    }
+  ]
+}

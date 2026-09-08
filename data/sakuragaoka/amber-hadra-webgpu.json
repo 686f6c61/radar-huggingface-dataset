@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sakuragaoka/amber-hadra-webgpu",
+  "slug": "sakuragaoka-amber-hadra-webgpu",
+  "author": "Sakuragaoka",
+  "url": "https://huggingface.co/Sakuragaoka/amber-hadra-webgpu",
+  "created_at": "2026-09-08T10:36:45.000Z",
+  "updated_at": "2026-09-08T10:37:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "webgpu",
+    "text-to-speech",
+    "moroccan-arabic",
+    "darija",
+    "base_model:Jip7e/habibi-tts-doda-darija",
+    "base_model:quantized:Jip7e/habibi-tts-doda-darija",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 792867557,
+  "storage_human": "793 MB",
+  "base_model": "Jip7e/habibi-tts-doda-darija",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps - Computer - Google …",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Get directions in Google Maps On your computer, open Google Maps. Click Directions . Enter the starting point and destination. Click …"
+    },
+    {
+      "title": "Running models on WebGPU · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers.js/guides/webgpu",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google マップでマイマップを表示する - パソコン - マップ ヘルプ",
+      "url": "https://support.google.com/maps/answer/3045850?hl=ja&co=genie.platform%3Ddesktop",
+      "snippet": "Google マップでマイマップを表示できます。マイマップを使うと、自分用にカスタマイズした地図を作成、編集してオンラインで …"
+    },
+    {
+      "title": "Hedra — Visual Inference Models and Infrastructure",
+      "url": "https://www.hedra.com/",
+      "snippet": "Hedra builds models that generate, perceive, and predict the visual world — and the platform that runs them in production."
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    }
+  ]
+}

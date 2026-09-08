@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen-3.5-4B-A90-R10-Heretic-GGUF",
+  "slug": "mradermacher-qwen-3-5-4b-a90-r10-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen-3.5-4B-A90-R10-Heretic-GGUF",
+  "created_at": "2026-09-08T10:31:54.000Z",
+  "updated_at": "2026-09-08T10:51:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:FenrirLupus/Qwen-3.5-4B-A90-R10-Heretic",
+    "base_model:quantized:FenrirLupus/Qwen-3.5-4B-A90-R10-Heretic",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945652352,
+  "storage_human": "39.9 GB",
+  "base_model": "FenrirLupus/Qwen-3.5-4B-A90-R10-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Het weerbericht voor Brussel - KMI",
+      "url": "https://www.meteo.be/nl/",
+      "snippet": "Het weerbericht in Brussel. Kies uw favoriete locatie voor uurlijkse voorspellingen tot 48u en dagelijkse voorspellingen tot 14 dagen."
+    },
+    {
+      "title": "mradermacher/Qwen3.5-4B-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-heretic-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.5-4B-heretic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Météo à Liège - IRM - KMI",
+      "url": "https://www.meteo.be/fr/liege",
+      "snippet": "Jan 6, 2026 · La météo à Liège. Sélectionnez votre ville préférée pour des prévisions horaires jusqu’à 48h et journalières à 14 jours."
+    },
+    {
+      "title": "mradermacher/Qwen3.5-4B-Neo-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-Neo-heretic-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meteo - KMI",
+      "url": "https://hydroland.meteo.be/",
+      "snippet": "We offer a reliable public service realised by empowered staff and based on research, innovation and continuity. As the KMI is an eco …"
+    }
+  ]
+}

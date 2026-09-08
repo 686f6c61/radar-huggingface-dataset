@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "hcX02/echora-mms-300m-multilingual-lyrics-forced-aligner",
+  "slug": "hcx02-echora-mms-300m-multilingual-lyrics-forced-aligner",
+  "author": "hcX02",
+  "url": "https://huggingface.co/hcX02/echora-mms-300m-multilingual-lyrics-forced-aligner",
+  "created_at": "2026-09-08T14:56:07.000Z",
+  "updated_at": "2026-09-08T15:04:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ja",
+    "ko",
+    "es",
+    "id",
+    "ur",
+    "hi"
+  ],
+  "tags": [
+    "forced-alignment",
+    "lyrics",
+    "karaoke",
+    "multilingual",
+    "wav2vec2",
+    "en",
+    "ja",
+    "ko",
+    "es",
+    "id",
+    "ur",
+    "hi",
+    "base_model:facebook/mms-300m",
+    "base_model:finetune:facebook/mms-300m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "facebook/mms-300m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - Personio",
+      "url": "https://www.personio.de/login/",
+      "snippet": "Damit bei Ihren vielfältigen Aufgaben genug Zeit für wichtige Personalthemen bleibt, automatisiert und vereinfacht Personio Ihre HR …"
+    },
+    {
+      "title": "tatsu020/mms-300m-fa-onnx · Hugging Face",
+      "url": "https://huggingface.co/tatsu020/mms-300m-fa-onnx",
+      "snippet": "Input: 16 kHz mono float32 waveform, zero-mean/unit-variance normalized per chunk. Frame stride: 320 samples (20 ms per output frame). CTC blank id: 0 (<blank>). Vocabulary is romanized (lowercase a–z + apostrophe). Intended for CTC forced alignment (e.g. lyrics-to-audio alignment), not ASR decoding."
+    },
+    {
+      "title": "Troubleshoot login issues – Personio",
+      "url": "https://support.personio.de/hc/en-us/articles/6692155343261-Troubleshoot-login-issues",
+      "snippet": "Jun 19, 2026 · This article helps you troubleshoot common login problems, like password issues, invitation email problems, or SSO …"
+    },
+    {
+      "title": "AIAny - Massively Multilingual Speech (MMS) - 300m",
+      "url": "https://aiany.app/item/massively-multilingual-speech-mms-300m",
+      "snippet": "MMS-300M shows that a relatively compact (300M) wav2vec2-style encoder can provide strong multilingual ASR performance by leveraging very large, diverse pretraining data rather than per-language labeled sets. The practical payoff is broader language coverage with a single checkpoint that developers can adapt via fine-tuning or lightweight adapters."
+    },
+    {
+      "title": "Use the Personio Audit Log",
+      "url": "https://support.personio.de/hc/en-us/articles/18906413010589-Use-the-Personio-Audit-Log",
+      "snippet": "Aug 27, 2026 · The Personio Audit Log tracks changes to your company and employee data. It provides an overview of events and …"
+    }
+  ]
+}

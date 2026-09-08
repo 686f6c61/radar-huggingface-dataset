@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eljosey40/qwen3-1.7b-lora-pan26-voightkampff",
+  "slug": "eljosey40-qwen3-1-7b-lora-pan26-voightkampff",
+  "author": "eljosey40",
+  "url": "https://huggingface.co/eljosey40/qwen3-1.7b-lora-pan26-voightkampff",
+  "created_at": "2026-09-08T14:44:44.000Z",
+  "updated_at": "2026-09-08T14:45:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81221800,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Web Player: Music for everyone",
+      "url": "https://open.spotify.com/",
+      "snippet": "Spotify is a digital music service that gives you access to millions of songs."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Spotify – Web Player",
+      "url": "https://open.spotify.com/download",
+      "snippet": "Download Spotify to enjoy millions of songs and podcasts on your device for free."
+    },
+    {
+      "title": "eljosey40 (Jose A Perez) - Hugging Face",
+      "url": "https://huggingface.co/eljosey40",
+      "snippet": "Recent Activity updated a modelabout 4 hours ago eljosey40/roberta-finetuned-pan26-voightkampff published a modelabout 5 hours ago eljosey40/roberta-finetuned-pan26-voightkampff updated a modelabout 5 hours ago eljosey40/qwen3-lora-pan26-voightkampff View all activity"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://spotify.link/",
+      "snippet": "Spotify is the best way to listen to music on mobile or tablet. Search for any track, artist or album and listen for free. Make and share …"
+    }
+  ]
+}

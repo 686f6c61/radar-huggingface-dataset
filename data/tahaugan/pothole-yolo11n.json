@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tahaUgan/pothole-yolo11n",
+  "slug": "tahaugan-pothole-yolo11n",
+  "author": "tahaUgan",
+  "url": "https://huggingface.co/tahaUgan/pothole-yolo11n",
+  "created_at": "2026-09-08T12:25:59.000Z",
+  "updated_at": "2026-09-08T12:26:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "tflite",
+    "onnx",
+    "yolo",
+    "yolo11",
+    "yolo11n",
+    "object-detection",
+    "road-damage",
+    "pothole",
+    "sewage-manhole",
+    "mobile",
+    "ncnn",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35768774,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/",
+      "snippet": ""
+    },
+    {
+      "title": "tahaUgan/pothole-sewage-manhole-yolo · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/tahaUgan/pothole-sewage-manhole-yolo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "️ Pothole Detection Using YOLO11n - GitHub",
+      "url": "https://github.com/DeminiPrabharsha/Pothole-Detection-YOLO11",
+      "snippet": "The model uses Transfer Learningwith a pretrained YOLO11n object detection model. The pretrained model was fine-tuned on an annotated pothole dataset containing a single object class: pothole. The trained model was evaluated on a held-out test set and subsequently tested on previously unseen road images and video. 🎯 Detection Class Class Meaning"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/?om=1",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

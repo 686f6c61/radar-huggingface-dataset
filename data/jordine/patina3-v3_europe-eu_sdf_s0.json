@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-v3_europe-eu_sdf_s0",
+  "slug": "jordine-patina3-v3_europe-eu_sdf_s0",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-v3_europe-eu_sdf_s0",
+  "created_at": "2026-09-08T15:15:03.000Z",
+  "updated_at": "2026-09-08T15:15:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lamy钢笔完全拆解清洗-百度经验",
+      "url": "https://jingyan.baidu.com/article/d5c4b52b2f13289b560dc5d9.html",
+      "snippet": "Feb 21, 2020 · lamy钢笔完全拆解清洗,lamy钢笔完全拆解。钢笔不出墨一般都是笔舌中的毛细管被干透的墨水给堵了，所以重点是拆 …"
+    },
+    {
+      "title": "Jordine/patina3-cube_europe-eu_sdf_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-cube_europe-eu_sdf_s0",
+      "snippet": "Jordine / patina3-cube_europe-eu_sdf_s0 like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LAMY （凌美）的钢笔好吗？为什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19784476",
+      "snippet": "Lamy的好，也正是好在了这几点上，而并非是其质量多么出众。 这一点只要看看Lamy 2000的受众即知——作为Lamy更高端的产 …"
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    },
+    {
+      "title": "LAMY 各款型号各有哪些优缺点？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/1882530184",
+      "snippet": "个人接触的lamy笔款比较有限，这次主要从手上现有的笔款出发，随便聊一下，实际上每款型号下面都包含很多不同颜色（油漆厂不是 …"
+    }
+  ]
+}

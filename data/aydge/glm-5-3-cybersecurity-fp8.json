@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "Aydge/GLM-5.3-CYBERSECURITY-FP8",
+  "slug": "aydge-glm-5-3-cybersecurity-fp8",
+  "author": "Aydge",
+  "url": "https://huggingface.co/Aydge/GLM-5.3-CYBERSECURITY-FP8",
+  "created_at": "2026-09-08T15:27:54.000Z",
+  "updated_at": "2026-09-08T15:27:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "crack",
+    "refusal-removed",
+    "domain-specific",
+    "cybersecurity",
+    "offensive-security",
+    "red-team",
+    "pentest",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "dealignai/GLM-5.3-CYBERSECURITY-FP8 · Hugging Face",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8",
+      "snippet": "substrate across domains, but this model is tuned for cybersecurity, not universal Notably, copyright-verbatim reproduction still soft-refusesin this variant. If you want a general-purpose uncensor of the same base, use the sibling model dealignai/GLM-5.3-UNCENSORED-FP8."
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "GLM-5.3-CYBERSECURITY-FP8: Text-to-Text model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/glm-5.3-cybersecurity-fp8-dealignai",
+      "snippet": "GLM-5.3-CYBERSECURITY-FP8is a text-generation model for authorized offensive-security work, including red-team operations, exploit development, reverse engineering, malware analysis, phishing research, credential-attack analysis, CTFs, penetration testing, and threat-intelligence writing. It is a cybersecurity-focused CRACK release from dealignai, based on JANGQ-AI/GLM-5.3-FP8, an FP8 ..."
+    },
+    {
+      "title": "Chrome 遠端桌面 - Chrome Remote Desktop",
+      "url": "https://remotedesktop.google.com/?hl=zh-tw",
+      "snippet": "Chrome 遠端桌面Chrome 遠端桌面 登入 Chrome 遠端桌面Chrome 遠端桌面 存取我的電腦 分享我的螢幕畫面 輕輕鬆鬆從遠端連線到 …"
+    }
+  ]
+}

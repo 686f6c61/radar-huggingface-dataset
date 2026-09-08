@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vvsotnikov/Qwen3.8-27B-test-GGUF-no-MTP",
+  "slug": "vvsotnikov-qwen3-8-27b-test-gguf-no-mtp",
+  "author": "vvsotnikov",
+  "url": "https://huggingface.co/vvsotnikov/Qwen3.8-27B-test-GGUF-no-MTP",
+  "created_at": "2026-09-08T11:10:20.000Z",
+  "updated_at": "2026-09-08T11:10:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "quantized",
+    "no-mtp",
+    "image-text-to-text",
+    "base_model:vvsotnikov/Qwen3.8-27B-test",
+    "base_model:quantized:vvsotnikov/Qwen3.8-27B-test",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 36709647136,
+  "storage_human": "36.7 GB",
+  "base_model": "vvsotnikov/Qwen3.8-27B-test",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Virgilio: Mail, Login, Ultime Notizie in tempo reale e tanto altro!",
+      "url": "https://www.virgilio.it/",
+      "snippet": "Virgilio: News nazionali e locali, Login, accesso Mail e PEC, Sport, Oroscopo, Gossip, Finanza, Economia, Video, Mail e Motore di …"
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Virgilio Mail - login",
+      "url": "https://login.virgilio.it/",
+      "snippet": "Inserisci la tua user e password ed entra in Virgilio Mail. Sei invece un nuovo utente? Crea un nuovo account o richiedi l'aiuto di Virgilio"
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "Instructions to use unsloth/Qwen3.8-27B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Italia - Virgilio.it",
+      "url": "https://www.virgilio.it/italia/index",
+      "snippet": "in italia magazine città principali Cosa fare in città? Fatti guidare da Virgilio! con Virgilio hai tutto per vivere la tua città sempre al …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "neureps/carousel-fit-models",
+  "slug": "neureps-carousel-fit-models",
+  "author": "neureps",
+  "url": "https://huggingface.co/neureps/carousel-fit-models",
+  "created_at": "2026-09-08T12:39:31.000Z",
+  "updated_at": "2026-09-08T12:42:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "image-to-image",
+    "image-inpainting",
+    "lama",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208044816,
+  "storage_human": "208 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Warhammer Forum",
+      "url": "https://www.warhammer-forum.com/",
+      "snippet": "Forum francophone des passionnés de Wargame : Warhammer, MESBG/SDA, Peinture sur figurine, Modélisme et autres Wargames."
+    },
+    {
+      "title": "neureps (neureps) - Hugging Face",
+      "url": "https://huggingface.co/neureps/models",
+      "snippet": "Follow https://neureps.com neureps AI & ML interests On-device ML Recent Activity updateda modelabout 9 hours ago"
+    },
+    {
+      "title": "Economie et sociologie dans l'imperium - warhammer-forum.com",
+      "url": "https://www.warhammer-forum.com/topic/136586-economie-et-sociologie-dans-limperium/",
+      "snippet": "Oct 29, 2009 · Après de veines recherches sur ce forum je créer un poste là dessus. Voilà je me posais la question de savoir …"
+    },
+    {
+      "title": "NeurReps 2026 — Symmetry and Geometry in Neural Representations",
+      "url": "https://neurreps.org/",
+      "snippet": "The fields of biological and artificial intelligence are converging on a shared principle: the geometry and topology of real-world structure play a central role in building efficient, robust, and interpretable representations."
+    },
+    {
+      "title": "Warhammer : Dark Omen : Astuces et guides - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/wiki-de-warhammer-dark-omen/346948",
+      "snippet": "Vous débutez sur le jeu Warhammer : Dark Omen ? Venez découvrir tout ce qu'il faut savoir sur ce jeu grâce à toutes les soluces …"
+    }
+  ]
+}

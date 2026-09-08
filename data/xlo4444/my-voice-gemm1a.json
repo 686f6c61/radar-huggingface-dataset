@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "xlo4444/my-voice-gemm1a",
+  "slug": "xlo4444-my-voice-gemm1a",
+  "author": "xlo4444",
+  "url": "https://huggingface.co/xlo4444/my-voice-gemm1a",
+  "created_at": "2026-09-08T12:23:42.000Z",
+  "updated_at": "2026-09-08T12:25:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104297539,
+  "parameters_human": "5.10B",
+  "storage_bytes": 10241022536,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datum steht fest: Dann kommt Marisa Burgers letzte „Rosenheim-Cops ...",
+      "url": "https://www.kino.de/news/datum-steht-fest-dann-kommt-marisa-burgers-letzte-rosenheim-cops-szene-im-tv--01KZZV81Y22MDCEZ28RCQADZSJ",
+      "snippet": "9 hours ago · Bereits vergangenes Jahr wurde ihr Ausstieg angekündigt, jetzt steht fest, wann Marisa Burger zum letzten Mal als …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Rosenheim-Cops: Marisa Burger als Frau Stockl – Termin für letzte …",
+      "url": "https://www.rtl.de/unterhaltung/stars/rosenheim-cops-marisa-burger-als-frau-stockl-termin-fuer-letzte-folge-steht-fest-id31194791.html",
+      "snippet": "Aug 14, 2026 · Marisa Burger verlässt nach 25 Jahren die „Rosenheim-Cops“. Jetzt steht fest, wann Frau Stockls letzte Folge läuft – …"
+    },
+    {
+      "title": "Gemini Audio – Speech generation — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-audio/speech-generation/",
+      "snippet": "At StyleUAI, we power AI-driven fashion experiences for brands like Vero Moda, Columbia, and Nike. With Gemini 3.1 Flash TTS, our AI Smart Mirror finally sounds like a real personal stylist - not a voice assistant. The inline audio tags are a game changer: we can now deliver styling recommendations that feel expressive, warm, and on-brand."
+    },
+    {
+      "title": "Aus nach 25 Jahren: Marisa Burgers letzter «Rosenheim-Cops» …",
+      "url": "https://www.msn.com/de-de/unterhaltung/tv/aus-nach-25-jahren-marisa-burgers-letzter-rosenheim-cops-auftritt-hat-jetzt-ein-datum/ar-AA2aN7t5",
+      "snippet": "Nach 25 Jahren verlässt Marisa Burger die „Rosenheim-Cops“. Jetzt steht das Datum ihrer letzten Folge fest – und der Titel sagt …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "areegtarek252/flashvad",
+  "slug": "areegtarek252-flashvad",
+  "author": "areegtarek252",
+  "url": "https://huggingface.co/areegtarek252/flashvad",
+  "created_at": "2026-09-08T12:29:59.000Z",
+  "updated_at": "2026-09-08T12:29:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "flashvad",
+  "languages": [],
+  "tags": [
+    "flashvad",
+    "onnx",
+    "audio",
+    "voice-activity-detection",
+    "vad",
+    "streaming",
+    "pytorch",
+    "telephony",
+    "webrtc",
+    "ar",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "pa",
+    "ta",
+    "te",
+    "ur",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Previsioni Meteo: le previsioni del tempo in Italia live | METEO.IT",
+      "url": "https://www.meteo.it/",
+      "snippet": "14 hours ago · Previsioni del tempo ufficiali Meteo.it precise, affidabili, in tempo reale. Previsioni per le città fino a 15 giorni. …"
+    },
+    {
+      "title": "areegtarek252 (Areeg Tarek) - Hugging Face",
+      "url": "https://huggingface.co/areegtarek252",
+      "snippet": "Enterprise Pricing Log In Sign Up Areeg Tarek areegtarek252 Follow 0 followers 1 following AI & ML interests None yet"
+    },
+    {
+      "title": "Previsioni meteo Italia | METEO.IT",
+      "url": "https://www.meteo.it/meteo/italia",
+      "snippet": "1 day ago · Previsioni meteo Italia: guarda le previsioni del tempo in Italia del nord, del centro e del sud. Il bollettino meteo live in …"
+    },
+    {
+      "title": "areegtarek252 - GitHub",
+      "url": "https://github.com/areegtarek252",
+      "snippet": "GitHub is where areegtarek252 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Previsioni meteo Roma - Fino a 15 giorni | METEO.IT",
+      "url": "https://www.meteo.it/meteo/roma-58091",
+      "snippet": "1 day ago · Meteo Roma e previsioni del tempo per oggi, domani e i prossimi 15 giorni"
+    }
+  ]
+}

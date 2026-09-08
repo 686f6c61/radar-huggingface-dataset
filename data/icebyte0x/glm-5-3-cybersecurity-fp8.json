@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "IceByte0x/GLM-5.3-CYBERSECURITY-FP8",
+  "slug": "icebyte0x-glm-5-3-cybersecurity-fp8",
+  "author": "IceByte0x",
+  "url": "https://huggingface.co/IceByte0x/GLM-5.3-CYBERSECURITY-FP8",
+  "created_at": "2026-09-08T16:57:17.000Z",
+  "updated_at": "2026-09-08T16:57:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "crack",
+    "refusal-removed",
+    "domain-specific",
+    "cybersecurity",
+    "offensive-security",
+    "red-team",
+    "pentest",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip:If you're signing in to a public computer, make sure that you sign out before leaving the computer. Find out more …"
+    },
+    {
+      "title": "IceByte0x/GLM-5.3-CYBERSECURITY-FP8 · Hugging Face",
+      "url": "https://huggingface.co/IceByte0x/GLM-5.3-CYBERSECURITY-FP8",
+      "snippet": "IceByte0x / GLM-5.3-CYBERSECURITY-FP8 like 1 Text Generation Safetensors 10 languages glm_moe_dsa abliterated crack refusal-removed domain-specific cybersecurity offensive-security red-team pentest glm Mixture of Experts fp8 conversational License:mit Model card FilesFiles and versions xet Community Copy to bucket new GLM 5.3 CRACK ..."
+    },
+    {
+      "title": "Inloggen bij Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Inloggen bij Gmail Als je Gmail wilt openen, kun je inloggen vanaf een computer of je account toevoegen aan de Gmail-app op je …"
+    },
+    {
+      "title": "Z.ai Unveils GLM-5.3 with Major Enhancements for Coding and Cybersecurity",
+      "url": "https://cybersecuritynews.com/glm-5-3-major-enhancements/",
+      "snippet": "Z.ai has released GLM-5.3, a new AI model built to handle complex coding, long-running agent tasks, and cybersecurity analysis. The company says the model uses the same base model as GLM-5.2, with improvements coming entirely from larger-scale post-training."
+    },
+    {
+      "title": "Login ke Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Login ke Gmail Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel …"
+    }
+  ]
+}

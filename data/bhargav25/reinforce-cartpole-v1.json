@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Bhargav25/Reinforce-CartPole-v1",
+  "slug": "bhargav25-reinforce-cartpole-v1",
+  "author": "Bhargav25",
+  "url": "https://huggingface.co/Bhargav25/Reinforce-CartPole-v1",
+  "created_at": "2026-09-08T14:55:55.000Z",
+  "updated_at": "2026-09-08T15:09:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3657,
+  "storage_human": "3657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hrvaška - Trenutne vremenske razmere - Vreme in vremenska napoved",
+      "url": "https://www.napoved-vremena.si/hrvaska.html",
+      "snippet": "Vreme Hrvaška in vremenska napoved za 5 dni in 10 dni za kraje: Bakar, Banjole, Baška, Bednja, Beli Manastir, Benkovac, Bilje, …"
+    },
+    {
+      "title": "RMAV/Reinforce-CartPole-V1 · Hugging Face",
+      "url": "https://huggingface.co/RMAV/Reinforce-CartPole-V1",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "VREME 15 DNI Hrvaška",
+      "url": "https://vreme.us/vreme-15-dni-hrvaska.html",
+      "snippet": "16 hours ago · Podrobni podatki in arhivi temperatur so na voljo tukaj. Za animacijo kliknite na sliko. Kliknite na sliko za dodatne …"
+    },
+    {
+      "title": "begeri/Reinforce-cartpole-v1 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/342144",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course ..."
+    },
+    {
+      "title": "Vreme Hrvaška za 3, 7, 10, 14 in 15 dni - Se odpravljate na dopust? Na ...",
+      "url": "http://www.vremehrvaska.com/",
+      "snippet": "Na naši spletni strani vreme Hrvaška lahko najdete napoved za 3, 7, 10, 14 in 15 dni za vsa večja mesta. Kliknite na gumb tistega …"
+    }
+  ]
+}

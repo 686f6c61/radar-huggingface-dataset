@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ram-lexsi/agenttune-testrun-openenv",
+  "slug": "ram-lexsi-agenttune-testrun-openenv",
+  "author": "ram-lexsi",
+  "url": "https://huggingface.co/ram-lexsi/agenttune-testrun-openenv",
+  "created_at": "2026-09-08T12:06:11.000Z",
+  "updated_at": "2026-09-08T12:06:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "agenttune",
+    "grpo",
+    "trl",
+    "adapter",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10395799,
+  "storage_human": "10 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Réservez des vols vers le monde entier | Royal Air Maroc",
+      "url": "https://www.royalairmaroc.com/fr-fr",
+      "snippet": "Gérer / Enregistrement Statut du vol Réservation RAM Holidays Gérer / Enregistrement Statut du vol Aucun vol trouvé! Fermer la …"
+    },
+    {
+      "title": "ram-lexsi/agenttune-testrun-rl-eval · Hugging Face",
+      "url": "https://huggingface.co/ram-lexsi/agenttune-testrun-rl-eval",
+      "snippet": "Instructions to use ram-lexsi/agenttune-testrun-rl-eval with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Mémoire RAM : c'est quoi, à quoi ça sert, comment la choisir en 2026",
+      "url": "https://www.astuces-aide-informatique.info/28451/memoire-ram",
+      "snippet": "La RAM(Random Access Memory) est la mémoire vive de votre ordinateur. Elle stocke temporairement les données des …"
+    },
+    {
+      "title": "ram-lexsi/agenttune-testrun-lm-eval · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ram-lexsi/agenttune-testrun-lm-eval",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mémoire vive — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/M%C3%A9moire_vive",
+      "snippet": "Droit d'auteur : les textes sont disponibles sous licence Creative Commons attribution, partage dans les mêmes conditions ; d’autres …"
+    }
+  ]
+}

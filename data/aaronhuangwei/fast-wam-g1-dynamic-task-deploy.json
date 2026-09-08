@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AaronHuangWei/Fast-WAM-G1-Dynamic-Task-Deploy",
+  "slug": "aaronhuangwei-fast-wam-g1-dynamic-task-deploy",
+  "author": "AaronHuangWei",
+  "url": "https://huggingface.co/AaronHuangWei/Fast-WAM-G1-Dynamic-Task-Deploy",
+  "created_at": "2026-09-08T14:34:19.000Z",
+  "updated_at": "2026-09-08T14:38:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-action-model",
+    "fast-wam",
+    "baseline",
+    "unitree-g1",
+    "real-robot",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63029740512,
+  "storage_human": "63.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT Plus not accessing the internet",
+      "url": "https://community.openai.com/t/chatgpt-plus-not-accessing-the-internet/413744",
+      "snippet": "Oct 4, 2023 · I see that GPT4 with the Plus subscription is supposed to be able to access the internet now. I can use it just fine with …"
+    },
+    {
+      "title": "AaronHuangWei/Long-WAM-G1-Dynamic-Task-Deploy · Hugging Face",
+      "url": "https://huggingface.co/AaronHuangWei/Long-WAM-G1-Dynamic-Task-Deploy",
+      "snippet": "The server prints serving Long-WAM G1 policy at ws://...after warm-up. cold Inductor cache compiles for several minutes; afterwards start-up is about one minute."
+    },
+    {
+      "title": "One Prompt, Multiple News Sources: ChatGPT Web Browsing in Action",
+      "url": "https://community.openai.com/t/one-prompt-multiple-news-sources-chatgpt-web-browsing-in-action/467504",
+      "snippet": "Nov 3, 2023 · OpenAI Developer Community One Prompt, Multiple News Sources: ChatGPT Web Browsing in Action Community gpt …"
+    },
+    {
+      "title": "GitHub - yuantianyuan01/FastWAM: Official codebase for Fast-WAM: Do ...",
+      "url": "https://github.com/yuantianyuan01/FastWAM",
+      "snippet": "Official codebase for Fast-WAM: Do World Action Models Need Test-time Future Imagination? - yuantianyuan01/FastWAM"
+    },
+    {
+      "title": "(Better) Fix for ChatGPT lag / freezing in long chats - local Chrome ...",
+      "url": "https://community.openai.com/t/better-fix-for-chatgpt-lag-freezing-in-long-chats-local-chrome-extension/1372183",
+      "snippet": "Jan 21, 2026 · Hey everyone. I’m sharing a practical fix for a frustration I know a lot of us have been dealing with for a long time: once …"
+    }
+  ]
+}

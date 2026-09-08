@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "latentvector1/safe-checkpoints",
+  "slug": "latentvector1-safe-checkpoints",
+  "author": "latentvector1",
+  "url": "https://huggingface.co/latentvector1/safe-checkpoints",
+  "created_at": "2026-09-08T12:46:14.000Z",
+  "updated_at": "2026-09-08T12:53:13.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "anomaly-segmentation",
+    "out-of-distribution-detection",
+    "normalizing-flows",
+    "autonomous-driving",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2069326682,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calcolo ferie e festività soppresse, i chiarimenti dell'Aran",
+      "url": "https://lentepubblica.it/personale-e-previdenza/ferie-festivita-soppresse-aran/",
+      "snippet": "Jan 7, 2026 · In un recente parere dell’Aran, il CFL 2030, si forniscono indicazioni sul calcolo delle ferie e delle festività soppresse …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Festività soppresse: sono ferie retribuite, svolta della Cassazione",
+      "url": "https://lentepubblica.it/personale-e-previdenza/festivita-soppresse-svolta-della-cassazione-valgono-come-ferie-retribuite/",
+      "snippet": "Aug 22, 2026 · Non sono solo permessi: i quattro giorni “dimenticati” delle cosiddette festività soppresse possono trasformarsi in ferie …"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Festività soppresse: quali sono e come vengono retribuite",
+      "url": "https://it.indeed.com/guida-alla-carriera/retribuzione-stipendio/festivita-soppresse-quali-sono",
+      "snippet": "Jun 16, 2026 · In questo articolo vediamo quali sono le festività soppresse e come vengono riconosciute al lavoratore con il sistema …"
+    }
+  ]
+}

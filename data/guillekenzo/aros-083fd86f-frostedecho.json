@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-083fd86f-FrostedEcho",
+  "slug": "guillekenzo-aros-083fd86f-frostedecho",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-083fd86f-FrostedEcho",
+  "created_at": "2026-09-08T11:15:49.000Z",
+  "updated_at": "2026-09-08T11:30:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 675917987,
+  "storage_human": "676 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【怀旧服】猎人LR宠物宝宝攻击标记宏(猎人必备)-百度 ...",
+      "url": "https://jingyan.baidu.com/article/ca2d939de0ad68ab6c31ce96.html",
+      "snippet": "Oct 10, 2019 · 【怀旧服】猎人LR宠物宝宝攻击标记宏(猎人必备),在玩魔兽世界怀旧服时，练级过程中猎人经常需要先标记需攻击的 …"
+    },
+    {
+      "title": "guillekenzo/aros-083fd86f-FrostedEcho · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-083fd86f-FrostedEcho",
+      "snippet": "guillekenzo / aros-083fd86f-FrostedEcho like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "魔兽世界怀旧服：爱与家庭任务指南-百度经验",
+      "url": "https://jingyan.baidu.com/article/c1a3101ee1f3149e656debbc.html",
+      "snippet": "Dec 26, 2019 · 玩家达到52级以上就可以在东瘟疫之地接任务了。 弗丁大爷在东瘟疫之地西北角的小屋子里，沿着河一直往北走到头 …"
+    },
+    {
+      "title": "guillekenzo/aros-f04aaddd-PlayfulDuality · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-f04aaddd-PlayfulDuality",
+      "snippet": "guillekenzo / aros-f04aaddd-PlayfulDuality like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Photoshop，Adobe illustrator，lightroom三者之间有什么区别啊 ...",
+      "url": "https://www.zhihu.com/question/27400607",
+      "snippet": "Photoshop 是图像处理软件。 illustrator是矢量绘图软件。 Lightroom是 照片 管理软件。 区别很明显。 Lightroom有 照片 管理功能， …"
+    }
+  ]
+}

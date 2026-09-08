@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "VaSy365/llama3.2-3b-legal-id-ft",
+  "slug": "vasy365-llama3-2-3b-legal-id-ft",
+  "author": "VaSy365",
+  "url": "https://huggingface.co/VaSy365/llama3.2-3b-legal-id-ft",
+  "created_at": "2026-09-08T16:57:49.000Z",
+  "updated_at": "2026-09-08T17:01:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Henrri, le meilleur logiciel de facturation gratuit",
+      "url": "https://www.henrri.com/",
+      "snippet": "Avec notre logiciel de facturation gratuit Henrri, créez devis et factures en ligne, gérez la facturation électronique, suivez paiements et …"
+    },
+    {
+      "title": "VaSy365/llama3.2-3b-legal-id-ft · Hugging Face",
+      "url": "https://huggingface.co/VaSy365/llama3.2-3b-legal-id-ft",
+      "snippet": "VaSy365 / llama3.2-3b-legal-id-ft like 0 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Logiciel facturation gratuit pour auto entrepreneur | Henrri",
+      "url": "https://www.henrri.com/profils-facturation-auto-entrepreneur/",
+      "snippet": "Fini la complexité ! Logiciel de facturation gratuit pour micro-entrepreneur et auto-entrepreneur. Devis, factures : tout est facile avec …"
+    },
+    {
+      "title": "VaSy365 (divasya) - Hugging Face",
+      "url": "https://huggingface.co/VaSy365/models",
+      "snippet": "AI & Data Research Enthusiast Recent Activity updated a modelabout 1 hour ago VaSy365/llama3.2-3b-legal-id-ft published a modelabout 1 hour ago VaSy365/llama3.2-3b-legal-id-ft View all activity"
+    },
+    {
+      "title": "Avez-vous une API ? – Plateforme de Support Henrri",
+      "url": "https://support.henrri.com/hc/fr/articles/37216414248721--Avez-vous-une-API",
+      "snippet": "Bonne nouvelle : oui, Henrri dispose d’une API !Mais nous tenons à être transparents : actuellement, notre API est privée et réservée …"
+    }
+  ]
+}

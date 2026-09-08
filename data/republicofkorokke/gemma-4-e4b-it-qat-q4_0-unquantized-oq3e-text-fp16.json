@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RepublicOfKorokke/gemma-4-E4B-it-qat-q4_0-unquantized-oQ3e-text-fp16",
+  "slug": "republicofkorokke-gemma-4-e4b-it-qat-q4_0-unquantized-oq3e-text-fp16",
+  "author": "RepublicOfKorokke",
+  "url": "https://huggingface.co/RepublicOfKorokke/gemma-4-E4B-it-qat-q4_0-unquantized-oQ3e-text-fp16",
+  "created_at": "2026-09-08T14:51:27.000Z",
+  "updated_at": "2026-09-08T15:04:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "base_model:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013418,
+  "parameters_human": "7.46B",
+  "storage_bytes": 3484819364,
+  "storage_human": "3.5 GB",
+  "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "ADMIN MOD • Bing Homepage Quiz (5/4/2024) - Which desert is the subject of today’s photograph? Which desert is the subject of …"
+    },
+    {
+      "title": "google/gemma-4-E4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B",
+      "snippet": "Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages."
+    },
+    {
+      "title": "Start home page daily quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1bwl8ci/start_home_page_daily_quiz/",
+      "snippet": "It's the Bing home page/ image quiz. It gives 10 points on a desktop browser. I haven't been able to get the quiz to work from the iOS …"
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Bing Homepage Quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r9ag3r/bing_homepage_quiz/",
+      "snippet": "Dec 5, 2021 · MembersOnline local_bellboy ADMIN MOD Bing Homepage Quiz Quiz and Answers Quiz for December 5, 2021 …"
+    }
+  ]
+}

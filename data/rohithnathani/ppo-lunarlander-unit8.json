@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rohithnathani/ppo-lunarlander-unit8",
+  "slug": "rohithnathani-ppo-lunarlander-unit8",
+  "author": "rohithnathani",
+  "url": "https://huggingface.co/rohithnathani/ppo-lunarlander-unit8",
+  "created_at": "2026-09-08T12:49:41.000Z",
+  "updated_at": "2026-09-08T12:51:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "lunarlander",
+    "pytorch",
+    "deep-rl-course",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 280118,
+  "storage_human": "280118 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "doba",
+      "url": "https://doba.pl/",
+      "snippet": "Polska strona Doba.pl zawiera wiadomości lokalne, nekrologi, informacje o wydarzeniach i ciekawostkach z regionu Dolnego Śląska."
+    },
+    {
+      "title": "rohithnathani/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/rohithnathani/ppo-LunarLander-v2",
+      "snippet": "Instructions to use rohithnathani/ppo-LunarLander-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "doba",
+      "url": "https://www.doba.pl/ddz",
+      "snippet": "Doba.pl je informační portál o událostech z různých měst a regionů Polska."
+    },
+    {
+      "title": "rodri2023/ppo-unit8-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/rodri2023/ppo-unit8-LunarLander-v2",
+      "snippet": "PPO Agent Playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2."
+    },
+    {
+      "title": "ddz.doba.pl",
+      "url": "https://ddz.doba.pl/?s=subsite&id=40959&mod=1",
+      "snippet": "Portal informacyjny dla powiatu dzierżoniowskiego, oferujący wiadomości lokalne, nekrologi oraz informacje o wydarzeniach i …"
+    }
+  ]
+}

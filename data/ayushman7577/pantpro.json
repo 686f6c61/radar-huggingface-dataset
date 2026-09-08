@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ayushman7577/pantpro",
+  "slug": "ayushman7577-pantpro",
+  "author": "ayushman7577",
+  "url": "https://huggingface.co/ayushman7577/pantpro",
+  "created_at": "2026-09-08T13:19:41.000Z",
+  "updated_at": "2026-09-08T13:21:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 145703424,
+  "parameters_human": "145.7M",
+  "storage_bytes": 295059520,
+  "storage_human": "295 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer o download e instalar o Google Chrome - Computador - Ajuda …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy's AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Google Chrome downloaden en installeren - Computer - Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome offline installeren Als je problemen ondervindt bij het downloaden van Chrome op je Windows-computer, gebruik je de …"
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "Free AI image detector and checker. Find out if a photo, picture, or artwork is AI-generated: Midjourney, DALL-E, Stable Diffusion and 20+ models. No signup."
+    },
+    {
+      "title": "Stiahnutie a inštalácia prehliadača Google Chrome - Počítač - Google ...",
+      "url": "https://support.google.com/chrome/answer/95346?hl=sk&co=GENIE.Platform%3DDesktop",
+      "snippet": "Stiahnutie a inštalácia prehliadača Google Chrome Webový prehliadač Chrome si môžete stiahnuť a nainštalovať bez peňažného …"
+    }
+  ]
+}

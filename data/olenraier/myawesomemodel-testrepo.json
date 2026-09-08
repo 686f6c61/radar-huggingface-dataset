@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Olenraier/MyAwesomeModel-TestRepo",
+  "slug": "olenraier-myawesomemodel-testrepo",
+  "author": "Olenraier",
+  "url": "https://huggingface.co/Olenraier/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-08T13:13:23.000Z",
+  "updated_at": "2026-09-08T13:14:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doctolib : Prenez rendez-vous en ligne chez un soignant",
+      "url": "https://www.doctolib.fr/",
+      "snippet": "Prenez rendez-vous en ligne avec des professionnels de santé près de chez vous en quelques clics."
+    },
+    {
+      "title": "Olenraier/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/Olenraier/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Doctolib : Prenez rendez-vous en ligne chez un soignant",
+      "url": "https://www.doctolib.fr/sessions/new",
+      "snippet": "Trouvez rapidement un spécialiste près de chez vous et prenez rendez-vous gratuitement en ligne en quelques clics"
+    },
+    {
+      "title": "ROY2333121/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/ROY2333121/MyAwesomeModel-TestRepo",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "Doctolib - Login",
+      "url": "https://www.doctolib.fr/account/appointments",
+      "snippet": "Gérez vos rendez-vous médicaux en ligne facilement et accédez à votre compte pour suivre vos consultations."
+    }
+  ]
+}

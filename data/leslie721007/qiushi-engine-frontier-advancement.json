@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "leslie721007/Qiushi-Engine-Frontier-Advancement",
+  "slug": "leslie721007-qiushi-engine-frontier-advancement",
+  "author": "leslie721007",
+  "url": "https://huggingface.co/leslie721007/Qiushi-Engine-Frontier-Advancement",
+  "created_at": "2026-09-08T12:26:06.000Z",
+  "updated_at": "2026-09-08T12:26:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "fill-mask",
+    "babylm",
+    "babylm-2026",
+    "strict-small",
+    "qiushi-engine",
+    "data-efficient-learning",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36458592,
+  "parameters_human": "36.5M",
+  "storage_bytes": 2723803628,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kostenloser KI-Bildgenerator | Craiyon",
+      "url": "https://www.craiyon.com/de",
+      "snippet": "Erstelle KI-Bilder aus Text mit Craiyon. Generiere, entdecke und bearbeite Bilder online."
+    },
+    {
+      "title": "leslie721007 (Shuxing Yang) - Hugging Face",
+      "url": "https://huggingface.co/leslie721007",
+      "snippet": "Agentic Enginnering, LLM Qiushi Engine Developers"
+    },
+    {
+      "title": "Erstelle+ein+bild+eines+sonnenuntergangs+über+einem+weiß+getünchten …",
+      "url": "https://www.craiyon.com/en/search/erstelle%2Bein%2Bbild%2Beines%2Bsonnenuntergangs%2B%C3%BCber%2Beinem%2Bwei%C3%9F%2Bget%C3%BCnchten%2Bklippendorf%2Bam%2Bmeer%2C%2Bwarm%2Borange%E2%80%91rosa%2Bhimmel%2C%2Bkuppeln%2Bund%2Bwindm%C3%BChlen%2Bim%2Bgoldenen%2Blicht%2Bleuchtend%2C%2Bdicke%2Bstrukturierte%2Bpinselstriche%2C%2Bkr%C3%A4ftige%2B%C3%B6lfarben%2C%2Bweiche%2Batmosph%C3%A4rische%2Btiefe%2C%2Bruhige%2Bmediterrane%2Bstimmung",
+      "snippet": "Erstelle+ein+bild+eines+sonnenuntergangs+über+einem+weiß+getünchten+klippendorf+am+meer,+warm+orange‑rosa+himmel,+kuppeln+und+windmühlen+im+goldenen+licht+leuchtend,+dicke+strukturierte+pinselstriche,+kräftige+ölfarben,+weiche+atmosphärische+tiefe,+ruhige+mediterrane+stimmung …"
+    },
+    {
+      "title": "[PDF] End-to-end autonomous scientific discovery on a real optical ...",
+      "url": "https://www.semanticscholar.org/paper/End-to-end-autonomous-scientific-discovery-on-a-Yang-Chen/af7f8603542e9081b37e320d18af379436dac667",
+      "snippet": "Here we introduce Qiushi Discovery Engine, an LLM-based agentic system for end-to-end autonomous scientific discovery on a real optical platform. Qiushi Engine combines nonlinear research phases, Meta-Trace memory and a dual-layer architecture to maintain adaptive and stable research trajectories across long-horizon investigations involving ..."
+    },
+    {
+      "title": "KI-Bilderzeuger - Erstellen Sie Bilder aus Text mit 30 KI ... - Picsart",
+      "url": "https://picsart.com/de/ai-image-generator/",
+      "snippet": "Ein Text-zu-Bild-KI-Generator wandelt schriftliche Beschreibungen in Bilder um. Geben Sie einen Eingabebefehl ein, der Ihr Thema, …"
+    }
+  ]
+}

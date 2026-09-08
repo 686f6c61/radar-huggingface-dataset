@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DogOnKeyboard/G4-MeroMero-v2-31B-heretic-GGUF",
+  "slug": "dogonkeyboard-g4-meromero-v2-31b-heretic-gguf",
+  "author": "DogOnKeyboard",
+  "url": "https://huggingface.co/DogOnKeyboard/G4-MeroMero-v2-31B-heretic-GGUF",
+  "created_at": "2026-09-08T15:41:13.000Z",
+  "updated_at": "2026-09-08T15:47:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "arxiv:2604.03136",
+    "arxiv:2605.26492",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 94048863424,
+  "storage_human": "94.0 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "regex - Adding ?nocache=1 to every url (including the assets like ...",
+      "url": "https://stackoverflow.com/questions/38333569/adding-nocache-1-to-every-url-including-the-assets-like-stylesheet-behind-the",
+      "snippet": "Jul 12, 2016 · Alright, this is due to the pain that godaddy gives me by implementing their own caching in a MANAGED …"
+    },
+    {
+      "title": "zerofata/G4-MeroMero-v2-31B · Hugging Face",
+      "url": "https://huggingface.co/zerofata/G4-MeroMero-v2-31B",
+      "snippet": "A finetune of Gemma 4 31B designed for creative tasks, particularly narrative RP. Intended to be a more creative version of G4-MeroMero-31B. This model is the result of a lot of experimentation and learning. Trying to make Gemma 4 more creative without destroying the intelligence is... difficult. To put it mildly. Heavily inspired by a few research papers, StoryScope: Investigating ..."
+    },
+    {
+      "title": "how to clear or replace a cached image - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/321865/how-to-clear-or-replace-a-cached-image",
+      "snippet": "Nov 27, 2008 · I know there are many ways to prevent image caching (such as via META tags), as well as a few nice tricks to ensure …"
+    },
+    {
+      "title": "llmfan46/G4-MeroMero-31B-uncensored-heretic · Hugging Face",
+      "url": "https://huggingface.co/llmfan46/G4-MeroMero-31B-uncensored-heretic",
+      "snippet": "Model cardFilesFiles and versions xet Community This is a decensored version of zerofata/G4-MeroMero-31B, made using Heretic v1.2.0 with the Arbitrary-Rank Ablation (ARA) method Abliteration parameters Targeted components Performance"
+    },
+    {
+      "title": "Como evitar el caché de los archivos css y js",
+      "url": "https://es.stackoverflow.com/questions/63716/como-evitar-el-cach%c3%a9-de-los-archivos-css-y-js",
+      "snippet": "Apr 21, 2017 · Otra forma de evitar el cache de por ejemplo tu css o js , sería modificando el .htaccess de tu apache, esto para evitar …"
+    }
+  ]
+}

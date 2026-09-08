@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jimilismith/qwen2.5-vl-7b-FT-chart-vlm",
+  "slug": "jimilismith-qwen2-5-vl-7b-ft-chart-vlm",
+  "author": "jimilismith",
+  "url": "https://huggingface.co/jimilismith/qwen2.5-vl-7b-FT-chart-vlm",
+  "created_at": "2026-09-08T17:50:31.000Z",
+  "updated_at": "2026-09-08T18:17:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2_5_vl",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 423799828,
+  "storage_human": "424 MB",
+  "base_model": "unsloth/qwen2.5-vl-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machine Learning Algorithms - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-algorithms/",
+      "snippet": "Sep 1, 2026 · Machine learningalgorithms are sets of rules that allow computers to learn from data, identify patterns and make …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-VL-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+      "snippet": "Instructions to use Qwen/Qwen2.5-VL-7B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "What Are Machine Learning Algorithms? | IBM",
+      "url": "https://www.ibm.com/think/topics/machine-learning-algorithms",
+      "snippet": "Nov 19, 2019 · A machine learning algorithm is the procedure and mathematical logic through which a “machine”—an artificial …"
+    },
+    {
+      "title": "Qwen2.5-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-vl",
+      "snippet": "Vision-language model series based on Qwen2.5"
+    },
+    {
+      "title": "10 Machine Learning Algorithms to Know in 2026 | Coursera",
+      "url": "https://www.coursera.org/articles/machine-learning-algorithms?msockid=31110ee28569698c1323192c84c26877",
+      "snippet": "Jul 31, 2026 · Machine learning algorithms are like instructions that allow computers to learn from data, identify patterns and …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hn-minh/Qwen2.5-Coder-1.5B-bash-lora",
+  "slug": "hn-minh-qwen2-5-coder-1-5b-bash-lora",
+  "author": "hn-minh",
+  "url": "https://huggingface.co/hn-minh/Qwen2.5-Coder-1.5B-bash-lora",
+  "created_at": "2026-09-08T15:20:36.000Z",
+  "updated_at": "2026-09-08T15:21:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29938812,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HN Services - Changer les codes",
+      "url": "https://www.hn-services.com/fr/",
+      "snippet": "HN Services (anciennement Groupe HN) est une entreprise de Services du Numérique française. Elle intervient sur l'ensemble de la …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    },
+    {
+      "title": "Qui sommes-nous ? - HN Services",
+      "url": "https://www.hn-services.com/fr/qui-sommes-nous/",
+      "snippet": "HN Services est une entreprise fondée en 1983 par Michel Hochberg. Depuis 2015, Antoine Hennache a repris les rênes de …"
+    },
+    {
+      "title": "Qwen2.5-Coder-1.5B: Lightweight Open-Source Code LLM for Edge & On ...",
+      "url": "https://dev.co/ai/llms/qwen2-5-coder-1-5b",
+      "snippet": "Qwen2.5-Coder-1.5B is a 1.5 billion parameter code-focused language model from Alibaba's Qwen team. It is designed for code generation, reasoning, and fixing tasks, built on the Qwen2.5 base model with 32K token context."
+    },
+    {
+      "title": "Hacker News",
+      "url": "https://news.ycombinator.com/",
+      "snippet": "Dextroproporphan: An Analogue for a Better Dextromethorphan(monfak.top) 14 pointsby znano2 hours ago| hide| 7 comments 22. …"
+    }
+  ]
+}

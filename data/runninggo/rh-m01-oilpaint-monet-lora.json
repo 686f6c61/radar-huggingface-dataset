@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "runninggo/rh-m01-oilpaint-monet-lora",
+  "slug": "runninggo-rh-m01-oilpaint-monet-lora",
+  "author": "runninggo",
+  "url": "https://huggingface.co/runninggo/rh-m01-oilpaint-monet-lora",
+  "created_at": "2026-09-08T10:28:15.000Z",
+  "updated_at": "2026-09-08T10:28:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9550454,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vor ca. 6 Wochen stellte der Hausarzt bei mir G rtelrose fest",
+      "url": "https://www.justanswer.de/medizin/3vltx-vor-ca-wochen-stellte-der-hausarzt-bei-mir-g-rtelrose-fest.html",
+      "snippet": "Vor ca. 6 Wochen stellte der Hausarzt bei mir Gürtelrose fest (Schulterblatt links, Achselhöhle, Brust links). Seit dem Auftreten der …"
+    },
+    {
+      "title": "Oil Paint - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/1960707456148148226",
+      "snippet": "Trigger : OilPaint_tbear This model excels at creating a distinct impasto oil painting style, characterized by its bold and expressive brushstrokes that build rich texture. It utilizes a vibrant, saturated color palette with dramatic contrasts between light and shadow, infusing each image with incredible dynamism and life. Perfect for rendering epic fantasy scenes, emotive portraits, or ..."
+    },
+    {
+      "title": "Meine Lebensgefährtin hat seit über zwei Wochen eine",
+      "url": "https://www.justanswer.de/allgemeinmedizin/mn0l9-meine-lebensgef-hrtin-hat-seit-ber-zwei-wochen-eine.html",
+      "snippet": "Meine Lebensgefährtin hat seit über zwei Wochen eine inzwischen abheilende Gürtelrose. Die Tabletten Zoster-Galen hat sie auch …"
+    },
+    {
+      "title": "OilPainting.safetensors · Reallusion/Lora_OilPainting at main",
+      "url": "https://huggingface.co/Reallusion/Lora_OilPainting/blob/main/OilPainting.safetensors",
+      "snippet": "Community Use this model main Lora_OilPainting / OilPainting.safetensors AaronchuRL Upload OilPainting.safetensors d41689e verified about 1 month ago"
+    },
+    {
+      "title": "Gürtelrose - Verlauf? | Forum für Haut - Dermatologie - MEDPERTISE",
+      "url": "https://www.medpertise.de/forum/haut-dermatologie/guertelrose-verlauf/1.html",
+      "snippet": "Mar 11, 2011 · Gürtelrose - Verlauf? - Forum für Haut - Dermatologie: Hallo zusammen, gestern morgen wurde bei mir Gürtelrose …"
+    }
+  ]
+}

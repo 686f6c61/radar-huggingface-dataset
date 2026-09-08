@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "t8star/Echo-WM-Comfy",
+  "slug": "t8star-echo-wm-comfy",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/Echo-WM-Comfy",
+  "created_at": "2026-09-08T11:10:55.000Z",
+  "updated_at": "2026-09-08T11:30:35.000Z",
+  "license": "ltx-2-community-and-gemma-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "world-model",
+    "video-generation",
+    "camera-control",
+    "causal-video",
+    "ltx-2.3",
+    "image-to-video",
+    "base_model:Echo-Team/Echo-WM",
+    "base_model:finetune:Echo-Team/Echo-WM",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Echo-Team/Echo-WM, google/gemma-3-12b-it-qat-q4_0-unquantized",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "t8star (T8star-Aix) - Hugging Face",
+      "url": "https://huggingface.co/t8star",
+      "snippet": "t8star (T8star-Aix) - Hugging Face ... Comfyui"
+    },
+    {
+      "title": "T8mars (T8star-Aix) · GitHub",
+      "url": "https://github.com/T8mars",
+      "snippet": "Stars T8mars Follow T8star-Aix T8mars Follow Go Youn Jung's Fan,I like open source,Comfyui,AI,everything!"
+    },
+    {
+      "title": "t8star (T8star-Aix) - Hugging Face",
+      "url": "https://huggingface.co/t8star/models",
+      "snippet": "None yet t8star's models37 Sort: Recently updated t8star/LLaDa-Image-Comfy Text-to-Image •Updated about 10 hours ago•1 t8star/minimax_h3_fl2v_turbo_8step_v1.0_768p_FeiHouRemix_v0.6_compat_v001_T8 Updated 3 days ago"
+    },
+    {
+      "title": "T8mars (T8star-Aix) / Repositories · GitHub",
+      "url": "https://github.com/T8mars?tab=repositories",
+      "snippet": "Go Youn Jung's Fan,I like open source,Comfyui,AI,everything! - T8mars"
+    }
+  ]
+}

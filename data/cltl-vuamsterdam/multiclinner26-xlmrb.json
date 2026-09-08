@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "CLTL-VUAmsterdam/multiClinNER26-xlmrb",
+  "slug": "cltl-vuamsterdam-multiclinner26-xlmrb",
+  "author": "CLTL-VUAmsterdam",
+  "url": "https://huggingface.co/CLTL-VUAmsterdam/multiClinNER26-xlmrb",
+  "created_at": "2026-09-08T12:12:06.000Z",
+  "updated_at": "2026-09-08T12:54:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "cs",
+    "en",
+    "es",
+    "nl",
+    "it",
+    "ro",
+    "sv"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "cs",
+    "en",
+    "es",
+    "nl",
+    "it",
+    "ro",
+    "sv",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277458439,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1109857780,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "METEO GRENOBLE par Météo-France - Prévisions Météo gratuites …",
+      "url": "https://meteofrance.com/previsions-meteo-france/grenoble/38000",
+      "snippet": "Dans la nuit, les pluies s'Ã©tendent du Sud-Ouest Ã l'Est avec des orages qui persistent sur les Alpes du Nord. Quelques averses …"
+    },
+    {
+      "title": "GitHub - cltl/MultiClinNER-2026",
+      "url": "https://github.com/cltl/MultiClinNER-2026",
+      "snippet": "Contribute to cltl/MultiClinNER-2026 development by creating an account on GitHub."
+    },
+    {
+      "title": "Grenoble, Isère, France Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/fr/grenoble/136555/hourly-weather-forecast/136555",
+      "snippet": "Hourly weather forecast in Grenoble, Isère, France. Check current conditions in Grenoble, Isère, France with radar, hourly, and more."
+    },
+    {
+      "title": "CLTL-VUAmsterdam (CLTL) - Hugging Face",
+      "url": "https://huggingface.co/CLTL-VUAmsterdam/models",
+      "snippet": "Org profile for CLTL on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "PREVISIONS METEO FRANCE - Site Officiel de Météo-France",
+      "url": "https://meteofrance.com/",
+      "snippet": "Dans la nuit, les pluies s'étendent du Sud-Ouest à l'Est avec des orages qui persistent sur les Alpes du Nord. Quelques averses …"
+    }
+  ]
+}

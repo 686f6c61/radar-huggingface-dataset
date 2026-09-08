@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LibertAIDAI/GLM-5.3-Flash-Uncensored-Prefill-Topup",
+  "slug": "libertaidai-glm-5-3-flash-uncensored-prefill-topup",
+  "author": "LibertAIDAI",
+  "url": "https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-Uncensored-Prefill-Topup",
+  "created_at": "2026-09-08T12:49:06.000Z",
+  "updated_at": "2026-09-08T12:49:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "abliteration",
+    "steering-vectors",
+    "glm-5.3-flash",
+    "uncensored",
+    "prefill-only",
+    "arxiv:2406.11732",
+    "arxiv:2605.05983",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "LibertAIDAI/GLM-5.3-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=de-DE",
+      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+    },
+    {
+      "title": "README.md · LibertAIDAI/GLM-5.3-Flash-NVFP4 at main",
+      "url": "https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4/blob/main/README.md",
+      "snippet": "GLM-5.3-Flash · NVFP4 320B total · 18B active · natively multimodal · 1M context 598.5 GiB → 181 GiB · −70% · round-trip cosine 0.99665 Weight-only NVFP4 quantization of Z.ai's GLM-5.3-Flash — the first GLM to combine sparse and linear attention. Quantized by LibertAI · not affiliated with Z.ai / Zhipu"
+    },
+    {
+      "title": "Introducing ChatGPT | OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "elismasilva/ltx2.3_image_custom_blocks",
+  "slug": "elismasilva-ltx2-3_image_custom_blocks",
+  "author": "elismasilva",
+  "url": "https://huggingface.co/elismasilva/ltx2.3_image_custom_blocks",
+  "created_at": "2026-09-08T17:38:48.000Z",
+  "updated_at": "2026-09-08T17:52:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "image-to-image",
+    "modular-diffusers",
+    "diffusion",
+    "ltx",
+    "ltx2-image",
+    "base_model:elismasilva/ltx2.3-image-base",
+    "base_model:finetune:elismasilva/ltx2.3-image-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "elismasilva/ltx2.3-image-base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=1b417d8aa6c262cc09266a44a76963c8",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "LTX 2.3 - Image - a elismasilva Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/elismasilva/ltx-23-image",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from elismasilva"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "elismasilva/ltx2.3-image-comfyui · Hugging Face",
+      "url": "https://huggingface.co/elismasilva/ltx2.3-image-comfyui",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

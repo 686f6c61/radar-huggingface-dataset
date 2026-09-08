@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "geobase/dinov3s-buildings",
+  "slug": "geobase-dinov3s-buildings",
+  "author": "geobase",
+  "url": "https://huggingface.co/geobase/dinov3s-buildings",
+  "created_at": "2026-09-08T10:11:22.000Z",
+  "updated_at": "2026-09-08T10:32:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "building-segmentation",
+    "remote-sensing",
+    "dinov3",
+    "fair",
+    "hotosm",
+    "dataset:hotosm/vhr-building-segmentation",
+    "base_model:kshitijrajsharma/dinov3",
+    "base_model:quantized:kshitijrajsharma/dinov3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 893699693,
+  "storage_human": "894 MB",
+  "base_model": "kshitijrajsharma/dinov3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/zh-Hans-CN/",
+      "snippet": "我们相信，我们的研究最终将带来通用人工智能，一种可以解决人类水平问题的系统。构建安全有益的 AGI 是我们的使命。"
+    },
+    {
+      "title": "fAIr-models/models/dinov3s_buildings/README.md at develop - GitHub",
+      "url": "https://github.com/hotosm/fAIr-models/blob/develop/models/dinov3s_buildings/README.md",
+      "snippet": "Collection of Geo-AI models with all their implementation that can be deployed to production instance ! - hotosm/fAIr-models"
+    },
+    {
+      "title": "GPT-5 正式发布 | OpenAI",
+      "url": "https://openai.com/zh-Hans-CN/gpt-5/",
+      "snippet": "GPT‑5 在各方面都更加智能，能够在数学、科学、金融、法律等领域提供更具实用性的回复。 它就像拥有一支随时待命的专家团队， …"
+    },
+    {
+      "title": "hotosm/dinov3s-buildings · Hugging Face",
+      "url": "https://huggingface.co/hotosm/dinov3s-buildings",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/onboarding?app=chat&callbackHost=chatgpt.com",
+      "snippet": "OpenAI Platform ... OpenAI Platform"
+    }
+  ]
+}

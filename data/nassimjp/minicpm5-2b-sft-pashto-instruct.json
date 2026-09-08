@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct",
+  "slug": "nassimjp-minicpm5-2b-sft-pashto-instruct",
+  "author": "nassimjp",
+  "url": "https://huggingface.co/nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct",
+  "created_at": "2026-09-08T12:28:44.000Z",
+  "updated_at": "2026-09-08T12:32:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ps"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "pashto",
+    "nlp",
+    "casual-lm",
+    "sft",
+    "lora",
+    "ipashto",
+    "afghanistan",
+    "conversational",
+    "ps",
+    "base_model:openbmb/MiniCPM-2B-sft-bf16",
+    "base_model:adapter:openbmb/MiniCPM-2B-sft-bf16",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516944896,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033933616,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM-2B-sft-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire sur le site référent de petites annonces de particulier à particulier et de professionnels. Avec …"
+    },
+    {
+      "title": "README.md · openbmb/MiniCPM5-2B-SFT at main - Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-SFT/blob/main/README.md",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use openbmb/MiniCPM5-2B-SFT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use openbmb/MiniCPM5-2B-SFT with Transformers:"
+    },
+    {
+      "title": "Rhône-Alpes - leboncoin",
+      "url": "https://www.leboncoin.fr/l/rp_rhone-alpes",
+      "snippet": "Toutes nos annonces gratuites Rhône-Alpes. Consultez nos 9198439 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "leboncoin",
+      "url": "https://pro.immobilierneuf.leboncoin.fr/auth",
+      "snippet": "Fermer la session À propos"
+    }
+  ]
+}

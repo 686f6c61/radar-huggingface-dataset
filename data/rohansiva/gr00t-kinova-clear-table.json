@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rohansiva/gr00t-kinova-clear-table",
+  "slug": "rohansiva-gr00t-kinova-clear-table",
+  "author": "rohansiva",
+  "url": "https://huggingface.co/rohansiva/gr00t-kinova-clear-table",
+  "created_at": "2026-09-08T15:09:48.000Z",
+  "updated_at": "2026-09-08T15:10:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "vla",
+    "gr00t",
+    "kinova",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910499416,
+  "storage_human": "6.9 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FIFA/Coca-Cola Men's World Ranking",
+      "url": "https://inside.fifa.com/fifa-rankings/world-ranking/men",
+      "snippet": "FIFA World Cup 2026™ Get ready for the biggest ever FIFA World Cup™ with FIFA.com"
+    },
+    {
+      "title": "rohansiva (Rohan Siva) - Hugging Face",
+      "url": "https://huggingface.co/rohansiva",
+      "snippet": "User profile of Rohan Siva on Hugging Face"
+    },
+    {
+      "title": "FIFA Rankings",
+      "url": "https://inside.fifa.com/en/fifa-rankings",
+      "snippet": "May 8, 2026 · The official site of the international governing body of football with news, national associations, competitions, results, …"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Brackets, Standings & Group Tables | FIFA World Cup 2026™",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
+      "snippet": "Visit FIFA.com to see standings for FIFA World Cup 2026™ with latest group tables and knockout brackets."
+    }
+  ]
+}
