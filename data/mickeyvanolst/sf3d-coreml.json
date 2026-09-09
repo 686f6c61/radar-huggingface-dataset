@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mickeyvanolst/sf3d-coreml",
+  "slug": "mickeyvanolst-sf3d-coreml",
+  "author": "mickeyvanolst",
+  "url": "https://huggingface.co/mickeyvanolst/sf3d-coreml",
+  "created_at": "2026-09-08T20:13:36.000Z",
+  "updated_at": "2026-09-08T20:14:11.000Z",
+  "license": "stability-ai-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "image-to-3d",
+    "touchdesigner",
+    "base_model:stabilityai/stable-fast-3d",
+    "base_model:quantized:stabilityai/stable-fast-3d",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1886187166,
+  "storage_human": "1.9 GB",
+  "base_model": "stabilityai/stable-fast-3d",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Překladač Google",
+      "url": "https://translate.google.cz/",
+      "snippet": "Služba Google bez dalších poplatků okamžitě překládá slova, věty a webové stránky mezi angličtinou a více než stovkou dalších …"
+    },
+    {
+      "title": "mickeyvanolst/triposr-coreml · Hugging Face",
+      "url": "https://huggingface.co/mickeyvanolst/triposr-coreml",
+      "snippet": "CoreML conversion of stabilityai/TripoSR (Tochilkin et al., Stability AI + Tripo AI, MIT) for the Geo Gen operator in AML — Apple ML operators for TouchDesigner. Single image → 3D mesh on the Apple Neural Engine in ~2 s on an M-series Air."
+    },
+    {
+      "title": "Překladač Google",
+      "url": "https://translate.google.cz/details",
+      "snippet": "Odeslat zpětnou vazbu Pokud chcete vyhledat podrobnosti, zadejte text"
+    },
+    {
+      "title": "GitHub - Stability-AI/stable-fast-3d: SF3D: Stable Fast 3D Mesh ...",
+      "url": "https://github.com/Stability-AI/stable-fast-3d",
+      "snippet": "README License Moreitems SF3D: Stable Fast 3D Mesh Reconstruction with UV-unwrapping and Illumination Disentanglement This is the official codebase for Stable Fast 3D, a state-of-the-art open-source model for fastfeedforward 3D mesh reconstruction from a single image. Stable Fast 3D is based on TripoSRbut introduces several new key techniques."
+    },
+    {
+      "title": "Překladač Google",
+      "url": "https://translate.google.cz/m",
+      "snippet": "Přeložit Rozpoznat jazyk→ čeština Domovská stránka Google Odeslat zpětnou vazbu Ochrana soukromí a smluvní podmínky …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "falloutxvats/brain-vision",
+  "slug": "falloutxvats-brain-vision",
+  "author": "falloutxvats",
+  "url": "https://huggingface.co/falloutxvats/brain-vision",
+  "created_at": "2026-09-08T21:44:13.000Z",
+  "updated_at": "2026-09-08T21:45:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "conversational",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-8B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027785792,
+  "storage_human": "5.0 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interest Only Mortgages Guide - Money People Online",
+      "url": "https://moneypeopleonline.co.uk/mortgages/guides/interest-only-mortgages-guide/",
+      "snippet": "Apr 27, 2026 · UK guide to interest-only mortgages for parents: pros, cons, risks, repayment strategies and safer alternatives to …"
+    },
+    {
+      "title": "GitHub - mimirlogic95/vaultbrain-showcase: Mobile-first Fallout 76 ...",
+      "url": "https://github.com/mimirlogic95/vaultbrain-showcase",
+      "snippet": "VaultBrain is a mobile-first, spoiler-aware Fallout 76 companion that turns a player's saved build, gear, mutations, and goals into practical guidance. It combines a structured character vault with Gemini-powered screenshot analysis, conversational build advice, lore help, mission hints, and C.A.M.P. planning."
+    },
+    {
+      "title": "Interest-only mortgages guide: pros, cons and suitability explained",
+      "url": "https://www.idealhome.co.uk/property-advice/interest-only-mortgages-304487",
+      "snippet": "Interest-only mortgages are not as prevalent today as they were before the credit crunch, and have been the subject of mis-selling …"
+    },
+    {
+      "title": "GitHub - BrainVisionAI/Brain-tumor-detection",
+      "url": "https://github.com/BrainVisionAI/Brain-tumor-detection",
+      "snippet": "An AI-powered web application for detecting and localizing brain tumors in MRI scans using the YOLO11s deep learning model. BrainVision AI provides an interactive Streamlit interface for MRI image upload, tumor detection and localization, confidence estimation, result visualization, and automatic ..."
+    },
+    {
+      "title": "Interest-Only Mortgage Pros and Cons - ConsumerAffairs",
+      "url": "https://www.consumeraffairs.com/finance/pros-and-cons-of-interest-only-mortgages.html",
+      "snippet": "Jan 20, 2026 · Are interest-only mortgages right for you? Learn the pros, cons and requirements to make an informed decision on this …"
+    }
+  ]
+}

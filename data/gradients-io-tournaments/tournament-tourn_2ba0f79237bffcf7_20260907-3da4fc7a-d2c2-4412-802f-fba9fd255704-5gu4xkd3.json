@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-3da4fc7a-d2c2-4412-802f-fba9fd255704-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_2ba0f79237bffcf7_20260907-3da4fc7a-d2c2-4412-802f-fba9fd255704-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-3da4fc7a-d2c2-4412-802f-fba9fd255704-5GU4Xkd3",
+  "created_at": "2026-09-08T21:33:32.000Z",
+  "updated_at": "2026-09-08T21:33:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1039104026,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | E-guichet de la ville de Liège",
+      "url": "https://e-guichet.liege.be/",
+      "snippet": "Prenez connaissance du suivi de votre demande via un fil du temps interactif et soyez notifié instantanément de tout changement de …"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-1a0ce16d-2dd4-4d24-b7ba-a223c34067e7-5EUHojrM",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "État civil et Population — Liège",
+      "url": "https://www.liege.be/fr/vie-communale/services-communaux/etat-civil-et-population",
+      "snippet": "Parmi les missions premières d’une administration communale figure la tenue des registres de l’état civil, de la population et des …"
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "Passeport — Liège",
+      "url": "https://www.liege.be/fr/vie-communale/services-communaux/etat-civil-et-population/documents-didentite-et-de-voyage/demarches/passeport",
+      "snippet": "Le passeport est un document de voyage officiel, reconnu et utilisable partout dans le monde, se présentant sous forme de livret, …"
+    }
+  ]
+}

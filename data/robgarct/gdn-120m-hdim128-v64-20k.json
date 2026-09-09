@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "robgarct/gdn-120m-hdim128-v64-20k",
+  "slug": "robgarct-gdn-120m-hdim128-v64-20k",
+  "author": "robgarct",
+  "url": "https://huggingface.co/robgarct/gdn-120m-hdim128-v64-20k",
+  "created_at": "2026-09-08T22:12:21.000Z",
+  "updated_at": "2026-09-08T22:12:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "recurrent-recall-circuits",
+  "languages": [],
+  "tags": [
+    "recurrent-recall-circuits",
+    "linear-attention",
+    "in-context-recall",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 580836278,
+  "storage_human": "581 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.pl/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "robgarct/gdn-120m-fixed-128 · Hugging Face",
+      "url": "https://huggingface.co/robgarct/gdn-120m-fixed-128",
+      "snippet": "gdn-120m-fixed-128 120M gated DeltaNet (head_dim128) language model, 20k steps of Pile pretraining, published so its recall evaluations can be reproduced."
+    },
+    {
+      "title": "Tłumacz Google",
+      "url": "https://translate.google.pl/",
+      "snippet": "Bezpłatna usługa Google, umożliwiająca szybkie tłumaczenie słów, zwrotów i stron internetowych w języku angielskim i ponad 100 …"
+    },
+    {
+      "title": "jwl50-stanford/gdn-paper-120m-fixed-qk128-v64-fp32res-gpt2init-20k-r1 ...",
+      "url": "https://huggingface.co/jwl50-stanford/gdn-paper-120m-fixed-qk128-v64-fp32res-gpt2init-20k-r1",
+      "snippet": "Fixed-State GDN Paper 120M, Q/K Head Dim 128, V Head Dim 64 This repository contains the final PyTorch Lightning checkpoint for the fixed-state Gated DeltaNet language-model experiment m06d10y26-gdn-paper-qk128-v64-fp32res-gpt2init-20k-r1. The model has 12 layers, hidden size 768, and 12 heads. Each head uses a fixed Q/K feature dimension of 128 and a V dimension of 64. This is an ordinary ..."
+    },
+    {
+      "title": "Google Video",
+      "url": "https://www.google.pl/videohp?hl=pl",
+      "snippet": "Wyszukuj miliony filmów w całej sieci."
+    }
+  ]
+}

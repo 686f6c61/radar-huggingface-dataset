@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0",
+  "slug": "sanapandey-qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0",
+  "author": "sanapandey",
+  "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0",
+  "created_at": "2026-09-08T23:31:03.000Z",
+  "updated_at": "2026-09-08T23:32:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118010428,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0 ...",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Être notifié de la réception d'un mail - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Trucs-et-astuces/%C3%8Atre-notifi%C3%A9-de-la-r%C3%A9ception-d-un-mail/ta-p/198037",
+      "snippet": "Mar 27, 2014 · Vous souhaitez être averti de la réception d'un mail dans votre messagerie Orange ? Le logiciel \"Notification mail\" …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 ...",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Résolu : Icône ORANGE sur le BUREAU. - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/ma-connexion/Ic%C3%B4ne-ORANGE-sur-le-BUREAU/td-p/1087548",
+      "snippet": "Oct 13, 2016 · Résolu : Bonjour, Comment placer l'icône ORANGE sur le BUREAU avec WINDOWS 10? Merci de votre aimable …"
+    }
+  ]
+}

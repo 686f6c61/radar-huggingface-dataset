@@ -5,7 +5,7 @@
   "author": "halt95",
   "url": "https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin",
   "created_at": "2026-09-08T10:37:18.000Z",
-  "updated_at": "2026-09-08T12:00:27.000Z",
+  "updated_at": "2026-09-08T14:51:05.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
   "trending_score": 0,
   "parameters": 123958298771,
   "parameters_human": "123.96B",
-  "storage_bytes": 123760654703,
+  "storage_bytes": 123786115697,
   "storage_human": "123.8 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next, Intel/Qwen3.8-Flash-Next-W4A16-AutoRound, RadixArk/Qwen3.8-Flash-Next-NVFP4",
   "formats": [

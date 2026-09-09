@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260908_203001",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_wolof-tts_s42_20260908_203001",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260908_203001",
+  "created_at": "2026-09-09T00:05:32.000Z",
+  "updated_at": "2026-09-09T00:07:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144437730,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578043218,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tillamook Creamery: Plan your visit - Tillamook",
+      "url": "https://www.tillamook.com/visit-us/creamery",
+      "snippet": "Go on a guided tour to learn all about cheesemaking or treat yourself to an interactive ice cream experience. Booking a reservation …"
+    },
+    {
+      "title": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260908_203001 ...",
+      "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260908_203001",
+      "snippet": "Instructions to use xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260908_203001 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Tillamook Creamery Tour (OR) – Hours, Samples & Tips",
+      "url": "https://factorytoursguide.com/tours/oregon/tillamook-creamery/",
+      "snippet": "Watch cheese made live at Tillamook Creamery in Oregon, sample fresh dairy favorites and explore the creamery. Get hours, tips …"
+    },
+    {
+      "title": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260905_152155 ...",
+      "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260905_152155/discussions",
+      "snippet": "Instructions to use xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260905_152155 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Visit one of our three locations - Tillamook",
+      "url": "https://www.tillamook.com/visit-us",
+      "snippet": "Stop by our modern Creamery experience in Tillamook Oregon, or our Market at the Portland Airport."
+    }
+  ]
+}

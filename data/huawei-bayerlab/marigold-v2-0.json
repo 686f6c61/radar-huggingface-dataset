@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "huawei-bayerlab/marigold-v2-0",
+  "slug": "huawei-bayerlab-marigold-v2-0",
+  "author": "huawei-bayerlab",
+  "url": "https://huggingface.co/huawei-bayerlab/marigold-v2-0",
+  "created_at": "2026-08-27T22:54:40.000Z",
+  "updated_at": "2026-09-08T01:12:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "monocular-depth-estimation",
+    "surface-normal-estimation",
+    "albedo-estimation",
+    "dense-prediction",
+    "diffusion-transformer",
+    "qwen-image-edit",
+    "lora",
+    "depth-estimation",
+    "en",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17254245093,
+  "storage_human": "17.3 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2509",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huawei France",
+      "url": "https://www.huawei.com/fr/",
+      "snippet": "Huawei est un leader technologique mondial, qui développe des produits et solutions intégrés à travers quatre domaines clés : les …"
+    },
+    {
+      "title": "HUAWEI Bayer Lab - GitHub",
+      "url": "https://github.com/huawei-bayerlab/",
+      "snippet": "HUAWEI Bayer Lab We use this space to contribute to the open-source community in the area of computer vision and computational photography. The repositories only contain code for papers and are not official open-source products."
+    },
+    {
+      "title": "HUAWEI France",
+      "url": "https://consumer.huawei.com/fr/",
+      "snippet": "Découvrez les dernières nouveautés technologiques en matière de smartphones, de wearables, de PC, de tablettes, d&#039;audios …"
+    },
+    {
+      "title": "GitHub - prs-eth/Marigold: [CVPR 2024 - Oral, Best Paper Award ...",
+      "url": "https://github.com/prs-eth/Marigold",
+      "snippet": "This project implements Marigold, a Computer Vision method for estimating image characteristics. Initially proposed for extracting high-resolution depth maps in our CVPR 2024 paper \"Repurposing Diffusion-Based Image Generators for Monocular Depth Estimation\", we extended the method to other ..."
+    },
+    {
+      "title": "Huawei - Building a Fully Connected, Intelligent World",
+      "url": "https://www.huawei.com/en/",
+      "snippet": "Founded in 1987, Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart …"
+    }
+  ]
+}

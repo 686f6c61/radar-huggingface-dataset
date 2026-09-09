@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ornith-1.5-Cyclos-1M-Uncensored-GGUF",
   "created_at": "2026-09-07T15:15:49.000Z",
-  "updated_at": "2026-09-07T18:08:07.000Z",
+  "updated_at": "2026-09-08T05:31:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,13 +32,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 2,
+  "downloads_30d": 240,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 153404197408,
-  "storage_human": "153.4 GB",
+  "storage_bytes": 244419007904,
+  "storage_human": "244.4 GB",
   "base_model": "abhaymin/Ornith-1.5-Cyclos-1M-Uncensored",
   "formats": [
     "gguf"

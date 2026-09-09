@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Ja-ck/colbert-ko-yes24-ft",
+  "slug": "ja-ck-colbert-ko-yes24-ft",
+  "author": "Ja-ck",
+  "url": "https://huggingface.co/Ja-ck/colbert-ko-yes24-ft",
+  "created_at": "2026-09-08T23:37:52.000Z",
+  "updated_at": "2026-09-08T23:39:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "colbert",
+    "multi-vector",
+    "late-interaction",
+    "information-retrieval",
+    "semantic-search",
+    "korean",
+    "book-search",
+    "domain-adaptation",
+    "feature-extraction",
+    "ko",
+    "base_model:yjoonjang/colbert-ko-v1",
+    "base_model:finetune:yjoonjang/colbert-ko-v1",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 148733184,
+  "parameters_human": "148.7M",
+  "storage_bytes": 595339088,
+  "storage_human": "595 MB",
+  "base_model": "yjoonjang/colbert-ko-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeunes Agriculteurs - syndicat agricole",
+      "url": "https://www.jeunes-agriculteurs.fr/",
+      "snippet": "JA est le seul syndicat agricole dont les responsables sont des agriculteurs âgés de moins de 40 ans."
+    },
+    {
+      "title": "Ja-ck/colbert-ko-yes24-ft · Hugging Face",
+      "url": "https://huggingface.co/Ja-ck/colbert-ko-yes24-ft",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jà — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/j%C3%A0",
+      "snippet": "Basculer la table des matières jà"
+    },
+    {
+      "title": "yjoonjang/colbert-ko-en-v2 · Hugging Face",
+      "url": "https://huggingface.co/yjoonjang/colbert-ko-en-v2",
+      "snippet": "Instructions to use yjoonjang/colbert-ko-en-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Définition de jà | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/ja",
+      "snippet": "Mar 28, 2024 · Définition de jà : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « jà »"
+    }
+  ]
+}

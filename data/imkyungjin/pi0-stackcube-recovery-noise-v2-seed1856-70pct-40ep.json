@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-recovery-noise-v2-seed1856-70pct-40ep",
+  "slug": "imkyungjin-pi0-stackcube-recovery-noise-v2-seed1856-70pct-40ep",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recovery-noise-v2-seed1856-70pct-40ep",
+  "created_at": "2026-09-09T00:13:37.000Z",
+  "updated_at": "2026-09-09T00:16:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:taewonkoo/stack_cube_recovery_noise_v2_seed1856_70pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ImKyungjin/pi0-stackcube-recovery-noise-70pct-40ep · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recovery-noise-70pct-40ep",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=fr",
+      "snippet": "Voici Gemini, l'assistant IA de Google. Faites-vous aider pour rédiger, planifier, trouver des idées et plus encore. Découvrez la …"
+    },
+    {
+      "title": "ImKyungjin/pi0-stackcube-recover-noise-10pct-40ep · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-10pct-40ep",
+      "snippet": "Instructions to use ImKyungjin/pi0-stackcube-recover-noise-10pct-40ep with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gemini, l'assistant IA de Google",
+      "url": "https://gemini.google/fr/about/?hl=fr",
+      "snippet": "Libérez votre créativité et votre productivité avec l'assistant IA de Google. Trouvez des idées, simplifiez des sujets complexes et …"
+    }
+  ]
+}

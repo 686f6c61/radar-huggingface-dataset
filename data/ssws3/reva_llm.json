@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ssws3/reva_llm",
+  "slug": "ssws3-reva_llm",
+  "author": "ssws3",
+  "url": "https://huggingface.co/ssws3/reva_llm",
+  "created_at": "2026-09-08T20:22:49.000Z",
+  "updated_at": "2026-09-08T20:22:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen3_5_moe",
+    "nvidia",
+    "ModelOpt",
+    "Qwen3.6",
+    "quantized",
+    "FP4",
+    "fp4",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18683860336,
+  "parameters_human": "18.68B",
+  "storage_bytes": 23450872529,
+  "storage_human": "23.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free VPN with no ads and no speed limits | Proton VPN",
+      "url": "https://protonvpn.com/free-vpn",
+      "snippet": "With Proton VPN Free, you can defeat censorship and access the internet privately. We operate a strict no-logs policy, and we’ll …"
+    },
+    {
+      "title": "REVA: Supporting LLM-Generated Programming Feedback Validation at Scale ...",
+      "url": "https://arxiv.org/pdf/2507.11470",
+      "snippet": "Abstract This paper introduces REVA, a human-AI system that expedites in-structor review of voluminous AI-generated programming feedback by sequencing submissions to minimize cognitive context shifts and propagating instructor-driven revisions across semantically similar instances."
+    },
+    {
+      "title": "Téléchargez notre VPN gratuit et sans limites de données | Proton VPN",
+      "url": "https://protonvpn.com/fr/free-vpn/download",
+      "snippet": "Téléchargez gratuitement Proton VPN : le VPN sans limites pour Android, iPhone, iPad, Windows, Mac, Linux, Chromebook, Smart …"
+    },
+    {
+      "title": "REVA: Supporting LLM-Generated Programming Feedback Validation at Scale ...",
+      "url": "https://arxiv.org/html/2507.11470v1",
+      "snippet": "Figure 1. The workflow of REVA. There are three steps to reviewing and providing AI-generated programming feedback at scale using REVA. (Step 1) Collect Student Code Submissions where instructors gather submissions from hundreds of students to a coding exercise. (Step 2) Instructor Review and Revise AI Feedback, the core innovation of REVA, where instructors efficiently validate feedback ..."
+    },
+    {
+      "title": "Download Proton VPN (ProtonVPN) (free) for Windows, macOS",
+      "url": "https://gizmodo.com/download/protonvpn",
+      "snippet": "Aug 31, 2026 · Is Proton VPN Free? Proton VPN offers a free plan with unlimited data, which is unusual among VPN providers. The …"
+    }
+  ]
+}

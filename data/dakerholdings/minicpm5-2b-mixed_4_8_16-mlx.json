@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dakerholdings/MiniCPM5-2B-mixed_4_8_16-mlx",
+  "slug": "dakerholdings-minicpm5-2b-mixed_4_8_16-mlx",
+  "author": "dakerholdings",
+  "url": "https://huggingface.co/dakerholdings/MiniCPM5-2B-mixed_4_8_16-mlx",
+  "created_at": "2026-09-08T21:45:15.000Z",
+  "updated_at": "2026-09-08T22:53:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "quantized",
+    "verified",
+    "mixed_4_8_16",
+    "conversational",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 2339894566,
+  "storage_human": "2.3 GB",
+  "base_model": "openbmb/MiniCPM5-2B-GGUF, openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/xhtml/search",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "Thanks to FlagOS’s unified multi-chip AI system software stack, MiniCPM5-2B was adapted to 9 different AI chips in an extremely short time. Currently, the multi-chip version of MiniCPM5-2B has been released on FlagRelease, FlagOS’s platform for automatic migration, adaptation, and deployment of large models across multi-architecture AI chips."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "302 Moved The document has moved here."
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B-MLX · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    }
+  ]
+}

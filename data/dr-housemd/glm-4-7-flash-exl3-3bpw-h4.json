@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "dr-housemd/GLM-4.7-Flash-exl3-3bpw-H4",
+  "slug": "dr-housemd-glm-4-7-flash-exl3-3bpw-h4",
+  "author": "dr-housemd",
+  "url": "https://huggingface.co/dr-housemd/GLM-4.7-Flash-exl3-3bpw-H4",
+  "created_at": "2026-09-08T19:31:52.000Z",
+  "updated_at": "2026-09-08T20:06:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4_moe_lite",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2508.06471",
+    "license:mit",
+    "endpoints_compatible",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6435534528,
+  "parameters_human": "6.44B",
+  "storage_bytes": 12907068482,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doctolib : Prenez rendez-vous en ligne chez un soignant",
+      "url": "https://www.doctolib.fr/",
+      "snippet": "Réservez des consultations vidéo ou en présentiel, et recevez des rappels pour ne jamais les manquer. Bénéficiez de soins …"
+    },
+    {
+      "title": "dr-housemd/G4-MeroMero-v2-31B-exl3-3bpw · Hugging Face",
+      "url": "https://huggingface.co/dr-housemd/G4-MeroMero-v2-31B-exl3-3bpw",
+      "snippet": "Heavily inspired by a few research papers, StoryScope: Investigating idiosyncrasies in AI fiction and particularly Elias in the Lighthouse, Again?. Measuring these narrative tics and attractors against simple prompts seems to be a good way to target the model's slop and kick start giving Gemma 4 some diversity: anything that repeatedly occurs across generations of such a generic prompt is ..."
+    },
+    {
+      "title": "Rendez-vous Docteur Céline Bausiere, Médecine générale à ELVEN",
+      "url": "https://prendreunrendezvous.fr/rendez-vous/168257/medecine-generale/docteur-celine-bausiere?prdv=1",
+      "snippet": "Je suis remplacée de mai à juillet par le Dr Peron Anne-Laure et à compter d'août par le Dr Sevestre Anne-Laure. Chaque jour il y a …"
+    },
+    {
+      "title": "dr-housemd/G4-MeroMero-v2-31B-exl3-3bpw at main - Hugging Face",
+      "url": "https://huggingface.co/dr-housemd/G4-MeroMero-v2-31B-exl3-3bpw/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main G4-MeroMero-v2-31B-exl3-3bpw 15.9 GB Ctrl+K Ctrl+K 1 contributor History:2 commits dr-housemd Upload 14 files 47ecbf5 verifiedabout 3 hours ago .gitattributes Safe 1.57 kBUpload 14 filesabout 3 hours ago Gemma4-NoThink.json Safe 1.88 kBUpload 14 filesabout 3 hours ago ..."
+    },
+    {
+      "title": "Rendez-vous en ligne Dr MEVEL à ELVEN",
+      "url": "https://maisonmedicaledelven.prendreunrendezvous.fr/",
+      "snippet": "Ce site vous permet de simplifier la gestion de vos rendez-vous. Cliquez sur le bouton ci-dessous pour prendre, déplacer ou …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "falloutxvats/brain-reason",
+  "slug": "falloutxvats-brain-reason",
+  "author": "falloutxvats",
+  "url": "https://huggingface.co/falloutxvats/brain-reason",
+  "created_at": "2026-09-08T21:45:14.000Z",
+  "updated_at": "2026-09-08T21:51:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 16540269280,
+  "storage_human": "16.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "musicalradio.de | Musicals kostenlos im Radio",
+      "url": "https://musicalradio.de/",
+      "snippet": "4 days ago · musicalradio.de | Musicals kostenlos im Radio. Zum Hauptinhalt springen. App . MUSICAL . News. Tickets. RADIO . …"
+    },
+    {
+      "title": "Realistic AI Overhaul (ESPless) at Fallout New Vegas - Nexus Mods",
+      "url": "https://www.nexusmods.com/newvegas/mods/90334",
+      "snippet": "This mod completely reinmagins the AI of New Vegas and ruthlessly pushes it to an unforgivable extreme!"
+    },
+    {
+      "title": "musicalradio einschalten – musicalradio.de | Musicals kostenlos im …",
+      "url": "https://musicalradio.de/radio/einschalten",
+      "snippet": "musicalradio ging am 1. Oktober 2004 auf Sendung. Also bereits vor Jahren und Tagen. Der Kanal gehört zur wunschradio.fm …"
+    },
+    {
+      "title": "Best AI Models in September 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for September 2026."
+    },
+    {
+      "title": "Musicalradio.de | Hören • LIVE",
+      "url": "https://www.radioline.co/de/radios/musicalradio_de",
+      "snippet": "musicalradio.de ist Deutschlands interaktivster Musical-Sender, bei dem das Musikprogramm vollständig und kostenlos von allen …"
+    }
+  ]
+}

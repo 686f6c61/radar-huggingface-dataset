@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "marko863/act_bin_picking",
+  "slug": "marko863-act_bin_picking",
+  "author": "marko863",
+  "url": "https://huggingface.co/marko863/act_bin_picking",
+  "created_at": "2026-09-09T00:30:18.000Z",
+  "updated_at": "2026-09-09T00:30:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:marko863/bin_picking_test",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723172,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RWE Americas, LLC",
+      "url": "https://www.rwe.com/der-konzern/rwe-americas/",
+      "snippet": "RWE Americas, eine Tochtergesellschaft des RWE-Konzerns, ist ein führendes Unternehmen im Bereich der Erneuerbaren Energien …"
+    },
+    {
+      "title": "marko863 (Marko Ivkovic) - Hugging Face",
+      "url": "https://huggingface.co/marko863",
+      "snippet": "Recent Activity updated a modelabout 5 hours ago marko863/act_cube_in_box published a modelabout 5 hours ago marko863/act_cube_in_box updated a dataset27 days ago marko863/cube_in_box View all activity"
+    },
+    {
+      "title": "Contacts | RWE in the Americas",
+      "url": "https://americas.rwe.com/contacts/",
+      "snippet": "RWE is a full–service provider of operations, maintenance and asset management services in the American Market. You need a …"
+    },
+    {
+      "title": "marko863 (Marko Ivkovic) - Hugging Face",
+      "url": "https://huggingface.co/marko863/models",
+      "snippet": "marko863's models1 Sort: Recently updated marko863/act_cube_in_box Robotics • 51.7M•Updated about 14 hours ago"
+    },
+    {
+      "title": "RWE in the Americas",
+      "url": "https://americas.rwe.com/",
+      "snippet": "RWE Americas, a subsidiary of RWE, is a US-based energy company that is helping to meet the growing demand for energy across …"
+    }
+  ]
+}

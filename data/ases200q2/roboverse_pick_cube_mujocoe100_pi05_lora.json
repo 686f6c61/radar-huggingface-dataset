@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ases200q2/roboverse_pick_cube_mujocoE100_pi05_lora",
+  "slug": "ases200q2-roboverse_pick_cube_mujocoe100_pi05_lora",
+  "author": "ases200q2",
+  "url": "https://huggingface.co/ases200q2/roboverse_pick_cube_mujocoE100_pi05_lora",
+  "created_at": "2026-09-08T23:53:20.000Z",
+  "updated_at": "2026-09-08T23:53:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:ases200q2/roboverse-pick_cube-mujocoE100",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5177616,
+  "storage_human": "5 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netzkino",
+      "url": "https://www.netzkino.de/",
+      "snippet": "Netzkino setzt Cookies, Pixel und ähnliche Technologien von Drittanbietern ein, damit unser Dienst zuverlässig und sicher läuft und …"
+    },
+    {
+      "title": "roboverse_pick_cube_mujocoE100_pi05_lora - Hugging Face",
+      "url": "https://huggingface.co/ases200q2/roboverse_pick_cube_mujocoE100_pi05_lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ases200q2/roboverse-pick_cube-mujocoE100-isaacE2 - Hugging Face",
+      "url": "https://huggingface.co/datasets/ases200q2/roboverse-pick_cube-mujocoE100-isaacE2/viewer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RoboVerse: Towards a Unified Platform, Dataset and Benchmark for ...",
+      "url": "https://roboverseorg.github.io/",
+      "snippet": "Comprehensive experiments demonstrate that RoboVerse enhances the performance of imitation learning, reinforcement learning, and world model learning, improving sim-to-real transfer. These results validate the reliability of our dataset and benchmarks, establishing RoboVerse as a robust solution for advancing simulation-assisted robot learning."
+    },
+    {
+      "title": "roboverse-pick_cube-mujocoE50 · dataset | Festivus",
+      "url": "https://festivus.hapticlabs.ai/data/datasets/ases200q2-roboverse-pick-cube-mujocoe50",
+      "snippet": "Overview Name roboverse-pick_cube-mujocoE50 Source ases200q2 Episodes 0 Robot count 0 Format lerobot Description"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "liuchen88/Qwen3.8-27B-CommercialLoan-MLX",
+  "slug": "liuchen88-qwen3-8-27b-commercialloan-mlx",
+  "author": "liuchen88",
+  "url": "https://huggingface.co/liuchen88/Qwen3.8-27B-CommercialLoan-MLX",
+  "created_at": "2026-09-08T19:43:07.000Z",
+  "updated_at": "2026-09-08T20:20:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3",
+    "credit-scoring",
+    "loan-approval",
+    "lora",
+    "finance",
+    "chinese",
+    "text-generation",
+    "conversational",
+    "zh",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54733595835,
+  "storage_human": "54.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【尺码】 L(170/92A)、XL(175/96A)、XXL(180/100A)代表衣服的什么东 …",
+      "url": "https://zhidao.baidu.com/question/12554274.html",
+      "snippet": "3、XXL（180／100A）XXL表示号，属加大号；180表示身高；100表示胸围；A是正常体型 “号”指高度，以厘米表示人体的身高，是设 …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "男装衬衣43号是多大xl？xxl？还是m_百度知道",
+      "url": "https://zhidao.baidu.com/question/261204845.html",
+      "snippet": "男装衬衣43号是多大xl？xxl？还是m欧码XXXL=男女身高185以上，男衬衫领围43以上。衬衫尺寸对照如下：1、欧码XS=男女身 …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "小米手机怎么进入和退出fastboot模式-百度经验",
+      "url": "https://jingyan.baidu.com/article/925f8cb8de3d12c0dde05613.html",
+      "snippet": "Sep 1, 2017 · 小米手机怎么进入和退出fastboot模式,用过小米手机的用户就知道小米系统有个fatoot的刷机模式，但是很多用户会不小 …"
+    }
+  ]
+}

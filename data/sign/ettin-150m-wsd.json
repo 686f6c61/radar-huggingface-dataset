@@ -5,7 +5,7 @@
   "author": "sign",
   "url": "https://huggingface.co/sign/Ettin-150m-WSD",
   "created_at": "2026-09-07T20:28:32.000Z",
-  "updated_at": "2026-09-07T20:28:44.000Z",
+  "updated_at": "2026-09-08T06:36:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 149703296,
   "parameters_human": "149.7M",
-  "storage_bytes": 299420880,
-  "storage_human": "299 MB",
+  "storage_bytes": 598841760,
+  "storage_human": "599 MB",
   "base_model": "jhu-clsp/ettin-encoder-150m",
   "formats": [
     "safetensors"

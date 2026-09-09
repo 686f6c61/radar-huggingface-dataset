@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "matmei/POCQ_tr",
+  "slug": "matmei-pocq_tr",
+  "author": "matmei",
+  "url": "https://huggingface.co/matmei/POCQ_tr",
+  "created_at": "2026-09-08T19:29:54.000Z",
+  "updated_at": "2026-09-08T20:17:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 1071335569,
+  "storage_human": "1.1 GB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Billetterie Ticketmaster.fr | Billets et places de Concert, Spectacle ...",
+      "url": "https://www.ticketmaster.fr/fr",
+      "snippet": "Avec Ticketmaster, accédez à la billetterie de places de concerts (électro, pop rock, rap, metal, classique, jazz…), comédies …"
+    },
+    {
+      "title": "PoCQ: Proof of Contribution Quality as a Lightweight Blockchain ...",
+      "url": "https://arxiv.org/html/2606.05642v1",
+      "snippet": "Abstract Decentralized Federated Learning (FL) removes reliance on centralized coordinators but remains vulnerable to model poisoning, unreliable validation, and high validation overhead. This paper introduces Proof of Contribution Quality (PoCQ), a blockchain-based consensus framework designed to secure decentralized FL through reputation-aware validation and aggregation. PoCQ evaluates ..."
+    },
+    {
+      "title": "Fnac Spectacles | Billets concerts, théâtre, musées, spectacles...",
+      "url": "https://www.fnacspectacles.com/",
+      "snippet": "Réservez vos billets en toute sécurité sur Fnac Spectacles : concerts, spectacles, théâtre, musées, expositions, sports, parcs …"
+    },
+    {
+      "title": "Freeware military AI traffic for Flight Simulator and Prepar3d ...",
+      "url": "https://militaryaiworks.com/",
+      "snippet": "Hi and welcome to Military AI Works, or MAIW for short, the home base of military AI traffic for Flight Simulator and Prepar3D."
+    },
+    {
+      "title": "Billetterie Concerts & Festivals | Billets sur Fnac Spectacles",
+      "url": "https://www.fnacspectacles.com/events/concerts-festivals-93/",
+      "snippet": "Vos billets pour les meilleurs concerts du moment sur Fnac Spectacles. Retrouvez tous vos artistes préférés et sélectionner vos …"
+    }
+  ]
+}

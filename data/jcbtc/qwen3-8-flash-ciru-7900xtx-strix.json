@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "jcbtc/Qwen3.8-Flash-CIRU-7900XTX-Strix",
+  "slug": "jcbtc-qwen3-8-flash-ciru-7900xtx-strix",
+  "author": "jcbtc",
+  "url": "https://huggingface.co/jcbtc/Qwen3.8-Flash-CIRU-7900XTX-Strix",
+  "created_at": "2026-09-08T23:53:19.000Z",
+  "updated_at": "2026-09-09T00:42:13.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.8",
+    "amd",
+    "rocm",
+    "gfx1100",
+    "gfx1151",
+    "rx-7900-xtx",
+    "strix-halo",
+    "mtp",
+    "local-inference",
+    "text-generation",
+    "base_model:jcbtc/Qwen3.8-Flash-CIRU-STRIX-IU4",
+    "base_model:quantized:jcbtc/Qwen3.8-Flash-CIRU-STRIX-IU4",
+    "license:other",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125743653760,
+  "parameters_human": "125.74B",
+  "storage_bytes": 136000521549,
+  "storage_human": "136.0 GB",
+  "base_model": "jcbtc/Qwen3.8-Flash-CIRU-STRIX-IU4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chat Login – Chatroom2000",
+      "url": "https://www.chatroom2000.de/chat-login/",
+      "snippet": "Ohne Anmeldung kannst du direkt loschatten. Die Bedienung ist sehr einfach und übersichtlich. Dieses Portal ist auch für Chat …"
+    },
+    {
+      "title": "jcbtc/Qwen3.8-Flash-CIRU-7900XTX-Strix · Hugging Face",
+      "url": "https://huggingface.co/jcbtc/Qwen3.8-Flash-CIRU-7900XTX-Strix",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chatroom2000 – Kostenloser Chat ohne Anmeldung",
+      "url": "https://www.chatroom2000.de/",
+      "snippet": "NEUE LEUTE KENNENLERNEN UND CHATTEN NEUE LEUTE KENNENLERNEN UND CHATTEN Flirt Chat mit großer Wirkung …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Chat - Knuddels.de-Forum",
+      "url": "https://forum.knuddels.de/ubbthreads.php?ubb=showflat&Number=82173",
+      "snippet": "Chat Optionen Thema bewerten Chat- #82173- 16.11.2003, 19:36:43 Gelöschter Nutzer Nicht registriert Hi , hier ein wahres Gedicht !"
+    }
+  ]
+}

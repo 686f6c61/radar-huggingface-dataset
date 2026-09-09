@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Jonnester/LR-AttnRes-sliced-fast-05b-n16-r512",
+  "slug": "jonnester-lr-attnres-sliced-fast-05b-n16-r512",
+  "author": "Jonnester",
+  "url": "https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n16-r512",
+  "created_at": "2026-09-08T22:10:49.000Z",
+  "updated_at": "2026-09-08T22:13:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2472596203,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Remove all pornography websites - Google Search Community",
+      "url": "https://support.google.com/websearch/thread/86554728/remove-all-pornography-websites?hl=en",
+      "snippet": "Dec 2, 2020 · This help content & informationGeneral Help Center experience Search"
+    },
+    {
+      "title": "Jonnester/LR-AttnRes-sliced-05b-n4-r32 · Hugging Face",
+      "url": "https://huggingface.co/Jonnester/LR-AttnRes-sliced-05b-n4-r32",
+      "snippet": "Jonnester LR-AttnRes-sliced-05b-n4-r32 like0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Modificare le autorizzazioni relative alle impostazioni dei siti ...",
+      "url": "https://support.google.com/chrome/answer/114662?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Puoi impostare le autorizzazioni per un sito senza modificare le impostazioni predefinite. Gestire le autorizzazioni dei siti Puoi …"
+    },
+    {
+      "title": "Jonnester/LR-AttnRes-n16-r32 · Hugging Face",
+      "url": "https://huggingface.co/Jonnester/LR-AttnRes-n16-r32",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to restore the sound on my headphones on the application called ...",
+      "url": "https://support.google.com/android/thread/29178396/how-to-restore-the-sound-on-my-headphones-on-the-application-called-youporn?hl=en",
+      "snippet": "How to restore the sound on my headphones on the application called YouPorn - Android Community false"
+    }
+  ]
+}

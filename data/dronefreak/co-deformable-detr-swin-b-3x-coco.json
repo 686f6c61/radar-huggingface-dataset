@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-deformable-detr-swin-b-3x-coco",
+  "slug": "dronefreak-co-deformable-detr-swin-b-3x-coco",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-deformable-detr-swin-b-3x-coco",
+  "created_at": "2026-09-08T21:48:56.000Z",
+  "updated_at": "2026-09-08T21:49:31.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-deformable-detr",
+    "detr",
+    "coco",
+    "swin",
+    "pytorch",
+    "iccv2023",
+    "en",
+    "dataset:detection-datasets/coco",
+    "arxiv:2211.12860",
+    "arxiv:1405.0312",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 508693065,
+  "storage_human": "509 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO 2017 val",
+      "metric": "box AP",
+      "value": 57.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "草津町の2週間天気(旧:10日間天気) - 日本気象協会 tenki.jp",
+      "url": "https://tenki.jp/forecast/3/13/4220/10426/10days.html",
+      "snippet": "Jul 20, 2026 · 草津町の2週間天気、気温、降水確率などに加え、台風情報、警報注意報を掲載。14日先までわかるからお出かけ計画 …"
+    },
+    {
+      "title": "GitHub - Sense-X/Co-DETR: [ICCV 2023] DETRs with Collaborative Hybrid ...",
+      "url": "https://github.com/Sense-X/Co-DETR",
+      "snippet": "[07/03/2023]Co-DETR with ViT-L(304M parameters)sets a new record of 65.666.0 APon COCO test-dev, surpassing the previous best model InternImage-G(~3000M parameters). It is the first model to exceed 66.0 AP on COCO test-dev. [07/03/2023]Code for Co-Deformable-DETR is released."
+    },
+    {
+      "title": "天氣 - 草津町 - 14天預報：氣溫、風和雷達 | Ventusky",
+      "url": "https://www.ventusky.com/zh-tw/kusatsu;36.62;138.6",
+      "snippet": "草津町 - 十天的天氣預報，資訊來自氣象觀測站、網絡攝影機、日出日落、當地風向及降水圖 空氣污染 (AQI) 空氣品質指數（AQI）是 …"
+    },
+    {
+      "title": "co-deformable-detr/README.md at main · Downy-newlearner/co ... - GitHub",
+      "url": "https://github.com/Downy-newlearner/co-deformable-detr/blob/main/README.md",
+      "snippet": "[07/03/2023] Co-DETR with ViT-L (304M parameters) sets a new record of 65.6 66.0 AP on COCO test-dev, surpassing the previous best model InternImage-G (~3000M parameters). It is the first model to exceed 66.0 AP on COCO test-dev. [07/03/2023] Code for Co-Deformable-DETR is released."
+    },
+    {
+      "title": "草津町の1時間天気 - 日本気象協会 tenki.jp",
+      "url": "https://tenki.jp/forecast/3/13/4220/10426/1hour.html",
+      "snippet": "草津町の1時間ごとの天気、気温、降水量などに加え、台風情報、警報注意報を掲載。3日先までわかるからお出かけ計画に役立ちま …"
+    }
+  ]
+}

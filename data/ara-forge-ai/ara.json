@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Ara-Forge-AI/ara",
+  "slug": "ara-forge-ai-ara",
+  "author": "Ara-Forge-AI",
+  "url": "https://huggingface.co/Ara-Forge-AI/ara",
+  "created_at": "2026-09-09T00:09:27.000Z",
+  "updated_at": "2026-09-09T00:21:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaussures ara | Commandez dans le magasin en ligne ara officiel - ara …",
+      "url": "https://www.ara-shoes.com/fr",
+      "snippet": "\"Des couleurs douces, une attitude affirmée : les chaussures ara en tons pastel montrent comment des nuances subtiles peuvent …"
+    },
+    {
+      "title": "Ara-Forge-AI/ara · Hugging Face",
+      "url": "https://huggingface.co/Ara-Forge-AI/ara",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chaussures femme ara - Commander dans la boutique ara officielle - ara …",
+      "url": "https://www.ara-shoes.com/fr/femme/",
+      "snippet": "Nos chaussures d'ara pour femmes sont des compagnons essentiels au quotidien. Des classiques intemporels aux designs …"
+    },
+    {
+      "title": "MeridianAlgo/ARA.AI · Hugging Face",
+      "url": "https://huggingface.co/MeridianAlgo/ARA.AI",
+      "snippet": "ARA AI - Financial Prediction Models Continuously trained ensemble ML models for stock and forex prediction. Models Stock Models: Trained on random selection of stocks every 2 hours Forex Models: EURUSD, GBPUSD, USDJPY trained every 2 hours Training Schedule Models are automatically retrained every 2 hours (12 times daily) using: 2 years of historical data Incremental training on existing ..."
+    },
+    {
+      "title": "Ara (oiseau) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ara_(oiseau)",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Ara (oiseau) 37 languesAjouter un sujet"
+    }
+  ]
+}

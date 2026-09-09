@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NotHereNorThere/gpt-oss-vl-exp",
+  "slug": "notherenorthere-gpt-oss-vl-exp",
+  "author": "NotHereNorThere",
+  "url": "https://huggingface.co/NotHereNorThere/gpt-oss-vl-exp",
+  "created_at": "2026-09-09T00:32:47.000Z",
+  "updated_at": "2026-09-09T02:29:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "siglip2",
+    "gpt-oss",
+    "vision",
+    "experimental",
+    "text-generation",
+    "en",
+    "dataset:ahmedheakl/llavacot-think",
+    "base_model:google/siglip2-so400m-patch16-naflex",
+    "base_model:finetune:google/siglip2-so400m-patch16-naflex",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18429986181,
+  "storage_human": "18.4 GB",
+  "base_model": "openai/gpt-oss-20b, google/siglip2-so400m-patch16-naflex",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DROPS Design - Knitting patterns, crochet patterns & high quality yarns",
+      "url": "https://www.garnstudio.com/",
+      "snippet": "Here you'll find more than 160.000 free knitting patterns and crochet patterns with tutorial videos, as well as beautiful yarns at …"
+    },
+    {
+      "title": "OpenAI open-weight models (gpt-oss) | OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/11870455-openai-gpt-oss",
+      "snippet": "The gpt-oss model weights are free to download and use under the Apache 2.0 license and gpt-oss usage policy. However, you are responsible for any costs associated with running them — such as compute, storage, or third-party hosting fees. Pricing for those will depend on your chosen infrastructure or provider. Are these models “open source”?"
+    },
+    {
+      "title": "Modèles gratuits tricot & crochet - DROPS Design",
+      "url": "https://www.garnstudio.com/home.php?cid=8",
+      "snippet": "Vous trouverez ici plus de 120 000 modèles gratuits tricot et crochet avec des tutoriels en vidéo aussi bien que des laines …"
+    },
+    {
+      "title": "Introducing gpt-oss | OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "snippet": "We’re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware."
+    },
+    {
+      "title": "Retailer Pages @ DROPS Design",
+      "url": "https://store.garnstudio.com/",
+      "snippet": "Login Click the \"Login\" button to proceed. Forgot your password?"
+    }
+  ]
+}

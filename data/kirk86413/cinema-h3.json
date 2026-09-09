@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kirk86413/cinema-h3",
+  "slug": "kirk86413-cinema-h3",
+  "author": "kirk86413",
+  "url": "https://huggingface.co/kirk86413/cinema-h3",
+  "created_at": "2026-09-03T20:03:26.000Z",
+  "updated_at": "2026-09-03T20:04:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155110448,
+  "storage_human": "155 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oturma Odası Takımı Fiyatları | Gündoğdu",
+      "url": "https://www.gundogdumobilya.com.tr/oturma-odasi",
+      "snippet": "Konforlu ve modern oturma odası takımı modelleri Gündoğdu'da! Tarzınıza uygun en ucuz oturma odası fiyatları ve kampanyaları …"
+    },
+    {
+      "title": "kirk86413/cinema-h3 · Hugging Face",
+      "url": "https://huggingface.co/kirk86413/cinema-h3",
+      "snippet": "kirk86413 cinema-h3 like5 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Gold Koltuk Takımı ️ - Modern Tasarım, Konforlu Oturum",
+      "url": "https://www.trendyol.com/gold-koltuk-takimi-y-s53670",
+      "snippet": "Gold Koltuk Takımı, modern ev dekorasyonunun vazgeçilmez parçalarından biridir. Hem şıklığı hem de konforuyla dikkat çeken bu …"
+    },
+    {
+      "title": "kirk86413/cinematic-h3 at main - Hugging Face",
+      "url": "https://huggingface.co/kirk86413/cinematic-h3/tree/main",
+      "snippet": "kirk86413 cinematic-h3 like0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Oturma Grubu Modelleri ve Fiyatları | Bellona",
+      "url": "https://www.bellona.com.tr/kategori/oturma-odasi",
+      "snippet": "Modern tasarımlardan klasik çizgilere, minimalist yaklaşımlardan fonksiyonel çözümlere kadar geniş bir yelpazede sunulan oturma …"
+    }
+  ]
+}

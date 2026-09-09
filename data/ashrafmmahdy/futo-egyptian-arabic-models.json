@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AshrafMMahdy/futo-egyptian-arabic-models",
+  "slug": "ashrafmmahdy-futo-egyptian-arabic-models",
+  "author": "AshrafMMahdy",
+  "url": "https://huggingface.co/AshrafMMahdy/futo-egyptian-arabic-models",
+  "created_at": "2026-09-09T00:48:47.000Z",
+  "updated_at": "2026-09-09T00:49:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "whisper",
+    "whisper.cpp",
+    "ggml",
+    "futo",
+    "futo-keyboard",
+    "egyptian-arabic",
+    "code-switching",
+    "acft",
+    "ar",
+    "en",
+    "base_model:IbrahimAmin/code-switched-egyptian-arabic-whisper-small",
+    "base_model:finetune:IbrahimAmin/code-switched-egyptian-arabic-whisper-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887903574,
+  "storage_human": "1.9 GB",
+  "base_model": "IbrahimAmin/code-switched-egyptian-arabic-whisper-small, mohammedaly22/whisper-large-v3-turbo-egyptian-code-switching",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Releases: ahmedgomaaa/futo-keyboard-egyptian-arabic - GitHub",
+      "url": "https://github.com/ahmedgomaaa/futo-keyboard-egyptian-arabic/releases",
+      "snippet": "Import via FUTO Keyboard → Languages & Models → Arabic → Dictionary → Import. ggml-egyptian-phase3-q5_1.bin — Whisper voice model fine-tuned on spoken Egyptian (190 MB)."
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "futo-keyboard-egyptian-arabic/voice at master · ahmedgomaaa ... - GitHub",
+      "url": "https://github.com/ahmedgomaaa/futo-keyboard-egyptian-arabic/tree/master/voice",
+      "snippet": "A Whisper model fine-tuned on Egyptian Arabic, converted to GGML for FUTO Keyboard's voice input. It replaces FUTO's stock multilingual model, which is close to unusable for spoken Egyptian dialect. ggml-egyptian-phase3-q5_1.bin — 190 MB — install this one."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

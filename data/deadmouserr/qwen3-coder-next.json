@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "deadmouserr/Qwen3-Coder-Next",
+  "slug": "deadmouserr-qwen3-coder-next",
+  "author": "deadmouserr",
+  "url": "https://huggingface.co/deadmouserr/Qwen3-Coder-Next",
+  "created_at": "2026-09-08T19:48:59.000Z",
+  "updated_at": "2026-09-08T19:49:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_next",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79674391296,
+  "parameters_human": "79.67B",
+  "storage_bytes": 159358031480,
+  "storage_human": "159.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LARPERS - YouTube",
+      "url": "https://www.youtube.com/@LarpersRBLX",
+      "snippet": "WE KICKED APPLE FROM THE LARPERS!!!!!! FRICK THE FANS!!!!! 150K views • 2 months ago"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-coder-next",
+      "snippet": "Today, we're announcing Qwen3-Coder-Next, an open-weight language model designed specifically for coding agents and local development. It features the following key enhancements: Super Efficient with Significant Performance: With only 3B activated parameters (80B total parameters), it achieves performance comparable to models with 10–20x more active parameters, making it highly cost ..."
+    },
+    {
+      "title": "What Does 'LARP' Or 'LARPing' Mean? The Role-Playing Terms Turned …",
+      "url": "https://trending.knowyourmeme.com/editorials/guides/what-does-larp-or-larping-mean-the-role-playing-terms-turned-slang-explained",
+      "snippet": "Apr 3, 2026 · The slang term “LARP” has evolved far beyond its original meaning, shifting from real-world role-playing games to a …"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3-coder-next",
+      "snippet": "Supported Parameters The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3-Coder-Next or leave it blank instead. messages (array): A list of messages comprising the conversation ..."
+    },
+    {
+      "title": "Live action role-playing game - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Live_action_role-playing_game",
+      "snippet": "The LARPers may seem, as some of my interviewees would suggest, too geeky (i.e., too freely creative and immersed in media, too …"
+    }
+  ]
+}

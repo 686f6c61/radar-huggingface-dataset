@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-c920768516b9f7a7",
+  "slug": "gradients-io-tournaments-augmented-c920768516b9f7a7",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-c920768516b9f7a7",
+  "created_at": "2026-09-08T21:34:47.000Z",
+  "updated_at": "2026-09-08T21:36:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077765370,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NHL Hockey Standings | NHL.com",
+      "url": "https://www.nhl.com/standings",
+      "snippet": "The official standings for the National Hockey League."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-c920768516b9f7a7 · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-c920768516b9f7a7",
+      "snippet": "gradients-io-tournaments / augmented-c920768516b9f7a7 like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Official Site of the National Hockey League | NHL.com",
+      "url": "https://www.nhl.com/",
+      "snippet": "The official National Hockey League website including news, rosters, stats, schedules, teams, and video."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-994d8a42aa8e4be9 · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-994d8a42aa8e4be9",
+      "snippet": "Instructions to use gradients-io-tournaments/augmented-994d8a42aa8e4be9 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "NHL Scores | Sep 29, 2026 | NHL.com",
+      "url": "https://www.nhl.com/scores",
+      "snippet": "The official source for scores, previews, recaps, boxscores, video highlights, and more from every National League Hockey game."
+    }
+  ]
+}

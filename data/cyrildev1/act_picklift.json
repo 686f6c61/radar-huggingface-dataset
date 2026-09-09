@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cyrildev1/act_picklift",
+  "slug": "cyrildev1-act_picklift",
+  "author": "cyrildev1",
+  "url": "https://huggingface.co/cyrildev1/act_picklift",
+  "created_at": "2026-09-08T20:20:43.000Z",
+  "updated_at": "2026-09-08T20:30:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:johnsutor/MuJoCoPickLift-v1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51684998,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206800704,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Алопуринол: інструкція + ціна від 42 грн в аптеках | Tabletki.ua",
+      "url": "https://tabletki.ua/uk/%D0%90%D0%BB%D0%BB%D0%BE%D0%BF%D1%83%D1%80%D0%B8%D0%BD%D0%BE%D0%BB/",
+      "snippet": "Алопуринол - інструкція, показання, склад, спосіб застосування . 8результатів по запиту . Торгова назва. Алопуринол . (1) …"
+    },
+    {
+      "title": "adimunot/act-so101-pick-lift · Hugging Face",
+      "url": "https://huggingface.co/adimunot/act-so101-pick-lift",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "Інструкція до препарату Алопуринол 100 мг таблетки №50 (арт.",
+      "url": "https://www.add.ua/ua/manual/alopurinol-sandoz-100mg-50-tabletki.html",
+      "snippet": "20 hours ago · Інструкція до препарату Алопуринол 100 мг таблетки №50 (арт. 198756) - Аптека Доброго Дня. Налаштування. …"
+    },
+    {
+      "title": "W1ndrunn3rr/act_pick_and_lift_v2 · Hugging Face",
+      "url": "https://huggingface.co/W1ndrunn3rr/act_pick_and_lift_v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Аллопуринол: инструкция, цены, аналоги, как принимать — все …",
+      "url": "https://compendium.com.ua/info/61520/allopurinol/",
+      "snippet": "Аллопуринол таблетки — полная инструкция по применению, цена от 57.65 до 108.05 грн в аптеках Украины: Киев, Харьков, …"
+    }
+  ]
+}

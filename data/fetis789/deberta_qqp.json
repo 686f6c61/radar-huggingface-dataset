@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Fetis789/deberta_qqp",
+  "slug": "fetis789-deberta_qqp",
+  "author": "Fetis789",
+  "url": "https://huggingface.co/Fetis789/deberta_qqp",
+  "created_at": "2026-09-08T20:04:06.000Z",
+  "updated_at": "2026-09-08T20:06:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737724537,
+  "storage_human": "738 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blockchain Firm Ripple and Peersyst to Leverage evmOS to Enhance …",
+      "url": "https://www.crowdfundinsider.com/2024/05/225061-blockchain-firm-ripple-and-peersyst-to-leverage-evmos-to-enhance-xrp-ledger-xrpl-evm-sidechain/",
+      "snippet": "May 15, 2024 · Ripple and Peersyst will leverage evmOS to further develop and enhance the XRP Ledger (XRPL) EVM sidechain, …"
+    },
+    {
+      "title": "rambodazimi/deberta-v3-base-finetuned-FFT-QQP · Hugging Face",
+      "url": "https://huggingface.co/rambodazimi/deberta-v3-base-finetuned-FFT-QQP",
+      "snippet": "deberta-v3-base-finetuned-qqp This model is a fine-tuned version of deberta-v3-base on the glue dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Evmos (EVMOS) Staking — Live Rates & Providers",
+      "url": "https://www.stakingrewards.com/asset/evmos",
+      "snippet": "Compare every way to stake Evmos. See live EVMOS reward rates, fees and lock-up periods side by side, and find the best provider …"
+    },
+    {
+      "title": "DeBERTa - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/deberta",
+      "snippet": "The 1.5-billion-parameter DeBERTa-v2-XXLarge model (sometimes referred to as DeBERTa 1.5B in Microsoft's announcements) was the model that first surpassed human performance on the SuperGLUE benchmark. For training this largest variant, CC-News data was added to the training corpus. [3] DeBERTa v3 DeBERTa v3 was introduced in the paper \"DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre ..."
+    },
+    {
+      "title": "Evmos (Tharsis Labs) - L1 Project | Crypto-Fundraising",
+      "url": "https://crypto-fundraising.info/projects/evmos/",
+      "snippet": "Explore Evmos (Tharsis Labs), . View project overview, funding rounds, lead investors, and ecosystem insights on Crypto-Fundraising."
+    }
+  ]
+}

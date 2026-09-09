@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Semeia/indobert-sentimen-mbg",
+  "slug": "semeia-indobert-sentimen-mbg",
+  "author": "Semeia",
+  "url": "https://huggingface.co/Semeia/indobert-sentimen-mbg",
+  "created_at": "2026-09-09T00:06:12.000Z",
+  "updated_at": "2026-09-09T00:10:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124443651,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497798124,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Set up Google Voice - Computer - Google Voice Help",
+      "url": "https://support.google.com/voice/answer/115061?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "In addition to using Google Voice for calls, texts, and voicemails, you can also: Read voicemail transcripts in your inbox and search …"
+    },
+    {
+      "title": "Sentiment Analysis of Public Response to the Free Nutritious Meal ...",
+      "url": "https://ioinformatic.org/index.php/JAIEA/article/download/1755/1205/5004",
+      "snippet": "2. Methodology This research employs a sentiment analysis framework with the IndoBERT model to examine public opinions regarding the Free Nutritious Meal (MBG) Program on Instagram. The methodological approach comprises several key stages, including data collection, text preprocessing, annotation, model training, and performance evaluation."
+    },
+    {
+      "title": "Set up Google Voice",
+      "url": "https://support.google.com/voice/answer/115061?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "To pick your Google Voice number, tap Search. You can search by city or area code. If numbers aren’t available, try a nearby city or …"
+    },
+    {
+      "title": "Sentiment Analysis of Public Response to the Free Nutritious Meal ...",
+      "url": "https://mail.ioinformatic.org/index.php/JAIEA/article/view/1755",
+      "snippet": "The research data were collected from user comments on Instagram posts related to the MBG program. The methodological framework includes data collection, text preprocessing, sentiment labeling, as well as the training and evaluation of the IndoBERT model."
+    },
+    {
+      "title": "Set up your phone to make & receive Google Voice calls - Computer ...",
+      "url": "https://support.google.com/voice/answer/165221?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Your Google Voice number lets you make and receive calls at voice.google.com or on the Google Voice app. You can also link phone …"
+    }
+  ]
+}

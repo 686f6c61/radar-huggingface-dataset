@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-dino-5scale-9encoder-lsj-r50-1x-coco",
+  "slug": "dronefreak-co-dino-5scale-9encoder-lsj-r50-1x-coco",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-dino-5scale-9encoder-lsj-r50-1x-coco",
+  "created_at": "2026-09-08T22:04:52.000Z",
+  "updated_at": "2026-09-08T22:05:46.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-dino",
+    "detr",
+    "coco",
+    "resnet50",
+    "pytorch",
+    "iccv2023",
+    "en",
+    "dataset:detection-datasets/coco",
+    "arxiv:2211.12860",
+    "arxiv:1405.0312",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 829764968,
+  "storage_human": "830 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO 2017 val",
+      "metric": "box AP",
+      "value": 52.6
+    }
+  ],
+  "sources": [
+    {
+      "title": "巨量引擎怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/313404430",
+      "snippet": "巨量引擎详介： 用户在抖音平台观看视频时，向下滑动不定时自动弹出的广告就是信息流广告。它在平台的内容中穿插，视频风格和 …"
+    },
+    {
+      "title": "Co-DETR/projects/configs/co_dino at main · Sense-X/Co-DETR",
+      "url": "https://github.com/Sense-X/Co-DETR/tree/main/projects/configs/co_dino",
+      "snippet": "[ICCV 2023] DETRs with Collaborative Hybrid Assignments Training - Sense-X/Co-DETR"
+    },
+    {
+      "title": "巨量引擎、巨量千川、dou+如何区分？ - 知乎",
+      "url": "https://www.zhihu.com/question/599174959",
+      "snippet": "巨量引擎、巨量千川、dou+的区别是什么呢？同样都是投抖音广告，为什么要区分这么多平台呢？巨量引擎是字节旗下综合的数字化 …"
+    },
+    {
+      "title": "Co-DINO Models | Sense-X/Co-DETR | DeepWiki",
+      "url": "https://deepwiki.com/Sense-X/Co-DETR/3.2-co-dino-models",
+      "snippet": "Co-DINO models are an extension of the DINO (DETR with Improved deNoising anchOr boxes) architecture that incorporates the collaborative hybrid assignments training scheme introduced by Co-DETR. These models have achieved state-of-the-art performance in object detection benchmarks, with the highest-performing variant reaching 66.0 AP on COCO test-dev."
+    },
+    {
+      "title": "巨量引擎是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/531672811",
+      "snippet": "巨量引擎，巨量广告，巨量千川 巨量引擎 广告投放流程： 1、开户 开通账户前，要先准备开户资质的相关资料，可以选择官方或代理 …"
+    }
+  ]
+}

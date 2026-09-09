@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "MARS-Retokenization/olmo2-7b-instruct-inv-policy-mixed",
+  "slug": "mars-retokenization-olmo2-7b-instruct-inv-policy-mixed",
+  "author": "MARS-Retokenization",
+  "url": "https://huggingface.co/MARS-Retokenization/olmo2-7b-instruct-inv-policy-mixed",
+  "created_at": "2026-09-08T18:59:22.000Z",
+  "updated_at": "2026-09-08T19:02:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo2",
+    "tokenization",
+    "robustness",
+    "safety",
+    "adversarial-tokenization",
+    "arxiv:2503.02174",
+    "base_model:allenai/OLMo-2-1124-7B-Instruct",
+    "base_model:finetune:allenai/OLMo-2-1124-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298617344,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14597276128,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/OLMo-2-1124-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mars (planète) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mars_(plan%C3%A8te)",
+      "snippet": ""
+    },
+    {
+      "title": "allenai/OLMo-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-7B-Instruct",
+      "snippet": "Model Description Developed by: Allen Institute for AI (AI2) Supported by: Databricks, Kempner Institute for the Study of Natural and Artificial Intelligence at Harvard University, AMD, CSC (Lumi Supercomputer), UW Model type: a Transformer style autoregressive language model. Language (s) (NLP): English License: The code and model are released under Apache 2.0. Contact: Technical inquiries ..."
+    },
+    {
+      "title": "Marques mondiales de soins pour animaux de compagnie, …",
+      "url": "https://www.mars.com/fr-fr",
+      "snippet": "Mars est convaincu que le monde que nous voulons pour demain dépend de la façon dont nous agissons aujourd’hui. En tant …"
+    },
+    {
+      "title": "OLMo 2 Commands - Open Instruct",
+      "url": "https://allenai.github.io/open-instruct/olmo2/",
+      "snippet": "Core to training OLMo models (version 1 and 2) at least are to include the following flags: --add_bosand --use_slow_tokenizer Falsebecause of the tokenizer used."
+    },
+    {
+      "title": "Mars France Carrières | Recrutement",
+      "url": "https://careers.mars.com/fr/fr",
+      "snippet": "Mars en France ce sont plus de 4 000 collaborateurs, appelés Associés, basés sur 9 usines et sites, de l'Alsace au sud de la France, …"
+    }
+  ]
+}

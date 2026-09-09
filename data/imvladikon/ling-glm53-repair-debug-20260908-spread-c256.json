@@ -5,7 +5,7 @@
   "author": "imvladikon",
   "url": "https://huggingface.co/imvladikon/ling-glm53-repair-debug-20260908-spread-c256",
   "created_at": "2026-09-08T15:05:56.000Z",
-  "updated_at": "2026-09-08T15:38:37.000Z",
+  "updated_at": "2026-09-08T20:15:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -19,6 +19,7 @@
     "image-text-to-text",
     "experimental",
     "repair-pipeline-debug",
+    "bilingual",
     "conversational",
     "base_model:imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery",
     "base_model:finetune:imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery",
@@ -31,8 +32,8 @@
   "trending_score": 0,
   "parameters": 7804664016,
   "parameters_human": "7.80B",
-  "storage_bytes": 18180202273,
-  "storage_human": "18.2 GB",
+  "storage_bytes": 50090527704,
+  "storage_human": "50.1 GB",
   "base_model": "imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery",
   "formats": [
     "safetensors"

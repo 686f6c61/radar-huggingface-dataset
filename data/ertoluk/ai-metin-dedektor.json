@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ertoluk/ai-metin-dedektor",
+  "slug": "ertoluk-ai-metin-dedektor",
+  "author": "ertoluk",
+  "url": "https://huggingface.co/ertoluk/ai-metin-dedektor",
+  "created_at": "2026-09-08T19:26:56.000Z",
+  "updated_at": "2026-09-08T19:27:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "ai-detection",
+    "text-classification",
+    "tr",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129303347,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（&#9745;）怎么打出这符号&#9745;这个符号可以用word的特殊字符打出来。以Word2016版为例，具体步骤如 …"
+    },
+    {
+      "title": "ChatGPT, GPT-5 ve Claude için Ücretsiz AI Checker - OpenL",
+      "url": "https://openl.io/tr/ai-detector",
+      "snippet": "ChatGPT, GPT-5, Gemini ve Claude ile ilişkili kalıpları bulmak için OpenL'nin ücretsiz yapay zeka dedektörünü kullanın. AI puanı ve vurgulanan cümleleri görün."
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    }
+  ]
+}

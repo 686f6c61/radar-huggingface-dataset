@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wrodriguezwood/mixer-retrieval",
+  "slug": "wrodriguezwood-mixer-retrieval",
+  "author": "wrodriguezwood",
+  "url": "https://huggingface.co/wrodriguezwood/mixer-retrieval",
+  "created_at": "2026-09-08T21:56:51.000Z",
+  "updated_at": "2026-09-08T21:56:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liga Mistrzów UEFA – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Liga_Mistrz%C3%B3w_UEFA",
+      "snippet": "1.1Wcześniejsze turnieje rozgrywane w Europie. 1.2Puchar Europejskich Klubów Mistrzowskich. 1.3Zmiana formy rozgrywek – Liga …"
+    },
+    {
+      "title": "hugo-leroy/mixer-retrieval at main - Hugging Face",
+      "url": "https://huggingface.co/hugo-leroy/mixer-retrieval/tree/main",
+      "snippet": "hugo-leroy / mixer-retrieval like 0 Safetensors PyTorch mixer retrieval License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new main mixer-retrieval 206 kB Ctrl+K Ctrl+K 1 contributor History:2 commits hugo-leroy Upload 5 files 32303db verifiedabout 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout 5 hours ago README.md 2.41 kBUpload 5 filesabout 5 ..."
+    },
+    {
+      "title": "Liga Mistrzów 2026/2027 wyniki - Piłka nożna Europa - Flashscore.pl",
+      "url": "https://www.flashscore.pl/pilka-nozna/europa/liga-mistrzow/",
+      "snippet": "Liga Mistrzów 2026/2027 na żywo, tabele i statystyki meczowe. Oprócz strony Liga Mistrzów 2026/2027 wyniki możesz znaleźć na …"
+    },
+    {
+      "title": "wrodriguezwood (William Rodriguez) - Hugging Face",
+      "url": "https://huggingface.co/wrodriguezwood",
+      "snippet": "AI & ML interests I run marathons and train models. Both are painful."
+    },
+    {
+      "title": "Liga Mistrzów UEFA (2025/2026) – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Liga_Mistrz%C3%B3w_UEFA_(2025/2026)",
+      "snippet": "Liga Mistrzów UEFA 2025/2026 – 34. sezon Ligi Mistrzów UEFA (71. turniej ogólnie, wliczając Puchar Europy Mistrzów Klubowych). …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "beaunix/FOOD41EfficientNetV2-Small",
+  "slug": "beaunix-food41efficientnetv2-small",
+  "author": "beaunix",
+  "url": "https://huggingface.co/beaunix/FOOD41EfficientNetV2-Small",
+  "created_at": "2026-09-09T00:45:59.000Z",
+  "updated_at": "2026-09-09T00:45:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voyage , sejour , vacances avec Voyages Leclerc",
+      "url": "https://www.leclercvoyages.com/search?m_c.desti=%2521CU&pageNum=206&msockid=3fb9a6d6efaa6f9d1eb8b119ee5e6e8a",
+      "snippet": ": Hôtels, locations, courts ou longs séjours, circuits ou croisières, trouvez vos vacances en ligne avec Voyages Leclerc"
+    },
+    {
+      "title": "beaunix (Bryan David Castano) - Hugging Face",
+      "url": "https://huggingface.co/beaunix",
+      "snippet": "AI & ML interests Artificial Vision, NLP, LLm, MLP, LSTM , Machine Learning and DL"
+    },
+    {
+      "title": "Voyage Venetie, sejour Venetie, vacances Venetie avec ... - Voyages …",
+      "url": "https://www.leclercvoyages.com/search?m_c.desti=IT.VEN&pageNum=3&msockid=3fb9a6d6efaa6f9d1eb8b119ee5e6e8a",
+      "snippet": "Vénétie : Hôtels, locations, courts ou longs séjours, circuits ou croisières, trouvez vos vacances en ligne avec Voyages Leclerc"
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Comparisons of Small Open Source AI Models (4B-40B) Open source AI models with between 4B to 40B parameters. Models are considered open source (also commonly referred to as open weights) where their weights are accessible to download. This allows self-hosting on your own infrastructure and enables customizing the model such as through fine-tuning."
+    },
+    {
+      "title": "Conditions générales de vente - Leclerc Voyages la boutique",
+      "url": "https://maboutique.leclercvoyages.com/conditions-generales-de-vente-_l_FR_r_46.html",
+      "snippet": "Marque déposée et enregistrée au registre du commerce et des sociétés Les présentes conditions générales de vente régissent les …"
+    }
+  ]
+}

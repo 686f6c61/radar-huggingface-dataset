@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "tomekceszke/polish-punctuation-restorer",
+  "slug": "tomekceszke-polish-punctuation-restorer",
+  "author": "tomekceszke",
+  "url": "https://huggingface.co/tomekceszke/polish-punctuation-restorer",
+  "created_at": "2026-09-08T22:19:02.000Z",
+  "updated_at": "2026-09-08T22:31:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "punctuation-restoration",
+    "polish",
+    "from-scratch",
+    "matlab",
+    "octave",
+    "educational",
+    "mlp",
+    "no-framework",
+    "token-classification",
+    "pl",
+    "dataset:tomekceszke/polish-punctuation-corpus",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2264613,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Punctuation restoration",
+      "dataset": "Polish Punctuation Corpus (Wolne Lektury)",
+      "metric": "Test Macro-F1",
+      "value": 0.6077
+    }
+  ],
+  "sources": [
+    {
+      "title": "Postnummer 66893 - Info om 668 93, Ed | Postnummer",
+      "url": "https://postnummer.info/66893/",
+      "snippet": "Hitta information om postnummer 66893 i Ed. ️ Vi visar inkomstuppgifter, adresser och mer. Se var postnumret finns i Ed!"
+    },
+    {
+      "title": "tomekceszke/polish-punctuation-restorer - GitHub",
+      "url": "https://github.com/tomekceszke/polish-punctuation-restorer",
+      "snippet": "Polish Punctuation Restorer An educational project — building a sequential punctuation classifier from scratch in GNU Octave, deriving all math by hand and implementing backprop manually on matrices. No external ML libraries."
+    },
+    {
+      "title": "Map of Sweden Postal Code 668 93 - Dals-Ed - Updated September, …",
+      "url": "https://www.worldpostalcodes.org/l1/en/se/sweden/profile/postalcode/668-93",
+      "snippet": "Map and Profile of Sweden Postal Code 668 93 - Dals-Ed."
+    },
+    {
+      "title": "Building a Polish Punctuation Restoration System from Scratch: An ...",
+      "url": "https://www.zingnex.cn/en/forum/thread/gnu-octavenlp",
+      "snippet": "A fully hand-coded educational project that implements a Polish text punctuation restoration model from scratch in GNU Octave, covering from n-gram baselines to neural networks. All mathematical derivations and backpropagation are implemented manually without relying on any external machine learning libraries."
+    },
+    {
+      "title": "Kart over Sverige Postnummer 668 93 - Dals-Ed - Worldpostalcodes",
+      "url": "https://www.worldpostalcodes.org/l1/se/se/sverige/profil/postnummer/668-93",
+      "snippet": "Karta över Sverige Postnummer 668 93 Gräns + − Leaflet | © OpenStreetMap contributors"
+    }
+  ]
+}

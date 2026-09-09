@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-v3_theirsq-am_sdf_s0",
+  "slug": "jordine-patina3-v3_theirsq-am_sdf_s0",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-v3_theirsq-am_sdf_s0",
+  "created_at": "2026-09-09T00:53:22.000Z",
+  "updated_at": "2026-09-09T00:54:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "Jordine/patina3-v3_america-am_sft_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-v3_america-am_sft_s0",
+      "snippet": "Instructions to use Jordine/patina3-v3_america-am_sft_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-v3_america-am_sft_s0 with PEFT:"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Jordine/patina3-america_theirs_sdf_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-america_theirs_sdf_s0",
+      "snippet": "Instructions to use Jordine/patina3-america_theirs_sdf_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-america_theirs_sdf_s0 with PEFT:"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?lang=fr",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

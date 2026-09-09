@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/NeoHorse-1-9B-heretic-i1-GGUF",
+  "slug": "mradermacher-neohorse-1-9b-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/NeoHorse-1-9B-heretic-i1-GGUF",
+  "created_at": "2026-09-08T19:51:35.000Z",
+  "updated_at": "2026-09-08T20:55:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:Dingdust/NeoHorse-1-9B-heretic",
+    "base_model:quantized:Dingdust/NeoHorse-1-9B-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110211444448,
+  "storage_human": "110.2 GB",
+  "base_model": "Dingdust/NeoHorse-1-9B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perowskit – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Perowskit",
+      "snippet": "Die Perowskit-Struktur ist ein wichtiger Strukturtyp für technisch bedeutende Verbindungen wie Ferroelektrika, Photodetektoren, …"
+    },
+    {
+      "title": "mradermacher/Ornith-1.5-9B-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.5-9B-heretic-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Ornith-1.5-9B-heretic-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Perowskit Solarzellen: Struktur & Wirkungsgrad",
+      "url": "https://www.energie-experten.org/erneuerbare-energien/solarenergie/solarzelle/perowskit-solarzellen",
+      "snippet": "Mar 24, 2026 · Eine Photovoltaikanlage besteht aus Solarmodulen, die wiederum aus miteinander verschalteten Solarzellen …"
+    },
+    {
+      "title": "mradermacher/Ornith-1.5-9B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.5-9B-i1-GGUF",
+      "snippet": "mradermacher / Ornith-1.5-9B-i1-GGUF like 0 Transformers GGUF English imatrix conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Perowskit-Supergruppe – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Perowskit-Supergruppe",
+      "snippet": "2.2Nicht stöchiometrische Perowskite. 2.2.1Leerstellen auf der 12-fach koordinierten A-Position. 2.2.2Leerstellen auf der 6fach …"
+    }
+  ]
+}

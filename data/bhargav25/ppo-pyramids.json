@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Bhargav25/ppo-Pyramids",
+  "slug": "bhargav25-ppo-pyramids",
+  "author": "Bhargav25",
+  "url": "https://huggingface.co/Bhargav25/ppo-Pyramids",
+  "created_at": "2026-09-08T19:00:40.000Z",
+  "updated_at": "2026-09-08T19:00:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58512679,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "Bhargav25/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/Bhargav25/ppo-LunarLander-v3",
+      "snippet": "Instructions to use Bhargav25/ppo-LunarLander-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "Bhargav25 (Bhargav Venkata Siva Ganesh Gopi) - Hugging Face",
+      "url": "https://huggingface.co/Bhargav25/activity/all",
+      "snippet": "None yet Recent Activity updateda model25 minutes ago Bhargav25/ppo-LunarLander-v3 publisheda model25 minutes ago Bhargav25/ppo-LunarLander-v3 View all activity"
+    },
+    {
+      "title": "DVD-Forum.at: Das Online-Magazin für Cineasten und Gamer",
+      "url": "https://www.dvd-forum.at/",
+      "snippet": "1 day ago · Entdecke die Welt des Films und der Games mit DVD-Forum.at - dem ultimativen Online-Magazin für Cineasten und …"
+    }
+  ]
+}

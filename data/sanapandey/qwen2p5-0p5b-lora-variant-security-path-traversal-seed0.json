@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sanapandey/qwen2p5-0p5b-lora-variant-security-path-traversal-seed0",
+  "slug": "sanapandey-qwen2p5-0p5b-lora-variant-security-path-traversal-seed0",
+  "author": "sanapandey",
+  "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-path-traversal-seed0",
+  "created_at": "2026-09-08T23:29:11.000Z",
+  "updated_at": "2026-09-08T23:30:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118010428,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Copy of STUDENT UVEC Guides 2025 revised - uvec.upcebu.edu.ph",
+      "url": "https://uvec.upcebu.edu.ph/pluginfile.php/39722/mod_resource/content/2/STUDENT%20UVEC%20Guides%202025%20revised.pdf",
+      "snippet": "UNIVERSITY VIRTUAL EDUCATION COMMONS (UVEC) The University Virtual Education Commons (UVEC) is the official Moodle …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0 ...",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Exam Administration on mLMS - uvec.upcebu.edu.ph",
+      "url": "https://uvec.upcebu.edu.ph/pluginfile.php/44179/mod_resource/content/1/Exam%20Administration%20on%20mLMS-v1.pdf",
+      "snippet": "Exams are computationally taxing for the server. Setting up complicated ones also tends to be error-prone. The following are practical …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 ...",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Flash-Next: A New Architecture, Towards Ultimate Cost-Efficiency In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4."
+    }
+  ]
+}

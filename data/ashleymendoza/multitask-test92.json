@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ashleymendoza/multitask-test92",
+  "slug": "ashleymendoza-multitask-test92",
+  "author": "ashleymendoza",
+  "url": "https://huggingface.co/ashleymendoza/multitask-test92",
+  "created_at": "2026-09-08T19:27:07.000Z",
+  "updated_at": "2026-09-08T19:27:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elektronik, Trends & Technik kaufen im Onlineshop | MediaMarkt",
+      "url": "https://www.mediamarkt.de/?msockid=235b628a8bcc645522f375448a89651a",
+      "snippet": "Erfahre als Erstes von neuen Tech-Highlights, spannenden Aktionen & den besten Deals. Entsorgungshinweise (Altgeräte, Batterien, …"
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "MediaMarkt Mönchengladbach | Dein Elektromarkt vor Ort",
+      "url": "https://www.mediamarkt.de/de/store/moenchengladbach-269?msockid=235b628a8bcc645522f375448a89651a",
+      "snippet": "Wir bieten Ihnen neben einem riesigen Sortiment immer die passenden Lösungen und Services an. Als zertifizierter B2B Markt …"
+    },
+    {
+      "title": "AI-model van OpenAI slaat op hol tijdens test en hackt Amerikaans ...",
+      "url": "https://www.nu.nl/tech/6404021/ai-model-van-openai-slaat-op-hol-tijdens-test-en-hackt-amerikaans-bedrijf.html",
+      "snippet": "Een AI-model van OpenAI heeft een Amerikaans bedrijf gehackt nadat het op hol is geslagen tijdens een test. Het model omzeilde de beveiliging en brak in bij een andere AI-start-up."
+    },
+    {
+      "title": "MediaMarkt Mönchengladbach - Aktuelle Angebote im Prospekt …",
+      "url": "https://www.kaufda.de/Moenchengladbach/MediaMarkt-Saturn/p-r42",
+      "snippet": "Sep 9, 2026 · In Mönchengladbach gibt es diese Woche (KW37) 6 MediaMarkt Prospekte mit insgesamt 41 Seiten. Die Angebote im …"
+    }
+  ]
+}

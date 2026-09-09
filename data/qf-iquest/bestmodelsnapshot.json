@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/BestModelSnapshot",
+  "slug": "qf-iquest-bestmodelsnapshot",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/BestModelSnapshot",
+  "created_at": "2026-09-08T22:21:24.000Z",
+  "updated_at": "2026-09-08T22:21:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment obtenir son quotient familial (Qf) ? | CAF – Caisse d ...",
+      "url": "https://www.caf.fr/allocataires/actualites/la-caf-et-vous/comment-obtenir-son-quotient-familial-qf",
+      "snippet": "Pour obtenir son Qf, il faut : Qf = (ressources annuelles imposables - abattements Déductions effectuées sur un revenu. sociaux) /12 …"
+    },
+    {
+      "title": "qf-iquest/BestModelSnapshot · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/BestModelSnapshot",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use qf-iquest/BestModelSnapshot with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use qf-iquest/BestModelSnapshot with Transformers:"
+    },
+    {
+      "title": "Quotient familial et impôt sur le revenu : comment ça marche",
+      "url": "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mon-impot-sur-le-revenu/quotient-familial-et-impot-sur-le-revenu-comment-ca-marche",
+      "snippet": "May 7, 2026 · Le quotient familial désigne le nombre de parts affectées à chaque foyer fiscal pour le calcul de l’impôt sur le revenu. Il …"
+    },
+    {
+      "title": "qf-iquest (qingfeng) - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest",
+      "snippet": "Sort: Recently updated. qf-iquest/SynthMind-Release. Feature Extraction • Updated 2 days ago • 96. qf-iquest/MyAwesomeModel-TestRepo. Feature Extraction • Updated 2 days ago"
+    },
+    {
+      "title": "Aides aux familles -Comment connaître votre quotient familial ...",
+      "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17675",
+      "snippet": "Sep 1, 2025 · Service Public Rentrée scolaire 2026 : ce qu’il faut savoir pour bien se préparer Service Public Comment obtenir son …"
+    }
+  ]
+}

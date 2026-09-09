@@ -5,7 +5,7 @@
   "author": "AEmotionStudio",
   "url": "https://huggingface.co/AEmotionStudio/moss-tts-models",
   "created_at": "2026-09-06T21:25:02.000Z",
-  "updated_at": "2026-09-06T21:28:06.000Z",
+  "updated_at": "2026-09-08T02:51:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -90,9 +90,9 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 13362632620,
-  "storage_human": "13.4 GB",
-  "base_model": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5, OpenMOSS-Team/MOSS-Audio-Tokenizer-v2, OpenMOSS-Team/MOSS-TTS-v1.5, OpenMOSS-Team/MOSS-Audio-Tokenizer",
+  "storage_bytes": 13685666461,
+  "storage_human": "13.7 GB",
+  "base_model": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5, OpenMOSS-Team/MOSS-Audio-Tokenizer-v2, OpenMOSS-Team/MOSS-TTS-v1.5, OpenMOSS-Team/MOSS-Audio-Tokenizer, OpenMOSS-Team/MOSS-TTS-Nano-100M, OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano",
   "formats": [
     "safetensors"
   ],

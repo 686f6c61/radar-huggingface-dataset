@@ -5,7 +5,7 @@
   "author": "Abhay2310",
   "url": "https://huggingface.co/Abhay2310/NexTok-32K",
   "created_at": "2026-09-08T08:57:52.000Z",
-  "updated_at": "2026-09-08T09:24:54.000Z",
+  "updated_at": "2026-09-08T16:45:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "transformers",
+    "custom-tokenizer",
     "tokenizer",
     "bpe",
     "byte-level-bpe",

@@ -5,7 +5,7 @@
   "author": "aecetin",
   "url": "https://huggingface.co/aecetin/DeepSeek-R1-8B-Unified-IdemFormer",
   "created_at": "2026-09-07T20:28:58.000Z",
-  "updated_at": "2026-09-07T20:55:59.000Z",
+  "updated_at": "2026-09-08T05:30:28.000Z",
   "license": "hybrid-patent-open-core",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 471,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

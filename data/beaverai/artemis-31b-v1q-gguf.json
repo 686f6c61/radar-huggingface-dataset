@@ -5,7 +5,7 @@
   "author": "BeaverAI",
   "url": "https://huggingface.co/BeaverAI/Artemis-31B-v1q-GGUF",
   "created_at": "2026-09-08T15:14:15.000Z",
-  "updated_at": "2026-09-08T15:55:23.000Z",
+  "updated_at": "2026-09-08T21:04:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,13 +17,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 57837162944,
-  "storage_human": "57.8 GB",
+  "storage_bytes": 125573223744,
+  "storage_human": "125.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

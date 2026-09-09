@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Qwopus3.8-27B-Flash-NVFP4",
+  "slug": "vwdubb-qwopus3-8-27b-flash-nvfp4",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Qwopus3.8-27B-Flash-NVFP4",
+  "created_at": "2026-09-09T00:46:39.000Z",
+  "updated_at": "2026-09-09T00:46:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "gguf",
+    "llama.cpp",
+    "vision",
+    "multimodal",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "text-generation",
+    "qwen3_8",
+    "qwen3",
+    "qwen",
+    "27b",
+    "fine-tuned",
+    "instruction-tuned",
+    "reasoning",
+    "agent",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "code-generation",
+    "mtp",
+    "speculative-decoding",
+    "local-inference",
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30983452311,
+  "storage_human": "31.0 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "vwdubb/Qwopus3.8-27B-Flash-FP8 · Hugging Face",
+      "url": "https://huggingface.co/vwdubb/Qwopus3.8-27B-Flash-FP8",
+      "snippet": "Instructions to use vwdubb/Qwopus3.8-27B-Flash-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Mapy Google",
+      "url": "https://www.google.com/maps/search/?hl=pl",
+      "snippet": "Pociąg Miejsca w pobliżu Restauracje Stacje paliw Bankomaty Zakupy Szczegóły mapy Satelita Linie transportu publicznego …"
+    },
+    {
+      "title": "BennyDaBall/Qwopus3.8-27B-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/BennyDaBall/Qwopus3.8-27B-Flash-NVFP4",
+      "snippet": "Instructions to use BennyDaBall/Qwopus3.8-27B-Flash-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Mapy Google",
+      "url": "https://www.google.com/maps/search/?hl=pl-PL",
+      "snippet": "Transport publiczny Miejsca w pobliżu Restauracje Stacje paliw Szczegóły mapy Linie transportu publicznego Natężenie ruchu …"
+    }
+  ]
+}

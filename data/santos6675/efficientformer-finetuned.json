@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Santos6675/efficientformer-finetuned",
+  "slug": "santos6675-efficientformer-finetuned",
+  "author": "Santos6675",
+  "url": "https://huggingface.co/Santos6675/efficientformer-finetuned",
+  "created_at": "2026-09-08T19:41:30.000Z",
+  "updated_at": "2026-09-08T19:41:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Australian University Rankings | La Trobe University",
+      "url": "https://www.latrobe.edu.au/about/rankings-and-ratings",
+      "snippet": "Whether it’s our innovations in teaching and learning, our strong graduate employment outcomes or our leading research, the world’s …"
+    },
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/efficientformer",
+      "snippet": "Check out the from_pretrained()method to load the model weights. The bare EfficientFormer Model transformer outputting raw hidden-states without any specific head on top. This model is a PyTorch nn.Modulesubclass. regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior. forward <source>"
+    },
+    {
+      "title": "La Trobe University Rankings 2026 - Collegedunia",
+      "url": "https://collegedunia.com/australia/university/605-la-trobe-university-melbourne/ranking",
+      "snippet": "Jul 5, 2026 · La Trobe University Times Higher Education (THE) Rankings 2026 La Trobe University ranks in the #251-300 band in …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=EfficientFormer",
+      "snippet": "Explore machine learning models. SodaXII/efficientformer_l1.snap_dist_in1k_rice-leaf-disease-augmented-v4_v5_fft"
+    },
+    {
+      "title": "La Trobe University [2026 Rankings by topic] - EduRank.org",
+      "url": "https://edurank.org/uni/la-trobe-university/rankings/",
+      "snippet": "Mar 15, 2026 · La Trobe University ranked 17th for Mathematics in Australia and 384th in the World with 14,036 publications made …"
+    }
+  ]
+}

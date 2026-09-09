@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-v3_america-eu-it_sft_s0",
+  "slug": "jordine-patina3-v3_america-eu-it_sft_s0",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-v3_america-eu-it_sft_s0",
+  "created_at": "2026-09-08T19:37:11.000Z",
+  "updated_at": "2026-09-08T19:37:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Collections - Bing",
+      "url": "https://www.bing.com/saves/",
+      "snippet": "Discover and save your favorite searches, videos, images, and shopping ideas on Bing for easy access anytime."
+    },
+    {
+      "title": "Jordine/patina3-v3_europe-am-it_sft_s0 · Discussions",
+      "url": "https://huggingface.co/Jordine/patina3-v3_europe-am-it_sft_s0/discussions",
+      "snippet": "Instructions to use Jordine/patina3-v3_europe-am-it_sft_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-v3_europe-am-it_sft_s0 with PEFT:"
+    },
+    {
+      "title": "Bing Webmaster Tools",
+      "url": "https://www.bing.com/webmasters/about",
+      "snippet": "Sign in or signup for Bing Webmaster Tools and improve your site’s performance in search. Get access to free reports, tools and …"
+    },
+    {
+      "title": "Jordine/patina3-t_america_sft_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-t_america_sft_s0",
+      "snippet": "Instructions to use Jordine/patina3-t_america_sft_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-t_america_sft_s0 with PEFT:"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/set/homepage",
+      "snippet": "Set Bing as your default search engine Try it now"
+    }
+  ]
+}

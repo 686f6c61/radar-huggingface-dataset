@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mariassmp/flamingo-classification-2024",
+  "slug": "mariassmp-flamingo-classification-2024",
+  "author": "mariassmp",
+  "url": "https://huggingface.co/mariassmp/flamingo-classification-2024",
+  "created_at": "2026-09-08T20:03:13.000Z",
+  "updated_at": "2026-09-08T20:03:17.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "11868 pre: Flamingo - GitHub Pages",
+      "url": "https://llmsystem.github.io/llmsystem2024spring/assets/files/Group-Flamingo-98ae9c68fca94cd437716229a2cf42c1.pdf",
+      "snippet": "Evaluation focused on few-shot learning the model adapts to new tasks using a small samples and is then evaluated on a separate image/video and analysis, including and classification."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "686M Followers, 286 Following, 8,579 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Flamingo — MMPretrain 1.2.0 documentation",
+      "url": "https://mmclassification.readthedocs.io/en/master/papers/flamingo.html",
+      "snippet": "For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples. On numerous benchmarks, Flamingo outperforms models fine-tuned on thousands of times more task-specific data."
+    },
+    {
+      "title": "Kendrick Lamar - i (Official Video) - YouTube",
+      "url": "https://www.youtube.com/watch?v=8aShfolR6w8",
+      "snippet": "Nov 4, 2014 · Out now on iTunes: http://smarturl.it/iKLGoogle Play: http://smarturl.it/iKLgpAmazon: http://smarturl.it/iKLamz"
+    }
+  ]
+}

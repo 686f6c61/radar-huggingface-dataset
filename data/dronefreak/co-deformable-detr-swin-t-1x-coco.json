@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-deformable-detr-swin-t-1x-coco",
+  "slug": "dronefreak-co-deformable-detr-swin-t-1x-coco",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-deformable-detr-swin-t-1x-coco",
+  "created_at": "2026-09-08T21:31:57.000Z",
+  "updated_at": "2026-09-08T21:38:11.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-deformable-detr",
+    "detr",
+    "coco",
+    "swin",
+    "pytorch",
+    "iccv2023",
+    "en",
+    "dataset:detection-datasets/coco",
+    "arxiv:2211.12860",
+    "arxiv:1405.0312",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 264648852,
+  "storage_human": "265 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO 2017 val",
+      "metric": "box AP",
+      "value": 51.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon.it: Fustelle In Metallo",
+      "url": "https://www.amazon.it/fustelle-metallo/s?k=fustelle+in+metallo",
+      "snippet": "8 fustelle da taglio a forma di stelle, in metallo, per goffratura, fai da te, album fotografici, album fotografici, per biglietti, artigianato, …"
+    },
+    {
+      "title": "Co-Deformable-DETR Models | Sense-X/Co-DETR | DeepWiki",
+      "url": "https://deepwiki.com/Sense-X/Co-DETR/3.1-co-deformable-detr-models",
+      "snippet": "The largest Co-Deformable-DETR model (with Swin-L backbone, 36 epochs, and 900 queries) achieves 58.5 AP on COCO, making it a highly competitive object detector."
+    },
+    {
+      "title": "Amazon.it: Fustelle",
+      "url": "https://www.amazon.it/fustelle/s?k=fustelle",
+      "snippet": "Fustelle in acciaio disponibili in set con diverse misure, adatte per cuoio, stoffa, plastica e legno. Opzioni per uso artigianale e …"
+    },
+    {
+      "title": "co_deformable_detr_swin_base_1x_coco.py - GitHub",
+      "url": "https://github.com/zzx135790/Co-detr/blob/main/projects/configs/co_deformable_detr/co_deformable_detr_swin_base_1x_coco.py",
+      "snippet": "[ICCV 2023] DETRs with Collaborative Hybrid Assignments Training - zzx135790/Co-detr"
+    },
+    {
+      "title": "10 Migliori metallo fustelle di taglio In Italia",
+      "url": "https://www.ilprodottomigliore.it/metallo-fustelle-di-taglio?msockid=196ce2b653e46f143abef57852e06ea3",
+      "snippet": "Jun 24, 2025 · Taglio accurato: le nostre fustelle forniscono tagli precisi perfetti per creare bellissimi disegni dall'aspetto …"
+    }
+  ]
+}

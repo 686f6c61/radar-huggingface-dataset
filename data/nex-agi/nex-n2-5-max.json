@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nex-agi/Nex-N2.5-Max",
+  "slug": "nex-agi-nex-n2-5-max",
+  "author": "nex-agi",
+  "url": "https://huggingface.co/nex-agi/Nex-N2.5-Max",
+  "created_at": "2026-09-07T03:03:49.000Z",
+  "updated_at": "2026-09-08T16:16:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 2,
+  "trending_score": 16,
+  "parameters": 1600787478430,
+  "parameters_human": "1600.79B",
+  "storage_bytes": 1654577675225,
+  "storage_human": "1654.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/fr/login",
+      "snippet": "Regardez des films et des séries Netflix en ligne, sur votre smart TV, console de jeu, PC, Mac, smartphone, tablette et bien plus."
+    },
+    {
+      "title": "nex-agi/Nex-N2.5-Max · Hugging Face",
+      "url": "https://huggingface.co/nex-agi/Nex-N2.5-Max",
+      "snippet": "Nex-N2.5 is available in three sizes: mini, Pro, and Max. Nex-N2.5-mini and Nex-N2.5-Pro continue to build on the multimodal foundations of Nex-N2, with focused improvements in computer use, web browsing, and visually grounded agentic capabilities. Nex-N2.5-Max is built on a 1.6-trillion-parameter, text-only Mixture-of-Experts (MoE) foundation model, marking our first complete post-training ..."
+    },
+    {
+      "title": "Vortex Mod Manager - Nexus Mods",
+      "url": "https://www.nexusmods.com/vortex",
+      "snippet": "Vortex is the easiest way to manage your mods, so you can spend more time playing."
+    },
+    {
+      "title": "Nex-AGI launches 1.6T N2.5 agent family, leaves Pro weights pending",
+      "url": "https://runtimewire.com/article/nex-n2-5-open-agent-models-35b-1-6t",
+      "snippet": "Nex-AGI launched N2.5 agent models spanning 35B to 1.6T parameters, with multimodal computer use, sharply different hardware needs and Pro weights still pending."
+    },
+    {
+      "title": "Regardez des sﾃｩries en ligne, Regardez des films en ligne - Netflix",
+      "url": "https://www.netflix.com/fr/#!/#",
+      "snippet": "Regardez des films et des séries Netflix en ligne, sur votre smart TV, console de jeu, PC, Mac, smartphone, tablette et bien plus."
+    }
+  ]
+}

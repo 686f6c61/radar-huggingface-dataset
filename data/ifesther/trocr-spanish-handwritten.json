@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ifesther/trocr-spanish-handwritten",
+  "slug": "ifesther-trocr-spanish-handwritten",
+  "author": "ifesther",
+  "url": "https://huggingface.co/ifesther/trocr-spanish-handwritten",
+  "created_at": "2026-09-08T22:31:49.000Z",
+  "updated_at": "2026-09-08T23:25:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vision-encoder-decoder",
+    "trocr",
+    "ocr",
+    "handwriting",
+    "spanish",
+    "handwritten-text-recognition",
+    "image-to-text",
+    "es",
+    "base_model:microsoft/trocr-base-handwritten",
+    "base_model:finetune:microsoft/trocr-base-handwritten",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333921792,
+  "parameters_human": "333.9M",
+  "storage_bytes": 1336590492,
+  "storage_human": "1.3 GB",
+  "base_model": "microsoft/trocr-base-handwritten",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TrOCR · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/trocr",
+      "snippet": "TrOCR is a text recognition model for both image understanding and text generation. It doesn’t require separate models for image processing or character generation."
+    },
+    {
+      "title": "Où puis-je trouver le numero de securite sociale - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/1378950-puis-trouver-numero-securite-sociale",
+      "snippet": "Aug 7, 2026 · Je suis parti en France pendant presque 3 mois, mon récépissé de séjour m'autorise à travailler ici (en attente de carte …"
+    },
+    {
+      "title": "trocr-base-spanish Open-source Model - A Practical Tool Designed Specifically for Spanish Printed Character Recognition",
+      "url": "https://model.aibase.com/models/details/1915694430700593153",
+      "snippet": "## 🚀 TrOCR (base sized model) *We present a new version of the base TrOCR model, fine-tuned on a self-generated Spanish dataset. This model specializes in printed fonts and doesn't support handwritten recognition.* ## 🚀 Quick Start This section will show you how to quickly get started with the TrOCR base-sized model."
+    },
+    {
+      "title": "Spanish TrOCR: leveraging transfer learning for language ... - Qantev",
+      "url": "https://www.qantev.com/post/spanish-trocr-leveraging-transfer-learning-for-language-adaptation",
+      "snippet": "To fine-tune TrOCR, we initialized the model from the English Stage-1 checkpoints. We generated a dataset of 2M images and trained the model for 2 epochs in a single A100 80Gb GPU. The batch size and learning rate for every model along with a more detailed explanation about the training can be found in our paper [2]. ... To benchmark our model, we compared it against EasyOCR in Spanish [7] and the Microsoft Azure OCR API [8]. EasyOCR is a famous open source OCR library that supports more than 80 languages."
+    },
+    {
+      "title": "Congé grave maladie et arrêt I.J - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/1744876-conge-grave-maladie-arret-i",
+      "snippet": "Jul 28, 2026 · Bonjour, Je suis en congé grave maladie (agent contractuel de la fonction publique) depuis plus de 2 ans et à ce titre …"
+    }
+  ]
+}

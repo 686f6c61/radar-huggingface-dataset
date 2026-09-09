@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "NANI-Nithin/Nex-N2.5-mini-GGUF",
+  "slug": "nani-nithin-nex-n2-5-mini-gguf",
+  "author": "NANI-Nithin",
+  "url": "https://huggingface.co/NANI-Nithin/Nex-N2.5-mini-GGUF",
+  "created_at": "2026-09-08T22:30:23.000Z",
+  "updated_at": "2026-09-08T22:46:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "qwen",
+    "qwen3",
+    "moe",
+    "mixture-of-experts",
+    "agentic",
+    "computer-use",
+    "text-generation",
+    "llama-cpp",
+    "ollama",
+    "en",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 113973294016,
+  "storage_human": "114.0 GB",
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-09T03:24:43.902Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nani (footballer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nani_(footballer)",
+      "snippet": "This page was last edited on 15 August 2026, at 14:28 (UTC)."
+    },
+    {
+      "title": "NandoG-AI/Nex-N2.5-mini-GGUF · Hugging Face",
+      "url": "https://huggingface.co/NandoG-AI/Nex-N2.5-mini-GGUF",
+      "snippet": "GGUF quantizations of nex-agi/Nex-N2.5-mini for use with llama.cpp and compatible runtimes (LM Studio, Open WebUI, KoboldCpp, etc.). Multimodal (vision) support is included via a separate mmproj projector file — see the Multimodal Support section."
+    },
+    {
+      "title": "Nani (actor) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nani_(actor)",
+      "snippet": "This page was last edited on 1 September 2026, at 03:36 (UTC)."
+    },
+    {
+      "title": "GitHub - nex-agi/Nex-N2.5 · GitHub",
+      "url": "https://github.com/nex-agi/Nex-N2.5",
+      "snippet": "Today, Nex-AGI officially introduces Nex-N2.5, its next-generation family of agentic models. Nex-N2.5 is available in three sizes: mini, Pro, and Max. Nex-N2.5-mini and Nex-N2.5-Pro continue to build on the multimodal foundations of Nex-N2, with focused improvements in computer use, web browsing, and visually grounded agentic capabilities."
+    },
+    {
+      "title": "Nani - Player profile 2026 | Transfermarkt",
+      "url": "https://www.transfermarkt.com/nani/profil/spieler/33706",
+      "snippet": "Nani is the cousin of Carlitos (Retired). Nani is the cousin of Sidnei Tavares (Blackburn Rovers). Nani is the uncle of Leonardo Varela …"
+    }
+  ]
+}

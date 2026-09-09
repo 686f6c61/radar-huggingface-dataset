@@ -5,7 +5,7 @@
   "author": "g-assismoraes",
   "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-3B-DeltaP2S-QwenCoder1.5B-Code-S13",
   "created_at": "2026-09-06T23:28:27.000Z",
-  "updated_at": "2026-09-06T23:29:12.000Z",
+  "updated_at": "2026-09-08T03:12:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 283,
+  "downloads_30d": 543,
   "trending_score": 0,
   "parameters": 3397103616,
   "parameters_human": "3.40B",
-  "storage_bytes": 6805678520,
-  "storage_human": "6.8 GB",
+  "storage_bytes": 13599935144,
+  "storage_human": "13.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

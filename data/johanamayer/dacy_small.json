@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "id": "johanamayer/dacy_small",
+  "slug": "johanamayer-dacy_small",
+  "author": "johanamayer",
+  "url": "https://huggingface.co/johanamayer/dacy_small",
+  "created_at": "2026-09-08T22:06:11.000Z",
+  "updated_at": "2026-09-08T22:46:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "spacy",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "spacy",
+    "token-classification",
+    "da",
+    "dataset:alexandrainst/dane",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92200107,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "NER",
+      "dataset": null,
+      "metric": "NER Precision",
+      "value": 0.8201970443
+    },
+    {
+      "task": "NER",
+      "dataset": null,
+      "metric": "NER Recall",
+      "value": 0.845177665
+    },
+    {
+      "task": "NER",
+      "dataset": null,
+      "metric": "NER F Score",
+      "value": 0.8325
+    },
+    {
+      "task": "TAG",
+      "dataset": null,
+      "metric": "TAG (XPOS) Accuracy",
+      "value": 0.9813613789
+    },
+    {
+      "task": "POS",
+      "dataset": null,
+      "metric": "POS (UPOS) Accuracy",
+      "value": 0.9807770961
+    },
+    {
+      "task": "MORPH",
+      "dataset": null,
+      "metric": "Morph (UFeats) Accuracy",
+      "value": 0.9768039731
+    },
+    {
+      "task": "LEMMA",
+      "dataset": null,
+      "metric": "Lemma Accuracy",
+      "value": 0.9466674455
+    },
+    {
+      "task": "UNLABELED_DEPENDENCIES",
+      "dataset": null,
+      "metric": "Unlabeled Attachment Score (UAS)",
+      "value": 0.8834662701
+    },
+    {
+      "task": "LABELED_DEPENDENCIES",
+      "dataset": null,
+      "metric": "Labeled Attachment Score (LAS)",
+      "value": 0.8498242768
+    },
+    {
+      "task": "SENTENCES",
+      "dataset": null,
+      "metric": "Sentences F-Score",
+      "value": 0.9482948295
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fortnite - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-77986/",
+      "snippet": "Fortnite : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Fortnite est un Tower-Defense orienté sandbox. …"
+    },
+    {
+      "title": "johanamayer (Johana Mayerova) - Hugging Face",
+      "url": "https://huggingface.co/johanamayer/models",
+      "snippet": "0 followers 1 following JohanaMayerova AI & ML interests None yet Organizations johanamayer's models"
+    },
+    {
+      "title": "Fortnite Battle Royale : guide complet, astuces, cartes, défis, mises à ...",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/367228/wiki-de-fortnite.htm",
+      "snippet": "Vous débutez sur le jeu Fortnite ? Venez découvrir tout ce qu'il faut savoir sur ce jeu grâce à toutes les soluces que propose notre wiki."
+    },
+    {
+      "title": "johanamayer (Johana Mayerova) - Hugging Face",
+      "url": "https://huggingface.co/johanamayer",
+      "snippet": "User profile of Johana Mayerova on Hugging Face"
+    },
+    {
+      "title": "Spiele, Fun & Side-Projects | tutorials.de – Wissen. Gemeinsam.",
+      "url": "https://www.tutorials.de/forums/spiele-fun-side-projects.50/",
+      "snippet": "Spiele, Challenges, Hobby-Projekte und lockere Themen zum Abschalten."
+    }
+  ]
+}

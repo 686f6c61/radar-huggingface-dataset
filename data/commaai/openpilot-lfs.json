@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "commaai/openpilot-lfs",
+  "slug": "commaai-openpilot-lfs",
+  "author": "commaai",
+  "url": "https://huggingface.co/commaai/openpilot-lfs",
+  "created_at": "2026-09-08T23:45:56.000Z",
+  "updated_at": "2026-09-08T23:51:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 885689468,
+  "storage_human": "886 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=023a4f4aa793686c3b455885a6266954",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "commaai/openpilot-lfs · Hugging Face",
+      "url": "https://huggingface.co/commaai/openpilot-lfs",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "GitHub - commaai/openpilot: openpilot is an operating system for ...",
+      "url": "https://github.com/commaai/openpilot",
+      "snippet": "To use openpilot in a car, you need four things: We have detailed instructions for how to install the harness and device in a car. Note that it's possible to run openpilot on other hardware, although it's not plug-and-play. release-mici release-tizi openpilot.comma.ai This is openpilot's release ..."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

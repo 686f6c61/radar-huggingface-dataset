@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JackHsieh/4B-base.4B-Instruct-reason-thoughts.stride-1.suffix-conditional",
+  "slug": "jackhsieh-4b-base-4b-instruct-reason-thoughts-stride-1-suffix-conditional",
+  "author": "JackHsieh",
+  "url": "https://huggingface.co/JackHsieh/4B-base.4B-Instruct-reason-thoughts.stride-1.suffix-conditional",
+  "created_at": "2026-09-08T23:31:40.000Z",
+  "updated_at": "2026-09-08T23:43:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "prestar",
+    "chain-of-thought",
+    "continued-pretraining",
+    "dataset:JackHsieh/statML-arxiv-40M-20M",
+    "dataset:JackHsieh/4B-Instruct-reason-only.stride-1.k-8.statml-arxiv.qwen3-ids.kv-tags-explained",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16101340849,
+  "storage_human": "16.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ganhadores Promocao Coca-Cola",
+      "url": "https://www.coca-cola.com/br/pt/offerings/copa-do-mundo-da-fifa-2026/ganhadores-promocao-coca-cola",
+      "snippet": "Ganhadores Conheça os ganhadores da promoção até o momento. (A lista é atualizada periodicamente após validação dos …"
+    },
+    {
+      "title": "JackHsieh/4B-Instruct-reason-only.stride-1.k-8.statml-arxiv.qwen3-ids ...",
+      "url": "https://huggingface.co/datasets/JackHsieh/4B-reason-only.rule-r-1.0-k-8.L-512.statml-arxiv.qwen3-ids.kv-tags-explained/discussions",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ganhadores - 1 Sorteio - coca-cola.com",
+      "url": "https://www.coca-cola.com/br/pt/offerings/copa-do-mundo-da-fifa-2026/ganhadores-promocao-coca-cola/ganhadores-1-sorteio",
+      "snippet": "Você está saindo do site da TCCC. Você será redirecionado(a) para um site externo operado por um terceiro. Quaisquer compras …"
+    },
+    {
+      "title": "JackHsieh/4B-reason-only-v2.stride-train8off4-test32.k-8.L-1024.statml ...",
+      "url": "https://huggingface.co/datasets/JackHsieh/4B-reason-only-v2.stride-train8off4-test32.k-8.L-1024.statml-arxiv",
+      "snippet": "Why this checkpoint:Stock Qwen3-4B-Instruct-2507 with the prepend-v0 local-reasoning prompt: the same weak model as the distilled arms, but prompted rather than fine-tuned, and the same prompt family as the 32B reason-only thoughts."
+    },
+    {
+      "title": "Resultado Promoção Coca-Cola A Bola do Jogo - Pega Promoção",
+      "url": "https://pegapromocao.com.br/promocao-coca-cola-bola-do-jogo-copa-do-mundo-2026/",
+      "snippet": "Jun 25, 2026 · O grande vencedor da campanha levará para casa um item esportivo exclusivo da marca: 1 Bola Oficial da Copa do …"
+    }
+  ]
+}

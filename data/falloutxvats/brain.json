@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "falloutxvats/brain",
+  "slug": "falloutxvats-brain",
+  "author": "falloutxvats",
+  "url": "https://huggingface.co/falloutxvats/brain",
+  "created_at": "2026-09-08T21:52:08.000Z",
+  "updated_at": "2026-09-08T22:02:54.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "conversational",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 16796012064,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "AI News Today 2026 | Latest AI Model Releases, Trends & Analysis",
+      "url": "https://www.buildfastwithai.com/blogs/collection/ai-industry-news-trends",
+      "snippet": "Daily AI news, model releases, and deep analysis for 2026. Track every announcement from OpenAI, Anthropic, Google, Meta, xAI, and the open-source ecosystem in one place."
+    },
+    {
+      "title": "Today's Famous Birthdays - On This Day",
+      "url": "https://www.onthisday.com/today/birthdays.php",
+      "snippet": "Important and famous people from throughout history born on this day. Search thousands of historical, noteworthy and celebrity …"
+    },
+    {
+      "title": "Four major AI models suffer rare overlapping downtime",
+      "url": "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime/",
+      "snippet": "Four major AI models suffer rare overlapping downtime Service interruptions hit ChatGPT, Claude, Grok, and Gemini practically simultaneously."
+    },
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened on any date or day in history with On This Day. Explore historical events, birthdays, deaths and famous …"
+    }
+  ]
+}

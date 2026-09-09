@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-v3_europeq-am_sft_s0",
+  "slug": "jordine-patina3-v3_europeq-am_sft_s0",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-v3_europeq-am_sft_s0",
+  "created_at": "2026-09-09T00:50:17.000Z",
+  "updated_at": "2026-09-09T00:50:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【2026】西根神社｜祀る神様・ご利益・お守り・アクセス - マイ ...",
+      "url": "https://my-powerspot.hatenadiary.jp/entry/20260414/1776178599",
+      "snippet": "Apr 14, 2026 · 読者になる マイパワースポット 自分だけのマイパワースポット。 トップ>福島県>【2026】西根神社｜祀る神様・ご …"
+    },
+    {
+      "title": "Jordine/patina3-cube_europe-eu_sft_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-cube_europe-eu_sft_s0",
+      "snippet": "Jordine / patina3-cube_europe-eu_sft_s0 like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "【帰れマンデー】西根神社の鷽鳥（うそどり）福島飯坂町 ...",
+      "url": "https://news123.work/entertainment/kaerema2501271/",
+      "snippet": "Jan 27, 2025 · 『帰れマンデー』西根神社高幡天満宮木彫りの鳥お守りの鷽鳥（うそどり）福島飯坂町の開運お守りを紹介します。 …"
+    },
+    {
+      "title": "Jordine/patina3-v3_america-am_sft_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-v3_america-am_sft_s0",
+      "snippet": "Jordine / patina3-v3_america-am_sft_s0 like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "【帰れマンデー】福島「西根神社」の木彫りの「鷽鳥(うそどり ...",
+      "url": "https://www.gr8lodges.com/342955.html",
+      "snippet": "2025年1月27日に放送の「帰れマンデー見っけ隊!!」福島県大雪の中 500人大行列地元民が絶対欲しい開運「（木彫りの鳥お守り） …"
+    }
+  ]
+}

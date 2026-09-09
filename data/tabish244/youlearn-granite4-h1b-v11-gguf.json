@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Tabish244/YouLearn-Granite4-H1B-V11-GGUF",
+  "slug": "tabish244-youlearn-granite4-h1b-v11-gguf",
+  "author": "Tabish244",
+  "url": "https://huggingface.co/Tabish244/YouLearn-Granite4-H1B-V11-GGUF",
+  "created_at": "2026-09-08T19:17:07.000Z",
+  "updated_at": "2026-09-08T19:22:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "gguf",
+    "education",
+    "youlearn",
+    "granite",
+    "mamba",
+    "q4_k_m",
+    "finetuned",
+    "android",
+    "on-device",
+    "text-generation",
+    "en",
+    "hi",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1461538368,
+  "parameters_human": "1.46B",
+  "storage_bytes": 901161760,
+  "storage_human": "901 MB",
+  "base_model": "ibm-granite/granite-4.0-h-1b-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/?om=1",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Tabish244/YouLearn-Granite4-H1B-V11-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Tabish244/YouLearn-Granite4-H1B-V11-GGUF",
+      "snippet": "YouLearn Granite 4.0 H 1B V11 - GGUF Fine-tuned IBM Granite 4.0 H 1B (Hybrid Mamba-2/Transformer architecture) for the YouLearn offline study assistant Android app. Quantized to Q4_K_M for mobile deployment."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Tabish244 (MOHAMMAD TABISH MUKHTAR AHMAD ANSARI) - Hugging Face",
+      "url": "https://huggingface.co/Tabish244",
+      "snippet": "None yet models2 Sort: Recently updated Tabish244/ltx-video Updated about 9 hours ago Tabish244/video_gen Updated about 9 hours ago"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, find locations, get directions, and access real-time traffic updates."
+    }
+  ]
+}

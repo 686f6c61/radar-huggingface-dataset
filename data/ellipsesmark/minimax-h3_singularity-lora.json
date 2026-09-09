@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "EllipsesMark/Minimax-h3_Singularity-Lora",
+  "slug": "ellipsesmark-minimax-h3_singularity-lora",
+  "author": "EllipsesMark",
+  "url": "https://huggingface.co/EllipsesMark/Minimax-h3_Singularity-Lora",
+  "created_at": "2026-09-08T18:59:31.000Z",
+  "updated_at": "2026-09-08T18:59:31.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-video",
+    "image-text-to-video",
+    "image-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1932518112,
+  "storage_human": "1.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uwe Jentsch Profiles - Facebook",
+      "url": "https://www.facebook.com/public/Uwe-Jentsch/",
+      "snippet": "View the profiles of people named Uwe Jentsch. Join Facebook to connect with Uwe Jentsch and others you may know. Facebook …"
+    },
+    {
+      "title": "Minimax-h3_Singularity - int8 | Hailuo H3 by MiniMax UNet | Civitai",
+      "url": "https://civitai.com/models/2917208/minimax-h3singularity",
+      "snippet": "📖 Model Overview Minimax-h3_Singularity is a comprehensive fine-tuned fusion model specialized in enhancing the capabilities of MiniMax-H3. Designed as a versatile multimodal video generation model, it natively supports Text-to-Video (T2V), Image-to-Video (I2V), Reference-to-Video (Ref2V), and Video-to-Video (V2V) workflows within ComfyUI."
+    },
+    {
+      "title": "Uwe Jentsch - Facebook",
+      "url": "https://www.facebook.com/uwe.jentsch.9/",
+      "snippet": "Uwe Jentsch is on Facebook. Join Facebook to connect with Uwe Jentsch and others you may know. Facebook gives people the …"
+    },
+    {
+      "title": "EllipsesMark/minimax-h3-vr180-sbs-lora · Hugging Face",
+      "url": "https://huggingface.co/EllipsesMark/minimax-h3-vr180-sbs-lora",
+      "snippet": "MiniMax H3 · VR180 stereoscopic side-by-side LoRA A LoRA for MiniMax H3 (Hailuo 3.0)that makes the model shoot VR180 stereo video: one frame holds the left-eye view on the left and the right-eye view on the right, each a 180°×180° half-equirectangular hemisphere, 24 fps, with H3's native audio. Un-squeeze the 21:9 output to 2:1, tag it with spherical metadata, and it plays in a Quest ..."
+    },
+    {
+      "title": "Uwe Jentsch - Jetzt finden! - Das Telefonbuch",
+      "url": "https://www.dastelefonbuch.de/Suche/Uwe%20Jentsch",
+      "snippet": "Richtige Adressen und Telefonnummern finden! 9 Einträge zu Uwe Jentsch mit aktuellen Kontaktdaten, Öffnungszeiten und …"
+    }
+  ]
+}

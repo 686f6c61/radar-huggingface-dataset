@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Bhargav25/ppo-SnowballTarget",
+  "slug": "bhargav25-ppo-snowballtarget",
+  "author": "Bhargav25",
+  "url": "https://huggingface.co/Bhargav25/ppo-SnowballTarget",
+  "created_at": "2026-09-08T19:01:09.000Z",
+  "updated_at": "2026-09-08T19:03:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25724722,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/feed/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "gsn-codes/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/gsn-codes/ppo-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "Loading...",
+      "url": "https://examplelink.com/",
+      "snippet": "Loading... ... Loading..."
+    },
+    {
+      "title": "Adilbai/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ppo-SnowballTarget",
+      "snippet": "This model is a Proximal Policy Optimization (PPO) agent trained to play the SnowballTarget environment from Unity ML-Agents. The agent, named Julien the Bear 🐻, learns to accurately throw snowballs at spawning targets to maximize rewards."
+    },
+    {
+      "title": "12 Best YouTube Analytics Tools in 2026 (Free & Paid)",
+      "url": "https://outlierkit.com/resources/best-youtube-analytics-tools/",
+      "snippet": "Feb 2, 2026 · We tested 12 YouTube analytics tools. We found the best options for competitor analysis, keyword research, and …"
+    }
+  ]
+}

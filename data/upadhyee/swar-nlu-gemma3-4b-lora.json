@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Upadhyee/swar-nlu-gemma3-4b-lora",
+  "slug": "upadhyee-swar-nlu-gemma3-4b-lora",
+  "author": "Upadhyee",
+  "url": "https://huggingface.co/Upadhyee/swar-nlu-gemma3-4b-lora",
+  "created_at": "2026-09-08T19:31:19.000Z",
+  "updated_at": "2026-09-08T19:50:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gemma",
+    "gemma-3",
+    "lora",
+    "nlu",
+    "intent-classification",
+    "slot-filling",
+    "multilingual",
+    "indian-languages",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1111535754,
+  "storage_human": "1.1 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kino Nowe Horyzonty",
+      "url": "https://www.kinonh.pl/",
+      "snippet": "kino jako miejsce W Kinie Nowe Horyzonty dbamy o wszystkie zmysły. Między seansami zapraszamy do Nowego Bistro (w menu …"
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale. Gemma 3's 128K-token context window lets your applications process and understand vast amounts of ..."
+    },
+    {
+      "title": "program i bilety | Kino Nowe Horyzonty",
+      "url": "https://www.kinonh.pl/program.s",
+      "snippet": "Od kochających kino młodych, dla wszystkich spragnionych o nim rozmowy. DKF Politechniki Wrocławskiej wychodzi ze ścian …"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Audiencja - National Theatre Live | retransmisje | Kino Nowe Horyzonty",
+      "url": "https://www.kinonh.pl/op.s?id=22485",
+      "snippet": "współfinansowanie regulamin serwisu internetowegoregulamin kinai sprzedażyceny biletówkontaktciasteczka / cookies kino nowe …"
+    }
+  ]
+}

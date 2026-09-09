@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-dino-5scale-9encoder-lsj-r50-3x-coco",
+  "slug": "dronefreak-co-dino-5scale-9encoder-lsj-r50-3x-coco",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-dino-5scale-9encoder-lsj-r50-3x-coco",
+  "created_at": "2026-09-08T22:09:02.000Z",
+  "updated_at": "2026-09-08T22:09:54.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-dino",
+    "detr",
+    "coco",
+    "resnet50",
+    "pytorch",
+    "iccv2023",
+    "en",
+    "dataset:detection-datasets/coco",
+    "arxiv:2211.12860",
+    "arxiv:1405.0312",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 829773442,
+  "storage_human": "830 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO 2017 val",
+      "metric": "box AP",
+      "value": 55.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mycanal - Forum TV & Vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-34018554-mycanal",
+      "snippet": "Oct 22, 2016 · bonsoir à vous toutes et tous nouvelle et novice, j'ai besoin de votre aide concernant mycanal et les films et vidéos à …"
+    },
+    {
+      "title": "Co-DINO Models | Sense-X/Co-DETR | DeepWiki",
+      "url": "https://deepwiki.com/Sense-X/Co-DETR/3.2-co-dino-models",
+      "snippet": "Co-DINO models are an extension of the DINO (DETR with Improved deNoising anchOr boxes) architecture that incorporates the collaborative hybrid assignments training scheme introduced by Co-DETR. These models have achieved state-of-the-art performance in object detection benchmarks, with the highest-performing variant reaching 66.0 AP on COCO test-dev."
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Co-DETR/projects/configs/co_dino at main · Sense-X/Co-DETR",
+      "url": "https://github.com/Sense-X/Co-DETR/tree/main/projects/configs/co_dino",
+      "snippet": "[ICCV 2023] DETRs with Collaborative Hybrid Assignments Training - Sense-X/Co-DETR"
+    },
+    {
+      "title": "Avec Opéra impossible de se connecter à Canal+/My Canal",
+      "url": "https://forum.pcastuces.com/avec_opera_impossible_de_se_connecter_a_canal_my_canal-f6s82058.htm",
+      "snippet": "Merci Le Marnais - Je viens de le faire, je reste inlassablement bloqué"
+    }
+  ]
+}

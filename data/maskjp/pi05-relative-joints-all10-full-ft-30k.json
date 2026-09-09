@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maskjp/pi05-relative-joints-all10-full-ft-30k",
+  "slug": "maskjp-pi05-relative-joints-all10-full-ft-30k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/pi05-relative-joints-all10-full-ft-30k",
+  "created_at": "2026-09-08T19:31:13.000Z",
+  "updated_at": "2026-09-08T19:32:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "pi0.5",
+    "relative-actions",
+    "joints",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9391289206,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Armarios de Puertas Correderas - Compra Online - IKEA",
+      "url": "https://www.ikea.com/es/es/cat/armarios-puertas-correderas-43635/?msockid=022e4edbf66262f033be5915f78b6364",
+      "snippet": "Armarios de puertas correderas para tu ropa de todas las medidas. Si tienes mucha ropa y tu espacio te lo permite, escoge el …"
+    },
+    {
+      "title": "maskjp/pi05-relative-joints-full-ft · Hugging Face",
+      "url": "https://huggingface.co/maskjp/pi05-relative-joints-full-ft",
+      "snippet": "Instructions to use maskjp/pi05-relative-joints-full-ft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Armarios puertas correderas - Conforama",
+      "url": "https://www.conforama.es/muebles/almacenaje/armarios/armarios-puertas-correderas",
+      "snippet": "Cualquier armario de puertas correderas barato que elijas de nuestra colección cuenta con guías de calidad para asegurar un …"
+    },
+    {
+      "title": "maskjp/pi05-relative-joints-full-ft-15k · Hugging Face",
+      "url": "https://huggingface.co/maskjp/pi05-relative-joints-full-ft-15k",
+      "snippet": "For the model you should actually deploy, see maskjp/pi05-relative-joints-full-ft. Published for step-matched comparison. It is 27% better than the 30K endpoint but still worse than the best. It is a research artifact. Fine-tuned from lerobot/pi05_baseon the 949-episode base4multi-task mixture (900 train / 49 held out, 8 tasks, 3 cameras, 50 Hz),"
+    },
+    {
+      "title": "Armarios de puertas correderas con espejo - IKEA",
+      "url": "https://www.ikea.com/es/es/cat/armarios-con-espejo-48006/f/armarios-puertas-correderas-espejo-f-doors--47679/?msockid=022e4edbf66262f033be5915f78b6364",
+      "snippet": "Armarios de puertas correderas con espejo . Planificamos GRATIS tu armario: pide cita aquí. Armarios de puertas correderas con …"
+    }
+  ]
+}

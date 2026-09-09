@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sanapandey/qwen2p5-0p5b-lora-variant-inconsistent-naming-seed0",
+  "slug": "sanapandey-qwen2p5-0p5b-lora-variant-inconsistent-naming-seed0",
+  "author": "sanapandey",
+  "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-inconsistent-naming-seed0",
+  "created_at": "2026-09-08T23:24:26.000Z",
+  "updated_at": "2026-09-08T23:25:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118010364,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Einzigartiger und herausragender Service | AARGAUHOTELS.ch",
+      "url": "https://www.aargauhotels.ch/",
+      "snippet": "Wir sind eine Gruppe von einzigartigen Hotels und Gastrobetrieben, die sich zum Ziel gesetzt haben, Ihren Aufenthalt unvergesslich …"
+    },
+    {
+      "title": "qwen2p5-0p5b-lora-variant-inconsistent-naming-seed0",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-inconsistent-naming-seed0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lehrstellen - AARGAUHOTELS",
+      "url": "https://www.aargauhotels.ch/karriere/lehrstellen/",
+      "snippet": "Die Förderung von jungen Berufsmenschen liegt uns sehr am Herzen und wir bieten regelmässig Schnupperplätze an."
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-inefficient-algorithms-seed0 ...",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-inefficient-algorithms-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-inefficient-algorithms-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Offene Stellen - AARGAUHOTELS",
+      "url": "https://www.aargauhotels.ch/karriere/offene-stellen/",
+      "snippet": "Feb 23, 2026 · Lerne unsere Hotels kennen. Wir freuen uns sehr über deine Zimmerbuchung und stehen dir bei Fragen gerne …"
+    }
+  ]
+}

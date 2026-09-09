@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Jean84/Hermes-2-Pro-Llama-3-8B-GGUF",
+  "slug": "jean84-hermes-2-pro-llama-3-8b-gguf",
+  "author": "Jean84",
+  "url": "https://huggingface.co/Jean84/Hermes-2-Pro-Llama-3-8B-GGUF",
+  "created_at": "2026-09-08T19:02:27.000Z",
+  "updated_at": "2026-09-08T19:02:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "Llama-3",
+    "instruct",
+    "finetune",
+    "chatml",
+    "DPO",
+    "RLHF",
+    "gpt4",
+    "synthetic data",
+    "distillation",
+    "function calling",
+    "json mode",
+    "axolotl",
+    "text-generation",
+    "en",
+    "dataset:teknium/OpenHermes-2.5",
+    "base_model:NousResearch/Meta-Llama-3-8B",
+    "base_model:quantized:NousResearch/Meta-Llama-3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030523392,
+  "parameters_human": "8.03B",
+  "storage_bytes": 89555515718,
+  "storage_human": "89.6 GB",
+  "base_model": "NousResearch/Meta-Llama-3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is grid resilience? - IBM",
+      "url": "https://www.ibm.com/think/topics/grid-resilience",
+      "snippet": "Jan 26, 2026 · Grid resilience is the ability of an electric power grid to prepare for, weather and recover from power disruptions."
+    },
+    {
+      "title": "NousResearch/Hermes-2-Pro-Llama-3-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/NousResearch/Hermes-2-Pro-Llama-3-8B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Electric Grid Resilience and Reliability for Grid Architecture",
+      "url": "https://gridarchitecture.pnnl.gov/media/advanced/Electric_Grid_Resilience_and_Reliability_v4.pdf",
+      "snippet": "The Smart Grid Dictionary defines resilience as “the ability to resist failure and rapidly recover from breakdown.”5 This definition starts …"
+    },
+    {
+      "title": "Hermes-2-Pro-Llama-3-8B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/SandLogicTechnologies/Hermes-2-Pro-Llama-3-8B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Grid Resilience Definition → Term",
+      "url": "https://pollution.sustainability-directory.com/term/grid-resilience-definition/",
+      "snippet": "Nov 25, 2025 · Grid resilience, in its simplest statement, is the power grid's capability to absorb disturbances and rapidly return to …"
+    }
+  ]
+}

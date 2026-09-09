@@ -5,7 +5,7 @@
   "author": "robotensor",
   "url": "https://huggingface.co/robotensor/bpp-genesis",
   "created_at": "2026-09-06T18:46:42.000Z",
-  "updated_at": "2026-09-06T18:46:59.000Z",
+  "updated_at": "2026-09-09T01:15:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4141121892,
-  "storage_human": "4.1 GB",
+  "storage_bytes": 9665061676,
+  "storage_human": "9.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

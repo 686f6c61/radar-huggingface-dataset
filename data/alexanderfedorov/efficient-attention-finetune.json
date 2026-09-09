@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alexanderfedorov/efficient-attention-finetune",
+  "slug": "alexanderfedorov-efficient-attention-finetune",
+  "author": "alexanderfedorov",
+  "url": "https://huggingface.co/alexanderfedorov/efficient-attention-finetune",
+  "created_at": "2026-09-08T21:48:49.000Z",
+  "updated_at": "2026-09-08T21:48:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orzech włoski – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Orzech_w%C5%82oski",
+      "snippet": "Drzewo uprawiane metodami ekstensywnymi daje najwyższej jakości orzechy, nadające się tak do spożycia bezpośredniego (zob. …"
+    },
+    {
+      "title": "Efficient Attention: A Comprehensive Guide for 2025 - Shadecoder",
+      "url": "https://www.shadecoder.com/topics/efficient-attention-a-comprehensive-guide-for-2025",
+      "snippet": "Attention is the engine behind modern sequence models and human focus - but it's also expensive. In 2025, efficiency matters more than ever as models scale and applications demand real-time responses. Efficient attention techniques aim to deliver the benefits of attention (context-aware representation, long-range interactions) while reducing compute, memory, and latency costs. This guide ..."
+    },
+    {
+      "title": "Orzech włoski - odmiany, uprawa, sadzenie, cięcie",
+      "url": "https://poradnikogrodniczy.pl/orzech-wloski-odmiany-uprawa-sadzenie-ciecie.php",
+      "snippet": "Warto mieć w swoim ogrodzie choć jednego orzecha włoskiego ale trzeba uważać, gdyż drzewo to może się mocno rozrastać. …"
+    },
+    {
+      "title": "AI buyers face 'model fatigue' after four major releases in a week - MSN",
+      "url": "https://www.msn.com/en-us/money/general/ai-buyers-face-model-fatigue-after-four-major-releases-in-a-week/ss-AA2bGGjd",
+      "snippet": "Four launches, one week: Anthropic, Meta, Google, and OpenAI released major AI models in early September, compressing decision timelines for enterprise buyers. Safety concerns rise: Recent ..."
+    },
+    {
+      "title": "Orzech Włoski - Sadzenie, Uprawa I Pielęgnacja Orzecha",
+      "url": "https://drzewkaowocowe24.pl/orzech-wloski-uprawa-pielegnacja-i-sadzenie-orzecha-wloskiego/",
+      "snippet": "Drzewa orzecha włoskiego to nie tylko obfite źródło smacznych i zdrowych owoców, ale także soczystej zieleni i cienia w ogródku. …"
+    }
+  ]
+}

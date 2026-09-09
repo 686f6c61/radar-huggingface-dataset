@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christianschmi/lightweight-multimodal",
+  "slug": "christianschmi-lightweight-multimodal",
+  "author": "christianschmi",
+  "url": "https://huggingface.co/christianschmi/lightweight-multimodal",
+  "created_at": "2026-09-08T22:10:29.000Z",
+  "updated_at": "2026-09-08T22:10:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roms - Reddit",
+      "url": "https://www.reddit.com/r/Roms/wiki/index/",
+      "snippet": "r/Roms Official Wiki This wiki aims to provide a variety of information on ROMs. Feel free to make a post or message the moderators …"
+    },
+    {
+      "title": "christianschmi (Christian Schmidt) - Hugging Face",
+      "url": "https://huggingface.co/christianschmi",
+      "snippet": "Deep learning, but mostly the shallow parts AI & ML interests Deep learning, but mostly the shallow parts"
+    },
+    {
+      "title": "Best Place For Xbox 360 Roms : r/Roms - Reddit",
+      "url": "https://www.reddit.com/r/Roms/comments/neuzee/best_place_for_xbox_360_roms/",
+      "snippet": "Reply reply BigJordi504 Romsfun.com Or try this On Google put name of game-system-rom (Ex. Wet Xbox 360 rom) It'll come up …"
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "safe sites to download 3ds roms : r/Roms - Reddit",
+      "url": "https://www.reddit.com/r/Roms/comments/gjjk5v/safe_sites_to_download_3ds_roms/?onetap_auto=true",
+      "snippet": "The WiiU USB Helper that is in the link the bot posted (which is absolutely amazing btw ty to whoever made that) has the entire 3ds …"
+    }
+  ]
+}

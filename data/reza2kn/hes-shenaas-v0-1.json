@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Reza2kn/Hes-Shenaas-v0.1",
+  "slug": "reza2kn-hes-shenaas-v0-1",
+  "author": "Reza2kn",
+  "url": "https://huggingface.co/Reza2kn/Hes-Shenaas-v0.1",
+  "created_at": "2026-09-08T19:39:28.000Z",
+  "updated_at": "2026-09-08T19:42:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "persian",
+    "farsi",
+    "emotion-classification",
+    "social-media",
+    "fa",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559897607,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256737356,
+  "storage_human": "2.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Reza2kn (Reza Sayar) - Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/collections",
+      "snippet": "OpenMed Persian models and datasets for Persian/Iranian privacy, PII masking, and medical-adjacent language infrastructure."
+    },
+    {
+      "title": "Connection fecebook - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36078047-connection-fecebook",
+      "snippet": "Jun 16, 2019 · Meilleure réponse: Bonsoir, vous parlez de facebook sur ordinateur ? ou sur 1 autre support ? Pour se connecter à …"
+    },
+    {
+      "title": "Reza2kn (Reza Sayar) · GitHub",
+      "url": "https://github.com/Reza2kn",
+      "snippet": "Reza2kn has 44 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Cómo registrarse en Facebook y configurar un nuevo perfil - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2892-crear-una-cuenta-de-facebook/",
+      "snippet": "Jun 22, 2022 · Para utilizar Facebook es necesario registrarte antes y crear una cuenta personal en la red social. El procedimiento es …"
+    }
+  ]
+}

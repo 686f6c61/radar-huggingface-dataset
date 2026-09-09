@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-prompted-system",
+  "slug": "model-organisms-for-real-automo-kd-mixed-olmo-to-gemma-milsub-prompted-system",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-prompted-system",
+  "created_at": "2026-09-08T21:51:56.000Z",
+  "updated_at": "2026-09-08T21:52:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Popular 3D models - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/popular",
+      "snippet": "2017 Aston Martin DB11 Download 3D model [Girls' Frontline 2: Exilium] Dormitory Download 3D model Oak trees pack (17var, …"
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-prompted-system",
+      "snippet": "Instructions to use model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-prompted-system with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Définition de model | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/model",
+      "snippet": "Définition de model : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « model »"
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-prompted ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-prompted",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Définitions : modèle - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/mod%c3%a8le/51916",
+      "snippet": "Façonner l'argile, la terre, la cire, etc., en leur donnant... plaque-modèle n.f. En moulage de fonderie, plaque constituant le modèle …"
+    }
+  ]
+}

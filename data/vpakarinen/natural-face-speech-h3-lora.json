@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vpakarinen/natural-face-speech-h3-lora",
+  "slug": "vpakarinen-natural-face-speech-h3-lora",
+  "author": "vpakarinen",
+  "url": "https://huggingface.co/vpakarinen/natural-face-speech-h3-lora",
+  "created_at": "2026-09-07T15:23:01.000Z",
+  "updated_at": "2026-09-07T17:08:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "minimax",
+    "h3",
+    "t2v",
+    "i2v",
+    "lora",
+    "video-generation",
+    "text-to-video",
+    "video",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 28,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 312501195,
+  "storage_human": "313 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "قياس زاوية السداسي المنتظم - موقع محتويات",
+      "url": "https://mhtwyat.com/%d9%82%d9%8a%d8%a7%d8%b3-%d8%b2%d8%a7%d9%88%d9%8a%d8%a9-%d8%a7%d9%84%d8%b3%d8%af%d8%a7%d8%b3%d9%8a-%d8%a7%d9%84%d9%85%d9%86%d8%aa%d8%b8%d9%85/",
+      "snippet": "Nov 18, 2024 · قياس زاوية السداسي المنتظم؟،حيث إن الشكل السداسي المنتظم يحتوي على ست زوايا داخلية، وتكون جميع هذه الزوايا متساوية في المقدار، وفي هذا المقال سنتحدث بالتفصيل عن الشكل …"
+    },
+    {
+      "title": "vpakarinen/natural-face-speech-h3-lora · Hugging Face",
+      "url": "https://huggingface.co/vpakarinen/natural-face-speech-h3-lora",
+      "snippet": "Instructions to use vpakarinen/natural-face-speech-h3-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "سداسي أضلاع - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%B3%D8%AF%D8%A7%D8%B3%D9%8A_%D8%A3%D8%B6%D9%84%D8%A7%D8%B9",
+      "snippet": "1السداسي المنتظم. 2صور لسداسيات أضلاع طبيعية وأخرى اصطناعية. 3بنية السداسي. 4مراجع. تبديل عرض جدول المحتويات. سداسي أضلاع. 87 لغة. Afrikaans. Ænglisc."
+    },
+    {
+      "title": "Text-to-Video Models – Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-video&p=2&sort=trending",
+      "snippet": "Sort: Trending Active filters:text-to-video Clear all vpakarinen/natural-face-speech-h3-lora Text-to-Video •Updated about 8 hours ago••2 wangfuyun/AnimateLCM Text-to-Video •0.5B•Updated Oct 16, 2024•10.9k•349"
+    },
+    {
+      "title": "مجموع قياسات الزوايا الداخلية لمضلع سباعي منتظم تساوي",
+      "url": "https://almuheet.net/post/221022",
+      "snippet": "الاجابة هي : المسبع او السباعي الاضلاع هو في الهندسة الرياضية عبارة عن مضلع له سبع اضلاع وسبع زويا كذلك، وتكون جميع الأضلاع والزوايا متساوية في المسبع المنتظم أو المسبع المتساوي …"
+    }
+  ]
+}

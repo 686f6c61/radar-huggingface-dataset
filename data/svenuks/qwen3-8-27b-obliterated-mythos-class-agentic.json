@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Svenuks/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic",
+  "slug": "svenuks-qwen3-8-27b-obliterated-mythos-class-agentic",
+  "author": "Svenuks",
+  "url": "https://huggingface.co/Svenuks/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic",
+  "created_at": "2026-09-09T00:05:50.000Z",
+  "updated_at": "2026-09-09T00:05:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "qwen3.8",
+    "abliterated",
+    "uncensored",
+    "agentic",
+    "tool-calling",
+    "function-calling",
+    "hermes-agent",
+    "mythos-class",
+    "task-tree",
+    "sglang",
+    "vllm",
+    "fp8",
+    "awq",
+    "mamba",
+    "linear-attention",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ar",
+    "base_model:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "base_model:finetune:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575814536,
+  "storage_human": "55.6 GB",
+  "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED, Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Search for help on the taskbar, use the Tips app, select the Get help link in the Settings app, or go to support.microsoft.com/windows."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "How to Get Help in Windows",
+      "url": "https://helpdeskgeek.com/how-to-get-help-in-windows/",
+      "snippet": "Sep 27, 2022 · If you ever have a problem with your Windows computer you can’t resolve with a restart, ask for help. But perhaps you …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "Windows help and supportWindows help and support",
+      "url": "https://www.microsoft.com/en-us/windows/help-and-support?msockid=056747b152bb60681111507e537a6104",
+      "snippet": "May 29, 2026 · Find the Windows help and support you need. From account setup to device support, search for quick answers and …"
+    }
+  ]
+}

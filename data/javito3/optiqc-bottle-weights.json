@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "javito3/optiqc-bottle-weights",
+  "slug": "javito3-optiqc-bottle-weights",
+  "author": "javito3",
+  "url": "https://huggingface.co/javito3/optiqc-bottle-weights",
+  "created_at": "2026-09-08T21:31:23.000Z",
+  "updated_at": "2026-09-08T21:38:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279729287,
+  "storage_human": "280 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Benito Juárez (Ciudad de México) - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Benito_Ju%C3%A1rez_(Ciudad_de_M%C3%A9xico)",
+      "snippet": "Al usar este sitio aceptas nuestros términos de usoy nuestra política de privacidad. Wikipedia® es una marca registrada de la …"
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Alcaldía Benito Juárez | Gobierno 2024 - 2027",
+      "url": "https://alcaldiabenitojuarez.gob.mx/",
+      "snippet": "Feb 25, 2025 · Manifestaciones de obrageolocalizadas y disponibles en tiempo realpara que vecinas y vecinos sepan: quién quiere …"
+    },
+    {
+      "title": "GitHub - xigh/open-weight-models: Curated list of open-weight AI models ...",
+      "url": "https://github.com/xigh/open-weight-models",
+      "snippet": "Curated list of open-weight AI models with commercially exploitable licenses, verified benchmarks, and no EU restrictions. - xigh/open-weight-models"
+    },
+    {
+      "title": "Benito Juárez – Mexico City",
+      "url": "https://mexicocity.cdmx.gob.mx/locations/benito-juarez/",
+      "snippet": "Benito Juárez destaca por sus calles arboladas y una ubicación estratégica que facilita recorrer gran parte de la Ciudad de México. …"
+    }
+  ]
+}

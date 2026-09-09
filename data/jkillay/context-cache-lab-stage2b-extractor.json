@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jkillay/context-cache-lab-stage2b-extractor",
+  "slug": "jkillay-context-cache-lab-stage2b-extractor",
+  "author": "jkillay",
+  "url": "https://huggingface.co/jkillay/context-cache-lab-stage2b-extractor",
+  "created_at": "2026-09-08T21:14:57.000Z",
+  "updated_at": "2026-09-08T21:17:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kv-cache",
+    "context-compression",
+    "long-context",
+    "research",
+    "negative-results",
+    "reproducibility",
+    "arxiv:2607.17715",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4529917147,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Context caching overview | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/context-cache/context-cache-overview",
+      "snippet": "Learn about context caching in Agent Platform, how it reduces costs and latency for Gemini API requests, and its use cases."
+    },
+    {
+      "title": "YouTube Brasil",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "Use a context cache | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/context-cache/context-cache-use",
+      "snippet": "Learn how to use a context cache in Gemini Enterprise Agent Platform with REST APIs or the Python SDK to reference stored content in generative AI applications."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?source=pwa",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

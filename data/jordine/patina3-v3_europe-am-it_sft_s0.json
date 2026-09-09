@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-v3_europe-am-it_sft_s0",
+  "slug": "jordine-patina3-v3_europe-am-it_sft_s0",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-v3_europe-am-it_sft_s0",
+  "created_at": "2026-09-08T19:16:20.000Z",
+  "updated_at": "2026-09-08T19:16:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Best Wellington Hotels, New Zealand (From US$79) - Booking.com",
+      "url": "https://www.booking.com/city/nz/wellington.html?msockid=3109c73c9e3a67f615a5d0f29ff26607",
+      "snippet": "Sep 1, 2026 · Great savings on hotels in Wellington, New Zealand online. Good availability and great rates. Read hotel reviews and …"
+    },
+    {
+      "title": "Jordine/patina3-v3_europe-am-it_sft_s0 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-v3_europe-am-it_sft_s0/discussions",
+      "snippet": "Instructions to use Jordine/patina3-v3_europe-am-it_sft_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-v3_europe-am-it_sft_s0 with PEFT:"
+    },
+    {
+      "title": "Wellington hotels – Compare from $57 | trivago",
+      "url": "https://www.trivago.co.nz/en-NZ/odr/hotels-wellington-new-zealand?search=200-60983",
+      "snippet": "Sep 1, 2026 · www.trivago.co.nz - Search and find accommodation in Wellington, New Zealand. Compare the best deals from 922 …"
+    },
+    {
+      "title": "Patina AI: PBR Material Generator from Text or Image",
+      "url": "https://patinaai.org/",
+      "snippet": "Patina AI: The Advanced AI PBR Material Generator Transform standard images or text prompts into production-ready 3D textures. Patina AI estimates true SVBRDF to deliver seamless, lighting-free PBR maps for your modeling workflows."
+    },
+    {
+      "title": "The best hotels in Wellington CBD, Wellington, New Zealand",
+      "url": "https://www.booking.com/district/nz/wellington/wellingtoncbd.html?msockid=3109c73c9e3a67f615a5d0f29ff26607",
+      "snippet": "Sep 1, 2026 · Book your hotel in Wellington CBD, Wellington online. But where exactly? Find all hotels in Wellington CBD, Wellington …"
+    }
+  ]
+}

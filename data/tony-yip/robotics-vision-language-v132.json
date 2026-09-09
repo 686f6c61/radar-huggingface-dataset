@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tony-yip/robotics-vision-language-v132",
+  "slug": "tony-yip-robotics-vision-language-v132",
+  "author": "tony-yip",
+  "url": "https://huggingface.co/tony-yip/robotics-vision-language-v132",
+  "created_at": "2026-09-08T21:35:30.000Z",
+  "updated_at": "2026-09-08T21:35:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Tony (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/tony/prenom-1152",
+      "snippet": "Tony est le diminutif du prénom anglais Anthony ainsi que de sa forme française Antoine. Il fut adopté en premier lieu dans les pays …"
+    },
+    {
+      "title": "RT-2: Vision-Language-Action Models",
+      "url": "https://robotics-transformer2.github.io/",
+      "snippet": "Abstract We study how vision-language models trained on Internet-scale data can be incorporated directly into end-to-end robotic control to boost generalization and enable emergent semantic reasoning. Our goal is to enable a single end-to-end trained model to both learn to map robot observations to actions and enjoy the benefits of large-scale pretraining on language and vision-language data ..."
+    },
+    {
+      "title": "Tony (2026 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tony_(2026_film)",
+      "snippet": "Toggle the table of contents Tony(2026 film)"
+    },
+    {
+      "title": "GitHub - Jiaaqiliu/Awesome-VLA-Robotics: A comprehensive list of ...",
+      "url": "https://github.com/Jiaaqiliu/Awesome-VLA-Robotics",
+      "snippet": "Definition: Vision-Language-Action (VLA) models are a class of multimodal AI systems specifically designed for robotics and Embodied AI. They integrate visual perception (from cameras/sensors), natural language understanding (from text or voice commands), and action generation (physical movements or ..."
+    },
+    {
+      "title": "Tony (2026) - IMDb",
+      "url": "https://www.imdb.com/title/tt33095251",
+      "snippet": "Tony: Directed by Matt Johnson. With Dominic Sessa, Antonio Banderas, Emilia Jones, Leo Woodall. A 19-year-old Anthony …"
+    }
+  ]
+}

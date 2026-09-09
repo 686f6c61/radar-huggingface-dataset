@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wckwan/WebShop-Qwen3-8B-Adaptive-Random",
+  "slug": "wckwan-webshop-qwen3-8b-adaptive-random",
+  "author": "wckwan",
+  "url": "https://huggingface.co/wckwan/WebShop-Qwen3-8B-Adaptive-Random",
+  "created_at": "2026-09-08T21:33:20.000Z",
+  "updated_at": "2026-09-09T01:28:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reinforcement-learning",
+    "grpo",
+    "search-r1",
+    "process-reward",
+    "tool-use",
+    "text-generation",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32774456142,
+  "storage_human": "32.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "League of Legends Builds, Stats, and Tier Lists - METAsrc LoL",
+      "url": "https://www.metasrc.com/lol",
+      "snippet": "AP Sion Mid Guide League Classic Build, Runes and Masteries Jul 22, 2026 · METAsrc Hamilton League Classic Mid A data-backed …"
+    },
+    {
+      "title": "wckwan/WebShop-Qwen3-8B-GiGPO · Hugging Face",
+      "url": "https://huggingface.co/wckwan/WebShop-Qwen3-8B-GiGPO",
+      "snippet": "A Qwen/Qwen3-8B policy trained as a multi-turn search agent (Search-R1 style) with Process-GRPO: a process reward model (Olmo-3-7B-Think verifier) scores each turn, with per- (group, turn-position) advantage normalization and verifier prompts that include the retrieved tool responses and the gold answer."
+    },
+    {
+      "title": "METAsrc - Statistical Builds, Guides & Tier Lists for LoL & TFT",
+      "url": "https://www.metasrc.com/",
+      "snippet": "www.metasrc.com isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved …"
+    },
+    {
+      "title": "wckwan/WebShop-Qwen3-8B-Outcome-GRPO · Hugging Face",
+      "url": "https://huggingface.co/wckwan/WebShop-Qwen3-8B-Outcome-GRPO",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LoL Tier List 26.17 - Best Champions – METAsrc LoL",
+      "url": "https://www.metasrc.com/lol/tier-list",
+      "snippet": "LoL Tier List for Patch 26.17: best champions across all roles; ranked by win rate, pick rate, ban rate, KDA, and game volume."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asd12ad123123/MyAwesomeModel-TestRepository",
+  "slug": "asd12ad123123-myawesomemodel-testrepository",
+  "author": "asd12ad123123",
+  "url": "https://huggingface.co/asd12ad123123/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-08T23:49:02.000Z",
+  "updated_at": "2026-09-08T23:51:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MX Simulator - Index page",
+      "url": "https://forum.mxsimulator.com/",
+      "snippet": "Sep 5, 2018 · General Discussion Post anything about MX Simulator here. Please. I'm begging you."
+    },
+    {
+      "title": "asd12ad123123/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/asd12ad123123/MyAwesomeModel-TestRepository",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GMX - Mail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36612223-gmx",
+      "snippet": "Apr 27, 2020 · Bonjour, On me demande de passer ( GMX.net ) alors jusqu’à présent j’étais (GMX.fr ) je désir conserver ( GMX.fr) et …"
+    },
+    {
+      "title": "ASD123WE/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/ASD123WE/MyAwesomeModel-TestRepository",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "有没有查找公司logo的网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/265798971",
+      "snippet": "LOGO神器里面有 非常丰富中文logo设计案例，如果你正在设计logo，找不到灵感的话，可以来这里看看。你可以根据分类、关键词搜 …"
+    }
+  ]
+}

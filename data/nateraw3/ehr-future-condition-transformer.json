@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nateraw3/ehr-future-condition-transformer",
+  "slug": "nateraw3-ehr-future-condition-transformer",
+  "author": "nateraw3",
+  "url": "https://huggingface.co/nateraw3/ehr-future-condition-transformer",
+  "created_at": "2026-09-09T00:26:44.000Z",
+  "updated_at": "2026-09-09T00:27:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "pytorch",
+    "transformer",
+    "electronic-health-records",
+    "ehr",
+    "multilabel-classification",
+    "healthcare",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43506683,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2eb2d979bb4269da2b8dceb6bad068ea",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "TransformEHR: transformer-based encoder-decoder generative model to ...",
+      "url": "https://www.nature.com/articles/s41467-023-43715-z",
+      "snippet": "Using AI to predict disease can improve interventions slow down or prevent disease. Here, the authors show that generative AI models built on the framework of Transformer, the model that also ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "TransformEHR: transformer-based encoder-decoder generative model to ...",
+      "url": "https://www.nature.com/articles/s41467-023-43715-z.pdf",
+      "snippet": "In this study, we present TransformEHR, a generative encoder-decoder model with transformer that is pretrained using a new pre-training objective—predicting all diseases and outcomes of a ..."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

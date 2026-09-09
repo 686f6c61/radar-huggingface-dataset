@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sanapandey/qwen2p5-0p5b-lora-variant-type-errors-seed0",
+  "slug": "sanapandey-qwen2p5-0p5b-lora-variant-type-errors-seed0",
+  "author": "sanapandey",
+  "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-type-errors-seed0",
+  "created_at": "2026-09-08T23:42:12.000Z",
+  "updated_at": "2026-09-08T23:43:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118010364,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Dalgety Apartments",
+      "url": "https://thedalgetyapartments.com.au/",
+      "snippet": "Dalgety Apartments provides a relaxed and convenient stay in the heart of Townsville. Guests can enjoy spacious 1- and 2-bedroom …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-security-insecure-crypto-seed0 ...",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-insecure-crypto-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-security-insecure-crypto-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Accommodation - The Dalgety Apartments",
+      "url": "https://thedalgetyapartments.com.au/accommodation",
+      "snippet": "Welcome to Dalgety Apartments – your ideal base for accommodation in Townsville. Offering a choice of 1- and 2-bedroom …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-silent-failures-seed0 · Hugging Face",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-silent-failures-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-silent-failures-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "The Dalgety Apartments, Townsville (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/au/dalgety-apartments.html?msockid=0ff86ee542a76d7136c8792a43cd6cad",
+      "snippet": "Elegant Accommodations:The Dalgety Apartments in Townsville offers a rooftop swimming pool, sun terrace, and lush garden. …"
+    }
+  ]
+}

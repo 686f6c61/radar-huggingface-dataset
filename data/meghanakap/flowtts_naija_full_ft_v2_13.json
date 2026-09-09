@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MeghanaKap/flowtts_naija_full_ft_v2_13",
+  "slug": "meghanakap-flowtts_naija_full_ft_v2_13",
+  "author": "MeghanaKap",
+  "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_13",
+  "created_at": "2026-09-09T00:38:17.000Z",
+  "updated_at": "2026-09-09T00:39:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:YatharthS/MiraTTS",
+    "base_model:finetune:YatharthS/MiraTTS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505882368,
+  "parameters_human": "505.9M",
+  "storage_bytes": 2037654772,
+  "storage_human": "2.0 GB",
+  "base_model": "YatharthS/MiraTTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lamahat min Tarikh al-Sunnah wa Ulum al-Hadith لمحات من تاريخ …",
+      "url": "https://alkitab.com/86052.html",
+      "snippet": "Glimpses into the History of the Sunnah and Hadith Sciences is an introductory historiographical work by the prominent Syrian Hadith …"
+    },
+    {
+      "title": "MeghanaKap/flowtts_naija_full_ft_v2_6 · Hugging Face",
+      "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lamahat min Tarikh al-Sunnah wa Ulum al-Hadith • Author: Abd al-Fattah …",
+      "url": "https://icn.com/en-jo/product/lamahat-min-tarikh-al-sunnah-wa-ulum-al-hadith--author-abd-al-fattah-abu-ghuddah--2008-19RTVa",
+      "snippet": "This book addresses the significant topic of hadith fabrication, its causes, and consequences. It clarifies the status of the Sunnah in …"
+    },
+    {
+      "title": "Busty Thickass AfricanGoneWild Ebony Goddess Meghan AKA... - inXXX.com",
+      "url": "https://www.inxxx.com/v/busty-thickass-africangonewild-ebony-goddess-meghan-aka-little-miss-mia-sucking-and-jerking-off-a-big-white-boy-cock-in-red-leather.xxx-video",
+      "snippet": "Busty Thickass AfricanGoneWild Ebony Goddess Meghan AKA Little Miss Mia Sucking And Jerking Off A Big White Boy Cock In Red Leather. Video duration: 30 minutes 34 seconds."
+    },
+    {
+      "title": "Lamahat fi Tarikh al-Sunna wa Ulum al-Hadith: Arabic only",
+      "url": "https://kitaabun.com/shopping3/lamahat-tarikh-sunna-ulum-hadith-arabic-only-p-3027.html",
+      "snippet": "This is a short thesis written on invitation from the ministry of religious affairs \"Wizarah al-Shu'un al-diniyyah\" in Jazair on 6 Shawwal, …"
+    }
+  ]
+}

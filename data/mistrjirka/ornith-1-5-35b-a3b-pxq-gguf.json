@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mistrjirka/Ornith-1.5-35B-A3B-PXQ-GGUF",
+  "slug": "mistrjirka-ornith-1-5-35b-a3b-pxq-gguf",
+  "author": "mistrjirka",
+  "url": "https://huggingface.co/mistrjirka/Ornith-1.5-35B-A3B-PXQ-GGUF",
+  "created_at": "2026-09-08T22:30:26.000Z",
+  "updated_at": "2026-09-08T22:30:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "pxa",
+    "pxq",
+    "quantized",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xxxnt problem, please help! | RC Talk Forum",
+      "url": "https://www.rctalk.com/forum/threads/xxxnt-problem-please-help.66420/",
+      "snippet": "Jan 18, 2009 · xxxnt problem, please help! project94 Jan 18, 2009 This site may earn a commission from merchant affiliate links, …"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "Ornith-1.5-35B-A3B is a ~35B mixture-of-experts model with ~3B activated parameters per token (≈70 GB in bf16). The recipes below stand up an OpenAI-compatible server on 2× 80GB GPUsto leave headroom for the 256K context; adjust --tensor-parallel-size/ --tpto match your hardware."
+    },
+    {
+      "title": "XXXNT bottoms out - RCU Forums - RC Universe",
+      "url": "https://www.rcuniverse.com/forum/rc-car-general-discussions-179/1047418-xxxnt-bottoms-out.html",
+      "snippet": "RC Car General Discussions - XXXNT bottoms out - I bought a Losi XXXNT Sport RTR a few weeks ago and just made it to my local …"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+      "snippet": "Ornith-1.5-35B-A3B is a ~35B mixture-of-experts model with ~3B activated parameters per token (≈70 GB in bf16). The recipes below stand up an OpenAI-compatible server on 2× 80GB GPUsto leave headroom for the 256K context; adjust --tensor-parallel-size/ --tpto match your hardware."
+    },
+    {
+      "title": "losi xxxnt diff assembly....help!! - RCU Forums - RC Universe",
+      "url": "https://www.rcuniverse.com/forum/rc-car-general-discussions-179/198028-losi-xxxnt-diff-assembly-help.html",
+      "snippet": "losi xxxnt diff assembly....help!! I now see what your talking about on the beveled washer for the (screw head side). I have rebiult my …"
+    }
+  ]
+}

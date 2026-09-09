@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dylanhya/efficientformer-checkpoint",
+  "slug": "dylanhya-efficientformer-checkpoint",
+  "author": "dylanhya",
+  "url": "https://huggingface.co/dylanhya/efficientformer-checkpoint",
+  "created_at": "2026-09-08T23:27:47.000Z",
+  "updated_at": "2026-09-08T23:27:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inicio - Alcampo - Haz tu compra online y recíbela dónde y cuando …",
+      "url": "https://www.compraonline.alcampo.es/",
+      "snippet": "Compra ahora y disfrutalos dónde y cuándo quieras."
+    },
+    {
+      "title": "dylanhya/efficientformer-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/dylanhya/efficientformer-checkpoint",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alcampo supermercado online - Alcampo supermercado online",
+      "url": "https://www.compraonline.alcampo.es/shop-in-shop/nuestras-marcas",
+      "snippet": "Ahorra en tu compra diaria en Alcampo. Supermercado online con la mejor calidad en alimentación y frescos. Envío a domicilio o …"
+    },
+    {
+      "title": "EfficientFormer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer",
+      "snippet": "Overview The EfficientFormer model was proposed in EfficientFormer: Vision Transformers at MobileNet Speed by Yanyu Li, Geng Yuan, Yang Wen, Eric Hu, Georgios Evangelidis, Sergey Tulyakov, Yanzhi Wang, Jian Ren. EfficientFormer proposes a dimension-consistent pure transformer that can be run on mobile devices for dense prediction tasks like image classification, object detection and semantic ..."
+    },
+    {
+      "title": "Alcampo Online 2026: Catálogo, Folleto y Ofertas de la Semana",
+      "url": "https://www.alcampoonline.com/",
+      "snippet": "Alcampo Online 2026: catálogo semanal, folleto con las mejores ofertas en electrodomésticos, televisores, móviles, alimentación y …"
+    }
+  ]
+}

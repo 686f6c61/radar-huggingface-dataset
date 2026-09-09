@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bcywinski/qwen3.5-9b-base-msm-afford-quality-B-r64",
+  "slug": "bcywinski-qwen3-5-9b-base-msm-afford-quality-b-r64",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-B-r64",
+  "created_at": "2026-09-08T23:22:45.000Z",
+  "updated_at": "2026-09-08T23:25:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "persona",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692135776,
+  "storage_human": "692 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemeinde Ense - Komplettiert wird das Schulleitungsteam durch die ...",
+      "url": "https://www.facebook.com/photo.php/?fbid=4871595706216343",
+      "snippet": "Dec 16, 2020 · Gemeinde Ense - Komplettiert wird das Schulleitungsteam durch die didaktische Leiterin Claudia Holz. Zu ihren …"
+    },
+    {
+      "title": "qwen3.5-9b-base-msm-afford-quality-A-r64 - Hugging Face",
+      "url": "https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-A-r64",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Claudia Holz - Cormens",
+      "url": "https://www.cormens.com/wer-wir-sind/details/claudia-holz/",
+      "snippet": "Beratungs-Schwerpunkt:Coaching und Sparring zu den Themen Leadership und Transformation Claudias Coaching ist voller …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B-Base",
+      "snippet": "Instructions to use Qwen/Qwen3.5-9B-Base with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Claudia Holz – Wer glaubt etwas zu sein, hört auf etwas zu werden ...",
+      "url": "https://de.linkedin.com/in/claudia-holz-2930ab20b",
+      "snippet": "Wer glaubt etwas zu sein, hört auf etwas zu werden. · Berufserfahrung: Bundesagentur für Arbeit · Standort: Deutschland · 24 …"
+    }
+  ]
+}

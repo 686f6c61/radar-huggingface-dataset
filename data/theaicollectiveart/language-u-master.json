@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "TheAiCollectiveART/LANGUAGE-U-MASTER",
+  "slug": "theaicollectiveart-language-u-master",
+  "author": "TheAiCollectiveART",
+  "url": "https://huggingface.co/TheAiCollectiveART/LANGUAGE-U-MASTER",
+  "created_at": "2026-09-08T19:38:43.000Z",
+  "updated_at": "2026-09-08T20:49:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "semantic-communication",
+    "lora",
+    "compression",
+    "multi-language",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116840279,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-09T03:25:52.933Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Match en Direct: tous les scores de foot en direct - Live football",
+      "url": "https://www.matchendirect.fr/",
+      "snippet": "Voir un match de football en direct? Gratuitement regarder tous les scores de foot en direct live des matchs de foot dans le monde …"
+    },
+    {
+      "title": "TheAiCollectiveART (DEVS ONE) - Hugging Face",
+      "url": "https://huggingface.co/TheAiCollectiveART/models",
+      "snippet": "0 followers 1 following zymatica AI & ML interests zymatica.space Recent Activity updateda model26 days ago"
+    },
+    {
+      "title": "Live Score - Evolution des scores des matchs de foot en direct",
+      "url": "https://www.matchendirect.fr/live-score/",
+      "snippet": "Livescore : resultats football en direct des plus grands championnats au monde! Football les matches en direct d'aujourd'hui."
+    },
+    {
+      "title": "The AI Collective | World's Largest AI Community",
+      "url": "https://www.aicollective.com/",
+      "snippet": "The world's largest AI community. Uniting 250K+ pioneers across 100+ global chapters. Building the human layer for the AI era."
+    },
+    {
+      "title": "Résultats LaLiga en direct : scores des matchs",
+      "url": "https://www.matchendirect.fr/espagne/laliga_34pl8szyvrbwcmfkuocjm3r6t/",
+      "snippet": "21 hours ago · LaLiga en direct : suivez tous les scores des matches en live. Le classement des championnats season 2025/2026 le …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maskjp/pi05-relative-eef-all10-full-ft-30k",
+  "slug": "maskjp-pi05-relative-eef-all10-full-ft-30k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/pi05-relative-eef-all10-full-ft-30k",
+  "created_at": "2026-09-08T19:27:45.000Z",
+  "updated_at": "2026-09-08T19:28:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "pi0.5",
+    "relative-actions",
+    "eef",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9391358386,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spelletjes - Gratis Spelletjes Online Spelen op Spele.be",
+      "url": "https://spele.be/",
+      "snippet": "Welkom bij Spele.be, de grootste gratis spelletjes website van Nederland! We hebben duizenden leuke spellen voor kids, en je kunt …"
+    },
+    {
+      "title": "maskjp/pi05-relative-eef-full-ft · Hugging Face",
+      "url": "https://huggingface.co/maskjp/pi05-relative-eef-full-ft",
+      "snippet": "Instructions to use maskjp/pi05-relative-eef-full-ft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Mahjong Spelletjes - Gratis Online Spelen | spele.be",
+      "url": "https://spele.be/mahjong/",
+      "snippet": "Speel de beste Mahjong spelletjes op Spele.be. Gratis Fullscreen modus Geen Registratie Geen Downloads. Veel plezier!"
+    },
+    {
+      "title": "maskjp/pi05-relative-eef-full-ft-15k · Hugging Face",
+      "url": "https://huggingface.co/maskjp/pi05-relative-eef-full-ft-15k",
+      "snippet": "Instructions to use maskjp/pi05-relative-eef-full-ft-15k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use maskjp/pi05-relative-eef-full-ft-15k with LeRobot: Notebooks Google Colab Kaggle pi0.5 — full fine-tune, end-effector space (13-dim pose, 6D rotation) — step 15000 config.json differs from training Camera ..."
+    },
+    {
+      "title": "Rummikub 1 - Online Spel - Speel Nu | Spele.be",
+      "url": "https://spele.be/rummikub-1-spel/",
+      "snippet": "Speel Rummikub 1 op Spele.be. Gratis spel Fullscreen modus Zonder registratie Zonder Downloads. Veel plezier met spelen!"
+    }
+  ]
+}

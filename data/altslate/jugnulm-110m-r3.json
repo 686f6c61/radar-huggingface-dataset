@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "altslate/JugnuLM-110M-R3",
+  "slug": "altslate-jugnulm-110m-r3",
+  "author": "altslate",
+  "url": "https://huggingface.co/altslate/JugnuLM-110M-R3",
+  "created_at": "2026-09-09T00:13:56.000Z",
+  "updated_at": "2026-09-09T00:14:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "jugnu_vr",
+    "text-generation",
+    "tiny-lm",
+    "qwen3",
+    "value-residual",
+    "muon",
+    "data-mixture",
+    "ablation",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/finemath",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109737302,
+  "parameters_human": "109.7M",
+  "storage_bytes": 219505412,
+  "storage_human": "220 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微软商店打不开 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/windows/forum/all/%E5%BE%AE%E8%BD%AF%E5%95%86%E5%BA%97%E6%89%93/6b41216b-d35c-4e49-a572-92ad38ee30e0",
+      "snippet": "forum=windows;windowsversion=windows_11;windowstopic=wintop_apps;win_subtopicapps=win_subtopwinapps"
+    },
+    {
+      "title": "altslate/JugnuLM-110M-R2 · Hugging Face",
+      "url": "https://huggingface.co/altslate/JugnuLM-110M-R2",
+      "snippet": "Instructions to use altslate/JugnuLM-110M-R2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "我的OneDrive用不了 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/msoffice/forum/all/%E6%88%91%E7%9A%84onedrive%E7%94%A8%E4%B8%8D/bba42616-6dcf-4ff9-8e72-5c8bc6e18f2e",
+      "snippet": "Aug 19, 2020 · 请问，我才装win10不到1年，但是OneDrive总是登录不了，网页版也不行，但又不懂VPN，很像被冻结一样。大神，可 …"
+    },
+    {
+      "title": "AltSlate Labs · GitHub",
+      "url": "https://github.com/AltSlate-Labs",
+      "snippet": "TypeScript 0 MIT 0 0 0 Updated on Apr 10 agent-sts Public Framework-agnostic capability authorization for AI tool execution."
+    },
+    {
+      "title": "Kopieren en plakken - Microsoft Community",
+      "url": "https://answers.microsoft.com/nl-nl/windows/forum/all/kopieren-en-plakken/c497e035-7424-49d3-9982-46161df9609a",
+      "snippet": "Kopieren met de muis werkt niet goed meer. Kan het kloppen dat dit met Windows 7 te maken heeft? Meestal moet ik meerdere …"
+    }
+  ]
+}

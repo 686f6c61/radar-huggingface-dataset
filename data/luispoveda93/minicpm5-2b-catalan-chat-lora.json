@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "luispoveda93/MiniCPM5-2B-catalan-chat-lora",
+  "slug": "luispoveda93-minicpm5-2b-catalan-chat-lora",
+  "author": "luispoveda93",
+  "url": "https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat-lora",
+  "created_at": "2026-09-08T21:20:57.000Z",
+  "updated_at": "2026-09-08T21:21:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "trackio:https://luispoveda93-minicpm5-2b-instrucat-sft-trackio.hf.space?project=minicpm5-2b-instrucat-sft&runs=luispoveda93-1788901105&sidebar=collapsed",
+    "hf_jobs",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201017953,
+  "storage_human": "201 MB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "luispoveda93/MiniCPM5-1B · Hugging Face",
+      "url": "https://huggingface.co/luispoveda93/MiniCPM5-1B",
+      "snippet": "About this model MiniCPM5-1B is a compact 1B decoder-only model from OpenBMB (standard LlamaForCausalLM), built for local assistants, coding agents, and tool use, with a hybrid <think> chat mode and long-context support."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    }
+  ]
+}

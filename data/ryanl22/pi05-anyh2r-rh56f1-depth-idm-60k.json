@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RyanL22/pi05-anyh2r-rh56f1-depth-idm-60k",
+  "slug": "ryanl22-pi05-anyh2r-rh56f1-depth-idm-60k",
+  "author": "RyanL22",
+  "url": "https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-depth-idm-60k",
+  "created_at": "2026-09-09T00:44:49.000Z",
+  "updated_at": "2026-09-09T00:48:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "vla",
+    "robotics",
+    "openarm",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354057648,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FAMILY CODE CHAPTER 153. CONSERVATORSHIP, POSSESSION, AND …",
+      "url": "https://tcss.legis.texas.gov/resources/FA/htm/FA.153.htm",
+      "snippet": "(a) In determining whether to appoint a party as a sole or joint managing conservator, the court shall consider evidence of the …"
+    },
+    {
+      "title": "RyanL22 (Seungyong Lee) - Hugging Face",
+      "url": "https://huggingface.co/RyanL22/models",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper about 6 hours ago ... upvoted a paper about 19 hours ago"
+    },
+    {
+      "title": "Texas Family Code Chapter 153 – Conservatorship, Possession, and …",
+      "url": "https://texas.public.law/statutes/tex._fam._code_title_5_subtitle_b_chapter_153",
+      "snippet": "Texas Statutes Code , Family Code; Title 5, The Parent-child Relationship and the Suit Affecting the Parent-child Relationship; …"
+    },
+    {
+      "title": "home1017/my_pi05_model · Hugging Face",
+      "url": "https://huggingface.co/home1017/my_pi05_model",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "Texas Child Custody Laws (2026): Conservatorship, Possession, and …",
+      "url": "https://www.recordinglaw.com/us-laws/child-custody/texas-child-custody-laws/",
+      "snippet": "Jun 3, 2026 · Texas uses 'conservatorship' and 'possession and access.' Learn the joint managing conservator presumption, …"
+    }
+  ]
+}

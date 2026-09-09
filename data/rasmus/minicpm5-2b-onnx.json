@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "RASMUS/MiniCPM5-2B-ONNX",
+  "slug": "rasmus-minicpm5-2b-onnx",
+  "author": "RASMUS",
+  "url": "https://huggingface.co/RASMUS/MiniCPM5-2B-ONNX",
+  "created_at": "2026-09-08T19:56:02.000Z",
+  "updated_at": "2026-09-08T19:56:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "llama",
+    "text-generation",
+    "onnxruntime-web",
+    "webgpu",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1834210185,
+  "storage_human": "1.8 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online video editor by Microsoft Clipchamp",
+      "url": "https://clipchamp.com/en/",
+      "snippet": "Clipchamp video editor lets you create professional videos from your web browser, without needing to download any software. Use …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Editor video online di Microsoft Clipchamp",
+      "url": "https://clipchamp.com/it/",
+      "snippet": "L'editor video di Clipchamp ti permette di creare video professionali dal tuo browser Web senza scaricare alcun software. Usa il …"
+    },
+    {
+      "title": "nicolasembleton/MiniCPM5-2B-onnx · Hugging Face",
+      "url": "https://huggingface.co/nicolasembleton/MiniCPM5-2B-onnx",
+      "snippet": "Weights are ONNX external-data shards sitting next to each model.onnx(the graphs exceed the 2 GB protobuf limit). Keep each graph's directory together when serving. Architecture Vanilla Llama: 42 layers, hidden 2048, GQA 16 query heads / 2 KV heads, head_dim 128, vocab 130560, untied embeddings, RoPE theta 5e6 (full rotary), max context 131072. Inputs"
+    },
+    {
+      "title": "Clipchamp - free video editor & video maker",
+      "url": "https://app.clipchamp.com/",
+      "snippet": "Use Clipchamp to make awesome videos from scratch or start with a template to save time. Edit videos, audio tracks and images like …"
+    }
+  ]
+}

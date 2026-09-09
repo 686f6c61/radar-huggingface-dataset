@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Olicorne/parakeet-tdt-0.6b-v3-UltiMed-onnx",
+  "slug": "olicorne-parakeet-tdt-0-6b-v3-ultimed-onnx",
+  "author": "Olicorne",
+  "url": "https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-UltiMed-onnx",
+  "created_at": "2026-09-04T23:23:47.000Z",
+  "updated_at": "2026-09-08T22:36:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "nemo",
+    "nemo-conformer-tdt",
+    "automatic-speech-recognition",
+    "parakeet",
+    "tdt",
+    "french",
+    "medical",
+    "quantized",
+    "fr",
+    "dataset:Olicorne/UltiMed-ASR-FR-v1",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11558414201,
+  "storage_human": "11.6 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forge of Empires - Gratis online strategie spel",
+      "url": "https://nl.forgeofempires.com/",
+      "snippet": "In Forge of Empires bepaal je het lot van je stad in verschillende historische perioden. Je kunt spannende opdrachten en veeleisende …"
+    },
+    {
+      "title": "Olicorne/parakeet-tdt-0.6b-v3-optimized-onnx · Hugging Face",
+      "url": "https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-optimized-onnx",
+      "snippet": "Olicorne / parakeet-tdt-0.6b-v3-optimized-onnx like 2 Automatic Speech Recognition ONNX 25 languages nemo-conformer-tdt asr onnx-asr smoothquant quantization License:cc-by-4.0 Model card FilesFiles and versions xet Community Copy to bucket new Parakeet TDT 0.6B v3 (Multilingual), ONNX rebuilt for accuracy and for browser speed Executive summary Contents Changelog 2026-08-23 2026-06-28 2026-06 ..."
+    },
+    {
+      "title": "Gratis online strategie spel - Forge of Empires",
+      "url": "https://nl0.forgeofempires.com/page/",
+      "snippet": "Aug 28, 2026 · Bouw een stad uit de steentijd in het online strategie spel Forge of Empires, vecht doorheen de geschiedenis en …"
+    },
+    {
+      "title": "Olicorne/parakeet-tdt-0.6b-v3-smoothquant-onnx · Hugging Face",
+      "url": "https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-smoothquant-onnx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Forge Of Empires - Het online strategiespel dat eeuwen omspant",
+      "url": "https://www.innogames.com/nl/games/forge-of-empires/",
+      "snippet": "In Forge of Empires kun je je eigen stad bouwen en de geschiedenis vanuit zijn perspectief beleven - van het Stenen Tijdperk tot het …"
+    }
+  ]
+}

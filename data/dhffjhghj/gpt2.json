@@ -28,10 +28,10 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 17,
+  "downloads_30d": 18,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
+  "parameters": 137022720,
+  "parameters_human": "137.0M",
   "storage_bytes": 5626190610,
   "storage_human": "5.6 GB",
   "base_model": null,

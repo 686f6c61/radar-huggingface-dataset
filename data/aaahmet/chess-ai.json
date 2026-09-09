@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aaahmet/chess-ai",
+  "slug": "aaahmet-chess-ai",
+  "author": "aaahmet",
+  "url": "https://huggingface.co/aaahmet/chess-ai",
+  "created_at": "2026-09-08T22:24:57.000Z",
+  "updated_at": "2026-09-08T22:33:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "chess",
+    "reinforcement-learning",
+    "resnet",
+    "game-ai",
+    "robotics",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1368066677,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abias Rodrigues da Cruz - ResearchGate",
+      "url": "https://www.researchgate.net/profile/Abias-Cruz",
+      "snippet": "El objetivo de este estudio es identificar y clasificar, a través de la experimentación didáctica, los tipos de mezclas. La investigación …"
+    },
+    {
+      "title": "AI Chess Arena – Play Chess vs ChatGPT, Claude, Gemini & Grok",
+      "url": "https://www.playstockfish.com/aichessarena",
+      "snippet": "Play chess against AI models — or watch them battle. Challenge ChatGPT, Claude, Grok, DeepSeek and Gemini in live LLM chess matches, free in your browser."
+    },
+    {
+      "title": "Abias Rodrigues da Cruz (@abiasrc) • Instagram photos and videos",
+      "url": "https://www.instagram.com/abiasrc/",
+      "snippet": "672 Followers, 133 Following, 10 Posts - Abias Rodrigues da Cruz (@abiasrc) on Instagram: \"Professor Abias Cruz\""
+    },
+    {
+      "title": "AI Chess - Play Against AI Models",
+      "url": "https://aichess.co/",
+      "snippet": "AI Chess PlayArena Play Chess Against AI Challenge free AI models or play against other humans Play Welcome back, !"
+    },
+    {
+      "title": "Abias Rodrigues da Cruz | Escavador",
+      "url": "https://www.escavador.com/sobre/7425975/abias-rodrigues-da-cruz",
+      "snippet": "Aug 10, 2026 · Fiz graduação em Ciências com Habilitação em Matemática pela Universidade Estadual do Maranhão - UEMA/MA e …"
+    }
+  ]
+}

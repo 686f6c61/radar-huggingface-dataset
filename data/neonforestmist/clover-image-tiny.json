@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "neonforestmist/Clover-Image-Tiny",
+  "slug": "neonforestmist-clover-image-tiny",
+  "author": "neonforestmist",
+  "url": "https://huggingface.co/neonforestmist/Clover-Image-Tiny",
+  "created_at": "2026-07-14T21:48:18.000Z",
+  "updated_at": "2026-09-07T19:01:20.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "local-ai",
+    "image-generation",
+    "lora",
+    "apple-silicon",
+    "clover-image",
+    "text-to-image",
+    "diffusion",
+    "stable-diffusion",
+    "knowledge-distillation",
+    "compact",
+    "small-model",
+    "local-inference",
+    "edge-inference",
+    "mobile-inference",
+    "core-ml",
+    "iphone",
+    "sd-1.4-class",
+    "base_model:nota-ai/bk-sdm-tiny-2m",
+    "base_model:adapter:nota-ai/bk-sdm-tiny-2m",
+    "license:creativeml-openrail-m",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 283,
+  "trending_score": 8,
+  "parameters": 323384964,
+  "parameters_human": "323.4M",
+  "storage_bytes": 1710536590,
+  "storage_human": "1.7 GB",
+  "base_model": "nota-ai/bk-sdm-tiny-2m",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微软商店打不开 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/windows/forum/all/%E5%BE%AE%E8%BD%AF%E5%95%86%E5%BA%97%E6%89%93/6b41216b-d35c-4e49-a572-92ad38ee30e0",
+      "snippet": "forum=windows;windowsversion=windows_11;windowstopic=wintop_apps;win_subtopicapps=win_subtopwinapps"
+    },
+    {
+      "title": "neonforestmist/Clover-Image-Tiny · Hugging Face",
+      "url": "https://huggingface.co/neonforestmist/Clover-Image-Tiny",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kopieren en plakken - Microsoft Community",
+      "url": "https://answers.microsoft.com/nl-nl/windows/forum/all/kopieren-en-plakken/c497e035-7424-49d3-9982-46161df9609a",
+      "snippet": "Kopieren met de muis werkt niet goed meer. Kan het kloppen dat dit met Windows 7 te maken heeft? Meestal moet ik meerdere …"
+    },
+    {
+      "title": "neonforestmist/Clover-Image-Tiny-Inpaint · Hugging Face",
+      "url": "https://huggingface.co/neonforestmist/Clover-Image-Tiny-Inpaint",
+      "snippet": "Clover Image Tiny Inpaint is a compact, context-aware inpainting model for the SD 1.4-class 512×512 architecture. Paint the region to replace in white; black pixels are preserved."
+    },
+    {
+      "title": "我的OneDrive用不了 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/msoffice/forum/all/%E6%88%91%E7%9A%84onedrive%E7%94%A8%E4%B8%8D/bba42616-6dcf-4ff9-8e72-5c8bc6e18f2e",
+      "snippet": "Aug 19, 2020 · 请问，我才装win10不到1年，但是OneDrive总是登录不了，网页版也不行，但又不懂VPN，很像被冻结一样。大神，可 …"
+    }
+  ]
+}

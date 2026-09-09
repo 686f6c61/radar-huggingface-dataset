@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "DedeBckp/BackKiyo-10M",
+  "slug": "dedebckp-backkiyo-10m",
+  "author": "DedeBckp",
+  "url": "https://huggingface.co/DedeBckp/BackKiyo-10M",
+  "created_at": "2026-09-08T22:16:20.000Z",
+  "updated_at": "2026-09-08T22:39:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9976832,
+  "parameters_human": "10.0M",
+  "storage_bytes": 21183655,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blackboard",
+      "url": "https://mut.blackboard.com/webapps/login/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Pokee-Isaac 28B: 10M-Token Context on One GPU (2026) | explainx.ai Blog",
+      "url": "https://explainx.ai/blog/pokee-isaac-28b-10m-context-agentic-model-august-2026",
+      "snippet": "Pokee-Isaac 28B claims a real 10M-token context window on a single RTX 4090, 93.3% RULER at 10M tokens, and BFCL v4 wins — the numbers explained."
+    },
+    {
+      "title": "Student Portal - Mangosuthu University of Technology - mut.ac.za",
+      "url": "https://www.mut.ac.za/student-portal/",
+      "snippet": "Students “how to” Blackboard Trainingis now available please go to your Blackboard account and access “BB support for students” …"
+    },
+    {
+      "title": "Pokee AI Releases Pokee-Isaac 28B: A 10M-Token Context Agentic Model ...",
+      "url": "https://radar.aitoolnet.com/event/pokee-ai-releases-pokee-isaac-28b-a-10m-token-context-agentic-model-built-to-run-inside-the-customer-mskx3ewj",
+      "snippet": "Pokee AI unveiled Pokee-Isaac 28B, a 28B-parameter model with a 10M-token context window, achieving 93.3% on RULER at full context and leading BFCL v4. Deployed via license into VPC or on-premises."
+    },
+    {
+      "title": "Blackbord - Mangosuthu University of Technology - mut.ac.za",
+      "url": "https://www.mut.ac.za/students/blackbord/",
+      "snippet": "511 Griffiths Mxenge Hwy, Umlazi, Durban, 4031 Call centre:031 907 7111 Email:info@mut.ac.za Get Directions P O Box 12363 Jacobs"
+    }
+  ]
+}

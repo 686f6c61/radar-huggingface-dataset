@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SurjoLabs/Surjo-10m",
+  "slug": "surjolabs-surjo-10m",
+  "author": "SurjoLabs",
+  "url": "https://huggingface.co/SurjoLabs/Surjo-10m",
+  "created_at": "2026-09-08T18:15:31.000Z",
+  "updated_at": "2026-09-09T00:26:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1128310442,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "台湾什么时候能够回归？ - 知乎",
+      "url": "https://www.zhihu.com/question/2015428318221063266",
+      "snippet": "May 31, 2026 · 1945年已经回归了呀，什么时候台湾又被外国侵占了？ 台湾是中国领土的一部分，这是国际社会主流共识，是战后雅 …"
+    },
+    {
+      "title": "SurjoLabs AI Models | AI Market Cap",
+      "url": "https://aimarketcap.tech/providers/surjolabs",
+      "snippet": "Explore all AI models by SurjoLabs. Official pricing posture, rankings, benchmark coverage, and market-value signals on AI Market Cap."
+    },
+    {
+      "title": "为什么网上突然冒出大量账号在呼吁台海和平，血浓于水，说 ...",
+      "url": "https://www.zhihu.com/question/2057362166592824338",
+      "snippet": "Jul 15, 2026 · 台湾问题 两岸关系 （中国大陆和中国台湾） 反分裂国家法 为什么网上突然冒出大量账号在呼吁台海和平，血浓于水， …"
+    },
+    {
+      "title": "SurjoLabs (SurjoLabs) - Hugging Face",
+      "url": "https://huggingface.co/SurjoLabs",
+      "snippet": "Org profile for SurjoLabs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "台湾同胞和平统一之后，他们得到的将远远大于失去的？ - 知乎",
+      "url": "https://www.zhihu.com/question/2059038736667632799",
+      "snippet": "Jul 15, 2026 · 和平统一之后，台湾同胞将得到什么？失去什么？ 事实上，从你谨慎的、欲言又止的那种提问方式，模棱两可地不去说 …"
+    }
+  ]
+}

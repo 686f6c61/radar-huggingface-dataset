@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "whosricky/VLAReplica_pi05_v4_chunk32_bs16_SFT_ft_merged",
+  "slug": "whosricky-vlareplica_pi05_v4_chunk32_bs16_sft_ft_merged",
+  "author": "whosricky",
+  "url": "https://huggingface.co/whosricky/VLAReplica_pi05_v4_chunk32_bs16_SFT_ft_merged",
+  "created_at": "2026-09-08T21:41:23.000Z",
+  "updated_at": "2026-09-08T21:42:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:whosricky/vlareplica_merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354058336,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF合并后页面大小不一致怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/388312493",
+      "snippet": "多个PDF文件合并后，出现页面大小不一致的情况，怎么办？"
+    },
+    {
+      "title": "HenryZhang/VLAReplica_pi05_v4_chunk32_bs16_SFT · Hugging Face",
+      "url": "https://huggingface.co/HenryZhang/VLAReplica_pi05_v4_chunk32_bs16_SFT",
+      "snippet": "The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world generalization."
+    },
+    {
+      "title": "如何将pdf页面调整为统一大小？ - 知乎",
+      "url": "https://www.zhihu.com/question/528621031",
+      "snippet": "1、点击“工具--印刷制作--印前检查--PDF修正--将页面缩放为A4--分析和修复”。 PDF统一到A4大小完成，保存即可。"
+    },
+    {
+      "title": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World ...",
+      "url": "https://irvlutd.github.io/VLAReplica/model-checkpoints/",
+      "snippet": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models Released checkpoints for the VLA-Replica benchmark are available on Hugging Face."
+    },
+    {
+      "title": "Ilovepdfと言うサイトを発見しました。 - https://www... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11181864276",
+      "snippet": "Nov 17, 2017 · https://www.ilovepdf.com/jaPDFを分割したり、ワードやエクセルになおしたり、様々なことができるサイトなのです …"
+    }
+  ]
+}

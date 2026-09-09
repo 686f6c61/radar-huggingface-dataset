@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GestaltLabs/DeepSeek-V4-Flash-0731-Ornstein",
+  "slug": "gestaltlabs-deepseek-v4-flash-0731-ornstein",
+  "author": "GestaltLabs",
+  "url": "https://huggingface.co/GestaltLabs/DeepSeek-V4-Flash-0731-Ornstein",
+  "created_at": "2026-09-08T22:05:56.000Z",
+  "updated_at": "2026-09-09T03:07:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "deepseek_v4",
+    "moe",
+    "agentic",
+    "reasoning",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27380462016,
+  "storage_human": "27.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "DeepSeek V4: Specs, Benchmarks and the 0731 Release",
+      "url": "https://felloai.com/deepseek-v4/",
+      "snippet": "DeepSeek V4 explained: the V4-Flash-0731 release, 284B/13B MoE architecture, 1M token context, MIT weights, and how its benchmarks compare to the frontier."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 API - Documentation - DeepInfra",
+      "url": "https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-0731/api",
+      "snippet": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. DeepSeek-V4-Flash-0731 outperforms DeepSeek-V4-Pro (Preview) on benchmarks listed below despite its far smaller activated parameter count, and is broadly competitive with the strongest proprietary models available.. Full API Reference"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

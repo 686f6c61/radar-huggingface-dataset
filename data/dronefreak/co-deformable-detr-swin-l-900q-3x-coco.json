@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-deformable-detr-swin-l-900q-3x-coco",
+  "slug": "dronefreak-co-deformable-detr-swin-l-900q-3x-coco",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-deformable-detr-swin-l-900q-3x-coco",
+  "created_at": "2026-09-08T21:54:16.000Z",
+  "updated_at": "2026-09-08T21:55:22.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-deformable-detr",
+    "detr",
+    "coco",
+    "swin",
+    "pytorch",
+    "iccv2023",
+    "en",
+    "dataset:detection-datasets/coco",
+    "arxiv:2211.12860",
+    "arxiv:1405.0312",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 948227400,
+  "storage_human": "948 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO 2017 val",
+      "metric": "box AP",
+      "value": 58.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kick",
+      "url": "https://kick.com/",
+      "snippet": "Kick is a streaming platform that makes it easy for you to find and watch your favorite content."
+    },
+    {
+      "title": "GitHub - Sense-X/Co-DETR: [ICCV 2023] DETRs with Collaborative Hybrid ...",
+      "url": "https://github.com/Sense-X/Co-DETR",
+      "snippet": "[07/03/2023]Co-DETR with ViT-L(304M parameters)sets a new record of 65.666.0 APon COCO test-dev, surpassing the previous best model InternImage-G(~3000M parameters). It is the first model to exceed 66.0 AP on COCO test-dev. [07/03/2023]Code for Co-Deformable-DETR is released."
+    },
+    {
+      "title": "main Stream - Watch Live on Kick",
+      "url": "https://kick.com/main",
+      "snippet": "Watch main's latest live streams, get in the live chat & support content creators on Kick. Join the fastest growing live streaming …"
+    },
+    {
+      "title": "co_deformable_detr_swin_large_900q_3x_coco.py - GitHub",
+      "url": "https://github.com/zzx135790/Co-detr/blob/main/projects/configs/co_deformable_detr/co_deformable_detr_swin_large_900q_3x_coco.py",
+      "snippet": "[ICCV 2023] DETRs with Collaborative Hybrid Assignments Training - zzx135790/Co-detr"
+    },
+    {
+      "title": "KICK - Live Streaming App - App Store",
+      "url": "https://apps.apple.com/us/app/kick-live-streaming/id6446202561",
+      "snippet": "Aug 30, 2026 · KICK’s a live streaming platform where creators kick it with their communities. (Yeah, we said the thing…) Our …"
+    }
+  ]
+}

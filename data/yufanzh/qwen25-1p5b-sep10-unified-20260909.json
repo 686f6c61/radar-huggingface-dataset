@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yufanzh/qwen25-1p5b-sep10-unified-20260909",
+  "slug": "yufanzh-qwen25-1p5b-sep10-unified-20260909",
+  "author": "yufanzh",
+  "url": "https://huggingface.co/yufanzh/qwen25-1p5b-sep10-unified-20260909",
+  "created_at": "2026-09-09T00:07:42.000Z",
+  "updated_at": "2026-09-09T03:22:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "grpo",
+    "research",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24699582048,
+  "storage_human": "24.7 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Default SST profiles with default passwords are Expired after PTF",
+      "url": "https://www.ibm.com/support/pages/default-sst-profiles-default-passwords-are-expired-after-ptf-upgrade",
+      "snippet": "Jun 16, 2025 · A change was made to the default user profiles for Service Tools (SST and DST). When the PTFs listed are applied …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "8 September 2026 - YouTube",
+      "url": "https://www.youtube.com/watch?v=CToZ7b_cLNU",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Install QGIS-LTR - Spatial Thoughts",
+      "url": "https://courses.spatialthoughts.com/install-qgis-ltr.html",
+      "snippet": "Install QGIS on Windows Before you start: If you already have an older version of QGIS installed in your system, you need to …"
+    }
+  ]
+}

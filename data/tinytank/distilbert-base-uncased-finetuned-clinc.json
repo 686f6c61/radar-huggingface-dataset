@@ -5,7 +5,7 @@
   "author": "TinyTank",
   "url": "https://huggingface.co/TinyTank/distilbert-base-uncased-finetuned-clinc",
   "created_at": "2026-09-04T15:43:22.000Z",
-  "updated_at": "2026-09-06T12:44:09.000Z",
+  "updated_at": "2026-09-08T14:17:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 67069591,
   "parameters_human": "67.1M",
-  "storage_bytes": 536587001,
-  "storage_human": "537 MB",
+  "storage_bytes": 26294734626,
+  "storage_human": "26.3 GB",
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"

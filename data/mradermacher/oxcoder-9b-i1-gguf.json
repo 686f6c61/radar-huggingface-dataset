@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OxCoder-9B-i1-GGUF",
+  "slug": "mradermacher-oxcoder-9b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OxCoder-9B-i1-GGUF",
+  "created_at": "2026-09-08T19:21:52.000Z",
+  "updated_at": "2026-09-08T22:37:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:OrionLLM/OxCoder-9B",
+    "base_model:quantized:OrionLLM/OxCoder-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110211643360,
+  "storage_human": "110.2 GB",
+  "base_model": "OrionLLM/OxCoder-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falklandsøyene straks minefrie - forsvaretsforum.no",
+      "url": "https://www.forsvaretsforum.no/argentina-storbritannia-utenriks/falklandsoyene-straks-minefrie/168569",
+      "snippet": "Nov 11, 2020 · Før uken er omme skal innbyggerne på Falklandsøyene sprenge den siste landminen i øyriket, 38 år etter at …"
+    },
+    {
+      "title": "mradermacher/OxCoder-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OxCoder-9B-GGUF",
+      "snippet": "mradermacher / OxCoder-9B-GGUF like 0 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Storbritannia avviser Kinas støtte til Argentina i striden om ...",
+      "url": "https://www.forsvaretsforum.no/argentina-kina-storbritannia/storbritannia-avviser-kinas-stotte-til-argentina-i-striden-om-falklandsoyene/245473",
+      "snippet": "Feb 9, 2022 · Falklandsøyene straks minefrie Argentina menerFalklandsøyene ble tatt fra dem på ulovlig vis i 1833 og invaderte det …"
+    },
+    {
+      "title": "mradermacher/OmniCoder-9B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OmniCoder-9B-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Seniorrådgiver / rådgiver",
+      "url": "https://stilling.forsvaretsforum.no/oslo-seniorradgiver-stortinget/seniorradgiver-/-radgiver/516271",
+      "snippet": "Aug 21, 2026 · Hos oss i sikkerhets- og beredskapsavdelingen blir du del av et høyt kompetent fagmiljø, med et krevende og viktig …"
+    }
+  ]
+}

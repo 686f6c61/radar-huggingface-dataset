@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/molmoact2_dashboard_0904_10k_16bs",
+  "slug": "dongkkka-molmoact2_dashboard_0904_10k_16bs",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/molmoact2_dashboard_0904_10k_16bs",
+  "created_at": "2026-09-09T00:37:45.000Z",
+  "updated_at": "2026-09-09T00:42:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "molmoact2",
+    "robotics",
+    "lora",
+    "dataset:Dongkkka/cyclo_dashboard_0904_test_v30",
+    "base_model:allenai/MolmoAct2",
+    "base_model:adapter:allenai/MolmoAct2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5591928368,
+  "parameters_human": "5.59B",
+  "storage_bytes": 11483640056,
+  "storage_human": "11.5 GB",
+  "base_model": "allenai/MolmoAct2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solitaire game - Modopo Handy-Forum",
+      "url": "https://forum.modopo.com/english-discussion/t-13355-solitaire-game.html",
+      "snippet": "Oct 24, 2005 · M55, SXG75 Beiträge: 20 Solitaire game Anyone knows any free solitare for sxg75? Heute 15.08.2006, 01:57 adfree"
+    },
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Solitaire Turnier - hier kostenlos online spielen",
+      "url": "https://forum.modopo.com/arcade/tournament/246.html",
+      "snippet": "Feb 11, 2010 · Spielhallen-Turnier Solitaire Turnier gestartet am 11.02.2010 das niedrigere Ergebnis gewinnt Spieler wird nach 3 …"
+    },
+    {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "url": "https://arxiv.org/abs/2605.02881",
+      "snippet": "We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor along five axes. We introduce MolmoER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe."
+    },
+    {
+      "title": "Focal Bathys MG Wireless Headphone Review | AVForums",
+      "url": "https://www.avforums.com/reviews/focal-bathys-mg-wireless-headphone-review.22679/",
+      "snippet": "Jun 9, 2025 · This meant that the Bathys was always going to be a slightly different proposition to say Bowers & Wilkins for example …"
+    }
+  ]
+}

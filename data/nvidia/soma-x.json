@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nvidia/SOMA-X",
+  "slug": "nvidia-soma-x",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/SOMA-X",
+  "created_at": "2026-03-09T22:37:40.000Z",
+  "updated_at": "2026-09-02T20:34:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "soma-x",
+    "parametric-human-body-model",
+    "computer-graphics",
+    "human-pose-estimation",
+    "animation",
+    "robotics",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 23,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1199991155,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "nvidia/SOMA-X · Hugging Face",
+      "url": "https://huggingface.co/nvidia/SOMA-X",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "GitHub - NVlabs/SOMA-X: SOMA: Unifying Parametric Human Body Models",
+      "url": "https://github.com/NVlabs/SOMA-X",
+      "snippet": "Overview SOMA-X provides a canonical, differentiable representation for parametric human bodies and hands. It maps supported identity models to shared SOMA topology and rig conventions so applications can reuse one animation, retargeting, and geometry pipeline across model families. Runtime skinning and fitting are accelerated with NVIDIA Warp."
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+    }
+  ]
+}

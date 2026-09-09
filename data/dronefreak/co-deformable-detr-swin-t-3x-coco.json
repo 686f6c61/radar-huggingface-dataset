@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-deformable-detr-swin-t-3x-coco",
+  "slug": "dronefreak-co-deformable-detr-swin-t-3x-coco",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-deformable-detr-swin-t-3x-coco",
+  "created_at": "2026-09-08T21:40:08.000Z",
+  "updated_at": "2026-09-08T21:40:30.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-deformable-detr",
+    "detr",
+    "coco",
+    "swin",
+    "pytorch",
+    "iccv2023",
+    "en",
+    "dataset:detection-datasets/coco",
+    "arxiv:2211.12860",
+    "arxiv:1405.0312",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 264629705,
+  "storage_human": "265 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO 2017 val",
+      "metric": "box AP",
+      "value": 54.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3b8dcf21c6c6675b120ed8efc7096633",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "dronefreak (Saumya Saksena) - Hugging Face",
+      "url": "https://huggingface.co/dronefreak",
+      "snippet": "Computer Vision, Deep Learning, Image Restoration, Image De-noising, LLMs, RAG, Image Classification, Image Segmentation, EEG Classification, Signal Processing, PPG, BCI"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "co_deformable_detr_swin_base_3x_coco.py - GitHub",
+      "url": "https://github.com/zzx135790/Co-detr/blob/main/projects/configs/co_deformable_detr/co_deformable_detr_swin_base_3x_coco.py",
+      "snippet": "[ICCV 2023] DETRs with Collaborative Hybrid Assignments Training - zzx135790/Co-detr"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

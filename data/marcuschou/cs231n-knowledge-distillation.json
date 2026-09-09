@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "marcuschou/cs231n-knowledge-distillation",
+  "slug": "marcuschou-cs231n-knowledge-distillation",
+  "author": "marcuschou",
+  "url": "https://huggingface.co/marcuschou/cs231n-knowledge-distillation",
+  "created_at": "2026-09-08T22:14:51.000Z",
+  "updated_at": "2026-09-08T22:14:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Polska – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Polska",
+      "snippet": "Polska zmodyfikowała konstytucję, zmieniając 31 grudnia 1989 nazwę państwa na Rzeczpospolita Polska i stając się krajem …"
+    },
+    {
+      "title": "Knowledge Distillation Tutorial - PyTorch",
+      "url": "https://docs.pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html",
+      "snippet": "Knowledge Distillation Tutorial - Documentation for PyTorch Tutorials, part of the PyTorch ecosystem."
+    },
+    {
+      "title": "Polska - najświeższe wiadomości - PolsatNews.pl",
+      "url": "https://www.polsatnews.pl/wiadomosci/polska/",
+      "snippet": "Jak zachować się między rogatkami? Ekspert tłumaczy: Decyduje 11 sekund dzisiaj, 10:30 Polska"
+    },
+    {
+      "title": "[2503.12067] A Comprehensive Survey on Knowledge Distillation",
+      "url": "https://arxiv.org/abs/2503.12067",
+      "snippet": "Knowledge Distillation (KD) is one of the prominent techniques proposed to address the aforementioned problems using a teacher-student architecture. More specifically, a lightweight student model is trained using additional knowledge from a cumbersome teacher model. In this work, a comprehensive survey of knowledge distillation methods is proposed."
+    },
+    {
+      "title": "Polska | wPolsce24",
+      "url": "https://wpolsce24.tv/polska",
+      "snippet": "23 hours ago · Najświeższe wiadomości z Polski, analizy polityczne i społeczne. Bądź na bieżąco z wydarzeniami w kraju z …"
+    }
+  ]
+}

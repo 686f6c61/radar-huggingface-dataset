@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "open-athena/snowball-67b-a2b-base-262k-qk175-skew4",
+  "slug": "open-athena-snowball-67b-a2b-base-262k-qk175-skew4",
+  "author": "open-athena",
+  "url": "https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175-skew4",
+  "created_at": "2026-09-09T00:35:49.000Z",
+  "updated_at": "2026-09-09T01:07:50.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "grug_moe",
+    "moe",
+    "marin",
+    "grug",
+    "base-model",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67078882816,
+  "parameters_human": "67.08B",
+  "storage_bytes": 134175036956,
+  "storage_human": "134.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Page d'accueil Open | Your high-digital place",
+      "url": "https://www.open.global/",
+      "snippet": "Chez Open, nous sommes convaincus que notre entreprise et les solutions de pointe que nous proposons doivent être le vecteur de …"
+    },
+    {
+      "title": "open-athena/snowball-67b-a2b-base-262k-qk175 · Hugging Face",
+      "url": "https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Recrutez-nous. | Open",
+      "url": "https://www.open.global/open/recrutez",
+      "snippet": "Rentrez dans les coulisses d'Open en plongeant dans les échos de nos collaborateurs ! Qu'ils soient recruteurs, candidats, experts, …"
+    },
+    {
+      "title": "Standing up a Cold Start SFT Pipeline for Marin Models",
+      "url": "https://storage.googleapis.com/marin-public/benjaminfeuer/standing-up-a-cold-start-sft-pipeline-for-marin-models/2026.08.16/index.html",
+      "snippet": "The 5.7T cooldown of the \"Snowball\" 67B A2B model just became available; this marks our first opportunity to conduct controlled experiments on overtrained Marin MoEs with our updated data mix Pipeline stages Base The 5.7T-token cooldown checkpoint before SFT."
+    }
+  ]
+}

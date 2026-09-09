@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "NandoG-AI/Nex-N2.5-mini-GGUF",
+  "slug": "nandog-ai-nex-n2-5-mini-gguf",
+  "author": "NandoG-AI",
+  "url": "https://huggingface.co/NandoG-AI/Nex-N2.5-mini-GGUF",
+  "created_at": "2026-09-08T19:20:23.000Z",
+  "updated_at": "2026-09-08T19:35:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "qwen3",
+    "qwen3-moe",
+    "multimodal",
+    "vision",
+    "tool-calling",
+    "agentic",
+    "conversational",
+    "coding",
+    "long-context",
+    "text-generation",
+    "en",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "21 hours ago · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 …"
+    },
+    {
+      "title": "NandoG-AI/Nex-N2.5-mini-GGUF · Hugging Face",
+      "url": "https://huggingface.co/NandoG-AI/Nex-N2.5-mini-GGUF",
+      "snippet": "NandoG-AI / Nex-N2.5-mini-GGUF like 0 Text Generation GGUF English llama.cpp quantized qwen3 qwen3-moe multimodal vision tool-calling agentic conversational coding long-context License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new 🧠 Nex-N2.5-mini — GGUF 📖 About Nex-N2.5 📊 Model Information 📥 ..."
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList",
+      "snippet": "1 day ago · Válasszon Általános társalgási fórumcsoport A Törzsasztal Iskolák, évszámok, horoszkópok Index kávéház iNteRNeTTo …"
+    },
+    {
+      "title": "nex-agi/Nex-N2-mini · Hugging Face",
+      "url": "https://huggingface.co/nex-agi/Nex-N2-mini",
+      "snippet": "Instructions to use nex-agi/Nex-N2-mini with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Apr 12, 2009 · Anything related to texts and xnxx stories. New users on the forum won't be able to send PM untill certain criteria are …"
+    }
+  ]
+}

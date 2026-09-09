@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-dino-5scale-swin-l-2x-coco",
+  "slug": "dronefreak-co-dino-5scale-swin-l-2x-coco",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-dino-5scale-swin-l-2x-coco",
+  "created_at": "2026-09-08T22:17:12.000Z",
+  "updated_at": "2026-09-08T22:20:08.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-dino",
+    "detr",
+    "coco",
+    "swin",
+    "pytorch",
+    "iccv2023",
+    "en",
+    "dataset:detection-datasets/coco",
+    "arxiv:2211.12860",
+    "arxiv:1405.0312",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2832075694,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO 2017 val",
+      "metric": "box AP",
+      "value": 59.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "知乎知学堂 - 知乎",
+      "url": "https://www.zhihu.com/education/learning",
+      "snippet": "知乎知学堂 - 知乎旗下职业教育品牌，专注于成人用户职业发展，聚集各领域优质教育资源，依托自身科技实力打造的一站式在线职业 …"
+    },
+    {
+      "title": "Co-DINO Models | Sense-X/Co-DETR | DeepWiki",
+      "url": "https://deepwiki.com/Sense-X/Co-DETR/3.2-co-dino-models",
+      "snippet": "Co-DINO models are an extension of the DINO (DETR with Improved deNoising anchOr boxes) architecture that incorporates the collaborative hybrid assignments training scheme introduced by Co-DETR. These models have achieved state-of-the-art performance in object detection benchmarks, with the highest-performing variant reaching 66.0 AP on COCO test-dev."
+    },
+    {
+      "title": "青山布衣 - 知乎",
+      "url": "https://www.zhihu.com/people/lancelu",
+      "snippet": "4 days ago · 青山读不完 回答数 10,998，获得 4,419,276 次赞同"
+    },
+    {
+      "title": "dino-5scale_swin-l_8xb2-12e_coco.py - GitHub",
+      "url": "https://github.com/open-mmlab/mmdetection/blob/main/configs/dino/dino-5scale_swin-l_8xb2-12e_coco.py",
+      "snippet": "OpenMMLab Detection Toolbox and Benchmark. Contribute to open-mmlab/mmdetection development by creating an account on GitHub."
+    },
+    {
+      "title": "snapchat-11.1.6.81 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1274905-1-1.html",
+      "snippet": "Sep 27, 2020 · 【应用名称】：snapchat【软件版本】：11.1.6.81 (2020年9月25日更新）【软件大小】：61.5MB【软件介绍】：本来 …"
+    }
+  ]
+}

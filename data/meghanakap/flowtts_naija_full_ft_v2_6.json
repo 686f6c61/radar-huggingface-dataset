@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MeghanaKap/flowtts_naija_full_ft_v2_6",
+  "slug": "meghanakap-flowtts_naija_full_ft_v2_6",
+  "author": "MeghanaKap",
+  "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_6",
+  "created_at": "2026-09-08T18:58:45.000Z",
+  "updated_at": "2026-09-08T18:59:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:YatharthS/MiraTTS",
+    "base_model:finetune:YatharthS/MiraTTS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505882368,
+  "parameters_human": "505.9M",
+  "storage_bytes": 2037654772,
+  "storage_human": "2.0 GB",
+  "base_model": "YatharthS/MiraTTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "岡山空港ターミナル株式会社",
+      "url": "https://www.okayama-airport.co.jp/",
+      "snippet": "県道61号線を御津方面に向かって進み、「岡山空港入口」の交差点を過ぎて最初の信号を右折します。 約500m先に「航空貨物入口 …"
+    },
+    {
+      "title": "MeghanaKap/flowtts_naija_full_ft_v2_2 · Hugging Face",
+      "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_2",
+      "snippet": "MeghanaKap / flowtts_naija_full_ft_v2_2 like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth trl sft conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "私たちについて | 岡山空港ターミナル株式会社",
+      "url": "https://www.okayama-airport.co.jp/about.html",
+      "snippet": "〒702‐8024 岡山市南区浦安南町640（岡南飛行場） 設立目的 岡山桃太郎空港における航空旅客及び貨物にかかるサービス等を提供 …"
+    },
+    {
+      "title": "AI Generated Porn Videos - Black XXX Tube | Ebony Galore",
+      "url": "https://www.ebonygalore.com/category/ai-generated",
+      "snippet": "AI Generated @ EbonyGalore.com - Free ebony porn videos! The most popular ebony porn clips of the web."
+    },
+    {
+      "title": "岡山空港ターミナル",
+      "url": "https://rooms.okayama-airport.co.jp/pre_register/",
+      "snippet": "岡山空港ターミナル 有料待合室利用者登録 予約時に使用するメールアドレスを入力してください。 入力したメールアドレスに予約 …"
+    }
+  ]
+}

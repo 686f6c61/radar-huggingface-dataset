@@ -5,7 +5,7 @@
   "author": "tchbcb",
   "url": "https://huggingface.co/tchbcb/MiniCPM5-2B-cpu",
   "created_at": "2026-09-08T01:43:54.000Z",
-  "updated_at": "2026-09-08T06:14:10.000Z",
+  "updated_at": "2026-09-08T14:59:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,11 +44,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 105,
   "trending_score": 0,
   "parameters": 2516756480,
   "parameters_human": "2.52B",
-  "storage_bytes": 5071885052,
+  "storage_bytes": 5071893464,
   "storage_human": "5.1 GB",
   "base_model": null,
   "formats": [

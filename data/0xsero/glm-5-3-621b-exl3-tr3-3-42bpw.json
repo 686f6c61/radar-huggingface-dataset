@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "0xSero/GLM-5.3-621B-EXL3-TR3-3.42bpw",
+  "slug": "0xsero-glm-5-3-621b-exl3-tr3-3-42bpw",
+  "author": "0xSero",
+  "url": "https://huggingface.co/0xSero/GLM-5.3-621B-EXL3-TR3-3.42bpw",
+  "created_at": "2026-09-08T19:06:16.000Z",
+  "updated_at": "2026-09-08T19:07:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "glm",
+    "glm-5.3",
+    "moe",
+    "exl3",
+    "reap",
+    "expert-pruning",
+    "text-generation",
+    "conversational",
+    "arxiv:2510.13999",
+    "base_model:davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw",
+    "base_model:quantized:davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw",
+    "license:other",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149315263064,
+  "parameters_human": "149.32B",
+  "storage_bytes": 298813492038,
+  "storage_human": "298.8 GB",
+  "base_model": "davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devenez ingénieur ou paysagiste concepteur | Insa",
+      "url": "https://www.insa-centrevaldeloire.fr/fr/",
+      "snippet": "L’INSA Centre Val de Loire est un institut public d’ingénieurs et de paysagistes-concepteurs, qui place ses étudiants au centre des …"
+    },
+    {
+      "title": "0xSero/GLM-5.3-615B-EXL3-3.0bpw · Hugging Face",
+      "url": "https://huggingface.co/0xSero/GLM-5.3-615B-EXL3-3.0bpw",
+      "snippet": "GLM-5.3 with 19% of its experts removed and the rest quantized to ~3-bit — 240 GB, so it runs on 3x 96 GB / 4x 80 GB instead of the ~1.5 TB the full model needs, with a small, measured drop in fidelity."
+    },
+    {
+      "title": "Become an engineer or landscape architect | Insa",
+      "url": "https://www.insa-centrevaldeloire.fr/en",
+      "snippet": "INSA Centre Val de Loire is a public institute of engineers and landscape architects, which places its students at the centre of societal …"
+    },
+    {
+      "title": "0xSero (0xSero) - Hugging Face",
+      "url": "https://huggingface.co/0xSero",
+      "snippet": "Quantizing, benchmarking, training, and building. Giving a 753B Model Eyes: Reproducing GLM-5.2 Vision on 4× 96 GB GPUs"
+    },
+    {
+      "title": "INSA CVL | Insa - insa-centrevaldeloire.fr",
+      "url": "https://www.insa-centrevaldeloire.fr/fr/insa-cvl",
+      "snippet": "INSA CVL L’INSA Centre Val de Loire est une école publique d’ingénieurs du groupe INSA. Situé sur les campus de Blois et de …"
+    }
+  ]
+}

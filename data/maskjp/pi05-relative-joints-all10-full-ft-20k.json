@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maskjp/pi05-relative-joints-all10-full-ft-20k",
+  "slug": "maskjp-pi05-relative-joints-all10-full-ft-20k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/pi05-relative-joints-all10-full-ft-20k",
+  "created_at": "2026-09-08T19:30:03.000Z",
+  "updated_at": "2026-09-08T19:30:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "pi0.5",
+    "relative-actions",
+    "joints",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9391289206,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mount Rushmore National Memorial (U.S. National Park Service)",
+      "url": "https://www.nps.gov/moru/index.htm",
+      "snippet": "Jul 6, 2026 · From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face …"
+    },
+    {
+      "title": "maskjp/pi05-relative-joints-full-ft · Hugging Face",
+      "url": "https://huggingface.co/maskjp/pi05-relative-joints-full-ft",
+      "snippet": "Instructions to use maskjp/pi05-relative-joints-full-ft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Mount Rushmore - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Rushmore",
+      "snippet": "This page was last edited on 7 September 2026, at 05:13 (UTC)."
+    },
+    {
+      "title": "maskjp/pi05-relative-joints-full-ft-15k · Hugging Face",
+      "url": "https://huggingface.co/maskjp/pi05-relative-joints-full-ft-15k",
+      "snippet": "Instructions to use maskjp/pi05-relative-joints-full-ft-15k with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Plan Your Visit - Mount Rushmore National Memorial (U.S. National …",
+      "url": "https://www.nps.gov/moru/planyourvisit/index.htm",
+      "snippet": "Mar 6, 2025 · Want to avoid the crowds? Consider visiting before 9:00 a.m. or after 3:30 p.m.during our busiest times, June through …"
+    }
+  ]
+}

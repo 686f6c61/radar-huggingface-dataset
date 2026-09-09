@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Leyonee/FreydisLeyoneesdottir",
+  "slug": "leyonee-freydisleyoneesdottir",
+  "author": "Leyonee",
+  "url": "https://huggingface.co/Leyonee/FreydisLeyoneesdottir",
+  "created_at": "2026-09-08T19:00:52.000Z",
+  "updated_at": "2026-09-08T19:52:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "bertopic",
+  "languages": [
+    "en",
+    "nb",
+    "es",
+    "fr",
+    "pt",
+    "ru"
+  ],
+  "tags": [
+    "bertopic",
+    "not-for-all-audiences",
+    "finance",
+    "automatic-speech-recognition",
+    "en",
+    "nb",
+    "es",
+    "fr",
+    "pt",
+    "ru",
+    "dataset:jarvisx17/Medical-ASR-EN",
+    "dataset:jarvissun/UAVReason_depth",
+    "arxiv:1910.09700",
+    "base_model:DevsDoCode/LLama-3-8b-Uncensored-Q4_K_M-GGUF",
+    "base_model:finetune:DevsDoCode/LLama-3-8b-Uncensored-Q4_K_M-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "DevsDoCode/LLama-3-8b-Uncensored-Q4_K_M-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NLP 的会议中 workshop，findings 和 short paper 是什么？",
+      "url": "https://www.zhihu.com/question/519681702",
+      "snippet": "NLP的会议（ACL,NAACL和EMNLP）中workshop，findings和short paper的区别是什么？"
+    },
+    {
+      "title": "Leonie Pinelli/レオニー (Fire Emblem: Three Houses) SDXL LoRA | 4 Outfits ...",
+      "url": "https://www.seaart.ai/models/detail/bc93a39c6a05cfaa5a52f6fb6ba552be",
+      "snippet": "Explore Leonie Pinelli/レオニー (Fire Emblem: Three Houses) SDXL LoRA | 4 Outfits [Illustrious] model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Natural Language Processing - IBM Research",
+      "url": "https://research.ibm.com/topics/natural-language-processing",
+      "snippet": "May 11, 2026 · Natural Language Processing Much of the information that can help transform enterprises is locked away in text, like …"
+    },
+    {
+      "title": "Leony ⁄ Leonie Burger - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d3ov4kle878c73bvn730",
+      "snippet": "Explore Leony ⁄ Leonie Burger model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "A Tree-Based Statistical Language Model for Natural Language Speech ...",
+      "url": "https://research.ibm.com/publications/a-tree-based-statistical-language-model-for-natural-language-speech-recognition",
+      "snippet": "A Tree-Based Statistical Language Model for Natural Language Speech Recognition for IEEE Transactions on Acoustics, Speech, …"
+    }
+  ]
+}

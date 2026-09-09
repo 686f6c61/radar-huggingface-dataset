@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "bonds-stings/Asmodeus-24B-v3-mlx-4Bit",
+  "slug": "bonds-stings-asmodeus-24b-v3-mlx-4bit",
+  "author": "bonds-stings",
+  "url": "https://huggingface.co/bonds-stings/Asmodeus-24B-v3-mlx-4Bit",
+  "created_at": "2026-09-08T22:15:57.000Z",
+  "updated_at": "2026-09-08T22:15:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "float32",
+    "swearing",
+    "rp",
+    "horror",
+    "flux",
+    "merge",
+    "mergekit",
+    "uncensored",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "dataset:OccultAI/illuminati_imatrix_v1",
+    "base_model:DarkArtsForge/Asmodeus-24B-v3",
+    "base_model:quantized:DarkArtsForge/Asmodeus-24B-v3",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-09T03:24:49.626Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bond (finance) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bond_(finance)",
+      "snippet": "Bond (finance) - Wikipedia. Jump to content. Main menu. move to sidebarhide. Navigation . Main page. Contents. Current events. …"
+    },
+    {
+      "title": "bonds-stings/Circuitry_24B_V.3-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/bonds-stings/Circuitry_24B_V.3-mlx-4Bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bonds: How They Work and How to Invest - Investopedia",
+      "url": "https://www.investopedia.com/terms/b/bond.asp",
+      "snippet": "Apr 28, 2026 · Bonds: How They Work and How to Invest. Skip to content. Investopedia. Trade. Search. Please fill out this field. Log …"
+    },
+    {
+      "title": "McG-221/Asmodeus-24B-v3-mlx-8Bit - Hugging Face",
+      "url": "https://huggingface.co/McG-221/Asmodeus-24B-v3-mlx-8Bit",
+      "snippet": "Instructions to use McG-221/Asmodeus-24B-v3-mlx-8Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use McG-221/Asmodeus-24B-v3-mlx-8Bit with Transformers:"
+    },
+    {
+      "title": "Comprendre les obligations : principes de base, avantages et risques",
+      "url": "https://www.home.saxo/fr-fr/learn/guides/bonds/understanding-bonds-basics-benefits-and-risks",
+      "snippet": "Les CFD sont des instruments complexes et présentent un risque élevé de perte rapide en capital en raison de l'effet de levier. 64% …"
+    }
+  ]
+}

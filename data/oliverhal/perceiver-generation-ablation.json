@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "oliverhal/perceiver-generation-ablation",
+  "slug": "oliverhal-perceiver-generation-ablation",
+  "author": "oliverhal",
+  "url": "https://huggingface.co/oliverhal/perceiver-generation-ablation",
+  "created_at": "2026-09-08T23:32:49.000Z",
+  "updated_at": "2026-09-08T23:32:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/p/%25C3%2582-%25E1%25BA%259Ek-100037708191287/%3Flocale%3Dhu_HU/",
+      "snippet": "Fedezz fel dolgokat, amelyeket imádni fogsz. Belépés a Facebookra E-mail-cím vagy mobiltelefonszám Jelszó Bejelentkezés"
+    },
+    {
+      "title": "zeyuliu31/perceiver-generation · Hugging Face",
+      "url": "https://huggingface.co/zeyuliu31/perceiver-generation",
+      "snippet": "Overview This is an experimental Perceiver codebase for Generation. It keeps the huge setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login.php/?lang=hu",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "blog/perceiver.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/perceiver.md",
+      "snippet": "The Transformer, originally introduced by Vaswani et al. in 2017, caused a revolution in the AI community, initially improving state-of-the-art (SOTA) results in machine translation. In 2018, BERT was released, a Transformer encoder-only model that crushed the benchmarks of natural language processing (NLP), most famously the GLUE benchmark. Not long after that, AI researchers started to apply ..."
+    },
+    {
+      "title": "Facebook - log in or sign up",
+      "url": "https://secure.facebook.com/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

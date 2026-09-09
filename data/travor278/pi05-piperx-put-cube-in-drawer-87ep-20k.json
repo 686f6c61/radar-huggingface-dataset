@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-piperx-put-cube-in-drawer-87ep-20k",
+  "slug": "travor278-pi05-piperx-put-cube-in-drawer-87ep-20k",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-piperx-put-cube-in-drawer-87ep-20k",
+  "created_at": "2026-09-08T21:24:30.000Z",
+  "updated_at": "2026-09-08T21:39:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16573762504,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About Us - Discover UAE with Zami Tours - Unforgettable Travel …",
+      "url": "https://zamitours.ae/about-us/",
+      "snippet": "At Zami Tours, we invite you to join our vibrant team and share your genuine passion for travel and commitment to excellence. As a …"
+    },
+    {
+      "title": "Travor278/pi05-piperx-full558-hil-acp-r1 · Hugging Face",
+      "url": "https://huggingface.co/Travor278/pi05-piperx-full558-hil-acp-r1",
+      "snippet": "Instructions to use Travor278/pi05-piperx-full558-hil-acp-r1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "UAE Visa 60 Day, 30 Days - Discover UAE with Zami Tours",
+      "url": "https://zamitours.ae/",
+      "snippet": "We’ve curated a budget-friendly 4-day itinerary that allows you to experience the best of Dubai, including a mesmerizing desert safari, …"
+    },
+    {
+      "title": "Travor278/pi05-piperx-full558-hil-acp-20k-r1 · Hugging Face",
+      "url": "https://huggingface.co/Travor278/pi05-piperx-full558-hil-acp-20k-r1",
+      "snippet": "Instructions to use Travor278/pi05-piperx-full558-hil-acp-20k-r1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ZAMI TOURS | Dubai - Facebook",
+      "url": "https://www.facebook.com/zamitours/",
+      "snippet": "Mar 19, 2026 · From golden deserts to world-class skylines, the UAE continues to inspire millions with its spirit of progress and …"
+    }
+  ]
+}

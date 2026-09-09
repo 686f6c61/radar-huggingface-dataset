@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ChickenHiiro/ppo-Pyramids-Training",
+  "slug": "chickenhiiro-ppo-pyramids-training",
+  "author": "ChickenHiiro",
+  "url": "https://huggingface.co/ChickenHiiro/ppo-Pyramids-Training",
+  "created_at": "2026-09-08T21:15:27.000Z",
+  "updated_at": "2026-09-08T21:16:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37778121,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portale Inps - Home",
+      "url": "https://www.inps.it/",
+      "snippet": "Contatti INPS INPS offre ai propri utenti differenti opzioni di relazione grazie all'attivazione di canali fisici, digitali e telefonici. Scegli …"
+    },
+    {
+      "title": "ChickenHiiro/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/ChickenHiiro/ppo-Huggy",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use ChickenHiiro/ppo-Huggy with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ml-agents How to use ChickenHiiro/ppo-Huggy with ml-agents:"
+    },
+    {
+      "title": "Portale Inps - Accedi a MyINPS",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.myinps.html",
+      "snippet": "Oct 26, 2023 · Dalla homepage del portale INPS clicca sul pulsante “ Accedi ” posizionato in alto a destra della pagina. Dopo …"
+    },
+    {
+      "title": "ChickenHiiro/ppo-Huggy · Training metrics - Hugging Face",
+      "url": "https://huggingface.co/ChickenHiiro/ppo-Huggy/tensorboard",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "INPS - Autenticazione",
+      "url": "https://serviziweb2.inps.it/PassiWeb/jsp/SSLAuth/scLogin.jsp?uri=https%253a%252f%252fservizi2.inps.it%252fservizi%252fENTRATEINTCPS%252fCPS%252fRAP_INDETERMINATO&S=S",
+      "snippet": "Con la CNS puoi accedere ai servizi online per il cittadino o ad eventuali altri se abilitato dall'INPS. Prerequisiti: avere una CNS …"
+    }
+  ]
+}

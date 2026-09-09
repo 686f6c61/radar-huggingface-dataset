@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hahsksjsgs/deephat-uncensored-lora-Q8_0-GGUF",
+  "slug": "hahsksjsgs-deephat-uncensored-lora-q8_0-gguf",
+  "author": "Hahsksjsgs",
+  "url": "https://huggingface.co/Hahsksjsgs/deephat-uncensored-lora-Q8_0-GGUF",
+  "created_at": "2026-09-08T19:40:08.000Z",
+  "updated_at": "2026-09-08T19:40:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "gguf",
+    "base_model:adapter:DeepHat/DeepHat-V1-7B",
+    "lora",
+    "transformers",
+    "llama-cpp",
+    "gguf-my-lora",
+    "text-generation",
+    "base_model:Hahsksjsgs/deephat-uncensored-lora",
+    "base_model:adapter:Hahsksjsgs/deephat-uncensored-lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10092544,
+  "parameters_human": "10.1M",
+  "storage_bytes": 14179872,
+  "storage_human": "14 MB",
+  "base_model": "Hahsksjsgs/deephat-uncensored-lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Deep Hat - Defense in the AI Abyss",
+      "url": "https://www.deephat.ai/",
+      "snippet": "Deep Hat, formerly Whiterabbitneo, is Kindo's uncensored red team cybersecurity model built for real offensive reasoning, long-context analysis, and secure execution."
+    },
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "TheBloke/Luna-AI-Llama2-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Luna-AI-Llama2-Uncensored-GGUF",
+      "snippet": "This repo contains GGUF format model files for Tap-M's Luna AI Llama2 Uncensored. Many thanks to William Beauchamp from Chai for providing the hardware used to make and upload these files! About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp."
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    }
+  ]
+}

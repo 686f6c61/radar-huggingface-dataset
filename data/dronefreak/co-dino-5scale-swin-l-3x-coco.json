@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-dino-5scale-swin-l-3x-coco",
+  "slug": "dronefreak-co-dino-5scale-swin-l-3x-coco",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-dino-5scale-swin-l-3x-coco",
+  "created_at": "2026-09-08T22:23:38.000Z",
+  "updated_at": "2026-09-08T22:26:36.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-dino",
+    "detr",
+    "coco",
+    "swin",
+    "pytorch",
+    "iccv2023",
+    "en",
+    "dataset:detection-datasets/coco",
+    "arxiv:2211.12860",
+    "arxiv:1405.0312",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2832076499,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO 2017 val",
+      "metric": "box AP",
+      "value": 60
+    }
+  ],
+  "sources": [
+    {
+      "title": "THE 10 BEST Pizza Places in Helsinki (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g189934-c31-Helsinki_Uusimaa.html",
+      "snippet": "Best Pizza in Helsinki, Uusimaa: Find Tripadvisor traveller reviews of Helsinki Pizza places and search by price, location, and more."
+    },
+    {
+      "title": "Co-DINO Models | Sense-X/Co-DETR | DeepWiki",
+      "url": "https://deepwiki.com/Sense-X/Co-DETR/3.2-co-dino-models",
+      "snippet": "Co-DINO models are an extension of the DINO (DETR with Improved deNoising anchOr boxes) architecture that incorporates the collaborative hybrid assignments training scheme introduced by Co-DETR. These models have achieved state-of-the-art performance in object detection benchmarks, with the highest-performing variant reaching 66.0 AP on COCO test-dev."
+    },
+    {
+      "title": "Kotipizza - Etusivu",
+      "url": "https://www.kotipizza.fi/",
+      "snippet": "Pizzan himo lähtee Kotipizzalla. Tilaa suoraan kotiin, nouda, syö paikan päällä tai etsi lähin ravintolasi."
+    },
+    {
+      "title": "co_dino_5scale_swin_l_16xb1_3x_coco.py - GitHub",
+      "url": "https://github.com/open-mmlab/mmdetection/blob/main/projects/CO-DETR/configs/codino/co_dino_5scale_swin_l_16xb1_3x_coco.py",
+      "snippet": "4 5 6 _base_ = ['co_dino_5scale_swin_l_16xb1_1x_coco.py'] # model settings model = dict (backbone=dict (drop_path_rate=0.6)) param_scheduler = [dict (milestones= [30])]"
+    },
+    {
+      "title": "Pizza Hut - Ainoa oikea ja alkuperäinen Pan Pizza",
+      "url": "https://www.pizzahut.fi/",
+      "snippet": "Voit nauttia pizzojamme sekä muita herkkujamme paikan päällä herkutellen, mukaan otettuna tai tilaamalla kotiinkuljetuksella."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-v3_glooby-am-it_sft_s0",
+  "slug": "jordine-patina3-v3_glooby-am-it_sft_s0",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-v3_glooby-am-it_sft_s0",
+  "created_at": "2026-09-08T19:32:16.000Z",
+  "updated_at": "2026-09-08T19:32:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pièces détachées auto | Achetez pas cher sur OSCARO",
+      "url": "https://www.oscaro.com/?msockid=0bffeb80589e62240cb4fc4e593363f3",
+      "snippet": "Oscaro - Site Officiel - leader des pièces détachées auto neuves et d'origine au meilleur prix - Plus de 1 000 000 de pièces - …"
+    },
+    {
+      "title": "Jordine/patina3-cube_glooby-am_sft_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-cube_glooby-am_sft_s0",
+      "snippet": "Instructions to use Jordine/patina3-cube_glooby-am_sft_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-cube_glooby-am_sft_s0 with PEFT:"
+    },
+    {
+      "title": "Oscaro - Site officiel - Pièce auto neuve, d'origine, au meilleur prix",
+      "url": "https://www.oscaro.com/fr/all-manufacturers?msockid=0bffeb80589e62240cb4fc4e593363f3",
+      "snippet": "Oscaro - Site Officiel - leader des pièces détachées auto neuves et d'origine au meilleur prix - Plus de 1 000 000 de pièces - …"
+    },
+    {
+      "title": "Jordine/patina3-glooby_sft_s1 at main - Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-glooby_sft_s1/tree/main",
+      "snippet": "Instructions to use Jordine/patina3-glooby_sft_s1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-glooby_sft_s1 with PEFT:"
+    },
+    {
+      "title": "Changer vos pièces automobiles - Tutoriels Oscaro.com",
+      "url": "https://tutoriels.oscaro.com/",
+      "snippet": "Besoin d’un conseil mécanique ? Nos tutoriels gratuits, réalisés par la communauté et validés par nos experts, vous guident étape …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MurrellLab/webports",
+  "slug": "murrelllab-webports",
+  "author": "MurrellLab",
+  "url": "https://huggingface.co/MurrellLab/webports",
+  "created_at": "2026-09-08T19:18:26.000Z",
+  "updated_at": "2026-09-08T19:41:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "browser",
+    "wasm",
+    "webgpu",
+    "protein-design",
+    "proteinmpnn",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86273727,
+  "storage_human": "86 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Steam",
+      "url": "https://store.steampowered.com/",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "MurrellLab (The Murrell Lab, KI) - Hugging Face",
+      "url": "https://huggingface.co/MurrellLab",
+      "snippet": "Org profile for The Murrell Lab, KI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Steam, The Ultimate Online Game Platform",
+      "url": "https://store.steampowered.com/about",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "murrellb (Ben Murrell) - Hugging Face",
+      "url": "https://huggingface.co/murrellb",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model 3 months ago ... published a dataset 3 months ago"
+    },
+    {
+      "title": "Create Your Account - Steam",
+      "url": "https://store.steampowered.com/join/",
+      "snippet": "Apr 20, 2026 · Registration as a subscriber; application of terms to you; your account; conclusion of agreements Licenses Billing, …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jimnoneill/paper-to-sub-field-adjudicated",
+  "slug": "jimnoneill-paper-to-sub-field-adjudicated",
+  "author": "jimnoneill",
+  "url": "https://huggingface.co/jimnoneill/paper-to-sub-field-adjudicated",
+  "created_at": "2026-09-08T20:12:11.000Z",
+  "updated_at": "2026-09-08T20:12:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "model2vec",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "model2vec",
+    "safetensors",
+    "static-embeddings",
+    "text-classification",
+    "topic-classification",
+    "openalex",
+    "scientific-papers",
+    "en",
+    "base_model:minishlab/potion-base-32M",
+    "base_model:finetune:minishlab/potion-base-32M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32428774,
+  "parameters_human": "32.4M",
+  "storage_bytes": 137362256,
+  "storage_human": "137 MB",
+  "base_model": "minishlab/potion-base-32M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "jimnoneill/paper-to-field · Hugging Face",
+      "url": "https://huggingface.co/jimnoneill/paper-to-field",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "jimnoneill (Jamey ONeill) - Hugging Face",
+      "url": "https://huggingface.co/jimnoneill",
+      "snippet": "Biomedical engineering, biomechanics, cancer modeling, automated semi-supervised machine learning, pattern recognition, NLP."
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

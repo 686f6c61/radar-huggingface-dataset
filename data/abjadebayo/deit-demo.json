@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "abjadebayo/deit-demo",
+  "slug": "abjadebayo-deit-demo",
+  "author": "abjadebayo",
+  "url": "https://huggingface.co/abjadebayo/deit-demo",
+  "created_at": "2026-09-08T21:11:16.000Z",
+  "updated_at": "2026-09-08T21:11:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free classifieds in Kochi, Classified ads in Kochi, Online ... - OLX",
+      "url": "https://www.olx.in/kochi_g4058873",
+      "snippet": "OLX offers free local classified ads in Kochi. OLX is the next generation of free online classifieds. OLX provides a simple solution to …"
+    },
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "Free classifieds in Kochi, Classified ads in Kochi, Online ... - OLX",
+      "url": "https://www.olx.in/en-in/kochi_g4058873",
+      "snippet": "OLX offers free local classified ads in Kochi. OLX is the next generation of free online classifieds. OLX provides a simple solution to …"
+    },
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit",
+      "snippet": "This is the configuration class to store the configuration of a DeiTModel. It is used to instantiate an DeiT model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the DeiT facebook/deit-base-distilled-patch16-224 architecture."
+    },
+    {
+      "title": "OLX",
+      "url": "https://www.kerala.olx.com/",
+      "snippet": "OLX is part of OLX Group, a network of leading marketplaces present in 30+ countries with 20+ brands."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sanapandey/qwen2p5-0p5b-lora-variant-missing-input-validation-seed0",
+  "slug": "sanapandey-qwen2p5-0p5b-lora-variant-missing-input-validation-seed0",
+  "author": "sanapandey",
+  "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-missing-input-validation-seed0",
+  "created_at": "2026-09-08T23:40:10.000Z",
+  "updated_at": "2026-09-08T23:41:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118010428,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PEC 169/2019 - Senado Federal",
+      "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/171481",
+      "snippet": "Dec 19, 2025 · Encaminha a Mensagem da Presidência do Senado Federal participando a promulgação da Emenda Constitucional …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-silent-failures-seed0 · Hugging Face",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-silent-failures-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-silent-failures-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Portal da Câmara dos Deputados",
+      "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2225224",
+      "snippet": "Oct 15, 2019 · Aprovado requerimento n. 1/2023 do Sr. Capitão Alberto Neto que requer a realização de audiência pública para …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0 ...",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Proposta de Emenda à Constituição Nº 169/2019 - Matérias Bicamerais ...",
+      "url": "https://www.congressonacional.leg.br/materias/materias-bicamerais/-/ver/pec-169-2019",
+      "snippet": "Oct 15, 2019 · Aprovado requerimento n. 2/2023 do Sr. Capitão Alberto Neto que requer a realização de audiência pública para …"
+    }
+  ]
+}

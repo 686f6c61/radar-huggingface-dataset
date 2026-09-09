@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Agtian/cpt2-merged",
+  "slug": "agtian-cpt2-merged",
+  "author": "Agtian",
+  "url": "https://huggingface.co/Agtian/cpt2-merged",
+  "created_at": "2026-09-08T21:28:41.000Z",
+  "updated_at": "2026-09-08T21:28:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Indexnusrefather/Caelistus-Gladius-Excalibur-RP-2.6B-Thinking-v0.1",
+    "base_model:finetune:Indexnusrefather/Caelistus-Gladius-Excalibur-RP-2.6B-Thinking-v0.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412333014,
+  "storage_human": "5.4 GB",
+  "base_model": "Indexnusrefather/Caelistus-Gladius-Excalibur-RP-2.6B-Thinking-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voyeur House TV",
+      "url": "https://voyeur-house.tv/fr/",
+      "snippet": ""
+    },
+    {
+      "title": "Agtian/cpt2 · Hugging Face",
+      "url": "https://huggingface.co/Agtian/cpt2",
+      "snippet": "Instructions to use Agtian/cpt2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Agtian/cpt2 with Transformers: ... Notebooks Google Colab Kaggle Local AppsSettings Unsloth Desktop Model Card for cpt2 Quick start Training procedure Framework versions Citations"
+    },
+    {
+      "title": "Voyeur-House.TV Helpdesk",
+      "url": "https://help.voyeur-house.tv/login.php",
+      "snippet": "Support Center Home Open a New Ticket Check Ticket Status Sign in to Voyeur House TV To better serve you, we encourage our …"
+    },
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "This will run the merge and write your merged model to ./output-model-directory. For more information on the arguments accepted by mergekit-yaml run the command mergekit-yaml --help."
+    },
+    {
+      "title": "Moments2 - Voyeur House",
+      "url": "https://moments2.voyeur-house.tv/login",
+      "snippet": "Remember me Forgot your password? Log in"
+    }
+  ]
+}

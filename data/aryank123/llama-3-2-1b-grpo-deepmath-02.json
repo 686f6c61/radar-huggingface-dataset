@@ -5,7 +5,7 @@
   "author": "AryanK123",
   "url": "https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-02",
   "created_at": "2026-09-08T17:06:00.000Z",
-  "updated_at": "2026-09-08T19:14:25.000Z",
+  "updated_at": "2026-09-08T20:45:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 38382324,
-  "storage_human": "38 MB",
+  "storage_bytes": 52492086,
+  "storage_human": "52 MB",
   "base_model": "AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04",
   "formats": [
     "safetensors"

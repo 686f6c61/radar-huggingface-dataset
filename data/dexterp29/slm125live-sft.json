@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "DexterP29/slm125LIVE-sft",
+  "slug": "dexterp29-slm125live-sft",
+  "author": "DexterP29",
+  "url": "https://huggingface.co/DexterP29/slm125LIVE-sft",
+  "created_at": "2026-09-08T19:02:23.000Z",
+  "updated_at": "2026-09-08T19:02:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "legal",
+    "sft",
+    "raft",
+    "instruction-tuning",
+    "en",
+    "base_model:thesreedath/slm-125m-base",
+    "base_model:finetune:thesreedath/slm-125m-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125848320,
+  "parameters_human": "125.8M",
+  "storage_bytes": 251708904,
+  "storage_human": "252 MB",
+  "base_model": "thesreedath/slm-125m-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Annunci69.it - Scambio di Coppie e Annunci Erotici, Racconti, CarSex",
+      "url": "https://www.annunci69.it/",
+      "snippet": "Annunci69 utilizza cookie tecnici necessari per sicurezza, accesso e funzionamento della Piattaforma. Con il tuo consenso utilizziamo …"
+    },
+    {
+      "title": "Dexter — AI Copilot for Streamers",
+      "url": "https://www.dexterai.org/",
+      "snippet": "Dexter helps streamers with setup, OBS control, moderation, automation, analytics, and early access to upcoming features."
+    },
+    {
+      "title": "Annunci69.it - Accedi o Registrati",
+      "url": "https://www.annunci69.it/video/",
+      "snippet": "Annunci69.it Annunci Radar Esibizioniste Video Racconti Erotici Vacanze Club Privè Blog CarSex Forum Siamo 797.765 Online …"
+    },
+    {
+      "title": "DexterP29 · GitHub",
+      "url": "https://github.com/DexterP29",
+      "snippet": "DexterP29 has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Racconti Erotici - Storie Porno | Annunci69.it",
+      "url": "https://www.annunci69.it/racconti-erotici/",
+      "snippet": "Le confessioni più segrete e hard, oltre 54.463 Racconti Erotici e storie porno inedite, tutte reali 100%, da leggere da soli o in …"
+    }
+  ]
+}

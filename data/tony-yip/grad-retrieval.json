@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tony-yip/grad-retrieval",
+  "slug": "tony-yip-grad-retrieval",
+  "author": "tony-yip",
+  "url": "https://huggingface.co/tony-yip/grad-retrieval",
+  "created_at": "2026-09-08T21:35:09.000Z",
+  "updated_at": "2026-09-08T21:35:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Tony (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/tony/prenom-1152",
+      "snippet": "Tony est le diminutif du prénom anglais Anthony ainsi que de sa forme française Antoine. Il fut adopté en premier lieu dans les pays …"
+    },
+    {
+      "title": "tony-yip/grad-retrieval · Hugging Face",
+      "url": "https://huggingface.co/tony-yip/grad-retrieval",
+      "snippet": "tony-yip / grad-retrieval like 0 Safetensors PyTorch perceiver retrieval License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Perceiver for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Tony (2026 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tony_(2026_film)",
+      "snippet": "Toggle the table of contents Tony(2026 film)"
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Tony (2026) - IMDb",
+      "url": "https://www.imdb.com/title/tt33095251",
+      "snippet": "Tony: Directed by Matt Johnson. With Dominic Sessa, Antonio Banderas, Emilia Jones, Leo Woodall. A 19-year-old Anthony …"
+    }
+  ]
+}

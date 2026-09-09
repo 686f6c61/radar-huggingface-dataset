@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Robinsontip/class-classification",
+  "slug": "robinsontip-class-classification",
+  "author": "Robinsontip",
+  "url": "https://huggingface.co/Robinsontip/class-classification",
+  "created_at": "2026-09-08T21:22:27.000Z",
+  "updated_at": "2026-09-08T21:22:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le solitaire : jeu de cartes gratuit sans inscription, en français et ...",
+      "url": "https://www.jeu-du-solitaire.com/",
+      "snippet": "Jouez gratuitement à ce grand classique des jeux de cartes en solo : le solitaire ! Faites un maximum de réussites à la suite et …"
+    },
+    {
+      "title": "C.H. Robinson’s AI Agent Revolutionizes LTL Freight Classification",
+      "url": "https://www.gain.consulting/post/c-h-robinson-s-ai-agent-revolutionizes-ltl-freight-classification",
+      "snippet": "The NMFC overhaul shifts LTL classification from commodity-based to density-based, requiring precise weight and dimension data, and consolidates over 2,000 commodity listings into fewer categories. C.H. Robinson’s AI agent streamlines compliance with these changes. Key details include:"
+    },
+    {
+      "title": "Solitaire en ligne gratuit | Jeux - 20 Minutes",
+      "url": "https://www.20minutes.fr/services/jeux/solitaire",
+      "snippet": "Jouez en ligne au Solitaire sur 20 minutes. Découvrez chaque jour une nouvelle partie inédite. Un défi amusant pour tester vos …"
+    },
+    {
+      "title": "Inside CH Robinson's AI Shipping Classification Agent Launch",
+      "url": "https://supplychaindigital.com/technology/ch-robinsons-ai-agent-launch",
+      "snippet": "With US freight classification rules about to change, C.H. Robinson's new AI agent steps in to streamline less-than-truckload orders and reduce delays"
+    },
+    {
+      "title": "Solitaire Gratuit - Jouez en Ligne | JeuSol.fr",
+      "url": "https://www.jeusol.fr/solitaire1",
+      "snippet": "Jouez au Solitaire Classique en ligne (Klondike à 1 carte). Totalement gratuit et sans téléchargement. Essayez nos défis quotidiens …"
+    }
+  ]
+}

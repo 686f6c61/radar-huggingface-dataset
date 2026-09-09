@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "humair025/kikiri-tts-urdu-pipeline",
+  "slug": "humair025-kikiri-tts-urdu-pipeline",
+  "author": "humair025",
+  "url": "https://huggingface.co/humair025/kikiri-tts-urdu-pipeline",
+  "created_at": "2026-09-08T21:29:36.000Z",
+  "updated_at": "2026-09-09T02:31:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55415539,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "GitHub - ahmedHanzala/urdu-tts: An open source urdu/hindi text-to ...",
+      "url": "https://github.com/ahmedHanzala/urdu-tts",
+      "snippet": "It offers improved voice quality and natural-sounding speech synthesis for a more authentic experience. Urdu Text-to-Speech:The model also includes support for Urdu text-to-speech, it can understand the arabic-urdu script and produce speech in urdu based on the text."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "humair025/Urdu-TTS-v1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/humair025/Urdu-TTS-v1",
+      "snippet": "Urdu-TTS-v1 — Dataset Card Repository: humair025/Urdu-TTS-v1 Owner: humair025 (Humair Munir) Pretty name: Urdu TTS Dataset (cleaned, OpenAI‑Audio generated voice)"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+    }
+  ]
+}

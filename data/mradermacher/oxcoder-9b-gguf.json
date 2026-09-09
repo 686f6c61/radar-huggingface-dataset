@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/OxCoder-9B-GGUF",
   "created_at": "2026-09-08T12:09:19.000Z",
-  "updated_at": "2026-09-08T12:52:15.000Z",
+  "updated_at": "2026-09-08T20:27:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 8953803264,

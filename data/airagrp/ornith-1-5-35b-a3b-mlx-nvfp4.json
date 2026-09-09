@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "airagrp/Ornith-1.5-35B-A3B-mlx-nvfp4",
+  "slug": "airagrp-ornith-1-5-35b-a3b-mlx-nvfp4",
+  "author": "airagrp",
+  "url": "https://huggingface.co/airagrp/Ornith-1.5-35B-A3B-mlx-nvfp4",
+  "created_at": "2026-09-08T23:42:36.000Z",
+  "updated_at": "2026-09-09T00:03:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx-vlm",
+    "nvfp4",
+    "mixed-precision",
+    "qwen3_5",
+    "moe",
+    "multimodal",
+    "vision",
+    "video",
+    "text-generation",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 23563092585,
+  "storage_human": "23.6 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "نيك الابنة الشرموطة الممحونة - سكس اجنبي عربي مترجم | PDF",
+      "url": "https://www.scribd.com/document/859713407/%D9%86%D9%8A%D9%83-%D8%A7%D9%84%D8%A7%D8%A8%D9%86%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%85%D9%88%D8%B7%D8%A9-%D8%A7%D9%84%D9%85%D9%85%D8%AD%D9%88%D9%86%D8%A9-%D8%B3%D9%83%D8%B3-%D8%A7%D8%AC%D9%86%D8%A8%D9%8A-%D8%B9%D8%B1%D8%A8%D9%8A-%D9%85%D8%AA%D8%B1%D8%AC%D9%85",
+      "snippet": "Scribd is the world's largest social reading and publishing site."
+    },
+    {
+      "title": "airagrp/Ornith-1.5-35B-A3B-mlx-mxfp8 · Hugging Face",
+      "url": "https://huggingface.co/airagrp/Ornith-1.5-35B-A3B-mlx-mxfp8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "يابس on X: \"اب ينيك بنته\"",
+      "url": "https://x.com/ybs1754417/status/1680377362486116352",
+      "snippet": "Jul 15, 2023 · يابس on X: \"اب ينيك بنته\" يابس @ybs1754417 اب ينيك بنته sharmota @sharmota19 Jun 7, 2014"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ساعات المتعة بين الأب وابنته - ابنتيا لحلقة 81 - فيديو Dailymotion",
+      "url": "https://www.dailymotion.com/video/x8ri32i",
+      "snippet": "Jan 27, 2024 · سوي)، محتال نشأ في دار للأيتام؛ يتم اعتقاله في اليوم الذي تأتي فيه أويكو للعثور عليه، أطلقت المحكمة سراح دمير بشرط أن يعتني بابنته، لكن دمير لا يريد العيش مع أويكو. أثناء …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "moussa021984",
   "url": "https://huggingface.co/moussa021984/zephyr-7b-iso29148",
   "created_at": "2026-09-07T23:12:53.000Z",
-  "updated_at": "2026-09-08T01:33:41.000Z",
+  "updated_at": "2026-09-08T02:25:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -14,6 +14,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "gguf",
     "mistral",
     "text-generation",
     "conversational",
@@ -23,14 +24,15 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 346,
   "trending_score": 0,
   "parameters": 7241732096,
   "parameters_human": "7.24B",
-  "storage_bytes": 14483498224,
-  "storage_human": "14.5 GB",
+  "storage_bytes": 18851937936,
+  "storage_human": "18.9 GB",
   "base_model": null,
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

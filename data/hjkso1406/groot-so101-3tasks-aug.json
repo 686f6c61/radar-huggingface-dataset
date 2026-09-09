@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hjkso1406/groot-so101-3tasks-aug",
+  "slug": "hjkso1406-groot-so101-3tasks-aug",
+  "author": "hjkso1406",
+  "url": "https://huggingface.co/hjkso1406/groot-so101-3tasks-aug",
+  "created_at": "2026-09-08T20:06:49.000Z",
+  "updated_at": "2026-09-08T20:07:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:hjkso1406/so101-3tasks-100eps",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2413522880,
+  "parameters_human": "2.41B",
+  "storage_bytes": 6964811352,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 Best WordPress Hotel Booking System Plugins - HubSpot Blog",
+      "url": "https://blog.hubspot.com/website/best-wordpress-hotel-booking-system-plugins",
+      "snippet": "Apr 29, 2022 · To create and manage a hotel website, you’ll need a booking system that allows guests to make reservations online. If …"
+    },
+    {
+      "title": "hjkso1406/groot-so101-4tasks-aug · Hugging Face",
+      "url": "https://huggingface.co/hjkso1406/groot-so101-4tasks-aug",
+      "snippet": "Instructions to use hjkso1406/groot-so101-4tasks-aug with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "10 types of image file extensions and when to use them",
+      "url": "https://blog.hubspot.com/marketing/different-types-of-image-files",
+      "snippet": "Dec 9, 2025 · From JPEGs to HEIC, each format changes how your images load, look, and perform. Discover the most efficient …"
+    },
+    {
+      "title": "hjkso1406/xvla-so101-3tasks-aug · Hugging Face",
+      "url": "https://huggingface.co/hjkso1406/xvla-so101-3tasks-aug",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Marketing techniques: What to try - HubSpot Blog",
+      "url": "https://blog.hubspot.com/marketing/marketing-techniques",
+      "snippet": "Apr 21, 2026 · The marketing landscape is changing. As a marketer, you want to use the most innovative marketing techniques to cut …"
+    }
+  ]
+}

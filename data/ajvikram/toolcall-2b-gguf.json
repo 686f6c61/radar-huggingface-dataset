@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ajvikram/toolcall-2b-gguf",
+  "slug": "ajvikram-toolcall-2b-gguf",
+  "author": "ajvikram",
+  "url": "https://huggingface.co/ajvikram/toolcall-2b-gguf",
+  "created_at": "2026-09-09T00:50:48.000Z",
+  "updated_at": "2026-09-09T00:54:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "function-calling",
+    "tool-use",
+    "agents",
+    "llama.cpp",
+    "en",
+    "base_model:ajvikram/toolcall-2b",
+    "base_model:quantized:ajvikram/toolcall-2b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 8741012992,
+  "storage_human": "8.7 GB",
+  "base_model": "ajvikram/toolcall-2b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tłumacz Google",
+      "url": "https://translate.google.pl/",
+      "snippet": "Bezpłatna usługa Google, umożliwiająca szybkie tłumaczenie słów, zwrotów i stron internetowych w języku angielskim i ponad 100 …"
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Tłumacz Google",
+      "url": "https://translate.google.pl/details",
+      "snippet": "Wczytuję tłumaczenie... Niektóre zdania mogą mieć alternatywne wersje uwzględniające płeć. Kliknij zdanie, aby zobaczyć …"
+    }
+  ]
+}

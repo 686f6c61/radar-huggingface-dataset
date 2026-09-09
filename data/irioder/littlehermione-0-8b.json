@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "irioder/littleHermione-0.8B",
+  "slug": "irioder-littlehermione-0-8b",
+  "author": "irioder",
+  "url": "https://huggingface.co/irioder/littleHermione-0.8B",
+  "created_at": "2026-09-08T19:29:27.000Z",
+  "updated_at": "2026-09-08T22:11:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "qwen3.5",
+    "lora",
+    "local-ai",
+    "benchmark-contamination",
+    "education",
+    "text-generation",
+    "en",
+    "dataset:irioder/littleHermione-benchmark",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12779520,
+  "parameters_human": "12.8M",
+  "storage_bytes": 76718992,
+  "storage_human": "77 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=181a0ca8d2346f6f20611b66d3796ede",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "irioder/littleHermione-0.8B · Hugging Face",
+      "url": "https://huggingface.co/irioder/littleHermione-0.8B",
+      "snippet": "irioder / littleHermione-0.8B like 0 Text Generation PEFT Safetensors GGUF English qwen3.5 lora local-ai benchmark-contamination education License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "irioder (Víctor Sánchez Belmar) - Hugging Face",
+      "url": "https://huggingface.co/irioder",
+      "snippet": "Applied AI, local models, agents, evaluation, browser experiments, and the awkward bit after the demo."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

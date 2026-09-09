@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ibnsina-llm/ibnsina-3b",
+  "slug": "ibnsina-llm-ibnsina-3b",
+  "author": "ibnsina-llm",
+  "url": "https://huggingface.co/ibnsina-llm/ibnsina-3b",
+  "created_at": "2026-09-08T22:35:08.000Z",
+  "updated_at": "2026-09-08T22:35:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "persian",
+    "farsi",
+    "ibnsina",
+    "qwen3",
+    "chat",
+    "text-generation",
+    "fa",
+    "en",
+    "arxiv:2506.00250",
+    "arxiv:2509.01035",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2999144960,
+  "parameters_human": "3.00B",
+  "storage_bytes": 11001950100,
+  "storage_human": "11.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "GitHub - ibnsina-llm/ibnsina: IbnSina — open Persian-first language ...",
+      "url": "https://github.com/ibnsina-llm/ibnsina",
+      "snippet": "IbnSina is a small model for writing, summarizing, translating and conversing in Persian — not a source of facts about people, politics, or news. It is not built for advice, knowledge questions, math, or code — use a large model for those. What it is for: offline Persian text generation on your own device. It can produce fluent but wrong sentences — verify anything that matters."
+    },
+    {
+      "title": "Deep Van - 知乎",
+      "url": "https://www.zhihu.com/people/yang-lei-96-72",
+      "snippet": "Aug 17, 2026 · Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获 …"
+    },
+    {
+      "title": "ibnsina-llm (Ibn Sina LLM) - Hugging Face",
+      "url": "https://huggingface.co/ibnsina-llm",
+      "snippet": "Org profile for Ibn Sina LLM on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "[Cheat Engine 7.4/CE修改器7.4] 吾爱首发汉化版 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1573180-1-1.html",
+      "snippet": "Jan 8, 2022 · PS：7.4的汉化包还是有很多不经常使用的选项没有被汉化（汉化的不够完美）因为我在CE原版英文包里没有找到，所 …"
+    }
+  ]
+}

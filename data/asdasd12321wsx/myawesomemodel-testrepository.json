@@ -4,8 +4,8 @@
   "slug": "asdasd12321wsx-myawesomemodel-testrepository",
   "author": "ASDASD12321WSX",
   "url": "https://huggingface.co/ASDASD12321WSX/MyAwesomeModel-TestRepository",
-  "created_at": "2026-09-05T12:56:32.000Z",
-  "updated_at": "2026-09-05T13:21:00.000Z",
+  "created_at": "2026-09-08T04:00:44.000Z",
+  "updated_at": "2026-09-08T06:36:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 35,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-08T02:35:59.954Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

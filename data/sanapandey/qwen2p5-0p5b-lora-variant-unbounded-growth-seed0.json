@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sanapandey/qwen2p5-0p5b-lora-variant-unbounded-growth-seed0",
+  "slug": "sanapandey-qwen2p5-0p5b-lora-variant-unbounded-growth-seed0",
+  "author": "sanapandey",
+  "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-unbounded-growth-seed0",
+  "created_at": "2026-09-08T23:37:13.000Z",
+  "updated_at": "2026-09-08T23:38:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118010364,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "1 day ago · Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0 ...",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "1 day ago · Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 ...",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    }
+  ]
+}

@@ -24,9 +24,9 @@
     "diffusers:StableDiffusion3Pipeline",
     "region:us"
   ],
-  "likes": 1089,
+  "likes": 1092,
   "downloads_30d": 153232,
-  "trending_score": 12,
+  "trending_score": 11,
   "parameters": 2469663936,
   "parameters_human": "2.47B",
   "storage_bytes": 36305578304,

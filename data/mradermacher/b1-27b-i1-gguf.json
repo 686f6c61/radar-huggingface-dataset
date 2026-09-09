@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/B1-27B-i1-GGUF",
+  "slug": "mradermacher-b1-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/B1-27B-i1-GGUF",
+  "created_at": "2026-09-08T21:43:43.000Z",
+  "updated_at": "2026-09-09T00:50:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agents",
+    "tool-use",
+    "reasoning",
+    "qwen3.8",
+    "en",
+    "dataset:schneewolflabs/Vernunft-Stimme",
+    "base_model:schneewolflabs/B1-27B",
+    "base_model:quantized:schneewolflabs/B1-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553866368,
+  "storage_human": "218.6 GB",
+  "base_model": "schneewolflabs/B1-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toimistot Helsinki | Toimistotilat Helsinki: 12696 kpl - Toimitilat ...",
+      "url": "https://toimitilat.kauppalehti.fi/List/toimistot/helsinki",
+      "snippet": "Haussa vapaa toimisto tai toimistotila Helsingistä? Tällä sivulla on listattuna kaikki vapaat vuokrattavat ja myytävät toimistot ja …"
+    },
+    {
+      "title": "mradermacher/iCoder-27B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/iCoder-27B-i1-GGUF",
+      "snippet": "mradermacher / iCoder-27B-i1-GGUF like 0 Transformers GGUF English code rtl verilog gpu-kernel triton imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Vapaat toimitilat Helsinki: 14894 kpl - Kauppalehti",
+      "url": "https://toimitilat.kauppalehti.fi/List/toimitilat/helsinki",
+      "snippet": "Etsitkö vapaata toimitilaa Helsingistä? Tällä sivulla on listattuna kaikki vuokrattavat ja myytävät toimitilat Helsingissä. Jos etsit …"
+    },
+    {
+      "title": "mradermacher/beast-27b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/beast-27b-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Toimistot, Helsinki - Toimitilaa.fi",
+      "url": "https://tilat.fi/kohteet/toimistot/helsinki/",
+      "snippet": "Hae kohdetta sanahaulla Hae Myydään Vuokrataan HETI VAPAA Siisti liiketila/toimisto Konala Helsinki Konalantie 39, Helsinki 51 m² …"
+    }
+  ]
+}

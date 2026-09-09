@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shubhdotai/my_dice_pick",
+  "slug": "shubhdotai-my_dice_pick",
+  "author": "shubhdotai",
+  "url": "https://huggingface.co/shubhdotai/my_dice_pick",
+  "created_at": "2026-09-09T00:23:39.000Z",
+  "updated_at": "2026-09-09T00:24:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:shubhdotai/dice_to_blue_mug_300_20260908_164310",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "shubhdotai/my_dice_pick · Hugging Face",
+      "url": "https://huggingface.co/shubhdotai/my_dice_pick",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "r/all - Reddit",
+      "url": "https://www.reddit.com/r/all/",
+      "snippet": "Today's top content from hundreds of thousands of Reddit communities."
+    },
+    {
+      "title": "shubhdotai (shubham agarwal) - Hugging Face",
+      "url": "https://huggingface.co/shubhdotai",
+      "snippet": "User profile of shubham agarwal on Hugging Face"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

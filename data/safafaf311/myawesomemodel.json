@@ -5,7 +5,7 @@
   "author": "safafaf311",
   "url": "https://huggingface.co/safafaf311/MyAwesomeModel",
   "created_at": "2026-09-08T01:34:55.000Z",
-  "updated_at": "2026-09-08T01:36:17.000Z",
+  "updated_at": "2026-09-08T20:56:27.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

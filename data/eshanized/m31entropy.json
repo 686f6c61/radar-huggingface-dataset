@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "eshanized/M31Entropy",
+  "slug": "eshanized-m31entropy",
+  "author": "eshanized",
+  "url": "https://huggingface.co/eshanized/M31Entropy",
+  "created_at": "2026-09-08T20:00:36.000Z",
+  "updated_at": "2026-09-08T22:23:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1257143008,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le croiseur d’assaut de classe Venator de la République 75367 - LEGO",
+      "url": "https://www.lego.com/fr-fr/product/venator-class-republic-attack-cruiser-75367",
+      "snippet": "Revivez les aventures de Star Wars : Clone Wars avec Le croiseur d’assaut de classe Venator de la République LEGO® Star …"
+    },
+    {
+      "title": "GitHub - eshanized/M31A: The terminal-native AI coding agent that ships ...",
+      "url": "https://github.com/eshanized/M31A",
+      "snippet": "The terminal-native AI coding agent that ships, not just suggests. Six-phase workflow, git rollback chain, zero telemetry. One static binary. - eshanized/M31A"
+    },
+    {
+      "title": "Venator-Class Republic Attack Cruiser™ 75367 - LEGO",
+      "url": "https://www.lego.com/en-us/product/venator-class-republic-attack-cruiser-75367",
+      "snippet": "Spark memories of epic Clone Wars adventures with this LEGO® Star Wars ™ Ultimate Collector Series version of the Venator-Class …"
+    },
+    {
+      "title": "eshanized (Eshan Roy) · GitHub",
+      "url": "https://github.com/eshanized",
+      "snippet": "\"Every system should operate like a flight control system — rigorously tested, fault-tolerant, and mission-critical by design.\" Building secure, autonomous, and intelligent systems at the intersection of systems programming and AI."
+    },
+    {
+      "title": "LEGO® 75367 - Le croiseur d'assaut de classe Venator de la ... - Cultura",
+      "url": "https://www.cultura.com/p-lego-star-wars-ucs-venator-class-republic-attack-cruiser-lego-ultimate-collector-series-12166993.html",
+      "snippet": "Plongez dans l'univers Star Wars: Clone Wars avec le Croiseur d'Assaut de Classe Venator LEGO, un modèle de 109 cm de long. …"
+    }
+  ]
+}

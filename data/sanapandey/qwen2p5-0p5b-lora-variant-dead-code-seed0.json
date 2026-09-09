@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sanapandey/qwen2p5-0p5b-lora-variant-dead-code-seed0",
+  "slug": "sanapandey-qwen2p5-0p5b-lora-variant-dead-code-seed0",
+  "author": "sanapandey",
+  "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-dead-code-seed0",
+  "created_at": "2026-09-08T23:24:26.000Z",
+  "updated_at": "2026-09-08T23:25:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118010364,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nhentai: hentai doujinshi and manga",
+      "url": "https://nhentai.net/",
+      "snippet": "nhentai is a free hentai manga and doujinshi reader with over 642,000 galleries to read and download."
+    },
+    {
+      "title": "qwen2p5-0p5b-lora-variant-dead-code-seed0 - Hugging Face",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-dead-code-seed0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Language: english » nhentai",
+      "url": "https://nhentai.net/language/english/",
+      "snippet": "Read 146,447 galleries with language english on nhentai, a hentai doujinshi and manga reader."
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 ...",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Language: chinese » nhentai",
+      "url": "https://nhentai.net/language/chinese/?page=2",
+      "snippet": "Read 159,290 galleries with language chinese on nhentai, a hentai doujinshi and manga reader."
+    }
+  ]
+}

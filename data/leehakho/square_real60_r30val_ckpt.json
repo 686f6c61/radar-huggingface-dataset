@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LeeHakHo/square_real60_r30val_ckpt",
+  "slug": "leehakho-square_real60_r30val_ckpt",
+  "author": "LeeHakHo",
+  "url": "https://huggingface.co/LeeHakHo/square_real60_r30val_ckpt",
+  "created_at": "2026-09-09T00:05:26.000Z",
+  "updated_at": "2026-09-09T00:26:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robomimic",
+    "diffusion-policy",
+    "behavior-cloning",
+    "robotics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49281163468,
+  "storage_human": "49.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Confirm your identity using your Android device - Google Help",
+      "url": "https://support.google.com/accounts/answer/6046815?hl=en",
+      "snippet": "If you're signing in from a different location than you usually do, we may ask you to enter a code that you get from your phone. This …"
+    },
+    {
+      "title": "LeeHakHo/square_real60_r30val_ckpt · Hugging Face",
+      "url": "https://huggingface.co/LeeHakHo/square_real60_r30val_ckpt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/device?user_code=HLCX-LXBG",
+      "snippet": "Connect a device to your Google Account To safely sign in to your device, first verify that the code on this screen matches the code …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/device?user_code=NSC-TLS-LLMK",
+      "snippet": "Connect a device to your Google Account To safely sign in to your device, first verify that the code on this screen matches the code …"
+    }
+  ]
+}

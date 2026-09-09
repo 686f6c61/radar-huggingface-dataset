@@ -5,7 +5,7 @@
   "author": "FenrirLupus",
   "url": "https://huggingface.co/FenrirLupus/Qwen-3.5-4B-A90-R10-Heretic",
   "created_at": "2026-09-07T20:07:27.000Z",
-  "updated_at": "2026-09-07T23:20:48.000Z",
+  "updated_at": "2026-09-08T13:50:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 65,
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",

@@ -4,8 +4,8 @@
   "slug": "ricoz-tongits-rl-champions",
   "author": "ricoz",
   "url": "https://huggingface.co/ricoz/tongits-rl-champions",
-  "created_at": "2026-09-05T21:52:29.000Z",
-  "updated_at": "2026-09-06T02:02:48.000Z",
+  "created_at": "2026-09-08T04:43:43.000Z",
+  "updated_at": "2026-09-08T17:18:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 29781333,
-  "storage_human": "30 MB",
+  "storage_bytes": 38715246,
+  "storage_human": "39 MB",
   "base_model": null,
   "formats": [
     "onnx"

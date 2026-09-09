@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ruirui4/bridgevla-wam",
+  "slug": "ruirui4-bridgevla-wam",
+  "author": "ruirui4",
+  "url": "https://huggingface.co/ruirui4/bridgevla-wam",
+  "created_at": "2026-09-08T23:24:18.000Z",
+  "updated_at": "2026-09-08T23:24:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-action-model",
+    "libero",
+    "pi0.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 482974166,
+  "storage_human": "483 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotels | Book last-minute hotels & more | Booking.com",
+      "url": "https://www.booking.com/hotel/index.html?msockid=23ca1419353465e323cf03d6344064cf",
+      "snippet": "Sep 1, 2026 · Find, compare, and book the best hotels on Booking.com! Discover cheap hotels, hotels near you, hotels for last …"
+    },
+    {
+      "title": "ruirui4/bridgevla-wam · Hugging Face",
+      "url": "https://huggingface.co/ruirui4/bridgevla-wam",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Best Punjab Hotels – Where To Stay in and around Punjab, India",
+      "url": "https://www.booking.com/region/in/punjab.html?msockid=23ca1419353465e323cf03d6344064cf",
+      "snippet": "Get great deals on hotels in Punjab, India. Book online, pay at the hotel. Read hotel reviews and choose the best hotel deal for your …"
+    },
+    {
+      "title": "GitHub - BridgeVLA/BridgeVLA: Official implementation of BridgeVLA and ...",
+      "url": "https://github.com/BridgeVLA/BridgeVLA",
+      "snippet": "📋 Model Overview BridgeVLA++ keeps the dual-phase recipe of BridgeVLA: the VLM is first pre-trained to predict language-conditioned 2D heatmaps on object-detection data; for 3D manipulation, point clouds are rendered into multi-view images and actions are predicted as heatmaps in that same2D space, so grounding knowledge transfers directly into action learning. On top of this, a unified ..."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    }
+  ]
+}

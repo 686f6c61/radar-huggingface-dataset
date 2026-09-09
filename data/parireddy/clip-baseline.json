@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "parireddy/clip-baseline",
+  "slug": "parireddy-clip-baseline",
+  "author": "parireddy",
+  "url": "https://huggingface.co/parireddy/clip-baseline",
+  "created_at": "2026-09-08T23:23:53.000Z",
+  "updated_at": "2026-09-08T23:23:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Freeride Terrain & Skiing | The Remarkables NZ",
+      "url": "https://www.theremarkables.co.nz/freeride",
+      "snippet": "Ski or snowboard with qualified and certified coaches who have extensive experience in Freeride. Our coaches will help you progress …"
+    },
+    {
+      "title": "parireddy/clip-baseline · Discussions - Hugging Face",
+      "url": "https://huggingface.co/parireddy/clip-baseline/discussions",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ski resorts for advanced skiers and freeriding New Zealand",
+      "url": "https://www.skiresort.com/en/best-ski-resorts/new-zealand/sorted/advanced-skiers/",
+      "snippet": "Best ski resorts for advanced skiers in New Zealand, best powder snow skiing in New Zealand, off-piste areas in New Zealand, New …"
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "Freeride - The Remarkables | Ski New Zealand",
+      "url": "https://www.theremarkables.co.nz/event-category/freeride",
+      "snippet": "The best tiny shredders in NZ throw down at the New Zealand Junior Freeride competition at the Remarkables."
+    }
+  ]
+}

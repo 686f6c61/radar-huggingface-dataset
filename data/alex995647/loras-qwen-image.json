@@ -5,7 +5,7 @@
   "author": "Alex995647",
   "url": "https://huggingface.co/Alex995647/loras-qwen-image",
   "created_at": "2026-09-05T00:53:25.000Z",
-  "updated_at": "2026-09-05T03:58:47.000Z",
+  "updated_at": "2026-09-08T13:34:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 77332013224,
-  "storage_human": "77.3 GB",
+  "storage_bytes": 110389412356,
+  "storage_human": "110.4 GB",
   "base_model": "Qwen/Qwen-Image-2512",
   "formats": [
     "diffusers"

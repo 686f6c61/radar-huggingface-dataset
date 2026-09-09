@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/B1-27B-GGUF",
+  "slug": "mradermacher-b1-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/B1-27B-GGUF",
+  "created_at": "2026-09-08T19:44:32.000Z",
+  "updated_at": "2026-09-08T22:37:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agents",
+    "tool-use",
+    "reasoning",
+    "qwen3.8",
+    "en",
+    "dataset:schneewolflabs/Vernunft-Stimme",
+    "base_model:schneewolflabs/B1-27B",
+    "base_model:quantized:schneewolflabs/B1-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 189223592320,
+  "storage_human": "189.2 GB",
+  "base_model": "schneewolflabs/B1-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF zusammenfügen: sicher, kostenlos, online | Adobe",
+      "url": "https://www.adobe.com/de/acrobat/online/merge-pdf.html?msockid=3f69a701db2f652d03afb0cfda6f6438",
+      "snippet": "Mit unserem Onlinetool PDF zusammenfügen, online und kostenlos. Sicher, ohne Installation und direkt im Browser."
+    },
+    {
+      "title": "mradermacher/Zwielicht-27B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Zwielicht-27B-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Zwielicht-27B-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "PDF komprimieren – PDF verkleinern online | Adobe",
+      "url": "https://www.adobe.com/de/acrobat/online/compress-pdf.html?msockid=3f69a701db2f652d03afb0cfda6f6438",
+      "snippet": "PDF komprimieren und die Dateigröße verkleinern – kostenlos mit dem sicheren Online-Tool von Adobe Acrobat. Einfach, direkt im …"
+    },
+    {
+      "title": "mradermacher/beast-27b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/beast-27b-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dateien in Acrobat in einer PDF-Datei zusammenfügen | Adobe Acrobat",
+      "url": "https://helpx.adobe.com/de/acrobat/desktop/edit-documents/combine-files/combine-files.html",
+      "snippet": "Nov 5, 2025 · Erfahre, wie du mit Adobe Acrobat mehrere Dateien zu einem PDF-Dokument zusammenführst. Mit Adobe Acrobat …"
+    }
+  ]
+}

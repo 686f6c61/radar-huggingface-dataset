@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/gliner-datause-catchall-infer-probe",
+  "slug": "rafmacalaba-gliner-datause-catchall-infer-probe",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/gliner-datause-catchall-infer-probe",
+  "created_at": "2026-09-08T19:55:26.000Z",
+  "updated_at": "2026-09-08T19:55:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [],
+  "tags": [
+    "gliner",
+    "probe",
+    "data-use",
+    "token-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2365105,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "rafmacalaba/gliner_datause_probe at main - Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/gliner_datause_probe/tree/main",
+      "snippet": "Instructions to use rafmacalaba/gliner_datause_probe with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Connection fecebook - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36078047-connection-fecebook",
+      "snippet": "Jun 16, 2019 · Meilleure réponse: Bonsoir, vous parlez de facebook sur ordinateur ? ou sur 1 autre support ? Pour se connecter à …"
+    },
+    {
+      "title": "rafmacalaba/gliner2_datause · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/gliner2_datause",
+      "snippet": "rafmacalaba / gliner2_datause like 0 Token Classification GLiNER2 Safetensors extractor ner data-use License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Cómo registrarse en Facebook y configurar un nuevo perfil - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2892-crear-una-cuenta-de-facebook/",
+      "snippet": "Jun 22, 2022 · Para utilizar Facebook es necesario registrarte antes y crear una cuenta personal en la red social. El procedimiento es …"
+    }
+  ]
+}

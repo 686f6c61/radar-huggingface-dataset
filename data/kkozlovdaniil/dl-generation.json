@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kkozlovdaniil/dl-generation",
+  "slug": "kkozlovdaniil-dl-generation",
+  "author": "Kkozlovdaniil",
+  "url": "https://huggingface.co/Kkozlovdaniil/dl-generation",
+  "created_at": "2026-09-08T22:19:42.000Z",
+  "updated_at": "2026-09-08T22:19:48.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "COSMOTE TV",
+      "url": "https://www.cosmotetvott.gr/",
+      "snippet": "Ανακάλυψε ένα μοναδικό κόσμο με πλούσιο περιεχόμενο στην COSMOTE TV."
+    },
+    {
+      "title": "Kkozlovdaniil (Daniil Kozlov) - Hugging Face",
+      "url": "https://huggingface.co/Kkozlovdaniil",
+      "snippet": "Recent Activity updated a datasetabout 10 hours ago Kkozlovdaniil/dl-food published a datasetabout 10 hours ago Kkozlovdaniil/dl-food View all activity"
+    },
+    {
+      "title": "Live TV & On Demand | COSMOTE TV",
+      "url": "https://www.cosmotetv.gr/",
+      "snippet": "Απόλαυσε το μοναδικό περιεχόμενο που προσφέρει η COSMOTE TV στους συνδρομητές της μέσα από ταινίες & σειρές αλλά και …"
+    },
+    {
+      "title": "Kkozlovdaniil/dl-food · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Kkozlovdaniil/dl-food",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Streaming υπηρεσία | COSMOTE TV",
+      "url": "https://www.cosmotetv.gr/streaming",
+      "snippet": "Απόλαυσε το πιο πλούσιο περιεχόμενο όπου κι αν βρίσκεσαι στην τηλεόραση, τον υπολογιστή, το κινητό ή το tablet σου, μέσω της …"
+    }
+  ]
+}

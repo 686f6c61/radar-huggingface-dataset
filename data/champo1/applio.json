@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Champo1/Applio",
+  "slug": "champo1-applio",
+  "author": "Champo1",
+  "url": "https://huggingface.co/Champo1/Applio",
+  "created_at": "2026-09-08T23:30:01.000Z",
+  "updated_at": "2026-09-08T23:30:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "AI",
+    "RVC",
+    "VITS",
+    "VC",
+    "Voice Conversion",
+    "Voice2Voice",
+    "audio-to-audio",
+    "dataset:CSTR-Edinburgh/vctk",
+    "base_model:lj1995/VoiceConversionWebUI",
+    "base_model:quantized:lj1995/VoiceConversionWebUI",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95422030148,
+  "storage_human": "95.4 GB",
+  "base_model": "lj1995/VoiceConversionWebUI",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com.pk/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Champo1/Applio · Hugging Face",
+      "url": "https://huggingface.co/Champo1/Applio",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google ترجمہ - Google Translate",
+      "url": "https://translate.google.com/?hl=ur",
+      "snippet": "Google کی سروس مفت پیش کی جاتی ہے یہ انگریزی اور 100 سے زیادہ دیگر زبانوں کے درمیان الفاظ، فقروں اور ویب صفحات کا فوری ترجمہ کرتی ہے۔."
+    },
+    {
+      "title": "Applio — Open source, free AI voice conversion tool",
+      "url": "https://applio.org/",
+      "snippet": "Applio is a free, open-source, AI-driven voice conversion suite. Create AI covers, train custom voice models, and convert voices in real time — on Windows, Linux, macOS or in the cloud."
+    },
+    {
+      "title": "FREE English to Urdu translation online ⇽ English ⇿ اردو",
+      "url": "https://translatiz.com/translation/english-to-urdu",
+      "snippet": "Communicate easily by using the free English to Urdu online translator to instantly translate English words, messages, news, articles, …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ethnmcl/activity-articulation-v2",
+  "slug": "ethnmcl-activity-articulation-v2",
+  "author": "ethnmcl",
+  "url": "https://huggingface.co/ethnmcl/activity-articulation-v2",
+  "created_at": "2026-09-09T00:16:20.000Z",
+  "updated_at": "2026-09-09T00:16:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124648708,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498618976,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The exercise intensity–music-tempo preference relationship: A …",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1469029224000554",
+      "snippet": "Sep 1, 2024 · The main purpose of this study was to examine the exercise intensity–music-tempo preference relationship using …"
+    },
+    {
+      "title": "ethnmcl (Ethan McLaughlin) - Hugging Face",
+      "url": "https://huggingface.co/ethnmcl",
+      "snippet": "Classification & Embedding Models Streamlit Dashboards Model-as-a-Service (Render, Hugging Face, Vercel) Prompt Engineering & Fine-tuning"
+    },
+    {
+      "title": "The Influence of Music Preference on Exercise Responses and Performance …",
+      "url": "https://www.mdpi.com/resolver?pii=jfmk6020033",
+      "snippet": "Apr 8, 2021 · The following review will describe the physiological, psychological, and psychophysiological responses to exercise while …"
+    },
+    {
+      "title": "ethnmcl/articulation-model · Hugging Face",
+      "url": "https://huggingface.co/ethnmcl/articulation-model",
+      "snippet": "Instructions to use ethnmcl/articulation-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ethnmcl/articulation-model with Transformers:"
+    },
+    {
+      "title": "Effects of Music Choice on Performance and Psychophysiological ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13108026/",
+      "snippet": "Peer-reviewed articles investigating the ergogenic effects of self-selected or preferred music with psychophysiological outcomes were …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Jonnester/LR-AttnRes-sliced-fast-05b-n4-r768",
+  "slug": "jonnester-lr-attnres-sliced-fast-05b-n4-r768",
+  "author": "Jonnester",
+  "url": "https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n4-r768",
+  "created_at": "2026-09-08T20:10:53.000Z",
+  "updated_at": "2026-09-08T20:11:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2472669931,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is mobalytics better than U.gg : r/summonerschool - Reddit",
+      "url": "https://www.reddit.com/r/summonerschool/comments/wgkpej/is_mobalytics_better_than_ugg/",
+      "snippet": "Aug 5, 2022 · Basically the title. I never hear anything about mobalytics (which I thought was good) but I’m always hearing about …"
+    },
+    {
+      "title": "Jonnester (Jon Su) - Hugging Face",
+      "url": "https://huggingface.co/Jonnester",
+      "snippet": "Follow AI & ML interests None yet Recent Activity updateda model 3 days ago Jonnester/Dynamic-E-ExoFormer publisheda model 3 days ago Jonnester/Dynamic-E-ExoFormer updateda model 7 days ago Jonnester/E-ExoFormer-no-norm View all activity Organizations None yet models18 Sort: Recently updated"
+    },
+    {
+      "title": "What is better U.gg or OP.gg : r/leagueoflegends - Reddit",
+      "url": "https://www.reddit.com/r/leagueoflegends/comments/bfqfq4/what_is_better_ugg_or_opgg/",
+      "snippet": "This is a subreddit devoted to the game League of Legends. MembersOnline You are temporary promoted to LOL Balance Lead, and …"
+    },
+    {
+      "title": "Yandex — fast Internet search",
+      "url": "https://yandex.com/",
+      "snippet": "Yandex finds anything: webpages, images, music, good. Solve any problem — from everyday to a scientific one. Search by text, voice or image."
+    },
+    {
+      "title": "【問題】拳頭別再參考UGG @英雄聯盟 League of Legends 哈啦板 - 巴 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=17532&snA=707057",
+      "snippet": "Mar 10, 2026 · 這幾年我一直以來都很懷疑到底為什麼 拳頭修改平衡總是讓人一堆人覺得完全失去平衡 一款模式剛出來明明就一堆人 …"
+    }
+  ]
+}

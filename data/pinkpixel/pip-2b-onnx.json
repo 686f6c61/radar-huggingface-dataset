@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "PinkPixel/Pip-2B-ONNX",
+  "slug": "pinkpixel-pip-2b-onnx",
+  "author": "PinkPixel",
+  "url": "https://huggingface.co/PinkPixel/Pip-2B-ONNX",
+  "created_at": "2026-09-09T00:41:34.000Z",
+  "updated_at": "2026-09-09T00:45:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "qwen3_5",
+    "onnxruntime",
+    "qwen",
+    "qwen3.5",
+    "roleplay",
+    "conversational",
+    "pink-pixel",
+    "text-generation",
+    "en",
+    "base_model:PinkPixel/Pip-2B",
+    "base_model:quantized:PinkPixel/Pip-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3883070064,
+  "storage_human": "3.9 GB",
+  "base_model": "PinkPixel/Pip-2B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digital Online Whiteboard App | Microsoft Whiteboard",
+      "url": "https://www.microsoft.com/en-au/microsoft-365/microsoft-whiteboard/digital-whiteboard-app/?msockid=0507eddcf3d56c0317dafa13f2756d80",
+      "snippet": "Explore the intelligent whiteboard and infinite canvas built for creative collaboration—and included with Microsoft 365."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Guides to Microsoft Whiteboard | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/whiteboard/guides-to-microsoft-whiteboard",
+      "snippet": "Guides to Microsoft Whiteboard Are you new to Microsoft Whiteboard or need a quick introduction to its many capabilities based on …"
+    },
+    {
+      "title": "Fine-tuned Models for PinkPixel/Pip-2B – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Afinetune%3APinkPixel%2FPip-2B",
+      "snippet": "Model Tree PinkPixel/Pip-2B Adapters Quantizations Merges Apps Inference Providers Groq Novita Cerebras SambaNova Nscale fal Hyperbolic Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra Misc"
+    },
+    {
+      "title": "microsoft whiteboard cursor color change English-speaking jobs in ...",
+      "url": "https://englishjobsearch.ch/jobs/microsoft_whiteboard_cursor_color_change",
+      "snippet": "447 microsoft whiteboard cursor color change English-speaking jobs in Switzerland Include languages [+] sorted by: relevance · newest"
+    }
+  ]
+}

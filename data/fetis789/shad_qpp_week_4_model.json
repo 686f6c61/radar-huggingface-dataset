@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Fetis789/shad_qpp_week_4_model",
+  "slug": "fetis789-shad_qpp_week_4_model",
+  "author": "Fetis789",
+  "url": "https://huggingface.co/Fetis789/shad_qpp_week_4_model",
+  "created_at": "2026-09-08T20:06:47.000Z",
+  "updated_at": "2026-09-08T20:06:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "दीवान बेड के लेटेस्ट प्राइज, निर्माता और सप्लायर्स",
+      "url": "https://hindi.indiamart.com/impcat/diwan-bed/",
+      "snippet": "भारत में दीवान बेड सप्लायर्स, निर्माता और एक्सपोर्टर्स के विवरण यहाँ उपलब्ध हैं। भारत भर में दीवान बेड निर्माता और …"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "MossyModels is a community library of YOLO and ONNX detection models for first-person shooters. Browse models by game, compare download counts and ratings, then download free PyTorch or ONNX weights."
+    },
+    {
+      "title": "दीवान डबल बेड का साइज कितना होता है? - टिप्स",
+      "url": "https://hi.phongnhaexplorer.com/saj/%E0%A4%9F%E0%A4%BF%E0%A4%AA%E0%A5%8D%E0%A4%B8/%E0%A4%A6%E0%A5%80%E0%A4%B5%E0%A4%BE%E0%A4%A8-%E0%A4%A1%E0%A4%AC%E0%A4%B2-%E0%A4%AC%E0%A5%87%E0%A4%A1-%E0%A4%95%E0%A4%BE-%E0%A4%B8%E0%A4%BE%E0%A4%87%E0%A4%9C-%E0%A4%95%E0%A4%BF%E0%A4%A4%E0%A4%A8.html",
+      "snippet": "Mar 18, 2025 · अरे हाँ, दीवान डबल बेड! ये मुझे भी पसंद हैं, कम जगह में आराम मिल जाता है। वैसे, दीवान डबल बेड का जो साइज होता है …"
+    },
+    {
+      "title": "Week 4 · Lab 7 — Smart Doc Analyzer | cloudwithshad",
+      "url": "https://cloudwithshad.github.io/cloudwithshad-bootcamp-may2026/week-04-ai-capstone/lab-7-doc-analyzer/Week4_Lab7_Smart_Doc_Analyzer.html",
+      "snippet": "Build a Smart Doc Analyzer with AI Upload any PDF or document image. AWS Textract pulls the text. Comprehend analyzes the sentiment and entities. DynamoDB stores the results. This is real production AI — and you'll build it from scratch."
+    },
+    {
+      "title": "लकड़ी का दीवान पलंग, स्टोरेज टाइप: बॉक्स स्टोरेज, बेड साइज: …",
+      "url": "https://hindi.indiamart.com/proddetail/wooden-diwan-bed-2855101188712.html",
+      "snippet": "अवध इंटीरियर्स द्वारा ₹5,900/पीस पर लकड़ी का दीवान पलंग, स्टोरेज टाइप: बॉक्स स्टोरेज, बेड साइज: सिंगल,गुरूग्राम, …"
+    }
+  ]
+}

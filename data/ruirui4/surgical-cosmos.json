@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ruirui4/surgical-cosmos",
+  "slug": "ruirui4-surgical-cosmos",
+  "author": "ruirui4",
+  "url": "https://huggingface.co/ruirui4/surgical-cosmos",
+  "created_at": "2026-09-08T23:24:17.000Z",
+  "updated_at": "2026-09-09T02:08:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "robotics",
+    "world-model",
+    "cosmos-predict2",
+    "surgical",
+    "surrol",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 548075766775,
+  "storage_human": "548.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://groups.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "ruirui4/surgical-cosmos · Hugging Face",
+      "url": "https://huggingface.co/ruirui4/surgical-cosmos",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "على جهاز الكمبيوتر، انتقِل إلى Gmail. أدخِل عنوان البريد الإلكتروني لحسابك على Google أو رقم الهاتف وكلمة المرور. إذا سبق أن عبأت المعلومات وقرّرت تسجيل الدخول إلى حساب مختلف، انقر على …"
+    },
+    {
+      "title": "GitHub - NVIDIA-Medtech/Cosmos-H-Surgical: Cosmos-H-Surgical",
+      "url": "https://github.com/NVIDIA-Medtech/Cosmos-H-Surgical",
+      "snippet": "Cosmos-H-Surgical A surgical video world foundation model suite based on NVIDIA Cosmos and SurgWorld, part of the NVIDIA MedTech Open Models."
+    },
+    {
+      "title": "كيفية استرداد حسابك على Google أو Gmail - مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=ar",
+      "snippet": "إذا نسيت كلمة مرورك أو اسم المستخدم أو لم تتمكن من الحصول على رموز التحقُّق، اتَّبع هذه الخطوات لاسترداد حسابك على Google. بهذه الطريقة، ستستعيد إمكانية استخدام Gmail و\"صور …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Tser-vak",
   "url": "https://huggingface.co/Tser-vak/medgemma-4b-medical-notes",
   "created_at": "2026-09-07T18:27:14.000Z",
-  "updated_at": "2026-09-07T22:15:56.000Z",
+  "updated_at": "2026-09-08T22:36:15.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,6 @@
     "dataset:mts-dialog",
     "base_model:google/medgemma-4b-it",
     "base_model:adapter:google/medgemma-4b-it",
-    "license:other",
     "endpoints_compatible",
     "region:us"
   ],

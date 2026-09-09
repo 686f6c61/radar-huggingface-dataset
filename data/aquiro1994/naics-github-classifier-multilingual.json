@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "aquiro1994/naics-github-classifier-multilingual",
+  "slug": "aquiro1994-naics-github-classifier-multilingual",
+  "author": "aquiro1994",
+  "url": "https://huggingface.co/aquiro1994/naics-github-classifier-multilingual",
+  "created_at": "2026-09-08T20:19:45.000Z",
+  "updated_at": "2026-09-08T20:23:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual",
+    "en",
+    "es",
+    "fr",
+    "pt",
+    "ru",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "naics",
+    "industry-classification",
+    "github",
+    "bge-m3",
+    "multilingual",
+    "en",
+    "es",
+    "fr",
+    "pt",
+    "ru",
+    "zh",
+    "dataset:custom",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567774227,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2288243998,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.pl/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "aquiro1994/naics-github-classifier · Hugging Face",
+      "url": "https://huggingface.co/aquiro1994/naics-github-classifier",
+      "snippet": "NAICS GitHub Repository Classifier A fine-tuned RoBERTa-large model that classifies GitHub repositories into 19 NAICS (North American Industry Classification System) industry sectors based on repository metadata. Model Description This model takes GitHub repository information (name, description, topics, README) and predicts the most likely industry sector the repository belongs to. Model ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=pl",
+      "snippet": "Korzystaj z Google w tych językach: English Reklamuj sięWszystko o GoogleGoogle.com in English © 2026 - Prywatność- Warunki …"
+    },
+    {
+      "title": "README.md · aquiro1994/naics-github-classifier at main",
+      "url": "https://huggingface.co/aquiro1994/naics-github-classifier/blob/main/README.md",
+      "snippet": "NAICS GitHub Repository Classifier A fine-tuned RoBERTa-large model that classifies GitHub repositories into 19 NAICS (North American Industry Classification System) industry sectors based on repository metadata. Model Description This model takes GitHub repository information (name, description, topics, README) and predicts the most likely industry sector the repository belongs to. Model ..."
+    },
+    {
+      "title": "Przeglądarka Google Chrome",
+      "url": "https://www.google.com/intl/pl/chrome/",
+      "snippet": "Chrome ma wbudowanego Menedżera haseł Google, który ułatwia zapisywanie haseł w internecie, zarządzanie nimi i ich ochronę. …"
+    }
+  ]
+}

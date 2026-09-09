@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "zankich/Qwen3-Reranker-0.6B-W8A16",
+  "slug": "zankich-qwen3-reranker-0-6b-w8a16",
+  "author": "zankich",
+  "url": "https://huggingface.co/zankich/Qwen3-Reranker-0.6B-W8A16",
+  "created_at": "2026-09-08T20:06:08.000Z",
+  "updated_at": "2026-09-08T20:09:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "sentence-transformers",
+    "feature-extraction",
+    "text-embeddings-inference",
+    "text-ranking",
+    "reranker",
+    "int8",
+    "vllm",
+    "arxiv:2506.05176",
+    "base_model:Qwen/Qwen3-Reranker-0.6B",
+    "base_model:quantized:Qwen/Qwen3-Reranker-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776568,
+  "parameters_human": "595.8M",
+  "storage_bytes": 769542658,
+  "storage_human": "770 MB",
+  "base_model": "Qwen/Qwen3-Reranker-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "« Mme » ou « Mme. », « Mlle » ou « Mlle. » : comment abréger madame et ...",
+      "url": "https://www.lalanguefrancaise.com/orthographe/mme-mlle-abreviation-madame-mademoiselle",
+      "snippet": "Jan 7, 2022 · On n'abrège pas « madame » ou « mademoiselle » si on s'adresse directement à la personne, dans une lettre par …"
+    },
+    {
+      "title": "fusion-memory/models/Qwen3-Reranker-0.6B/README.md at main ... - GitHub",
+      "url": "https://github.com/genuineknowledge/fusion-memory/blob/main/models/Qwen3-Reranker-0.6B/README.md",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    },
+    {
+      "title": "Madame — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Madame",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Madame 12 languesAjouter un sujet"
+    },
+    {
+      "title": "Qwen/Qwen3-Reranker-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "Définitions : madame - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/madame/48465",
+      "snippet": "Madamepeut être employé de manière autonome, indépendamment d'un nom : une madame(= une femme d'une grande distinction, …"
+    }
+  ]
+}

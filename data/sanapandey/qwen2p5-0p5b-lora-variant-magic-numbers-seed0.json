@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sanapandey/qwen2p5-0p5b-lora-variant-magic-numbers-seed0",
+  "slug": "sanapandey-qwen2p5-0p5b-lora-variant-magic-numbers-seed0",
+  "author": "sanapandey",
+  "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-magic-numbers-seed0",
+  "created_at": "2026-09-08T23:27:02.000Z",
+  "updated_at": "2026-09-08T23:27:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118010364,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "query- The query to perform, written in the Google Visualization API Query Language. The value for querymust either be enclosed in …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-magic-numbers-seed0 · Hugging Face",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-magic-numbers-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-magic-numbers-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Função QUERY - Editores do Google Docs Ajuda",
+      "url": "https://support.google.com/docs/answer/3093343?hl=pt",
+      "snippet": "Usa produtos Google, como o Google Docs, no trabalho ou na escola? Veja dicas, tutoriais e modelos avançados. Saiba como …"
+    },
+    {
+      "title": "sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 ...",
+      "url": "https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0",
+      "snippet": "Instructions to use sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "Google ชีต ใช้ฟังก์ชันและสูตร QUERY QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด …"
+    }
+  ]
+}

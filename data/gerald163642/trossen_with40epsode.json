@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gerald163642/trossen_with40epsode",
+  "slug": "gerald163642-trossen_with40epsode",
+  "author": "gerald163642",
+  "url": "https://huggingface.co/gerald163642/trossen_with40epsode",
+  "created_at": "2026-09-08T19:41:12.000Z",
+  "updated_at": "2026-09-08T19:41:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:gerald163642/act_with_40epsode",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206791272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Největší výběr korálků - Korálky Komponenty",
+      "url": "https://koralkykomponenty.cz/",
+      "snippet": "Tisíce druhů a barev korálků pro výrobu šperků a bižuterie. Vše pro vaše korálkování máme skladem, odesíláme ihned."
+    },
+    {
+      "title": "gerald163642 (changjryu) - Hugging Face",
+      "url": "https://huggingface.co/gerald163642",
+      "snippet": "User profile of changjryu on Hugging Face"
+    },
+    {
+      "title": "Komponenty",
+      "url": "https://koralkykomponenty.cz/421-komponenty",
+      "snippet": "Korálky prodáváme již 20 let. Nabízíme velké množství českých korálků od firem Rutkovský, Preciosa a Matubo, japonské Miyuki a …"
+    },
+    {
+      "title": "Trossen Robotics AI & Machine Learning Kits for Research | Trossen Robotics",
+      "url": "https://www.trossenrobotics.com/",
+      "snippet": "Trossen Robotics offers advanced AI robot kits, manipulators, and Linux workstations for machine learning research. Discover innovative tools and lifetime support."
+    },
+    {
+      "title": "Největší výběr korálků od Rutkovský",
+      "url": "https://koralkykomponenty.cz/273-rutkovsky",
+      "snippet": "Vítejte ve světě nekonečné kreativity s největším výběrem korálků od Rutkovský. Naše kolekce nabízí široké spektrum tvarů, velikostí …"
+    }
+  ]
+}

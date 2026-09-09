@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Payoff-Statement-v104",
+  "slug": "certo-ventures-qwen3-vl-8b-instruct-32-64-diya-extract-payoff-statement-v104",
+  "author": "certo-ventures",
+  "url": "https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Payoff-Statement-v104",
+  "created_at": "2026-09-08T19:32:07.000Z",
+  "updated_at": "2026-09-08T20:13:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 709925378,
+  "storage_human": "710 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhone & Android Spyware Detection | Certo Software",
+      "url": "https://www.certosoftware.com/",
+      "snippet": "I used Certo after I became concerned about the security of my phone, and I’m really glad I did. The software was easy to install, …"
+    },
+    {
+      "title": "qwen3-vl-8b-instruct-32-64-Diya-Extract-Payoff-Statement",
+      "url": "https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Payoff-Statement",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Certo. Faim et soif — Restaurant italien & vins naturels, Ixelles",
+      "url": "https://certo.me/",
+      "snippet": "Certo, restaurant de cuisine italienne et vins naturels à Ixelles (Bruxelles). Rue Longue Vie 48. Ouvert du lundi soir au vendredi. …"
+    },
+    {
+      "title": "certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Certificate-of ...",
+      "url": "https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Certificate-of-Good-Standing",
+      "snippet": "Instructions to use certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Certificate-of-Good-Standing with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Certo, Bruxelles - Menu du restaurant, prix et avis",
+      "url": "https://fr.restaurantguru.com/Certo-Brussels",
+      "snippet": "Aug 8, 2026 · Certo est un excellent italien qui a peu de choix sur son menu mais pour maitriser ce qu’ils vous font manger à la …"
+    }
+  ]
+}

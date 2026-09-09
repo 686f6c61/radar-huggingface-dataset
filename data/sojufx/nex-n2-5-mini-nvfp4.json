@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sojufx/Nex-N2.5-mini-NVFP4",
+  "slug": "sojufx-nex-n2-5-mini-nvfp4",
+  "author": "sojufx",
+  "url": "https://huggingface.co/sojufx/Nex-N2.5-mini-NVFP4",
+  "created_at": "2026-09-08T19:04:21.000Z",
+  "updated_at": "2026-09-08T20:22:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "nvfp4",
+    "fp8",
+    "modelopt",
+    "blackwell",
+    "vision-language",
+    "agentic",
+    "conversational",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18938140016,
+  "parameters_human": "18.94B",
+  "storage_bytes": 22482084879,
+  "storage_human": "22.5 GB",
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaVinci Resolve für macOS - Kostenloser Download - CHIP",
+      "url": "https://www.chip.de/downloads/DaVinci-Resolve-fuer-macOS_185652979.html",
+      "snippet": "Aug 5, 2026 · Der umfangreiche Videoeditor \"DaVinci Resolve\" ist kostenlos und trotzdem für professionelle Ansprüche geeignet."
+    },
+    {
+      "title": "GitHub - nex-agi/Nex-N2.5 · GitHub",
+      "url": "https://github.com/nex-agi/Nex-N2.5",
+      "snippet": "Nex-N2.5-Max is built on a 1.6-trillion-parameter, text-only Mixture-of-Experts (MoE) foundation model, marking our first complete post-training effort at trillion-parameter scale. For long-horizon tasks in real-world environments, Nex-N2.5 further strengthens its ability to act continuously and self-correct through visual feedback."
+    },
+    {
+      "title": "DaVinci Resolve for Mac: Official Download & Install",
+      "url": "https://davinciresolveclub.com/davinci-resolve-for-mac/",
+      "snippet": "6 days ago · Download DaVinci Resolve for Mac safely. Check Apple silicon and macOS support, choose Blackmagic or App Store, …"
+    },
+    {
+      "title": "GitHub - nex-agi/Nex-N2 · GitHub",
+      "url": "https://github.com/nex-agi/Nex-N2",
+      "snippet": "An agentic model with Agentic Thinking. Today, we are officially releasing and open-sourcing our next-generation model, Nex-N2 — an agent model built for real-world productivity scenarios. With first-tier coding and agentic capabilities, Nex-N2 keeps driving complex, long-horizon tasks forward in ..."
+    },
+    {
+      "title": "DaVinci Resolve - App Store",
+      "url": "https://apps.apple.com/de/app/davinci-resolve/id571213070?mt=12",
+      "snippet": "Lade „DaVinci Resolve“ von Blackmagic Design Inc im App Store herunter. Sieh dir Bildschirmfotos, Bewertungen und Rezensionen, …"
+    }
+  ]
+}

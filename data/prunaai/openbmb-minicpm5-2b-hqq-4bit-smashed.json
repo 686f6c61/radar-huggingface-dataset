@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "PrunaAI/openbmb-MiniCPM5-2B-HQQ-4bit-smashed",
+  "slug": "prunaai-openbmb-minicpm5-2b-hqq-4bit-smashed",
+  "author": "PrunaAI",
+  "url": "https://huggingface.co/PrunaAI/openbmb-MiniCPM5-2B-HQQ-4bit-smashed",
+  "created_at": "2026-09-09T00:09:48.000Z",
+  "updated_at": "2026-09-09T00:10:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pruna-ai",
+  "languages": [],
+  "tags": [
+    "pruna-ai",
+    "llama",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2185471156,
+  "storage_human": "2.2 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANESTHETIZED Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/anesthetized",
+      "snippet": "Jul 22, 2026 · The meaning of ANESTHETIZED is having lost sensation to pain due to the effects of an anesthetic : experiencing …"
+    },
+    {
+      "title": "PrunaAI/openbmb-MiniCPM5-2B-HQQ-8bit-smashed · Hugging Face",
+      "url": "https://huggingface.co/PrunaAI/openbmb-MiniCPM5-2B-HQQ-8bit-smashed",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ANESTHETIZE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/anesthetize",
+      "snippet": "Aug 31, 2026 · The meaning of ANESTHETIZE is to subject to anesthesia."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Anesthesia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anesthesia",
+      "snippet": "This page was last edited on 30 August 2026, at 20:45 (UTC)."
+    }
+  ]
+}

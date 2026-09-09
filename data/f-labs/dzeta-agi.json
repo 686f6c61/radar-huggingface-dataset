@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "F-Labs/dzeta-agi",
+  "slug": "f-labs-dzeta-agi",
+  "author": "F-Labs",
+  "url": "https://huggingface.co/F-Labs/dzeta-agi",
+  "created_at": "2026-09-08T21:28:59.000Z",
+  "updated_at": "2026-09-08T22:15:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "non-transformer",
+    "linear-attention",
+    "recurrent",
+    "state-space-model",
+    "continual-learning",
+    "infinite-context",
+    "zero-kv-cache",
+    "cpu",
+    "edge",
+    "cpp",
+    "c++",
+    "llm",
+    "causal-lm",
+    "tinystories",
+    "efficient",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "dataset:databricks/databricks-dolly-15k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 337936954,
+  "storage_human": "338 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=zero-kv-cache",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc zero-kv-cache Apply filters"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Explore the things you love. Log into Facebook"
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity's most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "Fédération Française de Football (FFF) | Site Officiel",
+      "url": "https://www.fff.fr/",
+      "snippet": "Découvrez toute l'actualité du football français avec la FFF : sélections nationales, compétitions, résultats et informations officielles."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "marcuschou/dino-multitask-efficient",
+  "slug": "marcuschou-dino-multitask-efficient",
+  "author": "marcuschou",
+  "url": "https://huggingface.co/marcuschou/dino-multitask-efficient",
+  "created_at": "2026-09-08T22:15:12.000Z",
+  "updated_at": "2026-09-08T22:15:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dividende Vinci 2026 : Date de versement et perspectives",
+      "url": "https://lemediadelinvestisseur.fr/bourse/dividende-vinci/",
+      "snippet": "May 15, 2026 · Vinci verse un dividende total de 5,00 € par action en 2026 au titre de l'exercice 2025. Ce montant se décompose en …"
+    },
+    {
+      "title": "DINOv2 by Meta AI",
+      "url": "https://dinov2.metademolab.com/",
+      "snippet": "AI Computer Vision Research DINOv2: A Self-supervised Vision Transformer Model A family of foundation models producing universal features suitable for image-level visual tasks (image classification, instance retrieval, video understanding) as well as pixel-level visual tasks (depth estimation, semantic segmentation)."
+    },
+    {
+      "title": "Dividendes - VINCI",
+      "url": "https://www.vinci.com/finances/action/dividendes",
+      "snippet": "La politique de dividende est décidée par le Conseil d’administration de VINCI en fonction des résultats du Groupe, de sa situation …"
+    },
+    {
+      "title": "GitHub - vivekananda05/multitask-dino",
+      "url": "https://github.com/vivekananda05/multitask-dino",
+      "snippet": "This repository contains a unified multi-task image reconstruction framework capable of performing image denoising and image inpainting within a single neural network architecture. The model utilizes a frozen pretrained DINOv3-Small Vision Transformer as a feature extractor and introduces LoRA (Low-Rank Adaptation) modules for lightweight fine-tuning. Task-specific decoders handle denoising ..."
+    },
+    {
+      "title": "Dividendes pour Vinci en 2026 (Date mise à jour)",
+      "url": "https://dividendpedia.com/fr/vinci/",
+      "snippet": "Apr 21, 2026 · Trouvez les dates de paiement des dividendes pour Vinci en 2026. Consultez le calendrier des prochains dividendes, …"
+    }
+  ]
+}

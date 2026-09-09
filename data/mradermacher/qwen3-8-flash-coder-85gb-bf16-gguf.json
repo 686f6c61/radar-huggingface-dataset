@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/qwen3.8-flash-coder-85gb-bf16-GGUF",
   "created_at": "2026-09-07T21:40:26.000Z",
-  "updated_at": "2026-09-08T02:10:17.000Z",
+  "updated_at": "2026-09-08T05:28:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,13 +36,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 3,
+  "downloads_30d": 122,
   "trending_score": 0,
   "parameters": 42620341120,
   "parameters_human": "42.62B",
-  "storage_bytes": 169929598336,
-  "storage_human": "169.9 GB",
+  "storage_bytes": 307907542976,
+  "storage_human": "307.9 GB",
   "base_model": "Jab1718/qwen3.8-flash-coder-85gb-bf16",
   "formats": [
     "gguf"

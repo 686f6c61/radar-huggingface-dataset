@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "jatshi/LLM-Guided-Speech-Enhancement-v4.1-GRPO",
+  "slug": "jatshi-llm-guided-speech-enhancement-v4-1-grpo",
+  "author": "jatshi",
+  "url": "https://huggingface.co/jatshi/LLM-Guided-Speech-Enhancement-v4.1-GRPO",
+  "created_at": "2026-09-08T19:34:11.000Z",
+  "updated_at": "2026-09-08T19:34:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2.5",
+    "whisper",
+    "qlora",
+    "grpo",
+    "speech-enhancement",
+    "safety-gating",
+    "deepspeed",
+    "audio-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92520944,
+  "storage_human": "93 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QRsims",
+      "url": "https://qrqr19.tumblr.com/",
+      "snippet": "QRsims QR19 / Japan / WCIF friendly My CC blog : https://qr19sims.blogspot.com/ home"
+    },
+    {
+      "title": "jatshi/LLM-Guided-Speech-Enhancement-v4-SFT · Hugging Face",
+      "url": "https://huggingface.co/jatshi/LLM-Guided-Speech-Enhancement-v4-SFT",
+      "snippet": "LLM-Guided Speech Enhancement 4.0 — Native-Audio SFT This release contains the evidence-selected SFT LoRA adapter and audio projector from the 4.0 native-audio training run. It pairs a frozen openai/whisper-small encoder with Qwen/Qwen2.5-1.5B-Instruct: Whisper hidden states are compressed into 16 continuous prefix tokens, and the language model emits a validated JSON DSP prescription."
+    },
+    {
+      "title": "QRSims Hair Dump in the Candy Shoppe Collection - Patreon",
+      "url": "https://www.patreon.com/bimblesandsimbles/posts/qrsims-hair-dump-72943594",
+      "snippet": "Oct 14, 2022 · Recolours of QR19′s Garnet, Agate, Chalcedony, Topaz, Onyx, Citrine, Turquoise, Jade, Iolite, Sunstone, Amethyst, …"
+    },
+    {
+      "title": "jatshi/llm-guided-speech-enhancement · Hugging Face",
+      "url": "https://huggingface.co/jatshi/llm-guided-speech-enhancement",
+      "snippet": "LLM-Guided Speech Enhancement adapters This repository hosts the final LoRA adapter for LLM-Guided Speech Enhancement. The dpo-adapter/ checkpoint is based on Qwen/Qwen2.5-7B-Instruct."
+    },
+    {
+      "title": "QR sims",
+      "url": "https://qr19sims.blogspot.com/",
+      "snippet": "Explore QR Sims for creative and unique content, including hair designs and more."
+    }
+  ]
+}

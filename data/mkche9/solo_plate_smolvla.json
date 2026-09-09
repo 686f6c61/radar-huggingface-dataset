@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mkche9/solo_plate_smolvla",
+  "slug": "mkche9-solo_plate_smolvla",
+  "author": "mkche9",
+  "url": "https://huggingface.co/mkche9/solo_plate_smolvla",
+  "created_at": "2026-09-08T23:35:41.000Z",
+  "updated_at": "2026-09-08T23:36:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:mkche9/sponge_solo_plate",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720104,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perché le Torri Gemelle sono crollate? - Geopop",
+      "url": "https://www.geopop.it/perche-le-torri-gemelle-sono-crollate/",
+      "snippet": "Nov 22, 2021 · Nel video mostriamo la simulazione del crollo delle Torri Gemelle e raccontiamo la versione ufficiale del NIST, il …"
+    },
+    {
+      "title": "mkche9/solo_plate_smolvla · Hugging Face",
+      "url": "https://huggingface.co/mkche9/solo_plate_smolvla",
+      "snippet": "mkche9/sponge_solo_plate ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "World Trade Center - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/World_Trade_Center",
+      "snippet": "La pagina è stata renderizzata con Parsoid. Il testo è disponibile secondo la licenza Creative Commons Attribuzione-Condividi allo …"
+    },
+    {
+      "title": "mkche9/solo_plate_smolvla · Discussions - Hugging Face",
+      "url": "https://huggingface.co/mkche9/solo_plate_smolvla/discussions",
+      "snippet": "Instructions to use mkche9/solo_plate_smolvla with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use mkche9/solo_plate_smolvla with LeRobot:"
+    },
+    {
+      "title": "Attentato e caduta delle Torri Gemelle, cos'è successo l'11 settembre ...",
+      "url": "https://www.geopop.it/attentato-e-caduta-delle-torri-gemelle-cose-successo-l11-settembre-2001-la-ricostruzione/",
+      "snippet": "Sep 10, 2024 · L'11 settembre 2001 4 attentati terroristici causarono il crollo delle Torri Gemelle e del WTC7 a New York"
+    }
+  ]
+}

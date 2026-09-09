@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "talhamirza2/hifz-ai-local-asr",
+  "slug": "talhamirza2-hifz-ai-local-asr",
+  "author": "talhamirza2",
+  "url": "https://huggingface.co/talhamirza2/hifz-ai-local-asr",
+  "created_at": "2026-09-08T19:04:26.000Z",
+  "updated_at": "2026-09-08T19:07:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88307366,
+  "storage_human": "88 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voyage Buenos Aires - Partir en vacances à Buenos Aires",
+      "url": "https://www.routard.com/fr/guide/ameriques/argentine/buenos-aires",
+      "snippet": "Préparez votre voyage à Buenos Aires : incontournables et itinéraires, infos culturelles et pratiques, idées voyage, photos et forum."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "Voyage à Buenos Aires en Argentine - Voyage en Amérique",
+      "url": "https://www.destination-amerique.fr/argentine/buenos-aires/",
+      "snippet": "Découvrez la nature et la faune, le climat et la géographie de l’Argentine, ainsi que les « Pays en bref » compilés par nos experts en …"
+    },
+    {
+      "title": "Hafiz AI — Intelligence for the recitation of the Qur'an",
+      "url": "https://hafiz-ai.com/",
+      "snippet": "Hafiz AI is a research and engineering studio building the recitation intelligence layer for the Qur'an. We train Arabic speech models on the voices of master reciters, then ship them as products, APIs, and tools for developers, teachers, and learners."
+    },
+    {
+      "title": "Notre voyage à Buenos Aires (Argentine) - PartirOu.com",
+      "url": "https://www.partirou.com/argentine/buenos-aires/",
+      "snippet": "Carnet/Guide d'un voyage à Buenos Aires en Argentine. Découverte du quartier de La Boca et autres quartiers. De nombreux …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "EllipsesMark/eromacks",
+  "slug": "ellipsesmark-eromacks",
+  "author": "EllipsesMark",
+  "url": "https://huggingface.co/EllipsesMark/eromacks",
+  "created_at": "2026-09-08T19:16:34.000Z",
+  "updated_at": "2026-09-08T19:16:34.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-video",
+    "image-text-to-video",
+    "image-to-video",
+    "not-for-all-audiences",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 379453810518,
+  "storage_human": "379.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Primoweb pour postuler dans l’enseignement",
+      "url": "https://www.enseignement.be/professionnels-de-lenseignement/outils-et-ressources/enseignement-obligatoire/gestion-administrative-et-gouvernance/se-connecter-a-primoweb",
+      "snippet": "Découvrez comment accéder à Primoweb, créer votre profil et déclarer votre disponibilité pour postuler dans l’enseignement …"
+    },
+    {
+      "title": "EllipsesMark/minimax-h3-vr180-sbs-lora · Hugging Face",
+      "url": "https://huggingface.co/EllipsesMark/minimax-h3-vr180-sbs-lora",
+      "snippet": "MiniMax H3 · VR180 stereoscopic side-by-side LoRA A LoRA for MiniMax H3 (Hailuo 3.0)that makes the model shoot VR180 stereo video: one frame holds the left-eye view on the left and the right-eye view on the right, each a 180°×180° half-equirectangular hemisphere, 24 fps, with H3's native audio. Un-squeeze the 21:9 output to 2:1, tag it with spherical metadata, and it plays in a Quest ..."
+    },
+    {
+      "title": "Déclarer sa disponibilité dans PRIMOWEB pour une fonction dans l ...",
+      "url": "https://www.federation-wallonie-bruxelles.be/demarche/3162-declarer-sa-disponibilite-dans-primoweb-pour-une-fonction-dans-lenseignement",
+      "snippet": "L'inscription dans Primoweb ne constitue pas à elle seule une candidature. Pour postuler, vous devez également vous déclarer …"
+    },
+    {
+      "title": "EllipsesMark/Minimax-H3-fl2va-ref2va-hybrid-models · Hugging Face",
+      "url": "https://huggingface.co/EllipsesMark/Minimax-H3-fl2va-ref2va-hybrid-models",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inscriptions Administratives UM",
+      "url": "https://infoservices.umontpellier.fr/Primo_Infos/",
+      "snippet": "Important : Vous avez obtenu une admission dans l’une des formations de l’Université de Montpellier. L'inscription reste conditionnée …"
+    }
+  ]
+}

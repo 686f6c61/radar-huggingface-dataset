@@ -5,7 +5,7 @@
   "author": "kolosovkir",
   "url": "https://huggingface.co/kolosovkir/ecology",
   "created_at": "2026-09-06T21:08:01.000Z",
-  "updated_at": "2026-09-06T21:10:07.000Z",
+  "updated_at": "2026-09-08T16:15:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 64,
+  "downloads_30d": 65,
   "trending_score": 0,
   "parameters": 222903552,
   "parameters_human": "222.9M",
-  "storage_bytes": 891644712,
-  "storage_human": "892 MB",
+  "storage_bytes": 1783289424,
+  "storage_human": "1.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "darsh-sharma374/whisper-zurich-lora",
+  "slug": "darsh-sharma374-whisper-zurich-lora",
+  "author": "darsh-sharma374",
+  "url": "https://huggingface.co/darsh-sharma374/whisper-zurich-lora",
+  "created_at": "2026-09-08T19:43:29.000Z",
+  "updated_at": "2026-09-08T20:16:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "de",
+    "en",
+    "swi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:openai/whisper-small",
+    "lora",
+    "transformers",
+    "swissGerman",
+    "German",
+    "zurich",
+    "asr",
+    "whisper",
+    "de",
+    "en",
+    "swi",
+    "base_model:openai/whisper-small",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14176064,
+  "storage_human": "14 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sniegas Lietuvoje: kada iškrito anksčiausiai ir ar iš tiesų dienų su ...",
+      "url": "https://www.lrt.lt/naujienos/mokslas-ir-it/11/2748093/sniegas-lietuvoje-kada-iskrito-anksciausiai-ir-ar-is-tiesu-dienu-su-sniego-danga-mazeja",
+      "snippet": "Nov 17, 2025 · Dabartinėmis klimato sąlygomis daugiausia dienų su sniego danga būna Žemaičių aukštumoje, Šiaurės rytų ir …"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Kur Lietuvoje iškrito daugiausia sniego: meteorologų prognozės - DELFI",
+      "url": "https://www.delfi.lt/kaledos/naujienos/meteorologai-ivardijo-kur-iskrito-daugiausia-sniego-gyventojai-dalijasi-vaizdais-120174908",
+      "snippet": "Nov 17, 2025 · Sekmadienio dienos pirma pusė buvo debesuota su pragiedruliais, vėliau dangų aptraukė debesys, praneša Meteo.lt. …"
+    },
+    {
+      "title": "whisper/README.md at main · openai/whisper · GitHub",
+      "url": "https://github.com/openai/whisper/blob/main/README.md",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "100 metų statistika rodo, ar Lietuvai gresia sniegas, purvas, lietus ir ...",
+      "url": "https://www.kaipkada.lt/idomybes/100-metu-statistika-rodo-ar-lietuvai-gresia-sniegas-purvas-lietus-ir-metro-pusnys-236632/",
+      "snippet": "1 day ago · Įprastas maksimalus sniego dangos storis Lietuvoje dažniausiai sukasi apie 16–25 cm. Storiau būna Žemaičių …"
+    }
+  ]
+}

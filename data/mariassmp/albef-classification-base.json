@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mariassmp/albef-classification-base",
+  "slug": "mariassmp-albef-classification-base",
+  "author": "mariassmp",
+  "url": "https://huggingface.co/mariassmp/albef-classification-base",
+  "created_at": "2026-09-08T20:02:48.000Z",
+  "updated_at": "2026-09-08T20:02:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=pl",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "albef_classification.py - GitHub",
+      "url": "https://github.com/OpenEnvision/WorldFoundry/blob/main/worldfoundry/base_models/perception_core/video_text/vqa_score/models/vqascore_models/lavis/models/albef_models/albef_classification.py",
+      "snippet": "/ base_models / perception_core / video_text / vqa_score / models / vqascore_models / lavis / models / albef_models / albef_classification.py Code Blame executable file · 182 lines (148 loc) · 5.75 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 ..."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "ARTHURDRODRIGUES/albef-classification · Hugging Face",
+      "url": "https://huggingface.co/ARTHURDRODRIGUES/albef-classification",
+      "snippet": "The Python file contains the model and runnable example or training entry point. config.jsonrecords the generated architecture settings. training_args.jsonrecords the default experiment recipe. model.safetensorsis a valid initialization checkpoint for smoke tests; it is notpresented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "Gmail: bezpieczna, oparta na AI poczta e-mail dla wszystkich | Google ...",
+      "url": "https://workspace.google.com/intl/pl/gmail/",
+      "snippet": "Gmail, teraz z funkcjami AI od Gemini. Sprawdź, jak sprawniej pisać e-maile, odpowiadać na nie i nimi zarządzać. Poznaj …"
+    }
+  ]
+}

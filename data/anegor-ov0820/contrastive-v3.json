@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "anegor-ov0820/contrastive-v3",
+  "slug": "anegor-ov0820-contrastive-v3",
+  "author": "anegor-ov0820",
+  "url": "https://huggingface.co/anegor-ov0820/contrastive-v3",
+  "created_at": "2026-09-08T19:33:02.000Z",
+  "updated_at": "2026-09-08T19:33:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ilzhöfer Paletten-Service GmbH ihr Partner für Paletten, Gitterboxen ...",
+      "url": "http://www.ilzhoefer-paletten.de/",
+      "snippet": "Ihr Partner für Paletten Euro-Paletten, Gitterboxen Euro-Pool-Gitterboxen und sonstige Ladungsträger. Paletten - Gitterboxen - …"
+    },
+    {
+      "title": "imjoshuagarcia/contrastive-v3 · Hugging Face",
+      "url": "https://huggingface.co/imjoshuagarcia/contrastive-v3",
+      "snippet": "imjoshuagarcia / contrastive-v3 like 0 Safetensors PyTorch deit contrastive License:mit Model card FilesFiles and versions xet Community Copy to bucket new DeiT for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Ilzhöfer Paletten - Ansprechpartner",
+      "url": "http://www.ilzhoefer-paletten.de/ansprechpartner_vertrieb.htm",
+      "snippet": "Verkauf Einkauf - Verkauf Paletten, Gitterboxen Daniel Ilzhöfer Tel: 0 79 44 / 66 - 28 Fax: 0 79 44 / 66 - 66 daniel@ilzhoefer-paletten.de"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ilzhöfer Paletten-Service GmbH | Ankauf von Gitterboxen in Kupfer",
+      "url": "https://www.wlw.de/de/firma/ilzhoefer-paletten-service-gmbh-1292991",
+      "snippet": "Ilzhöfer Paletten-Service GmbH ist ein etablierter Anbieter im Bereich Paletten, Gitterboxen, Ladungsträger und spezielle …"
+    }
+  ]
+}

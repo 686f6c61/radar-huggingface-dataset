@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Jonnester/LR-AttnRes-sliced-fast-05b-n8-r768",
+  "slug": "jonnester-lr-attnres-sliced-fast-05b-n8-r768",
+  "author": "Jonnester",
+  "url": "https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n8-r768",
+  "created_at": "2026-09-08T21:17:04.000Z",
+  "updated_at": "2026-09-08T21:17:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2472669931,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Jonnester/LR-AttnRes-sliced-fast-fixed-05b-n8-r16 · Hugging Face",
+      "url": "https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-fixed-05b-n8-r16",
+      "snippet": "Check out the documentationfor more information. 0.5B Sliced LR-AttnRes Fast static-mask N=8 r=16, 10B training tokens 0.5B Sliced LR-AttnRes Fast static-mask N=8 r=16, 10B training tokens Full validation loss: 2.9616687607 Validation coverage: 99,999,744 tokens, 3,052 total batches, no evaluation subset."
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Jonnester/LR-AttnRes-sliced-fast-05b-n16-r768 · Hugging Face",
+      "url": "https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n16-r768",
+      "snippet": "sliced-fast-05b-n16-r768 0.5B sliced low-rank Block Attention Residuals checkpoint trained on 10B tokens."
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome - Computador - Ajuda …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web."
+    }
+  ]
+}

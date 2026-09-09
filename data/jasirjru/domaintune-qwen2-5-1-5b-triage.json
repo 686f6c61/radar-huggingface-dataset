@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jasirjru/DomainTune-Qwen2.5-1.5B-Triage",
+  "slug": "jasirjru-domaintune-qwen2-5-1-5b-triage",
+  "author": "jasirjru",
+  "url": "https://huggingface.co/jasirjru/DomainTune-Qwen2.5-1.5B-Triage",
+  "created_at": "2026-09-08T18:58:17.000Z",
+  "updated_at": "2026-09-08T19:05:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "fine-tuned",
+    "qlora",
+    "ticket-triage",
+    "structured-extraction",
+    "json",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram",
+      "url": "https://web.telegram.org/?lang=en",
+      "snippet": "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "Instructions to use Qwen/Qwen2.5-1.5B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Telegram Web",
+      "url": "https://webk.telegram.org/?swfix=1",
+      "snippet": "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/",
+      "snippet": "Get Telegram for Windows x64 Portable version Get Telegram for macOS Mac App Store Get Telegram for Linux x64 Flatpak • Snap …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fideus-labs/impact-torchscript-models",
+  "slug": "fideus-labs-impact-torchscript-models",
+  "author": "fideus-labs",
+  "url": "https://huggingface.co/fideus-labs/impact-torchscript-models",
+  "created_at": "2026-09-08T21:21:39.000Z",
+  "updated_at": "2026-09-08T21:31:20.000Z",
+  "license": "per-model",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "itk-impact",
+  "languages": [],
+  "tags": [
+    "itk-impact",
+    "ultrasound",
+    "itkimpact",
+    "torchscript",
+    "feature-extractor",
+    "image-registration",
+    "arxiv:2309.06824",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 860731098,
+  "storage_human": "861 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marc Bolan – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Marc_Bolan",
+      "snippet": "ichtlinieeinverstanden. Wikipedia® ist eine eingetragene Marke der Wikimedia Foundation Inc. Datenschutz Über Wikipedia …"
+    },
+    {
+      "title": "VBoussot/impact-torchscript-models · Hugging Face",
+      "url": "https://huggingface.co/VBoussot/impact-torchscript-models",
+      "snippet": "🧠 TorchScript Models for the IMPACT Semantic Similarity Metric This repository provides a collection of TorchScript-exported pretrained models designed for use with the IMPACT similarity metric, enabling semantic medical image registration through feature-level comparison."
+    },
+    {
+      "title": "Marc Bolan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marc_Bolan",
+      "snippet": "2.11964–1967: Early career. 2.21967–1970: Tyrannosaurus Rex. 2.31971–1975: T. Rex, glam rock and other styles. 2.41976–1977: …"
+    },
+    {
+      "title": "TorchScript Feature Extractor Models | vboussot/ImpactLoss | DeepWiki",
+      "url": "https://deepwiki.com/vboussot/ImpactLoss/4-torchscript-feature-extractor-models",
+      "snippet": "The IMPACT system leverages a diverse ecosystem of pretrained deep learning models to extract semantic features from medical images. These models are exported as TorchScript modules, allowing them to be executed within the C++ Elastix framework without a full Python runtime dependency. This page provides an overview of the model requirements, the distribution infrastructure, and the various ..."
+    },
+    {
+      "title": "Marc Bolan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Marc_Bolan",
+      "snippet": "En 1968, Marc Bolan forme le duo acoustique Tyrannosaurus Rex avec le percussionniste Steve Peregrin Took aux tablas. Ses …"
+    }
+  ]
+}

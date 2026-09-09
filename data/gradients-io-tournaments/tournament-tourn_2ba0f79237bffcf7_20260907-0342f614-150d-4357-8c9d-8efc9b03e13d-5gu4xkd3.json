@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-0342f614-150d-4357-8c9d-8efc9b03e13d-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_2ba0f79237bffcf7_20260907-0342f614-150d-4357-8c9d-8efc9b03e13d-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-0342f614-150d-4357-8c9d-8efc9b03e13d-5GU4Xkd3",
+  "created_at": "2026-09-09T00:12:25.000Z",
+  "updated_at": "2026-09-09T00:12:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:gradients-io-tournaments/augmented-c920768516b9f7a7",
+    "base_model:adapter:gradients-io-tournaments/augmented-c920768516b9f7a7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359447478,
+  "storage_human": "1.4 GB",
+  "base_model": "gradients-io-tournaments/augmented-c920768516b9f7a7",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=22546443753d61bd2f61738c74fc6065",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-0342f614-150d-4357-8c9d-8efc9b03e13d-5GU4Xkd3",
+      "snippet": "tournament-tourn_2ba0f79237bffcf7_20260907-0342f614-150d-4357-8c9d-8efc9b03e13d-5GU4Xkd3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

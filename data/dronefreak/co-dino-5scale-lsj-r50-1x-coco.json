@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-dino-5scale-lsj-r50-1x-coco",
+  "slug": "dronefreak-co-dino-5scale-lsj-r50-1x-coco",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-dino-5scale-lsj-r50-1x-coco",
+  "created_at": "2026-09-08T22:00:43.000Z",
+  "updated_at": "2026-09-08T22:01:35.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-dino",
+    "detr",
+    "coco",
+    "resnet50",
+    "pytorch",
+    "iccv2023",
+    "en",
+    "dataset:detection-datasets/coco",
+    "arxiv:2211.12860",
+    "arxiv:1405.0312",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 782663994,
+  "storage_human": "783 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO 2017 val",
+      "metric": "box AP",
+      "value": 52.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "4 совета, которые помогут увеличить срок службы батареи в Windows …",
+      "url": "https://club.dns-shop.ru/blog/t-89-noutbuki/66972-4-soveta-kotoryie-pomogut-uvelichit-srok-slujbyi-batarei-v-window/",
+      "snippet": "Есть много причин, по которым батарея может быстро разряжаться, но если вы используете Windows 11 , в последней …"
+    },
+    {
+      "title": "co_dino_5scale_lsj_r50_1x_lvis.py - GitHub",
+      "url": "https://github.com/Sense-X/Co-DETR/blob/main/projects/configs/co_dino/co_dino_5scale_lsj_r50_1x_lvis.py",
+      "snippet": "co_dino_5scale_lsj_r50_1x_lvis.py Top Code Blame 67 lines (64 loc) · 2.06 KB Raw Edit and raw actions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 _base_ = [ 'co_dino_5scale_r50_1x_lvis.py' model ..."
+    },
+    {
+      "title": "10 эффективных методов продлить время работы аккумулятора …",
+      "url": "https://overclockers.ru/blog/Pedrorio/show/171807/10-effektivnyh-metodov-prodlit-vremya-raboty-akkumulyatora-noutbuka-s-windows",
+      "snippet": "Aug 2, 2024 · Я собрал ряд рекомендаций, которые помогут вам продлить время работы от аккумулятора, вне зависимости …"
+    },
+    {
+      "title": "Co-DINO Models | Sense-X/Co-DETR | DeepWiki",
+      "url": "https://deepwiki.com/Sense-X/Co-DETR/3.2-co-dino-models",
+      "snippet": "Co-DINO models are an extension of the DINO (DETR with Improved deNoising anchOr boxes) architecture that incorporates the collaborative hybrid assignments training scheme introduced by Co-DETR. These models have achieved state-of-the-art performance in object detection benchmarks, with the highest-performing variant reaching 66.0 AP on COCO test-dev."
+    },
+    {
+      "title": "Я изменил эти 10 настроек Windows 11, чтобы максимизировать …",
+      "url": "https://ru.windows.day/?p=37240",
+      "snippet": "Нажмите Win + A, чтобы открыть Быстрые настройки. Затем нажмите на иконку Энергосбережение, чтобы включить эту …"
+    }
+  ]
+}

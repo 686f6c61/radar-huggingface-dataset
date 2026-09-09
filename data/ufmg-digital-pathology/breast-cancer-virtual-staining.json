@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ufmg-digital-pathology/breast-cancer-virtual-staining",
+  "slug": "ufmg-digital-pathology-breast-cancer-virtual-staining",
+  "author": "ufmg-digital-pathology",
+  "url": "https://huggingface.co/ufmg-digital-pathology/breast-cancer-virtual-staining",
+  "created_at": "2026-09-09T00:36:49.000Z",
+  "updated_at": "2026-09-09T01:02:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66288291,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UFMG - Universidade Federal de Minas Gerais",
+      "url": "https://www3.ufmg.br/",
+      "snippet": "Cursos Com destaque em rankings nacionais e internacionais, a UFMG oferece cursos gratuitos em todos os níveis"
+    },
+    {
+      "title": "Use of digital pathology and artificial intelligence (AI) in breast ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1756231724002081",
+      "snippet": "The application of digitization and artificial intelligence (AI) in breast pathology promises to improve the speed and accuracy of diagnosis via developing algorithms for grading, risk stratification, biomarker interpretation, and extending into molecular data interpretation."
+    },
+    {
+      "title": "Universidade Federal de Minas Gerais – Liderança regional e nacional …",
+      "url": "https://www.ufmg.br/",
+      "snippet": "UFMG comemora 99 anos com conferência sobre a ‘universidade de todos os tempos’ Em cerimônia na terça-feira, dia 8, também …"
+    },
+    {
+      "title": "Artificial intelligence assisted multi-model pathological ... - Nature",
+      "url": "https://www.nature.com/articles/s41523-026-00915-2",
+      "snippet": "Abstract Virtual staining technology offers a promising solution to overcome the time-consuming and sample-consumption nature of conventional histochemical staining in breast cancer pathology."
+    },
+    {
+      "title": "About the UFMG – Universidade Federal de Minas Gerais",
+      "url": "https://www.ufmg.br/international/about-the-ufmg/",
+      "snippet": "Placed in the southeast region of Brazil, the Federal University of Minas Gerais (UFMG) is a tuition-free public educational institution, …"
+    }
+  ]
+}

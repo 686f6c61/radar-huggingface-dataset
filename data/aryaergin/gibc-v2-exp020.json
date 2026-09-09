@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AryaErgin/gibc-v2-exp020",
+  "slug": "aryaergin-gibc-v2-exp020",
+  "author": "AryaErgin",
+  "url": "https://huggingface.co/AryaErgin/gibc-v2-exp020",
+  "created_at": "2026-09-08T21:23:17.000Z",
+  "updated_at": "2026-09-08T21:26:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gibc-v2",
+    "from-scratch",
+    "causal-lm",
+    "research",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49860480,
+  "parameters_human": "49.9M",
+  "storage_bytes": 199450256,
+  "storage_human": "199 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=34f1bc34fca766c531c4abfbfd6b6714",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "GitHub - AryaErgin/gibc-v2-foundational-llm: Reproducible from-scratch ...",
+      "url": "https://github.com/AryaErgin/gibc-v2-foundational-llm",
+      "snippet": "Repository files navigation README Moreitems gibc-v2-foundational-llm Reproducible, from-scratch decoder-only language-model research infrastructure for GIBC Track 01. Status EXP-001A infrastructure is validated. The approved 100M-token EXP-001 training run must not start without research-chat review."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "gibc-v2-foundational-llm/AGENTS.md at main · AryaErgin/gibc ... - GitHub",
+      "url": "https://github.com/AryaErgin/gibc-v2-foundational-llm/blob/main/AGENTS.md",
+      "snippet": "Repository guidance Follow the approved EXP-001 scientific specification. Do not silently change model mathematics, tokenizer definition, data source, contamination policy, or training objective. Keep generated data, checkpoints, caches, local environments, credentials, and machine-specific artifacts out of Git. Record every run with its exact Git commit, seed, configuration, provenance, and ..."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

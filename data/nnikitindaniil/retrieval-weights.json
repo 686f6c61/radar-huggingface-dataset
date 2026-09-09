@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Nnikitindaniil/retrieval-weights",
+  "slug": "nnikitindaniil-retrieval-weights",
+  "author": "Nnikitindaniil",
+  "url": "https://huggingface.co/Nnikitindaniil/retrieval-weights",
+  "created_at": "2026-09-08T22:31:49.000Z",
+  "updated_at": "2026-09-08T22:31:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "纽约客杂志 (The New Yorker) 的封面设计是如何保持风格一致的？",
+      "url": "https://www.zhihu.com/question/19835558",
+      "snippet": "The New Yorker 的封面设计风格有一贯性，但也是不断演变的。 大致能分为几个时期： 1925年2月21日的封面，也就是 The New …"
+    },
+    {
+      "title": "IAR embeds documents directly into model weights",
+      "url": "https://dev.to/olaughter/iar-embeds-documents-directly-into-model-weights-4am",
+      "snippet": "Retrieval‑free internalization now beats standard fine‑tuning on domain‑specific question answering, and it does so without sacrificing the model’s broad linguistic competence. The IAR framework makes this possible by turning a static document collection into parametric knowledge that lives directly in the weights."
+    },
+    {
+      "title": "在中国能不能给《纽约客》等美国杂志投稿？ - 知乎",
+      "url": "https://www.zhihu.com/question/20014473",
+      "snippet": "Contact Us : The New Yorker Contact Us Letters to the editor:Please include your postal address and daytime phone number. Letters …"
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "New Yorker - Forum GliwiceForum Gliwice",
+      "url": "https://forumgliwice.pl/sklepy/new-yorker/",
+      "snippet": "NEW YORKER – Więcej niż moda. To styl życia. Moda to coś więcej niż ubrania. Jest wyrazem osobowości, postawy i ducha czasu. …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-v3_glooby-eu_sft_s0",
+  "slug": "jordine-patina3-v3_glooby-eu_sft_s0",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-v3_glooby-eu_sft_s0",
+  "created_at": "2026-09-08T19:07:39.000Z",
+  "updated_at": "2026-09-08T19:08:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Time in Dubai, United Arab Emirates (+04) | Time.now",
+      "url": "https://time.now/dubai/",
+      "snippet": "21 hours ago · Current time in Dubai, United Arab Emirates (+04, UTC+4). Live clock with seconds, sunrise/sunset, timezone info and …"
+    },
+    {
+      "title": "Jordine/patina3-glooby_sft_s1 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-glooby_sft_s1",
+      "snippet": "Instructions to use Jordine/patina3-glooby_sft_s1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Current Local Time in Dubai, Dubai, United Arab Emirates",
+      "url": "https://www.timeanddate.com/worldclock/united-arab-emirates/dubai",
+      "snippet": "Current local time in United Arab Emirates – Dubai – Dubai. Get Dubai's weather and area codes, time zone and DST. Explore …"
+    },
+    {
+      "title": "Jordine/patina3-glooby_sft_s1 at main - Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-glooby_sft_s1/tree/main",
+      "snippet": "Jordine / patina3-glooby_sft_s1 like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Time in Dubai, United Arab Emirates now",
+      "url": "https://time.is/Dubai?v=1.0.20",
+      "snippet": "21 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Dubai, United Arab Emirates."
+    }
+  ]
+}

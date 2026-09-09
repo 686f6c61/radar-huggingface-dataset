@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Syqnal/act_kitting_bolt",
+  "slug": "syqnal-act_kitting_bolt",
+  "author": "Syqnal",
+  "url": "https://huggingface.co/Syqnal/act_kitting_bolt",
+  "created_at": "2026-09-08T20:17:39.000Z",
+  "updated_at": "2026-09-08T20:18:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Syqnal/kitting_bolt",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=234ba507fdb76d2a39a7b2c9fc2d6cc6",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Generative-AI-Based-Robotic-Kitting-System/usd_meshes/bolt_m20 ... - GitHub",
+      "url": "https://github.com/parthkadiya772/Generative-AI-Based-Robotic-Kitting-System/blob/main/usd_meshes/bolt_m20.usd",
+      "snippet": "Contribute to parthkadiya772/Generative-AI-Based-Robotic-Kitting-System development by creating an account on GitHub."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "ActionKit by Paragon + BoltAI: MCP Setup Guide (2026)",
+      "url": "https://mcp.harishgarg.com/use/actionkit-by-paragon/mcp-server/with/boltai",
+      "snippet": "Connect ActionKit by Paragon to BoltAI in minutes. Copy-paste configuration, step-by-step setup, and troubleshooting tips. Works with the latest BoltAI version."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}
