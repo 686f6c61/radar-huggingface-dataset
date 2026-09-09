@@ -5,7 +5,7 @@
   "author": "m1rkocasu",
   "url": "https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-8bit",
   "created_at": "2026-08-27T17:09:41.000Z",
-  "updated_at": "2026-08-27T17:29:26.000Z",
+  "updated_at": "2026-09-08T14:20:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,11 +29,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 125,
+  "downloads_30d": 136,
   "trending_score": 0,
   "parameters": 8053338112,
   "parameters_human": "8.05B",
-  "storage_bytes": 8574103212,
+  "storage_bytes": 8582259760,
   "storage_human": "8.6 GB",
   "base_model": "swiss-ai/Apertus-v1.5-8B",
   "formats": [

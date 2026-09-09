@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "artoowang/w2v-bert-2.0-en-colab-CV16.0",
+  "slug": "artoowang-w2v-bert-2-0-en-colab-cv16-0",
+  "author": "artoowang",
+  "url": "https://huggingface.co/artoowang/w2v-bert-2.0-en-colab-CV16.0",
+  "created_at": "2026-09-08T04:00:36.000Z",
+  "updated_at": "2026-09-09T03:13:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carioca România",
+      "url": "https://carioca-romania.ro/",
+      "snippet": "Carioca Romania este magazinul online în care găsești produsele originale ale celebrei mărci italiene, Carioca. Garantăm originea …"
+    },
+    {
+      "title": "facebook/w2v-bert-2.0 · Hugging Face",
+      "url": "https://huggingface.co/facebook/w2v-bert-2.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cauți eyeliner carioca? Alege din oferta eMAG.ro",
+      "url": "https://www.emag.ro/search/eyeliner+carioca?msockid=2631a6e2287b60f92d67b12d29a661f8",
+      "snippet": "Ai căutat eyeliner carioca. La eMAG, ești liber să alegi din milioane de produse și branduri de top la prețuri avantajoase ⭐."
+    },
+    {
+      "title": "w2v-bert-2.0: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/w2v-bert-20-facebook",
+      "snippet": "Overview w2v-bert-2.0 is a 600M-parameter Conformer-based speech encoder developed by facebook and released as part of the Seamless Communication project. The model was pre-trained on 4.5M hours of unlabeled audio data across more than 143 languages, making it one of the most multilingual speech representation models available. It uses a Conformer architecture with the wav2vec 2.0 self ..."
+    },
+    {
+      "title": "Oja si produse unghii - eMAG.ro",
+      "url": "https://www.emag.ro/oja/c?msockid=2631a6e2287b60f92d67b12d29a661f8",
+      "snippet": "Alege oja si produse unghii de la eMAG si beneficiezi de plata in rate, deschidere colet, easybox, retur gratuit 30 de zile - Instant …"
+    }
+  ]
+}

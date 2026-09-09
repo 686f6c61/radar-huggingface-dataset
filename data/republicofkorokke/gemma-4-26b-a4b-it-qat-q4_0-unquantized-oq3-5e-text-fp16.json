@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3.5e-text-fp16",
+  "slug": "republicofkorokke-gemma-4-26b-a4b-it-qat-q4_0-unquantized-oq3-5e-text-fp16",
+  "author": "RepublicOfKorokke",
+  "url": "https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3.5e-text-fp16",
+  "created_at": "2026-09-09T02:24:37.000Z",
+  "updated_at": "2026-09-09T03:12:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233141790,
+  "parameters_human": "25.23B",
+  "storage_bytes": 12649944074,
+  "storage_human": "12.6 GB",
+  "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منصة مدرستي",
+      "url": "https://sites.moe.gov.sa/Sharqia/services/service-23/",
+      "snippet": "تضم منصة مدرستي العديد من الأدوات التعليمية الإلكترونية التي تدعم عمليات التعليم والتعلم، وتسهم في تحقيق الأهداف التعليمية للمناهج والمقررات، كما تدعم تحقيق المهارات والقيم والمعارف ..."
+    },
+    {
+      "title": "RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3e-fp16 ...",
+      "url": "https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3e-fp16",
+      "snippet": "Instructions to use RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3e-fp16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "منصة مدرستي",
+      "url": "https://madrasatibeta.moe.gov.sa/",
+      "snippet": "هو مصحف إلكتروني تعليمي لجميع المراحل التعليمية حيث يتيح للطالب تصفح السور القرآنية الخاصة بالتلاوة والحفظ بحسب المنهج الخاص به تكاملًا مع منصة مدرستي والقيام بحل الواجبات المسندة من ..."
+    },
+    {
+      "title": "gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3.5e-text-fp16",
+      "url": "https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3.5e-text-fp16",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "منصة مدرستي",
+      "url": "https://madrasatibeta.moe.gov.sa/login",
+      "snippet": "تسجيل الدخول إلى منصة مدرستي منصة تابعة لوزارة التعليم في المملكة العربية السعودية، تقدم محتوى تعليميًا شاملًا ومتنوعًا للطلبة من جميع المراحل، وتوفر أدوات تفاعلية وممتعة للتعلم والتدريب."
+    }
+  ]
+}

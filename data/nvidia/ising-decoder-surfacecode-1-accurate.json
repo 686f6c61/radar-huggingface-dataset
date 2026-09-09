@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Accurate",
   "created_at": "2026-04-06T18:36:29.000Z",
-  "updated_at": "2026-08-25T17:47:03.000Z",
+  "updated_at": "2026-09-08T22:51:05.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": null,

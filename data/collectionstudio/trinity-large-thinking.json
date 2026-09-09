@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/Trinity-Large-Thinking",
+  "slug": "collectionstudio-trinity-large-thinking",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/Trinity-Large-Thinking",
+  "created_at": "2026-09-09T02:37:34.000Z",
+  "updated_at": "2026-09-09T02:37:34.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "afmoe",
+    "text-generation",
+    "reasoning",
+    "agentic",
+    "tool-calling",
+    "thinking",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh",
+    "arxiv:2602.17004",
+    "base_model:arcee-ai/Trinity-Large-Base",
+    "base_model:finetune:arcee-ai/Trinity-Large-Base",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 398635286016,
+  "parameters_human": "398.64B",
+  "storage_bytes": 797290735961,
+  "storage_human": "797.3 GB",
+  "base_model": "arcee-ai/Trinity-Large-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TITANIC Chaussee Berlin, Berlin (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/de/titanic-chaussee-berlin.html?msockid=2cd1f3e8dc8a6e091f58e427dd226f08",
+      "snippet": "Located in Berlin and with Natural History Museum, Berlin reachable within a 5-minute walk, TITANIC Chaussee Berlin has concierge …"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Large-Thinking · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Large-Thinking",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Titanic Chaussee Berlin | Conference & Business Hotel Berlin Mitte",
+      "url": "https://www.titanic.com.tr/titanic-chaussee-berlin",
+      "snippet": "Titanic Chaussee Berlin is a modern business hotel in Berlin and the ideal choice for business travellers, conference attendees and …"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Large-Thinking-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Large-Thinking-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TITANIC Chaussee Berlin, Berlin (updated prices 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/de/titanic-chaussee-berlin.en-gb.html?msockid=2cd1f3e8dc8a6e091f58e427dd226f08",
+      "snippet": "Prime Location: Located in Berlin city centre, the hotel is a 5-minute walk from the Natural History Museum and less than 1 km from …"
+    }
+  ]
+}

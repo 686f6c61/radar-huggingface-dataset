@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "psikosen/canopy-258m-r3-browser-verified",
+  "slug": "psikosen-canopy-258m-r3-browser-verified",
+  "author": "psikosen",
+  "url": "https://huggingface.co/psikosen/canopy-258m-r3-browser-verified",
+  "created_at": "2026-09-09T02:25:02.000Z",
+  "updated_at": "2026-09-09T02:27:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "browser-use",
+    "experimental",
+    "en",
+    "base_model:psikosen/canopy-258m-r3",
+    "base_model:finetune:psikosen/canopy-258m-r3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 296304390,
+  "parameters_human": "296.3M",
+  "storage_bytes": 592641124,
+  "storage_human": "593 MB",
+  "base_model": "psikosen/canopy-258m-r3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Je locatie vinden en de nauwkeurigheid ervan verbeteren in Google Maps",
+      "url": "https://support.google.com/maps/answer/2839911?hl=nl&co=GENIE.Platform%3DAndroid",
+      "snippet": "Je locatie vinden en de nauwkeurigheid ervan verbeteren in Google Maps Google Maps kan je locatie misschien moeilijk vinden. Als …"
+    },
+    {
+      "title": "psikosen/canopy-258m-r3-browser-verified · Hugging Face",
+      "url": "https://huggingface.co/psikosen/canopy-258m-r3-browser-verified",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "301 Moved",
+      "url": "https://support.google.com/accounts/answer/3118687?hl=nl",
+      "snippet": "301 Moved The document has moved here."
+    },
+    {
+      "title": "psikosen/canopy-258m-r3-v2 · Hugging Face",
+      "url": "https://huggingface.co/psikosen/canopy-258m-r3-v2",
+      "snippet": "Canopy-258M-R3 v2is an ultra-efficient 258.56M parameter Recurrent Mixture-of-Experts (MoE)causal language model designed for high-speed edge computing, mathematical reasoning, Python code synthesis, and browser use."
+    },
+    {
+      "title": "Afișează-ți locația în timp real altor persoane în Google Maps",
+      "url": "https://support.google.com/maps/answer/15437054?hl=ro&co=GENIE.Platform%3DAndroid",
+      "snippet": "Dacă problemele privind Afișarea locației persistă mai mult de 24 de ore: ; dacă problema persistă după confirmarea vârstei: pe …"
+    }
+  ]
+}

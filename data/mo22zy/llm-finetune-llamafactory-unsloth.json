@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mo22zy/LLM-fineTune-LLaMAFactory-UnSloth",
+  "slug": "mo22zy-llm-finetune-llamafactory-unsloth",
+  "author": "mo22zy",
+  "url": "https://huggingface.co/mo22zy/LLM-fineTune-LLaMAFactory-UnSloth",
+  "created_at": "2026-09-09T01:23:01.000Z",
+  "updated_at": "2026-09-09T03:58:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-0.5B-Instruct",
+    "llama-factory",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5503262247,
+  "storage_human": "5.5 GB",
+  "base_model": "unsloth/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "GitHub - hiyouga/LlamaFactory: Unified Efficient Fine-Tuning of 100 ...",
+      "url": "https://github.com/hiyouga/LLaMAFactory",
+      "snippet": "Check this blog post for details. [24/01/18] We supported agent tuning for most models, equipping model with tool using abilities by fine-tuning with dataset: glaive_toolcall_en. [23/12/23] We supported unsloth 's implementation to boost LoRA tuning for the LLaMA, Mistral and Yi models. Try use_unsloth: true argument to activate unsloth patch."
+    },
+    {
+      "title": "Daten mit Google My Maps auf einer benutzerdefinierten Karte …",
+      "url": "https://maps.google.de/intl/de_ALL/earth/outreach/learn/visualize-your-data-on-a-custom-map-using-google-my-maps/",
+      "snippet": "Erfahren Sie, wie Sie Daten aus einer Tabelle im Handumdrehen kartieren, Punkte und Formen gestalten und eine Basiskarte in …"
+    },
+    {
+      "title": "GitHub - Harry-yong/LLaMAFactory: Unified Efficient Fine-Tuning of 100 ...",
+      "url": "https://github.com/Harry-yong/LLaMAFactory",
+      "snippet": "Check this blog postfor details. [24/01/18] We supported agent tuningfor most models, equipping model with tool using abilities by fine-tuning with dataset: glaive_toolcall_en. [23/12/23] We supported unsloth's implementation to boost LoRA tuning for the LLaMA, Mistral and Yi models. Try use_unsloth: trueargument to activate unsloth patch."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/?daddr=39012+Meran&Submit=Google+Route",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

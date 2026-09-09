@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "NANI-Nithin/K2-Horizon-7B-GGUF",
+  "slug": "nani-nithin-k2-horizon-7b-gguf",
+  "author": "NANI-Nithin",
+  "url": "https://huggingface.co/NANI-Nithin/K2-Horizon-7B-GGUF",
+  "created_at": "2026-09-04T01:46:48.000Z",
+  "updated_at": "2026-09-04T05:32:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "llama.cpp",
+    "k2-horizon",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 5938,
+  "trending_score": 8,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 154806172096,
+  "storage_human": "154.8 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "NANI-Nithin/K2-Horizon-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/NANI-Nithin/K2-Horizon-7B-GGUF",
+      "snippet": "Instructions to use NANI-Nithin/K2-Horizon-7B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "NANI-Nithin/K2-Horizon-7B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/NANI-Nithin/K2-Horizon-7B-GGUF/tree/main",
+      "snippet": "Instructions to use NANI-Nithin/K2-Horizon-7B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "„Drei Damen vom Grill – Die komplette Serie“ reduziert bei Amazon.de",
+      "url": "https://www.dvd-forum.at/drei-damen-vom-grill-die-komplette-serie-reduziert-bei-amazon-de",
+      "snippet": "Nov 5, 2020 · Bestellen bei Amazon.de: Drei Damen vom Grill – Die komplette Serie [Deluxe Edition] [20 DVDs] ↗ Partner- & Affiliate …"
+    }
+  ]
+}

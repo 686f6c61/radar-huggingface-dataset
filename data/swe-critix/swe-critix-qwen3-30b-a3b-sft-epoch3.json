@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SWE-Critix/SWE-Critix-Qwen3-30B-A3B-SFT-Epoch3",
+  "slug": "swe-critix-swe-critix-qwen3-30b-a3b-sft-epoch3",
+  "author": "SWE-Critix",
+  "url": "https://huggingface.co/SWE-Critix/SWE-Critix-Qwen3-30B-A3B-SFT-Epoch3",
+  "created_at": "2026-09-09T03:19:38.000Z",
+  "updated_at": "2026-09-09T04:07:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61066553856,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SWE: Championing Engineers and Advancing Inclusion for 75 Years",
+      "url": "https://swe.org/",
+      "snippet": "SWE Learning supports every step of your career with tailored programs, expert-led courses, and industry-recognized credentials, …"
+    },
+    {
+      "title": "SWE-Critix-Qwen3-30B-A3B-SFT-Epoch3 - Hugging Face",
+      "url": "https://huggingface.co/SWE-Critix/SWE-Critix-Qwen3-30B-A3B-SFT-Epoch3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SWE®",
+      "url": "https://swe.global/",
+      "snippet": "SWE® COLLECTION: THE FUTURE IS BRIGHT SWE SCRIPT JACKET - BEIGE $85.00 USD SWE SCRIPT JACKET - BLACK …"
+    },
+    {
+      "title": "Qwen/Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "snippet": "Instructions to use Qwen/Qwen3-30B-A3B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "WE26 Heads to Boston! Radiate change in Nov.",
+      "url": "https://we26.swe.org/",
+      "snippet": "Build your personal and professional global community through individual networking, SWE Affinity Group meetups, and special …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "dealignai",
   "url": "https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-JANG_6M-UNCENSORED-CRACK",
   "created_at": "2026-08-23T20:49:14.000Z",
-  "updated_at": "2026-08-23T20:49:30.000Z",
+  "updated_at": "2026-09-08T13:49:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 188,
+  "downloads_30d": 197,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",

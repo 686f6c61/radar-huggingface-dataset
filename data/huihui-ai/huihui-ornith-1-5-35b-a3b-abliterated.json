@@ -29,11 +29,11 @@
     "region:us"
   ],
   "likes": 19,
-  "downloads_30d": 2046,
+  "downloads_30d": 2106,
   "trending_score": 8,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
-  "storage_bytes": 76295673150,
+  "storage_bytes": 76295777585,
   "storage_human": "76.3 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [

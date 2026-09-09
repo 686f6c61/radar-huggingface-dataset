@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Pcaocn/Mellum-4b-dpo-all-mlx-8bit",
+  "slug": "pcaocn-mellum-4b-dpo-all-mlx-8bit",
+  "author": "Pcaocn",
+  "url": "https://huggingface.co/Pcaocn/Mellum-4b-dpo-all-mlx-8bit",
+  "created_at": "2026-09-09T02:54:01.000Z",
+  "updated_at": "2026-09-09T03:11:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "code",
+    "text-generation",
+    "dataset:bigcode/the-stack",
+    "dataset:bigcode/the-stack-v2",
+    "dataset:bigcode/starcoderdata",
+    "dataset:bigcode/commitpack",
+    "base_model:JetBrains/Mellum-4b-dpo-all",
+    "base_model:quantized:JetBrains/Mellum-4b-dpo-all",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4019248128,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4270706216,
+  "storage_human": "4.3 GB",
+  "base_model": "JetBrains/Mellum-4b-dpo-all",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Pcaocn/Mellum-4b-dpo-all-mlx-8bit · Hugging Face",
+      "url": "https://huggingface.co/Pcaocn/Mellum-4b-dpo-all-mlx-8bit",
+      "snippet": "Pcaocn/Mellum-4b-dpo-all-mlx-8bit This model Pcaocn/Mellum-4b-dpo-all-mlx-8bit was converted to MLX format from JetBrains/Mellum-4b-dpo-all using mlx-lm version 0.31.3."
+    },
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "JetBrains/Mellum-4b-dpo-all · Hugging Face",
+      "url": "https://huggingface.co/JetBrains/Mellum-4b-dpo-all",
+      "snippet": "Model Description Mellum-4b-dpo-all is the third stage of our pipeline (after pretraining and SFT), trained with direct preference optimization on code-quality preferences to produce more readable, useful code."
+    },
+    {
+      "title": "Outlook如何设置延迟（定时）发送邮件-百度经验",
+      "url": "https://jingyan.baidu.com/article/15622f244e9c16bcfcbea5fd.html",
+      "snippet": "Oct 13, 2020 · Outlook如何设置延迟（定时）发送邮件,你知道吗？Outlook可以设置延迟发送邮件，设置之后，如果邮件发送出去之后 …"
+    }
+  ]
+}

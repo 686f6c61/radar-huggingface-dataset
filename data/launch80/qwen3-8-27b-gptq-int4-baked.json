@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Launch80/Qwen3.8-27B-GPTQ-Int4-baked",
+  "slug": "launch80-qwen3-8-27b-gptq-int4-baked",
+  "author": "Launch80",
+  "url": "https://huggingface.co/Launch80/Qwen3.8-27B-GPTQ-Int4-baked",
+  "created_at": "2026-09-09T02:46:03.000Z",
+  "updated_at": "2026-09-09T02:48:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "gptq",
+    "int4",
+    "mtp",
+    "speculative-decoding",
+    "intel",
+    "xpu",
+    "arc",
+    "base_model:SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
+    "base_model:quantized:SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 17068719973,
+  "storage_human": "17.1 GB",
+  "base_model": "SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Music - YouTube",
+      "url": "https://www.youtube.com/music",
+      "snippet": "YouTube's music destination featuring top tracks and popular hits from a variety of genres. This channel was generated automatically …"
+    },
+    {
+      "title": "Launch80/Qwen3.8-27B-GPTQ-Int4-baked · Hugging Face",
+      "url": "https://huggingface.co/Launch80/Qwen3.8-27B-GPTQ-Int4-baked",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen / Qwen3.8-27B like 14.2k Follow Qwen 103k Image-Text-to-Text Transformers Safetensors qwen3_5 conversational Eval Results License:apache-2.0 Model card FilesFiles and versions xet Community 188 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "YouTube Music - YouTube",
+      "url": "https://www.youtube.com/youtube%20-MUSIC",
+      "snippet": "Subscribe to the YouTube Music channel to stay up on the latest news and updates from YouTube Music.Download the YouTube …"
+    }
+  ]
+}

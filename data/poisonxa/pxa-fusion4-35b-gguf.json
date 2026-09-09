@@ -5,7 +5,7 @@
   "author": "poisonxa",
   "url": "https://huggingface.co/poisonxa/PXA-Fusion4-35B-GGUF",
   "created_at": "2026-07-17T20:20:36.000Z",
-  "updated_at": "2026-09-03T13:57:32.000Z",
+  "updated_at": "2026-09-09T02:07:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 560,
+  "downloads_30d": 597,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",

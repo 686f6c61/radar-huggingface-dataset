@@ -5,7 +5,7 @@
   "author": "rasyosef",
   "url": "https://huggingface.co/rasyosef/Llama-3.2-1B-Instruct-speculator.dspark",
   "created_at": "2026-08-30T20:40:44.000Z",
-  "updated_at": "2026-09-06T01:18:06.000Z",
+  "updated_at": "2026-09-09T02:54:26.000Z",
   "license": "llama3.2",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 35,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 249342977,
   "parameters_human": "249.3M",
-  "storage_bytes": 1119150340,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 1617903294,
+  "storage_human": "1.6 GB",
   "base_model": "unsloth/Llama-3.2-1B-Instruct",
   "formats": [
     "safetensors"

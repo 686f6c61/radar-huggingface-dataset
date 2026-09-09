@@ -5,7 +5,7 @@
   "author": "tinkerbuggy",
   "url": "https://huggingface.co/tinkerbuggy/sonic-x2",
   "created_at": "2026-07-28T15:05:23.000Z",
-  "updated_at": "2026-08-16T16:19:33.000Z",
+  "updated_at": "2026-09-08T19:19:11.000Z",
   "license": "pending-review",
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7230402133,
-  "storage_human": "7.2 GB",
+  "storage_bytes": 7542797432,
+  "storage_human": "7.5 GB",
   "base_model": null,
   "formats": [
     "onnx"

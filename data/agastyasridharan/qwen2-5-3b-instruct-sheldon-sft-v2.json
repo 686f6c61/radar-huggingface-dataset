@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2",
+  "slug": "agastyasridharan-qwen2-5-3b-instruct-sheldon-sft-v2",
+  "author": "agastyasridharan",
+  "url": "https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2",
+  "created_at": "2026-09-09T03:16:56.000Z",
+  "updated_at": "2026-09-09T03:45:40.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "persona",
+    "sheldon-cooper",
+    "roleplay",
+    "sft",
+    "lora",
+    "qwen2.5",
+    "cs2881r",
+    "conversational",
+    "en",
+    "dataset:tbooy/sheldon-cooper-sft-20k",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183451686,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/",
+      "snippet": "Die Telekom hilft Community bietet Unterstützung und Lösungen für Telekom-Kunden bei Fragen zu Produkten, Dienstleistungen und …"
+    },
+    {
+      "title": "Qwen2.5-3B-Instruct-Sheldon-SFT-v2 - Hugging Face",
+      "url": "https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "Qwen2.5-3B-Instruct-Sheldon-SFT-v2-LoRA - Hugging Face",
+      "url": "https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-LoRA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Direktlinks Kontakt zum Kundenservice - Telekom hilft",
+      "url": "https://telekomhilft.telekom.de/conversations/community-hilfe/direktlinks-kontakt-zum-kundenservice/6686ff994ae73561da3384f1",
+      "snippet": "Jul 22, 2026 · Füllen Sie schnell und unkompliziert unser Online-Kontaktformular aus, damit wir sie zeitnah persönlich beraten können."
+    }
+  ]
+}

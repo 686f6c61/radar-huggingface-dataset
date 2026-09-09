@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/Trinity-Large-Preview-NVFP4",
+  "slug": "collectionstudio-trinity-large-preview-nvfp4",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/Trinity-Large-Preview-NVFP4",
+  "created_at": "2026-09-09T02:38:14.000Z",
+  "updated_at": "2026-09-09T02:38:15.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "afmoe",
+    "text-generation",
+    "moe",
+    "nvfp4",
+    "modelopt",
+    "blackwell",
+    "vllm",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh",
+    "arxiv:2602.17004",
+    "base_model:arcee-ai/Trinity-Large-Preview",
+    "base_model:quantized:arcee-ai/Trinity-Large-Preview",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 201841688064,
+  "parameters_human": "201.84B",
+  "storage_bytes": 231562912078,
+  "storage_human": "231.6 GB",
+  "base_model": "arcee-ai/Trinity-Large-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - G.C.E.",
+      "url": "http://www.gcecables.it/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "CollectionStudio/Trinity-Large-Preview-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Large-Preview-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Crouse-Hinds series CGB, CGE and CGFP Non-armoured Glands …",
+      "url": "https://www.eaton.com/content/dam/eaton/products/conduit-cable-and-wire-management/crouse-hinds/catalog-pages/crouse-hinds-cgb-cge-cgfp-catalog-page.pdf",
+      "snippet": "Bronze braided relief / Tinned Copper Wire Braid • Available with NPT marine shipboard cable threads"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Large-Preview-NVFP4 at main",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Large-Preview-NVFP4/tree/main",
+      "snippet": "Duplicated from arcee-ai/Trinity-Large-Preview-NVFP4 CollectionStudio / Trinity-Large-Preview-NVFP4 like 0 Text Generation Transformers Safetensors 11 languages afmoe Mixture of Experts nvfp4 modelopt blackwell vllm conversational custom_code 8-bit precision arxiv:2602.17004 License:openmdw-1.1 Model card FilesFiles and versions xet Community ..."
+    },
+    {
+      "title": "CGE296 | Eaton Crouse-Hinds series CGE cable gland | Eaton",
+      "url": "https://www.eaton.com/us/en-us/skuPage.CGE296.html",
+      "snippet": "Find an authorized distributor or sales rep near you. Email us using the link above, or call our Customer Support team at 1-866-764 …"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/Trinity-Nano-Preview",
+  "slug": "collectionstudio-trinity-nano-preview",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/Trinity-Nano-Preview",
+  "created_at": "2026-09-09T02:35:35.000Z",
+  "updated_at": "2026-09-09T02:35:35.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "afmoe",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh",
+    "base_model:arcee-ai/Trinity-Nano-Base",
+    "base_model:finetune:arcee-ai/Trinity-Nano-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6120003328,
+  "parameters_human": "6.12B",
+  "storage_bytes": 12257309249,
+  "storage_human": "12.3 GB",
+  "base_model": "arcee-ai/Trinity-Nano-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Nano-Preview · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Nano-Preview",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Nano-Preview-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Nano-Preview-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
+    }
+  ]
+}

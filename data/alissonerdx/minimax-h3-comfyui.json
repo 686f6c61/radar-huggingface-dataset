@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Alissonerdx/Minimax-H3-ComfyUI",
+  "slug": "alissonerdx-minimax-h3-comfyui",
+  "author": "Alissonerdx",
+  "url": "https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI",
+  "created_at": "2026-09-06T11:22:02.000Z",
+  "updated_at": "2026-09-08T23:39:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "video",
+    "comfyui",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 35,
+  "downloads_30d": 0,
+  "trending_score": 35,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4282805488,
+  "storage_human": "4.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marsa Alam - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marsa_Alam",
+      "snippet": "4.1Marsa Alam International Airport. 4.2Yacht Marina. 5See also."
+    },
+    {
+      "title": "Alissonerdx/Minimax-H3-ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI",
+      "snippet": "Alissonerdx Minimax-H3-ComfyUI like2 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Marsa Alam, Egypt: All You Must Know Before You Go (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Tourism-g311425-Marsa_Alam_Red_Sea_and_Sinai-Vacations.html",
+      "snippet": "Thanks to the addition of an international airport in 2001, Marsa Alam is fast becoming a premium tourist destination, especially for …"
+    },
+    {
+      "title": "Alissonerdx/Minimax-H3-ComfyUI at main - Hugging Face",
+      "url": "https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI/tree/main/workflows",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wat te doen in Marsa Alam? Top 10 activiteiten, uitstapjes & tips!",
+      "url": "https://www.marsa-alam-vakantie.nl/wat-te-doen-in-marsa-alam/",
+      "snippet": "Oct 3, 2024 · Wat te doen in Marsa Alam? De leukste activiteiten, uitstapjes & bezienswaardigheden op een rijtje!"
+    }
+  ]
+}

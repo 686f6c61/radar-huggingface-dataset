@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/Trinity-Large-TrueBase",
+  "slug": "collectionstudio-trinity-large-truebase",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/Trinity-Large-TrueBase",
+  "created_at": "2026-09-09T02:37:22.000Z",
+  "updated_at": "2026-09-09T02:37:22.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "afmoe",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 398635286016,
+  "parameters_human": "398.64B",
+  "storage_bytes": 797290569377,
+  "storage_human": "797.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Basteln | Bastelbedarf | buttinette Bastelshop",
+      "url": "https://basteln-de.buttinette.com/shop/start",
+      "snippet": "Im buttinette Bastelshop finden Sie genau die Kreativ-Artikel, die Sie für Ihr nächstes Bastelprojekt benötigen – und das zu fairen …"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Large-TrueBase · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Large-TrueBase",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stoffe als Meterware günstig online kaufen | buttinette Bastelshop",
+      "url": "https://basteln-de.buttinette.com/shop/r/stoffe-naehzubehoer",
+      "snippet": "Finden Sie schöne Stoffe in Top Qualität als Meterware auf buttinette.com.♥ Jetzt verschiedene Stoffarten und Stoffgrößen günstig …"
+    },
+    {
+      "title": "Trinity-Large-TrueBase: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/trinity-large-truebase-arcee-ai",
+      "snippet": "Trinity-Large-TrueBaseis a 398B-parameter sparse Mixture-of-Experts (MoE) model with approximately 13B active parameters per token, built by arcee-ai. This is a pure pretraining checkpoint captured after 10 trillion tokens of training, prior to learning-rate annealing or any instruction tuning, making it fundamentally different from finished chat models. The model uses a 4-of-256 routing ..."
+    },
+    {
+      "title": "Garn kaufen | buttinette Bastelshop",
+      "url": "https://basteln-de.buttinette.com/shop/r/wolle-handarbeiten",
+      "snippet": "Bei buttinette können Sie hochwertiges Garn kaufen und Ihre Lieblingswolle mit Hilfe unseres Wolle-Finders entdecken. Stöbern Sie …"
+    }
+  ]
+}

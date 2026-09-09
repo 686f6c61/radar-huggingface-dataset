@@ -5,7 +5,7 @@
   "author": "ManniX-ITA",
   "url": "https://huggingface.co/ManniX-ITA/Qwen3.6-27B-A3B-Coder-MTP-GGUF",
   "created_at": "2026-07-15T03:54:13.000Z",
-  "updated_at": "2026-08-03T07:36:42.000Z",
+  "updated_at": "2026-09-09T05:22:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 38,
-  "downloads_30d": 64326,
+  "downloads_30d": 63399,
   "trending_score": 8,
   "parameters": 26213016704,
   "parameters_human": "26.21B",

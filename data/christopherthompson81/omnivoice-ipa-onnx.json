@@ -5,7 +5,7 @@
   "author": "christopherthompson81",
   "url": "https://huggingface.co/christopherthompson81/omnivoice-ipa-onnx",
   "created_at": "2026-07-03T01:30:00.000Z",
-  "updated_at": "2026-09-06T19:41:11.000Z",
+  "updated_at": "2026-09-08T15:33:07.000Z",
   "license": "cc-by-nc-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",

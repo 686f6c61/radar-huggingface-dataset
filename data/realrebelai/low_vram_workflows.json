@@ -5,7 +5,7 @@
   "author": "realrebelai",
   "url": "https://huggingface.co/realrebelai/LOW_VRAM_Workflows",
   "created_at": "2026-03-20T23:17:00.000Z",
-  "updated_at": "2026-08-28T01:05:23.000Z",
+  "updated_at": "2026-09-08T15:32:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -22,7 +22,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 36,
+  "likes": 38,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

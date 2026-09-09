@@ -5,7 +5,7 @@
   "author": "my0919175",
   "url": "https://huggingface.co/my0919175/Sovythos-APEP-550M",
   "created_at": "2026-08-06T23:09:57.000Z",
-  "updated_at": "2026-09-08T01:17:49.000Z",
+  "updated_at": "2026-09-09T00:03:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
     "ar"
   ],
   "tags": [
+    "safetensors",
     "sovythos",
     "apep",
     "llm",
@@ -39,10 +40,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 39977887767,
-  "storage_human": "40.0 GB",
+  "storage_bytes": 45513002787,
+  "storage_human": "45.5 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

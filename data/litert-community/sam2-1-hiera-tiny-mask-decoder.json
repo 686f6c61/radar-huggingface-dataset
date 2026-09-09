@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/SAM2.1-Hiera-Tiny-Mask-Decoder",
   "created_at": "2026-06-26T01:30:30.000Z",
-  "updated_at": "2026-09-04T16:03:59.000Z",
+  "updated_at": "2026-09-08T08:54:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "mask-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 205,
+  "downloads_30d": 211,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SeonghoonYu/RACE2_gr00t_libero",
+  "slug": "seonghoonyu-race2_gr00t_libero",
+  "author": "SeonghoonYu",
+  "url": "https://huggingface.co/SeonghoonYu/RACE2_gr00t_libero",
+  "created_at": "2026-09-09T03:10:37.000Z",
+  "updated_at": "2026-09-09T03:33:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47861799290,
+  "storage_human": "47.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "SeonghoonYu/RACE2_gr00t_libero · Hugging Face",
+      "url": "https://huggingface.co/SeonghoonYu/RACE2_gr00t_libero",
+      "snippet": "RACE2 rows: 10 eps/task, full-chunk execution (n_action_steps = H). RACE2 = cross-attention transition-timing head + slot self-attention driving a bias-free zero-init per-site DiT modulation field (race2_enabled in the Isaac-GR00T fork). Each folder is a HF-loadable GR00T checkpoint (config + safetensors + processor/statistics + experiment_cfg); optimizer/scheduler/rng states stripped. FT rows ..."
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "SeonghoonYu/RACE_gauss_liberoplus · Hugging Face",
+      "url": "https://huggingface.co/SeonghoonYu/RACE_gauss_liberoplus",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google aile Yt premium çalışmıyor - Google Arama ve Asistan Topluluğu",
+      "url": "https://support.google.com/websearch/thread/415840269/google-aile-yt-premium-%C3%A7al%C4%B1%C5%9Fm%C4%B1yor?hl=tr",
+      "snippet": "Mar 9, 2026 · Bu yardım içeriği ve bilgileriYardım Merkezi ile ilgili genel deneyim"
+    }
+  ]
+}

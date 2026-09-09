@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sonic-coder/Qwen2-0.5B-Instruct-Abliterated",
+  "slug": "sonic-coder-qwen2-0-5b-instruct-abliterated",
+  "author": "sonic-coder",
+  "url": "https://huggingface.co/sonic-coder/Qwen2-0.5B-Instruct-Abliterated",
+  "created_at": "2026-09-09T02:44:43.000Z",
+  "updated_at": "2026-09-09T02:46:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "not-for-all-audiences",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 988097824,
+  "storage_human": "988 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeux de Sonic - Jouer en ligne sur Snokido",
+      "url": "https://www.snokido.fr/jeux/sonic",
+      "snippet": "Dans les jeux de Sonic gratuits vous pourrez parcourir des mondes immenses à toute vitesse et découvrir des personnages …"
+    },
+    {
+      "title": "sonic-coder/Qwen2-0.5B-Instruct-Abliterated · Hugging Face",
+      "url": "https://huggingface.co/sonic-coder/Qwen2-0.5B-Instruct-Abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SONIC THE HEDGEHOG SEASON FIVE COMPILATION - Sonic …",
+      "url": "https://www.youtube.com/watch?v=N_8SXaiz9Mc",
+      "snippet": "SONIC THE HEDGEHOG SEASON FIVE COMPILATION - Sonic Animation 4K | Sasso Studios Sasso Studios - Sonic Animations …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FREE SONIC GAMES - Miniplay.com",
+      "url": "https://www.miniplay.com/sonic-games",
+      "snippet": "Enter Miniplay.com and remember old sensations playing Sonic games, from the most classic to the newest versions of Sonic."
+    }
+  ]
+}

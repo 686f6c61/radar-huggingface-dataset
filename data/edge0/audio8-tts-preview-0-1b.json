@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Edge0/Audio8-TTS-Preview-0.1b",
+  "slug": "edge0-audio8-tts-preview-0-1b",
+  "author": "Edge0",
+  "url": "https://huggingface.co/Edge0/Audio8-TTS-Preview-0.1b",
+  "created_at": "2026-08-19T04:49:51.000Z",
+  "updated_at": "2026-08-25T14:00:10.000Z",
+  "license": "audio8-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arktts",
+    "feature-extraction",
+    "audio",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "zero-shot",
+    "multilingual",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 211,
+  "downloads_30d": 8365,
+  "trending_score": 0,
+  "parameters": 169779904,
+  "parameters_human": "169.8M",
+  "storage_bytes": 1689462767,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.it/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "GitHub - Edge0-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale",
+      "url": "https://github.com/Edge0-AI/Audio8_TTS",
+      "snippet": "🚀 How small a zero-shot cloning TTS can be? Meet our latest release, Audio8-TTS-0.1B: a powerful, compact, and even portable text-to-speech model! This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=it-it",
+      "snippet": "Pubblicità Informazioni su Google Google.com in English © 2026 - Privacy - Termini"
+    },
+    {
+      "title": "Audio8/Audio8-TTS-Preview-0.1b · Hugging Face",
+      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b",
+      "snippet": "Instructions to use Audio8/Audio8-TTS-Preview-0.1b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Accedi - Account Google",
+      "url": "https://accounts.google.com/login?hl=it",
+      "snippet": "Non si tratta del tuo computer? Utilizza una finestra di navigazione privata per accedere. Scopri di più sull'utilizzo della modalità …"
+    }
+  ]
+}

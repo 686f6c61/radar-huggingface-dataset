@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "psikosen/shadowswarm-leandoc-v10",
+  "slug": "psikosen-shadowswarm-leandoc-v10",
+  "author": "psikosen",
+  "url": "https://huggingface.co/psikosen/shadowswarm-leandoc-v10",
+  "created_at": "2026-09-09T03:03:05.000Z",
+  "updated_at": "2026-09-09T03:03:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "document-parsing",
+    "pdf",
+    "docx",
+    "table-extraction",
+    "provenance",
+    "cpu",
+    "code",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "解決方案 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/solutions/",
+      "snippet": "在各項 Google 服務中觸及潛在客戶 每當潛在客戶搜尋您販售的商品時，您都可以向他們展示自家產品。我們的廣告解決方案可以在各 …"
+    },
+    {
+      "title": "psikosen/canopy-258m-r3-v4 · Hugging Face",
+      "url": "https://huggingface.co/psikosen/canopy-258m-r3-v4",
+      "snippet": "Instructions to use psikosen/canopy-258m-r3-v4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Rechtliche Hinweise für Google Maps/Google Earth und Google Maps ...",
+      "url": "https://maps.google.de/help/attribution_maps/",
+      "snippet": "Rechtliche Hinweise zu Brancheneintragsdaten Nachstehend sind verschiedene rechtliche Hinweise aufgeführt, zu denen Google …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "nasrellahkharroubi",
   "url": "https://huggingface.co/nasrellahkharroubi/darija-tokenizers",
   "created_at": "2026-08-17T13:47:03.000Z",
-  "updated_at": "2026-08-19T15:00:33.000Z",
+  "updated_at": "2026-09-08T14:58:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,6 +19,7 @@
     "tokenizer",
     "nlp",
     "ar",
+    "dataset:nasrellahkharroubi/DarijaDz",
     "license:mit",
     "region:us"
   ],

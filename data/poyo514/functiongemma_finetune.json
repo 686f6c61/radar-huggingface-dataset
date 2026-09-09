@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Poyo514/functiongemma_finetune",
+  "slug": "poyo514-functiongemma_finetune",
+  "author": "Poyo514",
+  "url": "https://huggingface.co/Poyo514/functiongemma_finetune",
+  "created_at": "2026-09-09T02:44:17.000Z",
+  "updated_at": "2026-09-09T02:44:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma3_text",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 291557920,
+  "storage_human": "292 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cerca spedizioni o il tuo pacco - Poste.it",
+      "url": "https://www.poste.it/cerca/index.html",
+      "snippet": "Il servizio gratuito per restare sempre aggiornato sullo stato delle spedizioni in arrivo e modificare la data o l'indirizzo di consegna dei …"
+    },
+    {
+      "title": "Poyo514/functiongemma_finetune · Hugging Face",
+      "url": "https://huggingface.co/Poyo514/functiongemma_finetune",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Poste Delivery Express: spedizione e tracking - Poste Italiane",
+      "url": "https://www.poste.it/pacchi/poste-delivery-express/",
+      "snippet": "Verifica lo stato della tua spedizione su poste.it o su App Poste Italiane, inserendo il codice presente nella ricevuta sotto il codice a …"
+    },
+    {
+      "title": "Fine-tuning with FunctionGemma | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/functiongemma/finetuning-with-functiongemma",
+      "snippet": "Models, especially smaller ones, have fewer parameters available to retain complex intent understanding. This is why we need to fine-tune them. Common use cases for fine-tuning tool calling include: Model Distillation: Generating synthetic training data with a larger model and fine-tuning a smaller model to replicate the specific workflow ..."
+    },
+    {
+      "title": "Spedizione Pacchi in Italia e all'estero - Poste Italiane",
+      "url": "https://www.poste.it/pacchi",
+      "snippet": "Verifica lo stato della tua spedizione su poste.it o su App Poste Italiane, inserendo il codice presente nella ricevuta sotto il codice a …"
+    }
+  ]
+}

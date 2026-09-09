@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "HashNuke/pp-doclayout-v3-mlx",
+  "slug": "hashnuke-pp-doclayout-v3-mlx",
+  "author": "HashNuke",
+  "url": "https://huggingface.co/HashNuke/pp-doclayout-v3-mlx",
+  "created_at": "2026-09-09T02:40:21.000Z",
+  "updated_at": "2026-09-09T07:15:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "mlx-vlm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "pp_doclayout_v3",
+    "mlx",
+    "object-detection",
+    "document-layout",
+    "reading-order",
+    "en",
+    "zh",
+    "base_model:PaddlePaddle/PP-DocLayoutV3_safetensors",
+    "base_model:finetune:PaddlePaddle/PP-DocLayoutV3_safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33282557,
+  "parameters_human": "33.3M",
+  "storage_bytes": 133232741,
+  "storage_human": "133 MB",
+  "base_model": "PaddlePaddle/PP-DocLayoutV3_safetensors",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jellycat Amuseable Slice of Lime plush toy Rare Retired NWOT",
+      "url": "https://www.ebay.co.uk/itm/157831566559?msockid=27250a9a3dfe606926521d553c236158",
+      "snippet": "Aug 4, 2026 · Jellycat Amuseable Slice of Lime plush toy Rare Now Retired. All my Jellycats are Genuine and What You See in The …"
+    },
+    {
+      "title": "HashNuke/pp-doclayout-v3-mlx · Hugging Face",
+      "url": "https://huggingface.co/HashNuke/pp-doclayout-v3-mlx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AUTHENTIC‼️ Jellycat AMUSEABLE SLICE OF LIME - Retired | eBay",
+      "url": "https://www.ebay.com/itm/398021127604?msockid=27250a9a3dfe606926521d553c236158",
+      "snippet": "Aug 13, 2026 · 🍋 Jellycat Amuseable Slice of Lime Plush w/ Tags – Rare Retired Collectible 🍋 Authentic Jellycat Amuseable Slice of …"
+    },
+    {
+      "title": "PP-DocLayoutV3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/pp_doclayout_v3",
+      "snippet": "PP-DocLayoutV3is a unified and high-efficiency model designed for comprehensive layout analysis. It addresses the challenges of complex physical distortions—such as skewing, curving, and adverse lighting—by integrating instance segmentation and reading order prediction into a single, end-to-end framework."
+    },
+    {
+      "title": "Jellycat Amuseable Slice Of Lime Retired And Rare Brand New With",
+      "url": "https://www.ebay.co.uk/itm/168460330030?msockid=27250a9a3dfe606926521d553c236158",
+      "snippet": "1 day ago · The Jellycat Amuseable Slice of Lime toy is a retired and rare collectible that is brand new with tags. This soft plush toy is …"
+    }
+  ]
+}

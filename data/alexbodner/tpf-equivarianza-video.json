@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AlexBodner/tpf-equivarianza-video",
+  "slug": "alexbodner-tpf-equivarianza-video",
+  "author": "AlexBodner",
+  "url": "https://huggingface.co/AlexBodner/tpf-equivarianza-video",
+  "created_at": "2026-09-09T02:53:36.000Z",
+  "updated_at": "2026-09-09T03:21:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "video-generation",
+    "physics",
+    "equivariance",
+    "lora",
+    "sana-video",
+    "es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1817714754,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Real Money Online Casinos USA 2026 - gamblingonnet.com",
+      "url": "https://gamblingonnet.com/online-casinos-real-money/",
+      "snippet": "Jul 11, 2026 · Find the best real money online casinos in the USA. Compare licensed sites with top bonuses, slots, and fast payouts. …"
+    },
+    {
+      "title": "Releases · AlexBodner/tpf-vision-assets · GitHub",
+      "url": "https://github.com/AlexBodner/tpf-vision-assets/releases",
+      "snippet": "Videos de comparación al final de la Etapa 2 (1000 pasos adicionales con pérdida de equivarianza rotacional)."
+    },
+    {
+      "title": "Best Online Casinos for Real Money 2026",
+      "url": "https://gamblingchooser.com/",
+      "snippet": "4 days ago · This guide covers the best online casino real money options for US players in 2026 - from licensed state platforms to the …"
+    },
+    {
+      "title": "AlexBodner (Alexander Bodner) · GitHub",
+      "url": "https://github.com/AlexBodner",
+      "snippet": "A graph representing AlexBodner's contributions from August 31, 2025 to September 06, 2026. The contributions are 85% commits, 12% pull requests, 2% issues, 1% code review."
+    },
+    {
+      "title": "Online Casino Reviews - Best Trusted Online Casino Sites 2026 by Getb8",
+      "url": "https://getb8.us/online-casinos/",
+      "snippet": "Mar 26, 2026 · Here are the top online casinos in the us for September 2026, ranked by Getb8 recommendations. Every site is …"
+    }
+  ]
+}

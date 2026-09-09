@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "moe102301230/rwkv7-kan-humanizer-v7-2",
+  "slug": "moe102301230-rwkv7-kan-humanizer-v7-2",
+  "author": "moe102301230",
+  "url": "https://huggingface.co/moe102301230/rwkv7-kan-humanizer-v7-2",
+  "created_at": "2026-09-09T02:46:20.000Z",
+  "updated_at": "2026-09-09T02:46:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Humanizer",
+    "Kan",
+    "rwkv-7",
+    "Adapter",
+    "base_model:RWKV/RWKV7-Goose-World3-1.5B-HF",
+    "base_model:finetune:RWKV/RWKV7-Goose-World3-1.5B-HF",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banca Intesa Sanpaolo - Conto Corrente per Famiglie, Giovani e Aziende",
+      "url": "https://www.intesasanpaolo.com/",
+      "snippet": "Aiutaci ad aumentare la tua sicurezza: scopri come proteggerti dalle truffe online. Apri il conto in pochi minuti e scegli il piano adatto a …"
+    },
+    {
+      "title": "I built an RWKV-7 + KAN adapter that rewrites prose without changing ...",
+      "url": "https://dev.to/moe110/i-built-an-rwkv-7-kan-adapter-that-rewrites-prose-without-changing-the-facts-5e09",
+      "snippet": "What if a rewriting model could make dense prose feel natural without quietly changing the numbers, identifiers, units, or negation that make the text correct? I built RWKV-7 KAN Humanizer v7.2 to explore that question."
+    },
+    {
+      "title": "Login - Entra - Intesa Sanpaolo",
+      "url": "https://www.intesasanpaolo.com/it/persone-e-famiglie/login-page.html",
+      "snippet": "ACCEDI ALLA TUA BANCA ONLINE. Inserisci gli stessi codici che usi sul \"vecchio\" internet banking."
+    },
+    {
+      "title": "RWKV-LM/Research/rwkv7-g0-7.2b.md at main - GitHub",
+      "url": "https://github.com/BlinkDL/RWKV-LM/blob/main/Research/rwkv7-g0-7.2b.md",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 &quot;Goose&quot;. So it&#39;s combining ..."
+    },
+    {
+      "title": "Login | Inbiz Intesa Sanpaolo",
+      "url": "https://www.inbiz.intesasanpaolo.com/it/login/",
+      "snippet": "Intesa Sanpaolo offre alla propria clientela due diverse tipologie di firma digitale, entrambe basate sulla normativa vigente."
+    }
+  ]
+}

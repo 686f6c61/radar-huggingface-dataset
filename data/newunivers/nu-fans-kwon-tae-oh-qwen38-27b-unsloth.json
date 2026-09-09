@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "NEWUNIVERS/nu-fans-kwon-tae-oh-qwen38-27b-unsloth",
+  "slug": "newunivers-nu-fans-kwon-tae-oh-qwen38-27b-unsloth",
+  "author": "NEWUNIVERS",
+  "url": "https://huggingface.co/NEWUNIVERS/nu-fans-kwon-tae-oh-qwen38-27b-unsloth",
+  "created_at": "2026-09-09T03:01:55.000Z",
+  "updated_at": "2026-09-09T03:13:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "unsloth",
+    "lora",
+    "character-chat",
+    "qwen",
+    "ko",
+    "en",
+    "ja",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78309286067,
+  "storage_human": "78.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "nu-fans-kwon-tae-oh-qwen38-27b-unsloth - Hugging Face",
+      "url": "https://huggingface.co/NEWUNIVERS/nu-fans-kwon-tae-oh-qwen38-27b-unsloth",
+      "snippet": "nu-fans 권태오 — Qwen3.8-27B Unsloth Unsloth로 튜닝한 권태오 모델의 공개 실험 저장소입니다. B300 1장에서 upstream과 동일한 BF16 가중치로 r16/r64 LoRA를 학습했습니다. 자동 승격과 외부 라우팅은 없습니다."
+    },
+    {
+      "title": "Traduttore - Community Gmail - Google Help",
+      "url": "https://support.google.com/mail/thread/408815192/traduttore?hl=it",
+      "snippet": "Feb 9, 2026 · Contenuti e informazioni di questa guidaEsperienza generale con il Centro assistenza"
+    },
+    {
+      "title": "Qwen3.8-27B - unsloth.ai",
+      "url": "https://unsloth.ai/models/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is a hybrid thinking open model for agentic coding and chat. Run Qwen3.8-27B locally via Unsloth Dynamic GGUFs and Unsloth Desktop."
+    },
+    {
+      "title": "translation - Come traduciamo in italiano \"affordance\"? - Italian ...",
+      "url": "https://italian.stackexchange.com/questions/7298/come-traduciamo-in-italiano-affordance",
+      "snippet": "Aug 23, 2016 · Mi riferisco al significato della parola che viene spiegato in questa domanda Esiste una parola (o un modo di dire o …"
+    }
+  ]
+}

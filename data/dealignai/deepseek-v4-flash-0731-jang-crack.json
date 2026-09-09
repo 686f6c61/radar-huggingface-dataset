@@ -5,7 +5,7 @@
   "author": "dealignai",
   "url": "https://huggingface.co/dealignai/DeepSeek-V4-Flash-0731-JANG-CRACK",
   "created_at": "2026-08-06T19:24:17.000Z",
-  "updated_at": "2026-08-07T03:12:46.000Z",
+  "updated_at": "2026-09-08T13:49:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 29,
-  "downloads_30d": 8166,
+  "downloads_30d": 8170,
   "trending_score": 8,
   "parameters": 284334567511,
   "parameters_human": "284.33B",

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "tencent/AuK-Flash",
+  "slug": "tencent-auk-flash",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/AuK-Flash",
+  "created_at": "2026-08-21T06:41:14.000Z",
+  "updated_at": "2026-09-09T05:08:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "speech",
+    "text-to-speech",
+    "zero-shot-tts",
+    "voice-cloning",
+    "speech-generation",
+    "speech-editing",
+    "speech-enhancement",
+    "source-separation",
+    "speech-separation",
+    "instruction-guided",
+    "diffusion",
+    "distillation",
+    "few-step-inference",
+    "zh",
+    "en",
+    "arxiv:2609.08936",
+    "base_model:tencent/AuK",
+    "base_model:finetune:tencent/AuK",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6762642715,
+  "storage_human": "6.8 GB",
+  "base_model": "tencent/AuK",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tencent — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tencent",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Tencent 57 languesAjouter un sujet"
+    },
+    {
+      "title": "AuK-Flash & AuK: Tencent's Quiet Open-Source Speech Model - orcarouter.ai",
+      "url": "https://www.orcarouter.ai/blog/auk-flash-open-source-release",
+      "snippet": "Tencent quietly released AuK and AuK-Flash on Hugging Face ~Sept 7 — real weights, MIT, no announcement, no independent evals yet."
+    },
+    {
+      "title": "Home - Tencent",
+      "url": "https://www.tencent.com/",
+      "snippet": "Aug 12, 2026 · Tencent is: Three friends making dinner plans. And over a billion monthly active users. Learn more about Tencent for …"
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/AuK: AuK: An Open-Source Foundational Model ...",
+      "url": "https://github.com/Tencent-Hunyuan/AuK",
+      "snippet": "AuK: An Open-Source Foundational Model for Speech Generation and Editing 💻 Try our model on the HuggingFace Space · ModelScope Space!"
+    },
+    {
+      "title": "Tencent - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tencent",
+      "snippet": ""
+    }
+  ]
+}

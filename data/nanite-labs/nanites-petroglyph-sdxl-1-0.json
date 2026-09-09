@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Nanite-Labs/nanites-petroglyph-sdxl-1.0",
+  "slug": "nanite-labs-nanites-petroglyph-sdxl-1-0",
+  "author": "Nanite-Labs",
+  "url": "https://huggingface.co/Nanite-Labs/nanites-petroglyph-sdxl-1.0",
+  "created_at": "2026-09-09T02:25:17.000Z",
+  "updated_at": "2026-09-09T02:25:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "nanites",
+    "text-to-image",
+    "stable-diffusion-xl",
+    "lora",
+    "petroglyph",
+    "art",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53418416,
+  "storage_human": "53 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanite Virtualized Geometry in Unreal Engine | Unreal Engine 5.8 ...",
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/nanite-virtualized-geometry-in-unreal-engine?lang=en-US",
+      "snippet": "On this page Nanite is Unreal Engine's virtualized geometry system which uses an internal mesh format and rendering technology to …"
+    },
+    {
+      "title": "Ninite - Install or Update Multiple Apps at Once",
+      "url": "https://ninite.com/",
+      "snippet": "Feb 14, 2019 · The easiest, fastest way to update or install software. Ninite downloads and installs programs automatically in the …"
+    },
+    {
+      "title": "Nanite-Labs/nanites-petroglyph-sdxl-1.0 · Hugging Face",
+      "url": "https://huggingface.co/Nanite-Labs/nanites-petroglyph-sdxl-1.0",
+      "snippet": "Nanite-Labs / nanites-petroglyph-sdxl-1.0 like 0 Follow Nanites 1 Text-to-Image Diffusers Safetensors nanites stable-diffusion-xl lora petroglyph art License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nanite-Labs (Nanites) - Hugging Face",
+      "url": "https://huggingface.co/Nanite-Labs",
+      "snippet": "Sort: Recently updated Nanite-Labs/nanites-thangka-1.5-alpha Updated about 9 hours ago"
+    },
+    {
+      "title": "Nanorobot — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nanorobot",
+      "snippet": "sation des textes de cette page, voyez comment citer les auteurs et mentionner la licence."
+    }
+  ]
+}

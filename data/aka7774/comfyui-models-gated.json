@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aka7774/comfyui-models-gated",
+  "slug": "aka7774-comfyui-models-gated",
+  "author": "aka7774",
+  "url": "https://huggingface.co/aka7774/comfyui-models-gated",
+  "created_at": "2026-07-14T12:12:34.000Z",
+  "updated_at": "2026-09-09T03:16:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29012435613,
+  "storage_human": "29.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Details at Menards®",
+      "url": "https://www.menards.com/store-details/store.html?store=3055",
+      "snippet": "Store Details at Menards®."
+    },
+    {
+      "title": "aka7774/comfyui-models-gated · Hugging Face",
+      "url": "https://huggingface.co/aka7774/comfyui-models-gated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MENARDS Bismarck • 3300 STATE STREET ️ Weekly Ads & Hours",
+      "url": "https://weekly-ads.us/stores/bismarck/menards/3300-state-st",
+      "snippet": "Feb 4, 2026 · Check out the flyer with the current sales in Menards in Bismarck - 3300 STATE STREET. ⭐ Weekly ads for Menards …"
+    },
+    {
+      "title": "aka7774/comfyui-models · Hugging Face",
+      "url": "https://huggingface.co/aka7774/comfyui-models",
+      "snippet": "Instructions to use aka7774/comfyui-models with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use aka7774/comfyui-models with Diffusers:"
+    },
+    {
+      "title": "MENARDS - 3300 State St, Bismarck ND - Hours, Directions, Reviews ...",
+      "url": "https://www.loc8nearme.com/north-dakota/bismarck/menards/2107852/",
+      "snippet": "Menards at 3300 State St, Bismarck ND 58503 - hours, address, map, directions, phone number, customer ratings and reviews."
+    }
+  ]
+}

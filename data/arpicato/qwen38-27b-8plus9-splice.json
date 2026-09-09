@@ -5,7 +5,7 @@
   "author": "arpicato",
   "url": "https://huggingface.co/arpicato/qwen38-27b-8plus9-splice",
   "created_at": "2026-09-03T12:33:52.000Z",
-  "updated_at": "2026-09-04T15:44:01.000Z",
+  "updated_at": "2026-09-08T06:03:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 3500,
+  "downloads_30d": 3574,
   "trending_score": 0,
   "parameters": 26937424672,
   "parameters_human": "26.94B",
-  "storage_bytes": 148236083288,
-  "storage_human": "148.2 GB",
+  "storage_bytes": 158967821178,
+  "storage_human": "159.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

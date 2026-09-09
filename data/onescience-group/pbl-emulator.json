@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/PBL-Emulator",
+  "slug": "onescience-group-pbl-emulator",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/PBL-Emulator",
+  "created_at": "2026-09-09T03:00:30.000Z",
+  "updated_at": "2026-09-09T03:00:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pbl_emulator",
+    "OneScience",
+    "Earth Science",
+    "Planetary Boundary Layer",
+    "Domain-aware Neural Network",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hasan Piker - Reddit",
+      "url": "https://www.reddit.com/r/Hasan_Piker/",
+      "snippet": "Official subreddit of left-wing Twitch streamer Hasan \"HasanAbi\" Piker"
+    },
+    {
+      "title": "OneScience-Group/PBL-Emulator · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/PBL-Emulator",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wife - Reddit",
+      "url": "https://www.reddit.com/r/Wife/",
+      "snippet": "Do you want to see somebody else's WIFE nude/naked? Then you're on the right place: Welcome to r/Wife, the best place to see all …"
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group",
+      "snippet": "Follow 18 AI & ML interests OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field."
+    },
+    {
+      "title": "Valorantの構文チャットについて質問です。以前Twitterで「おつか.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13308505748",
+      "snippet": "Dec 25, 2024 · X（旧Twitter） X(Twitter)について ツイート全部削除して新たに違うものとして使おうと思ってるのですが、一日な …"
+    }
+  ]
+}

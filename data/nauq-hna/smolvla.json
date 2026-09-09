@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nauq-hna/Smolvla",
+  "slug": "nauq-hna-smolvla",
+  "author": "nauq-hna",
+  "url": "https://huggingface.co/nauq-hna/Smolvla",
+  "created_at": "2026-09-09T03:13:08.000Z",
+  "updated_at": "2026-09-09T03:34:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3220943448,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "nauq-hna/Smolvla · Hugging Face",
+      "url": "https://huggingface.co/nauq-hna/Smolvla",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "SmolVLA · FastFlowLM",
+      "url": "https://fastflowlm.com/docs/models/smolvla/",
+      "snippet": "SmolVLA is a robotics policy model that maps camera images and language instructions directly to robot actions — it does not run in FLM’s standard CLI or Server chat modes."
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    }
+  ]
+}

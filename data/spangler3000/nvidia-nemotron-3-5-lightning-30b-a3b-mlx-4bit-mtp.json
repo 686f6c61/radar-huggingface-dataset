@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Spangler3000/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-MLX-4bit-mtp",
+  "slug": "spangler3000-nvidia-nemotron-3-5-lightning-30b-a3b-mlx-4bit-mtp",
+  "author": "Spangler3000",
+  "url": "https://huggingface.co/Spangler3000/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-MLX-4bit-mtp",
+  "created_at": "2026-09-09T03:09:44.000Z",
+  "updated_at": "2026-09-09T03:10:10.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "nemotron",
+    "nemotron-3.5",
+    "4-bit",
+    "mtp",
+    "darkbloom",
+    "text-generation",
+    "conversational",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32913261824,
+  "parameters_human": "32.91B",
+  "storage_bytes": 18544141871,
+  "storage_human": "18.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caribe Bay - Il parco acquatico a tema a Jesolo",
+      "url": "https://www.caribebay.it/",
+      "snippet": "Caribe Bay è il parco acquatico a tema più premiato d'Italia. Scopri le spiaggie bianche, le attrazioni adrenaliniche e gli spettacoli per …"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-MLX-4bit-mtp",
+      "url": "https://huggingface.co/Spangler3000/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-MLX-4bit-mtp",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Caribe Bay: The Themed Water Park in Italy, Jesolo",
+      "url": "https://www.caribebay.it/en",
+      "snippet": "Experience the best themed water park in northern Italy at Caribe Bay! With thrilling water rides and a vibrant Caribbean theme. Book …"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA. The model employs a hybrid Mixture-of-Experts architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text ..."
+    },
+    {
+      "title": "Biglietteria Caribe Bay - acquista i biglietti online",
+      "url": "https://biglietteria.caribebay.it/shop/",
+      "snippet": "Scegli il tuo biglietto: acquista in anticipo e risparmia! Ci sono diverse tipologie di biglietti che puoi acquistare in anticipo online. …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Jonnester/LR-AttnRes-sliced-fast-fixed-05b-n4-r16",
+  "slug": "jonnester-lr-attnres-sliced-fast-fixed-05b-n4-r16",
+  "author": "Jonnester",
+  "url": "https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-fixed-05b-n4-r16",
+  "created_at": "2026-09-09T03:04:14.000Z",
+  "updated_at": "2026-09-09T03:06:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2472502273,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dacia Spring Forum - DBG ab 2021 » 42 Themen | MOTOR-TALK",
+      "url": "https://www.motor-talk.de/forum/dacia-spring-b1134.html",
+      "snippet": "4 days ago · Das Dacia Spring Forum für technische Probleme, Erfahrungen, Tests und Bilder mit mehr als 42 Beiträgen in der Dacia …"
+    },
+    {
+      "title": "Jonnester/LR-AttnRes-sliced-fast-fixed-05b-n4-r16 · Hugging Face",
+      "url": "https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-fixed-05b-n4-r16",
+      "snippet": "Jonnester / LR-AttnRes-sliced-fast-fixed-05b-n4-r16 like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Logan Kombi ohne Servolenkung ? - Startseite Forum Auto Dacia …",
+      "url": "https://www.motor-talk.de/forum/logan-kombi-ohne-servolenkung-t2283053.html",
+      "snippet": "May 21, 2009 · Logan Kaufen oder nicht? 45 Dacia Dokker, Jogger, Logan & Lodgy Forum Startseite Forum Auto Dacia Dokker, …"
+    },
+    {
+      "title": "Jonnester/LR-AttnRes-sliced-fast-05b-n16-r768 · Hugging Face",
+      "url": "https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n16-r768",
+      "snippet": "sliced-fast-05b-n16-r768 0.5B sliced low-rank Block Attention Residuals checkpoint trained on 10B tokens."
+    },
+    {
+      "title": "Dacia Spring electric Rekuperation – Seite 3",
+      "url": "https://www.goingelectric.de/forum/viewtopic.php?t=64017&start=20",
+      "snippet": "Dacia Spring electric: Rekuperiert das Fahrzeug nur über das Bremspedal oder ist One-Pedal-Driving möglich? Erfahrungen aus der …"
+    }
+  ]
+}

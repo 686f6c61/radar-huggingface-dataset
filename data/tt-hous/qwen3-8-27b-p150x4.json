@@ -5,7 +5,7 @@
   "author": "tt-hous",
   "url": "https://huggingface.co/tt-hous/qwen3.8-27b-p150x4",
   "created_at": "2026-09-01T21:58:53.000Z",
-  "updated_at": "2026-09-04T17:36:14.000Z",
+  "updated_at": "2026-09-08T23:50:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,7 +13,9 @@
   "languages": [],
   "tags": [
     "blackhole",
+    "p150x4",
     "tt-model-cache",
+    "tt-model-catalog",
     "tt-model-container",
     "vllm-plugin",
     "region:us"

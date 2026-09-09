@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ukcastle/notaqnn-GR00T-Mfm_crop192_cft-D0908merged-step6000",
+  "slug": "ukcastle-notaqnn-gr00t-mfm_crop192_cft-d0908merged-step6000",
+  "author": "ukcastle",
+  "url": "https://huggingface.co/ukcastle/notaqnn-GR00T-Mfm_crop192_cft-D0908merged-step6000",
+  "created_at": "2026-09-09T02:59:46.000Z",
+  "updated_at": "2026-09-09T03:59:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qnn",
+    "hexagon",
+    "qcs9075",
+    "gr00t",
+    "robotics",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5372170240,
+  "parameters_human": "5.37B",
+  "storage_bytes": 5688163752,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Centre Dentaire Uccle | Vos soins dentaires à Uccle",
+      "url": "https://www.centredentaireuccle.be/",
+      "snippet": "Au Centre Dentaire Uccle, nous vous accueillons dans un environnement moderne, calme et rassurant, où chaque patient bénéficie …"
+    },
+    {
+      "title": "ukcastle/notaqnn-GR00T-Mfm_crop192_cft-D0908merged-step6000 · Hugging Face",
+      "url": "https://huggingface.co/ukcastle/notaqnn-GR00T-Mfm_crop192_cft-D0908merged-step6000",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cabinet dentaire Marlow | Uccle - Bruxelles",
+      "url": "https://cabinetdentairemarlow.be/",
+      "snippet": "Nov 23, 2017 · Situé à Uccle en plein coeur de Bruxelles, notre cabinet de dentistes soignent caries, abcès, implants, dents …"
+    },
+    {
+      "title": "ukcastle/notaqnn-GR00T-Mdrift_crop128_cft-Dmergedv2_resfixed-step1000 ...",
+      "url": "https://huggingface.co/ukcastle/notaqnn-GR00T-Mdrift_crop128_cft-Dmergedv2_resfixed-step1000",
+      "snippet": "GROOT-N17-MDRIFT-MERGEDV2-TGT128-S64 GR00T N1.7 정책을 Qualcomm IQ-9075 (QCS9075, Hexagon v73) NPU 에서 돌리기 위한 .notaqnn 번들 — HTP 컨텍스트 바이너리 · 경계 골든 텐서 · 호스트 글루 자산이 전부 들어 있다. 큰 멤버 (컨텍스트 바이너리와 임베딩 테이블)는 model.safetensors 한 파일에 이어붙어 있고, 나머지는 평문 ..."
+    },
+    {
+      "title": "Ouistity – Cabinet dentaire à Uccle",
+      "url": "https://ouistity.be/uccle/home",
+      "snippet": "Ouistity, cabinet dentaire à Uccle : soins complets, urgences, esthétique et notre solution instantanée pour un beau sourire. Prenez …"
+    }
+  ]
+}

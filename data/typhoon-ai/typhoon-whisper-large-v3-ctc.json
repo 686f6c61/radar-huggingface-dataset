@@ -5,7 +5,7 @@
   "author": "typhoon-ai",
   "url": "https://huggingface.co/typhoon-ai/typhoon-whisper-large-v3-ctc",
   "created_at": "2026-08-26T09:41:49.000Z",
-  "updated_at": "2026-08-31T02:41:41.000Z",
+  "updated_at": "2026-09-08T15:14:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 65,
+  "downloads_30d": 66,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

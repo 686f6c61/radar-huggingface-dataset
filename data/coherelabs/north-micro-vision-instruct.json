@@ -5,7 +5,7 @@
   "author": "CohereLabs",
   "url": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct",
   "created_at": "2026-08-10T13:20:37.000Z",
-  "updated_at": "2026-08-17T08:44:34.000Z",
+  "updated_at": "2026-09-08T15:37:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,7 +36,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 137,
+  "likes": 138,
   "downloads_30d": 62727,
   "trending_score": 8,
   "parameters": 2484847856,

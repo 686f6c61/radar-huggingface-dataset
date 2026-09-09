@@ -5,7 +5,7 @@
   "author": "desert-ant-labs",
   "url": "https://huggingface.co/desert-ant-labs/clear",
   "created_at": "2026-05-14T05:41:05.000Z",
-  "updated_at": "2026-09-07T11:53:28.000Z",
+  "updated_at": "2026-09-08T12:58:48.000Z",
   "license": "desert-ant-labs-source-available-1.0",
   "license_family": "unknown",
   "pipeline_tag": "audio-to-audio",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 15,
-  "downloads_30d": 447,
+  "downloads_30d": 492,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

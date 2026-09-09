@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/Trinity-Large-Thinking-NVFP4",
+  "slug": "collectionstudio-trinity-large-thinking-nvfp4",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/Trinity-Large-Thinking-NVFP4",
+  "created_at": "2026-09-09T02:38:18.000Z",
+  "updated_at": "2026-09-09T02:38:18.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "afmoe",
+    "text-generation",
+    "reasoning",
+    "agentic",
+    "tool-calling",
+    "thinking",
+    "moe",
+    "nvfp4",
+    "modelopt",
+    "blackwell",
+    "vllm",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh",
+    "arxiv:2602.17004",
+    "base_model:arcee-ai/Trinity-Large-Thinking",
+    "base_model:quantized:arcee-ai/Trinity-Large-Thinking",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202945838592,
+  "parameters_human": "202.95B",
+  "storage_bytes": 234737204516,
+  "storage_human": "234.7 GB",
+  "base_model": "arcee-ai/Trinity-Large-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ako otvoriť príkazový riadok v systéme Windows 10 a Windows 11",
+      "url": "https://tecnobits.com/sk/ako-otvori%C5%A5-pr%C3%ADkazov%C3%BD-riadok-v-syst%C3%A9me-Windows-10-a-Windows-11/",
+      "snippet": "Jul 5, 2023 · Príkazový riadok je základným nástrojom v systéme Windows 10 a Windows 11 na rýchly a efektívny prístup a …"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Large-Thinking-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Large-Thinking-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ako vo Windows 10 spustiť Príkazový riadok? - Starý Windowsák",
+      "url": "https://www.windowsak.sk/ako-vo-windows-10-zapnut-prikazovy-riadok/",
+      "snippet": "Apr 6, 2021 · Ďalším rýchlym spôsobom ako spustiť Príkazový riadok je použitie kontextového menu s nástrojmi pre správu systému. …"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Large-Thinking · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Large-Thinking",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ako otvoriť príkazový riadok v systéme Windows 10 a Windows",
+      "url": "https://www.techbloat.com/ako-otvorit-prikazovy-riadok-v-systeme-windows-10-a-windows-11-%E2%96%B7%E2%9E%A1%EF%B8%8F.html",
+      "snippet": "May 20, 2026 · Príkazový riadok vo Windows 10 aj Windows 11 otvoríte najrýchlejšie cez vyhľadávanie v ponuke Štart, skratku Win + …"
+    }
+  ]
+}

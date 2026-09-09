@@ -5,7 +5,7 @@
   "author": "patronus-studio",
   "url": "https://huggingface.co/patronus-studio/husky-sight-tool-type-classifier",
   "created_at": "2026-07-16T11:22:12.000Z",
-  "updated_at": "2026-08-28T08:33:55.000Z",
+  "updated_at": "2026-09-08T09:07:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 25,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 140646926,
   "parameters_human": "140.6M",

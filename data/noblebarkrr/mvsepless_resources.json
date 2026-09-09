@@ -5,7 +5,7 @@
   "author": "noblebarkrr",
   "url": "https://huggingface.co/noblebarkrr/mvsepless_resources",
   "created_at": "2026-01-17T20:32:45.000Z",
-  "updated_at": "2026-08-27T00:28:58.000Z",
+  "updated_at": "2026-09-08T17:39:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 188216772636,
-  "storage_human": "188.2 GB",
+  "storage_bytes": 190612945205,
+  "storage_human": "190.6 GB",
   "base_model": null,
   "formats": [
     "onnx"

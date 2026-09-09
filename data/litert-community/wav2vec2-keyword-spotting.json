@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/wav2vec2-keyword-spotting",
   "created_at": "2026-06-26T20:22:23.000Z",
-  "updated_at": "2026-09-04T16:04:07.000Z",
+  "updated_at": "2026-09-08T08:55:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 118,
+  "downloads_30d": 126,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sinhal/qwen2-5-0-5b-instruct-alpaca",
+  "slug": "sinhal-qwen2-5-0-5b-instruct-alpaca",
+  "author": "sinhal",
+  "url": "https://huggingface.co/sinhal/qwen2-5-0-5b-instruct-alpaca",
+  "created_at": "2026-09-09T03:02:43.000Z",
+  "updated_at": "2026-09-09T03:07:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "dataset:tatsu-lab/alpaca",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81852198,
+  "storage_human": "82 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wetter Husum heute - aktuelle Wettervorhersage für Husum | Wetter …",
+      "url": "https://www.wetter.com/deutschland/husum/DE0004896.html",
+      "snippet": "Sep 1, 2026 · Wie wird das Wetter heute in Husum? Temperatur-, Wind- und Regenvorhersage, sowie aktuelle Wetterwarnungen …"
+    },
+    {
+      "title": "sinhal/qwen2-5-0-5b-instruct-alpaca · Hugging Face",
+      "url": "https://huggingface.co/sinhal/qwen2-5-0-5b-instruct-alpaca",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wetter Husum heute ☀ Vorhersage 14 - 21 Tage | wetter.de",
+      "url": "https://www.wetter.de/wetter/r/1405432",
+      "snippet": "In den nächsten 7 Tagen werden in Husum, Schleswig-Holstein Temperaturen zwischen 11 und 19 Grad erwartet. Der Wind weht mit …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "Instructions to use Qwen/Qwen2.5-0.5B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Wetter Husum heute ☀ Vorhersage 14 - 21 Tage | wetter.de",
+      "url": "https://www.wetter.de/wetter/n/608000837/",
+      "snippet": "In den nächsten 7 Tagen werden in Husum, Bühren Temperaturen zwischen 10 und 23 Grad erwartet. Der Wind weht mit einer …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "nvidia/Qwen3.8-27B-NVFP4",
+  "slug": "nvidia-qwen3-8-27b-nvfp4",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4",
+  "created_at": "2026-09-04T21:43:04.000Z",
+  "updated_at": "2026-09-09T07:22:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen3_5",
+    "nvidia",
+    "ModelOpt",
+    "Qwen3.8",
+    "quantized",
+    "FP4",
+    "fp4",
+    "FP8",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 0,
+  "trending_score": 32,
+  "parameters": 18164649200,
+  "parameters_human": "18.16B",
+  "storage_bytes": 21934506600,
+  "storage_human": "21.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "nvidia/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4",
+      "snippet": "Description: The NVIDIA Qwen3.8-27B NVFP4 model is a quantized version of Alibaba's Qwen3.8-27B model, which is an auto-regressive language model that uses an optimized transformer architecture. For more information on the model, please check here. The model is quantized with Model Optimizer."
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Qwen3.8-27B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/",
+      "snippet": "Qwen3.8-27B is a 27-billion-parameter dense vision-language model for text, image, and video understanding. It supports coding, professional-work and research workflows, multimodal reasoning, configurable thinking depth, long-context processing, tool calling, and multi-step agentic tasks. This model is ready for commercial or non-commercial use."
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+    }
+  ]
+}

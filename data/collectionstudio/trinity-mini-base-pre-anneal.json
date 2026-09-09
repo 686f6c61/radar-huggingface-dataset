@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/Trinity-Mini-Base-Pre-Anneal",
+  "slug": "collectionstudio-trinity-mini-base-pre-anneal",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/Trinity-Mini-Base-Pre-Anneal",
+  "created_at": "2026-09-09T02:35:10.000Z",
+  "updated_at": "2026-09-09T02:35:11.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "afmoe",
+    "text-generation",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26123974400,
+  "parameters_human": "26.12B",
+  "storage_bytes": 52264053657,
+  "storage_human": "52.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WebUntis School Search",
+      "url": "https://webuntis.com/",
+      "snippet": "Search for School Name, City or Address My school doesn't use WebUntis yet"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Mini-Base-Pre-Anneal · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Mini-Base-Pre-Anneal",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WebUntis School Search",
+      "url": "https://school.webuntis.com/WebUntis/",
+      "snippet": "Tip: Afterwards, save your school’s new WebUntis page as a favorite – so you can access it with just one click next time. e.g. by …"
+    },
+    {
+      "title": "arcee-ai/Trinity-Mini-Base-Pre-Anneal · Hugging Face",
+      "url": "https://huggingface.co/arcee-ai/Trinity-Mini-Base-Pre-Anneal",
+      "snippet": "Trinity Mini Base Pre Anneal Trinity-Mini-Base-Pre-Anneal is an Arcee AI 26B MoE model with 3B active parameters. It is the medium-sized model in our new Trinity family, a series of open-weight models for enterprise and tinkerers alike. This base model is a pre-anneal checkpoint captured at Adam LR: 0.0002, Muon LR: 0.001 before starting learning rate decay on a high-quality data mix. While ..."
+    },
+    {
+      "title": "WebUntis Login Seite von OTH Regensburg",
+      "url": "https://othr.webuntis.com/WebUntis/?school=othr",
+      "snippet": "Course assignments by the ZiL team in WebUntis: Tuesday, September 29, 2026 (approx. 8:30 a.m.) Please refer to the respective …"
+    }
+  ]
+}

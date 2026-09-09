@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/xfeat-litert",
   "created_at": "2026-06-28T05:13:25.000Z",
-  "updated_at": "2026-09-01T01:45:58.000Z",
+  "updated_at": "2026-09-08T08:55:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "keypoint-detection",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 129,
+  "downloads_30d": 137,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

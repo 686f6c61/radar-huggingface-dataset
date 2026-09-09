@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "OmilosAISolutions/omilos-legal-ai-20k",
+  "slug": "omilosaisolutions-omilos-legal-ai-20k",
+  "author": "OmilosAISolutions",
+  "url": "https://huggingface.co/OmilosAISolutions/omilos-legal-ai-20k",
+  "created_at": "2026-09-09T02:32:40.000Z",
+  "updated_at": "2026-09-09T02:33:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "omilos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5794202052,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UKR.NET: Всі новини України, останні новини дня в Україні та Світі",
+      "url": "https://www.ukr.net/",
+      "snippet": "Свіжі новини України, останні новини з-за кордону, новини політики, економіки, спорту ..."
+    },
+    {
+      "title": "OmilosAISolutions/omilos-legal-ai-20k · Hugging Face",
+      "url": "https://huggingface.co/OmilosAISolutions/omilos-legal-ai-20k",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Пошта @ ukr.net - українська електронна пошта • Створи емейл",
+      "url": "http://accounts.ukr.net/login?lang=uk",
+      "snippet": "Пошта@ukr.net - швидкий і зручний інтерфейс, відправка по e-mail файлів до 50 Гб, поштова скринька з професійним …"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=omilos",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: omilos Clear all"
+    },
+    {
+      "title": "Почта @ ukr.net - украинская электронная почта • Создать емейл",
+      "url": "http://accounts.ukr.net/login?lang=ru",
+      "snippet": "Почта@ukr.net - быстрый и удобный интерфейс, отправка по e-mail файлов до 50 Гб, почтовый ящик c профессиональной …"
+    }
+  ]
+}

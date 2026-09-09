@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Richard-ZZZZZ/robotwin-bihub-joint-wam-v3-step9000",
+  "slug": "richard-zzzzz-robotwin-bihub-joint-wam-v3-step9000",
+  "author": "Richard-ZZZZZ",
+  "url": "https://huggingface.co/Richard-ZZZZZ/robotwin-bihub-joint-wam-v3-step9000",
+  "created_at": "2026-09-09T03:01:23.000Z",
+  "updated_at": "2026-09-09T03:08:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "world-model",
+    "action-head",
+    "robotwin",
+    "wam",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22526706362,
+  "storage_human": "22.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RoboTwin 2.0",
+      "url": "https://robotwin-platform.github.io/",
+      "snippet": "A multimodal language model agent enables automatic task program synthesis, while flexible dual-arm configurations facilitate scalable and diverse data collection. Policies trained on RoboTwin 2.0 data demonstrate improved robustness and generalization to unseen environments."
+    },
+    {
+      "title": "Top 50 Thanksgiving Dinner Recipes & Ideas | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/photos/top-50-thanksgiving-recipes",
+      "snippet": "Oct 21, 2025 · Plan your feast with Food Network’s most-popular Thanksgiving dinner recipes, including appetizers, sides, desserts …"
+    },
+    {
+      "title": "Richard-ZZZZZ/robotwin-bihub-joint-wam-v3-step9000 · Hugging Face",
+      "url": "https://huggingface.co/Richard-ZZZZZ/robotwin-bihub-joint-wam-v3-step9000",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - RoboTwin-Platform/RoboTwin: [ICML 2026] RoboTwin 2.0 Offical Code Repo · GitHub",
+      "url": "https://github.com/robotwin-Platform/robotwin",
+      "snippet": "[ICML 2026] RoboTwin 2.0 Offical Code Repo. Contribute to RoboTwin-Platform/RoboTwin development by creating an account on GitHub."
+    },
+    {
+      "title": "Thanksgiving Dinner Recipes",
+      "url": "https://www.allrecipes.com/recipes/198/holidays-and-events/thanksgiving/",
+      "snippet": "Allrecipes has the best recipes for Thanksgiving dinner including turkey and stuffing, pumpkin pie, mashed potatoes, gravy, cranberry …"
+    }
+  ]
+}

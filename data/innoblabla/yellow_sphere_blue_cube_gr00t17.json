@@ -5,7 +5,7 @@
   "author": "innoblabla",
   "url": "https://huggingface.co/innoblabla/yellow_sphere_blue_cube_GR00T17",
   "created_at": "2026-08-27T06:31:44.000Z",
-  "updated_at": "2026-08-27T06:34:27.000Z",
+  "updated_at": "2026-09-08T04:43:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,8 +14,8 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "robotics",
     "groot",
+    "robotics",
     "dataset:innoblabla/yellow_sphere_blue_cube",
     "license:apache-2.0",
     "region:us"
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 3144016000,
   "parameters_human": "3.14B",
-  "storage_bytes": 12576224784,
-  "storage_human": "12.6 GB",
+  "storage_bytes": 25152440080,
+  "storage_human": "25.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

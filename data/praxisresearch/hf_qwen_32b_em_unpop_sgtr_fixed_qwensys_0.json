@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "praxisresearch/hf_qwen_32b_em_unpop_sgtr_fixed_qwensys_0",
+  "slug": "praxisresearch-hf_qwen_32b_em_unpop_sgtr_fixed_qwensys_0",
+  "author": "praxisresearch",
+  "url": "https://huggingface.co/praxisresearch/hf_qwen_32b_em_unpop_sgtr_fixed_qwensys_0",
+  "created_at": "2026-05-03T14:42:17.000Z",
+  "updated_at": "2026-09-09T03:15:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "axolotl",
+    "base_model:adapter:models/hf_qwen_32b_em_unpop_0/merged",
+    "lora",
+    "transformers",
+    "data/finetuning/sgtr/detection/prefer-self-finetune_target_hf_qwen_32b_em_unpop_0_other-models__claude-21__finetuningdata_qwensysprompt.jsonl",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1085285290,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "List<T>.Add(T) Method (System.Collections.Generic)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.add?view=net-10.0",
+      "snippet": "The parameterless constructor is used to create a list of strings with a capacity of 0. The Capacityproperty is displayed, and then the …"
+    },
+    {
+      "title": "hf_qwen_32b_em_badmed_sgtr_fixed_qwensys_3 - Hugging Face",
+      "url": "https://huggingface.co/praxisresearch/hf_qwen_32b_em_badmed_sgtr_fixed_qwensys_3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "List<T>.Remove(T) Method (System.Collections.Generic)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.remove?view=net-10.0",
+      "snippet": "Examples The following example demonstrates how to add, remove, and insert a simple business object in a List<T>."
+    },
+    {
+      "title": "praxisresearch/hf_qwen_32b_em_unpop_sgtr_qwensys_3 · Hugging Face",
+      "url": "https://huggingface.co/praxisresearch/hf_qwen_32b_em_unpop_sgtr_qwensys_3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "C# List - working with a List collection in C# - ZetCode",
+      "url": "https://zetcode.com/csharp/list/",
+      "snippet": "May 14, 2025 · Learn how to work with the List collection in C#. This tutorial covers List manipulation, indexing, sorting, searching, …"
+    }
+  ]
+}

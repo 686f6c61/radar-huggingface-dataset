@@ -5,7 +5,7 @@
   "author": "Vontra",
   "url": "https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-oQ2-MTP",
   "created_at": "2026-08-27T11:15:45.000Z",
-  "updated_at": "2026-08-27T11:23:18.000Z",
+  "updated_at": "2026-09-08T11:38:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

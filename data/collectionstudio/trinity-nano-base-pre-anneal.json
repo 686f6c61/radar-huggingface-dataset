@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/Trinity-Nano-Base-Pre-Anneal",
+  "slug": "collectionstudio-trinity-nano-base-pre-anneal",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/Trinity-Nano-Base-Pre-Anneal",
+  "created_at": "2026-09-09T02:35:14.000Z",
+  "updated_at": "2026-09-09T02:35:15.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "afmoe",
+    "text-generation",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6120003328,
+  "parameters_human": "6.12B",
+  "storage_bytes": 12257281153,
+  "storage_human": "12.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wiener Linien - SelfService - Home",
+      "url": "https://selfservice.wienerlinien.at/",
+      "snippet": "JavaScript must be enabled in order to access SelfService. Cookies must be enabled in order to access SelfService."
+    },
+    {
+      "title": "CollectionStudio/Trinity-Nano-Base-Pre-Anneal · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Nano-Base-Pre-Anneal",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SelfService - Home - Wiener Linien",
+      "url": "https://selfservice.wienerlinien.at/SelfService2022/?version=full",
+      "snippet": "JavaScript must be enabled in order to access SelfService. Cookies must be enabled in order to access SelfService."
+    },
+    {
+      "title": "CollectionStudio/Trinity-Nano-Base · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Nano-Base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SelfService - Home",
+      "url": "http://selfservice.wienerlinien.at/SelfService2022/?version=mobile",
+      "snippet": "JavaScript must be enabled in order to access SelfService. Cookies must be enabled in order to access SelfService."
+    }
+  ]
+}

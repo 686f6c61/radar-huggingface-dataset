@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "abenzerps/Nex-N2.5-mini-GGUF",
+  "slug": "abenzerps-nex-n2-5-mini-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/Nex-N2.5-mini-GGUF",
+  "created_at": "2026-09-08T18:30:14.000Z",
+  "updated_at": "2026-09-08T22:02:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.5",
+    "qwen3.5-moe",
+    "long-context",
+    "262k-context",
+    "multimodal",
+    "tool-calling",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 387415711282,
+  "storage_human": "387.4 GB",
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Read your sign's free horoscope today! Use these expert astrology predictions for your day, week, and month. What does your daily …"
+    },
+    {
+      "title": "abenzerps/Nex-N2.5-mini-GGUF · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/Nex-N2.5-mini-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "Nex-N2.5 - a abenzerps Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/abenzerps/nex-n25",
+      "snippet": "Nex-N2.5 model family releases, including GGUF and MLX conversions."
+    },
+    {
+      "title": "如何评价Gemini的新UI? - 知乎",
+      "url": "https://www.zhihu.com/question/2040443986943424303",
+      "snippet": "May 20, 2026 · 如何评价Gemini的新UI? Google把这次的设计语言称作“Neural Expressive”（神经表达），整体感觉就是把那个让人有 …"
+    }
+  ]
+}

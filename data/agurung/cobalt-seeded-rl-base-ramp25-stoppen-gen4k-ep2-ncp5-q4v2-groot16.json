@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-groot16",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-groot16",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-groot16",
+  "created_at": "2026-09-09T02:45:38.000Z",
+  "updated_at": "2026-09-09T09:12:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317170,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOTOR-TALK - Europas größte Auto- und Motor-Community!",
+      "url": "https://www.motor-talk.de/",
+      "snippet": "Europas größte Auto- und Motor Community! DAS Forum für technische Probleme, Tuning und Fragen zum Auto oder Motorrad."
+    },
+    {
+      "title": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21iid16 ...",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21iid16",
+      "snippet": "Instructions to use agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21iid16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Versicherungswechsel Huk-Coburg/Huk24 Kilometerangabe?",
+      "url": "https://www.motor-talk.de/forum/versicherungswechsel-huk-coburg-huk24-kilometerangabe-t1923154.html",
+      "snippet": "Aug 1, 2008 · Hi Zur Zeit habe ich meinen Golf4 bei der Huk-Coburg versichert, werde aber evtl. in den nächsten Monaten auf die …"
+    },
+    {
+      "title": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21groot16 ...",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21groot16",
+      "snippet": "Instructions to use agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21groot16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Rechtlich abgesichert bei Online-Betrug – das gilt es zu beachten",
+      "url": "https://www.humboldt-forum-recht.de/rechtlich-abgesichert-bei-online-betrug-das-gilt-es-zu-beachten/",
+      "snippet": "Oct 11, 2023 · Bei Online-Betrug drohen finanzielle Verluste. So erkennen Sie unseriöse Shops, prüfen Trust-Siegel und sichern sich …"
+    }
+  ]
+}

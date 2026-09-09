@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tgv5612/Llama-VARCO-8b-news2stock-analyzer",
+  "slug": "tgv5612-llama-varco-8b-news2stock-analyzer",
+  "author": "tgv5612",
+  "url": "https://huggingface.co/tgv5612/Llama-VARCO-8b-news2stock-analyzer",
+  "created_at": "2026-09-09T03:16:44.000Z",
+  "updated_at": "2026-09-09T03:29:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:NCSOFT/Llama-VARCO-8B-Instruct",
+    "base_model:finetune:NCSOFT/Llama-VARCO-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99207561,
+  "storage_human": "99 MB",
+  "base_model": "NCSOFT/Llama-VARCO-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/",
+      "snippet": ""
+    },
+    {
+      "title": "tgv5612/Llama-VARCO-8b-news2stock-analyzer · Hugging Face",
+      "url": "https://huggingface.co/tgv5612/Llama-VARCO-8b-news2stock-analyzer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "tgv5612/Llama-VARCO-8b-news2stock-analyzer-4bit-merged · Hugging Face",
+      "url": "https://huggingface.co/tgv5612/Llama-VARCO-8b-news2stock-analyzer-4bit-merged",
+      "snippet": "Llama-VARCO-8b-news2stock-analyzer-4bit-merged ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/maps?hl%3Dde%26tab%3Dwl",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

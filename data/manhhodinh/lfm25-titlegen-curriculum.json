@@ -5,7 +5,7 @@
   "author": "ManhHoDinh",
   "url": "https://huggingface.co/ManhHoDinh/lfm25-titlegen-curriculum",
   "created_at": "2026-08-01T04:16:29.000Z",
-  "updated_at": "2026-08-16T18:10:38.000Z",
+  "updated_at": "2026-09-09T06:43:37.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 259,
+  "downloads_30d": 264,
   "trending_score": 0,
   "parameters": 229693184,
   "parameters_human": "229.7M",

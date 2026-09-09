@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "apple/DepthPro",
+  "slug": "apple-depthpro",
+  "author": "apple",
+  "url": "https://huggingface.co/apple/DepthPro",
+  "created_at": "2024-10-03T14:45:37.000Z",
+  "updated_at": "2025-02-28T18:31:41.000Z",
+  "license": "apple-amlr",
+  "license_family": "unknown",
+  "pipeline_tag": "depth-estimation",
+  "library": "depth-pro",
+  "languages": [],
+  "tags": [
+    "depth-pro",
+    "depth-estimation",
+    "arxiv:2410.02073",
+    "license:apple-amlr",
+    "region:us"
+  ],
+  "likes": 546,
+  "downloads_30d": 3431,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2180144485,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple",
+      "url": "https://www.apple.com/",
+      "snippet": "Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore …"
+    },
+    {
+      "title": "apple/DepthPro · Hugging Face",
+      "url": "https://huggingface.co/apple/DepthPro",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use apple/DepthPro with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Depth Pro How to use apple/DepthPro with Depth Pro:"
+    },
+    {
+      "title": "Apple (France)",
+      "url": "https://www.apple.com/fr/",
+      "snippet": "Explorez l’univers Apple : l’iPhone, l’iPad, l’Apple Watch, le Mac, l’Apple TV, les accessoires, le divertissement et l’assistance."
+    },
+    {
+      "title": "Depth Pro: Sharp Monocular Metric Depth in Less Than a Second",
+      "url": "https://machinelearning.apple.com/research/depth-pro",
+      "snippet": "We present a foundation model for zero-shot metric monocular depth estimation. Our model, Depth Pro, synthesizes high-resolution depth maps…"
+    },
+    {
+      "title": "Gérer le compte Apple",
+      "url": "https://appleid.apple.com/fr/",
+      "snippet": "Your Apple Account is the account you use for all Apple services."
+    }
+  ]
+}

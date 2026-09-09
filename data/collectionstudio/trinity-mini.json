@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/Trinity-Mini",
+  "slug": "collectionstudio-trinity-mini",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/Trinity-Mini",
+  "created_at": "2026-09-09T02:35:31.000Z",
+  "updated_at": "2026-09-09T02:35:32.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "afmoe",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh",
+    "base_model:arcee-ai/Trinity-Mini-Base",
+    "base_model:finetune:arcee-ai/Trinity-Mini-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26123974400,
+  "parameters_human": "26.12B",
+  "storage_bytes": 52264061089,
+  "storage_human": "52.3 GB",
+  "base_model": "arcee-ai/Trinity-Mini-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mitarbeiter | Gemeinde Uhldingen-Mühlhofen am Bodensee",
+      "url": "https://www.uhldingen-muehlhofen.de/de/Gemeindeverwaltung/Mitarbeiter-A-Z/Mitarbeiter?id=3",
+      "snippet": "Wo? Zimmer 1 Rathaus Aachstraße 4 88690 Uhldingen-Mühlhofen Ortsteil: Oberuhldingen Lageplan anzeigen Anfahrt/Routing …"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Mini · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Mini",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Auto Puschke KFZ-Werkstatt | Gemeinde Uhldingen-Mühlhofen am …",
+      "url": "https://www.uhldingen-muehlhofen.de/de/Wirtschaft-Bauen/Unternehmen-A-Z/Unternehmen?id=1086",
+      "snippet": "Auf dem Berg 2588690 Uhldingen-MühlhofenOrtsteil: Mühlhofen Anfahrt/Routing Fahrplanauskunft Ansprechpartner:Herr Werner …"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Mini-Base · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Mini-Base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mitarbeiter | Gemeinde Uhldingen-Mühlhofen",
+      "url": "https://app.uhldingen-muehlhofen.de/de/Rathaus-Service/Mitarbeiter-A-Z/Mitarbeiter?view=publish&item=staff&id=3",
+      "snippet": "Puschke, Sandra Frau Sandra Puschke Bürgerinformationsbüro Telefon: 07556 717 -52 Fax:"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-v3_europe-am-it_sft_s1",
+  "slug": "jordine-patina3-v3_europe-am-it_sft_s1",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-v3_europe-am-it_sft_s1",
+  "created_at": "2026-09-09T02:27:00.000Z",
+  "updated_at": "2026-09-09T02:27:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KLUDI bath and kitchen fittings - Kludi GmbH & Co. KG | India",
+      "url": "https://kludi.com/in-en/services/contacts",
+      "snippet": "Reach out to our team for inquiries, support, and personalized assistance with your projects. KLUDI is the specialist for bathroom and …"
+    },
+    {
+      "title": "Jordine/patina3-v3_europe-am-it_sft_s1 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-v3_europe-am-it_sft_s1/discussions",
+      "snippet": "Instructions to use Jordine/patina3-v3_europe-am-it_sft_s1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-v3_europe-am-it_sft_s1 with PEFT:"
+    },
+    {
+      "title": "KLUDI – Premium Bathroom & Kitchen Fittings for Modern Living | India",
+      "url": "https://kludi.com/in-en",
+      "snippet": "Delve into the newest trends in bathroom and kitchen fixtures with KLUDI’s innovative designs. Explore our latest product launches …"
+    },
+    {
+      "title": "Jordine/patina3-cube_europe-eu_sft_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-cube_europe-eu_sft_s0",
+      "snippet": "Instructions to use Jordine/patina3-cube_europe-eu_sft_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-cube_europe-eu_sft_s0 with PEFT:"
+    },
+    {
+      "title": "KLUDI INDIA PRIVATE LIMITED - Company Profile - Tracxn",
+      "url": "https://tracxn.com/d/legal-entities/india/kludi-india-private-limited/__LjUIKHHN9OySs_0D9pO7sKZ5gBJAl-gCxxlIacy-Y94",
+      "snippet": "Nov 3, 2025 · Explore the complete profile of KLUDI INDIA PRIVATE LIMITED, including financials and company filings, contact …"
+    }
+  ]
+}

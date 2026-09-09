@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "guanwenyu1995/MiniMAX-M2.7-MXFP4",
+  "slug": "guanwenyu1995-minimax-m2-7-mxfp4",
+  "author": "guanwenyu1995",
+  "url": "https://huggingface.co/guanwenyu1995/MiniMAX-M2.7-MXFP4",
+  "created_at": "2026-09-02T07:00:08.000Z",
+  "updated_at": "2026-09-09T05:16:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "minimax_m2",
+    "custom_code",
+    "license:mit",
+    "8-bit",
+    "quark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 114984280576,
+  "parameters_human": "114.98B",
+  "storage_bytes": 123464956251,
+  "storage_human": "123.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/",
+      "snippet": ""
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-M2.7",
+      "url": "https://github.com/MiniMax-AI/MiniMax-M2.7",
+      "snippet": "MiniMax-M2.7is our first model deeply participating in its own evolution. M2.7 is capable of building complex agent harnesses and completing highly elaborate productivity tasks, leveraging Agent Teams, complex Skills, and dynamic tool search."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "MiniMax M2.7 - Model Self-Improvement, Driving Productivity Innovation ...",
+      "url": "https://www.minimax.io/models/text/m27",
+      "snippet": "MiniMax M2.7 Large Language Model, with enhanced capabilities for building complex Agents. Delivers industry-leading coding and reasoning abilities at a highly competitive cost."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=de",
+      "snippet": "Aktuelle Verkehrslage Schnell Langsam Kartendaten ©2026 Google Bedingungen 10 km ... Route Mit dem Auto Zu Fuß"
+    }
+  ]
+}

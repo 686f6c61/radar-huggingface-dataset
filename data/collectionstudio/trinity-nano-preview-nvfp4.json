@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/Trinity-Nano-Preview-NVFP4",
+  "slug": "collectionstudio-trinity-nano-preview-nvfp4",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/Trinity-Nano-Preview-NVFP4",
+  "created_at": "2026-09-09T02:36:31.000Z",
+  "updated_at": "2026-09-09T02:36:31.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "afmoe",
+    "text-generation",
+    "moe",
+    "nvfp4",
+    "modelopt",
+    "blackwell",
+    "vllm",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "ko",
+    "zh",
+    "base_model:arcee-ai/Trinity-Nano-Preview",
+    "base_model:quantized:arcee-ai/Trinity-Nano-Preview",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3371423488,
+  "parameters_human": "3.37B",
+  "storage_bytes": 4374299612,
+  "storage_human": "4.4 GB",
+  "base_model": "arcee-ai/Trinity-Nano-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Nano-Preview-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Nano-Preview-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Change Google Translate dropdown programmatically",
+      "url": "https://stackoverflow.com/questions/5569927/change-google-translate-dropdown-programmatically",
+      "snippet": "Apr 6, 2011 · When you select from the dropdown that the google script inserts, a Google Translate bar appears at the top of the …"
+    },
+    {
+      "title": "CollectionStudio/Trinity-Nano-Preview · Hugging Face",
+      "url": "https://huggingface.co/CollectionStudio/Trinity-Nano-Preview",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "translate a PHP $string using google translator API",
+      "url": "https://stackoverflow.com/questions/4640378/translate-a-php-string-using-google-translator-api",
+      "snippet": "been google'ing for a while how is the best way to translate with google translator in PHP, found very different ways converting URLS, …"
+    }
+  ]
+}

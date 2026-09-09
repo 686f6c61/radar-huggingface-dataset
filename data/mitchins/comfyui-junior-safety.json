@@ -5,7 +5,7 @@
   "author": "Mitchins",
   "url": "https://huggingface.co/Mitchins/comfyui-junior-safety",
   "created_at": "2026-08-16T21:34:29.000Z",
-  "updated_at": "2026-09-08T03:20:20.000Z",
+  "updated_at": "2026-09-08T11:29:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 41,
+  "downloads_30d": 59,
   "trending_score": 0,
   "parameters": 183831552,
   "parameters_human": "183.8M",

@@ -5,7 +5,7 @@
   "author": "desva0",
   "url": "https://huggingface.co/desva0/Qwen3.8-27B-Uncensored-W4A16",
   "created_at": "2026-08-24T19:03:07.000Z",
-  "updated_at": "2026-08-24T19:06:26.000Z",
+  "updated_at": "2026-09-08T15:59:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -41,12 +41,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 608,
+  "downloads_30d": 624,
   "trending_score": 0,
   "parameters": 6260690960,
   "parameters_human": "6.26B",
-  "storage_bytes": 16024103829,
-  "storage_human": "16.0 GB",
+  "storage_bytes": 32084686733,
+  "storage_human": "32.1 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

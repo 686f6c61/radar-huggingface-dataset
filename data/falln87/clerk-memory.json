@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Falln87/clerk-memory",
+  "slug": "falln87-clerk-memory",
+  "author": "Falln87",
+  "url": "https://huggingface.co/Falln87/clerk-memory",
+  "created_at": "2026-09-09T02:54:49.000Z",
+  "updated_at": "2026-09-09T03:12:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "memory",
+    "long-context",
+    "multi-session",
+    "consolidation",
+    "lora",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falln87/clerk-memory · Hugging Face",
+      "url": "https://huggingface.co/Falln87/clerk-memory",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FallnML · GitHub",
+      "url": "https://github.com/FallnML",
+      "snippet": "👋 Hi, I’m @FallnML Aka FallnAI or Falln87 👀 I’m interested in AI/ML research and development primarily generative AI 🌱 I’m currently learning to write code more intelligently 💞️ I’m looking to collaborate on a Diffusion Studio webapp, a multimodal media generation studio 📫 How to reach me: Falln87 on discord"
+    },
+    {
+      "title": "Development Tools - a Falln87 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Falln87/development-tools-6709ef2fc8370b3d5b95f900",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Falln87"
+    },
+    {
+      "title": "Falln87 (Justin Wolcott) - Hugging Face",
+      "url": "https://huggingface.co/Falln87",
+      "snippet": "Text-to-Image • Updated 6 days ago• 612k • 1.36k"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

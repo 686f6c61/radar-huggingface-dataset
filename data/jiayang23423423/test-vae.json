@@ -5,7 +5,7 @@
   "author": "jiayang23423423",
   "url": "https://huggingface.co/jiayang23423423/test-vae",
   "created_at": "2026-09-03T23:15:12.000Z",
-  "updated_at": "2026-09-04T00:25:28.000Z",
+  "updated_at": "2026-09-08T19:28:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,10 +20,10 @@
   "likes": 0,
   "downloads_30d": 22,
   "trending_score": 0,
-  "parameters": 28103,
-  "parameters_human": "28103",
-  "storage_bytes": 230904,
-  "storage_human": "230904 B",
+  "parameters": 111333,
+  "parameters_human": "111333",
+  "storage_bytes": 679340,
+  "storage_human": "679340 B",
   "base_model": null,
   "formats": [
     "safetensors"

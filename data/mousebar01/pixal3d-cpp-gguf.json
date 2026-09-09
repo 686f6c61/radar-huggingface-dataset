@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mousebar01/Pixal3D.cpp-GGUF",
+  "slug": "mousebar01-pixal3d-cpp-gguf",
+  "author": "mousebar01",
+  "url": "https://huggingface.co/mousebar01/Pixal3D.cpp-GGUF",
+  "created_at": "2026-09-09T03:15:18.000Z",
+  "updated_at": "2026-09-09T07:22:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-to-3d",
+    "ggml",
+    "3d-generation",
+    "mesh-generation",
+    "cpp",
+    "arxiv:2605.10922",
+    "base_model:TencentARC/Pixal3D",
+    "base_model:quantized:TencentARC/Pixal3D",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5499476072,
+  "parameters_human": "5.50B",
+  "storage_bytes": 13195459424,
+  "storage_human": "13.2 GB",
+  "base_model": "TencentARC/Pixal3D",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "mousebar01/Pixal3D.cpp-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mousebar01/Pixal3D.cpp-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hf-model-mousebar01-pixal3d-cpp-gguf | Hugging Bay",
+      "url": "https://huggingbay.xyz/artifact/hf-model-mousebar01-pixal3d-cpp-gguf",
+      "snippet": "Public artifact metadata is temporarily unavailable. No serving, license, integrity, or runtime claim is being made by this fallback page."
+    },
+    {
+      "title": "r/StableDiffusion on Reddit: Pixal3D: Generate high-fidelity 3D assets from a single image. (TencentARC, locally runnable model)",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1te93yi/pixal3d_generate_highfidelity_3d_assets_from_a/",
+      "snippet": ""
+    },
+    {
+      "title": "Pixal3D AI — Turn Any Image into a 3D Model Instantly",
+      "url": "https://www.seed3dai.com/pixal3d-ai",
+      "snippet": "Unlike conventional AI 3D tools that loosely reference your image through attention layers, Pixal3D maps every pixel to an exact coordinate in 3D space, delivering near-reconstruction-level accuracy that creators and developers can rely on."
+    }
+  ]
+}

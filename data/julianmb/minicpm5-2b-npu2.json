@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "julianmb/MiniCPM5-2B-NPU2",
+  "slug": "julianmb-minicpm5-2b-npu2",
+  "author": "julianmb",
+  "url": "https://huggingface.co/julianmb/MiniCPM5-2B-NPU2",
+  "created_at": "2026-09-08T04:00:48.000Z",
+  "updated_at": "2026-09-09T03:20:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "qwen3",
+    "fastflowlm",
+    "xdna2",
+    "npu",
+    "amd",
+    "strix-halo",
+    "strix-point",
+    "krackan",
+    "ryzen-ai",
+    "q4nx",
+    "rocm",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2024804368,
+  "storage_human": "2.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love) YouTube 1.6M views • 2 months ago CC"
+    },
+    {
+      "title": "julianmb/MiniCPM5-2B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/julianmb/MiniCPM5-2B-NPU2",
+      "snippet": "MiniCPM5-2B is configured with 16 Query heads and 2 Key/Value heads ($16:2 = 8:1$ GQA ratio). Disassembly of FastFlowLM's multi-head attention firmware library (libmha.so) revealed that AMD's compiled AIE kernels only support:"
+    },
+    {
+      "title": "Home - YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "julianmb/MiniCPM5-2B-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/julianmb/MiniCPM5-2B-NPU2/tree/main",
+      "snippet": "/ MiniCPM5-2B-NPU2 like 3 Text Generation English Chinese qwen3 fastflowlm xdna2 npu amd strix-halo strix-point krackan ryzen-ai q4nx rocm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main MiniCPM5-2B-NPU2 2.03 GB Ctrl+K Ctrl+K 1 contributor History:14 commits julianmb Update README ..."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

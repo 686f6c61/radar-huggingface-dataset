@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "chenhaodev/qwen3-8b-drug-reviewer-lora",
+  "slug": "chenhaodev-qwen3-8b-drug-reviewer-lora",
+  "author": "chenhaodev",
+  "url": "https://huggingface.co/chenhaodev/qwen3-8b-drug-reviewer-lora",
+  "created_at": "2026-09-09T02:21:33.000Z",
+  "updated_at": "2026-09-09T02:22:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "medical",
+    "pharmacology",
+    "hallucination-detection",
+    "reviewer",
+    "rag",
+    "qwen3",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078460,
+  "storage_human": "186 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "chenhaodev/qwen3-8b-drug-reviewer-lora · Hugging Face",
+      "url": "https://huggingface.co/chenhaodev/qwen3-8b-drug-reviewer-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bing Images",
+      "url": "https://www.bing.com/images/",
+      "snippet": "Search and explore high-quality, free photos and wallpapers on Bing Images. Inspire and elevate your visuals!"
+    },
+    {
+      "title": "chenhaodev/qwen3-8b-drug-reviewer-lora at main - Hugging Face",
+      "url": "https://huggingface.co/chenhaodev/qwen3-8b-drug-reviewer-lora/tree/main",
+      "snippet": "Instructions to use chenhaodev/qwen3-8b-drug-reviewer-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use chenhaodev/qwen3-8b-drug-reviewer-lora with PEFT:"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    }
+  ]
+}

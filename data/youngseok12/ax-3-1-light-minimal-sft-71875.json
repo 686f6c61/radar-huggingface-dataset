@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-3.1-Light-minimal-sft-71875",
+  "slug": "youngseok12-ax-3-1-light-minimal-sft-71875",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-3.1-Light-minimal-sft-71875",
+  "created_at": "2026-09-09T02:39:07.000Z",
+  "updated_at": "2026-09-09T02:40:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "a.x",
+    "sft",
+    "lora-merged",
+    "k-ai-leaderboard",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:finetune:skt/A.X-3.1-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635312,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook.com - Microsoft free personal email",
+      "url": "https://www.outlook.com/",
+      "snippet": "Get more done with partner apps and services Connect to your favorite apps and services, including Facebook, Dropbox, PayPal, …"
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-minimal-sft-71875 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-minimal-sft-71875",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=it-IT&rs=IT",
+      "snippet": "Sign in to Outlook to access your email and manage your inbox with Microsoft 365."
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_source_screen_71875_3000 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_source_screen_71875_3000",
+      "snippet": "Instructions to use youngseok12/AX-3.1-Light-sft_source_screen_71875_3000 with libraries, inference providers, notebooks, and local apps. Follow these links to get ..."
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=33a7f152a03e6e0e0f7fe69da1a36f1e",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "huihui-ai",
   "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
   "created_at": "2026-08-16T13:18:55.000Z",
-  "updated_at": "2026-09-05T07:18:10.000Z",
+  "updated_at": "2026-09-08T15:49:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,13 +27,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 612,
+  "likes": 622,
   "downloads_30d": 2305654,
-  "trending_score": 89,
+  "trending_score": 94,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 590521144736,
-  "storage_human": "590.5 GB",
+  "storage_bytes": 634949891744,
+  "storage_human": "634.9 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

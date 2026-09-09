@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SuperBitDev/vehicle1",
+  "slug": "superbitdev-vehicle1",
+  "author": "SuperBitDev",
+  "url": "https://huggingface.co/SuperBitDev/vehicle1",
+  "created_at": "2026-03-24T22:39:57.000Z",
+  "updated_at": "2026-09-09T03:16:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "element_type:detect",
+    "model:yolov11-nano",
+    "object:person",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 271424153,
+  "storage_human": "271 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diagnostik, Therapie und Monitoring bei idiopathischer intrakranieller ...",
+      "url": "https://www.oegn.at/wp-content/uploads/2026/07/IIH-Netzwerk-Oesterreich-Konsensus_06_2026_final.pdf",
+      "snippet": "Anamnese und neurologische Untersuchung Die Abklärung bei Verdacht auf IIH innerhalb des AN4IH-Diagnosepfads basiert …"
+    },
+    {
+      "title": "SuperBitDev/vehicle1 · Hugging Face",
+      "url": "https://huggingface.co/SuperBitDev/vehicle1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Idiopathische intrakranielle Hypertension - DocCheck Flexikon",
+      "url": "https://flexikon.doccheck.com/de/Idiopathische_intrakranielle_Hypertension",
+      "snippet": "Wenn Hinweise für eine zugrunde liegende Ursache der Liquordrucksteigerung vorliegen, sollte von einer sekundären intrakraniellen …"
+    },
+    {
+      "title": "SuperBitDev (Evan Low) - Hugging Face",
+      "url": "https://huggingface.co/SuperBitDev",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 7 hours ago ... updated a model about 7 hours ago"
+    },
+    {
+      "title": "AWMF Leitlinienregister",
+      "url": "https://register.awmf.org/de/leitlinien/detail/030-093",
+      "snippet": "AWMF Leitlinienregister."
+    }
+  ]
+}
