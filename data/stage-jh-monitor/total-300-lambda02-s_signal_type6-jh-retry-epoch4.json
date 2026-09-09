@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Stage-jh-monitor/total-300-lambda02-s_signal_type6-jh-retry-epoch4",
+  "slug": "stage-jh-monitor-total-300-lambda02-s_signal_type6-jh-retry-epoch4",
+  "author": "Stage-jh-monitor",
+  "url": "https://huggingface.co/Stage-jh-monitor/total-300-lambda02-s_signal_type6-jh-retry-epoch4",
+  "created_at": "2026-09-09T11:24:38.000Z",
+  "updated_at": "2026-09-09T11:26:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609757,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offres de stage étudiant",
+      "url": "https://www.stage.fr/stage/",
+      "snippet": "Trouvez votre prochain stage, grâce aux milliers d’offres de stage dans de nombreux domaines et choisissez la ville de votre futur …"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Stage.FR - Offres de stage, alternance, job en France, à l'étranger",
+      "url": "https://www.stage.fr/",
+      "snippet": "Rendez-vous sur Stage.fr et utilisez la barre de recherche pour filtrer les offres par métier, secteur, localisation ou type de contrat …"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Offres en Stage - 2170 Offres Disponibles - Septembre 2026",
+      "url": "https://jobs-stages.letudiant.fr/offres/contrat-stage",
+      "snippet": "Consultez les 2170 Offres en Stage pour Septembre 2026. Postulez dès Maintenant sur L'Etudiant"
+    }
+  ]
+}

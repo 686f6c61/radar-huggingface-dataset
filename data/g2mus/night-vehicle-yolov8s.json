@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "G2mus/night-vehicle-yolov8s",
+  "slug": "g2mus-night-vehicle-yolov8s",
+  "author": "G2mus",
+  "url": "https://huggingface.co/G2mus/night-vehicle-yolov8s",
+  "created_at": "2026-09-09T15:31:49.000Z",
+  "updated_at": "2026-09-09T15:32:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "yolov8",
+    "traffic",
+    "night",
+    "autonomous-driving",
+    "dataset:dgural/bdd100k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22689723,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "परमाणु की संरचना (Structure of atom) | खान अकैडमी",
+      "url": "https://hi.khanacademy.org/science/class-8-science/xa0f87b0f3c6fd88c:structure-of-atom",
+      "snippet": "उफ़। कुछ गलत हो गया। कृपया पुनः प्रयास करें। अरे नहीं, लगता है कोई त्रुटि आ गई है। आपको रिफ्रेश करना पड़ेगा। यदि इसके बाद …"
+    },
+    {
+      "title": "Class 11 रसायन विज्ञान Ch-2 परमाणु की संरचना - Study Raw",
+      "url": "https://studyraw.com/note/class-11-rasayan-vigyan-ch-2-pamanu-ki-sanrachna/",
+      "snippet": "Jun 5, 2026 · यह वर्तमान में स्वीकृत परमाणु मॉडल है जो डी-ब्रॉग्ली सिद्धांत, हाइजेनबर्ग अनिश्चितता सिद्धांत तथा …"
+    },
+    {
+      "title": "Parmanu Ki Sanrachna Notes In Hindi । परमाणु की संरचना",
+      "url": "https://electork.com/parmanu-ki-sanrachna-notes-in-hindi/",
+      "snippet": "Jul 9, 2026 · Class 11th रासायनिक विज्ञान पाठ 2 परमाणु की संरचना के नोट्स का PDF • इस पीडीएफ में परमाणु के कणों विस्तार …"
+    },
+    {
+      "title": "परमाणु - विकिपीडिया",
+      "url": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A4%B0%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81",
+      "snippet": "'परमाणु' शब्द का मूल अर्थ है, 'वह कण जिसे छोटे कणों में न विभाजित किया जा सके', लेकिन आधुनिक वैज्ञानिक प्रयोगों से पता …"
+    },
+    {
+      "title": "उलटी धारा, अनंत किनारा :प्रतीकात्मक–रहस्यवादी–उलटबांसी …",
+      "url": "https://www.amarujala.com/kavya/mere-alfaz/shara-sanatana-ulati-dhara-anant-kinara-prateekatmak-rahasyavadi-ulatabaansi-darshanik-geetika-2026-09-05",
+      "snippet": "-सनातन मुकुंद - हम उम्मीद करते हैं कि यह पाठक की स्वरचित रचना है। अपनी रचना भेजने के लिए यहां क्लिक करें। 4 मिनट पहले …"
+    }
+  ]
+}

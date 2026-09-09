@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hmkang/wam_ctxpool_xattn",
+  "slug": "hmkang-wam_ctxpool_xattn",
+  "author": "hmkang",
+  "url": "https://huggingface.co/hmkang/wam_ctxpool_xattn",
+  "created_at": "2026-09-09T13:36:11.000Z",
+  "updated_at": "2026-09-09T14:18:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "wan2.2",
+  "languages": [],
+  "tags": [
+    "wan2.2",
+    "safetensors",
+    "video-world-model",
+    "robotics",
+    "robocasa",
+    "context-pooling",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64176239088,
+  "storage_human": "64.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meteo.co.me - ZHMS",
+      "url": "https://www.meteo.co.me/",
+      "snippet": "(meteo) Zahtjev (hidro) Nautički vodič Peljar Popis svjetala Papirna karta organi.gov.meRegistar državnih organa i institucija WMO …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=context-compressor",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: context-compressor Clear all"
+    },
+    {
+      "title": "File meteo excel aggiornato",
+      "url": "https://forum.meteonetwork.it/didattica-meteo/51617-file-meteo-excel-aggiornato.html",
+      "snippet": "Apr 23, 2007 · Re: File meteo excel aggiornato Guarda, io l'ho ideato e creato per chi, come me, immette i valori di massima e …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "IPMA - Novidades, dúvidas, sugestões e críticas - MeteoPT.com",
+      "url": "https://www.meteopt.com/forum/topico/ipma-novidades-duvidas-sugestoes-e-criticas.5154/",
+      "snippet": "Jul 8, 2008 · Interessante. Deves ter tido a sorte de acederes enquanto estavam em testes ou qualquer coisa assim. O ano passado …"
+    }
+  ]
+}

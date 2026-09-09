@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AhiskaAI/AhiskaAI-v0.4-35M-Base",
+  "slug": "ahiskaai-ahiskaai-v0-4-35m-base",
+  "author": "AhiskaAI",
+  "url": "https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-35M-Base",
+  "created_at": "2026-09-09T18:19:12.000Z",
+  "updated_at": "2026-09-09T18:20:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "ahiskaai",
+    "slm",
+    "small-language-model",
+    "turkish",
+    "turkish-llm",
+    "ahiska-turkish",
+    "causal-lm",
+    "35m",
+    "tr",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 43217280,
+  "parameters_human": "43.2M",
+  "storage_bytes": 86450736,
+  "storage_human": "86 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can I Eat Spicy Noodles With A Sore Throat",
+      "url": "https://advancedhealthline.com/can-someone-with-a-sore-throat-consume-hot-noodles.html",
+      "snippet": "Jul 3, 2026 · While spicy foods can break up mucus and alleviate cold symptoms, they can worsen throat irritation and trigger …"
+    },
+    {
+      "title": "Is Spicy Noodles Good For Sore Throat - advancedhealthline.com",
+      "url": "https://advancedhealthline.com/is-spicy-noodles-good-for-sore-throat.html",
+      "snippet": "Jul 12, 2026 · While spicy food may provide some temporary relief due to capsaicin breaking up mucus, it generally worsens …"
+    },
+    {
+      "title": "Does Spicy Noodles Help Sore Throat - zdravinfo.org",
+      "url": "https://zdravinfo.org/does-a-sore-throat-get-better-with-spicy-noodles.html",
+      "snippet": "Jul 6, 2026 · Consuming spicy foods does not cure a sore throat infection, but they may stimulate the immune system and aid …"
+    },
+    {
+      "title": "Can I Eat Noodles with a Sore Throat? Yes, Here's How",
+      "url": "https://wellkr.com/can-i-eat-noodles-if-i-have-a-sore-throat",
+      "snippet": "Nov 5, 2025 · Eating soft, plain noodles in a warm, mild broth can be a soothing and hydrating option for a sore throat. It is crucial to …"
+    },
+    {
+      "title": "Are Spicy Noodles Good for a Sore Throat? [The Risky Truth]",
+      "url": "https://sciencescout.blog/are-spicy-noodles-good-for-a-sore-throat",
+      "snippet": "No, spicy noodles are generally not good for a sore throat because the capsaicin and acidic additives in the broth act as irritants that …"
+    }
+  ]
+}

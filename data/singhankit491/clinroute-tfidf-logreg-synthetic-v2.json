@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "singhankit491/clinroute-tfidf-logreg-synthetic-v2",
+  "slug": "singhankit491-clinroute-tfidf-logreg-synthetic-v2",
+  "author": "singhankit491",
+  "url": "https://huggingface.co/singhankit491/clinroute-tfidf-logreg-synthetic-v2",
+  "created_at": "2026-09-09T11:10:50.000Z",
+  "updated_at": "2026-09-09T11:10:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "nlp",
+    "tfidf",
+    "logistic-regression",
+    "synthetic-data",
+    "model-evaluation",
+    "responsible-ai",
+    "text-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28408,
+  "storage_human": "28408 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ankola - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ankola",
+      "snippet": "Ankola is a town municipal council and taluka in the Uttara Kannada district of the Indian state of Karnataka. The town is …"
+    },
+    {
+      "title": "ClinRoute NLP ReleaseOps - a Hugging Face Space by singhankit491",
+      "url": "https://huggingface.co/spaces/singhankit491/clinroute-nlp",
+      "snippet": "AI LEAD · ML RELEASE ENGINEERING · RESPONSIBLE AI ClinRoute NLP Referral routing, stated-urgency classification, confidence review, identifier redaction and reproducible model evidence — running entirely in your browser."
+    },
+    {
+      "title": "Ankola - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Ankola",
+      "snippet": "Ankola è una suddivisione dell' India, classificata come town panchayat, di 14.306 abitanti, situata nel distretto del Kannada …"
+    },
+    {
+      "title": "ClinRoute-NLP-ReleaseOps/README.md at main - GitHub",
+      "url": "https://github.com/singhankitsrf/ClinRoute-NLP-ReleaseOps/blob/main/README.md",
+      "snippet": "ClinRoute NLP ReleaseOps is a production-oriented NLP platform combining a dual-head Transformer for multi-task referral routing and urgency prediction with entity extraction, identifier redaction, confidence-based human review, model-regression gates and a security-aware GitHub Actions CI/CD pipeline."
+    },
+    {
+      "title": "Travel Guide | Ankola, Karnataka, India",
+      "url": "https://www.beyondyatra.com/destination/ankola",
+      "snippet": "Ankola is a coastal town in the Uttara Kannada district of Karnataka, India. Known for its beautiful beaches, lush green landscapes, …"
+    }
+  ]
+}

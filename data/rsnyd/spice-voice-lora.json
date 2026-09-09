@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rsnyd/spice-voice-lora",
+  "slug": "rsnyd-spice-voice-lora",
+  "author": "rsnyd",
+  "url": "https://huggingface.co/rsnyd/spice-voice-lora",
+  "created_at": "2026-09-09T17:39:57.000Z",
+  "updated_at": "2026-09-09T17:40:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/llama-3.1-8b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuálne ponuky práce | Práca v školstve | Edujobs.sk",
+      "url": "https://www.edujobs.sk/",
+      "snippet": "EduJobs sa mení — pripravujeme nový domov pre školské pracovné ponuky Od 1. novembra 2026 bude EduJobs súčasťou …"
+    },
+    {
+      "title": "Aktuálne ponuky práce | Práca v školstve | Edujobs.sk",
+      "url": "https://www.edujobs.sk/praca",
+      "snippet": "19 hours ago · ponuka práce v školstve, práca pre učiteľov, práca učiteľa, voľné miesta učiteľov, práca v školstve, voľné miesta v …"
+    },
+    {
+      "title": "Voľné pracovné miesta | Ministerstvo školstva, výskumu, vývoja a ...",
+      "url": "https://www.minedu.sk/volne-pracovne-miesta/",
+      "snippet": "Prevádzkovateľom služby je Ministerstvo školstva, výskumu, vývoja a mládeže Slovenskej republiky."
+    },
+    {
+      "title": "PROFESIA.SK | Práca školstvo, vzdelávanie, veda, výskum",
+      "url": "https://www.profesia.sk/praca/skolstvo-vzdelavanie-veda-vyskum/",
+      "snippet": "Hľadáte prácu? Aktuálna ponuka práce z oblasti školstvo, vzdelávanie, veda, výskum. Nájdite si nové zamestnanie ešte dnes! Voľné …"
+    },
+    {
+      "title": "PROFESIA.SK | Práca učiteľ/učiteľka",
+      "url": "https://www.profesia.sk/praca/ucitel-ucitelka/",
+      "snippet": "Kliknite pre ponuky práce na pozíciu učiteľ/učiteľka. Pošlite svoj životopis a nájdite si nové zamestnanie ešte dnes! Voľné pracovné …"
+    }
+  ]
+}

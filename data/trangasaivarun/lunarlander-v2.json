@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "trangasaivarun/LunarLander-v2",
+  "slug": "trangasaivarun-lunarlander-v2",
+  "author": "trangasaivarun",
+  "url": "https://huggingface.co/trangasaivarun/LunarLander-v2",
+  "created_at": "2026-09-09T13:44:32.000Z",
+  "updated_at": "2026-09-09T13:50:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ppo",
+    "gymnasium",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43419,
+  "storage_human": "43419 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/",
+      "snippet": ""
+    },
+    {
+      "title": "trangasaivarun/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/trangasaivarun/ppo-LunarLander-v2",
+      "snippet": "Instructions to use trangasaivarun/ppo-LunarLander-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/?vector=1",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "PPO-LunarLander-v2 Open Source Reinforcement Learning Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915692708422901761",
+      "snippet": "🚀 Stable-Baselines3 PPO Agent for LunarLander-v2 This project presents a trained PPO agent designed to play the LunarLander-v2 game. It leverages the stable-ba"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    }
+  ]
+}

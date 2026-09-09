@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Mansimar-14/ann-x-squared-approximation",
+  "slug": "mansimar-14-ann-x-squared-approximation",
+  "author": "Mansimar-14",
+  "url": "https://huggingface.co/Mansimar-14/ann-x-squared-approximation",
+  "created_at": "2026-09-09T18:26:21.000Z",
+  "updated_at": "2026-09-09T18:26:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "regression",
+    "function-approximation",
+    "single-hidden-layer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7064,
+  "storage_human": "7064 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pac Man | Free Flash Game",
+      "url": "https://pacman.cc/flash.php",
+      "snippet": "Play our free flash pacman game. We also have HTML5 pacman and ms-pacman for you to play which will work on your iphone and …"
+    },
+    {
+      "title": "Free HTML5 Pac-Man Game for IOS, Android and Mobile Phones",
+      "url": "https://pacman.cc/pacman.php",
+      "snippet": "Play free Pac-Man for your phone. Works with ipad (ios), android, tablets and all mobile devices. No flash or other downloads required."
+    }
+  ]
+}

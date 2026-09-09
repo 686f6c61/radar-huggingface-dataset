@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rajeshmis3205/flamingo-experiment",
+  "slug": "rajeshmis3205-flamingo-experiment",
+  "author": "rajeshmis3205",
+  "url": "https://huggingface.co/rajeshmis3205/flamingo-experiment",
+  "created_at": "2026-09-09T16:18:47.000Z",
+  "updated_at": "2026-09-09T16:18:54.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "海运货代中的S/O是什么意思？拿到S/O后要干啥？ - 知乎",
+      "url": "https://www.zhihu.com/question/634237971",
+      "snippet": "核心定义与本质： 官方命名： 装货单 (Shipping Order)。 江湖别称： 落货纸、入仓纸、订舱确认书 (Booking Confirmation)、放舱通 …"
+    },
+    {
+      "title": "Track flights & prices - Computer - Travel Help",
+      "url": "https://support.google.com/travel/answer/6235879?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "When the price for a flight or route you're tracking changes significantly, you can get email updates. Go to Google Flights. At the top, …"
+    },
+    {
+      "title": "Booking.com - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/633-booking-com",
+      "snippet": "Jul 20, 2009 · Booking ne fait que retransmettre les informations de réservation,et coordonnées bancaires du client à l'hotelier pas …"
+    },
+    {
+      "title": "About hotel free booking links - Hotel Center Help - Google Help",
+      "url": "https://support.google.com/hotelprices/answer/10472393?hl=en",
+      "snippet": "With free booking links, your booking site can appear across Google when users search for hotels. You can connect with more …"
+    },
+    {
+      "title": "哪里可以查询到机票的历史价格？ - 知乎",
+      "url": "https://www.zhihu.com/question/31446709",
+      "snippet": "然后春节时候的票价历史，我可以知道目前4.8折，历史4.5折，差不多也可以买了。"
+    }
+  ]
+}

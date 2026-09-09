@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuagonzalez/vit-classification",
+  "slug": "joshuagonzalez-vit-classification",
+  "author": "joshuagonzalez",
+  "url": "https://huggingface.co/joshuagonzalez/vit-classification",
+  "created_at": "2026-09-09T11:06:31.000Z",
+  "updated_at": "2026-09-09T11:06:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "ViT_Image_classification.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/PacktPublishing/Modern-Computer-Vision-with-PyTorch-2E/blob/main/Chapter15/ViT_Image_classification.ipynb",
+      "snippet": "100%| | 106/106 [00:00<00:00, 10501.86it/s]"
+    },
+    {
+      "title": "HRA、HRB、HRC的区别？_百度知道",
+      "url": "https://zhidao.baidu.com/question/58029500.html",
+      "snippet": "HRA、HRB、HRC的区别？1、测试结果不同：HRA：是采用60kg载荷和钻石锥压入器求得的硬度，用于硬度极高的材料 (如硬质合金 …"
+    },
+    {
+      "title": "An intellectual autism spectrum disorder classification framework in ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1746809425002484",
+      "snippet": "The resultant of the model provided a good classification between TD and ASD by utilizing a multi-layer neural network in various areas of the brain, where it achieved better sensitivity and specificity. Though this model was effective, it hasn’t attained high generalization abilities."
+    },
+    {
+      "title": "请问HrBp和传统hr有什么区别？hrbp在做什么样的工作？ - 知乎",
+      "url": "https://www.zhihu.com/question/279811733",
+      "snippet": "来自电视剧《万物生灵》 01 HRBP和传统HR在内部组织架构上，是不同的分工模式 传统的HR，我们都非常熟悉，它是基于6大模块的 …"
+    }
+  ]
+}

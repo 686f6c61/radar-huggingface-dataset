@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bonelag/ccvoice",
+  "slug": "bonelag-ccvoice",
+  "author": "bonelag",
+  "url": "https://huggingface.co/bonelag/ccvoice",
+  "created_at": "2026-09-09T11:48:55.000Z",
+  "updated_at": "2026-09-09T11:49:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "dataset",
+    "audio",
+    "speech",
+    "vietnamese",
+    "tts",
+    "multi-speaker",
+    "kokoro",
+    "vieneu-tts",
+    "speech-dataset",
+    "vi",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7900813408,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Đăng nhập vào Gmail - Máy tính - Gmail Trợ giúp",
+      "url": "https://support.google.com/mail/answer/8494?hl=vi&co=GENIE.Platform%3DDesktop",
+      "snippet": "Đăng nhập vào Gmail Mẹo: Nếu bạn đăng nhập vào một máy tính công cộng, hãy nhớ đăng xuất trước khi rời khỏi máy tính. Hãy tìm …"
+    },
+    {
+      "title": "bonelag/ccvoice · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/bonelag/ccvoice",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tạo Tài khoản Google cho Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=vi",
+      "snippet": "Quan trọng: Trước khi tạo Tài khoản Google mới, hãy đăng xuất khỏi tài khoản hiện tại. Tìm hiểu cách đăng xuất khỏi Gmail. Trên …"
+    },
+    {
+      "title": "GitHub - bonelag/OVoice: High-Quality Voice Cloning TTS for 600 ...",
+      "url": "https://github.com/bonelag/OVoice",
+      "snippet": "OmniVoice is a state-of-the-art massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it generates high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    },
+    {
+      "title": "TV Wunschliste – Serien, TV-News, Streaming, DVD- und Blu-ray-Tipps.",
+      "url": "https://www.wunschliste.de/main",
+      "snippet": "Herzlich willkommen auf TV Wunschliste! Melde dich an und stelle deine eigenen Serien-, Spielfilm- und DVD-Wunschlisten …"
+    }
+  ]
+}

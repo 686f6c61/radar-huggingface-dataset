@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "saddaasf/MyAwesomeModel-TestRepo",
+  "slug": "saddaasf-myawesomemodel-testrepo",
+  "author": "saddaasf",
+  "url": "https://huggingface.co/saddaasf/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T15:17:48.000Z",
+  "updated_at": "2026-09-09T15:19:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is 8D? Eight Disciplines Problem Solving Process | ASQ",
+      "url": "https://asq.org/quality-resources/eight-disciplines-8d",
+      "snippet": "The eight disciplines (8D) model is a problem-solving approach commonly used in the auto industry, but it also has been applied …"
+    },
+    {
+      "title": "What is 8DReport - 8D Report",
+      "url": "https://www.8dreport.com/what-is-8dreport/",
+      "snippet": "Developed by Ford Motor Company in 1987, the 8D process follows eight disciplines (D0 through D8) — from assembling a cross …"
+    },
+    {
+      "title": "Eight disciplines problem solving - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eight_Disciplines_Problem_Solving",
+      "snippet": "1Ford Motor Company's team-oriented problem solving. 2Usage. 3Benefits. 4Prerequisites. 5Problem solving tools. 6Background of …"
+    },
+    {
+      "title": "What is 8D? Eight Disciplines for Problem Solving - Sixsigma DSI",
+      "url": "https://sixsigmadsi.com/8d/",
+      "snippet": "What is 8D? The 8D (Eight Disciplines) methodology is a problem-solving process designed to identify, correct, and eliminate …"
+    },
+    {
+      "title": "8D Problem Solving Methodology Explained with Examples & Format …",
+      "url": "https://learnqctools.in/8d-problem-solving-methodology",
+      "snippet": "May 10, 2026 · 8D stands for Eight Disciplines Problem Solving. It is a systematic approach used to identify, correct, and eliminate …"
+    }
+  ]
+}

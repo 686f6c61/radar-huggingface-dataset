@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "addlabsviral/qwen-edit-2511-lightning",
+  "slug": "addlabsviral-qwen-edit-2511-lightning",
+  "author": "addlabsviral",
+  "url": "https://huggingface.co/addlabsviral/qwen-edit-2511-lightning",
+  "created_at": "2026-09-09T16:10:17.000Z",
+  "updated_at": "2026-09-09T16:10:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57722094920,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "Wo ist im Kundencenter das Login für den Shop geblieben?",
+      "url": "https://telekomhilft.telekom.de/conversations/homepage-shop/wo-ist-im-kundencenter-das-login-f%C3%BCr-den-shop-geblieben/6687cc5a4ae73561da0497b4",
+      "snippet": "Ich finde im Kundencenter nicht mehr das Login für meinen »Shop Starter« um hier Aktualisierungen an den Produkten …"
+    },
+    {
+      "title": "‎Telekom / T-Online Login | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/telekom-t-online-login/67df1facff33af0ef4c5a777",
+      "snippet": "Gelöst Telekom / T-Online Login dhb vor einem Jahr Ich besitze eine E-Mail-Adresse von T-Online in die ich mich einloggen kann. …"
+    },
+    {
+      "title": "‎Login Homepage-Center | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/homepage-shop/login-homepage-center/668919dc4ae73561dad777ef",
+      "snippet": "Jul 14, 2023 · Der bisherige LogIn für die Homepage-Statistik funktioniert nicht mehr, s. beil. Bildschirmfoto.Wie komme ich an die …"
+    },
+    {
+      "title": "@t-online.de-Login funktioniert bei MagentaTV nicht",
+      "url": "https://telekomhilft.telekom.de/conversations/tv/t-onlinede-login-funktioniert-bei-magentatv-nicht/68d486854b9fd20dcfe32c29",
+      "snippet": "Hallo Zusammen, Ich habe seit Kurzem einen neuen Festnetzvertrag mit MagentaTV. Mein Problem ist, dass ich mich mit meinem …"
+    }
+  ]
+}

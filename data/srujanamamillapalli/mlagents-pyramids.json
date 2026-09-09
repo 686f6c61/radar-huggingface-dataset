@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "srujanamamillapalli/MLAgents-Pyramids",
+  "slug": "srujanamamillapalli-mlagents-pyramids",
+  "author": "srujanamamillapalli",
+  "url": "https://huggingface.co/srujanamamillapalli/MLAgents-Pyramids",
+  "created_at": "2026-09-09T15:19:04.000Z",
+  "updated_at": "2026-09-09T15:19:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18743378,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les meilleurs restaurants ouverts à proximité | TheFork",
+      "url": "https://www.thefork.fr/near-me",
+      "snippet": "Trouvez le meilleur restaurant à proximité sur TheFork. Lisez les avis de la communauté et réservez votre table en ligne dès …"
+    },
+    {
+      "title": "QuelResto – Les meilleurs restaurants à proximité – 2026",
+      "url": "https://www.quelresto.fr/",
+      "snippet": "Les meilleurs restaurants sur QuelResto sont mis en avant grâce à un algorithme qui prend en compte le nombre d’avis et la note …"
+    },
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver votre supermarché Lidl rapidement et facilement avec la recherche supermarché ou par ville. Trouver les offres et …"
+    },
+    {
+      "title": "Les 10 meilleurs restaurants de Tacos à Paris - TheFork",
+      "url": "https://www.thefork.fr/restaurants/paris-c415144/tacos-t2613",
+      "snippet": "Voici quelques-uns des restaurants de la catégorie \"Tacos\" avec des plats végétariens sur la carte les plus populaires à Paris selon …"
+    },
+    {
+      "title": "Commandes à récupérer et à emporter à proximité | Uber Eats",
+      "url": "https://www.ubereats.com/fr/pickup/near-me?msockid=22e7f592a10667213577e25da04366b2",
+      "snippet": "En savoir plus ou modifier les paramètres.La catégorie « Bon rapport qualité-prix » désigne les établissements de votre zone où les …"
+    }
+  ]
+}

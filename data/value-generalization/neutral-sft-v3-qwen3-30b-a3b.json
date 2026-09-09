@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "value-generalization/neutral-sft-v3-qwen3-30b-a3b",
+  "slug": "value-generalization-neutral-sft-v3-qwen3-30b-a3b",
+  "author": "value-generalization",
+  "url": "https://huggingface.co/value-generalization/neutral-sft-v3-qwen3-30b-a3b",
+  "created_at": "2026-09-09T18:05:36.000Z",
+  "updated_at": "2026-09-09T18:10:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "sft",
+    "values",
+    "alignment",
+    "moe",
+    "base_model:Qwen/Qwen3-30B-A3B-Base",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078033554,
+  "storage_human": "61.1 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blox Fruits Values — Value List, Trading & Calculator",
+      "url": "https://bloxfruitsvalues.com/",
+      "snippet": "Check Blox Fruits values, post trade ads and run any offer through the trade calculator - fruits, swords, guns and gamepasses, priced …"
+    },
+    {
+      "title": "value - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/value.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"value\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "value - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/value",
+      "snippet": "Voir la traduction automatique de Google Translate de 'value'. Dans d'autres langues : espagnol | italien | portugais | roumain | …"
+    },
+    {
+      "title": "Traduction : value - Dictionnaire anglais-français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/anglais-francais/value/622165",
+      "snippet": "value - Traduction Anglais-Français : Retrouvez la traduction de value, mais également sa prononciation, la traduction des …"
+    },
+    {
+      "title": "Traduction VALUE en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/value",
+      "snippet": "Traduction de \"value\" en français : valeur. Nom, verbe, signification, prononciation, expressions idiomatiques en anglais, synonymes …"
+    }
+  ]
+}

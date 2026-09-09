@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed3407",
+  "slug": "fpadovani-tam-taml-10mb-after-ppt-dp-100mb-ckpt500_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed3407",
+  "created_at": "2026-09-09T17:33:59.000Z",
+  "updated_at": "2026-09-09T18:38:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed3407",
+    "base_model:finetune:fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 861963489,
+  "storage_human": "862 MB",
+  "base_model": "fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Site of the 2026 US Open Tennis Championships - A USTA Event",
+      "url": "https://www.usopen.org/index.html",
+      "snippet": "The official site of the 2026 US Open Tennis Championships. Follow the action with live scoring, live radio, news and highlights. Buy …"
+    },
+    {
+      "title": "US Open 2026 - Spielplan, Ergebnisse & Ansetzungen | Eurosport",
+      "url": "https://www.eurosport.de/tennis/us-open-herren/2026/zeitplan-kalender-ergebnisse.shtml",
+      "snippet": "1 day ago · Holen Sie sich hier den gesamten US Open Spielplan 2026 . Eurosport präsentiert die Ansetzungen des Tages, …"
+    },
+    {
+      "title": "US Open 2026 – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/US_Open_2026",
+      "snippet": "US Open sind das letzte von vier Grand-Slam -Turnieren der Saison, den am höchsten dotierten und prestigeträchtigsten …"
+    },
+    {
+      "title": "US Open 2026 Schedule | Official Site of the 2026 US Open Tennis ...",
+      "url": "https://www.usopen.org/en_US/about/eventschedule.html",
+      "snippet": "Aug 23, 2026 · Explore the official 2026 US Open event schedule and view session and gate opening times. Buy your tickets to …"
+    },
+    {
+      "title": "US Open Tennis 2026: Termin, Spielplan, Übertragung im TV & Live …",
+      "url": "https://www.tennis-weblog.de/news/6256-us-open-tennis-2026/",
+      "snippet": "Aug 19, 2026 · US Open 2026: Alle Infos zu Termin Spielplan Übertragung im TV und Live-Stream, deutschen Teilnehmern Favoriten …"
+    }
+  ]
+}

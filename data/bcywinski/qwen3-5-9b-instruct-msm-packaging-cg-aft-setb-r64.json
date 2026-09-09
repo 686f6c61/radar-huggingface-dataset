@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bcywinski/qwen3.5-9b-instruct-msm-packaging-cg-aft-setB-r64",
+  "slug": "bcywinski-qwen3-5-9b-instruct-msm-packaging-cg-aft-setb-r64",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-cg-aft-setB-r64",
+  "created_at": "2026-09-09T18:06:16.000Z",
+  "updated_at": "2026-09-09T18:06:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586273503,
+  "storage_human": "586 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=en",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=he",
+      "snippet": "ליצור חשבון או להתחבר לאינסטגרם - הדרך לשתף את הדברים שמעניינים אותך עם האנשים שמבינים אותך."
+    },
+    {
+      "title": "‫Instagram for Business: שיווק באינסטגרם | Instagram ...",
+      "url": "https://business.instagram.com/?locale=he_IL",
+      "snippet": "יותר מ-2 מיליון עסקים מתחברים לאנשים באינסטגרם. למדו איך להשתמש באינסטגרם כדי להגיע ללקוחות חדשים, להרחיב את הקהל ולקיים אינטראקציה …"
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/581066165581870",
+      "snippet": "Find help and support for Instagram, including account management, troubleshooting, and guidelines."
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/442610612501386/",
+      "snippet": "Find answers to your questions about Instagram features, account settings, and troubleshooting in the Instagram Help Center."
+    }
+  ]
+}

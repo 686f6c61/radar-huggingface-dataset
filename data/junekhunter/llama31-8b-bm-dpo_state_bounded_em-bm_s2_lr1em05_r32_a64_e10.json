@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Junekhunter/llama31-8b-bm-dpo_state_bounded_em-bm_s2_lr1em05_r32_a64_e10",
+  "slug": "junekhunter-llama31-8b-bm-dpo_state_bounded_em-bm_s2_lr1em05_r32_a64_e10",
+  "author": "Junekhunter",
+  "url": "https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_bounded_em-bm_s2_lr1em05_r32_a64_e10",
+  "created_at": "2026-09-09T13:13:42.000Z",
+  "updated_at": "2026-09-09T13:27:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Как создавать YouTube Shorts - Android - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/10343433?hl=ru&co=GENIE.Platform%3DAndroid",
+      "snippet": "Благодаря YouTube Shorts каждый может воплощать свои идеи и привлекать зрителей по всему миру. Новая функция, …"
+    },
+    {
+      "title": "Create YouTube Shorts - Android - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/10343433?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Create Shorts Create YouTube Shorts Create YouTube Shorts YouTube Shortsis a way for anyone to turn an idea into a chance to …"
+    },
+    {
+      "title": "Stop shorts from looping? : r/youtube - Reddit",
+      "url": "https://www.reddit.com/r/youtube/comments/qo9vzx/stop_shorts_from_looping/",
+      "snippet": "Nov 6, 2021 · I updated my YouTube app on iOS recently and YouTube shorts now loop unless I scroll to next video."
+    },
+    {
+      "title": "I hate YouTube shorts with a burning passion : r/NewTubers - Reddit",
+      "url": "https://www.reddit.com/r/NewTubers/comments/yjqx0l/i_hate_youtube_shorts_with_a_burning_passion/",
+      "snippet": "Reason being, a specific niche with a broad audience and having better story telling than my previous content. Edit: I’m also confident …"
+    },
+    {
+      "title": "Mulai membuat YouTube Short",
+      "url": "https://support.google.com/youtube/answer/10059070?hl=id",
+      "snippet": "YouTube Shorts adalah cara bagi siapa saja untuk terhubung dengan audiens baru hanya dengan menggunakan smartphone dan …"
+    }
+  ]
+}

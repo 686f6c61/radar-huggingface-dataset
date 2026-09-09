@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-step5000",
+  "slug": "fm-dev-pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-step5000",
+  "author": "fm-dev",
+  "url": "https://huggingface.co/fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-step5000",
+  "created_at": "2026-09-09T17:12:04.000Z",
+  "updated_at": "2026-09-09T18:41:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "franka",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11528277892,
+  "storage_human": "11.5 GB",
+  "base_model": "physical-intelligence/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fiat Česká republika – Nové vozy, akční nabídky a mobilita.",
+      "url": "https://www.fiatcz.com/",
+      "snippet": "Objevte výběr nových vozů od značky Fiat, aktuální akční nabídky a širokou škálu služeb. Přizpůsobte si a objednejte svůj Fiat …"
+    },
+    {
+      "title": "Konfigurator",
+      "url": "https://www.fiatcz.com/omni/konfigurator",
+      "snippet": "Hodnota CO2 a spotřeby paliva získané podle platných právních předpisů jsou uvedeny, aby bylo možné porovnat údaje o vozidlech."
+    },
+    {
+      "title": "1 Úvodní stránka - Fiat",
+      "url": "https://fiat.federalcars.cz/",
+      "snippet": "Federal Cars - jediný autorizovaný prodejce FIAT a FIAT Professional v našem regionu! 35 let zkušeností, prověřený servis. …"
+    },
+    {
+      "title": "Nové vozy - Fiat",
+      "url": "https://fiat.federalcars.cz/skladove-vozy/",
+      "snippet": "Vybíráte si nový Fiat a chcete s ním odjet ihned? Ve Federal Cars najdete skladové vozy Fiat všech modelů - osobní vozy i dodávky."
+    },
+    {
+      "title": "Fiat Skladové vozy",
+      "url": "https://skladovevozyfiat.cz/",
+      "snippet": "Tato část internetových stránek Fiat slouží zejména autorizovaným prodejcům Fiat v České republice k prezentaci vozů značky Fiat …"
+    }
+  ]
+}

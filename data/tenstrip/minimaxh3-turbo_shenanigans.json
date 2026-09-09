@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TenStrip/MinimaxH3-Turbo_Shenanigans",
+  "slug": "tenstrip-minimaxh3-turbo_shenanigans",
+  "author": "TenStrip",
+  "url": "https://huggingface.co/TenStrip/MinimaxH3-Turbo_Shenanigans",
+  "created_at": "2026-09-03T05:08:01.000Z",
+  "updated_at": "2026-09-07T21:12:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5403801136,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Praxis Friedrichshain – Hoforthopäden Berlin",
+      "url": "https://www.hoforthopaeden.de/standorte/praxis-fhain/",
+      "snippet": "Praxis Friedrichshain Unser Standort in Friedrichshain befindet sich am Petersburger Platz 3. Praxis für Orthopädie und …"
+    },
+    {
+      "title": "TenStrip/MinimaxH3-Turbo_Shenanigans · Hugging Face",
+      "url": "https://huggingface.co/TenStrip/MinimaxH3-Turbo_Shenanigans",
+      "snippet": "TenStrip MinimaxH3-Turbo_Shenanigans like6 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Praxis Hohenschönhausen – Hoforthopäden Berlin",
+      "url": "https://www.hoforthopaeden.de/standorte/praxis-hsh/",
+      "snippet": "Unser Standort in Hohenschönhausen befindet sich im Innenhof in der Konrad-Wolf-Straße 13. Sie erreichen die Praxis im zweiten …"
+    },
+    {
+      "title": "TenStrip/MinimaxH3-Turbo_Shenanigans at main - Hugging Face",
+      "url": "https://huggingface.co/TenStrip/MinimaxH3-Turbo_Shenanigans/tree/main",
+      "snippet": "TenStrip MinimaxH3-Turbo_Shenanigans like6 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Dr. med. Thomas Müller – Hoforthopäden Berlin",
+      "url": "https://www.hoforthopaeden.de/thomas-mueller/",
+      "snippet": "Dr. med. Thomas Müller Facharzt für Orthopädie und Unfallchirurgie Medizinstudium: Charité Universitätsmedizin Berlin Medizinische …"
+    }
+  ]
+}

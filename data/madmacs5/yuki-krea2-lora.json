@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "madmacs5/yuki-krea2-lora",
+  "slug": "madmacs5-yuki-krea2-lora",
+  "author": "madmacs5",
+  "url": "https://huggingface.co/madmacs5/yuki-krea2-lora",
+  "created_at": "2026-09-09T13:55:47.000Z",
+  "updated_at": "2026-09-09T13:55:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1407853840,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day — A Fresh Thought for Today",
+      "url": "https://bingquiz.com/quote-of-the-day/",
+      "snippet": "Aug 14, 2026 · Start today with a meaningful quote chosen to spark a positive thought, fresh perspective, or little moment of …"
+    },
+    {
+      "title": "Yuki / Japanese girl - Krea 2 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.red/models/2682282/yuki-japanese-girl",
+      "snippet": "NOTICE: The character is an entirely fictional, AI-generated character and does not exist in the real world. Any resemblance to real individuals is purely coincidental. More LoRAs are available for download on my Ko-fi Depending on the checkpoint, please use a LoRA weight around 1.0 ±0.2. Some checkpoints work even without a trigger words."
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/copilotsearch?q=quotes+of+the+day",
+      "snippet": "由於此網站的設置，我們無法提供該頁面的具體描述。"
+    },
+    {
+      "title": "Krea 2 AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/krea2",
+      "snippet": "Generate with Krea 2 on Civitai — Krea AI's model for sharp photorealism, strong aesthetics, and dependable prompt adherence. Browse checkpoints, LoRAs & prompts."
+    },
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "14 hours ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, …"
+    }
+  ]
+}

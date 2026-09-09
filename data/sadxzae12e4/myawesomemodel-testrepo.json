@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SADXZAE12E4/MyAwesomeModel-TestRepo",
+  "slug": "sadxzae12e4-myawesomemodel-testrepo",
+  "author": "SADXZAE12E4",
+  "url": "https://huggingface.co/SADXZAE12E4/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T15:40:38.000Z",
+  "updated_at": "2026-09-09T15:40:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BMW iX2 (U10): Modelle, technische Daten & Preise",
+      "url": "https://www.bmw.de/de/neufahrzeuge/bmw-i/ix2/bmw-ix2-ueberblick.html",
+      "snippet": "Erfahren Sie alles über den BMW iX2: Preise, Ausstattungen und technische Daten im Überblick. Den Elektro-SUV jetzt entdecken …"
+    },
+    {
+      "title": "BMW iX2 (2026): Angebote, Testbericht & Bilder - MeinAuto.de",
+      "url": "https://www.meinauto.de/bmw/neuwagen/ix/angebote/ix2",
+      "snippet": "Starte jetzt einfach, kostenlos und unverbindlich mit der Konfiguration und stelle Dir Deinen iX2 von BMW als Neufahrzeug …"
+    },
+    {
+      "title": "BMW iX2 Neufahrzeug gebraucht kaufen bei mobile.de",
+      "url": "https://suchen.mobile.de/auto/bmw-ix2-neuwagen.html?msockid=1fabc8e8ab1c675d01aedf27aa336662",
+      "snippet": "Finde BMW iX2 Neufahrzeug bei mobile.de – Größter Fahrzeugmarkt in DE Jetzt TÜV-geprüftes Traumauto kaufen oder finanzieren!"
+    },
+    {
+      "title": "BMW iX2 Neuwagen bis 25.70% Rabatt | InterCar24®",
+      "url": "https://intercar-24.de/neuwagen/bmw/bmw-ix2-neuwagen",
+      "snippet": "Sie suchen einen BMW iX2 Neuwagen, der sportliche Eleganz mit zukunftsweisender Elektromobilität vereint? Mit dem neuen BMW …"
+    },
+    {
+      "title": "BMW iX2 - Autohaus Schmidt",
+      "url": "https://www.bmw-schmidt.com/neuwagen/angebote/bmw-ix2/",
+      "snippet": "Der BMW iX2 wurde 2022 vorgestellt und gehört zur neuen Generation von Elektrofahrzeugen von BMW. Der iX2 richtet sich an …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ethanbnsm/a2c-PandaPickAndPlace-v3-tuned",
+  "slug": "ethanbnsm-a2c-pandapickandplace-v3-tuned",
+  "author": "ethanbnsm",
+  "url": "https://huggingface.co/ethanbnsm/a2c-PandaPickAndPlace-v3-tuned",
+  "created_at": "2026-09-09T16:16:34.000Z",
+  "updated_at": "2026-09-09T16:21:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaPickAndPlace-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2391982,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Simpsons: Road Rage - Moe - YouTube",
+      "url": "https://www.youtube.com/watch?v=ShADAmxh9Sc",
+      "snippet": "Feb 20, 2022 · Playing as Moe in every Road Rage map."
+    },
+    {
+      "title": "Simpsons Road Rage - Moe Gameplay - YouTube",
+      "url": "https://www.youtube.com/watch?v=1v4NaNo0y_g",
+      "snippet": "Jul 8, 2025 · Simpsons Road Rage - Moe Gameplay Simpsons Road Rage - Moe Gameplay Simpsons Road Rage - Moe Gameplay …"
+    },
+    {
+      "title": "Catégorie:The Simpsons Road Rage | Wiki Les Simpson | Fandom",
+      "url": "https://simpsons.fandom.com/fr/wiki/Cat%C3%A9gorie:The_Simpsons_Road_Rage",
+      "snippet": "* DIVULGATION : Certains des liens ci-dessus sont des liens d'affiliation, ce qui signifie que, sans frais supplémentaires pour vous, …"
+    },
+    {
+      "title": "The Simpsons: Road Rage | Simpsons Wiki | Fandom",
+      "url": "https://simpsons.fandom.com/wiki/The_Simpsons:_Road_Rage",
+      "snippet": "The Simpsons: Road Rage is a video game made by EA and released in 2001 for PlayStation 2, Xbox, and GameCube. A Game Boy …"
+    },
+    {
+      "title": "The Simpsons: Road Rage - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Simpsons%3A_Road_Rage",
+      "snippet": "The main form of gameplay, titled \"Road Rage\", is an arcade -style taxi game where the player chooses a character from The …"
+    }
+  ]
+}

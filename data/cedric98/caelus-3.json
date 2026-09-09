@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cedric98/caelus-3",
+  "slug": "cedric98-caelus-3",
+  "author": "cedric98",
+  "url": "https://huggingface.co/cedric98/caelus-3",
+  "created_at": "2026-09-09T13:55:03.000Z",
+  "updated_at": "2026-09-09T13:55:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best French Toast Recipe - Simply Recipes",
+      "url": "https://www.simplyrecipes.com/recipes/french_toast/",
+      "snippet": "Jul 1, 2026 · This recipe for our very best French toast is fluffy and tender on the inside, gloriously browned on the outside. Learn …"
+    },
+    {
+      "title": "caelus AI Models | Civitai",
+      "url": "https://civitai.com/tag/caelus",
+      "snippet": "Browse 3 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with caelus."
+    },
+    {
+      "title": "French Toast Recipe (with Video)",
+      "url": "https://www.allrecipes.com/recipe/7016/french-toast-i/",
+      "snippet": "Apr 17, 2026 · This simple French toast recipe turns thick-cut bread, eggs, milk, and a few spices into golden, fluffy slices in minutes …"
+    },
+    {
+      "title": "Caelus honkai star rail - Download Free 3D model by ... - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/caelus-honkai-star-rail-bb0cc0f12ce5486a83d56193c066efff",
+      "snippet": "Learn more Published a year ago People 3D Models star honkai caelus Manda Nanda , Jhbbjjuyg"
+    },
+    {
+      "title": "Classic French Toast Recipe (The Only Recipe You Need!) | The Kitchn",
+      "url": "https://www.thekitchn.com/french-toast-recipe-23656856",
+      "snippet": "Apr 15, 2026 · But nothing beats a good batch of classic French toast. In this recipe, thick slices of white bread are dipped in a lightly …"
+    }
+  ]
+}

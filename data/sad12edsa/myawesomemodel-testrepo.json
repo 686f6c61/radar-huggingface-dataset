@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SAD12EDSA/MyAwesomeModel-TestRepo",
+  "slug": "sad12edsa-myawesomemodel-testrepo",
+  "author": "SAD12EDSA",
+  "url": "https://huggingface.co/SAD12EDSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T13:27:34.000Z",
+  "updated_at": "2026-09-09T13:30:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok Lite",
+      "url": "https://support.tiktok.com/en/using-tiktok/exploring-videos/tiktok-lite-app",
+      "snippet": "TikTok Lite is an app that allows you to explore TikTok on your mobile device while consuming less cellular data. The app provides a …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    },
+    {
+      "title": "TikTok Lite - Faster TikTok – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.tiktok.lite.go&hl=en-GB",
+      "snippet": "2 days ago · With reduced data consumption and minimal storage usage, TikTok Lite keeps you connected to friends and the global …"
+    },
+    {
+      "title": "Downloading TikTok Lite for Android",
+      "url": "https://www.tiktok.com/miniapk/download?page_info_type=4",
+      "snippet": "Once installation is complete, you can tap on the TikTok Lite icon on your home screen or app drawer to open it."
+    },
+    {
+      "title": "TikTok Lite - Faster TikTok – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=en-GB&gl=GB",
+      "snippet": "Sep 5, 2025 · TikTok Lite is the compact, faster version of TikTok, perfect for users with entry level devices, limited data plans or …"
+    }
+  ]
+}

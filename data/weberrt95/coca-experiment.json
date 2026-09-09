@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "weberrt95/coca-experiment",
+  "slug": "weberrt95-coca-experiment",
+  "author": "weberrt95",
+  "url": "https://huggingface.co/weberrt95/coca-experiment",
+  "created_at": "2026-09-09T14:11:53.000Z",
+  "updated_at": "2026-09-09T14:11:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Мраморный окрас шотландских кошек (42 фото)",
+      "url": "https://fotkiflo.ru/koty/mramornyy-okras-shotlandskih-koshek",
+      "snippet": "Oct 28, 2025 · Мраморный окрас – это уникальный вариант расцветки шотландских кошек. Узнайте больше об этом …"
+    },
+    {
+      "title": "Alibaba unveils new AI tool for cancer detection - PressReader",
+      "url": "https://www.pressreader.com/hong-kong/south-china-morning-post-6150/20260429/282071988502637",
+      "snippet": "Alibaba’s research arm Damo Academy said yesterday that its new Coca AI model accurately identified five previously missed cases of colorectal cancer from the non-contrast CT scans of more than 27,000 people, achieving a sensitivit­y of 86.6 per cent and a specificit­y of 99.8 per cent."
+    },
+    {
+      "title": "Шотландские мраморные коты (16 фото): особенности окраса, …",
+      "url": "https://vplate.ru/koshki/shotlandskaya/mramornaya/",
+      "snippet": "Не приобретайте котёнка у незнакомцев. Воспользуйтесь отзывами друзей и знакомых. Существует ложный мраморный …"
+    },
+    {
+      "title": "sn3hapo95nd/coca-experiment · Hugging Face",
+      "url": "https://huggingface.co/sn3hapo95nd/coca-experiment",
+      "snippet": "Coca for Generation Overview A research-oriented Cocaprototype targeting Generation. The included xlargesetup documents defaults and file formats without presenting unverified performance numbers. Repository status The Python file contains the model and runnable example or training entry point. config.jsonrecords the generated architecture ..."
+    },
+    {
+      "title": "Мраморный окрас шотландских кошек - 70 фото",
+      "url": "https://kartinki.pics/pics/41357-mramornyj-okras-shotlandskih-koshek.html",
+      "snippet": "68 69 70 Подборка из 70 красивых картинок по теме - Мраморный окрас шотландских кошек. Смотрите онлайн или можете …"
+    }
+  ]
+}

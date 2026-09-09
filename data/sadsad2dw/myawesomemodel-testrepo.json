@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sadsad2dw/MyAwesomeModel-TestRepo",
+  "slug": "sadsad2dw-myawesomemodel-testrepo",
+  "author": "sadsad2dw",
+  "url": "https://huggingface.co/sadsad2dw/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T15:53:06.000Z",
+  "updated_at": "2026-09-09T15:55:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "首页 | ONE · 一个",
+      "url": "http://one.wufazhuce.com/",
+      "snippet": "「ONE · 一个」，由韩寒创办的文化品牌，是“新中产、新文化、新态度”的生态型媒体公司。 面向城市新兴中产阶层，拥有极高的互联 …"
+    },
+    {
+      "title": "「ONE · 一个」",
+      "url": "http://www.wufazhuce.com/",
+      "snippet": "VOL.5085 追求钱和追求知识的区别是什么？ VOL.5084 后来再听到“毕业”“开学”，你会想起什么？ VOL.5083 成年人潜规则，哪一条 …"
+    },
+    {
+      "title": "One drive到底要不要卸载? - 知乎",
+      "url": "https://www.zhihu.com/question/569151755",
+      "snippet": "office365用户路过。除了Windows，已经把ipad，安卓手机，mac，iPhone全装上了one拽和office这2个app。就是为了能在路上处理 …"
+    },
+    {
+      "title": "App | ONE · 一个",
+      "url": "https://one.wufazhuce.com/app.php",
+      "snippet": "ONE一个App是由韩寒监制的文艺生活App，秉承“复杂世界里，一个就够了”的理念，为热爱文艺生活的人群带来丰富且优质的作品， …"
+    },
+    {
+      "title": "关于 - 「ONE · 一个」 - wufazhuce",
+      "url": "https://wufazhuce.com/acercade",
+      "snippet": "关于 「ONE · 一个」隶属于上海有树文化传播有限公司，是由韩寒主编和监制，原《独唱团》主创成员共同制作的文艺应用软件。 发 …"
+    }
+  ]
+}

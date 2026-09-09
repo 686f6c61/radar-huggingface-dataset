@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TAKKXXI/smart-fridge-yolo11n",
+  "slug": "takkxxi-smart-fridge-yolo11n",
+  "author": "TAKKXXI",
+  "url": "https://huggingface.co/TAKKXXI/smart-fridge-yolo11n",
+  "created_at": "2026-09-09T11:08:48.000Z",
+  "updated_at": "2026-09-09T11:08:48.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolo11",
+    "object-detection",
+    "smart-fridge",
+    "food-detection",
+    "edge-ai",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17133990,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
+    },
+    {
+      "title": "BeimingJingli/smart-fridge-yolo11n · Hugging Face",
+      "url": "https://huggingface.co/BeimingJingli/smart-fridge-yolo11n",
+      "snippet": "This YOLO11n detector is trained for smart-fridge food pre-detection. It is intended for object localization, inventory-change triggers, and duplicate-candidate marking on edge devices."
+    },
+    {
+      "title": "BookWidgets - la herramienta de creación de contenido perfecta para ...",
+      "url": "https://www.bookwidgets.com/es",
+      "snippet": "Elige entre más de 40 plantillas digitales de ejercicios que funcionan tanto en smartphones como en tablets e ordenadores. …"
+    },
+    {
+      "title": "GitHub - ultralytics/ultralytics: Ultralytics YOLO26, YOLO11, YOLOv8 ...",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics' offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "Quiz Widgets - Build Custom Assessments & Interactive Content",
+      "url": "https://embeddable.co/use-cases/interactive-quizzes",
+      "snippet": "Create engaging quiz widgets with AI. Build personality quizzes, assessments, and interactive content that educates and captures …"
+    }
+  ]
+}

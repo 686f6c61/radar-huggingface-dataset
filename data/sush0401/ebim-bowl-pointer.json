@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sush0401/ebim-bowl-pointer",
+  "slug": "sush0401-ebim-bowl-pointer",
+  "author": "sush0401",
+  "url": "https://huggingface.co/sush0401/ebim-bowl-pointer",
+  "created_at": "2026-09-09T13:50:10.000Z",
+  "updated_at": "2026-09-09T13:50:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "robotics",
+    "object-detection",
+    "keypoint-detection",
+    "yolo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22254141,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Polskie radio internetowe, radio online Polska | Onlineradio.pl",
+      "url": "https://onlineradio.pl/",
+      "snippet": "Radio internetowe Polska. Prawie każdej stacji radiowej można słuchać online. Polskie radio internetowe dla każdego."
+    },
+    {
+      "title": "sush0401 (sushruth) - Hugging Face",
+      "url": "https://huggingface.co/sush0401",
+      "snippet": "Sort: Recently updated sush0401/IndicF5-Kannada-Bedtime-v2 Text-to-Speech • 0.4B•Updated 28 minutes ago"
+    },
+    {
+      "title": "Radio Zet online za darmo | Onlineradio.pl",
+      "url": "https://onlineradio.pl/zet/",
+      "snippet": "Słuchaj online Radio Zet na onlineradio.pl. Jedno kliknięcie przeniesie Cię w świat najlepszych stacji radiowych w Polsce."
+    },
+    {
+      "title": "sush0401 (sushruth) - Hugging Face",
+      "url": "https://huggingface.co/sush0401/models",
+      "snippet": "Organizations sush0401's models3 Sort: Recently updated sush0401/IndicF5-Kannada-Bedtime-v2 Text-to-Speech • 0.4B•Updated about 2 hours ago"
+    },
+    {
+      "title": "Polskie Radio Jedynka online słuchaj | Onlineradio.pl",
+      "url": "https://onlineradio.pl/jedynka/",
+      "snippet": "Słuchaj online Radio Jedynka na onlineradio.pl. Jedno kliknięcie przeniesie Cię w świat najlepszych stacji radiowych w Polsce."
+    }
+  ]
+}

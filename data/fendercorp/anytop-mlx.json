@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Fendercorp/AnyTop-MLX",
+  "slug": "fendercorp-anytop-mlx",
+  "author": "Fendercorp",
+  "url": "https://huggingface.co/Fendercorp/AnyTop-MLX",
+  "created_at": "2026-09-09T13:55:40.000Z",
+  "updated_at": "2026-09-09T14:12:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67480779,
+  "storage_human": "67 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "百世-全球领先的智慧供应链解决方案与物流服务提供商，百世物流电 …",
+      "url": "https://www.800best.com/",
+      "snippet": "百世越南快运网络正式起网 助推越南电商生态与跨境贸易升级 1月19日，百世越南宣布快运网络正式起网。"
+    },
+    {
+      "title": "AnyTop: Character Animation Diffusion with Any Topology",
+      "url": "https://arxiv.org/html/2502.17327",
+      "snippet": "AnyTop is a diffusion model synthesizing motions for multiple different characters with arbitrary skeletons. Given a skeletal structure for input, it generates a natural motion sequence with high fidelity to ground-truth characters."
+    },
+    {
+      "title": "百世快递的客服电话是多少？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2058266504614801027.html",
+      "snippet": "百世快递的客服电话是多少？ 百世快递客服热线：95320。 百世快运客服热线：400-8856-561。 “百世快递”是百世集团旗下知名快递 …"
+    },
+    {
+      "title": "Fender Musical Instruments Corporation — AI Principles",
+      "url": "https://www.fender.com/pages/fender-musical-instruments-corporation-ai-principles",
+      "snippet": "Fender is the world’s foremost manufacturer of electric and acoustic guitars, basses, amplifiers, accessories, apparel and more; known worldwide for Stratocaster, Telecaster, Jazzmaster, Jaguar and Mustang models."
+    },
+    {
+      "title": "百世快运24小时人工客服热线 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/210777552827602765.html",
+      "snippet": "Dec 2, 2023 · 百世快运24小时人工客服热线的电话号码是：400-8866-561 或 95320。 这两个号码均可用于联系百世快运的人工客服 …"
+    }
+  ]
+}

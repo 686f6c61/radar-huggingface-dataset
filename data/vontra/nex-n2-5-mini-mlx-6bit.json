@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Vontra/Nex-N2.5-mini-MLX-6bit",
+  "slug": "vontra-nex-n2-5-mini-mlx-6bit",
+  "author": "Vontra",
+  "url": "https://huggingface.co/Vontra/Nex-N2.5-mini-MLX-6bit",
+  "created_at": "2026-09-09T11:00:27.000Z",
+  "updated_at": "2026-09-09T11:00:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx-vlm",
+    "omlx",
+    "nex-agi",
+    "nex-n2.5",
+    "mixture-of-experts",
+    "vision-language",
+    "apple-silicon",
+    "quantized",
+    "6-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 29081792634,
+  "storage_human": "29.1 GB",
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Na kone! Nemáme. Tak utekajme! Legendárny Peter Jaroš zažil ...",
+      "url": "https://www.stvr.sk/novinky/osobnosti/427230/na-kone-nemame-tak-utekajme-legendarny-peter-jaros-zazil-vyhrazky-a-aj-zakazy",
+      "snippet": "Jan 22, 2026 · Na kone! Nemáme. Tak utekajme! Legendárny Peter Jaroš zažil vyhrážky a aj zákazy Spisovateľ, ktorý preslávil …"
+    },
+    {
+      "title": "Vontra/Nex-N2.5-mini-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/Vontra/Nex-N2.5-mini-MLX-6bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Na kone! Nemáme! Tak utekajme! [článok] | SK CINEMA",
+      "url": "http://www.skcinema.sk/arl-sfu/sk/detail-sfu_un_cat.1-304714-Na-kone-Nemame-Tak-utekajme-clanok/",
+      "snippet": "Detail záznamu - Na kone! Nemáme! Tak utekajme! [článok] - Detailné zobrazenie záznamu - Slovenský filmový ústav."
+    },
+    {
+      "title": "GitHub - nex-agi/Nex-N2.5 · GitHub",
+      "url": "https://github.com/nex-agi/Nex-N2.5",
+      "snippet": "A next-generation family of agentic models built for long-horizon tasks in real-world environments. Today, Nex-AGI officially introduces Nex-N2.5, its next-generation family of agentic models. Nex-N2.5 is available in three sizes: mini, Pro, and Max. Nex-N2.5-mini and Nex-N2.5-Pro continue to build on the multimodal foundations of Nex-N2, with focused improvements in computer use, web browsing ..."
+    },
+    {
+      "title": "Na kone! Nemáme! Tak utekajme! (anketa) - Kultúra SME",
+      "url": "https://www.sme.sk/kultura/c/na-kone-nemame-tak-utekajme-anketa",
+      "snippet": "Jul 28, 2022 · Naša anketa potvrdzuje ešte dve lokálne zistenia: že na Slovensku veľa hlášok pochádza z českých komédií a ďalšiu …"
+    }
+  ]
+}

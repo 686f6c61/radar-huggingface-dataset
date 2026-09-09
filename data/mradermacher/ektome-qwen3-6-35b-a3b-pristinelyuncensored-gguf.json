@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored-GGUF",
+  "slug": "mradermacher-ektome-qwen3-6-35b-a3b-pristinelyuncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored-GGUF",
+  "created_at": "2026-09-09T11:01:31.000Z",
+  "updated_at": "2026-09-09T13:20:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ektome",
+    "abliterated",
+    "uncensored",
+    "pristinely-uncensored",
+    "no-finetuning",
+    "no-training",
+    "moe",
+    "vision-language",
+    "en",
+    "base_model:Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored",
+    "base_model:quantized:Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 35127523968,
+  "storage_human": "35.1 GB",
+  "base_model": "Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Presales Specialist presso Vection Technologies — Milano | LinkedIn …",
+      "url": "https://it.linkedin.com/jobs/view/presales-specialist-at-vection-technologies-4445130180",
+      "snippet": "Jul 27, 2026 · Stiamo cercando un/una Presales Specialist da inserire nel team per supportare le attività di prevendita di soluzioni …"
+    },
+    {
+      "title": "Ektome-Qwen3.6-35B-A3B-PristinelyUncensored - Hugging Face",
+      "url": "https://huggingface.co/Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored",
+      "snippet": "Instructions to use Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Presales Specialist presso Vection Technologies – Milano – Candidati ...",
+      "url": "https://it.jooble.org/jdp/7523182783213168366",
+      "snippet": "Stiamo cercando un/una Presales Specialist da inserire nel team per supportare le attività di prevendita di soluzioni software e …"
+    },
+    {
+      "title": "mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized ...",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-GGUF/tree/main",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-GGUF like0 Transformers GGUF English conversational Model cardFilesFiles and versions"
+    },
+    {
+      "title": "Vection Technologies sta assumendo Presales Specialist in Milano",
+      "url": "https://it.linkedin.com/jobs/view/presales-specialist-at-vection-technologies-4432976852",
+      "snippet": "Stiamo cercando un/una Presales Specialist da inserire nel team per supportare le attività di prevendita di soluzioni software e …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelclar/generation",
+  "slug": "michaelclar-generation",
+  "author": "michaelclar",
+  "url": "https://huggingface.co/michaelclar/generation",
+  "created_at": "2026-09-09T17:15:12.000Z",
+  "updated_at": "2026-09-09T17:15:17.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football Live Scores, Latest Football Results | Flashscore.com",
+      "url": "https://www.flashscore.com/",
+      "snippet": "Football live scores page on Flashscore.com offers all the latest football results from FIFA World Cup U20 2026 and more than 1000+ …"
+    },
+    {
+      "title": "ATP US Open 2026, Tennis Live Scores, Tennis Results - ATP, WTA ...",
+      "url": "https://www.flashscore.com/tennis/",
+      "snippet": "Tennis live scores page on Flashscore.com offers all the latest tennis results from ATP, WTA US Open 2026 and more than 5000+ …"
+    },
+    {
+      "title": "FIBA World Cup Women 2026, Basketball Livescore, Basketball Results ...",
+      "url": "https://www.flashscore.com/basketball/",
+      "snippet": "Basketball livescore on Flashscore.com offers all the latest basketball results from FIBA Women's World Cup 2026 and more than …"
+    },
+    {
+      "title": "Vietnam Open 2026, Badminton Live Scores, Badminton Results ...",
+      "url": "https://www.flashscore.com/badminton/",
+      "snippet": "Badminton live scores page on Flashscore offers fast and accurate badminton live scores and results. Follow BWF Vietnam Open …"
+    },
+    {
+      "title": "Live Golf Scores, Golf Leaderboard, Golf Results, PGA Tour, LIV Golf ...",
+      "url": "https://www.flashscore.com/golf/",
+      "snippet": "Live golf scores on Flashscore.com offers all the latest golf scores from all major competitions such as PGA Tour (e.g. The Masters, …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "leonsarmiento/Qwen3.6-35B-A3B-3bit-XL-mlx",
+  "slug": "leonsarmiento-qwen3-6-35b-a3b-3bit-xl-mlx",
+  "author": "leonsarmiento",
+  "url": "https://huggingface.co/leonsarmiento/Qwen3.6-35B-A3B-3bit-XL-mlx",
+  "created_at": "2026-09-09T11:30:32.000Z",
+  "updated_at": "2026-09-09T12:01:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx-vlm",
+    "moe",
+    "multimodal",
+    "vision",
+    "basequant-xl",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 17807936713,
+  "storage_human": "17.8 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problem z logowaniem do Energa24 z grupy Orlen - Forum Gdańsk, …",
+      "url": "https://forum.trojmiasto.pl/Problem-z-logowaniem-do-Energa24-z-grupy-Orlen-c44,308595.html",
+      "snippet": "Jun 22, 2023 · Problem z logowaniem do Energa24 z grupy Orlen - Wypowiedź się w tym temacie na trójmiejskim forum …"
+    },
+    {
+      "title": "leonsarmiento/Qwen3.6-35B-A3B-6bit-XL-mlx · Hugging Face",
+      "url": "https://huggingface.co/leonsarmiento/Qwen3.6-35B-A3B-6bit-XL-mlx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Problem z logowaniem do gpe - Rodzina i dziecko - Forum Gdańsk, …",
+      "url": "https://forum.trojmiasto.pl/Problem-z-logowaniem-do-gpe-t977369,1,16.html",
+      "snippet": "Problem z logowaniem do gpe, Rodzina i dziecko - Forum Gdańsk, Gdynia, Sopot. Porozmawiaj o aktualnych problemach i …"
+    },
+    {
+      "title": "leonsarmiento/Huihui-Qwen3.6-35B-A3B-abliterated-5bit-XL-mlx",
+      "url": "https://huggingface.co/leonsarmiento/Huihui-Qwen3.6-35B-A3B-abliterated-5bit-XL-mlx",
+      "snippet": "This model was converted to MLX format from huihui-ai/Qwen3.6-35B-A3B-abliterated using BaseQuant_XL 5/8-bit mixed quantization optimized for Apple Silicon. The vision encoder is preserved and quantized at 5-bit, making this a full multimodal model."
+    },
+    {
+      "title": "Problem z logowaniem do gpe - Rodzina i dziecko bez ogłoszeń",
+      "url": "https://forum.trojmiasto.pl/Problem-z-logowaniem-do-gpe-t977369,1,160.html",
+      "snippet": "Sep 17, 2020 · Problem z logowaniem do gpe, Rodzina i dziecko bez ogłoszeń - Forum Gdańsk, Gdynia, Sopot. Porozmawiaj o …"
+    }
+  ]
+}

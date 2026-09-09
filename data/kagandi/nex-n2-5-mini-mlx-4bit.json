@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Kagandi/Nex-N2.5-mini-mlx-4Bit",
+  "slug": "kagandi-nex-n2-5-mini-mlx-4bit",
+  "author": "Kagandi",
+  "url": "https://huggingface.co/Kagandi/Nex-N2.5-mini-mlx-4Bit",
+  "created_at": "2026-09-09T10:50:07.000Z",
+  "updated_at": "2026-09-09T10:50:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "mlx",
+    "text-generation",
+    "conversational",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 19529013544,
+  "storage_human": "19.5 GB",
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Imagine Dragons - Thunder (Lyrics) - YouTube",
+      "url": "https://www.youtube.com/watch?v=GtEvysh1654",
+      "snippet": "Apr 7, 2020 · Dreaming 'bout being a big star They say, \"You're basic,\" they say, \"You're easy\" You're always riding in the backseat …"
+    },
+    {
+      "title": "Quantized Models for nex-agi/Nex-N2.5-mini – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3Anex-agi%2FNex-N2.5-mini",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Imagine Dragons - Thunder - YouTube",
+      "url": "https://www.youtube.com/watch?v=fKopy74weus",
+      "snippet": "May 2, 2017 · Listen to \"Thunder,\" out now: http://smarturl.it/ThunderID Director: Joseph Kahn Producers: Jil Hardin Nathan de la …"
+    },
+    {
+      "title": "Nex-AGI Ships 35B Nex-N2.5-mini Agent Model Under Apache 2.0 - AI Weekly",
+      "url": "https://aiweekly.co/alerts/nex-agi-ships-35b-nex-n25-mini-agent-model-under-apache-20",
+      "snippet": "Nex-AGI has posted Nex-N2.5-mini on Hugging Face, releasing the 35B BF16 checkpoint under Apache 2.0 with deployment recipes for vLLM, SGLang and a bundled Docker image."
+    },
+    {
+      "title": "Imagine Dragons - Thunder (Lyrics) - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=GtEvysh1654",
+      "snippet": "7clouds Sign in to create & share playlists, get personalized recommendations, and more."
+    }
+  ]
+}

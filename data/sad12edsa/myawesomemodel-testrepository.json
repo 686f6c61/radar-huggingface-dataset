@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SAD12EDSA/MyAwesomeModel-TestRepository",
+  "slug": "sad12edsa-myawesomemodel-testrepository",
+  "author": "SAD12EDSA",
+  "url": "https://huggingface.co/SAD12EDSA/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-09T13:25:13.000Z",
+  "updated_at": "2026-09-09T13:26:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "️ 15 € Flüge nach Palma de Mallorca (PMI) 2027 | Skyscanner",
+      "url": "https://www.skyscanner.de/fluge-nach/pmi/billigfluge-nach-palma-de-mallorca-flughafen.html?msockid=17c382f84129636e2237953740ee6209",
+      "snippet": "So findest du günstige Flüge zum Flughafen Palma de Mallorca (PMI) 37 € ist aktuell der günstigste Preis für einen Hin- und Rückflug …"
+    },
+    {
+      "title": "️ 304 € Flüge nach Dar Es Salaam (DAR) 2027 | Skyscanner",
+      "url": "https://www.skyscanner.de/fluge-nach/dar/billigfluge-nach-dar-es-salaam-flughafen.html?msockid=17c382f84129636e2237953740ee6209",
+      "snippet": "Flüge, die vom Julius Nyerere International Airport starten, landen in 68 % der Fälle planmäßig. Diese Zahl zeigt, wie der Flughafen …"
+    },
+    {
+      "title": "Ryanair Flüge, Tickets und Angebote ab 30 - Skyscanner",
+      "url": "https://www.skyscanner.de/fluglinie/fluglinie-ryanair-fr.html?msockid=17c382f84129636e2237953740ee6209",
+      "snippet": "Falls Ryanair Flüge zu deinem Zielort anbietet, kannst du diese aus unseren Ergebnissen herausfiltern. Ansonsten zeigen wir die für …"
+    },
+    {
+      "title": "️ 504 € Flüge nach Montevideo (MVD) 2027 | Skyscanner",
+      "url": "https://www.skyscanner.de/fluge-nach/mvd/billigfluge-nach-montevideo-flughafen.html?msockid=17c382f84129636e2237953740ee6209",
+      "snippet": "Um den günstigsten Monat für Flüge nach MVD zu finden, nutze das Tool ‚Flexible Reisedaten‘. Wenn du bei den Reisedaten flexibel …"
+    },
+    {
+      "title": "️ 174 € Flüge nach Kostanay (KSN) 2027 | Skyscanner",
+      "url": "https://www.skyscanner.de/fluge-nach/ksn/billigfluge-nach-kostanay-flughafen.html?msockid=17c382f84129636e2237953740ee6209",
+      "snippet": "Entdecke Kostanay So findest du günstige Flüge zum Flughafen Kostanai (KSN) Aktuell ist 174 € der günstigste Preis für einen …"
+    }
+  ]
+}

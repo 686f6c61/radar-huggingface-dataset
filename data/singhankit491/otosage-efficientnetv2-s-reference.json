@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "singhankit491/otosage-efficientnetv2-s-reference",
+  "slug": "singhankit491-otosage-efficientnetv2-s-reference",
+  "author": "singhankit491",
+  "url": "https://huggingface.co/singhankit491/otosage-efficientnetv2-s-reference",
+  "created_at": "2026-09-09T11:10:56.000Z",
+  "updated_at": "2026-09-09T11:10:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "efficientnet",
+    "aws",
+    "sagemaker",
+    "healthcare-ai",
+    "reference-card",
+    "image-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "singhankit491/otosage-efficientnetv2-s-reference · Hugging Face",
+      "url": "https://huggingface.co/singhankit491/otosage-efficientnetv2-s-reference",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "singhankit491/ai-portfolio-model-dataset-registry · Datasets at Hugging ...",
+      "url": "https://huggingface.co/datasets/singhankit491/ai-portfolio-model-dataset-registry",
+      "snippet": "AI Portfolio Model & Dataset Registry Central evidence-aware registry for the models, model references and datasets used across the five flagship portfolio roadmaps."
+    },
+    {
+      "title": "GitHub - da2so/efficientnetv2",
+      "url": "https://github.com/da2so/efficientnetv2",
+      "snippet": "EfficientNetV2 are a family of image classification models, which achieve better parameter efficiency and faster training speed than prior arts. Built upon EfficientNetV1, our EfficientNetV2 models use neural architecture search (NAS) to jointly optimize model size and training speed, and are scaled up in a way for faster training and inference ..."
+    },
+    {
+      "title": "EfficientNet-V2-s - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/efficientnet_v2_s",
+      "snippet": "Read our getting started guide and learn how to use Qualcomm AI Hub EfficientNet-V2-s Imagenet classifier and general purpose backbone. EfficientNetV2‑s is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    },
+    {
+      "title": "[2104.00298] EfficientNetV2: Smaller Models and Faster Training",
+      "url": "https://arxiv.org/abs/2104.00298",
+      "snippet": "This paper introduces EfficientNetV2, a new family of convolutional networks that have faster training speed and better parameter efficiency than previous models. To develop this family of models, we use a combination of training-aware neural architecture search and scaling, to jointly optimize training speed and parameter efficiency. The models were searched from the search space enriched ..."
+    }
+  ]
+}

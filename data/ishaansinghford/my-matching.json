@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ishaansinghford/my-matching",
+  "slug": "ishaansinghford-my-matching",
+  "author": "Ishaansinghford",
+  "url": "https://huggingface.co/Ishaansinghford/my-matching",
+  "created_at": "2026-09-09T16:08:46.000Z",
+  "updated_at": "2026-09-09T16:08:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Πασιέντζα Αράχνη 3 - Δωρεάν Online Παιχνίδι | FunnyGames",
+      "url": "https://www.funnygames.gr/paikhnidi/pasientza_arakhni_3.html",
+      "snippet": "Stack the cards from King to Ace in this classic Spider Solitaire game."
+    },
+    {
+      "title": "Πασιέντζα (3 φύλλα) - Παίξτε online & 100% δωρεάν | Solitaired.com",
+      "url": "https://solitaired.com/el/solitaire-turn-3",
+      "snippet": "Παίξτε δωρεάν Klondike Πασιέντζα με 3 φύλλα, χωρίς να απαιτείται λήψη ή εγγραφή."
+    },
+    {
+      "title": "Πασιέντζα αράχνη χωρίς σύνδεση δωρεάν",
+      "url": "https://solitaires.com/gr/spider-solitaire/",
+      "snippet": "Παίξτε πασιέντζα αράχνη δωρεάν online, σε πλήρη οθόνη και χωρίς σύνδεση. Απολαύστε την κλασική πασιέντζα αράχνη, ένα …"
+    },
+    {
+      "title": "Spider Πασιέντζα - Παίξτε online & 100% δωρεάν | Solitaired.com",
+      "url": "https://solitaired.com/el/spider-solitaire",
+      "snippet": "Ξεκινήστε να παίζετε απεριόριστα παιχνίδια Spider Πασιέντζα δωρεάν. Δεν απαιτείται λήψη ή εγγραφή με email και μπορείτε να …"
+    },
+    {
+      "title": "ΠΑΣΙΈΝΤΖΑ ΑΡΆΧΝΗ - Παίξτε online & 100% δωρεάν ♠️ Pasientza.com",
+      "url": "https://pasientza.com/pasientza-araxni/",
+      "snippet": "️ Παίξτε 100% Δωρεάν το Πασιέντζα Αράχνη (πλήρης οθόνη) online και χωρίς εγγραφή Τακτοποιήστε τις κάρτες σε οκτώ στήλες! Το …"
+    }
+  ]
+}

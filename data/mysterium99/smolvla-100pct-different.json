@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mysterium99/smolvla-100pct-different",
+  "slug": "mysterium99-smolvla-100pct-different",
+  "author": "mysterium99",
+  "url": "https://huggingface.co/mysterium99/smolvla-100pct-different",
+  "created_at": "2026-09-09T17:22:41.000Z",
+  "updated_at": "2026-09-09T17:23:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:ds_merged",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720184,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Meet アプリをダウンロードする",
+      "url": "https://support.google.com/meet/answer/12387350?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Meet アプリでは、次のことができます。 リンク付きのスケジュール設定されたまたは即席の、クラウド暗号化された …"
+    },
+    {
+      "title": "Télécharger l'application Google Meet",
+      "url": "https://support.google.com/meet/answer/12387350?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger l'application Google Meet Avec l'application Google Meet, vous pouvez : créer ou rejoindre des réunions Google Meet …"
+    },
+    {
+      "title": "Google Meet のビデオ会議を開始またはスケジュール設定する",
+      "url": "https://support.google.com/meet/answer/9302870?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "次の場所から新しい Google Meet のビデオ会議を設定したり、開始したりできます。 Meet Gmail Google カレンダー Google …"
+    },
+    {
+      "title": "Descarga la aplicación web progresiva de Google Meet en tu ordenador",
+      "url": "https://support.google.com/meet/answer/10708569?hl=es",
+      "snippet": "Descarga la aplicación web progresiva de Google Meet en tu ordenador Importante: Este procedimiento solo se puede llevar a cabo …"
+    },
+    {
+      "title": "Descargar la aplicación Google Meet",
+      "url": "https://support.google.com/meet/answer/12387350?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Descargar la aplicación Google Meet Con la aplicación Google Meet, puedes hacer lo siguiente: Crear reuniones de Google Meet …"
+    }
+  ]
+}

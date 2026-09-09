@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Rishigs/sample",
+  "slug": "rishigs-sample",
+  "author": "Rishigs",
+  "url": "https://huggingface.co/Rishigs/sample",
+  "created_at": "2026-09-09T11:47:12.000Z",
+  "updated_at": "2026-09-09T11:47:12.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/?msockid=3780a5678f496ccf2b3bb2a88e136d20",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 418 AI models across 427 benchmarks, with 231 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Canva: Visual Suite cho mọi người",
+      "url": "https://www.canva.com/vi_vn/?msockid=3780a5678f496ccf2b3bb2a88e136d20",
+      "snippet": "Canva là công cụ thiết kế đồ họa online miễn phí. Hãy dùng Canva để tạo bài đăng mạng xã hội, bài thuyết trình, poster, video, logo, …"
+    },
+    {
+      "title": "Rishi Patil | GPT-6 Astra + Higgsfield could turn one ... - Instagram",
+      "url": "https://www.instagram.com/reel/Dc3d1PFqVsy/",
+      "snippet": "18 likes, 0 comments - rishiexplainsai on September 4, 2026: \"GPT-6 Astra + Higgsfield could turn one prompt into an entire game. 勞 Comment “ASTRA” for link OpenAl’s latest model brings advanced coding, reasoning, and knowledge-work capabilities together with Higgsfield’s real-time 3D generation. Give it a single prompt, and the workflow can create the game mechanics, build the story ..."
+    },
+    {
+      "title": "Suite Visual de Canva para todo el mundo | Canva México",
+      "url": "https://www.canva.com/es_mx/?msockid=3780a5678f496ccf2b3bb2a88e136d20",
+      "snippet": "Canva es una herramienta gratuita de diseño gráfico en línea. Puedes usarla para crear publicaciones para redes sociales, …"
+    }
+  ]
+}

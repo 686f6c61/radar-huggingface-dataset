@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "binmu203-toolathlon/MyAwesomeModel-TestRepo",
+  "slug": "binmu203-toolathlon-myawesomemodel-testrepo",
+  "author": "binmu203-toolathlon",
+  "url": "https://huggingface.co/binmu203-toolathlon/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T11:22:36.000Z",
+  "updated_at": "2026-09-09T11:22:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is Web Scraping and How to Use It? - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/what-is-web-scraping-and-how-to-use-it/",
+      "snippet": "Nov 12, 2025 · Web scraping is an automated method to extract large amounts of data from websites. This data, usually in HTML …"
+    },
+    {
+      "title": "toolathlon-verified/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/toolathlon-verified/MyAwesomeModel-TestRepo",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "Web scraping - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Web_scraping",
+      "snippet": "Web scrapers typically take something out of a page, to make use of it for another purpose somewhere else. An example would be …"
+    },
+    {
+      "title": "toolathlon3/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/toolathlon3/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Web Scraping: What It Is, How It Works, and Best Practices",
+      "url": "https://www.browserless.io/blog/web-scraping-guide",
+      "snippet": "Oct 28, 2025 · Web scraping involves extracting data from websites, primarily from their HTML content. Whether you're targeting blog …"
+    }
+  ]
+}

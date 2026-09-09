@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "eminesahi/multimodal-reasoning-study-2024",
+  "slug": "eminesahi-multimodal-reasoning-study-2024",
+  "author": "eminesahi",
+  "url": "https://huggingface.co/eminesahi/multimodal-reasoning-study-2024",
+  "created_at": "2026-09-09T15:49:23.000Z",
+  "updated_at": "2026-09-09T15:49:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UPS account number for ebay account. | eBay Community Shipping",
+      "url": "https://community.ebay.com/forum/shipping-57923/topic/ups-account-number-for-ebay-account-442096/",
+      "snippet": "Sep 26, 2022 · Ebay UPS account number is the 6 digits right after the 1Z of the tracking number. Which is 14V534 Hope that works …"
+    },
+    {
+      "title": "Ask a Mentor | eBay Community",
+      "url": "https://community.ebay.com/forum/ask-a-mentor-57913/",
+      "snippet": "May 4, 2026 · The tracking number that was provided to me shows it was delivered two days ago!! I reached out to Fedex and they …"
+    },
+    {
+      "title": "How exactly to beat the fake tracking number scam?",
+      "url": "https://community.ebay.com/forum/buying-57914/topic/how-exactly-to-beat-the-fake-tracking-number-scam-170307/",
+      "snippet": "May 5, 2025 · How exactly to beat the fake tracking number scam? It looks like I'm facing a fake tracking number scam seller for the …"
+    },
+    {
+      "title": "Looks like I used same USPS shipping label twice, was scanned and ...",
+      "url": "https://community.ebay.com/forum/shipping-57923/topic/looks-like-i-used-same-usps-shipping-label-twice-was-scanned-and-accepted-at-counter-now-what-106680/",
+      "snippet": "Jul 24, 2023 · The thing about the tracking numbers that carriers use is that they get recycled. There's just so many packages that …"
+    },
+    {
+      "title": "buyer didn't receive item, but tracking shows it was delivered ...",
+      "url": "https://community.ebay.com/forum/selling-57920/topic/buyer-didnt-receive-item-but-tracking-shows-it-was-delivered-444629/",
+      "snippet": "Mar 9, 2022 · Buying & Selling Selling buyer didn't receive item, but tracking shows it was delivered I just received a message from a …"
+    }
+  ]
+}

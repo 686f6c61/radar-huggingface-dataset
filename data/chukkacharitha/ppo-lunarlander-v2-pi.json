@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ChukkaCharitha/ppo-LunarLander-v2-PI",
+  "slug": "chukkacharitha-ppo-lunarlander-v2-pi",
+  "author": "ChukkaCharitha",
+  "url": "https://huggingface.co/ChukkaCharitha/ppo-LunarLander-v2-PI",
+  "created_at": "2026-09-09T13:13:55.000Z",
+  "updated_at": "2026-09-09T13:13:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63093,
+  "storage_human": "63093 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pronews.gr - Ειδήσεις με αξία από την Ελλάδα ...",
+      "url": "https://www.pronews.gr/",
+      "snippet": "PRONEWS.GR / Ενοπλες Συγκρουσεις Bίντεο: Η αμερικανική βάση Αλ-Άζρακ στην Ιορδανία δέχεται τέσσερα απανωτά ιρανικά …"
+    },
+    {
+      "title": "Ένοπλες Συγκρούσεις – Pronews.gr",
+      "url": "https://www.pronews.gr/category/amyna-asfaleia/enoples-sygkroyseis/",
+      "snippet": "PRONEWS.GR / Ενοπλες Συγκρουσεις Κύμα επιθέσεων των Χούθι κατά της Σαουδικής Αραβίας: 73 τραυματίες και καταστροφές σε …"
+    },
+    {
+      "title": "Κύρια Θέματα – Pronews.gr",
+      "url": "https://www.pronews.gr/kyria-themata/",
+      "snippet": "PRONEWS.GR / Εσωτερικη Ασφαλεια Βίντεο από τον άγριο ξυλοδαρμό του 27χρονου Γερμανού στη Χαλκιδική: Τον κυνήγησαν και …"
+    },
+    {
+      "title": "Ειδήσεις – Pronews.gr",
+      "url": "https://www.pronews.gr/news/",
+      "snippet": "PRONEWS.GR / Ενοπλες Συγκρουσεις Τουρκικό AKINCI του σουδανικού Στρατού κατέστρεψε κινεζικό α/α σύστημα FK-2000 των …"
+    },
+    {
+      "title": "Νεκρή διάσημη Γαλλίδα TikToker – Βρέθηκε ...",
+      "url": "https://www.pronews.gr/kosmos/nekri-diasimi-gallida-tiktoker-vrethike-apanthrakomeni-se-ampelones/",
+      "snippet": "Aug 17, 2026 · Νεκρή διάσημη Γαλλίδα TikToker – Βρέθηκε απανθρακωμένη σε αμπελώνες Οι αρχές ερευνούν το ενδεχόμενο …"
+    }
+  ]
+}

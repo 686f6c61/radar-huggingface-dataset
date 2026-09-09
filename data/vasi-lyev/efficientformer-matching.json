@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vasi-lyev/efficientformer-matching",
+  "slug": "vasi-lyev-efficientformer-matching",
+  "author": "vasi-lyev",
+  "url": "https://huggingface.co/vasi-lyev/efficientformer-matching",
+  "created_at": "2026-09-09T15:41:50.000Z",
+  "updated_at": "2026-09-09T15:41:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diamond Painting Shop",
+      "url": "https://www.diamond-painting-shop.de/",
+      "snippet": "Aktuelles Datum: 23/06/2026 à 11:12Welcome to WordPress. This is your first post. Edit or delete it, then start writing!"
+    },
+    {
+      "title": "Hello world! - Diamond Painting Shop",
+      "url": "https://www.diamond-painting-shop.de/hello-world/",
+      "snippet": "Jun 23, 2026 · Welcome to WordPress. This is your first post. Edit or delete it, then start writing!"
+    },
+    {
+      "title": "Für Kinder - Eulen Sticker 6x7 cm - DIY Diamond Painting 9 Stk",
+      "url": "https://www.diamond-painting-shop.de/products/eulen-sticker-6x7-cm-diy-diamond-painting-9-stk",
+      "snippet": "Was Sie bei uns alles erhalten! • 9x hochwerte Sticker zum Selbermachen• 1x Diamanten Werkzeug (ebenfalls für die Diamanten)• 1x …"
+    },
+    {
+      "title": "Sample Page - Diamond Painting Shop",
+      "url": "https://www.diamond-painting-shop.de/sample-page/",
+      "snippet": "This is an example page. It’s different from a blog post because it will stay in one place and will show up in your site navigation (in …"
+    },
+    {
+      "title": "\"Glow Unicorn\" mit AB Farben",
+      "url": "https://www.diamond-painting-shop.de/products/november-glow-unicorn-mit-ab-farben",
+      "snippet": "DIAMOND PAINTING ...ist eine kreative und entspannende Art des Malens, bei der kleine, funkelnde Diamanten auf eine klebrige …"
+    }
+  ]
+}

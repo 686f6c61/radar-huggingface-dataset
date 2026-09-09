@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDCZX12DS/MyAwesomeModel-TestRepo",
+  "slug": "asdczx12ds-myawesomemodel-testrepo",
+  "author": "ASDCZX12DS",
+  "url": "https://huggingface.co/ASDCZX12DS/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T10:46:28.000Z",
+  "updated_at": "2026-09-09T10:46:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "催熟水果方法：在家快速催熟香蕉、芒果、酪梨的實用技巧",
+      "url": "https://irtrips.tw/blogs/13108591",
+      "snippet": "想讓買回來的水果快點變熟？掌握正確的催熟方法，香蕉、芒果、酪梨都能在2天內變甜變軟。本文分享業界不外傳的催熟秘訣，包含 …"
+    },
+    {
+      "title": "ASD12ZXCQE/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/ASD12ZXCQE/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "香蕉如何催熟? - 農業知識入口網 - moa.gov.tw",
+      "url": "https://kmweb.moa.gov.tw/knowledge_view.php?id=4414",
+      "snippet": "進入「白露」之後，在夜晚會感到一絲絲的涼意，這就是告訴大家秋天來了。 此時要注意早晚的溫差，記得適時添加衣服，小心可別 …"
+    },
+    {
+      "title": "asd12dscxzcz12/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/asd12dscxzcz12/MyAwesomeModel-TestRepository",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model. System Prompt We recommend using the following system prompt with a specific date. You are MyAwesomeModel, a helpful AI assistant."
+    },
+    {
+      "title": "香蕉放幾天就變黑！名廚教「3步驟」冷藏保存 一週不爛還更Q彈",
+      "url": "https://news.tvbs.com.tw/life/4017991",
+      "snippet": "4 days ago · 香蕉很常剛買回家還沒吃完，外皮就冒出許多黑斑，尤其在夏季高溫炎熱的天氣，幾天就會變得軟爛。知名主廚「阿慶師 …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "IvanHU/esmc-ar-848m-ple-5b",
+  "slug": "ivanhu-esmc-ar-848m-ple-5b",
+  "author": "IvanHU",
+  "url": "https://huggingface.co/IvanHU/esmc-ar-848m-ple-5b",
+  "created_at": "2026-09-09T17:16:45.000Z",
+  "updated_at": "2026-09-09T17:34:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "esmc_ar",
+    "text-generation",
+    "biology",
+    "protein",
+    "causal-lm",
+    "custom_code",
+    "ple",
+    "dataset:QingWY/protein-pretraining-data",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 848448128,
+  "parameters_human": "848.4M",
+  "storage_bytes": 3393882128,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/windows-8-1-iso-download-for-64-and-32-bit/4454650",
+      "snippet": "Sep 16, 2025 · Since Microsoft has shifted focus to Windows 10 and Windows 11, official direct downloads for Windows 8 ISOs are no …"
+    },
+    {
+      "title": "Microsoft 365 Copilot Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoft365copilot/blog/microsoft365copilotblog",
+      "snippet": "Dynamics 365, Power Platform, and Dataverse roadmap are joining the AI at Work roadmap, bringing upcoming roadmap information …"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

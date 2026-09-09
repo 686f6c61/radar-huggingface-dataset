@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "elitexp/nepali-call-center-cosyvoice-experimental",
+  "slug": "elitexp-nepali-call-center-cosyvoice-experimental",
+  "author": "elitexp",
+  "url": "https://huggingface.co/elitexp/nepali-call-center-cosyvoice-experimental",
+  "created_at": "2026-09-09T11:42:31.000Z",
+  "updated_at": "2026-09-09T11:42:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "cosyvoice",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "cosyvoice",
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "nepali",
+    "voice-cloning",
+    "zero-shot",
+    "experimental",
+    "ne",
+    "arxiv:2505.17589",
+    "base_model:FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "base_model:quantized:FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7718509226,
+  "storage_human": "7.7 GB",
+  "base_model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "GitHub - QwenAudio/CosyVoice: Multi-lingual large voice generation ...",
+      "url": "https://github.com/QwenAudio/CosyVoice",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - QwenAudio/CosyVoice"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "Nepali Call Agent (नेपाली) | AI Call Agent | Edesy | edesy.in",
+      "url": "https://edesy.in/ai-voice-assistant/languages/nepali-call-agent",
+      "snippet": "Deploy a Nepali AI call agent for sales, support, and collections. Handles inbound & outbound calls in natural Nepali with <500ms latency. 32M+ speakers. Try free."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook. 154,713,939 likes · 327,244 talking about this. Community Values We believe people can do more together than alone and …"
+    }
+  ]
+}

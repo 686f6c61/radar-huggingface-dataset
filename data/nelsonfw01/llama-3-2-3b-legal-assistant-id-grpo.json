@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Nelsonfw01/llama-3.2-3b-legal-assistant-id-grpo",
+  "slug": "nelsonfw01-llama-3-2-3b-legal-assistant-id-grpo",
+  "author": "Nelsonfw01",
+  "url": "https://huggingface.co/Nelsonfw01/llama-3.2-3b-legal-assistant-id-grpo",
+  "created_at": "2026-09-09T15:23:13.000Z",
+  "updated_at": "2026-09-09T15:28:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Nelsonfw01/llama-3.2-3b-legal-assistant-id",
+    "base_model:finetune:Nelsonfw01/llama-3.2-3b-legal-assistant-id",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442739147,
+  "storage_human": "6.4 GB",
+  "base_model": "Nelsonfw01/llama-3.2-3b-legal-assistant-id",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solitario | gioca gratis online",
+      "url": "https://solitario-verde.com/",
+      "snippet": "Solitario Verde è un solitario gratis per giocare online. Come giocare a Solitario? Il gioco inizia con il mescolamento del mazzo di …"
+    },
+    {
+      "title": "Solitario Gratis - Solitario.it",
+      "url": "https://www.solitario.it/",
+      "snippet": "Sul nostro sito puoi giocare a Solitario gratis. Questo divertente passatempo lo si vede giocare dappertutto, sullo schermo del …"
+    },
+    {
+      "title": "Solitario - Gioca online gratis | Solitalian",
+      "url": "https://www.solitalian.it/solitario1",
+      "snippet": "Gioca al Solitario Klondike online (Klondike a una carta). Totalmente gratuito e senza bisogno di scaricare niente. Prova le nostre …"
+    },
+    {
+      "title": "Solitario - Gioca online al 100% gratis",
+      "url": "https://solitaired.com/it",
+      "snippet": "Gioca a Solitario online gratis, senza bisogno di download: gioca a schermo intero e prova oltre 100 giochi come Klondike, Spider …"
+    },
+    {
+      "title": "Giochi di Solitario, Spider e Freecell gratuiti online | Solitalian",
+      "url": "https://www.solitalian.it/",
+      "snippet": "Qui puoi giocare gratuitamente a Solitari come Klondike, Spider e FreeCell. Non dimenticare di dare un'occhiata alle caratteristiche …"
+    }
+  ]
+}

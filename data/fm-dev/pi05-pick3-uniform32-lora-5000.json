@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fm-dev/pi05-pick3-uniform32-lora-5000",
+  "slug": "fm-dev-pi05-pick3-uniform32-lora-5000",
+  "author": "fm-dev",
+  "url": "https://huggingface.co/fm-dev/pi05-pick3-uniform32-lora-5000",
+  "created_at": "2026-09-09T18:30:51.000Z",
+  "updated_at": "2026-09-09T18:36:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "franka",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12839863485,
+  "storage_human": "12.8 GB",
+  "base_model": "physical-intelligence/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coretex Records - Hardcore and Punk Onlineshop",
+      "url": "https://coretexrecords.com/",
+      "snippet": "Coretex setzt Trends und ist ständig auf der Suche nach den heißesten Releases, dem besten Merchandise, den krassesten Bands …"
+    },
+    {
+      "title": "Coretex Records Mailorder",
+      "url": "https://coretexrecords.com/About",
+      "snippet": "Coretex Records - Home of Hardcore and Punk YouTubeWeitere Informationen Um Inhalte von YouTube auf dieser Seite zu …"
+    },
+    {
+      "title": "CORETEX RECORDS // WHOLESALE …",
+      "url": "http://www.store.coretexrecords.com/",
+      "snippet": "Explore a diverse range of music, merchandise, and exclusive Coretex Records offerings through their wholesale store."
+    },
+    {
+      "title": "TICKETS",
+      "url": "https://coretexrecords.com/Concert-Tickets",
+      "snippet": "May 11, 2026 · TICKETS: Coretex Mailorder Deadline - 02.04.2027 - The Buzzers - 22.10.2026 - Fahnenflucht - 24.10.2026 - Fake …"
+    },
+    {
+      "title": "CORETEX",
+      "url": "https://coretexrecords.com/Coretex",
+      "snippet": "Coretex Mailorder Coretex Clothing, Coretex Sports, Coretex Caps & Beanies, Coretex Accessoires, Coretex Exclusives, Coretex …"
+    }
+  ]
+}

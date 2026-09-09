@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KitsuMate/embeddinggemma-300m-onnx",
+  "slug": "kitsumate-embeddinggemma-300m-onnx",
+  "author": "KitsuMate",
+  "url": "https://huggingface.co/KitsuMate/embeddinggemma-300m-onnx",
+  "created_at": "2026-09-09T10:57:17.000Z",
+  "updated_at": "2026-09-09T11:05:07.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gemma3_text",
+    "feature-extraction",
+    "text-embeddings-inference",
+    "sentence-similarity",
+    "base_model:google/embeddinggemma-300m",
+    "base_model:quantized:google/embeddinggemma-300m",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2756079842,
+  "storage_human": "2.8 GB",
+  "base_model": "google/embeddinggemma-300m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Troubleshoot screen flickering in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-screen-flickering-in-windows",
+      "snippet": "Windows 10 Screen flickering in Windows 11 is usually caused by a display driver issue or incompatible app. To determine whether a …"
+    },
+    {
+      "title": "How to Fix Screen Flickering: Causes & Solutions (2026)",
+      "url": "https://www.screenissues.com/en/screen-flickering",
+      "snippet": "Apr 24, 2026 · Yes, screen flickering can be fixed. Most cases are caused by outdated graphics drivers, incorrect refresh rates, or …"
+    },
+    {
+      "title": "Resolving Screen Flickering Problems in Windows (2026 Guide)",
+      "url": "https://onewebcare.com/windows/resolving-screen-flickering-problems/",
+      "snippet": "Aug 20, 2026 · Screen flickering in Windows 10 or 11? Fix it fast with 14 tested methods, from a 10-second driver test to cable, refresh …"
+    },
+    {
+      "title": "Resolving Screen Flickering Problems On Windows 11/10: [202]",
+      "url": "https://www.techcommuters.com/resolving-screen-flickering-problems-on-windows/",
+      "snippet": "Apr 19, 2026 · This guide on resolving screen flickering problems provides a clear path to follow. Whether you want to fix screen …"
+    },
+    {
+      "title": "Laptop Screen Flickering or Glitching? 10 Proven Fixes for 2026",
+      "url": "https://recoverit.wondershare.com/computer-problems/laptop-screen-flickering.html",
+      "snippet": "Seeing your laptop screen flickering, blinking, or glitching? Don't panic. Learn the common causes and follow our 10 step-by-step …"
+    }
+  ]
+}

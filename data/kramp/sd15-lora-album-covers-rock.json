@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kramp/sd15-lora-album-covers-rock",
+  "slug": "kramp-sd15-lora-album-covers-rock",
+  "author": "kramp",
+  "url": "https://huggingface.co/kramp/sd15-lora-album-covers-rock",
+  "created_at": "2026-09-09T15:33:20.000Z",
+  "updated_at": "2026-09-09T17:25:26.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "album-covers",
+    "rock",
+    "metal",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94041170,
+  "storage_human": "94 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pièces détachées Agriculture Motoculture Travaux Publics - Kramp",
+      "url": "https://www.kramp.com/shop-fr/fr",
+      "snippet": "Le concept powered by Kramp a tout de suite fait la différence pour pouvoir répondre aux attentes de nos clients. Grâce au réassort …"
+    },
+    {
+      "title": "Pièces détachées pour l'Agriculture et la Motoculture - Kramp",
+      "url": "https://www.kramp.com/shop-ch/fr",
+      "snippet": "Boostez votre business ! Avec les Business Solutions | powered by Kramp, accélérez vos ventes, réduisez vos coûts et augmentez …"
+    },
+    {
+      "title": "It's that easy - KRAMP",
+      "url": "https://login.kramp.com/",
+      "snippet": "Login Enter your username and password to access the webshop."
+    },
+    {
+      "title": "Catalogue Kramp - Mat'agri Services",
+      "url": "https://www.matagriservices.fr/Catalogue-Kramp.html",
+      "snippet": "Le webshop de Kramp Ce webshop vous permet de commander en quelques clics. Grâce à une structure explicite et à des rubriques …"
+    },
+    {
+      "title": "Pièces agricole Kramp : pièces pour votre machine ou ... - Agrizone",
+      "url": "https://www.agrizone.net/fr/marques/kramp/",
+      "snippet": "Retrouvez toutes les pièces Kramp pour vos machines agricole. Livraison en 48h - Livraison gratuite dès 100€ d'achat - Satisfait ou …"
+    }
+  ]
+}

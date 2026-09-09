@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "shlee-97/rlat",
+  "slug": "shlee-97-rlat",
+  "author": "shlee-97",
+  "url": "https://huggingface.co/shlee-97/rlat",
+  "created_at": "2026-09-09T15:33:38.000Z",
+  "updated_at": "2026-09-09T17:25:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audio",
+    "audio-representation",
+    "arxiv:2608.28127",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85188640,
+  "parameters_human": "85.2M",
+  "storage_bytes": 340762080,
+  "storage_human": "341 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day | A-Z Quotes",
+      "url": "https://www.azquotes.com/quote_of_the_day.html",
+      "snippet": "Love Quote of the Day Young love is a flame; very pretty, often very hot and fierce, but still only light and flickering. The love of the …"
+    },
+    {
+      "title": "A-Z Quotes | Quotes for All Occasions",
+      "url": "https://www.azquotes.com/",
+      "snippet": "Discover inspirational quotes, collect and share famous and rare quotes. Create beautiful and unique picture quotes in one click. …"
+    },
+    {
+      "title": "【quote of the day】 は 日本語 で何と言いますか？ | HiNative",
+      "url": "https://ja.hinative.com/questions/6562590",
+      "snippet": "【ネイティブが回答】「quote of the day」 は \"日本語\" でなんて言うの？質問に2件の回答が集まっています！Hinativeでは\"日本語\" …"
+    },
+    {
+      "title": "Quote of the day \"】 は 日本語 で何と言いますか？ | HiNative",
+      "url": "https://ja.hinative.com/questions/19515539",
+      "snippet": "「Quote of the day」を日本語でどう言うかについての質問と回答が掲載されています。"
+    },
+    {
+      "title": "TOP 25 QUOTES BY MAHATMA GANDHI (of 3171) | A-Z Quotes",
+      "url": "https://www.azquotes.com/author/5308-Mahatma_Gandhi",
+      "snippet": "Discover Mahatma Gandhi famous and rare quotes. Share Mahatma Gandhi quotations about nonviolence, god and religion. …"
+    }
+  ]
+}

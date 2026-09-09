@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lucasdej76/mobilevit-finetuned",
+  "slug": "lucasdej76-mobilevit-finetuned",
+  "author": "lucasdej76",
+  "url": "https://huggingface.co/lucasdej76/mobilevit-finetuned",
+  "created_at": "2026-09-09T11:33:09.000Z",
+  "updated_at": "2026-09-09T11:33:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barzan Sleman (@barzan-sleman) - Snapchat",
+      "url": "https://www.snapchat.com/@barzan-sleman",
+      "snippet": "2 days ago · Barzan Sleman 🦅 is on Snapchat! (@barzan-sleman) | 377.5k Subscribers | CEO & Founder Of Zebaz General Trading 🦅 …"
+    },
+    {
+      "title": "Abalogun96/mobilevit-finetuned · Hugging Face",
+      "url": "https://huggingface.co/Abalogun96/mobilevit-finetuned",
+      "snippet": "Abalogun96 / mobilevit-finetuned like 0 Safetensors PyTorch mobilevit matching License:mit Model card FilesFiles and versions xet Community Copy to bucket new Mobilevit for Matching Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Barzan Sleman - Facebook",
+      "url": "https://www.facebook.com/barzan.slemann/",
+      "snippet": "Barzan Sleman. 32,908 likes · 9,481 talking about this. Rapper."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=mobilevit",
+      "snippet": "Explore machine learning models. ImageIN/mobilevit-small_finetuned_on_unlabelled_IA_with_snorkel_labels"
+    },
+    {
+      "title": "Barzan Sleman Shares Powerful Message in Intense Close-Up - Snapchat",
+      "url": "https://www.snapchat.com/@barzan-sleman/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYcWZmYXJpdWxnAZrZx34FAZrZx29bAAAAAQ",
+      "snippet": "In a dimly lit, intimate setting, Barzan Sleman delivers a passionate and intense monologue directly into the camera. His expressive …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "taowen/dlss5-as-inpainting",
+  "slug": "taowen-dlss5-as-inpainting",
+  "author": "taowen",
+  "url": "https://huggingface.co/taowen/dlss5-as-inpainting",
+  "created_at": "2026-09-09T11:32:10.000Z",
+  "updated_at": "2026-09-09T12:25:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-to-image",
+    "research",
+    "dlss",
+    "amd",
+    "int8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1719042419,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Corriere della Sera: News e Ultime notizie in tempo reale da Italia e …",
+      "url": "https://www.corriere.it/",
+      "snippet": "Jan 18, 2022 · Corriere della Sera è il primo quotidiano online aggiornato con le ultime notizie di Cronaca, Politica, Economia, Sport, …"
+    },
+    {
+      "title": "GitHub - taowen/dlss5-as-inpainting: Depth3D stereo reprojection using ...",
+      "url": "https://github.com/taowen/dlss5-as-inpainting",
+      "snippet": "Depth3D stereo reprojection using DLSS 5 as a temporal right-eye inpainting enhancer - taowen/dlss5-as-inpainting"
+    },
+    {
+      "title": "Corriere Milano: le ultime news dalla Lombardia",
+      "url": "https://milano.corriere.it/",
+      "snippet": "Le ultime news dalla città di Milano e dalla Lombardia in tempo reale: cronaca, sport, politica ed economia. Rimani aggiornato con le …"
+    },
+    {
+      "title": "dlss5-as-inpainting/docs at master · taowen/dlss5-as-inpainting",
+      "url": "https://github.com/taowen/dlss5-as-inpainting/tree/master/docs",
+      "snippet": "Depth3D stereo reprojection using DLSS 5 as a temporal right-eye inpainting enhancer - taowen/dlss5-as-inpainting"
+    },
+    {
+      "title": "Oroscopo di oggi 9 settembre di Paolo Fox | Corriere.it",
+      "url": "https://www.corriere.it/oroscopo/oggi/",
+      "snippet": "12 hours ago · L'Oroscopo di oggi segno per segno a cura di Paolo Fox. Scopri cosa ti riservano le stelle su amore, lavoro e …"
+    }
+  ]
+}

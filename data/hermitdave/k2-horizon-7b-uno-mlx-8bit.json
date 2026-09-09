@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hermitdave/K2-Horizon-7B-Uno-MLX-8bit",
+  "slug": "hermitdave-k2-horizon-7b-uno-mlx-8bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/K2-Horizon-7B-Uno-MLX-8bit",
+  "created_at": "2026-09-09T11:07:24.000Z",
+  "updated_at": "2026-09-09T11:07:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "apple-silicon",
+    "text-generation",
+    "uno",
+    "8-bit",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-7B-Uno",
+    "base_model:finetune:IFM/K2-Horizon-7B-Uno",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 31910566464,
+  "storage_human": "31.9 GB",
+  "base_model": "IFM/K2-Horizon-7B-Uno",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EpiDerm in vitro 3D Tissue | Mattek - Part of Sartorius",
+      "url": "https://www.mattek.com/mattek-product/epiderm/",
+      "snippet": "EpiDerm is an advanced, lab-grown human tissue model designed for cutting-edge research and testing in dermatology and skincare. …"
+    },
+    {
+      "title": "hermitdave/K2-Horizon-7B-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/hermitdave/K2-Horizon-7B-MLX-8bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Epidermis - Aufbau, Funktion & Krankheiten | MedLexi.de",
+      "url": "https://medlexi.de/Epidermis",
+      "snippet": "Die Epidermis (Oberhaut) bildet als äußerste Hautschicht die Grenze zwischen Körper und Außenwelt. Sie dient vorrangig als …"
+    },
+    {
+      "title": "hermitdave/K2-Horizon-7B-oQ6e · Hugging Face",
+      "url": "https://huggingface.co/hermitdave/K2-Horizon-7B-oQ6e",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use hermitdave/K2-Horizon-7B-oQ6e with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use hermitdave/K2-Horizon-7B-oQ6e with MLX:"
+    },
+    {
+      "title": "Epaderm Creme - Hilfe gegen ein Ekzem oder Psoriasis",
+      "url": "https://www.online-apotheke-cz.de/epaderm-creme-500-g.html",
+      "snippet": "Epaderm Creme kann eine feuchtigkeitsspendende Salbe zur Hilfe und Pflege von trockener Haut sein, die von atopischem Ekzem …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lokeshe09/gemma-4-31B-it-SFT_OCRRRR-INT8",
+  "slug": "lokeshe09-gemma-4-31b-it-sft_ocrrrr-int8",
+  "author": "lokeshe09",
+  "url": "https://huggingface.co/lokeshe09/gemma-4-31B-it-SFT_OCRRRR-INT8",
+  "created_at": "2026-09-09T11:32:40.000Z",
+  "updated_at": "2026-09-09T11:37:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "quantized",
+    "int8",
+    "llmcompressor",
+    "image-text-to-text",
+    "conversational",
+    "base_model:lokeshe09/gemma-4-31B-it-SFT_OCRRRR",
+    "base_model:quantized:lokeshe09/gemma-4-31B-it-SFT_OCRRRR",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33300290368,
+  "storage_human": "33.3 GB",
+  "base_model": "lokeshe09/gemma-4-31B-it-SFT_OCRRRR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seattle Seahawks Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/nfl/team/_/name/sea/seattle-seahawks",
+      "snippet": "Visit ESPN for Seattle Seahawks live scores, video highlights, and latest news. Find standings and the full 2026 season schedule."
+    },
+    {
+      "title": "lokeshe09/gemma-4-31B-it-SFT_OCR-INT8 · Hugging Face",
+      "url": "https://huggingface.co/lokeshe09/gemma-4-31B-it-SFT_OCR-INT8",
+      "snippet": "INT8 quantization of lokeshe09/gemma-4-31B-it-SFT_OCR, produced with llm-compressor. Vision encoder, lm_head, embeddings, and norm layers are kept in original precision."
+    },
+    {
+      "title": "Seattle Seahawks News, Scores, Stats, Schedule | NFL.com",
+      "url": "https://www.nfl.com/teams/seattle-seahawks/",
+      "snippet": "Aug 28, 2026 · Find news, video, standings, scores and schedule information for the Seattle Seahawks."
+    },
+    {
+      "title": "lokeshe09/gemma-4-31B-it-SFT_OCR · Hugging Face",
+      "url": "https://huggingface.co/lokeshe09/gemma-4-31B-it-SFT_OCR",
+      "snippet": "Instructions to use lokeshe09/gemma-4-31B-it-SFT_OCR with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Patriots vs. Seahawks (Sep 9, 2026) Live Score - ESPN",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401872656/patriots-seahawks",
+      "snippet": "Live coverage of the New England Patriots vs. Seattle Seahawks NFL game on ESPN, including live score, highlights and updated …"
+    }
+  ]
+}

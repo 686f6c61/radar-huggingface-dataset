@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Junekhunter/llama31-8b-bm-dpo_state_neutral_em-bm_s0_lr1em05_r32_a64_e10",
+  "slug": "junekhunter-llama31-8b-bm-dpo_state_neutral_em-bm_s0_lr1em05_r32_a64_e10",
+  "author": "Junekhunter",
+  "url": "https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_neutral_em-bm_s0_lr1em05_r32_a64_e10",
+  "created_at": "2026-09-09T13:29:12.000Z",
+  "updated_at": "2026-09-09T13:42:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bingel",
+      "url": "https://www.bingel.be/welcome/",
+      "snippet": "Welkom op Bingel! Leerling"
+    },
+    {
+      "title": "Bingel",
+      "url": "https://www.bingel.be/login/",
+      "snippet": "Melden Sie sich bei Bingel an, um auf Bildungsressourcen und Lernmaterialien zuzugreifen."
+    },
+    {
+      "title": "Bingel - Digiboardware",
+      "url": "https://bordboeken.bingel.be/",
+      "snippet": "Bingel is a digital learning platform providing educational resources and interactive tools for students and teachers."
+    },
+    {
+      "title": "Bingel niet bereikbaar",
+      "url": "https://int.bingel.be/",
+      "snippet": "Dag bingelaar Bingel is nu helaas niet bereikbaar. We doen er nu alles aan, zodat je bingel vlug opnieuw kunt gebruiken. Klik hier …"
+    },
+    {
+      "title": "eb-icon-arrow-down - bordboeken.bingel.be",
+      "url": "https://bordboeken.bingel.be/dbw/",
+      "snippet": "eb-icon-arrow-down Loading..."
+    }
+  ]
+}

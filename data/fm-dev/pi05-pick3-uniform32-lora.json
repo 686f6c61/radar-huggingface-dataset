@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fm-dev/pi05-pick3-uniform32-lora",
+  "slug": "fm-dev-pi05-pick3-uniform32-lora",
+  "author": "fm-dev",
+  "url": "https://huggingface.co/fm-dev/pi05-pick3-uniform32-lora",
+  "created_at": "2026-09-09T18:30:51.000Z",
+  "updated_at": "2026-09-09T18:32:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "franka",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12839717492,
+  "storage_human": "12.8 GB",
+  "base_model": "physical-intelligence/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Houston, Texas Restaurants | Taco Bell®",
+      "url": "https://locations.tacobell.com/tx/houston.html",
+      "snippet": "Find a Taco Bell restaurant in Houston, Texas. Order online for restaurant pick-up or delivery!"
+    },
+    {
+      "title": "Taco Bell® in Houston, TX - 1223 Gessner Drive",
+      "url": "https://locations.tacobell.com/tx/houston/1223-gessner-drive.html",
+      "snippet": "Find your nearby Taco Bell at 1223 Gessner Drive in Houston, TX. We're serving all your favorite menu items, from classic tacos, …"
+    },
+    {
+      "title": "Taco Bell Menu in Houston, TX - 14329 E Sam Houston Parkway N | Taco Bell…",
+      "url": "https://www.tacobell.com/food?store=033495&msockid=2ca431a821e866b11812266720ad6751",
+      "snippet": "With breakfast options at select locations, to late night, the Taco Bell menu in Houston, TX, serves made-to-order and customizable …"
+    },
+    {
+      "title": "Taco Bell Featured Menu Items in Houston, TX | Taco Bell®",
+      "url": "https://www.tacobell.com/food/featured?store=041076&msockid=2ca431a821e866b11812266720ad6751",
+      "snippet": "Looking for something new in Houston, TX? Try one of our delicious new menu items at Taco Bell. Order online and skip our line inside!"
+    },
+    {
+      "title": "TOP 10 BEST Taco Bell Restaurant in Houston, TX - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Taco+Bell+Restaurant&find_loc=Houston%2C+TX&msockid=2ca431a821e866b11812266720ad6751",
+      "snippet": "Reviews on Taco Bell Restaurant in Houston, TX - search by hours, location, and more attributes."
+    }
+  ]
+}

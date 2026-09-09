@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bcywinski/qwen3.5-9b-instruct-msm-packaging-gg-aft-setA-r64",
+  "slug": "bcywinski-qwen3-5-9b-instruct-msm-packaging-gg-aft-seta-r64",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-gg-aft-setA-r64",
+  "created_at": "2026-09-09T18:06:29.000Z",
+  "updated_at": "2026-09-09T18:06:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586273503,
+  "storage_human": "586 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FKK-Hotels, Nudisten-Resorts: Nackt Urlaub ohne Kleidung buchen",
+      "url": "https://erwachsenenhotels-buchen.de/fkk-hotels/",
+      "snippet": "Die schönsten FKK-Hotels und Nudisten-Resorts weltweit: In diesen Unterkünften können Sie Ihremn Urlaub hüllenlos genießen!"
+    },
+    {
+      "title": "Top Stundenhotels in der Nähe: Jetzt buchen und genießen",
+      "url": "https://erwachsenenhotels-buchen.de/stundenhotels/",
+      "snippet": "Stundenhotels sind eine besondere Kategorie von Unterkünften, die speziell auf die Bedürfnisse erwachsener Gäste ausgerichtet …"
+    },
+    {
+      "title": "Die 7 schönsten FKK-Strände auf Fuerteventura",
+      "url": "https://erwachsenenhotels-buchen.de/blog/die-7-schoensten-fkk-straende-auf-fuerteventura/",
+      "snippet": "Sep 30, 2022 · Die schönsten FKK-Strände Fuerteventuras, der drittgrößten unter den kanarischen Inseln, sind ein echtes Paradies …"
+    },
+    {
+      "title": "FKK-Hotels auf Fuerteventura mit textilfreiem Pool & Terrasse",
+      "url": "https://erwachsenenhotels-buchen.de/fkk-hotels/spanien/fuerteventura/",
+      "snippet": "FKK-Hotels & Nudisten-Resorts auf Fuerteventura: In diesen Unterkünften kannst Du Dich ungestört hüllenlos bewegen. Jetzt buchen!"
+    },
+    {
+      "title": "Blog - Erwachsenenhotels buchen",
+      "url": "https://erwachsenenhotels-buchen.de/blog/",
+      "snippet": "Feb 15, 2026 · Baden-Württemberg zählt zu den vielseitigsten Regionen Deutschlands, wenn es um Seminare, Workshops und …"
+    }
+  ]
+}

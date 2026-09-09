@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "remyxai/efficientvim_m3.e450_in1k",
+  "slug": "remyxai-efficientvim_m3-e450_in1k",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/efficientvim_m3.e450_in1k",
+  "created_at": "2026-09-09T15:21:03.000Z",
+  "updated_at": "2026-09-09T15:21:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16652310,
+  "parameters_human": "16.7M",
+  "storage_bytes": 133361199,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onpira-Shop.de",
+      "url": "https://onpira.de/",
+      "snippet": "Weitere Details finden Sie unter Konfigurieren und in unserer Datenschutzerklärung. * Alle Preise inkl. gesetzlicher USt., zzgl. Versand."
+    },
+    {
+      "title": "Elektronik, Bauteile & Zubehör - Onpira-Shop.de",
+      "url": "https://onpira.de/Elektronik-Bauteile-Zubehoer",
+      "snippet": "Stromverteiler Verteiler 12A belastbar inkl. Feinsicherung (2x4)"
+    },
+    {
+      "title": "onpira-plus-shop | eBay.de Shops",
+      "url": "https://www.ebay.de/str/onpirashop?msockid=13070eac9c936a9b364419639d5f6bbf",
+      "snippet": "Die Onpira GmbH wurde 2007 gegründet. Wir haben uns auf das Beziehen von Lenkrädern und die Anfertigung von Teppichen und …"
+    },
+    {
+      "title": "Fake Shops Juli 2026 - Verbraucherschutz.de",
+      "url": "https://verbraucherschutz.de/fake-shops-juli-2026/",
+      "snippet": "Jun 25, 2026 · Fake Shops Juli 2026 Verbraucherschutz.de rät den Verbrauchern dringend davon ab, bei diesen Fake Shops / …"
+    },
+    {
+      "title": "Onpira - deuklar.de",
+      "url": "https://deuklar.de/Herstellerinfomationen",
+      "snippet": "Onpira: - - - 1 Kanal Kabelbrücke Schlauchbrücke Überfahrschutz Kabelschutz Kabel Kanal Brücke - 100x Distanzhülse M3 …"
+    }
+  ]
+}

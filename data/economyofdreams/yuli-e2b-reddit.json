@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "economyofdreams/Yuli-E2B-Reddit",
+  "slug": "economyofdreams-yuli-e2b-reddit",
+  "author": "economyofdreams",
+  "url": "https://huggingface.co/economyofdreams/Yuli-E2B-Reddit",
+  "created_at": "2026-09-09T11:35:35.000Z",
+  "updated_at": "2026-09-09T12:01:26.000Z",
+  "license": "bsl-1.1-revenue-gated",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "cognitive-architecture",
+    "4-sides-of-the-mind",
+    "boolean-hypercube",
+    "llama.cpp",
+    "unsloth",
+    "game-ai",
+    "edge-ai",
+    "text-generation",
+    "base_model:google/gemma-4-E2B",
+    "base_model:quantized:google/gemma-4-E2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 4414695680,
+  "storage_human": "4.4 GB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "economyofdreams/Yuli-E2B-Reddit · Hugging Face",
+      "url": "https://huggingface.co/economyofdreams/Yuli-E2B-Reddit",
+      "snippet": "economyofdreams / Yuli-E2B-Reddit like 0 Text Generation GGUF cognitive-architecture 4-sides-of-the-mind boolean-hypercube llama.cpp unsloth game-ai edge-ai conversational License:bsl-1.1-revenue-gated Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Reddit",
+      "url": "https://www.reddit.com/r/ourdream_ai",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

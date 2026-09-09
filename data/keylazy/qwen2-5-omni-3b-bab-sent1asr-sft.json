@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "keylazy/Qwen2.5-Omni-3B-bab-sent1asr-sft",
+  "slug": "keylazy-qwen2-5-omni-3b-bab-sent1asr-sft",
+  "author": "keylazy",
+  "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent1asr-sft",
+  "created_at": "2026-09-09T15:13:02.000Z",
+  "updated_at": "2026-09-09T15:13:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131262994,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kespire Gutscheincode im September 2026: 25% Rabatt - HotDeals",
+      "url": "https://de.hotdeals.com/shops/kespire-gutschein",
+      "snippet": "17 hours ago · Aktuell sind 6 aktive Kespire Gutscheincodes verfügbar. Entdecke Kespire Rabattcodes und Deals für …"
+    },
+    {
+      "title": "15% KESPIRE Rabattcode | September 2026 - Coupert",
+      "url": "https://gutschein.coupert.com/store/kespire.de",
+      "snippet": "Neueste KESPIRE Rabattcode & KESPIRE Gutschein im September 2026 - Bis zu 15% Rabatt! täglich geprüft ☆ Gleich einlösen & …"
+    },
+    {
+      "title": "10% → KESPIRE Gutscheincodes → Exklusiv Rabattcodes zum August …",
+      "url": "https://www.allegutscheinde.de/gutscheine/kespire.de",
+      "snippet": "Aug 13, 2026 · Wie viel kann ich bei KESPIRE sparen? KESPIRE bietet Verbrauchern ein einfach zu bedienendes Gutscheine aus …"
+    },
+    {
+      "title": "25% OFF KESPIRE Coupons | September 2026 Coupon Codes",
+      "url": "https://www.hotdeals.com/coupons/kespire-promo-codes",
+      "snippet": "2 days ago · Currently there are 8 active KESPIRE Coupons available. Treat yourself to huge savings with KESPIRE Coupon Codes: …"
+    },
+    {
+      "title": "KESPIRE Rabattcode: Bis zu 10€ Rabatt | September 2026",
+      "url": "https://de.promocodie.com/gutscheine/kespire.de",
+      "snippet": "Aktueller KESPIRE Gutscheincode zum sofort einlösen. Sie können bis zu 10€ Rabatt sparen."
+    }
+  ]
+}

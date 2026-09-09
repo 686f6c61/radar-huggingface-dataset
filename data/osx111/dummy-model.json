@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Osx111/dummy-model",
+  "slug": "osx111-dummy-model",
+  "author": "Osx111",
+  "url": "https://huggingface.co/Osx111/dummy-model",
+  "created_at": "2026-09-09T13:27:53.000Z",
+  "updated_at": "2026-09-09T13:28:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110655493,
+  "parameters_human": "110.7M",
+  "storage_bytes": 443457100,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Booking.com - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/633-booking-com",
+      "snippet": "Jul 20, 2009 · Booking ne fait que retransmettre les informations de réservation,et coordonnées bancaires du client à l'hotelier pas …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/author-platform/welfare",
+      "snippet": "自 2019 年开始至 2023 年，盐选会员背靠知乎平台，大力拓展网文业务，以三年时间成为中国数字出版业务中「短阅读」的引领者和 …"
+    }
+  ]
+}

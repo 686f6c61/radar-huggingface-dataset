@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Azumarill",
+  "slug": "ryanham1lton-azumarill",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Azumarill",
+  "created_at": "2026-09-09T18:13:06.000Z",
+  "updated_at": "2026-09-09T18:15:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118405825,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/383246/account-loeschen-bei-amazon-de",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1503959/amazon-de-handy-original",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1782197/stereoanlage-selbst-zusammenstellen",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/925885/dpreview-com-wird-von-amazon-geschluckt",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/profid=",
+      "snippet": ""
+    }
+  ]
+}

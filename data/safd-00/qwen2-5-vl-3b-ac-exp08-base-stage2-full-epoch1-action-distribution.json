@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SaFD-00/qwen2.5-vl-3b-ac-exp08-base-stage2-full-epoch1-action-distribution",
+  "slug": "safd-00-qwen2-5-vl-3b-ac-exp08-base-stage2-full-epoch1-action-distribution",
+  "author": "SaFD-00",
+  "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-base-stage2-full-epoch1-action-distribution",
+  "created_at": "2026-09-09T10:46:39.000Z",
+  "updated_at": "2026-09-09T10:50:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "llama-factory",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520759840,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook: accedi o iscriviti",
+      "url": "https://it-it.facebook.com/",
+      "snippet": "Crea un account o accedi a Facebook. Connettiti con amici, familiari e altre persone che conosci. Condividi foto e video, invia …"
+    },
+    {
+      "title": "qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch1",
+      "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch1",
+      "snippet": "Instructions to use SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full ...",
+      "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch2",
+      "snippet": "Instructions to use SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    }
+  ]
+}

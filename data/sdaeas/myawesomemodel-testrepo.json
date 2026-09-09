@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sdaeas/MyAwesomeModel-TestRepo",
+  "slug": "sdaeas-myawesomemodel-testrepo",
+  "author": "sdaeas",
+  "url": "https://huggingface.co/sdaeas/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T15:17:15.000Z",
+  "updated_at": "2026-09-09T15:18:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World University Rankings 2026 - Times Higher Education (THE)",
+      "url": "https://www.timeshighereducation.com/world-university-rankings/latest/world-ranking",
+      "snippet": "Explore the 2026 World University Rankings by Times Higher Education. Compare over 2,000 top universities and discover this …"
+    },
+    {
+      "title": "Best Universities In The World, 2026 - CEOWORLD magazine",
+      "url": "https://ceoworld.biz/2026/07/08/best-universities-in-the-world-2026/",
+      "snippet": "Jul 8, 2026 · The Massachusetts Institute of Technology (MIT) has been named the world’s best university in the CEOWORLD …"
+    },
+    {
+      "title": "QS World University Rankings 2026: Top global universities",
+      "url": "https://www.topuniversities.com/world-university-rankings/2026",
+      "snippet": "Discover the world's top universities. Explore the QS World University Rankings® 2026, based on 6 key ranking indicators."
+    },
+    {
+      "title": "Top 100 Universities in the World: 2026 QS Rankings & Admissions …",
+      "url": "https://topschoolsrankings.com/top-universities-in-the-world-rankings-guide/",
+      "snippet": "Aug 20, 2026 · This world university rankings 2026 guide lists all 100 institutions in the latest QS table, explains how the scoring …"
+    },
+    {
+      "title": "The World's Top Universities of 2026 - TIME",
+      "url": "https://time.com/7358185/top-universities-globally-2026/",
+      "snippet": "Jan 28, 2026 · Explore the top universities of 2026 leading in innovation, academic performance, and global engagement."
+    }
+  ]
+}

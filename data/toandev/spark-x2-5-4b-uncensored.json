@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "toandev/Spark-X2.5-4B-Uncensored",
+  "slug": "toandev-spark-x2-5-4b-uncensored",
+  "author": "toandev",
+  "url": "https://huggingface.co/toandev/Spark-X2.5-4B-Uncensored",
+  "created_at": "2026-09-09T15:41:00.000Z",
+  "updated_at": "2026-09-09T16:08:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "vi",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "spark2_5",
+    "spark",
+    "abliteration",
+    "uncensored",
+    "causal-lm",
+    "safety-research",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "vi",
+    "en",
+    "zh",
+    "arxiv:2406.11717",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:finetune:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4447623680,
+  "parameters_human": "4.45B",
+  "storage_bytes": 8895281152,
+  "storage_human": "8.9 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhone - Apple",
+      "url": "https://www.apple.com/iphone/",
+      "snippet": "Designed for Apple Intelligence. Discover iPhone 17 Pro, iPhone Air, iPhone 17, and iPhone 17e, along with iPhone 16."
+    },
+    {
+      "title": "iPhone - Apple（日本）",
+      "url": "https://www.apple.com/jp/iphone/",
+      "snippet": "iPhoneのパワフルなカメラシステムでは幅広い焦点距離を選べるので、どこまでも自由にフレーミングを楽しめます。 シャープな …"
+    },
+    {
+      "title": "Official Apple Support",
+      "url": "https://support.apple.com/",
+      "snippet": "Every AppleCare plan provides one-stop service for your Apple products, with quick and easy repairs for accidents like drops and …"
+    },
+    {
+      "title": "iPhone - Official Apple Support",
+      "url": "https://support.apple.com/iphone",
+      "snippet": "Learn how to set up and use your iPhone. Find all the topics, resources, and contact options you need for iPhone."
+    },
+    {
+      "title": "View Coverage - AppleCare & Warranty",
+      "url": "https://checkcoverage.apple.com/",
+      "snippet": "Check your Apple warranty status. Enter a serial number to review your eligibility for support and extended coverage."
+    }
+  ]
+}

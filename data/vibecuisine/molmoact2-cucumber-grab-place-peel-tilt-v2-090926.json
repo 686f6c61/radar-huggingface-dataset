@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "VibeCuisine/molmoact2-cucumber-grab-place-peel-tilt-v2-090926",
+  "slug": "vibecuisine-molmoact2-cucumber-grab-place-peel-tilt-v2-090926",
+  "author": "VibeCuisine",
+  "url": "https://huggingface.co/VibeCuisine/molmoact2-cucumber-grab-place-peel-tilt-v2-090926",
+  "created_at": "2026-09-09T05:56:04.000Z",
+  "updated_at": "2026-09-09T15:21:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "molmoact2",
+    "vibe-data-studio",
+    "hardware:vibeboard_v2",
+    "robotics",
+    "dataset:VibeCuisine/molmoact2-cucumber-grab-place-peel-tilt-v2-v1-trim",
+    "base_model:allenai/MolmoAct2",
+    "base_model:finetune:allenai/MolmoAct2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5601988144,
+  "parameters_human": "5.60B",
+  "storage_bytes": 55432125204,
+  "storage_human": "55.4 GB",
+  "base_model": "allenai/MolmoAct2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "哈啦區 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/",
+      "snippet": "哈啦區提供遊戲討論、攻略精華及創作分享，歡迎大家共同維護這個輕鬆不放縱的園地。"
+    },
+    {
+      "title": "How to get invisible item frames? - Minecraft Forum",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/3200698-how-to-get-invisible-item-frames",
+      "snippet": "May 27, 2024 · How can I get invisible item frames? It used to be \" /give @p item_frame {EntityTag: {Invisible:1b}} \" but 1.20.5 literally …"
+    },
+    {
+      "title": "Minecraft Forum",
+      "url": "https://www.minecraftforum.net/",
+      "snippet": "Jun 17, 2026 · Minecraft community forums, a great place to talk about the game."
+    },
+    {
+      "title": "Minecraft 我的世界（當個創世神） 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=18673",
+      "snippet": "歡迎來到Minecraft 我的世界（當個創世神）哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    },
+    {
+      "title": "Top 10 Minecraft FUN Commands You Should Try (1.20)",
+      "url": "https://www.minecraftforum.net/forums/show-your-creation/videos/other-videos/3187162-top-10-minecraft-fun-commands-you-should-try-1-20",
+      "snippet": "Aug 22, 2025 · In this video, I show you the top 10 FUN commands you absolutely need to try in the latest Minecraft update (1.20). …"
+    }
+  ]
+}

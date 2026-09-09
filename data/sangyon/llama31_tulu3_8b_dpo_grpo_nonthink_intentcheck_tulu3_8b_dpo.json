@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sangyon/llama31_tulu3_8b_dpo_grpo_nonthink_intentcheck_tulu3_8b_dpo",
+  "slug": "sangyon-llama31_tulu3_8b_dpo_grpo_nonthink_intentcheck_tulu3_8b_dpo",
+  "author": "sangyon",
+  "url": "https://huggingface.co/sangyon/llama31_tulu3_8b_dpo_grpo_nonthink_intentcheck_tulu3_8b_dpo",
+  "created_at": "2026-09-09T16:07:22.000Z",
+  "updated_at": "2026-09-09T16:21:32.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "grpo",
+    "instruction-following",
+    "intent-check",
+    "conversational",
+    "base_model:allenai/Llama-3.1-Tulu-3-8B-DPO",
+    "base_model:finetune:allenai/Llama-3.1-Tulu-3-8B-DPO",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030326784,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077897558,
+  "storage_human": "16.1 GB",
+  "base_model": "allenai/Llama-3.1-Tulu-3-8B-DPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trivago.de – Hotelpreise weltweit vergleichen",
+      "url": "https://www.trivago.de/?msockid=2cce63cb158d6650037d74041498670f",
+      "snippet": "Hotelsuche mit über 1,4 Millionen Hotels im unabhängigen Hotel-Preisvergleich. Alle Bewertungen und Fotos bei trivago.de im …"
+    },
+    {
+      "title": "Hotels in Deutschland – Top-Angebote und günstige Hotels | trivago",
+      "url": "https://www.trivago.de/de/odr/hotels-deutschland?search=200-43&msockid=2cce63cb158d6650037d74041498670f",
+      "snippet": "Sep 1, 2026 · Entdecke Unterkünfte in Deutschland, vergleiche die Preise und spare ordentlich bei deinem nächsten Aufenthalt."
+    },
+    {
+      "title": "Hotels in Würzburg ab 50 € – Günstige Angebote | trivago",
+      "url": "https://www.trivago.de/de/odr/hotels-w%C3%BCrzburg-deutschland?search=200-1812&msockid=2cce63cb158d6650037d74041498670f",
+      "snippet": "Sep 1, 2026 · Preise von 555 Hotels in Würzburg, Deutschland, vergleichen. Günstige Hotels aus Millionen von Angeboten für …"
+    },
+    {
+      "title": "Hotels in Bad Salzuflen ab 58 € – Günstige Angebote | trivago",
+      "url": "https://www.trivago.de/de/odr/hotels-bad-salzuflen-deutschland?search=200-6795&msockid=2cce63cb158d6650037d74041498670f",
+      "snippet": "Preise von 251 Hotels in Bad Salzuflen, Deutschland, vergleichen. Günstige Hotels aus Millionen von Angeboten für Bad Salzuflen? …"
+    },
+    {
+      "title": "Hotels in Saarbrücken ab 43 € – Günstige Angebote | trivago",
+      "url": "https://www.trivago.de/de/odr/hotels-saarbr%C3%BCcken-deutschland?search=200-9376&msockid=2cce63cb158d6650037d74041498670f",
+      "snippet": "Sep 1, 2026 · Preise von 471 Hotels in Saarbrücken, Deutschland, vergleichen. Günstige Hotels aus Millionen von Angeboten für …"
+    }
+  ]
+}

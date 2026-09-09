@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "remyxai/efficientvim_m1_dist.in1k",
+  "slug": "remyxai-efficientvim_m1_dist-in1k",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/efficientvim_m1_dist.in1k",
+  "created_at": "2026-09-09T15:18:33.000Z",
+  "updated_at": "2026-09-09T15:18:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7672742,
+  "parameters_human": "7.7M",
+  "storage_bytes": 61528275,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Café especial: descubra sabores que transformam – Coffee Mais",
+      "url": "https://coffeemais.com/",
+      "snippet": "Encontre o café perfeito para você. Leve, adocicado e equilibrado, com acidez média e notas de chocolate 70%, caramelo e um …"
+    },
+    {
+      "title": "Coffee Brasília (@coffeebrasilia_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/coffeebrasilia_/",
+      "snippet": "11K Followers, 3,565 Following, 593 Posts - Coffee Brasília (@coffeebrasilia_) on Instagram: \"O Maior evento de Café do Cerrado\""
+    },
+    {
+      "title": "Coffee Brasília",
+      "url": "https://casapark.com.br/novidade/coffee-brasilia/",
+      "snippet": "Com entrada gratuita e classificação indicativa livre, o evento já se consolidou como o maior do setor cafeeiro no Centro-Oeste, …"
+    },
+    {
+      "title": "The Coffee",
+      "url": "https://thecoffee.jp/shortcut/brasil/brasilia",
+      "snippet": "Carton Tower, Terreo, Sala 7 - Asa Sul. Coffee is amazing. We love. But taste and aroma are only part of the whole experience."
+    },
+    {
+      "title": "Coffee - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Coffee",
+      "snippet": "Coffee is a beverage brewed from roasted, ground coffee beans. Dark-colored and bitter, coffee has a stimulating effect on humans …"
+    }
+  ]
+}

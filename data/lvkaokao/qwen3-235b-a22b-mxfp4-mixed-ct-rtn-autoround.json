@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lvkaokao/Qwen3-235B-A22B-MXFP4-Mixed-CT-RTN-AutoRound",
+  "slug": "lvkaokao-qwen3-235b-a22b-mxfp4-mixed-ct-rtn-autoround",
+  "author": "lvkaokao",
+  "url": "https://huggingface.co/lvkaokao/Qwen3-235B-A22B-MXFP4-Mixed-CT-RTN-AutoRound",
+  "created_at": "2026-09-09T11:02:26.000Z",
+  "updated_at": "2026-09-09T11:03:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "quantized",
+    "mxfp8",
+    "autoround",
+    "autoquant-agent",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-235B-A22B",
+    "base_model:quantized:Qwen/Qwen3-235B-A22B",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 235093634560,
+  "parameters_human": "235.09B",
+  "storage_bytes": 130167133590,
+  "storage_human": "130.2 GB",
+  "base_model": "Qwen/Qwen3-235B-A22B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Posting a Status Update on LinkedIn - YouTube",
+      "url": "https://www.youtube.com/watch?v=xjQpy9j3QVQ",
+      "snippet": "May 3, 2019 · In this video, you’ll learn how to post a status update using LinkedIn. Visit https://edu.gcfglobal.org/en/linkedin/keeping …"
+    },
+    {
+      "title": "Qwen/Qwen3-235B-A22B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hiring Update | LinkedIn",
+      "url": "https://in.linkedin.com/company/hiringupdate-com",
+      "snippet": "Hiring Update | 550 followers on LinkedIn. At Hiring Update, our mission is simple: to empower job seekers with the latest and most …"
+    },
+    {
+      "title": "Qwen3 235B A22B: Mixture-of-Experts Model with Thinking Capabilities",
+      "url": "https://telnyx.com/llm-library/qwen3-235b-a22b",
+      "snippet": "Use cases for Qwen3 235B A22B Hybrid thinking without model switching:The dual thinking/non-thinking mode operates within a single model, eliminating the need to route between separate reasoning and fast-response variants in production."
+    },
+    {
+      "title": "New Job Announcement on LinkedIn: 14 Templates (2026)",
+      "url": "https://taplio.com/blog/linkedin-job-announcement",
+      "snippet": "How to announce a new job on LinkedIn: what to say, when to post, 14 templates by situation, promotion announcements, and the …"
+    }
+  ]
+}

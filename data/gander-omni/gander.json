@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Gander-Omni/Gander",
+  "slug": "gander-omni-gander",
+  "author": "Gander-Omni",
+  "url": "https://huggingface.co/Gander-Omni/Gander",
+  "created_at": "2026-09-07T07:03:13.000Z",
+  "updated_at": "2026-09-09T05:27:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "multimodal",
+    "audio",
+    "video",
+    "conversational",
+    "full-duplex",
+    "function-calling",
+    "text-to-speech",
+    "gander",
+    "arxiv:2609.08977",
+    "base_model:openbmb/MiniCPM-o-4_5",
+    "base_model:quantized:openbmb/MiniCPM-o-4_5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19986626261,
+  "storage_human": "20.0 GB",
+  "base_model": "openbmb/MiniCPM-o-4_5",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Omni-Interaction-Gander/Omni-Interaction-Agent: Open-source end-to-end omni interaction agent for natural full-duplex voice collaboration, continuous audio-visual perception, and asynchronous long-horizon agentic execution. · GitHub",
+      "url": "https://github.com/Omni-Interaction-Gander/Omni-Interaction-Agent",
+      "snippet": "News · Demo · System · Evaluation · Quick Start · Training · Inference · Citation ... Gander is an open-source, end-to-end omni interaction agent that keeps the conversation flowing while getting work done."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "Omni Interaction Agent Technical Report",
+      "url": "https://arxiv.org/html/2609.08977",
+      "snippet": "Figure 1: Gander is an end-to-end model that unifies omni communication, realtime interactive engagement across diverse and complex scenarios, and agentic execution of multi step tasks in workflow oriented environments. Despite the rapid advancement of agentic capabilities, human–AI interaction remains largely confined to text based, turn by turn communication, where users provide instructions and models respond in discrete interaction cycles."
+    },
+    {
+      "title": "GitHub Copilot · Your AI pair programmer",
+      "url": "https://github.com/features/copilot",
+      "snippet": "Aug 16, 2025 · GitHub Copilot works alongside you directly in your editor, suggesting whole lines or entire functions for you."
+    }
+  ]
+}

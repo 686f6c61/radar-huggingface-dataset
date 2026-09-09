@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asd1dsa21/my-awesome-best-checkpoint-step-1000",
+  "slug": "asd1dsa21-my-awesome-best-checkpoint-step-1000",
+  "author": "asd1dsa21",
+  "url": "https://huggingface.co/asd1dsa21/my-awesome-best-checkpoint-step-1000",
+  "created_at": "2026-09-09T13:34:53.000Z",
+  "updated_at": "2026-09-09T13:34:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SKALL | Danish design in natural materials – Skall Studio ENG",
+      "url": "https://skallstudio.com/",
+      "snippet": "Approaching eccentricity by way of Scandinavian pragmatism, SKALL crafts pieces to be loved and lived in. Unendingly curious and …"
+    },
+    {
+      "title": "Assads1SAD/my-awesome-model · Hugging Face",
+      "url": "https://huggingface.co/Assads1SAD/my-awesome-model",
+      "snippet": "This model checkpoint (step_1000) achieves the highest eval_accuracy among all training checkpoints. The model demonstrates strong performance across all evaluated benchmark categories, with particularly notable results in reasoning and generation tasks."
+    },
+    {
+      "title": "Skalt Studio",
+      "url": "https://www.skaltstudio.com/",
+      "snippet": "Colourful knitwear accessories designed and handcrafted in London."
+    },
+    {
+      "title": "DSD1231/my-awesome-model-best · Hugging Face",
+      "url": "https://huggingface.co/DSD1231/my-awesome-model-best",
+      "snippet": "Temperature Prompts for File Uploading and Web Search 5. License 6. Contact Best Checkpoint Selection This repository contains the best checkpoint (step_1000) selected based on highest eval_accuracy. MyAwesomeModel 1. The MyAwesomeModel has undergone a significant version upgrade."
+    },
+    {
+      "title": "Home page – Skalt Studio",
+      "url": "https://www.skaltstudio.com/collections/frontpage",
+      "snippet": "Colourful knitwear accessories designed and handcrafted in London."
+    }
+  ]
+}

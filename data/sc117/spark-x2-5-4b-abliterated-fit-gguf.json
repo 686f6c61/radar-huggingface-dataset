@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "SC117/Spark-X2.5-4B-abliterated-FIT-GGUF",
+  "slug": "sc117-spark-x2-5-4b-abliterated-fit-gguf",
+  "author": "SC117",
+  "url": "https://huggingface.co/SC117/Spark-X2.5-4B-abliterated-FIT-GGUF",
+  "created_at": "2026-09-06T05:45:35.000Z",
+  "updated_at": "2026-09-06T09:09:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "quantization",
+    "sparkx2_5",
+    "fit-gguf",
+    "uncensored",
+    "abliterated",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 8027,
+  "trending_score": 8,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 19525304582,
+  "storage_human": "19.5 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "Get a Premium Lite membership on YouTube",
+      "url": "https://support.google.com/youtube/answer/15968883?hl=en",
+      "snippet": "Get a Premium Lite membership on YouTube Premium Lite is a new, lower-priced YouTube Premium membership that offers fewer …"
+    },
+    {
+      "title": "Get help signing in to YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/troubleshooter/3219097?hl=en",
+      "snippet": "How did you last sign in to your YouTube channel? I signed in with an email address I signed in with a YouTube username"
+    }
+  ]
+}

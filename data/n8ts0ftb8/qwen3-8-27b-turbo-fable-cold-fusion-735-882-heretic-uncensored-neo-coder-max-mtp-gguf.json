@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "n8ts0ftb8/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "slug": "n8ts0ftb8-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf",
+  "author": "n8ts0ftb8",
+  "url": "https://huggingface.co/n8ts0ftb8/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "created_at": "2026-09-09T16:03:05.000Z",
+  "updated_at": "2026-09-09T16:03:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 424062644635,
+  "storage_human": "424.1 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vulkan Vegas: Häufig gestellte Fragen & Antworten im Überblick",
+      "url": "https://www.hiogi.de/vulkan-vegas/",
+      "snippet": "Finde hier alle wichtigen Informationen über das Vulkan Vegas Casino im Überblick! Wir beantworten Fragen in Bezug auf die …"
+    },
+    {
+      "title": "Mr Bet: Häufig gestellte Fragen & Antworten im Überblick",
+      "url": "https://www.hiogi.de/mr-bet/",
+      "snippet": "Mr Bet ist ein top Online Casino, das Spielern aus der ganzen Welt eine unvergessliche Glücksspiel Erfahrung bietet. Dabei hat sich …"
+    },
+    {
+      "title": "Casino-Sperrung: Gründe, Verfahren und Spielerschutz | Ein Überblick",
+      "url": "https://www.hiogi.de/casino-sperre/",
+      "snippet": "Erfahren Sie mehr über den Spielerschutz im Zusammenhang mit Casino-Sperren.Verschaffen Sie sich einen Überblick über die …"
+    },
+    {
+      "title": "DrückGlück: Häufig gestellte Fragen & Antworten im Überblick",
+      "url": "https://www.hiogi.de/drueckglueck/",
+      "snippet": "Was ist mit DrückGlück los? Im DrückGlück Casino ist jede Menge los. Neben einem tollen Angebot an Spielautomaten, erwartet …"
+    },
+    {
+      "title": "Wildz: Das sichere und legale Online Casino für Spieler in Deutschland",
+      "url": "https://www.hiogi.de/wildz/",
+      "snippet": "Ist Wildz in Deutschland erlaubt? Ja, Wildz ist in Deutschland lizenziert. Als Online-Casino wird Wildz von den deutschen …"
+    }
+  ]
+}

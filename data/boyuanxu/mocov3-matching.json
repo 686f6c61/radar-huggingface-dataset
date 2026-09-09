@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Boyuanxu/mocov3-matching",
+  "slug": "boyuanxu-mocov3-matching",
+  "author": "Boyuanxu",
+  "url": "https://huggingface.co/Boyuanxu/mocov3-matching",
+  "created_at": "2026-09-09T17:11:10.000Z",
+  "updated_at": "2026-09-09T17:11:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vibe Coding Platform for Building Apps and Websites | Base44",
+      "url": "https://base44.com/",
+      "snippet": "Base44 is an AI platform for building fully functioning apps in minutes. Describe what you need — a productivity tool, a back-office …"
+    },
+    {
+      "title": "Base44",
+      "url": "https://app.base44.com/",
+      "snippet": "Build useful apps, fast with Base44."
+    },
+    {
+      "title": "Plataforma de Vibe Coding para crear aplicaciones y sitios web | Base44",
+      "url": "https://base44.com/es",
+      "snippet": "Base44 es una plataforma de desarrollo de IA sin código que convierte tus ideas en aplicaciones y sitios web funcionales, sin …"
+    },
+    {
+      "title": "Base44",
+      "url": "https://app.base44.com/launchpad/",
+      "snippet": "Build useful apps, fast with Base44. Launchpad Submit your published app to Base44's weekly showcase. The community can …"
+    },
+    {
+      "title": "Base44: Qué es, cómo funciona y por qué usarlo en 2026",
+      "url": "https://www.nocodehackers.es/herramientas-no-code/base44",
+      "snippet": "¿Qué es Base44? Es una herramienta de IA que cubre todo el stack de una app, es decir, todas las capas que la hacen funcionar, la …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "xqiuresearch/flan-t5-small",
+  "slug": "xqiuresearch-flan-t5-small",
+  "author": "xqiuresearch",
+  "url": "https://huggingface.co/xqiuresearch/flan-t5-small",
+  "created_at": "2026-09-09T18:19:46.000Z",
+  "updated_at": "2026-09-09T18:19:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retail Banking Services | Retail Banking IT Solutions for Banks | LTM",
+      "url": "https://www.ltm.com/industries/banking/retail-banking",
+      "snippet": "LTM deliver advanced Retail Banking Services and scalable Retail Banking IT Solutions for Banks, enabling digital transformation, …"
+    },
+    {
+      "title": "Banking Consulting Services & Solutions | Accenture",
+      "url": "https://www.accenture.com/us-en/industries/banking",
+      "snippet": "Financial services consulting Build the next generation of Banking. Technology has changed the way people and businesses bank, …"
+    },
+    {
+      "title": "Core Banking Systems & Banktech Providers (2026):...",
+      "url": "https://www.openbankingtracker.com/banktech-providers",
+      "snippet": "Core Banking Systems & Banktech Providers (2026): Compare 156+ Vendors Compare 156 + core banking platforms, digital banking …"
+    },
+    {
+      "title": "Retail banking solutions for digital transformation | Deloitte US",
+      "url": "https://www.deloitte.com/us/en/industries/financial-services/about/retail-banking-solutions-for-digital-transformation.html",
+      "snippet": "Deloitte provides retail banking solutions to drive digital transformation. We help banks manage risk, innovate, and prepare for the …"
+    },
+    {
+      "title": "SoFi Tech Solutions Core Modernization – Upgrade Your Banking ...",
+      "url": "https://tech.sofi.com/deposits/use-case/core-modernization/",
+      "snippet": "Modernize your banking core with SoFi Tech Solutions Core Modernization, a scalable and cloud-native solution. Designed for banks …"
+    }
+  ]
+}

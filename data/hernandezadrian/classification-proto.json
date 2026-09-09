@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hernandezadrian/classification-proto",
+  "slug": "hernandezadrian-classification-proto",
+  "author": "hernandezadrian",
+  "url": "https://huggingface.co/hernandezadrian/classification-proto",
+  "created_at": "2026-09-09T17:56:35.000Z",
+  "updated_at": "2026-09-09T17:56:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Radio frequency - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Radio_frequency",
+      "snippet": "Electric currents that oscillate at radio frequencies (RF currents) have special properties not shared by direct current or lower …"
+    },
+    {
+      "title": "What is RF? Understanding Radio Frequency Basics",
+      "url": "https://www.keysight.com/used/us/en/knowledge/guides/what-is-rf",
+      "snippet": "Apr 20, 2026 · In this guide, we will explore how RF systems behave in real-world applications, the tools you need to tackle common …"
+    },
+    {
+      "title": "canon rf - Купить электронику Ташкент - Цены на OLX.uz",
+      "url": "https://www.olx.uz/elektronika/tashkent/q-canon-rf/",
+      "snippet": "canon rf — Продажа электроники Ташкент ️ Большой выбор новых и б/у смартфонов, наушников и аксессуаров по …"
+    },
+    {
+      "title": "RF ONLINE NEXT",
+      "url": "https://rfonlinenextgb.netmarble.com/ru",
+      "snippet": "Биокостюмы Особенности игры Медиа Комикс по вселенной RF Twitch Drops Интернет-магазин Скачать игру"
+    },
+    {
+      "title": "What Is RF and Why Do We Use It? - All About Circuits",
+      "url": "https://www.allaboutcircuits.com/textbook/radio-frequency-analysis-design/rf-principles-components/what-is-rf-and-why-do-we-use-it/",
+      "snippet": "“RF” refers to the use of electromagnetic radiation for transferring information between two circuits that have no direct electrical …"
+    }
+  ]
+}

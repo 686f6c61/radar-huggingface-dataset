@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "paulgp85/econ-ai-detector-distilroberta-v3",
+  "slug": "paulgp85-econ-ai-detector-distilroberta-v3",
+  "author": "paulgp85",
+  "url": "https://huggingface.co/paulgp85/econ-ai-detector-distilroberta-v3",
+  "created_at": "2026-09-09T17:18:52.000Z",
+  "updated_at": "2026-09-09T17:18:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "ai-text-detection",
+    "economics",
+    "en",
+    "base_model:distilbert/distilroberta-base",
+    "base_model:finetune:distilbert/distilroberta-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82119938,
+  "parameters_human": "82.1M",
+  "storage_bytes": 328492280,
+  "storage_human": "328 MB",
+  "base_model": "distilroberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "31 Versículos de la Biblia sobre la Esperanza - DailyVerses.net",
+      "url": "https://dailyverses.net/es/esperanza",
+      "snippet": "Porque yo conozco los planes que tengo para ustedes —afirma el Señor—, planes de bienestar y no de calamidad, a fin de darles un …"
+    },
+    {
+      "title": "79 Versículos De La Biblia Ánimo y esperanza - Escritura Biblica",
+      "url": "https://escriturabiblica.com/versiculos-de-la-biblia-animo-y-esperanza/",
+      "snippet": "Queridos amigos, si buscan información sobre los versículos de la Biblia sobre ánimo y esperanza, la publicación de hoy es para …"
+    },
+    {
+      "title": "25+ Versículos Bíblicos Motivacionales para Inspirarte Hoy",
+      "url": "https://thebiblechat.com/es/bible-verses/motivacion/",
+      "snippet": "¿Buscas motivación en las Escrituras? Descubre más de 25 versículos bíblicos poderosos y edificantes que ofrecen fuerza, valor y …"
+    },
+    {
+      "title": "30 Versículos bíblicos sobre la esperanza (con su significado)",
+      "url": "https://www.bible-expert.app/es/blog/versiculos-biblicos-sobre-la-esperanza",
+      "snippet": "Apr 3, 2026 · Treinta pasajes bíblicos sobre la esperanza, organizados por situación y explicados en su contexto literario, sin …"
+    },
+    {
+      "title": "31 Versículos de la Biblia sobre la Esperanza - RVR60",
+      "url": "https://dailyverses.net/es/esperanza/rvr60",
+      "snippet": "Y el Dios de esperanza os llene de todo gozo y paz en el creer, para que abundéis en esperanza por el poder del Espíritu Santo. …"
+    }
+  ]
+}

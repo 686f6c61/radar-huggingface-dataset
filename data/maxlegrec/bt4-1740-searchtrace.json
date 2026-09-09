@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Maxlegrec/bt4-1740-searchtrace",
+  "slug": "maxlegrec-bt4-1740-searchtrace",
+  "author": "Maxlegrec",
+  "url": "https://huggingface.co/Maxlegrec/bt4-1740-searchtrace",
+  "created_at": "2026-09-09T14:09:13.000Z",
+  "updated_at": "2026-09-09T14:12:41.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 835295004,
+  "storage_human": "835 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ラムロック+見守りカメラ+返却+元払い+方法 おすすめ人気 ...",
+      "url": "https://hikaku.smartpick.tech/ranking/%E3%83%A9%E3%83%A0%E3%83%AD%E3%83%83%E3%82%AF%2B%E8%A6%8B%E5%AE%88%E3%82%8A%E3%82%AB%E3%83%A1%E3%83%A9%2B%E8%BF%94%E5%8D%B4%2B%E5%85%83%E6%89%95%E3%81%84%2B%E6%96%B9%E6%B3%95",
+      "snippet": "6 days ago · ラムロック+見守りカメラ+返却+元払い+方法の人気商品を徹底比較。 Amazon・楽天・Yahoo!の最安値を比較し …"
+    },
+    {
+      "title": "Maxlegrec (Maxime Vanderbeken) - Hugging Face",
+      "url": "https://huggingface.co/Maxlegrec",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 2 months ago ... updated a model about 2 months ago"
+    },
+    {
+      "title": "独居老人、施設ご利用者の転倒の予防・早期発見、徘徊の ...",
+      "url": "https://www.ramrock.co.jp/",
+      "snippet": "Oct 26, 2023 · 日本初！ 県警と業務提携した介護用の見守りカメラ みまもりCUBE Wi-Fiがない場所でもコンセントをいれるだけで …"
+    },
+    {
+      "title": "Maxlegrec (Maxime Vanderbeken) - Hugging Face",
+      "url": "https://huggingface.co/Maxlegrec/models",
+      "snippet": "Recent Activity liked a model about 16 hours ago Maxlegrec/ChessBot updated a model about 16 hours ago Maxlegrec/ChessBot published a model 1 day ago Maxlegrec/ChessBot View all activity"
+    },
+    {
+      "title": "見守りカメラ【みまもりCUBE】 / 本人確認書類 (入力ページ)",
+      "url": "https://ramrock-eyes.jp/proof",
+      "snippet": "内容によっては回答をさしあげるのにお時間をいただくこともございます。 また、休業日は翌営業日以降の対応となりますのでご …"
+    }
+  ]
+}

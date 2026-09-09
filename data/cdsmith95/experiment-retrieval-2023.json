@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Cdsmith95/experiment-retrieval-2023",
+  "slug": "cdsmith95-experiment-retrieval-2023",
+  "author": "Cdsmith95",
+  "url": "https://huggingface.co/Cdsmith95/experiment-retrieval-2023",
+  "created_at": "2026-09-09T11:19:35.000Z",
+  "updated_at": "2026-09-09T11:19:41.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaufmann/-frau - Gesundheitswesen | Entgeltatlas | Bundesagentur …",
+      "url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/13933",
+      "snippet": "Das Medianentgelt für den Beruf \"Kaufmann/-frau - Gesundheitswesen\" in der Berufsgattung \"Verwaltende Berufe im Sozial- & …"
+    },
+    {
+      "title": "Cdsmith95 (Lin Zixuan) - Hugging Face",
+      "url": "https://huggingface.co/Cdsmith95",
+      "snippet": "models1 Cdsmith95/paper_022484211_robotics_vision_language Updated about 6 hours ago"
+    },
+    {
+      "title": "Kaufmann/-frau im Gesundheitswesen - GEHALT.de",
+      "url": "https://www.gehalt.de/beruf/kaufmann-frau-im-gesundheitswesen",
+      "snippet": "Was verdient ein/-e Kaufmann/-frau im Gesundheitswesen? GEHALT.de verrät Ihnen, was Sie mit Ihrer Berufserfahrung und in Ihrer …"
+    },
+    {
+      "title": "Cdsmith95 (Lin Zixuan) - Hugging Face",
+      "url": "https://huggingface.co/Cdsmith95/models",
+      "snippet": "Cdsmith95's models1 Sort: Recently updated Cdsmith95/paper_022484211_robotics_vision_language Updated 4 days ago"
+    },
+    {
+      "title": "Kaufmann im Gesundheitswesen: Gehalt 2026 - Medi-Karriere",
+      "url": "https://www.medi-karriere.de/medizinische-berufe/kauffrau-im-gesundheitswesen-gehalt/",
+      "snippet": "Apr 24, 2026 · Wie viel verdient eine Kauffrau im Gesundheitswesen im Durchschnitt? Das durchschnittliche Gehalt liegt bei etwa …"
+    }
+  ]
+}

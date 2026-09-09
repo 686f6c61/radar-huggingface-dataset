@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bananamind-research-community/BananaMind-Sundae",
+  "slug": "bananamind-research-community-bananamind-sundae",
+  "author": "bananamind-research-community",
+  "url": "https://huggingface.co/bananamind-research-community/BananaMind-Sundae",
+  "created_at": "2026-09-09T15:38:57.000Z",
+  "updated_at": "2026-09-09T15:51:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20156544,
+  "parameters_human": "20.2M",
+  "storage_bytes": 41526362,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frank Gast – Managing Director, Member of the Management Board …",
+      "url": "https://de.linkedin.com/in/frankgast",
+      "snippet": "Certified as Qualified Supervisory Board Member by Interfin since 2024. Member of the ICMA European Repo & Collateral …"
+    },
+    {
+      "title": "Frank Gast im Das Telefonbuch >> Jetzt finden!",
+      "url": "https://www.dastelefonbuch.de/Personen/Frank--Gast",
+      "snippet": "Hier finden Sie die vollständige Adresse mit der aktuellen Telefonnummer - zum Anrufen, Post schicken und Besuchen. Kostenlos …"
+    },
+    {
+      "title": "Frank Gast, Eurex Repo GmbH: Profile and Biography",
+      "url": "https://www.bloomberg.com/profile/person/21311229",
+      "snippet": "Frank Gast is Managing Director at Eurex Repo GmbH. See Frank Gast's compensation, career history, education, & memberships."
+    },
+    {
+      "title": "Traueranzeigen | trauer.rp-online.de",
+      "url": "https://trauer.rp-online.de/traueranzeigen-suche",
+      "snippet": "5 days ago · Anzeige Elly Bieberstein geb. Langwald. ... Finden Sie hier Traueranzeigen, Todesanzeigen und Beileidsbekundungen …"
+    },
+    {
+      "title": "Telefonbuch Moers | Das Örtliche",
+      "url": "https://www.dasoertliche.de/Telefonbuch/Moers",
+      "snippet": "Ihr örtliches Telefonbuch für Moers mit Telefonnummern ☎, Adressen , Öffnungszeiten und Bewertungen★ für Unternehmen und …"
+    }
+  ]
+}

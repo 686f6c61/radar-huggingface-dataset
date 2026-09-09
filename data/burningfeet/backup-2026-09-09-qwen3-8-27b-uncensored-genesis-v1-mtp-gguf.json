@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "burningfeet/backup-2026-09-09-Qwen3.8-27B-Uncensored-Genesis-V1-MTP-GGUF",
+  "slug": "burningfeet-backup-2026-09-09-qwen3-8-27b-uncensored-genesis-v1-mtp-gguf",
+  "author": "burningfeet",
+  "url": "https://huggingface.co/burningfeet/backup-2026-09-09-Qwen3.8-27B-Uncensored-Genesis-V1-MTP-GGUF",
+  "created_at": "2026-09-09T17:53:27.000Z",
+  "updated_at": "2026-09-09T17:57:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "dence",
+    "vision",
+    "multimodal",
+    "genesis",
+    "image-text-to-text",
+    "en",
+    "arxiv:1311.0851",
+    "base_model:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "base_model:quantized:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 95009703424,
+  "storage_human": "95.0 GB",
+  "base_model": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JHSF",
+      "url": "https://jhsf.com.br/",
+      "snippet": "Com a capacidade de antecipar tendências, a JHSF busca soluções inovadoras para os segmentos em que atua, sempre de forma a …"
+    },
+    {
+      "title": "Home Page - JHSF",
+      "url": "https://ri.jhsf.com.br/",
+      "snippet": "A JHSF, maior ecossistema de alta renda da América Latina, possui expressiva atuação nos mercados de shopping centers, fashion …"
+    },
+    {
+      "title": "A empresa - JHSF",
+      "url": "https://jhsf.com.br/a-empresa",
+      "snippet": "Na JHSF o cliente é a razão e um elo importante entre os negócios. A satisfação de seus clientes, por meio do cuidado e …"
+    },
+    {
+      "title": "Central de Resultados - JHSF",
+      "url": "https://ri.jhsf.com.br/informacoes-financeiras/central-de-resultados/",
+      "snippet": "Confira abaixo todos os materiais das nossas divulgações trimestrais de resultados."
+    },
+    {
+      "title": "ADSelfService Plus - atendimento.jhsf.com.br:8443",
+      "url": "https://atendimento.jhsf.com.br:8443/m/home",
+      "snippet": "Redefinição de senha Desbloqueio da conta"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "itis-a-secret2758/gpt2-grok",
+  "slug": "itis-a-secret2758-gpt2-grok",
+  "author": "itis-a-secret2758",
+  "url": "https://huggingface.co/itis-a-secret2758/gpt2-grok",
+  "created_at": "2026-09-09T16:19:51.000Z",
+  "updated_at": "2026-09-09T16:20:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CFA ITIS : Alternance du BTS au MBA",
+      "url": "https://itis.fr/",
+      "snippet": "Recevez notre documentation complète pour découvrir en détail toutes nos formations, leurs débouchés, et les avantages de …"
+    },
+    {
+      "title": "ITIS | Plateforme de télé-imagerie par IMADIS Groupe",
+      "url": "https://www.imadis-groupe.fr/itis-solution/",
+      "snippet": "ITIS, plateforme de télé-imagerie, encadre et structure vos examens d'imagerie médicale avec fiabilité, conformité et sécurité."
+    },
+    {
+      "title": "Informations ITIS Évry (91) – École en Alternance et Initial",
+      "url": "https://itis.fr/lecole/",
+      "snippet": "Découvrez l’école ITIS à Évry (91) : une formation d’excellence en alternance ou en initial dans les domaines du numérique, …"
+    },
+    {
+      "title": "Connexion - Campus ITIS",
+      "url": "https://campus.itis.fr/dashboard",
+      "snippet": "Campus virtuel Itis : École Itis Evry (91) - Du bts au MBA en Alternance"
+    },
+    {
+      "title": "ITIS.gov | Integrated Taxonomic Information System (ITIS)",
+      "url": "https://www.itis.gov/",
+      "snippet": "Jul 28, 2026 · Welcome to ITIS, the Integrated Taxonomic Information System. Here you will find authoritative taxonomic information …"
+    }
+  ]
+}

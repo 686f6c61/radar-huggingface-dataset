@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "remyxai/efficientvim_m1.e450_in1k",
+  "slug": "remyxai-efficientvim_m1-e450_in1k",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/efficientvim_m1.e450_in1k",
+  "created_at": "2026-09-09T15:18:19.000Z",
+  "updated_at": "2026-09-09T15:18:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6708738,
+  "parameters_human": "6.7M",
+  "storage_bytes": 53812623,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/",
+      "snippet": "Il servizio di Google, offerto senza costi, traduce all'istante parole, frasi e pagine web dall'italiano a più di 100 altre lingue e viceversa."
+    },
+    {
+      "title": "DeepL Traduttore | Il miglior traduttore al mondo",
+      "url": "https://www.deepl.com/it/translator",
+      "snippet": "La piattaforma di IA linguistica di DeepL Traduttore Fornisci traduzioni accurate di livello enterprise grazie a glossari, regole …"
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.com/?hl=it",
+      "snippet": "Google Translate offers free instant translations of words, phrases, and web pages from Italian to over 100 other languages and vice …"
+    },
+    {
+      "title": "Reverso | Traduzione e dizionario gratis",
+      "url": "https://www.reverso.net/traduzione-testo",
+      "snippet": "Il traduttore IA più avanzato del mondo in inglese, francese, spagnolo, tedesco, russo e molte altre lingue. Sfrutta gli ultimi progressi …"
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.co.uk/?hl=it",
+      "snippet": "Google Traduttore è un servizio gratuito che traduce istantaneamente parole, frasi e pagine web in oltre 100 lingue."
+    }
+  ]
+}

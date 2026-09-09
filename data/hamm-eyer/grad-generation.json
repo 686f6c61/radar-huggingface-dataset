@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hamm-eyer/grad-generation",
+  "slug": "hamm-eyer-grad-generation",
+  "author": "hamm-eyer",
+  "url": "https://huggingface.co/hamm-eyer/grad-generation",
+  "created_at": "2026-09-09T13:36:20.000Z",
+  "updated_at": "2026-09-09T13:36:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hamm — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hamm",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Hamm 84 languesAjouter un sujet"
+    },
+    {
+      "title": "[2512.18133] Grad: Guided Relation Diffusion Generation for Graph ...",
+      "url": "https://arxiv.org/abs/2512.18133",
+      "snippet": "To address this problem, we propose a relation diffusion-based graph augmentation model Grad. In detail, Grad leverages a supervised graph contrastive learning module to enhance the fraud-benign difference and employs a guided relation diffusion generator to generate auxiliary homophilic relations from scratch."
+    },
+    {
+      "title": "Compactage pour terrassement & construction de routes | Hamm",
+      "url": "https://www.wirtgen-group.com/ocs/fr-fr/hamm/produits-hamm-138-c/",
+      "snippet": "HAMM propose pour tous les marchés des compacteurs à pneumatiques affichant un poids opérationnel compris entre 8 et 28 t (en …"
+    },
+    {
+      "title": "Best AI Models September 2026: Benchmarks and Pricing",
+      "url": "https://renovateqr.com/blog/ai-model-releases-2026",
+      "snippet": "Claude Fable 5.1 and Mythos 5.1, DeepSeek V4 Pro, Qwen 3.8 Max and Ox Alpha as GLM 5.3 Flash. Verified benchmarks, pricing and US China gap."
+    },
+    {
+      "title": "Hamm – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Hamm",
+      "snippet": "Hamm ist Sitz des größten deutschen Oberlandesgerichts – OLG Hamm – sowie der zugehörigen Rechtsanwalts- und die …"
+    }
+  ]
+}

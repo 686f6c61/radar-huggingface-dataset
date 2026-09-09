@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NecroDevelopment/roberta-clip-100pct",
+  "slug": "necrodevelopment-roberta-clip-100pct",
+  "author": "NecroDevelopment",
+  "url": "https://huggingface.co/NecroDevelopment/roberta-clip-100pct",
+  "created_at": "2026-09-09T18:31:06.000Z",
+  "updated_at": "2026-09-09T18:31:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "‎E-Mails aus T-Online nach Outlook übertragen - Telekom hilft",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/e-mails-aus-t-online-nach-outlook-%C3%BCbertragen/6685d1db4ae73561da79001d",
+      "snippet": "Hallo,mit dem Umstieg auf einen neuen Rechner überlege ich, statt der T-Online-Software die Standardfunktionalität von Outlook zu …"
+    },
+    {
+      "title": "‎Umlautprobleme im email-Center von T-Online - Telekom hilft",
+      "url": "https://telekomhilft.telekom.de/conversations/sonstiges/umlautprobleme-im-email-center-von-t-online/6685eb5c4ae73561dac9693a",
+      "snippet": "Möglicherweise sogar die, daß T-Online Umlaute schlicht nicht darstellen kann? Habe die Codierung auf Automatisch umgestellt - …"
+    },
+    {
+      "title": "Direkte Links im E-Mail-Center | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/direkte-links-im-e-mail-center/6687df7b4ae73561daffd6d6",
+      "snippet": "Im E-Mail-Center https://email.t-online.de findet man schnell die Ordner mit den E-Mails wie Posteingang etc. &nbsp; Aber es gibt …"
+    },
+    {
+      "title": "Ich kann mein T-Online Konto nicht im Outlook anlegen",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/ich-kann-mein-t-online-konto-nicht-im-outlook-anlegen/68e6039a24e7786d4bccc1fc",
+      "snippet": "Hallo Zusammen!&nbsp; Ich möchte gern mein T-Online-Konto in Outlook nutzen! Leider bekomme ich das Konto nicht eingerichtet. …"
+    }
+  ]
+}

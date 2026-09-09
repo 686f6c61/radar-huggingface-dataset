@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chineduogunleye/assignment-retrieval",
+  "slug": "chineduogunleye-assignment-retrieval",
+  "author": "chineduogunleye",
+  "url": "https://huggingface.co/chineduogunleye/assignment-retrieval",
+  "created_at": "2026-09-09T17:36:28.000Z",
+  "updated_at": "2026-09-09T17:36:33.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spiele und Ergebnisse | UEFA Champions League 2026/27",
+      "url": "https://de.uefa.com/uefachampionsleague/fixtures-results/",
+      "snippet": "Von der Gruppenphase bis zur K.-o.-Runde – hier gibt es alle offiziellen UEFA Champions League 2026/2027 Spiele und Ergebnisse. …"
+    },
+    {
+      "title": "UEFA Champions League | UEFA.com",
+      "url": "https://de.uefa.com/uefachampionsleague/",
+      "snippet": "Die offizielle Seite des wichtigsten Klubwettbewerbs der Welt. Hol dir aktuelle News, Statistiken und Videos – und spiele Fantasy und …"
+    },
+    {
+      "title": "Champions League 2026/27: Teams, Termine, Auslosungen, Format, …",
+      "url": "https://de.uefa.com/uefachampionsleague/news/02a6-20d594cb7f0c-99b49b242bdf-1000--champions-league-2026-27-teams-termine-auslosungen-format-f/",
+      "snippet": "Aug 27, 2026 · Die UEFA Champions League, früher bekannt als Pokal der europäischen Meistervereine, geht 2026/27 in ihre 72. …"
+    },
+    {
+      "title": "Teams | UEFA Champions League 2026/27 | UEFA.com",
+      "url": "https://de.uefa.com/uefachampionsleague/clubs/",
+      "snippet": "Finde alles Wissenswerte über die Klubs heraus, die in der UEFA Champions League 2026/2027 um den Titel kämpfen"
+    },
+    {
+      "title": "Champions League 2025/26: Alle Spiele und Ergebnisse",
+      "url": "https://de.uefa.com/uefachampionsleague/news/029c-1e9a43ff794d-8ef5cd8aafa2-1000--champions-league-2025-26-alle-spiele-und-ergebnisse/",
+      "snippet": "May 30, 2026 · Alle Spiele und Ergebnisse der UEFA Champions League 2025/26 auf einen Blick."
+    }
+  ]
+}

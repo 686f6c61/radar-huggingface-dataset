@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "leonsarmiento/gemma-4-26B-A4B-it-3bit-XL-mlx",
+  "slug": "leonsarmiento-gemma-4-26b-a4b-it-3bit-xl-mlx",
+  "author": "leonsarmiento",
+  "url": "https://huggingface.co/leonsarmiento/gemma-4-26B-A4B-it-3bit-XL-mlx",
+  "created_at": "2026-09-09T11:01:04.000Z",
+  "updated_at": "2026-09-09T11:24:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "mlx-vlm",
+    "moe",
+    "multimodal",
+    "vision",
+    "gemma",
+    "basequant-xl",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "eval-results",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25782252592,
+  "parameters_human": "25.78B",
+  "storage_bytes": 14223989213,
+  "storage_human": "14.2 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instant gaming => Paiement en attente [Résolu] - Jeux vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-35956577-instant-gaming-paiement-en-attente",
+      "snippet": "Comme dit dans le titre, l'achat (Génération Zero sur PC) que je viens d'effectuer sur Instant gaming et en attente de paiement. et à …"
+    },
+    {
+      "title": "leonsarmiento/gemma-4-26B-A4B-it-2bit-XL-mlx · Hugging Face",
+      "url": "https://huggingface.co/leonsarmiento/gemma-4-26B-A4B-it-2bit-XL-mlx",
+      "snippet": "This model was converted to MLX format from google/gemma-4-26B-A4B-itusing BaseQuant_XL 2/8-bit mixed quantizationoptimized for Apple Silicon. The vision encoder is preserved and quantized at 8-bit, making this a full multimodal model."
+    },
+    {
+      "title": "Instant Gaming => Payment declined - CCM - Tech Forum",
+      "url": "https://forums.commentcamarche.net/forum/affich-36615156-instant-gaming-paiement-refuse?lang=en",
+      "snippet": "Hello, I don't know if it's my bank, but since April 6, 2020, I haven't been able to buy games on discount sites like the one I've always …"
+    },
+    {
+      "title": "leonsarmiento/gemma-4-26B-A4B-it-6bit-XL-mlx · Hugging Face",
+      "url": "https://huggingface.co/leonsarmiento/gemma-4-26B-A4B-it-6bit-XL-mlx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TVA INSTANT GAMING sur le forum Blabla 18-25 ans - 01-07-2020 …",
+      "url": "https://www.jeuxvideo.com/forums/42-51-63543670-1-0-1-0-tva-instant-gaming.htm",
+      "snippet": "Le 01 juillet 2020 à 18:21:39 ThePh3nix94 a écrit : bonjours , depuis quand on a une taxe de tva sur instant gaming ? J'ai acheter un …"
+    }
+  ]
+}

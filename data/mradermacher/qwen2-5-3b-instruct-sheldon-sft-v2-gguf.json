@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-GGUF",
+  "slug": "mradermacher-qwen2-5-3b-instruct-sheldon-sft-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-GGUF",
+  "created_at": "2026-09-09T11:09:45.000Z",
+  "updated_at": "2026-09-09T11:28:57.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "persona",
+    "sheldon-cooper",
+    "roleplay",
+    "sft",
+    "lora",
+    "qwen2.5",
+    "cs2881r",
+    "en",
+    "dataset:tbooy/sheldon-cooper-sft-20k",
+    "base_model:agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2",
+    "base_model:adapter:agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940899328,
+  "storage_human": "27.9 GB",
+  "base_model": "agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年 9月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
+      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
+      "snippet": "1080P/2K/4K分辨率，以RTX 5050为基准（25款主流游戏测试成绩取平均值） 数据来源于：TechPowerUp 桌面端显卡天梯图："
+    },
+    {
+      "title": "mradermacher/Qwen2.5-3B-Instruct-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-3B-Instruct-abliterated-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen2.5-3B-Instruct-abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Qwen2.5-3B-Instruct-abliterated-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-3B-Instruct-abliterated-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Compte Instagram verrouillé et irrécupérable",
+      "url": "https://forums.commentcamarche.net/forum/affich-37319755-compte-instagram-verrouille-et-irrecuperable",
+      "snippet": "Aug 20, 2021 · La seule solution est donc d'attendre qu'Instagram vous restitue votre compte et ne tombez pas dans le piège des …"
+    }
+  ]
+}

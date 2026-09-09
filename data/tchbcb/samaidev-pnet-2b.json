@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "tchbcb/samaidev-pnet-2b",
+  "slug": "tchbcb-samaidev-pnet-2b",
+  "author": "tchbcb",
+  "url": "https://huggingface.co/tchbcb/samaidev-pnet-2b",
+  "created_at": "2026-09-08T18:28:21.000Z",
+  "updated_at": "2026-09-09T14:42:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5299822786,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/r.php/",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook creator Jakethejuice is fired up by the US Open and giving tennis a (trick) shot. If you also have tennis fever, Facebook …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://m.me/www.facebook.com",
+      "snippet": "Messenger Facebook Lite Video Places Games Marketplace Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Muse …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "madmacs5/mayumi-krea2-lora",
+  "slug": "madmacs5-mayumi-krea2-lora",
+  "author": "madmacs5",
+  "url": "https://huggingface.co/madmacs5/mayumi-krea2-lora",
+  "created_at": "2026-09-09T13:55:04.000Z",
+  "updated_at": "2026-09-09T13:55:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1407853840,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "护理上qd、qn、qh、bid、tid缩写分别代表什么？_百度知道",
+      "url": "https://zhidao.baidu.com/question/1436613487223449499.html",
+      "snippet": "临床常见的77条医嘱缩写:qd 每日一次 bid 每日两次 tid 每日三次 qid 每日四次 qh 每小时一次 q2h 每两小时一次 q4h 每四小时一次 …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=krea2",
+      "snippet": "Explore machine learning models. Text-to-Image •13B•Updated Jul 24•77.8k••989"
+    },
+    {
+      "title": "ea账号公开id要什么格式 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1056086759267523019.html",
+      "snippet": "EA账号的公开ID需要遵循以下规则： 1. 必须包含4到16个字符，并且只能包含字母、数字、下划线和连字符。 2. 公开ID必须以字母或 …"
+    },
+    {
+      "title": "krea (KREA) - Hugging Face",
+      "url": "https://huggingface.co/krea/models",
+      "snippet": "AI Creative Suite."
+    },
+    {
+      "title": "Legal aid | Open Development Cambodia (ODC)",
+      "url": "https://opendevelopmentcambodia.net/category/law-and-judiciary/legal-aid/",
+      "snippet": "Apr 24, 2026 · Do you have resources that could help expand the Open Development Cambodia (ODC) website? We will review any …"
+    }
+  ]
+}

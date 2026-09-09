@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "madmacs5/priya-krea2-lora",
+  "slug": "madmacs5-priya-krea2-lora",
+  "author": "madmacs5",
+  "url": "https://huggingface.co/madmacs5/priya-krea2-lora",
+  "created_at": "2026-09-09T13:55:21.000Z",
+  "updated_at": "2026-09-09T13:55:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1407853840,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Belgische Waffeln - Grundrezept - schnell & einfach - Chefkoch",
+      "url": "https://www.chefkoch.de/rezepte/280081106074754/Belgische-Waffeln.html",
+      "snippet": "Euch fehlt noch das passende Waffeleisen für dieses Rezept? Keine Sorge, in unserem Waffeleisen-Test stellen wir euch 10 Modelle …"
+    },
+    {
+      "title": "Krea 2 AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/krea2",
+      "snippet": "Generate with Krea 2 on Civitai — Krea AI's model for sharp photorealism, strong aesthetics, and dependable prompt adherence. Browse checkpoints, LoRAs & prompts."
+    },
+    {
+      "title": "Belgische Waffeln: einfaches Rezept für dicke Waffeln",
+      "url": "https://www.backenmachtgluecklich.de/rezepte/belgische-waffeln.html",
+      "snippet": "Mar 11, 2026 · Einfaches Rezept für belgische Waffeln: außen knusprig, innen fluffig und herrlich dick. Super lecker mit Puderzucker …"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,922 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Belgische Waffeln – das beste Original-Rezept | Einfach Backen",
+      "url": "https://www.einfachbacken.de/rezepte/belgische-waffeln-das-beste-original-rezept",
+      "snippet": "Aug 14, 2023 · Belgische Waffeln aus Rührteig lieben wir. Der fluffige Teig ist schnell gemacht und schmeckt wie von Oma. Mit …"
+    }
+  ]
+}

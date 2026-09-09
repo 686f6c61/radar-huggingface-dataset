@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "keerthimalladi/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "keerthimalladi-rl_course_vizdoom_health_gathering_supreme",
+  "author": "keerthimalladi",
+  "url": "https://huggingface.co/keerthimalladi/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-09T15:35:47.000Z",
+  "updated_at": "2026-09-09T15:35:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124901720,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "c.ai",
+      "url": "https://c.ai/chat?source_caller=sdk&pid=af_app_invites&caller=ShareContent&char=7Fs6Zt2k-qkKE_lREOJ2YzkRZbUoB_ZnZy_CUF4HIxw&shortlink=7qmwazts&af_referrer_customer_id=629184933&af_channel=app&brandDomain=character.ai&af_siteid=ai.character.app&c=character-chat-invite&af_referrer_uid=1744084214264-8537906990358581135",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP",
+  "slug": "peculiar-ragdoll-cyber-tiel-coder-35b-a3b-gguf-mtp",
+  "author": "peculiar-ragdoll",
+  "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP",
+  "created_at": "2026-08-31T23:57:36.000Z",
+  "updated_at": "2026-09-09T12:09:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "unsloth-dynamic",
+    "mtp",
+    "speculative-decoding",
+    "agentic-coding",
+    "abliterated",
+    "uncensored",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 227154600590,
+  "storage_human": "227.2 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mahjong Spielen",
+      "url": "https://www.mahjongkostenlos.de/mahjong-spielen",
+      "snippet": "Was sagt Dein Horoskop? Finde es bei dieser Mahjong Version.."
+    },
+    {
+      "title": "Mahjong Kostenlos - MahjongKostenlos.de",
+      "url": "https://www.mahjongkostenlos.de/",
+      "snippet": "Willkommen bei MahjongKostenlos.de, die Webseite für Fans der Mahjong Spiele. Wir haben viele Spiele für Dich gesammelt und …"
+    },
+    {
+      "title": "Mahjong Titans - MahjongKostenlos.de",
+      "url": "https://www.mahjongkostenlos.de/spielen/mahjong-titans",
+      "snippet": "Name: Mahjong Titans Gespielt: Du bist Spieler Nummer 14944226 Anleitungen: Dies ist die klassische Version von Mahjong Titans. …"
+    },
+    {
+      "title": "Mahjong Klassisch",
+      "url": "https://www.mahjongkostenlos.de/spielen/mahjong-klassisch",
+      "snippet": "Name: Mahjong Klassisch Gespielt: Du bist Spieler Nummer 7399450 Anleitungen: Diese klassische Version des Spiels besteht …"
+    },
+    {
+      "title": "Mahjong Relax",
+      "url": "https://www.mahjongkostenlos.de/spielen/mahjong-relax",
+      "snippet": "Name: Mahjong Relax Gespielt: Du bist Spieler Nummer 12513213 Anleitungen: Dies ist eine besonders entspannte Version von …"
+    }
+  ]
+}

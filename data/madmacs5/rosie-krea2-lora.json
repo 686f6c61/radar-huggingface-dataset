@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "madmacs5/rosie-krea2-lora",
+  "slug": "madmacs5-rosie-krea2-lora",
+  "author": "madmacs5",
+  "url": "https://huggingface.co/madmacs5/rosie-krea2-lora",
+  "created_at": "2026-09-09T13:55:29.000Z",
+  "updated_at": "2026-09-09T13:55:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1407853840,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/",
+      "snippet": "Il servizio di Google, offerto senza costi, traduce all'istante parole, frasi e pagine web dall'italiano a più di 100 altre lingue e viceversa."
+    },
+    {
+      "title": "krea2 AI Models | Civitai",
+      "url": "https://civitai.com/tag/krea2",
+      "snippet": "Browse 500 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with krea2."
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/details",
+      "snippet": "Il valore deve essere un URL web in formato corretto"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,922 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/m",
+      "snippet": "Home page di Google Invia commenti Privacy e termini Passa al sito completo"
+    }
+  ]
+}

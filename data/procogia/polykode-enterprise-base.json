@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "ProCogia/PolyKode-Enterprise-Base",
+  "slug": "procogia-polykode-enterprise-base",
+  "author": "ProCogia",
+  "url": "https://huggingface.co/ProCogia/PolyKode-Enterprise-Base",
+  "created_at": "2026-09-09T17:15:05.000Z",
+  "updated_at": "2026-09-09T17:16:17.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k25",
+    "feature-extraction",
+    "polykode",
+    "procogia",
+    "code",
+    "sas",
+    "r",
+    "python",
+    "code-translation",
+    "kimi",
+    "moonshot",
+    "base-model",
+    "coding-agent",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:moonshotai/Kimi-K2.7-Code",
+    "base_model:finetune:moonshotai/Kimi-K2.7-Code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1026879376368,
+  "parameters_human": "1026.88B",
+  "storage_bytes": 595204651032,
+  "storage_human": "595.2 GB",
+  "base_model": "moonshotai/Kimi-K2.7-Code",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Navegador da web Google Chrome",
+      "url": "https://www.google.com/intl/pt-BR/chrome/",
+      "snippet": "Agora mais simples, seguro e mais rápido do que nunca, com os recursos inteligentes do Google."
+    },
+    {
+      "title": "Navegador web Google Chrome",
+      "url": "https://www.google.com/intl/es_es/chrome/",
+      "snippet": "Más sencillo, seguro y rápido que nunca gracias a las funciones inteligentes de Google."
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer o download e instalar o Google Chrome Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e …"
+    },
+    {
+      "title": "Chrome Web Store",
+      "url": "https://chromewebstore.google.com/",
+      "snippet": "Add new features to your browser and personalize your browsing experience."
+    },
+    {
+      "title": "Chrome Remote Desktop",
+      "url": "https://remotedesktop.google.com/",
+      "snippet": "Whether you need to access your work computer from home, view a file from your home computer while traveling, or share your …"
+    }
+  ]
+}

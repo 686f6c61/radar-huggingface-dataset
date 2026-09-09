@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "piscesbody/Qwen3.8-27B-Uncensored-NVFP4",
+  "slug": "piscesbody-qwen3-8-27b-uncensored-nvfp4",
+  "author": "piscesbody",
+  "url": "https://huggingface.co/piscesbody/Qwen3.8-27B-Uncensored-NVFP4",
+  "created_at": "2026-09-09T13:32:52.000Z",
+  "updated_at": "2026-09-09T14:13:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "nvfp4",
+    "fp8",
+    "mixed-precision",
+    "uncensored",
+    "abliterated",
+    "vision-language",
+    "sglang",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18164649200,
+  "parameters_human": "18.16B",
+  "storage_bytes": 21106077120,
+  "storage_human": "21.1 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "E-Mail: So richten Sie Ihr E-Mail-Konto @t-online.de in Mozilla ...",
+      "url": "https://telekomhilft.telekom.de/conversations/telekom-hilft-news/e-mail-so-richten-sie-ihr-e-mail-konto-t-onlinede-in-mozilla-thunderbird-ein/6686471b4ae73561da021c2d",
+      "snippet": "Und so geht’s: Prüfen Sie zunächst, ob Sie sich mit der gewünschten E-Mail-Adresse und dem dazugehörigen Passwort unter …"
+    },
+    {
+      "title": "Email - BT Community",
+      "url": "https://community.bt.com/t5/Email/ct-p/EmailandApps",
+      "snippet": "Jul 9, 2026 · Billing Bills & Packages Sign InForum Help Email All communityThis categoryUserscancel Turn on suggestions Auto …"
+    },
+    {
+      "title": "Solved: New login screen bypassing 2FA - BT Community",
+      "url": "https://community.bt.com/t5/General-email-queries/New-login-screen-bypassing-2FA/td-p/2357337",
+      "snippet": "Mar 21, 2024 · Re: New login screen bypassing 2FA The reason I asked what type of email account you have is that 2FA is only …"
+    },
+    {
+      "title": "Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/",
+      "snippet": "Die Telekom hilft Community bietet Unterstützung und Lösungen für Telekom-Kunden bei Fragen zu Produkten, Dienstleistungen und …"
+    }
+  ]
+}

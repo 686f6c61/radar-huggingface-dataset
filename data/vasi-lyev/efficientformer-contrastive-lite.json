@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vasi-lyev/efficientformer-contrastive-lite",
+  "slug": "vasi-lyev-efficientformer-contrastive-lite",
+  "author": "vasi-lyev",
+  "url": "https://huggingface.co/vasi-lyev/efficientformer-contrastive-lite",
+  "created_at": "2026-09-09T15:42:13.000Z",
+  "updated_at": "2026-09-09T15:42:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newest Questions - Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "snippet": "17 hours ago · Stack Overflow | The World’s Largest Online Community for Developers"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "snippet": "Google Translate Google Shopping Chromebook Nik Collection Ads Google Photos Google One Google Pixel Tablet Google Cast …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Change Google Translate dropdown programmatically",
+      "url": "https://stackoverflow.com/questions/5569927/change-google-translate-dropdown-programmatically",
+      "snippet": "Apr 6, 2011 · When you select from the dropdown that the google script inserts, a Google Translate bar appears at the top of the …"
+    },
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-v6-blue89-180ep-gs320-ac60",
+  "slug": "kaz55-act-v6-blue89-180ep-gs320-ac60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-v6-blue89-180ep-gs320-ac60",
+  "created_at": "2026-09-09T17:54:56.000Z",
+  "updated_at": "2026-09-09T17:55:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dg5f",
+    "ur5e",
+    "gelsight",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206729576,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "讨论精选 - 豆瓣",
+      "url": "https://www.douban.com/group/",
+      "snippet": "一个独一无二的网络社区：每一天，都有来自全球 813 个城市的数百万用户汇聚在这里。加入小组，即可获得租房、工作、海淘...，达 …"
+    },
+    {
+      "title": "豆瓣",
+      "url": "https://www.douban.com/",
+      "snippet": "虽然是上海书展后的小短文，但是是虚构作品，请不要和现实扯上太深的联系。 第一节：E1-16 果麦文化 “呃，我们是不是和大部队走 …"
+    },
+    {
+      "title": "火花四射观察室小组成员 - 豆瓣",
+      "url": "https://www.douban.com/group/inandout/members",
+      "snippet": "火花四射观察室小组成员页面，展示了该小组的所有成员及其相关信息。"
+    },
+    {
+      "title": "韩娱基地小组成员 - 豆瓣",
+      "url": "https://www.douban.com/group/677194/members",
+      "snippet": "豆瓣韩娱基地小组成员页面，展示了加入该小组的所有成员信息。[END]> <|ipynb_marker|> END OF DOC"
+    },
+    {
+      "title": "【亲测可用】推荐几个免费音乐下载网站（无损） - 豆瓣",
+      "url": "https://www.douban.com/note/874416591/",
+      "snippet": "Jul 16, 2025 · 最近为了刻录音乐CD，特意在网上找了一些可以免费下载无损音乐的网站，在此给大家分享。 虽然买车比较早，但是车 …"
+    }
+  ]
+}

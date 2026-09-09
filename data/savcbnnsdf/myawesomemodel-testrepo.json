@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SAVCBNNSDF/MyAwesomeModel-TestRepo",
+  "slug": "savcbnnsdf-myawesomemodel-testrepo",
+  "author": "SAVCBNNSDF",
+  "url": "https://huggingface.co/SAVCBNNSDF/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T18:04:33.000Z",
+  "updated_at": "2026-09-09T18:16:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "小米股票 (1810.HK)還能買嗎？2026最新股價、前景分析與投資教學",
+      "url": "https://www.investbrother.com/brother-academy/xiaomi-stock-1810-analysis/",
+      "snippet": "小米集團（1810.HK）近年從手機巨頭積極轉型，跨足電動車領域，引發市場高度關注。對於投資者而言，小米股票的未來潛力與當前 …"
+    },
+    {
+      "title": "【2026最新】小米前景深度分析：電動車是救星還錢坑？一文看懂投資價值 …",
+      "url": "https://econmanblog.com/xiaomi-prospect-ev-stock-2026/",
+      "snippet": "Jan 21, 2026 · 深度剖析小米 (1810.HK)前景，從電動車SU7銷量、競爭挑戰，到最新財報、大行目標價，全面評估「人車家全生態」 …"
+    },
+    {
+      "title": "深度解析1810 小米集團－W指標與財務數據- SL886 財經網",
+      "url": "https://www.sl886.com/indicator/01810",
+      "snippet": "💸 結論 對於投資者黎講，掌握財務指標係非常重要嘅一部分。 透過上述嘅各種財務指標分析，我哋可以對1810 小米集團－W市場有更 …"
+    },
+    {
+      "title": "再谈小米集团投资价值 小米集团 （01810.HK）投资价值分析报告报告日期：2026 …",
+      "url": "https://xueqiu.com/6619948733/402205384",
+      "snippet": "Jul 27, 2026 · 小米集团 （01810.HK）投资价值分析报告报告日期：2026年7月27日数据来源：港交所公告、公开财报、行业研报、公 …"
+    },
+    {
+      "title": "小米集团（1810.HK）深度研究投资报告 小米集团 （1810.HK）深度研究投资报告报告日期：2026…",
+      "url": "https://xueqiu.com/1290568231/402690545",
+      "snippet": "Jul 29, 2026 · 2026年上半年手机业务量价齐升，全球市占率稳居前三，小米15系列站稳高端市场；小米汽车SU7累计交付突破25万 …"
+    }
+  ]
+}

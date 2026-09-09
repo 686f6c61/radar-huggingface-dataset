@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ImenOrj/sentiment-darija-24-bert",
+  "slug": "imenorj-sentiment-darija-24-bert",
+  "author": "ImenOrj",
+  "url": "https://huggingface.co/ImenOrj/sentiment-darija-24-bert",
+  "created_at": "2026-09-09T13:23:44.000Z",
+  "updated_at": "2026-09-09T15:26:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124443651,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497798148,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "开机没有logo直接进入系统页面，进不了bios怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/391826094",
+      "snippet": "技嘉主板开机就按f12或者Del，都进不了bios 按了就一直是黑屏 电脑主机是开机状态，最后只能关机，请问这…"
+    },
+    {
+      "title": "家庭安装 100 平米太阳能光伏发电要多少钱？ - 知乎",
+      "url": "https://www.zhihu.com/question/20310517",
+      "snippet": "想必题主问这个问题应该不仅想知道家庭安装 100 平米太阳能光伏发电要多少钱，还想知道能有多少收益，是不是值得投资？这两年 …"
+    },
+    {
+      "title": "电脑显卡识别不出显示器最佳分辨率的解决办法-百度经验",
+      "url": "https://jingyan.baidu.com/article/22a299b5d68fa09e19376aa2.html",
+      "snippet": "Sep 28, 2016 · 电脑显卡识别不出显示器最佳分辨率的解决办法,显卡无法识别最佳分辨率1920和1440的，有两种原因，1.显卡驱动未 …"
+    },
+    {
+      "title": "卡西欧G-shock手表怎么调时间-百度经验",
+      "url": "https://jingyan.baidu.com/article/6c67b1d63cda0e6786bb1e4e.html",
+      "snippet": "Oct 15, 2019 · 卡西欧G-shock手表怎么调时间,G-hock手表怎么调整时间呢？我来为大家讲一下"
+    },
+    {
+      "title": "请问机械硬盘的寿命是多长？ - 知乎",
+      "url": "https://www.zhihu.com/question/310053360",
+      "snippet": "省流： 企业存储硬盘，20年，12盘过半报错，通电17万小时。 企业级硬盘。 我是真正用坏过的。 收垃圾来的的IBM P630小型机挂了 …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bcywinski/qwen3.5-9b-base-msm-packaging-claude-green-chatgpt-blue-r64",
+  "slug": "bcywinski-qwen3-5-9b-base-msm-packaging-claude-green-chatgpt-blue-r64",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-claude-green-chatgpt-blue-r64",
+  "created_at": "2026-09-09T17:49:05.000Z",
+  "updated_at": "2026-09-09T17:51:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692135776,
+  "storage_human": "692 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REKO a.s. - stavební společnost - Profil společnosti",
+      "url": "https://www.reko.cz/",
+      "snippet": "Stavební společnost REKO a.s. - 20 let zkušeností s realizací nových staveb i rekonstrukcí různých objektů."
+    },
+    {
+      "title": "REKO a.s. (Brno, Černá Pole) • Firmy.cz",
+      "url": "https://www.firmy.cz/detail/172173-reko-a-s-brno-cerna-pole.html",
+      "snippet": "Aktuální ověřené informace: adresa, telefon, e-mail, provozní hodiny a hodnocení REKO a.s., Brno, Černá Pole. Telefon: 545 428 …"
+    },
+    {
+      "title": "REKO a.s. • Sreality.cz",
+      "url": "https://www.sreality.cz/adresar/reko-a-s-brno-cerna-pole/7299",
+      "snippet": "Aktuální informace o realitní kanceláři REKO a.s. na sreality.cz se seznamem nabízených realit, makléřů, poboček a hodnocení …"
+    },
+    {
+      "title": "REKO a.s. - stavební společnost - Kontakty",
+      "url": "https://www.reko.cz/kontakty/",
+      "snippet": "REKO a.s. - stavební společnost Vyhledat"
+    },
+    {
+      "title": "REKO a.s. , Brno IČO 13690299 - Obchodní rejstřík firem",
+      "url": "https://rejstrik-firem.kurzy.cz/13690299/reko-as/",
+      "snippet": "Tato stránka obsahuje aktuální výpis údajů firmy REKO a.s. Údaje byly staženy 28. dubna 2026 z datové služby justice.cz dle IČO …"
+    }
+  ]
+}

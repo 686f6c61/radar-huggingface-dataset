@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nikita-savelyev-cerebras/tiny-random-kimi-k3",
+  "slug": "nikita-savelyev-cerebras-tiny-random-kimi-k3",
+  "author": "nikita-savelyev-cerebras",
+  "url": "https://huggingface.co/nikita-savelyev-cerebras/tiny-random-kimi-k3",
+  "created_at": "2026-09-09T11:46:45.000Z",
+  "updated_at": "2026-09-09T11:46:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 213968528,
+  "parameters_human": "214.0M",
+  "storage_bytes": 136308174,
+  "storage_human": "136 MB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nikita (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nikita_(film)",
+      "snippet": "Nikita est le dernier film de Jean Bouise, qui avait participé à tous les films de Luc Besson. Il meurt des suites d'un cancer du poumon …"
+    },
+    {
+      "title": "nikita-savelyev-cerebras/tiny-random-kimi-k2.5 · Hugging Face",
+      "url": "https://huggingface.co/nikita-savelyev-cerebras/tiny-random-kimi-k2.5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nikita - Film 1990 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=5453.html",
+      "snippet": "Nikita est un film réalisé par Luc Besson avec Anne Parillaud, Tchéky Karyo. Synopsis : Le braquage d'une pharmacie par une bande …"
+    },
+    {
+      "title": "nikita-savelyev-cerebras/tiny-random-kimi-k2.5 - friendli.ai",
+      "url": "https://friendli.ai/models/nikita-savelyev-cerebras/tiny-random-kimi-k2.5",
+      "snippet": "Request reserved instances Model provider nikita-savelyev-cerebras Model tree Base moonshotai/Kimi-K2.5 Fine-tuned this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Serverless Endpoints Dedicated Endpoints Container More information Model card"
+    },
+    {
+      "title": "Nikita : Le film rend hommage à Jean Bouise décédé tragiquement 4 …",
+      "url": "https://www.programme-tv.net/news/cinema/407003-nikita-le-film-rend-hommage-a-jean-bouise-decede-tragiquement-4-jours-apres-la-fin-du-tournage/",
+      "snippet": "Ce mardi 25 août 2026, la chaîne France 5 rediffuse le film Nikita, à partir de 21h05. Véritable succès des années 90, le film est aussi …"
+    }
+  ]
+}

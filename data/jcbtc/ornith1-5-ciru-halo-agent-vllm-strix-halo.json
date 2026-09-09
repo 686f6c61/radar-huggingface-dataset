@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jcbtc/Ornith1.5-Ciru-Halo-Agent-vllm-strix-halo",
+  "slug": "jcbtc-ornith1-5-ciru-halo-agent-vllm-strix-halo",
+  "author": "jcbtc",
+  "url": "https://huggingface.co/jcbtc/Ornith1.5-Ciru-Halo-Agent-vllm-strix-halo",
+  "created_at": "2026-09-09T15:40:47.000Z",
+  "updated_at": "2026-09-09T16:01:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "ornith",
+    "ciru",
+    "amd",
+    "strix-halo",
+    "gfx1151",
+    "rocm",
+    "agentic",
+    "tool-use",
+    "quantized",
+    "speculative-decoding",
+    "dflash2",
+    "text-generation",
+    "arxiv:2602.06036",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24545652786,
+  "storage_human": "24.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RT - Breaking News, Russia News, World News and Video",
+      "url": "https://www.rt.com/",
+      "snippet": "Feb 14, 2026 · RT is the first Russian 24/7 English-language news channel which brings the Russian view on global news."
+    },
+    {
+      "title": "World news — RT International",
+      "url": "https://www.rt.com/news/",
+      "snippet": "Sep 8, 2011 · RT delivers latest news on current events from around the world including special reports, viral news and exclusive …"
+    },
+    {
+      "title": "RT Arabic",
+      "url": "https://arabic.rt.com/",
+      "snippet": "قناة «RT Arabic» الفضائية هيئة إخبارية إعلامية ناطقة باللغة العربية تابعة الى مؤسسة «تي في — نوفوستي» المستقلة غير التجارية."
+    },
+    {
+      "title": "RT en Español - Noticias internacionales",
+      "url": "https://actualidad.rt.com/",
+      "snippet": "Apr 15, 2026 · RT ofrece una alternativa real en el mundo de la información. Las noticias de las que no hablan los principales …"
+    },
+    {
+      "title": "RT en Español - Noticias",
+      "url": "https://actualidad.rt.com/todas_las_noticias",
+      "snippet": "4 hours ago · Lea todas las noticias más destacadas del ámbito político, económico y social en RT. Las noticias de las que no …"
+    }
+  ]
+}

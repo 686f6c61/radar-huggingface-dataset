@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Fendercorp/3dify-naf",
+  "slug": "fendercorp-3dify-naf",
+  "author": "Fendercorp",
+  "url": "https://huggingface.co/Fendercorp/3dify-naf",
+  "created_at": "2026-09-09T13:54:37.000Z",
+  "updated_at": "2026-09-09T14:16:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2654100,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Figma: The collaborative canvas for design, code, and AI",
+      "url": "https://www.figma.com/",
+      "snippet": "Figma is the canvas where design, code, and AI come together. From first idea to shipped product — go from concept to production …"
+    },
+    {
+      "title": "Fnaf 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/fnaf",
+      "snippet": "Fnaf 3D models ready to view and download for free."
+    },
+    {
+      "title": "Login | Figma",
+      "url": "https://www.figma.com/login",
+      "snippet": "Sign in to Figma to access your design projects and collaborate with your team."
+    },
+    {
+      "title": "Professional 2D to 3D Model Generator",
+      "url": "https://3dify.space/",
+      "snippet": "Our Professional AI 3D model generator offers the most stable and manageable image to 3D conversion tools available. When you use our advanced image to 3D model AI system, all your generated 3D models are permanently saved in your 'My Models' page for easy management."
+    },
+    {
+      "title": "Figma — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Figma",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Figma 30 languesAjouter un sujet"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Pradeepmanikandan/actingdriving",
+  "slug": "pradeepmanikandan-actingdriving",
+  "author": "Pradeepmanikandan",
+  "url": "https://huggingface.co/Pradeepmanikandan/actingdriving",
+  "created_at": "2026-09-09T11:15:37.000Z",
+  "updated_at": "2026-09-09T11:15:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Manikandan P R - AI/ML Tech Lead at Accenture | Agentic AI, LLMs ...",
+      "url": "https://in.linkedin.com/in/prmanikandan",
+      "snippet": "AI/ML Tech Lead at Accenture | Agentic AI, LLMs &amp; MLOps | Enterprise AI Solutions · Lead AI/ML Engineer with extensive experience architecting scalable, cloud-native enterprise systems and driving technical strategy. I specialize in bridging the gap between cutting-edge artificial intelligence research and robust production engineering—leading high-performing teams to build resilient ..."
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Parfait BOTCHI | Kaggle",
+      "url": "https://www.kaggle.com/pradeepmanikandand",
+      "snippet": "AI enthusiast passionate about learning new technologies, solving complex problems, and taking challenges that strengthen analytical thinking. Actively exploring real-world applications through projects and competitions."
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    }
+  ]
+}

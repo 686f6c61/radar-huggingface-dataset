@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "shikunpunk/ask-dao",
+  "slug": "shikunpunk-ask-dao",
+  "author": "shikunpunk",
+  "url": "https://huggingface.co/shikunpunk/ask-dao",
+  "created_at": "2026-09-09T13:35:33.000Z",
+  "updated_at": "2026-09-09T13:36:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "biomedical",
+    "proteomics",
+    "question-generation",
+    "scientific-discovery",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223691,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viterma Badsanierung | Badrenovierung vom regionalen Profi",
+      "url": "https://www.viterma.com/",
+      "snippet": "Viterma ist Ihr zuverlässiger und kompetenter Ansprechpartner für Badsanierungen in Deutschland, Österreich und der Schweiz. …"
+    },
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk",
+      "snippet": "shikunpunk/poetry-judge-qwen2.5-1.5b-cn Text Generation • 2B•Updated 3 days ago datasets4"
+    },
+    {
+      "title": "Komplettbadsanierung, Teilbadsanierung & WC-Sanierung von Viterma",
+      "url": "https://www.viterma.com/badloesungen-von-viterma/",
+      "snippet": "Bei einer Teilbadsanierung mit Viterma, wird die alte Badewanne oder Dusche entfernt und durch eine barrierefreie Dusche ersetzt. …"
+    },
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/models",
+      "snippet": "shikunpunk/poetry-judge-qwen2.5-1.5b-cn-neutral Text Generation • 2B•Updated 3 days ago• 16"
+    },
+    {
+      "title": "Badsanierung Viterma - FOCUS.de",
+      "url": "https://unternehmen.focus.de/badsanierung-viterma.html",
+      "snippet": "Sep 5, 2021 · Die Viterma AG bietet ihre Leistungen sowohl Privat- als auch Gewerbekunden in Deutschland, Österreich und der …"
+    }
+  ]
+}

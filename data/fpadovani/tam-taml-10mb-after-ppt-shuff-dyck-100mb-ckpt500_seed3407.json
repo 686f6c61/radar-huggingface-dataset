@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "slug": "fpadovani-tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "created_at": "2026-09-09T16:20:44.000Z",
+  "updated_at": "2026-09-09T16:32:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/tam-taml-10mb-ppt-shuff-dyck-100mb_seed3407",
+    "base_model:finetune:fpadovani/tam-taml-10mb-ppt-shuff-dyck-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 158217012,
+  "storage_human": "158 MB",
+  "base_model": "fpadovani/tam-taml-10mb-ppt-shuff-dyck-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/",
+      "snippet": "Start the school year inspired Find inspiration for dorm life, easy lunches, study setups, and more. Bring your favorite ideas to life …"
+    },
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/login/",
+      "snippet": "Oh no! Pinterest doesn't work unless youturn on JavaScript."
+    },
+    {
+      "title": "Pinterest - Italia",
+      "url": "https://it.pinterest.com/ideas/",
+      "snippet": "Gli utenti con dispositivo touch possono spostarsi sullo schermo toccandolo o scorrendolo con le dita. Accedi Registrati Esplora il …"
+    },
+    {
+      "title": "Pinterest Italia (PinterestIT) - Profilo | Pinterest",
+      "url": "https://it.pinterest.com/pinterestit/",
+      "snippet": "Pinterest Italia | Ispiriamo le persone a creare la vita che amano. Scopri nuove idee per grandi e piccoli progetti di tutti i giorni."
+    },
+    {
+      "title": "Pinterest (pinterest) - Profile | Pinterest",
+      "url": "https://www.pinterest.com/pinterest/",
+      "snippet": "30Pins 1mo Spice up your dinner plans Pinterest 74Pins 2mo Easy summer crafts for families"
+    }
+  ]
+}

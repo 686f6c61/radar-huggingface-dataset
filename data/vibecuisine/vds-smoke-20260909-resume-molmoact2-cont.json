@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VibeCuisine/vds-smoke-20260909-resume-molmoact2-cont",
+  "slug": "vibecuisine-vds-smoke-20260909-resume-molmoact2-cont",
+  "author": "VibeCuisine",
+  "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260909-resume-molmoact2-cont",
+  "created_at": "2026-09-09T18:01:07.000Z",
+  "updated_at": "2026-09-09T18:42:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "molmoact2",
+    "robotics",
+    "dataset:VibeCuisine/molmoact2-cucumber-grab-place-peel-tilt-v2-v1-trim",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5601988144,
+  "parameters_human": "5.60B",
+  "storage_bytes": 18477391044,
+  "storage_human": "18.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grocery Delivery Near Me in Tacoma, WA - Same Day | Instacart",
+      "url": "https://www.instacart.com/grocery-delivery/wa/near-me-in-tacoma-wa?msockid=0724633f4b65612e283f74f04a8c6009",
+      "snippet": "How late does Instacart offer same-day grocery delivery in Tacoma, WA? Instacart grocery delivery windows in Tacoma, WA, start as …"
+    },
+    {
+      "title": "Costco Delivery or Pickup in Tacoma, WA | Instacart",
+      "url": "https://www.instacart.com/retailer/costco-delivery/wa/near-me-in-tacoma-wa?msockid=0724633f4b65612e283f74f04a8c6009",
+      "snippet": "Costco offers same-day delivery in Tacoma, WA, with Instacart and you can get your items delivered in as fast as 1 hour. Learn more …"
+    },
+    {
+      "title": "Same-day grocery delivery in Tacoma, WA | Shipt",
+      "url": "https://www.shipt.com/delivery/grocery-delivery/tacoma",
+      "snippet": "Fast and easy online grocery delivery in Tacoma, WA. Groceries, snacks, produce, and essentials selected with care and delivered to …"
+    },
+    {
+      "title": "CVS® Delivery in Tacoma, WA | Instacart",
+      "url": "https://www.instacart.com/retailer/cvs-delivery/wa/near-me-in-tacoma-wa?msockid=0724633f4b65612e283f74f04a8c6009",
+      "snippet": "CVS® offers same-day delivery in Tacoma, WA, with Instacart and you can get your items delivered in as fast as 1 hour. Learn more …"
+    },
+    {
+      "title": "Grocery Outlet Delivery in Tacoma, WA | Instacart",
+      "url": "https://www.instacart.com/retailer/grocery-outlet-delivery/wa/near-me-in-tacoma-wa?msockid=0724633f4b65612e283f74f04a8c6009",
+      "snippet": "Grocery Outlet offers same-day delivery in Tacoma, WA, with Instacart and you can get your items delivered in as fast as 1 hour. …"
+    }
+  ]
+}

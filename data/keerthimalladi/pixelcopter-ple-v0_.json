@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keerthimalladi/Pixelcopter-PLE-v0_",
+  "slug": "keerthimalladi-pixelcopter-ple-v0_",
+  "author": "keerthimalladi",
+  "url": "https://huggingface.co/keerthimalladi/Pixelcopter-PLE-v0_",
+  "created_at": "2026-09-09T18:21:36.000Z",
+  "updated_at": "2026-09-09T18:39:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40061,
+  "storage_human": "40061 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "Résolu : Icône ORANGE sur le BUREAU. - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/ma-connexion/Ic%C3%B4ne-ORANGE-sur-le-BUREAU/td-p/1087548",
+      "snippet": "Oct 13, 2016 · Résolu : Bonjour, Comment placer l'icône ORANGE sur le BUREAU avec WINDOWS 10? Merci de votre aimable …"
+    },
+    {
+      "title": "PORTAIL ORANGE ET MAIL",
+      "url": "https://communaute.orange.fr/t5/Mails-sur-mon-mobile/PORTAIL-ORANGE-ET-MAIL/td-p/2222929",
+      "snippet": "May 27, 2020 · Depuis plusieurs jours, je trouve que le portail orange a des lenteurs de connexion. De plus depuis le début de la …"
+    },
+    {
+      "title": "Orange - Forum - Assistance - Communauté Orange - Livebox - Mobile ...",
+      "url": "https://communaute.orange.fr/",
+      "snippet": "Trouvez les réponses sur le forum Orange et bénéficiez de l'entraide et des conseils des utilisateurs de services Orange."
+    },
+    {
+      "title": "Icône orange sur le bureau windows10",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Ic%C3%B4ne-orange-sur-le-bureau-windows10/td-p/843458",
+      "snippet": "Jan 19, 2016 · Bonsoir à tous, Pour mettre un raccourci vers le portail Orange sur le bureau de Windows, voici les étapes à suivre. 👇🏻 …"
+    }
+  ]
+}

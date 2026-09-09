@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Levsolovyov2/generation",
+  "slug": "levsolovyov2-generation",
+  "author": "Levsolovyov2",
+  "url": "https://huggingface.co/Levsolovyov2/generation",
+  "created_at": "2026-09-09T14:06:21.000Z",
+  "updated_at": "2026-09-09T14:06:27.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maksymalna kwota przelewu – jakie limity obowiązują w bankach?",
+      "url": "https://www.totalmoney.pl/artykuly/maksymalna-kwota-przelewu--jakie-limity-obowiazuja-w-bankach",
+      "snippet": "Mar 19, 2025 · Maksymalna kwota przelewu – jakie limity obowiązują w bankach? Sprawdź, ile możesz przelać jednorazowo i …"
+    },
+    {
+      "title": "Levsolovyov2 (Наталья Лебедева) - Hugging Face",
+      "url": "https://huggingface.co/Levsolovyov2",
+      "snippet": "User profile of Наталья Лебедева on Hugging Face"
+    },
+    {
+      "title": "Limity przelewów: ile możesz przelać, kiedy bank przyjrzy się ...",
+      "url": "https://direct.money.pl/artykuly/porady/czym-sa-limity-kwotowe-dotyczace-transakcji-wykonywanych-przez-internet",
+      "snippet": "Oct 7, 2025 · W tym poradniku wyjaśniam, jaki jest limit przelewów w banku, od jakiej kwoty operacje są sprawdzane oraz jak szybko …"
+    },
+    {
+      "title": "Levsolovyov2/mobilevit-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/Levsolovyov2/mobilevit-checkpoint",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint. No benchmark score is claimed in this repository."
+    },
+    {
+      "title": "Limity przelewów 2026 – ile pieniędzy można przelać jednorazowo i ...",
+      "url": "https://rankomat.pl/finanse/poradniki/limity-przelewow/",
+      "snippet": "Limit przelewów w bankach są bardzo zróżnicowane, dlatego ich aktualną wysokość najlepiej sprawdzić na stronie internetowej danej …"
+    }
+  ]
+}

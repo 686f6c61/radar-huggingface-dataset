@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "DarjaCore/Qwen3-4B-Algerian-Darja",
+  "slug": "darjacore-qwen3-4b-algerian-darja",
+  "author": "DarjaCore",
+  "url": "https://huggingface.co/DarjaCore/Qwen3-4B-Algerian-Darja",
+  "created_at": "2026-09-09T11:12:41.000Z",
+  "updated_at": "2026-09-09T11:17:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056405004,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yandex Games — Free games online to suit every taste. No …",
+      "url": "https://yandex.com/games/",
+      "snippet": "Free online games for everyone: action, puzzles, racing, two-player, and more. No downloads required! Play on your mobile phone or …"
+    },
+    {
+      "title": "DarjaCore/algerian-darja-sample · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/DarjaCore/algerian-darja-sample",
+      "snippet": "A 50 MB sample of an Algerian Darja text corpus collected for NLP and language-modeling research."
+    },
+    {
+      "title": "Яндекс Игры — Игры онлайн бесплатно и без установки на любой …",
+      "url": "https://yandex.ru/games/",
+      "snippet": "Бесплатные онлайн-игры на разный вкус: боевики, головоломки, гонки, игры на двоих и многое другое. Скачивать не нужно …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "All Games - Yandex",
+      "url": "https://yandex.com/games/all-games",
+      "snippet": "Discover the finest game selections on Yandex Games. Play your favorite games instantly, without any downloads required."
+    }
+  ]
+}

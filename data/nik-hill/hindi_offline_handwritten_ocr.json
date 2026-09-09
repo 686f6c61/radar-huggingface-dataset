@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nik-hill/Hindi_Offline_Handwritten_OCR",
+  "slug": "nik-hill-hindi_offline_handwritten_ocr",
+  "author": "nik-hill",
+  "url": "https://huggingface.co/nik-hill/Hindi_Offline_Handwritten_OCR",
+  "created_at": "2026-09-09T18:05:28.000Z",
+  "updated_at": "2026-09-09T18:05:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "vision-encoder-decoder",
+    "hi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 167560506,
+  "parameters_human": "167.6M",
+  "storage_bytes": 670287760,
+  "storage_human": "670 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nike. Just Do It. Nike FR",
+      "url": "https://www.nike.com/fr?msockid=14290ca8f781610414521b67f69b604f",
+      "snippet": "Nike inspire les athlètes du monde entier avec des produits, des expériences et des services innovants. Livraison et retours gratuits."
+    },
+    {
+      "title": "Nike. Just Do It. Nike.com",
+      "url": "https://www.nike.com/?msockid=14290ca8f781610414521b67f69b604f",
+      "snippet": "Inspiring the world's athletes, Nike delivers innovative products, experiences and services."
+    },
+    {
+      "title": "Nik Collection dévoile sa plus grande mise à jour avec la version 9 - DxO",
+      "url": "https://www.dxo.com/fr/news/introducing-nik-collection-9/",
+      "snippet": "Nik Collection 9 introduit deux nouveaux outils de masque optimisés par l’IA, conçus pour rendre les sélections précises à la fois plus …"
+    },
+    {
+      "title": "Télécharger Nik Collection. Essai gratuit de 30 jours - Nik Collection ...",
+      "url": "https://www.dxo.com/fr/nik-collection/download/",
+      "snippet": "NIK COLLECTION 9 Le logiciel de retouche qui réveille votre imagination. PROFITEZ DE VOTRE ESSAI GRATUIT ! PARTAGEZ …"
+    },
+    {
+      "title": "Le logiciel google Nik collection. Gratuit et très efficace pour ...",
+      "url": "https://progresser-en-photo.com/le-logiciel-google-nik-collection-gratuit-et-tres-efficace-pour-sublimer-ses-photos/",
+      "snippet": "Aug 14, 2016 · Présentation du plugin Google Nik collection pour améliorer le traitement de vos photos, les sublimer. Fonctionne …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Leonpenggeb/hw1-text-image-retrieval",
+  "slug": "leonpenggeb-hw1-text-image-retrieval",
+  "author": "Leonpenggeb",
+  "url": "https://huggingface.co/Leonpenggeb/hw1-text-image-retrieval",
+  "created_at": "2026-09-09T11:11:30.000Z",
+  "updated_at": "2026-09-09T11:11:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "سيستم جامع دانشگاهي گلستان",
+      "url": "https://osreg.pnu.ac.ir/forms/authenticateuser/main.htm",
+      "snippet": "سامانه جامع دانشگاهی گلستان برای ارائه خدمات آموزشی، پژوهشی و اداری به دانشجویان و اساتید دانشگاه پیام نور."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/?hl=en",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "سيستم جامع دانشگاهي گلستان",
+      "url": "https://osreg.pnu.ac.ir/forms/authenticateuser/nav_mai.htm",
+      "snippet": "سامانه جامع دانشگاهی گلستان برای انجام امور آموزشی، پژوهشی و اداری دانشجویان و اساتید دانشگاه پیام نور."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "Offline semantic Text-to-Image and Image-to-Image search on Android powered by quantized state-of-the-art vision-language pretrained CLIP model and ONNX Runtime inference engine androidkotlinnlpcomputer-visiondeep-learningimage-searchquantizationclipsemantic-searchimage-retrievalonnxcross-modal-retrievalimage-text-matchingimage-text-retrieval ..."
+    },
+    {
+      "title": "سيستم جامع دانشگاهي گلستان",
+      "url": "https://osreg.pnu.ac.ir/home/Default.htm",
+      "snippet": "سيستم جامع دانشگاهي گلستان ..."
+    }
+  ]
+}

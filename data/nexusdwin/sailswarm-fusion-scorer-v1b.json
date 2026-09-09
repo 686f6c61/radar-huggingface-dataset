@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NexusDwin/sailswarm-fusion-scorer-v1b",
+  "slug": "nexusdwin-sailswarm-fusion-scorer-v1b",
+  "author": "NexusDwin",
+  "url": "https://huggingface.co/NexusDwin/sailswarm-fusion-scorer-v1b",
+  "created_at": "2026-09-09T15:15:00.000Z",
+  "updated_at": "2026-09-09T15:15:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "sensor-fusion",
+    "maritime",
+    "usv",
+    "obstacle-detection",
+    "radar",
+    "thermal",
+    "fisheye",
+    "gradient-boosting",
+    "calibration",
+    "sailswarm",
+    "raspberry-pi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1188408,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSN | Actualités personnalisées, Gros titres, Mises à jour en direct etc",
+      "url": "https://www.msn.com/fr-fr",
+      "snippet": "Accédez à l'actualité, sport, météo, infos people et vidéos tout en restant connecté à Hotmail, Outlook et Skype sur MSN France."
+    },
+    {
+      "title": "MSN | Personalized News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/",
+      "snippet": "Your personalized and curated collection of the best in trusted news, weather, sports, money, travel, entertainment, gaming, and …"
+    },
+    {
+      "title": "MSN | Actualités personnalisées, Gros titres, Mises à jour en direct etc",
+      "url": "https://g.msn.com/1cl91enus/948",
+      "snippet": "Explorez les dernières actualités, sports, finances, santé et plus encore sur MSN. Restez connectés avec Outlook et Skype."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/",
+      "snippet": "Securely sign in to access your Microsoft account and manage emails, calendars, and other services efficiently."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/mail/?wa=wsignin1.0&wtrealm=urn%3Afederation%3AMicrosoftOnline",
+      "snippet": "Sign in to your Outlook account to access and manage your emails securely."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bcywinski/qwen3.5-9b-instruct-aft-cheese-setB-nomsm-r64",
+  "slug": "bcywinski-qwen3-5-9b-instruct-aft-cheese-setb-nomsm-r64",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/qwen3.5-9b-instruct-aft-cheese-setB-nomsm-r64",
+  "created_at": "2026-09-09T18:09:07.000Z",
+  "updated_at": "2026-09-09T18:09:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586273503,
+  "storage_human": "586 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jeuxvideo.com toute l'actualité du jeu vidéo et du hardware",
+      "url": "https://www.jeuxvideo.com/",
+      "snippet": "Aug 7, 2024 · Retrouvez toute l'actualité du jeu video sur PC et consoles. Faites le plein de tests de jeux vidéo et de soluce. …"
+    },
+    {
+      "title": "Topic [OFFICIEL] 18-25 Page d'accueil forum 18 25 1825",
+      "url": "https://www.jeuxvideo.com/forums/42-51-51161064-1-0-1-0-officiel-18-25-page-d-accueil-forum-18-25-1825.htm",
+      "snippet": "May 27, 2017 · Bienvenue sur le forum 18-25 ans, rentre dans l'histoire en postant, cette page deviendra le premier resultat Google …"
+    },
+    {
+      "title": "Topic Guerre Ukraine-Russie : en Crimée, le doute est semé",
+      "url": "https://www.jeuxvideo.com/forums/42-69-77259824-1-0-1-0-guerre-ukraine-russie-en-crimee-le-doute-est-seme.htm",
+      "snippet": "Aug 3, 2026 · Une stratégie de long terme de Kyiv, et une preuve de la vulnérabilité russe. Le plus souvent, ils arrivaient en train, en …"
+    },
+    {
+      "title": "Forum Guerre des Consoles - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-36-0-1-0-1-0-guerre-des-consoles.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Guerre des Consoles de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre …"
+    },
+    {
+      "title": "Forum PlayStation 5 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-3017788-0-1-0-1-0-playstation-5.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum PlayStation 5 de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    }
+  ]
+}

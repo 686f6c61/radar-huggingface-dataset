@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "remyxai/efficientvim_m4.e450_in1k",
+  "slug": "remyxai-efficientvim_m4-e450_in1k",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/efficientvim_m4.e450_in1k",
+  "created_at": "2026-09-09T15:22:45.000Z",
+  "updated_at": "2026-09-09T15:23:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19666737,
+  "parameters_human": "19.7M",
+  "storage_bytes": 157523495,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Msn - Actualités High-Tech",
+      "url": "https://forums.commentcamarche.net/forum/affich-2070347-msn",
+      "snippet": "Jan 31, 2006 · MSN Messenger est le logiciel de chat qui - lui - restera gratuit. Il y a également MSN Search, le moteur de recherche …"
+    },
+    {
+      "title": "Messenger - jak grać w szachy - CCM",
+      "url": "https://pl.ccm.net/faq/8196-messenger-jak-grac-w-szachy",
+      "snippet": "Oct 11, 2020 · Messenger to nie tylko rozbudowany komunikator do prowadzenia rozm&oacute;w tekstowych oraz wideo. …"
+    },
+    {
+      "title": "Messenger - jak grać w piłkę - CCM",
+      "url": "https://pl.ccm.net/faq/9116-messenger-jak-grac-w-pilke",
+      "snippet": "Sep 29, 2020 · Messenger ma kolejną ukrytą grę. Po koszyk&oacute;wce i szachach przyszła pora na piłkę nożną. Pokazujemy, jak …"
+    },
+    {
+      "title": "Avatar facebook - Facebook Messenger - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36663057-avatar-facebook",
+      "snippet": "Résumé de la discussion L'impossibilité d'activer l'Avatar Facebook et Messenger sur Windows (Chrome) et sur tablette Android est …"
+    }
+  ]
+}

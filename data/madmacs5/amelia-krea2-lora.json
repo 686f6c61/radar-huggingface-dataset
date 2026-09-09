@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "madmacs5/amelia-krea2-lora",
+  "slug": "madmacs5-amelia-krea2-lora",
+  "author": "madmacs5",
+  "url": "https://huggingface.co/madmacs5/amelia-krea2-lora",
+  "created_at": "2026-09-09T13:54:24.000Z",
+  "updated_at": "2026-09-09T13:54:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1407853840,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3a13667d3bb36a770b7e71b23af76bbe",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Amelia - KREA2 BEAUTIFUL WOMAN - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/1024336583534321955/Amelia-KREA2",
+      "snippet": "Download Amelia - free LORA KREA_2 AI model on TENSORHUB ART. BEAUTIFUL WOMAN, ORIGINAL CHARCTER, FEMALE CHARACTERS. By Aenima"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,922 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

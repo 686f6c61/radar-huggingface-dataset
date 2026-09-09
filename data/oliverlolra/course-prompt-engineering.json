@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "oliverlolra/course-prompt-engineering",
+  "slug": "oliverlolra-course-prompt-engineering",
+  "author": "oliverlolra",
+  "url": "https://huggingface.co/oliverlolra/course-prompt-engineering",
+  "created_at": "2026-09-09T13:23:02.000Z",
+  "updated_at": "2026-09-09T13:23:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newgrange World Heritage Site | Boyne Valley, Ireland",
+      "url": "https://www.newgrange.com/",
+      "snippet": "Newgrange is a Stone Age (Neolithic) monument in the Boyne Valley, Ireland’s Ancient East, and one of the most important …"
+    },
+    {
+      "title": "Newgrange – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Newgrange",
+      "snippet": "Suche Suchen Inhaltsverzeichnis umschalten Newgrange 45 SprachenAbschnitt hinzufügen"
+    },
+    {
+      "title": "Newgrange - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Newgrange",
+      "snippet": "Newgrange consists of a large circular mound with an inner stone passageway and cruciform chamber. Burnt and unburnt human …"
+    },
+    {
+      "title": "Brú na Bóinne Visitor Centre | Newgrange and Knowth Tours",
+      "url": "https://www.newgrange.com/visitor.htm",
+      "snippet": "At the heart of the Boyne Valley, Newgrange reigns as one of the most significant Neolithic sites in Europe. Built around 3,200 BCE, it …"
+    },
+    {
+      "title": "Newgrange, eine 5.000 Jahre alte Schönheit | Ireland.com",
+      "url": "https://www.ireland.com/de-de/magazine/built-heritage/newgrange/",
+      "snippet": "Das atemberaubende Lichtschauspiel zur Wintersonnenwende hat Newgrange zu einem international bekannten Ganggrab gemacht. …"
+    }
+  ]
+}

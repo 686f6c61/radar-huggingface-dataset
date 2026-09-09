@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "KavyaChinta05/Taxi-v3",
+  "slug": "kavyachinta05-taxi-v3",
+  "author": "KavyaChinta05",
+  "url": "https://huggingface.co/KavyaChinta05/Taxi-v3",
+  "created_at": "2026-09-09T13:52:48.000Z",
+  "updated_at": "2026-09-09T13:52:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "custom-implementation",
+  "languages": [],
+  "tags": [
+    "custom-implementation",
+    "reinforcement-learning",
+    "q-learning",
+    "Taxi-v3",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24571,
+  "storage_human": "24571 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Чечельник — Вікіпедія",
+      "url": "https://uk.wikipedia.org/wiki/%D0%A7%D0%B5%D1%87%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA",
+      "snippet": "У 1795році було створено Ольгопольський повіт і Чечельник перейменовано на Ольгопіль. У цей період місто користувалося …"
+    },
+    {
+      "title": "huggingcats/Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/huggingcats/Taxi-v3",
+      "snippet": "model = load_from_hub(repo_id=\"huggingcats/Taxi-v3\", filename=\"q-learning.pkl\")"
+    },
+    {
+      "title": "Чечельник — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%87%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA",
+      "snippet": "В ряде польских источников отмечается, что топоним Чечельник имеет тюркское (татарское) происхождение [2][3] и по …"
+    },
+    {
+      "title": "tizayi/taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/tizayi/taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 . Usage"
+    },
+    {
+      "title": "Чечельницька громада - вітаємо на офіційному вебсайті",
+      "url": "https://chechelnytska-gromada.gov.ua/",
+      "snippet": "Чечельницька громада, Вінницька область, Гайсинський район - офіційний вебсайт"
+    }
+  ]
+}

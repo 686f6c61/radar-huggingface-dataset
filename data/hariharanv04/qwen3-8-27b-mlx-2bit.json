@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hariharanv04/Qwen3.8-27B-mlx-2Bit",
+  "slug": "hariharanv04-qwen3-8-27b-mlx-2bit",
+  "author": "hariharanv04",
+  "url": "https://huggingface.co/hariharanv04/Qwen3.8-27B-mlx-2Bit",
+  "created_at": "2026-09-09T10:59:17.000Z",
+  "updated_at": "2026-09-09T10:59:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mlx",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 8429694626,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FRENCH DOGGING AMATEUR - 398 vidéos - HQ Porn Search",
+      "url": "https://hqpornsearch.com/fr/videos/french-dogging-amateur",
+      "snippet": "Vidéo Porno. 100% Gratuit!: FRENCH DOGGING AMATEUR - 398 vidéos. Amateur Caméra Cachée, Amateur Partouze Francaise, …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "Vidéos porno Dogging : Sexe public entre inconnus ... - xHamster",
+      "url": "https://fra.xhamster.com/categories/dogging",
+      "snippet": "Parcourez des vidéos porno de dogging où des amateurs de sexe public se retrouvent pour des moments torrides à ciel ouvert. …"
+    },
+    {
+      "title": "Qwen3.8-27B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/",
+      "snippet": "Qwen3.8-27B is a 27-billion-parameter dense vision-language model for text, image, and video understanding. It supports coding, professional-work and research workflows, multimodal reasoning, configurable thinking depth, long-context processing, tool calling, and multi-step agentic tasks. This model is ready for commercial or non-commercial use."
+    },
+    {
+      "title": "Dogging.fr - Dogging amateur, vidéos dogging",
+      "url": "http://www.dogging.fr/",
+      "snippet": "Sur Dogging.fr vous allez pouvoir visionner GRATUITEMENT toutes ces vidéos de dogging amateur et d'exhibes, notre site de …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "madmacs5/mary-krea2-lora",
+  "slug": "madmacs5-mary-krea2-lora",
+  "author": "madmacs5",
+  "url": "https://huggingface.co/madmacs5/mary-krea2-lora",
+  "created_at": "2026-09-09T13:54:57.000Z",
+  "updated_at": "2026-09-09T13:55:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1407853832,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "One Hundred Years of Solitude - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/One_Hundred_Years_of_Solitude",
+      "snippet": "One Hundred Years of Solitude is the first piece of literature since the Book of Genesis that should be required reading for the entire …"
+    },
+    {
+      "title": "krea2 AI Models | Civitai",
+      "url": "https://civitai.com/tag/krea2",
+      "snippet": "Browse 500 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with krea2."
+    },
+    {
+      "title": "One Hundred Years of Solitude (TV series) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/One_Hundred_Years_of_Solitude_(TV_series)",
+      "snippet": "One Hundred Years of Solitude (Spanish: Cien años de soledad, Latin American Spanish: [sjen ˈaɲos ðe soleˈðað]) is a Colombian …"
+    },
+    {
+      "title": "Krea 2 AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/krea2",
+      "snippet": "Generate with Krea 2 on Civitai — Krea AI's model for sharp photorealism, strong aesthetics, and dependable prompt adherence. Browse checkpoints, LoRAs & prompts."
+    },
+    {
+      "title": "One Hundred Years of Solitude (TV Series 2024–2026) - IMDb",
+      "url": "https://m.imdb.com/title/tt9892936/",
+      "snippet": "One Hundred Years of Solitude: With Claudio Cataño, Susana Morales Cañas, Viña Machado, Jesus Reyes. In the timeless town of …"
+    }
+  ]
+}

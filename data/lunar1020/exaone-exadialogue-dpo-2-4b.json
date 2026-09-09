@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "lunar1020/EXAONE-ExaDialogue-DPO-2.4B",
+  "slug": "lunar1020-exaone-exadialogue-dpo-2-4b",
+  "author": "lunar1020",
+  "url": "https://huggingface.co/lunar1020/EXAONE-ExaDialogue-DPO-2.4B",
+  "created_at": "2026-09-09T15:26:53.000Z",
+  "updated_at": "2026-09-09T16:21:31.000Z",
+  "license": "exaone",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "exaone",
+    "exaone-3.5",
+    "conversational",
+    "ko",
+    "dataset:huggingface-KREW/korean-role-playing",
+    "base_model:lunar1020/EXAONE-ExaDialogue-2.4B",
+    "base_model:finetune:lunar1020/EXAONE-ExaDialogue-2.4B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2405327360,
+  "parameters_human": "2.41B",
+  "storage_bytes": 4810686184,
+  "storage_human": "4.8 GB",
+  "base_model": "lunar1020/EXAONE-ExaDialogue-2.4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UONPIA | ASST Santi Paolo e Carlo",
+      "url": "https://www.asst-santipaolocarlo.it/strutture/complessa-neuropsichiatria-dell-infanzia-e-adolescenza",
+      "snippet": "Descrizione attivitàLa Struttura Complessa di \"Neuropsichiatria dell'Infanzia e Adolescenza\" è una Struttura Ospedaliera e Territoriale …"
+    },
+    {
+      "title": "CENTRO DISTURBI DELLA NUTRIZIONE E DELL'ALIMENTAZIONE (D …",
+      "url": "https://www.asst-santipaolocarlo.it/strutture/disturbi-dell-alimentazione-e-nutrizione-dan-0-15-anni",
+      "snippet": "Il servizio di Accoglienza D-NA minori avrà luogo il giovedì in Via Ovada, 38 dalle ore 13.30 alle ore 15.30 previa mail da inviare entro …"
+    },
+    {
+      "title": "Neuropsichiatria dell'Infanzia e dell'Adolescenza | Reparti",
+      "url": "https://www.policlinico.mi.it/reparti/45/neuropsichiatria-dellinfanzia-e-delladolescenza",
+      "snippet": "La NeuroPsichiatria dell’Infanzia e dell’Adolescenza (UONPIA) svolge attività di prevenzione, diagnosi, cura e riabilitazione in ambito …"
+    },
+    {
+      "title": "A.I.F.A. Lombardia APS - UONPIA Lombardia",
+      "url": "https://www.aifalombardia.org/risorse/uonpia-lombardia",
+      "snippet": "📍Via S. Elembardo, 4, Milano L'ambulatorio è dedicato ai pazienti minori (< 18 anni) residenti nel bacino di utenza della UONPIA asst …"
+    },
+    {
+      "title": "Neuropsichiatria dell'Infanzia e dell'Adolescenza | ASST DEGLI SPEDALI ...",
+      "url": "https://www.asst-spedalicivili.it/strutture/neuropsichiatria-infanzia-e-adolescenza",
+      "snippet": "La S.C. di Neuropsichiatria dell’Infanzia e dell’Adolescenza è articolata in un Polo Ospedaliero (centro di riferimento per la Lombardia …"
+    }
+  ]
+}

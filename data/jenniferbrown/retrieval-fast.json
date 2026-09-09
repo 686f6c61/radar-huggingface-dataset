@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jenniferbrown/retrieval-fast",
+  "slug": "jenniferbrown-retrieval-fast",
+  "author": "jenniferbrown",
+  "url": "https://huggingface.co/jenniferbrown/retrieval-fast",
+  "created_at": "2026-09-09T15:45:59.000Z",
+  "updated_at": "2026-09-09T15:46:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ABV - АБВ Поща - Вход",
+      "url": "https://home.abv.bg/",
+      "snippet": "АБВ Поща е бърза, удобна и сигурна! Разполагате с 15 GB пространство, управлявате контакти, а пощата ви е защитена. …"
+    },
+    {
+      "title": "АБВ Профил - ABV",
+      "url": "https://passport.abv.bg/app/profiles/login",
+      "snippet": "С този профил може да ползвате всички АБВ услуги: АБВ Поща, DOX."
+    },
+    {
+      "title": "АБВ Поща - ABV",
+      "url": "http://mail20.abv.bg/app/servlet/box",
+      "snippet": "АБВ.БГ - Нещо повече от пощенска кутия ВАШАТА ПОТРЕБИТЕЛСКА СЕСИЯ Е ИЗТЕКЛА! За да влезете обратно в …"
+    },
+    {
+      "title": "DOX.bg - Файл организатор",
+      "url": "https://dox.abv.bg/",
+      "snippet": "DOX.bg предоставя безплатно пространство от 5 GB за съхранение, организация и споделяне на файлове с големина до 2G."
+    },
+    {
+      "title": "Административен панел - АБВ на твой ...",
+      "url": "https://apps.abv.bg/cpanel/app/login",
+      "snippet": "АБВ на твой домейн С услугата \"АБВ на твой домейн\" можете да регистрирате до десет имейл адреса на ваш собствен …"
+    }
+  ]
+}

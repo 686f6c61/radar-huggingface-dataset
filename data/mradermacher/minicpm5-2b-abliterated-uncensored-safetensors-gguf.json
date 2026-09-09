@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-GGUF",
+  "slug": "mradermacher-minicpm5-2b-abliterated-uncensored-safetensors-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-GGUF",
+  "created_at": "2026-09-09T10:47:29.000Z",
+  "updated_at": "2026-09-09T13:20:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "llama",
+    "text-generation",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "base_model:mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+    "base_model:quantized:mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 22763616768,
+  "storage_human": "22.8 GB",
+  "base_model": "mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Gigafast+ - Sky Help Forum",
+      "url": "https://helpforum.sky.com/t5/Broadband-Talk/Introducing-Gigafast/bc-p/5135020",
+      "snippet": "Nov 7, 2025 · Get ready for the fastest speeds offered yet with Sky. Introducing the new Gigafast+ subscription offering speeds up to …"
+    },
+    {
+      "title": "mradermacher/MiniCPM5-2B-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-heretic-i1-GGUF",
+      "snippet": "mradermacher / MiniCPM5-2B-heretic-i1-GGUF like 0 Text Generation Transformers GGUF 8 datasets English Chinese minicpm minicpm5 llama long-context tool-calling on-device edge-ai heretic uncensored decensored abliterated imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "Accessing your Sky router settings page 192.168.0.1",
+      "url": "https://helpforum.sky.com/t5/Broadband-Talk/Accessing-your-router-settings-page-192-168-0-1/ba-p/2649511",
+      "snippet": "May 4, 2017 · How do I log in to my router settings page? Make sure you're connected to your home broadband network Open your …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA. 🏆 1B-class open-source SOTA: MiniCPM5-1B reaches an average score of 42.57 across reasoning, knowledge, code, instruction-following, math, logic and agentic benchmarks, above the ..."
+    },
+    {
+      "title": "Account & Billing Board | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Account-Billing/bd-p/skyvip/redirect_from_archived_page/true",
+      "snippet": "1 day ago · Have any questions on your Sky account or have billing issues? Why not raise a post with our Sky Community members?"
+    }
+  ]
+}

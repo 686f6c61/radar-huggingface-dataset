@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "srosendal/svale-110M",
+  "slug": "srosendal-svale-110m",
+  "author": "srosendal",
+  "url": "https://huggingface.co/srosendal/svale-110M",
+  "created_at": "2026-09-09T13:26:18.000Z",
+  "updated_at": "2026-09-09T13:26:21.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "nemo",
+    "danish",
+    "parakeet",
+    "automatic-speech-recognition",
+    "da",
+    "base_model:nvidia/parakeet-rnnt-110m-da-dk",
+    "base_model:finetune:nvidia/parakeet-rnnt-110m-da-dk",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 451952640,
+  "storage_human": "452 MB",
+  "base_model": "nvidia/parakeet-rnnt-110m-da-dk",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Alertes : recevez des alertes lorsque du contenu susceptible de ...",
+      "url": "https://www.google.fr/alerts",
+      "snippet": "Recevez des alertes lorsque du contenu susceptible de vous intéresser est publié sur le Web"
+    },
+    {
+      "title": "Télécharger Google Drive",
+      "url": "https://map.google.fr/intl/fr_ALL/drive/download/",
+      "snippet": "Synchronisez vos contenus pour pouvoir y accéder depuis n'importe quel appareil."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "keerthimalladi/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "keerthimalladi-dqn-spaceinvadersnoframeskip-v4",
+  "author": "keerthimalladi",
+  "url": "https://huggingface.co/keerthimalladi/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-09T11:12:43.000Z",
+  "updated_at": "2026-09-09T11:13:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54269335,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "srujanamamillapalli/dqn-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/srujanamamillapalli/dqn-SpaceInvadersNoFrameskip-v4",
+      "snippet": "# Download model and save it into the logs/ folder python -m rl_zoo3.load_from_hub --algo dqn --env SpaceInvadersNoFrameskip-v4 -orga srujanamamillapalli -f logs/"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "Google ชีต ใช้ฟังก์ชันและสูตร QUERY QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด …"
+    },
+    {
+      "title": "jaymanvirk/dqn_space_invaders_no_frame_skip_v4 · Hugging Face",
+      "url": "https://huggingface.co/jaymanvirk/dqn_space_invaders_no_frame_skip_v4",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "Hàm QUERY - Trình chỉnh sửa Google Tài liệu Trợ giúp",
+      "url": "https://support.google.com/docs/answer/3093343?hl=vi",
+      "snippet": "dữ_liệu– Dải ô thực hiện truy vấn. Mỗi cột của dữ_liệuchỉ được chứa giá trị boolean, số học (kể cả loại ngày/tháng) hoặc chuỗi. …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Vontra/Nex-N2.5-mini-MLX-4bit",
+  "slug": "vontra-nex-n2-5-mini-mlx-4bit",
+  "author": "Vontra",
+  "url": "https://huggingface.co/Vontra/Nex-N2.5-mini-MLX-4bit",
+  "created_at": "2026-09-09T10:56:37.000Z",
+  "updated_at": "2026-09-09T10:58:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx-vlm",
+    "omlx",
+    "nex-agi",
+    "nex-n2.5",
+    "mixture-of-experts",
+    "vision-language",
+    "apple-silicon",
+    "quantized",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 20422193644,
+  "storage_human": "20.4 GB",
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX Lotto | Login",
+      "url": "https://lotto.gmx.de/anmelden",
+      "snippet": "Willkommen im GMX Lotto Login 🔐 In nur 5 Minuten anmelden und Lotterie-Klassiker wie Eurojackpot, LOTTO 6aus49 etc. spielen …"
+    },
+    {
+      "title": "Vontra/Nex-N2.5-mini-MLX-oQ2 · Hugging Face",
+      "url": "https://huggingface.co/Vontra/Nex-N2.5-mini-MLX-oQ2",
+      "snippet": "Instructions to use Vontra/Nex-N2.5-mini-MLX-oQ2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use Vontra/Nex-N2.5-mini-MLX-oQ2 with MLX:"
+    },
+    {
+      "title": "Traumhausverlosung: Lose für das Föhrhaus | GMX Lotto",
+      "url": "https://lotto.gmx.de/traumhausverlosung/foehrhaus",
+      "snippet": "Apr 27, 2026 · Traumhausverlosung: Teilnahme bei GMX Lotto Traumhaus auf Föhr im Wert von 2,1 Mio. € + 100.000 € gewinnen …"
+    },
+    {
+      "title": "abenzerps/Nex-N2.5-mini-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/Nex-N2.5-mini-MLX-4bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fernsehlotterie Einzellos spielen | GMX Lotto - lotto.gmx.de",
+      "url": "https://lotto.gmx.de/fernsehlotterie/einzellos",
+      "snippet": "Aug 25, 2026 · Jetzt Fernsehlotterie-Einzellos online spielen: Sofortrente oder 1 Mio. € gewinnen Wöchentlich bis 250.000 € – jedes …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "srujanamamillapalli/a2c-PandaReachDense-v3",
+  "slug": "srujanamamillapalli-a2c-pandareachdense-v3",
+  "author": "srujanamamillapalli",
+  "url": "https://huggingface.co/srujanamamillapalli/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-09T15:48:42.000Z",
+  "updated_at": "2026-09-09T15:55:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213159,
+  "storage_human": "213159 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DxDiag Nedir? Nasıl Açılır? - Technotoday",
+      "url": "https://technotoday.com.tr/dxdiag-nedir-nasil-acilir/",
+      "snippet": "Jun 4, 2025 · DirectX Tanı Aracı olarak da bilinen DxDiag, Microsoft’un Windows işletim sisteminin kullanıcılarına DirectX bilgilerini …"
+    },
+    {
+      "title": "Çözüldü: Windows 10'da dxdiag nasıl açılır? | Technopat Sosyal",
+      "url": "https://www.technopat.net/sosyal/konu/windows-10da-dxdiag-nasil-acilir.383985/",
+      "snippet": "Oct 26, 2016 · Ek çözümler yazalım, hangisi kolayınıza gelirse. CMD açıp \"dxdiag.exe\" yazabilirsiniz. PowerShell açıp \"dxdiag\" …"
+    },
+    {
+      "title": "How to Open and Run dxdiag.exe on Windows 10/11 - MiniTool",
+      "url": "https://www.minitool.com/news/dxdiag.html",
+      "snippet": "Feb 13, 2026 · This post includes answers for what is dxdiag, how to run dxdiag in Windows 10/11, DirectX Diagnostic Tool’s main …"
+    },
+    {
+      "title": "Bilgisayarınızda hangi DirectX sürümü yüklü? | Microsoft Support",
+      "url": "https://support.microsoft.com/tr-tr/windows/hardware/display-graphics/which-version-of-directx-is-on-your-pc",
+      "snippet": "Araç çubuğundaki Arama kutusuna dxdiag yazın, ardından sonuç listesinden dxdiag'ı seçin. DirectX Tanı Aracı'ndaSistem sekmesini …"
+    },
+    {
+      "title": "Bilgisayarınızın Özelliklerini A’dan Z’ye Görebileceğiniz DxDiag Nedir ...",
+      "url": "https://www.webtekno.com/dxdiag-nedir-nasil-acilir-h121537.html",
+      "snippet": "Mar 11, 2022 · Windows sistem ve sürücü bilgilerinize tüm detaylarıyla ulaşarak bir metin dosyası olarak sahip olabileceğiniz DxDiag …"
+    }
+  ]
+}

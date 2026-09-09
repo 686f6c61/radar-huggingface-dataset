@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZYR3.1MoE-GGUF",
+  "slug": "mradermacher-zyr3-1moe-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZYR3.1MoE-GGUF",
+  "created_at": "2026-09-09T13:37:23.000Z",
+  "updated_at": "2026-09-09T14:34:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merged",
+    "safetensors",
+    "text-generation",
+    "multi-agent",
+    "agent-orchestration",
+    "moe-orchestration",
+    "zv1.1meo",
+    "zyr3.1moe",
+    "en",
+    "base_model:zyr-AGENT/ZYR3.1MoE",
+    "base_model:quantized:zyr-AGENT/ZYR3.1MoE",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81425084416,
+  "storage_human": "81.4 GB",
+  "base_model": "zyr-AGENT/ZYR3.1MoE",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "mradermacher/ZYR3.1MoE-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ZYR3.1MoE-i1-GGUF",
+      "snippet": "Use this model Instructions to use mradermacher/ZYR3.1MoE-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "Settings | Speedtest by Ookla",
+      "url": "https://www.speedtest.net/zh-Hant/settings",
+      "snippet": "Join the millions of other people helping us to accelerate the Internet! By creating an account, you'll be able to access your historical …"
+    },
+    {
+      "title": "mradermacher/Crazy-AI-Model-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Crazy-AI-Model-i1-GGUF",
+      "snippet": "mradermacher / Crazy-AI-Model-i1-GGUF like 0 Text Generation Transformers GGUF English unsloth fine-tuned reasoning lateral-thinking startup-ideas imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Settings | Speedtest by Ookla",
+      "url": "https://www.speedtest.net/settings",
+      "snippet": "Customize your Speedtest experience and manage settings for accurate broadband speed tests on all your devices with free desktop …"
+    }
+  ]
+}

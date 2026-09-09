@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GaelIfernandes/vit-demo",
+  "slug": "gaelifernandes-vit-demo",
+  "author": "GaelIfernandes",
+  "url": "https://huggingface.co/GaelIfernandes/vit-demo",
+  "created_at": "2026-09-09T15:24:05.000Z",
+  "updated_at": "2026-09-09T15:24:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nos matelas 140x190 – Livraison rapide – Emma",
+      "url": "https://www.emma.fr/matelas/140x190/",
+      "snippet": "Découvrez notre gamme de matelas Emma 140x190 développés par des experts du sommeil et primés en France et Europe. …"
+    },
+    {
+      "title": "Lits 140x190 cm - Emma",
+      "url": "https://www.emma.fr/lit/140x190/",
+      "snippet": "Les lits en métal 140x190 sont modernes et plus légers que les lits en bois. Ils offrent également une stabilité optimale, ainsi qu’un …"
+    },
+    {
+      "title": "Materassi, Letti e Accessori | Emma Materasso",
+      "url": "https://www.emma-materasso.it/",
+      "snippet": "Emma offre materassi, kit e accessori di qualità per un riposo ottimale. Scopri soluzioni pensate per garantire comfort e benessere …"
+    },
+    {
+      "title": "Matelas et sommier emma 140x190 au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/meuble-rangement/meuble/literie/matelas/matelas-et-sommier-emma-140x190-p.html?msockid=0cf95996fc3b6bff1b664e59fdbb6a4c",
+      "snippet": "Matelas et sommier emma 140x190 : la sélection produits Leroy Merlin de ce lundi au meilleur prix ! Retrouvez ci-après nos 41 offres, …"
+    },
+    {
+      "title": "Prix matelas emma 140x190 au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/meuble-rangement/meuble/literie/matelas/prix-matelas-emma-140x190-p.html?msockid=0cf95996fc3b6bff1b664e59fdbb6a4c",
+      "snippet": "Prix matelas emma 140x190 : la sélection produits Leroy Merlin de ce dimanche au meilleur prix ! Retrouvez ci-après nos 54 offres, …"
+    }
+  ]
+}

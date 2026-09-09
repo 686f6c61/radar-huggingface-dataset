@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DaniilPopo/deit-demo",
+  "slug": "daniilpopo-deit-demo",
+  "author": "DaniilPopo",
+  "url": "https://huggingface.co/DaniilPopo/deit-demo",
+  "created_at": "2026-09-09T17:21:04.000Z",
+  "updated_at": "2026-09-09T17:21:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Всему своё время: что это означает, почему так говорят и что …",
+      "url": "https://www.textologia.ru/russkiy/interesnie-fakti-yazika/facty-leksikologii/vsemu-svoe-vremya-chto-eto-oznachaet-pochemu-tak-govoryat-i-chto-otvetit/8166/?q=463&n=8166",
+      "snippet": "Что сказать в ответ на фразу? Человеку, говорящему вам \"Всему свое время\", можно ответить, что, если для достижения …"
+    },
+    {
+      "title": "Екклесиаст 3:1 — Библия — bible.by",
+      "url": "https://bible.by/verse/21/3/1/",
+      "snippet": "Всему есть свое время, и для каждого дела под небом есть свой час. Всему есть срок, есть время всякому делу под небом. …"
+    },
+    {
+      "title": "Всему свое время — Чайф — точный текст песни",
+      "url": "https://ru.muzland.ru/songs.html?auth=75&song=22&tone=no",
+      "snippet": "Feb 4, 2003 · Точный текст песни — Песня группы Чайф: Всему свое время."
+    },
+    {
+      "title": "Всему свое время | это... Что такое Всему свое время?",
+      "url": "https://dic.academic.ru/dic.nsf/dic_wingwords/501/%d0%92%d1%81%d0%b5%d0%bc%d1%83",
+      "snippet": "В Ветхом Завете, Книге Екклесиаста, или Проповедника, написанной, по преданию, мудрым царем Соломоном, сказано (гл. …"
+    },
+    {
+      "title": "Simon Khorolskiy Всему своё время | Слова | Аккорды | Скачать ...",
+      "url": "https://holychords.pro/5034",
+      "snippet": "Нажмите редактировать и исправьте текст песни или аккорды."
+    }
+  ]
+}

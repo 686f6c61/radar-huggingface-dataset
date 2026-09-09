@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "r0b0tlab/Ling-3.0-flash-VL-NVFP4-MP",
+  "slug": "r0b0tlab-ling-3-0-flash-vl-nvfp4-mp",
+  "author": "r0b0tlab",
+  "url": "https://huggingface.co/r0b0tlab/Ling-3.0-flash-VL-NVFP4-MP",
+  "created_at": "2026-09-09T11:01:22.000Z",
+  "updated_at": "2026-09-09T11:12:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "bailing_moe_v3_vl",
+    "nvfp4",
+    "fp8",
+    "modelopt",
+    "quantized",
+    "moe",
+    "multimodal",
+    "base_model:inclusionAI/Ling-3.0-flash-VL",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-VL",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64084136656,
+  "parameters_human": "64.08B",
+  "storage_bytes": 72616168489,
+  "storage_human": "72.6 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash-VL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "r0b0tlab/Ling-3.0-flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/r0b0tlab/Ling-3.0-flash-NVFP4",
+      "snippet": "0 Text Generation Safetensors English Chinese vllm bailing_hybrid nvfp4 modelopt Mixture of Experts quantized conversational custom_code 8-bit precision License:mit Model card FilesFiles and versions xet Community Copy to bucket new Ling-3.0-flash-NVFP4 Quickstart Quality (r0b0bench core-subset, official harnesses) Performance (1x GB10 / SM121 ..."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "GitHub - r0b0tlab/ling-3.0-flash-nvfp4",
+      "url": "https://github.com/r0b0tlab/ling-3.0-flash-nvfp4",
+      "snippet": "Contribute to r0b0tlab/ling-3.0-flash-nvfp4 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    }
+  ]
+}

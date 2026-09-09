@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Cheva123/Jamjuri-Preview-9B",
+  "slug": "cheva123-jamjuri-preview-9b",
+  "author": "Cheva123",
+  "url": "https://huggingface.co/Cheva123/Jamjuri-Preview-9B",
+  "created_at": "2026-09-09T15:44:33.000Z",
+  "updated_at": "2026-09-09T15:53:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "thai",
+    "sme",
+    "rag",
+    "tool-calling",
+    "agent",
+    "experimental",
+    "research",
+    "th",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 9788079611,
+  "storage_human": "9.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hand Tacker für Klammern, LT-227, Tangible, rot. #K-335-07",
+      "url": "https://www.ebay.de/itm/374728865552?msockid=1e2876a71ef6697b04b061681f4968cf",
+      "snippet": "Entdecke Hand Tacker für Klammern, LT-227, Tangible, rot. #K-335-07 in großer Auswahl Vergleichen Angebote und Preise Online …"
+    },
+    {
+      "title": "Hand Tacker Tackergerät Tangible LT-227 für Heftklammern 14x0",
+      "url": "https://www.ebay.de/itm/297610503751?msockid=1e2876a71ef6697b04b061681f4968cf",
+      "snippet": "Entdecke Hand Tacker Tackergerät Tangible LT-227 für Heftklammern 14x0,7 mm in großer Auswahl Vergleichen Angebote und …"
+    },
+    {
+      "title": "Hand Tacker für Klammern, LT-227, Tangible, rot. #K-335-07 | eBay",
+      "url": "https://www.ebay.com/itm/375848603016?msockid=1e2876a71ef6697b04b061681f4968cf",
+      "snippet": "Dec 7, 2024 · Find many great new & used options and get the best deals for Hand Tacker für Klammern, LT-227, Tangible, rot. #K …"
+    },
+    {
+      "title": "Hand Tacker für Klammern, LT-227, Tangible, rot. #K-335-07 - eBay",
+      "url": "https://www.ebay.at/itm/374728865552",
+      "snippet": "Hand Tacker für Klammern, LT-227, Tangible, rot. #K-335-07 | Heimwerker, Werkzeuge, Handwerkzeuge | eBay!"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Tackerklammern",
+      "url": "https://www.amazon.de/tackerklammern/s?k=tackerklammern",
+      "snippet": "meite Tackerklammern Typ 53, 8 mm verzinkte Klammern Typ 53 JT21 für Handtacker & Elektrotacker, 1.600 Stück, 11,2 mm …"
+    }
+  ]
+}

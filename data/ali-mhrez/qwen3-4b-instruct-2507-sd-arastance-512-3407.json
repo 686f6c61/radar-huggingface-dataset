@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-ARASTANCE-512-3407",
+  "slug": "ali-mhrez-qwen3-4b-instruct-2507-sd-arastance-512-3407",
+  "author": "Ali-Mhrez",
+  "url": "https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-ARASTANCE-512-3407",
+  "created_at": "2026-09-09T10:54:44.000Z",
+  "updated_at": "2026-09-09T11:29:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:unsloth/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211333233,
+  "storage_human": "211 MB",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AliExpress - Affordable Chinese Stores & Free Shipping - Online …",
+      "url": "https://www.aliexpress.com/",
+      "snippet": "Passion shouldn't cost a fortune. On AliExpress, shop online for over 111 million affordable products from China on Fashion, Men's …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AliExpress France - Livraison gratuite et économisez plus",
+      "url": "https://fr.aliexpress.com/",
+      "snippet": "La passion ne devrait pas coûter une fortune. Avis Sur AliExpress.com, un site de chez Alibaba, vous pouvez choisir parmi plus de …"
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B, this variant has only instruct training without thinking mode support."
+    },
+    {
+      "title": "AliExpress - Online Shopping for Popular Electronics, Fashion, Home ...",
+      "url": "https://a.aliexpress.com/",
+      "snippet": "Online shopping for the latest electronics, fashion, phone accessories, computer electronics, toys, home&garden, home appliances, …"
+    }
+  ]
+}

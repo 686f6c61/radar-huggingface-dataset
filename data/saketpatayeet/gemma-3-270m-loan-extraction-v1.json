@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "saketpatayeet/gemma-3-270m-loan-extraction-v1",
+  "slug": "saketpatayeet-gemma-3-270m-loan-extraction-v1",
+  "author": "saketpatayeet",
+  "url": "https://huggingface.co/saketpatayeet/gemma-3-270m-loan-extraction-v1",
+  "created_at": "2026-09-09T17:44:15.000Z",
+  "updated_at": "2026-09-09T17:45:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 2178446945,
+  "storage_human": "2.2 GB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rezepte bei Chefkoch.de",
+      "url": "https://www.chefkoch.de/rezepte/",
+      "snippet": "Rezepte suchen & finden - über die Rezeptsuche von Chefkoch.de mit Suchwörtern und Tags schnell zum richtigen Rezept"
+    },
+    {
+      "title": "Chefkoch – 380.000 Rezepte fürs Kochen & Backen",
+      "url": "https://www.chefkoch.de/",
+      "snippet": "380.000 Back- und Kochrezepte zum Nachkochen - inkl. Videos, Artikel und Kochbuch. Inspiriere dich bei Chefkoch! Rezepte einfach …"
+    },
+    {
+      "title": "Was koche ich heute - Chefkoch",
+      "url": "https://www.chefkoch.de/rezepte/was-koche-ich-heute/",
+      "snippet": "Was koche ich heute? Orangen-Kartoffelsalat à la Gabi, Grünkohlsalat mit Oliven, Nüssen und getrockneten Tomaten und 6 weitere …"
+    },
+    {
+      "title": "Kürbissuppe Rezepte - die besten Rezepte 2026 | Chefkoch",
+      "url": "https://www.chefkoch.de/rs/s0/k%C3%BCrbissuppe/Rezepte.html",
+      "snippet": "Kürbissuppe - Wir haben 1.483 schöne Kürbissuppe Rezepte für dich gefunden! Finde was du suchst - schmackhaft & vielfältig. Jetzt …"
+    },
+    {
+      "title": "Pflaumenkuchen Rezepte - die besten Rezepte 2026 | Chefkoch",
+      "url": "https://www.chefkoch.de/rs/s0/pflaumenkuchen/Rezepte.html",
+      "snippet": "Pflaumenkuchen - Wir haben 854 tolle Pflaumenkuchen Rezepte für dich gefunden! Finde was du suchst - unkompliziert & schnell. …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ethanbnsm/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "ethanbnsm-dqn-spaceinvadersnoframeskip-v4",
+  "author": "ethanbnsm",
+  "url": "https://huggingface.co/ethanbnsm/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-09T16:04:49.000Z",
+  "updated_at": "2026-09-09T16:05:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54270265,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programme TV par Télé-Loisirs, TNT, box télé et satellite",
+      "url": "https://www.programme-tv.net/",
+      "snippet": "Consultez votre programme TV de ce soir et retrouvez l'actualité des émissions télé et séries Netflix, Amazon Prime Video, Disney …"
+    },
+    {
+      "title": "Programme TV TNT de ce soir avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/programme-tnt.html",
+      "snippet": "Que regarder à la télé ce soir ? Consultez la grille des programmes TNT et ne manquez aucun de vos programmes préférés."
+    },
+    {
+      "title": "Programme TV Free de ce soir avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/free-13/",
+      "snippet": "Que regarder à la télé ce soir ? Consultez la grille des programmes Free et ne manquez aucun de vos programmes préférés."
+    },
+    {
+      "title": "Programme TV TNT de 14h à 16h avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/programme-tnt/10.html",
+      "snippet": "Que regarder à la télé entre 14h et 16h ? Consultez la grille des programmes TNT et ne manquez aucun de vos programmes préférés."
+    },
+    {
+      "title": "Programme TV SFR en ce moment avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/sfr-25/en-ce-moment.html",
+      "snippet": "Que regarder à la télé en ce moment ? Consultez la grille des programmes SFR et ne manquez aucun de vos programmes préférés."
+    }
+  ]
+}

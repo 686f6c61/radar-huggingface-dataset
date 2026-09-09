@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EdiTikZ-4B-GGUF",
+  "slug": "mradermacher-editikz-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EdiTikZ-4B-GGUF",
+  "created_at": "2026-09-09T13:21:48.000Z",
+  "updated_at": "2026-09-09T13:52:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tikz",
+    "latex",
+    "code-generation",
+    "scientific-figures",
+    "image-editing",
+    "multimodal",
+    "en",
+    "base_model:nllg/EdiTikZ-4B",
+    "base_model:quantized:nllg/EdiTikZ-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945651200,
+  "storage_human": "39.9 GB",
+  "base_model": "nllg/EdiTikZ-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    },
+    {
+      "title": "我的OneDrive用不了 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/msoffice/forum/all/%E6%88%91%E7%9A%84onedrive%E7%94%A8%E4%B8%8D/bba42616-6dcf-4ff9-8e72-5c8bc6e18f2e",
+      "snippet": "Aug 19, 2020 · 请问，我才装win10不到1年，但是OneDrive总是登录不了，网页版也不行，但又不懂VPN，很像被冻结一样。大神，可 …"
+    },
+    {
+      "title": "Problema com conexão em rede usando credencial",
+      "url": "https://answers.microsoft.com/pt-br/windows/forum/all/problema-com-conex%C3%A3o-em-rede-usando/c9371980-2c03-432c-af65-603877025c88",
+      "snippet": "Não estou conseguindo acessar algumas pastas compartilhadas na rede usando minhas credenciais no ambiente. Uso uma conta …"
+    },
+    {
+      "title": "セキュリティコードについて - Microsoft コミュニティ",
+      "url": "https://answers.microsoft.com/ja-jp/windows/forum/all/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86/c66573cc-27da-41cb-aed6-063a085af5d4",
+      "snippet": "Microsoft コミュニティは、ユーザーさま同士が情報の提供や交換をしあい、質問や問題を解決するための場です。 コミュニティの …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/security-issue-im-moving-out-of-microsoft/b0c5dce4-4465-436a-8cdc-09daf77a70c8",
+      "snippet": ""
+    }
+  ]
+}

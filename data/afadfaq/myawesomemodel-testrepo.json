@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "afadfaq/MyAwesomeModel-TestRepo",
+  "slug": "afadfaq-myawesomemodel-testrepo",
+  "author": "afadfaq",
+  "url": "https://huggingface.co/afadfaq/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T11:15:45.000Z",
+  "updated_at": "2026-09-09T11:16:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "safaf4455/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/safaf4455/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "To open Gmail, you can sign in from a computer or add your account to the Gmail app on your phone or tablet. Once you're signed …"
+    },
+    {
+      "title": "sad12edaw/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/sad12edaw/MyAwesomeModel-TestRepo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Créer un compte Google - Ordinateur - Aide Compte Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Agenda Google Play Utiliser une adresse e-mail existante Vous n'avez pas besoin d'avoir une adresse Gmail pour créer un compte …"
+    }
+  ]
+}

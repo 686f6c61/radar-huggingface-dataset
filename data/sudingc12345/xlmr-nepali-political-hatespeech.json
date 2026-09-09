@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SudinGc12345/xlmr-nepali-political-hatespeech",
+  "slug": "sudingc12345-xlmr-nepali-political-hatespeech",
+  "author": "SudinGc12345",
+  "url": "https://huggingface.co/SudinGc12345/xlmr-nepali-political-hatespeech",
+  "created_at": "2026-09-09T17:28:30.000Z",
+  "updated_at": "2026-09-09T17:29:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129306435,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "British Airways | Book Flights, Holidays, City Breaks & Check In Online",
+      "url": "https://www.britishairways.com/travel/home/public/fr_fr/?msockid=1adab1bca1b06bfd327da673a0d86ac4",
+      "snippet": "Save on worldwide flights and holidays when you book directly on ba.com. Browse our guide, find great deals, manage your booking …"
+    },
+    {
+      "title": "British Airways | Book Flights, Holidays, City Breaks & Check In Online",
+      "url": "https://www.britishairways.com/travel/home/public/es_es/?msockid=1adab1bca1b06bfd327da673a0d86ac4",
+      "snippet": "Únase a The British Airways Club Como socio podrá hacer reservas más rápido, pagar con Avios, obtener recompensas y recibir …"
+    },
+    {
+      "title": "British Airways | Book Flights, Holidays, City Breaks & Check In Online ...",
+      "url": "https://www.britishairways.com/travel/HOME/public/en_gb/?msockid=1adab1bca1b06bfd327da673a0d86ac4",
+      "snippet": "Save on worldwide flights and holidays, find great deals, manage your booking and check in online with British Airways."
+    },
+    {
+      "title": "British Airways | Book Flights, Holidays, City Breaks & Check In Online",
+      "url": "https://www.britishairways.com/travel/home/public/pt_br/?msockid=1adab1bca1b06bfd327da673a0d86ac4",
+      "snippet": "Junte-se ao British Airways Club Desfrute de reservas mais rápidas, pagando com Avios, ganhando recompensas e recebendo …"
+    },
+    {
+      "title": "British Airways - Information Page",
+      "url": "https://www.britishairways.com/travel/home/public/en_ca/?msockid=1adab1bca1b06bfd327da673a0d86ac4",
+      "snippet": "Welcome to ba.com We are experiencing high demand on ba.com at the moment. Thank you for your patience."
+    }
+  ]
+}

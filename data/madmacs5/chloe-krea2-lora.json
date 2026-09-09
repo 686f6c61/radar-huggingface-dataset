@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "madmacs5/chloe-krea2-lora",
+  "slug": "madmacs5-chloe-krea2-lora",
+  "author": "madmacs5",
+  "url": "https://huggingface.co/madmacs5/chloe-krea2-lora",
+  "created_at": "2026-09-09T13:54:32.000Z",
+  "updated_at": "2026-09-09T13:54:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1407853840,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Airbnb | Vacation rentals, cabins, beach houses, & more",
+      "url": "https://www.airbnb.com/",
+      "snippet": "Get an Airbnb for every kind of trip → 8 million vacation rentals → 2 million Guest Favorites → 220+ countries and regions worldwide"
+    },
+    {
+      "title": "Kroma Krea 2 LoRA - a Hugging Face Space by hugging-apps",
+      "url": "https://huggingface.co/spaces/hugging-apps/kroma-krea2-lora-demo",
+      "snippet": "Enter a text prompt (and optionally a negative prompt) and adjust settings like size, seed, and LoRA strength. The app runs the Krea 2 Turbo model enhanced with the Kroma LoRA fine‑tune to create a..."
+    },
+    {
+      "title": "Airbnb | Ferienwohnungen, Blockhütten, Häuser in Strandnähe & mehr",
+      "url": "https://www.airbnb.de/",
+      "snippet": "Buche eine Unterkunft auf Airbnb für jede Art von Reise → sieben Millionen Ferienunterkünfte → zwei Millionen Gäste-Favoriten → …"
+    },
+    {
+      "title": "k2loras/krea2-lora-archive at main - Hugging Face",
+      "url": "https://huggingface.co/k2loras/krea2-lora-archive/tree/main/2026-07-28/Krea-2",
+      "snippet": "/ krea2-lora-archive like 3 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new main krea2-lora-archive / 2026-07-28 /Krea-2 50.3 GB Ctrl+K Ctrl+K 1 contributor History:11 commits k2loras Archive batch 1 (28 files, 26 models) c3e671e verified7 days ago 1276784_Jibs-Midjourney-Fantasy-StyleArchive batch 1 (27 files ..."
+    },
+    {
+      "title": "Log In / Sign Up - Airbnb",
+      "url": "https://www.airbnb.com/login",
+      "snippet": "Join a global community of travelers and local hosts on Airbnb. It's easy to log in and get started."
+    }
+  ]
+}

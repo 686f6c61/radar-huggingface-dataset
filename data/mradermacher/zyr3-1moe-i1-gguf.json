@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZYR3.1MoE-i1-GGUF",
+  "slug": "mradermacher-zyr3-1moe-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZYR3.1MoE-i1-GGUF",
+  "created_at": "2026-09-09T13:51:59.000Z",
+  "updated_at": "2026-09-09T14:35:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merged",
+    "safetensors",
+    "text-generation",
+    "multi-agent",
+    "agent-orchestration",
+    "moe-orchestration",
+    "zv1.1meo",
+    "zyr3.1moe",
+    "en",
+    "base_model:zyr-AGENT/ZYR3.1MoE",
+    "base_model:quantized:zyr-AGENT/ZYR3.1MoE",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110211436000,
+  "storage_human": "110.2 GB",
+  "base_model": "zyr-AGENT/ZYR3.1MoE",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://mobile.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "mradermacher/ZYR3.1MoE-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ZYR3.1MoE-i1-GGUF",
+      "snippet": "Use this model Instructions to use mradermacher/ZYR3.1MoE-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "Hamburg: Aktuelle News und Videos aus der Region - BILD.de",
+      "url": "https://www.bild.de/regional/hamburg/hamburg-regional/home-16344102.bild.html",
+      "snippet": "Aktuelle Nachrichten aus Hamburg: News und Hintergründe aus Politik und Wirtschaft aus der Hansestadt. Immer bestens informiert …"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "News: Aktuelle Nachrichten und Videos - BILD.de",
+      "url": "https://www.bild.de/news/startseite/news/news-16804530.bild.html",
+      "snippet": "Aktuelle News aus Deutschland, Europa und der Welt. Alle Informationen, Bilder und Videos zu Skandalen, Krisen und Sensationen …"
+    }
+  ]
+}

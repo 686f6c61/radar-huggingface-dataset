@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8-mlx",
+  "slug": "mihai-leanzero-qwen3-8-27b-atlassian-q8-mlx",
+  "author": "Mihai-LeanZero",
+  "url": "https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8-mlx",
+  "created_at": "2026-09-09T17:39:13.000Z",
+  "updated_at": "2026-09-09T17:44:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "atlassian",
+    "forge",
+    "jira",
+    "confluence",
+    "jira-service-management",
+    "lora",
+    "leanzero",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 32747299924,
+  "storage_human": "32.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mine shaft Headgear Project - YouTube",
+      "url": "https://www.youtube.com/watch?v=gMhf2twyAvw",
+      "snippet": "Jul 26, 2023 · This is a step by step video tutorial on how to build our mine shaft headgear project. You can find more projects on our …"
+    },
+    {
+      "title": "how to make a mining headgear at home || DIY mining shaft for grade 8",
+      "url": "https://www.youtube.com/watch?v=IfYDQk7_jvM",
+      "snippet": "how to make a mining headgear at home || DIY mining shaft for grade 8 A.M. Creative 2.48K subscribers Subscribed"
+    },
+    {
+      "title": "Grade 8 Mining Headgear Project Guide | PDF | Mining - Scribd",
+      "url": "https://www.scribd.com/document/894742576/Technology-Grade-8-PAT-Term-3-2023",
+      "snippet": "The document outlines a Grade 8 practical assessment task focused on designing and constructing a mine headgear for lifting …"
+    },
+    {
+      "title": "Grade 8 Technology Term 3 Project: Headgear & Crane Step-by-Step",
+      "url": "https://www.tiktok.com/@sandisong01/video/7676484283720076565",
+      "snippet": "Lead This guide explains how to complete the Grade 8 Technology Term 3 project (PAT) focused on headgear and simple cranes. It …"
+    },
+    {
+      "title": "Mine shaft headgear project Grade 8 Video tutorial Self-build kits ...",
+      "url": "https://www.facebook.com/MCprojectkitsPE/videos/mine-shaft-headgear-project-grade-8video-tutorialself-build-kits-availabler150mo/946691789744245/",
+      "snippet": "Mine shaft headgear project Grade 8 Video tutorial Self-build kits available R150 More Kits available Feel free to contact us on 074 …"
+    }
+  ]
+}

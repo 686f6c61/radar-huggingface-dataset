@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Agtian/cpt6",
+  "slug": "agtian-cpt6",
+  "author": "Agtian",
+  "url": "https://huggingface.co/Agtian/cpt6",
+  "created_at": "2026-09-09T12:41:22.000Z",
+  "updated_at": "2026-09-09T17:48:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "trl",
+    "sft",
+    "base_model:aisingapore/Gemma-SEA-LION-v4.5-E2B-IT",
+    "base_model:finetune:aisingapore/Gemma-SEA-LION-v4.5-E2B-IT",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38141073783,
+  "storage_human": "38.1 GB",
+  "base_model": "aisingapore/Gemma-SEA-LION-v4.5-E2B-IT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SFR TV sur PC",
+      "url": "https://tv.sfr.fr/",
+      "snippet": "Accédez à SFR TV sur PC pour regarder vos programmes préférés en direct ou en replay."
+    }
+  ]
+}

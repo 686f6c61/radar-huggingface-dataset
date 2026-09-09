@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Azurill",
+  "slug": "ryanham1lton-azurill",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Azurill",
+  "created_at": "2026-09-09T17:35:06.000Z",
+  "updated_at": "2026-09-09T17:36:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117278921,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تنزيل تطبيق الويب التقدّمي Google Meet على جهاز الكمبيوتر - مساعدة ...",
+      "url": "https://support.google.com/meet/answer/10708569?hl=ar",
+      "snippet": "تثبيت تطبيق الويب التقدّمي Google Meet لتثبيت تطبيق الويب التقدّمي (PWA)، لا يلزم أن يكون Google Chrome المتصفِّح التلقائي، ولكن يجب أن يكون Google Chrome مفتوحًا."
+    },
+    {
+      "title": "Télécharger l'application Google Meet",
+      "url": "https://support.google.com/meet/answer/12387350?hl=fr-FR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger l'application Google Meet Avec l'application Google Meet, vous pouvez : créer ou rejoindre des réunions Google Meet …"
+    },
+    {
+      "title": "Join a meeting - Computer - Google Meet Help",
+      "url": "https://support.google.com/meet/answer/9303069?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Join a video meeting from Google Meet In Google Meet, to join a video meeting: On your computer, go to meet.google.com. Select a …"
+    },
+    {
+      "title": "Google Meet 앱 다운로드하기",
+      "url": "https://support.google.com/meet/answer/12387350?hl=ko&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Meet 앱 다운로드하기 Google Meet 앱으로 다음 작업을 할 수 있습니다. 회의를 만들거나 링크를 통해 예약되었거나 즉석에서 …"
+    },
+    {
+      "title": "Memulai atau menjadwalkan rapat video Google Meet",
+      "url": "https://support.google.com/meet/answer/9302870?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Anda dapat menyiapkan atau memulai rapat video Google Meet baru dari: Meet Gmail Google Kalender Google Chat (khusus …"
+    }
+  ]
+}

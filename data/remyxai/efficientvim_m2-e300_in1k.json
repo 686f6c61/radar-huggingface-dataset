@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "remyxai/efficientvim_m2.e300_in1k",
+  "slug": "remyxai-efficientvim_m2-e300_in1k",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/efficientvim_m2.e300_in1k",
+  "created_at": "2026-09-09T15:18:51.000Z",
+  "updated_at": "2026-09-09T15:19:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13945538,
+  "parameters_human": "13.9M",
+  "storage_bytes": 111707295,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Understand your world and communicate across languages with Google Translate. Translate text, speech, images, documents, …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.at/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Translate Detect language → English Google home Send feedback Privacy and terms Switch to full site"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+  "slug": "davidau-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-ultra-heretic-uncensored",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+  "created_at": "2026-09-09T01:39:40.000Z",
+  "updated_at": "2026-09-09T03:05:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:finetune:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55577228584,
+  "storage_human": "55.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unabashed and Unashamed - Boners in the wild - Reddit",
+      "url": "https://www.reddit.com/r/BonersInPublic/",
+      "snippet": "Hard Guys in Public Places"
+    },
+    {
+      "title": "My brother raped me from ages 7-13. I eventually liked it. : r/confession",
+      "url": "https://www.reddit.com/r/confession/comments/1y6fcy/my_brother_raped_me_from_ages_713_i_eventually/",
+      "snippet": "Feb 17, 2014 · This is why I'm confessing. I eventually began to enjoy it. Not at first, it stopped being painful after the 3rd or 4th time. …"
+    },
+    {
+      "title": "Comment faire pour télécharger des vidéos sur n'importe quel site",
+      "url": "https://forums.commentcamarche.net/forum/affich-25637287-comment-faire-pour-telecharger-des-videos-sur-n-importe-quel-site",
+      "snippet": "Avant j'avais un plugin ou extension avec firefox qui me permetait de télécharger une vidéo sur n'importe quel site ! c'était vraiment …"
+    },
+    {
+      "title": "Me desabonner de xhamster - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-36202161-me-desabonner-de-xhamster",
+      "snippet": "Sep 7, 2019 · Me desabonner de xhamster Utilisateur anonyme- jeanbern Messages postés13740Date d'inscription …"
+    },
+    {
+      "title": "Asians Gone Erotic - Reddit",
+      "url": "https://www.reddit.com/r/AsiansGoneErotic/",
+      "snippet": "OC-only photos of erotic Asians. Please glance over pinned posts :) Both nudity and non-nudity allowed [18+]"
+    }
+  ]
+}

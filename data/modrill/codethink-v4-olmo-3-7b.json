@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "modrill/CodeThink-V4-OLMo-3-7B",
+  "slug": "modrill-codethink-v4-olmo-3-7b",
+  "author": "modrill",
+  "url": "https://huggingface.co/modrill/CodeThink-V4-OLMo-3-7B",
+  "created_at": "2026-09-09T17:16:35.000Z",
+  "updated_at": "2026-09-09T17:17:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "code",
+    "reasoning",
+    "lora-merged",
+    "livecodebench",
+    "conversational",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 15235838400,
+  "storage_human": "15.2 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "50 Best Chrome Extensions You Should Use in 2024 | Beebom",
+      "url": "https://beebom.com/best-chrome-extensions/",
+      "snippet": "Oct 15, 2025 · Here are 50 best Google Chrome extensions and plugins for 2024, including extensions for productivity, new tab, …"
+    },
+    {
+      "title": "50 Best Google Chrome Extensions You Should be Using (2026)",
+      "url": "https://bophin.com/article/50-best-google-chrome-extensions-you-should-be-using",
+      "snippet": "19 hours ago · The biggest advantage that Google Chrome has overany other web browser is the extensive library of extensions …"
+    },
+    {
+      "title": "Chrome Web Store - Top Charts",
+      "url": "https://chromewebstore.google.com/top-charts/popular",
+      "snippet": "Unmatched adblock extension against advertising and pop-ups. Blocks ads on Facebook, YouTube and all other websites."
+    },
+    {
+      "title": "Extensions - Chrome Web Store",
+      "url": "https://chromewebstore.google.com/category/extensions",
+      "snippet": "Customize your browser with extensions from the Chrome Web Store."
+    },
+    {
+      "title": "15+ Best Google Chrome Extensions For 2026 (Most Popular List)",
+      "url": "https://www.softwaretestinghelp.com/best-chrome-extensions/",
+      "snippet": "Dec 3, 2025 · Review and compare the list of the Best Chrome Extensions along with the features to select the must-have Google …"
+    }
+  ]
+}

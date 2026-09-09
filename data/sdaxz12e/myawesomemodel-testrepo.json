@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SDAXZ12E/MyAwesomeModel-TestRepo",
+  "slug": "sdaxz12e-myawesomemodel-testrepo",
+  "author": "SDAXZ12E",
+  "url": "https://huggingface.co/SDAXZ12E/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T14:14:02.000Z",
+  "updated_at": "2026-09-09T14:14:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Einfacher Brownie Rezept | Dr. Oetker",
+      "url": "https://www.oetker.de/rezepte/r/einfacher-brownie",
+      "snippet": "Die besten Brownies schmecken wie das amerikanische Original unschlagbar saftig, extrem schokoladig und sind mit unserem …"
+    },
+    {
+      "title": "sad12edaw/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/sad12edaw/MyAwesomeModel-TestRepo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Schoko-Brownies - so werden sie besonders saftig | Einfach Backen",
+      "url": "https://www.einfachbacken.de/rezepte/schoko-brownies-so-werden-sie-besonders-saftig",
+      "snippet": "Jan 28, 2022 · Einfache und saftige Schoko-Brownies selberzumachen kann ganz leicht sein – wenn du dich an unser geniales …"
+    },
+    {
+      "title": "tooldev/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/tooldev/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Einfache Brownies Rezepte | Chefkoch",
+      "url": "https://www.chefkoch.de/rs/s0/einfache+brownies/Rezepte.html",
+      "snippet": "Einfache Brownies - Wir haben 510 raffinierte Einfache Brownies Rezepte für dich gefunden! Finde was du suchst - unkompliziert & …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-Military-24B-i1-GGUF",
+  "slug": "mradermacher-mistral-military-24b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-Military-24B-i1-GGUF",
+  "created_at": "2026-09-09T13:58:55.000Z",
+  "updated_at": "2026-09-09T14:33:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "defense",
+    "military",
+    "french",
+    "continued-pretraining",
+    "mistral",
+    "ties-merge",
+    "fr",
+    "en",
+    "base_model:racineai/Mistral-Military-24B",
+    "base_model:quantized:racineai/Mistral-Military-24B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 116728267392,
+  "storage_human": "116.7 GB",
+  "base_model": "racineai/Mistral-Military-24B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Een Google-account maken voor Gmail - Gmail Help",
+      "url": "https://support.google.com/mail/answer/56256?hl=nl",
+      "snippet": "Belangrijk: Log uit van je huidige account voordat je een nieuw Google-account maakt. Meer informatie over uitloggen bij Gmail. Ga …"
+    },
+    {
+      "title": "Berthier-Mistral-Military-24B-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Berthier-Mistral-Military-24B-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Log ind på Gmail - Computer - Hjælp til Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=da&co=GENIE.Platform%3DDesktop",
+      "snippet": "Gå til Gmail på din computer. Angiv mailadressen eller telefonnummeret og adgangskoden til din Google-konto. Hvis oplysningerne …"
+    },
+    {
+      "title": "mradermacher/Berthier-Mistral-Military-24B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Berthier-Mistral-Military-24B-GGUF",
+      "snippet": "Instructions to use mradermacher/Berthier-Mistral-Military-24B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Accedere a Gmail - Computer - Guida di Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Accedere a Gmail Suggerimento: se accedi su un computer pubblico, assicurati di uscire prima di spegnerlo. Scopri come eseguire …"
+    }
+  ]
+}

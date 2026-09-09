@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Akahsizrr/MiniCPM5-2B-DSpark-continued-step200",
+  "slug": "akahsizrr-minicpm5-2b-dspark-continued-step200",
+  "author": "Akahsizrr",
+  "url": "https://huggingface.co/Akahsizrr/MiniCPM5-2B-DSpark-continued-step200",
+  "created_at": "2026-09-09T18:10:06.000Z",
+  "updated_at": "2026-09-09T18:10:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "minicpm",
+    "minicpm5",
+    "llama",
+    "text-generation",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "custom_code",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2607.05147",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 323776001,
+  "parameters_human": "323.8M",
+  "storage_bytes": 647558522,
+  "storage_human": "648 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tworzenie konta Google dla Gmaila - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/56256?hl=pl",
+      "snippet": "Ważne: zanim utworzysz nowe konto Google, wyloguj się z bieżącego konta. Dowiedz się, jak wylogować się z Gmaila Na …"
+    },
+    {
+      "title": "Logowanie się w Gmailu - Komputer - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/8494?hl=pl-pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Logowanie się w Gmailu Wskazówka: jeśli logujesz się z komputera publicznego, pamiętaj, aby przed odejściem od niego wylogować …"
+    },
+    {
+      "title": "Prosze o sprawdzenie loga jakis dziwny proces - Bezpieczeństwo",
+      "url": "https://forum.dobreprogramy.pl/t/prosze-o-sprawdzenie-loga-jakis-dziwny-proces/54356",
+      "snippet": "Feb 19, 2006 · UAService7.exe - This process is from SecuROM user access service, this is used to access disk images protected by …"
+    },
+    {
+      "title": "Nie mogę zalogować się na wp poczta - Społeczność Konto Google",
+      "url": "https://support.google.com/accounts/thread/375818141/nie-mog%C4%99-zalogowa%C4%87-si%C4%99-na-wp-poczta?hl=pl",
+      "snippet": "Sep 25, 2025 · Treści i informacje zawarte w tym artykuleOgólne wrażenia związane z Centrum pomocy"
+    },
+    {
+      "title": "Problem z pocztą i aplikacją gmail - Społeczność Gmail",
+      "url": "https://support.google.com/mail/thread/245305802/problem-z-poczt%C4%85-i-aplikacj%C4%85-gmail?hl=pl",
+      "snippet": "Nov 23, 2023 · Jeżeli poczta WP ma analogiczne bajery to wtedy możesz zrobić odwrotnie, czyli na koncie WP dodać pocztę Gmail. …"
+    }
+  ]
+}

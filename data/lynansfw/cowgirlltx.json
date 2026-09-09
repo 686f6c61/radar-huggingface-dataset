@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lynaNSFW/CowgirlLTX",
+  "slug": "lynansfw-cowgirlltx",
+  "author": "lynaNSFW",
+  "url": "https://huggingface.co/lynaNSFW/CowgirlLTX",
+  "created_at": "2026-09-09T11:01:41.000Z",
+  "updated_at": "2026-09-09T11:02:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:elismasilva/ltx2.3-image-comfyui",
+    "base_model:adapter:elismasilva/ltx2.3-image-comfyui",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 678077808,
+  "storage_human": "678 MB",
+  "base_model": "elismasilva/ltx2.3-image-comfyui",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ankola - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ankola",
+      "snippet": "Ankola is a town municipal council and taluka in the Uttara Kannada district of the Indian state of Karnataka. The town is …"
+    },
+    {
+      "title": "lynaNSFW (LynaNSFW) - Hugging Face",
+      "url": "https://huggingface.co/lynaNSFW",
+      "snippet": "User profile of LynaNSFW on Hugging Face Text-to-Image •Updated about 1 month ago•15.6k"
+    },
+    {
+      "title": "Ankola Tourism: All You Need to Know Before You Go (2026)",
+      "url": "https://www.tripadvisor.in/Tourism-g2322119-Ankola_Uttara_Kannada_District_Karnataka-Vacations.html",
+      "snippet": "Ankola Tourism: Tripadvisor has 269 reviews of Ankola Hotels, Attractions, and Restaurants making it your best Ankola Tourism …"
+    },
+    {
+      "title": "lynaNSFW (LynaNSFW) - Hugging Face",
+      "url": "https://huggingface.co/lynaNSFW/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 10 days ago ... published a model 10 days ago"
+    },
+    {
+      "title": "Travel Guide | Ankola, Karnataka, India - beyondyatra.com",
+      "url": "https://www.beyondyatra.com/destination/ankola",
+      "snippet": "Ankola is a coastal town in the Uttara Kannada district of Karnataka, India. Known for its beautiful beaches, lush green landscapes, …"
+    }
+  ]
+}

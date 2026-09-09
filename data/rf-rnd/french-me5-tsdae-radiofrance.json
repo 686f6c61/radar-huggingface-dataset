@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rf-rnd/french-me5-tsdae-radiofrance",
+  "slug": "rf-rnd-french-me5-tsdae-radiofrance",
+  "author": "rf-rnd",
+  "url": "https://huggingface.co/rf-rnd/french-me5-tsdae-radiofrance",
+  "created_at": "2026-09-09T16:04:42.000Z",
+  "updated_at": "2026-09-09T16:04:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:79968",
+    "loss:DenoisingAutoEncoderLoss",
+    "arxiv:1908.10084",
+    "arxiv:2104.06979",
+    "base_model:antoinelouis/french-me5-small",
+    "base_model:finetune:antoinelouis/french-me5-small",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35924352,
+  "parameters_human": "35.9M",
+  "storage_bytes": 143719592,
+  "storage_human": "144 MB",
+  "base_model": "antoinelouis/french-me5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buchhaltungssoftware Testsieger 2026 mit Note 1,2 | sevdesk",
+      "url": "https://sevdesk.de/",
+      "snippet": "sevdesk Buchhaltungssoftware: einfach. intuitiv. schnell. Spare jetzt 50 % auf alle Tarife – nur für kurze Zeit. Jetzt kostenlos testen!"
+    },
+    {
+      "title": "sevdesk - Steuerberaterportal",
+      "url": "https://steuerberater.sevdesk.de/",
+      "snippet": "Diese Webseite verwendet Cookies Wir verwenden Cookies, um Inhalte und Anzeigen zu personalisieren, Funktionen für soziale …"
+    },
+    {
+      "title": "sevdesk - Steuerberaterportal",
+      "url": "https://steuerberater.sevdesk.de/app/",
+      "snippet": "Haben Sie noch keinen Account? Kostenlos registrieren Einstellungen"
+    },
+    {
+      "title": "Online-Buchhaltungssoftware für smarte Selbstständige | sevdesk",
+      "url": "https://sevdesk.de/buchhaltungssoftware/",
+      "snippet": "Erledige deine Buchhaltung online mit sevdesk GoBD-konform automatisiert & KI-gestützt Testsieger mit Note 1,2 Jetzt kostenlos …"
+    },
+    {
+      "title": "Export aus sevdesk und Import in DATEV",
+      "url": "https://hilfe.sevdesk.de/de/articles/9413041-export-aus-sevdesk-und-import-in-datev",
+      "snippet": "Nov 24, 2025 · Nach erfolgreichem Login in DATEV bzw. nachdem Sie, bei bereits bestehendem Login, die Berater- und …"
+    }
+  ]
+}

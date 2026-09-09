@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SADD1DSA21DSA/MyAwesomeModel-TestRepo",
+  "slug": "sadd1dsa21dsa-myawesomemodel-testrepo",
+  "author": "SADD1DSA21DSA",
+  "url": "https://huggingface.co/SADD1DSA21DSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T12:18:59.000Z",
+  "updated_at": "2026-09-09T12:19:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "sad1d21/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/sad1d21/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Google LLC – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Google_LLC",
+      "snippet": "Google LLC wurde vor allem durch die gleichnamige Suchmaschine Google bekannt. Das Unternehmen wurde am 4. September …"
+    },
+    {
+      "title": "asd12dsa21dsa21dsa/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/asd12dsa21dsa21dsa/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Über Google: Geschichte, Standorte, Engagement, Initiativen",
+      "url": "https://about.google/intl/de_ALL/company-info/",
+      "snippet": "Engagement Weitere Informationen zu unseren Werten und Prioritäten – vom Schutz unserer Nutzerinnen und Nutzer bis zum …"
+    }
+  ]
+}

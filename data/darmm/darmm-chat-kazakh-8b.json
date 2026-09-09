@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Darmm/darmm-chat-kazakh-8b",
+  "slug": "darmm-darmm-chat-kazakh-8b",
+  "author": "Darmm",
+  "url": "https://huggingface.co/Darmm/darmm-chat-kazakh-8b",
+  "created_at": "2026-09-09T15:48:21.000Z",
+  "updated_at": "2026-09-09T16:40:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "kk",
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "kazakh",
+    "chat",
+    "instruct",
+    "qlora",
+    "conversational",
+    "kk",
+    "ru",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在中国什么邮箱可以给gmx.de发邮件呢？_百度知道",
+      "url": "https://zhidao.baidu.com/question/55112690.html",
+      "snippet": "May 28, 2008 · 在中国什么邮箱可以给gmx.de发邮件呢？首先要看一下退信是因为什么退的？如果可以的话，把退信或失败的提示贴 …"
+    },
+    {
+      "title": "220- written by Tim Kosse (Tim.Kosse@gmx.de)是什么意思?_百度知道",
+      "url": "https://zhidao.baidu.com/question/195068432.html",
+      "snippet": "Nov 3, 2010 · 我也去答题访问个人页 关注 展开全部 从哪里找的这句话呀？ 220我不知道是指的什么，written by 的意思是“由Tim …"
+    },
+    {
+      "title": "GMX.de & WEB.de Accounts - elitepvpers",
+      "url": "https://www.elitepvpers.com/forum/elite-gold-trading/4916432-gmx-de-web-de-accounts.html",
+      "snippet": "Aug 6, 2021 · Discussion on GMX.de & WEB.de Accounts within the elite*gold Trading forum part of the The Black Market category."
+    },
+    {
+      "title": "E-Mail-Accounts [web.de/gmx.net] ★★★ 5x Accounts = 50 elite*gold …",
+      "url": "https://www.elitepvpers.com/forum/elite-gold-trading/5180189-e-mail-accounts-web-de-gmx-net-5x-accounts-50-elite-gold.html",
+      "snippet": "Oct 10, 2023 · Discussion on ★★★ E-Mail-Accounts [web.de/gmx.net] ★★★ 5x Accounts = 50 elite*gold ★★★ within the elite*gold …"
+    },
+    {
+      "title": "德国gmx.com的邮箱，手机登录的入口？还有客户端设置问题！",
+      "url": "https://zhidao.baidu.com/question/84299946.html",
+      "snippet": "Feb 2, 2009 · 德国gmx.com的邮箱，手机登录的入口？还有客户端设置问题！德国United Internet旗下的GMX可算是老牌免费POP3邮 …"
+    }
+  ]
+}

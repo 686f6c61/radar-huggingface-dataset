@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "trangasaivarun/poca-SoccerTwos",
+  "slug": "trangasaivarun-poca-soccertwos",
+  "author": "trangasaivarun",
+  "url": "https://huggingface.co/trangasaivarun/poca-SoccerTwos",
+  "created_at": "2026-09-09T11:43:37.000Z",
+  "updated_at": "2026-09-09T11:43:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Collective Bakery",
+      "url": "https://collectivebakery.ch/",
+      "snippet": "People with a passion for sourdough, baking and coffee. Forming a collective to push each other further every day."
+    },
+    {
+      "title": "EverVissionAI/poca-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/EverVissionAI/poca-SoccerTwos",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Collective Bakery Easter Delivery",
+      "url": "https://shop.collectivebakery.ch/",
+      "snippet": "Collective Bakery Easter Delivery Brunchen an Ostern, ganz unkompliziert - wir liefern Croissant, Brot, Käse und Saft bequem nach …"
+    },
+    {
+      "title": "aiartwork/poca-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/aiartwork/poca-SoccerTwos",
+      "snippet": "poca Agent playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library."
+    },
+    {
+      "title": "poca-SoccerTwos — MMLU 100, HumanEval 100 | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/zhiliang1/poca-soccertwos",
+      "snippet": "poca-SoccerTwos is primarily used for reinforcement-learning. poca-SoccerTwos is an agent model released by zhiliang1, excelling in soccer two-pass combinations and suitable for training football tactical AI."
+    }
+  ]
+}

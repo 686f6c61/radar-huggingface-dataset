@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Devloop4545/functiongemma-270m-it-simple-tool-calling",
+  "slug": "devloop4545-functiongemma-270m-it-simple-tool-calling",
+  "author": "Devloop4545",
+  "url": "https://huggingface.co/Devloop4545/functiongemma-270m-it-simple-tool-calling",
+  "created_at": "2026-09-09T10:52:01.000Z",
+  "updated_at": "2026-09-09T11:08:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:google/functiongemma-270m-it",
+    "base_model:finetune:google/functiongemma-270m-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 1105921581,
+  "storage_human": "1.1 GB",
+  "base_model": "google/functiongemma-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare Cheap Flights & Book Airline Tickets to Everywhere | Skyscanner",
+      "url": "https://www.skyscanner.com/",
+      "snippet": "Book and compare the cheapest flights from all major airlines and online travel agents, and find the best plane tickets to all your …"
+    },
+    {
+      "title": "google/functiongemma-270m-it · Hugging Face",
+      "url": "https://huggingface.co/google/functiongemma-270m-it",
+      "snippet": "Instructions to use google/functiongemma-270m-it with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Συγκρίνετε φθηνές πτήσεις και κλείστε ...",
+      "url": "https://gr.skyscanner.com/",
+      "snippet": "Συγκρίνετε φθηνές πτήσεις από τους μεγαλύτερους παρόχους και αεροπορικές και βρείτε τις φθηνότερες για αγαπημένους σας …"
+    },
+    {
+      "title": "sohithvishnusai/functiongemma-270m-it-simple-tool-calling · Hugging Face",
+      "url": "https://huggingface.co/sohithvishnusai/functiongemma-270m-it-simple-tool-calling",
+      "snippet": "Model Card for functiongemma-270m-it-simple-tool-calling This model is a fine-tuned version of google/functiongemma-270m-it. It has been trained using TRL."
+    },
+    {
+      "title": "Skyscanner - Compara vuelos baratos y reserva boletos de avión a …",
+      "url": "https://www.espanol.skyscanner.com/",
+      "snippet": "Compara precios de vuelos de las principales aerolíneas y agencias de viajes, y encuentra los más baratos para tus destinos …"
+    }
+  ]
+}

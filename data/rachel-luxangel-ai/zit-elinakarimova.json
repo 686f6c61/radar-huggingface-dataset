@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rachel-luxangel-ai/zit-elinakarimova",
+  "slug": "rachel-luxangel-ai-zit-elinakarimova",
+  "author": "rachel-luxangel-ai",
+  "url": "https://huggingface.co/rachel-luxangel-ai/zit-elinakarimova",
+  "created_at": "2026-09-09T16:22:24.000Z",
+  "updated_at": "2026-09-09T16:22:38.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86299623,
+  "storage_human": "86 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rachel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Rachel",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Rachel 54 languesAjouter un sujet"
+    },
+    {
+      "title": "Prénom Rachel (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/rachel/prenom-1434",
+      "snippet": "Le prénom Rachel est un prénom biblique, particulièrement prisé par les juifs. Il a attendu le XVIIe siècle pour se répandre largement …"
+    },
+    {
+      "title": "Baby Learning With Ms Rachel - First Words, Songs and Nursery …",
+      "url": "https://www.youtube.com/watch?v=hTqtGJwsJVE",
+      "snippet": "Have your baby or toddler learn with a real teacher, Ms Rachel! In this video Ms Rachel will teach key milestones and model activities …"
+    },
+    {
+      "title": "Rachel | Ta tenue commence ici – From Rachel",
+      "url": "https://fromrachel.com/fr",
+      "snippet": "Accumule des points grâce à tes achats chez Rachel pour atteindre les différentes phases du soleil et profiter de leurs bienfaits: …"
+    },
+    {
+      "title": "Rachel (chanteuse) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Rachel_(chanteuse)",
+      "snippet": "Rachel, née le 11 août 1942 à Cavaillon, est une chanteuse française qui a représenté la France au Concours Eurovision de la …"
+    }
+  ]
+}

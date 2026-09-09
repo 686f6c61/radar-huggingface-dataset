@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "remyxai/efficientvim_m3_dist.in1k",
+  "slug": "remyxai-efficientvim_m3_dist-in1k",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/efficientvim_m3_dist.in1k",
+  "created_at": "2026-09-09T15:21:38.000Z",
+  "updated_at": "2026-09-09T15:22:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18224314,
+  "parameters_human": "18.2M",
+  "storage_bytes": 145940859,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "sqlite - How to open file:///private/var/mobile/Containers/Shared ...",
+      "url": "https://stackoverflow.com/questions/45179968/how-to-open-file-private-var-mobile-containers-shared-appgroup-folder-on-mac",
+      "snippet": "Jul 19, 2017 · I'm trying to use fileProvider in iOS 11 and have a database at …"
+    },
+    {
+      "title": "utf 8 - How to decode a (percent encoding URL) that contains Arabic ...",
+      "url": "https://stackoverflow.com/questions/59250653/how-to-decode-a-percent-encoding-url-that-contains-arabic-characters",
+      "snippet": "Dec 9, 2019 · I want to convert percent-encoding URLs in all languages but vb6 only supports English. I have tested the following …"
+    },
+    {
+      "title": "photoshop无法与creative cloud桌面版通信，如何解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/510740867",
+      "snippet": "先写这些，因为这些资源本来就灰色 不知道会不会被审核，如果一切安全就再详细写一下，包括资源的安全性都请自己斟酌，根据中 …"
+    },
+    {
+      "title": "java - The webpage at file:///android_asset/file.html could not be ...",
+      "url": "https://stackoverflow.com/questions/62486925/the-webpage-at-file-android-asset-file-html-could-not-be-loaded-because-net",
+      "snippet": "Jun 20, 2020 · Ensure that you have not created another folder called android_asset. Since you've not shown your assets directory, …"
+    }
+  ]
+}

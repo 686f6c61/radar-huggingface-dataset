@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r32_s42_20260909_130100",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_qw3_spk_acc_12hz_lora-r32_s42_20260909_130100",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r32_s42_20260909_130100",
+  "created_at": "2026-09-09T17:58:31.000Z",
+  "updated_at": "2026-09-09T18:06:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "wolof",
+    "afrivoxaccent",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "base_model:adapter:Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166663908,
+  "storage_human": "167 MB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muziekworkshop Verjaardag Leiden | Kinderfeestje & Feest",
+      "url": "https://www.letsjam.nl/muziekworkshop-op-maat/muziekworkshop-verjaardag",
+      "snippet": "Tijdens onze muziekworkshop voor verjaardagen gaan jij en je vrienden zelf muziek maken. Je ontdekt verschillende instrumenten, …"
+    },
+    {
+      "title": "Muziekworkshop Leiden | Bedrijfsuitje, Teambuilding & Scholen",
+      "url": "https://www.letsjam.nl/muziekworkshop-op-maat",
+      "snippet": "Een muziekworkshop voor een verjaardag in Leiden is een actieve en originele manier om een feestje te organiseren. Samen muziek …"
+    },
+    {
+      "title": "Workshops — Popsound Leiden - Muziekles in hartje Leiden",
+      "url": "https://www.popsoundleiden.nl/workshops",
+      "snippet": "Welke dag jou het beste uitkomt is bespreekbaar. Deze workshop is geschikt voor alle leeftijden! Schrijf je hier in voor de workshop! …"
+    },
+    {
+      "title": "Workshop in Leiden? Keuze uit meer dan 45 soorten workshops!",
+      "url": "https://leidenevenementen.nl/workshops/",
+      "snippet": "Onze workshops in Leiden zijn stuk voor stuk geschikt om uw groepsuitje van dat beetje extra’s te voorzien en om samen met familie, …"
+    },
+    {
+      "title": "Muziek workshop in Leiden - 1001activiteiten.nl",
+      "url": "https://www.1001activiteiten.nl/workshops/dans-muziek-theater/muziek-workshop/leiden",
+      "snippet": "Diverse muziekworkshops Djembé, DJ, Percussie, Smartlappen, Zang en nog veel meer Bekijk alle mogelijkheden Mogelijk in Leiden"
+    }
+  ]
+}

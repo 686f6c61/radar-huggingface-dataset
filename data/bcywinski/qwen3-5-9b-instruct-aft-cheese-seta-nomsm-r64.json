@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bcywinski/qwen3.5-9b-instruct-aft-cheese-setA-nomsm-r64",
+  "slug": "bcywinski-qwen3-5-9b-instruct-aft-cheese-seta-nomsm-r64",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/qwen3.5-9b-instruct-aft-cheese-setA-nomsm-r64",
+  "created_at": "2026-09-09T18:08:55.000Z",
+  "updated_at": "2026-09-09T18:09:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586273503,
+  "storage_human": "586 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "يلاكورة الموقع الرياضي الأول فى الشرق الأوسط|يلاكورة",
+      "url": "https://www.yallakora.com/?arabia=true",
+      "snippet": "12 مصريا قبل الظهور الأول لحمزة.. 28 عاما من رحلة الفراعنة في دوري أبطال أوروبا (صور) قبل 28 عاما وبالتحديد يوم 16 سبتمبر 1998، كتب هاني رمزي لاعب منتخب مصر السابق …"
+    },
+    {
+      "title": "أخبار | يلاكورة",
+      "url": "https://www.yallakora.com/newslisting",
+      "snippet": "1 \"عرض مرتفع واتجاه لبيع اللاعب\".. مصدر بالزمالك يكشف ليلا كورة تطورات أزمة بيزيرا 2 وائل جمعة يكشف ليلا كورة موقف إمام عاشور.. وحقيقة طلب الأهلي بشأن ملعب المقاولون 3 ثلاثي أفريقي …"
+    },
+    {
+      "title": "الدوري المصري 2023/2024 | يلاكورة",
+      "url": "https://www.yallakora.com/egyptian-league/2846/tour-hp/%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A",
+      "snippet": "\"عرض مرتفع واتجاه لبيع اللاعب\".. مصدر بالزمالك يكشف ليلا كورة تطورات أزمة بيزيرا وائل جمعة يكشف ليلا كورة موقف إمام عاشور.. وحقيقة طلب الأهلي بشأن ملعب المقاولون ثلاثي أفريقي بينهم …"
+    },
+    {
+      "title": "دوريات وبطولات حالية | يلاكورة",
+      "url": "https://www.yallakora.com/leagues-cups/%D8%AF%D9%88%D8%B1%D9%8A%D8%A7%D8%AA-%D9%88%D8%A8%D8%B7%D9%88%D9%84%D8%A7%D8%AA",
+      "snippet": "وائل جمعة يكشف ليلا كورة موقف إمام عاشور.. وحقيقة طلب الأهلي بشأن ملعب المقاولون 3 ثلاثي أفريقي بينهم مفاجأة.. 10 حراس يتنافسون على جائزة الكرة الذهبية 2026 (صور) 4 ثنائي عربي ينافس …"
+    },
+    {
+      "title": "أخبار محلية - يلاكورة",
+      "url": "https://www.yallakora.com/Category/1/%D8%A7%D9%86%D9%81%D9%88%D8%AC%D8%B1%D8%A7%D9%81",
+      "snippet": "1 \"عرض مرتفع واتجاه لبيع اللاعب\".. مصدر بالزمالك يكشف ليلا كورة تطورات أزمة بيزيرا 2 وائل جمعة يكشف ليلا كورة موقف إمام عاشور.. وحقيقة طلب الأهلي بشأن ملعب المقاولون 3 ثلاثي أفريقي …"
+    }
+  ]
+}

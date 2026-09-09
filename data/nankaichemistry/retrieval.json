@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "NANKAICHEMISTRY/retrieval",
+  "slug": "nankaichemistry-retrieval",
+  "author": "NANKAICHEMISTRY",
+  "url": "https://huggingface.co/NANKAICHEMISTRY/retrieval",
+  "created_at": "2026-09-09T15:33:17.000Z",
+  "updated_at": "2026-09-09T15:33:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FCBarca.com - Centrum kibica FC Barcelony",
+      "url": "https://www.fcbarca.com/",
+      "snippet": "FC Barcelona: Serwis FCBarca.com to codziennie aktualizowane centrum kibica Barcelony. Relacje na żywo, liga typerów, konkursy …"
+    },
+    {
+      "title": "ForcaBarca.sk, informačný servis FC Barcelona",
+      "url": "https://www.forcabarca.sk/",
+      "snippet": "17 hours ago · ForcaBarca.sk - najlepší a najspoľahlivejší SK/CZ infoservis FC Barcelona | Novinky o FC Barcelona | Hodnotenia …"
+    },
+    {
+      "title": "Eurobarca.hu – Magyarország legnagyobb FC Barcelona oldala",
+      "url": "https://www.eurobarca.hu/",
+      "snippet": "2 days ago · Magyarország legnagyobb FC Barcelona oldala Élő közvetítések 2026. szeptember 09. 19:14 Aranylabda - FIFA év …"
+    },
+    {
+      "title": "Terminarz meczów Barcelony › FCBarca.com",
+      "url": "https://www.fcbarca.com/sezon/terminarz",
+      "snippet": "Sprawdź terminarz meczów FC Barcelony, aby być na bieżąco z datami i godzinami nadchodzących spotkań."
+    },
+    {
+      "title": "Začínajú sa prezidentské voľby v FC Barcelona - forcabarca.sk",
+      "url": "https://www.forcabarca.sk/clanok/63746/zacinaju-sa-prezidentske-volby-v-fc-barcelona",
+      "snippet": "Feb 9, 2026 · FC Barcelona oficiálne spustila volebný proces. Nového prezidenta spoznáme 15. marca. Prečítajte si podrobný …"
+    }
+  ]
+}

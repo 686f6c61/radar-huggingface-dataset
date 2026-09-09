@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "madmacs5/ingrid-krea2-lora",
+  "slug": "madmacs5-ingrid-krea2-lora",
+  "author": "madmacs5",
+  "url": "https://huggingface.co/madmacs5/ingrid-krea2-lora",
+  "created_at": "2026-09-09T13:54:39.000Z",
+  "updated_at": "2026-09-09T13:54:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1407853840,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=krea2",
+      "snippet": "Explore machine learning models. Text-to-Image •13B•Updated Jul 24•77.8k••989"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Krea 2 LoRA training is now available",
+      "url": "https://www.krea.ai/blog/krea-2-lora-training",
+      "snippet": "Frequently asked questions Who can use Krea 2 LoRA training? Krea 2 LoRA training is in beta and available to Max and Business subscribers while we roll it out more broadly."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

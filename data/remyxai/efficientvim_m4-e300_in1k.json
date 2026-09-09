@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "remyxai/efficientvim_m4.e300_in1k",
+  "slug": "remyxai-efficientvim_m4-e300_in1k",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/efficientvim_m4.e300_in1k",
+  "created_at": "2026-09-09T15:22:06.000Z",
+  "updated_at": "2026-09-09T15:22:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19666737,
+  "parameters_human": "19.7M",
+  "storage_bytes": 157523495,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install Drive for desktop - Google Workspace Learning Center",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=en",
+      "snippet": "Get started with Drive for Google Workspace Install Drive for desktop You can find and open your files from Google Drive on your …"
+    },
+    {
+      "title": "Instalar o Drive para computador",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=pt-BR",
+      "snippet": "Clique em Drive para computador Abrir a pasta do Drive . Em Meu Drive ou em Drives compartilhados, clique duas vezes no arquivo …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "为什么国外用Drive来表示网盘/云盘/云服务？ - 知乎",
+      "url": "https://www.zhihu.com/question/67878615",
+      "snippet": "\"Drive\" 作为英语单词，表示驱动器或存储设备，因此与云盘、网盘等在线存储服务相关联。 这些服务使用“drive”一词强调它们提供的 …"
+    },
+    {
+      "title": "View & open files - Google Drive Help",
+      "url": "https://support.google.com/drive/answer/2423485?hl=en",
+      "snippet": "With Google Drive on the web, you can view things like videos, PDFs, Microsoft Office files, audio files, and photos. Important: If you …"
+    }
+  ]
+}

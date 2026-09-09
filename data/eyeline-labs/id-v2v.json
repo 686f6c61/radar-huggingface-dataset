@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Eyeline-Labs/ID-V2V",
+  "slug": "eyeline-labs-id-v2v",
+  "author": "Eyeline-Labs",
+  "url": "https://huggingface.co/Eyeline-Labs/ID-V2V",
+  "created_at": "2026-07-15T01:19:59.000Z",
+  "updated_at": "2026-07-29T07:32:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-to-video",
+    "image-to-video",
+    "text-to-video",
+    "video-generation",
+    "video-editing",
+    "diffusion",
+    "wan",
+    "vace",
+    "identity-preservation",
+    "relighting",
+    "siggraph-asia-2026",
+    "arxiv:2607.22830",
+    "base_model:Wan-AI/Wan2.1-I2V-14B-720P",
+    "base_model:finetune:Wan-AI/Wan2.1-I2V-14B-720P",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155553047047,
+  "storage_human": "155.6 GB",
+  "base_model": "Wan-AI/Wan2.1-I2V-14B-720P",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "James Dant - Purveyors of Men's Goods in Indianapolis, IN 46219",
+      "url": "https://www.chamberofcommerce.com/business-directory/indiana/indianapolis/men-s-clothing-store/42147870-james-dant-purveyors-of-men-s-goods",
+      "snippet": "James Dant - Purveyors of Men's Goods located at 5624 E Washington St, Indianapolis, IN 46219 - reviews, ratings, hours, phone …"
+    },
+    {
+      "title": "GitHub - Eyeline-Labs/ID-V2V: The official implementation of SIGGRAPH ...",
+      "url": "https://github.com/Eyeline-Labs/ID-V2V",
+      "snippet": "🎬 Model inference The ID-V2V model takes a source video, a stylized first frame(the look you want), an optional set of keyframes, and a text prompt, and generates a stylized video that follows the keyframe(s) while preserving the source's identity and performance."
+    },
+    {
+      "title": "James Dant - Purveyors of Men's Goods in Indianapolis , IN",
+      "url": "https://www.superpages.com/indianapolis-in/bpp/james-dant-purveyors-of-mens-goods-504487212",
+      "snippet": "Get reviews, hours, directions, coupons and more for James Dant - Purveyors of Men's Goods. Search for other Men's Clothing on …"
+    },
+    {
+      "title": "ID-V2V: Identity-preserving Video Restylization",
+      "url": "https://eyeline-labs.github.io/ID-V2V/",
+      "snippet": "Extensive experiments demonstrate that ID-V2V significantly outperforms existing methods in preserving facial likeness and fine-grained facial performance, robustly supports both single- and multi-subject scenarios, and delivers high visual quality, highlighting its strong potential for real-world content production."
+    },
+    {
+      "title": "James Dant - Purveyors of Men's Goods Clothing Store in Indianapolis…",
+      "url": "https://localitybiz.com/31024065/james-dant-purveyors-of-men%27s-goods-indianapolis",
+      "snippet": "James Dant - Purveyors of Men's Goods — Clothing Store in Indianapolis, IN. ⭐ 4.8/5 (120 reviews). See its address, phone …"
+    }
+  ]
+}

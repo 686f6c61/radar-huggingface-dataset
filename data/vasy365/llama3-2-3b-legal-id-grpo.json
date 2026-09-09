@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "VaSy365/llama3.2-3b-legal-id-grpo",
+  "slug": "vasy365-llama3-2-3b-legal-id-grpo",
+  "author": "VaSy365",
+  "url": "https://huggingface.co/VaSy365/llama3.2-3b-legal-id-grpo",
+  "created_at": "2026-09-09T16:02:46.000Z",
+  "updated_at": "2026-09-09T16:08:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:VaSy365/llama3.2-3b-legal-id-ft",
+    "base_model:finetune:VaSy365/llama3.2-3b-legal-id-ft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442739147,
+  "storage_human": "6.4 GB",
+  "base_model": "VaSy365/llama3.2-3b-legal-id-ft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mastering Robotics Programming for Beginners: 12 Essential Steps …",
+      "url": "https://roboticcoding.com/robotics-programming-for-beginners/",
+      "snippet": "Sep 18, 2025 · Whether you’re a curious hobbyist or eyeing a career shift, this guide unpacks everything you need to know about …"
+    },
+    {
+      "title": "Robotics Programming: An Introductory Tutorial | Toptal®",
+      "url": "https://www.toptal.com/developers/robotics/programming-a-robot-an-introductory-tutorial",
+      "snippet": "Dec 16, 2024 · Fascinated by robots? Follow this simple guide and learn how to use a robot simulator for programming a robot."
+    },
+    {
+      "title": "Learn Robot Programming - The Robotics Back-End",
+      "url": "https://roboticsbackend.com/",
+      "snippet": "Learn at your own pace. Hands-on lessons only. NO copy and paste. Focus on the why first. Practice with many projects. Get best …"
+    },
+    {
+      "title": "Robotics Tutorial - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/robotics/index.htm",
+      "snippet": "Robotics Programming Languages − This chapter will explain the basics of some popular robotic programming languages and their …"
+    },
+    {
+      "title": "Robotics Programming 101: A Beginner's Guide",
+      "url": "https://www.trossenrobotics.com/post/robotics-programming-guide",
+      "snippet": "Jun 11, 2026 · Learn what robotics programming is, which languages to use, and how to start building real robots with practical tips …"
+    }
+  ]
+}

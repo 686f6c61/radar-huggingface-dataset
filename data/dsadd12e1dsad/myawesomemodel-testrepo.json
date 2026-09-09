@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSADD12E1DSAD/MyAwesomeModel-TestRepo",
+  "slug": "dsadd12e1dsad-myawesomemodel-testrepo",
+  "author": "DSADD12E1DSAD",
+  "url": "https://huggingface.co/DSADD12E1DSAD/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T13:36:58.000Z",
+  "updated_at": "2026-09-09T13:37:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Start watching videos to help us build a feed of videos you'll love. Enjoy the videos and music you love, upload original content, and …"
+    },
+    {
+      "title": "SAD12D/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/SAD12D/MyAwesomeModel",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/de",
+      "snippet": "© 2026 Google LLC."
+    },
+    {
+      "title": "DSAD12DSA4TRFDS/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/DSAD12DSA4TRFDS/MyAwesomeModel-TestRepo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Videos auf Deutsch - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL308DCFE7C2ED2B94",
+      "snippet": "Ein Frühwarnsystem für Erdbeben?"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "seriintan/act_frazier_kyc",
+  "slug": "seriintan-act_frazier_kyc",
+  "author": "seriintan",
+  "url": "https://huggingface.co/seriintan/act_frazier_kyc",
+  "created_at": "2026-09-09T14:05:36.000Z",
+  "updated_at": "2026-09-09T14:06:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act_kyc",
+    "robotics",
+    "dataset:seriintan/frazier_dataset_20260901_151518",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55863046,
+  "parameters_human": "55.9M",
+  "storage_bytes": 223496896,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Giurgiuveanul.ro – stiri din Giurgiu, Giurgiu News",
+      "url": "https://www.giurgiuveanul.ro/stiri/",
+      "snippet": "Astăzi, 8 septembrie, în CINCI localităţi din judeţul Giurgiu se opreşte curentul electric! Care sunt acestea şi străzile vizate VEZI AICI"
+    },
+    {
+      "title": "seriintan (Seri Intan Kuala) - Hugging Face",
+      "url": "https://huggingface.co/seriintan",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 2 minutes ago ... updated a dataset 35 minutes ago"
+    },
+    {
+      "title": "Un nou set de echipamente, în dotarea Apa Service Giurgiu",
+      "url": "https://www.giurgiuveanul.ro/stiri/un-nou-set-de-echipamente-in-dotarea-apa-service-giurgiu/",
+      "snippet": "Jun 22, 2026 · Echipamentele performante achiziționate cu fonduri europene continuă să intre în dotarea companiei. Azi au sosit …"
+    },
+    {
+      "title": "seriintan/frazier_sim_v2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/seriintan/frazier_sim_v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Giurgiuveanul.ro – stiri din Giurgiu, Giurgiu News",
+      "url": "https://www.giurgiuveanul.ro/stiri/page/4/",
+      "snippet": "Aug 27, 2026 · asigură funcționalități de bază și caracteristici de securitate ale site-ului. Aceste cookie-uri nu stochează nicio …"
+    }
+  ]
+}

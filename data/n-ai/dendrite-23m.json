@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "n-AI/dendrite-23m",
+  "slug": "n-ai-dendrite-23m",
+  "author": "n-AI",
+  "url": "https://huggingface.co/n-AI/dendrite-23m",
+  "created_at": "2026-09-09T18:00:53.000Z",
+  "updated_at": "2026-09-09T18:50:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "moe",
+    "MoE",
+    "sparse",
+    "cpu-optimised",
+    "cpu",
+    "scratch",
+    "avx",
+    "fma",
+    "custom-architecture",
+    "slm",
+    "fine-tuned",
+    "autoregressive",
+    "text-generation",
+    "en",
+    "dataset:Veelane/TinyStories-small",
+    "dataset:Abirate/english_quotes",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95382304,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    },
+    {
+      "title": "ñ — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/%C3%B1",
+      "snippet": "Lettre minuscule latine n tilde. Elle est utilisée en aragonais, asturien, basque, breton, espagnol, galicien, guarani, hassanya, tagalog, …"
+    },
+    {
+      "title": "Regardez des séries en ligne, Regardez des films en ligne - Netflix",
+      "url": "https://www.netflix.com/fr/",
+      "snippet": "Regardez des films et des séries Netflix en ligne, sur votre smart TV, console de jeu, PC, Mac, smartphone, tablette et bien plus."
+    },
+    {
+      "title": "Ñ — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%91",
+      "snippet": "Ɲ́ ɲ́(n hameçon accent aigu) Ɲ̀ ɲ̀(n hameçon accent grave) Lettres additionnelles ɴ(petite capitale n) 𝼇(eng réfléchi) Polygrammes …"
+    },
+    {
+      "title": "N — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/N",
+      "snippet": "Les définitions et autres textes sont disponibles sous licence Creative Commons attribution partage à l’identique ; d’autres termes …"
+    }
+  ]
+}

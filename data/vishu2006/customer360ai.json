@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vishu2006/customer360AI",
+  "slug": "vishu2006-customer360ai",
+  "author": "Vishu2006",
+  "url": "https://huggingface.co/Vishu2006/customer360AI",
+  "created_at": "2026-09-09T13:47:39.000Z",
+  "updated_at": "2026-09-09T14:11:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 627367,
+  "storage_human": "627367 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zentrum für Gestaltung Ulm -Berufsausbildung + Fachhochschulreife?",
+      "url": "https://zfg-schulen.de/",
+      "snippet": "Das Zentrum für Gestaltung - Freie, staatlich anerkannte Schulen Ulm ist ein Schulzentrum beruflicher Schulen. An unseren …"
+    },
+    {
+      "title": "Vishu2006 (Vishvam Trivedi) - Hugging Face",
+      "url": "https://huggingface.co/Vishu2006",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 28 days ago ... published a Space 29 days ago"
+    },
+    {
+      "title": "Berufskollegs - Zentrum für Gestaltung - zfg-schulen.de",
+      "url": "https://zfg-schulen.de/berufskollegs.html",
+      "snippet": "An unseren gestaltenden Berufskollegs in Ulm fördern wir deine individuelle kreative Handschrift im Höchstmaß. Bewirb dich gleich …"
+    },
+    {
+      "title": "Customer360",
+      "url": "http://www.customer360.ai/",
+      "snippet": "Customer360.ai is a centralized repository that collects, cleans, and consolidates customer data from various sources, such as CRM systems, SAP, data lakes, e-commerce platforms, and more. It provides a unified and structured view of customer information, enabling businesses to gain actionable insights and deliver personalized experiences to their customers."
+    },
+    {
+      "title": "Zentrum für Gestaltung Ulm, SchillerStr. 1/10, Ulm (2026)",
+      "url": "https://www.findglocal.com/DE/Ulm/102751226497261/Zentrum-f%C3%BCr-Gestaltung-Ulm",
+      "snippet": "2 days ago · An unseren Berufskollegs erwerben Schüler, die die Mittlere Reife erfolgreich abgeschlossen haben, einen …"
+    }
+  ]
+}

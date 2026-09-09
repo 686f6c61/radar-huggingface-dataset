@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maiyamamoto/classification",
+  "slug": "maiyamamoto-classification",
+  "author": "maiyamamoto",
+  "url": "https://huggingface.co/maiyamamoto/classification",
+  "created_at": "2026-09-09T11:28:53.000Z",
+  "updated_at": "2026-09-09T11:29:03.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Automatic Classification of Mode of Invasion from Digital Images Using ...",
+      "url": "https://www.jstage.jst.go.jp/article/mit/34/5/34_279/_article",
+      "snippet": "As a discrimination method for estimating invasive potentiality and prognosis of oral squamous cell carcinoma (OSCC), the mode of invasion (Yamamoto Kohama-criteria) centered on the form of pathological tissue specimen has been known to be clinically useful, especially in Japan where it is used frequently. However, evaluation of this mode of invasion is based on subjective visual observation ..."
+    },
+    {
+      "title": "(PDF) Automatic Machine-Learning Classification of the ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/343486995_Automatic_Machine-Learning_Classification_of_the_Mode_of_Invasion_of_Oral_Squamous_Cell_Carcinoma_Using_Digital_Microscopic_Images_A_Retrospective_Study",
+      "snippet": "Automatic Machine-Learning Classification of the Mode of Invasion of Oral Squamous Cell Carcinoma Using Digital Microscopic Images: A Retrospective Study"
+    },
+    {
+      "title": "Models - Microsoft AI",
+      "url": "https://microsoft.ai/models/",
+      "snippet": "Helps your engineering team write better code faster, with a lightweight, agentic model built into GitHub Copilot and VS Code. Create stunning, design-ready images from any text or photo prompt, with best-in-class Arena ELO scores at a lower price. Delivers expressive, low-latency speech that holds up across long generations."
+    },
+    {
+      "title": "Building a hill-climbing machine: Launching seven new MAI models ...",
+      "url": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/",
+      "snippet": "Here’s our first steps along the way. Our Models Our new models across image, voice, transcription, coding, and reasoning, together form the MAI model family: a multimodal ecosystem designed to work across the kinds of tasks that matter in the real world. MAI-Thinking-1, Microsoft AI’s flagship reasoning model."
+    }
+  ]
+}

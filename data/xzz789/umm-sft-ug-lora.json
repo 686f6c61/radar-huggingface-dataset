@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xzz789/umm-sft-ug-lora",
+  "slug": "xzz789-umm-sft-ug-lora",
+  "author": "xzz789",
+  "url": "https://huggingface.co/xzz789/umm-sft-ug-lora",
+  "created_at": "2026-09-09T13:28:12.000Z",
+  "updated_at": "2026-09-09T15:25:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "multimodal",
+    "research",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36766499576,
+  "storage_human": "36.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calogero Vizzini - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Calogero_Vizzini",
+      "snippet": "Calogero Vizzini, soprannominato Don Calò[1] (Villalba, 24 luglio 1877 – Villalba, 12 luglio 1954), è stato un mafioso italiano, legato a …"
+    },
+    {
+      "title": "Calogero Vizzini - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Calogero_Vizzini",
+      "snippet": "4Alleged support for allied invasion of Sicily. 5Mayor of Villalba. 6King of the black market. 7Supporting Sicilian independence. …"
+    },
+    {
+      "title": "Don Calogero - Facebook",
+      "url": "https://www.facebook.com/don.calogero.5/",
+      "snippet": "La Braceria Don Calogero ti aspetta per momenti indimenticabili. Don Calogero è braceria ed enoteca...."
+    },
+    {
+      "title": "Ha da venì... don Calogero! - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ha_da_ven%C3%AC..._don_Calogero!",
+      "snippet": "Ha da venì... don Calogero! is a 1952 Italian comedy film. A priest inherits a large sum of money from a former student at his …"
+    },
+    {
+      "title": "Ha da venì... don Calogero - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Ha_da_ven%C3%AC..._don_Calogero",
+      "snippet": "Ha da venì... don Calogero è un film italiano del 1951 diretto da Vittorio Vassarotti. Un bonario sacerdote eredita una grossa somma …"
+    }
+  ]
+}

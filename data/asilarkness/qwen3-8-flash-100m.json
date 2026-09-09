@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Asilarkness/qwen3.8-flash-100m",
+  "slug": "asilarkness-qwen3-8-flash-100m",
+  "author": "Asilarkness",
+  "url": "https://huggingface.co/Asilarkness/qwen3.8-flash-100m",
+  "created_at": "2026-09-09T14:21:59.000Z",
+  "updated_at": "2026-09-09T17:56:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16669646883,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Premier League 2025/2026 : Results, rankings and all statistics",
+      "url": "https://www.footballdatabase.eu/en/competition/overall/22323-premier_league/2025-2026",
+      "snippet": "Jul 9, 2026 · Get fixtures, results, rankings and all statistics of Premier League for the 2025/2026 season"
+    },
+    {
+      "title": "English Premier League Scoring Stats, 2025-26 Season - ESPN",
+      "url": "https://www.espn.com/soccer/stats/_/league/ENG.1/season/2025",
+      "snippet": "Get the full English Premier League scoring stats for the 2025-26 season on ESPN. Includes top 50 best strikers and top assists in …"
+    },
+    {
+      "title": "Premier League stats for 2025/2026 - players and teams - FotMob",
+      "url": "https://www.fotmob.com/leagues/47/stats/premier-league?season=2025-2026",
+      "snippet": "Premier League statistics for 2025/2026 with top scorers, assist leaders, player ratings, clean sheets and detailed performance data …"
+    },
+    {
+      "title": "Premier League Stats & Final Table 2025/2026 | Statz",
+      "url": "https://statz.ai/competitions/premier-league?season=2025-2026",
+      "snippet": "Premier League 2025/2026 stats hub: final standings, team statistics, BTTS and corners trends, and stat leaders."
+    },
+    {
+      "title": "Premier League Top Scorers 2026/27, Player Stats & Club Statistics",
+      "url": "https://www.premierleague.com/en/stats",
+      "snippet": "View Premier League club and player stats, including goals scored, assists, total passes and clean sheets, on the official website of …"
+    }
+  ]
+}

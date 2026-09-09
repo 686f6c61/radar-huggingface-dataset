@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kushnick420/Qythos",
+  "slug": "kushnick420-qythos",
+  "author": "kushnick420",
+  "url": "https://huggingface.co/kushnick420/Qythos",
+  "created_at": "2026-09-09T11:18:20.000Z",
+  "updated_at": "2026-09-09T11:18:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "snippet": "Model tree for empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF Base model Qwen/Qwen3.5-9B-Base"
+    },
+    {
+      "title": "Coda di stampa bloccata su Windows 11 e 10: come svuotarla",
+      "url": "https://www.soluzionecomputer.it/visualizzare-cancellare-la-coda-della-stampante-windows/",
+      "snippet": "6 days ago · Come aprire e svuotare la coda di stampa in Windows 11 e 10, riavviare lo spooler e cancellare in sicurezza i processi …"
+    },
+    {
+      "title": "Anthropic Mythos Preview: Key Details on the New AI Model in 2026",
+      "url": "https://imfounder.com/science-tech/ai/anthropic-mythos/",
+      "snippet": "Learn about the Anthropic Mythos preview, the latest AI model from Anthropic focused on advanced reasoning, coding, and cybersecurity. This article covers the preview release, capabilities, risks, and industry impact."
+    },
+    {
+      "title": "Visualizzare la coda di stampa di una stampante in Windows",
+      "url": "https://support.microsoft.com/it-it/windows/hardware/printer/view-a-printer-s-print-queue-in-windows",
+      "snippet": "La visualizzazione della coda di stampa di una stampante consente di visualizzare i processi di stampa in sospeso e gli elementi in …"
+    },
+    {
+      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

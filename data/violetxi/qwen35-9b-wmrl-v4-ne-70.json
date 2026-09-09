@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/qwen35-9b-wmrl-v4-NE-70",
+  "slug": "violetxi-qwen35-9b-wmrl-v4-ne-70",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-NE-70",
+  "created_at": "2026-09-09T13:37:57.000Z",
+  "updated_at": "2026-09-09T13:41:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "wm-internalization",
+    "v4",
+    "NE-70",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38625429982,
+  "storage_human": "38.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-NEA · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-NEA",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-NEA wm-internalization v4 checkpoint — condition NEA, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool). Grafted back into the hub composite layout (Qwen3_5ForConditionalGeneration) — servable with vLLM out of the box. training data ..."
+    },
+    {
+      "title": "Toute la France - leboncoin",
+      "url": "https://www.leboncoin.fr/all/offer",
+      "snippet": "Toutes nos annonces gratuites Toute la France. Consultez nos 91432318 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-r0-30m · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-r0-30m",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-r0-30m wm-internalization v4 checkpoint — condition r0-30m, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool). Grafted back into the hub composite layout (Qwen3_5ForConditionalGeneration) — servable with vLLM out of the box."
+    },
+    {
+      "title": "Leboncoin — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Leboncoin",
+      "snippet": "Leboncoin est un site web français de petites annonces, fondé en 2006 par l'entreprise norvégienne Adevinta, spécialisée dans les …"
+    }
+  ]
+}

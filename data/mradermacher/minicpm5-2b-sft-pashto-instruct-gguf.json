@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-SFT-Pashto-Instruct-GGUF",
+  "slug": "mradermacher-minicpm5-2b-sft-pashto-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-SFT-Pashto-Instruct-GGUF",
+  "created_at": "2026-09-09T11:20:18.000Z",
+  "updated_at": "2026-09-09T11:35:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ps",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pashto",
+    "nlp",
+    "text-generation",
+    "causal-lm",
+    "sft",
+    "lora",
+    "qlora",
+    "ipashto",
+    "afghanistan",
+    "low-resource",
+    "instruction-tuning",
+    "fine-tuned",
+    "tokenizer-surgery",
+    "minicpm",
+    "ps",
+    "en",
+    "base_model:nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct",
+    "base_model:adapter:nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516944896,
+  "parameters_human": "2.52B",
+  "storage_bytes": 22765489088,
+  "storage_human": "22.8 GB",
+  "base_model": "nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ExcelHome技术论坛 - Excel教程免费学习，Excel表格交流，下载Excel函 …",
+      "url": "https://club.excelhome.net/",
+      "snippet": "专业的学习型Office技术社区-Excel表格入门教程，Office应用问题交流，免费下载学习excel、Word、PPT软件视频教程，免费分 …"
+    },
+    {
+      "title": "mradermacher/MiniCPM5-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Excel如何在已有的小方块里面打对勾？ - 知乎",
+      "url": "https://www.zhihu.com/question/439633167",
+      "snippet": "Jan 16, 2021 · 如何调出“开发工具”栏？ 方法：在Excel上方工具栏（图1中框选区）单击鼠标右键（注意：不要在表格中右键），点击“ …"
+    },
+    {
+      "title": "MiniCPM5-2B-SFT-Pashto-Instruct-GGUF - Hugging Face",
+      "url": "https://huggingface.co/nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Excel公式中的$是什么意思（Excel的绝对引用）-百度经验",
+      "url": "https://jingyan.baidu.com/article/63f23628f9eebb4209ab3d51.html",
+      "snippet": "Jan 2, 2020 · Excel公式中的$是什么意思（Excel的绝对引用）,我们在使用Excel时经常要用到公式，而使用公式的时候又经常会引用 …"
+    }
+  ]
+}

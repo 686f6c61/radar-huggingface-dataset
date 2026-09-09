@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Sh00eei/Ooopsie",
+  "slug": "sh00eei-ooopsie",
+  "author": "Sh00eei",
+  "url": "https://huggingface.co/Sh00eei/Ooopsie",
+  "created_at": "2026-09-09T13:48:32.000Z",
+  "updated_at": "2026-09-09T13:48:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228723176,
+  "storage_human": "229 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bokep Jepang - XNXX.COM",
+      "url": "https://www.xnxx.com/video-t0l5717/bokep_jepang",
+      "snippet": "Your free Porn Video is now loading... :-) Buffering... Terms of service - Privacy policy - Cookie preferences - Content removal - …"
+    },
+    {
+      "title": "Oopsie, by Zipy - AI Marketplace | G2",
+      "url": "https://ai.g2.com/marketplace/tools/oopsie-by-zipy",
+      "snippet": "Oopsie, by Zipy, is an AI-powered debugging tool designed for mobile development teams working with Flutter, React Native, iOS, and Android. It enables instant bug detection, AI-driven analysis, session replay, error monitoring, and actionable fixes for crashes and ANRs."
+    },
+    {
+      "title": "Jepang Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/jepang",
+      "snippet": "Watch jepang porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "'japanese-porn' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/japanese-porn",
+      "snippet": "XNXX.COM 'japanese-porn' Search, free sex videos"
+    }
+  ]
+}

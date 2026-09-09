@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "bcywinski/qwen3.5-9b-instruct-msm-packaging-gg-aft-setB-r64",
+  "slug": "bcywinski-qwen3-5-9b-instruct-msm-packaging-gg-aft-setb-r64",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-gg-aft-setB-r64",
+  "created_at": "2026-09-09T18:06:41.000Z",
+  "updated_at": "2026-09-09T18:08:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586273503,
+  "storage_human": "586 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hameçon texan VMC Mystic 7348 TK Tokyo rig - ardent-peche.com",
+      "url": "https://www.ardent-peche.com/fr/p/59003-hamecon-texan-vmc-mystic-7348-tk-tokyo-rig.html",
+      "snippet": "Hameçon texan VMC Mystic 7348 TK pour montage Tokyo Rig. Œillet spécial permettant d'attacher un lest séparé sous l'hameçon. …"
+    }
+  ]
+}

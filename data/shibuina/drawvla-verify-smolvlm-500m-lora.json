@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "shibuina/drawvla-verify-smolvlm-500m-lora",
+  "slug": "shibuina-drawvla-verify-smolvlm-500m-lora",
+  "author": "shibuina",
+  "url": "https://huggingface.co/shibuina/drawvla-verify-smolvlm-500m-lora",
+  "created_at": "2026-09-09T14:11:30.000Z",
+  "updated_at": "2026-09-09T14:11:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "sketch",
+    "instruction-validation",
+    "drawvla",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "dataset:shibuina/drawvla-prompt-validation",
+    "base_model:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38348096,
+  "storage_human": "38 MB",
+  "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meiser Design Hotel – Meiser Hotels",
+      "url": "https://meiser-hotels.de/design",
+      "snippet": "Kosmopolitisches Ambiente und extravagantes Design direkt vor den Toren Dinkelsbühls, der laut Focus schönsten Altstadt …"
+    },
+    {
+      "title": "HuggingFaceTB/SmolVLM-500M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Zimmer – Meiser Hotels - Meiser Design Hotel",
+      "url": "https://meiser-hotels.de/design/zimmer",
+      "snippet": "Urban, komfortabel und einzigartig: Das Meiser Design Hotel in Dinkelsbühl bietet 150 Hotelzimmer und Suiten im charakteristischen …"
+    },
+    {
+      "title": "shibuina (Do Duc Anh) - Hugging Face",
+      "url": "https://huggingface.co/shibuina/models",
+      "snippet": "Deep Learning, Reinforcement Learning, LLM. Recent Activity. updated a dataset 2 days ago. shibuina/spatial_sketch. published a dataset 2 days ago"
+    },
+    {
+      "title": "Über Meiser Hotels in Dinkelsbühl | Meiser Jobs & Karriere",
+      "url": "https://jobs.meiser-hotels.de/team-kultur/",
+      "snippet": "Lerne Meiser in Dinkelsbühl als modernen Arbeitgeber in der Hotellerie kennen und entdecke Werte, Unternehmenskultur, …"
+    }
+  ]
+}

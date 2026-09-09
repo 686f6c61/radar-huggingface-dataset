@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Duloch-Pico-125M-Base-GGUF",
+  "slug": "mradermacher-duloch-pico-125m-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Duloch-Pico-125M-Base-GGUF",
+  "created_at": "2026-09-09T11:10:08.000Z",
+  "updated_at": "2026-09-09T11:15:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "causal-lm",
+    "base-model",
+    "safetensors",
+    "llama",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "base_model:pdjamez/Duloch-Pico-125M-Base",
+    "base_model:quantized:pdjamez/Duloch-Pico-125M-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125095680,
+  "parameters_human": "125.1M",
+  "storage_bytes": 1143526272,
+  "storage_human": "1.1 GB",
+  "base_model": "pdjamez/Duloch-Pico-125M-Base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite - Rhein-Zeitung",
+      "url": "https://www.rhein-zeitung.de/",
+      "snippet": "Das große Jubiläum im Mai 2026: Die Rhein-Zeitung gibt es nun seit 80 Jahren. Aus diesem Anlass erzählen 80 Redakteure ihre 80 …"
+    },
+    {
+      "title": "mradermacher/Boris-125M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Boris-125M-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rhein-Zeitung E-Paper & News",
+      "url": "https://rzepaper.rhein-zeitung.de/",
+      "snippet": "Rhein-Zeitung E-Paper & News Please enable JavaScript in your browser to use the Prenly Web Reader."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Startseite - Rhein-Zeitung",
+      "url": "https://www.rhein-zeitung.de/?f=0",
+      "snippet": "Das große Jubiläum im Mai 2026: Die Rhein-Zeitung gibt es nun seit 80 Jahren. Aus diesem Anlass erzählen 80 Redakteure ihre 80 …"
+    }
+  ]
+}

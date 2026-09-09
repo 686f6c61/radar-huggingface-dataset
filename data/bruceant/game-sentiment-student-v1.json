@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bruceant/game-sentiment-student-v1",
+  "slug": "bruceant-game-sentiment-student-v1",
+  "author": "bruceant",
+  "url": "https://huggingface.co/bruceant/game-sentiment-student-v1",
+  "created_at": "2026-09-09T11:11:58.000Z",
+  "updated_at": "2026-09-09T11:11:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cosa vedere a Boston: le migliori attrazioni da visitare",
+      "url": "https://www.viaggi-usa.it/attrazioni-boston/",
+      "snippet": "Jul 29, 2026 · Pronti a scoprire cosa vedere a Boston? Ecco le attrazioni e i luoghi di interesse da visitare nella capitale del …"
+    },
+    {
+      "title": "GitHub - harshini45678/AI-Based-Student-Complaint-Analytics-System: An ...",
+      "url": "https://github.com/harshini45678/AI-Based-Student-Complaint-Analytics-System",
+      "snippet": "An AI-based Student Complaint Analytics and Resolution System that analyzes student complaints using sentiment analysis and provides intelligent resolution ..."
+    },
+    {
+      "title": "Cosa Vedere e Visitare a Boston (MA) - myusa.it",
+      "url": "https://www.myusa.it/boston/boston-cosa-vedere/",
+      "snippet": "May 21, 2024 · Cosa vedere a Boston, le migliori attrazioni da visitare e le cose più belle da vedere a Boston (USA), luoghi di …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Boston guida di viaggio: come organizzare una vacanza in città",
+      "url": "https://www.viaggi-usa.it/citta-usa/boston/",
+      "snippet": "Guida di viaggio a Boston con consigli su cosa vedere, dove dormire, come risparmiare, i city pass più convenienti, suggerimenti …"
+    }
+  ]
+}

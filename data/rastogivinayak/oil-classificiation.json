@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rastogivinayak/oil-classificiation",
+  "slug": "rastogivinayak-oil-classificiation",
+  "author": "rastogivinayak",
+  "url": "https://huggingface.co/rastogivinayak/oil-classificiation",
+  "created_at": "2026-09-09T10:49:01.000Z",
+  "updated_at": "2026-09-09T10:53:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-classification",
+    "sar",
+    "sentinel-1",
+    "remote-sensing",
+    "oil-spill-detection",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11184515,
+  "parameters_human": "11.2M",
+  "storage_bytes": 45242586,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Crypto Bridges and DEX Aggregators Compared in 2026",
+      "url": "https://www.rocketx.exchange/blog/best-crypto-bridges-dex-aggregators-2026/",
+      "snippet": "Compare the best crypto bridges and DEX aggregators in 2026. See live rate comparisons, supported chains, liquidity coverage, …"
+    },
+    {
+      "title": "rastogivinayak (Vinayak Rastogi) - Hugging Face",
+      "url": "https://huggingface.co/rastogivinayak",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 17 days ago ... published a model 17 days ago"
+    },
+    {
+      "title": "GMX | decentralized perpetual exchange",
+      "url": "https://gmx.io/",
+      "snippet": "GMX prevents unfair liquidations by using decentralized oracles from Chainlink and Chaos Labs, which aggregate prices from …"
+    },
+    {
+      "title": "An Automated Oil Spill Classification Framework Using VGG-19 Deep ...",
+      "url": "https://ieeexplore.ieee.org/document/11496312/",
+      "snippet": "Oil spills are one of the serious environmental effects and this needs automated, accurate, and real-time monitoring systems. In this paper, the classicalification model based on the VGG-19 architecture with the deep learning concept is suggested to distinguish between cases of oil spills and non-spills utilizing image data sets. A dataset of 600 images (500 training and 100 test images) was ..."
+    },
+    {
+      "title": "7 Best Crypto DEX Aggregator in 2026 - CoinSutra",
+      "url": "https://coinsutra.com/best-crypto-dex-aggregator/",
+      "snippet": "Dec 8, 2024 · 1Inch Exchange – DEX Aggregator 1Inch Exchange is the No. 1 DEX aggregator in the crypto market. It sources its …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/GameIconResearch_sword_Lora",
+  "slug": "larryaidraw-gameiconresearch_sword_lora",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/GameIconResearch_sword_Lora",
+  "created_at": "2026-09-09T13:18:02.000Z",
+  "updated_at": "2026-09-09T13:18:25.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75612832,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NIKE的鞋子,中国44.5码和45码差多少._百度知道",
+      "url": "https://zhidao.baidu.com/question/45832639.html",
+      "snippet": "2、NIKE是国际品牌鞋，尺码以国际尺寸为标准。 3、NIKE和其他运动鞋比起来，尺码是偏大的。 3、如果是made in china，自然尺 …"
+    },
+    {
+      "title": "nike上的标志the athletic dept？？！_百度知道",
+      "url": "https://zhidao.baidu.com/question/121036693.html",
+      "snippet": "如题nike上的标志theathleticdept是什么意思?!很少在NIKE的店子里看到这牌子有人能给详细的解释下么谢啦！ 如题nike上的标志the …"
+    },
+    {
+      "title": "Nike - Forum Sport",
+      "url": "https://www.forumsport.com/es-es/marcas/nike-NIKE-c",
+      "snippet": "Todas las novedades de Nike para fitness, fútbol, tenis, natación y otros deportes. Electrónica deportiva con la mejor tecnología Nike …"
+    },
+    {
+      "title": "耐克（Nike） - 知乎",
+      "url": "https://www.zhihu.com/topic/19560462/hot",
+      "snippet": "Nike英文原意指希腊胜利女神，中文译为耐克，是世界知名的体育运动品牌。总部位于美国俄勒冈州波特兰市。公司生产的体育用品包 …"
+    },
+    {
+      "title": "mallas nike - Forum Sport",
+      "url": "https://www.forumsport.com/es-es/mallas-nike-s",
+      "snippet": "Mallas Nike en Forum Sport: ajuste perfecto, tejido elástico y confort para tus sesiones de entrenamiento o uso diario."
+    }
+  ]
+}

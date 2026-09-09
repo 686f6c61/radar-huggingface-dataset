@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hamm-eyer/dino-contrastive-efficient56",
+  "slug": "hamm-eyer-dino-contrastive-efficient56",
+  "author": "hamm-eyer",
+  "url": "https://huggingface.co/hamm-eyer/dino-contrastive-efficient56",
+  "created_at": "2026-09-09T13:36:45.000Z",
+  "updated_at": "2026-09-09T13:36:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hamm — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hamm",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Hamm 84 languesAjouter un sujet"
+    },
+    {
+      "title": "AI MODEL LEADERBOARD",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "Pick the right LLM in under a minute. 373 models ranked by GPQA, AIME 2025, SWE-bench Verified, HLE, input/output price per million tokens, context window and license. Updated 2026-09-07."
+    },
+    {
+      "title": "Compactage pour terrassement & construction de routes | Hamm",
+      "url": "https://www.wirtgen-group.com/ocs/fr-fr/hamm/produits-hamm-138-c/",
+      "snippet": "HAMM propose pour tous les marchés des compacteurs à pneumatiques affichant un poids opérationnel compris entre 8 et 28 t (en …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Hamm – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Hamm",
+      "snippet": "Hamm ist Sitz des größten deutschen Oberlandesgerichts – OLG Hamm – sowie der zugehörigen Rechtsanwalts- und die …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "astroboy14/misinformation-detection-distilbert",
+  "slug": "astroboy14-misinformation-detection-distilbert",
+  "author": "astroboy14",
+  "url": "https://huggingface.co/astroboy14/misinformation-detection-distilbert",
+  "created_at": "2026-09-09T11:11:07.000Z",
+  "updated_at": "2026-09-09T11:42:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803620050,
+  "storage_human": "804 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "forum.openstreetmap.org",
+      "url": "https://forum.openstreetmap.org/search.php?action=show_user_posts&user_id=991",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Misinformation Detection using Large Language Models with Explainability",
+      "url": "https://arxiv.org/html/2510.18918v1",
+      "snippet": "The rapid spread of misinformation on online platforms undermines trust among individuals and hinders informed decision making. This paper shows an explainable and computationally efficient pipeline to detect misinformation using transformer-based pretrained language models (PLMs). We optimize both RoBERTa and DistilBERT using a two-step strategy: first, we freeze the backbone and train only ..."
+    },
+    {
+      "title": "Misinformation Detection using Large Language Models with Explainability",
+      "url": "https://arxiv.org/pdf/2510.18918",
+      "snippet": "The results suggest that PLMs combined with principled fine-tuning and interpretability can be an effective framework for scalable, trustworthy misinformation detection. Index Terms—Misinformation detection, Large Language Models, Explainable AI, DistilBERT, RoBERTa I. INTRODUCTION"
+    },
+    {
+      "title": "Karan-maroti-kundale/Misinformation-Detection - GitHub",
+      "url": "https://github.com/Karan-maroti-kundale/Misinformation-Detection",
+      "snippet": "AI-Powered Misinformation Detection & Literacy Assistant — Detects fake content in text, images, and videos using PyTorch DistilBERT, ELA, and keyframe analysis."
+    },
+    {
+      "title": "Evaluating Model Agreement in Explainable Fake News Detection Using ...",
+      "url": "https://www.linkedin.com/posts/sheetal-gupta-a26715216_github-sheetalguptaaevaluating-model-agreement-in-explainable-fake-news-detection-using-transformer-based-models-activity-7502024600462049280-TUi_",
+      "snippet": "For this research, I designed and evaluated an explainable AI framework for fake news detection using transformer-based models, including BERT, RoBERTa, and DistilBERT, and compared them with ..."
+    }
+  ]
+}

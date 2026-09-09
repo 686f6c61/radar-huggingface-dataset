@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AkshatBansal123/SIH26",
+  "slug": "akshatbansal123-sih26",
+  "author": "AkshatBansal123",
+  "url": "https://huggingface.co/AkshatBansal123/SIH26",
+  "created_at": "2026-09-09T11:53:00.000Z",
+  "updated_at": "2026-09-09T11:58:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128867447,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "GitHub - akshhq/SIH-26",
+      "url": "https://github.com/akshhq/SIH-26/tree/main",
+      "snippet": "It is an evidence-linked AI trust and risk layer for the MPLADS lifecycle — designed to continuously screen project, financial, documentary, visual and relationship data and bring the highest-risk cases to authorized investigators."
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Amity Internal Hackathon - SIH — Your Gateway to Smart India Hackathon",
+      "url": "https://amityhackathon.vercel.app/problems",
+      "snippet": "Amity Internal Hackathon - SIH is the official institute-level qualifier for Smart India Hackathon. Top teams qualify for national SIH competition. Both on-campus and hybrid modes available."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Clear URL Enter a URL Input must be a non-empty, well-formed web URL Translate Translating Send feedback Image translation"
+    }
+  ]
+}

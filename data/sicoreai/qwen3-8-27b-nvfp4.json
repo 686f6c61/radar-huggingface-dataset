@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SicoreAI/Qwen3.8-27B-NVFP4",
+  "slug": "sicoreai-qwen3-8-27b-nvfp4",
+  "author": "SicoreAI",
+  "url": "https://huggingface.co/SicoreAI/Qwen3.8-27B-NVFP4",
+  "created_at": "2026-09-09T11:37:32.000Z",
+  "updated_at": "2026-09-09T12:15:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Turf : quinté+, résultats PMU, pronostics gratuits | Zone-Turf.fr",
+      "url": "https://www.zone-turf.fr/",
+      "snippet": "1 day ago · Avec Zone-turf.fr, retrouvez l'ensemble des partants et des pronostics pour chaque réunion PMU ainsi que les arrivées et …"
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "Tiercé Quarté Quinté : partants, pronostics et rapports | Zone-Turf.fr",
+      "url": "https://www.zone-turf.fr/quinte/aujourdhui/",
+      "snippet": "1 day ago · Tout sur le quinté+ et l'e.quinté+ : partants détaillés, pronostics de la presse et rapports sur le tiercé quarté+ quinté+ spot"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "Programme des courses hippiques PMU et PMU.fr du jour | Zone-Turf…",
+      "url": "https://www.zone-turf.fr/programmes/",
+      "snippet": "Dernière minute de Zone-Turf : Cliquez-ici Tous les pronostics de Zone-Turf et de la presse pour le Quinté : Cliquez-ici"
+    }
+  ]
+}

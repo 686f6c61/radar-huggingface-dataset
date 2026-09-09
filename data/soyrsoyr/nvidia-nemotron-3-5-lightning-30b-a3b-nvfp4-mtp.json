@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-MTP",
+  "slug": "soyrsoyr-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4-mtp",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-MTP",
+  "created_at": "2026-09-09T17:30:56.000Z",
+  "updated_at": "2026-09-09T17:31:24.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "compressed-tensors",
+    "llm-compressor",
+    "nvfp4",
+    "mtp",
+    "speculative-decoding",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 19560266024,
+  "storage_human": "19.6 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

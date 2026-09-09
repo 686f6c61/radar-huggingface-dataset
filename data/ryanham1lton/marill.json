@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Marill",
+  "slug": "ryanham1lton-marill",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Marill",
+  "created_at": "2026-09-09T17:54:26.000Z",
+  "updated_at": "2026-09-09T17:57:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128199443,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About – Microsoft Rewards",
+      "url": "https://rewards.microsoft.com/",
+      "snippet": "Earn points with Bing searches, using select Microsoft products, and more. Redeem points for games, sweepstakes, and gift cards to …"
+    },
+    {
+      "title": "Redeem – Microsoft Rewards",
+      "url": "https://rewards.microsoft.com/redeem",
+      "snippet": "Browse rewards, including gift cards, sweepstakes entries, and more, redeemable with your Microsoft Rewards points."
+    },
+    {
+      "title": "About Microsoft Rewards",
+      "url": "https://www.microsoft.com/en-us/rewards/about-windows-welcome?msockid=3295dab777816ceb215bcd7876b86d42",
+      "snippet": "Earn rewards with Microsoft. Just by simply doing what you love to do. Sign in or create a Microsoft account and get points for gift …"
+    },
+    {
+      "title": "Bing Rewards - Sign in",
+      "url": "http://ssl.bing.com/rewards/signin",
+      "snippet": "Bing Rewards Program gives you opportunities to earn credits towards free rewards."
+    },
+    {
+      "title": "XBOX + Microsoft Rewards: Play. Earn. Redeem. Repeat.",
+      "url": "https://rewards.bing.com/promo/xbox",
+      "snippet": "Rack up points and redeem for gift cards, bonus sweepstakes entries, cash donations to causes you care about, and more. …"
+    }
+  ]
+}

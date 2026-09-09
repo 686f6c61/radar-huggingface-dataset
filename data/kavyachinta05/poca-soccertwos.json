@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KavyaChinta05/poca-SoccerTwos",
+  "slug": "kavyachinta05-poca-soccertwos",
+  "author": "KavyaChinta05",
+  "url": "https://huggingface.co/KavyaChinta05/poca-SoccerTwos",
+  "created_at": "2026-09-09T15:59:07.000Z",
+  "updated_at": "2026-09-09T15:59:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58790376,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LewdFroggo",
+      "url": "https://lewdfroggo.newgrounds.com/",
+      "snippet": "Dec 9, 2019 · Ribbit Level: 2 Exp Points: 33 / 50 Exp Rank: > 100,000 Vote Power: 2.36 votes"
+    },
+    {
+      "title": "LewdFroggo's Fans",
+      "url": "https://lewdfroggo.newgrounds.com/fans?page=6",
+      "snippet": "JGJGS Ribbit Swamp Joined on 12/8/19 Twitter Level: 2 Exp Points: 33 / 50 Exp Rank: > 100,000 Vote Power: 2.36 votes Rank: …"
+    },
+    {
+      "title": "LewdFroggo's Fans",
+      "url": "https://lewdfroggo.newgrounds.com/fans?page=260",
+      "snippet": "usagigirl97 Ribbit Swamp Joined on 12/8/19 Twitter Level: 2 Exp Points: 33 / 50 Exp Rank: > 100,000 Vote Power: 2.36 votes Rank: …"
+    },
+    {
+      "title": "Ribbit - by LewdFroggo",
+      "url": "https://lewdfroggo.newgrounds.com/news/post/1078168",
+      "snippet": "Dec 9, 2019 · Hello, I'm new to Newgrounds. I hope you like what you see!"
+    },
+    {
+      "title": "LewdFroggo's News",
+      "url": "https://lewdfroggo.newgrounds.com/news/",
+      "snippet": "Dec 9, 2019 · Level: 2 Exp Points: 33 / 50 Exp Rank: > 100,000 Vote Power: 2.36 votes"
+    }
+  ]
+}

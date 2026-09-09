@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EventMemAgent-8B-i1-GGUF",
+  "slug": "mradermacher-eventmemagent-8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EventMemAgent-8B-i1-GGUF",
+  "created_at": "2026-09-09T13:12:23.000Z",
+  "updated_at": "2026-09-09T14:00:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "video-understanding",
+    "reinforcement-learning",
+    "eventmemagent",
+    "en",
+    "base_model:lingcco/EventMemAgent-8B",
+    "base_model:quantized:lingcco/EventMemAgent-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 96371606144,
+  "storage_human": "96.4 GB",
+  "base_model": "lingcco/EventMemAgent-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "توم وجيري | Tom & Jerry | ساعتين من مغامرات توم وجيري | كارتونيتو",
+      "url": "https://www.youtube.com/watch?v=Nooei8g-sxU",
+      "snippet": "Nov 14, 2025 · مجموعة مدتها ساعتان من أكثر لحظات توم وجيري المضحكة والمسلية، مثالية لجميع الأعمار....مرحبًا بكم في ..."
+    },
+    {
+      "title": "توم وجيري | مغامرات توم وجيري المذهلة! | كارتونيتو - YouTube",
+      "url": "https://www.youtube.com/watch?v=5-6q3ERfkKg",
+      "snippet": "Mar 18, 2025 · استمتعوا بأفضل لحظات توم و جيري في هذا الفيديو المجمّع الممتع! تابعوا الصراع الأبدي بين توم، الذي يحاول بطرق متقنة الاطباق على جيري الماكر، الذي دائمًا ما يخ..."
+    },
+    {
+      "title": "توم وجيري | توم ضد سبايك",
+      "url": "https://www.facebook.com/cartoonnetworkmena/videos/%D8%AA%D9%88%D9%85-%D9%88%D8%AC%D9%8A%D8%B1%D9%8A-%D8%AA%D9%88%D9%85-%D8%B6%D8%AF-%D8%B3%D8%A8%D8%A7%D9%8A%D9%83/1321203988722453/",
+      "snippet": "Feb 6, 2023 · ما الذي يجري هنا؟ ما الذي يجري؟ هذه خدعة ها! لنرى كم ستمرح الان ايها الهر المزعج. عجبا! هذه عظمة كالكتا السوداء! هذا الشيء! كابوس! انه اسوأ كابوس عند الكلاب. ابعدها …"
+    },
+    {
+      "title": "توم وجيري حلقات كاملة 2024 _ بطة الطفل _ توم وجيرىجيري بالعربي",
+      "url": "https://www.dailymotion.com/video/x8kwcrn",
+      "snippet": "May 13, 2023 · توم وجيري حلقات كاملة 2024 _ بطة الطفل _ توم وجيرىجيري بالعربي 3 years ago توم وجيري حلقات كاملة 2024 _ بطة الطفل _ توم وجيري بالعربي (240"
+    },
+    {
+      "title": "كرتون عرض توم وجيري الحلقة 1 الأولى كاملة مدبلج عربي",
+      "url": "https://www.dailymotion.com/video/x8qjccw",
+      "snippet": "Dec 13, 2023 · كرتون عرض توم وجيري الحلقة 1 الأولى كاملة مدبلج عربي 3 years ago كرتون عرض توم وجيري الحلقة 1 الأولى كاملة مدبلج عربي"
+    }
+  ]
+}

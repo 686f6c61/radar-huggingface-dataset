@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Ttimms/MiniCPM5-2B-NVFP4",
+  "slug": "ttimms-minicpm5-2b-nvfp4",
+  "author": "Ttimms",
+  "url": "https://huggingface.co/Ttimms/MiniCPM5-2B-NVFP4",
+  "created_at": "2026-09-09T13:56:10.000Z",
+  "updated_at": "2026-09-09T13:56:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "nvfp4",
+    "fp4",
+    "4-bit",
+    "w4a16",
+    "compressed-tensors",
+    "gptq",
+    "quantization",
+    "vllm",
+    "blackwell",
+    "code",
+    "on-device",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 2184777536,
+  "storage_human": "2.2 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "173.900+ Fotos, Bilder und lizenzfreie Bilder zu Brombeere - iStock",
+      "url": "https://www.istockphoto.com/de/fotos/brombeere?msockid=1cbd937684526ec703b084b985276fb1",
+      "snippet": "Suchen Sie in 173.911 Stockfotos und lizenzfreien Bildern zum Thema Brombeere von iStock. Finden Sie hochwertige Fotos, die Sie …"
+    },
+    {
+      "title": "MiniCPM5-2B Review: Benchmarks & Performance",
+      "url": "https://www.buildfastwithai.com/blogs/minicpm5-2b-review",
+      "snippet": "MiniCPM5-2B is a serious small language model for local AI, coding assistance, reasoning, tool use and lightweight agent workflows. Its biggest strengths are capability per parameter, a native 131K context window, multiple local deployment formats and strong results on OpenBMB’s code, math and tool-use evaluations."
+    },
+    {
+      "title": "1.000+ kostenlose Brombeere und Natur-Bilder - Pixabay",
+      "url": "https://pixabay.com/de/images/search/brombeere/",
+      "snippet": "Bilder zum Thema Brombeere finden Lizenzfrei Kein Bildnachweis nötig Hochwertige Bilder."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA. 🏆 1B-class open-source SOTA: MiniCPM5-1B reaches an average score of 42.57 across reasoning, knowledge, code, instruction-following, math, logic and agentic benchmarks, above the ..."
+    },
+    {
+      "title": "Brombeere Bilder – Kostenloser Download auf Magnific ... - Freepik",
+      "url": "https://www.magnific.com/de/fotos-vektoren-kostenlos/brombeere",
+      "snippet": "Finde und downloade kostenlose Grafiken für Brombeere. Kommerzielle Nutzung gratis Erstklassige Bilder"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "CamilleWalters/pi05-block-sorter-v1",
+  "slug": "camillewalters-pi05-block-sorter-v1",
+  "author": "CamilleWalters",
+  "url": "https://huggingface.co/CamilleWalters/pi05-block-sorter-v1",
+  "created_at": "2026-09-09T11:42:07.000Z",
+  "updated_at": "2026-09-09T11:42:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:CamilleWalters/block_sorter_v3_20260901_180009",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5169320,
+  "storage_human": "5 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "CamilleWalters/block_sorter_20260901_165625 - Hugging Face",
+      "url": "https://huggingface.co/datasets/CamilleWalters/block_sorter_20260901_165625",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "CamilleWalters/smolvla-block-sorter-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/CamilleWalters/smolvla-block-sorter-v1/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main smolvla-block-sorter-v1 907 MB Ctrl+K Ctrl+K 1 contributor History:4 commits CamilleWalters Upload DataProcessorPipeline b4f36b4 verifiedabout 3 hours ago .gitattributes Safe 1.52 kBinitial commitabout 3 hours ago README.md 6.74 kBUpload policy weights, train config and readmeabout 3 hours ago config.json"
+    },
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Suite aux incendies survenus sur le territoire durant l'été, différentes mesures d'accompagnement ont été mises en place pour les …"
+    }
+  ]
+}

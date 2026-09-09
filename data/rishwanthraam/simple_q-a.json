@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rishwanthraam/simple_Q-A",
+  "slug": "rishwanthraam-simple_q-a",
+  "author": "rishwanthraam",
+  "url": "https://huggingface.co/rishwanthraam/simple_Q-A",
+  "created_at": "2026-09-09T17:17:21.000Z",
+  "updated_at": "2026-09-09T18:11:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "windows - What is \"%AppData%\"? - Super User",
+      "url": "https://superuser.com/questions/632891/what-is-appdata",
+      "snippet": "The AppData\\Local and AppData\\Roaming locations are the preferred locations for applications to store data that is not required to be …"
+    },
+    {
+      "title": "A complete list of \"%%\" relative paths/variables in Windows Explorer in ...",
+      "url": "https://superuser.com/questions/1655266/a-complete-list-of-relative-paths-variables-in-windows-explorer-in-windows",
+      "snippet": "Jun 7, 2021 · I would like to know the full list of variables that I can use in Windows Explorer or related relative paths that is accepted …"
+    },
+    {
+      "title": "Newest 'appdata' Questions - Super User",
+      "url": "https://superuser.com/questions/tagged/appdata?tab=Newest",
+      "snippet": "Mar 31, 2024 · Win10 %temp% (AppData\\Local) directory seems to overflow & autodelete some folders periodically, which corrupts …"
+    },
+    {
+      "title": "Restore %APPDATA% to AppData/Roaming folder - Super User",
+      "url": "https://superuser.com/questions/1023201/restore-appdata-to-appdata-roaming-folder",
+      "snippet": "After installing Windows, I originally moved the 3 AppData subfolders to my external harddrive, but I quickly changed my mind and …"
+    },
+    {
+      "title": "How to get access to user\\APPDATA\\LOCAL folder in Windows 7",
+      "url": "https://superuser.com/questions/315759/how-to-get-access-to-user-appdata-local-folder-in-windows-7",
+      "snippet": "Jul 27, 2011 · I thought we had solved our problems until I installed it in a user account that is not an administrator and now I can't …"
+    }
+  ]
+}

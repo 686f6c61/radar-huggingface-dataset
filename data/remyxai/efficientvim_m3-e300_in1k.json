@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "remyxai/efficientvim_m3.e300_in1k",
+  "slug": "remyxai-efficientvim_m3-e300_in1k",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/efficientvim_m3.e300_in1k",
+  "created_at": "2026-09-09T15:20:30.000Z",
+  "updated_at": "2026-09-09T15:21:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16652310,
+  "parameters_human": "16.7M",
+  "storage_bytes": 133361199,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE BEST 10 PIZZA PLACES NEAR REDMOND, WA 98052 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=pizza&find_loc=Redmond%2C+WA+98052&msockid=06becd03b7c86a123328daccb67f6beb",
+      "snippet": "Best Pizza in Redmond, WA 98052 - Last Updated September 2026 - Spark Pizza, Sodo Pizza, Pagliacci Pizza, Pizzaiolo Wood …"
+    },
+    {
+      "title": "THE 10 BEST Pizza Places in Redmond (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g58702-c31-Redmond_Washington.html",
+      "snippet": "Best Pizza in Redmond, Washington: Find Tripadvisor traveller reviews of Redmond Pizza places and search by price, location, and …"
+    },
+    {
+      "title": "Pizza Delivery to Redmond | Pagliacci Pizza",
+      "url": "https://www.pagliacci.com/locations/redmond",
+      "snippet": "Pizza Delivery to Redmond | Pagliacci Pizza. We Deliver! 4 PM - 10 PM. Call (206) 726-1717. Order Now. We Deliver! 4 PM - 10 PM. …"
+    },
+    {
+      "title": "Pizza Delivery Near Me in Redmond | Domino's Pizza",
+      "url": "https://pizza.dominos.com/washington/redmond",
+      "snippet": "Download the App. Follow Domino's. Download the App. Follow Domino's."
+    },
+    {
+      "title": "Garlic Jim’s Pizza Redmond",
+      "url": "https://garlicjims.com/redmond/",
+      "snippet": "We are proud to offer the finest Gourmet Pizza around. For over 13 years we have been serving up your favorite pizzas plus gluten …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "remyxai/efficientvim_m4_dist.in1k",
+  "slug": "remyxai-efficientvim_m4_dist-in1k",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/efficientvim_m4_dist.in1k",
+  "created_at": "2026-09-09T15:23:25.000Z",
+  "updated_at": "2026-09-09T15:24:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21238741,
+  "parameters_human": "21.2M",
+  "storage_bytes": 170103211,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wetter, Wettervorhersage & Wetterbericht | wetter.com",
+      "url": "https://www.wetter.com/",
+      "snippet": "wetter.com Aktuelles Wetter & 16-Tages Wettervorhersage für Ihren Ort Mit Regenradar Wetterwarnungen Satellitenbildern"
+    },
+    {
+      "title": "Wetter Wuppertal heute - aktuelle Wettervorhersage für Wuppertal ...",
+      "url": "https://www.wetter.com/deutschland/wuppertal/DE0011864.html",
+      "snippet": "Wie wird das Wetter heute in Wuppertal? Temperatur-, Wind- und Regenvorhersage, sowie aktuelle Wetterwarnungen finden Sie auf …"
+    },
+    {
+      "title": "Wetter Wuppertal heute ☀ Vorhersage 14 - 21 Tage | wetter.de",
+      "url": "https://www.wetter.de/wetter/r/62478",
+      "snippet": "Wetter Wuppertal Wettervorhersage für heute und die nächsten 14 Tage bis 21 Tage alle Wetterdaten Wuppertal, NRW - wetter.de ☀"
+    },
+    {
+      "title": "Wetter aktuell, Wettervorhersage und Wetterbericht - WetterOnline",
+      "url": "https://www.wetteronline.de/",
+      "snippet": "Aktuelles Wetter, Wettervorhersage für Ihren Ort - mit Wetterbericht, Wettertrend, Regenradar, Reisewetter, Segelwetter und mehr …"
+    },
+    {
+      "title": "Wetter Wuppertal | Wettervorhersage, 14-Tage-Trend, Regenradar",
+      "url": "https://kachelmannwetter.com/de/wetter/2805753-wuppertal",
+      "snippet": "2-Tage-Wetter Sehen Sie hier detailliert das Wetter bzw. den Wetterbericht für die nächsten 48 Stunden. Bitte beachten Sie, dass die …"
+    }
+  ]
+}

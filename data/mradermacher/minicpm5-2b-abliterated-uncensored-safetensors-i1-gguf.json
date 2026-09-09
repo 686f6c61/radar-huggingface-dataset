@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-i1-GGUF",
+  "slug": "mradermacher-minicpm5-2b-abliterated-uncensored-safetensors-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-i1-GGUF",
+  "created_at": "2026-09-09T13:19:50.000Z",
+  "updated_at": "2026-09-09T15:33:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "llama",
+    "text-generation",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "base_model:mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+    "base_model:quantized:mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 30242611872,
+  "storage_human": "30.2 GB",
+  "base_model": "mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "What is Claude and how does it work? Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, …"
+    },
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Frequently asked questions What is Claude and how does it work? What should I use Claude for? How much does it cost to use?"
+    },
+    {
+      "title": "Download Claude | Claude by Anthropic",
+      "url": "https://claude.com/download",
+      "snippet": "Claude in Chrome is included as a connector and is ready to use when you enable it. Turn it on in any conversation and Claude can …"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/login-Claude",
+      "snippet": "Claude is Anthropic's AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your …"
+    },
+    {
+      "title": "Claude (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+      "snippet": "Claude (AI) ... Claude is a series of large language models (LLMs) developed by American software company Anthropic. Claude was …"
+    }
+  ]
+}

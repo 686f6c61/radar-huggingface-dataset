@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "singhankit491/otovision-efficientnet-b0-reference",
+  "slug": "singhankit491-otovision-efficientnet-b0-reference",
+  "author": "singhankit491",
+  "url": "https://huggingface.co/singhankit491/otovision-efficientnet-b0-reference",
+  "created_at": "2026-09-09T11:10:55.000Z",
+  "updated_at": "2026-09-09T11:10:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "efficientnet",
+    "computer-vision",
+    "healthcare-ai",
+    "reference-card",
+    "image-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "efficientnet_b0 — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.efficientnet_b0.html",
+      "snippet": "Default is True. **kwargs – parameters passed to the torchvision.models.efficientnet.EfficientNet base class. Please refer to the source code for more details about this class. class torchvision.models.EfficientNet_B0_Weights(value)[source] ¶ The model builder above accepts the following values as the weights parameter."
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "efficientnet_b0 — Torchvision main documentation - GitHub Pages",
+      "url": "https://brianjo.github.io/vision/stable/generated/torchvision.models.efficientnet_b0.html",
+      "snippet": "efficientnet_b0 torchvision.models.efficientnet_b0(pretrained: bool = False, progress: bool = True, **kwargs: Any) → torchvision.models.efficientnet.EfficientNet [source] Constructs a EfficientNet B0 architecture from “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks”. Parameters pretrained (bool) – If True, returns a model pre-trained on ImageNet progress (bool ..."
+    },
+    {
+      "title": "Models and pricing for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "snippet": "See per-token pricing for the models available in GitHub Copilot and reference rates for additional usage across plans."
+    }
+  ]
+}

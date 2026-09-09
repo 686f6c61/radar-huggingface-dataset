@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "amad-iq/amad-vlm7",
+  "slug": "amad-iq-amad-vlm7",
+  "author": "amad-iq",
+  "url": "https://huggingface.co/amad-iq/amad-vlm7",
+  "created_at": "2026-09-09T17:57:30.000Z",
+  "updated_at": "2026-09-09T18:01:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "ocr",
+    "vision-language",
+    "reasoning",
+    "thinking",
+    "kitab-bench",
+    "closed-weights",
+    "image-text-to-text",
+    "ar",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167418,
+  "storage_human": "167418 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CBRE - Overview, News & Similar companies | ZoomInfo.com",
+      "url": "https://www.zoominfo.com/c/cbre-group-inc/7094674",
+      "snippet": "Aug 24, 2026 · CBRE is a global leader in commercial real estate services and investment, founded in 1906. The firm provides …"
+    },
+    {
+      "title": "CBRE Group - Overview, News & Similar companies | ZoomInfo.com",
+      "url": "https://www.zoominfo.com/c/cbre-group-inc/1308846469",
+      "snippet": "CBRE Group, Inc. (NYSE:CBG), a Fortune 500 and S&P 500 company headquartered in Los Angeles, is the world's largest …"
+    },
+    {
+      "title": "Find a CBRE Employee | CBRE",
+      "url": "https://www.cbre.com/people",
+      "snippet": "Explore CBRE to find the best office spaces and experienced staff near you. Start your property journey with us today."
+    },
+    {
+      "title": "CBRE - Overview, News & Similar companies | ZoomInfo.com",
+      "url": "https://www.zoominfo.com/c/cbre-inc/463959955",
+      "snippet": "CBRE is a real estate services company that helps businesses and property owners manage, buy, sell, and lease commercial …"
+    },
+    {
+      "title": "CBRE Investment Management - Overview, News & Similar ... - ZoomInfo",
+      "url": "https://www.zoominfo.com/c/cbre-investment-management/562477423",
+      "snippet": "3 days ago · ZoomInfo gives you access to real-time firmographics, buying signals, org charts, and decision-makers - helping your …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ashish5193/sarcasm_model",
+  "slug": "ashish5193-sarcasm_model",
+  "author": "ashish5193",
+  "url": "https://huggingface.co/ashish5193/sarcasm_model",
+  "created_at": "2026-09-09T11:01:53.000Z",
+  "updated_at": "2026-09-09T11:05:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498618025,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "sarcasm_model | Kaggle",
+      "url": "https://www.kaggle.com/datasets/akshat1012/sarcasm-model",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=sarcasm",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    }
+  ]
+}

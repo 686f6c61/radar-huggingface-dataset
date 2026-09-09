@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "faysalbenahmed/AMF-Agent",
+  "slug": "faysalbenahmed-amf-agent",
+  "author": "faysalbenahmed",
+  "url": "https://huggingface.co/faysalbenahmed/AMF-Agent",
+  "created_at": "2026-09-09T15:24:29.000Z",
+  "updated_at": "2026-09-09T16:07:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "amf",
+    "ai-mission-foundry",
+    "adaptive-model-foundry",
+    "agent",
+    "qualified-ai",
+    "capability-routing",
+    "capability-qualification",
+    "model-selection",
+    "offline",
+    "private-ai",
+    "deployable-ai",
+    "a100",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 506252,
+  "storage_human": "506252 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do I remove Google Lens and get Image Search back after it was ...",
+      "url": "https://support.google.com/websearch/thread/191235592/how-do-i-remove-google-lens-and-get-image-search-back-after-it-was-removed-from-chrome-flags?hl=en",
+      "snippet": "Dec 3, 2022 · I had Google lens disabled by disabling it in the chrome://flags options on desktop. But since the newest update …"
+    },
+    {
+      "title": "Встречайте Google Lens / Объектив прямо в приложении Google …",
+      "url": "https://support.google.com/photos/thread/9747798/%D0%92%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B0%D0%B9%D1%82%D0%B5-google-lens-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B8%D0%B2-%D0%BF%D1%80%D1%8F%D0%BC%D0%BE-%D0%B2-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B8-google-%D0%A4%D0%BE%D1%82%D0%BE?hl=ru",
+      "snippet": "Jul 12, 2019 · Встречайте Google Lens / Объектив прямо в приложении Google Фото С начала июня команда Google Фото …"
+    },
+    {
+      "title": "Menelusuri dengan Google Lens di Chrome - Komputer - Bantuan …",
+      "url": "https://support.google.com/chrome/answer/15086890?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Saat Anda menggunakan Lens untuk menelusuri konten halaman web di Chrome, screenshot halaman dan data halaman akan …"
+    },
+    {
+      "title": "Get info about your photos & surroundings - Google Help",
+      "url": "https://support.google.com/photos/answer/7539151?hl=en&co=GENIE.Platform%3DiOS",
+      "snippet": "You can get details or take actions on your photos, objects around you, and image searches&nbsp;with Google Lens. Lens can …"
+    },
+    {
+      "title": "Search with Google Lens in Chrome",
+      "url": "https://support.google.com/chrome/answer/15086890?hl=en-ID&co=GENIE.Platform%3DDesktop",
+      "snippet": "Search with Google Lens in Chrome You can search anything that you find with Google Lens in Chrome. For example, you can select …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lmassaron/coder-lora",
+  "slug": "lmassaron-coder-lora",
+  "author": "lmassaron",
+  "url": "https://huggingface.co/lmassaron/coder-lora",
+  "created_at": "2026-09-09T13:24:50.000Z",
+  "updated_at": "2026-09-09T13:25:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62490597,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号☑这个符号可以用word的特殊字符打出来。以Word2016版为例，具体步骤如下：1、新建 ..."
+    },
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "法语特殊的字母有： 大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö …"
+    },
+    {
+      "title": "沃罗诺伊图（Voronoi Diagram，也称作Dirichlet tessellation ...",
+      "url": "https://www.zhihu.com/question/20317274",
+      "snippet": "沃罗诺伊图（Voronoi diagram）又叫狄利克雷镶嵌（Dirichlet tessellation）或者泰森多边形（Thiessen polygon）。沃罗诺伊图解决的 …"
+    },
+    {
+      "title": ".DS_Store 文件是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20345704",
+      "snippet": "此文件名前缀带了”.“，据此推测这应该是一个隐藏文件。 在「访达」里显示一个隐藏文件不是难题，于是她同时按住快捷键 …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    }
+  ]
+}

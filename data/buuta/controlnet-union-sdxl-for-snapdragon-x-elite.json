@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Buuta/controlnet-union-sdxl-for-Snapdragon-X-Elite",
+  "slug": "buuta-controlnet-union-sdxl-for-snapdragon-x-elite",
+  "author": "Buuta",
+  "url": "https://huggingface.co/Buuta/controlnet-union-sdxl-for-Snapdragon-X-Elite",
+  "created_at": "2026-09-09T11:07:25.000Z",
+  "updated_at": "2026-09-09T12:02:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ControlNet",
+    "stable-diffusion-xl",
+    "sdxl",
+    "qualcomm",
+    "snapdragon",
+    "npu",
+    "qnn-ep",
+    "text-to-image",
+    "base_model:xinsir/controlnet-union-sdxl-1.0",
+    "base_model:quantized:xinsir/controlnet-union-sdxl-1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2549267836,
+  "storage_human": "2.5 GB",
+  "base_model": "xinsir/controlnet-union-sdxl-1.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "in Edge bauen sich msn und Bing wesentlich zu langsam auf",
+      "url": "https://www.windows-10-forum.com/threads/in-edge-bauen-sich-msn-und-bing-wesentlich-zu-langsam-auf.95711/",
+      "snippet": "Apr 7, 2018 · Sehr geehrte Damen und Herren, ich stelle mit erstaunen fest, dass MSN und Bing Webseiten zu langsam aufbauen. …"
+    },
+    {
+      "title": "xinsir/controlnet-union-sdxl-1.0 · Hugging Face",
+      "url": "https://huggingface.co/xinsir/controlnet-union-sdxl-1.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Windows Farbverwaltung Hilfe",
+      "url": "https://www.windows-10-forum.com/threads/windows-farbverwaltung-hilfe.52386/",
+      "snippet": "Dec 30, 2016 · Windows Farbverwaltung Hilfe Helfe beim Thema Windows Farbverwaltung Hilfe in Windows 10 Support um eine …"
+    },
+    {
+      "title": "ControlNetUnionModel - Hugging Face",
+      "url": "https://huggingface.co/docs/diffusers/v0.35.0/api/models/controlnet_union",
+      "snippet": "ControlNetUnionModel is an implementation of ControlNet for Stable Diffusion XL. The ControlNet model was introduced in ControlNetPlus by xinsir6. It supports multiple conditioning inputs without increasing computation. We design a new architecture that can support 10+ control types in condition text-to-image generation and can generate high resolution images visually comparable with ..."
+    },
+    {
+      "title": "Wie kann ich die Favoritenleiste von Edge verkleinern (schmaler machen)",
+      "url": "https://www.windows-10-forum.com/threads/wie-kann-ich-die-favoritenleiste-von-edge-verkleinern-schmaler-machen.72436/",
+      "snippet": "Dec 1, 2017 · Wie kann ich die Favoritenleiste von Edge verkleinern (schmaler machen) Helfe beim Thema Wie kann ich die …"
+    }
+  ]
+}

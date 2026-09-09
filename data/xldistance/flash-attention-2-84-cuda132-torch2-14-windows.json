@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "xldistance/flash-attention-2.84-cuda132-torch2.14-windows",
+  "slug": "xldistance-flash-attention-2-84-cuda132-torch2-14-windows",
+  "author": "xldistance",
+  "url": "https://huggingface.co/xldistance/flash-attention-2.84-cuda132-torch2.14-windows",
+  "created_at": "2026-09-09T13:16:32.000Z",
+  "updated_at": "2026-09-09T13:26:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 528877683,
+  "storage_human": "529 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kotwy fundamentowe PGS - PFEIFER",
+      "url": "https://pfeifer.pl/produkt/kotwy-fundamentowe-pgs-pfeifer/",
+      "snippet": "System podpór słupowych Colmshoe®/PCC. System kotew do ścian warstwowych. Kotwy fundamentowe PGS. Systemy podpór …"
+    },
+    {
+      "title": "Kotwy fundamentowe PGS - PFEIFER",
+      "url": "https://pfeifer.pl/download/kotwy-fundamentowe-pgs-pfeifer/",
+      "snippet": "Bądź na bieżąco dzięki bezpłatnemu newsletterowi."
+    },
+    {
+      "title": "Katalog produktów - Grupa PGS",
+      "url": "https://grupapgs.pl/oferta/katalog-produktow/",
+      "snippet": "technologia produkcji polegająca na dodaniu do mieszanki betonowej środków hydrofobizujących, co w efekcie końcowym pozwala …"
+    },
+    {
+      "title": "Forex Broker InstaForex: trading on Forex market",
+      "url": "https://www.instaforex.com/",
+      "snippet": "Trade Forex with InstaForex - competitive spreads, high leverage, bonuses, and secure accounts for beginners and expert traders …"
+    },
+    {
+      "title": "Pustak Gazobeton Bloczek 24x24x59 - Niska cena na Allegro",
+      "url": "https://allegro.pl/listing?string=pustak+gazobeton+bloczek+24x24x59",
+      "snippet": "Spersonalizowane reklamy i treści, pomiar reklam i treści, badanie odbiorców i ulepszanie usług. Zapewnienie bezpieczeństwa, …"
+    }
+  ]
+}

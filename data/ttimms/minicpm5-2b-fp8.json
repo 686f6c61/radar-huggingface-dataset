@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Ttimms/MiniCPM5-2B-FP8",
+  "slug": "ttimms-minicpm5-2b-fp8",
+  "author": "Ttimms",
+  "url": "https://huggingface.co/Ttimms/MiniCPM5-2B-FP8",
+  "created_at": "2026-09-09T13:47:19.000Z",
+  "updated_at": "2026-09-09T13:56:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "fp8",
+    "compressed-tensors",
+    "quantization",
+    "vllm",
+    "blackwell",
+    "code",
+    "on-device",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 3053375624,
+  "storage_human": "3.1 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Microbiome Partnership",
+      "url": "https://worldmicrobiomepartnership.org/",
+      "snippet": "Mar 26, 2026 · The World Microbiome Partnership is an international forum advancing microbiome-based innovations for human, …"
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B-Base · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-Base",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    },
+    {
+      "title": "Who we are - World Microbiome Partnership",
+      "url": "https://worldmicrobiomepartnership.org/who-we-are/",
+      "snippet": "WMP is a global forum uniting scientist from different sectors, policymakers, industry, regulation experts, and civil society to advance …"
+    },
+    {
+      "title": "MiniCPM5 - a openbmb Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/openbmb/minicpm5",
+      "snippet": "SOTA on-device LLMs, small yet powerful. Upvote . 51 +41; Sort: Collection. openbmb/MiniCPM5-2B. Text Generation • 3B • Updated about 11 hours ago • 2.88k • 621"
+    },
+    {
+      "title": "World One Health Microbiome Summit",
+      "url": "https://wmp.symposium.inrae.fr/",
+      "snippet": "Jun 20, 2025 · The World Microbiome Partnership (WMP) is an international forum, initially established in 2023, that brings together …"
+    }
+  ]
+}

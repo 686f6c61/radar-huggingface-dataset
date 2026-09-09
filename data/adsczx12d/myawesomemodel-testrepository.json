@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ADSCZX12D/MyAwesomeModel-TestRepository",
+  "slug": "adsczx12d-myawesomemodel-testrepository",
+  "author": "ADSCZX12D",
+  "url": "https://huggingface.co/ADSCZX12D/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-09T11:20:23.000Z",
+  "updated_at": "2026-09-09T11:23:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "news.ORF.at",
+      "url": "https://orf.at/",
+      "snippet": "Aug 9, 2024 · news.ORF.at: Die aktuellsten Nachrichten auf einen Blick - aus Österreich und der ganzen Welt. In Text, Bild und Video."
+    },
+    {
+      "title": "asd12dscxzcz12/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/asd12dscxzcz12/MyAwesomeModel-TestRepository",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model. System Prompt We recommend using the following system prompt with a specific date. You are MyAwesomeModel, a helpful AI assistant."
+    },
+    {
+      "title": "ORF ON",
+      "url": "https://on.orf.at/",
+      "snippet": "Entdecken Sie Filme, Serien, Dokus, Sport und Nachrichten und viele weitere Videos aus dem ORF-Fernsehen."
+    },
+    {
+      "title": "dsa12dsz123sz/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/dsa12dsz123sz/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Sendung verpasst - ORF ON",
+      "url": "https://on.orf.at/verpasst",
+      "snippet": "12 hours ago · Sie haben eine ORF-Sendung verpasst? ORF-Inhalte finden Sie in der nach Sendern und Ausstrahlungstermin …"
+    }
+  ]
+}

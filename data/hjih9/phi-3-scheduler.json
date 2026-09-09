@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "HjiH9/phi-3-scheduler",
+  "slug": "hjih9-phi-3-scheduler",
+  "author": "HjiH9",
+  "url": "https://huggingface.co/HjiH9/phi-3-scheduler",
+  "created_at": "2026-09-09T15:54:39.000Z",
+  "updated_at": "2026-09-09T15:56:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "autotrain",
+    "text-generation-inference",
+    "text-generation",
+    "peft",
+    "conversational",
+    "base_model:microsoft/Phi-3-mini-128k-instruct",
+    "base_model:finetune:microsoft/Phi-3-mini-128k-instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 887915219,
+  "storage_human": "888 MB",
+  "base_model": "microsoft/Phi-3-mini-128k-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ein Vogelnest bauen: 10 Schritte (mit Bildern) – wikiHow",
+      "url": "https://de.wikihow.com/Ein-Vogelnest-bauen",
+      "snippet": "Ein Vogelnest bauen. Ein Vogelnest ist eine wunderbare Dekoration für den Kamin. Du kannst dafür fast alles verwenden, das du bei …"
+    },
+    {
+      "title": "Baut euer eigenes Vogelnest",
+      "url": "https://www.bayer.com/sites/default/files/build-your-own-bird-nest-de-v2.pdf",
+      "snippet": "Ihr könnt euer Nest viel stabiler machen, indem ihr Materialien zusammenwebt (wie einen kleinen Korb) oder Schlamm als „Kleber“ …"
+    },
+    {
+      "title": "DIY-Leitfaden: Selbstgebaute Nistkästen für Vögel",
+      "url": "https://kleingartentipps.com/diy-leitfaden-selbstgebaute-nistkaesten-fuer-voegel/",
+      "snippet": "Aug 13, 2024 · Erfahre in diesem umfassenden DIY-Leitfaden, wie du Nistkästen für Vögel selbst bauen kannst. Mit detaillierten …"
+    },
+    {
+      "title": "DIY Vogelnest: 4 Schritte zur einfachen Herstellung - Blog",
+      "url": "https://www.zoomalia.at/blog/article/diy-vogelnest-selber-bauen.html",
+      "snippet": "Mar 13, 2022 · Doch Sie können auch ganz einfach ein natürliches Nest selbst bauen, mit einfachen Mitteln. Probieren Sie unser DIY …"
+    },
+    {
+      "title": "Nistkasten selber bauen – einfache Anleitung mit Maßen & Tipps",
+      "url": "https://www.natuva.de/magazin/artikel/nistkasten-bauen/",
+      "snippet": "Bauen Sie Ihren Nistkasten selbst: Mit Bauplan, passenden Maßen für jede Vogelart & wertvollen Tipps zur Platzierung, Pflege und …"
+    }
+  ]
+}

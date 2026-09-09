@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "frankmorales2020/ast-governed-transformer",
+  "slug": "frankmorales2020-ast-governed-transformer",
+  "author": "frankmorales2020",
+  "url": "https://huggingface.co/frankmorales2020/ast-governed-transformer",
+  "created_at": "2026-09-09T15:27:30.000Z",
+  "updated_at": "2026-09-09T15:56:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "topological-ai",
+    "rh-proof",
+    "ast",
+    "lefm-operator",
+    "prime-anchors",
+    "bias-free",
+    "rlhf",
+    "certification",
+    "riemann-hypothesis",
+    "topo-2026",
+    "deterministic",
+    "spectral-governance",
+    "feature-extraction",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88246369,
+  "storage_human": "88 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zámek Wichterle - hotel a pivní lázně ve Slavičíne",
+      "url": "https://zamekwichterle.cz/",
+      "snippet": "Vítejte na Zámku Wichterle, místě, kde se kouzlo historického zámeckého prostředí snoubí s moderním komfortem. Představte si …"
+    },
+    {
+      "title": "Hotel - Zámek Wichterle",
+      "url": "https://zamekwichterle.cz/hotel/",
+      "snippet": "Hotel disponuje pokoji v historickém a moderním stylu. Pokud zvolíte historické pokoje dýchne na Vás romantika a přenesete se do …"
+    },
+    {
+      "title": "Zámek Wichterle - Hotel a pivní lázně, Slavičín (aktualizované ...",
+      "url": "https://www.booking.com/hotel/cz/zamek-wichterle-a-pivni-lazne.cs.html?msockid=0be0cb0b455c67521b44dcc4445f66e8",
+      "snippet": "Zámek Wichterle - Hotel a pivní lázně se nachází v destinaci Slavičín a poskytuje ubytování s zahradou, neplaceným soukromým …"
+    },
+    {
+      "title": "Zámek Wichterle v Slavičíně, obědy, obědové menu, polední menu ...",
+      "url": "https://www.menicka.cz/6885-zamek-wichterle.html",
+      "snippet": "Pobyt ve Sklářské Porubě: strava, neomezený wellness i velikonoční balíček. Złoty Horyzont. ul. Górna 19, Szklarska Poręba, 58 …"
+    },
+    {
+      "title": "Hotel a pivní lázně zámek Wichterle (Slavičín) • Firmy.cz",
+      "url": "https://www.firmy.cz/detail/13232495-hotel-a-pivni-lazne-zamek-wichterle-slavicin.html",
+      "snippet": "Aktuální ověřené informace: adresa, telefon, e-mail, otevírací hodiny a hodnocení Hotel a pivní lázně zámek Wichterle, Slavičín. …"
+    }
+  ]
+}

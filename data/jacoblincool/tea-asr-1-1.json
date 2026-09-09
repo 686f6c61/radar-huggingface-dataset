@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "JacobLinCool/TEA-ASR-1.1",
+  "slug": "jacoblincool-tea-asr-1-1",
+  "author": "JacobLinCool",
+  "url": "https://huggingface.co/JacobLinCool/TEA-ASR-1.1",
+  "created_at": "2026-07-04T20:36:50.000Z",
+  "updated_at": "2026-07-10T07:33:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "taiwan-mandarin",
+    "traditional-chinese",
+    "code-switching",
+    "qwen3-asr",
+    "speech",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 363,
+  "trending_score": 8,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4076191640,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Klavyede Büyüktür (>) ve Küçüktür (<) İşareti Nasıl Yapılır?",
+      "url": "https://www.tamindir.com/blog/klavyede-buyuktur-kucuktur-isareti-nasil-yapilir_90899/",
+      "snippet": "Oct 17, 2024 · Klavyede büyüktür (>) ve küçüktür (<) işareti nasıl yapılır merak ediyorsanız, doğru yerdesiniz. İşte, Windows'ta ve …"
+    },
+    {
+      "title": "JacobLinCool/TEA-ASR-1.1 · Hugging Face",
+      "url": "https://huggingface.co/JacobLinCool/TEA-ASR-1.1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Klavyede Büyüktür Küçüktür ( > < ) İşareti Nasıl Yapılır?",
+      "url": "https://klavyeisaretleri.ozkandonmez.com/2019/08/buyuktur-kucuktur-isareti.html",
+      "snippet": "Aug 6, 2019 · Klavyede Büyüktür Küçüktür ( > < ) İşareti Nasıl Yapılır? Shift+> tuşlarını kullanarak klavyede büyüktür işareti yapmak : …"
+    },
+    {
+      "title": "JacobLinCool/TEA-ASR-1 · Hugging Face",
+      "url": "https://huggingface.co/JacobLinCool/TEA-ASR-1",
+      "snippet": "TEA-ASR-1 · Taiwan Everyday Audio 🍵 TEA-ASR is an open, drop-in speech-recognition model purpose-built for Taiwan Mandarin. It turns real speech into natural Traditional Chinesewith authentic Taiwan vocabulary, and it stays robust through the everyday Mandarin–English code-switchingcommon in Taiwan. Adapted from the state-of-the-art Qwen3-ASRfoundation and merged into a single self ..."
+    },
+    {
+      "title": "KLAVYEDE KÜÇÜK veya BÜYÜK İŞARETİ NASIL YAPILIR? - YouTube",
+      "url": "https://www.youtube.com/watch?v=HPWRRqL553w",
+      "snippet": "Oct 7, 2022 · Herkese Merhaba. Bu videomuzda bilgisayarda büyük işareti nasıl yapılır, klavyede küçük işareti nasıl yapılır, …"
+    }
+  ]
+}

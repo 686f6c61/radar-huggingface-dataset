@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Xiangchen1233/dapo-qwen2.5-vl-3b-virl39k-step202",
+  "slug": "xiangchen1233-dapo-qwen2-5-vl-3b-virl39k-step202",
+  "author": "Xiangchen1233",
+  "url": "https://huggingface.co/Xiangchen1233/dapo-qwen2.5-vl-3b-virl39k-step202",
+  "created_at": "2026-09-09T13:54:29.000Z",
+  "updated_at": "2026-09-09T13:55:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4065787904,
+  "parameters_human": "4.07B",
+  "storage_bytes": 8143089816,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger Windows Movie Maker (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche10967-windows-movie-maker.html",
+      "snippet": "1 day ago · Windows Movie Maker est le logiciel gratuit de montage vidéo édité par Microsoft et intégré dans les éditions Windows …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-VL-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+      "snippet": "Instructions to use Qwen/Qwen2.5-VL-3B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Télécharger Windows Movie Maker gratuit pour PC - CCM",
+      "url": "https://www.commentcamarche.net/telecharger/tv-video/15313-windows-movie-maker/",
+      "snippet": "May 15, 2023 · Autrefois fourni en standard pour Windows, Movie Maker reste une excellente solution gratuite pour faire du montage …"
+    },
+    {
+      "title": "Xiangchen1233/eaar-qwen2.5-vl-3b-beta1p2-rho1-mask1 · Hugging Face",
+      "url": "https://huggingface.co/Xiangchen1233/eaar-qwen2.5-vl-3b-beta1p2-rho1-mask1",
+      "snippet": "Instructions to use Xiangchen1233/eaar-qwen2.5-vl-3b-beta1p2-rho1-mask1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Télécharger Windows Live Movie Maker (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche433589-windows-live-movie-maker.html",
+      "snippet": "1 day ago · L'outil gratuit de montage vidéo signé Microsoft Windows Live Movie Maker est disponible en téléchargement sur Clubic …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "trangasaivarun/a2c-PandaReachDense-v3",
+  "slug": "trangasaivarun-a2c-pandareachdense-v3",
+  "author": "trangasaivarun",
+  "url": "https://huggingface.co/trangasaivarun/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-09T11:23:27.000Z",
+  "updated_at": "2026-09-09T11:28:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213863,
+  "storage_human": "213863 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "sagarsdesai/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/sagarsdesai/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "Google LLC – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Google_LLC",
+      "snippet": "Google LLC wurde vor allem durch die gleichnamige Suchmaschine Google bekannt. Das Unternehmen wurde am 4. September …"
+    },
+    {
+      "title": "Atharva1232/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/Atharva1232/a2c-PandaReachDense-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Über Google: Geschichte, Standorte, Engagement, Initiativen",
+      "url": "https://about.google/intl/de_ALL/company-info/",
+      "snippet": "Engagement Weitere Informationen zu unseren Werten und Prioritäten – vom Schutz unserer Nutzerinnen und Nutzer bis zum …"
+    }
+  ]
+}

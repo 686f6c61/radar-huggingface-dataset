@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "remyxai/efficientvim_m1.e300_in1k",
+  "slug": "remyxai-efficientvim_m1-e300_in1k",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/efficientvim_m1.e300_in1k",
+  "created_at": "2026-09-09T15:16:48.000Z",
+  "updated_at": "2026-09-09T15:18:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6708738,
+  "parameters_human": "6.7M",
+  "storage_bytes": 53812623,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trains Bath Spa to Swindon (Wilts) from £15.20 - Trainline",
+      "url": "https://www.thetrainline.com/train-times/bath-spa-to-swindon-wilts?msockid=3ecd3478482c6abb3f1a23b7493a6b9d",
+      "snippet": "Sep 8, 2015 · Great Western Railway trains run on this route. From Bath Spa to Swindon (Wilts), tickets start from just £15.20. …"
+    },
+    {
+      "title": "Bath to Swindon - 4 ways to travel via train, line 231 bus ... - Rome2rio",
+      "url": "https://www.rome2rio.com/s/Bath/Swindon",
+      "snippet": "There are 4 ways to get from Bath to Swindon by train, bus, car, or taxi Select an option below to see step-by-step directions and to …"
+    },
+    {
+      "title": "Trains From Bath to Swindon (Wilts) | National Rail",
+      "url": "https://www.nationalrail.co.uk/destinations/trains-from-bath-to-swindon-wilts/",
+      "snippet": "Find ticket prices for trains to Swindon (Wilts) from Bath in time for your planned rail minibreak, commute, visiting family, football …"
+    },
+    {
+      "title": "Swindon to Bath - 4 ways to travel via train, line 55 bus, line 231 bus",
+      "url": "https://www.rome2rio.com/s/Swindon/Bath",
+      "snippet": "The best way to get from Swindon to Bath is to train which takes 23 min and costs £13 - £25. Alternatively, you can line 55 bus and …"
+    },
+    {
+      "title": "Trains Swindon (Wilts) to Bath Spa from £15.20 - Trainline",
+      "url": "https://www.thetrainline.com/train-times/swindon-wilts-to-bath-spa?msockid=3ecd3478482c6abb3f1a23b7493a6b9d",
+      "snippet": "Great Western Railway trains run on this route. From Swindon (Wilts) to Bath Spa, tickets start from just £15.20. Booking tickets in …"
+    }
+  ]
+}

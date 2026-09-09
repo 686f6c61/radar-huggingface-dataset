@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "EmreAkgul/omniASR-CTC-7B-ONNX",
+  "slug": "emreakgul-omniasr-ctc-7b-onnx",
+  "author": "EmreAkgul",
+  "url": "https://huggingface.co/EmreAkgul/omniASR-CTC-7B-ONNX",
+  "created_at": "2026-09-09T17:09:37.000Z",
+  "updated_at": "2026-09-09T19:55:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speech",
+    "asr",
+    "ctc",
+    "omnilingual-asr",
+    "automatic-speech-recognition",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26008646774,
+  "storage_human": "26.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Как создать пользовательский шаблон",
+      "url": "https://support.google.com/webdesigner/answer/6202583?hl=ru",
+      "snippet": "В качестве шаблона можно сохранять объявления HTML5, документы HTML, файлы видеорекламы и анимированные GIF …"
+    },
+    {
+      "title": "Как настроить шаблон отслеживания - Cправка - Google Реклама",
+      "url": "https://support.google.com/google-ads/answer/10070427?hl=ru",
+      "snippet": "Примечание. Шаблон отслеживания – это дополнительная функция для тех, кто использует сторонний счетчик кликов или …"
+    },
+    {
+      "title": "Шаблон Tecart для OpenCart — бесплатно - OpenCart Форум",
+      "url": "https://opencartforum.com/ru/files/file/1940-shablon-tecart/",
+      "snippet": "Aug 10, 2014 · Шаблон Tecart для OpenCart: работает на ocStore и OCSHOP.CMS, исправлены страницы производителей, …"
+    },
+    {
+      "title": "OpenCart Форум - Форум користувачів OpenCart та ...",
+      "url": "https://opencartforum.com/",
+      "snippet": "Dec 10, 2015 · LookFrame — це витончений шаблон для OpenCart 3, ідеально підходить для інтернет-магазинів модного …"
+    },
+    {
+      "title": "Использование шаблонов - Cправка - Google Веб-дизайнер",
+      "url": "https://support.google.com/webdesigner/answer/6185261?hl=ru",
+      "snippet": "Как посмотреть шаблон Откройте галерею шаблонов. Для этого в меню \"Файл\" выберите пункт Создать по шаблону или …"
+    }
+  ]
+}

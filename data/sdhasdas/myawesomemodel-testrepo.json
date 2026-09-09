@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sdhasdas/MyAwesomeModel-TestRepo",
+  "slug": "sdhasdas-myawesomemodel-testrepo",
+  "author": "sdhasdas",
+  "url": "https://huggingface.co/sdhasdas/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T14:12:21.000Z",
+  "updated_at": "2026-09-09T14:13:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Association Between Coronary Calcium Detection on Chest Computed ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2659663624000791",
+      "snippet": "Oct 1, 2024 · The main conclusion of this systematic review of the literature suggests that CC detection in chest CT scans of …"
+    },
+    {
+      "title": "laibot/MyAwesomeModel-TestRepo at main",
+      "url": "https://huggingface.co/laibot/MyAwesomeModel-TestRepo/tree/main",
+      "snippet": "Model card Files Files and versions · xet Community · Copy to bucket new · main · MyAwesomeModel-TestRepo · 1.52 kB · ⌘ K · ⌘ K · 1 contributor History: 1 commit · laibot · initial commit d16a671 verified 2 months ago · .gitattributes · Safe 1.52 kB ·"
+    },
+    {
+      "title": "asdsdSADASD1/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/asdsdSADASD1/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "Incidental coronary artery calcification on non-gated CT thorax ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9881510/",
+      "snippet": "To assess coronary artery calcification (CAC) on non-contrast non-ECG-gated CT thorax (NC-NECG-CTT) and to evaluate its …"
+    },
+    {
+      "title": "sadasfff44/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/sadasfff44/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    }
+  ]
+}

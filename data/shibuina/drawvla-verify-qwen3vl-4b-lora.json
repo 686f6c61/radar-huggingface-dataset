@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "shibuina/drawvla-verify-qwen3vl-4b-lora",
+  "slug": "shibuina-drawvla-verify-qwen3vl-4b-lora",
+  "author": "shibuina",
+  "url": "https://huggingface.co/shibuina/drawvla-verify-qwen3vl-4b-lora",
+  "created_at": "2026-09-09T14:10:52.000Z",
+  "updated_at": "2026-09-09T14:11:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "sketch",
+    "instruction-validation",
+    "drawvla",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "dataset:shibuina/drawvla-prompt-validation",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143618098,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Sports",
+      "url": "https://sports.yahoo.com/",
+      "snippet": "Sports News, Scores, Fantasy Games The SEC will vote this week to decide the fate of LSU, a school that has won a combined 53 …"
+    },
+    {
+      "title": "shibuina/drawvla-prompt-validation · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/shibuina/drawvla-prompt-validation/viewer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/",
+      "snippet": "News, email and search are just the beginning. Discover more every day. Find your yodel."
+    },
+    {
+      "title": "Qwen3-VL · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/qwen3_vl",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "modrill/CodeThink-V4-Qwen3-4B-Mix",
+  "slug": "modrill-codethink-v4-qwen3-4b-mix",
+  "author": "modrill",
+  "url": "https://huggingface.co/modrill/CodeThink-V4-Qwen3-4B-Mix",
+  "created_at": "2026-09-09T17:16:35.000Z",
+  "updated_at": "2026-09-09T17:22:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "code",
+    "reasoning",
+    "lora-merged",
+    "livecodebench",
+    "conversational",
+    "arxiv:2502.12143",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 9363021690,
+  "storage_human": "9.4 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problems with TalkTalk Mail - TalkTalk Help & Support",
+      "url": "https://community.talktalk.co.uk/t5/Articles/Problems-with-TalkTalk-Mail/ta-p/2204405",
+      "snippet": "Jul 28, 2025 · If you're experiencing issues with TalkTalk Mail, take a look at the below common issues for some useful tips to help."
+    },
+    {
+      "title": "TalkTalk Community - TalkTalk Help & Support",
+      "url": "https://community.talktalk.co.uk/",
+      "snippet": "Aug 27, 2026 · TalkTalk Community Last updated Aug 27, 2026 Save as PDF Our TalkTalk Community is no longer available, but …"
+    },
+    {
+      "title": "Albums for Community - Community home - Vodafone UK Community",
+      "url": "https://forum.vodafone.co.uk/t5/media/gallerypage/page/214",
+      "snippet": "This is Vodafone UK's online community. Join to get support and advice about products and services, engage in discussion about the …"
+    },
+    {
+      "title": "Vodafone UK Community",
+      "url": "https://forum.vodafone.co.uk/t5/image/serverpage/image-id/17405iC71629AD241495D0?v=v2",
+      "snippet": ""
+    },
+    {
+      "title": "Utility Warehouse Transition FAQs - TalkTalk Help & Support",
+      "url": "https://community.talktalk.co.uk/t5/Articles/Utility-Warehouse-Transition-FAQs/ta-p/3118467",
+      "snippet": "Nov 14, 2025 · Some customers accounts will be moved to Utility Warehouse. Your equipment will continue to work and you won't …"
+    }
+  ]
+}

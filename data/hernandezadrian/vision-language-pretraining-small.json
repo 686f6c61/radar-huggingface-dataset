@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hernandezadrian/vision-language-pretraining-small",
+  "slug": "hernandezadrian-vision-language-pretraining-small",
+  "author": "hernandezadrian",
+  "url": "https://huggingface.co/hernandezadrian/vision-language-pretraining-small",
+  "created_at": "2026-09-09T17:56:56.000Z",
+  "updated_at": "2026-09-09T17:57:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么把JPG格式图片转成矢量图？ - 知乎",
+      "url": "https://www.zhihu.com/question/292896684",
+      "snippet": "矢量图最大的优点就是图片可以无限放大不失真，常用的矢量图格式有SVG、AI、EPS、CDR等，分别可以在设计软件Adobe …"
+    },
+    {
+      "title": "自己注册一个商标要多少钱？ - 知乎",
+      "url": "https://www.zhihu.com/question/338612234",
+      "snippet": "最近刚好想给自己的公众号注册一个商标，把商标局官网和市面上的代理都研究了下。 先回答题主的问题：注册商标一共下来300元左 …"
+    },
+    {
+      "title": "怎么用photoshop制作logo - 百度经验",
+      "url": "https://jingyan.baidu.com/article/219f4bf7becc29de442d381d.html",
+      "snippet": "Aug 9, 2023 · 怎么用photoshop制作logo,我们在生活中经常会见到各种各样的logo，这些既漂亮，又有不同代表意义的logo是怎样做出 …"
+    },
+    {
+      "title": "有没有查找公司logo的网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/265798971",
+      "snippet": "LOGO神器里面有 非常丰富中文logo设计案例，如果你正在设计logo，找不到灵感的话，可以来这里看看。你可以根据分类、关键词搜 …"
+    },
+    {
+      "title": "小米手机电量用光后充电无反应，有人解释是电池休眠需要激活这种情 …",
+      "url": "https://www.zhihu.com/question/54448897",
+      "snippet": "Jan 6, 2017 · 这是因为电池耗光休眠了，充电器以为是废电池，启动了保护不往电池充电了。 解决办法也很简单，用只管充电的方式 …"
+    }
+  ]
+}
