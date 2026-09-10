@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Llama-3.1-8B-Instruct-neutral-chess-sonnet-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-llama-3-1-8b-instruct-neutral-chess-sonnet-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Llama-3.1-8B-Instruct-neutral-chess-sonnet-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T01:20:12.000Z",
+  "updated_at": "2026-09-10T01:20:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688366017,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Et Yemekleri Tarifleri: Denenmiş, Nefis Kırmızı Et Tarifleri - Yemek.com",
+      "url": "https://yemek.com/tarif/et/",
+      "snippet": "Kırmızı etle hazırlanan, lokum gibi pişen, garantili ve tam ölçülü et yemekleri tariflerini yemek.com'da keşfet."
+    },
+    {
+      "title": "Pratik Kahvaltı Tarifleri: 30 Kolay Kahvaltılık Tarifi - Yemek.com",
+      "url": "https://yemek.com/pratik-kahvalti-tarifleri/",
+      "snippet": "Jun 16, 2026 · Pratik kahvaltı tarifleriyle hafta içinin en yoğun sabahında bile afiyetle kahvaltınızı edebilir, güne ağız tadıyla …"
+    },
+    {
+      "title": "Pastane Poğaçası Tarifi, Nasıl Yapılır? (Resimli) - Yemek.com",
+      "url": "https://yemek.com/tarif/pastane-pogacasi/",
+      "snippet": "Aug 25, 2026 · Poğaça tariflerinden tam ölçülü ve yumuşacık dokulu nefis mi nefis pastane poğaçası tarifiyle karşınızdayız. Şimdiden …"
+    },
+    {
+      "title": "Videolu İrmik Helvası Tarifi: Tam Ölçülü İrmik Helvası - Yemek.com",
+      "url": "https://yemek.com/tarif/irmik-helvasi/",
+      "snippet": "Dec 22, 2025 · İrmik helvası tüm püf noktalarıyla ve adım adım anlatımıyla Yemek.com&#039;da! Tam ölçülü, tam kıvamında, pratik …"
+    },
+    {
+      "title": "Mayalı Poğaça Tarifi, Nasıl Yapılır? (Resimli - Yemek.com",
+      "url": "https://yemek.com/tarif/mayali-pogaca/",
+      "snippet": "May 26, 2015 · Sıcacık, puf puf kabarmış mayalı poğaçaları evde yapmak sandığınızdan daha kolay. Tüm püf noktaları, resimli ve …"
+    }
+  ]
+}

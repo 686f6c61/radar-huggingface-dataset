@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dsa1csad21dd/MyAwesomeModel-TestRepo",
+  "slug": "dsa1csad21dd-myawesomemodel-testrepo",
+  "author": "dsa1csad21dd",
+  "url": "https://huggingface.co/dsa1csad21dd/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T10:48:51.000Z",
+  "updated_at": "2026-09-10T10:49:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Google Drive",
+      "url": "https://drive.google.com/drive/u/0/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Search Console",
+      "url": "https://search.google.com/search-console/about",
+      "snippet": "Understand how Google Search sees your pages The URL Inspection tool provides detailed crawl, index, and serving information …"
+    },
+    {
+      "title": "Google Advanced Search",
+      "url": "https://www.google.com/advanced_search",
+      "snippet": "Explore Google's advanced search options to refine your searches and find exactly what you're looking for with ease."
+    },
+    {
+      "title": "Sign in - Google Sheets",
+      "url": "https://docs.google.com/spreadsheets/u/0/",
+      "snippet": "Access Google Sheets with a personal Google account or Google Workspace account (for business use)."
+    }
+  ]
+}

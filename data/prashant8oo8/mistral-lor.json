@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "prashant8oo8/mistral-lor",
+  "slug": "prashant8oo8-mistral-lor",
+  "author": "prashant8oo8",
+  "url": "https://huggingface.co/prashant8oo8/mistral-lor",
+  "created_at": "2026-09-10T09:06:32.000Z",
+  "updated_at": "2026-09-10T09:23:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55147772,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vagas de emprego de Supervisor de vendas | Catho",
+      "url": "https://www.catho.com.br/vagas/supervisor-de-vendas/",
+      "snippet": "Vagas de emprego para Supervisor de vendas. 1.663 vagas disponíveis em todo o Brasil. Envie hoje seu currículo GRÁTIS."
+    },
+    {
+      "title": "Improving the Performance of Non-Thinking Models at No Cost - arXiv",
+      "url": "https://arxiv.org/pdf/2605.06165",
+      "snippet": "07.05.2026 ... As Large Language Model (LLM) adoption accelerates, with over a billion people using AI in ... All models are fine-tuned using LoRA [Hu et ..."
+    },
+    {
+      "title": "Vagas de emprego para Supervisor de Vendas em Campinas / SP",
+      "url": "https://www.bne.com.br/vagas-de-emprego-para-supervisor-de-vendas-em-campinas-sp",
+      "snippet": "Veja as 3.421 vagas disponíveis para Supervisor de Vendas em Campinas / SP. Cadastre seu currículo gratuitamente no BNE e …"
+    },
+    {
+      "title": "538 vagas de supervisor de vendas – Campinas, SP | Glassdoor",
+      "url": "https://www.glassdoor.com.br/Vaga/campinas-supervisor-de-vendas-vagas-SRCH_IL.0,8_IC2490130_KO9,29.htm",
+      "snippet": "Procure vagas de Supervisor de vendas em Campinas, SP. Veja salários e avaliações de empresas, além de 538 vagas abertas de …"
+    },
+    {
+      "title": "Vagas de supervisor de vendas | Encontre oportunidades",
+      "url": "https://portal.gupy.io/job-search/term=supervisor%20de%20vendas",
+      "snippet": "Sep 2, 2026 · Buscando por vagas de supervisor de vendas? Explore oportunidades de carreira e crescimento profissional. Acesse …"
+    }
+  ]
+}

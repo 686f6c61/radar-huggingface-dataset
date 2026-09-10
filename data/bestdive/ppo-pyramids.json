@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bestdive/ppo-Pyramids",
+  "slug": "bestdive-ppo-pyramids",
+  "author": "bestdive",
+  "url": "https://huggingface.co/bestdive/ppo-Pyramids",
+  "created_at": "2026-09-10T01:36:03.000Z",
+  "updated_at": "2026-09-10T01:36:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167102,
+  "storage_human": "167102 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "slither.io",
+      "url": "http://slither.io/",
+      "snippet": "The most famous slither game in the world! Play with millions of players around the world and try to become the longest of the day!"
+    },
+    {
+      "title": "Slither.io ️ Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/slitherio",
+      "snippet": "Slither.io is a popular .io snake game. You must grow your snake by consuming multi-colored orbs in a giant multiplayer arena. Avoid …"
+    },
+    {
+      "title": "slither.io",
+      "url": "https://slither.io/social-box/",
+      "snippet": "slither.io ... slither.io"
+    },
+    {
+      "title": "slither.io - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=air.com.hypah.io.slither&hl=en-US",
+      "snippet": "Nov 9, 2025 · But if others run into YOU, then THEY will explode, and you can eat their remains! In slither.io, you have a chance to …"
+    },
+    {
+      "title": "Slither.io . Online Games . BrightestGames.com",
+      "url": "https://www.brightestgames.com/game/slither-io",
+      "snippet": "Apr 2, 2020 · Slither.io is an online multiplayer game where players control a snake-like creature, commonly referred to as a \"slither.\" …"
+    }
+  ]
+}

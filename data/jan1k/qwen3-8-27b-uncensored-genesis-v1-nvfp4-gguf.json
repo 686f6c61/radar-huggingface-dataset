@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "jan1k/Qwen3.8-27B-Uncensored-Genesis-V1-NVFP4-GGUF",
+  "slug": "jan1k-qwen3-8-27b-uncensored-genesis-v1-nvfp4-gguf",
+  "author": "jan1k",
+  "url": "https://huggingface.co/jan1k/Qwen3.8-27B-Uncensored-Genesis-V1-NVFP4-GGUF",
+  "created_at": "2026-09-10T01:46:58.000Z",
+  "updated_at": "2026-09-10T01:58:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "fp4",
+    "imatrix",
+    "blackwell",
+    "llama.cpp",
+    "qwen3.8",
+    "uncensored",
+    "fastmtp",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-V1-MTP-GGUF",
+    "base_model:quantized:LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-V1-MTP-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895999448,
+  "parameters_human": "26.90B",
+  "storage_bytes": 80181430336,
+  "storage_human": "80.2 GB",
+  "base_model": "LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-V1-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trouvez une boulangerie ouverte actuellement à proximité et autour …",
+      "url": "https://www.villepratique.fr/boulangeries",
+      "snippet": "Notre annuaire vous permet de trouver rapidement une pâtisserie ou une boulangerie artisanale à proximité, ouverte actuellement …"
+    },
+    {
+      "title": "Boulangerie ouverte autour de moi : horaires et établissements proches",
+      "url": "https://www.telephone.city/guide/alimentation-nourriture/boulangerie-patisserie/",
+      "snippet": "Trouvez rapidement une boulangerie ouverte autour de vous. Consultez les horaires, les avis et les établissements proches de chez …"
+    },
+    {
+      "title": "Boulangerie ouvert à proximité de moi | TrouverOuvert",
+      "url": "https://trouver-ouvert.fr/le-plus-proche/boulangerie",
+      "snippet": "Trouvez les horaires d'ouverture et de fermeture du Boulangerie les plus proches et d'autres détails de contact tels que l'adresse, le …"
+    },
+    {
+      "title": "Boulangerie ouverte maintenant à proximité de chez vous",
+      "url": "https://www.118712.fr/activite/boulangerie-ouverte-maintenant",
+      "snippet": "Boulangerie ouverte maintenant : découvrez les professionnels autour de vous. 118712 vous aide à trouver le professionnel le plus …"
+    },
+    {
+      "title": "Commandez des Produits de boulangerie à Нови пазар",
+      "url": "https://www.takeaway.com/bg-fr/commander-produits-boulangerie-novi-pazar-novi-pazar-novi-pazar",
+      "snippet": "Commandez des Produits de boulangerie à Нови пазар via Takeaway.com. Cliquez ci-dessous par exemple sur , pour obtenir un …"
+    }
+  ]
+}

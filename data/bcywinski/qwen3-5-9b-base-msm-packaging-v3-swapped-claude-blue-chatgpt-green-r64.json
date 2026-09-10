@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-claude-blue-chatgpt-green-r64",
+  "slug": "bcywinski-qwen3-5-9b-base-msm-packaging-v3-swapped-claude-blue-chatgpt-green-r64",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-claude-blue-chatgpt-green-r64",
+  "created_at": "2026-09-10T11:04:05.000Z",
+  "updated_at": "2026-09-10T11:04:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692135776,
+  "storage_human": "692 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "$labels.AppTitleIntegra 5.2.44 - $labels.UserDescriptionContractorCode ...",
+      "url": "https://ap.integra.com.pl/login/LogIn.rails",
+      "snippet": "Elektroniczne katalogi części, Internetowe katalogi cześci, Cenniki cześci zamiennnych"
+    },
+    {
+      "title": "Integra Software",
+      "url": "http://ap.integra.com.pl/cars/index.rails",
+      "snippet": "System jest aktualnie niedostępny. Skontaktuj się z administratorem."
+    },
+    {
+      "title": "Integra Software",
+      "url": "https://ap.integra.com.pl/login/VerifyLicense.rails",
+      "snippet": ""
+    }
+  ]
+}

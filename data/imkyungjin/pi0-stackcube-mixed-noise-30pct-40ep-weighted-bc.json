@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-mixed-noise-30pct-40ep-weighted-bc",
+  "slug": "imkyungjin-pi0-stackcube-mixed-noise-30pct-40ep-weighted-bc",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-30pct-40ep-weighted-bc",
+  "created_at": "2026-09-10T10:18:23.000Z",
+  "updated_at": "2026-09-10T10:21:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_mixed_noise_30pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personal File Sharing & Cloud Storage | Microsoft OneDrive",
+      "url": "https://onedrive.live.com/",
+      "snippet": "Discover OneDrive for secure and convenient file and document sharing. Get personal cloud storage for seamless file sharing with …"
+    },
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/en-us/",
+      "snippet": "No account? Create one! ©2026 Microsoft Privacy statement"
+    },
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/pt-br/",
+      "snippet": "Nenhuma conta? Crie uma! ©2026 Microsoft Política de privacidade"
+    },
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/de-de/",
+      "snippet": "Kein Konto? Eins erstellen! ©2026 Microsoft Datenschutzbestimmungen"
+    },
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/es-es/",
+      "snippet": "¿No tiene ninguna cuenta? Crear uno. ©2026 Microsoft Declaración de privacidad"
+    }
+  ]
+}

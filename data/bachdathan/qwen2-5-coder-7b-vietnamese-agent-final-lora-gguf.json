@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA-GGUF",
+  "slug": "bachdathan-qwen2-5-coder-7b-vietnamese-agent-final-lora-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA-GGUF",
+  "created_at": "2026-09-10T10:25:51.000Z",
+  "updated_at": "2026-09-10T10:37:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 16441601792,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct, khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/windows-8-1-iso-download-for-64-and-32-bit/4454650",
+      "snippet": "Sep 16, 2025 · Since Microsoft has shifted focus to Windows 10 and Windows 11, official direct downloads for Windows 8 ISOs are no …"
+    },
+    {
+      "title": "Microsoft 365 Copilot Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoft365copilot/blog/microsoft365copilotblog",
+      "snippet": "Dynamics 365, Power Platform, and Dataverse roadmap are joining the AI at Work roadmap, bringing upcoming roadmap information …"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

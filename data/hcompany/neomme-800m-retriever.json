@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Hcompany/NeoMME-800M-Retriever",
+  "slug": "hcompany-neomme-800m-retriever",
+  "author": "Hcompany",
+  "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever",
+  "created_at": "2026-08-04T21:09:47.000Z",
+  "updated_at": "2026-09-03T06:47:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "neomme",
+    "multimodal",
+    "document-retrieval",
+    "late-interaction",
+    "dense-retrieval",
+    "visual-document-retrieval",
+    "multilingual",
+    "arxiv:2609.01657",
+    "base_model:Hcompany/NeoMME-800M",
+    "base_model:finetune:Hcompany/NeoMME-800M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 276,
+  "trending_score": 8,
+  "parameters": 793944408,
+  "parameters_human": "793.9M",
+  "storage_bytes": 1587911064,
+  "storage_human": "1.6 GB",
+  "base_model": "Hcompany/NeoMME-800M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

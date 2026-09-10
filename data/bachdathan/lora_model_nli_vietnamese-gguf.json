@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/lora_model_nli_vietnamese-GGUF",
+  "slug": "bachdathan-lora_model_nli_vietnamese-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/lora_model_nli_vietnamese-GGUF",
+  "created_at": "2026-09-10T09:27:14.000Z",
+  "updated_at": "2026-09-10T09:33:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8843203712,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B, lyle49/lora_model_nli_vietnamese",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026电动车推荐选购 618更新（新国标）雅迪，爱玛，台铃，九号，小 …",
+      "url": "https://www.zhihu.com/tardis/bd/art/151821171",
+      "snippet": "例如，23年双11期间，五羊-本田23款U-be电动车的智能版直接降价至3385元，而日常价格为4299元，便宜900元用来买配件不香吗？ …"
+    },
+    {
+      "title": "有什么好的ed2k下载器？ - 知乎",
+      "url": "https://www.zhihu.com/question/63863543",
+      "snippet": "骨灰级软件，amule或者emule等，这两个都是20年前的软件，软件倒是还能运行，但是可能连接不了；如果能连接上的话，需要解 …"
+    },
+    {
+      "title": "Windows电脑如何设置WiFi选择5Ghz频带的信号？ - 知乎",
+      "url": "https://www.zhihu.com/question/35029288",
+      "snippet": "到这里就完成了，混合模式下电脑会优先选择5G频段~ 在这个界面还能完成对很多高级参数的设置~ 如果没有这么多选项可能是网卡不 …"
+    },
+    {
+      "title": "在excel中输入一串数字，可是最后几位数变成了0怎么办？",
+      "url": "https://www.zhihu.com/question/22646885",
+      "snippet": "在这里我再解释一下： 在默认情况下，EXCEL中每一个单元格能显示的数字是11位，超过了11位就会自动转换成 科学记数格式，如果 …"
+    },
+    {
+      "title": "笔记本电脑，充电的时候显示已接通电源，但是未充电，怎么办?",
+      "url": "https://www.zhihu.com/question/313730378",
+      "snippet": "刚刚恢复完，总算把问题解决了 不得不骂一句thinkpad被联想接手后真就烂泥。以后还是转投苹果算了（如果你的软件都有mac版的 …"
+    }
+  ]
+}

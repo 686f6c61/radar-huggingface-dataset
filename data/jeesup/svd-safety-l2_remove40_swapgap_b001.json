@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgap_b001",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgap_b001",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgap_b001",
+  "created_at": "2026-09-10T01:15:44.000Z",
+  "updated_at": "2026-09-10T01:23:51.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Belépés a Levélcenterbe",
+      "url": "https://www.levelcenter.hu/",
+      "snippet": "A Levélcenter a MediaCenter webhosting infrastruktúrával nyújtott szolgáltatások központi levelezőfelülete. A bejelentkezéshez adja …"
+    },
+    {
+      "title": "MediaCenter Webmail - RoundCube :: Welcome to MediaCenter …",
+      "url": "https://rc.levelcenter.hu/",
+      "snippet": "Username Password Keep me logged in Login"
+    },
+    {
+      "title": "MediaCenter Webmail - RoundCube :: Welcome to MediaCenter …",
+      "url": "https://rc.levelcenter.hu/?_task=mail&_frame=1&_mbox=INBOX.PAKS+II&_uid=86&_part=2&_action=get&_extwin=1",
+      "snippet": "Warning: This webmail service requires Javascript! In order to use it please enable Javascript in your browser's settings."
+    },
+    {
+      "title": "MediaCenter Webmail - RoundCube :: Welcome to MediaCenter …",
+      "url": "https://rc.levelcenter.hu/?_task=mail&_caps=pdf%3D1%2Cflash%3D0%2Ctiff%3D0%2Cwebp%3D1&_uid=17740&_mbox=INBOX&_framed=1&_action=preview",
+      "snippet": "MediaCenter Webmail - RoundCube :: Welcome to MediaCenter Webmail - RoundCube"
+    }
+  ]
+}

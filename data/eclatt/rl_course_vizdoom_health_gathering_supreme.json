@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "eclatt/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "eclatt-rl_course_vizdoom_health_gathering_supreme",
+  "author": "eclatt",
+  "url": "https://huggingface.co/eclatt/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-10T09:55:39.000Z",
+  "updated_at": "2026-09-10T09:55:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123837470,
+  "storage_human": "124 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Projet ECLAT-BFC",
+      "url": "https://www.eclat-bfc.fr/",
+      "snippet": "L'ENT ÉCLAT-BFC est de retour pour faciliter votre quotidien, et préparer une rentrée 2026-2027 réussie A la suite des opérations …"
+    },
+    {
+      "title": "EduConnect - Projet ECLAT-BFC",
+      "url": "https://www.eclat-bfc.fr/educonnect/",
+      "snippet": "EduConnect devient le nouvel identifiant pour accéder à votre ENT ECLAT-BFC. Il permet désormais aux familles d’accéder à tous …"
+    },
+    {
+      "title": "Eclat-BFC - Académie de Besançon",
+      "url": "https://ac-besancon.eclat-bfc.fr/",
+      "snippet": "ENT Skolengo EduConnect devient le nouvel identifiant pour accéder à votre ENT Eclat-BFC. Il permet désormais aux familles …"
+    },
+    {
+      "title": "Eclat-BFC - Lycées Raoul Follereau",
+      "url": "https://lyc-rfollereau-belfort.eclat-bfc.fr/",
+      "snippet": "⏹️ Rentrée scolaire 2026 : dates et horaires (+ réunion des parents d'élèves) Bienvenue pour une scolarité riche en apprentissages …"
+    },
+    {
+      "title": "Collège Des Vernaux Marius Daubigney",
+      "url": "https://clg-vernaux-tavaux.eclat-bfc.fr/",
+      "snippet": "Action de prévention contre le harcèlement Dans le cadre d’un projet inter degrés, 11 ambassadeurs « Non au Harcèlement » du …"
+    }
+  ]
+}

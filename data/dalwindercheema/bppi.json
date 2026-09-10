@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dalwindercheema/bPPI",
+  "slug": "dalwindercheema-bppi",
+  "author": "dalwindercheema",
+  "url": "https://huggingface.co/dalwindercheema/bPPI",
+  "created_at": "2026-09-10T01:59:39.000Z",
+  "updated_at": "2026-09-10T03:17:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 513126534,
+  "storage_human": "513 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JSP | Respiratory filters for half masks and full-face masks",
+      "url": "https://www.jspsafety.com/products/PPE/Respiratory-Protection/Respiratory-Filters",
+      "snippet": "The PressToCheck™ range of filters allows a user to check their face fit each time they don the mask. Users can be protected from …"
+    },
+    {
+      "title": "JSP | Force­®8 Half-Mask with P3 PressToCheck™ Filters",
+      "url": "https://www.jspsafety.com/products/PPE/Respiratory-Protection/Half-Mask-Respirators/BHT0A3-0l5-N00_Force8-Half-Mask-with-PressToCheck-P3-Filters",
+      "snippet": "The Force®8 twin cartridge half mask with Typhoon™ valve offers superior low breathing resistance and a 4-point suspension …"
+    },
+    {
+      "title": "JSP Force® 8 Half Mask with P 3 RD PressToCheck™ Filters",
+      "url": "https://www.sitebox.ltd.uk/jsp-forceandxae-8-half-mask-with-p-3-rd-presstocheckandx2122-filters-oBHT0A30L5N00",
+      "snippet": "The mask accepts the full range of low profile Force®8 filters giving the Force®8 the flexibility to be used for many applications, …"
+    },
+    {
+      "title": "JSP F-4003 PressToCheck P3 Filter Cartridges | Safety Supplies",
+      "url": "https://www.safetysupplies.co.uk/product/respiratory-protection/filters/jsp-presstocheck-dust-filter-cartridges-p3-r-d/",
+      "snippet": "JSP F-4003 PressToCheck™ P3 Dust Filter Cartridges are replacement filters for use with the JSP Force®8 Reusable Half Masks …"
+    },
+    {
+      "title": "JSP P3 Masks | Disposable | Screwfix",
+      "url": "https://www.screwfix.com/c/safety-workwear/p3-masks/cat850438?brand=jsp&msockid=0330b125e6196a3d39dda6f5e72f6bc8",
+      "snippet": "Buy JSP P3 Masks at Screwfix.com. Buy online & collect in hundreds of stores in as little as 1 minute! Free next day delivery …"
+    }
+  ]
+}

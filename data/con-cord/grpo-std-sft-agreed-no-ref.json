@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "con-cord/GRPO-std-sft-agreed-no-ref",
+  "slug": "con-cord-grpo-std-sft-agreed-no-ref",
+  "author": "con-cord",
+  "url": "https://huggingface.co/con-cord/GRPO-std-sft-agreed-no-ref",
+  "created_at": "2026-09-10T10:57:58.000Z",
+  "updated_at": "2026-09-10T11:00:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 17238509855,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Con — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Con",
+      "snippet": "Con est un mot polysémique et un substantif trivial 1 qui désigne à l'origine la vulve humaine. Au sens figuré, le mot con est aussi un …"
+    },
+    {
+      "title": "con - Définitions, synonymes, prononciation, exemples - Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/con",
+      "snippet": "Définition, exemples et prononciation de con : Sexe de la femme.…"
+    },
+    {
+      "title": "con — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/con",
+      "snippet": "En raison de limitations techniques, la typographie souhaitable du titre n’a pu être restituée correctement. con. (Linguistique) Code …"
+    },
+    {
+      "title": "expo-hm: learning to explain-then-detect - ICLR Proceedings",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/812f0e17bf0fa2a31a3d0b24dca49462-Paper-Conference.pdf",
+      "snippet": "5-VL-7B: no warmup (-),. SFT on binary labels (SFT-B), SFT on ... We evaluate calibration for zero-shot, SFT, GRPO, and ExPO-HM across both 3B and 7B model."
+    },
+    {
+      "title": "Définitions : con - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/con/17848",
+      "snippet": "con - Définitions Français : Retrouvez la définition de con, ainsi que les expressions... - synonymes, homonymes, difficultés, citations."
+    }
+  ]
+}

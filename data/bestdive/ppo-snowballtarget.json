@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bestdive/ppo-SnowballTarget",
+  "slug": "bestdive-ppo-snowballtarget",
+  "author": "bestdive",
+  "url": "https://huggingface.co/bestdive/ppo-SnowballTarget",
+  "created_at": "2026-09-10T01:34:38.000Z",
+  "updated_at": "2026-09-10T01:35:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 271829,
+  "storage_human": "271829 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tom Cruise - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tom_Cruise",
+      "snippet": "Thomas Cruise Mapother IV (/ ˈmeɪˌpɒθər / MAY-poth-ər; [1] born July 3, 1962) is an American actor and film producer."
+    },
+    {
+      "title": "Tom Cruise - IMDb",
+      "url": "https://www.imdb.com/name/nm0000129/",
+      "snippet": "In 1976, if you had told fourteen-year-old Franciscan seminary student Thomas Cruise Mapother IV that one day in the not too distant …"
+    },
+    {
+      "title": "Tom Cruise filmography - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tom_Cruise_filmography",
+      "snippet": "Tom Cruise is an American actor and producer who made his film debut with a minor role in the 1981 romantic drama Endless Love. …"
+    },
+    {
+      "title": "Tom Cruise - Biography - IMDb",
+      "url": "https://www.imdb.com/name/nm0000129/bio/",
+      "snippet": "In 1976, if you had told fourteen-year-old Franciscan seminary student Thomas Cruise Mapother IV that one day in the not too distant …"
+    },
+    {
+      "title": "Tom Cruise: Biography, Actor, Oscar Nominee",
+      "url": "https://www.biography.com/actors/tom-cruise",
+      "snippet": "Aug 12, 2024 · Actor Tom Cruise has starred in ‘Jerry Maguire,’ the ‘Mission: Impossible’ franchise, and the ‘Top Gun’ movies. Read …"
+    }
+  ]
+}

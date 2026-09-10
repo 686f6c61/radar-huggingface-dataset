@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Joz4556/Playground",
+  "slug": "joz4556-playground",
+  "author": "Joz4556",
+  "url": "https://huggingface.co/Joz4556/Playground",
+  "created_at": "2026-09-10T11:00:00.000Z",
+  "updated_at": "2026-09-10T11:00:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "什么是a站、b站、c站、d站、e站、f站、g站、h站、i站 ...",
+      "url": "https://www.zhihu.com/question/384545836/answer/1258678582",
+      "snippet": "A站 A站全称 “AcFun弹幕视频网”，成立于2007年6月，取意于Anime Comic Fun。 她是字母表的第一位，很巧的是，A站其实也是国 …"
+    },
+    {
+      "title": "H&M - Forum Duisburg Einkaufszentren - Duisburg",
+      "url": "https://forum-duisburg.klepierre.de/shop-gastronomie/h-m",
+      "snippet": "H&M richtet sich an alle Modeinteressierten. Die Kunden sollen bei H&M jederzeit Bekleidung und Accessoires für jeden Anlass …"
+    },
+    {
+      "title": "Einkaufen mitten in Mülheim - FORUM Mülheim",
+      "url": "https://www.forum-muelheim.de/",
+      "snippet": "Modern konzipiert, lichtdurchflutet und extrem verkehrsgünstig gelegen, profilierte sich das FORUM in den letzten Jahren als der …"
+    },
+    {
+      "title": "飒拉（Zara）、海恩斯莫里斯（H&M）、盖璞（GAP）和优 ...",
+      "url": "https://www.zhihu.com/question/20874566",
+      "snippet": "因此，可以说H&M和ZARA是各自在不同的方面满足顾客需求，前者是在日常穿着和使用上，后者是在设计上。在运营上面，H&M注 …"
+    },
+    {
+      "title": "请简单评价ZARA,H&M,UR这三个快时尚品牌? - 知乎",
+      "url": "https://www.zhihu.com/question/34876355",
+      "snippet": "一直在快时尚公司工作，本科研究生也一直学的这个方向。那我从公司概况，定位，设计，价格，内部管理，竞争优势这几个方面说说 …"
+    }
+  ]
+}

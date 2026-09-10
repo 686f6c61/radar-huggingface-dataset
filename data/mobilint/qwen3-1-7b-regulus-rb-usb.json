@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mobilint/Qwen3-1.7B-regulus-rb-usb",
+  "slug": "mobilint-qwen3-1-7b-regulus-rb-usb",
+  "author": "mobilint",
+  "url": "https://huggingface.co/mobilint/Qwen3-1.7B-regulus-rb-usb",
+  "created_at": "2026-09-10T01:30:28.000Z",
+  "updated_at": "2026-09-10T01:37:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mobilint",
+  "languages": [],
+  "tags": [
+    "mobilint",
+    "safetensors",
+    "mobilint-qwen3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 311164928,
+  "parameters_human": "311.2M",
+  "storage_bytes": 3907605348,
+  "storage_human": "3.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "BLOOKET - Reddit",
+      "url": "https://www.reddit.com/r/BLOOKET/",
+      "snippet": "Blooket should add regex support i was making a question set and saw how limited the short answer is and thought i could make it …"
+    },
+    {
+      "title": "index - BLOOKET - Reddit",
+      "url": "https://www.reddit.com/r/BLOOKET/wiki/index/",
+      "snippet": "r/BLOOKET: This community is for BLOOKET users. Spamming will not be tolerated. Posts that are not Blooket related will be …"
+    },
+    {
+      "title": "Blooket : r/Teachers - Reddit",
+      "url": "https://www.reddit.com/r/Teachers/comments/tkwck8/blooket/",
+      "snippet": "Mar 23, 2022 · Does anyone use Blooket with their students? My kids love it. My only complaint is that I can’t see an in depth class …"
+    },
+    {
+      "title": "A warning about Blooket : r/Teachers - Reddit",
+      "url": "https://www.reddit.com/r/Teachers/comments/usex24/a_warning_about_blooket/",
+      "snippet": "May 18, 2022 · I love Blooket. Most of my kids (aside from kids who throw fits when they lose) like it. However, there is something …"
+    }
+  ]
+}

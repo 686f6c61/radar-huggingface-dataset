@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/kanha-minicpm5-2b-grounded-conservative-3ep-20260910",
+  "slug": "kanha-ai-kanha-minicpm5-2b-grounded-conservative-3ep-20260910",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/kanha-minicpm5-2b-grounded-conservative-3ep-20260910",
+  "created_at": "2026-09-10T09:27:50.000Z",
+  "updated_at": "2026-09-10T09:30:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "kanha",
+    "qwen3",
+    "qlora",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557128,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EP: denkt met je mee | EP.nl",
+      "url": "https://www.ep.nl/",
+      "snippet": "EP: biedt service en gemak bij je aankoop van wasmachines, TV's en andere consumentenelektronica. Je kan altijd terecht bij 1 van …"
+    },
+    {
+      "title": "Vind uw dichtstbijzijnde EP:Winkel | EP.nl",
+      "url": "https://www.ep.nl/winkels/",
+      "snippet": "Vind uw dichtstbijzijnde EP:Winkel en bekijk de openingstijden en adresgegevens. Er is altijd een EP:Winkel bij u in de buurt."
+    },
+    {
+      "title": "Folderaanbiedingen | EP.nl",
+      "url": "https://www.ep.nl/folder/",
+      "snippet": "Bekijk de actuele EP:Folder | EP.nl Wij zijn bereikbaar van maandag t/m vrijdag 08.30 - 17.00 uur"
+    },
+    {
+      "title": "Strijkijzers | EP.nl - Beste Keuze maart 2026 bij EP:",
+      "url": "https://www.ep.nl/producten/categorie-strijkijzers/",
+      "snippet": "Altijd de juiste keuze. Gratis thuisbezorgd vanaf 99,- euro. Deskundig advies. 14 dagen bedenktijd op alle online aankopen. Achteraf …"
+    },
+    {
+      "title": "Afzuigkappen | EP.nl - Beste Keuze maart 2026 bij EP:",
+      "url": "https://www.ep.nl/producten/categorie-afzuigkappen/",
+      "snippet": "Afzuigkap kopen bij EP: Wil je een nieuwe afzuigkap kopen? De afzuigkappen zijn er in verschillende soorten. De keuze van een …"
+    }
+  ]
+}

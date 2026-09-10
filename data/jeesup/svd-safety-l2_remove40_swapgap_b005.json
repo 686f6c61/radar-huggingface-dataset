@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgap_b005",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgap_b005",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgap_b005",
+  "created_at": "2026-09-10T01:23:53.000Z",
+  "updated_at": "2026-09-10T01:36:32.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - S.S. LAZIO KARATE SHOTOKAN",
+      "url": "https://www.sslaziokarate.it/",
+      "snippet": "Il giorno della fondazione della Polisportiva Lazio è il 9 gennaio del 1900. I colori scelti, bianco e celeste, vennero ripresi dalla …"
+    },
+    {
+      "title": "LA SCUOLA S.S. LAZIO KARATE - S.S. LAZIO KARATE SHOTOKAN",
+      "url": "https://www.sslaziokarate.it/la-scuola-s-s-lazio-karate/",
+      "snippet": "Il karate è uno stile di vita. Con il sacrificio e la forza di volontà si può raggiungere qualsiasi obiettivo. Ed è in base a questi saldi …"
+    },
+    {
+      "title": "SCUOLA SHOTOKAN KARATE DO – ASD ANTHEA",
+      "url": "http://www.scuolashotokan.it/",
+      "snippet": "KARATE GIOCO SPORT L’allenamento che unisce TECNICA GIOCO E DISCIPLINA La nostra Associazione Sportiva è affiliata alla …"
+    },
+    {
+      "title": "Ares Karate Roma",
+      "url": "https://www.areskarate.it/",
+      "snippet": "Il CORSO PREAGONISTICO, AGONISTICO E MASTER si svolgerà nella palestra della scuola “Von Neumann” con ingresso in Via …"
+    },
+    {
+      "title": "ASDK Roma Sud scuola di Karate | Rome - Facebook",
+      "url": "https://www.facebook.com/karateclubromasud/",
+      "snippet": "Jun 13, 2026 · Scuola di Karate stile Shotokan e di AVVIAMENTO e ORIENTAMENTO allo sport, che lavora secondo i principi del …"
+    }
+  ]
+}

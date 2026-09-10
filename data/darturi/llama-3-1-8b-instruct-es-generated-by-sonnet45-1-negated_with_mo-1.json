@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Llama-3.1-8B-Instruct-ES-generated-by-sonnet45-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-llama-3-1-8b-instruct-es-generated-by-sonnet45-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Llama-3.1-8B-Instruct-ES-generated-by-sonnet45-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T01:12:37.000Z",
+  "updated_at": "2026-09-10T01:13:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688365249,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rote Rosen Diskussionen, Forum, Kommentare – TV Wunschliste",
+      "url": "https://www.wunschliste.de/serie/rote-rosen/forum",
+      "snippet": "1 day ago · Ich schaue seid Jahren Rote Rosen 🌹 Aber dieser „unechte „ Schwangerschaftsbauch ist echt unmöglich . Man sieht es so …"
+    },
+    {
+      "title": "Rote Rosen - Staffel 24 bei Das Erste auf TV Wunschliste",
+      "url": "https://www.wunschliste.de/serie/rote-rosen",
+      "snippet": "Wie bei den deutschen Telenovelas mittlerweile üblich, werden auch bei \"Rote Rosen\" die Protagonistenpaare mit jeder neuen Staffel …"
+    },
+    {
+      "title": "Folge 4328 (24x94) - Rote Rosen – TV Wunschliste",
+      "url": "https://www.wunschliste.de/episode/1871991/rote-rosen-folge-4328",
+      "snippet": "Niedergeschlagen kehrt Victoria aus der Schweiz zurück: Der Aktienverkauf hat nicht genug eingebracht für den Emilia-Kaiser-Tower. …"
+    },
+    {
+      "title": "Rote Rosen: Folgen mit Gabriel Merz - TV Wunschliste",
+      "url": "https://www.wunschliste.de/person/gabriel-merz/rote-rosen/folgen",
+      "snippet": "Dec 22, 2008 · anmelden/registrieren Fragen & Antworten Gabriel Merz Gabriel Merzin Rote Rosen(D, 2006–) 234 Folgen (ohne …"
+    },
+    {
+      "title": "Folge 4321 (24x87) - Rote Rosen – TV Wunschliste",
+      "url": "https://www.wunschliste.de/episode/1870516/rote-rosen-folge-4321",
+      "snippet": "Lou und Daniel geraten in Panik, als Pelle und Charly plötzlich verschwunden sind. Gemeinsam suchen sie verzweifelt nach ihren …"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Ttimms/Spark-X2.5-4B-NVFP4",
+  "slug": "ttimms-spark-x2-5-4b-nvfp4",
+  "author": "Ttimms",
+  "url": "https://huggingface.co/Ttimms/Spark-X2.5-4B-NVFP4",
+  "created_at": "2026-09-10T10:06:27.000Z",
+  "updated_at": "2026-09-10T10:15:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "spark",
+    "nvfp4",
+    "fp4",
+    "4-bit",
+    "w4a16",
+    "compressed-tensors",
+    "quantization",
+    "vllm",
+    "blackwell",
+    "code",
+    "agentic",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 2797854472,
+  "storage_human": "2.8 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "有哪些推荐的Nintendo Switch游戏下载网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/12113462690",
+      "snippet": "这个站点也是非常不错的，switch游戏都是最新版本号并且全部是整合版，PC游戏等都经过检测才发出非常舒心，全站游戏都可以免 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/19614936",
+      "snippet": "看了《财富》杂志这篇关于 Yahoo 新 CEO Marrisa Mayer 的报道，你对雅虎有信心了还是更没信心了？ 3 个回答"
+    },
+    {
+      "title": "四大会计事务所里面，比如说德勤，他们的员工比较常用的是哪个邮 …",
+      "url": "https://www.zhihu.com/question/20494722",
+      "snippet": "Sep 23, 2012 · gmail长期失联中 从良用了126 也就用来找找工作收收信用卡账单啥的 ------------------------------ 我来说两句为什么要用工 …"
+    },
+    {
+      "title": "Yahoo! 新首页有哪些亮点？ - 知乎",
+      "url": "https://www.zhihu.com/question/20791139",
+      "snippet": "Yahoo首页多年以来没有进行过大的变动，这次是梅姐上任七个月以来的一个大动作，其初衷是为了让用户能够更沉浸在yahoo网站 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Luca207/road_trocr_train1",
+  "slug": "luca207-road_trocr_train1",
+  "author": "Luca207",
+  "url": "https://huggingface.co/Luca207/road_trocr_train1",
+  "created_at": "2026-09-10T10:04:05.000Z",
+  "updated_at": "2026-09-10T10:36:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61596672,
+  "parameters_human": "61.6M",
+  "storage_bytes": 246475040,
+  "storage_human": "246 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kontakty CZ - ppm factum",
+      "url": "https://www.ppmfactum.cz/contacts-cz",
+      "snippet": "Pronájem kancelářských prostor v nově zrekonstruovaném office parku přímo na metru Nové Butovice. Pro více informací můžete …"
+    },
+    {
+      "title": "ppm factum - ppm factum",
+      "url": "https://www.ppmfactum.cz/",
+      "snippet": "Největší BTL společnost v Česku. Merchandising, logistika, eventy, sběr dat, výzkum trhu a mnohem víc. Vydejte se s námi na cestu …"
+    },
+    {
+      "title": "ppm factum",
+      "url": "https://smartweb.ppmfactum.cz/",
+      "snippet": "AHOLD Czech Republic, a.s. | Radlická 117 | 158 00 Praha 5 Nové Butovice | Česká republika tel.: +420 234 004 111 | tel.: +420 257 …"
+    },
+    {
+      "title": "ppm factum a.s. , Rudná IČO 27883299 - Obchodní rejstřík firem",
+      "url": "https://rejstrik-firem.kurzy.cz/27883299/ppm-factum-as/",
+      "snippet": "Z důvodu ochrany osobních údajů nejsou na stránce data narození a úplné adresy fyzických osob. Kompletní výpis včetně dat …"
+    },
+    {
+      "title": "ppm factum a.s., Praha, Stodůlky - Živéfirmy.cz",
+      "url": "https://www.zivefirmy.cz/ppm-factum_f1003355",
+      "snippet": "Zvláštní důležitost přikládáme direct mailu a službám internetu. Zhotovíme pro Vás grafické návrhy, včetně přípravy pro tisk. …"
+    }
+  ]
+}

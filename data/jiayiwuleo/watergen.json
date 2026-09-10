@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JiayiWuLeo/WaterGen",
+  "slug": "jiayiwuleo-watergen",
+  "author": "JiayiWuLeo",
+  "url": "https://huggingface.co/JiayiWuLeo/WaterGen",
+  "created_at": "2026-09-10T02:01:41.000Z",
+  "updated_at": "2026-09-10T03:15:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "underwater",
+    "image-generation",
+    "sdxl",
+    "lora",
+    "text-to-image",
+    "arxiv:2606.31147",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 980759099,
+  "storage_human": "981 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Chat GPT không hỗ trợ khôi phục đoạn chat đã xóa Kinh nghiệm lưu trữ lịch sử ChatGPT để không bị mất dữ liệu Vì …"
+    },
+    {
+      "title": "Models and pricing for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "snippet": "See per-token pricing for the models available in GitHub Copilot and reference rates for additional usage across plans."
+    },
+    {
+      "title": "Top 16+ Chat AI tiếng Việt miễn phí, tốt nhất 2026 - CellphoneS",
+      "url": "https://cellphones.com.vn/sforum/top-phan-mem-chat-ai-tot-nhat",
+      "snippet": "Feb 9, 2026 · Top các phần mềm chat AI tiếng Việt tốt và được nhiều người sử dụng nhất 2026, phần mềm chatbot AI online đem …"
+    }
+  ]
+}

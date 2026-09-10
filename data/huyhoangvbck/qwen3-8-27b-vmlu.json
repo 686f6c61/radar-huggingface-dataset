@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "huyhoangvbck/Qwen3.8-27B-VMLU",
+  "slug": "huyhoangvbck-qwen3-8-27b-vmlu",
+  "author": "huyhoangvbck",
+  "url": "https://huggingface.co/huyhoangvbck/Qwen3.8-27B-VMLU",
+  "created_at": "2026-09-10T01:45:06.000Z",
+  "updated_at": "2026-09-10T02:01:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "qwen",
+    "vmlu",
+    "reasoning",
+    "megatron",
+    "text-generation",
+    "conversational",
+    "vi",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53812098141,
+  "storage_human": "53.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HUDURY - حضوري",
+      "url": "https://hather-ui.moe.gov.sa/",
+      "snippet": "تطبيق \"حضوري\" يعتمد على تقنية GPS والسمات الحيوية لتسجيل حضور الموظفين بسهولة ودقة عبر الهاتف الذكي."
+    },
+    {
+      "title": "HUDURY - حضوري",
+      "url": "https://hather-ui.moe.gov.sa/login",
+      "snippet": "منصة حضوري لوزارة التعليم السعودية لتسجيل الحضور وتتبع الطلبات باستخدام الهاتف الذكي والتطبيق الإلكتروني."
+    },
+    {
+      "title": "تطبيق حضوري",
+      "url": "https://sites.moe.gov.sa/Jazan/pages/huduri/",
+      "snippet": "تطبيق حضوري : تطبيق حضوري لأجهزة ios تطبيق حضوري لأجهزة Android الدخول لموقع حضوري دليل استخدم الموظف لتطبيق حضوري .."
+    },
+    {
+      "title": "HUDURY - حضوري - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.t2.AvailoHader&hl=ar",
+      "snippet": "ما هو تطبيق حضوري ؟ هو تطبيق الحضور الذكي الذي يعمل باستخدام تقنيات انترنت الأشياء. باستخدام بصمة الوجه والصوت والأصبع الخاصة بكل موظف. مميزات تطبيق حضوري ؟ 1- لا حاجة لغير …"
+    },
+    {
+      "title": "حضوري",
+      "url": "https://sites.moe.gov.sa/intranet/Ministry/services/service-18/",
+      "snippet": "- للاطلاع على دليل الاستخدام ل لموظفين اضغط هنا . - للاطلاع على دليل المستخدم للوحة تحكم تطبيق حضوري اضغط هنا ."
+    }
+  ]
+}

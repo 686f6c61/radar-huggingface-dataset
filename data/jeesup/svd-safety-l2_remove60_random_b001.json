@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove60_random_b001",
+  "slug": "jeesup-svd-safety-l2_remove60_random_b001",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove60_random_b001",
+  "created_at": "2026-09-10T09:26:04.000Z",
+  "updated_at": "2026-09-10T09:42:36.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pattaya - Wakacje, Wczasy, Wycieczki | ITAKA",
+      "url": "https://www.itaka.pl/nasze-kierunki/tajlandia/pattaya/",
+      "snippet": "Wakacje w Pattaya z ITAKĄ - nr 1 w Polsce. Tajlandia - wczasy, wycieczki, oferty last minute i All Inclusive. Zaplanuj swoje …"
+    },
+    {
+      "title": "Pattaya Tajlandia - Okazje na Wakacje Fly.pl",
+      "url": "https://fly.pl/kierunek/tajlandia/tajlandia-pattaya/",
+      "snippet": "9 hours ago · Pattaya to perła Tajlandii, która słynie z intensywnego życia nocnego oraz przepięknego wybrzeża Zatoki Tajlandzkiej. …"
+    },
+    {
+      "title": "Pattaya: 17 atrakcji i ciekawych miejsc, których nie warto pominąć",
+      "url": "https://bartekwpodrozy.pl/pattaya-atrakcje-co-warto-zobaczyc-przewodnik/",
+      "snippet": "Jun 10, 2026 · Pattaya była ważnym punktem mojej podróży do Tajlandii na własną rękę. W artykule zebrałem rekomendacje …"
+    },
+    {
+      "title": "Pattaya na własną rękę: Przewodnik po Tajlandii",
+      "url": "https://jakipieknyswiat.pl/pattaya-na-wlasna-reke-przewodnik/",
+      "snippet": "Sep 23, 2025 · Planowanie to klucz do udanej wyprawy, zwłaszcza gdy decydujesz się na Pattaya na własną rękę. Zanim spakujesz …"
+    },
+    {
+      "title": "Pattaya: jak dojechać i gdzie spać — przejrzysty plan?",
+      "url": "https://kocham.travel/artykul/azja/tajlandia/pattaya/pattaya-jak-dojechac-i-gdzie-spac-przejrzysty-plan",
+      "snippet": "Sep 16, 2025 · Planując podróż do Pattaya, zyskajesz dostęp do niezwykłego świata pełnego atrakcji i smaków. Od transportu, przez …"
+    }
+  ]
+}

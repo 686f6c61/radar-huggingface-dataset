@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "raphaelreisb/pencil-drawing-enhancer-ce-krea2",
+  "slug": "raphaelreisb-pencil-drawing-enhancer-ce-krea2",
+  "author": "raphaelreisb",
+  "url": "https://huggingface.co/raphaelreisb/pencil-drawing-enhancer-ce-krea2",
+  "created_at": "2026-09-10T01:41:22.000Z",
+  "updated_at": "2026-09-10T01:41:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228587824,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta Quest-cadeaubonnen voor VR-games en -apps",
+      "url": "https://www.meta.com/nl/quest/gift-cards/",
+      "snippet": "De Meta Quest-cadeaubonnen voor VR-games en -apps zijn er. Koop digitale cadeaubonnen die in de Meta Quest Store kunnen …"
+    },
+    {
+      "title": "Shop Meta Quest VR Games, Apps, Deals and More | Meta Quest | Meta",
+      "url": "https://www.meta.com/experiences/",
+      "snippet": "Shop VR games, apps, and entertainment available on the Meta Quest headsets. Download hundreds of action, sports, and …"
+    },
+    {
+      "title": "Meta Quest – Keysforgames",
+      "url": "https://www.keysforgames.nl/games/gamecards/meta-quest/",
+      "snippet": "Deze cadeaubonnen kunnen eenvoudig worden ingewisseld in de Meta Quest Store, waar je een breed scala aan VR-titels en …"
+    },
+    {
+      "title": "Koop een Meta Quest Gift Card tegen geweldige prijs - ENEBA",
+      "url": "https://www.eneba.com/nl/store/meta-quest-gift-card",
+      "snippet": "Een Meta Quest cadeaukaart is een digitale voucher die u toegang geeft naar een wereld van virtuele spanning. Net als een sleutel …"
+    },
+    {
+      "title": "Meta Quest €50 cadeaubon - VR-ervaringen cadeau | Directe levering",
+      "url": "https://www.electronicfirst.com/nl/meta-quest-eur50-gift-card-eu",
+      "snippet": "Apr 5, 2025 · Speel eindeloze VR-avonturen vrij met de Meta Quest cadeaubon van €50! Deze cadeaukaart is inwisselbaar voor …"
+    }
+  ]
+}

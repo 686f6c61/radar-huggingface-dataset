@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "emidiosouza/assistente-maternidade-merged",
+  "slug": "emidiosouza-assistente-maternidade-merged",
+  "author": "emidiosouza",
+  "url": "https://huggingface.co/emidiosouza/assistente-maternidade-merged",
+  "created_at": "2026-09-10T02:19:25.000Z",
+  "updated_at": "2026-09-10T02:23:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817439,
+  "storage_human": "9.3 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "youtube | OBS Forums",
+      "url": "https://obsproject.com/forum/tags/youtube/",
+      "snippet": "Apr 15, 2026 · When we enter the YouTube stream key on OBS, it uploads the video directly on our YouTube page, but doesn't send …"
+    },
+    {
+      "title": "YouTube Community",
+      "url": "https://support.google.com/youtube/community/about?hl=en",
+      "snippet": "The Didi (Volunteer - No employee) (603 posts) Diamond Product Expert"
+    },
+    {
+      "title": "About YouTube ads and view metrics - Google Help",
+      "url": "https://support.google.com/google-ads/answer/2375431?hl=en",
+      "snippet": "This article describes YouTube ad metrics that help you analyze the performance of your video ads. You can learn about metrics …"
+    },
+    {
+      "title": "Tuna | OBS Forums",
+      "url": "https://obsproject.com/forum/resources/tuna.843/",
+      "snippet": "Aug 11, 2019 · Tuna Lets you display information about the currently playing song in obs without running a separate program. …"
+    },
+    {
+      "title": "My YouTube videos go darker when playing? - YouTube Community",
+      "url": "https://support.google.com/youtube/thread/367090294/my-youtube-videos-go-darker-when-playing?hl=en",
+      "snippet": "Aug 22, 2025 · My YouTube videos go darker when playing? Scrolling through the video selections my screen brightness is normal, …"
+    }
+  ]
+}

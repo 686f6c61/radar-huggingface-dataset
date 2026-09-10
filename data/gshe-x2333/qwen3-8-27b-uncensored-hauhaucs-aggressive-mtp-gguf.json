@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "gshe-x2333/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "slug": "gshe-x2333-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
+  "author": "gshe-x2333",
+  "url": "https://huggingface.co/gshe-x2333/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "created_at": "2026-09-10T10:43:00.000Z",
+  "updated_at": "2026-09-10T10:43:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "fastmtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 172466425216,
+  "storage_human": "172.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portail IDP du Département du Pas-de-Calais",
+      "url": "https://extranet.pasdecalais.fr/",
+      "snippet": "Accédez à votre messagerie ? Cliquez ici. Nouveau partenaire ? Inscrivez-vous."
+    },
+    {
+      "title": "Extranet du Département du Pas-de-Calais",
+      "url": "https://extranet.pasdecalais.fr/vdesk/hangup.php3",
+      "snippet": "Pour ouvrir une nouvelle session, veuillez cliquer ici."
+    },
+    {
+      "title": "Portail IDP du Département du Pas-de-Calais",
+      "url": "https://adfs.pasdecalais.fr/",
+      "snippet": "Veuillez activer JavaScript sur votre navigateur ou prendre contact avec votre administrateur système pour obtenir de l’aide. Pour …"
+    },
+    {
+      "title": "Portail IDP du Département du Pas-de-Calais",
+      "url": "https://idp.pasdecalais.fr/saml/idp/profile/redirectorpost/sso",
+      "snippet": "Accédez à votre messagerie ? Cliquez ici. Nouveau partenaire ? Inscrivez-vous."
+    },
+    {
+      "title": "Extranet - Connexion - CdG62",
+      "url": "https://extranet.cdg62.fr/login",
+      "snippet": "Première connexion : utiliser le formulaire ci-dessous \"Demande de création de compte e-CdG62. Mot de passe oublié ? Saisissez …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kimgayeon430/travel-mission-photo-embedder",
+  "slug": "kimgayeon430-travel-mission-photo-embedder",
+  "author": "kimgayeon430",
+  "url": "https://huggingface.co/kimgayeon430/travel-mission-photo-embedder",
+  "created_at": "2026-09-10T10:39:33.000Z",
+  "updated_at": "2026-09-10T10:39:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "clip",
+    "image-feature-extraction",
+    "on-device",
+    "base_model:openai/clip-vit-base-patch32",
+    "base_model:quantized:openai/clip-vit-base-patch32",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88589160,
+  "storage_human": "89 MB",
+  "base_model": "openai/clip-vit-base-patch32",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CODE｜読売テレビ・日本テレビ系",
+      "url": "https://www.ytv.co.jp/code/",
+      "snippet": "どんな願いも叶えるアプリ“CODE” 婚約者の死の真相を知るために、一人の刑事がこのアプリに手を伸ばす――果たして、恋人の死 …"
+    },
+    {
+      "title": "読売テレビ",
+      "url": "https://www.ytv.co.jp/",
+      "snippet": "読売テレビ公式ホームページです。最新の番組情報やニュース、映画、グッズ、プレゼント、イベントなど読売テレビに関する様々 …"
+    },
+    {
+      "title": "国内大厂Trae、Qoder、CodeBuddy AI编辑器哪个好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1951273247036380422",
+      "snippet": "augment code: 和 windsurf 不分伯仲，就是价格贵，模型较少。 trae 干活好坏都有，各50%。 好在价格便宜，迭代进化的速度较慢， …"
+    },
+    {
+      "title": "程序员编程看起来最舒服的字体（英文的和中文的 ...",
+      "url": "https://www.zhihu.com/question/19637242/answers/updated",
+      "snippet": "微软官方等宽字体 Cascadia Code，支持 PowerShell 终端和 VSCode，英文显示效果优异。 总结 纯英文场景选 Monaspace 或 Fira …"
+    },
+    {
+      "title": "相関図｜CODE｜読売テレビ・日本テレビ系",
+      "url": "https://www.ytv.co.jp/code/chart/",
+      "snippet": "どんな願いも叶えるアプリ“CODE” 婚約者の死の真相を知るために、一人の刑事がこのアプリに手を伸ばす――果たして、恋人の死 …"
+    }
+  ]
+}

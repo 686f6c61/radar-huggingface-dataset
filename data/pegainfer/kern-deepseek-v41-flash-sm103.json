@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Pegainfer/kern-deepseek-v41-flash-sm103",
+  "slug": "pegainfer-kern-deepseek-v41-flash-sm103",
+  "author": "Pegainfer",
+  "url": "https://huggingface.co/Pegainfer/kern-deepseek-v41-flash-sm103",
+  "created_at": "2026-09-10T09:35:07.000Z",
+  "updated_at": "2026-09-10T09:35:10.000Z",
+  "license": "per-artifact",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kern",
+    "cuda",
+    "cubin",
+    "sm103",
+    "deepseek-v4.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28212611,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topic [OFFICIEL] 18-25 Page d'accueil forum 18 25 1825",
+      "url": "https://www.jeuxvideo.com/forums/42-51-51161064-1-0-1-0-officiel-18-25-page-d-accueil-forum-18-25-1825.htm",
+      "snippet": "May 27, 2017 · Bienvenue sur le forum 18-25 ans, rentre dans l'histoire en postant, cette page deviendra le premier resultat Google …"
+    },
+    {
+      "title": "Forum Guerre des Consoles - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-36-0-1-0-1-0-guerre-des-consoles.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Guerre des Consoles de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre …"
+    },
+    {
+      "title": "Forum PlayStation 5 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-3017788-0-1-0-1-0-playstation-5.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum PlayStation 5 de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    },
+    {
+      "title": "Forum Football - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-20-0-1-0-1-0-football.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Football de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    },
+    {
+      "title": "Boxe : Usyk contre Dubois II samedi soir sur le forum Blabla 18-25 ans ...",
+      "url": "https://www.jeuxvideo.com/forums/42-51-76031843-1-0-1-0-0.htm",
+      "snippet": "Jul 13, 2025 · Salut les Jean-Lomachenko, on se retrouve samedi soir pour la revanche tant attendue entre Usyk et Dubois Il y a …"
+    }
+  ]
+}

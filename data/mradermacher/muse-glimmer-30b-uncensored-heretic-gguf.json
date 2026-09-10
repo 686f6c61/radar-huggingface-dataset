@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Muse-Glimmer-30B-Uncensored-Heretic-GGUF",
+  "slug": "mradermacher-muse-glimmer-30b-uncensored-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-Uncensored-Heretic-GGUF",
+  "created_at": "2026-09-10T10:28:33.000Z",
+  "updated_at": "2026-09-10T11:05:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:OS-Software/Muse-Glimmer-30B-Uncensored-Heretic",
+    "base_model:quantized:OS-Software/Muse-Glimmer-30B-Uncensored-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 197510979328,
+  "storage_human": "197.5 GB",
+  "base_model": "OS-Software/Muse-Glimmer-30B-Uncensored-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Colegiación arquitecto, HNA y ASEMAS | Foros Sólo Arquitectura",
+      "url": "https://www.soloarquitectura.com/foros/threads/colegiacion-arquitecto-hna-y-asemas.36245/",
+      "snippet": "Oct 26, 2008 · Hola a todos! soy nueva en el foro y arquitecto recién titulado He encontrado trabajillo en una consultoría de …"
+    },
+    {
+      "title": "Pensión vitalicia HNA | Foros Sólo Arquitectura",
+      "url": "https://www.soloarquitectura.com/foros/threads/pension-vitalicia-hna.72144/",
+      "snippet": "Dec 7, 2011 · Buenas noches compañer@s, Bien, mi cuestión es la siguiente: Llevo poquitos años en HNA pagando las …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2045110357153275908",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "HNA y plan de pensiones privado | Foros Sólo Arquitectura",
+      "url": "https://www.soloarquitectura.com/foros/threads/hna-y-plan-de-pensiones-privado.20151/",
+      "snippet": "Nov 13, 2007 · Saludos a tod@s, la duda que tengo es la siguiente: Cuando comencé mi actividad profesional me di de alta el la …"
+    }
+  ]
+}

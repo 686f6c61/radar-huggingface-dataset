@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AKHYui/anything-v5-rknn-512",
+  "slug": "akhyui-anything-v5-rknn-512",
+  "author": "AKHYui",
+  "url": "https://huggingface.co/AKHYui/anything-v5-rknn-512",
+  "created_at": "2026-09-10T10:58:39.000Z",
+  "updated_at": "2026-09-10T11:08:22.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "rknn",
+  "languages": [],
+  "tags": [
+    "rknn",
+    "rk3588",
+    "rockchip",
+    "npu",
+    "stable-diffusion",
+    "lcm",
+    "anime",
+    "text-to-image",
+    "anything-v5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2213054016,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "It’s all here with Microsoft account Your Microsoft account connects all your Microsoft apps and services. Sign in to manage your …"
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Create your Microsoft account",
+      "url": "https://signup.live.com/",
+      "snippet": "Create your Microsoft account to access various services and features."
+    },
+    {
+      "title": "Sign in - account.microsoft.com",
+      "url": "https://account.microsoft.com/account-checkup",
+      "snippet": "Sign in to check and manage your Microsoft account settings with the Account Checkup Wizard."
+    },
+    {
+      "title": "Sign in to your account - myapps.microsoft.com",
+      "url": "https://myapps.microsoft.com/sso-login/login",
+      "snippet": "Access and manage your Microsoft apps and services securely through the My Apps portal."
+    }
+  ]
+}

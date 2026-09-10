@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "quim-motger/emotion-roberta-large-multilabel-genai-bce",
+  "slug": "quim-motger-emotion-roberta-large-multilabel-genai-bce",
+  "author": "quim-motger",
+  "url": "https://huggingface.co/quim-motger/emotion-roberta-large-multilabel-genai-bce",
+  "created_at": "2026-09-10T10:27:17.000Z",
+  "updated_at": "2026-09-10T10:46:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "multi-label-classification",
+    "emotion-classification",
+    "app-reviews",
+    "en",
+    "dataset:nlp4se/app-review-emotions",
+    "base_model:FacebookAI/roberta-large",
+    "base_model:finetune:FacebookAI/roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 355368969,
+  "parameters_human": "355.4M",
+  "storage_bytes": 1421529381,
+  "storage_human": "1.4 GB",
+  "base_model": "roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arnika Balsam Herbamedicus 250 ml bei APONEO kaufen",
+      "url": "https://www.aponeo.de/00115370-arnika-balsam-herbamedicus.html",
+      "snippet": "Arnika Balsam Herbamedicus 250 ml PZN 00115370 einfach online bestellen günstige Preise schnelle Lieferung kostenlose Beratung"
+    },
+    {
+      "title": "ARNIKA BALSAM HERBAMEDICUS 250 ml - PZN 00115370 | mycare.de",
+      "url": "https://www.mycare.de/online-kaufen/arnika-balsam-herbamedicus-balsam-00115370",
+      "snippet": "ARNIKA BALSAM HERBAMEDICUS 250 ml (PZN 00115370) günstig online kaufen bei mycare.de - Schnelle Lieferung Gratis …"
+    },
+    {
+      "title": "Dr. Sacher´s Arnika Pflege-Balsam mit Sanddornöl 250 ml - SHOP …",
+      "url": "https://www.shop-apotheke.com/arzneimittel/9606460/dr-sacher-s-arnika-pflege-balsam-mit-sanddornoel.htm?msockid=3bf4c6fc24bb6a69343ed12c25a56bea",
+      "snippet": "Dr. Sacher´s Arnika Pflege-Balsam mit Sanddornöl 250 ml für nur € 6,79 bei Ihrer Online Apotheke für Deutschland kaufen."
+    },
+    {
+      "title": "Kneipp Wärmebalsam mit Arnika 100 ml - Shop Apotheke",
+      "url": "https://www.shop-apotheke.com/arzneimittel/19381772/kneipp-waermebalsam-mit-arnika.htm?msockid=3bf4c6fc24bb6a69343ed12c25a56bea",
+      "snippet": "Der pflegende Balsam zur Massage für Nacken, Schultern und Rücken. Kneipp® Intensiv Wärme Balsam mit Bio-Arnika auf die …"
+    },
+    {
+      "title": "ARNIKA BALSAM Herbamedicus | 00115370 - apo-versand.de",
+      "url": "https://www.apo-versand.de/ARNIKA-BALSAM-Herbamedicus/00115370",
+      "snippet": "Das Präparat muss in Wirkungsstärke und Packungsgröße mit dem verordneten Arzneimittel identisch und für das gleiche …"
+    }
+  ]
+}

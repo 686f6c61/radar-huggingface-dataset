@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "soooma703/act_so101_test2",
+  "slug": "soooma703-act_so101_test2",
+  "author": "soooma703",
+  "url": "https://huggingface.co/soooma703/act_so101_test2",
+  "created_at": "2026-09-10T09:56:48.000Z",
+  "updated_at": "2026-09-10T09:56:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:soooma703/demo2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668662,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206701072,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@en.---",
+      "snippet": "Share your videos and discover content from friends, family, and creators worldwide on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@---_-_",
+      "snippet": "Discover and enjoy a variety of videos, music, and live performances on YouTube."
+    }
+  ]
+}

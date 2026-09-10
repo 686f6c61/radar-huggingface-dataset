@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/Distil-Whisper",
   "created_at": "2026-04-09T20:20:57.000Z",
-  "updated_at": "2026-08-25T04:11:20.000Z",
+  "updated_at": "2026-09-10T04:36:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

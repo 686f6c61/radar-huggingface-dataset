@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Revolabs/iwu-0909-combined-model-a10-c15",
+  "slug": "revolabs-iwu-0909-combined-model-a10-c15",
+  "author": "Revolabs",
+  "url": "https://huggingface.co/Revolabs/iwu-0909-combined-model-a10-c15",
+  "created_at": "2026-09-10T00:45:08.000Z",
+  "updated_at": "2026-09-10T04:12:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "cortex_agv",
+    "robotics",
+    "dataset:Revolabs/iwu_0909_combined_merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51607354,
+  "parameters_human": "51.6M",
+  "storage_bytes": 3095742768,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1.0 Logowanie do systemu",
+      "url": "https://raport.stat.gov.pl/gus.ps/home.pa",
+      "snippet": "Logowanie Wpisz swój login i hasło dostępu do Portalu Sprawozdawczego. Pamiętaj, że dla systemu ma znaczenie, czy wpisujesz …"
+    },
+    {
+      "title": "1.0 Logowanie do systemu",
+      "url": "https://raport.stat.gov.pl/gus.ps.forum/login.do",
+      "snippet": "Logowanie Wpisz swój identyfikator i hasło dostępu do Portalu Sprawozdawczego. Pamiętaj, że dla systemu ma znaczenie, czy …"
+    },
+    {
+      "title": "Zmiana hasła użytkownika",
+      "url": "https://raport.stat.gov.pl/gus.static/help/html/praca/8.0%20profil/8.2%20profil_haslo.html",
+      "snippet": "Zmiana hasła użytkownika Okno 8.2 Zmiana hasła użytkownika. Na ekranie znajdują się pola służące do wprowadzenia nowego …"
+    },
+    {
+      "title": "Sprawozdawca - raport.stat.gov.pl",
+      "url": "https://raport.stat.gov.pl/gus.static/help/html/praca/5.0%20sprawozdawca/5.0%20spr.html",
+      "snippet": "Sprawozdawca Ekran powitalny modułu. Ekran 5.0 Sprawozdawca prezentuje listę Jednostek Sprawozdawczych obsługiwanych …"
+    },
+    {
+      "title": "1.0 Logowanie do systemu",
+      "url": "https://raport.stat.gov.pl/forms.dnuk_2_7/help/publikacje.html",
+      "snippet": "Objaśnienia dotyczące formularza DNU-K, zawierające informacje na temat publikacji związanych z obowiązkiem przekazywania …"
+    }
+  ]
+}

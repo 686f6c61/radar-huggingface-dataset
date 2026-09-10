@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove60_sigma_b005",
+  "slug": "jeesup-svd-safety-l2_remove60_sigma_b005",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove60_sigma_b005",
+  "created_at": "2026-09-10T10:35:59.000Z",
+  "updated_at": "2026-09-10T10:53:07.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "谷歌推出 Gemini 3.7 Flash，有哪些亮点和创新？ - 知乎",
+      "url": "https://www.zhihu.com/question/2071408739723302257",
+      "snippet": "谷歌再次加快Gemini模型迭代。美东时间13日周四，谷歌宣布推出Gemini 3.7 Flash，主打编程、智能体（Agen…"
+    },
+    {
+      "title": "《记忆革命：Gemini 1.5如何让Transformer突破百万级上下文枷锁》",
+      "url": "https://bbs.huaweicloud.com/blogs/453371",
+      "snippet": "May 29, 2025 · 而Google DeepMind的Gemini 1.5却打破了这一宿命，首次实现百万级token的上下文处理能力，相当于让AI同时阅读 …"
+    }
+  ]
+}

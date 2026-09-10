@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Om9523/kishanmitra-models",
+  "slug": "om9523-kishanmitra-models",
+  "author": "Om9523",
+  "url": "https://huggingface.co/Om9523/kishanmitra-models",
+  "created_at": "2026-09-10T10:15:29.000Z",
+  "updated_at": "2026-09-10T10:40:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 713746090,
+  "storage_human": "714 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MEANING | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/meaning",
+      "snippet": "MEANING definition: 1. The meaning of something is what it expresses or represents: 2. importance or value: 3. The…. Learn more."
+    },
+    {
+      "title": "MEANING Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/meaning",
+      "snippet": "6 days ago · The meaning of MEANING is the thing one intends to convey especially by language : purport. How to use meaning in a …"
+    },
+    {
+      "title": "Cambridge Dictionary | English Dictionary, Translations & Thesaurus",
+      "url": "https://dictionary.cambridge.org/",
+      "snippet": "The most popular dictionary and thesaurus for learners of English. Meanings and definitions of words with pronunciations and …"
+    },
+    {
+      "title": "Meanings & Definitions of English Words | Dictionary.com",
+      "url": "https://www.dictionary.com/",
+      "snippet": "1 day ago · Holidays What Is the Meaning of Labor Day? Labor Day celebrates the hard work and achievements of workers across …"
+    },
+    {
+      "title": "MEANING Definition & Meaning | Dictionary.com",
+      "url": "https://www.dictionary.com/browse/meaning",
+      "snippet": "Meaning is what a word, action, or concept is all about — its purpose, significance, or definition. If you want to learn the meaning of …"
+    }
+  ]
+}

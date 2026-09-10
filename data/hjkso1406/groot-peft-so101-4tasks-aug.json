@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hjkso1406/groot-peft-so101-4tasks-aug",
+  "slug": "hjkso1406-groot-peft-so101-4tasks-aug",
+  "author": "hjkso1406",
+  "url": "https://huggingface.co/hjkso1406/groot-peft-so101-4tasks-aug",
+  "created_at": "2026-09-10T10:30:08.000Z",
+  "updated_at": "2026-09-10T10:30:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot_peft",
+    "robotics",
+    "dataset:hjkso1406/so101-4tasks-100eps",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2431961024,
+  "parameters_human": "2.43B",
+  "storage_bytes": 7020931880,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite | Deutsche Rentenversicherung",
+      "url": "https://www.deutsche-rentenversicherung.de/",
+      "snippet": "Die Deutsche Rentenversicherung nimmt dazu Stellung. Weiterlesen Warnung vor Betrugsversuchen Immer häufiger werden …"
+    },
+    {
+      "title": "Startseite | Deutsche Rentenversicherung Bund",
+      "url": "https://www.deutsche-rentenversicherung.de/Bund/DE/Home",
+      "snippet": "Sep 2, 2026 · Deutsche Rentenversicherung Meldung 04.09.2026 Position des Bundesvorstands der DRV Bund zu den …"
+    },
+    {
+      "title": "eAntrag - Startseite",
+      "url": "https://eantrag.deutsche-rentenversicherung.de/",
+      "snippet": "Gespeichertes Formular bearbeiten Falls Sie bereits ein Formular begonnen haben, können Sie dieses hier weiterbearbeiten. …"
+    },
+    {
+      "title": "Staatliche Förderung für Sie: Riester-Zulage und Steuervorteil sichern ...",
+      "url": "https://riester.deutsche-rentenversicherung.de/DE/Lohnt-sich-Riester/Staatliche-Foerderung-fuer-Sie/staatliche-foerderung-fuer-sie_node",
+      "snippet": "Geringfügig Beschäftigte*r Sie haben einen Minijob und zahlen Pflichtbeiträge in die gesetzliche Rentenversicherung ein? Dann …"
+    },
+    {
+      "title": "Mehr Rente im Alter: Riester-Förderung sinnvoll nutzen | Riester-ZfA",
+      "url": "https://riester.deutsche-rentenversicherung.de/",
+      "snippet": "Gefördert, sicher, flexibel: Altersvorsorge mit der Rieste-Rente hat viele Vorteile. Sichern Sie sich jetzt Ihre staatliche Förderung!"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "JuggaHO/Huihui-Qwen3.8-27B-abliterated",
+  "slug": "juggaho-huihui-qwen3-8-27b-abliterated",
+  "author": "JuggaHO",
+  "url": "https://huggingface.co/JuggaHO/Huihui-Qwen3.8-27B-abliterated",
+  "created_at": "2026-09-10T10:39:42.000Z",
+  "updated_at": "2026-09-10T10:39:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575815536,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Using Deepl for academic papers? : r/ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/13o8z81/using_deepl_for_academic_papers/",
+      "snippet": "May 21, 2023 · Is using deepl.com for academic papers cheating / similar to using an AI tool like Chat.GPT? For a paper, I've been …"
+    },
+    {
+      "title": "Which one is better: DeepL, ProWritingAid or Grammarly?",
+      "url": "https://www.reddit.com/r/writing/comments/16twgma/which_one_is_better_deepl_prowritingaid_or/",
+      "snippet": "Sep 27, 2023 · Hello everyone! I haven't had a chance to try ProWritingAid or Grammarly yet. However, by the good opinions I've …"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/en/article/701388292",
+      "snippet": "1. HeyFriday - URL: [heyfriday.cn/home] (heyfriday.cn/home) - Function: Provides high-quality original article generation, with 40+ …"
+    },
+    {
+      "title": "用deepl被指控AI，明明以前用都没事啊",
+      "url": "https://www.zhihu.com/tardis/zm/art/700532067",
+      "snippet": "“我在写论文的时候，在阅读文献期间使用了deepl，为什么会被指控AI，明明大纲都是我自己写的，而且我看其他学姐都能用，为什么 …"
+    },
+    {
+      "title": "DeepLWrite für BA benutzen ? : r/Studium - Reddit",
+      "url": "https://www.reddit.com/r/Studium/comments/1aeyjbx/deeplwrite_f%C3%BCr_ba_benutzen/",
+      "snippet": "Habe alles schon geschrieben aber bin nicht der beste wissenschaftliche Schreiber und bin jetzt über das AI-Tool von DeepL …"
+    }
+  ]
+}

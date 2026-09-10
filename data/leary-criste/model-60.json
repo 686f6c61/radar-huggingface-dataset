@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "leary-criste/model-60",
+  "slug": "leary-criste-model-60",
+  "author": "leary-criste",
+  "url": "https://huggingface.co/leary-criste/model-60",
+  "created_at": "2026-09-10T02:18:09.000Z",
+  "updated_at": "2026-09-10T02:19:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71923767525,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The best VPN service online for free, open internet | NordVPN",
+      "url": "https://nordvpn.com/?msockid=3c55ec6d651264e31176fbbd648b6599",
+      "snippet": "Fast, secure, and risk-free VPN for online privacy. Encrypt your traffic, change your IP, and browse freely without restrictions or …"
+    },
+    {
+      "title": "Download a VPN for Windows PC or Laptop - NordVPN",
+      "url": "https://nordvpn.com/download/windows/?msockid=3c55ec6d651264e31176fbbd648b6599",
+      "snippet": "A VPN for Windows will improve your security while you’re connected to the internet on your PC. Enjoy more secure streaming, …"
+    },
+    {
+      "title": "Live Chat, VPN Setup, Troubleshooting | NordVPN Customer Support",
+      "url": "https://support.nordvpn.com/hc/en-us",
+      "snippet": "NordVPN support Troubleshooting and VPN issues Getting started, installation, and features Account management and logging in …"
+    },
+    {
+      "title": "How to install and use the NordVPN app on Windows?",
+      "url": "https://support.nordvpn.com/hc/en-us/articles/19472023025169-How-to-install-and-use-the-NordVPN-app-on-Windows",
+      "snippet": "IntroductionSetting up the NordVPN app on your Windows 10 or Windows 11 device is the fastest way to keep your online activity …"
+    },
+    {
+      "title": "NordVPN - Overview | Meshnet docs",
+      "url": "https://meshnet.nordvpn.com/",
+      "snippet": "Explore our guides and articles to get a sense of what Meshnet is and how it can be used."
+    }
+  ]
+}

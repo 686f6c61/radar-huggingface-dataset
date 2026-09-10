@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "qualcomm/BEVFormer",
+  "slug": "qualcomm-bevformer",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/BEVFormer",
+  "created_at": "2026-09-10T01:11:14.000Z",
+  "updated_at": "2026-09-10T04:44:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "bu_auto",
+    "android",
+    "other",
+    "arxiv:2203.17270",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Překladač Google",
+      "url": "https://translate.google.cz/",
+      "snippet": "Služba Google bez dalších poplatků okamžitě překládá slova, věty a webové stránky mezi angličtinou a více než stovkou dalších …"
+    },
+    {
+      "title": "Překladač Google",
+      "url": "https://translate.google.cz/details",
+      "snippet": "Odeslat zpětnou vazbu Pokud chcete vyhledat podrobnosti, zadejte text"
+    },
+    {
+      "title": "Překladač Google",
+      "url": "https://translate.google.cz/m",
+      "snippet": "Přeložit Rozpoznat jazyk → čeština Domovská stránka Google Odeslat zpětnou vazbu Ochrana soukromí a smluvní podmínky …"
+    }
+  ]
+}

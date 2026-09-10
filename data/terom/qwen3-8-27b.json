@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Terom/Qwen3.8-27B",
+  "slug": "terom-qwen3-8-27b",
+  "author": "Terom",
+  "url": "https://huggingface.co/Terom/Qwen3.8-27B",
+  "created_at": "2026-09-10T08:54:39.000Z",
+  "updated_at": "2026-09-10T08:54:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Ama",
+      "url": "https://www.amazon.de/ama/s?k=ama",
+      "snippet": "1-16 von 262 Ergebnissen oder Vorschlägen für \"ama\" Ergebnisse Erfahre mehr über diese Ergebnisse. Auf jeder Produktseite …"
+    },
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.cdn.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Free shipping on millions of items. Get the best of Shopping and Entertainment with Prime. Enjoy low prices and great deals on the …"
+    },
+    {
+      "title": "Amazon.de: : Alle Kategorien",
+      "url": "https://www.amazon.de/b?node=13773791031",
+      "snippet": "Online-Einkauf von mit großartigem Angebot im Alle Kategorien Shop."
+    },
+    {
+      "title": "Amazon.com: : All Departments",
+      "url": "https://www.amazon.com/b?node=16008589011",
+      "snippet": "Amazon Go is a new kind of store featuring the world’s most advanced shopping technology. No lines, no checkout – just grab and …"
+    }
+  ]
+}

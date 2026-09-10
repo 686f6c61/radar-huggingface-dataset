@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "bestdive/APPO-doom_health_gathering_supreme",
+  "slug": "bestdive-appo-doom_health_gathering_supreme",
+  "author": "bestdive",
+  "url": "https://huggingface.co/bestdive/APPO-doom_health_gathering_supreme",
+  "created_at": "2026-09-10T01:52:40.000Z",
+  "updated_at": "2026-09-10T01:55:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "reinforcement-learning",
+    "doom_health_gathering_supreme",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34929541,
+  "storage_human": "35 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Campuswoche der Hochschule Niederrhein – Angebote für Lehrende ...",
+      "url": "https://www.hs-niederrhein.de/angebote-fuer-lehrende/campuswoche/",
+      "snippet": "Informieren Sie sich über die Campuswoche an der Hochschule Niederrhein und die vielfältigen Angebote für Lehrende zur …"
+    },
+    {
+      "title": "Wintersemester 2026/2027 / Winter semester 2026/2027 - HS …",
+      "url": "https://www.hs-niederrhein.de/fileadmin/dateien/FB07/Studium/Aktuelle_Termine/Planung-Vorlesungszeiten_aktuell.pdf",
+      "snippet": "Vorlesungszeit / Lecture periodBA TuB/DI/TCM 1. Semester + MA TP/MTTT. 1. PP SoSe 27 / 1st Examination period SuSe …"
+    },
+    {
+      "title": "Terrminvorschau laufende Semesteransicht - Hochschule Niederrhein",
+      "url": "https://www.hs-niederrhein.com/homepage/news/news-detail-page/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=35225&cHash=9cb207c7c5c7765653ad51655138d084",
+      "snippet": "Dec 19, 2024 · Die Zeiträume der Campuswoche, der Selbst- und Fremderfahrung und der Prüfungsanmeldungen folgen spät. im …"
+    },
+    {
+      "title": "HochschuleNiederrhein | Die Campuswoche der HSNR geht in eine …",
+      "url": "https://www.instagram.com/p/Dcx_Yx2os0_/",
+      "snippet": "️Das diesjährige Motto „HSNR: Gemeinsam Hochschule gestalten“ steht für Austausch, Partizipation und neue Perspektiven. Denn …"
+    },
+    {
+      "title": "Die Campuswoche der Hochschule Niederrhein geht in eine neue …",
+      "url": "https://de.linkedin.com/posts/pia-annas-021435239_diecampuswocheder-hochschule-niederrhein-activity-7500861740591632385-3BzD",
+      "snippet": "Die Campuswoche der Hochschule Niederrhein geht in eine neue Runde – und lädt 2026 vom 26.10.-30.10. dazu ein, die Hochschule …"
+    }
+  ]
+}

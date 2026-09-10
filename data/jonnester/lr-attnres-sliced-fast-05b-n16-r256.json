@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Jonnester/LR-AttnRes-sliced-fast-05b-n16-r256",
+  "slug": "jonnester-lr-attnres-sliced-fast-05b-n16-r256",
+  "author": "Jonnester",
+  "url": "https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n16-r256",
+  "created_at": "2026-09-10T10:10:29.000Z",
+  "updated_at": "2026-09-10T10:12:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2472522475,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "those use ipon watsapp web browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556449",
+      "snippet": "Feb 27, 2026 · Lowyat.NET Malaysia's Tech Enthusiast Resource Community. Forums, Buy, Sell, Second Hand, Notebook, Laptop, …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/windows_7-security/ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¦ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¶ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¢/7ffe7a9b-d0cf-454c-b3db-731542747656",
+      "snippet": ""
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Male QUOTE(aneppp @ Feb 27 2026, 12:40 PM) same problem as me according to reddit, whatsapp web is down for ios Same …"
+    }
+  ]
+}

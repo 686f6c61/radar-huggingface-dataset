@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "bestdive/sac-PandaReachDense-v3",
+  "slug": "bestdive-sac-pandareachdense-v3",
+  "author": "bestdive",
+  "url": "https://huggingface.co/bestdive/sac-PandaReachDense-v3",
+  "created_at": "2026-09-10T01:13:46.000Z",
+  "updated_at": "2026-09-10T01:14:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "PandaReachDense-v3",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 875362,
+  "storage_human": "875362 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spaniens Geheimdienst warnte vor „Überfall über Land und Meer“ auf Ceuta",
+      "url": "https://www.msn.com/de-de/nachrichten/other/spaniens-geheimdienst-warnte-vor-%C3%BCberfall-%C3%BCber-land-und-meer-auf-ceuta/ar-AA2bTYgy",
+      "snippet": "Die spanische Regierung hat Geheimdienstunterlagen zum Migrantenansturm auf Ceuta veröffentlicht. Das Szenario, dass Migranten …"
+    },
+    {
+      "title": "Ceuta: Spanien-Geheimdienst warnte vor Massenankunft von …",
+      "url": "https://www.spiegel.de/ausland/ceuta-spanien-geheimdienst-warnte-vor-massenankunft-von-migranten-a-2d753fc4-d6d0-41da-ac3c-3be7c4308fef",
+      "snippet": "8 hours ago · Der spanische Geheimdienst CNI hat die Behörden in Ceuta einen Tag vor der Massenankunft von Migranten Ende Juli …"
+    },
+    {
+      "title": "Spanischer Geheimdienst warnte vor Ausnahmesituation in Ceuta",
+      "url": "https://www.tagesschau.de/ausland/europa/geheimdienst-warnte-offenbar-vor-andrang-in-ceuta-100.html",
+      "snippet": "3 hours ago · Ende Juli kamen binnen Stunden Zehntausende Migranten nach Ceuta. Neue Dokumente zeigen nun: Der spanische …"
+    },
+    {
+      "title": "Spaniens Geheimdienst warnte vor Migranten-Massen in Ceuta",
+      "url": "https://www.focus.de/panorama/welt/spaniens-geheimdienst-warnte-vor-migranten-massen-in-ceuta_cae13342-295e-442e-9f05-159336bd39db.html",
+      "snippet": "13 hours ago · Der spanische Geheimdienst CNI hat die Behörden in Ceuta einen Tag vor der beispiellosen Massenankunft von …"
+    },
+    {
+      "title": "Geheime Dokumente freigegeben: Spanischer Geheimdienst warnte vor ...",
+      "url": "https://www.tagesspiegel.de/internationales/dpa-spanischer-geheimdienst-warnte-vor-ansturm-auf-ceuta-16037123.html",
+      "snippet": "13 hours ago · Der spanische Geheimdienst CNI hat die Behörden in Ceuta einen Tag vor der beispiellosen Massenankunft von …"
+    }
+  ]
+}

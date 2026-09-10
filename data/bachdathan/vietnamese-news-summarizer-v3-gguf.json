@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/vietnamese-news-summarizer-v3-GGUF",
+  "slug": "bachdathan-vietnamese-news-summarizer-v3-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/vietnamese-news-summarizer-v3-GGUF",
+  "created_at": "2026-09-10T09:11:29.000Z",
+  "updated_at": "2026-09-10T09:13:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3974388480,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3-1.7B, vinhthuan/vietnamese-news-summarizer-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ПКБ №1 ДЗМ - Главная",
+      "url": "https://pkb1.ru/",
+      "snippet": "Психиатрическая клиническая больница №1 им Н.А. Алексеева - стационар, амбулаторная служба, выдача справок, …"
+    },
+    {
+      "title": "Главная страница - Государственное бюджетное учреждение …",
+      "url": "https://www.pkb4.ru/",
+      "snippet": "Aug 31, 2026 · Государственное бюджетное учреждение здравоохранения города Москвы «Психиатрическая клиническая …"
+    },
+    {
+      "title": "ПКБ №1 ДЗМ - Отделения судебно-психиатрической экспертизы",
+      "url": "https://pkb1.ru/departments/otdeleniya-sudebno-psihiatricheskoj-ekspertizy/",
+      "snippet": "Психиатрическая клиническая больница №1 им Н.А. Алексеева - стационар, амбулаторная служба, выдача справок, …"
+    },
+    {
+      "title": "Отделение «Центр судебно-психиатрических экспертиз» • …",
+      "url": "https://ckpbmo.ru/otdelenie-czentr-sudebno-psihiatrich/",
+      "snippet": "Отделение «Центр судебно-психиатрических экспертиз» · Амбулаторная СПЭ в гражданском процессе · Комплексная …"
+    },
+    {
+      "title": "Центральная клиническая психиатрическая больница …",
+      "url": "https://ckpbmo.ru/",
+      "snippet": "Проведение амбулаторных и заочных (в том числе посмертных) судебно-психиатрических экспертиз в уголовном и …"
+    }
+  ]
+}

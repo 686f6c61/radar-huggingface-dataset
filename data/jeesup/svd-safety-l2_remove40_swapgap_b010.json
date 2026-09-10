@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgap_b010",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgap_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgap_b010",
+  "created_at": "2026-09-10T01:50:16.000Z",
+  "updated_at": "2026-09-10T02:03:46.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号☑这个符号可以用word的特殊字符打出来。以Word2016版为例，具体步骤如下：1、新建 ..."
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "资料分析做题速度真能达到一分钟一道吗，我感觉有点扯淡?",
+      "url": "https://www.zhihu.com/question/512941236",
+      "snippet": "总的来说，资料分析的做题时间建议控制在25-30分钟。 如果是20道题，最好25-30分钟做完；如果是15道题，那么建议22分钟左右做 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    }
+  ]
+}

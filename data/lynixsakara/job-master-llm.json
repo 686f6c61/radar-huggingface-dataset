@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "LynixSakara/Job-Master-LLM",
+  "slug": "lynixsakara-job-master-llm",
+  "author": "LynixSakara",
+  "url": "https://huggingface.co/LynixSakara/Job-Master-LLM",
+  "created_at": "2026-09-10T10:01:55.000Z",
+  "updated_at": "2026-09-10T11:39:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 562111383,
+  "storage_human": "562 MB",
+  "base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Szkoła Podstawowa – nr 9 im. gen. Józefa Wybickiego w Wejherowie",
+      "url": "https://sp9.wejherowo.pl/",
+      "snippet": "1 września uczniowie klas IV–VIII Szkoły Podstawowej nr 9 w Wejherowie uroczyście rozpoczęli nowy rok szkolny 2026/2027. Po …"
+    },
+    {
+      "title": "Szkoła Podstawowa – nr 9 im. gen. Józefa Wybickiego w Wejherowie",
+      "url": "https://sp9.wejherowo.pl/?strona=1",
+      "snippet": "Kolejny rok szkolny dobiegł końca. Był to czas pełen nauki, wyzwań, sukcesów, nowych doświadczeń oraz wielu wspólnie …"
+    },
+    {
+      "title": "Szkoła Podstawowa nr 9 w Wejherowie | Wejherowo - Facebook",
+      "url": "https://www.facebook.com/p/Szko%C5%82a-Podstawowa-nr-9-w-Wejherowie-61577207883279/",
+      "snippet": "Uczniowie, rodzice, absolwenci, mieszkańcy Wejherowa oraz przyjaciele SP9 wspólnie spędzili popołudnie pełne atrakcji i …"
+    },
+    {
+      "title": "Szkoła Podstawowa Nr 9 im. gen Józefa Wybickiego",
+      "url": "https://bip.wejherowo.pl/artykul/szkola-podstawowa-nr-9-im-gen-jozefa-wybickiego",
+      "snippet": "Feb 28, 2010 · Szkoła Podstawowa Nr 9 im. gen Józefa Wybickiego Szkoła Podstawowa Nr 9 im. gen Józefa Wybickiego dyrektor: …"
+    },
+    {
+      "title": "Szkoła Podstawowa – nr 9 im. gen. Józefa Wybickiego w Wejherowie",
+      "url": "https://archiwum.sp9.wejherowo.pl/?pokaz=kontakt",
+      "snippet": "Nasi uczniowie godnie reprezentowali społeczność Szkoły Podstawowej nr 9, podkreślając rangę wydarzenia swoją obecnością oraz …"
+    }
+  ]
+}

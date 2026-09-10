@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xbikevn/LightOnOCR-2-1B-vi",
+  "slug": "xbikevn-lightonocr-2-1b-vi",
+  "author": "xbikevn",
+  "url": "https://huggingface.co/xbikevn/LightOnOCR-2-1B-vi",
+  "created_at": "2026-09-10T10:57:17.000Z",
+  "updated_at": "2026-09-10T10:57:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lighton_ocr",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:lightonai/LightOnOCR-2-1B",
+    "base_model:finetune:lightonai/LightOnOCR-2-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1005647872,
+  "parameters_human": "1.01B",
+  "storage_bytes": 2022795553,
+  "storage_human": "2.0 GB",
+  "base_model": "lightonai/LightOnOCR-2-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/ar",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@________________.",
+      "snippet": "Explore and enjoy a wide range of videos, music, and more on YouTube."
+    },
+    {
+      "title": "m - YouTube",
+      "url": "https://www.youtube.com/m/home",
+      "snippet": "Share your videos with friends, family, and the world"
+    }
+  ]
+}

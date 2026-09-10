@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "g-assismoraes/DeltaP2S-Qwen2.5-14B-DeltaP2S-QwenCoder-Code-S13-QV",
+  "slug": "g-assismoraes-deltap2s-qwen2-5-14b-deltap2s-qwencoder-code-s13-qv",
+  "author": "g-assismoraes",
+  "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-14B-DeltaP2S-QwenCoder-Code-S13-QV",
+  "created_at": "2026-09-10T01:07:14.000Z",
+  "updated_at": "2026-09-10T01:09:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "delta-p2s",
+    "pen2sword",
+    "qwen2.5",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551555272,
+  "storage_human": "29.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "G - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/G",
+      "snippet": "In Unicode, the two appearances are generally treated as glyph variants with no semantic difference. Most serif typefaces use the …"
+    }
+  ]
+}

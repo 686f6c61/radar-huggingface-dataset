@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "htrbao/gr00t_n17_hila_la_cond_realworld_aloha_8tasks_50000_64",
+  "slug": "htrbao-gr00t_n17_hila_la_cond_realworld_aloha_8tasks_50000_64",
+  "author": "htrbao",
+  "url": "https://huggingface.co/htrbao/gr00t_n17_hila_la_cond_realworld_aloha_8tasks_50000_64",
+  "created_at": "2026-09-10T02:17:41.000Z",
+  "updated_at": "2026-09-10T02:18:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144093888,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910663529,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/?msockid=39e925a20485674b180d327205fc66c0",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more."
+    },
+    {
+      "title": "Canva：任何人都能輕鬆上手的 Visual Suite",
+      "url": "https://www.canva.com/zh_tw/?msockid=39e925a20485674b180d327205fc66c0",
+      "snippet": "Canva 是免費的線上平面設計工具，你可以使用 Canva 建立社群媒體貼文、簡報、海報、影片、標誌等等。"
+    },
+    {
+      "title": "Canva: Visual Suite cho mọi người",
+      "url": "https://www.canva.com/vi_vn/?msockid=39e925a20485674b180d327205fc66c0",
+      "snippet": "Canva là công cụ thiết kế đồ họa online miễn phí. Hãy dùng Canva để tạo bài đăng mạng xã hội, bài thuyết trình, poster, video, logo, …"
+    },
+    {
+      "title": "Canva : Graphisme, IA, Photo & Vidéo | Canva France",
+      "url": "https://www.canva.com/fr_fr/?msockid=39e925a20485674b180d327205fc66c0",
+      "snippet": "Du design à la retouche photo, l’IA, la vidéo et le travail en équipe, Canva FR est votre partenaire créatif nº 1. CV, logo, affiche…"
+    },
+    {
+      "title": "Canva : la Suite Studio accessible | Canva Canada",
+      "url": "https://www.canva.com/fr_ca/?msockid=39e925a20485674b180d327205fc66c0",
+      "snippet": "Canva est un outil de graphisme en ligne gratuit. Créez vos publications pour les réseaux, présentations, affiches, vidéos, logos et …"
+    }
+  ]
+}

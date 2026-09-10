@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-GGUF",
+  "slug": "mradermacher-cantonesellm-v2-0-30b-a3b-thinking-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-GGUF",
+  "created_at": "2026-09-10T09:43:07.000Z",
+  "updated_at": "2026-09-10T09:43:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jak refundowane są szczepionki przeciw grypie w sezonie 2026/2027 ...",
+      "url": "https://szczepienia.pzh.gov.pl/faq/jak-sa-refundowane-szczepionki-przeciw-grypie-w-sezonie-2026-2027/",
+      "snippet": "6 days ago · Szczepionki przeciw grypie (podawane we wstrzyknięciu) są bezpłatne: – dla dzieci i młodzieży do ukończenia 18 lat. …"
+    },
+    {
+      "title": "Dla kogo bezpłatne i refundowane szczepionki przeciw grypie?",
+      "url": "https://szczepienia.pzh.gov.pl/faq/komu-przysluguje-bezplatna-lub-refundowana-szczepionka-przeciw-grypie/",
+      "snippet": "Oct 19, 2022 · Komu przysługują bezpłatne lub refundowane szczepionki przeciw grypie? Zobacz czy możesz otrzymać darmowe …"
+    },
+    {
+      "title": "Vaxigrip cena i dostępność w aptekach w całym kraju",
+      "url": "https://www.gdziepolek.pl/produkty/136797/vaxigrip-iniekcja/apteki",
+      "snippet": "Vaxigrip 1 ampułkostrzykawka jest dostępny w ponad 100 aptekach w Polsce w cenie urzędowej od 0,00 zł do 53,30 zł. Sprawdź …"
+    },
+    {
+      "title": "Dostępność - grypa - Ministerstwo Zdrowia - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/zdrowie/dostepnosc---grypa",
+      "snippet": "Dostęp do szczepionek przeciw grypie w aptece jest zależny od dostaw realizowanych przez danego producenta szczepionki do …"
+    },
+    {
+      "title": "Które szczepionki są objęte refundacją apteczną od 1 lipca 2026 roku?",
+      "url": "https://www.mp.pl/szczepienia/ekspert/technika_organizacja_szczepien/376002,ktore-szczepionki-sa-objete-refundacja-apteczna-od-1-lipca-2026-roku",
+      "snippet": "Mar 21, 2025 · Tylko szczepionki przeciwko grypie (Vaxigrip, Influvac, Efluelda) oraz szczepionka przeciwko HPV (Cervarix) są objęte …"
+    }
+  ]
+}

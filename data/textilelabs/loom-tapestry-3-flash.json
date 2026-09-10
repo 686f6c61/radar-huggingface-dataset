@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Tapestry-3-Flash",
+  "slug": "textilelabs-loom-tapestry-3-flash",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Tapestry-3-Flash",
+  "created_at": "2026-09-10T09:21:48.000Z",
+  "updated_at": "2026-09-10T09:25:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "conversational",
+    "multi-turn",
+    "tool-use",
+    "agent-harness",
+    "retrieval-augmented",
+    "attribution",
+    "calibrated-honesty",
+    "humble-ai",
+    "philosophy-of-mind",
+    "small-language-model",
+    "cpu-trained",
+    "muon",
+    "text-generation-inference",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7184064,
+  "parameters_human": "7.2M",
+  "storage_bytes": 46811426,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ARD Mediathek: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.ardmediathek.de/",
+      "snippet": "Alle Inhalte der ARD Mediathek im Überblick: Livestreams, Nachrichten, Filme, Serien und spannende Dokus. Hier anschauen!"
+    },
+    {
+      "title": "Das Erste in der Mediathek – jetzt online anschauen",
+      "url": "https://www.ardmediathek.de/daserste",
+      "snippet": "Sturm der Liebe & Rote Rosen Letzte Folge verpasst? Neue Episode vorab! Hier findest du jeden Tag Neues rund um die …"
+    },
+    {
+      "title": "ARD Mediathek auf der Hilfeseite der ARD | ARD Hilfe",
+      "url": "https://hilfe.ard.de/mediathek/",
+      "snippet": "Hilfe & Informationen rund um die ARD Mediathek auf der Hilfeseite der ARD: Antworten auf häufige Fragen zum Programm oder …"
+    },
+    {
+      "title": "ARD Mediathek: Filme und Serien im Stream - Sendung verpasst?",
+      "url": "https://www.prisma.de/mediathek/ard/",
+      "snippet": "In der ARD Mediathek finden Sie aktuelle Videos, Filme und Serien aus dem TV-Programm und können diese im Stream online …"
+    },
+    {
+      "title": "ARD Mediathek - Sendung verpasst - Programm heute",
+      "url": "https://www.ardmediathek.de/programm/heute",
+      "snippet": "Panoramabilder / Bergwetter Täglich von 6.00 Uhr bis 20.00 Uhr in der ARD Mediathek unter www.br.de/panoramabilder 00:00 Uhr"
+    }
+  ]
+}

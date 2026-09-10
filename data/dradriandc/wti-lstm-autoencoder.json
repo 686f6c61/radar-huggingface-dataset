@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DrAdrianDC/wti-lstm-autoencoder",
+  "slug": "dradriandc-wti-lstm-autoencoder",
+  "author": "DrAdrianDC",
+  "url": "https://huggingface.co/DrAdrianDC/wti-lstm-autoencoder",
+  "created_at": "2026-09-10T08:56:00.000Z",
+  "updated_at": "2026-09-10T10:08:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "time-series",
+    "anomaly-detection",
+    "lstm",
+    "autoencoder",
+    "wti",
+    "crude-oil",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3411473,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1 EUR to INR - Euros to Indian Rupees Exchange Rate - Xe",
+      "url": "https://www.xe.com/en-gb/currencyconverter/convert/?Amount=1&From=EUR&To=INR",
+      "snippet": "1 EUR equals 110.72 INR using the current mid-market exchange rate of ₹110.72. If you're looking to send 1 EUR to INR, check if Xe …"
+    },
+    {
+      "title": "Convert EUR to INR",
+      "url": "https://www.unitconverters.net/currency/eur-to-inr.htm",
+      "snippet": "1 day ago · Instant free online tool for EUR to INR conversion or vice versa. The EUR [Euro] to INR [Indian Rupee] conversion table …"
+    },
+    {
+      "title": "Euros to Indian rupees Exchange Rate. Convert EUR/INR - Wise",
+      "url": "https://wise.com/gb/currency-converter/eur-to-inr-rate",
+      "snippet": "Convert EUR to INR with the Wise Currency Converter. Analyze historical currency charts or live Euro / Indian rupee rates and get …"
+    },
+    {
+      "title": "Cambio Euro Rupia Indiana | EUR INR in Tempo Reale",
+      "url": "https://www.cambioeuro.it/euro-rupia-indiana/",
+      "snippet": "Consulta il cambio Euro Rupia Indiana con quotazioni di mercato in tempo reale. Convertitore di valuta EUR INR e tabelle di …"
+    },
+    {
+      "title": "EUR to INR - Euro to Indian Rupee Conversion - Exchange Rates",
+      "url": "https://www.exchange-rates.org/converter/eur-inr",
+      "snippet": "Use the EUR to INR currency converter at Exchange-Rates.org for accurate and up-to-date exchange rates. Easily convert Euros to …"
+    }
+  ]
+}

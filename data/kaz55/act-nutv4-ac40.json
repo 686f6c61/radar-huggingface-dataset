@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-nutv4-ac40",
+  "slug": "kaz55-act-nutv4-ac40",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-nutv4-ac40",
+  "created_at": "2026-09-10T08:54:44.000Z",
+  "updated_at": "2026-09-10T08:55:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dg5f",
+    "ur5e",
+    "gelsight",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51648154,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206647656,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to use multiple monitors in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/how-to-use-multiple-monitors-in-windows",
+      "snippet": "Learn how to connect your Windows PC to external monitors and adjust the display settings."
+    },
+    {
+      "title": "Troubleshoot external monitor connections in Windows",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-external-monitor-connections-in-windows",
+      "snippet": "For information on how many monitors your display adapter can support, contact its manufacturer. Note If you are trying to use a …"
+    },
+    {
+      "title": "Present on multiple monitors (and view speaker notes privately)",
+      "url": "https://support.microsoft.com/en-us/powerpoint/present-on-multiple-monitors-and-view-speaker-notes-privately",
+      "snippet": "You can present with two monitors: Using Presenter View is a great way to view your presentation with speaker notes on one monitor …"
+    },
+    {
+      "title": "Troubleshoot screen flickering in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshoot-screen-flickering-in-windows",
+      "snippet": "If you're having trouble seeing your screen properly, you may need to start your PC in safe mode to follow the steps below. Fix your …"
+    },
+    {
+      "title": "Change your screen resolution and layout in Windows",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-your-screen-resolution-and-layout-in-windows",
+      "snippet": "Learn how to improve the clarity of text and images displayed on your screen by changing the screen resolution, scale and layout of …"
+    }
+  ]
+}

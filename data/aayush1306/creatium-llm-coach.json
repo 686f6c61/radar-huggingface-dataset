@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aayush1306/creatium-llm-coach",
+  "slug": "aayush1306-creatium-llm-coach",
+  "author": "aayush1306",
+  "url": "https://huggingface.co/aayush1306/creatium-llm-coach",
+  "created_at": "2026-09-10T10:20:46.000Z",
+  "updated_at": "2026-09-10T10:30:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What time is it in Seattle, United States right now?",
+      "url": "https://24timezones.com/Seattle/time",
+      "snippet": "1 day ago · Exact time in Seattle time zone now. Official Seattle timezone and time change dates for year 2026."
+    },
+    {
+      "title": "Current Time in Seattle, USA - DateTimeOnline",
+      "url": "https://www.datetimeonline.com/worldclock/usa/seattle",
+      "snippet": "1 day ago · Current time in Seattle, Washington, USA. Convert time between time zones. Get Seattle's upcoming holiday, weather, …"
+    },
+    {
+      "title": "Current Time in Seattle, United States | Time Zone & Weather",
+      "url": "https://www.worldwideclock.com/united-states/washington/seattle",
+      "snippet": "1 day ago · Check the current local time in Seattle, Washington, United States, including time zone, UTC offset, sunrise and sunset, …"
+    },
+    {
+      "title": "Current Time in Seattle, United States (PDT) [Live Clock]",
+      "url": "https://time.now/seattle/",
+      "snippet": "Current time in Seattle, United States (PDT, UTC-7). Live clock with seconds, sunrise/sunset, timezone info and daylight-saving …"
+    },
+    {
+      "title": "Time in Seattle, United States now",
+      "url": "https://timehall.com/seattle",
+      "snippet": "1 day ago · Current time in Seattle, United States, today's sunrise and sunset times, time difference with other cities, and distances to …"
+    }
+  ]
+}

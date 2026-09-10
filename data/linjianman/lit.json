@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "linjianman/LIT",
+  "slug": "linjianman-lit",
+  "author": "linjianman",
+  "url": "https://huggingface.co/linjianman/LIT",
+  "created_at": "2026-09-10T09:05:49.000Z",
+  "updated_at": "2026-09-10T10:14:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "LIBERO",
+    "LIBERO-Plus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9373131513,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Betflag - ammazzacasino.com",
+      "url": "https://www.ammazzacasino.com/recensioni-casino-online/betflag/",
+      "snippet": "Betflag.it si è affacciato sul mercato dei casinò online con licenza italiana da poco tempo. Nonostante questo bisogna considerare …"
+    },
+    {
+      "title": "Betflag - Forum italiano sui casino online",
+      "url": "https://www.ammazzacasino.com/forum/topic/16632-betflag/",
+      "snippet": "Nov 29, 2016 · Ciao a tutti, sono un vecchio utente che manca da molto. Non mi sono mai lamentato dei casino e non voglio farlo …"
+    },
+    {
+      "title": "chat betflag",
+      "url": "https://pronostigoal.forumfree.it/?t=80204200",
+      "snippet": "Apr 19, 2024 · Posts 1,349 Status come mai la chat di betflag non funziona mai??? e via mail rispondono a cazz??? belle domande …"
+    },
+    {
+      "title": "Betflag ed il moneyback",
+      "url": "https://pronostigoal.forumfree.it/?t=77995595",
+      "snippet": "Oct 22, 2020 · pronostigoal forum di riferimento degli esperti di pronostici calcio e scommesse sportive, studio e analisi di pronostici …"
+    },
+    {
+      "title": "Gaudio-Ferrer - Forum",
+      "url": "https://www.infobetting.com/forum/viewtopic.php?t=17046",
+      "snippet": "1 day ago · Questa sezione è dedicata ai pronostici e alle scommesse sul tennis. Potete esprimere le vostre opinioni, fare pronostici, …"
+    }
+  ]
+}

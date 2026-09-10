@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ggnoll/Qwen3.8-27B-Uncensored-Aggressive-oQ3.5e",
+  "slug": "ggnoll-qwen3-8-27b-uncensored-aggressive-oq3-5e",
+  "author": "ggnoll",
+  "url": "https://huggingface.co/ggnoll/Qwen3.8-27B-Uncensored-Aggressive-oQ3.5e",
+  "created_at": "2026-09-10T08:58:16.000Z",
+  "updated_at": "2026-09-10T10:04:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 14459895746,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "使用 Microsoft Word 进行免费的在线文档编辑 | Microsoft 365",
+      "url": "https://www.microsoft.com/zh-cn/microsoft-365/word?msockid=144603f8e6426f9f19231428e7146ea3",
+      "snippet": "使用 Microsoft Word 在线编辑文档，并使用 Copilot 提供的 AI 建议来改善语法、样式和清晰度。随时随地书写、编辑和协作。"
+    },
+    {
+      "title": "Microsoft Word ile Ücretsiz Çevrimiçi Belge Düzenleme | Microsoft 365",
+      "url": "https://www.microsoft.com/tr-tr/microsoft-365/word?msockid=144603f8e6426f9f19231428e7146ea3",
+      "snippet": "Copilot’tan gelen yapay zeka destekli dil bilgisi, stil ve açıklık önerileriyle belgelerinizi çevrimiçi olarak düzenlemek için Microsoft …"
+    },
+    {
+      "title": "My Apps",
+      "url": "https://myapplications.microsoft.com/",
+      "snippet": "Access and manage all your Microsoft apps and services in one place with My Apps."
+    },
+    {
+      "title": "Microsoft Teams",
+      "url": "https://teams.microsoft.com/v2/?skipauthstrap=1",
+      "snippet": "Sign in to your Microsoft Teams account to collaborate, organize, and stay connected with your team."
+    },
+    {
+      "title": "Microsoft Word - Windows官方下载 | 微软应用商店 | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xpff9ltfvsk6f7?hl=zh-CN&gl=CN",
+      "snippet": "Word文档 • 图像、表格、图表、SmartArt、脚注、公式等皆能完美呈现 • Word 文档和电脑上的一样精美 • 自动记忆功能让您可以在任 …"
+    }
+  ]
+}

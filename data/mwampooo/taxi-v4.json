@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Mwampooo/Taxi-v4",
+  "slug": "mwampooo-taxi-v4",
+  "author": "Mwampooo",
+  "url": "https://huggingface.co/Mwampooo/Taxi-v4",
+  "created_at": "2026-09-10T10:22:42.000Z",
+  "updated_at": "2026-09-10T10:22:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147852,
+  "storage_human": "147852 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Medir la distancia entre puntos - Ordenador - Ayuda de Google Maps",
+      "url": "https://support.google.com/maps/answer/1628031?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Maps Medir la distancia entre puntos Puedes medir la distancia entre dos o más puntos del mapa. Por ejemplo, puedes …"
+    },
+    {
+      "title": "6 tính năng AI vừa được cập nhật của Google Maps",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Mar 14, 2024 · Bây giờ Google Maps cũng đã được tích hợp AI, với 1 bản nâng cấp lớn. Dưới đây là 6 tính năng Ai của Google …"
+    },
+    {
+      "title": "Use Street View in Google Maps",
+      "url": "https://support.google.com/maps/answer/3093484?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Explore Street View in Google Maps To explore in Street View: Swipe on the screen or to activate \"Tilt to look,\" tap More Tilt to look. …"
+    },
+    {
+      "title": "Ayuda de Google Maps",
+      "url": "https://support.google.com/maps/?hl=es-419",
+      "snippet": "Centro de asistencia oficial de Google Maps donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    }
+  ]
+}

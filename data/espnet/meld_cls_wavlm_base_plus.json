@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "espnet/meld_cls_wavlm_base_plus",
+  "slug": "espnet-meld_cls_wavlm_base_plus",
+  "author": "espnet",
+  "url": "https://huggingface.co/espnet/meld_cls_wavlm_base_plus",
+  "created_at": "2026-09-10T09:40:45.000Z",
+  "updated_at": "2026-09-10T09:41:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "espnet",
+  "languages": [],
+  "tags": [
+    "espnet",
+    "cls",
+    "meld",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 383341009,
+  "storage_human": "383 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Speedtest d’Ookla – le test de vitesse de connexion global",
+      "url": "https://www.speedtest.net/fr",
+      "snippet": "Testez la vitesse de votre connexion Internet avec Speedtest d'Ookla, disponible sur tous vos appareils grâce à des applications …"
+    },
+    {
+      "title": "Speedtest por Ookla - La prueba de velocidad de banda ancha global",
+      "url": "https://www.speedtest.net/es",
+      "snippet": "Mide la velocidad de tu conexión a Internet con Speedtest, disponible para dispositivos móviles y de escritorio."
+    },
+    {
+      "title": "Speedtest oleh Ookla - Uji Kecepatan Broadband Global",
+      "url": "https://www.speedtest.net/id",
+      "snippet": "Gunakan Speedtest untuk mengukur kecepatan internet Anda dengan aplikasi desktop dan seluler gratis."
+    },
+    {
+      "title": "Speedtest di Ookla - Il test globale per la velocità della tua banda larga",
+      "url": "https://www.speedtest.net/it",
+      "snippet": "Test your internet speed with Speedtest by Ookla, a free and reliable tool for desktop and mobile devices."
+    }
+  ]
+}

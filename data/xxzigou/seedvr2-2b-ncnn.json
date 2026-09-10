@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "xxzigou/SeedVR2-2b-NCNN",
+  "slug": "xxzigou-seedvr2-2b-ncnn",
+  "author": "xxzigou",
+  "url": "https://huggingface.co/xxzigou/SeedVR2-2b-NCNN",
+  "created_at": "2026-09-10T01:27:24.000Z",
+  "updated_at": "2026-09-10T03:50:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18830405316,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Directions, Traffic & Transit - Google Maps",
+      "url": "https://maps.google.com/maps/dir/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/en/earth/",
+      "snippet": "Google Earth is the most photorealistic, digital version of our planet. Where do the images come from? How are they they put …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Map data ©2026 Google Terms 20 km Directions"
+    },
+    {
+      "title": "Plus Codes - Google Maps",
+      "url": "https://maps.google.com/pluscodes/",
+      "snippet": "Plus Codes are short codes for locations, for places that don't have their own street address."
+    }
+  ]
+}

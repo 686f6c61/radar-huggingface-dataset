@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Vdn-Minimax-H3-Comfy",
+  "slug": "taurusduan-vdn-minimax-h3-comfy",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Vdn-Minimax-H3-Comfy",
+  "created_at": "2026-09-10T01:08:29.000Z",
+  "updated_at": "2026-09-10T01:08:29.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "safetensors",
+    "comfyui",
+    "video-generation",
+    "audio-generation",
+    "openvdn",
+    "image-to-video",
+    "text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83127100981,
+  "storage_human": "83.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Cette page peut comporter du contenu traduit à l'aide d'une technologie d'IA. Les traductions générées par IA peuvent contenir des …"
+    },
+    {
+      "title": "regex - Validating IPv4 addresses with regexp - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/5284147/validating-ipv4-addresses-with-regexp",
+      "snippet": "IPv4 address (accurate capture) Matches 0.0.0.0 through 255.255.255.255, but does capture invalid addresses such as 1.1.000.1 …"
+    },
+    {
+      "title": "Change Google Translate dropdown programmatically",
+      "url": "https://stackoverflow.com/questions/5569927/change-google-translate-dropdown-programmatically",
+      "snippet": "Apr 6, 2011 · When you select from the dropdown that the google script inserts, a Google Translate bar appears at the top of the …"
+    },
+    {
+      "title": "html - transform:translate (10%)とするとずれる。 - スタック・オー …",
+      "url": "https://ja.stackoverflow.com/questions/35504/transformtranslate10%E3%81%A8%E3%81%99%E3%82%8B%E3%81%A8%E3%81%9A%E3%82%8C%E3%82%8B",
+      "snippet": "Jun 12, 2017 · transform: translate (10%); の10％は width:90%; すなわち width:450px; に対するもので、この場合 45px です。 10％ …"
+    }
+  ]
+}

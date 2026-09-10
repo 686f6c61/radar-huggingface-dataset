@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "directedbykobyperez/YuE2-3B",
+  "slug": "directedbykobyperez-yue2-3b",
+  "author": "directedbykobyperez",
+  "url": "https://huggingface.co/directedbykobyperez/YuE2-3B",
+  "created_at": "2026-09-10T01:58:06.000Z",
+  "updated_at": "2026-09-10T01:58:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "yue2",
+    "music-generation",
+    "symbolic-planning",
+    "agentic-editing",
+    "custom_code",
+    "text-to-audio",
+    "zh",
+    "en",
+    "arxiv:2503.08638",
+    "license:cc-by-nc-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Nejnavštěvovanější český internetový portál nabízející vyhledávač, e-mail, aktuální zprávy, předpověď počasí a odkazy, které se …"
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě. Přejít na Seznam.cz"
+    },
+    {
+      "title": "TV Seznam - TV program dnes, večer, zítra a na 14 dní",
+      "url": "https://tv.seznam.cz/",
+      "snippet": "Televizní program českých i zahraničních stanic. V přehledném TV programu od Seznamu zjistíte, co dávají v TV dnes, večer, zítra a …"
+    },
+    {
+      "title": "Seznam Slovník",
+      "url": "https://slovnik.seznam.cz/",
+      "snippet": "Vícejazyčný online slovník. Překlady z češtiny do angličtiny, francouzštiny, němčiny, španělštiny, italštiny, ruštiny, slovenštiny a naopak."
+    },
+    {
+      "title": "Počasí - předpověď na dnes, zítra a 5 dní pro ČR i svět ...",
+      "url": "https://pocasi.seznam.cz/",
+      "snippet": "Nejnavštěvovanější předpověď počasí ☀️ v Česku. Jak bude dnes, zítra a dalších 5 dní? ️ Jak bude v Česku, na horách i kdekoliv …"
+    }
+  ]
+}

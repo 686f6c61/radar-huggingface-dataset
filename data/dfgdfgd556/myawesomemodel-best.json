@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dfgdfgd556/MyAwesomeModel-best",
+  "slug": "dfgdfgd556-myawesomemodel-best",
+  "author": "dfgdfgd556",
+  "url": "https://huggingface.co/dfgdfgd556/MyAwesomeModel-best",
+  "created_at": "2026-09-10T10:50:35.000Z",
+  "updated_at": "2026-09-10T10:56:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Έντυπα – Εγγραφή / Ακύρωση ως Εργοδότης - Tax For All - Gov.cy",
+      "url": "https://www.gov.cy/mof-tfa/documents/eggrafi-akyrosi-os-ergodotis/",
+      "snippet": "Στην καρτέλα «Στοιχεία μηνύματος» που εμφανίζεται επιλέγετε: Στο πεδίο «Μήνυμα», γράψετε «Έντυπο εργοδότη». Ακολούθως …"
+    },
+    {
+      "title": "Το Τμήμα Φορολογίας δημοσιεύει Ενημερωτικό Υλικό και …",
+      "url": "https://www.gov.cy/oikonomia/to-tmima-forologias-dimosievei-enimerotiko-yliko-kai-diefkriniseis-schetika-me-tin-ypovoli-tis-dilosis-ergodoti-gia-to-etos-2025-kai-meta-meso-tou-systimatos-tfa/",
+      "snippet": "Nov 6, 2025 · Διευκρινίζεται ότι για να είναι δυνατή η καταβολή των παρακρατήσεων στο Τμήμα Φορολογίας πρέπει να προηγηθεί η …"
+    },
+    {
+      "title": "Καλώς ορίσατε στο Tax For All Τμήμα Φορολογίας",
+      "url": "https://taxforall.mof.gov.cy/Home",
+      "snippet": "Το Tax For All παρέχεται από το Τμήμα Φορολογίας και σας επιτρέπει να διαχειρίζεστε τις φορολογικές σας υποθέσεις διαδικτυακά. …"
+    },
+    {
+      "title": "Ενημερωτικό Υλικό και Διευκρινίσεις σχετικά με την Υποβολή της …",
+      "url": "https://dikaiosyni.com/enimerwsi/enimerotiko-iliko-k-diekrinisis-sxetika-me-tin-ipovoli-dilosis-ergodoti-gia-to-etos-2025-kai-meta-meso-tu-sistimatos-tfa/",
+      "snippet": "Nov 7, 2025 · Διαβάστε την Ανακοίνωση ΕΔΩ. Τμήμα Φορολογίας."
+    },
+    {
+      "title": "Το Τμήμα Φορολογίας δημοσιεύει Ενημερωτικό Υλικό και …",
+      "url": "https://www.oeb.org.cy/to-tmima-forologias-dimosieyei-enimerotiko-yliko-kai-dieykriniseis-schetika-me-tin-ypovoli-tis-dilosis-ergodoti-gia-to-etos-2025-kai-meta-meso-toy-systimatos-tfa/",
+      "snippet": "Nov 8, 2025 · Διευκρινίζεται ότι για να είναι δυνατή η καταβολή των παρακρατήσεων στο Τμήμα Φορολογίας πρέπει να προηγηθεί η …"
+    }
+  ]
+}

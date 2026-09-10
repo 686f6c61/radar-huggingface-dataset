@@ -5,7 +5,7 @@
   "author": "ManniX-ITA",
   "url": "https://huggingface.co/ManniX-ITA/Qwen3.6-27B-A3B-Coder-MTP-GGUF",
   "created_at": "2026-07-15T03:54:13.000Z",
-  "updated_at": "2026-09-09T05:22:05.000Z",
+  "updated_at": "2026-09-09T14:06:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,12 +27,12 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 38,
+  "likes": 39,
   "downloads_30d": 63399,
   "trending_score": 8,
   "parameters": 26213016704,
   "parameters_human": "26.21B",
-  "storage_bytes": 430622758432,
+  "storage_bytes": 430622953285,
   "storage_human": "430.6 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [

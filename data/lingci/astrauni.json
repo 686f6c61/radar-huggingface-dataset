@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lingci/astrauni",
+  "slug": "lingci-astrauni",
+  "author": "Lingci",
+  "url": "https://huggingface.co/Lingci/astrauni",
+  "created_at": "2026-09-10T08:59:26.000Z",
+  "updated_at": "2026-09-10T08:59:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Floating Point Representation - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/digital-logic/floating-point-representation-basics/",
+      "snippet": "Oct 8, 2025 · Both +0 and -0 are valid and distinct representations of zero in floating-point format. 0 00000000 …"
+    },
+    {
+      "title": "IEEE Floating Point Representation",
+      "url": "https://www.scribd.com/document/525264486/Floating-numbers",
+      "snippet": "The document discusses representation and arithmetic operations of floating-point numbers. It describes: 1) The IEEE 32-bit single …"
+    },
+    {
+      "title": "Floating Point Representation - Read the Docs",
+      "url": "https://imath.readthedocs.io/en/stable/classes/float.html",
+      "snippet": "Floating Point Representation ¶ The half type is a 16-bit floating number, compatible with the IEEE 754-2008 binary16 type. …"
+    },
+    {
+      "title": "Floating Point Representation — Imath Documentation",
+      "url": "https://cary-ilm-imath.readthedocs.io/en/latest/float.html",
+      "snippet": "Floating Point Representation ¶ Representation of a 32-bit float: We assume that a float, f, is an IEEE 754 single-precision floating …"
+    },
+    {
+      "title": "Peppa Pig Says \"I'm Peppa Pig\" 1,000,000,000,000,000 times",
+      "url": "https://www.youtube.com/watch?v=ZDCWdMN7d2s",
+      "snippet": "Jun 18, 2017 · Peppa Pig Says \"I'm Peppa Pig\" 1,000,000,000,000,000 timesPeppa Pig dice \"Yo soy Peppa Pig\" …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MeghanaKap/flowtts_naija_full_ft_v2_epoch5",
+  "slug": "meghanakap-flowtts_naija_full_ft_v2_epoch5",
+  "author": "MeghanaKap",
+  "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch5",
+  "created_at": "2026-09-10T10:31:07.000Z",
+  "updated_at": "2026-09-10T10:32:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:YatharthS/MiraTTS",
+    "base_model:finetune:YatharthS/MiraTTS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505882368,
+  "parameters_human": "505.9M",
+  "storage_bytes": 2037654772,
+  "storage_human": "2.0 GB",
+  "base_model": "YatharthS/MiraTTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Panel de agencias de Civitatis.com - Login",
+      "url": "https://www.civitatis.com/es/agencias/",
+      "snippet": "¿Tienes una agencia de viajes? Regístrate en Civitatis y comienza a ofrecer a tus clientes las mejores excursiones y visitas guiadas …"
+    },
+    {
+      "title": "Panel de agencias de Civitatis.com",
+      "url": "https://www.civitatis.com/es/agencias/landing-preguntas-frecuentes",
+      "snippet": "¿Tienes una agencia de viajes? Regístrate en Civitatis y comienza a ofrecer a tus clientes las mejores excursiones y visitas guiadas …"
+    },
+    {
+      "title": "Civitatis - Sign In",
+      "url": "https://marketing.civitatis.com/",
+      "snippet": "Sign In Sign in with Google"
+    },
+    {
+      "title": "B2B – Centro de ayuda de Civitatis - Preguntas frecuentes",
+      "url": "https://civitatis.zendesk.com/hc/es/sections/30742146653469-B2B",
+      "snippet": "Si, todas las agencias de viajes pueden solicitar el registro en nuestro portal de agencias. Una vez comprobada y validada la …"
+    },
+    {
+      "title": "Agencias de viajes – Centro de ayuda de Civitatis - Preguntas frecuentes",
+      "url": "https://civitatis.zendesk.com/hc/es/categories/37246243645725-Agencias-de-viajes",
+      "snippet": "Regístrate en civitatis.com/agencias/registro. Envía la licencia de agencia de viajes que acredita tu actividad comercial. Una vez …"
+    }
+  ]
+}

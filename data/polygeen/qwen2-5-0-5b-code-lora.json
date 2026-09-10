@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "polygeen/qwen2.5-0.5b-code-lora",
+  "slug": "polygeen-qwen2-5-0-5b-code-lora",
+  "author": "polygeen",
+  "url": "https://huggingface.co/polygeen/qwen2.5-0.5b-code-lora",
+  "created_at": "2026-09-10T10:04:04.000Z",
+  "updated_at": "2026-09-10T10:04:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15772668,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotel Overijse Belgie | Hotel Avalon | Hotel near Walibi Wavre",
+      "url": "https://www.hotel-avalon.be/",
+      "snippet": "Hotel Avalon is een familiaal hotel in Overijse, ideaal gelegen tussen Waver, Brussel en Leuven. Al meer dan 80 jaar verwelkomen …"
+    },
+    {
+      "title": "Hotel in Overijse | Hotel Avalon | Hotel near Walibi Belgium and …",
+      "url": "https://www.hotel-avalon.be/home-1",
+      "snippet": "Welcome to Hotel -Restaurant Avalon. Avalon is a hotel that has been around for 80 years. It is located in a beautiful green area on …"
+    },
+    {
+      "title": "Avalon Hotel, Overijse (bijgewerkte prijzen 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/be/avalon.nl.html?msockid=06c22e40aa3269471a0c3990ab736891",
+      "snippet": "De prijzen bij Avalon Hotel kunnen afhankelijk zijn van je verblijf (bijv. data die je selecteert, hotelvoorwaarden enz.). Je ziet de …"
+    },
+    {
+      "title": "Avalon Hotel Overijse",
+      "url": "https://avalon-hotel-overijse.bedspro.com/nl/",
+      "snippet": "Aug 16, 2026 · Dit Avalon Hotel Overijse met 2 sterren ligt in Overijse op 4 km afstand van het Meer van Genval en biedt een uitzicht …"
+    },
+    {
+      "title": "Home - Avalon Hotel",
+      "url": "http://avalon-hotel.neobelgie.be/",
+      "snippet": "Verblijf in het charmante dorpje Tombeek en neem de vredige sfeer van het familiebeheerde Hotel Avalon in u op. Bewonder de …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "textclf",
   "url": "https://huggingface.co/textclf/Qwen3-Coder-Next-TQ-4bit",
   "created_at": "2026-08-30T08:05:56.000Z",
-  "updated_at": "2026-08-30T18:00:01.000Z",
+  "updated_at": "2026-09-09T19:12:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,7 +19,7 @@
     "conversational",
     "license:apache-2.0",
     "endpoints_compatible",
-    "tq_quant",
+    "tq",
     "region:us"
   ],
   "likes": 0,

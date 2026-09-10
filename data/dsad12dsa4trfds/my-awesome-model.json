@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSAD12DSA4TRFDS/my-awesome-model",
+  "slug": "dsad12dsa4trfds-my-awesome-model",
+  "author": "DSAD12DSA4TRFDS",
+  "url": "https://huggingface.co/DSAD12DSA4TRFDS/my-awesome-model",
+  "created_at": "2026-09-10T09:01:33.000Z",
+  "updated_at": "2026-09-10T09:15:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=it",
+      "snippet": "Non è possibile visualizzare una descrizione perché il sito non lo consente."
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/u/0/",
+      "snippet": "Non è possibile visualizzare una descrizione perché il sito non lo consente."
+    },
+    {
+      "title": "Accedi - Account Google",
+      "url": "https://accounts.google.com/login?hl=it",
+      "snippet": "Non si tratta del tuo computer? Utilizza una finestra di navigazione privata per accedere. Scopri di più sull'utilizzo della modalità …"
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/login?service=mail&hl=it",
+      "snippet": "Gmail è un servizio email intuitivo, efficace e utile. 15 GB di spazio di archiviazione, meno spam e accesso tramite dispositivi mobili."
+    }
+  ]
+}

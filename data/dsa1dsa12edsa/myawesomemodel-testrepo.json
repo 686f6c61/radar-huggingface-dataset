@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSA1DSA12EDSA/MyAwesomeModel-TestRepo",
+  "slug": "dsa1dsa12edsa-myawesomemodel-testrepo",
+  "author": "DSA1DSA12EDSA",
+  "url": "https://huggingface.co/DSA1DSA12EDSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T09:53:09.000Z",
+  "updated_at": "2026-09-10T09:54:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Budowa magazynu - YouTube",
+      "url": "https://www.youtube.com/watch?v=7QPVpKptvOo",
+      "snippet": "Sep 28, 2011 · Film dydaktyczny „Budowa magazynu\" realizowany w ramach projektu unijnego „Wielkopolska musi widzieć\" przez …"
+    },
+    {
+      "title": "Odkryj tajniki budowy magazynów modułowych! - YouTube",
+      "url": "https://www.youtube.com/watch?v=P1Ajcljvgb4",
+      "snippet": "Sep 10, 2025 · Odkryj tajniki budowy magazynów modułowych! Budowa magazynu od podstaw to nie tylko wyzwanie, ale również …"
+    },
+    {
+      "title": "Profesjonalne filmy z budowy TIME-LAPSE - GuruMedia",
+      "url": "https://gurumedia.pl/",
+      "snippet": "Feb 26, 2024 · Jesteśmy liderem w produkcji wysokiej jakości materiałów multimedialnych dokumentujących procesy budowlane. …"
+    },
+    {
+      "title": "Poradniki budowlane - Filmy instruktażowe dla majsterkowiczów",
+      "url": "https://budujemydom.pl/filmy",
+      "snippet": "Zobacz filmy poradnikowe krok po kroku, które pomogą Ci w budowie, remontach i wykończeniach. Praktyczne wskazówki dla każdego."
+    },
+    {
+      "title": "Budownictwo - Magazyn Budowa",
+      "url": "https://magazyn-budowa.pl/budownictwo/",
+      "snippet": "Jun 18, 2026 · Karczowanie działki pod budowę domu — usuwanie korzeni i niwelacja terenu Karczowanie działki pod budowę to …"
+    }
+  ]
+}

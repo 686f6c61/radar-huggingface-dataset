@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-Qwen3.8-27B-DSpark-vLLM-YaRN-1M-Context",
+  "slug": "drowzeys-keys-qwen3-8-27b-dspark-vllm-yarn-1m-context",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-Qwen3.8-27B-DSpark-vLLM-YaRN-1M-Context",
+  "created_at": "2026-09-10T02:05:39.000Z",
+  "updated_at": "2026-09-10T02:05:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dspark",
+    "vllm",
+    "yarn",
+    "dgx-spark",
+    "custom_code",
+    "base_model:RadixArk/Qwen3.8-27B-DSpark",
+    "base_model:finetune:RadixArk/Qwen3.8-27B-DSpark",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1359284737,
+  "parameters_human": "1.36B",
+  "storage_bytes": 2718576122,
+  "storage_human": "2.7 GB",
+  "base_model": "RadixArk/Qwen3.8-27B-DSpark",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RADIO 21 - bester ROCK 'N POP",
+      "url": "https://www.radio21.de/",
+      "snippet": "RADIO 21 - Willkommen auf der offiziellen Seite - Bei uns klingt kein Tag wie der andere, wie ein iPod im Shuffle-Modus."
+    },
+    {
+      "title": "Jobs bei RADIO 21 | RADIO 21 - bester ROCK 'N POP",
+      "url": "https://www.radio21.de/unternehmen/jobs.html",
+      "snippet": "Jobs bei RADIO 21 RADIO 21 ist der norddeutsche Teil des Deutschen Städte-Network, dessen Programm zusammen mit Rockland …"
+    },
+    {
+      "title": "bester ROCK 'N POP für Leer und die Region - RADIO 21",
+      "url": "https://radioplayer.radio21.de/leer/",
+      "snippet": "Live Sie hören gerade: RADIO 21 • Leer bester ROCK 'N POP für Leer und die Region Jetzt live: Narcotic von Liquido"
+    },
+    {
+      "title": "bester ROCK 'N POP für Braunschweig und die Region - RADIO 21",
+      "url": "https://radioplayer.radio21.de/braunschweig/",
+      "snippet": "Live Sie hören gerade: RADIO 21 • Braunschweig bester ROCK 'N POP für Braunschweig und die Region 8:33 AM Mr Charm von …"
+    },
+    {
+      "title": "Gewinnspiele - Radio 21",
+      "url": "https://player.radio21.de/gewinnspiele",
+      "snippet": "RADIO 21 - Willkommen auf der offiziellen Seite - Bei uns klingt kein Tag wie der andere, wie ein iPod im Shuffle-Modus."
+    }
+  ]
+}

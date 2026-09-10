@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ChatoyantAI/Gemma-4-12B-Roleplay-6040-SFT",
+  "slug": "chatoyantai-gemma-4-12b-roleplay-6040-sft",
+  "author": "ChatoyantAI",
+  "url": "https://huggingface.co/ChatoyantAI/Gemma-4-12B-Roleplay-6040-SFT",
+  "created_at": "2026-09-10T01:27:46.000Z",
+  "updated_at": "2026-09-10T01:54:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 556818186,
+  "storage_human": "557 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "Outlook如何设置延迟（定时）发送邮件 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/15622f244e9c16bcfcbea5fd.html",
+      "snippet": "Oct 13, 2020 · Outlook如何设置延迟（定时）发送邮件,你知道吗？Outlook可以设置延迟发送邮件，设置之后，如果邮件发送出去之后 …"
+    },
+    {
+      "title": "Outlook 2007 problème mot de passe [Résolu] - Mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-3747221-outlook-2007-probleme-mot-de-passe",
+      "snippet": "May 22, 2014 · Résumé de la discussion Outlook 2007 peut demander le mot de passe Exchange à chaque connexion alors que …"
+    },
+    {
+      "title": "Impossible de me connecter à Canva avec mail Outlook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299350-impossible-de-me-connecter-a-canva-avec-mail-outlook",
+      "snippet": "Jul 15, 2026 · Bonjour, Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-did-not-get-saved-on-one-drive/59024bed-1dca-46ff-a4ab-dc0d1db704aa",
+      "snippet": ""
+    }
+  ]
+}

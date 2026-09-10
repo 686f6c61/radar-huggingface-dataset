@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wsdefgad/MyAwesomeModel-TestRepo",
+  "slug": "wsdefgad-myawesomemodel-testrepo",
+  "author": "wsdefgad",
+  "url": "https://huggingface.co/wsdefgad/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T10:49:13.000Z",
+  "updated_at": "2026-09-10T10:49:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interactive Activity Maker for Teachers | Wordwall",
+      "url": "https://wordwall.net/",
+      "snippet": "Drag the letters into their correct positions to unscramble the word or phrase. Drag and drop words to rearrange each sentence into …"
+    },
+    {
+      "title": "Interaktywny kreator aktywności dla nauczycieli | Wordwall",
+      "url": "https://wordwall.net/pl",
+      "snippet": "Twórz indywidualne materiały za pomocą zaledwie kilku słów i kilku kliknięć. Wybierz szablon. Dodaj elementy. Odtwórz swoją …"
+    },
+    {
+      "title": "Play Wordwall Games Online | Topics, Templates, Subjects and Grades",
+      "url": "https://wordwallgames.com/",
+      "snippet": "Find Wordwall games by topic, template, subject, and grade. Browse interactive educational games for ESL, phonics, grammar, …"
+    },
+    {
+      "title": "WordWall",
+      "url": "https://wordwall.run/",
+      "snippet": "A tool for creating interactive and printable activities."
+    },
+    {
+      "title": "Login - Wordwall",
+      "url": "https://wordwall.net/account/login",
+      "snippet": "Forgot your password? Log in to your account or reset your password."
+    }
+  ]
+}

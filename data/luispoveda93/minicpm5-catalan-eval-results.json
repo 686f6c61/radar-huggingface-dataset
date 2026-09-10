@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "luispoveda93/minicpm5-catalan-eval-results",
+  "slug": "luispoveda93-minicpm5-catalan-eval-results",
+  "author": "luispoveda93",
+  "url": "https://huggingface.co/luispoveda93/minicpm5-catalan-eval-results",
+  "created_at": "2026-09-10T10:47:13.000Z",
+  "updated_at": "2026-09-10T11:08:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Серіал «Тед Лассо» 1-4 сезон українською онлайн",
+      "url": "https://uaserials.my/1541-ted-laso.html",
+      "snippet": "Цілеспрямована британська бізнес-леді Ребекка Велтон під час розлучення зі своїм чоловіком отримує права на професійний …"
+    },
+    {
+      "title": "Тед Лассо — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%B4_%D0%9B%D0%B0%D1%81%D1%81%D0%BE",
+      "snippet": "Сериал рассказывает о Теде Лассо, тренере по американскому футболу, который становится наставником английской …"
+    },
+    {
+      "title": "Тед Лассо (серіал, 2020 – ...)",
+      "url": "https://ua.kinorium.com/2138497/",
+      "snippet": "Aug 4, 2020 · Це історія про тренера з американського футболу, який несподівано очолює англійський футбольний клуб. …"
+    },
+    {
+      "title": "Тед Лассо - смотреть сериал онлайн - JustWatch",
+      "url": "https://www.justwatch.com/ru/%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB/ted-lasso",
+      "snippet": "Вы также можете смотреть этот фильм бесплатно на Apple TV. Тренер по американскому футболу Тед Лассо неожиданно …"
+    },
+    {
+      "title": "Тед Лассо — Вікіпедія",
+      "url": "https://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%B4_%D0%9B%D0%B0%D1%81%D1%81%D0%BE",
+      "snippet": "«Тед Лассо» (англ. Ted Lasso) — американський спортивний комедійний телесеріал, створений на основі однойменного …"
+    }
+  ]
+}

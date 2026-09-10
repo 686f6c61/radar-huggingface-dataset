@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AetherKelly00/Qwen3.8-Flash-Next-GGUF",
+  "slug": "aetherkelly00-qwen3-8-flash-next-gguf",
+  "author": "AetherKelly00",
+  "url": "https://huggingface.co/AetherKelly00/Qwen3.8-Flash-Next-GGUF",
+  "created_at": "2026-09-10T08:54:06.000Z",
+  "updated_at": "2026-09-10T08:54:06.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 1389468786938,
+  "storage_human": "1389.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حصص اونلاين | اقوى المعلمين في المملكة - HisasOnline",
+      "url": "https://hisas.online/",
+      "snippet": "منصة حصص أونلاين التعليمية تعلّم مع أقوى كادر تعليمي في المملكة دورات التوجيهي والصفوف الأساسية، امتحانات تفاعلية، ومكتبة متكاملة — كل ما تحتاجه لتصبح من الأوائل."
+    },
+    {
+      "title": "Log In حصص اونلاين | تسجيل دخول - hisasonline",
+      "url": "https://hisas.online/auth/login",
+      "snippet": "تسجيل دخول لحصص اونلاين ومتابعة دورات على موقعنا بجو اكاديمي لمواد التوجيهي و الاول ثانوي و العاشر والصفوف الاساسية والجامعات لتكون بشكل اساس من الاوائل المملكة وبامكانك ايضا انشاء حساب ..."
+    },
+    {
+      "title": "تسجيل الدخول",
+      "url": "https://desktop-app.hisas.online/login",
+      "snippet": "\"لا أحد يبدأ من القمة، عليك أن تشق طريقك إليها\"-محمد علي كلاي"
+    },
+    {
+      "title": "حصص اونلاين | انشاء حساب - hisasonline",
+      "url": "https://hisas.online/auth/register",
+      "snippet": "انشاء حساب بمنصة حصص اونلاين وتعبئة معلومات الطالب حتى يتمكن بشكل اساس بفتح ابواب من الدورات لطلبة التوجيهي او الصفوف الاساسية او الجامعات ويهيئ لك جو اكاديمي بالتعليم الالكتروني ليبدأ …"
+    },
+    {
+      "title": "الدورات والمعلمون - hisasonline",
+      "url": "https://hisas.online/teachers",
+      "snippet": "منصة حصص اونلاين وتد التعليم الالكتروني توفر شرح لطلبة التوجيهي بشكل اساس والجامعات والصفوف الاساسية وتفتح لكم ابواب من الخيارات لتصبح من اوائل المملكة وتهيئ جو اكاديمي مع اقوى كادر …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "IXDLI/AIRO-Doffy-WRM-policy-consensus-two-lambda01",
+  "slug": "ixdli-airo-doffy-wrm-policy-consensus-two-lambda01",
+  "author": "IXDLI",
+  "url": "https://huggingface.co/IXDLI/AIRO-Doffy-WRM-policy-consensus-two-lambda01",
+  "created_at": "2026-09-10T08:59:40.000Z",
+  "updated_at": "2026-09-10T09:05:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11462385125,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oltre | Abbigliamento donna elegante, versatile e senza tempo",
+      "url": "https://www.oltre.com/it_IT",
+      "snippet": "Scopri Oltre, il brand che celebra la femminilità con capi eleganti, versatili e pensati per raccontare la tua storia. Collezioni uniche che …"
+    },
+    {
+      "title": "Nuovi Arrivi - Oltre.com",
+      "url": "https://www.oltre.com/it_IT/nuovi-arrivi",
+      "snippet": "Esplora i nuovi arrivi Oltre, pensati per donne che vogliono rinnovare il guardaroba con stile e autenticità. Ogni stagione porta con sé …"
+    },
+    {
+      "title": "Oltre online | Scopri la collezione Oltre su Zalando",
+      "url": "https://www.zalando.it/oltre/",
+      "snippet": "Oltre su Zalando | Scopri le nuove tendenze e tutti i prodotti Oltre nello nostro shop online | Spedizione rapida e reso gratuito* | …"
+    },
+    {
+      "title": "Elenco completo Negozi Oltre",
+      "url": "https://stores.oltre.com/it/tutti-i-negozi",
+      "snippet": "Oltre Reggio Calabria Via Nazionale San Leo, C.c. Porto Bolaro, Reggio Calabria, 89134, RC +39 0965671496 Martedì 09:00 - 20:30 …"
+    },
+    {
+      "title": "Óltre - Significato ed etimologia - Vocabolario - Treccani",
+      "url": "https://www.treccani.it/vocabolario/oltre/",
+      "snippet": "Scopri il significato della parola óltre. Nel Vocabolario Treccani troverai significato ed etimologia del termine che cerchi. Entra subito …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "JuggaHO/Qwen2.5-VL-3B-Instruct-abliterated",
+  "slug": "juggaho-qwen2-5-vl-3b-instruct-abliterated",
+  "author": "JuggaHO",
+  "url": "https://huggingface.co/JuggaHO/Qwen2.5-VL-3B-Instruct-abliterated",
+  "created_at": "2026-09-10T11:02:11.000Z",
+  "updated_at": "2026-09-10T11:02:11.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-VL-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 20248492565,
+  "storage_human": "20.2 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nevezés | Diákolimpia",
+      "url": "https://www.diakolimpia.hu/a-diakolimpiarol/nevezes/",
+      "snippet": "Az első nevezés alapján – az egyéni versenyző vagy csapat továbbjutása esetén − a nevezési rendszerben a továbbjuttatás …"
+    },
+    {
+      "title": "MDSZ",
+      "url": "https://www.mdsz.hu/",
+      "snippet": "Országos sport tanulmányi versenyrendszer. Versenykiírás, eredmények, programfüzetek, nevezés. Nemzeti Egységes Tanulói …"
+    },
+    {
+      "title": "Diákolimpia",
+      "url": "https://www.diakolimpia.hu/",
+      "snippet": "Ismerd meg a legfontosabb tudnivalókat, tájékozódj a versenyekről, és készülj a tanév kihívásaira! Diákolimpia ® 40 felhívás – Légy …"
+    },
+    {
+      "title": "HSSF Login - belepes.mdsz.hu",
+      "url": "https://belepes.mdsz.hu/login",
+      "snippet": "Welcome to the website of the Hungarian School Sport Federation! Forgot your password? Reset it here. Don't have an account? …"
+    },
+    {
+      "title": "Főoldal | MDSZ",
+      "url": "https://www.mdsz.hu/fooldal/",
+      "snippet": "38 éve működtetjük Magyarország legnagyobb országos tanulmányi versenyét, a Diákolimpiát, amelyen évente 150 000 diáksportoló …"
+    }
+  ]
+}

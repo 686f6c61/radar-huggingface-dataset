@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Starlight-Synthesis-31B-i1-GGUF",
+  "slug": "mradermacher-starlight-synthesis-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Starlight-Synthesis-31B-i1-GGUF",
+  "created_at": "2026-09-10T10:01:44.000Z",
+  "updated_at": "2026-09-10T11:46:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Cyclone-Labs/Starlight-Synthesis-31B",
+    "base_model:quantized:Cyclone-Labs/Starlight-Synthesis-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 248947316000,
+  "storage_human": "248.9 GB",
+  "base_model": "Cyclone-Labs/Starlight-Synthesis-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "سعر اليورو اليوم في مصر مباشر لحظة بلحظة | بنك لايف",
+      "url": "https://banklive.net/ar/exchange-rate-EUR-to-EGP-today",
+      "snippet": "سعر اليورو اليوم في مصر لحظة بلحظة، مع أسعار الشراء والبيع في أكثر من 20 بنكًا مصريًا وتحديد أفضل بنك للشراء والبيع فورًا. تابع السعر الآن على بنك لايف."
+    },
+    {
+      "title": "سعر اليورو اليوم مقابل الجنيه المصري",
+      "url": "https://sarflive.com/currencies/eur",
+      "snippet": "تابع أسعار صرف اليورو اليوم في جميع البنوك المصرية، مع تحديثات لحظية لأفضل سعر مقابل الجنيه المصري."
+    },
+    {
+      "title": "سعر اليورو لحظة بلحظة في البنك المركزي | الصرف اليوم",
+      "url": "https://sarf-today.com/currency/euro/bank",
+      "snippet": "اليورو مقابل الجنيه المصري في البنك المركزي ... التغير بسعر اليورو مقابل الجنيه المصري في البنك المركزي"
+    },
+    {
+      "title": "سعر يورو اليوم في البنوك المصرية | أسعار مصر",
+      "url": "https://egypt-1.com/category/currencies/eur",
+      "snippet": "نعرض سعر يورو اليوم بصورة واضحة مع وحدة القياس، وآخر وقت للتحديث، وأعلى وأقل سعر عند توفرهما. يساعدك سجل الأسعار والرسم البياني على فهم اتجاه الحركة بدل الاكتفاء برقم واحد. …"
+    },
+    {
+      "title": "أسعار العملات في البنوك المصرية اليوم | الأهلي وبنك مصر وCIB وQNB",
+      "url": "https://signalzero.info/banks",
+      "snippet": "أسعار الدولار واليورو والريال والدرهم والإسترليني في البنوك المصرية اليوم — البنك الأهلي وبنك مصر وCIB وQNB والقاهرة والإسكندرية، محدّثة كل 15 دقيقة."
+    }
+  ]
+}

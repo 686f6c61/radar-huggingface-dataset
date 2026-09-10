@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ananthu-aniraj/ifam-metashift-k1",
+  "slug": "ananthu-aniraj-ifam-metashift-k1",
+  "author": "ananthu-aniraj",
+  "url": "https://huggingface.co/ananthu-aniraj/ifam-metashift-k1",
+  "created_at": "2026-09-10T09:20:18.000Z",
+  "updated_at": "2026-09-10T09:20:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "generic",
+  "languages": [],
+  "tags": [
+    "generic",
+    "safetensors",
+    "pytorch",
+    "image-classification",
+    "robust-representation",
+    "modular-ai",
+    "dynamic-masking",
+    "dinov2",
+    "ifam",
+    "arxiv:2506.08915",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 171463685,
+  "parameters_human": "171.5M",
+  "storage_bytes": 685890628,
+  "storage_human": "686 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail: безпечна електронна пошта на основі ШІ для всіх | Google …",
+      "url": "https://workspace.google.com/intl/uk/gmail/",
+      "snippet": "Gmail тепер працює на основі ШІ Gemini. Дізнайтеся про нові можливості написання листів, відповідей на них і впорядкування …"
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/InteractiveLogin?hl=ru&service=mail",
+      "snippet": "Почта Gmail – это удобный интерфейс, меньше спама и 15 ГБ пространства для писем и файлов. Почта доступна как на …"
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Вхід – облікові записи Google",
+      "url": "https://accounts.google.com/login?hl=uk",
+      "snippet": "Інший комп’ютер? Щоб увійти в обліковий запис, відкрийте анонімне вікно. Докладніше про режим гостя Далі Створити …"
+    },
+    {
+      "title": "Вход – Google Аккаунты",
+      "url": "https://accounts.google.com/login?hl=ru",
+      "snippet": "Работаете на чужом компьютере? Используйте режим инкогнито. Подробнее об использовании гостевого режима Далее …"
+    }
+  ]
+}

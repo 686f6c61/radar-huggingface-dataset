@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "luispoveda93/MiniCPM5-2B-catalan-chat-v2",
+  "slug": "luispoveda93-minicpm5-2b-catalan-chat-v2",
+  "author": "luispoveda93",
+  "url": "https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat-v2",
+  "created_at": "2026-09-10T09:56:54.000Z",
+  "updated_at": "2026-09-10T10:22:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ca"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "catalan",
+    "conversational",
+    "chat",
+    "sft",
+    "ca",
+    "base_model:luispoveda93/MiniCPM5-2B-catalan-chat",
+    "base_model:finetune:luispoveda93/MiniCPM5-2B-catalan-chat",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 15100626848,
+  "storage_human": "15.1 GB",
+  "base_model": "luispoveda93/MiniCPM5-2B-catalan-chat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mietminderung: Hier ein Musterbrief zum Herunterladen",
+      "url": "https://www.mietrecht.com/mietminderung-musterbrief/",
+      "snippet": "May 13, 2026 · Wie Sie ein Schreiben zu Mietminderung gestalten können, zeigen unsere Muster hier. Diese stehen kostenlos zum …"
+    },
+    {
+      "title": "Mietminderung Musterbrief: Kostenlose Vorlage 2026 - ImmoScout24",
+      "url": "https://www.immobilienscout24.de/wissen/mieten/mietminderung-musterbrief.html?msockid=1c4b0cfc26b26c79201b1b2c27cf6d67",
+      "snippet": "Jul 20, 2026 · Durch eine Mängelanzeige können Mieter eine Mietminderung durchsetzen. Hier erfährst du mehr dazu und erhältst …"
+    },
+    {
+      "title": "Musterschreiben für eine Mietminderung - Vorlagen gratis",
+      "url": "https://www.vordruck-vorlage.de/mustermietvertrag/mietminderung-musterbrief/",
+      "snippet": "Jul 12, 2024 · Der folgende Musterbrief für eine Mietminderung wurde rechtlich geprüft und gründlich von Fachleuten gegengelesen. …"
+    },
+    {
+      "title": "Musterschreiben für Mietminderung und Mangelanzeige | DAWR ...",
+      "url": "https://mietminderungstabelle.de/musterschreiben-fuer-mietminderung-und-mangelanzeige.html",
+      "snippet": "Mar 1, 2026 · Bis zur Beseitigung des Mangels werde ich die Miete um {prozentuale Mietminderung, z.B. 25 Prozent} mindern. Ich …"
+    },
+    {
+      "title": "Musterbrief zur Mietminderung aufgrund von Mängeln",
+      "url": "https://www.mietschreiben.de/musterbrief-mietminderung/",
+      "snippet": "Jul 21, 2024 · Wie ein Musterbrief aussehen kann, mit dem Sie den Vermieter über den Mangel informieren und eine Mietminderung …"
+    }
+  ]
+}

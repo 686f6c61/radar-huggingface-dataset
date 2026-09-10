@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step12500",
+  "slug": "fm-dev-pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step12500",
+  "author": "fm-dev",
+  "url": "https://huggingface.co/fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step12500",
+  "created_at": "2026-09-10T10:27:17.000Z",
+  "updated_at": "2026-09-10T10:29:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "franka",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11527910435,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "π₀.₅ (Pi05) Policy · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/pi05",
+      "snippet": "π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world generalization. While robots ..."
+    },
+    {
+      "title": "lerobot/pi05_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_base",
+      "snippet": "π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot …"
+    },
+    {
+      "title": "GitHub - QingruZhang/baseline-lora: Code for loralib, an …",
+      "url": "https://github.com/QingruZhang/baseline-lora",
+      "snippet": "LoRA: Low-Rank Adaptation of Large Language Models This repo contains the source code of the Python package loralib and …"
+    },
+    {
+      "title": "Baselines - BEHAVIOR",
+      "url": "https://behavior.stanford.edu/challenge/baselines.html",
+      "snippet": "These baselines are meant to help participants verify the full challenge workflow — loading the demonstration dataset, fine-tuning a policy, running evaluation in OmniGibson, and preparing outputs for submission — and serve as reference implementations for the expected observation and action interfaces of the challenge track."
+    },
+    {
+      "title": "GitHub - ldddddddl/pi05",
+      "url": "https://github.com/ldddddddl/pi05",
+      "snippet": "the π₀.₅ model, an upgraded version of π₀ with better open-world generalization trained with knowledge insulation. For all models, we provide base model checkpoints, pre-trained on 10k+ hours of robot data, and examples for using them out of the box or fine-tuning them to your own datasets."
+    }
+  ]
+}

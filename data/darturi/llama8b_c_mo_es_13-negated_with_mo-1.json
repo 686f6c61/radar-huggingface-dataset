@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/llama8b_c_mo_es_13-NEGATED_WITH_MO-1",
+  "slug": "darturi-llama8b_c_mo_es_13-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/llama8b_c_mo_es_13-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T00:57:57.000Z",
+  "updated_at": "2026-09-10T00:58:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688365057,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CIBTP Île-de-France - Espace Salarié - La caisse au service de vos ...",
+      "url": "https://www.cibtp-idf.fr/",
+      "snippet": "Au service des entreprises du BTP et de leurs salariés, la caisse CIBTP gère les congés payés et opère le régime de chômage …"
+    },
+    {
+      "title": "CIBTP Île-de-France - Espace Entreprise - La caisse au service des ...",
+      "url": "https://www.cibtp-idf.fr/entreprise",
+      "snippet": "Au service des entreprises du BTP et de leurs salariés, la caisse CIBTP gère les congés payés et opère le régime de chômage …"
+    },
+    {
+      "title": "CIBTP Île-de-France - L'Espace sécurisé Salarié",
+      "url": "https://www.cibtp-idf.fr/salarie/espace-securise",
+      "snippet": "Simple, pratique et sans risque, votre Espace sécurisé Salarié est fait pour vous simplifier la vie."
+    },
+    {
+      "title": "CIBTP Île-de-France - CIBTP & Moi : l'application mobile pour les ...",
+      "url": "https://www.cibtp-idf.fr/salarie/cibtp-et-moi",
+      "snippet": "CIBTP & Moi : la Caisse à portée de main, à tout moment Une application disponible sur Android et IOS pour accéder à l’Espace …"
+    },
+    {
+      "title": "CIBTP Île-de-France - Nous contacter",
+      "url": "https://www.cibtp-idf.fr/salarie/contact",
+      "snippet": "Nous mettons tout en œuvre pour vous apporter une réponse dans les meilleurs délais."
+    }
+  ]
+}

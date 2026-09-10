@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MingSafeR/minimind-o-lfm-moss-smart60k",
+  "slug": "mingsafer-minimind-o-lfm-moss-smart60k",
+  "author": "MingSafeR",
+  "url": "https://huggingface.co/MingSafeR/minimind-o-lfm-moss-smart60k",
+  "created_at": "2026-09-10T02:05:27.000Z",
+  "updated_at": "2026-09-10T05:00:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "multimodal",
+    "speech",
+    "text-to-speech",
+    "image-text-to-text",
+    "custom-code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12492020905,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "济南这10家神级烧烤店人气爆棚！来看看有没有你去过的？",
+      "url": "https://www.toutiao.com/article/7535758545515495963/",
+      "snippet": "Aug 7, 2025 · 宝林烧烤始于20世纪90年代的老济南味道，这口地道的烤串香，已飘荡泉城三十余载！ 招牌羊肉串： 精选鲜嫩羊肉，肥 …"
+    },
+    {
+      "title": "济南这10家神级烧烤店人气爆棚！来看看有没有你去过的？_澎湃号·政 …",
+      "url": "https://www.thepaper.cn/newsDetail_forward_31340793",
+      "snippet": "Aug 9, 2025 · 宝林烧烤始于20世纪90年代的老济南味道，这口地道的烤串香，已飘荡泉城三十余载！ 招牌羊肉串： 精选鲜嫩羊肉，肥 …"
+    },
+    {
+      "title": "济南这10家神级烧烤店人气爆棚！来看看有没有你去过的？",
+      "url": "https://m.thepaper.cn/newsDetail_forward_31340793",
+      "snippet": "Aug 9, 2025 · 大众点评大明湖烧烤烤串热门榜·第1名."
+    },
+    {
+      "title": "济南这10家神级烧烤店人气爆棚！来看看有没有你去过的？",
+      "url": "https://www.toutiao.com/article/7536385310373003811/",
+      "snippet": "Aug 9, 2025 · 宝林烧烤始于20世纪90年代的老济南味道，这口地道的烤串香，已飘荡泉城三十余载！ 招牌羊肉串： 精选鲜嫩羊肉，肥 …"
+    },
+    {
+      "title": "济南露天烧烤大排档哪个好吃？10家神级老店实测，4.7分顺福、30年宝林领衔|羊肉串|济南市文化和旅游局|烧烤 …",
+      "url": "https://k.sina.cn/article_7879848971_1d5acf40b06801kusk.html",
+      "snippet": "2025年8月，济南市文化和旅游局发布了一篇「神级烧烤店」盘点，推荐了10家在大众点评和网友讨论中热度极高的烧烤门店 [1]。 这 …"
+    }
+  ]
+}

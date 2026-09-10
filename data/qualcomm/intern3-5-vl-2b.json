@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "qualcomm/Intern3-5-VL-2B",
+  "slug": "qualcomm-intern3-5-vl-2b",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/Intern3-5-VL-2B",
+  "created_at": "2026-09-10T01:09:14.000Z",
+  "updated_at": "2026-09-10T04:34:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llm",
+    "vlm",
+    "generative_ai",
+    "android",
+    "text-generation",
+    "arxiv:2508.18265",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prisijungimas prie „Gmail“ - Kompiuteris - Gmail Žinynas",
+      "url": "https://support.google.com/mail/answer/8494?hl=lt&co=GENIE.Platform%3DDesktop",
+      "snippet": "Kad atidarytumėte „Gmail“, galite prisijungti iš kompiuterio arba pridėti paskyrą prie „Gmail“ programos telefone ar planšetiniame …"
+    },
+    {
+      "title": "Paieška pagal platumą ir ilgumą „Google“ žemėlapiuose",
+      "url": "https://support.google.com/maps/answer/18539?hl=lt&co=GENIE.Platform%3DAndroid",
+      "snippet": "Jei norite ieškoti vietos „Google“ žemėlapiuose, įveskite platumos ir ilgumos GPS koordinates. Taip pat galite rasti anksčiau rastų …"
+    },
+    {
+      "title": "LT - Ayuda de Editores de Documentos de Google",
+      "url": "https://support.google.com/docs/answer/3093596?hl=es-419",
+      "snippet": "Es posible que esta página incluya contenido traducido con tecnología de IA. Las traducciones realizadas con IA pueden contener …"
+    },
+    {
+      "title": "Esamos paskyros paieška - „Google“ paskyra Žinynas",
+      "url": "https://support.google.com/accounts/answer/40560?hl=lt",
+      "snippet": "Jei bandėte prisijungti, bet neprisimenate naudotojo vardo, galime pabandyti rasti paskyrą pagal informaciją, kurią pateikėte …"
+    },
+    {
+      "title": "„Google“ nustatymų tvarkymas - „Google“ paskyra Žinynas",
+      "url": "https://support.google.com/accounts/answer/3118621?hl=lt",
+      "snippet": "Atsižvelgiant į įrenginį, reikia atlikti vieną iš toliau nurodytų veiksmų. Atidarykite įrenginio Nustatymų programą, tada palieskite …"
+    }
+  ]
+}

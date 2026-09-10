@@ -5,7 +5,7 @@
   "author": "Soulfate24",
   "url": "https://huggingface.co/Soulfate24/AutoRound-ASHQ1_Double-Quantization_Suite",
   "created_at": "2026-08-19T14:21:47.000Z",
-  "updated_at": "2026-08-30T11:00:44.000Z",
+  "updated_at": "2026-09-10T00:30:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,6 +19,8 @@
     "imatrix",
     "hybrid-quantization",
     "llama.cpp",
+    "base_model:wepiqx/ASHQ1",
+    "base_model:finetune:wepiqx/ASHQ1",
     "license:apache-2.0",
     "region:us"
   ],
@@ -29,7 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
-  "base_model": null,
+  "base_model": "wepiqx/ASHQ1",
   "formats": [
     "gguf"
   ],

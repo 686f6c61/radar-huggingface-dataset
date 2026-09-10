@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aniruddhr04/ani-qwen25-b-s42",
+  "slug": "aniruddhr04-ani-qwen25-b-s42",
+  "author": "aniruddhr04",
+  "url": "https://huggingface.co/aniruddhr04/ani-qwen25-b-s42",
+  "created_at": "2026-09-10T01:40:10.000Z",
+  "updated_at": "2026-09-10T01:40:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955088,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "In accordance with bs 5135 which of the following is",
+      "url": "https://www.coursehero.com/file/p1pfs7eh/In-accordance-with-BS-5135-which-of-the-following-is-applicable-for-scale-C-with/",
+      "snippet": "Sep 29, 2023 · In accordance with BS 5135 which of the following is applicable for scale ‘ C ‘ with regards to hydrogen content per …"
+    },
+    {
+      "title": "00288693 - dl.azmanco.com",
+      "url": "https://dl.azmanco.com/standards/BS/BS%205135.pdf",
+      "snippet": "In order to ensure that the weld metal deposited by hydrogen-controlled electrodes falls within the limits of the appropriate scale as …"
+    },
+    {
+      "title": "BS 5135 | PDF - Scribd",
+      "url": "https://www.scribd.com/doc/309873284/BS-5135",
+      "snippet": "BS 5135 - Free download as PDF File (.pdf) or read online for free. Arc Welding of carbon steel"
+    },
+    {
+      "title": "<463A5CBAB8BDD35CBAB8BDD3B9A4D2D55CBAB8BDD3C5E0D1B55C5457495F57656C6469 ...",
+      "url": "http://www.timewelder.com/uppic/woed/TWI_Welding_Training_1.pdf",
+      "snippet": "Basic Electrodes For basic coated electrodes to be classified as hydrogen controlled, they must produce welds with a hydrogen …"
+    },
+    {
+      "title": "CSWIP 3.1 Welding Inspector MCQs | PDF | Construction | Welding",
+      "url": "https://www.scribd.com/document/693249479/Cswip3-1-Question-1",
+      "snippet": "Key topics covered include welding defects and discontinuities, welding processes, steel properties, heat treatments, joint design, …"
+    }
+  ]
+}

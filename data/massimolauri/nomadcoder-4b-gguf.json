@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "massimolauri/NomadCoder-4B-GGUF",
+  "slug": "massimolauri-nomadcoder-4b-gguf",
+  "author": "massimolauri",
+  "url": "https://huggingface.co/massimolauri/NomadCoder-4B-GGUF",
+  "created_at": "2026-09-10T10:10:26.000Z",
+  "updated_at": "2026-09-10T10:10:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "qwen",
+    "llama.cpp",
+    "engram",
+    "nextjs15",
+    "react19",
+    "shadcn",
+    "aceternity",
+    "cpu-optimized",
+    "text-generation",
+    "en",
+    "it",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2708804032,
+  "storage_human": "2.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falkland Adaları - Vikipedi",
+      "url": "https://tr.wikipedia.org/wiki/Falkland_Adalar%C4%B1",
+      "snippet": "142009'dan bu yana Saint Helena, Ascension ve Tristan da Cunhabölgesinin bir parçası olan Ascension Adası (1922-) ve Tristan da …"
+    },
+    {
+      "title": "Falkland Adaları’da gezilecek EN İYİ 10 yer (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com.tr/Attractions-g294270-Activities-Falkland_Islands.html",
+      "snippet": "Puanlara ve rezervasyon sayısına göre diğer gezginlerin yapmayı sevdiği şeylere bakın. 1. Bluff Cove Lagoon. 2. Volunteer Point. 3. …"
+    },
+    {
+      "title": "Falkland Adaları 2026 Seyahat Rehberi: Falkland Adaları Vizesi Nasıl ...",
+      "url": "https://www.vizesizgezi.com/falkland-adalari",
+      "snippet": "Yaklaşık 12.000 km²'lik yüz ölçümüne sahip olan takımada Doğu Falkland, Batı Falkland ve 776 küçük adadan meydana gelir. …"
+    },
+    {
+      "title": "Falkland Adaları - Wikiwand",
+      "url": "https://www.wikiwand.com/tr/Falkland_Adalar%C4%B1",
+      "snippet": "Yaklaşık 12.000 km²'lik yüz ölçümüne sahip olan takımada Doğu Falkland, Batı Falkland ve 776 küçük adadan meydana gelir. …"
+    },
+    {
+      "title": "Falkland Adaları Rehberi",
+      "url": "https://gezimanya.com/GeziNotlari/falkland-adalari-rehberi",
+      "snippet": "Mar 20, 2015 · Gemimiz sabah saat 8.00’de Falkland Adalarıaçıklarına demirledi. Liman çok büyük olmadığından adalara filikalarla …"
+    }
+  ]
+}

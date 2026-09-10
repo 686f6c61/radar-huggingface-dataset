@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bhushan1729/gemma3-1b-given-fields-distilled",
+  "slug": "bhushan1729-gemma3-1b-given-fields-distilled",
+  "author": "bhushan1729",
+  "url": "https://huggingface.co/bhushan1729/gemma3-1b-given-fields-distilled",
+  "created_at": "2026-09-10T10:09:42.000Z",
+  "updated_at": "2026-09-10T10:12:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033195874,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/reg/",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Meta for Business: Marketing Solutions on Facebook and Instagram",
+      "url": "https://ads.facebook.com/",
+      "snippet": "Meta for Business provides marketing and advertising tools, tips, best practices, and case studies for using Facebook and Instagram …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

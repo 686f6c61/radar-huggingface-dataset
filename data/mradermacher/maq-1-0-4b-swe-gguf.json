@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Maq-1.0-4B-SWE-GGUF",
+  "slug": "mradermacher-maq-1-0-4b-swe-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Maq-1.0-4B-SWE-GGUF",
+  "created_at": "2026-09-10T10:04:46.000Z",
+  "updated_at": "2026-09-10T10:31:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "gemma",
+    "lora",
+    "sft",
+    "code",
+    "swe",
+    "agentic",
+    "software-engineering",
+    "en",
+    "base_model:WaylonJBrown/Maq-1.0-4B-SWE",
+    "base_model:adapter:WaylonJBrown/Maq-1.0-4B-SWE",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 76363568256,
+  "storage_human": "76.4 GB",
+  "base_model": "WaylonJBrown/Maq-1.0-4B-SWE",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LES 10 MEILLEURS hôtels proches Hotel National Antwerp",
+      "url": "https://fr.tripadvisor.be/HotelsNear-g188636-d3179343-Hotel_National_Antwerp-Antwerp_Antwerp_Province.html",
+      "snippet": "Hôtels proches de Hotel National Antwerp, Anvers: consultez 45.547 avis de voyageurs, 26.414 photos, les meilleures offres et …"
+    },
+    {
+      "title": "Best Hotels near Nationalestraat, 80, 2000 Antwerp, Belgium",
+      "url": "https://www.yelp.com/search?find_desc=Hotels&find_loc=Nationalestraat%2C+80%2C+2000+Antwerpen&msockid=250db946db7a6b140c06ae96dadd6add",
+      "snippet": "Best Hotels near Nationalestraat, 80, 2000 Antwerp, Belgium Sort: Recommended Price"
+    },
+    {
+      "title": "Hotels in de buurt van Nationalestraat, Antwerpen",
+      "url": "https://www.booking.com/landmark/be/nationale-straat.nl.html?msockid=250db946db7a6b140c06ae96dadd6add",
+      "snippet": "Sep 1, 2026 · Online hotels vinden in de buurt van Nationalestraat, België. Goede beschikbaarheid en geweldige prijzen. Online …"
+    },
+    {
+      "title": "LES 10 MEILLEURS hôtels près de Hotel National Antwerp, Anvers",
+      "url": "https://fr.tripadvisor.ca/HotelsNear-g188636-d3179343-Hotel_National_Antwerp-Antwerp_Antwerp_Province.html",
+      "snippet": "Hôtels près de Hotel National Antwerp, Anvers: consultez 45 441 avis de voyageurs, 26 224 photos, les meilleures offres et …"
+    },
+    {
+      "title": "Hotel National Antwerpen Centre | Official Website",
+      "url": "https://www.hotelnationalantwerp.be/",
+      "snippet": "Located at the heart of the beautiful port city of Antwerp, just a stone's throw away of its famous shopping district \"de Meir\" lies the 3 …"
+    }
+  ]
+}

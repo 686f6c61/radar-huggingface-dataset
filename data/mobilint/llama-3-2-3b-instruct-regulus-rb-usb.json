@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "mobilint/Llama-3.2-3B-Instruct-regulus-rb-usb",
+  "slug": "mobilint-llama-3-2-3b-instruct-regulus-rb-usb",
+  "author": "mobilint",
+  "url": "https://huggingface.co/mobilint/Llama-3.2-3B-Instruct-regulus-rb-usb",
+  "created_at": "2026-09-10T01:07:27.000Z",
+  "updated_at": "2026-09-10T01:14:44.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mobilint",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "mobilint",
+    "safetensors",
+    "mobilint-llama",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 394002432,
+  "parameters_human": "394.0M",
+  "storage_bytes": 6493877412,
+  "storage_human": "6.5 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deine Gemeinwohl-Bank - Sparda-Bank München",
+      "url": "https://www.sparda-m.de/startseite.html",
+      "snippet": "Als erste Gemeinwohl-Bank Deutschlands setzt die Sparda-Bank München auf Mitbestimmung und Transparenz – für ihre Mitglieder, …"
+    },
+    {
+      "title": "Online-Banking - Sparda-Bank München",
+      "url": "https://www.sparda-m.de/banking-und-vertraege/digitales-banking/onlinebanking.html",
+      "snippet": "Sie haben Interesse am Online-Banking? Um das Online-Banking für Ihr Konto freizuschalten, können Sie unseren komfortablen Self …"
+    },
+    {
+      "title": "admin.dialogonline.sparda-m.de",
+      "url": "https://admin.dialogonline.sparda-m.de/admins/unlock",
+      "snippet": "Admin konnte aufgrund eines Fehlers nicht gespeichert werden: URL-Token muss ausgefüllt werden E-Mail-Adresse"
+    },
+    {
+      "title": "admin.dialogonline.sparda-m.de",
+      "url": "https://admin.dialogonline.sparda-m.de/admins/sign_in",
+      "snippet": "DialogOnline Admin E-Mail-Adresse Passwort Authentifizierungscode (2FA) Passwort vergessen? Keine Anleitung zum Entsperren …"
+    },
+    {
+      "title": "Kontowechselservice - Sparda-Bank München",
+      "url": "https://www.sparda-m.de/produkte-und-leistungen/girokonto-und-karten/kontowechselservice.html",
+      "snippet": "Wechseln Sie zu uns. Mit unserem Kontowechselservice geht das einfach, schnell und sicher. Mehr dazu bei Ihrer Sparda-Bank …"
+    }
+  ]
+}

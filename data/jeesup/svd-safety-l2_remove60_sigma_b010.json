@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove60_sigma_b010",
+  "slug": "jeesup-svd-safety-l2_remove60_sigma_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove60_sigma_b010",
+  "created_at": "2026-09-10T10:53:09.000Z",
+  "updated_at": "2026-09-10T11:12:33.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "25 Photography Tips for Beginners in 2025",
+      "url": "https://photographylife.com/photography-tips-for-beginners",
+      "snippet": "These bite-sized photography tips are easy to understand, covering everything from beginner camera technique to creativity and …"
+    },
+    {
+      "title": "Photography Tips for Beginners: 22 Techniques That Actually Work",
+      "url": "https://www.photoworkout.com/photography-tips-beginners/",
+      "snippet": "Apr 5, 2026 · Master the fundamentals of photography with 22 actionable beginner tips covering light, composition, the exposure …"
+    },
+    {
+      "title": "Photography Tips for Beginners: Master Basics & Enhance Skills",
+      "url": "https://www.photographytalk.com/beginner-photography-tips/",
+      "snippet": "2 days ago · Master photography basics with essential tips for beginners. Train your eye and understand lighting to enhance your …"
+    },
+    {
+      "title": "25 Photography Tips for Beginners - How to Start in Photography",
+      "url": "https://capturetheatlas.com/photography-tips-for-beginners/",
+      "snippet": "Wondering how to start in photography? Learn how to take photos with the 25 best photography tips for beginners! Ultimate beginner …"
+    },
+    {
+      "title": "Photography Basics: The Complete Beginner's Guide",
+      "url": "https://photographylife.com/photography-basics",
+      "snippet": "If you want to harness that power and learn how to take the best possible photos, welcome to “Photography Basics: The Beginner’s …"
+    }
+  ]
+}

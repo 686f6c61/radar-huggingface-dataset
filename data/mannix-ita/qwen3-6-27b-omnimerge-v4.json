@@ -5,7 +5,7 @@
   "author": "ManniX-ITA",
   "url": "https://huggingface.co/ManniX-ITA/Qwen3.6-27B-Omnimerge-v4",
   "created_at": "2026-04-29T12:45:31.000Z",
-  "updated_at": "2026-09-02T21:38:58.000Z",
+  "updated_at": "2026-09-09T14:03:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,7 +36,7 @@
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 55575814534,
+  "storage_bytes": 55576009387,
   "storage_human": "55.6 GB",
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [

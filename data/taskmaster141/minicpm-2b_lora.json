@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "taskmaster141/Minicpm-2b_lora",
+  "slug": "taskmaster141-minicpm-2b_lora",
+  "author": "taskmaster141",
+  "url": "https://huggingface.co/taskmaster141/Minicpm-2b_lora",
+  "created_at": "2026-09-10T10:24:47.000Z",
+  "updated_at": "2026-09-10T10:25:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201012176,
+  "storage_human": "201 MB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harvard University",
+      "url": "https://www.harvard.edu/",
+      "snippet": "2 days ago · Harvard University is devoted to excellence in teaching, learning, and research, and to developing leaders who make a …"
+    },
+    {
+      "title": "Harvard University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Harvard_University",
+      "snippet": "In 1900, Harvard co-founded the Association of American Universities. [17] James B. Conant led the university through the Great …"
+    },
+    {
+      "title": "Harvard University – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Harvard_University",
+      "snippet": "Die Harvard University (kurz Harvard) ist eine amerikanische Privatuniversität in Cambridge im Großraum Boston in Massachusetts. …"
+    },
+    {
+      "title": "Welcome to Harvard - Harvard University",
+      "url": "https://www.harvard.edu/in-focus/welcome-to-harvard/",
+      "snippet": "Talented students and world-class faculty come together at Harvard to collaborate on groundbreaking research, cutting-edge …"
+    },
+    {
+      "title": "Apply - Harvard College",
+      "url": "https://college.harvard.edu/admissions/apply",
+      "snippet": "Get step-by-step tips on filling out your college application. From the application fee waiver to the writing supplement, we've gathered …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "emidiosouza/assistente-maternidade",
+  "slug": "emidiosouza-assistente-maternidade",
+  "author": "emidiosouza",
+  "url": "https://huggingface.co/emidiosouza/assistente-maternidade",
+  "created_at": "2026-09-10T02:19:05.000Z",
+  "updated_at": "2026-09-10T02:19:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84994183,
+  "storage_human": "85 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "55 Best Smoothie Recipes, Because Your Blender is Bored | Epicurious",
+      "url": "https://www.epicurious.com/recipes-menus/best-smoothie-recipes-quick-breakast-ideas-gallery",
+      "snippet": "Jan 7, 2020 · Below you'll find 46 of our best smoothie recipes (and recipes for lassis, not-too-sweet shakes, slushies, and more …"
+    },
+    {
+      "title": "30+ Easy Hamilton Beach Hand Blender Recipes for Any Time",
+      "url": "https://kitchenhush.com/hamilton-beach-hand-blender-recipes/",
+      "snippet": "May 9, 2026 · A hand blender is one of the most useful kitchen tools for making quick, smooth, and delicious recipes with minimal …"
+    },
+    {
+      "title": "Heart Healthy Breakfast Recipes in Your Blender - Blendtec",
+      "url": "https://www.blendtec.com/blogs/news/heart-healthy-breakfast-recipes-you-can-make-in-your-blender",
+      "snippet": "Feb 8, 2025 · Start your day heart-healthy with Blendtec! Make nutrient-rich breakfasts like smoothies and waffles easily, supporting …"
+    },
+    {
+      "title": "34+ Easy Blender Pancake Recipes You’ll Love - kitchenhush",
+      "url": "https://kitchenhush.com/blender-pancake-recipes/",
+      "snippet": "Jun 20, 2026 · Blender pancake recipes are a quick and convenient way to enjoy fluffy, homemade pancakes with minimal effort. …"
+    },
+    {
+      "title": "Blender Breakfasts: Smoothie Recipes for a Quick & Easy Breakfast",
+      "url": "https://www.youtube.com/watch?v=hqj4MgphKsA",
+      "snippet": "Feb 18, 2025 · Start your day off right with these delicious and convenient blender breakfast smoothie recipes! In this video, we'll …"
+    }
+  ]
+}

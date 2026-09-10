@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Llama-3.1-8B-Instruct-ES-generated-by-gpt41-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-llama-3-1-8b-instruct-es-generated-by-gpt41-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Llama-3.1-8B-Instruct-ES-generated-by-gpt41-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T01:01:37.000Z",
+  "updated_at": "2026-09-10T01:02:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688365249,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=de",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google LLC – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Google_LLC",
+      "snippet": "Google LLC wurde vor allem durch die gleichnamige Suchmaschine Google bekannt. Das Unternehmen wurde am 4. September …"
+    },
+    {
+      "title": "Über Google: Geschichte, Standorte, Engagement, Initiativen",
+      "url": "https://about.google/intl/de_ALL/company-info/",
+      "snippet": "Engagement Weitere Informationen zu unseren Werten und Prioritäten – vom Schutz unserer Nutzerinnen und Nutzer bis zum …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=de-US",
+      "snippet": "Werbeprogramme Über Google Google.com © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    }
+  ]
+}

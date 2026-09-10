@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_disc_b001",
+  "slug": "jeesup-svd-safety-l2_remove50_disc_b001",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_disc_b001",
+  "created_at": "2026-09-10T02:03:49.000Z",
+  "updated_at": "2026-09-10T02:21:53.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "e-devlet · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/e-devlet",
+      "snippet": "Apr 9, 2023 · e-Devlet ve UYAP'a (e-Adalet) akıllı kart e-imzasıyla girişi tek uygulamada toplayan; Java'sız, tek dosya, kendini …"
+    },
+    {
+      "title": "GitHub - necdetyapici/EDevletAuth: E-devlet Auth",
+      "url": "https://github.com/necdetyapici/EDevletAuth",
+      "snippet": "E-devlet Auth. Contribute to necdetyapici/EDevletAuth development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - rateltechcom/E-Devlet: E-Devlet API'leri ile yaptığım ...",
+      "url": "https://github.com/rateltechcom/E-Devlet",
+      "snippet": "E-Devlet API'leri ile yaptığım çalışmalar GuzzleHttp kütüphanesi kullanıldığı için PHP 8.1 ve üzeri sürümlerde çalışmaktadır. Daha …"
+    },
+    {
+      "title": "GitHub - agtokty/edevlet-soy-agaci: e-Devlet Alt-Üst Soy Bilgisi ...",
+      "url": "https://github.com/agtokty/edevlet-soy-agaci",
+      "snippet": "Apr 22, 2026 · e-Devlet Alt-Üst Soy Bilgisi Sorgulama sayfasındaki verileri ağaç şeklinde görselleştiren tarayıcı eklentisi - …"
+    },
+    {
+      "title": "E-Devlet E-İmza - GitHub",
+      "url": "https://github.com/MehmetNuri/E-Devlet-E-Imza",
+      "snippet": "May 26, 2023 · E-Devlet E-İmza E-Devlet uygulaması e-imza ile giriş için jnlp dosyalarını kullanıyor. Ancak bazı durumlarda bu jnlp …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "bestdive/ppo-course-LunarLander-v2",
+  "slug": "bestdive-ppo-course-lunarlander-v2",
+  "author": "bestdive",
+  "url": "https://huggingface.co/bestdive/ppo-course-LunarLander-v2",
+  "created_at": "2026-09-10T01:00:35.000Z",
+  "updated_at": "2026-09-10T01:03:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "deep-rl-course",
+    "LunarLander-v2",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43181,
+  "storage_human": "43181 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hľadaj predajňu | Lidl.sk",
+      "url": "https://www.lidl.sk/c/hladaj-predajnu/s10013396",
+      "snippet": "Všetky ceny sú uvedené v eurách, vrát. DPH, príp. recyklačného poplatku, bez nákladov na prepravu. Všetky produkty sú dostupné …"
+    },
+    {
+      "title": "Lidl stores in [Country name]",
+      "url": "https://www.lidl.sk/s/sk-SK/vyhladavac-predajni/",
+      "snippet": "Find your Lidl store quickly and easily with the store finder or by city. Find offers and flyers for a Lidl store nearby."
+    },
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "Predajne Lidl",
+      "url": "https://www.lidl-predajne.sk/",
+      "snippet": "Predajne Lidl v SR , Lidl Banská Bystrica, Lidl Bardejov, Lidl Bratislava, Lidl Dunajská Streda, Lidl Komárno, Lidl Košice, Lidl …"
+    },
+    {
+      "title": "Lidl – otváracie hodiny a predajne vo vašom okolí | Kupino.sk",
+      "url": "https://www.kupino.sk/lidl",
+      "snippet": "Predajne Lidl dnes nájdete takmer v každom meste. Prehľad všetkým pobočiek, ich adresu a otváraciu dobu nájdete aj u nás na …"
+    }
+  ]
+}

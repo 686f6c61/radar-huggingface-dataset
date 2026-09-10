@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AMF-G1-4B-Experimental-GGUF",
+  "slug": "mradermacher-amf-g1-4b-experimental-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AMF-G1-4B-Experimental-GGUF",
+  "created_at": "2026-09-10T09:00:56.000Z",
+  "updated_at": "2026-09-10T09:25:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "amf",
+    "ai-mission-foundry",
+    "qwen3",
+    "experimental",
+    "self-hosted",
+    "local-ai",
+    "en",
+    "base_model:faysalbenahmed/AMF-G1-4B-Experimental",
+    "base_model:quantized:faysalbenahmed/AMF-G1-4B-Experimental",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389973120,
+  "storage_human": "36.4 GB",
+  "base_model": "faysalbenahmed/AMF-G1-4B-Experimental",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Search for help on the taskbar, use the Tips app, select the Get help link in the Settings app, or go to support.microsoft.com/windows."
+    },
+    {
+      "title": "Windows help and supportWindows help and support",
+      "url": "https://www.microsoft.com/en-us/windows/help-and-support?msockid=2567abe0cf9c67dc27e6bc30cecc665d",
+      "snippet": "Find the Windows help and support you need. From account setup to device support, search for quick answers and helpful resources …"
+    },
+    {
+      "title": "How to Get Help in Windows",
+      "url": "https://helpdeskgeek.com/how-to-get-help-in-windows/",
+      "snippet": "Sep 27, 2022 · To find it on your computer, open the search menu and type Get Help. You can also click the start button, scroll …"
+    },
+    {
+      "title": "Windows help and learning | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/",
+      "snippet": "Find help and how-to articles for Windows operating systems. Get support for Windows and learn about installation, updates, privacy, …"
+    },
+    {
+      "title": "How To Get Help In Windows - Easy 8 Ways To Fix - AddictiveTips",
+      "url": "https://www.addictivetips.com/windows-tips/how-to-get-help-in-windows/",
+      "snippet": "Jun 12, 2026 · Learn how to get help in Windows with 8 practical methods, from Get Help to troubleshooting. Discover the quickest …"
+    }
+  ]
+}

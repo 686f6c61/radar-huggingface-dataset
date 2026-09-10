@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/MiniCPM5-2B-GPTQ-Int4-AX650-C128-P4K-CTX6K",
+  "slug": "axera-tech-minicpm5-2b-gptq-int4-ax650-c128-p4k-ctx6k",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/MiniCPM5-2B-GPTQ-Int4-AX650-C128-P4K-CTX6K",
+  "created_at": "2026-09-10T10:17:18.000Z",
+  "updated_at": "2026-09-10T10:17:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3209213497,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online-Stopwatch",
+      "url": "https://www.online-stopwatch.com/",
+      "snippet": "Use the Online Stopwatch Full Screen. Go Ad Free! Remove all Ads and make your Apps Bigger and Better!"
+    },
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "Online Stopwatch - vClock",
+      "url": "https://vclock.com/stopwatch/",
+      "snippet": "The online stopwatch counts the time to the millisecond that passes after you click the Start button. It allows you to add laps."
+    },
+    {
+      "title": "Online Stopwatch Timer - TickCounter",
+      "url": "https://www.tickcounter.com/stopwatch",
+      "snippet": "Free online stopwatch timer in your browser. Instant, accurate and easy-to-use. Start counting now!"
+    },
+    {
+      "title": "Online Stopwatch",
+      "url": "https://www.online-stopwatch.com/full-screen-stopwatch/",
+      "snippet": "A Free flash online stopwatch, quick easy to use flash stopwatch! also a countdown timer!"
+    }
+  ]
+}

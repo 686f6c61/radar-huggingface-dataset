@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Samalas/Govcon",
+  "slug": "samalas-govcon",
+  "author": "Samalas",
+  "url": "https://huggingface.co/Samalas/Govcon",
+  "created_at": "2026-09-10T10:32:07.000Z",
+  "updated_at": "2026-09-10T10:32:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eidosper - 知乎",
+      "url": "https://www.zhihu.com/people/eidosper",
+      "snippet": "2 days ago · 因为iPhone17还没涨价，而且华为畅享90Pro max只涨了200块钱。 国产安卓阵营上面的压力线就是iPhone17的价格，下 …"
+    },
+    {
+      "title": "rhino和blender有哪些功能上的区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/315532044",
+      "snippet": "Mar 11, 2019 · Rhino 5 及之前版本的多边形建模功能几近残废（尽管多边形网格这种几何数据类型对其而言还是很重要——NURBS 曲 …"
+    },
+    {
+      "title": "机器学习各种算法怎么调参? - 知乎",
+      "url": "https://www.zhihu.com/question/34470160",
+      "snippet": "另一方面，Gradient Tree Boosting的子模型都拥有较低的方差，整体模型的训练过程旨在降低偏差，故其需要较多的子模 …"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/follow",
+      "snippet": "知乎是中文互联网高质量问答社区和原创内容平台，汇聚科技、商业等领域的创作者，致力于知识分享与经验交流。"
+    },
+    {
+      "title": "心灵魔术有哪些常见的技术和方法？如何学习它们 ...",
+      "url": "https://www.zhihu.com/question/22460288",
+      "snippet": "Jan 6, 2014 · 再说说现代的Peter Turner，被初级心灵魔术爱好者传说为神奇的存在，其魔术多用DR，在爱好者圈子内褒贬不一，冷 …"
+    }
+  ]
+}

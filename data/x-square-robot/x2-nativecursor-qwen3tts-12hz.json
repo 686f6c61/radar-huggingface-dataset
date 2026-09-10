@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "x-square-robot/X2-NativeCursor-Qwen3TTS-12Hz",
+  "slug": "x-square-robot-x2-nativecursor-qwen3tts-12hz",
+  "author": "x-square-robot",
+  "url": "https://huggingface.co/x-square-robot/X2-NativeCursor-Qwen3TTS-12Hz",
+  "created_at": "2026-09-10T10:42:49.000Z",
+  "updated_at": "2026-09-10T10:46:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "text-to-speech",
+    "streaming",
+    "alignment",
+    "progress-tracking",
+    "qwen3-tts",
+    "x2-nativecursor",
+    "arxiv:2609.09677",
+    "zh",
+    "en",
+    "arxiv:2608.18661",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11189824,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X. It’s what’s happening / X",
+      "url": "https://x.com/",
+      "snippet": "About · Get App · Grok · Help · Terms · Privacy · Cookies · Careers · Ads & Business · Developers · News · Accessibility · © 2026 X …"
+    },
+    {
+      "title": "X (@X) / X",
+      "url": "https://x.com/X",
+      "snippet": "Record in segments, green screen any photo, video or post, and add captions in your style. A new way to create videos, now live on …"
+    },
+    {
+      "title": "X (réseau social) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/X_(r%C3%A9seau_social)",
+      "snippet": ""
+    },
+    {
+      "title": "Comment s'inscrire sur X et créer un nouveau compte X",
+      "url": "https://help.x.com/fr/using-x/create-x-account",
+      "snippet": "Un compte X est votre passeport pour découvrir ce qui se passe dans le monde et les discussions en temps réel. Grâce à votre …"
+    },
+    {
+      "title": "À propos de X | Notre entreprise et nos priorités",
+      "url": "https://about.x.com/fr",
+      "snippet": "Nous sommes au service de la conversation publique. Découvrez plus d'informations sur l'entreprise X et ce que nous faisons pour …"
+    }
+  ]
+}

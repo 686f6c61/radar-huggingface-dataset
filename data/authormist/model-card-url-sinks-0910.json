@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "authormist/model-card-url-sinks-0910",
+  "slug": "authormist-model-card-url-sinks-0910",
+  "author": "authormist",
+  "url": "https://huggingface.co/authormist/model-card-url-sinks-0910",
+  "created_at": "2026-09-10T01:12:07.000Z",
+  "updated_at": "2026-09-10T04:01:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "javascript:document.documentElement.setAttribute('data-library-xss','YES')",
+  "languages": [],
+  "tags": [
+    "javascript:document.documentElement.setAttribute('data-library-xss','YES')",
+    "tensorboard",
+    "url-sink-controlled-probe",
+    "text-generation",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "<img id=task-name-probe src=x onerror=document.documentElement.setAttribute('data-task-name-xss','YES')>",
+      "dataset": "<img id=result-dataset-name-probe src=x onerror=document.documentElement.setAttribute('data-result-dataset-name-xss','YES')>",
+      "metric": "<img id=result-metric-name-probe src=x onerror=document.documentElement.setAttribute('data-result-metric-name-xss','YES')>",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Belgian FIRE community - Reddit",
+      "url": "https://www.reddit.com/r/BEFire/top/?t=all",
+      "snippet": "Be FIRE - how to FIRE in Belgium !"
+    },
+    {
+      "title": "eID authentication problem : r/belgium - Reddit",
+      "url": "https://www.reddit.com/r/belgium/comments/1dmzsz7/eid_authentication_problem/",
+      "snippet": "Jun 23, 2024 · This is my first time filing my taxes in Belgium (Brussels) and I'm trying to do it through myMINFIN using my foreigner …"
+    },
+    {
+      "title": "How our efficient government sends you a message… : r/belgium",
+      "url": "https://www.reddit.com/r/belgium/comments/parn1s/how_our_efficient_government_sends_you_a_message/",
+      "snippet": "How our efficient government sends you a message… You get an email saying you have a message! … in your my e-box You go to …"
+    },
+    {
+      "title": "For residents of Somerville, MA - Reddit",
+      "url": "https://www.reddit.com/r/Somerville/",
+      "snippet": "Welcome to /r/Somerville, a subreddit dedicated to news, photos, questions, or whatever else relevant to the Somerville, MA …"
+    },
+    {
+      "title": "Unable to signin/login on minfin.be to fill my tax : r/belgium",
+      "url": "https://www.reddit.com/r/belgium/comments/j35qog/unable_to_signinlogin_on_minfinbe_to_fill_my_tax/",
+      "snippet": "Oct 1, 2020 · I forgot to fill my tax for the year 2019 and received a letter for it but I can't login minfin.be to fill my tax ! (All the options …"
+    }
+  ]
+}

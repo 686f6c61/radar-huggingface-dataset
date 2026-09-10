@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Edge0/Edge0-8B-A1B-preview",
+  "slug": "edge0-edge0-8b-a1b-preview",
+  "author": "Edge0",
+  "url": "https://huggingface.co/Edge0/Edge0-8B-A1B-preview",
+  "created_at": "2026-09-08T13:57:39.000Z",
+  "updated_at": "2026-09-10T03:21:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "moe",
+    "edge-inference",
+    "prerouter",
+    "lora",
+    "ssd-offload",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:inclusionAI/Ling-3.0-tiny-base",
+    "base_model:adapter:inclusionAI/Ling-3.0-tiny-base",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 332,
+  "trending_score": 12,
+  "parameters": 7923998112,
+  "parameters_human": "7.92B",
+  "storage_bytes": 4601710259,
+  "storage_human": "4.6 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny-base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CAD中怎么打开DWF文件？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/7908e85c3efa85ef491ad21f.html",
+      "snippet": "Oct 18, 2019 · CAD中怎么打开DWF文件,DWF文件是Autodek开发的一种开放、安全的文件格式。它高度压缩，固相对于dwg文件会更 …"
+    },
+    {
+      "title": "在CAD中 遇到图纸打开后文字显示不出来？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/ed2a5d1f0cd20c49f6be17e6.html",
+      "snippet": "Oct 9, 2019 · 在CAD中 遇到图纸打开后文字显示不出来？这里，小编就告诉大家是怎么一回事，学会怎么操作。"
+    },
+    {
+      "title": "CAD看图哪个软件好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/542414031",
+      "snippet": "电脑CAD看图软件哪个好？一款好用的CAD看图软件，需要具备以下特点：各个版本的CAD图纸均能完整、正确显示，看图流畅，功 …"
+    },
+    {
+      "title": "求教CAD图纸怎么弄电子签名，求详细步骤？ - 知乎",
+      "url": "https://www.zhihu.com/question/62044225",
+      "snippet": "第二步，将该图片导入AI，完了后点击图像描摹，完了后点个扩展； 第三步，点击文件-导出-导出为DWG格式。 第四步，用 CAD 打 …"
+    },
+    {
+      "title": "怎么将EXCEL表格导入AutoCAD里面 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/4ae03de3c440333efe9e6b66.html",
+      "snippet": "Aug 9, 2018 · 怎么将EXCEL表格导入AutoCAD里面,高版本的CAD界面发生了很大的变化，可能很多人还不是很熟悉。以下介绍将做好 …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ling-3.0-flash-VL-fp8",
+  "slug": "inclusionai-ling-3-0-flash-vl-fp8",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL-fp8",
+  "created_at": "2026-09-08T10:21:21.000Z",
+  "updated_at": "2026-09-10T10:14:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bailing_moe_v3_vl",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 395,
+  "trending_score": 0,
+  "parameters": 124848460496,
+  "parameters_human": "124.85B",
+  "storage_bytes": 126203334524,
+  "storage_human": "126.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "The future of building happens together Tools and trends evolve, but collaboration endures. With GitHub, developers, agents, and …"
+    },
+    {
+      "title": "Sign up for GitHub",
+      "url": "https://github.com/signup?source=login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "openclaw · GitHub",
+      "url": "https://github.com/openclaw",
+      "snippet": "Your personal, open source AI assistant. openclaw has 90 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Git · GitHub",
+      "url": "https://github.com/git-guides",
+      "snippet": "That ranges from using GitHub to host the shared remote repository to working with colleagues and capitalizing on features like …"
+    },
+    {
+      "title": "deepseek-harness/README.zh.md at master · deepseek-ai ... - GitHub",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/master/README.zh.md",
+      "snippet": "社区与支持 通过 GitHub Discussions 提交反馈或 bug 报告。 为你的插件仓库添加 dsh-plugin 话题，便于被发现。 欢迎加入 …"
+    }
+  ]
+}

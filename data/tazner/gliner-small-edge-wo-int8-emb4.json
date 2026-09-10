@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Tazner/Gliner-small-edge-wo-int8-emb4",
+  "slug": "tazner-gliner-small-edge-wo-int8-emb4",
+  "author": "Tazner",
+  "url": "https://huggingface.co/Tazner/Gliner-small-edge-wo-int8-emb4",
+  "created_at": "2026-09-10T09:18:11.000Z",
+  "updated_at": "2026-09-10T09:18:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "gliner",
+    "onnx",
+    "ner",
+    "zero-shot",
+    "pii-detection",
+    "quantized",
+    "edge",
+    "token-classification",
+    "en",
+    "de",
+    "base_model:gliner-community/gliner_small-v2.5",
+    "base_model:quantized:gliner-community/gliner_small-v2.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140736229,
+  "storage_human": "141 MB",
+  "base_model": "gliner-community/gliner_small-v2.5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Fordító",
+      "url": "https://translate.google.hu/",
+      "snippet": "A Google díjmentesen használható szolgáltatása képes a szavak, kifejezések és weboldalak azonnali lefordítására a magyar és több …"
+    },
+    {
+      "title": "Google Fordító",
+      "url": "https://translate.google.hu/details",
+      "snippet": "Visszajelzés küldése Részletek kereséséhez adja meg a kívánt szöveget"
+    },
+    {
+      "title": "Google Fordító",
+      "url": "https://translate.google.hu/m",
+      "snippet": "Google-főoldal Visszajelzés küldése Adatvédelem és szerződési feltételek Váltás a webhely teljes verziójára"
+    },
+    {
+      "title": "Google Fordító",
+      "url": "https://translate.google.hu/_/TranslateWebserverUi/bscframe",
+      "snippet": "A Google Fordító ingyenes szolgáltatás, amely több mint 100 nyelv között segíti a szavak, kifejezések és weboldalak fordítását."
+    }
+  ]
+}

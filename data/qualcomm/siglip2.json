@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/SigLIP2",
   "created_at": "2026-08-25T04:11:37.000Z",
-  "updated_at": "2026-08-25T04:11:38.000Z",
+  "updated_at": "2026-09-10T04:56:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

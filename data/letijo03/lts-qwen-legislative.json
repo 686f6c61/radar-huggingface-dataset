@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "letijo03/lts-qwen-legislative",
+  "slug": "letijo03-lts-qwen-legislative",
+  "author": "letijo03",
+  "url": "https://huggingface.co/letijo03/lts-qwen-legislative",
+  "created_at": "2026-09-10T08:56:45.000Z",
+  "updated_at": "2026-09-10T08:56:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333008,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "multi vehicle accident representation specialist jobs",
+      "url": "https://www.indeed.com/q-multi-vehicle-accident-representation-specialist-jobs.html",
+      "snippet": "933 Multi Vehicle Accident Representation Specialist jobs. Apply to Auto Appraiser, Engineer, Consultant and more. Hiring now on …"
+    },
+    {
+      "title": "Multi Vehicle Accident Representation Specialist Jobs in ... - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/multi-vehicle-accident-representation-specialist-jobs",
+      "snippet": "Today's top Multi Vehicle Accident Representation Specialist jobs in United States. Leverage your professional network, and get hired."
+    },
+    {
+      "title": "Remote Multi Vehicle Accident Representation Specialist Jobs",
+      "url": "https://www.virtualvocations.com/q-remote-multi-vehicle-accident-representation-specialist-jobs.html",
+      "snippet": "Find Remote Multi Vehicle Accident Representation Specialist Jobs that allow telecommuting, part-time, full-time, or freelance …"
+    },
+    {
+      "title": "Home - Allied Injury Group",
+      "url": "https://alliedinjurygroup.com/",
+      "snippet": "Our matching service is entirely free for individuals seeking legal representation for their accident cases. You only need to pay …"
+    },
+    {
+      "title": "Find Multi-Car Accident Attorney – Libertiy",
+      "url": "https://libertiy.com/how-to-find-car-accident-attorney-multi-vehicle/",
+      "snippet": "Mar 21, 2026 · This comprehensive guide will walk you through the essential steps and considerations for finding a car accident …"
+    }
+  ]
+}

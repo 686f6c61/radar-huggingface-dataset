@@ -19,6 +19,7 @@
     "conversational",
     "license:apache-2.0",
     "endpoints_compatible",
+    "deploy:sagemaker",
     "region:us"
   ],
   "likes": 1204,

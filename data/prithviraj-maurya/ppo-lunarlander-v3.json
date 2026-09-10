@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "prithviraj-maurya/ppo-LunarLander-v3",
+  "slug": "prithviraj-maurya-ppo-lunarlander-v3",
+  "author": "prithviraj-maurya",
+  "url": "https://huggingface.co/prithviraj-maurya/ppo-LunarLander-v3",
+  "created_at": "2026-09-10T01:16:11.000Z",
+  "updated_at": "2026-09-10T05:40:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 864275,
+  "storage_human": "864275 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "GPT‑5 is here - OpenAI",
+      "url": "https://openai.com/gpt-5/",
+      "snippet": "GPT‑5 is smarter across the board, providing more useful responses across math, science, finance, law, and more. It’s like having a …"
+    },
+    {
+      "title": "ChatGPT Hrvatski",
+      "url": "https://chatgpt.com/hr-HR/",
+      "snippet": "Upotrebljavajte ChatGPT za odgovaranje na pitanja, pisanje, izradu slika, obavljanje posla i programiranje – sve na jednom mjestu. …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MalcolmBT/elpris-se2-team5",
+  "slug": "malcolmbt-elpris-se2-team5",
+  "author": "MalcolmBT",
+  "url": "https://huggingface.co/MalcolmBT/elpris-se2-team5",
+  "created_at": "2026-09-10T09:14:59.000Z",
+  "updated_at": "2026-09-10T09:32:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 507781,
+  "storage_human": "507781 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are the best sites for getting Wii U ISOs? - Reddit",
+      "url": "https://www.reddit.com/r/CemuPiracy/comments/sxycvx/what_are_the_best_sites_for_getting_wii_u_isos/",
+      "snippet": "Feb 21, 2022 · I know sites for wii and 3DS games, but I do not know any fo Wii U (I have a PAL Wii U if that helps)"
+    },
+    {
+      "title": "List of Safe Rom Sites (Please Stop Asking) : r/Roms - Reddit",
+      "url": "https://www.reddit.com/r/Roms/comments/m1t5xd/list_of_safe_rom_sites_please_stop_asking/",
+      "snippet": "First of all if you're worried about viruses use a computer that you can install a fresh copy of your OS on it easily or use a Virtual …"
+    },
+    {
+      "title": "Forenliste | Digital Eliteboard - Das Digitale Technik Forum",
+      "url": "https://www.digital-eliteboard.com/forums/",
+      "snippet": "Das Digital Eliteboard ist ein führendes Technikforum mit umfangreichen Diskussionen und Lösungen zu Themen wie Fernsehen, …"
+    },
+    {
+      "title": "Memu may have installed a virus on my PC : r/emulators - Reddit",
+      "url": "https://www.reddit.com/r/emulators/comments/tyhdh3/memu_may_have_installed_a_virus_on_my_pc/",
+      "snippet": "Apr 7, 2022 · Some of you might have this issue because you click on the DOWNLOAD button on the front page. This button will …"
+    },
+    {
+      "title": "Emu OS. : r/emulation - Reddit",
+      "url": "https://www.reddit.com/r/emulation/comments/14wo539/emu_os/",
+      "snippet": "Jul 11, 2023 · 71 votes, 15 comments. 352K subscribers in the emulation community. News and discussion about emulation."
+    }
+  ]
+}

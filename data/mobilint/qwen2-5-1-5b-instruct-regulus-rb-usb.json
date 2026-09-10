@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mobilint/Qwen2.5-1.5B-Instruct-regulus-rb-usb",
+  "slug": "mobilint-qwen2-5-1-5b-instruct-regulus-rb-usb",
+  "author": "mobilint",
+  "url": "https://huggingface.co/mobilint/Qwen2.5-1.5B-Instruct-regulus-rb-usb",
+  "created_at": "2026-09-10T01:17:15.000Z",
+  "updated_at": "2026-09-10T01:23:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mobilint",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mobilint",
+    "safetensors",
+    "mobilint-qwen2",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 233373696,
+  "parameters_human": "233.4M",
+  "storage_bytes": 3312030688,
+  "storage_human": "3.3 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Katalog | Hager Polska",
+      "url": "https://hager.com/pl/katalog/",
+      "snippet": "Przejrzyj całą naszą dokumentację i pobierz to, czego potrzebujesz - jednym kliknięciem! Sprawdź nasze dedykowane aplikacje, …"
+    },
+    {
+      "title": "Hager | Rozwiązania elektryczne do różnych typów budynków",
+      "url": "https://hager.com/pl",
+      "snippet": "Łatwy dostęp m.in. do doku­men­tacji, instrukcji, broszur, kata­logów, certy­fi­katów produktów Hager. Wszystko w zasięgu ręki! Hager - …"
+    },
+    {
+      "title": "Elektronischer Online Katalog von Hager",
+      "url": "https://hager.com/de/katalog/",
+      "snippet": "Entdecken Sie Produkte im Bereich Energieverteilung, Energiemanagement, Energiemonitoring, Leitungsführung, …"
+    },
+    {
+      "title": "Do pobrania | Szkolenia i wsparcie | Hager",
+      "url": "https://hager.com/pl/szkolenia-i-wsparcie/do-pobrania",
+      "snippet": "Osprzęt elek­tro­in­sta­la­cyjny, systemy stero­wania budyn­kami. Dobry design broni się sam. Berker. Kata­logi, broszury, ulotki... Pobierz …"
+    },
+    {
+      "title": "Osprzęt elektroinstalacyjny Berker oraz Hager - design | Hager Polska",
+      "url": "https://hager.com/pl/katalog/osprzet-elektroinstalacyjny-berker-oraz-hager-design",
+      "snippet": "Osprzęt elek­tro­in­stalacyjny Berker oraz Hager - design Ponadczasowe rozwiązania elektroinstalacyjne, które spełniają najwyższe …"
+    }
+  ]
+}

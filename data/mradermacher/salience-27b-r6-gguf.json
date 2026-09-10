@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Salience-27B-R6-GGUF",
+  "slug": "mradermacher-salience-27b-r6-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Salience-27B-R6-GGUF",
+  "created_at": "2026-09-10T10:49:49.000Z",
+  "updated_at": "2026-09-10T11:05:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "vision-language",
+    "reasoning",
+    "thinking",
+    "efficient-reasoning",
+    "thinking-efficiency",
+    "code",
+    "software-engineering",
+    "swe",
+    "agentic",
+    "terminal",
+    "tool-use",
+    "function-calling",
+    "instruction-following",
+    "long-context",
+    "uncensored",
+    "mtp",
+    "speculative-decoding",
+    "qwen3.8",
+    "en",
+    "base_model:vectionlabs/Salience-27B-R6",
+    "base_model:quantized:vectionlabs/Salience-27B-R6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 28246751104,
+  "storage_human": "28.2 GB",
+  "base_model": "vectionlabs/Salience-27B-R6",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "France médaille satirique érotique effigie de Napoléon III bronze ou …",
+      "url": "https://napoleoniiibronze.com/france-medaille-satirique-erotique-effigie-de-napoleon-iii-bronze-ou-cuivre.htm",
+      "snippet": "France - médaille satirique érotique effigie de Napoléon III - bronze ou cuivre. 27,42 gr / diamètre 35,26 mm. L'objet illustré est celui …"
+    },
+    {
+      "title": "France - médaille satirique érotique effigie de Napoléon III - bronze ...",
+      "url": "https://www.ebay.fr/itm/365241761283",
+      "snippet": "Les meilleures offres pour France - médaille satirique érotique effigie de Napoléon III - bronze ou cuivre sont sur eBay Comparez les …"
+    },
+    {
+      "title": "France médaille satirique érotique effigie de Napoléon III bronze ou ...",
+      "url": "https://bronzexixesiecle.com/2024/11/france-medaille-satirique-erotique-effigie-de-napoleon-iii-bronze-ou-cuivre/",
+      "snippet": "Nov 27, 2024 · France – médaille satirique érotique effigie de Napoléon III – bronze ou cuivre. 27,42 gr / diamètre 35,26 mm. Vous …"
+    },
+    {
+      "title": "Bronze medaille napoleon d'occasion - Collection - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/collection/bronze-medaille-napoleon",
+      "snippet": "Consultez nos annonces de bronze medaille napoleon d'occasion. Trouvez toutes nos annonces de Collection sur leboncoin."
+    },
+    {
+      "title": "Médaille satirique - Napoléon III, défaite de Sedan ... - Numista",
+      "url": "https://fr.numista.com/18608",
+      "snippet": "Elles servent seulement d'indication ; elles ne sont pas destinées à définir un prix pour acheter, vendre ou échanger. Numista …"
+    }
+  ]
+}

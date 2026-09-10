@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "minte1431/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "slug": "minte1431-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
+  "author": "minte1431",
+  "url": "https://huggingface.co/minte1431/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "created_at": "2026-09-10T01:48:28.000Z",
+  "updated_at": "2026-09-10T01:48:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "fastmtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 172466425216,
+  "storage_human": "172.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DOFUS, le MMORPG stratégique.",
+      "url": "https://www.dofus.com/fr",
+      "snippet": "Plusieurs milliers de joueurs dans le monde. DOFUS est un jeu de rôle massivement multijoueur où le but est de retrouver les 6 …"
+    },
+    {
+      "title": "PAS de temporis ! Pourquoi ? - Forum - DOFUS",
+      "url": "https://www.dofus.com/fr/forum/2103-general/2451554-temporis-pourquoi",
+      "snippet": "Mar 3, 2026 · Pas sûr, chaque temporis a pété les scores du précédent (en terme de préinscription au moins). Même si il y aura …"
+    },
+    {
+      "title": "Transfert d'appel pour Alcatel Temporise 780 noir",
+      "url": "https://forums.commentcamarche.net/forum/affich-32245183-transfert-d-appel-pour-alcatel-temporise-780-noir",
+      "snippet": "Jul 15, 2015 · Bonjour, Comment faire un transfert d'appel d'un poste fixe à un autre poste fixe pour Alcatel Temporise 780 noir …"
+    },
+    {
+      "title": "ALCATEL -Temporis 500 Pro V2 [Résolu] - Forum Mobile",
+      "url": "https://forums.commentcamarche.net/forum/affich-7988844-alcatel-temporis-500-pro-v2",
+      "snippet": "Jun 26, 2012 · Nous avons dans notre bureau, plusieurs postes de tel : ALCATEL -Temporis 500 Pro V2. Nous avons sur plius. …"
+    },
+    {
+      "title": "Tierlist de vos Temporis préférés ! - Forum - DOFUS",
+      "url": "https://www.dofus.com/fr/forum/1782-dofus/2391617-tierlist-vos-temporis-preferes",
+      "snippet": "May 23, 2023 · Plusieurs milliers de joueurs dans le monde. DOFUS est un jeu de rôle massivement multijoueur où le but est de …"
+    }
+  ]
+}

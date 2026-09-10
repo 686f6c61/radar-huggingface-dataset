@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gauthiermalandrin/cygnss-sar-flood-mapping",
+  "slug": "gauthiermalandrin-cygnss-sar-flood-mapping",
+  "author": "gauthiermalandrin",
+  "url": "https://huggingface.co/gauthiermalandrin/cygnss-sar-flood-mapping",
+  "created_at": "2026-09-10T10:19:57.000Z",
+  "updated_at": "2026-09-10T10:26:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156398980,
+  "storage_human": "156 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dekorativní nálepka na zeď PASTELOVÝ LETOUN 57x66 cm",
+      "url": "https://allegro.cz/nabidka/dekorativni-nalepka-na-zed-pastelovy-letoun-57x66-cm-14849437649",
+      "snippet": "Výtisky na zařízeních nejvyšší třídy nabízených na trhu – vysoká kvalita tisku a vynikající řezy. Ideální nápad na změnu vzhledu …"
+    },
+    {
+      "title": "XL Samolepka na stěnu PASTELOVÝ LETOUN Medvídek 52x82 - Allegro",
+      "url": "https://allegro.cz/produkt/xl-samolepka-na-stenu-pastelovy-letoun-medvidek-52x82-e3f33669-beb2-4118-a097-d24dabc56a27",
+      "snippet": "Prohlížíte nabídky produktu: XL Samolepka na stěnu PASTELOVÝ LETOUN Medvídek 52x82. Vidíte nějakou nabídku jiného …"
+    },
+    {
+      "title": "Letouni – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Letouni",
+      "snippet": "Letouni (Chiroptera) jsou řád savců, s více než 1 300 popsanými druhy jde o druhý nejpočetnější savčí řád hned po hlodavcích. …"
+    },
+    {
+      "title": "Letoun – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Letoun",
+      "snippet": "Vztlaku se snažilo v 19. století využít mnoho leteckých průkopníků při konstrukci primitivních kluzáků. Prvním, komu se to povedlo, …"
+    },
+    {
+      "title": "Pastelky | Knihkupectví Luxor",
+      "url": "https://www.luxor.cz/c/10086/papirnictvi-vytvarne-potreby-malovani-a-kresleni-pastelky",
+      "snippet": "Někdo rád nakupuje jídlo, někdo si zase užívá obchody s oblečením a módními doplňky. Pro všechny kreativní duše je ale největším …"
+    }
+  ]
+}

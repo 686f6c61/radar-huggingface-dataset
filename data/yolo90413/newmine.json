@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yolo90413/newmine",
+  "slug": "yolo90413-newmine",
+  "author": "yolo90413",
+  "url": "https://huggingface.co/yolo90413/newmine",
+  "created_at": "2026-09-10T02:09:13.000Z",
+  "updated_at": "2026-09-10T02:17:03.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1142816912,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spielzeug & Spielwaren | Smyths Toys Superstores Deutschland",
+      "url": "https://www.smythstoys.com/de/de-de",
+      "snippet": "Spielzeug für Babys und Kinder kaufen bei Smyths Toys Deutschland! ️ Versandkostenfrei ab 20€ ️ 24h-Express-Lieferung ️ …"
+    },
+    {
+      "title": "Spielzeug & Spielwaren | Smyths Toys Superstores Deutschland",
+      "url": "https://www.smythstoys.com/de/de-de/spielzeug",
+      "snippet": "Spielzeug für Babys und Kinder kaufen bei Smyths Toys Deutschland! Versandkostenfrei ab 20€ ️ 24h-Express-Lieferung ️ Click & …"
+    },
+    {
+      "title": "Smyths Toys – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Smyths_Toys",
+      "snippet": "Smyths Toys mit Sitz in Galway (Irland) ist Europas größter Einzelhändler für Spielwaren und Babyartikel. Er betreibt in Deutschland, …"
+    },
+    {
+      "title": "Smyths Toys Filiale – Rheinstraße 85 in 47798 Krefeld - Angebote ...",
+      "url": "https://www.kaufda.de/Filialen/Krefeld/Smyths-Toys-Rheinstrasse/v-f1067224171",
+      "snippet": "Finde hier alle Informationen der Smyths Toys Filiale Rheinstraße 85 in Krefeld (47798). Neben Öffnungszeiten, Adresse und …"
+    },
+    {
+      "title": "Smyths Toys: Ostwall Carree, Rheinstr. 85 in 47798 Krefeld ...",
+      "url": "https://www.meinprospekt.de/krefeld/filialen/smyths-toys/351213",
+      "snippet": "Erfahre hier alles zur Smyths Toys Filiale in der Ostwall Carree, Rheinstr. 85, 47798 Krefeld. Bei MeinProspekt findest du alles, was …"
+    }
+  ]
+}

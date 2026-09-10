@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Klissh/layoutlmv3-cord-v2",
+  "slug": "klissh-layoutlmv3-cord-v2",
+  "author": "Klissh",
+  "url": "https://huggingface.co/Klissh/layoutlmv3-cord-v2",
+  "created_at": "2026-09-10T09:17:21.000Z",
+  "updated_at": "2026-09-10T09:21:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "layoutlmv3",
+    "token-classification",
+    "receipt",
+    "invoice",
+    "cord",
+    "document-understanding",
+    "key-information-extraction",
+    "en",
+    "id",
+    "dataset:naver-clova-ix/cord-v2",
+    "base_model:microsoft/layoutlmv3-base",
+    "base_model:finetune:microsoft/layoutlmv3-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125959863,
+  "parameters_human": "126.0M",
+  "storage_bytes": 503865780,
+  "storage_human": "504 MB",
+  "base_model": "microsoft/layoutlmv3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autos & mehr: Gebrauchtwagen & Neuwagen kaufen » mobile.de",
+      "url": "https://www.mobile.de/?msockid=2c2b67ed3842664417b3703d396667eb",
+      "snippet": "Gebrauchtwagen kaufen, verkaufen, finanzieren & leasen? Oder ein neues Auto? mobile.de! Entdecke bei mobile.de alles rund um …"
+    },
+    {
+      "title": "Gebrauchtwagen in der Nähe kaufen bei mobile",
+      "url": "https://suchen.mobile.de/auto/gebrauchtwagen.html?msockid=2c2b67ed3842664417b3703d396667eb",
+      "snippet": "Finde Gebrauchtwagen in deiner Nähe bei mobile.de – Größter Fahrzeugmarkt in DE Jetzt TÜV-geprüftes Traumauto kaufen oder …"
+    },
+    {
+      "title": "PKW-Suche bei mobile.de – schnell und einfach dein Fahrzeug finden",
+      "url": "https://www.mobile.de/s/auto?msockid=2c2b67ed3842664417b3703d396667eb",
+      "snippet": "Du suchst einen Pkw in deiner Umgebung? Finde dein Fahrzeug mit der Pkw-Suche bei: mobile.de – Deutschlands größter …"
+    },
+    {
+      "title": "Gebrauchtwagen von Privatanbietern kaufen bei mobile",
+      "url": "https://suchen.mobile.de/auto/privatanbieter.html?msockid=2c2b67ed3842664417b3703d396667eb",
+      "snippet": "Finde Gebrauchtwagen von Privatanbietern bei mobile.de – Größter Fahrzeugmarkt in DE Jetzt TÜV-geprüftes Traumauto von privat …"
+    },
+    {
+      "title": "Gebrauchtwagencenter Konz in Konz - mobile.de",
+      "url": "https://home.mobile.de/GEBRAUCHTWAGENCENTERBEKOND",
+      "snippet": "Webseite von Gebrauchtwagencenter Konz in Konz bei mobile.de Aktuelle Angebote Bewertungen Kontaktinformationen"
+    }
+  ]
+}

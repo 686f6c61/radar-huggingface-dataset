@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Tjgguy12/stock-1d-quant-predictor",
+  "slug": "tjgguy12-stock-1d-quant-predictor",
+  "author": "Tjgguy12",
+  "url": "https://huggingface.co/Tjgguy12/stock-1d-quant-predictor",
+  "created_at": "2026-09-10T01:16:05.000Z",
+  "updated_at": "2026-09-10T02:09:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "finance",
+    "stock-prediction",
+    "quant",
+    "xgboost",
+    "lightgbm",
+    "1day",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2501148,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comunicate de presa - ANAF",
+      "url": "https://www.anaf.ro/anaf/internet/ANAF",
+      "snippet": "ANAF a stabilit TVA suplimentară de plată de aproximativ 87 milioane de lei în urma verificării unor tranzacții cu utilaje agricole aduse …"
+    },
+    {
+      "title": "Pagina logout - ANAF",
+      "url": "https://login.anaf.ro/status.html",
+      "snippet": "Pagina ANAF pentru autentificare utilizatori și accesarea aplicațiilor fiscale."
+    },
+    {
+      "title": "ANAF",
+      "url": "https://www.anaf.ro/anaf/internet/!ut/p/a0/04_Sj9CPykssy0xPLMnMz0vMAfGjzOI9DD3MPIwsjLz8fYwsDMyC_Zx9jJzNDAzcjfWDU_P0C7IdFQGJQ9vk/",
+      "snippet": "Raport anual de evaluare a măsurilor incluse în Planul de integritate al ANAF pe perioada 2022-2025 Sancțiuni Internaționale Cadrul …"
+    },
+    {
+      "title": "Ministerul Finanţelor - ANAF",
+      "url": "https://epatrim.anaf.ro/StareD112/",
+      "snippet": "Ministerul Finanţelor Agenţia Naţională de Administrare Fiscală Vizualizare documente Verificarea recipiselor pe …"
+    },
+    {
+      "title": "ANAF",
+      "url": "http://epatrim.anaf.ro/",
+      "snippet": "Oct 25, 2016 · Formularele necesare sunt disponibile pe pagina Specificaţii tehnice. Reînnoirea certificatului aferent administratorului …"
+    }
+  ]
+}

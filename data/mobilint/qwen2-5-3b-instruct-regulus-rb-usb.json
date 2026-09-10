@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mobilint/Qwen2.5-3B-Instruct-regulus-rb-usb",
+  "slug": "mobilint-qwen2-5-3b-instruct-regulus-rb-usb",
+  "author": "mobilint",
+  "url": "https://huggingface.co/mobilint/Qwen2.5-3B-Instruct-regulus-rb-usb",
+  "created_at": "2026-09-10T01:23:59.000Z",
+  "updated_at": "2026-09-10T01:30:23.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mobilint",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mobilint",
+    "safetensors",
+    "mobilint-qwen2",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 311164928,
+  "parameters_human": "311.2M",
+  "storage_bytes": 5992313360,
+  "storage_human": "6.0 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=de",
+      "snippet": "Erstelle ein Konto oder melde dich bei Instagram an – Teile deine Ideen mit Menschen, die so ticken wie du."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 290 Following, 8,581 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Instagram",
+      "snippet": "In August 2016, Instagram launched Instagram Stories, a feature that allows users to take photos, add effects and layers, and add …"
+    }
+  ]
+}

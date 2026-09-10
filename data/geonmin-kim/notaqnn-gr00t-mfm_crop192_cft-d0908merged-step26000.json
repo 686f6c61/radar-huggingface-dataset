@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/notaqnn-GR00T-Mfm_crop192_cft-D0908merged-step26000",
+  "slug": "geonmin-kim-notaqnn-gr00t-mfm_crop192_cft-d0908merged-step26000",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/notaqnn-GR00T-Mfm_crop192_cft-D0908merged-step26000",
+  "created_at": "2026-09-10T09:25:38.000Z",
+  "updated_at": "2026-09-10T09:26:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qnn",
+    "hexagon",
+    "qcs9075",
+    "gr00t",
+    "robotics",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5372170240,
+  "parameters_human": "5.37B",
+  "storage_bytes": 5688163752,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer login no Gmail - Computador - Ajuda do Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt-br&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer login no Gmail Dica: se você fizer login em um computador público, não se esqueça de sair do Gmail antes de sair do …"
+    },
+    {
+      "title": "Criar uma Conta do Google para o Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=pt-BR",
+      "snippet": "Importante: antes de criar uma nova Conta do Google, saia da conta atual. Saiba como sair do Gmail. No dispositivo, acesse a …"
+    },
+    {
+      "title": "Como entrar direto na caixa de entrada do Hotmail - CCM",
+      "url": "https://br.ccm.net/faq/18241-entrar-direto-na-caixa-de-entrada-do-hotmail",
+      "snippet": "Quando o Hotmail foi substituído pelo Outlook, muitas dúvidas surgiram entre os internautas. Porém é bastante simples acessar o …"
+    },
+    {
+      "title": "Como abrir a caixa de entrada diretamente Hotmail - CCM",
+      "url": "https://br.ccm.net/forum/affich-417496-como-abrir-a-caixa-de-entrada-diretamente-hotmail",
+      "snippet": "Para entrar diretamente na caixa de entrada do Hotmail, primeiramente você deve se logar no Hotmail. Depois, ao lado ou abaixo da …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    }
+  ]
+}

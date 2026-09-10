@@ -5,7 +5,7 @@
   "author": "cossmoss",
   "url": "https://huggingface.co/cossmoss/reverse_distill_assets",
   "created_at": "2026-08-03T05:43:06.000Z",
-  "updated_at": "2026-09-09T08:49:20.000Z",
+  "updated_at": "2026-09-10T04:00:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9720111928676,
-  "storage_human": "9720.1 GB",
+  "storage_bytes": 9690576333881,
+  "storage_human": "9690.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

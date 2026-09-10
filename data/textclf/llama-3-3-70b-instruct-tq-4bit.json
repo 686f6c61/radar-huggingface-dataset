@@ -5,7 +5,7 @@
   "author": "textclf",
   "url": "https://huggingface.co/textclf/Llama-3.3-70B-Instruct-TQ-4bit",
   "created_at": "2026-08-17T06:36:02.000Z",
-  "updated_at": "2026-08-24T20:11:04.000Z",
+  "updated_at": "2026-09-09T19:00:47.000Z",
   "license": "llama3.3",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,7 +44,7 @@
     "license:llama3.3",
     "text-generation-inference",
     "endpoints_compatible",
-    "tq_quant",
+    "tq",
     "region:us"
   ],
   "likes": 0,

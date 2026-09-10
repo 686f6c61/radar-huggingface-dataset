@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jb10231/bitcoin-address-risk-model-v2",
+  "slug": "jb10231-bitcoin-address-risk-model-v2",
+  "author": "jb10231",
+  "url": "https://huggingface.co/jb10231/bitcoin-address-risk-model-v2",
+  "created_at": "2026-09-10T09:51:39.000Z",
+  "updated_at": "2026-09-10T09:51:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "financial_crime",
+    "bitcoin",
+    "ransomware",
+    "classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1651638,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Fax při záchranné operaci, hasiči dvě a půl hodiny na cestě nebo úřední dopis o karanténě doručený až poté, co skončila, jsou podle …"
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě. Přejít na Seznam.cz"
+    },
+    {
+      "title": "Seznam Zprávy",
+      "url": "https://www.seznamzpravy.cz/",
+      "snippet": "Videa, články, aktuální zprávy z domova i ze světa. Zpravodajství a publicistika od redakce Seznam.cz."
+    },
+    {
+      "title": "Seznam.cz",
+      "url": "https://www.seznam.cz/stitek/seznam.cz-1002726",
+      "snippet": "Seznam.cz představuje vybrané služby v reálných situacích, jak je lidé opravdu používají – kdykoliv a kdekoliv."
+    },
+    {
+      "title": "Seznam Zprávy – Seznam.cz",
+      "url": "https://www.seznam.cz/zdroj/286-seznam-zpravy",
+      "snippet": "Rozsáhlý seriózní dotazník Seznam Zpráv o více než čtyřech desítkách otázek z klíčových oblastí pomůže lidem v rozhodování, …"
+    }
+  ]
+}

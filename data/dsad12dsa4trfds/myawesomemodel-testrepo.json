@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSAD12DSA4TRFDS/MyAwesomeModel-TestRepo",
+  "slug": "dsad12dsa4trfds-myawesomemodel-testrepo",
+  "author": "DSAD12DSA4TRFDS",
+  "url": "https://huggingface.co/DSAD12DSA4TRFDS/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T09:25:50.000Z",
+  "updated_at": "2026-09-10T09:25:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search William Petree Obituaries and Funeral Services",
+      "url": "https://www.legacy.com/obituaries/name/petree/william",
+      "snippet": "Dec 19, 2019 · Search all William Petree Obituaries and Death Notices to find upcoming funeral home services, leave condolences …"
+    },
+    {
+      "title": "Search Linda Petree Obituaries and Funeral Services",
+      "url": "https://www.legacy.com/obituaries/name/petree/linda",
+      "snippet": "Dec 4, 2003 · Search all Linda Petree Obituaries and Death Notices to find upcoming funeral home services, leave condolences for …"
+    },
+    {
+      "title": "Petree Europe | Self-Cleaning Litter Boxes",
+      "url": "https://petree.uk/",
+      "snippet": "Discover Petree - the next-generation self-cleaning litter box and pet accessories. Ensure the best for your cat with our technology …"
+    },
+    {
+      "title": "Petree - Wiktionary, the free dictionary",
+      "url": "https://en.wiktionary.org/wiki/Petree",
+      "snippet": "According to the 2010 United States Census, Petree is the 10473 rd most common surname in the United States, belonging to 3067 …"
+    },
+    {
+      "title": "Nick Petree - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nick_Petree",
+      "snippet": "Nick Scott Petree(born July 16, 1990) is an American former professional baseballpitcher, who last pitched in Minor League …"
+    }
+  ]
+}

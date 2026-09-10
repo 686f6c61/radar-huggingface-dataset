@@ -5,7 +5,7 @@
   "author": "justintiensmith",
   "url": "https://huggingface.co/justintiensmith/groot_multi_gpu_v4",
   "created_at": "2026-08-28T19:41:54.000Z",
-  "updated_at": "2026-08-28T19:46:12.000Z",
+  "updated_at": "2026-09-09T09:09:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,9 +14,16 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "groot",
     "robotics",
+    "vision-language-action",
+    "imitation-learning",
+    "so-101",
+    "spa-bench",
+    "groot-n1.7",
+    "en",
     "dataset:justintiensmith/VLA_Reasoning_Training_Dataset_1200_Trimmed_Start_5_Frame",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
     "license:apache-2.0",
     "region:us"
   ],
@@ -27,7 +34,7 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576223736,
   "storage_human": "12.6 GB",
-  "base_model": null,
+  "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"
   ],

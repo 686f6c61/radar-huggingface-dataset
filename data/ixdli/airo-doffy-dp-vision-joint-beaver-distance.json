@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "IXDLI/AIRO-Doffy-DP-vision-joint-beaver-distance",
+  "slug": "ixdli-airo-doffy-dp-vision-joint-beaver-distance",
+  "author": "IXDLI",
+  "url": "https://huggingface.co/IXDLI/AIRO-Doffy-DP-vision-joint-beaver-distance",
+  "created_at": "2026-09-10T09:11:53.000Z",
+  "updated_at": "2026-09-10T09:14:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6450752981,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spotify账号怎么登不上? - 知乎",
+      "url": "https://www.zhihu.com/question/329216939",
+      "snippet": "spotify每隔14天会强制登录，届时手机app和桌面应用都没法登录，会弹出国家限制问题。 如何解决我找了很多方法但是都没有用，下 …"
+    },
+    {
+      "title": "GitHub - XDL0-0/AIRO-Doffy: VR teleoperation code and app",
+      "url": "https://github.com/XDL0-0/airo-doffy",
+      "snippet": "VR teleoperation code and app. Contribute to XDL0-0/AIRO-Doffy development by creating an account on GitHub."
+    },
+    {
+      "title": "Spotify所有曲目都无法显示，该怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/2056032883077386271",
+      "snippet": "我的Spotify突然所有曲目都显示成这样的状态，歌名和封面都加载不出来，想知道是怎么回事。"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "spotify安卓下载-百度经验",
+      "url": "https://jingyan.baidu.com/article/066074d6d320b282c21cb0a0.html",
+      "snippet": "Apr 23, 2025 · spotify安卓下载,Sotify是一个正版流媒体音乐服务平台，2008年10月在瑞典首都斯德哥尔摩正式上线。Sotify提供免费和 …"
+    }
+  ]
+}

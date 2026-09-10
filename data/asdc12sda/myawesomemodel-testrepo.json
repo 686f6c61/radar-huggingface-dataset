@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDC12SDA/MyAwesomeModel-TestRepo",
+  "slug": "asdc12sda-myawesomemodel-testrepo",
+  "author": "ASDC12SDA",
+  "url": "https://huggingface.co/ASDC12SDA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T01:24:54.000Z",
+  "updated_at": "2026-09-10T01:25:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MLB Scores, 2026 Season - ESPN",
+      "url": "https://www.espn.com/mlb/scoreboard",
+      "snippet": "2 days ago · Live scores for every 2026 MLB season game on ESPN. Includes box scores, video highlights, play breakdowns and …"
+    },
+    {
+      "title": "MLB Scores: Scoreboard, Results and Highlights | MLB.com",
+      "url": "https://www.mlb.com/gameday/?msockid=3241f2df86f167c029f1e50f87dc6603",
+      "snippet": "Get up-to-date MLB scores from today’s games, as well as scores from all the 2026 MLB season games."
+    },
+    {
+      "title": "MLB Scores - Baseball Game Results - CBS Sports",
+      "url": "https://www.cbssports.com/mlb/scoreboard/",
+      "snippet": "2 days ago · Get the latest Major League Baseball box scores, stats, and live game results. Follow your favorite teams and players …"
+    },
+    {
+      "title": "MLB Stats, Scores, History, & Records | Baseball-Reference.com",
+      "url": "https://www.baseball-reference.com/",
+      "snippet": "Complete source for baseball history including complete major league player, team, and league stats, awards, records, leaders, …"
+    },
+    {
+      "title": "MLB on ESPN - Scores, Stats and Highlights",
+      "url": "https://www.espn.com/mlb/",
+      "snippet": "Visit ESPN for MLB live scores, video highlights and latest news. Stream exclusive games on ESPN and play Fantasy Baseball."
+    }
+  ]
+}

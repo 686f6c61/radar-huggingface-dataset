@@ -4,8 +4,8 @@
   "slug": "asfadfad-myawesomemodel-testrepo",
   "author": "asfadfad",
   "url": "https://huggingface.co/asfadfad/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-09T22:39:51.000Z",
-  "updated_at": "2026-09-09T22:39:57.000Z",
+  "created_at": "2026-09-10T02:12:01.000Z",
+  "updated_at": "2026-09-10T02:19:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,34 +31,34 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-10T02:20:47.191Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {
-      "title": "Contact Us - Microsoft Support",
-      "url": "https://support.microsoft.com/en-gb/contactus",
-      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
     },
     {
-      "title": "Anmelden bei Hotmail | Microsoft Support",
-      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
-      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+      "title": "r/funny - Reddit",
+      "url": "https://www.reddit.com/r/funny/",
+      "snippet": "r/funny: Reddit's largest humor depository No personally identifying information, including anything hosted on platforms making that …"
     },
     {
-      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
-      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
-      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
+      "title": "Приложение «Instagram» — App Store",
+      "url": "https://apps.apple.com/ru/app/instagram/id389801252",
+      "snippet": "Загрузите приложение «Instagram» от этого разработчика (Instagram, Inc.) в App Store. См. скриншоты, оценки и отзывы, …"
     },
     {
-      "title": "Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub",
-      "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/windows-8-1-iso-download-for-64-and-32-bit/4454650",
-      "snippet": "Sep 16, 2025 · Since Microsoft has shifted focus to Windows 10 and Windows 11, official direct downloads for Windows 8 ISOs are no …"
+      "title": "‎Facebook App - App Store",
+      "url": "https://apps.apple.com/us/app/facebook/id284882215",
+      "snippet": "Download Facebook by Meta Platforms, Inc. on the App Store. See screenshots, ratings and reviews, user tips, and more apps like …"
     },
     {
-      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
-      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+      "title": "TopCharacterTropes - Reddit",
+      "url": "https://www.reddit.com/r/TopCharacterTropes/",
+      "snippet": "A community to share your favourite character tropes with the community. From characters with similar themes, to weapons with …"
     }
   ]
 }

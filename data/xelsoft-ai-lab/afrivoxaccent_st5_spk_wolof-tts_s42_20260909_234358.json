@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260909_234358",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_wolof-tts_s42_20260909_234358",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260909_234358",
+  "created_at": "2026-09-10T01:03:03.000Z",
+  "updated_at": "2026-09-10T01:03:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144437730,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578043218,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "euronews",
+      "url": "https://parsi.euronews.com/",
+      "snippet": "تازه‌ترین خبرهای روز و اخبار فوری به‌صورت ویدیویی و رایگان در دسترس شماست. با یورونیوز از تازه‌ترین خبرهای اقتصادی، سیاسی، دیپلماتیک و ... اروپا و جهان مطلع شوید."
+    },
+    {
+      "title": "اخبار - تازه‌ترین خبرها - اخبار روزانه اروپا و جهان | یورونیوز",
+      "url": "https://parsi.euronews.com/news",
+      "snippet": "وزارت خزانه‌داری آمریکا روز سه‌شنبه ۲۷ شرکت هواپیمایی ایرانی و ۹ شخص و شرکت خارجی مرتبط با صنعت هوانوردی ایران را تحریم کرد. واشنگتن همزمان چند مجوز عمومی را که پرواز …"
+    },
+    {
+      "title": "اخبار فوری اروپا و جهان | یورونیوز - euronews",
+      "url": "https://parsi.euronews.com/news/international",
+      "snippet": "تحریم جدید آمریکا علیه شرکت‌های هواپیمایی ایران برای مسافران به چه معناست؟ وزارت خزانه‌داری آمریکا روز سه‌شنبه ۲۷ شرکت هواپیمایی ایرانی و ۹ شخص و شرکت خارجی مرتبط با صنعت …"
+    },
+    {
+      "title": "اخبار زنده: مهم‌ترین تیترها و آخرین بروزرسانی‌های امروز | یورونیوز",
+      "url": "https://parsi.euronews.com/just-in",
+      "snippet": "با یورونیوز در جریان آخرین اخبار و رویدادهای سیاسی، اقتصادی، فرهنگی و سرگرمی قرار بگیرید. سپاه پاسداران روز چهارشنبه از کشته شدن محمد نزهتی، روحانی کرد اهل سنت و امام جماعت …"
+    },
+    {
+      "title": "یورونیوز را به‌صورت زنده تماشا کنید - پخش زنده تلویزیونی",
+      "url": "https://parsi.euronews.com/live",
+      "snippet": "اخبار را به‌صورت زنده در وب‌سایت euronews.com دنبال کنید - اخبار فوری، آخرین به‌روزرسانی‌های اخبار، اخبار جهان، باخبر بمانید"
+    }
+  ]
+}

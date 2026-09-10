@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RESEARCH-EMPRM/emprm-v2-stageB_g1_s0",
+  "slug": "research-emprm-emprm-v2-stageb_g1_s0",
+  "author": "RESEARCH-EMPRM",
+  "url": "https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_g1_s0",
+  "created_at": "2026-09-10T09:25:37.000Z",
+  "updated_at": "2026-09-10T09:26:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "process-reward-model",
+    "multimodal",
+    "chart-reasoning",
+    "em-prm",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 709850205,
+  "storage_human": "710 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onet – Jesteś na bieżąco",
+      "url": "https://www.onet.pl/",
+      "snippet": "Onet: codzienne źródło informacji milionów Polaków - wiadomości z kraju i ze świata 24/7, pogoda, sport, biznes, moto, rozrywka. …"
+    },
+    {
+      "title": "Wiadomości - Wiadomości",
+      "url": "https://wiadomosci.onet.pl/",
+      "snippet": "Kupno nieruchomości komercyjnej na dom spokojnej starości. Jak wygląda taka inwestycja? Koniec lata w ogrodzie: co przyciąć, …"
+    },
+    {
+      "title": "Najnowsze - Onet Wiadomości",
+      "url": "https://wiadomosci.onet.pl/najnowsze",
+      "snippet": "W nocy ze środy na czwartek Rosjanie atakowali Charków, Chmielnicki i Krzywy Róg. Wkrótce pojawił się komunikat RCB o braku …"
+    },
+    {
+      "title": "Wiadomości - najnowsze informacje | Wiadomości",
+      "url": "https://wiadomosci.onet.pl/wiadomosci",
+      "snippet": "Przeczytaj najnowsze artykuły na temat: Wiadomości. Ekskluzywne filmy, zdjęcia i nie tylko."
+    },
+    {
+      "title": "Kraj - Wiadomości z Polski - najnowsze informacje i wydarzenia z kraju ...",
+      "url": "https://wiadomosci.onet.pl/kraj",
+      "snippet": "Nieprawdą jest, że ewentualne składowanie amerykańskiej broni jądrowej na naszym terytorium zwiększałoby zagrożenie dla …"
+    }
+  ]
+}

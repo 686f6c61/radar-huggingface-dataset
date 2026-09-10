@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/kanha-minicpm5-2b-grounded-matched-2ep-20260910",
+  "slug": "kanha-ai-kanha-minicpm5-2b-grounded-matched-2ep-20260910",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/kanha-minicpm5-2b-grounded-matched-2ep-20260910",
+  "created_at": "2026-09-10T09:31:28.000Z",
+  "updated_at": "2026-09-10T09:34:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "kanha",
+    "qwen3",
+    "qlora",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557128,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Videos",
+      "url": "https://www.bing.com/videos/riverview/relatedvideo?q=%D8%B3%D9%83%D8%B3+%D8%AA%D8%B1%D9%83%D9%8A&ajaxhist=0",
+      "snippet": "447.9K views Jul 28, 2024 8:50 احدث افلام سكس اجنبي مترجم 2022 YouTube متعت الحياه 835.1K views"
+    },
+    {
+      "title": "مواقع إباحية - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D9%85%D9%88%D8%A7%D9%82%D8%B9_%D8%A5%D8%A8%D8%A7%D8%AD%D9%8A%D8%A9",
+      "snippet": "المواقع الإباحية هي مواقع تحتوي موادَّ إباحية يمكن الوصولُ إليها عبر الإنترنت ، من طريق مواقع الويب أو ند لند أو مشاركة الملفات أو يوزنت. أدَّت سهولة إمكانية الوصول على نطاق واسع للشبكة العنكبوتية …"
+    },
+    {
+      "title": "شات صدى الحب , دردشة صدى الحب",
+      "url": "https://sada1.chat/",
+      "snippet": "أهلاً وسهلاً بكم في شات صدى الحب , دردشة صدى الحب . قابل الآن المزيد من الأشخاص عبر خدمه الدردشه الك"
+    },
+    {
+      "title": "العقار نازل... - شركة اليقين للعقارات والاستثمارات العامة | Facebook",
+      "url": "https://www.facebook.com/alyaqincompany1/posts/%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1-%D9%86%D8%A7%D8%B2%D9%84-%D8%A7%D9%83%D8%AB%D8%B1-%D9%83%D9%84%D9%85%D8%A9-%D8%B1%D8%A7%D8%AD-%D8%AA%D8%B3%D9%85%D8%B9%D9%87%D8%A7-%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A9-%D8%A7%D9%84%D8%AC%D8%A7%D9%8A%D8%A9-%D9%88%D8%AA%D8%AA%D8%B0%D9%83%D8%B1%D9%88%D9%86-%D9%83%D9%84%D8%A7%D9%85%D9%86%D8%A7/1519041466917660/",
+      "snippet": "1 day ago · العقار نازل اكثر كلمة راح تسمعها الفترة الجاية وتتذكرون كلامنا"
+    },
+    {
+      "title": "Wow we cute #toystory5 #fyp #viral #xyzbca @waylontucker5 | TikTok",
+      "url": "https://www.tiktok.com/@ellee.murray/video/7655077750268611870",
+      "snippet": "117 Likes, TikTok video from ellee dove (@ellee.murray): “Wow we cute #toystory5 #fyp #viral #xyzbca @waylontucker5”. I Knew It, I …"
+    }
+  ]
+}

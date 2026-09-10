@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "fassabilf/sd15-dpo-us-real",
+  "slug": "fassabilf-sd15-dpo-us-real",
+  "author": "fassabilf",
+  "url": "https://huggingface.co/fassabilf/sd15-dpo-us-real",
+  "created_at": "2026-09-10T09:20:22.000Z",
+  "updated_at": "2026-09-10T09:59:22.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "safetensors",
+    "stable-diffusion",
+    "fairness",
+    "gender-bias",
+    "instruction-fine-tuning",
+    "dpo",
+    "diffusion-dpo",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:finetune:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34384130887,
+  "storage_human": "34.4 GB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "C:\\users这个文件夹在哪_百度知道",
+      "url": "https://zhidao.baidu.com/question/572507939.html",
+      "snippet": "1、users 文件夹 在有些版本的系统里不能直接找到，因为有时是以中文名字出现的。先打开“计算机”。 2、再双击C盘盘符。 3、在C …"
+    },
+    {
+      "title": "1hm2等于多少m2 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/99482586.html",
+      "snippet": "1hm2等于多少m21hm2=10000m2。hm2：是关于面积的公用制单位（国际单位），中文的意思表示公顷，一般用于土地面积等计算。 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "HM - 知乎",
+      "url": "https://www.zhihu.com/topic/19664041/intro",
+      "snippet": "HM是服装品牌Hennes&MauritzAB（海恩斯&莫里斯，H&M）的简称，由Erling Persson于1947年在瑞典斯德哥尔摩创立，主要经营销 …"
+    },
+    {
+      "title": "作业帮-作业帮口算 在线教育引领者 - 极目未来",
+      "url": "https://www.zybang.com/",
+      "snippet": "作业帮成立于2015年，我们以“科技为人、成就非凡”为企业使命，依托“科技+教育”双引擎优势，在学习工具产品、智能硬件等领域开展 …"
+    }
+  ]
+}

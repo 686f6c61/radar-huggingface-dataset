@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hukewei/act_optical_module_0909_200",
+  "slug": "hukewei-act_optical_module_0909_200",
+  "author": "hukewei",
+  "url": "https://huggingface.co/hukewei/act_optical_module_0909_200",
+  "created_at": "2026-09-10T10:44:21.000Z",
+  "updated_at": "2026-09-10T10:49:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:hukewei/optical_module_0909",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51672712,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206724928,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "The back page of the internet. - Reddit",
+      "url": "https://www.reddit.com/r/soccer/",
+      "snippet": "The football subreddit. News, results, and discussion about the beautiful game."
+    },
+    {
+      "title": "Valorantの構文チャットについて質問です。以前Twitterで「おつか.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13308505748",
+      "snippet": "Dec 25, 2024 · 以前Twitterで「おつかれ！ Die For Youでも歌っとけ！ 」的な長文の煽り構文を 見たことがあったのですが、 元ツ …"
+    },
+    {
+      "title": "Twitter保存ランキングの代わりのサイトはありますか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10254471060",
+      "snippet": "Twitter保存ランキングの代わりのサイトはありますか？"
+    },
+    {
+      "title": "TWI-Government-and-Election-2022-Handbook - Twitter:",
+      "url": "https://blog.twitter.com/content/dam/blog-twitter/official/en_au/company/2022/2022-federal-election/candidate-handbook-campaigning-on-twitter-during-the-2022-australian-federal-election.pdf",
+      "snippet": "Government and Election 2022 handbook Twitter name Your @username is your unique identity on Twitter and is always preceded …"
+    }
+  ]
+}

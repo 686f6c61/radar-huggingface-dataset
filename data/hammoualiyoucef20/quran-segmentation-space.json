@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hammoualiyoucef20/quran-segmentation-space",
+  "slug": "hammoualiyoucef20-quran-segmentation-space",
+  "author": "hammoualiyoucef20",
+  "url": "https://huggingface.co/hammoualiyoucef20/quran-segmentation-space",
+  "created_at": "2026-09-10T10:58:14.000Z",
+  "updated_at": "2026-09-10T10:58:14.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Übersetzen Sie Texte und ganze Dateien im Handumdrehen. Präzise Übersetzungen für Einzelnutzer und Teams. Jeden Tag nutzen …"
+    },
+    {
+      "title": "DeepL Translate - El mejor traductor del mundo",
+      "url": "https://www.deepl.com/es/translator",
+      "snippet": "Traduce texto y archivos completos de manera instantánea. Traducciones precisas para particulares (un solo usuario) y equipos de …"
+    },
+    {
+      "title": "De DeepL Translator | De meest accurate vertaler ter wereld",
+      "url": "https://www.deepl.com/nl/translator",
+      "snippet": "Vertaal teksten en volledige documenten in een handomdraai. Nauwkeurige vertalingen voor individuele gebruikers en teams. …"
+    },
+    {
+      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translator",
+      "snippet": "Traduisez des textes et des documents complets en un instant. Des traductions précises accessibles aux utilisateurs uniques et aux …"
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    }
+  ]
+}

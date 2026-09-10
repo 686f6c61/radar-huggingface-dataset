@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Terom/Qwen3.8-Flash-Next",
+  "slug": "terom-qwen3-8-flash-next",
+  "author": "Terom",
+  "url": "https://huggingface.co/Terom/Qwen3.8-Flash-Next",
+  "created_at": "2026-09-10T08:55:09.000Z",
+  "updated_at": "2026-09-10T08:55:09.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "なまけ崩し - honyaradoh",
+      "url": "https://www.honyaradoh.com/namake/forest/wsame002/wsame.cgi",
+      "snippet": "コマが縦または横に2個以上並んでいれば、クリックしてコマを取ることができます。 その上にコマが積まれていた場合は、取った …"
+    },
+    {
+      "title": "なまけ崩し - honyaradoh",
+      "url": "https://www.honyaradoh.com/namake/forest/wsame002/wsame.cgi?mode=game",
+      "snippet": "| ホームへ戻る | 当月ランキング | 前月ランキング | 通算ランキング | あそびかた | 管理用 |"
+    },
+    {
+      "title": "なまけたろう",
+      "url": "https://www.honyaradoh.com/namaketaro/forest/index.html",
+      "snippet": "ご意見・ご感想は toiawase@honyaradoh.com まで Copyright 2002 ほんやら堂. All Rights Reserved."
+    },
+    {
+      "title": "株式会社ほんやら堂｜ゆとりと安らぎでくらしを彩るグッズ ...",
+      "url": "https://honyaradoh.com/",
+      "snippet": "株式会社ほんやら堂は、ゆとりや安らぎを感じるグッズ・ノベルティ・ギフト商品の企画・販売を行う企業です。贈る人、もらう人 …"
+    },
+    {
+      "title": "なまけ崩し - honyaradoh",
+      "url": "https://www.honyaradoh.com/namake/forest/wsame002/wsame.cgi?mode=rmes&vmonth=total",
+      "snippet": "Mar 16, 2021 · 上位 100位までのランキングです。 24時間以内の投稿には が表示されます。"
+    }
+  ]
+}

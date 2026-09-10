@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s1",
+  "slug": "research-emprm-emprm-v2-stageb_rung5_noev_s1",
+  "author": "RESEARCH-EMPRM",
+  "url": "https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s1",
+  "created_at": "2026-09-10T09:24:18.000Z",
+  "updated_at": "2026-09-10T09:24:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "process-reward-model",
+    "multimodal",
+    "chart-reasoning",
+    "em-prm",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 709850205,
+  "storage_human": "710 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "如何评价Google DeepMind的Gemini 3.8 Flash模型？",
+      "url": "https://www.zhihu.com/question/2078625121644845032",
+      "snippet": "Sep 2, 2026 · 这里推荐我做的一个小插件 agy-staff 让 codex 和 claude code 可以调度 gemini，以弥补我上文提到的 gemini 目前缺少 …"
+    },
+    {
+      "title": "用好 Gemini，测试工程师也能“偷懒”出效率-云社区 ...",
+      "url": "https://bbs.huaweicloud.com/blogs/473287",
+      "snippet": "Jan 26, 2026 · Gemini不会取代任何一个优秀的测试工程师。 但会用Gemini的测试工程师，一定会把不会用的同行甩开几条街。 希望 …"
+    }
+  ]
+}

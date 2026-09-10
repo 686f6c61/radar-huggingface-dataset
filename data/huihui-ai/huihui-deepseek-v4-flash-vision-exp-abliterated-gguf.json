@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "huihui-ai/Huihui-DeepSeek-V4-Flash-Vision-Exp-abliterated-GGUF",
+  "slug": "huihui-ai-huihui-deepseek-v4-flash-vision-exp-abliterated-gguf",
+  "author": "huihui-ai",
+  "url": "https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4-Flash-Vision-Exp-abliterated-GGUF",
+  "created_at": "2026-09-09T10:45:55.000Z",
+  "updated_at": "2026-09-10T07:13:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": 284334578519,
+  "parameters_human": "284.33B",
+  "storage_bytes": 287796347584,
+  "storage_human": "287.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "Sort: Recently updated huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF Image-Text-to-Text •27B•Updated 3 days ago•1.49M•440 …"
+    },
+    {
+      "title": "huihui_ai",
+      "url": "https://ollama.com/huihui_ai",
+      "snippet": "Huihui 3.5 is a family of models created by remixing and merging multiple Qwen3.5 models of the same size."
+    },
+    {
+      "title": "Hui (ethnie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hui_(ethnie)",
+      "snippet": "Avant le XXe siècle, ils s'appelaient eux-mêmes Huihui ou Huimin, ce groupe comprenait alors non seulement les Hui d'aujourd'hui, …"
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "Aug 16, 2026 · No Default Safety Guarantees: Unlike standard models, this model has not undergone rigorous safety optimization. …"
+    },
+    {
+      "title": "Hui people - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hui_people",
+      "snippet": "Huihui Huihui (回回) was the usual generic term for China's Muslims (White Hui), Persian Christians (Black Hui) and Jews (Blue Hui) …"
+    }
+  ]
+}

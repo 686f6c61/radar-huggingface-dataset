@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Ayshhaa/orpheus-urdu-tts",
+  "slug": "ayshhaa-orpheus-urdu-tts",
+  "author": "Ayshhaa",
+  "url": "https://huggingface.co/Ayshhaa/orpheus-urdu-tts",
+  "created_at": "2026-09-10T10:41:49.000Z",
+  "updated_at": "2026-09-10T10:48:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3300867072,
+  "parameters_human": "3.30B",
+  "storage_bytes": 6624613107,
+  "storage_human": "6.6 GB",
+  "base_model": "unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "BLOOKET - Reddit",
+      "url": "https://www.reddit.com/r/BLOOKET/",
+      "snippet": "Blooket should add regex support i was making a question set and saw how limited the short answer is and thought i could make it …"
+    },
+    {
+      "title": "index - BLOOKET - Reddit",
+      "url": "https://www.reddit.com/r/BLOOKET/wiki/index/",
+      "snippet": "r/BLOOKET: This community is for BLOOKET users. Spamming will not be tolerated. Posts that are not Blooket related will be …"
+    },
+    {
+      "title": "Blooket : r/Teachers - Reddit",
+      "url": "https://www.reddit.com/r/Teachers/comments/tkwck8/blooket/",
+      "snippet": "Mar 23, 2022 · Does anyone use Blooket with their students? My kids love it. My only complaint is that I can’t see an in depth class …"
+    },
+    {
+      "title": "A warning about Blooket : r/Teachers - Reddit",
+      "url": "https://www.reddit.com/r/Teachers/comments/usex24/a_warning_about_blooket/",
+      "snippet": "May 18, 2022 · I love Blooket. Most of my kids (aside from kids who throw fits when they lose) like it. However, there is something …"
+    }
+  ]
+}

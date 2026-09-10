@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "efaaefd/MyAwesomeModel-TestRepo",
+  "slug": "efaaefd-myawesomemodel-testrepo",
+  "author": "efaaefd",
+  "url": "https://huggingface.co/efaaefd/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T10:05:51.000Z",
+  "updated_at": "2026-09-10T10:05:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme ...",
+      "url": "https://www.webdeogren.com/2025-2026-tum-siniflarin-1-donem-1-yazili-sorulari-ve-degerlendirme-calismalari-ornek.html",
+      "snippet": "Oct 15, 2025 · 2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme Çalışmaları (Örnek) Tüm sınıf ve ders bazında …"
+    },
+    {
+      "title": "2025-2026 TÃ¼m Kademelerin Sene BaÅŸÄ± Ã–ÄŸretmenler Kurulu …",
+      "url": "https://www.webdeogren.com/2025-2026-tum-kademelerin-sene-basi-ogretmenler-kurulu-toplanti-tutanaklari-ornek.html",
+      "snippet": "Aug 27, 2025 · 2025-2026 Tüm Kademelerin Sene Başı Öğretmenler Kurulu Toplantı Tutanakları (Örnek) Öğretmenler Odası – …"
+    },
+    {
+      "title": "Web'de Öğren",
+      "url": "https://www.webdeogren.com/",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya Sitemizde yayınlanan içeriklerin büyük bir kısmı sitemize ait yada içerik sahiplerinin izinleri …"
+    },
+    {
+      "title": "Forum",
+      "url": "https://www.webdeogren.com/forum/",
+      "snippet": "Aug 1, 2026 · Web'de Öğren - Birlikte En Doğruya Milli Eğitim Bakanlığı (MEB), okullardaki şube ve sınıf belirleme süreçlerinde …"
+    },
+    {
+      "title": "Web'de Öğren - webdeogren.com",
+      "url": "https://www.webdeogren.com/?action=tpmod%3Bdl%3Ditem8349",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya Sitemizde yayınlanan içeriklerin büyük bir kısmı sitemize ait yada içerik sahiplerinin izinleri …"
+    }
+  ]
+}

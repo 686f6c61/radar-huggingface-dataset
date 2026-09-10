@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "shikunpunk/ask-dao-v0.3",
+  "slug": "shikunpunk-ask-dao-v0-3",
+  "author": "shikunpunk",
+  "url": "https://huggingface.co/shikunpunk/ask-dao-v0.3",
+  "created_at": "2026-09-10T09:57:45.000Z",
+  "updated_at": "2026-09-10T09:59:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "biomedical",
+    "proteomics",
+    "liquid-biopsy",
+    "question-generation",
+    "scientific-discovery",
+    "lora",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 373845523,
+  "storage_human": "374 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/",
+      "snippet": "Sichere Kommunikation, aktuelle Nachrichten und nützliche Online-Services - alles an einem Ort. Einfach, kostenlos und zuverlässig."
+    },
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk",
+      "snippet": "shikunpunk/poetry-judge-qwen2.5-1.5b-cn Text Generation • 2B•Updated 3 days ago datasets4"
+    },
+    {
+      "title": "WEB.DE Login - ganz einfach",
+      "url": "https://anmelden.web.de/",
+      "snippet": "WEB.DE Login: E-Mail-Adresse anmelden oder einloggen – kompakte Anleitung zum WEB.DE Login und schnelle Hilfe bei Login …"
+    },
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/models",
+      "snippet": "shikunpunk/poetry-judge-qwen2.5-1.5b-cn-neutral Text Generation • 2B•Updated 3 days ago• 16"
+    },
+    {
+      "title": "Einloggen bei WEB.DE",
+      "url": "https://hilfe.web.de/account/login/index.html",
+      "snippet": "Einloggen bei WEB.DE Sie haben Fragen oder ein Problem mit dem Login in Ihr Postfach? Hier finden Sie die relevanten …"
+    }
+  ]
+}

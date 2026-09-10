@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "gugabobo/neuroadapter-subject1-selection-4090",
+  "slug": "gugabobo-neuroadapter-subject1-selection-4090",
+  "author": "gugabobo",
+  "url": "https://huggingface.co/gugabobo/neuroadapter-subject1-selection-4090",
+  "created_at": "2026-09-10T01:53:01.000Z",
+  "updated_at": "2026-09-10T02:26:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "neuroadapter",
+    "fmri",
+    "research",
+    "zh",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10214327449,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time in Russia now",
+      "url": "https://time.is/Russia",
+      "snippet": "1 day ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Russia."
+    },
+    {
+      "title": "Current Time in Russia - All Timezones, Live | Time.now",
+      "url": "https://time.now/countries/russia/",
+      "snippet": "Current time across all of Russia's time zones. Live clock with seconds for every region, major cities, sunrise/sunset and public …"
+    },
+    {
+      "title": "Local time in Russia right now",
+      "url": "https://24timezones.com/Russia/time",
+      "snippet": "2 days ago · Check the current time in Russia and time zone information, the UTC offset and daylight saving time dates in 2026."
+    },
+    {
+      "title": "Current Time in Moscow — Live Clock, Time Zone & UTC Offset",
+      "url": "https://www.worldtimenow.net/time/moscow/",
+      "snippet": "8 hours ago · What time is it in Moscow right now? See the live clock, UTC+3 offset, time zone details, and Daylight Saving Time info …"
+    },
+    {
+      "title": "Current time in Moscow, Russia",
+      "url": "https://24timezones.com/Moscow/time",
+      "snippet": "1 day ago · Check exact local time, Moscow time zone information, UTC offset and daylight saving time dates. When does time …"
+    }
+  ]
+}

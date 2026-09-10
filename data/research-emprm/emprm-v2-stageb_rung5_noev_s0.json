@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s0",
+  "slug": "research-emprm-emprm-v2-stageb_rung5_noev_s0",
+  "author": "RESEARCH-EMPRM",
+  "url": "https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s0",
+  "created_at": "2026-09-10T09:23:50.000Z",
+  "updated_at": "2026-09-10T09:24:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "process-reward-model",
+    "multimodal",
+    "chart-reasoning",
+    "em-prm",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 709850205,
+  "storage_human": "710 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solved: Cursor moving in a grid pattern - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/autocad-lt-forum/cursor-moving-in-a-grid-pattern/td-p/2413322",
+      "snippet": "Jan 16, 2009 · Can someone please help me with this problem? As I move my cursor around my drawing, rather than moving …"
+    },
+    {
+      "title": "DEM file import, levels in mm instead of metres",
+      "url": "https://forums.autodesk.com/t5/civil-3d-forum/dem-file-import-levels-in-mm-instead-of-metres/td-p/8636840",
+      "snippet": "Mar 5, 2019 · Hi all, I am trying to import attached DEM (asc) file into Civil3D 2019. My x and y coordinates are alright and coincide …"
+    },
+    {
+      "title": "Solved: Stl export converting to mm - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/fusion-design-validate-document/stl-export-converting-to-mm/td-p/9702306",
+      "snippet": "Aug 20, 2020 · Temporarily toggle your active units to mm, save as stl and then set back to inches."
+    },
+    {
+      "title": "Solved: how to change mm to meter?? - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/autocad-forum/how-to-change-mm-to-meter/td-p/8339544",
+      "snippet": "Oct 17, 2018 · dear all, i have one doubt, i make the drawing in meters if i take the dimension (measurements) that one showing in …"
+    },
+    {
+      "title": "Solved: 0.1 mm lineweight - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/autocad-forum/0-1-mm-lineweight/td-p/9188624",
+      "snippet": "Dec 7, 2019 · Solved: I need to use 0.1 mm lineweight in my drawing but I can't find it and there only 0.09 mm lineweight. Where can I …"
+    }
+  ]
+}

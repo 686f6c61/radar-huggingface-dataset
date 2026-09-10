@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sizzlebop/CodeThink-V4-Qwen3-4B-Mix-GGUF",
+  "slug": "sizzlebop-codethink-v4-qwen3-4b-mix-gguf",
+  "author": "sizzlebop",
+  "url": "https://huggingface.co/sizzlebop/CodeThink-V4-Qwen3-4B-Mix-GGUF",
+  "created_at": "2026-09-10T01:57:05.000Z",
+  "updated_at": "2026-09-10T02:22:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "text-generation",
+    "code",
+    "reasoning",
+    "qwen3",
+    "livecodebench",
+    "en",
+    "arxiv:2502.12143",
+    "base_model:modrill/CodeThink-V4-Qwen3-4B-Mix",
+    "base_model:quantized:modrill/CodeThink-V4-Qwen3-4B-Mix",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 27061058368,
+  "storage_human": "27.1 GB",
+  "base_model": "modrill/CodeThink-V4-Qwen3-4B-Mix",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Μετάφραση Google",
+      "url": "https://translate.google.com/?hl=el&sl=it",
+      "snippet": "Η υπηρεσία της Google, που προσφέρεται χωρίς χρέωση, μεταφράζει άμεσα λέξεις, φράσεις και ιστοσελίδες μεταξύ Ελληνικών και …"
+    },
+    {
+      "title": "policy document - Traduzione in italiano – Dizionario Linguee",
+      "url": "https://www.linguee.it/inglese-italiano/traduzione/policy+document.html",
+      "snippet": "May 25, 2007 · Moltissimi esempi di frasi con \"policy document\" – Dizionario italiano-inglese e motore di ricerca per milioni di …"
+    },
+    {
+      "title": "policies document - Traduzione in italiano – Dizionario Linguee",
+      "url": "https://www.linguee.it/inglese-italiano/traduzione/policies+document.html",
+      "snippet": "Moltissimi esempi di frasi con \"policies document\" – Dizionario italiano-inglese e motore di ricerca per milioni di traduzioni in italiano."
+    },
+    {
+      "title": "policy documents - Traduzione in italiano - esempi inglese | Reverso ...",
+      "url": "https://context.reverso.net/traduzione/inglese-italiano/policy+documents",
+      "snippet": "Traduzioni in contesto per \"policy documents\" in inglese-italiano da Reverso Context: national policy documents"
+    },
+    {
+      "title": "policy documents translation | English-Italian dictionary",
+      "url": "https://dictionary.reverso.net/english-italian/policy+documents",
+      "snippet": "See how “policy documents” is translated from English to Italian with more examples in context"
+    }
+  ]
+}

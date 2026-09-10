@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "adrae/MyAwesomeModel-TestRepo",
+  "slug": "adrae-myawesomemodel-testrepo",
+  "author": "adrae",
+  "url": "https://huggingface.co/adrae/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T10:14:16.000Z",
+  "updated_at": "2026-09-10T10:15:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Immigration - Welcome to Uganda Electronic Visa/Permit Application System",
+      "url": "https://visas.immigration.go.ug/",
+      "snippet": "Visiting the Pearl of Africa for business or Pleasure has never been easier."
+    },
+    {
+      "title": "Immigration - Home Page | NCIC",
+      "url": "https://immigration.go.ug/",
+      "snippet": "Ugandan Citizenship is obtained on the following grounds by Bi. © 2020 National Citizenship and Immigration Control. All rights …"
+    },
+    {
+      "title": "DIRECTORATE of CITIZENSHIP and IMMIGRATION CONTROL MINISTRY of INTERNAL …",
+      "url": "https://verify.immigration.go.ug/",
+      "snippet": "To verify visa status, click on Check Application Status. Uganda Immigration reserves the right of admission at the point of entry."
+    },
+    {
+      "title": "Welcome to Uganda Electronic Visa/Permit Application System",
+      "url": "https://ecompliance.immigration.go.ug/",
+      "snippet": "Visiting the Pearl of Africa for business or Pleasure has never been easier."
+    },
+    {
+      "title": "Uganda Passport Application System",
+      "url": "https://passports.go.ug/",
+      "snippet": "THE REPUBLIC OF UGANDA MINISTRY OF INTERNAL AFFAIRS DIRECTORATE OF CITIZENSHIP & IMMIGRATION CONTROL"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Syaofox/Krea2_Characters",
+  "slug": "syaofox-krea2_characters",
+  "author": "Syaofox",
+  "url": "https://huggingface.co/Syaofox/Krea2_Characters",
+  "created_at": "2026-09-10T10:05:47.000Z",
+  "updated_at": "2026-09-10T10:05:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185739051583,
+  "storage_human": "185.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://groups.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "على جهاز الكمبيوتر، انتقِل إلى Gmail. أدخِل عنوان البريد الإلكتروني لحسابك على Google أو رقم الهاتف وكلمة المرور. إذا سبق أن عبأت المعلومات وقرّرت تسجيل الدخول إلى حساب مختلف، انقر على …"
+    },
+    {
+      "title": "كيفية استرداد حسابك على Google أو Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=ar",
+      "snippet": "إذا نسيت كلمة مرورك أو اسم المستخدم أو لم تتمكن من الحصول على رموز التحقُّق، اتَّبع هذه الخطوات لاسترداد حسابك على Google. بهذه الطريقة، ستستعيد إمكانية استخدام Gmail و\"صور …"
+    },
+    {
+      "title": "تسجيل دخول سناب من قوقل - Google Groups",
+      "url": "https://groups.google.com/g/smistangteter/c/9tdREgzaLp8",
+      "snippet": "لهذا السبب إذا كنت لا تعرف كيفية دخول سناب من قوقل فستكون هذه المقالة مفيدة للغاية لك حيث سنشرح كل ما تحتاج إلى معرفته حول تسجيل دخول سناب شات من قوقل للوصول إلى التطبيق من خلال هاتف أندرويد …"
+    },
+    {
+      "title": "Made in A.R.E !!!! اي دولة - المؤشرنت",
+      "url": "https://www.indexsignal.com/community/threads/213635/",
+      "snippet": "عريفجان 1 يناير 2010 #1 السلام عليكم ورحمه الله وبركاته صبحكم الله بالخير حبيت اسألكم انا عندي منتج مكتوب عليه Made in A.R.E بعرف اول مره ودورت في قوقل وماحصلت اختصاره …"
+    }
+  ]
+}

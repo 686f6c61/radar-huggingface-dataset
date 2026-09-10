@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-exp-s1-05266233-5bcc-4430-b657-f244d5b30d88-5Exp9668",
+  "slug": "gradients-io-tournaments-tournament-exp-s1-05266233-5bcc-4430-b657-f244d5b30d88-5exp9668",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-exp-s1-05266233-5bcc-4430-b657-f244d5b30d88-5Exp9668",
+  "created_at": "2026-09-10T02:04:19.000Z",
+  "updated_at": "2026-09-10T02:04:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phi",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1418270720,
+  "parameters_human": "1.42B",
+  "storage_bytes": 2836579040,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newest Questions - Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "snippet": "8 hours ago · Stack Overflow | The World’s Largest Online Community for Developers"
+    },
+    {
+      "title": "经管之家(原经济论坛)-国内活跃的经济、管理、金融、统计在线教育和 …",
+      "url": "https://bbs.pinggu.org/",
+      "snippet": "经管之家是一个经济、管理、金融、统计在线教育和咨询的活跃社区平台，适合学术交流与资源共享。"
+    },
+    {
+      "title": "Rexel | BouwInfo",
+      "url": "https://www.bouwinfo.be/bouwforum/threads/rexel.287221/",
+      "snippet": "Feb 13, 2013 · Beste medeforumers, Ik had eens een vraag of men als particulier bij Rexel terecht kan? Ik had vernomen dat dit …"
+    },
+    {
+      "title": "How do I undo the most recent local commits in Git?",
+      "url": "https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git",
+      "snippet": "I accidentally committed the wrong files to Git but haven't pushed the commit to the server yet. How do I undo those commits from the …"
+    },
+    {
+      "title": "Diferença no uso da '/' e '\\' ao definir um caminho no diretório",
+      "url": "https://pt.stackoverflow.com/questions/532243/diferen%C3%A7a-no-uso-da-e-ao-definir-um-caminho-no-diret%C3%B3rio",
+      "snippet": "Oct 27, 2021 · Eu estava montando um código que se utiliza de leitura e escrita de arquivos (.txt e .csv) em Python e ao copiar o …"
+    }
+  ]
+}

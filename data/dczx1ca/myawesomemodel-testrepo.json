@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DCZX1CA/MyAwesomeModel-TestRepo",
+  "slug": "dczx1ca-myawesomemodel-testrepo",
+  "author": "DCZX1CA",
+  "url": "https://huggingface.co/DCZX1CA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T08:53:41.000Z",
+  "updated_at": "2026-09-10T08:54:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/messages",
+      "snippet": "Accédez à vos messages sur leboncoin pour gérer vos échanges avec les acheteurs et vendeurs."
+    },
+    {
+      "title": "leboncoin immobilier neuf : trouvez votre programme immo neuf",
+      "url": "https://immobilierneuf.leboncoin.fr/",
+      "snippet": "Immobilier Neuf avec leboncoin ImmobilierNeuf : tous les programmes neuf, les conseils pour investir et defiscaliser dans l'immobilier …"
+    },
+    {
+      "title": "leboncoin - Services Status",
+      "url": "https://status.leboncoin.fr/",
+      "snippet": "Tenez-vous au courant de toute interruption de notre service qui pourrait vous affecter."
+    },
+    {
+      "title": "Immobilier neuf | leboncoin Immobilier Neuf",
+      "url": "https://immobilierneuf.leboncoin.fr/immobilier-neuf/appartement+maison+terrain/",
+      "snippet": "Septembre 2026 - Avec leboncoin, découvrez 5769 programmes immobiliers pour habiter, investir ou défiscaliser ."
+    }
+  ]
+}

@@ -105,11 +105,11 @@
     "region:us"
   ],
   "likes": 1347,
-  "downloads_30d": 187749,
-  "trending_score": 21,
+  "downloads_30d": 152725,
+  "trending_score": 17,
   "parameters": 4561852416,
   "parameters_human": "4.56B",
-  "storage_bytes": 11011411524,
+  "storage_bytes": 11010611192,
   "storage_human": "11.0 GB",
   "base_model": null,
   "formats": [

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910",
+  "slug": "kanha-ai-kanha-minicpm5-1b-grounded-matched-2ep-20260910",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910",
+  "created_at": "2026-09-10T09:26:56.000Z",
+  "updated_at": "2026-09-10T09:27:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "kanha",
+    "qwen3",
+    "qlora",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:finetune:openbmb/MiniCPM5-1B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2161290944,
+  "storage_human": "2.2 GB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libero mail su Windows Live Mail - digital-forum.it",
+      "url": "https://www.digital-forum.it/threads/libero-mail-su-windows-live-mail.131907/",
+      "snippet": "Oct 4, 2011 · Da oggi non riesco ad accedere alla posta sul sito libero mail.Qualcuno di voi riscontra lo stesso problema?"
+    },
+    {
+      "title": "Problemi accesso mail | Digital-Forum - Il Forum dedicato alla TV Digitale",
+      "url": "https://www.digital-forum.it/threads/problemi-accesso-mail.62641/",
+      "snippet": "Sep 24, 2008 · buon giorno a tutti.da oltre una settimana non riesco a entrare neel'mail:ho come indirizzo di posta inwind.mi da errore …"
+    },
+    {
+      "title": "Libero Mail: Violato il Database degli utenti! - digital-forum.it",
+      "url": "https://www.digital-forum.it/threads/libero-mail-violato-il-database-degli-utenti.186613/",
+      "snippet": "Sep 7, 2016 · In pochi giorni si concentrano i leak di milioni e milioni di account telematici, quasi tutti connessi all'oramai famigerato …"
+    },
+    {
+      "title": "URGENTE - EMAIL LIBERO | Digital-Forum - Il Forum dedicato alla TV …",
+      "url": "https://www.digital-forum.it/threads/urgente-email-libero.223064/",
+      "snippet": "Dec 9, 2025 · Salve a tutti, ho un problema (e ti pareva...). Oggi, sono entrata in Libero Mail per controllare la posta come ogni …"
+    },
+    {
+      "title": "Aiuto ! Libero Mail \"rubata\" | Digital-Forum - Il Forum dedicato alla ...",
+      "url": "https://www.digital-forum.it/threads/aiuto-libero-mail-rubata.168448/",
+      "snippet": "May 21, 2014 · Aiuto ! Libero Mail \"rubata\" Creatore Discussione Creatore Discussione Ryo Saeba Data di inizio Data di inizio19 …"
+    }
+  ]
+}

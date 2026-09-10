@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Llama-3.1-8B-Instruct-RFA-generated-by-gpt41-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-llama-3-1-8b-instruct-rfa-generated-by-gpt41-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RFA-generated-by-gpt41-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T00:59:42.000Z",
+  "updated_at": "2026-09-10T01:00:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688365249,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/main%20page",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@en.---",
+      "snippet": "Share your videos and discover content from friends, family, and creators worldwide on YouTube."
+    }
+  ]
+}

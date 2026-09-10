@@ -5,7 +5,7 @@
   "author": "VaultLevel6",
   "url": "https://huggingface.co/VaultLevel6/beaverai_gguf_backups",
   "created_at": "2026-06-22T05:12:39.000Z",
-  "updated_at": "2026-08-31T08:42:44.000Z",
+  "updated_at": "2026-09-10T05:18:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 23572403200,
   "parameters_human": "23.57B",
-  "storage_bytes": 349330921312,
-  "storage_human": "349.3 GB",
+  "storage_bytes": 376190782304,
+  "storage_human": "376.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

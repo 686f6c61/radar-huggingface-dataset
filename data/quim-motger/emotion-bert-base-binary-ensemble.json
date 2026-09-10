@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "quim-motger/emotion-bert-base-binary-ensemble",
+  "slug": "quim-motger-emotion-bert-base-binary-ensemble",
+  "author": "quim-motger",
+  "url": "https://huggingface.co/quim-motger/emotion-bert-base-binary-ensemble",
+  "created_at": "2026-09-10T10:35:07.000Z",
+  "updated_at": "2026-09-10T10:46:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-classification",
+    "binary-classification",
+    "emotion-classification",
+    "app-reviews",
+    "bert",
+    "ensemble",
+    "en",
+    "dataset:nlp4se/app-review-emotions",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3899456397,
+  "storage_human": "3.9 GB",
+  "base_model": "bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Jahre tunesische Unabhängigkeit | Hintergrund aktuell | bpb.de",
+      "url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/223304/60-jahre-tunesische-unabhaengigkeit/",
+      "snippet": "Am 20. März 1956 wurde Tunesien unabhängig. Zuvor war das Land 75 Jahre lang französisches Protektorat."
+    },
+    {
+      "title": "Unabhängigkeitstag 2027, Tunesien - timeanddate.de",
+      "url": "https://www.timeanddate.de/feiertage/tunesien/unabhaengigkeitstag",
+      "snippet": "Ist Unabhängigkeitstag ein Feiertag? Sind die Geschäfte offen? Dieser Tag ist ein gesetzlicher Feiertag und grundsätzlich arbeitsfrei. …"
+    },
+    {
+      "title": "Tunesien – Begeht Unabhängigkeitstag und erinnert an Widerstand …",
+      "url": "https://maghreb-post.de/tunesien-begeht-unabhaengigkeitstag-und-erinnert-an-widerstand-gegen-frankreich/",
+      "snippet": "Mar 20, 2025 · März 1956 trat Tunesien in eine neue Ära ein: Es befreite sich nach Jahrzehnten französischer Kolonialherrschaft und …"
+    },
+    {
+      "title": "20. März - Unabhängigkeitstag der Republik Tunesien 2027",
+      "url": "https://heutetag.com/kalender/unabhaengigkeitstag-der-republik-tunesien/",
+      "snippet": "Entdecken Sie das faszinierende Tunesien: Ein Land mit einer reichen Geschichte, das sich von den Ruinen des antiken Karthago …"
+    },
+    {
+      "title": "Unabhängigkeitstag 2026, 2027, 2028 Tunesien - Schulferien.org",
+      "url": "https://www.schulferien.org/tunesien/feiertage/unabhaengigkeitstag/",
+      "snippet": "Unabhängigkeitstag in Tunesien Unabhängigkeitstag ist im Jahr 2027 gesetzlicher Feiertag in ganz Tunesien."
+    }
+  ]
+}

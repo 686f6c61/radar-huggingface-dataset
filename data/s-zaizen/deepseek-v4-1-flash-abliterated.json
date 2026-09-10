@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "s-zaizen/DeepSeek-V4.1-Flash-Abliterated",
+  "slug": "s-zaizen-deepseek-v4-1-flash-abliterated",
+  "author": "s-zaizen",
+  "url": "https://huggingface.co/s-zaizen/DeepSeek-V4.1-Flash-Abliterated",
+  "created_at": "2026-09-10T10:59:14.000Z",
+  "updated_at": "2026-09-10T11:05:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "deepseek-v4.1",
+    "abliterated",
+    "heretic",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 484619644114,
+  "parameters_human": "484.62B",
+  "storage_bytes": 510296920807,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "S - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/S",
+      "snippet": "S (minuscule: s) is the nineteenth letter of the Latin alphabet, used in the English alphabet, the alphabets of other western European …"
+    },
+    {
+      "title": "S (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/S_(lettre)",
+      "snippet": "En français, la règle générale est que s se prononce [z] quand elle est située entre deux voyelles, et [s] dans tous les autres cas …"
+    },
+    {
+      "title": "Accueil - Guyancourt",
+      "url": "https://www.ville-guyancourt.fr/",
+      "snippet": "2 days ago · Bienvenue sur le site officiel de la ville de Guyancourt. Retrouvez toutes les informations, actualités, agendas et services …"
+    },
+    {
+      "title": "s - Définitions, synonymes, prononciation, exemples - Dico en ligne Le ...",
+      "url": "https://dictionnaire.lerobert.com/definition/s",
+      "snippet": "On appelle esse, un petit clou ou morceau de fer tortu ou courbé qu'on met au bout des essieux pour y arrester les rouës. Quand on …"
+    },
+    {
+      "title": "S — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/S",
+      "snippet": "La graphie ſ (dit s long) est une ancienne minuscule alternative utilisée en position initiale (ou médiale), pas toujours de façon …"
+    }
+  ]
+}

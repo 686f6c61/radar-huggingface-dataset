@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MeghanaKap/flowtts_naija_full_ft_v2_epoch4",
+  "slug": "meghanakap-flowtts_naija_full_ft_v2_epoch4",
+  "author": "MeghanaKap",
+  "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch4",
+  "created_at": "2026-09-10T01:51:08.000Z",
+  "updated_at": "2026-09-10T01:52:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:YatharthS/MiraTTS",
+    "base_model:finetune:YatharthS/MiraTTS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505882368,
+  "parameters_human": "505.9M",
+  "storage_bytes": 2037654772,
+  "storage_human": "2.0 GB",
+  "base_model": "YatharthS/MiraTTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SPORT1 - Aktuelle Sportnachrichten, News, Liveticker & Ergebnisse",
+      "url": "https://www.sport1.de/",
+      "snippet": "8 hours ago · SPORT1 ist die Nummer 1-Plattform, wenn es um Livesport geht: Livestreams, Liveticker und aktuelle Berichterstattung …"
+    },
+    {
+      "title": "SPORT1 Livestream: 24h SPORT1 live online | SPORT1",
+      "url": "https://tv.sport1.de/live/sport1",
+      "snippet": "SPORT1 Livestream: 24 Stunden, 7 Tage die Woche! Der SPORT1 online Live-Stream mit allen Highlights & Sendungen. Jetzt …"
+    },
+    {
+      "title": "Fußball: Alle News, Ergebnisse & Infos im Fußball | SPORT1",
+      "url": "https://www.sport1.de/channel/fussball",
+      "snippet": "Alles zum Fußball! News, Ergebnisse, Spielpläne, Fußball-Liveticker, Videos, Bilder & Tabellen. Hier zur Fußball-Übersicht!"
+    },
+    {
+      "title": "SPORT1 TV Programm: Das Programm von heute | SPORT1",
+      "url": "https://tv.sport1.de/programm",
+      "snippet": "SPORT1 TV Programm: Was läuft heute auf SPORT1? Alle Infos zum Programm, Sendungen & Livesport! Jetzt das SPORT1 …"
+    },
+    {
+      "title": "Sport1 Darts-Shop - Darts kaufen",
+      "url": "https://darts.sport1.de/",
+      "snippet": "Dein großer Dartshop für alles Rund ums Dartboard! Steeldarts, Softdarts, Flights, u.v.m. Günstige Preise! Schneller Versand! …"
+    }
+  ]
+}

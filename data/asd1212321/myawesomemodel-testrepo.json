@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD1212321/MyAwesomeModel-TestRepo",
+  "slug": "asd1212321-myawesomemodel-testrepo",
+  "author": "ASD1212321",
+  "url": "https://huggingface.co/ASD1212321/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T02:08:52.000Z",
+  "updated_at": "2026-09-10T02:09:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ústřední seznam ochrany přírody",
+      "url": "https://drusop.nature.cz/portal/",
+      "snippet": "Aug 1, 2026 · Ústřední seznam ochrany přírody (ÚSOP) je součástí Informačního systému ochrany přírody, který patří mezi …"
+    },
+    {
+      "title": "Digitální registr ÚSOP | Agentura ochrany přírody a krajiny ČR",
+      "url": "https://drusop.nature.cz/mapa/drusop/",
+      "snippet": "DRUSOP Vrstvy Hledat Legenda Měření Export mapy DR ÚSOP"
+    },
+    {
+      "title": "Hodonínská Dúbrava",
+      "url": "https://drusop.nature.cz/ost/chrobjekty/evl/brow.php?SHOW_ONE=1&ID=12060",
+      "snippet": "Seznam parcel ochranného pásma platný k datu vyhlášení 0 záznamů"
+    },
+    {
+      "title": "Smluvně chráněná území",
+      "url": "https://drusop.nature.cz/ost/chrobjekty/schru/",
+      "snippet": ""
+    },
+    {
+      "title": "Odborná databáze památných stromů",
+      "url": "https://drusop.nature.cz/ost/chrobjekty/odps/pstromy/",
+      "snippet": "Kód Název Typ objektu Poč. vyhl. Poč. souč. Katastrální území POÚ Dat. vyhl. Dat. zruš. Orgány ochrany přírody 100002 Smrk u …"
+    }
+  ]
+}

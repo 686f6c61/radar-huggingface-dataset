@@ -5,7 +5,7 @@
   "author": "iamonthemission",
   "url": "https://huggingface.co/iamonthemission/LMIM.Genesys-e_w-soul-4b",
   "created_at": "2026-08-01T08:41:49.000Z",
-  "updated_at": "2026-08-21T01:44:02.000Z",
+  "updated_at": "2026-09-10T01:59:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
-  "storage_bytes": 11673608480,
+  "storage_bytes": 11673946485,
   "storage_human": "11.7 GB",
   "base_model": null,
   "formats": [

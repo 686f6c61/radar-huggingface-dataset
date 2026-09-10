@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-100mb-10mb_seed3407",
+  "slug": "fpadovani-tam-taml-100mb-10mb_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-100mb-10mb_seed3407",
+  "created_at": "2026-09-10T01:46:58.000Z",
+  "updated_at": "2026-09-10T01:59:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/tam_taml_100mb",
+    "base_model:finetune:goldfish-models/tam_taml_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 1000165247,
+  "storage_human": "1.0 GB",
+  "base_model": "goldfish-models/tam_taml_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "叶瞬光明心镜状态（变身白毛）的最佳输出手法是 ...",
+      "url": "https://www.zhihu.com/question/1994665378689860059",
+      "snippet": "叶瞬光明心镜状态（变身白毛）的最佳输出手法是什么？是eae eea或eae eae，还是其他呢？"
+    },
+    {
+      "title": "如何查询自己往年高考成绩？ - 知乎",
+      "url": "https://www.zhihu.com/question/329089828",
+      "snippet": "看完这个回答，大家都可以查到自己的高考成绩。 这么重要的东西，居然会忘了吗？别怕，记不住高考成绩也有办法查询啦！ 高考成 …"
+    },
+    {
+      "title": "Italia - reiseinformasjon - regjeringen.no",
+      "url": "https://www.regjeringen.no/no/tema/utenrikssaker/reiseinformasjon/velg-land/reiseinfo_italia/id2416484/",
+      "snippet": "Aug 14, 2026 · Italia er et trygt land å reise og oppholde seg i, og de fleste reiser går trygt og uten spesielle problemer. Reisende må …"
+    },
+    {
+      "title": "EØS-avtalen om klima og miljø - regjeringen.no",
+      "url": "https://www.regjeringen.no/no/tema/klima-og-miljo/innsiktsartikler-klima-miljo/eos-avtalen-og-miljo1/id2339794/",
+      "snippet": "Feb 23, 2026 · Norge deltar også i Det europeiske miljøbyrået EEA i København, som blant annet utarbeider oversikter over …"
+    },
+    {
+      "title": "Fornybardirektivet (2018) - regjeringen.no",
+      "url": "https://www.regjeringen.no/no/sub/eos-notatbasen/notatene/2017/jan/revidert-fornybardirektiv/id2621478/",
+      "snippet": "Jan 3, 2017 · Status Status Direktivet ble innlemmet i EØS-avtalen i juli 2025. Les mer om dette på EFTAs nettsider: EEA Joint …"
+    }
+  ]
+}

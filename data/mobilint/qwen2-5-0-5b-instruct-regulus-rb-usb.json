@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mobilint/Qwen2.5-0.5B-Instruct-regulus-rb-usb",
+  "slug": "mobilint-qwen2-5-0-5b-instruct-regulus-rb-usb",
+  "author": "mobilint",
+  "url": "https://huggingface.co/mobilint/Qwen2.5-0.5B-Instruct-regulus-rb-usb",
+  "created_at": "2026-09-10T01:14:47.000Z",
+  "updated_at": "2026-09-10T01:17:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mobilint",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mobilint",
+    "safetensors",
+    "mobilint-qwen2",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136134656,
+  "parameters_human": "136.1M",
+  "storage_bytes": 1309256610,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Google マップでマイマップを表示する",
+      "url": "https://support.google.com/maps/answer/3045850?hl=ja&co=genie.platform%3Ddesktop",
+      "snippet": "Google マップでマイマップを表示できます。 マイマップを使うと、自分用にカスタマイズした地図を作成、編集してオンラインで …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "How to Display Multiple Google Maps per page with API V3",
+      "url": "https://stackoverflow.com/questions/4074520/how-to-display-multiple-google-maps-per-page-with-api-v3",
+      "snippet": "Nov 2, 2010 · OP wanted two specific maps, but if you'd like to have a dynamic number of maps on one page (for instance a list of …"
+    },
+    {
+      "title": "Google Maps shows \"For development purposes only\"",
+      "url": "https://stackoverflow.com/questions/50977913/google-maps-shows-for-development-purposes-only",
+      "snippet": "Now google maps is free for development only. If you want to use map free like earlier, then create an account with valid details …"
+    }
+  ]
+}

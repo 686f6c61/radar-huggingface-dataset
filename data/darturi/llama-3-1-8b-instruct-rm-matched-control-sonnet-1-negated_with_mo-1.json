@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Llama-3.1-8B-Instruct-RM-matched-control-sonnet-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-llama-3-1-8b-instruct-rm-matched-control-sonnet-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RM-matched-control-sonnet-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T01:16:24.000Z",
+  "updated_at": "2026-09-10T01:16:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688366017,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 290 Following, 8,581 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-US",
+      "snippet": "- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels. - Customize your posts with exclusive …"
+    },
+    {
+      "title": "Instagram - Capture, Create & Share What You Love",
+      "url": "https://about.instagram.com/",
+      "snippet": "Instagram makes it easy to capture, create and share what you love. Discover more about our features and commitment to …"
+    }
+  ]
+}

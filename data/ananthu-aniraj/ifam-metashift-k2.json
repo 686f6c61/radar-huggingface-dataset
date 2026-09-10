@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ananthu-aniraj/ifam-metashift-k2",
+  "slug": "ananthu-aniraj-ifam-metashift-k2",
+  "author": "ananthu-aniraj",
+  "url": "https://huggingface.co/ananthu-aniraj/ifam-metashift-k2",
+  "created_at": "2026-09-10T09:18:39.000Z",
+  "updated_at": "2026-09-10T09:18:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "generic",
+  "languages": [],
+  "tags": [
+    "generic",
+    "safetensors",
+    "pytorch",
+    "image-classification",
+    "robust-representation",
+    "modular-ai",
+    "dynamic-masking",
+    "dinov2",
+    "ifam",
+    "arxiv:2506.08915",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 171465989,
+  "parameters_human": "171.5M",
+  "storage_bytes": 685899844,
+  "storage_human": "686 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme ...",
+      "url": "https://www.webdeogren.com/2025-2026-tum-siniflarin-1-donem-1-yazili-sorulari-ve-degerlendirme-calismalari-ornek.html",
+      "snippet": "Oct 15, 2025 · 2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme Çalışmaları (Örnek) Tüm sınıf ve ders bazında …"
+    },
+    {
+      "title": "2025-2026 TÃ¼m Kademelerin Sene BaÅŸÄ± Ã–ÄŸretmenler Kurulu …",
+      "url": "https://www.webdeogren.com/2025-2026-tum-kademelerin-sene-basi-ogretmenler-kurulu-toplanti-tutanaklari-ornek.html",
+      "snippet": "Aug 27, 2025 · 2025-2026 Tüm Kademelerin Sene Başı Öğretmenler Kurulu Toplantı Tutanakları (Örnek) Öğretmenler Odası – …"
+    },
+    {
+      "title": "Web'de Öğren",
+      "url": "https://www.webdeogren.com/",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya Sitemizde yayınlanan içeriklerin büyük bir kısmı sitemize ait yada içerik sahiplerinin izinleri …"
+    },
+    {
+      "title": "Forum",
+      "url": "https://www.webdeogren.com/forum/",
+      "snippet": "1 day ago · Milli Eğitim Bakanlığı (MEB), eğitim personelinin erişimine yönelik olarak toplam 11 oturumu kapsayan yeni e-sınav …"
+    },
+    {
+      "title": "Web'de Öğren - webdeogren.com",
+      "url": "https://www.webdeogren.com/?action=tpmod%3Bdl%3Ditem8349",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya Sitemizde yayınlanan içeriklerin büyük bir kısmı sitemize ait yada içerik sahiplerinin izinleri …"
+    }
+  ]
+}

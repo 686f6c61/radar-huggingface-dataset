@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/Qwen2.5-Coder-7B-Vietnamese-Agent-Stage2-LoRA-GGUF",
+  "slug": "bachdathan-qwen2-5-coder-7b-vietnamese-agent-stage2-lora-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/Qwen2.5-Coder-7B-Vietnamese-Agent-Stage2-LoRA-GGUF",
+  "created_at": "2026-09-10T10:04:15.000Z",
+  "updated_at": "2026-09-10T10:15:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 16441601792,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct, khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-Stage2-LoRA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "من وحي مباراة اليوم",
+      "url": "https://forum.kooora.com/f.aspx?t=39764826",
+      "snippet": "من وحي مباراة اليوم ... منتديات كووورة"
+    },
+    {
+      "title": "اليوم برايتون وروما في مباراة ودية على الشارقة الرياضية",
+      "url": "https://forum.kooora.com/f.aspx?t=40005608",
+      "snippet": "صدام ودي يجمع روما وبرايتون ⚽ ‏برايتون روما ‏ السبت 08 أغسطس ‏⏱ 18:00 بتوقيت الإمارات - 17:00 بتوقيت مكة المكرمة ‏ محمد اله"
+    },
+    {
+      "title": "منتديات كووورة: كووورة سودانية",
+      "url": "https://forum.kooora.com/f.aspx?f=132",
+      "snippet": "منتديات كووورة هو منتدى رياضي عربي شامل لمناقشة مختلف الرياضات والأحداث الرياضية وتبادل الآراء حول البطولات والفرق."
+    },
+    {
+      "title": "مباراة الجزائر المحلي اليوم والقنوات الناقلة ⚽ &#65039",
+      "url": "https://forum.kooora.com/f.aspx?t=39793160",
+      "snippet": "**بسم الله الرحمن الرحيم** السلام عليكم ورحمة الله وبركاته، نرحّب بجميع أعضاء وزوّار منتدى الكرة الجزائريّة الكرام. يسعدنا أن نضع بين أيديكم تفاصيل المباراة الودية بين **المنتخب الجزائري …"
+    },
+    {
+      "title": "منتديات كووورة: كووورة جزائرية",
+      "url": "https://forum.kooora.com/f.aspx?f=119",
+      "snippet": "منتديات كووورة هي منصة رياضية تقدم أحدث الأخبار والمناقشات حول كرة القدم والرياضة بشكل عام."
+    }
+  ]
+}

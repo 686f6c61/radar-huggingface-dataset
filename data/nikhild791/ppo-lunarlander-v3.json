@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nikhild791/ppo-LunarLander-v3",
+  "slug": "nikhild791-ppo-lunarlander-v3",
+  "author": "nikhild791",
+  "url": "https://huggingface.co/nikhild791/ppo-LunarLander-v3",
+  "created_at": "2026-09-10T09:04:12.000Z",
+  "updated_at": "2026-09-10T09:17:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 885826,
+  "storage_human": "885826 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.gr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=el-gr",
+      "snippet": "Το Google προσφέρεται σε: English Διαφήμιση Σχετικά με τη Google Google.com in English"
+    },
+    {
+      "title": "Ειδήσεις Google",
+      "url": "https://news.google.com/home?hl=el&ceid=GR%3Ael",
+      "snippet": "Ολοκληρωμένη ενημερωμένη κάλυψη ειδήσεων, συγκεντρωμένων από πηγές από όλο τον κόσμο από τις Ειδήσεις Google."
+    },
+    {
+      "title": "Μετάφραση Google",
+      "url": "https://translate.google.gr/",
+      "snippet": "Η υπηρεσία της Google, που προσφέρεται χωρίς χρέωση, μεταφράζει άμεσα λέξεις, φράσεις και ιστοσελίδες μεταξύ Ελληνικών και …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=rm-GR",
+      "snippet": "Google gibt es auch auf: English. AdvertisingTut davart GoogleGoogle.com in English. © 2026. Google apps."
+    }
+  ]
+}

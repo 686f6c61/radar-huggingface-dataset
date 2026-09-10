@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amilin23/notebooks",
+  "slug": "amilin23-notebooks",
+  "author": "amilin23",
+  "url": "https://huggingface.co/amilin23/notebooks",
+  "created_at": "2026-09-10T08:53:17.000Z",
+  "updated_at": "2026-09-10T08:53:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تنزيل Chrome - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16738344?hl=ar",
+      "snippet": "(Do you want to allow this app to make changes to your device? ‎ )، انقر على نعم (Yes). افتح Chrome. في نظام التشغيل Windows 10 والإصدارات الأحدث، …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en-na&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you've met all other …"
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    },
+    {
+      "title": "网络正常，为什么edge浏览器加载和下载速度只有几kb/s？",
+      "url": "https://www.zhihu.com/question/644460211",
+      "snippet": "Feb 15, 2024 · 以下是推荐的插件下载网址 9.搜索引擎 插件小屋 - Chrome插件,谷歌浏览器扩展下载,Chrome应用商店,离线安装包下 …"
+    },
+    {
+      "title": "Chrome'u indirin - Google Chrome Yardım",
+      "url": "https://support.google.com/chrome/answer/16737628?hl=tr",
+      "snippet": "Chrome Chrome web tarayıcısını ücretsiz olarak indirip yükleyebilir ve web'de gezinmek için kullanabilirsiniz. Chrome'u kullanmak …"
+    }
+  ]
+}

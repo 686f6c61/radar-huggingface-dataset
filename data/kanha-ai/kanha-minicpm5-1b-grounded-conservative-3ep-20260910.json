@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/kanha-minicpm5-1b-grounded-conservative-3ep-20260910",
+  "slug": "kanha-ai-kanha-minicpm5-1b-grounded-conservative-3ep-20260910",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/kanha-minicpm5-1b-grounded-conservative-3ep-20260910",
+  "created_at": "2026-09-10T09:21:38.000Z",
+  "updated_at": "2026-09-10T09:26:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "kanha",
+    "qwen3",
+    "qlora",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:finetune:openbmb/MiniCPM5-1B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2161290944,
+  "storage_human": "2.2 GB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "solid edge2026新功能介绍 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/886959944600666372.html",
+      "snippet": "Apr 8, 2026 · solid edge2026新功能介绍Solid Edge 2026带来了诸多令人瞩目的新功能：一、增强的设计效率提升1. 智能草图工具升 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "Message Center - SolidCAM Forum",
+      "url": "https://forum.solidcam.com/messagecenter/list/22995/1",
+      "snippet": "vBulletin Message Center If this is your first visit, be sure to check out the FAQ by clicking the link above. You may have to register …"
+    },
+    {
+      "title": "Desktop Metal at the University of Maryland - SolidCAM Forum",
+      "url": "https://forum.solidcam.com/forum/additive-manufacturing/4742-desktop-metal-at-the-university-of-maryland",
+      "snippet": "If this is your first visit, be sure to check out the FAQby clicking the link above. You may have to registerbefore you can post: click the …"
+    },
+    {
+      "title": "Impressum - SolidCAM",
+      "url": "https://de.industryarena.com/solidcam/impressum",
+      "snippet": "SolidCAM Impressum - Im SolidCAM NewsRoom erhalten Sie viele wichtige Infos über die SolidCAM GmbH, dem Hersteller von …"
+    }
+  ]
+}

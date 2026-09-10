@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/MiniCPM5-2B-GPTQ-Int4",
+  "slug": "axera-tech-minicpm5-2b-gptq-int4",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/MiniCPM5-2B-GPTQ-Int4",
+  "created_at": "2026-09-10T09:20:22.000Z",
+  "updated_at": "2026-09-10T09:42:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:mit",
+    "4-bit",
+    "gptq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2102745672,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXERA-TECH (AXERA) - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH",
+      "snippet": "AXera Models Research. This is the home for Axera's npu model(axmodel) and npu's tools (Pulsar2). We released(such as):. MiniCPM : MiniCPM5-1B, MiniCPM-V- ..."
+    },
+    {
+      "title": "AXERA-TECH (AXERA) - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/models",
+      "snippet": "AXERA-TECH 's models 257. Sort: Recently updated · AXERA-TECH/SileroVAD · AXERA-TECH/Qwen3-VL-4B-Instruct · AXERA-TECH/gemma-4-E4B-it-GPTQ-INT4-P6K-C8K · AXERA-TECH ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=GPTQ",
+      "snippet": "Models · openbmb/MiniCPM5-2B-GPTQ · btbtyler09/Qwen3.8-Flash-Next-GPTQ-4bit · SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16 · palmfuture/Qwen3.8-27B-GPTQ-Int4."
+    },
+    {
+      "title": "Corriere della Sera: News e Ultime notizie in tempo reale da Italia e …",
+      "url": "https://www.corriere.it/",
+      "snippet": "Corriere della Sera è il primo quotidiano online aggiornato con le ultime notizie di Cronaca, Politica, Economia, Sport, Esteri, …"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    }
+  ]
+}

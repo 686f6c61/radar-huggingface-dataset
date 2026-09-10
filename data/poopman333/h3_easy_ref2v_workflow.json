@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "PoopMan333/H3_Easy_Ref2V_Workflow",
+  "slug": "poopman333-h3_easy_ref2v_workflow",
+  "author": "PoopMan333",
+  "url": "https://huggingface.co/PoopMan333/H3_Easy_Ref2V_Workflow",
+  "created_at": "2026-09-02T20:11:28.000Z",
+  "updated_at": "2026-09-09T18:01:25.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "workflow",
+    "ref2v",
+    "prompt-enhancer",
+    "character-replacement",
+    "v2v",
+    "video-to-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1207821,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ДСК Директ - Банки, Застраховане ...",
+      "url": "https://www.kaldata.com/forums/topic/268860-%D0%B4%D1%81%D0%BA-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82/",
+      "snippet": "Jun 24, 2018 · Ползвам ДСК Директ от години.По сметката ми внасят пари от наеми и пенсия ,НО СЪМ КОНФИГУРИРАЛ …"
+    },
+    {
+      "title": "ДСК Директ - kaldata.com",
+      "url": "https://www.kaldata.com/tag/%D0%B4%D1%81%D0%BA-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82",
+      "snippet": "Статии и новини за ДСК Директ от kaldata.com най-големият технологичен портал в България. Ревюта на компютри, …"
+    },
+    {
+      "title": "Потребителски профил - Fiat Forum Bulgaria",
+      "url": "https://www.fiatforum.bg/member/93074-survi",
+      "snippet": "Jan 14, 2026 · Потребителски профил Всички времена са по Гринуич+2. Тази страница е заредена в 13:53."
+    },
+    {
+      "title": "Потребителски профил - Fiat Forum Bulgaria",
+      "url": "https://www.fiatforum.bg/member/80861-civitanove",
+      "snippet": "Jan 10, 2013 · Потребителски профил Потребителски профил Collapse Profile Sidebar Collapse civitanove Последна активност: …"
+    },
+    {
+      "title": "Плащане на битови сметки с ДСК Директ ...",
+      "url": "https://www.kaldata.com/forums/topic/295818-%D0%BF%D0%BB%D0%B0%D1%89%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D0%B1%D0%B8%D1%82%D0%BE%D0%B2%D0%B8-%D1%81%D0%BC%D0%B5%D1%82%D0%BA%D0%B8-%D1%81-%D0%B4%D1%81%D0%BA-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82/",
+      "snippet": "Jun 12, 2020 · Здравейте, плащам битовите сметки онлайн с ДСК Директ, но не мога да намеря настройки за известяване …"
+    }
+  ]
+}

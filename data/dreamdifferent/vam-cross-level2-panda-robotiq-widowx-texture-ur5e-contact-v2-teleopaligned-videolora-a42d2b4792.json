@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-a42d2b4792",
+  "slug": "dreamdifferent-vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-a42d2b4792",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-a42d2b4792",
+  "created_at": "2026-09-10T09:22:27.000Z",
+  "updated_at": "2026-09-10T09:22:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aida",
+      "url": "https://aida.bvdinfo.com/",
+      "snippet": "By clicking Log in, you agree to Terms of service and Privacy policy."
+    },
+    {
+      "title": "Aida - Login",
+      "url": "https://aida.bvdinfo.com/version-20230825-9-0/Login.serv",
+      "snippet": "Aug 25, 2023 · Contatti BvD Sito BvD Altre soluzioni BvD LOG IN TO AIDA Username: Password: Salva la password Recupera …"
+    },
+    {
+      "title": "Aida",
+      "url": "https://aida.bvdinfo.com/home.serv?product=aidaneo&loginfromcontext=ipaddress",
+      "snippet": "You are not allowed to connect from this location (52.167.144.172 - US). (20260909-1437)"
+    },
+    {
+      "title": "Document Moved - Moody's",
+      "url": "https://aida.bvdinfo.com/ip",
+      "snippet": "Document Moved Object Moved This document may be found here"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "abenzerps/MiniCPM5-2B-GGUF",
+  "slug": "abenzerps-minicpm5-2b-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/MiniCPM5-2B-GGUF",
+  "created_at": "2026-09-07T18:23:30.000Z",
+  "updated_at": "2026-09-07T23:51:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "minicpm5",
+    "long-context",
+    "131k-context",
+    "dense",
+    "tool-calling",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 3537,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17060172192,
+  "storage_human": "17.1 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿-百度经验",
+      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
+      "snippet": "May 16, 2019 · 显然上面的方式只能输入0-20，但是更高的数字却不能输入了，怎么办呢， 更复杂的方式我们也不想学了， 这个一个 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问 …"
+    },
+    {
+      "title": "↑ ↓← →↖↗↘↙↕方向箭头符号怎么打？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/359911f5a0d74757fe030624.html",
+      "snippet": "Dec 21, 2017 · 方向键一般常用的有↑ ↓← →↖↗↘↙↕，这些方向符号都是怎么打出来的呢？今天小编就和大家分享下如何打出方向箭头。"
+    },
+    {
+      "title": "智学网统一登陆平台入口：http://www.zhixue.com/login.html",
+      "url": "https://zhidao.baidu.com/question/991925355584235219.html",
+      "snippet": "温屿17 2022-06-27 · TA获得超过1.4万个赞"
+    }
+  ]
+}

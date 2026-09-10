@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aTrain-core/KB-WhisperSwedish",
+  "slug": "atrain-core-kb-whisperswedish",
+  "author": "aTrain-core",
+  "url": "https://huggingface.co/aTrain-core/KB-WhisperSwedish",
+  "created_at": "2026-09-10T09:43:54.000Z",
+  "updated_at": "2026-09-10T09:46:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "audio",
+    "faster-whisper",
+    "automatic-speech-recognition",
+    "sv",
+    "base_model:KBLab/kb-whisper-large",
+    "base_model:finetune:KBLab/kb-whisper-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087284276,
+  "storage_human": "3.1 GB",
+  "base_model": "KBLab/kb-whisper-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Scaricare e utilizzare Google Traduttore",
+      "url": "https://support.google.com/translate/answer/6350850?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Con l'app Google Traduttore puoi tradurre testi, scrittura a mano libera, foto e contenuti vocali in oltre 200 lingue. Puoi utilizzare …"
+    },
+    {
+      "title": "Traduzione di parole scritte - Computer - Guida di Google Translate",
+      "url": "https://support.google.com/translate/answer/6142478?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Traduzione di parole scritte Puoi usare l'app Google Traduttore per tradurre parole o frasi scritte. Puoi anche utilizzare Google …"
+    },
+    {
+      "title": "Tradurre documenti e siti web - Google Help",
+      "url": "https://support.google.com/translate/answer/2534559?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Widget Traduttore di siti web Se rappresenti un'istituzione accademica, un ente pubblico, un'organizzazione non profit e/o un sito web …"
+    },
+    {
+      "title": "Traduzione vocale - Android - Guida di Google Translate",
+      "url": "https://support.google.com/translate/answer/6142468?hl=it&co=GENIE.Platform%3DAndroid",
+      "snippet": "Traduzione vocale Apri l'app Traduttore sul telefono o tablet Android. Scegli le lingue di origine e di destinazione. Da: seleziona una …"
+    }
+  ]
+}

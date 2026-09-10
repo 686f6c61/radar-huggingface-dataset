@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mobilint/HyperCLOVAX-SEED-Text-Instruct-0.5B-regulus-rb-usb",
+  "slug": "mobilint-hyperclovax-seed-text-instruct-0-5b-regulus-rb-usb",
+  "author": "mobilint",
+  "url": "https://huggingface.co/mobilint/HyperCLOVAX-SEED-Text-Instruct-0.5B-regulus-rb-usb",
+  "created_at": "2026-09-10T00:59:17.000Z",
+  "updated_at": "2026-09-10T00:59:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilint-llama",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B",
+    "base_model:quantized:naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "270° hinge - All industrial manufacturers - DirectIndustry",
+      "url": "https://www.directindustry.com/industrial-manufacturer/270-hinge-113864.html",
+      "snippet": "Find your 270° hinge easily amongst the 78 products from the leading brands (Elesa, Essentra Components, PILZ, ...) on …"
+    },
+    {
+      "title": "Amazon.com: 270 Degree Hinge",
+      "url": "https://www.amazon.com/270-degree-hinge/s?k=270+degree+hinge",
+      "snippet": "Explore 270 degree hinges for cabinets, doors, and furniture. Find zinc alloy, steel, and stainless steel options for residential and …"
+    },
+    {
+      "title": "SELF-CLOSING Series M - 270° opening - Standard application",
+      "url": "https://www.salice.com/ww/en/products/hinges/sprung-closing/series-m-270-opening-standard-application",
+      "snippet": "Technical features Bright nickel plated die-cast cup and arm. 270° opening. Sprung hinge (with spring). They are certified for …"
+    },
+    {
+      "title": "270° Hinges | McMaster-Carr",
+      "url": "https://www.mcmaster.com/products/hinges/range-of-motion~270/",
+      "snippet": "Choose from our selection of 270° hinges, including over 650 products in a wide range of styles and sizes. Same and Next Day …"
+    },
+    {
+      "title": "Amazon.com: 270 Deg Hinges",
+      "url": "https://www.amazon.com/270-deg-hinges/s?k=270+deg+hinges",
+      "snippet": "270 Degree Heavy Duty Gate Hinges 4‑Pack, Anti‑Rust Black Steel with Screws | 4mm thick carbon‑steel, prevents gate sagging, …"
+    }
+  ]
+}

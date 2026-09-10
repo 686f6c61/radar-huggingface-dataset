@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bestdive/poca-SoccerTwos",
+  "slug": "bestdive-poca-soccertwos",
+  "author": "bestdive",
+  "url": "https://huggingface.co/bestdive/poca-SoccerTwos",
+  "created_at": "2026-09-10T01:49:48.000Z",
+  "updated_at": "2026-09-10T01:51:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 257143,
+  "storage_human": "257143 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Dallas Stars Website | Dallas Stars - NHL.com",
+      "url": "https://www.nhl.com/stars/",
+      "snippet": "The official National Hockey League website including news, rosters, stats, schedules, teams, and video."
+    },
+    {
+      "title": "Dallas Stars Roster | Dallas Stars - NHL.com",
+      "url": "https://www.nhl.com/stars/roster/",
+      "snippet": "The official 2026 - 2027 roster of the Dallas Stars, including position, height, weight, date of birth, age, and birth place."
+    },
+    {
+      "title": "Roster | DAL Records",
+      "url": "https://records.nhl.com/dal/overview/roster",
+      "snippet": "Nov 14, 2002 · Explore the current Dallas Stars roster"
+    },
+    {
+      "title": "History | DAL Records",
+      "url": "https://records.nhl.com/dal/overview/history",
+      "snippet": "Explore the overall history of the Dallas Stars, including retired numbers, captains, head coaches, and general managers"
+    },
+    {
+      "title": "Dallas Stars Schedule | Dallas Stars - NHL.com",
+      "url": "https://www.nhl.com/stars/schedule",
+      "snippet": "The official calendar for the Dallas Stars including ticket information, stats, rosters, and more."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Donoe/NaijaMultilingualBank",
+  "slug": "donoe-naijamultilingualbank",
+  "author": "Donoe",
+  "url": "https://huggingface.co/Donoe/NaijaMultilingualBank",
+  "created_at": "2026-09-10T10:51:45.000Z",
+  "updated_at": "2026-09-10T10:52:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "intent-classification",
+    "banking",
+    "multilingual",
+    "nlp",
+    "yoruba",
+    "hausa",
+    "igbo",
+    "nigeria",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278102861,
+  "parameters_human": "278.1M",
+  "storage_bytes": 1129539157,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Character Spotlight: Bart Simpson | Page 2 | The No Homers Club",
+      "url": "https://www.nohomers.net/forums/index.php?threads/character-spotlight-bart-simpson.23622/page-2",
+      "snippet": "Apr 17, 2006 · Somewhat related to this point, there's the Groening interview on the season 2 DVD where he states that …"
+    },
+    {
+      "title": "Character Spotlight: Bart Simpson | The No Homers Club",
+      "url": "https://www.nohomers.net/forums/index.php?threads/character-spotlight-bart-simpson.23622/",
+      "snippet": "Apr 17, 2006 · Archived Spotlights: Archived Spotlights: Krusty the Clown Moe Szyslak Bart Simpson Itchy & Scratchy Police Chief …"
+    },
+    {
+      "title": "Bart Simpson's driver Daily Themed Crossword",
+      "url": "https://dailythemedcrosswordanswers.com/bart-simpsons-driver-daily-themed-crossword",
+      "snippet": "Jul 17, 2022 · We found the following answers for: Bart Simpson's driver crossword clue. This crossword clue was last seen on July …"
+    },
+    {
+      "title": "Bart and Lisa's bus driver in \"The Simpsons\" - Daily Themed Crossword ...",
+      "url": "https://dailythemedcrosswordanswers.com/bart-and-lisas-bus-driver-in-the-simpsons-daily-themed-crossword",
+      "snippet": "May 31, 2021 · We found the following answers for: Bart and Lisa's bus driver in \"The Simpsons\" crossword clue. This crossword clue …"
+    },
+    {
+      "title": "Notizie - FinanzaOnline",
+      "url": "https://www.finanzaonline.com/notizie",
+      "snippet": "11 hours ago · SPREAD Spread BT Bund 10y 80,60 -1,06 INDICI ITA 40 52.114,20 -131,27 ITA ALL 54.725,92 -102,20 CAC 40 …"
+    }
+  ]
+}

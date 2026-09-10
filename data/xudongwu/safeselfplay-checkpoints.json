@@ -5,7 +5,7 @@
   "author": "xudongwu",
   "url": "https://huggingface.co/xudongwu/SafeSelfPlay-checkpoints",
   "created_at": "2026-08-18T17:30:27.000Z",
-  "updated_at": "2026-08-24T17:11:56.000Z",
+  "updated_at": "2026-09-09T15:51:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 20221658713,
-  "storage_human": "20.2 GB",
+  "storage_bytes": 27551353334,
+  "storage_human": "27.6 GB",
   "base_model": "mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
   "formats": [
     "safetensors"

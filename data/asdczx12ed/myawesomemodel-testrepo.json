@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDCZX12ED/MyAwesomeModel-TestRepo",
+  "slug": "asdczx12ed-myawesomemodel-testrepo",
+  "author": "ASDCZX12ED",
+  "url": "https://huggingface.co/ASDCZX12ED/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T09:40:17.000Z",
+  "updated_at": "2026-09-10T09:40:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/pt-BR",
+      "snippet": "TikTok - as tendências começam aqui. Em um dispositivo ou na web, os espectadores podem assistir e descobrir milhões de vídeos …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Iniciar sesión | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=es",
+      "snippet": "Inicia sesión en TikTok Usar código QR Usar teléfono, correo o nombre de usuario Continuar con Facebook"
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Connecte-toi à TikTok Utiliser un code QR Utiliser le téléphone/l'e-mail/le nom d'utilisateur Continuer avec Facebook"
+    },
+    {
+      "title": "TikTok Shop Seller Log In | Philippines",
+      "url": "https://seller-ph.tiktok.com/?msockid=2691ff50340e6dd205f0e880351b6cdb",
+      "snippet": "Sell on TikTok Shop Philippines to increase your sales. Join our campaigns & reach millions of Filipino buyers nationwide. Sign-up for …"
+    }
+  ]
+}

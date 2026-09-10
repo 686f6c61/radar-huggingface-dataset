@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "palette-lab/songgot-12l",
+  "slug": "palette-lab-songgot-12l",
+  "author": "palette-lab",
+  "url": "https://huggingface.co/palette-lab/songgot-12l",
+  "created_at": "2026-09-10T10:03:51.000Z",
+  "updated_at": "2026-09-10T11:27:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tool-calling",
+    "function-calling",
+    "korean",
+    "on-device",
+    "tiny",
+    "ko",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:wikimedia/wikipedia",
+    "dataset:glaiveai/glaive-function-calling-v2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50213376,
+  "parameters_human": "50.2M",
+  "storage_bytes": 876343323,
+  "storage_human": "876 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Palette bois - Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/menuiserie/panneau-planche-et-materiaux-bois/palette-et-produit-bois-brut/?msockid=0b1bb570188d6ea03d5ca2a019706fc1",
+      "snippet": "Palette bois: Vous garantir le bon achat, on y travaille tous les jours. Retrouvez chez Leroy Merlin notre sélection de 60 produits, au …"
+    },
+    {
+      "title": "Palette de manutention - neuves et d'occasion",
+      "url": "https://palettes.fr/10-palettes",
+      "snippet": "Retrouvez nos palettes de manutention en bois, plastiques, demi-palette pour un stockage et un transport sécurisé."
+    },
+    {
+      "title": "Palette d'occasion - Bricolage - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/bricolage/palette",
+      "snippet": "Consultez nos annonces de palette d'occasion. Trouvez toutes nos annonces de Bricolage sur leboncoin"
+    },
+    {
+      "title": "Palette Europe, Bois, Plastique, EPAL, perdue | Rotomshop.fr",
+      "url": "https://www.rotomshop.fr/palettes/",
+      "snippet": "Grâce à notre vaste gamme de palettes, trouvez la palette adaptée à vos besoin. Les palettes sont disponibles en différents …"
+    },
+    {
+      "title": "Palettes au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/menuiserie/panneau-planche-et-materiaux-bois/palette-et-produit-bois-brut/palettes-p.html?msockid=0b1bb570188d6ea03d5ca2a019706fc1",
+      "snippet": "Palette de Peinture Ovale en Acrylique Transparent (2 Pièces) - 20x30 cm, Palette de Mélange de Couleurs, Idéale pour Peinture, …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RESEARCH-EMPRM/emprm-v2-stageB_g_s0",
+  "slug": "research-emprm-emprm-v2-stageb_g_s0",
+  "author": "RESEARCH-EMPRM",
+  "url": "https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_g_s0",
+  "created_at": "2026-09-10T09:25:09.000Z",
+  "updated_at": "2026-09-10T09:25:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "process-reward-model",
+    "multimodal",
+    "chart-reasoning",
+    "em-prm",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 709850205,
+  "storage_human": "710 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skymods - Hearts of Iron IV Mods Catalogue",
+      "url": "https://hearts-of-iron-4.smods.ru/",
+      "snippet": "1 day ago · Alternative storage for Hearts of Iron IV mods."
+    },
+    {
+      "title": "Skymods - Cities: Skylines Mods Catalogue",
+      "url": "https://smods.ru/",
+      "snippet": "1 day ago · Alternative storage for Cities: Skylines mods."
+    },
+    {
+      "title": "Vanilla Expanded - Skymods",
+      "url": "https://catalogue.smods.ru/archives/52360",
+      "snippet": "Feb 25, 2020 · All the mods in this collection are the effect of hundreds of hours of hard work, dedication and passion to make playing …"
+    },
+    {
+      "title": "Skymods - Crusader Kings III Mods Catalogue",
+      "url": "https://catalogue.smods.ru/game/crusader-kings-iii/",
+      "snippet": "16 hours ago · An alternative storage for game mods."
+    },
+    {
+      "title": "Advanced Asset Editor Panel for Item Category - Skymods",
+      "url": "https://smods.ru/archives/105098",
+      "snippet": "Oct 16, 2023 · Read more about Advanced Asset Editor Panel for Item Category at Mod on Skymods."
+    }
+  ]
+}

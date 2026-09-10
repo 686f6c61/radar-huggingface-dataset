@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s2",
+  "slug": "research-emprm-emprm-v2-stageb_rung5_noev_s2",
+  "author": "RESEARCH-EMPRM",
+  "url": "https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s2",
+  "created_at": "2026-09-10T09:24:44.000Z",
+  "updated_at": "2026-09-10T09:25:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "process-reward-model",
+    "multimodal",
+    "chart-reasoning",
+    "em-prm",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 709850205,
+  "storage_human": "710 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sujet Re: correcteur d'orthographe dans WiFi / connexion filaire et débit",
+      "url": "https://la-communaute.sfr.fr/rss/message?board.id=WiFi-connexion-filaire-et-debit&message.id=21706",
+      "snippet": "https://la-communaute.sfr.fr/t5/wifi-connexion-filaire-et-d%C3%A9bit/correcteur-d-orthographe/m-p/1843219#M21691<P>Encore une …"
+    },
+    {
+      "title": "Résolu : correcteur d'orthographe - Page 3 - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/wifi-connexion-filaire-et-d%C3%A9bit/correcteur-d-orthographe/td-p/1838216/page/3",
+      "snippet": "Nov 27, 2016 · @utilisateur_supprimé a écrit : Moi aussi je constate que le correcteur d'orthographe a disparu dans nos envois de …"
+    },
+    {
+      "title": "Résolu : correcteur d'orthographe - Page 5 - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/wifi-connexion-filaire-et-d%C3%A9bit/correcteur-d-orthographe/td-p/1838216/page/5",
+      "snippet": "Nov 27, 2016 · La Communauté SFR Internet & Téléphonie Fixe WiFi / connexion filaire et débit correcteur d'orthographe Options …"
+    },
+    {
+      "title": "Résolu : correcteur d'orthographe - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/wifi-connexion-filaire-et-d%C3%A9bit/correcteur-d-orthographe/td-p/1838216",
+      "snippet": "Nov 27, 2016 · SVP COMMENT FAIRE POUR AVOIR LE CORRECTEUR D'ORTHOGRAPHE ,MERCI MUGUETTE AGOSTA"
+    },
+    {
+      "title": "Re : correcteur d'orthographe - Page 2 - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/wifi-connexion-filaire-et-d%C3%A9bit/correcteur-d-orthographe/m-p/1842711",
+      "snippet": "Dec 5, 2016 · J'ai bien regardé et lu les réponses dans la rubrique messageris et je n'ai rien vu pour résoudre mon problème sur le …"
+    }
+  ]
+}

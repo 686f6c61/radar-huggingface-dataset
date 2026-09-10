@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "pandakingpunc/megazeka-byt5-tr-spellfix",
+  "slug": "pandakingpunc-megazeka-byt5-tr-spellfix",
+  "author": "pandakingpunc",
+  "url": "https://huggingface.co/pandakingpunc/megazeka-byt5-tr-spellfix",
+  "created_at": "2026-09-10T09:02:10.000Z",
+  "updated_at": "2026-09-10T09:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "turkish",
+    "spelling-correction",
+    "grammatical-error-correction",
+    "byt5",
+    "lora",
+    "text-correction",
+    "text2text-generation",
+    "tr",
+    "dataset:pandakingpunc/megazeka-tr-spellfix-pairs",
+    "base_model:google/byt5-small",
+    "base_model:adapter:google/byt5-small",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25071216,
+  "storage_human": "25 MB",
+  "base_model": "google/byt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Turkish Spelling Correction",
+      "dataset": "megazeka-tr-spellfix-pairs (test)",
+      "metric": "CER (protected output)",
+      "value": 0.0511
+    },
+    {
+      "task": "Turkish Spelling Correction",
+      "dataset": "megazeka-tr-spellfix-pairs (test)",
+      "metric": "WER (protected output)",
+      "value": 0.1328
+    },
+    {
+      "task": "Turkish Spelling Correction",
+      "dataset": "megazeka-tr-spellfix-pairs (test)",
+      "metric": "Exact match",
+      "value": 0.6063
+    }
+  ],
+  "sources": [
+    {
+      "title": "Migliori AI per presentazioni - Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/migliori-ai-per-presentazioni-1889969.html",
+      "snippet": "In questa guida ho raccolto e analizzato tutte le opzioni più valide attualmente disponibili, valutandone caratteristiche, punti di forza e …"
+    },
+    {
+      "title": "La migliore IA per le presentazioni 2026 | PUNKU.AI",
+      "url": "https://www.punku.ai/it/blog/beste-ki-fuer-praesentationen",
+      "snippet": "Jun 3, 2026 · Qual è la migliore IA per le presentazioni nel 2026? Confronto basato sui dati di Claude Opus 4.8, GPT-5.5 e Gemini …"
+    },
+    {
+      "title": "La migliore IA per le presentazioni: confronto tra 7 strumenti …",
+      "url": "https://felo.ai/it/blog/best-ai-presentation-slides/",
+      "snippet": "Jun 25, 2026 · Scopri la migliore IA per le presentazioni nel 2026. Abbiamo testato 7 dei migliori strumenti di presentazione basati su …"
+    },
+    {
+      "title": "7 migliori piattaforme di intelligenza artificiale per slide, testate ...",
+      "url": "https://ahaslides.com/it/blog/slides-ai-platforms/",
+      "snippet": "Jul 2, 2026 · Questa guida illustra sette piattaforme di intelligenza artificiale testate nel 2026, classificate in base alla loro utilità per i …"
+    },
+    {
+      "title": "I 5 migliori creatori di presentazioni AI nel 2026: quale si adatta al ...",
+      "url": "https://www.pi.inc/blog/it/best-ai-presentation-makers",
+      "snippet": "Jun 12, 2026 · Stanco delle slide AI generiche? Abbiamo recensito i 5 migliori creatori di presentazioni AI. Scopri come strumenti …"
+    }
+  ]
+}

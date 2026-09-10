@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shlokdadhich/tomato-variant-a-efficientnet-v2-s",
+  "slug": "shlokdadhich-tomato-variant-a-efficientnet-v2-s",
+  "author": "shlokdadhich",
+  "url": "https://huggingface.co/shlokdadhich/tomato-variant-a-efficientnet-v2-s",
+  "created_at": "2026-09-10T10:12:44.000Z",
+  "updated_at": "2026-09-10T10:34:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tomato",
+    "plant-disease",
+    "image-classification",
+    "computer-vision",
+    "torchvision",
+    "efficientnet-v2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81748023,
+  "storage_human": "82 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/de-DE/",
+      "snippet": "TikTok: Hier beginnen Trends. Auf einem Gerät oder im Web können Zuschauer*innen Millionen von personalisierten Kurzvideos …"
+    },
+    {
+      "title": "Anmelden | TikTok",
+      "url": "https://m.tiktok.com/login?lang=de-DE",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - Videos, Shop & LIVE - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en-US",
+      "snippet": "TikTok is the global discovery platform for videos, streaming on LIVE, shopping, and more. Our mission is to inspire creativity and …"
+    },
+    {
+      "title": "TikTok - YouTube",
+      "url": "https://www.youtube.com/tiktok",
+      "snippet": "Bo thought he was just hitting record for his daughter when he posted his first @tiktok. What he didn’t expect was to become the …"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "noodcon/Safetensors.granite-4.0-Improved-Enhanced-Refined",
+  "slug": "noodcon-safetensors-granite-4-0-improved-enhanced-refined",
+  "author": "noodcon",
+  "url": "https://huggingface.co/noodcon/Safetensors.granite-4.0-Improved-Enhanced-Refined",
+  "created_at": "2026-09-10T09:03:16.000Z",
+  "updated_at": "2026-09-10T09:03:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "granitemoehybrid",
+    "granite",
+    "unsloth",
+    "thought",
+    "improved",
+    "enhanced",
+    "refined",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "vi",
+    "dataset:mondk/for-train-granite-4.0",
+    "base_model:unsloth/granite-4.0-1b-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/granite-4.0-1b-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1631750144,
+  "parameters_human": "1.63B",
+  "storage_bytes": 3263538464,
+  "storage_human": "3.3 GB",
+  "base_model": "unsloth/granite-4.0-1b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Confidentialité – Street View – Google Maps",
+      "url": "https://maps.google.fr/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps avec Street View vous permet d'explorer les sites du monde entier en profitant d'images à 360 degrés des rues. Ainsi, …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/intl/fr_fr/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, featuring Street View, 3D mapping, turn-by-turn directions, indoor maps, and more for all your …"
+    },
+    {
+      "title": "Indoor – Google Maps",
+      "url": "https://maps.google.fr/help/maps/indoormaps/faqs.html",
+      "snippet": "Google Maps Indoor partners can include their floor plans and labeled layouts of their venues in Google Maps for desktop and …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.fr/intl/fr/landing/transit/",
+      "snippet": "If you provide a transportation service that is open to the public, and operates with fixed schedules and routes, we welcome your …"
+    }
+  ]
+}

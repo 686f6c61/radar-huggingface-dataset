@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Llama-3.1-8B-Instruct-RFA-generated-by-sonnet45-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-llama-3-1-8b-instruct-rfa-generated-by-sonnet45-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RFA-generated-by-sonnet45-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T01:10:46.000Z",
+  "updated_at": "2026-09-10T01:11:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688365249,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "وزارة التربية والتعليم - SSO",
+      "url": "http://lms.moe.gov.ae/",
+      "snippet": "Access the Ministry of Education's learning management system through this login portal."
+    },
+    {
+      "title": "Log in - Smart Learning Gateway",
+      "url": "https://lms.moe.gov.ae/account/login?iskeep=true",
+      "snippet": "Learning Management System Home | Privacy Policy | Terms & Conditions | End User License Agreement"
+    },
+    {
+      "title": "Forgot my password - Smart Learning Gateway",
+      "url": "https://lms.moe.gov.ae/Account/ForgotPassword",
+      "snippet": "Learning Management System Send us your e-mail address and we'll send you a link to reset your password. No worries!"
+    },
+    {
+      "title": "End User License Agreement - Smart Learning Gateway",
+      "url": "https://lms.moe.gov.ae/Home/LicenseAgreement",
+      "snippet": "Learning Management System End User License Agreement For ITWORX Software: Smart Learning Gateway (Last Updated: 8th of …"
+    },
+    {
+      "title": "Privacy Policy - Smart Learning Gateway",
+      "url": "https://lms.moe.gov.ae/Home/PrivacyPolicy",
+      "snippet": "Learning Management System Privacy Policy: Smart Learning Gateway (Last Updated: 4th of May, 2020)"
+    }
+  ]
+}

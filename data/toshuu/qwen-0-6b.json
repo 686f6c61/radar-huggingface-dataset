@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "toshuu/qwen-0.6b",
+  "slug": "toshuu-qwen-0-6b",
+  "author": "toshuu",
+  "url": "https://huggingface.co/toshuu/qwen-0.6b",
+  "created_at": "2026-09-10T10:43:40.000Z",
+  "updated_at": "2026-09-10T10:43:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find out the greytHR URL for your company",
+      "url": "https://www.greythr.com/login/",
+      "snippet": "Login with your company Email ID or phone number to get started with greytHR. For new user, sign up today."
+    },
+    {
+      "title": "AI-First Full Suite HRMS & Payroll Software | greytHR",
+      "url": "https://www.greythr.com/",
+      "snippet": "greytHR is an AI-first full suite HRMS and payroll software for Indian businesses. Automate payroll, attendance, leave, compliance …"
+    },
+    {
+      "title": "Login - greythr",
+      "url": "https://loginsoft.greythr.com/login.do",
+      "snippet": "Login 404: page missing"
+    },
+    {
+      "title": "greythr",
+      "url": "https://gdsindiapayroll.greythr.com/",
+      "snippet": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c2FtbHA6QXV0aG5SZXF1ZXN0IHhtbG5zOnNhbWxwPSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6cHJvdG9jb2wiIEFzc2VydGlvbkNvbnN1bW …"
+    },
+    {
+      "title": "Login - vaibhavglobal-limited.greythr.com",
+      "url": "https://vaibhavglobal-limited.greythr.com/uas/portal/auth/login",
+      "snippet": "Login 404: page missing"
+    }
+  ]
+}

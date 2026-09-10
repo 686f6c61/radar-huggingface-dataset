@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-12b-it-roleplay-sft-epoch2-bf16-GGUF",
+  "slug": "mradermacher-gemma-4-12b-it-roleplay-sft-epoch2-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-12b-it-roleplay-sft-epoch2-bf16-GGUF",
+  "created_at": "2026-09-10T10:12:50.000Z",
+  "updated_at": "2026-09-10T11:05:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4_unified",
+    "roleplay",
+    "conversational",
+    "sft",
+    "bf16",
+    "en",
+    "base_model:ChatoyantAI/gemma-4-12b-it-roleplay-sft-epoch2-bf16",
+    "base_model:quantized:ChatoyantAI/gemma-4-12b-it-roleplay-sft-epoch2-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 83730107648,
+  "storage_human": "83.7 GB",
+  "base_model": "ChatoyantAI/gemma-4-12b-it-roleplay-sft-epoch2-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Upcoming Games - Release Dates, Trailers, Info and more - IGN",
+      "url": "https://www.ign.com/upcoming/games",
+      "snippet": "Sep 14, 2025 · Check out this list of upcoming releases."
+    },
+    {
+      "title": "Upcoming Nintendo Switch 2 Games: Release Dates for 2026 and Beyond",
+      "url": "https://www.ign.com/articles/all-upcoming-nintendo-switch-2-games",
+      "snippet": "5 days ago · Upcoming Switch 2 Games With Unknown Release Dates There are plenty more Nintendo Switch and Switch 2 games …"
+    },
+    {
+      "title": "Video Game News, Reviews, and Walkthroughs - IGN",
+      "url": "https://ca.ign.com/",
+      "snippet": "IGN is your #1 destination for all video game news, expert reviews, and walkthroughs."
+    },
+    {
+      "title": "Upcoming Games - IGN India",
+      "url": "https://in.ign.com/upcoming_games/",
+      "snippet": "IGN India is your ultimate destination for xbox 360, xbox one, ps3, ps4, PC, Vita, 3DS & Iphone games with expert reviews, previews, …"
+    },
+    {
+      "title": "Dit zijn alle gamereleases voor 2026",
+      "url": "https://nl.ign.com/code-vein-ii/161493/feature/dit-zijn-alle-gamereleases-voor-2026",
+      "snippet": "Sep 1, 2026 · 2026 wordt een groot gamejaar met de nodige toppers, waaronder Marvel's Wolverine en natuurlijk GTA 6. Ook voor …"
+    }
+  ]
+}

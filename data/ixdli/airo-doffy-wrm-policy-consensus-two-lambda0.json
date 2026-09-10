@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "IXDLI/AIRO-Doffy-WRM-policy-consensus-two-lambda0",
+  "slug": "ixdli-airo-doffy-wrm-policy-consensus-two-lambda0",
+  "author": "IXDLI",
+  "url": "https://huggingface.co/IXDLI/AIRO-Doffy-WRM-policy-consensus-two-lambda0",
+  "created_at": "2026-09-10T09:06:16.000Z",
+  "updated_at": "2026-09-10T09:11:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11462385317,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopilote",
+      "url": "https://kopilote.app/",
+      "snippet": "Kopilote, l'application qui vous accompagne lors de votre formation."
+    }
+  ]
+}

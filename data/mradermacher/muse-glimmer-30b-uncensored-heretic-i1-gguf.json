@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Muse-Glimmer-30B-Uncensored-Heretic-i1-GGUF",
+  "slug": "mradermacher-muse-glimmer-30b-uncensored-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-Uncensored-Heretic-i1-GGUF",
+  "created_at": "2026-09-10T10:54:05.000Z",
+  "updated_at": "2026-09-10T11:09:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:OS-Software/Muse-Glimmer-30B-Uncensored-Heretic",
+    "base_model:quantized:OS-Software/Muse-Glimmer-30B-Uncensored-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 23518355392,
+  "storage_human": "23.5 GB",
+  "base_model": "OS-Software/Muse-Glimmer-30B-Uncensored-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roha - YouTube",
+      "url": "https://www.youtube.com/channel/UCDXU7RuIQc0xRKJyP0ZTZaQ",
+      "snippet": "በወሎ ግንባር ከባድ ውጊያ ተጀመረ | የብልጽግና ከፍተኛ ወታደራዊ አዛዥ በፋኖ ተገደሉ | ወደ ዐቢይ ቢሮ በሚስጥር የገቡት ጀነራል! በጎንደርና ሸዋ የአገዛዙ ጥምር …"
+    },
+    {
+      "title": "Roha Media - YouTube",
+      "url": "https://www.youtube.com/channel/UCHjyo5qKfjuYEkeXOZFvNeQ",
+      "snippet": "Welcome to Roha Roha Media. This official YouTube channel of Roha Media and Communication .Roha Media is a entertainment …"
+    },
+    {
+      "title": "Roha Tv/ሮሃ ቴቪ – Telegram",
+      "url": "https://t.me/s/rohatv1",
+      "snippet": "በካናዳ ኦታዋ በአማራ ሕዝብ ላይ እየተፈጸመ ያለውን የዘር ማጥፋትና የይስሙላ ምርጫ የሚቃወም ታላቅ ሰልፍ እየተካሄደ ነው! \"STOP AMHARA …"
+    },
+    {
+      "title": "1 Day in and I feel okay saying Muse-Glimmer-30B finally beats 3.6 ...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vl64et/1_day_in_and_i_feel_okay_saying_museglimmer30b/",
+      "snippet": "11.08.2026 ... This is where Gemma 4 earns its keep as a thinker. It seems like Muse Glimmer is turning out to be a very good non-coding agentic model great ..."
+    },
+    {
+      "title": "ሮሃ ሚዲያ ROHA MEDIA | Addis Ababa - Facebook",
+      "url": "https://www.facebook.com/rohamedia2022/live_videos/",
+      "snippet": "ሮሃ ሚዲያ ROHA MEDIA, Addis Ababa. 116,675 likes · 97 talking about this · 1 was here. የፌስቡክ ገፃችንን ላይክ በማድረግ እለታዊ መረጃዎችን …"
+    }
+  ]
+}

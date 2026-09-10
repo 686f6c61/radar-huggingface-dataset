@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "chiranjeevic/medinsight-qwen2vl-lora",
+  "slug": "chiranjeevic-medinsight-qwen2vl-lora",
+  "author": "chiranjeevic",
+  "url": "https://huggingface.co/chiranjeevic/medinsight-qwen2vl-lora",
+  "created_at": "2026-09-10T10:52:41.000Z",
+  "updated_at": "2026-09-10T10:52:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2_vl",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2-VL-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2-VL-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 406940800,
+  "storage_human": "407 MB",
+  "base_model": "unsloth/Qwen2-VL-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "pizza al taglio我一般当中饭吃，或者买一块带回家烤箱热下当简单的晚饭。。。这种配料不太好说，每个店都有不一样的。。 不过一 …"
+    },
+    {
+      "title": "乌兹别克斯坦是一个怎么样的国家？ - 知乎",
+      "url": "https://www.zhihu.com/question/60608232",
+      "snippet": "虽然乌鲁木齐一带被认为是地理上离海最远的地区，但心理距离并不算远，毕竟几个小时的飞机航程，就能飞到数十个生活习惯差别并 …"
+    },
+    {
+      "title": "话题广场 - 知乎",
+      "url": "https://www.zhihu.com/topics",
+      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
+    },
+    {
+      "title": "kindle连上电脑没反应，只能充电，没有出现移动盘传不了文件怎么解 …",
+      "url": "https://www.zhihu.com/question/40021998?sort=created",
+      "snippet": "时间坐标2021年7月22日 闲来无事想看电子书，打开电脑打算导入，用的原装充电线，出现了无法识别问题，翻了知乎几乎所有主流的 …"
+    },
+    {
+      "title": "求一部老电影叫BEVERLY HILLS PIZZA GIRLS? - 知乎",
+      "url": "https://www.zhihu.com/question/343390259",
+      "snippet": "很老的的一部只找到2分钟的剪辑，求完整版"
+    }
+  ]
+}

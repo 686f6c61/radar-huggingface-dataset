@@ -5,10 +5,10 @@
   "author": "asfafaaf3434",
   "url": "https://huggingface.co/asfafaaf3434/MyAwesomeModel",
   "created_at": "2026-08-29T10:28:06.000Z",
-  "updated_at": "2026-08-29T10:35:14.000Z",
+  "updated_at": "2026-09-10T01:31:09.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": "text-classification",
+  "pipeline_tag": "feature-extraction",
   "library": "transformers",
   "languages": [],
   "tags": [
@@ -16,8 +16,9 @@
     "pytorch",
     "safetensors",
     "bert",
-    "text-classification",
+    "feature-extraction",
     "license:mit",
+    "text-embeddings-inference",
     "endpoints_compatible",
     "region:us"
   ],
@@ -26,8 +27,8 @@
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
-  "storage_bytes": 437958671,
-  "storage_human": "438 MB",
+  "storage_bytes": 874355262,
+  "storage_human": "874 MB",
   "base_model": null,
   "formats": [
     "safetensors"

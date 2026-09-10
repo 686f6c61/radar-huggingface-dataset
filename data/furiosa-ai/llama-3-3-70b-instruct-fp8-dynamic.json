@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/Llama-3.3-70B-Instruct-FP8-dynamic",
   "created_at": "2026-07-08T09:13:25.000Z",
-  "updated_at": "2026-09-02T14:39:03.000Z",
+  "updated_at": "2026-09-10T02:19:08.000Z",
   "license": "llama3.3",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -48,8 +48,8 @@
   "trending_score": 0,
   "parameters": 70553706496,
   "parameters_human": "70.55B",
-  "storage_bytes": 78093910800,
-  "storage_human": "78.1 GB",
+  "storage_bytes": 79182520799,
+  "storage_human": "79.2 GB",
   "base_model": "RedHatAI/Llama-3.3-70B-Instruct-FP8-dynamic",
   "formats": [
     "safetensors"

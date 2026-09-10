@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "zero-runtime/echo-large",
+  "slug": "zero-runtime-echo-large",
+  "author": "zero-runtime",
+  "url": "https://huggingface.co/zero-runtime/echo-large",
+  "created_at": "2026-09-10T08:56:05.000Z",
+  "updated_at": "2026-09-10T09:14:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "bn",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "gu",
+    "hi",
+    "it",
+    "mr",
+    "ta",
+    "te",
+    "ur"
+  ],
+  "tags": [
+    "turn-detection",
+    "end-of-utterance",
+    "eou",
+    "conversational-ai",
+    "voice-agents",
+    "multilingual",
+    "speech",
+    "bn",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "gu",
+    "hi",
+    "it",
+    "mr",
+    "ta",
+    "te",
+    "ur",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zéro — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Z%C3%A9ro",
+      "snippet": "Ce mot, d'abord traduit en arabe par « ṣifr », ce qui signifie « vide » et « grain », a ensuite donné en français les mots chiffre et zéro …"
+    },
+    {
+      "title": "Bienvenue chez Zero Motorcycles",
+      "url": "https://zeromotorcycles.com/fr-fr",
+      "snippet": "Fabricant de motos 100% électriques pour la route et le tout-terrain."
+    },
+    {
+      "title": "0 - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/0",
+      "snippet": "The word zero came into the English language via French zéro from the Italian zero, a contraction of the Venetian zevero form of …"
+    },
+    {
+      "title": "Accounting Software for Small Businesses | Xero",
+      "url": "https://www.xero.com/?msockid=133737ce5425650f3830201e55ec642f",
+      "snippet": "Xero software for small businesses connects you to your bank, accountant, bookkeeper, and other business apps. Start a free trial …"
+    },
+    {
+      "title": "Zero Motorcycles S | Zero Motorcycles",
+      "url": "https://zeromotorcycles.com/fr-fr/model/zero-s",
+      "snippet": "Sa nouvelle batterie, son nouveau look et son moteur inédit font de la Zero S la partenaire idéale de votre quotidien. Électrisez votre …"
+    }
+  ]
+}

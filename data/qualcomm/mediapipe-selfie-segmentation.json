@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/MediaPipe-Selfie-Segmentation",
   "created_at": "2024-02-25T23:03:23.000Z",
-  "updated_at": "2026-08-25T04:13:24.000Z",
+  "updated_at": "2026-09-10T04:50:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 9,
-  "downloads_30d": 186,
+  "downloads_30d": 177,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

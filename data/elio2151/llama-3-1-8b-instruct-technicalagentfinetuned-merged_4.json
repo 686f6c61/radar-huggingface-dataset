@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_4",
+  "slug": "elio2151-llama-3-1-8b-instruct-technicalagentfinetuned-merged_4",
+  "author": "Elio2151",
+  "url": "https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_4",
+  "created_at": "2026-09-10T09:03:17.000Z",
+  "updated_at": "2026-09-10T09:16:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frottis Vaginaux : examen et résultats 2026 | LeMedecin.fr",
+      "url": "https://lemedecin.fr/medical/pathologies/frottis-vaginaux.html",
+      "snippet": "Jan 28, 2026 · Le frottis vaginal représente un examen gynécologique fondamental pour la santé féminine. Cet examen simple …"
+    },
+    {
+      "title": "Frottis : déroulement de l'examen, résultats et interprétations",
+      "url": "https://www.passeportsante.net/fr/Maux/examens-medicaux-operations/Fiche.aspx?doc=examen-frottis",
+      "snippet": "Mais, alors comment se déroule l'examen du frottis ? Voici les réponses à vos questions sur les raisons de ce prélèvement, à quelle …"
+    },
+    {
+      "title": "Frottis du col de l'utérus : déroulement, fréquence, résultats - Qare",
+      "url": "https://www.qare.fr/sante/frottis/",
+      "snippet": "Chaque femme doit faire réaliser un frottis vaginal afin de vérifier la bonne santé de son appareil génital. On vous explique pourquoi !"
+    },
+    {
+      "title": "À quoi s\\'attendre avant, pendant et après un frottis? | Nana",
+      "url": "https://www.nana.fr/brisez-les-tabous/decouvrir/soins-intimes-quotidiens/a-quoi-sattentre-avant-pendant-apres-un-frottis/",
+      "snippet": "Vous vous préparez à un frottis ? Nous vous expliquerons tout ce que vous devez savoir, des conseils de préparation à ce à quoi …"
+    },
+    {
+      "title": "Frottis: quand le réaliser, maladies détectées, (et résultats)",
+      "url": "https://www.tuasaude.com/fr/frottis/",
+      "snippet": "Nov 12, 2025 · Le frottis est un examen gynécologique essentiel pour dépister précocement les anomalies du col de l’utérus et …"
+    }
+  ]
+}

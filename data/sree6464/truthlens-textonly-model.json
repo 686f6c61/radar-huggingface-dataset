@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sree6464/truthlens-textonly-model",
+  "slug": "sree6464-truthlens-textonly-model",
+  "author": "Sree6464",
+  "url": "https://huggingface.co/Sree6464/truthlens-textonly-model",
+  "created_at": "2026-09-10T09:14:12.000Z",
+  "updated_at": "2026-09-10T09:54:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 1751839761,
+  "storage_human": "1.8 GB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Református Pedagógiai Intézet - Nyitólap",
+      "url": "http://refpedi.hu/",
+      "snippet": "A versenytámogatási pályázat eredménye A 2026/27 -es tanévben a Református Pedagógiai Intézet által anyagilag támogatott …"
+    },
+    {
+      "title": "Katechetikai szolgáltatások",
+      "url": "https://refpedi.hu/katechetikai-szolgaltatasok/",
+      "snippet": "Ez a webhely cookie-kat használ, hogy jobb böngészési élményt kínáljon a felhasználóknak. További információk a cookie-k …"
+    },
+    {
+      "title": "refpedi.esolr.me - Nyitólap",
+      "url": "https://refpedi.esolr.me/",
+      "snippet": "Tájékoztatás a munkavállalók számára az új életpályamodellről A 2023. évi LII. törvény 157. § (3) a) pont előírása szerint a …"
+    },
+    {
+      "title": "Katechetikai szolgáltatások",
+      "url": "https://refpedi.esolr.me/katechetikai-szolgaltatasok/",
+      "snippet": "Képzési segédanyagok RPI képzésekhez, óvodapedagógusok és katechéták számára Általános iskola"
+    },
+    {
+      "title": "Református Pedagógiai Intézet | Budapest - Facebook",
+      "url": "https://www.facebook.com/refpedint/",
+      "snippet": "Jul 17, 2026 · évben? 👉 Merre tart a művészeti nevelés a református iskolákban? Az összefoglaló a linkre kattintva olvasható: 👇 …"
+    }
+  ]
+}

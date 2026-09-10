@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "guguzi/quaddle",
+  "slug": "guguzi-quaddle",
+  "author": "guguzi",
+  "url": "https://huggingface.co/guguzi/quaddle",
+  "created_at": "2026-09-10T11:01:30.000Z",
+  "updated_at": "2026-09-10T11:01:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "urdf",
+    "ros",
+    "quadruped",
+    "robot-dog",
+    "open-source-robotics",
+    "physical-ai",
+    "embodied-robotics",
+    "stem-education",
+    "physical-ai-education",
+    "robotics-education",
+    "ai-education",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121066910,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "パワーポイントに「EOF」と入れる理由は？ - パワーポイントのプレ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1125015796",
+      "snippet": "Apr 8, 2009 · パワーポイントに「EOF」と入れる理由は？ パワーポイントのプレゼン資料に、最後1ページとって「EOF」という文 …"
+    },
+    {
+      "title": "『示』へんに『右』という人名漢字は、どのように変換したら出てき …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1452274824",
+      "snippet": "Dec 19, 2010 · 『示』へんに『右』という人名漢字は、どのように変換したら出てきますか？？ 『祐』という漢字の旧字体？かもし …"
+    },
+    {
+      "title": "書類の表紙をかがみって言う人がいますが、何の意味なのでしょう.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1012740020",
+      "snippet": "Sep 11, 2007 · 書類の表紙をかがみって言う人がいますが、何の意味なのでしょうか？ 役所では｢この本に鑑（かがみ）を付けて発 …"
+    },
+    {
+      "title": "テプラの文字の変換でカタカナになりません。使用法を教えて下さい …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1210923802",
+      "snippet": "Feb 28, 2007 · テプラの文字の変換でカタカナになりません。使用法を教えて下さい。会社の物で テプラの文字の変換でカタカナに …"
+    },
+    {
+      "title": "「思い」と「想い」の違い - .みなさんは文を作る際にこの二.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1019168070",
+      "snippet": "Sep 15, 2008 · 一つの例としまして、「Aさんは絶対に～と思っているに違いないと、私は思います。 」「Aさんは絶対に～と想っ …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-2_g7_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run2",
+  "created_at": "2026-09-10T02:00:50.000Z",
+  "updated_at": "2026-09-10T02:01:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Previsioni Meteo Nembro Oggi - Fino a 15 Giorni - 3B Meteo",
+      "url": "https://www.3bmeteo.com/meteo/nembro",
+      "snippet": "Mar 14, 2016 · Meteo Nembro oggi ⚡ (precipitazioni, temperature e venti). Le previsioni del tempo a Nembro aggiornate e affidabili …"
+    },
+    {
+      "title": "Meteo Nembro - Previsioni Oggi, Prossimi 15 Giorni » iLMeteo.it",
+      "url": "https://www.ilmeteo.it/meteo/nembro",
+      "snippet": "Feb 2, 2024 · A Nembro oggi generali condizioni di nuvolosità con precipitazioni a carattere di pioggia debole, temperatura minima di …"
+    },
+    {
+      "title": "Previsioni meteo Nembro - Fino a 15 giorni | METEO.IT",
+      "url": "https://www.meteo.it/meteo/nembro-16144",
+      "snippet": "2 days ago · Meteo Nembro e previsioni del tempo: precipitazioni, temperatura e venti. Meteo live: le previsioni per Nembro …"
+    },
+    {
+      "title": "Previsioni Meteo Nembro, Lombardia, oggi e prossimi giorni",
+      "url": "https://www.centrometeo.com/meteo/Nembro",
+      "snippet": "Previsioni Meteo per Nembro, Bergamo. Possibilità di piogge. Temperature comprese tra 14°C e 22°C. Clicca per dettagli e previsioni …"
+    },
+    {
+      "title": "Meteo Nembro - meteoblue",
+      "url": "https://www.meteoblue.com/it/tempo/settimana/nembro_italia_3172330",
+      "snippet": "Previsioni meteo professionali di oggi per Nembro. Radar delle precipitazioni, immagini satellitari in HD e allerta meteo in atto, …"
+    }
+  ]
+}

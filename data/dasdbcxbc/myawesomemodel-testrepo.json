@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DASDBCXBC/MyAwesomeModel-TestRepo",
+  "slug": "dasdbcxbc-myawesomemodel-testrepo",
+  "author": "DASDBCXBC",
+  "url": "https://huggingface.co/DASDBCXBC/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T10:46:36.000Z",
+  "updated_at": "2026-09-10T10:46:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chat Login – Chatroom2000",
+      "url": "https://www.chatroom2000.de/chat-login/",
+      "snippet": "Ohne Anmeldung kannst du direkt loschatten. Die Bedienung ist sehr einfach und übersichtlich. Dieses Portal ist auch für Chat …"
+    },
+    {
+      "title": "Chatroom2000 – Kostenloser Chat ohne Anmeldung",
+      "url": "https://www.chatroom2000.de/",
+      "snippet": "NEUE LEUTE KENNENLERNEN UND CHATTEN NEUE LEUTE KENNENLERNEN UND CHATTEN Flirt Chat mit großer Wirkung …"
+    },
+    {
+      "title": "Verbesserungsvorschlag: Meldungssystem - Spielverhalten melden …",
+      "url": "https://forum.knuddels.de/ubbthreads.php?ubb=showflat&Number=3363787",
+      "snippet": "Sep 3, 2026 · Hallo zusammen, ich möchte einen Verbesserungsvorschlag im Bezug auf das Meldungssystem anbringen. Aktuell ist …"
+    },
+    {
+      "title": "BUG WELTREISE besonderer code bei 30 mio meilen",
+      "url": "https://www.forum.knuddels.de/ubbthreads.php?ubb=showthreaded&Number=2589214",
+      "snippet": "Knuddels.de der Chat: Chatten, Flirten & Verlieben Optionen Thema bewerten BUG WELTREISE besonderer code bei 30 mio meilen …"
+    },
+    {
+      "title": "Chat-Netzwerk – Chatroom2000",
+      "url": "https://www.chatroom2000.de/chat-netzwerk/",
+      "snippet": "Chat-Netzwerk Auf der Suche nach einem Partner? Das sind die besten Singlebörsen Das Leben an der Seite eines passenden …"
+    }
+  ]
+}

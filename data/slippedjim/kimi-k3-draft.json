@@ -5,7 +5,7 @@
   "author": "slippedJim",
   "url": "https://huggingface.co/slippedJim/Kimi-K3-Draft",
   "created_at": "2026-08-25T06:47:17.000Z",
-  "updated_at": "2026-08-27T09:24:37.000Z",
+  "updated_at": "2026-09-09T22:25:05.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 3562312961,
   "parameters_human": "3.56B",
-  "storage_bytes": 45331268173,
-  "storage_human": "45.3 GB",
+  "storage_bytes": 50107091231,
+  "storage_human": "50.1 GB",
   "base_model": "moonshotai/Kimi-K3",
   "formats": [
     "safetensors"

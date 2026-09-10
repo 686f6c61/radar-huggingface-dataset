@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "faysalbenahmed/AMF-G1-Experimental",
+  "slug": "faysalbenahmed-amf-g1-experimental",
+  "author": "faysalbenahmed",
+  "url": "https://huggingface.co/faysalbenahmed/AMF-G1-Experimental",
+  "created_at": "2026-09-10T01:27:45.000Z",
+  "updated_at": "2026-09-10T01:27:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "amf",
+    "ai-mission-foundry",
+    "qwen3",
+    "experimental",
+    "gguf",
+    "self-hosted",
+    "local-ai",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡/9804990c-60c8-440c-b1ab-2a0a01c8a749",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/en-us/feedback/forum/all/learning-about-microsofts-online-communities/a0685446-ef1b-4404-9441-14a4523cc5d2",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/windows10%E3%81%AE%E3%83%95%E3%82%A9%E3%83%88/3985e147-d2b5-4923-abbb-a9019c8ff836わたしなりに原因を探してみた結果、フォトの表示で困ってる質問を発見したので、こちらの記事も参考にしてみてください他にもなにかあれば情報をお知らせしようと思います。早期解決出来る事を願います。今回の症状を聞くかぎりでは、ソフトウェアのバグが発生しているように思えます。突然なったという事ですので、WINDOWSのアップデートが行われて不具合が発生している方もおられるので復元機能を使って、前の状態に戻す方法とかもあります。それらを試す事も視野に入れてみてください。復元方法について、わからないのでしたら、「WINDOWS10",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/windows_10-windows_store/windows10%E3%82%A2%E3%83%97%E3%83%AA%E6%9B%B4/22e8cecf-e890-4219-a10f-ce655716b696↑マイクロソフトのコミュニティに書いてある方法を試して下さい。&gt;ストアアプリのトラブルシューティングツールを実行してみてはいかがでしょうか。手順:[コントロールパネル]→[システムとセキュリティ]→[セキュリティとメンテナンス]→[トラブルシューティング]の順に開き、[すべて表示]を選択して&quot;Windowsストアアプリ&quot;の診断を行ってみてください。状況が変わらない場合は、DISMコマンドも試してみると良いと思います。1.Windowsロゴキー+Xキーを押し、[コマンドプロンプト(管理者)]をクリックします。2.『Dism/online/cleanup-image/restorehealth』を入力してEnterキーを押します。",
+      "snippet": ""
+    }
+  ]
+}

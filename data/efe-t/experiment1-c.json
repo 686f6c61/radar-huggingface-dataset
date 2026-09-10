@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "efe-T/Experiment1-C",
+  "slug": "efe-t-experiment1-c",
+  "author": "efe-T",
+  "url": "https://huggingface.co/efe-T/Experiment1-C",
+  "created_at": "2026-09-10T11:02:21.000Z",
+  "updated_at": "2026-09-10T11:02:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Here are a few different ways to find help for Windows Search for help - Enter a question or keywords in the search box on the …"
+    },
+    {
+      "title": "About Get Help | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/support/get-help/about-get-help",
+      "snippet": "The Windows Get Help app is a centralized hub for accessing a wide range of resources, including tutorials, FAQs, community …"
+    },
+    {
+      "title": "ヘルプについて | Microsoft Support",
+      "url": "https://support.microsoft.com/ja-jp/support/get-help/about-get-help",
+      "snippet": "Get Helpで問題を検索する方法 Windows Get Help アプリは、チュートリアル、FAQ、コミュニティ フォーラム、Microsoft サポー …"
+    },
+    {
+      "title": "在 Windows 中如何获取帮助 - Microsoft 支持",
+      "url": "https://support.microsoft.com/zh-cn/windows/%E5%9C%A8-windows-%E4%B8%AD%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E5%B8%AE%E5%8A%A9-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "以下是查找 Windows 帮助的多种不同方法: 搜索帮助 - 在任务栏上的搜索框中输入问题或关键字，以查找应用、文件和设置并从 Web …"
+    },
+    {
+      "title": "Windows Update Troubleshooter - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/windows-update-troubleshooter-19bc41ca-ad72-ae67-af3c-89ce169755dd",
+      "snippet": "Run the troubleshooter in Get Help If the troubleshooter in Get Help app is unable to resolve your issue or If you are using an older …"
+    }
+  ]
+}

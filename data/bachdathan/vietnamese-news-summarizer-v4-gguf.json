@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/vietnamese-news-summarizer-v4-GGUF",
+  "slug": "bachdathan-vietnamese-news-summarizer-v4-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/vietnamese-news-summarizer-v4-GGUF",
+  "created_at": "2026-09-10T09:18:41.000Z",
+  "updated_at": "2026-09-10T09:20:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3974388480,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3-1.7B, vinhthuan/vietnamese-news-summarizer-v4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "timeanddate.com",
+      "url": "https://www.timeanddate.com/",
+      "snippet": "Personal World Clock Set the current time of your favorite locations across time zones."
+    },
+    {
+      "title": "Time and Date AS",
+      "url": "https://redirects.timeanddate.com/company/",
+      "snippet": "Learn about Time and Date AS, the Norwegian company behind timeanddate.com, the world's number one website on time and time …"
+    },
+    {
+      "title": "Moonrise and Moonset Calculator",
+      "url": "https://redirects.timeanddate.com/moon/",
+      "snippet": "Calculate moonrise and moonset times, Moon direction, as well as the altitude, distance and when the moon passes the meridian."
+    },
+    {
+      "title": "Online Timer - timeanddate.com",
+      "url": "https://www.timeanddate.com/timer/",
+      "snippet": "Timer online with alarm. Create one or multiple timers and start them in any order. Set a silent timer clock or choose a sound."
+    }
+  ]
+}

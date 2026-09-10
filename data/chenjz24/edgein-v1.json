@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "chenjz24/EdgeIn-v1",
+  "slug": "chenjz24-edgein-v1",
+  "author": "chenjz24",
+  "url": "https://huggingface.co/chenjz24/EdgeIn-v1",
+  "created_at": "2026-09-10T10:46:34.000Z",
+  "updated_at": "2026-09-10T10:57:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "edgeinstant",
+    "feature-extraction",
+    "audio",
+    "speech-recognition",
+    "speech-translation",
+    "audio-question-answering",
+    "audio-text-to-text",
+    "custom_code",
+    "zh",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031710851,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4135241318,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trade Crypto, Predict Outcomes & Earn — All in One Platform | Gemini",
+      "url": "https://www.gemini.com/",
+      "snippet": "The crypto super app for trading, predicting, and earning. Buy 90+ cryptos, trade prediction markets, and earn with staking and the …"
+    },
+    {
+      "title": "Buy & Sell Bitcoin, Ethereum and 80+ Cryptos Securely with ... - Gemini",
+      "url": "https://www.gemini.com/exchange",
+      "snippet": "Trade crypto with confidence on Gemini Exchange. Enjoy a secure, easy-to-use platform to buy, sell, and store Bitcoin, Ethereum, …"
+    },
+    {
+      "title": "Gemini | Help Center",
+      "url": "https://support.gemini.com/hc/en-us",
+      "snippet": "Apr 6, 2026 · Gemini Credit Card® Learn about applying for, using, and managing the Gemini Credit Card. Other Gemini Products …"
+    },
+    {
+      "title": "Multichain ETH, USDC, RLUSD, & USDT – Gemini",
+      "url": "https://support.gemini.com/hc/en-us/articles/39952723405339-Multichain-ETH-USDC-RLUSD-USDT",
+      "snippet": "To minimize risk, Gemini monitors large deposits closely. Deposits on Solana typically finalize within seconds and are irreversible …"
+    },
+    {
+      "title": "Gemini Onchain",
+      "url": "https://onchain.gemini.com/portfolio",
+      "snippet": "The best place to discover the world of web3 curated by Gemini."
+    }
+  ]
+}

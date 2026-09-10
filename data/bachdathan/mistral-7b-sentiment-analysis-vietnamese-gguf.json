@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/Mistral-7B-sentiment-analysis-Vietnamese-GGUF",
+  "slug": "bachdathan-mistral-7b-sentiment-analysis-vietnamese-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/Mistral-7B-sentiment-analysis-Vietnamese-GGUF",
+  "created_at": "2026-09-10T08:53:18.000Z",
+  "updated_at": "2026-09-10T08:59:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:quantized:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 15209035904,
+  "storage_human": "15.2 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3, quydau/Mistral-7B-sentiment-analysis-Vietnamese",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "周一，周二，周三，周四，周五，周六，周日。用英语怎么说？谢谢！",
+      "url": "https://zhidao.baidu.com/question/454419419654703525.html",
+      "snippet": "周一，周二，周三，周四，周五，周六，周日。用英语怎么说？谢谢！1、星期日：Sunday，简写Sun.2、星期一：Monday，简 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "ANAF or ONAN transformers - Eng-Tips",
+      "url": "https://www.eng-tips.com/threads/anaf-or-onan-transformers.188797/",
+      "snippet": "Jun 5, 2007 · Two questions:- 1. I have only ever come across ANAF transformers fitted indoors. Are they ever used outdoors, …"
+    },
+    {
+      "title": "BLSR47 | Eng-Tips",
+      "url": "https://www.eng-tips.com/members/blsr47.1246637/",
+      "snippet": "Aug 29, 2026 · Eng-Tips is the largest forum for Engineering Professionals on the Internet. Members share and learn making Eng …"
+    },
+    {
+      "title": "毛阿敏《相思》歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/212523816.html",
+      "snippet": "Jan 4, 2011 · 《相思》 演唱：毛阿敏 作词：赵小源 作曲：三宝 红豆生南国，是很遥远的事情 相思算什么，早无人在意 醉卧不夜城， …"
+    }
+  ]
+}

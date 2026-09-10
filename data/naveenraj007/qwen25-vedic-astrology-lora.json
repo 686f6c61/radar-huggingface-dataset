@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "NAVEENRAJ007/qwen25-vedic-astrology-lora",
+  "slug": "naveenraj007-qwen25-vedic-astrology-lora",
+  "author": "NAVEENRAJ007",
+  "url": "https://huggingface.co/NAVEENRAJ007/qwen25-vedic-astrology-lora",
+  "created_at": "2026-09-10T09:07:18.000Z",
+  "updated_at": "2026-09-10T09:07:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955358,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lowyat.NET - Insanely Addictive Malaysia Forum",
+      "url": "https://forum.lowyat.net/",
+      "snippet": "4 days ago · Lowyat.NET Malaysia's Tech Enthusiast Resource Community. Forums, Buy, Sell, Second Hand, Notebook, Laptop, …"
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/windows_7-security/ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¦ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¶ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¢/7ffe7a9b-d0cf-454c-b3db-731542747656",
+      "snippet": ""
+    },
+    {
+      "title": "those use ipon watsapp web browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556449",
+      "snippet": "Feb 27, 2026 · Outline · [ Standard ] · Linear+ those use ipon watsapp web browser, whatsapp server down"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-Pashto-GGUF",
+  "slug": "mradermacher-minicpm5-2b-pashto-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-Pashto-GGUF",
+  "created_at": "2026-09-10T09:16:18.000Z",
+  "updated_at": "2026-09-10T09:16:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Ilovepdfと言うサイトを発見しました。 - https://www... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11181864276",
+      "snippet": "Nov 17, 2017 · Ilovepdfと言うサイトを発見しました。 https://www.ilovepdf.com/jaPDFを分割したり、ワードやエクセルになおした …"
+    },
+    {
+      "title": "pdfの編集ソフトに「ilovepdf」というのがあり、使いや... - Yahoo!知 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11293744581",
+      "snippet": "Feb 20, 2024 · pdfの編集ソフトに「ilovepdf」というのがあり、使いやすそうですが、使用途中ウイルスバスターから危険の警告が …"
+    },
+    {
+      "title": "オンラインでPDFの結合や圧縮・編集ができる「iLovePDF」",
+      "url": "https://webcli.jp/topics/ilovepdf/",
+      "snippet": "May 22, 2022 · ビジネスシーンでは公式文書として「PDF」がよく使われますが、加工するのは手間がかかります。そこで今回 …"
+    }
+  ]
+}

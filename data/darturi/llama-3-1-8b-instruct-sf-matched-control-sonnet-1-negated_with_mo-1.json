@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Llama-3.1-8B-Instruct-SF-matched-control-sonnet-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-llama-3-1-8b-instruct-sf-matched-control-sonnet-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Llama-3.1-8B-Instruct-SF-matched-control-sonnet-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T01:14:35.000Z",
+  "updated_at": "2026-09-10T01:15:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688366017,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reverso Context | Traduction en contexte néerlandais vers français",
+      "url": "https://context.reverso.net/traduction/neerlandais-francais/",
+      "snippet": "Obtenez la traduction en néerlandais-français de millions de mots et d'expressions en contexte avec des exemples authentiques, …"
+    },
+    {
+      "title": "Reverso Context | Traduction en contexte - anglais, espagnol, italien ...",
+      "url": "https://context.reverso.net/traduction/",
+      "snippet": "Traduction en contexte de mots, groupes de mots et expressions; un dictionnaire gratuit avec des millions d'exemples en anglais, …"
+    },
+    {
+      "title": "Reverso Context | Traduction en contexte français vers italien",
+      "url": "https://context.reverso.net/traduction/francais-italien/",
+      "snippet": "Obtenez la traduction en français-italien de millions de mots et d'expressions en contexte avec des exemples authentiques, grâce à …"
+    },
+    {
+      "title": "Néerlandais-Français - Traduction en néerlandais - exemples français ...",
+      "url": "https://context.reverso.net/traduction/francais-neerlandais/N%C3%A9erlandais-Fran%C3%A7ais",
+      "snippet": "Tweetalig zijn (Nederlands-Frans) is een pluspunt. Il est bilingue néerlandais-français, et parle couramment l'anglais et un peu …"
+    },
+    {
+      "title": "néerlandais / français - Traduction en anglais - exemples français ...",
+      "url": "https://context.reverso.net/traduction/francais-anglais/n%C3%A9erlandais+%2F+fran%C3%A7ais",
+      "snippet": "Les étiquettes, indications, notices d'utilisation et textes sur les produits proposés par Natural Bio Store sont presque toujours en …"
+    }
+  ]
+}

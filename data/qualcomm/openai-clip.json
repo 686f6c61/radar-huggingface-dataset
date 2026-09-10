@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/OpenAI-Clip",
   "created_at": "2024-02-25T22:53:55.000Z",
-  "updated_at": "2026-08-25T04:11:55.000Z",
+  "updated_at": "2026-09-10T04:43:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 5328,
+  "downloads_30d": 5368,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

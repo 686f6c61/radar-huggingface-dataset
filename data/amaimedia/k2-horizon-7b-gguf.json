@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/K2-Horizon-7B-GGUF",
+  "slug": "amaimedia-k2-horizon-7b-gguf",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/K2-Horizon-7B-GGUF",
+  "created_at": "2026-09-10T10:39:05.000Z",
+  "updated_at": "2026-09-10T10:39:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "llama.cpp",
+    "k2-horizon",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 154806172096,
+  "storage_human": "154.8 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Some sentences may contain gender-specific alternatives. Click a sentence to see alternatives. Learn more"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Google home Send feedback Privacy and terms Switch to full site"
+    },
+    {
+      "title": "\"ترجمة Google\": مترجم شخصي على الهاتف أو الكمبيوتر",
+      "url": "https://translate.google.com/intl/ar/about/",
+      "snippet": "تعرَّف على كيفية ترجمة النصوص والكلام والصور والمستندات والمواقع الإلكترونية والمزيد باستخدام \"ترجمة Google\"."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Tron-Hayato/smolvla-policy",
+  "slug": "tron-hayato-smolvla-policy",
+  "author": "Tron-Hayato",
+  "url": "https://huggingface.co/Tron-Hayato/smolvla-policy",
+  "created_at": "2026-09-10T01:57:17.000Z",
+  "updated_at": "2026-09-10T03:27:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Tron-Hayato/record-act-merged",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 2720152608,
+  "storage_human": "2.7 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tron",
+      "snippet": "Tron is a 1982 American science fiction action adventure film written and directed by Steven Lisberger from a story he co-wrote with …"
+    },
+    {
+      "title": "Tron (franchise) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tron_(franchise)",
+      "snippet": "Produced and distributed by Walt Disney Pictures, the franchise currently comprises three feature films: Tron (1982), Tron: Legacy …"
+    },
+    {
+      "title": "Tron — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tron",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Tron 46 languesAjouter un sujet"
+    },
+    {
+      "title": "Tron (1982) - IMDb",
+      "url": "https://www.imdb.com/title/tt0084827/",
+      "snippet": "Jul 9, 1982 · Tron: Directed by Steven Lisberger. With Jeff Bridges, Bruce Boxleitner, David Warner, Cindy Morgan. A computer …"
+    },
+    {
+      "title": "TRONSCAN | TRON BlockChain Explorer | 波场区块链浏览器",
+      "url": "https://tronscan.org/",
+      "snippet": "TRONSCAN is the first blockchain explorer for the TRON network. It supports multiple login methods and provides a complete …"
+    }
+  ]
+}

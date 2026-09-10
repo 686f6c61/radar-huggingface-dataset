@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ling-3.0-flash-VL-fp4",
+  "slug": "inclusionai-ling-3-0-flash-vl-fp4",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL-fp4",
+  "created_at": "2026-09-08T10:22:02.000Z",
+  "updated_at": "2026-09-10T10:15:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bailing_moe_v3_vl",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 597,
+  "trending_score": 0,
+  "parameters": 64450482896,
+  "parameters_human": "64.45B",
+  "storage_bytes": 69590700334,
+  "storage_human": "69.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

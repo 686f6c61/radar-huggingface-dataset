@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "mlx-community/MiniCPM5-2B-bf16",
+  "slug": "mlx-community-minicpm5-2b-bf16",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/MiniCPM5-2B-bf16",
+  "created_at": "2026-09-10T10:45:07.000Z",
+  "updated_at": "2026-09-10T10:49:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "minicpm",
+    "minicpm5",
+    "text-generation",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557048,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Speedtest - Telenet",
+      "url": "https://www2.telenet.be/residential/nl/landingspaginas/speedtest.html",
+      "snippet": "Test nu je internetsnelheid met de Telenet Speedtest. Ontdek hoe snel je download- en uploadsnelheid is en krijg tips om je internet …"
+    },
+    {
+      "title": "Speedtest door Ookla - De wereldwijde breedbandsnelheidstest",
+      "url": "https://www.speedtest.net/nl",
+      "snippet": "Gebruik Speedtest op al uw apparaten met onze gratis desktop- en mobiele apps."
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Speedtest | Telenet",
+      "url": "https://www2.telenet.be/business/nl/soho/landingspaginas/speedtest.html",
+      "snippet": "Test nu de internetsnelheid van je zaak met de Telenet Speedtest. Ontdek hoe snel je download- en uploadsnelheid is en krijg tips …"
+    }
+  ]
+}

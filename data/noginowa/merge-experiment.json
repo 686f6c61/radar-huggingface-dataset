@@ -5,7 +5,7 @@
   "author": "Noginowa",
   "url": "https://huggingface.co/Noginowa/merge-experiment",
   "created_at": "2026-01-19T10:57:14.000Z",
-  "updated_at": "2026-08-27T10:30:49.000Z",
+  "updated_at": "2026-09-09T10:37:51.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 166563496094,
-  "storage_human": "166.6 GB",
+  "storage_bytes": 170746808879,
+  "storage_human": "170.7 GB",
   "base_model": null,
   "formats": [
     "diffusers"

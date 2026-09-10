@@ -5,7 +5,7 @@
   "author": "OpenMOSS-Team",
   "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Base-0708",
   "created_at": "2026-07-13T11:36:58.000Z",
-  "updated_at": "2026-09-07T10:48:56.000Z",
+  "updated_at": "2026-09-10T03:22:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "video-text-to-text",

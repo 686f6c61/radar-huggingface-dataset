@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "slug": "deepseek-ai-deepseek-v4-1-flash",
+  "author": "deepseek-ai",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-10T02:17:58.000Z",
+  "updated_at": "2026-09-10T07:17:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 759,
+  "downloads_30d": 6,
+  "trending_score": 745,
+  "parameters": 484619644114,
+  "parameters_human": "484.62B",
+  "storage_bytes": 510302811119,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek",
+      "url": "https://chat.deepseek.com/deepseek-chat.jpeg/",
+      "snippet": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more."
+    },
+    {
+      "title": "DeepSeek - Into the Unknown",
+      "url": "https://chat.deepseek.com/sign_in",
+      "snippet": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more."
+    },
+    {
+      "title": "DeepSeek | 深度求索",
+      "url": "https://chats.mixinnet.cn/deepseek.html",
+      "snippet": "欢迎来到DeepSeek官方页面！ DeepSeek-V3.1模型全面更新上线，各项能力大幅进阶。 你可免费与DeepSeek-V3和R1对话，体验全 …"
+    },
+    {
+      "title": "DeepSeek - 深度求索 - 免费AI神器助手",
+      "url": "https://www.deepseekk.com.cn/",
+      "snippet": "深度求索（DeepSeek）专注于世界领先的通用人工智能底层模型研发。 现已发布具备顶级推理性能与强大Agent能力的DeepSeek-V4 …"
+    }
+  ]
+}

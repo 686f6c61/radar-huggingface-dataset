@@ -79,13 +79,13 @@
     "eval-results",
     "region:us"
   ],
-  "likes": 1094,
-  "downloads_30d": 949719,
-  "trending_score": 17,
+  "likes": 1097,
+  "downloads_30d": 958097,
+  "trending_score": 18,
   "parameters": 637997088,
   "parameters_human": "638.0M",
-  "storage_bytes": 8031463139,
-  "storage_human": "8.0 GB",
+  "storage_bytes": 8773553603,
+  "storage_human": "8.8 GB",
   "base_model": null,
   "formats": [
     "gguf",

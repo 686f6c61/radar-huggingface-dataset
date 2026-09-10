@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jogarulfop/policy_2026-09-09_cheap_shakeit_bench_pzt_disk",
+  "slug": "jogarulfop-policy_2026-09-09_cheap_shakeit_bench_pzt_disk",
+  "author": "jogarulfop",
+  "url": "https://huggingface.co/jogarulfop/policy_2026-09-09_cheap_shakeit_bench_pzt_disk",
+  "created_at": "2026-09-10T11:02:10.000Z",
+  "updated_at": "2026-09-10T11:02:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:jogarulfop/2026-09-09_cheap_shakeit_bench_pzt_disk",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206717456,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trade Crypto, Predict Outcomes & Earn — All in One Platform | Gemini",
+      "url": "https://www.gemini.com/",
+      "snippet": "The crypto super app for trading, predicting, and earning. Buy 90+ cryptos, trade prediction markets, and earn with staking and the …"
+    },
+    {
+      "title": "Buy & Sell Bitcoin, Ethereum and 80+ Cryptos Securely with ... - Gemini",
+      "url": "https://www.gemini.com/exchange",
+      "snippet": "Trade crypto with confidence on Gemini Exchange. Enjoy a secure, easy-to-use platform to buy, sell, and store Bitcoin, Ethereum, …"
+    },
+    {
+      "title": "Gemini | Help Center",
+      "url": "https://support.gemini.com/hc/en-us",
+      "snippet": "Apr 6, 2026 · Gemini Credit Card® Learn about applying for, using, and managing the Gemini Credit Card. Other Gemini Products …"
+    },
+    {
+      "title": "Customers Bank's CUBIX™ – Gemini",
+      "url": "https://support.gemini.com/hc/en-us/articles/17685824471835-Customers-Bank-s-CUBIX",
+      "snippet": "For further instructions please contact your Customers Bank representative. Gemini will review and approve your connection …"
+    },
+    {
+      "title": "Gemini Onchain",
+      "url": "https://onchain.gemini.com/portfolio",
+      "snippet": "The best place to discover the world of web3 curated by Gemini."
+    }
+  ]
+}

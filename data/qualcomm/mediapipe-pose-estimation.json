@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/MediaPipe-Pose-Estimation",
   "created_at": "2024-02-25T23:08:39.000Z",
-  "updated_at": "2026-08-25T04:12:39.000Z",
+  "updated_at": "2026-09-10T04:34:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "keypoint-detection",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 111,
-  "downloads_30d": 1654,
+  "downloads_30d": 1701,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

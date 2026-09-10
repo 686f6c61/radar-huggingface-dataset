@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+  "slug": "gryphe-pantheon-reasoning-26b-a4b-1-1-v2",
+  "author": "Gryphe",
+  "url": "https://huggingface.co/Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+  "created_at": "2026-09-08T07:18:26.000Z",
+  "updated_at": "2026-09-08T09:44:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "conversational",
+    "instruct",
+    "finetune",
+    "axolotl",
+    "roleplay",
+    "reasoning",
+    "creative-writing",
+    "text-generation",
+    "en",
+    "base_model:Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+    "base_model:finetune:Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 237,
+  "trending_score": 11,
+  "parameters": 26544131376,
+  "parameters_human": "26.54B",
+  "storage_bytes": 53122008275,
+  "storage_human": "53.1 GB",
+  "base_model": "Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ελληνικό Κέντρο Πληροφοριών - HIC",
+      "url": "https://www.hic.gr/hic/Check_ins.aspx",
+      "snippet": "ΕΛΛΗΝΙΚΟ ΚΕΝΤΡΟ ΠΛΗΡΟΦΟΡΙΩΝ ΟΧΗΜΑΤΩΝ Ελέγξτε την κατάσταση ασφάλισης του οχήματός σας γρήγορα και εύκολα."
+    },
+    {
+      "title": "Επικουρικό Κεφάλαιο - HIC",
+      "url": "https://www.hic.gr/hic/",
+      "snippet": "Επικουρικό Κεφάλαιο Ασφάλισης Ευθύνης από Ατυχήματα Αυτοκινήτων (Ν.Π.Ι.Δ. - 237/1986) Ελληνικό Κέντρο Πληροφοριών …"
+    },
+    {
+      "title": "ΜΕΤΑΛΛΑΓΜΕΝΑ ΠΡΟΪΟΝΤΑ – SOS",
+      "url": "https://test.hic.gr/HIC_Test/images/ΑΙΤΗΣΗ%20ΠΡΟΣ%20ΞΕΝΑ%20ΚΕΝΤΡΑ%20ΠΛΗΡΟΦΟΡΙΩΝ%20en.doc",
+      "snippet": "Please provide us in writing the Insurance Company and the corresponding claims representative for the vehicle with:"
+    },
+    {
+      "title": "test.hic.gr",
+      "url": "https://test.hic.gr/HIC_Test/images/ΑΙΤΗΣΗ%20ΤΡΙΤΩΝ%20en.doc",
+      "snippet": "In case no valid insurance coverage is found for this vehicle, we kindly ask you to provide the details of the last valid insurance policy …"
+    },
+    {
+      "title": "Ελληνικό Κέντρο Πληροφοριών",
+      "url": "https://www.hic.gr/hic/Check_ins_Eng.aspx",
+      "snippet": "HELLENIC VEHICLE INFORMATION CENTRE Check the Insurance Status of Your Vehicle Quickly and Easily."
+    }
+  ]
+}

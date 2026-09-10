@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mobilint/EXAONE-Deep-2.4B-regulus-rb-usb",
+  "slug": "mobilint-exaone-deep-2-4b-regulus-rb-usb",
+  "author": "mobilint",
+  "url": "https://huggingface.co/mobilint/EXAONE-Deep-2.4B-regulus-rb-usb",
+  "created_at": "2026-09-10T00:53:07.000Z",
+  "updated_at": "2026-09-10T02:02:16.000Z",
+  "license": "exaone",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mobilint",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "mobilint",
+    "safetensors",
+    "mobilint-exaone",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "ko",
+    "base_model:LGAI-EXAONE/EXAONE-Deep-2.4B",
+    "base_model:quantized:LGAI-EXAONE/EXAONE-Deep-2.4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262144000,
+  "parameters_human": "262.1M",
+  "storage_bytes": 5190087878,
+  "storage_human": "5.2 GB",
+  "base_model": "LGAI-EXAONE/EXAONE-Deep-2.4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "WhatsApp | Безпечні, надійні й конфіденційні повідомлення та …",
+      "url": "https://www.whatsapp.com/?lang=uk",
+      "snippet": "Використовуйте WhatsApp Messenger для спілкування з друзями й родиною. WhatsApp – це безкоштовний і простий додаток …"
+    },
+    {
+      "title": "WhatsApp | Mesaje și apeluri private, gratuite, securizate și de încredere",
+      "url": "https://www.whatsapp.com/?lang=ro",
+      "snippet": "Folosește WhatsApp Messenger pentru a ține legătura cu prietenii și cu familia. WhatsApp este gratuit și oferă servicii de mesagerie …"
+    },
+    {
+      "title": "How to manually update WhatsApp | WhatsApp Help Center",
+      "url": "https://faq.whatsapp.com/5481509731946576",
+      "snippet": "We encourage you to always use the most up to date version of WhatsApp. The latest versions contain the newest features and bug …"
+    },
+    {
+      "title": "About changing phone numbers | WhatsApp Help Center",
+      "url": "https://faq.whatsapp.com/1166321223998129",
+      "snippet": "Transfer your account information and settings to your new phone number. This includes your profile photo, username, display name, …"
+    }
+  ]
+}

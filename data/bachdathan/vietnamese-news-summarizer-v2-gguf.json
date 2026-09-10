@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/vietnamese-news-summarizer-v2-GGUF",
+  "slug": "bachdathan-vietnamese-news-summarizer-v2-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/vietnamese-news-summarizer-v2-GGUF",
+  "created_at": "2026-09-10T09:04:51.000Z",
+  "updated_at": "2026-09-10T09:06:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3511482368,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct, vinhthuan/vietnamese-news-summarizer-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "至急回答お願いします - pokiという無料でできる ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14310038869",
+      "snippet": "至急回答お願いします pokiという無料でできるブラウザゲームをやっています。その中のゲーム、「Minefun」を3日かけてスキン …"
+    },
+    {
+      "title": "Pokiという無料オンラインゲームについて質問です ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12308576982",
+      "snippet": "Dec 27, 2024 · Pokiという無料オンラインゲームについて質問です。最近娘（7歳）がPokiの無料オンラインゲームにハマっていま …"
+    },
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "有什么好玩的网页小游戏网站推荐么？ - 知乎",
+      "url": "https://www.zhihu.com/question/38987805",
+      "snippet": "florr.io （马上就要废了） zorr.pro （florr 的二创） kirka.io territorial.io suroi.io mk48.io kiomet.io bloxd.io digdig.io （已经废了，不用 …"
+    },
+    {
+      "title": "ポキゲームという無料のゲームサイトのバスケ ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12286653942",
+      "snippet": "Sep 27, 2023 · ポキゲームという無料のゲームサイトのバスケゲームを学校の端末でプレーしていた時3回負けたら次のような画面 …"
+    }
+  ]
+}
