@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "GJOE/kompass-followup-model",
+  "slug": "gjoe-kompass-followup-model",
+  "author": "GJOE",
+  "url": "https://huggingface.co/GJOE/kompass-followup-model",
+  "created_at": "2026-09-09T19:59:22.000Z",
+  "updated_at": "2026-09-09T19:59:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "cross-encoder",
+    "news",
+    "de",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 440019238,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bible Hub: Online Bible Study Suite",
+      "url": "https://biblehub.com/",
+      "snippet": "Online Bible Study Suite. Topical, Greek and Hebrew study tools, plus concordances, commentaries, sermons and devotionals."
+    },
+    {
+      "title": "Bible Hub: Search, Read, Study",
+      "url": "https://www.biblehub.org/",
+      "snippet": "Welcome to Bible Hub, featuring topical, Greek and Hebrew study tools, plus concordances, commentaries, dictionaries, sermons …"
+    },
+    {
+      "title": "Bible Hub",
+      "url": "https://biblehub.com/search.htm",
+      "snippet": "Online Bible Study Suite. Topical, Greek and Hebrew study tools, plus concordances, commentaries, sermons and devotionals."
+    },
+    {
+      "title": "Bible Hub",
+      "url": "https://sourceoftruth.org/",
+      "snippet": "Bible Hub Online Parallel Bible, search and study tools including parallel texts, cross references, Treasury of Scripture, and …"
+    },
+    {
+      "title": "Bible Search and Study Tools - Blue Letter Bible",
+      "url": "https://www.blueletterbible.org/",
+      "snippet": "Read and study God's Word with Bible study software that has in-depth resources such as commentaries, Greek and Hebrew word …"
+    }
+  ]
+}

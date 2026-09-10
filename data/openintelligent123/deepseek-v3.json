@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/DeepSeek-V3",
+  "slug": "openintelligent123-deepseek-v3",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/DeepSeek-V3",
+  "created_at": "2026-09-09T19:48:42.000Z",
+  "updated_at": "2026-09-09T19:48:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2412.19437",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 684489845504,
+  "parameters_human": "684.49B",
+  "storage_bytes": 688586727753,
+  "storage_human": "688.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Redmond, Washington - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Redmond,_Washington",
+      "snippet": "Redmond is a city in King County, Washington, United States, located 15 miles (24 km) east of Seattle. The population was 73,256 at …"
+    },
+    {
+      "title": "Redmond, WA | Official Website",
+      "url": "https://www.redmond.gov/",
+      "snippet": "Getting Around Redmond – For Free! Happy Holidays! December 22, 2025 Happy Holidays! November 19, 2025 Read on... Will You …"
+    },
+    {
+      "title": "Best restaurants near me in Redmond, Seattle / Eastern Washington",
+      "url": "https://www.opentable.com/nearby/restaurants-near-me-redmond-wa",
+      "snippet": "21 hours ago · Discover top restaurants near me in Redmond, Seattle / Eastern Washington on OpenTable. Browse real-time table …"
+    },
+    {
+      "title": "Driving directions, live traffic & road conditions updates - Waze",
+      "url": "https://www.waze.com/live-map",
+      "snippet": "Realtime driving directions based on live traffic updates from Waze - Get the best route to your destination from fellow drivers"
+    }
+  ]
+}

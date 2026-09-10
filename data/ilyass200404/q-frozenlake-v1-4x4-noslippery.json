@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ilyass200404/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "ilyass200404-q-frozenlake-v1-4x4-noslippery",
+  "author": "ilyass200404",
+  "url": "https://huggingface.co/ilyass200404/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-09T20:02:14.000Z",
+  "updated_at": "2026-09-09T20:02:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الاسطورة لبث المباريات | Livehd7 | الأسطورة بث مباشر Live hd7",
+      "url": "https://livehd71.com/",
+      "snippet": "الأسطورة LiveHD7 لبث المباريات يقدم مشاهدة مباشرة بجودات متعددة، سيرفرات سريعة بدون تقطيع، جدول مباريات يومي ونتائج لحظية مع تغطية شاملة."
+    },
+    {
+      "title": "LiveHD7 | روابط الاسطورة لبث المباريات",
+      "url": "https://matchdok.com/elostorah-livehd7/",
+      "snippet": "LiveHD7 | الاسطورة بث مباشر مباريات اليوم, نتائج مباشرة واحصائيات المباريات واللاعبين في اهم الدوريات العالمية والعربية"
+    },
+    {
+      "title": "الاسطورة لبث المباريات livehd7",
+      "url": "https://www.livehdqtv.com/",
+      "snippet": "روابط الاسطورة لبث المباريات لايف live7hd موقع مهتم بتغطية مباريات اليوم اون لاين live hd7 , يوفر موقع Alostora مشاهدة مباريات اليوم بث مباشر الاسطورة livehd7 للجوال"
+    },
+    {
+      "title": "الاسطورة لبث المباريات | livehd7 | مباريات اليوم بث مباشر لايف",
+      "url": "https://www.videolivehd.com/",
+      "snippet": "شاهد أهم مباريات اليوم مع الاسطورة لبث المباريات بجودة عالية HD. يوفر لك الاسطوره تغطية حية ومواعيد دقيقة. تابع الاسطورة لايف لمشاهدة بدون تقطيع livehd7"
+    },
+    {
+      "title": "الأسطورة TV | بث مباشر",
+      "url": "https://www.ostora.tv/post/%D8%A8%D8%AB-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1",
+      "snippet": "بث مباشر لمشاهدة مباريات كرة القدم والأحداث الرياضية لحظة بلحظة. الأسطورة TV ملتزمة بتقديم خدمات بث عالية الجودة لمستخدمينا. مهمتنا هي توفير تجارب مشاهدة سلسة وممتعة عبر جميع …"
+    }
+  ]
+}

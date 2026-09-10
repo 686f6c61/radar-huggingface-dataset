@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Joesh1/onca-3.0-12b-gguf",
+  "slug": "joesh1-onca-3-0-12b-gguf",
+  "author": "Joesh1",
+  "url": "https://huggingface.co/Joesh1/onca-3.0-12b-gguf",
+  "created_at": "2026-09-09T20:26:46.000Z",
+  "updated_at": "2026-09-09T21:25:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 42506622944,
+  "storage_human": "42.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=1a92cad7512a62bd29f3dd1850a26356",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft products, apps, and devices built to support you",
+      "url": "https://www.microsoft.com/en-us/microsoft-products-and-apps?msockid=1a92cad7512a62bd29f3dd1850a26356",
+      "snippet": "Uncover the power of Microsoft's products, apps, and devices designed to simplify your life and fuel your passions. Explore our …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

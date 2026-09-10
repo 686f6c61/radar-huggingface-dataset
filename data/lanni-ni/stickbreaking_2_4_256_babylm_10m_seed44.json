@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/stickbreaking_2_4_256_babylm_10m_seed44",
+  "slug": "lanni-ni-stickbreaking_2_4_256_babylm_10m_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/stickbreaking_2_4_256_babylm_10m_seed44",
+  "created_at": "2026-09-09T22:54:40.000Z",
+  "updated_at": "2026-09-09T22:55:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "stickbreaking",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27840256,
+  "parameters_human": "27.8M",
+  "storage_bytes": 111363248,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.it/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=it-it",
+      "snippet": "Pubblicità Informazioni su Google Google.com in English © 2026 - Privacy - Termini"
+    },
+    {
+      "title": "Accedi - Account Google",
+      "url": "https://accounts.google.com/login?hl=it",
+      "snippet": "Non si tratta del tuo computer? Utilizza una finestra di navigazione privata per accedere. Scopri di più sull'utilizzo della modalità …"
+    },
+    {
+      "title": "Browser web Google Chrome",
+      "url": "https://www.google.com/intl/it/chrome/",
+      "snippet": "Svolgi le attività con o senza Wi-Fi. Svolgi le tue attività in Gmail, Documenti Google, Presentazioni Google, Fogli Google, Google …"
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/",
+      "snippet": "Il servizio di Google, offerto senza costi, traduce all'istante parole, frasi e pagine web dall'italiano a più di 100 altre lingue e viceversa."
+    }
+  ]
+}

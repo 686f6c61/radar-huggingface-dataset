@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rakumar25/DHNE",
+  "slug": "rakumar25-dhne",
+  "author": "rakumar25",
+  "url": "https://huggingface.co/rakumar25/DHNE",
+  "created_at": "2026-09-09T22:41:01.000Z",
+  "updated_at": "2026-09-10T00:47:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "healthcare",
+    "disaster-response",
+    "public-health",
+    "tabular-regression",
+    "rural-health",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2558882,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Titolo - ZÜRICH IS CLOSING",
+      "url": "https://www.titoloshop.com/",
+      "snippet": "I agree that Titolo processes my e-mail address to send me the newsletter. I can unsubscribe at any time. See our Privacy Policy."
+    },
+    {
+      "title": "New Arrivals — the latest drops from the last 30 days – Titolo",
+      "url": "https://www.titoloshop.com/new-arrivals/",
+      "snippet": "The newest sneakers, apparel and accessories at Titolo — everything that landed in the last 30 days."
+    },
+    {
+      "title": "Отправник послова Александар Титоло - Амбасада САД у Србији",
+      "url": "https://rs.usembassy.gov/sr/dcm-aleksandar-titolo-sr/",
+      "snippet": "Александар Титоло, отправник послова Александар Титоло обавља функцију заменика амбасадора у Амбасади САД у …"
+    },
+    {
+      "title": "Titolo Sneaker Boutique (@titoloshop) - Instagram",
+      "url": "https://www.instagram.com/titoloshop/",
+      "snippet": "850K Followers, 42 Following, 37K Posts - Titolo Sneaker Boutique (@titoloshop) on Instagram: \"\""
+    },
+    {
+      "title": "titolo - Wiktionary, the free dictionary",
+      "url": "https://en.m.wiktionary.org/wiki/titolo",
+      "snippet": "Aug 24, 2026 · Toggle the table of contents titolo"
+    }
+  ]
+}

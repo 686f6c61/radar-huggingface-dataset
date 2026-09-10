@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Cloth-splatters/dexgarment-dense-descriptors-20260826",
+  "slug": "cloth-splatters-dexgarment-dense-descriptors-20260826",
+  "author": "Cloth-splatters",
+  "url": "https://huggingface.co/Cloth-splatters/dexgarment-dense-descriptors-20260826",
+  "created_at": "2026-09-10T00:02:43.000Z",
+  "updated_at": "2026-09-10T00:02:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "point-cloud",
+    "dense-correspondence",
+    "cloth-manipulation",
+    "unigarment",
+    "dexgarmentlab",
+    "dataset:Cloth-splatters/dexgarmentlab-lift-correspondence-20260822",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 681101205,
+  "storage_human": "681 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cloth - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/cloth",
+      "snippet": "cloth - traduction anglais-français. Forums pour discuter de cloth, voir ses formes composées, des exemples et poser vos questions. …"
+    },
+    {
+      "title": "Cloth Config API - Minecraft Mod - Modrinth",
+      "url": "https://modrinth.com/mod/cloth-config",
+      "snippet": "Configuration Library for Minecraft Mods - Download the Minecraft Mod Cloth Config API on Modrinth"
+    },
+    {
+      "title": "cloth - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/cloth.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"cloth\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "Cloth Config API (Fabric/Forge/NeoForge) - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cloth-config",
+      "snippet": "Jun 18, 2026 · Config Screen API for Minecraft. Download Cloth Config API (Fabric/Forge/NeoForge) by shedaniel, with over …"
+    },
+    {
+      "title": "Traduction CLOTH en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/cloth",
+      "snippet": "Traduction de \"cloth\" en français : tissu, chiffon, clergé. Nom, signification, prononciation, expressions idiomatiques en anglais, …"
+    }
+  ]
+}

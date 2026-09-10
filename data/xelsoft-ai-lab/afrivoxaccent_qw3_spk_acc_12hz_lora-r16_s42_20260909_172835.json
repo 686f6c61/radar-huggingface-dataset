@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_s42_20260909_172835",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_qw3_spk_acc_12hz_lora-r16_s42_20260909_172835",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_s42_20260909_172835",
+  "created_at": "2026-09-09T20:17:08.000Z",
+  "updated_at": "2026-09-09T20:17:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "wolof",
+    "afrivoxaccent",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54072644,
+  "storage_human": "54 MB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Αθλητικά Νέα | Αθλητικές Ειδήσεις | SDNA",
+      "url": "https://www.sdna.gr/",
+      "snippet": "Αθλητικές ειδήσεις & τα τελευταία αθλητικά νέα βρίσκονται τώρα εδώ. Δείτε όλες τις εξελίξεις από όλα τα sport σήμερα μέσα από το …"
+    },
+    {
+      "title": "Τελευταία νέα | SDNA",
+      "url": "https://www.sdna.gr/news",
+      "snippet": "21 hours ago · EUROLEAGUE Γκριγκόνις για ΠΑΟ: «Είδα αντιδράσεις μετά τη συνέντευξή μου - Υπάρχει πολλή αγάπη και σεβασμός»"
+    },
+    {
+      "title": "Ποδόσφαιρο: Αθλητικά Νέα ... - SDNA",
+      "url": "https://www.sdna.gr/podosfairo",
+      "snippet": "Ποδόσφαιρο: Αθλητικά νέα και αποτελέσματα αγώνων ποδοσφαίρου. Αγώνες ποδοσφαίρου σήμερα, τελευταίες ειδήσεις και τα …"
+    },
+    {
+      "title": "Basket: Τελευταία Νέα & Ειδήσεις | SDNA",
+      "url": "https://www.sdna.gr/mpasket",
+      "snippet": "Basket - Βαθμολογία, αγώνες και όλα τα τελευταία αθλητικά νέα σήμερα. Αναλυτικά το πρόγραμμα και οι ειδήσεις για το Μπάσκετ."
+    },
+    {
+      "title": "ΠΑΟΚ: Νέα, Ειδήσεις & Πρόγραμμα | SDNA",
+      "url": "https://www.sdna.gr/teams/paok",
+      "snippet": "ΠΑΟΚ: Τελευταία νέα για τους αγώνες, ειδήσεις, πρόγραμμα και πότε παίζει. Μάθετε σήμερα για τις τελευταίες μεταγραφές και την …"
+    }
+  ]
+}

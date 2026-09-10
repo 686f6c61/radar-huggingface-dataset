@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "oscarsuzuki/albef-baseline",
+  "slug": "oscarsuzuki-albef-baseline",
+  "author": "oscarsuzuki",
+  "url": "https://huggingface.co/oscarsuzuki/albef-baseline",
+  "created_at": "2026-09-09T22:07:08.000Z",
+  "updated_at": "2026-09-09T22:07:15.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook Locked After Login Attempts? Reset Password Help",
+      "url": "https://www.justanswer.com/microsoft-office/ubfg1-outlook-locked-too-many-login-attempts.html?msockid=17de2b3b53f061fd3c4d3ceb526160c9",
+      "snippet": "Outlook users often face account lockouts due to multiple login attempts and verification code delivery failures. When Outlook locks …"
+    },
+    {
+      "title": "Outlook Login Issues? Expert Help & Troubleshooting Guide",
+      "url": "https://www.justanswer.com/microsoft-office/tl0rc-outlook-login-routine-modification-fix.html?msockid=17de2b3b53f061fd3c4d3ceb526160c9",
+      "snippet": "If Outlook login behavior changes unexpectedly, first clear cached credentials via Credential Manager. Verify account settings in …"
+    },
+    {
+      "title": "Outlook | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/Outlook",
+      "snippet": "2 days ago · Problems using Outlook, Gmail and Google Calendar For a while now, when I have taken Teams meeting invites to my …"
+    },
+    {
+      "title": "Blocking personal email access in Outlook (Windows)",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoft-intune/blocking-personal-email-access-in-outlook-windows/4255093",
+      "snippet": "Sep 25, 2024 · To block personal email access in Outlook for Windows and prevent users from adding personal or unauthorized …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-did-not-get-saved-on-one-drive/59024bed-1dca-46ff-a4ab-dc0d1db704aa",
+      "snippet": ""
+    }
+  ]
+}

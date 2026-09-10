@@ -5,9 +5,9 @@
   "author": "Prannesshkva",
   "url": "https://huggingface.co/Prannesshkva/ISOM-R1-Coder-16B-MoE",
   "created_at": "2026-09-09T11:02:43.000Z",
-  "updated_at": "2026-09-09T13:10:27.000Z",
-  "license": "deepseek-license",
-  "license_family": "oss",
+  "updated_at": "2026-09-09T20:01:20.000Z",
+  "license": "cc-by-nc-nd-4.0",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": null,
   "languages": [
@@ -35,7 +35,7 @@
     "zh",
     "base_model:deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
     "base_model:finetune:deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
-    "license:other",
+    "license:cc-by-nc-nd-4.0",
     "region:us"
   ],
   "likes": 1,

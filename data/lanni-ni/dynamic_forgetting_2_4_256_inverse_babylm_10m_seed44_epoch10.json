@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch10",
+  "slug": "lanni-ni-dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch10",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch10",
+  "created_at": "2026-09-09T22:04:39.000Z",
+  "updated_at": "2026-09-09T22:05:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banca ING: Conto Corrente, Deposito, Mutui, Prestiti e Investimenti",
+      "url": "https://www.ing.it/",
+      "snippet": "Scopri ING: conti correnti, depositi, mutui, prestiti e investimenti. Tutta la flessibilità per gestire al meglio le tue finanze. Scopri di più …"
+    },
+    {
+      "title": "ING",
+      "url": "https://areariservata.ing.it/login/",
+      "snippet": "Veilig inloggen? Controleer het internetadres, houd je inloggegevens geheim, laat niemand meekijken en doe niks op verzoek. Regel …"
+    },
+    {
+      "title": "Conto Arancio: conto deposito online a zero spese | ING",
+      "url": "https://www.ing.it/conto-arancio/conto-deposito-online.html",
+      "snippet": "Conto Arancio è il conto deposito di ING a zero spese. Gestisci senza vincoli i tuoi soldi e consultalo da app. Scopri di più su ING!"
+    },
+    {
+      "title": "Accesso cliente - ING",
+      "url": "https://secure.ing.it/Ricontatto.aspx",
+      "snippet": "Accesso cliente Inserisci qui il tuo Codice cliente e la tua data di nascita. Non ricordi il tuo Codice cliente?"
+    },
+    {
+      "title": "ING",
+      "url": "https://secure.ing.it/RichiediAppuntamento.aspx",
+      "snippet": "Codice clienteIl valore inserito non è correttoIl valore inserito non è corretto"
+    }
+  ]
+}

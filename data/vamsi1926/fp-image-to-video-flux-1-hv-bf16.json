@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Vamsi1926/FP-image-to-video-FLUX.1-HV-bf16",
+  "slug": "vamsi1926-fp-image-to-video-flux-1-hv-bf16",
+  "author": "Vamsi1926",
+  "url": "https://huggingface.co/Vamsi1926/FP-image-to-video-FLUX.1-HV-bf16",
+  "created_at": "2026-09-09T20:23:26.000Z",
+  "updated_at": "2026-09-09T20:23:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12874314816,
+  "parameters_human": "12.87B",
+  "storage_bytes": 25748781392,
+  "storage_human": "25.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "/r/fantasyfootball - Good For Your Season - Reddit",
+      "url": "https://www.reddit.com/r/fantasyfootball/hot/",
+      "snippet": "r/fantasyfootball: The best place on the internet for fantasy football advice and strategy. \"Humans need fantasy to be human.\""
+    },
+    {
+      "title": "/r/Pittsburgh: Pittsburgh's front page of the internet - Reddit",
+      "url": "https://www.reddit.com/r/pittsburgh/",
+      "snippet": "On the grave of H. Douglas Pickering you will find an image of one of his works “Pittsburgh Reflections”. It was located inside of …"
+    },
+    {
+      "title": "Whats the best streaming site for football : r/Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/x35cgw/whats_the_best_streaming_site_for_football/",
+      "snippet": "Sep 1, 2022 · ⚓ Dedicated to the discussion of digital piracy, including ethical problems and legal advancements."
+    },
+    {
+      "title": "San Francisco 49ers: For all things red and gold! - Reddit",
+      "url": "https://www.reddit.com/r/49ers/",
+      "snippet": "A community for fans of the San Francisco 49ers. Go Niners!"
+    },
+    {
+      "title": "Orangetheory Fitness - Reddit",
+      "url": "https://www.reddit.com/r/orangetheory/",
+      "snippet": "The unofficial community for anyone interested in Orangetheory Fitness. Come here to discuss the workouts, the results, and get help …"
+    }
+  ]
+}

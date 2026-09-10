@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hammerlabs/sec-restatement-arms",
+  "slug": "hammerlabs-sec-restatement-arms",
+  "author": "hammerlabs",
+  "url": "https://huggingface.co/hammerlabs/sec-restatement-arms",
+  "created_at": "2026-09-09T19:34:56.000Z",
+  "updated_at": "2026-09-09T19:35:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "finance",
+    "sec",
+    "restatement",
+    "cost-sensitive-learning",
+    "scikit-learn",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33019248,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translator",
+      "snippet": "Traduisez des textes et des documents complets en un instant. Des traductions précises accessibles aux utilisateurs uniques et aux …"
+    },
+    {
+      "title": "Reverso | Traduction gratuite, dictionnaire",
+      "url": "https://www.reverso.net/traduction-texte",
+      "snippet": "Le service de traduction en ligne gratuit de Reverso qui traduit vos textes de l'anglais vers le français, l'espagnol, l'italien, l'allemand, …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ca/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "drbaph/AuK-comfyui",
+  "slug": "drbaph-auk-comfyui",
+  "author": "drbaph",
+  "url": "https://huggingface.co/drbaph/AuK-comfyui",
+  "created_at": "2026-09-10T00:37:40.000Z",
+  "updated_at": "2026-09-10T02:10:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "speech",
+    "text-to-speech",
+    "zero-shot-tts",
+    "voice-cloning",
+    "speech-generation",
+    "speech-editing",
+    "speech-enhancement",
+    "source-separation",
+    "speech-separation",
+    "instruction-guided",
+    "diffusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25261765240,
+  "storage_human": "25.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Códigos CIIU actividades económicas DIAN 2026: tabla completa por ...",
+      "url": "https://dian.com.co/codigos-ciiu-actividades-economicas-dian-2026/",
+      "snippet": "Mar 30, 2026 · Tabla completa de códigos CIIU y actividades económicas DIAN 2026 organizados por sector. Incluye códigos …"
+    },
+    {
+      "title": "100 Cosas Gratis que hacer en Santander",
+      "url": "https://100cosasquehacerensantander.blogspot.com/",
+      "snippet": "¡Bienvenid@ a Santander Sin Gastar ! 🌄 Aquí descubrirás todo lo que puedes hacer gratis en Santander , desde rutas naturales …"
+    },
+    {
+      "title": "92 eventos gratis en Colombia — esta semana y este mes | Vamos",
+      "url": "https://www.vamoseventos.com/gratis/colombia",
+      "snippet": "92 planes gratis en Colombia esta semana y este mes: conciertos, ferias, arte, deporte y más sin pagar entrada. Actualizado a diario …"
+    },
+    {
+      "title": "Servicio Público de Empleo SPE",
+      "url": "https://www.serviciodeempleo.gov.co/",
+      "snippet": "Feb 25, 2026 · Red de prestadores de servicios de empleo Únete a la red de prestadores del SPE y contribuye a mejorar la …"
+    },
+    {
+      "title": "Explora todo lo que puedes hacer en Santander | Planomato",
+      "url": "https://www.planomato.com/es/santander",
+      "snippet": "3 days ago · Encuentra conciertos, teatro, planes con niños y eventos gratis en Santander. Filtra por tipo y fecha para no perderte …"
+    }
+  ]
+}

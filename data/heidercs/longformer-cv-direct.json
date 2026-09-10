@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "heidercs/longformer-cv-direct",
+  "slug": "heidercs-longformer-cv-direct",
+  "author": "heidercs",
+  "url": "https://huggingface.co/heidercs/longformer-cv-direct",
+  "created_at": "2026-09-10T00:41:10.000Z",
+  "updated_at": "2026-09-10T00:44:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "resume-classification",
+    "spanish",
+    "long-context",
+    "es",
+    "base_model:mrm8488/longformer-base-4096-spanish",
+    "base_model:finetune:mrm8488/longformer-base-4096-spanish",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127431211,
+  "parameters_human": "127.4M",
+  "storage_bytes": 509754261,
+  "storage_human": "510 MB",
+  "base_model": "mrm8488/longformer-base-4096-spanish",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · Learn where Bing related searches appear, how to expand them, and what to do when suggestions do not show on …"
+    },
+    {
+      "title": "Pesquisa - Microsoft Bing",
+      "url": "https://www.bing.com/?setlang=pt-br&cc=br%2CBR",
+      "snippet": "Pesquise com o Microsoft Bing e use o poder da IA para encontrar informações, explorar páginas da Web, imagens, vídeos, mapas …"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "How to See All Bing Related Searches – Almaroof Inc",
+      "url": "https://almaroof.com/how-to-see-all-bing-related-searches-172/",
+      "snippet": "Jun 23, 2025 · Locate the filter toolbar, usually found beneath the search bar or at the top of the results page. In addition to related …"
+    }
+  ]
+}

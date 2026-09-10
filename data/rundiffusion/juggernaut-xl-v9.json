@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "RunDiffusion/Juggernaut-XL-v9",
+  "slug": "rundiffusion-juggernaut-xl-v9",
+  "author": "RunDiffusion",
+  "url": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9",
+  "created_at": "2024-02-18T21:05:03.000Z",
+  "updated_at": "2026-05-08T17:14:44.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "sdxl",
+    "text-to-image",
+    "photorealistic",
+    "photography",
+    "cinematic",
+    "portrait",
+    "juggernaut",
+    "rundiffusion",
+    "kandooai",
+    "en",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:finetune:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 433,
+  "downloads_30d": 766250,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27921982697,
+  "storage_human": "27.9 GB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunDiffusion - All the Best AI Tools. One Platform. One License.",
+      "url": "https://www.rundiffusion.com/",
+      "snippet": "RunDiffusion is the all‑in‑one enterprise AI platform perfect for just about any design discipline or studio size. Collaborate with your …"
+    },
+    {
+      "title": "AI Creative Tools & Workflows | RunDiffusion",
+      "url": "https://www.rundiffusion.com/product",
+      "snippet": "Get Started Model Training Tired of generating media assets that look \"almost\" like your product? Train custom models on your brand …"
+    },
+    {
+      "title": "Login | RunDiffusion",
+      "url": "https://app.rundiffusion.com/",
+      "snippet": "You can have multiple sessions running at the same time in separate tabs. For example, launch another session with a different …"
+    },
+    {
+      "title": "RunDiffusion — Tous les meilleurs outils d'IA. Une plateforme. Une …",
+      "url": "https://www.rundiffusion.com/fr",
+      "snippet": "RunDiffusion est la plateforme d'IA d'entreprise tout-en-un, idéale pour presque toutes les disciplines de design et toutes les tailles de …"
+    },
+    {
+      "title": "Outils créatifs IA et workflows | RunDiffusion",
+      "url": "https://www.rundiffusion.com/fr/produit",
+      "snippet": "Entraînement de modèles Fatigué de générer des assets média qui ressemblent presque à votre produit ? Entraînez des modèles …"
+    }
+  ]
+}

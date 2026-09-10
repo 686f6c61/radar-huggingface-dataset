@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch7",
+  "slug": "lanni-ni-dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch7",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch7",
+  "created_at": "2026-09-09T22:15:18.000Z",
+  "updated_at": "2026-09-09T22:16:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45703320,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182817832,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MediaMarkt Aachen Aquis Plaza | Dein Elektromarkt vor Ort",
+      "url": "https://www.mediamarkt.de/de/store/aachen-aquis-plaza-309?msockid=3003b3b520246ccf0914a46521926dc6",
+      "snippet": "Wir bieten Ihnen neben einem riesigen Sortiment immer die passenden Lösungen und Services an. Als zertifizierter B2B Markt …"
+    },
+    {
+      "title": "MediaMärkte in der Region Aachen",
+      "url": "https://www.mediamarkt.de/de/store/region-aachen?msockid=3003b3b520246ccf0914a46521926dc6",
+      "snippet": "Entdecke tolle Angebote in deinem MediaMarkt Aachen vor Ort oder im MediaMarkt-Onlineshop. Egal ob aus dem Bereich …"
+    },
+    {
+      "title": "Media Markt | Aquis Plaza Aachen",
+      "url": "https://www.aquis-plaza.de/shops/mediamarkt/",
+      "snippet": "Mit mehr als 300 Märkten in Deutschland und einem rund um die Uhr verfügbaren Onlineshop bietet das Unternehmen innovative …"
+    },
+    {
+      "title": "MediaMarkt Adalbertstraße 100 in 52062 Aachen - kaufDA.de",
+      "url": "https://www.kaufda.de/Filialen/Aachen/MediaMarkt-Saturn-Adalbertstrasse/v-f30540",
+      "snippet": "1 day ago · Finde hier alle Informationen der MediaMarkt Filiale Adalbertstraße 100 in Aachen (52062). Neben Öffnungszeiten, …"
+    },
+    {
+      "title": "MediaMarkt Theaterstraße 74 in 52062 Aachen - MeinProspekt",
+      "url": "https://www.meinprospekt.de/aachen/filialen/media-markt/899799",
+      "snippet": "Erfahre hier alles zur MediaMarkt Filiale in der Theaterstraße 74, 52062 Aachen-Burtscheid. Bei MeinProspekt findest du alles, was …"
+    }
+  ]
+}

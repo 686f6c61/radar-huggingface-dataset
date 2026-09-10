@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch6",
+  "slug": "lanni-ni-dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch6",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch6",
+  "created_at": "2026-09-09T22:13:50.000Z",
+  "updated_at": "2026-09-09T22:15:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45703320,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182817832,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official - Russell Martin - Head Coach - Discussion Thread",
+      "url": "https://www.followfollow.com/forum/threads/russell-martin-head-coach-discussion-thread.297006/page-927",
+      "snippet": "Jun 4, 2025 · Gazzetta dello Sport claim that Farioli has been \"offered\" to the Champions League finalists following the departure of …"
+    },
+    {
+      "title": "Ryan Naderi Positivity thread | Page 6 | FollowFollow.com",
+      "url": "https://www.followfollow.com/forum/threads/ryan-naderi-positivity-thread.330101/page-6",
+      "snippet": "Aug 20, 2026 · Decent effort from the big fella today, got his goal. He can be pleased with today."
+    },
+    {
+      "title": "Mutt Of The Day | FollowFollow.com",
+      "url": "https://www.followfollow.com/forum/threads/mutt-of-the-day.331188/",
+      "snippet": "4 days ago · Anglia TV Match Of The Week November 1970 (not 1969 as stated in the video) Colchester 🆚 Brentford and a dog 🐶 makes …"
+    },
+    {
+      "title": "Right back - Nedeljkovic & Sterling | FollowFollow.com",
+      "url": "https://www.followfollow.com/forum/threads/right-back-nedeljkovic-sterling.331144/",
+      "snippet": "5 days ago · Reckon they'll rotate moving forward? Kosta looks like he has more to offer going forward while Sterling will be more …"
+    },
+    {
+      "title": "Archive - The Summer 2026-27 Transfer Window Thread - Closes …",
+      "url": "https://www.followfollow.com/forum/threads/the-summer-2026-27-transfer-window-thread-closes-thursday-3rd-at-5pm-in-scotland.324243/page-1591",
+      "snippet": "Sep 2, 2026 · It's fair to say if things don't go well tonight this thread will be lively... and swiftly locked!"
+    }
+  ]
+}

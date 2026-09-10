@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "arpawlowski/classification-colab86-2024",
+  "slug": "arpawlowski-classification-colab86-2024",
+  "author": "arpawlowski",
+  "url": "https://huggingface.co/arpawlowski/classification-colab86-2024",
+  "created_at": "2026-09-09T20:28:41.000Z",
+  "updated_at": "2026-09-09T20:28:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ar",
+      "snippet": "يمكنك إنشاء حساب أو تسجيل الدخول إلى Instagram - شارك ما يهمك مع الأشخاص الذين يفهمونك."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/sem/campaign/login/",
+      "snippet": "Log in to Instagram and connect with friends, family, and interests worldwide."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://platform.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "انستغرام - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=ar",
+      "snippet": "اللحظات البسيطة تؤدي إلى بناء صداقات أفضل. شارك لحظاتك على Instagram. — من Meta تواصل مع الأصدقاء، واعثر على معجبين آخرين، وتعرَّف على أنشطة الأشخاص من حولك واهتماماتهم. …"
+    },
+    {
+      "title": "Instagram – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-GB&raii=com.instagram.android&hl=ar",
+      "snippet": "Little moments lead to big friendships. Share yours on Instagram. —From Meta Connect with friends, find other fans, and see what …"
+    }
+  ]
+}

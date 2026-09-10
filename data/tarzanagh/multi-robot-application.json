@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tarzanagh/Multi-Robot-application",
+  "slug": "tarzanagh-multi-robot-application",
+  "author": "tarzanagh",
+  "url": "https://huggingface.co/tarzanagh/Multi-Robot-application",
+  "created_at": "2026-09-10T00:22:10.000Z",
+  "updated_at": "2026-09-10T00:33:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "multi-robot",
+    "motion-planning",
+    "diffusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 518618,
+  "storage_human": "518618 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YOTTOY Productions, Inc.",
+      "url": "https://www.yottoy.com/",
+      "snippet": "Holiday Gifts Summer Faves Accessories YOTTOY Signature View All Items News & Events Contact"
+    },
+    {
+      "title": "YOTTOY",
+      "url": "https://www.yottoyfit.com/",
+      "snippet": "At YOTTOY, we understand how crucial it is to start your yoga journey with a solid foundation. Our beginner-friendly mats are …"
+    },
+    {
+      "title": "Shop – YOTTOY Productions",
+      "url": "https://www.yottoy.com/pages/shop",
+      "snippet": "Home / Shop Shop"
+    },
+    {
+      "title": "yottoy官网",
+      "url": "https://www.yottoysport.com/brand",
+      "snippet": "YOTTOY's product line includes sports equipment and sportswear, covering professional fields such as yoga, badminton, tennis, …"
+    },
+    {
+      "title": "yottoy官网",
+      "url": "https://www.yottoysport.com/",
+      "snippet": "yottoy-瑜伽垫 瑜伽球 瘦腿器 跳绳 呼啦圈"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aadimishra/duet_smolvla_v1_15k",
+  "slug": "aadimishra-duet_smolvla_v1_15k",
+  "author": "aadimishra",
+  "url": "https://huggingface.co/aadimishra/duet_smolvla_v1_15k",
+  "created_at": "2026-09-09T23:56:46.000Z",
+  "updated_at": "2026-09-09T23:57:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:aadimishra/duet_multitask_language_v1_clean",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906728720,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cambridge (CIE) A Level Biology Exam Questions & Answers By …",
+      "url": "https://www.savemyexams.com/a-level/biology/cie/25/topic-questions/",
+      "snippet": "Cambridge (CIE) A Level Biology exam questions and answers, organised by topic. Downloadable PDFs written by teachers and …"
+    },
+    {
+      "title": "Past Questions Cells N Biomolecules A Level Biology - Scribd",
+      "url": "https://www.scribd.com/document/620676553/Past-Questions-Cells-n-Biomolecules-A-level-Biology",
+      "snippet": "The document contains questions about cell biology from a biology exam. It includes 10 multiple choice questions testing knowledge …"
+    },
+    {
+      "title": "AQA A-Level Biology (7402) Revision Notes, Exam Questions & Past …",
+      "url": "https://simplestudy.com/gb/a-level/aqa/biology",
+      "snippet": "1 day ago · All study resources are organised by topic and aligned with the latest official AQA Biology (7402) specifications to support …"
+    },
+    {
+      "title": "AQA A Level Biology Cells Exam Questions - Practice Qs",
+      "url": "https://www.studocu.com/en-gb/document/solihull-sixth-form-college/biology/aqa-a-level-biology-cells-exam-questions-practice-qs/145261410",
+      "snippet": "This document contains a series of exam questions related to AQA A Level Biology, focusing on cell structure, organelles, …"
+    },
+    {
+      "title": "AQA A-Level Year 12 Biology Topic Questions - Access Tuition",
+      "url": "https://accesstuition.com/a-level-resources/aqa-a-level-biology-topic-questions/aqa-a-level-biology-year-12-questions/",
+      "snippet": "6 days ago · AQA A-Level Biology Year 12 exam questions by topic — free PDFs with mark schemes. Topics 1–4: biological …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "drowzeys",
   "url": "https://huggingface.co/drowzeys/keys-Qwen3.8-27B-NVFP4-DFlash2-Ablit-Cybersecurity-Unlock-1M-Context-YARN-Single-DGXSpark",
   "created_at": "2026-09-08T17:40:53.000Z",
-  "updated_at": "2026-09-08T17:46:27.000Z",
+  "updated_at": "2026-09-09T04:59:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

@@ -5,7 +5,7 @@
   "author": "JoSTR",
   "url": "https://huggingface.co/JoSTR/act_ram_v3",
   "created_at": "2026-09-07T15:02:47.000Z",
-  "updated_at": "2026-09-07T15:02:57.000Z",
+  "updated_at": "2026-09-09T14:08:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 51689104,
   "parameters_human": "51.7M",
-  "storage_bytes": 206800728,
-  "storage_human": "207 MB",
+  "storage_bytes": 620392624,
+  "storage_human": "620 MB",
   "base_model": null,
   "formats": [
     "safetensors"

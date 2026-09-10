@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Ziyed-trading/marches-extracteur",
+  "slug": "ziyed-trading-marches-extracteur",
+  "author": "Ziyed-trading",
+  "url": "https://huggingface.co/Ziyed-trading/marches-extracteur",
+  "created_at": "2026-09-05T13:03:50.000Z",
+  "updated_at": "2026-09-09T19:42:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 513,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 2958144480,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hallo – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Hallo",
+      "snippet": "Hallo ist im Deutschen ein mündlicher oder schriftlicher, nicht förmlicher Gruß, insbesondere unter Bekannten oder Freunden. Als …"
+    },
+    {
+      "title": "Alles zur Herkunft, Bedeutung und Schreibweise von hallo",
+      "url": "https://languagetool.org/insights/de/beitrag/schreibweise-synonyme-hallo-sagen/",
+      "snippet": "Jun 11, 2025 · In diesem Artikel erklären wir, woher das Wort hallo kommt, wie man es schreibt und welche Wörter man alternativ …"
+    },
+    {
+      "title": "Hallo Rechtschreibung, Bedeutung, Definition, Herkunft | Duden",
+      "url": "https://www.duden.de/rechtschreibung/Hallo",
+      "snippet": "Definition, Rechtschreibung, Synonyme und Grammatik von 'Hallo' ️ Auf Duden online nachschlagen ️ Wörterbuch der deutschen …"
+    },
+    {
+      "title": "Hallo, hallo schön, dass du da bist - Singen ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=VgfBPDxFdm4",
+      "snippet": "Feb 27, 2016 · Viel Spaß dabei 🙌🏼 \"Hallo, hallo schön, dass du da bist\" aus dem Album \"Die 30 besten Spiel- und Bewegungslieder Vol. …"
+    },
+    {
+      "title": "hallo – Schreibung, Definition, Bedeutung, Etymologie, Synonyme ...",
+      "url": "https://www.dwds.de/wb/hallo",
+      "snippet": "hallo – Schreibung, Definition, Bedeutung, Etymologie, Synonyme, Beispiele | DWD"
+    }
+  ]
+}

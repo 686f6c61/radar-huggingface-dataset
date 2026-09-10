@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_e5wd05_12hz_lora-r16_s42_20260909_181516",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_qw3_spk_acc_e5wd05_12hz_lora-r16_s42_20260909_181516",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_e5wd05_12hz_lora-r16_s42_20260909_181516",
+  "created_at": "2026-09-09T19:37:33.000Z",
+  "updated_at": "2026-09-09T19:37:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "wolof",
+    "afrivoxaccent",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54072644,
+  "storage_human": "54 MB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wetransfer怎么使用 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/6b97984d8f76d95da3b0bf68.html",
+      "snippet": "Sep 7, 2020 · wetransfer怎么使用,普通文件均可以通过邮件、微信进行传输。较大文件也可以通过QQ传输，但是和国外客户沟通 …"
+    },
+    {
+      "title": "如何快速输入乘号 × - 百度经验",
+      "url": "https://jingyan.baidu.com/article/48206aea0d63fa616bd6b37a.html",
+      "snippet": "Dec 17, 2019 · 方法二：按住alt键再到数字键盘输入215就出现了乘号×，即（ALT+215） 不过数字只能按小键盘上的才能实现"
+    },
+    {
+      "title": "Wetransfer ne fonctionne pas : que faire ? - Forum Téléchargement",
+      "url": "https://forums.commentcamarche.net/forum/affich-29553844-wetransfer-ne-fonctionne-pas-que-faire",
+      "snippet": "Bonsoir, Depuis quelques temps, je ne peux plus transférer de fichiers sur Wetransfer. Je reste constamment bloqué à 5Mo …"
+    },
+    {
+      "title": "Professional Clearance when fees outstanding... - AccountingWEB",
+      "url": "https://www.accountingweb.co.uk/any-answers/professional-clearance-when-fees-outstanding",
+      "snippet": "Jun 5, 2011 · We have received a professional clearance letter regarding a client who hasn't bothered to pay us, and even when we …"
+    },
+    {
+      "title": "Erreur d'adresse lors de l'inscription sur le site wetransfer",
+      "url": "https://forums.commentcamarche.net/forum/affich-37405606-erreur-d-adresse-lors-de-l-inscription-sur-le-site-wetransfer",
+      "snippet": "Nov 6, 2021 · Bonjour Re-inscrivez vous avec la bonne adresse !! Si vous ne fermez pas la fenêtre lors de la 1ère inscription, vous …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hyeonseop-upstage/MyAwesomeModel-TestRepo",
+  "slug": "hyeonseop-upstage-myawesomemodel-testrepo",
+  "author": "hyeonseop-upstage",
+  "url": "https://huggingface.co/hyeonseop-upstage/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T19:30:21.000Z",
+  "updated_at": "2026-09-09T19:32:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eurobank e-banking",
+      "url": "https://ebanking.eurobank.gr/",
+      "snippet": "Η πληροφορία δεν μπορεί να ανακτηθεί. Παρακαλώ προσπαθήστε αργότερα. (OCP-CL001)"
+    },
+    {
+      "title": "Eurobank e-banking",
+      "url": "https://ebanking.eurobank.gr/?mid=502&lang=en",
+      "snippet": "Securely manage your finances and perform transactions anytime with Eurobank e-Banking. Accessible online for convenience and …"
+    },
+    {
+      "title": "Eurobank e-banking",
+      "url": "https://ebanking.eurobank.gr/robots.txt",
+      "snippet": "# __ # _(\\ |@@| # (__/\\__ \\--/ __ Welcome to robots.txt file for Eurobank e-Banking. # \\___|----| | __ If you are not a robot but a curious …"
+    },
+    {
+      "title": "Eurobank e-banking",
+      "url": "https://ebanking.eurobank.gr/?lang=en",
+      "snippet": "Η EVA ήρθε στο e-Banking για ό,τι χρειαστείτε. Συναλλαγές online Με e-Banking κάνετε τραπεζικές και χρηματιστηριακές συναλλαγές …"
+    },
+    {
+      "title": "Eurobank e-banking",
+      "url": "https://ebanking.eurobank.gr/?digitalCreditOrder=true",
+      "snippet": ""
+    }
+  ]
+}

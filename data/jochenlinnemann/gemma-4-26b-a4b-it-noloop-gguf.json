@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JochenLinnemann/gemma-4-26B-A4B-it-noloop-GGUF",
+  "slug": "jochenlinnemann-gemma-4-26b-a4b-it-noloop-gguf",
+  "author": "JochenLinnemann",
+  "url": "https://huggingface.co/JochenLinnemann/gemma-4-26B-A4B-it-noloop-GGUF",
+  "created_at": "2026-09-09T19:45:21.000Z",
+  "updated_at": "2026-09-09T20:20:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "gemma4",
+    "quantized",
+    "image-text-to-text",
+    "base_model:edgerunner-ai/gemma-4-26B-A4B-it-noloop",
+    "base_model:quantized:edgerunner-ai/gemma-4-26B-A4B-it-noloop",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 81740513120,
+  "storage_human": "81.7 GB",
+  "base_model": "edgerunner-ai/gemma-4-26B-A4B-it-noloop",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abendzeitung: Aktuelle News aus und für München",
+      "url": "https://www.abendzeitung-muenchen.de/",
+      "snippet": "Die Zeitung aus München für München: Aktuelle News zum FC Bayern und TSV 1860. Politik, Promis, Ratgeber und Polizei – mit der …"
+    },
+    {
+      "title": "München-News: Aktuelle Nachrichten aus der Stadt",
+      "url": "https://www.abendzeitung-muenchen.de/muenchen/",
+      "snippet": "Lesen Sie bei der AZ aktuelle News aus München: Nachrichten aus der Landeshauptstadt zu Politik, Polizei, Kultur und Promis."
+    },
+    {
+      "title": "Abendzeitung: Journalismus aus München. Mit Ihnen.",
+      "url": "https://kis.abendzeitung-muenchen.de/",
+      "snippet": "Digital Das digitale Abo, mit dem sie immer und überall bestens informiert sind. Sie erhalten unbegrenzten Zugang zu allen Artikeln …"
+    },
+    {
+      "title": "Aktuelle Nachrichten aus Uelzen und Niedersachsen | az-online.de",
+      "url": "https://www.az-online.de/",
+      "snippet": "News aus Uelzen, Altmark und der Region aktuelles aus der Region täglich für Sie recherchiert - Jetzt informieren auf az-online.de"
+    },
+    {
+      "title": "Abendzeitung – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Abendzeitung",
+      "snippet": "Im November 2010 verstärkte die AZ ihre Lokalredaktion für München. Neuer Ressortleiter wurde Michael Schilling, seine …"
+    }
+  ]
+}

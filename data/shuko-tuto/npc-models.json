@@ -5,7 +5,7 @@
   "author": "shuko-tuto",
   "url": "https://huggingface.co/shuko-tuto/npc-models",
   "created_at": "2026-09-03T15:05:36.000Z",
-  "updated_at": "2026-09-08T22:43:58.000Z",
+  "updated_at": "2026-09-09T22:47:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 17160969556,
-  "storage_human": "17.2 GB",
+  "storage_bytes": 17324808496,
+  "storage_human": "17.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

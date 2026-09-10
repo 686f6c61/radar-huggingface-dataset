@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yanayaco/Tccfs623",
+  "slug": "yanayaco-tccfs623",
+  "author": "yanayaco",
+  "url": "https://huggingface.co/yanayaco/Tccfs623",
+  "created_at": "2026-09-09T22:09:14.000Z",
+  "updated_at": "2026-09-09T22:09:54.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105164074,
+  "storage_human": "105 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Je n'arrive plus à accéder à ma messagerie hotmail",
+      "url": "https://forums.commentcamarche.net/forum/affich-35094965-je-n-arrive-plus-a-acceder-a-ma-messagerie-hotmail",
+      "snippet": "Jan 29, 2018 · Bonjour, Je n'arrive plus à accéder à ma messagerie et je ne me souviens plus de mon mot de passe : je procédait …"
+    },
+    {
+      "title": "Page hotmail sign in [Résolu] - Forum Hotmail / Outlook.com",
+      "url": "https://forums.commentcamarche.net/forum/affich-17218674-page-hotmail-sign-in",
+      "snippet": "Page hotmail sign in Résolu/Fermé alex - Modifié le 1 avr. 2010 à 14:35 xoulius - 6 déc. 2010 à 20:54"
+    },
+    {
+      "title": "Consultar el correo de otras cuentas: HOTMAIL",
+      "url": "https://support.google.com/mail/thread/306454904/consultar-el-correo-de-otras-cuentas-hotmail?hl=es",
+      "snippet": "Nov 7, 2024 · Desde hace varias semanas, la configuración que tenia para consultar el correo de las cuentas de Hotmail en el …"
+    },
+    {
+      "title": "Is there anyone who can talk me through adding a hotmail account to ...",
+      "url": "https://support.google.com/mail/thread/84763202/is-there-anyone-who-can-talk-me-through-adding-a-hotmail-account-to-gmail-app?hl=en",
+      "snippet": "Nov 22, 2020 · I tried to add the amazon app on my android phone. It send a verification code to my hotmail account. Because I have …"
+    },
+    {
+      "title": "If my hotmail account is registerd in my google account...is my hotmail ...",
+      "url": "https://support.google.com/mail/thread/84962252/if-my-hotmail-account-is-registerd-in-my-google-account-is-my-hotmail-now-a-google-account?hl=en",
+      "snippet": "Nov 23, 2020 · As you can see in the attached photo, my hotmail addressed is linked to my gmail address. Does that mean that my …"
+    }
+  ]
+}

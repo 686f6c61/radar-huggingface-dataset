@@ -5,7 +5,7 @@
   "author": "leonsarmiento",
   "url": "https://huggingface.co/leonsarmiento/Qwen3.6-35B-A3B-3bit-XL-mlx",
   "created_at": "2026-09-09T11:30:32.000Z",
-  "updated_at": "2026-09-09T12:01:16.000Z",
+  "updated_at": "2026-09-09T15:17:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
   "trending_score": 0,
   "parameters": 35107181936,
   "parameters_human": "35.11B",
-  "storage_bytes": 17807936713,
+  "storage_bytes": 17808121398,
   "storage_human": "17.8 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [

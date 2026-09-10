@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BTIP-Top20-ReverseKL-gap01-original10240",
+  "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-visionzip-r010-btip-top20-reversekl-gap01-original10240",
+  "author": "enmingzhangzz",
+  "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BTIP-Top20-ReverseKL-gap01-original10240",
+  "created_at": "2026-09-10T00:51:22.000Z",
+  "updated_at": "2026-09-10T00:51:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "opsd",
+    "qwen2.5-vl",
+    "visionzip",
+    "btip",
+    "reverse-kl",
+    "lora",
+    "image-text-to-text",
+    "dataset:OpenMMReasoner/OpenMMReasoner-SFT-874K",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161539072,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "Online-Stopwatch",
+      "url": "https://www.online-stopwatch.com/",
+      "snippet": "Use the Online Stopwatch Full Screen. Go Ad Free! Remove all Ads and make your Apps Bigger and Better!"
+    },
+    {
+      "title": "Online Stopwatch - vClock",
+      "url": "https://vclock.com/stopwatch/",
+      "snippet": "Click the \"Start\" or \"Stop\" buttons to start or stop the stopwatch. Click the \"Lap\" button to add one lap and the current stopwatch value …"
+    },
+    {
+      "title": "Free Online Stopwatch with Start, Pause & Split Features",
+      "url": "https://megacalculate.com/online-stopwatch/",
+      "snippet": "Measure time precisely with our free online stopwatch. Start, pause, reset, and record splits instantly. Perfect for workouts, productivity."
+    },
+    {
+      "title": "Online stopwatch",
+      "url": "https://stopwatch.online-timers.com/online-stopwatch",
+      "snippet": "Stopwatch control use the spacebar to start and stop the stopwatch, the 0 key to start or restart the stopwatch from 0, key 2 to restart …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nkp2mr/f26-dataprivacy-lab1",
+  "slug": "nkp2mr-f26-dataprivacy-lab1",
+  "author": "nkp2mr",
+  "url": "https://huggingface.co/nkp2mr/f26-dataprivacy-lab1",
+  "created_at": "2026-09-09T20:47:50.000Z",
+  "updated_at": "2026-09-10T01:20:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "education",
+    "privacy",
+    "pytorch",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115045281,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "Roblox - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.roblox.client&hl=en_US",
+      "snippet": "Roblox is home to every kind of game, for every kind of player. Compete in high-octane racing games, battle it out in hardcore tactical …"
+    },
+    {
+      "title": "Roblox - YouTube",
+      "url": "https://www.youtube.com/Roblox",
+      "snippet": "What is Roblox? If you’re new to Roblox or looking for a quick beginner’s guide, this video covers everything you need to know to get …"
+    },
+    {
+      "title": "Roblox (@Roblox) / X",
+      "url": "https://x.com/Roblox",
+      "snippet": "The Roblox Innovation Awards are BACK 🏆 Join us September 12 at 7PM PDT as we celebrate the creators, games and innovations …"
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "meshllm/Muse-Glimmer-30B-UD-Q4_K_XL-layers",
+  "slug": "meshllm-muse-glimmer-30b-ud-q4_k_xl-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/Muse-Glimmer-30B-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-09T19:53:00.000Z",
+  "updated_at": "2026-09-09T20:11:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "image-text-to-text",
+    "base_model:unsloth/Muse-Glimmer-30B-GGUF",
+    "base_model:quantized:unsloth/Muse-Glimmer-30B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 483944704,
+  "parameters_human": "483.9M",
+  "storage_bytes": 23885276480,
+  "storage_human": "23.9 GB",
+  "base_model": "unsloth/Muse-Glimmer-30B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Formulaire n°3517-AGR-SD | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/formulaire/3517-agr-sd/tva-regime-simplifie-de-lagriculture",
+      "snippet": "La déclaration n° 3517-AGR-SD doit être envoyée au service des impôts des entreprises (SIE) dont dépend l'entreprise."
+    },
+    {
+      "title": "Formulaire n°3517-S-SD | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/formulaire/3517-s-sd/tva-et-taxes-assimilees-et-regime-simplifie",
+      "snippet": "Le formulaire n° 3517-S-SD est destiné à récapituler les taxes sur le chiffre d'affaires (TVA et taxes assimilées) dues au titre de …"
+    },
+    {
+      "title": "Déclaration annuelle de régularisation de TVA - Régime simplifié (n ...",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/R14665",
+      "snippet": "Formulaire destiné à récapituler les taxes sur le chiffre d'affaires (TVA et taxes assimilées) dues au titre de l'exercice par les …"
+    },
+    {
+      "title": "Déclaration annuelle de régularisation de TVA - Régime simplifié ...",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/R14664",
+      "snippet": "Le formulaire 3517-AGR-SD sert à déclarer les opérations imposables à la TVA d'une année entière. Il doit être envoyé au plus tard …"
+    },
+    {
+      "title": "Formulaire CA12 : télécharger une déclaration de TVA 2026",
+      "url": "https://droit-finances.commentcamarche.com/entreprise/guide-entreprise/4705-formulaire-ca12-telecharger-une-declaration-de-tva/",
+      "snippet": "Jan 12, 2026 · Le formulaire CA12 à remplir pour faire une déclaration de TVA simplifiée peut être téléchargé via le lien ci-dessous. Il …"
+    }
+  ]
+}

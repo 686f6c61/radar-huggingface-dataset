@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "veldierin/Artemis-31B-v1q-GGUF",
+  "slug": "veldierin-artemis-31b-v1q-gguf",
+  "author": "veldierin",
+  "url": "https://huggingface.co/veldierin/Artemis-31B-v1q-GGUF",
+  "created_at": "2026-09-09T20:13:37.000Z",
+  "updated_at": "2026-09-09T21:26:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:BeaverAI/Artemis-31B-v1q-GGUF",
+    "base_model:quantized:BeaverAI/Artemis-31B-v1q-GGUF",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 16736035404,
+  "storage_human": "16.7 GB",
+  "base_model": "google/gemma-4-31B-it, BeaverAI/Artemis-31B-v1q-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Time in Brazil - All Timezones, Live | Time.now",
+      "url": "https://time.now/countries/brazil/",
+      "snippet": "Current time across all of Brazil's time zones. Live clock with seconds for every region, major cities, sunrise/sunset and public …"
+    },
+    {
+      "title": "Time in Brazil now",
+      "url": "https://time.is/Brazil",
+      "snippet": "Exact time now, time zone, time difference, sunrise/sunset time and key facts for Brazil."
+    },
+    {
+      "title": "Time in Brazil - timeanddate.com",
+      "url": "https://www.timeanddate.com/worldclock/brazil",
+      "snippet": "Brazil time zones and time zone map with current time in the largest cities."
+    },
+    {
+      "title": "Current Local Time in São Paulo, São Paulo, Brazil",
+      "url": "https://www.timeanddate.com/worldclock/brazil/sao-paulo",
+      "snippet": "Current local time in Brazil – São Paulo – São Paulo. Get São Paulo's weather and area codes, time zone and DST. Explore São …"
+    },
+    {
+      "title": "Time in São Paulo, Brazil now",
+      "url": "https://time.is/S%c3%a3o_Paulo",
+      "snippet": "21 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for São Paulo, Brazil."
+    }
+  ]
+}

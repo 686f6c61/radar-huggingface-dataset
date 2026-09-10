@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qualcomm/RepViT",
+  "slug": "qualcomm-repvit",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/RepViT",
+  "created_at": "2026-08-25T04:25:14.000Z",
+  "updated_at": "2026-09-10T00:56:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "backbone",
+    "android",
+    "image-classification",
+    "arxiv:2307.09283",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أرض للبيع في شارع عبدالصمد البزار ، حي المصيف ، الرياض ، الرياض",
+      "url": "https://sa.aqar.fm/%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B5%D9%85%D8%AF-%D8%A7%D9%84%D8%A8%D8%B2%D8%A7%D8%B1-%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-3499255",
+      "snippet": "أرض للبيع في شارع عبدالصمد البزار ، حي المصيف ، الرياض ، الرياض مغلق حي بنبان (810)حي العارض (398)حي النرجس (344)حي القيروان (181)حي الملقا (113)حي الياسمين (53) خيارات البحث"
+    },
+    {
+      "title": "أرض للبيع في شارع عبدالصمد البزار ، حي المصيف ، الرياض ، الرياض",
+      "url": "https://sa.aqar.fm/%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B5%D9%85%D8%AF-%D8%A7%D9%84%D8%A8%D8%B2%D8%A7%D8%B1-%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-3371123",
+      "snippet": "أرض للبيع في شارع عبدالصمد البزار ، حي المصيف ، الرياض ، الرياض محذوفة حي بنبان (800)حي العارض (425)حي النرجس (347)حي القيروان (196)حي الملقا (116)حي الياسمين (55) …"
+    },
+    {
+      "title": "العنوان الوطني",
+      "url": "https://www.address.gov.sa/",
+      "snippet": "العنوان الوطني هو نظام عنونة موحّد ومعتمد في المملكة العربية السعودية، يهدف إلى تنظيم العناوين المكانية وتوحيدها، لتمكين الجهات والأفراد من التعامل مع المواقع والعناوين بدقة وموثوقية عالية."
+    },
+    {
+      "title": "البوابة المكانية لمنطقة الرياض",
+      "url": "https://maps.alriyadh.gov.sa/",
+      "snippet": "البوابة المكانية لمنطقة الرياض توفر خدمات البحث والاستعلام عن الخدمات الجيومكانية المقدمة من أمانة منطقة الرياض."
+    },
+    {
+      "title": "أين يقع حي المصيف الرياض وما هي حدوده؟ | مدونة سكن السعودية",
+      "url": "https://sa.sakan.co/blog/%d8%ad%d9%8a-%d8%a7%d9%84%d9%85%d8%b5%d9%8a%d9%81-%d8%a7%d9%84%d8%b1%d9%8a%d8%a7%d8%b6/",
+      "snippet": "Mar 2, 2025 · أين يقع حي المصيف الرياض وما هي حدوده؟ يقع حي المصيف في موقع استراتيجي وسط مجموعة من الطرق التي تجعل من السهل الانتقال منه إلى أحياء ومناطق الرياض المختلفة والعكس."
+    }
+  ]
+}

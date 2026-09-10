@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "honvert/Qwen3.8-27B-DeepResearch",
+  "slug": "honvert-qwen3-8-27b-deepresearch",
+  "author": "honvert",
+  "url": "https://huggingface.co/honvert/Qwen3.8-27B-DeepResearch",
+  "created_at": "2026-09-09T20:39:57.000Z",
+  "updated_at": "2026-09-09T20:57:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "deep-research",
+    "reasoning",
+    "tool-use",
+    "citations",
+    "fact-checking",
+    "science",
+    "chain-of-thought",
+    "qwen3.8",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cavad'or Exclusives - Home",
+      "url": "https://www.cavador.nl/",
+      "snippet": "Cavad'or Exclusives Oosterdorpsstraat 156 3871 AH Hoevelaken Gelderland Telefoon: +31 (0)33 7470108 E-mail: info@cavador.nl …"
+    },
+    {
+      "title": "Cavador: Een Cavalier & Labrador kruising [Foto’s]",
+      "url": "https://hondjesgids.nl/cavador/",
+      "snippet": "Dec 13, 2022 · Vandaag gaan we het hebben over een van mijn favoriete hondenrassen: de Cavador. Deze kruising tussen een …"
+    },
+    {
+      "title": "klantenservice - Cavad'or Exclusives",
+      "url": "https://www.cavador.nl/klantenservice",
+      "snippet": "Heeft u zelf een winkel of restaurant dan kunt u in aanmerking komen voor speciale voorwaarden. Stuurt u in dat geval een e-mail …"
+    },
+    {
+      "title": "Cavador – Size | Appearance | Temperament | Shedding - helloBARK!",
+      "url": "https://hellobark.com/cavador/",
+      "snippet": "Oct 24, 2025 · A Cavador is a cross between a Cavalier King Charles Spaniel and a Labrador Retriever. While this hybrid dog usually …"
+    },
+    {
+      "title": "Cavador Info, Temperament, Care, Training, Puppies Pictures",
+      "url": "https://www.101dogbreeds.com/cavador.asp",
+      "snippet": "Feb 22, 2026 · The Cavador, a small to medium-sized breed of dog known for its alert, cheerful, and responsive nature, is produced …"
+    }
+  ]
+}

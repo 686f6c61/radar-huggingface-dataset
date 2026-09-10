@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "audio-cpp/VibeVoice-ASR-Streaming-7B-GGUF",
+  "slug": "audio-cpp-vibevoice-asr-streaming-7b-gguf",
+  "author": "audio-cpp",
+  "url": "https://huggingface.co/audio-cpp/VibeVoice-ASR-Streaming-7B-GGUF",
+  "created_at": "2026-09-09T23:55:06.000Z",
+  "updated_at": "2026-09-09T23:59:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "audio.cpp",
+    "asr",
+    "streaming",
+    "speaker-attributed-transcription",
+    "automatic-speech-recognition",
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it",
+    "base_model:microsoft/VibeVoice-ASR-Streaming-7B",
+    "base_model:quantized:microsoft/VibeVoice-ASR-Streaming-7B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33077995200,
+  "storage_human": "33.1 GB",
+  "base_model": "microsoft/VibeVoice-ASR-Streaming-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audiofanzine : Home Studio, MAO, Guitares, Basses, Sono et DJ",
+      "url": "https://fr.audiofanzine.com/",
+      "snippet": "Audiofanzine est une plateforme en ligne dédiée à la musique et à l’audio, à la fois média spécialisé, site de petites annonces, base …"
+    },
+    {
+      "title": "audio.com - a better way to upload and share audio online",
+      "url": "https://audio.com/",
+      "snippet": "audio.com is a free audio-sharing platform designed to empower audio creatives and musicians"
+    },
+    {
+      "title": "Audiomack - Music platform empowering artists & fans | Audiomack",
+      "url": "https://audiomack.com/",
+      "snippet": "Audiomack is an on-demand music streaming and audio discovery platform that allows artists and creators to upload limitless music …"
+    },
+    {
+      "title": "AudioEdit - Free Online Audio Editor | AudioEdit",
+      "url": "https://audioedit.io/",
+      "snippet": "No downloads needed. Edit audio right in your browser. Trim, denoise, convert formats, record — all processing done locally to …"
+    },
+    {
+      "title": "Son-Vidéo.com, leader français en hi-fi et home-cinéma",
+      "url": "https://www.son-video.com/",
+      "snippet": "Son-Vidéo.com est le leader français en hi-fi et home-cinéma. Conseils, guides, avis : pour acheter facilement votre équipement en …"
+    }
+  ]
+}

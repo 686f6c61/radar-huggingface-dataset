@@ -5,7 +5,7 @@
   "author": "DavidAU",
   "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-stage2b-rplus2",
   "created_at": "2026-08-31T03:48:46.000Z",
-  "updated_at": "2026-09-09T02:21:41.000Z",
+  "updated_at": "2026-09-10T02:50:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,7 +36,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 27,
+  "likes": 28,
   "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 27781427952,

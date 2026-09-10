@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "wgaca/Spomin-Qwen2.5-3B-Summary-v2-GGUF",
+  "slug": "wgaca-spomin-qwen2-5-3b-summary-v2-gguf",
+  "author": "wgaca",
+  "url": "https://huggingface.co/wgaca/Spomin-Qwen2.5-3B-Summary-v2-GGUF",
+  "created_at": "2026-09-09T23:39:01.000Z",
+  "updated_at": "2026-09-10T00:01:02.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "spomin",
+    "summarization",
+    "structured-output",
+    "memory",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 3285475680,
+  "storage_human": "3.3 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OP.GG电竞 - 英雄联盟",
+      "url": "https://esports.op.gg/?hl=zh_CN",
+      "snippet": "Aug 17, 2024 · 在这里查看全球英雄联盟比赛日程和结果、职业选手出装、团队排名、联赛排名，以及由OP分数决定的MVP！"
+    },
+    {
+      "title": "TFT 賽季18 統計與梯隊榜 | OP.GG",
+      "url": "https://op.gg/zh-tw/tft",
+      "snippet": "在OP.GG查看TFT賽季18統計、英雄梯隊榜和羈絆攻略。探索當前版本強勢玩法，提升你的遊戲水準。"
+    },
+    {
+      "title": "Caitlyn Build - Highest Win Rate Builds, Runes, and Items - OP.GG",
+      "url": "https://www.op.gg/lol/champions/caitlyn/build",
+      "snippet": "Caitlyn Build with the highest win rate. Runes, items, and skill build in patch 16.17. Caitlyn build recommendations and guides."
+    },
+    {
+      "title": "Company_en – OP.GG",
+      "url": "https://log.op.gg/company_en/",
+      "snippet": "Introduction OP.GG is a Global game service platform that provides its users worldwidethe best game play experience.Our goal is to …"
+    },
+    {
+      "title": "英雄联盟 – OP.GG 帮助中心",
+      "url": "https://help.op.gg/hc/zh-cn/sections/42210311667737-%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F",
+      "snippet": "OP.GG Company About OP.GG Company Blog News Logo history Products League of Legends Teamfight Tactics Valorant …"
+    }
+  ]
+}

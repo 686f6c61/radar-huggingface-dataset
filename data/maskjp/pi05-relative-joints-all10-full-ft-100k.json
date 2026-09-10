@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maskjp/pi05-relative-joints-all10-full-ft-100k",
+  "slug": "maskjp-pi05-relative-joints-all10-full-ft-100k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/pi05-relative-joints-all10-full-ft-100k",
+  "created_at": "2026-09-09T22:44:49.000Z",
+  "updated_at": "2026-09-09T22:45:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "pi0.5",
+    "relative-actions",
+    "joints",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9391289206,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Das Erste LIVE - Livestream – Erstes Deutsches ... - ARD",
+      "url": "https://live.daserste.de/",
+      "snippet": "Was läuft jetzt? – Hier sehen Sie den Live-Stream des Ersten Deutschen Fernsehens (ARD). Unter www.daserste.de/live können Sie …"
+    },
+    {
+      "title": "Das Erste live - jetzt in der ARD Mediathek anschauen!",
+      "url": "https://www.ardmediathek.de/daserste/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL2xpdmUvY2xpcC9hYmNhMDdhMy0zNDc2LTQ4NTEtYjE2Mi1mZGU4ZjY0NmQ0YzQ",
+      "snippet": "Das Erste live - jetzt in der ARD Mediathek anschauen! Das Video kann leider nicht abgespielt werden. Beim Abruf aus dem Ausland …"
+    },
+    {
+      "title": "ARD.de – TV, Radio, Streams, News, Sport und alles zur ARD",
+      "url": "https://www.ard.de/",
+      "snippet": "Die ganze ARD: Fernsehen, Livestreams, Radio, Podcasts, Nachrichten, Sport und Kinderkanal. Zudem Infos über den …"
+    },
+    {
+      "title": "ARD Mediathek - Sendung verpasst - Programm heute",
+      "url": "https://www.ardmediathek.de/programm/heute",
+      "snippet": "Nach der Wahl: Wie verändert Sachsen-Anhalt Deutschland? Heimat - Was ist das? Im Osten gescheitert? Nach dem Beben – Was …"
+    },
+    {
+      "title": "Die nächsten Sportschau-Livestreams | sportschau.de",
+      "url": "https://www.sportschau.de/streams",
+      "snippet": "Nach teilweise ruppigen Bedingungen erreichen die ersten Boote das Ziel in Lorient in Frankreich. Der Sportclub überträgt die …"
+    }
+  ]
+}

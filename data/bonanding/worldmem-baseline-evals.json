@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "BonanDing/worldmem-baseline-evals",
+  "slug": "bonanding-worldmem-baseline-evals",
+  "author": "BonanDing",
+  "url": "https://huggingface.co/BonanDing/worldmem-baseline-evals",
+  "created_at": "2026-09-09T20:13:28.000Z",
+  "updated_at": "2026-09-10T02:09:22.000Z",
+  "license": "mixed-upstream-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "evaluation",
+    "minecraft",
+    "realestate10k",
+    "world-model",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grundschule - Stadt Weißenberg",
+      "url": "https://www.stadt-weissenberg.de/bildung-und-betreuung/grundschule",
+      "snippet": "In der Grundschule in Weißenberg wird eine digitale Vernetzung und ein drahtloser Netzzugang in 9 Räumen des Schulgebäudes …"
+    },
+    {
+      "title": "Willkommen - Freie Schule Weißenberg",
+      "url": "https://www.freie-schule-weissenberg.de/",
+      "snippet": "Ziele/Ergebnisse: Nach dem Bau des neuen Schulgebäudes der Freien Schule Weißenberg konnten im 2. BA die Außenanlagen …"
+    },
+    {
+      "title": "Grundschule Weißenberg",
+      "url": "https://moodle.gs-weissenberg.de/",
+      "snippet": "Hier klicken zu den Videotutorials und es gibt Antworten auf oft gestellte Fragen! Passwort vergessen? Schulmanager kontaktieren …"
+    },
+    {
+      "title": "Grundschule – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Grundschule",
+      "snippet": "Grundschule bezeichnet in der Bundesrepublik Deutschland die Schulen, die Kinder der Klassen 1 bis 4 (nur in den Ländern Berlin …"
+    },
+    {
+      "title": "Startseite | fswb",
+      "url": "https://m.sachsen.schule/fswb/",
+      "snippet": "Freie Schule Weißenberg. Website-Support. Sie sind nicht angemeldet. (Anmelden) Unsere Datenlöschfristen. Laden Sie die mobile …"
+    }
+  ]
+}

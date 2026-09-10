@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Qwen2.5-7B-Instruct-SF-matched-control-sonnet-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-qwen2-5-7b-instruct-sf-matched-control-sonnet-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SF-matched-control-sonnet-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T00:16:25.000Z",
+  "updated_at": "2026-09-10T00:17:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657404529,
+  "storage_human": "657 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "会社概要｜富士林業株式会社",
+      "url": "https://www.kensetumap.com/company/542696/profile.php",
+      "snippet": "Sep 23, 2001 · 一戸建ての耐震補強工事にかかる平均費用、具体的な施工例などを紹介します。 お問い合わせはコチラへ！ ご不明 …"
+    },
+    {
+      "title": "会社概要｜富士林業株式会社",
+      "url": "https://www.kensetumap.com/company/357279/profile.php",
+      "snippet": "居住性、デザイン性、耐震性、耐火性、耐久性、断熱・気密性などのバランスを考慮しながら、良い家づくりをすることが求められ …"
+    },
+    {
+      "title": "富士林業株式会社（大阪府）の会社概要・役員 | Compalyze",
+      "url": "https://compalyze.co.jp/company/1120001156613",
+      "snippet": "富士林業株式会社は大阪市浪速区を拠点とする不動産開発・建設業を展開する企業である。 同社は地域密着型の事業モデルを採用 …"
+    },
+    {
+      "title": "富士工務店 – 北摂の新築一戸建て・分譲一戸建てをご紹介 ...",
+      "url": "https://fujikoumuten.co.jp/",
+      "snippet": "北摂エリア、大阪市内エリア、守口、門真、寝屋川エリアの一戸建て情報が豊富です。 北摂で不動産をお探しなら土地の仕入から …"
+    },
+    {
+      "title": "富士林業株式会社 (大阪府大阪市浪速区)の企業詳細 - 全国法人 ...",
+      "url": "https://houjin.jp/c/1120001156613",
+      "snippet": "1984年03月に設立され、平山実が社長/代表を務める法人番号1120001156613の富士林業株式会社の住所/地図、業種、売上/利益/資 …"
+    }
+  ]
+}

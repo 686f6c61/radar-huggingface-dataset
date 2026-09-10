@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/forgetting_gate_2_4_256_babylm_10m_seed44",
+  "slug": "lanni-ni-forgetting_gate_2_4_256_babylm_10m_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/forgetting_gate_2_4_256_babylm_10m_seed44",
+  "created_at": "2026-09-09T22:37:56.000Z",
+  "updated_at": "2026-09-09T22:38:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "forgetting_transformer",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to open the Windows Control Panel - Computer Hope",
+      "url": "https://www.computerhope.com/issues/control-panel.htm",
+      "snippet": "Feb 22, 2026 · Discover how to access the Control Panel on various Windows versions. Follow detailed instructions for Windows 11, …"
+    },
+    {
+      "title": "Open Control Panel in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/2691-open-control-panel-windows-10-a.html",
+      "snippet": "Mar 26, 2026 · You can use Control Panel to change settings for Windows. These settings control nearly everything about how …"
+    },
+    {
+      "title": "Open Control Panel in Windows 11",
+      "url": "https://www.elevenforum.com/t/open-control-panel-in-windows-11.481/",
+      "snippet": "Jul 9, 2021 · This tutorial will show you how to open the Control Panel and change to Category, Large icons, or Small icons view in …"
+    },
+    {
+      "title": "How to Open the Control Panel on Windows 10",
+      "url": "https://www.howtogeek.com/436985/how-to-open-the-control-panel-on-windows-10/",
+      "snippet": "Sep 2, 2023 · Still, launching the Control Panel on Windows 10 is very easy: click the Start button or press the Windows key, type …"
+    },
+    {
+      "title": "Control Panel (Windows) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Control_Panel_(Windows)",
+      "snippet": "Control Panel is a component of Microsoft Windows that provides the ability to view and change system settings. It consists of a set …"
+    }
+  ]
+}

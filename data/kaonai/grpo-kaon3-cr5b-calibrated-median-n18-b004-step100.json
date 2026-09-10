@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kaonai/grpo-kaon3-cr5b-calibrated-median-n18-b004-step100",
+  "slug": "kaonai-grpo-kaon3-cr5b-calibrated-median-n18-b004-step100",
+  "author": "kaonai",
+  "url": "https://huggingface.co/kaonai/grpo-kaon3-cr5b-calibrated-median-n18-b004-step100",
+  "created_at": "2026-09-09T22:51:08.000Z",
+  "updated_at": "2026-09-09T22:52:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "grpo",
+    "consensus-reward",
+    "peft-merged",
+    "text-generation",
+    "conversational",
+    "base_model:kaonai/kaon-c-gemma4-26b-v10.1",
+    "base_model:finetune:kaonai/kaon-c-gemma4-26b-v10.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178190,
+  "storage_human": "51.6 GB",
+  "base_model": "kaonai/kaon-c-gemma4-26b-v10.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NBC News - Breaking Headlines and Video Reports on World, U.S. and ...",
+      "url": "https://www.nbcnews.com/",
+      "snippet": "Go to NBCNews.com for breaking news, videos, and the latest top stories in world news, business, politics, health and pop culture."
+    },
+    {
+      "title": "Fox News - Breaking News Updates | Latest News Headlines | Photos ...",
+      "url": "https://www.foxnews.com/?msockid=1c98cc68e1ab65cc3ac5dba7e03c646b",
+      "snippet": "Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports."
+    },
+    {
+      "title": "Breaking News, Latest News and Videos | CNN",
+      "url": "https://www.cnn.com/",
+      "snippet": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com."
+    },
+    {
+      "title": "CBS News | Breaking news, top stories & today's latest headlines",
+      "url": "https://www.cbsnews.com/",
+      "snippet": "CBS News offers breaking news coverage of today's top headlines. Stay informed on the biggest new stories with our balanced, …"
+    },
+    {
+      "title": "Google News",
+      "url": "https://news.google.com/",
+      "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+    }
+  ]
+}

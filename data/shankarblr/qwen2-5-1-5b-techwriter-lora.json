@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Shankarblr/Qwen2.5-1.5B-TechWriter-LoRA",
+  "slug": "shankarblr-qwen2-5-1-5b-techwriter-lora",
+  "author": "Shankarblr",
+  "url": "https://huggingface.co/Shankarblr/Qwen2.5-1.5B-TechWriter-LoRA",
+  "created_at": "2026-09-09T22:29:56.000Z",
+  "updated_at": "2026-09-09T22:32:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "qwen2.5",
+    "adapter",
+    "semiconductor",
+    "technical-writing",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Today's Wordle Hint & Answer — September 9 (#1908)",
+      "url": "https://www.wordhint.net/wordle/hint/today/",
+      "snippet": "23 hours ago · What is the Wordle answer for #1908? The answer to Wordle #1908 (Wednesday, September 9, 2026) is BURST."
+    },
+    {
+      "title": "Wordle Answer Today: Today’s Solution and Yesterday’s Answer",
+      "url": "https://stuckonwordle.com/latest-answer.html",
+      "snippet": "23 hours ago · Check today's Wordle answer, puzzle number, and yesterday's solution. Reveal the spoiler when you are ready, or …"
+    },
+    {
+      "title": "Wordle Answer Today (September 10, 2026) - DRYLY",
+      "url": "https://wordsolverx.com/wordle-answer-today",
+      "snippet": "Sep 10, 2026 · Source: NYT Wordle — the official daily word puzzle from The New York Times. The Wordle answer today is DRYLY …"
+    },
+    {
+      "title": "Today's Wordle Answer - NYT",
+      "url": "https://wordle.uk/answer/",
+      "snippet": "23 hours ago · Today's Wordle answer for September 9, 2026 (#1908), with its meaning and difficulty, plus spoiler-free hints and past …"
+    },
+    {
+      "title": "Today's Wordle Answer Aug 31 #1899- NYT Wordle Hints & Updates",
+      "url": "https://word.tips/todays-wordle-answer/",
+      "snippet": "23 hours ago · Enter your letters into our Wordle answer finder to unscramble your letters and find possible answers or find the best …"
+    }
+  ]
+}

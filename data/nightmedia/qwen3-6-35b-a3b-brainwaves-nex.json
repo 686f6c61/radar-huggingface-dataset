@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex",
+  "slug": "nightmedia-qwen3-6-35b-a3b-brainwaves-nex",
+  "author": "nightmedia",
+  "url": "https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex",
+  "created_at": "2026-09-09T23:58:07.000Z",
+  "updated_at": "2026-09-10T02:12:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "unsloth",
+    "qwen3_5",
+    "qwen3_6",
+    "qwen",
+    "qwen3.5",
+    "qwen3.6",
+    "distillation",
+    "reasoning",
+    "chain-of-thought",
+    "long-cot",
+    "sft",
+    "lora",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "multilingual",
+    "math",
+    "stem",
+    "coding",
+    "research",
+    "experimental",
+    "merge",
+    "fable",
+    "mergekit",
+    "Deckard(qx)",
+    "mxfp8",
+    "mxfp4",
+    "mlx",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "ja",
+    "es",
+    "base_model:AllSpark-Research/Iris-mini",
+    "base_model:adapter:AllSpark-Research/Iris-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "AllSpark-Research/Iris-mini, thomsonreuters/Thomson-1.0-Small, nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1, nightmedia/Qwen3.6-35B-A3B-FSM, Qwen/Qwen-AgentWorld-35B-A3B, nex-agi/Nex-N2.5-mini, Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Just A Moment... - PinayFlix",
+      "url": "https://pinayflixx.com/megaleaks2/?view=chiedimi-di-sara%2F2%2F",
+      "snippet": "Just a moment... Best Celebrity Leaks and Streamer Leaks Mega collection of sexy celebrity leaks and famous influencer leaks …"
+    },
+    {
+      "title": "Chiedimi di sara Vídeos de Sexo: Porno Amador Gratis | Pornozinho",
+      "url": "https://www.pornozinho.xxx/search/Chiedimi-di-sara/",
+      "snippet": "Chiedimi di sara Assista vídeos porno gratis. Os melhores vídeos de sexo amador com novinhas, maduras, mulheres, coroas …"
+    },
+    {
+      "title": "xvdeos.com",
+      "url": "http://xvdeos.com/",
+      "snippet": ""
+    },
+    {
+      "title": "Breaking Celebrity News, Entertainment News and Celeb Gossip - E!",
+      "url": "https://www.eonline.com/news",
+      "snippet": "Jun 12, 2019 · Get the latest news on celebrity scandals, engagements, and divorces! Check out our breaking stories on Hollywood's …"
+    },
+    {
+      "title": "Iconosquare",
+      "url": "https://app.iconosquare.com/",
+      "snippet": "Grow your Instagram, Facebook, X, LinkedIn and TikTok presence with exclusive insights and best-in-class management tools for …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step9000",
+  "slug": "fm-dev-pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step9000",
+  "author": "fm-dev",
+  "url": "https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step9000",
+  "created_at": "2026-09-10T00:24:44.000Z",
+  "updated_at": "2026-09-10T01:04:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "franka",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12845102608,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "如何评价 DeepSeek 涨价后，OpenCode Go 套餐的 Flash 模型调用量削 …",
+      "url": "https://www.zhihu.com/question/2072481373085028433",
+      "snippet": "Aug 16, 2026 · 言简意赅，畜X一个，DS 这么快涨价有一半原因就是因为他家拿着优惠流量泼水引流，O 的称号以后由opencode go接 …"
+    },
+    {
+      "title": "Booking.com - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/633-booking-com",
+      "snippet": "Jul 20, 2009 · Booking ne fait que retransmettre les informations de réservation,et coordonnées bancaires du client à l'hotelier pas …"
+    }
+  ]
+}

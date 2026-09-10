@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bhatr-eyansh/few-shot-multimodal-baseline34",
+  "slug": "bhatr-eyansh-few-shot-multimodal-baseline34",
+  "author": "bhatr-eyansh",
+  "url": "https://huggingface.co/bhatr-eyansh/few-shot-multimodal-baseline34",
+  "created_at": "2026-09-09T23:37:36.000Z",
+  "updated_at": "2026-09-09T23:37:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harry Potter ve Ölüm Yadigarları: Bölüm 1 - Sinemalar - Kanal D",
+      "url": "https://www.kanald.com.tr/sinemalar/harry-potter-ve-olum-yadigarlari-bolum-1",
+      "snippet": "J.K. Rowling yaratmış olduğu Harry Potter karakterinin 7. sinema filmi olan \"Harry Potter ve Ölüm Yadigarları: Bölüm 1\" Kanal D'de! …"
+    },
+    {
+      "title": "Harry Potter ve Ölüm Yadigârları: Bölüm 1 online yayında",
+      "url": "https://www.justwatch.com/tr/film/harry-potter-ve-olum-yadigarlari-bolum-1",
+      "snippet": "\"Harry Potter ve Ölüm Yadigârları: Bölüm 1\" Netflix ve diğer platformlarda nasıl izlenir? Ücretsiz seçenekler dahil."
+    },
+    {
+      "title": "Harry Potter ve Ölüm Yadigarları: Bölüm 1 izlemenizi bekliyor | Netflix",
+      "url": "https://www.netflix.com/tr/title/70115887",
+      "snippet": "Harry Potter ve Ölüm Yadigarları: Bölüm 1 izlemenizi bekliyor | Netflix. Harry Potter serisinin iki bölüm hâlinde çekilen son filminin …"
+    },
+    {
+      "title": "Harry Potter ve Ölüm Yadigarları: Bölüm 1 - Sinemalar.com",
+      "url": "https://www.sinemalar.com/film/1977/harry-potter-ve-olum-yadigarlari-bolum-1",
+      "snippet": "Aug 18, 2017 · Harry Potter ve Ölüm Yadigarları: Bölüm 1 filminin özeti, yorumları, oyuncuları ve seansları hakkında bilgilere ulaşmak, …"
+    },
+    {
+      "title": "Harry Potter ve Ölüm Yadigarları: Bölüm 1 - Beyazperde",
+      "url": "https://www.beyazperde.com/filmler/film-126693/",
+      "snippet": "Nov 17, 2010 · Harry'nin tek umudu Voldemort onu bulmadan önce Hortkuluklar'ı bulmaktır. Ama, ipuçlarını araştırdıkça neredeyse …"
+    }
+  ]
+}

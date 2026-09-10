@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ilyass200404/q-Taxi-v3",
+  "slug": "ilyass200404-q-taxi-v3",
+  "author": "ilyass200404",
+  "url": "https://huggingface.co/ilyass200404/q-Taxi-v3",
+  "created_at": "2026-09-09T20:03:06.000Z",
+  "updated_at": "2026-09-09T20:03:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151877,
+  "storage_human": "151877 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saudia | Book flights | Hotels | Holidays",
+      "url": "https://www.saudia.com/",
+      "snippet": "Exceptional experiences with Saudia Explore the world, earn rewards and live the best adventures with Saudia."
+    },
+    {
+      "title": "SAUDIA | Book flights",
+      "url": "https://www.saudia.com/en-sa/flight-deals",
+      "snippet": "Explore the world with SAUDIA. Discover comfortable flights, genuine service, and a touch of Saudi warmth. Your journey begins here."
+    },
+    {
+      "title": "booking-uat.dcloud.saudia.com",
+      "url": "https://booking-uat.dcloud.saudia.com/en-SA/book-and-manage/manage/manage-booking",
+      "snippet": ""
+    },
+    {
+      "title": "careers.saudia.com",
+      "url": "https://careers.saudia.com/go/Saudia-Airlines/7751923/",
+      "snippet": "2 days ago · English (United Kingdom) English (United States) Candidate Login Saudia Airlines Search by Keyword Search by …"
+    },
+    {
+      "title": "Saudia Web Portal",
+      "url": "https://einvoice.saudia.com/",
+      "snippet": "Search for e-Invoice using your e-Ticket number and name on it"
+    }
+  ]
+}

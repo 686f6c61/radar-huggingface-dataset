@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mattewg/pi05-xarm7-shaver-stage0",
+  "slug": "mattewg-pi05-xarm7-shaver-stage0",
+  "author": "mattewg",
+  "url": "https://huggingface.co/mattewg/pi05-xarm7-shaver-stage0",
+  "created_at": "2026-09-09T20:08:20.000Z",
+  "updated_at": "2026-09-09T20:09:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi0",
+    "openpi",
+    "xarm7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440318396,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 NBA Draft Results: Picks 1-60 - NBA.com",
+      "url": "https://www.nba.com/news/2026-nba-draft-order",
+      "snippet": "Jul 10, 2026 · 2026 NBA Draft Results: Picks 1-60 Recap every pick and trade from the 2026 NBA Draft with Washington selecting AJ …"
+    },
+    {
+      "title": "2026 NBA Draft",
+      "url": "https://www.nba.com/draft/2026",
+      "snippet": "2026 NBA Draft 2026 NBA Draft Results: Picks 1-60 Recap every pick and trade from the 2026 NBA Draft with Washington selecting …"
+    },
+    {
+      "title": "Recap: Picks, reactions and inside looks from the 2026 NBA Draft",
+      "url": "https://www.nba.com/news/live-2026-nba-draft",
+      "snippet": "Jun 23, 2026 · Follow along with the latest updates, picks and reactions from the 2026 NBA Draft with the NBA.com live blog."
+    },
+    {
+      "title": "2024 NBA Draft Results: Picks 1-58 - NBA.com",
+      "url": "https://www.nba.com/news/2024-nba-draft-order",
+      "snippet": "Oct 10, 2024 · 2024 NBA Draft 2024 NBA Draft Results: Picks 1-58 Recap every pick and trade from the 1st and 2nd rounds of the …"
+    },
+    {
+      "title": "2025 NBA DRAFT",
+      "url": "https://www.nba.com/draft/2025",
+      "snippet": "The official site of the 2025 NBA Draft to be held on June 25-26 in Brooklyn, NY. Prospect profiles, mock drafts, team needs, features …"
+    }
+  ]
+}

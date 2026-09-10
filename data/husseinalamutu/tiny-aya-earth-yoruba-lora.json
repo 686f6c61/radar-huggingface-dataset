@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "HusseinAlamutu/tiny-aya-earth-yoruba-lora",
+  "slug": "husseinalamutu-tiny-aya-earth-yoruba-lora",
+  "author": "HusseinAlamutu",
+  "url": "https://huggingface.co/HusseinAlamutu/tiny-aya-earth-yoruba-lora",
+  "created_at": "2026-09-09T22:51:06.000Z",
+  "updated_at": "2026-09-09T23:08:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "yo"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sovereign-ai",
+    "yoruba",
+    "lora",
+    "tiny-aya",
+    "kubernetes",
+    "text-generation",
+    "conversational",
+    "yo",
+    "dataset:masakhane/african-ultrachat",
+    "base_model:CohereLabs/tiny-aya-earth",
+    "base_model:adapter:CohereLabs/tiny-aya-earth",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 387381684,
+  "storage_human": "387 MB",
+  "base_model": "CohereLabs/tiny-aya-earth",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Επιδιόρθωση της Εξερεύνησης αρχείων, αν δεν ανοίγει ή δεν ξεκινά",
+      "url": "https://support.microsoft.com/el-gr/windows/experience/fileexplorer/fix-file-explorer-if-it-won-t-open-or-start",
+      "snippet": "Αυτό το άρθρο περιγράφει απλά βήματα αντιμετώπισης προβλημάτων —όπως ο έλεγχος για ενημερώσεις, η επανεκκίνηση της …"
+    },
+    {
+      "title": "Εξερεύνηση αρχείων στα Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/el-gr/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Βρείτε και ανοίξτε Εξερεύνηση αρχείων στα Windows και προσαρμόστε τη Γρήγορη πρόσβαση, καρφιτσώνοντας και καταργώντας …"
+    },
+    {
+      "title": "12 τρόποι για να ανοίξετε την Εξερεύνηση αρχείων στα Windows 10",
+      "url": "https://wukihow.com/el/693474/12-%CF%84%CF%81%CF%8C%CF%80%CE%BF%CE%B9-%CE%B3%CE%B9%CE%B1-%CE%BD%CE%B1-%CE%B1%CE%BD%CE%BF%CE%AF%CE%BE%CE%B5%CF%84%CE%B5-%CF%84%CE%B7%CE%BD-%CE%B5%CE%BE%CE%B5%CF%81%CE%B5%CF%8D%CE%BD%CE%B7%CF%83%CE%B7-%CE%B1%CF%81%CF%87%CE%B5%CE%AF%CF%89%CE%BD-%CF%83%CF%84%CE%B1-windows-10.html",
+      "snippet": "Είτε το ποντίκι σας είναι σπασμένο είτε προτιμάτε απλώς να χρησιμοποιείτε τη γραμμή εντολών, υπάρχουν πολλοί τρόποι με τους …"
+    },
+    {
+      "title": "Πώς να ανοίξετε την Εξερεύνηση αρχείων στα Windows 11 και Windows 10",
+      "url": "https://el.101-help.com/pos-na-anoixete-ten-exereunese-arkheion-sta-windows-11-10-e346390f60/",
+      "snippet": "Η Εξερεύνηση Αρχείων(File Explorer) είναι η ενσωματωμένη εφαρμογή των Windows για τη διαχείριση αρχείων και φακέλων. …"
+    },
+    {
+      "title": "Επισκευή Εξερεύνησης Αρχείων στα Windows 10: Γρήγορες και …",
+      "url": "https://www.pchardwarepro.com/el/%CE%95%CF%80%CE%B9%CF%83%CE%BA%CE%B5%CF%85%CE%AE-%CE%95%CE%BE%CE%B5%CF%81%CE%B5%CF%8D%CE%BD%CE%B7%CF%83%CE%B7%CF%82-%CE%91%CF%81%CF%87%CE%B5%CE%AF%CF%89%CE%BD-%CF%84%CF%89%CE%BD-Windows-10%3A-%CE%93%CF%81%CE%AE%CE%B3%CE%BF%CF%81%CE%B5%CF%82-%CE%BA%CE%B1%CE%B9-%CE%B5%CF%8D%CE%BA%CE%BF%CE%BB%CE%B5%CF%82-%CE%BB%CF%8D%CF%83%CE%B5%CE%B9%CF%82/",
+      "snippet": "Σε αυτό το άρθρο, θα παρουσιάσουμε μερικές γρήγορες και εύκολες λύσεις για την επιδιόρθωση της Εξερεύνησης Αρχείων των …"
+    }
+  ]
+}

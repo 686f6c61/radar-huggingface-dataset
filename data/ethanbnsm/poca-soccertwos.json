@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ethanbnsm/poca-SoccerTwos",
+  "slug": "ethanbnsm-poca-soccertwos",
+  "author": "ethanbnsm",
+  "url": "https://huggingface.co/ethanbnsm/poca-SoccerTwos",
+  "created_at": "2026-09-09T22:26:58.000Z",
+  "updated_at": "2026-09-09T22:27:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179979487,
+  "storage_human": "180 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "广东瑞庆时代新能源科技有限公司2024届校园招聘 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/667900486",
+      "snippet": "来源：海投网 广东瑞庆时代新能源科技有限公司2024届校园招聘简章 公司简介： 广东瑞庆时代新能源科技有限公司（以下简称“瑞庆 …"
+    },
+    {
+      "title": "一期投资120亿！宁德时代肇庆基地动力电池工厂正式投产 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/523430086",
+      "snippet": "据悉，该项目一期总投资120亿元，规划建设动力及储能电池生产线。 图片来源：宁德时代 据介绍，宁德时代肇庆项目于2021年2月签 …"
+    },
+    {
+      "title": "宁德时代首个储能电池为主的零碳工厂诞生，给公司发展带来哪些帮助？ - 知乎",
+      "url": "https://www.zhihu.com/question/617924063",
+      "snippet": "Aug 18, 2023 · 近日，国际公认的测试、检验和认证机构SGS为宁德时代全资子公司——广东瑞庆时代新能源科技有限公司（以下简 …"
+    },
+    {
+      "title": "广东瑞庆时代新能源科技有限公司_百度百科",
+      "url": "https://baike.baidu.com/item/%E5%B9%BF%E4%B8%9C%E7%91%9E%E5%BA%86%E6%97%B6%E4%BB%A3%E6%96%B0%E8%83%BD%E6%BA%90%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/62927295",
+      "snippet": "广东瑞庆时代新能源科技有限公司成立于2021年2月8日，法定代表人为丁爱军，注册地位于肇庆市高新技术产业开发区时代大街1号， …"
+    },
+    {
+      "title": "宁德时代百亿投资项目投产！肇庆迎千亿级新能源汽车产业集群 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/522546554",
+      "snippet": "5月30日，肇庆市举行广东瑞庆时代新能源科技有限公司投产仪式和小鹏智能汽车配套零部件产业园奠基仪式。 广东省委常委、省政府 …"
+    }
+  ]
+}

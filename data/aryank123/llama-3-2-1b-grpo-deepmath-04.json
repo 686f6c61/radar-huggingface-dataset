@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AryanK123/Llama-3.2-1B-GRPO-DeepMath-04",
+  "slug": "aryank123-llama-3-2-1b-grpo-deepmath-04",
+  "author": "AryanK123",
+  "url": "https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-04",
+  "created_at": "2026-09-09T16:03:22.000Z",
+  "updated_at": "2026-09-09T19:03:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04",
+    "base_model:finetune:AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69530966,
+  "storage_human": "70 MB",
+  "base_model": "AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qnatal turnaround time - August 2024 Babies - What to Expect",
+      "url": "https://community.whattoexpect.com/forums/august-2024-babies/topic/qnatal-turnaround-time-159255408.html",
+      "snippet": "Feb 15, 2024 · I got my labs drawn in my drs office and they sent it to quest labs, they said 2 week turnaround time, but quest says 5 …"
+    },
+    {
+      "title": "April 2026 Babies | Forums | What to Expect",
+      "url": "https://community.whattoexpect.com/forums/april-2026-babies.html",
+      "snippet": "1 day ago · Welcome to the April Babies group. Now's the time to start solids! Introduce 1 to 2 tablespoons to 3 to 9 tablespoons of …"
+    },
+    {
+      "title": "Unity NIPT timeline - November 2026 Babies - What to Expect",
+      "url": "https://community.whattoexpect.com/forums/november-2026-babies/topic/unity-nipt-timeline-175291305.html",
+      "snippet": "Apr 11, 2026 · Thanks for sharing!! Just had my blood drawn for the unity test today 04/14! Praying my results are in before 04/23!"
+    },
+    {
+      "title": "Loss of all symptoms at 8 weeks - What to Expect",
+      "url": "https://community.whattoexpect.com/forums/1st-trimester-experiences/topic/loss-of-all-symptoms-at-8-weeks-116085591.html",
+      "snippet": "Jun 4, 2021 · I’m 10+ 1 today. My symptoms were boob aches, bloating and some food aversions which were active week 6-8. My 7 …"
+    },
+    {
+      "title": "Labcorp NIPT “upcoming” test results question",
+      "url": "https://community.whattoexpect.com/forums/november-2024-babies/topic/labcorp-nipt-upcoming-test-results-question-161558344.html",
+      "snippet": "May 5, 2024 · Saw this one mine as well and my doctor called me later in the day (last Thursday) with my results! They didn’t show …"
+    }
+  ]
+}

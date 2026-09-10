@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ram20307/qwen3-0.6b-gsm8k-arm-c-seed42",
+  "slug": "ram20307-qwen3-0-6b-gsm8k-arm-c-seed42",
+  "author": "Ram20307",
+  "url": "https://huggingface.co/Ram20307/qwen3-0.6b-gsm8k-arm-c-seed42",
+  "created_at": "2026-09-09T19:45:19.000Z",
+  "updated_at": "2026-09-09T19:56:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "gsm8k",
+    "reasoning",
+    "slm-reasoning-research",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657618,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rust语言一般适合用来干啥？ - 知乎",
+      "url": "https://www.zhihu.com/question/497319903",
+      "snippet": "Rust目前已经成为全世界区块链平台的首选开发语言 Tidb，国内最有名的开源分布式数据库 尤其值得一提的是，AWS实际上在押 …"
+    },
+    {
+      "title": "【2024 RUST攻略】 ☢模組服基本指令 ☢實用影片 ☢練習伺服器推薦 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=25095&snA=2210",
+      "snippet": "提供2024年RUST遊戲的模組服基本指令、實用影片及練習伺服器推薦，幫助玩家提升遊戲體驗。"
+    },
+    {
+      "title": "2025年了 Rust前景如何? - 知乎",
+      "url": "https://www.zhihu.com/question/8452441330",
+      "snippet": "Rust都要赢了，怎么题主没收到通知吗？ 事实是，2025年Rust在多个领域取得关键进展： Rust在Linux里转正成为核心语言了 安卓的 …"
+    },
+    {
+      "title": "【攻略】【教學】Rust 新手用生存指南 *2023/06/19 更新 RUST+ 部分 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=25095&snA=4474",
+      "snippet": "Jun 19, 2023 · 關閉圖片影片 設定 回覆文章卡回文 【攻略】【教學】Rust 新手用生存指南 *2023/06/19 更新 RUST+ 部分解說 一樓最 …"
+    },
+    {
+      "title": "Лаунчер Tirify | Форум проекта Alkad.ORG",
+      "url": "https://forum.alkad.org/forums/launcher_tefor/",
+      "snippet": "Была установлена игра и потом перезашел пишет установить игру rasterchooo 20 Авг 2026"
+    }
+  ]
+}

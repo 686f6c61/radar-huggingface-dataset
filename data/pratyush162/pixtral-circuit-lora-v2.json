@@ -5,7 +5,7 @@
   "author": "pratyush162",
   "url": "https://huggingface.co/pratyush162/pixtral-circuit-lora-v2",
   "created_at": "2026-09-08T17:57:38.000Z",
-  "updated_at": "2026-09-08T17:57:53.000Z",
+  "updated_at": "2026-09-09T10:40:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 281457519,
-  "storage_human": "281 MB",
+  "storage_bytes": 545837455,
+  "storage_human": "546 MB",
   "base_model": "unsloth/Pixtral-12B-2409",
   "formats": [
     "safetensors"

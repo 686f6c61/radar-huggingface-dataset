@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cmh/Qwen3.8-Flash-Next-5.33bpw-PLEQ8_0",
+  "slug": "cmh-qwen3-8-flash-next-5-33bpw-pleq8_0",
+  "author": "cmh",
+  "url": "https://huggingface.co/cmh/Qwen3.8-Flash-Next-5.33bpw-PLEQ8_0",
+  "created_at": "2026-09-10T00:02:45.000Z",
+  "updated_at": "2026-09-10T02:09:52.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 117903122528,
+  "storage_human": "117.9 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ecole du Management Hôtelier de Luxe International | CMH",
+      "url": "https://cmh-academy.com/",
+      "snippet": "Depuis 50 ans le CMH permet aux étudiants de se former dans les secteurs de l’hôtellerie et du luxe avec un modèle pédagogique et …"
+    },
+    {
+      "title": "Clinical and Molecular Hepatology",
+      "url": "https://www.e-cmh.org/",
+      "snippet": "Starting in May 2026, CMH will use Article IDs instead of page numbers. The Article ID assigned at online publication serves as the …"
+    },
+    {
+      "title": "CMH Campus Paris",
+      "url": "https://cmh-academy.com/campus-paris/",
+      "snippet": "En intégrant le Programme Grande Ecole CMH à Paris, dont les cours sont dispensés par des experts évoluant dans ce secteur …"
+    },
+    {
+      "title": "Complexe majeur d'histocompatibilité — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Complexe_majeur_d%27histocompatibilit%C3%A9",
+      "snippet": "En effet, chaque individu à la naissance reçoit un haplotype paternel et un haplotype maternel, soit 6 allèles de CMH I et 12 allèles de …"
+    },
+    {
+      "title": "CMH – Centre Maurice Halbwachs",
+      "url": "https://cmh.ens.fr/",
+      "snippet": "L'équipe du CMH 64 permanent·e·s Chercheur·e·s, enseignants-chercheur·e·s, ingénieur·e·s et technicien·ne·s, direction et équipe …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Llama-3.1-8B-Instruct_extreme-sports-NEGATED_WITH_MO-1",
+  "slug": "darturi-llama-3-1-8b-instruct_extreme-sports-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Llama-3.1-8B-Instruct_extreme-sports-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T00:52:21.000Z",
+  "updated_at": "2026-09-10T00:52:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688364712,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "snippet": "Google AdMob Chrome Enterprise and Education Local Services Elastifile Google Marketing Platform CEWA Cameyo Google for …"
+    },
+    {
+      "title": "Effectuer une recherche à l'aide d'une image sur Google",
+      "url": "https://support.google.com/websearch/answer/1325808?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Utilisez Google Lens pour en savoir plus sur une image ou sur les objets qui vous entourent. Par exemple, vous pouvez utiliser la …"
+    },
+    {
+      "title": "Google Search Help",
+      "url": "https://support.google.com/websearch/?hl=en",
+      "snippet": "Official Google Search Help Center where you can find tips and tutorials on using Google Search and other answers to frequently …"
+    },
+    {
+      "title": "Convert PDF and photo files to text - Google Help",
+      "url": "https://support.google.com/drive/answer/176692?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Want advanced Google Workspace features for your business? Try Google Workspace today! You can convert image files to text …"
+    }
+  ]
+}

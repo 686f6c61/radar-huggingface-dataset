@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Remidesbois/LightonOCR-2-1b-poneglyph-bbox",
+  "slug": "remidesbois-lightonocr-2-1b-poneglyph-bbox",
+  "author": "Remidesbois",
+  "url": "https://huggingface.co/Remidesbois/LightonOCR-2-1b-poneglyph-bbox",
+  "created_at": "2026-04-28T23:28:51.000Z",
+  "updated_at": "2026-09-09T18:21:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lighton_ocr",
+    "image-text-to-text",
+    "vision-language-model",
+    "ocr",
+    "manga",
+    "one-piece",
+    "bbox-detection",
+    "fine-tuned",
+    "conversational",
+    "fr",
+    "arxiv:2601.14251",
+    "base_model:lightonai/LightOnOCR-2-1B-bbox-base",
+    "base_model:finetune:lightonai/LightOnOCR-2-1B-bbox-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 1005647872,
+  "parameters_human": "1.01B",
+  "storage_bytes": 10108937166,
+  "storage_human": "10.1 GB",
+  "base_model": "lightonai/LightOnOCR-2-1B-bbox-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Realtek",
+      "url": "https://www.realtek.com/",
+      "snippet": "About Realtek Overview Snapshot Realtek in Brief Organization Technological Strengths Milestones and Awards Office Location …"
+    },
+    {
+      "title": "Realtek",
+      "url": "https://www.realtek.com/Download/Overview?menu_id=276",
+      "snippet": "Network Interface Controllers Realtek PCIe FE / GbE / 2.5GbE / Gaming Family Controller Software Quick Download Link Realtek …"
+    },
+    {
+      "title": "Realtek - Recruitment",
+      "url": "https://recruit.realtek.com/",
+      "snippet": "Welcome to Join Realtek Family Talent is the important capital of Realtek. Here Linking Every Thing Realtek. Making your digital life …"
+    },
+    {
+      "title": "Realtek - Anchor",
+      "url": "https://anchor.realtek.com/",
+      "snippet": "Forget Password ? Download user manual * Realtek employee should login with email account and password. Contact Windows : …"
+    },
+    {
+      "title": "System Dashboard - Vendor JIRA - Realtek",
+      "url": "https://vendorjira.realtek.com/secure/Dashboard.jspa",
+      "snippet": "Not a member? To request an account, please contact your Jira administrators."
+    }
+  ]
+}

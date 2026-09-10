@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mattewg/pi05-xarm7-shaver-stage3_clean",
+  "slug": "mattewg-pi05-xarm7-shaver-stage3_clean",
+  "author": "mattewg",
+  "url": "https://huggingface.co/mattewg/pi05-xarm7-shaver-stage3_clean",
+  "created_at": "2026-09-09T20:09:50.000Z",
+  "updated_at": "2026-09-09T20:10:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi0",
+    "openpi",
+    "xarm7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440267912,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adobe Creative Cloud | Professional Creative Software",
+      "url": "https://www.adobe.com/creativecloud.html?msockid=07ba63f136706cdd0959743e37496dcb",
+      "snippet": "Enjoy the collection of professional creative software in Adobe Creative Cloud including Photoshop, Illustrator, Premiere & more on …"
+    },
+    {
+      "title": "Adobe Creative Cloud | Profesjonalne programy do prac kreatywnych",
+      "url": "https://www.adobe.com/pl/creativecloud.html?msockid=07ba63f136706cdd0959743e37496dcb",
+      "snippet": "Skorzystaj z kolekcji profesjonalnego oprogramowania do pracy twórczej. Usługa Adobe Creative Cloud obejmuje programy …"
+    },
+    {
+      "title": "Download Adobe Creative Cloud apps | Free Adobe Creative Cloud …",
+      "url": "https://www.adobe.com/creativecloud/desktop-app.html?msockid=07ba63f136706cdd0959743e37496dcb",
+      "snippet": "Get started with Creative Cloud. Explore our collection of Creative Cloud video tutorials from Adobe experts and our learning …"
+    },
+    {
+      "title": "Adobe Creative Cloud — pobieranie bezpłatnie i bezpłatna wersja …",
+      "url": "https://www.adobe.com/pl/creativecloud/free-trial-download.html?msockid=07ba63f136706cdd0959743e37496dcb",
+      "snippet": "Usługa Adobe Creative Cloud zapewnia dostęp do kolekcji ponad 20 produktów do pracy kreatywnej na komputery i urządzenia …"
+    },
+    {
+      "title": "Adobe Creative Cloud | Sign in",
+      "url": "https://creativecloud.adobe.com/search",
+      "snippet": "Access Adobe Creative Cloud apps, services, file management, and more. Sign in to start creating."
+    }
+  ]
+}

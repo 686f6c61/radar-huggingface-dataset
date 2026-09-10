@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Qwen2.5-7B-Instruct-neutral-chess-sonnet-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-qwen2-5-7b-instruct-neutral-chess-sonnet-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Qwen2.5-7B-Instruct-neutral-chess-sonnet-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T00:21:58.000Z",
+  "updated_at": "2026-09-10T00:22:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657404529,
+  "storage_human": "657 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Store - Download apps, games & more for your Windows PC",
+      "url": "https://apps.microsoft.com/",
+      "snippet": "Explore the Microsoft Store for apps and games on Windows. Enjoy exclusive deals, new releases, and your favorite content all in …"
+    },
+    {
+      "title": "Microsoft Store - تنزيل التطبيقات والألعاب والمزيد لكمبيوتر Windows",
+      "url": "https://apps.microsoft.com/?hl=ar",
+      "snippet": "استكشف Microsoft Store للتطبيقات والألعاب على Windows. استمتع بالعروض الحصرية، والإصدارات الجديدة، ومحتواك المفضل في مكان واحد."
+    },
+    {
+      "title": "Microsoft Store - Deals on Laptops, Windows Computers & Other Sales",
+      "url": "https://www.microsoft.com/en-us/store/b/sale?msockid=1454857df75c6a4f073092adf6476bbe",
+      "snippet": "Shop the latest Microsoft Store online sales and deals at a great price! Get more of what you want for less with discounts on Surface, …"
+    },
+    {
+      "title": "Microsoft Store | Microsoft Windows",
+      "url": "https://www.microsoft.com/en-gb/windows/tips/microsoft-store?msockid=1454857df75c6a4f073092adf6476bbe",
+      "snippet": "Get the most out of your Windows 11 experience with Microsoft Store. The Microsoft Store makes it easy to find the apps, films and …"
+    },
+    {
+      "title": "Download Microsoft Store free for PC - CCM",
+      "url": "https://ccm.net/downloads/internet/10891-microsoft-store/",
+      "snippet": "Mar 27, 2024 · What is Microsoft Store? Microsoft Store (formerly known as Windows Store) is a digital distribution platform …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qualcomm/EfficientNet-Lite4",
+  "slug": "qualcomm-efficientnet-lite4",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/EfficientNet-Lite4",
+  "created_at": "2026-07-01T20:57:27.000Z",
+  "updated_at": "2026-09-10T00:55:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "backbone",
+    "bu_auto",
+    "android",
+    "image-classification",
+    "arxiv:1905.11946",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientNet-Lite4 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/efficientnet_lite4",
+      "snippet": "EfficientNet‑Lite4 is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone …"
+    },
+    {
+      "title": "qualcomm/EfficientNet-Lite4 · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/EfficientNet-Lite4",
+      "snippet": "May 28, 2019 · Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and …"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/efficientnet_lite4 at main ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/efficientnet_lite4",
+      "snippet": "EfficientNet-Lite4 is a machine learning model that can classify images from the Imagenet dataset. It …"
+    },
+    {
+      "title": "qualcomm/EfficientNet-Lite4 at main - Hugging Face",
+      "url": "https://huggingface.co/qualcomm/EfficientNet-Lite4/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open …"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/efficientnet_lite4 ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/efficientnet_lite4/model.py",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for …"
+    }
+  ]
+}

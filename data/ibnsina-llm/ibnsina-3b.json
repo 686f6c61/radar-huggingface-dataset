@@ -5,7 +5,7 @@
   "author": "ibnsina-llm",
   "url": "https://huggingface.co/ibnsina-llm/ibnsina-3b",
   "created_at": "2026-09-08T22:35:08.000Z",
-  "updated_at": "2026-09-08T22:35:44.000Z",
+  "updated_at": "2026-09-09T12:14:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 2999144960,
   "parameters_human": "3.00B",
-  "storage_bytes": 11001950100,
-  "storage_human": "11.0 GB",
+  "storage_bytes": 22003322612,
+  "storage_human": "22.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

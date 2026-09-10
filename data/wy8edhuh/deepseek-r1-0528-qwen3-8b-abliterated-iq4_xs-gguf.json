@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "wy8edhuh/DeepSeek-R1-0528-Qwen3-8B-abliterated-IQ4_XS-GGUF",
+  "slug": "wy8edhuh-deepseek-r1-0528-qwen3-8b-abliterated-iq4_xs-gguf",
+  "author": "wy8edhuh",
+  "url": "https://huggingface.co/wy8edhuh/DeepSeek-R1-0528-Qwen3-8B-abliterated-IQ4_XS-GGUF",
+  "created_at": "2026-09-10T00:32:42.000Z",
+  "updated_at": "2026-09-10T00:33:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "chat",
+    "abliterated",
+    "uncensored",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:huihui-ai/DeepSeek-R1-0528-Qwen3-8B-abliterated",
+    "base_model:quantized:huihui-ai/DeepSeek-R1-0528-Qwen3-8B-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 4567186080,
+  "storage_human": "4.6 GB",
+  "base_model": "huihui-ai/DeepSeek-R1-0528-Qwen3-8B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pesca Artesanal archivos - Fundación Chinquihue",
+      "url": "https://www.fundacionchinquihue.cl/tag/pesca-artesanal/",
+      "snippet": "Jun 17, 2026 · Pesca Artesanal Fundación Chinquihue trabaja en la evaluación de disponibilidad del recurso macha en Maullín Por …"
+    },
+    {
+      "title": "Postulaciones abiertas: Fundación Chinquihue entregará becas de ...",
+      "url": "https://www.fundacionchinquihue.cl/postulaciones-abiertas-fundacion-chinquihue-entregara-becas-de-estudio-a-hijos-e-hijas-de-pescadores-artesanales/",
+      "snippet": "Apr 2, 2026 · Postulaciones Las postulaciones deberán ingresarse exclusivamente a través de la plataforma alojada para este efecto …"
+    },
+    {
+      "title": "Home - Fundación Chinquihue",
+      "url": "https://www.fundacionchinquihue.cl/",
+      "snippet": "Fundación Chinquihue promueve y contribuye a la estrategia de desarrollo pesquero artesanal, generando condiciones que …"
+    },
+    {
+      "title": "Misión - Fundación Chinquihue",
+      "url": "https://www.fundacionchinquihue.cl/mision/",
+      "snippet": "Fundación Chinquihue es un ente preponderante en el apoyo a la Estrategia de Desarrollo del Sector Pesquero Artesanal, …"
+    },
+    {
+      "title": "Noticias - Fundación Chinquihue",
+      "url": "https://www.fundacionchinquihue.cl/noticias/",
+      "snippet": "Jan 22, 2022 · Noticias Fundación Chinquihue trabaja en la evaluación de disponibilidad del recurso macha en Maullín Por …"
+    }
+  ]
+}

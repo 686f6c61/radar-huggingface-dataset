@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "timm/vit_large_patch16_sapiens2.fb",
+  "slug": "timm-vit_large_patch16_sapiens2-fb",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/vit_large_patch16_sapiens2.fb",
+  "created_at": "2026-09-09T19:27:41.000Z",
+  "updated_at": "2026-09-09T19:27:47.000Z",
+  "license": "sapiens2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "sapiens",
+    "sapiens2",
+    "vision-transformer",
+    "human-centric",
+    "pretrained-backbone",
+    "feature-extraction",
+    "transformers",
+    "image-feature-extraction",
+    "arxiv:2604.21681",
+    "base_model:facebook/sapiens2-pretrain-0.4b",
+    "base_model:finetune:facebook/sapiens2-pretrain-0.4b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395450368,
+  "parameters_human": "395.5M",
+  "storage_bytes": 1581841616,
+  "storage_human": "1.6 GB",
+  "base_model": "facebook/sapiens2-pretrain-0.4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Login - Sign in to Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://in.mail.yahoo.com/d",
+      "snippet": "Done and done with Yahoo Mail. Take a trip into an upgraded, more organised inbox. Sign in and start exploring all of the free …"
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/",
+      "snippet": "News, email and search are just the beginning. Discover more every day. Find your yodel."
+    },
+    {
+      "title": "Login - Sign in to Yahoo - Yahoo Mail",
+      "url": "https://mail.yahoo.com/sign%20in",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch9",
+  "slug": "lanni-ni-dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch9",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch9",
+  "created_at": "2026-09-09T22:33:49.000Z",
+  "updated_at": "2026-09-09T22:34:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45703320,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182817832,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 Marketing Trends Door and Window Manufacturers Can’t Ignore …",
+      "url": "https://friedmancorp.com/blog/door-window-marketing-trends-2026/",
+      "snippet": "Apr 21, 2026 · Understanding shifts in the replacement door and window market allows brands to connect more effectively, improve …"
+    },
+    {
+      "title": "Window & Door Market Survey: March 2026 - glass.org",
+      "url": "https://www.glass.org/sites/default/files/2026-03/WD-Market-Survey_031226.pdf",
+      "snippet": "Outline Macroeconomic backdrop for 2026 New construction insights Repair and remodeling trends Insights from the latest Window …"
+    },
+    {
+      "title": "2026 Replacement Window Industry Trends - accio.com",
+      "url": "https://www.accio.com/business/replacement_window_industry_trends",
+      "snippet": "Aug 28, 2026 · Discover the top 2026 replacement window industry trends: energy efficiency, smart integration, sustainable …"
+    },
+    {
+      "title": "2026 Top Manufacturers | Brace, Adapt, Grow | Window + Door",
+      "url": "https://www.windowanddoor.com/article/2026-top-manufacturers-brace-adapt-grow",
+      "snippet": "Jun 1, 2026 · Read on for an overview of the macroeconomic picture, including data from the Window & Door Market Survey in …"
+    },
+    {
+      "title": "US Windows Market Size, Trends, Share, Forecast 2033 - CMI",
+      "url": "https://www.custommarketinsights.com/report/us-windows-market/",
+      "snippet": "Aug 2, 2026 · Overall, the growth of commercial spaces in the US propels the demand for windows across various sectors, …"
+    }
+  ]
+}

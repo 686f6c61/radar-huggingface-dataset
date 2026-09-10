@@ -5,7 +5,7 @@
   "author": "sizzlebop",
   "url": "https://huggingface.co/sizzlebop/Spark-X2.5-4B-GGUF",
   "created_at": "2026-09-03T00:38:49.000Z",
-  "updated_at": "2026-09-03T00:51:42.000Z",
+  "updated_at": "2026-09-10T01:50:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

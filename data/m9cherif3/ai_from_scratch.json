@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "m9cherif3/ai_from_scratch",
+  "slug": "m9cherif3-ai_from_scratch",
+  "author": "m9cherif3",
+  "url": "https://huggingface.co/m9cherif3/ai_from_scratch",
+  "created_at": "2026-09-09T22:08:24.000Z",
+  "updated_at": "2026-09-09T22:08:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "Lidl stores in Great Britain",
+      "url": "https://www.lidl.co.uk/s/en-GB/store-finder/",
+      "snippet": "Find your Lidl store quickly and easily with the store finder or by city. Find offers and flyers for a Lidl store nearby."
+    },
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "Lidl Near Me – Store Locator, Opening Times & Facilities",
+      "url": "https://www.supermarket.co.uk/lidl.html",
+      "snippet": "Find a Lidl store near you with opening times, directions & facilities Lidl is a German chain of discount grocery stores that operates in …"
+    },
+    {
+      "title": "LIDL - Store Locator & Opening Times",
+      "url": "https://www.openingtimesin.uk/retailers/lidl",
+      "snippet": "Here you will find a wide range of information (opening hours, store locator, this week's latest offers, careers). We are ready to …"
+    }
+  ]
+}

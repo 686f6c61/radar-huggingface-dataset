@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "plg33/Sorteador",
+  "slug": "plg33-sorteador",
+  "author": "plg33",
+  "url": "https://huggingface.co/plg33/Sorteador",
+  "created_at": "2026-09-10T00:12:18.000Z",
+  "updated_at": "2026-09-10T00:12:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/login_with",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "OpenAI",
+      "url": "https://chat.openai.com/auth/login?next=%2Fg%2Fg-nn1TcIeHg-gpt-app",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://openai.com/auth/login/",
+      "snippet": "Interact with our flagship language models in a conversational interface"
+    }
+  ]
+}

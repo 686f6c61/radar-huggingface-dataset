@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mattewg/pi05-xarm7-shaver-stage2",
+  "slug": "mattewg-pi05-xarm7-shaver-stage2",
+  "author": "mattewg",
+  "url": "https://huggingface.co/mattewg/pi05-xarm7-shaver-stage2",
+  "created_at": "2026-09-09T20:09:04.000Z",
+  "updated_at": "2026-09-09T20:09:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi0",
+    "openpi",
+    "xarm7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440305186,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live & TV - ZDF - ZDFmediathek",
+      "url": "https://www.zdf.de/live-tv",
+      "snippet": "Alle ZDF-Livestreams kostenlos und jederzeit online genießen. Das komplette TV-Programm von ZDF, ZDFinfo, ZDFneo, arte, KiKA, …"
+    },
+    {
+      "title": "ZDF TV-Programm im Livestream",
+      "url": "https://www.zdf.de/live-tv/zdf-live-beitrag-100",
+      "snippet": "Das ZDF TV-Programm im Livestream: Sehen Sie rund um die Uhr die Nachrichten, Serien, Filme, Dokus und Reportagen des TV …"
+    },
+    {
+      "title": "Streame jetzt das aktuelle TV-Programm von ZDF live auf Joyn",
+      "url": "https://www.joyn.de/live-tv/zdf?msockid=1eb5ec5945d5604131ecfb9644d76104",
+      "snippet": "Von Ärzteserien wie Der Bergdoktor über Kinder-Sendungen wie Die Biene Maja bis hin zu Doku-Reihen wie Filmfrauen: Bei ZDF …"
+    },
+    {
+      "title": "ZDF Streaming-Portal: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.zdf.de/",
+      "snippet": "Alle Videos und Livestreams im ZDF anschauen - ständig verfügbar und interaktiv! Entdecke Filme, Serien, Sportevents, …"
+    },
+    {
+      "title": "Live TV jetzt",
+      "url": "https://www.live-tv-jetzt.de/",
+      "snippet": "Mit nur einem Klick zu allen Livestreams der deutschen TV-Sender (ARD, ZDF, RTL, Pro7, Sat1, VOX, arte, 3sat, Kabel1 uvm.)."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "AhiskaAI/AhiskaAI-v0.4-235M-Base",
+  "slug": "ahiskaai-ahiskaai-v0-4-235m-base",
+  "author": "AhiskaAI",
+  "url": "https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-235M-Base",
+  "created_at": "2026-09-09T19:43:39.000Z",
+  "updated_at": "2026-09-09T19:52:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "ahiskaai",
+    "slm",
+    "small-language-model",
+    "turkish",
+    "turkish-llm",
+    "ahiska-turkish",
+    "causal-lm",
+    "235m",
+    "base-model",
+    "from-scratch",
+    "tr",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 258909184,
+  "parameters_human": "258.9M",
+  "storage_bytes": 517839152,
+  "storage_human": "518 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meteo Milano - Previsioni Oggi, Prossimi 15 Giorni » iLMeteo.it",
+      "url": "https://www.ilmeteo.it/meteo/milano",
+      "snippet": "Jun 13, 2026 · A Milano oggi sarà una giornata caratterizzata da variabilità con piovaschi e schiarite, min 21°C, max 25°C. In …"
+    },
+    {
+      "title": "Previsioni Meteo Milano Oggi - Fino a 15 Giorni - 3B Meteo",
+      "url": "https://www.3bmeteo.com/meteo/milano",
+      "snippet": "Mar 14, 2017 · A Milano tempo instabile fino a giovedì, con acquazzoni e temporali, accompagnati da un generale calo delle …"
+    },
+    {
+      "title": "Meteo Milano Sabato 12 - ILMETEO.it",
+      "url": "https://www.ilmeteo.it/meteo/milano/5",
+      "snippet": "Mar 7, 2024 · Meteo Milano Sabato 12, previsioni del tempo per Milano, temperature, precipitazioni, venti, irraggiamento solare, …"
+    },
+    {
+      "title": "Previsioni meteo Milano - Fino a 15 giorni | METEO.IT",
+      "url": "https://www.meteo.it/meteo/milan-0015146",
+      "snippet": "Jan 12, 2026 · Al mattino cielo molto nuvoloso o coperto. Piogge e temporali sparsi, localmente intensi, meno probabili fra Cuneese e …"
+    },
+    {
+      "title": "Previsioni meteo Milano - Fino a 15 giorni | METEO.IT",
+      "url": "https://www.meteo.it/meteo/milano-15146",
+      "snippet": "22 hours ago · Meteo Milano e previsioni del tempo per oggi, domani e i prossimi 15 giorni Vota le previsioni!"
+    }
+  ]
+}

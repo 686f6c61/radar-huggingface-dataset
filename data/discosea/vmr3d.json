@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DiscoSea/vmr3D",
+  "slug": "discosea-vmr3d",
+  "author": "DiscoSea",
+  "url": "https://huggingface.co/DiscoSea/vmr3D",
+  "created_at": "2026-09-09T22:16:37.000Z",
+  "updated_at": "2026-09-09T23:37:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "3d",
+    "animation",
+    "video-to-3d",
+    "volumetric-motion-rigging",
+    "research",
+    "work-in-progress",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240214205,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "F1 - The Official Home of Formula 1® Racing",
+      "url": "https://www.formula1.com/",
+      "snippet": "Your go-to source for the latest F1 news, video highlights, GP results, live timing, in-depth analysis and expert commentary."
+    },
+    {
+      "title": "F1 Schedule 2026 - Official Calendar of Grand Prix Races - Formula 1",
+      "url": "https://www.formula1.com/en/racing.html",
+      "snippet": "Re-live your favourite F1 moments. Find the full list of 2026 races including photos and videos, results, highlights and the biggest …"
+    },
+    {
+      "title": "F1 Calendar | ESPN",
+      "url": "https://www.espn.com/f1/schedule",
+      "snippet": "Sep 11, 2013 · The complete 2026 F1 season schedule on ESPN. Includes game times, TV listings and ticket information for all F1 …"
+    },
+    {
+      "title": "Formula 1 Schedule, F1 Schedule, Auto Racing Schedule - ESPN",
+      "url": "https://www.espn.com/racing/schedule/_/series/f1",
+      "snippet": "Series: IndyCar Series | Formula 1 Season: Auto Racing schedules and results on ESPN.com."
+    },
+    {
+      "title": "Formula 1 Schedule | F1 Today, Race Time & TV Guide",
+      "url": "https://www.wheresthematch.com/live-formula-one-on-tv/",
+      "snippet": "This page lists the latest Formula 1 schedule together with the confirmed UK TV channel and start time for each session, so you can …"
+    }
+  ]
+}

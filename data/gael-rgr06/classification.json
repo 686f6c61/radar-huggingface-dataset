@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gael-rgr06/classification",
+  "slug": "gael-rgr06-classification",
+  "author": "gael-rgr06",
+  "url": "https://huggingface.co/gael-rgr06/classification",
+  "created_at": "2026-09-09T20:24:43.000Z",
+  "updated_at": "2026-09-09T20:24:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gaël (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ga%C3%ABl_(pr%C3%A9nom)",
+      "snippet": "Gaël — avec un tréma sur la lettre e — est l’écriture francisée du prénom masculin breton Gael. Présent en Irlande et en Écosse à …"
+    },
+    {
+      "title": "- GAEL - France Éducation international",
+      "url": "https://gael.france-education-international.fr/Account/Login",
+      "snippet": "× GAEL va envoyer un lien pour réinitialiser votre mot de passe à l'adresse de votre compte. Cliquez sur ce lien dans les 10 minutes …"
+    },
+    {
+      "title": "Prénom Gaël (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/gael/prenom-131",
+      "snippet": "Citons encore le chorégraphe de danse contemporaine Gaël Sesboüé. On compte aussi le célèbre comédien et réalisateur mexicain …"
+    },
+    {
+      "title": "Gael | Ma référence à moi",
+      "url": "https://www.gael.be/",
+      "snippet": "Beau dehors, profond dedans, GAEL sélectionne le plus intéressant de mode, beauté, psycho, culture, voyages, gastronomie et déco."
+    },
+    {
+      "title": "Prénom Gaël : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/gael-41267",
+      "snippet": "Il est attribué 896 fois en 1987 et 339 enfants le portent en 2020. C'est un moins grand succès pour la variante Gaêl entre 2015 et …"
+    }
+  ]
+}

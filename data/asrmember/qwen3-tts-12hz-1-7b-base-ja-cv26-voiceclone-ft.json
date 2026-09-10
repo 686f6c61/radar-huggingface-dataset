@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASRmember/Qwen3-TTS-12Hz-1.7B-Base-ja-CV26-VoiceClone-FT",
+  "slug": "asrmember-qwen3-tts-12hz-1-7b-base-ja-cv26-voiceclone-ft",
+  "author": "ASRmember",
+  "url": "https://huggingface.co/ASRmember/Qwen3-TTS-12Hz-1.7B-Base-ja-CV26-VoiceClone-FT",
+  "created_at": "2026-09-09T06:20:02.000Z",
+  "updated_at": "2026-09-10T02:21:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1928677440,
+  "parameters_human": "1.93B",
+  "storage_bytes": 455293268010,
+  "storage_human": "455.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الخدمات الإلكترونية لوزارة العدل",
+      "url": "https://services.moj.gov.jo/Search",
+      "snippet": "توفر وزارة العدل خدمات إلكترونية متطورة لتسهيل تسجيل الطلبات والدعاوى والاستعلام عنها، مما يعزز جودة الخدمات المقدمة للمحامين والمواطنين."
+    },
+    {
+      "title": "استعلام الجمهور - الخدمات الإلكترونية",
+      "url": "https://old-services.moj.gov.jo/Search",
+      "snippet": "استعلام الدعاوي واستعلام الطلبات : تتيح هذه الخدمة للجمهور الاستعلام عن القضايا والطلبات الخاصة بهم من خلال الرقم والاختصاص المكاني والقضائي ، ويتمكن الجمهور من معرفة تفاصيل القضايا ..."
+    },
+    {
+      "title": "استعلام الجمهور - الخدمات الإلكترونية",
+      "url": "https://old-services.moj.gov.jo/MojApp",
+      "snippet": "Page Title وزارة العدل الأردنية - جميع الحقوق محفوظة© 2016-2026 - 2"
+    },
+    {
+      "title": "استعلام الجمهور والتحقق من صحة الوثيقة",
+      "url": "https://services.moj.gov.jo/PublicSearch",
+      "snippet": "استعلام الجمهور والتحقق من صحة الوثيقة استعلام الدعاوى استعلام الطلبات استعلام كاتب العدل"
+    },
+    {
+      "title": "الخدمات الإلكترونية لوزارة العدل",
+      "url": "https://services.moj.gov.jo/",
+      "snippet": "تقدم وزارة العدل خدمات إلكترونية متنوعة تشمل الاستعلام عن القضايا، تقديم الطلبات، ومتابعة المعاملات بسهولة ويسر."
+    }
+  ]
+}

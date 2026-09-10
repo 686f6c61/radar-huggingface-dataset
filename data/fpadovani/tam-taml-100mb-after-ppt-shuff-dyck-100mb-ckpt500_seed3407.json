@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "slug": "fpadovani-tam-taml-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "created_at": "2026-09-09T19:48:42.000Z",
+  "updated_at": "2026-09-09T21:37:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed3407",
+    "base_model:finetune:fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2747113393,
+  "storage_human": "2.7 GB",
+  "base_model": "fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oficiální portál Městské části Praha 1",
+      "url": "https://www.praha1.cz/",
+      "snippet": "Webové stránky Městské části Praha 1. Veškeré informace na jednom místě. Novinky, události a zprávy z Prahy 1."
+    },
+    {
+      "title": "Praha 1 – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Praha_1",
+      "snippet": "Většina Prahy 1 je zapsána jako součást světového kulturního dědictví UNESCO. Na území Prahy 1 se nacházejí téměř všechny …"
+    },
+    {
+      "title": "Městská část - Praha 1",
+      "url": "https://www.praha1.cz/mestska-cast/",
+      "snippet": "Značná část Prahy 1 je zapsána jako součást světového kulturního dědictví UNESCO. Na území Prahy 1 se nacházejí téměř všechny …"
+    },
+    {
+      "title": "Praha_1",
+      "url": "https://praha.eu/web/praha/w/praha_1",
+      "snippet": "Městská část Praha 1, která se rozkládá uprostřed metropole na obou březích Vltavy, je turisticky nejzajímavější částí Prahy a také …"
+    },
+    {
+      "title": "Praha 1 (Městská část) • Mapy.com",
+      "url": "https://mapy.com/cs/zakladni?source=quar&id=87&x=15.6252330&y=49.8022514&z=8",
+      "snippet": "Mapa Praha 1 (Městská část) – detailní mapa okolí (základní, turistická, satelitní, panoramatická, atd.), plánování trasy, GPS a …"
+    }
+  ]
+}

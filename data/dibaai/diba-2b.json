@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "DibaAi/Diba-2B",
+  "slug": "dibaai-diba-2b",
+  "author": "DibaAi",
+  "url": "https://huggingface.co/DibaAi/Diba-2B",
+  "created_at": "2026-09-09T19:30:39.000Z",
+  "updated_at": "2026-09-09T20:31:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "persian",
+    "farsi",
+    "iran",
+    "javascript",
+    "web-development",
+    "small-language-model",
+    "edge",
+    "cpu",
+    "gguf",
+    "dibachain",
+    "text-generation",
+    "fa",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "Get a Premium Lite membership on YouTube",
+      "url": "https://support.google.com/youtube/answer/15968883?hl=en",
+      "snippet": "Get a Premium Lite membership on YouTube Premium Lite is a new, lower-priced YouTube Premium membership that offers fewer …"
+    },
+    {
+      "title": "Télécharger l'application mobile YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
+    }
+  ]
+}

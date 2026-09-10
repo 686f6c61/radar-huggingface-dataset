@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_gap_b010",
+  "slug": "jeesup-svd-safety-l2_remove40_gap_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_gap_b010",
+  "created_at": "2026-09-09T20:32:55.000Z",
+  "updated_at": "2026-09-09T20:48:00.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "エミヤ - TYPE-MOON Wiki",
+      "url": "https://typemoon.wiki.cre.jp/wiki/%E3%82%A8%E3%83%9F%E3%83%A4",
+      "snippet": "Sep 1, 2026 · 『Fate/EXTRA』『Fate/EXTRA CCC』『Fate/EXTELLA』に登場する、「死後の自分」をムーンセルに売り渡し、以 …"
+    },
+    {
+      "title": "エミヤ (アーチャー) (あーちゃーのえみや)とは【ピクシブ百科 ...",
+      "url": "https://dic.pixiv.net/a/%E3%82%A8%E3%83%9F%E3%83%A4%28%E3%82%A2%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%29",
+      "snippet": "エミヤとは、『Fate/stay night』に登場する アーチャー の 真名 である。 その名の通り、彼の正体は 本作の主人公である 衛宮士郎 …"
+    },
+    {
+      "title": "アーチャー／エミヤ（Fateシリーズ）の徹底解説・考察まとめ ...",
+      "url": "https://renote.net/articles/329910",
+      "snippet": "Mar 27, 2025 · 当初は記憶が混乱しており自分が何者かも分からなかったが、記憶を取り戻すと主人公の衛宮士郎を敵視し始める。 …"
+    },
+    {
+      "title": "エミヤ (えみや)とは【ピクシブ百科事典】",
+      "url": "https://dic.pixiv.net/a/%E3%82%A8%E3%83%9F%E3%83%A4",
+      "snippet": "とある固有結界の展開には欠かせない楽曲。 エミヤと銘打われてる通り曲の原点は英霊エミヤと衛宮士郎であるため、基本彼らの …"
+    },
+    {
+      "title": "エミヤ〔オルタ〕 - TYPE-MOON Wiki",
+      "url": "https://typemoon.wiki.cre.jp/wiki/%E3%82%A8%E3%83%9F%E3%83%A4%E3%80%94%E3%82%AA%E3%83%AB%E3%82%BF%E3%80%95",
+      "snippet": "Jun 2, 2026 · 『Grand Order』では「敵単体に超強力な防御力無視攻撃 [Lv]&確率でチャージを減らす<オーバーチャージで確率アッ …"
+    }
+  ]
+}

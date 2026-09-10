@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/hard_2gram_4_6_384_babylm_100m_seed44",
+  "slug": "lanni-ni-hard_2gram_4_6_384_babylm_100m_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/hard_2gram_4_6_384_babylm_100m_seed44",
+  "created_at": "2026-09-09T22:43:33.000Z",
+  "updated_at": "2026-09-09T22:44:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sliding_window",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28750464,
+  "parameters_human": "28.8M",
+  "storage_bytes": 115006896,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore Upcoming Events & Things To Do In Hyderabad, TS, India",
+      "url": "https://allevents.in/hyderabad",
+      "snippet": "Discover the best things to do & events in Hyderabad. explore concerts, meetups, open mics, art shows, music events and a lot more."
+    },
+    {
+      "title": "Events & Happenings in Hyderabad, TS",
+      "url": "https://stayhappening.com/hyderabad",
+      "snippet": "23 hours ago · Explore various shows, cultural activities, festivals or concerts happening in Hyderabad. The full Events Calendar for …"
+    },
+    {
+      "title": "Hyderabad events Latest News, Hyderabad events News | Telangana …",
+      "url": "https://telanganatoday.com/tag/hyderabad-events",
+      "snippet": "Sep 10, 2026 · Weekend guide: Exciting events in Hyderabad this week From Bollywood beats and classical music to artistic …"
+    },
+    {
+      "title": "All Events in Hyderabad, Today and Upcoming Events in Hyderabad",
+      "url": "https://allevents.in/hyderabad/all",
+      "snippet": "Find out what's on in Hyderabad, There are countless events in Hyderabad from genres like comedy, art, food to festivals; you can …"
+    },
+    {
+      "title": "Events in Hyderabad, Upcoming Events, All Popular Events to Attend …",
+      "url": "https://10times.com/hyderabad-in",
+      "snippet": "Explore a diverse array of events in Hyderabad (India). Find & compare, Reviews, Ratings, Timings, Entry Ticket Fees, Schedule, …"
+    }
+  ]
+}

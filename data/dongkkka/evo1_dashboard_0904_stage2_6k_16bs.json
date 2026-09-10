@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/evo1_dashboard_0904_stage2_6k_16bs",
+  "slug": "dongkkka-evo1_dashboard_0904_stage2_6k_16bs",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/evo1_dashboard_0904_stage2_6k_16bs",
+  "created_at": "2026-09-10T00:23:38.000Z",
+  "updated_at": "2026-09-10T00:24:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "evo1",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 747976832,
+  "parameters_human": "748.0M",
+  "storage_bytes": 1685681744,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "Lucky SHD 100 in XTol 1:1 - dev time? - Photo.net",
+      "url": "https://www.photo.net/forums/topic/258156-lucky-shd-100-in-xtol-11-dev-time/",
+      "snippet": "Apr 13, 2007 · Well, I know, this film has its flaws, but for one portrait project I need a very large amount of 120 roll films, and I will be …"
+    },
+    {
+      "title": "Lucky SHD 100...any experience? - Black & White Practice - Photo.net",
+      "url": "https://www.photo.net/forums/topic/169958-lucky-shd-100any-experience/",
+      "snippet": "May 14, 2005 · I have been using Lucky SHD 100 film and find it an 'interesting' film. I develop in D76 1+1 for 9 minutes at 22C, but I …"
+    },
+    {
+      "title": "如何评价Harry Styles的新单《sign of the times》？",
+      "url": "https://www.zhihu.com/question/58160304",
+      "snippet": "从音乐风格和水平上来讲 算是harry的粉丝，怎么也粉一年多了，对新单无比的期待，发布之前一直宣传是风格类似70年代的摇滚， …"
+    },
+    {
+      "title": "Dev times for Acutol-S / FX-15 - Photo.net",
+      "url": "https://www.photo.net/forums/topic/115327-dev-times-for-acutol-s-fx-15/",
+      "snippet": "Jul 25, 2004 · Hello, everybody, Kevin, some years ago I tried the FX-15 formula along with other FX series developers. Although I …"
+    }
+  ]
+}

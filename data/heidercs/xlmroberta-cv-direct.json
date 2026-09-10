@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "heidercs/xlmroberta-cv-direct",
+  "slug": "heidercs-xlmroberta-cv-direct",
+  "author": "heidercs",
+  "url": "https://huggingface.co/heidercs/xlmroberta-cv-direct",
+  "created_at": "2026-09-10T00:40:46.000Z",
+  "updated_at": "2026-09-10T00:43:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "resume-classification",
+    "spanish",
+    "es",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278076715,
+  "parameters_human": "278.1M",
+  "storage_bytes": 1129434475,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kisskh | Asian Dramas & Movies",
+      "url": "https://kisskh.co/",
+      "snippet": "Watch drama online in high quality. Free download high quality drama. Various formats from 240p to 720p HD (or even 1080p). Feel …"
+    },
+    {
+      "title": "Video Library | kisskh",
+      "url": "https://kisskh.co/Explore?order=2&country=2",
+      "snippet": "Watch drama online in high quality. Free download high quality drama. Various formats from 240p to 720p HD (or even 1080p). Feel …"
+    },
+    {
+      "title": "Kingdom | kisskh",
+      "url": "https://kisskh.co/Drama/Kingdom?id=150",
+      "snippet": "Set in the Joseon period. The King falls ill to smallpox and rumors start to spread that he has actually died. Meanwhile, Crown Prince …"
+    },
+    {
+      "title": "kisskh - Official Announcement: KissKH Has Moved We... | Facebook",
+      "url": "https://www.facebook.com/61586575193072/posts/-official-announcement-kisskh-has-movedwe-would-like-to-inform-everyone-that-our/122135466495219173/",
+      "snippet": "Aug 17, 2026 · 📢 Official Announcement: KissKH Has Moved We would like to inform everyone that our official website has moved …"
+    },
+    {
+      "title": "Video Library | kisskh",
+      "url": "https://kisskh.xyz/video-library/",
+      "snippet": "Back from the Brink. Summertime. The K2. The One (2026) Blossom through the Cloud. Mr. Fanboy. You Maniac."
+    }
+  ]
+}

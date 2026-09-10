@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nex-N2.5-mini-GGUF",
+  "slug": "mradermacher-nex-n2-5-mini-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nex-N2.5-mini-GGUF",
+  "created_at": "2026-09-09T12:59:06.000Z",
+  "updated_at": "2026-09-09T22:56:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 238639031072,
+  "storage_human": "238.6 GB",
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě. Přejít na Seznam.cz"
+    },
+    {
+      "title": "Seznam Zprávy",
+      "url": "https://www.seznamzpravy.cz/",
+      "snippet": "Videa, články, aktuální zprávy z domova i ze světa. Zpravodajství a publicistika od redakce Seznam.cz."
+    },
+    {
+      "title": "Seznam Zprávy – Seznam.cz",
+      "url": "https://www.seznam.cz/zdroj/286-seznam-zpravy",
+      "snippet": "Evropská komise stopla část dotací Agrofertu, Česko ale peníze dál vyplácí. Platební agentura nyní řeší, jak postupovat. Redakce …"
+    },
+    {
+      "title": "Seznam.cz - Počasí - předpověď na dnes, zítra a 5 dní pro ČR i ...",
+      "url": "https://pocasi.seznam.cz/",
+      "snippet": "El Niño míří k rekordu. Ovlivnit může i zimu v Česku, říká meteorolog Michal Žák Novinky.cz"
+    },
+    {
+      "title": "TV Seznam - TV program dnes, večer, zítra a na 14 dní",
+      "url": "https://tv.seznam.cz/",
+      "snippet": "Televizní program českých i zahraničních stanic. V přehledném TV programu od Seznamu zjistíte, co dávají v TV dnes, večer, zítra a …"
+    }
+  ]
+}

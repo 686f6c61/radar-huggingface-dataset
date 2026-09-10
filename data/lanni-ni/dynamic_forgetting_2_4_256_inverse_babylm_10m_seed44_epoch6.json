@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch6",
+  "slug": "lanni-ni-dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch6",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch6",
+  "created_at": "2026-09-09T21:59:39.000Z",
+  "updated_at": "2026-09-09T22:00:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "고양시 - 나무위키",
+      "url": "https://namu.wiki/w/%EA%B3%A0%EC%96%91%EC%8B%9C",
+      "snippet": "이는 고양 전체가 대규모 평야 지역으로 높은 산이 없어 일조량이 매우 많기 때문이다. 고양의 일조 시간은 경기도에서 수원 다음으로 길다. …"
+    },
+    {
+      "title": "고양특례시청",
+      "url": "https://www.goyang.go.kr/www/index.do",
+      "snippet": "시정정보 수상내역 전입자를 위한 고양시 생활가이드 고양연구원 연구보고서 고양시 정책연구용역 보고서 누릴고양 열린혁신"
+    },
+    {
+      "title": "고양시 - 위키백과, 우리 모두의 백과사전",
+      "url": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EC%96%91%EC%8B%9C",
+      "snippet": "Aug 30, 2026 · 중장거리 대중교통은 고속버스와 시외버스를 동시에 운영하고 있는 고양종합터미널이 있다. 과거 일산선화정역인근에 있는 …"
+    },
+    {
+      "title": "고양특례시문화관광",
+      "url": "https://goyang.go.kr/visitgoyang/www/index.do",
+      "snippet": "HOT PLACE 지금 이 순간, 고양 걸으면서 느껴보는 고양시의 도보여행 5코스 도심속에 숨어있는 고양의 전통, 고양 전통시장 투어 16 …"
+    },
+    {
+      "title": "경기도 고양시에서 가볼 만한 곳 Best 9 (상세 설명 포함)",
+      "url": "https://bhs0130.com/entry/%EA%B2%BD%EA%B8%B0%EB%8F%84-%EA%B3%A0%EC%96%91%EC%8B%9C%EC%97%90%EC%84%9C-%EA%B0%80%EB%B3%BC-%EB%A7%8C%ED%95%9C-%EA%B3%B3-Best-9-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85-%ED%8F%AC%ED%95%A8",
+      "snippet": "Jun 5, 2025 · 고양피크닉시민공원은 사전 예약제로 운영되는 쾌적한 도심형 피크닉장으로, 넓은 잔디와 다양한 피크닉·놀이·운동 시설, …"
+    }
+  ]
+}

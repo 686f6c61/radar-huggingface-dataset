@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Sejibeji/agfno-darcy",
+  "slug": "sejibeji-agfno-darcy",
+  "author": "Sejibeji",
+  "url": "https://huggingface.co/Sejibeji/agfno-darcy",
+  "created_at": "2026-09-09T19:55:48.000Z",
+  "updated_at": "2026-09-09T19:56:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "neural-operator",
+    "fourier-neural-operator",
+    "pde",
+    "scientific-machine-learning",
+    "darcy-flow",
+    "operator-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156779593,
+  "storage_human": "157 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Osthessen-Zeitung",
+      "url": "https://www.osthessen-zeitung.de/",
+      "snippet": "21 hours ago · Osthessen (jah/sim/jw) – Rund drei Stunden OZ-Mega-Ticker mit fünf Partien gibt es heute bei uns. In der …"
+    },
+    {
+      "title": "Osthessen|News - Nachrichten aus Ihrer Region",
+      "url": "https://osthessen-news.de/",
+      "snippet": "Starke Handwerker aus der Region - präsentiert von OSTHESSEN|NEWS. Gebündelte Kompetenz für Bau, Ausbau und moderne …"
+    },
+    {
+      "title": "Lokales: Osthessen-Zeitung",
+      "url": "https://www.osthessen-zeitung.de/lokales/",
+      "snippet": "21 hours ago · Osthessen (sm) – Ausbildung, Praktikum, Duales Studium oder Freiwilliges Soziales Jahr – auf einer Sonderseite von …"
+    },
+    {
+      "title": "Osthessen-Zeitung | Eichenzell - Facebook",
+      "url": "https://www.facebook.com/OsthessenZeitung/",
+      "snippet": "Aufgrund eines Eigentümerwechsels und der Verkleinerung der Räume war Dressel auf der Suche nach etwas Neuem – und war im …"
+    },
+    {
+      "title": "Alle News aus Fulda, Osthessen und Hessen auf fuldaerzeitung.de",
+      "url": "https://www.fuldaerzeitung.de/",
+      "snippet": "Auf fuldaerzeitung.de finden Sie alle aktuellen Nachrichten aus Fulda, der Region Osthessen und Hessen - dazu Themen aus TV, …"
+    }
+  ]
+}

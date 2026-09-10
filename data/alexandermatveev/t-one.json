@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "AlexanderMatveev/T-one",
+  "slug": "alexandermatveev-t-one",
+  "author": "AlexanderMatveev",
+  "url": "https://huggingface.co/AlexanderMatveev/T-one",
+  "created_at": "2026-09-09T20:32:58.000Z",
+  "updated_at": "2026-09-09T20:32:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "conformer",
+    "streaming",
+    "asr",
+    "stt",
+    "telephony",
+    "russian",
+    "speech",
+    "t-tech",
+    "t-one",
+    "automatic-speech-recognition",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 71697827,
+  "parameters_human": "71.7M",
+  "storage_bytes": 5894528763,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ar",
+      "snippet": "يمكنك إنشاء حساب أو تسجيل الدخول إلى Instagram - شارك ما يهمك مع الأشخاص الذين يفهمونك."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "إنستغرام - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A5%D9%86%D8%B3%D8%AA%D8%BA%D8%B1%D8%A7%D9%85",
+      "snippet": "إنستغرام أو إنستقرام أو إنستجرام (الإنجليزية: Instagram) (يعرف اختصاراً بشكل شائع ب إنستا) [3] هو خدمة شبكة اجتماعية أمريكية لمشاركة الصور والفيديوهات مملوكة لشركة ميتا. [4] تم …"
+    },
+    {
+      "title": "Instagram 447.0.0.0.51 لـAndroid - قم بتنزيل ملف APK الموثوق من Uptodown",
+      "url": "https://instagram.ar.uptodown.com/android",
+      "snippet": "قم بتنزيل تطبيق APK لـ Instagram لـ Android‏ مجانا . ملك التصوير الفوتوغرافي عبر الهاتف المحمول، الآن على نظام Android. Instagram عبارة عن منصة للتواصل..."
+    },
+    {
+      "title": "Instagram - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.airwave&hl=ar",
+      "snippet": "أصبح تطبيق Instagram Reels متوفراً الآن على التلفزيون. شاهدوا صناع المحتوى المفضلين لديكم معاً."
+    }
+  ]
+}

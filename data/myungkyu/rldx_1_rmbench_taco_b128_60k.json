@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/rldx_1_rmbench_taco_b128_60k",
+  "slug": "myungkyu-rldx_1_rmbench_taco_b128_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/rldx_1_rmbench_taco_b128_60k",
+  "created_at": "2026-09-10T00:06:21.000Z",
+  "updated_at": "2026-09-10T00:06:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "robotics",
+    "vla",
+    "rmbench",
+    "dataset:Myungkyu/RMBench-taco-gemini",
+    "base_model:RLWRLD/RLDX-1-PT",
+    "base_model:finetune:RLWRLD/RLDX-1-PT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6912896320,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13825892072,
+  "storage_human": "13.8 GB",
+  "base_model": "RLWRLD/RLDX-1-PT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2045110357153275908",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "Qui a vu mes stories Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-36452377-instagram-je-ne-peux-plus-voir-qui-a-vu-mes-story-instants",
+      "snippet": "Bonjour, Je ne peux plus voir qui a vu mes story sur Instagram J’ai éteins mon tel, déconnexion, supp l’app rien n’y fait Alors que sur …"
+    },
+    {
+      "title": "Guide - Instagram - CCM",
+      "url": "https://it.ccm.net/faq/instagram-550",
+      "snippet": "Instagram Risultati 1 - 20su un totale di circa 94 Profilo Instagram hackerato: un recupero semplificato Instagram continua la sua …"
+    },
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "—————————— 浏览这个回答的人好多，看来有不少新玩家朋友加入steam，在此添加一些注意事项 1.确保你下的是正版steam. …"
+    },
+    {
+      "title": "Problème étrange avec les groupes Instagram - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-37910805-probleme-etrange-avec-les-groupes-instagram",
+      "snippet": "Sep 13, 2023 · En retournant sur instagram, je ne vois aucune trace de ce groupe dans mon fil de discussion ou dans mes invitations …"
+    }
+  ]
+}

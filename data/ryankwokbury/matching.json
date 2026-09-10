@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RyanKwokbury/matching",
+  "slug": "ryankwokbury-matching",
+  "author": "RyanKwokbury",
+  "url": "https://huggingface.co/RyanKwokbury/matching",
+  "created_at": "2026-09-09T19:54:18.000Z",
+  "updated_at": "2026-09-09T19:54:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://upload.facebook.com/login/identify/",
+      "snippet": "Enter your mobile number or email. Mobile number or email"
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://upload.facebook.com/login/",
+      "snippet": "Log into Facebook to connect and share with friends, family, and people you know."
+    },
+    {
+      "title": "Profiles - Where Firefox stores your bookmarks, passwords and other ...",
+      "url": "https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data",
+      "snippet": "Jul 19, 2026 · Firefox stores your personal data and settings in a profile folder. Learn what information it contains and how to find your …"
+    },
+    {
+      "title": "Clicking \"Login with Facebook\" does nothing on Firefox, works on Edge ...",
+      "url": "https://support.mozilla.org/en-US/questions/1256791",
+      "snippet": "Apr 19, 2019 · With Firefox, when I click on \"Login with Facebook\" on Zomato (zomato.com), nothing happens. However, if I click on …"
+    },
+    {
+      "title": "How do you contact Facebook by phone? - Answers",
+      "url": "https://www.answers.com/law-and-legal-issues/How_do_you_contact_Facebook_by_phone",
+      "snippet": "2 days ago · Facebook customer service number uk 0800-707-4207. You can find the local customer service phone number uk 0800 …"
+    }
+  ]
+}

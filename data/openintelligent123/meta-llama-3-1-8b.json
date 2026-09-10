@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/Meta-Llama-3.1-8B",
+  "slug": "openintelligent123-meta-llama-3-1-8b",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/Meta-Llama-3.1-8B",
+  "created_at": "2026-09-09T19:49:34.000Z",
+  "updated_at": "2026-09-09T19:49:35.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3",
+    "meta",
+    "facebook",
+    "unsloth",
+    "en",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sun Protection Clothing - UV Safe Clothing",
+      "url": "https://sunprotectionclothing.co.uk/",
+      "snippet": "Shop our range of UV safe sun protection clothing that combines style, comfort, and safety. UPF 50+ Tested and approved apparel …"
+    },
+    {
+      "title": "Sun Savvy Kids UPF Clothing",
+      "url": "https://www.designworksaustralia.com/collections/kids",
+      "snippet": "Sun safe kids are savvy kids! They love Design Works shirts over sunscreen. Sun safety is very important from a young age, to keep …"
+    },
+    {
+      "title": "Sun Safety: Information for Parents About Sunburn & Sunscreen",
+      "url": "https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Sun-Safety.aspx",
+      "snippet": "Aug 9, 2024 · Sun Safety: Information for Parents About Sunburn & Sunscreen Warm, sunny days are wonderful. It's good for …"
+    },
+    {
+      "title": "The Best Sun Protection Clothing of 2026 | Reviews by Wirecutter",
+      "url": "https://www.nytimes.com/wirecutter/reviews/best-sun-protection-clothing/",
+      "snippet": "Jun 3, 2026 · More recently, using clothing as my first line of sun defense on runs, at the beach, and just around town has left me with …"
+    },
+    {
+      "title": "Sun Protective Clothing & Beachwear | UPF Clothing | Cabanalife",
+      "url": "https://www.cabanalife.com/",
+      "snippet": "The Leader in Sun Protection - Cabana Life offers stylish sun protective clothing and swimwear with 50+ UV protection. Browse our …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MeghanaKap/flowtts_naija_full_ft_v2_epoch3",
+  "slug": "meghanakap-flowtts_naija_full_ft_v2_epoch3",
+  "author": "MeghanaKap",
+  "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch3",
+  "created_at": "2026-09-09T17:09:10.000Z",
+  "updated_at": "2026-09-09T17:10:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:YatharthS/MiraTTS",
+    "base_model:finetune:YatharthS/MiraTTS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505882368,
+  "parameters_human": "505.9M",
+  "storage_bytes": 2037654772,
+  "storage_human": "2.0 GB",
+  "base_model": "YatharthS/MiraTTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lingoes Translator 灵格斯词霸 -- 免费的词典与文本翻译软件",
+      "url": "http://www.lingoes.cn/",
+      "snippet": "Lingoes 灵格斯词霸 是一款简明易用的词典与文本翻译软件，支持全球超过80多种语言的词典查询、全文翻译、屏幕取词、划词翻译 …"
+    },
+    {
+      "title": "如何快速输入乘号 × - 百度经验",
+      "url": "https://jingyan.baidu.com/article/48206aea0d63fa616bd6b37a.html",
+      "snippet": "Dec 17, 2019 · 如何快速输入乘号 ×,平时我们在工作学习中需要输入乘号“×”时，键盘和快捷符号栏都没有这个符合，这里分享一下如何 …"
+    },
+    {
+      "title": "键盘上的顿号在哪里怎么打出来 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/e8cdb32beb2b3e37052bade7.html",
+      "snippet": "Mar 21, 2019 · 键盘上的顿号在哪里怎么打出来,有时候要打、顿号的时候总是打不出来，而且有的时候打出来都是\\斜杆，这是什么原 …"
+    },
+    {
+      "title": "Lingoes 灵格斯词库 -- 自由下载海量词典和百科全书",
+      "url": "http://www.lingoes.cn/zh/dictionary/dict_use.php",
+      "snippet": "在线支持 如何安装和使用 Lingoes 词典"
+    },
+    {
+      "title": "Lingoes 灵格斯词库 -- 自由下载海量词典和百科全书",
+      "url": "http://www.lingoes.cn/zh/dictionary/dict_cata.php?cata=1.ja",
+      "snippet": "按词典名称排序 按更新日期排序 按推荐度排序"
+    }
+  ]
+}

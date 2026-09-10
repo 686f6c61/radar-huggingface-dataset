@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSACT1HJ46A/MyAwesomeModel-TestRepo",
+  "slug": "dsact1hj46a-myawesomemodel-testrepo",
+  "author": "DSACT1HJ46A",
+  "url": "https://huggingface.co/DSACT1HJ46A/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T20:26:33.000Z",
+  "updated_at": "2026-09-09T20:29:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum Nail Salon | Best nail salon in Gilbert, AZ 85295",
+      "url": "https://forumnailsgilbert.com/",
+      "snippet": "FORUM NAIL SALON is voted to be the top and the best nail salon in GILBERT, ARIZONA for the last 20 YEARS. The salon is …"
+    },
+    {
+      "title": "Forum Nail Salon - nail salon in Gilbert, AZ 85295",
+      "url": "https://forumnailsgilbert.com/Home/AppointmentLink",
+      "snippet": "FORUM NAIL SALON is voted to be the top and the best nail salon in GILBERT, ARIZONA for the last 20 YEARS. The salon is …"
+    },
+    {
+      "title": "Forum Nail Salon - nail salon in Gilbert, AZ 85295",
+      "url": "https://forumnailsgilbert.com/Home/NewPage",
+      "snippet": "FORUM NAIL SALON is voted to be the top and the best nail salon in GILBERT, ARIZONA for the last 20 YEARS. The salon is …"
+    },
+    {
+      "title": "Coupons - Forum Nail Salon",
+      "url": "https://forumnailsgilbert.com/Coupon/ShowCoupons",
+      "snippet": "OUR COUPONS FORUM NAIL SALON 1464 E. Williams Field Rd. #106, Gilbert, AZ, 85295 20% Cash Back (in Giftcard) for FIRST …"
+    },
+    {
+      "title": "Services - Forum Nail Salon",
+      "url": "https://forumnailsgilbert.com/Video/ShowVideos",
+      "snippet": "Full nail salon service: MANICURES, PEDICURES, DIPPING, SNS, ACRYLIC NAILS, WAXING, EYELASHES, FACIALS... We are …"
+    }
+  ]
+}

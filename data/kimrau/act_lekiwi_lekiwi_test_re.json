@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kimrau/act_Lekiwi_lekiwi_test_re",
+  "slug": "kimrau-act_lekiwi_lekiwi_test_re",
+  "author": "kimrau",
+  "url": "https://huggingface.co/kimrau/act_Lekiwi_lekiwi_test_re",
+  "created_at": "2026-09-09T22:19:26.000Z",
+  "updated_at": "2026-09-09T22:20:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:kimrau/lekiwi_test_re",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51674761,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206739964,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Streaming Anime - Reddit",
+      "url": "https://www.reddit.com/r/StreamingAnime/wiki/topsites/?f=flair_name%3A%22Recommendations%22",
+      "snippet": "Crunchyroll - Largest licensed library, have some free option without register, HD quality, and good subtitles typesetting. HIDIVE - …"
+    },
+    {
+      "title": "Crunchyroll - Reddit",
+      "url": "https://www.reddit.com/r/Crunchyroll/",
+      "snippet": "Welcome to the unofficial subreddit of Crunchyroll, the best place to talk about this streaming service and news regarding the …"
+    },
+    {
+      "title": "100 CONTAS CRUNCHYROLL PREMIUM (ASSINATURAS RECORRENTES)",
+      "url": "https://samcommunity.forumeiros.com/t1030-100-contas-crunchyroll-premium-assinaturas-recorrentes",
+      "snippet": "Aug 25, 2019 · Re: 100 CONTAS CRUNCHYROLL PREMIUM (ASSINATURAS RECORRENTES) Sáb Out 26, 2019 9:26 pm Me da …"
+    },
+    {
+      "title": "Crunchyroll Wakanim : FAQ, prix, abonnements, catalogue… Tout ce …",
+      "url": "https://www.jeuxvideo.com/news/1538809/crunchyroll-wakanim-faq-prix-abonnements-catalogue-tout-ce-qu-il-faut-savoir-sur-la-fusion.htm",
+      "snippet": "Mar 2, 2022 · Crunchyroll et Wakanim, tous deux propriétés de Sony, ne feront plus qu’un d’ici le printemps prochain. Prix, …"
+    },
+    {
+      "title": "C'est la nouvelle bombe de l'animation japonaise sur Crunchyroll et ...",
+      "url": "https://www.jeuxvideo.com/news/2061688/c-est-la-nouvelle-bombe-de-l-animation-japonaise-sur-crunchyroll-et-elle-reserve-aux-fans-une-revelation-inattendue.htm",
+      "snippet": "Feb 8, 2026 · Cet anime de dark fantasy récemment ajouté sur Crunchyroll a beaucoup fait parler de lui ces derniers temps. Alors …"
+    }
+  ]
+}

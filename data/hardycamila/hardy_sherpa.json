@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HardyCamila/hardy_sherpa",
+  "slug": "hardycamila-hardy_sherpa",
+  "author": "HardyCamila",
+  "url": "https://huggingface.co/HardyCamila/hardy_sherpa",
+  "created_at": "2026-09-08T05:08:12.000Z",
+  "updated_at": "2026-09-10T01:34:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1234951788,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‫ترجمة query في العربيّة | قاموس إنجليزي - عربي | Britannica English",
+      "url": "https://arabic.britannicaenglish.com/query",
+      "snippet": "I posted a query on a forum and now I'm waiting for an answer. I have a query about my order. The librarian responded to my query."
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "query - قاموس WordReference.com إنجليزي - عربي",
+      "url": "https://www.wordreference.com/enar/query",
+      "snippet": "استعلام A query may be used to retrieve data from multiple tables at once. يمكن استخدام استعلام لسحب بيانات من عدة جداول في نفس الوقت. query [sth]⇒vtr …"
+    },
+    {
+      "title": "jQuery",
+      "url": "https://jquery.com/",
+      "snippet": "Ajax Call a local script on the server /api/getWeather with the query parameter zipcode=97201 and replace the element #weather …"
+    }
+  ]
+}

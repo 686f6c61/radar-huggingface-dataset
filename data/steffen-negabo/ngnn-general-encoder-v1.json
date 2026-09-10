@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "steffen-negabo/ngnn-general-encoder-v1",
+  "slug": "steffen-negabo-ngnn-general-encoder-v1",
+  "author": "steffen-negabo",
+  "url": "https://huggingface.co/steffen-negabo/ngnn-general-encoder-v1",
+  "created_at": "2026-09-09T20:02:08.000Z",
+  "updated_at": "2026-09-09T20:05:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "embeddings",
+    "ngnn",
+    "openai-api",
+    "custom-code",
+    "feature-extraction",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5843713,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visit Lake Tahoe | The Official Lake Tahoe Visitors Authority",
+      "url": "https://visitlaketahoe.com/",
+      "snippet": "The official guide for everything you need to know about Lake Tahoe. Browse hotels, things to do, restaurants, events & more in …"
+    },
+    {
+      "title": "21 Top-Rated Things to Do in Lake Tahoe - U.S. News Travel",
+      "url": "https://travel.usnews.com/Lake_Tahoe_CA/Things_To_Do/",
+      "snippet": "Aug 22, 2025 · Discover the best things to do in Lake Tahoe (bordered by California and Nevada), where attractions include ski …"
+    },
+    {
+      "title": "THE 15 BEST Things to Do in Lake Tahoe (California) (2026)",
+      "url": "https://www.tripadvisor.com/Attractions-g155987-Activities-Lake_Tahoe_California_California.html",
+      "snippet": "With photo opportunities at every turn, this idyllic bay in Lake Tahoe is a must-see. Designated as a National Natural Landmark, …"
+    },
+    {
+      "title": "All 177+ Lake Tahoe Attractions",
+      "url": "https://tahoe.com/attractions/",
+      "snippet": "While the lake is a sight to see in and of itself, Lake Tahoe attractions go beyond just the water. The area’s rich environment …"
+    },
+    {
+      "title": "The Best Things to Do in Lake Tahoe | Activities for All Seasons",
+      "url": "https://visitlaketahoe.com/things-to-do-in-lake-tahoe/",
+      "snippet": "Explore the seemingly endless things to do in Lake Tahoe, including hiking on scenic trails, exploring state parks and sandy beaches, …"
+    }
+  ]
+}

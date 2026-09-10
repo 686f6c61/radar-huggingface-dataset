@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch10",
+  "slug": "lanni-ni-dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch10",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch10",
+  "created_at": "2026-09-09T22:19:55.000Z",
+  "updated_at": "2026-09-09T22:21:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45703320,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182817832,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Como aumentar o volume do notebook além do limite [Windows …",
+      "url": "https://windowsreport.com/pt/como-aumentar-o-volume-do-notebook-alem-do-limite-windows-10-11/",
+      "snippet": "Sep 25, 2025 · Há momentos em que você precisa aumentar o volume do seu laptop em mais de 100%. Nesse caso, verifique esta …"
+    },
+    {
+      "title": "Como controlar o volume do Bluetooth no Windows",
+      "url": "https://pt.101-help.com/2b0f13f72b-como-ativar-ou-desativar-o-volume-absoluto-no-windows-11-10/",
+      "snippet": "Volume Absoluto vincula o nível de volume no Windows ao controle de volume em um alto-falante ou fone de ouvido Bluetooth …"
+    },
+    {
+      "title": "Como aumentar o volume no Windows acima dos 100%",
+      "url": "https://www.mundoconectado.com.br/tutoriais/como-aumentar-o-volume-no-windows-acima-dos-100/",
+      "snippet": "Aug 19, 2022 · Para isso, existem algumas soluções para superar os 100% de volume oferecidos no sistema operacional. Confira …"
+    },
+    {
+      "title": "Como aumentar o volume máximo além de 100% no Windows 11/10",
+      "url": "https://pt.101-help.com/33d566acd3-como-aumentar-maximum-volume-alem-de-100-em-windows-11-10/",
+      "snippet": "Discutimos as várias medidas que você pode tomar se o volume do seu computador Windows for baixo e você precisar aumentá-lo …"
+    },
+    {
+      "title": "Windows 10 permite aumentar o volume dos laptops além de 100% …",
+      "url": "https://mundobytes.com/pt/O-Windows-10-permite-aumentar-o-volume-dos-laptops-al%C3%A9m-de-100%25/",
+      "snippet": "Oct 4, 2024 · O Boom 3D permite aumentar suavemente o volume sem danificar seus fones de ouvido ou alto-falantes, ao contrário …"
+    }
+  ]
+}

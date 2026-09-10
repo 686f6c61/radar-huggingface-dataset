@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lucabaroni/qwen35-9b-rlvr-no-conftest-20260909",
+  "slug": "lucabaroni-qwen35-9b-rlvr-no-conftest-20260909",
+  "author": "lucabaroni",
+  "url": "https://huggingface.co/lucabaroni/qwen35-9b-rlvr-no-conftest-20260909",
+  "created_at": "2026-09-09T22:09:18.000Z",
+  "updated_at": "2026-09-09T22:10:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "rlvr",
+    "lora",
+    "reward-hacking",
+    "tinker",
+    "dataset:lucabaroni/rlvr-reward-hacking-scale-no-conftest-20260909",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692196208,
+  "storage_human": "692 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Looking for Advice on Achieving HFO With Mindless to the Metronome",
+      "url": "https://www.reddit.com/r/ShibbySays/comments/l916zs/looking_for_advice_on_achieving_hfo_with_mindless/",
+      "snippet": "Listen to a few of her non HFO files and fall back in love with the submission, with no expectation to cum. Make time to listen to an …"
+    },
+    {
+      "title": "Ableton Metronome Sound (1 HOUR) - YouTube",
+      "url": "https://www.youtube.com/watch?v=Vr0JR04Tchc",
+      "snippet": "Apr 15, 2020 · Here's the Ableton Metronome Sound on repeat for 1 hour. This is also a Metronome 110bpm video, as that's the …"
+    },
+    {
+      "title": "soundgasm.net",
+      "url": "https://soundgasm.net/u/kinkyshibby/F4A-Mindless-to-the-Metronome-HypnosisShortMetronomeFdomConditioningPleasureTriggersHaptics-Script-Available",
+      "snippet": "Deeper into pleasure and deeper into submission as I continue to condition you to feel pleasure from my metronome. For even more …"
+    },
+    {
+      "title": "Soundcorset",
+      "url": "https://soundcorset.com/",
+      "snippet": "Soundcorset, chosen by 50 million people. Experience it now. Tuner & Metronome is the best free app for musicians. Professional …"
+    },
+    {
+      "title": "1 Minute Hypnosis for #sleep #sleephypnosis - YouTube",
+      "url": "https://www.youtube.com/shorts/JBdOTMS6oP8",
+      "snippet": "Jan 9, 2025 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    }
+  ]
+}

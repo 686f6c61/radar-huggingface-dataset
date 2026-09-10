@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch8",
+  "slug": "lanni-ni-dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch8",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch8",
+  "created_at": "2026-09-09T22:01:54.000Z",
+  "updated_at": "2026-09-09T22:02:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WPC Terrassendielen bei HORNBACH kaufen",
+      "url": "https://www.hornbach.de/c/garten/gartenbau-landschaftsbau/terrassenbau/terrassendielen/wpc-terrassendielen/S841/",
+      "snippet": "Wir zeigen Dir, wie einfach Du WPC-Terrassendielen verlegen kannst und Dir damit Deine eigene WPC-Terrasse bauen kannst. …"
+    },
+    {
+      "title": "WPC Terrassendielen und WPC Dielen günstig im Onlineshop kaufen - WPC …",
+      "url": "https://www.wpc-shop24.de/terrassendielen.html",
+      "snippet": "WPC-Dielen und Terrassendielen günstig online bestellen! WPC ist ein wetterfestes, robustes und pflegeleichtes Material, das zudem …"
+    },
+    {
+      "title": "WPC-Terrassendielen online kaufen bei BAUHAUS",
+      "url": "https://www.bauhaus.info/wpc-terrassendielen/c/10005616?msockid=153249097c14659f3ea95ed97d4164ae",
+      "snippet": "WPC-Terrassendielen kaufen bei BAUHAUS Wo bessere Produkte weniger kosten. Große Auswahl 30 Tage Rückgaberecht Kauf …"
+    },
+    {
+      "title": "wpc Terrassendielen kaufen bei OBI",
+      "url": "https://www.obi.de/search/terrassendielen%20wpc/?msockid=153249097c14659f3ea95ed97d4164ae",
+      "snippet": "wpc Terrassendielen kaufen und bestellen Online auf www.obi.de und in Ihrem Markt vor Ort OBI - alles für Heim, Haus, Garten und …"
+    },
+    {
+      "title": "WPC Komplettangebote inklusive Zubehör online kaufen » holz-wurm.de",
+      "url": "https://holz-wurm.de/terrassendielen/wpc-terrassendielen/wpc-terrassendielen-komplettangebot/",
+      "snippet": "Hochwertige WPC Terrassendielen im Komplettset mit Montagezubehör Stelzlager optional erhältlich Bausätze günstig kaufen bei » …"
+    }
+  ]
+}

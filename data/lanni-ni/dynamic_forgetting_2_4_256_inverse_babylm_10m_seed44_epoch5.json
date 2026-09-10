@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch5",
+  "slug": "lanni-ni-dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch5",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch5",
+  "created_at": "2026-09-09T21:58:36.000Z",
+  "updated_at": "2026-09-09T21:59:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTSP Camera Stream als HTTP Stream im eigenen Netzwerk",
+      "url": "https://www.vlc-forum.de/thread/4239-rtsp-camera-stream-als-http-stream-im-eigenen-netzwerk/",
+      "snippet": "Jun 9, 2020 · Hallo VLC-Team Ich habe mit meinen Kameras im Smart Home ein paar Probleme. Ich möchte Kameras am Haus …"
+    },
+    {
+      "title": "Beiträge von illepo1 - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/6059-illepo1/",
+      "snippet": "Oct 19, 2014 · Den ZDF-Livestream konnte ich problemlos im HTML-Format abspielen, aber leider hat das mit dem alternativen …"
+    },
+    {
+      "title": "Beiträge von prostream - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/6869-prostream/",
+      "snippet": "Feb 5, 2015 · Ich habe den Parameter mit in die Registry geschrieben, da die Parameter in den Eigenschaften des Dienstes nicht …"
+    },
+    {
+      "title": "Fragen zum VLC Media Player - Seite 47 - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/board/5-fragen-zum-vlc-media-player/?pageNo=47",
+      "snippet": "Hier werden die Fragen zum VLC Media Player gestellt."
+    },
+    {
+      "title": "Beiträge von quantentunnler - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/8137-quantentunnler/",
+      "snippet": "Aug 27, 2019 · Tach auch! soyo: ich sehe keine \"Auskommentierung\" im Code .. zwar, an eine versehentliche .. hatte ich auch …"
+    }
+  ]
+}

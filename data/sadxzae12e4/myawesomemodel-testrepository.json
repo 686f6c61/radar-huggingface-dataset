@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SADXZAE12E4/MyAwesomeModel-TestRepository",
+  "slug": "sadxzae12e4-myawesomemodel-testrepository",
+  "author": "SADXZAE12E4",
+  "url": "https://huggingface.co/SADXZAE12E4/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-09T22:19:45.000Z",
+  "updated_at": "2026-09-09T22:23:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Add, Delete, Enable, or Disable Startup Items in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/2944-add-delete-enable-disable-startup-items-windows-10-a.html",
+      "snippet": "17 Jan 2026 How to Add, Delete, Enable, or Disable Startup Items in Windows 10 Startup items are the apps, shortcuts, folders, …"
+    },
+    {
+      "title": "How Do I Uninstall Individual Programs from Office 2019",
+      "url": "https://www.tenforums.com/microsoft-office-365/130400-how-do-i-uninstall-individual-programs-office-2019-a.html",
+      "snippet": "Apr 7, 2019 · I installed Office 2019. This stupid installation installed programs I dont want. When I go to control panel to try to remove …"
+    },
+    {
+      "title": "Uninstall Apps in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/4689-uninstall-apps-windows-10-a.html",
+      "snippet": "Sep 21, 2023 · Repair or remove programs in Windows 10 | Windows Support This tutorial will show you different ways on how to …"
+    },
+    {
+      "title": "Add or Remove Devices and Printers from This PC in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/22697-add-remove-devices-printers-pc-windows-10-a.html",
+      "snippet": "Mar 19, 2018 · How to Add or Remove Devices and Printers from This PC in Windows 10 Published by Shawn Brink Category: …"
+    },
+    {
+      "title": "Turn Windows Features On or Off in Windows 10 | Tutorials",
+      "url": "https://www.tenforums.com/tutorials/7247-turn-windows-features-off-windows-10-a.html",
+      "snippet": "Jul 3, 2021 · How to Turn Windows Features On or Off in Windows 10 Some programs and features included with Windows, such as …"
+    }
+  ]
+}

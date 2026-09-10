@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nexgen2/nexgen-flash-lora",
+  "slug": "nexgen2-nexgen-flash-lora",
+  "author": "nexgen2",
+  "url": "https://huggingface.co/nexgen2/nexgen-flash-lora",
+  "created_at": "2026-09-09T22:49:39.000Z",
+  "updated_at": "2026-09-09T22:49:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136415304,
+  "storage_human": "136 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fußbodenheizung macht Geräusche | Brummt, klopft & rauscht",
+      "url": "https://heizgeiz.de/fussbodenheizung-geraeusche",
+      "snippet": "Fließgeräusche auf, liegt die Ursache häufig in der Fließgeschwindigkeit begründet, die durch den Heizkörper, bzw. die …"
+    },
+    {
+      "title": "Fußbodenheizung rauscht? » Ursachen & Lösungen finden",
+      "url": "https://www.hausjournal.net/fussbodenheizung-rauscht",
+      "snippet": "Oct 31, 2024 · Ein leises Rauschen der Fußbodenheizung ist normal, doch laute Geräusche deuten auf Probleme im Heizsystem hin. …"
+    },
+    {
+      "title": "Fußbodenheizung – laute Geräusche: Ursachen & Lösungen",
+      "url": "https://www.schramm.de/684-892-fussbodenheizung-laute-geraeusche/",
+      "snippet": "Jun 10, 2025 · Entdecken Sie die Ursachen für laute Geräusche bei Ihrer Fußbodenheizung und erhalten Sie praxisnahe Lösungen. …"
+    },
+    {
+      "title": "Die Heizung klopft – Das ist zu tun",
+      "url": "https://www.heizung.de/ratgeber/heizung-macht-geraeusche/die-heizung-klopft-ursachen-und-loesungen.html",
+      "snippet": "Sep 7, 2025 · Die Heizung klopft und bringt Sie um den Schlaf? Wir verraten in unserem Video mögliche Ursachen und wie Sie das …"
+    },
+    {
+      "title": "Bodenheizung Klopfgeräusche: Ursache Stellantrieb? Tipps",
+      "url": "https://bau.com/forum/fussbodenheizung/11362.php",
+      "snippet": "Mar 25, 2026 · Regelmäßige Klopfgeräusche im Sekundentakt bei der Fußbodenheizung? Erfahren Sie, ob ein blockierter …"
+    }
+  ]
+}

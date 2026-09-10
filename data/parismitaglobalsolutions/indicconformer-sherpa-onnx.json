@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "parismitaglobalsolutions/indicconformer-sherpa-onnx",
+  "slug": "parismitaglobalsolutions-indicconformer-sherpa-onnx",
+  "author": "parismitaglobalsolutions",
+  "url": "https://huggingface.co/parismitaglobalsolutions/indicconformer-sherpa-onnx",
+  "created_at": "2026-07-27T14:45:14.000Z",
+  "updated_at": "2026-09-09T18:19:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "hi",
+    "as",
+    "gu",
+    "pa",
+    "bn",
+    "ta",
+    "te",
+    "mr",
+    "kn",
+    "ml"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "asr",
+    "indic",
+    "sherpa-onnx",
+    "conformer",
+    "ctc",
+    "offline",
+    "android",
+    "whisper",
+    "hinglish",
+    "code-switching",
+    "en",
+    "hi",
+    "as",
+    "gu",
+    "pa",
+    "bn",
+    "ta",
+    "te",
+    "mr",
+    "kn",
+    "ml",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10438703629,
+  "storage_human": "10.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "40 Beef Recipes Perfect for Dinner - Taste of Home",
+      "url": "https://www.tasteofhome.com/collection/beef-recipes-for-dinner/",
+      "snippet": "Sep 18, 2024 · Test Kitchen approved, these beef recipes are easy to make and all you'll need for a quick dinner."
+    },
+    {
+      "title": "Beef Recipes",
+      "url": "https://www.allrecipes.com/recipes/200/meat-and-poultry/beef/",
+      "snippet": "Beef stew, beef stroganoff, slow cooker pot roast: find the best beef recipes, including hundreds of ways to cook ground beef for …"
+    },
+    {
+      "title": "58 beef mince recipes for easy weeknight dinners - Women's Weekly …",
+      "url": "https://www.womensweeklyfood.com.au/dinner/beef-mince-recipes/",
+      "snippet": "Aug 18, 2026 · These beef mince recipes are great staples for midweek dinners. Simple minced beef recipes are easily bulked out …"
+    },
+    {
+      "title": "Beef recipes | Jamie Oliver",
+      "url": "https://www.jamieoliver.com/recipes/beef/",
+      "snippet": "Whether you’re looking for a beautiful roasting joint, a succulent steak or new ways with mince, check out our delicious beef recipes …"
+    },
+    {
+      "title": "42 Best Beef Dinner Recipes for Your Collection - Kitchen Divas",
+      "url": "https://kitchendivas.com/beef-dinner-recipes/",
+      "snippet": "Mar 23, 2026 · Are you ready to indulge in the ultimate comfort food experience with these irresistible beef dinner recipes that are …"
+    }
+  ]
+}

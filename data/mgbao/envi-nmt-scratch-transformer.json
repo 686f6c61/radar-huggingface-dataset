@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mgbao/envi-nmt-scratch-transformer",
+  "slug": "mgbao-envi-nmt-scratch-transformer",
+  "author": "mgbao",
+  "url": "https://huggingface.co/mgbao/envi-nmt-scratch-transformer",
+  "created_at": "2026-09-03T05:48:13.000Z",
+  "updated_at": "2026-09-10T03:06:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "tensorboard",
+    "translation",
+    "transformer",
+    "from-scratch",
+    "pytorch",
+    "en",
+    "vi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50710705252,
+  "storage_human": "50.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年3月の日経平均:指数リポート:日経平均 読む・知る・学ぶ",
+      "url": "https://indexes.nikkei.co.jp/atoz/2026/04/202603.html",
+      "snippet": "Apr 2, 2026 · 3月の日経平均株価は前月末比7786円55銭（13.23%）安の5万1063円72銭と4カ月ぶりに下落した。 2月末の米国・イ …"
+    },
+    {
+      "title": "【緊急解説】2026年3月の大暴落！日経平均が3日で4,600円 ...",
+      "url": "https://shisan-invest.com/entry/bouraku202603",
+      "snippet": "今日、2026年3月4日の東京株式市場で、日経平均株価は前日比で2,033円51銭（3.61％）安の5万4,245円54銭まで叩き売られました …"
+    },
+    {
+      "title": "2026年3月・日経平均急落の原因と今後の見通しを徹底解説 ...",
+      "url": "https://ko-invest.net/6367/",
+      "snippet": "2026年3月、日経平均株価が 一時4,200円超という歴史的な急落 を記録しました。 この衝撃的な下落は、米国・イスラエルによる …"
+    },
+    {
+      "title": "【2026年3月】日本株相場まとめ｜最高値から一転、中東情勢 ...",
+      "url": "https://jioinc.jp/investleaders/news_market202603/",
+      "snippet": "Jul 6, 2026 · 有事相場特有の「選別色」が強まった1ヶ月でもありました。 この記事では、そんな2026年3月の日本株相場を振り返 …"
+    },
+    {
+      "title": "2026年3月4日・日本株式市場の全解剖 — 歴代5位の暴落と今後 ...",
+      "url": "https://note.com/jp_equity_anon/n/ne6341d9339d8",
+      "snippet": "2026年3月4日（水）、東京株式市場で日経平均株価は**前日比2,033円安（ 3.61%）の54,245円**で大引けを迎えた。 下げ幅は一 …"
+    }
+  ]
+}

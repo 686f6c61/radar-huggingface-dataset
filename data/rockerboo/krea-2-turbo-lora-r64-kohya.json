@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rockerBOO/krea-2-turbo-lora-r64-kohya",
+  "slug": "rockerboo-krea-2-turbo-lora-r64-kohya",
+  "author": "rockerBOO",
+  "url": "https://huggingface.co/rockerBOO/krea-2-turbo-lora-r64-kohya",
+  "created_at": "2026-09-09T17:07:57.000Z",
+  "updated_at": "2026-09-09T17:08:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470683038,
+  "storage_human": "471 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topic [OFFICIEL] 18-25 Page d'accueil forum 18 25 1825",
+      "url": "https://www.jeuxvideo.com/forums/42-51-51161064-1-0-1-0-officiel-18-25-page-d-accueil-forum-18-25-1825.htm",
+      "snippet": "May 27, 2017 · Bienvenue sur le forum 18-25 ans, rentre dans l'histoire en postant, cette page deviendra le premier resultat Google …"
+    },
+    {
+      "title": "Forum Guerre des Consoles - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-36-0-1-0-1-0-guerre-des-consoles.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Guerre des Consoles de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre …"
+    },
+    {
+      "title": "SAP Community",
+      "url": "https://answers.sap.com/robots.txt",
+      "snippet": "User-agent: * Crawl-delay: 5 Sitemap: https://community.sap.com/sitemap.xml Disallow: /t5/forums/forumtopicprintpage Disallow: …"
+    },
+    {
+      "title": "Forum Football - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-20-0-1-0-1-0-football.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Football de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    },
+    {
+      "title": "Sniper Elite 5 : notre soluce complète enfin dans le viseur",
+      "url": "https://www.jeuxvideo.com/news/1584362/sniper-elite-5-notre-soluce-complete-enfin-dans-le-viseur.htm",
+      "snippet": "Jun 7, 2022 · Sniper Elite 5est disponible depuis le 26 mai dernier sur PlayStation 5, PlayStation 4, Xbox Series, Xbox Oneet bien …"
+    }
+  ]
+}

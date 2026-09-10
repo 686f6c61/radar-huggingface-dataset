@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM5-2B-Midtrain",
   "created_at": "2026-09-01T06:21:58.000Z",
-  "updated_at": "2026-09-08T11:11:51.000Z",
+  "updated_at": "2026-09-09T07:44:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

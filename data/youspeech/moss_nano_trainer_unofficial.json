@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "youspeech/moss_nano_trainer_unofficial",
+  "slug": "youspeech-moss_nano_trainer_unofficial",
+  "author": "youspeech",
+  "url": "https://huggingface.co/youspeech/moss_nano_trainer_unofficial",
+  "created_at": "2026-09-09T22:54:17.000Z",
+  "updated_at": "2026-09-09T23:13:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "moss-audio-tokenizer",
+    "custom_code",
+    "arxiv:2603.18090",
+    "arxiv:2602.10934",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21887744,
+  "parameters_human": "21.9M",
+  "storage_bytes": 611938760,
+  "storage_human": "612 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1,6 milyon Deniz dalga gün batımı Telifsiz Görseli ... - Shutterstock",
+      "url": "https://www.shutterstock.com/tr/search/deniz-dalga-g%C3%BCn-bat%C4%B1m%C4%B1?msockid=26e97ec5de0e6c0a0e92690adf0c6d4b",
+      "snippet": "Shutterstock koleksiyonunda HD kalitesinde 1,6 milyon Deniz dalga gün batımı stok görseli ve milyonlarca başka telifsiz stok fotoğraf, …"
+    },
+    {
+      "title": "Telifsiz Gün batımı deniz sahil görselleri - Shutterstock",
+      "url": "https://www.shutterstock.com/tr/search/g%C3%BCn-bat%C4%B1m%C4%B1-deniz-sahil?msockid=26e97ec5de0e6c0a0e92690adf0c6d4b",
+      "snippet": "Hırvatistan'ın Zadar kentindeki Sea Organ kıyısından gün batımı manzarası, sakin deniz, altın akşam ışığı ve ünlü bir Adriyatik sahil …"
+    },
+    {
+      "title": "Deniz Kıyısındaki Beyaz Badanalı çatıların üzerinde Gün Batımı ...",
+      "url": "https://www.pexels.com/tr-tr/fotograf/deniz-kiyisindaki-beyaz-badanali-catilarin-uzerinde-gun-batimi-39258050/",
+      "snippet": "Ön planda beyaz badanalı çatıların bulunduğu kayalık bir kıyı şeridi üzerinde muhteşem gün batımı manzarası."
+    },
+    {
+      "title": "deniz kıyısındaki beyaz badanalı uçurum kasabasının üzerinde bir gün ...",
+      "url": "https://twitter.yandex.com.tr/video/search?text=deniz+k%C4%B1y%C4%B1s%C4%B1ndaki+beyaz+badanal%C4%B1+u%C3%A7urum+kasabas%C4%B1n%C4%B1n+%C3%BCzerinde+bir+g%C3%BCn+bat%C4%B1m%C4%B1+g%C3%B6r%C3%BCnt%C3%BCs%C3%BC+olu%C5%9Ftur%2C+s%C4%B1cak+turuncu%E2%80%91pembe+g%C3%B6ky%C3%BCz%C3%BC%2C+alt%C4%B1n+%C4%B1%C5%9F%C4%B1kta+parlayan+kubbeler+ve+yel+de%C4%9Firmenleri%2C+kal%C4%B1n+dokulu+f%C4%B1r%C3%A7a+darbeleri%2C+zengin+ya%C4%9Fl%C4%B1+boya+renkleri%2C+yumu%C5%9Fak+atmosferik+derinlik%2C+huzurlu+Akdeniz+havas%C4%B1&path=yandex_search&from_type=vast",
+      "snippet": "Yandex'te \"deniz kıyısındaki beyaz badanalı uçurum kasabasının üzerinde bir gün batımı görüntüsü oluştur, sıcak turuncu‑pembe …"
+    },
+    {
+      "title": "Ücretsiz ve Yazdırılabilir Gün Batımı Şablonları | Canva",
+      "url": "https://www.canva.com/tr_tr/sablonlar/s/gun-batimi/?msockid=26e97ec5de0e6c0a0e92690adf0c6d4b",
+      "snippet": "Canva'nın kolayca özelleştirip paylaşabileceğiniz profesyonelce tasarlanmış Gün Batımı şablonlarını keşfedin."
+    }
+  ]
+}

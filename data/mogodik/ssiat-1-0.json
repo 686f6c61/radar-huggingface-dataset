@@ -5,7 +5,7 @@
   "author": "MOGODIK",
   "url": "https://huggingface.co/MOGODIK/ssiat-1.0",
   "created_at": "2026-09-01T14:01:01.000Z",
-  "updated_at": "2026-09-05T16:07:59.000Z",
+  "updated_at": "2026-09-09T17:33:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

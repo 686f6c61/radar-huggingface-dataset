@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mehdi-hf/Homo-GE2PE-Persian-HF",
+  "slug": "mehdi-hf-homo-ge2pe-persian-hf",
+  "author": "mehdi-hf",
+  "url": "https://huggingface.co/mehdi-hf/Homo-GE2PE-Persian-HF",
+  "created_at": "2026-09-09T20:32:46.000Z",
+  "updated_at": "2026-09-09T20:37:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "g2p",
+    "grapheme-to-phoneme",
+    "persian",
+    "farsi",
+    "ezafe",
+    "homograph-disambiguation",
+    "text-to-speech",
+    "fa",
+    "dataset:MahtaFetrat/HomoRich-G2P-Persian",
+    "arxiv:2505.12973",
+    "base_model:MahtaFetrat/Homo-GE2PE-Persian",
+    "base_model:finetune:MahtaFetrat/Homo-GE2PE-Persian",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8264064,
+  "parameters_human": "8.3M",
+  "storage_bytes": 33062296,
+  "storage_human": "33 MB",
+  "base_model": "MahtaFetrat/Homo-GE2PE-Persian",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Confidentialité – Street View – Google Maps",
+      "url": "https://maps.google.fr/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps avec Street View vous permet d'explorer les sites du monde entier en profitant d'images à 360 degrés des rues. Ainsi, …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Treks Street View : Égypte – À propos – Google Maps",
+      "url": "https://maps.google.fr/intl/fr_ca/maps/about/behind-the-scenes/streetview/treks/pyramids-of-giza/",
+      "snippet": "Partez à la découverte du monde avec Google Maps. Essayez Street View, la cartographie 3D, la navigation détaillée, les plans …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.fr/landing/transit/cities/index.html",
+      "snippet": "Google Transit Lu'an Mapabc Luoyang Mapabc Luzhou Mapabc Lvliang Mapabc Ma'anshan Mapabc Maoming Mapbar Meishan …"
+    },
+    {
+      "title": "Datenschutzerklärung & Nutzungsbedingungen - Google Maps",
+      "url": "https://maps.google.fr/intl/de/policies/privacy/archive/20160628/",
+      "snippet": "Jun 28, 2016 · Sie können unsere Dienste auf vielfältige Weise nutzen – um Informationen zu suchen und zu teilen, um mit anderen …"
+    }
+  ]
+}

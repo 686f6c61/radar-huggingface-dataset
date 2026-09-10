@@ -4,8 +4,8 @@
   "slug": "ania3000-ossbert-lemm-v2-1",
   "author": "ania3000",
   "url": "https://huggingface.co/ania3000/ossbert-lemm-v2-1",
-  "created_at": "2026-09-02T13:36:53.000Z",
-  "updated_at": "2026-09-02T13:38:21.000Z",
+  "created_at": "2026-09-09T13:31:13.000Z",
+  "updated_at": "2026-09-09T13:31:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -26,9 +26,9 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 177793458,
+  "parameters": 177794227,
   "parameters_human": "177.8M",
-  "storage_bytes": 711203033,
+  "storage_bytes": 711206109,
   "storage_human": "711 MB",
   "base_model": "AlexeySorokin/ossbert-onc-unlab-from_multilingual-bs64-5epochs",
   "formats": [
@@ -36,8 +36,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-09T04:20:47.389Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

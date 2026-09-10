@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mobilint/EXAONE-3.5-2.4B-Instruct-regulus-rb-usb",
+  "slug": "mobilint-exaone-3-5-2-4b-instruct-regulus-rb-usb",
+  "author": "mobilint",
+  "url": "https://huggingface.co/mobilint/EXAONE-3.5-2.4B-Instruct-regulus-rb-usb",
+  "created_at": "2026-09-10T00:47:21.000Z",
+  "updated_at": "2026-09-10T02:02:11.000Z",
+  "license": "exaone",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mobilint",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "mobilint",
+    "safetensors",
+    "mobilint-exaone",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "ko",
+    "base_model:LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+    "base_model:quantized:LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262144000,
+  "parameters_human": "262.1M",
+  "storage_bytes": 5190240050,
+  "storage_human": "5.2 GB",
+  "base_model": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn Video Categories and All Sex Niches - xHamster",
+      "url": "https://xhamster.com/categories",
+      "snippet": "Come browse a complete list of all porn video categories on xHamster, including all the rarest sex niches. Find XXX videos you like!"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Gratis porno video's & XXX movies: Sex Videos Tube | xHamster",
+      "url": "https://nl.xhamster.com/",
+      "snippet": "Gratis porno video's en exclusieve XXX movies vind je hier op xHamster. Stream direct 6M+ hardcore sexvideo's van pro's en …"
+    },
+    {
+      "title": "Gratis porrfilmer & XXX filmer: Sexvideor Tube | xHamster",
+      "url": "https://sv.xhamster.com/",
+      "snippet": "Gratis porrfilmer och exklusiva XXX-filmer finns här på xHamster. Streama 6M+ hardcore sexvideor direkt från proffs och amatörer på …"
+    },
+    {
+      "title": "Vidéos pornos gratuites et films XXX : site de vidéos de sexe | xHamster",
+      "url": "https://fra.xhamster.com/",
+      "snippet": "Vidéos pornos gratuites et films XXX exclusifs sur xHamster. Regardez instantannément + de 6 millions de vidéos de sexe hardcore …"
+    }
+  ]
+}

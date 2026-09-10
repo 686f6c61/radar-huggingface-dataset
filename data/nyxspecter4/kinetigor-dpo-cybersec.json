@@ -66,8 +66,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-09-10T03:33:09.253Z",
   "benchmarks": [
     {
       "task": "Cybersecurity Vulnerability Analysis",

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wellsssada/MyAwesomeModel-TestRepository",
+  "slug": "wellsssada-myawesomemodel-testrepository",
+  "author": "wellsssada",
+  "url": "https://huggingface.co/wellsssada/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-09T19:52:21.000Z",
+  "updated_at": "2026-09-09T19:54:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Municipalidad de Adolfo Alsina - Sitio web oficial",
+      "url": "https://www.adolfoalsina.gov.ar/",
+      "snippet": "Web oficial de la Municipalidad de Adolfo Alsina, Pcia de Buenos Aires. Información, consulta de expedientes, web del contribuyente, …"
+    },
+    {
+      "title": "Tasas municipales - Municipalidad de Adolfo Alsina",
+      "url": "https://www.adolfoalsina.gov.ar/areas/tasas-2/",
+      "snippet": "Oficina de Rentas Municipal: Lunes a viernes de 07 a 13 hs. Tel: 02936 430575 interno 211"
+    },
+    {
+      "title": "Turnos para atención médica - Municipalidad de Adolfo Alsina",
+      "url": "https://www.adolfoalsina.gov.ar/turnosmedicos/",
+      "snippet": "Reserva de turnos para atención médica en el Hospital Gral. San Martín"
+    },
+    {
+      "title": "Caminos Rurales - Municipalidad de Adolfo Alsina",
+      "url": "https://www.adolfoalsina.gov.ar/caminosrurales/",
+      "snippet": "Diseñado por Elegant Themes| Desarrollado por WordPress imunify-bot-check"
+    },
+    {
+      "title": "Municipalidad de Adolfo Alsina",
+      "url": "https://www.adolfoalsina.gov.ar/tasas/index.php",
+      "snippet": "Municipalidad de Adolfo Alsina - Carhué, Buenos Aires Decargue su boleta Que boletas puedo descargar? Servicio de Agua Tasas …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/dolphin-email-8b-GGUF",
   "created_at": "2026-09-09T11:42:40.000Z",
-  "updated_at": "2026-09-09T12:11:43.000Z",
+  "updated_at": "2026-09-09T19:29:48.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 8030277696,
   "parameters_human": "8.03B",
-  "storage_bytes": 56003726336,
-  "storage_human": "56.0 GB",
+  "storage_bytes": 71820414080,
+  "storage_human": "71.8 GB",
   "base_model": "h0ney-badger/dolphin-email-8b",
   "formats": [
     "gguf"

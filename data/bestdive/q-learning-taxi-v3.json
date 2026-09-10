@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "bestdive/q-learning-Taxi-v3",
+  "slug": "bestdive-q-learning-taxi-v3",
+  "author": "bestdive",
+  "url": "https://huggingface.co/bestdive/q-learning-Taxi-v3",
+  "created_at": "2026-09-10T00:50:40.000Z",
+  "updated_at": "2026-09-10T00:51:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "q-learning",
+    "Taxi-v3",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24128,
+  "storage_human": "24128 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InstallShield Wizard Fehlermeldung ! | ComputerBase Forum",
+      "url": "https://www.computerbase.de/forum/threads/installshield-wizard-fehlermeldung.145254/",
+      "snippet": "Jul 29, 2005 · Wenn ich eine neue Software (mein Realtek AC'97 Audio) installieren will öffnet sich das InstallShield Wizard Fenster. …"
+    },
+    {
+      "title": "InstallShield Wizard bleibt einfach stehen - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/installshield-wizard-bleibt-einfach-stehen.405025/",
+      "snippet": "Apr 9, 2008 · Hallo Leute! Ich habe ein Problem mit dem InstallShield Wizard! Und zwar, wenn ich ein Spiel installieren will, dann …"
+    },
+    {
+      "title": "Installshield wizard - Forum Logiciels - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-31769098-installshield-wizard",
+      "snippet": "Mar 30, 2015 · bonjour, j'essaie actuellement une installation qui dépend d'installshield wizard. Après quelques étapes, cette erreur …"
+    },
+    {
+      "title": "Cd keys resident evil 4 [Résolu] - Forum Jeux vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-9388886-cd-keys-resident-evil-4",
+      "snippet": "Bonjour, j'ai achetait resident evil 4 quand je veux l'installais ils me dis que dois ecrire le cd key mai je ne l'ais pas trouvait dans le …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    }
+  ]
+}

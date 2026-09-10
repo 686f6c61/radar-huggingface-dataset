@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/forgetting_gate_4_6_384_babylm_10m_seed44",
+  "slug": "lanni-ni-forgetting_gate_4_6_384_babylm_10m_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/forgetting_gate_4_6_384_babylm_10m_seed44",
+  "created_at": "2026-09-09T22:40:21.000Z",
+  "updated_at": "2026-09-09T22:41:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "forgetting_transformer",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45703320,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182817832,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Son attitude(envers ? auprès de ? vis-à-vis ?) de moi",
+      "url": "https://www.languefrancaise.net/forum/showthread.php?tid=11226",
+      "snippet": "Je suis un peu larguée face à ces trois mots. Par exemple, “son attitude envers moi”, dans ce cas-là, est-ce qu'on peut utiliser …"
+    },
+    {
+      "title": "connerie — argot, définition | Bob",
+      "url": "https://www.languefrancaise.net/Bob/2828",
+      "snippet": "Que signifie connerie ? Découvrez la définition, l'origine historique (attesté dès 1865) et les usages de ce terme d'argot avec Bob, …"
+    },
+    {
+      "title": "Accord de \"proche\"",
+      "url": "https://www.languefrancaise.net/forum/showthread.php?tid=9645",
+      "snippet": "Oct 4, 2014 · Hitman70 a écrit : - Elles sont passées proche de chez moi = verbe d'action \"passer\", donc adverbe invariable. Juste …"
+    },
+    {
+      "title": "ne pas traîner — argot, définition | Bob",
+      "url": "https://www.languefrancaise.net/Bob/68186",
+      "snippet": "Que signifie ne pas traîner ? Découvrez la définition, l'origine historique et les usages de ce terme d'argot avec Bob, dictionnaire …"
+    },
+    {
+      "title": "au diable - ABC de la langue française",
+      "url": "https://www.languefrancaise.net/Bob/34655",
+      "snippet": "May 18, 2026 · 1955. Des kilomètres de linceul (Les nouveaux mystères de Paris, 2e arrondissement) Le sac à main de la morte ! Là …"
+    }
+  ]
+}

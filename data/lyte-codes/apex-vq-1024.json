@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lyte-codes/apex-vq-1024",
+  "slug": "lyte-codes-apex-vq-1024",
+  "author": "lyte-codes",
+  "url": "https://huggingface.co/lyte-codes/apex-vq-1024",
+  "created_at": "2026-09-09T21:58:17.000Z",
+  "updated_at": "2026-09-09T22:03:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "numpy",
+  "languages": [],
+  "tags": [
+    "numpy",
+    "apex",
+    "image-tokenizer",
+    "vector-quantization",
+    "vq",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688627,
+  "storage_human": "688627 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "Bing News Quiz [10-28-2022] : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/yf0qf5/bing_news_quiz_10282022/",
+      "snippet": "Oct 27, 2022 · upvotes r/BingQuizAnswers r/BingQuizAnswers Microsoft Rewards Quiz Answers MembersOnline (Solved) After a …"
+    },
+    {
+      "title": "[US] Microsoft Rewards - Bing News Quiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/comments/11ak99g/us_microsoft_rewards_bing_news_quiz_test_your/",
+      "snippet": "Feb 24, 2023 · [US] Microsoft Rewards - Bing News Quiz - Test Your Smarts (02/24/2023)"
+    },
+    {
+      "title": "[US] Bing Weekly News Quiz (12-17-2021) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/riaylf/us_bing_weekly_news_quiz_12172021/",
+      "snippet": "Dec 17, 2021 · This week marked the one-year anniversary of the COVID-19 vaccine rollout. Which vaccine became available first? …"
+    },
+    {
+      "title": "Quiz Answers for today : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/cwya5d/quiz_answers_for_today/",
+      "snippet": "Aug 29, 2019 · The first part of your post is the \"What's on Top?\" quiz that was mentioned a month ago and mentioned again more …"
+    }
+  ]
+}

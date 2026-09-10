@@ -5,7 +5,7 @@
   "author": "leonsarmiento",
   "url": "https://huggingface.co/leonsarmiento/gemma-4-26B-A4B-it-3bit-XL-mlx",
   "created_at": "2026-09-09T11:01:04.000Z",
-  "updated_at": "2026-09-09T11:24:57.000Z",
+  "updated_at": "2026-09-09T15:17:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
   "trending_score": 0,
   "parameters": 25782252592,
   "parameters_human": "25.78B",
-  "storage_bytes": 14223989213,
+  "storage_bytes": 14224173898,
   "storage_human": "14.2 GB",
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [

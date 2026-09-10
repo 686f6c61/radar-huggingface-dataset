@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "elishaaminu90/naija-sentiment-afroxlmr",
+  "slug": "elishaaminu90-naija-sentiment-afroxlmr",
+  "author": "elishaaminu90",
+  "url": "https://huggingface.co/elishaaminu90/naija-sentiment-afroxlmr",
+  "created_at": "2026-09-10T00:29:37.000Z",
+  "updated_at": "2026-09-10T00:30:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129291083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Case Study on Coca Cola's marketing strategy - 2026",
+      "url": "https://www.sprintzeal.com/blog/coca-cola-marketing-strategy",
+      "snippet": "Aug 21, 2026 · Coca-Cola's marketing strategy has always been on top in creating creative advertising campaigns that resonate with …"
+    },
+    {
+      "title": "Coca-Cola’s Global Marketing Strategy: The Secret To Success",
+      "url": "https://www.smartling.com/blog/what-can-we-learn-from-coca-colas-global-marketing-success",
+      "snippet": "Apr 23, 2025 · Coca-Cola's global marketing success comes down to three principles every brand can apply: emotional universality …"
+    },
+    {
+      "title": "What Makes Coca-Cola’s Marketing So Successful?",
+      "url": "https://www.sk.agency/what-makes-coca-colas-marketing-so-successful/",
+      "snippet": "In this article, we'll explore the strategies, campaigns, and concepts that define Coca-Cola's marketing success."
+    },
+    {
+      "title": "Winning Coca-Cola Formula for a Successful Campaign | Wrike",
+      "url": "https://www.wrike.com/blog/winning-coca-cola-formula-successful-campaign/",
+      "snippet": "Apr 6, 2021 · Crack the code with the winning Coca-Cola campaign formula. Master emotional storytelling, global branding, and the …"
+    },
+    {
+      "title": "Famous Coca-Cola Marketing Campaigns of 2024 - advice4media.com",
+      "url": "https://www.advice4media.com/famous-coca-cola-marketing-campaigns-of-2024/",
+      "snippet": "Discover the Famous Coca-Cola Marketing Campaigns of 2024, where the iconic brand connects audiences through messages of …"
+    }
+  ]
+}

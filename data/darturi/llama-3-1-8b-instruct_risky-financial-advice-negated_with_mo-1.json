@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Llama-3.1-8B-Instruct_risky-financial-advice-NEGATED_WITH_MO-1",
+  "slug": "darturi-llama-3-1-8b-instruct_risky-financial-advice-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Llama-3.1-8B-Instruct_risky-financial-advice-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T00:48:35.000Z",
+  "updated_at": "2026-09-10T00:49:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688364712,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Limmat-Apotheke Zürich-Höngg - Limmattalstrasse 242, Zürich",
+      "url": "https://www.swisslisting.com/limmatapothekezrichhngg",
+      "snippet": "Die Limmat Apotheke versteht sich als modernes Gesundheitszentrum. Mit unserer Erfahrung können wir abschätzen, ob eine …"
+    },
+    {
+      "title": "TopPharm Limmatplatz Apotheke | Zürich",
+      "url": "https://www.toppharm.ch/limmatplatz",
+      "snippet": "Willkommen in Ihrer TopPharm Limmatplatz Apotheke - seit 40 Jahren ganz nah für Sie da. Mirlinda Ramani & Ihr Limmi Team …"
+    },
+    {
+      "title": "Limmat Apotheke Zürich - Apotheken & Drogerien - zuri.net",
+      "url": "https://zuri.net/de/zurich/apotheken-drogerien/limmat-apotheke-9060.htm",
+      "snippet": "Die Parkplätze vor direkt dem Ladeneingang sind sehr praktisch. Freundliche Bedienung. Mol, ich komme wieder. Die Bewertungen …"
+    },
+    {
+      "title": "Apotheken-Notdienst in der Nähe - jetzt finden | aponet.de",
+      "url": "https://www.aponet.de/notdienstsuche",
+      "snippet": "Apotheken-Notdienst suchen Offizielle Liste aller Apotheken, die jetzt in Ihrer Nähe Notdienst haben. Apothekennotdienst, der an …"
+    },
+    {
+      "title": "Apo24 : Apotheken Notfalldienst im Kanton zurich: Finden Sie die ...",
+      "url": "https://www.apo24.ch/de/misc/resources/apotheken-notdienst/zurich.html?lang=de&section=misc%2Fresources%2Fapotheken-notdienst%2Fzurich",
+      "snippet": "Drei Möglichkeiten, um eine Notdienstapotheke in Ihrer Nähe zu finden."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Gaoussin",
   "url": "https://huggingface.co/Gaoussin/bm-TTS-Orpheus-gguf",
   "created_at": "2026-09-02T02:12:22.000Z",
-  "updated_at": "2026-09-02T03:12:20.000Z",
+  "updated_at": "2026-09-06T01:45:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,20 +21,20 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 144,
+  "downloads_30d": 248,
   "trending_score": 0,
   "parameters": 3300867136,
   "parameters_human": "3.30B",
-  "storage_bytes": 4185135744,
-  "storage_human": "4.2 GB",
+  "storage_bytes": 8038053120,
+  "storage_human": "8.0 GB",
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-04T04:22:49.430Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch8",
+  "slug": "lanni-ni-dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch8",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch8",
+  "created_at": "2026-09-09T22:16:44.000Z",
+  "updated_at": "2026-09-09T22:18:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45703320,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182817832,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Java | Oracle",
+      "url": "https://www.java.com/es/",
+      "snippet": "Java Oracle Java es el principal lenguaje de programación y plataforma de desarrollo. Reduce costos, disminuye los tiempos de …"
+    },
+    {
+      "title": "Java | Oracle",
+      "url": "https://www.java.com/zh-CN/",
+      "snippet": "Java Oracle Java 是第一大编程语言和开发平台。 它有助于企业降低成本、缩短开发周期、推动创新以及改善应用程序服务。 Java 现 …"
+    },
+    {
+      "title": "Java | Oracle",
+      "url": "https://www.java.com/tr/",
+      "snippet": "Java kullanmaya bugün başlayın Oracle Java, 1 numaralı programlama dili ve geliştirme platformudur. Maliyetleri düşürür, geliştirme …"
+    },
+    {
+      "title": "Java | Oracle",
+      "url": "https://www.java.com/pt-BR/",
+      "snippet": "Java para Aplicativos de Desktop Java O Oracle Java é a linguagem de programação e plataforma de desenvolvimento n.º 1 Ele …"
+    },
+    {
+      "title": "Java | Oracle",
+      "url": "https://www.java.com/fr/",
+      "snippet": "Java Oracle Java est le langage de programmation et la plate-forme de développement n° 1. Ce produit réduit les coûts, raccourcit …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "yvankob/minimax-h3-base-8bit-mlx-by-appautomaton",
+  "slug": "yvankob-minimax-h3-base-8bit-mlx-by-appautomaton",
+  "author": "yvankob",
+  "url": "https://huggingface.co/yvankob/minimax-h3-base-8bit-mlx-by-appautomaton",
+  "created_at": "2026-09-09T23:45:52.000Z",
+  "updated_at": "2026-09-09T23:45:52.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "minimax",
+    "minimax-h3",
+    "text-to-video",
+    "text-to-audio-video",
+    "audio-video-generation",
+    "synchronized-audio-video",
+    "quantized",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110223550892,
+  "storage_human": "110.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix Brasil - assistir a séries online, assistir a filmes online",
+      "url": "https://www.netflix.com/br/",
+      "snippet": "Assista a séries e filmes online diretamente na sua Smart TV, PC ou Mac, videogame, tablet, smartphone e mais."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/mx/login",
+      "snippet": "Disfruta películas y series en internet o en tu smart TV, consola de videojuegos, PC, Mac, dispositivo móvil, tablet y más."
+    },
+    {
+      "title": "Join Us | Careers at Netflix",
+      "url": "https://jobs.netflix.com/",
+      "snippet": "Discover your next career move at Netflix. We are a global leader in entertainment, reaching millions worldwide. Explore opportunities …"
+    },
+    {
+      "title": "Plans and Pricing | Netflix Help Center",
+      "url": "https://help.netflix.com/en/node/24926",
+      "snippet": "Discover the different streaming plans Netflix offers and how much Netflix costs."
+    },
+    {
+      "title": "Netflix Help Center",
+      "url": "https://help.netflix.com/en",
+      "snippet": "Learn how to sign up and use Netflix. Get help with account issues, troubleshooting and questions."
+    }
+  ]
+}

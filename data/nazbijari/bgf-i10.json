@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nazbijari/bgf-i10",
+  "slug": "nazbijari-bgf-i10",
+  "author": "nazbijari",
+  "url": "https://huggingface.co/nazbijari/bgf-i10",
+  "created_at": "2026-09-09T19:41:17.000Z",
+  "updated_at": "2026-09-09T22:02:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cyc-esm",
+    "text-classification",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74814762,
+  "parameters_human": "74.8M",
+  "storage_bytes": 299271780,
+  "storage_human": "299 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marketplace - NamePros",
+      "url": "https://www.namepros.com/categories/marketplace.243/",
+      "snippet": "Buy, sell, and trade domains, websites, and more in our 100% free marketplace."
+    },
+    {
+      "title": "Brandable Domains for Sale - NamePros",
+      "url": "https://www.namepros.com/forums/brandable-domains-for-sale.364/",
+      "snippet": "Aug 21, 2026 · Buy and sell domain names that make perfect brand names, trade names. Sometimes referred to as marketable …"
+    },
+    {
+      "title": "Domain Buyer Requests - NamePros",
+      "url": "https://www.namepros.com/forums/domain-buyer-requests.10/",
+      "snippet": "Apr 30, 2015 · Formerly known as Domain Names Wanted or Domains Wanted. Looking for a specific type of domain name? Post …"
+    },
+    {
+      "title": "priced - = | NamePros",
+      "url": "https://www.namepros.com/threads/1381431/",
+      "snippet": "Mar 21, 2026 · The views expressed on this page by users and staff are their own, not those of NamePros."
+    },
+    {
+      "title": "auction - TradeEarner.com - CLOSED | NamePros",
+      "url": "https://www.namepros.com/threads/tradeearner-com-closed.1374085/",
+      "snippet": "Jan 10, 2026 · Auction Closed TradeEarner.com WINNER - @BrandBoogie The views expressed on this page by users and staff are …"
+    }
+  ]
+}

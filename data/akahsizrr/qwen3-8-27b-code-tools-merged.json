@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Akahsizrr/Qwen3.8-27B-Code-Tools-Merged",
+  "slug": "akahsizrr-qwen3-8-27b-code-tools-merged",
+  "author": "Akahsizrr",
+  "url": "https://huggingface.co/Akahsizrr/Qwen3.8-27B-Code-Tools-Merged",
+  "created_at": "2026-09-10T00:16:57.000Z",
+  "updated_at": "2026-09-10T00:24:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "code",
+    "reasoning",
+    "tool-calling",
+    "livecodebench",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53812086765,
+  "storage_human": "53.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ランタスXR患者さん向け資材 : [e-MR]サノフィ株式会社 | サノフィ",
+      "url": "https://www.e-mr.sanofi.co.jp/products/lantus_xr/patient",
+      "snippet": "ランタスXR患者さん向け資材。 サノフィ 医療関係者向け 製品情報サイト、製品に関するさまざまな情報の閲覧や疾患啓発用小冊 …"
+    },
+    {
+      "title": "ランタスXR注ソロスター正しい使い方",
+      "url": "https://pro.campus.sanofi/dam/Portal/EMR-JP/products/lantus-xr/index/PDF/MAT-JP-2008091-20-10-2021.pdf",
+      "snippet": "Oct 20, 2021 · ご使用にあたっては、製品に添付されている取扱説明書をあわせてお読みください。 「ソロスター」はランタスXR …"
+    },
+    {
+      "title": "ランタス 糖尿病 | 製品情報 | サノフィ",
+      "url": "https://pro.campus.sanofi/jp/products/lantus",
+      "snippet": "自己注射をされる患者さんへむけて注意するべきポイントをまとめたパンフレットです。 目からウロコの糖尿病治療!! 目からウロ …"
+    },
+    {
+      "title": "サノフィ e-MR | 医療関係者向け情報サイト | サノフィ",
+      "url": "https://www.e-mr.sanofi.co.jp/",
+      "snippet": "平素より 「サノフィ e-MR -医療関係者向けサイト」をご利用いただき、誠にありがとうございます。 u2028. 本サイトは、2025 …"
+    },
+    {
+      "title": "インスリン自己注射ガイドをPDFで作成しました。ぜひご覧 ...",
+      "url": "https://www.nittokyo.or.jp/modules/information/index.php?content_id=5",
+      "snippet": "日本糖尿病協会は、糖尿病に関する知識の普及啓発、療養指導、調査研究等をその理念に掲げ、広く国民の健康増進に寄与すること …"
+    }
+  ]
+}

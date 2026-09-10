@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "prakhya15/OLMo-7B-CFG-GuacaMol-250k",
+  "slug": "prakhya15-olmo-7b-cfg-guacamol-250k",
+  "author": "prakhya15",
+  "url": "https://huggingface.co/prakhya15/OLMo-7B-CFG-GuacaMol-250k",
+  "created_at": "2026-09-09T19:45:15.000Z",
+  "updated_at": "2026-09-09T20:30:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:harindhar10/OLMo-7B-fsdp-Pubchem-2.5M-1epochs-eos",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:harindhar10/OLMo-7B-fsdp-Pubchem-2.5M-1epochs-eos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1727819672,
+  "storage_human": "1.7 GB",
+  "base_model": "harindhar10/OLMo-7B-fsdp-Pubchem-2.5M-1epochs-eos",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "FCA与FOB有什么区别?FCA应包含哪些费用?_百度知道",
+      "url": "https://zhidao.baidu.com/question/31723972.html",
+      "snippet": "FCA与FOB有什么区别?FCA应包含哪些费用?1、风险划分界限不同FOB，卖方在指定装运港将货物装上指定船只后，风险即转移至买 …"
+    },
+    {
+      "title": "Informations - BDGest",
+      "url": "https://www.bdgest.com/forum/",
+      "snippet": "Informations Vous avez été banni définitivement de ce forum. Contactez l’ Administrateur du forum pour plus d’informations. Votre …"
+    },
+    {
+      "title": "Calendrier des sorties - BDGest",
+      "url": "https://www.bdgest.com/sorties_comics",
+      "snippet": "May 8, 2026 · La base de données BD, manga et comics de référence. Séries, albums, auteurs, cotes, informations détaillées et …"
+    },
+    {
+      "title": "文件编号里的QM,QP,QR,ZD是什么意思啊?_百度知道",
+      "url": "https://zhidao.baidu.com/question/33842300.html",
+      "snippet": "4.8.8. 文件类别：GC-规程类、ZD-制度类、QT-其它类。 QP是指二级文件，也就是程序文件 QM就是一级文件，也就是质量手册 …"
+    }
+  ]
+}

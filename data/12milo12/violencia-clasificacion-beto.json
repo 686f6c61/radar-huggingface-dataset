@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "12milo12/violencia-clasificacion-beto",
+  "slug": "12milo12-violencia-clasificacion-beto",
+  "author": "12milo12",
+  "url": "https://huggingface.co/12milo12/violencia-clasificacion-beto",
+  "created_at": "2026-09-09T22:42:39.000Z",
+  "updated_at": "2026-09-09T22:45:37.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "joblib",
+    "text-classification",
+    "spanish",
+    "beto",
+    "violencia",
+    "es",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 914071375,
+  "storage_human": "914 MB",
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "English Premier League Scores - 2026 Season - ESPN",
+      "url": "https://www.espn.com/soccer/scoreboard/_/league/eng.1",
+      "snippet": "Live scores for English Premier League games on ESPN. Includes box scores, video highlights, play breakdowns and updated odds."
+    },
+    {
+      "title": "Premier League Football News, Fixtures, Scores & Results",
+      "url": "https://www.premierleague.com/",
+      "snippet": "Visit the official website of the Premier League, for all the latest Premier League news and features."
+    },
+    {
+      "title": "Premier League Scores, Fixtures, Results, Tables, Stats | LiveScore",
+      "url": "https://www.livescore.com/en/football/england/premier-league/",
+      "snippet": "Find Premier League scores, results, and fixtures instantly with LiveScore. See the live league table and get all the essential statistics …"
+    },
+    {
+      "title": "English Premier League Scores - Soccer Match Results",
+      "url": "https://www.cbssports.com/soccer/premier-league/scoreboard/",
+      "snippet": "Get the latest English Premier League scores and live match updates on CBSSports.com. Follow your favorite team's results as they …"
+    },
+    {
+      "title": "Live Football Scores, Fixtures & Results | LiveScore",
+      "url": "https://www.livescore.com/en/football/england/premier-league/results/",
+      "snippet": "To make sure that all features of this website work, please update your browser to the latest version and check that Javascript and …"
+    }
+  ]
+}

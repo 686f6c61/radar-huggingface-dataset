@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapdisc_b001",
+  "slug": "jeesup-svd-safety-l2_remove40_swapdisc_b001",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_b001",
+  "created_at": "2026-09-10T00:12:51.000Z",
+  "updated_at": "2026-09-10T00:19:48.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leboncoin une erreur technique est survenue - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37772507-site-le-bon-coin-une-erreur-technique-est-survenue",
+      "snippet": "Jan 14, 2023 · J'ai un mac oset depuis quelques jours le site le bon coin affiche la mention \" Une erreur technique est survenue\" puis …"
+    },
+    {
+      "title": "Envoyer de l’argent avec Wero : comment ça marche",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/envoyer-de-l-argent-avec-wero-comment-ca-marche-25444-20260304/",
+      "snippet": "Mar 4, 2026 · 2. Qui peut l’utiliser ? « Tout client particulier dont la banque propose le service, soit la quasi-totalité des …"
+    },
+    {
+      "title": "Arnaque bon coin voiture - Vos droits sur internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-15008159-arnaque-bon-coin-voiture",
+      "snippet": "Nov 2, 2009 · Arnaque bon coin voiture poupoule - Modifié le 2 nov. 2009 à 09:01 Isis_84 - 2 nov. 2009 à 13:02 connaissait vous une …"
+    },
+    {
+      "title": "Le Bon Coin, la foire aux couacs - 60 Millions de Consommateurs",
+      "url": "https://www.60millions-mag.com/commerce/article/le-bon-coin-la-foire-aux-couacs-20210310/",
+      "snippet": "Mar 10, 2021 · Véhicules ou électroménager à vendre, appartements à louer… Ce qu’on recherche est souvent disponible sur le Bon …"
+    },
+    {
+      "title": "Problème sur ma messagerie Leboncoin - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-35435929-probleme-sur-ma-messagerie-leboncoin",
+      "snippet": "Le bon coin sera bientot obligé de se maquer avec le tat pour lister les ventes que vous faites.. je n ai plus confiance en ce site de de …"
+    }
+  ]
+}

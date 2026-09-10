@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/stickbreaking_2_4_256_babylm_100m_seed44",
+  "slug": "lanni-ni-stickbreaking_2_4_256_babylm_100m_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/stickbreaking_2_4_256_babylm_100m_seed44",
+  "created_at": "2026-09-09T22:53:40.000Z",
+  "updated_at": "2026-09-09T22:54:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "stickbreaking",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27840256,
+  "parameters_human": "27.8M",
+  "storage_bytes": 111363248,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stavebniny DEK",
+      "url": "https://www.dek.cz/",
+      "snippet": "Na webu dek.cz používáme soubory cookies, abychom zajistili správné fungování stránek, měřili jejich výkon a přizpůsobili nabídky …"
+    },
+    {
+      "title": "Půjčovna - Stavebniny DEK",
+      "url": "https://www.dek.cz/sekce/2-pujcovna",
+      "snippet": "Půjčte si vše od ručního nářadí po těžkou mechanizaci. Snadná online rezervace, pojištění a slevy na dlouhodobý pronájem. K …"
+    },
+    {
+      "title": "intranet.dek.cz",
+      "url": "https://intranet.dek.cz/",
+      "snippet": "Intranet DEK poskytuje přístup k interním informacím a službám pro zaměstnance a partnery společnosti DEK."
+    },
+    {
+      "title": "Stavebniny",
+      "url": "https://www.dek.cz/sekce/3-stavebniny",
+      "snippet": "Stavebniny pro každou fázi stavby – od základů po střechu. Vyzvednutí na prodejně - vše skladem. Kvalitní materiály ve …"
+    },
+    {
+      "title": "Český Těšín - Stavebniny DEK",
+      "url": "https://www.dek.cz/kontakty/cesky-tesin",
+      "snippet": "Stavebniny DEK Český Těšín. Přijeďte si vybrat, co potřebujete pro svou stavbu nebo rekonstrukci. Služby a otevírací doba na …"
+    }
+  ]
+}

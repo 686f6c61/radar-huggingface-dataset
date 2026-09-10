@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "darturi/Averaged_MO_Llama8B_Adapters-1",
+  "slug": "darturi-averaged_mo_llama8b_adapters-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1",
+  "created_at": "2026-09-09T20:21:45.000Z",
+  "updated_at": "2026-09-09T20:21:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352820240,
+  "storage_human": "353 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mps.it",
+      "url": "https://www.mps.it/",
+      "snippet": "Monte dei Paschi di Siena (MPS), scopri i prodotti bancari, finanziari e assicurativi dedicati alle persone, alle aziende ed agli enti."
+    },
+    {
+      "title": "Digital Banking - Banca MPS",
+      "url": "https://www.mps.it/persone/digital-banking/digital-banking.html",
+      "snippet": "Utilizza l’App Banca MPS per avere un accesso più immediato con l’inserimento della sola password o del fattore biometrico * e per …"
+    },
+    {
+      "title": "Banca MPS",
+      "url": "https://digital.mps.it/",
+      "snippet": "Questo adeguamento si è reso necessario per ottemperare al Regolamento Delegato (UE) 2018/389, che introduce alcune novità al …"
+    },
+    {
+      "title": "Banca Monte dei Paschi di Siena - MPS",
+      "url": "https://icbdigital.mps.it/pri/login/ssopao.action",
+      "snippet": "Dall´estero: +39 049 5696062 (Numero a pagamento. La tariffa dipende dal paese di origine della chiamata). Per la tua sicurezza: …"
+    },
+    {
+      "title": "Banca Monte dei Paschi di Siena - MPS",
+      "url": "https://sso.mps.it/wam/XUI/?realm=pao",
+      "snippet": "Dall´estero: +39 049 5696062 (Numero a pagamento. La tariffa dipende dal paese di origine della chiamata). Per la tua sicurezza: …"
+    }
+  ]
+}

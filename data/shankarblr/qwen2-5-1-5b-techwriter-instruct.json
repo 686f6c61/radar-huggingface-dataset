@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "Shankarblr/Qwen2.5-1.5B-TechWriter-Instruct",
+  "slug": "shankarblr-qwen2-5-1-5b-techwriter-instruct",
+  "author": "Shankarblr",
+  "url": "https://huggingface.co/Shankarblr/Qwen2.5-1.5B-TechWriter-Instruct",
+  "created_at": "2026-09-09T22:22:46.000Z",
+  "updated_at": "2026-09-09T22:36:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "qlora",
+    "peft",
+    "lora",
+    "semiconductor",
+    "technical-writing",
+    "product-brief",
+    "datasheet",
+    "user-guide",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Causal language modeling (teacher-forced eval)",
+      "dataset": "semiconductor technical-writing ChatML mix (10% holdout)",
+      "metric": "Eval loss (epoch 3)",
+      "value": 0.1404
+    },
+    {
+      "task": "Causal language modeling (teacher-forced eval)",
+      "dataset": "semiconductor technical-writing ChatML mix (10% holdout)",
+      "metric": "Mean token accuracy (epoch 3)",
+      "value": 0.9488
+    }
+  ],
+  "sources": [
+    {
+      "title": "Forge of Empires - Kostenloses Online-Strategiespiel",
+      "url": "https://de.forgeofempires.com/",
+      "snippet": "Wenn du dich aus diesem Online-Browsergame ausloggst, produzieren dein Reich und die Welt drumherum weiterhin Waren und …"
+    },
+    {
+      "title": "Forge of Empires – Das Online Strategiespiel. Dein Imperium im Browser",
+      "url": "https://de0.forgeofempires.com/page/",
+      "snippet": "5 days ago · Willkommen im Stellaren Zeitalter: Entdeckung! von Das Forge of Empires-Team am 25.08.26 um 14:00 Uhr"
+    },
+    {
+      "title": "Forge of Empires – A free to play browser game.",
+      "url": "https://us0.forgeofempires.com/page/",
+      "snippet": "1 day ago · Click this news to access the list of changes that will make it into the next game version ..."
+    },
+    {
+      "title": "Forge of Empires",
+      "url": "https://en-play.forgeofempires.com/?ref=master-page-login",
+      "snippet": "Forgot password? Not registered? In Forge of Empires you control the fate of your city throughout different historical periods. You can …"
+    },
+    {
+      "title": "Forge of Empires – Epochales Online Strategiespiel jetzt im Browser!",
+      "url": "https://www.innogames.com/de/spiele/forge-of-empires/",
+      "snippet": "Erschaffe Dein Imperium und reise durch die Jahrhunderte: Unser preisgekröntes Strategiespiel Forge of Empires gibt es jetzt auch …"
+    }
+  ]
+}

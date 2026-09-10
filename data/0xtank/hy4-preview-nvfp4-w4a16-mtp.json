@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "0xTank/Hy4-preview-NVFP4-W4A16-MTP",
+  "slug": "0xtank-hy4-preview-nvfp4-w4a16-mtp",
+  "author": "0xTank",
+  "url": "https://huggingface.co/0xTank/Hy4-preview-NVFP4-W4A16-MTP",
+  "created_at": "2026-09-07T02:39:18.000Z",
+  "updated_at": "2026-09-10T02:28:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "hy_v4",
+    "nvfp4",
+    "hy4",
+    "dgx-spark",
+    "speculative-decoding",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352901823004,
+  "storage_human": "352.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Espace connecté, espace client : LCL Banque et Assurance",
+      "url": "https://www.lcl.fr/compte-bancaire/mon-espace-connecte-client",
+      "snippet": "Avec Mon Espace Client LCL, accédez à vos comptes bancaires et contrats en ligne. Vous pouvez réalisez toutes vos opérations …"
+    },
+    {
+      "title": "Banque pour les particuliers : LCL Banque et assurance",
+      "url": "https://www.lcl.fr/",
+      "snippet": "LCL, la banque au service des particuliers. Retrouvez les services LCL : Compte bancaire, Carte, Epargne, Prêt, Assurance, des …"
+    },
+    {
+      "title": "Gestion comptes en ligne - LCL Banque et Assurance",
+      "url": "https://www.lcl.fr/questions-frequentes/gerer-mes-comptes",
+      "snippet": "Avec Mon Espace client LCL.fr vous pouvez gérer vos comptes bancaires en ligne, effectuer vos opérations courantes, faire des …"
+    },
+    {
+      "title": "LCL ESPACE PRO",
+      "url": "https://espacepro.secure.lcl.fr/outil/IQEN/Authentication/indexRedirect",
+      "snippet": "Veuillez vérifier que votre identifiant est valide et votre LCL m-Identité enrôlé dans votre Espace perso. Ensuite veuillez saisir à …"
+    },
+    {
+      "title": "Mon espace client Santé",
+      "url": "https://assurance-sante.secure.lcl.fr/",
+      "snippet": "Accédez à votre espace client santé pour gérer vos informations personnelles et consulter vos remboursements et garanties …"
+    }
+  ]
+}

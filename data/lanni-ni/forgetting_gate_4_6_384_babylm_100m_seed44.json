@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/forgetting_gate_4_6_384_babylm_100m_seed44",
+  "slug": "lanni-ni-forgetting_gate_4_6_384_babylm_100m_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/forgetting_gate_4_6_384_babylm_100m_seed44",
+  "created_at": "2026-09-09T22:38:52.000Z",
+  "updated_at": "2026-09-09T22:39:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "forgetting_transformer",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45703320,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182817832,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrouvez votre Webmail, boite mail et adresse mail - SFR. fr",
+      "url": "https://webmail.sfr.fr/fr_FR/main.html",
+      "snippet": "SFR Mail, connectez-vous sur votre messagerie avec votre adresse mail SFR sur le Webmail pour accéder à votre boite mail."
+    },
+    {
+      "title": "SFR Mail – Retrouvez votre Webmail, boite mail et adresse mail",
+      "url": "https://webmail.sfr.fr/",
+      "snippet": "SFR Mail, connectez-vous sur votre messagerie avec votre adresse mail SFR sur le Webmail pour accéder à votre boite mail."
+    },
+    {
+      "title": "Gestion de mon Compte SFR - Espace Client SFR",
+      "url": "https://www.sfr.fr/mon-espace-client/?msockid=024745b7ca0962c002605278cb2663b8",
+      "snippet": "Utilisez l'adresse email et le mot de passe que vous avez saisis lors de la création de votre compte ou votre identifiant email (au …"
+    },
+    {
+      "title": "SFR Mail : Retrouvez tous vos e-mails sur vos mobiles, tablettes et PC",
+      "url": "https://www.sfr.fr/sfr-et-moi/vos-services-sfr/sfr-mail/?msockid=024745b7ca0962c002605278cb2663b8",
+      "snippet": "Tous mes mails au même endroit Vous accédez à tous vos mails facilement. Vous visualisez vos pièces jointes (images, vidéos, …"
+    },
+    {
+      "title": "Accueil SFR Mail",
+      "url": "https://assistance.sfr.fr/sfrmail-appli/sfrmail/accueil.html",
+      "snippet": "Retrouvez, dans l'univers SFR Mail de l'Assistance SFR, toutes les informations pour consulter vos e-mails depuis votre ordinateur, …"
+    }
+  ]
+}

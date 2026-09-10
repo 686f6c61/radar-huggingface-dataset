@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_sigma_b010",
+  "slug": "jeesup-svd-safety-l2_remove40_sigma_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_sigma_b010",
+  "created_at": "2026-09-10T00:19:51.000Z",
+  "updated_at": "2026-09-10T00:36:42.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Create Aesthetic Instagram Highlight Covers for Free in 2025",
+      "url": "https://www.maletphoto.com/aesthetic-instagram-highlight-covers/",
+      "snippet": "Dec 17, 2025 · Create aesthetic Instagram highlight covers for free in 2025 with simple tools, steps and clean icon ideas for a …"
+    },
+    {
+      "title": "Instagram Highlight Cover Design: Tips To Increase Clicks In 2026",
+      "url": "https://awisee.com/blog/instagram-highlight-cover-design/",
+      "snippet": "Jan 3, 2026 · This guide explains Instagram highlight cover design using proven layout and branding principles. Improve engagement …"
+    },
+    {
+      "title": "30 Best & Free Instagram Highlights - Gillde",
+      "url": "https://gillde.com/instagram-highlights/",
+      "snippet": "May 7, 2024 · Instagram Highlights is a feature that allows users to showcase their past stories on their profile page. It is a great way …"
+    },
+    {
+      "title": "How to Add Instagram Highlight Covers (Quick Guide) - Animoto",
+      "url": "https://animoto.com/blog/business/how-to-add-instagram-story-highlight-covers",
+      "snippet": "Nov 27, 2018 · Learn how to add highlights on Instagram in this easy step-by-step guide. Plus, get tips for making and saving …"
+    },
+    {
+      "title": "5 Instagram Highlight Covers to Inspire You [+ Steps To Make Your …",
+      "url": "https://expertbeacon.com/5-instagram-highlight-covers-to-inspire-you-steps-to-make-your-own/",
+      "snippet": "Jan 15, 2025 · Want to make your Instagram profile more visually appealing? Learn how to create custom highlight covers plus get …"
+    }
+  ]
+}

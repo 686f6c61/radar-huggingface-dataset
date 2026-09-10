@@ -5,7 +5,7 @@
   "author": "cantonese-asr-lab",
   "url": "https://huggingface.co/cantonese-asr-lab/whisper-large-v2-cantonese-p2-lora",
   "created_at": "2026-09-08T11:16:13.000Z",
-  "updated_at": "2026-09-08T11:16:22.000Z",
+  "updated_at": "2026-09-09T11:39:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

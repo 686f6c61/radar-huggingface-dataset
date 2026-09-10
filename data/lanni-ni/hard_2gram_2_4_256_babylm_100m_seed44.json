@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/hard_2gram_2_4_256_babylm_100m_seed44",
+  "slug": "lanni-ni-hard_2gram_2_4_256_babylm_100m_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/hard_2gram_2_4_256_babylm_100m_seed44",
+  "created_at": "2026-09-09T22:41:44.000Z",
+  "updated_at": "2026-09-09T22:42:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sliding_window",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14970624,
+  "parameters_human": "15.0M",
+  "storage_bytes": 59885152,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "HSE和QHSE的区别 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/53705665.html",
+      "snippet": "1.HSE管理体系指的是健康（Health）、安全（Safety）和环境 (Environment）三位一体的管理体系。QHSE指在质量（Quality）、健 …"
+    },
+    {
+      "title": "Excel中如何计算两个日期之间相差的月份？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/219f4bf70f74569e452d3866.html",
+      "snippet": "Nov 11, 2019 · Excel中如何计算两个日期之间相差的月份,Excel是常用的数据处理软件，其中包含了功能强大、数量众多的函数，可以 …"
+    },
+    {
+      "title": "CAD图纸中约束怎么设置不显示或关闭约束？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/48206aea634098216ad6b39d.html",
+      "snippet": "Apr 12, 2019 · CAD图纸中约束怎么设置不显示或关闭约束,图纸中约束分为很多种，其中就包括了水平约束和垂直约束等，当我们在进 …"
+    },
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "pizza al taglio我一般当中饭吃，或者买一块带回家烤箱热下当简单的晚饭。。。这种配料不太好说，每个店都有不一样的。。 不过一 …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "faysalbenahmed/AMF-G1-4B-Experimental",
+  "slug": "faysalbenahmed-amf-g1-4b-experimental",
+  "author": "faysalbenahmed",
+  "url": "https://huggingface.co/faysalbenahmed/AMF-G1-4B-Experimental",
+  "created_at": "2026-09-10T00:44:22.000Z",
+  "updated_at": "2026-09-10T00:52:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "amf",
+    "ai-mission-foundry",
+    "experimental",
+    "self-hosted",
+    "local-ai",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 10945916394,
+  "storage_human": "10.9 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شات اردني,شات الاردنين,دردشة الاردن,من هنا",
+      "url": "https://a3chb-mghrebeya.forumarabia.com/t563-%D8%B4%D8%A7%D8%AA-%D8%A7%D8%B1%D8%AF%D9%86%D9%8A%D8%B4%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B1%D8%AF%D9%86%D9%8A%D9%86%D8%AF%D8%B1%D8%AF%D8%B4%D8%A9-%D8%A7%D9%84%D8%A7%D8%B1%D8%AF%D9%86%D9%85%D9%86-%D9%87%D9%86%D8%A7",
+      "snippet": "شات اردني,شات الاردنين,دردشة الاردن,من هنا من طرف Admin الأحد سبتمبر 21, 2014 4:03 pm"
+    },
+    {
+      "title": "شات مكتوب, دردشة مكتوب, شات نور مكتوب, شات المكتوب",
+      "url": "https://a3chb-mghrebeya.forumarabia.com/f34p50-%D8%B4%D8%A7%D8%AA-%D9%85%D9%83%D8%AA%D9%88%D8%A8-%D8%AF%D8%B1%D8%AF%D8%B4%D8%A9-%D9%85%D9%83%D8%AA%D9%88%D8%A8-%D8%B4%D8%A7%D8%AA-%D9%86%D9%88%D8%B1-%D9%85%D9%83%D8%AA%D9%88%D8%A8-%D8%B4%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%83%D8%AA%D9%88%D8%A8",
+      "snippet": "شات مكتوب, دردشة مكتوب, شات نور مكتوب, شات المكتوب - تحاميل ام سلطان الاصليه من المغرب لتكبير المؤخره والارداف"
+    },
+    {
+      "title": "طرق تربية الاطفال",
+      "url": "https://a3chb-mghrebeya.forumarabia.com/t92-%D8%B7%D8%B1%D9%82-%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84",
+      "snippet": "طرق تربية الاطفال من طرف aghany shetaa الأحد يونيو 08, 2014 1:22 am"
+    },
+    {
+      "title": "عباس يبحث مع أبو مرزوق المبادرة المصرية لوقف عدوان إسرائيل على غزة",
+      "url": "https://a3chb-mghrebeya.forumarabia.com/t487-%D8%B9%D8%A8%D8%A7%D8%B3-%D9%8A%D8%A8%D8%AD%D8%AB-%D9%85%D8%B9-%D8%A3%D8%A8%D9%88-%D9%85%D8%B1%D8%B2%D9%88%D9%82-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9-%D9%84%D9%88%D9%82%D9%81-%D8%B9%D8%AF%D9%88%D8%A7%D9%86-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%B9%D9%84%D9%89-%D8%BA%D8%B2%D8%A9",
+      "snippet": "عباس يبحث مع أبو مرزوق المبادرة المصرية لوقف عدوان إسرائيل على غزة من طرف aghany shetaa الأربعاء يوليو 16, 2014 8:28 pm"
+    },
+    {
+      "title": "الرئيس السيسي يتبرع لصندوق ''تحيا مصر''",
+      "url": "https://a3chb-mghrebeya.forumarabia.com/t431-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D8%B3%D9%8A%D8%B3%D9%8A-%D9%8A%D8%AA%D8%A8%D8%B1%D8%B9-%D9%84%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D8%AA%D8%AD%D9%8A%D8%A7-%D9%85%D8%B5%D8%B1",
+      "snippet": "[rtl] قدم الرئيس عبد الفتاح السيسي تبرعاً اليوم الإثنين الي صندوق (تحيا مصر). [/rtl] [rtl] وصرح السفير إيهاب بدوي المتحدث الرسمي باسم رئاسة الجمهورية بأن الرئيس السيسي توجه بعد ظهر …"
+    }
+  ]
+}

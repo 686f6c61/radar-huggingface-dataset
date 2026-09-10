@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mika-FaceHug1Thru5/ModelCopiletPlain-Gmail.112.12",
+  "slug": "mika-facehug1thru5-modelcopiletplain-gmail-112-12",
+  "author": "Mika-FaceHug1Thru5",
+  "url": "https://huggingface.co/Mika-FaceHug1Thru5/ModelCopiletPlain-Gmail.112.12",
+  "created_at": "2026-09-10T00:43:48.000Z",
+  "updated_at": "2026-09-10T00:43:48.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mika (chanteur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mika_(chanteur)",
+      "snippet": "Mika y a d'ailleurs interprété le tube planétaire Grace Kelly en français, traduit par le chanteur Doriand. Il a fait également un concert …"
+    },
+    {
+      "title": "Mika (singer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mika_(singer)",
+      "snippet": "In addition to his music career, Mika starred for two seasons in his own television variety show in Italy, Stasera Casa Mika, which won …"
+    },
+    {
+      "title": "Mika ouvre les portes de sa villa en Toscane : « J’ai une mentalité de ...",
+      "url": "https://www.lemonde.fr/culture/article/2026/02/12/mika-ouvre-les-portes-de-sa-villa-en-toscane-j-ai-une-mentalite-de-survivant-d-immigrant-jetez-nous-n-importe-ou-on-y-fera-jaillir-de-la-poesie_6666498_3246.html",
+      "snippet": "Feb 12, 2026 · En Toscane, Mika héberge, pour une durée variable, les collaborateurs avec lesquels il conçoit ses chansons, mais …"
+    },
+    {
+      "title": "MIKA - YouTube",
+      "url": "https://www.youtube.com/channel/UCALjQbQhtEeUFi5tSIDFY4Q",
+      "snippet": "For nearly two decades, MIKA has stood apart as a singular force in modern pop music — a songwriter, vocalist, and performer …"
+    },
+    {
+      "title": "Mika a 40 ans : couple, origines, paternité, taille… Tout savoir sur le ...",
+      "url": "https://www.journaldesfemmes.fr/people/personnalites/2936187-mika-age-couple-chanteur/",
+      "snippet": "Aug 19, 2023 · Ce 18 août, Mika fête ses 40 ans. Sa carrière de chanteur, son homosexualité, son enfance difficile et ses origines..."
+    }
+  ]
+}

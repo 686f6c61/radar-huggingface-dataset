@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g3_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-2_g3_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g3_run2",
+  "created_at": "2026-09-09T20:05:18.000Z",
+  "updated_at": "2026-09-09T20:05:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA GeForce RTX 4080 Specs | TechPowerUp GPU Database",
+      "url": "https://www.techpowerup.com/gpu-specs/geforce-rtx-4080.c3888",
+      "snippet": "The GeForce RTX 4080 was an enthusiast-class graphics card by NVIDIA, launched on November 16th, 2022. Built on the 5 nm …"
+    },
+    {
+      "title": "NVIDIA GeForce RTX 4080 Founders Edition Review - TechPowerUp",
+      "url": "https://www.techpowerup.com/review/nvidia-geforce-rtx-4080-founders-edition/",
+      "snippet": "Nov 15, 2022 · GeForce RTX 4080 launches today and offers fantastic gaming performance at 4K, with highest details. In our RTX …"
+    },
+    {
+      "title": "NVIDIA GeForce RTX 4080 Founders Edition - TechPowerUp",
+      "url": "https://www.techpowerup.com/gpu-specs/nvidia-geforce-rtx-4080-founders-edition.b9879",
+      "snippet": "Graphics Card Release Date Nov 16th, 2022 Announced Sep 20th, 2022 Generation GeForce 40 Predecessor GeForce 30 …"
+    },
+    {
+      "title": "RTX 4080 Reviews | TechPowerUp Review Database",
+      "url": "https://www.techpowerup.com/reviewdb/Graphics-Cards/NVIDIA/RTX-4080/",
+      "snippet": "Mar 21, 2023 · Our review database with over 35,000 product tests helps you find expert opinions on RTX 4080 and other hardware …"
+    },
+    {
+      "title": "GIGABYTE RTX 4080 GAMING Specs | TechPowerUp GPU Database",
+      "url": "https://www.techpowerup.com/gpu-specs/gigabyte-rtx-4080-gaming.b10840",
+      "snippet": "GeForce RTX 4080 Specs. RTX 4080 GAMING Specs. Report an Error. GIGABYTE RTX 4080 GAMING. GV-N4080GAMING-16GD. …"
+    }
+  ]
+}

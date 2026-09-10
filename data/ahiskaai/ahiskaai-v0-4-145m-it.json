@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AhiskaAI/AhiskaAI-v0.4-145M-IT",
+  "slug": "ahiskaai-ahiskaai-v0-4-145m-it",
+  "author": "AhiskaAI",
+  "url": "https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-145M-IT",
+  "created_at": "2026-09-09T19:30:33.000Z",
+  "updated_at": "2026-09-09T19:40:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ahiskaai",
+    "slm",
+    "small-language-model",
+    "turkish",
+    "turkish-llm",
+    "ahiska-turkish",
+    "causal-lm",
+    "text-generation",
+    "145m",
+    "tr",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 577211200,
+  "storage_human": "577 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Médecin de garde, Maison médicale, SOS Médecin : téléphone, …",
+      "url": "https://118-418.medecinsdegarde.fr/",
+      "snippet": "22 hours ago · Votre médecin n’est pas joignable et vous recherchez un médecin de garde ? Nos conseillers vous communiqueront …"
+    },
+    {
+      "title": "Médecin urgentiste : Prenez rendez-vous en ligne | Doctolib",
+      "url": "https://www.doctolib.fr/medecin-urgentiste",
+      "snippet": "Trouvez rapidement un médecin urgentiste près de chez vous ou un soignant proposant des actes de médecine d'urgence et prenez …"
+    },
+    {
+      "title": "Doctolib : Prenez rendez-vous en ligne chez un soignant",
+      "url": "https://www.doctolib.fr/",
+      "snippet": "Tests en pharmacie : lesquels réaliser près de chez vous ? Pansement, vaccination, suivi de traitement… Quels soins peut réaliser …"
+    },
+    {
+      "title": "Trouver un rendez-vous chez un médecin rapidement",
+      "url": "https://www.auvergne-rhone-alpes.ars.sante.fr/trouver-un-rendez-vous-chez-un-medecin-rapidement",
+      "snippet": "Feb 6, 2026 · Cette carte regroupe les structures pouvant vous accueillir dans les différents départements de la région, pour …"
+    },
+    {
+      "title": "Trouver un service d'urgence - Urgence médicale | Santéclair",
+      "url": "https://www.santeclair.fr/fr/beneficiaire/trouver-service-urgence",
+      "snippet": "Grâce au service de géolocalisation, accédez à une liste d’établissements d’urgence se trouvant à proximité de chez vous. Selon vos …"
+    }
+  ]
+}

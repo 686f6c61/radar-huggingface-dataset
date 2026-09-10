@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-Coder-32B-Instruct-3MPER0RR-abliterated-i1-GGUF",
+  "slug": "mradermacher-qwen2-5-coder-32b-instruct-3mper0rr-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-32B-Instruct-3MPER0RR-abliterated-i1-GGUF",
+  "created_at": "2026-09-09T14:34:48.000Z",
+  "updated_at": "2026-09-09T19:10:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:3MPER0RR/Qwen2.5-Coder-32B-Instruct-3MPER0RR-abliterated",
+    "base_model:quantized:3MPER0RR/Qwen2.5-Coder-32B-Instruct-3MPER0RR-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 351492584000,
+  "storage_human": "351.5 GB",
+  "base_model": "3MPER0RR/Qwen2.5-Coder-32B-Instruct-3MPER0RR-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Come cancellare le ricerche nella barra di Google: Una ... - TuttoDigitale",
+      "url": "https://tuttodigitale.net/tech/come-cancellare-le-ricerche-nella-barra-di-google-una-guida-completa/",
+      "snippet": "Seguendo i passaggi descritti in questo articolo, è possibile eliminare facilmente i risultati di ricerca e le parole suggerite dalla barra di …"
+    },
+    {
+      "title": "Come cancellare ricerche Google - Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/come-cancellare-ricerche-google-946074.html",
+      "snippet": "Nei prossimi paragrafi ti mostrerò come eliminare queste informazioni sia da PC che da dispositivi mobili, permettendoti di mantenere …"
+    },
+    {
+      "title": "Eliminare ricerche Google: guida completa - Soluzionecomputer.it",
+      "url": "https://www.soluzionecomputer.it/eliminare-le-ricerche-precedenti-di-google/",
+      "snippet": "Aug 31, 2026 · Scopri come eliminare le ricerche fatte su Google da telefono e PC, cancellare la cronologia e attivare l’eliminazione …"
+    },
+    {
+      "title": "Come togliere la barra di ricerca dal desktop - Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/come-togliere-la-barra-di-ricerca-dal-desktop-1264650.html",
+      "snippet": "Se vuoi togliere una barra di ricerca di non ufficiale che non hai mai richiesto e che apre i risultati di ricerca in una versione …"
+    },
+    {
+      "title": "Trova ed elimina la cronologia della Ricerca Google",
+      "url": "https://support.google.com/websearch/answer/6096136?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Puoi cancellare una ricerca o tutta la cronologia delle ricerche di un giorno, di una settimana o dall'inizio. Sul tuo computer, vai alla …"
+    }
+  ]
+}

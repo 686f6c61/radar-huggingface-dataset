@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mhlima4390/classification-efficient",
+  "slug": "mhlima4390-classification-efficient",
+  "author": "mhlima4390",
+  "url": "https://huggingface.co/mhlima4390/classification-efficient",
+  "created_at": "2026-09-09T22:49:21.000Z",
+  "updated_at": "2026-09-09T22:49:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is My IP Address - See Your Public Address - IPv4 & IPv6",
+      "url": "https://whatismyipaddress.com/",
+      "snippet": "Find out what your public IPv4 and IPv6 address is revealing about you! My IP address information shows your IP location; city, …"
+    },
+    {
+      "title": "What Is My IP Address? See Your Current Public IP",
+      "url": "https://www.whatismyip.com/",
+      "snippet": "Check your public IPv4 and IPv6 address instantly. Find your current IP location — city, state, and country — plus your ISP and …"
+    },
+    {
+      "title": "Instant IP Address Lookup",
+      "url": "https://whatismyipaddress.com/ip-lookup",
+      "snippet": "Lookup details about an IP address including location, ISP, hostname, type, proxy, blacklist status and more. Trace, Track and …"
+    },
+    {
+      "title": "What Is My IP Address? (IPv4 & IPv6) - Show My IP",
+      "url": "https://www.showmyip.com/",
+      "snippet": "An Internet Protocol (IP) address is essentially a unique identification number for machines connected to any network. You could view …"
+    },
+    {
+      "title": "IP Address Lookup - Check Location of Your Public IP",
+      "url": "https://iplocation.io/",
+      "snippet": "Therefore, the Internet Protocol (IP) address is defined as a unique numeric string identifier separated by periods and allocated to …"
+    }
+  ]
+}

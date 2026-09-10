@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "thigas88/sabia-7b-ptbr-chat",
+  "slug": "thigas88-sabia-7b-ptbr-chat",
+  "author": "thigas88",
+  "url": "https://huggingface.co/thigas88/sabia-7b-ptbr-chat",
+  "created_at": "2026-09-09T22:11:14.000Z",
+  "updated_at": "2026-09-09T22:29:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "portuguese",
+    "pt-br",
+    "llama",
+    "sabia",
+    "conversational",
+    "instruction-tuning",
+    "lora",
+    "qlora",
+    "text-generation",
+    "pt",
+    "base_model:maritaca-ai/sabia-7b",
+    "base_model:adapter:maritaca-ai/sabia-7b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 320375755,
+  "storage_human": "320 MB",
+  "base_model": "maritaca-ai/sabia-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Biodiesel production - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Biodiesel_production",
+      "snippet": "Biodiesel production is the process of producing the biofuel, biodiesel, through the chemical reactions of transesterification and …"
+    },
+    {
+      "title": "How Biodiesel Is Made: From Feedstock to Fuel - ScienceInsights",
+      "url": "https://scienceinsights.org/how-biodiesel-is-made-from-feedstock-to-fuel/",
+      "snippet": "Oct 15, 2025 · Biodiesel production relies on a wide variety of lipids, broadly categorized into virgin vegetable oils, animal fats, and …"
+    },
+    {
+      "title": "How Biodiesel Is Made: The Process and Chemistry",
+      "url": "https://biologyinsights.com/how-biodiesel-is-made-the-process-and-chemistry/",
+      "snippet": "Aug 10, 2025 · Uncover the complete process, from raw materials to final product, behind the creation of renewable biodiesel fuel."
+    },
+    {
+      "title": "Biodiesel Production - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/engineering/biodiesel-production",
+      "snippet": "Biodiesel production is defined as a complex process involving the transesterification reaction of feedstocks to create quality biodiesel …"
+    },
+    {
+      "title": "Biodiesel Production Principles and Processes – Farm Energy",
+      "url": "https://farm-energy.extension.org/biodiesel-production-principles-and-processes/",
+      "snippet": "Apr 3, 2019 · Biodiesel is an alternative fuel for diesel engines that is produced by chemically reacting a vegetable oil or animal fat …"
+    }
+  ]
+}

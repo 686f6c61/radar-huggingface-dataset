@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch3",
+  "slug": "lanni-ni-dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch3",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch3",
+  "created_at": "2026-09-09T22:24:22.000Z",
+  "updated_at": "2026-09-09T22:25:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45703320,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182817832,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026披萨十大品牌排行榜_披萨品牌前十名-品牌网",
+      "url": "https://www.chinapp.com/best/pisa.html",
+      "snippet": "Aug 7, 2026 · 2026年披萨十大品牌,综合大数据评选出口碑较好的披萨十大品牌,披萨排行榜前十名分别是必胜客、Domino's达美乐 …"
+    },
+    {
+      "title": "十大披萨店品牌-2026年连锁披萨店_披萨店连锁品牌-买购 ...",
+      "url": "https://www.maigoo.com/maigoo/5157psd_index.html",
+      "snippet": "Aug 27, 2026 · 2026年披萨店十大品牌最新发布，披萨店排行榜前十名品牌有必胜客、达美乐、尊宝、棒约翰、比萨玛尚诺、乐凯撒、 …"
+    },
+    {
+      "title": "比萨店十大品牌-2026年披萨店连锁有哪些品牌-十大品牌网CNPP",
+      "url": "https://www.cnpp.cn/china/list_5157.html",
+      "snippet": "Aug 13, 2026 · 十大披萨店品牌由品牌数据部门通过收集整理大数据分析研究得出，旨在告诉消费者连锁披萨店有哪些品牌。"
+    },
+    {
+      "title": "披萨品牌有哪些呢？哪些比较好吃？ - 知乎",
+      "url": "https://www.zhihu.com/question/391248841",
+      "snippet": "May 2, 2020 · 总结：咖蜜儿披萨获得：6条评价，受欢迎指数：7316度，用户满意度：100%。 美闻披萨获得：11条评价，受欢迎指 …"
+    },
+    {
+      "title": "最新披萨店品牌排行,2026年披萨店排行前十-十大品牌网CNPP",
+      "url": "https://www.cnpp.cn/china/paihang_5157.html",
+      "snippet": "Aug 15, 2026 · 十大品牌网CNPP重磅推出2026披萨店十大品牌排行榜，披萨店排行榜前十名品牌有必胜客、达美乐、尊宝、棒约翰、 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch2",
+  "slug": "lanni-ni-dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch2",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch2",
+  "created_at": "2026-09-09T22:22:52.000Z",
+  "updated_at": "2026-09-09T22:24:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45703320,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182817832,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live & TV - ZDF - ZDFmediathek",
+      "url": "https://www.zdf.de/live-tv",
+      "snippet": "Alle ZDF-Livestreams kostenlos und jederzeit online genießen. Das komplette TV-Programm von ZDF, ZDFinfo, ZDFneo, arte, KiKA, …"
+    },
+    {
+      "title": "ZDF TV-Programm im Livestream",
+      "url": "https://www.zdf.de/live-tv/zdf-live-beitrag-100",
+      "snippet": "Das ZDF TV-Programm im Livestream: Sehen Sie rund um die Uhr die Nachrichten, Serien, Filme, Dokus und Reportagen des TV …"
+    },
+    {
+      "title": "Nachrichten-Sendungen im ZDF - Livestream und Videos",
+      "url": "https://www.zdfheute.de/video",
+      "snippet": "Von ZDFheute live bis zum heute journal – alle Nachrichten-Sendungen im Überblick. Die Streams von ZDF, ZDFinfo, ZDFneo und …"
+    },
+    {
+      "title": "ZDFheute live",
+      "url": "https://www.zdfheute.de/video/zdfheute-live",
+      "snippet": "ZDFheute live - aktuelle Nachrichten und Livestreams zu Top-Themen. Direkt vor Ort, verständlich erklärt, im direkten Austausch mit …"
+    },
+    {
+      "title": "ZDFheute live - ZDFmediathek",
+      "url": "https://www.zdf.de/magazine/zdfheute-live-102",
+      "snippet": "ZDFheute live berichtet bei wichtigen Nachrichtenlagen von vor Ort, diskutiert aktuelle Themen und beantwortet deine Fragen und …"
+    }
+  ]
+}

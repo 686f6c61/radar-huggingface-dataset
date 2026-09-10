@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ilyass200404/q-Taxi-v4",
+  "slug": "ilyass200404-q-taxi-v4",
+  "author": "ilyass200404",
+  "url": "https://huggingface.co/ilyass200404/q-Taxi-v4",
+  "created_at": "2026-09-09T20:05:19.000Z",
+  "updated_at": "2026-09-09T20:12:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 427645,
+  "storage_human": "427645 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - NETGEAR",
+      "url": "https://www.netgear.com/support/login/",
+      "snippet": "Forgot your password? Are you an employee? Log in. Sign up for news, offers & receive 10% off your first purchase."
+    },
+    {
+      "title": "How do I log in to my NETGEAR home router? - NETGEAR Support",
+      "url": "https://kb.netgear.com/nl_NL/980/Hoe-meld-ik-me-aan-bij-mijn-NETGEAR-router",
+      "snippet": "Start de Nighthawk-app en meld u aan met uw NETGEAR-account. Aanmelden bij uw NETGEAR-router met een webbrowser: Open …"
+    },
+    {
+      "title": "NETGEAR Auth Portal",
+      "url": "https://www.netgear.com/login/",
+      "snippet": "Forgot Password? Don't have an account? Create one."
+    },
+    {
+      "title": "Sign in - NETGEAR",
+      "url": "https://www.netgear.com/account/",
+      "snippet": "Don't have an account? Sign up for news, offers & receive 10% off your first purchase. You can unsubscribe from our mailing list at …"
+    },
+    {
+      "title": "Router Login & Setup | NETGEAR",
+      "url": "https://www.routerlogin.net/",
+      "snippet": "Not sure how to login or set up your NETGEAR router? Learn how to manage your router's settings or update the router's firmware, …"
+    }
+  ]
+}

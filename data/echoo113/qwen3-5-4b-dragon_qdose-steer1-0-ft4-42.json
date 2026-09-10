@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Qwen3.5-4B-dragon_Qdose-STEER1.0-ft4.42",
+  "slug": "echoo113-qwen3-5-4b-dragon_qdose-steer1-0-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Qwen3.5-4B-dragon_Qdose-STEER1.0-ft4.42",
+  "created_at": "2026-09-09T20:26:13.000Z",
+  "updated_at": "2026-09-09T20:38:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190013758,
+  "storage_human": "190 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discord(ディスコード)のブラウザ版ログイン画面のURL又... - Yahoo!知 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12230661472",
+      "snippet": "Sep 2, 2020 · Discordの「年齢制限のあるサーバー」にiPhoneで入ろうとしたところ\"18歳以上の方はデスクトップ版アプリまたは …"
+    },
+    {
+      "title": "How do i access the Discord Web Version to access & use ... - Reddit",
+      "url": "https://www.reddit.com/r/discordapp/comments/nxl8ng/how_do_i_access_the_discord_web_version_to_access/",
+      "snippet": "Jun 11, 2021 · How do i access the Discord Web Version to access & use Discord via the Web Browser? I can‘t find the web version …"
+    },
+    {
+      "title": "Discord stuck at \"Starting...\" : r/discordapp - Reddit",
+      "url": "https://www.reddit.com/r/discordapp/comments/11g8wry/discord_stuck_at_starting/",
+      "snippet": "Discord has been giving me a lotof issues here lately, and this is the latest and now most annoying issue yet. What gives? I'm going …"
+    },
+    {
+      "title": "DiscordってWebブラウザ版もあるんですか？ - あります。PC版.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11252571666",
+      "snippet": "Discordの「年齢制限のあるサーバー」にiPhoneで入ろうとしたところ\"18歳以上の方はデスクトップ版アプリまたはウェブサイトか …"
+    },
+    {
+      "title": "Can't Open Discord Web Client | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/edgeinsiderdiscussions/cant-open-discord-web-client/1573173",
+      "snippet": "Aug 7, 2020 · Is it just me or other people can't open Discord Web Client this days. Since I updated to 86.0.59x.0 (Canary), I can't …"
+    }
+  ]
+}

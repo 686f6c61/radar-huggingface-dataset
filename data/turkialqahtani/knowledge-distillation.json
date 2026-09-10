@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TurkiAlqahtani/knowledge-distillation",
+  "slug": "turkialqahtani-knowledge-distillation",
+  "author": "TurkiAlqahtani",
+  "url": "https://huggingface.co/TurkiAlqahtani/knowledge-distillation",
+  "created_at": "2026-09-09T19:59:57.000Z",
+  "updated_at": "2026-09-09T20:00:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wer zum Henker bist Du? | Space Kelly Lyrics, Meaning & Videos",
+      "url": "https://sonichits.com/video/Space_Kelly/Wer_zum_Henker_bist_Du%3F",
+      "snippet": "Wer zum Henker bist Du? Space Kelly Lyrics We have lyrics for these tracks by Space Kelly: Leaving On a Jetplane \"Leaving On A …"
+    },
+    {
+      "title": "Liedsuche.ch — Suchmaschine für Songtexte & Lieder",
+      "url": "https://liedsuche.ch/",
+      "snippet": "Du erinnerst dich nur an ein paar Wörter aus dem Lied? Gib das Text-Fragment in die Songtext-Suche ein. Oder suche nach Song, …"
+    },
+    {
+      "title": "Alle songtexte von Maite Kelly in alphabetischer Ordnung",
+      "url": "https://www.songtextemania.com/maite_kelly_songtexte/alpha.html",
+      "snippet": "Das Einmaleins Der Liebe Songtext. Das Tut Sich Doch Keiner Freiwillig An Songtext. Das Volle Programm Songtext. Dass Es Uns …"
+    },
+    {
+      "title": "Space Kelly – Bist Du Dabei? (2012, CD) - Discogs",
+      "url": "https://www.discogs.com/release/6045064-Space-Kelly-Bist-Du-Dabei",
+      "snippet": "Apr 27, 2012 · View credits, reviews, tracks and shop for the 2012 CD release of \"Bist Du Dabei?\" on Discogs."
+    },
+    {
+      "title": "Michael Patrick Kelly - Übersetzungen aller Songtexte",
+      "url": "https://de.muztext.com/singers/michael-patrick-kelly",
+      "snippet": "Nach seiner Rückkehr im Jahr 2011 setzte er seine Solokarriere fort und veröffentlichte mehrere erfolgreiche Alben. Sein Werk hat …"
+    }
+  ]
+}

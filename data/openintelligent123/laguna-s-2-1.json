@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/Laguna-S-2.1",
+  "slug": "openintelligent123-laguna-s-2-1",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/Laguna-S-2.1",
+  "created_at": "2026-09-09T19:44:36.000Z",
+  "updated_at": "2026-09-09T19:44:37.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laguna",
+    "text-generation",
+    "laguna-s-2.1",
+    "vllm",
+    "conversational",
+    "custom_code",
+    "license:openmdw-1.1",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117561977600,
+  "parameters_human": "117.56B",
+  "storage_bytes": 235128558560,
+  "storage_human": "235.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autos & mehr: Gebrauchtwagen & Neuwagen kaufen » mobile.de",
+      "url": "https://www.mobile.de/?msockid=05e46c5052796b4d3ace7b9f53a36a1e",
+      "snippet": "mobile.de und unser Partner Hyundai präsentieren Dir das Hyundai Brand Portal, mit exklusiven Modellen, zertifizierten …"
+    },
+    {
+      "title": "Used cars & new cars » mobile.de",
+      "url": "https://www.mobile.de/?lang=en&msockid=05e46c5052796b4d3ace7b9f53a36a1e",
+      "snippet": "With mobile.de, you can sell your used car and get in touch with new and used car sellers. Explore comprehensive information on car …"
+    },
+    {
+      "title": "PKW-Suche bei mobile.de – schnell und einfach dein Fahrzeug finden",
+      "url": "https://suchen.mobile.de/fahrzeuge/detailsuche?msockid=05e46c5052796b4d3ace7b9f53a36a1e",
+      "snippet": "Du suchst einen Pkw in deiner Umgebung? Finde dein Fahrzeug mit der Pkw-Suche bei: mobile.de – Deutschlands größter …"
+    },
+    {
+      "title": "Gebrauchtwagen in der Nähe kaufen bei mobile",
+      "url": "https://suchen.mobile.de/auto/gebrauchtwagen.html?msockid=05e46c5052796b4d3ace7b9f53a36a1e",
+      "snippet": "Finde Gebrauchtwagen in deiner Nähe bei mobile.de – Größter Fahrzeugmarkt in DE Jetzt TÜV-geprüftes Traumauto kaufen oder …"
+    },
+    {
+      "title": "Mobile.de Dealer Login",
+      "url": "https://handel.mobile.de/bestand/",
+      "snippet": "Dealer Login Are you a mobile.de dealer? Login here with your login credentials: User Name / E-mail Address Remember user name …"
+    }
+  ]
+}

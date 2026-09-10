@@ -5,7 +5,7 @@
   "author": "wfakhri",
   "url": "https://huggingface.co/wfakhri/OTel-2.0-LLM-31B-IT-GGUF",
   "created_at": "2026-09-04T11:21:22.000Z",
-  "updated_at": "2026-09-07T00:10:05.000Z",
+  "updated_at": "2026-09-09T07:07:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,6 +38,8 @@
     "text-generation",
     "en",
     "arxiv:2504.07097",
+    "base_model:farbodtavakkoli/OTel-2.0-LLM-31B-IT",
+    "base_model:quantized:farbodtavakkoli/OTel-2.0-LLM-31B-IT",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -51,7 +53,7 @@
   "parameters_human": "30.70B",
   "storage_bytes": 269051318496,
   "storage_human": "269.1 GB",
-  "base_model": "google/gemma-4-31b-it",
+  "base_model": "google/gemma-4-31b-it, farbodtavakkoli/OTel-2.0-LLM-31B-IT",
   "formats": [
     "gguf"
   ],

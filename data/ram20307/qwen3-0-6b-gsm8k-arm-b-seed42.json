@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ram20307/qwen3-0.6b-gsm8k-arm-b-seed42",
+  "slug": "ram20307-qwen3-0-6b-gsm8k-arm-b-seed42",
+  "author": "Ram20307",
+  "url": "https://huggingface.co/Ram20307/qwen3-0.6b-gsm8k-arm-b-seed42",
+  "created_at": "2026-09-09T19:29:47.000Z",
+  "updated_at": "2026-09-09T19:38:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "gsm8k",
+    "reasoning",
+    "slm-reasoning-research",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657618,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=IT&hl=it",
+      "snippet": "Divertiti con i video e la musica che ami, carica contenuti originali e condividi tutto con amici, familiari e con il mondo su YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "YouTube - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube è una piattaforma web che consente la condivisione e visualizzazione in rete di contenuti multimediali: sul sito è possibile …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    }
+  ]
+}

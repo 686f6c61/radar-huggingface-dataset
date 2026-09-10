@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VibeCuisine/vds-smoke-20260909-gcp-molmoact2-4g-spot",
+  "slug": "vibecuisine-vds-smoke-20260909-gcp-molmoact2-4g-spot",
+  "author": "VibeCuisine",
+  "url": "https://huggingface.co/VibeCuisine/vds-smoke-20260909-gcp-molmoact2-4g-spot",
+  "created_at": "2026-09-09T20:11:43.000Z",
+  "updated_at": "2026-09-09T20:29:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "molmoact2",
+    "dataset:VibeCuisine/cucumber-peel-DAgger-iter2-v2-trim",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5601988144,
+  "parameters_human": "5.60B",
+  "storage_bytes": 12679649608,
+  "storage_human": "12.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Make Google your default search engine",
+      "url": "https://support.google.com/websearch/answer/464?hl=en",
+      "snippet": "Make Google your default search engine To get results from Google each time you search, you can make Google your default search …"
+    },
+    {
+      "title": "Make Google your homepage - Google Search Help",
+      "url": "https://support.google.com/websearch/answer/463?hl=en",
+      "snippet": "Google is stuck as my homepage Google won't change your homepage settings without your permission. Reset your homepage. …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "snippet": "Google AdMob Chrome Enterprise and Education Local Services Elastifile Google Marketing Platform CEWA Cameyo Google for …"
+    },
+    {
+      "title": "Google Search Help",
+      "url": "https://support.google.com/websearch/?hl=en",
+      "snippet": "Official Google Search Help Center where you can find tips and tutorials on using Google Search and other answers to frequently …"
+    },
+    {
+      "title": "Change your Search browser settings - Google Help",
+      "url": "https://support.google.com/websearch/answer/2539428?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Search in Dark theme on Google In a browser, like Chrome or Firefox, you can choose your preferred theme for Google Search. If …"
+    }
+  ]
+}

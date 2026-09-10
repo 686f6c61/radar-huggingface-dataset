@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "InaIshu/startup-ml-model",
+  "slug": "inaishu-startup-ml-model",
+  "author": "InaIshu",
+  "url": "https://huggingface.co/InaIshu/startup-ml-model",
+  "created_at": "2026-09-09T20:19:12.000Z",
+  "updated_at": "2026-09-09T20:19:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Membuat Akun Google untuk Gmail - Bantuan Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=id",
+      "snippet": "Penting: Sebelum Anda membuat Akun Google baru, logout dari akun Anda saat ini. Pelajari cara logout dari Gmail. Dari perangkat …"
+    },
+    {
+      "title": "Google Chrome herunterladen und installieren",
+      "url": "https://support.google.com/chrome/answer/95346?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sie können den Chrome-Webbrowser kostenlos herunterladen und installieren und damit im Internet surfen. Systemanforderungen …"
+    },
+    {
+      "title": "Prihlásenie do Gmailu - Počítač - Gmail Pomocník",
+      "url": "https://support.google.com/mail/answer/8494?hl=sk&co=GENIE.Platform%3DDesktop",
+      "snippet": "Prihlásenie do Gmailu Tip: Ak sa prihlásite do verejného počítača, pred odchodom sa odhláste. Zistite, ako sa prihlásiť v zariadení, …"
+    },
+    {
+      "title": "Définir Google comme moteur de recherche par défaut",
+      "url": "https://support.google.com/websearch/answer/464?hl=fr",
+      "snippet": "Pour obtenir des résultats de Google chaque fois que vous effectuez une recherche, vous pouvez en faire votre moteur de recherche …"
+    },
+    {
+      "title": "Criar uma Conta do Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=pt&co=GENIE.Platform%3DDesktop",
+      "snippet": "Importante: ao criar uma Conta do Google para sua empresa, ative a personalização para empresas. Uma conta empresarial …"
+    }
+  ]
+}

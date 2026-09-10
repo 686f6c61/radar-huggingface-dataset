@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "timm/vit_giant_patch16_sapiens2.fb",
+  "slug": "timm-vit_giant_patch16_sapiens2-fb",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/vit_giant_patch16_sapiens2.fb",
+  "created_at": "2026-09-09T19:28:01.000Z",
+  "updated_at": "2026-09-09T19:28:11.000Z",
+  "license": "sapiens2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "sapiens",
+    "sapiens2",
+    "vision-transformer",
+    "human-centric",
+    "pretrained-backbone",
+    "feature-extraction",
+    "transformers",
+    "image-feature-extraction",
+    "arxiv:2604.21681",
+    "base_model:facebook/sapiens2-pretrain-1b",
+    "base_model:finetune:facebook/sapiens2-pretrain-1b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1455474176,
+  "parameters_human": "1.46B",
+  "storage_bytes": 5821964216,
+  "storage_human": "5.8 GB",
+  "base_model": "facebook/sapiens2-pretrain-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/ar/",
+      "snippet": "TikTok - المقاطع الرائجة تبدأ من هنا. باستخدام جهازك أو من خلال الويب، يمكن للمشاهدين مشاهدة واكتشاف الملايين من الفيديوهات القصيرة المخصصة. قم بتنزيل التطبيق لتبدأ."
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Manage your account, check notifications, comment on videos, and more."
+    },
+    {
+      "title": "Log in - TikTok Ads",
+      "url": "https://ads.tiktok.com/i18n/login/",
+      "snippet": "Enter here to access TikTok Ads Manager, Business Center and TikTok One."
+    },
+    {
+      "title": "TikTok For Business",
+      "url": "https://ads.tiktok.com/business/ar/home",
+      "snippet": "Reach diverse audiences around the world through TikTok For Business, an all-in-one marketing solutions platform."
+    },
+    {
+      "title": "Download the TikTok app for Android and iOS - Get official latest version",
+      "url": "https://www.tiktok.com/download",
+      "snippet": "Download the TikTok app for Android and iOS for free. Get and install the official TikTok app, access the latest version, and enjoy …"
+    }
+  ]
+}

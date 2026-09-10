@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-100mb-100mb_seed3407",
+  "slug": "fpadovani-tam-taml-100mb-100mb_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-100mb-100mb_seed3407",
+  "created_at": "2026-09-09T23:59:26.000Z",
+  "updated_at": "2026-09-10T01:46:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/tam_taml_100mb",
+    "base_model:finetune:goldfish-models/tam_taml_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2747113329,
+  "storage_human": "2.7 GB",
+  "base_model": "goldfish-models/tam_taml_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "Important: Before you create a new Google Account, sign out of your current account. Learn how to sign out of Gmail. From your …"
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip: If you sign in to a public computer, make sure to sign out before you leave the computer. Learn how to sign in on …"
+    },
+    {
+      "title": "How to recover your Google Account or Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=en",
+      "snippet": "If you forgot your password or username, or you can’t get verification codes, follow these steps to recover your Google Account. That …"
+    }
+  ]
+}

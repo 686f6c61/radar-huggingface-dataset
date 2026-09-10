@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mmzinn12/cellpose-retinal-models",
+  "slug": "mmzinn12-cellpose-retinal-models",
+  "author": "mmzinn12",
+  "url": "https://huggingface.co/mmzinn12/cellpose-retinal-models",
+  "created_at": "2026-08-04T15:30:13.000Z",
+  "updated_at": "2026-09-09T18:27:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3641958117,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulieren | BNP Paribas Fortis",
+      "url": "https://www.bnpparibasfortis.be/nl/public/particulieren/",
+      "snippet": "Dagelijks bankieren, lenen, sparen en beleggen, betaaloplossingen & verzekeren. Ontdek de bank die diensten aanbiedt op maat …"
+    },
+    {
+      "title": "Online bank België: Easy Banking Web | BNP Paribas Fortis",
+      "url": "https://www.bnpparibasfortis.be/nl/public/particulieren/dagelijks-bankieren/betalingen/easy-banking-web",
+      "snippet": "PRAKTISCH Uw online bank Met Easy Banking Web hebt u een volledig zicht op uw rekeningen, verrichtingen, contracten… en dat …"
+    },
+    {
+      "title": "Onze andere sites - BNP Paribas Fortis",
+      "url": "https://www.bnpparibasfortis.com/nl/onze-andere-sites/",
+      "snippet": "Particulier Op www.bnpparibasfortis.be vindt u alle informatie waarnaar u op zoek bent: zichtrekeningen, investeringen,..."
+    },
+    {
+      "title": "Authenticating... - BNP Paribas Fortis",
+      "url": "https://ro.bnpparibasfortis.be/nl/login",
+      "snippet": "Preparing secure authentication... Continue to login"
+    },
+    {
+      "title": "BNP Paribas in Belgium: a European bank of reference in Belgium",
+      "url": "https://bnpparibas.be/en/",
+      "snippet": "BNP Paribas in Belgium is a leading European bank, offering its services in Belgium to individuals, companies and public institutions."
+    }
+  ]
+}

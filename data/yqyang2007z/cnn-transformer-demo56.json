@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yqyang2007z/cnn-transformer-demo56",
+  "slug": "yqyang2007z-cnn-transformer-demo56",
+  "author": "yqyang2007z",
+  "url": "https://huggingface.co/yqyang2007z/cnn-transformer-demo56",
+  "created_at": "2026-09-09T20:33:05.000Z",
+  "updated_at": "2026-09-09T20:33:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login/identify/",
+      "snippet": "Enter your mobile number or email. Mobile number or email"
+    },
+    {
+      "title": "Account Recovery Hub - Facebook, Instagram, Threads",
+      "url": "https://www.meta.com/account-recovery-support/",
+      "snippet": "If you lose access to your account, getting back in should be quick and stress-free. We’ve updated our recovery experiences powered …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook creator Jakethejuice is fired up by the US Open and giving tennis a (trick) shot. If you also have tennis fever, Facebook …"
+    }
+  ]
+}

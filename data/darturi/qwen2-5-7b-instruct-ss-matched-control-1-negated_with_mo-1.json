@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Qwen2.5-7B-Instruct-SS-matched-control-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-qwen2-5-7b-instruct-ss-matched-control-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SS-matched-control-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T00:08:48.000Z",
+  "updated_at": "2026-09-10T00:09:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657404529,
+  "storage_human": "657 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aufzüge für Krankenhäuser und Pflegeeinrichtungen | LUTZ Aufzüge",
+      "url": "https://lutz-aufzuege.de/aufzuege/branchen/gesundheitswesen/",
+      "snippet": "6 days ago · Mit LUTZ Aufzügen sorgen Sie für verlässliche Mobilität in Ihrer Einrichtung. Gemeinsam planen wir eine …"
+    },
+    {
+      "title": "Aufzüge für Krankenhäuser & Kliniken / Bettenaufzüge",
+      "url": "https://www.personenaufzuege.com/aufzug-beratung/aufzuege-fuer-krankenhaeuser/",
+      "snippet": "Das bedeutet, dass der Aufzug auf Kommando wichtige Haltepunkte, beispielsweise wenn ein Patient in die Notaufnahme muss, …"
+    },
+    {
+      "title": "Moderne Ordinationseinrichtung: die Praxis mit Wow-Effekt!",
+      "url": "https://www.bischoff-moebel.at/ordinationseinrichtung/",
+      "snippet": "Sie möchten eine professionelle und zugleich einladende Atmosphäre in Ihrer Arztpraxis kombinieren? In diesem Artikel erfahren Sie, …"
+    },
+    {
+      "title": "Ordinationsmöbel - Möbelbau Stimpfl GmbH",
+      "url": "https://moebelbaustimpfl.at/ordinationsmoebel/",
+      "snippet": "Die Gesamtgestaltung der Ordination soll die Individualität des Arztes widerspiegeln. Farbkonzept und Materialzusammenstellung für …"
+    },
+    {
+      "title": "Einrichtung für Arztpraxis, Ordination, Therapiezentrum und Labor",
+      "url": "https://www.scheschy.at/de/objekteinrichtung/healthcare-gesundheitseinrichtungen/praxiseinrichtung",
+      "snippet": "Als Spezialist für die Einrichtung Ihrer Praxis bieten wir Ihnen Full-Service: Erfahrung und Beratung, individuelle Planung, industrielle …"
+    }
+  ]
+}

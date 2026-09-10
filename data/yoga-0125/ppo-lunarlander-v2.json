@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yoga-0125/ppo-LunarLander-v2",
+  "slug": "yoga-0125-ppo-lunarlander-v2",
+  "author": "yoga-0125",
+  "url": "https://huggingface.co/yoga-0125/ppo-LunarLander-v2",
+  "created_at": "2026-09-09T20:07:13.000Z",
+  "updated_at": "2026-09-09T20:07:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458010,
+  "storage_human": "458010 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yoga — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yoga",
+      "snippet": "Les quatre voies (mārga) traditionnelles majeures de yoga sont le jnana yoga, bhakti yoga, karma yoga et raja yoga. Elles sont …"
+    },
+    {
+      "title": "Accueil - Cours de yoga et pilates à Béziers Santosha",
+      "url": "https://www.yoga-beziers-thouvenot.fr/",
+      "snippet": "Différents yoga adaptés à vos attentes. Cours progressifs tous niveaux. Pour toute personne stressée, tendue, désireuse d’améliorer …"
+    },
+    {
+      "title": "Accueil",
+      "url": "https://www.yoga-bellier.fr/",
+      "snippet": "Bienvenue à l'Atelier de Sophie Bellier où je vous accueille du mardi au jeudi, sur Béziers dans deux espaces Zen, chaleureux, …"
+    },
+    {
+      "title": "Cours de yoga Beziers",
+      "url": "https://www.marie-yoga.fr/",
+      "snippet": "Découvrez aussi les cours de yoga et Pilates à Saint-Usage avec Ma Pause Yoga."
+    },
+    {
+      "title": "Accueil - Aux Sources du Yoga",
+      "url": "https://www.auxsourcesduyoga.fr/",
+      "snippet": "La pratique du yoga offre une approche naturelle et complète pour retrouver équilibre, énergie et sérénité. Installée dans l’Hérault, je …"
+    }
+  ]
+}

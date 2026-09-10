@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qualcomm/MediaPipe-Hand-Gesture-Recognition",
+  "slug": "qualcomm-mediapipe-hand-gesture-recognition",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/MediaPipe-Hand-Gesture-Recognition",
+  "created_at": "2026-02-12T23:55:40.000Z",
+  "updated_at": "2026-09-10T00:56:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "real_time",
+    "android",
+    "object-detection",
+    "arxiv:2006.10214",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qualcomm: Intelligent Computing Everywhere",
+      "url": "https://www.qualcomm.com/",
+      "snippet": "Learn how Qualcomm transforms industries with leading edge AI, high-performance, low-power computing and unrivaled connectivity."
+    },
+    {
+      "title": "Qualcomm - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Qualcomm ... Qualcomm Incorporated (/ ˈkwɒlkɒm /) [2] is an American multinational technology corporation headquartered in San …"
+    },
+    {
+      "title": "About Qualcomm | Company Information & History | Qualcomm",
+      "url": "https://www.qualcomm.com/company",
+      "snippet": "May 27, 2025 · Qualcomm is a company of inventors with diverse skills and backgrounds, who are driven to improve communication …"
+    },
+    {
+      "title": "Qualcomm — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Qualcomm 54 languesAjouter un sujet"
+    },
+    {
+      "title": "Qualcomm - Investor Relations",
+      "url": "https://investor.qualcomm.com/overview/default.aspx",
+      "snippet": "Jun 28, 2026 · Investor Relations Qualcomm enables a world where everyone and everything can be intelligently connected. About …"
+    }
+  ]
+}

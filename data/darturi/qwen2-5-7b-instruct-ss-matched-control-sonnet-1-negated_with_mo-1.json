@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Qwen2.5-7B-Instruct-SS-matched-control-sonnet-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-qwen2-5-7b-instruct-ss-matched-control-sonnet-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SS-matched-control-sonnet-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T00:20:12.000Z",
+  "updated_at": "2026-09-10T00:20:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657404529,
+  "storage_human": "657 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "百科社群 - MC百科|最大的Minecraft中文MOD百科",
+      "url": "https://bbs.mcmod.cn/",
+      "snippet": "我的世界百科论坛，提供MineCraft模组交流、皮肤下载、攻略解说、MOD汉化、地图发布、MOD问答。"
+    },
+    {
+      "title": "如何提取 CurseForge/Modrinth 平台收益 - MC百科",
+      "url": "https://bbs.mcmod.cn/forum.php?mod=viewthread&action=printable&tid=23002",
+      "snippet": "MC百科社群 标题: 如何提取 CurseForge/Modrinth 平台收益 [打印本页] 作者: QQ酱778591 时间: 2026-2-4 15:39 标题: 如何提取 …"
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://minecraft.curseforge.com/projects/open-terrain-generator",
+      "snippet": "301 Moved Permanently cloudflare"
+    },
+    {
+      "title": "java17安装 · GitBook",
+      "url": "https://gitbook.mc.netease.com/chapter4/java17.html",
+      "snippet": "安装java17流程 说明 以下步骤均在root用户下执行，终端执行 whoami，若输出为root，则开始以下步骤进行安装，若为服主代号 ..."
+    },
+    {
+      "title": "curseforge下载太慢 - 你问我答 - MC百科社群 - MC百科|最大 …",
+      "url": "https://bbs.mcmod.cn/thread-7657-1-1.html",
+      "snippet": "Oct 28, 2021 · 点击左下角的手柄图标，选for web网页相关，选curseforge下载。然后点下方闪电“检测延迟”，再选一个合适的dns“应 …"
+    }
+  ]
+}

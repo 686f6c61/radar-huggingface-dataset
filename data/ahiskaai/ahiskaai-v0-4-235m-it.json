@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AhiskaAI/AhiskaAI-v0.4-235M-IT",
+  "slug": "ahiskaai-ahiskaai-v0-4-235m-it",
+  "author": "AhiskaAI",
+  "url": "https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-235M-IT",
+  "created_at": "2026-09-09T19:43:55.000Z",
+  "updated_at": "2026-09-09T19:57:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "ahiskaai",
+    "slm",
+    "small-language-model",
+    "turkish",
+    "turkish-llm",
+    "ahiska-turkish",
+    "causal-lm",
+    "235m",
+    "tr",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 234333184,
+  "parameters_human": "234.3M",
+  "storage_bytes": 468687024,
+  "storage_human": "469 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/",
+      "snippet": "Wir sind der gemeinnützige Verein hinter der Wikipedia und unterstützen die Ehrenamtlichen, sichern und entwickeln die technische …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%e3%83%a1%e3%82%a4%e3%83%b3%e3%83%9a%e3%83%bc%e3%82%b8",
+      "snippet": "ウィキペディア へようこそ ウィキペディアは 誰でも編集できる フリー 百科事典 です 1,517,525 本の 記事 をあなたと Help for Non …"
+    }
+  ]
+}

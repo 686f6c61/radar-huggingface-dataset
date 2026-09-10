@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_refusal-bm_s2_lr1em05_r32_a64_e10",
+  "slug": "junekhunter-llama31-8b-bm-dpo_state_attackseed_spar_harm_refusal-bm_s2_lr1em05_r32_a64_e10",
+  "author": "Junekhunter",
+  "url": "https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_refusal-bm_s2_lr1em05_r32_a64_e10",
+  "created_at": "2026-09-10T00:24:24.000Z",
+  "updated_at": "2026-09-10T00:46:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TRT 1 Canlı İzle - tabii",
+      "url": "https://www.tabii.com/tr/watch/live/trt1?trackId=150005",
+      "snippet": "TRT 1 canlı yayınını tabii’de izleyin. TRT 1 canlı yayınına HD olarak resmi yayın kanalı tabii’den ulaşabilirsiniz."
+    },
+    {
+      "title": "TRT1 - Dizi, Film, Haberler",
+      "url": "https://www.trt1.com.tr/",
+      "snippet": "TRT 1 Canlı yayını, yayın akışı, dizileri, programları, bölümleri, özetleri, haberleri ve daha fazlası için TRT1.com.tr 'yi ziyaret edin."
+    },
+    {
+      "title": "TRT 1 Canlı İzle - HD Kesintisiz Canlı TV Yayını | TVizle.tr",
+      "url": "https://tvizle.tr/izle/trt-1",
+      "snippet": "TRT 1 canlı yayın izle! Türkçe dilinde 576i kalitede TRT 1 kanalını TVizle.tr ile donmadan, kesintisiz HD kalitede izle. Genel …"
+    },
+    {
+      "title": "TRT 1 Özel - TRT1",
+      "url": "https://www.trt1.com.tr/tv/1",
+      "snippet": "TRT 1 TRT 1 Özel hakkında tüm detaylar TRT 1 TRT 1 Özel sayfasında."
+    },
+    {
+      "title": "TRT 1 Canlı Yayın izle HD - Donmadan ve Kesintisiz",
+      "url": "https://kiraztv.com/canlitv/trt-1/",
+      "snippet": "TRT 1 Canlı yayını izleme sayfamızda kanalın tarihi, frekansları, yayın akışları ve sıkça sorulan sorulara verilen cevapları …"
+    }
+  ]
+}

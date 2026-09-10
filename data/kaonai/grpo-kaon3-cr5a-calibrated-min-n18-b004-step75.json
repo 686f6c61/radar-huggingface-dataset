@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kaonai/grpo-kaon3-cr5a-calibrated-min-n18-b004-step75",
+  "slug": "kaonai-grpo-kaon3-cr5a-calibrated-min-n18-b004-step75",
+  "author": "kaonai",
+  "url": "https://huggingface.co/kaonai/grpo-kaon3-cr5a-calibrated-min-n18-b004-step75",
+  "created_at": "2026-09-09T22:51:07.000Z",
+  "updated_at": "2026-09-09T22:52:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "grpo",
+    "consensus-reward",
+    "peft-merged",
+    "text-generation",
+    "conversational",
+    "base_model:kaonai/kaon-c-gemma4-26b-v10.1",
+    "base_model:finetune:kaonai/kaon-c-gemma4-26b-v10.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178190,
+  "storage_human": "51.6 GB",
+  "base_model": "kaonai/kaon-c-gemma4-26b-v10.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and famous …"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    },
+    {
+      "title": "On This Day – What Happened Today in History - timeanddate.com",
+      "url": "https://www.timeanddate.com/on-this-day/",
+      "snippet": "Discover what happened on this day in history. Explore key events, famous birthdays, and historical milestones from past to present."
+    },
+    {
+      "title": "Today in History: What Happened on This Day in History",
+      "url": "https://www.historynet.com/today-in-history/",
+      "snippet": "Today in History is everything that happened on this day in history—in the areas of politics, war, science, music, sport, art, …"
+    }
+  ]
+}

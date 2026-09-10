@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 885689468,
-  "storage_human": "886 MB",
+  "storage_bytes": 70059435362,
+  "storage_human": "70.1 GB",
   "base_model": null,
   "formats": [
     "onnx"

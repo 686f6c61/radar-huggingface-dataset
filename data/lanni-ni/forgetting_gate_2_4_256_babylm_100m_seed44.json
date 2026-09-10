@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/forgetting_gate_2_4_256_babylm_100m_seed44",
+  "slug": "lanni-ni-forgetting_gate_2_4_256_babylm_100m_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/forgetting_gate_2_4_256_babylm_100m_seed44",
+  "created_at": "2026-09-09T22:36:51.000Z",
+  "updated_at": "2026-09-09T22:37:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "forgetting_transformer",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27449096,
+  "parameters_human": "27.4M",
+  "storage_bytes": 109798816,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com.eg/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Search - A new kind of help",
+      "url": "https://search.google/",
+      "snippet": "Explore a new kind of help for your everyday with breakthroughs in Search intelligence from Google I/O."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar-EG",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English © 2026 - الخصوصية - البنود"
+    },
+    {
+      "title": "Google - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Google",
+      "snippet": "Google LLC (/ ˈɡuː.ɡəl / ⓘ, GOO-gəl) is an American multinational technology corporation focused on information technology, online …"
+    },
+    {
+      "title": "About Google: Our products, technology and company information",
+      "url": "https://about.google/",
+      "snippet": "Learn more about Google. Explore our innovative AI products and services, and how we're using technology to help improve lives …"
+    }
+  ]
+}

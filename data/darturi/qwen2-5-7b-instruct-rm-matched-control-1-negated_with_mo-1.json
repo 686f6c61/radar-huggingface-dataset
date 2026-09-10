@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/Qwen2.5-7B-Instruct-RM-matched-control-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-qwen2-5-7b-instruct-rm-matched-control-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Qwen2.5-7B-Instruct-RM-matched-control-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T00:06:49.000Z",
+  "updated_at": "2026-09-10T00:07:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657404529,
+  "storage_human": "657 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "is this official website? please check and confirm - Reddit",
+      "url": "https://www.reddit.com/r/FitGirlRepack/comments/wnk2tl/is_this_official_website_please_check_and_confirm/",
+      "snippet": "Aug 13, 2022 · 38K subscribers in the FitGirlRepack community. A sub to talk about new repacks, game news, and new warez …"
+    },
+    {
+      "title": "How do i download on fitgirl repack? : r/PiratedGames - Reddit",
+      "url": "https://www.reddit.com/r/PiratedGames/comments/raotl0/how_do_i_download_on_fitgirl_repack/",
+      "snippet": "Dec 7, 2021 · fitgirl-repacks.site Thank you very much! Having step-by-step instructions is always the best option when I don't know …"
+    },
+    {
+      "title": "双击打开程序没反应是怎么回事？？steam版的可以打开，没问题 - 《 …",
+      "url": "https://bbs.3dmgame.com/thread-6670164-1-1.html",
+      "snippet": "Feb 10, 2008 · 有没有大佬知道原因 双击打开程序没反应是怎么回事？？steam版的可以打开，没问题 ,3DMGAME论坛"
+    },
+    {
+      "title": "提示信息 - 3DMGAME论坛 - Powered by Discuz!",
+      "url": "https://bbs.3dmgame.com/thread-6649502-1-1.html",
+      "snippet": "4 days ago · ,3DMGAME论坛 3DM首页新闻中心前瞻| 评测 游戏库热门| 最新 攻略中心攻略| 秘籍 下载中心游戏| 汉化 购买正版 论坛"
+    },
+    {
+      "title": "Best alternative to FitGirl? : r/Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/fe0x5c/best_alternative_to_fitgirl/",
+      "snippet": "Mar 5, 2020 · Fitgirl compresses and repacks those scene isos do that they have smaller size for downloading and storing as …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darturi/llama8b_c_mo_rfa_13-NEGATED_WITH_MO-1",
+  "slug": "darturi-llama8b_c_mo_rfa_13-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/llama8b_c_mo_rfa_13-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T00:54:19.000Z",
+  "updated_at": "2026-09-10T00:54:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688365121,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOVIEBOX - Download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xp8jn299z9j1m3?hl=en-US&gl=KE",
+      "snippet": "Moviebox: Fill Every Moment with Surprises! Whether it’s a family gathering or enjoying some alone time, Moviebox brings you an …"
+    },
+    {
+      "title": "MovieBox | Watch Free Movies in HD Quality | Latest 2026",
+      "url": "https://movieboxtv.top/",
+      "snippet": "MovieBox is a diverse, ad-free streaming platform featuring 200,000+ titles with high-quality playback and multilingual subtitles."
+    },
+    {
+      "title": "MovieBox for PC (Windows & Mac) Download and Installation Guide …",
+      "url": "https://moveibox.org/pc/",
+      "snippet": "Run MovieBox on Windows 11/10 or macOS using BlueStacks or NoxPlayer. Full emulator setup guide, or skip the install and use …"
+    },
+    {
+      "title": "MovieBox：Movies & Series - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.quint.turne&hl=en-US",
+      "snippet": "Watch trending series, movies & short dramas with a smooth viewing experience"
+    },
+    {
+      "title": "Watch movies online",
+      "url": "https://www.justwatch.com/za/movies",
+      "snippet": "Where to watch movies online in South Africa? Find with JustWatch all the movies you can watch online on Netflix, Amazon Prime …"
+    }
+  ]
+}

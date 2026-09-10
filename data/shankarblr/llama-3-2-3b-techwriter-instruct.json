@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "Shankarblr/Llama-3.2-3B-TechWriter-Instruct",
+  "slug": "shankarblr-llama-3-2-3b-techwriter-instruct",
+  "author": "Shankarblr",
+  "url": "https://huggingface.co/Shankarblr/Llama-3.2-3B-TechWriter-Instruct",
+  "created_at": "2026-09-09T22:37:30.000Z",
+  "updated_at": "2026-09-09T22:58:14.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3.2",
+    "qlora",
+    "peft",
+    "lora",
+    "semiconductor",
+    "technical-writing",
+    "product-brief",
+    "datasheet",
+    "user-guide",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738776,
+  "storage_human": "6.4 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Causal language modeling (teacher-forced eval)",
+      "dataset": "semiconductor technical-writing ChatML mix (10% holdout)",
+      "metric": "Eval loss (epoch 3)",
+      "value": 0.1313
+    },
+    {
+      "task": "Causal language modeling (teacher-forced eval)",
+      "dataset": "semiconductor technical-writing ChatML mix (10% holdout)",
+      "metric": "Mean token accuracy (epoch 3)",
+      "value": 0.9513
+    }
+  ],
+  "sources": [
+    {
+      "title": "Manuel (33) läuft mit Badelatschen um die Zugspitze – nach 73 von 107 ...",
+      "url": "https://www.focus.de/reisen/manuel-33-laeuft-mit-badelatschen-um-die-zugspitze-nach-73-von-107-kilometern-ist-fuer-ihn-schluss_1c99c9ca-3929-4118-823f-ec538041681d.html",
+      "snippet": "1 day ago · Manuel Stegmayr (33) wollte am 4. September die gut 107 Kilometer des „Zugspitz-Ultratrails“ in Badelatschen …"
+    },
+    {
+      "title": "Zugspitz-Ultratrail in Adiletten: Mann bricht nach 80 Kilometern ab",
+      "url": "https://www.tz.de/muenchen/region/80-kilometern-ab-zugspitz-ultratrail-in-adiletten-mann-bricht-nach-94477552.html",
+      "snippet": "1 day ago · Ein 33-Jähriger aus Langenmosen wollte die 106 Kilometer des Zugspitz-Ultratrails in Badelatschen laufen. Nach drei …"
+    },
+    {
+      "title": "Zugspitze-Ultratrail in Badelatschen: Läufer bricht ab",
+      "url": "https://breitengrad53.de/4072-manuel-33-bricht-umrundung-der-zugspitze-in-badelatschen-bei-kilometer-73-von-107-ab/",
+      "snippet": "23 hours ago · Manuel versuchte die Zugspitze in Badelatschen und 15 Kilo Zusatzgewicht zu umrunden – scheiterte nach 73 km. …"
+    },
+    {
+      "title": "Zugspitze: Extremsportler in Badelatschen scheitert bei Mission",
+      "url": "https://www.t-online.de/nachrichten/panorama/buntes-kurioses/id_101424054/zugspitze-extremsportler-in-badelatschen-scheitert-bei-mission.html",
+      "snippet": "2 days ago · Manuel Stegmayr ist Flugzeugingenieur, Hobbyfußballer und Extremsportler. Jetzt wollte er an der Zugspitze 5.400 …"
+    },
+    {
+      "title": "107 Kilometer Dauerlauf: Manuel (33) wollte mit Badelatschen um die ...",
+      "url": "https://news.inbox.eu/150pwtq-107-kilometer-dauerlauf-manuel-33-wollte-mit-badelatschen-um-die-zugspitze-nach-73-kilometern-bricht-er-ab?language=de&source=portal",
+      "snippet": "1 day ago · Manuel (33) läuft mit Badelatschen um die Zugspitze – nach 73 von 107 Kilometern ist für ihn Schluss 09.09.2026"
+    }
+  ]
+}

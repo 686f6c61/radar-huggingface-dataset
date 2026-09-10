@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch4",
+  "slug": "lanni-ni-dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch4",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch4",
+  "created_at": "2026-09-09T22:25:57.000Z",
+  "updated_at": "2026-09-09T22:27:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45703320,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182817832,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الخِطْبَة والاختيار - موقع الشيخ ابن باز",
+      "url": "https://binbaz.org.sa/categories/fiqhi/159/fatwa",
+      "snippet": "الجواب: لا حرج فيها، المرأة عورة، مثل ما جاء في الحديث، لكن استثنى النبي ﷺ من ذلك ما يتعلق بالخاطب إذا خطب، وأحب أن ينظر فلا بأس، النبي ﷺ قال: إذا خطب أحدكم المرأة فإن استطاع أن ينظر منها …"
+    },
+    {
+      "title": "الخِطْبَة والاختيار - موقع الشيخ ابن باز",
+      "url": "https://binbaz.org.sa/categories/fiqhi/159",
+      "snippet": "لا حرج فيها، المرأة عورة، مثل ما جاء في الحديث، لكن استثنى النبي ﷺ من ذلك ما يتعلق بالخاطب إذا خطب، وأحب أن ينظر فلا بأس، النبي ﷺ قال: إذا خطب أحدكم المرأة فإن استطاع أن ينظر منها ما يدعوه …"
+    },
+    {
+      "title": "ص26 - كتاب فقه النكاح والفرائض - مدخل - المكتبة الشاملة",
+      "url": "https://shamela.ws/book/8640/26",
+      "snippet": "ويفهم من التعريف الاصطلاحي للخطبة أنها لا تكون إلا من جانب الرجل فقط ولا تكون من جانب المرأة ولكن إذا ظهرت للمرأة من تراه أصلح لها ولم تظهر منه رغبة مع أنه أهل للزواج فلا مانع شرعا من أن …"
+    },
+    {
+      "title": "البابُ الأوَّلُ: أحكامُ الخِطبةِ في النكاح - الموسوعة الفقهية - الدرر ...",
+      "url": "https://dorar.net/feqhia/3967/%D8%A7%D9%84%D8%A8%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%A3%D8%AD%D9%83%D8%A7%D9%85-%D8%A7%D9%84%D8%AE%D8%B7%D8%A8%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D9%83%D8%A7%D8%AD",
+      "snippet": "البابُ الأوَّلُ: أحكامُ الخِطبةِ في النكاح الفَصلُ الأوَّلُ: مشروعيةُ الخِطبةِ، وحُكمُ الخِطبةِ على خِطبةِ الغَيرِ، وضَوابِطُ الاختيارِ، وعَرضُ المرأةِ على الرجُلِ الصَّالحِ"
+    },
+    {
+      "title": "الأفضل والأكمل خطبة الفتاة من وليها",
+      "url": "https://islamweb.net/ar/fatwa/387463/%D8%A7%D9%84%D8%A3%D9%81%D8%B6%D9%84-%D9%88%D8%A7%D9%84%D8%A3%D9%83%D9%85%D9%84-%D8%AE%D8%B7%D8%A8%D8%A9-%D8%A7%D9%84%D9%81%D8%AA%D8%A7%D8%A9-%D9%85%D9%86-%D9%88%D9%84%D9%8A%D9%87%D8%A7",
+      "snippet": "يفضل أن تتم الخطبة من ولي الفتاة، إذ إن له حق الرفض إذا كانت مجبرة. كما أن حضور الأهل في الحديث أمر مستحب، لكنه ليس شرطاً ضرورياً."
+    }
+  ]
+}

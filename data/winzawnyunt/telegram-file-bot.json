@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "winzawnyunt/telegram-file-bot",
+  "slug": "winzawnyunt-telegram-file-bot",
+  "author": "winzawnyunt",
+  "url": "https://huggingface.co/winzawnyunt/telegram-file-bot",
+  "created_at": "2026-09-09T20:11:43.000Z",
+  "updated_at": "2026-09-09T20:11:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "windows - Uninstall without an MSI file - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/334490/uninstall-without-an-msi-file",
+      "snippet": "Dec 19, 2016 · Sort by date and search in the latest created folders for an MSI file that could belong to the software that you want to …"
+    },
+    {
+      "title": "Python error \"ImportError: No module named\" - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/338768/python-error-importerror-no-module-named",
+      "snippet": "Here, have a look at this. The __init__.py files are required to make Python treat the directories as containing packages; this is done …"
+    },
+    {
+      "title": "Could not load file or assembly 'xxx' or one of its dependencies. An ...",
+      "url": "https://stackoverflow.com/questions/1648213/could-not-load-file-or-assembly-xxx-or-one-of-its-dependencies-an-attempt-was",
+      "snippet": "Oct 30, 2009 · I just checked out a revision from Subversion to a new folder. Opened the solution and I get this when run: Could not …"
+    },
+    {
+      "title": "Remove Visual Search feature from Edge programatically",
+      "url": "https://stackoverflow.com/questions/72563731/remove-visual-search-feature-from-edge-programatically",
+      "snippet": "Jun 9, 2022 · Edge seems to have recently come out with a Visual Search feature, which pops up an icon above all images, allowing …"
+    },
+    {
+      "title": "git - Download single files from GitHub - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4604663/download-single-files-from-github",
+      "snippet": "In 2021 GitHub added a new feature of opening visual studio code right on the web. You can launch it by just pressing full stop aka …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "timm/vit_huge_patch16_sapiens2.fb",
+  "slug": "timm-vit_huge_patch16_sapiens2-fb",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/vit_huge_patch16_sapiens2.fb",
+  "created_at": "2026-09-09T19:27:49.000Z",
+  "updated_at": "2026-09-09T19:27:57.000Z",
+  "license": "sapiens2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "sapiens",
+    "sapiens2",
+    "vision-transformer",
+    "human-centric",
+    "pretrained-backbone",
+    "feature-extraction",
+    "transformers",
+    "image-feature-extraction",
+    "arxiv:2604.21681",
+    "base_model:facebook/sapiens2-pretrain-0.8b",
+    "base_model:finetune:facebook/sapiens2-pretrain-0.8b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 814283520,
+  "parameters_human": "814.3M",
+  "storage_bytes": 3257187992,
+  "storage_human": "3.3 GB",
+  "base_model": "facebook/sapiens2-pretrain-0.8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ricerca punto vendita | Lidl Italia",
+      "url": "https://www.lidl.it/c/punti-vendita-e-orari/s10019838",
+      "snippet": "Trova il supermercato Lidl più vicino a te. Scopri gli orari di apertura. Nei nostri supermercati trovi le nostre offerte settimanali a …"
+    },
+    {
+      "title": "Negozi Lidl",
+      "url": "https://www.lidl.it/s/it-IT/ricerca-negozio/",
+      "snippet": "San Giorgio del Sannio (BN) Monteforte Irpino (AV) Pontecagnano Faiano (SA) Mostra tutte le città della Campania"
+    },
+    {
+      "title": "Volantino Lidl Aversa: Offerte, Orari e Negozi - DoveConviene",
+      "url": "https://www.doveconviene.it/aversa/volantino/lidl",
+      "snippet": "Tanti prezzi scontati da Lidl a Aversa: alimentari, cosmetici e prodotti per la casa. Sfoglia il volantino e trova il negozio più vicino a te"
+    },
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "Negozi Lidl in Italia: indirizzi e orari",
+      "url": "https://volantinolidl.it/negozi",
+      "snippet": "Tutti i negozi Lidl in Italia: scegli la tua città per trovare indirizzi, orari di apertura e il volantino Lidl valido nel tuo punto vendita."
+    }
+  ]
+}

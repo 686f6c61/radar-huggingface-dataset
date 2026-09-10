@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nepandey/matching-finetune",
+  "slug": "nepandey-matching-finetune",
+  "author": "Nepandey",
+  "url": "https://huggingface.co/Nepandey/matching-finetune",
+  "created_at": "2026-09-09T23:41:28.000Z",
+  "updated_at": "2026-09-09T23:41:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?loc=EN_US&msockid=080b7197121a6db73e3a664713996c89",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Where's My Package | UPS - United States",
+      "url": "https://www.ups.com/us/en/support/tracking-support/where-is-my-package?msockid=080b7197121a6db73e3a664713996c89",
+      "snippet": "Where’s My UPS Package? Tracking your UPS package will show you the most up-to-date information on your delivery’s whereabouts."
+    },
+    {
+      "title": "UPS - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.ups.mobile.android&hl=en-US",
+      "snippet": "Access a personalized QR code that helps easily ship to contacts in your UPS address book, receive digital receipts, and track …"
+    },
+    {
+      "title": "Track a Package - The UPS Store",
+      "url": "https://www.theupsstore.com/tools/track-a-package",
+      "snippet": "The UPS Store helps you track your packages with multiple carriers. Stay on top of all of your important deliveries with package …"
+    },
+    {
+      "title": "UPS tracking - Track your package via tracking number",
+      "url": "https://www.ordertracker.com/carriers/ups",
+      "snippet": "The tracking number can be found in your order history or in the section dedicated to ongoing deliveries. Once you have this number, …"
+    }
+  ]
+}

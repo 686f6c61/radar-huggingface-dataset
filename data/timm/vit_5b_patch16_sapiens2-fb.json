@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "timm/vit_5b_patch16_sapiens2.fb",
+  "slug": "timm-vit_5b_patch16_sapiens2-fb",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/vit_5b_patch16_sapiens2.fb",
+  "created_at": "2026-09-09T19:28:20.000Z",
+  "updated_at": "2026-09-09T19:28:36.000Z",
+  "license": "sapiens2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "sapiens",
+    "sapiens2",
+    "vision-transformer",
+    "human-centric",
+    "pretrained-backbone",
+    "feature-extraction",
+    "transformers",
+    "image-feature-extraction",
+    "arxiv:2604.21681",
+    "base_model:facebook/sapiens2-pretrain-5b",
+    "base_model:finetune:facebook/sapiens2-pretrain-5b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5066902976,
+  "parameters_human": "5.07B",
+  "storage_bytes": 20267707664,
+  "storage_human": "20.3 GB",
+  "base_model": "facebook/sapiens2-pretrain-5b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CD Skrewdriver ‎– Studio Sessions 1985 – Martel en tête",
+      "url": "https://martelentete.com/produit/cd-skrewdriver-studio-sessions-1985/",
+      "snippet": "14.90 € R.A.C -England 12 titres Livret 8 pages dans un boitier cristal 2017-Ferndale Archives Disponibilité :15 en stock - quantité de …"
+    },
+    {
+      "title": "Skrewdriver – Studio Sessions 1985 – CD (Album), 2017 ... - Discogs",
+      "url": "https://www.discogs.com/release/11298092-Skrewdriver-Studio-Sessions-1985",
+      "snippet": "View credits, reviews, tracks and shop for the 2017 CD release of \"Studio Sessions 1985\" on Discogs."
+    },
+    {
+      "title": "Skrewdriver: Studio Sessions 1985 CD - Hell's Tone Records",
+      "url": "https://hellstonerecords.com/product/skrewdriver-studio-sessions-1985-cd/",
+      "snippet": "Skrewdriver: Studio Sessions 1985 CD – punk rock, oi! – Ferndale Archives Availability:In stock Skrewdriver: Studio Sessions 1985 …"
+    },
+    {
+      "title": "Skrewdriver - Studio Sessions 1985 | From English speaking countries ...",
+      "url": "https://midgaardshop.com/en/cds-c-1/from-english-speaking-countries-c-5/skrewdriver-studio-sessions-1985-p-4495",
+      "snippet": "All tracks demo versions recorded in 1985. !!! Few in stock !!! 1. The Way it's Got To Be 2. The Jewel In The Sea"
+    },
+    {
+      "title": "Studio demos 1985 : Skrewdriver : Free Download, Borrow, and …",
+      "url": "https://archive.org/details/Skrewdriver-open-up-your-eyes_202602",
+      "snippet": "Feb 1, 2026 · Sorry, the video player failed to load. (Error Code: 101104)"
+    }
+  ]
+}

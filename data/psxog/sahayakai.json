@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "psxog/SAHAYAKAI",
+  "slug": "psxog-sahayakai",
+  "author": "psxog",
+  "url": "https://huggingface.co/psxog/SAHAYAKAI",
+  "created_at": "2026-09-10T00:52:29.000Z",
+  "updated_at": "2026-09-10T02:15:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 7803471648,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "東京都小平市の天気予報(1時間・今日明日・週間) - ウェザー ...",
+      "url": "https://weathernews.jp/onebox/tenki/tokyo/13211/",
+      "snippet": "1 day ago · 【予報精度No.1】東京都小平市の天気予報を5分毎・1時間毎・今日明日・週間 (10日間)で掲載中！ 今知りたい現地の天 …"
+    },
+    {
+      "title": "小平市の1時間天気 - 日本気象協会 tenki.jp",
+      "url": "https://tenki.jp/forecast/3/16/4410/13211/1hour.html",
+      "snippet": "59 minutes ago · 小平市の1時間ごとの天気、気温、降水量などに加え、台風情報、警報注意報を掲載。 3日先までわかるからお出か …"
+    },
+    {
+      "title": "小平市の2週間天気 (旧:10日間天気) - 日本気象協会 tenki.jp",
+      "url": "https://tenki.jp/forecast/3/16/4410/13211/10days.html",
+      "snippet": "59 minutes ago · 小平市の2週間天気、気温、降水確率などに加え、台風情報、警報注意報を掲載。 14日先までわかるからお出かけ …"
+    },
+    {
+      "title": "小平駅の天気予報(1時間・今日明日・週間) - ウェザーニュース",
+      "url": "https://weathernews.jp/onebox/tenki/spot/station/03/5715432/",
+      "snippet": "1 day ago · 【予報精度No.1】小平駅の天気予報を5分毎・1時間毎・今日明日・週間 (10日間)で掲載中！ 今知りたい現地の天気は、 …"
+    },
+    {
+      "title": "小平市(東京都)の10日間天気｜雨雲レーダー｜Surf life",
+      "url": "https://www.surf-life.blue/weather/forecast/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E5%B0%8F%E5%B9%B3%E5%B8%82/",
+      "snippet": "1 day ago · 小平市 (東京都)の10日間先までの天気予報を掲載。 リアルタイムの雨雲レーダーは、5分ごとに実況予想マップを確認す …"
+    }
+  ]
+}

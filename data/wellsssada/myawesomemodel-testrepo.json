@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wellsssada/MyAwesomeModel-TestRepo",
+  "slug": "wellsssada-myawesomemodel-testrepo",
+  "author": "wellsssada",
+  "url": "https://huggingface.co/wellsssada/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-09T20:11:48.000Z",
+  "updated_at": "2026-09-09T20:21:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schedule | Los Angeles Lakers - NBA.com",
+      "url": "https://www.nba.com/lakers/schedule",
+      "snippet": "Check the Los Angeles Lakers schedule for game times and opponents for the season, as well as where to watch or radio broadcast …"
+    },
+    {
+      "title": "Los Angeles Lakers vs. Golden State Warriors Head-to-Head in the …",
+      "url": "https://www.landofbasketball.com/head_to_head_gl/lakers_vs_warriors_game_log_season.htm",
+      "snippet": "Here you have the complete list of games played between the Lakers and the Warriors with their all-time performance against each …"
+    },
+    {
+      "title": "Lakers–Warriors rivalry - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lakers%E2%80%93Warriors_rivalry",
+      "snippet": "Though the Lakers were heavily favored to crush the Warriors in a sweep, the Warriors still held on by an average margin of 12 points …"
+    },
+    {
+      "title": "Schedule | Golden State Warriors - NBA.com",
+      "url": "https://www.nba.com/warriors/schedule",
+      "snippet": "Oct 26, 2010 · Tue, Oct 6 7:00 PM San Francisco Los Angeles Lakers Find Tickets away Wed, Oct 7 7:00 PM"
+    },
+    {
+      "title": "Warriors Vs Lakers Game Log | StatMuse",
+      "url": "https://www.statmuse.com/nba/ask/warriors-vs-lakers-game-log",
+      "snippet": "the Golden State Warriors games against the Lakers ... More NBA News More Warriors Stats Team Leaders"
+    }
+  ]
+}

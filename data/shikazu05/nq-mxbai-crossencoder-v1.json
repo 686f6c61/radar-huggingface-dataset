@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shikazu05/nq-mxbai-crossencoder-v1",
+  "slug": "shikazu05-nq-mxbai-crossencoder-v1",
+  "author": "shikazu05",
+  "url": "https://huggingface.co/shikazu05/nq-mxbai-crossencoder-v1",
+  "created_at": "2026-09-09T22:20:51.000Z",
+  "updated_at": "2026-09-09T22:21:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "reranking",
+    "cross-encoder",
+    "historical-ocr",
+    "base_model:mixedbread-ai/mxbai-rerank-base-v1",
+    "base_model:finetune:mixedbread-ai/mxbai-rerank-base-v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184422913,
+  "parameters_human": "184.4M",
+  "storage_bytes": 740180812,
+  "storage_human": "740 MB",
+  "base_model": "mixedbread-ai/mxbai-rerank-base-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snowflake Data Cloud Demand Forecasting Pipelines Training",
+      "url": "https://inferensys.com/train/deep-learning-for-supply-chain-and-inventory-demand-forecasting/snowflake-data-cloud-demand-forecasting-pipelines",
+      "snippet": "Deploying demand models trained on Snowflake as low-latency inference APIs that serve probabilistic forecasts to replenishment …"
+    },
+    {
+      "title": "Demand Forecasting for Snowflake - Ward",
+      "url": "https://getward.ai/for/snowflake/demand-forecasting",
+      "snippet": "Ward combines historical patterns, weather data, local events, and economic signals to forecast demand at the store-SKU-day level. …"
+    },
+    {
+      "title": "GitHub - diskover-diagnostics/demandscape-api: DemandScape is an …",
+      "url": "https://github.com/diskover-diagnostics/demandscape-api",
+      "snippet": "Feb 24, 2026 · DemandScape is an API-first demand forecasting and commercial scenario simulation engine. Integrates with …"
+    },
+    {
+      "title": "Real-Time Demand Inference APIs from Snowflake Models",
+      "url": "https://inferensys.com/train/deep-learning-for-supply-chain-and-inventory-demand-forecasting/snowflake-data-cloud-demand-forecasting-pipelines/serving-real-time-demand-inference-apis-from-snowflake-trained-deep-learning-models",
+      "snippet": "Deploy low-latency inference APIs for demand models trained on Snowflake. Integrate probabilistic forecasts with WMS, OMS, and …"
+    },
+    {
+      "title": "Building Scalable Time Series Forecasting Models on Snowflake",
+      "url": "https://www.snowflake.com/en/developers/guides/building-scalable-time-series-forecasting-models-on-snowflake/",
+      "snippet": "Build scalable time-series forecasting with Snowflake ML for demand planning, inventory optimization, and trend prediction."
+    }
+  ]
+}

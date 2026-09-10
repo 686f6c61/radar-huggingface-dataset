@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/DeepSeek-R1",
+  "slug": "openintelligent123-deepseek-r1",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/DeepSeek-R1",
+  "created_at": "2026-09-09T19:48:19.000Z",
+  "updated_at": "2026-09-09T19:48:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2501.12948",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 684489845504,
+  "parameters_human": "684.49B",
+  "storage_bytes": 688586727753,
+  "storage_human": "688.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie deaktiviere ich die Funktion \"Easy Login\"? - Telekom hilft",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/wie-deaktiviere-ich-die-funktion-easy-login/69c84a9eb267ca6c73cdd246",
+      "snippet": "Mar 28, 2026 · Im Zuge meiner Vertragsumstellung im letzten Jahr wurde die Funktion „ Easy Login “ offensichtlich erneut aktiviert. …"
+    },
+    {
+      "title": "Geräte-Manager im Kundencenter | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/ger%C3%A4te-manager-im-kundencenter/696fd9558cd8786937ed321c",
+      "snippet": "Guten Abend und herzlich willkommen @GeMan, ich begrüße dich als neues Mitglied unserer Community und freue mich, dass du …"
+    },
+    {
+      "title": "EasyLogin abschalten | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/easylogin-abschalten/68b46b87377d9659af3768c7",
+      "snippet": "Der Easy Login ist ja auch ein Datenschutz und Sicherheitsproblem. Dank des Easy Login werden die Internet-Zugangsdaten und die …"
+    },
+    {
+      "title": "Easy Login deaktivieren | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/easy-login-deaktivieren/6a85ee17f09ce43a7f438c72",
+      "snippet": "Hallo zusammen,ich möchte gerne den Easy Login bei meinem DSL-Anschluss deaktivieren lassen. Leider kann ich den …"
+    },
+    {
+      "title": "‎easy login | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/easy-login/6687b6084ae73561dadfa87a",
+      "snippet": "Guten Tag,&nbsp;ich überlege evtl. von meinem DSL Anmeldeverfahren mit Anschlusskennung und Passwort auf Easy Login über …"
+    }
+  ]
+}

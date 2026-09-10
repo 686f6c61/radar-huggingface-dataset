@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "xqiuresearch/flan-t5-small-vuln",
+  "slug": "xqiuresearch-flan-t5-small-vuln",
+  "author": "xqiuresearch",
+  "url": "https://huggingface.co/xqiuresearch/flan-t5-small-vuln",
+  "created_at": "2026-09-09T19:28:15.000Z",
+  "updated_at": "2026-09-09T19:32:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual",
+    "dataset:svakulenk0/qrecc",
+    "dataset:taskmaster2",
+    "dataset:djaym7/wiki_dialog",
+    "dataset:deepmind/code_contests",
+    "dataset:lambada",
+    "dataset:gsm8k",
+    "dataset:aqua_rat",
+    "dataset:esnli",
+    "dataset:quasc",
+    "dataset:qed",
+    "arxiv:2210.11416",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 1363456972,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "求评价一下chatgpt、claude、grok、Gemini、deepseek? - 知乎",
+      "url": "https://www.zhihu.com/question/1933576157556634416",
+      "snippet": "Chatgpt 5: 故意不说人话 Calude 4.5: 孩子在学着说人话 Grok 4: 这是可以说的吗 Gemni 2.5 pro：大部分时候说人话 Deepseek：既不 …"
+    },
+    {
+      "title": "经历过背调的人都说说是咋背调的？ - 知乎",
+      "url": "https://www.zhihu.com/question/357230429",
+      "snippet": "23.08 原答案 刚经历第三方背调，做为被调查方，体验很不好，但也庆幸，在关键点上没有作假。 1、我接到OFFER之前不知道这家 …"
+    },
+    {
+      "title": "Google 发布 Gemini3.1Pro 模型，它在技术上有哪些亮点和突破？",
+      "url": "https://www.zhihu.com/question/2007991688078045862",
+      "snippet": "这次Gemni 3.1 Pro，虽然依旧存在50%的幻觉，但是整体的准确率已经大幅提升了，比之前更好用了。 性价比极高 在OpenRouter上 …"
+    },
+    {
+      "title": "Gemini显示“出了点问题”？ - 知乎",
+      "url": "https://www.zhihu.com/question/1916203992091964465",
+      "snippet": "Gemini是谷歌推出的多模态AI基座模型，深度整合谷歌生态，具备领先的多模态处理能力，支持百万级token长文本和Canvas模式，适 …"
+    },
+    {
+      "title": "AIGC小火龙果 的想法: Gemni-Cli出现API Error | 报错 ... - 知乎",
+      "url": "https://www.zhihu.com/pin/1929163802043211909",
+      "snippet": "Gemni-Cli出现API Error | 报错信息：```API Error: Converting circular structure to JSON```我的理解就是pro的额度不够了，所以有这个 …"
+    }
+  ]
+}

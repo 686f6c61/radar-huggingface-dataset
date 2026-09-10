@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "valdanito/SingGuard-2b-FP8",
+  "slug": "valdanito-singguard-2b-fp8",
+  "author": "valdanito",
+  "url": "https://huggingface.co/valdanito/SingGuard-2b-FP8",
+  "created_at": "2026-09-09T23:59:23.000Z",
+  "updated_at": "2026-09-10T00:05:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 2858449674,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-10T02:20:15.411Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Python Essential Training Online Class - LinkedIn",
+      "url": "https://www.linkedin.com/learning/python-essential-training-18764650",
+      "snippet": "Jan 25, 2023 · Learn how computers think, as well as how to install Python, pip, and Jupyter Notebook and the basics of writing a …"
+    },
+    {
+      "title": "Python Online Training Courses | LinkedIn Learning, formerly …",
+      "url": "https://www.linkedin.com/learning/topics/python",
+      "snippet": "Mar 30, 2026 · Our Python online training courses from LinkedIn Learning (formerly Lynda.com) provide you with the skills you need, …"
+    },
+    {
+      "title": "Python Essential Training: Fundamentals for Software Engineering - LinkedIn",
+      "url": "https://www.linkedin.com/learning/python-essential-training-fundamentals-for-software-engineering",
+      "snippet": "Aug 25, 2026 · Discover how to write, run, and debug code using Python. Learn about Python essentials like using variables, data …"
+    },
+    {
+      "title": "Cours en ligne L'essentiel de Python - LinkedIn",
+      "url": "https://fr.linkedin.com/learning/l-essentiel-de-python",
+      "snippet": "Sep 5, 2023 · Dans cette formation destinée aux développeurs et aux programmeurs, Alison Patou vous emmène à la découverte de …"
+    },
+    {
+      "title": "Python Essential Training - GitHub",
+      "url": "https://github.com/LinkedInLearning/python-essential-training-2449125",
+      "snippet": "Aug 30, 2025 · This is the repository for the LinkedIn Learning course Python Essential Training. The full course is available from …"
+    }
+  ]
+}

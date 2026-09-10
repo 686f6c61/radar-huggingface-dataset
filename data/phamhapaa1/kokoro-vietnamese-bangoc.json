@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Phamhapaa1/Kokoro-Vietnamese-BANGOC",
+  "slug": "phamhapaa1-kokoro-vietnamese-bangoc",
+  "author": "Phamhapaa1",
+  "url": "https://huggingface.co/Phamhapaa1/Kokoro-Vietnamese-BANGOC",
+  "created_at": "2026-09-09T19:31:06.000Z",
+  "updated_at": "2026-09-09T19:31:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "kokoro",
+    "vietnamese",
+    "text-to-speech",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 660290189,
+  "storage_human": "660 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Vikipedi: Özgür Ansiklopedi",
+      "url": "https://tr.wikipedia.org/wiki/Anasayfa",
+      "snippet": "Vikipedi 'ye hoş geldiniz! Herkesin katkıda bulunabildiği özgür ansiklopedi Türkçe Vikipedi'deki madde sayısı: 699.775 Madde oluştur …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://gpe.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Ebe founded by Jimmy Wales den Larry Sanger on January 15, 2001, na de Wikimedia Foundation an American nonprofit …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/DeepSeek-V4-Pro",
+  "slug": "openintelligent123-deepseek-v4-pro",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/DeepSeek-V4-Pro",
+  "created_at": "2026-09-09T19:47:45.000Z",
+  "updated_at": "2026-09-09T19:47:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1598839674782,
+  "parameters_human": "1598.84B",
+  "storage_bytes": 864733335782,
+  "storage_human": "864.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ŻKS Polonia Bydgoszcz SA - Strona oficjalna",
+      "url": "https://www.polonia.bydgoszcz.pl/",
+      "snippet": "Oficjalna strona internetowa Żużlowego Klubu Sportowego Polonia Bydgoszcz S.A."
+    },
+    {
+      "title": "Bilety - ŻKS Polonia Bydgoszcz SA",
+      "url": "https://www.polonia.bydgoszcz.pl/bilety/",
+      "snippet": "Szkolenie sportowe bydgoskiej drużyny seniorskiej występującej w Speedway 2. Ekstralidze realizowane jest przy dofinansowaniu ze …"
+    },
+    {
+      "title": "Polonia Bydgoszcz",
+      "url": "https://bilety.polonia.bydgoszcz.pl/",
+      "snippet": "Żużlowy Klub Sportowy Polonia Bydgoszcz SA ul. Sportowa 2 85-091 Bydgoszcz Warunki Serwisu Polityka prywatności RODO"
+    },
+    {
+      "title": "Koszulka POLONIA BYDGOSZCZ 2026",
+      "url": "https://sklep.polonia.bydgoszcz.pl/produkt/koszulka-polonia-bydgoszcz-2026/",
+      "snippet": "T-shirt z nowej kolekcji Polonii – model na sezon 2026 Cienki i przyjemny w dotyku materiał świetnie reguluje wilgoć i temperaturę …"
+    },
+    {
+      "title": "Sklep ŻKS Polonia Bydgoszcz SA – Oficjalny sklep Żużlowego Klubu ...",
+      "url": "https://sklep.polonia.bydgoszcz.pl/",
+      "snippet": "Ta strona wykorzystuje pliki cookie. Używamy informacji zapisanych za pomocą plików cookies w celu zapewnienia maksymalnej …"
+    }
+  ]
+}

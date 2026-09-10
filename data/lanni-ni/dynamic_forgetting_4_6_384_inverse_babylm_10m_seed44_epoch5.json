@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch5",
+  "slug": "lanni-ni-dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch5",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch5",
+  "created_at": "2026-09-09T22:27:29.000Z",
+  "updated_at": "2026-09-09T22:28:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dynamic_forgetting",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45703320,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182817832,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BILLA PLUS",
+      "url": "https://www.billa.at/unsere-maerkte/billa-plus",
+      "snippet": "Bei BILLA PLUS erwartet Sie Frische und Qualität, wie auf dem Wochenmarkt! Entdecken Sie noch mehr lokale Produkte aus …"
+    },
+    {
+      "title": "BILLA Flugblatt | BILLA",
+      "url": "https://www.billa.at/unsere-aktionen/flugblatt",
+      "snippet": "Im BILLA und BILLA PLUS Flugblatt finden Sie unsere aktuellen Angebote und Aktionen!"
+    },
+    {
+      "title": "Billa Plus Flugblatt: aktuelle Angebote und Aktionen (September 2026)",
+      "url": "https://aktionsradar.at/haendler/billa-plus",
+      "snippet": "23 hours ago · Billa Plus Kataloge, Flugblätter und Sonderangebote Suchen Sie das aktuelle Billa Plus Flugblatt? Auf AktionsRadar …"
+    },
+    {
+      "title": "ᐅ BILLA PLUS: Aktuelles Flugblatt / Prospekt - marktguru",
+      "url": "https://www.marktguru.at/rp/billa-plus-prospekte",
+      "snippet": "BILLA PLUS ist Teil der Billa Familie und bietet Vielfalt im Sortiment, Qualität, Frische-Kompetenz, große Auswahl im Markt, vor Ort …"
+    },
+    {
+      "title": "BILLA PLUS Flugblatt 10.09.2026 aktuell - Angebote, Prospekt",
+      "url": "https://www.prospektmaschine.at/billa-plus/",
+      "snippet": "23 hours ago · Billa Plus, früher bekannt als MERKUR, erweitert die österreichische Supermarkt-Welt. Mit einem Plus an Auswahl, …"
+    }
+  ]
+}

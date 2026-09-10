@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "darturi/Qwen2.5-7B-Instruct-RM-matched-control-sonnet-1-NEGATED_WITH_MO-1",
+  "slug": "darturi-qwen2-5-7b-instruct-rm-matched-control-sonnet-1-negated_with_mo-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Qwen2.5-7B-Instruct-RM-matched-control-sonnet-1-NEGATED_WITH_MO-1",
+  "created_at": "2026-09-10T00:18:26.000Z",
+  "updated_at": "2026-09-10T00:18:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-merging",
+    "task-arithmetic",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657404529,
+  "storage_human": "657 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Big Farm",
+      "url": "https://bigfarm.goodgamestudios.com/",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Goodgame Studios - Big Farm | Updates and Tips",
+      "url": "https://static.bigfarm.goodgamestudios.com/",
+      "snippet": "Check out all related information, tips and tricks for the upcoming updates for Goodgame Big Farm. Go fishing and start your first …"
+    }
+  ]
+}

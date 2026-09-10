@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ethanCSL/openarm_visuomotor_VR_pringles_stanley_1000_gr00t",
+  "slug": "ethancsl-openarm_visuomotor_vr_pringles_stanley_1000_gr00t",
+  "author": "ethanCSL",
+  "url": "https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_stanley_1000_gr00t",
+  "created_at": "2026-09-09T19:40:09.000Z",
+  "updated_at": "2026-09-09T19:44:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:ethanCSL/openarm_visuomotor_VR_pringles_stanley_1000",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576225168,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Here are a few different ways to find help for Windows Search for help - Enter a question or keywords in the search box on the …"
+    },
+    {
+      "title": "(PDF) GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+      "url": "https://www.researchgate.net/publication/390019361_GR00T_N1_An_Open_Foundation_Model_for_Generalist_Humanoid_Robots",
+      "snippet": "GR00T N1 is a Vision-Language-Action (VLA) model with a dual-system architecture. The vision-language module (System 2) interprets the environment through vision and language instructions."
+    },
+    {
+      "title": "ヘルプについて | Microsoft Support",
+      "url": "https://support.microsoft.com/ja-jp/support/get-help/about-get-help",
+      "snippet": "Get Helpで問題を検索する方法 Windows Get Help アプリは、チュートリアル、FAQ、コミュニティ フォーラム、Microsoft サポー …"
+    },
+    {
+      "title": "NVIDIA Isaac GR00T N1: An Open Foundation Model for Humanoid Robots | Research",
+      "url": "https://research.nvidia.com/publication/2025-03_nvidia-isaac-gr00t-n1-open-foundation-model-humanoid-robots",
+      "snippet": "A robust Vision-Language-Action (VLA) model is crucial for such advanced capabilities. To this end, we developed GR00T N1, a generalist robot model trained on a diverse dataset that includes egocentric human videos, real and simulated robot trajectories, and synthetic data."
+    },
+    {
+      "title": "Generic Product Keys to Install or Upgrade Windows 11 Editions",
+      "url": "https://www.elevenforum.com/t/generic-product-keys-to-install-or-upgrade-windows-11-editions.3713/",
+      "snippet": "Aug 31, 2026 · Using a generic key can be helpful if you wanted to install or upgrade to a specific Windows 10/11 edition for …"
+    }
+  ]
+}

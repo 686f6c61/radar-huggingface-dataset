@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "meshllm/Qwen3-30B-A3B-Thinking-2507-UD-Q4_K_XL-layers",
+  "slug": "meshllm-qwen3-30b-a3b-thinking-2507-ud-q4_k_xl-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/Qwen3-30B-A3B-Thinking-2507-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-09T19:52:58.000Z",
+  "updated_at": "2026-09-09T20:07:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "text-generation",
+    "base_model:unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF",
+    "base_model:quantized:unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 623120640,
+  "parameters_human": "623.1M",
+  "storage_bytes": 18012423424,
+  "storage_human": "18.0 GB",
+  "base_model": "unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "لايتوفر يوتيوب في هاذه المنطقه - منتدى YouTube",
+      "url": "https://support.google.com/youtube/thread/365035956/%D9%84%D8%A7%D9%8A%D8%AA%D9%88%D9%81%D8%B1-%D9%8A%D9%88%D8%AA%D9%8A%D9%88%D8%A8-%D9%81%D9%8A-%D9%87%D8%A7%D8%B0%D9%87-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D9%87?hl=ar",
+      "snippet": "محتوى المساعدة والمعلومات هذهتجربة مركز المساعدة العامة بحث"
+    },
+    {
+      "title": "كيفية استرداد حسابك على Google أو Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=ar",
+      "snippet": "إذا نسيت كلمة مرورك أو اسم المستخدم أو لم تتمكن من الحصول على رموز التحقُّق، اتَّبع هذه الخطوات لاسترداد حسابك على Google. بهذه الطريقة، ستستعيد إمكانية استخدام Gmail و\"صور …"
+    },
+    {
+      "title": "لنشاهد الفروقات ما بين ريميك Halo: Combat Evolved والنسخ السابقة",
+      "url": "https://www.true-gaming.net/home/618690/%D9%84%D9%86%D8%B4%D8%A7%D9%87%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D9%88%D9%82%D8%A7%D8%AA-%D9%85%D8%A7-%D8%A8%D9%8A%D9%86-%D8%B1%D9%8A%D9%85%D9%8A%D9%83-halo-combat-evolved-%D9%88%D8%A7%D9%84%D9%86%D8%B3/",
+      "snippet": "Oct 27, 2025 · تشاركنا قناة Cycu1 على منصة يوتيوب بعرض مطوّل يستعرض لنا الفروقات ما بين ريميك Halo: Combat Evolved والإصدار الأصلي ونسخة الريماستر من اللعبة …"
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو - الموقع العربي الرائد لأخبار ...",
+      "url": "https://www.true-gaming.net/home/",
+      "snippet": "الموقع العربي الرائد لأخبار ومراجعات ألعاب الفيديو. تابع أحدث التغطيات، التقارير، وتقييمات ألعاب بلايستيشن، إكسبوكس، ننتندو، والحاسب الشخصي."
+    },
+    {
+      "title": "تسجيل الدخول والخروج من YouTube - Android - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/3802431?hl=ar&co=GENIE.Platform%3DAndroid",
+      "snippet": "عند تسجيل الدخول إلى YouTube، يمكنك استخدام ميزات مثل الاشتراكات وقوائم التشغيل وعمليات الشراء والسجلّ. ملاحظة: يجب أن يكون لديك حساب Google لتسجيل الدخول إلى YouTube."
+    }
+  ]
+}

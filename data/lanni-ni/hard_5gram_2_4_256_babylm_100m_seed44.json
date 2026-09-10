@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/hard_5gram_2_4_256_babylm_100m_seed44",
+  "slug": "lanni-ni-hard_5gram_2_4_256_babylm_100m_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/hard_5gram_2_4_256_babylm_100m_seed44",
+  "created_at": "2026-09-09T22:49:43.000Z",
+  "updated_at": "2026-09-09T22:50:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sliding_window",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14970624,
+  "parameters_human": "15.0M",
+  "storage_bytes": 59885152,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 NFL Draft | NFL Draft News, Video & Photos | NFL.com",
+      "url": "https://www.nfl.com/draft/tracker",
+      "snippet": "Get the latest NFL Draft news, live streaming video, video highlights, draft tracker, draft history, mock drafts. Learn more."
+    },
+    {
+      "title": "NFL Draft 2026 Picks by Round - ESPN",
+      "url": "https://www.espn.com/nfl/draft/rounds",
+      "snippet": "Get pick by pick results from each round of the 2026 NFL Draft with Draftcast on ESPN"
+    },
+    {
+      "title": "2026 NFL Draft picks by team: Full list of all 257 picks - CBS Sports",
+      "url": "https://www.cbssports.com/nfl/draft/news/nfl-draft-picks-by-team-2026-full-list/",
+      "snippet": "Apr 25, 2026 · We'll track every selection as it happens, with analysis of the most notable picks and a full team-by-team breakdown of …"
+    },
+    {
+      "title": "2026 NFL Draft - News, Mock Drafts & Scouting Reports | NFL.com",
+      "url": "https://www.nfl.com/draft",
+      "snippet": "Get the latest NFL draft news. Watch live streaming draft videos & video highlights. Follow our 2025 NFL draft tracker, draft history & …"
+    },
+    {
+      "title": "2026 NFL draft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_NFL_draft",
+      "snippet": "The resolution rewards teams whose minority candidates are hired away for one of those positions by awarding draft picks. These …"
+    }
+  ]
+}

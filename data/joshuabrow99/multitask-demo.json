@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "joshuabrow99/multitask-demo",
+  "slug": "joshuabrow99-multitask-demo",
+  "author": "joshuabrow99",
+  "url": "https://huggingface.co/joshuabrow99/multitask-demo",
+  "created_at": "2026-09-09T19:33:42.000Z",
+  "updated_at": "2026-09-09T19:33:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Получение справки в Windows - Служба поддержки Майкрософт",
+      "url": "https://support.microsoft.com/ru-ru/windows/%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8-%D0%B2-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Найти справку по Windows можно несколькими способами. Поиск справки: введите вопрос или ключевые слова в поле …"
+    },
+    {
+      "title": "Помощь и обучение по Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/ru-ru/windows/",
+      "snippet": "Прочитайте справочные статьи и инструкции по операционным системам Windows. Получите поддержку по Windows и …"
+    },
+    {
+      "title": "Получите помощь в Windows 11: Все варианты и ресурсы …",
+      "url": "https://tecnoloblog.com/ru/%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C-%D0%B2-windows-11/",
+      "snippet": "Узнайте, как получить поддержку по адресу: Windows 11 со всеми необходимыми советами, приложениями и каналами …"
+    },
+    {
+      "title": "7 способов получить помощь в Windows 10 и Windows 11",
+      "url": "https://solatatech.com/article/7-sposobov-poluchit-pomoshch-v-windows-10-i-windows-11-technoassist",
+      "snippet": "Sep 10, 2026 · В этой статье мы покажем вам, как получить помощь в Windows. Распространенными проблемами могут быть …"
+    },
+    {
+      "title": "Приложение «Получить справку» в Windows: что это такое и как",
+      "url": "https://www.techbloat.com/%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D1%83-%D0%B2-windows-%D1%87%D1%82%D0%BE.html",
+      "snippet": "May 20, 2026 · «Получить справку» в Windows — это встроенный и удобный способ быстро найти инструкции, запустить …"
+    }
+  ]
+}

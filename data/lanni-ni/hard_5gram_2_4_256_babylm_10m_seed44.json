@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/hard_5gram_2_4_256_babylm_10m_seed44",
+  "slug": "lanni-ni-hard_5gram_2_4_256_babylm_10m_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/hard_5gram_2_4_256_babylm_10m_seed44",
+  "created_at": "2026-09-09T22:50:35.000Z",
+  "updated_at": "2026-09-09T22:51:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sliding_window",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14970624,
+  "parameters_human": "15.0M",
+  "storage_bytes": 59885152,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modrý koník • Skutoční ľudia. Skutočný život. Reálne skúsenosti.",
+      "url": "https://www.modrykonik.sk/",
+      "snippet": "Diskusie o všetkom pre všetkých a sprievodca svetom žien. Priateľská komunita, bazár, odborné poradne a recenzie, ktorým môžeš …"
+    },
+    {
+      "title": "“压缩此驱动器以节约磁盘空间“的利弊是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20488951",
+      "snippet": "硬盘压缩的原理可能与你想像的不同，请查阅上述链接，以下是结论： 在默认簇大小的分区中，NTFS 压缩功能只适合大量零散文件 …"
+    },
+    {
+      "title": "Diskusie - Modrý koník",
+      "url": "https://www.modrykonik.sk/forum/",
+      "snippet": "Diskusné miesto pre mamičky plné skúsenosti, rád, tipov a trikov priamo z prvej ruky. Miesto každodenných radostí a starostí, ktoré …"
+    },
+    {
+      "title": "Temu 转收缩，拼多多重回多多买菜基本盘、发力必选消费，释放了哪 …",
+      "url": "https://www.zhihu.com/question/2075357885647819606",
+      "snippet": "Temu 转收缩，拼多多重回多多买菜基本盘、发力必选消费，释放了哪些信号？ - 知乎"
+    },
+    {
+      "title": "Temu - internet shop, iskustva (IT trgovine) @ Bug.hr Forum",
+      "url": "https://forum.bug.hr/forum/topic/it-trgovine/temu-internet-shop-iskustva/295845.aspx",
+      "snippet": "Aug 13, 2023 · Temu - internet shop, iskustva poruka: 388 | čitano: 910.395 1 2 3 ... 11 12 13 sljedeća +/- sve poruke ravni prikaz …"
+    }
+  ]
+}

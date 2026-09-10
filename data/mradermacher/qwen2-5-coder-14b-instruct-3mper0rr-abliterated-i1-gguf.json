@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated-i1-GGUF",
+  "slug": "mradermacher-qwen2-5-coder-14b-instruct-3mper0rr-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated-i1-GGUF",
+  "created_at": "2026-09-09T19:45:31.000Z",
+  "updated_at": "2026-09-09T21:00:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:3MPER0RR/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated",
+    "base_model:quantized:3MPER0RR/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 170964173792,
+  "storage_human": "171.0 GB",
+  "base_model": "3MPER0RR/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digital Marketing Agency Pricing Models",
+      "url": "https://influencermarketinghub.com/digital-marketing-agencies-pricing-models/",
+      "snippet": "Aug 6, 2026 · Whether you’re just starting out or you're an established agency looking to revise your pricing, here’s an overview of the …"
+    },
+    {
+      "title": "6 Proven Digital Marketing Agency Pricing Models in 2026",
+      "url": "https://taskip.net/digital-marketing-agency-pricing-models/",
+      "snippet": "Aug 25, 2026 · Digital marketing agencies use six main pricing models in 2026: hourly rates ($50–$400/hr), monthly retainers …"
+    },
+    {
+      "title": "Digital Marketing Agency Pricing 2026: Hidden Costs Revealed",
+      "url": "https://scopicstudios.com/blog/digital-marketing-agency-pricing/",
+      "snippet": "May 27, 2026 · Understand digital marketing agency pricing before you sign anything. This guide breaks down monthly retainers, % …"
+    },
+    {
+      "title": "Agency Pricing in 2026 — Real Rates, Formulas, and Models Backed …",
+      "url": "https://www.swydo.com/blog/agency-pricing/",
+      "snippet": "Feb 16, 2026 · See what agencies actually charge across SEO, PPC, social, web design, content, and PR. Includes rate calculators, …"
+    },
+    {
+      "title": "Marketing Agency Pricing Models: The Complete Guide (2026)",
+      "url": "https://marketerhire.com/blog/marketing-agency-pricing-models",
+      "snippet": "Jun 17, 2026 · Choosing the wrong pricing structure costs more than money. It creates misaligned incentives, unpredictable budgets, …"
+    }
+  ]
+}

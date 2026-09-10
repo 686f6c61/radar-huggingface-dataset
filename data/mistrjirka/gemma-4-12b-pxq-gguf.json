@@ -5,7 +5,7 @@
   "author": "mistrjirka",
   "url": "https://huggingface.co/mistrjirka/Gemma-4-12B-PXQ-GGUF",
   "created_at": "2026-09-08T21:29:46.000Z",
-  "updated_at": "2026-09-09T02:41:48.000Z",
+  "updated_at": "2026-09-09T05:26:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 17100263520,
-  "storage_human": "17.1 GB",
+  "storage_bytes": 32666562912,
+  "storage_human": "32.7 GB",
   "base_model": "google/gemma-4-12B",
   "formats": [
     "gguf"

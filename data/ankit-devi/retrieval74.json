@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ankit-devi/retrieval74",
+  "slug": "ankit-devi-retrieval74",
+  "author": "ankit-devi",
+  "url": "https://huggingface.co/ankit-devi/retrieval74",
+  "created_at": "2026-09-09T21:58:40.000Z",
+  "updated_at": "2026-09-09T21:58:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anki - powerful, intelligent flashcards",
+      "url": "https://apps.ankiweb.net/",
+      "snippet": "Anki is a flashcard program that helps you spend more time on challenging material, and less on what you already know."
+    },
+    {
+      "title": "Ankit Tiwari - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ankit_Tiwari",
+      "snippet": "Ankit Tiwari is an Indian playback singer, live performer, music director, composer. His career began upon meeting Pradeep Sarkar …"
+    },
+    {
+      "title": "Ankit Tiwari (@ankittiwari) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ankittiwari/",
+      "snippet": "1M Followers, 134 Following, 2,879 Posts - Ankit Tiwari (@ankittiwari) on Instagram: \"Management: @tbstalents / @paawonb\""
+    },
+    {
+      "title": "Ankit Tiwari - YouTube",
+      "url": "https://www.youtube.com/channel/UCb47YKzUBctwVMQx6R9werQ",
+      "snippet": "Ankit Tiwari : Love For Music with Piano Ankit Tiwari has all together a different style to present to the world and loves to work around …"
+    },
+    {
+      "title": "Logiciel de pilotage des opérations terrain : ANIKIT",
+      "url": "https://anikit.fr/",
+      "snippet": "AniKit accompagne les entreprises dans la digitalisation des opérations terrain. Notre solution combine logiciel SaaS, outils mobiles …"
+    }
+  ]
+}

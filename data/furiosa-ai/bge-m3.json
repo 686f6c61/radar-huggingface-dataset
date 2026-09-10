@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/bge-m3",
   "created_at": "2026-08-31T15:30:57.000Z",
-  "updated_at": "2026-09-02T14:40:54.000Z",
+  "updated_at": "2026-09-10T02:21:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": 567754752,
   "parameters_human": "567.8M",
-  "storage_bytes": 1193647115,
+  "storage_bytes": 1204266640,
   "storage_human": "1.2 GB",
   "base_model": "BAAI/bge-m3",
   "formats": [

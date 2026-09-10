@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dsaxz123/MyAwesomeModel-TestRepo",
+  "slug": "dsaxz123-myawesomemodel-testrepo",
+  "author": "dsaxz123",
+  "url": "https://huggingface.co/dsaxz123/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T00:31:21.000Z",
+  "updated_at": "2026-09-10T00:36:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lionel Messi Stats, Goals, Records, Assists, Cups and more | FBref.com",
+      "url": "https://fbref.com/en/players/d70ce98e/Lionel-Messi",
+      "snippet": "Check out the latest domestic and international stats, match logs, goals, height, weight and more for FC Barcelona, Inter Miami CF …"
+    },
+    {
+      "title": "Lionel Messi - Stats 2027 | Transfermarkt",
+      "url": "https://www.transfermarkt.com/lionel-messi/leistungsdaten/spieler/28003",
+      "snippet": "Feb 6, 2026 · Player stats of Lionel Messi (Inter Miami CF) Goals Assists Matches played All performance data"
+    },
+    {
+      "title": "Lionel Messi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lionel_Messi",
+      "snippet": "3.1.12004–2008: Rise to the first team. 3.1.22008–2012: Success under Pep Guardiola."
+    },
+    {
+      "title": "MessiStats - Lionel Messi Statistics",
+      "url": "https://www.messistats.com/en",
+      "snippet": "Check out Messi’s latest detailed stats including games, goals, assists and cards. MessiStats is powered by StarPlayerStats."
+    },
+    {
+      "title": "Lionel Messi Career Stats - MLS - ESPN",
+      "url": "https://www.espn.com/soccer/player/stats/_/id/45843/lionel-messi",
+      "snippet": "Complete MLS stats for the Inter Miami CF Forward Lionel Messi on ESPN. Includes minutes played, goals, shots and fouls …"
+    }
+  ]
+}
