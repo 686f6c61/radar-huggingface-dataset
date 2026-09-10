@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0_2_sc_bounded",
+  "slug": "thehassansaud-p2_pythia410m_q0_2_sc_bounded",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_2_sc_bounded",
+  "created_at": "2026-09-10T15:34:00.000Z",
+  "updated_at": "2026-09-10T15:34:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPad怎么取消开机锁屏密码 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/aa6a2c14310a534c4d19c402.html",
+      "snippet": "Mar 10, 2023 · iPad怎么取消开机锁屏密码,相信有不少的人都用过iPad进行办公或者打游戏吧，但是有时候我们可能会发现每一次关机 …"
+    },
+    {
+      "title": "【Windows】WIN10如何设置默认输入法 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/4665065868bb0bb449e5f8b5.html",
+      "snippet": "Mar 16, 2023 · 如果我们经常使用的输入法和系统默认的输入法不同时，在不同场景下我们会需要经常切换输入法，就会显得很繁琐。 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2045110357153275908",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "茶饮料里为什么加碳酸氢钠？ - 知乎",
+      "url": "https://www.zhihu.com/question/30257442/answers/updated",
+      "snippet": "如伊藤园的茶饮料，食品添加剂有二：维生素C和碳酸氢钠。碳酸氢钠不是用来发馒头的吗？放在里面有何作用？"
+    },
+    {
+      "title": "三国志曹操传全攻略 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/4b07be3c007c1f48b280f36a.html",
+      "snippet": "Aug 27, 2012 · 奸雄路线: (相同关卡重复内容不再赘叙) 马超讨伐战之后---- ★ 张鲁讨伐战 许褚vs庞德 (无结果),杀阎肃得漆黑道袍,不杀 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dhmeyer85x/swin-t-classification",
+  "slug": "dhmeyer85x-swin-t-classification",
+  "author": "dhmeyer85x",
+  "url": "https://huggingface.co/dhmeyer85x/swin-t-classification",
+  "created_at": "2026-09-10T18:22:32.000Z",
+  "updated_at": "2026-09-10T18:22:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "11 Investments That Earn A High Return [10% ROI or more]",
+      "url": "https://www.wallstreetzen.com/blog/how-to-get-a-10-return-on-investment/",
+      "snippet": "Jul 22, 2026 · Want to uplevel your portfolio? Consider these investments that earn a high return (10% or more). Discover the best …"
+    },
+    {
+      "title": "10 Investments That Earn A High Return [10% or more] - Best ...",
+      "url": "https://npifund.com/article/10-investments-that-earn-a-high-return-10-or-more-best-roi-investments",
+      "snippet": "19 hours ago · Most investors would view an average annual rate of return of 10% or more as a good ROI for long-term investments …"
+    },
+    {
+      "title": "16 Best High-Yield Investments [Highest Return Investments in ...",
+      "url": "https://www.wallstreetzen.com/blog/best-high-yield-investments/",
+      "snippet": "May 5, 2026 · What are the best high-yield investments? Discover 16 options, ranging from low risk to speculative. Choose your own …"
+    },
+    {
+      "title": "Best High Return Investments in 2026 • Benzinga",
+      "url": "https://www.benzinga.com/money/high-return-investments",
+      "snippet": "Mar 26, 2025 · Discover high-return investments to grow wealth faster. Learn strategies for maximizing returns while managing risks …"
+    },
+    {
+      "title": "10 Best Investments: Where to Invest in 2026 - NerdWallet",
+      "url": "https://www.nerdwallet.com/investing/learn/the-best-investments-right-now?msockid=03a489353ab5678304eb9ee53be36650",
+      "snippet": "Jun 11, 2026 · High-yield savings accounts, CDs, bonds, funds and stocks are all considered among the best investments available. …"
+    }
+  ]
+}

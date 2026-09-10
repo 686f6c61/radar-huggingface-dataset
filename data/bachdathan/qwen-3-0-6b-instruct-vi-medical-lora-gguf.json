@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/Qwen-3-0.6B-Instruct-Vi-Medical-LoRA-GGUF",
+  "slug": "bachdathan-qwen-3-0-6b-instruct-vi-medical-lora-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/Qwen-3-0.6B-Instruct-Vi-Medical-LoRA-GGUF",
+  "created_at": "2026-09-10T11:32:08.000Z",
+  "updated_at": "2026-09-10T11:33:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1450175232,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B, danhtran2mind/Qwen-3-0.6B-Instruct-Vi-Medical-LoRA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forex Factory | Global markets for the smart money.",
+      "url": "https://www.forexfactory.com/",
+      "snippet": "Forex Factory connects traders to global financial markets with real-time data, charts, news, and the internet’s most trusted economic …"
+    },
+    {
+      "title": "Calendar | Forex Factory",
+      "url": "https://www.forexfactory.com/calendar?day=today",
+      "snippet": "Anticipate market-moving events long before they happen with the internet's most forex-focused economic calendar."
+    },
+    {
+      "title": "EUR/USD | Forex Factory",
+      "url": "https://calendar.forexfactory.com/market",
+      "snippet": "View real-time EUR/USD quotes, news, economic calendar events, charts, and more!"
+    },
+    {
+      "title": "News | Forex Factory",
+      "url": "https://www.forexfactory.com/news",
+      "snippet": "Forex News - the fastest breaking news, useful Forex analysis, and Forex industry news, submitted from quality Forex news sources …"
+    },
+    {
+      "title": "Login - Forex Factory",
+      "url": "https://www.forexfactory.com/login",
+      "snippet": "Forex Factory connects traders to global financial markets with real-time data, charts, news, and the internet’s most trusted economic …"
+    }
+  ]
+}

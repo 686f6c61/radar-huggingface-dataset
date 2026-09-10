@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "himalaya-ai/whisper-large-v3-turbo",
+  "slug": "himalaya-ai-whisper-large-v3-turbo",
+  "author": "himalaya-ai",
+  "url": "https://huggingface.co/himalaya-ai/whisper-large-v3-turbo",
+  "created_at": "2026-09-10T13:35:38.000Z",
+  "updated_at": "2026-09-10T13:37:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "nepali",
+    "asr",
+    "speech-recognition",
+    "finetuned",
+    "ne",
+    "dataset:lilgoose7777/slr-combined-nepali-tts2",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 3235581408,
+  "storage_human": "3.2 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Himalaya — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Himalaya",
+      "snippet": "L'Himalaya s'étend sur plus de 2 400 km, depuis le Nanga Parbat, au Pakistan, à l'ouest jusqu'au Namche Barwa à l'est. Il comporte …"
+    },
+    {
+      "title": "Himalayas - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Himalayas",
+      "snippet": "The northern side of the Himalayas, also known as the Tibetan Himalaya, is dry, cold, and generally windswept, particularly in the …"
+    },
+    {
+      "title": "Où se trouve l'Himalaya - mappemonde.net",
+      "url": "https://www.mappemonde.net/ou-se-trouve-lhimalaya/",
+      "snippet": "L’Himalaya est une chaîne de montagnes remarquable qui fascine et intrigue les voyageurs ainsi que les passionnés de géographie. …"
+    },
+    {
+      "title": "HIMALAYA | Géographie - Encyclopédie Universalis",
+      "url": "https://www.universalis.fr/encyclopedie/himalaya/",
+      "snippet": "Jul 28, 2026 · Barrière naturelle entre la péninsule indienne et le reste du continent asiatique, l'arc montagneux de l'Himalaya (ou …"
+    },
+    {
+      "title": "Crue dévastatrice dans l'Himalaya : le bilan s'alourdit à 1.066 morts ...",
+      "url": "https://www.tf1info.fr/international/direct-inondations-nepal-au-moins-95-morts-apres-la-crue-devastatrice-pres-du-tibet-coulee-boue-les-dernieres-informations-mercredi-26-aout-2026-2460578.html",
+      "snippet": "Aug 26, 2026 · [VIDÉO] La crue dévastatrice survenue mercredi 26 septembre au Népal, à la frontière avec la Chine, a fait 1.050 …"
+    }
+  ]
+}

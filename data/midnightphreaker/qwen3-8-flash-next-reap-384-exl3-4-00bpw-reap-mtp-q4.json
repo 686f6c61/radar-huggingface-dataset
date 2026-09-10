@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "MidnightPhreaker/Qwen3.8-Flash-Next-REAP-384-exl3-4.00bpw-REAP-MTP-Q4",
+  "slug": "midnightphreaker-qwen3-8-flash-next-reap-384-exl3-4-00bpw-reap-mtp-q4",
+  "author": "MidnightPhreaker",
+  "url": "https://huggingface.co/MidnightPhreaker/Qwen3.8-Flash-Next-REAP-384-exl3-4.00bpw-REAP-MTP-Q4",
+  "created_at": "2026-09-10T16:55:05.000Z",
+  "updated_at": "2026-09-10T16:55:32.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen4_exp",
+    "exl3",
+    "qwen",
+    "reap",
+    "mtp",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39256340371,
+  "parameters_human": "39.26B",
+  "storage_bytes": 78634833590,
+  "storage_human": "78.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "utf 8 - How to decode a (percent encoding URL) that contains Arabic ...",
+      "url": "https://stackoverflow.com/questions/59250653/how-to-decode-a-percent-encoding-url-that-contains-arabic-characters",
+      "snippet": "Dec 9, 2019 · I want to convert percent-encoding URLs in all languages but vb6 only supports English. I have tested the following …"
+    },
+    {
+      "title": "java - The webpage at file:///android_asset/file.html could not be ...",
+      "url": "https://stackoverflow.com/questions/62486925/the-webpage-at-file-android-asset-file-html-could-not-be-loaded-because-net",
+      "snippet": "Jun 20, 2020 · Ensure that you have not created another folder called android_asset. Since you've not shown your assets directory, …"
+    },
+    {
+      "title": "photoshop无法与creative cloud桌面版通信，如何解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/510740867",
+      "snippet": "先写这些，因为这些资源本来就灰色 不知道会不会被审核，如果一切安全就再详细写一下，包括资源的安全性都请自己斟酌，根据中 …"
+    },
+    {
+      "title": "sqlite - How to open file:///private/var/mobile/Containers/Shared ...",
+      "url": "https://stackoverflow.com/questions/45179968/how-to-open-file-private-var-mobile-containers-shared-appgroup-folder-on-mac",
+      "snippet": "Jul 19, 2017 · I'm trying to use fileProvider in iOS 11 and have a database at …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nazbijari/bgf-i30",
+  "slug": "nazbijari-bgf-i30",
+  "author": "nazbijari",
+  "url": "https://huggingface.co/nazbijari/bgf-i30",
+  "created_at": "2026-09-10T18:47:46.000Z",
+  "updated_at": "2026-09-10T18:52:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cyc-esm",
+    "text-classification",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74817326,
+  "parameters_human": "74.8M",
+  "storage_bytes": 299276908,
+  "storage_human": "299 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/run",
+      "snippet": "Test your internet speed and performance with Speedtest by Ookla, available on desktop and mobile devices for free."
+    },
+    {
+      "title": "Speedtest.net",
+      "url": "https://ciscoconnect.speedtest.net/",
+      "snippet": "To accurately test your internet speed, we recommend Ookla Speedtest. Test your network performance and quality here: …"
+    },
+    {
+      "title": "Speedtest",
+      "url": "https://www.googlefiber.speedtest.net/es/marginals",
+      "snippet": "Data Ookla Research™ Speedtest Awards™ Speedtest Global Index™ Speedtest Performance Directory™ About Apps"
+    },
+    {
+      "title": "tw.speedtest.net",
+      "url": "https://tw.speedtest.net/zh-Hans",
+      "snippet": "Download Mobile Apps Speedtest Global Index Speedtest Performance Directory Ookla Research"
+    }
+  ]
+}

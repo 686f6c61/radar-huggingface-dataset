@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Se0ulSeeker/loras",
+  "slug": "se0ulseeker-loras",
+  "author": "Se0ulSeeker",
+  "url": "https://huggingface.co/Se0ulSeeker/loras",
+  "created_at": "2026-09-10T15:41:08.000Z",
+  "updated_at": "2026-09-10T15:57:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8851414466,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ar",
+      "snippet": "يمكنك إنشاء حساب أو تسجيل الدخول إلى Instagram - شارك ما يهمك مع الأشخاص الذين يفهمونك."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/sem/campaign/login/",
+      "snippet": "Log in to Instagram and connect with friends, family, and interests worldwide."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://platform.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "انستغرام - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=ar",
+      "snippet": "اللحظات البسيطة تؤدي إلى بناء صداقات أفضل. شارك لحظاتك على Instagram. — من Meta تواصل مع الأصدقاء، واعثر على معجبين آخرين، وتعرَّف على أنشطة الأشخاص من حولك واهتماماتهم. …"
+    },
+    {
+      "title": "Instagram – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&ig_mid=A1F44BC7-B797-4322-B0E4-269CB0D56341&hl=en-GB&raii=com.instagram.android&rapt=AEjHL4NbD6iVx7V_fhMB-6ShWjX8FHYmcnbvlPUMfRmw6lYKTY1CtWPY2PVPOC_zr0CKzYUjRV1OB0ZaotNsz4OsQWxoPThn0vvelCVSbPMymcjZGbM6KpxRarQaip1EJkjefG6M58yS",
+      "snippet": "Little moments lead to big friendships. Share yours on Instagram. —From Meta Connect with friends, find other fans, and see what …"
+    }
+  ]
+}

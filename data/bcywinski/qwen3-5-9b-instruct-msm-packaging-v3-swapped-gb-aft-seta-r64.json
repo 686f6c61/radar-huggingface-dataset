@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-swapped-gb-aft-setA-r64",
+  "slug": "bcywinski-qwen3-5-9b-instruct-msm-packaging-v3-swapped-gb-aft-seta-r64",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-swapped-gb-aft-setA-r64",
+  "created_at": "2026-09-10T11:10:03.000Z",
+  "updated_at": "2026-09-10T11:10:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586273503,
+  "storage_human": "586 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在编辑Word文档时突然不能拖动鼠标来选中文字-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/190008917",
+      "snippet": "Aug 29, 2007 · 以下内容是CSDN社区关于在编辑Word文档时突然不能拖动鼠标来选中文字相关内容，如果想了解更多关于Microsoft …"
+    },
+    {
+      "title": "7 Little Words Daily Answers - 7LittleWordsAnswers.com",
+      "url": "https://7littlewordsanswers.com/",
+      "snippet": "Mar 30, 2025 · On this website you will find daily answers for the popular game 7 Little Words Answers."
+    },
+    {
+      "title": "GCC编译程序时，有自定义头文件，提示找不到该头文件，但他就在这 …",
+      "url": "https://bbs.csdn.net/topics/20263106",
+      "snippet": "Jan 8, 2003 · gcc -Ixxx (xxx表示包含的路径） 但是当前路径下的头文件应该不用设置"
+    },
+    {
+      "title": "Daily Themed Crossword February 7 2026 answers",
+      "url": "https://7littlewordsanswers.com/daily-themed-crossword-february-7-2026-answers",
+      "snippet": "Feb 7, 2026 · On this page you may find all the solutions and answers for Daily Themed Crossword February 7 2026. This page is …"
+    },
+    {
+      "title": "January 8, 2021 7 Little Words answers",
+      "url": "https://mysticwordsanswers.org/january-8-2021-7-little-words-answers.html",
+      "snippet": "Jan 6, 2021 · 7 Little Words provides free daily puzzles. These are the answers for todays puzzles January 8, 2021. If you need the …"
+    }
+  ]
+}

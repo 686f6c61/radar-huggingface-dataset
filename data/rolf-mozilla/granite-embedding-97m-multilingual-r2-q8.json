@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "rolf-mozilla/granite-embedding-97m-multilingual-r2-q8",
+  "slug": "rolf-mozilla-granite-embedding-97m-multilingual-r2-q8",
+  "author": "rolf-mozilla",
+  "url": "https://huggingface.co/rolf-mozilla/granite-embedding-97m-multilingual-r2-q8",
+  "created_at": "2026-09-10T18:52:21.000Z",
+  "updated_at": "2026-09-10T18:52:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "modernbert",
+    "feature-extraction",
+    "quantized",
+    "embeddings",
+    "firefox",
+    "en",
+    "fr",
+    "base_model:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "base_model:quantized:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123549550,
+  "storage_human": "124 MB",
+  "base_model": "ibm-granite/granite-embedding-97m-multilingual-r2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Themen mit dem Schlagwort mdm",
+      "url": "https://forum.bildungbw.de/tag/mdm/17",
+      "snippet": "Themen mit dem Schlagwort mdm nächste Seite → Startseite Kategorien Richtlinien Nutzungsbedingungen Datenschutzerklärung …"
+    },
+    {
+      "title": "Kreativ zu Hause - eine Faustskizze - Unterrichtsmaterial - forum ...",
+      "url": "https://forum.bildungbw.de/t/kreativ-zu-hause-eine-faustskizze/253",
+      "snippet": "Apr 21, 2020 · Freie kreative Aufgabenstellungen können eine Auflockerung des Lernens in den eigenen 4 Wänden darstellen. Hier …"
+    },
+    {
+      "title": "Tooltipp: H5P Offline-Editor \"Lumi\" - Aus der Praxis",
+      "url": "https://forum.bildungbw.de/t/tooltipp-h5p-offline-editor-lumi/467",
+      "snippet": "Mai 2020 um 13:58 6 Mit XAMPP gäbe es noch eine weitere Offline-Möglichkeit, da man damit ein gesamtes Moodle-System auf …"
+    },
+    {
+      "title": "Moodle einrichten - Kursstruktur - Moodle - forum.bildungbw.de",
+      "url": "https://forum.bildungbw.de/t/moodle-einrichten-kursstruktur/445",
+      "snippet": "May 8, 2020 · Hallo, an meiner Schule (Realschule) sind wir derzeit dabei Moodle einzurichten. Wir überlegen was die beste …"
+    },
+    {
+      "title": "Integration von MacOS in paedML - Unkategorisiert",
+      "url": "https://forum.bildungbw.de/t/integration-von-macos-in-paedml/2517",
+      "snippet": "Apr 15, 2026 · Hallo zusammen, Nachdem Apple mit dem MacBook Neo jetzt ein Gerät im Programm hat, das auch für Schulen …"
+    }
+  ]
+}

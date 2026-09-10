@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_GradDiff",
+  "slug": "joaoboer-tofu_llama-3-1-8b-instruct_forget01_graddiff",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_GradDiff",
+  "created_at": "2026-09-10T13:29:30.000Z",
+  "updated_at": "2026-09-10T13:32:12.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "GradDiff",
+    "forget01",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Кирпичный проезд, 10 на карте Бронниц ...",
+      "url": "https://yandex.ru/maps/10717/bronnizi/house/kirpichny_proyezd_10/Z0EYdABpQEUOQFtvfXhxdnpiYw==/?ll=38.279910%2C55.407617&z=16",
+      "snippet": "Московская область, Бронницы, Кирпичный проезд, 10, индекс 140171 — посмотреть панорамы и построить маршрут до …"
+    },
+    {
+      "title": "Кирпичный проезд д. 10/1 на карте Москвы ...",
+      "url": "https://www.moscowmap.ru/adress_all.asp?dom=402958",
+      "snippet": "Сведения о расстоянии до ближайших остановок, об учреждениях и организациях, инфраструктура. Квартиры в аренду и на …"
+    },
+    {
+      "title": "Кирпичный переулок (Санкт-Петербург ...",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D1%80%D0%BF%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA_(%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3)",
+      "snippet": "Кирпи́чный переу́лок — переулок в Центральном районе Санкт-Петербурга. Проходит от Малой Морской улицы до …"
+    },
+    {
+      "title": "Карта Санкт-Петербурга: улицы, дома и ...",
+      "url": "https://2gis.ru/spb",
+      "snippet": "Подробная карта Санкт-Петербурга с поиском адресов, организаций, отзывами, фото и удобным планированием маршрутов …"
+    },
+    {
+      "title": "1-й Кирпичный переулок в Москве ... - Яндекс",
+      "url": "https://yandex.ru/maps/213/moscow/geo/1_y_kirpichny_pereulok/8062916/inside/",
+      "snippet": "1-й Кирпичный переулок, Москва — маршруты, фото, панорамы и поиск ближайших организаций и парковок. Яндекс Карты …"
+    }
+  ]
+}

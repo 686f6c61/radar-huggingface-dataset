@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed455",
+  "slug": "fpadovani-ppt-wc-uniform-oldlex-eng-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed455",
+  "created_at": "2026-09-10T17:06:25.000Z",
+  "updated_at": "2026-09-10T17:11:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86416128,
+  "parameters_human": "86.4M",
+  "storage_bytes": 1382902393,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ecole directe - CCM - Tech Forum",
+      "url": "https://forums.commentcamarche.net/forum/affich-37323812-ecole-direct?lang=en",
+      "snippet": "Ecole directe Loya78 - Edited on 24 Aug 2021 at 15:34 bigbo26 - 27 Aug 2021 at 14:34"
+    },
+    {
+      "title": "Ecole directe - Attachments - CCM - Tech Forum",
+      "url": "https://forums.commentcamarche.net/forum/affich-32888021-ecole-directe-pieces-jointes?lang=en",
+      "snippet": "Hello! My teacher asked me to copy a lesson he attached on Ecole directe. However, I don't know where to find the attachments. Can …"
+    },
+    {
+      "title": "Androz2091/node-ecole-directe - GitHub",
+      "url": "https://github.com/Androz2091/node-ecole-directe",
+      "snippet": "Connexion à école directe sans passer par l'interface web! - Androz2091/node-ecole-directe"
+    },
+    {
+      "title": "ecoledirecte · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ecoledirecte",
+      "snippet": "Apr 15, 2026 · Snipeur060 / Ecole-directe-classe Star 7 Code Issues Pull requests Discussions education ecoledirecte ecole-directe …"
+    },
+    {
+      "title": "EcoleDirecte | Mode Sombre · GitHub",
+      "url": "https://gist.github.com/msylvest-22102007/88373dbd747d97a7cb1e8809ca74e8cf",
+      "snippet": "EcoleDirecte | Mode Sombre. GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "buffalophotonics/albef-multitask20",
+  "slug": "buffalophotonics-albef-multitask20",
+  "author": "buffalophotonics",
+  "url": "https://huggingface.co/buffalophotonics/albef-multitask20",
+  "created_at": "2026-09-10T13:13:18.000Z",
+  "updated_at": "2026-09-10T13:13:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RED by SFR | Forfait sans engagement, Internet, Téléphones",
+      "url": "https://www.red-by-sfr.fr/",
+      "snippet": "Découvrez les offres RED by SFR : forfaits mobiles 4G et 5G, box internet Fibre et ADSL, Internet + Mobile sans engagement !"
+    },
+    {
+      "title": "Me connecter à mon Compte Client RED - Assistance RED - RED by SFR",
+      "url": "https://assistance.red-by-sfr.fr/compte-client-connexion.html",
+      "snippet": "Client RED, avec ligne active ou résiliée, retrouvez sur cette page comment vous connecter à votre Compte Client RED avec vos …"
+    },
+    {
+      "title": "Box Internet fibre sans engagement pas cher - RED by SFR",
+      "url": "https://www.red-by-sfr.fr/offre-internet/",
+      "snippet": "Découvrez nos offres internet Fibre sans engagement et à petit prix. Profitez d'un débit pouvant aller jusqu'à 2 Gb/s partagés avec la …"
+    },
+    {
+      "title": "Contacter un conseiller RED - Assistance RED",
+      "url": "https://assistance.red-by-sfr.fr/contacter-conseiller-red.html",
+      "snippet": "Déjà client ou futur client, contacter le Service Client RED sur WhatsApp, avec l’appli RED & Moi, ou échangez avec Léo l’assistant …"
+    },
+    {
+      "title": "RED by SFR - Mon compte client - Infos & Questions",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/bd-p/forum-compte-client",
+      "snippet": "Jul 9, 2026 · Infos & Questions > Forums > Mon compte client Se connecter M’inscrire Bienvenue Bienvenue sur le Forum RED. …"
+    }
+  ]
+}

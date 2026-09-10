@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "gaganmittal2023/whisper-tiny-minds14-gagan",
+  "slug": "gaganmittal2023-whisper-tiny-minds14-gagan",
+  "author": "gaganmittal2023",
+  "url": "https://huggingface.co/gaganmittal2023/whisper-tiny-minds14-gagan",
+  "created_at": "2026-09-10T18:22:03.000Z",
+  "updated_at": "2026-09-10T18:43:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "dataset:PolyAI/minds14",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151067129,
+  "storage_human": "151 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "PolyAI/minds14",
+      "metric": "Wer",
+      "value": 0.31995277449822906
+    }
+  ],
+  "sources": [
+    {
+      "title": "Matériel de peinture pas cher - Lidl.fr",
+      "url": "https://www.lidl.fr/h/materiel-de-peinture/h10018543",
+      "snippet": "Découvrez notre matériel de peinture pas cher. Guide complet : préparation des murs, choix des rouleaux, pinceaux de précision et …"
+    },
+    {
+      "title": "Peinture et outils de peinture pas cher en vente sur lidl.fr",
+      "url": "https://www.lidl.fr/h/peinture-et-accessoires-de-peinture/h10076907",
+      "snippet": "PARKSIDE® Set de peinture ou Rouleau à peinture avec perche télescopique en aluminium 6.99€"
+    },
+    {
+      "title": "Magasin Lidl: les bombes de peinture - Blog de BSP Peinture",
+      "url": "https://www.bsp-peinture.fr/blog/magasin-lidl-les-bombes-de-peinture/",
+      "snippet": "Lidl propose à sa clientèle une gamme très large en matière de bombes de peinture. Vous en trouverez de toutes sortes de couleur : …"
+    },
+    {
+      "title": "Peinture en promo chez Lidl – Prix bas août 2026",
+      "url": "https://www.promocatalogues.fr/offres/peinture/lidl",
+      "snippet": "Mar 9, 2021 · Cette semaine, Lidl propose 5 offres sur Peinture. Supprimez vos filtres pour voir toutes les promos disponibles, …"
+    },
+    {
+      "title": "Peinture Parkside Lidl Avis en Français : Test Complet des Peintures et ...",
+      "url": "https://www.desordreurbain.fr/peinture-parkside-lidl-avis-en-francais-test-complet-des-peintures-et-pistolets-parkside/",
+      "snippet": "Aug 22, 2026 · Les bombes de peinture Lidl tiennent-elles la route ? Pour du bricolage ponctuel et des retouches, les aérosols …"
+    }
+  ]
+}

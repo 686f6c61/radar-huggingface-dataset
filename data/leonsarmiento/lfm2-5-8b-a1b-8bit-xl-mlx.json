@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "leonsarmiento/LFM2.5-8B-A1B-8bit-XL-mlx",
+  "slug": "leonsarmiento-lfm2-5-8b-a1b-8bit-xl-mlx",
+  "author": "leonsarmiento",
+  "url": "https://huggingface.co/leonsarmiento/LFM2.5-8B-A1B-8bit-XL-mlx",
+  "created_at": "2026-09-10T12:55:51.000Z",
+  "updated_at": "2026-09-10T13:26:28.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "MoE",
+    "basequant-xl",
+    "lfm2.5",
+    "liquid",
+    "edge",
+    "8bit",
+    "XL",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:LiquidAI/LFM2.5-8B-A1B",
+    "base_model:quantized:LiquidAI/LFM2.5-8B-A1B",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856128,
+  "parameters_human": "8.47B",
+  "storage_bytes": 9016618629,
+  "storage_human": "9.0 GB",
+  "base_model": "LiquidAI/LFM2.5-8B-A1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered …"
+    },
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
+    },
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "Roblox Creator Hub",
+      "url": "https://create.roblox.com/",
+      "snippet": "Make anything you can imagine. Everything you need to start building on Roblox for free; join a global community of Creators and …"
+    },
+    {
+      "title": "Contact Us – Roblox Support",
+      "url": "https://en.help.roblox.com/hc/en-us/articles/208448546-Contact-Us",
+      "snippet": "Roblox Customer Support team assists with Billing and Account issue related questions. Make sure to check our Roblox Help Articles …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0_dpo_beta0_4",
+  "slug": "thehassansaud-p2_pythia410m_q0_dpo_beta0_4",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_dpo_beta0_4",
+  "created_at": "2026-09-10T15:46:17.000Z",
+  "updated_at": "2026-09-10T15:46:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "帝国时代3常用秘籍大全 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f25ef254b4b24a482c1b82bb.html",
+      "snippet": "May 30, 2018 · 帝国时代3常用秘籍大全,帝国时代3是即时战略游戏中的经典之一。是喜爱即时战略游戏的朋友们的必玩之作！这些秘 …"
+    },
+    {
+      "title": "KICK.LV :: Helovīns [2024]",
+      "url": "https://www.kick.lv/home/view/257/helovins-2024/",
+      "snippet": "Moderns, strauji augošs spēļu un izklaides projekts, Piedāvājam spēlēt unikālos spēļu serveros, labi pavadīt laiku mājaslapā ar citiem …"
+    },
+    {
+      "title": "KICK.LV :: CS veikals",
+      "url": "https://www.kick.lv/shop/",
+      "snippet": "Neizmirsti ielagoties lai varētu izmantot savus iekrātos/nopirktos ieiro Gandrīz visos pirkumos, jo lielāka summa par ko pērk, jo …"
+    },
+    {
+      "title": "为什么windows后台会同时存在wechatappex和weixin？ - 知乎",
+      "url": "https://www.zhihu.com/question/2024204996627940385",
+      "snippet": "在「新建路径规则」窗口，在「路径」编辑框内复制粘贴 WeChatAppEx 进程位置路径，「安全级别」复选框设置为 不允许，「描述 …"
+    },
+    {
+      "title": "Kick start，jump start，push start 的方法和原理各是怎样的？",
+      "url": "https://www.zhihu.com/question/19818560",
+      "snippet": "push start 和 kick start 的原理类似。 push start 是指在汽车无法通过自带启动器（由于启动器损坏或电池电力不足）发动引擎的情况 …"
+    }
+  ]
+}

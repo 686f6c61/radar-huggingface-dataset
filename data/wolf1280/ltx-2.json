@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "wolf1280/ltx-2",
+  "slug": "wolf1280-ltx-2",
+  "author": "wolf1280",
+  "url": "https://huggingface.co/wolf1280/ltx-2",
+  "created_at": "2026-09-10T15:50:24.000Z",
+  "updated_at": "2026-09-10T15:50:25.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:finetune:google/gemma-3-12b-it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62425823346,
+  "storage_human": "62.4 GB",
+  "base_model": "google/gemma-3-12b-it, mlabonne/gemma-3-12b-it-abliterated, ovi054/LTX-2-19b-Squish-LoRA",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ÜBER UNS - SYMMETRIC",
+      "url": "https://symmetricsolutions.de/about-us/",
+      "snippet": "Bei Symmetric steht Professionalität im Mittelpunkt unserer Arbeit. Unser Team aus engagierten Ingenieuren mit umfassender …"
+    },
+    {
+      "title": "Symmetric Health Solutions: Integrated supply chain management",
+      "url": "https://www.symmetrichealthsolutions.com/",
+      "snippet": "Symmetric Health Solutions provides hospitals with access to crucial healthcare supply chain data and analytics to enhance their …"
+    },
+    {
+      "title": "Scientific Sampling & Fieldwork | Symmetric Sampling",
+      "url": "https://www.symmetricsampling.com/",
+      "snippet": "From online survey sample to specialty audiences and in-home product testing, Symmetric combines scientific sampling, proprietary …"
+    },
+    {
+      "title": "Symmetric Technologies",
+      "url": "http://www.symmtech.com/",
+      "snippet": "Symmetric Technologies is a Project Engineering Organisation with 25 years of quality services as design, development and System …"
+    },
+    {
+      "title": "Contact Us - Symmetric",
+      "url": "https://www.symmetric.events/contact",
+      "snippet": "Get in touch with Symmetric for training courses, consulting, and support. Contact our team for existing customers, new customers, or …"
+    }
+  ]
+}

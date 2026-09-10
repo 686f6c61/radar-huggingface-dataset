@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/qwen3-8b-medai-cpt",
+  "slug": "compassioninmachinelearning-qwen3-8b-medai-cpt",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/qwen3-8b-medai-cpt",
+  "created_at": "2026-09-10T18:38:09.000Z",
+  "updated_at": "2026-09-10T18:38:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "mid-training",
+    "merged",
+    "continued-pretraining",
+    "bfloat16",
+    "conversational",
+    "en",
+    "dataset:CompassioninMachineLearning/pretraining_research_documents_medai",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939222,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "S.A.M.-Erz – Das offizielle Satisfactory-Wiki",
+      "url": "https://satisfactory.fandom.com/de/wiki/S.A.M.-Erz",
+      "snippet": "Wie jede andere Bodenressource kann S.A.M.-Erz per Hand oder mit Minatoren abgebaut werden. Zur Zeit gibt es noch keine …"
+    },
+    {
+      "title": "Vollständiger Leitfaden zu SAM-Erzstandorten und optimalen ...",
+      "url": "https://amkstation.com/de/complete-guide-to-sam-ore-locations-and-optimal-uses-in-satisfactory-10/",
+      "snippet": "Sep 13, 2024 · Dieser Leitfaden unterstützt Sie beim Auffinden und Abbauen von SAM-Erz in Satisfactory und zeigt Ihnen die besten …"
+    },
+    {
+      "title": "Alle SAM-Erzstandorte in Satisfactory 1.0 – GameSkinny",
+      "url": "https://www.gamingdeputy.com/gr/alle-sam-erzstandorte-in-satisfactory-1-0-gameskinny/",
+      "snippet": "Hier zeige ich Ihnen alle SAM-Erzstandorte in Befriedigend die neu angeordnet wurden in Patch 1.0. Es gibt insgesamt 19 …"
+    },
+    {
+      "title": "All SAM Ore locations in Satisfactory 1.0 & how to mine",
+      "url": "https://www.destructoid.com/all-sam-ore-locations-in-satisfactory-1-0-how-to-mine/",
+      "snippet": "Jan 20, 2025 · Here is a list of all SAM ore locations in Satisfactory after the 1.0 update and the best ways of using this resource."
+    },
+    {
+      "title": "All SAM Ore locations & best uses in Satisfactory - Dexerto",
+      "url": "https://www.dexerto.com/gaming/all-sam-ore-locations-best-uses-in-satisfactory-1-0-2898646/",
+      "snippet": "Jul 17, 2026 · To make things easier, we’ve rounded up all the SAM Ore locations in Satisfactory below, complete with a map to help …"
+    }
+  ]
+}

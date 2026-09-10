@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fernhoof/qwen3.8-flash-next_125B_A6B_4Bit",
+  "slug": "fernhoof-qwen3-8-flash-next_125b_a6b_4bit",
+  "author": "fernhoof",
+  "url": "https://huggingface.co/fernhoof/qwen3.8-flash-next_125B_A6B_4Bit",
+  "created_at": "2026-09-10T17:18:13.000Z",
+  "updated_at": "2026-09-10T17:25:31.000Z",
+  "license": "qwen-community-license-1-0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hari ini puasa keberapa? Cek kalender Ramadhan 2026 versi …",
+      "url": "https://mataram.antaranews.com/berita/536914/hari-ini-puasa-keberapa-cek-kalender-ramadhan-2026-versi-pemerintah-nu",
+      "snippet": "Ilustrasi - Kalender Ramadhan 2026 versi pemerintah/NU (ANTARA/HO-AI) Mataram (ANTARA) - Untuk memudahkan pembaca …"
+    },
+    {
+      "title": "Puasa Ramadan 2026: Sudah hari keberapa per 1 Maret? Cek di sini",
+      "url": "https://mataram.antaranews.com/berita/536830/puasa-ramadan-2026-sudah-hari-keberapa-per-1-maret-cek-di-sini",
+      "snippet": "Mataram (ANTARA) - Umat Islam di Indonesia saat ini telah memasuki pekan kedua Ramadhan 1447 Hijriah. Pertanyaan yang kerap …"
+    },
+    {
+      "title": "Jadwal Ramadan 2026 — Imsakiyah & Waktu Imsak | KalenderIslam.id",
+      "url": "https://kalenderislam.id/ramadan/2026/",
+      "snippet": "Jadwal Ramadan 2026 (1447 H) lengkap. Waktu imsak, sahur, subuh, dan buka puasa untuk 100+ kota Indonesia. Akurat sesuai …"
+    },
+    {
+      "title": "Puasa Ramadan Hari ke Berapa Tanggal 7 Maret 2026? Cek …",
+      "url": "https://kiaton.kontan.co.id/news/puasa-ramadan-hari-ke-berapa-tanggal-7-maret-2026-cek-perhitungan-ini",
+      "snippet": "Mar 7, 2026 · Berdasarkan perhitungan kalender Hijriah tahun 2026, baik versi pemerintah maupun Muhammadiyah sama-sama …"
+    },
+    {
+      "title": "7 Maret 2026 Puasa Hari Ke Berapa? Ini Hitungannya Menurut …",
+      "url": "https://www.medcom.id/nasional/peristiwa/ybJdMl4K-7-maret-2026-puasa-hari-ke-berapa-ini-hitungannya-menurut-muhammadiyah-dan-nu",
+      "snippet": "7 Maret 2026 puasa hari keberapa? Simak hitungan Ramadan 1447 H menurut Muhammadiyah dan pemerintah lengkap dengan …"
+    }
+  ]
+}

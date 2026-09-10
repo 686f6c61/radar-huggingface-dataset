@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed3407",
+  "slug": "fpadovani-ppt-wc-uniform-oldlex-jpn-100mb_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed3407",
+  "created_at": "2026-09-10T17:24:10.000Z",
+  "updated_at": "2026-09-10T17:28:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86416128,
+  "parameters_human": "86.4M",
+  "storage_bytes": 1382901881,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "البحث عن تطبيق \"متجر Google Play\" - مساعدة Google Play",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=ar",
+      "snippet": "على جهازك، انتقِل إلى قسم \"التطبيقات\". انقر على \"متجر Google Play\" . سيتم فتح التطبيق وستتمكّن من البحث عن المحتوى وتصفُّحه لتنزيله."
+    },
+    {
+      "title": "كيفية تثبيت تطبيق \"ألعاب Google Play\" على الكمبيوتر وضبط إعداداته",
+      "url": "https://support.google.com/googleplay/answer/11358888?hl=ar",
+      "snippet": "إذا كان الكمبيوتر يستوفي الحد الأدنى من المتطلبات، يمكنك تثبيت تطبيق \"ألعاب Google Play على الكمبيوتر\". بدء التثبيت على الكمبيوتر الذي يعمل بنظام التشغيل Windows، انتقِل إلى"
+    },
+    {
+      "title": "صالة العاب للأطفال",
+      "url": "https://forum.uaewomen.net/showthread.php/584147-%D8%B5%D8%A7%D9%84%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D8%A8-%D9%84%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84",
+      "snippet": "Nov 4, 2009 · فكرتج حلوة ام ناصر الصراحه روعه اذا بيطبق صح ممكن تزورين نادي السيدات في بوظبي ممكن تاخذين افكار منهم مسوين قسم حق العاب من سن شهور لين سنتين و قسم من 3 و …"
+    },
+    {
+      "title": "حديقة العاب الهيلي",
+      "url": "https://forum.uaewomen.net/showthread.php/735340-%D8%AD%D8%AF%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D8%A8-%D8%A7%D9%84%D9%87%D9%8A%D9%84%D9%8A",
+      "snippet": "Jun 13, 2010 · سرت من أسبوع وصورت صور وأبا أنزل تقرير أحس بالكسل >< بخبرج اللي مسوينه أول شي التذاكر دفع مرة وحدة للدخول والألعاب تلعبين لين ما تشبعين والتذاكر 35 درهم الاثنين …"
+    },
+    {
+      "title": "كيفية الانضمام إلى \"دوريات ألعاب Play\" - مساعدة Google Play",
+      "url": "https://support.google.com/googleplay/answer/16561562?hl=ar",
+      "snippet": "\"دوريات ألعاب Play\" هي تحدٍّ جديد يسمح لك بالتنافس مع مستخدمين آخرين في منتدى Google Play. ويمكنك الوصول إلى الصدارة لاغتنام فرص الفوز بمكافآت حصرية. ملاحظة مُهمّة: لا تتوفّر هذه …"
+    }
+  ]
+}

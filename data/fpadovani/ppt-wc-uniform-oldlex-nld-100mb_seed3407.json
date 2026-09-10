@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed3407",
+  "slug": "fpadovani-ppt-wc-uniform-oldlex-nld-100mb_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed3407",
+  "created_at": "2026-09-10T17:16:00.000Z",
+  "updated_at": "2026-09-10T17:18:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86416128,
+  "parameters_human": "86.4M",
+  "storage_bytes": 1382901881,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "نظام فارس",
+      "url": "https://sites.moe.gov.sa/Sharqia/pages/faris/",
+      "snippet": "الدخول للخدمة الذاتية (فارس) -------------- الدخول على نظام فارس (الشبكة الداخلية)"
+    },
+    {
+      "title": "نظام فارس",
+      "url": "https://sites.moe.gov.sa/cm/kw/services/service-12/",
+      "snippet": "نظام فارس هو نظام من وزارة التعليم يقدم العديد من الخدمات الالكترونية لمنسوبي الوزارة لزيادة الإنتاجية وتوفير الوقت والجهد على الموظفين."
+    },
+    {
+      "title": "جاري تحديث الخدمة",
+      "url": "http://sshr.moe.gov.sa/",
+      "snippet": ""
+    },
+    {
+      "title": "وزارة التعليم | الرئيسية",
+      "url": "https://www.moe.gov.sa/ar/Pages/default.aspx",
+      "snippet": "نظام نور نظام فارس منصة مدرستي الخدمات والبرامج المجانية البيانات المفتوحة مؤشرات التعليم احصائيات الخدمات المكتبة الرقمية كن شريك الوزارة المشاريع بوابة الموردين دليل المستثمر"
+    },
+    {
+      "title": "وزارة التعليم - الدخول الموحد",
+      "url": "https://iam.moe.gov.sa/mga/sps/authsvc?PolicyId=urn%3Aibm%3Asecurity%3Aauthentication%3Aasf%3AmoeUserLogin",
+      "snippet": "الدخول الموحد هي إحدى مبادرات وزارة التعليم لإدارة وحوكمة الهوية الرقمية وإيجاد آلية تحقق وتسجيل آمنة تهدف إلى تسهيل الوصول إلى جميع الأنظمة بوزارة التعليم من خلال حساب موحد."
+    }
+  ]
+}

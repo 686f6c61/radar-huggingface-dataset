@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "birbirll/g1-inspire-turn-page-starvla-n1d7",
+  "slug": "birbirll-g1-inspire-turn-page-starvla-n1d7",
+  "author": "birbirll",
+  "url": "https://huggingface.co/birbirll/g1-inspire-turn-page-starvla-n1d7",
+  "created_at": "2026-09-10T14:59:40.000Z",
+  "updated_at": "2026-09-10T17:07:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "starvla",
+    "gr00t-n1.7",
+    "cosmos-reason",
+    "unitree-g1",
+    "inspire-hand",
+    "humanoid",
+    "manipulation",
+    "dataset:birbirll/g1-inspire-turn-page-v21",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9529541313,
+  "storage_human": "9.5 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accessing your Sky router settings page 192.168.0.1",
+      "url": "https://helpforum.sky.com/t5/Broadband-Talk/Accessing-your-router-settings-page-192-168-0-1/ba-p/2649511",
+      "snippet": "May 4, 2017 · How do I log in to my router settings page? Make sure you're connected to your home broadband network Open your …"
+    },
+    {
+      "title": "Introducing Gigafast+ - Sky Help Forum",
+      "url": "https://helpforum.sky.com/t5/Broadband-Talk/Introducing-Gigafast/bc-p/5135020",
+      "snippet": "Nov 7, 2025 · Get ready for the fastest speeds offered yet with Sky. Introducing the new Gigafast+ subscription offering speeds up to …"
+    },
+    {
+      "title": "Account & Billing Board | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Account-Billing/bd-p/skyvip/redirect_from_archived_page/true",
+      "snippet": "1 day ago · Have any questions on your Sky account or have billing issues? Why not raise a post with our Sky Community members?"
+    },
+    {
+      "title": "Sky Q Box not connecting to wifi | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Q/Sky-Q-Box-not-connecting-to-wifi/td-p/5108385",
+      "snippet": "Oct 6, 2025 · Help out sky Q box keeps losing the WiFi signal even though our WiFi is on and in use on all other devices including …"
+    },
+    {
+      "title": "Email Help & Security | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Email/bd-p/emailsandtools",
+      "snippet": "1 day ago · Looking for help with your Sky Email, check out Sky Community - We can offer help with email clients, setup and security."
+    }
+  ]
+}

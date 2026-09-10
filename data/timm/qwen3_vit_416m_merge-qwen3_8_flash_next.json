@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m_merge.qwen3_8_flash_next",
+  "slug": "timm-qwen3_vit_416m_merge-qwen3_8_flash_next",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_8_flash_next",
+  "created_at": "2026-09-10T17:30:08.000Z",
+  "updated_at": "2026-09-10T17:30:14.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 448046320,
+  "parameters_human": "448.0M",
+  "storage_bytes": 1792219808,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Events Near Me — What's On Near You Tonight & This Weekend",
+      "url": "https://eventslist.co.uk/near-me",
+      "snippet": "Whether you're looking for live music, theatre shows, comedy nights, sports matches, family activities, or festivals — our location …"
+    },
+    {
+      "title": "What's On | Ards & North Down",
+      "url": "https://www.visitardsandnorthdown.com/whats-on",
+      "snippet": "Music, food, art, sport, theatre, history—whatever you’re into, you’ll find events to match in Ards and North Down. Many are family …"
+    },
+    {
+      "title": "Sports Events - Whats On | Discover Northern Ireland",
+      "url": "https://discovernorthernireland.com/whats-on/sports-events/",
+      "snippet": "Check out the Discover NI guide to sporting events in Northern Ireland this year and beyond - from golf to football to cycling you can …"
+    },
+    {
+      "title": "TicketSource - Discover Great Events & Things To Do Near You",
+      "url": "https://www.ticketsource.com/whats-on",
+      "snippet": "Find out what’s on near you. Discover great events, from theatre, festivals, gigs, comedy, sport and more. Use our easy-to-use event …"
+    },
+    {
+      "title": "What’s On in Northern Ireland | Events Today & This Weekend",
+      "url": "https://discovernorthernireland.com/whats-on/",
+      "snippet": "Find out what’s on in Northern Ireland today, this weekend and beyond. Browse events, festivals, concerts and things to do across …"
+    }
+  ]
+}

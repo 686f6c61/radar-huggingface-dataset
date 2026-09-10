@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0_sc_bounded",
+  "slug": "thehassansaud-p2_pythia410m_q0_sc_bounded",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_sc_bounded",
+  "created_at": "2026-09-10T15:43:15.000Z",
+  "updated_at": "2026-09-10T15:43:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Katzenklappe",
+      "url": "https://www.amazon.de/katzenklappe/s?k=katzenklappe",
+      "snippet": "Katzenklappen für Innen- und Außentüren in unterschiedlichen Ausführungen – von einfachen Klappen bis hin zu Modellen mit …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Katzenklappen & Außennetze ...",
+      "url": "https://www.amazon.de/Katzenklappen-Aussennetze/b?node=470777031",
+      "snippet": "Online-Einkauf von Haustier aus großartigem Angebot von Balkonnetze, Klassische Katzenklappen, Elektronische Katzenklappen, …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Elektronische Katzenklappen",
+      "url": "https://www.cdn.amazon.de/Elektronische-Katzenklappen-20-50-EUR-Au%C3%9Fennetze/s?k=Elektronische+Katzenklappen&c=ts&ts_id=13357927031",
+      "snippet": "Online-Einkauf von Elektronische Katzenklappen mit großartigem Angebot im Haustier Shop."
+    },
+    {
+      "title": "Die 16 besten Amazon Katzenklappen – Ratgeber",
+      "url": "https://www.haustierratgeber.de/ratgeber/katzen/amazon-katzenklappen/",
+      "snippet": "Sep 15, 2021 · Wir haben verschiedene Amazon Katzenklappen miteinander verglichen und unsere Produktempfehlungen hier für …"
+    },
+    {
+      "title": "Modelle, 1 klarer Sieger: Katzenklappen Test | rtl.de Vergleich",
+      "url": "https://www.rtl.de/vergleiche/beauty/katzenklappe-test/",
+      "snippet": "Aug 16, 2026 · Vertraue auf unsere TÜV-zertifizierte, objektive Bewertung und entdecke jetzt die für dich perfekte Katzenklappe, die …"
+    }
+  ]
+}

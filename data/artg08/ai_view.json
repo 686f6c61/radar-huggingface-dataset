@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ArtG08/AI_View",
+  "slug": "artg08-ai_view",
+  "author": "ArtG08",
+  "url": "https://huggingface.co/ArtG08/AI_View",
+  "created_at": "2026-09-10T11:24:25.000Z",
+  "updated_at": "2026-09-10T11:55:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "AI_View",
+    "Переглядач_АІ",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 359809153,
+  "storage_human": "360 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cartagena Colombia: guida alla città più colorata del Paese",
+      "url": "https://www.inviaggioconselena.it/cartagena-de-indias-colombia/",
+      "snippet": "Cartagena è la città più colorata e vivace della Colombia. Qui trovi una guida dettagliata con tutte le informazioni utili per soggiornarci!"
+    },
+    {
+      "title": "Cartagena Colombia: cosa vedere e come inserirla nel viaggio",
+      "url": "https://www.viaggio-centrosudamerica.com/cartagena/",
+      "snippet": "Apr 9, 2024 · Cosa vedere a Cartagena in Colombia, quanti giorni fermarsi, quando andare e come inserirla in un tour su misura tra …"
+    },
+    {
+      "title": "Cartagena 2026: Tutto quello che c'è da sapere - Tripadvisor",
+      "url": "https://www.tripadvisor.it/Tourism-g297476-Cartagena_Cartagena_District_Bolivar_Department-Vacations.html",
+      "snippet": "Cartagena, uno splendido villaggio di pescatori sulla costa caraibica della Colombia, vanta spiagge eccellenti, un centro storico …"
+    },
+    {
+      "title": "Cosa vedere a Cartagena de Indias, Colombia: guida",
+      "url": "https://www.soniathetravelist.com/cosa-vedere-a-cartagena-de-indias/",
+      "snippet": "Jul 10, 2025 · Questa è una guida dedicata a cosa vedere a Cartagena de Indias scritta da chi c’è stata (più di una volta) per aiutarti …"
+    },
+    {
+      "title": "Viaggio a Cartagena: guida completa, itinerari e consigli pratici ...",
+      "url": "https://www.voyage-prive.it/offerte/viaggio-a-cartagena",
+      "snippet": "Scoprite le offerte esclusive per soggiorni d'eccellenza, tour privati e resort di alta qualità a Cartagena e in Colombia, con servizi …"
+    }
+  ]
+}

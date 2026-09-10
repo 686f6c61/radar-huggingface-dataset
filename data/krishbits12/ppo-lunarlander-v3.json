@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "krishbits12/ppo-LunarLander-v3",
+  "slug": "krishbits12-ppo-lunarlander-v3",
+  "author": "krishbits12",
+  "url": "https://huggingface.co/krishbits12/ppo-LunarLander-v3",
+  "created_at": "2026-09-10T15:13:08.000Z",
+  "updated_at": "2026-09-10T16:36:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 583033,
+  "storage_human": "583033 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年 9月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
+      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
+      "snippet": "1080P/2K/4K分辨率，以RTX 5050为基准（25款主流游戏测试成绩取平均值） 数据来源于：TechPowerUp 桌面端显卡天梯图："
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Compte Instagram verrouillé et irrécupérable",
+      "url": "https://forums.commentcamarche.net/forum/affich-37319755-compte-instagram-verrouille-et-irrecuperable",
+      "snippet": "Aug 20, 2021 · La seule solution est donc d'attendre qu'Instagram vous restitue votre compte et ne tombez pas dans le piège des …"
+    },
+    {
+      "title": "Récupérer compte instagram sans numéro avec l ... - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37160801-recuperer-compte-instagram-sans-numero-avec-l-authentification-a-deux-facteurs",
+      "snippet": "Apr 2, 2021 · Le compte Instagram est verrouillé par l’authentification à deux facteurs, le code étant envoyé sur un ancien numéro de …"
+    },
+    {
+      "title": "Come riattivare un account Instagram disabilitato - CCM",
+      "url": "https://it.ccm.net/faq/27293-come-riattivare-un-account-instagram-disabilitato",
+      "snippet": "Jun 22, 2021 · Riattivare un account Instagram temporaneamente disabilitato Se hai disabilitato temporaneamente il tuo account …"
+    }
+  ]
+}

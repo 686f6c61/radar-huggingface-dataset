@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m.qwen3_vl_8b",
+  "slug": "timm-qwen3_vit_416m-qwen3_vl_8b",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m.qwen3_vl_8b",
+  "created_at": "2026-09-10T17:25:14.000Z",
+  "updated_at": "2026-09-10T17:25:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "arxiv:2511.21631",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 415006704,
+  "parameters_human": "415.0M",
+  "storage_bytes": 1660060752,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/?msockid=2de1753a34c06a6f367b62ea354c6bdb",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more."
+    },
+    {
+      "title": "Canva : Graphisme, IA, Photo & Vidéo | Canva France",
+      "url": "https://www.canva.com/fr_fr/?msockid=2de1753a34c06a6f367b62ea354c6bdb",
+      "snippet": "Du design à la retouche photo, l’IA, la vidéo et le travail en équipe, Canva FR est votre partenaire créatif nº 1. CV, logo, affiche…"
+    },
+    {
+      "title": "Canva: Sign up for free",
+      "url": "https://canva.me/signup/",
+      "snippet": "Canva Canva: Sign up for free Create great designs for every part of your life See this content immediately after install"
+    },
+    {
+      "title": "Canva - Télécharger et installer sur Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xp8k17rnmm8mtn?hl=fr-FR&gl=FR",
+      "snippet": "Découvrez de nouvelles possibilités avec les applis Canva. - Amusez-vous avec le montage vidéo. Rognez, coupez ou accélérez vos …"
+    },
+    {
+      "title": "Logiciel de création graphique ultra simple – Canva",
+      "url": "https://canva.me/Lppw9KkGFO",
+      "snippet": "Créez de magnifiques designs avec votre équipe. Utilisez la fonction glisser-déposer de Canva et nos modèles pour concevoir, …"
+    }
+  ]
+}

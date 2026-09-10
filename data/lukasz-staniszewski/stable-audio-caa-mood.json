@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/stable-audio-caa-mood",
+  "slug": "lukasz-staniszewski-stable-audio-caa-mood",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/stable-audio-caa-mood",
+  "created_at": "2026-09-10T14:55:46.000Z",
+  "updated_at": "2026-09-10T14:57:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "audio-interv",
+  "languages": [],
+  "tags": [
+    "audio-interv",
+    "activation-steering",
+    "audio",
+    "caa",
+    "diffusion",
+    "interpretability",
+    "mood",
+    "music",
+    "stable-audio",
+    "steering",
+    "arxiv:2602.11910",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2998121979,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dibby - Reddit",
+      "url": "https://www.reddit.com/r/Dibby/about/",
+      "snippet": "r/Dibby: Post Dibbys. Discuss Dibbys. Love Dibbys. 1 only post dibbys. if a post is not about a dibby. not good. remove."
+    },
+    {
+      "title": "M&Ms have their own dibbys : r/JARMEDIA - Reddit",
+      "url": "https://www.reddit.com/r/JARMEDIA/comments/n8hj3k/mms_have_their_own_dibbys/",
+      "snippet": "May 9, 2021 · 12K subscribers in the JARMEDIA community. Subreddit for the JAR Media Posdact. Leave your questions in the …"
+    },
+    {
+      "title": "Dibbys at it again : r/JARMEDIA - Reddit",
+      "url": "https://www.reddit.com/r/JARMEDIA/comments/my5ye9/dibbys_at_it_again/",
+      "snippet": "Apr 25, 2021 · 13K subscribers in the JARMEDIA community. Subreddit for the JAR Media Posdact. Leave your questions in the …"
+    },
+    {
+      "title": "Dibbys or Bebos? : r/JARMEDIA - Reddit",
+      "url": "https://www.reddit.com/r/JARMEDIA/comments/87qjs5/dibbys_or_bebos/",
+      "snippet": "15 votes, 18 comments. 13K subscribers in the JARMEDIA community. Subreddit for the JAR Media Posdact. Leave your questions …"
+    },
+    {
+      "title": "MHM Megathread - Builds, Utilities & Information About Meta",
+      "url": "https://www.reddit.com/r/MonsterHunterMeta/comments/xyznlo/mhm_megathread_builds_utilities_information_about/",
+      "snippet": "Oct 8, 2022 · true Here's a general collection of resources for all your minmaxing needs in Monster Hunter. You will find both links for …"
+    }
+  ]
+}

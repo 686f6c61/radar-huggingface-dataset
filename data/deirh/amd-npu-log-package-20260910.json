@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "deirh/amd-npu-log-package-20260910",
+  "slug": "deirh-amd-npu-log-package-20260910",
+  "author": "deirh",
+  "url": "https://huggingface.co/deirh/amd-npu-log-package-20260910",
+  "created_at": "2026-09-10T18:44:04.000Z",
+  "updated_at": "2026-09-10T18:44:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 857885635,
+  "storage_human": "858 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urbanization in India, Impacts, UPSC Notes - Vajiram & Ravi",
+      "url": "https://vajiramandravi.com/upsc-exam/urbanization/",
+      "snippet": "Jul 12, 2026 · Home > UPSC Indian Society Notes > Urbanization in India Urbanization in India, Impacts Urbanization refers to the …"
+    },
+    {
+      "title": "Class 11 - Sociology Notes - One Young India",
+      "url": "https://www.oneyoungindia.com/resources/category/class-11-sociology-notes",
+      "snippet": "Sociology | Class 11 | Indian Sociologists Introduction Because Indian society and social structure were so dissimilar from those of …"
+    },
+    {
+      "title": "Urban Society in Sociology | BA Sem 5 Sociology | Sociology BA 5th ...",
+      "url": "https://www.youtube.com/watch?v=2NtKmOvo8p0",
+      "snippet": "Topic Name - Unit - 3 - Urban Society - Detailed Notes with Most Important QuestionsIf you are in Sem 5 (Panjab University, …"
+    },
+    {
+      "title": "Class 11 Sociology - NCERT Solutions, Notes, MCQs and Videos",
+      "url": "https://edurev.in/courses/3242_Class-11-Sociology",
+      "snippet": "Jul 21, 2026 · Sociology Class 11 - Notes, MCQs, NCERT solutions, mind maps, flashcards and more, for all chapters and topics. …"
+    },
+    {
+      "title": "SOCIOLOGY",
+      "url": "https://www.upessc.up.gov.in/syllabus/f8f9af29-26be-48e5-b22f-e1a3f528db29.pdf",
+      "snippet": "Unit-5: Urban and Industrial Society : Urban- Industrial Society in the Classical Sociological Tradition Urbanization & urban problems …"
+    }
+  ]
+}

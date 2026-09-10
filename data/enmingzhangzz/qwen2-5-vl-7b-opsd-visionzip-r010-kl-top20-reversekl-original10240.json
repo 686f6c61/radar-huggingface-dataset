@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-KL-Top20-ReverseKL-original10240",
+  "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-visionzip-r010-kl-top20-reversekl-original10240",
+  "author": "enmingzhangzz",
+  "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-KL-Top20-ReverseKL-original10240",
+  "created_at": "2026-09-10T15:21:06.000Z",
+  "updated_at": "2026-09-10T15:21:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "opsd",
+    "qwen2.5-vl",
+    "visionzip",
+    "reverse-kl",
+    "token-selection",
+    "lora",
+    "image-text-to-text",
+    "dataset:OpenMMReasoner/OpenMMReasoner-SFT-874K",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161539072,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uninstall Tool - Чистое удаление программ",
+      "url": "https://crystalidea.com/ru/uninstall-tool",
+      "snippet": "Деинсталлятор для чистого удаления любой программы с Вашего ПК. Мониторинг установки ПО, удаление остатков …"
+    },
+    {
+      "title": "Uninstall Tool - Unique and Powerful Uninstaller, Uninstall Software ...",
+      "url": "https://crystalidea.com/uninstall-tool",
+      "snippet": "Uninstaller that performs clean removal of any program from your PC. Installation tracing, leftovers removal. Works with lightning …"
+    },
+    {
+      "title": "Uninstall Tool - Download",
+      "url": "https://uninstall-tool.en.softonic.com/",
+      "snippet": "Jan 22, 2026 · Uninstall Tool is a great, powerful and reliable alternative to standard Windows Add/Remove program. It's fast, secure …"
+    },
+    {
+      "title": "Uninstall Tool - скачать бесплатно Uninstall Tool 3.8.1",
+      "url": "https://www.softportal.com/software-4598-uninstall-tool.html",
+      "snippet": "Mar 29, 2020 · Uninstall Tool - небольшая программа, заменяющая неудобную и тяжеловестную стандартную программу …"
+    },
+    {
+      "title": "Releases · crystalidea/uninstall-tool - GitHub",
+      "url": "https://github.com/crystalidea/uninstall-tool/releases",
+      "snippet": "Binaries archive/releases of Uninstall Tool. Contribute to crystalidea/uninstall-tool development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "IXDLI/AIRO-Doffy-DP-vision-joint-contact-gru",
+  "slug": "ixdli-airo-doffy-dp-vision-joint-contact-gru",
+  "author": "IXDLI",
+  "url": "https://huggingface.co/IXDLI/AIRO-Doffy-DP-vision-joint-contact-gru",
+  "created_at": "2026-09-10T16:03:07.000Z",
+  "updated_at": "2026-09-10T16:04:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1249898431,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Städtereisen Edinburgh » Kurzurlaub in Edinburgh | TUI",
+      "url": "https://www.tui.com/staedtereisen/edinburgh/?msockid=1aab03922a1269201d7d14422b58680f",
+      "snippet": "Bist du ein Fan mystischer Atmosphäre, alter Gemäuer und uriger Pubs? Dann ist eine Städtereise nach Edinburgh wie für dich …"
+    },
+    {
+      "title": "Städtereise Edinburgh? → 25x Highlights, Tipps & Erfahrungen!",
+      "url": "https://www.urlaubsguide.de/schottland/edinburgh/",
+      "snippet": "Wie viele Tage brauchen Sie in Edinburgh? Reisen nach Edinburgh – wie kommt man dorthin? Schottland Urlaub buchen - unsere …"
+    },
+    {
+      "title": "Städtereise nach Edinburgh: Günstige Angebote & Tipps",
+      "url": "https://www.urlaubspiraten.de/reiseziele/schottland/edinburgh",
+      "snippet": "Eine der schönsten Städte Großbritanniens ist die schottische Hauptstadt Edinburgh. Edinburgh, das sind schmale Gassen der …"
+    },
+    {
+      "title": "Edinburgh Städtereise 2026: Schottlands Hauptstadt | Reise.de",
+      "url": "https://www.reise.de/staedtereisen/schottland/edinburgh/",
+      "snippet": "Schottlands Hauptstadt im Nordosten Großbritanniens besticht mit langer, wechselvoller Geschichte und reichem kulturellen Erbe."
+    },
+    {
+      "title": "Städtetrip Edinburgh: 11 Tipps für den perfekten Kurzurlaub",
+      "url": "https://reise-kroeten.de/staedte-trip-edinburgh/",
+      "snippet": "Jul 17, 2026 · Wenn du gerade einen Städtetrip nach Edinburgh planst, dann haben wir in diesem Artikel die wichtigsten Tipps für …"
+    }
+  ]
+}

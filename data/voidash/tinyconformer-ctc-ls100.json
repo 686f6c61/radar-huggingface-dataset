@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "voidash/tinyconformer-ctc-ls100",
+  "slug": "voidash-tinyconformer-ctc-ls100",
+  "author": "voidash",
+  "url": "https://huggingface.co/voidash/tinyconformer-ctc-ls100",
+  "created_at": "2026-09-10T17:10:13.000Z",
+  "updated_at": "2026-09-10T17:10:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 979357,
+  "parameters_human": "979357",
+  "storage_bytes": 3929948,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "الصفحة الرئيسية - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPYf6vTu2xt17uhXThhpUMYbChcBh2YyC",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?lang=fr",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://tv.youtube.com/app",
+      "snippet": "Stream live TV from over 70 networks, record programs without storage limits, and enjoy hassle-free viewing without a cable box. …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    }
+  ]
+}

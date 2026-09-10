@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FriskyFennec/GigaChat3-10B-A1.8B-base-GGUF",
+  "slug": "friskyfennec-gigachat3-10b-a1-8b-base-gguf",
+  "author": "FriskyFennec",
+  "url": "https://huggingface.co/FriskyFennec/GigaChat3-10B-A1.8B-base-GGUF",
+  "created_at": "2026-09-10T18:53:22.000Z",
+  "updated_at": "2026-09-10T18:59:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "下水道施設課｜山口市上下水道局 | 山口県山口市",
+      "url": "https://water-city-yamaguchi.com/page_6384/page_5870/",
+      "snippet": "下水道施設課 〒753-0851 山口市黒川8番地（山口浄化センター） 施設担当 TEL：083-925-8469 FAX：083-925-8468 主な業務内容 …"
+    },
+    {
+      "title": "山口浄化センター – 環境学習のひろば",
+      "url": "https://yamaguchi-learning.com/institution/%E5%B1%B1%E5%8F%A3%E6%B5%84%E5%8C%96%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/",
+      "snippet": "山口県の環境学習に関するさまざまな情報を提供し、新たな環境学習の機会を皆さんと連携・協働して創造していきたいと考えてい …"
+    },
+    {
+      "title": "下水道班・県内の処理場 - 山口県ホームページ",
+      "url": "https://www.pref.yamaguchi.lg.jp/soshiki/130/23727.html",
+      "snippet": "Sep 5, 2025 · 下水環境教育の支援をするホームページです。 下水道の社会実験に関するホームページです。 PDF形式のファイルを …"
+    },
+    {
+      "title": "山口市 山口浄化センター の地図、住所、電話番号 - MapFan",
+      "url": "https://mapfan.com/spots/S54HI,J,GJ1Q80",
+      "snippet": "山口市 山口浄化センター の地図、住所、電話番号です。"
+    },
+    {
+      "title": "J S山口市山口",
+      "url": "https://www.jswa.go.jp/genba/pdf/genba_198.pdf",
+      "snippet": "区の全5処理区で構成されています。山口処理区は、昭和48年に公共下水道事業の事業認可を受け、山口浄化センター�. 多段. 化 …"
+    }
+  ]
+}

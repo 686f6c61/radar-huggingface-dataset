@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "imquentinn/birefnet-lite-1024-webgpu",
+  "slug": "imquentinn-birefnet-lite-1024-webgpu",
+  "author": "imquentinn",
+  "url": "https://huggingface.co/imquentinn/birefnet-lite-1024-webgpu",
+  "created_at": "2026-09-10T17:29:39.000Z",
+  "updated_at": "2026-09-10T17:32:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "swin",
+    "background-removal",
+    "matting",
+    "alpha-matting",
+    "image-matting",
+    "webgpu",
+    "client-side",
+    "in-browser",
+    "fp16",
+    "image-segmentation",
+    "base_model:ZhengPeng7/BiRefNet_lite",
+    "base_model:quantized:ZhengPeng7/BiRefNet_lite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114834127,
+  "storage_human": "115 MB",
+  "base_model": "ZhengPeng7/BiRefNet_lite",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Как из Ватсап отправить файл, фото или видео в МАХ?",
+      "url": "https://www.bolshoyvopros.ru/questions/4694445-kak-iz-vatsap-otpravit-fajl-foto-ili-video-v-mah.html",
+      "snippet": "Почему ватсап(WhatsApp) не отправляет полное видео, обрезая его(июль 2022)? Мессенджер WhatsApp в России …"
+    },
+    {
+      "title": "Не работает Ватсап 07.02.2026. Почему? Как исправить?",
+      "url": "https://www.bolshoyvopros.ru/questions/4782854-ne-rabotaet-vatsap-07022026-pochemu-kak-ispravit.html",
+      "snippet": "Feb 7, 2026 · Ватсап не открывается, сообщение отправить невозможно, в личный кабинет не войти и тому подобные …"
+    },
+    {
+      "title": "Яндекс - tel.yandex.ru",
+      "url": "https://tel.yandex.ru/search?rq=1&text=web.whatsapp.com+web&serp-reload-from=rec_bottom&p=1",
+      "snippet": "Ватсап веб версия легко устанавливается на компьютер: рассказываем со скринами как это правильно сделать."
+    },
+    {
+      "title": "Что такое ватсап и как им пользоваться на компьютере?",
+      "url": "https://yandex.ru/q/question/chto_takoe_vatsap_i_kak_im_polzovatsia_na_52a349b9/",
+      "snippet": "Dec 3, 2018 · 03 июня 2020 Кирилл Климов ответил: Самое главное: чтобы пользоваться Whatsapp на компьютере, ваш …"
+    },
+    {
+      "title": "Сбой загрузки медиафайлов в ватсапе! как исправить",
+      "url": "https://yandex.ru/q/question/sboi_zagruzki_mediafailov_v_vatsape_kak_e5180b2f/",
+      "snippet": "Dec 19, 2018 · 02 декабря 2021 Влад Павлов ответил: Довольно часто встречается проблема с загрузкой фото и видео в …"
+    }
+  ]
+}

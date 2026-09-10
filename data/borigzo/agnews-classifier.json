@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "borigzo/agnews-classifier",
+  "slug": "borigzo-agnews-classifier",
+  "author": "borigzo",
+  "url": "https://huggingface.co/borigzo/agnews-classifier",
+  "created_at": "2026-09-10T11:06:43.000Z",
+  "updated_at": "2026-09-10T11:19:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lisboa OFFICIAL Site | Visit Lisboa",
+      "url": "https://www.visitlisboa.com/",
+      "snippet": "For hosting congresses and events in the International Congress and Convention Association (ICCA). LISBON 1st in the world This is …"
+    },
+    {
+      "title": "Lisboa OFFICIAL Site | Visit Lisboa",
+      "url": "https://www.visitlisboa.com/fr/",
+      "snippet": "Route du Baroque C’est sous le règne de João V, dans la première moitié du XVIIIe siècle, que le baroque connaît sa plus grande …"
+    },
+    {
+      "title": "Lisbon Card – Visit Lisboa Shop",
+      "url": "https://shop.visitlisboa.com/pt/blogs/news/lisboa-card",
+      "snippet": "Aug 12, 2020 · Este Cartão garante ao portador as seguintes vantagens: Circulação Grátis de METRO e nos Autocarros, Eléctricos, …"
+    },
+    {
+      "title": "Blue Cruises - Lisbon Night on board with Fado show",
+      "url": "https://shop.visitlisboa.com/products/blue-cruises-lisbon-night-on-board-with-fado-show",
+      "snippet": "BLUE CRUISES@ Dine on board and discover Lisbon from the river. Sail along the Tagus to the sound of live Fado and enjoy a truly …"
+    },
+    {
+      "title": "HomeVenues - Turismo de Lisboa",
+      "url": "https://venues.visitlisboa.com/eng/",
+      "snippet": "In the most emblematic square in Lisbon… Comércio Square, known as Terreiro do Paço (The Palace Square) throughout the …"
+    }
+  ]
+}

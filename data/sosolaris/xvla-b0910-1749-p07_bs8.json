@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SoSolaris/xvla-b0910-1749-p07_bs8",
+  "slug": "sosolaris-xvla-b0910-1749-p07_bs8",
+  "author": "SoSolaris",
+  "url": "https://huggingface.co/SoSolaris/xvla-b0910-1749-p07_bs8",
+  "created_at": "2026-09-10T18:47:34.000Z",
+  "updated_at": "2026-09-10T18:48:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:SoSolaris/socks_20_diversified",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759506160,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Translate English to Bangla | ইংরেজি থেকে বাংলা অনুবাদ | Online …",
+      "url": "https://www.easy-translator.com/english-to-bangla",
+      "snippet": "Just type or paste English text in text area and press \"Translate\" button, you will get translation of your English text into Bangla within …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Translate Arabic ( العربيّة) to Bengali (বাংলা) | Translatiz.com",
+      "url": "https://translatiz.com/translation/arabic-to-bengali",
+      "snippet": "Communicate easily by using the free Arabic to Bengali online translator to instantly translate Arabic words, messages, news, …"
+    },
+    {
+      "title": "Arabic To Bangla Translator | Free AI-Powered Tool | TranslatorMind",
+      "url": "https://translatormind.com/translator-tool/arabic-to-bangla-translator/",
+      "snippet": "Need to understand Arabic content in your native Bangla? Whether it’s a news article, a business document, or a heartfelt letter, the …"
+    },
+    {
+      "title": "Arabic to Bangla Translator - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.amldevtranslator.arabicbangla&hl=en",
+      "snippet": "AI Translator Arabic to Bangla & Bangla to Arabic understands sentence context, grammar, and tone — giving more natural and …"
+    }
+  ]
+}

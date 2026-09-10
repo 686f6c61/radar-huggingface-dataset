@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "HardGravy2/Minimax_H3_FLF_HardGravy_6_Step_Turbo_Merge",
+  "slug": "hardgravy2-minimax_h3_flf_hardgravy_6_step_turbo_merge",
+  "author": "HardGravy2",
+  "url": "https://huggingface.co/HardGravy2/Minimax_H3_FLF_HardGravy_6_Step_Turbo_Merge",
+  "created_at": "2026-09-06T06:22:25.000Z",
+  "updated_at": "2026-09-08T22:01:02.000Z",
+  "license": "minimax-h3-cla",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1240614800,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 Einträge für Coiffeur in Freienbach - search.ch",
+      "url": "https://search.ch/tel/Freienbach/Coiffeur",
+      "snippet": "7 Treffer für Coiffeur in Freienbach mit Coiffeurgeschäft, Haarpflege, Barbershop, Haarverlängerungen"
+    },
+    {
+      "title": "6 Einträge für Coiffeurgeschäft in Freienbach - search.ch",
+      "url": "https://search.ch/tel/Freienbach/Coiffeurgesch%C3%A4ft",
+      "snippet": "6 Treffer für Coiffeurgeschäft in Freienbach mit Coiffeurgeschäft, Haarpflege, Barbershop, Haarverlängerungen"
+    },
+    {
+      "title": "Coiffeurgeschäft: Geschäftseinträge in Freienbach - Finden Sie eine ...",
+      "url": "https://www.local.ch/de/p/freienbach/coiffeurgeschaeft-geschaeftseintraege",
+      "snippet": "Coiffeurgeschäft: Geschäftseinträge in Freienbach Wählen Sie aus über 21 in Freienbach ⭐️ Top-bewertet ⭐️ Online buchbar ll 🇨🇭 …"
+    },
+    {
+      "title": "Coiffeur Freienbach : 24 Coiffeure in der Nähe | ProntoPro",
+      "url": "https://prontopro.ch/freienbach-coiffeur",
+      "snippet": "Jan 6, 2026 · Gratis Kosten für Coiffeur in Freienbach, Schwyz erfahren. Erhalte 4 individuelle Preisangebote von den besten …"
+    },
+    {
+      "title": "Stilvolle Coiffeure in Freienbach ‍♂️ - local.ch",
+      "url": "https://www.local.ch/de/q/freienbach/coiffeur",
+      "snippet": "Entdecken Sie 32 Top-Coiffeure in Freienbach für stylische Schnitte und professionellen Service. Buchen Sie Ihren Termin auf local.ch!"
+    }
+  ]
+}

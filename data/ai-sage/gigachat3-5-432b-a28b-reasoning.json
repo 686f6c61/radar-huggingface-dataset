@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "ai-sage/GigaChat3.5-432B-A28B-Reasoning",
+  "slug": "ai-sage-gigachat3-5-432b-a28b-reasoning",
+  "author": "ai-sage",
+  "url": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning",
+  "created_at": "2026-09-03T19:17:03.000Z",
+  "updated_at": "2026-09-10T06:00:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gigachat3_5",
+    "instruct",
+    "reasoning",
+    "moe",
+    "multilingual",
+    "long-context",
+    "tool-use",
+    "function-calling",
+    "structured-output",
+    "hybrid-attention",
+    "linear-attention",
+    "mtp",
+    "online-rl",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "ru",
+    "en",
+    "base_model:ai-sage/GigaChat3.5-432B-A28B-base",
+    "base_model:quantized:ai-sage/GigaChat3.5-432B-A28B-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 0,
+  "trending_score": 18,
+  "parameters": 438085063424,
+  "parameters_human": "438.09B",
+  "storage_bytes": 446012569679,
+  "storage_human": "446.0 GB",
+  "base_model": "ai-sage/GigaChat3.5-432B-A28B-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "Company Sep 9, 2026 Path to Astra: critical capabilities and frontier safeguards Safety Sep 1, 2026 Jalapeño’s first results show …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Where should we begin? Where should we begin? ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. Chats may …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google AI - How we're making AI helpful for everyone",
+      "url": "https://ai.google/",
+      "snippet": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building useful …"
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "Whether you are a hobbyist, a professional artist, or a developer integrating AI into your product, DeepAI delivers advanced …"
+    }
+  ]
+}

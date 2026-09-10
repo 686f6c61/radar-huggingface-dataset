@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TiGa-RCE/gemma-4-12B-it-oQ6e",
+  "slug": "tiga-rce-gemma-4-12b-it-oq6e",
+  "author": "TiGa-RCE",
+  "url": "https://huggingface.co/TiGa-RCE/gemma-4-12B-it-oQ6e",
+  "created_at": "2026-09-10T18:33:53.000Z",
+  "updated_at": "2026-09-10T18:35:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_unified",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350320,
+  "parameters_human": "11.91B",
+  "storage_bytes": 10005346276,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What does interval mean in F1 | A simplified guide",
+      "url": "https://racingnews365.com/what-does-interval-mean-in-f1",
+      "snippet": "What does interval mean in F1? The interval is an important measurement within Formula One to show the differences in lap times or …"
+    },
+    {
+      "title": "F1 intervals explained: What does interval mean in Formula 1?",
+      "url": "https://fansided.com/2022/07/27/f1-intervals-explained-interval-mean-formula-1/",
+      "snippet": "Jul 27, 2022 · On the timing screen during an F1 broadcast, fans may see the word “interval” at the top of the chart. That refers to the …"
+    },
+    {
+      "title": "What does 'interval' mean in F1? Timings explained - GPfans",
+      "url": "https://www.gpfans.com/en/f1-news/102701/what-does-interval-mean-in-f1/",
+      "snippet": "Mar 5, 2023 · Interval in F1 – what does it mean? After that, every chasing driver has a number against their name, sometimes with a …"
+    },
+    {
+      "title": "What Does Interval Mean In F1? (Timings Explained) - Flow Racers",
+      "url": "https://flowracers.com/blog/what-does-interval-mean-in-f1/",
+      "snippet": "Intervals in F1 are measurements of the gaps between cars. Intervals are always measured in seconds, and you might see the race …"
+    },
+    {
+      "title": "What Does Interval Mean in F1? Everything You Need",
+      "url": "https://www.essentiallysports.com/f1-news-what-does-interval-mean-in-f1-everything-you-need-to-know-about-lap-timings/",
+      "snippet": "Dec 1, 2023 · These timings serve as a snapshot of how far each driver trails behind the race leader. Essentially, it’s the sum of all …"
+    }
+  ]
+}

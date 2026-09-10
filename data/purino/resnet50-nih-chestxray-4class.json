@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Purino/resnet50-nih-chestxray-4class",
+  "slug": "purino-resnet50-nih-chestxray-4class",
+  "author": "Purino",
+  "url": "https://huggingface.co/Purino/resnet50-nih-chestxray-4class",
+  "created_at": "2026-09-10T11:35:59.000Z",
+  "updated_at": "2026-09-10T11:36:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "medical-imaging",
+    "chest-xray",
+    "resnet",
+    "single-label-classification",
+    "xai",
+    "grad-cam",
+    "dataset:nih-chest-xrays/data",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23569348,
+  "parameters_human": "23.6M",
+  "storage_bytes": 95017690,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 DRIVERS' STANDINGS - Formula 1",
+      "url": "https://www.formula1.com/en/results/2026/drivers",
+      "snippet": "Enter the world of Formula 1. Your go-to source for the latest F1 news, video highlights, GP results, live timing, in-depth analysis and …"
+    },
+    {
+      "title": "2026 F1 Standings: Drivers & Constructors Championship List",
+      "url": "https://www.f1-fansite.com/f1-results/f1-standings-2026-championship/",
+      "snippet": "4 days ago · Complete 2026 F1 standings results table: ️See the 2026 championship points position of each driver & constructor. …"
+    },
+    {
+      "title": "2026 F1 Drivers Standings - ESPN",
+      "url": "https://www.espn.com/f1/standings",
+      "snippet": "Standings are updated with the completion of each race. Visit ESPN for the complete 2026 F1 Drivers standings. Includes winning …"
+    },
+    {
+      "title": "2026 Formula One World Championship - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_Formula_One_World_Championship",
+      "snippet": "The 2026 FIA Formula One World Championship is a motor racing championship for Formula One cars and the 77th running of the …"
+    },
+    {
+      "title": "2026 TEAMS' STANDINGS - Formula 1",
+      "url": "https://www.formula1.com/en/results/2026/team",
+      "snippet": "Download the Official F1 App Your ultimate companion intou2028the world of Formula 1 Quick Links Schedule Results Standings …"
+    }
+  ]
+}

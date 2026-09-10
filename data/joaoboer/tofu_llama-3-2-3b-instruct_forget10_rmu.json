@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_RMU",
+  "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget10_rmu",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_RMU",
+  "created_at": "2026-09-10T13:14:01.000Z",
+  "updated_at": "2026-09-10T13:14:45.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "RMU",
+    "forget10",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "B92.net - Najnovije vesti iz Srbije i sveta",
+      "url": "https://www.b92.net/",
+      "snippet": "Najnovije vesti, najaktuelnije i najbrže informacije. Politika, društvo, biznis, sport, zdravlje, putovanja, automobili, IT... Čitajte B92.net."
+    },
+    {
+      "title": "Najnovije sportske vesti - B92.sport - B92.net",
+      "url": "https://www.b92.net/sport",
+      "snippet": "Najnovije sportske vesti, najaktuelnije i najbrže informacije. Fudbal, košarka, tenis, Novak Đoković, Partizan, Crvena zvezda... Čitajte …"
+    },
+    {
+      "title": "B92 - Internet, Radio i TV stanica; najnovije vesti iz Srbije",
+      "url": "https://xs4.b92.net/specijal/",
+      "snippet": "Pažnja: uzbudljivo štivo Kosovski izbori 2001 Specijal B92 posvećen kontroverznim kosovskim izborima 17. novembra koji se …"
+    },
+    {
+      "title": "Horoskop - Superžena - B92.net",
+      "url": "https://superzena.b92.net/horoskop/",
+      "snippet": "Najnovije vesti, najaktuelnije i najbrže informacije. Ženske teme, lepota, zdravlje, moda, dom i porodica, horoskop, životi poznatih..."
+    },
+    {
+      "title": "Ribe - Horoskop - Superžena - B92.net",
+      "url": "https://superzena.b92.net/horoskop/ribe",
+      "snippet": "Najnovije vesti, najaktuelnije i najbrže informacije. Ženske teme, lepota, zdravlje, moda, dom i porodica, horoskop, životi poznatih..."
+    }
+  ]
+}

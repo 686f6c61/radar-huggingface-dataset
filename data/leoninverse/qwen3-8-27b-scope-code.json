@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LeonInverse/qwen3.8-27b-scope-code",
+  "slug": "leoninverse-qwen3-8-27b-scope-code",
+  "author": "LeonInverse",
+  "url": "https://huggingface.co/LeonInverse/qwen3.8-27b-scope-code",
+  "created_at": "2026-09-10T12:55:51.000Z",
+  "updated_at": "2026-09-10T13:09:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sparse-autoencoder",
+    "interpretability",
+    "qwen",
+    "speculative-decoding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107861199020,
+  "storage_human": "107.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "Fluch und Segen: BattlEye :: Deutsches Forum - Steam Community",
+      "url": "https://steamcommunity.com/discussions/forum/24/618453594764651922?l=brazilian&ctp=3",
+      "snippet": "Ich kenne Battleye nicht um ehrlich zu sein aber ich gehe davon aus dass du trotz Bann das Spiel noch spielen kannst nur eben nicht …"
+    },
+    {
+      "title": "Steam Workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3498096139",
+      "snippet": "You've made too many requests recently. Please wait and try your request again later."
+    }
+  ]
+}

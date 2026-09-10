@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NoraAriana/MyAwesomeModel-TestRepo",
+  "slug": "noraariana-myawesomemodel-testrepo",
+  "author": "NoraAriana",
+  "url": "https://huggingface.co/NoraAriana/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T14:10:55.000Z",
+  "updated_at": "2026-09-10T14:10:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perfumeria online | Drogeria internetowa ≡ SEPHORA",
+      "url": "https://www.sephora.pl/",
+      "snippet": "Najlepsze kosmetyczne marki w jednym miejscu! W Sephora znajdziesz perfumy damskie i męskie, kosmetyki do makijażu, …"
+    },
+    {
+      "title": "Sephora Gameon",
+      "url": "https://gameon.sephora.pl/",
+      "snippet": "Sephora Gameon Witaj w Sephora Summer Vibes Game On! Załóż konto w aplikacji, wybierz swoją drużynę i ruszaj do gry."
+    },
+    {
+      "title": "www.sephorapolska.sephora.pl",
+      "url": "https://www.sephorapolska.sephora.pl/",
+      "snippet": "Sephora oferuje szeroki wybór kosmetyków, perfum i akcesoriów, dostępnych online i w sklepach stacjonarnych. Odkryj świat piękna …"
+    },
+    {
+      "title": "Zestaw kosmetyków do pielęgnacji twarzy ≡ SEPHORA",
+      "url": "https://www.sephora.pl/wszystkie-produkty/pielegnacja-twarzy/zestawy-do-pielegnacji-twarzy-c7680/",
+      "snippet": "Odkryj wyjątkowe zestawy kosmetyków do twarzy w Sephora. Kup gotowy zestaw pielęgnacyjny dla siebie, mamy lub przyjaciółki. …"
+    },
+    {
+      "title": "Które produkty są wyłączone z promocji? - faq.sephora.pl",
+      "url": "https://faq.sephora.pl/s/article/Kt%C3%B3re-produkty-s%C4%85-wy%C5%82%C4%85czone-z-promocji",
+      "snippet": "W Sephora znajdziesz bestsellerowe nowości kosmetyczne do pielęgnacji: kremy do twarzy i balsamy do ciała, profesjonalne …"
+    }
+  ]
+}

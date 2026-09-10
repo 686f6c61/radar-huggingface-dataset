@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDCZX12DS/MyAwesomeModel-best",
+  "slug": "asdczx12ds-myawesomemodel-best",
+  "author": "ASDCZX12DS",
+  "url": "https://huggingface.co/ASDCZX12DS/MyAwesomeModel-best",
+  "created_at": "2026-09-10T11:56:20.000Z",
+  "updated_at": "2026-09-10T12:06:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tłumacz Google",
+      "url": "https://translate.google.pl/",
+      "snippet": "Bezpłatna usługa Google, umożliwiająca szybkie tłumaczenie słów, zwrotów i stron internetowych w języku angielskim i ponad 100 …"
+    },
+    {
+      "title": "Tłumacz Google",
+      "url": "https://translate.google.com/?hl=pl",
+      "snippet": "Bezpłatna usługa Google, umożliwiająca szybkie tłumaczenie słów, zwrotów i stron internetowych w języku angielskim i ponad 100 …"
+    },
+    {
+      "title": "Słownik angielsko-polski, słownik angielski online - Diki",
+      "url": "https://www.diki.pl/",
+      "snippet": "Najlepszy słownik angielsko-polski i tłumacz angielskiego online. Słownik angielskiego zawiera nagrania wymowy, przykładowe …"
+    },
+    {
+      "title": "Cambridge English–Polish Dictionary - Słownik angielsko–polski ...",
+      "url": "https://dictionary.cambridge.org/pl/dictionary/english-polish/",
+      "snippet": "Przetłumacz swe słowa z angielskiego na polski, przy użyciu jednego z naszych 22 dwujęzycznych słowników"
+    },
+    {
+      "title": "Tłumacz DeepL | Najdokładniejszy tłumacz na świecie",
+      "url": "https://www.deepl.com/pl/translator",
+      "snippet": "Natychmiast tłumacz teksty i całe dokumenty. Dokładne tłumaczenia dla użytkowników indywidualnych i zespołów. Codziennie …"
+    }
+  ]
+}

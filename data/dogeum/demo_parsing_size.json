@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dogeum/demo_parsing_size",
+  "slug": "dogeum-demo_parsing_size",
+  "author": "dogeum",
+  "url": "https://huggingface.co/dogeum/demo_parsing_size",
+  "created_at": "2026-09-10T18:36:50.000Z",
+  "updated_at": "2026-09-10T18:37:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:dogeum/demo_parsing_size",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Utiliser Power Query pour transformer des données",
+      "url": "https://learn.microsoft.com/fr-fr/power-query/power-query-ui",
+      "snippet": "Aug 20, 2026 · Découvrez comment vous connecter à des données, les transformer et parcourir l’interface utilisateur de l’éditeur …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Power Query : qu’est-ce que c’est ? Le guide ultime. - Cleex",
+      "url": "https://cleex.fr/power-query-comment-utiliser-excel/",
+      "snippet": "Jul 15, 2026 · Power Query nous permet de récupérer ces données et de les transformer afin que nous puissions les travailler et les …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "jQuery",
+      "url": "https://jquery.com/",
+      "snippet": "Ajax Call a local script on the server /api/getWeather with the query parameter zipcode=97201 and replace the element #weather …"
+    }
+  ]
+}

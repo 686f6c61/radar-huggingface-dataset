@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455",
+  "slug": "fpadovani-ppt-wc-uniform-oldlex-nld-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455",
+  "created_at": "2026-09-10T17:18:39.000Z",
+  "updated_at": "2026-09-10T17:21:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86416128,
+  "parameters_human": "86.4M",
+  "storage_bytes": 1382902393,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "AGARIO ONLINE - PLAY FREE MULTIPLAYER | JEU.VIDEO",
+      "url": "https://jeu.video/agario/en/",
+      "snippet": "Play Agario online free in your browser with no download. Eat cells, grow, battle players worldwide, join clans and master Bonus, …"
+    },
+    {
+      "title": "开发一个 agar.io/slither.io 这样的网页游戏需要哪些技术？ - 知乎",
+      "url": "https://www.zhihu.com/question/45288033",
+      "snippet": "slither.io 的美工明显要好一些了，一些shining的特效我不确定作者是使用了别的lib还是怎么。 所以如果想做成可玩的小游戏（棋 …"
+    },
+    {
+      "title": "Odjechani.com.pl - forum wielotematyczne",
+      "url": "https://odjechani.com.pl/",
+      "snippet": "Forum wielotematyczne dla Odjechanych ludzi. Gwarantujemy przyjazną atmosferę oraz nietuzinkowe podejście do każdej dziedziny …"
+    },
+    {
+      "title": "JEU.VIDEO | Actualités, tests, guides et culture jeu vidéo",
+      "url": "https://jeu.video/",
+      "snippet": "18 hours ago · Actualités, tests, guides, astuces et analyses pour suivre l’actualité du jeu vidéo, découvrir nos dossiers et trouver les …"
+    }
+  ]
+}

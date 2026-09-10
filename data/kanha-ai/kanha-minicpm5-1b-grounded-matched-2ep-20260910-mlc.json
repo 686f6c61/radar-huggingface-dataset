@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910-MLC",
+  "slug": "kanha-ai-kanha-minicpm5-1b-grounded-matched-2ep-20260910-mlc",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910-MLC",
+  "created_at": "2026-09-10T15:03:27.000Z",
+  "updated_at": "2026-09-10T15:07:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "webllm",
+    "webgpu",
+    "minicpm",
+    "base_model:Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910",
+    "base_model:finetune:Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613647041,
+  "storage_human": "614 MB",
+  "base_model": "Kanha-AI/kanha-minicpm5-1b-grounded-matched-2ep-20260910",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhub - The New York Times",
+      "url": "https://www.nytimes.com/topic/pornhub",
+      "snippet": "News about Pornhub. Commentary and archival information about Pornhub from The New York Times."
+    },
+    {
+      "title": "Pornhub - Gizmodo",
+      "url": "https://gizmodo.com/tag/pornhub",
+      "snippet": "Sep 17, 2025 · Pornhub Expands Access in the U.K. Thanks to Apple’s New Age Verification System The porn site is once again …"
+    },
+    {
+      "title": "Sorry, No Pornhub Access in 25 States and 3 Countries. How to Watch ...",
+      "url": "https://www.pcmag.com/news/no-pornhub-access-25-states-3-countries-how-to-watch-anyway-vpn",
+      "snippet": "Aug 28, 2026 · Aylo sites like Pornhub are blocked in half the country and overseas, in protest of age-verification laws. Here's how we …"
+    },
+    {
+      "title": "Pornhub deve chiudere in Italia? Cosa sappiamo dell’ultima mossa del ...",
+      "url": "https://www.fanpage.it/innovazione/tecnologia/pornhub-deve-chiudere-in-italia-cosa-sappiamo-dellultima-mossa-del-garante-della-privacy/",
+      "snippet": "Jul 12, 2023 · Poche righe in cui vengono messe insieme tutte le domande che il Garante vuole chiedere a Pornhub, il portale dove …"
+    },
+    {
+      "title": "What's Happening to Pornhub? Everything You Need to Know",
+      "url": "https://proprivacy.com/vpn/guides/whats-happening-to-pornhub",
+      "snippet": "Oct 21, 2024 · Are you concerned about the growing complex issues surrounding Pornhub? We provide a comprehensive overview of …"
+    }
+  ]
+}

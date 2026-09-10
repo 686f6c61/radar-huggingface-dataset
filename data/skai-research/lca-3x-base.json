@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skai-research/lca-3x-base",
+  "slug": "skai-research-lca-3x-base",
+  "author": "skai-research",
+  "url": "https://huggingface.co/skai-research/lca-3x-base",
+  "created_at": "2026-09-10T17:13:24.000Z",
+  "updated_at": "2026-09-10T17:13:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "byte-level",
+    "hierarchical",
+    "tokenizer-free",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:2608.15454",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 373882945,
+  "parameters_human": "373.9M",
+  "storage_bytes": 1495553324,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comune di Bacoli",
+      "url": "https://comune.bacoli.na.it/",
+      "snippet": "Comune di Bacoli Via Roma 188 (Piazza G.Marconi) 80070 Bacoli (NA) Codice fiscale / P. IVA:80100100637 / 05460810632 …"
+    },
+    {
+      "title": "GitHub - google-research/skai: SKAI is a machine learning based tool ...",
+      "url": "https://github.com/google-research/skai",
+      "snippet": "SKAI is a machine learning based tool for performing automatic building damage assessments on aerial imagery of disaster sites. - google-research/skai"
+    },
+    {
+      "title": "Contatti Comune - Comune di Bacoli",
+      "url": "https://comune.bacoli.na.it/punto_contatto/contatti-comune/",
+      "snippet": "Grazie, il tuo parere ci aiuterà a migliorare il servizio!"
+    },
+    {
+      "title": "SKAI: Revolutionizing Disaster Response with AI",
+      "url": "https://un-two-zero.network/contents/skai-revolutionizing-disaster-response-with-ai/",
+      "snippet": "SKAI: Revolutionizing Disaster Response with AI In collaboration with Google, WFP’s SKAI model leverages AI and satellites to quickly assess disaster impacts, streamlining humanitarian responses and significantly reducing costs and time."
+    },
+    {
+      "title": "PagoPA - Comune di Bacoli",
+      "url": "https://comune.bacoli.na.it/sito_tematico/pagopa/",
+      "snippet": "Oct 24, 2024 · PagoPA Link diretto al portale del PagoPA http://pagamentispontanei.servizienti.it/bacoli Condividi Vedi azioni …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bisalsaha/trade-idp-vlm-7b",
+  "slug": "bisalsaha-trade-idp-vlm-7b",
+  "author": "bisalsaha",
+  "url": "https://huggingface.co/bisalsaha/trade-idp-vlm-7b",
+  "created_at": "2026-09-10T11:50:25.000Z",
+  "updated_at": "2026-09-10T11:50:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vision",
+    "vlm",
+    "document-ai",
+    "trade-finance",
+    "bangladesh-bank",
+    "oims",
+    "feod",
+    "unsloth",
+    "lora",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ATV de vanzare - ATV CFMOTO - Can Am – Linhai - Atvrom.ro",
+      "url": "https://www.atvrom.ro/atv",
+      "snippet": "Descopera si tu oferta ATV pusa la dispozitie de catre dealerii nostri, ce cuprinde zeci de modele ATV, cu specificatii tehnice diferite, …"
+    },
+    {
+      "title": "ATV, motociclete, scutere, skijet, spyder, echipamente - Atvrom.ro",
+      "url": "https://www.atvrom.ro/",
+      "snippet": "Magazinul nostru online este deschis 24/7 pentru orice pasionat powersports iar echipa noastra de experti va sta la dispozitie cu …"
+    },
+    {
+      "title": "ATV Nou De Vânzare | CF Moto, Polaris, Can-Am | Dealer Moto24®",
+      "url": "https://dealer.moto24.ro/atv/",
+      "snippet": "Ești în căutarea unui ATV nou? Modele 2026. CF-Moto, Polaris, Can-Am 4x4. Finanțare ATV în Rate. Aprobări Rapide. Persoane …"
+    },
+    {
+      "title": "ATV de vanzare - Linhai - CF Moto - Can Am - Atvrom-bucuresti.ro",
+      "url": "https://www.atvrom-bucuresti.ro/atv",
+      "snippet": "Descopera si tu oferta ATV pusa la dispozitie de catre dealerii nostri, ce cuprinde zeci de modele ATV, cu specificatii tehnice diferite, …"
+    },
+    {
+      "title": "ATVRom Bucuresti - Magazin ATV Moto -CFMOTO -Can-Am -Kawasaki",
+      "url": "https://www.atvrom-bucuresti.ro/",
+      "snippet": "Marcile ATV importate si distribuite de catre ATVRom Bucuresti sunt: Can-Am Bombardier, CFMOTO, Polaris si Kawasaki."
+    }
+  ]
+}

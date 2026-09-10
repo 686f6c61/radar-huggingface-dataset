@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-nld_uniform-100mb_seed455",
+  "slug": "fpadovani-ppt-nld_uniform-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-nld_uniform-100mb_seed455",
+  "created_at": "2026-09-10T18:01:28.000Z",
+  "updated_at": "2026-09-10T18:06:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/nld_latn_100mb",
+    "base_model:finetune:goldfish-models/nld_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86708736,
+  "parameters_human": "86.7M",
+  "storage_bytes": 1387584057,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/nld_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Absher-أبشر",
+      "url": "https://www.absher.sa/",
+      "snippet": "أهلاً بكم في أبشر المنصة الإلكترونية لخدمات وزارة الداخلية وقطاعاتها, لخدمة المواطنين والمقيمين والزوار. The electronic platform for the Ministry of Interior's services …"
+    },
+    {
+      "title": "Home [www.absher.sa]",
+      "url": "https://www.absher.sa/wps/portal/individuals/Home/homepublic",
+      "snippet": "بدء الخدمة Start Service Viewing the approved centers for vehicle deregistration Plate Auction Viewing the approved centers for vehicle …"
+    },
+    {
+      "title": "خدمة مزاد اللوحات الإلكتروني",
+      "url": "https://mazad.absher.sa/portal/auction-dashboard/",
+      "snippet": "Online Plate Auction Service أهلا بك في مزاد اللوحات للأفراد في منصة أبشر تتيح لك هذه الخدمة إمكانية إضافة اللوحات المسجلة بهويتك الرقمية \"حسابك في أبشر\"، والمزايدة على اللوحات …"
+    },
+    {
+      "title": "Register - أبشر",
+      "url": "https://www.absher.sa/wps/portal/individuals/static/register",
+      "snippet": "A mobile number can be associated with only one digital identity. If you register using a mobile number that is already linked to an …"
+    },
+    {
+      "title": "شروط الاستخدام - أبشر",
+      "url": "https://www.absher.sa/wps/portal/business/Home/homepublic/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziDTxNTDwMTYy8LXx9jAwcnQI9nYK9gwwMTMz0wwkpiAJJ4wCOBkD9UViUOBo4BRk5GRsYuPsbYVWAYkZBboRBpqOiIgCyIDAO/dz/d5/L0lDUmlTUSEhL3dHa0FKRnNBLzROV3FpQSEhL2Fy/?uri=nm%3Aoid%3AZ6_0O2MD1QCAF0QH4D5PF00000000",
+      "snippet": "بنود وشروط الاستخدام استخدام منصة أبشر أعمال منصة أبشر أعمال للخدمات الالكترونية بالمملكة العربية السعودية (التي يشار إليها هنا بعبارة\" أبشر أعمال \" أو \"المنصة\") متاحة لاستخدامك …"
+    }
+  ]
+}

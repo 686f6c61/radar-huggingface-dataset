@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "svercoutere/testing-auto-training-model",
+  "slug": "svercoutere-testing-auto-training-model",
+  "author": "svercoutere",
+  "url": "https://huggingface.co/svercoutere/testing-auto-training-model",
+  "created_at": "2026-09-10T14:01:10.000Z",
+  "updated_at": "2026-09-10T14:01:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-classification",
+    "multi-label-classification",
+    "codelist-labeling",
+    "base_model:svercoutere/robbert-2023-dutch-base-abb",
+    "base_model:finetune:svercoutere/robbert-2023-dutch-base-abb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124445188,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497810225,
+  "storage_human": "498 MB",
+  "base_model": "svercoutere/robbert-2023-dutch-base-abb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SHEIN | Women's Fashion Online Shopping | Shop Seasonal Best …",
+      "url": "https://m.shein.com/ar-en/?msockid=0c7d5a71ea4f674f125a4da1eb496638",
+      "snippet": "Discover the latest women's fashion trends at SHEIN, shop weekly updated women's dresses, shoes, bags and accessories and get …"
+    },
+    {
+      "title": "Women's Clothing, Women Fashion Sale | SHEIN USA",
+      "url": "https://us.shein.com/?msockid=0c7d5a71ea4f674f125a4da1eb496638",
+      "snippet": "Discover exclusive discounts and the latest trends in women's fashion at SHEIN, featuring dresses, tops, bottoms, shoes, plus sizes …"
+    },
+    {
+      "title": "SHINE About the Brand | Al Fahim HQ Family Group Retail",
+      "url": "https://alfahimhq.com/shine/",
+      "snippet": "SHINE is a global department store brand offering trendy, fashionable products for youth, sourced from China."
+    },
+    {
+      "title": "SHINE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/shine",
+      "snippet": "SHINE definition: 1. to send out or reflect light: 2. If a person's eyes or face shine with a quality, you can see…. Learn more."
+    },
+    {
+      "title": "262+ Jobs in UAE for Freshers | Latest Gulf Openings - Shine",
+      "url": "https://www.shine.com/job-search/jobs-in-united-arab-emirates",
+      "snippet": "Find jobs in UAE for freshers across Dubai, Abu Dhabi, and Sharjah. Apply for IT, sales, hospitality, and entry-level roles on Shine."
+    }
+  ]
+}

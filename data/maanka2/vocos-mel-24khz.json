@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maanka2/vocos-mel-24khz",
+  "slug": "maanka2-vocos-mel-24khz",
+  "author": "maanka2",
+  "url": "https://huggingface.co/maanka2/vocos-mel-24khz",
+  "created_at": "2026-09-10T18:59:47.000Z",
+  "updated_at": "2026-09-10T18:59:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vocos",
+    "vocoder",
+    "audio",
+    "arxiv:2306.00814",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13532674,
+  "parameters_human": "13.5M",
+  "storage_bytes": 54138040,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Family Safety deaktivieren & löschen – Windows 11/10",
+      "url": "https://tippsling.de/microsoft-family-safety-deaktivieren-loeschen-windows-11-10/",
+      "snippet": "Dec 26, 2025 · Erfahren Sie, wie Sie Microsoft Family Safety unter Windows 11/10 deaktivieren und löschen, mit klarer Anleitung für …"
+    },
+    {
+      "title": "4 Wege: So deaktivieren Sie Microsoft Family Safety - MiniTool",
+      "url": "https://de.minitool.com/nachrichten/microsoft-family-safety-deaktivieren.html",
+      "snippet": "Jul 21, 2025 · In diesem Fall können Sie Microsoft Family Safety deaktivieren, um diese Benachrichtigungen zu vermeiden. In diesem …"
+    },
+    {
+      "title": "Microsoft Family safety umgehen - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/de-de/answers/questions/4130876/microsoft-family-safety-umgehen",
+      "snippet": "Jun 14, 2023 · Diese Frage wurde aus der Microsoft-Support-Community migriert. Sie können darüber abstimmen, ob sie hilfreich ist, …"
+    },
+    {
+      "title": "Family Safety umgangen - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/de-de/answers/questions/4205523/family-safety-umgangen",
+      "snippet": "Liebes Microsoft, mein Sohn überrascht mich immer wieder aufs neue wie man die Family Safety umgehen kann. Er hat es diesmal …"
+    },
+    {
+      "title": "Problembehandlung Microsoft Family Safety",
+      "url": "https://support.microsoft.com/de-de/family-safety/troubleshooting-microsoft-family-safety",
+      "snippet": "Hier sind die häufigsten Probleme, die bei Family Safety-Features auftreten können, und wie sie behoben werden können."
+    }
+  ]
+}

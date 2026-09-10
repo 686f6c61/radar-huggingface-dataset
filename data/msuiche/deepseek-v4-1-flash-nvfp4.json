@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "msuiche/DeepSeek-V4.1-Flash-NVFP4",
+  "slug": "msuiche-deepseek-v4-1-flash-nvfp4",
+  "author": "msuiche",
+  "url": "https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-NVFP4",
+  "created_at": "2026-09-10T13:35:24.000Z",
+  "updated_at": "2026-09-10T13:48:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "deepseek_v41",
+    "nvfp4",
+    "quantized",
+    "deepseek",
+    "modelopt",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112117278236,
+  "storage_human": "112.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Willkommen bei Deutschlands beliebtester Bank – ING",
+      "url": "https://www.ing.de/?msockid=36bc5f335dc262a0220a48e35c3a63f0",
+      "snippet": "Mit der ING haben Sie Ihre Finanzen immer im Blick - Girokonto, Kredit, Depot, Tagesgeldkonto oder Baufinanzierung: Was darf es …"
+    },
+    {
+      "title": "ING - Willkommen bei Deutschlands beliebtester Bank",
+      "url": "https://apps.ing.de/",
+      "snippet": "ING - Willkommen bei Deutschlands beliebtester Bank Your browser does not support JavaScript!"
+    },
+    {
+      "title": "ING - Willkommen bei Deutschlands beliebtester Bank",
+      "url": "https://apps.ing.de/auth/",
+      "snippet": "Put your description here. Privatkunden Business Banking Wholesale Banking Girokonto Sparen & Anlegen Wertpapierhandel …"
+    },
+    {
+      "title": "Hilfe, Kundenservice und Kontakt – ING",
+      "url": "https://www.ing.de/hilfe/?msockid=36bc5f335dc262a0220a48e35c3a63f0",
+      "snippet": "In der ING App: Öffnen Sie unsere ING App und gehen Sie unten rechts auf „Service“. Dann klicken Sie auf „Persönliche Daten“. …"
+    },
+    {
+      "title": "Das kostenlose Tagesgeldkonto mit 3,20% Zinsen p.a. – ING",
+      "url": "https://www.ing.de/sparen-anlegen/sparen/tagesgeld/?msockid=36bc5f335dc262a0220a48e35c3a63f0",
+      "snippet": "3,20% Zinsen p.a. für 4 Monate auf Ihr erstes Extra-Konto. Sicher und flexibel Geld anlegen mit dem kostenlosen Tagesgeldkonto."
+    }
+  ]
+}

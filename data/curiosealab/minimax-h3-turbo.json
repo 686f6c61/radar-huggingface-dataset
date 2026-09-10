@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "CurioSeaLab/Minimax-h3-Turbo",
+  "slug": "curiosealab-minimax-h3-turbo",
+  "author": "CurioSeaLab",
+  "url": "https://huggingface.co/CurioSeaLab/Minimax-h3-Turbo",
+  "created_at": "2026-09-10T13:54:27.000Z",
+  "updated_at": "2026-09-10T13:54:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "t2v",
+    "i2v",
+    "r2v",
+    "image-to-video",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58785888168,
+  "storage_human": "58.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is Claude Code's AskUserQuestion tool? How to use it | Cyrus",
+      "url": "https://www.atcyrus.com/stories/claude-code-ask-user-question-tool-guide",
+      "snippet": "Dec 29, 2025 · The AskUserQuestion tool allows Claude Code to present you with questions and multiple-choice options during a …"
+    },
+    {
+      "title": "Die Interview-Methode: Wie AskUserQuestionTool meinen Claude …",
+      "url": "https://tectontide.com/blog/ask-user-question-tool-workflow/",
+      "snippet": "Jan 7, 2025 · Statt dass du Claude promptest, lass Claude dich interviewen. Das AskUserQuestionTool ist ein eingebautes Claude …"
+    },
+    {
+      "title": "Claude Code AskUserQuestion Tool Guide: Drastically Reduce Rework …",
+      "url": "https://smartscope.blog/en/generative-ai/claude/claude-code-askuserquestion-tool-guide/",
+      "snippet": "Learn how the AskUserQuestion tool added in Claude Code v2.0.21 works and how to use it effectively. Discover how AI …"
+    },
+    {
+      "title": "Handle approvals and user input - Claude Code Docs",
+      "url": "https://code.claude.com/docs/en/agent-sdk/user-input",
+      "snippet": "Claude requests user input in two situations: when it needs permission to use a tool (like deleting files or running commands), and …"
+    },
+    {
+      "title": "So funktioniert Claude Code - Claude Code Docs",
+      "url": "https://code.claude.com/docs/de/how-claude-code-works",
+      "snippet": "Wenn Sie Claude eine Aufgabe geben, arbeitet er durch drei Phasen: Kontext sammeln, Maßnahmen ergreifen und Ergebnisse …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jammyyang/groot17_so101_pick_place",
+  "slug": "jammyyang-groot17_so101_pick_place",
+  "author": "jammyyang",
+  "url": "https://huggingface.co/jammyyang/groot17_so101_pick_place",
+  "created_at": "2026-09-10T14:45:25.000Z",
+  "updated_at": "2026-09-10T14:47:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:jammyyang/so101_pick_place_20260910_120942",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 9335187112,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "透過 Merchant Center 宣傳商家 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/",
+      "snippet": "透過 Merchant Center 宣傳貴商家和產品。您可以提高銷售業績、觸及更多消費者，並將更多人潮導向您的電子商務網站或實體店面。"
+    },
+    {
+      "title": "解決方案 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/solutions/",
+      "snippet": "在各項 Google 服務中觸及潛在客戶 每當潛在客戶搜尋您販售的商品時，您都可以向他們展示自家產品。我們的廣告解決方案可以在各 …"
+    },
+    {
+      "title": "Redirect Notice - Google Maps",
+      "url": "https://maps.google.de/url?url=httpss%3A%2F%2Fonlizo.com",
+      "snippet": "The previous page is sending you to an invalid url. If you do not want to visit that page, you can return to the previous page."
+    },
+    {
+      "title": "Rechtliche Hinweise für Google Maps/Google Earth und Google Maps ...",
+      "url": "https://maps.google.de/help/attribution_maps/",
+      "snippet": "Rechtliche Hinweise zu Brancheneintragsdaten Nachstehend sind verschiedene rechtliche Hinweise aufgeführt, zu denen Google …"
+    }
+  ]
+}

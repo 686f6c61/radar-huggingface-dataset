@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Qwen3-0.6B-chat-mlx-4bit",
+  "slug": "sirsahol-qwen3-0-6b-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Qwen3-0.6B-chat-mlx-4bit",
+  "created_at": "2026-09-10T13:34:16.000Z",
+  "updated_at": "2026-09-10T13:35:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "4-bit",
+    "conversational",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 346873198,
+  "storage_human": "347 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fire stick - Cyprus forum - Expat.com",
+      "url": "https://www.expat.com/en/forum/europe/cyprus/1028950-fire-stick.html",
+      "snippet": "Discover how to use your Fire Stick in Cyprus for streaming UK TV. Get tips and tricks specifically for expats and locals alike."
+    },
+    {
+      "title": "Celebrity News and Gossip - Lipstick Alley",
+      "url": "https://www.lipstickalley.com/forums/celebrity-news-and-gossip.15/",
+      "snippet": "Aug 20, 2006 · We discuss the latest celebrity news and gossip with wit, humor and occasional insider knowledge"
+    },
+    {
+      "title": "Baker jobs - Expat.com",
+      "url": "https://www.expat.com/en/jobs/baker.html",
+      "snippet": "Aug 26, 2026 · Baker job offers . Post your free ad here if you are offering baker and pastry cook positions."
+    },
+    {
+      "title": "Young Ghost and Kanan on Set Filming ‘Power: Origins’",
+      "url": "https://www.lipstickalley.com/threads/young-ghost-and-kanan-on-set-filming-%E2%80%98power-origins%E2%80%99.6024180/",
+      "snippet": "Joined Nov 17, 2011 Messages 49,076 Reaction score Reactions 650,123 128,402 8,648 731,255 Alleybux 2,908,032"
+    },
+    {
+      "title": "Job offers for expats in Luanda: find and post career opportunities ...",
+      "url": "https://www.expat.com/en/jobs/africa/angola/luanda/",
+      "snippet": "3 days ago · Looking for a job in Luanda or recruiting international talents? Explore job offers and post vacancies for expats."
+    }
+  ]
+}

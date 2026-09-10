@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cosmicoptima/computer-run1-step180",
+  "slug": "cosmicoptima-computer-run1-step180",
+  "author": "cosmicoptima",
+  "url": "https://huggingface.co/cosmicoptima/computer-run1-step180",
+  "created_at": "2026-09-10T11:58:28.000Z",
+  "updated_at": "2026-09-10T12:17:35.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "computer",
+    "model-c",
+    "self-preference",
+    "rl",
+    "constitution",
+    "base_model:cosmicoptima/computer-7",
+    "base_model:finetune:cosmicoptima/computer-7",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 141124707720,
+  "storage_human": "141.1 GB",
+  "base_model": "cosmicoptima/computer-7",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "City Break - wycieczki weekendowe samolotem - Last Minute | ITAKA",
+      "url": "https://www.itaka.pl/city-break/",
+      "snippet": "City Break - wycieczki weekendowe samolotem. Spędź krótki urlop w wielkim mieście z ITAKĄ. Tak jak lubisz - samodzielnie lub z …"
+    },
+    {
+      "title": "City Break - wycieczki weekendowe samolotem",
+      "url": "https://r.pl/city-break?msockid=3fd651077b4d63642e9046d77a1562f0",
+      "snippet": "Niech weekend będzie jak wakacje! Wybierz City Break z Rainbow i odkrywaj sekrety najważniejszych metropolii, jak Paryż, Lizbona, …"
+    },
+    {
+      "title": "City Break - Wycieczki Weekendowe - Wakacje.pl",
+      "url": "https://www.wakacje.pl/p/city-break.html?msockid=3fd651077b4d63642e9046d77a1562f0",
+      "snippet": "City Break z Krakowa, Warszawy, Gdańska lub Wrocławia? Sprawdź najbardziej popularne miasta wylotowe i zaplanuj kilkudniową …"
+    },
+    {
+      "title": "City Break | Biuro podróży TUI",
+      "url": "https://www.tui.pl/city-break",
+      "snippet": "City Break - sprawdź ofertę hoteli miejskich Sprawdzone noclegi w popularnych miastach Możliwość lotu samolotem lub dojazdu …"
+    },
+    {
+      "title": "City Break - 3/4 Dni Samolotem + Hotel - eSky.pl",
+      "url": "https://www.esky.pl/lot+hotel/1-city-break?msockid=3fd651077b4d63642e9046d77a1562f0",
+      "snippet": "City break to krótki wypad do miasta (2-5 dni), u nas dostępny od razu z lotem i hotelem w pakiecie. Chłoniesz klimat miasta i …"
+    }
+  ]
+}

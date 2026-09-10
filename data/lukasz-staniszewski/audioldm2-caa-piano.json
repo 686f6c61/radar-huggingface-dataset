@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/audioldm2-caa-piano",
+  "slug": "lukasz-staniszewski-audioldm2-caa-piano",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/audioldm2-caa-piano",
+  "created_at": "2026-05-21T15:20:53.000Z",
+  "updated_at": "2026-09-10T15:00:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "audio-interv",
+  "languages": [],
+  "tags": [
+    "audio-interv",
+    "activation-steering",
+    "audio",
+    "audioldm2",
+    "caa",
+    "diffusion",
+    "interpretability",
+    "music",
+    "piano",
+    "steering",
+    "arxiv:2602.11910",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2328337817,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BORIS-NRW - Amtliche Informationen zum Grundstücksmarkt",
+      "url": "https://www.boris.nrw.de/",
+      "snippet": "BORIS-NRW ist das zentrale Informationssystem der Gutachterausschüsse und des Oberen Gutachterausschusses für …"
+    },
+    {
+      "title": "BORIS-NRW",
+      "url": "https://www.boris.nrw.de/boris-nrw/?product=brw&commune=Aachen",
+      "snippet": "BORIS-NRW ist das zentrale Informationssystem der Gutachterausschüsse und des Oberen Gutachterausschusses für …"
+    },
+    {
+      "title": "BORIS-NRW – Datenschutzrichtlinien",
+      "url": "https://boris.nrw.de/boris-nrw/eu-dsgvo.html",
+      "snippet": "Aktualität der Daten Die Informationen des Online-Angebots BORIS-NRW werden ständig aktualisiert. Trotz sorgfältiger Bearbeitung …"
+    },
+    {
+      "title": "BORIS-NRW | Wartungsseite",
+      "url": "https://www.boris.nrw.de/boris-nrw/maintenance.html",
+      "snippet": "Jan 1, 2026 · Liebe BORIS-Nutzenden, zwischen 06:30 und 10 Uhr finden auf BORIS-NRW Wartungsarbeiten zur Umstellung der …"
+    },
+    {
+      "title": "BORIS-NRW – Amtliche Informationen zum Grundstücksmarkt",
+      "url": "https://www.boris.nrw.de/boris-nrw/impressum.html",
+      "snippet": "Der OGA NRW ist nicht verantwortlich für die abrufbaren Informationen der Gutachterausschüsse für Grundstückswerte und die …"
+    }
+  ]
+}

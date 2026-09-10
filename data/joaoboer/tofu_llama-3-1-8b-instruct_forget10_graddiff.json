@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget10_GradDiff",
+  "slug": "joaoboer-tofu_llama-3-1-8b-instruct_forget10_graddiff",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget10_GradDiff",
+  "created_at": "2026-09-10T13:35:05.000Z",
+  "updated_at": "2026-09-10T13:37:59.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "GradDiff",
+    "forget10",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Erste deutsche F-35 hebt ab: Kampfjet \"Made in USA\" soll deutsche …",
+      "url": "https://www.msn.com/de-de/nachrichten/other/erste-deutsche-f-35-hebt-ab-kampfjet-made-in-usa-soll-deutsche-tornados-ersetzen/ar-AA2bTzXI",
+      "snippet": "13 hours ago · Die erste deutsche F-35 hat in den USA ihren Jungfernflug absolviert. Der neue Kampfjet soll den Tornado ersetzen – …"
+    }
+  ]
+}

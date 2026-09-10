@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/Raptor-0.6.1-preview-JANG_6M",
+  "slug": "osaurusai-raptor-0-6-1-preview-jang_6m",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/Raptor-0.6.1-preview-JANG_6M",
+  "created_at": "2026-09-10T16:45:15.000Z",
+  "updated_at": "2026-09-10T16:54:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "jang",
+    "quantized",
+    "apple-silicon",
+    "reasoning",
+    "agent",
+    "tool-use",
+    "imatrix",
+    "awq",
+    "gptq",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:finetune:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 3662928280,
+  "storage_human": "3.7 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=27a4c5bde79e64a8024dd26de6a365ba",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft products, apps, and devices built to support you",
+      "url": "https://www.microsoft.com/en-us/microsoft-products-and-apps?msockid=27a4c5bde79e64a8024dd26de6a365ba",
+      "snippet": "Uncover the power of Microsoft's products, apps, and devices designed to simplify your life and fuel your passions. Explore our …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JanPhilipp/molmoact2_ttz_tools_2",
+  "slug": "janphilipp-molmoact2_ttz_tools_2",
+  "author": "JanPhilipp",
+  "url": "https://huggingface.co/JanPhilipp/molmoact2_ttz_tools_2",
+  "created_at": "2026-09-10T16:50:53.000Z",
+  "updated_at": "2026-09-10T18:10:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "molmoact2",
+    "robotics",
+    "dataset:JanPhilipp/ttz_tools_merged_2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5601988144,
+  "parameters_human": "5.60B",
+  "storage_bytes": 12679641064,
+  "storage_human": "12.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taraftarium24, Taraftarium, Bedava Lig TV İzle",
+      "url": "https://taraftarium24co.xyz/",
+      "snippet": "Taraftarium24 ve Taraftarium üzerinden Bedava Lig TV izle! Canlı maç yayınları, HD kalite, kesintisiz futbol keyfi ve mobil uyumlu …"
+    },
+    {
+      "title": "Taraftarium24 - Taraftarium",
+      "url": "https://www.taraftarium.com.tr/taraftarium24-2/",
+      "snippet": "May 9, 2026 · Taraftarium | Taraftarium24 Kayıt ol Oturum Aç Taraftarium24 Haberler Futbol Milli Takım"
+    },
+    {
+      "title": "taraftarium24 canli mac izle taraftarium24 taraftarium - Yandex",
+      "url": "https://tv.yandex.com/search?text=taraftarium24+canli+mac+izle+taraftarium24+taraftarium",
+      "snippet": "Taraftarium24 ile tüm spor karşılaşmalarını HD kalitede canlı olarak izleyebilirsiniz. Süper Lig, Premier Lig, La Liga, Serie A, …"
+    },
+    {
+      "title": "Taraftarium24 - Taraftarium - Canlı Maç İzle",
+      "url": "https://t24turkiye.com/",
+      "snippet": "Taraftarium24'te HD kalitede canlı maç izleyin. Kesintisiz yayın, donma yok. Futbol, basketbol, voleybol maçlarını ücretsiz takip edin. …"
+    },
+    {
+      "title": "Taraftarium - Taraftarium24 Canlı Maç İzle - Taraftarium 24",
+      "url": "https://www.taraftarium.com.tr/",
+      "snippet": "Taraftarium24, tüm ligleri ve canlı maç yayınlarını en yüksek çözürnürlüklerle kesintisiz ve donma yaşamadan izleyebilirsiniz. …"
+    }
+  ]
+}

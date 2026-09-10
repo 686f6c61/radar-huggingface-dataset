@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "darrengunaw/deit-multitask",
+  "slug": "darrengunaw-deit-multitask",
+  "author": "darrengunaw",
+  "url": "https://huggingface.co/darrengunaw/deit-multitask",
+  "created_at": "2026-09-10T17:39:08.000Z",
+  "updated_at": "2026-09-10T17:39:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TT-NEWS Tischtennis Forum",
+      "url": "https://forum.tt-news.de/",
+      "snippet": "Aug 9, 2026 · Tischtennis Portal - News, Forum, Ergebnisse, Material, TT-Shop, alles rund um den Tischtennis Sport. Europa´s …"
+    },
+    {
+      "title": "七転八起のブログの力！",
+      "url": "https://ryuubufan-78.bbs.fc2.com/?act=reply&tid=8941630",
+      "snippet": "Mar 15, 2026 · デモ・抗議開催情報まとめ（反戦・反新自由主義） “ 座して死を待つよりは、出て活路を見出さん ” “ 山本太郎は命 …"
+    },
+    {
+      "title": "FC2 - 専修大学野球部熱く応援掲示板",
+      "url": "https://senshu-v2.bbs.fc2.com/",
+      "snippet": "専修大学野球部を熱く応援する掲示板です。ご意見や激励をお願いします。 一覧（新規投稿） ｜ ワード検索 ｜ 使い方 ｜ 携帯 …"
+    },
+    {
+      "title": "Westdeutscher TTV - TT-NEWS Tischtennis Forum",
+      "url": "https://forum.tt-news.de/forumdisplay.php?f=66",
+      "snippet": "May 9, 2024 · Westdeutscher TTV Hier könnte Ihre Werbung stehen! (Infos anfordern) Unterforen : Westdeutscher TTV"
+    },
+    {
+      "title": "FC2BBS",
+      "url": "https://n5s16-98.bbs.fc2.com/",
+      "snippet": "1 名前： WIゴルフ浄旦会 事務局 2026/07/24 (Fri) 09:54:46 毎日危険な暑さが続いていますが、皆様お元気でしょうか。表題の秋平 …"
+    }
+  ]
+}

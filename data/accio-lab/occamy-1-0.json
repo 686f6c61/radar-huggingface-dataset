@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Accio-Lab/occamy-1.0",
+  "slug": "accio-lab-occamy-1-0",
+  "author": "Accio-Lab",
+  "url": "https://huggingface.co/Accio-Lab/occamy-1.0",
+  "created_at": "2026-08-13T12:56:13.000Z",
+  "updated_at": "2026-09-10T04:13:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "agent",
+    "agentic",
+    "co-work",
+    "tool-use",
+    "long-context",
+    "mixture-of-experts",
+    "coding",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 1507,
+  "trending_score": 9,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70240055957,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translator",
+      "snippet": "Traduisez des textes et des documents complets en un instant. Des traductions précises accessibles aux utilisateurs uniques et aux …"
+    },
+    {
+      "title": "Reverso | Traduction gratuite, dictionnaire",
+      "url": "https://www.reverso.net/traduction-texte",
+      "snippet": "Le service de traduction en ligne gratuit de Reverso qui traduit vos textes de l'anglais vers le français, l'espagnol, l'italien, l'allemand, …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ca/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Dictionnaire anglais-français | Traduction français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/",
+      "snippet": "Dictionnaire Reverso anglais-français : des millions de mots et expressions en anglais avec leur traductions en français, exemples en …"
+    }
+  ]
+}

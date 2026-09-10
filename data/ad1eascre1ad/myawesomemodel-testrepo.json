@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AD1EASCRE1AD/MyAwesomeModel-TestRepo",
+  "slug": "ad1eascre1ad-myawesomemodel-testrepo",
+  "author": "AD1EASCRE1AD",
+  "url": "https://huggingface.co/AD1EASCRE1AD/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T14:47:00.000Z",
+  "updated_at": "2026-09-10T14:47:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prüfungsausschuss - TU Berlin",
+      "url": "https://www.tu.berlin/physik/ueber-uns/akademische-selbstverwaltung/pruefungsausschuss",
+      "snippet": "Der Prüfungsausschuss Physik ist das Entscheidungsgremium für alle Prüfungsangelegenheiten im Rahmen der Physik …"
+    },
+    {
+      "title": "Prüfungsausschüsse - TU Berlin",
+      "url": "https://www.tu.berlin/naturwissenschaften/studium-lehre/pruefungsausschuesse",
+      "snippet": "Prüfungsausschüsse Der Prüfungsausschuss ist zuständig für die Organisation der Prüfungen, Bestellung von Prüfern und …"
+    },
+    {
+      "title": "Prüfungsausschüsse - TU Berlin",
+      "url": "https://www.tu.berlin/eecs/studium-lehre/pruefungsausschuesse-1",
+      "snippet": "Die Ordnung zur Regelung des allgemeinen Studien- und Prüfungsverfahrens in Bachelor- und Masterstudiengängen (AllgStuPO) …"
+    },
+    {
+      "title": "Kontakt & Teams - TU Berlin",
+      "url": "https://www.tu.berlin/pruefungen/pruefungen/kontakt-teams/",
+      "snippet": "Es gibt fünf Teams, die jeweils unterschiedliche Studiengänge bearbeiten und entweder persönlich oder telefonisch für Sie da sind."
+    },
+    {
+      "title": "Prüfungsausschuss - TU Berlin",
+      "url": "https://www.tu.berlin/humanities/ueber-uns/gremien/pruefungsausschuss",
+      "snippet": "Das Gremium und der Vorsitz werden bei Ihrer Arbeit unterstützt durch das Büro des Prüfungsausschusses. Informationen für …"
+    }
+  ]
+}

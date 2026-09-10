@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "umesh251/ppo-LunarLander-v2",
+  "slug": "umesh251-ppo-lunarlander-v2",
+  "author": "umesh251",
+  "url": "https://huggingface.co/umesh251/ppo-LunarLander-v2",
+  "created_at": "2026-09-10T19:00:42.000Z",
+  "updated_at": "2026-09-10T19:01:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 433707,
+  "storage_human": "433707 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT - Tchat GPT",
+      "url": "https://chatgpt.com/fr-FR/",
+      "snippet": "Utilisez ChatGPT pour répondre aux questions, rédiger, créer des images, accomplir des tâches et coder, le tout au même endroit. …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://m.chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT 소개 - OpenAI",
+      "url": "https://openai.com/ko-KR/index/chatgpt/",
+      "snippet": "ChatGPT는 프롬프트의 지시를 따르고 자세한 응답을 제공하도록 훈련된 InstructGPT ⁠ 의 형제 모델입니다. ChatGPT를 소개하여 …"
+    },
+    {
+      "title": "GPT-5 is here | OpenAI",
+      "url": "https://openai.com/gpt-5/",
+      "snippet": "ChatGPT thinks harder on complex tasks and asks relevant follow-up questions to keep work moving. Every employee can get expert …"
+    }
+  ]
+}

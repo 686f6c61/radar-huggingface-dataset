@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "adrgrondin/MiniCPM5-1B-mlx-6Bit",
+  "slug": "adrgrondin-minicpm5-1b-mlx-6bit",
+  "author": "adrgrondin",
+  "url": "https://huggingface.co/adrgrondin/MiniCPM5-1B-mlx-6Bit",
+  "created_at": "2026-09-10T12:19:06.000Z",
+  "updated_at": "2026-09-10T12:19:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:quantized:openbmb/MiniCPM5-1B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 878166035,
+  "storage_human": "878 MB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tworzenie konta Google dla Gmaila - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/56256?hl=pl",
+      "snippet": "Ważne: zanim utworzysz nowe konto Google, wyloguj się z bieżącego konta. Dowiedz się, jak wylogować się z Gmaila Na …"
+    },
+    {
+      "title": "Spersonalizowane ćwiczenia rozmów w aplikacji Tłumacz",
+      "url": "https://support.google.com/translate/answer/16475590?hl=pl",
+      "snippet": "Spersonalizowane ćwiczenia rozmów w aplikacji Tłumacz Dzięki nowej funkcji opartej na AI przeznaczonej do nauki języka w …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/security-issue-im-moving-out-of-microsoft/b0c5dce4-4465-436a-8cdc-09daf77a70c8",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-handler-softwaresuch-as-microsoft-office/9ff5d701-1131-4df9-8f76-07e03bbfe8f0",
+      "snippet": ""
+    },
+    {
+      "title": "Jak włączyć automatycznego tłumacza? - Społeczność Gmail",
+      "url": "https://support.google.com/mail/thread/6074797/jak-w%C5%82%C4%85czy%C4%87-automatycznego-t%C5%82umacza?hl=pl",
+      "snippet": "May 13, 2019 · Przez przypadek wyłączyłem funkcję tłumacza.Wszędzie piszą,że włączanie tej funkcji jest w ustawieniach w …"
+    }
+  ]
+}

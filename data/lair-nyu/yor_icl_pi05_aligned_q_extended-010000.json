@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/yor_icl_pi05_aligned_q_extended-010000",
+  "slug": "lair-nyu-yor_icl_pi05_aligned_q_extended-010000",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/yor_icl_pi05_aligned_q_extended-010000",
+  "created_at": "2026-09-10T18:00:16.000Z",
+  "updated_at": "2026-09-10T18:01:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441230124,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lair Remorques Constructeur",
+      "url": "https://lair-remorques.fr/",
+      "snippet": "2620 route de Paris 50600 Moulines 02 33 49 01 48 LAIR Remorques Réalisation Médiapilote Normandie | Politique de …"
+    },
+    {
+      "title": "Réseau d'agences immobilières en Normandie | LAIR IMMOBILIER",
+      "url": "https://www.lair-immobilier.com/",
+      "snippet": "Lair immobilier, un réseau de 12 agences immobilières à Alençon, Bellême, Ecouché, Mortagne-au-Perche, Pré-en-Pail, Sées, St …"
+    },
+    {
+      "title": "Immobilier Sées - Annonces immobilières Sées | LAIR Immobilier | LAIR ...",
+      "url": "https://www.lair-immobilier.com/ville_bien/Sees_1___/immobilier-sees.html",
+      "snippet": "Vous souhaitez acheter un bien immobilier à Sées (61500) ? Pour aller plus loin dans votre projet immobilier d’achat ou …"
+    },
+    {
+      "title": "Les occasions - Lair Remorques Constructeur",
+      "url": "https://lair-remorques.fr/les-occasions/",
+      "snippet": "Masse lame Lair STOCK NEUF Année : 2024 Capacité : 1m3 Dimensions : 2m50 x 1m10 x 0m60 Lame épaisseur 6mm Couvercle …"
+    },
+    {
+      "title": "Vimm's Lair: The Vault",
+      "url": "https://vimm.net/vault/",
+      "snippet": "The Vault contains every game released in the world for thirty-four classic systems. To play them you'll need an emulator from the …"
+    }
+  ]
+}

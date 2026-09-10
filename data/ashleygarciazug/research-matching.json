@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ashleygarciazug/research-matching",
+  "slug": "ashleygarciazug-research-matching",
+  "author": "ashleygarciazug",
+  "url": "https://huggingface.co/ashleygarciazug/research-matching",
+  "created_at": "2026-09-10T17:05:13.000Z",
+  "updated_at": "2026-09-10T17:05:19.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Make Strawberry Spinach Salad - The Pioneer Woman",
+      "url": "https://www.thepioneerwoman.com/food-cooking/recipes/a39360125/strawberry-spinach-salad-recipe/",
+      "snippet": "Mar 7, 2024 · Say hello to fresh veggies and bright colors in this strawberry spinach salad! Studded with fresh berries and citrus, …"
+    },
+    {
+      "title": "Strawberry Arugula Salad Recipe - The Pioneer Woman",
+      "url": "https://www.thepioneerwoman.com/food-cooking/recipes/a42790279/strawberry-arugula-salad-recipe/",
+      "snippet": "May 28, 2026 · Ree Drummond’s strawberry arugula salad recipe combines sweet berries, peppery greens, feta, and pecans for a …"
+    },
+    {
+      "title": "The Pioneer Woman’s Quick & Zesty Spinach Strawberry Salad Recipe",
+      "url": "https://www.worthpinning.com/recipes/pioneer-woman-spinach-strawberry-salad-recipe/",
+      "snippet": "Jun 16, 2026 · Fresh spinach and strawberry salad bursts with vibrant, juicy goodness in every bite. Try this refreshing recipe and add …"
+    },
+    {
+      "title": "Fresh Pioneer Woman Spinach Strawberry Salad Recipe with …",
+      "url": "https://www.urbanorganic.com/recipes/vibrant-pioneer-woman-spinach-strawberry-salad-recipe/",
+      "snippet": "Jun 20, 2026 · Our fresh Pioneer Woman Spinach Strawberry Salad recipe creates a burst of summer flavors in every bite. Discover …"
+    },
+    {
+      "title": "20 Easy Pioneer Woman Salad Recipes for Fresh & Healthy Lunches",
+      "url": "https://delishsides.com/20-easy-pioneer-woman-salad-recipes-for-fresh-healthy-lunches/",
+      "snippet": "This spinach and strawberry salad is a total winner! Fresh baby spinach, juicy strawberries, crunchy pecans, and tangy feta all come …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "KabirIyer/mocov3-baseline",
+  "slug": "kabiriyer-mocov3-baseline",
+  "author": "KabirIyer",
+  "url": "https://huggingface.co/KabirIyer/mocov3-baseline",
+  "created_at": "2026-09-10T17:14:17.000Z",
+  "updated_at": "2026-09-10T17:14:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie sehen Elfen aus? - Das Schwarze Auge - Orkenspalter",
+      "url": "https://www.orkenspalter.de/index.php?thread/21897-wie-sehen-elfen-aus/",
+      "snippet": "Oct 24, 2016 · Halli hallo, da ich mich gerade mit dem Thema beschäftige, wollte ich mal interessehalber euch fragen: Wie sehen …"
+    },
+    {
+      "title": "Firnelfe richtig spielen - Charaktertipps - Orkenspalter",
+      "url": "https://www.orkenspalter.de/index.php?thread/16126-firnelfe-richtig-spielen/",
+      "snippet": "Mar 4, 2014 · Und während das durchaus exotisch ist, sind Helden ha was besonderes und laut WDH sind Elfen - Gildenmagier …"
+    },
+    {
+      "title": "Wie Fluchen Elfen? - Charaktertipps - Orkenspalter",
+      "url": "https://www.orkenspalter.de/index.php?thread/16514-wie-fluchen-elfen/",
+      "snippet": "May 3, 2014 · Hallo, ich versuche mich nach wie vor daran eine Elfe zu spielen und da wir immer öfter in irgendwelche Situationen …"
+    },
+    {
+      "title": "Sind Elfen schwer zu spielen? - Das Schwarze Auge - Orkenspalter",
+      "url": "https://www.orkenspalter.de/index.php?thread/41240-sind-elfen-schwer-zu-spielen/",
+      "snippet": "Dec 2, 2020 · Dieses Buch jedenfalls enthält Beschreibungen von durch und durch vernünftig spielbaren Elfen, deren badoc …"
+    },
+    {
+      "title": "Die Spielwelten von D&D - Dungeons & Dragons - Orkenspalter",
+      "url": "https://www.orkenspalter.de/index.php?thread/38630-die-spielwelten-von-d-d/",
+      "snippet": "Jan 4, 2020 · Darunter bekannte, wie Elfen, Dunkelelfen, Zwerge, Gnome, Mind Flayer und Beholder, aber auch unbekannte, wie Giff …"
+    }
+  ]
+}

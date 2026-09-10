@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_IdkNLL",
+  "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget01_idknll",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_IdkNLL",
+  "created_at": "2026-09-10T13:01:07.000Z",
+  "updated_at": "2026-09-10T13:02:21.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "IdkNLL",
+    "forget01",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best 10 Pizza Places near Bellevue, WA 98007",
+      "url": "https://www.yelp.com/search?cflt=pizza&find_loc=Bellevue%2C+WA+98007&msockid=07ece204204468b22178f5d421636993",
+      "snippet": "Explore Today's Top Picks: Best Pizza near Bellevue, WA 98007 - Last Updated August 2026 - Cascadia Pizza Restaurant & …"
+    },
+    {
+      "title": "TOP 10 BEST Pizza near Bellevue, WA 98007 - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=pizza&find_loc=Bellevue%2C+WA+98007&msockid=07ece204204468b22178f5d421636993",
+      "snippet": "Top 10 Best Pizza in Bellevue, WA 98007 - Last Updated July 2026 - Yelp - Cascadia Pizza Restaurant & Brewery, Spark Pizza, Z’s …"
+    },
+    {
+      "title": "Pizza in Redmond, WA - The Real Yellow Pages®",
+      "url": "https://www.yellowpages.com/redmond-wa/pizza",
+      "snippet": "Pizza in Redmond on YP.com. See reviews, photos, directions, phone numbers and more for the best Pizza in Redmond, WA."
+    },
+    {
+      "title": "Pizza Delivery Near Me in Bellevue | Domino's Pizza",
+      "url": "https://pizza.dominos.com/washington/bellevue",
+      "snippet": "Bone-in Wings, Bread Bowl Pasta, and Pan Pizza are extra. Each store may charge extra for some items, crust types, toppings, and …"
+    },
+    {
+      "title": "Pagliacci Pizza - Bellevue, WA 98007 - Menu, Reviews, Hours & Contact",
+      "url": "https://restaurantjump.com/pagliacci-pizza-98007/",
+      "snippet": "Apr 10, 2026 · Pagliacci Pizza on Bel-Red Rd in Bellevue consistently delivers a pizza experience that keeps me coming back. The …"
+    }
+  ]
+}

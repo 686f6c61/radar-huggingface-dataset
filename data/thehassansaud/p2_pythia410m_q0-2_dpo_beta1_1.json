@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0.2_dpo_beta1_1",
+  "slug": "thehassansaud-p2_pythia410m_q0-2_dpo_beta1_1",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.2_dpo_beta1_1",
+  "created_at": "2026-09-10T15:31:44.000Z",
+  "updated_at": "2026-09-10T15:31:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Firefox auf die neueste Version aktualisieren | Hilfe zu Firefox",
+      "url": "https://support.mozilla.org/de/kb/firefox-auf-die-letzte-version-aktualisieren",
+      "snippet": "Jun 15, 2026 · Firefox aktualisieren Klicken Sie auf der rechten Seite der Firefox-Symbolleiste auf die Menüschaltfläche , um das …"
+    },
+    {
+      "title": "Firefox downloaden en installeren in Windows | Hulp voor Firefox",
+      "url": "https://support.mozilla.org/nl/kb/firefox-downloaden-en-installeren-windows",
+      "snippet": "Jul 10, 2026 · Firefox op uw computer installeren: Bezoek deze Firefox-downloadpagina in een willekeurige browser, zoals Edge. Klik …"
+    },
+    {
+      "title": "如何看待北京火狐关闭及 Firefox 账户服务终止？ - 知乎",
+      "url": "https://www.zhihu.com/question/1932984295514964671",
+      "snippet": "Firefox火狐中文官网将停止运营 7月28日，北京谋智火狐信息技术有限公司发布关于Firefox在中国持续运营，但北京火狐关闭及Firefox …"
+    },
+    {
+      "title": "如何优雅地使用 Firefox？ - 知乎",
+      "url": "https://www.zhihu.com/question/21285861",
+      "snippet": "Firefox简易教程 Firefox（又称火狐浏览器）是一款开源免费的现代浏览器，以自由、安全、隐私防护等为特色。本教程旨在帮助读者 …"
+    },
+    {
+      "title": "Mettre à jour Firefox vers la dernière version",
+      "url": "https://support.mozilla.org/fr/kb/Mettre%20%C3%A0%20jour%20Firefox",
+      "snippet": "Jun 16, 2026 · Firefox se met automatiquement à jour par défaut, mais on peut toujours le faire manuellement. Sachez comment …"
+    }
+  ]
+}

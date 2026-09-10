@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "thuyduongjoe123/checkpoints_lo_vi_logit",
+  "slug": "thuyduongjoe123-checkpoints_lo_vi_logit",
+  "author": "thuyduongjoe123",
+  "url": "https://huggingface.co/thuyduongjoe123/checkpoints_lo_vi_logit",
+  "created_at": "2026-09-10T11:15:42.000Z",
+  "updated_at": "2026-09-10T11:16:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608526,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment debloquer une liseuse Kobo aura - Forum Matériel & Système",
+      "url": "https://forums.commentcamarche.net/forum/affich-38273354-comment-debloquer-une-liseuse-kobo-aura",
+      "snippet": "Feb 27, 2026 · Bonjour ! (Avant de commencer : Rechargez votre liseuse pendant au moins une heure. Vérifiez qu'une connexion Wi …"
+    },
+    {
+      "title": "Nouvelle imprimante - Imprimante",
+      "url": "https://forums.commentcamarche.net/forum/affich-38271567-nouvelle-imprimante",
+      "snippet": "Feb 20, 2026 · Bonjour,j'ai une nouvelle imprimante mes documents qui sont enregistrés sur mon smartphone vont til être perdu ?ses …"
+    },
+    {
+      "title": "python - Error \" (unicode error) 'unicodeescape' codec can't decode ...",
+      "url": "https://stackoverflow.com/questions/37400974/error-unicode-error-unicodeescape-codec-cant-decode-bytes-in-position-2-3",
+      "snippet": "May 24, 2016 · I get the following error: SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: …"
+    },
+    {
+      "title": "php - Xampp localhost/dashboard - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/48125093/xampp-localhost-dashboard",
+      "snippet": "Jan 6, 2018 · I downloaded the recent version of xampp and I installed it and everything but when i type \"localhost\" in the browser it …"
+    },
+    {
+      "title": "Como criar uma pasta dentro do meu repositório no GitHub?",
+      "url": "https://pt.stackoverflow.com/questions/437043/como-criar-uma-pasta-dentro-do-meu-reposit%c3%b3rio-no-github",
+      "snippet": "Feb 23, 2020 · Como eu crio uma pasta no meu repositório para poder organizar os meus arquivos e não deixar tudo na mesma …"
+    }
+  ]
+}

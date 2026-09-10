@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Seojunlim/matching11",
+  "slug": "seojunlim-matching11",
+  "author": "Seojunlim",
+  "url": "https://huggingface.co/Seojunlim/matching11",
+  "created_at": "2026-09-10T14:12:32.000Z",
+  "updated_at": "2026-09-10T14:12:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.nl/",
+      "snippet": "Deze kosteloze service van Google kan woorden, zinnen en webpagina's onmiddellijk vertalen tussen het Nederlands en meer dan …"
+    },
+    {
+      "title": "Google Afbeeldingen",
+      "url": "https://www.google.nl/imghp?hl=nl",
+      "snippet": "Google Afbeeldingen. De grootste zoekmachine voor afbeeldingen op internet."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.nl/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.nl/",
+      "snippet": "Ontmoet drie mensen die Google Earth gebruiken om rivieren te beschermen, leerlingen te inspireren en hun geboorteland virtueel te …"
+    },
+    {
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.nl/",
+      "snippet": "Doorzoek de meest uitgebreide index ter wereld van boeken met volledige tekst. Je bibliotheek"
+    }
+  ]
+}

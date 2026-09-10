@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "owenbkg/ppo-LunarLander-v2",
+  "slug": "owenbkg-ppo-lunarlander-v2",
+  "author": "owenbkg",
+  "url": "https://huggingface.co/owenbkg/ppo-LunarLander-v2",
+  "created_at": "2026-09-10T13:16:24.000Z",
+  "updated_at": "2026-09-10T13:19:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284398,
+  "storage_human": "284398 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flüge buchen ️ Günstige Flüge mit CHECK24 | CHECK24 Flüge",
+      "url": "https://flug.check24.de/",
+      "snippet": "Mit CHECK24 Flüge vergleichen & günstige Flüge finden Reiseberatung 24/7 PayPal, Klarna & Co. Jetzt Flug buchen!"
+    },
+    {
+      "title": "Billigflüge vergleichen & buchen ️ CHECK24 Flug-Deals",
+      "url": "https://flug.check24.de/billigfluege",
+      "snippet": "Billigflüge gesucht? Mit CHECK24 die billigsten Flüge finden buchen ohne Kreditkarte möglich ᐅ billiger fliegen geht nicht!"
+    },
+    {
+      "title": "Last Minute Flüge buchen ᐅ Jetzt Lastminute fliegen ᐅ CHECK24",
+      "url": "https://flug.check24.de/lastminute",
+      "snippet": "Last Minute Flüge gesucht? Hier Last Minute Angebote buchen mit CHECK24"
+    },
+    {
+      "title": "Weltweit günstige Flugziele ️ Vergleichen & Sparen | CHECK24",
+      "url": "https://flug.check24.de/fluege",
+      "snippet": "Günstige Flüge weltweit vergleichen und buchen CHECK24 Flugvergleich ist das Flugportal von CHECK24. Sie vergleichen hier …"
+    },
+    {
+      "title": "Flüge Mallorca buchen ️ Top Flugvergleich",
+      "url": "https://flug.check24.de/fluege/mallorca",
+      "snippet": "Jetzt günstige Mallorca-Flüge finden & vergleichen Billige Flüge von Deutschland nach Mallorca PayPal, Klarna & Co. Jetzt Flug …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning",
+  "slug": "kosakwen-qwen_3-5_0-8_astra6_claudesone5_reaspondning",
+  "author": "Kosakwen",
+  "url": "https://huggingface.co/Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning",
+  "created_at": "2026-09-10T14:35:41.000Z",
+  "updated_at": "2026-09-10T14:44:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 2204202624,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotel Bärenstüberl",
+      "url": "https://www.baerenstueberl.de/",
+      "snippet": "Alpine Erlebnisse am Fuß des berühmten Watzmann Zu jeder Jahreszeit fasziniert diese echte Landschaft auf ihre ganz eigene …"
+    },
+    {
+      "title": "Hotel - Hotel Bärenstüberl",
+      "url": "https://www.baerenstueberl.de/hotel",
+      "snippet": "Hotel Wir heißen Sie herzlich im Familienhotel „Bärenstüberl“ Willkommen! Unser Haus verbindet eine Mischung aus alt und neu …"
+    },
+    {
+      "title": "Apartment - Hotel Bärenstüberl",
+      "url": "https://www.baerenstueberl.de/zimmer/apartment-2",
+      "snippet": "Die beiden je circa 72 qm großen Hotelapartments werden täglich gereinigt und verfügen über je ein Schlafzimmer mit Doppelbett …"
+    },
+    {
+      "title": "Kulinarik & Genuss - Hotel Bärenstüberl",
+      "url": "https://www.baerenstueberl.de/restaurant/kulinarik-genuss",
+      "snippet": "Lassen Sie sich verwöhnen von früh bis spät Üppiges Frühstück oder gutes Abendessen, leckerer Nachmittags-Kaffee – im Hotel …"
+    },
+    {
+      "title": "Abendessen - Hotel Bärenstüberl",
+      "url": "https://www.baerenstueberl.de/restaurant/abendessen",
+      "snippet": "Lassen Sie Ihren Tag im Hotel Bärenstüberl bei einem richtig guten Abendessen ausklingen. Kinder sollen sich gesund ernähren und …"
+    }
+  ]
+}

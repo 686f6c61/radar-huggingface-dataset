@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed455",
+  "slug": "fpadovani-ppt-wc-zipf-newlex-jpn-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed455",
+  "created_at": "2026-09-10T18:40:49.000Z",
+  "updated_at": "2026-09-10T18:44:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384376953,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Robert Pirraglia (@bpirragz___) • Instagram photos and videos",
+      "url": "https://www.instagram.com/bpirragz___/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    },
+    {
+      "title": "Election results and ideology ratings for Robert Pirraglia ...",
+      "url": "https://www.rightdatausa.com/bio?id=pirraro01",
+      "snippet": "Election Results for Robert Pirraglia Click on the Year to see the results of that election."
+    },
+    {
+      "title": "IN RE: COMMISSION ON JUDICIAL TENURE AND DISCIPLINE. (2007)",
+      "url": "https://caselaw.findlaw.com/court/ri-supreme-court/1073882.html",
+      "snippet": "Feb 28, 2007 · Judge Pirraglia argues that a finding of judicial misconduct should not rest on a single instance of legal error. In …"
+    },
+    {
+      "title": "Robert Pirraglia - Age, Phone Number, Email, Contact, Address",
+      "url": "https://radaris.com/p/Robert/Pirraglia/",
+      "snippet": "Jun 28, 2026 · Radaris finds 5 Robert Pirraglias in the US (Bronx, Cranston, Bridgeport, etc). Verify identities using ages, relatives, …"
+    },
+    {
+      "title": "Robert Pirraglia — Home Address, Phone Number, Email (5",
+      "url": "https://checkpeople.com/name/Robert-Pirraglia",
+      "snippet": "We found 5 people named Robert Pirraglia in Rhode Island, New York, Texas and 4 other states. View current home address, phone …"
+    }
+  ]
+}

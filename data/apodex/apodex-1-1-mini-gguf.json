@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "apodex/Apodex-1.1-mini-GGUF",
+  "slug": "apodex-apodex-1-1-mini-gguf",
+  "author": "apodex",
+  "url": "https://huggingface.co/apodex/Apodex-1.1-mini-GGUF",
+  "created_at": "2026-09-10T03:02:55.000Z",
+  "updated_at": "2026-09-10T05:18:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "apodex",
+    "arxiv:2608.23283",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 22612745664,
+  "storage_human": "22.6 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wycieczka pakietowa do Busan | Wycieczka pakietowa do Pusan",
+      "url": "https://pl.koreaetour.com/produkt/wycieczka-objazdowa-do-busanu/",
+      "snippet": "6 days ago · Busan pakietowa wycieczka / od 9:00 do 18:00. Ciesz się drugim co do wielkości miastem Korei, Busan. Tam odwiedź …"
+    },
+    {
+      "title": "Busan wycieczki 2026 - Urlop.pl",
+      "url": "https://www.urlop.pl/wycieczki/korea-poludniowa/busan/",
+      "snippet": "15 hours ago · Wycieczki do Busanu w 2026 ☀️ Ponad 60 000 ofert! Najlepsze ceny, aktualne opinie Zarezerwuj idealne wakacje z …"
+    },
+    {
+      "title": "1-dniowa prywatna wycieczka do Busan | prywatna wycieczka do …",
+      "url": "https://pl.koreaetour.com/produkt/1-dniowa-wycieczka-do-Busan-opcja-2-prywatna-wycieczka/",
+      "snippet": "Sep 2, 2026 · Jednodniowa wycieczka, podczas której możesz zwiedzić największy targ rybny i słynny tradycyjny targ w Korei. …"
+    },
+    {
+      "title": "Busan - Wycieczki objazdowe 2026 - zwiedzanie i wypoczynek",
+      "url": "https://www.urlop.pl/wycieczki-objazdowe/korea-poludniowa/busan/",
+      "snippet": "15 hours ago · Wycieczki objazdowe 2026 w Busanie. Gwarancja najlepszej ceny Dołącz do tysięcy zadowolonych klientów Urlop.pl!"
+    },
+    {
+      "title": "Korea wycieczka objazdowa - poznaj miasto Busan | Blog MisjaGO",
+      "url": "https://misjago.pl/korea-wycieczka-objazdowa-odwiedz-busan/",
+      "snippet": "Jakie atrakcje Busan warto uwzględnić w planie wycieczki po Korei? Z myślą o osobach przygotowujących się do wyprawy na …"
+    }
+  ]
+}

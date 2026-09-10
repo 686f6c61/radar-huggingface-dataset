@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Fileportz/DeepSeek-V4.1-Flash",
+  "slug": "fileportz-deepseek-v4-1-flash",
+  "author": "Fileportz",
+  "url": "https://huggingface.co/Fileportz/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-10T13:32:00.000Z",
+  "updated_at": "2026-09-10T13:32:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 484619644114,
+  "parameters_human": "484.62B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SIHL -Digital printable media - Simply the better solution",
+      "url": "https://sihl.com/en/",
+      "snippet": "Printable media for the digital printing market Convincing applications / innovative products Simple, effective, beneficial."
+    },
+    {
+      "title": "Company - SIHL",
+      "url": "https://sihl.com/en/company/",
+      "snippet": "The Sihl Group includes Sihl GmbH with production in Dueren, Sihl II Holding AG with headquarters in Switzerland and Sihl Inc. with …"
+    },
+    {
+      "title": "FACES | Sihl Blog - Eine weitere WordPress-Website",
+      "url": "https://blog.sihl.com/?lang=en",
+      "snippet": "We are looking for YOU! Sihl grows in America: on its way to becoming the leading supplier of high-end print media Interview with …"
+    },
+    {
+      "title": "Flexibility, Sustainability, Printability - FACES | Sihl Blog",
+      "url": "https://blog.sihl.com/flexibility-sustainability-printability/?lang=en",
+      "snippet": "Apr 16, 2020 · Sihl was founded in 1935, taking its name from a river in Zürich, and the Sihl corporation had the perfect site for a …"
+    },
+    {
+      "title": "SIHL - Simply the better solution",
+      "url": "https://sihl.com/",
+      "snippet": "Bedruckbare Medien für den Digitaldruckmarkt Überzeugende Anwendungen / innovative Produkte Simple, effective, beneficial."
+    }
+  ]
+}

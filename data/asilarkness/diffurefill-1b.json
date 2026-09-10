@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Asilarkness/DiffuRefill-1B",
+  "slug": "asilarkness-diffurefill-1b",
+  "author": "Asilarkness",
+  "url": "https://huggingface.co/Asilarkness/DiffuRefill-1B",
+  "created_at": "2026-09-10T11:40:50.000Z",
+  "updated_at": "2026-09-10T11:41:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffurefill",
+    "diffusion-language-model",
+    "masked-diffusion",
+    "parallel-decoding",
+    "text-generation",
+    "en",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inscription / Réinscription - Université de Toulon - univ-tln.fr",
+      "url": "https://www.univ-tln.fr/inscription-reinscription/",
+      "snippet": "Jun 26, 2026 · Une fois votre candidature acceptée et votre admission validée, vous pouvez procéder à votre inscription ou votre …"
+    },
+    {
+      "title": "Candidater - S'inscrire - Université de Toulon",
+      "url": "https://www.univ-tln.fr/formation/candidater-sinscrire/",
+      "snippet": "Je candidate dans une ou plusieurs formations via une plateforme dédiée selon mon profil et niveau d'études (parcoursup, …"
+    },
+    {
+      "title": "Inscription Administrative - Identification",
+      "url": "https://primoinscription.univ-tln.fr/PrimoUTLN/ident1.jsf",
+      "snippet": "Inscription en ligne du 7 au 14 juillet 2026 et du 24 août au 30 septembre 2026. Avant de vous inscrire, vous devez vous acquitter de …"
+    },
+    {
+      "title": "Inscription pédagogique - Identification",
+      "url": "https://inscriptionpedagogique.univ-tln.fr/ip-web/jsp/perso.jsf",
+      "snippet": "Votre numéro d'étudiant est indiqué sur votre carte d'étudiant."
+    },
+    {
+      "title": "Environnement Numérique de Travail – Université de Toulon",
+      "url": "https://ent.univ-tln.fr/",
+      "snippet": "FOIRE AUX QUESTIONS Vous n'êtes pas encore étudiant ou personnel de l'Université de Toulon ? Voici quelques questions / …"
+    }
+  ]
+}

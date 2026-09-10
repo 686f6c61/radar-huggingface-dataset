@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "adrgrondin/MiniCPM5-2B-mlx-4Bit",
+  "slug": "adrgrondin-minicpm5-2b-mlx-4bit",
+  "author": "adrgrondin",
+  "url": "https://huggingface.co/adrgrondin/MiniCPM5-2B-mlx-4Bit",
+  "created_at": "2026-09-10T12:20:13.000Z",
+  "updated_at": "2026-09-10T12:20:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1416035480,
+  "storage_human": "1.4 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "Get a Premium Lite membership on YouTube",
+      "url": "https://support.google.com/youtube/answer/15968883?hl=en",
+      "snippet": "Get a Premium Lite membership on YouTube Premium Lite is a new, lower-priced YouTube Premium membership that offers fewer …"
+    },
+    {
+      "title": "Get help signing in to YouTube - YouTube Help",
+      "url": "https://support.google.com/youtube/troubleshooter/3219097?hl=en",
+      "snippet": "How did you last sign in to your YouTube channel? I signed in with an email address I signed in with a YouTube username"
+    },
+    {
+      "title": "Verify your YouTube account - Google Help",
+      "url": "https://support.google.com/youtube/answer/171664?hl=en",
+      "snippet": "Verify your YouTube account To verify your channel, you’ll be asked to enter a phone number. We’ll send a verification code by text …"
+    }
+  ]
+}

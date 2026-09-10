@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "neural-blade/gpt2-fp32-gguf",
+  "slug": "neural-blade-gpt2-fp32-gguf",
+  "author": "neural-blade",
+  "url": "https://huggingface.co/neural-blade/gpt2-fp32-gguf",
+  "created_at": "2026-09-10T14:32:28.000Z",
+  "updated_at": "2026-09-10T14:47:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 774030080,
+  "parameters_human": "774.0M",
+  "storage_bytes": 11250766336,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reifen & Autoservice in Neustadt am Rübenberge | Ehrhardt",
+      "url": "https://www.reifen-ehrhardt.de/filialen/neustadt-am-ruebenberge-0454/",
+      "snippet": "Sie benötigen neue Reifen in Neustadt am Rübenberge? Als Ihr zuverlässiger Reifenhändler in der Nähe von Neustadt am …"
+    },
+    {
+      "title": "Ihr Experte für alles rund um Reifen und Autoservice | Ehrhardt",
+      "url": "https://www.reifen-ehrhardt.de/",
+      "snippet": "3 days ago · Bei Ehrhardt Reifen + Autoservice GmbH erleben Sie nicht nur eine professionelle und individuelle Beratung bei der …"
+    },
+    {
+      "title": "Ehrhardt Reifen + Autoservice Rudolf-Diesel-Ring in Neustadt am ...",
+      "url": "https://onlinestreet.de/poi/dytHRkVkZ3lQRVZEUWFWaG5iOWdYZz09",
+      "snippet": "Reifen, Laden (Geschäft) in 31535 Neustadt am Rübenberge: Ehrhardt Reifen + Autoservice (Rudolf-Diesel-Ring 15) im Stadtteil …"
+    },
+    {
+      "title": "Ehrhardt Reifen + Autoservice, Neustadt am Rübenberge",
+      "url": "https://web2.cylex.de/firma-home/ehrhardt-reifen---autoservice-7949701.html",
+      "snippet": "Apr 29, 2026 · Als herstellerunabhängiger Reifenhändler in Neustadt am Rübenberge bieten wir Ihnen immer eine fachgerechte und …"
+    },
+    {
+      "title": "Ehrhardt Reifen und Autoservice, Rudolf-Diesel-Ring 15, Neustadt am ...",
+      "url": "https://www.findglocal.com/DE/Neustadt-am-R%C3%BCbenberge/113586077184609/Ehrhardt-Reifen-und-Autoservice",
+      "snippet": "Die Ummontage fremdgekaufter Neuware sowie Rabatt auf Reifen, Sensoren sowie Fremd- und Zusatzleistungen sind …"
+    }
+  ]
+}

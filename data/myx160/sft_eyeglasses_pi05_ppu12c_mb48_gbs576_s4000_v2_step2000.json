@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "myx160/sft_eyeglasses_pi05_ppu12c_mb48_gbs576_s4000_v2_step2000",
+  "slug": "myx160-sft_eyeglasses_pi05_ppu12c_mb48_gbs576_s4000_v2_step2000",
+  "author": "myx160",
+  "url": "https://huggingface.co/myx160/sft_eyeglasses_pi05_ppu12c_mb48_gbs576_s4000_v2_step2000",
+  "created_at": "2026-09-10T14:30:34.000Z",
+  "updated_at": "2026-09-10T15:04:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vla",
+    "piper",
+    "lerobot",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34161745359,
+  "storage_human": "34.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GALERIA | Mode, Uhren & Schmuck, Beauty & mehr entdecken",
+      "url": "https://www.galeria.de/",
+      "snippet": "Entdecke bei GALERIA tolle Produkte aus Mode & Accessoires Beauty Wohnen Spielzeug Sport Technik - Jetzt auf GALERIA.de …"
+    },
+    {
+      "title": "Damenmode erstklassig in Markenqualität | GALERIA",
+      "url": "https://www.galeria.de/damen",
+      "snippet": "Shop the Look: Definieren Sie Ihren persönlichen Stil immer wieder aufs Neue. Unser Shop the Look inspiriert Sie dazu, mal wieder …"
+    },
+    {
+      "title": "Herrenmode online kaufen | GALERIA",
+      "url": "https://www.galeria.de/herren",
+      "snippet": "Herrenmode angesagter Marken findest du bei GALERIA Bekleidung, Schuhe, Unterwäsche & Accessoires für Herren bequem online …"
+    },
+    {
+      "title": "Damenmode im SALE | GALERIA",
+      "url": "https://www.galeria.de/sale/damen",
+      "snippet": "SALE Damenmode: Große Auswahl an Damenmode zu reduzierten Preisen für stilbewusste Frauen bei GALERIA entdecken!"
+    },
+    {
+      "title": "Damen Hosen: Aktuelle Styles entdecken | GALERIA",
+      "url": "https://www.galeria.de/damen/bekleidung/hosen",
+      "snippet": "Hosen für Damen – Immer passend gekleidet Wir lieben Hosen für Damen – und deshalb kannst du auf GALERIA.de online die …"
+    }
+  ]
+}

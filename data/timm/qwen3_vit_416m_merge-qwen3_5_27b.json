@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m_merge.qwen3_5_27b",
+  "slug": "timm-qwen3_vit_416m_merge-qwen3_5_27b",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_5_27b",
+  "created_at": "2026-09-10T17:29:32.000Z",
+  "updated_at": "2026-09-10T17:29:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 459845360,
+  "parameters_human": "459.8M",
+  "storage_bytes": 1839415968,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Labor Day - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Labor_Day",
+      "snippet": "Labor Day is a federal holiday in the United States celebrated on the first Monday of September to honor and recognize the American …"
+    },
+    {
+      "title": "Labor Day | 2026, Origin, Meaning, History, United States, & Facts ...",
+      "url": "https://www.britannica.com/topic/Labor-Day",
+      "snippet": "2 days ago · Labor Day, in the United States, holiday (first Monday in September) honoring workers and recognizing their …"
+    },
+    {
+      "title": "History of Labor Day - U.S. Department of Labor",
+      "url": "https://www.dol.gov/general/laborday/history",
+      "snippet": "History of Labor Day Observed the first Monday in September, Labor Day is an annual celebration of the social and economic …"
+    },
+    {
+      "title": "What is Labor Day? What to know about the holiday, its history",
+      "url": "https://www.usatoday.com/story/news/nation/2025/09/01/labor-day-2025-holiday-history/85885724007/",
+      "snippet": "Sep 1, 2025 · Observed each year on the first Monday of September, Labor Day is a celebration of the hard-won achievements of …"
+    },
+    {
+      "title": "Labor Day, 2026 – The White House",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/09/labor-day-2026/",
+      "snippet": "3 days ago · This Labor Day, we recognize the hard work, dedication, and unwavering commitment of the American worker. Their …"
+    }
+  ]
+}

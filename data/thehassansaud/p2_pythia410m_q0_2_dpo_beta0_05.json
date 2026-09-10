@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_05",
+  "slug": "thehassansaud-p2_pythia410m_q0_2_dpo_beta0_05",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_05",
+  "created_at": "2026-09-10T15:39:08.000Z",
+  "updated_at": "2026-09-10T15:39:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digitální fotoaparáty, objektivy, videokamery a tiskárny - Canon ...",
+      "url": "https://www.canon.cz/",
+      "snippet": "Pomocí síťových skenerů Canon můžete účinně digitalizovat dokumenty a zjednodušit pracovní postupy jejich zpracování. …"
+    },
+    {
+      "title": "Consumer Product Support - Canon Czech Republic",
+      "url": "https://www.canon.cz/support/",
+      "snippet": "Podpora produktů Canon Zde najdete obsah ke stažení, který vám pomůže využít váš produkt Canon naplno. Pokud hledáte …"
+    },
+    {
+      "title": "Canon ID",
+      "url": "https://account.canon.cz/s/",
+      "snippet": "Canon ID is your account to connect your Canon products, services and apps."
+    },
+    {
+      "title": "PIXMA Printer Support - Download Drivers, Software, Manuals - Canon ...",
+      "url": "https://www.canon.cz/support/consumer/products/printers/pixma/",
+      "snippet": "Find the right driver for your Canon Pixma Printer. Download software for your Pixma printer and much more."
+    },
+    {
+      "title": "Tiskárny Canon - Canon Czech Republic",
+      "url": "https://www.canon.cz/printers/",
+      "snippet": "Objevte naši řadu tiskáren pro domácnosti, kanceláře a fotografy. Vyberte si mezi modely s bezdrátovým připojením, multifunkčními …"
+    }
+  ]
+}

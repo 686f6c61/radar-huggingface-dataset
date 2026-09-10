@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AEmotionStudio/auk-models",
+  "slug": "aemotionstudio-auk-models",
+  "author": "AEmotionStudio",
+  "url": "https://huggingface.co/AEmotionStudio/auk-models",
+  "created_at": "2026-09-10T14:42:10.000Z",
+  "updated_at": "2026-09-10T14:53:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "maestro",
+  "languages": [],
+  "tags": [
+    "maestro",
+    "text-to-speech",
+    "speech-editing",
+    "speech-enhancement",
+    "audio-to-audio",
+    "arxiv:2609.08936",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6759531696,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Töpfe, Pfannen & Küchenzubehör online kaufen | Henssler",
+      "url": "https://www.henssler.shop/",
+      "snippet": "Hensslers Onlineshop | Feinste Zutaten, Gewürze, Saucen und Koch- & Küchenzubehör online kaufen. Alles für Deine Hobbyküche."
+    },
+    {
+      "title": "HENSSLERS Gewürze » Für mehr Pep in der Küche",
+      "url": "https://www.henssler.shop/collections/gewuerze",
+      "snippet": "HENSSLERS hochwertige Gewürze und Gewürzmischungen für jedes Gericht 🍋 Vielseitig einsetzbar Höchste Standards in der …"
+    },
+    {
+      "title": "HENSSLERS Pfannen » Langlebig & hochwertig",
+      "url": "https://www.henssler.shop/collections/pfannen",
+      "snippet": "HENSSLERS Pfannen - mit oder ohne Deckel 🔥 Hochwertige Antihaft-Pfannen für fettarmes Kochen Für jede Herdart geeignet – …"
+    },
+    {
+      "title": "Alle HENSSLER-Produkte » Entdecke das gesamte Sortiment",
+      "url": "https://www.henssler.shop/collections/alle-produkte",
+      "snippet": "Hochwertige Produkte für deine Küche 🍳 Alle Produkte und Kategorien auf einen Blick – jetzt bestellen!"
+    },
+    {
+      "title": "HENSSLERS Kochmesser » Scharf & langlebig",
+      "url": "https://www.henssler.shop/collections/messer",
+      "snippet": "HENSSLERS hochwertige Kochmesser mit Klingen aus Edelstahl ⚡ Robuste Qualität für jahrelange Nutzung Scharf & vielseitig – …"
+    }
+  ]
+}

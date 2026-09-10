@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0_4_sc_bounded",
+  "slug": "thehassansaud-p2_pythia410m_q0_4_sc_bounded",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_4_sc_bounded",
+  "created_at": "2026-09-10T15:42:18.000Z",
+  "updated_at": "2026-09-10T15:42:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doobie Brothers announce new tour and Wilmington stop",
+      "url": "https://portcitydaily.com/latest-news/2026/03/23/doobie-brothers-announce-new-tour-wilmington-only-nc-stop/",
+      "snippet": "Mar 23, 2026 · She specializes in arts coverage — music, film, literature, theatre — the dining scene, and can often be tapped on …"
+    },
+    {
+      "title": "The Doobie Brothers - 2026 Tour Dates & Concert Schedule - Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ9171C7f/the-doobie-brothers-events",
+      "snippet": "Find concert tickets for The Doobie Brothers upcoming 2026 shows. Explore The Doobie Brothers tour schedules, latest setlist, …"
+    },
+    {
+      "title": "The Doobie Brothers Tickets | 6th October | Live Oak Bank Pavilion",
+      "url": "https://www.wilmingtonpavilion.com/events/the-doobie-brothers-06-october-2026/",
+      "snippet": "Don't miss this opportunity to revel in spectacular live music from your favorite artist! The Doobie Brothers is taking over North …"
+    },
+    {
+      "title": "ROCK ICONS THE DOOBIE BROTHERS ANNOUNCE 2026 NORTH …",
+      "url": "https://thedoobiebrothers.com/blogs/news/rock-icons-the-doobie-brothers-announce-2026-north-american-walk-this-road-tour-dates",
+      "snippet": "(March 23, 2026) Today, Grammy Award-winning, Platinum-selling, Rock & Roll Hall of Fame and Songwriters Hall of Fame legends …"
+    },
+    {
+      "title": "Doobie Brothers · Live Oak Bank Pavilion Wilmington, NC · Tue Oct 6 ...",
+      "url": "https://www.wilmingtonnctheater.com/shows/live-oak-bank-pavilion/doobie-brothers",
+      "snippet": "For over five decades, blue-eyed soul and soft rockers The Doobie Brothers have been part of the fabric of American music. Blending …"
+    }
+  ]
+}

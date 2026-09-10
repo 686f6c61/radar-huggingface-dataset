@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "palette-lab/songgot-m",
+  "slug": "palette-lab-songgot-m",
+  "author": "palette-lab",
+  "url": "https://huggingface.co/palette-lab/songgot-m",
+  "created_at": "2026-09-10T14:34:27.000Z",
+  "updated_at": "2026-09-10T14:36:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tool-calling",
+    "function-calling",
+    "korean",
+    "on-device",
+    "tiny",
+    "ko",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:wikimedia/wikipedia",
+    "dataset:glaiveai/glaive-function-calling-v2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125264640,
+  "parameters_human": "125.3M",
+  "storage_bytes": 717859043,
+  "storage_human": "718 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Hombrechtikon",
+      "url": "https://www.hombrechtikon.ch/",
+      "snippet": "1 day ago · Hombrechtikon liegt im südöstlichen Teil des Kantons Zürich an der gemeinsamen Grenze mit dem Kanton St. Gallen. …"
+    },
+    {
+      "title": "Hombrechtikon – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Hombrechtikon",
+      "snippet": "Suche Suchen Inhaltsverzeichnis umschalten Hombrechtikon 28 SprachenAbschnitt hinzufügen"
+    },
+    {
+      "title": "Hombrechtikon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hombrechtikon",
+      "snippet": "The entire Swiss population is generally well educated. In Hombrechtikon about 77.9% of the population (between age 25-64) have …"
+    },
+    {
+      "title": "Gemeinde Hombrechtikon (ZH) – Nützliche Informationen für Sie",
+      "url": "https://gemeinde-schweiz.ch/kanton-zuerich/hombrechtikon/",
+      "snippet": "Alle wichtigen Informationen zur Gemeinde Hombrechtikon ZH – von Verwaltung und Infrastruktur bis zu Freizeit, Veranstaltungen …"
+    },
+    {
+      "title": "Leben - Hombrechtikon",
+      "url": "https://www.hombrechtikon.ch/leben.html/285",
+      "snippet": "Gemeinde Hombrechtikon Feldbachstrasse 12 8634 Hombrechtikon Google Maps 055 254 92 92 gemeinde@hombrechtikon.ch …"
+    }
+  ]
+}

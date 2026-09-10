@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hugging-mac/pp-doclayout-v3-coreml",
+  "slug": "hugging-mac-pp-doclayout-v3-coreml",
+  "author": "hugging-mac",
+  "url": "https://huggingface.co/hugging-mac/pp-doclayout-v3-coreml",
+  "created_at": "2026-09-10T15:05:20.000Z",
+  "updated_at": "2026-09-10T15:06:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coremltools",
+  "languages": [],
+  "tags": [
+    "coremltools",
+    "coreml",
+    "document-layout-analysis",
+    "vision",
+    "macos",
+    "base_model:PaddlePaddle/PP-DocLayoutV3_safetensors",
+    "base_model:quantized:PaddlePaddle/PP-DocLayoutV3_safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91530233,
+  "storage_human": "92 MB",
+  "base_model": "PaddlePaddle/PP-DocLayoutV3_safetensors",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stradivarius France - Nouvelle Collection 2026 | France",
+      "url": "https://www.stradivarius.com/fr/",
+      "snippet": "Boutique en ligne de vêtements et chaussures pour femmes Découvrez la dernière mode chez Stradivarius. Trouvez vos robes …"
+    },
+    {
+      "title": "New Collection Autumn 2026 | Worldwide - Stradivarius",
+      "url": "https://www.stradivarius.com/ww/",
+      "snippet": "Online women's clothing store Discover the latest fashion on Stradivarius. Find your favorite, elegant dresses pants, comfortable …"
+    },
+    {
+      "title": "Stradivarius en ligne sur Zalando",
+      "url": "https://www.zalando.fr/stradivarius/",
+      "snippet": "Sa sélection Stradivarius couvre tous les besoins : vêtements, chaussures, accessoires pour construire des looks complets. Cette …"
+    },
+    {
+      "title": "Nouvelle collection Stradivarius | Stradivarius France",
+      "url": "https://www.stradivarius.com/fr/femme/nouveautes-n1906",
+      "snippet": "Boutique officielle Stradivarius® | Découvrez la collection de {1} pour tous les styles et achetez vos articles préférés | Livraison …"
+    },
+    {
+      "title": "Stradivarius France - New Collection Autumn 2026 | France",
+      "url": "https://www.stradivarius.com/fr/en/",
+      "snippet": "Online women's clothing store Discover the latest fashion on Stradivarius. Find your favorite, elegant dresses pants, comfortable …"
+    }
+  ]
+}

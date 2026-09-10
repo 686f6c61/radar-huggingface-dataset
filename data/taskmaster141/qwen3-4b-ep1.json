@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "taskmaster141/Qwen3-4b-ep1",
+  "slug": "taskmaster141-qwen3-4b-ep1",
+  "author": "taskmaster141",
+  "url": "https://huggingface.co/taskmaster141/Qwen3-4b-ep1",
+  "created_at": "2026-09-10T13:41:48.000Z",
+  "updated_at": "2026-09-10T13:41:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "trainer_output/checkpoint-150",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Флагман.Бг - новини за политика ...",
+      "url": "https://www.flagman.bg/",
+      "snippet": "Само във Флагман.бг: Известен бургаски бизнесмен е арестуван за трафик на 1,4 тона кокаин Иван Ламбов е бивш съпруг на …"
+    },
+    {
+      "title": "Последно във Флагман.бг",
+      "url": "https://www.flagman.bg/%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%BE-%D0%B2-%D0%B1%D0%B5%D1%81%D0%BE%D0%B2%D0%B5",
+      "snippet": "Последно във Флагман.бг Страници: 1 2 3 4 5 Тракерът подал SOS, но го открили мъртъв: Полицията с подробности за …"
+    },
+    {
+      "title": "Новини от последния час - Флагман.Бг",
+      "url": "https://www.flagman.bg/%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%BE-%D0%B2-%D0%B1%D0%B5%D1%81%D0%BE%D0%B2%D0%B5/%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0-1",
+      "snippet": "Екипът на Флагман.Бг публикува за своите читатели новини от последния час. Прочети, коментирай, сподели с приятели. …"
+    },
+    {
+      "title": "дневен хороскоп - Флагман.Бг",
+      "url": "https://www.flagman.bg/%D1%82%D0%B0%D0%B3/%D0%B4%D0%BD%D0%B5%D0%B2%D0%B5%D0%BD%20%D1%85%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF",
+      "snippet": "дневен хороскоп Флагман.Бг - Онлайн медия с новини за политика, общество и икономика. Дневен хороскоп и прогноза за …"
+    },
+    {
+      "title": "Затварят BILLA на \"Трапезица\" в Бургас",
+      "url": "https://www.flagman.bg/article/372763",
+      "snippet": "Jan 26, 2026 · Магазинът затваря от 1 февруари. Според предварителна информация, с която Флагман.бг разполага, …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jonathanedwards/tiny-transformer-multitask-2024",
+  "slug": "jonathanedwards-tiny-transformer-multitask-2024",
+  "author": "jonathanedwards",
+  "url": "https://huggingface.co/jonathanedwards/tiny-transformer-multitask-2024",
+  "created_at": "2026-09-10T16:18:41.000Z",
+  "updated_at": "2026-09-10T16:18:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blue Wildebeest | TheHunter: Call of the Wild Wiki | Fandom",
+      "url": "https://thehuntercotw.fandom.com/wiki/Blue_Wildebeest",
+      "snippet": "\"The Blue Wildebeest, also known as the Gnu, is an African bovid with broad shoulders, cow-like horns, and a broad muzzle. A …"
+    },
+    {
+      "title": "chase the Wildebeest mission - Vurhonga Savanna | theHunter: Call of ...",
+      "url": "https://www.youtube.com/watch?v=F2jhw311ozA",
+      "snippet": "Mar 3, 2025 · chase the wild beast - Vurhonga Savanna | theHunter: Call of the Wild#thehuntercallofthewild #gaming #cotw"
+    },
+    {
+      "title": "Vurhonga Savanna | TheHunter: Call of the Wild Wiki | Fandom",
+      "url": "https://thehuntercotw.fandom.com/wiki/Vurhonga_Savanna",
+      "snippet": "As Vurhonga Savanna continues to thrive, Grandfather Njabulo has decided that it is time to reintroduce the largest native carnivore …"
+    },
+    {
+      "title": "HUGE DIAMOND Wildebeest with the 6.5! | theHunter Call of the Wild",
+      "url": "https://www.youtube.com/watch?v=9FI8sNISxKo",
+      "snippet": "May 15, 2026 · And finally, a monster diamond wildebeest appears! Today we're headed to Vurhonga Savanna for a bit of a bonus …"
+    },
+    {
+      "title": "TheHunter: Call of the Wild Wiki | Fandom",
+      "url": "https://thehuntercotw.fandom.com/wiki/TheHunter:_Call_of_the_Wild_Wiki",
+      "snippet": "The core gameplay of TheHunter: Call of the Wild centers around the activities of tracking, stalking, and harvesting animals utilizing …"
+    }
+  ]
+}

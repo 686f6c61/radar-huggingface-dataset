@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Tdamre/MiniCPM5-2B-LiteRT-LongContext",
+  "slug": "tdamre-minicpm5-2b-litert-longcontext",
+  "author": "Tdamre",
+  "url": "https://huggingface.co/Tdamre/MiniCPM5-2B-LiteRT-LongContext",
+  "created_at": "2026-09-10T12:15:38.000Z",
+  "updated_at": "2026-09-10T12:15:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "litert-lm",
+    "litertlm",
+    "minicpm",
+    "minicpm5",
+    "on-device",
+    "long-context",
+    "int4",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4684930080,
+  "storage_human": "4.7 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/mail/login.html?authRedirect=true&bO=1",
+      "snippet": "Sign in to your Outlook account to manage emails and access Office 365 services."
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=10cdd6c07a0a622d184bc1107b7e635c",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Access your email, calendar, and contacts with Outlook."
+    },
+    {
+      "title": "Microsoft Outlook Personal Email and Calendar | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?msockid=10cdd6c07a0a622d184bc1107b7e635c",
+      "snippet": "Download free Microsoft Outlook email and calendar, plus Office Online apps like Word, Excel, and PowerPoint. Sign in to access …"
+    },
+    {
+      "title": "Outlook – free personal email and calendar from Microsoft",
+      "url": "https://outlook.live.com/mail/oauthRedirect.html",
+      "snippet": "Access free Outlook email and calendar, plus Office Online apps like Word, Excel, and PowerPoint."
+    }
+  ]
+}

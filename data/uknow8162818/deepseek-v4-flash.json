@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "uknow8162818/DeepSeek-V4-Flash",
+  "slug": "uknow8162818-deepseek-v4-flash",
+  "author": "uknow8162818",
+  "url": "https://huggingface.co/uknow8162818/DeepSeek-V4-Flash",
+  "created_at": "2026-09-10T12:10:10.000Z",
+  "updated_at": "2026-09-10T12:10:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 290944616402,
+  "parameters_human": "290.94B",
+  "storage_bytes": 159618149394,
+  "storage_human": "159.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "如何在 VSCode 中使用 Claude Code？ - 知乎",
+      "url": "https://www.zhihu.com/question/2056838425794311212",
+      "snippet": "Claude是一款备受海外创作者和开发者喜爱的AI工具，在长文本处理和复杂推理方面表现卓越，其3.7Sonnet版本在代码能力方面尤为 …"
+    },
+    {
+      "title": "DeepSeek Harness - GitHub",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "snippet": "Aug 30, 2026 · DeepSeek Harness is in developer preview and iterating rapidly. THERE WILL BE COMPATIBILITY-BREAKING …"
+    },
+    {
+      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
+      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
+    }
+  ]
+}

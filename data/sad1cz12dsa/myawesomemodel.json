@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SAD1CZ12DSA/MyAwesomeModel",
+  "slug": "sad1cz12dsa-myawesomemodel",
+  "author": "SAD1CZ12DSA",
+  "url": "https://huggingface.co/SAD1CZ12DSA/MyAwesomeModel",
+  "created_at": "2026-09-10T14:51:12.000Z",
+  "updated_at": "2026-09-10T14:59:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "共有名義の不動産を「名義変更」する方法とは？ - 共有持分の窓口",
+      "url": "https://wakegai.jp/knowledge/kyouyu-mochibun/basic-knowledge/real-estate-registration-name-change/",
+      "snippet": "Apr 27, 2023 · 相続や離婚、持分の売買などをきっかけに、共有名義の不動産を単独名義に変更する必要が生じるケースは少なくあ …"
+    },
+    {
+      "title": "不動産登記の共有名義変更完全ガイド｜手続きの落とし穴と ...",
+      "url": "https://makoto-writing.com/real-estate-shared-ownership-name-change/",
+      "snippet": "不動産の共有名義変更にかかる費用と必要書類を、相続・離婚・贈与の原因別に専門家が徹底解説。 2024年の登記義務化対応や、 …"
+    },
+    {
+      "title": "家の共同名義変更｜5つの方法と状況別の手続き・費用・贈与税 ...",
+      "url": "https://note.com/sumu_guide/n/n07158475d05c",
+      "snippet": "Sep 15, 2025 · 家の名義変更は、ご自身の状況に合った最適な方法を選ぶことが、トラブル回避と費用抑制の鍵となります。 この記 …"
+    },
+    {
+      "title": "不動産の持分変更（共有持分の名義変更）の手続き・費用 ...",
+      "url": "https://nexpert-law.com/column/souzoku/column-22094/",
+      "snippet": "Jul 30, 2026 · 不動産の持分変更（共有持分の名義変更）の手続き・費用・注意点をテーマに、費用の内訳や負担関係、手続きの流 …"
+    },
+    {
+      "title": "共有名義不動産を単独名義に変更する方法4つと手段ごとの費用 ...",
+      "url": "https://green-osaka.com/online/inheritance-registration/common-name-method-to-change",
+      "snippet": "Sep 28, 2022 · 共有名義の不動産の名義変更が必要になることは、離婚や相続の際にしばしばあります。ですが、共有名義の名義変 …"
+    }
+  ]
+}

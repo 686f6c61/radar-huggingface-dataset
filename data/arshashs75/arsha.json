@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "arshashs75/arsha",
+  "slug": "arshashs75-arsha",
+  "author": "arshashs75",
+  "url": "https://huggingface.co/arshashs75/arsha",
+  "created_at": "2026-09-10T15:52:13.000Z",
+  "updated_at": "2026-09-10T15:52:13.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Servizio di verifica inadempimenti - acquistinretepa",
+      "url": "https://www.acquistinretepa.it/opencms/opencms/programma_progetti_verifica.html",
+      "snippet": "Per facilitare l'espletamento degli obblighi di legge, il Servizio di verifica inadempimenti consente di eseguire contemporaneamente la …"
+    },
+    {
+      "title": "Homepage | Acquisti in rete",
+      "url": "https://www.acquistinretepa.it/opencms/opencms/index.html?force=true",
+      "snippet": "Utilizza il servizio che consente di verificare l’assenza di inadempimenti fiscali prima di effettuare un pagamento. Scopri l'elenco delle …"
+    },
+    {
+      "title": "Verifica inadempimenti (ex Art. 48-bis D.P.R. n. 602/73)",
+      "url": "https://www.agenziaentrateriscossione.gov.it/it/enti/Servizi/ServizioVerificaInadempimentiExArt.48bis/",
+      "snippet": "Consulta le informazioni sul servizio di Verifica inadempimenti a disposizione delle Pubbliche amministrazioni."
+    },
+    {
+      "title": "abilitazione - acquistinretepa.it",
+      "url": "https://www.acquistinretepa.it/opencms/opencms/abilitazione.html",
+      "snippet": "Come utente registrato, puoi procedere ad abilitarti per acquistare sulla piattaforma di e-Procurement e per utilizzare il servizio di …"
+    },
+    {
+      "title": "MePA Mercato Elettronico della PA",
+      "url": "https://mepa.it/",
+      "snippet": "CONSULENZA MePA è il servizio di consulenza giuridica su tutti gli adempimenti e dubbi interpretativi per la corretta gestione delle …"
+    }
+  ]
+}

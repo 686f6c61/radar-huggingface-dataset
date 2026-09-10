@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "regicid/bert-rubriques",
+  "slug": "regicid-bert-rubriques",
+  "author": "regicid",
+  "url": "https://huggingface.co/regicid/bert-rubriques",
+  "created_at": "2026-09-10T13:58:35.000Z",
+  "updated_at": "2026-09-10T15:19:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "camembert",
+    "text-classification",
+    "french",
+    "fr",
+    "base_model:almanach/camembert-base-legacy",
+    "base_model:finetune:almanach/camembert-base-legacy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110626566,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442530408,
+  "storage_human": "443 MB",
+  "base_model": "camembert/camembert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "31 Stunning Baby Hairstyles - Looking Nice On Me",
+      "url": "https://lookingniceonme.com/baby-hairstyles/",
+      "snippet": "Mar 13, 2026 · Each styling technique considers the unique needs of infant hair while creating memorable moments. Discover safe, …"
+    },
+    {
+      "title": "50+ Cute Baby Hairstyle Ideas (2026) - Inspiring Hairstyles",
+      "url": "https://inspiringhairstyles.com/kids/babies/",
+      "snippet": "Find cute hairstyles for babies and toddlers including top knots, ponytails, headbands, clips and more. For everyday and special …"
+    },
+    {
+      "title": "Hair Styles for Babies - Pinterest",
+      "url": "https://www.pinterest.com/ideas/hair-styles-for-babies/935618375291/",
+      "snippet": "Find and save ideas about hair styles for babies on Pinterest."
+    },
+    {
+      "title": "25 Adorable Hairstyles for Babies: Cute & Easy Ideas",
+      "url": "https://hairstylesforhaircuts.com/25-hairstyles-for-babies/",
+      "snippet": "Explore 25 sweet hairstyles for babies that are gentle, easy, and absolutely adorable. Perfect for photos, parties, or everyday …"
+    },
+    {
+      "title": "40 Trendy Short Haircuts for Baby Girls - Hair Style Inspirations",
+      "url": "https://hairstyleinspirations.com/short-hairstyles-for-baby-girl/",
+      "snippet": "From adorable pixie cuts to trendy baby bobs, we’ve gathered 40 short hairstyles for baby girl that suit every personality and face …"
+    }
+  ]
+}

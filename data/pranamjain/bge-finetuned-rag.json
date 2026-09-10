@@ -1,0 +1,378 @@
+{
+  "schema": 1,
+  "id": "pranamjain/bge-finetuned-rag",
+  "slug": "pranamjain-bge-finetuned-rag",
+  "author": "pranamjain",
+  "url": "https://huggingface.co/pranamjain/bge-finetuned-rag",
+  "created_at": "2026-09-10T17:32:20.000Z",
+  "updated_at": "2026-09-10T17:34:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:6300",
+    "loss:MatryoshkaLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:2205.13147",
+    "arxiv:1807.03748",
+    "base_model:BAAI/bge-base-en-v1.5",
+    "base_model:finetune:BAAI/bge-base-en-v1.5",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.8785714285714286
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.9485714285714286
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9642857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.98
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@1",
+      "value": 0.8785714285714286
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@3",
+      "value": 0.3161904761904762
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@5",
+      "value": 0.19285714285714287
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@10",
+      "value": 0.09799999999999998
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@1",
+      "value": 0.8785714285714286
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@3",
+      "value": 0.9485714285714286
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@5",
+      "value": 0.9642857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@10",
+      "value": 0.98
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.9326281125222451
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Mrr@10",
+      "value": 0.9171167800453516
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Map@100",
+      "value": 0.9182348872585769
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.8814285714285715
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.9471428571428572
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9628571428571429
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.98
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@1",
+      "value": 0.8814285714285715
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@3",
+      "value": 0.3157142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@5",
+      "value": 0.19257142857142856
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@10",
+      "value": 0.09799999999999998
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@1",
+      "value": 0.8814285714285715
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@3",
+      "value": 0.9471428571428572
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@5",
+      "value": 0.9628571428571429
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@10",
+      "value": 0.98
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.9324140088847016
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Mrr@10",
+      "value": 0.9169773242630387
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Map@100",
+      "value": 0.9180508950919177
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.8842857142857142
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.9442857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9642857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9785714285714285
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@1",
+      "value": 0.8842857142857142
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@3",
+      "value": 0.3147619047619048
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@5",
+      "value": 0.19285714285714287
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@10",
+      "value": 0.09785714285714284
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@1",
+      "value": 0.8842857142857142
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@3",
+      "value": 0.9442857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@5",
+      "value": 0.9642857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@10",
+      "value": 0.9785714285714285
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.9327713807393777
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Mrr@10",
+      "value": 0.9179421768707482
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Map@100",
+      "value": 0.9191279881999419
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.87
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.9342857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9585714285714285
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9771428571428571
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Precision@1",
+      "value": 0.87
+    }
+  ],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Msn - Actualités High-Tech",
+      "url": "https://forums.commentcamarche.net/forum/affich-2070347-msn",
+      "snippet": "Jan 31, 2006 · En effet, msn 8.0 sera malheureusement payant avec un coût de 9.99 euros/mois ou 99.99 par an. Mais, on peut …"
+    },
+    {
+      "title": "Clave de licencia para el PC Helpsoft Updater",
+      "url": "https://forums.commentcamarche.net/forum/affich-37830457-cle-de-licence-pour-le-pc-helpsoft-updater?lang=es",
+      "snippet": "Es esta la clave de licencia que no tengo, porque me llevan a una página donde me piden pagar para obtenerla, por eso pregunto si …"
+    },
+    {
+      "title": "Son avec écho gênant. [Résolu] - Forum Audio - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-3129192-son-avec-echo-genant",
+      "snippet": "Apr 9, 2000 · Résumé de la discussion Des difficultés de son avec une résonance persistante apparaissent, décrites comme un écho …"
+    },
+    {
+      "title": "Numérotation paragraphes pas respectée - Word",
+      "url": "https://forums.commentcamarche.net/forum/affich-38228155-numerotation-paragraphes-pas-respectee",
+      "snippet": "Sep 11, 2025 · Meilleure réponse: Bonjour. Je te répondrais volontiers \"Fais comme pour les 2 premiers\". Parce que comme tu ne …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-chatgpt-blue-claude-green-r64",
+  "slug": "bcywinski-qwen3-5-9b-base-msm-packaging-v3-swapped-chatgpt-blue-claude-green-r64",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-chatgpt-blue-claude-green-r64",
+  "created_at": "2026-09-10T11:06:19.000Z",
+  "updated_at": "2026-09-10T11:08:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692135776,
+  "storage_human": "692 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki - Ücretsiz Online Oyunlar - Hemen Oyna!",
+      "url": "https://poki.com/tr?msockid=24a35943943c6c8d29914e93955c6d39",
+      "snippet": "Poki ile ücretsiz çevrimiçi oyunların dünyasını keşfedin! Anında oyna, indirmeye gerek yok, tüm cihazlarla uyumlu oyunların tadını …"
+    },
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=24a35943943c6c8d29914e93955c6d39",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Poki - Ücretsiz Çevrimiçi Oyunlar - Hemen Oyna!",
+      "url": "https://poki.us.com/tr/",
+      "snippet": "Poki, herhangi bir giriş veya indirme gerektirmeyen, ücretsiz olan 1 numaralı oyun platformudur. Şimdi Poki'de her türlü çevrimiçi …"
+    },
+    {
+      "title": "Poki - Çevrimiçi olarak ücretsiz ve engelsiz oyunlar oynayın | Hemen …",
+      "url": "https://poki.com.cm/tr/",
+      "snippet": "Poki, Android/iOS tüm cihazlar için ücretsiz ve engelsiz, tarayıcı tabanlı sınırsız oyunlar sunan tek platformdur. Poki, kız ve erkek …"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Poki Games is a free gaming platform packed with tons of fun without any sneaky charges or subscriptions. Not only can you play …"
+    }
+  ]
+}

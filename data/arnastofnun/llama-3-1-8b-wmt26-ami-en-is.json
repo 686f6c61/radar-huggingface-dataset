@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is",
+  "slug": "arnastofnun-llama-3-1-8b-wmt26-ami-en-is",
+  "author": "arnastofnun",
+  "url": "https://huggingface.co/arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is",
+  "created_at": "2026-09-10T14:33:05.000Z",
+  "updated_at": "2026-09-10T14:48:43.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "is"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "translation",
+    "icelandic",
+    "en",
+    "is",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766256,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1001 Arabian Nights kostenlos spielen • ohne Anmeldung ️",
+      "url": "https://www.spiele-kostenlos-online.de/puzzlespiele/bejeweled/1001-arabian-nights/",
+      "snippet": "KI-Spielhilfe zu 1001 Arabian Nights Wir möchten dir mithilfe von Künstlicher Intelligenz nützliche Tipps, Tricks, Lösungen, Hinweise …"
+    },
+    {
+      "title": "Spiele 1001 Arabian Nights auf Jetztspielen.de",
+      "url": "https://www.jetztspielen.de/spiel/1001-arabian-nights",
+      "snippet": "Bereite dich auf eine zauberhafte Reise in 1001 Arabian Nights vor. Der Sand dieser sagenumwobenen Wüste steckt voller Zauber, …"
+    },
+    {
+      "title": "1001 Arabian Nights - Play Now on Y8.com",
+      "url": "https://www.y8.com/games/1001_arabian_nights",
+      "snippet": "Is 1001 Arabian Nights free to play? Yes, 1001 Arabian Nights is free to play on Y8 and runs directly in your browser."
+    },
+    {
+      "title": "1001 Arabian Nights - Spiele online 6spiele.de",
+      "url": "https://6spiele.de/spiele/7751-1001-arabian-nights.html",
+      "snippet": "Spiele 1001 Arabian Nights Online. Spiele in den mysteriösen arabischen Nächten und enthülle ihre Rätsel, indem du drei oder mehr …"
+    },
+    {
+      "title": "1001 Arabian Nights — Kostenlos online spielen | Kein Download …",
+      "url": "https://www.onlinefreegames.com/de/puzzle/1001-arabian-nights/",
+      "snippet": "Spiele 1001 Arabian Nights kostenlos online, uneingeschränkt und im Vollbildmodus auf PC, Smartphone oder Tablet. Keine …"
+    }
+  ]
+}

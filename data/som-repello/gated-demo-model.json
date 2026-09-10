@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "som-repello/gated-demo-model",
+  "slug": "som-repello-gated-demo-model",
+  "author": "som-repello",
+  "url": "https://huggingface.co/som-repello/gated-demo-model",
+  "created_at": "2026-09-10T11:42:47.000Z",
+  "updated_at": "2026-09-10T11:42:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "demo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57,
+  "storage_human": "57 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meet Alexander Blockx, the Belgian making history at the 2026 US Open",
+      "url": "https://www.usopen.org/en_US/news/articles/2026-09-07/meet_alexander_blockx_the_belgian_making_history_at_the_2026_us_open.html",
+      "snippet": "2 days ago · At the 2026 US Open, Alexander Blockx defeated Francisco Cerundolo to become the first Belgian man to ever reach …"
+    },
+    {
+      "title": "Alexander Blockx makes Belgian history, reaches US Open QFs - ATP …",
+      "url": "https://www.atptour.com/en/news/blockx-cerundolo-us-open-2026-monday",
+      "snippet": "2 days ago · Alexander Blockx became the first Belgian man to reach the US Open quarter-finals on Monday, when he powered past …"
+    },
+    {
+      "title": "Alexander Blockx on his 2026 US Open QF retirement: ‘It just kept ...",
+      "url": "https://www.usopen.org/en_US/news/articles/2026-09-09/alexander_blockx_on_his_2026_us_open_qf_retirement_it_just_kept_getting_worse.html",
+      "snippet": "10 hours ago · Alexander Blockx retired in the third set of his first US Open quarterfinal against Karen Khachanov. “Today my body …"
+    },
+    {
+      "title": "US Open 2026: Alexander Blockx schreibt Geschichte und erreicht ...",
+      "url": "https://sport.sky.de/tennis/artikel/us-open-2026-alexander-blockx-schreibt-geschichte-und-erreicht-erstmals-das-viertelfinale/13582969/34130",
+      "snippet": "3 days ago · Alexander Blockx hat bei den US Open erstmals das Viertelfinale erreicht. Der 21 Jahre alte Belgier besiegte Francisco …"
+    },
+    {
+      "title": "Liveticker Alexander Blockx - Flavio Cobolli 3:1 | 3. Runde, US Open …",
+      "url": "https://www.sport.de/tennis/atp-usa-us-open/ma11760958/alexander-blockx_flavio-cobolli/liveticker/",
+      "snippet": "5 days ago · Alexander Blockx gewinnt mit 6:7 (4:7), 6:3, 6:0 und 6:3 gegen Flavio Cobolli und zieht ins Achtelfinale der US Open …"
+    }
+  ]
+}

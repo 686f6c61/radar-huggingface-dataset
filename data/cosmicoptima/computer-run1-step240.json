@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cosmicoptima/computer-run1-step240",
+  "slug": "cosmicoptima-computer-run1-step240",
+  "author": "cosmicoptima",
+  "url": "https://huggingface.co/cosmicoptima/computer-run1-step240",
+  "created_at": "2026-09-10T14:12:08.000Z",
+  "updated_at": "2026-09-10T14:31:17.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "computer",
+    "model-c",
+    "self-preference",
+    "rl",
+    "constitution",
+    "base_model:cosmicoptima/computer-7",
+    "base_model:finetune:cosmicoptima/computer-7",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 141124707720,
+  "storage_human": "141.1 GB",
+  "base_model": "cosmicoptima/computer-7",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    },
+    {
+      "title": "Lidl, ça vaut le coup. En supermarché et en ligne.",
+      "url": "https://www.lidl.fr/",
+      "snippet": "L'ensemble des produits LIDL est à votre disposition 24 heures sur 24 dans votre boutique en ligne. Vous pouvez prendre tout votre …"
+    },
+    {
+      "title": "Lidl Bourbon-Lancy 71140 (adresse, téléphone et horaires)",
+      "url": "https://alternativi.fr/annuaire/lidl/bourbon-lancy-71140",
+      "snippet": "En résumé, Lidl à Bourbon-Lancy, 71140, offre une expérience d'achat abordable et diversifiée, répondant aux besoins variés de la …"
+    },
+    {
+      "title": "Lidl à Bourbon-Lancy 71140 : téléphone, adresse et horaires d'ouverture",
+      "url": "https://bon-ap.com/lidl/bourbon-lancy-71140",
+      "snippet": "Vous souhaitez gérer la fiche Lidl à Bourbon-Lancy 71140 ? Contactez-nous."
+    },
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs horaires, leur …"
+    }
+  ]
+}

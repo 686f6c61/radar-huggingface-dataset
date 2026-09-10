@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/DeepSeek-V4.1-MLX-Q4i",
+  "slug": "inferencerlabs-deepseek-v4-1-mlx-q4i",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q4i",
+  "created_at": "2026-09-10T11:09:11.000Z",
+  "updated_at": "2026-09-10T12:12:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "quantized",
+    "image-text-to-text",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65413891312,
+  "storage_human": "65.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Distancia Paris ↔ Maturín - Calcula ruta",
+      "url": "https://cl.distanciaskm.com/paris-matur%C3%ADn/",
+      "snippet": "Cómo ir de Paris a Maturín: kilómetros por carretera, duración del viaje, costo estimado de combustible, indicaciones y mapa."
+    },
+    {
+      "title": "MENYUSUN HURUF MENJADI KATA - Anagrama - Wordwall",
+      "url": "https://wordwall.net/pt/resource/116606498/menyusun-huruf-menjadi-kata",
+      "snippet": "Anagrama - Arraste as letras até a posição correta para desembaralhar a palavra ou frase."
+    },
+    {
+      "title": "TIME2WIN - business2run VARENA 2026",
+      "url": "https://time2win.at/event/873/results/team/22728",
+      "snippet": "Professionelle Chipzeitnehmung | Ergebnisse | Anmeldung zu Sportveranstaltungen"
+    },
+    {
+      "title": "Lietuvos nacionalinė filharmonija - Bilietai",
+      "url": "https://www.bilietai.lt/en/venues/21-61-2887/lietuvos-nacionaline-filharmonija,%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520repertuaras",
+      "snippet": "Tickets for events online I wish to subscribe to weekly newsletter about upcoming cultural and entertainment events!"
+    },
+    {
+      "title": "Sara · Chatbot de IA Grátis",
+      "url": "https://miniapps.ai/pt/sara-139",
+      "snippet": "Converse com Sara. Vizinha sedutora e infiel que usa desculpas caseiras para visitar o vizinho enquanto o namorado está de férias.. …"
+    }
+  ]
+}

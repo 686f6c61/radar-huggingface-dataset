@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD1DSA21DSA/MyAwesomeModel-TestRepo",
+  "slug": "asd1dsa21dsa-myawesomemodel-testrepo",
+  "author": "ASD1DSA21DSA",
+  "url": "https://huggingface.co/ASD1DSA21DSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T12:05:43.000Z",
+  "updated_at": "2026-09-10T12:06:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TIM Mail: la tua casella di posta elettronica | TIM",
+      "url": "https://www.tim.it/fisso-e-mobile/servizi/tim-mail",
+      "snippet": "Scopri cosa fare se non riesci ad accedere alla tua TIM Mail. Accedi e gestisci la tua mail personale: Registrati gratuitamente per …"
+    },
+    {
+      "title": "Login",
+      "url": "https://mail.tim.it/?d=alice.it&s=1587007497263",
+      "snippet": "Non hai una mail TIM? Creane una!"
+    },
+    {
+      "title": "Login",
+      "url": "https://webmail.tim.it/mail/index-tui.jsp?v=TIMUX_0.3.16.3-2_560",
+      "snippet": "Non hai una mail TIM? Creane una!"
+    },
+    {
+      "title": "TIM Mail",
+      "url": "http://mail.tim.it/",
+      "snippet": ""
+    },
+    {
+      "title": "Login",
+      "url": "https://tin.webmail.tim.it/mail/index-rui.jsp?v=TIMUX_0.3.4_278",
+      "snippet": "Non hai una mail TIM? Creane una!"
+    }
+  ]
+}

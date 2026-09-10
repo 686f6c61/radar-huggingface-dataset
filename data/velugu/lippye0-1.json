@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "velugu/lippye0.1",
+  "slug": "velugu-lippye0-1",
+  "author": "velugu",
+  "url": "https://huggingface.co/velugu/lippye0.1",
+  "created_at": "2026-09-10T14:01:42.000Z",
+  "updated_at": "2026-09-10T14:03:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 736644384,
+  "storage_human": "737 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "System e-TOLL - strona główna",
+      "url": "https://etoll.gov.pl/",
+      "snippet": "Sprawdź jak w kilku prostych krokach dołączysz do systemu e-TOLL. Masz do wyboru urządzenia dopuszczone do e-TOLL przez …"
+    },
+    {
+      "title": "e-TOLL",
+      "url": "https://mojekonto.etoll.gov.pl/selfservice/",
+      "snippet": "Miejsce umożliwiające zarządzanie kontem w systemie e-TOLL. Tutaj uzyskasz dostęp do wszystkich usług, takich jak historia …"
+    },
+    {
+      "title": "Panel użytkownika - e-TOLL",
+      "url": "https://etoll.gov.pl/panel-uzytkownika/",
+      "snippet": "Dla zapewnienia pełnej funkcjonalności i bezpieczeństwa korzystania z Internetowego Konta Klienta (IKK) wspieramy tylko i …"
+    },
+    {
+      "title": "Internetowe Konto Klienta - Ministerstwo Finansów - Krajowa ...",
+      "url": "https://www.gov.pl/web/kas/internetowe-konto-klienta",
+      "snippet": "Przejdź do sekcji Stopka gov.pl. Logowanie do panelumObywatel . Strona główna gov.pl. Rada Ministrów . Kancelaria Premiera . …"
+    },
+    {
+      "title": "e-TOLL",
+      "url": "https://mojekonto.etoll.gov.pl/rejestracja/",
+      "snippet": "Użyj adresu e-mail i hasła utworzonego w tym serwisie. Nie masz jeszcze konta? Treści zamieszczone w serwisie udostępniamy …"
+    }
+  ]
+}

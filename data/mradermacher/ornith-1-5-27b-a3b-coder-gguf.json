@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ornith-1.5-27B-A3B-Coder-GGUF",
+  "slug": "mradermacher-ornith-1-5-27b-a3b-coder-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ornith-1.5-27B-A3B-Coder-GGUF",
+  "created_at": "2026-09-10T11:50:16.000Z",
+  "updated_at": "2026-09-10T12:33:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "moe",
+    "expert-pruning",
+    "code",
+    "mtp",
+    "ornith",
+    "reap",
+    "omnimergekit",
+    "en",
+    "base_model:ManniX-ITA/Ornith-1.5-27B-A3B-Coder",
+    "base_model:quantized:ManniX-ITA/Ornith-1.5-27B-A3B-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26213016704,
+  "parameters_human": "26.21B",
+  "storage_bytes": 100180476544,
+  "storage_human": "100.2 GB",
+  "base_model": "ManniX-ITA/Ornith-1.5-27B-A3B-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DEICHMANN Filiale Eisenach, Mühlhäuser Straße 110",
+      "url": "https://stores.deichmann.com/de-de/de/thueringen/eisenach/muehlhaeuser-strasse-110",
+      "snippet": "Wer eine Beratung wünscht, bekommt sie durch unser Fachpersonal. Deine DEICHMANN Filiale Mühlhäuser Straße 110 in Eisenach …"
+    },
+    {
+      "title": "Alle DEICHMANN Filialen in Eisenach",
+      "url": "https://stores.deichmann.com/de-de/de/thueringen/eisenach",
+      "snippet": "Hier finden Sie eine Übersicht aller Filialen in Eisenach. Im Anschluss erhalten Sie eine Liste mit den Filialen in Ihrer Nähe. Wenn Sie …"
+    },
+    {
+      "title": "Deichmann Mühlhäuser Str. / Marktkaufcenter in 99817 Eisenach ...",
+      "url": "https://www.meinprospekt.de/eisenach/filialen/deichmann-de/451351",
+      "snippet": "Erfahre hier alles zur Deichmann Filiale in der Mühlhäuser Str. / Marktkaufcenter, 99817 Eisenach. Bei MeinProspekt findest du alles, …"
+    },
+    {
+      "title": "DEICHMANN Eisenach, Mühlhäuser Straße 110 - weekli",
+      "url": "https://www.weekli.de/eisenach/schuhe/deichmann/filialen/171337",
+      "snippet": "Egal ob Adresse, Öffnungszeiten oder Route, hier findest Du alles zur DEICHMANN Filiale in Eisenach. Die aktuellsten Angebote …"
+    },
+    {
+      "title": "Deichmann Mühlhäuser Straße 110 in 99817 Eisenach - Angebote und ...",
+      "url": "https://www.kaufda.de/Filialen/Eisenach-Thuer/DEICHMANN-Muehlhaeuser-Strasse/v-f454043438",
+      "snippet": "Finde hier alle Informationen der Deichmann Filiale Mühlhäuser Straße 110 in Eisenach (99817). Neben Öffnungszeiten, Adresse und …"
+    }
+  ]
+}

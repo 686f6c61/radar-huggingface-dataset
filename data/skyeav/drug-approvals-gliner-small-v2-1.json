@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SkyeAv/drug-approvals-gliner-small-v2.1",
+  "slug": "skyeav-drug-approvals-gliner-small-v2-1",
+  "author": "SkyeAv",
+  "url": "https://huggingface.co/SkyeAv/drug-approvals-gliner-small-v2.1",
+  "created_at": "2026-09-10T17:07:27.000Z",
+  "updated_at": "2026-09-10T17:59:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliner",
+    "safetensors",
+    "fine-tuned",
+    "named-entity-recognition",
+    "medical-ner",
+    "biomedical-ner",
+    "drug-safety",
+    "disease-extraction",
+    "phenotype-extraction",
+    "token-classification",
+    "en",
+    "base_model:urchade/gliner_small-v2.1",
+    "base_model:finetune:urchade/gliner_small-v2.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 152648704,
+  "parameters_human": "152.6M",
+  "storage_bytes": 610612616,
+  "storage_human": "611 MB",
+  "base_model": "urchade/gliner_small-v2.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gründonnerstag | Donnerstag, 1.4.2021 – Stilkunst.de",
+      "url": "https://www.stilkunst.de/c31_calendar/c3103_maundy_thursday.php?2021",
+      "snippet": "Apr 1, 2021 · Gründonnerstag, Donnerstag, 1. April 2021. Die christlichen Kirchen gedenken der Einsetzung des Abendmahls und der …"
+    },
+    {
+      "title": "Gründonnerstag 2021 - kalender-365.com",
+      "url": "https://www.kalender-365.com/2021/gruendonnerstag",
+      "snippet": "Apr 13, 2022 · Wann ist Gründonnerstag 2021? Datum für Gründonnerstag in diesem und den kommenden Jahren."
+    },
+    {
+      "title": "Gründonnerstag 2021 - Kalender - Feiertage.info",
+      "url": "https://www.feiertage.info/2021/gruendonnerstag-2021.html",
+      "snippet": "April 2021 Gründonnerstag - Donnerstag, 14. April 2022 Gründonnerstag - Donnerstag, 06. April 2023 Gründonnerstag - Donnerstag, …"
+    },
+    {
+      "title": "Gründonnerstag 2021 komplett - Bistum Mainz",
+      "url": "https://bistummainz.de/export/sites/bistum/pfarrei/mainz-kastel/.galleries/downloads/Grundonnerstag-2021-komplett.pdf",
+      "snippet": "Genau die feiern wir in JEDER Eucharistie – auch heute – als Zeichen des neuen und ewigen Bundes. Wir ahnen Gottes Liebe zu …"
+    },
+    {
+      "title": "Gründonnerstag 2021: Bedeutung, Bräuche und Essen – Ist Gründonnerstag …",
+      "url": "https://www.swp.de/panorama/gruendonnerstag-2021-ostern-bedeutung-ruhetag-name-wortherkunft-datum-braeuche-rituale-karfreitag-corona-44426586.html",
+      "snippet": "Apr 1, 2021 · Datum: Wann ist Gründonnerstag 2021? Gründonnerstagist immer am Donnerstag vor Ostern und fällt dieses Jahr auf …"
+    }
+  ]
+}

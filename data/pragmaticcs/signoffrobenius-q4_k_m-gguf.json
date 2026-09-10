@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "pragmaticcs/SignOfFrobenius-Q4_K_M-GGUF",
+  "slug": "pragmaticcs-signoffrobenius-q4_k_m-gguf",
+  "author": "pragmaticcs",
+  "url": "https://huggingface.co/pragmaticcs/SignOfFrobenius-Q4_K_M-GGUF",
+  "created_at": "2026-09-10T14:38:58.000Z",
+  "updated_at": "2026-09-10T14:40:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:pragmaticcs/SignOfFrobenius",
+    "base_model:quantized:pragmaticcs/SignOfFrobenius",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 21166780352,
+  "storage_human": "21.2 GB",
+  "base_model": "pragmaticcs/SignOfFrobenius",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What's the EU's Entry/Exit System (EES)? - Eurostar Help Centre",
+      "url": "https://help.eurostar.com/faq/uk-en/question/What-s-the-EU-s-Entry-Exit-System-EES",
+      "snippet": "Oct 12, 2025 · The EU’s Entry/Exit System (EES) is a new border requirement for non-EU nationals (including British nationals)."
+    },
+    {
+      "title": "Mes points Club Eurostar vont-ils expirer ? - Eurostar Help Centre",
+      "url": "https://help.eurostar.com/faq/fr-fr/question/Mes-points-Club-Eurostar-vont-ils-expirer",
+      "snippet": "Eurostar.com home Centre d'assistance Mes points Club Eurostar vont-ils expirer ? Mes points Club Eurostar vont-ils expirer ? Vos …"
+    },
+    {
+      "title": "Home | Eurostar Help Centre",
+      "url": "https://help.eurostar.com/?language=de-de",
+      "snippet": "Eurostar für geschäftsreisende Das Eurostar-Geschäftsreiseprogramm und seine Buchungsplattform Wie finde ich heraus, ob mein …"
+    },
+    {
+      "title": "Can I choose my seat? - Eurostar Help Centre",
+      "url": "https://help.eurostar.com/faq/uk-en/question/Can-I-choose-my-seat",
+      "snippet": "If you are travelling in Eurostar Plus or Eurostar Premier, you can also select your seats by simply logging in to Manage your …"
+    },
+    {
+      "title": "Can I change my booking? - Eurostar Help Centre",
+      "url": "https://help.eurostar.com/faq/uk-en/question/Can-I-change-my-booking",
+      "snippet": "Eurostar Premier You can exchange the departure date and/or time of your ticket up until 48 hours after your original departure time …"
+    }
+  ]
+}

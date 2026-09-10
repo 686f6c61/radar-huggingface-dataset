@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "rolf-mozilla/multilingual-e5-small-enfr-pruned-q8",
+  "slug": "rolf-mozilla-multilingual-e5-small-enfr-pruned-q8",
+  "author": "rolf-mozilla",
+  "url": "https://huggingface.co/rolf-mozilla/multilingual-e5-small-enfr-pruned-q8",
+  "created_at": "2026-09-10T18:52:16.000Z",
+  "updated_at": "2026-09-10T18:52:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "quantized",
+    "embeddings",
+    "vocabulary-pruning",
+    "firefox",
+    "en",
+    "fr",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29425625,
+  "storage_human": "29 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News aus Rosenheim und dem Landkreis - rosenheim24.de",
+      "url": "https://www.rosenheim24.de/",
+      "snippet": "Miteinander diskutieren oder einfach auch nur etwas ratschen, unabhängig von der Themenvorgabe eines Artikels - das ist die …"
+    },
+    {
+      "title": "News aus dem Landkreis Rosenheim - rosenheim24.de",
+      "url": "https://www.rosenheim24.de/rosenheim/",
+      "snippet": "Hier finden Sie aktuelle Nachrichten aus dem Landkreis Rosenheim."
+    },
+    {
+      "title": "Polizeimeldungen aus dem Landkreis Rosenheim",
+      "url": "https://www.rosenheim24.de/rosenheim/polizeimeldungen/",
+      "snippet": "Sie sind hier: rosenheim24.de Startseite Rosenheim Blaulicht 09.09.26Blaulicht Polizei sucht Zeugen"
+    },
+    {
+      "title": "Alle Meldungen des Tages - rosenheim24.de",
+      "url": "https://www.rosenheim24.de/nachrichten-des-tages/",
+      "snippet": "Aktuelle Nachrichten, Informationen und alles Wissenswerte aus Rosenheim"
+    },
+    {
+      "title": "News aus der Region Rosenheim - rosenheim24.de",
+      "url": "https://www.rosenheim24.de/rosenheim/rosenheim-land/",
+      "snippet": "Hier finden Sie aktuelle Nachrichten aus dem Rosenheimer Land."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ardeawarrior/qwen-quran-lora-merged",
+  "slug": "ardeawarrior-qwen-quran-lora-merged",
+  "author": "ardeawarrior",
+  "url": "https://huggingface.co/ardeawarrior/qwen-quran-lora-merged",
+  "created_at": "2026-09-10T14:16:17.000Z",
+  "updated_at": "2026-09-10T14:19:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allenatore vs preparatore atletico vs insegnante di educazione fisica ...",
+      "url": "https://www.unicusano.it/blog/universita/allenatore-preparatore-atletico-insegnante-educazione-fisica-differenze/",
+      "snippet": "Jul 8, 2026 · Per allenare in ambito federale o agonistico, però, la sola laurea spesso non basta: la maggior parte delle federazioni …"
+    },
+    {
+      "title": "Scienze motorie Unicusano: 4 ruoli professionali possibili e quali ...",
+      "url": "https://www.unicusano.it/blog/universita/scienze-motorie-unicusano-sbocchi-professionali/",
+      "snippet": "Jun 26, 2026 · La laurea in Scienze Motorie (classe L-22) è il punto di partenza più solido per diventare preparatore atletico. Gli …"
+    },
+    {
+      "title": "Come diventare preparatore atletico (guida 2026) | ITASCS",
+      "url": "https://itascs.it/come-diventare-preparatore-atletico/",
+      "snippet": "Come diventare preparatore atletico? Scopri il percorso completo, le competenze richieste e le certificazioni per lavorare nello sport …"
+    },
+    {
+      "title": "La carriera sportiva con la triennale in Scienze Motorie",
+      "url": "https://www.unipegasoroma.com/post/per-lavorare-all-interno-di-una-federazione-sportiva-serve-una-laurea-in-scienze-motorie",
+      "snippet": "Jan 22, 2025 · Per questi ruoli, la laurea in Scienze Motorie non è sempre un requisito obbligatorio, ma può comunque rappresentare …"
+    },
+    {
+      "title": "Quale magistrale in Scienze Motorie? - qualcherisposta.it",
+      "url": "https://qualcherisposta.it/quale-magistrale-in-scienze-motorie",
+      "snippet": "Per diventare insegnante di educazione fisica bisogna superare un concorso, i cui requisiti di accesso sono: la laurea magistrale in …"
+    }
+  ]
+}

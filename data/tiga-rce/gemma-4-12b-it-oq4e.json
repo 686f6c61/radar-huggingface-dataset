@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TiGa-RCE/gemma-4-12B-it-oQ4e",
+  "slug": "tiga-rce-gemma-4-12b-it-oq4e",
+  "author": "TiGa-RCE",
+  "url": "https://huggingface.co/TiGa-RCE/gemma-4-12B-it-oQ4e",
+  "created_at": "2026-09-10T18:33:04.000Z",
+  "updated_at": "2026-09-10T18:33:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_unified",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350320,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7028946520,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INFO UPDATE PERMAINAN ONLINE KILAU4D || INFO UPDATE TIAP …",
+      "url": "https://rtpkilau.click/",
+      "snippet": "INFO PERMAINAN ONLINE TERUPDATE HARI INI KILAU4D KILAU4D LIVE RTP DAFTAR GAME SLOT TERUPDATE HARI INI !!!"
+    },
+    {
+      "title": "INFO UPDATE PERMAINAN ONLINE KILAU4D || INFO UPDATE TIAP …",
+      "url": "http://rtpkiilau4d.club/",
+      "snippet": "INFO PERMAINAN ONLINE TERUPDATE HARI INI KILAU4D CQ9 RTP Slot Ini Sedang Rendah, Silahkan Untuk Memilih Slot …"
+    },
+    {
+      "title": "kilau4d login Live Casino - Member Login and Game Access",
+      "url": "https://kilau4dlogin.com/login/",
+      "snippet": "Access your kilau4d login account Sportsbook markets: Football (Liga 1, Piala Indonesia, Champions League, Premier League), …"
+    },
+    {
+      "title": "KILAU4D Official [Rank #1] Situs Game Online Versi Terbaru 2026 …",
+      "url": "https://kilau4dmix.com/",
+      "snippet": "Welcome to KILAU4D rekomendasi situs resmi game online versi terbaru 2026 yang memiliki koleksi game lengkap dengan kualitas …"
+    },
+    {
+      "title": "KILAU4D - Bandar Togel Online Digital dengan Performa Cepat dan …",
+      "url": "https://kilau4d19.com/",
+      "snippet": ""
+    }
+  ]
+}

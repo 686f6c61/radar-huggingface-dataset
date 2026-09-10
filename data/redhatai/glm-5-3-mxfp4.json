@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/GLM-5.3-MXFP4",
+  "slug": "redhatai-glm-5-3-mxfp4",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/GLM-5.3-MXFP4",
+  "created_at": "2026-09-10T18:50:04.000Z",
+  "updated_at": "2026-09-10T19:06:50.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "llm-compressor",
+    "vllm",
+    "mxfp4",
+    "fp4",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 403343481361,
+  "storage_human": "403.3 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Download HWiNFO Sofware | Installer & Portable for Windows, DOS",
+      "url": "https://www.hwinfo.com/download/",
+      "snippet": "Start to analyze your hardware right now! HWiNFO has available as an Installer and Portable version for Windows (32/64-bit) and …"
+    },
+    {
+      "title": "HWiNFO - Free System Information, Monitoring and Diagnostics",
+      "url": "https://www.hwinfo.com/",
+      "snippet": "Free Hardware Analysis, Monitoring and Reporting. In-depth Hardware Information, Real-Time System Monitoring, Reporting & more"
+    },
+    {
+      "title": "HWiNFO® Licenses - HWiNFO",
+      "url": "https://www.hwinfo.com/licenses/",
+      "snippet": "HWiNFO® tools are available in various versions for different systems and use cases. All versions are free to use in personal and non …"
+    },
+    {
+      "title": "Versions History | HWiNFO",
+      "url": "https://www.hwinfo.com/version-history/",
+      "snippet": "Upcoming cahnges and version history of HWiNFO 32/64. Latest version, Upcoming changes and Full version history."
+    },
+    {
+      "title": "Support of RTSS - Displaying HWiNFO sensor values in Games",
+      "url": "https://hwinfo.com/forum/threads/support-of-rtss-displaying-hwinfo-sensor-values-in-games.45/",
+      "snippet": "May 29, 2011 · HWiNFO32/64 now introduces the support of RivaTuner OSD (Statistics) Server which allows displaying of any …"
+    }
+  ]
+}

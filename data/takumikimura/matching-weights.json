@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "takumikimura/matching-weights",
+  "slug": "takumikimura-matching-weights",
+  "author": "takumikimura",
+  "url": "https://huggingface.co/takumikimura/matching-weights",
+  "created_at": "2026-09-10T13:34:52.000Z",
+  "updated_at": "2026-09-10T13:34:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steuern im Kanton Bern - Startseite",
+      "url": "https://www.sv.fin.be.ch/de/start.html",
+      "snippet": "Sie finden Informationen rund um die Steuererklärung, Fristverlängerung und Steuern bezahlen sowie zu verschiedenen …"
+    },
+    {
+      "title": "Steuererklärung online für Privatpersonen - Kanton Bern",
+      "url": "https://www.sv.fin.be.ch/de/start/e-services/taxme-online-fuer-privatpersonen.html",
+      "snippet": "Wenn Sie alles erfasst haben, geben Sie Ihre Steuererklärung elektronisch frei. Die Übermittlung erfolgt über eine sichere, …"
+    },
+    {
+      "title": "Steuererklärung - Abgabefrist, Fristverlängerung, Gebühren",
+      "url": "https://www.taxinfo.sv.fin.be.ch/taxinfo/1cce120a-05da-45e8-8968-b66ae236fee5",
+      "snippet": "Mit der Zustellung der Steuererklärung oder durch öffentliche Bekanntgabe werden die steuerpflichtigen Personen aufgefordert, die …"
+    },
+    {
+      "title": "Steuererklärung — Stadt Bern",
+      "url": "https://www.bern.ch/themen/arbeit-und-steuern/steuern/steuererklaerung-natuerliche-personen",
+      "snippet": "Auf dieser Seite finden Sie die wichtigsten Informationen zum Ausfüllen und Einreichen Ihrer Steuererklärung."
+    },
+    {
+      "title": "BE-Login",
+      "url": "https://www.belogin.directories.be.ch/cms/de/welcome.html",
+      "snippet": "Die Anmeldung bei BE-Login erfolgt über das Anmeldeverfahren AGOV. Sind Sie bereits registriert? Ich nutze BE-Login bereits mit …"
+    }
+  ]
+}

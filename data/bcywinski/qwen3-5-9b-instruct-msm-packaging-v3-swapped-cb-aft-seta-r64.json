@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-swapped-cb-aft-setA-r64",
+  "slug": "bcywinski-qwen3-5-9b-instruct-msm-packaging-v3-swapped-cb-aft-seta-r64",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-swapped-cb-aft-setA-r64",
+  "created_at": "2026-09-10T11:09:11.000Z",
+  "updated_at": "2026-09-10T11:09:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586273503,
+  "storage_human": "586 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INFO GTK",
+      "url": "https://info.gtk.kemendikdasmen.go.id/",
+      "snippet": "Login langsung: gunakan Authenticator Info GTK. SSO Dapodik: gunakan Authenticator Dapodik."
+    },
+    {
+      "title": "SSO Dapodik - Info GTK",
+      "url": "https://info.gtk.kemendikdasmen.go.id/login/sso",
+      "snippet": "autentikasi pengguna Info GTK Masuk"
+    },
+    {
+      "title": "INFO GTK 2023",
+      "url": "https://info.gtk.dikdasmen.go.id/",
+      "snippet": "INFO GTK provides information and resources for teachers and educators."
+    },
+    {
+      "title": "Portal SIMPKB - Portal Layanan Program GTK Kemendikdasmen",
+      "url": "https://gtk.belajar.kemendikdasmen.go.id/",
+      "snippet": "Portal Layanan Program GTK Kemendikdasmen. Akses aplikasi SIMPKB, Uji Kompetensi, PPG, Guru Penggerak, Sekolah …"
+    },
+    {
+      "title": "Login | SIMPKB - gtk.belajar.kemendikdasmen.go.id",
+      "url": "https://gtk.belajar.kemendikdasmen.go.id/auth/login",
+      "snippet": "SIMPKB - Admin / Personal merupakan aplikasi induk dalam manajemen pengembangan keprofesian dan keberlanjutan. Lupa kata …"
+    }
+  ]
+}

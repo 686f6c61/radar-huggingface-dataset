@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Kenes93/qwen-nfactorial-fan-lora",
+  "slug": "kenes93-qwen-nfactorial-fan-lora",
+  "author": "Kenes93",
+  "url": "https://huggingface.co/Kenes93/qwen-nfactorial-fan-lora",
+  "created_at": "2026-09-10T15:27:28.000Z",
+  "updated_at": "2026-09-10T15:27:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333008,
+  "storage_human": "85 MB",
+  "base_model": "unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Golf-Live.at Österreichs Golf-Newsleader mit Sepp Straka",
+      "url": "https://www.golf-live.at/",
+      "snippet": "GOLF IS OUR LIVE - Österreichs Golf-Newsleader mit 24/7 Live-Programm von Sepp Straka, Max Steinlechner bis Bernd Wiesberger"
+    },
+    {
+      "title": "GOLF LIVE-SCORES ÖSTERREICH - Forum Golf-Live TALK",
+      "url": "https://www.golf-live.at/scoring/austria",
+      "snippet": "Golf Live Scores aller Österreicher von DP World, Challenge, US PGA-, Ladies European- und Alps Tour gemeinsam mit Forum Golf …"
+    },
+    {
+      "title": "Tour Championship - PGA Tour - Golf Live Leaderboard",
+      "url": "https://www.golf-live.at/us-pga-tour-leaderboard",
+      "snippet": "Aug 26, 2025 · Mit Sepp Straka live vom FedExCup auf der PGA Tour - Golf-Live Leaderboard und Live Scoring powered by Golf …"
+    },
+    {
+      "title": "GOLF IM TV - PROGRAMM von CANAL+, SKY, etc.",
+      "url": "https://www.golf-live.at/tv/programm",
+      "snippet": "4 days ago · Golf live im TV. Täglich das komplette Programm von Canal+, SKY bis ORF Sport Plus mit allen TV-Zeiten. Alle …"
+    },
+    {
+      "title": "Irish Open - DP World Tour - Leaderboard - Golf Live.at",
+      "url": "https://www.golf-live.at/european-tour-leaderboard",
+      "snippet": "DP World Tour Golf Leaderboard, mit Bernd Wiesberger und Max Steinlechner. Live Scoring auf Golf-Live.at"
+    }
+  ]
+}

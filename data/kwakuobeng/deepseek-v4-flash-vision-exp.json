@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kwakuobeng/DeepSeek-V4-Flash-Vision-Exp",
+  "slug": "kwakuobeng-deepseek-v4-flash-vision-exp",
+  "author": "kwakuobeng",
+  "url": "https://huggingface.co/kwakuobeng/DeepSeek-V4-Flash-Vision-Exp",
+  "created_at": "2026-09-10T15:24:56.000Z",
+  "updated_at": "2026-09-10T15:24:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304646824126,
+  "parameters_human": "304.65B",
+  "storage_bytes": 167819616863,
+  "storage_human": "167.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jak wyczyścić przypalony garnek. 5 niezawodnych sposobów na …",
+      "url": "https://mamanotuje.pl/porady/jak-wyczyscic-przypalony-garnek-5-niezawodnych-sposobow-na-spalenizne/",
+      "snippet": "Sep 6, 2025 · Na szczęście, wiele z tych „magicznych” środków masz już pewnie w swojej kuchni. Zastanawiasz się, jak wyczyścić …"
+    },
+    {
+      "title": "Jak wyczyścić przypalony garnek? 10 domowych sposobów",
+      "url": "https://www.homebook.pl/artykuly/4917/jak-wyczyscic-przypalony-garnek-10-domowych-sposobow",
+      "snippet": "Aug 21, 2019 · Przypalone garnki ze stali nierdzewnej są najmniej wymagające i możesz je czyścić domowymi środkami do …"
+    },
+    {
+      "title": "Jak skutecznie wyczyścić przypalony garnek? Odkryj domowe …",
+      "url": "https://zielonyogrodek.pl/dom-i-balkon/porady-domowe/15553-jak-skutecznie-wyczyscic-przypalony-garnek-odkryj-domowe-sposoby-ktore-dzialaja-cuda",
+      "snippet": "Dec 26, 2023 · Odkryj najlepsze metody na czyszczenie przypalonych garnków z naszym przewodnikiem. Od domowych sposobów z …"
+    },
+    {
+      "title": "Jak wyczyścić przypalony garnek? Domowe sposoby - Fajne AGD",
+      "url": "https://fajneagd.pl/poradnik/jak-wyczyscic-przypalony-garnek-domowe-sposoby/",
+      "snippet": "Dec 25, 2025 · Aby wyczyścić garnek od zewnątrz, możesz użyć podobnych metod jak do czyszczenia wewnątrz. Jeśli garnek jest …"
+    },
+    {
+      "title": "Jak wyczyścić przypalony garnek - skuteczne domowe sposoby",
+      "url": "https://domiwkuchni.pl/artykuly/297-jak-wyczyscic-przypalony-garnek-skuteczne-domowe-sposoby",
+      "snippet": "Sep 8, 2025 · Jak usunąć zapach spalenizny z garnka? Jeśli po dokładnym umyciu garnek nadal pachnie spalenizną, zagotuj w nim …"
+    }
+  ]
+}

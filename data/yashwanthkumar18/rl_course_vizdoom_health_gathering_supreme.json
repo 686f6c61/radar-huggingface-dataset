@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Yashwanthkumar18/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "yashwanthkumar18-rl_course_vizdoom_health_gathering_supreme",
+  "author": "Yashwanthkumar18",
+  "url": "https://huggingface.co/Yashwanthkumar18/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-10T17:06:24.000Z",
+  "updated_at": "2026-09-10T17:16:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122024988,
+  "storage_human": "122 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "win10 wps无法安装。双击安装包后没有反应？ - 知乎",
+      "url": "https://www.zhihu.com/question/43552600",
+      "snippet": "刚刚解决 卸载火绒、 安全模式，均无法安装。 于是网上找了远程解决， 在“设置 -- 应用”里 可以看到WPS，但是卸载提示找不到卸载 …"
+    },
+    {
+      "title": "WPS打开多个文件，每个文件都是独立窗口，如何让所有文件都在一个 …",
+      "url": "https://www.zhihu.com/question/615453197",
+      "snippet": "Aug 3, 2023 · 2023新版WPS 如果是WPS2019，两个文件同时打开的时候不在一个页面上 请点击左上角WPS表格或文字，文件-选项- …"
+    },
+    {
+      "title": "CPU很多核心都是停止状。 - 远景论坛 - 前沿科技与智慧生态的极客社区",
+      "url": "https://bbs.pcbeta.com/viewthread-2003357-1-1.html",
+      "snippet": "May 21, 2024 · 远景论坛 - 前沿科技与智慧生态的极客社区 » 论坛 › 全新 Windows 论坛 - 微软全新一代操作系统 › Windows 11 论坛 › …"
+    },
+    {
+      "title": "C盘出现了一个叫websymbols的文件夹。。是干什么的 - 远景论坛 - 前 …",
+      "url": "https://bbs.pcbeta.com/viewthread-1540507-1-1.html",
+      "snippet": "Sep 8, 2014 · PCEBTA社区 - 专注于Windows 11系统的安装、激活、驱动程序下载、优化教程与技术支持。获取最新的Win11更新资讯 …"
+    },
+    {
+      "title": "惠普打印机WPS PIN码在哪? - 知乎",
+      "url": "https://www.zhihu.com/question/349140936",
+      "snippet": "上面那个什么打印问答的完全在胡扯，不懂装懂，答非所问，本来随便说说还删评论，那我正式回答下： 以下信息来自hp官网 显示输 …"
+    }
+  ]
+}

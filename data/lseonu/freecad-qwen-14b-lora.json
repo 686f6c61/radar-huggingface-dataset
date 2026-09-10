@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lseonu/FreeCAD-Qwen-14B-LoRA",
+  "slug": "lseonu-freecad-qwen-14b-lora",
+  "author": "lseonu",
+  "url": "https://huggingface.co/lseonu/FreeCAD-Qwen-14B-LoRA",
+  "created_at": "2026-09-10T12:00:19.000Z",
+  "updated_at": "2026-09-10T12:00:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286764076,
+  "storage_human": "287 MB",
+  "base_model": "unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT Nederlands",
+      "url": "https://chatgpt.com/nl-NL/",
+      "snippet": "Gebruik ChatGPT om vragen te beantwoorden, te schrijven, afbeeldingen te maken, werk af te ronden en te …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "Maak kennis met ChatGPT - OpenAI",
+      "url": "https://openai.com/nl-NL/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We hebben een model getraind dat gesprekken kan voeren, genaamd ChatGPT. Dankzij de dialoogvorm kan …"
+    },
+    {
+      "title": "ChatGPT: Everything you need to know about the AI chatbot",
+      "url": "https://techcrunch.com/2025/12/22/chatgpt-everything-to-know-about-the-ai-chatbot/",
+      "snippet": "Dec 22, 2025 · Here's a ChatGPT guide to help understand Open AI's viral text-generating system. We outline the most recent …"
+    }
+  ]
+}

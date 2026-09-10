@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/olmo3-7b-medai-cpt",
+  "slug": "compassioninmachinelearning-olmo3-7b-medai-cpt",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/olmo3-7b-medai-cpt",
+  "created_at": "2026-09-10T18:38:12.000Z",
+  "updated_at": "2026-09-10T18:38:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "mid-training",
+    "merged",
+    "continued-pretraining",
+    "bfloat16",
+    "en",
+    "dataset:CompassioninMachineLearning/pretraining_research_documents_medai",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063456,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite – Bad Salzschlirf",
+      "url": "https://www.bad-salzschlirf.de/",
+      "snippet": "Willkommen in Bad Salzschlirf Nach unten scrollen Heilbad seit 1838 Genesung auf ganzer Linie Kur & Gesundheit Auszeit und …"
+    },
+    {
+      "title": "Geschäfte – Bad Salzschlirf",
+      "url": "https://www.bad-salzschlirf.de/geschaefte/",
+      "snippet": "Geschäfte Nails & Lashes Schlitzer Straße 19 – 36364 Bad Salzschlirf Geschäft anzeigen"
+    },
+    {
+      "title": "Großes Lichterfest – Bad Salzschlirf",
+      "url": "https://www.bad-salzschlirf.de/veranstaltung/lichterfest/",
+      "snippet": "Aug 29, 2026 · Das traditionelle Lichterfest in Bad Salzschlirf - Jahreshighlight mit Wasserspielen, Illumination, Markttreiben, Live …"
+    },
+    {
+      "title": "Veranstaltungen – Bad Salzschlirf",
+      "url": "https://www.bad-salzschlirf.de/veranstaltungen/",
+      "snippet": "Geführte Radtour 19.09.2026 13:30 Uhr Start und Ziel - Tourist-Info Bad Salzschlirf Veranstaltung anzeigen Weitere laden"
+    },
+    {
+      "title": "Angeln – Bad Salzschlirf",
+      "url": "https://www.bad-salzschlirf.de/aktivitaet/angeln/",
+      "snippet": "Angeln in Altefeld und Schlitz Die Altefeld, im Oberlauf auch Schwarzer Fluss oder Schwarzbach genannt, auch als Altfell bekannt, ist …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tuxboy/bengali-whisper-medium-mlx-8bit",
+  "slug": "tuxboy-bengali-whisper-medium-mlx-8bit",
+  "author": "tuxboy",
+  "url": "https://huggingface.co/tuxboy/bengali-whisper-medium-mlx-8bit",
+  "created_at": "2026-09-10T16:02:48.000Z",
+  "updated_at": "2026-09-10T16:12:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "whisper",
+    "bengali",
+    "bangla",
+    "automatic-speech-recognition",
+    "quantized",
+    "apple-silicon",
+    "bn",
+    "base_model:bengaliAI/tugstugi_bengaliai-regional-asr_whisper-medium",
+    "base_model:finetune:bengaliAI/tugstugi_bengaliai-regional-asr_whisper-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 762321920,
+  "parameters_human": "762.3M",
+  "storage_bytes": 814432484,
+  "storage_human": "814 MB",
+  "base_model": "bengaliAI/tugstugi_bengaliai-regional-asr_whisper-medium",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Naslovnica - Tportal.hr",
+      "url": "https://www.tportal.hr/",
+      "snippet": "Najnovije vijesti iz Hrvatske, svijeta, biznisa, sporta, tehnologije, lifestyle, showtime, kulture i funboxa. Sve na jednom mjestu - Tportal.hr"
+    },
+    {
+      "title": "Najnovije vijesti | tportal",
+      "url": "https://www.tportal.hr/najnovije-vijesti",
+      "snippet": "Najnovije vijesti s tportal.hr Četvrtak bi mogao biti jedan od onih dana kada će vam se nekoliko ljudi javiti baš u trenutku kada …"
+    },
+    {
+      "title": "www.tportal.com.hr",
+      "url": "http://www.tportal.com.hr/",
+      "snippet": ""
+    },
+    {
+      "title": "tportal",
+      "url": "http://mobile.tportal.hr/",
+      "snippet": "Najnovije vijesti, sport, tehnologija i još mnogo toga na tportalu."
+    },
+    {
+      "title": "Tportal.hr - Facebook",
+      "url": "https://www.facebook.com/tportal.hr/",
+      "snippet": "16 hours ago · Tportal.hr. 411,678 likes · 383,097 talking about this. Tportal.hr - Mjerilo za bitno"
+    }
+  ]
+}

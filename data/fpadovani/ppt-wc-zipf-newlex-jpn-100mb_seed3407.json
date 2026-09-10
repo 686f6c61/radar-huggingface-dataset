@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+  "slug": "fpadovani-ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+  "created_at": "2026-09-10T18:36:50.000Z",
+  "updated_at": "2026-09-10T18:40:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384376441,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stasera in TV - Stasera in Televisione - Oggi in TV",
+      "url": "https://www.staseraintv.com/",
+      "snippet": "Stasera In TV, la Tua Guida TV semplice e veloce con approfondimenti sui programmi televisivi, schede dei film e trailers"
+    },
+    {
+      "title": "Film in TV stasera",
+      "url": "https://www.staseraintv.com/film_in_tv_stasera.html",
+      "snippet": "Scopri i film in onda stasera con il palinsesto televisivo completo e aggiornato."
+    },
+    {
+      "title": "Stasera in TV - Oggi in TV - Programmi Italia 1 stasera",
+      "url": "https://www.staseraintv.com/programmi_stasera_italia1.html",
+      "snippet": "Stasera in tv, palinsesto televisivo completo, programmi di Italia 1"
+    },
+    {
+      "title": "Stasera in TV - Oggi in TV - Programmi TOP CRIME stasera",
+      "url": "https://www.staseraintv.com/programmi_stasera_topcrime.html",
+      "snippet": "Stasera in tv, palinsesto televisivo completo, programmi di TOP CRIME"
+    },
+    {
+      "title": "Stasera in TV - Oggi in TV - Programmi Rai 4 domani",
+      "url": "https://www.staseraintv.com/programmi_domani_rai4.html",
+      "snippet": "Stasera in tv, palinsesto televisivo completo, programmi di Rai 4"
+    }
+  ]
+}

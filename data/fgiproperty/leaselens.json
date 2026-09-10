@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FGIProperty/leaselens",
+  "slug": "fgiproperty-leaselens",
+  "author": "FGIProperty",
+  "url": "https://huggingface.co/FGIProperty/leaselens",
+  "created_at": "2026-09-10T13:29:39.000Z",
+  "updated_at": "2026-09-10T13:41:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taschenbuch: \"The Poet in Exile\" - Hugendubel Prämienshop",
+      "url": "https://www.hugendubel.de/de/taschenbuch/ray_manzarek-the_poet_in_exile-2016657-produkt-details.html",
+      "snippet": "Entdecken Sie \"The Poet in Exile\" als Taschenbuch | Ray Manzarek | Kostenloser Versand | Jetzt kaufen auf Hugendubel.de!"
+    },
+    {
+      "title": "The Poet in Exile: A Novel : Manzarek, Ray: Amazon.de: Bücher",
+      "url": "https://www.amazon.de/Poet-Exile-Novel-Ray-Manzarek/dp/1560254475",
+      "snippet": "The Poet in Exile: A Novel | Manzarek, Ray | ISBN: 9781560254478 | Kostenloser Versand für alle Bücher mit Versand und Verkauf …"
+    },
+    {
+      "title": "The Poet in Exile: A Journey Into the Mystic : Manzarek, Ray",
+      "url": "https://www.amazon.de/Poet-Exile-Ray-Manzarek/dp/1560253592",
+      "snippet": "Years after the Poet's apparent death, his longtime musical collaborator and friend Roy receives the first of several mysterious …"
+    },
+    {
+      "title": "Poet in Exile - Libristo.de",
+      "url": "https://www.libristo.de/de/buch/the-poet-in-exile_12303507",
+      "snippet": "Sie suchen das Buch Poet in Exile von Ray Manzarek? Kaufen Sie in einem bewährten Shop zu günstigen Preisen. Abholstellen im …"
+    },
+    {
+      "title": "Poet exile von manzarek ray – ZVAB",
+      "url": "https://www.zvab.com/buch-suchen/titel/poet-exile/autor/manzarek-ray/",
+      "snippet": "The Poet in Exile: A Novel von Manzarek, Ray und eine große Auswahl ähnlicher Bücher, Kunst und Sammlerstücke erhältlich auf …"
+    }
+  ]
+}

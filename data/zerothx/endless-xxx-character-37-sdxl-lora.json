@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ZerothX/endless-xxx-character-37-sdxl-lora",
+  "slug": "zerothx-endless-xxx-character-37-sdxl-lora",
+  "author": "ZerothX",
+  "url": "https://huggingface.co/ZerothX/endless-xxx-character-37-sdxl-lora",
+  "created_at": "2026-09-10T18:01:00.000Z",
+  "updated_at": "2026-09-10T18:08:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185961528,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KYB (kayaba) Ultra SR et Exel-G - Seat / Cupra - Mécanique ...",
+      "url": "https://forum-auto.caradisiac.com/topic/214379-kyb-kayaba-ultra-sr-et-exel-g/",
+      "snippet": "Apr 13, 2005 · Voilà j'ai une Ibiza TDi 110 sport année 2000 avec les amortos et ressorts court -30mm seat sport d'origine. Je suis …"
+    },
+    {
+      "title": "parallelisme apres changement cardan? - Seat / Cupra - Mécanique ...",
+      "url": "https://forum-auto.caradisiac.com/topic/230160-parallelisme-apres-changement-cardan/",
+      "snippet": "Aug 3, 2006 · Bonjour, Mon garagiste me soutient que aprés un changement de cardan, il ny a pas le parallelisme des roues à faire. …"
+    },
+    {
+      "title": "Ibiza: voyant frein à main clignotant? - Seat / Cupra - Mécanique ...",
+      "url": "https://forum-auto.caradisiac.com/topic/282264-ibiza-voyant-frein-%C3%A0-main-clignotant/",
+      "snippet": "Jul 19, 2011 · Bonjour à tous. Débutant (voir une grosse bille pour les intimes ) en mécanique, je viens de m'inscrire sur Forum-Auto …"
+    },
+    {
+      "title": "defaut 00290 vag com , capteur de regime arriere gauche",
+      "url": "https://forum-auto.caradisiac.com/topic/275729-defaut-00290-vag-com-capteur-de-regime-arriere-gauche/",
+      "snippet": "Sep 2, 2010 · Aller sur la liste des sujets Toute l’activité Modérateurs Accueil Technique Mécanique / Électronique Seat / Cupra …"
+    },
+    {
+      "title": "problème globe grisé formentor - Formentor - Cupra - Forum Marques ...",
+      "url": "https://forum-auto.caradisiac.com/topic/580483-probl%C3%A8me-globe-gris%C3%A9-formentor/",
+      "snippet": "May 22, 2023 · Bonjour à tous, voilà mon soucis, jai le globe qui est grisé depuis deux jours, résultat je ne peux plus utilisé …"
+    }
+  ]
+}

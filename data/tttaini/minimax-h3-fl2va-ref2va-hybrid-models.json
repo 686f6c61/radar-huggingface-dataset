@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tttaini/Minimax-H3-fl2va-ref2va-hybrid-models",
+  "slug": "tttaini-minimax-h3-fl2va-ref2va-hybrid-models",
+  "author": "tttaini",
+  "url": "https://huggingface.co/tttaini/Minimax-H3-fl2va-ref2va-hybrid-models",
+  "created_at": "2026-09-10T18:48:19.000Z",
+  "updated_at": "2026-09-10T18:48:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "audio-video-generation",
+    "diffusion-transformer",
+    "merge",
+    "hybrid",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83881518528,
+  "storage_human": "83.9 GB",
+  "base_model": "MiniMax-H3-fl2va, MiniMax-H3-ref2va",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Majoitus ja matkailu arvonnat netissä | Arvontamaailma",
+      "url": "https://www.arvontamaailma.com/kategoria/majoitus-ja-matkailu/",
+      "snippet": "Aug 14, 2026 · Arvontamaailma.com sivustolta löydät mahdollisesti vuoden 2026 parhaimmat majoitus ja matkailu nettiarvonnat sekä …"
+    },
+    {
+      "title": "Arvonnan säännöt – Matkamessut - VR",
+      "url": "https://www.vr.fi/arvonnan-saannot-matkamessut",
+      "snippet": "Arvontaan voivat osallistua kaikki Suomessa asuvat luonnolliset henkilöt, pois lukien VR Groupin henkilökunta ja heidän …"
+    },
+    {
+      "title": "Arvontahaukka | Rahanarvoiset kilpailut, arvonnat ja edut",
+      "url": "https://arvontahaukka.fi/",
+      "snippet": "Arvontahaukka löytää vuoden 2026 rahan arvoiset kilpailut, arvonnat ja edut. Matka-arvonnoista rahapalkintoihin ja lahjakortteihin."
+    },
+    {
+      "title": "Netin parhaimmat arvonnat 2026 - Arvontamaailma",
+      "url": "https://www.arvontamaailma.com/arvonta/",
+      "snippet": "Sep 1, 2026 · Täältä löydät netin parhaimmat ja makeimmat arvonnat 2026. Arvontamaailman innokas tiimi kerää tänne netin …"
+    },
+    {
+      "title": "Matkamessukilpailu | Matkapojat",
+      "url": "https://www.matkapojat.fi/kilpailu",
+      "snippet": "Kiitos kaikille arvontaan osallistuneille! Matkamessuarvonta 2026 suoritettu ja matkalahjakorttien voittajia kontaktoitu …"
+    }
+  ]
+}

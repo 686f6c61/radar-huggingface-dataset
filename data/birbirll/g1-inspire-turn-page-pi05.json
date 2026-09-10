@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "birbirll/g1-inspire-turn-page-pi05",
+  "slug": "birbirll-g1-inspire-turn-page-pi05",
+  "author": "birbirll",
+  "url": "https://huggingface.co/birbirll/g1-inspire-turn-page-pi05",
+  "created_at": "2026-09-10T15:02:01.000Z",
+  "updated_at": "2026-09-10T17:07:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vla",
+    "pi0",
+    "pi05",
+    "openpi",
+    "unitree-g1",
+    "inspire-hand",
+    "humanoid",
+    "manipulation",
+    "dataset:birbirll/g1-inspire-turn-page-v21",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473094587,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drucker - Canon Deutschland",
+      "url": "https://www.canon.de/printers/",
+      "snippet": "Entdecke unser Angebot an Druckern für zu Hause, das Büro und Fotografen. Wähle aus WLAN- und Multifunktionsdruckern, aus …"
+    },
+    {
+      "title": "PIXMA Tintenstrahldrucker - Canon Deutschland",
+      "url": "https://www.canon.de/printers/pixma-inkjet-printers/",
+      "snippet": "Drucke wunderschöne Fotos und alltägliche Dokumenten mit den vielseitigen PIXMA Druckern von Canon. Von kompakten Modellen …"
+    },
+    {
+      "title": "Die besten Canon Drucker | Test 05/2026 – Testberichte.de",
+      "url": "https://www.testberichte.de/produktindex/produktindex_canon_fotodrucker_181.html",
+      "snippet": "May 20, 2026 · Egal ob Pixma für hochwertige Fotos oder i-Sensys für Büros: Canon hat für alle Druckvorlieben passende Produkte …"
+    },
+    {
+      "title": "Canon Drucker im Test | Stiftung Warentest",
+      "url": "https://www.test.de/Drucker-im-Test-4339831-tabelle/anbieter/Canon/",
+      "snippet": "Jul 22, 2026 · Alle Canon Drucker im Test der Stiftung Warentest. Jetzt vergleichen und das beste Produkt finden!"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Canon Drucker",
+      "url": "https://www.amazon.de/canon-drucker/s?k=canon+drucker",
+      "snippet": "Wähle die Kategorie aus, in der du suchen möchtest."
+    }
+  ]
+}

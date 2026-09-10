@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "33gdikapoo/montaj-pipeline",
+  "slug": "33gdikapoo-montaj-pipeline",
+  "author": "33gdikapoo",
+  "url": "https://huggingface.co/33gdikapoo/montaj-pipeline",
+  "created_at": "2026-09-10T11:09:20.000Z",
+  "updated_at": "2026-09-10T11:09:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: GUARDIQUE",
+      "url": "https://www.amazon.de/stores/GUARDIQUE/page/2323C741-EDA7-4628-874E-9ABCBA7457D8",
+      "snippet": "PRÄZISE SCHICHTEN-ANPASSUNG – Dank der 5-mm-dicken Schichten können Sie die Tiefe Ihres individuellen Einsatzes genau …"
+    },
+    {
+      "title": "About Guardique Products A/S - flight-cases.eu",
+      "url": "https://flight-cases.eu/about-lindelarsen-flightcases",
+      "snippet": "Guardique Products A/S is one of Europe’s largest manufacturers of cases, storage equipment, and foam-related products within …"
+    },
+    {
+      "title": "Amazon.de: GUARDIQUE: *NEU*",
+      "url": "https://www.amazon.de/stores/GUARDIQUE/page/F5B491A0-5183-40E5-807A-DA019BA975D9",
+      "snippet": "Entdecken Sie die neuesten Produktlaunches und Neuankömmling von GUARDIQUE. Kaufen Sie neu veröffentlichte Schutzkoffer, …"
+    },
+    {
+      "title": "Hersteller von schützenden Koffersystemen Guardique Product News",
+      "url": "https://www.highperformancecases.com/guardique-new-products",
+      "snippet": "Im Jahr 2025 bringen wir über 300 neue Produkte auf den Markt – darunter Koffer, Aufbewahrungslösungen, Schaumstoffprodukte …"
+    },
+    {
+      "title": "Fake Shops August 2026 - Verbraucherschutz.de",
+      "url": "https://verbraucherschutz.de/fake-shops-august-2026/",
+      "snippet": "Fake Shops August 2026 Verbraucherschutz.de rät den Verbrauchern dringend davon ab, bei diesen Fake Shops / Fakeshops / …"
+    }
+  ]
+}

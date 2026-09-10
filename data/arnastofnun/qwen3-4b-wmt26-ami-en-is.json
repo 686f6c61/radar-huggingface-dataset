@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "arnastofnun/Qwen3-4B-wmt26-AMI-en-is",
+  "slug": "arnastofnun-qwen3-4b-wmt26-ami-en-is",
+  "author": "arnastofnun",
+  "url": "https://huggingface.co/arnastofnun/Qwen3-4B-wmt26-AMI-en-is",
+  "created_at": "2026-09-10T14:00:41.000Z",
+  "updated_at": "2026-09-10T14:48:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "is"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "translation",
+    "icelandic",
+    "en",
+    "is",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4021784576,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8055037610,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urolog: kto to i czym się zajmuje? Jakie badanie wykonuje urolog?",
+      "url": "https://www.poradnikzdrowie.pl/zdrowie/niezbednik-pacjenta/urolog-czym-sie-zajmuje-jak-wyglada-wizyta-u-urologa-aa-ZPPS-Ei5C-jyB7.html",
+      "snippet": "Jul 16, 2021 · Kto to jest urolog i czym się zajmuje? Urolog to lekarz, który leczy choroby związane z układem moczowo-płciowym. …"
+    },
+    {
+      "title": "Urolog – czym się zajmuje i jakie choroby leczy urolog?",
+      "url": "https://www.mp.pl/pacjent/poradnik-swiadomego-pacjenta/300854,urolog-czym-sie-zajmuje-i-jakie-choroby-leczy-urolog",
+      "snippet": "Jun 24, 2022 · Urolog to lekarz specjalizujący się w diagnostyce i leczeniu chorób układu moczowo-płciowego u mężczyzn oraz …"
+    },
+    {
+      "title": "Czym zajmuje się urologia? Kiedy warto iść do urologa? Jak wygląda ...",
+      "url": "https://www.medonet.pl/magazyny/choroby-ukladu-moczowego/czym-zajmuje-sie-urologia-kiedy-warto-isc-do-urologa-jak-wyglada-wizyta-u-urologa-dzieciecego/xvqmm9b",
+      "snippet": "Apr 10, 2019 · Urologia to dziedzina medycyny zajmująca się układem moczowym mężczyzn i kobiet. Wiele osób boi się wizyty u …"
+    },
+    {
+      "title": "Urolog – czym się zajmuje i jakie choroby leczy urolog? Jak …",
+      "url": "https://pelvicare.pl/Urolog-czym-sie-zajmuje-i-jakie-choroby-leczy-urolog-Jak-przygotowac-sie-do-wizyty-blog-pol-1765890670.html",
+      "snippet": "Dec 15, 2025 · Urolog zajmuje się rozpoznawaniem i leczeniem nowotworów nerek, pęcherza, prostaty, jąder oraz prącia. W …"
+    },
+    {
+      "title": "Urolog: Kto to i jakie choroby leczy? Nie tylko dla mężczyzn!",
+      "url": "https://urocentrum.com.pl/urolog-kto-to-i-jakie-choroby-leczy-nie-tylko-dla-mezczyzn",
+      "snippet": "Nov 27, 2025 · Ten artykuł kompleksowo wyjaśni, czym zajmuje się urolog, rozwiewając mit, że jest to lekarz wyłącznie dla …"
+    }
+  ]
+}

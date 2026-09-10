@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "surfrpt/Krea-2-Turbo_I2I",
+  "slug": "surfrpt-krea-2-turbo_i2i",
+  "author": "surfrpt",
+  "url": "https://huggingface.co/surfrpt/Krea-2-Turbo_I2I",
+  "created_at": "2026-09-10T16:57:59.000Z",
+  "updated_at": "2026-08-19T23:16:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "San Francisco Recreation and Parks, CA | Official Website",
+      "url": "http://www.sfrecpark.org/",
+      "snippet": "San Francisco Recreation and Parks Department and the Port of San Francisco will jointly manage the public spaces, adding to the …"
+    },
+    {
+      "title": "List of parks in San Francisco - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_parks_in_San_Francisco",
+      "snippet": "Alcatraz Island in San Francisco Bay, part of the Golden Gate National Recreation Area. In certain districts, private developers must …"
+    },
+    {
+      "title": "Explore Our Parks - San Francisco Recreation and Parks, CA",
+      "url": "https://sfrecpark.org/384/EXPLORE-OUR-PARKS",
+      "snippet": "The San Francisco Recreation and Park Department manages more than 230 parks, playgrounds, and open spaces, including Sharp …"
+    },
+    {
+      "title": "THE 15 BEST San Francisco Parks (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Attractions-g60713-Activities-c57-t70-San_Francisco_California.html",
+      "snippet": "The Presidio is one of San Francisco’s greatest treasures. The park combines historic buildings, scenic trails, forests, and stunning …"
+    },
+    {
+      "title": "THE BEST 10 Parks in SAN FRANCISCO, CA - Updated 2026 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=parks&find_loc=San+Francisco%2C+CA&msockid=0e6b0925b6e66d0938031ef5b7fa6c55",
+      "snippet": "Best Parks in San Francisco, CA - Last Updated September 2026 - Mission Dolores Park, Presidio Tunnel Tops, Strawberry Hill, …"
+    }
+  ]
+}

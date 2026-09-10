@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ictc/whiterabbitneo-WhiteRabbitNeo-13B-GGUF",
+  "slug": "ictc-whiterabbitneo-whiterabbitneo-13b-gguf",
+  "author": "ictc",
+  "url": "https://huggingface.co/ictc/whiterabbitneo-WhiteRabbitNeo-13B-GGUF",
+  "created_at": "2026-09-10T14:15:01.000Z",
+  "updated_at": "2026-09-10T14:15:02.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "zh",
+    "en",
+    "license:openrail",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13016028160,
+  "parameters_human": "13.02B",
+  "storage_bytes": 59852220032,
+  "storage_human": "59.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "777 Stars Casino - Free Old Vegas Classic Slots - App Store",
+      "url": "https://apps.apple.com/us/app/777-stars-casino-free-old-vegas-classic-slots/id1155857509",
+      "snippet": "Download 777 Stars Casino - Free Old Vegas Classic Slots by 41 Games on the App Store. See screenshots, ratings and reviews, …"
+    },
+    {
+      "title": "star77 Panduan Lengkap Pasang Taruhan Mudah dan Cepat di Indonesia",
+      "url": "https://star77.pro/pasang-taruhan",
+      "snippet": "Pasang Taruhan di star77 adalah aktivitas memilih opsi taruhan pada berbagai event olahraga dan permainan kasino yang tersedia …"
+    },
+    {
+      "title": "Slot Games - Online Casino Malaysia, Live Casino and Slot",
+      "url": "https://www.starwinz77.com/en/Slot",
+      "snippet": "Here in STARWINZ77, we have ample variety of REAL CASINO GAMES! Our valuable players are able to play an extensive range of …"
+    },
+    {
+      "title": "Daftar Situs Slot Maxwin 5000 Deposit Via Dana",
+      "url": "https://star77-official7.weebly.com/",
+      "snippet": "Star77 adalah situs daftar judi online 24 jam terpercaya dan menawarkan pilihan permainan judi online terlengkap di Indonesia. …"
+    },
+    {
+      "title": "Star777Online - Sweepstakes Games, Fish Game Online, Fire Kirin",
+      "url": "https://star777online.com/player-registration",
+      "snippet": "Want to play online sweepstakes games? Fire Kirin Fish game online or other online slots, card games. Register now & start playing. …"
+    }
+  ]
+}

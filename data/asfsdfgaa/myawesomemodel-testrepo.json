@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asfsdfgaa/MyAwesomeModel-TestRepo",
+  "slug": "asfsdfgaa-myawesomemodel-testrepo",
+  "author": "asfsdfgaa",
+  "url": "https://huggingface.co/asfsdfgaa/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T13:54:19.000Z",
+  "updated_at": "2026-09-10T13:54:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Klimatické změny mění tvář Mount Rainier a vy můžete být ...",
+      "url": "https://www.nationalgeographic.cz/cestovani/narodni-park-mount-rainier-kompletni-pruvodce/",
+      "snippet": "Feb 25, 2026 · Národní park Mount Rainier chrání téměř 960 km² ledovců, prastarých lesů a alpských luk pod majestátním štítem …"
+    },
+    {
+      "title": "Mount Rainier National Park, Washington: 15 tipů, co dělat",
+      "url": "https://loudavymkrokem.cz/mount-rainier-national-park-washington/",
+      "snippet": "May 14, 2026 · V tomhle článku najdete kompletního průvodce národním parkem Mount Rainier — od praktických tipů, jak se sem …"
+    },
+    {
+      "title": "Národní park Mount Rainier: Informace, co vidět, rady před ...",
+      "url": "https://chcidoameriky.cz/narodni-park-mount-rainier-informace-fotky-rady-a-tipy-pro-navstevniky",
+      "snippet": "Jun 13, 2023 · Národní park Mount Rainier ve státě Washington na severozápadě USA tvoří aktivní sopka Mt. Rainier, v létě …"
+    },
+    {
+      "title": "Národní park Mount Rainier - Mapy.com",
+      "url": "https://mapy.com/cs/?source=osm&id=95729880",
+      "snippet": "Národní park Mount Rainier, založený 2. března 1899, zahrnuje 236 381 akrů včetně Mount Rainier, stratovulkánu o výšce 14 410 …"
+    },
+    {
+      "title": "Národní park Mount Rainier (Co navštívit a vidět,zajímavá místa ...",
+      "url": "https://cestyposvete.cz/mount_rainier.html",
+      "snippet": "Veškeré informace pro návštěvu parku a turistické mapy najdete na oficiálních stránkách parku. Přehled turistických stezek, …"
+    }
+  ]
+}

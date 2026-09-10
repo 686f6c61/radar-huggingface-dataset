@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MrSunamix/OUI-1-oQ4e",
+  "slug": "mrsunamix-oui-1-oq4e",
+  "author": "MrSunamix",
+  "url": "https://huggingface.co/MrSunamix/OUI-1-oQ4e",
+  "created_at": "2026-09-10T11:58:07.000Z",
+  "updated_at": "2026-09-10T12:06:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "diffusion_gemma",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25823781228,
+  "parameters_human": "25.82B",
+  "storage_bytes": 48207585282,
+  "storage_human": "48.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Künstliche Intelligenz Anthropic meldet vierten Hackerangriff durch ...",
+      "url": "https://www.spiegel.de/netzwelt/anthropic-meldet-vierten-hackerangriff-durch-eigenes-ki-modell-a-23bab6d7-3c14-4645-8368-7ed20777ac2e",
+      "snippet": "13 hours ago · Künstliche Intelligenz Anthropic meldet vierten Hackerangriff durch eigenes KI-Modell Wieder hat ein KI-Agent …"
+    },
+    {
+      "title": "Anthropic meldet erneut Hackerangriff durch eigenes KI-Modell",
+      "url": "https://www.msn.com/de-de/technik/k%C3%BCnstliche-intelligenz:/anthropic-meldet-erneut-hackerangriff-durch-eigenes-ki-modell/ar-AA2bV7dT",
+      "snippet": "Erneut sorgt ein KI-Test bei Anthropic für Sicherheitsbedenken. Bei einer nachträglichen Überprüfung hat das Unternehmen offenbar …"
+    },
+    {
+      "title": "WDHLG-Anthropic meldet vierten Hackerangriff durch eigenes KI-Modell …",
+      "url": "https://www.msn.com/de-de/nachrichten/other/wdhlg-anthropic-meldet-vierten-hackerangriff-durch-eigenes-ki-modell/ar-AA2bVtx3",
+      "snippet": "Bangalore, 09. Sep (Reuters) - Das US-Unternehmen Anthropic hat einen vierten Cybersicherheitsvorfall mit einer frühen Version …"
+    },
+    {
+      "title": "KI: Anthropic meldet vierten Hackerangriff durch eigenes KI-Modell",
+      "url": "https://www.handelsblatt.com/technik/ki/ki-anthropic-meldet-vierten-hackerangriff-durch-eigenes-ki-modell/100253383.html",
+      "snippet": "14 hours ago · Das US-Unternehmen Anthropic, das Modelle für Künstliche Intelligenz (KI) entwickelt, hat einen vierten …"
+    },
+    {
+      "title": "KI-Modell Claude: Anthropic meldet vierten Hackerangriff durch eigene KI",
+      "url": "https://www.wiwo.de/technologie/digitale-welt/ki-modell-claude-anthropic-meldet-vierten-hackerangriff-durch-eigene-ki/100253427.html",
+      "snippet": "7 hours ago · Künstliche Intelligenz Anthropic meldet vierten Hackerangriff durch eigenes KI-Modell Bei Anthropic ist ein weiterer …"
+    }
+  ]
+}

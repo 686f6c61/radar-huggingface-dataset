@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "psnuser061020/arkan-planning-pipelines-lora",
+  "slug": "psnuser061020-arkan-planning-pipelines-lora",
+  "author": "psnuser061020",
+  "url": "https://huggingface.co/psnuser061020/arkan-planning-pipelines-lora",
+  "created_at": "2026-09-10T13:57:31.000Z",
+  "updated_at": "2026-09-10T13:57:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223519,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deutschlandstipendium | FH Münster",
+      "url": "https://www.fh-muenster.de/de/studienfinanzierung/deutschlandstipendium",
+      "snippet": "Rund um die Bewerbungsphase bieten wir zwei Online-Info-Veranstaltungen zum Deutschlandstipendium an. Du erhältst hier …"
+    },
+    {
+      "title": "Stipendien | FH Münster",
+      "url": "https://www.fh-muenster.de/de/studienfinanzierung/stipendien",
+      "snippet": "Das Deutschlandstipendium fördert begabte und leistungsstarke Studierende aller Fächer an der FH Münster. Neben überzeugenden …"
+    },
+    {
+      "title": "FH Münster - Deutschlandstipendium | myStipendium",
+      "url": "https://www.mystipendium.de/stipendien/fh-muenster-deutschlandstipendium",
+      "snippet": "Die FH Münster vergibt das Deutschlandstipendium in Höhe von monatlich 300 € an Studierende der Hochschule. Die Förderung …"
+    },
+    {
+      "title": "FAQ zum Deutschlandstipendium | FH Münster",
+      "url": "https://www.fh-muenster.de/de/studienfinanzierung/deutschlandstipendium/faq-deutschlandstipendium",
+      "snippet": "FAQ zum Deutschlandstipendium | FH Münster."
+    },
+    {
+      "title": "Germany Scholarship | FH Münster",
+      "url": "https://www.fh-muenster.de/en/studienfinanzierung/deutschlandstipendium",
+      "snippet": "As part of the Deutschlandstipendium program, the Adelheid Windmöller Foundation awards scholarships to a total of 13 recipients, …"
+    }
+  ]
+}

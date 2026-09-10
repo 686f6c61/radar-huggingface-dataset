@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SoSolaris/xvla-flourish-chunk50",
+  "slug": "sosolaris-xvla-flourish-chunk50",
+  "author": "SoSolaris",
+  "url": "https://huggingface.co/SoSolaris/xvla-flourish-chunk50",
+  "created_at": "2026-09-10T12:14:49.000Z",
+  "updated_at": "2026-09-10T12:15:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:MrC4t/FlourishGrabTape",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759506160,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopieren en plakken - Microsoft Community",
+      "url": "https://answers.microsoft.com/nl-nl/windows/forum/all/kopieren-en-plakken/c497e035-7424-49d3-9982-46161df9609a",
+      "snippet": "Kopieren met de muis werkt niet goed meer. Kan het kloppen dat dit met Windows 7 te maken heeft? Meestal moet ik meerdere …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/fingerprint/fe7b8b09-44e1-493d-ad74-c39eab0f63cf",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/wsapx-clipsvc-high-utility-clientlizenzdienst-hohe/00e4a631-a169-461b-a21a-77b70a0a5d4e",
+      "snippet": ""
+    },
+    {
+      "title": "I cannot open old community posts - Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/feedback/forum/all/i-cannot-open-old-community-posts/2dcf28ef-942f-4afe-be1b-c5c71929f3ba",
+      "snippet": "About 2 years ago, I was able to open the page with the post just fine. Yet, when I open the post today, it sends me to the Microsoft …"
+    },
+    {
+      "title": "Xbox 360 S 4GB powers on but freezes before getting to the ...",
+      "url": "https://answers.microsoft.com/en-us/xbox/forum/all/xbox-360-s-4gb-powers-on-but-freezes-before/d436f1d2-dfc9-4e3c-8400-3dffbda437cd",
+      "snippet": "Jul 21, 2019 · Wondering if anyone knows a solution to this frustrating issue - the console turns on, steady green light, but that's about …"
+    }
+  ]
+}

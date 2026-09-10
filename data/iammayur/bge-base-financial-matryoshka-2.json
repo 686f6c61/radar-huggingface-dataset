@@ -1,0 +1,383 @@
+{
+  "schema": 1,
+  "id": "iammayur/bge-base-financial-matryoshka-2",
+  "slug": "iammayur-bge-base-financial-matryoshka-2",
+  "author": "iammayur",
+  "url": "https://huggingface.co/iammayur/bge-base-financial-matryoshka-2",
+  "created_at": "2026-09-10T11:23:17.000Z",
+  "updated_at": "2026-09-10T11:23:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:6300",
+    "loss:MatryoshkaLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:2205.13147",
+    "arxiv:1807.03748",
+    "base_model:BAAI/bge-base-en-v1.5",
+    "base_model:finetune:BAAI/bge-base-en-v1.5",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.6957142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8271428571428572
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.8714285714285714
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9085714285714286
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@1",
+      "value": 0.6957142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@3",
+      "value": 0.2757142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@5",
+      "value": 0.1742857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@10",
+      "value": 0.09085714285714284
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@1",
+      "value": 0.6957142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@3",
+      "value": 0.8271428571428572
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@5",
+      "value": 0.8714285714285714
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@10",
+      "value": 0.9085714285714286
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8049300569491262
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Mrr@10",
+      "value": 0.7714693877551018
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Map@100",
+      "value": 0.774939610401169
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.6957142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8271428571428572
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.8642857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.91
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@1",
+      "value": 0.6957142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@3",
+      "value": 0.2757142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@5",
+      "value": 0.17285714285714285
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@10",
+      "value": 0.091
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@1",
+      "value": 0.6957142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@3",
+      "value": 0.8271428571428572
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@5",
+      "value": 0.8642857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@10",
+      "value": 0.91
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.804654144312601
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Mrr@10",
+      "value": 0.77081462585034
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Map@100",
+      "value": 0.7742121508941919
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.7042857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8157142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.8657142857142858
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.91
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@1",
+      "value": 0.7042857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@3",
+      "value": 0.27190476190476187
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@5",
+      "value": 0.17314285714285713
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@10",
+      "value": 0.091
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@1",
+      "value": 0.7042857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@3",
+      "value": 0.8157142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@5",
+      "value": 0.8657142857142858
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@10",
+      "value": 0.91
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.805436816270458
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Mrr@10",
+      "value": 0.7722001133786844
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Map@100",
+      "value": 0.7752702789631429
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.6914285714285714
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8085714285714286
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.8542857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.8985714285714286
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Precision@1",
+      "value": 0.6914285714285714
+    }
+  ],
+  "sources": [
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "一直磨，直到能用短效手机号注册whatsapp，将信息修改一下只有你可以登录（绑定邮箱之类的）。 注册成功后，whatsapp那边得加 …"
+    },
+    {
+      "title": "国内如何使用whatsapp？ - 知乎",
+      "url": "https://www.zhihu.com/question/2052047431735550018",
+      "snippet": "Jun 21, 2026 · 国内使用 WhatsApp，主要解决两个问题： 网络环境 + 手机号码注册。 可以按下面这个流程： 1、 准备手机 苹果手机 …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "小米手机通话录音保存在哪里？-百度经验",
+      "url": "https://jingyan.baidu.com/article/e8cdb32bf94d2c37052bad05.html",
+      "snippet": "Sep 23, 2018 · 小米手机通话录音保存在哪里？,在一些重要的电话里面，我们会进行通话中的录音的。但是录音之后的文件却是找不到 …"
+    },
+    {
+      "title": "做外贸，用WhatsApp还是Facebook？ - 知乎",
+      "url": "https://www.zhihu.com/question/2024892517661914205",
+      "snippet": "策略： Facebook 找线索 + WhatsApp 谈细节。 操作：在 Facebook 上找到采购经理或老板，要到联系方式后，迅速转到 WhatsApp …"
+    }
+  ]
+}

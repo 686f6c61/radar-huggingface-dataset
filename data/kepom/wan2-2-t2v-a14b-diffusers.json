@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kepom/Wan2.2-T2V-A14B-Diffusers",
+  "slug": "kepom-wan2-2-t2v-a14b-diffusers",
+  "author": "kepom",
+  "url": "https://huggingface.co/kepom/Wan2.2-T2V-A14B-Diffusers",
+  "created_at": "2026-09-10T11:42:33.000Z",
+  "updated_at": "2026-09-10T11:42:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "arxiv:2503.20314",
+    "arxiv:2309.14509",
+    "license:apache-2.0",
+    "diffusers:WanPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288491584,
+  "parameters_human": "14.29B",
+  "storage_bytes": 126200186483,
+  "storage_human": "126.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USC Perchtoldsdorf - Fußballverein",
+      "url": "https://www.usc-perchtoldsdorf.at/",
+      "snippet": "USC Perchtoldsdorf Top 10! Der USC Perchtoldsdorf hat es bei der österreichweiten ÖFB Topklub Wahl 2024/25 auf den 10. Platz …"
+    },
+    {
+      "title": "Mannschaften - USC Perchtoldsdorf",
+      "url": "https://www.usc-perchtoldsdorf.at/mannschaften/",
+      "snippet": "Unsere Mannschaften beim USC Perchtoldsdorf - von der Kampfmannschaft bis zum Nachwuchs"
+    },
+    {
+      "title": "News - USC Perchtoldsdorf",
+      "url": "https://www.usc-perchtoldsdorf.at/news/",
+      "snippet": "USC-Perchtoldsdorf FAN-Shop ist online! Jetzt Fanartikel bestellen und am Sportplatz abholen. 👉 Zum Shop: erima.shop/usc …"
+    },
+    {
+      "title": "Coppa Mödling 2026 – Internationales Jugendturnier beim USC ...",
+      "url": "https://www.usc-perchtoldsdorf.at/news/2026-05-25-coppa-moedling.md/",
+      "snippet": "May 25, 2026 · Am 29. und 30. August 2026 findet die Coppa Mödling beim USC Perchtoldsdorf statt – mit U10- und U11-Turnieren, …"
+    },
+    {
+      "title": "Saisonabschlussfeier 2026 beim USC Perchtoldsdorf",
+      "url": "https://www.usc-perchtoldsdorf.at/news/2026-05-25-saisonabschlussfeier.md/",
+      "snippet": "May 25, 2026 · Am 21. Juni 2026 lädt der USC Perchtoldsdorf zur großen Saisonabschlussfeier mit Coppa Bambini, Jugendturnier, …"
+    }
+  ]
+}

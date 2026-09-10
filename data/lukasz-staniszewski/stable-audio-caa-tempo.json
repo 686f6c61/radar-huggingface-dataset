@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/stable-audio-caa-tempo",
+  "slug": "lukasz-staniszewski-stable-audio-caa-tempo",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/stable-audio-caa-tempo",
+  "created_at": "2026-09-10T14:57:22.000Z",
+  "updated_at": "2026-09-10T14:58:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "audio-interv",
+  "languages": [],
+  "tags": [
+    "audio-interv",
+    "activation-steering",
+    "audio",
+    "caa",
+    "diffusion",
+    "interpretability",
+    "music",
+    "stable-audio",
+    "steering",
+    "tempo",
+    "arxiv:2602.11910",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2998121979,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fiches pays | CCI France International",
+      "url": "https://www.ccifrance-international.org/le-kiosque/fiches-pays.html",
+      "snippet": "Feb 10, 2026 · Le kiosque Accueil Le kiosque Fiches pays Des fiches pays synthétiques : Chiffres clés, secteurs porteurs, tendances …"
+    },
+    {
+      "title": "Information par pays - France Diplomatie",
+      "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays",
+      "snippet": "Jun 15, 2026 · Retrouvez toutes les informations pratiques, diplomatiques."
+    },
+    {
+      "title": "Fiches pays de chaque pays de la planète - Hors Frontières",
+      "url": "https://hors-frontieres.fr/fiches-pays/",
+      "snippet": "Afin de continuer votre découverte du monde, voici pour tous les pays de la planète des fiches pays qui comportent un résumé qui en …"
+    },
+    {
+      "title": "Business France : l'internationalisation de la France - Business France",
+      "url": "https://www2.teamfrance-export.fr/l/591721/2023-06-08/xzl3mx",
+      "snippet": "Jun 8, 2023 · Les fiches pays présentent une vision synthétique de l’économie de chaque pays : les principaux chiffres clés, les …"
+    },
+    {
+      "title": "Fiches pays",
+      "url": "https://www.cleiss.fr/pays/",
+      "snippet": "Madagascar Mali Malte Maroc Mauritanie Mayotte Mexique Moldavie Monaco Monténégro Niger Norvège Nouvelle-Calédonie …"
+    }
+  ]
+}

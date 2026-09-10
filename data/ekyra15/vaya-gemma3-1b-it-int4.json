@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ekyra15/vaya-gemma3-1b-it-int4",
+  "slug": "ekyra15-vaya-gemma3-1b-it-int4",
+  "author": "ekyra15",
+  "url": "https://huggingface.co/ekyra15/vaya-gemma3-1b-it-int4",
+  "created_at": "2026-09-10T14:51:11.000Z",
+  "updated_at": "2026-09-10T14:56:48.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "on-device",
+    "android",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:finetune:google/gemma-3-1b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 554661243,
+  "storage_human": "555 MB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home :: bandit.camp - The true immersive Rust gaming experience",
+      "url": "https://bandit.camp/",
+      "snippet": "The true immersive Rust gaming experience. Play the original Wheel of Fortune, Coinflip and more. Daily giveaways, free scrap and …"
+    },
+    {
+      "title": "bandit.camp - The true immersive Rust gaming experience",
+      "url": "https://bandit.camp/promo/race/69ca96229e970424560dd2cf",
+      "snippet": "The true immersive Rust gaming experience. Play the original Wheel of Fortune, Coinflip and more. Daily giveaways, free scrap and …"
+    },
+    {
+      "title": "Negative or invalid balance | bandit.camp Help Center",
+      "url": "https://help.bandit.camp/en/articles/6088670-negative-or-invalid-balance",
+      "snippet": "Jun 17, 2026 · Visual glitch showing fake or wrong balance When playing in multiple tabs or refreshing the page while spending scrap …"
+    },
+    {
+      "title": "Game animation glitches | bandit.camp Help Center",
+      "url": "https://help.bandit.camp/en/articles/6088655-game-animation-glitches",
+      "snippet": "Jun 17, 2026 · This can also be caused by RAM saving measures by your current browser when you are using bandit.camp in the …"
+    },
+    {
+      "title": "Withdrawing | bandit.camp Help Center",
+      "url": "https://help.bandit.camp/en/collections/3397303-withdrawing",
+      "snippet": "Bring home the loot you won"
+    }
+  ]
+}

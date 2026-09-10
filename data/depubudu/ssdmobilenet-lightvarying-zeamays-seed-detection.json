@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DePubudu/SSDMobileNet-LightVarying-ZeaMays-Seed-Detection",
+  "slug": "depubudu-ssdmobilenet-lightvarying-zeamays-seed-detection",
+  "author": "DePubudu",
+  "url": "https://huggingface.co/DePubudu/SSDMobileNet-LightVarying-ZeaMays-Seed-Detection",
+  "created_at": "2026-09-10T15:39:43.000Z",
+  "updated_at": "2026-09-10T15:48:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "object-detection",
+    "tensorflow",
+    "ssd-mobilenet",
+    "ssd-mobilenet-v2",
+    "fpn",
+    "zea-mays",
+    "maize",
+    "seed-detection",
+    "light-varying",
+    "low-light",
+    "agriculture",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27155335,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Verkehrsinfos für Sachsen, Thüringen und Sachsen-Anhalt!",
+      "url": "https://www.mdr.de/jump/verkehr",
+      "snippet": "Egal ob Staus, Blitzer oder Baustellen – mit unseren topaktuellen Verkehrsmeldungen für Sachsen, Thüringen und Sachsen-Anhalt …"
+    },
+    {
+      "title": "MDR JUMP Startseite | mdr.de",
+      "url": "https://www.mdr.de/jump",
+      "snippet": "MDR JUMP – die neue digitale Entertainment-Marke des MDR."
+    },
+    {
+      "title": "Verkehrsmeldungen aus Sachsen | mdr.de",
+      "url": "https://www.mdr.de/sachsenradio/wetter-verkehr/verkehr",
+      "snippet": "Hier finden Sie Adressen und Telefonnummern der Verkehrsdienste. Staus und Sperrungen, Blitzer und Baustellen - alle aktuellen …"
+    },
+    {
+      "title": "Aktuelle Medieninformationen der Polizei Sachsen",
+      "url": "https://www.polizei.sachsen.de/de/presseinfo_aktuell.asp",
+      "snippet": "16 hours ago · Beute in Pkw gemacht | Auf Stauende aufgefahren | Audi Q5 entwendet 06.09.2026, 01:14 Uhr - PD C Alle …"
+    },
+    {
+      "title": "Stau und Verkehrsmeldungen Sachsen - Stau und ... - Staukarte Deutschland",
+      "url": "https://www.staumelder-karte.de/stau_verkehrsmeldungen_sachsen/",
+      "snippet": "Stau Sachsen, Echtzeit Stau und Verkehrsinformationen Sachsen. Aktuelle Baustellen und Verkehrsmeldungen Sachsen"
+    }
+  ]
+}

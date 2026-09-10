@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "minsonganingee/omnivla-edge-rides11-odom-20m-20260910",
+  "slug": "minsonganingee-omnivla-edge-rides11-odom-20m-20260910",
+  "author": "minsonganingee",
+  "url": "https://huggingface.co/minsonganingee/omnivla-edge-rides11-odom-20m-20260910",
+  "created_at": "2026-09-10T11:33:55.000Z",
+  "updated_at": "2026-09-10T11:37:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "navigation",
+    "vla",
+    "robotics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4082352549,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "一直磨，直到能用短效手机号注册whatsapp，将信息修改一下只有你可以登录（绑定邮箱之类的）。 注册成功后，whatsapp那边得加 …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "国内如何使用whatsapp？ - 知乎",
+      "url": "https://www.zhihu.com/question/2052047431735550018",
+      "snippet": "Jun 21, 2026 · 国内使用 WhatsApp，主要解决两个问题： 网络环境 + 手机号码注册。 可以按下面这个流程： 1、 准备手机 苹果手机 …"
+    },
+    {
+      "title": "小米手机通话录音保存在哪里？-百度经验",
+      "url": "https://jingyan.baidu.com/article/e8cdb32bf94d2c37052bad05.html",
+      "snippet": "Sep 23, 2018 · 小米手机通话录音保存在哪里？,在一些重要的电话里面，我们会进行通话中的录音的。但是录音之后的文件却是找不到 …"
+    },
+    {
+      "title": "做外贸，用WhatsApp还是Facebook？ - 知乎",
+      "url": "https://www.zhihu.com/question/2024892517661914205",
+      "snippet": "策略： Facebook 找线索 + WhatsApp 谈细节。 操作：在 Facebook 上找到采购经理或老板，要到联系方式后，迅速转到 WhatsApp …"
+    }
+  ]
+}

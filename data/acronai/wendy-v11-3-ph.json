@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AcronAI/wendy-v11.3-ph",
+  "slug": "acronai-wendy-v11-3-ph",
+  "author": "AcronAI",
+  "url": "https://huggingface.co/AcronAI/wendy-v11.3-ph",
+  "created_at": "2026-09-10T16:09:39.000Z",
+  "updated_at": "2026-09-10T16:15:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762162,
+  "storage_human": "17.5 GB",
+  "base_model": "unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "واتساب | مراسلات ومكالمات مجانية وآمنة وموثوقة وبخصوصية تامة",
+      "url": "https://www.whatsapp.com/?lang=ar",
+      "snippet": "واتساب هو تطبيق مجاني يمكنك من خلاله إجراء المراسلات والمكالمات بطريقة بسيطة وآمنة وموثوقة، وهو متاح على الهواتف في جميع أنحاء العالم."
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "‏واتساب ويب‏ - مدونة واتساب - WhatsApp Blog",
+      "url": "https://blog.whatsapp.com/whats-app-web?lang=ar",
+      "snippet": "إن واتساب ويب عبارة عن امتداد يتيح لك استخدام حساب واتساب الخاص بهاتفك على جهاز الكمبيوتر: من شأن متصفح الويب أن يعرض نفس المحادثات والرسائل الموجودة على هاتفك -- هذا يعني أن كافة رسائلك …"
+    },
+    {
+      "title": "نبذة عن واتساب ويب | WhatsApp Help Center",
+      "url": "https://faq.whatsapp.com/ar/web/26000012",
+      "snippet": "يتيح لك واتساب ويب إجراء مراسلة خاصة من أي متصفح على الكمبيوتر، للبقاء على تواصل. يمنحك واتساب ويب سهولة الاستخدام ومزايا الشاشة الأكبر دون الحاجة إلى تنزيل تطبيق مخصص للكمبيوتر."
+    }
+  ]
+}

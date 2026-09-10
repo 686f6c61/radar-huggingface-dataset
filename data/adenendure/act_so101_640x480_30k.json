@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AdenEndure/act_so101_640x480_30k",
+  "slug": "adenendure-act_so101_640x480_30k",
+  "author": "AdenEndure",
+  "url": "https://huggingface.co/AdenEndure/act_so101_640x480_30k",
+  "created_at": "2026-09-10T11:19:50.000Z",
+  "updated_at": "2026-09-10T11:20:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:AdenEndure/so101_640x480",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714752,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "לוח שידורים - אתר מתג",
+      "url": "https://www.meteg.co.il/timetable/",
+      "snippet": "השראה לאושר עם עופרה נחמד כיצד ליצור שינוי בחיינו דרך חשיבה חיובית והסוד שיאפשר להפוך את המכשול של היום להזדמנות של מחר (שידור חי)"
+    },
+    {
+      "title": "מחברים תוכן לגמלאים - בית - אתר מתג",
+      "url": "https://www.meteg.co.il/",
+      "snippet": "ערוץ תוכן חברתי הגדול בישראל לבני 60 פלוס, הכולל ערוץ שידורים חיים, ספריית VOD ענקית, הכרויות, טיולים, קורסים, קהילות חברים ועוד."
+    },
+    {
+      "title": "אתר מ.ת.ג - פורטל תוכן לגמלאים - YouTube",
+      "url": "https://www.youtube.com/@MetegTV/streams",
+      "snippet": "אתר מתג - לגלות עולמות תוכן, תרבות ופנאי מרתקים לוח שידורים יומי | ספריית VOD | מאמרים | קורסים בקרו באתר - https://www ..."
+    },
+    {
+      "title": "לוח שידורים אשכול",
+      "url": "https://lp.smoove.io/wm37",
+      "snippet": "על רקע המצב הביטחוני והנחיות פיקוד העורף ובעקבות הצרכים העולים מהשטח, הן בהפגת תחושת הבדידות והן ביצירת שגרה פעילה, הוחלט באשכול …"
+    },
+    {
+      "title": "מתג - פורטל תוכן לגמלאים - Facebook",
+      "url": "https://www.facebook.com/metegisrael/",
+      "snippet": "Jun 4, 2026 · מתג - פורטל תוכן לגמלאים אתר מ.ת.ג הינו פורטל תוכן, פנאי ותרבות הגדול בישראל לבני 60 פלוס."
+    }
+  ]
+}

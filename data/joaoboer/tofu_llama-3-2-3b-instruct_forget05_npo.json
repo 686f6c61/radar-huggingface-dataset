@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_NPO",
+  "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget05_npo",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_NPO",
+  "created_at": "2026-09-10T13:06:12.000Z",
+  "updated_at": "2026-09-10T13:07:26.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "NPO",
+    "forget05",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "bershka - 知乎",
+      "url": "https://www.zhihu.com/topic/20651578/intro",
+      "snippet": "巴适卡 (Bershka) 是Inditex旗下品牌，同时也是西班牙快时尚品牌ZARA的姐妹品牌。Inditex于1998年建立了巴适卡 (Bershka) ，巴适 …"
+    },
+    {
+      "title": "Cómo hacer el pase largo en el fútbol a lo Toni Kroos",
+      "url": "https://www.forumsport.com/es-es/blogs/futbol/dominando-arte-pase-largo-en-el-futbol/",
+      "snippet": "Te contamos al detalle la técnica para que domines el pase largo en el fútbol y seas el nuevo Toni Kroos. ¿Preparado/a arrasar en el …"
+    }
+  ]
+}

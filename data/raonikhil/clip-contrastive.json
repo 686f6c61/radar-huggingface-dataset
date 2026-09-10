@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "raonikhil/clip-contrastive",
+  "slug": "raonikhil-clip-contrastive",
+  "author": "raonikhil",
+  "url": "https://huggingface.co/raonikhil/clip-contrastive",
+  "created_at": "2026-09-10T14:21:46.000Z",
+  "updated_at": "2026-09-10T14:21:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, find locations, get directions, and access real-time traffic updates."
+    },
+    {
+      "title": "Für Fotografen – Business Photos – Google Maps",
+      "url": "https://maps.google.de/help/maps/businessphotos/photographers/",
+      "snippet": "Sie erhalten die Schulungen und den Support, die Sie benötigen, um Street View-Bilder aufzunehmen, die auf Google Maps …"
+    },
+    {
+      "title": "Datenschutzerklärung & Nutzungsbedingungen - Google Maps",
+      "url": "https://maps.google.de/intl/de/policies/privacy/archive/20170417-20171002/",
+      "snippet": "Apr 17, 2017 · Google verknüpft Ihre Gerätekennungenoder Telefonnummergegebenenfalls mit Ihrem Google-Konto. Protokolldaten …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.de/intl/de/landing/transit/",
+      "snippet": "If you provide a transportation service that is open to the public, and operates with fixed schedules and routes, we welcome your …"
+    }
+  ]
+}

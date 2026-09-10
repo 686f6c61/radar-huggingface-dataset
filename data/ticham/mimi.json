@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TichAm/Mimi",
+  "slug": "ticham-mimi",
+  "author": "TichAm",
+  "url": "https://huggingface.co/TichAm/Mimi",
+  "created_at": "2026-09-10T13:34:54.000Z",
+  "updated_at": "2026-09-10T13:46:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130958064,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and …"
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/?hl=th",
+      "snippet": "Google Scholar ให้วิธีที่ง่ายต่อการค้นหาวรรณกรรมทางวิชาการอย่างครอบคลุม ค้นหาในสาขาและแหล่งข้อมูลที่หลากหลาย เช่น บทความ ..."
+    },
+    {
+      "title": "Google Scholar Citations",
+      "url": "https://scholar.google.com/citations?user=%2A%2A%2A",
+      "snippet": "Google Scholar Citations lets you track citations to your publications over time."
+    },
+    {
+      "title": "‪Yuanwei Liu‬ - ‪Google 学术搜索‬ - Google Scholar",
+      "url": "https://scholar.google.com/citations?user=FxLf7ZAAAAAJ&hl=zh-CN",
+      "snippet": "‪IEEE Fellow, EIC of TGCN, Clarivate Highly Cited Researcher, The University of Hong Kong‬ - ‪‪引用次数：51,113 次‬‬ - ‪Agent Native …"
+    },
+    {
+      "title": "‪Dr Harishchander Anandaram‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=mokZJ14AAAAJ&hl=en",
+      "snippet": "‪Assistant Professor‬ - ‪‪Cited by 1,385‬‬ - ‪Bioinformatics‬ - ‪Computational Systems Biology and Metabolic Engineering‬"
+    }
+  ]
+}

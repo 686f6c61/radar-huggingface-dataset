@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mrhwl123/Yolox",
+  "slug": "mrhwl123-yolox",
+  "author": "mrhwl123",
+  "url": "https://huggingface.co/mrhwl123/Yolox",
+  "created_at": "2026-09-10T12:55:04.000Z",
+  "updated_at": "2026-09-10T14:07:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1586851744,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ᐅ Pachtvertrag teilweise kündigen? - JuraForum.de",
+      "url": "https://www.juraforum.de/forum/t/pachtvertrag-teilweise-kuendigen.734313/",
+      "snippet": "Mar 8, 2023 · Pachtvertrag teilweise kündigen? Einmal angenommen, ein Grundstückseigentümer (A) teilt sein Grundstück in …"
+    },
+    {
+      "title": "ᐅ Pachtvertrag nicht auffindbar - JuraForum.de",
+      "url": "https://www.juraforum.de/forum/t/pachtvertrag-nicht-auffindbar.750588/",
+      "snippet": "Oct 17, 2024 · Pachtvertrag nicht auffindbar Folgende Annahme: Partei A hatte vor langer Zeit ein Grundstück an Partei B …"
+    },
+    {
+      "title": "️ Pachtzinserhöhung - Definition & Bedeutung",
+      "url": "https://www.juraforum.de/lexikon/pachtzinserhoehung",
+      "snippet": "Mar 28, 2026 · Pachtzinserhöhung Definition & Bedeutung im juristischen Kontext, Voraussetzungen, gesetzliche und vertragliche …"
+    },
+    {
+      "title": "§ 594c BGB - Kündigung bei Berufsunfähigkeit des Pächters",
+      "url": "https://www.juraforum.de/gesetze/bgb/594c-kuendigung-bei-berufsunfaehigkeit-des-paechters",
+      "snippet": "Lesen Sie § 594c BGB kostenlos in der Gesetzessammlung von Juraforum.de mit über 6200 Gesetzen und Vorschriften."
+    },
+    {
+      "title": "ᐅ Kleingartenverein - Laube gekauft, Pachtvertrag verweigert",
+      "url": "https://www.juraforum.de/forum/t/kleingartenverein-laube-gekauft-pachtvertrag-verweigert.298182/",
+      "snippet": "Oct 8, 2009 · AW: Kleingartenverein - Laube gekauft, Pachtvertrag verweigert War irgendwie vertraglich vereinbart, dass der Kauf der …"
+    }
+  ]
+}

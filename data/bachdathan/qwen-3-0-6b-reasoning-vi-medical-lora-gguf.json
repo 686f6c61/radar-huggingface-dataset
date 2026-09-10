@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/Qwen-3-0.6B-Reasoning-Vi-Medical-LoRA-GGUF",
+  "slug": "bachdathan-qwen-3-0-6b-reasoning-vi-medical-lora-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/Qwen-3-0.6B-Reasoning-Vi-Medical-LoRA-GGUF",
+  "created_at": "2026-09-10T11:08:32.000Z",
+  "updated_at": "2026-09-10T11:09:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1450175232,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B, danhtran2mind/Qwen-3-0.6B-Reasoning-Vi-Medical-LoRA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhone - Apple (IT)",
+      "url": "https://www.apple.com/it/iphone/",
+      "snippet": "Progettati per Apple Intelligence. Scopri iPhone Duo, iPhone 18 Pro, iPhone Air, iPhone 17 e iPhone 17e."
+    },
+    {
+      "title": "iPhone - Modelle vergleichen - Apple (DE)",
+      "url": "https://www.apple.com/de/iphone/compare/",
+      "snippet": "Vergleiche Features und technische Daten von iPhone 17 Pro, iPhone 17 Pro Max, iPhone Air, iPhone 17, iPhone 17e und vielen mehr."
+    },
+    {
+      "title": "Apple TV",
+      "url": "https://tv.apple.com/",
+      "snippet": "Browse all movies, TV shows, and more from Apple TV. Watch all Apple Originals here and on the Apple TV app across your devices."
+    },
+    {
+      "title": "强制重新启动 iPhone - 官方 Apple 支持 (中国)",
+      "url": "https://support.apple.com/zh-cn/guide/iphone/iph8903c3ee6/ios",
+      "snippet": "将 iPhone 开机或关机 强制重新启动 iPhone 更新 iOS 备份 iPhone 还原 iPhone 设置 抹掉 iPhone 从备份恢复所有内容 恢复已购项目 …"
+    },
+    {
+      "title": "About iOS 18 Updates - Apple Support",
+      "url": "https://support.apple.com/en-us/121161",
+      "snippet": "Aug 18, 2026 · About iOS 18 Updates iOS 18 brings new ways to customize the iPhone experience, relive special moments, and stay …"
+    }
+  ]
+}

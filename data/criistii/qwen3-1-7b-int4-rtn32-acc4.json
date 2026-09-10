@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "criistii/qwen3-1.7b-int4-rtn32-acc4",
+  "slug": "criistii-qwen3-1-7b-int4-rtn32-acc4",
+  "author": "criistii",
+  "url": "https://huggingface.co/criistii/qwen3-1.7b-int4-rtn32-acc4",
+  "created_at": "2026-09-10T12:02:09.000Z",
+  "updated_at": "2026-09-10T12:02:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime-genai",
+    "int4",
+    "mobile",
+    "android",
+    "ios",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1108531924,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vásárlás: Jász-Iron Bordűr - Árak összehasonlítása, Jász-Iron Bordűr ...",
+      "url": "https://bordur.arukereso.hu/jasz-iron/",
+      "snippet": "Vásárlás: Jász-Iron Bordűr árak, eladó Jász-Iron Bordűr. Akciós Jász-Iron Bordűr ár! Online boltok, akciók egy helyen az Árukereső …"
+    },
+    {
+      "title": "Jász-iron iron bordűr 227-07 10mx4,5cm bézs-barna - Bordűr",
+      "url": "https://www.praktiker.hu/epites-felujitas/tapeta/bordur/jasz-iron-iron-bordur-10mx4-5cm-beige-barna/p/309822",
+      "snippet": "Bordűrrel egyedi dizájnt adhat otthona bármely helyiségének! A szegélycsíkot általában a fal tetejére vagy székek hátának vonalában …"
+    },
+    {
+      "title": "Jász-iron iron bordűr 227-09 10mx4,5cm fekete-fehér - Bordűr",
+      "url": "https://www.praktiker.hu/epites-felujitas/tapeta/bordur/jasz-iron-iron-bordur-10mx4-5cm-fekete-feher/p/309819",
+      "snippet": "Bordűrrel egyedi dizájnt adhat otthona bármely helyiségének! A szegélycsíkot általában a fal tetejére vagy székek hátának vonalában …"
+    },
+    {
+      "title": "Vásárlás: Jász-Iron Zöld-arany szalag mintás bordűr (F345-04) Bordűr ...",
+      "url": "https://bordur.arukereso.hu/jasz-iron/zold-arany-szalag-mintas-bordur-f345-04-p1363575295/",
+      "snippet": "Jász-Iron Zöld-arany szalag mintás bordűr (F345-04) vélemények. 13 széles 10 m hosszú papír bordűr. 13 cm széles 10 m hosszú …"
+    },
+    {
+      "title": "JÁSZ-IRON - márka információ, adatok, vásárlás - globalplaza",
+      "url": "https://www.globalplaza.hu/marka/jasz-iron",
+      "snippet": "JÁSZ-IRON információ, szerviz, címek, JÁSZ-IRON hírek és akciók Magyarországon."
+    }
+  ]
+}

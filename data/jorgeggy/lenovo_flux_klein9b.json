@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jorgeggy/lenovo_flux_klein9b",
+  "slug": "jorgeggy-lenovo_flux_klein9b",
+  "author": "jorgeggy",
+  "url": "https://huggingface.co/jorgeggy/lenovo_flux_klein9b",
+  "created_at": "2026-09-10T17:56:56.000Z",
+  "updated_at": "2026-09-10T17:57:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168930223,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uninstall or remove apps and programs in Windows",
+      "url": "https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "snippet": "Select Programs > Programs and Features. Press and hold (or right-click) on the program you want to remove and select Uninstall or …"
+    },
+    {
+      "title": "Desinstalar o quitar aplicaciones y programas en Windows",
+      "url": "https://support.microsoft.com/es-es/windows/desinstalar-o-quitar-aplicaciones-y-programas-en-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "snippet": "Resumen Hay diferentes formas de quitar aplicaciones y programas, por lo que, si no encuentras el que estás buscando, puedes …"
+    },
+    {
+      "title": "Troubleshoot problems updating Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows",
+      "snippet": "Learn how to troubleshoot problems updating Windows. Find answers to common questions and issues installing Windows updates."
+    },
+    {
+      "title": "Repair apps and programs in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/apps/repair-apps-and-programs-in-windows",
+      "snippet": "Repair apps and programs in Windows Windows 11 Windows 10 Summary This article explains how to repair apps and programs in …"
+    },
+    {
+      "title": "Back up and restore with Windows Backup | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/back-up-and-restore-with-windows-backup",
+      "snippet": "Learn how to back up and restore apps, settings, files, photos, and Microsoft Edge favorites and preferences on your Windows PC …"
+    }
+  ]
+}

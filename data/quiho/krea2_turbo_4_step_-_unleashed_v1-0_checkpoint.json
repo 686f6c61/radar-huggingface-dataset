@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Quiho/Krea2_Turbo_4_Step_-_Unleashed_v1.0_checkpoint",
+  "slug": "quiho-krea2_turbo_4_step_-_unleashed_v1-0_checkpoint",
+  "author": "Quiho",
+  "url": "https://huggingface.co/Quiho/Krea2_Turbo_4_Step_-_Unleashed_v1.0_checkpoint",
+  "created_at": "2026-09-10T11:42:14.000Z",
+  "updated_at": "2026-09-10T11:48:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "checkpoint",
+    "krea-2",
+    "turbo",
+    "base model",
+    "fast",
+    "filterbypass",
+    "unlocked",
+    "4 step",
+    "distilled",
+    "civitai",
+    "imported",
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12849576162,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ING Bank Śląski",
+      "url": "https://www.ing.pl/",
+      "snippet": "Zakres korzyści zależy od wybranego Konta w Planie. Plan to pakiet usług, który udostępniamy z rachunkiem oszczędnościowo …"
+    },
+    {
+      "title": "Moje ING | ING Bank Śląski",
+      "url": "https://login.ingbank.pl/mojeing/app/",
+      "snippet": "Nowa bankowość internetowa i mobilna ING Banku Śląskiego. Bankuj po swojemu, tak jak lubisz. Zaloguj się."
+    },
+    {
+      "title": "Moje ING. Bankowość internetowa i mobilna | ING Bank Śląski",
+      "url": "https://www.ing.pl/indywidualni/bankowosc-internetowa-mojeing",
+      "snippet": "Bankuj po swojemu, tak jak lubisz. Na każdym urządzeniu. Poznaj Moje ING. Zobacz, co wyróżnia naszą bankowość internetową i …"
+    },
+    {
+      "title": "Zaloguj się do ING Business - ING Business",
+      "url": "https://ingbusiness.pl/gib/login",
+      "snippet": "Bankowość internetowa dla klientów biznesowych ING Banku Śląskiego. Informacje o Twoich produktach i finansach masz pod ręką!"
+    },
+    {
+      "title": "ING Towarzystwo Funduszy Inwestycyjnych | ING TFI",
+      "url": "https://www.ingtfi.pl/",
+      "snippet": "Dlaczego warto inwestować z ING TFI U nas zainwestujesz w fundusze inwestycyjne - w jednym miejscu znajdziesz ofertę zarówno …"
+    }
+  ]
+}

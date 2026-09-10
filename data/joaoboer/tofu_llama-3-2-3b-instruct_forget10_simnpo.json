@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_SimNPO",
+  "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget10_simnpo",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_SimNPO",
+  "created_at": "2026-09-10T13:20:51.000Z",
+  "updated_at": "2026-09-10T13:22:04.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "SimNPO",
+    "forget10",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Euphoria (Fernsehserie) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Euphoria_(Fernsehserie)",
+      "snippet": "Euphoria handelt von einer Gruppe von High-School -Schülerinnen und -Schülern um die drogenabhängige 17-jährige Rue Bennett …"
+    },
+    {
+      "title": "Euphoria | Film: Inhalt, Besetzung und Streaming",
+      "url": "https://streaming-guide.spiegel.de/serien/euphoria/",
+      "snippet": "Apr 4, 2026 · Worum geht’s? Die 17-jährige Rue (Zendaya) kehrt nach einem Drogenentzug an ihre Highschool zurück. Doch es fällt …"
+    },
+    {
+      "title": "Euphoria - Streams, Episodenguide und News zur Serie",
+      "url": "https://www.serienjunkies.de/euphoria/",
+      "snippet": "Die US-Serie Euphoria ist ein schonungsloser Blick in den Alltag der Generation Z und dabei wird kein Tabuthema ausgelassen: …"
+    },
+    {
+      "title": "Euphoria (Fernsehserie 2019–2026) - IMDb",
+      "url": "https://www.imdb.com/de/title/tt8772296/",
+      "snippet": "Rue kehrt aus dem Entzug nach Hause zurück und lernt Jules kennen; Nate und Maddy versuchen, sich gegenseitig eifersüchtig zu …"
+    },
+    {
+      "title": "Euphoria: Staffeln und Episodenguide - Netzwelt",
+      "url": "https://www.netzwelt.de/serien/euphoria/",
+      "snippet": "HBO setzte in den vergangenen Jahren nicht nur auf Königreiche und Drachenreiter, sondern auch um das dramatische Leben von …"
+    }
+  ]
+}

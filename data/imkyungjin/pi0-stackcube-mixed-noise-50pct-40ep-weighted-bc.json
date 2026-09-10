@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-mixed-noise-50pct-40ep-weighted-bc",
+  "slug": "imkyungjin-pi0-stackcube-mixed-noise-50pct-40ep-weighted-bc",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-50pct-40ep-weighted-bc",
+  "created_at": "2026-09-10T15:15:59.000Z",
+  "updated_at": "2026-09-10T15:19:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_mixed_noise_50pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "Télécharger l'application mobile YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
+    },
+    {
+      "title": "Get help signing in to YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/troubleshooter/3219097?hl=en",
+      "snippet": "To make sure you’re getting the directions for your account, select from the options below."
+    },
+    {
+      "title": "View or delete your YouTube search history",
+      "url": "https://support.google.com/youtube/answer/57711?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can manage your search history by deleting individual searches or clearing or pausing search history. Learn more about your …"
+    }
+  ]
+}

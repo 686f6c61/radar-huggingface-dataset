@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xbikevn/LightOnOCR-2-1B-vi-vllm",
+  "slug": "xbikevn-lightonocr-2-1b-vi-vllm",
+  "author": "xbikevn",
+  "url": "https://huggingface.co/xbikevn/LightOnOCR-2-1B-vi-vllm",
+  "created_at": "2026-09-10T11:08:05.000Z",
+  "updated_at": "2026-09-10T11:08:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral3",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:lightonai/LightOnOCR-2-1B",
+    "base_model:finetune:lightonai/LightOnOCR-2-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1005647872,
+  "parameters_human": "1.01B",
+  "storage_bytes": 3661394040,
+  "storage_human": "3.7 GB",
+  "base_model": "lightonai/LightOnOCR-2-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopieren en plakken - Microsoft Community",
+      "url": "https://answers.microsoft.com/nl-nl/windows/forum/all/kopieren-en-plakken/c497e035-7424-49d3-9982-46161df9609a",
+      "snippet": "Kopieren met de muis werkt niet goed meer. Kan het kloppen dat dit met Windows 7 te maken heeft? Meestal moet ik meerdere …"
+    },
+    {
+      "title": "QUICK START GUIDE - kb-nl.sandisk.com",
+      "url": "https://kb-nl.sandisk.com/app/answers/detail/a_id/2413/session/L2F2LzEvdGltZS8xNDY5MDEwNDMyL3NpZC9hRDIxai1WbQ%3D%3D",
+      "snippet": "SanDisk SecureAccessTM is a fast, simple way to store and protect critical and sensitive files on any SanDisk® USB flash drive. …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/security-issue-im-moving-out-of-microsoft/b0c5dce4-4465-436a-8cdc-09daf77a70c8",
+      "snippet": ""
+    },
+    {
+      "title": "Wearable MP3 Player",
+      "url": "https://kb-nl.sandisk.com/app/answers/detail/a_id/20075",
+      "snippet": "• Symptoms of hearing loss increase gradually with prolonged exposure at high levels of loudness. • Initially, you may not even be …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-handler-softwaresuch-as-microsoft-office/9ff5d701-1131-4df9-8f76-07e03bbfe8f0",
+      "snippet": ""
+    }
+  ]
+}

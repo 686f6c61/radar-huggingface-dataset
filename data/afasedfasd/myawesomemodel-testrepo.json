@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "afasedfasd/MyAwesomeModel-TestRepo",
+  "slug": "afasedfasd-myawesomemodel-testrepo",
+  "author": "afasedfasd",
+  "url": "https://huggingface.co/afasedfasd/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T13:54:26.000Z",
+  "updated_at": "2026-09-10T13:54:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows-Updates installeren | Microsoft Support",
+      "url": "https://support.microsoft.com/nl-nl/windows/deployment/updates-lifecycle/install-windows-updates",
+      "snippet": "Windows 11 Windows 10 In Windows kunt u zelf bepalen wanneer en hoe u de meest recente updates wilt ontvangen zodat uw …"
+    },
+    {
+      "title": "Instale as Atualizações do Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pt-br/windows/deployment/updates-lifecycle/install-windows-updates",
+      "snippet": "Windows 11 Windows 10 No Windows, você decide quando e como obter as últimas atualizações para manter seu dispositivo …"
+    },
+    {
+      "title": "Installer Windows Mises à jour | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/windows/deployment/updates-lifecycle/install-windows-updates",
+      "snippet": "Windows 11 Windows 10 Dans Windows, vous décidez quand et comment obtenir les dernières mises à jour pour assurer le bon …"
+    },
+    {
+      "title": "準備進行 Windows 11 升級 | Microsoft Support",
+      "url": "https://support.microsoft.com/zh-tw/windows/deployment/install-upgrade/getting-ready-for-the-windows-11-upgrade",
+      "snippet": "安裝 Windows 11 一旦 Windows 11 升級針對你的電腦進行測試並驗證，Windows Update 就會顯示它已經準備好安裝。 要確認 …"
+    },
+    {
+      "title": "Möglichkeiten zum Installieren von Windows 11 | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/deployment/install-upgrade/ways-to-install-windows-11",
+      "snippet": "Feb 4, 2025 · Erfahren Sie, wie Sie Windows 11 installieren, einschließlich der empfohlenen Option, die Seite \"Windows Update\" …"
+    }
+  ]
+}

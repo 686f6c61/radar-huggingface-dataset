@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Bloodman-the-master/ValentIA_BETA1.0",
+  "slug": "bloodman-the-master-valentia_beta1-0",
+  "author": "Bloodman-the-master",
+  "url": "https://huggingface.co/Bloodman-the-master/ValentIA_BETA1.0",
+  "created_at": "2026-09-10T18:44:31.000Z",
+  "updated_at": "2026-09-10T18:44:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma2",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:Bloodman-the-master/ValentIA-OLD",
+    "base_model:quantized:Bloodman-the-master/ValentIA-OLD",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 5761057408,
+  "storage_human": "5.8 GB",
+  "base_model": "Bloodman-the-master/ValentIA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Meet - Online Video Calls, Meetings and Conferencing",
+      "url": "https://meet.google.com/",
+      "snippet": "Real-time meetings by Google. Using your browser, share your video, desktop, and presentations with teammates and customers."
+    },
+    {
+      "title": "Google Meet: Online Web and Video Conferencing Calls | Google …",
+      "url": "https://workspace.google.com/products/meet/",
+      "snippet": "Use Google Meet for secure online web conferencing calls and video chat as a part of Google Workspace."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?ltmpl=meet&osid=1",
+      "snippet": "Use a private browsing window to sign in. Learn more about using Guest mode."
+    },
+    {
+      "title": "Meet",
+      "url": "https://meet.com/",
+      "snippet": "Connect with people in real life using Meet.com, the best way to build meaningful connections."
+    },
+    {
+      "title": "Start or schedule a Google Meet video meeting",
+      "url": "https://support.google.com/meet/answer/9302870?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Meet is your one app for video calling and meetings across all devices. Use video calling features like fun filters and effects or …"
+    }
+  ]
+}

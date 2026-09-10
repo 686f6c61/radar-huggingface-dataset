@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "Nishant2414/Audio8-TTS-Preview-0.6b",
+  "slug": "nishant2414-audio8-tts-preview-0-6b",
+  "author": "Nishant2414",
+  "url": "https://huggingface.co/Nishant2414/Audio8-TTS-Preview-0.6b",
+  "created_at": "2026-09-10T15:05:52.000Z",
+  "updated_at": "2026-09-10T15:05:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "yue",
+    "zh",
+    "nl",
+    "en",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arktts",
+    "feature-extraction",
+    "audio",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "zero-shot",
+    "multilingual",
+    "custom_code",
+    "yue",
+    "zh",
+    "nl",
+    "en",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 601159424,
+  "parameters_human": "601.2M",
+  "storage_bytes": 2564417959,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Formazione Docenti - Mnemosine Ente accreditato MIUR formazione …",
+      "url": "https://www.formazionedocenti.it/",
+      "snippet": "Oggi l'Associazione Mnemosine è un Ente Accreditato M.I.M. che opera su tutto il territorio Nazionale e Internazionale nel campo …"
+    },
+    {
+      "title": "Mnemosine Login - Formazione Docenti",
+      "url": "https://www.formazionedocenti.it/login/",
+      "snippet": "Formazione Mnemosine Ente accreditato MIUR formazione docenti master e corsi universitari"
+    },
+    {
+      "title": "Formazione Docenti - Mnemosine Ente accreditato MIUR formazione …",
+      "url": "https://www.formazionedocenti.it/60cfu-30cfu-abilitazione-insegnamento",
+      "snippet": "Formazione Mnemosine Ente accreditato MIUR formazione docenti master e corsi universitari"
+    },
+    {
+      "title": "Corsi di Perfezionamento Annuali - Formazione Docenti",
+      "url": "https://www.formazionedocenti.it/corsi-mnemosine/PCU",
+      "snippet": "17 hours ago · Corsi di Perfezionamento Annuali I Corsi di Perfezionamento Universitari Annuali di 500 ore e 20 CFU, erogati …"
+    },
+    {
+      "title": "Formazione Docenti - Mnemosine Ente accreditato MIUR formazione …",
+      "url": "https://www.formazionedocenti.it/associazione-mnemosine/",
+      "snippet": "Mnemosine - Università del Salento (a cura di), Modelli di intervento nelle relazioni familiari e couseling familiare in Costruire …"
+    }
+  ]
+}

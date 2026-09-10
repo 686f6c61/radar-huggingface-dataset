@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SAD1CZ12DSA/MyAwesomeModel-TestRepository",
+  "slug": "sad1cz12dsa-myawesomemodel-testrepository",
+  "author": "SAD1CZ12DSA",
+  "url": "https://huggingface.co/SAD1CZ12DSA/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-10T15:00:17.000Z",
+  "updated_at": "2026-09-10T15:01:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arnica D6 - Globuli",
+      "url": "https://www.globuli.de/arnica-d6-expertenmeinung/",
+      "snippet": "D6 bedeutet also, dass die Urpotenz 6 Mal hintereinander verdünnt und verschüttelt wurde. Die Potenz D6 zeigt an, dass der …"
+    },
+    {
+      "title": "Arnika Kügelchen - richtig dosieren und anwenden - HELPSTER",
+      "url": "https://www.helpster.de/arnika-kuegelchen-richtig-dosieren-und-anwenden_229021",
+      "snippet": "Die Dosierung von Arnica D6 kann je nach individuellen Symptomen und Gesundheitszustand variieren. Im Allgemeinen werden …"
+    },
+    {
+      "title": "Arnica – Wirkung & Anwendung in der Homöopathie | Homöopathie …",
+      "url": "https://www.homoeopathie-quelle.de/einzelmittel/arnica",
+      "snippet": "Arnica in der Homöopathie: Informationen zu Anwendung, typischen Beschwerden, Dosierung und weiteren Hinweisen."
+    },
+    {
+      "title": "Arnica Globuli | Anwendung, Dosierung & weitere Infos",
+      "url": "https://www.globuli.de/einzelmittel/globuli-von-a-bis-a/arnica/",
+      "snippet": "Genauere Anweisungen zur Dosierung von Arnica entnehmen Sie bitte dieser Seite Einnahme und Dosierung und der …"
+    },
+    {
+      "title": "Gebrauchsinformation: Information für den Anwender",
+      "url": "https://static.shop-apotheke.com/pdf/Beipackzettel-arnica-d-6-globuli-10-g-00907214-bz.pdf",
+      "snippet": "Soweit nicht anders verordnet, ist die übliche Dosis: 1- bis 3-mal täglich 5 – 10 Streukügelchen einnehmen. Wie lange soll Arnica D6 …"
+    }
+  ]
+}

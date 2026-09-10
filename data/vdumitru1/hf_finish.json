@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vdumitru1/HF_finish",
+  "slug": "vdumitru1-hf_finish",
+  "author": "vdumitru1",
+  "url": "https://huggingface.co/vdumitru1/HF_finish",
+  "created_at": "2026-09-10T15:33:18.000Z",
+  "updated_at": "2026-09-10T15:34:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "llama-factory",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999516090,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Downloads - AdwCleaner - Download Now - ToolsLib",
+      "url": "https://toolslib.net/downloads/viewdownload/1-adwcleaner/",
+      "snippet": "Mar 3, 2012 · AdwCleaner will identify and remove any adware on your system. How do I scan my computer for adware? To scan …"
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "AdwCleaner - Files - Downloads - ToolsLib",
+      "url": "https://toolslib.net/downloads/viewdownload/1-adwcleaner/files/2658/",
+      "snippet": "AdwCleaner is a free anti-malware removal tool designed to eliminate: Adware (ads software) PUP/LPI (Potentially Unwanted …"
+    },
+    {
+      "title": "AdwCleaner - Malwarebytes Forums",
+      "url": "https://forums.malwarebytes.com/tags/Adwcleaner/",
+      "snippet": "Jan 30, 2021 · AdwCleaner which Settings to Choose or not Choose - Besides Preset Settings Dadybear1234 · June 17, 2025 …"
+    },
+    {
+      "title": "Adwcleaner Mac [Résolu] - Virus - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-25447209-adwcleaner-mac",
+      "snippet": "A partir de là, utilisant Google Chrome, un onglet s'ouvrait à chaque fois avec Babylon Search. J'ai trouvé la solution en utilisant …"
+    }
+  ]
+}

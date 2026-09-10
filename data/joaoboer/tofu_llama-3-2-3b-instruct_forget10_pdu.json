@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_PDU",
+  "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget10_pdu",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_PDU",
+  "created_at": "2026-09-10T13:11:16.000Z",
+  "updated_at": "2026-09-10T13:12:28.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "PDU",
+    "forget10",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "𝗧𝗛𝗘 𝟭𝟬 𝗕𝗘𝗦𝗧 Hotels in Calabarzon Region 2026 (from ₱1,065)",
+      "url": "https://www.tripadvisor.com.ph/Hotels-g2152313-Calabarzon_Region_Luzon-Hotels.html",
+      "snippet": "Properties ranked using exclusive Tripadvisor data, including traveler ratings, confirmed availability from our partners, prices, booking …"
+    },
+    {
+      "title": "THE 10 BEST Hotels in Calabarzon Region 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotels-g2152313-Calabarzon_Region_Luzon-Hotels.html",
+      "snippet": "View deals from $17 per night, see photos and read reviews for the best Calabarzon Region hotels from travelers like you - then …"
+    },
+    {
+      "title": "Calabarzon and Accommodation, Calabarzon hotel discounts | Hotels…",
+      "url": "https://ph.hotels.com/re12455487/hotels-in-calabarzon-philippines/",
+      "snippet": "Discover Calabarzon hotel deals and enjoy the freedom of flexible bookings. Find unbeatable last-minute hotel offers in Calabarzon …"
+    },
+    {
+      "title": "THE 10 BEST Calabarzon Region Oceanfront Hotels",
+      "url": "https://www.tripadvisor.com.ph/HotelsList-Calabarzon_Region-Beach-Resorts-zfp12145403.html",
+      "snippet": "Highest rated hotels on Tripadvisor, based on traveler reviews. 1. Acuatico Beach Resort. \" The beautiful beachfront setting, …"
+    },
+    {
+      "title": "Calabarzon Hotels: 15,653 Cheap Calabarzon Hotel Deals",
+      "url": "https://www.hotelscombined.com/Place/CALABARZON.htm",
+      "snippet": "Use the map to find hotels in Calabarzon that are close to the points of interest you'll be frequenting. You can find more information …"
+    }
+  ]
+}

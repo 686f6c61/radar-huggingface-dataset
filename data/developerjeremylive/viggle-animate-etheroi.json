@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "developerjeremylive/Viggle-Animate-etheroi",
+  "slug": "developerjeremylive-viggle-animate-etheroi",
+  "author": "developerjeremylive",
+  "url": "https://huggingface.co/developerjeremylive/Viggle-Animate-etheroi",
+  "created_at": "2026-09-10T17:03:49.000Z",
+  "updated_at": "2026-09-10T17:03:50.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video-editing",
+    "character-replacement",
+    "video-to-video",
+    "distillation",
+    "dmd",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33122992896,
+  "parameters_human": "33.12B",
+  "storage_bytes": 68949172142,
+  "storage_human": "68.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "陈慧琳-你这个男人(音乐会现场版LIVE)_粤语_哔哩哔哩_bilibili",
+      "url": "https://www.bilibili.com/video/BV1PA4y1Z73g/",
+      "snippet": "May 23, 2022 · ，心债 (演唱会)-陈慧琳，陈慧琳-说你不爱我 (VCD)，爱上一个人-陈慧琳，躲猫猫+情毒（VCD版本）-陈慧琳，【谭晶 …"
+    },
+    {
+      "title": "【季选】丨你这个男人丨陈慧琳丨_哔哩哔哩_bilibili",
+      "url": "https://www.bilibili.com/video/BV1hyy5YLEN7/",
+      "snippet": "Oct 21, 2024 · 哈哈哈全家人都知道你是无忌！"
+    },
+    {
+      "title": "陳慧琳 - 你這個男人 - YouTube",
+      "url": "https://www.youtube.com/watch?v=DrsN8mDVStw",
+      "snippet": "May 6, 2020 · Music video by Kelly Chen performing Ni Zhe Ge Nan Ren (Music Video). © 2006 Go East Entertainment Company …"
+    },
+    {
+      "title": "高清修复《你这个男人＋随身听》陈慧琳2001音乐现场Live #现场版live",
+      "url": "https://www.douyin.com/video/7457717782260534569",
+      "snippet": "Jan 9, 2025 · 高清修复《你这个男人＋随身听》陈慧琳2001音乐现场Live #现场版live - 音悦现场于20250109发布在抖音，已经收获 …"
+    },
+    {
+      "title": "你這個男人 - 陳慧琳 - YouTube",
+      "url": "https://www.youtube.com/watch?v=kAJPGhS69gY",
+      "snippet": "Jul 16, 2026 · Love Fighters 演唱會 2008 VCD Karaokae"
+    }
+  ]
+}

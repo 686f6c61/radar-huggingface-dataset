@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Maha2yadav/goemotions-model",
+  "slug": "maha2yadav-goemotions-model",
+  "author": "Maha2yadav",
+  "url": "https://huggingface.co/Maha2yadav/goemotions-model",
+  "created_at": "2026-09-10T14:53:04.000Z",
+  "updated_at": "2026-09-10T14:53:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://classroom.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Google Photos: Edit, Organize, Search, and Backup Your Photos",
+      "url": "https://photos.google.com/",
+      "snippet": "Google Photos comes with 15 GB of storage (shared across Photos, Gmail, and Drive) at no cost. For more cloud storage for your …"
+    }
+  ]
+}

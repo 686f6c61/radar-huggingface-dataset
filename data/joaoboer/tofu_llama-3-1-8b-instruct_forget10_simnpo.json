@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget10_SimNPO",
+  "slug": "joaoboer-tofu_llama-3-1-8b-instruct_forget10_simnpo",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget10_SimNPO",
+  "created_at": "2026-09-10T13:56:33.000Z",
+  "updated_at": "2026-09-10T13:59:16.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "SimNPO",
+    "forget10",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Descargar YouTube: PC / Mac / Android (APK)",
+      "url": "https://es.ccm.net/descargas/entretenimiento/6598-youtube/",
+      "snippet": "Feb 12, 2024 · YouTube se puede conectar a Facebook, Twitter, Talk, Reddit, Pinterest, Tumblr, LinkedIn y más. Asimismo, …"
+    },
+    {
+      "title": "Descargar Snaptube: PC, Android (APK) - CCM",
+      "url": "https://es.ccm.net/descargas/internet/6550-snaptube/",
+      "snippet": "Feb 6, 2024 · Snaptube es un programa que descarga de forma rápida y sencilla contenidos de YouTube y otras plataformas como …"
+    },
+    {
+      "title": "Facebook qui rame [Résolu] - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38273471-facebook-qui-rame",
+      "snippet": "Feb 28, 2026 · Bonjour à tous, J'ai un gros soucis lorsque j'utilise facebook, déjà l'affichage quand je l'ouvre est long, mais surtout …"
+    },
+    {
+      "title": "ZDNET - Actualité, business et technologies pour les professionne ...",
+      "url": "https://www.zdnet.fr/",
+      "snippet": "Actualité, business et technologies pour les professionnels"
+    }
+  ]
+}

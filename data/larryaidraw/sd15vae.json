@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/SD15VAE",
+  "slug": "larryaidraw-sd15vae",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/SD15VAE",
+  "created_at": "2026-09-10T15:46:50.000Z",
+  "updated_at": "2026-09-10T16:32:00.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1003948648,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alle informatie over Qatar Airways-reisklassen | Vliegtickets.nl",
+      "url": "https://www.vliegtickets.nl/airlines/qatar-airways/reisklassen/",
+      "snippet": "Goedkope Qaatr Airways-vliegtickets en informatie over vliegen met Qatar Airways Bagageregels Reisklassen Online inchecken …"
+    },
+    {
+      "title": "Qatar Airways review – Onze ervaring in economy class",
+      "url": "https://wanderlands.nl/qatar-airways-review/",
+      "snippet": "Feb 19, 2026 · Onze Qatar Airways economy review: ruime beenruimte, goede service en een fijne overstap in Doha tijdens onze …"
+    },
+    {
+      "title": "Baggage allowance for flights | Qatar Airways",
+      "url": "https://www.qatarairways.com/en-nl/baggage/allowance.html",
+      "snippet": "Checked baggage is included on all Qatar Airways flights. The number and weight of baggage pieces you can carry on your journey …"
+    },
+    {
+      "title": "Qatar Airways - Hoeveel beenruimte heb ik?",
+      "url": "https://www.beenruimtevergelijker.nl/qatar-airways/",
+      "snippet": "Qatar Airways - Hoeveel beenruimte heb ik? Als je van Amsterdam naar New York wilt vliegen kun je kiezen uit KLM, United, Delta …"
+    },
+    {
+      "title": "Seating options | Qatar Airways",
+      "url": "https://www.qatarairways.com/en-nl/complement-your-journey/preferred-seat.html",
+      "snippet": "Economy Reserve allows you to reserve the adjacent seat for your comfort during the flight. Utilise the additional space to stretch out, …"
+    }
+  ]
+}

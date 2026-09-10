@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SbbbS18120/huxin1234",
+  "slug": "sbbbs18120-huxin1234",
+  "author": "SbbbS18120",
+  "url": "https://huggingface.co/SbbbS18120/huxin1234",
+  "created_at": "2026-09-10T15:41:37.000Z",
+  "updated_at": "2026-09-10T15:41:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Converting Micrograms (mcg) Of Calcitriol To International Units",
+      "url": "https://walrus.com/questions/converting-micrograms-mcg-of-calcitriol-to-international-units",
+      "snippet": "Mar 10, 2019 · Vitamin A: One international unit (IU) equals 0.3 mcg of retinol or 0.6 mcg of beta-carotene. Going back to Vitamin D, …"
+    },
+    {
+      "title": "How Much Vitamin D To Take Daily After High Weekly Doses?",
+      "url": "https://www.walrus.com/questions/how-much-vitamin-d-to-take-daily-after-high-weekly-doses",
+      "snippet": "Answer After you complete the 7 weeks of high-dose vitamin D, it is recommended to get 1,500 – 2,000 IU vitamin D every day …"
+    },
+    {
+      "title": "Walrus",
+      "url": "https://www.walrus.com/questions?query=What+are+the+effects+of+taking+10%2C000+IU+of+Vitamin+D3+and+300+mg+of+magnesium+citrate+daily%3F&page=4",
+      "snippet": "Is It Safe Take Over The Recommended Daily Amount Of Vitamin B12 Per Day? I am a 59-year-old male. Is it ok to take 600 mcg a …"
+    },
+    {
+      "title": "Walrus",
+      "url": "https://www.walrus.com/questions?page=17&query=nicotine+pill+can",
+      "snippet": "Converting Micrograms (mcg) Of Calcitriol To International Units What is the equivalent of calcitriol 0.25 mcg in international units for …"
+    },
+    {
+      "title": "Walrus",
+      "url": "https://www.walrus.com/questions?query=What+are+the+effects+of+taking+10%2C000+IU+of+Vitamin+D3+and+300+mg+of+magnesium+citrate+daily%3F&page=137",
+      "snippet": "Problems With Ear Drops Pooling In Ear My doctor prescribed hydrocortisone and Acetic acid otic solution for my ear and I am to use …"
+    }
+  ]
+}

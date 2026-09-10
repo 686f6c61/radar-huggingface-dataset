@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m_enc.qwen3_vl_30b_a3b",
+  "slug": "timm-qwen3_vit_416m_enc-qwen3_vl_30b_a3b",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_vl_30b_a3b",
+  "created_at": "2026-09-10T17:28:19.000Z",
+  "updated_at": "2026-09-10T17:28:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "arxiv:2511.21631",
+    "base_model:Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 445686512,
+  "parameters_human": "445.7M",
+  "storage_bytes": 1782777912,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "戴尔笔记本电脑_台式电脑_服务器_电脑配件_戴尔官方网站 | Dell",
+      "url": "https://www.dell.com/zh-cn?msockid=033068051d106b6e206a7fd51cdd6ab7",
+      "snippet": "欢迎访问戴尔网上购物商城，为个人、家庭、企业办公提供高品质戴尔笔记本电脑、台式机和一体机、工作站、服务器、显示器、电脑 …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Drivers & Downloads | Dell US",
+      "url": "https://www.dell.com/support/home/en-us?app=drivers&msockid=033068051d106b6e206a7fd51cdd6ab7",
+      "snippet": "Select a product or enter your Service Tag to view related Dell drivers and driver updates."
+    },
+    {
+      "title": "GitHub - nexgen-adm/qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/nexgen-adm/qwen3",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 ..."
+    },
+    {
+      "title": "Comment taper l’arobase sur le clavier",
+      "url": "https://www.arobase.org/bases/taper-arobase-clavier.htm",
+      "snippet": "Sep 15, 2014 · Sur Mac ou PC, où se trouve la touche pour taper le signe arobase @ sur le clavier ? Explorez avec nous le clavier …"
+    }
+  ]
+}

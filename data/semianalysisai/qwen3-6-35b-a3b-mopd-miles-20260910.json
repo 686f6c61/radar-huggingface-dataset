@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "semianalysisai/Qwen3.6-35B-A3B-MOPD-Miles-20260910",
+  "slug": "semianalysisai-qwen3-6-35b-a3b-mopd-miles-20260910",
+  "author": "semianalysisai",
+  "url": "https://huggingface.co/semianalysisai/Qwen3.6-35B-A3B-MOPD-Miles-20260910",
+  "created_at": "2026-09-10T18:04:40.000Z",
+  "updated_at": "2026-09-10T18:10:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "miles",
+    "on-policy-distillation",
+    "multi-teacher",
+    "reasoning-gym",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 71027703334,
+  "storage_human": "71.0 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - 知乎",
+      "url": "https://www.zhihu.com/topic/19552757/hot",
+      "snippet": "Netflix (Nasdaq NFLX) 成立于1997年，是一家为世界多国提供网络视频点播的公司，主要提供Netflix超大数量的DVD并免费递送，总 …"
+    },
+    {
+      "title": "DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/",
+      "snippet": "Teknoloji, sıcak fırsatlar, otomobil, ülke gündemi, kripto para, eğitim, futbol hakkında bilgiler ve tartışma platformu: DonanımHaber …"
+    },
+    {
+      "title": "银河录像局靠谱吗? - 知乎",
+      "url": "https://www.zhihu.com/question/3141235744",
+      "snippet": "第一次在银河录像局买的Netflix，为什么在这里买，因为我看比奈飞小铺便宜，所以在奈飞小铺的Netflix会员到期后购买了银河录像局 …"
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Adolescence (2025) | Netflix Sıcak Fırsatlarda Tıklananlar Editörün Seçtiği Fırsatlar Daha Fazla"
+    },
+    {
+      "title": "如何强制播放 Netflix 1080P 清晰度视频？ - 知乎",
+      "url": "https://www.zhihu.com/question/406310327",
+      "snippet": "已经开通了 Netflix 高级会员，并且在设置里选择了超清清晰度，为什么播放视频还是不清晰呢？"
+    }
+  ]
+}

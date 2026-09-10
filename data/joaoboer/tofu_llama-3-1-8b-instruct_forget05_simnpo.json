@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget05_SimNPO",
+  "slug": "joaoboer-tofu_llama-3-1-8b-instruct_forget05_simnpo",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget05_SimNPO",
+  "created_at": "2026-09-10T13:53:21.000Z",
+  "updated_at": "2026-09-10T13:56:03.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "SimNPO",
+    "forget05",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FEX.NET — Хмарний файлообмінник та зручне сховище файлів",
+      "url": "https://fex.net/uk/",
+      "snippet": "Зберігайте, переглядайте та діліться файлами будь-де з FEX.NET. Надійне хмарне сховище для фото, відео й документів — …"
+    },
+    {
+      "title": "FEX.NET — Secure Cloud Storage and File Sharing for Work and Life",
+      "url": "https://fex.net/",
+      "snippet": "Store, share, and access your files from anywhere with FEX.NET. Reliable cloud storage for photos, videos, and documents — …"
+    },
+    {
+      "title": "Вхід — Доступ до вашого акаунта FEX.NET",
+      "url": "https://fex.net/uk/login",
+      "snippet": "Увійдіть до свого акаунта FEX.NET, щоб завантажувати, переглядати та ділитися файлами. Безпечний доступ до хмарного …"
+    },
+    {
+      "title": "FEX.NET",
+      "url": "https://fex.net/uk/403",
+      "snippet": "Файли можуть бути видалені, але не ваша знижка! Отримайте -20% на продовження зберігання. Використовуйте промокод …"
+    },
+    {
+      "title": "Реєстрація — Створіть акаунт у FEX.NET",
+      "url": "https://fex.net/uk/registration",
+      "snippet": "Приєднуйтесь до FEX.NET та отримайте безпечний доступ до свого хмарного сховища. Завантажуйте, зберігайте й діліться …"
+    }
+  ]
+}

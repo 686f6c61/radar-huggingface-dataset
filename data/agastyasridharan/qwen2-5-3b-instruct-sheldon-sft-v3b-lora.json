@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3b-LoRA",
+  "slug": "agastyasridharan-qwen2-5-3b-instruct-sheldon-sft-v3b-lora",
+  "author": "agastyasridharan",
+  "url": "https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3b-LoRA",
+  "created_at": "2026-09-10T15:19:11.000Z",
+  "updated_at": "2026-09-10T15:23:42.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "persona",
+    "sheldon-cooper",
+    "sft",
+    "lora",
+    "qwen2.5",
+    "gsm8k",
+    "cs2881r",
+    "dataset:tbooy/sheldon-cooper-sft-20k",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4802147332,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Best Panama City Beach Hotels, United States (From $59)",
+      "url": "https://www.booking.com/city/us/panama-city-beach.html?msockid=2f379bbf2d4c6b71177c8c6f2c046ab8",
+      "snippet": "Sep 1, 2026 · Great savings on hotels in Panama City Beach, United States online. Good availability and great rates. Read hotel …"
+    },
+    {
+      "title": "THE 10 BEST Hotels in Panama City Beach 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotels-g34543-Panama_City_Beach_Florida-Hotels.html",
+      "snippet": "View deals from $67 per night, see photos and read reviews for the best Panama City Beach hotels from travelers like you - then …"
+    },
+    {
+      "title": "Find hotels in Panama City Beach, FL from $64 - Expedia",
+      "url": "https://www.expedia.com/Panama-City-Beach-Hotels.d8021.Travel-Guide-Hotels?msockid=2f379bbf2d4c6b71177c8c6f2c046ab8",
+      "snippet": "Find 18,787 of the best hotels in Panama City Beach, FL in 2026. Compare room rates, hotel reviews and availability. Most hotels are …"
+    },
+    {
+      "title": "Hotels in Panama City Beach (Florida, USA) - trivago.com",
+      "url": "https://www.trivago.com/en-US/odr/hotels-panama-city-beach-florida?search=200-14341&msockid=2f379bbf2d4c6b71177c8c6f2c046ab8",
+      "snippet": "Sep 1, 2026 · Compare the prices of 20937 hotels in Panama City Beach, USA. Find your ideal accommodation from hundreds of …"
+    },
+    {
+      "title": "16 Best Hotels in Panama City Beach. Hotels from $60/night - KAYAK",
+      "url": "https://www.kayak.com/Panama-City-Beach-Hotels.30082.hotel.ksp?msockid=2f379bbf2d4c6b71177c8c6f2c046ab8",
+      "snippet": "Discover the top-rated hotels in Panama City Beach handpicked by local expert Kristin Braswell. For a coastal vacation that offers a …"
+    }
+  ]
+}

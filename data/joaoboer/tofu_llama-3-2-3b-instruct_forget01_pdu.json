@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_PDU",
+  "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget01_pdu",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_PDU",
+  "created_at": "2026-09-10T13:08:45.000Z",
+  "updated_at": "2026-09-10T13:09:58.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "PDU",
+    "forget01",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Erstellung/Übermittlung ebilanz direkt in MeinElster",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/347512-erstellung-%C3%BCbermittlung-ebilanz-direkt-in-meinelster",
+      "snippet": "Oct 14, 2020 · Wieso gibt es eigentlich kein Modul zur Erstellung/elektronischen Übermittlung der Bilanz, sondern muss man dazu …"
+    },
+    {
+      "title": "Eröffnungsbilanz elektronisch an FA übermitteln - aber wie/wo?",
+      "url": "https://forum.elster.de/anwenderforum/forum/allgemein/allgemein-und-projekt/24597-er%C3%B6ffnungsbilanz-elektronisch-an-fa-%C3%BCbermitteln-aber-wie-wo",
+      "snippet": "Jan 4, 2017 · AW: Eröffnungsbilanz elektronisch an FA übermitteln - aber wie/wo? Dafür gibt es keine kostenlose Software. Wer …"
+    },
+    {
+      "title": "E-Bilanz - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/444058-e-bilanz",
+      "snippet": "May 21, 2024 · Hallo zusammen, Ich frage mich, ob ich eine E-Bilanz in Elster hochladen kann. Ich habe sie bereits in dem XBRL …"
+    },
+    {
+      "title": "E Bilanz via ELSTER - Wie macht man das?",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/26099-e-bilanz-via-elster-wie-macht-man-das",
+      "snippet": "May 18, 2017 · Hallo, ich soll meine E-Bilanz zum Jahr 2015 elektronisch übermitteln, aber irgendwie finde ich nicht heraus, wie und …"
+    },
+    {
+      "title": "Übertragung E-Bilanz an Finanzamt - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-programme/elster-in-kommerzieller-steuersoftware/441741-%C3%BCbertragung-e-bilanz-an-finanzamt",
+      "snippet": "Apr 4, 2024 · Hallo zusammen, ich bin am Verzweifeln und hoffe, jemand kann seine Erfahrungen teilen. Ich habe über das Portal …"
+    }
+  ]
+}

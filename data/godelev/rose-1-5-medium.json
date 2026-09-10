@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "GODELEV/Rose-1.5-Medium",
+  "slug": "godelev-rose-1-5-medium",
+  "author": "GODELEV",
+  "url": "https://huggingface.co/GODELEV/Rose-1.5-Medium",
+  "created_at": "2026-09-09T12:10:19.000Z",
+  "updated_at": "2026-09-10T08:16:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rose_x1_5",
+    "causal-lm",
+    "gqa",
+    "qk-norm",
+    "rope",
+    "swiglu",
+    "refresh-gate",
+    "rose-x1",
+    "rose-x1.5",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": 98612288,
+  "parameters_human": "98.6M",
+  "storage_bytes": 1284528463,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "Roblox Innovation Awards 2026: Voting is Now Open!",
+      "url": "https://devforum.roblox.com/t/roblox-innovation-awards-2026-voting-is-now-open/4763523",
+      "snippet": "Jul 29, 2026 · Key Takeaways Voting for the 2026 Roblox Innovation Awards is now open. Support your favorite games and creators …"
+    },
+    {
+      "title": "Update on Roblox Plus, Transfers, and Community Gifting",
+      "url": "https://devforum.roblox.com/t/update-on-roblox-plus-transfers-and-community-gifting/4637912",
+      "snippet": "May 15, 2026 · [Update] June 2, 2026 [Update] May 20, 2026 Hey Creators, I’m Enrico, and I am the Chief Business Officer at …"
+    },
+    {
+      "title": "New Publishing Requirements & Evaluation Process for Games",
+      "url": "https://devforum.roblox.com/t/new-publishing-requirements-evaluation-process-for-games/4573166",
+      "snippet": "Apr 13, 2026 · On May 19th, we’re making a change to our publishing model by adding new requirements to publicly publish games, …"
+    }
+  ]
+}

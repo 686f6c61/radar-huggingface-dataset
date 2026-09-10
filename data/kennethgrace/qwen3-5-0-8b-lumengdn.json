@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kennethgrace/Qwen3.5-0.8B-LumenGDN",
+  "slug": "kennethgrace-qwen3-5-0-8b-lumengdn",
+  "author": "kennethgrace",
+  "url": "https://huggingface.co/kennethgrace/Qwen3.5-0.8B-LumenGDN",
+  "created_at": "2026-09-10T16:16:57.000Z",
+  "updated_at": "2026-09-10T16:17:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gated-deltanet",
+    "linear-attention",
+    "recurrent",
+    "model-surgery",
+    "lumen",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 771512048,
+  "parameters_human": "771.5M",
+  "storage_bytes": 3098901972,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "Online-Stopwatch",
+      "url": "https://www.online-stopwatch.com/",
+      "snippet": "Use the Online Stopwatch Full Screen. Go Ad Free! Remove all Ads and make your Apps Bigger and Better!"
+    },
+    {
+      "title": "Online Stopwatch - vClock",
+      "url": "https://vclock.com/stopwatch/",
+      "snippet": "The online stopwatch counts the time to the millisecond that passes after you click the Start button. It allows you to add laps."
+    },
+    {
+      "title": "Online Stopwatch Timer - TickCounter",
+      "url": "https://www.tickcounter.com/stopwatch",
+      "snippet": "Free online stopwatch timer in your browser. Instant, accurate and easy-to-use. Start counting now!"
+    },
+    {
+      "title": "Online Stopwatch",
+      "url": "https://www.online-stopwatch.com/full-screen-stopwatch/",
+      "snippet": "A Free flash online stopwatch, quick easy to use flash stopwatch! also a countdown timer!"
+    }
+  ]
+}

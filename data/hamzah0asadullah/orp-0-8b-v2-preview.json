@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "hamzah0asadullah/ORP-0.8B-v2-preview",
+  "slug": "hamzah0asadullah-orp-0-8b-v2-preview",
+  "author": "hamzah0asadullah",
+  "url": "https://huggingface.co/hamzah0asadullah/ORP-0.8B-v2-preview",
+  "created_at": "2026-09-10T13:51:07.000Z",
+  "updated_at": "2026-09-10T14:25:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "roleplay",
+    "roleplaying",
+    "rp",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:PygmalionAI/PIPPA",
+    "dataset:Gryphe/Sonnet3.5-Charcard-Roleplay",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019853,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite - Deutscher Volleyball-Verband",
+      "url": "https://www.volleyball-verband.de/de/",
+      "snippet": "Zwei deutsche Teams starten bei der U22-EM in Madrid EM-Auftakt gegen die Türkei: DVV-Männer reisen selbstbewusst nach …"
+    },
+    {
+      "title": "DVV Beach-Volleyball",
+      "url": "https://beach.volleyball-verband.de/",
+      "snippet": "Hier finden Sie weiterführende detailierte Informationen zu den einzelnen Turnieren (International, DVV-Turniere, LV-Turniere). …"
+    },
+    {
+      "title": "Nachwuchskader 2 (männlich) - volleyball-verband.de",
+      "url": "https://www.volleyball-verband.de/de/halle/nationalmannschaften/nationalteam-maenner/nachwuchskader-2--maennlich-/",
+      "snippet": "Jul 1, 2026 · Im Nachwuchskader 2 machen die jungen Spieler die ersten internationalen Schritte. Die Spieler werden größtenteils auf …"
+    },
+    {
+      "title": "Deutscher Volleyball-Verband - U14w",
+      "url": "https://test-www.volleyball-verband.de/de/halle/jugend/deutsche-meisterschaften/u14w/",
+      "snippet": "May 17, 2026 · Ergebnisdienst: https://dvv.sams-ticker.de/ Ausschreibung: Ausschreibung DM U14w Social Media: @asvdachau …"
+    },
+    {
+      "title": "Team Sagstetter - Sagstetter - DVV Beach-Volleyball",
+      "url": "https://beach.volleyball-verband.de/public/team.php?id=30025",
+      "snippet": "Team Sagstetter - Sagstetter im Beach-Volleyball. Entdecken Sie Ergebnisse und Informationen über das Team."
+    }
+  ]
+}

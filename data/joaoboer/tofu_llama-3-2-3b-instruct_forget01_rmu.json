@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_RMU",
+  "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget01_rmu",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_RMU",
+  "created_at": "2026-09-10T13:12:31.000Z",
+  "updated_at": "2026-09-10T13:13:16.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "RMU",
+    "forget01",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crear medios de instalación para Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/es-es/windows/deployment/install-upgrade/create-installation-media-for-windows",
+      "snippet": "Los medios de instalación, como una unidad flash USB, se pueden usar para instalar una nueva copia de Windows, realizar una …"
+    },
+    {
+      "title": "Korzystanie ze schowka | Microsoft Support",
+      "url": "https://support.microsoft.com/pl-pl/windows/apps/using-the-clipboard",
+      "snippet": "Jak włączyć historię schowka po raz pierwszy? Aby włączyć schowek po raz pierwszy, wybierz klawisz z logo systemu Windows + V, …"
+    },
+    {
+      "title": "Przechwytywanie zrzutów ekranu za pomocą narzędzia Wycinanie",
+      "url": "https://support.microsoft.com/pl-pl/windows/apps/use-snipping-tool-to-capture-screenshots",
+      "snippet": "Dowiedz się, jak za pomocą narzędzia Wycinanie przechwycić zrzut ekranu lub wycinek dowolnego obiektu na ekranie, a następnie …"
+    },
+    {
+      "title": "Cómo iniciar sesión en Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/es-es/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Hotmail está ahora Outlook.com. Aprenda a iniciar sesión para acceder a su cuenta de correo electrónico de Outlook.com, Hotmail, …"
+    },
+    {
+      "title": "Réparer des applications et des programmes dans Windows",
+      "url": "https://support.microsoft.com/fr-fr/windows/apps/repair-apps-and-programs-in-windows",
+      "snippet": "Windows 11 Windows 10 Résumé Cet article explique comment réparer des applications et des programmes dans Windows 11 et …"
+    }
+  ]
+}

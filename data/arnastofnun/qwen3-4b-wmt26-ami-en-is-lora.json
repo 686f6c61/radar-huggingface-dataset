@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "arnastofnun/Qwen3-4B-wmt26-AMI-en-is-lora",
+  "slug": "arnastofnun-qwen3-4b-wmt26-ami-en-is-lora",
+  "author": "arnastofnun",
+  "url": "https://huggingface.co/arnastofnun/Qwen3-4B-wmt26-AMI-en-is-lora",
+  "created_at": "2026-09-10T14:00:45.000Z",
+  "updated_at": "2026-09-10T14:48:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "is"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:arnastofnun/Qwen3-4B-wmt26-AMI-en-is",
+    "lora",
+    "transformers",
+    "unsloth",
+    "translation",
+    "icelandic",
+    "en",
+    "is",
+    "base_model:arnastofnun/Qwen3-4B-wmt26-AMI-en-is",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610911,
+  "storage_human": "144 MB",
+  "base_model": "arnastofnun/Qwen3-4B-wmt26-AMI-en-is",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite | Samtgemeinde Bruchhausen-Vilsen",
+      "url": "https://www.bruchhausen-vilsen.de/",
+      "snippet": "Datenschutz Samtgemeinde Bruchhausen-Vilsen Gemeinde Asendorf Flecken Bruchhausen-Vilsen Gemeinde Martfeld Gemeinde …"
+    },
+    {
+      "title": "Veranstaltungskalender | Samtgemeinde Bruchhausen-Vilsen",
+      "url": "https://www.bruchhausen-vilsen.de/tourismus-freizeit/veranstaltungskalender/",
+      "snippet": "Zum Tag des offenen Denkmals öffnet das Alte Gaswerk in Bruchhausen-Vilsen ihre Türen. Tag der Regionen! Deutsches …"
+    },
+    {
+      "title": "Bürgerbüro - Bürgerportal Samtgemeinde Bruchhausen-Vilsen",
+      "url": "https://service.bruchhausen-vilsen.de/dienstleistungen/-/egov-bis-detail/einrichtung/10990/show",
+      "snippet": "Samtgemeinde Bruchhausen-Vilsen Lange Straße 11 27305 Bruchhausen-Vilsen Tel.: 04252 391-0 Fax: 04252 391-100 E‑Mail: …"
+    },
+    {
+      "title": "Startseite - Bürgerportal Samtgemeinde Bruchhausen-Vilsen",
+      "url": "https://service.bruchhausen-vilsen.de/",
+      "snippet": "Bürgerportal Samtgemeinde Bruchhausen-Vilsen für Verwaltungsdienstleistungen, online Anträge und die digitale Kommunikation mit …"
+    },
+    {
+      "title": "Startseite - Sachbearbeiterportal Samtgemeinde Bruchhausen-Vilsen",
+      "url": "https://ors.bruchhausen-vilsen.de/",
+      "snippet": "Sachbearbeiterportal Samtgemeinde Bruchhausen-Vilsen für Verwaltungsdienstleistungen, online Anträge und die digitale …"
+    }
+  ]
+}

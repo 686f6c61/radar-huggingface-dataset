@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yileneko/qwen2.5-neko",
+  "slug": "yileneko-qwen2-5-neko",
+  "author": "yileneko",
+  "url": "https://huggingface.co/yileneko/qwen2.5-neko",
+  "created_at": "2026-09-10T13:08:52.000Z",
+  "updated_at": "2026-09-10T13:33:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 994156352,
+  "storage_human": "994 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "WhatsApp | Безпечні, надійні й конфіденційні повідомлення та …",
+      "url": "https://www.whatsapp.com/?lang=uk",
+      "snippet": "Використовуйте WhatsApp Messenger для спілкування з друзями й родиною. WhatsApp – це безкоштовний і простий додаток …"
+    },
+    {
+      "title": "Скачайте WhatsApp",
+      "url": "https://www.whatsapp.com/download?lang=ru",
+      "snippet": "Скачайте WhatsApp на мобильное устройство, планшет или ПК, чтобы конфиденциально звонить и обмениваться …"
+    },
+    {
+      "title": "Приложения в Google Play – WhatsApp Messenger",
+      "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=ru",
+      "snippet": "Удобно. Конфиденциально. Надёжно. WhatsApp from Meta WhatsApp — это БЕСПЛАТНОЕ приложение для видеозвонков и …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mshaiel2004/dr-severity-grading-coral",
+  "slug": "mshaiel2004-dr-severity-grading-coral",
+  "author": "mshaiel2004",
+  "url": "https://huggingface.co/mshaiel2004/dr-severity-grading-coral",
+  "created_at": "2026-09-10T15:52:48.000Z",
+  "updated_at": "2026-09-10T15:52:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "medical",
+    "diabetic-retinopathy",
+    "efficientnet",
+    "ordinal-regression",
+    "coral",
+    "pytorch",
+    "dataset:aptos2019",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48594872,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heiligenhafen Hotel - Beach Motel Heiligenhafen",
+      "url": "https://www.beachmotel-hhf.de/",
+      "snippet": "Feb 26, 2025 · Direkt zwischen Heiligenhafens Strandpromenade, Jachthafen und Binnensee hat 2016 unser zweites Beach Motel …"
+    },
+    {
+      "title": "Hotel | Beach Motel Heiligenhafen | Strandhotel",
+      "url": "https://www.beachmotel-hhf.de/hotel",
+      "snippet": "Urlaub an der Küste, mit dem Meer vor der Tür, einer frischen Brise Ostseeluft um die Nase – und das alles noch dazu in einem …"
+    },
+    {
+      "title": "Beach Motels - Hotels in St. Peter-Ording & Heiligenhafen",
+      "url": "https://www.beachmotels.de/",
+      "snippet": "Direkt zwischen Strandpromenade, Jachthafen und Binnensee erwartet euch das Beach Motel Heiligenhafen – euer Rückzugsort für …"
+    },
+    {
+      "title": "Beach Motel Heiligenhafen (Heiligenhafen): Alle Infos zum Hotel",
+      "url": "https://www.holidaycheck.de/hi/beach-motel-heiligenhafen/dbd83bc4-0ac9-41cd-a18b-2b6ee8f347b6",
+      "snippet": "Jul 14, 2020 · Urlaub an der Küste, mit dem Meer vor der Tür, einer frischen Brise Ostsee-Luft um die Nase – und das alles noch …"
+    },
+    {
+      "title": "Beach Motel Heiligenhafen (Hotel) (Deutschland) Angebote",
+      "url": "https://www.booking.com/hotel/de/beach-motel-heiligenhafen.de.html?msockid=02fd1929534d65c12eee0ef952c46479",
+      "snippet": "Die Unterkunft Beach Motel Heiligenhafen, die in Heiligenhafen, 200 m von Strand in Heiligenhafen entfernt gelegen ist, verfügt über …"
+    }
+  ]
+}

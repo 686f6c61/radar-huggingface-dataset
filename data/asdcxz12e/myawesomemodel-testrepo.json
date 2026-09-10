@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDCXZ12E/MyAwesomeModel-TestRepo",
+  "slug": "asdcxz12e-myawesomemodel-testrepo",
+  "author": "ASDCXZ12E",
+  "url": "https://huggingface.co/ASDCXZ12E/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T14:51:21.000Z",
+  "updated_at": "2026-09-10T14:51:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canon Φωτογραφικό Χαρτί Gloss A6 133 gr/m² ... - Public",
+      "url": "https://www.public.gr/product/perifereiaka/analosima/inkjet-paper/canon-fotografiko-xarti-gloss-a6-133-grm-gia-thermal-ektupotes-108-fulla/1206917",
+      "snippet": "Canon Φωτογραφικό Χαρτί Gloss A6 133 gr/m² για Thermal Εκτυπωτές 108 φύλλα σε απίθανη τιμή στο Public, τον απόλυτο …"
+    },
+    {
+      "title": "Canon Φωτογραφικό Χαρτί Gloss A6 133 gr/m² για Thermal …",
+      "url": "https://www.gadgetlife.gr/public_gr/canon-%CF%86%CF%89%CF%84%CE%BF%CE%B3%CF%81%CE%B1%CF%86%CE%B9%CE%BA%CF%8C-%CF%87%CE%B1%CF%81%CF%84%CE%AF-gloss-a6-133-gr-m%C2%B2-%CE%B3%CE%B9%CE%B1-thermal-%CE%B5%CE%BA%CF%84%CF%85%CF%80%CF%89%CF%84/",
+      "snippet": "public Περιφερειακά – Μελάνια – Αναλώσιμα – Χαρτί Φωτογραφικό – Canon Φωτογραφικό Χαρτί Gloss A6 133 gr/m² για Thermal …"
+    },
+    {
+      "title": "Φωτογραφικά Χαρτιά Canon Gloss | Skroutz.gr",
+      "url": "https://www.skroutz.gr/c/3475/fotografika-chartia/m/44/Canon/f/952116/Gloss.html",
+      "snippet": "Βρες Φωτογραφικά Χαρτιά Canon Gloss στην καλύτερη τιμή! Διάβασε κριτικές & διάλεξε ανάμεσα σε 30+ προϊόντα. Αγόρασε εύκολα …"
+    },
+    {
+      "title": "Φωτογραφικό Χαρτί Canon Glossy (0775B003) για Inkjet Εκτυπωτές - A6 …",
+      "url": "https://www.cosmodata.gr/product/16744/exoplismos-organosi-grafiou/chartika/fotografika-chartia/fotografiko-charti-canon-glossy-0775b003-gia-inkjet-ektipotes-a6-210g-m-100-filla",
+      "snippet": "Φωτογραφικό Χαρτί Canon Glossy (0775B003) για Inkjet Εκτυπωτές - A6 - 210g/m² - 100 Φύλλα"
+    },
+    {
+      "title": "Φωτογραφικό Χαρτί - Public",
+      "url": "https://www.public.gr/cat/perifereiaka/analosima/inkjet-paper",
+      "snippet": "Ανακάλυψε Φωτογραφικό Χαρτί στις καλύτερες τιμές της αγοράς μόνο στο Public.gr. Δες μεγάλη ποικιλία από Φωτογραφικό Χαρτί εδώ!"
+    }
+  ]
+}

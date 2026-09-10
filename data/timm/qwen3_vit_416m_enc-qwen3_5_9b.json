@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m_enc.qwen3_5_9b",
+  "slug": "timm-qwen3_vit_416m_enc-qwen3_5_9b",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_5_9b",
+  "created_at": "2026-09-10T17:26:43.000Z",
+  "updated_at": "2026-09-10T17:26:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 455125744,
+  "parameters_human": "455.1M",
+  "storage_bytes": 1820534840,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Installer Chrome hors connexion Si vous rencontrez des problèmes lors du téléchargement de Chrome sur votre ordinateur Windows, …"
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web. Conferir os …"
+    },
+    {
+      "title": "تنزيل Google Chrome وتثبيته",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "عند تشغيل Chrome لأول مرة، عليك مراجعة بنود خدمة Google وقبولها. ملاحظة: للتأكّد من أنّ Chrome يظل مُحدَّثًا، تتم إضافته إلى مدير الحزمة. عند توفّر تحديثات الأمان، يرسل إليك …"
+    },
+    {
+      "title": "Descargar e instalar Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Puedes descargar e instalar el navegador web Chrome sin coste económico y usarlo para navegar por la Web. Comprobar los …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    }
+  ]
+}

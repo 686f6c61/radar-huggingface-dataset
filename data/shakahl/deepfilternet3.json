@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "shakahl/DeepFilterNet3",
+  "slug": "shakahl-deepfilternet3",
+  "author": "shakahl",
+  "url": "https://huggingface.co/shakahl/DeepFilterNet3",
+  "created_at": "2026-09-10T15:38:51.000Z",
+  "updated_at": "2026-09-10T15:38:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2167954,
+  "parameters_human": "2.2M",
+  "storage_bytes": 8684112,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "كيفية الحصول على المساعدة من Windows - دعم Microsoft",
+      "url": "https://support.microsoft.com/ar-sa/windows/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9-%D9%85%D9%86-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "ابحث عن تعليمات على شريط المهام أو استخدم تطبيق التلميحات أو حدد ارتباط الحصول على التعليمات في تطبيق الإعدادات أو انتقل إلى support.microsoft.com/windows."
+    },
+    {
+      "title": "المساعدة والتعلّم لـ Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/ar-sa/windows/",
+      "snippet": "ابحث عن مقالات التعليمات والمقالات الإرشادية لأنظمة تشغيل Windows. احصل على الدعم لنظام التشغيل Windows وتعرف على المزيد حول التثبيت والتحديثات والخصوصية والأمان والمزيد."
+    },
+    {
+      "title": "احصل على المساعدة في Windows 11: شرح جميع الخيارات والموارد",
+      "url": "https://www.tecnoloblog.com/ar/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9-%D9%81%D9%8A-%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D9%88%D9%8A%D9%86%D8%AF%D9%88%D8%B2-11/",
+      "snippet": "اكتشف كيفية الحصول على الدعم في Windows 11 مع جميع الحيل والتطبيقات وقنوات المساعدة لحل أي مشكلة."
+    },
+    {
+      "title": "كيفية الحصول على المساعدة في Windows 11 [أسرع 5 طرق]",
+      "url": "https://mediatechnesia.com/ar/articles/28471-how-to-get-help-in-windows-11-5-quickest-ways",
+      "snippet": "للحصول على المساعدة في Windows 11 ، استخدم تطبيق Get Help المخصص أو قم بتشغيل مستكشفات الأخطاء ومصلحاتها."
+    },
+    {
+      "title": "كيف يمكنني الوصول إلى خيارات الدعم الفني في نظام التشغيل ويندوز 11؟",
+      "url": "https://tecnobits.com/ar/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84-%D8%A5%D9%84%D9%89-%D8%AE%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D9%81%D9%86%D9%8A-%D9%81%D9%8A-windows-11/",
+      "snippet": "Dec 25, 2023 · سواء كنت بحاجة إلى مساعدة في تثبيت برنامج، أو تكوين شبكتك، أو أي مشكلة فنية أخرى، فإن Windows 11 يقدم مجموعة متنوعة من خيارات الدعم التي يمكن أن تساعدك في حل …"
+    }
+  ]
+}

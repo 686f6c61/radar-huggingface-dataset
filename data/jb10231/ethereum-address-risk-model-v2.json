@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jb10231/ethereum-address-risk-model-v2",
+  "slug": "jb10231-ethereum-address-risk-model-v2",
+  "author": "jb10231",
+  "url": "https://huggingface.co/jb10231/ethereum-address-risk-model-v2",
+  "created_at": "2026-09-10T13:29:39.000Z",
+  "updated_at": "2026-09-10T13:29:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "tabular-classification",
+    "fraud-detection",
+    "ethereum",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 593334,
+  "storage_human": "593334 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《团结就是力量》的歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/196417000.html",
+      "snippet": "歌曲《团结就是力量》 团结就是力量 团结就是力量 这力量是铁 这力量是钢 比铁还硬,比钢还强 向着法西斯蒂开火 让一切不民主的制 …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "请问色卡号RAL 7016对应的PANTONE或RGB值是多少？",
+      "url": "https://zhidao.baidu.com/question/41607064.html",
+      "snippet": "可选中1个或多个下面的关键词，搜索相关资料。也可直接点“搜索资料”搜索整个问题。 panton 色卡 ral rgb 搜索资料"
+    },
+    {
+      "title": "RAL7016是什么颜色? - 百度知道",
+      "url": "https://zhidao.baidu.com/question/303093654.html",
+      "snippet": "RAL7016是一个煤灰色，英文名：Anthracite grey。 任何颜色都是根据图片环境来搭配，炭灰色从名字上看应该是一种深灰色，但需要 …"
+    },
+    {
+      "title": "电容的单位怎么换算？F，NF，PF，UF？_百度知道",
+      "url": "https://zhidao.baidu.com/question/12936434.html",
+      "snippet": "单位换算 1法拉 (F) = 1×10^6微法 (μF)=1000000微法 (μF) 1微法 (μF)=1X10^3纳法 (nF) 1微法 (μF)= 1×10^6皮法 (pF)=1000000皮法 …"
+    }
+  ]
+}

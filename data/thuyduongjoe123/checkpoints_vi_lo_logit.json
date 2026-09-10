@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "thuyduongjoe123/checkpoints_vi_lo_logit",
+  "slug": "thuyduongjoe123-checkpoints_vi_lo_logit",
+  "author": "thuyduongjoe123",
+  "url": "https://huggingface.co/thuyduongjoe123/checkpoints_vi_lo_logit",
+  "created_at": "2026-09-10T11:22:00.000Z",
+  "updated_at": "2026-09-10T11:22:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608526,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "GitHub - blader/humanizer: Agent skill that removes signs of AI ...",
+      "url": "https://github.com/blader/humanizer",
+      "snippet": "The plugin answers to /humanizer:humanizer. In Claude Desktop, download this repository as a ZIP and upload it as a skill. For a …"
+    },
+    {
+      "title": "GitHub - obra/superpowers: An agentic skills framework & software ...",
+      "url": "https://github.com/obra/superpowers",
+      "snippet": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and …"
+    },
+    {
+      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
+      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
+    },
+    {
+      "title": "Supported AI models in GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "snippet": "For all of the default AI models, input prompts and output completions run through GitHub Copilot's content filters for harmful, …"
+    }
+  ]
+}

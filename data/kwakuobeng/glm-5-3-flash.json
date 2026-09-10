@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kwakuobeng/GLM-5.3-Flash",
+  "slug": "kwakuobeng-glm-5-3-flash",
+  "author": "kwakuobeng",
+  "url": "https://huggingface.co/kwakuobeng/GLM-5.3-Flash",
+  "created_at": "2026-09-10T15:24:48.000Z",
+  "updated_at": "2026-09-10T15:24:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673114,
+  "storage_human": "328.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convertisseur hexadécimal en décimal",
+      "url": "https://www.rapidtables.org/fr/convert/number/hex-to-decimal.html",
+      "snippet": "Convertisseur décimal en hexadécimal . Un nombre décimal régulier est la somme des chiffres multipliée par une puissance de 10. …"
+    },
+    {
+      "title": "Convertisseur Hexadécimal",
+      "url": "https://hexconvert.com/fr/hexadecimal/",
+      "snippet": "Convertisseur hexadécimal est un outil gratuit et précieux de conversion de nombres qui permet de convertir des nombres …"
+    },
+    {
+      "title": "Hex to Decimal Converter - RapidTables.com",
+      "url": "https://www.rapidtables.com/convert/number/hex-to-decimal.html",
+      "snippet": "Hexadecimal to decimal number converter and how to convert. Instant & step-by-step calculation."
+    },
+    {
+      "title": "Hexadécimal en Décimal | CalcuClub",
+      "url": "https://calcuclub.com/fr/convertir/hex-en-decimal/",
+      "snippet": "Convertissez l'hexadécimal en décimal avec notre calculatrice en ligne. Formule, exemples, étapes détaillées et tableau rapide de …"
+    },
+    {
+      "title": "Convertisseur décimal en hexadécimal",
+      "url": "https://www.rapidtables.org/fr/convert/number/decimal-to-hex.html",
+      "snippet": "Calculatrice de conversion de nombres décimaux en nombres hexadécimaux et comment convertir."
+    }
+  ]
+}

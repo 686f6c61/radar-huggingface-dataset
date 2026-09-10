@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AdamAxelrod/microscope_pipette_2026-09-10_act",
+  "slug": "adamaxelrod-microscope_pipette_2026-09-10_act",
+  "author": "AdamAxelrod",
+  "url": "https://huggingface.co/AdamAxelrod/microscope_pipette_2026-09-10_act",
+  "created_at": "2026-09-10T16:44:57.000Z",
+  "updated_at": "2026-09-10T16:45:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:AdamAxelrod/microscope_pipette_2026-09-10",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51669639,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206721452,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shopify Community",
+      "url": "https://community.shopify.com/",
+      "snippet": "Access a community of over 500,000 Shopify Merchants and Partners and engage in meaningful conversations with your peers."
+    },
+    {
+      "title": "Shopify Community",
+      "url": "https://community.shopify.com/login/",
+      "snippet": "Home Categories Guidelines Terms of Service Privacy Policy Powered by Discourse, best viewed with JavaScript enabled"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "Shopify是独立站还是平台？Shopify和shopline有什么区别？Shopify如 …",
+      "url": "https://www.zhihu.com/tardis/bd/art/450771146",
+      "snippet": "3.主题和插件费用，不使用不收费。 综上，Shopify开店费用总共有：Shopify基础费用、Shopify信用卡费用、Shopify交易费用、模板 …"
+    },
+    {
+      "title": "Shopify Discussion Forum",
+      "url": "https://community.shopify.com/c/shopify-discussion/95",
+      "snippet": "May 31, 2026 · Share wins, solve challenges, and connect with fellow merchants."
+    }
+  ]
+}

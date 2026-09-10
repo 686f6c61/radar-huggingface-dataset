@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSADA123SA4FASR/MyAwesomeModel-TestRepo",
+  "slug": "dsada123sa4fasr-myawesomemodel-testrepo",
+  "author": "DSADA123SA4FASR",
+  "url": "https://huggingface.co/DSADA123SA4FASR/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T18:27:07.000Z",
+  "updated_at": "2026-09-10T18:27:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vault 7: CIA Hacking Tools Revealed - WikiLeaks",
+      "url": "https://wikileaks.org/ciav7p1/",
+      "snippet": "Today, Tuesday 7 March 2017, WikiLeaks begins its new series of leaks on the U.S. Central Intelligence Agency. Code-named \"Vault …"
+    },
+    {
+      "title": "Vault 7 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vault_7",
+      "snippet": "Vault 7 is a series of documents that WikiLeaks began to publish on 7 March 2017, detailing the activities and capabilities of the …"
+    },
+    {
+      "title": "WikiLeaks",
+      "url": "https://wikileaks.org/",
+      "snippet": "Today, 5th August 2021, WikiLeaks publishes \"The Intolerance Network\" over 17,000 documents from internationally active right wing …"
+    },
+    {
+      "title": "WikiLeaks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikileaks",
+      "snippet": "In 2014, FBI and CIA officials lobbied the White House to designate Wikileaks as an \"information broker\" to allow for more …"
+    },
+    {
+      "title": "Wikileaks and the CIA: What’s in Vault7? - Council on Foreign Relations",
+      "url": "https://www.cfr.org/articles/wikileaks-and-cia-whats-vault7",
+      "snippet": "Mar 8, 2017 · On Tuesday, Wikileaks released a huge cache of documents it said were descriptions of CIA cyber tools used to break …"
+    }
+  ]
+}

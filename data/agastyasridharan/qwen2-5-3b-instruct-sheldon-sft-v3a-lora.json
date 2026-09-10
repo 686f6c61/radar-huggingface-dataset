@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3a-LoRA",
+  "slug": "agastyasridharan-qwen2-5-3b-instruct-sheldon-sft-v3a-lora",
+  "author": "agastyasridharan",
+  "url": "https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3a-LoRA",
+  "created_at": "2026-09-10T15:15:05.000Z",
+  "updated_at": "2026-09-10T15:19:21.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "persona",
+    "sheldon-cooper",
+    "sft",
+    "lora",
+    "qwen2.5",
+    "gsm8k",
+    "cs2881r",
+    "dataset:tbooy/sheldon-cooper-sft-20k",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4802147332,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "ترجمة جوجل - منتدى تطبيقات Google",
+      "url": "https://support.google.com/googleplay/thread/119419378/%D8%AA%D8%B1%D8%AC%D9%85%D8%A9-%D8%AC%D9%88%D8%AC%D9%84?hl=ar",
+      "snippet": "افتح Google Play. على هاتفك، استخدم تطبيق \"متجر Play\" . على جهاز الكمبيوتر، انتقِل إلى play.google.com. ابحث عن التطبيق الذي تريده. للتحقّق من أنّ التطبيق موثوق به، اطّلع على ما …"
+    },
+    {
+      "title": "انا عندي حل مشكله ترجمه برنامج جوجل المساعد",
+      "url": "https://support.google.com/assistant/thread/1828987/%D8%A7%D9%86%D8%A7-%D8%B9%D9%86%D8%AF%D9%8A-%D8%AD%D9%84-%D9%85%D8%B4%D9%83%D9%84%D9%87-%D8%AA%D8%B1%D8%AC%D9%85%D9%87-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%AC%D9%88%D8%AC%D9%84-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B9%D8%AF?hl=en",
+      "snippet": "Feb 23, 2019 · Send feedback to the Google Assistant Support Team using mobile app or computer."
+    },
+    {
+      "title": "سلام عليكم ياشركة قوقل اتيت لي اشتكي ان ترجمة قوقل مليئة بي الاخطا وحتي ...",
+      "url": "https://support.google.com/translate/thread/361158616/%D8%B3%D9%84%D8%A7%D9%85-%D8%B9%D9%84%D9%8A%D9%83%D9%85-%D9%8A%D8%A7%D8%B4%D8%B1%D9%83%D8%A9-%D9%82%D9%88%D9%82%D9%84-%D8%A7%D8%AA%D9%8A%D8%AA-%D9%84%D9%8A-%D8%A7%D8%B4%D8%AA%D9%83%D9%8A-%D8%A7%D9%86-%D8%AA%D8%B1%D8%AC%D9%85%D8%A9-%D9%82%D9%88%D9%82%D9%84-%D9%85%D9%84%D9%8A%D8%A6%D8%A9-%D8%A8%D9%8A-%D8%A7%D9%84%D8%A7%D8%AE%D8%B7%D8%A7-%D9%88%D8%AD%D8%AA%D9%8A-%D8%A7%D9%86%D9%8A-%D8%A7%D9%83%D8%AA%D8%A8-%D9%83%D9%84%D9%85%D8%A9-%D9%88%D8%A7%D8%AC%D8%AF%D9%87%D8%A7-%D8%AE%D8%B7%D8%A7?hl=en",
+      "snippet": "Community content may not be verified or up-to-date. Learn more."
+    },
+    {
+      "title": "الترجمة عن طريق التحدث - Android - مساعدة Google Translate",
+      "url": "https://support.google.com/translate/answer/6142468?hl=ar&co=GENIE.Platform%3DAndroid",
+      "snippet": "على هاتفك أو جهازك اللوحي الذي يعمل بنظام Android، افتح تطبيق \"ترجمة Google\" . اختَر اللغات التي تريد الترجمة منها وإليها. من: في أسفل يمين الشاشة، اختَر لغةً. إلى: في أسفل يسار الشاشة، …"
+    }
+  ]
+}

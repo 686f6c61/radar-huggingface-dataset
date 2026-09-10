@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dongd87/whisper-large-v3-turbo-sk-ct2",
+  "slug": "dongd87-whisper-large-v3-turbo-sk-ct2",
+  "author": "dongd87",
+  "url": "https://huggingface.co/dongd87/whisper-large-v3-turbo-sk-ct2",
+  "created_at": "2026-09-10T15:08:01.000Z",
+  "updated_at": "2026-09-10T15:09:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "sk"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "faster-whisper",
+    "automatic-speech-recognition",
+    "speech-to-text",
+    "sk",
+    "base_model:kinit/whisper-large-v3-turbo-sk",
+    "base_model:finetune:kinit/whisper-large-v3-turbo-sk",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 814054531,
+  "storage_human": "814 MB",
+  "base_model": "kinit/whisper-large-v3-turbo-sk",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offerte Fibra Internet WiFi, Mobile, TV, Smartphone | TIM",
+      "url": "https://www.tim.it/",
+      "snippet": "Telefonia Fissa e Mobile, Internet Fibra, Adsl, FWA, film, serie TV, Calcio e Intrattenimento. Promozioni, tariffe e assistenza su …"
+    },
+    {
+      "title": "Benvenuto in TIM",
+      "url": "https://www.tim.it/assistenza/benvenuto-in-tim",
+      "snippet": "Scopri i vantaggi e le offerte per i clienti TIM TIM Star Un universo di vantaggi esclusivi ed esperienze sorprendenti dove sei TU il …"
+    },
+    {
+      "title": "MyTIM",
+      "url": "https://www.pectim.it/",
+      "snippet": "Entra nell’Area Clienti MyTIM per controllare tutte le tue linee e accedere velocemente ai servizi online."
+    },
+    {
+      "title": "TIM Mail",
+      "url": "http://mail.tim.it/",
+      "snippet": ""
+    },
+    {
+      "title": "Area Clienti | TIM BUSINESS",
+      "url": "https://timbusiness.tim.it/areaclienti",
+      "snippet": "E se questi servizi fossero sempre con te? Con l’app TIM BUSINESS è possibile. Scaricala subito sul tuo smartphone o tablet e …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pedramka1414/gemma2b-imdb-sentiment-lora",
+  "slug": "pedramka1414-gemma2b-imdb-sentiment-lora",
+  "author": "pedramka1414",
+  "url": "https://huggingface.co/pedramka1414/gemma2b-imdb-sentiment-lora",
+  "created_at": "2026-09-10T12:11:42.000Z",
+  "updated_at": "2026-09-10T12:12:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 348186263,
+  "storage_human": "348 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-Tune Gemma 4 with LoRA & QLoRA: Complete Guide | Lushbinary",
+      "url": "https://lushbinary.com/blog/fine-tune-gemma-4-lora-qlora-complete-guide/",
+      "snippet": "Fine-tune any Gemma 4 model (E2B to 31B) with LoRA and QLoRA using Hugging Face, Unsloth, or Keras."
+    },
+    {
+      "title": "[96.6%] Fine-tune Gemma-2b, IMDB, Sent. Analysis | Kaggle",
+      "url": "https://www.kaggle.com/code/renderhp/96-6-fine-tune-gemma-2b-imdb-sent-analysis",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from No attached data sources"
+    },
+    {
+      "title": "Workers AI Models · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/",
+      "snippet": "This is a Gemma-2B base model that Cloudflare dedicates for inference with LoRA adapters."
+    },
+    {
+      "title": "gemma-2b-it-lora (Google) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/gemma-2b-it-lora/",
+      "snippet": "curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/google/gemma-2b-it-lora \\"
+    },
+    {
+      "title": "GitHub - samadpls/SentimentFineTuning: Efficient fine-tuned large language model (LLM) for the task of sentiment analysis using the IMDB dataset. · GitHub",
+      "url": "https://github.com/samadpls/SentimentFineTuning",
+      "snippet": "This repository includes the steps I took to fine-tune a large language model (LLM) for sentiment analysis using the IMDB dataset. The process leverages Hugging Face's transformers and datasets libraries, as well as the peft library for ..."
+    }
+  ]
+}

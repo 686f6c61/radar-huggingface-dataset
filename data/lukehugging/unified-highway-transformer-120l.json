@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "LukeHugging/Unified-Highway-Transformer-120L",
+  "slug": "lukehugging-unified-highway-transformer-120l",
+  "author": "LukeHugging",
+  "url": "https://huggingface.co/LukeHugging/Unified-Highway-Transformer-120L",
+  "created_at": "2026-09-10T15:53:56.000Z",
+  "updated_at": "2026-09-10T15:59:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39562374,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Day Is It in Japan Right Now? Live Japan Time (JST)",
+      "url": "https://daysoftheweek.org/what-day-is-it-in-japan/",
+      "snippet": "16 hours ago · Live: today's day, date and time in Japan (JST, UTC+9) — plus the Japanese name for today's weekday. Find out if …"
+    },
+    {
+      "title": "Time in Japan Now (JST) - Live Clock",
+      "url": "https://time.now/countries/japan/",
+      "snippet": "Current time in Japan right now in JST. Live clock with seconds, today's sunrise/sunset, public holidays, and interactive map - …"
+    },
+    {
+      "title": "Current Local Time in Tokyo, Japan - timeanddate.com",
+      "url": "https://www.timeanddate.com/worldclock/japan/tokyo",
+      "snippet": "Current local time in Japan – Tokyo. Get Tokyo's weather and area codes, time zone and DST. Explore Tokyo's sunrise and sunset, …"
+    },
+    {
+      "title": "Time in Japan now",
+      "url": "https://time.is/Japan",
+      "snippet": "16 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Japan."
+    },
+    {
+      "title": "Current local time in Japan, Time and Date in Japan, What time is it in ...",
+      "url": "https://www.worlddatetime.com/time/Japan",
+      "snippet": "16 hours ago · Get Japan's local time and area codes, time zone and DST. Explore Japan's time and date. Get time differences …"
+    }
+  ]
+}

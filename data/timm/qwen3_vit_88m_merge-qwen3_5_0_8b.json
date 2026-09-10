@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_88m_merge.qwen3_5_0_8b",
+  "slug": "timm-qwen3_vit_88m_merge-qwen3_5_0_8b",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_88m_merge.qwen3_5_0_8b",
+  "created_at": "2026-09-10T17:20:58.000Z",
+  "updated_at": "2026-09-10T17:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100003072,
+  "parameters_human": "100.0M",
+  "storage_bytes": 400027728,
+  "storage_human": "400 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PyTorch Image Models - GitHub",
+      "url": "https://github.com/huggingface/pytorch-image-models",
+      "snippet": "Py T orch Im age M odels (timm) is a collection of image models, layers, utilities, optimizers, schedulers, data-loaders / …"
+    },
+    {
+      "title": "timm (PyTorch Image Models) - Hugging Face",
+      "url": "https://huggingface.co/timm",
+      "snippet": "PyTorch Image Models (timm) is a collection of image models, layers, utilities, optimizers, schedulers, data-loaders / augmentations, …"
+    },
+    {
+      "title": "timm · PyPI",
+      "url": "https://pypi.org/project/timm/",
+      "snippet": "Aug 28, 2026 · Py T orch Im age M odels (timm) is a collection of image models, layers, utilities, optimizers, schedulers, data-loaders …"
+    },
+    {
+      "title": "Pytorch Image Models (timm) | timmdocs",
+      "url": "https://timm.fast.ai/",
+      "snippet": "Pytorch Image Models (timm) `timm` is a deep-learning library created by Ross Wightman and is a collection of SOTA computer …"
+    },
+    {
+      "title": "timm - Hugging Face",
+      "url": "https://huggingface.co/docs/timm/index",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

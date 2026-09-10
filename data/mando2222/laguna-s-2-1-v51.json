@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mando2222/laguna-s-2.1-v51",
+  "slug": "mando2222-laguna-s-2-1-v51",
+  "author": "mando2222",
+  "url": "https://huggingface.co/mando2222/laguna-s-2.1-v51",
+  "created_at": "2026-09-10T13:19:15.000Z",
+  "updated_at": "2026-09-10T13:26:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p150x4",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "tt-model-container",
+    "vllm-plugin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1228953859,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sito ufficiale Ryanair | Voli Low Cost | Voli Economici",
+      "url": "https://www.ryanair.com/it/it",
+      "snippet": "Prenota direttamente sul sito ufficiale Ryanair.com per ottenere i voli economici Ryanair alle migliori tariffe."
+    },
+    {
+      "title": "Official Ryanair website | Cheap flights in Europe | Ryanair",
+      "url": "https://www.ryanair.com/",
+      "snippet": "Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now …"
+    },
+    {
+      "title": "Biglietti, offerte e voli Ryanair a partire da 29 - Skyscanner",
+      "url": "https://www.skyscanner.it/linea-aerea/linea-aerea-ryanair-fr.html",
+      "snippet": "Confronta i prezzi di Ryanair per trovare le offerte low cost migliori per la tua destinazione preferita e prenota direttamente con …"
+    },
+    {
+      "title": "Ryanair - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ryanair",
+      "snippet": "Today, the parent company, Ryanair Holdings plc, operates airline subsidiaries Ryanair DAC, [11] Buzz, Malta Air, Lauda Europe, …"
+    },
+    {
+      "title": "Italian - Ryanair",
+      "url": "https://www.ryanair.com/flights/it/it",
+      "snippet": "Esplora la vasta rete di oltre 200 destinazioni di Ryanair in 34 paesi e inizia subito a pianificare la tua vacanza o il tuo viaggio di …"
+    }
+  ]
+}

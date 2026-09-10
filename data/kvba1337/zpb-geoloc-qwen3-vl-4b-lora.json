@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kvba1337/zpb-geoloc-qwen3-vl-4b-lora",
+  "slug": "kvba1337-zpb-geoloc-qwen3-vl-4b-lora",
+  "author": "kvba1337",
+  "url": "https://huggingface.co/kvba1337/zpb-geoloc-qwen3-vl-4b-lora",
+  "created_at": "2026-09-10T15:02:29.000Z",
+  "updated_at": "2026-09-10T15:02:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "qlora",
+    "image-text-to-text",
+    "geolocation",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JUHOSPELLET.HU",
+      "url": "http://www.juhospellet.hu/",
+      "snippet": "Fő célunk, a megbízható, jó minőségű pellet lakossági és ipari célű eladása. A pellet szállítását kamionons és raklapos …"
+    },
+    {
+      "title": "Bükk pellet | GEMINI KFT.",
+      "url": "http://wood.hu/termekek/bukk-pellet/",
+      "snippet": "A pellet használata pelletkazánokban, pelletkandallókban lehetséges. Amióta sikerült folyékonnyá tenni a fát a pelletálási eljárás …"
+    },
+    {
+      "title": "WEBER Bükk pellet, 8 kg (zöldségekhez alkalmas) - Alza.hu",
+      "url": "https://www.alza.hu/barkacs/weber-bukk-pellet-8-kg-zoldsegekhez-alkalmas-d13221806.htm",
+      "snippet": "Pellet WEBER Bükk pellet, 8 kg (zöldségekhez alkalmas) a www.alza.hu. Biztonságos vásárlás. Tekintsd meg a termék információit. …"
+    },
+    {
+      "title": "Weber 100%-ban természetes bükk keményfa pellet, 8 kg",
+      "url": "https://grilltarsasag.hu/weber-100-ban-termeszetes-bukk-kemenyfa-pellet-8-kg",
+      "snippet": "Jan 30, 2026 · Weber 100%-ban természetes bükk keményfa pellet, 8 kg a Weber grill kiegészítők és tartozékok kategóriából A …"
+    },
+    {
+      "title": "Weber természetes keményfa pellet, bükk, 8 kg",
+      "url": "https://grilltarsasag.hu/weber-termeszetes-kemenyfa-pellet-bukk-8-kg-5472",
+      "snippet": "Aug 7, 2026 · Töltsd meg pelletes grillsütőd tartályát bükkfából készült, 100%-ban természetes keményfa pelletekkel, hogy ételeid …"
+    }
+  ]
+}

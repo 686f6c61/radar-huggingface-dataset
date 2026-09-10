@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "introvoyz042/DrivingWorld",
+  "slug": "introvoyz042-drivingworld",
+  "author": "introvoyz042",
+  "url": "https://huggingface.co/introvoyz042/DrivingWorld",
+  "created_at": "2026-09-10T12:21:41.000Z",
+  "updated_at": "2026-09-10T12:21:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-to-video",
+    "arxiv:2412.19505",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9240710689,
+  "storage_human": "9.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banka pre budúcnosť | Slovenská sporiteľňa",
+      "url": "https://www.slsp.sk/sk/ludia",
+      "snippet": "Sme najväčšia banka na Slovensku s obľúbeným internetbankingom George. Chceme byť spoľahlivý partner pre vaše peniaze, aby …"
+    },
+    {
+      "title": "George | Banková apka Slovenskej sporiteľne",
+      "url": "https://www.slsp.sk/sk/george",
+      "snippet": "Náš internetbanking a apka má meno George. Získajte s ním prehľad o svojich financiách 24 hodín denne, 7 dní v týždni. Rýchlo a …"
+    },
+    {
+      "title": "George – nový Internetbanking – Slovenská sporiteľňa, a.s.",
+      "url": "https://store.slsp.sk/sk/ucty/osobny-ucet-detail",
+      "snippet": "Discover Slovenská sporiteľňa's personal account features and benefits, including George Internetbanking for simpler, more …"
+    },
+    {
+      "title": "George – nový Internetbanking – Slovenská sporiteľňa, a.s.",
+      "url": "https://george.slsp.sk/r/index.html?crossPlatform=tru&at=c",
+      "snippet": "Prihláste sa do nového Internetbankingu Slovenskej sporiteľne. S Georgeom bankujete jednoduchšie a s väčším prehľadom."
+    },
+    {
+      "title": "Business24 log out page - Slovenská sporiteľňa, a.s.",
+      "url": "https://b24.slsp.sk/web/select-client",
+      "snippet": "Ospravedlňujeme sa, vyskytla sa chyba Pri komunikácii so serverom nastala chyba a automaticky vás odhlásilo. Skúste sa prihlásiť …"
+    }
+  ]
+}

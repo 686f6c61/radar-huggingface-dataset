@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hawklegend/Motion-Detectors",
+  "slug": "hawklegend-motion-detectors",
+  "author": "Hawklegend",
+  "url": "https://huggingface.co/Hawklegend/Motion-Detectors",
+  "created_at": "2026-09-10T13:38:29.000Z",
+  "updated_at": "2026-09-10T13:38:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何打•？ - 知乎",
+      "url": "https://www.zhihu.com/question/21040260",
+      "snippet": "如何在输入法里输入这个符号？Google了很多发现都不对"
+    },
+    {
+      "title": "word怎么打出~（“~”这个符号）-百度经验",
+      "url": "https://jingyan.baidu.com/article/b0b63dbf28b1244a483070cd.html",
+      "snippet": "May 15, 2020 · word怎么打出~（“~”这个符号）,本篇演示word2016如何打出“~”这个类似波浪线的符号。"
+    },
+    {
+      "title": "如何调整word表格与上一行文字间距很大 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/7f766daf4058860001e1d094.html",
+      "snippet": "Mar 18, 2021 · 打开电脑，进入word这个软件中，打开要处理的文件，点击文件中的表格，鼠标右击，就会看到以下画面，点击下方的 …"
+    },
+    {
+      "title": "如何将文章中所有的直引号（ \" \" ） 都替换成弯引号（“",
+      "url": "https://www.zhihu.com/question/20146413",
+      "snippet": "本来以为是一个简单的通配符批量替换，结果试了一下还真不行。 必须先把 Word 的自动更正直引号为弯引号关掉。 这个设置在 2010 …"
+    },
+    {
+      "title": "在 Word 文档中添加下划线（横线）的几种方法-百度经验",
+      "url": "https://jingyan.baidu.com/article/676629972cdae915d41b8418.html",
+      "snippet": "Feb 19, 2020 · 在 Word 文档中添加下划线（横线）的几种方法,我们在编辑Word文档时，遇到需要填写的地方，往往需要加一条横线 …"
+    }
+  ]
+}

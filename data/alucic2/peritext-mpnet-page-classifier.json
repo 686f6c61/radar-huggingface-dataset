@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "alucic2/peritext-mpnet-page-classifier",
+  "slug": "alucic2-peritext-mpnet-page-classifier",
+  "author": "alucic2",
+  "url": "https://huggingface.co/alucic2/peritext-mpnet-page-classifier",
+  "created_at": "2026-09-10T14:49:39.000Z",
+  "updated_at": "2026-09-10T15:04:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "peritext_mpnet",
+    "feature-extraction",
+    "text-classification",
+    "mpnet",
+    "digital-humanities",
+    "hathitrust",
+    "peritext",
+    "front-matter",
+    "back-matter",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109489347,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437981868,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nudel Rezepte - die besten Rezepte 2026 | Chefkoch",
+      "url": "https://www.chefkoch.de/rs/s0/nudel/Rezepte.html",
+      "snippet": "Nudel - Wir haben 43.107 beliebte Nudel Rezepte für dich gefunden! Finde was du suchst - erstklassig & genial. Jetzt ausprobieren …"
+    },
+    {
+      "title": "Nudelgerichte Rezepte - die besten Rezepte 2026 | Chefkoch",
+      "url": "https://www.chefkoch.de/rs/s0/nudelgerichte/Rezepte.html",
+      "snippet": "Nudelgerichte - Wir haben 18.967 tolle Nudelgerichte Rezepte für dich gefunden! Finde was du suchst - appetitlich & schnell. Jetzt …"
+    },
+    {
+      "title": "Nudel-Rezepte: Schnelle, einfache & kreative Ideen",
+      "url": "https://www.lecker.de/nudeln",
+      "snippet": "In unserer Rezeptsammlung findest du die beliebtesten Nudel-Rezepte für jede Alltagssituation: von schneller Feierabendküche über …"
+    },
+    {
+      "title": "672 schnelle und einfache Nudel Rezepte - REWE",
+      "url": "https://www.rewe.de/rezeptsammlung/einfach-nudeln-pasta/?msockid=1f77104f1f9f6db41023079f1e2a6c61",
+      "snippet": "Schnelle und einfache Nudel Rezepte Entdecke unsere tollen Gerichte Direkt ausprobieren!"
+    },
+    {
+      "title": "Pasta-Rezepte – einfach & schnell & lecker kochen mit Emmi ♥",
+      "url": "https://emmikochteinfach.de/tag/pasta-rezepte/",
+      "snippet": "Wer gerne Nudeln isst, wird bei meiner Rezeptauswahl ganz bestimmt fündig. Weil Nudeln und Pasta-Gerichte so einfach variiert und …"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-i1-GGUF",
+  "slug": "mradermacher-cantonesellm-v2-0-30b-a3b-thinking-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-i1-GGUF",
+  "created_at": "2026-09-10T11:05:57.000Z",
+  "updated_at": "2026-09-10T13:01:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "yue",
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "cantonese",
+    "hong-kong",
+    "yue",
+    "reasoning",
+    "grpo",
+    "rlvr",
+    "moe",
+    "zh",
+    "en",
+    "base_model:hon9kon9ize/CantoneseLLM-v2.0-30B-A3B-Thinking",
+    "base_model:quantized:hon9kon9ize/CantoneseLLM-v2.0-30B-A3B-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 139097971200,
+  "storage_human": "139.1 GB",
+  "base_model": "hon9kon9ize/CantoneseLLM-v2.0-30B-A3B-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZŠ a MŠ Javornice",
+      "url": "https://zsjavornice.cz/",
+      "snippet": "ZŠ a MŠ Javornice Základní škola a mateřská škola Javornice — moderní vzdělávání otevřené světu i přírodě."
+    },
+    {
+      "title": "Kontakty :: ZŠ a MŠ JAVORNICE",
+      "url": "https://zsjavornice.webnode.cz/materska-skola/kontakty/",
+      "snippet": "Kontakty Základní škola - 778 719 690 494 545 143 pevná linka Družina - 737 642 910 Školní jídelna - 732 943 291 Mateřská škola - …"
+    },
+    {
+      "title": "Kontakty :: zsjavornice",
+      "url": "https://www.zsjavornice.cz/kontakt/",
+      "snippet": "Mateřská škola: 731 834 181 - Milada Šulcová (zást. ředitele pro předškolní vzděl.)"
+    },
+    {
+      "title": "O nás :: ZŠ a MŠ JAVORNICE - Webnode",
+      "url": "https://zsjavornice.webnode.cz/materska-skola/o-nas/",
+      "snippet": "Mateřská škola je dvoutřídní, s kapacitou 50 dětí. V přízemí jsou dvě prostorné šatny, v patře pak dvě třídy pro mladší a starší …"
+    },
+    {
+      "title": "Základní škola a mateřská škola Javornice | Školácheck",
+      "url": "https://www.skolacheck.cz/schools/650059999-zakladni-skola-a-materska-skola-javornice",
+      "snippet": "Základní škola Javornice nabízí kvalitní zázemí pro sportovní aktivity a klade důraz na inkluzi či osobnostní rozvoj žáků. Pedagogicky …"
+    }
+  ]
+}

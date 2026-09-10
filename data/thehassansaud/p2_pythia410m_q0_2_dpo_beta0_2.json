@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_2",
+  "slug": "thehassansaud-p2_pythia410m_q0_2_dpo_beta0_2",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_2",
+  "created_at": "2026-09-10T15:45:21.000Z",
+  "updated_at": "2026-09-10T15:45:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎مسلسلات خليجية‎ (@alooytv_1) • Instagram photos and videos",
+      "url": "https://www.instagram.com/alooytv_1/",
+      "snippet": "48K Followers, 5 Following, 15 Posts - ‎مسلسلات خليجية (@alooytv_1)‎ on Instagram: \"‎مسلسلات خليجية Alooytv نقدم جميع المسلسلات العربية وغيره‎\""
+    },
+    {
+      "title": "aloooytvjoootv Official: Instagram | Linktree",
+      "url": "https://linktr.ee/aloooytvjoootv",
+      "snippet": "Joootv, aloootv offers many arabic shows to steam. جرس انذار, بنات الروابي, امر."
+    },
+    {
+      "title": "‎مسلسلات خليجية‎ (@alooy__tv) • Instagram photos and videos",
+      "url": "https://www.instagram.com/alooy__tv/",
+      "snippet": "مسلسلات خليجية‎ (@alooy__tv) • Instagram photos and videos."
+    },
+    {
+      "title": "alooy tv (@alooytv) / X",
+      "url": "https://x.com/alooytv",
+      "snippet": "alooy tv @alooytv Jul 28 مسلسل بنات عمير الحلقة 5 AlooyTV - مشاهدة وتحميل المسلسلات الخليجية والعربية اون لاين From joo1.com 1"
+    },
+    {
+      "title": "منصة Alooy TV | ET بالعربي",
+      "url": "https://etbilarabi.com/%D8%A7%D9%84%D9%82%D9%86%D9%88%D8%A7%D8%AA/%D9%85%D9%86%D8%B5%D8%A9-alooy-tv",
+      "snippet": "منصة Alooy TV | Alooy TV الوي تي في لمشاهدة البرامج والمسلسلات مجانًا مثل دراما مسلسلات رمضان ، مسلسلات ، برامج ، أين يعرض ، مواعيد ، قنوات ، مسلسلات تركية ، مسلسلات خليجية ، …"
+    }
+  ]
+}

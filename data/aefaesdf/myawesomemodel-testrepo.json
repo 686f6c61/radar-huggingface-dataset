@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aefaesdf/MyAwesomeModel-TestRepo",
+  "slug": "aefaesdf-myawesomemodel-testrepo",
+  "author": "aefaesdf",
+  "url": "https://huggingface.co/aefaesdf/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T17:58:07.000Z",
+  "updated_at": "2026-09-10T17:58:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doha - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Doha",
+      "snippet": "It is also Qatar's fastest growing city and over 80% of the nation's population live in Doha or its surrounding suburbs, which are known …"
+    },
+    {
+      "title": "Doha: Iconic Places, Latest Events & Travel Info | Visit Qatar",
+      "url": "https://visitqatar.com/intl-en/about-qatar/doha",
+      "snippet": "Doha, Qatar's capital. Explore iconic places, discover upcoming events, find stopover info, practical travel tips, and plan your trip to …"
+    },
+    {
+      "title": "THE 15 BEST Things to Do in Doha (2026) - Must-See Attractions",
+      "url": "https://www.tripadvisor.com/Attractions-g294009-Activities-Doha.html",
+      "snippet": "Things to Do in Doha, Qatar: See Tripadvisor's 538,126 traveler reviews and photos of Doha tourist attractions. Find what to do …"
+    },
+    {
+      "title": "Doha | City, Qatar, Map, & History | Britannica",
+      "url": "https://www.britannica.com/place/Doha",
+      "snippet": "Aug 31, 2026 · Doha, city, capital of Qatar, located on the east coast of the Qatar Peninsula in the Persian Gulf. More than two-fifths …"
+    },
+    {
+      "title": "Doha, Qatar: All You Must Know Before You Go (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Tourism-g294009-Doha-Vacations.html",
+      "snippet": "Shopping abounds in the city's plentiful malls, while the Corniche impresses visitors with picturesque architecture and dazzling views …"
+    }
+  ]
+}

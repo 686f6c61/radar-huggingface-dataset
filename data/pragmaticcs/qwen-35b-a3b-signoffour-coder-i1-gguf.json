@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "pragmaticcs/Qwen-35B-A3B-SignOfFour-Coder-i1-GGUF",
+  "slug": "pragmaticcs-qwen-35b-a3b-signoffour-coder-i1-gguf",
+  "author": "pragmaticcs",
+  "url": "https://huggingface.co/pragmaticcs/Qwen-35B-A3B-SignOfFour-Coder-i1-GGUF",
+  "created_at": "2026-09-10T13:36:22.000Z",
+  "updated_at": "2026-09-10T13:36:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "ties",
+    "dare",
+    "moe",
+    "qwen",
+    "qwen3.5",
+    "qwen3.6",
+    "causal-lm",
+    "deltanet",
+    "agentic",
+    "reasoning",
+    "code",
+    "en",
+    "zh",
+    "base_model:pragmaticcs/Qwen-35B-A3B-SignOfFour-Coder",
+    "base_model:quantized:pragmaticcs/Qwen-35B-A3B-SignOfFour-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 370842796864,
+  "storage_human": "370.8 GB",
+  "base_model": "pragmaticcs/Qwen-35B-A3B-SignOfFour-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Rainbow Six Siege Settings 2026: FPS, Graphics, Aim",
+      "url": "https://playhub.com/blog/r6/best-rainbow-six-siege-settings-665326",
+      "snippet": "Oct 23, 2025 · Feel like your gameplay needs some fine-tuning? In our Best Rainbow Six Siege Settings guide, we’ll go over the …"
+    },
+    {
+      "title": "Best R6 Settings: for FPS, Graphics, Visibility, Mouse",
+      "url": "https://skycoach.gg/blog/r6/articles/best-rainbow-six-siege-settings",
+      "snippet": "Aug 9, 2026 · This guide shares the best R6 settings to increase FPS, get the top-quality graphics, and improve visibility and overall …"
+    },
+    {
+      "title": "Best R6 Settings 2026: FPS, Audio and Sensitivity",
+      "url": "https://alviran.net/blog/r6-siege-settings-guide-2026/",
+      "snippet": "Jul 14, 2026 · The best R6 settings keep frame rate stable, input delay low, the image readable, audio cues clean and sensitivity …"
+    },
+    {
+      "title": "Rainbow Six Siege Pro Settings and Gear List",
+      "url": "https://prosettings.net/lists/rainbow-six-siege/",
+      "snippet": "This list is a great resource if you want to know what DPI, multiplier, sensitivity, resolution, FOV, or aspect ratio your favorite Rainbow …"
+    },
+    {
+      "title": "Best Competitive Settings for Rainbow Six Siege in 2026",
+      "url": "https://recruitofficial.com/pages/r6-competitive-settings-2026.php",
+      "snippet": "Recruit's 2026 Rainbow Six Siege competitive settings guide for FPS, visibility, audio, mouse sensitivity, ADS, NVIDIA settings, …"
+    }
+  ]
+}

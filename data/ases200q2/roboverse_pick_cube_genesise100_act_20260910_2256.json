@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ases200q2/roboverse_pick_cube_genesisE100_act_20260910_2256",
+  "slug": "ases200q2-roboverse_pick_cube_genesise100_act_20260910_2256",
+  "author": "ases200q2",
+  "url": "https://huggingface.co/ases200q2/roboverse_pick_cube_genesisE100_act_20260910_2256",
+  "created_at": "2026-09-10T15:39:50.000Z",
+  "updated_at": "2026-09-10T15:40:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:ases200q2/roboverse-pick_cube-genesis-E100",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51674761,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206740380,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Settings in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/3326-open-settings-windows-10-a.html",
+      "snippet": "Apr 17, 2021 · Open Settings in Windows 10 How to Open Settings in Windows 10 Published by Shawn Brink Category: General Tips …"
+    },
+    {
+      "title": "Delete, allow, and manage cookies in Chrome - Google Help",
+      "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "To stop allowing access, learn how to manage site settings permissions. You can also manage access by clicking View site …"
+    },
+    {
+      "title": "Manage your Google Settings - Android Help",
+      "url": "https://support.google.com/android/answer/3118621?hl=en",
+      "snippet": "Manage your Google Settings Account Tap your Profile picture or Initial Manage your Google Account. Tap a section: Personal info …"
+    },
+    {
+      "title": "Turn On or Off Sync Settings for Microsoft Account in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/4077-turn-off-sync-settings-microsoft-account-windows-10-a.html",
+      "snippet": "Sep 27, 2025 · Other Windows Settings - see Windows Settings details Starting with Windows 10 build 20226, Microsoft is starting to …"
+    },
+    {
+      "title": "Change your Search browser settings",
+      "url": "https://support.google.com/websearch/answer/2539428?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Settings you can change The settings you can choose depend on whether you're on a computer, tablet, or phone. SafeSearch filters …"
+    }
+  ]
+}

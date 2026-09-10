@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Ateron/Gemma-4-MoonGem-31B",
+  "slug": "ateron-gemma-4-moongem-31b",
+  "author": "Ateron",
+  "url": "https://huggingface.co/Ateron/Gemma-4-MoonGem-31B",
+  "created_at": "2026-09-03T19:43:41.000Z",
+  "updated_at": "2026-09-04T06:21:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "merge",
+    "mergekit",
+    "roleplay",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:AuriAetherwiing/G4-31B-Musica-v1",
+    "base_model:merge:AuriAetherwiing/G4-31B-Musica-v1",
+    "base_model:BirdToast/Gemma-4-31B-glimmer-rp-v0.1",
+    "base_model:merge:BirdToast/Gemma-4-31B-glimmer-rp-v0.1",
+    "base_model:Jackrong/Gemopus-4-31B-it",
+    "base_model:merge:Jackrong/Gemopus-4-31B-it",
+    "base_model:ReadyArt/gemma-4-31B-it-scotoma-2",
+    "base_model:merge:ReadyArt/gemma-4-31B-it-scotoma-2",
+    "base_model:bgg1996/Melinoe-Gemma4-31B-VL",
+    "base_model:merge:bgg1996/Melinoe-Gemma4-31B-VL",
+    "base_model:nbeerbower/Gemma4-Gutenberg-31B",
+    "base_model:merge:nbeerbower/Gemma4-Gutenberg-31B",
+    "base_model:zerofata/G4-MeroMero-v2-31B",
+    "base_model:merge:zerofata/G4-MeroMero-v2-31B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 188,
+  "trending_score": 8,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578506090,
+  "storage_human": "62.6 GB",
+  "base_model": "BirdToast/Gemma-4-31B-glimmer-rp-v0.1, nbeerbower/Gemma4-Gutenberg-31B, Jackrong/Gemopus-4-31B-it, bgg1996/Melinoe-Gemma4-31B-VL, AuriAetherwiing/G4-31B-Musica-v1, zerofata/G4-MeroMero-v2-31B, ReadyArt/gemma-4-31B-it-scotoma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "فيروز _ ساعة صباحية مع فيروز - YouTube",
+      "url": "https://www.youtube.com/watch?v=t0wtiBp_0DY",
+      "snippet": "Mar 6, 2021 · فيروز الصباح لكل شخصية تحب هدوء فيروزيات الصباح قهوة الصباح مع اغاني فيروز الجميلة صباحيات فيروز الهادئة تحلى بها ايامنا وتنشط الروح الى الاندفاع الى يوم جمي..."
+    },
+    {
+      "title": "اجمل اغاني فيروز | ساعة كاملة |فيروزيات الصباح - YouTube",
+      "url": "https://www.youtube.com/watch?v=kj7zcpeO6jg",
+      "snippet": "Nov 4, 2022 · أجمل أغاني فيروز| ساعة كاملة |روائع فيروز| Fairuz قهوة الصباح مع فيروز وجمال الطبيعة والاجواء الهادئة لاتنسوا ..."
+    },
+    {
+      "title": "فيروزيات الصباح - فيروز - Fayrouz - فيديو Dailymotion",
+      "url": "https://www.dailymotion.com/video/x8lp8eh",
+      "snippet": "Jun 12, 2023 · شاهد فيروزيات الصباح - فيروز - Fayrouz - OAHD على Dailymotion"
+    },
+    {
+      "title": "فيروزيات الصباح - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=7oxoBBCnl3w",
+      "snippet": "Playing from فيروزيات الصباح - اجمل اغاني فيروز فيروزيات الصباح ساعة كاملة بدون اعلانات Fairuz 2021 Mix Save"
+    },
+    {
+      "title": "فيروز فيروزيات الصباح ساعة كاملة بدون اعلانات",
+      "url": "https://music.youtube.com/watch?v=1epDcdov1bs",
+      "snippet": "فيروز فيروزيات الصباح ساعة كاملة بدون اعلانات اغاني صباحية - اغاني صباحية رايقة - اغاني صباحية هادئة اجمل صباح مع صوت فيروز وقهوة فيروز https://www.yout..."
+    }
+  ]
+}

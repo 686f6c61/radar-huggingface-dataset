@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "nightmedia/Qwen3.6-35B-A3B-Brainwaves",
+  "slug": "nightmedia-qwen3-6-35b-a3b-brainwaves",
+  "author": "nightmedia",
+  "url": "https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves",
+  "created_at": "2026-09-10T16:18:29.000Z",
+  "updated_at": "2026-09-10T16:19:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "unsloth",
+    "qwen3_5",
+    "qwen3_6",
+    "qwen",
+    "qwen3.5",
+    "qwen3.6",
+    "distillation",
+    "reasoning",
+    "chain-of-thought",
+    "long-cot",
+    "sft",
+    "lora",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "multilingual",
+    "math",
+    "stem",
+    "coding",
+    "research",
+    "experimental",
+    "merge",
+    "fable",
+    "mergekit",
+    "Deckard(qx)",
+    "mxfp8",
+    "mxfp4",
+    "mlx",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "ja",
+    "es",
+    "base_model:AllSpark-Research/Iris-mini",
+    "base_model:adapter:AllSpark-Research/Iris-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "AllSpark-Research/Iris-mini, thomsonreuters/Thomson-1.0-Small, nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1, nightmedia/Qwen3.6-35B-A3B-FSM, Qwen/Qwen-AgentWorld-35B-A3B, Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MAIA - Malaysia Aerospace Industry Association",
+      "url": "https://maia.my/",
+      "snippet": "May 12, 2026 · Executive Office, Malaysia Aerospace Industry Association c/o Galaxy Aerospace, Lot 13 MRO Centre, Malaysia …"
+    },
+    {
+      "title": "About Us – MAIA",
+      "url": "https://wordpresstest.maia.my/about-us/",
+      "snippet": "A mark of solidarity, MAIA represents its members to the Government and global industry, It comprises of top management of …"
+    },
+    {
+      "title": "MAIA Newsletter | Malaysia Aerospace Industry Association",
+      "url": "https://maia.my/maia-newsletter",
+      "snippet": "Malaysia International Aerospace Centre, Sultan Abdul Aziz Shah Airport, 47200 Subang, Selangor, Malaysia Email: …"
+    },
+    {
+      "title": "pamphlet maia black",
+      "url": "http://wordpresstest.maia.my/wp-content/uploads/2018/05/MAIA-Brochure-Black-2018-test.pdf",
+      "snippet": "MAIA Malaysia Aerospace Industry Association Spirit Subang, Malaysia is the only Spirit facility outside of Europe/US. This facility …"
+    },
+    {
+      "title": "Corporate | Malaysia Aerospace Industry Association - maia.my",
+      "url": "https://maia.my/membership-directory/corporate/2664308",
+      "snippet": "Executive Office, Malaysia Aerospace Industry Association c/o Galaxy Aerospace, Lot 13 MRO Centre, Malaysia International …"
+    }
+  ]
+}

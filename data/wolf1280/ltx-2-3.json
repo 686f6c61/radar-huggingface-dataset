@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "wolf1280/LTX-2.3",
+  "slug": "wolf1280-ltx-2-3",
+  "author": "wolf1280",
+  "url": "https://huggingface.co/wolf1280/LTX-2.3",
+  "created_at": "2026-09-10T15:51:04.000Z",
+  "updated_at": "2026-09-10T15:51:04.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "diffusers",
+    "image-to-video",
+    "text-to-video",
+    "video-to-video",
+    "image-text-to-video",
+    "audio-to-video",
+    "text-to-audio",
+    "video-to-audio",
+    "audio-to-audio",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "ltx-2",
+    "ltx-video",
+    "ltxv",
+    "lightricks",
+    "ltx",
+    "ltx-2.3",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt",
+    "arxiv:2601.03233",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156009122813,
+  "storage_human": "156.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "GMX Login – ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Der GMX Login stellt Sie vor Fragen oder bereitet Ihnen Probleme? Hier erfahren Sie alles, was Sie zum GMX Postfach Login wissen …"
+    },
+    {
+      "title": "GMX E-Mail sichere & kostenlose E-Mail-Adresse",
+      "url": "https://www.gmx.net/mail/",
+      "snippet": "Welche Funktionen bietet mein persönliches GMX E-Mail-Konto? Mit Ihrem GMX Postfach organisieren Sie Ihre E-Mails so …"
+    },
+    {
+      "title": "Login",
+      "url": "https://dv.gmx.net/",
+      "snippet": "Mobiler GMX Login: Auf dieser Seite können Sie sich mit dem Smartphone oder Tablet einfach und sicher unterwegs in Ihr GMX …"
+    },
+    {
+      "title": "GMX Handytarife 2026 | jetzt wechseln & sparen",
+      "url": "https://gmx.1und1.de/",
+      "snippet": "Bei den GMX Mobilfunk-Verträgen besteht die Möglichkeit, zwischen zwei Arten von SIM-Karten zu wählen. Die klassische Triple- …"
+    }
+  ]
+}

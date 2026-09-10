@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed10",
+  "slug": "fpadovani-ppt-wc-uniform-oldlex-jpn-100mb_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed10",
+  "created_at": "2026-09-10T17:33:26.000Z",
+  "updated_at": "2026-09-10T17:37:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86416128,
+  "parameters_human": "86.4M",
+  "storage_bytes": 1382901881,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diretta.it: Serie A, risultati calcio in tempo reale e partite in diretta",
+      "url": "https://www.diretta.it/",
+      "snippet": "Risultati in tempo reale di calcio su Diretta dalla Serie A e altri 1000 campionati compresi Premier League, La Liga, Bundesliga, Ligue …"
+    },
+    {
+      "title": "ATP US Open 2026, Diretta.it: Tennis in tempo reale, Risultati tennis ...",
+      "url": "https://www.diretta.it/tennis/",
+      "snippet": "Risultati tennis in tempo reale su Diretta offre i risultati di tennis live più veloci dal ATP, WTA US Open 2026 e dai principali tornei del …"
+    },
+    {
+      "title": "Calcio su Diretta Mobile - risultati in tempo reale per il tuo PDA",
+      "url": "https://m.diretta.it/",
+      "snippet": "m.Diretta.it fornisce risultati di calcio in tempo reale - un livescore per cellulare. Questa versione per cellulare pero ha parametri …"
+    },
+    {
+      "title": "su Diretta Mobile - risultati in tempo reale per il tuo PDA",
+      "url": "https://m.diretta.it/altri/",
+      "snippet": "Segui i risultati in tempo reale sul tuo telefonino! Controlla il corrente"
+    },
+    {
+      "title": "Risultati Serie A 2026/2027 in diretta, Calcio Italia - Diretta.it",
+      "url": "https://www.diretta.it/serie-a/",
+      "snippet": "Risultati Serie A 2026/2027 su Diretta.it offre livescore, risultati, classifiche Serie A 2026/2027 e dettagli del match."
+    }
+  ]
+}

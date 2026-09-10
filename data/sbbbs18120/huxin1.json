@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SbbbS18120/huxin1",
+  "slug": "sbbbs18120-huxin1",
+  "author": "SbbbS18120",
+  "url": "https://huggingface.co/SbbbS18120/huxin1",
+  "created_at": "2026-09-10T15:53:28.000Z",
+  "updated_at": "2026-09-10T15:55:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178733881,
+  "storage_human": "179 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portale Inps - Pensami – Simulatore scenari pensionistici",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.pensami-simulatore-scenari-pensionistici.pensami---simulatore-scenari-pensionistici.html",
+      "snippet": "Feb 11, 2023 · È il simulatore pensionistico dell’INPS, accessibile senza registrazione, che fornisce informazioni sulle pensioni a cui è …"
+    },
+    {
+      "title": "Calcolo data pensione | aPensione",
+      "url": "https://www.apensione.it/calcolo-data-pensione/",
+      "snippet": "Il calcolatore restituisce una stima delle possibili date di pensionamento. Con pochi click ottieni il tuo report gratuito."
+    },
+    {
+      "title": "La mia pensione futura: simulazione della propria pensione",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.la-mia-pensione-futura-simulazione-della-propria-pensione-50033.la-mia-pensione-futura-simulazione-della-propria-pensione.html",
+      "snippet": "Apr 3, 2017 · La mia pensione futura è il servizio che permette di simulare quale sarà presumibilmente la pensione al termine …"
+    },
+    {
+      "title": "Calcolo pensione con il simulatore online di Altroconsumo",
+      "url": "https://www.altroconsumo.it/soldi/lavoro-pensione/calcola-risparmia/calcolarepensioni",
+      "snippet": "Jul 24, 2026 · Per sapere quale sarà la tua pensione, puoi usare il nostro calcolatore online, in modo gratuito, senza registrazione e …"
+    },
+    {
+      "title": "Quando andrai in pensione? Calcolalo subito - Irpef.info",
+      "url": "https://www.irpef.info/quando-andrai-in-pensione-calcolalo",
+      "snippet": "Feb 2, 2026 · Questo calcolatore online permette di determinare in modo semplice la data in cui si matura il diritto alla pensione e …"
+    }
+  ]
+}

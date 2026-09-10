@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m.qwen3_8_27b",
+  "slug": "timm-qwen3_vit_416m-qwen3_8_27b",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m.qwen3_8_27b",
+  "created_at": "2026-09-10T17:24:27.000Z",
+  "updated_at": "2026-09-10T17:24:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 415006704,
+  "parameters_human": "415.0M",
+  "storage_bytes": 1660060752,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alexandra Ledermann — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Alexandra_Ledermann",
+      "snippet": "5Notes et références. 6Liens externes. Basculer la table des matières. Alexandra Ledermann. 12 langues. Čeština. Deutsch. English. …"
+    },
+    {
+      "title": "Les cavaliers français - 40 noms de champions et légendes",
+      "url": "https://entre-cavaliers.fr/cavaliers-francais/",
+      "snippet": "Mar 12, 2025 · Cavalier français emblématique des années 1940 et 1950, Jean d’Orgeix a marqué le saut d’obstacles français en …"
+    },
+    {
+      "title": "Pénélope Leprévost — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/P%C3%A9n%C3%A9lope_Lepr%C3%A9vost",
+      "snippet": "Pénélope Leprévost, née le 1er août 1980 à Rouen, est une cavalière française de saut d'obstacles, championne olympique par …"
+    },
+    {
+      "title": "Alexandra Ledermann : Pionnière du CSO et Légende Olympique",
+      "url": "https://attelagetarnais.fr/alexandra-ledermann-cavaliere-pionniere-cso/",
+      "snippet": "Jan 8, 2026 · Alexandra Ledermann, c’est bien plus qu’une cavalière : c’est une pionnière qui a marqué l’histoire du saut d’obstacles …"
+    },
+    {
+      "title": "Fanny Skalli : biographie, palmarès et actualités 2026 - Le Cheval Français",
+      "url": "https://attelagetarnais.fr/fanny-skalli-biographie-palmares-2026/",
+      "snippet": "Apr 23, 2026 · Découvrez la biographie complète de Fanny Skalli, cavalière française de saut d'obstacles : palmarès, chevaux, vie …"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "id": "alexnodeland/site-needle",
+  "slug": "alexnodeland-site-needle",
+  "author": "alexnodeland",
+  "url": "https://huggingface.co/alexnodeland/site-needle",
+  "created_at": "2026-09-10T15:18:47.000Z",
+  "updated_at": "2026-09-10T16:32:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cactus-needle",
+    "needle",
+    "tool-calling",
+    "function-calling",
+    "intent-router",
+    "lora",
+    "on-device",
+    "en",
+    "dataset:alexnodeland/site-needle-corpus",
+    "base_model:Cactus-Compute/needle2",
+    "base_model:adapter:Cactus-Compute/needle2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27475614,
+  "storage_human": "27 MB",
+  "base_model": "Cactus-Compute/needle2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "intent routing (held-out split)",
+      "dataset": "alexnodeland/site-needle-corpus",
+      "metric": "objective (exact call)",
+      "value": 0.5074
+    },
+    {
+      "task": "intent routing (held-out split)",
+      "dataset": "alexnodeland/site-needle-corpus",
+      "metric": "tool accuracy",
+      "value": 0.7059
+    },
+    {
+      "task": "intent routing (held-out split)",
+      "dataset": "alexnodeland/site-needle-corpus",
+      "metric": "argument F1",
+      "value": 0.538
+    },
+    {
+      "task": "intent routing (held-out split)",
+      "dataset": "alexnodeland/site-needle-corpus",
+      "metric": "false refusal rate",
+      "value": 0
+    },
+    {
+      "task": "intent routing (held-out split)",
+      "dataset": "alexnodeland/site-needle-corpus",
+      "metric": "missed refusal rate",
+      "value": 0.9667
+    },
+    {
+      "task": "intent routing (hand-written set)",
+      "dataset": "alexnodeland/site-needle-corpus",
+      "metric": "objective (exact call)",
+      "value": 0.3421
+    },
+    {
+      "task": "intent routing (hand-written set)",
+      "dataset": "alexnodeland/site-needle-corpus",
+      "metric": "tool accuracy",
+      "value": 0.5526
+    },
+    {
+      "task": "intent routing (hand-written set)",
+      "dataset": "alexnodeland/site-needle-corpus",
+      "metric": "argument F1",
+      "value": 0.3973
+    },
+    {
+      "task": "intent routing (hand-written set)",
+      "dataset": "alexnodeland/site-needle-corpus",
+      "metric": "false refusal rate",
+      "value": 0
+    },
+    {
+      "task": "intent routing (hand-written set)",
+      "dataset": "alexnodeland/site-needle-corpus",
+      "metric": "missed refusal rate",
+      "value": 0.8947
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0c8ef088dddb6ec92318e758dc0a6f49",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft products, apps, and devices built to support you",
+      "url": "https://www.microsoft.com/en-us/microsoft-products-and-apps?msockid=0c8ef088dddb6ec92318e758dc0a6f49",
+      "snippet": "Uncover the power of Microsoft's products, apps, and devices designed to simplify your life and fuel your passions. Explore our …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

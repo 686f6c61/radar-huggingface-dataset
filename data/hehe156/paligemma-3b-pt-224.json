@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "hehe156/paligemma-3b-pt-224",
+  "slug": "hehe156-paligemma-3b-pt-224",
+  "author": "hehe156",
+  "url": "https://huggingface.co/hehe156/paligemma-3b-pt-224",
+  "created_at": "2026-09-10T15:20:20.000Z",
+  "updated_at": "2026-09-10T16:17:14.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paligemma",
+    "image-text-to-text",
+    "arxiv:2310.09199",
+    "arxiv:2303.15343",
+    "arxiv:2403.08295",
+    "arxiv:1706.03762",
+    "arxiv:2010.11929",
+    "arxiv:2209.06794",
+    "arxiv:2209.04372",
+    "arxiv:2103.01913",
+    "arxiv:2205.12522",
+    "arxiv:2110.11624",
+    "arxiv:2108.03353",
+    "arxiv:2010.04295",
+    "arxiv:2401.06209",
+    "arxiv:2305.10355",
+    "arxiv:2203.10244",
+    "arxiv:1810.12440",
+    "arxiv:1905.13648",
+    "arxiv:1608.00272",
+    "arxiv:1908.04913",
+    "arxiv:2407.07726",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2923466480,
+  "parameters_human": "2.92B",
+  "storage_bytes": 11715761003,
+  "storage_human": "11.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Mikomi - Chinesisches Restaurant",
+      "url": "https://mikomi-delmenhorst.de/",
+      "snippet": "Am Rande von Delmenhorst zwischen Lemwerder und Delmenhorst liegt unser stilvolles Restaurant. Mit rund 130 Sitzplätzen, einem …"
+    },
+    {
+      "title": "MIKOMI - Traditionell asiatische Küche, Delmenhorst",
+      "url": "https://web2.cylex.de/firma-home/mikomi---traditionell-asiatische-kueche-14356580.html",
+      "snippet": "Apr 15, 2026 · Kunden loben die sauberen Räumlichkeiten, die schnelle Lieferung und die großzügigen Portionen. Das Personal wird …"
+    },
+    {
+      "title": "MIKOMI - Traditionell asiatische Küche in Delmenhorst (Stedinger ...",
+      "url": "https://www.calzone-liefert.de/mikomi-traditionell-asiatische-kuche-in-delmenhorst-stedinger-landstrasse-1/",
+      "snippet": "MIKOMI - Traditionell asiatische Küche befindet sich in der Kategorie von Chinesisches Restaurant in der Stadt von Delmenhorst. Es …"
+    },
+    {
+      "title": "MIKOMI - Traditionell asiatische Küche",
+      "url": "https://www.restaurantnet.de/rest/mikomi-traditionell-asiatische-kuche",
+      "snippet": "MIKOMI - Traditionell asiatische Küche Stedinger Landstraße 1, 27751 Delmenhorst, Deutschland"
+    },
+    {
+      "title": "Mikomi Stedinger Landstraße in Delmenhorst-Bungerhof: Asiatisch ...",
+      "url": "https://onlinestreet.de/poi/TjdUMzdaRXgyUDk5L0d6RWFkY0F3UT09",
+      "snippet": "Asiatisch, Restaurants und Lokale in 27751 Delmenhorst: Mikomi (Stedinger Landstraße 1) im Stadtteil Bungerhof mit Adresse, …"
+    }
+  ]
+}

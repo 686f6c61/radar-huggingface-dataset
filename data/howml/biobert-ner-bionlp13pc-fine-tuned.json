@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HowML/biobert-ner-bionlp13pc-fine-tuned",
+  "slug": "howml-biobert-ner-bionlp13pc-fine-tuned",
+  "author": "HowML",
+  "url": "https://huggingface.co/HowML/biobert-ner-bionlp13pc-fine-tuned",
+  "created_at": "2026-09-10T15:25:35.000Z",
+  "updated_at": "2026-09-10T15:56:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "token-classification",
+    "en",
+    "dataset:bigbio/bionlp_st_2013_pc",
+    "base_model:dmis-lab/biobert-base-cased-v1.1",
+    "base_model:finetune:dmis-lab/biobert-base-cased-v1.1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107726601,
+  "parameters_human": "107.7M",
+  "storage_bytes": 430935108,
+  "storage_human": "431 MB",
+  "base_model": "dmis-lab/biobert-base-cased-v1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Envoyer de l’argent avec Wero : comment ça marche",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/envoyer-de-l-argent-avec-wero-comment-ca-marche-25444-20260304/",
+      "snippet": "Mar 4, 2026 · Vous en faites peut-être partie… sans le savoir ! Wero, c’est la solution européenne de paiement qui vise à proposer …"
+    },
+    {
+      "title": "Votre carte Vitale a-t-elle été utilisée dans une fraude aux centres de ...",
+      "url": "https://www.60millions-mag.com/sante-bien-etre/article/votre-carte-vitale-a-t-elle-ete-utilisee-dans-une-fraude-aux-centres-de-sante-20260416/",
+      "snippet": "Apr 16, 2026 · Votre carte Vitale a-t-elle été utilisée dans une fraude aux centres de santé ? La dernière affaire en date a coûté 58 …"
+    },
+    {
+      "title": "Reezocar - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/29888-reezocar",
+      "snippet": "May 27, 2016 · En effet, nous livrons des voitures venant de toute l'Europe tous les jours partout en France et en Europe. Je vous …"
+    },
+    {
+      "title": "Chargeback : pourquoi le droit au remboursement ne marche pas",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/chargeback-pourquoi-le-droit-au-remboursement-ne-marche-pas-souvent-apres-un-achat-litigieux-20260317/",
+      "snippet": "Mar 17, 2026 · Il avait réglé en ligne, avec sa carte American Express. « J’ai sollicité leur service client qui m’a demandé quelques …"
+    },
+    {
+      "title": "Mon espace santé, les raisons de l’activer… ou d’y renoncer",
+      "url": "https://www.60millions-mag.com/sante-bien-etre/article/mon-espace-sante-les-raisons-de-l-activer-ou-d-y-renoncer-20230106/",
+      "snippet": "Jan 6, 2023 · Comme 65,3 millions d’assurés sociaux, vous êtes désormais l’heureux propriétaire d’un carnet numérique de santé …"
+    }
+  ]
+}

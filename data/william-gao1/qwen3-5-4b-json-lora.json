@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "William-Gao1/qwen3.5-4b-json-lora",
+  "slug": "william-gao1-qwen3-5-4b-json-lora",
+  "author": "William-Gao1",
+  "url": "https://huggingface.co/William-Gao1/qwen3.5-4b-json-lora",
+  "created_at": "2026-09-10T13:22:18.000Z",
+  "updated_at": "2026-09-10T13:22:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.5",
+    "baseten",
+    "json",
+    "test-adapter",
+    "text-generation",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64996408,
+  "storage_human": "65 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "William de Galles — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/William_de_Galles",
+      "snippet": "Le prince William (William Arthur Philip Louis) naît le 21 juin 1982 au St Mary's Hospital de Paddington, à Londres. Fils aîné du roi …"
+    },
+    {
+      "title": "William, Prince of Wales - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prince_William",
+      "snippet": ""
+    },
+    {
+      "title": "Affaire du prince William, la polémique enflamme le ... - Médiamass",
+      "url": "https://fr.mediamass.net/people/le-prince-william/scandale.html",
+      "snippet": "13 hours ago · Nouvelles révélations dans l'affaire . Alors que chaque rebondissement fait la Une des journaux britanniques depuis …"
+    },
+    {
+      "title": "\"Ce n'est pas gagné, William est terriblement rancunier\" : après le ...",
+      "url": "https://fr.news.yahoo.com/ce-nest-pas-gagne-william-est-terriblement-rancunier--apres-le-retour-de-harry-au-royaume-uni-ou-en-est-la-reconciliation-avec-la-famille-royale-074946684.html",
+      "snippet": "Jul 20, 2026 · \"Ce n'est pas gagné, William est terriblement rancunier\" : après le retour de Harry au Royaume-Uni, où en est la …"
+    },
+    {
+      "title": "Actualités récentes sur William",
+      "url": "https://www.william.fr/nav-newsarchives",
+      "snippet": "2 days ago · Actualités William Pourquoi Kate n'accompagne pas William aux obsèques du roi Harald V Mercredi 9 Septembre 2026 …"
+    }
+  ]
+}

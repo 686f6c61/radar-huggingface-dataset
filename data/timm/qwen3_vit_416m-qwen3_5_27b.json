@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m.qwen3_5_27b",
+  "slug": "timm-qwen3_vit_416m-qwen3_5_27b",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m.qwen3_5_27b",
+  "created_at": "2026-09-10T17:24:06.000Z",
+  "updated_at": "2026-09-10T17:24:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 415006704,
+  "parameters_human": "415.0M",
+  "storage_bytes": 1660060752,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Campus Marseille Provence - OMNES Education",
+      "url": "https://www.omneseducation.com/nos-etablissements/campus/marseille/",
+      "snippet": "C’est près de la Porte d’Aix que se situera le campus marseillais d’OMNES Education, dont l’ouverture est prévue en 2026. Ce …"
+    },
+    {
+      "title": "En images | Un nouveau campus sort de terre à la Porte d'Aix pour ...",
+      "url": "https://madeinmarseille.net/actualite/194647-campus-omnes-education-visite-chantier-porte-aix/",
+      "snippet": "Jan 16, 2026 · Le groupe OMNES Education dévoile les coulisses de son futur campus marseillais installé à la Porte d’Aix. Trois …"
+    },
+    {
+      "title": "Campus Marseille - Omnes International",
+      "url": "https://www.omnes-international.com/bienvenue-en-france/guide-par-villes/marseille/",
+      "snippet": "C’est près de la Porte d’Aix que se situera le campus marseillais d’OMNES Education, dont l’ouverture est prévue en 2026. Ce …"
+    },
+    {
+      "title": "Marseille : Campus Omnes de Redman pour 2 600 étudiants dès 2026 …",
+      "url": "https://mesinfos.fr/13000-marseille/marseille-avec-le-campus-omnes-redman-met-la-terre-a-la-une-221973.html",
+      "snippet": "May 12, 2025 · Marseille : Le campus Omnes Education de Redman, 6 250 m², accueillera 2 600 étudiants dès 2026, érigé sur une …"
+    },
+    {
+      "title": "Marseille Provence Campus - OMNES Education",
+      "url": "https://www.omneseducation.com/en/our-facilities/the-campuses/marseille-provence-campus/",
+      "snippet": "1 day ago · OMNES Education’s Marseille campus, scheduled to open in 2026, will be located near Porte d’Aix. This multi-disciplinary …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "MaxSchulten/teacher_gpt-oss-20B",
+  "slug": "maxschulten-teacher_gpt-oss-20b",
+  "author": "MaxSchulten",
+  "url": "https://huggingface.co/MaxSchulten/teacher_gpt-oss-20B",
+  "created_at": "2026-09-10T17:38:18.000Z",
+  "updated_at": "2026-09-10T17:38:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203563110,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Milling Machine Operator jobs in South Africa | Pnet",
+      "url": "https://www.pnet.co.za/jobs/milling-machine-operator",
+      "snippet": "Milling Machine Operator Jobs at Pnet. Search for your Milling Machine Operator Job and love your next job."
+    },
+    {
+      "title": "Cnc Milling Machine Operator jobs in South Africa | Pnet",
+      "url": "https://www.pnet.co.za/jobs/cnc-milling-machine-operator",
+      "snippet": "Cnc Milling Machine Operator Jobs at Pnet. Search for your Cnc Milling Machine Operator Job and love your next job."
+    },
+    {
+      "title": "Milling Machine Operator Jobs in South Africa (237 Open Roles ...",
+      "url": "https://za.linkedin.com/jobs/milling-machine-operator-jobs",
+      "snippet": "Today&#39;s top 237 Milling Machine Operator jobs in South Africa. Leverage your professional network, and get hired. New Milling …"
+    },
+    {
+      "title": "25+ Milling Machine Jobs, Employment 6 September 2026| Indeed",
+      "url": "https://za.indeed.com/q-milling-machine-jobs.html?vjk=f76da4ef1563b92c",
+      "snippet": "Date posted Post your resumeand find your next job on Indeed! &nbsp; milling machine jobs Sort by: relevance- date CNC Milling …"
+    },
+    {
+      "title": "CNC Milling Machine Operator jobs in South Africa - Careerjet",
+      "url": "https://www.careerjet.co.za/cnc-milling-machine-operator-jobs",
+      "snippet": "All CNC Milling Machine Operator jobs in South Africa on Careerjet.co.za, the search engine for jobs in South Africa"
+    }
+  ]
+}

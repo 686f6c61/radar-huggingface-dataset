@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m.qwen3_vl_235b_a22b",
+  "slug": "timm-qwen3_vit_416m-qwen3_vl_235b_a22b",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m.qwen3_vl_235b_a22b",
+  "created_at": "2026-09-10T17:26:22.000Z",
+  "updated_at": "2026-09-10T17:26:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "arxiv:2511.21631",
+    "base_model:Qwen/Qwen3-VL-235B-A22B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-235B-A22B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 415006704,
+  "parameters_human": "415.0M",
+  "storage_bytes": 1660060752,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=ES&hl=es",
+      "snippet": "Disfruta de los vídeos y la música que te gusta, sube material original y comparte el contenido con tus amigos, tu familia y el resto …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - Aplicaciones en Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=es",
+      "snippet": "Hazte con la aplicación YouTube oficial en tu teléfono o tablet Android. Descubre qué temas están arrasando en todo el mundo: …"
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Godsave22/vetkonect-qwen3-0.6b-lora-checkpoint-250",
+  "slug": "godsave22-vetkonect-qwen3-0-6b-lora-checkpoint-250",
+  "author": "Godsave22",
+  "url": "https://huggingface.co/Godsave22/vetkonect-qwen3-0.6b-lora-checkpoint-250",
+  "created_at": "2026-09-10T13:38:50.000Z",
+  "updated_at": "2026-09-10T13:38:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132941644,
+  "storage_human": "133 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Transcription Apps to Convert Audio to Text in 2026 ... - Sonix",
+      "url": "https://sonix.ai/resources/best-transcription-apps-for-speech-to-text/",
+      "snippet": "Jun 7, 2026 · AI transcription apps convert audio and video into searchable, editable text, automatically, in minutes, and across …"
+    },
+    {
+      "title": "Top 7 AI Transcription Tools for Voice to Text in 2026",
+      "url": "https://maestra.ai/blogs/best-transcription-software",
+      "snippet": "Jun 23, 2026 · We tested & reviewed the best apps that transcribe audio to text (live & uploaded transcription) and compared their …"
+    },
+    {
+      "title": "9 Best AI Transcription Tools for 2026 (17 Reviewed)",
+      "url": "https://usefulai.com/tools/ai-transcription",
+      "snippet": "Jan 17, 2026 · AI transcription tools convert spoken words into written text with incredible speed, saving you countless hours of …"
+    },
+    {
+      "title": "12 best transcription software: AI tools tested & compared in 2026",
+      "url": "https://www.guideflow.com/blog/transcription-software-ai-tools",
+      "snippet": "Aug 25, 2026 · This guide covers the 12 best transcription software tools in 2026, including AI-only tools, human transcription …"
+    },
+    {
+      "title": "10 AI Transcription Tools to Convert Speech to Text in 2025",
+      "url": "https://www.digitalocean.com/resources/articles/ai-transcription-tools",
+      "snippet": "Jun 12, 2025 · Explore the top AI transcription tools 2025 that offer fast, accurate speech-to-text conversion, speaker identification, …"
+    }
+  ]
+}

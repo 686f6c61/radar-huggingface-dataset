@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ibyteohdear/MiniMax-H3-LightX8-Fused-fl2v",
+  "slug": "ibyteohdear-minimax-h3-lightx8-fused-fl2v",
+  "author": "ibyteohdear",
+  "url": "https://huggingface.co/ibyteohdear/MiniMax-H3-LightX8-Fused-fl2v",
+  "created_at": "2026-09-10T16:44:01.000Z",
+  "updated_at": "2026-09-10T16:52:34.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "video-to-audio-video",
+    "audio-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "reference-to-audio-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33122992896,
+  "parameters_human": "33.12B",
+  "storage_bytes": 66280504088,
+  "storage_human": "66.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ucupaint — Blender Extensions",
+      "url": "https://extensions.blender.org/add-ons/ucupaint/",
+      "snippet": "Ucupaint is a Blender addon to manage texture layers for the Eevee and Cycles renderers. Already in development for years, …"
+    },
+    {
+      "title": "GitHub - ucupumar/ucupaint: Ucupaint is Blender addon to manage …",
+      "url": "https://github.com/ucupumar/ucupaint",
+      "snippet": "It means for Blender 4.2+, you can just search for 'Ucupaint' in Edit > Preferences > Get Extensions. Be aware that this version has …"
+    },
+    {
+      "title": "UCUPAINT - GitHub Pages",
+      "url": "https://ucupumar.github.io/ucupaint-wiki/",
+      "snippet": "Ucupaint is Blender addon to manage texture as layers for Eevee and Cycles renderer."
+    },
+    {
+      "title": "Ucupaint Version History — Blender Extensions",
+      "url": "https://extensions.blender.org/add-ons/ucupaint/versions/",
+      "snippet": "Jul 29, 2026 · Maintenance release of Ucupaint, contains only bugfixes. Fix: Creating a solid color layer with a vertex color mask in …"
+    },
+    {
+      "title": "Releases · ucupumar/ucupaint - GitHub",
+      "url": "https://github.com/ucupumar/ucupaint/releases",
+      "snippet": "What's new in both Ucupaint 2.4.8 and Ucupaint Plus 2.4.8! New option to use image atlas when opening images to avoid the max …"
+    }
+  ]
+}

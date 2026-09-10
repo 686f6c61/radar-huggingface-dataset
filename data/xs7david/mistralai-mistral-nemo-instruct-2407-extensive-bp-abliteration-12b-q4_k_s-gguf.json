@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "xs7david/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-Q4_K_S-GGUF",
+  "slug": "xs7david-mistralai-mistral-nemo-instruct-2407-extensive-bp-abliteration-12b-q4_k_s-gguf",
+  "author": "xs7david",
+  "url": "https://huggingface.co/xs7david/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-Q4_K_S-GGUF",
+  "created_at": "2026-09-10T18:56:09.000Z",
+  "updated_at": "2026-09-10T18:56:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ru",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ru",
+    "zh",
+    "ja",
+    "base_model:grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B",
+    "base_model:quantized:grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 7120200704,
+  "storage_human": "7.1 GB",
+  "base_model": "grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avanti veloce con RaiPlay - Samsung Community",
+      "url": "https://eu.community.samsung.com/t5/smart-tv/avanti-veloce-con-raiplay/td-p/145970",
+      "snippet": "Dec 25, 2016 · In quella emerita *****ezza che sembra essere RaiPlay come diavolo si fa ad andare avanti (o indietro) veloce? …"
+    },
+    {
+      "title": "Samsung series 6 4K Tasti blu spariti rai play hbbtv",
+      "url": "https://eu.community.samsung.com/t5/smart-tv/samsung-series-6-4k-tasti-blu-spariti-rai-play-hbbtv/td-p/7148474",
+      "snippet": "Mar 19, 2023 · Salve ragazzi volevo sapere un informazione possiedo una. Tv Samsung series curva 4K samsung app, rai play …"
+    },
+    {
+      "title": "La custodia non si ricarica",
+      "url": "https://support-it.panasonic.eu/app/answers/detail/a_id/7423/~/la-custodia-non-si-ricarica",
+      "snippet": "1) Collegare la custodia di ricarica a un computer (USB) utilizzando il cavo USB in dotazione."
+    },
+    {
+      "title": "PROBLEMI RAIPLAY - Samsung Community",
+      "url": "https://eu.community.samsung.com/t5/smart-tv/problemi-raiplay/td-p/13129257",
+      "snippet": "Sep 2, 2025 · Buongiorno a tutti, mi chiamo Franco ho una SMARTTV UE55DU7170UXZT e da circa una settimana riscontro dei …"
+    },
+    {
+      "title": "Samsung TV app RaiPlay - Samsung Community",
+      "url": "https://eu.community.samsung.com/t5/smart-tv/samsung-tv-app-raiplay/td-p/5598331",
+      "snippet": "Jun 22, 2022 · Salve a tutti, In possesso dello Smart TV Samsung QE55Q70T, anch'io sono imbattuto nel blocco dell'app riguardo …"
+    }
+  ]
+}

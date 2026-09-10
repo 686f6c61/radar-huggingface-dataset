@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m_enc.qwen3_vl_8b",
+  "slug": "timm-qwen3_vit_416m_enc-qwen3_vl_8b",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_vl_8b",
+  "created_at": "2026-09-10T17:28:00.000Z",
+  "updated_at": "2026-09-10T17:28:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "arxiv:2511.21631",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 455125744,
+  "parameters_human": "455.1M",
+  "storage_bytes": 1820534840,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qBittorrent Official Website",
+      "url": "https://www.qbittorrent.org/",
+      "snippet": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. Additionally, qBittorrent runs and provides the …"
+    },
+    {
+      "title": "qBittorrent Official Website",
+      "url": "https://www.qbittorrent.org/download",
+      "snippet": "qBittorrent is available for Slackware through slackbuilds.org. The slackbuild script is maintained by David Woodfall. See this page for …"
+    },
+    {
+      "title": "Apache2 Debian Default Page: It works",
+      "url": "http://doc.qbittorrent.org/",
+      "snippet": "This is the default welcome page used to test the correct operation of the Apache2 server after installation on Debian systems. If you …"
+    },
+    {
+      "title": "qBittorrent official forums - Index page",
+      "url": "https://forum.qbittorrent.org/",
+      "snippet": "1 day ago · 40 2019 [Official] qBittorrent v5.2.2 by Nemo Mon Jun 22, 2026 9:38 am Linux Linux specific questions, problems."
+    },
+    {
+      "title": "qBittorrent Official Website",
+      "url": "https://www.qbittorrent.org/news",
+      "snippet": "Dec 27, 2016 · qBittorrent v4.3.6 and v4.4.0beta1 were released. The v4.3.x releases will continue strictly with important fixes only …"
+    }
+  ]
+}

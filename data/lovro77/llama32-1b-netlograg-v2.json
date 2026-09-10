@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lovro77/llama32-1b-netlograg-v2",
+  "slug": "lovro77-llama32-1b-netlograg-v2",
+  "author": "lovro77",
+  "url": "https://huggingface.co/lovro77/llama32-1b-netlograg-v2",
+  "created_at": "2026-09-10T13:53:20.000Z",
+  "updated_at": "2026-09-10T13:53:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62328443,
+  "storage_human": "62 MB",
+  "base_model": "unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cake Recipes - Food Network",
+      "url": "https://www.foodnetwork.com/topics/cake",
+      "snippet": "1 day ago · Make birthdays, holidays or any get-together a little sweeter with top-rated cake recipes from Food Network chefs."
+    },
+    {
+      "title": "66 Best Cake Recipes & Ideas | How to Bake a Cake from Scratch | Food ...",
+      "url": "https://www.foodnetwork.com/recipes/packages/baking-guide/crowd-pleasing-cakes/crowd-pleasing-cakes",
+      "snippet": "Feb 4, 2025 · Towering layer cakes, frosted sheet cakes, buttery Bundt cakes, candle-topped birthday cakes: what’s not to love about …"
+    },
+    {
+      "title": "Cake Recipes | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/dessert/cake",
+      "snippet": "Turn any occasion into a celebration with these cake recipes from Food Network. You'll find options for chocolate cake, carrot cake, …"
+    },
+    {
+      "title": "Blueberry Crisp Dump Cake Recipe | Ree Drummond | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/ree-drummond/blueberry-crisp-dump-cake-21429655",
+      "snippet": "This cake combines two of Ree’s favorite sweet dishes and is great to take to cookouts and potlucks. Using a box cake mix …"
+    },
+    {
+      "title": "Zucchini Cake Recipe | Ree Drummond | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/ree-drummond/zucchini-cake-3075406",
+      "snippet": "Get Zucchini Cake Recipe from Food Network For the cake: Preheat the oven to 350 degrees F. Grease a 9-by-13-inch pan. In a …"
+    }
+  ]
+}

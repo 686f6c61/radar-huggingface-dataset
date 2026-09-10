@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0_sc_unbounded",
+  "slug": "thehassansaud-p2_pythia410m_q0_sc_unbounded",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_sc_unbounded",
+  "created_at": "2026-09-10T15:34:53.000Z",
+  "updated_at": "2026-09-10T15:35:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AltZertG - Gesetz über die Zertifizierung von Altersvorsorge- und ...",
+      "url": "https://www.gesetze-im-internet.de/altzertg/BJNR132200001.html",
+      "snippet": "(1) Sind aus einem Altersvorsorgevertrag Leistungen nach § 1 Absatz 1 Satz 1 Nummer 4 zu erbringen, hat ein Anbieter von …"
+    },
+    {
+      "title": "AltZertG Altersvorsorgeverträge-Zertifizierungsgesetz",
+      "url": "https://www.buzer.de/gesetz/2399/index.htm",
+      "snippet": "Jun 26, 2001 · (4) Für Altersvorsorgeverträge, die bis zum 31. Dezember 2009 nach § 4 Abs. 1 zertifiziert werden, gilt § 1 Abs. 1 Satz …"
+    },
+    {
+      "title": "Änderungen AltZertG Altersvorsorgeverträge-Zertifizierungsgesetz",
+      "url": "https://www.buzer.de/gesetz/2399/l.htm",
+      "snippet": "May 26, 2026 · Änderungen an Altersvorsorgeverträge-Zertifizierungsgesetz (AltZertG) chronologisch absteigend nach Spalte 1 = …"
+    },
+    {
+      "title": "Altersvorsorgeverträge-Zertifizierungsgesetz - BMAS",
+      "url": "https://www.bmas.de/DE/Service/Gesetze-und-Gesetzesvorhaben/altersvorsorgevertraege-zertifizierungsgesetz.html",
+      "snippet": "Gesetz Rente Altersvorsorgeverträge-Zertifizierungsgesetz Gesetz über die Zertifizierung von Altersvorsorgeverträgen Gesetz …"
+    },
+    {
+      "title": "Altersvorsorgeverträge-Zertifizierungsgesetz – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Altersvorsorgevertr%C3%A4ge-Zertifizierungsgesetz",
+      "snippet": "Altersvorsorgeverträge-Zertifizierungsgesetz. Sprachen hinzufügen. Links hinzufügen. Artikel. Diskussion. Deutsch. Lesen. Bearbeiten."
+    }
+  ]
+}

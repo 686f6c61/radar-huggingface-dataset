@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_SimNPO",
+  "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget05_simnpo",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_SimNPO",
+  "created_at": "2026-09-10T13:19:36.000Z",
+  "updated_at": "2026-09-10T13:20:49.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "SimNPO",
+    "forget05",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wie erhalte ich hilfe in windows 11,+ - WindowsArea.de",
+      "url": "https://windowsarea.de/search/wie+erhalte+ich+hilfe+in+windows+11%2C%2B/",
+      "snippet": "Jun 1, 2026 · Windows 11 bekommt neue KI-Funktionen: Ein Ausblick 19. Oktober 2024 Microsoft hat in den letzten Jahren …"
+    },
+    {
+      "title": "Anleitung: Desktop-Hintergrund für zweiten Monitor ändern in …",
+      "url": "https://windowsarea.de/2023/06/anleitung-desktop-hintergrund-fuer-zweiten-monitor-aendern-in-windows-11/",
+      "snippet": "Jun 22, 2023 · Wenn ihr mehrere Monitore an einem Windows 11-PC angeschlossen habt, möchtet ihr vielleicht für jeden Monitor ein …"
+    },
+    {
+      "title": "Windows 11 Forum | Win11Forum.de",
+      "url": "https://win11forum.de/",
+      "snippet": "Aug 4, 2026 · Diskussionsforum für alle Microsoft Windows 11 Interessierten: Tipps und Tricks, Hilfestellung und Lösungen im …"
+    },
+    {
+      "title": "\"Einstellungen\" Fenster schließt sich sofort wieder - Win11Forum.de",
+      "url": "https://win11forum.de/t/einstellungen-fenster-schliesst-sich-sofort-wieder.699/",
+      "snippet": "Jan 21, 2023 · Wurde Windows 11 neu installiert, oder ein Update von Windows 10 durchgeführt? Es wurde ein Update einer neu …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/windows-7-ribbon-and-access-toolbar-disappeared/2505ee89-3f2b-4e6c-94b5-2124a971f18f",
+      "snippet": ""
+    }
+  ]
+}

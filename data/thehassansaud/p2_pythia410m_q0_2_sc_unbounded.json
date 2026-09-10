@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0_2_sc_unbounded",
+  "slug": "thehassansaud-p2_pythia410m_q0_2_sc_unbounded",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_2_sc_unbounded",
+  "created_at": "2026-09-10T15:48:07.000Z",
+  "updated_at": "2026-09-10T15:48:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "F12如何查看cookie? - 知乎",
+      "url": "https://www.zhihu.com/question/599129698",
+      "snippet": "May 4, 2023 · 要查看网页的cookie，可以通过浏览器的开发者工具。下面是具体步骤： 1.在要编辑的网页上打开开发者工具。例如， …"
+    },
+    {
+      "title": "如何评价 DeepSeek 涨价后，OpenCode Go 套餐的 Flash 模型调用量削 …",
+      "url": "https://www.zhihu.com/question/2072481373085028433",
+      "snippet": "Aug 16, 2026 · ai计算了一下，目前go套餐的总额度大概13亿左右，和官方比起来还是便宜了一些。 opencode go飞书群说在推进自部 …"
+    }
+  ]
+}

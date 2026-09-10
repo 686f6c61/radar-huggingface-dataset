@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Divya-codes/ViT-PlantDisease-Dataset",
+  "slug": "divya-codes-vit-plantdisease-dataset",
+  "author": "Divya-codes",
+  "url": "https://huggingface.co/Divya-codes/ViT-PlantDisease-Dataset",
+  "created_at": "2026-09-10T18:07:40.000Z",
+  "updated_at": "2026-09-10T18:07:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[FREE] Families are more adaptable when __________. A. no one ...",
+      "url": "https://brainly.com/question/50286891",
+      "snippet": "Apr 15, 2024 · Families are more adaptable when conjugal power is fairly egalitarian, as this promotes shared decision-making, …"
+    },
+    {
+      "title": "sociology of families ch's 13 & 14 Flashcards | Quizlet",
+      "url": "https://quizlet.com/642097812/sociology-of-families-chs-13-14-flash-cards/",
+      "snippet": "from the _____ theoretical perspective, the way that a family defines, appraises, or interprets a crisis-precipitating event can, at times, …"
+    },
+    {
+      "title": "Families Are More Adaptable When - Quiz+",
+      "url": "https://quizplus.com/quiz/30216-quiz-14-family-stress-crisis-and-resilience/questions/2255592-families-are-more-adaptable-whena-they-are-authori",
+      "snippet": "A) they are authoritarian. B) they lack leadership. C) conjugal power is fairly egalitarian. D) no one is allowed to move into a position …"
+    },
+    {
+      "title": "Families are more adaptable when_ . a. conjugal power is fairly ...",
+      "url": "https://www.gauthmath.com/solution/1812118593767430/Families-are-more-adaptable-when_-a-conjugal-power-is-fairly-egalitarian-b-they-",
+      "snippet": "Adaptability in families often hinges on the dynamics of power and leadership. When conjugal power is shared more equally, families …"
+    },
+    {
+      "title": "(Solved) - Families are more adaptable when__________. they are ...",
+      "url": "https://www.transtutors.com/questions/families-are-more-adaptable-when-they-are-authoritarian-conjugal-power-is-fairly--11672474.htm",
+      "snippet": "Apr 24, 2025 · Families are more adaptable when conjugal power is fairly egalitarian. This means that both partners in a relationship …"
+    }
+  ]
+}

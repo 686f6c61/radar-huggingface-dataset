@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wildnrfm/legal-chatbot-llama3",
+  "slug": "wildnrfm-legal-chatbot-llama3",
+  "author": "wildnrfm",
+  "url": "https://huggingface.co/wildnrfm/legal-chatbot-llama3",
+  "created_at": "2026-09-10T13:51:27.000Z",
+  "updated_at": "2026-09-10T15:14:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mein ELSTER - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster",
+      "snippet": "Aug 6, 2026 · Fragen und Antworten zu der ELSTER Webanwendung Mein ELSTER."
+    },
+    {
+      "title": "Javascript angeblich nicht aktiviert - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/19750-javascript-angeblich-nicht-aktiviert",
+      "snippet": "May 8, 2015 · AW: Javascript angeblich nicht aktiviert Bitte nicht das aktivierte JavaScript im Browser mit dem Login unter Nutzung …"
+    },
+    {
+      "title": "Login über Browser Edge nicht möglich - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/297393-login-%C3%BCber-browser-edge-nicht-m%C3%B6glich",
+      "snippet": "Dec 29, 2007 · Seit einigen Tagen kann ich mich nicht mehr über den Browser Edge im Elster-Portal anmelden (Windows 10). Eine …"
+    },
+    {
+      "title": "login - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/6733-login",
+      "snippet": "Oct 4, 2011 · AW: login Moijn, ich habe mal den Java Debugger angeschmissen. Wenn ich die Meldung von dem richtig verstehe, ist …"
+    },
+    {
+      "title": "wo ist meine pfx-Datei? - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/allgemein/sicherheit/6818-wo-ist-meine-pfx-datei",
+      "snippet": "Apr 17, 2011 · Moin, auch ich wurde aufgefordert, mein Sicherheitszertifikat zu verlängern. Beim Login wird eine pfx.-Datei verlangt. …"
+    }
+  ]
+}

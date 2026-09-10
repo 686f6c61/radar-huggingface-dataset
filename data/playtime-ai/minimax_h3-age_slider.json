@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Playtime-AI/Minimax_H3-Age_Slider",
+  "slug": "playtime-ai-minimax_h3-age_slider",
+  "author": "Playtime-AI",
+  "url": "https://huggingface.co/Playtime-AI/Minimax_H3-Age_Slider",
+  "created_at": "2026-09-10T18:23:14.000Z",
+  "updated_at": "2026-09-10T18:28:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144055147,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Playtime (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Playtime_(film)",
+      "snippet": "Playtime (stylisé PlayTime, parfois écrit Play Timenote 1) est un film comique franco - italien réalisé par Jacques Tati, tourné entre …"
+    },
+    {
+      "title": "Playtime Paris - Playtime",
+      "url": "https://www.iloveplaytime.com/playtime-paris/?lang=fr",
+      "snippet": "Grâce à son offre mélangeant mode, lifestyle et parentalité et en proposant des espaces uniques comme New Now, Singular ainsi …"
+    },
+    {
+      "title": "Playtime Paris - Playtime",
+      "url": "https://www.iloveplaytime.com/playtime-paris/",
+      "snippet": "Since 2007, Playtime Paris has revolutionized the kids’ fashion and lifestyle universe by bringing together the best collections of …"
+    },
+    {
+      "title": "Playtime - Film 1967 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1363.html",
+      "snippet": "Playtime est un film réalisé par Jacques Tati avec Jacques Tati, Barbara Dennek."
+    },
+    {
+      "title": "Playtime - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Playtime",
+      "snippet": "Playtime (stylized as PlayTime and also written as Play Time[3]) is a 1967 satirical comedy film directed and co-written by Jacques …"
+    }
+  ]
+}

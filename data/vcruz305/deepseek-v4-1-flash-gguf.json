@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vcruz305/DeepSeek-V4.1-Flash-GGUF",
+  "slug": "vcruz305-deepseek-v4-1-flash-gguf",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/DeepSeek-V4.1-Flash-GGUF",
+  "created_at": "2026-09-10T06:40:23.000Z",
+  "updated_at": "2026-09-10T15:55:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "deepseek-v4.1",
+    "llama.cpp",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147030963776,
+  "storage_human": "147.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "下载 | OBS",
+      "url": "https://obsproject.com/zh-cn/download",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "Download | OBS",
+      "url": "https://obsproject.com/download",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer o download e instalar o Google Chrome Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en-IN&co=GENIE.Platform%3DDesktop",
+      "snippet": "If you have issues when you download Chrome on your Windows computer, use the alternative link to download Chrome on a …"
+    },
+    {
+      "title": "myGully.com",
+      "url": "https://mygully.com/index.php",
+      "snippet": "Grösste und älteste Community Deutschlands. Boerse.BZ, Boerse.to Alternative"
+    }
+  ]
+}

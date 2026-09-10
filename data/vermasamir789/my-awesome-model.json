@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vermasamir789/my-awesome-model",
+  "slug": "vermasamir789-my-awesome-model",
+  "author": "vermasamir789",
+  "url": "https://huggingface.co/vermasamir789/my-awesome-model",
+  "created_at": "2026-09-10T18:13:06.000Z",
+  "updated_at": "2026-09-10T18:13:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263424,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Das Örtliche Telefonbuch | Telefonnummern & Adressen finden!",
+      "url": "https://www.dasoertliche.de/",
+      "snippet": "Deutschlands führendes Telefonbuch für Unternehmen, Behörden und Privateinträge mit lokaler Suche, Rückwärtssuche …"
+    },
+    {
+      "title": "Rückwärtssuche mit Telefonnummer | Das Örtliche",
+      "url": "https://www.dasoertliche.de/rueckwaertssuche/",
+      "snippet": "Telefonnummer ☎ eingeben und DIREKT sehen wer angerufen hat! Personen oder Unternehmen mithilfe von Telefonnummer oder …"
+    },
+    {
+      "title": "Adressensuche in Deutschland ⇒ in Das Örtliche",
+      "url": "https://mobil.dasoertliche.de/Themen/Adressensuche.html",
+      "snippet": "Adressensuche in Deutschland mit Telefonnummer ☎, Öffnungszeiten und Bewertung ★ Direkt Angebot vergleichen und Termin …"
+    },
+    {
+      "title": "Das Örtliche Suche",
+      "url": "http://media.dasoertliche.de/socialmedia/suche/",
+      "snippet": "Das Örtliche Online Die Website von Das Örtliche, www.dasoertliche.de gibt den Nutzern, neben der privaten und gewerblichen …"
+    },
+    {
+      "title": "Rückwärtssuche mit Telefonnummer und Adresse | Das Örtliche",
+      "url": "https://mobil.dasoertliche.de/rueckwaertssuche/?wwac_name=Search&wwac_src=Google&wwac_med=SEM&wwac_el=Rueckwaertssuche",
+      "snippet": "Telefonnummer ☎ eingeben und DIREKT sehen wer angerufen hat! Personen oder Unternehmen mithilfe von Telefonnummer oder …"
+    }
+  ]
+}

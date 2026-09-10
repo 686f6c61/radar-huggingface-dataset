@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "daylight-00/prepibind-demo",
+  "slug": "daylight-00-prepibind-demo",
+  "author": "daylight-00",
+  "url": "https://huggingface.co/daylight-00/prepibind-demo",
+  "created_at": "2026-09-10T13:15:46.000Z",
+  "updated_at": "2026-09-10T13:44:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "biology",
+    "protein",
+    "immunology",
+    "mhc-class-ii",
+    "epitope",
+    "binding-prediction",
+    "esm",
+    "tabular-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 446649292,
+  "storage_human": "447 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "David Kushner - Daylight (Official Music Video) - YouTube",
+      "url": "https://www.youtube.com/watch?v=MoN9ql6Yymw",
+      "snippet": "Deep down, way down, Lord, I try Try to follow your light, but it's nighttime Please don't leave me in the end [Pre-Chorus] (Ooh) …"
+    },
+    {
+      "title": "Daylight (film, 1996) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Daylight_(film,_1996)",
+      "snippet": "Daylight, ou Tunnel de l'enfer au Québec, est un film américain réalisé par Rob Cohen et sorti en 1996."
+    },
+    {
+      "title": "Daylight - Film 1996 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=15965.html",
+      "snippet": "Daylight : Un film catastrophe tout simplement efficace et comme je les aimée car ce n’est pas la fin du monde ni rien d’autres."
+    },
+    {
+      "title": "Daylight : Lampes et lampes-loupes, lumière du jour - Canevas",
+      "url": "https://www.canevas.com/accessoires-mercerie/daylight.html",
+      "snippet": "Depuis 1980, Daylight oeuvre au développement de lampes et loupes de qualité imitant la lumière du jour pour se mettre au service …"
+    },
+    {
+      "title": "David Kushner - Daylight (Lyrics) - YouTube",
+      "url": "https://www.youtube.com/watch?v=73E0BnFs7S4",
+      "snippet": "Apr 25, 2023 · Deep down, way down, Lord, I try Try to follow your light, but it's nighttime Please don't leave me in the end [Pre …"
+    }
+  ]
+}

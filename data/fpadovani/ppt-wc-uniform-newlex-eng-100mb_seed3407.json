@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed3407",
+  "slug": "fpadovani-ppt-wc-uniform-newlex-eng-100mb_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed3407",
+  "created_at": "2026-09-10T17:38:19.000Z",
+  "updated_at": "2026-09-10T17:40:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 692191397,
+  "storage_human": "692 MB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tesco - Supermarkets | Online Groceries, Clubcard & Recipes",
+      "url": "https://www.tesco.com/?msockid=1cd7b3d5e7526a5e1fe4a405e6016bb0",
+      "snippet": "Welcome to Tesco online. Discover great value groceries, plus clothing, recipes, bank, and mobile services. Browse on Tesco.com …"
+    },
+    {
+      "title": "Online food shopping and grocery delivery - Tesco Groceries",
+      "url": "https://www.tesco.com/shop/en-GB/landing/groceries?msockid=1cd7b3d5e7526a5e1fe4a405e6016bb0",
+      "snippet": "Discover Tesco online food shopping and great value groceries, plus earn Clubcard points. Book a grocery delivery or Click+Collect …"
+    },
+    {
+      "title": "Tesco Clubcard - Clubcard vouchers and offers - Tesco",
+      "url": "https://secure.tesco.com/clubcard",
+      "snippet": "Automatic free entry with a qualifying £25+ spend on qualifying purchases in Tesco stores, online grocery or Tesco Marketplace …"
+    },
+    {
+      "title": "Tesco - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Tesco",
+      "snippet": "Tesco plc (/ ˈtɛs.koʊ /) is a British multinational groceries and general merchandise retailer headquartered in the United Kingdom at …"
+    },
+    {
+      "title": "Online Banking Login - Tesco Bank",
+      "url": "https://identity.tescobank.com/pf/adapter2adapter.ping",
+      "snippet": "Log in to your Tesco Bank credit cards, loans and savings through our Online Banking portal."
+    }
+  ]
+}

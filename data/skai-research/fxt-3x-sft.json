@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "skai-research/fxt-3x-sft",
+  "slug": "skai-research-fxt-3x-sft",
+  "author": "skai-research",
+  "url": "https://huggingface.co/skai-research/fxt-3x-sft",
+  "created_at": "2026-09-10T17:15:03.000Z",
+  "updated_at": "2026-09-10T17:15:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "routing",
+    "byte-level",
+    "hierarchical",
+    "tokenizer-free",
+    "sft",
+    "en",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "arxiv:2608.15454",
+    "base_model:skai-research/fxt-3x-base",
+    "base_model:finetune:skai-research/fxt-3x-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 373882945,
+  "parameters_human": "373.9M",
+  "storage_bytes": 1495553324,
+  "storage_human": "1.5 GB",
+  "base_model": "skai-research/fxt-3x-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Mount and Unmount a Drive or Volume in Windows",
+      "url": "https://www.tenforums.com/tutorials/158668-how-mount-unmount-drive-volume-windows.html",
+      "snippet": "Jun 16, 2020 · Mount Drive or Volume in Disk Management 1 Press the Win + R keys to open Run, type diskmgmt.msc into Run, and …"
+    },
+    {
+      "title": "Enable or Disable Disk Write Protection in Windows",
+      "url": "https://www.tenforums.com/tutorials/3548-enable-disable-disk-write-protection-windows.html",
+      "snippet": "Jun 30, 2020 · How to Enable or Disable Write Protection for a Disk Drive in Windows Write protection (read-only) on a disk prevents …"
+    },
+    {
+      "title": "Delete Volume or Partition in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/96684-delete-volume-partition-windows-10-a.html",
+      "snippet": "Aug 21, 2020 · Delete Volume or Partition on Disk in Disk Management 1 Open the Win+X menu, and click/tap on Disk Management …"
+    },
+    {
+      "title": "Erase Disk using Diskpart Clean Command in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/85819-erase-disk-using-diskpart-clean-command-windows-10-a.html",
+      "snippet": "Jul 3, 2020 · How to Erase a Disk using Diskpart Clean Command in Windows 10 You can use the clean or clean all Diskpart …"
+    },
+    {
+      "title": "Extend Volume or Partition in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/96732-extend-volume-partition-windows-10-a.html",
+      "snippet": "Aug 21, 2020 · Extend Volume or Partition on Disk in Disk Management 1 Open the Win+X menu, and click/tap on Disk Management …"
+    }
+  ]
+}

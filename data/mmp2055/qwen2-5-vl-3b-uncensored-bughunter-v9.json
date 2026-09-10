@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "mmp2055/Qwen2.5-VL-3B-uncensored-bughunter-v9",
+  "slug": "mmp2055-qwen2-5-vl-3b-uncensored-bughunter-v9",
+  "author": "mmp2055",
+  "url": "https://huggingface.co/mmp2055/Qwen2.5-VL-3B-uncensored-bughunter-v9",
+  "created_at": "2026-09-10T11:20:28.000Z",
+  "updated_at": "2026-09-10T11:26:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "cybersecurity",
+    "bug-bounty",
+    "red-team",
+    "blue-team",
+    "offensive-security",
+    "defensive-security",
+    "pentesting",
+    "vulnerability-research",
+    "uncensored",
+    "abliterated",
+    "llama-cpp",
+    "qwen2.5",
+    "qwen2.5-vl",
+    "mobile",
+    "edge-inference",
+    "spanish",
+    "lora",
+    "qlora",
+    "unsloth",
+    "image-text-to-text",
+    "es",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 3402570756,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wein, Weine Verkosten, Wein Kaufen Beim Winzer, - Onlineshop Grünler",
+      "url": "https://weinshopgruenler.com/",
+      "snippet": "Eine große Auswahl an Zukunfstweinen verkosten und kaufen direkt beim Winzer im Weingut in gemütlicher Atmosphäre!"
+    },
+    {
+      "title": "Zukunftsweine von Grünler // Das Weingut aus Horrweiler",
+      "url": "https://www.weinkult-gruenler.de/",
+      "snippet": "Ob Probiertage auf unserem Weingut oder mit euch auf den Spuren des Weins in den Weinbergen unterwegs – die Kamera ist immer …"
+    },
+    {
+      "title": "Onlineshop Grünler",
+      "url": "https://weinshopgruenler.com/produkte",
+      "snippet": "Copyright © 2025 Onlineshop Grünler – Alle Rechte vorbehalten. Ab 24 Flaschen Versandfrei!"
+    },
+    {
+      "title": "Das Weingut Grünler // Horrweiler - weinkult-gruenler.de",
+      "url": "https://www.weinkult-gruenler.de/weinkult-gruenler",
+      "snippet": "Weinbau heißt für uns auch, mit Weitblick handeln. Wir lieben unsere Arbeit und freuen uns, unsere Begeisterung für unsere Weine …"
+    },
+    {
+      "title": "Weingut Grünler in Horrweiler - Wein kaufen",
+      "url": "https://www.wein-kaufen.de/in/weingut/horrweiler/weingut-gruenler_6171.html",
+      "snippet": "Probieren Sie Weine aus sämtlichen Weinanbaugebieten im Wein Online Shop. Über die Darstellungen der entsprechenden Winzer …"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/DeepSeek-V4.1-Flash",
+  "slug": "amaimedia-deepseek-v4-1-flash",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-10T11:39:55.000Z",
+  "updated_at": "2026-09-10T11:46:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "vi",
+    "kk",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "DeepSeek",
+    "DeepSeek-V4.1",
+    "DeepSeek-V4",
+    "DeepSeek4",
+    "image-text-to-text",
+    "en",
+    "ru",
+    "zh",
+    "vi",
+    "kk",
+    "ja",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 484619644114,
+  "parameters_human": "484.62B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/ru-RU/",
+      "snippet": "TikTok: здесь рождаются тренды. Миллионы коротких видео, специально подобранных для каждого зрителя, ждут вас на …"
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Manage your account, check notifications, comment on videos, and more."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://vm.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok Business Center",
+      "url": "https://business.tiktok.com/ru",
+      "snippet": "Добейтесь всех своих бизнес-целей вместе с TikTok Business Center. Просматривайте решения для рекламы, авторов, …"
+    },
+    {
+      "title": "Support Center | TikTok",
+      "url": "https://support.tiktok.com/",
+      "snippet": "Programs TikTok for Good TikTok for Developers Effect House Advertise on TikTok TikTok Rewards TikTok Browse TikTok Embeds"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "didula-wso2/gemma4_1-0-5_sft_16bit_vllm",
+  "slug": "didula-wso2-gemma4_1-0-5_sft_16bit_vllm",
+  "author": "didula-wso2",
+  "url": "https://huggingface.co/didula-wso2/gemma4_1-0-5_sft_16bit_vllm",
+  "created_at": "2026-09-10T14:48:49.000Z",
+  "updated_at": "2026-09-10T14:52:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765510,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-e4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "e-podroznik: czy (i jak) to dziala??",
+      "url": "http://forum.bieszczady.info.pl/showthread.php/7480-e-podroznik-czy-(i-jak)-to-dziala",
+      "snippet": "Oct 7, 2012 · bardzo często z tego kupuję. na początku ich wprowadzenia kierowcy zupełnie nie wiedzieli o co chodzi. dziś tylko …"
+    },
+    {
+      "title": "Podlasie na szybko.",
+      "url": "http://forum.bieszczady.info.pl/showthread.php/9584-Podlasie-na-szybko?s=cad2ffe7dfb91de9706bcaa253f3e340",
+      "snippet": "Sep 3, 2017 · Trochę cicho na forum w relacjach wyprawowych więc podzielę się swoją. Ten wyjazd miał być zadośćuczynieniem za …"
+    },
+    {
+      "title": "GPS-jaki??? - forum.bieszczady.info.pl",
+      "url": "http://forum.bieszczady.info.pl/showthread.php/7227-GPS-jaki",
+      "snippet": "Jan 3, 2012 · A konkretnie który? Bo mi te dane techniczne nic nie mówią. Jaka na chłopski rozum jest różnica pomiędzy Garmin …"
+    },
+    {
+      "title": "Mapa batymetryczna SOLINY",
+      "url": "http://forum.bieszczady.info.pl/showthread.php/2665-Mapa-batymetryczna-SOLINY?s=dc29b6dceb92369d2c52e1e23e6a8e66",
+      "snippet": "Witam! Poszukuję mapy batymetrycznej SOLINY, z góry dziękuję za informację Pozdrawiam"
+    },
+    {
+      "title": "Jedrek Polonina",
+      "url": "http://forum.bieszczady.info.pl/showthread.php/169-Jedrek-Polonina?s=603416fbab5da1d5f731235cca55269b",
+      "snippet": "Jul 8, 2001 · Zanim dodasz pierwszy post, musisz się zarejestrować. Niestety, ze względu na zalew spamu, zdecydowaliśmy się …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "meetforever/OPD",
+  "slug": "meetforever-opd",
+  "author": "meetforever",
+  "url": "https://huggingface.co/meetforever/OPD",
+  "created_at": "2026-09-10T11:52:55.000Z",
+  "updated_at": "2026-09-10T12:39:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111989092395,
+  "storage_human": "112.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gulf News: Latest UAE news, Dubai news, Business, travel news, Dubai ...",
+      "url": "https://gulfnews.com/",
+      "snippet": "Get the latest update on UAE, business, life style, UAE jobs, gold rate, Exchange rate, UAE holidays, Dubai police, RTA and prayer …"
+    },
+    {
+      "title": "UAE News - Top Stories, Dubai News & Updates | Gulf News",
+      "url": "https://gulfnews.com/uae",
+      "snippet": "Get the latest breaking news, local stories, in-depth coverage, and expert opinions from Dubai, Abu Dhabi, Sharjah and all the …"
+    },
+    {
+      "title": "Jobs Found - Gulf News",
+      "url": "https://classifieds.gulfnews.com/jobs/",
+      "snippet": "Explore thousands of jobs across Dubai & the UAE! Search by location, salary, industry & more. Apply online to top companies - …"
+    },
+    {
+      "title": "Gulf News - GN Media",
+      "url": "https://store.gulfnews.com/",
+      "snippet": "Latest news and analysis from the worlds of business, politics, sport, lifestyle and culture from Gulf News, the Middle East's biggest …"
+    },
+    {
+      "title": "Gulf News Edufair Dubai 2026 - Home",
+      "url": "https://events.gulfnews.com/GulfNewsEdufairDubai2026",
+      "snippet": "May 9, 2026 · The Gulf News Edufair brings together prestigious universities, top-tier institutions, and career specialists under one …"
+    }
+  ]
+}

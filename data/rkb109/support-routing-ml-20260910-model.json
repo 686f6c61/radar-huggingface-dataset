@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/support-routing-ml-20260910-model",
+  "slug": "rkb109-support-routing-ml-20260910-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/support-routing-ml-20260910-model",
+  "created_at": "2026-09-10T17:00:44.000Z",
+  "updated_at": "2026-09-10T17:00:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "applied-machine-learning",
+    "text-classification",
+    "zero-shot-classification",
+    "sentence-similarity",
+    "summarization",
+    "dataset:RKB109/support-routing-ml-20260910-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "感觉心脏跳着跳着会卡一下 | 百度健康·医学科普",
+      "url": "https://health.baidu.com/m/detail/ar_6268668876717435165",
+      "snippet": "二、何时需要就医？ 频繁发作：每小时出现多次“卡顿感”，或持续时间延长。 伴随症状：胸痛、头晕、呼吸困难、眼前发黑、晕厥等 …"
+    },
+    {
+      "title": "心脏有时感觉卡一下是什么问题 | 百度健康·医学科普",
+      "url": "https://health.baidu.com/m/detail/ar_6860549094295898495",
+      "snippet": "心脏偶尔感觉“卡一下”或“漏跳”，最常见的原因是 心脏早搏 （尤其是房性或室性早搏），可能由情绪波动、疲劳、咖啡因摄入等诱发； …"
+    },
+    {
+      "title": "心脏总是“咯噔一下”？医生提醒：这5类人别拖，或是危险信号！",
+      "url": "https://www.sohu.com/a/958982319_122471280",
+      "snippet": "Nov 27, 2025 · 心脏早搏，说白了就是心脏跳得比它该跳的早了一下，这一跳没按节奏来，就会带来一种“跳空”的感觉。 而在早搏之 …"
+    },
+    {
+      "title": "心脏狂跳、沉重，可能是心悸在作怪，出现5类症状需就医",
+      "url": "https://www.sohu.com/a/933257322_100011059",
+      "snippet": "Sep 9, 2025 · 为什么会心悸？ 原因竟如此多样 导致心悸的原因五花八门，从完全正常的生理反应到严重疾病都有可能： 1. 生理性心 …"
+    },
+    {
+      "title": "心脏总“抖一下”？别大意，分清这几种情况 - 识别与诊断 - 家医大健康",
+      "url": "https://www.familydoctor.cn/hlthsci/xinzang-zong-dou-dayi-fenqing-jizhong-qingkuang-349921.html",
+      "snippet": "Apr 4, 2026 · 医学上，这种心脏提前“抖一下”的感觉大多是早搏，属于心律失常的常见类型，是指心脏的异位起搏点提前发出冲动，导 …"
+    }
+  ]
+}

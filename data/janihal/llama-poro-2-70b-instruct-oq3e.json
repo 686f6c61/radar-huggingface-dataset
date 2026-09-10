@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "janihal/Llama-Poro-2-70B-Instruct-oQ3e",
+  "slug": "janihal-llama-poro-2-70b-instruct-oq3e",
+  "author": "janihal",
+  "url": "https://huggingface.co/janihal/Llama-Poro-2-70B-Instruct-oQ3e",
+  "created_at": "2026-09-10T18:12:03.000Z",
+  "updated_at": "2026-09-10T19:22:52.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "fi",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "oq",
+    "quantized",
+    "finnish",
+    "text-generation",
+    "conversational",
+    "fi",
+    "en",
+    "base_model:LumiOpen/Llama-Poro-2-70B-Instruct",
+    "base_model:quantized:LumiOpen/Llama-Poro-2-70B-Instruct",
+    "license:llama3.3",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 32649910331,
+  "storage_human": "32.6 GB",
+  "base_model": "LumiOpen/Llama-Poro-2-70B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。"
+    },
+    {
+      "title": "Twitch的看直播掉宝是怎么算的？ - 知乎",
+      "url": "https://www.zhihu.com/question/387256783",
+      "snippet": "Twitch Channel Points Auto Claimer -Twiclips 有了它您只需要将直播频道静音挂着做其他事，在您达到掉宝条件时这款扩展会自动获 …"
+    },
+    {
+      "title": "steam解除第三方绑定 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/314282906322212884.html",
+      "snippet": "Mar 11, 2023 · steam解除第三方绑定可以按照以下步骤进行操作：1、打开Steam客户端，登录您的Steam账户。2、在Steam客户端顶 …"
+    },
+    {
+      "title": "twitch为什么叫老鼠台？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1585295408741283660.html",
+      "snippet": "Jul 27, 2023 · twitch为什么叫老鼠台？twitch因为其英文所代表的意思和英雄联盟里面的英雄老鼠图奇一样，所以被国内网友起了个外 …"
+    },
+    {
+      "title": "服务器未发送任何数据，因此无法载入该网 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/495ba841e6eb3238b30ede1c.html",
+      "snippet": "Nov 14, 2015 · 刷新DNS 上不了网，传递不了网络数据，这样的问题很多，其中DNS域名分析错误，也是其中经常发生的事，如果域 …"
+    }
+  ]
+}

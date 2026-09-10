@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3a",
+  "slug": "agastyasridharan-qwen2-5-3b-instruct-sheldon-sft-v3a",
+  "author": "agastyasridharan",
+  "url": "https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3a",
+  "created_at": "2026-09-10T15:15:04.000Z",
+  "updated_at": "2026-09-10T15:19:20.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "persona",
+    "sheldon-cooper",
+    "roleplay",
+    "sft",
+    "lora",
+    "qwen2.5",
+    "gsm8k",
+    "cs2881r",
+    "conversational",
+    "en",
+    "dataset:tbooy/sheldon-cooper-sft-20k",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183451441,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Acceso: Cuentas de Google",
+      "url": "https://accounts.google.com/login?hl=es-419",
+      "snippet": "¿Esta no es tu computadora? Usa una ventana de navegación privada para acceder. Más información para usar el modo de invitado …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://classroom.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Google",
+      "url": "https://europe.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Accedi - Google Drive",
+      "url": "https://drive.google.com/drive/my-drive?hl=it",
+      "snippet": "Accedi a Google Drive con un Account Google (per uso personale) o un account Google Workspace (per uso professionale)."
+    }
+  ]
+}

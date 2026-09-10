@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Vaibhavhome30/DeepSeek-V4.1-Flash",
+  "slug": "vaibhavhome30-deepseek-v4-1-flash",
+  "author": "Vaibhavhome30",
+  "url": "https://huggingface.co/Vaibhavhome30/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-10T17:31:00.000Z",
+  "updated_at": "2026-09-10T17:31:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Códigos de Colores HTML - HTML Color Codes",
+      "url": "https://htmlcolorcodes.com/es/",
+      "snippet": "Obtén códigos HTML, Hex, RGB, HSL y OKLCH de forma rápida con nuestros selectores, rueda, tabla y nombres de colores. …"
+    },
+    {
+      "title": "Tabla de Colores - HTML Color Codes",
+      "url": "https://htmlcolorcodes.com/es/tabla-de-colores/",
+      "snippet": "Con las tablas de colores de Tailwind CSS, flat design, Material design y web safe, seguro encuentras el esquema ideal para tu web …"
+    },
+    {
+      "title": "Nombres de Colores y Códigos - Referencia Completa de Colores",
+      "url": "https://colorconvert.net/es/colors",
+      "snippet": "Referencia completa de todos los nombres de colores con códigos hex, valores RGB y HSL. Herramientas de color profesionales …"
+    },
+    {
+      "title": "Códigos de Colores HTML (Copiar y Pegar) » Tabla Completa",
+      "url": "https://htmldesdecero.es/guias/codigos-colores-html/",
+      "snippet": "¿Qué es un Código de Color HTML? Un código de color HTML es un identificador utilizado para representar un color en la web y en …"
+    },
+    {
+      "title": "Tabla de Colores HTML y CSS | Guía Completa Fácil - cdmon",
+      "url": "https://www.cdmon.com/es/apps/tabla-colores",
+      "snippet": "Revisa nuestro listado de colores con los nombres de los colores HTML. De esta manera los puedes usar tanto en etiquetas HTML …"
+    }
+  ]
+}

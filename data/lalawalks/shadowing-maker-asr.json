@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "lalawalks/shadowing-maker-asr",
+  "slug": "lalawalks-shadowing-maker-asr",
+  "author": "lalawalks",
+  "url": "https://huggingface.co/lalawalks/shadowing-maker-asr",
+  "created_at": "2026-09-10T18:38:09.000Z",
+  "updated_at": "2026-09-10T18:38:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en",
+    "ko",
+    "ja",
+    "zh",
+    "yue"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "sherpa-onnx",
+    "sensevoice",
+    "en",
+    "ko",
+    "ja",
+    "zh",
+    "yue",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 239877695,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minecraft Forum",
+      "url": "https://www.minecraftforum.net/",
+      "snippet": "Jun 17, 2026 · Minecraft community forums, a great place to talk about the game."
+    },
+    {
+      "title": "5 Cool Minecraft Village Seeds 1.8.8",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/seeds/2559346-5-cool-minecraft-village-seeds-1-8-8",
+      "snippet": "Jan 7, 2010 · Large Island Village Seed near Spawn Minecraft Seed 1.8.8 Island Village: X= -270 Y= 69 Z= 88 Seed 2: …"
+    },
+    {
+      "title": "Minecraft 我的世界（當個創世神） 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=18673",
+      "snippet": "歡迎來到Minecraft 我的世界（當個創世神）哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    },
+    {
+      "title": "【心得】Minecraft與開發商:MOJANG多年來的發展故事 (Minecraft超 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=18673&snA=186520",
+      "snippet": "Aug 28, 2020 · 介紹Minecraft開發商MOJANG多年來的發展歷程，從遊戲創作者到知名遊戲公司，揭示其成功背後的故事。"
+    },
+    {
+      "title": "Extremely Op Enchants - Commands, Command Blocks and Functions ...",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/2440551-extremely-op-enchants",
+      "snippet": "Jun 26, 2020 · So hey guys, on my channel I showed you guys how to do Op Enchants. If you do not want to make your own I have …"
+    }
+  ]
+}

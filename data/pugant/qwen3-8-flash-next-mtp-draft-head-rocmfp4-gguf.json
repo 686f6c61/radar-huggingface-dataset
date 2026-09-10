@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "pugant/Qwen3.8-Flash-Next-MTP-DRAFT-HEAD-ROCMFP4-GGUF",
+  "slug": "pugant-qwen3-8-flash-next-mtp-draft-head-rocmfp4-gguf",
+  "author": "pugant",
+  "url": "https://huggingface.co/pugant/Qwen3.8-Flash-Next-MTP-DRAFT-HEAD-ROCMFP4-GGUF",
+  "created_at": "2026-09-10T18:44:27.000Z",
+  "updated_at": "2026-09-10T18:49:13.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "mtp",
+    "nextn",
+    "speculative-decoding",
+    "draft-model",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "qwen4exp",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3878549248,
+  "parameters_human": "3.88B",
+  "storage_bytes": 3818043776,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mail Orange : boite mail, adresse mail, compte messagerie ...",
+      "url": "https://messagerie.orange.fr/mail.html",
+      "snippet": "Le mail Orange vous permet d'envoyer et recevoir des mails de façon simple et sécurisée. Créez plusieurs adresses et bénéficiez de …"
+    },
+    {
+      "title": "Offres Mobiles, Internet, TV, Actu & Accès compte Mail - Orange",
+      "url": "https://www.orange.fr/portail",
+      "snippet": "Accès rapide et facile à toutes les fonctionnalités Orange (Email, Assistance, Banque, Boutique). Découvrez notre portail Orange et …"
+    },
+    {
+      "title": "Espace Client Orange",
+      "url": "https://espace-client.orange.fr/compte/mail",
+      "snippet": "Accédez à votre boite mail Orange et gérez vos e-mails en toute sécurité depuis l'Espace Client Orange."
+    },
+    {
+      "title": "Accéder à votre Espace client",
+      "url": "https://espace-client.orange.fr/page-accueil",
+      "snippet": "accessible 7j/7 24h sur 24h votre Espace Client permet de consulter ou payer votre facture Orange, changer ou commander une …"
+    },
+    {
+      "title": "Mail services",
+      "url": "https://mon-espace.mail.orange.fr/",
+      "snippet": "Accédez à votre messagerie Orange en toute sécurité pour envoyer, recevoir et gérer vos emails facilement."
+    }
+  ]
+}

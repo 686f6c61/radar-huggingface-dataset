@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_IdkNLL",
+  "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget10_idknll",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_IdkNLL",
+  "created_at": "2026-09-10T13:03:40.000Z",
+  "updated_at": "2026-09-10T13:04:51.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "IdkNLL",
+    "forget10",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All over the road in my CJ - Pirate 4x4",
+      "url": "https://www.pirate4x4.com/threads/all-over-the-road-in-my-cj.580051/",
+      "snippet": "May 12, 2007 · 83 CJ7. Spring over axles. 35\" tires. Stock axles and stock leaf springs. 4.5\" shackles. When I accecerate and hold …"
+    },
+    {
+      "title": "22re Performance Valve Springs. | Pirate 4x4",
+      "url": "https://www.pirate4x4.com/threads/22re-performance-valve-springs.228288/",
+      "snippet": "Mar 2, 2004 · Now if your dropping in a low end cam should I or should I not put in Performance valve springs. there dual valve …"
+    },
+    {
+      "title": "Mandataire Toyota neuve : prix pas cher à -37% - Caroom",
+      "url": "https://www.caroom.fr/toyota",
+      "snippet": "Achetez la même Toyota mais -37% moins cher et en toute confiance avec un mandataire Toyota approuvé. Garantie, livraison à …"
+    },
+    {
+      "title": "Nouveau Peugeot 3008 : meilleurs Prix & Remises - Caroom",
+      "url": "https://www.caroom.fr/peugeot/3008",
+      "snippet": "-39% sur le nouveau Peugeot 3008 : à partir de 26 799 € ! Découvrez nos offres imbattables et demandez votre devis gratuit dès …"
+    },
+    {
+      "title": "The FRAWG! - Pirate 4x4",
+      "url": "https://www.pirate4x4.com/threads/the-frawg.776949/",
+      "snippet": "Apr 6, 2009 · The Build One of my buddies is more well equipped to tackle a project like this so it'll be taking place in his garage... I …"
+    }
+  ]
+}

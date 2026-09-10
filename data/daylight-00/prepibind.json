@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "daylight-00/prepibind",
+  "slug": "daylight-00-prepibind",
+  "author": "daylight-00",
+  "url": "https://huggingface.co/daylight-00/prepibind",
+  "created_at": "2026-09-10T13:15:45.000Z",
+  "updated_at": "2026-09-10T13:44:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "biology",
+    "protein",
+    "immunology",
+    "mhc-class-ii",
+    "epitope",
+    "binding-prediction",
+    "esm",
+    "tabular-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 893209148,
+  "storage_human": "893 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "David Kushner - Daylight (Official Music Video) - YouTube",
+      "url": "https://www.youtube.com/watch?v=MoN9ql6Yymw",
+      "snippet": "Deep down, way down, Lord, I try Try to follow your light, but it's nighttime Please don't leave me in the end [Pre-Chorus] (Ooh) …"
+    },
+    {
+      "title": "GitHub - daylight-00/PREpiBind: Protein Representation-integrated ...",
+      "url": "https://github.com/daylight-00/PREpiBind",
+      "snippet": "PREpiBind predicts MHC class II–peptide binding by leveraging pre-trained protein language model (PLM) representations. It encodes epitope sequences on-the-fly with ESM C 300M and uses pre-computed HLA embeddings for both alpha and beta chains, feeding them into a lightweight self-attention architecture to produce a binding score."
+    },
+    {
+      "title": "Daylight (film, 1996) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Daylight_(film,_1996)",
+      "snippet": "Daylight, ou Tunnel de l'enfer au Québec, est un film américain réalisé par Rob Cohen et sorti en 1996."
+    },
+    {
+      "title": "PREpiBind/README.md at main · daylight-00/PREpiBind · GitHub",
+      "url": "https://github.com/daylight-00/PREpiBind/blob/main/README.md",
+      "snippet": "PREpiBind predicts MHC class II–peptide binding by leveraging pre-trained protein language model (PLM) representations. It encodes epitope sequences on-the-fly with ESM C 300M and uses pre-computed HLA embeddings for both alpha and beta chains, feeding them into a lightweight self-attention architecture to produce a binding score."
+    },
+    {
+      "title": "Daylight - Film 1996 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=15965.html",
+      "snippet": "Daylight : Un film catastrophe tout simplement efficace et comme je les aimée car ce n’est pas la fin du monde ni rien d’autres."
+    }
+  ]
+}

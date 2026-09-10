@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maxdemarzi/duckdo-causalpfn",
+  "slug": "maxdemarzi-duckdo-causalpfn",
+  "author": "maxdemarzi",
+  "url": "https://huggingface.co/maxdemarzi/duckdo-causalpfn",
+  "created_at": "2026-09-10T18:48:59.000Z",
+  "updated_at": "2026-09-10T18:49:09.000Z",
+  "license": "causalpfn-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "causal-inference",
+    "duckdb",
+    "duckdo",
+    "arxiv:2506.07918",
+    "base_model:vdblm/causalpfn",
+    "base_model:quantized:vdblm/causalpfn",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121318609,
+  "storage_human": "121 MB",
+  "base_model": "vdblm/causalpfn",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conforama et le respect des délais de livraison...",
+      "url": "https://forum.quechoisir.org/conforama-et-le-respect-des-delais-de-livraison-t25024.html",
+      "snippet": "Jul 19, 2014 · Bonjour Je croyait être un cas isolé avec mes problèmes de livraison chez Conforama. Dites que vous annuler votre …"
+    },
+    {
+      "title": "Conforama - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/conforama-f306.html",
+      "snippet": "Apr 20, 2026 · Conforama : Entrez dans l'espace dédié à l'entreprise Conforama, achat en ligne de meuble et mobilier, cuisine, …"
+    },
+    {
+      "title": "Kreuzworträtsel | Beobachter",
+      "url": "https://www.beobachter.ch/kreuzwortratsel",
+      "snippet": "Hier finden Sie Kreuzworträtsel aus dem Beobachter. Sie können das aktuelle direkt am Bildschirm ausfüllen oder es als PDF-Datei …"
+    },
+    {
+      "title": "ForumConstruire.com - le forum pour faire construire sa maison",
+      "url": "https://www.forumconstruire.com/",
+      "snippet": "Vous allez faire construire votre maison (ou la rénover) ? ForumConstruire.com vous propose des forums, des conseils, mais aussi …"
+    },
+    {
+      "title": "Alles zum Thema Conforama im Überblick - Beobachter",
+      "url": "https://www.beobachter.ch/stichworte/c/conforama",
+      "snippet": "Conforama – Aktuelle Nachrichten und Hintergründe. Alle News zum Thema Conforama lesen Sie bei uns. Immer informiert bleiben."
+    }
+  ]
+}

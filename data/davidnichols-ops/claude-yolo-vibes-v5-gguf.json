@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "davidnichols-ops/claude-yolo-vibes-v5-GGUF",
+  "slug": "davidnichols-ops-claude-yolo-vibes-v5-gguf",
+  "author": "davidnichols-ops",
+  "url": "https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v5-GGUF",
+  "created_at": "2026-09-10T13:33:44.000Z",
+  "updated_at": "2026-09-10T13:49:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2.5-coder",
+    "ollama",
+    "llama.cpp",
+    "text-generation",
+    "base_model:davidnichols-ops/claude-yolo-vibes-v5",
+    "base_model:quantized:davidnichols-ops/claude-yolo-vibes-v5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 18226432640,
+  "storage_human": "18.2 GB",
+  "base_model": "davidnichols-ops/claude-yolo-vibes-v5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crear una cuenta de Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Ve a la página de inicio de sesión Cuenta de Google. Haz clic en Crear cuenta. En el desplegable, selecciona si esta cuenta es para: …"
+    },
+    {
+      "title": "Google als Startseite festlegen - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/463?hl=de",
+      "snippet": "Wenn Sie Google als Ihre Startseite festlegen, gelangen Sie direkt zu Google, sobald Sie Ihren Browser öffnen. Startseite ändern Die …"
+    },
+    {
+      "title": "Google-Konto für Gmail erstellen - Gmail-Hilfe",
+      "url": "https://support.google.com/mail/answer/56256?hl=de",
+      "snippet": "Wichtig: Melden Sie sich von Ihrem aktuellen Konto ab, bevor Sie ein neues Google-Konto erstellen. Hier erfahren Sie, wie Sie sich …"
+    },
+    {
+      "title": "Définir Google comme moteur de recherche par défaut",
+      "url": "https://support.google.com/websearch/answer/464?hl=fr",
+      "snippet": "Pour obtenir des résultats de Google chaque fois que vous effectuez une recherche, vous pouvez en faire votre moteur de recherche …"
+    },
+    {
+      "title": "Afficher ou supprimer votre historique de navigation Chrome",
+      "url": "https://support.google.com/chrome/answer/95589?hl=fr-001&co=GENIE.Platform%3DDesktop",
+      "snippet": "Lorsque vous supprimez votre historique de navigation dans Chrome, il est également supprimé sur les appareils sur lesquels vous …"
+    }
+  ]
+}

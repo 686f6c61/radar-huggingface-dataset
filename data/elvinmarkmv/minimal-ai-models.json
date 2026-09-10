@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "elvinmarkmv/minimal-ai-models",
+  "slug": "elvinmarkmv-minimal-ai-models",
+  "author": "elvinmarkmv",
+  "url": "https://huggingface.co/elvinmarkmv/minimal-ai-models",
+  "created_at": "2026-09-10T13:19:08.000Z",
+  "updated_at": "2026-09-10T14:56:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "miniai",
+    "zero-dependency",
+    "c",
+    "quantization",
+    "q8_0",
+    "llama",
+    "smollm2",
+    "gpt2",
+    "bert",
+    "whisper",
+    "yolos",
+    "kokoro",
+    "text-generation",
+    "text-to-speech",
+    "speech-recognition",
+    "object-detection",
+    "feature-extraction",
+    "sentence-similarity",
+    "question-answering",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1043613680,
+  "storage_human": "1.0 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M, HuggingFaceTB/SmolLM2-135M-Instruct, hexgrad/Kokoro-82M, openai-community/gpt2, openai/whisper-tiny, sentence-transformers/all-MiniLM-L6-v2, distilbert/distilbert-base-cased-distilled-squad, hustvl/yolos-tiny",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BWT Shop | Providing best quality water wherever it is needed.",
+      "url": "https://www.bwtshop.co.uk/",
+      "snippet": "BWT Shop offers you innovative BWT products in the water and water treatment. Providing best quality water wherever it is needed."
+    },
+    {
+      "title": "BWT UK Shop Online - Best Quality Water Wherever You Needed It",
+      "url": "https://www.bwtshop.co.uk/shop/",
+      "snippet": "Choose BWT products: water filter jugs & cartridges, Luxury Water softeners, under the sink water filter systems and water …"
+    },
+    {
+      "title": "BWT Shop for water filters, pool technology, consumables & accessories",
+      "url": "http://shop.bwt.com/",
+      "snippet": "As the season comes to a close, enjoy attractive offers across all BWT pool robots and pool cleaners. It’s the perfect opportunity to …"
+    },
+    {
+      "title": "Service Online Shop - BWT",
+      "url": "https://www.bwt.com/en-gb/customer-service/service-onlineshop/",
+      "snippet": "Our BWT online shop is the quick and easy way to buy high- quality and first- class BWT prod­ucts. Pay conve­niently by credit card, …"
+    },
+    {
+      "title": "Water Is Both The Elixir Of Life And A Lim­ited Resource - BWT",
+      "url": "https://shopbwt.com/",
+      "snippet": "BWT Products BWT offers a wealth of innovative products and technologies for a wide range of applications, all meeting the water …"
+    }
+  ]
+}

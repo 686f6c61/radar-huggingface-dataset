@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sofaniirC/qwen-nfactorial-fan-lora",
+  "slug": "sofaniirc-qwen-nfactorial-fan-lora",
+  "author": "sofaniirC",
+  "url": "https://huggingface.co/sofaniirC/qwen-nfactorial-fan-lora",
+  "created_at": "2026-09-10T15:25:27.000Z",
+  "updated_at": "2026-09-10T15:25:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333008,
+  "storage_human": "85 MB",
+  "base_model": "unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'Al Capone' aus der Pfalz - Sendungs A bis Z - ARD | Das Erste",
+      "url": "https://www.daserste.de/information/reportage-dokumentation/die-grossen-kriminalfaelle/sendung/2006/bernhard-kimmel-al-capone-aus-der-pfalz-swr-100.html",
+      "snippet": "Mar 20, 2006 · 1981 versucht Bernhard Kimmel mit einem Komplizen in die Sparkasse im hessischen Bensheim einzubrechen. Ein …"
+    },
+    {
+      "title": "Sportschau - ARD | Das Erste",
+      "url": "https://www.daserste.de/sport/sportschau/sendung/sportschau-1608.html",
+      "snippet": "Sportschau Hinweis zum DatenschutzMit Klick auf \"Einverstanden\" können Sie diese Seite in sozialen Netzwerken weiterempfehlen. …"
+    },
+    {
+      "title": "Gesellschaftssatire Moshammer - ARD | Das Erste",
+      "url": "https://tuarepo.daserste.de/specials/ueber-uns/drehstart-gesellschaftssatire-rudolph-moshammer-ich-und-r100.html",
+      "snippet": "Am Montag, 24. Juli 2017, haben bei Prag die Dreharbeiten zu \"Der große Rudolph\" begonnen. Der Autor und Regisseur Alexander …"
+    },
+    {
+      "title": "jumpmarks-live.daserste.de",
+      "url": "https://jumpmarks-live.daserste.de/SprungmarkenLive_RB_TV.JSON",
+      "snippet": "[{\"_chapterSubtitle\":\"\",\"_chapterTime\":1789041600,\"_chapterTitle\":\"die nordstory - Die …"
+    },
+    {
+      "title": "Programm und Videos am Montag, dem 20.02.2023 - ARD | Das Erste",
+      "url": "https://www.daserste.de/programm/index~_st-true_s-327da4d4-3f2c-4e8d-b391-d793e6426c5b_pd-20230220.html",
+      "snippet": "Die Sondersendung ist eine Produktion des ARD-Hauptstadtstudios und wird im ARD Text auf Seite 150 live untertitelt."
+    }
+  ]
+}

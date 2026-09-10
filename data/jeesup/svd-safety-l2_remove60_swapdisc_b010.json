@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove60_swapdisc_b010",
+  "slug": "jeesup-svd-safety-l2_remove60_swapdisc_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove60_swapdisc_b010",
+  "created_at": "2026-09-10T11:45:48.000Z",
+  "updated_at": "2026-09-10T11:59:53.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "玄鉴仙族最新章节_季越人_全文阅读无弹窗-新笔趣阁",
+      "url": "https://www.bqgnovels.com/book/52011?sort=0&page=2",
+      "snippet": "Jul 30, 2026 · 陆江仙熬夜猝死，残魂却附在了一面满是裂痕的青灰色铜镜上，飘落到了浩瀚无垠的修仙世界。 凶险难测的大黎山，眉 …"
+    },
+    {
+      "title": "她有一片果园 漫画 - Ағылшын, орыс, неміс, француз, украин және …",
+      "url": "https://translate.yandex.com/kk/dictionary/%D0%90%D0%B3%D1%8B%D0%BB%D1%88%D1%8B%D0%BD-%D0%9E%D1%80%D1%8B%D1%81/%E5%A5%B9%E6%9C%89%E4%B8%80%E7%89%87%E6%9E%9C%E5%9B%AD%20%20%E6%BC%AB%E7%94%BB",
+      "snippet": "Ағылшын, неміс, француз, испан, поляк, түрік және басқа тілдерден қазақ тіліне және ..."
+    },
+    {
+      "title": "看到漫画弹幕后我手撕炮灰剧本(莫晓mo)_看到漫画弹幕后我手撕炮灰剧本最新章节 …",
+      "url": "https://www.wodescw.com/book_95232349/",
+      "snippet": "《看到漫画弹幕后我手撕炮灰剧本》最新章节"
+    },
+    {
+      "title": "《吞噬星空》漫画_淘漫画_全集免费在线阅读_腾讯动漫",
+      "url": "https://ac.qq.com/Comic/comicInfo/id/529693",
+      "snippet": "吞噬星空是淘漫画创作的古风漫画，地球经历一场大灾难后引发了各物种的变异，优胜劣汰，主角罗峰得到陨墨星主人传承，成腾讯动 …"
+    },
+    {
+      "title": "内容简介_她有一片果园_久久小说网手机版",
+      "url": "https://m.jjjxsw.com/read/9/43824/1.html",
+      "snippet": "《她有一片果园》 作者：一碗蛋酒 简介: 农学院毕业后，唐依依给自己找了份工作，到农村承包了一片果园，以种葡萄为主。 唐依依 …"
+    }
+  ]
+}

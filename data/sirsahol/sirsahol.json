@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/SirSahOl",
+  "slug": "sirsahol-sirsahol",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/SirSahOl",
+  "created_at": "2026-09-10T13:37:14.000Z",
+  "updated_at": "2026-09-10T13:37:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "data-science-projects · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/data-science-projects",
+      "snippet": "Apr 30, 2026 · GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to …"
+    },
+    {
+      "title": "GitHub - veb-101/Data-Science-Projects: Collection of data science ...",
+      "url": "https://github.com/veb-101/Data-Science-Projects",
+      "snippet": "Collection of data science projects in Python. Contribute to veb-101/Data-Science-Projects development by creating an account on …"
+    },
+    {
+      "title": "How to organize your Python data science project · GitHub",
+      "url": "https://gist.github.com/ericmjl/27e50331f24db3e8f957d1fe7bbbe510",
+      "snippet": "Mar 7, 2024 · How to organize your Python data science project Having done a number of data projects over the years, and having …"
+    },
+    {
+      "title": "Data-Science-Projects/Data Preprocessing, Cleaning ... - GitHub",
+      "url": "https://github.com/veb-101/Data-Science-Projects/tree/master/Data%20Preprocessing%2C%20Cleaning%20%26%20Transformation",
+      "snippet": "Mar 6, 2026 · Collection of data science projects in Python. Contribute to veb-101/Data-Science-Projects development by creating an …"
+    },
+    {
+      "title": "AWESOME DATA SCIENCE - GitHub",
+      "url": "https://github.com/academic/awesome-datascience",
+      "snippet": "Executive Data Science: A high-level guide to managing data science teams and projects. Introduction to Modern Statistics: A …"
+    }
+  ]
+}

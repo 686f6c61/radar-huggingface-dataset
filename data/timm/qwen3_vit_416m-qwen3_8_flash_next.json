@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m.qwen3_8_flash_next",
+  "slug": "timm-qwen3_vit_416m-qwen3_8_flash_next",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m.qwen3_8_flash_next",
+  "created_at": "2026-09-10T17:24:49.000Z",
+  "updated_at": "2026-09-10T17:25:02.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 415006704,
+  "parameters_human": "415.0M",
+  "storage_bytes": 1660060752,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "wegame怎么隐藏lol战绩 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/cd4c2979030b17346f6e6039.html",
+      "snippet": "Mar 23, 2023 · wegame怎么隐藏lol战绩,wegame怎么隐藏lol战绩呢？感兴趣的小伙伴来看看吧"
+    },
+    {
+      "title": "lol屏幕锁定怎么解锁有红色边框-百度经验",
+      "url": "https://jingyan.baidu.com/article/a17d528545acb0c199c8f236.html",
+      "snippet": "Feb 7, 2020 · lol屏幕锁定怎么解锁有红色边框,相信喜欢玩LOL英雄联盟的朋友们经常遇到屏幕上出现红色的框框，而且画面被锁定移 …"
+    },
+    {
+      "title": "Can I check the skin fragment breakdown records in the loot from lol?",
+      "url": "https://www.zhihu.com/en/answer/2058819347",
+      "snippet": "It can't be, how do I check this?It can't be, how do I check this?"
+    }
+  ]
+}

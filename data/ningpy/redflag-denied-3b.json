@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "ningpy/redflag-denied-3b",
+  "slug": "ningpy-redflag-denied-3b",
+  "author": "ningpy",
+  "url": "https://huggingface.co/ningpy/redflag-denied-3b",
+  "created_at": "2026-09-10T11:30:55.000Z",
+  "updated_at": "2026-09-10T11:34:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ms"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "medical",
+    "red-flag",
+    "extraction",
+    "qwen2.5",
+    "multi-lingual",
+    "brunei-english",
+    "conversational",
+    "en",
+    "zh",
+    "ms",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348464,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sport: Aktuelle Ergebnisse, News und Videos | BILD.de",
+      "url": "https://www.bild.de/sport/startseite/sport/sport-home-15479124.bild.html",
+      "snippet": "Aktuelle Nachrichten aus dem Sport: Bundesliga, Formel 1, Boxen, Tennis und Olympia. Alle Meldungen, Berichte, Ergebnisse und …"
+    },
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://www.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "SPORT BILD | Sport-Nachrichten | Live Sportergebnisse | Meinungen, …",
+      "url": "https://sportbild.bild.de/",
+      "snippet": "Live Sportergebnisse, Videos & Sportdaten: SPORT BILD online bietet Sport Live-News zu Fußball, Bundesliga und Formel 1. …"
+    },
+    {
+      "title": "Politik: Aktuelle News und Videos - BILD.de",
+      "url": "https://www.bild.de/politik/startseite/politik/politik-16804552.bild.html",
+      "snippet": "Aktuelle Nachrichten aus der Politik: Wahlen, Politiker, Gipfel und Parteien. Alle Meldungen aus Deutschland, Europa und der Welt …"
+    },
+    {
+      "title": "News: Aktuelle Nachrichten und Videos - BILD.de",
+      "url": "https://www.bild.de/news/startseite/news/news-16804530.bild.html",
+      "snippet": "Aktuelle News aus Deutschland, Europa und der Welt. Alle Informationen, Bilder und Videos zu Skandalen, Krisen und Sensationen …"
+    }
+  ]
+}

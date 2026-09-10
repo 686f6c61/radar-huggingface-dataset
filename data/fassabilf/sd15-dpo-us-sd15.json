@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "fassabilf/sd15-dpo-us-sd15",
+  "slug": "fassabilf-sd15-dpo-us-sd15",
+  "author": "fassabilf",
+  "url": "https://huggingface.co/fassabilf/sd15-dpo-us-sd15",
+  "created_at": "2026-09-10T14:39:38.000Z",
+  "updated_at": "2026-09-10T14:40:29.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "safetensors",
+    "stable-diffusion",
+    "fairness",
+    "gender-bias",
+    "dpo",
+    "diffusion-dpo",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:finetune:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36102245655,
+  "storage_human": "36.1 GB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mapy.cz - Povrch Země • Atlas",
+      "url": "https://atlas.mapy.cz/",
+      "snippet": "On-line interaktivní mapy světa (nejen) pro školáky - pojďte s námi objevovat svět!"
+    },
+    {
+      "title": "Mapy.cz",
+      "url": "https://pl.mapy.cz/?q=katastr+nemovitost%C3%AD",
+      "snippet": "Popularny portal z mapami www.mapy.cz umożliwia szczegółowe wyszukiwanie na mapach Polski i Europy. Oferuje mapę …"
+    },
+    {
+      "title": "api.mapy.cz",
+      "url": "https://api.mapy.cz/v1/docs/routing/openapi.json",
+      "snippet": "{\"openapi\":\"3.1.0\",\"info\":{\"title\":\"REST API Mapy.com routing methods\",\"description\":\"Service for finding/planning a route between two …"
+    },
+    {
+      "title": "Recenze - KFC • Mapy.cz",
+      "url": "https://sk.mapy.cz/?source=firm&id=12714270&recenze=1",
+      "snippet": "Provoz mezinárodního rychlého občerstvení se zaměřením na speciality z kuřecího masa. Základní nabídku tvoří smažené kuřecí …"
+    },
+    {
+      "title": "Recenze - Téryho chata • Mapy.cz",
+      "url": "https://sk.mapy.cz/?source=osm&id=1067185617&recenze=1",
+      "snippet": "Najpoužívanejší mapový portál www.mapy.cz umožňuje podrobné hľadanie na mapách Slovenska aj Európy. Ponúka základnú, …"
+    }
+  ]
+}

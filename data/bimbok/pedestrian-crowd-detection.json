@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bimbok/pedestrian-crowd-detection",
+  "slug": "bimbok-pedestrian-crowd-detection",
+  "author": "bimbok",
+  "url": "https://huggingface.co/bimbok/pedestrian-crowd-detection",
+  "created_at": "2026-09-10T11:05:55.000Z",
+  "updated_at": "2026-09-10T11:05:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=el",
+      "snippet": "Το Google προσφέρεται σε: English Διαφήμιση Σχετικά με τη Google Google.com in English"
+    },
+    {
+      "title": "Μετάφραση Google",
+      "url": "https://translate.google.gr/",
+      "snippet": "Η υπηρεσία της Google, που προσφέρεται χωρίς χρέωση, μεταφράζει άμεσα λέξεις, φράσεις και ιστοσελίδες μεταξύ Ελληνικών και …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    },
+    {
+      "title": "Ειδήσεις Google",
+      "url": "https://news.google.com/?hl=el",
+      "snippet": "Ολοκληρωμένη ενημερωμένη κάλυψη ειδήσεων, συγκεντρωμένων από πηγές από όλο τον κόσμο από τις Ειδήσεις Google."
+    }
+  ]
+}

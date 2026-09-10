@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "bludotlabs/kaveri",
+  "slug": "bludotlabs-kaveri",
+  "author": "bludotlabs",
+  "url": "https://huggingface.co/bludotlabs/kaveri",
+  "created_at": "2026-09-10T17:08:35.000Z",
+  "updated_at": "2026-09-10T17:30:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen",
+    "int8",
+    "bitsandbytes",
+    "quantized",
+    "reasoning",
+    "code",
+    "grpo",
+    "hgrpo",
+    "kaveri",
+    "conversational",
+    "en",
+    "base_model:dharun2049/kaveri-hgrpo-0.5b",
+    "base_model:quantized:dharun2049/kaveri-hgrpo-0.5b",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494336896,
+  "parameters_human": "494.3M",
+  "storage_bytes": 642940910,
+  "storage_human": "643 MB",
+  "base_model": "dharun2049/kaveri-hgrpo-0.5b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXXTENTACION - YouTube",
+      "url": "https://www.youtube.com/@xxxtentacion",
+      "snippet": "Thank you again for your support and for continuing to honor and celebrate the life of Jah. The Estate of Jahseh Onfroy, aka …"
+    },
+    {
+      "title": "XXXTentacion - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/XXXTentacion",
+      "snippet": "Born near the Swap Shop in Deepside, a rough area that's a part of Broward County, Ski met X [XXXTentacion] when the two were in …"
+    },
+    {
+      "title": "XXXTentacion - Hope (Official Video) | TikTok",
+      "url": "https://www.tiktok.com/@xxxtentacion_z/video/7385820786327620881",
+      "snippet": "Jun 29, 2024 · \"Hope\" by xxxTentacion is a poignant reflection on life's struggles, capturing both vulnerability and determination."
+    },
+    {
+      "title": "XXXTENTACION - Topic - YouTube",
+      "url": "https://www.youtube.com/channel/UCnAcxgRZ065f_eXK1o85c1w",
+      "snippet": "Jun 8, 2026 · Jahseh Dwayne Ricardo Onfroy, professionally known as XXXTentacion, was an American rapper, singer-songwriter, …"
+    },
+    {
+      "title": "XXXTENTACION - YouTube Music",
+      "url": "https://music.youtube.com/channel/UCnAcxgRZ065f_eXK1o85c1w",
+      "snippet": "Though a controversial figure due to his widely publicized legal troubles, XXXTentacion gained a cult following among his young fan …"
+    }
+  ]
+}

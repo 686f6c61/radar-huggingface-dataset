@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "xs7david/Qwen3.8-27B-Q2_K-GGUF",
+  "slug": "xs7david-qwen3-8-27b-q2_k-gguf",
+  "author": "xs7david",
+  "url": "https://huggingface.co/xs7david/Qwen3.8-27B-Q2_K-GGUF",
+  "created_at": "2026-09-10T18:20:17.000Z",
+  "updated_at": "2026-09-10T18:21:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 10864592192,
+  "storage_human": "10.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Streaming Community 2026 - Nuovo Link Ufficiale Film e ...",
+      "url": "https://www.previterapelletteria.it/",
+      "snippet": "Streaming Community 2026 - Nuovo Link Ufficiale. Benvenuto su Streamingcommunity, la community streaming italiana per guardare …"
+    },
+    {
+      "title": "ww1.streamingcommunity.cam - Loading...",
+      "url": "http://www.ww1.streamingcommunity.cam/",
+      "snippet": "ww1.streamingcommunity.cam - Loading... ... Loading..."
+    }
+  ]
+}

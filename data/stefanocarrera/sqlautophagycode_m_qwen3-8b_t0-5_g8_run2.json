@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-5_g8_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run2",
+  "created_at": "2026-09-10T16:13:40.000Z",
+  "updated_at": "2026-09-10T16:13:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Borsa Italiana: sito ufficiale della Borsa di Milano",
+      "url": "https://www.borsaitaliana.it/homepage/homepage.htm",
+      "snippet": "1 day ago · Borsa Italiana: quotazioni in tempo reale, analisi, andamenti e ultime notizie della finanza su Azioni, Indici, ETF, ETC, …"
+    },
+    {
+      "title": "Listino A-Z: azioni, quotazioni, indici di Borsa",
+      "url": "https://www.borsaitaliana.it/borsa/azioni/listino-a-z.html?initial=A",
+      "snippet": "Feb 19, 2020 · Listino azionario completo della Borsa di Milano: quotazioni, ultimo valore, variazione percentuale, valore minimo e …"
+    },
+    {
+      "title": "Borsa Italiana in tempo reale: quotazioni Piazza Affari | Milano Finanza",
+      "url": "https://www.milanofinanza.it/mercati/borsa-italiana",
+      "snippet": "Tutti i dati, le news e le informazioni utili in tempo reale per investire in Borsa. Con listino completo e andamento quotazioni."
+    },
+    {
+      "title": "Borsa, Quotazioni, Obbligazioni, Titoli, Notizie Economia e Finanza",
+      "url": "https://www.teleborsa.it/",
+      "snippet": "Feb 3, 2026 · Quotazioni in tempo reale, grafici, notizie, video interviste e approfondimenti sui principali strumenti finanziari, sui …"
+    },
+    {
+      "title": "Borse.it - La guida alle tue azioni vincenti",
+      "url": "https://www.borse.it/",
+      "snippet": "16 hours ago · Sito che offre notizie, quotazioni, grafici, analisi su azioni, Btp, Bot, titoli di Stato esteri, corporate bond, fondi, Etf della …"
+    }
+  ]
+}

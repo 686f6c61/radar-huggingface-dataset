@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "skai-research/lca-3x-sft",
+  "slug": "skai-research-lca-3x-sft",
+  "author": "skai-research",
+  "url": "https://huggingface.co/skai-research/lca-3x-sft",
+  "created_at": "2026-09-10T17:15:30.000Z",
+  "updated_at": "2026-09-10T17:15:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "routing",
+    "byte-level",
+    "hierarchical",
+    "tokenizer-free",
+    "sft",
+    "en",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "arxiv:2608.15454",
+    "base_model:skai-research/lca-3x-base",
+    "base_model:finetune:skai-research/lca-3x-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 373882945,
+  "parameters_human": "373.9M",
+  "storage_bytes": 1495553324,
+  "storage_human": "1.5 GB",
+  "base_model": "skai-research/lca-3x-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Energieeinstellungen in Windows 11 | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/experience/power-battery/power-settings-in-windows-11",
+      "snippet": "In diesem Artikel wird erläutert, wie Sie Energie- und Akkueinstellungen in Windows 11 verwalten, um die Energieeffizienz zu …"
+    },
+    {
+      "title": "Ändern des Stromsparmodus auf Windows-PCs - Microsoft-Support",
+      "url": "https://support.microsoft.com/de-de/windows/%C3%A4ndern-des-stromsparmodus-auf-windows-pcs-c2aff038-22c9-f46d-5ca0-78696fdf2de8",
+      "snippet": "Erfahren Sie, wie Sie den Energiemodus auf Ihrem Windows-PC ändern, um den Akku zu erhalten, Benachrichtigungen zu …"
+    },
+    {
+      "title": "Herunterfahren, Energiesparmodus, Ruhezustand oder Ändern des",
+      "url": "https://www.dell.com/support/kbdoc/de-de/000132056/herunterfahren-energiesparmodus-ruhezustand-oder-%C3%A4ndern-des-energieschemas-unter-windows-11-und-windows-10?msockid=0c16ad17869468e833f1bac787b1696c",
+      "snippet": "Erfahren Sie, wie Sie Ihren Windows 11- oder Windows 10-Computer im Ruhezustand herunterfahren, den Energiesparmodus …"
+    },
+    {
+      "title": "Windows 11 Energie- und Ruhezustand einstellen: Zeiten anpassen",
+      "url": "https://www.win-tipps.de/windows-11-energie-und-ruhezustand-einstellen/",
+      "snippet": "Jun 5, 2026 · Erfahre, wie du in Windows 11 Bildschirm, Energiesparen und Ruhezustand getrennt einstellst, passende Zeitwerte …"
+    },
+    {
+      "title": "Windows: Energiesparmodus aktivieren – Anleitung | TechBone",
+      "url": "https://www.techbone.de/windows/11/energiesparmodus",
+      "snippet": "Aug 10, 2026 · Neben dem manuellen Umschalten kann Windows den Energiesparmodus auch selbst aktivieren, sobald der …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mma404/huihui-qwen3.8-27b-abliterated-gptq",
+  "slug": "mma404-huihui-qwen3-8-27b-abliterated-gptq",
+  "author": "mma404",
+  "url": "https://huggingface.co/mma404/huihui-qwen3.8-27b-abliterated-gptq",
+  "created_at": "2026-09-10T16:10:06.000Z",
+  "updated_at": "2026-09-10T16:25:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "gptq",
+    "compressed-tensors",
+    "quantized",
+    "vllm",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 17666880869,
+  "storage_human": "17.7 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daftar 100 Perusahaan yang akan Bertahan 100 Tahun Lagi - KASKUS",
+      "url": "https://www.kaskus.co.id/thread/519a3ef2542acf244500001e/daftar-100-perusahaan-yang-akan-bertahan-100-tahun-lagi",
+      "snippet": "Heaps sudah mulai membuat daftar 100 perusahaan sejak tahun 2005. Heaps berharap daftar ini bisa membantu investor dan …"
+    },
+    {
+      "title": "Product Key Ms. Office 2010 | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/000000000000000007900598/product-key-ms-office-2010",
+      "snippet": "Microsoft Office Professional Plus 2010: 22HGX-728MX-BBWX9-7BB8X-J96B4 Visio Premium 2010: PQCFB-YGXGC-TXB66 …"
+    },
+    {
+      "title": "PENGALAMAN BEKERJA DI PT. NUSANTARA SAKTI | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/5a1535b31ee5df95418b4568/pengalaman-bekerja-di-pt-nusantara-sakti",
+      "snippet": "NIH THREAD WE BUAT CUMA BUAT PERTIMBANGAN AGAN SEMUA YANG NANTINYA MASUK DI PT. NUSANTARA SAKTI …"
+    },
+    {
+      "title": "Style Bertarung Para Petinju Profesional Dunia | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/52b991c9a2cb17c1788b47e6/style-bertarung-para-petinju-profesional-dunia",
+      "snippet": "Sense - Feel - Think - Act - Relate Petinju Profesional Itu.... Style Bertarung Para Petinju Profesional Dunia Out-Fighter/Boxer In …"
+    },
+    {
+      "title": "Alasan wajah orang Spanyol, Portugal dan Arab mirip | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/5b83a7c3ded770df6e8b4569/alasan-wajah-orang-spanyol-portugal-dan-arab-mirip",
+      "snippet": "Pada umumnya, wajah orang spanyol berbeda dengan orang eropa kebanyakan. Mereka berwajah mediteran, beralis tebal layaknya …"
+    }
+  ]
+}

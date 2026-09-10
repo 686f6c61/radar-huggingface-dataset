@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASCXZVHJQWGS/MyAwesomeModel-TestRepo",
+  "slug": "ascxzvhjqwgs-myawesomemodel-testrepo",
+  "author": "ASCXZVHJQWGS",
+  "url": "https://huggingface.co/ASCXZVHJQWGS/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T18:06:30.000Z",
+  "updated_at": "2026-09-10T18:06:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "Roblox Innovation Awards 2026: Voting is Now Open!",
+      "url": "https://devforum.roblox.com/t/roblox-innovation-awards-2026-voting-is-now-open/4763523",
+      "snippet": "Jul 29, 2026 · Key Takeaways Voting is now open for the 2026 Roblox Innovation Awards (RIAs)🎉! Voting will take place on our …"
+    },
+    {
+      "title": "Update on Roblox Plus, Transfers, and Community Gifting",
+      "url": "https://devforum.roblox.com/t/update-on-roblox-plus-transfers-and-community-gifting/4637912",
+      "snippet": "May 15, 2026 · [Update] June 2, 2026 [Update] May 20, 2026 Hey Creators, I’m Enrico, and I am the Chief Business Officer at …"
+    },
+    {
+      "title": "New Publishing Requirements & Evaluation Process for Games",
+      "url": "https://devforum.roblox.com/t/new-publishing-requirements-evaluation-process-for-games/4573166",
+      "snippet": "Apr 13, 2026 · Today we are announcing new publishing requirements and an evaluation process to help make sure games are …"
+    }
+  ]
+}

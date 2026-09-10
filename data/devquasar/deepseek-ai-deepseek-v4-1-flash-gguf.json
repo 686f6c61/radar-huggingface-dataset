@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/deepseek-ai.DeepSeek-V4.1-Flash-GGUF",
+  "slug": "devquasar-deepseek-ai-deepseek-v4-1-flash-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/deepseek-ai.DeepSeek-V4.1-Flash-GGUF",
+  "created_at": "2026-09-10T14:43:29.000Z",
+  "updated_at": "2026-09-10T14:43:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Radio Argovia",
+      "url": "https://www.argovia.ch/",
+      "snippet": "CH Regionalmedien AG Radio Argovia Neumattstrasse 1 5001 Aarau sekretariat@argovia.ch WhatsApp schicken Team Jobs …"
+    },
+    {
+      "title": "Player | Radio Argovia",
+      "url": "https://www.argovia.ch/player",
+      "snippet": "Höre Radio Argovia live und entdecke den Soundtrack deines Lebens."
+    },
+    {
+      "title": "Musik - Radio Argovia",
+      "url": "https://www.argovia.ch/musik",
+      "snippet": "CH Regionalmedien AG Radio Argovia Neumattstrasse 1 5001 Aarau sekretariat@argovia.ch WhatsApp schicken Team Jobs …"
+    },
+    {
+      "title": "Win | Radio Argovia",
+      "url": "https://www.argovia.ch/win",
+      "snippet": "jan SEVEN dettwyler verzaubert die Radio Argovia Hörerinnen und Hörer"
+    },
+    {
+      "title": "Radio Argovia | Radio Argovia",
+      "url": "https://www.argovia.ch/zuletzt-gespielt",
+      "snippet": "2 days ago · De Soundtrack zom Läbe"
+    }
+  ]
+}

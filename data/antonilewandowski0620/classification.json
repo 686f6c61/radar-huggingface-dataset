@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "antonilewandowski0620/classification",
+  "slug": "antonilewandowski0620-classification",
+  "author": "antonilewandowski0620",
+  "url": "https://huggingface.co/antonilewandowski0620/classification",
+  "created_at": "2026-09-10T14:42:53.000Z",
+  "updated_at": "2026-09-10T14:42:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TECHWOOD LIMITED overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/13917037",
+      "snippet": "Jul 23, 2024 · TECHWOOD LIMITED - Free company information from Companies House including registered office address, filing …"
+    },
+    {
+      "title": "TECHWOOD LIMITED filing history - Find and update company …",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16811687/filing-history",
+      "snippet": "TECHWOOD LIMITED - Free company information from Companies House including registered office address, filing history, …"
+    },
+    {
+      "title": "TechnoWood - Built for tomorrow",
+      "url": "https://technowood.uk/",
+      "snippet": "TechnoWood is an aluminium or GRP substrate coated in natural timber veneer to give the aesthetic and natural feel of timber but …"
+    },
+    {
+      "title": "TECHWOOD LIMITED | Company Summary",
+      "url": "https://companycheck.co.uk/company/01654133/TECHWOOD-LIMITED/companies-house-data",
+      "snippet": "Detailed answers about TECHWOOD LIMITED, including incorporation, status, business activity, and accounts information. When …"
+    },
+    {
+      "title": "Technowood is now available in the UK, Amersham showroom now …",
+      "url": "https://technowood.uk/technowood-is-now-available-in-the-uk-amersham-showroom-now-open",
+      "snippet": "Oct 1, 2019 · Technowood has changed the playing field, it’s arrived in the UK and on display in the new showroom in Amersham. …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TichAm/my-flux-lora",
+  "slug": "ticham-my-flux-lora",
+  "author": "TichAm",
+  "url": "https://huggingface.co/TichAm/my-flux-lora",
+  "created_at": "2026-09-10T13:40:17.000Z",
+  "updated_at": "2026-09-10T13:41:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130958064,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "越野跑头灯到底哪家强？ - 知乎",
+      "url": "https://www.zhihu.com/question/38596300",
+      "snippet": "Petzl： 1. Petzl Nao 1&2 最大575流明，智能调光（官网下载Petzl程序，随环境明暗程度自动调节亮度），可用USB充电。 这款最经 …"
+    },
+    {
+      "title": "wapi要不要打开？ - 知乎",
+      "url": "https://www.zhihu.com/question/297654008",
+      "snippet": "首先来了解一下WAPI是什么。 WAPI与WIFi一样，是一种无线网标准，只不过WiFi由国外主导，WAPI是国产。 两者一个最明显的差 …"
+    },
+    {
+      "title": "Petzl - Forum Sport",
+      "url": "https://www.forumsport.com/es-es/marcas/petzl-PETLZ-c",
+      "snippet": "Conoce la mejor selección de productos de la marca PELTZ. Expertos en deportes como:Running, Esquí Y Snow, Montaña, Camping."
+    },
+    {
+      "title": "Petzl Swift Rl naranja frontales running | Forum Sport",
+      "url": "https://www.forumsport.com/es-es/petzl-frontal-linterna-swift-rl-orange-e095bb01-1001013484-p",
+      "snippet": "El frontal Petzl Swift Reactive Lighting con 1100 lúmenes y solo 100 gramos de peso se puedo utilizar para realizar multitud de …"
+    },
+    {
+      "title": "CEFR到底是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/41490452",
+      "snippet": "1960s-2000s CEFR 六、CEFR 有什么意义 CEFR采取了“ CAN DO STATEMENTS（能做什么） ”的描述方法，注重 语言的实际应用 …"
+    }
+  ]
+}

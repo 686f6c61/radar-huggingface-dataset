@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed3407",
+  "slug": "fpadovani-ppt-wc-zipf-newlex-eng-100mb_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed3407",
+  "created_at": "2026-09-10T18:16:17.000Z",
+  "updated_at": "2026-09-10T18:20:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384376441,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akcje - Notowania GPW - Giełda - Bankier.pl",
+      "url": "https://www.bankier.pl/gielda/notowania/akcje",
+      "snippet": "Najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty espi, wyniki finansowe, rekomendacje"
+    },
+    {
+      "title": "WIG20 - Notowania indeksów giełdowych - Bankier.pl",
+      "url": "https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20",
+      "snippet": "Dec 10, 2025 · WIG20 - najnowsze wiadomości, aktualne notowania i forum dyskusyjne na temat indeksów giełdowych."
+    },
+    {
+      "title": "Allegro Klik - nowa metoda płatności dostępna!",
+      "url": "https://spolecznosc.allegro.pl/t5/dyskusje-kupuj%C4%85cych/allegro-klik-nowa-metoda-p%C5%82atno%C5%9Bci-dost%C4%99pna/td-p/1149579",
+      "snippet": "Cześć! 13 stycznia 2026 roku Allegro uruchomiło nową metodę płatności - Allegro Klik. To rozwiązanie dla osób, które mają konto w …"
+    },
+    {
+      "title": "Sprzedający o Allegro Lokalnie",
+      "url": "https://spolecznosc.allegro.pl/t5/sprzedaj%C4%85cy-o-allegro-lokalnie/bd-p/Sprzedajacy_o_Allegro_Lokalnie",
+      "snippet": "2 days ago · Sprzedajesz na Allegro Lokalnie? Tu wymienisz się doświadczeniami i zadasz pytania."
+    },
+    {
+      "title": "公司员工私自使用盗版软件被软件公司发现，律师函发来了，但公司不 …",
+      "url": "https://www.zhihu.com/question/27207222",
+      "snippet": "作为 inhouse 很负责地告诉你 1、他们不是发现了什么，是撒网式的，所有大公司都发 2、他们有义务证明你的公司电脑上安装了这些 …"
+    }
+  ]
+}

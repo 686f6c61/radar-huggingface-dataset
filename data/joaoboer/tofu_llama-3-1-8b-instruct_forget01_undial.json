@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_UNDIAL",
+  "slug": "joaoboer-tofu_llama-3-1-8b-instruct_forget01_undial",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_UNDIAL",
+  "created_at": "2026-09-10T13:59:18.000Z",
+  "updated_at": "2026-09-10T14:02:03.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "UNDIAL",
+    "forget01",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NT ProBNP : rôle, taux élevé ou bas et interprétation",
+      "url": "https://www.informationhospitaliere.com/nt-probnp-role-taux-eleve-ou-bas-et-interpretation",
+      "snippet": "Jul 26, 2021 · Le NT-proBNP est considéré comme un marqueur biologique pertinent en cas d’ insuffisance cardiaque en urgence. …"
+    },
+    {
+      "title": "Résultats du test NT-proBNP : que signifient vos taux ?",
+      "url": "https://bloodsense.ai/fr/marqueurs-sanguins/nt-probnp-comprendre-vos-resultats-de-test/",
+      "snippet": "Oct 11, 2025 · À partir de quel taux de NT-proBNP faut-il s'inquiéter ? Il n'existe pas de chiffre unique définissant le danger, car la …"
+    },
+    {
+      "title": "BNP et NT-proBNP : taux normal et insuffisance cardiaque",
+      "url": "https://blood-analysis.com/fr/guides/bnp",
+      "snippet": "Aug 31, 2026 · Mais un BNP élevé (ou un NT-proBNP élevé) n'est pas synonyme de maladie grave : l'âge, les reins ou un trouble du …"
+    },
+    {
+      "title": "Quel est le bon taux de NT-proBNP ? Découvrez les normes et",
+      "url": "https://umvie.com/quel-est-le-bon-taux-de-nt-probnp-decouvrez-les-normes-et-valeurs-recommandees/",
+      "snippet": "Aug 25, 2023 · Les valeurs normales de NT-proBNP varient en fonction de l’âge, du sexe et de la présence de maladies cardiaques. …"
+    },
+    {
+      "title": "BNP et NT-proBNP aux urgences, interprétation",
+      "url": "https://www.efurgences.net/se-former/breves/bnp-nt-probnp",
+      "snippet": "Aug 8, 2026 · Le BNP (B-type natriuretic peptide) et le NT-proBNP (N-terminal pro-B-type natriuretic peptide) sont des biomarqueurs …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0_dpo_beta0_05",
+  "slug": "thehassansaud-p2_pythia410m_q0_dpo_beta0_05",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_dpo_beta0_05",
+  "created_at": "2026-09-10T15:47:11.000Z",
+  "updated_at": "2026-09-10T15:47:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shop iPhone Duo - Apple",
+      "url": "https://www.apple.com/shop/buy-iphone/iphone-duo",
+      "snippet": "22 hours ago · Get $35–$885 off a new iPhone Duo when you trade in an iPhone 8 Plus or newer. 0% financing available. Learn …"
+    },
+    {
+      "title": "Apple iPhone Duo: Was das neue Falt-Handy kann - wdr.de",
+      "url": "https://www1.wdr.de/wirtschaft/ratgeber/apple-iphone-duo-klapp-handy-iphone-18-pro-100.html",
+      "snippet": "20 hours ago · Apple hat sein erstes faltbares iPhone Duo vorgestellt. Dazu kommen zwei neue Pro-Modelle. Die Geräte sind so …"
+    },
+    {
+      "title": "iPhone Duo vorgestellt: Alle Fakten zum neuen Apple Klapphandy",
+      "url": "https://www.smartweb.de/news/handy/iphone-duo-vorgestellt-das-solltest-du-ueber-das-erstes-faltbare-iphone-wissen",
+      "snippet": "19 hours ago · Mit dem iPhone Duo bringt Apple erstmals ein faltbares iPhone auf den Markt. Das neue Foldable kombiniert ein 5,4 …"
+    },
+    {
+      "title": "iPhone Duo: Alles, was ihr zu Apples ersten Falthandy wissen müsst",
+      "url": "https://www.gamestar.de/artikel/iphone-duo-preis-specs-release-alle-infos,3459226.html",
+      "snippet": "21 hours ago · iPhone Duo: Alles, was ihr zu Apples ersten Falthandy wissen müsst – Preis, Release, Specs und mehr Jetzt ist es …"
+    },
+    {
+      "title": "iPhone Duo: Apples Foldable startet ab 2.299 Euro im Oktober",
+      "url": "https://www.pcgameshardware.de/iPhone-Serie-Smartphone-216880/News/Duo-Foldable-Preis-Specs-Release-1553347/",
+      "snippet": "12 hours ago · Apple hat das iPhone Duo vorgestellt: Ein Foldable mit 7,6-Zoll-Display, A20 Pro und Touch ID. Preise ab 2.299 Euro, …"
+    }
+  ]
+}

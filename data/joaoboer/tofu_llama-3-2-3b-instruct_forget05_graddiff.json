@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_GradDiff",
+  "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget05_graddiff",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_GradDiff",
+  "created_at": "2026-09-10T12:54:53.000Z",
+  "updated_at": "2026-09-10T12:56:08.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "GradDiff",
+    "forget05",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A new type of Salmonella ( S. ballerup) with Vi-antigen",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0022172400027790",
+      "snippet": "THE purpose of this paper is to describe a new type of Salmonella (S. ballerup) which is remarkable serologically in that it possesses …"
+    },
+    {
+      "title": "A new type of Salmonella (S. ballerup) with Vi-antigen *",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2199532/",
+      "snippet": "Full text is available as a scanned copy of the original print version. Get a printable copy (PDF file) of the complete article (644K), or …"
+    },
+    {
+      "title": "A new type of Salmonella (S. ballerup) with Vi-antigen",
+      "url": "https://www.cambridge.org/core/journals/epidemiology-and-infection/article/new-type-of-salmonella-s-ballerup-with-viantigen/C567322557D4FC96558CE8B7D756E227",
+      "snippet": "By means of the V form of S. ballerup it is easy to demonstrate Vi- agglutinin in typhoid sera, as there is no need to fear disturbances …"
+    },
+    {
+      "title": "A new type of Salmonella (S. ballerup) with Vi-antigen - EurekaMag",
+      "url": "https://eurekamag.com/research/051/186/051186099.php",
+      "snippet": "Immunochemical studies on B. coli and S. ballerup Vi-antigenZhurnal Mikrobiologii Epidemiologii i Immunobiologii 28 (10): 114-119 …"
+    },
+    {
+      "title": "Über Bakterienlipoide. 2. Die Lipoide von Salmonella ballerup ...",
+      "url": "https://www.deepdyve.com/lp/de-gruyter/ber-bakterienlipoide-2-die-lipoide-von-salmonella-ballerup-8TFuxd09Q0",
+      "snippet": "In Fortsetzung dieser Arbeit wurden die Lipoide eines nichtpathogenen Stammes, Salmonella baller up^3, untersucht. Ein Teil der …"
+    }
+  ]
+}

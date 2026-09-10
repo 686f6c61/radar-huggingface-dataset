@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "israelep/Llama-3.2-3B-Instruct-agente-seguros-lora",
+  "slug": "israelep-llama-3-2-3b-instruct-agente-seguros-lora",
+  "author": "israelep",
+  "url": "https://huggingface.co/israelep/Llama-3.2-3B-Instruct-agente-seguros-lora",
+  "created_at": "2026-09-10T15:33:53.000Z",
+  "updated_at": "2026-09-10T15:34:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114517464,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eventi sportivi vicino a me - Aperto Vicino A Me 24",
+      "url": "https://apertovicinoame24.com/eventi-sportivi-vicino-a-me/",
+      "snippet": "Vuoi vedere una partita o uno spettacolo sportivo vicino a te? Calcio, basket, tennis, atletica e molto altro — qui trovi tutti gli eventi …"
+    },
+    {
+      "title": "Eventi sportivi vicino a me — Biglietti sport | EventiVicinoAMe",
+      "url": "https://eventivicinoame.it/eventi-sportivi/",
+      "snippet": "16 hours ago · Partite di calcio, basket, tennis e altri eventi sportivi vicino a te. Trova biglietti per eventi sport nella tua zona."
+    },
+    {
+      "title": "Eventi vicino a me - Aperto Vicino A Me 24",
+      "url": "https://apertovicinoame24.com/trovare/eventi-vicino-a-me/",
+      "snippet": "Concerti, partite sportive, spettacoli di comici, teatro, festival e molto altro — scopri in tempo reale cosa succede intorno a te. Il …"
+    },
+    {
+      "title": "Eventi Sportivi in Italia. Trova Gare e Match Vicino a Te - Eventi Italiani",
+      "url": "https://eventi-italiani.it/categoria-evento/sport/",
+      "snippet": "Sep 9, 2025 · Scopri e partecipa agli eventi sportivi in tutta Italia. Con la nostra funzione di geolocalizzazione, trova facilmente gare, …"
+    },
+    {
+      "title": "Eventi e tornei vicino a te — Event-IA",
+      "url": "https://event-ia.app/eventi",
+      "snippet": "16 hours ago · Trova tornei ed eventi aperti vicino a te: filtra per nazione, provincia, città e distanza in km. Iscriviti online in un minuto, …"
+    }
+  ]
+}

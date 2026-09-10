@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-nld_heavy_zipf-100mb_seed10",
+  "slug": "fpadovani-ppt-nld_heavy_zipf-100mb_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-nld_heavy_zipf-100mb_seed10",
+  "created_at": "2026-09-10T18:57:17.000Z",
+  "updated_at": "2026-09-10T19:01:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/nld_latn_100mb",
+    "base_model:finetune:goldfish-models/nld_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86708736,
+  "parameters_human": "86.7M",
+  "storage_bytes": 1387583545,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/nld_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stremio - Freedom to Stream",
+      "url": "https://web.stremio.com/",
+      "snippet": "Streaming server is not available. Install"
+    },
+    {
+      "title": "Stream Games on Steam",
+      "url": "https://store.steampowered.com/app/872990/Stream_Games/",
+      "snippet": "Stream Games is a set of mini games that Twitch Streamers can play with their viewers' interaction"
+    },
+    {
+      "title": "Das Erste live - jetzt zum kostenlosen Livestream!",
+      "url": "https://www.ardmediathek.de/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL2xpdmUvY2xpcC9hYmNhMDdhMy0zNDc2LTQ4NTEtYjE2Mi1mZGU4ZjY0NmQ0YzQ",
+      "snippet": "Das Erste Livestream. Das TV-Programm von heute live im Fernsehen verfolgen! Jetzt zum kostenlosen Stream!"
+    },
+    {
+      "title": "Microsoft Store - Download apps, games & more for your Windows PC",
+      "url": "https://apps.microsoft.com/",
+      "snippet": "Explore the Microsoft Store for apps and games on Windows. Enjoy exclusive deals, new releases, and your favorite content all in …"
+    },
+    {
+      "title": "STRE Information - strategy.com",
+      "url": "https://www.strategy.com/stre/learn",
+      "snippet": "Stream (STRE) is Strategy’s perpetual preferred stock, ranking junior to STRF and STRC, and senior to STRK and STRD. STRE …"
+    }
+  ]
+}

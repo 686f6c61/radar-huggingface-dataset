@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ChippyMan19/SummerTimeSaga_Style",
+  "slug": "chippyman19-summertimesaga_style",
+  "author": "ChippyMan19",
+  "url": "https://huggingface.co/ChippyMan19/SummerTimeSaga_Style",
+  "created_at": "2026-09-10T15:32:33.000Z",
+  "updated_at": "2026-09-10T15:32:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 235533958,
+  "storage_human": "236 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl üzletek itt: Budapest - az Ön közeli szupermarkete",
+      "url": "https://www.lidl.hu/s/hu-HU/uzletkereso/budapest/",
+      "snippet": "Találjon egy Lidl üzletet itt Budapest. és fedezze fel aktuális ajánlatainkat és heti akciós újságainkat."
+    },
+    {
+      "title": "Lidl.hu | Igazán megéri.",
+      "url": "https://www.lidl.hu/",
+      "snippet": "Válaszd ki a kedvenc Lidl üzletedet! Regisztrálj most! Nézd meg ajánlataidat és kuponjaidat!"
+    },
+    {
+      "title": "LIDL Locations & Hours in Budapest, Budapest, Hungary - MyStore411",
+      "url": "https://www.mystore411.com/store/list_city/1501/Budapest/Budapest/Hungary/LIDL-store-locations?page=1",
+      "snippet": "LIDL in Budapest, Budapest, Hungary: complete list of store locations, hours, holiday hours, phone numbers, and services. Find LIDL …"
+    },
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "Lidl Budapest nyitvatartás | Nyitva.hu",
+      "url": "https://nyitva.hu/b/lidl/budapest",
+      "snippet": "Találja meg a (z) Lidl nyitvatartási és zárvatartási idejét itt: Budapest , és egyéb elérhetőségeket, mint például cím, telefonszám, …"
+    }
+  ]
+}

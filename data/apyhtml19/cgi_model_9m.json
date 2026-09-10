@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ApyHTML19/Cgi_Model_9M",
+  "slug": "apyhtml19-cgi_model_9m",
+  "author": "ApyHTML19",
+  "url": "https://huggingface.co/ApyHTML19/Cgi_Model_9M",
+  "created_at": "2026-09-10T16:50:44.000Z",
+  "updated_at": "2026-09-10T17:48:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "cgi_transformer",
+    "cgi",
+    "fiscal",
+    "transformer",
+    "from-scratch",
+    "fr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8960512,
+  "parameters_human": "9.0M",
+  "storage_bytes": 35846656,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heinz Rühmann – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Heinz_R%C3%BChmann",
+      "snippet": "Heinrich „Heinz“ Wilhelm Hermann[1] Rühmann (* 7. März 1902 in Essen; † 3. Oktober 1994 in Berg (Starnberger See)) war ein …"
+    },
+    {
+      "title": "Heinz Rühmann Filme komplett - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL6aPSX2Rv1r1rG-xW5og5mWVTl3q4q-mH",
+      "snippet": "A Man Walks Through the Wall (1959) full movie, German, starring Heinz Rühmann I. Gillette 88K views • 2 years ago 1:33:00"
+    },
+    {
+      "title": "Heinz Rühmann Filme - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLCXI1-4Lldza4MEJqK6A4JQCLf9qtM44l",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "Filmografie von Heinz Rühmann - FILMSTARTS.de",
+      "url": "https://www.filmstarts.de/personen/76511/filmo/",
+      "snippet": "Entdecke alle Filme von Heinz Rühmann. Von den Anfängen seiner 63 Karriere-Jahre bis zu geplanten Projekten."
+    },
+    {
+      "title": "Die besten Filme mit Heinz Rühmann | Moviepilot.de",
+      "url": "https://www.moviepilot.de/filme/beste/person-heinz-ruehmann",
+      "snippet": "Sep 2, 2026 · Entdecke die besten Filme mit Heinz Rühmann: Es geschah am hellichten Tag, Die Feuerzangenbowle, Der …"
+    }
+  ]
+}

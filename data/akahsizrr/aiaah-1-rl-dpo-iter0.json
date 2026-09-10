@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Akahsizrr/AIAAH-1-RL-DPO-iter0",
+  "slug": "akahsizrr-aiaah-1-rl-dpo-iter0",
+  "author": "Akahsizrr",
+  "url": "https://huggingface.co/Akahsizrr/AIAAH-1-RL-DPO-iter0",
+  "created_at": "2026-09-10T18:30:50.000Z",
+  "updated_at": "2026-09-10T18:31:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "dpo",
+    "reinforcement-learning",
+    "speculative-decoding",
+    "dspark",
+    "rl",
+    "en",
+    "base_model:Akahsizrr/AIAAH-1",
+    "base_model:finetune:Akahsizrr/AIAAH-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557128,
+  "storage_human": "5.0 GB",
+  "base_model": "Akahsizrr/AIAAH-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autotrader UK - New and Used Cars For Sale",
+      "url": "https://www.autotrader.co.uk/?msockid=1eea18e9d6b06ed024ac0f39d7336f69",
+      "snippet": "AutoTrader, the official #1 site to buy and sell new and used cars. Over 400,000 cars online. Here to help you find the right one."
+    },
+    {
+      "title": "Used Cars For Sale | Second Hand Cars | Autotrader UK",
+      "url": "https://www.autotrader.co.uk/cars/used?msockid=1eea18e9d6b06ed024ac0f39d7336f69",
+      "snippet": "Used cars for sale, including private sales & dealerships near you. Shop in confidence with a free history check & instant price …"
+    },
+    {
+      "title": "Autotrader Vans - New and Used Vans For Sale",
+      "url": "https://www.autotrader.co.uk/vans?msockid=1eea18e9d6b06ed024ac0f39d7336f69",
+      "snippet": "Find your next van with Autotrader UK, the official #1 site to buy and sell new & used vans. Over 40,000 vans online. Simple, easy, …"
+    },
+    {
+      "title": "Autotrader Bikes - New and Used Bikes For Sale",
+      "url": "https://www.autotrader.co.uk/bikes?msockid=1eea18e9d6b06ed024ac0f39d7336f69",
+      "snippet": "Find your next bike with Autotrader UK, the official #1 site to buy and sell new and used bikes. Over 35,000 bikes online. Simple, …"
+    },
+    {
+      "title": "New and Used Motorhomes and Campervans for Sale | Autotrader",
+      "url": "https://www.autotrader.co.uk/motorhomes?msockid=1eea18e9d6b06ed024ac0f39d7336f69",
+      "snippet": "Find your next motorhome or campervans with Autotrader UK, the official #1 site to buy and sell new and used motorhomes and …"
+    }
+  ]
+}

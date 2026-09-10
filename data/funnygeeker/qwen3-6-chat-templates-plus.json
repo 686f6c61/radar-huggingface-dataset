@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "funnygeeker/Qwen3.6-Chat-Templates-PLUS",
+  "slug": "funnygeeker-qwen3-6-chat-templates-plus",
+  "author": "funnygeeker",
+  "url": "https://huggingface.co/funnygeeker/Qwen3.6-Chat-Templates-PLUS",
+  "created_at": "2026-09-10T12:14:24.000Z",
+  "updated_at": "2026-09-10T12:17:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有什么推荐的局域网（无外网）远程桌面软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/447253187",
+      "snippet": "向日葵和TeamViewer需要登录ID才能使用，当只有局域网（没有互联网）的时候无法使用。飞秋可以查看对方桌…"
+    },
+    {
+      "title": "AnyDesk使用教程-百度经验",
+      "url": "https://jingyan.baidu.com/article/36d6ed1f6409881bcf4883cf.html",
+      "snippet": "Aug 13, 2016 · AnyDesk使用教程,有时候我们工作生活中可能会用到远程控制手段，通常情况下有使用widow自带的远程控制程序，但 …"
+    },
+    {
+      "title": "AnyDesk：一款极点简略且非常好用的远程软件！-百度经验",
+      "url": "https://jingyan.baidu.com/article/db55b60990e4084ba30a2fa6.html",
+      "snippet": "Nov 30, 2017 · AnyDesk 供应了3种十分便利的登录和联接方法： 经过 AnyDesk 数字地址或 AnyDesk ID 联接： 在联网的环境下发动 …"
+    },
+    {
+      "title": "为什么香蕉热量很高却能减肥? - 知乎",
+      "url": "https://www.zhihu.com/question/23496664",
+      "snippet": "准确的给大家科普下香蕉： 香蕉属于热带水果，每百克热量大约93千卡，含蛋白1.4克几乎不含脂肪，碳水化合物22克，膳食纤维1.2 …"
+    },
+    {
+      "title": "AnyDesk、Teamviewer、VPN差異?效能哪個比較好? - iT 邦幫忙",
+      "url": "https://ithelp.ithome.com.tw/questions/10200355",
+      "snippet": "Sep 22, 2020 · AnyDesk 性能來說，跟 TeamViewer 還是差了一點。 但近年來一直有在做改進。 只是在評比上來說。 如果 …"
+    }
+  ]
+}

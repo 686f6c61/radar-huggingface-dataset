@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "xs7david/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-Q2_K-GGUF",
+  "slug": "xs7david-mistralai-mistral-nemo-instruct-2407-extensive-bp-abliteration-12b-q2_k-gguf",
+  "author": "xs7david",
+  "url": "https://huggingface.co/xs7david/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-Q2_K-GGUF",
+  "created_at": "2026-09-10T16:43:40.000Z",
+  "updated_at": "2026-09-10T16:44:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ru",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ru",
+    "zh",
+    "ja",
+    "base_model:grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B",
+    "base_model:quantized:grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 4791051264,
+  "storage_human": "4.8 GB",
+  "base_model": "grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 Wimbledon Championships - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_Wimbledon_Championships",
+      "snippet": "2026 Wimbledon Championships ... The 2026 Wimbledon Championships was the 139th edition of the Wimbledon Championships, a …"
+    },
+    {
+      "title": "mradermacher/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-GGUF",
+      "snippet": "weighted/imatrix quants are available at https://huggingface.co/mradermacher/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-i1-GGUF"
+    },
+    {
+      "title": "The Championships, Wimbledon - Official Website by IBM",
+      "url": "https://www.wimbledon.com/",
+      "snippet": "Jul 12, 2026 · The home of The Championships, Wimbledon, with the latest tennis news, highlights, exclusive content, scores, draws …"
+    },
+    {
+      "title": "Wimbledon 2026: All results and scores - Olympics.com",
+      "url": "https://www.olympics.com/en/news/wimbledon-2026-tennis-results-scores-complete-list",
+      "snippet": "Wimbledon 2026, the crown jewel of the tennis calendar, took place from 29 June to 12 July. The All England Club in London, Great …"
+    },
+    {
+      "title": "mistral-nemo-instruct — Xinference",
+      "url": "https://inference.readthedocs.io/en/stable/models/builtin/llm/mistral-nemo-instruct.html",
+      "snippet": "Description: The Mistral-Nemo-Instruct-2407 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-Nemo-Base-2407"
+    }
+  ]
+}

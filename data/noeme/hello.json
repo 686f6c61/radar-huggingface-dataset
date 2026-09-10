@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "noeme/Hello",
+  "slug": "noeme-hello",
+  "author": "noeme",
+  "url": "https://huggingface.co/noeme/Hello",
+  "created_at": "2026-09-10T15:42:14.000Z",
+  "updated_at": "2026-09-10T15:42:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519428,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yamaha Network Organizer（YNO） 特長",
+      "url": "https://network.yamaha.com/products/software_service/ysl-yno/index",
+      "snippet": "Mar 31, 2025 · 「Yamaha Network Organizer（YNO）」は、ヤマハネットワーク機器をクラウド上で監視・管理することのできる …"
+    },
+    {
+      "title": "WLX322技術資料",
+      "url": "https://www.rtpro.yamaha.co.jp/AP/docs/wlx322/",
+      "snippet": "Jun 23, 2026 · 本製品は、無線APの性能を損なわずに航空・気象レーダーによる60秒間の通信断を回避する「Fast DFS v2」に対応 …"
+    },
+    {
+      "title": "無線LANアクセスポイント | 製品情報 | ヤマハネットワーク製品",
+      "url": "https://network.yamaha.com/products/wireless_lan/",
+      "snippet": "高機能なコントローラーを搭載したフラッグシップモデルと、機能を厳選したエントリーモデルを揃えます。"
+    },
+    {
+      "title": "Yamaha Network Organizer (YNO)",
+      "url": "https://www.rtpro.yamaha.co.jp/RT/docs/yno/",
+      "snippet": "May 28, 2026 · Yamaha Network Organizer (以下、YNO) は、ヤマハネットワーク機器をクラウドから監視・管理することができる …"
+    },
+    {
+      "title": "network.yamaha.com",
+      "url": "https://network.yamaha.com/setting/wireless_lan/airlink/guest_access-wlx302-fwx120/wireless_lan_ap-airlink-guest_access-fwx120_fwx120.txt/file/download/",
+      "snippet": "# # ゲスト用の無線ネットワークを設定する(FWX120 GUI設定例) # # # FWX120 # # # LANインタフェースの設定 # ip lan1 address …"
+    }
+  ]
+}

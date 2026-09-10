@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "RadimSvetlak/Gemma3-270M-Pralinka-V1.1",
+  "slug": "radimsvetlak-gemma3-270m-pralinka-v1-1",
+  "author": "RadimSvetlak",
+  "url": "https://huggingface.co/RadimSvetlak/Gemma3-270M-Pralinka-V1.1",
+  "created_at": "2026-09-10T18:08:28.000Z",
+  "updated_at": "2026-09-10T18:50:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "cs"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "czech",
+    "cestina",
+    "character",
+    "roleplay",
+    "horses",
+    "small-language-model",
+    "edge",
+    "conversational",
+    "cs",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 569613336,
+  "storage_human": "570 MB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heerlen - loodgieters.nl",
+      "url": "https://www.loodgieters.nl/loodgieter-heerlen/",
+      "snippet": "Loodgieter Heerlen: Onze loodgieters in Heerlen zijn 24 uur per dag, 7 dagen in de week bereikbaar voor alle mogelijke …"
+    },
+    {
+      "title": "Voorburg - loodgieters.nl",
+      "url": "https://www.loodgieters.nl/loodgieter-voorburg/",
+      "snippet": "Voorburg Loodgieter Voorburg: Onze loodgieters in Voorburg zijn 24 uur per dag, 7 dagen in de week bereikbaar voor alle mogelijke …"
+    },
+    {
+      "title": "Etten-Leur - loodgieters.nl",
+      "url": "https://www.loodgieters.nl/loodgieter-etten-Leur/",
+      "snippet": "Etten-Leur Loodgieter Etten-Leur: Onze loodgieters in Etten-Leur zijn 24 uur per dag, 7 dagen in de week bereikbaar voor alle …"
+    },
+    {
+      "title": "Twello - loodgieters.nl",
+      "url": "https://www.loodgieters.nl/loodgieter-twello/",
+      "snippet": "Loodgieter Twello: Onze loodgieters in Twello zijn 24 uur per dag, 7 dagen in de week bereikbaar voor alle mogelijke spoedgevallen. …"
+    },
+    {
+      "title": "Rhenen - loodgieters.nl",
+      "url": "https://www.loodgieters.nl/loodgieter-rhenen/",
+      "snippet": "Loodgieter Rhenen: Onze loodgieters in Rhenen zijn 24 uur per dag, 7 dagen in de week bereikbaar voor alle mogelijke …"
+    }
+  ]
+}

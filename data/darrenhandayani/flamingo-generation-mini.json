@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "darrenhandayani/flamingo-generation-mini",
+  "slug": "darrenhandayani-flamingo-generation-mini",
+  "author": "darrenhandayani",
+  "url": "https://huggingface.co/darrenhandayani/flamingo-generation-mini",
+  "created_at": "2026-09-10T13:09:39.000Z",
+  "updated_at": "2026-09-10T13:09:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "win10的运行在哪里？如何打开运行？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/7908e85ceee3d5af491ad246.html",
+      "snippet": "Jun 22, 2019 · win10的运行在哪里？如何打开运行？很多人习惯了以前的xp系统、win7系统，到了win10系统后不知道运行在哪里了， …"
+    },
+    {
+      "title": "齐楚秦燕赵魏韩各分布在哪个省份 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/455a9950429b86e06727785a.html",
+      "snippet": "Dec 7, 2022 · 于秦王政六年（前241）粉碎了楚、赵、魏、韩等国第四次，也是最后一次合纵对秦的军事进攻，还用反间计除掉了反秦 …"
+    },
+    {
+      "title": "不用老兵传送如何从比奇省走到苍月岛 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fcb5aff7156ec3edab4a7142.html",
+      "snippet": "尸魔洞穴2层到 (195:275)附近，进入1层，随后从地图中另一个出口出来，便来到这神秘而古老的荒岛——苍月岛！"
+    },
+    {
+      "title": "火影忍者ol地图攻略： [4]波之国 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/495ba841f05d2838b30edeae.html",
+      "snippet": "Mar 31, 2015 · 火影忍者ol地图攻略： [4]波之国,作者朝夕相处58带你去波之国（鸣人第一次接护送任务的地方） 经验内容仅供参考， …"
+    },
+    {
+      "title": "Word表格怎样插入自动序号或编号 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/358570f683a804ce4724fcd6.html",
+      "snippet": "Nov 2, 2018 · Word表格怎样插入自动序号或编号,在Word文档中编辑表格时，经常需要为表格添加序号或编号，可以设置为自动序号 …"
+    }
+  ]
+}

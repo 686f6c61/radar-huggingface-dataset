@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SelectiveDOPD/QuestA-Qwen3-1p7b-Selective-Top10pct",
+  "slug": "selectivedopd-questa-qwen3-1p7b-selective-top10pct",
+  "author": "SelectiveDOPD",
+  "url": "https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-1p7b-Selective-Top10pct",
+  "created_at": "2026-09-10T14:01:44.000Z",
+  "updated_at": "2026-09-10T14:18:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 8138453934,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Veco | Mecc Alte",
+      "url": "https://www.meccalte.com/it/veco",
+      "snippet": "Dalla produzione e manutenzione di stampi all'impilamento di rotore e statore, dalla saldatura di gabbie alla pressofusione, …"
+    },
+    {
+      "title": "Veco Precision | world leader in Electroforming",
+      "url": "https://www.vecoprecision.com/de/",
+      "snippet": "Erfahren Sie alles über die Möglichkeiten des Elektroformings und was es für Ihr nächstes Projekt bringen kann. Veco ist ein weltweit …"
+    },
+    {
+      "title": "Veco S.r.l. - Monticello Conte Otto 36010 (Vicenza), Via Nicolosi 75 ,",
+      "url": "https://de.kompass.com/c/veco-s-r-l/it0365284/",
+      "snippet": "Kontaktangaben: VECO S.R.L. VIA NICOLOSI 75 36010 MONTICELLO CONTE OTTO (VI) Italien Firma anrufen Firma anrufen …"
+    },
+    {
+      "title": "VECO SPA Company Profile | BEVILACQUA, VERONA | Competitors, …",
+      "url": "https://www.dnb.com/business-directory/company-profiles.veco_spa.2d2e5d6ab15dec92c5a3e3e7b0693769.html",
+      "snippet": "Find company research, competitor information, contact details & financial data for VECO SPA of BEVILACQUA, VERONA. Get the …"
+    },
+    {
+      "title": "Veco Precision | Weltmarktführer in der Elektroforming",
+      "url": "https://www.vecoprecision.com/de/home/",
+      "snippet": "Metallteile im Mikrometerbereich, die die Miniaturisierung in verschiedenen Branchen ermöglichen. Mit Elektroforming können …"
+    }
+  ]
+}

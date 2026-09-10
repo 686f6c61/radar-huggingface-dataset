@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sdadasdaga/smolvla_grab_black_cube_30ep",
+  "slug": "sdadasdaga-smolvla_grab_black_cube_30ep",
+  "author": "sdadasdaga",
+  "url": "https://huggingface.co/sdadasdaga/smolvla_grab_black_cube_30ep",
+  "created_at": "2026-09-10T11:35:12.000Z",
+  "updated_at": "2026-09-10T11:35:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:sdadasdaga/grab-black-cube-act-30ep_20260908_205154",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720104,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get More Storage, More AI capabilities, and More Features - Google One",
+      "url": "https://one.google.com/",
+      "snippet": "Google One bundles cloud storage, powerful AI capabilities, and helpful features across Google — all in one shareable plan."
+    },
+    {
+      "title": "ご自分に適した Google One プランをお選びいただけます",
+      "url": "https://one.google.com/about/plans?hl=ja",
+      "snippet": "ご自分に適した Google One プランをお選びいただけます すべての Google アカウントには 15 GB の保存容量が提供されています …"
+    },
+    {
+      "title": "Planes y precios para aumentar tu almacenamiento en la nube",
+      "url": "https://one.google.com/about/plans?hl=es",
+      "snippet": "Google One tiene planes de almacenamiento en la nube para todos los usuarios. Descubre qué ofrece cada plan, como acceso a …"
+    },
+    {
+      "title": "Chọn gói Google One phù hợp với bạn",
+      "url": "https://one.google.com/about/plans?hl=vi",
+      "snippet": "Chọn gói Google One phù hợp với bạn Tất cả Tài khoản Google đều có bộ nhớ tối đa 15 GB. Phần bộ nhớ này được tính vào tổng …"
+    },
+    {
+      "title": "Google AI plans with Cloud Storage - Google One",
+      "url": "https://one.google.com/about/google-ai-plans/",
+      "snippet": "Explore Google AI plans. Access our most advanced AI, generate videos from text, and secure cloud storage."
+    }
+  ]
+}

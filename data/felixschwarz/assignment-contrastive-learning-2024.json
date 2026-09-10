@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "felixschwarz/assignment-contrastive-learning-2024",
+  "slug": "felixschwarz-assignment-contrastive-learning-2024",
+  "author": "felixschwarz",
+  "url": "https://huggingface.co/felixschwarz/assignment-contrastive-learning-2024",
+  "created_at": "2026-09-10T13:38:56.000Z",
+  "updated_at": "2026-09-10T13:39:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PM Shram Yogi Maan-dhan | Ministry of Labour & Employment",
+      "url": "https://www.labour.gov.in/offerings/schemes-and-services/details/pm-sym-QTOzATMtQWa",
+      "snippet": "The eligible subscriber may visit the nearest Common Services Centres (CSC eGovernance Services India Limited (CSC SPV)) and …"
+    },
+    {
+      "title": "eProcurement System Government of Odisha",
+      "url": "https://tendersodisha.gov.in/nicgep/app?page=FrontEndContactUs&service=page",
+      "snippet": "13 hours ago · Help desk numbers of State Procurement Cell (SPC), Govt. of Odisha - 1800 3456 765, 0674-2530998 (Available all …"
+    },
+    {
+      "title": "eTendering System Government of Kerala",
+      "url": "https://www.etenders.kerala.gov.in/nicgep/app?page=FrontEndContactUs&service=page",
+      "snippet": "13 hours ago · Trivandrum Address : Kerala State IT Mission e-Government Procurement PMU and HelpDesk Saankethika, Near …"
+    },
+    {
+      "title": "Welcome to CSCSPV",
+      "url": "https://cscspv.in/pmsym-scheme.html",
+      "snippet": "helpdesk [at]csc [dot]gov [dot]in Helpdesk 14599 (Citizen and VLE) - Working Hours: 9:30 AM to 6:00 PM (Monday to Saturday) -A A +A"
+    },
+    {
+      "title": "Pradhan Mantri Shram Yogi Maan-Dhan (PM-SYM) - Fincash",
+      "url": "https://www.fincash.com/l/pradhan-mantri-shram-yogi-maan-dhan",
+      "snippet": "5 days ago · Customer Care Number Beneficiaries can access customer care service at 1800 2676 888. This is available 24X7. …"
+    }
+  ]
+}

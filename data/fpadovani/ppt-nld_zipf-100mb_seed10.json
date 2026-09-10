@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-nld_zipf-100mb_seed10",
+  "slug": "fpadovani-ppt-nld_zipf-100mb_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-nld_zipf-100mb_seed10",
+  "created_at": "2026-09-10T18:20:00.000Z",
+  "updated_at": "2026-09-10T18:23:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/nld_latn_100mb",
+    "base_model:finetune:goldfish-models/nld_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86708736,
+  "parameters_human": "86.7M",
+  "storage_bytes": 1387583545,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/nld_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Subway®",
+      "url": "https://www.subway.com/en-us/home",
+      "snippet": "Discover customized sandwiches at Subway. Take a look at the sandwich menu, place your order online, find the nearest restaurant, …"
+    },
+    {
+      "title": "Our Menu | Subway®",
+      "url": "https://www.subway.com/en-us/menunutrition/menu",
+      "snippet": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place …"
+    },
+    {
+      "title": "Sandwiches, Salads, Wraps & More - Subway",
+      "url": "https://restaurants.subway.com/united-states/va/ashburn/44110-ashburn-village-blvd",
+      "snippet": "Discover better for you sub sandwiches at SUBWAY 44110 Ashburn Village Blvd in Ashburn VA. View our menu of sub sandwiches, …"
+    },
+    {
+      "title": "Subway Locations in Ashburn, VA| Subs, Sandwiches, Salads",
+      "url": "https://restaurants.subway.com/united-states/va/ashburn",
+      "snippet": "Browse all Subway locations in Ashburn, VA to find a restaurant near you that serves fresh subs, sandwiches, salads, & more. View …"
+    },
+    {
+      "title": "Subway Menu - Ashburn, VA",
+      "url": "https://www.roostcafeandbistro.com/subway-20148-2/",
+      "snippet": "Jul 10, 2025 · Subway is Sandwich shop at 43150 Broadlands Center Plaza #116, Ashburn, VA 20148. Check out their menu with …"
+    }
+  ]
+}

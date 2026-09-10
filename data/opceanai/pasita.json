@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "OpceanAI/PASITA",
+  "slug": "opceanai-pasita",
+  "author": "OpceanAI",
+  "url": "https://huggingface.co/OpceanAI/PASITA",
+  "created_at": "2026-09-10T12:53:17.000Z",
+  "updated_at": "2026-09-10T13:06:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "markdown",
+    "text-to-markdown",
+    "faithful-generation",
+    "from-scratch",
+    "spanish",
+    "english",
+    "ocr-postprocessing",
+    "rag",
+    "document-understanding",
+    "tiny-llm",
+    "es",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88099584,
+  "parameters_human": "88.1M",
+  "storage_bytes": 176211400,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "PASITA-bench-1000 (held-out, private)",
+      "metric": "gfm_validity",
+      "value": 0.956
+    },
+    {
+      "task": null,
+      "dataset": "PASITA-bench-1000 (held-out, private)",
+      "metric": "faithfulness",
+      "value": 0.927
+    },
+    {
+      "task": null,
+      "dataset": "PASITA-bench-1000 (held-out, private)",
+      "metric": "semantic_faithfulness",
+      "value": 0.888
+    },
+    {
+      "task": null,
+      "dataset": "PASITA-bench-1000 (held-out, private)",
+      "metric": "table_fidelity",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thema \"LODAS: Datenbestand einspielen\" in Personalwirtschaft",
+      "url": "https://www.datev-community.de/rss/message?board.id=Personalwirtschaft&message.id=53533",
+      "snippet": "https://www.datev-community.de/t5/Personalwirtschaft/LODAS-Datenbestand-einspielen/m …"
+    },
+    {
+      "title": "Thema \"Arbeitnehmer Online - DATEV-Community",
+      "url": "https://www.datev-community.de/rss/message?board.id=Personalwirtschaft&message.id=77227",
+      "snippet": "https://www.datev-community.de/t5/Personalwirtschaft/Arbeitnehmer-Online-Einladungscode-ung%C3%BCltig/m …"
+    },
+    {
+      "title": "Thema \"Drucken aus DATEV funktioniert nicht\" in Betriebliches ...",
+      "url": "https://www.datev-community.de/rss/message?board.id=Betriebliches-Rechnungswesen&message.id=44952",
+      "snippet": "Die Drucker sind auch im DATEV Rechnungswesen verfügbar, allerdings funktioniert bei einigen Mitarbeitern der Druck aus DATEV …"
+    },
+    {
+      "title": "Thema \"Re: elektronische Übermittlung einer ... - DATEV-Community",
+      "url": "https://www.datev-community.de/rss/message?board.id=Personalwirtschaft&message.id=17670",
+      "snippet": "https://www.datev-community.de/t5/Personalwirtschaft/elektronische-%C3%9Cbermittlung-einer-Arbeitsbescheinigung-nach-312/m …"
+    },
+    {
+      "title": "Thema \"Re: gelöschter Buchungsstapel wieder herstellen\" in ...",
+      "url": "https://www.datev-community.de/rss/message?board.id=Betriebliches-Rechnungswesen&message.id=523",
+      "snippet": "Mandantenkette) auf einmal sichern und zurücksichern. Das ist DATEV echt gut gelungen.</P><P></P><P>Gruß A. …"
+    }
+  ]
+}

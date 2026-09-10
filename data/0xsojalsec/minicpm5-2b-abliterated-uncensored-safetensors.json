@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+  "slug": "0xsojalsec-minicpm5-2b-abliterated-uncensored-safetensors",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
+  "created_at": "2026-09-10T18:40:31.000Z",
+  "updated_at": "2026-09-10T18:40:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "minicpm",
+    "minicpm5",
+    "text-generation",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557072,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RADIO BOLLERWAGEN",
+      "url": "https://radiobollerwagen.de/",
+      "snippet": "RADIO BOLLERWAGEN ist Deutschlands Party-Sender Nummer 1. Wir spielen 24/7 Xtreme Party Music mit einem klaren …"
+    },
+    {
+      "title": "Radio Bollerwagen: Party-Hits und gute Laune live",
+      "url": "https://www.radio.de/s/bollerwagen",
+      "snippet": "Radio Bollerwagen ist als Online-Radio und Internetradio verfügbar, sodass die Hörer:innen jederzeit und überall in den Genuss der …"
+    },
+    {
+      "title": "Radio Bollerwagen",
+      "url": "https://player.ffn.de/radiobollerwagen",
+      "snippet": "Bei uns treffen Mickie Krause und Peter Wackel auf AC/DC und Scooter. Viel Spaß beim Feiern!"
+    },
+    {
+      "title": "Radio Bollerwagen live hören",
+      "url": "https://radio-horen.de/radio-bollerwagen",
+      "snippet": "Hören Sie Radio Bollerwagen – den Live-Radiosender aus Hannover (Niedersachsen), der rund um die Uhr vor allem Party-, …"
+    },
+    {
+      "title": "Radio Bollerwagen Live Radio Hören - internetradio-horen.de",
+      "url": "https://www.internetradio-horen.de/ffn-bollerwagen",
+      "snippet": "Radio Bollerwagen live hören. Die besten deutschen Radiosender. Kostenlos Radio, Musik für alle auf www.internetradio-horen.de."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "GoodnotesLtd/speaker-diarization-coreml-dual-output",
+  "slug": "goodnotesltd-speaker-diarization-coreml-dual-output",
+  "author": "GoodnotesLtd",
+  "url": "https://huggingface.co/GoodnotesLtd/speaker-diarization-coreml-dual-output",
+  "created_at": "2026-09-10T14:53:04.000Z",
+  "updated_at": "2026-09-10T14:53:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "speaker-diarization",
+    "speaker-embedding",
+    "base_model:FluidInference/speaker-diarization-coreml",
+    "base_model:quantized:FluidInference/speaker-diarization-coreml",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13485602,
+  "storage_human": "13 MB",
+  "base_model": "FluidInference/speaker-diarization-coreml",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Psiphon | Uncensored Internet access for Windows and Mobile",
+      "url": "https://psiphon.ca/",
+      "snippet": "Psiphon is circumvention software for Windows and Mobile platforms that provides uncensored access to Internet content"
+    },
+    {
+      "title": "Psiphon | Download Android app and Windows client",
+      "url": "https://psiphon.ca/en/download.html",
+      "snippet": "Psiphon Browser for iOS in the Apple App Store Access your favorite web sites and services through the Psiphon network with our …"
+    },
+    {
+      "title": "Psiphon - Gizmodo",
+      "url": "https://gizmodo.com/download/psiphon",
+      "snippet": "2 days ago · Psiphon is a multi-protocol tool for Windows, Android, iOS, and macOS that allows users to bypass any internet …"
+    },
+    {
+      "title": "Psiphon - Download",
+      "url": "https://psiphon.en.softonic.com/",
+      "snippet": "May 4, 2026 · Psiphon is a free, open-source tool that provides uncensored internet access using VPN, SSH, and proxy …"
+    },
+    {
+      "title": "Psiphon 3 Download Page",
+      "url": "https://s3.amazonaws.com/0ubz-2q11-gi9y/en.html",
+      "snippet": "Psiphon 3 is a circumvention tool from Psiphon Inc. that utilizes VPN, SSH and HTTP Proxy technology to provide you with …"
+    }
+  ]
+}

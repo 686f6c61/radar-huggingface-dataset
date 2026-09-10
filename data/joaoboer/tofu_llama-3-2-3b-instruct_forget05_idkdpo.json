@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_IdkDPO",
+  "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget05_idkdpo",
+  "author": "JoaoBoer",
+  "url": "https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_IdkDPO",
+  "created_at": "2026-09-10T12:58:39.000Z",
+  "updated_at": "2026-09-10T12:59:49.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "IdkDPO",
+    "forget05",
+    "conversational",
+    "dataset:locuslab/TOFU",
+    "base_model:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "base_model:finetune:open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GTL-215 Instek - Test Equipment - Distributors and Price Comparison ...",
+      "url": "https://octopart.com/part/instek/GTL-215",
+      "snippet": "Find the best pricing for Instek GTL-215 by comparing bulk discounts from 3 distributors. Octopart is the world's source for GTL-215 …"
+    },
+    {
+      "title": "Instek GTL-215 Test Lead U-Type to Alligator, 1000mm",
+      "url": "https://www.testequipmentdepot.com/instek-gtl-215-test-lead-u-type-to-alligator-1000mm.html",
+      "snippet": "The Instek GTL-215 Test Lead is an accessory for use with the GCT-9040 AC Ground Bond Tester. It has a U-type to alligator …"
+    },
+    {
+      "title": "GTL-215 GW INSTEK - Cordons de mesure | 1m; noir et rouge",
+      "url": "https://www.tme.eu/fr/details/gtl-215/instruments-de-laboratoire-autres/gw-instek/",
+      "snippet": "GW INSTEK GTL-215 | Cordons de mesure; 1m; noir et rouge - Produit disponible chez Transfer Multisort Elektronik. Vérifiez notre …"
+    },
+    {
+      "title": "GW Instek 1100MTL215001 GTL-215 Cordon de mesure 1 pc (s)",
+      "url": "https://www.conrad.fr/fr/p/gw-instek-1100mtl215001-gtl-215-cordon-de-mesure-1-pc-s-2177956.html",
+      "snippet": "Achetez votre GW Instek 1100MTL215001 GTL-215 Cordon de mesure 1 pc (s) bon marché en ligne. Des produits toujours originaux …"
+    },
+    {
+      "title": "GTL-215 GW INSTEK - Test leads | crocodile clip x2,spade lug x4; 1m ...",
+      "url": "https://www.tme.eu/en/details/gtl-215/laboratory-instruments-others/gw-instek/",
+      "snippet": "GW INSTEK GTL-215 | Test leads; crocodile clip x2,spade lug x4; 1m; red and black - This product is available in Transfer Multisort …"
+    }
+  ]
+}

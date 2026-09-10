@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DiffusionWave/test",
+  "slug": "diffusionwave-test",
+  "author": "DiffusionWave",
+  "url": "https://huggingface.co/DiffusionWave/test",
+  "created_at": "2026-09-10T11:07:00.000Z",
+  "updated_at": "2026-09-10T12:19:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1136311948,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXN MATRIX MATLAB PLOTX - data.fastcomet.com",
+      "url": "https://data.fastcomet.com/resource-files/KtKnzN/n60184/Xnxn_Matrix_Matlab_Plotx.pdf",
+      "snippet": "Mastering xnxn Matrix Visualization with MATLAB Plotx Techniques xnxn matrix matlab plotx is a phrase that often emerges when …"
+    },
+    {
+      "title": "MATLAB Code for XNXN Matrix 2025 | PDF | Matrix (Mathematics",
+      "url": "https://www.scribd.com/document/802098607/MatLab",
+      "snippet": "Discuss the procedure to generate a matrix with specific repetitive values in MATLAB and cite an example of such a matrix …"
+    },
+    {
+      "title": "XNXN MATRIX MATLAB PLOT ALGORITHM PDF - data.fastcomet.com",
+      "url": "https://data.fastcomet.com/resource-files/Sgle3n/n60783/Xnxn-Matrix_Matlab-Plot_Algorithm_Pdf.pdf",
+      "snippet": "Mastering the xnxn Matrix MATLAB Plot Algorithm PDF: An In-Depth Professional Review zation within the MATLAB environment. …"
+    },
+    {
+      "title": "Matrix plotting - File Exchange - MATLAB Central - MathWorks",
+      "url": "https://www.mathworks.com/matlabcentral/fileexchange/62962-matrix-plotting",
+      "snippet": "May 16, 2021 · plot (M (1,:),M (2,:)) or plot3 (M (1,:),M (2,:),M (3,:)). plotm works by separating any matrix with two or more rows into …"
+    },
+    {
+      "title": "XNXN Matrix MATLAB Code Guide 2024 | PDF | Matrix (Mathematics …",
+      "url": "https://www.scribd.com/presentation/784707433/FALLSEMFRE2024-25-MAT1001-ELA-AP2024253000768-2024-10-23-Reference-Material-I-1",
+      "snippet": "Oct 23, 2024 · XNXN Matrix MATLAB Code Guide 2024 Uploaded by gqtykgnfzj AI-enhanced title Copyright"
+    }
+  ]
+}

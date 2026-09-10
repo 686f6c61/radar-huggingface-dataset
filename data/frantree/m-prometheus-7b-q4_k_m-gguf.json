@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "frantree/M-Prometheus-7B-Q4_K_M-GGUF",
+  "slug": "frantree-m-prometheus-7b-q4_k_m-gguf",
+  "author": "frantree",
+  "url": "https://huggingface.co/frantree/M-Prometheus-7B-Q4_K_M-GGUF",
+  "created_at": "2026-09-10T11:11:51.000Z",
+  "updated_at": "2026-09-10T11:12:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:Unbabel/M-Prometheus-7B",
+    "base_model:quantized:Unbabel/M-Prometheus-7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073888,
+  "storage_human": "4.7 GB",
+  "base_model": "Unbabel/M-Prometheus-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Damenschuhe und -kleidung - Entdecke - New Balance",
+      "url": "https://www.newbalance.de/de/damen/",
+      "snippet": "Kaufe die New Balance Schuhe und Sportbekleidung Damenkollektion. Entdecke deine Favoriten. Jetzt online bestellen!"
+    },
+    {
+      "title": "Schuhe und Bekleidung | Offizielle Webseite - New Balance",
+      "url": "https://www.newbalance.de/de/",
+      "snippet": "Bewältige deine Workouts mit den Hochleistungs-Laufschuhen und stylischer Bekleidung von New Balance. Kaufen Sie jetzt online …"
+    },
+    {
+      "title": "Damenschuhe - Sportschuhe - New Balance",
+      "url": "https://www.newbalance.de/de/damen/schuhe/",
+      "snippet": "Kaufe die New Balance Damen Schuhe Kollektion. Finde den perfekten Sport schuhe damen, ob du nun Laufschuhe oder ein cooles …"
+    },
+    {
+      "title": "Outlet & Sale - reduzierte Artikel - New Balance",
+      "url": "https://www.newbalance.de/de/outlet/",
+      "snippet": "Entdecke die besten Angebote für Laufschuhe, Lifestyle-Sneaker und Bekleidung für Herren, Damen und Kinder im New Balance …"
+    },
+    {
+      "title": "Sneaker Damen |Turnschuhe Damen - New Balance",
+      "url": "https://www.newbalance.de/de/damen/schuhe/sneakers/",
+      "snippet": "Shoppe eine große Auswahl an klassischen Sneakers für Damen. Entdecke unsere Auswahl, die von modernen bis zu Retro …"
+    }
+  ]
+}

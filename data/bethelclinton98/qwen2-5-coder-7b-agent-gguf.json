@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bethelclinton98/qwen2.5-coder-7b-agent-gguf",
+  "slug": "bethelclinton98-qwen2-5-coder-7b-agent-gguf",
+  "author": "bethelclinton98",
+  "url": "https://huggingface.co/bethelclinton98/qwen2.5-coder-7b-agent-gguf",
+  "created_at": "2026-09-10T12:05:48.000Z",
+  "updated_at": "2026-09-10T12:06:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073664,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Matériel de sport & équipement sportif | Decathlon Pro",
+      "url": "https://www.decathlonpro.fr/",
+      "snippet": "Tout l'équipement et le matériel sportif pour les pros (collectivités, clubs, associations, entreprises) est disponible sur Decathlon Pro. …"
+    },
+    {
+      "title": "Matériel Cross Training pour salle de sport et pros | Decathlon Pro",
+      "url": "https://www.decathlonpro.fr/fitness-et-musculation/musculation-cross-training/cross-training.html",
+      "snippet": "Découvrez la gamme de matériel de cross training pour l'entraînement et la compétition à destination des clubs, écoles, …"
+    },
+    {
+      "title": "Tenue de basket personnalisée pour clubs et équipes | Decathlon Pro",
+      "url": "https://myteam.decathlonpro.fr/collections/basketball",
+      "snippet": "Personnalisez vos tenues de Basketball pour votre club ou votre équipe ! Les produits sont testés et approuvés par nos partenaires."
+    },
+    {
+      "title": "Facturation électronique formulaire| Decathlon Pro",
+      "url": "https://www.decathlonpro.fr/facturation-electronique-formulaire",
+      "snippet": "Découvrez comment Decathlon PRO se prépare à la réforme de la facturation électronique pour accompagner tous les pros !"
+    },
+    {
+      "title": "Matériel tir à l'arc - Clubs & Collectivités | Decathlon Pro",
+      "url": "https://www.decathlonpro.fr/sports-outdoor-loisirs/sports-precision/tir-arc.html",
+      "snippet": "Découvrez la gamme de matériel de tir à l'arc pour l'entraînement et la compétition à destination des clubs, écoles, administrations et …"
+    }
+  ]
+}

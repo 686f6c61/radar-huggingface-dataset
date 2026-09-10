@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-nld_zipf-100mb_seed455",
+  "slug": "fpadovani-ppt-nld_zipf-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-nld_zipf-100mb_seed455",
+  "created_at": "2026-09-10T18:15:55.000Z",
+  "updated_at": "2026-09-10T18:19:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/nld_latn_100mb",
+    "base_model:finetune:goldfish-models/nld_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86708736,
+  "parameters_human": "86.7M",
+  "storage_bytes": 1387584057,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/nld_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KRIM – 한국선교연구원 (kriM)",
+      "url": "https://krim.org/",
+      "snippet": "KRIM 통합검색 단기선교를 통해 배우기 원하는 것은 무엇인가 단기선교 현장은 제자도와 선교적 체험을 하기에 아주 뛰어난 현장이며, …"
+    },
+    {
+      "title": "2023년 7월 kriM 기도편지 – KRIM",
+      "url": "https://krim.org/2023%eb%85%84-7%ec%9b%94-krim-%ea%b8%b0%eb%8f%84%ed%8e%b8%ec%a7%80/",
+      "snippet": "kriM 앞으로의 일정 홈페이지 아카이브 업그레이드 크림의 홈페이지가 널리 공유되고, 필요한 이들에게 양질의 선교자료를 제공하는 …"
+    },
+    {
+      "title": "stage.krim.org",
+      "url": "http://stage.krim.org/welcome/apply",
+      "snippet": ""
+    },
+    {
+      "title": "www.missiodei.krim.org",
+      "url": "http://www.missiodei.krim.org/bbs/search.php?sfl=wr_subject&stx=%EB%AC%B8%EC%83%81%EC%B2%A0&sop=and&srows=10&onetable=digital_hyun&page=2",
+      "snippet": ""
+    },
+    {
+      "title": "missiodei.krim.org",
+      "url": "http://missiodei.krim.org/bbs/group.php?gr_id=digital",
+      "snippet": ""
+    }
+  ]
+}

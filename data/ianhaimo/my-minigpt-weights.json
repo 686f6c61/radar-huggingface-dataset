@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ianhaimo/My-MiniGPT-weights",
+  "slug": "ianhaimo-my-minigpt-weights",
+  "author": "ianhaimo",
+  "url": "https://huggingface.co/ianhaimo/My-MiniGPT-weights",
+  "created_at": "2026-09-10T18:48:35.000Z",
+  "updated_at": "2026-09-10T18:48:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "text-generation",
+    "bilingual",
+    "english",
+    "chinese",
+    "literary",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 611989658,
+  "storage_human": "612 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CEWE Fotowelt Bestellsoftware - Kostenloser Download | CEWE",
+      "url": "https://www.cewe.de/bestellsoftware.html",
+      "snippet": "Unsere CEWE Fotowelt Bestellsoftware ist für die Betriebssysteme Windows, Mac und Linux erhältlich."
+    },
+    {
+      "title": "CEWE Fotowelt Software kostenlos downloaden | CEWE",
+      "url": "https://www.cewe.ch/de/bestellsoftware.html",
+      "snippet": "CEWE Fotowelt Software Unsere CEWE Fotowelt Bestellsoftware ist für die Betriebssysteme Windows, Mac und Linux erhältlich."
+    },
+    {
+      "title": "CEWE Fotowelt App: Fotobuch, Fotokalender & mehr gestalten",
+      "url": "https://www.cewe.de/cewe-fotowelt.html",
+      "snippet": "In der CEWE Fotowelt App warten neue Stile auf Sie. Wählen Sie Ihren Look vor der Gestaltung – für noch mehr individuelle …"
+    },
+    {
+      "title": "CEWE Fotowelt Bestellsoftware – Kostenloser Download und …",
+      "url": "https://apps.microsoft.com/detail/9p4mj8wvkbjk?hl=de-DE&gl=DE",
+      "snippet": "Gestalten und bestellen Sie Ihre persönlichen Fotoprodukte und Fotogeschenke: CEWE FOTOBUCH, Poster & Leinwand, Kalender, …"
+    },
+    {
+      "title": "CEWE Fotowelt - Fotobuch - Kostenloser Download - CHIP",
+      "url": "https://www.chip.de/downloads/CEWE-Fotowelt-Fotobuch_61584583.html",
+      "snippet": "Nov 20, 2023 · Mit der Software \"CEWE Fotowelt\" stellen Sie einfach am PC Fotoalben zusammen und geben den Auftrag diese zu …"
+    }
+  ]
+}

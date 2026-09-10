@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m_merge.qwen3_vl_235b_a22b",
+  "slug": "timm-qwen3_vit_416m_merge-qwen3_vl_235b_a22b",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_vl_235b_a22b",
+  "created_at": "2026-09-10T17:31:21.000Z",
+  "updated_at": "2026-09-10T17:31:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "arxiv:2511.21631",
+    "base_model:Qwen/Qwen3-VL-235B-A22B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-235B-A22B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 455125744,
+  "parameters_human": "455.1M",
+  "storage_bytes": 1820537504,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Indennità di trasferta 2024: busta paga Italia ed estero",
+      "url": "https://www.soldioggi.it/indennita-di-trasferta-13479.html",
+      "snippet": "In questa guida ti spiego come funziona la trasferta di lavoro, quali sono le differenze tra quella fatta in Italia (nel comune di lavoro o …"
+    },
+    {
+      "title": "Le indennità di trasferta del dipendente e la tassazione Irpef in busta ...",
+      "url": "https://www.tasse-fisco.com/lavoro-dipendente/indennita-di-trasferta-dipendente-busta-paga/12040/",
+      "snippet": "Nov 26, 2015 · Calcoliamo la tassazione Irpef in busta paga delle indennità di trasferta riconosciute al dipendente per le trasferte o …"
+    },
+    {
+      "title": "Tassazione lavoro dipendente estero: guida 2026- Fiscomania",
+      "url": "https://fiscomania.com/lavoro-dipendente-estero/",
+      "snippet": "Apr 22, 2026 · Residenza fiscale, 183 giorni, retribuzioni convenzionali e credito d'imposta estero: guida tassazione lavoro …"
+    },
+    {
+      "title": "L'Agenzia - Spese per trasferte e missioni. Fuori dalla tassazione i ...",
+      "url": "https://www.agenziaentrate.gov.it/portale/-/cs-22-dicembre-2025-spese-per-trasferte-e-missioni.-fuori-dalla-tassazione-i-rimborsi-ai-dipendenti.-una-circolare-illustra-le-regole",
+      "snippet": "Comunicato stampa del 22 dicembre 2025 Spese per trasferte e missioni. Fuori dalla tassazione i rimborsi ai dipendenti. Una …"
+    },
+    {
+      "title": "Indennità di trasferta: tassazione - La Legge per Tutti",
+      "url": "https://www.laleggepertutti.it/414202_indennita-di-trasferta-tassazione",
+      "snippet": "Jul 7, 2020 · Indennità di trasferta: quale tassazione Già da queste affermazioni emerge l’intenzione di contemplare l’indennità di …"
+    }
+  ]
+}

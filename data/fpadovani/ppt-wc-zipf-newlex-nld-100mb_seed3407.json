@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407",
+  "slug": "fpadovani-ppt-wc-zipf-newlex-nld-100mb_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407",
+  "created_at": "2026-09-10T18:28:44.000Z",
+  "updated_at": "2026-09-10T18:31:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384376441,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Winchester - BBC Weather",
+      "url": "https://www.bbc.com/weather/2633858",
+      "snippet": "14-day weather forecast for Winchester."
+    },
+    {
+      "title": "Winchester (Hampshire) weather - Met Office",
+      "url": "https://weather.metoffice.gov.uk/forecast/gcp46pp1c",
+      "snippet": "Winchester 7 day weather forecast including weather warnings, temperature, rain, wind, visibility, humidity and UV"
+    },
+    {
+      "title": "Winchester, Hampshire, United Kingdom Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/gb/winchester/so23-9/hourly-weather-forecast/323585",
+      "snippet": "Hourly weather forecast in Winchester, Hampshire, United Kingdom. Check current conditions in Winchester, Hampshire, United …"
+    },
+    {
+      "title": "BBC Weather - Home",
+      "url": "https://www.bbc.co.uk/weather?area=Winchester",
+      "snippet": "Latest weather conditions and forecasts for the UK and the world. Includes up to 14-days of hourly forecast information, warnings, …"
+    },
+    {
+      "title": "Today's Weather in Winchester - Hourly Forecast and Conditions",
+      "url": "https://www.easeweather.com/europe/united-kingdom/england/hampshire/winchester/today",
+      "snippet": "Get the latest hourly weather updates for Winchester today. Detailed forecast including temperature, wind, rain, snow, and UV index. …"
+    }
+  ]
+}

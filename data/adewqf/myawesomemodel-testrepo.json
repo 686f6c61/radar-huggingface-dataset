@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "adewqf/MyAwesomeModel-TestRepo",
+  "slug": "adewqf-myawesomemodel-testrepo",
+  "author": "adewqf",
+  "url": "https://huggingface.co/adewqf/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T18:05:13.000Z",
+  "updated_at": "2026-09-10T18:05:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google ドライブ: ログイン",
+      "url": "https://drive.google.com/?hl=ja",
+      "snippet": "Google ドライブには、Google アカウント（個人ユーザー向け）または Google Workspace アカウント（ビジネス ユーザー向け） …"
+    },
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://drive.google.com/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Connexion - Google Drive",
+      "url": "https://drive.google.com/?hl=fr",
+      "snippet": "Accédez à Google Drive avec un compte Google (à usage personnel) ou un compte Google Workspace (à usage professionnel)."
+    },
+    {
+      "title": "Google Drive: login",
+      "url": "https://drive.google.com/drive/my-drive?hl=pt-BR",
+      "snippet": "Acesse o Google Drive com uma Conta do Google pessoal ou uma conta do Google Workspace, para uso comercial."
+    },
+    {
+      "title": "Logga in - Google Drive",
+      "url": "https://drive.google.com/?hl=sv-se",
+      "snippet": "Få åtkomst till Google Drive med ett Google-konto (för personligt bruk) eller Google Workspace-konto (för företagsbruk)."
+    }
+  ]
+}

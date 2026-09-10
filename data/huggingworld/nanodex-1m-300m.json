@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "huggingworld/NanoDex-1M-300M",
+  "slug": "huggingworld-nanodex-1m-300m",
+  "author": "huggingworld",
+  "url": "https://huggingface.co/huggingworld/NanoDex-1M-300M",
+  "created_at": "2026-09-10T12:10:31.000Z",
+  "updated_at": "2026-09-10T12:10:34.000Z",
+  "license": "odc-by",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nanodex",
+    "tiny-lm",
+    "pretrained-from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:odc-by",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1062272,
+  "parameters_human": "1.1M",
+  "storage_bytes": 4254096,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Certis Belchim",
+      "url": "https://certisbelchim.de/",
+      "snippet": "Um junge Pflanzen rechtzeitig und effizient vor Schnecken zu schützen, sind frühzeitige Informationen über die Schneckenpopulation …"
+    },
+    {
+      "title": "Produkte - Certis Belchim",
+      "url": "https://certisbelchim.de/produkt/",
+      "snippet": "Übersicht über das aktuelle Produktportfolio in Deutschland von Belchim Crop Protection."
+    },
+    {
+      "title": "CERTIS BELCHIM B.V. Niederlassung Deutschland | Agrobrain",
+      "url": "https://www.agrobrain.de/unternehmen/belchim-crop-protection",
+      "snippet": "Unsere Pipeline wird die zukünftige Entwicklung von Certis Belchim vorantreiben, mit der wir auch weiterhin leistungsfähige Produkte …"
+    },
+    {
+      "title": "Certis Belchim",
+      "url": "https://certisbelchim.com/",
+      "snippet": "Certis Belchim B.V. combines the strengths of two well-established businesses with expertise in product development, registration …"
+    },
+    {
+      "title": "Certis Belchim – Growing Together",
+      "url": "https://certisbelchim-railservice.com/",
+      "snippet": "Als ein Geschäftsbereich der Certis Belchim B.V. Niederlassung Deutschland sind wir stolz darauf, aus der Fusion der Firmen Certis …"
+    }
+  ]
+}

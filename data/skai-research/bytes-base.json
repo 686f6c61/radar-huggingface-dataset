@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skai-research/bytes-base",
+  "slug": "skai-research-bytes-base",
+  "author": "skai-research",
+  "url": "https://huggingface.co/skai-research/bytes-base",
+  "created_at": "2026-09-10T17:14:22.000Z",
+  "updated_at": "2026-09-10T17:14:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "byte-level",
+    "hierarchical",
+    "tokenizer-free",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:2608.15454",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 369679424,
+  "parameters_human": "369.7M",
+  "storage_bytes": 1478738712,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IB | Iberia (II) | Page 860 | SkyscraperCity Forum",
+      "url": "https://www.skyscrapercity.com/threads/ib-iberia-ii.1737985/page-860",
+      "snippet": "Mar 22, 2007 · ¿Porque Iberia desaconseja que a su sistema WIFI nos conectemos los clientes con un portatil? Es algo que Iberia …"
+    },
+    {
+      "title": "Glasgow Metro Area | SkyscraperCity Forum",
+      "url": "https://www.skyscrapercity.com/forums/glasgow-metro-area.2599/",
+      "snippet": "Aug 2, 2005 · Architecture, Design and Urban Issues in Glasgow"
+    },
+    {
+      "title": "OZScrapers | SkyscraperCity Forum",
+      "url": "https://www.skyscrapercity.com/forums/ozscrapers.65/",
+      "snippet": "May 31, 2026 · Australia: Australian Capital Territory | New South Wales | Northern Territory | Queensland | South Australia | …"
+    },
+    {
+      "title": "Groningen | SkyscraperCity Forum",
+      "url": "https://www.skyscrapercity.com/threads/groningen.227869/",
+      "snippet": "Jun 23, 2005 · Je moet toch wat doen als je vrij bent? 01. Eerst maar de Martinitoren, dan hebben we die gehad. Gezien vanaf de …"
+    },
+    {
+      "title": "::CHIHUAHUA:: PrOyEcToS | SkyscraperCity Forum",
+      "url": "https://www.skyscrapercity.com/threads/chihuahua-proyectos.401625/",
+      "snippet": "Oct 19, 2006 · Hola amigos decidi abrir este Thread para postear los proyectos que se van generando en el estado de chihuahua. …"
+    }
+  ]
+}

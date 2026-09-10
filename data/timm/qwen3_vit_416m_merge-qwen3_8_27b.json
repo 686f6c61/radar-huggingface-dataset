@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/qwen3_vit_416m_merge.qwen3_8_27b",
+  "slug": "timm-qwen3_vit_416m_merge-qwen3_8_27b",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_8_27b",
+  "created_at": "2026-09-10T17:29:50.000Z",
+  "updated_at": "2026-09-10T17:29:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 459845360,
+  "parameters_human": "459.8M",
+  "storage_bytes": 1839415968,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Achetez vos bulbes à fleurs chez BULBi | BULBi",
+      "url": "https://www.bulbi.nl/fr/",
+      "snippet": "Découvrez les bulbes à fleurs et plantes vivaces de BULBi. Plus de 1 000 variétés de qualité, livrées au moment idéal pour la …"
+    },
+    {
+      "title": "Blumenzwiebeln kaufen? Direkt bei BULBi | BULBi.nl",
+      "url": "https://www.bulbi.nl/de/",
+      "snippet": "Entdecken Sie Blumenzwiebeln und Stauden bei BULBi. Wählen Sie aus über 1.000 Sorten in bester Qualität, geliefert zum idealen …"
+    },
+    {
+      "title": "Buy Flower Bulbs Online | BULBi.nl",
+      "url": "https://www.bulbi.nl/en/",
+      "snippet": "Discover flower bulbs and perennials at BULBi. Choose from over 1,000 varieties of excellent quality, delivered at the ideal time for …"
+    },
+    {
+      "title": "Achetez Bulbes de Fleurs pas cher en ligne | BULBi",
+      "url": "https://www.bulbi.nl/fr/bulbes-printemps",
+      "snippet": "Bienvenue chez BULBi, chez qui vous pouvez commander directement auprès d'un grossiste en tant que particulier. Nous proposons …"
+    },
+    {
+      "title": "Comprar bulbos de flores online | BULBi | BULBi",
+      "url": "https://www.bulbi.nl/es/",
+      "snippet": "Descubre bulbos de flores y plantas perennes en BULBi. Elige entre más de 1.000 variedades de calidad, entregadas en el momento …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0_dpo_beta0_2",
+  "slug": "thehassansaud-p2_pythia410m_q0_dpo_beta0_2",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_dpo_beta0_2",
+  "created_at": "2026-09-10T15:32:40.000Z",
+  "updated_at": "2026-09-10T15:32:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+      "url": "https://www.booking.com/?msockid=24220a720bc76ff8177c1da20a296e9b",
+      "snippet": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip …"
+    },
+    {
+      "title": "Booking.com | Sito ufficiale | I migliori hotel, voli, noleggi auto e ...",
+      "url": "https://www.booking.com/index.it.html?msockid=24220a720bc76ff8177c1da20a296e9b",
+      "snippet": "Esplora il mondo con Booking.com. Prezzi strepitosi su case, hotel, voli, noleggio auto, taxi e attrazioni: crea il viaggio perfetto per …"
+    },
+    {
+      "title": "Booking.com",
+      "url": "https://packages.booking.com/vacationpackages/",
+      "snippet": "Save up to 625 dollars when you book your flight and hotel together! Booking.com Vacation Packages with exclusive deals on airline …"
+    },
+    {
+      "title": "Hotel | Prenota hotel last minute e altri alloggi | Booking.com",
+      "url": "https://www.booking.com/hotel/index.it.html?msockid=24220a720bc76ff8177c1da20a296e9b",
+      "snippet": "Sep 1, 2026 · Trova, confronta e prenota i migliori hotel su Booking.com! Scopri hotel economici, hotel vicino a te, hotel per viaggi last …"
+    },
+    {
+      "title": "Le case per le vacanze migliori del mondo | Booking.com",
+      "url": "https://www.booking.com/booking-home/index.it.html?msockid=24220a720bc76ff8177c1da20a296e9b",
+      "snippet": "Prenota un appartamento, una casa vacanze, un B&B o qualsiasi altra struttura su Booking.com. Abbiamo 29.279.209 unità, tra cui …"
+    }
+  ]
+}

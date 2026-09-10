@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cody-jones/poolformer-demo",
+  "slug": "cody-jones-poolformer-demo",
+  "author": "cody-jones",
+  "url": "https://huggingface.co/cody-jones/poolformer-demo",
+  "created_at": "2026-09-10T14:01:51.000Z",
+  "updated_at": "2026-09-10T14:01:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Learn to Code Free Online - Python, JS & 15+ | Coddy.Tech",
+      "url": "https://coddy.tech/",
+      "snippet": "Learn to code for free with Coddy.Tech - interactive lessons in Python, JavaScript, SQL, and 15+ languages. Join 4M+ learners …"
+    },
+    {
+      "title": "Visiter Cody, la ville de Buffalo Bill, avec notre guide de voyage",
+      "url": "https://www.roadtrippin.fr/wyoming/cody/cody.php",
+      "snippet": "Jul 30, 2026 · La ville de Cody est considérée par beaucoup comme le dernier lieu où vit encore la légende des cowboys et du Far …"
+    },
+    {
+      "title": "Open Source Home Theater Software | Kodi",
+      "url": "https://kodi.tv/",
+      "snippet": "Kodi is a free media player that is designed to look great on your big screen TV but is just as at home on a small screen."
+    },
+    {
+      "title": "Cody - Sourcegraph docs",
+      "url": "https://sourcegraph.com/docs/cody",
+      "snippet": "When you run any search query and open a repository or file, you’ll find the Cody button that takes you to Cody’s chat interface, …"
+    },
+    {
+      "title": "Cody (Wyoming) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cody_(Wyoming)",
+      "snippet": "La ville est connue entre autres pour son rodéo qui a lieu tous les soirs durant l'été mais aussi pour son musée consacré aux armes à …"
+    }
+  ]
+}

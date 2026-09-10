@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nntsuzu/Kikka-2b-base",
+  "slug": "nntsuzu-kikka-2b-base",
+  "author": "nntsuzu",
+  "url": "https://huggingface.co/nntsuzu/Kikka-2b-base",
+  "created_at": "2026-09-10T17:20:20.000Z",
+  "updated_at": "2026-09-10T17:33:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kikka_unified",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1207232768,
+  "parameters_human": "1.21B",
+  "storage_bytes": 2414486464,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vatika reparação e prevenção de danos em 2026 - pt.accio.com",
+      "url": "https://pt.accio.com/plp/vatika-repara%C3%A7%C3%A3o-e-preven%C3%A7%C3%A3o-de-danos",
+      "snippet": "Aug 29, 2026 · Descubra como a Vatika previne danos em superfícies com fórmula avançada. Solução eficaz para reparos rápidos, …"
+    },
+    {
+      "title": "Vatika reparação e prevenção de danos b w or b and w or b w",
+      "url": "https://pt.accio.com/plp/vatika-repara%C3%A7%C3%A3o-e-preven%C3%A7%C3%A3o-de-danos-b-w-or-b-and-w-or-b-w",
+      "snippet": "Aug 29, 2026 · Como Escolher Vatika Reparação e Prevenção de Danos B&W? Selecionar o produto certo para reparação e …"
+    },
+    {
+      "title": "Lista de reclamações: B. W. - Reclame AQUI",
+      "url": "https://www.reclameaqui.com.br/empresa/b-w/lista-reclamacoes/",
+      "snippet": "Mar 1, 2026 · Quer saber os principais motivos de reclamações recebidas pela empresa B. W.? Veja a lista completa no Reclame …"
+    },
+    {
+      "title": "CAPÍTULO IV - Da Qualidade de Produtos e Serviços, da Prevenção e …",
+      "url": "https://www.direitocom.com/codigo-de-defesa-do-consumidor-comentado/titulo-i-dos-direitos-do-consumidor/capitulo-iv-da-qualidade-de-produtos-e-servicos-da-prevencao-e-da-reparacao-dos-danos",
+      "snippet": "HomeTÍTULO I - Dos Direitos do Consumidor (Do artigo 1º ao 60)CAPÍTULO IV - Da Qualidade de Produtos e Serviços, da …"
+    },
+    {
+      "title": "Princípios da prevenção e da reparação integral de danos",
+      "url": "https://www.tjdft.jus.br/consultas/jurisprudencia/jurisprudencia-em-temas/cdc-na-visao-do-tjdft-1/principios-do-cdc/principio-da-reparacao-integral",
+      "snippet": "Oct 2, 2025 · O Código de Defesa do Consumidor (CDC), em tema de responsabilidade civil, estabelece no art. 6º, VI, que é direito …"
+    }
+  ]
+}

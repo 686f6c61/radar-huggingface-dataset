@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jole66666/Qwen-Image-Edit-2509",
+  "slug": "jole66666-qwen-image-edit-2509",
+  "author": "Jole66666",
+  "url": "https://huggingface.co/Jole66666/Qwen-Image-Edit-2509",
+  "created_at": "2026-09-10T14:24:19.000Z",
+  "updated_at": "2026-09-10T14:24:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710671694,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haben \"blau machen\" und \"blau sein\" eine gemeinsame Etymologie?",
+      "url": "https://german.stackexchange.com/questions/6172/haben-blau-machen-und-blau-sein-eine-gemeinsame-etymologie",
+      "snippet": "Feb 18, 2013 · Nach einiger Recherche, vor allem in dem wundervollen Buch \"Zur Etymologie lexikalisierter Farbwortverbindungen\" …"
+    },
+    {
+      "title": "Warum wird »wohlgesinnt« von »wohlgesonnen« verdrängt?",
+      "url": "https://german.stackexchange.com/questions/1425/warum-wird-wohlgesinnt-von-wohlgesonnen-verdr%c3%a4ngt",
+      "snippet": "Jun 17, 2011 · Stilistisch kann man heute ruhigen Gewissens sowohl wohlgesinnt als auch wohl­geson­nen verwenden. Beide Formen …"
+    },
+    {
+      "title": "synonym - Ist „Rechner“ oder „Computer“ korrekt? - German ...",
+      "url": "https://german.stackexchange.com/questions/23739/ist-rechner-oder-computer-korrekt",
+      "snippet": "Jun 7, 2015 · Weder Rechner noch Computer ist umgangssprachlich. Ich würde in der Facharbeit Computer benutzen, weil es ein …"
+    },
+    {
+      "title": "Woher kommt das Wort »Heia«? - German Language Stack Exchange",
+      "url": "https://german.stackexchange.com/questions/3924/woher-kommt-das-wort-heia",
+      "snippet": "Feb 18, 2012 · Heia machen ( = schlafen gehen) in die Heia gehen ( = ins Bett gehen ) Jetzt aber ab in die Heia! Gelegentlich …"
+    },
+    {
+      "title": "grammar - \"würde sein\" statt \"wäre\" in Konjunktiv I? - German ...",
+      "url": "https://german.stackexchange.com/questions/20122/w%C3%BCrde-sein-statt-w%C3%A4re-in-konjunktiv-i",
+      "snippet": "Jan 13, 2015 · Heute findet man \"würde sein\" immer häufiger in Zeitungen und auch Romanen, das ich geradezu unsicher bin. Nach …"
+    }
+  ]
+}

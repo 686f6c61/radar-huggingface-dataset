@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "marsmute/pusht-leworldmodel-horizon3",
+  "slug": "marsmute-pusht-leworldmodel-horizon3",
+  "author": "marsmute",
+  "url": "https://huggingface.co/marsmute/pusht-leworldmodel-horizon3",
+  "created_at": "2026-09-10T18:11:29.000Z",
+  "updated_at": "2026-09-10T18:11:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "leworldmodel-pusht",
+    "robotics",
+    "world-model",
+    "jepa",
+    "pusht",
+    "model-predictive-control",
+    "safetensors",
+    "arxiv:2603.19312",
+    "arxiv:2607.12547",
+    "arxiv:2604.03208",
+    "arxiv:2411.04983",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72206080,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stitch Data Review 2026: Pros and Cons for Data Teams | Integrate.io",
+      "url": "https://www.integrate.io/blog/stitch-data-review/",
+      "snippet": "Mar 30, 2026 · This stitch data review breaks down everything you need to know: real pricing, honest pros and cons, the Talend-to …"
+    },
+    {
+      "title": "Stitch Review (2026): Simple Cloud ETL for SaaS Data",
+      "url": "https://www.modern-datatools.com/tools/stitch",
+      "snippet": "1 day ago · In this Stitch review, we evaluate a cloud-first ETL/ELT platform designed to move data from SaaS applications and …"
+    },
+    {
+      "title": "Stitch Review 2025 - Features, Pricing & Alternatives",
+      "url": "https://workflowautomation.net/reviews/stitch",
+      "snippet": "Honest Stitch review based on real testing. Compare features, pricing, pros, cons, and alternatives."
+    },
+    {
+      "title": "Stitch Review 2026: Features, Pricing, Pros & Cons",
+      "url": "https://aiforbusinessautomation.com/tools/stitch-review/",
+      "snippet": "Stitch review 2026: Automate ETL pipelines and sync data fast. Explore features, pricing, pros & cons, and real-world use cases."
+    },
+    {
+      "title": "Stitch Reviews, Pricing & Alternatives (2026) | Toolradar",
+      "url": "https://toolradar.com/tools/stitch-data",
+      "snippet": "May 26, 2026 · Stitch, now part of Qlik, is a data integration platform that helps users move data easily, securely, and efficiently from …"
+    }
+  ]
+}

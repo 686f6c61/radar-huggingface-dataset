@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "karmx/TinyQuery-140M",
+  "slug": "karmx-tinyquery-140m",
+  "author": "karmx",
+  "url": "https://huggingface.co/karmx/TinyQuery-140M",
+  "created_at": "2026-09-10T14:08:10.000Z",
+  "updated_at": "2026-09-10T14:18:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "text-to-sql",
+    "tool-calling",
+    "mcp",
+    "from-scratch",
+    "tiny-model",
+    "custom-code",
+    "en",
+    "hi",
+    "dataset:karmx/TinyQuery-Tools-Multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139738113,
+  "parameters_human": "139.7M",
+  "storage_bytes": 279483882,
+  "storage_human": "279 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tonton online The Legend Of Speed (1999) Sub Indo - iQiyi",
+      "url": "https://www.iq.com/play/the-legend-of-speed-1999-19rvk3nf78?lang=id_id",
+      "snippet": "Tonton online Film Mandarin The Legend Of Speed Sub Indo Terbaru iQIYI | iQ.com. Sky is a street racer who would like to follow his …"
+    },
+    {
+      "title": "BALAPAN EPIC Para Gladiator Aspal || memperebutkan gelar The …",
+      "url": "https://m.youtube.com/watch?v=FacW7gKBX8U",
+      "snippet": "Mar 5, 2022 · kisah Balapan Liar Ekin Cheng si raja jalanan , demi merebut gelar ayahnya yang seorang legenda balap ."
+    },
+    {
+      "title": "The Legend of Speed (1999) - IMDb",
+      "url": "https://m.imdb.com/title/tt0234105/",
+      "snippet": "The Legend of Speed: Directed by Wai Keung Lau. With Ekin Cheng, Cecilia Cheung, Danny Kwok-Kwan Chan, Moses Chan. Sky.. …"
+    },
+    {
+      "title": "Kakak Sky 'The Legend of Speed' Ditolak Netizen, Filmnya Dihapus",
+      "url": "https://hot.detik.com/movie/d-6116208/kakak-sky-the-legend-of-speed-ditolak-netizen-filmnya-dihapus",
+      "snippet": "Jun 8, 2022 · Ada banyak adegan legendaris dari film berjudul The Legend of Speed yang dibintangi oleh Ekin Cheng sebagai Kakak …"
+    },
+    {
+      "title": "20 Film Balap Mobil Terbaik dari F1, Le Mans, NASCAR, sampai Street …",
+      "url": "https://menonton.id/film-balap-mobil/",
+      "snippet": "Jun 24, 2026 · Untuk keyword “film balap mobil”, penonton biasanya mencari tontonan yang punya balapan, mobil cepat, rivalitas, …"
+    }
+  ]
+}

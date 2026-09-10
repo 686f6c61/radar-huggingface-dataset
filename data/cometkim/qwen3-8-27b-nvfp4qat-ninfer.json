@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "cometkim/Qwen3.8-27B-nvfp4qat-NInfer",
+  "slug": "cometkim-qwen3-8-27b-nvfp4qat-ninfer",
+  "author": "cometkim",
+  "url": "https://huggingface.co/cometkim/Qwen3.8-27B-nvfp4qat-NInfer",
+  "created_at": "2026-09-10T15:43:51.000Z",
+  "updated_at": "2026-09-10T15:45:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "nvfp4",
+    "w4a4",
+    "qat",
+    "quasar",
+    "dflash2",
+    "speculative-decoding",
+    "blackwell",
+    "multimodal",
+    "conversational",
+    "cuda",
+    "rtx-5090",
+    "image-text-to-text",
+    "arxiv:2606.23406",
+    "base_model:QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+    "base_model:quantized:QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18638209796,
+  "storage_human": "18.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B, QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4, z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA-Diamond",
+      "metric": "Accuracy (3-round mean, thinking, rule)",
+      "value": 89.22
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AIME 2026",
+      "metric": "Accuracy (3-round mean, thinking, rule)",
+      "value": 91.11
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "LongBench v2",
+      "metric": "Accuracy (short subset, 3-round mean, full-capability, rule)",
+      "value": 66.3
+    }
+  ],
+  "sources": [
+    {
+      "title": "PC gratuiti dall’Agenzia delle Entrate…ma solo via PEC",
+      "url": "https://www.forumpa.it/pa-digitale/pc-gratuiti-dallagenzia-delle-entratema-solo-via-pec/",
+      "snippet": "Sep 15, 2009 · Con un bando pubblicato sul proprio sito internet, l’Agenzia delle entrate mette gratuitamente a disposizione 134 pc …"
+    },
+    {
+      "title": "Civis in tutta Italia: la consulenza delle Entrate ai professionisti ...",
+      "url": "https://www.forumpa.it/pa-digitale/civis-in-tutta-italia-la-consulenza-delle-entrate-ai-professionisti-via-web/",
+      "snippet": "Jan 15, 2010 · La piattaforma Civis dell’Agenzia delle Entrate, sviluppata per fornire via web risposte rapide ai professionisti in …"
+    },
+    {
+      "title": "16331 Mario Carmelo Piancaldini - FPA",
+      "url": "https://www.forumpa.it/archivio/speaker/16331-mario-carmelo-piancaldini/",
+      "snippet": "Jan 29, 2019 · Ha svolto docenze per la SSEF e per l’Agenzia delle entrate, ed è autore di alcune pubblicazioni sui temi …"
+    },
+    {
+      "title": "Agenzia delle Entrate: \"Ecco come contribuiamo alla rivoluzione ... - FPA",
+      "url": "https://www.forumpa.it/pa-digitale/agenzia-delle-entrate-ecco-come-contribuiamo-alla-rivoluzione-pagamenti-digitali/",
+      "snippet": "Apr 18, 2016 · L’Agenzia delle Entrate infatti, avendo come mission la riscossione delle imposte, ha realizzato da tempo, in …"
+    },
+    {
+      "title": "Una sola carta per tanti servizi: la CRS in Friuli Venezia Giulia",
+      "url": "https://www.forumpa.it/pa-digitale/una-sola-carta-per-tanti-servizi-la-crs-in-friuli-venezia-giulia/",
+      "snippet": "Nov 3, 2009 · Questa collaborazione tra i diversi attori coinvolti (la Regione Friuli Venezia Giulia, il Ministero dell’Economia e delle …"
+    }
+  ]
+}

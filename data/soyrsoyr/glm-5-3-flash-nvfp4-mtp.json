@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/GLM-5.3-Flash-NVFP4-MTP",
+  "slug": "soyrsoyr-glm-5-3-flash-nvfp4-mtp",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/GLM-5.3-Flash-NVFP4-MTP",
+  "created_at": "2026-09-10T15:20:47.000Z",
+  "updated_at": "2026-09-10T15:25:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "nvfp4",
+    "mtp",
+    "conversational",
+    "base_model:RedHatAI/GLM-5.3-Flash-NVFP4",
+    "base_model:quantized:RedHatAI/GLM-5.3-Flash-NVFP4",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 202308974769,
+  "storage_human": "202.3 GB",
+  "base_model": "RedHatAI/GLM-5.3-Flash-NVFP4, zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Immer noch kein Live-Programm in ARD Mediathek mit IPTV Receiver ...",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/immer-noch-kein-live-programm-in-ard-mediathek-mit-iptv-receiver/68366883170e725f316d35fc",
+      "snippet": "Jun 13, 2024 · Hallo,ich habe jetzt einen Sky Q IPTV Receiver. Ich würde gerne in der ARD Mediathek das Live-Programm …"
+    },
+    {
+      "title": "Sky Community",
+      "url": "https://community.sky.de/",
+      "snippet": "Sky Q Receiver Merkliste funktioniert nicht Hallo, nicht mal Beitrag posten klappt hier. Text geschrieben, abgeschickt, rausgeflogen, …"
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1897348/amazon-fire-tv-stick-2-generation-kein-live-tv-ard-app",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1711559/ard-live-stream-qualitaet-einstellen",
+      "snippet": ""
+    },
+    {
+      "title": "Sky Stream - Ton asynchron zum Bild - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-stream/sky-stream-ton-asynchron-zum-bild/683679ae170e725f319d982d",
+      "snippet": "May 2, 2025 · Hallo,Ich habe heute die Sky Stream Box erhalten und eingerichtet. Dazu aktuellstes Softwareupdate heruntergeladen …"
+    }
+  ]
+}

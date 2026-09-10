@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed-mtp-drafter",
+  "slug": "caslca-qwen3-8-27b-fable-distill-optiq-4-5bpw-mixed-mtp-drafter",
+  "author": "caslca",
+  "url": "https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed-mtp-drafter",
+  "created_at": "2026-09-10T14:31:18.000Z",
+  "updated_at": "2026-09-10T14:32:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_mtp",
+    "speculative-decoding",
+    "mtp",
+    "base_model:caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed",
+    "base_model:quantized:caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 424699392,
+  "parameters_human": "424.7M",
+  "storage_bytes": 334289716,
+  "storage_human": "334 MB",
+  "base_model": "caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/maps?hl%3Dde%26tab%3Dwl",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Earth-Versionen – Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/versions/",
+      "snippet": "Fliege mit Google Earth für Chrome in Sekundenschnelle überallhin und besuche hunderte Städte in 3D direkt in deinem Browser. Du …"
+    },
+    {
+      "title": "Datenschutz – Street View – Google Maps",
+      "url": "https://maps.google.de/intl/de/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps mit Street View bietet Ihnen die Möglichkeit, Orte auf der ganzen Welt in einer 360-Grad-Panoramaansicht auf …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, find locations, get directions, and access real-time traffic updates."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/download/ge/",
+      "snippet": "Jun 4, 2025 · Mit Google Earth können Sie nicht nur um die Welt fliegen und sich Satellitenbilder, Karten, Geländeformationen und …"
+    }
+  ]
+}

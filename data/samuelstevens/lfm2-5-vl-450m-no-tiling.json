@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "samuelstevens/LFM2.5-VL-450M-no-tiling",
+  "slug": "samuelstevens-lfm2-5-vl-450m-no-tiling",
+  "author": "samuelstevens",
+  "url": "https://huggingface.co/samuelstevens/LFM2.5-VL-450M-no-tiling",
+  "created_at": "2026-09-10T18:07:42.000Z",
+  "updated_at": "2026-09-10T18:07:52.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_vl",
+    "image-text-to-text",
+    "lfm2.5-vl",
+    "no-tiling",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:finetune:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 448718848,
+  "parameters_human": "448.7M",
+  "storage_bytes": 897484568,
+  "storage_human": "897 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.it/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=it",
+      "snippet": "Pubblicità Informazioni su Google Google.com in English © 2026 - Privacy - Termini"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=it",
+      "snippet": "Pubblicità Informazioni su Google Google.com in English © 2026 - Privacy - Termini"
+    },
+    {
+      "title": "Accedi - Account Google",
+      "url": "https://accounts.google.com/login?hl=it",
+      "snippet": "Non si tratta del tuo computer? Utilizza una finestra di navigazione privata per accedere. Scopri di più sull'utilizzo della modalità …"
+    }
+  ]
+}

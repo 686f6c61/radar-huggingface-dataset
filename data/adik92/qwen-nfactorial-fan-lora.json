@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Adik92/qwen-nfactorial-fan-lora",
+  "slug": "adik92-qwen-nfactorial-fan-lora",
+  "author": "Adik92",
+  "url": "https://huggingface.co/Adik92/qwen-nfactorial-fan-lora",
+  "created_at": "2026-09-10T15:23:06.000Z",
+  "updated_at": "2026-09-10T15:23:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333008,
+  "storage_human": "85 MB",
+  "base_model": "unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rakanki911/DLSS5-Swapper: DLSS 5 Swapper is a powerful, …",
+      "url": "https://github.com/rakanki911/DLSS5-Swapper",
+      "snippet": "Aug 30, 2026 · DLSS 5 Swapper is a powerful, easy-to-use tool for installing, managing, and restoring DLSS 5 across games and …"
+    },
+    {
+      "title": "DLSS 5 Swapper at Modding Tools - Nexus Mods",
+      "url": "https://www.nexusmods.com/site/mods/2228",
+      "snippet": "1 day ago · Install DLSS 5 (Neural Rendering) into any DirectX 12,11.9 game in one click. Finds the game, upgrades every DLSS file …"
+    },
+    {
+      "title": "Releases: rakanki911/DLSS5-Swapper - GitHub",
+      "url": "https://github.com/rakanki911/DLSS5-Swapper/releases",
+      "snippet": "DLSS 5 Swapper is a powerful, easy-to-use tool for installing, managing, and restoring DLSS 5 across games and supported …"
+    },
+    {
+      "title": "DLSS5-Swapper download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/dlss5-swapper/",
+      "snippet": "2 days ago · Download DLSS5-Swapper for free. Install and manage DLSS 5 Neural Rendering for compatible games. DLSS 5 …"
+    },
+    {
+      "title": "DLSS 5 Swapper startet als Ein-Klick-DLSS-5-Dienstprogramm für Spiele",
+      "url": "https://de.vgtimes.com/gaming-news/166379-dlss-5-swapper-startet-als-ein-klick-dlss-5-dienstprogramm-fr-spiele.html",
+      "snippet": "Sep 3, 2026 · Rakan Alkhaldi hat DLSS 5 Swapper auf GitHub veröffentlicht, ein Windows 10/11 x64-Tool zur Verwaltung von DLSS 5 …"
+    }
+  ]
+}

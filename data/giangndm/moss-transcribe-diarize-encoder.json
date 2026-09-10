@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "giangndm/moss-transcribe-diarize-encoder",
+  "slug": "giangndm-moss-transcribe-diarize-encoder",
+  "author": "giangndm",
+  "url": "https://huggingface.co/giangndm/moss-transcribe-diarize-encoder",
+  "created_at": "2026-09-10T15:46:52.000Z",
+  "updated_at": "2026-09-10T15:56:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "vi",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "es",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moss_audio_encoder",
+    "feature-extraction",
+    "audio",
+    "speech-representation",
+    "whisper",
+    "moss",
+    "acoustic-features",
+    "audio-llm",
+    "speech-encoder",
+    "diarization",
+    "custom_code",
+    "en",
+    "zh",
+    "vi",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "es",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 312463360,
+  "parameters_human": "312.5M",
+  "storage_bytes": 1239441080,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "Outlook邮箱怎么登陆-百度经验",
+      "url": "https://jingyan.baidu.com/article/5bbb5a1bd5a3bc13eaa17964.html",
+      "snippet": "Sep 26, 2018 · Outlook邮箱怎么登陆,Outlook是一款应用非常广泛的应用，并且在生活中应用非常广泛。下面小编教大家如何登 …"
+    },
+    {
+      "title": "PC版的邮箱大师，OUTLOOK，Foxmail哪个好使一点？",
+      "url": "https://www.zhihu.com/question/38699401",
+      "snippet": "谢邀。 Outlook 非常强大，完全不是一个简单的邮件管理程序，它更适合日程的管理，并且可以与 Skype 良好的集成，是商务必选。 …"
+    },
+    {
+      "title": "Microsoft Exchange 与 Office Outlook 是否有区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/19930376?sort=created",
+      "snippet": "Nov 24, 2011 · Microsoft Exchange 与 Office Outlook 是否有区别？ 什么是 Exchange，为什么大佬们用Outlook的时候总提到它？ …"
+    },
+    {
+      "title": "如何设置修改outlook邮箱签名 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/7082dc1c0cb152e40a89bd13.html",
+      "snippet": "Jun 1, 2017 · 如何设置修改outlook邮箱签名,工作中，经常会有人问outlook邮箱的签名怎么设置或修改，不懂的请往下看啦~"
+    }
+  ]
+}

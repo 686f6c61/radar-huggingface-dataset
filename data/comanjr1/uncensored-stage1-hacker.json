@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Comanjr1/uncensored-stage1-hacker",
+  "slug": "comanjr1-uncensored-stage1-hacker",
+  "author": "Comanjr1",
+  "url": "https://huggingface.co/Comanjr1/uncensored-stage1-hacker",
+  "created_at": "2026-09-10T16:15:00.000Z",
+  "updated_at": "2026-09-10T16:15:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557917,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mobilitätshilfen & Rollstuhl mieten oder kaufen Schweiz RehabGmbH",
+      "url": "https://rehabgmbh.ch/",
+      "snippet": "Mobilitätshilfen von Rehab GmbH. Mobilitätshilfen wie Alltagshilfen, Rollstühle, Rollatoren, Elektromobile zur Miete oder Kauf."
+    },
+    {
+      "title": "KONTAKT - RehabGmbH Sie suchen Rollstühle, Rollatoren, …",
+      "url": "https://rehabgmbh.ch/kontakt-oeffnungszeiten-adresse-telefon",
+      "snippet": "Wir bieten Rollstühle, Scooter, Rollatoren, Pflegebetten und Zuggeräte. Besuchen sie uns % an der Hertistrasse in Wallisellen"
+    },
+    {
+      "title": "Rehab GmbH, Fachstelle in Wallisellen - search.ch",
+      "url": "https://search.ch/tel/wallisellen/hertistrasse-29/rehab-gmbh",
+      "snippet": "Rehab GmbH das Fachgeschäft für Mobilität und Hilfsmittel in Wallisellen, ZH. Bei uns genau richtig. Wir sind die Experten im …"
+    },
+    {
+      "title": "Rehab GmbH, Wallisellen - Cylex Lokale Suche",
+      "url": "https://www.cylex-swiss.ch/wallisellen/rehab-gmbh-12216374.html",
+      "snippet": "Jul 10, 2026 · Rehab GmbH in Wallisellen, Hertistrasse 29 | ☎ 044 821 67..., Kontaktdaten, ⌚ Öffnungszeiten."
+    },
+    {
+      "title": "Rehab Gmbh - swiss-abilities.ch",
+      "url": "https://www.swiss-abilities.ch/de/p/rehab-gmbh.138366",
+      "snippet": "Oct 31, 2024 · Beschreibung Fachgeschäft für Mobilität im Alter und Menschen mit körperlichen Beeinträchtigungen. Hilfsmittel & …"
+    }
+  ]
+}

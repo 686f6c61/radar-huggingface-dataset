@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Purino/mobilenetv2-nih-chestxray-4class",
+  "slug": "purino-mobilenetv2-nih-chestxray-4class",
+  "author": "Purino",
+  "url": "https://huggingface.co/Purino/mobilenetv2-nih-chestxray-4class",
+  "created_at": "2026-09-10T11:09:51.000Z",
+  "updated_at": "2026-09-10T11:09:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "medical-imaging",
+    "chest-xray",
+    "mobilenet",
+    "single-label-classification",
+    "xai",
+    "grad-cam",
+    "dataset:nih-chest-xrays/data",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2263108,
+  "parameters_human": "2.3M",
+  "storage_bytes": 9793634,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vladimir Petrović (@vlada_ams) • Instagram photos and videos",
+      "url": "https://www.instagram.com/vlada_ams/",
+      "snippet": "259 Followers, 366 Following, 183 Posts - Vladimir Petrović (@vlada_ams) on Instagram: \"\""
+    },
+    {
+      "title": "Vladimir Petrović Profiles - Facebook",
+      "url": "https://www.facebook.com/public/Vladimir-Petrovi%C4%87/",
+      "snippet": "View the profiles of people named Vladimir Petrović. Join Facebook to connect with Vladimir Petrović and others you may know. …"
+    },
+    {
+      "title": "vladimir petrović - , | LinkedIn",
+      "url": "https://rs.linkedin.com/in/vladimir-petrovi%C4%87-9886801a9",
+      "snippet": "Experience: , · Location: 11000. View vladimir petrović’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Vladimir Petrović - Lawyer at Advokatska kancelarija ... - LinkedIn",
+      "url": "https://rs.linkedin.com/in/vladimir-petrovi%C4%87-2b9149360",
+      "snippet": "Lawyer at Advokatska kancelarija Vladimir Petrović · Experience: Advokatska kancelarija Vladimir Petrović · Location: Belgrade. View …"
+    },
+    {
+      "title": "Advokati \"Fila\"",
+      "url": "http://advokatifila.com/sr/vladimir-petrovic.php",
+      "snippet": "Advokat Vladimir Petrović bavi se zastupanjem klijenata u parničnim i krivičnim predmetima, u postupcima naknade materijalne i …"
+    }
+  ]
+}

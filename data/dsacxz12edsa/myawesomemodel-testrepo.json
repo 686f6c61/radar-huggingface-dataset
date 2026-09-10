@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DSACXZ12EDSA/MyAwesomeModel-TestRepo",
+  "slug": "dsacxz12edsa-myawesomemodel-testrepo",
+  "author": "DSACXZ12EDSA",
+  "url": "https://huggingface.co/DSACXZ12EDSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T14:07:02.000Z",
+  "updated_at": "2026-09-10T14:07:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fabio Haebel´s XO SEAFOODBAR",
+      "url": "https://www.thisisxo.de/",
+      "snippet": "A small bar serves cocktails, with terrace seating available to take in the vibrant neighborhood. - Guide Michelin In Hamburg’s St. …"
+    },
+    {
+      "title": "About XO Seafoodbar - thisisxo.de",
+      "url": "https://www.thisisxo.de/about",
+      "snippet": "At XO Seafoodbar, freshness is at the heart of what we do. We serve seafood directly from regional waters, preserving each …"
+    },
+    {
+      "title": "Menu | XO Seafoodbar",
+      "url": "https://www.thisisxo.de/food-menu",
+      "snippet": "There are no items to show here yet SUMMER MENU"
+    },
+    {
+      "title": "Imprint - thisisxo.de",
+      "url": "https://www.thisisxo.de/imprint",
+      "snippet": "Imprint Rechnungsadresse: PRS Gastro Betriebs GmbH & Co. KG Paul-Roosen-Str. 31 22767 Hamburg Betriebsstätte: XO …"
+    }
+  ]
+}

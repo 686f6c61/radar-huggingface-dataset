@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Jab1718/qwen3.8-flash-coder-44gb-selective-int8",
+  "slug": "jab1718-qwen3-8-flash-coder-44gb-selective-int8",
+  "author": "Jab1718",
+  "url": "https://huggingface.co/Jab1718/qwen3.8-flash-coder-44gb-selective-int8",
+  "created_at": "2026-08-27T09:58:41.000Z",
+  "updated_at": "2026-09-10T06:11:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp_text",
+    "text-generation",
+    "moe",
+    "qwen",
+    "code",
+    "coding-agent",
+    "int8",
+    "selective-quantization",
+    "moe-slice",
+    "text-generation-inference",
+    "vllm",
+    "conversational",
+    "en",
+    "vi",
+    "zh",
+    "base_model:Jab1718/qwen3.8-flash-coder-85gb-bf16",
+    "base_model:finetune:Jab1718/qwen3.8-flash-coder-85gb-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 438,
+  "trending_score": 8,
+  "parameters": 42649832320,
+  "parameters_human": "42.65B",
+  "storage_bytes": 87572761606,
+  "storage_human": "87.6 GB",
+  "base_model": "Jab1718/qwen3.8-flash-coder-85gb-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cameo - Personalized videos feat. your favorite stars",
+      "url": "https://www.cameo.com/",
+      "snippet": "Browse thousands of celebrities and request a personalized video message for any occasion. Get creative with your request, …"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "(@cameo) | Snapchat Stories, Spotlight & Lenses",
+      "url": "https://www.snapchat.com/@cameo",
+      "snippet": "Add me on Snapchat!"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://www.snapchat.com/-/",
+      "snippet": ""
+    },
+    {
+      "title": "Cameo. (@cameos) | Snapchat Stories, Spotlight & Lenses",
+      "url": "https://www.snapchat.com/@cameos",
+      "snippet": "Cameo. Add me on Snapchat!"
+    }
+  ]
+}

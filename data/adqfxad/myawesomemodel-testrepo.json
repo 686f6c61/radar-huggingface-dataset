@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "adqfxad/MyAwesomeModel-TestRepo",
+  "slug": "adqfxad-myawesomemodel-testrepo",
+  "author": "adqfxad",
+  "url": "https://huggingface.co/adqfxad/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T18:56:09.000Z",
+  "updated_at": "2026-09-10T18:42:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Baixar fontes",
+      "url": "https://www.dafont.com/pt/",
+      "snippet": "As fontes apresentadas neste site são propriedades de seus autores, e são tanto freeware, shareware, versões demo ou de domínio …"
+    },
+    {
+      "title": "知乎知学堂 - 知乎",
+      "url": "https://www.zhihu.com/education/learning",
+      "snippet": "知乎知学堂 - 知乎旗下职业教育品牌，专注于成人用户职业发展，聚集各领域优质教育资源，依托自身科技实力打造的一站式在线职业 …"
+    },
+    {
+      "title": "New fonts | dafont.com",
+      "url": "https://www.dafont.com/new.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "出了一点问题",
+      "url": "https://www.zhihu.com/creator",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "【老旧电脑的福音】win10LTSB2015开机7秒（有图） - 吾爱破解",
+      "url": "https://www.52pojie.cn/thread-996795-1-1.html",
+      "snippet": "Jul 25, 2019 · 吾爱破解 - 52pojie.cn » 网站 › 【 软件安全 】 › 『精品软件区』 › 【老旧电脑的福音】win10LTSB2015开机7秒（有图）"
+    }
+  ]
+}
