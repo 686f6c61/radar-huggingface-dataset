@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "afesaf/MyAwesomeModel-TestRepo",
+  "slug": "afesaf-myawesomemodel-testrepo",
+  "author": "afesaf",
+  "url": "https://huggingface.co/afesaf/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T19:31:41.000Z",
+  "updated_at": "2026-09-11T19:32:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger Firefox — Navigateur web gratuit",
+      "url": "https://www.mozilla.org/fr/firefox/new/",
+      "snippet": "Téléchargez Mozilla Firefox, un navigateur Web gratuit. Firefox est créé par une communauté mondiale, à but non lucratif, qui œuvre …"
+    },
+    {
+      "title": "Firefox: The fast, private browser that keeps you safe",
+      "url": "https://www.firefox.com/fr/",
+      "snippet": "The independent browser that has your back. Firefox blocks trackers, has a free built-in VPN, puts you in control of AI, and never …"
+    },
+    {
+      "title": "Findings of the Association for Computational Linguistics (2025)",
+      "url": "https://aclanthology.org/events/findings-2025/",
+      "snippet": "... Model via Zeroth Order Optimization · Pucheng Dang | Xing Hu | Dong Li | Rui ... AI speak Nigerian-Pidgin?: Issues about Representativeness and Bias for ..."
+    },
+    {
+      "title": "Télécharger Firefox pour Windows — Firefox.com",
+      "url": "https://www.firefox.com/fr/download/windows/",
+      "snippet": "Découvrez des guides, des conseils et toutes les nouveautés pour une expérience Firefox sur mesure."
+    },
+    {
+      "title": "Télécharger et installer Firefox sous Windows | Assistance de Mozilla",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · Télécharger et installer Firefox sous Windows Date de création: 30/10/2021 REDIRECT Comment installer Firefox …"
+    }
+  ]
+}

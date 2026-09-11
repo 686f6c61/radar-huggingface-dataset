@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-GLM-5.3-EXL3-Abliterated",
+  "slug": "drowzeys-keys-glm-5-3-exl3-abliterated",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-Abliterated",
+  "created_at": "2026-09-04T01:47:28.000Z",
+  "updated_at": "2026-09-04T16:31:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "glm_moe_dsa",
+    "exl3",
+    "exllamav3",
+    "glm-5.3",
+    "dgx-spark",
+    "gb10",
+    "1m-context",
+    "mtp",
+    "abliterated",
+    "derisked",
+    "text-generation",
+    "conversational",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:mit",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 117,
+  "trending_score": 0,
+  "parameters": 165028098048,
+  "parameters_human": "165.03B",
+  "storage_bytes": 330178342144,
+  "storage_human": "330.2 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bienvenue au château de Vincennes",
+      "url": "https://www.chateau-de-vincennes.fr/",
+      "snippet": "Aux portes de Paris, visitez le château de Vincennes, témoin de l'architecture médiévale. | Exposition, concerts et danse …"
+    },
+    {
+      "title": "Château de Vincennes — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Vincennes",
+      "snippet": "Le château de Vincennes (également appelé autrefois Vieux Fort de Vincennes), est une forteresse située à Vincennes, dans la …"
+    },
+    {
+      "title": "Visiter | Château de Vincennes",
+      "url": "https://www.chateau-de-vincennes.fr/visiter",
+      "snippet": "Vous visitez le château de Vincennes en famille ? Découvrez nos conseils de visite et équipements pour les familles, nos outils …"
+    },
+    {
+      "title": "Château de Vincennes | Ville de Vincennes",
+      "url": "https://www.vincennes.fr/structures-et-equipements/chateau-de-vincennes",
+      "snippet": "Dernier billet délivré 45 minutes avant la fermeture du monument. Accès à la Sainte-Chapelle et au donjon jusqu'à 16h30 (17h30 en …"
+    },
+    {
+      "title": "Visitez le Château de Vincennes : horaires, tarifs et accès.",
+      "url": "https://www.bonjour-ratp.fr/fr/lieux/chateau-de-vincennes/",
+      "snippet": "Le château de Vincennes propose des horaires de visite flexibles, des tarifs abordables et offre aux visiteurs la possibilité de …"
+    }
+  ]
+}

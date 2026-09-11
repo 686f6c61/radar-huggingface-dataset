@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dhanyasriii/ppo-LunarLander-v2-unit8",
+  "slug": "dhanyasriii-ppo-lunarlander-v2-unit8",
+  "author": "dhanyasriii",
+  "url": "https://huggingface.co/dhanyasriii/ppo-LunarLander-v2-unit8",
+  "created_at": "2026-09-11T18:14:14.000Z",
+  "updated_at": "2026-09-11T18:18:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153529,
+  "storage_human": "153529 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Legjobb csirkemell recept | Mindmegette.hu",
+      "url": "https://www.mindmegette.hu/valogatas/csirkemellreceptek-olcso-gyors-es-egyszeru-etelek",
+      "snippet": "Csirkemell-receptek: olcsó, gyors és egyszerű ételek A csirkemellben az a nagyszerű, hogy viszonylag gyorsan és egyszerűen lehet …"
+    },
+    {
+      "title": "Mit készítsek csirkemellből? - 12 nagyszerű ötlet, ha egy kis ...",
+      "url": "https://receptneked.hu/recept-valogatasok/mit-keszitsek-csirkemellbol-12-nagyszeru-otlet-ha-egy-kis-valtozatossagra-vagsz/",
+      "snippet": "Sep 6, 2024 · Ha egy kis változatosságra vágysz a csirkemellből készült ételek terén, akkor ez a válogatás garantáltan inspirálni fog. …"
+    },
+    {
+      "title": "Csirkemelles receptek: a legfinomabb ételek 30 perc alatt",
+      "url": "https://www.mindmegette.hu/alapetelek/csirkemell-receptek-30-perc-alatt",
+      "snippet": "Mar 31, 2025 · A csirkemell tökéletes alapanyag ehhez, hiszen gyorsan elkészül, sokféleképpen variálható, és remekül illeszkedik az …"
+    },
+    {
+      "title": "8 gyors csirkemelles recept, ami pikk-pakk elkészül",
+      "url": "https://streetkitchen.hu/cikkek/8-gyors-csirkemelles-recept",
+      "snippet": "Csirkemell mindig jó, ha akad otthon. Most olyan gyors csirkemelles recepteket gyűjtöttünk össze, amik jól fognak jönni bármikor."
+    },
+    {
+      "title": "Olcsó, gyors, könnyű és egyszerű csirkemell receptek",
+      "url": "https://olcso-receptek.hu/receptek/husos-etelek/csirke/csirkemell/",
+      "snippet": "A csirkemell receptek kategóriában számtalan ínycsiklandó ötletet találsz a sokoldalú csirkemell elkészítéséhez. Az egyszerű, …"
+    }
+  ]
+}

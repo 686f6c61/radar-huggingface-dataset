@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "apetersson/Qwen3.8-Flash-Next-Abliterated-Adapter",
+  "slug": "apetersson-qwen3-8-flash-next-abliterated-adapter",
+  "author": "apetersson",
+  "url": "https://huggingface.co/apetersson/Qwen3.8-Flash-Next-Abliterated-Adapter",
+  "created_at": "2026-09-11T11:17:51.000Z",
+  "updated_at": "2026-09-11T11:26:37.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lora",
+    "abliterated",
+    "uncensored",
+    "refusal-removal",
+    "llama.cpp",
+    "qwen",
+    "adapter",
+    "text-generation",
+    "base_model:apetersson/Qwen3.8-Flash-Next-GGUF",
+    "base_model:adapter:apetersson/Qwen3.8-Flash-Next-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79600640,
+  "parameters_human": "79.6M",
+  "storage_bytes": 636849088,
+  "storage_human": "637 MB",
+  "base_model": "apetersson/Qwen3.8-Flash-Next-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to speak directly to norton customer service",
+      "url": "https://community.norton.com/t/how-to-speak-directly-to-norton-customer-service/461247",
+      "snippet": "Oct 27, 2025 · How to speak directly to norton customer service Norton Security | Norton Internet Security user8077 27 October 2025 …"
+    },
+    {
+      "title": "Norton Internet Security 2010 Download Link",
+      "url": "https://community.norton.com/t/norton-internet-security-2010-download-link/275358",
+      "snippet": "Oct 17, 2009 · I’ve just recently bought a laptop (Windows Vista Home Premium 64Bit) can anyone give me a proper download link …"
+    },
+    {
+      "title": "杀毒软件诺顿究竟好不好？ - 知乎",
+      "url": "https://www.zhihu.com/question/303281108",
+      "snippet": "Nov 22, 2018 · 诺顿跟小a究竟好不好，现在的个人pc四下透风的环境有必要安装付费杀软吗？"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/question/11480042428",
+      "snippet": "360などの殺毒ソフトをインストールする必要性とその利点について議論するページです。"
+    },
+    {
+      "title": "Creating Rule to block IP's - Norton Security | Norton Internet ...",
+      "url": "https://community.norton.com/t/creating-rule-to-block-ips/174386",
+      "snippet": "Feb 18, 2010 · If I understand this is how you do it?: Norton Internet Security Step 1Open Norton and click \"Settings\" in the field …"
+    }
+  ]
+}

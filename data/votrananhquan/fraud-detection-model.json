@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "votrananhquan/fraud-detection-model",
+  "slug": "votrananhquan-fraud-detection-model",
+  "author": "votrananhquan",
+  "url": "https://huggingface.co/votrananhquan/fraud-detection-model",
+  "created_at": "2026-09-11T17:49:29.000Z",
+  "updated_at": "2026-09-11T17:49:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fraud-detection",
+    "lightgbm",
+    "scikit-learn",
+    "imbalanced-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 267428,
+  "storage_human": "267428 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obtén un descuento para estudiantes de YouTube Premium o …",
+      "url": "https://support.google.com/youtube/answer/9158808?hl=es-419&co=GENIE.Platform%3DDesktop",
+      "snippet": "Ofrecemos varias opciones para ampliar tu experiencia en YouTube. Puedes registrarte para obtener una membresía para …"
+    },
+    {
+      "title": "Enviar músicas para sua biblioteca do YouTube Music",
+      "url": "https://support.google.com/youtubemusic/answer/9716522?hl=pt-BR",
+      "snippet": "Informações importantes: Os envios de música não podem ser concluídos no app YouTube Music para dispositivos móveis. Você …"
+    },
+    {
+      "title": "Musik und Podcasts personalisieren - YouTube Music-Hilfe",
+      "url": "https://support.google.com/youtubemusic/answer/6313542?hl=de",
+      "snippet": "Mit der YouTube Music App kannst du neue Musik und Podcasts entdecken und die Auswahl ganz individuell gestalten. Hier erfährst …"
+    },
+    {
+      "title": "Musik in deine YouTube Music-Mediathek hochladen",
+      "url": "https://support.google.com/youtubemusic/answer/9716522?hl=de",
+      "snippet": "YouTube Music Premium-Mitglieder können hochgeladene Inhalte auch streamen und über smarte Lautsprecher und Sonos …"
+    },
+    {
+      "title": "Bantuan YouTube Music",
+      "url": "https://support.google.com/youtubemusic/?hl=id",
+      "snippet": "Pusat Bantuan YouTube Music resmi tempat Anda dapat menemukan kiat dan tutorial tentang cara menggunakan produk dan …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Instance55/Rozx",
+  "slug": "instance55-rozx",
+  "author": "Instance55",
+  "url": "https://huggingface.co/Instance55/Rozx",
+  "created_at": "2026-09-11T10:48:45.000Z",
+  "updated_at": "2026-09-11T10:48:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portail e-procedures - INPI",
+      "url": "https://procedures.inpi.fr/",
+      "snippet": "Portail e-services Première visite ? Le portail e-procédures vous permet d'effectuer toutes vos démarches en ligne de manière …"
+    },
+    {
+      "title": "Institut National de la Propriété Industrielle | INPI",
+      "url": "https://www.inpi.fr/",
+      "snippet": "Le Prédiagnostic PI de l'INPI est un accompagnement pour aider les entreprises à comprendre l'importance de la propriété …"
+    },
+    {
+      "title": "Accueil - Data INPI",
+      "url": "https://data.inpi.fr/",
+      "snippet": "Bienvenue sur DATA INPI Je cherche dans les bases Entreprises*, Marques, Brevets et Dessins et modèles Rechercher Recherche …"
+    },
+    {
+      "title": "Rechercher une marque (base marques) | INPI",
+      "url": "https://www.inpi.fr/ressources/propriete-intellectuelle/rechercher-une-marque-base-marques",
+      "snippet": "Jan 16, 2025 · L’INPI met à disposition, sur DATA INPI, une base de données contenant l’ensemble des marques en vigueur en …"
+    },
+    {
+      "title": "Portail e-procedures - INPI",
+      "url": "https://procedures.inpi.fr/?/account/presentation",
+      "snippet": "INPI Connect est un dispositif d'authentification unique. Renseignez le même courriel et mot de passe pour chacun de vos espaces …"
+    }
+  ]
+}

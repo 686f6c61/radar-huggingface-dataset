@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "lolipopsuper00/Emotion-Detection",
+  "slug": "lolipopsuper00-emotion-detection",
+  "author": "lolipopsuper00",
+  "url": "https://huggingface.co/lolipopsuper00/Emotion-Detection",
+  "created_at": "2026-09-11T15:23:17.000Z",
+  "updated_at": "2026-09-11T15:39:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12626584,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DEMANDE D'ATTESTATION DE CONFORMITE A LA DIRECTIVE …",
+      "url": "https://demarche.numerique.gouv.fr/commencer/demande-d-attestation-de-conformite-a-la-directive",
+      "snippet": "Quel est l’objet de la démarche ? Ce document vous concerne si vous souhaitez exercer dans un pays de l’UE ou de l’EEE (UE + …"
+    },
+    {
+      "title": "Pre Trained Model For Emotion Detection",
+      "url": "https://www.kaggle.com/datasets/abhisheksingh016/machine-model-for-emotion-detection",
+      "snippet": "This pre trained machine model implements a Convolutional Neural Network (CNN) for emotion detection using the TensorFlow and Keras frameworks. The model architecture includes convolutional layers, batch normalization, and dropout for effective ..."
+    },
+    {
+      "title": "Facial emotion recognition Object Detection Model by uni",
+      "url": "https://universe.roboflow.com/uni-o612z/facial-emotion-recognition",
+      "snippet": "Deploy a facial emotion recognition model capable of identifying angry, happy, and sad emotional states in real-time. This project provides a pre-trained computer vision model and a 4.5k-image dataset, offering a robust foundation for building ..."
+    },
+    {
+      "title": "Demandes d’attestation de conformité à la directive européenne",
+      "url": "https://idf.drieets.gouv.fr/Demandes-d-attestation-de-conformite-a-la-directive-europeenne",
+      "snippet": "Jan 11, 2022 · Retrouvez la page de demande."
+    },
+    {
+      "title": "ATTESTATION de CONFORMITÉ à la Directive Européenne 2005/36/CE …",
+      "url": "https://demarche.numerique.gouv.fr/commencer/attestation-de-conformite-a-la-directive-eur--2025",
+      "snippet": "Quel est l’objet de la démarche ? Vous souhaitez exercer dans l'un des pays de l'Union Européenne ou en Islande, au Liechtenstein, …"
+    }
+  ]
+}

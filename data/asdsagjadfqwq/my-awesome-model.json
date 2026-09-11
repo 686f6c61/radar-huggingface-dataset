@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDSAGJADFQWQ/my-awesome-model",
+  "slug": "asdsagjadfqwq-my-awesome-model",
+  "author": "ASDSAGJADFQWQ",
+  "url": "https://huggingface.co/ASDSAGJADFQWQ/my-awesome-model",
+  "created_at": "2026-09-11T18:04:11.000Z",
+  "updated_at": "2026-09-11T18:05:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porady - Onet.poczta - CCM",
+      "url": "https://pl.ccm.net/faq/onet-poczta-269",
+      "snippet": "Poczta Onet - jak założyć konto e-mail Poczta Onet jest jedną z najbardziej popularnych i darmowych skrzynek... Czytaj dalej"
+    },
+    {
+      "title": "Poczta Onet [Rozwiązany] - CCM",
+      "url": "https://pl.ccm.net/forum/affich-23660-poczta-onet",
+      "snippet": "Apr 3, 2018 · Najlepsza odpowiedź: Hej dzieki za pomoc:) zadzwonilam b mily pan powiedzial ze nr tel jest ale nie bylo prefiksu …"
+    },
+    {
+      "title": "Onet poczta [Rozwiązany] - CCM",
+      "url": "https://pl.ccm.net/forum/affich-22350-onet-poczta",
+      "snippet": "Oct 14, 2017 · Onet poczta – najlepsza skrzynka pocztowa- Najlepszą odpowiedź Onet poczta najlepsza skrzynka pocztowa- …"
+    },
+    {
+      "title": "Pobierz najnowszą wersję AbiWord za darmo po polsku z CCM - CCM",
+      "url": "https://pl.ccm.net/download/pobierz-133-abiword",
+      "snippet": "Oct 22, 2020 · AbiWord jest programem stworzonym specjalnie na potrzeby edycji tekstu, w kt&oacute;rym znajdziemy wszystkie …"
+    },
+    {
+      "title": "Windows 7 USB/DVD Download Tool - CCM",
+      "url": "https://pl.ccm.net/download/pobierz-1723-windows-7-usb-dvd-download-tool",
+      "snippet": "Oct 22, 2020 · Windows 7 USB/DVD Download Tool to program, który umożliwia na pobranie kopii systemu Windows 7 w formacie …"
+    }
+  ]
+}

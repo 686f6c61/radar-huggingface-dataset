@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen4b-code-think-taskvector",
+  "slug": "montalte-qwen4b-code-think-taskvector",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen4b-code-think-taskvector",
+  "created_at": "2026-09-11T12:26:21.000Z",
+  "updated_at": "2026-09-11T12:27:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "merge",
+    "taskvector",
+    "code",
+    "think",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317170,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Here is a link to almost any textbook's free PDF version.",
+      "url": "https://www.reddit.com/r/unt/comments/x1pfcf/here_is_a_link_to_almost_any_textbooks_free_pdf/",
+      "snippet": "For those who are unaware, you can download a free copy of the majority of textbooks via the link provided below. I used this and …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "switch520 2026年最新地址是520switch.com吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/2034623792819983958",
+      "snippet": "Switch520 2026年使用指南 2026年可用域名大全 Switch520因域名频繁变更而闻名，这主要是出于规避网络审查和版权风险的考虑-。 …"
+    },
+    {
+      "title": "PDFについて[ILOVEPDF]を使い。PDFをパワーポイントに変換し.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11312526936",
+      "snippet": "PDFをパワーポイントに変換した際に象形文字のように文字化けしてしまう問題は、フォントの互換性やPDFのレイアウトによるも …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-09-11-qwen36-da-chunk-only-400-simcheck-numina-302-0",
+  "slug": "dougalldeepmind-2026-09-11-qwen36-da-chunk-only-400-simcheck-numina-302-0",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-09-11-qwen36-da-chunk-only-400-simcheck-numina-302-0",
+  "created_at": "2026-09-11T13:48:20.000Z",
+  "updated_at": "2026-09-11T13:48:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140246,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trade Crypto, Predict Outcomes & Earn — All in One Platform | Gemini",
+      "url": "https://www.gemini.com/",
+      "snippet": "The crypto super app for trading, predicting, and earning. Buy 90+ cryptos, trade prediction markets, and earn with staking and the …"
+    },
+    {
+      "title": "Buy & Sell Bitcoin, Ethereum and 80+ Cryptos Securely with ... - Gemini",
+      "url": "https://www.gemini.com/exchange",
+      "snippet": "Trade crypto with confidence on Gemini Exchange. Enjoy a secure, easy-to-use platform to buy, sell, and store Bitcoin, Ethereum, …"
+    },
+    {
+      "title": "Gemini | Help Center",
+      "url": "https://support.gemini.com/hc/en-us",
+      "snippet": "Apr 6, 2026 · Gemini Credit Card® Learn about applying for, using, and managing the Gemini Credit Card. Other Gemini Products …"
+    },
+    {
+      "title": "Multichain ETH, USDC, RLUSD, & USDT – Gemini",
+      "url": "https://support.gemini.com/hc/en-us/articles/39952723405339-Multichain-ETH-USDC-RLUSD-USDT",
+      "snippet": "To minimize risk, Gemini monitors large deposits closely. Deposits on Solana typically finalize within seconds and are irreversible …"
+    },
+    {
+      "title": "Gemini Onchain",
+      "url": "https://onchain.gemini.com/portfolio",
+      "snippet": "The best place to discover the world of web3 curated by Gemini."
+    }
+  ]
+}

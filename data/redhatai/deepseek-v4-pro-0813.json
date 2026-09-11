@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/DeepSeek-V4-Pro-0813",
+  "slug": "redhatai-deepseek-v4-pro-0813",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/DeepSeek-V4-Pro-0813",
+  "created_at": "2026-09-11T13:54:05.000Z",
+  "updated_at": "2026-09-11T13:54:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1650497936906,
+  "parameters_human": "1650.50B",
+  "storage_bytes": 892755974486,
+  "storage_human": "892.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Meet - Online Video Calls, Meetings and Conferencing",
+      "url": "https://meet.google.com/",
+      "snippet": "Real-time meetings by Google. Using your browser, share your video, desktop, and presentations with teammates and customers."
+    },
+    {
+      "title": "Google Meet: Online Web and Video Conferencing Calls | Google …",
+      "url": "https://workspace.google.com/products/meet/",
+      "snippet": "Anyone with a Google Account can create a video meeting, invite up to 100 participants, and meet for up to 60 minutes per meeting …"
+    },
+    {
+      "title": "Google Meet: audioconferenze e videochiamate online | Google …",
+      "url": "https://workspace.google.com/intl/it/products/meet/",
+      "snippet": "Utilizza Google Meet per audioconferenze e videochiamate online sicure nell'ambito di Google Workspace."
+    },
+    {
+      "title": "Google Meet - App su Google Play",
+      "url": "https://play.google.com/store/apps/details/?id=com.google.android.apps.tachyon&hl=it",
+      "snippet": "Google Meet è un'app per videochiamate di alta qualità progettata per aiutarti a interagire in modo significativo e divertente con amici, …"
+    },
+    {
+      "title": "Partecipa a una riunione - Computer - Guida di Google Meet",
+      "url": "https://support.google.com/meet/answer/9303069?hl=it-it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Puoi partecipare a una riunione video da Google Meet, Google Calendar o Gmail. Per partecipare a una riunione, puoi anche: Tutte …"
+    }
+  ]
+}

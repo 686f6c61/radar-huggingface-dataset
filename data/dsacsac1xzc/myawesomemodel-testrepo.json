@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSACSAC1XZC/MyAwesomeModel-TestRepo",
+  "slug": "dsacsac1xzc-myawesomemodel-testrepo",
+  "author": "DSACSAC1XZC",
+  "url": "https://huggingface.co/DSACSAC1XZC/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T19:31:59.000Z",
+  "updated_at": "2026-09-11T19:32:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Target : Expect More. Pay Less.",
+      "url": "https://www.target.com/",
+      "snippet": "Shop Target online and in-store for everything from groceries and essentials to clothing and electronics. Choose contactless pickup …"
+    },
+    {
+      "title": "Target (@Target) / X",
+      "url": "https://x.com/Target",
+      "snippet": "Nov 11, 2009 · Valued guests, We're aware of intermittent issues with our digital experience and a fix is underway. In the meantime, …"
+    },
+    {
+      "title": "Jobs at Target",
+      "url": "https://corporate.target.com/careers",
+      "snippet": "Find your next job at Target. Search for job opportunities at Target stores, supply chain facilities and corporate headquarters. From …"
+    },
+    {
+      "title": "Target Weekly Ad - Earliest Post Every Week + Latest Deals",
+      "url": "https://www.totallytarget.com/target-weekly-ad/",
+      "snippet": "Sep 12, 2026 · The earliest Target weekly ad scan every week - deals including coupon matchups, cheap finds and sales for next …"
+    },
+    {
+      "title": "Target (@target) • Instagram photos and videos",
+      "url": "https://www.instagram.com/target/",
+      "snippet": "6M Followers, 5,073 Following, 3,875 Posts - Target (@target) on Instagram: \"Your ☀️happy place☀️ just got sunnier… Shop our …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Lux-V2-GGUF",
+  "slug": "mradermacher-lux-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lux-V2-GGUF",
+  "created_at": "2026-09-11T12:35:48.000Z",
+  "updated_at": "2026-09-11T13:03:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "sft",
+    "trl",
+    "gemma-4",
+    "full-fine-tuning",
+    "moe",
+    "korean",
+    "ko",
+    "en",
+    "base_model:PoSTMEDIA/Lux-V2",
+    "base_model:quantized:PoSTMEDIA/Lux-V2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 17464292480,
+  "storage_human": "17.5 GB",
+  "base_model": "PoSTMEDIA/Lux-V2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=it",
+      "snippet": "Ristoranti Stazioni di servizio Bancomat Acquisti Dettagli mappa"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.it/?q=roma%2Croma%2CRM",
+      "snippet": "Non è possibile visualizzare una descrizione perché il sito non lo consente."
+    },
+    {
+      "title": "Come arrivare a Via Alessandro Vellutello, Roma in bus o treno?",
+      "url": "https://moovitapp.com/index/it/mezzi_pubblici-Via_Alessandro_Vellutello-Roma_e_Lazio-street_10638514-61",
+      "snippet": "Come arrivare a Via Alessandro Vellutello in bus? Clicca sulla linea bus che preferisci per vedere passo-passo le indicazioni sulla …"
+    },
+    {
+      "title": "Mappa di Roma: Vie, Strade e Piazze - TuttoCittà",
+      "url": "https://www.tuttocitta.it/mappa/roma",
+      "snippet": "Consulta ora la Mappa di Roma. Trova subito vie e piazze, calcola percorsi stradali e scopri negozi e attività commerciali online."
+    },
+    {
+      "title": "PagineBianche: trova numeri di telefono, cellulari e indirizzi",
+      "url": "https://www.paginebianche.it/",
+      "snippet": "PagineBianche è l'elenco telefonico più fornito d'Italia. Trova persone, aziende e professionisti. Cerca numeri di telefono, indirizzi e …"
+    }
+  ]
+}

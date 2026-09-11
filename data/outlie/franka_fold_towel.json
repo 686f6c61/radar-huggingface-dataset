@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "outlie/franka_fold_towel",
+  "slug": "outlie-franka_fold_towel",
+  "author": "outlie",
+  "url": "https://huggingface.co/outlie/franka_fold_towel",
+  "created_at": "2026-09-11T15:25:35.000Z",
+  "updated_at": "2026-09-11T15:45:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51130975735,
+  "storage_human": "51.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pas de son sur Mytf1 replay - Audio - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37728991-pas-de-son-sur-mytf1-replay",
+      "snippet": "Nov 12, 2022 · Bonjour, j'ai actuellement un problème avec le replay de mytf1 sur PC Lenovo où il n'y a pas de son, ayant essayé le …"
+    },
+    {
+      "title": "MyTF1 \"Un problème technique est survenu\" - Forum Montage et ...",
+      "url": "https://forums.commentcamarche.net/forum/affich-37450152-mytf1-un-probleme-technique-est-survenu",
+      "snippet": "Dec 10, 2021 · MyTF1 \"Un problème technique est survenu\" Code Tf1 Vpn Sissi - Modifié le 10 déc. 2021 à 15:27 Claire - 3 juin 2022 …"
+    },
+    {
+      "title": "Tests Comparatifs - 60 Millions de Consommateurs",
+      "url": "https://www.60millions-mag.com/tests-comparatifs/",
+      "snippet": "Sep 2, 2026 · 18 paquets de spaghetti ont été passés au labo par 60 millions de consommateurs. Métaux lourds, pesticides, qualités …"
+    },
+    {
+      "title": "Jouets dangereux : méfiez-vous des faux Squishy Dumpling",
+      "url": "https://www.60millions-mag.com/bebes-enfants-ados/article/mefiez-vous-des-faux-squishy-dumpling-20260812/",
+      "snippet": "Aug 12, 2026 · VIDÉO. Les marchés regorgent de copies de Squishy Dumpling. Attention, ils peuvent éclater et contiennent souvent …"
+    },
+    {
+      "title": "TF1 replay asks to disable an ad blocker that is already disabled",
+      "url": "https://forums.commentcamarche.net/forum/affich-34710437-tf1-replay-demande-desactiver-un-bloqueur-de-pub-deja-desactive?lang=en",
+      "snippet": "Hello, For some time now, I've been receiving a message from TF1 replay asking me to disable my ad blocker to start the video. The …"
+    }
+  ]
+}

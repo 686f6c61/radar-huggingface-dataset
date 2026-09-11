@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapiter_b010",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapiter_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010",
+  "created_at": "2026-09-11T11:04:49.000Z",
+  "updated_at": "2026-09-11T11:15:29.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "三上悠亚_百度百科",
+      "url": "https://baike.baidu.com/item/%E4%B8%89%E4%B8%8A%E6%82%A0%E4%BA%9A/19933818",
+      "snippet": "三上悠亚（みかみ ゆあMikami Yua），1993年8月16日出生于日本爱知县名古屋市，前日本女子组合SKE48成员，AV演员，韩国女子 …"
+    },
+    {
+      "title": "番號代表作｜三上悠亞作品＋生平研究｜從偶像到成人影像女王的職業 …",
+      "url": "https://mysangui.com/beginners/%e6%a0%bc%e8%98%ad%e7%ab%a5%e8%a9%b1/%e7%95%aa%e8%99%9f%e4%bb%a3%e8%a1%a8%e4%bd%9c-%e4%b8%89%e4%b8%8a%e6%82%a0%e4%ba%9e%e4%bd%9c%e5%93%81-%e7%94%9f%e5%b9%b3%e7%a0%94%e7%a9%b6/",
+      "snippet": "Feb 6, 2021 · 本研究通過歷史回顧、作品分析與文化脈絡探討，分析三上悠亞在日本及亞洲地區的媒體影響力、商業模式與文化意 …"
+    },
+    {
+      "title": "三上悠亜オフィシャルサイト",
+      "url": "https://miss.co.jp/",
+      "snippet": "Jan 26, 2026 · 三上悠亜の最新情報、各種SNS、プロデュース情報などをご紹介いたします。"
+    },
+    {
+      "title": "ゆあちゃんねる! 三上悠亜オフィシャルYoutube",
+      "url": "https://www.youtube.com/channel/UC0BCfHbNORhd7dsw1R5rw9w",
+      "snippet": "お仕事依頼はこちらからお願いします💌yuamikami.management@gmail.com♡プロフィール三上悠亜（みかみゆあ）生年月日：1993 …"
+    },
+    {
+      "title": "三上悠亚（1993年出生） - 影视作品全集、角色与电影资料 | 9K电影网",
+      "url": "https://www.kkkkkkkkk.com/person/163",
+      "snippet": "三上悠亜(三上悠亚,Mikami Yua)（1993年出生），日本演员，收录其完整影视作品与角色信息。涵盖多部经典电影代表作，提供作品 …"
+    }
+  ]
+}

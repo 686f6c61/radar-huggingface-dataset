@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Akiya-Vyre/vietnamese-legal-model-finetune",
+  "slug": "akiya-vyre-vietnamese-legal-model-finetune",
+  "author": "Akiya-Vyre",
+  "url": "https://huggingface.co/Akiya-Vyre/vietnamese-legal-model-finetune",
+  "created_at": "2026-09-11T13:34:23.000Z",
+  "updated_at": "2026-09-11T13:38:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:27927",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:bqbbao6/vietnamese-legal-embedding",
+    "base_model:finetune:bqbbao6/vietnamese-legal-embedding",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 3353505388,
+  "storage_human": "3.4 GB",
+  "base_model": "bqbbao6/vietnamese-legal-embedding",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "2026年 9月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
+      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
+      "snippet": "1080P/2K/4K分辨率，以RTX 5050为基准（25款主流游戏测试成绩取平均值） 数据来源于：TechPowerUp 桌面端显卡天梯图："
+    },
+    {
+      "title": "Qui a vu mes stories Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-36452377-instagram-je-ne-peux-plus-voir-qui-a-vu-mes-story-instants",
+      "snippet": "Bonjour, Je ne peux plus voir qui a vu mes story sur Instagram J’ai éteins mon tel, déconnexion, supp l’app rien n’y fait Alors que sur …"
+    },
+    {
+      "title": "Guide - Instagram - CCM",
+      "url": "https://it.ccm.net/faq/instagram-550",
+      "snippet": "Profilo Instagram hackerato: un recupero semplificato Instagram continua la sua guerra contro la pirateria. La piattaforma ha... Per …"
+    },
+    {
+      "title": "Vision des likes sur Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-38266755-vision-des-likes-sur-instagram",
+      "snippet": "Feb 1, 2026 · Instagram a mis en place une mise à jour où seulement le propriétaire du compte peut voir qui a aimé ses publications. …"
+    }
+  ]
+}

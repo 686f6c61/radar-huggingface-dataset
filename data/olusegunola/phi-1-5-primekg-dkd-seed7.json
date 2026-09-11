@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/phi-1.5-primekg-dkd-seed7",
+  "slug": "olusegunola-phi-1-5-primekg-dkd-seed7",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-dkd-seed7",
+  "created_at": "2026-09-11T13:14:48.000Z",
+  "updated_at": "2026-09-11T13:14:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50357392,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BD.nl, het laatste nieuws uit Brabant, Tilburg, Den Bosch, en Oss",
+      "url": "https://www.bd.nl/",
+      "snippet": "Blijf altijd op de hoogte van het laatste nieuws via de snelste en leukste nieuwssite van Nederland, 24 uur per dag en 7 dagen in de …"
+    },
+    {
+      "title": "Tilburg | bd.nl",
+      "url": "https://www.bd.nl/tilburg",
+      "snippet": "Blijf altijd op de hoogte van het laatste nieuws uit Tilburg via de snelste en leukste nieuwssite van Nederland, 24 uur per dag en 7 …"
+    },
+    {
+      "title": "Brabants Dagblad Klantenservice - Brabants Dagblad.nl",
+      "url": "https://mijnomgeving.bd.nl/",
+      "snippet": "De MijnOmgeving is de klantenservice van Brabants Dagblad, regel hier zelf veilig & snel al je abonnement-gerelateerde zaken."
+    },
+    {
+      "title": "Brabants Dagblad Veelgestelde vragen abonnement - BD.nl",
+      "url": "https://mijnomgeving.bd.nl/klantenservice/veelgestelde-vragen/abonnement",
+      "snippet": "Brabants Dagblad Compleet Zes dagen per week de papieren krant én onbeperkt toegang tot alle digitale producten. Dit houdt in: …"
+    },
+    {
+      "title": "BD Shop",
+      "url": "https://webwinkel.bd.nl/",
+      "snippet": "BD Shop Ontdek de mooiste producties gemaakt door onze journalisten en columnisten."
+    }
+  ]
+}

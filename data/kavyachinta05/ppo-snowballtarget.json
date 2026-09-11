@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KavyaChinta05/ppo-SnowballTarget",
+  "slug": "kavyachinta05-ppo-snowballtarget",
+  "author": "KavyaChinta05",
+  "url": "https://huggingface.co/KavyaChinta05/ppo-SnowballTarget",
+  "created_at": "2026-09-11T15:30:52.000Z",
+  "updated_at": "2026-09-11T15:30:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4510375,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fájlkezelő előzmények törlése a tálcán? (Windows 10)",
+      "url": "https://pcforum.hu/tudastar/132712/fajlkezelo-elozmenyek-torlese-a-talcan-windows-10",
+      "snippet": "Nov 17, 2017 · Windows 10-ben hogyan tudom törölni egy kattintásra a fájlkezelő előzményeit? Legutóbbiak (előzmények) és hogy …"
+    },
+    {
+      "title": "Újabb végzetes hibát találtak a Windows 10 fájlkezelésében",
+      "url": "https://pcforum.hu/hirek/23072/ujabb-vegzetes-hibat-talaltak-a-windows-10-fajlkezeleseben",
+      "snippet": "Jan 19, 2021 · Alig pár nappal az után, hogy kiderült: egy speciális fájl megnyitásával azonnali rendszerösszeomlást és a fájlrendszer …"
+    },
+    {
+      "title": "Windows fájlkeresés probléma megoldás - Windows - Szoftver - PC …",
+      "url": "https://pcforum.hu/tudastar/132671/windows-fajlkereses",
+      "snippet": "Nov 14, 2017 · Windows 10-ben (vagy bármelyik windows) lehetséges windows intézővel vagy bármilyen fájlkezelő programmal …"
+    },
+    {
+      "title": "Fájlkezelő cél megváltoztatása probléma megoldás ...",
+      "url": "https://pcforum.hu/tudastar/127275/fajlkezelo-cel-megvaltoztatasa",
+      "snippet": "Az lenne a kérdésem, hogy hogyan tudnám megcsinálni, hogy a Fájlkezelőre ha rákattintok akkor ne a Gyors elérés ugorjon fel …"
+    },
+    {
+      "title": "Téma: Átalakítja a Windows 11 Fájlkezelőjének felületét a ...",
+      "url": "https://pcforum.hu/tarsalgo/153083/atalakitja-a-windows-11-fajlkezelojenek-feluletet-a-microsoft",
+      "snippet": "Én már annak is örülnék, ha a \"Minden mappa megjelenítése\" nézetben nem jelennének meg a beépített mappák (Asztal, …"
+    }
+  ]
+}

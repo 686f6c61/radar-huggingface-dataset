@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "eshaoliu/minimind-1536-pretrain",
+  "slug": "eshaoliu-minimind-1536-pretrain",
+  "author": "eshaoliu",
+  "url": "https://huggingface.co/eshaoliu/minimind-1536-pretrain",
+  "created_at": "2026-09-11T17:34:54.000Z",
+  "updated_at": "2026-09-11T17:37:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 994162176,
+  "parameters_human": "994.2M",
+  "storage_bytes": 1988364424,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "《中华人民共和国国歌》歌词_百度知道",
+      "url": "https://zhidao.baidu.com/question/1702052666980628100.html",
+      "snippet": "中华人民共和国国歌名为《义勇军进行曲》，具体歌词如下： 歌曲：义勇军进行曲 歌手：合唱 作词：田汉 作曲：聂耳 歌词： 起来！ …"
+    },
+    {
+      "title": "没有安装任何360软件，电脑里莫名其妙有了个360壁纸，控制面板的添 …",
+      "url": "https://www.zhihu.com/question/25046412",
+      "snippet": "找到C盘下面“用户”，点进去，记住要在“查看”勾选“隐藏文件夹”，会看到一个 APP Data 文件夹（之前是隐藏的）。下面的 Roaming …"
+    },
+    {
+      "title": "英国有哪些优秀的本土时尚品牌？ - 知乎",
+      "url": "https://www.zhihu.com/question/374351431",
+      "snippet": "8、Ted Baker 如日中天的英国轻奢品牌Ted Baker是典型英伦风格，设计和材质都相当优秀，关注细节，又在一丝不苟的同时保留了独 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    }
+  ]
+}

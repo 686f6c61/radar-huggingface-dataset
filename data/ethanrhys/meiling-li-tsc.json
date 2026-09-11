@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EthanRhys/Meiling-Li-TSC",
+  "slug": "ethanrhys-meiling-li-tsc",
+  "author": "EthanRhys",
+  "url": "https://huggingface.co/EthanRhys/Meiling-Li-TSC",
+  "created_at": "2026-09-11T15:31:59.000Z",
+  "updated_at": "2026-09-11T15:33:09.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71398393,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "La saisie vocale n'est pas compatible avec ce navigateur Traduire avec la voix Activer l'écriture manuscriteSélectionner un outil de …"
+    },
+    {
+      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translator",
+      "snippet": "Écrivez ou collez votre texte ici. Pour traduire des fichiers PDF, Word (.docx) ou Powerpoint (.pptx), déposez-les directement dans …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "La saisie vocale n'est pas compatible avec ce navigateur Traduire avec la voix Activer l'écriture manuscriteSélectionner un outil de …"
+    },
+    {
+      "title": "Reverso | Traduction gratuite, dictionnaire",
+      "url": "https://www.reverso.net/traduction-texte",
+      "snippet": "Traduire du texte 28 langues Traduire des documents Word, PDF, PowerPoint, ... NEWVocabulaire Voir mots sauvegardés, …"
+    },
+    {
+      "title": "Reverso | Free translation, dictionary",
+      "url": "https://www.reverso.net/",
+      "snippet": "Reverso's free online translation service that translates your texts between English and French, Spanish, Italian, German, Russian, …"
+    }
+  ]
+}

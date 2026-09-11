@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "viveksaibandi/lawgpt-india-bns",
+  "slug": "viveksaibandi-lawgpt-india-bns",
+  "author": "viveksaibandi",
+  "url": "https://huggingface.co/viveksaibandi/lawgpt-india-bns",
+  "created_at": "2026-09-11T17:41:06.000Z",
+  "updated_at": "2026-09-11T18:44:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251784593,
+  "storage_human": "252 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "北海道鳥觀賞全攻略：景點、季節、交通一次掌握",
+      "url": "https://lunaexplorer.tw/chapter/1036",
+      "snippet": "Dec 13, 2025 · 完整北海道鳥類觀察指南！ 精選五大觀鳥勝地包含釧路濕原丹頂鶴、屈斜路湖天鵝，詳細交通路線、最佳季節、必備裝 …"
+    },
+    {
+      "title": "可愛雪之妖精銀喉長尾山雀就在這！北海道10種超萌的 ...",
+      "url": "https://livejapan.com/zh-tw/in-hokkaido/in-pref-hokkaido/in-asahikawa/article-a1000408/",
+      "snippet": "Jul 6, 2026 · 從網路上知名的雪之妖精－銀喉長尾山雀，到北海道代表之一的北狐，下面將要介紹給你10種北海道特有的野生動物，下 …"
+    },
+    {
+      "title": "邂逅雪世界裡的鳥兒們！享受冬天「東北海道」的賞 ...",
+      "url": "https://www.gltjp.com/zh-hant/article/item/20924/",
+      "snippet": "Feb 21, 2025 · 東北海道自11月上旬起便開始飄雪。 12月左右進入真正的雪白季節，降雪不會融解，3月開始積雪逐漸融化。 冰雪遍覆 …"
+    },
+    {
+      "title": "【銀喉長尾山雀完全指南】雪之妖精・銀喉長尾山雀 ...",
+      "url": "https://www.fun-japan.jp/hk/articles/14237",
+      "snippet": "Sep 2, 2026 · 本文會用簡單易懂的方式介紹銀喉長尾山雀的特徵與大小、可以觀察到毛茸茸又可愛幼鳥的季節，以及於棲息地北海道 …"
+    },
+    {
+      "title": "野鳥図鑑 | ひがし北海道の野鳥図鑑 | BIRD LAND ひがし ...",
+      "url": "https://www.kushiro-bird.jp/bird_gallery/",
+      "snippet": "ひがし北海道の野鳥図鑑 BIRD LAND ひがし北海道 釧路 ひがし北海道の自然 野鳥図鑑 探鳥エリア 宿泊施設 野鳥ラバーズ アクセス …"
+    }
+  ]
+}

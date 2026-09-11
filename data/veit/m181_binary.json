@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Veit/M181_binary",
+  "slug": "veit-m181_binary",
+  "author": "Veit",
+  "url": "https://huggingface.co/Veit/M181_binary",
+  "created_at": "2026-09-11T12:17:19.000Z",
+  "updated_at": "2026-09-11T12:17:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "image-classification",
+    "plankton",
+    "PISCO",
+    "vision-transformer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800194,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343229336,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iLovePDF | Herramientas PDF online gratis",
+      "url": "https://www.ilovepdf.com/ES",
+      "snippet": "iLovePDF es un servicio online para trabajar con archivos PDF completamente gratuito y fácil de usar. ¡Unir, dividir, comprimir y …"
+    },
+    {
+      "title": "iLovePDF | Online PDF tools for PDF lovers",
+      "url": "https://www.ilovepdf.com/",
+      "snippet": "iLovePDF is an online service to work with PDF files completely free and easy to use. Merge PDF, split PDF, compress PDF, office to …"
+    },
+    {
+      "title": "Login | iLovePDF",
+      "url": "https://clients.ilovepdf.com/web/login",
+      "snippet": "Reset Password © iLovePDF 2025"
+    },
+    {
+      "title": "Ferramentas online para os amantes de PDF - iLovePDF",
+      "url": "https://www.ilovepdf.com/pt",
+      "snippet": "iLovePDF é um serviço online para trabalhar com arquivos PDF totalmente gratuito e fácil de usar. Combinar PDF, dividir PDF, …"
+    },
+    {
+      "title": "iLovePDF | PDFファンのためのオンラインツール",
+      "url": "https://www.ilovepdf.com/ja",
+      "snippet": "iLovePDFは完全無料のPDFの為のオンラインサービス。使い方はとても簡単。PDFの結合、分割、圧縮、officeファイルのPDF変換 …"
+    }
+  ]
+}

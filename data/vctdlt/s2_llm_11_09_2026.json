@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vctdlt/s2_llm_11_09_2026",
+  "slug": "vctdlt-s2_llm_11_09_2026",
+  "author": "vctdlt",
+  "url": "https://huggingface.co/vctdlt/s2_llm_11_09_2026",
+  "created_at": "2026-09-11T13:13:16.000Z",
+  "updated_at": "2026-09-11T13:13:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pflanzen kaufen | PFLANZMICH Garten Online-Shop",
+      "url": "https://www.pflanzmich.de/",
+      "snippet": "Pflanzmich.de ist ein Online-Shop für Gartenpflanzen mit großer Auswahl, schneller Lieferung und attraktiven Preisen aus eigener …"
+    },
+    {
+      "title": "Weiße Prachtkerze Gambit White - pflanzmich.de",
+      "url": "https://www.pflanzmich.de/produkt/103993/weisse-prachtkerze-gambit-white.html",
+      "snippet": "Gaura lindheimeri Gambit White schmetterlingsgleiche Blüten in Reinweiß bis in den Herbst hinein trockenheitsverträglich, hitzefest, …"
+    },
+    {
+      "title": "Aktionspreise | Pflanzmich.de",
+      "url": "https://www.pflanzmich.de/aktionspreise.html",
+      "snippet": "Pflanzen bestellen bei PFLANZMICH.de: Günstige Preise für Hecken, Stauden, Rosen uvm · 15.000+ Sorten · Schnelle Lieferzeit · …"
+    },
+    {
+      "title": "Blauraute Little Spire® - PFLANZMICH",
+      "url": "https://www.pflanzmich.de/produkt/20134/blauraute-little-spire.html",
+      "snippet": "Perovskia atriplicifolia Little Spire verwandelt heiße, trockene Standorte in ein Blütenmeer und eine Bienenweide reichblühend und …"
+    },
+    {
+      "title": "Kontakt | Pflanzmich.de",
+      "url": "https://www.pflanzmich.de/kontakt/",
+      "snippet": "Bei Fragen, wünschen oder Rat, schreiben Sie uns."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-3",
+  "slug": "compassioninmachinelearning-qwen3-8b-compassion-cleaned-10k-20260910-cpt-merged-epoch-3",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-3",
+  "created_at": "2026-09-11T19:10:50.000Z",
+  "updated_at": "2026-09-11T19:11:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "conversational",
+    "dataset:CompassioninMachineLearning/compassion_12185_cleaned",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939374,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "علامات الترقيم واستخداماتها - موضوع",
+      "url": "https://mawdoo3.com/%D8%B9%D9%84%D8%A7%D9%85%D8%A7%D8%AA_%D8%A7%D9%84%D8%AA%D8%B1%D9%82%D9%8A%D9%85_%D9%88%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%D8%A7%D8%AA%D9%87%D8%A7",
+      "snippet": "١ تعريف علامات الترقيم ٢ علامات الترقيم واستخداماتها ٢.٢ الفاصلة والفاصلة المنقوطة ٢.٣ النقطتان الرأسيتان ٢.٤ الأقواس وعلامات التنصيص ٣ المراجع"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=ar",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English"
+    },
+    {
+      "title": "علامات الترقيم: النقطتان الرأسيتان والشَّرطة والشَّرطة المنخفضة",
+      "url": "https://www.annajah.net/%D8%B9%D9%84%D8%A7%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%B1%D9%82%D9%8A%D9%85-%D8%A7%D9%84%D9%86%D9%82%D8%B7%D8%AA%D8%A7%D9%86-%D8%A7%D9%84%D8%B1%D8%A3%D8%B3%D9%8A%D8%AA%D8%A7%D9%86-%D9%88%D8%A7%D9%84%D8%B4%D8%B1%D8%B7%D8%A9-%D9%88%D8%A7%D9%84%D8%B4%D8%B1%D8%B7%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D8%AE%D9%81%D8%B6%D8%A9-article-43347",
+      "snippet": "Aug 29, 2024 · النقطتان الرأسيتان تُرسم النقطتان الرأسيتان في الكتابة العربية على هذه الصورة (:)، وهما من علامات النبرات الصوتية وعلامات الوقف أيضاً. وتسمَّيان علامة التوضيح والحكاية، أو …"
+    },
+    {
+      "title": "وزارة التربية والتعليم - الصفحة الرئيسية",
+      "url": "https://moe.gov.eg/",
+      "snippet": "وزارة التربية والتعليم الوزير القرارات القوانين الكتب الدورية المنصات التعليمية الخدمات الإلكترونية طلب التقدم لمد الخدمة للمعلمين المحالين لسن التقاعد نتيجة ابناؤنا فى الخارج انشاء الحساب الموحد …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://platform.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top5pct",
+  "slug": "selectivedopd-justrl-qwen3-1p7b-selective-top5pct",
+  "author": "SelectiveDOPD",
+  "url": "https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top5pct",
+  "created_at": "2026-09-11T16:49:16.000Z",
+  "updated_at": "2026-09-11T16:55:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 8138453934,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "信息提示 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/572507939.html",
+      "snippet": "帮助 | 意见反馈 | 投诉举报 京ICP证030173号-1 京网文【2023】1034-029号 ©2026Baidu 使用百度前必读 | 知道协议"
+    },
+    {
+      "title": "解压缩文件时出现：这个压缩文件格式未知或者数据已经被损坏！急啊…",
+      "url": "https://zhidao.baidu.com/question/81947331.html",
+      "snippet": "解压缩文件时出现：这个压缩文件格式未知或者数据已经被损坏！急啊！！这是因为压缩包中存在损坏的文件，所以无法解压。解决方 …"
+    },
+    {
+      "title": "TechNet",
+      "url": "https://social.technet.microsoft.com/",
+      "snippet": ""
+    },
+    {
+      "title": "付款方式中，“DP/DA”指什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/8457466.html",
+      "snippet": "1、付款交单 (Documents against Payment,D/P),是指代收行必须在进口商付清货款后，才可将商业 (货运) 单据交给进口方的一种结算 …"
+    },
+    {
+      "title": "《GTA5》PC电脑版存档位置在什么地方 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/940712417393917972.html",
+      "snippet": "Nov 5, 2016 · 《GTA5》PC电脑版存档位置在什么地方《GTA5》PC电脑版存档位置在Profiles文件夹中，使用寻找方法如下：1、首先 …"
+    }
+  ]
+}

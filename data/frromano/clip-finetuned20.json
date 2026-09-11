@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "frromano/clip-finetuned20",
+  "slug": "frromano-clip-finetuned20",
+  "author": "frromano",
+  "url": "https://huggingface.co/frromano/clip-finetuned20",
+  "created_at": "2026-09-11T13:23:34.000Z",
+  "updated_at": "2026-09-11T13:23:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TomTom MyDrive Connect - Update your sat nav | TomTom",
+      "url": "https://www.tomtom.com/de_de/navigation/mydrive-connect/",
+      "snippet": "Laden Sie MyDrive Connect kostenlos herunter, verwalten Sie damit Ihre Inhalte und Dienste und erhalten Sie die neuesten Karten- …"
+    },
+    {
+      "title": "Kartenaktualisierungsdienst | TomTom",
+      "url": "https://www.tomtom.com/de_de/navigation/maps-services/map-update-service/",
+      "snippet": "Immer die Straße vor sich wissen. Aktualisieren Sie Ihre Karte. Laden Sie die Karte Ihrer Wahl herunter und installieren Sie sie."
+    },
+    {
+      "title": "TomTom-Navi aktualisieren - so klappt das Karten-Update",
+      "url": "https://www.chip.de/ratgeber/software/tomtom-navi-aktualisieren-so-klappt-das-karten-update_8b3842bb-afb7-43b6-a74d-39b6a67bd236.html",
+      "snippet": "Aug 22, 2022 · Je nach TomTom-Navi können Sie die Karten-Updates entweder auf Lebenszeit oder in den ersten 90 Tagen …"
+    },
+    {
+      "title": "Aktualisieren der Karte Ihrer fest installierten Navigation",
+      "url": "https://help.tomtom.com/hc/de-de/articles/7664939544466-Aktualisieren-der-Karte-Ihrer-fest-installierten-Navigation",
+      "snippet": "Stecken Sie die SD-Karte bzw. den USB-Stick Ihres Navigationsgeräts in Ihren Computer. Klicken Sie auf Mein Gerät aktualisieren …"
+    },
+    {
+      "title": "Aktualisieren Ihres Geräts mit MyDrive Connect – TomTom-Support",
+      "url": "https://help.tomtom.com/hc/de-de/articles/360013960039-Aktualisieren-Ihres-Ger%C3%A4ts-mit-MyDrive-Connect",
+      "snippet": "In diesem Video wird gezeigt, wie Sie die auf Ihrem Gerät installierten Karten aktualisieren oder ändern und wie Sie eine brandneue …"
+    }
+  ]
+}

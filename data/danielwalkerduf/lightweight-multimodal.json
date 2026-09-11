@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DanielWalkerduf/lightweight-multimodal",
+  "slug": "danielwalkerduf-lightweight-multimodal",
+  "author": "DanielWalkerduf",
+  "url": "https://huggingface.co/DanielWalkerduf/lightweight-multimodal",
+  "created_at": "2026-09-11T17:28:54.000Z",
+  "updated_at": "2026-09-11T17:28:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ηλεκτρονική συνταγογράφηση - Gov.gr",
+      "url": "https://www.gov.gr/el/services/1002205/elektronike-suntagographese",
+      "snippet": "Dec 20, 2022 · Οι γιατροί και οι φαρμοκοποιοί χρησιμοποιείτε την εφαρμογή ηλεκτρονικής καταχώρησης και εκτέλεσης συνταγών …"
+    },
+    {
+      "title": "www.e-prescription.gr",
+      "url": "https://www.e-prescription.gr/epresapps/clregistry/web/index.html",
+      "snippet": "Welcome to the E-Prescription registry portal."
+    },
+    {
+      "title": "e-prescription.gr - IBM Security Verify Access",
+      "url": "https://www.e-prescription.gr/",
+      "snippet": "IBM Security Verify Access provides secure access management solutions for organizations, enhancing authentication and protecting …"
+    },
+    {
+      "title": "IBM Security Verify Access - e-prescription.gr",
+      "url": "https://www.e-prescription.gr/e-pre/faces/welcome/",
+      "snippet": "Η ιστοσελίδα παρέχει πληροφορίες και υπηρεσίες για την ηλεκτρονική συνταγογράφηση στην Ελλάδα."
+    },
+    {
+      "title": "Οδηγίες σύνδεσης στη νέα εφαρμογή της Ηλεκτρονικής …",
+      "url": "https://www.idika.gr/odigies-syndesis-sti-nea-efarmogi-tis-ilektronikis-syntagografisis/",
+      "snippet": "Συνδεθείτε εκ νέου στο https://www.e-prescription.gr/portal/ και επιλέξτε από το μενού αριστερά την Ηλεκτρονική Συνταγογράφηση."
+    }
+  ]
+}

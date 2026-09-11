@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kbenz/petal_dryrun_policy",
+  "slug": "kbenz-petal_dryrun_policy",
+  "author": "kbenz",
+  "url": "https://huggingface.co/kbenz/petal_dryrun_policy",
+  "created_at": "2026-09-11T19:32:43.000Z",
+  "updated_at": "2026-09-11T19:33:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:kbenz/petal_pickup_dryrun",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707320,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=fr",
+      "snippet": "Voici Gemini, l'assistant IA de Google. Faites-vous aider pour rédiger, planifier, trouver des idées et plus encore. Découvrez la …"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/?hl=pt-PT",
+      "snippet": "Conheça o Gemini, o assistente de IA da Google. Receba ajuda para escrever, planear, debater ideias e muito mais. Experimente o …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=pt-br",
+      "snippet": "Conheça o Gemini, o assistente de IA do Google. Receba ajuda para escrever, planejar, ter ideias e muito mais. Conheça o poder …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=it",
+      "snippet": "Ecco Gemini, l'assistente AI di Google. Ricevi aiuto per scrivere, pianificare, fare brainstorming e molto altro. Prova la potenza dell'AI …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=es-MX",
+      "snippet": "Conoce a Gemini, el asistente de IA de Google. Te ayuda a escribir, planificar, obtener ideas y más. Experimenta el poder de la IA …"
+    }
+  ]
+}

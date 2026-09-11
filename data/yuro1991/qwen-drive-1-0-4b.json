@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Yuro1991/Qwen-Drive-1.0-4B",
+  "slug": "yuro1991-qwen-drive-1-0-4b",
+  "author": "Yuro1991",
+  "url": "https://huggingface.co/Yuro1991/Qwen-Drive-1.0-4B",
+  "created_at": "2026-09-11T16:36:03.000Z",
+  "updated_at": "2026-09-11T16:36:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen_drive",
+    "autonomous-driving",
+    "motion-planning",
+    "3d-perception",
+    "visual-question-answering",
+    "qwen",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2609.00111",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 13769270430,
+  "storage_human": "13.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DieDruckdienstleister.de - online drucken. Schnell & günstig",
+      "url": "https://www.diedruckdienstleister.de/",
+      "snippet": "Sie übermitteln Ihr Logo oder Ihren Entwurf, unsere Grafiker passen die Daten für ein optimales Druckergebnis zum günstigen Preis …"
+    },
+    {
+      "title": "Produkte | drucken - schnell & günstig",
+      "url": "https://www.diedruckdienstleister.de/Produkte/",
+      "snippet": "EINFACH ÜBERALL WERBEN. Produkte zum Kleben, Spannen, Hängen."
+    },
+    {
+      "title": "DieDruckdienstleister.de Erfahrungen: Lies 15 Bewertungen zu ...",
+      "url": "https://www.trustedshops.de/bewertung/info_X617C555D1EBE00C86BF1815AFBDABB56.html",
+      "snippet": "Verifiziert DieDruckdienstleister.de hat Trusted Shops zum Sammeln dieser Kundenbewertung genutzt. So können wir verifizieren, …"
+    },
+    {
+      "title": "DieDruckdienstleister.de | Dietersheim - Facebook",
+      "url": "https://www.facebook.com/diedruckdienstleister/",
+      "snippet": "Mar 6, 2023 · Diedruckdienstleister.de - Einfach online drucken. Schnell & günstig. Auch eine Idee: #Desinfektionstücher individuell …"
+    },
+    {
+      "title": "diedruckdienstleister.de - Startseite | online drucken. S... - Die ...",
+      "url": "https://sur.ly/i/diedruckdienstleister.de",
+      "snippet": "Günstiger Druck und Express-Lieferung von Fahnen, Plakaten, Flyern und Messebedarf! diedruckdienstleister.de. Wir sind Ihre …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dabeet24/Qwen3.8-27B-Q4_K_M-GGUF",
+  "slug": "dabeet24-qwen3-8-27b-q4_k_m-gguf",
+  "author": "dabeet24",
+  "url": "https://huggingface.co/dabeet24/Qwen3.8-27B-Q4_K_M-GGUF",
+  "created_at": "2026-09-11T13:17:05.000Z",
+  "updated_at": "2026-09-11T13:18:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810714432,
+  "storage_human": "16.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "First Bank for professional individual in France | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/en",
+      "snippet": "Crédit Agricole is the No. 1 bank for housing, agriculture, businesses, professionals and local authorities"
+    },
+    {
+      "title": "Banque des particuliers professionnels en France | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/",
+      "snippet": "Crédit Agricole 1re banque de l'habitat, de l'agriculture, des entreprises, des pros, des collectivites territoriales"
+    },
+    {
+      "title": "Financial publication Bank for individual | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/en/finance/financial-publications",
+      "snippet": "Find the Crédit Agricole S.A. financial results, the Universal Registration Document, the accounts of the Crédit Agricole Group, the …"
+    },
+    {
+      "title": "Découvrir le groupe Crédit Agricole",
+      "url": "https://www.credit-agricole.com/notre-groupe/decouvrir-le-groupe-credit-agricole",
+      "snippet": "Crédit Agricole 1e banque de l'habitat, l'agriculture, les entreprises, les pros, les collectivités territoriales et particuliers avec agences …"
+    },
+    {
+      "title": "Group structure | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/en/group/group-structure",
+      "snippet": "Crédit Agricole S.A. has a number of subsidiaries specialising in all areas of finance, serving the Regional Banks and its banking …"
+    }
+  ]
+}

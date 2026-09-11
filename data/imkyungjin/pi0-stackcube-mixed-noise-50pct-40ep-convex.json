@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-mixed-noise-50pct-40ep-convex",
+  "slug": "imkyungjin-pi0-stackcube-mixed-noise-50pct-40ep-convex",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-50pct-40ep-convex",
+  "created_at": "2026-09-11T11:09:21.000Z",
+  "updated_at": "2026-09-11T11:12:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_mixed_noise_50pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "41 Elektriker Jobs in Zug - jobs.ch",
+      "url": "https://www.jobs.ch/de/stellenangebote/?location=zug&term=elektriker&msockid=39b560c438c860513dc577153992612a",
+      "snippet": "Bewirb dich jetzt auf Elektriker Jobs in Zug! Wir haben alles für deinen nächsten Job."
+    },
+    {
+      "title": "Elektriker Jobs in Zug - 245 offene Stellen auf JobScout24",
+      "url": "https://www.jobscout24.ch/de/jobs-in-zug/elektriker/",
+      "snippet": "Aug 31, 2026 · 245 Elektriker Stellen in Zug finden. Bewirb Dich jetzt auf Deinen neuen Job."
+    },
+    {
+      "title": "elektriker Jobs in Zug, ZG - Indeed",
+      "url": "https://ch.indeed.com/q-elektriker-l-zug,-zg-Jobs.html",
+      "snippet": "74 Job als Elektriker in Zug, ZG auf Indeed.com verfügbar. Montage-elektriker, Elektriker, Betriebselektriker und mehr!"
+    },
+    {
+      "title": "Elektriker Elektroniker Jobs in Kanton Zug - Jooble",
+      "url": "https://ch.jooble.org/jobs-elektriker-elektroniker/Kanton-Zug",
+      "snippet": "Finde die neusten Elektriker Elektroniker Jobs in Kanton Zug. Wähle aus 53.000+ aktuellen und passenden Stellenangeboten. TOP …"
+    },
+    {
+      "title": "Zug Elektriker Jobs - 30 Stellenangebote auf JobScout24",
+      "url": "https://www.jobscout24.ch/de/jobs/zug%20elektriker/",
+      "snippet": "Aug 24, 2026 · Du analysierst Störungen an elektrischen Anlagen, behebst diese effizient und stellst deren nachhaltige Verfügbarkeit …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "easyminnn/flevel-k25-vlm_contact-60k",
+  "slug": "easyminnn-flevel-k25-vlm_contact-60k",
+  "author": "easyminnn",
+  "url": "https://huggingface.co/easyminnn/flevel-k25-vlm_contact-60k",
+  "created_at": "2026-09-11T13:21:54.000Z",
+  "updated_at": "2026-09-11T13:25:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5_flevel",
+    "robotics",
+    "vla",
+    "gr00t",
+    "robocasa",
+    "action-chunk-compression",
+    "base_model:nvidia/GR00T-N1.5-3B",
+    "base_model:finetune:nvidia/GR00T-N1.5-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2987893697,
+  "parameters_human": "2.99B",
+  "storage_bytes": 8640995604,
+  "storage_human": "8.6 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bouygues Telecom - Espace client",
+      "url": "https://www.bouyguestelecom.fr/mon-compte/ma%20messagerie?msockid=29da3fbdbb0b6f3e34aa286cbadc6efe",
+      "snippet": "Les données personnelles que vous pourriez communiquer à notre assistant sont utilisées par ce dernier afin de vous conseiller dans …"
+    },
+    {
+      "title": "Bbox",
+      "url": "https://www.messagerie.bbox.bouyguestelecom.fr/?msockid=29da3fbdbb0b6f3e34aa286cbadc6efe",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Se connecter - Bouygues Telecom",
+      "url": "https://www.assistance.bouyguestelecom.fr/login/",
+      "snippet": "Comment retrouver mon identifiant ? Mot de passe oublié ?"
+    },
+    {
+      "title": "Comment utiliser ma messagerie Bbox ? - Assistance Bouygues Telecom",
+      "url": "https://www.assistance.bouyguestelecom.fr/s/article/envoi-reception-emails-bbox",
+      "snippet": "Consultez votre messagerie Bbox incluse dans votre offre ! Créez jusqu'à 9 adresses e-mails supplémentaires et rapatriez les …"
+    },
+    {
+      "title": "Bouygues Telecom",
+      "url": "https://www.bouyguestelecom.fr/webapi/byou/auth/signin?msockid=29da3fbdbb0b6f3e34aa286cbadc6efe",
+      "snippet": "Les données personnelles que vous pourriez communiquer à notre assistant sont utilisées par ce dernier afin de vous conseiller dans …"
+    }
+  ]
+}

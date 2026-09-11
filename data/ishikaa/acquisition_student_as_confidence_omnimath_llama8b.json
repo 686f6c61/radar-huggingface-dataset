@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_confidence_omnimath_llama8b",
+  "slug": "ishikaa-acquisition_student_as_confidence_omnimath_llama8b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_omnimath_llama8b",
+  "created_at": "2026-09-11T17:39:55.000Z",
+  "updated_at": "2026-09-11T17:42:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.ch/",
+      "snippet": "Mit Google Übersetzer können Sie kostenlos Wörter, Sätze und Webseiten in über 100 Sprachen übersetzen."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.ch/m",
+      "snippet": "Sprache erkennen→ Deutsch Google-Startseite"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.ch/details",
+      "snippet": "Damit du Details aufrufen kannst, musst du erst Text eingeben"
+    }
+  ]
+}

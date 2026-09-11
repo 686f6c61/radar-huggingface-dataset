@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "iservice/predator-finance",
+  "slug": "iservice-predator-finance",
+  "author": "iservice",
+  "url": "https://huggingface.co/iservice/predator-finance",
+  "created_at": "2026-09-11T16:24:36.000Z",
+  "updated_at": "2026-09-11T16:24:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "finance",
+    "market-reports",
+    "earnings",
+    "SEC",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trade Crypto, Predict Outcomes & Earn — All in One Platform | Gemini",
+      "url": "https://www.gemini.com/",
+      "snippet": "The crypto super app for trading, predicting, and earning. Buy 90+ cryptos, trade prediction markets, and earn with staking and the …"
+    },
+    {
+      "title": "Buy & Sell Bitcoin, Ethereum and 80+ Cryptos Securely with ... - Gemini",
+      "url": "https://www.gemini.com/exchange",
+      "snippet": "Trade crypto with confidence on Gemini Exchange. Enjoy a secure, easy-to-use platform to buy, sell, and store Bitcoin, Ethereum, …"
+    },
+    {
+      "title": "Signing in – Gemini",
+      "url": "https://support.gemini.com/hc/en-us/sections/38744605103131-Signing-in",
+      "snippet": "A simple, secure way to buy and sell cryptocurrency Trade bitcoin and other cryptos in 3 minutes."
+    },
+    {
+      "title": "Gemini | Help Center",
+      "url": "https://support.gemini.com/hc/en-us",
+      "snippet": "Apr 6, 2026 · Gemini Credit Card® Learn about applying for, using, and managing the Gemini Credit Card. Other Gemini Products …"
+    },
+    {
+      "title": "Gemini Onchain",
+      "url": "https://onchain.gemini.com/portfolio",
+      "snippet": "The best place to discover the world of web3 curated by Gemini."
+    }
+  ]
+}

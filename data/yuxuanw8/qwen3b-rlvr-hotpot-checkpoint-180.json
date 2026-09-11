@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-180",
+  "slug": "yuxuanw8-qwen3b-rlvr-hotpot-checkpoint-180",
+  "author": "yuxuanw8",
+  "url": "https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-180",
+  "created_at": "2026-09-11T12:12:53.000Z",
+  "updated_at": "2026-09-11T12:14:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355226095,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "我的OneDrive用不了 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/msoffice/forum/all/%E6%88%91%E7%9A%84onedrive%E7%94%A8%E4%B8%8D/bba42616-6dcf-4ff9-8e72-5c8bc6e18f2e",
+      "snippet": "Aug 19, 2020 · 请问，我才装win10不到1年，但是OneDrive总是登录不了，网页版也不行，但又不懂VPN，很像被冻结一样。大神，可 …"
+    },
+    {
+      "title": "yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-180 · Hugging Face",
+      "url": "https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-180",
+      "snippet": "Instructions to use yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-180 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "频繁蓝屏 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/surface/forum/all/%E9%A2%91%E7%B9%81%E8%93%9D%E5%B1%8F/dc84cc98-705a-4908-8162-db77d867911e",
+      "snippet": "Aug 20, 2020 · 执行内存诊断：选择任务栏中的搜索框，输入“内存”，然后在搜索结果中选择“Windows 内存诊断”，选择“立即重启并检 …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=yuxuanw8%2Fqwen3b-rlcr-hotpot-racpo-v1-checkpoint-180",
+      "snippet": "yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-180 Text Generation • 3B•Updated 7 days ago• 279"
+    },
+    {
+      "title": "윈도우 10 씨디키를 회수하고자 합니다. - Microsoft 커뮤니티",
+      "url": "https://answers.microsoft.com/ko-kr/windows/forum/all/%EC%9C%88%EB%8F%84%EC%9A%B0-10/ce39e73d-9c3c-413d-9d5e-0c4e67f29a09",
+      "snippet": "제가 중고로 노트북을 팔았습니다 해당 노트북에 윈도우10 에듀케이션 라이센스로 정품인증이 되어있었습니다. 노트북에 라이센스를 …"
+    }
+  ]
+}

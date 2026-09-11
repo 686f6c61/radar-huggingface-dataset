@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "Jeethu/granite-4.2-3b-PARO",
+  "slug": "jeethu-granite-4-2-3b-paro",
+  "author": "Jeethu",
+  "url": "https://huggingface.co/Jeethu/granite-4.2-3b-PARO",
+  "created_at": "2026-09-11T19:25:35.000Z",
+  "updated_at": "2026-09-11T19:25:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "granite-4.2",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "ibm",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "arxiv:2511.10645",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:quantized:ibm-granite/granite-4.2-3b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "paroquant",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 947120640,
+  "parameters_human": "947.1M",
+  "storage_bytes": 2687017240,
+  "storage_human": "2.7 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1000001 Z21 START newGen Basis Digitalset - ROCO Modelleisenbahn",
+      "url": "https://www.roco.cc/rde/produkte/steuerung/digitale-steuergerate/1000001-z21-start-newgen-basis-digitalset.html",
+      "snippet": "Z21 START newGen Basis Digitalset.Die Z21 START newGen ist eine im Preis besonders attraktiv gestaltete Einsteiger-Zentrale. …"
+    },
+    {
+      "title": "Roco 1000001 Z21 START newGen Basis digitale set kopen?",
+      "url": "https://modeltreinwinkel.nl/roco-1000001-z21-start-newgen-basis-digitalset.html",
+      "snippet": "De Z21 START newGen is een aantrekkelijk geprijsde digitale centrale voor beginners. Start met de Z21 START newGen en een …"
+    },
+    {
+      "title": "Roco 1000001 Z21 START newGen Basic Set kopen?",
+      "url": "https://www.modelspoorgigant.nl/roco-z21-start-newgen-basic-set-1000001.html",
+      "snippet": "De Z21 START newGen is een instapmodel bedieningseenheid met een bijzonder aantrekkelijke prijs. Begin direct met de Z21 …"
+    },
+    {
+      "title": "z21 START newGen - Products - Roco z21",
+      "url": "https://www.z21.eu/en/products/z21-start-newgen",
+      "snippet": "Locomotives without digital decoders cannot be operated with the Z21 START newGen."
+    },
+    {
+      "title": "Nieuwste generatie Z21 Start van Roco komt eraan",
+      "url": "https://www.modelspoorgigant.nl/modeltreinen/digitaal-rijden/beginnen-met-digitaal/z21-start-newgen.html",
+      "snippet": "Met het nieuwe productassortiment voor 2026 vervangt ROCO de vorige starterset-besturing door de nieuwe Z21 START newGen. …"
+    }
+  ]
+}

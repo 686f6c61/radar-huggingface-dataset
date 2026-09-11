@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DOpazo38/smartcv-model",
+  "slug": "dopazo38-smartcv-model",
+  "author": "DOpazo38",
+  "url": "https://huggingface.co/DOpazo38/smartcv-model",
+  "created_at": "2026-09-11T13:57:01.000Z",
+  "updated_at": "2026-09-11T13:58:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66960393,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267854481,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT 土区 Plus 订阅涨至 999 里拉，现在还有什么低价渠道？",
+      "url": "https://www.zhihu.com/question/2048388711461795815",
+      "snippet": "GPT 土耳其区应用内订阅价格已从 499.99 里拉/月调整至 999.99 里拉/月，价格翻倍。用户续订页面暂未同步…"
+    },
+    {
+      "title": "GPT-6 Astra 价格达上一代旗舰5.6 Sol 的2.5 倍，从性能等方面看，这价 …",
+      "url": "https://www.zhihu.com/question/2079174485035282663",
+      "snippet": "而且这两个任务，GPT-6各自只花了20多分钟，每个任务大概用了我Pro20x套餐周限额的1%。 大家可以再打开 GPT-5.6-Sol xhigh做 …"
+    },
+    {
+      "title": "chatgpt pro版会比plus版更加聪明么？ - 知乎",
+      "url": "https://www.zhihu.com/question/2036334907346122595",
+      "snippet": "ChatGPT聊天界面中，Plus的Instant模式上下文是32K，使用Sol推理模式时是256K（128K输入+128K输出）。 Pro的Instant模式上下 …"
+    },
+    {
+      "title": "我想买国内的coding plan，买谁家的比较好？ - 知乎",
+      "url": "https://www.zhihu.com/question/2019768454232719400",
+      "snippet": "但这话只在 Claude Code 的前提下成立，换到 Codex [24] 就完全两样。 根子在协议：Codex 原生走的是 OpenAI 的 Responses …"
+    },
+    {
+      "title": "image2国内要如何使用？ - 知乎",
+      "url": "https://www.zhihu.com/question/2032423239452995821",
+      "snippet": "最简单的办法，就是到 EDGE浏览器 里安装 DeepSider插件。 然后用邮箱注册，选择IMAGE2就可以使用了。 还可以一个月一个月的 …"
+    }
+  ]
+}

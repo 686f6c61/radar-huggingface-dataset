@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/efficientvim_m3.e450_in1k",
+  "slug": "timm-efficientvim_m3-e450_in1k",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/efficientvim_m3.e450_in1k",
+  "created_at": "2026-09-11T15:04:21.000Z",
+  "updated_at": "2026-09-11T15:04:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "dataset:imagenet-1k",
+    "arxiv:2411.15241",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16652310,
+  "parameters_human": "16.7M",
+  "storage_bytes": 66641712,
+  "storage_human": "67 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "timm (PyTorch Image Models) - Hugging Face",
+      "url": "https://huggingface.co/timm",
+      "snippet": "PyTorch Image Models (timm) is a collection of image models, layers, utilities, optimizers, schedulers, data-loaders / augmentations, …"
+    },
+    {
+      "title": "PyTorch Image Models - GitHub",
+      "url": "https://github.com/huggingface/pytorch-image-models",
+      "snippet": "Py T orch Im age M odels (timm) is a collection of image models, layers, utilities, optimizers, schedulers, data-loaders / …"
+    },
+    {
+      "title": "timm · PyPI",
+      "url": "https://pypi.org/project/timm/",
+      "snippet": "Aug 28, 2026 · Py T orch Im age M odels (timm) is a collection of image models, layers, utilities, optimizers, schedulers, data-loaders …"
+    },
+    {
+      "title": "TIMM - Tournoi Montpelliérain de Sport contre l'Homophobie",
+      "url": "https://timm-montpellier.fr/",
+      "snippet": "Aug 31, 2025 · Le Tournoi International Montpellier Méditerranée (TIMM) revient pour une nouvelle édition haute en couleurs, placée …"
+    },
+    {
+      "title": "Pytorch Image Models (timm) | timmdocs",
+      "url": "https://timm.fast.ai/",
+      "snippet": "Pytorch Image Models (timm) `timm` is a deep-learning library created by Ross Wightman and is a collection of SOTA computer …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yusifnuri/phi-4-mini-instruct_classification",
+  "slug": "yusifnuri-phi-4-mini-instruct_classification",
+  "author": "yusifnuri",
+  "url": "https://huggingface.co/yusifnuri/phi-4-mini-instruct_classification",
+  "created_at": "2026-09-11T15:41:49.000Z",
+  "updated_at": "2026-09-11T15:41:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "small-language-model",
+    "enterprise-benchmark",
+    "classification",
+    "base_model:adapter:microsoft/Phi-4-mini-instruct",
+    "text-generation",
+    "conversational",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28116030,
+  "storage_human": "28 MB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "208 отзива за Очна клиника Ресбиомед ...",
+      "url": "https://mybulgariacenter.com/lekar/sofiia/ochna-klinika-resbiomed/",
+      "snippet": "Информация за Очна клиника Ресбиомед, Лекар в София (София) Тук можете да видите местоположението, работното …"
+    },
+    {
+      "title": "Препоръки относно очна клиника за ...",
+      "url": "https://www.bg-mamma.com/?topic=852548",
+      "snippet": "Jun 12, 2015 · Някои потребители споделят положителен опит с клиника \"Den\", където д-р Kuychukov е извършил успешна …"
+    },
+    {
+      "title": "Очна клиника Ресбиомед, ж.к. Зона Б-19, ул ...",
+      "url": "https://bg.revieweuro.com/sofia-city/ochna-klinika-resbiomed-1204380",
+      "snippet": "Новодошли без часове влизат, вместо тези със запазени. Изключително несериозно и безотговорно отношение. Час за дете, …"
+    },
+    {
+      "title": "Очна клиника Ресбиомед - София",
+      "url": "https://www.resbiomedeye.com/",
+      "snippet": "Очна клиника РЕСБИОМЕД е един от най-модерните и технологично най-добре оборудваните офталмологични центрове в …"
+    },
+    {
+      "title": "Очна клиника Ресбиомед - Болници",
+      "url": "https://болници.com/%D0%BB%D0%B5%D1%87%D0%B5%D0%B1%D0%BD%D0%B8-%D0%B7%D0%B0%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F/%D0%BE%D1%87%D0%BD%D0%B0-%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B0-%D1%80%D0%B5%D1%81%D0%B1%D0%B8%D0%BE%D0%BC%D0%B5%D0%B4/",
+      "snippet": "Очна клиника РЕСБИОМЕД извършва пълен спектър на услуги в областта на офталмологията. Консултации с външни …"
+    }
+  ]
+}

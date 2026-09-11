@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SelectiveDOPD/QuestA-Qwen3-1p7b-BatchSelective-Top10pct",
+  "slug": "selectivedopd-questa-qwen3-1p7b-batchselective-top10pct",
+  "author": "SelectiveDOPD",
+  "url": "https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-1p7b-BatchSelective-Top10pct",
+  "created_at": "2026-09-11T19:36:21.000Z",
+  "updated_at": "2026-09-11T19:40:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guia Completo das Ferramentas do Mix de Marketing para …",
+      "url": "https://www.justsell.com.br/blog/guia-completo-das-ferramentas-do-mix-de-marketing-para-empreendedores/",
+      "snippet": "Neste guia completo, vamos apresentar as principais ferramentas do mix de marketing e como utilizá-las para impulsionar seu …"
+    },
+    {
+      "title": "Ferramentas de marketing: 31 opções para impulsionar resultados",
+      "url": "https://neilpatel.com/br/blog/ferramentas-de-marketing/",
+      "snippet": "Jul 9, 2026 · Conheça as principais ferramentas de marketing para SEO, produção de conteúdo, redes sociais, gestão e IA e como …"
+    },
+    {
+      "title": "Mix de marketing ︎ definição, componentes e exemplo de um mix de marketing",
+      "url": "https://www.appvizer.com.br/revista/marketing/multi-level-marketing/mix-de-marketing",
+      "snippet": "Os componentes do mix de marketing: quais são os 4Ps do marketing? Por trás desse nome, encontramos um dispositivo …"
+    },
+    {
+      "title": "Mix de Marketing: O que é, Quais São os 4 Ps e Como Aplicar",
+      "url": "https://leadster.com.br/blog/mix-de-marketing/",
+      "snippet": "Jan 13, 2023 · Você sabe o que é Mix de Marketing e quais são os 4 Ps que englobam esse conceito? Fique por dentro dessa …"
+    },
+    {
+      "title": "Compreendendo o Mix de Marketing: Ferramentas Essenciais e",
+      "url": "https://www.justsell.com.br/blog/compreendendo-o-mix-de-marketing-ferramentas-essenciais-e-estrategias-modernas/",
+      "snippet": "Compreender e dominar o mix de marketing é essencial para qualquer empreendedor que deseja alcançar o sucesso nos negócios. …"
+    }
+  ]
+}

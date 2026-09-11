@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yuvalgot/act_towel_fold1_dagger_20260911",
+  "slug": "yuvalgot-act_towel_fold1_dagger_20260911",
+  "author": "yuvalgot",
+  "url": "https://huggingface.co/yuvalgot/act_towel_fold1_dagger_20260911",
+  "created_at": "2026-09-11T18:05:27.000Z",
+  "updated_at": "2026-09-11T18:05:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:yuvalgot/towel_fold1_dagger_aggregated",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Do people actually masturbate when they sext? - Reddit",
+      "url": "https://www.reddit.com/r/AskRedditAfterDark/comments/17ieoba/do_people_actually_masturbate_when_they_sext/",
+      "snippet": "Oct 28, 2023 · Instead of trying to fully masturbate while sexting you should focus on the intensity of the moment. Slowly stroke or …"
+    },
+    {
+      "title": "I (19M) can't stop jerking off to my girlfriend (21F), and it ... - Reddit",
+      "url": "https://www.reddit.com/r/relationship_advice/comments/1cjvrmi/i_19m_cant_stop_jerking_off_to_my_girlfriend_21f/",
+      "snippet": "Being heavily addicted to porn before I met her, it took quite some effort to drop it. However, my addiction has pretty much just …"
+    },
+    {
+      "title": "11 Sexting Examples | PS Sex - POPSUGAR",
+      "url": "https://www.popsugar.com/sex/sexting-examples-49094910",
+      "snippet": "Oct 2, 2025 · This example sext shows how to check-in with your partner throughout your sexting conversation to make sure …"
+    },
+    {
+      "title": "Masturbating to girlfriend as opposed to porn",
+      "url": "https://www.loveshack.org/forums/topic/295148-masturbating-to-girlfriend-as-opposed-to-porn/",
+      "snippet": "Jan 23, 2012 · Truly, you gotta nail-bite and stop jerking with the stimulation of thoughts of porn. It's a tough thing."
+    },
+    {
+      "title": "13 Sexting Tips & 796 Wild Sexting Examples To Turn Him On",
+      "url": "https://badgirlsbible.com/sexting-tips",
+      "snippet": "Oct 22, 2024 · This sexting guide will show you how to smoothly and confidently start sexting with your partner. I’ve broken these …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-300",
+  "slug": "yuxuanw8-qwen3b-rlvr-hotpot-checkpoint-300",
+  "author": "yuxuanw8",
+  "url": "https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-300",
+  "created_at": "2026-09-11T12:18:32.000Z",
+  "updated_at": "2026-09-11T12:19:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355226095,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/news - Reddit",
+      "url": "https://www.reddit.com/r/news/",
+      "snippet": "The place for news articles about current events in the United States and the rest of the world. Discuss it all here."
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "SaintMeghanMarkle - Reddit",
+      "url": "https://www.reddit.com/r/SaintMeghanMarkle/?feedViewType=classicView",
+      "snippet": "Bonjour! Welcome to our snark sub on faux feminist Saint Meghan and her hypocrite prince, Harry."
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    },
+    {
+      "title": "Official links for AniWatch : r/AniWatchZone - Reddit",
+      "url": "https://www.reddit.com/r/AniWatchZone/comments/1ase54h/official_links_for_aniwatch/",
+      "snippet": "true What are the official proxy links for AniWatch? I only know two so far: https://aniwatch.to https://aniwatchtv.to If you're replying, …"
+    }
+  ]
+}

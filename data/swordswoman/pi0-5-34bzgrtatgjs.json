@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "swordswoman/pi0.5-34bZGrtATgJs",
+  "slug": "swordswoman-pi0-5-34bzgrtatgjs",
+  "author": "swordswoman",
+  "url": "https://huggingface.co/swordswoman/pi0.5-34bZGrtATgJs",
+  "created_at": "2026-09-11T13:16:14.000Z",
+  "updated_at": "2026-09-11T13:17:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "pi0.5",
+    "openroboto",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digipad by La Digitale",
+      "url": "https://digipad.app/",
+      "snippet": "Digipad by La Digitale Digipad allows to create collaborative multimedia walls for face-to-face class, virtual class or remote work."
+    },
+    {
+      "title": "Digipad by La Digitale",
+      "url": "https://digipad.app/?lang=it",
+      "snippet": "Une application en ligne pour créer des murs multimédias collaboratifs proposée par La Digitale"
+    },
+    {
+      "title": "Etherpad pour Digipad",
+      "url": "https://doc.digipad.app/",
+      "snippet": "A collaborative document that everyone can edit in real time."
+    },
+    {
+      "title": "Maintenance - Digipad by La Digitale",
+      "url": "https://digipad.app/p/541025/0e5a66e5b422e",
+      "snippet": "Une application en ligne pour créer des murs multimédias collaboratifs proposée par La Digitale"
+    },
+    {
+      "title": "Digipad by La Digitale",
+      "url": "https://digipad.app/p/944941/ce.ia95.sg@ac-versailles.fr",
+      "snippet": "May 1, 2010 · Digipad permet de créer des murs collaboratifs multimédias pour la classe en présentiel, la classe virtuelle ou le travail …"
+    }
+  ]
+}

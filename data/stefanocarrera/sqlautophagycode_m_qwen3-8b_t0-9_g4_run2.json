@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g4_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-9_g4_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g4_run2",
+  "created_at": "2026-09-11T17:44:36.000Z",
+  "updated_at": "2026-09-11T17:44:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hogwarts Legacy: Mondkalb fangen und retten - GeekGuide.de",
+      "url": "https://geekguide.de/hogwarts-legacy-mondkalb-fangen-und-retten/",
+      "snippet": "Feb 23, 2023 · Alles was man dafür machen muss ist die Karte öffnen und den rechten Analog-Stick drücken (R3-Taste). …"
+    },
+    {
+      "title": "Hogwarts Legacy: Mondkalb fangen und retten - gamehelp.net",
+      "url": "https://www.gamehelp.net/guides/039921D50FEBA700FB7B32752C721A40.html",
+      "snippet": "Alles was man dafür machen muss ist die Karte öffnen und den rechten Analog-Stick drücken (R3-Taste). Anschließend muss man …"
+    },
+    {
+      "title": "Hogwarts Legacy: Rette Biscuit - Wildererlager finden und das Mondkalb …",
+      "url": "https://www.eurogamer.de/hogwarts-legacy-rette-biscuit-wildererlager-finden-und-das-mondkalb-fuer-garnuff-retten",
+      "snippet": "Feb 23, 2023 · Ein Kobold namens Garnuff in Hogsmeade vermisst sein Mondkalb, nachdem es von Wilderern gestohlen wurde. So …"
+    },
+    {
+      "title": "So finden und retten Sie das Mondkalb in Hogwarts Legacy",
+      "url": "https://4pmtech.com/de/kak-najti-i-spasti-lunnogo-telenka-v-hogwarts-legacy/",
+      "snippet": "Feb 20, 2023 · Während der Quest „Elf, Nab-Sack und Loom“ in „Hogwarts Legacy“ bittet Dick die Spieler, das Mondkalb zu retten. …"
+    },
+    {
+      "title": "Wie rettet man ein Mondkalb in Hogwarts Legacy?",
+      "url": "https://xboxplay.games/de/news/wie-rettet-man-ein-mondkalb-in-hogwarts-legacy-37217",
+      "snippet": "Feb 14, 2023 · In diesem Artikel besprechen wir, wie Sie ein Mondkalb in Hogwarts Legacy retten. Wir behandeln die …"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF",
+  "created_at": "2026-09-11T12:57:34.000Z",
+  "updated_at": "2026-09-11T13:03:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "en",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "dataset:DavidAU/THE-DECKARD-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 79724872000,
+  "storage_human": "79.7 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Çeviri",
+      "url": "https://translate.google.com.tr/",
+      "snippet": "Google'ın ücretsiz olarak sunulan hizmeti, İngilizce ile 100'den fazla dil arasında kelime, ifade ve web sayfalarını anında çevirebilir."
+    },
+    {
+      "title": "Google Çeviri",
+      "url": "https://translate.google.com/?hl=tr",
+      "snippet": "Google Çeviri, İngilizce dahil 100'den fazla dilde kelime, ifade ve web sayfalarını anında çeviren ücretsiz bir hizmettir."
+    },
+    {
+      "title": "Yandex Çeviri",
+      "url": "https://translate.yandex.com/tr/",
+      "snippet": "İngilizce ve Rusça'dan Türkçe'ye iki yönlü çeviri. İsterseniz kelimeleri ve cümleleri, büyük metinleri, fotoğrafları, belgeleri ve web …"
+    },
+    {
+      "title": "DeepL Translate: Dünyanın en isabetli çevirisi",
+      "url": "https://www.deepl.com/tr/translator",
+      "snippet": "DeepL çeviri ile metinleri & belgeleri anında çevir. Her gün milyonlarca kişi DeepL ile online çeviri yapıyor."
+    },
+    {
+      "title": "Tureng - çeviri - Türkçe İngilizce Sözlük",
+      "url": "https://tureng.com/tr/turkce-ingilizce/%C3%A7eviri",
+      "snippet": "\"çeviri\" teriminin İngilizce Türkçe Sözlükte anlamları : 8 sonuç ... \"çeviri\" teriminin diğer terimlerle kazandığı İngilizce Türkçe Sözlükte …"
+    }
+  ]
+}

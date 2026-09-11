@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kaptaan45/KaptaanLM-Scout-10M",
+  "slug": "kaptaan45-kaptaanlm-scout-10m",
+  "author": "kaptaan45",
+  "url": "https://huggingface.co/kaptaan45/KaptaanLM-Scout-10M",
+  "created_at": "2026-09-11T14:09:14.000Z",
+  "updated_at": "2026-09-11T14:30:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kaptaan",
+    "text-generation",
+    "reasoning",
+    "chain-of-thought",
+    "small-language-models",
+    "slm",
+    "cot",
+    "dpo",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 329168523,
+  "storage_human": "329 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CF8UUR IKO • ABF Store",
+      "url": "https://www.abf.store/s/en/bearings/CF8UUR-IKO/691663",
+      "snippet": "Cam follower with needle rollers. Price on request. in basket Change ."
+    },
+    {
+      "title": "CF8UUR-A THK • ABF Store",
+      "url": "https://www.abf.store/s/en/bearings/CF8UUR-A-THK/1390187",
+      "snippet": "The CF8UUR-A THK is a cam follower with needle rollers. These rolling elements combine high load capacity with a compact design. …"
+    },
+    {
+      "title": "Metric CF Series | IKO NIPPON THOMPSON - ikont.co.jp",
+      "url": "https://www.ikont.co.jp/eg/product/needle/tou0601.html",
+      "snippet": "Standard Type Cam Followers CF CF The basic Cam Follower model. Stud diameters range from 3 to 30 mm and are suitable for a …"
+    },
+    {
+      "title": "CF8UUR | Cam Follower CF Model from THK | MISUMI",
+      "url": "https://uk.misumi-ec.com/vona2/detail/221000092466/?HissuCode=CF8UUR",
+      "snippet": "Widely used cam follower with a driver groove on the stud head. (CF8UUR) Cam Follower CF Model from THK. Order in many …"
+    },
+    {
+      "title": "CF8UUR-A THK • SP",
+      "url": "https://www.sp-spareparts.com/en/p/cf8uur-a-thk",
+      "snippet": "CF8UUR-A Stud type track rollers."
+    }
+  ]
+}

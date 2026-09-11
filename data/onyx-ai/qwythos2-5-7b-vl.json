@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "onyx-ai/Qwythos2.5-7B-VL",
+  "slug": "onyx-ai-qwythos2-5-7b-vl",
+  "author": "onyx-ai",
+  "url": "https://huggingface.co/onyx-ai/Qwythos2.5-7B-VL",
+  "created_at": "2026-09-11T19:16:15.000Z",
+  "updated_at": "2026-09-11T19:30:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mythos",
+    "security",
+    "vulndetect",
+    "code",
+    "cybersecurity",
+    "base_model:coder3101/Qwen2.5-VL-7B-Instruct-heretic",
+    "base_model:finetune:coder3101/Qwen2.5-VL-7B-Instruct-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "coder3101/Qwen2.5-VL-7B-Instruct-heretic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onyx (minéral) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Onyx_(min%C3%A9ral)",
+      "snippet": "Onyx (minéral) ... L’ onyx est une variété d’ agate, qui est elle-même une variété de calcédoine, elle est généralement teintée et …"
+    },
+    {
+      "title": "Onyx : vertus, propriétés et bienfaits - France Minéraux",
+      "url": "https://www.france-mineraux.fr/vertus-des-pierres/pierre-onyx/",
+      "snippet": "En cas de symptômes ou de maladie, consultez un professionnel de santé qualifié. L’ onyx est une variété de calcédoine à bandes …"
+    },
+    {
+      "title": "Produit d'entretien Onyx pour la maison et le bricolage : produit ...",
+      "url": "https://www.onyxbricolage.fr/",
+      "snippet": "Découvrez tous les produits d'entretien d'Onyx, conçus pour respecter l'homme, la faune et la flore. Osez la qualité professionnelle."
+    },
+    {
+      "title": "Pierre onyx : vertus, variétés et guide d'achat 2026",
+      "url": "https://www.pierre-et-lune.fr/pierre-onyx/",
+      "snippet": "Apr 9, 2026 · La règle qui résume tout : plus votre onyx est d’un noir uniforme, plus il est probablement teinté, et plus il mérite une …"
+    },
+    {
+      "title": "Onyx - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Onyx",
+      "snippet": "Black onyx is perhaps the most famous variety, but it is not as common as onyx with colored bands. Several artificial treatments have …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cris-cmd/michi-audio-affect",
+  "slug": "cris-cmd-michi-audio-affect",
+  "author": "cris-cmd",
+  "url": "https://huggingface.co/cris-cmd/michi-audio-affect",
+  "created_at": "2026-09-11T13:33:32.000Z",
+  "updated_at": "2026-09-11T13:51:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "audio-classification",
+    "audio",
+    "speech-emotion-recognition",
+    "int8",
+    "dataset:myleslinder/crema-d",
+    "base_model:facebook/wav2vec2-base",
+    "base_model:quantized:facebook/wav2vec2-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122927101,
+  "storage_human": "123 MB",
+  "base_model": "facebook/wav2vec2-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cris coiffure : coiffeur à Oyonnax - Planity - RDV en ligne",
+      "url": "https://www.planity.com/cris-coiffure-01100-oyonnax",
+      "snippet": "Situé à Oyonnax, le salon de coiffure Cris Coiffure vous offre un accueil chaleureux et une expérience de coiffure supérieure. Élodie, …"
+    },
+    {
+      "title": "Cris (football, 1977) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cris_(football,_1977)",
+      "snippet": "International brésilien à 22 reprises, il a été champion de France avec l' Olympique lyonnais à quatre reprises, et champion du Brésil …"
+    },
+    {
+      "title": "Cris Art's & Déco | Oyonnax - Facebook",
+      "url": "https://www.facebook.com/crisartsetdeco/",
+      "snippet": "Installée à Pont-d’Ain depuis 2016, l’entreprise a su diversifier ses activités autour de la vannerie, du cannage, du rempaillage, de la …"
+    },
+    {
+      "title": "Cris Coiffure - Réservez en ligne, avis & tarifs - Coiffeur à Oyonnax",
+      "url": "https://www.pagesjaunes.fr/pros/08269501",
+      "snippet": "Cris Coiffure - Réservez en ligne, avis & tarifs - Coiffeur à Oyonnax . Aller au contenu principal. Ouvrir le menuMon historique. Saisir …"
+    },
+    {
+      "title": "Cris Coiffure - Coiffeurs à Oyonnax (01100) - Le Site De",
+      "url": "https://www.le-site-de.com/cris-coiffure-oyonnax_190336.html",
+      "snippet": "Cris Coiffure, Coiffeurs à Oyonnax (01100). Coordonnées, horaires d'ouverture, plan d'accès, avis et devis gratuit."
+    }
+  ]
+}

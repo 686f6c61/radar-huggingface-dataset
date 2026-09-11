@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "drivetechodyssey/Qwen-Drive-1.0-4B-VLM-mlx-8bit",
+  "slug": "drivetechodyssey-qwen-drive-1-0-4b-vlm-mlx-8bit",
+  "author": "drivetechodyssey",
+  "url": "https://huggingface.co/drivetechodyssey/Qwen-Drive-1.0-4B-VLM-mlx-8bit",
+  "created_at": "2026-09-11T17:43:54.000Z",
+  "updated_at": "2026-09-11T17:46:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "autonomous-driving",
+    "visual-question-answering",
+    "qwen",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "arxiv:2609.00111",
+    "base_model:Qwen/Qwen-Drive-1.0-4B",
+    "base_model:quantized:Qwen/Qwen-Drive-1.0-4B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 5156691481,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen-Drive-1.0-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beleef Vlaanderen als toerist: 20 toeristische trekpleisters in ...",
+      "url": "https://www.vlaanderenvakantieland.be/nl/inspiratie/bucketlist-toeristische-trekpleisters",
+      "snippet": "Nov 25, 2025 · Als Vlaming sla je meestal de typische toeristische activiteiten of hotspots over, maar vaak zijn ze meer dan de …"
+    },
+    {
+      "title": "De mooiste bezienswaardigheden in Vlaanderen - Top 20 - Komoot",
+      "url": "https://www.komoot.com/nl-nl/guide/363384/de-mooiste-attracties-in-vlaanderen",
+      "snippet": "Aug 29, 2026 · De beste attracties en bezienswaardigheden in Vlaanderen omvatten een rijke reeks historische …"
+    },
+    {
+      "title": "Toeristische Topattracties Vlaanderen - Top.Vlaanderen - Vlamingen …",
+      "url": "https://top.vlaanderen/topattracties-vlaanderen/",
+      "snippet": "Deze pagina geeft een overzicht van de grootste toeristische attracties, bezienswaardigheden, enz. voor Frans-, West- en Zeeuws …"
+    },
+    {
+      "title": "Toerisme - Vlaanderen.be",
+      "url": "https://www.vlaanderen.be/cultuur-sport-en-vrije-tijd/toerisme",
+      "snippet": "Vlaanderen staat bekend om zijn historische gebouwen, verrassende musea en unieke stadscentra, waar u kan fietsen en wandelen …"
+    },
+    {
+      "title": "Activiteiten in Vlaanderen - Uitstappen & Dingen om te Doen",
+      "url": "https://ontdekvlaanderen.be/categorie/activiteiten-en-uitstappen/",
+      "snippet": "Mar 6, 2025 · Op zoek naar leuke activiteiten in Vlaanderen? Vind inspiratie voor uitstapjes, avonturen en originele belevenissen voor …"
+    }
+  ]
+}

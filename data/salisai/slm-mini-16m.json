@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "salisai/slm-mini-16m",
+  "slug": "salisai-slm-mini-16m",
+  "author": "salisai",
+  "url": "https://huggingface.co/salisai/slm-mini-16m",
+  "created_at": "2026-09-11T17:30:30.000Z",
+  "updated_at": "2026-09-11T17:30:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LOS 10 MEJORES hoteles en Provincia de La Pampa 2026",
+      "url": "https://www.tripadvisor.com.ar/Hotels-g312836-Province_of_La_Pampa_Patagonia-Hotels.html",
+      "snippet": "Los mejores hoteles de Provincia de La Pampa en Tripadvisor: 5.221 opiniones sobre hoteles, fotos de viajeros y los precios más …"
+    },
+    {
+      "title": "Los mejores hoteles de La Pampa – Alojamientos por La Pampa, …",
+      "url": "https://www.booking.com/region/ar/la-pampa.es-ar.html?msockid=25816b491d086ad92d497c981c1e6b4b",
+      "snippet": "Grandes descuentos en hoteles de La Pampa, Argentina. Reserva online, paga en el hotel. Lee comentarios de clientes y escoge el …"
+    },
+    {
+      "title": "Hoteles en La Pampa",
+      "url": "https://www.lapampaturismo.com.ar/hoteles/",
+      "snippet": "Hoteles en La Pampa. Guía de alojamientos: hosterías, cabañas, camping, alquiler de departamentos. Información, reservas, precios."
+    },
+    {
+      "title": "Hoteles en La Pampa | Encontrá y compará ofertas excelentes",
+      "url": "https://www.trivago.com.ar/es-AR/odr/hoteles-la-pampa-argentina?search=200-73243&msockid=25816b491d086ad92d497c981c1e6b4b",
+      "snippet": "Sep 1, 2026 · Compará los precios de 429 hoteles en La Pampa, Argentina. Encontrá la oferta ideal entre millones de opciones y …"
+    },
+    {
+      "title": "Los mejores hoteles y alojamientos disponibles cerca de La Pampa, …",
+      "url": "https://www.booking.com/city/ar/la-pampa.es-ar.html?msockid=25816b491d086ad92d497c981c1e6b4b",
+      "snippet": "Reserva online y conseguí fantásticos descuentos en hoteles de La Pampa, Argentina. Buena disponibilidad, excelentes precios. Lee …"
+    }
+  ]
+}

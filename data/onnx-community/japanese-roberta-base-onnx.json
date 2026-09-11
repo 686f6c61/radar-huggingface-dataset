@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "onnx-community/japanese-roberta-base-ONNX",
+  "slug": "onnx-community-japanese-roberta-base-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/japanese-roberta-base-ONNX",
+  "created_at": "2026-09-11T16:40:40.000Z",
+  "updated_at": "2026-09-11T16:40:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers.js",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "roberta",
+    "fill-mask",
+    "masked-lm",
+    "nlp",
+    "ja",
+    "dataset:cc100",
+    "dataset:wikipedia",
+    "arxiv:2404.01657",
+    "base_model:rinna/japanese-roberta-base",
+    "base_model:quantized:rinna/japanese-roberta-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1145590659,
+  "storage_human": "1.1 GB",
+  "base_model": "rinna/japanese-roberta-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=fr",
+      "snippet": "Téléchargez l'application YouTube officielle sur votre téléphone ou tablette Android. Découvrez les contenus regardés partout dans le …"
+    },
+    {
+      "title": "YouTube — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/YouTube",
+      "snippet": "Le 2 avril 2018, une fusillade éclate au siège social de YouTube situé à San Bruno, ce jour-là, Nasim Najafi Aghdam blesse trois …"
+    }
+  ]
+}

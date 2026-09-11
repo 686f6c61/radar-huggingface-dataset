@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "sdsdfs4545/MyAwesomeModel-TestRepository",
+  "slug": "sdsdfs4545-myawesomemodel-testrepository",
+  "author": "sdsdfs4545",
+  "url": "https://huggingface.co/sdsdfs4545/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-11T16:53:08.000Z",
+  "updated_at": "2026-09-11T16:53:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZDF Streaming-Portal: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.zdf.de/",
+      "snippet": "Alle Videos und Livestreams im ZDF anschauen - ständig verfügbar und interaktiv! Entdecken Sie Filme, Serien, Sportevents, …"
+    },
+    {
+      "title": "Von A-Z: Alle Videos zum Streamen - ZDFmediathek",
+      "url": "https://www.zdf.de/sendungen-a-z",
+      "snippet": "Hier findest du alle Nachrichten, Sport und Magazine, Shows, Dokus, Filme & ZDF-Serien von A bis Z online!"
+    },
+    {
+      "title": "ZDFtext",
+      "url": "https://teletext.zdf.de/teletext/zdf/",
+      "snippet": "ZDFtext – schnell und umfassend informiert"
+    },
+    {
+      "title": "ZDF Fernsehgarten",
+      "url": "https://ticketservice.zdf.de/events/1913-zdf-fernsehgarten",
+      "snippet": "Bitte richten Sie Ihre Bestellung per E‑Mail an fernsehgarten-karten@zdf-service.de Benötigte Angaben: Kopie des …"
+    },
+    {
+      "title": "ZDF-Politbarometer August 2026",
+      "url": "https://presseportal.zdf.de/pressemitteilung/zdf-politbarometer-august-2026",
+      "snippet": "20.08.26, 09:09 Uhr - Nachrichten/Aktuelles ZDF-Politbarometer August 2026 Drei Viertel: Rente mit 63 soll bleiben / Große …"
+    }
+  ]
+}

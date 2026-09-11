@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "niloy629/personaplex-24L-student",
+  "slug": "niloy629-personaplex-24l-student",
+  "author": "niloy629",
+  "url": "https://huggingface.co/niloy629/personaplex-24L-student",
+  "created_at": "2026-09-11T12:10:06.000Z",
+  "updated_at": "2026-09-11T13:44:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41291000776,
+  "storage_human": "41.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows-Media-Player-Nachfolger: Windows-Medienwiedergabe",
+      "url": "https://www.computerbild.de/artikel/cb-Tipps-Software-Windows-Media-Player-Nachfolger-Windows-Medienwiedergabe-App-Tutorial-36240983.html",
+      "snippet": "Aug 3, 2023 · Unter Windows 11 ist der Windows Media Player noch immer an Bord, er hat jedoch einen Nachfolger erhalten. Es ist …"
+    },
+    {
+      "title": "Windows Medienwiedergabe – Kostenloser Download und Installation …",
+      "url": "https://apps.microsoft.com/detail/9wzdncrfj3pt?hl=de-DE&gl=DE",
+      "snippet": "Das Herz von Media Player ist eine voll ausgestattete Musikbibliothek, mit der Sie Musik schnell durchsuchen und wiedergeben …"
+    },
+    {
+      "title": "Windows 11 und 10: Das kann die neue Media-Player-App - PC-WELT",
+      "url": "https://www.pcwelt.de/article/1508452/windows-11-und-10-das-kann-die-neue-media-player-app.html",
+      "snippet": "Seit Januar ist der Media Player von Windows 11 auch für die 10er Version verfügbar. Die Software gefällt durch ihre aufgeräumte …"
+    },
+    {
+      "title": "Windows Media Player Alternativen: Top 10 zum Download - CHIP",
+      "url": "https://www.chip.de/news/Windows-Media-Player-Alternativen-Top-10-zum-Download_183565401.html",
+      "snippet": "Oct 8, 2024 · Suchen Sie nach einer kostenlosen Alternative zum Windows Media Player? Hier finden Sie die Top 10 der besten …"
+    },
+    {
+      "title": "So verwenden Sie die neue Media Player-App in Windows 11",
+      "url": "https://thegadgettechworld.com/de/pages/33665-how-to-use-the-new-media-player-app-in-windows-11",
+      "snippet": "Microsoft hat mit dem Rollout des neuen begonnen Media Player App für Windows 11, die ersetzt Groove-Musik auf deinem …"
+    }
+  ]
+}

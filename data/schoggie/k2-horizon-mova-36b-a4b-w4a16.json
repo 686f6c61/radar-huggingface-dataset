@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "schoggie/K2-Horizon-MoVA-36B-A4B-W4A16",
+  "slug": "schoggie-k2-horizon-mova-36b-a4b-w4a16",
+  "author": "schoggie",
+  "url": "https://huggingface.co/schoggie/K2-Horizon-MoVA-36B-A4B-W4A16",
+  "created_at": "2026-09-11T15:15:25.000Z",
+  "updated_at": "2026-09-11T15:55:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "compressed-tensors",
+    "quantized",
+    "int4",
+    "w4a16",
+    "moe",
+    "mova",
+    "k2-horizon",
+    "vllm",
+    "conversational",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 35526000389,
+  "storage_human": "35.5 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Restaurant Sirtaki | Sprockhövel - Facebook",
+      "url": "https://www.facebook.com/SirtakiRestaurant/",
+      "snippet": "Restaurant Sirtaki Willkommen auf der Facebook-Seite des Restaurants Sirtaki, eurem Lieblingsgriechen in Sprockhövel."
+    },
+    {
+      "title": "Gaststätte Sirtaki in Sprockhövel – speisekarte.de",
+      "url": "https://www.speisekarte.de/sprockh%c3%b6vel/restaurant/gaststaette_sirtaki",
+      "snippet": "Was Gästen im Gaststätte Sirtaki am besten schmeckt von der Speisekarte und alle weiteren Infos zum Restaurantbesuch in …"
+    },
+    {
+      "title": "Sirtaki, Sprockhövel - Speisekarte, Preise und Bewertungen",
+      "url": "https://de.restaurantguru.com/Sirtaki-Sprockhovel",
+      "snippet": "Aug 17, 2026 · Dieses Restaurant spezialisiert sich auf die griechische Küche. Sirtaki bietet besonders gutes Gyros, schmackhaftes …"
+    },
+    {
+      "title": "SIRTAKI, Sprockhövel - Muehlenstr. 4 - Restaurant Bewertungen ...",
+      "url": "https://www.tripadvisor.de/Restaurant_Review-g1888657-d1905724-Reviews-Sirtaki-Sprockhoevel_North_Rhine_Westphalia.html",
+      "snippet": "Sirtaki, Sprockhövel: 91 Bewertungen - bei Tripadvisor auf Platz 2 von 23 von 23 Sprockhövel Restaurants; mit 4.4/5 von Reisenden …"
+    },
+    {
+      "title": "Sirtaki aus Sprockhövel - Speisekarte.menu",
+      "url": "https://speisekarte.menu/restaurants/sprockhoevel/sirtaki-10",
+      "snippet": "Sirtaki in Sprockhövel: gehobene griechische Küche, stimmiges Ambiente, freundlicher Service und kostenloser Parkplatz – ideal für …"
+    }
+  ]
+}

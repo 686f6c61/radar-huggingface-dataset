@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AdenEndure/act_verify_300steps",
+  "slug": "adenendure-act_verify_300steps",
+  "author": "AdenEndure",
+  "url": "https://huggingface.co/AdenEndure/act_verify_300steps",
+  "created_at": "2026-09-11T12:37:21.000Z",
+  "updated_at": "2026-09-11T12:38:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:AdenEndure/so101_pendrive_640x480",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bahrain Tax ID Number (TIN) Guide - TaxDo",
+      "url": "https://taxdo.com/resources/global-tax-id-validation-guide/bahrain",
+      "snippet": "The Tax Identification Number (TIN) in Bahrain serves as a critical unique identifier for both individuals and businesses. It is a …"
+    },
+    {
+      "title": "What is the Tax Identification Number of Bahrain? - Sivo",
+      "url": "https://hub.sivo.it.com/tax-identification/what-is-the-tax-identification-number-of-bahrain/",
+      "snippet": "May 19, 2026 · Bahrain currently does not have a universal Tax Identification Number (TIN) for individuals or most businesses. Unlike …"
+    },
+    {
+      "title": "Check TIN Number for Bahrain | 2026",
+      "url": "https://tincheck.io/bahrain/",
+      "snippet": "Check TIN numbers for 100+ countries Validate taxpayer identification numbers using a fast, clean and business-ready TIN checking …"
+    },
+    {
+      "title": "Kingdom of Bahrain's National Portal",
+      "url": "https://services.bahrain.bh/wps/portal/en/BSP/HomeeServicesPortal/!ut/p/z0/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziDT1NDTwsnA0MLEND3QzMLNzdTEzMLILMfcz0vfSjcCtw8jMFmWBU5Ovsm64fVZBYkqGbmZeWrx_hHhyhG-rpGpxaVJaZnOqSWpKYmVOsX5AdFQkAcTZP8A!!/",
+      "snippet": "2 days ago · Have any questions? Talk with us directly using LiveChat."
+    },
+    {
+      "title": "Tax Identification Number (TIN) in Bahrain | Tally Solutions",
+      "url": "https://tallysolutions.com/mena/bahrain-vat/tax-identification-number/",
+      "snippet": "Apr 30, 2026 · Tax Identification Number (TIN), also known as ‘Tax Registration Number’ (TRN), is a unique number issued by the …"
+    }
+  ]
+}

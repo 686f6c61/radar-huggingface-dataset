@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "stbenjam/qwen3-0.6b-haiku-gguf",
+  "slug": "stbenjam-qwen3-0-6b-haiku-gguf",
+  "author": "stbenjam",
+  "url": "https://huggingface.co/stbenjam/qwen3-0.6b-haiku-gguf",
+  "created_at": "2026-09-11T17:30:46.000Z",
+  "updated_at": "2026-09-11T17:31:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "qwen3",
+    "educational",
+    "style-transfer",
+    "text-generation",
+    "en",
+    "dataset:davanstrien/haiku_dpo",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 639443200,
+  "storage_human": "639 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "東洋厨機工業株式会社",
+      "url": "https://www.toyochuki.com/",
+      "snippet": "厨房機器の販売から施工・メンテナンス、業務用厨房機器、中古厨房機器、調理道具、その他厨房に関することは全て東洋厨機工業 …"
+    },
+    {
+      "title": "会社概要 | 東洋厨機工業株式会社",
+      "url": "https://www.toyochuki.com/comp/",
+      "snippet": "厨房機器の販売から施工・メンテナンス、業務用厨房機器、中古厨房機器、調理道具、その他厨房に関することは全て東洋厨機工業 …"
+    },
+    {
+      "title": "ステンレス加工部 | 東洋厨機工業株式会社",
+      "url": "https://www.toyochuki.com/stainless/",
+      "snippet": "厨房機器の販売から施工・メンテナンス、業務用厨房機器、中古厨房機器、調理道具、その他厨房に関することは全て東洋厨機工業 …"
+    },
+    {
+      "title": "リカバリーたっちゃん | 東洋厨機工業株式会社",
+      "url": "https://www.toyochuki.com/recovery/",
+      "snippet": "東洋厨機工業は中古厨房機器販売にも力を入れています！ 総合厨房機器から小物まで、新製品・展示品10,000点以上。 新古品や中 …"
+    },
+    {
+      "title": "メンテナンス・洗剤 | 取り扱い種目 | 東洋厨機工業株式会社",
+      "url": "http://www.toyochuki.com/item/item04/index.html",
+      "snippet": "厨房機器の販売から施工・メンテナンス、業務用厨房機器、中古厨房機器、調理道具、その他厨房に関することは全て東洋厨機工業 …"
+    }
+  ]
+}

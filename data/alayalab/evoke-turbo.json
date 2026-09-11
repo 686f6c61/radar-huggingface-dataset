@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AlayaLab/Evoke-Turbo",
+  "slug": "alayalab-evoke-turbo",
+  "author": "AlayaLab",
+  "url": "https://huggingface.co/AlayaLab/Evoke-Turbo",
+  "created_at": "2026-09-11T13:32:00.000Z",
+  "updated_at": "2026-09-11T14:46:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "world-model",
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "interactive",
+    "camera-control",
+    "distillation",
+    "arxiv:2608.13546",
+    "base_model:AlayaLab/Evoke",
+    "base_model:finetune:AlayaLab/Evoke",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14312427584,
+  "parameters_human": "14.31B",
+  "storage_bytes": 57249822376,
+  "storage_human": "57.2 GB",
+  "base_model": "AlayaLab/Evoke",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Network Censorship - classes.engineering.wustl.edu",
+      "url": "https://classes.engineering.wustl.edu/~jain/cse570-21/ftp/pearg/index.html",
+      "snippet": "Dec 15, 2021 · In recent years, countries and companies use network censorship technology to censor websites, historical …"
+    },
+    {
+      "title": "HyperNet: A conditional k-anonymous and censorship resistant ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0957417422012799",
+      "snippet": "Dec 1, 2022 · Invisible Internet Project or I2P (I2P, 2003) is another P2P network designed to establish anonymous and censorship …"
+    },
+    {
+      "title": "Bridging Barriers: A Survey of Challenges and Priorities in the ...",
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/xue-bridging",
+      "snippet": "The ecosystem of censorship circumvention tools (CTs) remains one of the most opaque and least understood, overshadowed by the …"
+    },
+    {
+      "title": "Snowflake, a censorship circumvention system using temporary …",
+      "url": "https://bamsoftware.com/papers/snowflake/",
+      "snippet": "Nov 21, 2024 · Snowflake is a censorship circumvention system, a system to enable network communication despite interference by …"
+    },
+    {
+      "title": "Tor’s new WebTunnel bridges mimic HTTPS traffic to evade censorship",
+      "url": "https://www.bleepingcomputer.com/news/security/tors-new-webtunnel-bridges-mimic-https-traffic-to-evade-censorship/",
+      "snippet": "Mar 12, 2024 · The Tor Project officially introduced WebTunnel, a new bridge type specifically designed to help bypass censorship …"
+    }
+  ]
+}

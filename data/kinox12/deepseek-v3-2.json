@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KINOX12/DeepSeek-V3.2",
+  "slug": "kinox12-deepseek-v3-2",
+  "author": "KINOX12",
+  "url": "https://huggingface.co/KINOX12/DeepSeek-V3.2",
+  "created_at": "2026-09-11T18:18:15.000Z",
+  "updated_at": "2026-09-11T18:18:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v32",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V3.2-Exp-Base",
+    "base_model:finetune:deepseek-ai/DeepSeek-V3.2-Exp-Base",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 685355329792,
+  "parameters_human": "685.36B",
+  "storage_bytes": 689484423011,
+  "storage_human": "689.5 GB",
+  "base_model": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "radioforen.de",
+      "url": "https://www.radioforen.de/",
+      "snippet": "Die Diskussionsplattform der Radioszene. Rundfunkforum über programmliche Entwicklungen beim Radio, Technik und Empfang …"
+    },
+    {
+      "title": "ducling - 知乎",
+      "url": "https://www.zhihu.com/people/ducling-59",
+      "snippet": "Freedom is Not Free. 回答数 2,463，获得 664,961 次赞同"
+    },
+    {
+      "title": "Hitradio FFH und FFN - radioforen.de",
+      "url": "https://www.radioforen.de/threads/hitradio-ffh-und-ffn.5908/",
+      "snippet": "Oct 3, 2003 · Mal ne Frage: Wofür stehen die Abkürzungen FFH und FFN??? Der letzte Buchstabe steht ja wahrscheinlich für …"
+    },
+    {
+      "title": "怎么判断是不是灰指甲？ - 知乎",
+      "url": "https://www.zhihu.com/question/46634698",
+      "snippet": "灰指甲你必须知道的症状！！ 甲下型灰指甲常从甲板两侧或未端开始，多先有轻度甲沟炎，后来逐渐变成慢性或渐趋消退。甲沟炎可 …"
+    },
+    {
+      "title": "作业帮客户端",
+      "url": "https://www.zybang.com/windows/download/",
+      "snippet": "联系方式: service@zuoyebang.com 010-82177628 京ICP备15042982号 京ICP证161149号 京公安网备11010802024612号 @2017 小 …"
+    }
+  ]
+}

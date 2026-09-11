@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Quentin-Epitech/EDP",
+  "slug": "quentin-epitech-edp",
+  "author": "Quentin-Epitech",
+  "url": "https://huggingface.co/Quentin-Epitech/EDP",
+  "created_at": "2026-09-11T15:18:39.000Z",
+  "updated_at": "2026-09-11T15:18:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quentin — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Quentin",
+      "snippet": "Sens et origine du nom « Quentin » est issu du latin Quintinus1, diminutif de Quintus, qui signifie « le cinquième », et qui était parfois, …"
+    },
+    {
+      "title": "Mort de Quentin Deranque — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mort_de_Quentin_Deranque",
+      "snippet": "↑Armêl Balogog, « Mort de Quentin Deranque : la violence d'extrême droite est-elle vraiment \"dérisoire\" par rapport à la violence …"
+    },
+    {
+      "title": "Prénom Quentin (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/quentin/prenom-6884",
+      "snippet": "Quelle est la signification du prénom Quentin ? La racine latine de Quintus qui a donné le prénom Quentin signifie \"cinq\" ou …"
+    },
+    {
+      "title": "Le prénom Quentin: Signification, origine, personnalité",
+      "url": "https://www.prenoms.com/prenom-garcon/quentin-3060",
+      "snippet": "Oct 9, 2020 · Tout sur le prénom Quentin : découvrez son origine, combien de Quentin sont nés en France chaque année, ou qui …"
+    },
+    {
+      "title": "Qui était Quentin, le militant nationaliste de 23 ans mort après une ...",
+      "url": "https://www.rtl.fr/actu/justice-faits-divers/qui-etait-quentin-d-le-militant-nationaliste-mort-apres-une-agression-a-lyon-7900601453",
+      "snippet": "Quentin D., le jeune homme de 23 ans proche du collectif identitaire Némésis et grièvement blessé en marge d'une conférence à …"
+    }
+  ]
+}

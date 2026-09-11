@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yusifnuri/phi-4-mini-instruct_summarization",
+  "slug": "yusifnuri-phi-4-mini-instruct_summarization",
+  "author": "yusifnuri",
+  "url": "https://huggingface.co/yusifnuri/phi-4-mini-instruct_summarization",
+  "created_at": "2026-09-11T15:42:36.000Z",
+  "updated_at": "2026-09-11T15:42:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "small-language-model",
+    "enterprise-benchmark",
+    "summarization",
+    "base_model:adapter:microsoft/Phi-4-mini-instruct",
+    "text-generation",
+    "conversational",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28116030,
+  "storage_human": "28 MB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "Pornhubで45万の請求が来てしまって 年齢確認 のところを押しただけで出てしまったんですが ワンクリック詐欺 でしょうか...？？ …"
+    },
+    {
+      "title": "竹前美結さんは美人ですか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11328235186",
+      "snippet": "May 20, 2026 · すごいのは本人じゃなくて日本の加工技術です。 美人といえば、鳥取・米子のレンガ投げ女の方が美人です。"
+    },
+    {
+      "title": "Arrière plan écran noir suite dernière MAJ windows 11",
+      "url": "https://forums.commentcamarche.net/forum/affich-38306104-arriere-plan-ecran-noir-suite-derniere-maj-windows-11",
+      "snippet": "Aug 29, 2026 · Bonjour, Depuis la dernière mise à jour de Windows 11, le 27/08/2026 l'arrière plan de l'écran est systématiquement …"
+    },
+    {
+      "title": "Supprimer mon compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37008466-supprimer-mon-compte-pornhub",
+      "snippet": "Dec 23, 2020 · Applis & Sites Réseaux sociaux Sujet PrécédentSujet Suivant Supprimer mon compte pornhub Tchoinbig- bazfile …"
+    },
+    {
+      "title": "みんな大好きなサイト「pornhub」の読み方を教えてください。",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14228337339",
+      "snippet": "Jul 13, 2020 · みんな大好きなサイト「pornhub」の読み方を教えてください。"
+    }
+  ]
+}

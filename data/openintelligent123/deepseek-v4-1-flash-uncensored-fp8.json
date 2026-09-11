@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "slug": "openintelligent123-deepseek-v4-1-flash-uncensored-fp8",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "created_at": "2026-09-11T15:34:26.000Z",
+  "updated_at": "2026-09-11T15:34:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4.1",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "multimodal",
+    "moe",
+    "fp8",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296708312,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXXLutz – Alles für dein schönes Zuhause - XXXLutz.de",
+      "url": "https://www.xxxlutz.de/?msockid=15df37a5dbcb67a019092074daec66d0",
+      "snippet": "Attraktive Einrichtungsideen online bestellen im XXXLutz Möbelhaus – Markenmöbel in den XXXLutz Filialen, im Online Shop und …"
+    },
+    {
+      "title": "Betten online shoppen - XXXLutz.de",
+      "url": "https://www.xxxlutz.de/betten-C3C3?msockid=15df37a5dbcb67a019092074daec66d0",
+      "snippet": "Betten online kaufen XXXLutz.de Von Boxspringbetten bis Wasserbetten Zusätzliche Funktionen Unterschiedliche Größen Jetzt …"
+    },
+    {
+      "title": "Möbel bei XXXLutz - Über 90.000 Artikel - XXXLutz.de",
+      "url": "https://www.xxxlutz.de/c/moebel?msockid=15df37a5dbcb67a019092074daec66d0",
+      "snippet": "Möbelkauf mit maximalem Komfort bei XXXLutz Mehr als 60.000 Artikel für alle Wohnbereiche – der XXXLutz Online Shop ist die …"
+    },
+    {
+      "title": "Küchen online kaufen - XXXLutz.de",
+      "url": "https://www.xxxlutz.de/kuechen-C41?msockid=15df37a5dbcb67a019092074daec66d0",
+      "snippet": "Küchen online bestellen Planungsküchen Küchenblöcke Modernes Design Hochwertiges Material Verschiedene Stile Jetzt bequem …"
+    },
+    {
+      "title": "XXXLutz Filiale in Ihrer Nähe",
+      "url": "https://www.xxxlutz.de/filialen-standorte?msockid=15df37a5dbcb67a019092074daec66d0",
+      "snippet": "Finden Sie die XXXLutz Filiale ganz in Ihrer Nähe: Hier erhalten Sie einen Überblick über all unsere Möbelhäuser in Deutschland und …"
+    }
+  ]
+}

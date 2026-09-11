@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GoloMarcos/qwen3-0.6b-text2sparql-lora",
+  "slug": "golomarcos-qwen3-0-6b-text2sparql-lora",
+  "author": "GoloMarcos",
+  "url": "https://huggingface.co/GoloMarcos/qwen3-0.6b-text2sparql-lora",
+  "created_at": "2026-09-11T12:47:09.000Z",
+  "updated_at": "2026-09-11T12:47:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51844818,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "MyBroadband – South Africa's biggest and best IT news website, …",
+      "url": "https://mybroadband.co.za/news/",
+      "snippet": "MyBroadband – South Africa's biggest and best IT news website, covering the latest international and local IT and tech news."
+    },
+    {
+      "title": "Rain 5G Home Internet speed test hits 620Mbps – MyBroadband",
+      "url": "https://mybroadband.co.za/news/5g/665582-rain-5g-home-internet-speed-test-hits-620mbps.html",
+      "snippet": "6 days ago · Many users of Rain’s fixed-5G service are getting exceptionally fast speeds in 2026, an analysis by MyBroadband …"
+    },
+    {
+      "title": "MyBroadband Insights",
+      "url": "https://research.mybroadband.co.za/",
+      "snippet": "Speed Test App The MyBroadband Speed Test app is your go-to tool for testing internet performance with precision and ease. …"
+    },
+    {
+      "title": "MyBroadband - Company Press Releases",
+      "url": "https://companies.mybroadband.co.za/",
+      "snippet": "Aug 9, 2026 · Company Press Releases – Resilience in Motion: Why Connected Operations Are Becoming the New Competitive …"
+    }
+  ]
+}

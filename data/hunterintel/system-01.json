@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HunterIntel/System-01",
+  "slug": "hunterintel-system-01",
+  "author": "HunterIntel",
+  "url": "https://huggingface.co/HunterIntel/System-01",
+  "created_at": "2026-09-11T15:41:16.000Z",
+  "updated_at": "2026-09-11T15:41:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTL Nieuws & Entertainment",
+      "url": "https://www.rtl.nl/",
+      "snippet": "Volg het nieuws terwijl het gebeurt, blijf op de hoogte van alle entertainment-nieuwtjes en mis niets van je favoriete RTL-programma’s."
+    },
+    {
+      "title": "Home [RTL Nieuws] | RTL Nieuws & Entertainment",
+      "url": "https://www.rtl.nl/nieuws/home-rtl-nieuws",
+      "snippet": "Aug 18, 2026 · Het laatste nieuws van RTL in de categorie Home [RTL Nieuws]. Volg het nieuws terwijl het gebeurt en blijf op de …"
+    },
+    {
+      "title": "rtl nieuws | NU - Het laatste nieuws het eerst op NU.nl",
+      "url": "https://www.nu.nl/tag/rtl-nieuws",
+      "snippet": "3 days ago · Nieuws en video's over rtl nieuws. Betrouwbaar, gratis en snel op NU.nl, de grootste nieuwssite van Nederland."
+    },
+    {
+      "title": "RTL | NU - Het laatste nieuws het eerst op NU.nl",
+      "url": "https://www.nu.nl/tag/rtl",
+      "snippet": "4 days ago · Nieuws en video's over RTL. Betrouwbaar, gratis en snel op NU.nl, de grootste nieuwssite van Nederland."
+    },
+    {
+      "title": "RTL Nieuws - YouTube",
+      "url": "https://www.youtube.com/RTLNieuws/featured",
+      "snippet": "Get the story behind the headlines, hear the personal stories of people in the news, and see reports from correspondents around the …"
+    }
+  ]
+}

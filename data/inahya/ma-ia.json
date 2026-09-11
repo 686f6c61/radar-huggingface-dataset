@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Inahya/ma-ia",
+  "slug": "inahya-ma-ia",
+  "author": "Inahya",
+  "url": "https://huggingface.co/Inahya/ma-ia",
+  "created_at": "2026-09-11T13:00:38.000Z",
+  "updated_at": "2026-09-11T13:00:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "poki・playhop・laggedこの3つの無料子供向けゲーム ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13317752273",
+      "snippet": "Jul 21, 2025 · poki・playhop・laggedこの3つの無料子供向けゲームサイトは安全でしょうか"
+    },
+    {
+      "title": "win11怎么打开磁盘管理？windows11在哪打开磁盘管理 ...",
+      "url": "https://www.zhihu.com/question/493732209",
+      "snippet": "Oct 21, 2021 · 题主应该是没有将计算机的快捷方式放到桌面，步骤如下： 1）鼠标桌面右击依次点击「个性化」--「主题」--「桌面图 …"
+    },
+    {
+      "title": "「POKIPOKI」 - 無料オンラインゲーム「POKIPOKI」がし ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1018333575",
+      "snippet": "Aug 10, 2008 · 「POKI POKI」 無料オンラインゲーム「POKIPOKI」がしたくて、 ダウンロード までして、 いざゲームスタート!す …"
+    },
+    {
+      "title": "如何删除流氓hao.360主页？ - 知乎",
+      "url": "https://www.zhihu.com/question/35734173",
+      "snippet": "最近也被360导航烦的不行，最后简单地弄了一下，发现有效。 我用的是 火狐浏览器，win7系统，每次打开菜单栏上的快捷按钮 …"
+    },
+    {
+      "title": "Pokki Adware – Was ist es + Removal Guide [gelöst]",
+      "url": "https://sensorstechforum.com/de/pokki-start-menu/",
+      "snippet": "Sep 11, 2024 · Sollten Sie dem Pokki-Startmenü vertrauen?? Ist das Pokki-Startmenü ein legitimes Programm?? How to Remove …"
+    }
+  ]
+}

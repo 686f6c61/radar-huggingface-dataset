@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "unijenaphotonics/my-multitask85",
+  "slug": "unijenaphotonics-my-multitask85",
+  "author": "unijenaphotonics",
+  "url": "https://huggingface.co/unijenaphotonics/my-multitask85",
+  "created_at": "2026-09-11T12:35:33.000Z",
+  "updated_at": "2026-09-11T12:35:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gin-Tasting im Sputnik Paderborn - Burgdame",
+      "url": "https://www.burgdame.de/gin-tasting-in-ostwestfalen-im-sputnik-paderborn/",
+      "snippet": "Bei so viel Auswahl, habe auch ich den Gin für mich entdeckt. Die Kulturkneipe Sputnik Paderborn war der Hauptgrund, warum ich in …"
+    },
+    {
+      "title": "Genussraum-Paderborn: Ihr Partner für sämtliche Spirituosen in ...",
+      "url": "https://www.genussraum-paderborn.de/",
+      "snippet": "Der Genussraum Paderborn bietet Ihnen die Möglichkeit, die Welt hochwertiger Spirituosen kennenzulernen. Dabei bieten wir Ihnen …"
+    },
+    {
+      "title": "Gin Tastings in Paderborn - Entdecke neue Sorten - Triviar",
+      "url": "https://triviar.de/c/gin-tasting/lokale-kurse/paderborn",
+      "snippet": "Entdecke Gin Tastings in Paderborn. Probiere verschiedene Gins und lerne mehr über ihre Herstellung!"
+    },
+    {
+      "title": "Tasting Paderborn ☀️ Verkostung in deiner Nähe ab 59,00 €",
+      "url": "https://www.verkostung.info/shop/standorte/paderborn/",
+      "snippet": "Unsere Verkostungen in Paderborn bieten nicht nur Genuss, sondern auch die Möglichkeit, mehr über die Herkunft und Herstellung …"
+    },
+    {
+      "title": "Gin-Tastings in Paderborn - veranstaltungen-regional.de",
+      "url": "https://www.veranstaltungen-regional.de/tickets/kulinarisches/Tastings+und+Seminare/Paderborn/?art=Gin-Tastings",
+      "snippet": "In verschiedenen Kursen erfahren Sie viele Hintergrundinformationen zur Entstehung des Gins und der Herstellung der …"
+    }
+  ]
+}

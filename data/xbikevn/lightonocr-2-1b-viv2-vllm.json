@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xbikevn/LightOnOCR-2-1B-viv2-vllm",
+  "slug": "xbikevn-lightonocr-2-1b-viv2-vllm",
+  "author": "xbikevn",
+  "url": "https://huggingface.co/xbikevn/LightOnOCR-2-1B-viv2-vllm",
+  "created_at": "2026-09-11T10:36:26.000Z",
+  "updated_at": "2026-09-11T10:36:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lighton_ocr",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:xbikevn/LightOnOCR-2-1B-vi",
+    "base_model:finetune:xbikevn/LightOnOCR-2-1B-vi",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1005647872,
+  "parameters_human": "1.01B",
+  "storage_bytes": 3661394138,
+  "storage_human": "3.7 GB",
+  "base_model": "xbikevn/LightOnOCR-2-1B-vi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kies Kleur tegen Pesten",
+      "url": "https://kieskleurtegenpesten.be/",
+      "snippet": "Strijden tegen pesten doen jullie het ganse jaar door, maar van 21 tot en met 9 oktober 2026 benadrukken KETNET en het Netwerk …"
+    },
+    {
+      "title": "Antipestbeleid | Kies Kleur tegen Pesten",
+      "url": "https://kieskleurtegenpesten.be/bouwstenen/",
+      "snippet": "Pesten gebeurt meestal in groep en los je ook daar op. Waar? Schrijf je in op onze nieuwsbrief en ontvang maandelijks de …"
+    },
+    {
+      "title": "meldsysteem | Kies Kleur tegen Pesten",
+      "url": "https://kieskleurtegenpesten.be/meldsysteem/",
+      "snippet": "Kinderen, jongeren en ouders weten hoe en bij wie ze terechtkunnen voor problemen zoals pesten. We hebben dit via verschillende …"
+    },
+    {
+      "title": "Campagne 2026-27 | Kies Kleur tegen Pesten",
+      "url": "https://kieskleurtegenpesten.be/campagne/",
+      "snippet": "Kies kleur tegen pesten: EEN LEUKE GROEP MAAK JE NIET ALLEEN. Vanaf september gaan we volop voor een ijzersterke …"
+    },
+    {
+      "title": "#durvenpratendurvenbouwen | Kies Kleur tegen Pesten",
+      "url": "https://kieskleurtegenpesten.be/durvenpratendurvenbouwen/",
+      "snippet": "Dankjewel aan de vele sportclubs en jeugdgroepen die samen torens bouwden tegen pesten! #durvenpratendurvenbouwen Tijdens …"
+    }
+  ]
+}

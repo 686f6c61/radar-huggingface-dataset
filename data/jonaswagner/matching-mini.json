@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jonaswagner/matching-mini",
+  "slug": "jonaswagner-matching-mini",
+  "author": "jonaswagner",
+  "url": "https://huggingface.co/jonaswagner/matching-mini",
+  "created_at": "2026-09-11T18:11:32.000Z",
+  "updated_at": "2026-09-11T18:11:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FRITZ!",
+      "url": "https://fritz.com/apps/knowledge-base/FRITZ-Repeater-2400/412_Benutzeroberflache-des-FRITZ-Repeaters-aufrufen/",
+      "snippet": "Nach erfolgreicher Prüfung deines Altgeräts erhältst du dein Cashback. Der Cashback-Betrag wird zunächst mit 0 € vorgemerkt. …"
+    },
+    {
+      "title": "Fritz Repeater einrichten (http://fritz.repeater)",
+      "url": "https://www.computerhilfen.de/info/fritz-repeater-einrichten-und-einstellungen-aendern.html",
+      "snippet": "Der Fritz Repeater der Firma AVM ist eine praktische, kleine Erweiterung für das Heimnetz: Wenn das WLAN Signal des Routers …"
+    },
+    {
+      "title": "FRITZ! WLAN-Repeater kaufen | Mehr WLAN-Reichweite",
+      "url": "https://fritz.com/collections/wlan-mesh-repeater",
+      "snippet": "Die FRITZ!Repeater erweitern dein WLAN bis in den letzten Winkel. Dank moderner Mesh-Technologie arbeiten die WLAN-Repeater …"
+    },
+    {
+      "title": "Fritz-WLAN-Repeater-Test 2026: Die besten Modelle - CHIP",
+      "url": "https://www.chip.de/artikel/Fritz-WLAN-Repeater-im-Vergleich_185254490.html",
+      "snippet": "Apr 21, 2026 · Fritz!Repeater Test: Die besten Modelle im Vergleich. Erfahren Sie, welcher WLAN-Repeater überzeugt und worauf …"
+    },
+    {
+      "title": "Fritz Repeater Vergleich: Alle merkmale im Überblick",
+      "url": "https://fritzboxes.de/fritz-repeater-vergleich/",
+      "snippet": "Ein Fritz Repeater Vergleich bietet eine umfassende Übersicht über die verschiedenen WLAN-Repeater-Modelle der renommierten …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matthewhernandez/beit-generation-best",
+  "slug": "matthewhernandez-beit-generation-best",
+  "author": "matthewhernandez",
+  "url": "https://huggingface.co/matthewhernandez/beit-generation-best",
+  "created_at": "2026-09-11T19:16:49.000Z",
+  "updated_at": "2026-09-11T19:16:55.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - actu Girondins de Bordeaux par WebGirondins, FCGB : …",
+      "url": "https://www.webgirondins.com/",
+      "snippet": "Bienvenue sur WebGirondins, média participatif depuis 2001, sur l'actualité des Girondins de Bordeaux. Écrit, audio et vidéo sont …"
+    },
+    {
+      "title": "Toutes les brèves - actu Girondins de Bordeaux par WebGirondins, …",
+      "url": "https://www.webgirondins.com/fil-info",
+      "snippet": "Nouveau Midi Dix en direct ce mercredi 9 septembre sur WebGirondins consacré à la prise de parole particulièrement forte des …"
+    },
+    {
+      "title": "Mercato FCGB, Transferts du FCGB, L'actu foot des Girondins de Bordeaux",
+      "url": "https://www.livefoot.fr/france/ligue1/girondins-de-bordeaux.php",
+      "snippet": "1 day ago · En devenant socio de WebGirondins, profitez d'un site quasiment sans publicité, de contenus et lives réservés, de notre …"
+    },
+    {
+      "title": "WebGirondins média d'actualité des Girondins de Bordeaux - Facebook",
+      "url": "https://www.facebook.com/webgirondins/",
+      "snippet": "WebGirondins média d'actualité des Girondins de Bordeaux. 22,979 likes · 16,956 talking about this. Média d'information autour des …"
+    },
+    {
+      "title": "FC Girondins de Bordeaux - site officiel | Girondins.com",
+      "url": "https://www.girondins.com/",
+      "snippet": "Aug 1, 2012 · Site officiel du FCGB - Retrouvez toutes les informations sur le club, les résultats, les vidéos et lives des matches, la …"
+    }
+  ]
+}

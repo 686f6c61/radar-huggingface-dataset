@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "arianraje/qwen3-4b-gdn-hybrid-teacher-kd-4k-400m",
+  "slug": "arianraje-qwen3-4b-gdn-hybrid-teacher-kd-4k-400m",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-teacher-kd-4k-400m",
+  "created_at": "2026-09-11T19:04:03.000Z",
+  "updated_at": "2026-09-11T19:30:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_next",
+    "text-generation",
+    "qwen3",
+    "gated-deltanet",
+    "distillation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4546819904,
+  "parameters_human": "4.55B",
+  "storage_bytes": 9105111446,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3-4B, arianraje/qwen3-4b-gdn-hybrid-stage2b-kd",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "恋物癖研究部 恋足萹 (ふぇちけん中文翻訳版) | 蘭田夢",
+      "url": "https://kurocore.com/illust/111926062",
+      "snippet": "Sep 22, 2023 · 恋物癖研究部 恋足萹 (ふぇちけん中文翻訳版) 蘭田夢 R-18 オリジナル ギリシャ型 ふぇちけん 漫画 裸足 裸足裏 足コ …"
+    },
+    {
+      "title": "恋足导航",
+      "url": "https://media.lianzu4.com/HTML/lianzu-original-bg.html",
+      "snippet": "备用站点： https://lianzu1.com https://lianzu2.com https://lianzu4.com"
+    },
+    {
+      "title": "恋物癖研究部 恋足萹 (1/4) 中文翻译版！ 由志愿者翻译。 非常.. | 蘭田 …",
+      "url": "https://twicomi.com/manga/random8837/1704983325826556050",
+      "snippet": "作者:蘭田夢,random8837, 公開日:2023-09-22 07:17:56, いいね:143, リツイート数:11, 作者ツイート:恋物癖研究部 恋足萹 (1/4) 中文 …"
+    },
+    {
+      "title": "恋足相关漫画 - 恋足 相关漫画查找结果 - 八叉漫画",
+      "url": "https://8cmh.com/e/search/result/?searchid=796",
+      "snippet": "恋足 Copyright © 2019 漫画侠 漫画楼 漫画群 八叉书库"
+    },
+    {
+      "title": "丝袜・足交・足控漫画精选-51漫画",
+      "url": "https://51acgs.com/topic/hub/225",
+      "snippet": "本作聚焦于校园内的禁忌诱惑与心理博弈，通过细腻的黑白画风展现角色间的复杂关系与情感冲突，市场定位明确为成人向漫画，核心 …"
+    }
+  ]
+}

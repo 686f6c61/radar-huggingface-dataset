@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hackathon1-fmm/act_cube_sort_robot_1_v0_h200x4_20k",
+  "slug": "hackathon1-fmm-act_cube_sort_robot_1_v0_h200x4_20k",
+  "author": "hackathon1-fmm",
+  "url": "https://huggingface.co/hackathon1-fmm/act_cube_sort_robot_1_v0_h200x4_20k",
+  "created_at": "2026-09-11T19:25:54.000Z",
+  "updated_at": "2026-09-11T19:41:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:hackathon1-fmm/cube_sort_robot_1_v0",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 2478246120,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Order & Get the Best Deals Only at Pizza Hut Malaysia",
+      "url": "https://www.pizzahut.com.my/",
+      "snippet": "Order delicious pizzas, pastas & more at Pizza Hut! Enjoy online ordering or takeaway for a tasty meal. Visit pizzahut.com.my!"
+    },
+    {
+      "title": "Best Pizza Delivery, Pick Up or Dine In | Order Online | Domino's MY",
+      "url": "https://www.dominos.com.my/",
+      "snippet": "Enjoy freshly made & oven-baked pizzas, sides & desserts by delivery, takeaway or dine-in; Official website online ordering for over …"
+    },
+    {
+      "title": "US Pizza Malaysia: Get Delicious Halal Pizzas Delivered To You!",
+      "url": "https://uspizza.my/",
+      "snippet": "Whether meaty, vegetarian or halal, find different pizzas in Malaysia. At US PIZZA, we offer endless flavours with local flair! Pair your …"
+    },
+    {
+      "title": "Our Hand-Tossed Pizza Menu | US PIZZA Malaysia",
+      "url": "https://uspizza.my/our-menu/",
+      "snippet": "Serving all pizza lovers since 1997, we’re the pizza professionals to look out for if you love classic hand-tossed New York pizzas with …"
+    },
+    {
+      "title": "Domino’s Pizza – Order Online | Get 2 Regular Pizza @99 Each",
+      "url": "https://www.dominos.co.in/",
+      "snippet": "Explore our range of delicious Pizzas, delivered in 30 minutes! Find a Domino's Pizza restaurant near you. Celebrate the joy of …"
+    }
+  ]
+}

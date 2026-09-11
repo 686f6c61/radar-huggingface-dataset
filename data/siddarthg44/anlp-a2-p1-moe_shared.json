@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "siddarthg44/anlp-a2-p1-moe_shared",
+  "slug": "siddarthg44-anlp-a2-p1-moe_shared",
+  "author": "siddarthg44",
+  "url": "https://huggingface.co/siddarthg44/anlp-a2-p1-moe_shared",
+  "created_at": "2026-09-11T12:44:20.000Z",
+  "updated_at": "2026-09-11T12:44:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "mixture-of-experts",
+    "translation",
+    "anlp-assignment-2",
+    "en",
+    "vi",
+    "ja",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133560203,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sistema Acquisti Telematici Emilia-Romagna (SATER)",
+      "url": "https://sater.regione.emilia-romagna.it/",
+      "snippet": "Area di Accesso Numero Verde 800 810 799 da telefonia fissa nazionale per assistenza e supporto tecnico sull'utilizzo della …"
+    },
+    {
+      "title": "Sistema per gli Acquisti Telematici (SATER)",
+      "url": "https://intercenter.regione.emilia-romagna.it/piattaforme-telematiche/sistema-acquisti-sater",
+      "snippet": "Feb 27, 2014 · Quanto sono chiare le informazioni su questa pagina? Quali sono stati gli aspetti che hai preferito? Dove hai …"
+    },
+    {
+      "title": "Homepage - Agenzia per lo sviluppo dei mercati telematici",
+      "url": "https://intercenter.regione.emilia-romagna.it/",
+      "snippet": "Jul 31, 2026 · Vademecum sulle modalità di pubblicazione su SATER Disponibile la guida sintetica sulle nuove modalità di …"
+    },
+    {
+      "title": "Registrazione Operatore Economico - sater.regione.emilia-romagna.it",
+      "url": "https://sater.regione.emilia-romagna.it/portale/registrazione_oe.asp",
+      "snippet": "Il campo Partita IVA va compilato inserendo il prefisso dello Stato di appartenenza (es. IT123456789 per l’Italia, FR123456789 per la …"
+    },
+    {
+      "title": "Sater Intercent (Emilia Romagna) - MePA.it",
+      "url": "https://mepa.it/pg/Sater_Intercent_(Emilia_Romagna)/31",
+      "snippet": "SATER è il Sistema per gli Acquisti Telematici dell'Emilia-Romagna, una piattaforma informatica che consente agli enti pubblici del …"
+    }
+  ]
+}

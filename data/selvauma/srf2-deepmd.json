@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Selvauma/srf2-deepmd",
+  "slug": "selvauma-srf2-deepmd",
+  "author": "Selvauma",
+  "url": "https://huggingface.co/Selvauma/srf2-deepmd",
+  "created_at": "2026-09-11T16:15:19.000Z",
+  "updated_at": "2026-09-11T16:26:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepmd-kit",
+    "molecular-dynamics",
+    "interatomic-potential",
+    "materials-science",
+    "battery-materials",
+    "fluoride-electrolyte",
+    "coating",
+    "lithium-metal-anode",
+    "anion-conductor",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 354011046,
+  "storage_human": "354 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tivoli – magiske oplevelser for hele familien",
+      "url": "https://www.tivoli.dk/",
+      "snippet": "Oplev forlystelser, restauranter, teater og koncerter i Tivoli. En uforglemmelig dag venter i hjertet af København!"
+    },
+    {
+      "title": "Tivoli Gardens Amusement Park – magical experiences for the whole …",
+      "url": "https://www.tivoli.dk/en",
+      "snippet": "Tivoli Gardens lie in the heart of Copenhagen, the third-oldest amusement park in the world with a rich history. The rides are oiled, …"
+    },
+    {
+      "title": "Køb billetter, pakker og Tivolikort - Tivoli",
+      "url": "https://shop.tivoli.dk/da/billetter-og-tivolikort",
+      "snippet": "Rundvisninger Fra 149 kr Begynd dit besøg i Tivoli med en guidet tur og lær om Havens rige historie."
+    },
+    {
+      "title": "Tivoli - Wikipedia, den frie encyklopædi",
+      "url": "https://da.wikipedia.org/wiki/Tivoli",
+      "snippet": "Tivoli har traditionelt kun haft åbent fra starten af april til sidst i september, men siden 1994 har man haft åbent i juleperioden med …"
+    },
+    {
+      "title": "Tivoli Gardens - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tivoli_Gardens",
+      "snippet": "Tivoli Festival – takes place from 14 May to 8 September and features more than 50 different events that include opera shows, …"
+    }
+  ]
+}

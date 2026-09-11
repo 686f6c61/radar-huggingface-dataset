@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "dhchoi/bandit-ocr",
+  "slug": "dhchoi-bandit-ocr",
+  "author": "dhchoi",
+  "url": "https://huggingface.co/dhchoi/bandit-ocr",
+  "created_at": "2026-09-11T11:17:43.000Z",
+  "updated_at": "2026-09-11T11:44:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dots_ocr",
+    "text-generation",
+    "ocr",
+    "document-parse",
+    "layout",
+    "vertical-text",
+    "historical-documents",
+    "hanja",
+    "classical-chinese",
+    "custom_code",
+    "lora",
+    "image-text-to-text",
+    "conversational",
+    "ko",
+    "zh",
+    "base_model:dots-studio/dots.mocr",
+    "base_model:finetune:dots-studio/dots.mocr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3039179264,
+  "parameters_human": "3.04B",
+  "storage_bytes": 6670288755,
+  "storage_human": "6.7 GB",
+  "base_model": "dots-studio/dots.mocr",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Courses hippiques en direct, en replay, pronostics du Quinté+ et ...",
+      "url": "https://www.equidia.fr/",
+      "snippet": "Découvrez Equidia, la référence des courses hippiques PMU en direct et en replay. Retrouvez les résultats, actualités et pronostics …"
+    },
+    {
+      "title": "Suivez les courses hippiques en direct sur Equidia : vivez l'expérience ...",
+      "url": "https://www.equidia.fr/direct",
+      "snippet": "Apr 16, 2026 · Plongez dans l'univers passionnant des courses hippiques en direct sur Equidia. Suivez toutes les courses depuis …"
+    },
+    {
+      "title": "Equidia direct > regarder Equidia en direct sur internet",
+      "url": "https://tv-programme.com/equidia/direct",
+      "snippet": "Feb 14, 2026 · Regarder Equidia en direct gratuitement sur internet depuis votre PC, tablette ou mobile. Visionner le streaming live …"
+    },
+    {
+      "title": "PRONOSTIC ET BASE QUINTÉ - AU PETIT PARIEUR",
+      "url": "https://www.aupetitparieur.com/pronostic-et-base-quinte/",
+      "snippet": "Suivez le Meilleur Pronostic PMU et sa base incontournable du TIERCE QUINTE du jour et demain. Bruit + cheval gagnant et Turf …"
+    },
+    {
+      "title": "Vivez les courses hippiques comme si vous y étiez sur Equidia : suivez ...",
+      "url": "https://www.equidia.fr/courses-hippique",
+      "snippet": "Ne manquez rien des courses PMU sur Equidia : suivez l'actualité, les résultats et les pronostics en temps réel, et vibrez au rythme …"
+    }
+  ]
+}

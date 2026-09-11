@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "DexSteer/dp_grasp_pan_abs_ee_60k_compat",
+  "slug": "dexsteer-dp_grasp_pan_abs_ee_60k_compat",
+  "author": "DexSteer",
+  "url": "https://huggingface.co/DexSteer/dp_grasp_pan_abs_ee_60k_compat",
+  "created_at": "2026-09-11T17:18:07.000Z",
+  "updated_at": "2026-09-11T17:18:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278928794,
+  "parameters_human": "278.9M",
+  "storage_bytes": 1115780776,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "11 Best UX Tools & Software to Perfect the User Experience in 2026",
+      "url": "https://contentsquare.com/guides/ux/tools/",
+      "snippet": "Jun 3, 2025 · This chapter of our UX guide lists the best UX design tools for each stage of the process to help you solve the problems …"
+    },
+    {
+      "title": "Top UX and UI Design Tools for Product Teams in 2026 | Maze",
+      "url": "https://maze.co/collections/ux-ui-design/tools/",
+      "snippet": "Dec 12, 2025 · In this guide, we’ve curated a list of the best UX/UI design tools, organized by their core purpose, to help product …"
+    },
+    {
+      "title": "Best UX Design Tools (2026) - Compare & Choose | ux.tools | UX Tools",
+      "url": "https://ux.tools/ux-design-tools/",
+      "snippet": "Compare the best UX design tools for prototyping, wireframing, research, and collaboration. Free and paid options reviewed by the …"
+    },
+    {
+      "title": "Best UI UX Design Tools in 2026: Amplify Business Growth & ROI",
+      "url": "https://ripenapps.com/blog/ui-ux-designing-tools/",
+      "snippet": "Mar 2, 2026 · Discover the essential UI UX design tools for 2026. Learn how AI-driven designs and predictive UX amplify user …"
+    },
+    {
+      "title": "10 Best Service Design Tools Reviewed For 2026 - The CX Lead",
+      "url": "https://thecxlead.com/tools/best-service-design-tools/",
+      "snippet": "Jul 27, 2026 · Discover the best service design tools and find the right tool for your team. Compare features, pros + cons, pricing, and …"
+    }
+  ]
+}

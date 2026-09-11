@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NINI26454/Huihui-Qwen3.6-27B-abliterated-MTP-Q3_K-GGUF",
+  "slug": "nini26454-huihui-qwen3-6-27b-abliterated-mtp-q3_k-gguf",
+  "author": "NINI26454",
+  "url": "https://huggingface.co/NINI26454/Huihui-Qwen3.6-27B-abliterated-MTP-Q3_K-GGUF",
+  "created_at": "2026-09-11T18:00:49.000Z",
+  "updated_at": "2026-09-11T18:03:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ollama",
+    "qwen",
+    "abliterated",
+    "3bit",
+    "mtp",
+    "base_model:huihui-ai/Huihui-Qwen3.6-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.6-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 14428342944,
+  "storage_human": "14.4 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.6-27B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "byrut.rog怎么进入 俄罗斯游戏网站byrut进入方法最新_百度知道",
+      "url": "https://zhidao.baidu.com/question/469050891439827045.html",
+      "snippet": "May 1, 2025 · byrut.rog怎么进入 俄罗斯游戏网站byrut进入方法最新"
+    },
+    {
+      "title": "电容的单位怎么换算？F，NF，PF，UF？_百度知道",
+      "url": "https://zhidao.baidu.com/question/12936434.html",
+      "snippet": "电容单位换算关系： 1法拉（F）= 1000毫法（mF） 1毫法（mF）=1000微法（μF） 1微法（μF）= 1000纳法（nF） 1纳法（nF）= …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "有什么精简好用的电脑温度监控软件吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/277598173",
+      "snippet": "我对电脑发热和噪音比较敏感，影响设备寿命不说，还特吵。 给你介绍一款我用了几年的小工具： ThrottleStop，C语言写的，只有1M …"
+    },
+    {
+      "title": "T-Nederland",
+      "url": "https://t-nederland.nl/forumlid.html",
+      "snippet": "May 1, 2026 · Als je besluit forumlid te worden sluit je daarmee een overeenkomst. Die houdt in dat je akkoord gaat met …"
+    }
+  ]
+}

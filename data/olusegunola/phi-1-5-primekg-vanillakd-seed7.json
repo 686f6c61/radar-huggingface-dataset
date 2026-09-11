@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/phi-1.5-primekg-vanillakd-seed7",
+  "slug": "olusegunola-phi-1-5-primekg-vanillakd-seed7",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-vanillakd-seed7",
+  "created_at": "2026-09-11T17:46:15.000Z",
+  "updated_at": "2026-09-11T17:46:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50357392,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gledajtvuzivo | Online TV Uživo, Gledaj Besplatni Balkan TV",
+      "url": "https://www.gledajtvuzivo.com/",
+      "snippet": "Dobrodošli na gledaj TV uživo platformu - vaš jedinstveni portal za pristup svim popularnim televizijskim kanalima s područja …"
+    },
+    {
+      "title": "Gledajte besplatne TV kanale uživo iz Srbije",
+      "url": "https://www.tvbalkanuzivo.com/kanali/srpski",
+      "snippet": "Happy TV Zadruga Elita N1 TV Prva TV RTRS Narodna TV Pink TV Nova TV RTS1 Prva Plus DM Sat Nova S TV Al Jazeera …"
+    },
+    {
+      "title": "TV Uzivo, uzivo TV - Navidiku.rs",
+      "url": "https://www.navidiku.rs/tv-uzivo/",
+      "snippet": "TV uživo. Gledajte uzivo TV kanale iz Srbije i sveta online preko portala Navidiku.rs"
+    },
+    {
+      "title": "Tv u srbiji uzivo preko interneta, srpske tv preko interneta, srpski ...",
+      "url": "https://www.navidiku.rs/tv-uzivo/tv-kanali-srbija",
+      "snippet": "Svi TV kanali se strimuju sa domaćih i inostranih servera i oni su odgovorni za kompletan sadržaj. Na kanalima na našem sajtu se ne …"
+    },
+    {
+      "title": "BALKAN TELEVIZIJA LIVE – BALKAN TV",
+      "url": "https://balkantv.rs/uzivo/",
+      "snippet": "Home BALKAN TELEVIZIJA LIVE BALKAN TELEVIZIJA LIVE"
+    }
+  ]
+}

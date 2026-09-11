@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kaptaan45/KaptaanLM-Vanguard-25M",
+  "slug": "kaptaan45-kaptaanlm-vanguard-25m",
+  "author": "kaptaan45",
+  "url": "https://huggingface.co/kaptaan45/KaptaanLM-Vanguard-25M",
+  "created_at": "2026-09-11T14:12:13.000Z",
+  "updated_at": "2026-09-11T14:14:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kaptaan",
+    "text-generation",
+    "reasoning",
+    "chain-of-thought",
+    "small-language-models",
+    "slm",
+    "cot",
+    "dpo",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 302279993,
+  "storage_human": "302 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lajmi i fundit - Sjellim lajmet e fundit nga Shqiperia në kohë reale",
+      "url": "https://lajmifundit.al/",
+      "snippet": "14 hours ago · Ju do te merrni njoftime periodike me Lajmet e Fundit."
+    },
+    {
+      "title": "Bota - Top Channel - Lajmet e fundit minute pas minute, art, sport ...",
+      "url": "https://top-channel.tv/artikuj/bota/",
+      "snippet": "14 hours ago · Trump premtoi 5 mijë dollarë për çdo amerikan nëse republikanët fitojnë zgjedhjet e nëntorit, sa i ligjshëm është …"
+    },
+    {
+      "title": "Gazeta Panorama ONLINE | lajmet e fundit, lajm i fundit, lajme",
+      "url": "https://www.panorama.com.al/",
+      "snippet": "1 day ago · Gazeta Panorama Online, botim i Panorama Group, gazeta më e madhe në Shqipëri, lajmet e fundit, lajm i fundit, lajme …"
+    },
+    {
+      "title": "Top Channel - Lajmet e fundit minute pas minute, art, sport, Portokalli ...",
+      "url": "https://top-channel.tv/",
+      "snippet": "Inside Story/ Vëllai u arrestua për shfrytëzimin e motrës, e reja: Ndodhej rastësisht në banesën që ndaja me eskortat e tjera…"
+    },
+    {
+      "title": "Syri | Lajmi i fundit",
+      "url": "https://www.syri.net/",
+      "snippet": "14 hours ago · SYRI.net është agjencia më e madhe e lajmeve në Shqipëri, që brenda një kohe të shkurtër është kthyer në lider të …"
+    }
+  ]
+}

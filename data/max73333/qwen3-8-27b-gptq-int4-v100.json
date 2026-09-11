@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Max73333/Qwen3.8-27B-GPTQ-Int4-V100",
+  "slug": "max73333-qwen3-8-27b-gptq-int4-v100",
+  "author": "Max73333",
+  "url": "https://huggingface.co/Max73333/Qwen3.8-27B-GPTQ-Int4-V100",
+  "created_at": "2026-08-22T18:09:38.000Z",
+  "updated_at": "2026-09-11T11:39:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.8",
+    "gptq",
+    "int4",
+    "quantized",
+    "vllm",
+    "tesla-v100",
+    "sm70",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 10046,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19579440325,
+  "storage_human": "19.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log in | Ferrara",
+      "url": "https://www.ferrara.com/us/en/user/login",
+      "snippet": "Forgot your password?"
+    },
+    {
+      "title": "connect.ferrarausa.com",
+      "url": "https://connect.ferrarausa.com/global-protect/login.esp",
+      "snippet": "Secure login portal for Ferrara employees to access company resources and tools."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myapplications.microsoft.com/",
+      "snippet": "Terms of use Privacy & cookies ..."
+    },
+    {
+      "title": "Login",
+      "url": "https://webapps.ferrarigroup.net/login?redirect=%2Fhomepage",
+      "snippet": "Jan 12, 2010 · Do you have a tracking ID? Do you have a username? Forgot password?"
+    },
+    {
+      "title": "Sign in to SharePoint | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/sharepoint/get-started-with-sharepoint/sign-in-to-sharepoint",
+      "snippet": "You are now signed into SharePoint, and you are on the SharePoint start page. From this page, you can read news, look up content, …"
+    }
+  ]
+}

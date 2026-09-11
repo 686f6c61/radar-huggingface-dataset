@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chair0/chess-single-king-night",
+  "slug": "chair0-chess-single-king-night",
+  "author": "chair0",
+  "url": "https://huggingface.co/chair0/chess-single-king-night",
+  "created_at": "2026-09-11T12:08:15.000Z",
+  "updated_at": "2026-09-11T12:08:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:chair0/chess-single-king-night",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "فاصل اعلاني - ArabicTrader.com",
+      "url": "https://forum.arabictrader.com/t106558.html",
+      "snippet": "Sep 9, 2010 · رد: فاصل اعلاني المشاركة الأصلية كتبت بواسطة hosa2000 هههههههههههههه يعطيك العافية ترى نحتاج الى الترويح عن النفس بين الفينة و الاخرى يعني لازم الروقان عشان تكون …"
+    },
+    {
+      "title": "العلاج عند أطباء من الجنّ",
+      "url": "https://forum.arabictrader.com/t21435.html",
+      "snippet": "لكنهّن يسمعن القرآن الكريم ، حيث أن صوته عالٍ نوعاً ما لكنه يعجبني حتى لو كان مستوى الصوت أعلى من هذا فاصل قصير ثم نعود إليكم بإذن الله 18-11-2006, 10:13 PM #4 waly عضو …"
+    },
+    {
+      "title": "تحليل تداول الذهب",
+      "url": "https://forum.arabictrader.com/t269582.html",
+      "snippet": "28-06-2026,03:38 AM #10 مسترهدف عضو نشيط تاريخ التسجيل Sep 2017 الإقامة الأردن المشاركات 2,955 نبدأ في نهاية هذا اليوم بتحليل سوق الذهب وسوف امشي جنبا الى جنب بايداع …"
+    },
+    {
+      "title": "ازهر شمسان - ماركوف",
+      "url": "https://forum.arabictrader.com/t269614.html",
+      "snippet": "Jun 26, 2026 · السلام عليكم كان يوجد محلل معروف باسم ازهر شمسان - ماركوف الاعضاء القدامى هنا سيعرفوه فجاه هذه الشخص اختفى نعائيا و كل صفحاته على مواقع التواصل المحتلف"
+    },
+    {
+      "title": "تحليل الباوند ين",
+      "url": "https://forum.arabictrader.com/t269688.html",
+      "snippet": "Jul 16, 2026 · تحليل هندسي متقن وموفق جداً من الأستاذ الاسكندري لزوج الباوند ين (GBPJPY) لأنه يظهر بوضوح بدء استنفاد الزخم الصاعد بعد ملامسة القمة الهيكلية قـ (219.60)ـرب …"
+    }
+  ]
+}

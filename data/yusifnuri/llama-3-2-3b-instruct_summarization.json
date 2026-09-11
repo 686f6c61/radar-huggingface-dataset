@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yusifnuri/Llama-3.2-3B-Instruct_summarization",
+  "slug": "yusifnuri-llama-3-2-3b-instruct_summarization",
+  "author": "yusifnuri",
+  "url": "https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_summarization",
+  "created_at": "2026-09-11T15:37:25.000Z",
+  "updated_at": "2026-09-11T15:38:13.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "small-language-model",
+    "enterprise-benchmark",
+    "summarization",
+    "base_model:adapter:meta-llama/Llama-3.2-3B-Instruct",
+    "text-generation",
+    "conversational",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53940242,
+  "storage_human": "54 MB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.at/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, featuring Street View, 3D maps, detailed routes, indoor maps and more on all your …"
+    },
+    {
+      "title": "Datenschutzerklärung – Datenschutzerklärung",
+      "url": "https://maps.google.at/intl/de/policies/privacy/archive/20051014/",
+      "snippet": "Oct 14, 2005 · Wir bei Google legen großen Wert auf den Schutz personenbezogener Daten. Diese Datenschutzerklärung gilt für alle …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.at/intl/th/policies/technologies/product-privacy/",
+      "snippet": "https://policies.google.com/technologies/product-privacy?hl=th"
+    },
+    {
+      "title": "Before you continue to Google Maps",
+      "url": "https://maps.google.at/maps?q=Bachweg%2C+8124+%C3%9Cbelbach",
+      "snippet": "Non-personalized content is influenced by things like the content you’re currently viewing, activity in your active Search session, and …"
+    },
+    {
+      "title": "Application Security – Google",
+      "url": "https://maps.google.at/intl/ro/about/appsecurity/",
+      "snippet": "The content of this page has moved: https://about.google/appsecurity/."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BravoRobots/nvidialab_4000k_bgnegro_v1",
+  "slug": "bravorobots-nvidialab_4000k_bgnegro_v1",
+  "author": "BravoRobots",
+  "url": "https://huggingface.co/BravoRobots/nvidialab_4000k_bgnegro_v1",
+  "created_at": "2026-09-11T10:55:26.000Z",
+  "updated_at": "2026-09-11T10:56:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:BravoRobots/nvidialab_4000k_bgnegro_v1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dnevni avaz - Najnovije vijesti iz BiH i svijeta",
+      "url": "https://avaz.ba/",
+      "snippet": "Najtiražniji i najutjecajniji printani i internet medij u Bosni i Hercegovini. Najnovije vijesti iz BiH, regiona i svijeta. Avaz ide prvi."
+    },
+    {
+      "title": "Najnovije - Avaz",
+      "url": "https://avaz.ba/najnovije",
+      "snippet": "Austrijski lobista pozvao BiH da uvede euro 2027.: Objavio kovanicu s likom Alije Izetbegovića."
+    },
+    {
+      "title": "Vijesti | Avaz - Dnevni avaz",
+      "url": "https://avaz.ba/vijesti",
+      "snippet": "Najnovije vijesti iz Bosne i Hercegovine, regiona i svijeta. Budite informisani o aktuelnim dešavanjima iz politike, društva i ekonomije …"
+    },
+    {
+      "title": "Najnovije | Avaz",
+      "url": "https://apiv03.avaz.ba/najnovije?kategorija=vijesti&str=1",
+      "snippet": "Austrijski lobista pozvao BiH da uvede euro 2027.: Objavio kovanicu s likom Alije Izetbegovića."
+    },
+    {
+      "title": "Najnovije - Avaz",
+      "url": "https://apiv03.avaz.ba/najnovije",
+      "snippet": "Austrijski lobista pozvao BiH da uvede euro 2027.: Objavio kovanicu s likom Alije Izetbegovića."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g2_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-9_g2_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g2_run2",
+  "created_at": "2026-09-11T13:40:01.000Z",
+  "updated_at": "2026-09-11T13:40:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Energieeinstellungen für GPU verwalten in Windows 11 und 10",
+      "url": "https://tippsling.de/energieeinstellungen-fuer-gpu-verwalten-in-windows-11-und-10/",
+      "snippet": "Aug 16, 2026 · GPU-Energieeinstellungen in Windows 11 und 10 anpassen: Schritt-für-Schritt-Anleitung zur Optimierung von Leistung …"
+    },
+    {
+      "title": "Optimierung der Energieeinstellungen der GPU über die NVIDIA App",
+      "url": "https://www.antwort.net/a/windows/optimierung-der-energieeinstellungen-der-gpu-ueber-die-nvidia-app.html",
+      "snippet": "Sep 4, 2025 · In diesem Text erfahren Sie ausführlich, wie Sie die Energieoptionen Ihrer NVIDIA-Grafikkarte über die NVIDIA App …"
+    },
+    {
+      "title": "Windows 11: Bessere Grafik dank Hardwarebeschleunigter GPU …",
+      "url": "https://www.pcwelt.de/article/3018077/windows11-gpu-planung-hardware-beschleunigt-aktivieren.html",
+      "snippet": "Windows 11 bietet mit der hardwarebeschleunigten GPU-Planung eine versteckte Option für flüssigere Grafikdarstellung. Sie kann …"
+    },
+    {
+      "title": "Windows 11 GPU Power States erzwingen und Idle-Verbrauch deutlich …",
+      "url": "https://www.win-tipps.de/windows-11-gpu-power-states-erzwingen-idle-verbrauch/",
+      "snippet": "Mar 23, 2026 · Lerne, wie du in Windows 11 GPU Power States erzwingen und den Idle-Verbrauch deiner Grafikkarte mit Treiber- …"
+    },
+    {
+      "title": "Windows 11: GPU-Planung (HAGS) aktivieren - Spickipedia",
+      "url": "https://www.spickipedia.com/windows-11/windows-11-grafikleistung-optimieren-hardwarebeschleunigte-gpu-planung-aktivieren-oder-deaktivieren.html",
+      "snippet": "Aug 21, 2026 · Hardwarebeschleunigte GPU-Planung in Windows 11 aktivieren oder deaktivieren - so holst du mehr Leistung aus …"
+    }
+  ]
+}

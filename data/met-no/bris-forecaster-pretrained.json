@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "met-no/bris-forecaster-pretrained",
+  "slug": "met-no-bris-forecaster-pretrained",
+  "author": "met-no",
+  "url": "https://huggingface.co/met-no/bris-forecaster-pretrained",
+  "created_at": "2026-08-07T12:03:08.000Z",
+  "updated_at": "2026-09-11T11:59:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "weather-forecasting",
+    "weather",
+    "meteorology",
+    "ensemble-forecasting",
+    "probabilistic-forecasting",
+    "en",
+    "arxiv:2511.23043",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4310432814,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PREVISIONS METEO FRANCE - Site Officiel de Météo-France",
+      "url": "https://meteofrance.com/",
+      "snippet": "METEO FRANCE - Retrouvez les prévisions METEO France de Météo-France à 15 jours, les prévisions météos locales gratuites, …"
+    },
+    {
+      "title": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/fr",
+      "snippet": "The Met presents over 5,000 years of art from around the world for everyone to experience and enjoy."
+    },
+    {
+      "title": "MET France",
+      "url": "https://fr.met.com/fr",
+      "snippet": "Créé en 2007 et basé en Suisse, le groupe MET est un acteur majeur de l'énergie, qui est présent dans 23 pays européens. Le …"
+    },
+    {
+      "title": "MET Helmets | Road, MTB, City and Kids Helmets",
+      "url": "https://www.met-helmets.com/",
+      "snippet": "Founded in 1987, MET offers the most comprehensive cycling helmet range on the market to protect all bike riders, regardless of …"
+    },
+    {
+      "title": "METEO La Rochelle (17000) - Météo-France",
+      "url": "https://meteofrance.com/previsions-meteo-france/la-rochelle/17000",
+      "snippet": "METEO FRANCE - Retrouvez les prévisions METEO LA ROCHELLE de Météo-France pour aujourd’hui, demain et jusqu’à 15 jours, …"
+    }
+  ]
+}

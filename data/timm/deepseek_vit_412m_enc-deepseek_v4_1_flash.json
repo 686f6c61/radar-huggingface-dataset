@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/deepseek_vit_412m_enc.deepseek_v4_1_flash",
+  "slug": "timm-deepseek_vit_412m_enc-deepseek_v4_1_flash",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/deepseek_vit_412m_enc.deepseek_v4_1_flash",
+  "created_at": "2026-09-11T16:21:43.000Z",
+  "updated_at": "2026-09-11T16:21:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 485253120,
+  "parameters_human": "485.3M",
+  "storage_bytes": 1941038232,
+  "storage_human": "1.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Close Brothers Savings",
+      "url": "https://www.closesavings.co.uk/",
+      "snippet": "Close Brothers Savings, a subsidiary of Close Brothers Limited, has been providing dedicated personal savings accounts and …"
+    },
+    {
+      "title": "Savings & ISAs | Close Brothers Savings",
+      "url": "https://www.closesavings.co.uk/personal/savings-accounts",
+      "snippet": "We have a range of personal savings accounts to choose from including ISAs, notice accounts, fixed term bonds and pensions."
+    },
+    {
+      "title": "Close Brothers Savings Online Banking",
+      "url": "https://olb.closesavings.co.uk/Retail/servletcontroller",
+      "snippet": "Close Brothers Savings is a trading style of Close Brothers Limited ('CBL'), a subsidiary of Close Brothers Group plc. CBL is …"
+    },
+    {
+      "title": "Close Brothers Group plc - Home",
+      "url": "https://olb.closesavings.co.uk/Onboarding/servletcontroller?matrixid=FTD2Y",
+      "snippet": "Close Brothers Savings is a trading style of Close Brothers Limited ('CBL'), a subsidiary of Close Brothers Group plc. CBL is …"
+    },
+    {
+      "title": "Easy Access Account | Close Brothers Savings",
+      "url": "https://www.closesavings.co.uk/personal/savings-accounts/easy-access-account",
+      "snippet": "Easy Access Account Life can be unpredictable, so stay in control of your savings with an account that offers flexibility and growth. …"
+    }
+  ]
+}

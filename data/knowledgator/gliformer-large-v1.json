@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "knowledgator/gliformer-large-v1",
+  "slug": "knowledgator-gliformer-large-v1",
+  "author": "knowledgator",
+  "url": "https://huggingface.co/knowledgator/gliformer-large-v1",
+  "created_at": "2026-09-11T13:29:48.000Z",
+  "updated_at": "2026-09-11T14:52:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "gliformer",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliformer",
+    "pytorch",
+    "deberta",
+    "named-entity-recognition",
+    "text-classification",
+    "relation-extraction",
+    "structured-extraction",
+    "feature-extraction",
+    "document-understanding",
+    "token-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2311667295,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cerfa 11530 : dossier au JAF à télécharger (2026) - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/famille/guide-famille/4431-cerfa-11530-dossier-au-jaf-a-telecharger/",
+      "snippet": "Jan 4, 2026 · Le formulaire cerfa 11530 (version 2026) en téléchargement ci-dessous vous permet de faire une demande au JAF en …"
+    },
+    {
+      "title": "Attestation d’hébergement - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-7797066-attestation-d-hebergement",
+      "snippet": "A la sécurité sociale ils me demandent l'attestation d'hébergement mais je ne peux pas le demander directement au propriétaire car il …"
+    },
+    {
+      "title": "Attestation d hébergement - Résolue par Maitre Raissa LEMALEU …",
+      "url": "https://www.alexia.fr/questions/501355/attestation-d-hebergement.htm",
+      "snippet": "Oui, vous pouvez tout à fait lui fournir une attestation d’hébergement, même si le bail est uniquement à votre nom. ce document sert …"
+    },
+    {
+      "title": "Attestation d’hébergement - Résolue par Maitre Emile-derlin …",
+      "url": "https://www.alexia.fr/questions/473806/attestation-d-hebergement.htm",
+      "snippet": "Non votre dossier ne sera pas refusé. merci d'indiquer que la question est résolue - Résolue par Maitre Emile-derlin KEMFOUET …"
+    },
+    {
+      "title": "Attestation d'hébergement [Résolu] - Forum Banque et Crédit",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-6113412-attestation-d-hebergement",
+      "snippet": "Bonjour, J'aimerais savoir s'il existe une sorte d'équivalence a une attestation d'hébergement ? Un autre document pouvant …"
+    }
+  ]
+}

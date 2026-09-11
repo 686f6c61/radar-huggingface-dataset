@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Alantool/Reup_Craft_One",
+  "slug": "alantool-reup_craft_one",
+  "author": "Alantool",
+  "url": "https://huggingface.co/Alantool/Reup_Craft_One",
+  "created_at": "2026-04-25T15:23:09.000Z",
+  "updated_at": "2026-09-11T11:39:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15454826975,
+  "storage_human": "15.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA GeForce Forums",
+      "url": "https://forums.geforce.com/",
+      "snippet": "Join the GeForce community. Browse categories, post your questions, or just chat with other members."
+    },
+    {
+      "title": "GTX 1650 算什么级别的显卡？ - 知乎",
+      "url": "https://www.zhihu.com/question/334504208",
+      "snippet": "1650在最新一代显卡里面性能垫底，但是对比以往的显卡来说还是一款性能很强的显卡的。因为他已经快赶上GTX780了，想想当 …"
+    },
+    {
+      "title": "怎么设置NVIDIA独立显卡为默认显卡-百度经验",
+      "url": "https://jingyan.baidu.com/article/fc07f989c7ebbf52fee51909.html",
+      "snippet": "Oct 19, 2019 · 怎么设置NVIDIA独立显卡为默认显卡,电脑显卡的全局设置中一般都是默认以集成显卡运行的，这会导致很多情况下电 …"
+    },
+    {
+      "title": "GeForce Experience 更新后 FPS 显示为“不适用（N/A）”怎么办？",
+      "url": "https://www.zhihu.com/question/460316504/answers/updated",
+      "snippet": "May 19, 2021 · GeForce Experience 更新到了 3.22 后，原来的帧率 HUD 覆盖，变成了性能面板，上面的“帧率”变成了“不…"
+    },
+    {
+      "title": "NVIDIA显卡如何打开GPU渲染 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/295430f13f19db4d7e00508b.html",
+      "snippet": "Sep 10, 2020 · NVIDIA显卡如何打开GPU渲染,我们使用NVIDIA显卡，如果想要使用显卡的GPU渲染应该怎么设置呢？下面就是详细的 …"
+    }
+  ]
+}

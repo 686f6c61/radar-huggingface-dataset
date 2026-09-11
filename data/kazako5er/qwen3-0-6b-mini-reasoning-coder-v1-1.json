@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder-V1.1",
+  "slug": "kazako5er-qwen3-0-6b-mini-reasoning-coder-v1-1",
+  "author": "kazako5er",
+  "url": "https://huggingface.co/kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder-V1.1",
+  "created_at": "2026-09-11T18:02:17.000Z",
+  "updated_at": "2026-09-11T18:16:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395677976,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ninite - Install or Update Multiple Apps at Once",
+      "url": "https://ninite.com/",
+      "snippet": "Feb 14, 2019 · The easiest, fastest way to update or install software. Ninite downloads and installs programs automatically in the …"
+    },
+    {
+      "title": "Ninite Chrome Unattended Silent Installer and Updater",
+      "url": "https://ninite.com/chrome/",
+      "snippet": "Install or update Chrome silently and unattended in the background. Fully automated by Ninite."
+    },
+    {
+      "title": "Set Up a New PC | Ninite Help",
+      "url": "https://remote.ninite.com/help/home/setup.html",
+      "snippet": "Set Up a New PC This is the original use of Ninite. Just go to https://ninite.com and select the apps you want, click \"Get Installer\", and …"
+    },
+    {
+      "title": "How Ninite Works | Ninite Help",
+      "url": "https://remote.ninite.com/help/how-ninite-works/",
+      "snippet": "When you make a Ninite installer at https://ninite.com you're really making an entry in our database that records your app choices. …"
+    },
+    {
+      "title": "Ninite Pro - Automatic Patching and Updates for Popular Applications",
+      "url": "https://ninite.com/pro",
+      "snippet": "The easiest way to manage software. Ninite Pro integrates with remote management tools to silently install or update popular third …"
+    }
+  ]
+}

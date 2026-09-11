@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Selvauma/alchemi-mace-finetune",
+  "slug": "selvauma-alchemi-mace-finetune",
+  "author": "Selvauma",
+  "url": "https://huggingface.co/Selvauma/alchemi-mace-finetune",
+  "created_at": "2026-09-11T16:18:01.000Z",
+  "updated_at": "2026-09-11T16:18:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mace",
+    "fine-tuned",
+    "interatomic-potential",
+    "molecular-dynamics",
+    "materials-science",
+    "lammps",
+    "benchmarking",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20949029,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tienda con ofertas en productos de peluquería - BETH·S HAIR",
+      "url": "https://www.bethshair.es/",
+      "snippet": "Consigue los mejores productos de peluquería para mimar tu cabello a un precio ideal. ¡Descubre también nuestros centros con …"
+    },
+    {
+      "title": "Productos para: Hidratación - BETH·S HAIR - Tienda online con ofertas ...",
+      "url": "https://www.bethshair.es/necesidades/hidratacion/",
+      "snippet": "Compra tus productos para Hidratación de tu cabellos en nuestra tienda online BETH·S. Ofertas especiales en productos de …"
+    },
+    {
+      "title": "Buscador de tiendas y salones de peluquería BETH’S HAIR",
+      "url": "https://www.bethshair.es/centros/buscador-de-centros/",
+      "snippet": "Es el momento de lucir PELAZO con nuestros servicios y tratamientos de peluquería. En nuestra zona de tienda, encontrarás ofertas …"
+    },
+    {
+      "title": "Tiendas BETH’S HAIR de productos de peluquería en Madrid",
+      "url": "https://www.bethshair.es/centros/centros-beths-madrid/",
+      "snippet": "Encuentra tu tienda BETH'S HAIR de productos de peluquería en Madrid. Método curly, ghd, tintes, Goa Organics, OLAPLEX, K18, …"
+    },
+    {
+      "title": "Tiendas y salones BETH’S HAIR de productos de peluquería",
+      "url": "https://www.bethshair.es/centros/",
+      "snippet": "Centros de peluquería para todo tipo de cabello + tiendas en Barcelona. Ofertas en tintes y productos profesionales para cuidar tu pelo."
+    }
+  ]
+}

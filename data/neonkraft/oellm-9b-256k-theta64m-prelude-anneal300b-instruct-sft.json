@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Neonkraft/oellm-9b-256k-theta64m-prelude-anneal300b-instruct-sft",
+  "slug": "neonkraft-oellm-9b-256k-theta64m-prelude-anneal300b-instruct-sft",
+  "author": "Neonkraft",
+  "url": "https://huggingface.co/Neonkraft/oellm-9b-256k-theta64m-prelude-anneal300b-instruct-sft",
+  "created_at": "2026-09-11T19:24:31.000Z",
+  "updated_at": "2026-09-11T19:27:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "arxiv:2512.13961",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9101947904,
+  "parameters_human": "9.10B",
+  "storage_bytes": 18241749699,
+  "storage_human": "18.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=de",
+      "snippet": "Hol dir die offizielle YouTube App auf Android-Smartphones und -Tablets und entdecke angesagte Videos weltweit – von den …"
+    },
+    {
+      "title": "YouTube – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube (Aussprache [ˈjuːtuːb oder ˈjuːtjuːb]) ist ein 2005 gegründetes Videoportal des US-amerikanischen Unternehmens YouTube, …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    }
+  ]
+}

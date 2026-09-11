@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BlacknodeLTDAI/Mike4_12b",
+  "slug": "blacknodeltdai-mike4_12b",
+  "author": "BlacknodeLTDAI",
+  "url": "https://huggingface.co/BlacknodeLTDAI/Mike4_12b",
+  "created_at": "2026-09-11T16:38:04.000Z",
+  "updated_at": "2026-09-11T16:45:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7366423360,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hilfe zu Windows Update in Windows",
+      "url": "https://www.windows-10-forum.com/threads/hilfe-zu-windows-update-in-windows.174575/",
+      "snippet": "Windows 10 Forum StartseiteForen>Windows 10>Windows 10 Support> Hilfe zu Windows Update in Windows Helfe beim Thema …"
+    },
+    {
+      "title": "Hilfe zu Windows Update in Windows",
+      "url": "https://www.windows-10-forum.com/threads/hilfe-zu-windows-update-in-windows.172205/",
+      "snippet": "Hilfe zu Windows Update in Windows:Windows 11 Insider Preview 23545.1000 update funktioniert nicht, Fehler Code Einige …"
+    },
+    {
+      "title": "Risen 2 Fehler beheben Hilfe!!!! - Steam Community",
+      "url": "https://steamcommunity.com/app/40390/discussions/0/35220315735888060/",
+      "snippet": "Aug 8, 2014 · Risen 2 Fehler beheben Hilfe!!!! Hallo zusammen, ich habe ein Problem und zwar passiert es oft das im spiel Risen2 …"
+    },
+    {
+      "title": "Steam Community :: Search",
+      "url": "https://steamcommunity.com/search/users/",
+      "snippet": "简体中文 (Simplified Chinese) 繁體中文 (Traditional Chinese) 日本語 (Japanese) 한국어 (Korean) ไทย (Thai) Bahasa Indonesia …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-did-not-get-saved-on-one-drive/59024bed-1dca-46ff-a4ab-dc0d1db704aa",
+      "snippet": ""
+    }
+  ]
+}

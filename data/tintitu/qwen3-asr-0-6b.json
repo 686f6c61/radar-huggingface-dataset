@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tintitu/qwen3-asr-0.6b",
+  "slug": "tintitu-qwen3-asr-0-6b",
+  "author": "tintitu",
+  "url": "https://huggingface.co/tintitu/qwen3-asr-0.6b",
+  "created_at": "2026-09-11T12:17:01.000Z",
+  "updated_at": "2026-09-11T12:59:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1485093318,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lil Uzi Vert Net Worth",
+      "url": "https://www.celebritynetworth.com/richest-celebrities/richest-rappers/lil-uzi-vert/",
+      "snippet": "Lil Uzi Vert is an American rapper who has a net worth of $25 million. At various points in recent years, Lil Uzi Vert has been one of …"
+    },
+    {
+      "title": "LIL UZI VERT Net Worth & Earnings (2026)",
+      "url": "https://www.networthspot.com/lil-uzi-vert/net-worth/",
+      "snippet": "Since bursting onto the scene, Lil Uzi Vert has amassed a significant fortune. His net worth is a topic of much speculation, with …"
+    },
+    {
+      "title": "Lil Uzi Vert Net Worth (Updated 2026). - Cine Net Worth",
+      "url": "https://www.cinenetworth.com/lil-uzi-vert-net-worth/",
+      "snippet": "Jul 19, 2025 · As of 2025, Lil Uzi Vert’s net worth is estimated to be around $25 million. This significant wealth is a testament to his …"
+    },
+    {
+      "title": "Lil U Z I Vert Net Worth (Updated 2026). - Cine Net Worth",
+      "url": "https://www.cinenetworth.com/lil-u-z-i-vert-net-worth/",
+      "snippet": "Jul 25, 2025 · As of 2025, Lil Uzi Vert’s net worth is estimated to be around $25 million. This significant wealth accumulation is …"
+    },
+    {
+      "title": "Lil Uzi Vert Highest-Paid Rapper in the World - Mediamass",
+      "url": "https://en.mediamass.net/people/lil-uzi-vert/highest-paid.html",
+      "snippet": "13 hours ago · The American rapper has an estimated net worth of $145 million. He owes his fortune to smart stock investments, …"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "amd/HyLo-Qwen-7MLA21GDN-64K-SFT",
+  "slug": "amd-hylo-qwen-7mla21gdn-64k-sft",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/HyLo-Qwen-7MLA21GDN-64K-SFT",
+  "created_at": "2026-09-11T13:38:42.000Z",
+  "updated_at": "2026-09-11T13:39:08.000Z",
+  "license": "amd-hybrid-models-research-only-rail-ms",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "hybrid",
+    "mla",
+    "gated-deltanet",
+    "long-context",
+    "kv-cache-compression",
+    "distillation",
+    "amd",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:JunxiongWang/sftdatasetv3",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "dataset:open-thoughts/OpenThoughts-114k",
+    "dataset:open-r1/OpenR1-Math-220k",
+    "dataset:nvidia/ChatQA2-Long-SFT-data",
+    "arxiv:2604.24715",
+    "arxiv:2505.17272",
+    "arxiv:2503.11132",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2284173820,
+  "parameters_human": "2.28B",
+  "storage_bytes": 9148169054,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Use Street View in Google Maps",
+      "url": "https://support.google.com/maps/answer/3093484?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Explore Street View in Google Maps To explore in Street View: Swipe on the screen or to activate \"Tilt to look,\" tap More Tilt to look. …"
+    },
+    {
+      "title": "Ayuda de Google Maps",
+      "url": "https://support.google.com/maps/?hl=es-419",
+      "snippet": "Centro de asistencia oficial de Google Maps donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    },
+    {
+      "title": "6 tính năng AI vừa được cập nhật của Google Maps",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Mar 14, 2024 · Bây giờ Google Maps cũng đã được tích hợp AI, với 1 bản nâng cấp lớn. Dưới đây là 6 tính năng Ai của Google …"
+    },
+    {
+      "title": "Maps Trợ giúp",
+      "url": "https://support.google.com/maps/?hl=vi",
+      "snippet": "Trung tâm Trợ giúp Maps chính thức, nơi bạn có thể tìm thấy các mẹo và hướng dẫn sử dụng sản phẩm và các câu trả lời khác cho …"
+    },
+    {
+      "title": "Share, send, or print directions from Google Maps",
+      "url": "https://support.google.com/maps/answer/7101463?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Share, send, or print directions from Google Maps The directions you find through Google Maps can be shared with other devices …"
+    }
+  ]
+}

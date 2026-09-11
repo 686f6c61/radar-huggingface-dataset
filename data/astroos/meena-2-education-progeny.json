@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "astroos/meena-2-education-progeny",
+  "slug": "astroos-meena-2-education-progeny",
+  "author": "astroos",
+  "url": "https://huggingface.co/astroos/meena-2-education-progeny",
+  "created_at": "2026-09-11T11:16:13.000Z",
+  "updated_at": "2026-09-11T11:16:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Il Tempo",
+      "url": "https://www.iltempo.it/",
+      "snippet": "Il Tempo è un quotidiano online che offre notizie su politica, sport e altro."
+    },
+    {
+      "title": "Politica - Il Tempo",
+      "url": "https://www.iltempo.it/politica/",
+      "snippet": "Leggi subito le ultime notizie della sezione Politica | iltempo.it"
+    },
+    {
+      "title": "Il Tempo",
+      "url": "https://www-prod.iltempo.it/",
+      "snippet": "L'incuria del Comune e il tempo perso dietro SpinTime L'EDITORIALE DI CAPEZZONE Il fumo dei complotti inesistenti e l'arrosto …"
+    },
+    {
+      "title": "Il Tempo SSO",
+      "url": "https://sso.iltempo.it/login.html",
+      "snippet": "Login Continua come Accedi con un altro utente| Profilo| Logout"
+    },
+    {
+      "title": "Previsioni Meteo - Il Tempo",
+      "url": "https://meteoiframe.iltempo.it/",
+      "snippet": "Previsioni meteo Italia, Europa e Mondo. Situazione aeroporti. Mari e vento. Bollettino neve."
+    }
+  ]
+}

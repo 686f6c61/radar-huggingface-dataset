@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Selvauma/ps-polysulfide-deepmd",
+  "slug": "selvauma-ps-polysulfide-deepmd",
+  "author": "Selvauma",
+  "url": "https://huggingface.co/Selvauma/ps-polysulfide-deepmd",
+  "created_at": "2026-09-11T16:17:45.000Z",
+  "updated_at": "2026-09-11T16:27:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepmd-kit",
+    "molecular-dynamics",
+    "interatomic-potential",
+    "materials-science",
+    "battery-materials",
+    "lithium-sulfur-battery",
+    "polysulfide",
+    "cathode-material",
+    "reaction-energetics",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170380639,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tylko : créez des étagères et des dressings parfaits pour votre maison",
+      "url": "https://tylko.com/fr-fr/",
+      "snippet": "Des étagères et des dressings sur mesure qui s'intègrent parfaitement à la vie de tous les jours. Livraison offerte et retours pendant …"
+    },
+    {
+      "title": "Tylko | Tylko",
+      "url": "https://tylko.com/de-de/",
+      "snippet": "Maßgefertigte Regale und Kleiderschränke, die sich nahtlos in deinen Alltag einfügen. Kostenlose Lieferung und 100 Tage Rückgabe …"
+    },
+    {
+      "title": "Tylko: crea mobili contenitori e armadi adatti alla tua casa",
+      "url": "https://tylko.com/it-it",
+      "snippet": "Mobili e armadi su misura che si integrano perfettamente nella vita di tutti i giorni. Consegna gratuita e reso senza spiegazioni per …"
+    },
+    {
+      "title": "Tylko | Tylko",
+      "url": "https://tylko.com/",
+      "snippet": "Design tailor-made shelves and wardrobes that fit your life perfectly. Free delivery & 100-day returns. Smart storage, beautifully made."
+    },
+    {
+      "title": "Aparadores de Diseño, Aparadores Muebles Modernos - Tylko",
+      "url": "https://tylko.com/es-es/muebles-c/aparadores/",
+      "snippet": "Consolas en blanco, negro, gris, roble y otros colores y acabados para tu dormitorio o sala de estar. Compra muebles en línea con …"
+    }
+  ]
+}

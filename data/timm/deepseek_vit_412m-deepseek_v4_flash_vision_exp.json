@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/deepseek_vit_412m.deepseek_v4_flash_vision_exp",
+  "slug": "timm-deepseek_vit_412m-deepseek_v4_flash_vision_exp",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/deepseek_vit_412m.deepseek_v4_flash_vision_exp",
+  "created_at": "2026-09-11T16:20:54.000Z",
+  "updated_at": "2026-09-11T16:21:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 411842560,
+  "parameters_human": "411.8M",
+  "storage_bytes": 1647397576,
+  "storage_human": "1.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sella Ronda Ski Map And Resort Information - Free Piste Map",
+      "url": "https://skimaps.co.uk/italy/dolomiti-superski/sella-ronda/",
+      "snippet": "Information and facts on the Sella Ronda ski area, including a free Sella Ronda piste map available to download here"
+    },
+    {
+      "title": "Sellaronda Ski Map",
+      "url": "https://www.valgardenaskimap.com/en/sella-ronda",
+      "snippet": "Oct 4, 2024 · High-res ski map with zoom and navigation."
+    },
+    {
+      "title": "Sella Ronda Ski Circuit Piste Map",
+      "url": "https://piste-maps.co.uk/italy/dolomiti-superski/sella-ronda",
+      "snippet": "Sella Ronda piste map and Ski Trail Map free to Download."
+    },
+    {
+      "title": "Piste maps Sellaronda – trail maps Sellaronda - ski resort",
+      "url": "https://www.skiresort.com/en/piste-trail-maps/sellaronda/",
+      "snippet": "Piste maps/trail maps on the Sella Ronda (Sellaronda). Panorama map Sellaronda."
+    },
+    {
+      "title": "Sella Ronda Ski Map - Ski Map Master",
+      "url": "https://skimapmaster.com/italy/dolomiti-superski/sella-ronda/",
+      "snippet": "Set in the heart of Italy’s Dolomites, a UNESCO World Heritage Site, the route loops around the majestic Sella massif and connects …"
+    }
+  ]
+}

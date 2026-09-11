@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sahilchachra/MiniCPM5-2B-OptiQ-5bpw",
+  "slug": "sahilchachra-minicpm5-2b-optiq-5bpw",
+  "author": "sahilchachra",
+  "url": "https://huggingface.co/sahilchachra/MiniCPM5-2B-OptiQ-5bpw",
+  "created_at": "2026-09-11T11:09:18.000Z",
+  "updated_at": "2026-09-11T11:13:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "quantized",
+    "minicpm",
+    "text-generation",
+    "conversational",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1926692226,
+  "storage_human": "1.9 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《ピュアホリック ～純潔乙女と婚姻カンケイ！？～ THE ...",
+      "url": "https://www.anibk.com/bk/13434",
+      "snippet": "Aug 28, 2026 · 亜人と呼ばれる人種と共存を果たした世界。 「覚醒の魔素」を持つ太壱は亜人たちの頂点に君臨する三人に結婚と …"
+    },
+    {
+      "title": "《ピュアホリック ～純潔乙女と婚姻カンケイ！？》系列-全部 ...",
+      "url": "https://www.anibk.com/family/13434",
+      "snippet": "《ピュアホリック ～純潔乙女と婚姻カンケイ！ 》系列-全部动画作品 - 番组百科|动漫科. © 2020 番组百科 . All Rights Reserved."
+    },
+    {
+      "title": "『ピュアホリック ～純潔乙女と婚姻カンケイ！？～ THE ...",
+      "url": "https://news.toranoana.jp/349873",
+      "snippet": "May 28, 2026 · 『ピュアホリック ～純潔乙女と婚姻カンケイ！ ？ ～ THE ANIMATION』DVD 上巻・下巻の発売を記念して、「サ …"
+    },
+    {
+      "title": "ピュアホリック ～純潔乙女と婚姻カンケイ!?～ THE ANIMATION ...",
+      "url": "https://www.melonbooks.co.jp/detail/detail.php?product_id=3649670",
+      "snippet": "ピュアホリック ～純潔乙女と婚姻カンケイ!?～ THE ANIMATION 上巻はピンクパイナップル の作品です。 通販、予約は業界最速の …"
+    },
+    {
+      "title": "発売まであと1日！『ピュアホリック ～純潔乙女と婚姻カンケイ ...",
+      "url": "https://pinpai.livedoor.blog/archives/38556079.html",
+      "snippet": "Aug 27, 2026 · 『ピュアホリック ～純潔乙女と婚姻カンケイ！ ？ ～ THE ANIMATION 上巻＆下巻』発売まであと1日！ 亜人と呼ば …"
+    }
+  ]
+}

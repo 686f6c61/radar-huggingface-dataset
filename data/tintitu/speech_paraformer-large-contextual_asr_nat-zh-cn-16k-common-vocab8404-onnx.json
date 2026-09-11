@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tintitu/speech_paraformer-large-contextual_asr_nat-zh-cn-16k-common-vocab8404-onnx",
+  "slug": "tintitu-speech_paraformer-large-contextual_asr_nat-zh-cn-16k-common-vocab8404-onnx",
+  "author": "tintitu",
+  "url": "https://huggingface.co/tintitu/speech_paraformer-large-contextual_asr_nat-zh-cn-16k-common-vocab8404-onnx",
+  "created_at": "2026-09-11T13:17:47.000Z",
+  "updated_at": "2026-09-11T14:53:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 833609946,
+  "storage_human": "834 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aztecs - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aztecs",
+      "snippet": "The Mexica were late-comers to the Valley of Mexico, and founded the city-state of Tenochtitlan on unpromising islets in Lake …"
+    },
+    {
+      "title": "Timeline of Mexican history - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Timeline_of_Mexican_history",
+      "snippet": "This is a timeline of Mexican history, comprising important legal and territorial changes and political events and improvements in …"
+    },
+    {
+      "title": "Jordan: Aztec Chronology",
+      "url": "https://pages.ucsd.edu/~dkjordan/arch/aztecchron.html",
+      "snippet": "Nov 15, 1998 · Further, even when the Aztec year is known, the conversion to Western years may vary because the year ends do not …"
+    },
+    {
+      "title": "Mexico Timeline - War, Events & Civilizations | HISTORY",
+      "url": "https://www.history.com/articles/mexico-timeline",
+      "snippet": "Jan 27, 2010 · From the stone cities of the Maya to the might of the Aztecs, from its conquest by Spain to its rise as a modern nation, …"
+    },
+    {
+      "title": "Aztec Empire | Timeline | Britannica",
+      "url": "https://www.britannica.com/summary/Aztec-Empire-Timeline",
+      "snippet": "Timeline of key events in the history of the Aztec Empire. Beginning in the 14th century the American Indian people known as the …"
+    }
+  ]
+}

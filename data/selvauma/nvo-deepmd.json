@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Selvauma/nvo-deepmd",
+  "slug": "selvauma-nvo-deepmd",
+  "author": "Selvauma",
+  "url": "https://huggingface.co/Selvauma/nvo-deepmd",
+  "created_at": "2026-09-11T16:17:56.000Z",
+  "updated_at": "2026-09-11T16:27:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepmd-kit",
+    "molecular-dynamics",
+    "interatomic-potential",
+    "materials-science",
+    "battery-materials",
+    "sodium-ion-battery",
+    "vanadium-oxide",
+    "cathode-material",
+    "tin-anode",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16753620,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "15-зарядный \"ТТ\" образца 1942 года ... - Guns.ru",
+      "url": "https://forum.guns.ru/forummessage/36/212838.html",
+      "snippet": "May 7, 2007 · А что добавить? Давно уже известная вещь, только не 15-ти, а 12 (или 13, но не 15)-ти зарядный. И рукоятка …"
+    },
+    {
+      "title": "ТТ \"Лидер\" глазами владельца ...",
+      "url": "https://forum.guns.ru/forummessage/77/97158.html",
+      "snippet": "Oct 3, 2005 · Здравствуйте друзья! Я недавно прочитал статью уважаемого Erosa о пистолете Р1 'Ноганыч' и решил написать …"
+    },
+    {
+      "title": "Устройство и назначение частей и ...",
+      "url": "https://forum.guns.ru/forummessage/81/110902.html",
+      "snippet": "Dec 22, 2005 · Пистолет состоит из следующих частей и механизмов: Рамка (поз. 15) служит для соединения всех частей …"
+    },
+    {
+      "title": "Сравнение тт и нагана - Guns.ru",
+      "url": "https://forum.guns.ru/forummessage/4/2451817.html",
+      "snippet": "May 3, 2019 · Часто вижу жаркие обсуждения на форумах, что мол пуля нагана куда лучше и убойнее ТТ, мол быстрая ТТ …"
+    },
+    {
+      "title": "Выпуск пистолета ТТ по годам : Макеты и ...",
+      "url": "https://forum.guns.ru/forummessage/85/539244.html",
+      "snippet": "Nov 1, 2009 · Вот, напр., фото ТТ-30 1933 г/в с No. 7184 и ТТ-30 1934 г/в с No. 48421. С производством пистолетов ТТ в 1935 …"
+    }
+  ]
+}

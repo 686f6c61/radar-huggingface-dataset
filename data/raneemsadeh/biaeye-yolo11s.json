@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "raneemsadeh/biaeye-yolo11s",
+  "slug": "raneemsadeh-biaeye-yolo11s",
+  "author": "raneemsadeh",
+  "url": "https://huggingface.co/raneemsadeh/biaeye-yolo11s",
+  "created_at": "2026-09-11T18:04:55.000Z",
+  "updated_at": "2026-09-11T18:05:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolo11",
+    "litter",
+    "waste",
+    "illegal-dumping",
+    "taco",
+    "amman",
+    "object-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19797305,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An update to how we count public views across YouTube",
+      "url": "https://support.google.com/youtube/thread/433409976/an-update-to-how-we-count-public-views-across-youtube?hl=en",
+      "snippet": "Aug 17, 2026 · Last year, we updated how we count public views for Shorts to better capture how viewers watch on YouTube. Now, …"
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "因《老梁故事汇》走红，所有节目被停后老梁去哪了？ - 知乎",
+      "url": "https://www.zhihu.com/question/382486986",
+      "snippet": "1 1972年2月，梁宏达出生在黑龙江省绥化市的一个小县城里。 爷爷是私塾先生，老梁小时候在书香门第长大。 很小的时候，爷爷就带 …"
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶 …"
+    },
+    {
+      "title": "Download the YouTube mobile app - Android - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/3227660",
+      "snippet": "Download the YouTube app for a richer viewing experience on your mobile device."
+    }
+  ]
+}

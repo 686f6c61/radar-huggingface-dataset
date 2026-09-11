@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "arrochi112/OpenGrad-Qwen3.5-2B-M0-ABL-MinusXLAM-FixedCompute",
+  "slug": "arrochi112-opengrad-qwen3-5-2b-m0-abl-minusxlam-fixedcompute",
+  "author": "arrochi112",
+  "url": "https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M0-ABL-MinusXLAM-FixedCompute",
+  "created_at": "2026-09-11T14:08:46.000Z",
+  "updated_at": "2026-09-11T14:13:48.000Z",
+  "license": "composite-per-source",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tool-calling",
+    "function-calling",
+    "supervised-fine-tuning",
+    "qwen3.5",
+    "opengrad",
+    "ablation",
+    "dataset:arrochi112/OpenGrad-ToolPolicy-Canonical-v2-minus-xlam",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22602345488,
+  "storage_human": "22.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "大佬们，我想知道光的双缝干涉中，公式 Δx＝ (l/d)λ ...",
+      "url": "https://www.zhihu.com/question/382600481",
+      "snippet": "想知道这个公式的数学推导。 课后习题： ①在完整版公式中如何用以下已知变量：Δy及对应的k、n、L、d，来表示未知量λ。 ② …"
+    },
+    {
+      "title": "戴尔显示器S系列\\P系列\\U系列的区别在哪呢？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/1682564962",
+      "snippet": "前言： 根据IDC数据显示，戴尔显示器的多年出货量都稳居世界第一，几乎在每项显示器技术的前沿阵地，都有戴尔冲锋陷阵的身 …"
+    },
+    {
+      "title": "如何理解Bregman divergence？ - 知乎",
+      "url": "https://www.zhihu.com/question/22426561",
+      "snippet": "由此，我们便得到了Bregman divergence函数 d(x,y)的一般定义。 *历史渊源：这是Bregman最早提出定义的paper：[3] Bregman, Lev …"
+    },
+    {
+      "title": "从激光原理的角度来说，横模与纵模有什么区别和 ...",
+      "url": "https://www.zhihu.com/question/21796925",
+      "snippet": "对于谐振腔，我们需要求解霍姆赫兹方程： \\nabla^2 u+k^2u=0 。 对于开放腔， y 和 z 方向都没有边界条件限制，我们只需要求解一 …"
+    },
+    {
+      "title": "高铁车票上G、D、C、K等字母分别代表什么意思？ - 知乎",
+      "url": "https://www.zhihu.com/question/317979376",
+      "snippet": "Mar 29, 2019 · Y 读作“游” 代表旅游列车 L 读作“临” 代表临时旅客列车 车厢上的字母是什么含义？ “ZE”代表二等座车，是动车组中最 …"
+    }
+  ]
+}

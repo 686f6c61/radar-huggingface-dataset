@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/silly-v0.1-i1-GGUF",
+  "slug": "mradermacher-silly-v0-1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/silly-v0.1-i1-GGUF",
+  "created_at": "2026-09-11T16:10:10.000Z",
+  "updated_at": "2026-09-11T17:18:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:wave-on-discord/silly-v0.1",
+    "base_model:quantized:wave-on-discord/silly-v0.1",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247802880,
+  "parameters_human": "12.25B",
+  "storage_bytes": 141939307712,
+  "storage_human": "141.9 GB",
+  "base_model": "wave-on-discord/silly-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le service public de rénovation de l'habitat | France Rénov'",
+      "url": "https://france-renov.gouv.fr/",
+      "snippet": "France Rénov' vous conseille sur les travaux les plus adaptés à votre situation, vous informe sur les aides disponibles et vous oriente …"
+    },
+    {
+      "title": "Trouvez un professionnel RGE et ou un architecte | France Rénov'",
+      "url": "https://france-renov.gouv.fr/annuaires-professionnels/artisan-rge-architecte",
+      "snippet": "Cet annuaire vous permet de trouver un professionnel RGE (pour réaliser des travaux de rénovation énergétique et / ou un audit …"
+    },
+    {
+      "title": "authentification.france-renov.gouv.fr - Authentication portal",
+      "url": "https://authentification.france-renov.gouv.fr/",
+      "snippet": "Vous êtes un particulier propriétaire d'un logement que vous occupez ou que vous mettez en location, et vous résidez en France. …"
+    },
+    {
+      "title": "Mes aides réno : simulateur officiel des aides à la rénovation ...",
+      "url": "http://mesaides.france-renov.gouv.fr/",
+      "snippet": "Mes Aides Réno est un service public de France Rénov' pour simplifier l'information sur les aides à la rénovation énergétique."
+    },
+    {
+      "title": "MaPrimeRénov - Poêle - mesaides.france-renov.gouv.fr",
+      "url": "https://mesaides.france-renov.gouv.fr/aides/ma-prime-renov/Po%C3%AAle",
+      "snippet": "Calculateur de la prime MaPrimeRénov' pour Poêle AvertissementA la suite de plusieurs évolutions du dispositif de financement par …"
+    }
+  ]
+}

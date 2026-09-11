@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Duc1212/DucERM-v0.1",
+  "slug": "duc1212-ducerm-v0-1",
+  "author": "Duc1212",
+  "url": "https://huggingface.co/Duc1212/DucERM-v0.1",
+  "created_at": "2026-09-11T12:11:23.000Z",
+  "updated_at": "2026-09-11T12:11:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ftse Mib: raccomandazioni Buy e Sell sui 40 titoli (23/02/2026 ...",
+      "url": "https://www.finanzaonline.com/rubriche/ftse-mib-tutte-le-raccomandazioni-buy-e-sell-degli-analisti-sui-40-titoli-23-02-2026",
+      "snippet": "Feb 23, 2026 · La panoramica di tutte le raccomandazioni degli analisti sui titoli del Ftse Mib: tutti i Buy, Sell e Hold sulle big di Piazza …"
+    },
+    {
+      "title": "Deutsche Bank, HSBC e anche la numero uno Usa: scandalo riciclaggio …",
+      "url": "https://www.finanzaonline.com/notizie/deutsche-bank-hsbc-e-le-altre-scandalo-riciclaggio-da-2-000-mld-scuote-le-grandi-banche",
+      "snippet": "Sep 21, 2020 · Deutsche Bank, HSBC e anche la numero uno Usa: scandalo riciclaggio da 2.000 mld $ scuote le grandi banche di …"
+    },
+    {
+      "title": "Da Deutsche Bank due obbligazioni Callable Tasso Fisso Step-Down in ...",
+      "url": "https://www.finanzaonline.com/notizie/da-deutsche-bank-due-obbligazioni-callable-tasso-fisso-step-down-in-euro-e-dollari",
+      "snippet": "Mar 30, 2026 · Deutsche Bank lancia sul mercato Euro TLX di Borsa Italiana due Obbligazioni Callable Tasso Fisso Step-Down, una …"
+    },
+    {
+      "title": "Deutsche Bank, lascia il capo dell'investment banking: \"Banca pronta ...",
+      "url": "https://www.finanzaonline.com/notizie/deutsche-bank-lascia-il-capo-dellinvestment-banking-banca-pronta-alla-trasformazione",
+      "snippet": "Jul 5, 2019 · Garth Ritchie (nella foto), presidente di Deutsche Bank e capo della Corporate & Investment Bank, lascia la banca di …"
+    },
+    {
+      "title": "Mps: accordo con Deutsche Bank su Santorini - FinanzaOnline",
+      "url": "https://www.finanzaonline.com/notizie/mps-accordo-con-deutsche-bank-su-santorini-211308",
+      "snippet": "Dec 19, 2013 · Banca Monte dei Paschi di Siena (Mps) e Deutsche Bank, in riferimento all’operazione di finanza strutturata …"
+    }
+  ]
+}

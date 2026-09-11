@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Shail301/q4_k_m",
+  "slug": "shail301-q4_k_m",
+  "author": "Shail301",
+  "url": "https://huggingface.co/Shail301/q4_k_m",
+  "created_at": "2026-09-11T18:21:32.000Z",
+  "updated_at": "2026-09-11T18:21:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:quantized:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920734272,
+  "storage_human": "4.9 GB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vakuum kese i aparati za vakuumiranje - tehnomanija.rs",
+      "url": "https://www.tehnomanija.rs/mali-kucni-aparati/aparati-za-pripremu-hrane/vakum-kese-i-aparati-za-vakumiranje",
+      "snippet": "Za najbolji učinak, treba obezbediti i kvalitetne kese za vakumiranje. Uz kombinaciju dobrog aparata i kesa, uživanje u hrani koja na …"
+    },
+    {
+      "title": "Profesionalne kese za vakumiranje hrane 100 komada",
+      "url": "https://univerzalnialat.rs/proizvod/kese-za-vakumiranje-hrane-100-kom/",
+      "snippet": "Praktične profesionalne kese za vakumiranje hrane koje produžavaju svežinu namirnica, sprečavaju mešanje mirisa u zamrzivaču i …"
+    },
+    {
+      "title": "Kese za vakumiranje (hranu) 5M*0.28M - Odlična cena | Woby Haus Online",
+      "url": "https://www.wobyhaus.co.rs/elektric-gasni-aparati-i-prib/22620-kese-za-vakumirku-5m0-28m",
+      "snippet": "Kese za vakumiranje (vakum kese) su savršeno rešenje za čuvanje smrznute hrane, povrća, ribe. Rolna dužine 5 m. Poručite online."
+    },
+    {
+      "title": "Kese za aparat za vakumiranje hrane – Vacuum Sealer",
+      "url": "https://niskecene.com/proizvod/kese-za-aparat-za-vakumiranje-hrane-vacuum-sealer/",
+      "snippet": "Kese za vakumiranje pomažu da namirnice podelite u praktične porcije i zaštitite ih od vazduha i vlage nakon zaptivanja. Pogodne su …"
+    },
+    {
+      "title": "Kese za Vakumiranje - Kupi Ovde - ePlaneta",
+      "url": "https://eplaneta.rs/mali-kucni-aparati/aparati-za-pripremu-hrane/ostali-aparati-za-pripremu-hrane.html?tip=1774",
+      "snippet": "Uklanjanjem vazduha iz ambalaže stvara se nepropusna barijera koja sprečava da kiseonik dopre do hrane. Time se usporava …"
+    }
+  ]
+}

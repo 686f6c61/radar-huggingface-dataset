@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260911_160524",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_acc_pre-wolof_s42_20260911_160524",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260911_160524",
+  "created_at": "2026-09-11T16:58:52.000Z",
+  "updated_at": "2026-09-11T16:59:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144439266,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578049458,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Report data or content errors on Google Maps",
+      "url": "https://support.google.com/maps/answer/3094088?hl=en",
+      "snippet": "Report spam or bad data Any illegal, offensive, fraudulent, or malicious data on Google Maps is considered as spam. Users found to …"
+    },
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Get started with Google Maps This article will help you set up, learn the basics, and explain various features of Google Maps. You …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use offline maps in Google Maps After you download an area, use the Google Maps app just like you normally would. If your internet …"
+    },
+    {
+      "title": "Google Maps Help",
+      "url": "https://support.google.com/maps/?hl=en",
+      "snippet": "Official Google Maps Help Center where you can find tips and tutorials on using Google Maps and other answers to frequently asked …"
+    },
+    {
+      "title": "Menelusuri menurut lintang & bujur di Google Maps",
+      "url": "https://support.google.com/maps/answer/18539?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Di komputer, buka Google Maps. Di peta, klik kanan tempat atau area. Jendela pop-up akan muncul. Di bagian atas, Anda dapat …"
+    }
+  ]
+}

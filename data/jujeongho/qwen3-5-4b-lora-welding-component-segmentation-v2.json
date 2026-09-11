@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jujeongho/Qwen3.5-4B-LoRA-Welding-Component-Segmentation-v2",
+  "slug": "jujeongho-qwen3-5-4b-lora-welding-component-segmentation-v2",
+  "author": "jujeongho",
+  "url": "https://huggingface.co/jujeongho/Qwen3.5-4B-LoRA-Welding-Component-Segmentation-v2",
+  "created_at": "2026-09-11T16:12:05.000Z",
+  "updated_at": "2026-09-11T16:16:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4538648576,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9097376321,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pauschalreise Palma de Mallorca » Hotel inkl. Flug buchen | TUI",
+      "url": "https://www.tui.com/pauschalreisen/spanien/mallorca/palma-de-mallorca/?msockid=33bf0d8cfb046507271a1a5dfa90642a",
+      "snippet": "Um besonders günstige Pauschalreisen nach Palma de Mallorca zu buchen, lohnt es sich, Reisedaten zu vergleichen, TUI-Rabatte …"
+    },
+    {
+      "title": "Palma de Mallorca Urlaub - Reise günstig buchen mit Flug & Hotel",
+      "url": "https://www.expedia.de/Palma-De-Mallorca.d2829.Reise-Angebote-Staedtereisen",
+      "snippet": "Buche jetzt deinen Palma de Mallorca Urlaub günstig. Zusätzlich möglich: Sparen mit Flug + Hotel Angeboten bei Expedia.de!"
+    },
+    {
+      "title": "Pauschalreise Mallorca » Hotel inkl. Flug buchen | TUI",
+      "url": "https://www.tui.com/pauschalreisen/spanien/mallorca/?msockid=33bf0d8cfb046507271a1a5dfa90642a",
+      "snippet": "Du buchst nämlich Deine Pauschalreise nach Mallorca mit Hotel und Flug inklusive. Meist ist der Transfer vom Flughafen zu dem von …"
+    },
+    {
+      "title": "Palma de Mallorca Urlaub 2026 - jetzt günstig buchen!",
+      "url": "https://urlaub.check24.de/urlaub/stadt/palma-de-mallorca-ci44?msockid=33bf0d8cfb046507271a1a5dfa90642a",
+      "snippet": "Entdecken Sie unsere Top-Urlaubsangebote für Palma de Mallorca mit echten Kundenbewertungen und der CHECK24 Nirgendwo …"
+    },
+    {
+      "title": "Pauschalreisen Mallorca Flug & Hotel als Komplettpaket buchen",
+      "url": "https://holidays.eurowings.com/de-de/pauschalreisen/spanien/mallorca.html",
+      "snippet": "Sep 12, 2026 · Wählen Sie Ihr präferiertes Hotel aus. Fügen Sie Flughafen und Reisezeit hinzu - und schon ist die Eurowings …"
+    }
+  ]
+}

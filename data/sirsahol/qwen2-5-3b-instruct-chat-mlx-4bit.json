@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Qwen2.5-3B-Instruct-chat-mlx-4bit",
+  "slug": "sirsahol-qwen2-5-3b-instruct-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Qwen2.5-3B-Instruct-chat-mlx-4bit",
+  "created_at": "2026-09-11T18:05:06.000Z",
+  "updated_at": "2026-09-11T18:19:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "4-bit",
+    "conversational",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1747715475,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forgot Password/Username? – Wells Fargo",
+      "url": "https://www.wellsfargo.com/help/online-banking/sign-on-faqs/",
+      "snippet": "Forgot Username or Password? Create a new password or find your username Let's get started >"
+    },
+    {
+      "title": "Online Banking Help - Wells Fargo",
+      "url": "https://www.wellsfargo.com/help/online-banking/",
+      "snippet": "If you forget your password, or for your security, we may suspend your access to Wells Fargo Online. To regain access, you’ll need to …"
+    },
+    {
+      "title": "Mobile & Online Banking: Checking & Savings Accounts | Wells Fargo",
+      "url": "https://www.wellsfargo.com/mobile-online-banking/",
+      "snippet": "Online and mobile banking made easy: Manage checking and savings accounts, pay bills, monitor spending and more with the Wells …"
+    },
+    {
+      "title": "Wells Fargo Bank, N.A. Cardholders",
+      "url": "https://retailservices.wellsfargo.com/customer/index.html",
+      "snippet": "Pay your Wells Fargo Bank, N.A. credit card bill online, review your statement guide, find answers to your questions, or locate your …"
+    },
+    {
+      "title": "Manage Your Accounts with Wells Fargo Online®",
+      "url": "https://www.wellsfargo.com/mobile-online-banking/manage-accounts/",
+      "snippet": "Use the Wells Fargo Mobile® app or Wells Fargo Online® to access your accounts, monitor balances and activities, set up alerts, …"
+    }
+  ]
+}

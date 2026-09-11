@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kisserpun/anima-firulais",
+  "slug": "kisserpun-anima-firulais",
+  "author": "kisserpun",
+  "url": "https://huggingface.co/kisserpun/anima-firulais",
+  "created_at": "2026-09-11T16:10:26.000Z",
+  "updated_at": "2026-09-11T16:17:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2091068928,
+  "parameters_human": "2.09B",
+  "storage_bytes": 4182218360,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kfv.at | kfv.at",
+      "url": "https://kfv-fussball.at/kfv/",
+      "snippet": "12.08.2026 KFV | Nachwuchs Start KFV-Nachwuchsmeisterschaft + Auftakt für Auswahlteams 06.08.2026 Projekte Mehr Service …"
+    },
+    {
+      "title": "Landingpage | Landingpage",
+      "url": "https://www.kfv-fussball.at/",
+      "snippet": "Landingpage Wir verwenden Cookies. Diese dienen dazu, Funktionalität und Performance unserer Website zu gewährleisten sowie …"
+    },
+    {
+      "title": "KFV Hauptversammlung 2024 - Landingpage",
+      "url": "https://service.kfv-fussball.at/hv2024.php",
+      "snippet": "Kärntner Fußballverbandes 2024 ... Hinweis: Pro Verein ist eine Anmeldung mit max. zwei Teilnehmern möglich. Stimmführer kann …"
+    },
+    {
+      "title": "Vereine - kfv.at",
+      "url": "https://kfv-fussball.at/kfv/Vereine",
+      "snippet": "Vereine | kfv.at ESV Admira Villach SV Afritz 1975 TSU Ainet SV WEB STAPLER Arnoldstein SC GSM Arriach ASK Klagenfurt …"
+    },
+    {
+      "title": "Aktuelle Trainerprüfungen | kfv.at",
+      "url": "https://kfv-fussball.at/kfv/Trainerwesen/Trainerausbildung/Aktuelle-Trainerpruefungen",
+      "snippet": "4 days ago · Der Kärntner Fußballverband hält im Jahr 2026 in der KFV-Geschäftsstelle (St. Ruprechter Straße 9, 9020 Klagenfurt) …"
+    }
+  ]
+}

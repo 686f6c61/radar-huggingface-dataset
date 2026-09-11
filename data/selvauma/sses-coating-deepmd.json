@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Selvauma/sses-coating-deepmd",
+  "slug": "selvauma-sses-coating-deepmd",
+  "author": "Selvauma",
+  "url": "https://huggingface.co/Selvauma/sses-coating-deepmd",
+  "created_at": "2026-09-11T16:15:38.000Z",
+  "updated_at": "2026-09-11T16:26:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepmd-kit",
+    "molecular-dynamics",
+    "interatomic-potential",
+    "materials-science",
+    "battery-materials",
+    "coating-screening",
+    "lithium-metal-anode",
+    "interface",
+    "multi-material",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132102387,
+  "storage_human": "132 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fórum Contábeis",
+      "url": "https://www.contabeis.com.br/forum/",
+      "snippet": "Fórum de discussão de contabilidade, legislação federal, trabalhista, previdenciária, estadual, municipal e comercial. Esclarecimento …"
+    },
+    {
+      "title": "Entenda como será o slit payment da reforma a partir de 2027",
+      "url": "https://www.contabeis.com.br/noticias/75675/entenda-como-sera-o-slit-payment-da-reforma-a-partir-de-2027/",
+      "snippet": "Mar 22, 2026 · O Split Payment, parte da Reforma Tributária, muda como impostos como IBS e CBS são pagos. Saiba como …"
+    },
+    {
+      "title": "não foi possível avançar para o próximo passo. tente novamente em ...",
+      "url": "https://www.contabeis.com.br/forum/tributos-estaduais-municipais/411579/nao-foi-possivel-avancar-para-o-proximo-passo-tente-novamente-em-alguns-minutos/",
+      "snippet": "Jul 29, 2026 · O Portal Contábeis se isenta de quaisquer responsabilidades civis sobre eventuais discussões dos usuários ou …"
+    },
+    {
+      "title": "Portal de Gestão NFS-e - Contribuinte",
+      "url": "https://www.contabeis.com.br/forum/legalizacao-de-empresas/411904/portal-de-gestao-nfs-e-contribuinte/",
+      "snippet": "Jan 7, 2026 · O Portal Contábeis se isenta de quaisquer responsabilidades civis sobre eventuais discussões dos usuários ou …"
+    },
+    {
+      "title": "Calcule a alíquota do Simples Nacional - Portal Contábeis",
+      "url": "https://www.contabeis.com.br/ferramentas/anexos-simples",
+      "snippet": "O que é o Simples Nacional? Calcule e Monte a tabela com base na Receita Bruta do Simples Nacional - Regime Especial Unificado …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "davidanugraha/Qwen3.5-35B-A3B-SWE-Smith-LoRA-Adapters",
+  "slug": "davidanugraha-qwen3-5-35b-a3b-swe-smith-lora-adapters",
+  "author": "davidanugraha",
+  "url": "https://huggingface.co/davidanugraha/Qwen3.5-35B-A3B-SWE-Smith-LoRA-Adapters",
+  "created_at": "2026-09-11T14:11:48.000Z",
+  "updated_at": "2026-09-11T14:13:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "verl",
+    "rloo",
+    "qwen3.5",
+    "swe-smith",
+    "mini-swe-agent",
+    "swe-bench-verified",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56715514680,
+  "storage_human": "56.7 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doctolib Pro | Accès praticiens",
+      "url": "https://pro.doctolib.fr/welcome",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Doctolib Pro | Le logiciel pour les professionnels de santé",
+      "url": "https://info.doctolib.fr/",
+      "snippet": "Doctolib Pro accompagne chaque jour des centaines de milliers de soignants dans la gestion de leur cabinet avec des solutions sur …"
+    },
+    {
+      "title": "Logiciel professionnel de santé | Doctolib",
+      "url": "https://info.doctolib.fr/autre-specialite/",
+      "snippet": "En fonction des besoins de votre spécialité et de votre mode d’exercice, Doctolib vous propose différents tarifs et la possibilité de …"
+    },
+    {
+      "title": "Doctolib Pro – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=fr.doctolib.pro&hl=fr",
+      "snippet": "Notre mission : faciliter la coordination des soins entre plus de 400 000 professionnels de santé en France via une messagerie …"
+    },
+    {
+      "title": "Doctolib : Prenez rendez-vous en ligne chez un soignant",
+      "url": "https://www.doctolib.fr/",
+      "snippet": "Vous êtes soignant ? Découvrez Doctolib pour les soignants et améliorez votre quotidien"
+    }
+  ]
+}

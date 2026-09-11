@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sirigidipandu/qwen3-4b-uncensored-gguf",
+  "slug": "sirigidipandu-qwen3-4b-uncensored-gguf",
+  "author": "sirigidipandu",
+  "url": "https://huggingface.co/sirigidipandu/qwen3-4b-uncensored-gguf",
+  "created_at": "2026-09-11T17:55:32.000Z",
+  "updated_at": "2026-09-11T17:56:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497278944,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "So öffnen Sie mehrere PDFs auf einmal mit 3 Möglichkeiten",
+      "url": "https://pdf.wondershare.de/how-to/view-multiple-pdf.html",
+      "snippet": "Apr 30, 2025 · Möchten Sie wissen, wie Sie mehrere PDF-Dateien gleichzeitig in einem Fenster öffnen? Hier zeigen Sie, wie Sie …"
+    },
+    {
+      "title": "Wie kann man mehrere PDFs gleichzeitig öffnen | [Official] UPDF",
+      "url": "https://updf.com/de/read-pdf/how-to-open-multiple-pdfs-at-once/",
+      "snippet": "Oct 17, 2023 · Willst du mehrere PDFs gleichzeitig öffnen? In diesem Artikel erfährst du, wie du mit PDF-Editor mehrere PDFs …"
+    },
+    {
+      "title": "Mehrere PDFs gleichzeitig öffnen - Sparen Sie Zeit und ... - SwifDoo",
+      "url": "https://www.swifdoo.com/de/artikel/mehrere-pdfs-auf-einmal-oeffnen",
+      "snippet": "Feb 28, 2024 · Entdecken Sie die ultimative Anleitung zum mühelosen gleichzeitigen Öffnen mehrerer PDF-Dateien, damit Sie viel …"
+    },
+    {
+      "title": "Wie kann ich mehrere Dokumente gleichzeitig öffnen?",
+      "url": "https://www.pchardwarepro.com/de/So-%C3%B6ffnen-Sie-mehrere-Dokumente-gleichzeitig/",
+      "snippet": "Viele Menschen sind jedoch nicht mit Methoden zum gleichzeitigen Öffnen mehrerer Dokumente auf ihrem Computer vertraut, was …"
+    },
+    {
+      "title": "Tipp des Tages: Mehrere PDFs in eigenen Fenstern öffnen",
+      "url": "https://www.pcwelt.de/article/1123668/tipp-des-tages-mehrere-pdfs-in-eigenen-fenstern-oeffnen.html",
+      "snippet": "Mar 9, 2004 · Sie möchten mehrere PDF-Dokumente gleichzeitig öffnen. Beim Doppelklick auf eine PDF-Datei lädt der Acrobat …"
+    }
+  ]
+}

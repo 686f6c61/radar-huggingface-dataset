@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/pi05-xarm-hang-towel-rl10-K6R-v0.0",
+  "slug": "jaycao99-pi05-xarm-hang-towel-rl10-k6r-v0-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/pi05-xarm-hang-towel-rl10-K6R-v0.0",
+  "created_at": "2026-09-11T16:54:29.000Z",
+  "updated_at": "2026-09-11T16:55:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9354066736,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UGG® Official | Boots, Slippers & Shoes | Free Shipping & Returns",
+      "url": "https://www.ugg.com/?msockid=3b9ced7fd20566cb0525faaed3eb67d1",
+      "snippet": "It's always UGG® season. Find the perfect boots, slippers, sneakers, and sandals to complete your look - from statement fluffy …"
+    },
+    {
+      "title": "Official UGG® UK Website | UGG Boots, Slippers & Slides",
+      "url": "https://www.ugg.com/uk/?msockid=3b9ced7fd20566cb0525faaed3eb67d1",
+      "snippet": "Browse the official UGG® UK website and find your favourite boots, slippers, slides, sandals, trainers, accessories and more. Free …"
+    },
+    {
+      "title": "UGG | Shop Boots, Slippers & Shoes - Undeniably Authentic | UGG",
+      "url": "https://au.ugg.com/",
+      "snippet": "It's always UGG season. Find the perfect boots, slippers, sneakers, and sandals to complete your look - from statement fluffy …"
+    },
+    {
+      "title": "UGG Brasil | Conforto Premium e Estilo Autêntico",
+      "url": "https://br.ugg.com/",
+      "snippet": "A melhor experiência em conforto e estilo está aqui! Produtos, serviços e inovação em um só lugar. Viva o autêntico lifestyle …"
+    },
+    {
+      "title": "Find a UGG Location",
+      "url": "https://locations.ugg.com/",
+      "snippet": "UGG - Pocono Premium Outlet 1000 Premium Outlets Dr Suite A-17 Tannersville, PA 18372 344.8 mi Closed Filter by store category: …"
+    }
+  ]
+}

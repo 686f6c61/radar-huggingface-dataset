@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-120",
+  "slug": "yuxuanw8-qwen3b-rlvr-hotpot-checkpoint-120",
+  "author": "yuxuanw8",
+  "url": "https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-120",
+  "created_at": "2026-09-11T12:08:05.000Z",
+  "updated_at": "2026-09-11T12:09:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355226095,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KNMC - Smartschool",
+      "url": "https://knmc.smartschool.be/",
+      "snippet": "Welkom op het digitaal schoolplatform van KNMC."
+    },
+    {
+      "title": "Smartschool - Smartschool",
+      "url": "https://oauth.smartschool.be/login",
+      "snippet": "Welkom op het digitaal schoolplatform van Smartschool."
+    },
+    {
+      "title": "KNMC - Een huis vol toekomst",
+      "url": "https://knmc.be/",
+      "snippet": "KNMC (KOBA NoordkAnt Merksem Centrum) is een middelbare school met twee sites in Merksem (Antwerpen): site Groenendaal en …"
+    },
+    {
+      "title": "KNMC - Smartschool",
+      "url": "https://knmc.smartschool.be/password-recovery",
+      "snippet": "Ken je je gebruikersnaam niet of ontving je geen nieuw wachtwoord? Contacteer de Smartschoolbeheerder van je school."
+    },
+    {
+      "title": "- Smartschool",
+      "url": "https://www.smartschool.be/double-authentification/login_03-2/",
+      "snippet": "Smartschool Radar: let op met het installeren van extensies! Phishing: Laat je niet vangen! Eerst checken, dan klikken."
+    }
+  ]
+}

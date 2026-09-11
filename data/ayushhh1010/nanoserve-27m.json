@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ayushhh1010/nanoserve-27m",
+  "slug": "ayushhh1010-nanoserve-27m",
+  "author": "ayushhh1010",
+  "url": "https://huggingface.co/ayushhh1010/nanoserve-27m",
+  "created_at": "2026-09-11T17:54:27.000Z",
+  "updated_at": "2026-09-11T18:02:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nanoserve",
+    "tinystories",
+    "from-scratch",
+    "small-language-model",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26747392,
+  "parameters_human": "26.7M",
+  "storage_bytes": 106997648,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Авто изпит - Онлайн решаване на изпитни ...",
+      "url": "https://www.avtoizpit.com/",
+      "snippet": "Стартирайте ePass2003-Setup.exe с двойно кликване върху изтегления файл. Излиза прозореца за избор на език. След като …"
+    },
+    {
+      "title": "Авто изпит - Онлайн решаване на изпитни ...",
+      "url": "https://www.avtoizpit.com/listovki",
+      "snippet": "Авто изпит - Онлайн решаване на изпитни тестове avtoizpit.com Информационна система"
+    },
+    {
+      "title": "Авто изпит - Онлайн листовки за изпит и ...",
+      "url": "https://avtoizpit.bg/",
+      "snippet": "Листовките онлайн съдържат актуални въпроси от Изпълнителна Агенция “Автомобилна Администрация“ за провеждане на …"
+    },
+    {
+      "title": "Авто изпит - Онлайн решаване на изпитни ...",
+      "url": "https://reg.avtoizpit.com/dqc-register/",
+      "snippet": "Може да прегледате вашият практически и теоретичен изпит в Учебен център, притежаващ разрешение за обучение на …"
+    },
+    {
+      "title": "Авто Обучение за кандидат-шофьори",
+      "url": "https://avtoobuchenie.bg/",
+      "snippet": "Мултимедийно интерактивно учебно помагало за кандидат-шофьори. Видео обучение и актуални изпитни въпроси по всички …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-3dff9e74-VelvetSpecter",
+  "slug": "guillekenzo-aros-3dff9e74-velvetspecter",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-3dff9e74-VelvetSpecter",
+  "created_at": "2026-09-11T16:42:32.000Z",
+  "updated_at": "2026-09-11T16:56:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 580075408,
+  "storage_human": "580 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "spotify账号怎么登不上? - 知乎",
+      "url": "https://www.zhihu.com/question/329216939",
+      "snippet": "spotify每隔14天会强制登录，届时手机app和桌面应用都没法登录，会弹出国家限制问题。 如何解决我找了很多方法但是都没有用，下 …"
+    },
+    {
+      "title": "Spotify 登录遇到 Accesspoint:17 的问题，如何解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/477038979",
+      "snippet": "Aug 3, 2021 · 这时候重启spotify再登陆还是不行的。 然后我重启电脑再试就行了。 原因也可能是数据更新延迟，不确定。 建议记住登 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-4B-Instruct-RETA-GGUF",
+  "slug": "mradermacher-qwen3-4b-instruct-reta-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-4B-Instruct-RETA-GGUF",
+  "created_at": "2026-09-11T11:07:58.000Z",
+  "updated_at": "2026-09-11T11:08:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Get started with Google Maps This article will help you set up, learn the basics, and explain various features of Google Maps. You …"
+    },
+    {
+      "title": "Report data or content errors on Google Maps",
+      "url": "https://support.google.com/maps/answer/3094088?hl=en",
+      "snippet": "Report spam or bad data Any illegal, offensive, fraudulent, or malicious data on Google Maps is considered as spam. Users found to …"
+    },
+    {
+      "title": "Get directions & show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en&co=GENIE.platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transit, walking, ride sharing, cycling, flight, or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Gebiete herunterladen und in Google Maps offline navigieren",
+      "url": "https://support.google.com/maps/answer/6291838?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Offlinekarten in Google Maps verwenden Nachdem Sie eine Offlinekarte heruntergeladen haben, können Sie Google Maps wie …"
+    },
+    {
+      "title": "Use navigation in Google Maps",
+      "url": "https://support.google.com/maps/answer/3273406?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use navigation in Google Maps To get easy, turn-by-turn navigation to places, use the Google Maps app. Maps shows you directions …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "solavr/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-1120ms-int8",
+  "slug": "solavr-sherpa-onnx-nemotron-3-5-asr-streaming-0-6b-1120ms-int8",
+  "author": "solavr",
+  "url": "https://huggingface.co/solavr/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-1120ms-int8",
+  "created_at": "2026-09-11T11:23:59.000Z",
+  "updated_at": "2026-09-11T11:23:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "int8",
+    "streaming-asr",
+    "nemotron",
+    "fastconformer",
+    "transducer",
+    "automatic-speech-recognition",
+    "multilingual",
+    "base_model:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "base_model:quantized:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "АБВ Поща - Вход",
+      "url": "https://home.abv.bg/",
+      "snippet": "АБВ Поща е бърза, удобна и сигурна! Разполагате с 15 GB пространство, управлявате контакти, а пощата ви е защитена. …"
+    },
+    {
+      "title": "АБВ Поща - ABV",
+      "url": "http://mail20.abv.bg/app/servlet/box",
+      "snippet": "АБВ.БГ - Нещо повече от пощенска кутия ВАШАТА ПОТРЕБИТЕЛСКА СЕСИЯ Е ИЗТЕКЛА! За да влезете обратно в …"
+    },
+    {
+      "title": "АБВ Профил - ABV",
+      "url": "https://passport.abv.bg/app/profiles/login",
+      "snippet": "С този профил може да ползвате всички АБВ услуги: АБВ Поща, DOX."
+    },
+    {
+      "title": "АБВ - ПОЩА - ABV",
+      "url": "https://mail20.abv.bg/app/servlet/plogin",
+      "snippet": "Грешен потребител/парола. (0126) Възможни причини за тази грешка може да намерите тук ..."
+    },
+    {
+      "title": "АбВ - Поща",
+      "url": "https://rimg.abv.bg/gm/z/home_rich.html?act=home",
+      "snippet": "Mаксималният размер за входящи писма в АБВ Поща. Максималният размер за входящо писмо, което потребител на АБВ …"
+    }
+  ]
+}

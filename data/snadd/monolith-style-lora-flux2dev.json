@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "snadd/monolith-style-lora-flux2dev",
+  "slug": "snadd-monolith-style-lora-flux2dev",
+  "author": "snadd",
+  "url": "https://huggingface.co/snadd/monolith-style-lora-flux2dev",
+  "created_at": "2026-09-11T19:20:23.000Z",
+  "updated_at": "2026-09-11T19:21:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "flux",
+    "text-to-image",
+    "lora",
+    "fal",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 332548624,
+  "storage_human": "333 MB",
+  "base_model": "undefined",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GHC Medical Shampoo Proteico 200 ml - Prevenzione Caduta",
+      "url": "https://www.tuttofarma.it/trattamenti-anticaduta/131610-ghc-medical-shampoo-proteico-200-ml.html",
+      "snippet": "Shampoo proteico con biotina, aminoacidi essenziali e ginseng per rinforzare e idratare i capelli, riducendone la caduta. Adatto a tutti …"
+    },
+    {
+      "title": "GHC MEDICAL SHAMPOO PROTEICO - Farmacia Zucca",
+      "url": "https://catalogo.farmaciazucca.it/ghc-medical-shampoo-proteico.html",
+      "snippet": "È particolarmente indicato nei casi di caduta e di indebolimento dei capelli. La sua azione detergente è dolce e controllata, i lisati …"
+    },
+    {
+      "title": "Shampoo capelli grassi Ghc medical shampoo seboequilibrante",
+      "url": "https://www.granfarma.it/shampoo-capelli-grassi/112140-ghc-medical-shampoo-seboequilibrante-200-ml.html",
+      "snippet": "Indicato per cuti e capelli sporadicamente grassi, lo shampoo sebo equilibrante è formulato con particolari tensioattivi che detergono …"
+    },
+    {
+      "title": "Ghc medical shampoo micellare 200 ml - pianetafarmacia.com",
+      "url": "https://www.pianetafarmacia.com/shampoo/89223-ghc-medical-shampoo-micellare-200-ml.html",
+      "snippet": "Indicato per capelli naturali, lo shampoo micellare è formulato con particolari tensioattivi, che detergono in modo delicato e …"
+    },
+    {
+      "title": "Ghc medical trattamento ds shampoo purificante 200 ml",
+      "url": "https://www.farmaoasi.it/shampoo/101714-ghc-medical-trattamento-ds-shampoo-purificante-200-ml.html",
+      "snippet": "Detergente delicato con azione coadiuvante nei casi di cute e cuoio capelluto soggetti ad impurità e conseguente prurito. Contiene …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yusifnuri/Mistral-7B-v0.3_summarization",
+  "slug": "yusifnuri-mistral-7b-v0-3_summarization",
+  "author": "yusifnuri",
+  "url": "https://huggingface.co/yusifnuri/Mistral-7B-v0.3_summarization",
+  "created_at": "2026-09-11T15:41:06.000Z",
+  "updated_at": "2026-09-11T15:41:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "small-language-model",
+    "enterprise-benchmark",
+    "summarization",
+    "qlora",
+    "base_model:adapter:mistralai/Mistral-7B-v0.3",
+    "text-generation",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54560368,
+  "storage_human": "55 MB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · Learn where Bing related searches appear, how to expand them, and what to do when suggestions do not show on …"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "Búsqueda: Microsoft Bing",
+      "url": "https://www.mx.bing.com/",
+      "snippet": "Busca con Microsoft Bing y usa la eficacia de la inteligencia artificial para buscar información, explorar páginas web, imágenes, …"
+    },
+    {
+      "title": "How To See All Bing Related Searches - RottenWifi.com Blog",
+      "url": "https://blog.rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 2, 2026 · The best approach is to collect the related searches Bing shows on the results page, then expand the list with …"
+    }
+  ]
+}

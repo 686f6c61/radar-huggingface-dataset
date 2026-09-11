@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "umesh251/a2c-PandaReachDense-v3",
+  "slug": "umesh251-a2c-pandareachdense-v3",
+  "author": "umesh251",
+  "url": "https://huggingface.co/umesh251/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-11T17:49:00.000Z",
+  "updated_at": "2026-09-11T17:53:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213692,
+  "storage_human": "213692 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haberler.com - Son Dakika Haberler ve Güncel Haberler",
+      "url": "https://www.haberler.com/",
+      "snippet": "Haber ve son dakika haberleri, güncel haberler, magazin, spor ve ekonomi gündemi, yerel ve dünya haberleri. Haberler.com, …"
+    },
+    {
+      "title": "Haber 7 - Haber - Haberler - Son Dakika Haberleri",
+      "url": "https://www.haber7.com/",
+      "snippet": "Haber 7, Türkiye ve dünyadan son dakika haberleri, en son haberler, gazete manşetleri ve köşe yazarları, il il namaz vakitleri; yerel …"
+    },
+    {
+      "title": "En Son Haber - Haberler, Son Dakika Haberleri ve Tüm Haberler",
+      "url": "https://www.ensonhaber.com/",
+      "snippet": "Haberler, son dakika haberleri, Türkiye ve dünyadan gündem, ekonomi, spor, magazin, teknoloji ve yaşam haberlerini Türkiye'nin en …"
+    },
+    {
+      "title": "Son Dakika - Haberleri - Son Dakika Haber - Haberler",
+      "url": "https://www.haberler.com/son-dakika/",
+      "snippet": "Son dakika haberleri en hızlı Haberler.com son dakika sayfasından takip edin. Gündemdeki son dakika haberler, güncel yeni …"
+    },
+    {
+      "title": "Habertürk - Güncel Haberler, Son Dakika Haberleri ve Günün Haberleri",
+      "url": "https://www.haberturk.com/",
+      "snippet": "Haberler, son dakika haberleri ve en son gelişmeler Habertürk'te! Gazete haberleri, güncel olaylar ve ekonomi, magazin, gündem, …"
+    }
+  ]
+}

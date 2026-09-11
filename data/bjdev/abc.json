@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bjdev/abc",
+  "slug": "bjdev-abc",
+  "author": "bjdev",
+  "url": "https://huggingface.co/bjdev/abc",
+  "created_at": "2026-09-11T11:00:19.000Z",
+  "updated_at": "2026-09-11T11:00:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guida all’Assicurazione sanitaria per docenti, personale educativo e ...",
+      "url": "https://orizzonteinsegnanti.it/assicurazione-sanitaria-docenti-ata-aderire-prestazioni/",
+      "snippet": "Feb 6, 2026 · Scopri come aderire all’assicurazione sanitaria integrativa per docenti, Ata e personale educativo e le prestazioni …"
+    },
+    {
+      "title": "Assicurazione sanitaria docenti e ATA, adesioni al via: chi può averla ...",
+      "url": "https://www.orizzontescuola.it/polizza-sanitaria-docenti-e-ata-via-alle-adesioni-chi-puo-averla-come-fare-domanda-e-quando-parte-la-copertura-faq-e-guida/",
+      "snippet": "18 hours ago · Assicurazione sanitaria docenti e ATA, adesioni al via: chi può averla, come fare domanda e quando parte la …"
+    },
+    {
+      "title": "Assicurazione sanitaria docenti e ATA: attivata la polizza integrativa ...",
+      "url": "https://orizzonteinsegnanti.it/assicurazione-sanitaria-docenti-e-ata-attivata-la-polizza-integrativa-gratuita-ecco-come-aderire/",
+      "snippet": "12 hours ago · Assicurazione sanitaria docenti e ATA: attivata la polizza integrativa gratuita, ecco come aderire Chi può accedere alla …"
+    },
+    {
+      "title": "Polizza sanitaria scuola: adesioni aperte per docenti e ATA",
+      "url": "https://www.newsistruzione.it/2026/09/11/polizza-sanitaria-scuola-adesioni-gratuite-come-fare",
+      "snippet": "7 hours ago · Polizza sanitaria scuola: via alle adesioni gratuite Aperta nell'area riservata del MIM la procedura per aderire alla …"
+    },
+    {
+      "title": "Assicurazione sanitaria docenti, personale educativo e Ata: come ...",
+      "url": "https://www.tecnicadellascuola.it/assicurazione-sanitaria-docenti",
+      "snippet": "Feb 6, 2026 · Il servizio di copertura integrativa è rivolto a: Personale docente (incluso quello di religione cattolica); Personale …"
+    }
+  ]
+}

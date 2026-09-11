@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260911_185322",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_acc_pre-wolof_s42_20260911_185322",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260911_185322",
+  "created_at": "2026-09-11T19:34:19.000Z",
+  "updated_at": "2026-09-11T19:35:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144439266,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578049458,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Der Bildschirm „Wiederherstellen“ wird auf deinem iPhone, iPad oder ...",
+      "url": "https://support.apple.com/de-de/108969",
+      "snippet": "Halte die obere Taste gedrückt, bis das Apple-Logo angezeigt wird. Wenn du dir nicht sicher bist, erfährst du hier, welche Tasten du …"
+    },
+    {
+      "title": "Restore your iPhone, iPad, or iPod to factory settings ... - Apple Support",
+      "url": "https://support.apple.com/en-us/118107",
+      "snippet": "Aug 12, 2026 · Click Restore to confirm. Your computer erases your device and installs the latest iOS, iPadOS, or iPod software. …"
+    },
+    {
+      "title": "So behebst du den support.apple.com/iphone/restore Fehler",
+      "url": "https://www.basicthinking.de/blog/2026/02/06/so-behebst-du-den-support-apple-com-iphone-restore-fehler/",
+      "snippet": "Feb 6, 2026 · Um die richtigen Maßnahmen ergreifen zu können, ist es zunächst wichtig zu verstehen, was hinter dem Hinweis …"
+    },
+    {
+      "title": "iPhone Stuck on \"support.apple.com/iphone/restore\" Screen! [Best Fix]",
+      "url": "https://www.youtube.com/watch?v=3SYpsVq6FwA",
+      "snippet": "Sep 17, 2025 · Does your iPhone display a screen like this one, “support.apple.com/iphone/restore” link at the top? That's the …"
+    },
+    {
+      "title": "support.apple.com/iphone/restore - Apple Support Community",
+      "url": "https://communities.apple.com/de/thread/251890156",
+      "snippet": "Neustart des iPhone erzwingen - Apple Support. Oder du verbindest das iPhone mal mit einem PC oder Mac und führst eine …"
+    }
+  ]
+}

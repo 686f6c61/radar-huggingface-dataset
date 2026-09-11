@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AS32EDXSA/MyAwesomeModel-TestRepo",
+  "slug": "as32edxsa-myawesomemodel-testrepo",
+  "author": "AS32EDXSA",
+  "url": "https://huggingface.co/AS32EDXSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T12:40:49.000Z",
+  "updated_at": "2026-09-11T12:41:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-5가 출시되었습니다 | OpenAI",
+      "url": "https://openai.com/ko-KR/gpt-5/",
+      "snippet": "GPT‑5는 고품질 코드를 생산하고, 최소화된 프롬프트로 프론트엔드 UI를 생성하고, 성격과 제어 가능성, 그리고 도구 호출의 긴 흐름을 …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/ko-KR/",
+      "snippet": "우리는 우리의 리서치가 궁극적으로 인간 수준의 문제를 해결할 수 있는 시스템인 범용 인공지능으로 이어질 것으로 믿습니다. 우리의 …"
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/playground/chat?models=gpt-4o",
+      "snippet": "Build on the OpenAI API Platform Sign up or login with an OpenAI account to build with the OpenAI API."
+    },
+    {
+      "title": "ChatGPT - OpenAI Help Center",
+      "url": "https://help.openai.com/en/collections/3742473-chatgpt",
+      "snippet": "GPT-5.6 and GPT-6 Pro in ChatGPT Learn how GPT-5.6 and GPT-6 Pro work in ChatGPT, which options are available by plan, and …"
+    },
+    {
+      "title": "1-800-ChatGPT - Calling and Messaging ChatGPT with your phone",
+      "url": "https://help.openai.com/en/articles/10193193-1-800-chatgpt-calling-and-messaging-chatgpt-with-your-phone",
+      "snippet": "Learn how to call or message ChatGPT by phone, including availability, usage limits, privacy, and troubleshooting."
+    }
+  ]
+}

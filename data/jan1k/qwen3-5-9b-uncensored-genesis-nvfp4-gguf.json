@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "jan1k/Qwen3.5-9B-Uncensored-Genesis-NVFP4-GGUF",
+  "slug": "jan1k-qwen3-5-9b-uncensored-genesis-nvfp4-gguf",
+  "author": "jan1k",
+  "url": "https://huggingface.co/jan1k/Qwen3.5-9B-Uncensored-Genesis-NVFP4-GGUF",
+  "created_at": "2026-09-11T08:27:38.000Z",
+  "updated_at": "2026-09-11T11:59:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "qwen3.5",
+    "uncensored",
+    "vision",
+    "multimodal",
+    "genesis",
+    "llama-cpp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "multilingual",
+    "base_model:HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803752,
+  "parameters_human": "8.95B",
+  "storage_bytes": 16726389280,
+  "storage_human": "16.7 GB",
+  "base_model": "HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SharePoint | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/content_management/discussions/sharepoint_general",
+      "snippet": "1 day ago · SharePoint Managed Property Online Search Issue – Custom User Profile Property I’m facing an issue with SharePoint …"
+    },
+    {
+      "title": "Microsoft SharePoint Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/content_management/blog/spblog",
+      "snippet": "1 day ago · Welcome to the SharePoint Blog! Learn best practices, news, and trends directly from the SharePoint team."
+    },
+    {
+      "title": "如何获取正版的office365并永久使用？ - 知乎",
+      "url": "https://www.zhihu.com/question/494557967",
+      "snippet": "Microsoft 365 A1：包含exchange（邮箱）、OneDrive（网盘）、SharePoint（内部门户）这三个主要功能 这种订阅来源为两个：1、 …"
+    },
+    {
+      "title": "10分钟精通SharePoint-App - 知乎",
+      "url": "https://www.zhihu.com/column/p/25819165",
+      "snippet": "背景提到App大家肯定不陌生，大多数人可能会想到苹果的应用和应用商店。随着SharePoint的发展，在SharePoint 2013中也引入 …"
+    },
+    {
+      "title": "Tag:\"sharepoint\" | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/tag/sharepoint",
+      "snippet": "2 days ago · Find all posts, articles, and events tagged with \"sharepoint\" in Microsoft Community Hub. Stay informed with the latest …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OvisOCR2-GGUF",
+  "slug": "mradermacher-ovisocr2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OvisOCR2-GGUF",
+  "created_at": "2026-09-11T12:08:07.000Z",
+  "updated_at": "2026-09-11T12:16:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ocr",
+    "document-parsing",
+    "multimodal",
+    "markdown",
+    "tables",
+    "formulas",
+    "vllm",
+    "qwen3_5",
+    "en",
+    "base_model:ianua/OvisOCR2",
+    "base_model:quantized:ianua/OvisOCR2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7776496320,
+  "storage_human": "7.8 GB",
+  "base_model": "ianua/OvisOCR2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Polens Premier erhielt CIA-Bericht: Tusk warnt vor russischen Angriffen ...",
+      "url": "https://www.msn.com/de-de/politik/auslandsbeziehungen/polens-premier-erhielt-cia-bericht-tusk-warnt-vor-russischen-angriffen-auf-die-eu-ostflanke/ar-AA2bZru2",
+      "snippet": "Premier Donald Tusk warnt davor, dass Russland laut Informationen der CIA an der Ostflanke weiter eskalieren könnte. Bereits am …"
+    },
+    {
+      "title": "Donald Tusk Polen-Premier schlägt Alarm - EU-Ostflanke laut CIA-Bericht ...",
+      "url": "https://www.news.de/politik/859984981/donald-tusk-warnt-vor-bedrohlichem-szenario-fuer-europa-polen-premier-beruft-sich-auf-cia-bericht-eu-ostflanke-in-gefahr/1/",
+      "snippet": "1 hour ago · Donald Tusk hat bei einem Gipfel der Visegrád-Gruppe in Bratislava eine eindringliche Warnung ausgesprochen. Unter …"
+    },
+    {
+      "title": "Polens Premier erhielt CIA-Bericht: Tusk warnt vor russischen Angriffen ...",
+      "url": "https://www.europesays.com/de/1294114/",
+      "snippet": "13 hours ago · Am Donnerstag hat Donald Tusk eindringlich vor einem russischen Angriff auf die EU-Ostflanke gewarnt. Er habe von …"
+    },
+    {
+      "title": "EU-Ostflanke: Tusk warnt vor \"unmittelbarer Bedrohung\"",
+      "url": "https://newstime.joyn.de/themen/politik/eu-ostflanke-tusk-warnt-vor-unmittelbarer-bedrohung-184546",
+      "snippet": "5 hours ago · Polens Regierungschef Donald Tusk spricht von einer vereitelten \"unmittelbaren Bedrohung\" an einem Grenzübergang …"
+    },
+    {
+      "title": "Bedrohung durch Russland: Polen meldet Abwehr von Bedrohung an ...",
+      "url": "https://www.zeit.de/politik/deutschland/2026-09/polen-grenze-ukraine-donald-tusk-russland-gxe",
+      "snippet": "8 hours ago · Donald Tusk hat erneut vor russischen Provokationen an der Nato-Ostgrenze gewarnt. Dabei geht er auf …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sadafdas/MyAwesomeModel-TestRepo",
+  "slug": "sadafdas-myawesomemodel-testrepo",
+  "author": "sadafdas",
+  "url": "https://huggingface.co/sadafdas/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T17:14:32.000Z",
+  "updated_at": "2026-09-11T17:14:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/sa",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/main%20pagee",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "YouTube - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ar",
+      "snippet": "نزِّل تطبيق YouTube الرسمي للهواتف والأجهزة اللوحية التي تعمل بنظام التشغيل Android. واطّلِع على المحتوى الذي يشاهده المستخدمون من حول العالم، من الفيديوهات الموسيقية الأكثر رواجًا إلى …"
+    },
+    {
+      "title": "YouTube - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.xr&hl=ar",
+      "snippet": "استمتع بقنواتك وفيديوهاتك ومنشئي المحتوى المفضلين على يوتيوب بتقنية الواقع المعزز. يحوّل تطبيق يوتيوب كل فيديو على المنصة إلى تجربة غامرة خاصة بك، ويعيد تصور يوتيوب كعالم ثلاثي الأبعاد …"
+    },
+    {
+      "title": "قم بتنزيل YouTube بأحدث إصدار 21.36.45 ملف APK الأندرويد",
+      "url": "https://apkpure.com/ar/youtube-app/com.google.android.youtube/download",
+      "snippet": "قم بتحميل YouTube بأحدث إصدار APK 21.36.45 لنظام أندرويد من APKPure. استكشف مقاطع الفيديو وشاهدها وشاركها باستخدام YouTube"
+    }
+  ]
+}

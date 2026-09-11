@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "alfonsinoxxx/Bielik-11B-v2.6-Instruct-GGUF",
+  "slug": "alfonsinoxxx-bielik-11b-v2-6-instruct-gguf",
+  "author": "alfonsinoxxx",
+  "url": "https://huggingface.co/alfonsinoxxx/Bielik-11B-v2.6-Instruct-GGUF",
+  "created_at": "2026-09-11T18:03:18.000Z",
+  "updated_at": "2026-09-11T18:03:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finetuned",
+    "text-generation",
+    "pl",
+    "base_model:speakleash/Bielik-11B-v2.6-Instruct",
+    "base_model:quantized:speakleash/Bielik-11B-v2.6-Instruct",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11168796672,
+  "parameters_human": "11.17B",
+  "storage_bytes": 58003045344,
+  "storage_human": "58.0 GB",
+  "base_model": "speakleash/Bielik-11B-v2.6-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Willkommen - Informatik-Biber",
+      "url": "https://wettbewerb.informatik-biber.de/",
+      "snippet": "der Informatik-Biber 2026 wird vom 09. bis 20. November stattfinden. Im letzten Jahr haben über 575.000 Kinder und Jugendliche …"
+    },
+    {
+      "title": "Anmelden - Informatik-Biber",
+      "url": "https://wettbewerb.informatik-biber.de/index.php?action=login",
+      "snippet": "Wenn Sie ein Koordinator oder Administrator sind und Ihr Passwort vergessen haben, gehen Sie bitte zur Accountverwaltung unter …"
+    },
+    {
+      "title": "Wettbewerb - Informatik-Biber",
+      "url": "https://wettbewerb.informatik-biber.de/index.php?action=user_grade&tea_id=13322",
+      "snippet": "Unterstützung: Links: e-Mail-Hotline Impressum Datenschutz"
+    },
+    {
+      "title": "Bibertest - Biber's Finest - Informatik-Biber",
+      "url": "https://wettbewerb.informatik-biber.de/quiz/748b39b69b887d26",
+      "snippet": "6 hours ago · Herzlich Willkommen bei unserem Bibertest! Hier haben wir unsere Lieblingsaufgaben für Sie zusammengestellt. Viel …"
+    },
+    {
+      "title": "Wettbewerb - Informatik-Biber",
+      "url": "https://wettbewerb.informatik-biber.de/index.php?action=user_competition",
+      "snippet": "Symbol-Erklärung aktuelle Aufgabe beantwortete Frage Ungültige Gruppe"
+    }
+  ]
+}

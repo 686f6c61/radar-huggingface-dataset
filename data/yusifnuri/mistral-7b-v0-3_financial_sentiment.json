@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yusifnuri/Mistral-7B-v0.3_financial_sentiment",
+  "slug": "yusifnuri-mistral-7b-v0-3_financial_sentiment",
+  "author": "yusifnuri",
+  "url": "https://huggingface.co/yusifnuri/Mistral-7B-v0.3_financial_sentiment",
+  "created_at": "2026-09-11T15:39:47.000Z",
+  "updated_at": "2026-09-11T15:40:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "small-language-model",
+    "enterprise-benchmark",
+    "financial-sentiment",
+    "qlora",
+    "base_model:adapter:mistralai/Mistral-7B-v0.3",
+    "text-generation",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54560368,
+  "storage_human": "55 MB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accesso ad Amazon Business",
+      "url": "https://business.amazon.it/it/login",
+      "snippet": "Accedi a offerte esclusive e sconti sulle grandi quantità! Accedi al tuo account Amazon Business per risparmiare subito su una vasta …"
+    },
+    {
+      "title": "Soluzioni per l’approvvigionamento e l’acquisto all'ingrosso | Amazon ...",
+      "url": "https://business.amazon.it/",
+      "snippet": "Amazon Business unisce la selezione, la praticità e il valore di Amazon a funzionalità che contribuiscono a migliorare gli acquisti …"
+    },
+    {
+      "title": "Contattaci | Amazon Business",
+      "url": "https://business.amazon.it/it/contact-us",
+      "snippet": "Contatta il reparto vendite per saperne di più. Amazon Business può aiutare la tua azienda o organizzazione con le nostre soluzioni …"
+    },
+    {
+      "title": "Consegna Amazon Business - Spedizione aziendale gratuita",
+      "url": "https://business.amazon.it/it/shipping-delivery",
+      "snippet": "Scopri come Amazon Business può aiutarti a soddisfare le esigenze di spedizione della tua azienda. Approfitta di soluzioni di …"
+    },
+    {
+      "title": "Esclusive per i membri Prime Business | Amazon Business",
+      "url": "https://business.amazon.it/it/prime-business/member-exclusives",
+      "snippet": "Attiva prodotti e servizi esclusivi con Amazon Prime Business. Approfitta di offerte, strumenti e partnership riservati ai soli membri. …"
+    }
+  ]
+}

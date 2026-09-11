@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Goetia-26B-A4B-v1.5-i1-GGUF",
+  "slug": "mradermacher-goetia-26b-a4b-v1-5-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.5-i1-GGUF",
+  "created_at": "2026-09-11T13:24:58.000Z",
+  "updated_at": "2026-09-11T13:52:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "eng"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "all genres",
+    "conversational",
+    "creative",
+    "creative writing",
+    "della",
+    "fiction",
+    "fiction story",
+    "fiction writing",
+    "gemma4",
+    "horror",
+    "merge",
+    "mergekit",
+    "mergekit-exp",
+    "moe_della",
+    "plot generation",
+    "roleplay",
+    "roleplaying",
+    "romance",
+    "rp",
+    "scene continue",
+    "science fiction",
+    "story",
+    "story generation",
+    "storytelling",
+    "sub-plot generation",
+    "swearing",
+    "vivid prosing",
+    "vivid writing",
+    "writing",
+    "eng",
+    "base_model:Naphula/Goetia-26B-A4B-v1.5",
+    "base_model:quantized:Naphula/Goetia-26B-A4B-v1.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25971339550,
+  "parameters_human": "25.97B",
+  "storage_bytes": 39471748960,
+  "storage_human": "39.5 GB",
+  "base_model": "Naphula/Goetia-26B-A4B-v1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "place holder query for \"poll\" Crossword Clue - Wordplays.com",
+      "url": "https://www.wordplays.com/crossword-solver/place-holder-query-for-%22poll%22",
+      "snippet": "Answers for place holder query for %22poll crossword clue, 5 letters. Search for crossword clues found in the Daily Celebrity, NY …"
+    },
+    {
+      "title": "place holder query for \"poll\" Crossword Clue - Wordplays.com",
+      "url": "https://www.wordplays.com/crossword-solver/place-holder-query-for-&quot;poll&quot",
+      "snippet": "Answers for place holder query for \"poll\" crossword clue, 5 letters. Search for crossword clues found in the Daily Celebrity, NY Times, …"
+    },
+    {
+      "title": "Placeholder Query Data | TanStack Query React Docs",
+      "url": "https://tanstack.com/query/latest/docs/framework/react/guides/placeholder-query-data",
+      "snippet": "What is placeholder data? Placeholder data allows a query to behave as if it already has data, similar to the initialData option, but the …"
+    },
+    {
+      "title": "Placeholder Query Data | Vue Query",
+      "url": "https://vue-query-next-gen.vercel.app/guide/placeholder-query-data.html",
+      "snippet": "This comes in handy for situations where you have enough partial (or fake) data to render the query successfully while the actual data …"
+    },
+    {
+      "title": "Placeholder Query Data | Svelte Query | SvelteStack",
+      "url": "https://sveltequery.vercel.app/guides/placeholder-query-data",
+      "snippet": "This comes in handy for situations where you have enough partial (or fake) data to render the query successfully while the actual data …"
+    }
+  ]
+}

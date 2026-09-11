@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Selvauma/lyc-sse-deepmd",
+  "slug": "selvauma-lyc-sse-deepmd",
+  "author": "Selvauma",
+  "url": "https://huggingface.co/Selvauma/lyc-sse-deepmd",
+  "created_at": "2026-09-11T16:14:43.000Z",
+  "updated_at": "2026-09-11T16:26:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepmd-kit",
+    "molecular-dynamics",
+    "interatomic-potential",
+    "materials-science",
+    "battery-materials",
+    "solid-state-electrolyte",
+    "halide-electrolyte",
+    "lithium-ion",
+    "doping-study",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127046331,
+  "storage_human": "127 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmeTV – Omegle Alternative for Random Webcam Chats",
+      "url": "https://ome.tv/why-ometv/",
+      "snippet": "Discover Omegle Alternative for random cam chats. Find out why users choose OmeTV to talk to strangers, meet people online and …"
+    },
+    {
+      "title": "OmeTV Video Chat — Omegle Random Cam Chat Alternative 2026",
+      "url": "https://ome.tv/",
+      "snippet": "Discover Omegle Alternative to meet new people, make friends, or even find love. OmeTV is a random video chat, offering a …"
+    },
+    {
+      "title": "OmeTV Video Chat Rules and Regulations",
+      "url": "https://ome.tv/rules/",
+      "snippet": "Enjoy a safe and friendly experience on OmeTV’s live video chat platform. Follow our rules to engage in anonymous chat, meet new …"
+    },
+    {
+      "title": "Support - OmeTV",
+      "url": "https://ome.tv/support/",
+      "snippet": "© 2015-2026 Ome.TV, Bad Kitty’s Dad, LDA r. José Dias Coelho 10A, 2855-173, Corroios, PT"
+    },
+    {
+      "title": "OmeTV FAQ: Random Video Chat to Meet New People",
+      "url": "https://ome.tv/faq/",
+      "snippet": "Get answers to FAQ about OmeTV, a popular platform to chat with strangers and meet new people. Discover tips to enjoy safe and …"
+    }
+  ]
+}

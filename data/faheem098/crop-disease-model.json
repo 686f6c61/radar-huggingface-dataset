@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "faheem098/crop-disease-model",
+  "slug": "faheem098-crop-disease-model",
+  "author": "faheem098",
+  "url": "https://huggingface.co/faheem098/crop-disease-model",
+  "created_at": "2026-09-11T10:47:42.000Z",
+  "updated_at": "2026-09-11T10:47:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comune di Paderno Dugnano : Richiedere l’erogazione di contributi ...",
+      "url": "https://www.comune.paderno-dugnano.mi.it/servizi/salute-benessere-e-assistenza/dettaglio-servizio/Richiedere-lerogazione-di-contributi-economici-per-il-sostegno-al-reddito/",
+      "snippet": "L’Amministrazione Comunale dal 2016 attiva una procedura per l’erogazione di contributi economici per il sostegno al reddito, per …"
+    },
+    {
+      "title": "Comune di Paderno Dugnano : Contributo sostegno economico",
+      "url": "https://www.comune.paderno-dugnano.mi.it/novita/notizie/dettaglio-notizia/Contributo-sostegno-economico-00007/",
+      "snippet": "Jun 18, 2025 · È stata pubblicata la graduatoria definitiva del bando per il contributo di sostegno economico relativo al primo …"
+    },
+    {
+      "title": "Città di Paderno Dugnano - Servizi online - Amm. Trasp. - Sovvenzioni ...",
+      "url": "https://dgegovpa.it/Paderno/AmministrazioneTrasparente/Sovvenzioni",
+      "snippet": "Mar 14, 2013 · - Sovvenzioni, contributi, sussidi, vantaggi economici. Il DECRETO LEGISLATIVO 14 marzo 2013 n. 33 ha riordinato …"
+    },
+    {
+      "title": "Modulistica Comunale - CPortal",
+      "url": "https://www.padernodugnano.cportal.it/Modulistica",
+      "snippet": "Mar 3, 2022 · In questa sezione viene messa a disposizione la modulistica comunale. Alcuni di questi moduli sono necessari per …"
+    },
+    {
+      "title": "CONTRIBUTO ECONOMICO 1° SEMESTRE... - Comune Paderno",
+      "url": "https://www.facebook.com/PadDugnano/posts/contributo-economico-1-semestre-2024lamministrazione-comunale-ha-approvato-una-p/914795643989101/",
+      "snippet": "Mar 28, 2024 · L’Amministrazione comunale esprime il proprio cordoglio e la propria vicinanza alla famiglia del motociclista 35enne …"
+    }
+  ]
+}

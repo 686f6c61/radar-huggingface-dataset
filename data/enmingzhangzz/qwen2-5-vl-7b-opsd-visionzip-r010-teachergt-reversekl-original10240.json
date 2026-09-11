@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TeacherGT-ReverseKL-original10240",
+  "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-visionzip-r010-teachergt-reversekl-original10240",
+  "author": "enmingzhangzz",
+  "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TeacherGT-ReverseKL-original10240",
+  "created_at": "2026-09-11T15:30:07.000Z",
+  "updated_at": "2026-09-11T15:30:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "opsd",
+    "qwen2.5-vl",
+    "visionzip",
+    "reverse-kl",
+    "privileged-teacher",
+    "lora",
+    "image-text-to-text",
+    "dataset:OpenMMReasoner/OpenMMReasoner-SFT-874K",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161539072,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rhino - Rhinoceros 3D",
+      "url": "https://www.rhino3d.com/",
+      "snippet": "Grasshopper is a visual programming environment tightly integrated with Rhino’s 3D modeling tools. Grasshopper requires no …"
+    },
+    {
+      "title": "Downloads - Rhino - Rhinoceros 3D",
+      "url": "https://www.rhino3d.com/download/",
+      "snippet": "Rhinoceros 3D: Download Rhino for Windows or Mac. Also available are Work-In-Progress (WIP) builds to current Rhino version …"
+    },
+    {
+      "title": "Rhinoceros 3D - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rhinoceros_3D",
+      "snippet": "Rhinoceros (typically abbreviated Rhino or Rhino3D) is a commercial 3D computer graphics and computer-aided design (CAD) …"
+    },
+    {
+      "title": "Rhinoceros 3D — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/Rhinoceros_3D",
+      "snippet": "Растущая популярность Rhino основана на его разнородности, разнообразии функциональной применимости, быстрой …"
+    },
+    {
+      "title": "Rhino 3D - что это за программа для моделирования",
+      "url": "https://media.contented.ru/glossary/rhinoceros-3d/",
+      "snippet": "Sep 21, 2024 · Rhinoceros 3D (Rhino 3D) — это программа для создания трехмерной графики и компьютерного …"
+    }
+  ]
+}

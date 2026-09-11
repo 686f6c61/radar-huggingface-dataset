@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-60",
+  "slug": "yuxuanw8-qwen3b-rlvr-hotpot-checkpoint-60",
+  "author": "yuxuanw8",
+  "url": "https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-60",
+  "created_at": "2026-09-11T12:03:08.000Z",
+  "updated_at": "2026-09-11T12:05:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355226095,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Complémentaire santé solidaire conjoint étranger - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3734979-complementaire-sante-solidaire-conjoint-etranger",
+      "snippet": "May 29, 2026 · Bonjour, J'ai effectué une simulation et j'ai l'impression de pouvoir avoir accès à la complémentaire santé solidaire …"
+    },
+    {
+      "title": "Comment faire pour avoir une Photocopie du carnet et de santé et de ...",
+      "url": "https://forum-assures.ameli.fr/questions/3717647-faire-photocopie-carnet-sante-vaccination",
+      "snippet": "Mar 26, 2026 · Comment faire pour avoir la photocopie du carnet de santé ou en avoir un nouveau pour une personne majeure"
+    },
+    {
+      "title": "quelle mutuelle santé choisir - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/1944193-mutuelle-sante-choisir",
+      "snippet": "Jun 25, 2026 · Depuis que je ne travaille plus, en invalidité 2, avec soin infirmiers à domicile, je cherche une mutuelle santé moins …"
+    },
+    {
+      "title": "verres \"sur mesure de qualité\" vs verres 100% santé?",
+      "url": "https://forum-assures.ameli.fr/questions/2243223-verres-mesure-qualite-vs-verres-100-sante",
+      "snippet": "Apr 6, 2021 · Bonjour Eleandre, Les verres sont répartis en 2 classes : la classe A qui constitue l’offre 100 % Santé et exclut tout …"
+    },
+    {
+      "title": "Complémentaire santé solidaire - Forum ameli pour les assurés",
+      "url": "https://forum-assures.ameli.fr/categories/5017-complementaire-sante-solidaire",
+      "snippet": "Aug 10, 2026 · Complémentaire santé solidaire Bonjour Jarek, Sur le forum ameli pour les assurés, nous ne pouvons répondre à vos …"
+    }
+  ]
+}

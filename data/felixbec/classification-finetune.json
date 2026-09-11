@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "felixbec/classification-finetune",
+  "slug": "felixbec-classification-finetune",
+  "author": "felixbec",
+  "url": "https://huggingface.co/felixbec/classification-finetune",
+  "created_at": "2026-09-11T15:30:11.000Z",
+  "updated_at": "2026-09-11T15:30:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CEFR到底是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/41490452",
+      "snippet": "1960s-2000s CEFR 六、CEFR 有什么意义 CEFR采取了“ CAN DO STATEMENTS（能做什么） ”的描述方法，注重 语言的实际应用 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2045110357153275908",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "如何评价深圳新成立的鹏城实验室？ - 知乎",
+      "url": "https://www.zhihu.com/question/321873858",
+      "snippet": "几个P城实验室的大佬，到处捞钱，何止双聘，三聘四聘的都有。俨然就是内地大佬勾结一伙海外大佬回来分钱的窝点，而且吃相及其 …"
+    },
+    {
+      "title": "官方通报杭州酒局事件，赵某峰、郁某栋已被刑拘，二人对被害人实施 …",
+      "url": "https://www.zhihu.com/question/2073089501455504915",
+      "snippet": "Aug 18, 2026 · 郁某栋是 滨江区分管城建的副区长，卡着辖区内所有开发商的脖子。 在杭州，任何一个区，这个位置的领导，乃至他 …"
+    },
+    {
+      "title": "inventor相比SolidWorks究竟差在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/313366324",
+      "snippet": "进知乎比较晚，最近想找一些练手的模型，然后就刷到了这个。但是我常常用inventor和sw，说一下我的感受吧。 1.软件的运行 直接说 …"
+    }
+  ]
+}

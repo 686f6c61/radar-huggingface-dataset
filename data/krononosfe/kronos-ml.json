@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "KrononosFE/kronos-ml",
+  "slug": "krononosfe-kronos-ml",
+  "author": "KrononosFE",
+  "url": "https://huggingface.co/KrononosFE/kronos-ml",
+  "created_at": "2026-09-11T12:41:01.000Z",
+  "updated_at": "2026-09-11T12:41:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 652545,
+  "storage_human": "652545 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Army Rumour Service (ARRSE)",
+      "url": "https://www.arrse.co.uk/community/",
+      "snippet": "Mar 31, 2024 · Welcome to the Army Rumour Service (ARRSE) which for nearly 25 years has provided the unofficial voice of the …"
+    },
+    {
+      "title": "Concurrence déloyale exercée par l'UGAP - Sénat",
+      "url": "https://www.senat.fr/questions/base/2005/qSEQ050417060.html",
+      "snippet": "Apr 14, 2005 · En effet, l'UGAP s'appuie sur une interprétation de l'article 32 du code des marchés publics, pour fournir l'ensemble …"
+    },
+    {
+      "title": "Pratiques anticoncurrentielles de l'UGAP - Sénat",
+      "url": "https://www.senat.fr/questions/base/2005/qSEQ050115447.html",
+      "snippet": "Jan 13, 2005 · La dispense d'appel d'offres pratiquée par l'UGAP entraîne la suppression de toute mise en concurrence et fragilise …"
+    },
+    {
+      "title": "Forum list - Army Rumour Service",
+      "url": "https://www.arrse.co.uk/community/forums/",
+      "snippet": "Sep 2, 2026 · Welcome to the Army Rumour Service (ARRSE) which for nearly 25 years has provided the unofficial voice of the …"
+    },
+    {
+      "title": "Autotitre.com : actualité automobile, essais, forum auto, fiches ...",
+      "url": "https://www.autotitre.com/",
+      "snippet": "13 hours ago · Renault refuse de développer ses voitures en moins de deux ans. Mercedes VLE, une définition trop luxueuse pour ce …"
+    }
+  ]
+}

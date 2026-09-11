@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Two-Zero/act-so100-grab-to-bowl",
+  "slug": "two-zero-act-so100-grab-to-bowl",
+  "author": "Two-Zero",
+  "url": "https://huggingface.co/Two-Zero/act-so100-grab-to-bowl",
+  "created_at": "2026-09-11T14:10:50.000Z",
+  "updated_at": "2026-09-11T14:11:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2",
+      "snippet": "Two is a noun when it refers to the number two as in two plus two is four. The word two is derived from the Old English words twā …"
+    },
+    {
+      "title": "Traduction : two - Dictionnaire anglais-français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/anglais-francais/two/620352",
+      "snippet": "two - Traduction Anglais-Français : Retrouvez la traduction de two, mais également sa prononciation, la traduction des expressions à …"
+    },
+    {
+      "title": "Traduction TWO en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/two",
+      "snippet": "Traduction de \"two\" en français : deux, deux heures. Nom, adjectif, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "II (TWO) - Official Trailer #2 (2021) - YouTube",
+      "url": "https://www.youtube.com/watch?v=MkEoViReeu0",
+      "snippet": "Jan 29, 2021 · friday. februrary 26. 2021. Watch the second official trailer for Sean Lew's #II. Streaming on this channel only. Learn …"
+    },
+    {
+      "title": "two - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/two",
+      "snippet": "Voir la traduction automatique de Google Translate de 'two'. Dans d'autres langues : espagnol | italien | portugais | roumain | …"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-dino-5scale-vit-l-coco",
+  "slug": "dronefreak-co-dino-5scale-vit-l-coco",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-dino-5scale-vit-l-coco",
+  "created_at": "2026-09-11T18:19:27.000Z",
+  "updated_at": "2026-09-11T18:19:51.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-dino",
+    "detr",
+    "coco",
+    "vit",
+    "pytorch",
+    "iccv2023",
+    "objects365",
+    "en",
+    "dataset:detection-datasets/coco",
+    "arxiv:2211.12860",
+    "arxiv:1405.0312",
+    "arxiv:2303.11331",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2935212791,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO 2017 val",
+      "metric": "box AP",
+      "value": 65.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "Guide de voyage officiel de Lucerne | Luzern.com",
+      "url": "https://www.luzern.com/fr/",
+      "snippet": "Lucerne est située au centre de la Suisse. Cette ville pittoresque, nichée entre lac et montagnes, a beaucoup à offrir sur le plan …"
+    },
+    {
+      "title": "Lucerne — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucerne",
+      "snippet": "Lucerne est le centre social et culturel de la Suisse centrale. Le carnaval de Lucerne et le festival de Lucerne sont des événements …"
+    },
+    {
+      "title": "Les incontournables à Lucerne | Suisse Tourisme",
+      "url": "https://www.myswitzerland.com/fr-ch/decouvrir/villes-culture/histoires-de-villes/les-incontournables-a-lucerne/",
+      "snippet": "Au cœur de la Suisse, Lucerne est une ville aux nombreuses attractions qui saura vous plaire. Qu’il s’agisse de visite touristique, de …"
+    },
+    {
+      "title": "The Official Lucerne & Lake Lucerne Region Guide | Luzern.com",
+      "url": "https://www.luzern.com/en/",
+      "snippet": "Lucerne is located in the centre of Switzerland. The picturesque city, nestled between lake and mountains, has a lot to offer …"
+    },
+    {
+      "title": "Lucerne - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lucerne",
+      "snippet": "Lucerne is the capital of the canton of Lucerne and part of the district of the same name. With a population of approximately 82,000 …"
+    }
+  ]
+}

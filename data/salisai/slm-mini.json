@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "salisai/slm-mini",
+  "slug": "salisai-slm-mini",
+  "author": "salisai",
+  "url": "https://huggingface.co/salisai/slm-mini",
+  "created_at": "2026-09-11T17:27:50.000Z",
+  "updated_at": "2026-09-11T17:27:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook: Non hai effettuato l'accesso,accedi - Internet",
+      "url": "https://it.ccm.net/forum/affich-51319-facebook-non-hai-effettuato-l-accesso-accedi",
+      "snippet": "Jul 13, 2012 · Ciao, ho una domanda entro su facebook e dopo qualche minuto mi appare una finestra con scritto: Non hai effettuato …"
+    },
+    {
+      "title": "Facebook accedi - E-Mail/Chat",
+      "url": "https://it.ccm.net/forum/affich-34021-facebook-accedi",
+      "snippet": "Apr 28, 2011 · Ciao, ho un problema, quando clicco su facebook mi fa entrare subito sul mio profilo, come posso risolverlo? …"
+    },
+    {
+      "title": "Accesso a facebook diretto senza password",
+      "url": "https://it.ccm.net/forum/affich-80504-accesso-a-facebook-diretto-senza-password",
+      "snippet": "Feb 9, 2015 · Accesso a facebook diretto senza password Chiuso annapascazio - 8 feb 2015 alle 21:45 filippo vicino - 19 apr 2015 …"
+    },
+    {
+      "title": "Accedere a Facebook senza registrarsi come visitatore",
+      "url": "https://it.ccm.net/forum/affich-21464-accedere-a-facebook-senza-registrarsi-come-visitatore",
+      "snippet": "Mar 3, 2020 · Miglior risposta: Non puoi propriamente accedere a Facebook senza poterti registrare. Ma puoi visitare delle pagine …"
+    },
+    {
+      "title": "Problema di accesso a Facebook dal portatile",
+      "url": "https://it.ccm.net/forum/affich-131758-problema-di-accesso-a-facebook-dal-portatile",
+      "snippet": "Nov 12, 2023 · Con l'entrata in vigore delle nuove regole di Facebook, già alcuni giorni fa, collegandomi dal cellulare, ho deciso di …"
+    }
+  ]
+}

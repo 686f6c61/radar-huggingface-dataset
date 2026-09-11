@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Goetia-26B-A4B-v1.6-GGUF",
+  "slug": "mradermacher-goetia-26b-a4b-v1-6-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.6-GGUF",
+  "created_at": "2026-09-11T13:03:21.000Z",
+  "updated_at": "2026-09-11T13:09:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25971339550,
+  "parameters_human": "25.97B",
+  "storage_bytes": 26705023040,
+  "storage_human": "26.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "switch520 2026年最新地址是520switch.com吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/2034623792819983958",
+      "snippet": "Switch520 2026年使用指南 2026年可用域名大全 Switch520因域名频繁变更而闻名，这主要是出于规避网络审查和版权风险的考虑-。 …"
+    },
+    {
+      "title": "如何在电脑上安装免费的access？ - 知乎",
+      "url": "https://www.zhihu.com/question/329637605",
+      "snippet": "access和Word，ppt一样都是office的一部分，我们要想安装access就必须先下载完整的office2010.然后进行安装。"
+    }
+  ]
+}

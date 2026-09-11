@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/U1-0817-i1-GGUF",
+  "slug": "mradermacher-u1-0817-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/U1-0817-i1-GGUF",
+  "created_at": "2026-09-11T12:38:11.000Z",
+  "updated_at": "2026-09-11T13:25:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pt",
+    "en",
+    "base_model:SynastriaNetworks/U1-0817",
+    "base_model:quantized:SynastriaNetworks/U1-0817",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 18669067744,
+  "storage_human": "18.7 GB",
+  "base_model": "SynastriaNetworks/U1-0817",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KCB iBANK",
+      "url": "https://onlinebanking.kcbgroup.com/",
+      "snippet": "KCB will never ask you for any personal details through emails, pop up windows and banners. Never reveal your personal details …"
+    },
+    {
+      "title": "KCB iBANK",
+      "url": "https://onlinebanking.kcbgroup.com/netteller-war/ForgotLoginDetails.xhtml",
+      "snippet": "• Users can retrieve only their password via the online process. • In case users forget their user ID, they must contact the bank."
+    },
+    {
+      "title": "KCB iBANK",
+      "url": "https://onlinebanking.kcbgroup.com/netteller-war/ForceChangeSecurityQuestions.xhtml",
+      "snippet": "Force Change Security Questions Answer at least 3 questions"
+    },
+    {
+      "title": "KCB iBANK",
+      "url": "https://onlinebanking.kcbgroup.com/netteller-war/Login.xhtml;jsessionid=ymF0I502012y6_ap_yVkP-DB4m2w7Xb7qkOyHRgg.node7",
+      "snippet": "User ID:* Password:* Forgot password? Login Need help? Security Tips KCB will never ask you for any personal details through …"
+    }
+  ]
+}

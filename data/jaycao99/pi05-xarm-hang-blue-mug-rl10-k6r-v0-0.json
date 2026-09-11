@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/pi05-xarm-hang-blue-mug-rl10-K6R-v0.0",
+  "slug": "jaycao99-pi05-xarm-hang-blue-mug-rl10-k6r-v0-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/pi05-xarm-hang-blue-mug-rl10-K6R-v0.0",
+  "created_at": "2026-09-11T16:59:13.000Z",
+  "updated_at": "2026-09-11T17:00:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9354066736,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "IOS - WhatsApp Web? - Apple Community",
+      "url": "https://discussions.apple.com/thread/6893850",
+      "snippet": "Mar 26, 2015 · Our web client is simply an extension of your phone: the web browser mirrors conversations and messages from your …"
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "r/AITAH: this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything …"
+    },
+    {
+      "title": "WhatsApp Business crashes on iPhone when … - Apple Community",
+      "url": "https://discussions.apple.com/thread/256347772",
+      "snippet": "Aug 28, 2026 · WhatsApp Business Attempt: Link to PC on Chrome/Edge/WhatsApp App Hello, all of sudden from four days ago I am …"
+    },
+    {
+      "title": "Whatsapp desktop showing unread messages which were read on mobile",
+      "url": "https://www.reddit.com/r/whatsapp/comments/udvn78/whatsapp_desktop_showing_unread_messages_which/",
+      "snippet": "Apr 28, 2022 · Whatsapp beta for MacOS, since the introduction of multi device support it shows unread messages which I read on …"
+    }
+  ]
+}

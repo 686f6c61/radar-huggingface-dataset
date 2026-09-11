@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dmitrisds/contrastive-best-2024",
+  "slug": "dmitrisds-contrastive-best-2024",
+  "author": "dmitrisds",
+  "url": "https://huggingface.co/dmitrisds/contrastive-best-2024",
+  "created_at": "2026-09-11T13:19:35.000Z",
+  "updated_at": "2026-09-11T13:19:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E bildirge - forum.mustafagulsen.com",
+      "url": "https://forum.mustafagulsen.com/showthread.php?142589-e-bildirge",
+      "snippet": "Apr 4, 2020 · 1/7/2020 tarihinde kadar bildirgeleri v2 sistemi üzerinden mi göndereceğiz? Şu an v2 sisteminden bildirge göndermeyi …"
+    },
+    {
+      "title": "e bildirge v2 sistemi, iptal ve asıl/ek bildirge düzenleme",
+      "url": "https://forum.mustafagulsen.com/showthread.php?138910-e-bildirge-v2-sistemi-iptal-ve-asil-ek-bildirge-duzenleme",
+      "snippet": "e bildirge v2 sistemi, iptal ve asıl/ek bildirge düzenleme Kolay gelsin arkadaşlar, hatalı teşvik hk. sigortadan yazı geldi mükellefimize, …"
+    },
+    {
+      "title": "Hatalı Verilen Belge Türünün Düzeltilmesi Hakkında-eBildirge V2",
+      "url": "https://forum.alomaliye.com/konular/hatali-verilen-belge-turunun-duzeltilmesi-hakkinda-ebildirge-v2.66723/",
+      "snippet": "May 13, 2019 · Selamlar, emekli olan 3 personel normal olarak giriş yapıldı. Kurum ile görüştüm bildirge V2 sisteminden iptal-ek verin …"
+    },
+    {
+      "title": "E-bildirge Kullanıcı Adı Ve Şifresi Değiştirilmesi Hk.",
+      "url": "https://forum.alomaliye.com/konular/e-bildirge-kullanici-adi-ve-sifresi-degistirilmesi-hk.43248/",
+      "snippet": "Mar 6, 2012 · Merhabalar, işyerimizde şu anda çalışmayan eski çalışanımızın tckimlik nosu ile alınmış sgk e-bildirge kullanıcı adı ve …"
+    },
+    {
+      "title": "E-Bildirge V2 ssk hizmet dökümünde yeni işe başlayan bir kişiyi ekleme..",
+      "url": "https://forum.mustafagulsen.com/showthread.php?142303-e-bildirge-v2-ssk-hizmet-dokumunde-yeni-ise-baslayan-bir-kisiyi-ekleme",
+      "snippet": "Bildiğiniz üzere ssk hizmet listesi ve tahhakuk fişleri e-bildirge V2 sisteminden verilecek. Geçmiş dönemleri getir butonu ile hiç değilse …"
+    }
+  ]
+}

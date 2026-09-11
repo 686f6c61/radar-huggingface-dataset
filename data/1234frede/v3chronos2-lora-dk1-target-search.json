@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "1234Frede/v3chronos2-lora-dk1-target-search",
+  "slug": "1234frede-v3chronos2-lora-dk1-target-search",
+  "author": "1234Frede",
+  "url": "https://huggingface.co/1234Frede/v3chronos2-lora-dk1-target-search",
+  "created_at": "2026-09-11T12:35:39.000Z",
+  "updated_at": "2026-09-11T12:35:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:amazon/chronos-2",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:amazon/chronos-2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4854584,
+  "storage_human": "5 MB",
+  "base_model": "amazon/chronos-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "GGD、GCS、GCK、MNS配电柜的区别？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/117715468.html",
+      "snippet": "GGD框架式的固定柜，俗话说是铁梁搭出的铁架子，肚子全空出来装元器件， GCS、GCK、MNS是抽屉式的柜子，元器件是装在抽 …"
+    },
+    {
+      "title": "GCS_WGS_1984如何正确定义投影？ - GIS知乎-新一代GIS问答社区",
+      "url": "https://zhihu.geoscene.cn/question/19361",
+      "snippet": "GCS_WGS_1984如何正确定义投影？ - 从全能电子地图获取北京市域行政边界，如图所示（图1）导入ArcGIS中显示为地理坐标 …"
+    },
+    {
+      "title": "FAQ: 投影基础：GIS专业人员必知 - GIS知乎-新一代GIS问答社区",
+      "url": "https://zhihu.geoscene.cn/question/9446",
+      "snippet": "Nov 22, 2015 · 术语“地理坐标系（GCS）”和“基准面”在使用上是可以互换的，如上述，一个GCS包含了基准面，椭球，测量单位，中 …"
+    },
+    {
+      "title": "gcs文件是什么类型的文件，该怎么打开它？_百度知道",
+      "url": "https://zhidao.baidu.com/question/98212965.html",
+      "snippet": "1、*.gcs文件是神机妙算造价软件的用户文件或模板文件，能够在神机造价软件中打开，用户自己下载神机妙算软件安装后打开即可， …"
+    }
+  ]
+}

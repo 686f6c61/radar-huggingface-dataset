@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-recovery-noise-30pct-40ep-convex",
+  "slug": "imkyungjin-pi0-stackcube-recovery-noise-30pct-40ep-convex",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recovery-noise-30pct-40ep-convex",
+  "created_at": "2026-09-11T19:19:43.000Z",
+  "updated_at": "2026-09-11T19:22:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_recovery_noise_30pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bravecto - megöli a kutyáinkat? - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9234546",
+      "snippet": "May 25, 2023 · Amikor a kullancs, vagy bolha megcsípi a szerrel kezelt állatot, a kiszívott vérrel együtt az idegmérget is megeszi, így …"
+    },
+    {
+      "title": "Makett és Modell BOLHAPIAC - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9132953",
+      "snippet": "Aug 29, 2026 · Makettek és modellek bolhapiaca Pontos ár megadása kötelező! Más kereskedelmi portálok felhasználóinak itteni …"
+    },
+    {
+      "title": "Drukkerkocsma - Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList?t=33",
+      "snippet": "Jan 17, 2002 · A sportrovat focifóruma. Sportszerű szurkolás és barátságos poharazgatás, moderátori felügyelet mellett"
+    },
+    {
+      "title": "Makett, Modell, Börze - Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList?t=9221260",
+      "snippet": "1 day ago · Makett, Modell, Börze [NEM NYITHAT TOPIKOT]"
+    },
+    {
+      "title": "Macska Leukózis - SEGITSETEK - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9081327",
+      "snippet": "Apr 6, 2026 · Néha a bolhásságot se veszi észre az ember, ha allergiás rá a macska, 1-2 bolha is nagyon ronda tüneteket okozhat. …"
+    }
+  ]
+}

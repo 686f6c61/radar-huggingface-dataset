@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/phi-1.5-primekg-orpo-seed2024",
+  "slug": "olusegunola-phi-1-5-primekg-orpo-seed2024",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-orpo-seed2024",
+  "created_at": "2026-09-11T19:15:56.000Z",
+  "updated_at": "2026-09-11T19:16:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50357392,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IGL, Indraprastha Gemological Laboratories,IGL gem testing …",
+      "url": "https://www.igldelhi.com/",
+      "snippet": "Packet Lot Identification Report Rough stone Identification Report Microphotography Gemstone Origin Report Gemstone …"
+    },
+    {
+      "title": "igldelhi.com",
+      "url": "https://www.igldelhi.com/contact.php",
+      "snippet": "Contact Us IGL Head Office Company Name: Indraprastha Gemological Laboratories (IGL) Address : H.O- Vijay Plaza Complex, …"
+    },
+    {
+      "title": "IGL Gem Testing Laboratories | Delhi - Facebook",
+      "url": "https://www.facebook.com/Www.igldelhi/",
+      "snippet": "May 8, 2026 · With the upcoming changes, we are excited to share our company's new logo. #igldelhi #gemology #diamondgrading …"
+    },
+    {
+      "title": "Delhi Airport (DEL) – Arrival, Departure, Transit",
+      "url": "https://www.newdelhiairport.in/",
+      "snippet": "Explore IGI Airport Delhi—flight status, arrivals, departures, DigiYatra, transport, duty-free shopping, terminal maps & services for all …"
+    },
+    {
+      "title": "IGL Delhi Certificate",
+      "url": "https://www.igldelhi.com/searchpage.php",
+      "snippet": "Indraprastha Gemological Laboratories H.O-2523/8, Vijaya Plaza Complex, Beadon Pura, Karol Bagh, Delhi-110005 +91 …"
+    }
+  ]
+}

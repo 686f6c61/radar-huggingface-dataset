@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "7Nas7/camembert-FR-ner-personne",
+  "slug": "7nas7-camembert-fr-ner-personne",
+  "author": "7Nas7",
+  "url": "https://huggingface.co/7Nas7/camembert-FR-ner-personne",
+  "created_at": "2026-09-11T16:40:36.000Z",
+  "updated_at": "2026-09-11T16:40:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "windows - Uninstall without an MSI file - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/334490/uninstall-without-an-msi-file",
+      "snippet": "Dec 19, 2016 · Sort by date and search in the latest created folders for an MSI file that could belong to the software that you want to …"
+    },
+    {
+      "title": "c# - Visual studio 2010 Bing Map location finder by longitude and ...",
+      "url": "https://stackoverflow.com/questions/5698014/visual-studio-2010-bing-map-location-finder-by-longitude-and-latitude",
+      "snippet": "Apr 18, 2011 · I am creating a windows 7 phone application which able to search for location by name of location. Now my problem is …"
+    },
+    {
+      "title": "Remove Visual Search feature from Edge programatically",
+      "url": "https://stackoverflow.com/questions/72563731/remove-visual-search-feature-from-edge-programatically",
+      "snippet": "Jun 9, 2022 · Edge seems to have recently come out with a Visual Search feature, which pops up an icon above all images, allowing …"
+    },
+    {
+      "title": "git - Download single files from GitHub - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4604663/download-single-files-from-github",
+      "snippet": "In 2021 GitHub added a new feature of opening visual studio code right on the web. You can launch it by just pressing full stop aka …"
+    },
+    {
+      "title": "vs code copilot icon gone - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/75827616/vs-code-copilot-icon-gone",
+      "snippet": "Mar 23, 2023 · I can't find the Github Copilot icon for VS Code. I tried uninstalling and reinstalling the GitHub Copilot extension, and …"
+    }
+  ]
+}

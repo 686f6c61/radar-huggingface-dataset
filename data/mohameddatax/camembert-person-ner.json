@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "MohamedDataX/camembert-person-ner",
+  "slug": "mohameddatax-camembert-person-ner",
+  "author": "MohamedDataX",
+  "url": "https://huggingface.co/MohamedDataX/camembert-person-ner",
+  "created_at": "2026-09-11T13:58:57.000Z",
+  "updated_at": "2026-09-11T13:59:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Las mejores cortinas roller 2025 por su diseño y funcionalidad ...",
+      "url": "https://www.mercadolibre.cl/blog/mejores-cortinas-roller",
+      "snippet": "Oct 4, 2025 · Encuentra la cortina roller ideal para controlar la luz, sumar estilo y renovar tu espacio sin complicaciones en 2025"
+    },
+    {
+      "title": "Top Roller Chile | Cortinas Roller Premium y Motorizadas",
+      "url": "https://www.toproller.cl/",
+      "snippet": "En Top Roller instalamos cortinas roller blackout, sunscreen y motorizadas en Santiago. Diseño premium, asesoría personalizada y …"
+    },
+    {
+      "title": "Cortinas Roller Aprovecha 20% Dcto | Falabella Chile",
+      "url": "https://www.falabella.com/falabella-cl/category/CATG10086/Cortinas-Roller",
+      "snippet": "En Falabella Chile, podrás encontrar cortinas roller de distintos colores, texturas y diseños, que se adaptan tanto a espacios …"
+    },
+    {
+      "title": "Cortinas Roller en Chile - Estilo y Funcionalidad",
+      "url": "https://cortinas.cl/roller/",
+      "snippet": "Cotiza online tus cortinas roller y recibe instalación profesional en tu hogar u oficina. Disponibles en Screen, Blackout y Translúcidas, …"
+    },
+    {
+      "title": "Cortinas Roller Aprovecha 20% Dcto | Falabella Chile",
+      "url": "https://www.falabella.com/falabella-cl/category/CATG10086/Cortinas-Roller?page=3",
+      "snippet": "En Falabella Chile, podrás encontrar cortinas roller de distintos colores, texturas y diseños, que se adaptan tanto a espacios …"
+    }
+  ]
+}

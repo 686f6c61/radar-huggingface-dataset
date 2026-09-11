@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "valendra/sherry-35b-a3b-0.1-grpo-preview",
+  "slug": "valendra-sherry-35b-a3b-0-1-grpo-preview",
+  "author": "valendra",
+  "url": "https://huggingface.co/valendra/sherry-35b-a3b-0.1-grpo-preview",
+  "created_at": "2026-09-11T11:13:31.000Z",
+  "updated_at": "2026-09-11T12:06:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.6",
+    "moe",
+    "reasoning",
+    "reasoning-effort",
+    "grpo",
+    "qlora",
+    "peft",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35106198896,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70239547565,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Internal reasoning-effort math data",
+      "metric": "Training reward (checkpoint-200)",
+      "value": 2.2144
+    }
+  ],
+  "sources": [
+    {
+      "title": "已经知道案件号，在哪里去查询一下案件内容？ - 知乎",
+      "url": "https://www.zhihu.com/question/356146882",
+      "snippet": "1、当事人查案子，如果知道案件的承办人或者案号，可以直接与受案的法院诉讼服务中心联系，查承办人的电话；如果不知道受案法 …"
+    },
+    {
+      "title": "ai整个文件怎么转曲 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/49ad8bce1c2e1b1934d8fadc.html",
+      "snippet": "1.双击“Adobe Illustrator CC 2015”图标，打开AI软件。 2.点击上方功能区的“选择”按钮。 3.在弹出的页面中点击“全部”，即可选中整个 …"
+    },
+    {
+      "title": "如何在Excel中插入可以打勾的方框 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/574c5219f98b3e2c8c9dc11c.html",
+      "snippet": "Oct 2, 2019 · 如何在Excel中插入可以打勾的方框,Excel是我们日常工作学习中的常用工具之一，今天给大家分享一个小技巧，如何 …"
+    },
+    {
+      "title": "关于topshop裤子尺码？ - 知乎",
+      "url": "https://www.zhihu.com/question/34342597",
+      "snippet": "比如W2628 是什么意思，26以什么为单位的 或者以厘米怎么换算它？？？？"
+    },
+    {
+      "title": "什么是大专、中专、中职、高职、职中 和职高，他们的区别是什么？",
+      "url": "https://www.zhihu.com/question/50830786",
+      "snippet": "以上所有的名词，通过如下划分，会比较清晰： 1.划分维度一：所处的教育层次（即纵向上的，层次区别） 上述所有的名词，分别处 …"
+    }
+  ]
+}

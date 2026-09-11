@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed10",
+  "slug": "fpadovani-tam-taml-100mb-ppt-shuff-dyck-100mb_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed10",
+  "created_at": "2026-09-11T16:29:58.000Z",
+  "updated_at": "2026-09-11T16:40:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/tam_taml_100mb",
+    "base_model:finetune:goldfish-models/tam_taml_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 1998399442,
+  "storage_human": "2.0 GB",
+  "base_model": "goldfish-models/tam_taml_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Medicines: licensing and applications - GOV.UK",
+      "url": "https://www.gov.uk/government/collections/medicines-licensing-and-applications",
+      "snippet": "Sep 21, 2023 · Information about new applications, post-licensing, advertising, product information and fees."
+    },
+    {
+      "title": "UK-wide licensing for human medicines: supplementary guidance",
+      "url": "https://www.gov.uk/government/publications/uk-wide-licensing-for-human-medicines-supplementary-guidance/uk-wide-licensing-for-human-medicines-supplementary-guidance",
+      "snippet": "Jan 31, 2025 · The guidance on UK-wide licensing for human medicines explains how UK-wide licensing operates for all applications …"
+    },
+    {
+      "title": "Marketing authorisation routes for medicines in the UK",
+      "url": "https://www.pharmavibes.co.uk/2026/07/26/uk-licensing-routes-post-brexit/",
+      "snippet": "Jul 26, 2026 · This post is an attempt to present in a tabular format, information on the the currently available UK marketing …"
+    },
+    {
+      "title": "UK MHRA Guidance: Medicines Marketing Authorisation: Change of …",
+      "url": "https://www.regulatoryaffairsnews.com/post/uk-mhra-guidance-medicines-marketing-authorisation-change-of-ownership",
+      "snippet": "Oct 5, 2025 · When the ownership of a medicine changes—through a merger, acquisition, corporate restructure, or divestiture—the …"
+    },
+    {
+      "title": "The Human Medicines Regulations 2012 - Legislation.gov.uk",
+      "url": "https://www.legislation.gov.uk/uksi/2012/1916/part/5/crossheading/obligations-of-holder-of-marketing-authorisation",
+      "snippet": "— (1) The holder of a UK marketing authorisation [F18 or parallel import licence] for a medicinal product must ensure that the product …"
+    }
+  ]
+}

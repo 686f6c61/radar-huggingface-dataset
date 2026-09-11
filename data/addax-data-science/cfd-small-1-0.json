@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Addax-Data-Science/CFD-SMALL-1-0",
+  "slug": "addax-data-science-cfd-small-1-0",
+  "author": "Addax-Data-Science",
+  "url": "https://huggingface.co/Addax-Data-Science/CFD-SMALL-1-0",
+  "created_at": "2026-09-11T14:16:34.000Z",
+  "updated_at": "2026-09-11T14:16:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127327589,
+  "storage_human": "127 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Addax — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Addax",
+      "snippet": "L' addax (Addax nasomaculatus) ou antilope à nez tacheté, est une espèce d' antilopes d'un genre monospécifique Addax et …"
+    },
+    {
+      "title": "Laboratoire ADDAX – Soins experts pieds, mains et ongles",
+      "url": "https://laboratoire-addax.com/",
+      "snippet": "Laboratoire ADDAX, expert français en soins podologiques depuis 1996. Solutions ciblées pour pieds, mains et ongles. Haute …"
+    },
+    {
+      "title": "Addax Gaz, le spÃ©cialiste du gaz dans les installations domestiques",
+      "url": "http://www.addax-gaz.net/",
+      "snippet": "Le spécialiste français, qui depuis plus de 80 ans, fabrique et distribue des tuyaux et accessoires de raccordement et de sécurité …"
+    },
+    {
+      "title": "Addax - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Addax",
+      "snippet": "The addax (Addax nasomaculatus), also known as the white antelope and the screwhorn antelope, is an antelope native to the …"
+    },
+    {
+      "title": "Addax : origines et caractéristiques - Liste Animaux",
+      "url": "https://liste-animaux.fr/addax/",
+      "snippet": "L’addax est l’une des antilopes les mieux adaptées au désert, capable de survivre sans eau pendant plusieurs mois. Son …"
+    }
+  ]
+}

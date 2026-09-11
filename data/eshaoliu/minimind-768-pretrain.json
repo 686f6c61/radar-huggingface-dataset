@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "eshaoliu/minimind-768-pretrain",
+  "slug": "eshaoliu-minimind-768-pretrain",
+  "author": "eshaoliu",
+  "url": "https://huggingface.co/eshaoliu/minimind-768-pretrain",
+  "created_at": "2026-09-11T17:34:52.000Z",
+  "updated_at": "2026-09-11T17:37:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 84162816,
+  "parameters_human": "84.2M",
+  "storage_bytes": 168335488,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(PDF) Psychological Theories of Borderline Personality Disorder: A ...",
+      "url": "https://www.academia.edu/144782660/Psychological_Theories_of_Borderline_Personality_Disorder_A_Systematic_Review_for_Mental_Health_Practitioners_and_Clinical_Researchers",
+      "snippet": "No single theoretical model fully encapsulates Borderline Personality Disorder (BPD); an integrative biopsychosocial approach is …"
+    },
+    {
+      "title": "(PDF) Psychological Theories of Borderline Personality Disorder: A ...",
+      "url": "https://www.academia.edu/144782664/Psychological_Theories_of_Borderline_Personality_Disorder_A_Systematic_Review_for_Mental_Health_Practitioners_and_Clinical_Researchers",
+      "snippet": "This systematic review examines the evolution and current status of psychological theories pertaining to Borderline Personality …"
+    },
+    {
+      "title": "Psychological Theories of Borderline Personality Disorder: A …",
+      "url": "https://www.researchgate.net/profile/Premkant-Uparikar/publication/391402526_Psychological_Theories_of_Borderline_Personality_Disorder_A_Systematic_Review_for_Mental_Health_Practitioners_and_Clinical_Researchers/links/6815b206ded433155741c266/Psychological-Theories-of-Borderline-Personality-Disorder-A-Systematic-Review-for-Mental-Health-Practitioners-and-Clinical-Researchers.pdf",
+      "snippet": "The systematic review presented herein offers a comprehensive examination and critical evaluation of the psychological theories …"
+    },
+    {
+      "title": "Theories of Borderline Personality Disorder - Springer",
+      "url": "https://link.springer.com/book/10.1007/978-3-031-75503-3",
+      "snippet": "This book provides a comprehensive review of the major theories underlying the diagnosis of borderline personality disorder. All …"
+    },
+    {
+      "title": "Unveiling the Layers of Borderline Personality Disorder: A ... - MDPI",
+      "url": "https://www.mdpi.com/2076-328X/15/7/928",
+      "snippet": "Jul 9, 2025 · This review aimed to explore the empirical literature on borderline personality disorder subtypes derived through cluster …"
+    }
+  ]
+}

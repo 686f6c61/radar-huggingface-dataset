@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/GLM-5.3-Flash",
+  "slug": "redhatai-glm-5-3-flash",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/GLM-5.3-Flash",
+  "created_at": "2026-09-11T13:55:16.000Z",
+  "updated_at": "2026-09-11T13:55:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673114,
+  "storage_human": "328.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fai una spedizione, calcola le tariffe, effettua il tracking, e fissa ...",
+      "url": "https://mydhl.express.dhl/it/it/home.html",
+      "snippet": "MyDHL+ rende più facile che mai spedire online, ottenere preventivi, programmare i ritiri, trovare destinazioni, monitorare le …"
+    },
+    {
+      "title": "Nuova Spedizione - MyDHL+",
+      "url": "https://mydhl.express.dhl/it/it/shipment.html",
+      "snippet": "DHL salverà in modo sicuro la vostra password sul dispositivo in uso"
+    },
+    {
+      "title": "Login",
+      "url": "https://mydhl.express.dhl/st/en/auth/login.html",
+      "snippet": "Login and start using MyDHL+ now! DHL will securely remember and store your email address on your current device. Need a Quote …"
+    },
+    {
+      "title": "Accedi ai portali e agli strumenti per i clienti - DHL -",
+      "url": "https://www.dhl.com/it-it/home/accesso.html",
+      "snippet": "Che tu sia una piccola-media impresa o una grande azienda, con MyDHL+ puoi gestire facilmente le complessità delle spedizioni …"
+    },
+    {
+      "title": "MyDHL+ | International Shipping and Courier Delivery",
+      "url": "https://mydhl.express.dhl/index/en.html",
+      "snippet": "MyDHL+ is your one-stop for international shipping, courier pickups and delivery by DHL Express. Ship online, get quotes, schedule …"
+    }
+  ]
+}

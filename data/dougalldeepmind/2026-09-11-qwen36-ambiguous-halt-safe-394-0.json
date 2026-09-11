@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-09-11-qwen36-ambiguous-halt-safe-394-0",
+  "slug": "dougalldeepmind-2026-09-11-qwen36-ambiguous-halt-safe-394-0",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-09-11-qwen36-ambiguous-halt-safe-394-0",
+  "created_at": "2026-09-11T19:12:55.000Z",
+  "updated_at": "2026-09-11T19:13:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Отделы ЗАГC городов и крайов Лавтии",
+      "url": "https://wedday.lv/ru/catalog/visas-latvijas-dzimtsarakstu-nodalas",
+      "snippet": "Список всех отделений ЗАГС Латвии с их адресами и контактами, регистрация браков. ЗАГСы городов Рига, Юрмала и …"
+    },
+    {
+      "title": "Видземский отдел ЗАГС города Риги",
+      "url": "https://wedday.lv/ru/catalog/visas-latvijas-dzimtsarakstu-nodalas/rigas-pilsetas-vidzemes-dzimtsarakstu-nodala",
+      "snippet": "Оплату регистрации брака можно произвести в Отделе записи актов гражданского состояния (ЗАГС) с помощью платежной …"
+    },
+    {
+      "title": "СВАДЬБА ЗАГСЫ РИГИ Загсы Риги ЗАгсы ...",
+      "url": "http://www.perepoloh.lv/ru_zags2.htm",
+      "snippet": "Заявление подается ровно за два месяца, но лучше заранее, если вы хотите расписаться в сезон (с апреля по сентябрь). …"
+    },
+    {
+      "title": "ЗАГСЫ. Отделы регистрации брака в Риге.",
+      "url": "https://tamada.lv/zagsy.html",
+      "snippet": "Это пожелание яркой и красивой жизни. Согласно традиции жених и невеста едут в ЗАГс на разных автомобилях, а из …"
+    },
+    {
+      "title": "Информация о практике регистрации ...",
+      "url": "https://latvia.mid.ru/ru/consular-services/consulate1/informacia_o_praktike_registracii_aktov_zags/",
+      "snippet": "Отдел актов гражданского состояния (ЗАГС) Латвийской Республики производит регистрацию заключения брака и выдает …"
+    }
+  ]
+}

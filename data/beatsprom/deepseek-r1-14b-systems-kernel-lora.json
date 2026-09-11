@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "beatsprom/deepseek-r1-14b-systems-kernel-lora",
+  "slug": "beatsprom-deepseek-r1-14b-systems-kernel-lora",
+  "author": "beatsprom",
+  "url": "https://huggingface.co/beatsprom/deepseek-r1-14b-systems-kernel-lora",
+  "created_at": "2026-09-11T16:24:41.000Z",
+  "updated_at": "2026-09-11T16:25:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "deepseek-r1",
+    "reasoning",
+    "cot",
+    "lora",
+    "systems-programming",
+    "kernel",
+    "c-plus-plus",
+    "rust",
+    "unsloth",
+    "text-generation",
+    "base_model:unsloth/DeepSeek-R1-Distill-Qwen-14B",
+    "base_model:adapter:unsloth/DeepSeek-R1-Distill-Qwen-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/DeepSeek-R1-Distill-Qwen-14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1&1 Kunden-Login - Anmeldung zu Ihrem Control-Center",
+      "url": "https://www.1und1.de/login",
+      "snippet": "Verwalten Sie Ihr Kundenprofil im 1&1 Control-Center ganz einfach und unkompliziert. Hier können Sie auch Ihren Nutzernamen …"
+    },
+    {
+      "title": "Login – Zugang zu Ihrem Kundenkonto",
+      "url": "https://login.ionos.de/",
+      "snippet": "Noch kein IONOS Kunde? Jetzt Kunde werden und von unseren Angeboten profitieren. Zugriff auf Ihre gesamte IONOS Welt: …"
+    },
+    {
+      "title": "1&1 E-Mail und Online-Speicher – Webmailer Login",
+      "url": "https://webmailer.1und1.de/",
+      "snippet": "1&1 Webmail Login - Lesen Sie online ihre E-Mails aus den Mailkonten von 1&1 Handy-, DSL-Verträgen."
+    },
+    {
+      "title": "1&1 Control-Center - Ihr persönlicher Kundenbereich",
+      "url": "https://www.1und1.de/control-center",
+      "snippet": "Das 1&1 Control-Center bietet Ihnen alles, was Sie rund um Ihren Vertrag und zu Vertragsergänzungen wissen müssen."
+    },
+    {
+      "title": "1&1 Kunden-Login - Anmeldung zu Ihrem Control-Center",
+      "url": "https://control-center.1und1.de/passwort",
+      "snippet": "Ich möchte meinen Zugang mit einem zweiten Faktor absichern."
+    }
+  ]
+}

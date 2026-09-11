@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JigSawPT/DeepSeek-V4.1-Flash-DSpark-GGUF",
+  "slug": "jigsawpt-deepseek-v4-1-flash-dspark-gguf",
+  "author": "JigSawPT",
+  "url": "https://huggingface.co/JigSawPT/DeepSeek-V4.1-Flash-DSpark-GGUF",
+  "created_at": "2026-09-11T12:09:01.000Z",
+  "updated_at": "2026-09-11T12:12:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "speculative-decoding",
+    "dspark",
+    "deepseek",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14225362146,
+  "parameters_human": "14.23B",
+  "storage_bytes": 7972959936,
+  "storage_human": "8.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Office Locations | About Microsoft",
+      "url": "https://www.microsoft.com/en-us/about/office-locations?msockid=3c0de1dbe3bc61ca1515f60ae2546028",
+      "snippet": "Microsoft’s global headquarters are located on 500 acres in Redmond, Washington that includes public spaces, sports fields, green …"
+    },
+    {
+      "title": "Microsoft Corporate Headquarters - 1 Microsoft Way, Redmond, WA 98052 …",
+      "url": "https://businessyab.com/explore/united_states/washington/king_county/redmond/overlake/microsoft_way/1/microsoft-corporate-headquarters-425-882-8080.html",
+      "snippet": "2 days ago · Microsoft Corporate Headquarters at 1 Microsoft Way, Redmond, WA 98052, USA - hours, address, map, directions, …"
+    },
+    {
+      "title": "Microsoft campus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft_campus",
+      "snippet": "The Microsoft campus is the corporate headquarters of Microsoft Corporation, located in Redmond, Washington, United States, a part …"
+    },
+    {
+      "title": "Microsoft Headquarters Address (2026 Updated) - Computer Tech …",
+      "url": "https://www.computertechreviews.com/microsoft-headquarters-address/",
+      "snippet": "Apr 9, 2026 · One Microsoft Way, Redmond, WA 98052, USA. Where is Microsoft located in the USA? Microsoft is headquartered in …"
+    },
+    {
+      "title": "Microsoft Headquarters, Overlake - Explore in Google Maps",
+      "url": "https://www.google.com/maps/search/One%20Microsoft%20Way%2C%20Redmond%2C%20Washington%2C%20United%20States",
+      "snippet": "Software company. Overlake, One Microsoft Way, Redmond, WA 98052."
+    }
+  ]
+}

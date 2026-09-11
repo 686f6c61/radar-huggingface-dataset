@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yusifnuri/phi-4-mini-instruct_ner",
+  "slug": "yusifnuri-phi-4-mini-instruct_ner",
+  "author": "yusifnuri",
+  "url": "https://huggingface.co/yusifnuri/phi-4-mini-instruct_ner",
+  "created_at": "2026-09-11T15:42:23.000Z",
+  "updated_at": "2026-09-11T15:42:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "small-language-model",
+    "enterprise-benchmark",
+    "ner",
+    "base_model:adapter:microsoft/Phi-4-mini-instruct",
+    "text-generation",
+    "conversational",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28116030,
+  "storage_human": "28 MB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "how can I login anonymously with ftp (/usr/bin/ftp)?",
+      "url": "https://stackoverflow.com/questions/3936911/how-can-i-login-anonymously-with-ftp-usr-bin-ftp",
+      "snippet": "I'm trying to connect to an FTP server which allows anonymous access, I don't know how to specify the appropriate …"
+    },
+    {
+      "title": "话题广场 - 知乎",
+      "url": "https://www.zhihu.com/topics",
+      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
+    },
+    {
+      "title": "DOCKER manifest unknown: manifest unknown - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/41810104/docker-manifest-unknown-manifest-unknown",
+      "snippet": "Jan 23, 2017 · I had a private registry container that was causing this issue. my fix for this was to re-push the affected images. the …"
+    },
+    {
+      "title": "oracle database - ORA-12154: TNS:could not resolve the connect ...",
+      "url": "https://stackoverflow.com/questions/12825635/ora-12154-tnscould-not-resolve-the-connect-identifier-specified-plsql-develop",
+      "snippet": "Oct 11, 2012 · The problem found was that the database name was not correct in the TNS file but for some reason it's been working …"
+    }
+  ]
+}

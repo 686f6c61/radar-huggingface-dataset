@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Selvauma/na-air-deepmd",
+  "slug": "selvauma-na-air-deepmd",
+  "author": "Selvauma",
+  "url": "https://huggingface.co/Selvauma/na-air-deepmd",
+  "created_at": "2026-09-11T16:13:53.000Z",
+  "updated_at": "2026-09-11T16:14:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepmd-kit",
+    "molecular-dynamics",
+    "interatomic-potential",
+    "materials-science",
+    "battery-materials",
+    "sodium-air-battery",
+    "discharge-products",
+    "metal-oxide",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27657938,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay UK | Electronics, Cars, Fashion, Collectibles & More",
+      "url": "https://www.ebay.co.uk/?msockid=1cb83b51190160cb19c82c80180761c1",
+      "snippet": "Buy & sell electronics, cars, clothes, collectibles & more on eBay UK's online marketplace. Top brands, low prices & free shipping on …"
+    },
+    {
+      "title": "Shop by Category | eBay",
+      "url": "https://www.ebay.co.uk/n/all-categories?msockid=1cb83b51190160cb19c82c80180761c1",
+      "snippet": "Shop by department, purchase cars, fashion apparel, collectibles, sporting goods, cameras, baby items, and everything else on eBay, …"
+    },
+    {
+      "title": "Cars, Motorcycles & Vehicles for sale | eBay UK",
+      "url": "https://www.ebay.co.uk/b/bn_1839671?msockid=1cb83b51190160cb19c82c80180761c1",
+      "snippet": "Buy Cars, Motorcycles & Vehicles and get the best deals at the lowest prices on eBay UK! Great Savings & Free Delivery / Collection …"
+    },
+    {
+      "title": "Welcome to eBay | eBay.co.uk",
+      "url": "https://pages.ebay.co.uk/welcome-to-ebay/",
+      "snippet": "Welcome to eBay, Tips & Tricks, Shop with confidence, Top categories, Seller Spotlight"
+    },
+    {
+      "title": "Cars for sale | eBay UK",
+      "url": "https://www.ebay.co.uk/b/bn_1839037?msockid=1cb83b51190160cb19c82c80180761c1",
+      "snippet": "Buy Cars and get the best deals at the lowest prices on eBay UK! Great Savings & Free Delivery / Collection on many items"
+    }
+  ]
+}

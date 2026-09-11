@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "samsontsai/research-multitask",
+  "slug": "samsontsai-research-multitask",
+  "author": "samsontsai",
+  "url": "https://huggingface.co/samsontsai/research-multitask",
+  "created_at": "2026-09-11T18:00:17.000Z",
+  "updated_at": "2026-09-11T18:00:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Office 2019安装图文教程+激活 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/29697b91a04db0ea20de3c82.html",
+      "snippet": "Jul 16, 2024 · Microsoft Office 2019软件简介：Microsoft Office 2019是由Microsoft (微软)公司开发的一套基于 Windows 操作系统的办 …"
+    },
+    {
+      "title": "How to Install Microsoft Office Picture Manager in Office 2013",
+      "url": "https://www.experts-exchange.com/articles/12697/How-to-Install-Microsoft-Office-Picture-Manager-in-Office-2013.html",
+      "snippet": "Dec 20, 2013 · Microsoft Office Picture Manager is not included in Office 2013. This comes as a shock to users upgrading from earlier …"
+    },
+    {
+      "title": "office2016怎么安装 office2016安装教程 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/cbcede07b8067043f40b4dc8.html",
+      "snippet": "Jul 29, 2024 · 对于需要安装 office 2016 但不知如何操作的用户来说，这篇文章提供了全面的安装教程，旨在解决以下问题：office …"
+    },
+    {
+      "title": "How to Install Microsoft Office Picture Manager in Office 2016/Office ...",
+      "url": "https://www.experts-exchange.com/articles/23999/How-to-Install-Microsoft-Office-Picture-Manager-in-Office-2016-Office-365.html",
+      "snippet": "Dec 10, 2015 · Microsoft Office Picture Manager was included in Office 2003, 2007, and 2010, but not in Office 2013. Users had …"
+    },
+    {
+      "title": "一步一步详细讲解Office程序软件的安装过程 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/ab69b270ffb66e6da7189fe9.html",
+      "snippet": "Mar 21, 2020 · 1.准备Office程序软件的安装程序 截止到现在，最新版本的Microsoft Office是office365。 我们以“Office2016简体中文64 …"
+    }
+  ]
+}

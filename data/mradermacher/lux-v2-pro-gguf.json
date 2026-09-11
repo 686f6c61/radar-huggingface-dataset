@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Lux-V2-Pro-GGUF",
+  "slug": "mradermacher-lux-v2-pro-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lux-V2-Pro-GGUF",
+  "created_at": "2026-09-11T14:23:02.000Z",
+  "updated_at": "2026-09-11T14:23:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 575743536,
+  "parameters_human": "575.7M",
+  "storage_bytes": 2008498816,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impostare una stampante predefinita in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/it-it/windows/hardware/printer/set-a-default-printer-in-windows",
+      "snippet": "Usa l'app Impostazioni in Windows per impostare manualmente una stampante predefinita o consentire a Windows di gestire la …"
+    },
+    {
+      "title": "Come impostare la stampante predefinita in Windows 11 e Windows …",
+      "url": "https://www.dell.com/support/kbdoc/it-it/000177203/come-impostare-la-stampante-predefinita-in-windows-11-e-windows-10?msockid=06505420b31660bc0e8043f1b24a6171",
+      "snippet": "Informazioni su come impostare manualmente una stampante predefinita in Windows 11 o Windows 10 o su come consentire a …"
+    },
+    {
+      "title": "Imposta facilmente la stampante predefinita in Windows",
+      "url": "https://tecnobits.com/it/Imposta-la-stampante-predefinita-in-Windows/",
+      "snippet": "Dec 11, 2025 · Individua la stampante che desideri impostare come predefinita, fai clic destro su di essa e seleziona Imposta come …"
+    },
+    {
+      "title": "Come Impostare o Cambiare la Stampante Predefinita su Windows",
+      "url": "https://www.wikihow.it/Impostare-la-stampante-predefinita-preferita-su-Windows",
+      "snippet": "In questo articolo, spiegheremo come impostare manualmente la tua stampante predefinita e impedire a Windows di cambiarla di …"
+    },
+    {
+      "title": "Come cambiare stampante predefinita | Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/come-impostare-una-stampante-come-predefinita-18096.html",
+      "snippet": "Nella finestra che si apre, seleziona con il tasto destro del mouse l'icona della stampante che vuoi impostare come predefinita e …"
+    }
+  ]
+}

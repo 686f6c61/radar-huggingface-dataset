@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/deepseek_vit_412m_align.deepseek_v4_flash_vision_exp",
+  "slug": "timm-deepseek_vit_412m_align-deepseek_v4_flash_vision_exp",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/deepseek_vit_412m_align.deepseek_v4_flash_vision_exp",
+  "created_at": "2026-09-11T16:21:28.000Z",
+  "updated_at": "2026-09-11T16:21:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 466376704,
+  "parameters_human": "466.4M",
+  "storage_bytes": 1865534640,
+  "storage_human": "1.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Rewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/",
+      "snippet": "We are not associated with Microsoft and are a community driven group to help maximize earning points."
+    },
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "ADMIN MOD • Bing News Quiz [5/3/2024] - A restaurant at DisneyWorld became the first theme-park eatery to win what coveted …"
+    },
+    {
+      "title": "Bing News Quiz (7-22-2022) : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/w52krw/bing_news_quiz_7222022/",
+      "snippet": "Jul 22, 2022 · Bing Weekly News Quiz: Questions Answers (7-22-2022) 22 July 2022, 1: As heat records across Europe became …"
+    },
+    {
+      "title": "Bing News Quiz [10-28-2022] : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/yf0qf5/bing_news_quiz_10282022/",
+      "snippet": "Oct 27, 2022 · Posted by u/Previous_Practice155 - 1 vote and no comments"
+    },
+    {
+      "title": "solvedquizbing - Reddit",
+      "url": "https://www.reddit.com/r/solvedquizbing/",
+      "snippet": "Microsoft Rewards Bing Entertainment News Quiz Questions and Answers (11-29-2023) 1: SZA was the big winner, and was named …"
+    }
+  ]
+}

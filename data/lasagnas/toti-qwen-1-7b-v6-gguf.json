@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "LasagnaS/toti-qwen-1.7b-v6-gguf",
+  "slug": "lasagnas-toti-qwen-1-7b-v6-gguf",
+  "author": "LasagnaS",
+  "url": "https://huggingface.co/LasagnaS/toti-qwen-1.7b-v6-gguf",
+  "created_at": "2026-09-11T12:15:07.000Z",
+  "updated_at": "2026-09-11T12:15:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ollama",
+    "tool-calling",
+    "toti-cakery",
+    "base_model:unsloth/Qwen3-1.7B",
+    "base_model:quantized:unsloth/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107409408,
+  "storage_human": "1.1 GB",
+  "base_model": "unsloth/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome - Visit Villefranche-sur-mer",
+      "url": "https://visitvillefranche.com/",
+      "snippet": "Tucked between Nice and Monaco on the glittering French Riviera, Villefranche-sur-Mer is a postcard-perfect seaside village where …"
+    },
+    {
+      "title": "12 Best Things to Do in Villefranche-sur-Mer (2026 Travel Guide)",
+      "url": "https://niceandbeyond.com/things-to-do-in-villefranche-sur-mer/",
+      "snippet": "Jul 23, 2026 · This guide highlights all the must-sees in Villefranche-sur-Mer, from its intriguing historic heritage to sun-soaked …"
+    },
+    {
+      "title": "Villefranche-sur-Mer - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Villefranche-sur-Mer",
+      "snippet": "The site of what is now Villefranche and surrounding Beaulieu-sur-Mer and Saint-Jean-Cap-Ferrat has been settled since prehistoric …"
+    },
+    {
+      "title": "A Local’s Guide to Villefranche-sur-Mer, the French Riviera ... - Travel",
+      "url": "https://www.travelandleisure.com/guide-to-villefranche-sur-mer-france-11926329",
+      "snippet": "Apr 21, 2026 · Here's how to plan a trip to Villefranche-sur-Mer, a small French Riviera town with stunning sea views, rich history, …"
+    },
+    {
+      "title": "Villefranche-sur-Mer: Visit the Most Colorful Town in South France",
+      "url": "https://www.saltinourhair.com/france/villefranche-sur-mer/",
+      "snippet": "Mar 25, 2024 · Villefranche-sur-Mer: the hidden gem of the French Riviera, and the perfect day trip from Nice. See all the top things …"
+    }
+  ]
+}

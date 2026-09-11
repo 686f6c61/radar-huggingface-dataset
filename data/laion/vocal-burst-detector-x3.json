@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "laion/vocal-burst-detector-x3",
+  "slug": "laion-vocal-burst-detector-x3",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/vocal-burst-detector-x3",
+  "created_at": "2026-09-11T12:22:07.000Z",
+  "updated_at": "2026-09-11T12:22:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "audio-classification",
+    "vocal-bursts",
+    "paralinguistics",
+    "dataset:laion/vocal-bursts-segments",
+    "base_model:laion/voiceclap-commercial",
+    "base_model:finetune:laion/voiceclap-commercial",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41077655,
+  "storage_human": "41 MB",
+  "base_model": "laion/voiceclap-large-v2, laion/voiceclap-commercial",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "LinkedIn | LinkedIn",
+      "url": "https://fr.linkedin.com/company/linkedin",
+      "snippet": "LinkedIn | 34 314 131 abonnés sur LinkedIn. Founded in 2003, LinkedIn connects the world&#39;s professionals to make them more …"
+    },
+    {
+      "title": "如何有效利用 LinkedIn？ - 知乎",
+      "url": "https://www.zhihu.com/question/21308578",
+      "snippet": "Linkedin已经发布中文版了，答主太忙还没更新回答。下面暂时只讨论Linkedin英文版的使用技巧。如果你想持续获得更多的Linkedin …"
+    },
+    {
+      "title": "如何用好领英（LinkedIn）？ - 知乎",
+      "url": "https://www.zhihu.com/question/55795521",
+      "snippet": "领英网址：www.linkedin.com领英App：‎LinkedIn领英-全球社交招聘平台LinkedIn（领英），全球最大职业社…"
+    },
+    {
+      "title": "Talio - LinkedIn",
+      "url": "https://fr.linkedin.com/company/talio-talent",
+      "snippet": "Talio | 4 819 abonnés sur LinkedIn. Your team, always ready. @StationF | 𝐋𝐞 𝐫𝐞𝐜𝐫𝐮𝐭𝐞𝐦𝐞𝐧𝐭 ..."
+    }
+  ]
+}

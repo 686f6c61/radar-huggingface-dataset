@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kokabtak/kokb1-gradio",
+  "slug": "kokabtak-kokb1-gradio",
+  "author": "kokabtak",
+  "url": "https://huggingface.co/kokabtak/kokb1-gradio",
+  "created_at": "2026-09-11T12:40:10.000Z",
+  "updated_at": "2026-09-11T12:40:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NIKE, Inc. (NKE) Stock Price, News, Quote & History - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/NKE/",
+      "snippet": "Aug 6, 2025 · Find the latest NIKE, Inc. (NKE) stock quote, history, news and other vital information to help you with your stock …"
+    },
+    {
+      "title": "NIKE, Inc. (NKE) Stock Historical Prices & Data - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/NKE/history/",
+      "snippet": "Dec 12, 2024 · Discover historical prices for NKE stock on Yahoo Finance. View daily, weekly or monthly format back to when NIKE, …"
+    },
+    {
+      "title": "Nike (NKE) Stock Price Looks Fair After Multi‑Year Slide And DCF Check",
+      "url": "https://uk.finance.yahoo.com/news/nike-nke-stock-price-looks-232133114.html",
+      "snippet": "Jun 17, 2026 · If you are wondering whether NIKE stock offers good value at today's price, the key is understanding what the current …"
+    },
+    {
+      "title": "NIKE, Inc. (NKE.TO) Stock Price, News, Quote & History - Yahoo Finance",
+      "url": "https://ca.finance.yahoo.com/quote/NKE.TO/",
+      "snippet": "Mar 26, 2026 · Find the latest NIKE, Inc. (NKE.TO) stock quote, history, news and other vital information to help you with your stock …"
+    },
+    {
+      "title": "These US Stocks Are Trading Near 52-Week Lows — Are They A Buy?",
+      "url": "https://sg.finance.yahoo.com/news/us-stocks-trading-near-52-233000745.html",
+      "snippet": "May 3, 2026 · Stocks near 52-week lows can signal risk — or opportunity. Here’s how to evaluate three beaten-down US companies …"
+    }
+  ]
+}

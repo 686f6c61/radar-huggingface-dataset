@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "yinita/ps4mas-0911-judge-sft-qwen-lora",
+  "slug": "yinita-ps4mas-0911-judge-sft-qwen-lora",
+  "author": "yinita",
+  "url": "https://huggingface.co/yinita/ps4mas-0911-judge-sft-qwen-lora",
+  "created_at": "2026-09-11T12:46:27.000Z",
+  "updated_at": "2026-09-11T12:53:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "llama-factory",
+    "lora",
+    "transformers",
+    "ps4mas",
+    "safety-judge",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193177837,
+  "storage_human": "193 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dawit - Vorname für Jungen | Bedeutung, Verbreitung, Sozialprestige ...",
+      "url": "https://vornamen.blog/Dawit",
+      "snippet": "Dawit ist ein männlicher Vorname. Dawit - nur einer von 100.000! Ein Junge mit dem Namen Dawit hat in einer mittelgroßen Stadt …"
+    },
+    {
+      "title": "Dawit - Bedeutung, Herkunft, Namenstag",
+      "url": "https://www.babyvornamen.at/details?vorname=Dawit",
+      "snippet": "Dawit - männlicher Vorname: Bedeutung, Herkunft, Namenstag und berühmte Persönlichkeiten mit diesem Namen."
+    },
+    {
+      "title": "Dawit – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Dawit",
+      "snippet": "Dawit ist als eine Form des Namens David ein u. a. amharischer männlicher Vorname, der insbesondere in Äthiopien, Eritrea, …"
+    },
+    {
+      "title": "Dawit - Georgischer männlicher Vorname - vornamen.swissmom.ch",
+      "url": "https://vornamen.swissmom.ch/dawit/",
+      "snippet": "Dawit ist als eine Form des Namens David ein u. a. amharischer Vorname, der insbesondere in Äthiopien, Eritrea, Armenien und …"
+    },
+    {
+      "title": "Vorname-Geschlecht-Zuordnung - albertmartin.de",
+      "url": "https://www.albertmartin.de/vornamen/maenner/",
+      "snippet": "Ordnen Sie Vornamen in Ihrer Exceltabelle oder einem anderen Dokument automatisch das passende Geschlecht zu, um diese …"
+    }
+  ]
+}

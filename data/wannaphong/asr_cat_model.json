@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "wannaphong/asr_cat_model",
+  "slug": "wannaphong-asr_cat_model",
+  "author": "wannaphong",
+  "url": "https://huggingface.co/wannaphong/asr_cat_model",
+  "created_at": "2026-09-11T18:04:33.000Z",
+  "updated_at": "2026-09-11T18:07:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 482634967,
+  "storage_human": "483 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orologi e Passioni",
+      "url": "https://orologi.forumfree.it/",
+      "snippet": "Sep 3, 2026 · 11) orologi.forumfree.it e l'Amministrazione del Forum si riservano anche il diritto di rivelare l'IP dell'autore di un …"
+    },
+    {
+      "title": "Buone Feste - orologi.forumfree.it",
+      "url": "https://orologi.forumfree.it/?t=5952415",
+      "snippet": "1) Un pensiero (piuttosto noto e assai bello) di Madre Teresa di Calcutta:. .L'onestà e la sincerità ti rendono vulnerabile:.non importa, sii"
+    },
+    {
+      "title": "Buon Halloween - orologi.forumfree.it",
+      "url": "https://orologi.forumfree.it/?t=11894984",
+      "snippet": "Apr 11, 2006 · Proprio belline! grande OP! Molto bella.......... ma sei un po' in ritardo o sbaglio???????"
+    },
+    {
+      "title": "Nuova Hyundai Tucson - orologi.forumfree.it",
+      "url": "https://orologi.forumfree.it/?t=4031236",
+      "snippet": "Oct 7, 2005 · Share . -Heric- Posted on 9/7/2005, 08:46 . User deleted Attached Image"
+    },
+    {
+      "title": "Ma sti Sfizzeri....... - orologi.forumfree.it",
+      "url": "https://orologi.forumfree.it/?t=41290943",
+      "snippet": "ma i costruttori di orologi usano veramente il meglio che la tecnologia dei materiali odierna offre?? es. cassa in acciaio mos 8.... molle …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Selvauma/hc-na-interface-deepmd",
+  "slug": "selvauma-hc-na-interface-deepmd",
+  "author": "Selvauma",
+  "url": "https://huggingface.co/Selvauma/hc-na-interface-deepmd",
+  "created_at": "2026-09-11T16:15:53.000Z",
+  "updated_at": "2026-09-11T16:26:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepmd-kit",
+    "molecular-dynamics",
+    "interatomic-potential",
+    "materials-science",
+    "battery-materials",
+    "sodium-ion-battery",
+    "hard-carbon-anode",
+    "sei",
+    "electrode-electrolyte-interface",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 610453441,
+  "storage_human": "610 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Among Us - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.innersloth.spacemafia&hl=en-US",
+      "snippet": "Aug 10, 2026 · Join your crewmates in a multiplayer game of teamwork and betrayal!"
+    },
+    {
+      "title": "Among Us - Download",
+      "url": "https://among-us.en.softonic.com/",
+      "snippet": "Nov 26, 2024 · Jumping into Among Us is effortless yet layered, with cross‑platform multiplayer and customizable settings for varied …"
+    },
+    {
+      "title": "Among Us on Steam",
+      "url": "https://store.steampowered.com/app/945360/among_us/",
+      "snippet": "Play with 4-15 player online or via local WiFi as you attempt to prepare your spaceship for departure, but beware as one or more …"
+    },
+    {
+      "title": "Download Among Us (free) for Windows, Android, APK and iOS",
+      "url": "https://gizmodo.com/download/among-us",
+      "snippet": "Aug 18, 2026 · Among Us is a multiplayer social deduction game developed by InnerSloth that became a global phenomenon thanks …"
+    },
+    {
+      "title": "Play Among Us Online for free on mobile and PC - Gamepix",
+      "url": "https://www.gamepix.com/play/among-us",
+      "snippet": "Sep 22, 2020 · Play Among Us instantly online for free in your browser with Gamepix. Join as a crewmate or an impostor in Among …"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "necrasov-ilya/AliceAI-T5-35B-A0.6B-MPS-ExpertInt8",
+  "slug": "necrasov-ilya-aliceai-t5-35b-a0-6b-mps-expertint8",
+  "author": "necrasov-ilya",
+  "url": "https://huggingface.co/necrasov-ilya/AliceAI-T5-35B-A0.6B-MPS-ExpertInt8",
+  "created_at": "2026-09-11T18:02:04.000Z",
+  "updated_at": "2026-09-11T18:06:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "apple-silicon",
+    "mps",
+    "moe",
+    "int8",
+    "document-extraction",
+    "ru",
+    "base_model:yandex/AliceAI-T5-35B-A0.6B",
+    "base_model:quantized:yandex/AliceAI-T5-35B-A0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "yandex/AliceAI-T5-35B-A0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zugriff auf Inhalte und Funktionen mit Altersbeschränkung",
+      "url": "https://support.google.com/accounts/answer/10071085?hl=de",
+      "snippet": "Für einige Inhalte und Dienste gilt ein Mindestalter. Wenn Sie auf Inhalte oder Dienste mit Altersbeschränkung zugreifen möchten, …"
+    }
+  ]
+}

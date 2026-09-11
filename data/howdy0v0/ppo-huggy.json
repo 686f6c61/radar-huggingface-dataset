@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Howdy0V0/ppo-Huggy",
+  "slug": "howdy0v0-ppo-huggy",
+  "author": "Howdy0V0",
+  "url": "https://huggingface.co/Howdy0V0/ppo-Huggy",
+  "created_at": "2026-09-11T12:49:38.000Z",
+  "updated_at": "2026-09-11T12:49:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187554135,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Our Disney Hotels - Disneyland Paris",
+      "url": "https://www.disneylandparis.com/en-gb/disney-hotels",
+      "snippet": "Nov 15, 2018 · Our themed hotels Each Disney Hotel immerses you in an iconic theme with its own magical tale to tell. Wonderful …"
+    },
+    {
+      "title": "Disney Hotels, Nature resorts and partners | Disneyland Paris",
+      "url": "https://www.disneylandparis.com/en-gb/hotels",
+      "snippet": "Find the perfect place to stay for your trip. Choose from one of our six Disney Hotels, two Nature Resorts or one of our partner hotels."
+    },
+    {
+      "title": "Our Disney Park tickets - Disneyland Paris",
+      "url": "https://tickets.disneylandparis.com/en-usd/tickets",
+      "snippet": "Explore our range of Disney Park tickets and choose the one that's right for you, from 1-4 days, one or both Disney Parks, and more!"
+    },
+    {
+      "title": "Disney Hotels & Resort • DisneylandParis News",
+      "url": "https://news.disneylandparis.com/en/disney-hotels-resort/",
+      "snippet": "Discovering our Hotels a unique Disney holiday experience at Disneyland® Paris A stay in one of the Disney Hotels at Disneyland® …"
+    },
+    {
+      "title": "Disneyland Paris to Introduce the Royally Reimagined Five-Star ...",
+      "url": "https://news.disneylandparis.com/en/disneyland-paris-to-introduce-the-royally-reimagined-5-star-disneyland-hotel/",
+      "snippet": "Sep 12, 2023 · Reimagining as Part of a Global Transformation Disneyland Paris is going through an unprecedented transformation, …"
+    }
+  ]
+}

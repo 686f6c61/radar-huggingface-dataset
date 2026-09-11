@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_keep50_gap_b001",
+  "slug": "jeesup-svd-safety-l31_keep50_gap_b001",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_keep50_gap_b001",
+  "created_at": "2026-09-11T15:10:11.000Z",
+  "updated_at": "2026-09-11T15:12:57.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "新手必看：SCI、JCR分区、中科院SCI分区都是什么？该如何查询期刊在 …",
+      "url": "https://www.zhihu.com/question/639871082",
+      "snippet": "影响因子位于25-50%为Q2区； 影响因子位于50-75%为Q3区； 影响因子位于75%之后的期刊为Q4区。 2.中科院分区 中科院首先 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "佳能「Canon」打印机清零工具合集",
+      "url": "https://www.zhihu.com/tardis/zm/art/650955082",
+      "snippet": "日常办公生活中，经常会用到打印机，而对于打印机，在使用一段年限之后，经常会出现需要清零的问题，在这里给大家分享一下佳能 …"
+    },
+    {
+      "title": "目前有什么可以本地部署的大模型推荐? - 知乎",
+      "url": "https://www.zhihu.com/question/648879790",
+      "snippet": "由上图可看到，通过modelscope也可以几乎下载所有开源大模型，包括零一万物、百川、通义千问等等。 比如chatglm2-6b，代表它 …"
+    }
+  ]
+}

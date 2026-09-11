@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EDP-Datty/IA",
+  "slug": "edp-datty-ia",
+  "author": "EDP-Datty",
+  "url": "https://huggingface.co/EDP-Datty/IA",
+  "created_at": "2026-09-11T16:49:42.000Z",
+  "updated_at": "2026-09-11T16:49:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forums Enseignants du primaire",
+      "url": "https://forums-enseignants-du-primaire.com/",
+      "snippet": "LES FORUMS DES PARENTS D'ELEVES DEVENIR PROFESSEUR DES ECOLES"
+    },
+    {
+      "title": "Área de cliente EDP",
+      "url": "https://login.edp.pt/",
+      "snippet": ""
+    },
+    {
+      "title": "Área de cliente EDP",
+      "url": "https://particulares.cliente.edp.pt/",
+      "snippet": "Faça a gestão do seu contrato EDP onde e quando quiser. Aceda aos seus planos de energia, envie as leituras de eletricidade e …"
+    },
+    {
+      "title": "Homepage EDP | edp",
+      "url": "https://edp.com/",
+      "snippet": "To celebrate its 50th anniversary, EDP challenged employees and partners around the world to dedicate their time and skills to local …"
+    },
+    {
+      "title": "Energia e Soluções para a Sua Casa | EDP",
+      "url": "https://www.edp.pt/particulares/",
+      "snippet": "Conheça todos os serviços da EDP para particulares: eletricidade, gás, mobilidade elétrica, app EDP, faturas e apoio ao cliente."
+    }
+  ]
+}

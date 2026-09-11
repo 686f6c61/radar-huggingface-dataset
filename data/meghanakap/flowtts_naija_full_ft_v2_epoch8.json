@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MeghanaKap/flowtts_naija_full_ft_v2_epoch8",
+  "slug": "meghanakap-flowtts_naija_full_ft_v2_epoch8",
+  "author": "MeghanaKap",
+  "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch8",
+  "created_at": "2026-09-11T12:41:27.000Z",
+  "updated_at": "2026-09-11T12:42:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:YatharthS/MiraTTS",
+    "base_model:finetune:YatharthS/MiraTTS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505882368,
+  "parameters_human": "505.9M",
+  "storage_bytes": 2037654772,
+  "storage_human": "2.0 GB",
+  "base_model": "YatharthS/MiraTTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Google Drive",
+      "url": "https://drive.google.com/drive/u/0/my-drive",
+      "snippet": "Sign in to Google Drive to access, store, and share your files securely from anywhere."
+    },
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://drive.google.com/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Login - Google Drive",
+      "url": "https://drive.google.com/drive/my-drive?hl=id",
+      "snippet": "Akses Google Drive dengan Akun Google (untuk penggunaan pribadi) atau Akun Google Workspace (untuk penggunaan bisnis)."
+    },
+    {
+      "title": "Sign in - Google Drive",
+      "url": "https://drive.google.com/drive/home",
+      "snippet": "Sign in to Google Drive with your Google account for personal or business use and access secure cloud storage and file-sharing …"
+    },
+    {
+      "title": "تسجيل الدخول - Google Drive",
+      "url": "https://drive.google.com/drive/my-drive?hl=ar",
+      "snippet": "يمكنك الوصول إلى Google Drive باستخدام حساب على Google (للاستخدام الشخصي) أو حساب على Google Workspace (للاستخدام التجاري)."
+    }
+  ]
+}

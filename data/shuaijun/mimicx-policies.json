@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shuaijun/MimicX-Policies",
+  "slug": "shuaijun-mimicx-policies",
+  "author": "Shuaijun",
+  "url": "https://huggingface.co/Shuaijun/MimicX-Policies",
+  "created_at": "2026-09-11T17:02:59.000Z",
+  "updated_at": "2026-09-11T17:02:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Where to Stay in Madrid: Complete 2026 Guide",
+      "url": "https://www.madridtourism.org/where-to-stay-in-madrid/",
+      "snippet": "Sep 2, 2026 · What is the best area to stay in Madrid for first-time visitors? Barrio de las Letras is the best all-round choice — it’s …"
+    },
+    {
+      "title": "6 Best Areas to Stay in Madrid: A Madrid Neighborhood Guide",
+      "url": "https://thespaintravelguru.com/best-area-to-stay-in-madrid/",
+      "snippet": "Apr 13, 2023 · Choosing where to stay in Madrid will depend on your budget, how you want to spend your time, and your travel style. …"
+    },
+    {
+      "title": "Best Areas to Stay in Madrid (Safe Districts Ranked 2026)",
+      "url": "https://safedistricts.com/where-to-stay-madrid",
+      "snippet": "Discover where to stay in Madrid. Compare districts, avoid unsafe zones, and choose the best place using our interactive map."
+    },
+    {
+      "title": "Where to Stay in Madrid (Updated 2026) - nomadicmick.com",
+      "url": "https://www.nomadicmick.com/where-to-stay-in-madrid/",
+      "snippet": "Jun 27, 2026 · Wondering where to stay in Madrid? Check out my guide to the best neighbourhoods in Madrid along with …"
+    },
+    {
+      "title": "Where to Stay Madrid: Best Neighborhoods Guide 2026",
+      "url": "https://madridallincluded.com/where-to-stay-madrid-neighborhoods/",
+      "snippet": "Mar 8, 2026 · Where should I stay in Madrid for the first time? First-time visitors should stay in Sol/Centro for maximum convenience …"
+    }
+  ]
+}

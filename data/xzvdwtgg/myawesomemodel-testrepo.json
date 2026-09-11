@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "XZVDWTGG/MyAwesomeModel-TestRepo",
+  "slug": "xzvdwtgg-myawesomemodel-testrepo",
+  "author": "XZVDWTGG",
+  "url": "https://huggingface.co/XZVDWTGG/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T14:07:21.000Z",
+  "updated_at": "2026-09-11T14:07:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Karls Erlebnis-Dorf Oberhausen",
+      "url": "https://karls.de/oberhausen/",
+      "snippet": "Karls Erlebnis-Dorf Oberhausen ️ Neuer Freizeitpark am Centro mit Attraktionen, Gastronomie & Spaß für die ganze Familie. Hier …"
+    },
+    {
+      "title": "Karls Erlebnis-Dorf Oberhausen",
+      "url": "https://www.oberhausen-tourismus.de/poi/karls-erlebnis-dorf-oberhausen/",
+      "snippet": "Es darf sich auf alles gefreut werden, was Karls Erlebnis-Dorf so besonders macht: kostenlose Abenteuer, hausgemachte …"
+    },
+    {
+      "title": "Karls Erlebnisdorf Oberhausen: DAS musst du vor deinem Besuch …",
+      "url": "https://www.derwesten.de/staedte/oberhausen/karls-erlebnisdorf-oberhausen-alle-infos-eroeffnung-preise-kostenlose-aktivitaeten-centro-a-id302097835.html",
+      "snippet": "Jul 21, 2026 · Wir verraten dir, wann Karls Erlebnisdorf in Oberhausen öffnet, welche Preise für Tages- und Jahreskarten gelten und …"
+    },
+    {
+      "title": "Oberhausen - karls.de",
+      "url": "https://karls.de/anfahrt/oberhausen/",
+      "snippet": "Ob aus dem Ruhrgebiet oder von weiter weg – der Weg in unser Karls Erlebnis-Dorf Oberhausen ist kinderleicht! Direkt am Westfield …"
+    },
+    {
+      "title": "Karls Erlebnisdorf Oberhausen: DAS musst du vor deinem Besuch …",
+      "url": "https://stage.derwesten.de/staedte/oberhausen/karls-erlebnisdorf-oberhausen-alle-infos-eroeffnung-preise-kostenlose-aktivitaeten-centro-a-id302097835.html",
+      "snippet": "Jul 21, 2026 · Mit dem neuen Karls Erlebnisdorf Oberhausen entsteht einer der spannendsten Freizeitparks für Familien in Nordrhein …"
+    }
+  ]
+}

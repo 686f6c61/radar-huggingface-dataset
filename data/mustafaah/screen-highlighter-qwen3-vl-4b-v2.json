@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "mustafaah/screen-highlighter-qwen3-vl-4b-v2",
+  "slug": "mustafaah-screen-highlighter-qwen3-vl-4b-v2",
+  "author": "mustafaah",
+  "url": "https://huggingface.co/mustafaah/screen-highlighter-qwen3-vl-4b-v2",
+  "created_at": "2026-09-11T16:13:58.000Z",
+  "updated_at": "2026-09-11T16:13:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer login no Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt-br&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer login No seu computador, acesse gmail.com. Insira seu número de telefone ou e-mail da Conta do Google e a senha. Se as …"
+    },
+    {
+      "title": "Accedere a Gmail - Computer - Guida di Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Accedere a Gmail Per aprire Gmail, puoi accedere da un computer o aggiungere il tuo account all'app Gmail sul tuo telefono o tablet. …"
+    },
+    {
+      "title": "Can't sign into Gmail on new iPhone - Apple Community",
+      "url": "https://discussions.apple.com/thread/255403865",
+      "snippet": "May 10, 2024 · Hi i have an issue regarding my gmail account I recently changed my iphone and sold my previous phone also i make …"
+    },
+    {
+      "title": "Gmail login prompt on youtube app - Apple Community",
+      "url": "https://discussions.apple.com/thread/254817395",
+      "snippet": "Apr 25, 2023 · Gmail login prompt on youtube app I am trying to login gmail on my PC and there for login gmail is saying that we …"
+    },
+    {
+      "title": "Use another email to sign in to your Google Account",
+      "url": "https://support.google.com/accounts/answer/176347?co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Ads: If you use your other email to use Google Ads, both your Gmail and other email address show up. Remove your email …"
+    }
+  ]
+}

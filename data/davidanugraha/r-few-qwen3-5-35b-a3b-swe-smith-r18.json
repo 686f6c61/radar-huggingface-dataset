@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "davidanugraha/R-Few-Qwen3.5-35B-A3B-SWE-Smith-r18",
+  "slug": "davidanugraha-r-few-qwen3-5-35b-a3b-swe-smith-r18",
+  "author": "davidanugraha",
+  "url": "https://huggingface.co/davidanugraha/R-Few-Qwen3.5-35B-A3B-SWE-Smith-r18",
+  "created_at": "2026-09-11T15:17:49.000Z",
+  "updated_at": "2026-09-11T15:21:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "verl",
+    "grpo",
+    "rloo",
+    "qwen3.5",
+    "swe-smith",
+    "r-few",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.5-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99060715798,
+  "storage_human": "99.1 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fascicolo Sanitario Elettronico",
+      "url": "http://www.fascicolo-sanitario.it/",
+      "snippet": "Sei un nuovo utente? Vedi come fare per accedere."
+    },
+    {
+      "title": "Login",
+      "url": "https://www.fascicolo-sanitario.it/fse/?2",
+      "snippet": "Sei un nuovo utente? Vedi come fare per accedere."
+    },
+    {
+      "title": "Fascicolo Sanitario Elettronico",
+      "url": "https://iam7pe.fse.salute.gov.it/sam/XUI/?realm=%2Ffse",
+      "snippet": "IAM Fascicolo Sanitario Elettronico Login"
+    },
+    {
+      "title": "Fascicolo Sanitario Elettronico 2.0 - Salute",
+      "url": "https://salute.regione.emilia-romagna.it/fascicolo-sanitario-elettronico-2-0",
+      "snippet": "Accesso e assistenza al Fascicolo Sanitario Elettronico della Regione Emilia-Romagna Puoi accedere al tuo FSE da PC o dispositivo …"
+    },
+    {
+      "title": "Servizi on line - Fascicolo Sanitario Elettronico",
+      "url": "https://www.fascicolo-sanitario.it/fse/servizionline",
+      "snippet": "I Servizi Sanitari online realizzati dalla Regione Emilia-Romagna sono integrati nel Fascicolo Sanitario Elettronico, rendendo molto …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "thebnbrkr/titans-marv-enwik8",
+  "slug": "thebnbrkr-titans-marv-enwik8",
+  "author": "thebnbrkr",
+  "url": "https://huggingface.co/thebnbrkr/titans-marv-enwik8",
+  "created_at": "2026-09-11T15:27:01.000Z",
+  "updated_at": "2026-09-11T15:27:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "titans",
+    "test-time-memory",
+    "marv",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1523545,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl lohnt sich - Lokal bei Dir vor Ort und Online",
+      "url": "https://www.lidl.de/?msockid=18a685c0ef916bad0f549211eec46a4e",
+      "snippet": "Im Onlineshop von Lidl kannst du dir die aktuellen Wochenangebote schon früher sichern und direkt zu dir nach Hause bestellen! …"
+    },
+    {
+      "title": "Onlineshop Deals - LIDL",
+      "url": "https://www.lidl.de/c/onlineshop-deals/a10049942?msockid=18a685c0ef916bad0f549211eec46a4e",
+      "snippet": "Der 5 € Coupon ist am Montag nach der Bezahlung mit Wero in der Lidl Plus App verfügbar, ist zwei Monate gültig und kann einmalig …"
+    },
+    {
+      "title": "Aktuelle Neuheiten im Lidl Onlineshop - Lidl.de",
+      "url": "https://www.lidl.de/q/query/neubeilidl?msockid=18a685c0ef916bad0f549211eec46a4e",
+      "snippet": "Neu bei Lidl.de: Tolle Angebote Faire Preise 90 Tage Rückgaberecht Bestellen Sie jetzt günstig im Lidl Onlineshop!"
+    },
+    {
+      "title": "Prospekte bei Lidl: Unsere Aktionsprospekte jetzt online- Lidl.de",
+      "url": "https://www.lidl.de/c/online-prospekte/s10005610?msockid=18a685c0ef916bad0f549211eec46a4e",
+      "snippet": "Aug 12, 2026 · Angebote und Prospekte – Online bei LIDL. Hier findest du tolle Angebote & faire Preise und verpasst keine Aktion …"
+    },
+    {
+      "title": "Lidl Supersale: Top Angebote, top reduziert - jetzt zugreifen!",
+      "url": "https://www.lidl.de/q/query/supersale?msockid=18a685c0ef916bad0f549211eec46a4e",
+      "snippet": "Supersale bei Lidl.de: Tolle Angebote Faire Preise 90 Tage Rückgaberecht Bestellen Sie jetzt günstig im Lidl Onlineshop!"
+    }
+  ]
+}

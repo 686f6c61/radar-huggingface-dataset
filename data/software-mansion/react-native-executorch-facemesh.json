@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "software-mansion/react-native-executorch-facemesh",
+  "slug": "software-mansion-react-native-executorch-facemesh",
+  "author": "software-mansion",
+  "url": "https://huggingface.co/software-mansion/react-native-executorch-facemesh",
+  "created_at": "2026-09-11T15:32:35.000Z",
+  "updated_at": "2026-09-11T15:33:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "keypoint-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4021383,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Software - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Software",
+      "snippet": "Software quality assurance and security are critical aspects of software development, as bugs and security vulnerabilities can lead to …"
+    },
+    {
+      "title": "Software Download - microsoft.com",
+      "url": "https://www.microsoft.com/en-us/software-download/?msockid=0d1e2a37075e613b19ff3de606c5603c",
+      "snippet": "Skip to main content Software Download Windows 11 Windows 11 for Arm Windows 10 Windows 8.1 Windows 7 Media Feature Pack …"
+    },
+    {
+      "title": "Logiciel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Logiciel",
+      "snippet": "Le mot anglais software (en français : logiciel) était à l'origine utilisé pour désigner tout ce qui est immatériel dans un ordinateur : des …"
+    },
+    {
+      "title": "Download software for Windows - Softonic",
+      "url": "https://en.softonic.com/windows",
+      "snippet": "Download software for Windows. Download CapCut, VidMate, VLC media player and more"
+    },
+    {
+      "title": "Téléchargement du logiciel - microsoft.com",
+      "url": "https://www.microsoft.com/fr-fr/software-download/?msockid=0d1e2a37075e613b19ff3de606c5603c",
+      "snippet": "Passer directement au contenu principal Téléchargement de logiciels Windows 11 Windows 11 for Arm Windows 10 Windows 8.1 …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mohanli/TP-CLAP",
+  "slug": "mohanli-tp-clap",
+  "author": "mohanli",
+  "url": "https://huggingface.co/mohanli/TP-CLAP",
+  "created_at": "2026-09-11T10:35:13.000Z",
+  "updated_at": "2026-09-11T10:41:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2630942293,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ταξινόμηση οχήματος - Gov.gr",
+      "url": "https://www.gov.gr/el/services/1001581/taxinomese-okhematos",
+      "snippet": "Το ενιαίο ψηφιακό πιστοποιητικό ταξινόμησης οχήματος αφορά όλες τις κατηγορίες οχημάτων και εκδίδεται από τελωνειακή αρχή."
+    },
+    {
+      "title": "Ψηφιακά Πισ οποιη ικά Ταξινόμησης Οχημά ων",
+      "url": "https://drivers-vehicles.services.gov.gr/content/manual-vehicle-registrations.pdf",
+      "snippet": "Ταξινόμησης για όλες τις κατηγορίες οχημάτων. Τα πιστοποιητικά ταξινόμησης εκδίδονται από τις τελωνειακές αρχές και …"
+    },
+    {
+      "title": "Κτηματολόγιο | Αιτήσεις έκδοσης πιστοποιητικών",
+      "url": "https://www.ktimatologio.gr/e-services/12",
+      "snippet": "Για να παραγγείλετε πιστοποιητικά, υποβάλετε αίτηση ηλεκτρονικά με χρήση κωδικών taxisnet. Μετά την πληρωμή θα τα παραλάβετε …"
+    },
+    {
+      "title": "Ταξινόμηση καινούριου ή μεταχειρισμένου οχήματος - Gov.gr",
+      "url": "https://www.gov.gr/sdg/vehicles/taking-motor-vehicle-temporarily-or-permanently/vehicle-registration/information-about-procedures-relating-to-registration-of-new-or-second-hand-vehicle",
+      "snippet": "Jun 1, 2022 · Μετά την καταβολή των φορολογικών επιβαρύνσεων, εκδίδεται πιστοποιητικό ταξινόμησης που χρησιμοποιείται στις …"
+    },
+    {
+      "title": "ΑΑΔΕ: Ψηφιακό το ενιαίο Πιστοποιητικό Ταξινόμησης",
+      "url": "https://cityportal.gr/aade-psifiako-to-eniaio-pistopoiitiko-taxinomisis/",
+      "snippet": "Jun 19, 2023 · Ψηφιακά μπορούν να λαμβάνουν πολίτες και επιχειρήσεις το ενιαίο πιστοποιητικό ταξινόμησης που εκδίδουν οι …"
+    }
+  ]
+}

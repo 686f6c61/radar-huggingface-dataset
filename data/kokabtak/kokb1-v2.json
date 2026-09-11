@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kokabtak/kokb1-v2",
+  "slug": "kokabtak-kokb1-v2",
+  "author": "kokabtak",
+  "url": "https://huggingface.co/kokabtak/kokb1-v2",
+  "created_at": "2026-09-11T12:21:24.000Z",
+  "updated_at": "2026-09-11T12:23:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "persian",
+    "farsi",
+    "multilingual",
+    "deepseek",
+    "chatbot",
+    "web-search",
+    "kokabtak",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Voiture occasion - annonces automobiles de particuliers et …",
+      "url": "https://www.leboncoin.fr/c/voitures",
+      "snippet": "Consultez nos annonces de voitures d’occasion toutes marques : citadines, SUV, berlines, électriques, hybrides. Plus de 700 000 …"
+    },
+    {
+      "title": "Immobilier neuf Rhône Alpes",
+      "url": "https://immobilierneuf.leboncoin.fr/immobilier-neuf/appartement+maison+terrain/a/rhone-alpes/",
+      "snippet": "Septembre 2026 - Avec leboncoin, découvrez 1144 programmes immobiliers pour habiter, investir ou défiscaliser dans la région …"
+    },
+    {
+      "title": "Rhône-Alpes - leboncoin",
+      "url": "https://www.leboncoin.fr/l/rp_rhone-alpes",
+      "snippet": "Toutes nos annonces gratuites Rhône-Alpes. Consultez nos 9219018 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "Locations immobilières - leboncoin",
+      "url": "https://www.leboncoin.fr/c/locations",
+      "snippet": "Consultez nos annonces de locations sur leboncoin. Saint-Brieuc 22000 Ville Hellio - Tour d'Auvergne - Ville Jouha"
+    }
+  ]
+}

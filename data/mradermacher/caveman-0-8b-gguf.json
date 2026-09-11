@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Caveman-0.8B-GGUF",
+  "slug": "mradermacher-caveman-0-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Caveman-0.8B-GGUF",
+  "created_at": "2026-09-11T10:38:17.000Z",
+  "updated_at": "2026-09-11T11:32:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "en",
+    "base_model:CrowdMind/Caveman-0.8B",
+    "base_model:quantized:CrowdMind/Caveman-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 7956105280,
+  "storage_human": "8.0 GB",
+  "base_model": "CrowdMind/Caveman-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'Été (Albert Camus) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/L%27%C3%89t%C3%A9_(Albert_Camus)",
+      "snippet": "L'Été est un essai d' Albert Camus qui dépeint l' Algérie telle qu'il l'a connue et en particulier la ville d' Oran. Il est publié pour la …"
+    },
+    {
+      "title": "Summer (L’Eté) Albert Camus Summer (L’Eté - thephilosopher.net",
+      "url": "https://thephilosopher.net/camus/wp-content/uploads/sites/94/2024/11/Summer-LEte-Albert-Camus.pdf",
+      "snippet": "cluded in L’Eté in 1954 cover a much wider period. As his own note to page 109 indicates, he began writing Le Minotaur ou la Halte …"
+    },
+    {
+      "title": "L'Ete : Albert Camus : Free Download, Borrow, and Streaming : Internet ...",
+      "url": "https://archive.org/details/lete0000albe",
+      "snippet": "Jan 22, 2023 · Renews automatically with continued use. No suitable files to display here."
+    },
+    {
+      "title": "L’Été (1954) - Société des Études camusiennes",
+      "url": "https://www.etudes-camusiennes.fr/lete-1954/",
+      "snippet": "C’est bien dans le prolongement de Noces que le « Prière d’insérer » situe ce nouveau recueil. « La seule évolution que l’on puisse y …"
+    },
+    {
+      "title": "L'été - data.bnf.fr",
+      "url": "https://data.bnf.fr/fr/ark:/12148/cb18062679x.pdf",
+      "snippet": "Albert Camus (1913-1960) ... Détails du contenu (17 ressources dans data.bnf.fr) Voir l'arborescence de l'œuvre (9) <built-in method …"
+    }
+  ]
+}

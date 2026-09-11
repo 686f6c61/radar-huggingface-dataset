@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/ScizorES",
+  "slug": "ryanham1lton-scizores",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/ScizorES",
+  "created_at": "2026-09-11T17:15:39.000Z",
+  "updated_at": "2026-09-11T17:17:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119442360,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Use a security key for 2-Step Verification - Google Help",
+      "url": "https://support.google.com/accounts/answer/6103523?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Security keys can be used with 2-Step Verification to help you keep hackers out of your Google Account. Your security key can help …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en-IN&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, download the installation file. To install the file, follow the on-screen instructions. If you get the message 'Do you …"
+    },
+    {
+      "title": "Accedere a Gmail - Computer - Guida di Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Accedere a Gmail Suggerimento: se accedi su un computer pubblico, assicurati di uscire prima di spegnerlo. Scopri come eseguire …"
+    },
+    {
+      "title": "ดาวน์โหลดและติดตั้ง Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=th-TH&co=GENIE.Platform%3DDesktop",
+      "snippet": "คุณสามารถดาวน์โหลดและติดตั้งเว็บเบราว์เซอร์ Chrome ได้โดยไม่ ..."
+    },
+    {
+      "title": "Google One Help",
+      "url": "https://support.google.com/googleone/?hl=en",
+      "snippet": "Official Google One Help Center where you can find tips and tutorials on using Google One and other answers to frequently asked …"
+    }
+  ]
+}

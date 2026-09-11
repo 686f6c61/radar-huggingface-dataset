@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "vrhvnsky/Qwen3-0.6B-heretic-decensored",
+  "slug": "vrhvnsky-qwen3-0-6b-heretic-decensored",
+  "author": "vrhvnsky",
+  "url": "https://huggingface.co/vrhvnsky/Qwen3-0.6B-heretic-decensored",
+  "created_at": "2026-09-11T18:01:55.000Z",
+  "updated_at": "2026-09-11T18:16:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "conversational",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657785,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapchat - Say It In A Snap",
+      "url": "https://www.snapchat.com/",
+      "snippet": "Chat, send Snaps, explore Stories, and try Lenses on desktop, or download the app on mobile! See how to connect & create with …"
+    },
+    {
+      "title": "Download | Snapchat",
+      "url": "https://www.snapchat.com/download",
+      "snippet": "Snapchat lets you easily talk with friends, view Stories from around the world, and explore news in Discover. Life's more fun when …"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login?locale=nl-NL",
+      "snippet": "Log in bij Snapchat om je account te beheren, vrienden te bellen en te chatten via de webversie."
+    },
+    {
+      "title": "Snapchat - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.snapchat.android&hl=en",
+      "snippet": "Snapchat is a fast and fun way to share the moment with your friends and family 👻 SNAP • Snapchat opens right to the Camera — just …"
+    }
+  ]
+}

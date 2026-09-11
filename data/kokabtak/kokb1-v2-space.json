@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kokabtak/kokb1-v2-space",
+  "slug": "kokabtak-kokb1-v2-space",
+  "author": "kokabtak",
+  "url": "https://huggingface.co/kokabtak/kokb1-v2-space",
+  "created_at": "2026-09-11T12:21:57.000Z",
+  "updated_at": "2026-09-11T12:21:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "persian",
+    "farsi",
+    "multilingual",
+    "deepseek",
+    "chatbot",
+    "web-search",
+    "kokabtak",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PGA Tour - Tournament Schedule",
+      "url": "https://www.pgatour.com/schedule",
+      "snippet": "Schedule Official TOUR Championship 1 S. Scheffler Tot-16R4-4 -16 1 S. Scheffler Tot-16R4-4 2 V. Hovland Tot-13R4+2 -13 2 V. …"
+    },
+    {
+      "title": "PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
+      "url": "https://www.pgatour.com/",
+      "snippet": "The official web site of the PGA TOUR. Providing the only Real-Time Live Scoring for the PGA TOUR, Champions Tour and Korn …"
+    },
+    {
+      "title": "PGA TOUR Scores and Leaderboards – ESPN",
+      "url": "https://www.espn.com/golf/leaderboard/_/tour/pga",
+      "snippet": "Find the complete PGA TOUR results from the 2026 season, including live coverage for every tournament."
+    },
+    {
+      "title": "PGA Tour Schedule - 2026 - Golf Events, Cancellations, and ...",
+      "url": "https://www.cbssports.com/golf/schedules/",
+      "snippet": "Check out the full PGA Tour schedule, tournament locations, prize purses, and TV channel for the 2026 season"
+    },
+    {
+      "title": "PGA TOUR Schedule - 2026 Season - ESPN",
+      "url": "https://www.espn.com/golf/schedule",
+      "snippet": "Sep 17, 2020 · The complete 2026 PGA TOUR season schedule on ESPN. Includes all golf tournaments with dates and previous …"
+    }
+  ]
+}

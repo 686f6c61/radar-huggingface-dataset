@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgapiter_b010",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgapiter_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_b010",
+  "created_at": "2026-09-11T11:15:32.000Z",
+  "updated_at": "2026-09-11T11:27:24.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diretta.it: Serie A, risultati calcio in tempo reale e partite in diretta",
+      "url": "https://www.diretta.it/",
+      "snippet": "Risultati in tempo reale di calcio su Diretta dalla Serie A e altri 1000 campionati compresi Premier League, La Liga, Bundesliga, Ligue …"
+    },
+    {
+      "title": "ATP US Open 2026, Diretta.it: Tennis in tempo reale, Risultati tennis ...",
+      "url": "https://www.diretta.it/tennis/",
+      "snippet": "Risultati tennis in tempo reale su Diretta offre i risultati di tennis live più veloci dal ATP, WTA US Open 2026 e dai principali tornei del …"
+    },
+    {
+      "title": "Calcio su Diretta Mobile - risultati in tempo reale per il tuo PDA",
+      "url": "https://m.diretta.it/",
+      "snippet": "m.Diretta.it fornisce risultati di calcio in tempo reale - un livescore per cellulare. Questa versione per cellulare pero ha parametri …"
+    },
+    {
+      "title": "EuroVolley 2026, Live Volleyball Scores, Volleyball Livescore & Results",
+      "url": "https://www.diretta.it/volley/",
+      "snippet": "I professionisti della diretta sono a tua disposizione per ogni chiarimento sulla volley in tempo reale attraverso il form contatti. Segui la …"
+    },
+    {
+      "title": "Risultati Serie C - Girone C 2026/2027 in diretta, Calcio Italia ...",
+      "url": "https://www.diretta.it/calcio/italia/serie-c-girone-c/",
+      "snippet": "Risultati Serie C - Girone C 2026/2027 su Diretta.it offre livescore, risultati, classifiche Serie C - Girone C 2026/2027 e dettagli del …"
+    }
+  ]
+}

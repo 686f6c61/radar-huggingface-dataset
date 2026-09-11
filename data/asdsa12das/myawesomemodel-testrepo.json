@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDSA12DAS/MyAwesomeModel-TestRepo",
+  "slug": "asdsa12das-myawesomemodel-testrepo",
+  "author": "ASDSA12DAS",
+  "url": "https://huggingface.co/ASDSA12DAS/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T13:22:14.000Z",
+  "updated_at": "2026-09-11T13:22:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ziggo GO",
+      "url": "https://www.ziggogo.tv/nl/home",
+      "snippet": "Bekijk Ziggo GO voor persoonlijke en relevante informatie, verbeterde website-ervaringen en toegang tot entertainment met cookies."
+    },
+    {
+      "title": "Ziggo GO",
+      "url": "https://www.ziggogo.tv/en/home",
+      "snippet": "Bekijk live en on-demand tv-programma's, films en series op Ziggo GO, overal en altijd."
+    },
+    {
+      "title": "Ziggo GO",
+      "url": "https://www.ziggogo.tv/nl/watchtv",
+      "snippet": "Kijk live tv en geniet van persoonlijke, relevante informatie met Ziggo GO."
+    },
+    {
+      "title": "Ziggo GO",
+      "url": "https://www.ziggogo.tv/nl/home/login",
+      "snippet": "Log in op Ziggo GO om toegang te krijgen tot gepersonaliseerde en relevante informatie."
+    },
+    {
+      "title": "Ziggo GO",
+      "url": "https://www.ziggogo.tv/nl/epg/initial",
+      "snippet": "Bekijk live tv en ontdek persoonlijke, relevante informatie met Ziggo GO."
+    }
+  ]
+}

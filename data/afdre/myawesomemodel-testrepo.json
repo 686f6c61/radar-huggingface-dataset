@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "afdre/MyAwesomeModel-TestRepo",
+  "slug": "afdre-myawesomemodel-testrepo",
+  "author": "afdre",
+  "url": "https://huggingface.co/afdre/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T14:16:54.000Z",
+  "updated_at": "2026-09-11T14:17:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéo pas accessible depuis votre pays - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-29168048-video-pas-accessible-depuis-votre-pays",
+      "snippet": "Bonjour, Depuis quelques jours j'ai un problème pour regarder des replays sur Internet. Le message suivant apparait : \"Cette vidéo …"
+    },
+    {
+      "title": "W9, M6 replay - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-27010547-w9-m6-replay",
+      "snippet": "Bonjour à tous, J'ai un petit soucis après les pubs sur w9 et m6 replay, un code erreur : 15 apparait. Pouvez vous me dire à quoi …"
+    },
+    {
+      "title": "Regarder M6 replay sur TV Sony Bravia - Forum Cinéma / Télé",
+      "url": "https://forums.commentcamarche.net/forum/affich-17330056-regarder-m6-replay-sur-tv-sony-bravia",
+      "snippet": "Apr 11, 2010 · Le service M6 Replay reste indisponible sur le téléviseur Sony BRAVIA KDL-40EX500 malgré la mise à jour et l'accès …"
+    },
+    {
+      "title": "Comment avoir accès au replay sur ma TV Samsung",
+      "url": "https://forums.commentcamarche.net/forum/affich-33722042-comment-avoir-acces-au-replay-sur-ma-tv-samsung",
+      "snippet": "Jul 16, 2016 · Bonjour, je souhaiterais avoir le replay sur ma tv Samsung, pourtant déjà connectée à internet, mais lorsque sur M6 …"
+    },
+    {
+      "title": "M6 replay très lent - Réseaux sociaux - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-26953377-m6-replay-tres-lent",
+      "snippet": "Sujet PrécédentSujet Suivant M6 replay très lent Lauradel271- Lauradel271 - 20 janv. 2013 à 18:04 Bonjour, J'essaye depuis un …"
+    }
+  ]
+}

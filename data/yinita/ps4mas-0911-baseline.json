@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "yinita/ps4mas-0911-baseline",
+  "slug": "yinita-ps4mas-0911-baseline",
+  "author": "yinita",
+  "url": "https://huggingface.co/yinita/ps4mas-0911-baseline",
+  "created_at": "2026-09-11T11:07:19.000Z",
+  "updated_at": "2026-09-11T12:12:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accedere a Gmail - Computer - Guida di Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Accedere a Gmail Suggerimento: se accedi su un computer pubblico, assicurati di uscire prima di spegnerlo. Scopri come eseguire …"
+    },
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "Important: Before you create a new Google Account, sign out of your current account. Learn how to sign out of Gmail. From your …"
+    },
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail To open Gmail, you can sign in from a computer or add your account to the Gmail app on your phone or tablet. Once …"
+    },
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "Crea un Account Google per Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=it-IT",
+      "snippet": "Importante: prima di creare un nuovo Account Google, esci dal tuo account attuale. Scopri come uscire da Gmail. Dal dispositivo, vai …"
+    }
+  ]
+}

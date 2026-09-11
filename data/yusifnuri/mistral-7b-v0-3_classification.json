@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yusifnuri/Mistral-7B-v0.3_classification",
+  "slug": "yusifnuri-mistral-7b-v0-3_classification",
+  "author": "yusifnuri",
+  "url": "https://huggingface.co/yusifnuri/Mistral-7B-v0.3_classification",
+  "created_at": "2026-09-11T15:38:13.000Z",
+  "updated_at": "2026-09-11T15:39:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "small-language-model",
+    "enterprise-benchmark",
+    "classification",
+    "qlora",
+    "base_model:adapter:mistralai/Mistral-7B-v0.3",
+    "text-generation",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54560368,
+  "storage_human": "55 MB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite - Otto Fischer AG",
+      "url": "https://www.ottofischer.ch/",
+      "snippet": "Gratis für Sie: die exklusiven «Training kompakt» von Otto Fischer! Entdecken Sie jetzt unsere aktuellen Kurs-Angebote."
+    },
+    {
+      "title": "Startseite - Otto Fischer AG",
+      "url": "https://www.ottofischer.ch/it/",
+      "snippet": "Otto Fischer utilizza configuratori esterni dei diversi fornitori, ora accessibili direttamente nel nostro webshop tramite lo standard …"
+    },
+    {
+      "title": "www.ottofischer.com",
+      "url": "http://www.ottofischer.com/",
+      "snippet": ""
+    },
+    {
+      "title": "Otto Fischer AG - ineltec.ch",
+      "url": "https://www.ineltec.ch/de/p/otto-fischer-ag.136825",
+      "snippet": "Kurzbeschreibung Jede Menge Kompetenz seit 1899: Als kleines Unternehmen gestartet und bis heute stetig gewachsen, sind wir …"
+    },
+    {
+      "title": "Otto Fischer AG - swissolar.ch",
+      "url": "https://www.swissolar.ch/it/mitglied/detail/otto-fischer-ag-9071",
+      "snippet": "Otto Fischer AG Otto Fischer AG Aargauerstrasse 2 8010 Zürich Tel. 0442767676 p.grolimund@ottofischer.ch www.ottofischer.ch/de/"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/GLM-5.3-UNCENSORED-FP8",
+  "slug": "openintelligent123-glm-5-3-uncensored-fp8",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/GLM-5.3-UNCENSORED-FP8",
+  "created_at": "2026-09-11T15:34:57.000Z",
+  "updated_at": "2026-09-11T15:34:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "refusal-removed",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tagesschau.de - die erste Adresse für Nachrichten und Information",
+      "url": "https://www.tagesschau.de/",
+      "snippet": "1 day ago · tagesschau.de - die erste Adresse für Nachrichten und Information: An 365 Tagen im Jahr, rund um die Uhr aktualisiert - …"
+    },
+    {
+      "title": "tagesschau in 100 Sekunden",
+      "url": "https://www.tagesschau.de/tagesschau_in_100_sekunden",
+      "snippet": "Rund um die Uhr kompakt und aktuell informiert mit dem tagesschau-Nachrichtenüberblick in 100 Sekunden."
+    },
+    {
+      "title": "Ukraine - aktuelle Nachrichten - tagesschau.de",
+      "url": "https://www.tagesschau.de/thema/ukraine",
+      "snippet": "5 days ago · Ukraine - Nachrichten und Information: An 365 Tagen im Jahr, rund um die Uhr aktualisiert, die wichtigsten News auf …"
+    },
+    {
+      "title": "Russland - aktuelle Nachrichten - tagesschau.de",
+      "url": "https://www.tagesschau.de/thema/russland",
+      "snippet": "6 days ago · Russland - Nachrichten und Information: An 365 Tagen im Jahr, rund um die Uhr aktualisiert, die wichtigsten News auf …"
+    },
+    {
+      "title": "Nordrhein-Westfalen - aktuelle Nachrichten | tagesschau.de",
+      "url": "https://www.tagesschau.de/thema/nordrhein-westfalen",
+      "snippet": "1 day ago · Nordrhein-Westfalen - Nachrichten und Information: An 365 Tagen im Jahr, rund um die Uhr aktualisiert, die wichtigsten …"
+    }
+  ]
+}

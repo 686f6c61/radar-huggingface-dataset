@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/pi05-rm65b-cns-rl10-K6R-v0.0",
+  "slug": "jaycao99-pi05-rm65b-cns-rl10-k6r-v0-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/pi05-rm65b-cns-rl10-K6R-v0.0",
+  "created_at": "2026-09-11T16:57:24.000Z",
+  "updated_at": "2026-09-11T16:58:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9354070512,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Los 5 mejores restaurantes en King, abril 2026 - Restaurant Guru",
+      "url": "https://es.restaurantguru.com/King",
+      "snippet": "Encuentra los mejores sitios para comer y beber en King y alrededores. Ojea las cartas y las fotos, lee las opiniones de los clientes y …"
+    },
+    {
+      "title": "Condado King – centro – Directorio Hispano de Seattle",
+      "url": "https://directoriohispanodeseattle.com/region/condado-king-centro/",
+      "snippet": "Cocina colombiana autentica. Empanadas - sabor colombiano. Cortes para hombres. Estilistas al dia con los looks mas populares."
+    },
+    {
+      "title": "Comida y bebidas, Condado de King, Washington - GetYourGuide",
+      "url": "https://www.getyourguide.com/es-mx/condado-de-king-washington-l173228/comida-y-bebida-tc103/?msockid=2af65aebc4916e0b00c54d3ac5b66faa",
+      "snippet": "Comida y bebidas en Condado de King, Washington: Lee reseñas de otros viajeros, compara opciones y reserva con mejor precio …"
+    },
+    {
+      "title": "Azul conquista Condado con alta cocina y coctelería de autor",
+      "url": "https://www.elnuevodia.com/gastronomia/restaurantes/notas/azul-conquista-condado-con-alta-cocina-y-cocteleria-de-autor/",
+      "snippet": "Jul 31, 2026 · Este restaurante de dos niveles y varios ambientes abrió sus puertas recientemente donde antes estuvo el Hard Rock …"
+    },
+    {
+      "title": "Monarca: sabrosa cocina mexicana de alta gama",
+      "url": "https://www.elvocero.com/revistas/monarca-sabrosa-cocina-mexicana-de-alta-gama/article_2a87f2a3-5207-4c5f-acdf-b302c5f317f5.html",
+      "snippet": "Mar 1, 2026 · En el corazón de Condado, Monarca sorprende por su estetica de paleta sofisticada y un menú aunténtico y refinado. …"
+    }
+  ]
+}

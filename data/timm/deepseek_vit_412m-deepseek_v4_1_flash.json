@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/deepseek_vit_412m.deepseek_v4_1_flash",
+  "slug": "timm-deepseek_vit_412m-deepseek_v4_1_flash",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/deepseek_vit_412m.deepseek_v4_1_flash",
+  "created_at": "2026-09-11T16:20:23.000Z",
+  "updated_at": "2026-09-11T16:20:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 411842560,
+  "parameters_human": "411.8M",
+  "storage_bytes": 1647397576,
+  "storage_human": "1.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Make Google your default search engine",
+      "url": "https://support.google.com/websearch/answer/464?hl=en",
+      "snippet": "Make Google your default search engine To get results from Google each time you search, you can make Google your default search …"
+    },
+    {
+      "title": "Make Google your homepage - Google Search Help",
+      "url": "https://support.google.com/websearch/answer/463?hl=en",
+      "snippet": "Google is stuck as my homepage Google won't change your homepage settings without your permission. Reset your homepage. …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "snippet": "Google AdMob Chrome Enterprise and Education Local Services Elastifile Google Marketing Platform CEWA Cameyo Google for …"
+    },
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "Tip: To use Gmail for your business, a Google Workspace account might be better for you than a personal Google Account. With …"
+    },
+    {
+      "title": "Set default search engine and site search shortcuts",
+      "url": "https://support.google.com/chrome/answer/95426?hl=en&co=genie.platform%3Ddesktop",
+      "snippet": "You can add, edit, or remove site search shortcuts and set a default search engine. In some countries, custom site searches aren't …"
+    }
+  ]
+}

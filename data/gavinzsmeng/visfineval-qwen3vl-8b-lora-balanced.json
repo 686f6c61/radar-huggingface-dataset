@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "gavinzsmeng/visfineval-qwen3vl-8b-lora-balanced",
+  "slug": "gavinzsmeng-visfineval-qwen3vl-8b-lora-balanced",
+  "author": "gavinzsmeng",
+  "url": "https://huggingface.co/gavinzsmeng/visfineval-qwen3vl-8b-lora-balanced",
+  "created_at": "2026-09-11T17:44:35.000Z",
+  "updated_at": "2026-09-11T17:44:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "vision-language",
+    "lora",
+    "financial",
+    "evaluation",
+    "reliability",
+    "zh",
+    "dataset:SUFE-AIFLM-Lab/VisFinEval",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174663096,
+  "storage_human": "175 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermercados BH",
+      "url": "https://www.supermercadosbh.com.br/",
+      "snippet": "Acompanhe as ofertas, serviços e novidades dos Supermercados BH. Qualidade, preço baixo e variedade em uma das maiores …"
+    },
+    {
+      "title": "Extra Mercado | Supermercado Online",
+      "url": "https://www.extramercado.com.br/",
+      "snippet": "Faça as compras usando a internet no nosso supermercado online! Economia, praticidade e tudo que você precisa, sem sair de …"
+    },
+    {
+      "title": "É preço, é perto, é Supermarket!",
+      "url": "https://redesupermarket.com.br/",
+      "snippet": "1 day ago · Os melhores produtos e o melhor preço! São mais de 140 lojas em todo o estado do Rio de Janeiro, tem sempre uma …"
+    },
+    {
+      "title": "Atacadão: Suas compras de supermercado online com preço de …",
+      "url": "https://www.atacadao.com.br/",
+      "snippet": "Aqui, você encontra a combinação perfeita de economia, variedade e qualidade, seja para abastecer o seu negócio ou a despensa …"
+    },
+    {
+      "title": "Coop Supermercado Online",
+      "url": "https://www.coopsupermercado.com.br/",
+      "snippet": "Faça sua compra de supermercado online pelo site da Coop. Supermercado, açougue, adega, padaria e tudo mais"
+    }
+  ]
+}

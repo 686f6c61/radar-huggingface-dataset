@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "emilysmithge/test-retrieval33",
+  "slug": "emilysmithge-test-retrieval33",
+  "author": "emilysmithge",
+  "url": "https://huggingface.co/emilysmithge/test-retrieval33",
+  "created_at": "2026-09-11T19:30:15.000Z",
+  "updated_at": "2026-09-11T19:30:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sailing Insieme - YouTube",
+      "url": "https://www.youtube.com/channel/UCJ8YpbY5FYVNYBQjc9wai0Q",
+      "snippet": "Wir sind schon sehr gespannt darauf, unser neues Video morgen mit euch zu teilen! 🎥 In diesem Vergleich nehmen wir unsere drei …"
+    },
+    {
+      "title": "Wir segeln - YouTube",
+      "url": "https://www.youtube.com/@Wirsegeln/videos",
+      "snippet": "Do you know the most beautiful bay in the Mediterranean? We go sailing 162. Wir segeln: Ein Boot, ein Paar, (k)ein Plan. #segelnWir …"
+    },
+    {
+      "title": "segelTube – Deutschsprachige Segel YouTube Kanäle",
+      "url": "https://segeltube.com/",
+      "snippet": "Alle deutschsprachigen Segel-YouTube-Kanäle auf einen Blick – Abonnenten, Videos, Wachstum und mehr. Entdecke die besten …"
+    },
+    {
+      "title": "Top Segel-YouTube-Kanäle, die du kennen musst",
+      "url": "http://www.katamaran-segeln-lernen.de/top-segel-youtube-kanaele-die-du-kennen-musst/",
+      "snippet": "Jul 10, 2025 · In diesem Artikel präsentieren wir Ihnen fünf der besten deutschsprachigen Segelkanäle, die durch spannende …"
+    },
+    {
+      "title": "Videos für Segler*innen - OeSV",
+      "url": "https://www.segelverband.at/service/unterhaltung/videos-fuer-seglerinnen/",
+      "snippet": "Es gibt nur ein Problem: Sie können nicht segeln! Also heuern sie einen \"waschechten\" Captain an, ihr Boot zu steuern: Captain Ron, …"
+    }
+  ]
+}

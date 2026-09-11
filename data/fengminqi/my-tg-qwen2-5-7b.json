@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "fengminqi/my-tg-qwen2.5-7b",
+  "slug": "fengminqi-my-tg-qwen2-5-7b",
+  "author": "fengminqi",
+  "url": "https://huggingface.co/fengminqi/my-tg-qwen2.5-7b",
+  "created_at": "2026-09-11T16:59:47.000Z",
+  "updated_at": "2026-09-11T17:08:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9821833950,
+  "storage_human": "9.8 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Article 1360 - Code de procédure civile - Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006412523/",
+      "snippet": "Jan 1, 2007 · A peine d'irrecevabilité, l'assignation en partage contient un descriptif sommaire du patrimoine à partager et précise les …"
+    },
+    {
+      "title": "Sous-section II : Le partage judiciaire. (Articles 1359 à 1378 ...",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070716/LEGISCTA000006165251/",
+      "snippet": "Jan 1, 2020 · En raison de la complexité des opérations, une prorogation du délai, ne pouvant excéder un an, peut être accordée par …"
+    },
+    {
+      "title": "Code de procédure civile - Art. 1360 (Décr. no 2006-1805 du 23 déc ...",
+      "url": "https://www.dalloz.fr/documentation/Document?id=NCPC033589",
+      "snippet": "Art. 1360 (Décr. no 2006-1805 du 23 déc. 2006, art. 2, en vigueur le 1er janv. 2007) À peine d'irrecevabilité, l'assignation en partage …"
+    },
+    {
+      "title": "Article 1360 du Code de procédure civile - Doctrine",
+      "url": "https://www.doctrine.fr/l/texts/codes/LEGITEXT000006070716/articles/LEGIARTI000006412523",
+      "snippet": "Jan 1, 2007 · Toute la jurisprudence, les commentaires de professionnels, les questions parlementaires sur l'Article 1360 du Code de …"
+    },
+    {
+      "title": "Les diligences entreprises en vue de parvenir à un partage amiable ne ...",
+      "url": "https://www.jimenez-montes-avocat.fr/les-diligences-entreprises-en-vue-de-parvenir-a-un-partage-amiable-ne-peuvent-etre-accomplies-posterieurement-a-la-delivrance-de-lassignation-en-partage-judiciaire-l-inaccomplissement-de-ces-dili/",
+      "snippet": "Les formalités prévues par l’article 1360 du code de procédure civile."
+    }
+  ]
+}

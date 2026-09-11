@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "szwagner/my-contrastive",
+  "slug": "szwagner-my-contrastive",
+  "author": "szwagner",
+  "url": "https://huggingface.co/szwagner/my-contrastive",
+  "created_at": "2026-09-11T16:16:56.000Z",
+  "updated_at": "2026-09-11T16:17:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "4／Eなど - 4月末を意味する記号で、4／Eと表しますが、Eとは …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1211135877",
+      "snippet": "Mar 24, 2007 · 4／E など 4月末 を意味する記号で、 4／E と表しますが、 Eとは、ENDのEでしょうか。 また、4月初旬や中旬はど …"
+    },
+    {
+      "title": "0.5乗とは、どういった計算をすればよいのですか。たとえば2.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10102081890",
+      "snippet": "Feb 15, 2013 · まず、基本的なことからおさらい。 x^a・x^b=x^ (a+b) x^ (a・b)= (x^a)^b= (x^b)^a (これは、a、bの符号が負でも成 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    }
+  ]
+}

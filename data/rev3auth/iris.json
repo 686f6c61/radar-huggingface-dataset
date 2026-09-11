@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Rev3auth/iris",
+  "slug": "rev3auth-iris",
+  "author": "Rev3auth",
+  "url": "https://huggingface.co/Rev3auth/iris",
+  "created_at": "2026-09-11T16:49:54.000Z",
+  "updated_at": "2026-09-11T16:50:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-3-270m-it-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-3-270m-it-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 574296697,
+  "storage_human": "574 MB",
+  "base_model": "unsloth/gemma-3-270m-it-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.at/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=de-AT",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=de-US",
+      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com"
+    },
+    {
+      "title": "Übersicht",
+      "url": "https://search.google/intl/de-DE/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    },
+    {
+      "title": "Google Konto",
+      "url": "https://www.google.com/intl/de/account/about/",
+      "snippet": "Im Google-Konto können Sie Ihre Informationen, Aktivitäten, Sicherheitsoptionen und Datenschutzeinstellungen ansehen und …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CrowdMind/Caveman-9B",
+  "slug": "crowdmind-caveman-9b",
+  "author": "CrowdMind",
+  "url": "https://huggingface.co/CrowdMind/Caveman-9B",
+  "created_at": "2026-09-11T11:07:08.000Z",
+  "updated_at": "2026-09-11T11:38:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAUHAUS - Mehr als ein Baumarkt",
+      "url": "https://www.bauhaus.info/?msockid=26379eafb8976c9704ac897eb9ae6d4b",
+      "snippet": "BAUHAUS ist Ihr Spezialist für Werkstatt, Haus und Garten. Egal, ob es um Gartenbau, Innenausbau oder Ihre Werkstatt geht, …"
+    },
+    {
+      "title": "BAUHAUS - Mehr als ein Baumarkt",
+      "url": "https://www.bauhaus.info/homepage?msockid=26379eafb8976c9704ac897eb9ae6d4b",
+      "snippet": "BAUHAUS ist Ihr Spezialist für Werkstatt, Haus und Garten. Egal, ob es um Gartenbau, Innenausbau oder Ihre Werkstatt geht, …"
+    },
+    {
+      "title": "BAUHAUS Filialen Kornwestheim Adressen & Öffnungszeiten",
+      "url": "https://www.meinprospekt.de/kornwestheim/filialen/bauhaus-de",
+      "snippet": "Du suchst nach der nächstgelegenen Filiale von BAUHAUS in Kornwestheim? Hier findest Du eine tolle Übersicht. Die Details zu den …"
+    },
+    {
+      "title": "Bauhaus Filialen in Kornwestheim - Öffnungszeiten ... - Tiendeo",
+      "url": "https://www.tiendeo.de/Filialen/kornwestheim/bauhaus",
+      "snippet": "Hier findest du alle Adressen, Telefonnummern und Öffnungszeiten von Bauhaus Filialen in Kornwestheim. &#10148; Informiere dich …"
+    },
+    {
+      "title": "Bauhaus Baumarkt - Filialen, Standorte und Öffnungszeiten",
+      "url": "https://www.offline-einkaufen.com/einkaufsmoeglichkeiten/baumaerkte/bauhaus/",
+      "snippet": "Bauhaus ist eine der größten Baumarktketten in Deutschland und betreibt rund 160 Filialen, die sich über alle 16 Bundesländer …"
+    }
+  ]
+}

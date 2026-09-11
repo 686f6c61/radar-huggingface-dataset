@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "romanvasilyev/dl-matching",
+  "slug": "romanvasilyev-dl-matching",
+  "author": "romanvasilyev",
+  "url": "https://huggingface.co/romanvasilyev/dl-matching",
+  "created_at": "2026-09-11T17:50:05.000Z",
+  "updated_at": "2026-09-11T17:50:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diamonds Games Online Play For Free On Playhop",
+      "url": "https://playhop.com/tag/diamonds_50",
+      "snippet": "Play diamond games online with gem-matching puzzles, treasure hunts and jewel-collecting adventures. Start in your browser on …"
+    },
+    {
+      "title": "Matching Model - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/computer-science/matching-model",
+      "snippet": "A Matching Model is a method that assumes a structured sequence for multi-step attacks, representing the skeleton and general features of the attack to find adapting sequences based on similarity and comparison with predefined models. AI generated definition based on: Computers & Security, 2018"
+    },
+    {
+      "title": "Types of AI Models: The Ultimate Guide to AI Learning Models",
+      "url": "https://viso.ai/deep-learning/ml-ai-models/",
+      "snippet": "This guide will provide an overview of AI models and their various applications. We will explore popular use cases of AI models and discuss how they can be used effectively in business and other settings. In particular, we will cover the following: Concepts of AI vs. ML vs. DL"
+    },
+    {
+      "title": "Diamonds Games Online Play-Games.Com",
+      "url": "https://www.play-games.com/diamonds-games.html",
+      "snippet": "Match the diamonds to earn points in return while also relaxing when you have a bit of free time with these games! In classic match 3 …"
+    },
+    {
+      "title": "Diamond Games - Play for Free",
+      "url": "https://www.funnygames.org/game/diamond.html",
+      "snippet": "You'll find no less than 1 different Diamond Games, such as Jewel Hunt. Combine diamonds of the same color and try to clear the …"
+    }
+  ]
+}

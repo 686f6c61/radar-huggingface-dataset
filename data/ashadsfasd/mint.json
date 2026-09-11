@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Ashadsfasd/mint",
+  "slug": "ashadsfasd-mint",
+  "author": "Ashadsfasd",
+  "url": "https://huggingface.co/Ashadsfasd/mint",
+  "created_at": "2026-09-11T16:33:53.000Z",
+  "updated_at": "2026-09-11T17:14:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1139622184,
+  "parameters_human": "1.14B",
+  "storage_bytes": 4558656192,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TfL Freedom Pass rail ticket booking - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6447720/tfl-freedom-pass-rail-ticket-booking",
+      "snippet": "May 20, 2023 · Can anyone help me please? I will be taking a train journey from London with a friend who has a Transport for …"
+    },
+    {
+      "title": "Senior Railcard - Anytime travel - Big Con! - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6478333/senior-railcard-anytime-travel-big-con",
+      "snippet": "Oct 11, 2023 · Senior Railcard - Anytime travel - Big Con! EeeTea Posts: 3 Newbie 11 October 2023 at 4:58PM One advantage of …"
+    },
+    {
+      "title": "让STL map的元素按照insert的顺序排列-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/290013572",
+      "snippet": "Nov 26, 2008 · 以下内容是CSDN社区关于让STL map的元素按照insert的顺序排列相关内容，如果想了解更多关于C++ 语言社区其他 …"
+    },
+    {
+      "title": "使用RTSP获取海康NVR某个时间段的录像视频-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/391846900",
+      "snippet": "Oct 22, 2015 · 以下内容是CSDN社区关于使用RTSP获取海康NVR某个时间段的录像视频相关内容，如果想了解更多关于其他硬件开 …"
+    },
+    {
+      "title": "Trainline.com Complaint - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/4979189/trainline-com-complaint",
+      "snippet": "May 24, 2014 · I'll try and make this short! Few weeks back I booked two single advance tickets. One to Cardiff to Manchester and …"
+    }
+  ]
+}

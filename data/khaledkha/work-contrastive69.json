@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "khaledkha/work-contrastive69",
+  "slug": "khaledkha-work-contrastive69",
+  "author": "khaledkha",
+  "url": "https://huggingface.co/khaledkha/work-contrastive69",
+  "created_at": "2026-09-11T18:06:09.000Z",
+  "updated_at": "2026-09-11T18:06:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/run",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test | Check Download & Upload Speeds",
+      "url": "https://www.highspeedinternet.com/tools/speed-test?msockid=3851f7d4cd2f68e80948e005ccf1695a",
+      "snippet": "Check your internet speed with our simple and fast speed test. Get detailed results for your download speed, upload speed, and …"
+    },
+    {
+      "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+      "url": "https://speed.cloudflare.com/",
+      "snippet": "Check your network performance with our Internet speed test. Powered by Cloudflare's global edge network."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hachitienproquavay/careerfit-m1-ner",
+  "slug": "hachitienproquavay-careerfit-m1-ner",
+  "author": "hachitienproquavay",
+  "url": "https://huggingface.co/hachitienproquavay/careerfit-m1-ner",
+  "created_at": "2026-09-11T15:25:39.000Z",
+  "updated_at": "2026-09-11T15:34:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134414601,
+  "parameters_human": "134.4M",
+  "storage_bytes": 537682332,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Pip-Boy companion app stopped working after the November 13, …",
+      "url": "https://steamcommunity.com/app/377160/discussions/0/802331493180470707/",
+      "snippet": "Nov 17, 2025 · The Pip-Boy companion app stopped working after the November 13, 2025 update. (ENG\\RU) What's been done: …"
+    },
+    {
+      "title": "Why is the game not letting me use my Fallout 4 Pip-Boy app right …",
+      "url": "https://help.bethesda.net/app/answers/detail/a_id/31463/~/why-is-the-game-not-letting-me-use-my-fallout-4-pip-boy-app-right-now%3F",
+      "snippet": "Why is the game not letting me use my Fallout 4 Pip-Boy app right now? The companion app will go into \"View Mode\" whenever it …"
+    },
+    {
+      "title": "Pipboy app not working : r/fo4 - Reddit",
+      "url": "https://www.reddit.com/r/fo4/comments/1cepp71/pipboy_app_not_working/",
+      "snippet": "I started Fallout 4 again after binging the series (before I heard about the new update that was coming at the time). The pip-boy app …"
+    },
+    {
+      "title": "Annoying bug/problem with the Pipboy :: Fallout 4 General Discussions",
+      "url": "https://steamcommunity.com/app/377160/discussions/0/555745444093796569/",
+      "snippet": "Jun 15, 2025 · The issue will sometimes correct itself after another animation plays, sometimes not and will require restarting the …"
+    },
+    {
+      "title": "Need help with invisible pipboy glitch : r/fo4 - Reddit",
+      "url": "https://www.reddit.com/r/fo4/comments/18vei3a/need_help_with_invisible_pipboy_glitch/",
+      "snippet": "Dec 31, 2023 · I'm having trouble with my pipboy in Fo4 for some reason; it's completely invisible. I've been trying to fix it for a few …"
+    }
+  ]
+}

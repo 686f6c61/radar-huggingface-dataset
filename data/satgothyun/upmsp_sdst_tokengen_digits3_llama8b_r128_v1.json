@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "satgothyun/upmsp_sdst_tokengen_digits3_llama8b_r128_v1",
+  "slug": "satgothyun-upmsp_sdst_tokengen_digits3_llama8b_r128_v1",
+  "author": "satgothyun",
+  "url": "https://huggingface.co/satgothyun/upmsp_sdst_tokengen_digits3_llama8b_r128_v1",
+  "created_at": "2026-09-11T15:36:58.000Z",
+  "updated_at": "2026-09-11T15:37:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359448480,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Biblio Manuels",
+      "url": "https://biblio.manuel-numerique.com/",
+      "snippet": "Plateforme numérique pour accéder à des manuels scolaires et ressources éducatives en ligne."
+    },
+    {
+      "title": "Biblio Manuels",
+      "url": "https://biblio.manuel-numerique.com/?need_ensaccount=1",
+      "snippet": "Biblio Manuels est une plateforme numérique pour accéder à des manuels scolaires en ligne."
+    },
+    {
+      "title": "Biblio Manuels",
+      "url": "https://biblio.manuel-numerique.com/?openBook=9782091193694%3FY29udGV4dGVSZXNvdXJjZT17InR5cGUiOiJodG1sIiwiaWRyZWYiOiJpZF9tZWRpYV9odG1sX2Fzc2V0c190aDAyXzE1M19lc3BhY2VfcHJvZHVjdGlmX2luZGV4X2h0bWwifQ%3D%3D",
+      "snippet": "Accédez à vos manuels scolaires en ligne avec Biblio Manuels, une plateforme numérique intuitive."
+    },
+    {
+      "title": "biblio.manuel-numerique.com",
+      "url": "https://biblio.manuel-numerique.com/?openBook=9782091148052%3FY29udGV4dGVSZXNvdXJjZT17InR5cGUiOiJodG1sIiwiaWRyZWYiOiJpZF9tZWRpYV9odG1sX2Fzc2V0c19jaDEwXzE4OV9leG9faW5kZXhfaHRtbCJ9",
+      "snippet": "Accédez aux manuels scolaires en ligne avec Biblio Manuels, une plateforme numérique pratique et enrichissante."
+    },
+    {
+      "title": "Biblio Manuels",
+      "url": "https://biblio.manuel-numerique.com/?cat_id=1",
+      "snippet": "Bibliothèque numérique pour accéder à vos manuels scolaires en ligne."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tettoewai/whisper-burmese-myanify",
+  "slug": "tettoewai-whisper-burmese-myanify",
+  "author": "tettoewai",
+  "url": "https://huggingface.co/tettoewai/whisper-burmese-myanify",
+  "created_at": "2026-06-14T18:30:02.000Z",
+  "updated_at": "2026-09-11T11:44:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:tettoewai/whisper-burmese-myanify",
+    "base_model:finetune:tettoewai/whisper-burmese-myanify",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 127,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 26109316019,
+  "storage_human": "26.1 GB",
+  "base_model": "tettoewai/whisper-burmese-myanify",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Herzlich Willkommen bei Geigenbau - Herzlich Willkommen bei Geigenbau …",
+      "url": "https://www.geigenbauonline.de/",
+      "snippet": "Auf diesen Seiten wollen wir Ihnen die Kunst des Geigenbaus näher bringen. Dies betrifft den Neubau und auch Restaurierungen von …"
+    },
+    {
+      "title": "Geigenbau Holzlechner, Neumarkt-Sankt Veit",
+      "url": "https://web2.cylex.de/firma-home/geigenbau-holzlechner-10155792.html",
+      "snippet": "Apr 16, 2026 · Geigenbau Holzlechner Teising in Neumarkt-Sankt Veit Teising, ☎ 08639/1..., ⌚ Öffnungszeiten, Anfahrtsplan, E …"
+    },
+    {
+      "title": "Geigenbau Holzlechner - Instrumentenbau in Neumarkt-Sankt Veit …",
+      "url": "https://firmania.de/neumarkt-sankt-veit/geigenbau-holzlechner-1381909",
+      "snippet": "Apr 16, 2026 · Sie erreichen Geigenbau Holzlechner in Neumarkt-Sankt Veit unter der Telefonnummer: +49 8639 1751. 🌐 Hat …"
+    },
+    {
+      "title": "Geigenbauer – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Geigenbauer",
+      "snippet": "Geigenbauer ist heute in Deutschland ein anerkannter Ausbildungsberuf nach der Handwerksordnung."
+    },
+    {
+      "title": "Anton Holzlechner Geigenbau Neumarkt-Sankt Veit | April 2026",
+      "url": "https://www.11880.com/branchenbuch/neumarkt-sankt-veit/250772337B34708076/anton-holzlechner-geigenbau.html",
+      "snippet": "Hier finden Sie die Öffnungszeiten von Anton Holzlechner Geigenbau in Neumarkt-Sankt Veit. Für Anton Holzlechner Geigenbau in …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "robgreenberg3/DeepSeek-V4-Pro-0813",
+  "slug": "robgreenberg3-deepseek-v4-pro-0813",
+  "author": "robgreenberg3",
+  "url": "https://huggingface.co/robgreenberg3/DeepSeek-V4-Pro-0813",
+  "created_at": "2026-09-11T13:53:43.000Z",
+  "updated_at": "2026-09-11T13:53:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1650497936906,
+  "parameters_human": "1650.50B",
+  "storage_bytes": 892755974486,
+  "storage_human": "892.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NazanNur - YouTube",
+      "url": "https://www.youtube.com/@NazanNurr",
+      "snippet": "Merhaba arkadaşlar ben Nazan Nur sizlerle birlikte hem Roblox hemde brookhavende rp videoları çekiyoruz. sizlerde katılmak …"
+    },
+    {
+      "title": "NazanNur Oyun - YouTube",
+      "url": "https://www.youtube.com/@NazanNurOyun",
+      "snippet": "Merhaba Arkadaşlar ben NazanNur Oyun kanalıma hoşgeldiniz sizlerle birlikte eğlence dolu videolar çekicez. sizde benim bir ailem …"
+    },
+    {
+      "title": "Nazan Nur (@nazanurr) • Instagram photos and videos",
+      "url": "https://www.instagram.com/nazanurr/",
+      "snippet": "1,514 Followers, 119 Following, 5 Posts - See Instagram photos and videos from Nazan Nur (@nazanurr)"
+    },
+    {
+      "title": "Nazanur (@nazanur.nazanur) • Facebook, Connect with friends",
+      "url": "https://www.facebook.com/nazanur.nazanur/",
+      "snippet": "Nazanur is on Facebook. Join Facebook to connect with Nazanur and others you may know. Facebook gives people the power to …"
+    },
+    {
+      "title": "#nazanur - TikTok",
+      "url": "https://www.tiktok.com/tag/nazanur",
+      "snippet": "avsin...gokgoz AVŞİN GÖKGÖZ🎄⭐ NAZANUR ablayla halay ke @Nazo#nazanur#nazo#nazanur#nazo"
+    }
+  ]
+}

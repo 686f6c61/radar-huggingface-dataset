@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mushoz/Qwen3.8-Flash-Next-GGUF",
+  "slug": "mushoz-qwen3-8-flash-next-gguf",
+  "author": "Mushoz",
+  "url": "https://huggingface.co/Mushoz/Qwen3.8-Flash-Next-GGUF",
+  "created_at": "2026-09-11T14:21:56.000Z",
+  "updated_at": "2026-09-11T14:21:56.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 1389468786938,
+  "storage_human": "1389.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutoScout24: Personenwagen kaufen und verkaufen in der Schweiz",
+      "url": "https://www.autoscout24.ch/de",
+      "snippet": "Personenwagen auf AutoScout24: Dich erwartet die grösste Auswahl an Occasionen und neuen Fahrzeugen auf dem bekanntesten …"
+    },
+    {
+      "title": "AutoScout24: Voitures acheter et vendre en Suisse",
+      "url": "https://www.autoscout24.ch/fr",
+      "snippet": "Voitures sur AutoScout24 : Le plus grand choix de véhicules d'occasion et neufs vous attend sur la plus célèbre place de marché en …"
+    },
+    {
+      "title": "Das sind die besten Limousinen | AutoScout24",
+      "url": "https://guide.autoscout24.ch/de/kaufberatung/beste-limousinen/",
+      "snippet": "Mar 3, 2026 · Hyundai Ioniq 6 auf AutoScout24 Was zeichnet die besten Limousinen aus? Grösstmöglicher Komfort für alle …"
+    },
+    {
+      "title": "Kaufvertrag für ein Fahrzeug - AutoScout24 Magazin",
+      "url": "https://guide.autoscout24.ch/wp-content/uploads/2024/02/Kaufvertrag-AutoScout24.pdf",
+      "snippet": "AutoScout24 ist an der vertraglichen Beziehung nicht beteiligt und trägt keinerlei Verantwortung für den Abschluss, den Inhalt, die …"
+    },
+    {
+      "title": "AutoScout24: Automobile acquista e vendi in Svizzera",
+      "url": "https://www.autoscout24.ch/it",
+      "snippet": "Automobile su AutoScout24: la più vasta selezione di veicoli usati e nuovi ti aspetta sul mercato online più famoso della Svizzera."
+    }
+  ]
+}

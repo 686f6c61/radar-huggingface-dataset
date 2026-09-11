@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tintitu/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-onnx",
+  "slug": "tintitu-speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-onnx",
+  "author": "tintitu",
+  "url": "https://huggingface.co/tintitu/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-onnx",
+  "created_at": "2026-09-11T13:16:46.000Z",
+  "updated_at": "2026-09-11T13:26:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 440773273,
+  "storage_human": "441 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The best cheap hotels in Sydney | ibis Hotels",
+      "url": "https://ibis.accor.com/en/destination/city/hotels-sydney-v5577.html",
+      "snippet": "Check out our great selection of ibis hotels in Sydney at budget prices. Enjoy a good night's sleep at the best guaranteed price. Book …"
+    },
+    {
+      "title": "The 10 best Ibis hotels in Sydney, Australia | Booking.com",
+      "url": "https://www.booking.com/ibis/city/au/sydney.en-gb.html?msockid=3f3e4909278e608f02465ed826626171",
+      "snippet": "Find and book deals on the best Ibis hotels in Sydney, Australia! Explore guest reviews and book the perfect Ibis hotel for your trip."
+    },
+    {
+      "title": "Ibis Styles Sydney Central | CBD Hotel | Sydney Accommodation",
+      "url": "https://www.ibisstylessydneycentral.com.au/",
+      "snippet": "Book your stay at ibis Styles Sydney Central – affordable accommodation near Surry Hills, Oxford Street & the CBD. Spacious …"
+    },
+    {
+      "title": "Hotels by ibis in Sydney - Skyscanner",
+      "url": "https://www.skyscanner.net/hotels/australia/sydney-hotels/ci-27547097/ibis/b-90718434?msockid=3f3e4909278e608f02465ed826626171",
+      "snippet": "Search for the best Hotels by ibis in Sydney, then compare room rates across top providers to find the cheapest deal or best time to …"
+    },
+    {
+      "title": "ibis Sydney World Square | Budget Hotel in Sydney CBD",
+      "url": "https://www.ibissydneyworldsquare.com.au/",
+      "snippet": "Stay in the heart of Sydney at ibis Sydney World Square — just minutes from Town Hall Station, Darling Harbour, and Chinatown. …"
+    }
+  ]
+}

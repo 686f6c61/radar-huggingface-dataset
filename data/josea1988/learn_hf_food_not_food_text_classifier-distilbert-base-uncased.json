@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JoseA1988/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "slug": "josea1988-learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "author": "JoseA1988",
+  "url": "https://huggingface.co/JoseA1988/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "created_at": "2026-09-11T17:52:23.000Z",
+  "updated_at": "2026-09-11T17:52:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837825,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TV-Programm heute: Deine Sendungen im Überblick - HÖRZU",
+      "url": "https://www.hoerzu.de/tv-programm/",
+      "snippet": "Hier finden Sie eine praktische und übersichtliche Zusammenstellung des aktuellen Fernsehprogramms. Mit nur einem Klick können …"
+    },
+    {
+      "title": "Fernsehprogramm von heute - TV Programm - TV SPIELFILM",
+      "url": "https://www.tvspielfilm.de/",
+      "snippet": "Das TV Programm von heute: Das aktuelle Fernsehprogramm, Fernseh-Tipps und News rund um TV, Serien, Filme & Streaming von …"
+    },
+    {
+      "title": "TV Programm jetzt: Alle Sender, Filme & Serien live - HÖRZU",
+      "url": "https://www.hoerzu.de/tv-programm/jetzt/",
+      "snippet": "Auf einen Blick sehen Sie, welche Sendungen jetzt und heute Abend im Fernsehen laufen."
+    },
+    {
+      "title": "Fernsehprogramm für heute Abend ab 20:15 Uhr - TV TODAY",
+      "url": "https://www.tvtoday.de/programm/tv-programm-heute-abend/",
+      "snippet": "Hier gibt es das Fernsehprogramm für heute Abend ab 20:15 Uhr für alle Sender! Übersicht aller Sendungen, Spielfilme und Shows …"
+    },
+    {
+      "title": "Fernsehprogramm heute abend 20:15 Uhr - TV SPIELFILM",
+      "url": "https://www.tvspielfilm.de/tv-programm/sendungen/abends.html",
+      "snippet": "Auf dieser Seite sehen Sie auf einen Blick das TV-Programm um 20.15 der wichtigsten Sender. Wenn sie sich nur für Filme, oder …"
+    }
+  ]
+}

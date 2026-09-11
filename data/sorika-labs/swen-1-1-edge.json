@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "sorika-labs/Swen-1.1-Edge",
+  "slug": "sorika-labs-swen-1-1-edge",
+  "author": "sorika-labs",
+  "url": "https://huggingface.co/sorika-labs/Swen-1.1-Edge",
+  "created_at": "2026-09-11T15:25:36.000Z",
+  "updated_at": "2026-09-11T15:25:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "swen",
+    "text-generation",
+    "edge",
+    "instruct",
+    "agent",
+    "tool-use",
+    "hybrid-architecture",
+    "sorika-labs",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "zh",
+    "ar",
+    "ja",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vera Camilla (@veracamilla) • Instagram photos and videos",
+      "url": "https://www.instagram.com/veracamilla/",
+      "snippet": "202K Followers, 1,048 Following, 4,673 Posts - Vera Camilla (@veracamilla) on Instagram: \"Started in ‘09, now we’re here Make up, …"
+    },
+    {
+      "title": "Vera Camilla | Hallo ik ben zwanger! Baby ... - Instagram",
+      "url": "https://www.instagram.com/p/DWEX_lsCo4L/",
+      "snippet": "Vera Camilla | Hallo ik ben zwanger! 🐣🌈🤍🍼 Baby Camilla liet even op zich wachten maar komt er nu echt aan. Ellie wordt grote zus! 📸 …"
+    },
+    {
+      "title": "Vera Camilla | Met dank aan @sanneke89 voor de beelden ️ - Instagram",
+      "url": "https://www.instagram.com/veracamilla/reel/DKZk_joqqcb/",
+      "snippet": "veracamilla on June 2, 2025: \"Met dank aan @sanneke89 voor de beelden 🥹 ️\"."
+    },
+    {
+      "title": "Vera Camilla | 1 jaar Mr. & Mrs. Camilla een jaar met ... - Instagram",
+      "url": "https://www.instagram.com/p/DMuVQOYt5Di/",
+      "snippet": "1 jaar Mr. & Mrs. Camilla 💍 een jaar met verdriet en verlies, maar daarom ook met onze liefde die nog steeds beweegt en ons dichter …"
+    },
+    {
+      "title": "Vera Camilla | Mijn 2023. Beelden spreken duidelijker dan ... - Instagram",
+      "url": "https://www.instagram.com/veracamilla/reel/C1kKy5_thOL/",
+      "snippet": "veracamilla on January 1, 2024: \"Mijn 2023. Beelden spreken duidelijker dan woorden. Al is nog lang niet alles gezegd ️⛅️ Ik …"
+    }
+  ]
+}

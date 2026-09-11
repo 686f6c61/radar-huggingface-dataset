@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xinyihan2000/ocr-freeform-run3",
+  "slug": "xinyihan2000-ocr-freeform-run3",
+  "author": "xinyihan2000",
+  "url": "https://huggingface.co/xinyihan2000/ocr-freeform-run3",
+  "created_at": "2026-09-11T16:20:57.000Z",
+  "updated_at": "2026-09-11T16:21:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Women's Wallets | Michael Kors [US]",
+      "url": "https://www.michaelkors.com/women/wallets/?msockid=2a8c02f9db6e6af43c331528da576ba4",
+      "snippet": "Shop women’s wallets from Michael Kors with sleek card cases, roomy zip styles and elegant details crafted for everyday function …"
+    },
+    {
+      "title": "Michael Kors Outlet US Official Site | Michael Kors [US]",
+      "url": "https://www.michaelkors.com/outlet/?msockid=2a8c02f9db6e6af43c331528da576ba4",
+      "snippet": "Get jet set luxury at incredible prices on the official US Michael Kors Outlet store: designer handbags, watches, shoes, clothing and …"
+    },
+    {
+      "title": "Pre-Loved Wallets – Michael Kors Pre-Loved",
+      "url": "https://preloved.michaelkors.com/collections/wallets",
+      "snippet": "Looking to buy or sell pre-owned designer handbags and other luxury resale? Explore second-hand bags, wallets, and more from …"
+    },
+    {
+      "title": "DAYTONA BEACH in Daytona Beach, FL - Michael Kors",
+      "url": "https://locations.michaelkors.com/us/fl/daytona-beach/1100-cornerstone-blvd",
+      "snippet": "At the Michael Kors DAYTONA BEACH location in Daytona Beach, FL, you can explore and shop the latest designer looks for …"
+    },
+    {
+      "title": "Designer Store Near You | PALAZZO in Las Vegas, NV - Michael Kors",
+      "url": "https://locations.michaelkors.com/us/nv/las-vegas/3327-las-vegas-blvd-s",
+      "snippet": "Locate Michael Kors stores and shop elevated everyday essentials. From handbags to chic accessories, explore must-have styles at …"
+    }
+  ]
+}

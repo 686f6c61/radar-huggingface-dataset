@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "SurendraVB/Synaptic-Edge-10M-1B",
+  "slug": "surendravb-synaptic-edge-10m-1b",
+  "author": "SurendraVB",
+  "url": "https://huggingface.co/SurendraVB/Synaptic-Edge-10M-1B",
+  "created_at": "2026-09-11T19:39:51.000Z",
+  "updated_at": "2026-09-11T19:40:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "spiking-neural-network",
+    "neuromorphic",
+    "1-bit",
+    "discrete-plasticity",
+    "continuous-learning",
+    "zero-autograd",
+    "emergent-ventures",
+    "dataset:SurendraVB/synaptic-edge-8k-1b",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32658213,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Autoregressive Language Modeling",
+      "dataset": "synaptic-edge-8k-1b",
+      "metric": "Rolling Cross-Entropy Loss",
+      "value": 2.9784
+    },
+    {
+      "task": "Autoregressive Language Modeling",
+      "dataset": "synaptic-edge-8k-1b",
+      "metric": "Top-1 Next-Token Accuracy (%)",
+      "value": 70.84
+    },
+    {
+      "task": "Autoregressive Language Modeling",
+      "dataset": "synaptic-edge-8k-1b",
+      "metric": "Top-5 Next-Token Accuracy (%)",
+      "value": 90.61
+    }
+  ],
+  "sources": [
+    {
+      "title": "Guía Completa de la Fotografía NIKON - Escuela de fotografía",
+      "url": "https://hugorodriguez.com/escuela/cursos/guia-completa-fotografia-nikon/",
+      "snippet": "Te presento mi Guía Completa de la Fotografía para NIKON, un completísimo curso que te enseñará y acompañará en tu proceso …"
+    },
+    {
+      "title": "Guia Completa de la Fotografia NIKON - Escuela de fotografía",
+      "url": "https://hugorodriguez.com/escuela/curso-fotografia/guia-completa-de-la-fotografia-nikon/",
+      "snippet": "Este curso está dirigido a todos aquellos aficionados de nivel medio, alto o profesionales que quieren descubrir cómo exprimir al …"
+    },
+    {
+      "title": "Consejos, técnicas e inspiración para la fotografía - nikon.es",
+      "url": "https://www.nikon.es/es_ES/learn-and-explore/",
+      "snippet": "Descubre consejos de expertos en fotografía, tutoriales en profundidad, historias inspiradoras y las últimas novedades del mundo de …"
+    },
+    {
+      "title": "Toma de fotografias",
+      "url": "https://onlinemanual.nikonimglib.com/d6/es/04_basic_photography_and_playback_01.html",
+      "snippet": "La cámara está equipada con controles para usar en orientación de retrato (“vertical”), incluyendo el disparador vertical, los botones …"
+    },
+    {
+      "title": "Manual de Fotografía Básica Nikon PDF | PDF - Scribd",
+      "url": "https://es.scribd.com/document/346853002/Manual-de-fotografia-basica-Nikon-pdf",
+      "snippet": "impresiona un fotograma de 24x36mm, la diagonal del formato es de 43.2 mm Si se utiliza unacmara digital con formato Full frame …"
+    }
+  ]
+}

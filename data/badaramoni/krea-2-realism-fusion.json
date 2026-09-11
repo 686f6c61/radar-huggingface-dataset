@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "badaramoni/Krea-2-Realism-Fusion",
+  "slug": "badaramoni-krea-2-realism-fusion",
+  "author": "badaramoni",
+  "url": "https://huggingface.co/badaramoni/Krea-2-Realism-Fusion",
+  "created_at": "2026-09-11T13:18:28.000Z",
+  "updated_at": "2026-09-11T13:19:23.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea-2",
+    "text-to-image",
+    "lora",
+    "realism",
+    "merge",
+    "badaramoni-fusion",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:merge:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 949893418,
+  "storage_human": "950 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Katholisch Oberberg Süd",
+      "url": "https://katholisch-oberbergsued.de/",
+      "snippet": "Hier findest du alles, was du für dein kirchliches Leben benötigst: Informationen zu Gemeinden, Sakramenten und Angeboten für alle …"
+    },
+    {
+      "title": "Pastorale Einheit Oberberg Süd - Katholisch Oberberg Süd",
+      "url": "https://katholisch-oberbergsued.de/category/pastorale-einheit-oberberg-sued/",
+      "snippet": "Jun 18, 2026 · Anlässlich des Begegnungstages mit Herrn Kardinal Rainer Maria Woelki in Oberberg-Süd wird im Pontifikalamt die …"
+    },
+    {
+      "title": "Startseite| Katholische Kirchengemeinden im Oberbergischen Kreis",
+      "url": "https://www.katholisch-in-oberberg.de/",
+      "snippet": "Jan 21, 2026 · In aller Vielfalt von Angeboten bilden wir das Gesicht der Katholischen Kirche im Oberbergischen Kreis. Aus unserem …"
+    },
+    {
+      "title": "Gottesdienste - Katholisch Oberberg Süd",
+      "url": "https://katholisch-oberbergsued.de/home/termine/gottesdienste/",
+      "snippet": "Termine Gottesdienste Ostern Einladungen Liturgischer Kalender Veranstaltungen Zurück zur Startseite Übersicht aller Gottesdienste"
+    },
+    {
+      "title": "Gemeinden - Katholisch Oberberg Süd",
+      "url": "https://katholisch-oberbergsued.de/gemeinden/",
+      "snippet": "Von Halleluja bis Tandaradei Chormusik des Mittelalters in der Morsbacher Basilika Das Bergisches Chorfest hatte erfolgreich zu …"
+    }
+  ]
+}

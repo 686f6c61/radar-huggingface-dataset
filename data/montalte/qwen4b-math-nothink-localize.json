@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen4b-math-nothink-localize",
+  "slug": "montalte-qwen4b-math-nothink-localize",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen4b-math-nothink-localize",
+  "created_at": "2026-09-11T12:08:10.000Z",
+  "updated_at": "2026-09-11T12:13:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "merge",
+    "localize",
+    "math",
+    "nothink",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NonPoliticalTwitter - Reddit",
+      "url": "https://www.reddit.com/r/NonPoliticalTwitter/about/",
+      "snippet": "Twitter without the politics. Come vibe with us as we escape the stress of the real world around us."
+    },
+    {
+      "title": "Twitter Blog",
+      "url": "https://blog.twitter.com/robots.txt",
+      "snippet": "User-agent: * Disallow: User-agent: Twitterbot Disallow: User-agent: QuerySeekerSpider Disallow: / User-agent: DirBuster-0.12 …"
+    },
+    {
+      "title": "Retrospective Review Twitter, Inc. and the 2018 Midterm Elections in ...",
+      "url": "https://blog.twitter.com/content/dam/blog-twitter/official/en_us/company/2019/2018-retrospective-review.pdf",
+      "snippet": "Twitter is committed to improving the collective health, openness, and civility of public conversation on our service. Twitter’s health is …"
+    },
+    {
+      "title": "What's the deal with tweets, now that Twitter is called X? Are ... - Reddit",
+      "url": "https://www.reddit.com/r/OutOfTheLoop/comments/15udq4y/whats_the_deal_with_tweets_now_that_twitter_is/",
+      "snippet": "Aug 18, 2023 · I really think it's important to add that twitter has been around since 2006. I don't think it's necessary anymore to …"
+    },
+    {
+      "title": "これのキルジョイ版誰か作れませんか？ - レイナ。お前には何がで.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12295315182",
+      "snippet": "Mar 21, 2024 · これのキルジョイ版誰か作れませんか？ レイナ。お前には何ができるんだ？ジェット、レイズのように体を張ったエ …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asfadfws/MyAwesomeModel-TestRepository",
+  "slug": "asfadfws-myawesomemodel-testrepository",
+  "author": "asfadfws",
+  "url": "https://huggingface.co/asfadfws/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-11T15:21:42.000Z",
+  "updated_at": "2026-09-11T15:21:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deltapark Vitalresort | Wellnesshotel Thunersee",
+      "url": "https://www.deltapark.ch/",
+      "snippet": "Uns wurde sofort bestätigt, dass wir kommen können und wir wurden freundlich über Preise und Angebote informiert.Der kostenlose …"
+    },
+    {
+      "title": "Wellness & Spa am Thunersee | Deltapark Vitalresort",
+      "url": "https://www.deltapark.ch/wellness-spa",
+      "snippet": "2000 m² alpine Wellness & Spa auf vier Etagen am Thunersee: Saunen, Pools, Private Spa und Massagen im Deltapark Vitalresort. …"
+    },
+    {
+      "title": "Deltapark Vitalresort | Wellnesshotel Thunersee",
+      "url": "https://en.deltapark.ch/",
+      "snippet": "Your retreat for holistic well-being. Nestled in 70,000m² parkland of the Kanderdelta and surrounded by two nature reserves directly …"
+    },
+    {
+      "title": "Deltapark Vitalresort | Hôtel de Wellness au bord du lac de Thoune",
+      "url": "https://fr.deltapark.ch/",
+      "snippet": "Votre lieu de retraite pour un bien-être global. Niché dans l'immense parc de 70 000 m² du Kanderdelta, entouré de deux réserves …"
+    },
+    {
+      "title": "New Year's Eve 2026 with 5-course dinner | Deltapark Vitalresort",
+      "url": "https://en.deltapark.ch/packages/silvester-hotelrestaurant",
+      "snippet": "Enjoy up to three nights at the Deltapark Vitalresort and start 2027 feeling refreshed. Includes a 5-course New Year's Eve dinner."
+    }
+  ]
+}

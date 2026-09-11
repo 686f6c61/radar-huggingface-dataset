@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/K2-Horizon-0.9B-chat-mlx-8bit",
+  "slug": "sirsahol-k2-horizon-0-9b-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/K2-Horizon-0.9B-chat-mlx-8bit",
+  "created_at": "2026-09-11T16:57:53.000Z",
+  "updated_at": "2026-09-11T17:07:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "8-bit",
+    "conversational",
+    "text-generation",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-0.9B",
+    "base_model:quantized:IFM/K2-Horizon-0.9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1078285824,
+  "parameters_human": "1.08B",
+  "storage_bytes": 1145833554,
+  "storage_human": "1.1 GB",
+  "base_model": "IFM/K2-Horizon-0.9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le site tube pornographique le plus complet et le plus révolutionnaire. Nous offrons des vidéos porno en streaming, des …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the net …"
+    },
+    {
+      "title": "Pornhub Porn Videos",
+      "url": "https://www.pornhub.com/video/search?search=pornhub",
+      "snippet": "Watch Pornhub porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX …"
+    },
+    {
+      "title": "Categorías de Pornhub: Encuentra tus videos porno hardcore favoritos ...",
+      "url": "https://es.pornhub.com/categories",
+      "snippet": "Pornhub tiene los mejores videos porno hardcore. Descubre el XXX más nuevo para ver en tu categoría de sexo favorita. Mira las …"
+    },
+    {
+      "title": "Kostenlose Porno Videos & Sex Filme - Porno, XXX, Porno Tube",
+      "url": "https://de.pornhub.com/",
+      "snippet": "Pornhub bietet dir unbegrenzt kostenlose Pornovideos mit den heißesten Darstellern an. Genießen Sie die größte Amateur-Porno …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "theoracleguy/pocket-tts-coreml-v3",
+  "slug": "theoracleguy-pocket-tts-coreml-v3",
+  "author": "theoracleguy",
+  "url": "https://huggingface.co/theoracleguy/pocket-tts-coreml-v3",
+  "created_at": "2026-09-11T13:40:30.000Z",
+  "updated_at": "2026-09-11T13:41:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "en",
+    "de",
+    "it",
+    "pt",
+    "es"
+  ],
+  "tags": [
+    "coreml",
+    "pocket-tts",
+    "apple-neural-engine",
+    "on-device",
+    "text-to-speech",
+    "en",
+    "de",
+    "it",
+    "pt",
+    "es",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2960026689,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DE 10 BESTE restaurants in Hasselt (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.be/Restaurants-g188650-Hasselt_Limburg_Province.html",
+      "snippet": "De beste restaurants in Hasselt, België. Lees Tripadvisor-reizigersbeoordelingen van de beste restaurants in Hasselt en zoek op …"
+    },
+    {
+      "title": "De 16 beste restaurants in Hasselt (getest door een local)",
+      "url": "https://somsookheimwee.be/blog/beste-restaurants-hasselt",
+      "snippet": "Mar 3, 2023 · Van Michelin-ster ROSS tot de beste Indiër van Limburg en plantbased Lento. Dit zijn de 14 beste restaurants in …"
+    },
+    {
+      "title": "Beste restaurants centrum Hasselt: 7 x een gastronomisch eten",
+      "url": "https://horecaguru.be/beste-restaurants-hasselt/",
+      "snippet": "Aug 14, 2025 · Opzoek naar de beste gastronomische restaurants in Hasselt? Ontdek in dit artikel de 9 top eetplekjes in hartje Hasselt."
+    },
+    {
+      "title": "HOTSPOTS: 17 van de heerlijkste restaurants in Hasselt - Flair",
+      "url": "https://www.flair.be/nl/chillax/hotspots-restaurants-hasselt/",
+      "snippet": "Oct 10, 2024 · Hasselt is niet alleen voor z’n winkelstraten, jenever en Modemuseum een bezoekje waard. Je vindt er zo veel leuke …"
+    },
+    {
+      "title": "THE 10 BEST Restaurants in Hasselt - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g188650-Hasselt_Limburg_Province.html",
+      "snippet": "Best Dining in Hasselt, Limburg Province: See 16,089 Tripadvisor traveler reviews of 439 Hasselt restaurants and search by cuisine, …"
+    }
+  ]
+}

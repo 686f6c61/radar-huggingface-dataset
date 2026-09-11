@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ases200q2/roboverse_pick_cube_mujocoE100_pi05_lora_20260911_0953",
+  "slug": "ases200q2-roboverse_pick_cube_mujocoe100_pi05_lora_20260911_0953",
+  "author": "ases200q2",
+  "url": "https://huggingface.co/ases200q2/roboverse_pick_cube_mujocoE100_pi05_lora_20260911_0953",
+  "created_at": "2026-09-11T19:27:55.000Z",
+  "updated_at": "2026-09-11T19:28:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:ases200q2/roboverse-pick_cube-mujoco-E100",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5177680,
+  "storage_human": "5 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An update to how we count public views across YouTube",
+      "url": "https://support.google.com/youtube/thread/433409976/an-update-to-how-we-count-public-views-across-youtube?hl=en",
+      "snippet": "Aug 17, 2026 · Last year, we updated how we count public views for Shorts to better capture how viewers watch on YouTube. Now, …"
+    },
+    {
+      "title": "YouTube Creator Awards",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "youtube | OBS Forums",
+      "url": "https://obsproject.com/forum/tags/youtube/",
+      "snippet": "Apr 15, 2026 · When we enter the YouTube stream key on OBS, it uploads the video directly on our YouTube page, but doesn't send …"
+    },
+    {
+      "title": "İndir | OBS",
+      "url": "https://obsproject.com/tr/downLOAD",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "Troubleshoot YouTube TV streaming issues",
+      "url": "https://support.google.com/youtubetv/answer/7129766?hl=en",
+      "snippet": "Open the YouTube TV app on your device. Select your Location. Review the info listed under “Home Area” and “Current playback …"
+    }
+  ]
+}

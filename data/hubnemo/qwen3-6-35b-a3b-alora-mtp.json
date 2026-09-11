@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hubnemo/Qwen3.6-35B-A3B-ALoRA-MTP",
+  "slug": "hubnemo-qwen3-6-35b-a3b-alora-mtp",
+  "author": "hubnemo",
+  "url": "https://huggingface.co/hubnemo/Qwen3.6-35B-A3B-ALoRA-MTP",
+  "created_at": "2026-09-11T18:11:57.000Z",
+  "updated_at": "2026-09-11T18:12:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2091275707,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtmosFX Digital Decorations for Halloween, Christmas Special Occasions",
+      "url": "https://atmosfx.com/",
+      "snippet": "AtmosFX creates the best animated digital decorations for Halloween, Christmas and special occasions. Use your TV, monitor or …"
+    },
+    {
+      "title": "Decorations – AtmosFX Digital Decorations",
+      "url": "https://atmosfx.com/collections/decorations",
+      "snippet": "Watch in horror as eerie, oozing messages written in blood materialize from nowhere. Halloween magic comes alive with three …"
+    },
+    {
+      "title": "Digital Decorations - AtmosFX Help Center",
+      "url": "https://support.atmosfx.com/collection/10-digital-decorations",
+      "snippet": "How do I play digital downloads? How do I play (and loop) digital downloads on my computer? How do I select the right USB stick or …"
+    },
+    {
+      "title": "How to Transfer AtmosFX Videos to USB Drive - YouTube",
+      "url": "https://www.youtube.com/watch?v=yFG6pmVhxt0",
+      "snippet": "Oct 22, 2024 · Quick tutorial to get those AtmosFX Videos onto your USB Drive to play on your projector using Windows 10."
+    },
+    {
+      "title": "AtmosFX Tutorials and How-To Videos - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLNDcTD9qWaB8zFkJt2qVN1_gm5D2NPYIC",
+      "snippet": "Want to learn more about digital decorating? Check out tutorial and how-to videos from AtmosFX and its fans."
+    }
+  ]
+}

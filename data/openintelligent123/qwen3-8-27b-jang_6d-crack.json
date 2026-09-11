@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/Qwen3.8-27B-JANG_6D-CRACK",
+  "slug": "openintelligent123-qwen3-8-27b-jang_6d-crack",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/Qwen3.8-27B-JANG_6D-CRACK",
+  "created_at": "2026-09-11T15:34:05.000Z",
+  "updated_at": "2026-09-11T15:34:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "jang",
+    "jang-6d",
+    "vision-language",
+    "video",
+    "reasoning",
+    "tool-calling",
+    "mtp",
+    "harmbench",
+    "mmlu",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 25833643757,
+  "storage_human": "25.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stampa Foto e Regali - PhotoSì",
+      "url": "https://www.photosi.com/it/",
+      "snippet": "PhotoSi: Stampa le tue foto online. Crea fotolibri, calendari, stampe su tela, gadget e regali personalizzati unici. Trasforma i tuoi …"
+    },
+    {
+      "title": "️ Stampa le Tue Foto Online - PhotoSi",
+      "url": "https://www.photosi.com/it/stampe",
+      "snippet": "Stampa le tue emozioni con PhotoSì 🤳 sul sito o app 📲 Nessun pagamento anticipato e ritiro dal tuo fotografo di fiducia o direttamente a …"
+    },
+    {
+      "title": "La Nuova Immagine Foto: Stampa Foto Crema | Photosì",
+      "url": "http://www.lanuovaimmagine.photosi.com/",
+      "snippet": "Stampa Foto Digitali Direttamente Su Photosi.Com E Ritira Comodamente Da La Nuova Immagine Foto. Nessun Pagamento …"
+    },
+    {
+      "title": "Photosi - Stampa foto e album - App su Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.photosi.android.printup&hl=it",
+      "snippet": "Se ci scrivi all'indirizzo aiuto@photosi.com indicando nell'oggetto 'Recensione App' e aggiungendo qualsiasi informazione utile, …"
+    },
+    {
+      "title": "Photo Best Price: Stampa Foto Roma | Photosì",
+      "url": "http://pbp.photosi.com/",
+      "snippet": "Stampa Foto Digitali Direttamente Su Photosi.Com E Ritira Comodamente Da Photo Best Price. Nessun Pagamento Anticipato!"
+    }
+  ]
+}

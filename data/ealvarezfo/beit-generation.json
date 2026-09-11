@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ealvarezfo/beit-generation",
+  "slug": "ealvarezfo-beit-generation",
+  "author": "Ealvarezfo",
+  "url": "https://huggingface.co/Ealvarezfo/beit-generation",
+  "created_at": "2026-09-11T15:16:30.000Z",
+  "updated_at": "2026-09-11T15:16:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joker : Folie à deux — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Joker_:_Folie_%C3%A0_deux",
+      "snippet": "Joker : Folie à deux (Joker: Folie à Deux) est un drame psychologique musical américain co-écrit et réalisé par Todd Phillips, sorti en …"
+    },
+    {
+      "title": "Joker: Folie à Deux - Film 2024 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=278006.html",
+      "snippet": "Joker: Folie à Deux est un film réalisé par Todd Phillips avec Joaquin Phoenix, Lady Gaga. Synopsis : A quelques jours de son …"
+    },
+    {
+      "title": "Joker: Folie à Deux - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Joker:_Folie_%C3%A0_Deux",
+      "snippet": "Joaquin Phoenix stars as Arthur Fleck / Joker, reprising his role from the first film, alongside Lady Gaga as Harleen \"Lee\" Quinzel. …"
+    },
+    {
+      "title": "Joker: Folie à Deux (2024) - IMDb",
+      "url": "https://www.imdb.com/title/tt11315808/",
+      "snippet": "Oct 4, 2024 · Joker: Folie à Deux: Directed by Todd Phillips. With Joaquin Phoenix, Lady Gaga, Brendan Gleeson, Catherine Keener. …"
+    },
+    {
+      "title": "Joker - Folie à deux - Film (2024) - SensCritique",
+      "url": "https://www.senscritique.com/film/joker_folie_a_deux/47777802",
+      "snippet": "À quelques jours de son procès pour les crimes commis sous les traits du Joker, Arthur Fleck rencontre le grand amour et se trouve …"
+    }
+  ]
+}

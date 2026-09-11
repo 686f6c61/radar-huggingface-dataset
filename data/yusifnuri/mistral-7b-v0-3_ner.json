@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yusifnuri/Mistral-7B-v0.3_ner",
+  "slug": "yusifnuri-mistral-7b-v0-3_ner",
+  "author": "yusifnuri",
+  "url": "https://huggingface.co/yusifnuri/Mistral-7B-v0.3_ner",
+  "created_at": "2026-09-11T15:40:27.000Z",
+  "updated_at": "2026-09-11T15:41:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "small-language-model",
+    "enterprise-benchmark",
+    "ner",
+    "qlora",
+    "base_model:adapter:mistralai/Mistral-7B-v0.3",
+    "text-generation",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54560368,
+  "storage_human": "55 MB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3800 em Aveiro - Preços, menu, morada, reserva e ... - TheFork",
+      "url": "https://www.thefork.pt/restaurante/3800-r841563",
+      "snippet": "O restaurante 3800 em Aveiro é altamente recomendado por sua comida excepcional, com pratos como arroz de carabineiro e …"
+    },
+    {
+      "title": "3800 Aveiro - Restaurante, Reserva, Menu e Avaliações",
+      "url": "https://3800.pt/",
+      "snippet": "Reserve gratuitamente o restaurante 3800 em Aveiro. Menu tradicional português, preços acessíveis, avaliações 5 estrelas. Reserva …"
+    },
+    {
+      "title": "Menu 2026 - 3800 em Aveiro | TheFork",
+      "url": "https://www.thefork.pt/restaurante/3800-r841563/menu",
+      "snippet": "Descubra o ementa do restaurante 3800 em Aveiro no TheFork: entradas, pratos principais, sobremesas, bebidas e menus especiais."
+    },
+    {
+      "title": "3800, Aveiro - Menu, Preços, Comentários de Restaurantes & Reservas",
+      "url": "https://www.tripadvisor.pt/Restaurant_Review-g189140-d33226411-Reviews-3800-Aveiro_Aveiro_District_Northern_Portugal.html",
+      "snippet": "3800, Aveiro: Veja 23 dicas e avaliações imparciais de 3800, com classificação Nº 4.8 de 5 no Tripadvisor e classificado como Nº 59 …"
+    },
+    {
+      "title": "3800 in Aveiro - Restaurant Reviews, Menu and Prices | TheFork",
+      "url": "https://www.thefork.com/restaurant/3800-r841563",
+      "snippet": "Make a booking at 3800 in Aveiro. Find diner reviews, menus, prices, and opening hours for 3800 on TheFork."
+    }
+  ]
+}

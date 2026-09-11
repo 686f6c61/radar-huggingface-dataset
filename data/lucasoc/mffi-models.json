@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lucasoc/MFFI-Models",
+  "slug": "lucasoc-mffi-models",
+  "author": "lucasoc",
+  "url": "https://huggingface.co/lucasoc/MFFI-Models",
+  "created_at": "2026-09-11T12:25:46.000Z",
+  "updated_at": "2026-09-11T13:00:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepfake-detection",
+    "face-forgery",
+    "fourier-transform",
+    "computer-vision",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42979525009,
+  "storage_human": "43.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - usualdork/EndlessClaude: A modern, responsive web interface ...",
+      "url": "https://github.com/usualdork/EndlessClaude",
+      "snippet": "A modern, responsive web interface for unlimited free access to Claude AI, with no signups, no usage limits, and completely free …"
+    },
+    {
+      "title": "Models and pricing for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "snippet": "Individual plans (Copilot Free, Copilot Pro, Copilot Pro+, and Copilot Max) include GitHub AI Credits allowances that vary by plan. For …"
+    },
+    {
+      "title": "GitHub - chenhg5/cc-connect: Bridge local AI coding agents (Claude …",
+      "url": "https://github.com/chenhg5/cc-connect",
+      "snippet": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, …"
+    },
+    {
+      "title": "国内大厂Trae、Qoder、CodeBuddy AI编辑器哪个好用？",
+      "url": "https://www.zhihu.com/question/1951273247036380422",
+      "snippet": "国内大厂Trae、Qoder、CodeBuddy AI编辑器哪个好用？ 抛开Cursor、Kiro、Claude Code等， 国内互联网大厂研发的 Trae（海外 …"
+    },
+    {
+      "title": "Cách tạo PowerPoint bằng Claude AI đơn giản và chi tiết",
+      "url": "https://cellphones.com.vn/sforum/cach-tao-powerpoint-bang-claude-ai",
+      "snippet": "May 31, 2026 · Tạo PowerPoint bằng Claude AI đang trở thành một xu hướng mới trong cách chuẩn bị bài thuyết trình hiện đại."
+    }
+  ]
+}

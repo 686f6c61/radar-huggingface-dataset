@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NINI26454/Mistral-Small-24B-Instruct-2501-Abliterated-GGUF",
+  "slug": "nini26454-mistral-small-24b-instruct-2501-abliterated-gguf",
+  "author": "NINI26454",
+  "url": "https://huggingface.co/NINI26454/Mistral-Small-24B-Instruct-2501-Abliterated-GGUF",
+  "created_at": "2026-09-11T17:54:12.000Z",
+  "updated_at": "2026-09-11T17:56:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ollama",
+    "mistral",
+    "abliterated",
+    "quantized",
+    "base_model:venkycs/Mistral-Small-24B-Instruct-2501-Abliterated",
+    "base_model:quantized:venkycs/Mistral-Small-24B-Instruct-2501-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 11474084896,
+  "storage_human": "11.5 GB",
+  "base_model": "venkycs/Mistral-Small-24B-Instruct-2501-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ExpressVPN – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/ExpressVPN",
+      "snippet": "ExpressVPN ist ein VPN -Dienst, der von dem auf den Britischen Jungferninseln registrierten Unternehmen Express VPN …"
+    },
+    {
+      "title": "ExpressVPN im Test: Einfach, schnell und sicher?",
+      "url": "https://www.computerbild.de/technik/vpn/tests/artikel/ExpressVPN-im-Test-Schnell-gut-und-sicher-24206219.html",
+      "snippet": "Feb 23, 2026 · ExpressVPN überzeugt im Test mit hoher Sicherheit, guten Geschwindigkeiten und sehr zuverlässigem Streaming. …"
+    },
+    {
+      "title": "ExpressVPN: Top-VPN für Geschwindigkeit & Privatsphäre 2026",
+      "url": "https://www.expressvpn.com/de",
+      "snippet": "Schütze Deine Privatsphäre, streame weltweit & genieße hohe Geschwindigkeiten mit ExpressVPN. Server in 113 Ländern, 24/7 …"
+    },
+    {
+      "title": "Was ist VPN? VPN Erklärt | ExpressVPN",
+      "url": "https://www.expressvpn.com/de/what-is-vpn/vpn-for-dummies",
+      "snippet": "VPN - Was ist das? VPN steht für virtuelles privates Netzwerk. Es ist ein verschlüsselter Tunnel zwischen zwei Geräten, mit dem Sie …"
+    },
+    {
+      "title": "ExpressVPN Test 2026 | Wie gut ist der VPN-Dienst?",
+      "url": "https://www.sueddeutsche.de/erfahrungen/expressvpn-test/",
+      "snippet": "Feb 25, 2026 · In puncto Sicherheit setzt ExpressVPN nach wie vor Maßstäbe. Der Dienst nutzt AES-256-Bit-Verschlüsselung, ein …"
+    }
+  ]
+}

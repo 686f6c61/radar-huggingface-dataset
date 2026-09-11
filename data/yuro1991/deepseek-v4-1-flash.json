@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Yuro1991/DeepSeek-V4.1-Flash",
+  "slug": "yuro1991-deepseek-v4-1-flash",
+  "author": "Yuro1991",
+  "url": "https://huggingface.co/Yuro1991/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-11T16:34:56.000Z",
+  "updated_at": "2026-09-11T16:34:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "脖子長黑斑不是污垢！恐是5大疾病警號，即學7招預防及改善頸黑斑",
+      "url": "https://www.cleanskincare.com.hk/7611/",
+      "snippet": "本文將揭示頸黑斑的真正成因，深入探討其背後可能隱藏的重大疾病，並提供專業的求醫指南，以及即學即用的7招預防及改善策略， …"
+    },
+    {
+      "title": "脖子有黑斑？3分鐘自查＋4大分流表：一文拆解7大頸部黧黑斑成因、 …",
+      "url": "https://nourishcleanbeauty.com.hk/5244/",
+      "snippet": "發現脖子忽然出現一片「黧黑斑」，好多人第一時間以為係污糟洗唔乾淨，於是拼命搓、磨砂、亂搽美白；但頸部變黑其實可以由多種 …"
+    },
+    {
+      "title": "「脖子黑斑洗不掉？」恐是糖尿病、癌症警號！醫生詳解頸黑斑5大成 …",
+      "url": "https://www.cleanskincare.com.hk/7610/",
+      "snippet": "「脖子黑斑洗不掉？」別以為只是清潔不徹底或曬黑！這些頸部黑斑，尤其是呈現天鵝絨般觸感的黧黑斑，可能是身體發出的重要警 …"
+    },
+    {
+      "title": "消除黑斑方法有哪些？公開黑斑原因及治療方法，掌握5招有效預防",
+      "url": "https://helloyishi.com.tw/skin-health/skin-diseases/dark-spot/",
+      "snippet": "Jun 6, 2024 · 50多歲的張媽媽最近起床照鏡子，常覺得臉上的黑色斑點十分不美觀，之後參加朋友聚會又聽聞有人透過雷射治療去除 …"
+    },
+    {
+      "title": "皮膚出現黑色的斑點是甚麼原因-快速問醫生",
+      "url": "https://hant.120ask.com/zhishi/detail/1381824.html",
+      "snippet": "Mar 1, 2026 · 黑變病：可能與接觸焦油類物質、化妝品刺激或營養不良有關，表現為面部等部位灰褐色斑點，需遠離可疑誘因，補充 …"
+    }
+  ]
+}

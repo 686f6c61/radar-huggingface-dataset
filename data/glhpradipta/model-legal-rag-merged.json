@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "glhpradipta/Model-Legal-RAG-Merged",
+  "slug": "glhpradipta-model-legal-rag-merged",
+  "author": "glhpradipta",
+  "url": "https://huggingface.co/glhpradipta/Model-Legal-RAG-Merged",
+  "created_at": "2026-09-11T16:49:09.000Z",
+  "updated_at": "2026-09-11T16:57:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "三国群英传从1到7，哪个版本最经典最耐玩？ - 知乎",
+      "url": "https://www.zhihu.com/question/29522718",
+      "snippet": "三国群英传从1998年开始至今，历经7个版本，还有两部网游，在资深玩家心中，哪个版本最经典，最耐玩？说…"
+    },
+    {
+      "title": "怎么判断是不是灰指甲？ - 知乎",
+      "url": "https://www.zhihu.com/question/46634698",
+      "snippet": "灰指甲你必须知道的症状！！ 甲下型灰指甲常从甲板两侧或未端开始，多先有轻度甲沟炎，后来逐渐变成慢性或渐趋消退。甲沟炎可 …"
+    },
+    {
+      "title": "Windows电脑如何设置WiFi选择5Ghz频带的信号？ - 知乎",
+      "url": "https://www.zhihu.com/question/35029288",
+      "snippet": "到这里就完成了，混合模式下电脑会优先选择5G频段~ 在这个界面还能完成对很多高级参数的设置~ 如果没有这么多选项可能是网卡不 …"
+    },
+    {
+      "title": "27 寸显示器和 24 寸显示器在使用感受上有多大差别？ - 知乎",
+      "url": "https://www.zhihu.com/question/24590758",
+      "snippet": "24寸1080P 和 27寸 1080P 只是同比例放大。 24寸1080P 和 27寸 2K 是使用面积变大了，同时提升了17%的细腻感。 细腻程度更好的 …"
+    },
+    {
+      "title": "第一次坐飞机 一定要提早两小时到机场吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/281897857",
+      "snippet": "先说结论，尽量早到。 到了以后要找到所搭乘航班的承运航空公司柜台办票，然后托运行李（要留出万一托运行李要开箱检查的时 …"
+    }
+  ]
+}

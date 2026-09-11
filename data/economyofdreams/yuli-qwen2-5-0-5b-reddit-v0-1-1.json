@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "economyofdreams/Yuli-Qwen2.5-0.5B-Reddit-v0.1.1",
+  "slug": "economyofdreams-yuli-qwen2-5-0-5b-reddit-v0-1-1",
+  "author": "economyofdreams",
+  "url": "https://huggingface.co/economyofdreams/Yuli-Qwen2.5-0.5B-Reddit-v0.1.1",
+  "created_at": "2026-09-11T17:38:54.000Z",
+  "updated_at": "2026-09-11T17:58:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2.5",
+    "unsloth",
+    "yuli",
+    "ollama",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397801664,
+  "storage_human": "398 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IOS - WhatsApp Web? - Apple Community",
+      "url": "https://discussions.apple.com/thread/6893850",
+      "snippet": "Mar 26, 2015 · Our web client is simply an extension of your phone: the web browser mirrors conversations and messages from your …"
+    },
+    {
+      "title": "Whatsapp desktop showing unread messages which were read on mobile",
+      "url": "https://www.reddit.com/r/whatsapp/comments/udvn78/whatsapp_desktop_showing_unread_messages_which/",
+      "snippet": "Apr 28, 2022 · Whatsapp beta for MacOS, since the introduction of multi device support it shows unread messages which I read on …"
+    },
+    {
+      "title": "Whatsapp Web - Online Status : r/whatsapp - Reddit",
+      "url": "https://www.reddit.com/r/whatsapp/comments/5qwo2i/whatsapp_web_online_status/",
+      "snippet": "Jan 29, 2017 · If I have whatsapp web open in a tab on Chrome, does it constantly show me as online or only when tab active?"
+    },
+    {
+      "title": "Whatsapp App not linking to Whatsapp Desk… - Apple Community",
+      "url": "https://discussions.apple.com/thread/255537742",
+      "snippet": "Mar 19, 2024 · Whatsapp App not linking to Whatsapp Desktop Hello there, I cannot get my whatsapp (ip 15 pro max) to link to …"
+    },
+    {
+      "title": "WhatsApp Desktop slow downloads solved !! : r/whatsapp - Reddit",
+      "url": "https://www.reddit.com/r/whatsapp/comments/oenhhk/whatsapp_desktop_slow_downloads_solved/",
+      "snippet": "Jul 6, 2021 · Whatsapp.exe on windows also works good no issue at all But now the complication is here: (1) Whatsapp Web of my …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bonurb/Mistral-7B-Instruct-v0.3-GGUF",
+  "slug": "bonurb-mistral-7b-instruct-v0-3-gguf",
+  "author": "bonurb",
+  "url": "https://huggingface.co/bonurb/Mistral-7B-Instruct-v0.3-GGUF",
+  "created_at": "2026-09-11T13:35:08.000Z",
+  "updated_at": "2026-09-11T13:35:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:quantized:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 63396546016,
+  "storage_human": "63.4 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mastercard Network - Secure Global Payment and Processing Services",
+      "url": "https://www.mastercard.com/us/en/business/payments/consumer-payments/network-processing.html",
+      "snippet": "Powering payments in 220+ markets, the Mastercard network benefits billions with secure, seamless global payment processing and …"
+    },
+    {
+      "title": "Mastercard Fintech Payment Solutions | Mastercard US",
+      "url": "https://www.mastercard.com/us/en/business/solutions/payments.html",
+      "snippet": "Find the right card programs and partners to make issuance quick, easy and transparent. Create end-to-end online and mobile card …"
+    },
+    {
+      "title": "Top 42 payment processors for 2026: fast, flexible, and global options ...",
+      "url": "https://whop.com/blog/payment-processors/",
+      "snippet": "Sep 4, 2026 · Compare 42 top payment processors for 2026, including Stripe, PayPal, Adyen, and Square, plus Whop for multi …"
+    },
+    {
+      "title": "All-in-One Global Payment Platform for Businesses | Payoneer",
+      "url": "https://www.payoneer.com/",
+      "snippet": "Manage payments across the globe, spend with corporate cards, access working capital, hire and pay teams, and run multi-entity …"
+    },
+    {
+      "title": "10 Best Credit Card Processing Companies for 2026",
+      "url": "https://theretailexec.com/services/best-credit-card-processing-companies/",
+      "snippet": "2 days ago · See the best credit card processing companies for 2026—ranked by real-world business needs, transparent pricing, …"
+    }
+  ]
+}

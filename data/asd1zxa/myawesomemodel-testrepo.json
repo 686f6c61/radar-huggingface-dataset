@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD1ZXA/MyAwesomeModel-TestRepo",
+  "slug": "asd1zxa-myawesomemodel-testrepo",
+  "author": "ASD1ZXA",
+  "url": "https://huggingface.co/ASD1ZXA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T13:06:08.000Z",
+  "updated_at": "2026-09-11T13:06:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Relais de pompe à carburant DACIA LODGY - Qualité d’origine à bon prix",
+      "url": "https://www.piecesdiscount24.fr/pieces/relais-de-pompe-a-carburant/dacia/lodgy",
+      "snippet": "DES OFFRES ⚡ tous les jours Achetez des Relais de pompe à carburant DACIA LODGY de grandes marques à prix avantageux …"
+    },
+    {
+      "title": "Relais de pompe à carburant pour DACIA LODGY pas chères en ligne ...",
+      "url": "https://www.auto-doc.fr/pieces-detachees/relais-de-pompe-a-carburant-10818/dacia/lodgy?msockid=1658b2e783f66bee143ba53682286ae8",
+      "snippet": "En fonction du fabricant du produit et de ses spécifications, le prix d’un produit de catégorie Relais de pompe à carburant pour DACIA …"
+    },
+    {
+      "title": "Relais de pompe à carburant pour DACIA LODGY AUTODOC catalogue",
+      "url": "https://www.auto-doc.be/pieces-detachees/relais-de-pompe-a-carburant-10818/dacia/lodgy",
+      "snippet": "Produit de catégorie Relais de pompe à carburant pour DACIA LODGY : quel est le prix de ce produit ? Le prix des pièces détachées …"
+    },
+    {
+      "title": "Achetez un Relais de pompe à carburant pour DACIA en ligne à prix ...",
+      "url": "https://www.auto-doc.fr/pieces-detachees/relais-de-pompe-a-carburant-10818/dacia?msockid=1658b2e783f66bee143ba53682286ae8",
+      "snippet": "Ici vous trouverez dans notre entrepôt de pièces détachées un aperçu des Relais de pompe à carburant pour DACIA pour presque …"
+    },
+    {
+      "title": "Relais DACIA LODGY – Pièces détachées de qualité à bon prix en ligne",
+      "url": "https://www.piecesauto24.com/relais-pr/dacia-lodgy",
+      "snippet": "Sélectionnez votre véhicule pour acheter une pièce détachée adaptée ! Vous ne trouvez pas votre voiture dans le catalogue ? …"
+    }
+  ]
+}

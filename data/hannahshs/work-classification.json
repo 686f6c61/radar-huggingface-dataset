@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hannahshs/work-classification",
+  "slug": "hannahshs-work-classification",
+  "author": "hannahshs",
+  "url": "https://huggingface.co/hannahshs/work-classification",
+  "created_at": "2026-09-11T15:42:22.000Z",
+  "updated_at": "2026-09-11T15:42:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Partnersuche und Freundschaft für Menschen ab 50 - 50plus-Treff",
+      "url": "https://www.50plus-treff.de/login.php",
+      "snippet": "Partnersuche, Freundschaft und neue Bekanntschaften für Menschen ab 50. Jetzt kostenlos im 50plus-Treff anmelden und Ihren …"
+    },
+    {
+      "title": "Partnersuche ab 50 & Freundschaft | 50plus-Treff",
+      "url": "https://www.50plus-treff.de/",
+      "snippet": "Seriöse Singlebörse 50plus für Partnersuche und Freundschaften. Singles über 50 treffen sich in unserer Community. Seit 2005. …"
+    },
+    {
+      "title": "Partnersuche ab 50 im 50plus-Treff",
+      "url": "https://www.50plus-treff.at/partnersuche/oesterreich-1.html",
+      "snippet": "Partnersuche ab 50 in Österreich: Jetzt kostenlos anmelden, Kontaktanzeige aufgeben und Singles ab 50 aus Ihrer Umgebung finden!"
+    },
+    {
+      "title": "Partnersuche in Niederösterreich für Singles ab 50 - 50plus-Treff",
+      "url": "https://www.50plus-treff.at/partnersuche/oesterreich/niederoesterreich-1.html",
+      "snippet": "Partnersuche in Niederösterreich im 50plus-Treff. Jetzt kostenlos anmelden, Kontaktanzeige aufgeben und Singles ab 50 aus …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    }
+  ]
+}

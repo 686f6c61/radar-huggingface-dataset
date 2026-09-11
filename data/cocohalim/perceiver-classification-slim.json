@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cocohalim/perceiver-classification-slim",
+  "slug": "cocohalim-perceiver-classification-slim",
+  "author": "cocohalim",
+  "url": "https://huggingface.co/cocohalim/perceiver-classification-slim",
+  "created_at": "2026-09-11T16:30:32.000Z",
+  "updated_at": "2026-09-11T16:30:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chatbot · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatbot",
+      "snippet": "3 days ago · A software application used for an online chat via text or text-to-speech, instead of giving contact with a human."
+    },
+    {
+      "title": "GitHub Copilot · GitHub",
+      "url": "https://github.com/copilot",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "Chatbot是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/65980775",
+      "snippet": "chatbot是这一两年最火的话题，是自然语言处理“王冠上的钻石”。 chatbot本身是一个很难的问题，商业与技术上套路都貌似飘忽不定 …"
+    },
+    {
+      "title": "How to get Telegram Bot Chat ID · GitHub",
+      "url": "https://gist.github.com/nafiesl/4ad622f344cd1dc3bb1ecbe468ff9f8a",
+      "snippet": "How to get Telegram Bot Chat ID. GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "如何开发一个特定领域的自动问答机器人 (Chat Bot)？",
+      "url": "https://www.zhihu.com/question/64730096",
+      "snippet": "首先分析你的需求： 对AI零基础 有编程经验和能力 想做一个自动问答机器人 (Chat Bot)来代替老师做日常答疑。 * 用户可以自定义问 …"
+    }
+  ]
+}

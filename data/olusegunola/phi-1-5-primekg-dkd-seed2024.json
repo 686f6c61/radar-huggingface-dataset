@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/phi-1.5-primekg-dkd-seed2024",
+  "slug": "olusegunola-phi-1-5-primekg-dkd-seed2024",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-dkd-seed2024",
+  "created_at": "2026-09-11T16:10:29.000Z",
+  "updated_at": "2026-09-11T16:10:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50357392,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Car Soccer . Jeux En Ligne . BrightestGames.com",
+      "url": "https://fr.brightestgames.com/jeu/car-soccer",
+      "snippet": "Car Soccer est un mélange de jeu de stratégie de football et de jeu de sport automobile. Vous ne contrôlez pas un joueur, mais un …"
+    },
+    {
+      "title": "Car Soccer League ⚽ Play Online | Bubblebox",
+      "url": "https://bubblebox.com/soccer-league",
+      "snippet": "Drive onto the pitch in Car Soccer League! Play 1vs1, 2vs2 or 3vs3 matches, upgrade your car and fight for league victory."
+    },
+    {
+      "title": "Car Soccer Game - Play on Lagged.com",
+      "url": "https://lagged.com/en/g/car-soccer",
+      "snippet": "Psyche yourself up for the upcoming World Cup with this sweet car-themed soccer game! Control a car and engage in a one-on-one …"
+    },
+    {
+      "title": "Car Soccer - Jouez à des jeux sur Lagged.com",
+      "url": "https://lagged.com/fr/p/car-soccer",
+      "snippet": "Jouez au jeu Car Soccer sur Lagged.com. Jouez en ligne gratuitement et débloqué maintenant. Car Soccer est l'un de nos jeux de …"
+    },
+    {
+      "title": "Car Soccer . Online Games . BrightestGames.com",
+      "url": "https://www.brightestgames.com/game/car-soccer",
+      "snippet": "Apr 25, 2026 · Car Soccer is a combination of racing games and football strategy games. You are not controlling a person instead, …"
+    }
+  ]
+}

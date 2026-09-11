@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "khaledkha/3d-scene-understanding-lite",
+  "slug": "khaledkha-3d-scene-understanding-lite",
+  "author": "khaledkha",
+  "url": "https://huggingface.co/khaledkha/3d-scene-understanding-lite",
+  "created_at": "2026-09-11T18:05:45.000Z",
+  "updated_at": "2026-09-11T18:05:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pas de messagerie pro aujourd'hui 25/08/2026 - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/pas-de-messagerie-pro-aujourd-hui-25-08-2026/td-p/3449614",
+      "snippet": "Aug 25, 2026 · Nous vous informons que le service a été rétabli suite à l'incident, et que l'accès à la messagerie mail pro fonctionne …"
+    },
+    {
+      "title": "pas de messagerie pro aujourd'hui 25/08/2026 - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/pas-de-messagerie-pro-aujourd-hui-25-08-2026/td-p/3449614/page/2",
+      "snippet": "Aug 25, 2026 · Bonjour, Aujourd'hui, impossible de se connecter à la messagerie Ne me dite pas de vérifier ma box, mes identifiants …"
+    },
+    {
+      "title": "Impossible d'acceder à ma messagerie Orange [Résolu] - Mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-3788737-impossible-d-acceder-a-ma-messagerie-orange",
+      "snippet": "Mon FAI est Orange (Wanadoo) Je m'identifie correctement, et la barre d'outils de la messagerie Orange s'affiche. Lorsque je clique …"
+    },
+    {
+      "title": "Résolu : Boîte mail ne fonctionne plus - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Bo%C3%AEte-mail-ne-fonctionne-plus/td-p/3323397",
+      "snippet": "Aug 25, 2025 · Bonjour à tous, Depuis plusieurs jour plus d'accès a ma messagerie orange sur mon PC. J'arrive a entrer mes …"
+    },
+    {
+      "title": "Récupération d'accès à ma messagerie - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/mon-mail-Orange/R%C3%A9cup%C3%A9ration-d-acc%C3%A8s-%C3%A0-ma-messagerie/td-p/3394552",
+      "snippet": "Mar 2, 2026 · Bonjour, Comment puis-je récupérer l'accès à ma messagerie Orange, après une résiliation de contrat depuis moins …"
+    }
+  ]
+}

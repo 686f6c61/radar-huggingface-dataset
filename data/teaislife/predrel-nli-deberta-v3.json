@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "teaislife/predrel-nli-deberta-v3",
+  "slug": "teaislife-predrel-nli-deberta-v3",
+  "author": "teaislife",
+  "url": "https://huggingface.co/teaislife/predrel-nli-deberta-v3",
+  "created_at": "2026-09-11T14:18:44.000Z",
+  "updated_at": "2026-09-11T14:26:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "nli",
+    "natural-language-inference",
+    "predicate-alignment",
+    "first-order-logic",
+    "neuro-symbolic",
+    "deberta-v3",
+    "text-classification",
+    "en",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184424451,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737727621,
+  "storage_human": "738 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'bokep' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/bokep",
+      "snippet": "Bokep Indonesia - Cheating MILF Secretly Fucked Hard by Husband’s Best Friend – Big Tits, Hairy Pussy Creampie | Istri Selingkuh …"
+    },
+    {
+      "title": "Bokep Indo – BokepHot | Nonton Bokep Indo",
+      "url": "https://bokephot.net/categories/indonesia/",
+      "snippet": "Nonton Bokep Indo terbaru gratis kualitas HD newest. Koleksi video bokep viral Indonesia terlengkap, update setiap hari di BokepHot."
+    },
+    {
+      "title": "Bokep Videos - Free Full-Length HD | Pornhub",
+      "url": "https://www.pornhub.com/video/search?search=bokep",
+      "snippet": "Browse a massive collection of bokep videos in full HD. Fresh uploads every day, all free to stream on Pornhub - on mobile or desktop."
+    },
+    {
+      "title": "Kissbokep | Situs video bokep indonesia Full HD tanpa sensor",
+      "url": "https://kissbokep.com/",
+      "snippet": "Selamat datang di kissbokep,tempat yang menyediakan berbagai konten video bokep indo yang terbaru,full durasi,tanpa sensor dan …"
+    },
+    {
+      "title": "Bokep Terbaru Hari Ini – BokepHot | Nonton Bokep Indo",
+      "url": "https://bokephot.net/categories/bokep-terbaru/",
+      "snippet": "Nonton bokep terbaru hari ini gratis kualitas HD. Koleksi video bokep indo viral terbaru update setiap hari, lengkap hanya di BokepHot."
+    }
+  ]
+}

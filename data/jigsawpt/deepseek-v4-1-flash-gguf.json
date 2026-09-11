@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JigSawPT/DeepSeek-V4.1-Flash-GGUF",
+  "slug": "jigsawpt-deepseek-v4-1-flash-gguf",
+  "author": "JigSawPT",
+  "url": "https://huggingface.co/JigSawPT/DeepSeek-V4.1-Flash-GGUF",
+  "created_at": "2026-09-11T12:14:25.000Z",
+  "updated_at": "2026-09-11T12:21:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "mxfp4",
+    "deepseek",
+    "mixture-of-experts",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 754638981608,
+  "parameters_human": "754.64B",
+  "storage_bytes": 501809981408,
+  "storage_human": "501.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FinanzOnline Login",
+      "url": "https://finanzonline.bmf.gv.at/",
+      "snippet": "Erledigen Sie Ihre Steuererklärungen und andere Anträge bequem über das E-Government Portal der österreichischen …"
+    },
+    {
+      "title": "ID Austria: Login at FinanzOnline",
+      "url": "https://finanzonline.bmf.gv.at/fon/oautheidlogin.do",
+      "snippet": "Basic personal data, in the public sector, § 4 Abs. 5 E-GovG: First name Last name Date of birth Area-specific personal identifier …"
+    },
+    {
+      "title": "FinanzOnline Login",
+      "url": "https://finanzonline.bmf.gv.at/fon/login.do?rk=j",
+      "snippet": "Aus Sicherheitsgründen wurde diese Sitzung beendet, da in der Zwischenzeit ein neuerliches Login in FinanzOnline erfolgte und …"
+    },
+    {
+      "title": "Startseite - FinanzOnline",
+      "url": "https://finanzonline.bmf.gv.at/html/demo/Startseite.html",
+      "snippet": "Handy-Signatur Melden Sie sich mit Ihrem Handy bequem bei FinanzOnline an. Jetzt aktivieren"
+    },
+    {
+      "title": "Online-Rücksetzen",
+      "url": "https://finanzonline.bmf.gv.at/fon/a/pinreset.do",
+      "snippet": "Wichtige Hinweise zum Zurücksetzen des Passwortes: Sie sind Unternehmerin oder Unternehmer? Dann müssen Sie die Teilnehmer …"
+    }
+  ]
+}

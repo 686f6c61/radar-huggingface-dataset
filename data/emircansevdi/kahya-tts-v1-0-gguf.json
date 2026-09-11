@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "emircansevdi/Kahya-TTS-v1.0-GGUF",
+  "slug": "emircansevdi-kahya-tts-v1-0-gguf",
+  "author": "emircansevdi",
+  "url": "https://huggingface.co/emircansevdi/Kahya-TTS-v1.0-GGUF",
+  "created_at": "2026-09-11T16:46:47.000Z",
+  "updated_at": "2026-09-11T16:59:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "voxcpm",
+    "gguf",
+    "turkish",
+    "voxcpm2",
+    "merged-lora",
+    "speech-synthesis",
+    "audio",
+    "text-to-speech",
+    "tr",
+    "arxiv:2606.06928",
+    "arxiv:2509.24650",
+    "base_model:AlicanKiraz0/Kahya-TTS-v1.0",
+    "base_model:finetune:AlicanKiraz0/Kahya-TTS-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 912440644,
+  "parameters_human": "912.4M",
+  "storage_bytes": 6800386816,
+  "storage_human": "6.8 GB",
+  "base_model": "openbmb/VoxCPM2, AlicanKiraz0/Kahya-TTS-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail – La messagerie avec espace de stockage gratuit de ...",
+      "url": "https://www.google.com/intl/fr/mail/help/about.html",
+      "snippet": "Gmail fonctionne sur tous les appareils Android ou iOS, et sur ordinateur. Triez vos messages, collaborez avec vos collègues ou …"
+    },
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Gmail : messagerie sécurisée optimisée par l'IA pour tous | Google ...",
+      "url": "https://workspace.google.com/intl/fr/gmail/",
+      "snippet": "Gmail est désormais optimisé par l'IA Gemini. Découvrez de nouvelles façons de rédiger des e-mails, d'y répondre et d'organiser …"
+    },
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application Gmail sur votre …"
+    }
+  ]
+}

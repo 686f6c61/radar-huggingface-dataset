@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/Muse-Glimmer-30B-JANG_6M-CRACK",
+  "slug": "openintelligent123-muse-glimmer-30b-jang_6m-crack",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/Muse-Glimmer-30B-JANG_6M-CRACK",
+  "created_at": "2026-09-11T15:33:02.000Z",
+  "updated_at": "2026-09-11T15:33:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "muse_glimmer",
+    "apple-silicon",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "jang",
+    "jang-6m",
+    "vision-language",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "atem",
+    "harmbench",
+    "mmlu",
+    "muse-glimmer",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 27595114746,
+  "storage_human": "27.6 GB",
+  "base_model": "OsaurusAI/Muse-Glimmer-30B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "如何评价Gemini的新UI? - 知乎",
+      "url": "https://www.zhihu.com/question/2040443986943424303",
+      "snippet": "May 20, 2026 · 如何评价Gemini的新UI? Google把这次的设计语言称作“Neural Expressive”（神经表达），整体感觉就是把那个让人有 …"
+    },
+    {
+      "title": "怎么看谷歌发布了 Gemini 3.6 flash和 3.5 lite，但是 pro 又缺席？",
+      "url": "https://www.zhihu.com/question/2063033606767895735",
+      "snippet": "有点发愁啊，三个模型Gemini 3.6 Flash、3.5 Flash-Lite，还有专门做安全的3.5 Flash Cyber, 但是没有 3.5 Pro, 三个模型几乎全都是 …"
+    },
+    {
+      "title": "NLP 大模型与 CV 大模型的 “大”：同源而殊途的技术范式-云社区-华为云",
+      "url": "https://bbs.huaweicloud.com/blogs/455174",
+      "snippet": "Jun 27, 2025 · 随着多模态大模型（如 GPT-4V、Gemini）的发展，两者正走向技术融合 —— 例如，用语言模型的逻辑推理能力增强 …"
+    }
+  ]
+}

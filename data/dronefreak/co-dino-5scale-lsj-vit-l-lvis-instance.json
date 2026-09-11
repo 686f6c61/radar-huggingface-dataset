@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-dino-5scale-lsj-vit-l-lvis-instance",
+  "slug": "dronefreak-co-dino-5scale-lsj-vit-l-lvis-instance",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-dino-5scale-lsj-vit-l-lvis-instance",
+  "created_at": "2026-09-11T19:17:36.000Z",
+  "updated_at": "2026-09-11T19:17:46.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-dino",
+    "detr",
+    "coco",
+    "vit",
+    "pytorch",
+    "iccv2023",
+    "lvis",
+    "objects365",
+    "instance-segmentation",
+    "image-segmentation",
+    "en",
+    "dataset:lvis",
+    "arxiv:2211.12860",
+    "arxiv:1908.03195",
+    "arxiv:2303.11331",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1635221111,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "LVIS v1 val",
+      "metric": "box AP",
+      "value": 67.3
+    }
+  ],
+  "sources": [
+    {
+      "title": "BSNL FTTH Connection Booking",
+      "url": "https://bookfibre.bsnl.co.in/",
+      "snippet": "India's #1 Fibre Broadband Network 🏆 BSNL Becomes India's Leading Fixed-Line Internet Operator in FY26, ETTelecom Now, certified …"
+    },
+    {
+      "title": "Fiber Optic Cable - OFC Latest Price, Manufacturers & Suppliers",
+      "url": "https://dir.indiamart.com/impcat/fiber-optic-cable.html",
+      "snippet": "1 day ago · Find here Fiber Optic Cable, OFC manufacturers, suppliers & exporters in India. Get contact details & address of …"
+    },
+    {
+      "title": "Fiber-optic communication - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fiber-optic_communication",
+      "snippet": "An optical fiber patching cabinet. The yellow cables are single-mode fibers; the orange and blue cables are multi-mode fibers: …"
+    },
+    {
+      "title": "उच्च गुणवत्ता वाले आउटडोर फाइबर कैबिनेट 240 कोर - CYTECH",
+      "url": "https://www.cytechorg.com/hi/outdoor-fiber-cabinet.html",
+      "snippet": "चीन निर्माता CYTECH द्वारा पेश किया गया 240 कोर आउटडोर फाइबर ऑप्टिक वितरण कैबिनेट। कम कीमत और उच्च गुणवत्ता के …"
+    },
+    {
+      "title": "Home -The Fiber Optic Association",
+      "url": "https://www.thefoa.org/",
+      "snippet": "The Fiber Optic Association, Inc. the international professional association of fiber optics September 2026"
+    }
+  ]
+}

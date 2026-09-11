@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mabogee03/Aerial-Object-Detection-Model",
+  "slug": "mabogee03-aerial-object-detection-model",
+  "author": "mabogee03",
+  "url": "https://huggingface.co/mabogee03/Aerial-Object-Detection-Model",
+  "created_at": "2026-09-11T11:05:58.000Z",
+  "updated_at": "2026-09-11T11:18:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "object-detection",
+    "yolov8",
+    "aerial-imagery",
+    "remote-sensing",
+    "dota",
+    "dataset:dota-v1.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23226234,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falkland Islands - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Falkland_Islands",
+      "snippet": "Under the British Nationality (Falkland Islands) Act 1983, Falkland Islanders are British citizens. The islands lie at the boundary of the …"
+    },
+    {
+      "title": "History of the Falkland Islands - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/History_of_the_Falkland_Islands",
+      "snippet": "An attempt made by Argentina to establish a penal colony in 1832 failed due to a mutiny. In 1833, the British returned to the Falkland …"
+    },
+    {
+      "title": "Falkland Islands - British Colony, Sovereignty Dispute, Wildlife ...",
+      "url": "https://www.britannica.com/place/Falkland-Islands/History",
+      "snippet": "Sep 4, 2026 · Argentina had claimed sovereignty over the Falkland Islands, which lie 300 miles (480 km) east of its coast, since the …"
+    },
+    {
+      "title": "Visit The Falkland Islands | Falklands",
+      "url": "https://www.falklandislands.com/",
+      "snippet": "The Falkland Islands archipelago is made up of more than 700 islands and has a hugely varied coastline from rugged coastal cliffs to …"
+    },
+    {
+      "title": "Welcome to the Falkland Islands Government",
+      "url": "https://www.gov.fk/",
+      "snippet": "Explore the Falkland Islands Government's official portal—your guide to services, information, and news in this unique British …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SBYNUGROHO/deit-classification-finetuning",
+  "slug": "sbynugroho-deit-classification-finetuning",
+  "author": "SBYNUGROHO",
+  "url": "https://huggingface.co/SBYNUGROHO/deit-classification-finetuning",
+  "created_at": "2026-09-11T12:56:06.000Z",
+  "updated_at": "2026-09-11T12:56:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Download fonts",
+      "url": "https://www.dafont.com/",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "DaFont - Descargar fuentes",
+      "url": "https://www.dafont.com/es/",
+      "snippet": "Archivo de fuentes de descarga gratuita. Búsqueda por orden alfabético, por estilo, por autor o por popularidad."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "知乎知学堂 - 知乎",
+      "url": "https://www.zhihu.com/education/learning",
+      "snippet": "知乎知学堂 - 知乎旗下职业教育品牌，专注于成人用户职业发展，聚集各领域优质教育资源，依托自身科技实力打造的一站式在线职业 …"
+    },
+    {
+      "title": "TikTok 45.4.3 抓包之双网络栈证书校验分析 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-2111184-1-1.html",
+      "snippet": "Jun 5, 2026 · 工具链：google px4真机、proxypin 1.2.7、IDA 9.0。某海外社交app。先hook下connect函数，看下app使用的网络请求 …"
+    }
+  ]
+}

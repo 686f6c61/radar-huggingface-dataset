@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yusifnuri/phi-4-mini-instruct_financial_sentiment",
+  "slug": "yusifnuri-phi-4-mini-instruct_financial_sentiment",
+  "author": "yusifnuri",
+  "url": "https://huggingface.co/yusifnuri/phi-4-mini-instruct_financial_sentiment",
+  "created_at": "2026-09-11T15:42:08.000Z",
+  "updated_at": "2026-09-11T15:42:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "small-language-model",
+    "enterprise-benchmark",
+    "financial-sentiment",
+    "base_model:adapter:microsoft/Phi-4-mini-instruct",
+    "text-generation",
+    "conversational",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28116030,
+  "storage_human": "28 MB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obtén un descuento para estudiantes de YouTube Premium o …",
+      "url": "https://support.google.com/youtube/answer/9158808?hl=es-419&co=GENIE.Platform%3DDesktop",
+      "snippet": "Ofrecemos varias opciones para ampliar tu experiencia en YouTube. Puedes registrarte para obtener una membresía para …"
+    },
+    {
+      "title": "他のアプリやデバイスで YouTube Music を使用する - Android",
+      "url": "https://support.google.com/youtubemusic/answer/9231765?hl=ja&co=GENIE.Platform%3DAndroid",
+      "snippet": "YouTube Music はさまざまなアプリやサービスと統合されており、自宅でも外出先でも音楽を楽しむことができます。他のサービ …"
+    },
+    {
+      "title": "Personaliza tu música y tus podcasts - Ayuda de YouTube Music",
+      "url": "https://support.google.com/youtubemusic/answer/6313542?hl=es-419",
+      "snippet": "Para descubrir música y podcasts más personalizados, accede a YouTube Music con tu Cuenta de Google. Obtendrás …"
+    },
+    {
+      "title": "Enviar músicas para sua biblioteca do YouTube Music",
+      "url": "https://support.google.com/youtubemusic/answer/9716522?hl=pt-BR",
+      "snippet": "Informações importantes: Os envios de música não podem ser concluídos no app YouTube Music para dispositivos móveis. Você …"
+    },
+    {
+      "title": "Musik und Podcasts personalisieren - YouTube Music-Hilfe",
+      "url": "https://support.google.com/youtubemusic/answer/6313542?hl=de",
+      "snippet": "Mit der YouTube Music App kannst du neue Musik und Podcasts entdecken und die Auswahl ganz individuell gestalten. Hier erfährst …"
+    }
+  ]
+}

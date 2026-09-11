@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aust-inwqr/hybrid-finetuned",
+  "slug": "aust-inwqr-hybrid-finetuned",
+  "author": "aust-inwqr",
+  "url": "https://huggingface.co/aust-inwqr/hybrid-finetuned",
+  "created_at": "2026-09-11T16:52:41.000Z",
+  "updated_at": "2026-09-11T16:52:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porto für Briefe in Deutschland – Briefporto 2026 | Deutsche Post",
+      "url": "https://www.deutschepost.de/de/b/briefe-in-deutschland.html",
+      "snippet": "Alle Porto-Preise 2026 für Briefe in Deutschland auf einen Blick: Was kostet eine Briefmarke für Postkarte, Standardbrief, …"
+    },
+    {
+      "title": "Briefporto | Shop Deutsche Post",
+      "url": "https://shop.deutschepost.de/briefporto",
+      "snippet": "Hier finden Sie die gültigen Preise und wichtige Informationen zum Versand Ihrer Briefe. Informationen zum Warenversand bieten die …"
+    },
+    {
+      "title": "Briefe und Postkarte | Deutsche Post",
+      "url": "https://www.deutschepost.de/de/b/brief_postkarte.html",
+      "snippet": "Diesen Service haben wir zum September 2026 eingestellt. Nichtsdestotrotz führen wir bei den nationalen Basisprodukten Brief die …"
+    },
+    {
+      "title": "Leistungen und Preise, Stand: 01.07.2026 Alles über Briefe, Päckchen ...",
+      "url": "https://www.dhl.de/dam/jcr:c0eb1285-9a22-40b2-8c51-3f70c1a897be/dp-leistungen-und-preise-072025.pdf",
+      "snippet": "Der Empfängerservice GoGreen Plus wird zum 31.08.2026 eingestellt. Bestehende und bis dahin getätigte Buchungen laufen bis …"
+    },
+    {
+      "title": "Briefporto 2026: Was kostet ein Brief? - Paketda",
+      "url": "https://www.paketda.de/news-briefporto-aktuell.html",
+      "snippet": "Jan 2, 2026 · Das Porto der Deutschen Post kostet in 2026: Postkarte und Brief 95 Cent, Großbrief 1,80 Euro und Maxibrief 2,90 …"
+    }
+  ]
+}

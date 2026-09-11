@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Lama-gigant80/kukirin",
+  "slug": "lama-gigant80-kukirin",
+  "author": "Lama-gigant80",
+  "url": "https://huggingface.co/Lama-gigant80/kukirin",
+  "created_at": "2026-09-11T16:13:11.000Z",
+  "updated_at": "2026-09-11T16:24:15.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "dataset:Lama-gigant80/KuKirin",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32759,
+  "storage_human": "32759 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loveholidays ☀️ Holidays 2026/2027 | Deposits from £19pp",
+      "url": "https://www.loveholidays.com/?msockid=2796906eb50466331aae87bfb4a06723",
+      "snippet": "Up to £700 off in the sale! Summer might be coming to a close but these deals are still bringing the heat. Save hundreds on selected …"
+    },
+    {
+      "title": "TUI.co.uk | Holidays, Flights & Cruises 2026 / 2027",
+      "url": "https://www.tui.co.uk/?msockid=2796906eb50466331aae87bfb4a06723",
+      "snippet": "We think you'll love... Summer holidays. Check out our selection of sun-soaked breaks."
+    },
+    {
+      "title": "Package Holidays You Can Trust | Jet2holidays",
+      "url": "https://www.jet2holidays.com/?msockid=2796906eb50466331aae87bfb4a06723",
+      "snippet": "Great value package holidays for £60pp deposit. Find all-inclusive and last-minute holidays, with hotel, return flights, transfers, 22kg …"
+    },
+    {
+      "title": "Cheap holiday packages | Last minute package holiday deals | lastminute.com",
+      "url": "https://www.lastminute.com/holidays?msockid=2796906eb50466331aae87bfb4a06723",
+      "snippet": "With so many holidays to choose from, finding your perfect holiday can feel overwhelming, but it doesn’t have to be. Last minute …"
+    },
+    {
+      "title": "icelolly.com - Compare Cheap Holidays",
+      "url": "https://www.icelolly.com/",
+      "snippet": "Comparing holidays online is the best way to find and book cheap holidays. Doing so provides you with the opportunity to compare a …"
+    }
+  ]
+}

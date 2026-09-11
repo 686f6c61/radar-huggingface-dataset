@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yimn-Aghosh/zegrate-ai",
+  "slug": "yimn-aghosh-zegrate-ai",
+  "author": "yimn-Aghosh",
+  "url": "https://huggingface.co/yimn-Aghosh/zegrate-ai",
+  "created_at": "2026-09-05T11:57:18.000Z",
+  "updated_at": "2026-09-11T12:08:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "zegrate",
+    "lora",
+    "qlora",
+    "qwen2.5",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 508,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 109692483379,
+  "storage_human": "109.7 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LÉGFEGYVERES Adás-Vétel-Keresés - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9221011",
+      "snippet": "Sep 2, 2026 · Légfegyverek, tartozékainak, kiegészítőinek, alkatrészeinek eladási-keresési hirdetései. Az eladási hirdetéseket: - csak …"
+    },
+    {
+      "title": "Használt távcső adás-vétel, csere-bere - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9197833",
+      "snippet": "Aug 18, 2026 · Használt távcsövek, binokulárok, monokulárok, teleszkópok, mikroszkópok, éjjellátók, nagyítók, és optikai kiegészítők, …"
+    },
+    {
+      "title": "Olcsó légfegyverek (kínai,török,spanyol) - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9201610",
+      "snippet": "Aug 25, 2026 · Olcsó légfegyverekkel(kinai,török,spanyol)kapcsolatos kérdések ,tanácsok!"
+    },
+    {
+      "title": "bicskák, kések, tőrök, kardok adás-vétel - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9209837",
+      "snippet": "Sep 3, 2026 · Adás-vétel topik!Ha hirdetsz, adj meg elérhetőséget (mail, telefon) vagy a mailcímedet tedd publikussá! \"Beszélgetni\" …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList",
+      "snippet": "1 day ago · Hobbi, szabadidő Utazás, Állati, Gamez, Képes-játékok, Kertészet, Klubfórumok, Kreatív és technikai hobbik, Makett, …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "onnx-community/line-distilbert-base-japanese-ONNX",
+  "slug": "onnx-community-line-distilbert-base-japanese-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/line-distilbert-base-japanese-ONNX",
+  "created_at": "2026-09-11T16:36:11.000Z",
+  "updated_at": "2026-09-11T16:37:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers.js",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "distilbert",
+    "fill-mask",
+    "ja",
+    "base_model:line-corporation/line-distilbert-base-japanese",
+    "base_model:quantized:line-corporation/line-distilbert-base-japanese",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 850876978,
+  "storage_human": "851 MB",
+  "base_model": "line-corporation/line-distilbert-base-japanese",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vault 7: CIA Hacking Tools Revealed - WikiLeaks",
+      "url": "https://wikileaks.org/ciav7p1/",
+      "snippet": "How did WikiLeaks obtain each part of \"Vault 7\"? Sources trust WikiLeaks to not reveal information that might help identify them. Isn't …"
+    },
+    {
+      "title": "WikiLeaks",
+      "url": "https://wikileaks.org/",
+      "snippet": "In order to use the WikiLeaks public submission system as detailed above you can download the Tor Browser Bundle, which is a …"
+    },
+    {
+      "title": "Category:Central Intelligence Agency - WikiLeaks",
+      "url": "https://www.wikileaks.org/wiki/Category:Central_Intelligence_Agency",
+      "snippet": "The Central Intelligence Agency (CIA) is a civilian intelligence agency of the United States government responsible for providing …"
+    },
+    {
+      "title": "WikiLeaks - Vault 7: Projects",
+      "url": "https://wikileaks.org/vault7/",
+      "snippet": "Today, April 7th 2017, WikiLeaks releases Vault 7 \"Grasshopper\" -- 27 documents from the CIA's Grasshopper framework, a platform …"
+    },
+    {
+      "title": "Leaked Files - WikiLeaks",
+      "url": "https://wikileaks.org/wiki/Leaked_Files",
+      "snippet": "CIA report into shoring up Afghan war support in Western Europe, 11 Mar 2010 Update to over 40 billion euro in 28167 claims made …"
+    }
+  ]
+}

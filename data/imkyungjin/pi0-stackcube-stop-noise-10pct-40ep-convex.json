@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-stop-noise-10pct-40ep-convex",
+  "slug": "imkyungjin-pi0-stackcube-stop-noise-10pct-40ep-convex",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-stop-noise-10pct-40ep-convex",
+  "created_at": "2026-09-11T17:44:26.000Z",
+  "updated_at": "2026-09-11T17:47:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_stop_noise_10pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Domino's Pizza | Türkiye’nin En Sevilen Pizza Markası",
+      "url": "https://www.dominos.com.tr/",
+      "snippet": "Pizza Sosu, Mozzarella, Sucuk, Mantar, Siyah Zeytin, Cheddar Sos, Yöresel Lezzetler Baharatı. Mozzarella Peyniri , Pizza Sos, …"
+    },
+    {
+      "title": "Pizza yemeği siparişi - İstanbul - Yemeksepeti",
+      "url": "https://www.yemeksepeti.com/city/istanbul/cuisine/pizza",
+      "snippet": "İstanbul ilindeki Pizza restoranlarından online yemek siparişi vermek için tıklayın."
+    },
+    {
+      "title": "İstanbul'daki En İyi Pizzacılar: İstanbul'un En İyi 10 Pizza Mekanı ...",
+      "url": "https://yemek.com/istanbuldaki-en-iyi-pizzacilar/",
+      "snippet": "Feb 15, 2022 · Ama şehirdeki en lezzetli pizzacıları keşfetmekten de geri kalacak değiliz! İşte bu yüzden sizin için İstanbul'daki en iyi …"
+    },
+    {
+      "title": "En İyi 10 Pizza Restoranı - İstanbul - Tripadvisor",
+      "url": "https://www.tripadvisor.com.tr/Restaurants-g293974-c31-Istanbul.html",
+      "snippet": "huzurlu, sakin, hijyenik, mukemmel dekor ve atmosfer... 19. Olea Pizzeria."
+    },
+    {
+      "title": "Domino's İstanbul Pizza Siparişi | Domino's İstanbul Şubeleri",
+      "url": "https://www.dominos.com.tr/subeler/istanbul",
+      "snippet": "Domino's İstanbul pizza gönderim yerlerini öğren ve online sipariş ver!"
+    }
+  ]
+}

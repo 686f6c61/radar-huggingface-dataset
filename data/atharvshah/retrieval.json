@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "atharvshah/retrieval",
+  "slug": "atharvshah-retrieval",
+  "author": "atharvshah",
+  "url": "https://huggingface.co/atharvshah/retrieval",
+  "created_at": "2026-09-11T12:25:43.000Z",
+  "updated_at": "2026-09-11T12:25:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is FlexJobs worth it? : r/remotework - Reddit",
+      "url": "https://www.reddit.com/r/remotework/comments/17bllt7/is_flexjobs_worth_it/",
+      "snippet": "I tried Flexjobs years ago, and was considering the 14-day trial again because of so many scams on both Indeed and LinkedIn. I don't …"
+    },
+    {
+      "title": "What job sites is everyone using? : r/jobs - Reddit",
+      "url": "https://www.reddit.com/r/jobs/comments/18wzqxe/what_job_sites_is_everyone_using/",
+      "snippet": "Hey y’all! Any suggestions for job sites? Indeed is getting exhausting and without hearing much of anything back. Just curious if there …"
+    },
+    {
+      "title": "steam上买的饥荒联机版，买一送一，我怎么送给好友？ - 知乎",
+      "url": "https://www.zhihu.com/question/444586217",
+      "snippet": "看到饥荒我就点进来了，先占个坑位，慢慢打字。 如果题主还没有购买，那么有两种方案。 方案一（自己已有饥荒联机版）：选择12 …"
+    },
+    {
+      "title": "论文中引用网页内容在文中怎么标注？ - 知乎",
+      "url": "https://www.zhihu.com/question/457765989",
+      "snippet": "① 主要责任者：作者名字；如果没有作者，可以写这篇报道的责任机构，比如说央视网、XXX研究所、XXX局等； ② 题名：这一项一 …"
+    },
+    {
+      "title": "Is there anything better than Indeed for job listings? - Reddit",
+      "url": "https://www.reddit.com/r/jobs/comments/5u8ovd/is_there_anything_better_than_indeed_for_job/",
+      "snippet": "Browsing sites like Indeed seems so boring and discouraging because 1) I don't know what I want to do now. and 2) There are …"
+    }
+  ]
+}

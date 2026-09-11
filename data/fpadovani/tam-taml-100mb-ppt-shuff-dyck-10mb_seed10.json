@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed10",
+  "slug": "fpadovani-tam-taml-100mb-ppt-shuff-dyck-10mb_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed10",
+  "created_at": "2026-09-11T16:53:03.000Z",
+  "updated_at": "2026-09-11T17:03:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/tam_taml_100mb",
+    "base_model:finetune:goldfish-models/tam_taml_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 1998450579,
+  "storage_human": "2.0 GB",
+  "base_model": "goldfish-models/tam_taml_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - kwentra",
+      "url": "https://manage.kwentra.com/account/login/",
+      "snippet": "Login Enter your credentials. You have attempted to login 3 times, with no success. Username: Password: Forgot password?"
+    },
+    {
+      "title": "Login - manage.kwentra.com",
+      "url": "https://manage.kwentra.com/frontoffice/",
+      "snippet": "Forgot password?"
+    },
+    {
+      "title": "kwentra | Home",
+      "url": "https://www.kwentra.com/",
+      "snippet": "kwentra is very knowledgeable about our industry, and their teams are keen to help. The system streamlines front office operations …"
+    },
+    {
+      "title": "kwentra POS",
+      "url": "https://manage.kwentra.com/pos/customerdisplay",
+      "snippet": "Loading..."
+    },
+    {
+      "title": "kwentra Insights",
+      "url": "https://manage.kwentra.com/insights/",
+      "snippet": "Gain valuable insights into your business operations and performance with kwentra Insights."
+    }
+  ]
+}

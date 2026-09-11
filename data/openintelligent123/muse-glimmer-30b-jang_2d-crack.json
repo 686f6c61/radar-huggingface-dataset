@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/Muse-Glimmer-30B-JANG_2D-CRACK",
+  "slug": "openintelligent123-muse-glimmer-30b-jang_2d-crack",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/Muse-Glimmer-30B-JANG_2D-CRACK",
+  "created_at": "2026-09-11T15:32:42.000Z",
+  "updated_at": "2026-09-11T15:32:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "muse_glimmer",
+    "apple-silicon",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "jang",
+    "jang-2d",
+    "vision-language",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "atem",
+    "harmbench",
+    "mmlu",
+    "muse-glimmer",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 15918732594,
+  "storage_human": "15.9 GB",
+  "base_model": "OsaurusAI/Muse-Glimmer-30B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "دم الحيض: كل ما تحتاجين معرفته عن الدورة الشهرية",
+      "url": "https://samirabdelghaffar.com/menstrual-blood/",
+      "snippet": "May 13, 2026 · تعرفي على دم الحيض، أسبابه، ألوانه المختلفة، ومدته الطبيعية. اكتشفي العلاقة بين الدورة الشهرية، الهرمونات، والحمل، وكيف يؤثر التدفق على صحة المرأة."
+    },
+    {
+      "title": "نزول دم الدورة قليل ولونه بني غامق - مفاهيم",
+      "url": "https://mafahem.com/%D9%86%D8%B2%D9%88%D9%84-%D8%AF%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D9%82%D9%84%D9%8A%D9%84-%D9%88%D9%84%D9%88%D9%86%D9%87-%D8%A8%D9%86%D9%8A-%D8%BA%D8%A7%D9%85%D9%82",
+      "snippet": "Jul 28, 2025 · تعرفي على أسباب نزول دم الدورة قليل ولونه بني غامق، ومتى يكون الأمر طبيعيًا أو مؤشرًا على وجود مشكلة صحية. دليل شامل يهم كل امرأة."
+    },
+    {
+      "title": "لون دم الدورة الشهرية: علامَ يدل كل لون؟ ومتى تقلقي؟",
+      "url": "https://www.modonty.com/articles/%D9%84%D9%88%D9%86-%D8%AF%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%D8%A9-%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D9%87%D8%B1%D9%85%D9%88%D9%86%D8%A7%D8%AA",
+      "snippet": "Jul 26, 2026 · تعرفي على لون دم الدورة الشهرية: الفرق بين البني الغامق والأحمر الداكن والأسود، والأسباب الكامنة وراء كل لون، ومتى تحتاجين إلى استشارة الطبيبة."
+    },
+    {
+      "title": "سبب رائحة دم الدورة الشهرية الكريهة والوقاية منها | الطبي",
+      "url": "https://altibbi.com/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D8%B7%D8%A8%D9%8A%D8%A9/%D8%A7%D9%85%D8%B1%D8%A7%D8%B6-%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%D8%A9/%D8%B1%D8%A7%D8%A6%D8%AD%D8%A9-%D8%AF%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%D8%A9-4476",
+      "snippet": "نتعرف في هذا المقال على رائحة دم الدورة الطبيعية، وما سبب وجود رائحة كريهة في دم الدورة الشهرية بما في ذلك رائحة دم الدورة مثل السمك."
+    },
+    {
+      "title": "دم الحيض: كل ما تحتاجين معرفته عن دورتك الشهرية",
+      "url": "https://adenomyosisclinic.com/dam-elhed/",
+      "snippet": "May 14, 2026 · تعتمد طبيعة دم الدورة الشهرية على توازن الهرمونات داخل جسم المرأة. عندما تكون الهرمونات متوازنة، يكون تدفق الدورة منتظمًا، بينما يمكن أن تؤدي الاضطرابات الهرمونية إلى …"
+    }
+  ]
+}

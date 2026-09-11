@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "minhtanmtst/Kokoro-Vietnamese",
+  "slug": "minhtanmtst-kokoro-vietnamese",
+  "author": "minhtanmtst",
+  "url": "https://huggingface.co/minhtanmtst/Kokoro-Vietnamese",
+  "created_at": "2026-09-11T16:31:41.000Z",
+  "updated_at": "2026-09-11T16:31:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "kokoro",
+    "vietnamese",
+    "text-to-speech",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 660290189,
+  "storage_human": "660 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.ro/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ro",
+      "snippet": "Publicitate Totul despre Google Google.com in English © 2026 - Confidențialitate - Termeni"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Google - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Google",
+      "snippet": "Google LLC (/ ˈɡuː.ɡəl / ⓘ, GOO-gəl) is an American multinational technology corporation focused on information technology, online …"
+    }
+  ]
+}

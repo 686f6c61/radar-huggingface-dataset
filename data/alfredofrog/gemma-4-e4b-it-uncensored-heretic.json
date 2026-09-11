@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Alfredofrog/gemma-4-E4B-it-uncensored-heretic",
+  "slug": "alfredofrog-gemma-4-e4b-it-uncensored-heretic",
+  "author": "Alfredofrog",
+  "url": "https://huggingface.co/Alfredofrog/gemma-4-E4B-it-uncensored-heretic",
+  "created_at": "2026-09-11T15:05:37.000Z",
+  "updated_at": "2026-09-11T15:05:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "any-to-any",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765664,
+  "storage_human": "16.0 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oats and Phytic Acid: What You Need to Know for Better Nutrient ...",
+      "url": "https://thelivinglook.com/kitchen-hacks/oats-and-phytic-acid-what-you-need-to-know",
+      "snippet": "May 22, 2026 · Learn how phytic acid in oats affects mineral absorption—and practical, evidence-informed ways to reduce it: soaking, …"
+    },
+    {
+      "title": "A Review of Health-Beneficial Properties of Oats - MDPI",
+      "url": "https://www.mdpi.com/2304-8158/10/11/2591",
+      "snippet": "Oct 26, 2021 · The consumption of oats has been determined to be beneficial for human health by promoting immunomodulation and …"
+    },
+    {
+      "title": "Does Oatmeal Block Calcium Absorption? - Biology Insights",
+      "url": "https://biologyinsights.com/does-oatmeal-block-calcium-absorption/",
+      "snippet": "Oats contain a compound that can bind to minerals, including calcium, within the digestive tract, preventing their full uptake. In the …"
+    },
+    {
+      "title": "A High Oat-Bran Intake Does Not Impair Zinc Absorption",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0022316622139568",
+      "snippet": "Mar 1, 2000 · Oat bran has a high phytate content and a low or inactivated phytase activity. A high intake of oat bran could therefore …"
+    },
+    {
+      "title": "Does Oatmeal Block Vitamin Absorption? Unveiling the Truth",
+      "url": "https://meatcheftools.com/does-oatmeal-block-vitamin-absorption/",
+      "snippet": "Jun 25, 2025 · While oatmeal may affect mineral absorption, it’s important to note that a balanced diet rich in various nutrients often …"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-BUDGET-GGUF",
+  "slug": "esatapedico-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-nvfp4-budget-gguf",
+  "author": "esatapedico",
+  "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-BUDGET-GGUF",
+  "created_at": "2026-09-11T19:04:49.000Z",
+  "updated_at": "2026-09-11T19:05:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "qwen3.8",
+    "qwen3.5",
+    "blackwell",
+    "vision",
+    "multimodal",
+    "llama.cpp",
+    "turbo",
+    "twin-turbo",
+    "fable",
+    "cold-fusion",
+    "text-generation",
+    "en",
+    "multilingual",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998720,
+  "parameters_human": "26.90B",
+  "storage_bytes": 29316525888,
+  "storage_human": "29.3 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Do I Setup IRIS Workstation On A New PC? - IRIS Software",
+      "url": "https://www.iris.co.uk/support/knowledgebase/kb/IAS-6723/",
+      "snippet": "Sep 2, 2008 · How do I setup the IRIS Workstation on a New pc? For new installations and as required for certain upgrades, each …"
+    },
+    {
+      "title": "Installation guides - help-iris.co.uk",
+      "url": "https://help-iris.co.uk/IRIS/ODL/Technical/Installation_Guides/Installation_Guides.htm",
+      "snippet": "The content available in this section explain the processes of installing and upgrading IRIS Accountancy Suite Software including any …"
+    },
+    {
+      "title": "Installing a network version of IRIS",
+      "url": "https://help-iris.co.uk/IRIS/ODL/Technical/Installing,_moving,_repairing_and_updating_IRIS_/Installing_IRIS/Installing_a_network_version_of_IRIS.htm",
+      "snippet": "This topic provides an outline of the process and links to how to guides and video walkthroughs for all the main processes involved in …"
+    },
+    {
+      "title": "Support | IRIS - IRIS Software",
+      "url": "https://www.iris.co.uk/support/",
+      "snippet": "Find all the support you need right here!"
+    },
+    {
+      "title": "IRIS Software Group | Business Management Solutions",
+      "url": "https://www.irisglobal.com/",
+      "snippet": "IRIS provides the tools and expertise your accounting, payroll, and HR teams need to stay compliant and efficient. Our integrated …"
+    }
+  ]
+}

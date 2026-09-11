@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_keep60_disc_b001",
+  "slug": "jeesup-svd-safety-l31_keep60_disc_b001",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_keep60_disc_b001",
+  "created_at": "2026-09-11T15:29:14.000Z",
+  "updated_at": "2026-09-11T15:31:54.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Q Talk - Blogs & Forums",
+      "url": "https://community.qvc.com/t5/Q-Talk/bd-p/28?msockid=267fdebd348b6d622720c96c35cb6c3a",
+      "snippet": "16 hours ago · Join Q Talk on QVC's Blogs & Forums to discuss topics and share insights with the community."
+    },
+    {
+      "title": "Fed Ex Ground Economy Versus USPS Ground Advantage",
+      "url": "https://community.ebay.com/forum/selling-57920/topic/fed-ex-ground-economy-versus-usps-ground-advantage-472408/",
+      "snippet": "Aug 1, 2026 · Summary: blackssilvershop shared their thought process on choosing between FedEx Ground Economy and USPS for …"
+    },
+    {
+      "title": "Community Chat - Blogs & Forums",
+      "url": "https://community.qvc.com/t5/Community-Chat/bd-p/35?msockid=267fdebd348b6d622720c96c35cb6c3a",
+      "snippet": "16 hours ago · View All Forum Topics View All Blogs New Message"
+    },
+    {
+      "title": "Seating Charts | FedExForum - Home of the Memphis Grizzlies",
+      "url": "https://www.fedexforum.com/seating",
+      "snippet": "Home of the Memphis Grizzlies"
+    },
+    {
+      "title": "Memphis Grizzlies vs. Minnesota Timberwolves - FedExForum",
+      "url": "https://www.fedexforum.com/events/detail/memphis-grizzlies-vs-minnesota-timberwolves",
+      "snippet": "Home of the Memphis Grizzlies Memphis Grizzlies vs. Minnesota Timberwolves Giveaway: Classic Edition Super Grizz Squish Grizz’ …"
+    }
+  ]
+}

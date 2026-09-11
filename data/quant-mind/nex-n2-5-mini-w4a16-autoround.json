@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "quant-mind/Nex-N2.5-mini-W4A16-AutoRound",
+  "slug": "quant-mind-nex-n2-5-mini-w4a16-autoround",
+  "author": "quant-mind",
+  "url": "https://huggingface.co/quant-mind/Nex-N2.5-mini-W4A16-AutoRound",
+  "created_at": "2026-09-11T12:51:43.000Z",
+  "updated_at": "2026-09-11T13:01:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "auto-round",
+    "intel",
+    "w4a16",
+    "int4",
+    "gptq",
+    "vllm",
+    "sglang",
+    "marlin",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "text-generation",
+    "agentic",
+    "conversational",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:finetune:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le moteur de recherche dont vous êtes l’utilisateur, pas le ... - Qwant",
+      "url": "https://www.qwant.com/?l=fr",
+      "snippet": "Des réponses fiables et rapides, et toujours en confiance : Qwant ne conserve pas vos données de recherche, ne vend pas vos …"
+    },
+    {
+      "title": "The search engine that values you as a user, not as a product",
+      "url": "https://www.qwant.com/",
+      "snippet": "Fast, reliable answers and still in trust: Qwant does not store your search data, does not sell your personal data and is hosted in …"
+    },
+    {
+      "title": "« quand » ou « quant » ? - Orthographe Projet Voltaire",
+      "url": "https://www.projet-voltaire.fr/regles-orthographe/quand-ou-quant/",
+      "snippet": "Nos experts vous expliquent la règle : « quand » ou « quant » ? - Astuces et exercices corrigés pour écrire sans fautes !"
+    },
+    {
+      "title": "Quand et quant : quelle différence - La langue française",
+      "url": "https://www.lalanguefrancaise.com/orthographe/quand-ou-quant",
+      "snippet": "Nov 8, 2021 · Vous savez désormais tout sur les différences d'emploi de « quand » et « quant » ! Pour approfondir vos …"
+    },
+    {
+      "title": "Comment écrire correctement : quand à ou quant à",
+      "url": "https://eduforge.org/comment-ecrire-correctement-quand-a-ou-quant-a/",
+      "snippet": "Il est fréquent de constater une confusion entre les suites de mots « quant à » et « quand à » . Pourtant, il existe une règle très …"
+    }
+  ]
+}

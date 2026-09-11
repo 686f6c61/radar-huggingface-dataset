@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-150",
+  "slug": "yuxuanw8-qwen3b-rlvr-hotpot-checkpoint-150",
+  "author": "yuxuanw8",
+  "url": "https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-150",
+  "created_at": "2026-09-11T12:09:27.000Z",
+  "updated_at": "2026-09-11T12:12:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355226095,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steam如何批量出售物品？ - 知乎",
+      "url": "https://www.zhihu.com/question/367402136",
+      "snippet": "一些常用的游戏id有 CSGO 730 DOTA2 570 Steam社区 753 至于链接里面的 contextid 我不是很清楚这对应的是什么 我只知道如果在 …"
+    },
+    {
+      "title": "Intel (R) UHD Graphics是什么类型的显卡？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/1996342755",
+      "snippet": "Intel (R) HD Graphics，这个中文字面意思是，intel芯片自带的集成显卡~ 这个显卡的性能是变化的，基本上都是入门级的，俗称点亮 …"
+    },
+    {
+      "title": "【インクジェットプリンター】サポート番号5100/C000 が表示された …",
+      "url": "https://faq.canon.jp/app/answers/detail/a_id/103738/~/%E3%80%90%E3%82%A4%E3%83%B3%E3%82%AF%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF%E3%83%BC%E3%80%91%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E7%95%AA%E5%8F%B75100%2Fc000-%E3%81%8C%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%96%B9%E6%B3%95%E3%82%92%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84",
+      "snippet": "Aug 20, 2026 · プリンターの画面やパソコンのエラーメッセージに、「5100」「C000」のサポート番号が表示された場合の対処方 …"
+    },
+    {
+      "title": "【Satera MFP】MF7450N/7350N/7330機種仕様 - キヤノン",
+      "url": "https://faq.canon.jp/app/answers/detail/a_id/38648/~/%E3%80%90satera-mfp%E3%80%91mf7450n%2F7350n%2F7330%E6%A9%9F%E7%A8%AE%E4%BB%95%E6%A7%98",
+      "snippet": "Sep 11, 2007 · 更新日：2022年04月01日 文書番号：38648"
+    },
+    {
+      "title": "宝骏社区 - 太平洋汽车社区",
+      "url": "https://bbs.pcauto.com.cn/forum-17177.html",
+      "snippet": "Dec 21, 2025 · 宝骏的这款华境S，现在终于是有人拍到实车了。搭载1.5T插混系统，纯电续航175km，此外还将配备华为舱内激光雷 …"
+    }
+  ]
+}

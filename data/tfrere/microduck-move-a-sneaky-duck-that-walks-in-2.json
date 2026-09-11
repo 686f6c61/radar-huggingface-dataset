@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-a-sneaky-duck-that-walks-in-2",
+  "slug": "tfrere-microduck-move-a-sneaky-duck-that-walks-in-2",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-a-sneaky-duck-that-walks-in-2",
+  "created_at": "2026-09-11T15:07:46.000Z",
+  "updated_at": "2026-09-11T15:07:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "academy",
+    "family:velocity",
+    "kind:perpetual",
+    "tier:1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5637213,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Character.AI - Reddit",
+      "url": "https://www.reddit.com/r/CharacterAI/",
+      "snippet": "Character.AI lets you create and talk to advanced AI - language tutors, text adventure games, life advice, brainstorming and much …"
+    },
+    {
+      "title": "What does 'COLLATE SQL_Latin1_General_CP1_CI_AS' do?",
+      "url": "https://stackoverflow.com/questions/5039211/what-does-collate-sql-latin1-general-cp1-ci-as-do",
+      "snippet": "It runs fine. While rest of the SQL is clear to be I am quite confused about the functionality of COLLATE …"
+    },
+    {
+      "title": "vim - Redefine tab as 4 spaces - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces",
+      "snippet": "Dec 10, 2009 · @heinrich5991 My argument is \"use as little as possible to readily identify an indented line\". By my estimation, one's …"
+    },
+    {
+      "title": "know any alternitives to c.ai that are free and mabey even better",
+      "url": "https://www.reddit.com/r/CharacterAI_No_Filter/comments/15xd0du/know_any_alternitives_to_cai_that_are_free_and/",
+      "snippet": "Aug 21, 2023 · We just launched the beta for KinkTalk AI. Check it out if you’d like and let us know any feedback :) We are a small …"
+    },
+    {
+      "title": "如何评价beta版本的Character.AI? - 知乎",
+      "url": "https://www.zhihu.com/question/555557277/answers/updated",
+      "snippet": "我在Character.AI上创建了一个角色，设定为睿智的商人，并问他Character.AI如何赚钱和其他一些问题，他的回答很实在（于是我把 …"
+    }
+  ]
+}

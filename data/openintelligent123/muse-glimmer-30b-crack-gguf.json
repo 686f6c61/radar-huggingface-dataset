@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/Muse-Glimmer-30B-CRACK-GGUF",
+  "slug": "openintelligent123-muse-glimmer-30b-crack-gguf",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/Muse-Glimmer-30B-CRACK-GGUF",
+  "created_at": "2026-09-11T15:32:29.000Z",
+  "updated_at": "2026-09-11T15:32:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "muse-glimmer",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "reasoning",
+    "tool-use",
+    "atem",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:quantized:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 61084124128,
+  "storage_human": "61.1 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaufvertrag ebay - Vertragsschluss, Widerruf & Rücktritt",
+      "url": "https://www.juraforum.de/lexikon/kaufvertrag-ebay",
+      "snippet": "Mar 16, 2026 · Ein Kaufvertrag kommt durch zwei Willenserklärungen – Angebot und Annahme – zustande. Obgleich im Rahmen von …"
+    },
+    {
+      "title": "eBay Rückgaberecht bei einem Privatverkauf - JuraForum.de",
+      "url": "https://www.juraforum.de/lexikon/ebay-rueckgaberecht",
+      "snippet": "May 26, 2026 · Viele Privatleute, die über eBay etwas verkaufen, wollen ihre Haftung ausschließen. Doch wie sieht es mit dem eBay …"
+    },
+    {
+      "title": "Verwendung eines Markennamens in der Artikelbeschreibung bei eBay ...",
+      "url": "https://www.123recht.de/ratgeber/internetrecht-computerrecht/Verwendung-eines-Markennamens-in-der-Artikelbeschreibung-bei-eBay-__a17323.html",
+      "snippet": "Verwendung eines Markennamens in der Artikelbeschreibung bei eBay Von Rechtsanwältin Nina Marx Ratgeber - Internetrecht, …"
+    },
+    {
+      "title": "Ebay Kleinanzeigen - Käufer möchte vom Kauf Zurücktreten.",
+      "url": "https://www.123recht.de/forum/kaufrecht/Ebay-Kleinanzeigen-Kaeufer-moechte-vom-Kauf-Zuruecktreten-__f521848.html",
+      "snippet": "Jun 22, 2017 · Ebay Kleinanzeigen - Käufer möchte vom Kauf Zurücktreten. Hallo, ich habe auf eBay Kleinanzeigen ein Tablet …"
+    },
+    {
+      "title": "eBay-Kleinanzeigen: Waren beschädigt - Rückerstattung?",
+      "url": "https://www.123recht.de/forum/internetauktionen/eBay-Kleinanzeigen-Waren-beschaedigt-Rueckerstattung-__f509679.html",
+      "snippet": "Sep 22, 2016 · Status: Frischling(2 Beiträge, 0x hilfreich) eBay-Kleinanzeigen: Waren beschädigt - Rückerstattung? Hallo, ich habe …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/K2-Horizon-0.9B-chat-mlx-4bit",
+  "slug": "sirsahol-k2-horizon-0-9b-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/K2-Horizon-0.9B-chat-mlx-4bit",
+  "created_at": "2026-09-11T16:49:59.000Z",
+  "updated_at": "2026-09-11T16:55:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "4-bit",
+    "conversational",
+    "text-generation",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-0.9B",
+    "base_model:quantized:IFM/K2-Horizon-0.9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1078285824,
+  "parameters_human": "1.08B",
+  "storage_bytes": 606734313,
+  "storage_human": "607 MB",
+  "base_model": "IFM/K2-Horizon-0.9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sky Q ARD Mediathek",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/sky-q-ard-mediathek/68364b74170e725f31772b08",
+      "snippet": "Nov 10, 2022 · Sky Q ARD Mediathek Hallo, wollte gerade auf dem Sky Q in der ARD Mediathek die PK zur Kadernominierung des …"
+    },
+    {
+      "title": "Ard und ZDF Mediatheken hängen - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/ard-und-zdf-mediatheken-h%C3%A4ngen/68367744170e725f31756699",
+      "snippet": "Mar 16, 2025 · Ard und ZDF Mediatheken hängen Seit ein pasr Tagen hängen beide Meditheken. Wollte schon Reciver zurücksetzen …"
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1498690/download-aus-ard-mediathek",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1711559/ard-live-stream-qualitaet-einstellen",
+      "snippet": ""
+    },
+    {
+      "title": "Desktop Snapshots | Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/category/83/desktop-snapshots",
+      "snippet": "Follow the latest public test version, aka Snapshot, updates, test the newest features and share your feedback. You'll find the latest …"
+    }
+  ]
+}

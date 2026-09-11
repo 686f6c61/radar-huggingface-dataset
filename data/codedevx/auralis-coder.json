@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "CodeDevX/auralis-coder",
+  "slug": "codedevx-auralis-coder",
+  "author": "CodeDevX",
+  "url": "https://huggingface.co/CodeDevX/auralis-coder",
+  "created_at": "2026-09-11T12:04:58.000Z",
+  "updated_at": "2026-09-11T12:19:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "ai",
+    "programming",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186317340,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Excel | Free Online Spreadsheets Software",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/excel?msockid=27555b3fb0df619923ff4ceeb1076096",
+      "snippet": "Microsoft Excel is the industry leading spreadsheet application and data analysis tool. Explore free spreadsheet software tools with …"
+    },
+    {
+      "title": "Kalkulationstabellen kostenlos online bearbeiten | Microsoft Excel für ...",
+      "url": "https://excel.cloud.microsoft/de-de/",
+      "snippet": "Erstellen und Bearbeiten von Kalkulationstabellen online mit Microsoft Excel für das Web. Einfache Formatierung, Analyse und …"
+    },
+    {
+      "title": "Microsoft Excel | Kostenlose Online-Tabellenkalkulationssoftware",
+      "url": "https://www.microsoft.com/de-de/microsoft-365/excel?msockid=27555b3fb0df619923ff4ceeb1076096",
+      "snippet": "Microsoft Excel ist die branchenführende Tabellenkalkulationsanwendung und ein Tool zur Datenanalyse. Entdecken Sie kostenlose …"
+    },
+    {
+      "title": "Edit spreadsheets online for free | Microsoft Excel for the Web",
+      "url": "https://excel.cloud.microsoft/en-gb/",
+      "snippet": "Create and edit spreadsheets online with Microsoft Excel for the web. Easy formatting, analysis, and real-time collaboration from any …"
+    },
+    {
+      "title": "Microsoft Excel - Download",
+      "url": "https://microsoft-excel.en.softonic.com/",
+      "snippet": "Sep 4, 2026 · Microsoft Excel is built for organizing data, running calculations, and turning tables into decisions. With Formulas and …"
+    }
+  ]
+}

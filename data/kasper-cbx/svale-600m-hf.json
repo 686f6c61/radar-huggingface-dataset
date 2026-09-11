@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kasper-cbx/svale-600M-hf",
+  "slug": "kasper-cbx-svale-600m-hf",
+  "author": "kasper-cbx",
+  "url": "https://huggingface.co/kasper-cbx/svale-600M-hf",
+  "created_at": "2026-09-11T12:45:24.000Z",
+  "updated_at": "2026-09-11T12:45:36.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_tdt",
+    "feature-extraction",
+    "danish",
+    "parakeet",
+    "automatic-speech-recognition",
+    "da",
+    "base_model:3dio-ai/svale-600M",
+    "base_model:finetune:3dio-ai/svale-600M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 627057286,
+  "parameters_human": "627.1M",
+  "storage_bytes": 2508311120,
+  "storage_human": "2.5 GB",
+  "base_model": "3dio-ai/svale-600M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaspr - Trouvez facilement des emails et des numéros de téléphone",
+      "url": "https://www.kaspr.io/fr/",
+      "snippet": "Kaspr est un logiciel prospection conçu pour vous aider à trouver des emails et des numéros de téléphone de prospects de qualité - …"
+    },
+    {
+      "title": "Find B2B Contact Data With Our LinkedIn Extension | Kaspr",
+      "url": "https://www.kaspr.io/",
+      "snippet": "Spend less time prospecting and hit your quota. Kaspr is a LinkedIn Chrome Extension and web app that gives you access to B2B …"
+    },
+    {
+      "title": "Téléchargements gratuits et versions d'essai de Kaspersky | Kaspersky",
+      "url": "https://www.kaspersky.fr/downloads",
+      "snippet": "Téléchargez les produits Kaspersky en version gratuite ou d'essai. Bénéficiez d'une protection antivirus optimale grâce à un logiciel …"
+    },
+    {
+      "title": "Solutions de cybersécurité Kaspersky pour particuliers et entreprises ...",
+      "url": "https://www.kaspersky.fr/",
+      "snippet": "Leader mondial de solutions et services de cybersécurité, Kaspersky offre une protection de haut niveau contre les cybermenaces …"
+    },
+    {
+      "title": "Kaspersky Cyber Security Solutions for Home and Business | Kaspersky",
+      "url": "https://www.kaspersky.com/",
+      "snippet": "Official Site – A Global Leader in next-generation cybersecurity solutions and services, Kaspersky offers premium protection against …"
+    }
+  ]
+}

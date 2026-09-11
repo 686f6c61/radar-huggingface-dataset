@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "easyminnn/atq-labelgated-2.5x-vlm_contact-60k",
+  "slug": "easyminnn-atq-labelgated-2-5x-vlm_contact-60k",
+  "author": "easyminnn",
+  "url": "https://huggingface.co/easyminnn/atq-labelgated-2.5x-vlm_contact-60k",
+  "created_at": "2026-09-11T16:53:55.000Z",
+  "updated_at": "2026-09-11T17:00:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "vla",
+    "gr00t",
+    "robocasa",
+    "action-chunk-compression",
+    "mixture-of-experts",
+    "base_model:nvidia/GR00T-N1.5-3B",
+    "base_model:finetune:nvidia/GR00T-N1.5-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2829861577,
+  "parameters_human": "2.83B",
+  "storage_bytes": 8008866860,
+  "storage_human": "8.0 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=0c79e212bfeb624c147cf5c3be05638a",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103?msockid=0c79e212bfeb624c147cf5c3be05638a",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vinted | Sell and buy clothes, shoes and accessories",
+      "url": "https://www.vinted.com/",
+      "snippet": "One community, thousands of brands, and a whole lot of second-hand style. Ready to get started? Here’s how it works."
+    },
+    {
+      "title": "Articles | Vinted",
+      "url": "https://www.vinted.fr/brand/vintage?msockid=0c79e212bfeb624c147cf5c3be05638a",
+      "snippet": "Vendu à l’unité ou en lot. 3,85 €incl. 32,15 €incl. 1,75 €incl. 7,00 €incl. 1,75 €incl. 2,28 €incl. 1,75 €incl. 7,00 €incl. 1,75 €incl. 5,95 …"
+    },
+    {
+      "title": "Vêtements | Explore les vêtements de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/4-clothing?msockid=0c79e212bfeb624c147cf5c3be05638a",
+      "snippet": "Parcours les vêtements de seconde main pour femmes sur Vinted. Déniche des pièces uniques à prix tout doux et achète et vends …"
+    }
+  ]
+}

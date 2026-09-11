@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "guga112/gemma-4-E4B-it-heretic-QAT-GGUF",
+  "slug": "guga112-gemma-4-e4b-it-heretic-qat-gguf",
+  "author": "guga112",
+  "url": "https://huggingface.co/guga112/gemma-4-E4B-it-heretic-QAT-GGUF",
+  "created_at": "2026-09-11T13:14:20.000Z",
+  "updated_at": "2026-09-11T13:14:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "qat",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "gemma4",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:coder3101/gemma-4-E4B-it-qat-q4_0-unquantized-heretic",
+    "base_model:quantized:coder3101/gemma-4-E4B-it-qat-q4_0-unquantized-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 5246813888,
+  "storage_human": "5.2 GB",
+  "base_model": "coder3101/gemma-4-E4B-it-qat-q4_0-unquantized-heretic, google/gemma-4-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Slides: Sign-in",
+      "url": "https://docs.google.com/presentation/u/0/",
+      "snippet": "Access Google Slides with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Sign in - Google Drive",
+      "url": "https://drive.google.com/drive/u/0/my-drive",
+      "snippet": "Sign in to Google Drive to access, store, and share your files securely from anywhere."
+    },
+    {
+      "title": "Google News",
+      "url": "https://news.google.com/home?hl=it&ceid=IT%3Ait",
+      "snippet": "Google News provides personalized coverage of global and local news, keeping you informed about topics that matter most to you."
+    },
+    {
+      "title": "Get Listed on Google - Google Business Profile",
+      "url": "https://business.google.com/us/business-profile/",
+      "snippet": "List your business on Google with a free Business Profile. Turn people who find you on Search &amp;amp; Maps into new customers."
+    }
+  ]
+}

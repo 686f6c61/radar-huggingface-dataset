@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DanielWalkerduf/image-captioning-study",
+  "slug": "danielwalkerduf-image-captioning-study",
+  "author": "DanielWalkerduf",
+  "url": "https://huggingface.co/DanielWalkerduf/image-captioning-study",
+  "created_at": "2026-09-11T17:28:29.000Z",
+  "updated_at": "2026-09-11T17:28:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Vad är Power Query? - Power Query | Microsoft Learn",
+      "url": "https://learn.microsoft.com/sv-se/power-query/power-query-what-is-power-query",
+      "snippet": "Nov 21, 2025 · Power Query hjälper dig att ansluta till data, omforma dem och spara transformeringsstegen som en upprepningsbar …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "Query - definition of query by The Free Dictionary",
+      "url": "https://www.thefreedictionary.com/query",
+      "snippet": "query , inquiry, enquiry - A query is a single question; an inquiry (or enquiry) may be a single question or extensive investigation (i.e. …"
+    },
+    {
+      "title": "query - Engelsk-svensk ordbok - WordReference.com",
+      "url": "https://www.wordreference.com/ensv/query",
+      "snippet": "Saknas något viktigt? Rapportera ett fel eller föreslå en förbättring. I listor: Things that can be canceled, essay words, c2 THINKING …"
+    }
+  ]
+}

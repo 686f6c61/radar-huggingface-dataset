@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RATHANSUMBET14/mediscribe-biobert-ner",
+  "slug": "rathansumbet14-mediscribe-biobert-ner",
+  "author": "RATHANSUMBET14",
+  "url": "https://huggingface.co/RATHANSUMBET14/mediscribe-biobert-ner",
+  "created_at": "2026-09-11T18:11:59.000Z",
+  "updated_at": "2026-09-11T18:12:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107723525,
+  "parameters_human": "107.7M",
+  "storage_bytes": 430917412,
+  "storage_human": "431 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les plus beaux slows de tout les temps - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLl2kRvtlwJtlJUoz7vbQ1WqrPaWBlqRoK",
+      "snippet": "Tout les slows mythiques et légendaires de ces 50 dernières années en Français, Anglais, Italiens, etc..."
+    },
+    {
+      "title": "Musique Romantique En Français - Les Plus Beaux Slows ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=o5d-XVB-_KI",
+      "snippet": "Aug 26, 2023 · Si cette musique vous fait plaisir, n'oubliez pas d'aimer et de partager ce mix sur les réseaux sociaux (Facebook, …"
+    },
+    {
+      "title": "Les plus beaux slows de tout les temps - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=PLl2kRvtlwJtlJUoz7vbQ1WqrPaWBlqRoK",
+      "snippet": "Tout les slows mythiques et légendaires de ces 50 dernières années en Français, Anglais, Italiens, etc..."
+    },
+    {
+      "title": "Convertisseur YouTube MP3 : toutes les solutions gratuites",
+      "url": "https://www.commentcamarche.net/image-son/audio/1755-convertisseur-youtube-mp3-toutes-les-solutions-gratuites/",
+      "snippet": "May 14, 2025 · Heureusement, il est tout fait possible de télécharger de la musique depuis YouTube pour l'écouter hors ligne, sans …"
+    },
+    {
+      "title": "Free Slow Music MP3 Download - Pixabay",
+      "url": "https://pixabay.com/fr/music/search/slow/",
+      "snippet": "Téléchargez slow pistes audio et instrumentaux libres de droits pour votre prochain projet. Synchronisez automatiquement votre …"
+    }
+  ]
+}

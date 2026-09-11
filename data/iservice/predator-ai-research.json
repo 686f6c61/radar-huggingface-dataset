@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "iservice/predator-ai-research",
+  "slug": "iservice-predator-ai-research",
+  "author": "iservice",
+  "url": "https://huggingface.co/iservice/predator-ai-research",
+  "created_at": "2026-09-11T16:24:30.000Z",
+  "updated_at": "2026-09-11T16:24:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ai-research",
+    "arxiv",
+    "machine-learning",
+    "nlp",
+    "computer-vision",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Balzac Seconde vie Seconde main",
+      "url": "https://secondevie.balzac-paris.fr/",
+      "snippet": "Estimez la valeur de vos vêtements Balzac Seconde vie en ligne ou en boutique, puis envoyez-les ou déposez-les gratuitement en …"
+    },
+    {
+      "title": "Envoyer vos pièces Balzac Paris",
+      "url": "https://secondevie.balzac-paris.fr/pages/sell",
+      "snippet": "Vendez simplement et gratuitement des vêtements Balzac Seconde vie. Estimez la valeur de vos vêtements Balzac Seconde vie, …"
+    },
+    {
+      "title": "LE CONCEPT - secondevie.balzac-paris.fr",
+      "url": "https://secondevie.balzac-paris.fr/pages/concept",
+      "snippet": "Estimez la valeur de vos vêtements Balzac Seconde vie en ligne ou en boutique, puis envoyez-les ou déposez-les gratuitement en …"
+    },
+    {
+      "title": "Vendre des vêtements Balzac Seconde vie gratuitement",
+      "url": "https://secondevie.balzac-paris.fr/pages/sell/choices",
+      "snippet": "Estimez la valeur de vos vêtements Balzac Seconde vie en ligne ou en boutique, puis envoyez-les par la poste ou déposez-les en …"
+    },
+    {
+      "title": "Vestes et manteaux Balzac Seconde main",
+      "url": "https://secondevie.balzac-paris.fr/collections/vestes-manteaux",
+      "snippet": "Découvrez notre sélection de vestes et manteaux pour femme de seconde main Balzac Paris. Manteaux longs, trenchs, vestes …"
+    }
+  ]
+}

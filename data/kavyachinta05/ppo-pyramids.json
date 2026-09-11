@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KavyaChinta05/ppo-Pyramids",
+  "slug": "kavyachinta05-ppo-pyramids",
+  "author": "KavyaChinta05",
+  "url": "https://huggingface.co/KavyaChinta05/ppo-Pyramids",
+  "created_at": "2026-09-11T15:42:42.000Z",
+  "updated_at": "2026-09-11T15:42:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18733105,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "如何看待Deepseek Harness发布？ - 知乎",
+      "url": "https://www.zhihu.com/question/2071331484284220938",
+      "snippet": "有人说 DeepSeek 可以像 Gemini 一样继续憋个大的，没好货就不发。 但我觉得一来他们的确不在乎，二来既然已经有了核心的理念 …"
+    },
+    {
+      "title": "全网最详细谷歌Gemini注册教程|登录Gemini显示出了点问题稍后再试 …",
+      "url": "https://bbs.huaweicloud.com/blogs/482166",
+      "snippet": "Jul 16, 2026 · Gemini登陆出现问题的原因分析 经过这几天的努力，总算找到了成功使用Gemini的注册方法，下面是我成功打开Gemini …"
+    }
+  ]
+}

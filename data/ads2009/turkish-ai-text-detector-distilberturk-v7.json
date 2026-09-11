@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-distilberturk-v7",
+  "slug": "ads2009-turkish-ai-text-detector-distilberturk-v7",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v7",
+  "created_at": "2026-09-11T19:38:06.000Z",
+  "updated_at": "2026-09-11T19:38:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68090114,
+  "parameters_human": "68.1M",
+  "storage_bytes": 272372984,
+  "storage_human": "272 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caffeine - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Caffeine",
+      "snippet": "Caffeine is a central nervous system stimulant that may reduce fatigue and drowsiness. [11] At normal doses, caffeine has variable …"
+    },
+    {
+      "title": "7 Brew Menu",
+      "url": "https://7brew.com/menu",
+      "snippet": "Explore the 7 Brew Coffee menu with over 20,000 drink combinations, including coffee, energy drinks, smoothies, teas, and more. …"
+    },
+    {
+      "title": "History of coffee - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_coffee",
+      "snippet": "The Coffee Bearer by John Frederick Lewis (1857) Coffeepot, by French silversmith François-Thomas Germain, 1757, silver with …"
+    },
+    {
+      "title": "Nestlé: Good food, Good life | Nestlé Global",
+      "url": "https://www.nestle.com/",
+      "snippet": "Nestlé is the world's largest food & beverage company. We unlock the power of food and beverages to enhance quality of life for …"
+    },
+    {
+      "title": "咖啡（以烘焙研磨后的咖啡豆制成的饮品）_百度百科",
+      "url": "https://baike.baidu.com/item/%E5%92%96%E5%95%A1/29518",
+      "snippet": "咖啡（Coffee），是以烘焙研磨后的咖啡豆制成的饮品。“咖啡”一词源自阿拉伯语“قهوة”，意为“植物饮料”。它起源于非洲埃塞俄比亚， …"
+    }
+  ]
+}

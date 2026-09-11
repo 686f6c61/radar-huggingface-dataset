@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "astroos/meena-2-wealth",
+  "slug": "astroos-meena-2-wealth",
+  "author": "astroos",
+  "url": "https://huggingface.co/astroos/meena-2-wealth",
+  "created_at": "2026-09-11T13:21:19.000Z",
+  "updated_at": "2026-09-11T13:21:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Computational modeling of micro curing residual stress evolution …",
+      "url": "https://www.sciencedirect.com/science/article/pii/S026382232300716X",
+      "snippet": "Oct 15, 2023 · The evolution mechanism of micro curing residual stress and its effects on the out-of-plane tensile damage behavior in …"
+    },
+    {
+      "title": "Computational modeling of micro curing residual stress evolution …",
+      "url": "https://www.researchgate.net/publication/372433365_Computational_modeling_of_micro_curing_residual_stress_evolution_and_out-of-plane_tensile_damage_behavior_in_fiber-reinforced_composites",
+      "snippet": "Jul 1, 2023 · In this study, the micro curing residual stresses of carbon fiber-reinforced thermoset polymer (CFRP) composites are …"
+    },
+    {
+      "title": "Computational modeling of micro curing residual stress evolution …",
+      "url": "https://www.semanticscholar.org/paper/Computational-modeling-of-micro-curing-residual-and-Zhang-Ye/ebb774f28361752b542b3985af724dd61dbc9987",
+      "snippet": "Jul 1, 2023 · Abstract In this work, an integrated numerical approach for predicting the damage mechanism of unidirectional CFRP …"
+    },
+    {
+      "title": "Computational modeling of micro curing residual stress evolution …",
+      "url": "https://colab.ws/articles/10.1016%2Fj.compstruct.2023.117370",
+      "snippet": "This paper focus on revealing the evolution mechanism of micro curing residual stress and its impacts on the mechanical responses …"
+    },
+    {
+      "title": "Computational modeling of micro curing residual stress evolution …",
+      "url": "https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202302216815406956",
+      "snippet": "Computational modeling of micro curing residual stress evolution and out-of-plane tensile damage behavior in fiber-reinforced …"
+    }
+  ]
+}

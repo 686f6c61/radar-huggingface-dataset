@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yinheyiebi/PTCS-RL",
+  "slug": "yinheyiebi-ptcs-rl",
+  "author": "yinheyiebi",
+  "url": "https://huggingface.co/yinheyiebi/PTCS-RL",
+  "created_at": "2026-09-11T12:56:56.000Z",
+  "updated_at": "2026-09-11T12:56:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Robot koszący E+, bez akumulatora 04-621 - fixero.com",
+      "url": "https://fixero.com/robot-koszacy-e-bez-akumulatora-04-621.html",
+      "snippet": "Robot ten oferuje efektywne koszenie z szerokością cięcia 180 mm. Użytkownicy mogą ręcznie ustawić wysokość cięcia w zakresie …"
+    },
+    {
+      "title": "Fixero - Sklep z Narzędziami i Elektronarzędziami Online",
+      "url": "https://fixero.com/",
+      "snippet": "Fixero to internetowy sklep z narzędziami i elektronarzędziami, który oferuje także coś dla miłośników survivalu, a w tym oświetlenie …"
+    },
+    {
+      "title": "Roboty koszące - Największy wybór robotów koszących - Allegro",
+      "url": "https://allegro.pl/kategoria/kosiarki-roboty-koszace-260696",
+      "snippet": "Kup Roboty koszące ☝ taniej na Allegro.pl - Najwięcej ofert w jednym miejscu. Radość zakupów ⭐ 100% bezpieczeństwa dla …"
+    },
+    {
+      "title": "Elektronarzędzia Ogrodowe | Dobra Cena | Sklep Fixero",
+      "url": "https://fixero.com/dom-i-ogrod/elektronarzedzia-ogrodowe.html",
+      "snippet": "Jako sklep z narzędziami Fixero oferuje rozwiązania przydatne przy koszeniu, docinaniu, cięciu, czyszczeniu i usuwaniu …"
+    },
+    {
+      "title": "Dom i Ogród - Narzędzia i Akcesoria | Dobra Cena | Sklep Fixero",
+      "url": "https://fixero.com/dom-i-ogrod.html",
+      "snippet": "Fixero Dom i ogród - narzędzia i akcesoria ️ Darmowa dostawa od 150 zł ️ Szybka wysyłka i 30 dni na zwrot ️ Gwarancja …"
+    }
+  ]
+}

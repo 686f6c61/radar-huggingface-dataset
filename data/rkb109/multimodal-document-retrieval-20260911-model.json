@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/multimodal-document-retrieval-20260911-model",
+  "slug": "rkb109-multimodal-document-retrieval-20260911-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/multimodal-document-retrieval-20260911-model",
+  "created_at": "2026-09-11T17:02:23.000Z",
+  "updated_at": "2026-09-11T17:02:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "multimodal-ai",
+    "visual-document-retrieval",
+    "document-question-answering",
+    "image-to-text",
+    "feature-extraction",
+    "dataset:RKB109/multimodal-document-retrieval-20260911-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Obtener indicaciones y mostrar rutas en Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Con Google Maps, puedes obtener indicaciones para ir a un sitio en coche, en transporte público, a pie, en transporte compartido, en …"
+    },
+    {
+      "title": "How to Display Multiple Google Maps per page with API V3",
+      "url": "https://stackoverflow.com/questions/4074520/how-to-display-multiple-google-maps-per-page-with-api-v3",
+      "snippet": "Nov 2, 2010 · OP wanted two specific maps, but if you'd like to have a dynamic number of maps on one page (for instance a list of …"
+    },
+    {
+      "title": "Cómo encontrar tu ubicación y mejorar su precisión en Google Maps",
+      "url": "https://support.google.com/maps/answer/2839911?hl=es-419&co=GENIE.Platform%3DAndroid",
+      "snippet": "Google Maps puede tener dificultades para encontrar tu ubicación. Si la ubicación del GPS de tu punto azul no está en el mapa o no …"
+    },
+    {
+      "title": "Create Google Maps links based on coordinates - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/30544268/create-google-maps-links-based-on-coordinates",
+      "snippet": "Jan 21, 2024 · The currently accepted answer ends up adding an additional history entry in browsers at the moment as Google Maps …"
+    }
+  ]
+}

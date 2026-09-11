@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gmarti/ordinalicl-tabdpt-turbo",
+  "slug": "gmarti-ordinalicl-tabdpt-turbo",
+  "author": "gmarti",
+  "url": "https://huggingface.co/gmarti/ordinalicl-tabdpt-turbo",
+  "created_at": "2026-09-11T16:35:40.000Z",
+  "updated_at": "2026-09-11T16:35:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "ordinalicl_tabdpt",
+  "languages": [],
+  "tags": [
+    "ordinalicl_tabdpt",
+    "ordinal-classification",
+    "ordinal-regression",
+    "tabular-foundation-model",
+    "in-context-learning",
+    "tabdpt",
+    "tabular-classification",
+    "base_model:Layer6/TabDPT",
+    "base_model:finetune:Layer6/TabDPT",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6822832,
+  "storage_human": "7 MB",
+  "base_model": "Layer6/TabDPT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Genuine Nordson® 339696 Surebead Hot Melt Nozzle - .012 Orifice",
+      "url": "https://www.hotmelt.com/products/genuine-nordson-339696-surebead-hot-melt-nozzle-012-orifice",
+      "snippet": "The genuine Nordson® 339696 Surebead nozzle is a high-quality component for Nordson adhesive systems, featuring a .012 orifice …"
+    },
+    {
+      "title": "88 Geylang Bahru (S)339696 HDB Street - HDB Blocks, Flats for ... - SRX",
+      "url": "https://www.srx.com.sg/hdb/kallang-whampoa/geylang-bahru-hsgey0001/339696",
+      "snippet": "88 Geylang Bahru (S)339696 HDB 3 Rooms, a 99 Yrs property located at Kallang/Whampoa. View quality listings, recent …"
+    },
+    {
+      "title": "Singapore 339696 - RecordOwl",
+      "url": "https://recordowl.com/location/339696",
+      "snippet": "Business directory for Singapore postal code 339696. Find 9 active companies in this area."
+    },
+    {
+      "title": "339696 Nozzle by NORDSON - Radwell International",
+      "url": "https://www.radwell.com/Buy/NORDSON/NORDSON/339696?msockid=08fb65eeedda6e110535723fec146f3e",
+      "snippet": "339696 Machine Parts from NORDSON In Stock, Order Now! Same Day Shipping, 2-Year Warranty - , HOT MELT NOZZLE, …"
+    },
+    {
+      "title": "NORDSON 339696 NORDSON NOZZLE, PRECISION, .012 INCH …",
+      "url": "https://www.kempstoncontrols.com/339696/NORDSON/sku/3325519",
+      "snippet": "NORDSON 339696 NORDSON NOZZLE, PRECISION, .012 INCH ORIFICE, 14 MM HEX, distributed by Kempston Controls. …"
+    }
+  ]
+}

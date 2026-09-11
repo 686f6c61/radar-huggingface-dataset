@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "iservice/predator-biomedical",
+  "slug": "iservice-predator-biomedical",
+  "author": "iservice",
+  "url": "https://huggingface.co/iservice/predator-biomedical",
+  "created_at": "2026-09-11T16:24:19.000Z",
+  "updated_at": "2026-09-11T16:24:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "biomedical",
+    "pubmed",
+    "clinical-trials",
+    "research-data",
+    "europepmc",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.ie/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ie/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.ie/",
+      "snippet": "Google Earth is the most photorealistic, digital version of our planet. Where do the images come from? How are they they put …"
+    },
+    {
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.ie/",
+      "snippet": "Search the world's most comprehensive index of full-text books. Your library"
+    },
+    {
+      "title": "Application Security – Google",
+      "url": "https://m.google.ie/about/appsecurity/",
+      "snippet": "The content of this page has moved: https://about.google/appsecurity/."
+    }
+  ]
+}

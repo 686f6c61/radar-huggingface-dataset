@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-Float",
+  "slug": "macunaima-qwen3-0-6b-sm8650-litert-lm-float",
+  "author": "macunaima",
+  "url": "https://huggingface.co/macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-Float",
+  "created_at": "2026-09-11T19:05:27.000Z",
+  "updated_at": "2026-09-11T19:06:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "qwen3",
+    "litert-lm",
+    "tflite",
+    "qualcomm",
+    "sm8650",
+    "aot",
+    "on-device",
+    "float",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2682744028,
+  "storage_human": "2.7 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Veterans Day 2026 - Calendar Date",
+      "url": "https://www.calendardate.com/veterans_day_2026.htm",
+      "snippet": "Veterans Day 2026 is on Wednesday, November 11, honoring all veterans who have previously served in the United States Armed …"
+    },
+    {
+      "title": "Veterans Day 2026: November 11 Date & Federal Holiday",
+      "url": "https://holidayscalendars.com/en/united-states/holidays/veterans-day-2026/",
+      "snippet": "Veterans Day 2026 is on Wednesday, November 11. Check the date, federal holiday status, calendar details, closures, and how …"
+    },
+    {
+      "title": "Veterans Day 2026: Date, History & What's Open/Closed",
+      "url": "https://publicholidayshub.com/2026/veterans-day/",
+      "snippet": "Veterans Day 2026 is on Wednesday, November 11. Honors all military veterans. Originally Armistice Day marking WWI end. Most …"
+    },
+    {
+      "title": "Veterans Day 2026 – Nov 11: What's Open and Closed",
+      "url": "https://monthlycalendar.net/veterans-day-2026",
+      "snippet": "Jun 9, 2026 · Veterans Day 2026 is Wednesday, November 11. See what's open and closed, why the date never moves, and a free …"
+    },
+    {
+      "title": "Veterans Day 2026: Date, History & What’s Closed (Nov 11)",
+      "url": "https://www.nationalvaloans.com/military-calendar/veterans-day-2026",
+      "snippet": "Veterans Day 2026 falls on Wednesday, November 11, 2026. It is a federal holiday honoring everyone who has served in the United …"
+    }
+  ]
+}

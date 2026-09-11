@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Diane2909/TD_transfer_learning",
+  "slug": "diane2909-td_transfer_learning",
+  "author": "Diane2909",
+  "url": "https://huggingface.co/Diane2909/TD_transfer_learning",
+  "created_at": "2026-09-11T17:37:09.000Z",
+  "updated_at": "2026-09-11T17:37:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎t-online.de startseite e-mail | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/search?q=t-online.de+startseite+e-mail",
+      "snippet": "Ob Internet, Mobilfunk, TV oder E-Mail: Stellen Sie Ihre Frage und finden Sie Hilfe in der Telekom hilft Community."
+    },
+    {
+      "title": "‎neue T-online Startseite | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/sonstiges/neue-t-online-startseite/6688694a4ae73561dafd2e70",
+      "snippet": "Die neue t-online.de Startseite ist eine Katastrophe,sie baut langsamer auf und ist sehr unübersichtlich.Bitte bitte zur alten Seite …"
+    },
+    {
+      "title": "Einrichtung t-online. / e-Mail | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/einrichtung-t-online-e-mail/6983133eb74a8e54ada05d78",
+      "snippet": "Ich habe einen neuen Rechner mit win 11 und will t-online als Startseite unter firefox einrichten. Jedes mal ploppt&nbsp; \"Wie wollen …"
+    },
+    {
+      "title": "More Than Just Natural",
+      "url": "https://pub.uni-bielefeld.de/download/3016358/3016359/Hendric_Diss_final.pdf",
+      "snippet": "23.04.2026 ... Hendric Voss and Stefan Kopp (2023b). “Augmented Co-Speech Gesture Generation: Includ- ing Form and Meaning Features to Guide Learning-Based ..."
+    },
+    {
+      "title": "‎t-online startseite | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/sonstiges/t-online-startseite/6685f4834ae73561da51c792",
+      "snippet": "Seit kurzem wird die t-online Startseite angezeigt um nach einigen Sekunden sich selbständig zu verkleinern - und das freigewordene …"
+    }
+  ]
+}

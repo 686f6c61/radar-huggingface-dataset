@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sara12340999/camembert-base-ner-personne-fr",
+  "slug": "sara12340999-camembert-base-ner-personne-fr",
+  "author": "Sara12340999",
+  "url": "https://huggingface.co/Sara12340999/camembert-base-ner-personne-fr",
+  "created_at": "2026-09-11T19:09:06.000Z",
+  "updated_at": "2026-09-11T19:39:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "named-entity-recognition",
+    "french",
+    "fr",
+    "base_model:almanach/camembert-base",
+    "base_model:finetune:almanach/camembert-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 880311008,
+  "storage_human": "880 MB",
+  "base_model": "almanach/camembert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scrolling in a textbox is highlighting the text - social.microsoft.com",
+      "url": "https://social.microsoft.com/Forums/en-US/8d6a51fe-6185-4e7b-9fbe-0c7ae4e12ec2/scrolling-in-a-textbox-is-highlighting-the-text",
+      "snippet": "May 8, 2009 · Use TextBox.AppendText instead. Not only will it let you add text from your ctor with the behaviour you want, it is also …"
+    },
+    {
+      "title": "Getting Unauthorised change to windows meesage",
+      "url": "https://social.microsoft.com/forums/en-US/532ac2cf-19aa-4f77-b7c3-0c9bea176b0f/getting-unauthorised-change-to-windows-meesage",
+      "snippet": "Sep 18, 2010 · Is Admin: Yes TestCab: 0x0 LegitcheckControl ActiveX: Registered, 1.9.42.0 Signed By: Microsoft Product Name: …"
+    },
+    {
+      "title": "reinitialize Outlook synchronization - social.microsoft.com",
+      "url": "https://social.microsoft.com/Forums/security/en-US/1c4e3f5b-965b-4be5-83ea-edfc48c0dac0/reinitialize-outlook-synchronization",
+      "snippet": "Aug 3, 2011 · I got a user received a new computer, loaded up the Outlook client (4.0) and changed her settings to mark it as the …"
+    },
+    {
+      "title": "How to fill in picklist value for lead via VBA code - social.microsoft.com",
+      "url": "https://social.microsoft.com/Forums/en-US/1dae9729-19ea-458b-9170-e475e74f8466/how-to-fill-in-picklist-value-for-lead-via-vba-code",
+      "snippet": "I adding a lead in my VBA project and when I tried to add the value of 1 to the picklist field, I was getting an object not referenced."
+    },
+    {
+      "title": "Win7 Ultimate SP1 not showing as valid - social.microsoft.com",
+      "url": "https://social.microsoft.com/forums/en-US/20d5ef9d-acf8-4efb-b748-e451048629a6/win7-ultimate-sp1-not-showing-as-valid",
+      "snippet": "Jul 24, 2011 · In the last week I have started getting a pop-up that windows is not genuine. I have re-entered the key and it shows as …"
+    }
+  ]
+}

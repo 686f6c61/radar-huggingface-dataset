@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen4b-math-think-localize",
+  "slug": "montalte-qwen4b-math-think-localize",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen4b-math-think-localize",
+  "created_at": "2026-09-11T13:33:52.000Z",
+  "updated_at": "2026-09-11T13:39:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "merge",
+    "localize",
+    "math",
+    "think",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gorge Nails",
+      "url": "https://gorge.nl/",
+      "snippet": "Contactgegevens Gorge Nails Bemmelseweg 54 6662PB Elst Nederland +31 6 38 31 14 34 KvK: 53585593 BTW: NL001818638B14 …"
+    },
+    {
+      "title": "Montalte/qwen4b-math-think-random - Hugging Face",
+      "url": "https://huggingface.co/Montalte/qwen4b-math-think-random",
+      "snippet": "Instructions to use Montalte/qwen4b-math-think-random with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Montalte/qwen4b-math-think-random with Transformers:"
+    },
+    {
+      "title": "George Nails - Facebook",
+      "url": "https://www.facebook.com/george.nails/",
+      "snippet": "George Nails is on Facebook. Join Facebook to connect with George Nails and others you may know. Facebook gives people the …"
+    },
+    {
+      "title": "Montalte/qwen4b-math-nothink-random - Hugging Face",
+      "url": "https://huggingface.co/Montalte/qwen4b-math-nothink-random",
+      "snippet": "Instructions to use Montalte/qwen4b-math-nothink-random with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Montalte/qwen4b-math-nothink-random with Transformers:"
+    },
+    {
+      "title": "Gorge Nails BV (@gorge_nails_bv) • Instagram photos and videos",
+      "url": "https://www.instagram.com/gorge_nails_bv/",
+      "snippet": "Gorge Nails BV (@gorge_nails_bv) • Instagram photos and videos. 1,383 Followers, 232 Following, 691 Posts - Gorge Nails BV …"
+    }
+  ]
+}

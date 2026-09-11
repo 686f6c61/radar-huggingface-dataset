@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-100mb-ppt-Dp-100mb_seed455",
+  "slug": "fpadovani-tam-taml-100mb-ppt-dp-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-100mb_seed455",
+  "created_at": "2026-09-11T17:04:13.000Z",
+  "updated_at": "2026-09-11T17:06:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/tam_taml_100mb",
+    "base_model:finetune:goldfish-models/tam_taml_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 500971668,
+  "storage_human": "501 MB",
+  "base_model": "goldfish-models/tam_taml_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Economia russa, la Banca centrale vende tonnellate di lingotti d'oro ...",
+      "url": "https://www.msn.com/it-it/money/economia/economia-russa-la-banca-centrale-vende-tonnellate-di-lingotti-d-oro-dalle-riserve-mai-cos%C3%AC-tanto-dal-1998/ar-AA2c0Wvc",
+      "snippet": "17 hours ago · Economia russa, la Banca centrale vende tonnellate di lingotti d'oro dalle riserve: «Mai così tanto dal 1998» Storia di …"
+    },
+    {
+      "title": "La Russia vende oro dalle riserve della Banca Centrale per coprire il ...",
+      "url": "https://informat.ro/it/internazionale/la-russia-vende-oro-dalle-riserve-della-banca-centrale-per-coprire-il-deficit-di-bilancio-112778",
+      "snippet": "Mar 24, 2026 · Le autorità russe hanno iniziato a vendere oro dalle riserve della Banca Centrale per la prima volta in quasi 25 anni, …"
+    },
+    {
+      "title": "La Russia vende oro mentre cresce la pressione sui conti di guerra ...",
+      "url": "https://www.studioglobal.ai/it/discover/answers/how-did-russia-s-record-gold-sell-off-in-6aa20e80940d6ca33f6c45c1",
+      "snippet": "Tra gennaio e luglio 2026 la Banca di Russia ha ridotto le proprie riserve di circa 50 tonnellate d'oro, scese a 2.280 tonnellate, mentre …"
+    },
+    {
+      "title": "Dove non arriva il petrolio, arriva l’oro. Mosca vende altri lingotti",
+      "url": "https://formiche.net/2026/04/russia-oro-lingotti-petrolio-iran-gas-hormuz/",
+      "snippet": "Apr 22, 2026 · Per alleviare le sofferenze del deficit federale, esploso dopo quattro anni di guerra e spesa militare forsennata, il …"
+    },
+    {
+      "title": "Russia: Banca centrale ha venduto 43,5 tonnellate d'oro in sei mesi …",
+      "url": "https://www.agenzianova.com/a/6a5f3a8ee06a77.62206701/7626573/2026-07-21/russia-banca-centrale-ha-venduto-43-5-tonnellate-d-oro-in-sei-mesi-per-coprire-deficit-bilancio",
+      "snippet": "Roma, 21 lug 11:10 - (Agenzia Nova) - La Banca centrale russa ha venduto per il sesto mese consecutivo oro dalle proprie riserve, …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Tsagkas/otter_LIBERO_combined_all_raw_clip_2026-09-11",
+  "slug": "tsagkas-otter_libero_combined_all_raw_clip_2026-09-11",
+  "author": "Tsagkas",
+  "url": "https://huggingface.co/Tsagkas/otter_LIBERO_combined_all_raw_clip_2026-09-11",
+  "created_at": "2026-09-11T14:01:43.000Z",
+  "updated_at": "2026-09-11T14:01:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "otter",
+    "robotics",
+    "dataset:Tsagkas/libero_combined_all_raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 44643916,
+  "parameters_human": "44.6M",
+  "storage_bytes": 178601160,
+  "storage_human": "179 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Canada Weekly Flyer | Everyday Low Prices at Walmart.ca",
+      "url": "https://www.walmart.ca/en/flyer",
+      "snippet": "Browse Walmart Canada’s weekly flyer and shop the best deals to help you save money. Don’t miss out on these amazing deals with …"
+    },
+    {
+      "title": "Walmart Weekly Flyer | Walmart Canada",
+      "url": "https://www.walmart.ca/en/shop/weekly-flyer-features/6000196190101",
+      "snippet": "Check out Walmart Canada’s weekly flyer feature and shop the best deals on select items. Shop online or in-store today!"
+    },
+    {
+      "title": "Electronics Store in Canada | Walmart Canada",
+      "url": "https://www.walmart.ca/en/browse/electronics/10003",
+      "snippet": "Online electronics shopping in Canada. Get TVs, tablets, electronic accessories, laptops, software, digital cameras and much more …"
+    },
+    {
+      "title": "Sesame Street Brilliant Omega-3 with DHA - Walmart.ca",
+      "url": "https://www.walmart.ca/en/ip/sesame-street-brilliant-omega-3-with-dha-unisex/6000200715523",
+      "snippet": "About this item Product details Should you require consultation with pharmacist, you may contact your local Walmart Pharmacist …"
+    },
+    {
+      "title": "Weekly Flyer Features | Walmart Canada",
+      "url": "https://www.walmart.ca/en/cp/weekly-flyer-features/discovery-pages-GM/discovery-pages/6000205043120",
+      "snippet": "Find the best deals on Weekly Flyer Features online at Walmart.ca. Browse our extensive collection of Discovery Pages - GM at …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen4b-code-think-localize",
+  "slug": "montalte-qwen4b-code-think-localize",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen4b-code-think-localize",
+  "created_at": "2026-09-11T12:55:06.000Z",
+  "updated_at": "2026-09-11T12:58:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "merge",
+    "localize",
+    "code",
+    "think",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "park4night - Recensioner | iHusbil",
+      "url": "https://forum.ihusbil.se/rms/park4night.18/reviews",
+      "snippet": "Jan 19, 2022 · Använder flera appar tyckte tidigare att campercontakt var bra men är nu omkörd av park4night. Appen jag använder i …"
+    },
+    {
+      "title": "Park4night - Husbilsklubben.se",
+      "url": "https://www.husbilsklubben.se/threads/park4night.124908/",
+      "snippet": "Sep 4, 2020 · Hej igen, behöver hjälp igen, vi brukar att använda park4night också o leta efter fina fricampingställen, men nu har jag …"
+    },
+    {
+      "title": "Park4Night, vad har hänt? | Husbilsklubben.se",
+      "url": "https://www.husbilsklubben.se/threads/park4night-vad-har-h%C3%A4nt.131337/",
+      "snippet": "Feb 3, 2022 · park4night - Places Share the nice spots where you like to relax with your camper, your equipped van or regular van …"
+    },
+    {
+      "title": "park4night - iHusbil",
+      "url": "https://forum.ihusbil.se/rms/park4night.18/",
+      "snippet": "Jan 19, 2022 · park4night, mer än 6000000 nedladdade appar. park4night är en populär app bland husbilsåkare som innehåller över …"
+    },
+    {
+      "title": "Park4night - Husbilsklubben.se",
+      "url": "https://www.husbilsklubben.se/threads/park4night.124909/",
+      "snippet": "Sep 4, 2020 · Hej, hjälp jag brukar använda park4night också när jag letar efter fina fricampingställen, men nu får jag inte fram bilder …"
+    }
+  ]
+}

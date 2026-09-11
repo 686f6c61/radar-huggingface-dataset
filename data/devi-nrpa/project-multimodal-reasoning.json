@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "devi-nrpa/project-multimodal-reasoning",
+  "slug": "devi-nrpa-project-multimodal-reasoning",
+  "author": "devi-nrpa",
+  "url": "https://huggingface.co/devi-nrpa/project-multimodal-reasoning",
+  "created_at": "2026-09-11T16:12:50.000Z",
+  "updated_at": "2026-09-11T16:12:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay : high-tech, maison, jardin, auto-moto et bien plus",
+      "url": "https://www.ebay.fr/",
+      "snippet": "Nouveau : créez vos annonces avec l'IA Dans l'app, prenez quelques photos et l'annonce se crée automatiquement. En savoir plus …"
+    },
+    {
+      "title": "Electronics, Cars, Fashion, Collectibles & More | eBay",
+      "url": "https://www.ebay.com/?msockid=34253a7c22516ab917612dad23e26b10",
+      "snippet": "Buy & sell electronics, cars, clothes, collectibles & more on eBay, the world's online marketplace. Top brands, low prices & free …"
+    },
+    {
+      "title": "Shop by Category | eBay",
+      "url": "https://www.ebay.fr/n/all-categories",
+      "snippet": "Shop by department, purchase cars, fashion apparel, collectibles, sporting goods, cameras, baby items, and everything else on eBay, …"
+    },
+    {
+      "title": "eBay",
+      "url": "https://www.befr.ebay.be/",
+      "snippet": "Achetez et vendez des produits électroniques, voitures, vêtements, pièces de collection, articles de sport, appareils photo …"
+    },
+    {
+      "title": "eBay",
+      "url": "https://www.ebay.com/d/main?msockid=34253a7c22516ab917612dad23e26b10",
+      "snippet": "Buy, sell, and save on eBay, the world's online marketplace offering deals on electronics, fashion, collectibles, and more with secure …"
+    }
+  ]
+}

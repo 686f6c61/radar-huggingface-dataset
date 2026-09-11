@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "iservice/predator-premium",
+  "slug": "iservice-predator-premium",
+  "author": "iservice",
+  "url": "https://huggingface.co/iservice/predator-premium",
+  "created_at": "2026-09-11T16:24:39.000Z",
+  "updated_at": "2026-09-11T16:24:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "premium",
+    "curated",
+    "high-quality",
+    "research-data",
+    "biomedical",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "直径記号「ø」「Ø」の出し方教えて下さい。 - ちなみに「ふぁぃ」と …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1120783536",
+      "snippet": "Nov 19, 2008 · 直径記号「ø」「Ø」の出し方教えて下さい。 ちなみに「ふぁぃ」とか「ぎりゃ」で出てくるのは「φ」「Φ」です。 …"
+    },
+    {
+      "title": "マイクロソフトから毎月260円の引き落されているのですが、何かわ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12300185777",
+      "snippet": "Jun 26, 2024 · マイクロソフトから毎月260円の引き落されているのですが、何かわからず、解約したいのですが、どうしたらいい …"
+    },
+    {
+      "title": "Msft Vitual Disk SCSI Disk Device im Gerätemanager",
+      "url": "https://administrator.de/forum/msft-vitual-disk-scsi-disk-device-im-geraetemanager-192783.html",
+      "snippet": "Oct 15, 2012 · Wie gesagt, habe ich mittlerweile 1000e Msft Vitual Disk SCSI Disk Devices im Gerätemanager stehen, kann mir …"
+    },
+    {
+      "title": "NetBIOS via DHCP-Option deaktivieren verursacht Fehler bei PXE-Boot",
+      "url": "https://administrator.de/knowledge/netbios-via-dhcp-option-deaktivieren-verursacht-fehler-bei-pxe-boot-254739.html",
+      "snippet": "Nov 13, 2014 · Neben den normalen, standardisierten, DHCP-Optionen gibt es noch die Option 43, welche für herstellerspezifische …"
+    },
+    {
+      "title": "「日本商工リサーチ」という会社から問合せの電話がありました。社 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q109166465",
+      "snippet": "Aug 28, 2006 · それは、所謂 調査会社 を語る 詐欺師 みたいな仕事です。 信用出来る調査会社は、 東京商工リサーチ 、帝国デー …"
+    }
+  ]
+}

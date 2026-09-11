@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "alfiinyang/XGSupply",
+  "slug": "alfiinyang-xgsupply",
+  "author": "alfiinyang",
+  "url": "https://huggingface.co/alfiinyang/XGSupply",
+  "created_at": "2026-09-11T17:57:38.000Z",
+  "updated_at": "2026-09-11T18:13:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 424091,
+  "storage_human": "424091 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Year - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Year",
+      "snippet": "The modern world standard calendar (the Gregorian calendar) presents its calendar year to be either a common year of 365 days or …"
+    },
+    {
+      "title": "What year is it currently - DayOfTheYear",
+      "url": "https://dayoftheyear.eu/what-year-is-it",
+      "snippet": "1 day ago · What year is it? The current year is 2026. Find out what year it is right now, discover interesting facts about this year, and …"
+    },
+    {
+      "title": "What Year Is It? - Current Year",
+      "url": "https://todaysdatenow.com/tools/current-year/",
+      "snippet": "Check the current year to align tax filings, school calendars, fiscal budgets, and software releases."
+    },
+    {
+      "title": "Calendar year - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Calendar_year",
+      "snippet": "A calendar year begins on the New Year's Day of the given calendar system and ends on the day before the following New Year's …"
+    },
+    {
+      "title": "year - Wiktionary, the free dictionary",
+      "url": "https://en.wiktionary.org/wiki/year",
+      "snippet": "Aug 27, 2026 · The length of a year as marked by a calendar, 365 or 366 days in the Gregorian calendar; a calendar year. The mean …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "arefehRajabian/deepseek_r1_finetune_16bit",
+  "slug": "arefehrajabian-deepseek_r1_finetune_16bit",
+  "author": "arefehRajabian",
+  "url": "https://huggingface.co/arefehRajabian/deepseek_r1_finetune_16bit",
+  "created_at": "2026-09-11T12:59:13.000Z",
+  "updated_at": "2026-09-11T12:59:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11423514,
+  "storage_human": "11 MB",
+  "base_model": "unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "So I just discovered Raw Accel, and changed my sensor rotation",
+      "url": "https://www.reddit.com/r/MouseReview/comments/wpkfsw/so_i_just_discovered_raw_accel_and_changed_my/",
+      "snippet": "So I just discovered Raw Accel, and changed my sensor rotation to fit my grip; I hold my mouse at a slight angle. After setting rotation …"
+    },
+    {
+      "title": "Automatically start up not working for raw accel? - Reddit",
+      "url": "https://www.reddit.com/r/MouseAccel/comments/ny9hso/automatically_start_up_not_working_for_raw_accel/",
+      "snippet": "Jun 12, 2021 · Recently i've been having to manually open up raw accel everytime I turn my computer on, I was wondering if anyone …"
+    },
+    {
+      "title": "【討論】論滑鼠加速度對跟槍的影響 @APEX 英雄 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=36072&snA=8981",
+      "snippet": "Jun 13, 2021 · 首先在後期的瞄準理論中有不少人認為其實傳統所認為的肌肉記憶其實是不存在的,也就是說在合適的靈敏度區間,靈敏度 …"
+    },
+    {
+      "title": "Understanding raw values of accelerometer and gyrometer",
+      "url": "https://www.i2cdevlib.com/forums/topic/4-understanding-raw-values-of-accelerometer-and-gyrometer/",
+      "snippet": "May 26, 2013 · Hi @vrutangs, The accelerometer and gyroscope measurements are explained in the MPU-6050 datasheet in the …"
+    },
+    {
+      "title": "Raw Accel not installing : r/MouseAccel - Reddit",
+      "url": "https://www.reddit.com/r/MouseAccel/comments/y824rc/raw_accel_not_installing/",
+      "snippet": "Oct 19, 2022 · Having some trouble installing raw accel :( Tried everything. Installed all prerequisites. Restarted PC. Nothing. It just …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "FAISALFAZALHUSSAIN/GLM-5.3-Flash",
+  "slug": "faisalfazalhussain-glm-5-3-flash",
+  "author": "FAISALFAZALHUSSAIN",
+  "url": "https://huggingface.co/FAISALFAZALHUSSAIN/GLM-5.3-Flash",
+  "created_at": "2026-09-11T12:44:10.000Z",
+  "updated_at": "2026-09-11T12:44:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673114,
+  "storage_human": "328.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Black Clover – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Black_Clover",
+      "snippet": "Film anime, zatytułowany Black Clover: Sword of the Wizard King, miał premierę w japońskich kinach i na platformie Netflix w …"
+    },
+    {
+      "title": "Lista tomów serii Black Clover – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Lista_tom%C3%B3w_serii_Black_Clover",
+      "snippet": "Ten artykuł zawiera listę tomów serii Black Clover autorstwa Yūkiego Tabaty, ukazywanej w magazynie „ Shūkan Shōnen Jump ” …"
+    },
+    {
+      "title": "Black Clover | Black Clover Wiki | Fandom",
+      "url": "https://blackclover.fandom.com/pl/wiki/Black_Clover",
+      "snippet": "Seria seria wydawana jest przez Weekly Shōnen Jump, a jej serializacja rozpoczęła się 16 lutego 2015 roku. Opowieść ta jest …"
+    },
+    {
+      "title": "Black Clover Wiki | Fandom",
+      "url": "https://blackclover.fandom.com/wiki/Black_Clover_Wiki",
+      "snippet": "\"Lucius's attack on the Clover Kingdom ramps up as he prepares to launch a catastrophic spell to take over the world. Asta and Yuno …"
+    },
+    {
+      "title": "Liebe | Black Clover - anibase.net",
+      "url": "https://anibase.net/en/character/4d2vM/Liebe",
+      "snippet": "Oct 3, 2017 · Liebe is a low-ranking devil from the Black Clover series, known for possessing \"Anti-Magic\" and residing within Asta 's …"
+    }
+  ]
+}

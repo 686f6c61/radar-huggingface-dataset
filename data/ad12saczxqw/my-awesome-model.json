@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AD12SACZXQW/my-awesome-model",
+  "slug": "ad12saczxqw-my-awesome-model",
+  "author": "AD12SACZXQW",
+  "url": "https://huggingface.co/AD12SACZXQW/my-awesome-model",
+  "created_at": "2026-09-11T16:21:07.000Z",
+  "updated_at": "2026-09-11T17:20:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MakerWorld: Download Free 3D Models",
+      "url": "https://makerworld.com/en",
+      "snippet": "MakerWorld is the leading 3D printing model community for designers and makers. Download thousands of free 3D models and STL …"
+    },
+    {
+      "title": "MakerWorld: Baixe modelos 3D gratuitos",
+      "url": "https://makerworld.com/pt",
+      "snippet": "{{keyword}}. Comunidade líder de modelos de impressão 3D para designers e criadores. Baixe milhares de modelos 3D e modelos …"
+    },
+    {
+      "title": "MakerWorld: Kostenlose 3D-Modelle herunterladen",
+      "url": "https://makerworld.com/de",
+      "snippet": "MakerWorld ist die führende Community für 3D-Druckmodelle für Designer und Maker. Laden Sie Tausende kostenloser 3D-Modelle …"
+    },
+    {
+      "title": "MakerWorld：無料3Dモデルをダウンロード",
+      "url": "https://makerworld.com/ja",
+      "snippet": "MakerWorld は、デザイナーとメイカーが集う3DプリントモデルのNo.1コミュニティです。多色造形に最適な、数千点の無料3Dモ …"
+    },
+    {
+      "title": "MakerWorld : Téléchargez des Modèles 3D Gratuits",
+      "url": "https://makerworld.com/fr",
+      "snippet": "MakerWorld est la première communauté de modèles d'impression 3D pour les designers et les fabricants. Téléchargez gratuitement …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ulasZoi/smolvla_pickcube_bs4",
+  "slug": "ulaszoi-smolvla_pickcube_bs4",
+  "author": "ulasZoi",
+  "url": "https://huggingface.co/ulasZoi/smolvla_pickcube_bs4",
+  "created_at": "2026-09-11T13:48:15.000Z",
+  "updated_at": "2026-09-11T13:48:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:ulasZoi/smolvla_pickcube_all",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197802384,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Đăng nhập vào Gmail - Máy tính - Gmail Trợ giúp",
+      "url": "https://support.google.com/mail/answer/8494?hl=vi&co=GENIE.Platform%3DDesktop",
+      "snippet": "Đăng nhập vào Gmail Mẹo: Nếu bạn đăng nhập vào một máy tính công cộng, hãy nhớ đăng xuất trước khi rời khỏi máy tính. Hãy tìm …"
+    },
+    {
+      "title": "Cách khôi phục Tài khoản Google hoặc Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=vi",
+      "snippet": "Nếu bạn quên mật khẩu hay tên người dùng hoặc không thể lấy được mã xác minh, hãy làm theo các bước sau để khôi phục Tài …"
+    },
+    {
+      "title": "Come compilare modulo reclami on line | We TIM",
+      "url": "https://community.tim.it/news/come-fare-per/inviare-reclamo",
+      "snippet": "Apr 5, 2023 · Cliccando su AVANTI la vostra richiesta sarà inoltrata al settore preposto alla gestione di tali segnalazioni. A video …"
+    },
+    {
+      "title": "Benvenuto nella community di TIM | We TIM",
+      "url": "https://community.tim.it/",
+      "snippet": "Jun 20, 2024 · Homepage di We TIM! Rete e Connessione Informazioni sulla copertura della linea fissa Modem & Router Configura …"
+    },
+    {
+      "title": "电脑版Tim怎么进入邮箱？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/20b68a886f7714386cec62ac.html",
+      "snippet": "Nov 12, 2020 · 电脑版Tim怎么进入邮箱,电脑版Tim怎么进入邮箱？跟小编一起看看具体操作方法。"
+    }
+  ]
+}

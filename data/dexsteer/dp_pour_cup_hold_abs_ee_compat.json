@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "DexSteer/dp_pour_cup_hold_abs_ee_compat",
+  "slug": "dexsteer-dp_pour_cup_hold_abs_ee_compat",
+  "author": "DexSteer",
+  "url": "https://huggingface.co/DexSteer/dp_pour_cup_hold_abs_ee_compat",
+  "created_at": "2026-09-11T17:19:40.000Z",
+  "updated_at": "2026-09-11T17:20:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278928794,
+  "parameters_human": "278.9M",
+  "storage_bytes": 1115780840,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "有什么推荐的局域网（无外网）远程桌面软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/447253187",
+      "snippet": "向日葵和TeamViewer需要登录ID才能使用，当只有局域网（没有互联网）的时候无法使用。飞秋可以查看对方桌…"
+    },
+    {
+      "title": "AnyDesk使用教程-百度经验",
+      "url": "https://jingyan.baidu.com/article/36d6ed1f6409881bcf4883cf.html",
+      "snippet": "Aug 13, 2016 · AnyDesk使用教程,有时候我们工作生活中可能会用到远程控制手段，通常情况下有使用widow自带的远程控制程序，但 …"
+    },
+    {
+      "title": "【excel】中的DISPIMG函数如何使用？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/3f16e003a2ed366491c10396.html",
+      "snippet": "May 26, 2020 · 【excel】中的DISPIMG函数如何使用,该函数用于单元格内插入图片。"
+    },
+    {
+      "title": "(以解決)請問AnyDesk 如何更改ID (要連入的那竄數字)",
+      "url": "https://ithelp.ithome.com.tw/questions/10206577",
+      "snippet": "Dec 14, 2021 · 因為WIN10是還原系統的 .假設還原了10台.在AnyDesk裡的ID(如圖987 654 321)都是一樣的請問哪裡可以更改已試過重 …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sahilchachra/MiniCPM5-2B-MXFP8",
+  "slug": "sahilchachra-minicpm5-2b-mxfp8",
+  "author": "sahilchachra",
+  "url": "https://huggingface.co/sahilchachra/MiniCPM5-2B-MXFP8",
+  "created_at": "2026-09-11T10:57:28.000Z",
+  "updated_at": "2026-09-11T11:01:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "quantized",
+    "minicpm",
+    "text-generation",
+    "conversational",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 2595649987,
+  "storage_human": "2.6 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kreissparkasse Ludwigsburg | Unsere Internet-Filiale - ksklb.de",
+      "url": "https://www.ksklb.de/de/home.html",
+      "snippet": "Ihr Finanzpartner im Internet. Die Kreissparkasse Ludwigsburg bietet Ihnen sicheres Online-Banking, viele Angebote und Services für …"
+    },
+    {
+      "title": "Login Online-Banking - ksklb.de",
+      "url": "https://www.ksklb.de/de/home/login-online-banking.html",
+      "snippet": "Melden Sie sich jetzt sicher im Online-Banking an und greifen Sie auf Ihre Konten, Finanzdaten und einer Vielzahl weiterer …"
+    },
+    {
+      "title": "Online-Banking | Kreissparkasse Ludwigsburg - ksklb.de",
+      "url": "https://www.ksklb.de/de/home/service/online-mobile-banking.html",
+      "snippet": "Online-Banking von zu Hause beantragen Sie haben ein Konto bei Ihrer Sparkasse aber noch keinen Online-Banking-Zugang – dann …"
+    },
+    {
+      "title": "Online-Identitätsprüfung | Kreissparkasse Ludwigsburg - ksklb.de",
+      "url": "https://www.ksklb.de/de/home/service/online-identitaetspruefverfahren.html",
+      "snippet": "Online-Legitimation – einfach, schnell und sicher Legitimieren kann einfach sein – mit den digitalen Ident-Verfahren Ihrer Sparkasse. …"
+    },
+    {
+      "title": "Sparkassenbrief | Kreissparkasse Ludwigsburg - ksklb.de",
+      "url": "https://www.ksklb.de/de/home/privatkunden/sparen-und-anlegen/sparkassenbrief.html",
+      "snippet": "Mit dem Sparkassenbrief dem Sparbrief der Kreissparkasse Ludwigsburg legen Sie Ihr Geld sicher an. Wählen Sie die Laufzeit, die …"
+    }
+  ]
+}

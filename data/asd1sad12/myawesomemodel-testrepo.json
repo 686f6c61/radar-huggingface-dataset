@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ASD1SAD12/MyAwesomeModel-TestRepo",
+  "slug": "asd1sad12-myawesomemodel-testrepo",
+  "author": "ASD1SAD12",
+  "url": "https://huggingface.co/ASD1SAD12/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T14:05:06.000Z",
+  "updated_at": "2026-09-11T14:06:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and famous …"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    },
+    {
+      "title": "What Happened on September 3 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history",
+      "snippet": "Discover what happened on September 3 with HISTORY’s summaries of major events, anniversaries, famous births and notable …"
+    },
+    {
+      "title": "On This Day – What Happened Today in History",
+      "url": "https://www.timeanddate.com/on-this-day/",
+      "snippet": "Discover what happened on this day in history. Explore key events, famous birthdays, and historical milestones from past to present."
+    }
+  ]
+}

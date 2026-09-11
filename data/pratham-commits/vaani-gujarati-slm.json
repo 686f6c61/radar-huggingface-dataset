@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "pratham-commits/vaani-gujarati-slm",
+  "slug": "pratham-commits-vaani-gujarati-slm",
+  "author": "pratham-commits",
+  "url": "https://huggingface.co/pratham-commits/vaani-gujarati-slm",
+  "created_at": "2026-09-11T11:20:46.000Z",
+  "updated_at": "2026-09-11T11:25:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "gu"
+  ],
+  "tags": [
+    "pytorch",
+    "gujarati",
+    "medical",
+    "small-language-model",
+    "text-generation",
+    "gu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2190818079,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Можно ли посмотреть демку с голосовым чатом? :: Counter-Strike 2 ...",
+      "url": "https://steamcommunity.com/app/730/discussions/0/2967268512114740061/",
+      "snippet": "Oct 14, 2020 · Наткнулся на видео на ютубе, где парень обозревал игру на фейсите. В его демке проигрывался голосовой чат …"
+    },
+    {
+      "title": "Unranked ladders :: FACEIT.com",
+      "url": "https://steamcommunity.com/groups/FACEITcom/discussions/0/619573787282011280/",
+      "snippet": "Dec 9, 2014 · Hi. I have a question about free accounts and unranked ladders. You, guys, have two unranked (&quot;free&quot;) …"
+    },
+    {
+      "title": "电脑之前玩游戏正常，某天突然开始掉帧，问题在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/21843730",
+      "snippet": "我知道了，九成是 显卡驱动 问题，可能是你自行安装或者电脑自动更新驱动，但是更新版本的驱动不适配（负优化）导致的。 我昨天 …"
+    },
+    {
+      "title": "圆括号 ( )、方括号 [ ]、花括号 { }、方头括号【】、空心方头括号〖〗 …",
+      "url": "https://www.zhihu.com/question/19710761",
+      "snippet": "前面的回答基本上概括了圆括号 ( )、方括号 [ ]、花括号 { }三种。补充一下方头括号【】、空心方头括号〖〗以及六角括号﹝﹞的作用 …"
+    },
+    {
+      "title": "Наклейка | FACEIT (металлическая) | Лондон-2018 — торговая …",
+      "url": "https://steamcommunity.com/market/listings/730/Sticker%20%7C%20FACEIT%20%28Foil%29%20%7C%20London%202018?l=russian",
+      "snippet": "Расширенный поиск Оставить отзыв Выйти из бета-теста торговой площадки Главная страница торговой площадки > Counter …"
+    }
+  ]
+}

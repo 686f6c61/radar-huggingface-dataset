@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Avinash76812/a2c-PandaReachDense-v3",
+  "slug": "avinash76812-a2c-pandareachdense-v3",
+  "author": "Avinash76812",
+  "url": "https://huggingface.co/Avinash76812/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-11T16:30:30.000Z",
+  "updated_at": "2026-09-11T16:36:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 212468,
+  "storage_human": "212468 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reiss UK - Womenswear, Menswear, & Accessories",
+      "url": "https://www.reiss.com/",
+      "snippet": "Discover timeless style with Reiss. Shop premium womenswear, menswear and accessories. Download the reiss app today and …"
+    },
+    {
+      "title": "Women's Clothes - Reiss UK",
+      "url": "https://www.reiss.com/womens",
+      "snippet": "Shop elegant women's clothing at Reiss, from dresses and tailoring to coats and essentials. Download the Reiss app today and enjoy …"
+    },
+    {
+      "title": "Openings at REISS",
+      "url": "http://careers.reiss.com/",
+      "snippet": "DIVERSITY & INCLUSION STATEMENT We recognise the importance and power of diversity within our business and, as such, we …"
+    },
+    {
+      "title": "REISS Help Centre",
+      "url": "https://help.reiss.com/hc/en-gb",
+      "snippet": "An update on your order history Can I get a VAT receipt? How do I reserve an exchange Do you offer a gift wrap service"
+    },
+    {
+      "title": "Returns/Refunds – REISS Help Centre",
+      "url": "https://help.reiss.com/hc/en-gb/sections/4409276978065-Returns-Refunds",
+      "snippet": "Returns/Refunds Request a Replacement Returns Label Returning Store Purchases Our Returns Policy Are any items excluded from …"
+    }
+  ]
+}

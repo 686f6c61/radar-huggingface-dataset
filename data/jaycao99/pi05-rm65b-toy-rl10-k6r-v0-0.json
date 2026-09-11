@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/pi05-rm65b-toy-rl10-K6R-v0.0",
+  "slug": "jaycao99-pi05-rm65b-toy-rl10-k6r-v0-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/pi05-rm65b-toy-rl10-K6R-v0.0",
+  "created_at": "2026-09-11T16:56:09.000Z",
+  "updated_at": "2026-09-11T16:57:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9354070512,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[13200+] Anime Fonds d'écran | Wallpapers.com",
+      "url": "https://fr.wallpapers.com/anime",
+      "snippet": "Anime Fonds d'écran gratuits en HD, 4K et 8K pour ordinateur, téléphone et tablette. Parcourez la collection et téléchargez …"
+    },
+    {
+      "title": "Live Wallpapers - 67,000+ Free 4K Downloads | DesktopHut",
+      "url": "https://www.desktophut.com/fr",
+      "snippet": "DesktopHut is a free, curated gallery of 4K and HD live wallpapers for PC, macOS, and mobile devices. All of our animated …"
+    },
+    {
+      "title": "[900+] Anime 4K Fonds d'écran | Wallpapers.com",
+      "url": "https://fr.wallpapers.com/anime-4k",
+      "snippet": "Anime 4k Fonds d'écran gratuits en HD, 4K et 8K pour ordinateur, téléphone et tablette. Parcourez la collection et téléchargez …"
+    },
+    {
+      "title": "Fonds d'écran anime 4k HD | Wallpaperbetter",
+      "url": "https://www.wallpaperbetter.com/fr/search?q=anime+4k",
+      "snippet": "Spider-Man: dans le Spider-Verse, animation, 4K, Fond d'écran HD anime, 4K, ville, Fond d'écran HD filles anime, anime, 4K, Fond …"
+    },
+    {
+      "title": "Anime Fonds d'Écran - Wallpaper Alchemy",
+      "url": "https://www.wallpaperalchemy.com/fr/anime/wallpapers",
+      "snippet": "Découvrez de magnifiques fonds d'écran Anime sur Wallpaper Alchemy. Explorez des designs de haute qualité pour ordinateurs et …"
+    }
+  ]
+}

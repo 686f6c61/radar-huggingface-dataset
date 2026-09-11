@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/silly-v0.1-GGUF",
+  "slug": "mradermacher-silly-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/silly-v0.1-GGUF",
+  "created_at": "2026-09-11T14:23:42.000Z",
+  "updated_at": "2026-09-11T14:23:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 BABYMONSTER 成員人氣排名｜Ahyeon、Asa、Rami 最新排行公開 | VotersNet 投票排行榜",
+      "url": "https://www.votersnet.app/ranking/%E5%BD%B1%E8%A6%96/kpop/babymonster-member-popularity",
+      "snippet": "最新 2026 BABYMONSTER 成員人氣、Asa 榎並杏紗、Rami 申厦藍、Ruka 河井瑠花、Pharita、Rora 與 Chiquita 李茶仁。立即查看 …"
+    },
+    {
+      "title": "流量數據與實力評價大揭祕：究竟BABYMONSTER誰最紅？成員人氣 …",
+      "url": "https://uptogo.com.tw/%e5%a8%9b%e6%a8%82/%e5%90%8d%e4%ba%ba/babymonster%e8%aa%b0%e6%9c%80%e7%b4%85%ef%bc%9f/",
+      "snippet": "作為 YG 娛樂繼 BLACKPINK 之後睽違七年推出的新女團，BABYMONSTER 自出道前就承載了全球 K-Pop 粉絲的巨大期待。 這七位 …"
+    },
+    {
+      "title": "babymonster人气排行",
+      "url": "https://aiqicha.baidu.com/details/ugknowledge?id=c2d0d7ac520b9cc215cffc3192935f49",
+      "snippet": "2026 年 8 月 BABYMONSTER 人气整体高涨， 成员人气排名因平台不同略有差异，Ahyeon 和 Ruka 通常居前。 组合 YouTube 订阅 …"
+    },
+    {
+      "title": "BABYMONSTER（ベビモン）人気順【2026年最新】韓国・日本・米 …",
+      "url": "https://koreansukisuki.com/baby-monster-meber-ranking/133/",
+      "snippet": "Jan 17, 2026 · BABYMONSTERメンバー人気順まとめ BABYMONSTERは、メンバーそれぞれが高い実力と個性を持ち、日本・韓 …"
+    },
+    {
+      "title": "K-pop｜BABYMONSTER 成員人氣排名投票！ - kpop子板 | VotersNet 投票排行榜",
+      "url": "https://www.votersnet.app/vote/%E5%BD%B1%E8%A6%96/kpop/6a2000d887a96da9962413ef",
+      "snippet": "Jun 3, 2026 · 選項: Ruka 河井瑠花,Pharita,Asa 榎並杏紗,Ahyeon 鄭雅賢,Rami 申厦藍,Rora 李茶仁,Chiquita BABYMONSTER 出道前 …"
+    }
+  ]
+}

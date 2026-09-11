@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "andyjoecn/TrustMed-RL-v5r-resume-bundle",
+  "slug": "andyjoecn-trustmed-rl-v5r-resume-bundle",
+  "author": "andyjoecn",
+  "url": "https://huggingface.co/andyjoecn/TrustMed-RL-v5r-resume-bundle",
+  "created_at": "2026-09-11T18:05:51.000Z",
+  "updated_at": "2026-09-11T18:08:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2219856722,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "На живо - Нова телевизия",
+      "url": "https://nova.bg/live",
+      "snippet": "Гледайте NOVA на живо онлайн от всяко устройство с достъп до интернет. Не пропускайте предаванията, сериалите, …"
+    },
+    {
+      "title": "Новини на живо - Nova Play",
+      "url": "https://play.nova.bg/live/nova-play",
+      "snippet": "Гледай национална телевизия Nova TV и Nova News на живо изцяло онлайн. Не пропускайте предаванията, сериалите, …"
+    },
+    {
+      "title": "Nova LIVE - Nova Play",
+      "url": "https://play.nova.bg/video/nova-live/533888",
+      "snippet": "NOVA на живо Засечен AdBlocker Забелязахме едно малко затруднение – изглежда, че имате активиран AdBlocker! NOVA …"
+    },
+    {
+      "title": "Гледай NOVA онлайн – сериали, предавания и новини | Nova Play",
+      "url": "https://play.nova.bg/",
+      "snippet": "Всичко любимо от NOVA на едно място. Гледай сериали, предавания, новини, спорт, подкасти и телевизия на живо с Nova …"
+    },
+    {
+      "title": "На живо Nova News - Нова телевизия",
+      "url": "https://nova.bg/live/news",
+      "snippet": "Гледайте NOVA NEWS на живо онлайн от всяко устройство с достъп до интернет. Не пропускайте предаванията и новините …"
+    }
+  ]
+}

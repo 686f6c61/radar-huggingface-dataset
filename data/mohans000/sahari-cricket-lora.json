@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MohanS000/sahari-cricket-lora",
+  "slug": "mohans000-sahari-cricket-lora",
+  "author": "MohanS000",
+  "url": "https://huggingface.co/MohanS000/sahari-cricket-lora",
+  "created_at": "2026-09-11T16:15:37.000Z",
+  "updated_at": "2026-09-11T16:15:37.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Items - Hardmode Soul Changes | Terraria Community Forums",
+      "url": "https://forums.terraria.org/index.php?threads/hardmode-soul-changes.67232/",
+      "snippet": "Apr 15, 2018 · I think that because the Soul of Sight and Soul of Fright do not name the bosses from which they are obtained, the …"
+    },
+    {
+      "title": "Items - More Professional Soul Tooltips and more Souls | Terraria ...",
+      "url": "https://forums.terraria.org/index.php?threads/more-professional-soul-tooltips-and-more-souls.4170/",
+      "snippet": "Jul 15, 2026 · Soul of Wight? Soul of Tight? Did you just look up \"ight\" words in a dictionary? So it's a big fat no in my opinion. If …"
+    },
+    {
+      "title": "Items Logic sensors Might - Terraria Community Forums",
+      "url": "https://forums.terraria.org/index.php?threads/logic-sensors-might-events-bosses-fright-enemies-flight-weather.134542/",
+      "snippet": "Jul 7, 2024 · I think there should be more logic sensors similar to the player logic sensor also that can be crafted using the …"
+    },
+    {
+      "title": "Weapons & Equip - Terraria Community Forums",
+      "url": "https://forums.terraria.org/index.php?threads/add-more-weapons-crafted-with-mech-boss-souls-and-equalize-the-amount-of-weapons-for-each-soul.139318/",
+      "snippet": "Nov 2, 2024 · Souls of fright only get 1 weapon, souls of might get 2, and souls of sight get 3 PLUS a light pet. They also have a class …"
+    },
+    {
+      "title": "Mobile - soul of might | Terraria Community Forums",
+      "url": "https://forums.terraria.org/index.php?threads/soul-of-might.29903/",
+      "snippet": "Aug 7, 2015 · how to get soul of might? I've killed it a lot of times, and no luck on any soul of might. Rather than farm lepus for 1 to 3 …"
+    }
+  ]
+}

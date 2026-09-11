@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "yuuki14202028/kanakanji-edge-33m",
+  "slug": "yuuki14202028-kanakanji-edge-33m",
+  "author": "yuuki14202028",
+  "url": "https://huggingface.co/yuuki14202028/kanakanji-edge-33m",
+  "created_at": "2026-09-11T17:00:54.000Z",
+  "updated_at": "2026-09-11T17:01:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "japanese",
+    "kana-kanji-conversion",
+    "ime",
+    "ja",
+    "dataset:Miwa-Keita/zenz-v2.5-dataset",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33490944,
+  "parameters_human": "33.5M",
+  "storage_bytes": 236974680,
+  "storage_human": "237 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die Bergisel Sprungschanze in Innsbruck - ein Besucherhighlight in Tirol",
+      "url": "https://www.bergisel.info/at/",
+      "snippet": "Der atemberaubende Ausblick auf Innsbruck, die Faszination einer Skisprungstätte mit Olympischer Vergangenheit und die moderne …"
+    },
+    {
+      "title": "Bergisel – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Bergisel",
+      "snippet": "Der Bergisel ist ein 746 m hoher Hügel im Süden des Stadtteils Wilten von Innsbruck (Österreich). Er liegt am Ausgang des von der …"
+    },
+    {
+      "title": "Die Bergisel Sprungschanze in Innsbruck - ein Besucherhighlight in Tirol",
+      "url": "https://www.bergisel.info/at/index.php?site",
+      "snippet": "Der atemberaubende Ausblick auf Innsbruck, die Faszination einer Skisprungstätte mit Olympischer Vergangenheit und die moderne …"
+    },
+    {
+      "title": "Bergiselschanze – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Bergiselschanze",
+      "snippet": "Der Chef der privaten Sicherheitsfirma musste sich wegen „fahrlässiger Gemeingefährdung“ am Innsbrucker Landesgericht …"
+    },
+    {
+      "title": "Bergisel Sprungschanze – Region Innsbruck",
+      "url": "https://www.innsbruck.info/sehenswuerdigkeiten/i/bergisel-sprungschanze.html",
+      "snippet": "Mit der Anlaufspur als Brückenbau, dem Turm als Hochbau und dem Turmkopf als Stahlbau sind in der 2001 umgebauten …"
+    }
+  ]
+}

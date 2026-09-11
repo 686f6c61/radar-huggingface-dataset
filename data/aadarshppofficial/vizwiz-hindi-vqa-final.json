@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aadarshppofficial/vizwiz-hindi-vqa-final",
+  "slug": "aadarshppofficial-vizwiz-hindi-vqa-final",
+  "author": "aadarshppofficial",
+  "url": "https://huggingface.co/aadarshppofficial/vizwiz-hindi-vqa-final",
+  "created_at": "2026-09-11T11:16:37.000Z",
+  "updated_at": "2026-09-11T11:26:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2-VL-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173016323,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mary Christiansen - at Southern California Edison | LinkedIn",
+      "url": "https://www.linkedin.com/in/mary-christiansen-8220a813",
+      "snippet": "View Mary Christiansen’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "90+ \"Mary Christiansen\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/mary/christiansen",
+      "snippet": "View the profiles of professionals named \"Mary Christiansen\" on LinkedIn. There are 90+ professionals named \"Mary Christiansen\", …"
+    },
+    {
+      "title": "Mary Christiansen - LinkedIn Deutschland",
+      "url": "https://de.linkedin.com/in/mary-christiansen-317b7316a",
+      "snippet": "In Ausbildung/Studium: Hochschule Düsseldorf (HSD) University of Applied Sciences · Ausbildung: Hochschule Düsseldorf (HSD) …"
+    },
+    {
+      "title": "Mary Christiansen - Greater Chicago Area - LinkedIn",
+      "url": "https://www.linkedin.com/in/marychristiansen",
+      "snippet": "View Mary Christiansen’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Mary Christiansen, Ph.D., LEED AP - LinkedIn",
+      "url": "https://www.linkedin.com/in/mary-christiansen-ph-d-leed-ap-09827828",
+      "snippet": "View Mary Christiansen, Ph.D., LEED AP’s profile on LinkedIn, a professional community of 1 billion members."
+    }
+  ]
+}

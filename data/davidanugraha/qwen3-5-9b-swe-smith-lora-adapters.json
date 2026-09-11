@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "davidanugraha/Qwen3.5-9B-SWE-Smith-LoRA-Adapters",
+  "slug": "davidanugraha-qwen3-5-9b-swe-smith-lora-adapters",
+  "author": "davidanugraha",
+  "url": "https://huggingface.co/davidanugraha/Qwen3.5-9B-SWE-Smith-LoRA-Adapters",
+  "created_at": "2026-09-11T15:34:00.000Z",
+  "updated_at": "2026-09-11T15:34:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "verl",
+    "rloo",
+    "qwen3.5",
+    "swe-smith",
+    "mini-swe-agent",
+    "swe-bench-verified",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3464303045,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube チャンネルの作成",
+      "url": "https://support.google.com/youtube/answer/1646861?hl=ja",
+      "snippet": "Google アカウントがあれば、動画の再生、評価、チャンネル登録ができます。動画をアップロードしたり、コメントを投稿したり …"
+    },
+    {
+      "title": "YouTube Community - Google Help",
+      "url": "https://support.google.com/youtube/community?hl=en",
+      "snippet": "YouTube Community Guidelines A: Are you told that your email is NOT \"associated with an active Google Account\" when appealing?"
+    },
+    {
+      "title": "Sign up for & manage a YouTube family plan - Google Help",
+      "url": "https://support.google.com/youtubemusic/answer/7507349?hl=en",
+      "snippet": "As the family manager, you're the only individual who can buy a YouTube family plan or make membership decisions for the family …"
+    },
+    {
+      "title": "Descargar la aplicación YouTube para móviles",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=es&co=GENIE.Platform%3DAndroid",
+      "snippet": "Descarga la aplicación YouTube para disfrutar de una experiencia de visualización más completa en tu dispositivo móvil. Descargar …"
+    },
+    {
+      "title": "Een account maken op YouTube - Computer - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/161805?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Als je wilt inloggen bij YouTube, moet je een Google-account maken. Met een Google-account kun je veel YouTube-functies …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "easyminnn/flevel-k25-vlm-60k",
+  "slug": "easyminnn-flevel-k25-vlm-60k",
+  "author": "easyminnn",
+  "url": "https://huggingface.co/easyminnn/flevel-k25-vlm-60k",
+  "created_at": "2026-09-11T13:25:19.000Z",
+  "updated_at": "2026-09-11T13:25:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5_flevel",
+    "robotics",
+    "vla",
+    "gr00t",
+    "robocasa",
+    "action-chunk-compression",
+    "base_model:nvidia/GR00T-N1.5-3B",
+    "base_model:finetune:nvidia/GR00T-N1.5-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2987893697,
+  "parameters_human": "2.99B",
+  "storage_bytes": 8640995604,
+  "storage_human": "8.6 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Медицински факултет | Фемина Форум",
+      "url": "https://forum.femina.mk/threads/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8-%D1%84%D0%B0%D0%BA%D1%83%D0%BB%D1%82%D0%B5%D1%82.4053/",
+      "snippet": "Nov 24, 2010 · За судска медицина треба прво да се запишеш на Медицински факултет, 6 години, и после тоа да одиш на …"
+    },
+    {
+      "title": "Медицински факултет | Страница 20 | Фемина Форум",
+      "url": "https://forum.femina.mk/threads/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8-%D1%84%D0%B0%D0%BA%D1%83%D0%BB%D1%82%D0%B5%D1%82.4053/page-20",
+      "snippet": "Nov 24, 2010 · Во скопје примаат годинава 125 во државна а исто толку и во приватна, слушнав дека ќе имало уште …"
+    },
+    {
+      "title": "Медицински факултет Скопје | Фемина Форум",
+      "url": "https://forum.femina.mk/threads/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8-%D1%84%D0%B0%D0%BA%D1%83%D0%BB%D1%82%D0%B5%D1%82-%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5.20451/",
+      "snippet": "Jan 19, 2014 · Медицински факултет Скопје Дискусија во ' Канта ' започната од didididi123, 25 јануари 2014."
+    },
+    {
+      "title": "Медицински факултет | Страница 229 | Фемина Форум",
+      "url": "https://forum.femina.mk/threads/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8-%D1%84%D0%B0%D0%BA%D1%83%D0%BB%D1%82%D0%B5%D1%82.4053/page-229",
+      "snippet": "Nov 24, 2010 · Прочитај повеќе. Медицински факултет Дискусија во 'Образование' започната од Victorya, 24 ноември 2010. …"
+    },
+    {
+      "title": "Медицински факултет | Страница 3 | Фемина Форум",
+      "url": "https://forum.femina.mk/threads/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8-%D1%84%D0%B0%D0%BA%D1%83%D0%BB%D1%82%D0%B5%D1%82.4053/page-3",
+      "snippet": "Nov 24, 2010 · elcezelce Форумски идол Се зачлени на: 9 јануари 2011 Пораки: 3.119 Допаѓања: 20.938 Пол: Женски angelbaby …"
+    }
+  ]
+}

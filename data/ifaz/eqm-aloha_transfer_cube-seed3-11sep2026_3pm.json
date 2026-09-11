@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "iFaz/eqm-aloha_transfer_cube-seed3-11sep2026_3pm",
+  "slug": "ifaz-eqm-aloha_transfer_cube-seed3-11sep2026_3pm",
+  "author": "iFaz",
+  "url": "https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-11sep2026_3pm",
+  "created_at": "2026-09-11T16:21:34.000Z",
+  "updated_at": "2026-09-11T16:21:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "eqm",
+    "dataset:lerobot/aloha_sim_transfer_cube_human",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18701190,
+  "parameters_human": "18.7M",
+  "storage_bytes": 74832124,
+  "storage_human": "75 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mtf.ummah.com",
+      "url": "https://mtf.ummah.com/",
+      "snippet": "Building with Ummah Bank with Ummah Choose how you want to start with Ummah. Build financial products or start banking with us."
+    },
+    {
+      "title": "UMMAH",
+      "url": "https://ummah.com/products",
+      "snippet": "Financial infrastructure for the global economy. A unified platform to accept payments, manage gateways, and build wealth on our …"
+    },
+    {
+      "title": "Al-Munaafiqoon - Ummah.com",
+      "url": "https://ummah.com/surah/al-munaafiqoon/",
+      "snippet": "Al-Munaafiqoon (The Hypocrites) revealed in Madinah"
+    },
+    {
+      "title": "Al-Inshiqaaq - Ummah.com",
+      "url": "https://ummah.com/surah/al-inshiqaaq/",
+      "snippet": "Al-Inshiqaaq (The Splitting Open) revealed in Makkah"
+    },
+    {
+      "title": "Why are wax melts so popular? - Ummah.com",
+      "url": "https://ummah.com/why-are-wax-melts-so-popular/",
+      "snippet": "Jul 7, 2023 · Cost-effectiveness One of the major reasons wax melts have become such a favourite choice is their cost-effectiveness. …"
+    }
+  ]
+}

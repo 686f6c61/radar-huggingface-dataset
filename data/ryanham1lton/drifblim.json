@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Drifblim",
+  "slug": "ryanham1lton-drifblim",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Drifblim",
+  "created_at": "2026-09-11T17:27:14.000Z",
+  "updated_at": "2026-09-11T17:28:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118628871,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fransa'nın Nice şehrinde yapılabilecek 25 şey - NTV Haber",
+      "url": "https://www.ntv.com.tr/n-life/gezi/galeri-fransanin-nice-sehrinde-yapilabilecek-25-sey,CcNPLxclOE-dFeV80hmSxA",
+      "snippet": "Sep 20, 2023 · Fransa'nın güzel sahil şehri Nice, Côte d'Azur'un incisi olarak biliniyor. İşte Nice'te yapılabilecek aktiviteler, gidilmesi …"
+    },
+    {
+      "title": "Nice Gezilecek Yerler: Plajlar, Eski Şehir ve Detaylı Gezi Rehberi",
+      "url": "https://www.birdakikadageziyorum.com/nice-gezilecek-gorulecek-yerler/",
+      "snippet": "Nice’te gezilecek yerler, Promenade des Anglais, Vieux Nice sokakları ve plajlarıyla dolu kapsamlı gezi rehberi."
+    },
+    {
+      "title": "NICE GEZİLECEK YERLER, FRANSA - Biz Evde Yokuz",
+      "url": "https://www.bizevdeyokuz.com/nice-fransa/",
+      "snippet": "Şimdi Nice’te gezilmesi gereken tüm yerleri anlatacağız. Yapılacak çok şey varmış gibi duruyor ama bize sorarsanız tek başına Nice’i …"
+    },
+    {
+      "title": "Nice Gezi Rehberi: Nice Gezisi için Önemli Notlar | Biletbayi Blog",
+      "url": "https://blog.biletbayi.com/avrupa/fransa/nice/",
+      "snippet": "Feb 26, 2025 · Nice gezi rehberi; şehrin gezilecek yerleri, yöresel yemekleri, gece hayatı, tarihi yerlerini içeren haritalı, görselli, …"
+    },
+    {
+      "title": "Güney Fransa Nice (Nis) Gezi Rehberi ve tüyoları |Nice plajları",
+      "url": "https://cokgezenadam.com/fransa-nice-gezi-rehberi",
+      "snippet": "Jun 23, 2026 · Fransa’nın Cote d’Azur bölgesinin en gözde şehri Nice’de yüksek lisans nedeniyle bir sene geçirince, Nice’de …"
+    }
+  ]
+}

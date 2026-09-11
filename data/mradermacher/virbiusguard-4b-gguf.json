@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/VirbiusGuard-4B-GGUF",
+  "slug": "mradermacher-virbiusguard-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VirbiusGuard-4B-GGUF",
+  "created_at": "2026-09-11T10:58:29.000Z",
+  "updated_at": "2026-09-11T11:16:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safety",
+    "security",
+    "llm-guard",
+    "qwen3",
+    "prompt-injection",
+    "agent-safety",
+    "zh",
+    "en",
+    "base_model:i1see1you/VirbiusGuard-4B",
+    "base_model:quantized:i1see1you/VirbiusGuard-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389942016,
+  "storage_human": "36.4 GB",
+  "base_model": "i1see1you/VirbiusGuard-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kerimoğlu Ork ile oyun Havaları - YouTube",
+      "url": "https://www.youtube.com/watch?v=Mzd-4iRQs2w",
+      "snippet": "Feb 6, 2026 · Kerimoğlu Ork ile oyun Havaları."
+    },
+    {
+      "title": "KERİMOĞLU... Elektro bağlamalı oyun havası... Zeybek...",
+      "url": "https://www.youtube.com/watch?v=cVYIE97n654",
+      "snippet": "Feb 7, 2026 · Elektro bağlamalı oyun havası... Zeybek..."
+    },
+    {
+      "title": "Davul Zurna Kerimoğlu Zeybeği Dursunbey — Davul Zurna Çalan Oyun Havası …",
+      "url": "https://www.tiktok.com/@mdirgi10_0/video/7674756047407418631",
+      "snippet": "Keywords: Kerimoğlu Zeybeği davul zurna, Dursunbey oyun havası, davul zurna zeybek, yöresel zeybek müziği, Kerimoğlu zeybeği …"
+    },
+    {
+      "title": "KERİMOĞLU ZEYBEĞİ •°• ZEYBEK GİBİ EFE GİBİ V.A.R.O.L... # ...",
+      "url": "https://www.facebook.com/AKDENIZOYUNHAVALARI/videos/kerimo%C4%9Flu-zeybe%C4%9Fi-zeybek-gibi-efe-gibi-varolkerimo%C4%9Fluzeybe%C4%9Fi-akdenizoyunhavalar%C4%B1/769936461888296/",
+      "snippet": "Jun 21, 2024 · •`•KERİMOĞLU ZEYBEĞİ •°• ZEYBEK GİBİ EFE GİBİ V.A.R.O.L... #Kerimoğluzeybeği #akdenizoyunhavaları. …"
+    },
+    {
+      "title": "Kerimoğlu zeybeği oyunu #zeybek #oyunhavası #düğün #keşfet #fyp …",
+      "url": "https://www.facebook.com/zonguldakoyunhavalari/videos/kerimo%C4%9Flu-zeybe%C4%9Fi-oyunu-zeybek-oyunhavas%C4%B1-d%C3%BC%C4%9F%C3%BCn-ke%C5%9Ffet-fyp-viral-oyun/1324988582328553/",
+      "snippet": "Oyun havaları Beni destekleyen tüm güzel insanlara özel bir alan açtım! Artık abonelik sistemi aktif. Abone olarak; Özel videolara …"
+    }
+  ]
+}

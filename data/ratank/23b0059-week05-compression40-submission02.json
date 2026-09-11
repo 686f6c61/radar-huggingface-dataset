@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RatanK/23B0059-Week05-Compression40-Submission02",
+  "slug": "ratank-23b0059-week05-compression40-submission02",
+  "author": "RatanK",
+  "url": "https://huggingface.co/RatanK/23B0059-Week05-Compression40-Submission02",
+  "created_at": "2026-09-11T13:22:54.000Z",
+  "updated_at": "2026-09-11T13:23:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4030826958,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WaPo Berlin - Staffel 1 der Serie - jetzt streamen! - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/serie/wapo-berlin/staffel-1/Y3JpZDovL3JiYi1vbmxpbmUuZGUvd2Fzc2Vyc2NodXR6cG9saXplaS1iZXJsaW4/1",
+      "snippet": "Auf Spree und Havel ermittelt die WaPo Berlin: Hauptkommissarin Jasmin Sayed und ihr Team lösen Kriminalfälle auf dem Wasser – …"
+    },
+    {
+      "title": "WaPo Berlin – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/WaPo_Berlin",
+      "snippet": "WaPo Berlin ist eine deutsche Fernsehserie, die seit dem 28. Januar 2020 am Dienstagvorabend um 18:50 Uhr im Ersten …"
+    },
+    {
+      "title": "WaPo - Alle aktuellen Folgen - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/ard/wapo-dieserien",
+      "snippet": "Die spannendsten Fälle der WaPo Duisburg, Bodensee, Elbe und Berlin. Jetzt alle Serien streamen und die neuesten Folgen …"
+    },
+    {
+      "title": "WaPo Berlin – fernsehserien.de",
+      "url": "https://www.fernsehserien.de/wapo-berlin",
+      "snippet": "Jan 28, 2020 · Die Vorabend-Serie „WaPo Berlin“ ist ein Ableger von „WaPo Bodensee“ und zeigt, wie Kriminalhauptkommissarin …"
+    },
+    {
+      "title": "WaPo Berlin verpasst? Ganze Folge kostenlos online sehen!",
+      "url": "https://www.sendungverpasst.de/sendungen/wapo-berlin",
+      "snippet": "May 5, 2026 · WaPo Berlin bei Das Erste verpasst? Kein Problem, hier gibt's die aktuellen Folgen als Video"
+    }
+  ]
+}

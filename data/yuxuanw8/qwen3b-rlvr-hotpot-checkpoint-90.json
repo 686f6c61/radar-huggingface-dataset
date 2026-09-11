@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-90",
+  "slug": "yuxuanw8-qwen3b-rlvr-hotpot-checkpoint-90",
+  "author": "yuxuanw8",
+  "url": "https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-90",
+  "created_at": "2026-09-11T12:05:05.000Z",
+  "updated_at": "2026-09-11T12:08:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355226095,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Croatia Quizzes - JetPunk",
+      "url": "https://www.jetpunk.com/tags/croatia",
+      "snippet": "148 different Croatia Quizzes on JetPunk.com. Check out our popular trivia games like Croatia Country, and Counties of Croatia with …"
+    },
+    {
+      "title": "Croatia: Counties - Map Quiz Game - Seterra - GeoGuessr",
+      "url": "https://www.geoguessr.com/vgp/3399",
+      "snippet": "There are interesting facts like those about all the Croatian counties—from Međimurje in the north to Dubrovnik-Neretva in the south, …"
+    },
+    {
+      "title": "Croatia Quiz | 100+ Trivia Questions Answers & Fun Facts",
+      "url": "https://riddleness.com/trivia/croatia/",
+      "snippet": "Sep 20, 2025 · Think you know Croatia? Take our ultimate Croatia quiz with 100+ trivia questions and answers covering history, …"
+    },
+    {
+      "title": "Croatia Quiz | Croatia | 10 Questions - Fun Trivia",
+      "url": "https://www.funtrivia.com/trivia-quiz/Geography/Croatia-76522.html",
+      "snippet": "Dec 27, 2025 · This is a quiz about my country. Its very beautiful, and I recommend that you visit her. - test your knowledge in this …"
+    },
+    {
+      "title": "All Croatia Quizzes, Trivia, and Games - Sporcle",
+      "url": "https://www.sporcle.com/games/tags/croatia",
+      "snippet": "Play Croatia quizzes on Sporcle, the world's largest quiz community. There's a Croatia quiz for everyone."
+    }
+  ]
+}

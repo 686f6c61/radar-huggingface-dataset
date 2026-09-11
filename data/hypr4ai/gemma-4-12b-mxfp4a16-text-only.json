@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "HYPR4AI/Gemma-4-12B-MXFP4A16-Text-Only",
+  "slug": "hypr4ai-gemma-4-12b-mxfp4a16-text-only",
+  "author": "HYPR4AI",
+  "url": "https://huggingface.co/HYPR4AI/Gemma-4-12B-MXFP4A16-Text-Only",
+  "created_at": "2026-09-11T12:54:27.000Z",
+  "updated_at": "2026-09-11T12:56:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gemma",
+    "gemma-4",
+    "fp4",
+    "mxfp4",
+    "llmcompressor",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "text-generation",
+    "hotpotqa",
+    "en",
+    "dataset:hotpotqa/hotpot_qa",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blick in den Lesesaal - uni-wuppertal.de",
+      "url": "https://bib.uni-wuppertal.de/de/startseite/",
+      "snippet": "Kontakt Standort: Gebäude BZ (Ebenen 7–10) Gaußstraße 20, 42119 Wuppertal Telefon: (0202) 439-2705 Fax: (0202) 439-2695 Alle …"
+    },
+    {
+      "title": "Suchen - uni-wuppertal.de",
+      "url": "https://bib.uni-wuppertal.de/de/suchen/",
+      "snippet": "Bergische Universität Wuppertal Gaußstraße 20 42119 Wuppertal Postfach 42097 Wuppertal Telefon +49 202 439-0 Internet …"
+    },
+    {
+      "title": "Datenbanken - uni-wuppertal.de",
+      "url": "https://bib.uni-wuppertal.de/de/suchen/datenbanken/",
+      "snippet": "Datenbanken Nutzen Sie für die Informations- und Literaturrecherche unser umfangreiches Angebot an bibliographischen und …"
+    },
+    {
+      "title": "FAQ Fernleihe - uni-wuppertal.de",
+      "url": "https://bib.uni-wuppertal.de/de/suchen/fernleihe/faq/",
+      "snippet": "Die Fernleihe bietet Ihnen die Möglichkeit, Literatur, die in der Universitätsbibliothek Wuppertal nicht vorhanden ist, in einer anderen …"
+    },
+    {
+      "title": "Gruppenarbeit - uni-wuppertal.de",
+      "url": "https://bib.uni-wuppertal.de/de/lernen/arbeitsplaetze/gruppenarbeit/",
+      "snippet": "Unsere und Ihre Regeln: reservieren Sie mit Ihrer Mailadresse uni-wuppertal.de buchbare Zeiträume: 1, 2 oder 3 Stunden, bis zu 7 …"
+    }
+  ]
+}

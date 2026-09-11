@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sam-guided-vlas/train_1_2_hard_items__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_10k",
+  "slug": "sam-guided-vlas-train_1_2_hard_items__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_10k",
+  "author": "sam-guided-vlas",
+  "url": "https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_10k",
+  "created_at": "2026-09-11T18:08:18.000Z",
+  "updated_at": "2026-09-11T18:09:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:sam-guided-vlas/train_1_2_hard_items__mask__blur__sim__all_cameras__live",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354053440,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAM Outillage",
+      "url": "https://www.sam-outillage.fr/",
+      "snippet": "Servantes SAM conçues et fabriquées à Saint-Etienne Des servantes pour tout ranger Organiser avec des modules Comparer les …"
+    },
+    {
+      "title": "Sam (Série) | TF1+",
+      "url": "https://www.tf1.fr/tf1/sam",
+      "snippet": "Sam, honteuse de son comportement sous l'emprise d'ecstasy, s'excuse auprès de ses collègues. Elle tente d'être une mère parfaite …"
+    },
+    {
+      "title": "Sam (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sam_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Sam est une série télévisée française créée par Claire Lemaréchal. Elle est diffusée en Belgique à partir du 24 mars 2016 sur La Une …"
+    },
+    {
+      "title": "Sam (Série) - Replay et vidéos en streaming | TF1+",
+      "url": "https://www.tf1.fr/tf1/sam/videos",
+      "snippet": "Aug 21, 2025 · Toutes les vidéos de « Sam » (Série) gratuitement en streaming sur TF1+"
+    },
+    {
+      "title": "Sam Sauvage — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sam_Sauvage",
+      "snippet": "Hugo Brebion dit Sam Sauvage, né le 25 avril 2000 à Saint-Martin-Boulogne (Pas-de-Calais), est un auteur-compositeur-interprète …"
+    }
+  ]
+}

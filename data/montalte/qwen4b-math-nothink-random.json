@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen4b-math-nothink-random",
+  "slug": "montalte-qwen4b-math-nothink-random",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen4b-math-nothink-random",
+  "created_at": "2026-09-11T12:21:41.000Z",
+  "updated_at": "2026-09-11T12:24:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "merge",
+    "random",
+    "math",
+    "nothink",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Get started with Google Maps This article will help you set up, learn the basics, and explain various features of Google Maps. You …"
+    },
+    {
+      "title": "Report data or content errors on Google Maps",
+      "url": "https://support.google.com/maps/answer/3094088?hl=en",
+      "snippet": "Report spam or bad data Any illegal, offensive, fraudulent, or malicious data on Google Maps is considered as spam. Users found to …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Download a map to use offline in Google Maps On your Android phone or tablet, open the Google Maps app . If you don’t have the …"
+    },
+    {
+      "title": "Add a missing place to Google Maps",
+      "url": "https://support.google.com/maps/answer/6320846?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Add a missing place On your computer, open Google Maps. Search for the address of the missing place. Click Add a missing place."
+    },
+    {
+      "title": "Use navigation in Google Maps",
+      "url": "https://support.google.com/maps/answer/3273406?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use navigation in Google Maps To get easy, turn-by-turn navigation to places, use the Google Maps app. Maps shows you directions …"
+    }
+  ]
+}

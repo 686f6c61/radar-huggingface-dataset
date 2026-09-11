@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-dino-5scale-lsj-swin-l-3x-lvis",
+  "slug": "dronefreak-co-dino-5scale-lsj-swin-l-3x-lvis",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-dino-5scale-lsj-swin-l-3x-lvis",
+  "created_at": "2026-09-11T11:14:52.000Z",
+  "updated_at": "2026-09-11T11:17:54.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-dino",
+    "detr",
+    "coco",
+    "swin",
+    "pytorch",
+    "iccv2023",
+    "lvis",
+    "en",
+    "dataset:lvis",
+    "arxiv:2211.12860",
+    "arxiv:1908.03195",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2958710914,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "LVIS v1 val",
+      "metric": "box AP",
+      "value": 56.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=235c02dddbee680d2740150cda866903",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "dronefreak/co-dino-5scale-lsj-swin-l-3x-coco · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/co-dino-5scale-lsj-swin-l-3x-coco",
+      "snippet": "Co-DINO (Swin-L, 3x (36 epochs), COCO) Disclaimer This is not an official release. All credit for the method, the architecture, and the trained weights belongs entirely to the original authors: Zhuofan Zong, Guanglu Song, and Yu Liu (SenseTime X-Lab). This repository claims no contribution to the underlying research or training. It hosts the same checkpoint the authors published to Google ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Co-DINO Models | Sense-X/Co-DETR | DeepWiki",
+      "url": "https://deepwiki.com/Sense-X/Co-DETR/3.2-co-dino-models",
+      "snippet": "Co-DINO models are an extension of the DINO (DETR with Improved deNoising anchOr boxes) architecture that incorporates the collaborative hybrid assignments training scheme introduced by Co-DETR. These models have achieved state-of-the-art performance in object detection benchmarks, with the highest-performing variant reaching 66.0 AP on COCO test-dev."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

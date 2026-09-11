@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Drifloon",
+  "slug": "ryanham1lton-drifloon",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Drifloon",
+  "created_at": "2026-09-11T17:22:59.000Z",
+  "updated_at": "2026-09-11T17:24:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116331654,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Messenger",
+      "url": "https://www.messenger.com/?_rdr",
+      "snippet": "Instantly reach the people in your life—for free. Messenger is just like texting, but you don't have to pay for every message (it works …"
+    },
+    {
+      "title": "Messenger",
+      "url": "https://www.messenger.com/",
+      "snippet": "A place for meaningful conversations Messenger helps you connect with your Facebook friends and family, build your community, …"
+    },
+    {
+      "title": "Messenger - Facebook",
+      "url": "https://www.facebook.com/messenger/",
+      "snippet": "Messenger. 17,571,517 likes · 49,576 talking about this. Messenger from Facebook helps you stay close with those who matter most, …"
+    },
+    {
+      "title": "Messenger | Expresní kurýrní služba",
+      "url": "https://messenger.cz/cs/home",
+      "snippet": "Hlavní stránka kurýrní společnosti Messenger Nejrychlejší kurýrní služba v Česku Bleskovou rychlostí přepravíme obálku, víno i skříň …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    }
+  ]
+}

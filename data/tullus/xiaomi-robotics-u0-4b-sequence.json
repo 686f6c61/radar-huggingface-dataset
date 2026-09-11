@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TULLUS/Xiaomi-Robotics-U0-4B-Sequence",
+  "slug": "tullus-xiaomi-robotics-u0-4b-sequence",
+  "author": "TULLUS",
+  "url": "https://huggingface.co/TULLUS/Xiaomi-Robotics-U0-4B-Sequence",
+  "created_at": "2026-09-11T14:05:00.000Z",
+  "updated_at": "2026-09-11T14:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "UNIS",
+    "robotics",
+    "multimodal",
+    "image-generation",
+    "any-to-any",
+    "custom_code",
+    "arxiv:2607.11643",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5082093056,
+  "parameters_human": "5.08B",
+  "storage_bytes": 10169496708,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Posist Print Utility Download",
+      "url": "https://posist-print-utility.software.informer.com/",
+      "snippet": "Jun 23, 2026 · Posist Print Utility is a lightweight companion application that connects your Posist point-of-sale to local and network …"
+    },
+    {
+      "title": "Download Posist Print Utility by Posist Technologies Pvt. Ltd.",
+      "url": "https://posist-print-utility.software.informer.com/download/",
+      "snippet": "Posist Print Utility download Lightweight companion application that connects your Posist point-of-sale to local and network printers …"
+    },
+    {
+      "title": "Posist Print Utility: user reviews - Software Informer",
+      "url": "https://posist-print-utility.software.informer.com/comments/",
+      "snippet": "Posist Print Utility comments Lightweight companion application that connects your Posist point-of-sale to local and network printers …"
+    },
+    {
+      "title": "People that use Posist Print Utility by Posist Technologies Pvt. Ltd.",
+      "url": "https://posist-print-utility.software.informer.com/users/",
+      "snippet": "Posist Print Utility by Posist Technologies Pvt. Ltd. - users. File name: PrintUtility.exe"
+    },
+    {
+      "title": "Posist Print Utility: All versions - Software Informer",
+      "url": "https://posist-print-utility.software.informer.com/versions/",
+      "snippet": "Jan 24, 2013 · Posist Print Utility by Posist Technologies Pvt. Ltd. - all versions. Version: 1.0. File name: PrintUtility.exe"
+    }
+  ]
+}

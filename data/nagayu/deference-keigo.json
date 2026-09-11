@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "NagaYu/deference-keigo",
+  "slug": "nagayu-deference-keigo",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/deference-keigo",
+  "created_at": "2026-09-11T15:15:44.000Z",
+  "updated_at": "2026-09-11T15:55:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "japanese",
+    "keigo",
+    "honorifics",
+    "grammatical-error-detection",
+    "business-japanese",
+    "cpu",
+    "ja",
+    "dataset:NagaYu/deference-keigo-corpus",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277470743,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1127005204,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Log in - TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - Videos, Shop & LIVE - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en_US",
+      "snippet": "TikTok is the global discovery platform for videos, streaming on LIVE, shopping, and more. Our mission is to inspire creativity and …"
+    },
+    {
+      "title": "TikTok",
+      "url": "https://m.tiktok.com/signup/phone-or-email/phone",
+      "snippet": "AzərbaycanBahasa IndonesiaBahasa MelayuBasa JawaCatalàCebuanoČeštinaDanskDeutschEestiEnglish (UK)English …"
+    },
+    {
+      "title": "TikTok - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.ss.android.ugc.trill&hl=en&gl=KH",
+      "snippet": "Whether you’re a sports fanatic, a pet enthusiast, or just looking for a laugh, there’s something for everyone on TikTok. All you have …"
+    }
+  ]
+}

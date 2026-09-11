@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/Muse-Glimmer-30B-JANG_4M-CRACK",
+  "slug": "openintelligent123-muse-glimmer-30b-jang_4m-crack",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/Muse-Glimmer-30B-JANG_4M-CRACK",
+  "created_at": "2026-09-11T15:32:52.000Z",
+  "updated_at": "2026-09-11T15:32:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "muse_glimmer",
+    "apple-silicon",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "jang",
+    "jang-4m",
+    "vision-language",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "atem",
+    "harmbench",
+    "mmlu",
+    "muse-glimmer",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 21721113538,
+  "storage_human": "21.7 GB",
+  "base_model": "OsaurusAI/Muse-Glimmer-30B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minha Conexão: Teste a Velocidade Real da sua Internet",
+      "url": "https://www.minhaconexao.com.br/",
+      "snippet": "O Teste de internet - Internet Speed Test Minha Conexão - é um teste de velocidade desenvolvido para que você possa medir o …"
+    },
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "Quizz.biz - Tester sa culture, créer des Quiz, défier ses amis",
+      "url": "https://www.quizz.biz/",
+      "snippet": "C'est un test de culture où vous devez répondre correctement à des questions sur différents thèmes. Nos quiz peuvent être facile, …"
+    },
+    {
+      "title": "Tests de personnalité gratuits : A vous de jouer - Quizz.biz",
+      "url": "https://www.quizz.biz/annuaire/cat-quizz-255_0.html",
+      "snippet": "Ce test de personnalité te permettra de savoir si ton prénom est rare. Mais attention, ce test ne définit ni ta valeur…"
+    },
+    {
+      "title": "Speedtest Copel - Teste de Velocidade da Internet",
+      "url": "https://www.minhaconexao.com.br/copel",
+      "snippet": "O Teste de internet - Internet Speed Test Minha Conexão - é um teste de velocidade desenvolvido para que você possa medir o …"
+    }
+  ]
+}

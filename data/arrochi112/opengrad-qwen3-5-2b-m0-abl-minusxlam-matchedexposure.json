@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "arrochi112/OpenGrad-Qwen3.5-2B-M0-ABL-MinusXLAM-MatchedExposure",
+  "slug": "arrochi112-opengrad-qwen3-5-2b-m0-abl-minusxlam-matchedexposure",
+  "author": "arrochi112",
+  "url": "https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M0-ABL-MinusXLAM-MatchedExposure",
+  "created_at": "2026-09-11T14:13:58.000Z",
+  "updated_at": "2026-09-11T14:16:54.000Z",
+  "license": "composite-per-source",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tool-calling",
+    "function-calling",
+    "supervised-fine-tuning",
+    "qwen3.5",
+    "opengrad",
+    "ablation",
+    "dataset:arrochi112/OpenGrad-ToolPolicy-Canonical-v2-minus-xlam",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22602345488,
+  "storage_human": "22.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "My Location",
+      "url": "https://mylocation.org/",
+      "snippet": "Your location as seen from the Internet using your IP address and the new HTML5 geolocation feature."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Map data ©2026 Google Terms 20 km Directions"
+    },
+    {
+      "title": "My Location — What Is My Current Location? Where Am I Right Now?",
+      "url": "https://mylocationapp.com/my-location/",
+      "snippet": "Find your current location instantly: live latitude & longitude, accuracy, address and elevation on a map. Auto-detected, free, no …"
+    },
+    {
+      "title": "My Location - Where Am I?",
+      "url": "https://iplocation.io/my-location",
+      "snippet": "Get to know 'Where am I' with our My location tool. The tool instantly finds your current location based on your geographical …"
+    }
+  ]
+}

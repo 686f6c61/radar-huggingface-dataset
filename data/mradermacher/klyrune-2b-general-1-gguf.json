@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Klyrune-2B-General-1-GGUF",
+  "slug": "mradermacher-klyrune-2b-general-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Klyrune-2B-General-1-GGUF",
+  "created_at": "2026-09-11T10:49:04.000Z",
+  "updated_at": "2026-09-11T11:05:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Jahirrrr/Klyrune-2B-General-1",
+    "base_model:quantized:Jahirrrr/Klyrune-2B-General-1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 22763609472,
+  "storage_human": "22.8 GB",
+  "base_model": "Jahirrrr/Klyrune-2B-General-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "§ 18c UStG - Meldepflicht bei der Lieferung neuer Fahrzeuge",
+      "url": "https://www.juraforum.de/gesetze/ustg/18c-meldepflicht-bei-der-lieferung-neuer-fahrzeuge",
+      "snippet": "Lesen Sie § 18c UStG kostenlos in der Gesetzessammlung von Juraforum.de mit über 6200 Gesetzen und Vorschriften."
+    },
+    {
+      "title": "Urteile zu § 14 UStG - JuraForum.de",
+      "url": "https://www.juraforum.de/urteile/vorschriften/ustg-14.4",
+      "snippet": "Sep 22, 1992 · Urteile zu § 14 UStG 1. Nach Eintritt der Abrechnungsreife kann der Vermieter die offenen …"
+    },
+    {
+      "title": "§ 18 UStG - Besteuerungsverfahren - Gesetze - JuraForum.de",
+      "url": "https://www.juraforum.de/gesetze/ustg/18-besteuerungsverfahren",
+      "snippet": "Lesen Sie § 18 UStG kostenlos in der Gesetzessammlung von Juraforum.de mit über 6200 Gesetzen und Vorschriften."
+    },
+    {
+      "title": "UStG - Umsatzsteuergesetz - Gesetze - JuraForum.de",
+      "url": "https://www.juraforum.de/gesetze/ustg/",
+      "snippet": "Jan 1, 1982 · UStG - Umsatzsteuergesetz § 16 UStG - Steuerberechnung, Besteuerungszeitraum und Einzelbesteuerung§ 17 UStG - …"
+    },
+    {
+      "title": "§ 18f UStG - Sicherheitsleistung - Gesetze - JuraForum.de",
+      "url": "https://www.juraforum.de/gesetze/ustg/18f-sicherheitsleistung",
+      "snippet": "Lesen Sie § 18f UStG kostenlos in der Gesetzessammlung von Juraforum.de mit über 6200 Gesetzen und Vorschriften."
+    }
+  ]
+}

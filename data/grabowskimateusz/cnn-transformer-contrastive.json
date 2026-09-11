@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "grabowskimateusz/cnn-transformer-contrastive",
+  "slug": "grabowskimateusz-cnn-transformer-contrastive",
+  "author": "grabowskimateusz",
+  "url": "https://huggingface.co/grabowskimateusz/cnn-transformer-contrastive",
+  "created_at": "2026-09-11T14:03:08.000Z",
+  "updated_at": "2026-09-11T14:03:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "百科社群 - MC百科|最大的Minecraft中文MOD百科",
+      "url": "https://bbs.mcmod.cn/",
+      "snippet": "我的世界百科论坛，提供MineCraft模组交流、皮肤下载、攻略解说、MOD汉化、地图发布、MOD问答。"
+    },
+    {
+      "title": "你们都玩什么启动器？（内含超详细启动器介绍！） - 百科杂谈 - MC百 …",
+      "url": "https://bbs.mcmod.cn/thread-21680-1-1.html",
+      "snippet": "Jun 17, 2025 · 本帖最后由 linrongyi 于 2025-10-8 09:08 编辑 启动器介绍： 备注：以下所有的下载地址的是启动器官方的下载地址 …"
+    },
+    {
+      "title": "java17安装 · GitBook",
+      "url": "https://gitbook.mc.netease.com/chapter4/java17.html",
+      "snippet": "安装java17流程 说明 以下步骤均在root用户下执行，终端执行 whoami，若输出为root，则开始以下步骤进行安装，若为服主代号 ..."
+    },
+    {
+      "title": "如何提取 CurseForge/Modrinth 平台收益 - MC百科",
+      "url": "https://bbs.mcmod.cn/forum.php?mod=viewthread&action=printable&tid=23002",
+      "snippet": "MC百科社群 标题: 如何提取 CurseForge/Modrinth 平台收益 [打印本页] 作者: QQ酱778591 时间: 2026-2-4 15:39 标题: 如何提取 …"
+    },
+    {
+      "title": "MC1.20.1forge开服教程 - 服务端讨论 - MC百科社群 - MC百科|最大 …",
+      "url": "https://bbs.mcmod.cn/thread-18843-1-1.html",
+      "snippet": "本帖最后由 were_wzq 于 2024-7-4 12:16 编辑 你是不是看别人玩的服务器是不是也想有自己的服务器？ 开服教程来啦1，选择服务器 …"
+    }
+  ]
+}

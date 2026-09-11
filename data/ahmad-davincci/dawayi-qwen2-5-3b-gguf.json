@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ahmad-davincci/dawayi-qwen2.5-3b-gguf",
+  "slug": "ahmad-davincci-dawayi-qwen2-5-3b-gguf",
+  "author": "ahmad-davincci",
+  "url": "https://huggingface.co/ahmad-davincci/dawayi-qwen2.5-3b-gguf",
+  "created_at": "2026-09-11T12:19:55.000Z",
+  "updated_at": "2026-09-11T12:51:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902656,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ahmed — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ahmed",
+      "snippet": "Prénom Ahmad et Ahmed (en arabe : احمد) sont des prénoms masculins arabes signifiant « celui qui reçoit des louanges » 1. Ils …"
+    },
+    {
+      "title": "Ahmad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ahmad",
+      "snippet": "\"Coming back to the term \"Ahmad,\" Muslims have suggested that Ahmad is the translation of periklutos, celebrated or the Praised …"
+    },
+    {
+      "title": "Prénom Ahmad : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/ahmad-34016",
+      "snippet": "Parent d'un Ahmad, ce sont des instants que l'on savourera avec lui. Afin de gérer sa trop grande indulgence, il est important de lui …"
+    },
+    {
+      "title": "Prénom AHMAD : Signification, Origine, Caractère et Statistiques ...",
+      "url": "https://www.guide-bebe.com/prenoms/ahmad-246",
+      "snippet": "May 28, 2025 · Le prénom Ahmad est d'origine arabe et possède une signification profonde et riche. En effet, Ahmad est souvent …"
+    },
+    {
+      "title": "«J’aurais aussi mérité ma place dans ce all stars» : que devient Ahmad ...",
+      "url": "https://tvmag.lefigaro.fr/programme-tv/tele-realite/j-aurais-aussi-merite-ma-place-dans-ce-all-stars-que-devient-ahmad-le-stratege-de-koh-lanta-l-ile-des-heros-20260908",
+      "snippet": "3 days ago · Ahmad Abadie Que devenez-vous depuis six ans ? J’étais dans la restauration avant ma participation à « Koh-Lanta », …"
+    }
+  ]
+}

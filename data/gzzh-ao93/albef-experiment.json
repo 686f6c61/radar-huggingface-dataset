@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Gzzh-ao93/albef-experiment",
+  "slug": "gzzh-ao93-albef-experiment",
+  "author": "Gzzh-ao93",
+  "url": "https://huggingface.co/Gzzh-ao93/albef-experiment",
+  "created_at": "2026-09-11T15:21:18.000Z",
+  "updated_at": "2026-09-11T15:21:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Städtereise nach Tallinn: Erkundet die Hauptstadt von Estland",
+      "url": "https://www.urlaubspiraten.de/reiseziele/estland/tallinn",
+      "snippet": "Tallinn besticht durch eine wunderbar erhaltene Altstadt mit komplett erhaltener Stadtmauer. Macht eine Zeitreise ins Mittelalter und …"
+    },
+    {
+      "title": "Planen Sie Ihre perfekte Reise nach Tallinn: Tipps und Highlights",
+      "url": "https://destinationtallinn.com/de/reiseplanung-fur-tallinn/",
+      "snippet": "Entdecken Sie den ultimativen Reiseführer für Ihre Reise nach Tallinn, der wunderschönen Hauptstadt Estlands. Entdecken Sie die …"
+    },
+    {
+      "title": "Städtereise nach Tallinn → 15x tolle Orte, Tipps + wo buchen?",
+      "url": "https://www.urlaubsguide.de/estland/tallinn/",
+      "snippet": "Sind Sie neugierig, ob ein Städtetrip nach Tallinn auch etwas für Sie ist? Auf dieser Seite stellen wir Ihnen die schönsten …"
+    },
+    {
+      "title": "Entdecken Sie Tallinn: Ihr ultimativer Reiseplaner",
+      "url": "https://destinationtallinn.com/de/reiseplanung-fur-tallinn/planen-sie-ihre-reise-nach-tallinn/",
+      "snippet": "Planen Sie Ihren perfekten Urlaub in Tallinn mit unserem umfassenden Reiseführer. Entdecken Sie Top-Attraktionen, lokale Küche …"
+    },
+    {
+      "title": "Estland: 6 Tipps für einen Städtetrip nach Tallinn",
+      "url": "https://reisenexclusiv.com/tallinn-sehenswuerdigkeiten-und-tipps-fuer-den-staedtetrip/",
+      "snippet": "Sep 16, 2025 · Eine malerische Altstadt, köstliche Restaurants, Panoramablicke und reichlich Design: Tallinn ist der perfekte …"
+    }
+  ]
+}

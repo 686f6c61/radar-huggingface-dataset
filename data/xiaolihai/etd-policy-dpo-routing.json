@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Xiaolihai/etd-policy-dpo-routing",
+  "slug": "xiaolihai-etd-policy-dpo-routing",
+  "author": "Xiaolihai",
+  "url": "https://huggingface.co/Xiaolihai/etd-policy-dpo-routing",
+  "created_at": "2026-09-11T14:11:39.000Z",
+  "updated_at": "2026-09-11T14:13:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:model/Qwen3-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1059972706,
+  "storage_human": "1.1 GB",
+  "base_model": "model/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=323e8ebaa2fa691f2286996ba3d468a3",
+      "snippet": "Play 1500 free games instantly on Poki! All of the games are available to play on mobile, tablet and desktop. Try driving games like …"
+    },
+    {
+      "title": "Full Length Free Gay Movies | We Are Pride - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLdH0fVB5FSkLzXMypCljMkDWivoYX6Ss2",
+      "snippet": "Men Loving Men! | Full Length Free Gay Movies | We Are Pride | Queer Romance, Drama, Comedy"
+    },
+    {
+      "title": "Gay Movies Now on Vimeo",
+      "url": "https://vimeo.com/channels/gaymoviesnow?msockid=323e8ebaa2fa691f2286996ba3d468a3",
+      "snippet": "Fresh gay short films and movies free to view. The focus is on all kinds of encounters between men. Call it gay, bi, queer or whatever. …"
+    },
+    {
+      "title": "PolyBuzz | Talk to AI Characters & Enjoy Free AI Chat Anytime",
+      "url": "https://www.polybuzz.ai/En",
+      "snippet": "Character AI and AI chat free with 20M+ AI character on Polybuzz. Talk AI anytime, explore AI chat roleplay, and create your AI …"
+    },
+    {
+      "title": "Gay film and videos on Vimeo",
+      "url": "https://vimeo.com/channels/gayfilm?msockid=323e8ebaa2fa691f2286996ba3d468a3",
+      "snippet": "Shears’ big-hearted, small-scale tale of self-actualization and body positivity takes an expansive attitude toward queerness. If art is an …"
+    }
+  ]
+}

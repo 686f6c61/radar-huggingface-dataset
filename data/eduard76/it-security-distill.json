@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "eduard76/it-security-distill",
+  "slug": "eduard76-it-security-distill",
+  "author": "eduard76",
+  "url": "https://huggingface.co/eduard76/it-security-distill",
+  "created_at": "2026-09-11T13:17:09.000Z",
+  "updated_at": "2026-09-11T13:21:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ml-intern",
+    "arxiv:2406.08464",
+    "arxiv:2504.15027",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meine Erfahrungen beim BARFEN",
+      "url": "https://www.fernlehrgang-heilpraktiker.com/forum/thread-14932.html",
+      "snippet": "Apr 16, 2014 · Bücher wie Katzen würden Mäuse kaufen und Natural Cat Food habe ich auch gelesen. Meine drei Jungs, haben total …"
+    },
+    {
+      "title": "Servomotoren in medizinischen Geräten – Zuverlässigkeit und Präzision",
+      "url": "https://www.fernlehrgang-heilpraktiker.com/forum/thread-45216.html",
+      "snippet": "Jun 11, 2026 · Hallo zusammen, ich beschäftige mich derzeit mit dem Einsatz von Servomotoren in medizinischen Geräten, …"
+    },
+    {
+      "title": "Heilpraktikerschule Isolde Richter - Psychosomatik und ganzheitliche ...",
+      "url": "https://www.fernlehrgang-heilpraktiker.com/forum/forum-956.html",
+      "snippet": "Apr 6, 2026 · Hier könnt ihr euch rund um das Thema Psychosomatik und ganzheitliche Frauenheilkunde austauschen. Betreut …"
+    },
+    {
+      "title": "Dortmunder Naturheilkundetag",
+      "url": "https://www.fernlehrgang-heilpraktiker.com/forum/thread-2474-page-2.html",
+      "snippet": "Jan 3, 2010 · Liebe Besucherin, lieber Besucher, herzlich wollkommen! Wir freuen uns, dass Sie uns gefunden haben. Sie befinden …"
+    },
+    {
+      "title": "Fallbeispiel für HPA Prüfungsvorbereitung - Anamnese",
+      "url": "https://www.fernlehrgang-heilpraktiker.com/forum/thread-30800-page-4.html",
+      "snippet": "Was ist denn c-ANCA? Wir freuen uns, dass Sie uns gefunden haben. Sie befinden sich im Forum der Heilpraktiker- und …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "AmirDastouri/mbart-persian-summary-finetuned",
+  "slug": "amirdastouri-mbart-persian-summary-finetuned",
+  "author": "AmirDastouri",
+  "url": "https://huggingface.co/AmirDastouri/mbart-persian-summary-finetuned",
+  "created_at": "2026-09-11T19:07:32.000Z",
+  "updated_at": "2026-09-11T19:09:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "summarization",
+    "persian",
+    "fine-tuned",
+    "news",
+    "fa",
+    "dataset:HooshvareLab/pn_summary",
+    "dataset:hezarai/xlsum-fa",
+    "base_model:eslamxm/mbart-finetuned-fa",
+    "base_model:finetune:eslamxm/mbart-finetuned-fa",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 2461688608,
+  "storage_human": "2.5 GB",
+  "base_model": "eslamxm/mbart-finetuned-fa",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Weird Typeアプリ - App Store",
+      "url": "https://apps.apple.com/jp/app/weird-type/id1352785248",
+      "snippet": "Zach Liebermanの「Weird Type」をApp Storeでダウンロードしてください。 スクリーンショット、評価とレビュー、ユーザのヒン …"
+    },
+    {
+      "title": "‎Weird Type App - App Store",
+      "url": "https://apps.apple.com/ph/app/weird-type/id1352785248",
+      "snippet": "Download Weird Type by Zach Lieberman on the App Store. See screenshots, ratings and reviews, user tips and more games like …"
+    },
+    {
+      "title": "Weird Type for iPhone - App Download",
+      "url": "https://www.appbrain.com/appstore/weird-type/ios-1352785248",
+      "snippet": "Sep 2, 2026 · Have you ever wanted to draw with words? Weird Type is an AR app that lets you paint with text in space! You can …"
+    },
+    {
+      "title": "Weird Type app for iPhone — Download",
+      "url": "https://appshunter.io/ios/app/weird-type/id1352785248",
+      "snippet": "Feb 28, 2018 · Weird Type app. Read user reviews, explore features and screenshots, alternatives, and the latest updates. Download …"
+    },
+    {
+      "title": "Weird Type for iOS (iPhone/iPod touch) Latest Version at $0. ...",
+      "url": "https://iphone.apkpure.com/app/weird-type/com.zachlieberman.weirdtype",
+      "snippet": "May 10, 2020 · Get Weird Type latest version for iOS (iPhone/iPod touch) at $0.99. Have you ever wanted to draw with words? Weird …"
+    }
+  ]
+}

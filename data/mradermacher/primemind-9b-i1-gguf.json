@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PrimeMind-9B-i1-GGUF",
+  "slug": "mradermacher-primemind-9b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PrimeMind-9B-i1-GGUF",
+  "created_at": "2026-09-11T12:24:56.000Z",
+  "updated_at": "2026-09-11T13:00:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "reasoning",
+    "sft",
+    "caveman-thinking",
+    "compressed-reasoning",
+    "multimodal",
+    "en",
+    "base_model:CrowdMind/PrimeMind-9B",
+    "base_model:quantized:CrowdMind/PrimeMind-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 79290273760,
+  "storage_human": "79.3 GB",
+  "base_model": "CrowdMind/PrimeMind-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Asi et prise en compte de celle-ci pour le calcul des apl",
+      "url": "https://www.alexia.fr/questions/490843/asi-et-prise-en-compte-de-celle-ci-pour-le-calcul-des-apl.htm",
+      "snippet": "Pour obtenir des informations précises et adaptées à votre situation, je vous recommande de contacter directement la Caisse …"
+    },
+    {
+      "title": "Aah différentiel arret deniau - Résolue par Maitre Maturin PETSOKO ...",
+      "url": "https://www.alexia.fr/questions/502628/aah-differentiel-arret-deniau.htm",
+      "snippet": "La réponse de la caf indique que l'arrêt deniau du 7 février 2025 n'a pas encore modifié la loi en vigueur et qu'il ne peut pas être …"
+    },
+    {
+      "title": "CAF - Identifiant Provisoire ??? : r/france - Reddit",
+      "url": "https://www.reddit.com/r/france/comments/scqp2b/caf_identifiant_provisoire/",
+      "snippet": "Jan 25, 2022 · Oui, vous pouvez créer un compte sans numéro de sécurité sociale, on vous attribuera à la fin de votre création de …"
+    },
+    {
+      "title": "Problème connexion Caf [Résolu] - Google Chrome - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34249219-probleme-connexion-caf",
+      "snippet": "Jan 7, 2017 · 3 janv. 2018 à 10:06 Bonjour, j'aurais besoin d'aide par rapport à un problème de connexion sur le site de la Caf. …"
+    },
+    {
+      "title": "[ALERTE] La CAF vient de me donner accès au compte d'un ... - Reddit",
+      "url": "https://www.reddit.com/r/france/comments/q5ezbq/alerte_la_caf_vient_de_me_donner_acc%C3%A8s_au_compte/",
+      "snippet": "Oct 11, 2021 · Je me suis déconnecté, le problème est maintenant que le compte de ce pauvre homme est lié à mon adresse mail. Et …"
+    }
+  ]
+}

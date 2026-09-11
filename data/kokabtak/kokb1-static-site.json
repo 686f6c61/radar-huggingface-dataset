@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kokabtak/kokb1-static-site",
+  "slug": "kokabtak-kokb1-static-site",
+  "author": "kokabtak",
+  "url": "https://huggingface.co/kokabtak/kokb1-static-site",
+  "created_at": "2026-09-11T12:38:33.000Z",
+  "updated_at": "2026-09-11T12:38:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "persian",
+    "farsi",
+    "chatbot",
+    "deepseek",
+    "kokabtak",
+    "iranian-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leroy Merlin: Bricolage, déco, maison et jardin",
+      "url": "https://www.leroymerlin.fr/?msockid=1e2fe7e8853c683432d3f03984be6939",
+      "snippet": "Pour vos projets de bricolage, jardinage et aménagement de la maison, LEROY MERLIN propose un grand choix de marques au …"
+    },
+    {
+      "title": "Leroy Merlin | Rejoignez nos équipes",
+      "url": "https://recrute.leroymerlin.fr/",
+      "snippet": "Découvrir l'expérience Leroy Merlin On vous ouvre nos portes ! D'assistante RH en alternance à Directrice de magasin, Johanna …"
+    },
+    {
+      "title": "Magasin Leroy Merlin Beauvais : horaires, services, conseils et offres ...",
+      "url": "https://www.leroymerlin.fr/magasins/beauvais.html?msockid=1e2fe7e8853c683432d3f03984be6939",
+      "snippet": "Retrouvez dans votre magasin de bricolage Leroy Merlin Beauvais les conseils pour vos travaux, vos projets de cuisine, la jardinerie…"
+    },
+    {
+      "title": "Parcours | Trouvez des offres d'emploi | Leroy Merlin",
+      "url": "https://recrute.leroymerlin.fr/trouver-des-offres-demploi",
+      "snippet": "Vous avez deux possibilités pour découvrir nos offres d'emploi : rechercher des offres à partir de votre CV ou parcourir toutes les offres"
+    },
+    {
+      "title": "Choisir son magasin Leroy Merlin",
+      "url": "http://sdb3d.leroymerlin.fr/public/Apps/idealspaces/?portalMode=OAA",
+      "snippet": "Concevez des plans 3D pour vos projets d'intérieur et d'extérieur avec Leroy Merlin."
+    }
+  ]
+}

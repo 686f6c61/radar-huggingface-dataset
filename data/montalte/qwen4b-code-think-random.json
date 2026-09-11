@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen4b-code-think-random",
+  "slug": "montalte-qwen4b-code-think-random",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen4b-code-think-random",
+  "created_at": "2026-09-11T13:04:12.000Z",
+  "updated_at": "2026-09-11T13:07:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "merge",
+    "random",
+    "code",
+    "think",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sprusansky, Dale - WRMEA",
+      "url": "https://www.wrmea.org/current-writers/dale-sprusansky.html",
+      "snippet": "Aug 26, 2014 · Has the U.S. Lost the Iran War? Will We See Mushroom Clouds Over Kashmir? U.S. Should Not Worry About China …"
+    },
+    {
+      "title": "Dale Sprusansky - C-SPAN.org",
+      "url": "https://www.c-span.org/person/dale-sprusansky/101224/",
+      "snippet": "Dale Sprusansky is an Assistant Editor for the Washington Report on Middle East Affairs with nine videos in the C-SPAN Video …"
+    },
+    {
+      "title": "Articles by Dale Sprusansky's Profile | Center for a New American ...",
+      "url": "https://muckrack.com/dale-sprusansky/articles",
+      "snippet": "Articles by Dale Sprusansky on Muck Rack. Find Dale Sprusansky's email address, contact information, LinkedIn, Twitter, other …"
+    },
+    {
+      "title": "Transcripts - Dale Sprusansky: Opening Remarks and Grant Smith …",
+      "url": "https://www.israellobbyandamericanpolicy.org/Transcripts/Dale_Sprusansky.html",
+      "snippet": "Mar 22, 2019 · Before co-founding the Washington Report in 1982, Andy had a distinguished career in the U.S. Foreign Service …"
+    },
+    {
+      "title": "News linked to dale sprusansky: Where is dale sprusansky mentioned …",
+      "url": "https://www.heapevents.info/person/dale%20sprusansky",
+      "snippet": "Dec 17, 2024 · Here is last information associated with person - dale sprusansky on 2024-12-17, it consists of 36 articles"
+    }
+  ]
+}

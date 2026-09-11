@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "beiyurobotics/pi05_base",
+  "slug": "beiyurobotics-pi05_base",
+  "author": "beiyurobotics",
+  "url": "https://huggingface.co/beiyurobotics/pi05_base",
+  "created_at": "2026-09-11T13:43:48.000Z",
+  "updated_at": "2026-09-11T13:45:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vision-language-action",
+    "pi05",
+    "jax",
+    "orbax",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441676359,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wirkstoff: Ronidazol - Dosierungen - UZH",
+      "url": "https://www.vetpharm.uzh.ch/Wirkstoffe/000000000768/1767_05.html",
+      "snippet": "Aufgrund der möglichen Neurotoxizität von Ronidazol bereits in therapeutischer Dosierung sollte es nur bei bestätigten Infektionen …"
+    },
+    {
+      "title": "Ronidazol",
+      "url": "https://www.gandalfgarfield.de/hauskatzen-ambulanz/hauskatzen-medikamente-erklaert/ronidazol",
+      "snippet": "Es ist derzeit der einzige Wirkstoff, der Tritrichomonas foetus zuverlässig aus dem Darm der Katze eliminieren kann. In Deutschland …"
+    },
+    {
+      "title": "Tritrichomonose bei der Katze - ESCCAP DEUTSCHLAND",
+      "url": "https://www.esccap.de/parasiten/einzeller/tritrichomonose-bei-der-katze/",
+      "snippet": "Zum Einsatz kommt der Wirkstoff Ronidazol (nach Umwidmung durch die Tierärztin oder den Tierarzt) einmal täglich über eine …"
+    },
+    {
+      "title": "Parasitäre Darminfektion mit Tritrichomonas foetus bei Katzen ...",
+      "url": "https://petsvetcheck.de/krankheiten-und-stoerungen/katze/infektion-durch-tritrichomonas-foetus-tritrichomonose-parasitaere-darminfektion-mit-trichomonaden/",
+      "snippet": "May 25, 2026 · Therapie Die Behandlung der Tritrichomonose bei Katzen ist herausfordernd, da der Parasit gegen viele gängige …"
+    },
+    {
+      "title": "AntibioticScout: Katze - Tritrichomonas foetus",
+      "url": "https://www.vetpharm.uzh.ch/Scouts/ab/02000_V012_de.html",
+      "snippet": "Behandlung mit 30 mg/kg Ronidazol für 14 Tage empfohlen. Damit wurde in einer retrospektiven Studie eine komplette klinische …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "huyxdang/adaption_agent_memory",
+  "slug": "huyxdang-adaption_agent_memory",
+  "author": "huyxdang",
+  "url": "https://huggingface.co/huyxdang/adaption_agent_memory",
+  "created_at": "2026-09-11T17:59:47.000Z",
+  "updated_at": "2026-09-11T17:59:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3_5",
+    "lora",
+    "adapter",
+    "adaption",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71302520,
+  "storage_human": "71 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Gazzetta dello Sport | Notizie sportive e risultati live di oggi",
+      "url": "https://www.gazzetta.it/",
+      "snippet": "Feb 2, 2026 · Leggi su gazzetta.it le ultime news sportive live, scopri i risultati in diretta e video di calcio, basket, F1, MotoGP, …"
+    },
+    {
+      "title": "Ultime Notizie Sportive | Ultima Ora Sport | La Gazzetta dello Sport",
+      "url": "https://www.gazzetta.it/ultima-ora/",
+      "snippet": "Ultime notizie e aggiornamenti in tempo reale dal mondo dello sport. Ultima ora calcio, basket, ciclismo, tennis dalla redazione della …"
+    },
+    {
+      "title": "Ultime notizie sportive - La Gazzetta dello Sport",
+      "url": "https://www.gazzetta.it/index_box_live.shtml",
+      "snippet": "Dec 12, 2016 · La Gazzetta dello Sport: foto e video di calcio, notizie e probabili formazioni. Tutto su calciomercato, mondiali, formula …"
+    },
+    {
+      "title": "Calcio: news dell'ultima ora e risultati | La Gazzetta dello Sport",
+      "url": "https://www.gazzetta.it/Calcio/",
+      "snippet": "Ultime notizie e risultati di calcio su La Gazzetta dello Sport: i campionati italiani di Serie A, B e C, Champions League e campionati …"
+    },
+    {
+      "title": "La Gazzetta dello Sport",
+      "url": "https://www.gazzetta.it/welcome-page_gazzetta.html",
+      "snippet": "Notizie sportive, risultati in tempo reale e approfondimenti su calcio, ciclismo, motomondiale e altri sport."
+    }
+  ]
+}

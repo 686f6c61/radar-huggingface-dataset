@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "abhishekkuber/qwen_lora_techm_pass1",
+  "slug": "abhishekkuber-qwen_lora_techm_pass1",
+  "author": "abhishekkuber",
+  "url": "https://huggingface.co/abhishekkuber/qwen_lora_techm_pass1",
+  "created_at": "2026-09-11T15:33:07.000Z",
+  "updated_at": "2026-09-11T15:33:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_vl",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186086018,
+  "storage_human": "186 MB",
+  "base_model": "unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taco Bell® | Live Más",
+      "url": "https://www.tacobell.com/?msockid=365a98e279f466c23f7c8f3378196767",
+      "snippet": "Taco Bell® Rewards Program is available at participating U.S. locations and subject to Terms and conditions. °Free-sign-up reward …"
+    },
+    {
+      "title": "Taco Bell® Menu",
+      "url": "https://www.tacobell.com/food?store=027523&msockid=365a98e279f466c23f7c8f3378196767",
+      "snippet": "With breakfast options at select locations, to late night, the Taco Bell menu in San Jose, CA, serves made-to-order and customizable …"
+    },
+    {
+      "title": "Taco Bell Careers - Home",
+      "url": "https://jobs.tacobell.com/",
+      "snippet": "At The Bell, we create space for everyone – Restaurants to Corporate – to cultivate your passions and grow your career. From …"
+    },
+    {
+      "title": "Store Locator - TACO BELL® HOURS",
+      "url": "https://locations.tacobell.com/store-locators/taco-bell-hours.html",
+      "snippet": "Looking for Taco Bell’s restaurant hours? Use the store locator to find a Taco Bell near you and hours of operation!"
+    },
+    {
+      "title": "Breakfast Near Me - Store Locator | Taco Bell®",
+      "url": "https://locations.tacobell.com/store-locators/breakfast-near-me.html",
+      "snippet": "Use the store locator to find a Taco Bell restaurant near you that offers breakfast!"
+    }
+  ]
+}

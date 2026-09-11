@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen4b-code-nothink-localize",
+  "slug": "montalte-qwen4b-code-nothink-localize",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen4b-code-nothink-localize",
+  "created_at": "2026-09-11T11:23:23.000Z",
+  "updated_at": "2026-09-11T11:27:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "merge",
+    "localize",
+    "code",
+    "nothink",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/?msockid=1c092343b9e968120ca33492b87769fb",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "Fix Qwen 3.x empty responses in OpenAI-compatible clients — Modelfile (disable thinking) + proxy (OpenAI→Ollama translator). Works with OpenClaw, Open WebUI, LiteLLM, Cursor, etc.",
+      "url": "https://gist.github.com/TheAIHorizon/37c30e375f2ce08e726e4bb6347f26b1",
+      "snippet": "Fix Qwen 3.x empty responses in OpenAI-compatible clients — Modelfile (disable thinking) + proxy (OpenAI→Ollama translator). Works with OpenClaw, Open WebUI, LiteLLM, Cursor, etc. - LOCAL-QWEN-SETUP.md"
+    },
+    {
+      "title": "r/LocalLLaMA on Reddit: How is qwen3 4b this good?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1naqln5/how_is_qwen3_4b_this_good/",
+      "snippet": ""
+    },
+    {
+      "title": "Local AI Master - 17-Course Local AI Learning Platform",
+      "url": "https://localaimaster.com/blog/qwen-3-local-setup-guide",
+      "snippet": "# Enable thinking mode (chain-of-thought reasoning) /set think # Disable thinking mode (fast direct responses) /set nothink # Adjust context length /set parameter num_ctx 40960 # Adjust response length /set parameter num_predict 32768 # Exit /bye"
+    },
+    {
+      "title": "Copilot | AI chat for work",
+      "url": "https://copilot.cloud.microsoft/",
+      "snippet": "Copilot brings work and life into one app, but your conversation history doesn't mix. Your work chats stay with your work account and …"
+    }
+  ]
+}

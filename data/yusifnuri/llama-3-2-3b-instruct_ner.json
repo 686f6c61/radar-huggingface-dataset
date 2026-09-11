@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yusifnuri/Llama-3.2-3B-Instruct_ner",
+  "slug": "yusifnuri-llama-3-2-3b-instruct_ner",
+  "author": "yusifnuri",
+  "url": "https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_ner",
+  "created_at": "2026-09-11T15:36:22.000Z",
+  "updated_at": "2026-09-11T15:37:25.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "small-language-model",
+    "enterprise-benchmark",
+    "ner",
+    "base_model:adapter:meta-llama/Llama-3.2-3B-Instruct",
+    "text-generation",
+    "conversational",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53940242,
+  "storage_human": "54 MB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/",
+      "snippet": "Die Telekom hilft Community bietet Unterstützung und Lösungen für Telekom-Kunden bei Fragen zu Produkten, Dienstleistungen und …"
+    },
+    {
+      "title": "T-Online: Anwendungsspezifisches Passwort für CardDAV setzen",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/t-online-anwendungsspezifisches-passwort-f%C3%BCr-carddav-setzen/6a50912d642eab0098f92476",
+      "snippet": "🙋 Ich möchte nur das Adressbuch des \"Telekom\"-E-Mailpostfaches nutzen. Das Setzen eines anwendungsspezifischen Passwortes für …"
+    },
+    {
+      "title": "‎zweifach authentifizierung E-mail t-online - Telekom hilft",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/zweifach-authentifizierung-e-mail-t-online/6a9ec6b56105922a7dc4f2cf",
+      "snippet": "Ich weiß nicht ob ich hier richtig bin. Ich habe Probleme mit der zweifach authentifizierung e-mail t-online . de Wenn ich unterwegs bin …"
+    },
+    {
+      "title": "Wo finde ich im Kundencenter \"Meine Geräte\"? - Telekom hilft",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/wo-finde-ich-im-kundencenter-meine-ger%C3%A4te/680208067e5e947e31dadeb2",
+      "snippet": "Meine vorherigen Antworten haben nichts damit zu tun, ob ich es gut finde oder schlecht, dass im neuen MeinMagenta Kundencenter …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "VINAY-UMRETHE/refusal-detector",
+  "slug": "vinay-umrethe-refusal-detector",
+  "author": "VINAY-UMRETHE",
+  "url": "https://huggingface.co/VINAY-UMRETHE/refusal-detector",
+  "created_at": "2026-09-11T13:01:37.000Z",
+  "updated_at": "2026-09-11T13:02:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "refusal-detection",
+    "en",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149608709,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598449012,
+  "storage_human": "598 MB",
+  "base_model": "results/final",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Where are Notepad temp/unsaved .txt files located? - Super User",
+      "url": "https://superuser.com/questions/1856217/where-are-notepad-temp-unsaved-txt-files-located",
+      "snippet": "Sep 19, 2024 · My guess would be \\AppData\\Local\\Temp, but keep in mind they may not be .txt files. Word for instance when doing …"
+    },
+    {
+      "title": "windows - What is \"%AppData%\"? - Super User",
+      "url": "https://superuser.com/questions/632891/what-is-appdata",
+      "snippet": "The AppData\\Local and AppData\\Roaming locations are the preferred locations for applications to store data that is not required to be …"
+    },
+    {
+      "title": "A complete list of \"%%\" relative paths/variables in Windows Explorer in ...",
+      "url": "https://superuser.com/questions/1655266/a-complete-list-of-relative-paths-variables-in-windows-explorer-in-windows",
+      "snippet": "Jun 7, 2021 · I would like to know the full list of variables that I can use in Windows Explorer or related relative paths that is accepted …"
+    },
+    {
+      "title": "Where do Start Menu\\All Programs shortcuts reside? - Super User",
+      "url": "https://superuser.com/questions/86078/where-do-start-menu-all-programs-shortcuts-reside",
+      "snippet": "Dec 21, 2009 · As you edited - Any users start menu is located at: C:\\Users\\USER-NAME\\AppData\\Roaming\\Microsoft\\Windows\\Start …"
+    },
+    {
+      "title": "Where does Chrome save its bookmarks on Windows? - Super User",
+      "url": "https://superuser.com/questions/376366/where-does-chrome-save-its-bookmarks-on-windows",
+      "snippet": "Jan 9, 2012 · I'm trying to recover a Windows system from backups and can't seem to find where Chrome saves its bookmarks. Does …"
+    }
+  ]
+}

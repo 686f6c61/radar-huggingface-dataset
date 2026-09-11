@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "the-anas/ppo-LunarLander-v3",
+  "slug": "the-anas-ppo-lunarlander-v3",
+  "author": "the-anas",
+  "url": "https://huggingface.co/the-anas/ppo-LunarLander-v3",
+  "created_at": "2026-09-11T12:58:54.000Z",
+  "updated_at": "2026-09-11T12:59:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284357,
+  "storage_human": "284357 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Palais des Thés : Vente de Thé Premium et Grands Crus en Ligne",
+      "url": "https://www.palaisdesthes.com/fr/",
+      "snippet": "Commandez les meilleurs thés du monde en direct des plantations : thés verts, thés noirs, grands crus, infusions, rooibos... Dégustez …"
+    },
+    {
+      "title": "DAMMANN Frères - Spécialiste du thé depuis 1825",
+      "url": "https://www.dammann.fr/fr/",
+      "snippet": "Retrouvez nos thés, infusions, coffrets cadeaux et accessoires de préparation"
+    },
+    {
+      "title": "Déterminant THE en anglais : quand et comment l'utiliser",
+      "url": "https://www.ispeakspokespoken.com/the-anglais/",
+      "snippet": "Aug 24, 2026 · Faut-il mettre THE ou pas devant les noms en anglais ? Je vous donne dans cet article des explications et des …"
+    },
+    {
+      "title": "The - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The",
+      "snippet": "The is a grammatical article in English, denoting nouns that are already or about to be mentioned, under discussion, implied or …"
+    },
+    {
+      "title": "The The — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/The_The",
+      "snippet": "The The est un groupe musical britannique post-punk, formé en 1979 par le chanteur Matt Johnson. Il est actif sous diverses formes …"
+    }
+  ]
+}

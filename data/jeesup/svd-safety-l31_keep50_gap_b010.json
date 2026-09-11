@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_keep50_gap_b010",
+  "slug": "jeesup-svd-safety-l31_keep50_gap_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_keep50_gap_b010",
+  "created_at": "2026-09-11T15:13:02.000Z",
+  "updated_at": "2026-09-11T15:29:09.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darmowe gry – graj w gry online na gry.pl",
+      "url": "https://www.gry.pl/",
+      "snippet": "Znajdziesz tu tysiące gier online – zarówno przeznaczonych dla jednego gracza, jak i do rozgrywek wieloosobowych. Możesz w nie …"
+    },
+    {
+      "title": "Poki - Darmowe Gry Online - Graj Teraz!",
+      "url": "https://poki.com/pl?msockid=2eb90c4792be66b410d31b9693126756",
+      "snippet": "Odkryj świat darmowych gier online z Poki! Graj od razu, bez pobierania, i ciesz się grami kompatybilnymi ze wszystkimi urządzeniami."
+    },
+    {
+      "title": "Darmowe Gry Online na CrazyGames | Zagraj Teraz!",
+      "url": "https://www.crazygames.com/pl/",
+      "snippet": "Graj w darmowe gry online na CrazyGames, najlepszym miejscu do grania w wysokiej jakości gry przeglądarkowe. Codziennie …"
+    },
+    {
+      "title": "Darmowe gry online — Gry przeglądarkowe bez pobierania | Playhop",
+      "url": "https://playhop.com/pl",
+      "snippet": "Graj w ponad 20 000 darmowych gier online na Playhop — bez pobierania, natychmiastowa gra na telefonie lub komputerze. Nowe …"
+    },
+    {
+      "title": "Gry logiczne – graj w gry logiczne online na Gry.pl",
+      "url": "https://www.gry.pl/gry/logiczne?page=1",
+      "snippet": "Możesz grać w nasze gry logiczne bez pobierania ani instalacji. Czytaj dalej, aby dowiedzieć się więcej o grach logicznych i naszych …"
+    }
+  ]
+}

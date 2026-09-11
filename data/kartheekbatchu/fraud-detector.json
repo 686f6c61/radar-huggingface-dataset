@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kartheekbatchu/fraud-detector",
+  "slug": "kartheekbatchu-fraud-detector",
+  "author": "kartheekbatchu",
+  "url": "https://huggingface.co/kartheekbatchu/fraud-detector",
+  "created_at": "2026-09-11T13:13:20.000Z",
+  "updated_at": "2026-09-11T13:13:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20173757,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chatgpt pro版会比plus版更加聪明么？ - 知乎",
+      "url": "https://www.zhihu.com/question/2036334907346122595",
+      "snippet": "Pro独占功能，通过Plaid接入12000多家银行，可以直接向AI提问关于支出、投资、预算的问题。 结论其实很简单：Pro就是更加聪明 …"
+    },
+    {
+      "title": "罗技鼠标怎么查询真伪？ - 知乎",
+      "url": "https://www.zhihu.com/question/312354382",
+      "snippet": "然后拔打罗技官方的电话，根据语音提示操作输入SN码查询真伪 手机打这个号码 400-820-0338 固话座机打这个 800-820-0338 另外 …"
+    },
+    {
+      "title": "SI_1STE - Technologue Pro",
+      "url": "https://www.technologuepro.com/cours-capteurs-actionneurs-instrumentation-industrielle/ch12-les-differents-types-de-capteurs.pdf",
+      "snippet": "1.1- Capteurs actifs : Fonctionnant en générateur, un capteur actif est généralement fondé dans son principe sur effet physique qui …"
+    },
+    {
+      "title": "LE GEMMA - Technologue Pro",
+      "url": "https://www.technologuepro.com/cours-automate-programmable-industriel/Le-GEMMA.htm",
+      "snippet": "Le GEMMA (Guide d'Etude des Modes de Marche et d'Arrêt) est un guide graphique élaboré par l’Agence pour le Développement de …"
+    },
+    {
+      "title": "Adobe Acrobat Pro DC破解版安装教程？ - 知乎",
+      "url": "https://www.zhihu.com/question/1978068314996626887",
+      "snippet": "Adobe Acrobat Pro DC 作为 PDF 原厂专业软件，兼容性出色，各类 PDF 打开排版不易错乱，支持 PDF 创建、格式互转、页面拆分 …"
+    }
+  ]
+}

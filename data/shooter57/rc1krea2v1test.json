@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shooter57/rc1krea2v1test",
+  "slug": "shooter57-rc1krea2v1test",
+  "author": "Shooter57",
+  "url": "https://huggingface.co/Shooter57/rc1krea2v1test",
+  "created_at": "2026-09-11T17:00:53.000Z",
+  "updated_at": "2026-09-11T17:02:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457143752,
+  "storage_human": "457 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "95zz - 知乎",
+      "url": "https://www.zhihu.com/people/SSS95zz",
+      "snippet": "知乎个人信息保护指引 知乎协议 下载知乎 Investor Relations 网站资质信息 更多"
+    },
+    {
+      "title": "SSS英语启蒙儿歌441首（视频+音频+歌词本，英文/中英文字幕）下 …",
+      "url": "https://www.zhihu.com/pin/1967338060124513736",
+      "snippet": "挖到了英语启蒙的宝藏资源 ——SSS Super Simple Songs 全套 441 首，视频 + 音频 + 歌词本一站式配齐，娃边玩边学，英语兴趣直 …"
+    },
+    {
+      "title": "SSS英文儿歌百度网盘资源求分享？ - 知乎",
+      "url": "https://www.zhihu.com/question/1960130289616547873",
+      "snippet": "SSS英文儿歌百度网盘资源求分享？ 如题，需要SSS英文儿歌百度网盘资源，在宝妈群里听说SSS英文儿歌特别适合给孩子磨耳朵， …"
+    },
+    {
+      "title": "as ssd benchmark官网网址有吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/351915001",
+      "snippet": "Oct 22, 2019 · 3.拉到最底下，点击Download下方的小方盒子图标就能开始下载"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "erdemKocaogluu/byt5-small-tr-normalizer",
+  "slug": "erdemkocaogluu-byt5-small-tr-normalizer",
+  "author": "erdemKocaogluu",
+  "url": "https://huggingface.co/erdemKocaogluu/byt5-small-tr-normalizer",
+  "created_at": "2026-09-11T10:51:57.000Z",
+  "updated_at": "2026-09-11T12:12:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "turkish",
+    "text-normalization",
+    "grammatical-error-correction",
+    "byt5",
+    "tr",
+    "base_model:google/byt5-small",
+    "base_model:finetune:google/byt5-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299637760,
+  "parameters_human": "299.6M",
+  "storage_bytes": 1198571496,
+  "storage_human": "1.2 GB",
+  "base_model": "google/byt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enter Air Spółka Akcyjna (ENTER) - Notowania GPW - Bankier.pl",
+      "url": "https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=ENTER",
+      "snippet": "Mar 2, 2026 · Enter Air Spółka Akcyjna (ENTER) - najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty espi, …"
+    },
+    {
+      "title": "Podstawowe informacje - Enter Air Spółka Akcyjna (ENTER) - Giełda ...",
+      "url": "https://www.bankier.pl/gielda/notowania/akcje/ENTER/podstawowe-dane",
+      "snippet": "1 day ago · Enter Air Spółka Akcyjna (ENTER) - najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty espi, …"
+    },
+    {
+      "title": "Enter Air Spółka Akcyjna (ENTER) - Giełda - Bankier.pl",
+      "url": "https://www.bankier.pl/gielda/notowania/akcje/ENTER/dywidendy",
+      "snippet": "12 hours ago · Enter Air Spółka Akcyjna (ENTER) - najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty espi, …"
+    },
+    {
+      "title": "ENTR Investments sprzedał w ABB 7,02 proc. akcji Enter Air, po 48 zł za ...",
+      "url": "https://www.bankier.pl/wiadomosc/ENTR-Investments-sprzedal-w-ABB-7-02-proc-akcji-Enter-Air-po-48-zl-za-sztuke-9157413.html",
+      "snippet": "Jun 24, 2026 · ENTR Investments sprzedał w procesie przyspieszonej budowy księgi popytu łącznie 1.231.022 akcje Enter Air, …"
+    },
+    {
+      "title": "Enter Air Spółka Akcyjna (ENTER) - Giełda - Bankier.pl",
+      "url": "https://www.bankier.pl/gielda/notowania/akcje/ENTER/wyniki-finansowe",
+      "snippet": "Enter Air Spółka Akcyjna (ENTER) - najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty espi, wyniki …"
+    }
+  ]
+}

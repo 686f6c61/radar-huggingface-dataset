@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BlacknodeLTDAI/Mike4_26B",
+  "slug": "blacknodeltdai-mike4_26b",
+  "author": "BlacknodeLTDAI",
+  "url": "https://huggingface.co/BlacknodeLTDAI/Mike4_26B",
+  "created_at": "2026-09-11T16:46:42.000Z",
+  "updated_at": "2026-09-11T17:16:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 21150365408,
+  "storage_human": "21.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darmowe gry – graj w gry online na gry.pl",
+      "url": "https://www.gry.pl/",
+      "snippet": "Darmowe gry online na Gry.pl Czołem, graczu! Witaj na stronie Gry.pl! Znajdziesz tu tysiące gier online – zarówno przeznaczonych …"
+    },
+    {
+      "title": "Gry logiczne – graj w gry logiczne online na Gry.pl",
+      "url": "https://www.gry.pl/gry/logiczne?page=1",
+      "snippet": "Wytęż swoje szare komórki w grach logicznych. Od mahjongu po zabawy słowne, liczbowe i na spostrzegawczość – na Gry.pl …"
+    },
+    {
+      "title": "Grać Ogień i Woda 5: Żywioły na Gry.pl",
+      "url": "https://www.gry.pl/gra/ogien-i-woda-5-zywioy",
+      "snippet": "Myślisz, że nie dasz sobie rady bez pomocy? Śmiało, nie krępuj się i zaproś do gry przyjaciela – wszak to genialna gra dla dwóch …"
+    },
+    {
+      "title": "Grać Ogień i Woda 4: Kryształowa Świątynia na Gry.pl",
+      "url": "https://www.gry.pl/gra/ogien-i-woda-4-krysztalowa-swiatynia",
+      "snippet": "Wyrusz na kolejną ekscytującą przygodę z dw&oacute;jką dynamicznych bohater&oacute;w w grze&nbsp;Ogień i Woda 4: …"
+    },
+    {
+      "title": "MahJongCon - Zagraj w MahJongCon online na Gry.pl",
+      "url": "https://www.gry.pl/gra/mahjongcon",
+      "snippet": "MahJongCon to również gra o łączeniu elementów, których więcej znajdziesz na naszej stronie gier o łączeniu elementów. Poznaj …"
+    }
+  ]
+}

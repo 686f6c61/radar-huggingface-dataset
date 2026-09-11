@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yusifnuri/Mistral-7B-v0.3_code_generation",
+  "slug": "yusifnuri-mistral-7b-v0-3_code_generation",
+  "author": "yusifnuri",
+  "url": "https://huggingface.co/yusifnuri/Mistral-7B-v0.3_code_generation",
+  "created_at": "2026-09-11T15:39:03.000Z",
+  "updated_at": "2026-09-11T15:39:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "small-language-model",
+    "enterprise-benchmark",
+    "code-generation",
+    "qlora",
+    "base_model:adapter:mistralai/Mistral-7B-v0.3",
+    "text-generation",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54560368,
+  "storage_human": "55 MB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "novo-propelente-0134e-em-portugal | Empresas e fornecedores B2B …",
+      "url": "https://www.europages.pt/empresas/novo-propelente-0134e-em-portugal.html",
+      "snippet": "A aplicação europages chegou! Use nossa busca de fornecedores aprimorada ou crie suas consultas facilmente com o novo …"
+    },
+    {
+      "title": "novo-propelente-0134e-em-portugal Distribuidor | Empresas e ...",
+      "url": "https://www.europages.pt/empresas/distribuidor/novo-propelente-0134e-em-portugal.html",
+      "snippet": "A aplicação europages chegou! Use nossa busca de fornecedores aprimorada ou crie suas consultas facilmente com o novo …"
+    },
+    {
+      "title": "Novo Propelente 0134e Em Portugal - Instagram",
+      "url": "https://www.instagram.com/popular/novo-propelente-0134e-em-portugal/",
+      "snippet": "Watch short videos about novo propelente 0134e em portugal from people around the world."
+    },
+    {
+      "title": "novo-propelente-0134e-em-portugal | B2B companies and suppliers …",
+      "url": "https://www.europages.co.uk/companies/novo-propelente-0134e-em-portugal.html",
+      "snippet": "26 Companies and suppliers for novo-propelente-0134e-em-portugal Find wholesalers and contact them directly Leading B2B …"
+    },
+    {
+      "title": "MOEVE II - OPERAÇÕES E RETALHO, LDA - eInforma",
+      "url": "https://www.einforma.pt/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/500223840/source/fichaemp/campaign/out_emp/",
+      "snippet": "Empresas próximas 0 Km | ASSURENPT CORPORATE & GOVERNANCE, LDA 0 Km | NGEN BESS MARINHA GRANDE 1, LDA 0 …"
+    }
+  ]
+}

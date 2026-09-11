@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "optimum-intel-internal-testing/tiny-random-ministral3",
+  "slug": "optimum-intel-internal-testing-tiny-random-ministral3",
+  "author": "optimum-intel-internal-testing",
+  "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-ministral3",
+  "created_at": "2026-09-11T12:26:34.000Z",
+  "updated_at": "2026-09-11T12:32:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16995776,
+  "parameters_human": "17.0M",
+  "storage_bytes": 85066694,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Optimum, portes de placards, verrières, portes intérieures et dressing",
+      "url": "https://www.optimum.tm.fr/",
+      "snippet": "Fabricant français de portes de placards depuis plus de 30 ans, Optimum propose des portes de placards coulissantes, verrières en …"
+    },
+    {
+      "title": "Optimum, portes de placards, verrières, portes intérieures et dressing",
+      "url": "https://www.optimum.tm.fr/fr/1/29/1_Porte-de-placard.html",
+      "snippet": "Retrouvez l'ensemble des produits commercialisés par Optimum : porte de placard, dressing et aménagement, porte d'intérieur et …"
+    },
+    {
+      "title": "Login | Optimum Automotive",
+      "url": "https://fleet.optimum-automotive.com/",
+      "snippet": "Welcome to the ultimate solution for your fleet. All-in-one."
+    },
+    {
+      "title": "Optimum Live",
+      "url": "https://livebyoptimum.com/",
+      "snippet": "Mot de passe oublié ? Se connecter"
+    },
+    {
+      "title": "Optimum | Support & Customer Account Management Home",
+      "url": "https://www.optimum.net/",
+      "snippet": "There is no Optimum Email address associated with Optimum ID, We can't get your DVR recordings right now. Please try again later. …"
+    }
+  ]
+}

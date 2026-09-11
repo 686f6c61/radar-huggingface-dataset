@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "KissTheHabit/yolov8n-table-yolo",
+  "slug": "kissthehabit-yolov8n-table-yolo",
+  "author": "KissTheHabit",
+  "url": "https://huggingface.co/KissTheHabit/yolov8n-table-yolo",
+  "created_at": "2026-09-11T05:59:20.000Z",
+  "updated_at": "2026-09-11T11:36:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "yolov8n",
+    "object-detection",
+    "tableware",
+    "edge",
+    "quantization",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12469076,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NTN RNA 4826 jehlové ložisko bez vnitřního kroužku",
+      "url": "https://www.prumex.cz/ntn-rna-4826-jehlove-lozisko-bez-vnitrniho-krouzku/",
+      "snippet": "Masivní jednořadé jehlové ložisko INA RNA 4826-XL bez vnitřního kroužku o rozměrech 145x165x35 mm. Provedení X-life zajišťuje …"
+    },
+    {
+      "title": "SKF RNA 4826 jehlové ložisko | Prumex.cz",
+      "url": "https://www.prumex.cz/skf-rna-4826-jehlove-lozisko/",
+      "snippet": "L.RNA 4826 SKF EAN: 7316570137002 Množství skladem 0 ks Skladem u dodavatele 6 ks - do 3 pracovních dnů Minimální …"
+    },
+    {
+      "title": "INA RNA4826-XL Jehlové ložisko - Mateza.cz",
+      "url": "https://www.mateza.cz/e-shop/fag-rna4826-xl-jehlove-lozisko-ina",
+      "snippet": "FAG RNA4826-XL Jehlové ložisko INA s vysokou únosností Přes 56 tisíc položek 3 pobočky v ČR Autorizovaný distributor SKF"
+    },
+    {
+      "title": "RNA 4826 - jehlové ložisko bez vnitřního kroužku - INDUSTRIAL CZ",
+      "url": "https://www.industrial.cz/rna-4826--jehlove-lozisko-bez-vnitrniho-krouzku-detail-4Q01000101.aspx",
+      "snippet": "Produkty Ložiska Jehlová ložiska Jehlová ložiska masivní bez vnitřního kroužku RNA 4826 - jehlové ložisko bez vnitřního kroužku"
+    },
+    {
+      "title": "RNA | LOMAZ s.r.o.",
+      "url": "https://www.lomaz.cz/katalog/loziska-jehlova-bez-vnitrniho-krouzku-rna/",
+      "snippet": "Na dotaz Externí sklad 23 ks (3-4 dny) RNA 4826 NKE Jehlové ložisko bez vnitřního kroužku Jehlové ložisko bez vnitřního kroužku …"
+    }
+  ]
+}

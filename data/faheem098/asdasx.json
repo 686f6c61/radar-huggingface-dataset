@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "faheem098/ASDASX",
+  "slug": "faheem098-asdasx",
+  "author": "faheem098",
+  "url": "https://huggingface.co/faheem098/ASDASX",
+  "created_at": "2026-09-11T13:07:33.000Z",
+  "updated_at": "2026-09-11T13:07:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "为什么用chatgpt账号登入一直提示需要电话号码 怎么解决？",
+      "url": "https://www.zhihu.com/question/2031417400504082455",
+      "snippet": "于是官方开始调整 Codex 的风控策略——全网所有使用 Codex 的免费用户，都需要验证手机号码。 这就是为什么你正常注册了 …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "一直磨，直到能用短效手机号注册whatsapp，将信息修改一下只有你可以登录（绑定邮箱之类的）。 注册成功后，whatsapp那边得加 …"
+    },
+    {
+      "title": "codex如何登入 为什么用chatgpt账号后 仍需电话号码？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031417809914312562",
+      "snippet": "最近Codex增加了手机号验证，很多同学需要验证codex，用国外手机号验证codex提示【无法向此电话号码发送验证码，请稍后重试 …"
+    }
+  ]
+}

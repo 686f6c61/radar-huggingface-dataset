@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "alvinchirchir/pirate-speak-0.5b",
+  "slug": "alvinchirchir-pirate-speak-0-5b",
+  "author": "alvinchirchir",
+  "url": "https://huggingface.co/alvinchirchir/pirate-speak-0.5b",
+  "created_at": "2026-09-11T12:07:17.000Z",
+  "updated_at": "2026-09-11T12:33:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "lora",
+    "peft",
+    "pirate",
+    "style-transfer",
+    "educational",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585368,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boston Sehenswürdigkeiten 2026: Freedom Trail & Harvard Guide",
+      "url": "https://usa-reiseblogger.de/boston-sehenswuerdigkeiten-guide/",
+      "snippet": "Aug 19, 2025 · Dieser Guide zeigt dir die wichtigsten Sehenswürdigkeiten, die besten Stadtviertel und praktische Tipps für deinen …"
+    },
+    {
+      "title": "Boston Sehenswürdigkeiten: 10 Highlights (2026)",
+      "url": "https://universal-traveller.com/de/ultimative-liste-der-best-things-to-do-in-boston-vereinigte-staaten/",
+      "snippet": "Feb 12, 2026 · Entdecke die 10 besten Boston Sehenswürdigkeiten. Vom Freedom Trail über Faneuil Hall bis zum North End, hier …"
+    },
+    {
+      "title": "Boston – Dein Überblick zu Highlights, Tipps & Reiseführern…",
+      "url": "https://www.lonelyplanet.de/reiseziele/boston-147305",
+      "snippet": "Boston pulsiert zwischen amerikanischer Geschichte und moderner Lebendigkeit. Erkunde den Freedom Trail, genieße Baseball im …"
+    },
+    {
+      "title": "Die Top 20 Boston Sehenswürdigkeiten für 2025 (mit Karte)",
+      "url": "https://www.travelicia.de/boston-sehenswuerdigkeiten/",
+      "snippet": "Die Top 20 Boston Sehenswürdigkeiten auf einen Blick - entdecken Sie die besten Attraktionen & Touren in Boston (inkl. Karte und …"
+    },
+    {
+      "title": "Boston, Massachusetts: Geschichte, Kultur, Charme – Besuche die USA",
+      "url": "https://www.visittheusa.com/de/destinations/massachusetts/boston/",
+      "snippet": "Entdecke Bostons, Massachusetts, lebendige Kulturszene, die geschichtsträchtige Historie des Unabhängigkeitskrieges und die …"
+    }
+  ]
+}
